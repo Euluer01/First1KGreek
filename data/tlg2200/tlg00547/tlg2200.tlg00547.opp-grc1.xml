@@ -1,117 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">    
-    <fileDesc>
-        <titleStmt>
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
             <title xml:lang="lat">Declamatio 47</title>
             <author>Libanius</author>
             <editor>Richard Foerster</editor>
-                <sponsor>University of Leipzig</sponsor>
-                <funder>European Social Fund Saxony</funder>
-                <principal>Gregory Crane</principal>
-                <respStmt>
-          <persName>Gregory R. Crane</persName>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-        </respStmt>
-        <respStmt>
-          <persName xml:id="DDD">Digital Divide Data</persName>
-          <resp>Corrected and encoded the text</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Matt Munson</persName>
-          <resp>Project Manager (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Annette Geßner</persName>
-          <resp>Project Assistant (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Thibault Clérice</persName>
-          <resp>Lead Developer (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Bruce Robertson</persName>
-          <resp>Technical Advisor</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Greta Franzini</persName>
-          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Frederik Baumgardt</persName>
-          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Simona Stoyanova</persName>
-          <resp>Project Manager (University of Leipzig), 2015</resp>
-          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>University of Leipzig</authority>
-                <idno type="filename">tlg2200.tlg00547.opp-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-                </availability>
-                <date>2016</date>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-            </publicationStmt>
-            
-            <sourceDesc>
-               <listBibl>
-                <biblStruct>
-                    <monogr>
-                        <editor>
-                            <persName>
-                                <name xml:lang="lat">Richardus Foerster</name>
-                                <addName xml:lang="deu">Richard Foerster</addName>
-                            </persName>
-                        </editor> 
-                        <author ref="urn:cts:greekLit:tlg2200">Libanius</author>  
-                        <title xml:lang="lat">Declamationes XXXI-LI</title>
-                        <imprint>
-                            <publisher>B.G. Teubner</publisher>
-                            <pubPlace>Leipzig</pubPlace>
-                            <date>1913</date>
-                        </imprint>
-                        <biblScope unit="volume">7</biblScope>
-                    </monogr>
-                    <ref target="https://archive.org/details/operarecensuitri07libauoft">Internet Archive</ref>  
-                </biblStruct>
+            <sponsor>University of Leipzig</sponsor>
+            <funder>European Social Fund Saxony</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName>Gregory R. Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Geßner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Greta Franzini</persName>
+               <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Frederik Baumgardt</persName>
+               <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Simona Stoyanova</persName>
+               <resp>Project Manager (University of Leipzig), 2015</resp>
+               <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>University of Leipzig</authority>
+            <idno type="filename">tlg2200.tlg00547.opp-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2016</date>
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg2200.tlg00547.opp-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <editor>
+                        <persName>
+                           <name xml:lang="lat">Richardus Foerster</name>
+                           <addName xml:lang="deu">Richard Foerster</addName>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg2200">Libanius</author>
+                     <title xml:lang="lat">Declamationes XXXI-LI</title>
+                     <imprint>
+                        <publisher>B.G. Teubner</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1913</date>
+                     </imprint>
+                     <biblScope unit="volume">7</biblScope>
+                  </monogr>
+                  <ref target="https://archive.org/details/operarecensuitri07libauoft">Internet Archive</ref>
+               </biblStruct>
             </listBibl>
-            </sourceDesc>
-            
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-            <refsDecl n="CTS">
-        <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-      </refsDecl>
-    </encodingDesc>
-        
-        <profileDesc>
-            <langUsage>
-                <language ident="lat">Latin</language>
-              <language ident="deu">German</language>
-              <language ident="grc">Greek</language>
-            </langUsage>
-        </profileDesc>
-        
-</teiHeader>
-
-  <text>
-    <body><div type="edition" n="urn:cts:greekLit:tlg2200.tlg00547.opp-grc1" xml:lang="grc">
-
-<div type="textpart" subtype="chapter" n="1">
-
-<pb n="583"/>
-
-<head>XLVII.</head>
-
-<head>Ἔχων τις δύο παῖδας πρὸς τὸν ἕτερον ἐχθρω-
+         <refsDecl n="CTS">
+            <cRefPattern n="chapter"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="lat">Latin</language>
+            <language ident="deu">German</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg2200.tlg00547.opp-grc1">
+         <div n="1" type="chapter">
+            <pb n="583"/>
+            <head>XLVII.</head>
+            <head>Ἔχων τις δύο παῖδας πρὸς τὸν ἕτερον ἐχθρω-
 
 δῶς διέκειτο. ἀρρωστῶν ἐκέλευσε τ’ 03 παιδὶ ἐν
 
@@ -122,34 +124,24 @@
 ὁ πατὴρ καὶ εὑρὼν καὶ τὸν ἕτερον ἐγγεγραμμέ- <lb n="5"/>
 
 νον ἀποκηρύττει τὸν ἐγγράψαντα.</head>
-
-<p>ἀλλ’ εἰ καὶ χαλεπὸς ἡμῖν πέφηνε μετὰ τὴν R IV 669
+            <p>ἀλλ’ εἰ καὶ χαλεπὸς ἡμῖν πέφηνε μετὰ τὴν R IV 669
 
 νόσον ὁ πατὴρ καὶ τοιοῦτος οἷον οὐκ ἄν ποτε ἤλπισα,
 
 <note type="footnote">Ρ = Codex Parisinus gr. 3018</note>
-
-<note type="footnote">Μ = Marcianus gr. 439</note>
-
-<note type="footnote">Cr = Hierosolymitanus S. Crucis 57</note>
-
-<note type="footnote">Ma = Matritensis 4679, olim N-49</note>
-
-<note type="footnote">Cl = Berolinensis gr. 195 olim Claromontanus</note>
-
-<note type="footnote">Pa = Parisinus gr. 3017</note>
-
-<note type="footnote">Β = Barberinus II 41 (Vaticanus Barb. 220)</note>
-
-<note type="footnote">Va = Vaticanus gr. 82</note>
-
-<note type="footnote">1 Συγγνώμη Μ cf. Hermog. stat. 2 et 6 Rhet. gr. ed. Spen-
+               <note type="footnote">Μ = Marcianus gr. 439</note>
+               <note type="footnote">Cr = Hierosolymitanus S. Crucis 57</note>
+               <note type="footnote">Ma = Matritensis 4679, olim N-49</note>
+               <note type="footnote">Cl = Berolinensis gr. 195 olim Claromontanus</note>
+               <note type="footnote">Pa = Parisinus gr. 3017</note>
+               <note type="footnote">Β = Barberinus II 41 (Vaticanus Barb. 220)</note>
+               <note type="footnote">Va = Vaticanus gr. 82</note>
+               <note type="footnote">1 Συγγνώμη Μ cf. Hermog. stat. 2 et 6 Rhet. gr. ed. Spen-
 
 gel. II 140, 6 et 163, 19 sq. c. scholl. Rhet. gr. ed. Walz. t. IV
 
 650, 12 sq.; 670, 8; 687, 12 699, 14 sq.</note>
-
-<note type="footnote">1 Θεωρία ante Ἔχων Ferr, Ἄλλη μελέτη. Θεωρία Mor Re
+               <note type="footnote">1 Θεωρία ante Ἔχων Ferr, Ἄλλη μελέτη. Θεωρία Mor Re
 
 delevi | τίς MaCl VaPa edd | παῖδας δύο MaClPa | ἐχθρωδῶς
 
@@ -164,12 +156,8 @@ Pa ἐχθρῶς Ρ edd 2 ἐκέλευε MaClPa ἐκελεύετο Va | ἐ
 post ἐγγεγραμμένον 6 γράψαντα ΒVa 7 Φιλαδέλφου ἀπο-
 
 κηρυττομένου ἀπολογία. Ἀλλ᾿ Mor Re, Ἡ μελέτη Ferr delevi</note>
-
-<note type="footnote">8 οἶος Re</note>
-
-
-
-<pb n="584"/>
+               <note type="footnote">8 οἶος Re</note>
+               <pb n="584"/>
 
 
 
@@ -189,9 +177,10 @@ post ἐγγεγραμμένον 6 γράψαντα ΒVa 7 Φιλαδέλφο
 
 μᾶλλον ἂν ἠβουλόμην ἢ τεθνεῶτος μηδὲν αὐτὸς τοι-
 
-οῦτο παθεῖν.</p></div>
-
-<div type="textpart" subtype="chapter" n="2"><p>καὶ οὐ μόνον γε τὸν τῆς ἀποκηρύξεως
+οῦτο παθεῖν.</p>
+         </div>
+         <div n="2" type="chapter">
+            <p>καὶ οὐ μόνον γε τὸν τῆς ἀποκηρύξεως
 
 <lb n="10"/> φόβον μετριώτερον ἂν ἡγησάμην τῆς τοῦ πατρὸς τε-
 
@@ -210,8 +199,7 @@ post ἐγγεγραμμένον 6 γράψαντα ΒVa 7 Φιλαδέλφο
 καὶ δοῦναι ταύτην δευτέραν χάριν τότε μὲν τὴν νόσον
 
 παύσαντας, ἐν δὲ τῷ δικαστηρίῳ τὴν ὀργὴν τοῦ πατρός.</p>
-
-<p>3. Χάριν μὲν οὖν ἔχω καὶ τῶν ἐπιτηδείων τοῖς
+            <p>3. Χάριν μὲν οὖν ἔχω καὶ τῶν ἐπιτηδείων τοῖς
 
 <note type="footnote">1 ἄνδρες MaClVa cf. p. 585,5; 587,11; 589,22; 596,3; 597,
 
@@ -244,10 +232,7 @@ cum lacuna 2—3 litt Β 14 λύσαι PPaBVa edd 16 τὸν
 om Μ | πρᾶον Va 17 δοῦναι om sed εἷναι post ταύτην Ma
 
 ClVa δοῦναι εἶναι Β 18 τοῖς δικαστηρίοις Ma</note>
-
-
-
-<pb n="585"/>
+               <pb n="585"/>
 
 
 
@@ -279,9 +264,10 @@ ClVa δοῦναι εἶναι Β 18 τοῖς δικαστηρίοις Ma</not
 
 ὀμωμοκότες κάθησθε | μηδὲν ἰσχυρότερον ποιου- <note type="marginal">RIV 671</note>
 
-μένοις.</p></div>
-
-<div type="textpart" subtype="chapter" n="4"><p>δέομαι οὖν ὑμῶν φυλάξαι τε ἢν ἔχετε γνώ- <lb n="15"/>
+μένοις.</p>
+         </div>
+         <div n="4" type="chapter">
+            <p>δέομαι οὖν ὑμῶν φυλάξαι τε ἢν ἔχετε γνώ- <lb n="15"/>
 
 μὴν καὶ παραινέσαι τῷ πατρὶ μηδὲν ἠδικῆσθαι νομί-
 
@@ -291,9 +277,9 @@ ClVa δοῦναι εἶναι Β 18 τοῖς δικαστηρίοις Ma</not
 
 λόγοις πολλοῖς τε οὖσι καὶ μετὰ δεήσεων γιγνομένοις,
 
-ἀλλ’ οὐ τά γε ὑμῖν ἀρέσκοντα δύναιτ’ ἂν ἀτιμάσαι.</p> <lb n="20"/>
-
-<note type="footnote">1 τῶν scripsi e PMClPaVa ut coni Re τῷ MaB edd
+ἀλλ’ οὐ τά γε ὑμῖν ἀρέσκοντα δύναιτ’ ἂν ἀτιμάσαι.</p>
+            <lb n="20"/>
+            <note type="footnote">1 τῶν scripsi e PMClPaVa ut coni Re τῷ MaB edd
 
 4 ὧς om ΡΜ et γρ in marg Mor 5 ἄνδρες MaClPaVa et
 
@@ -322,14 +308,8 @@ Mor Not f. VII 3 17 τὸν om MaClPaVa 18 ἐβουλήθη Β
 edd 19 καὶ om Cl | γινομένοις MaClPaBVa 20 δύναιτ’
 
 ἂν] δύνατ’ Va δύναται MaClPa</note>
-
-
-
-<pb n="586"/>
-
-
-
-<p>5. Τὸ μὲν οὖν προσῆκον ἦν ἑορτὴν ἄγειν ἡμᾶς
+            <pb n="586"/>
+            <p>5. Τὸ μὲν οὖν προσῆκον ἦν ἑορτὴν ἄγειν ἡμᾶς
 
 νῦν ἐπὶ τῷ τοῦτον διαπεφευγέναι τὴν νόσον καὶ θύειν
 
@@ -357,9 +337,10 @@ edd 19 καὶ om Cl | γινομένοις MaClPaBVa 20 δύναιτ’
 
 ροῦντα οὐκ ἔχω χρημάτων τε ἀπορῶν καὶ οὐδενί πω
 
-<lb n="15"/> τοιοῦτον προεισενεγκών;</p></div>
-
-<div type="textpart" subtype="chapter" n="6"><p>ἔτι δὲ ὃς μόνος εἰκότως
+<lb n="15"/> τοιοῦτον προεισενεγκών;</p>
+         </div>
+         <div n="6" type="chapter">
+            <p>ἔτι δὲ ὃς μόνος εἰκότως
 
 ἂν καὶ συνεξητάζετό μοι καὶ συνικέτευεν ἀδελφὸς τὰ
 
@@ -370,14 +351,12 @@ edd 19 καὶ om Cl | γινομένοις MaClPaBVa 20 δύναιτ’
 μοι τηλικούτων αἰτία γέγονε κακῶν ἡ πρὸς αὐτὸν
 
 <lb n="20"/> εὔνοια.</p>
-
-<p>7. Ἐγὼ μὲν οὖν ἐβουλόμην σεσιγῆσθαι πάντα τὰ
+            <p>7. Ἐγὼ μὲν οὖν ἐβουλόμην σεσιγῆσθαι πάντα τὰ
 
 πεπραγμένα πρὸς ἀλλήλους ἡμῖν ἐν τῷ τελευταίῳ χρό-
 
 <note type="footnote">6 cf. t. I 101, 16; VI 608, 5 16 Dem. Mid. p. 576, 11</note>
-
-<note type="footnote">1 ἑορτὴν ἡμᾶς ἄγειν MaClPaVa γρ ἡμᾶς ἄγειν ἑορτὴν in
+               <note type="footnote">1 ἑορτὴν ἡμᾶς ἄγειν MaClPaVa γρ ἡμᾶς ἄγειν ἑορτὴν in
 
 marg Mor 2 νῦν om MaClPaVa | τῷ τοῦτον Ma sed e τοσ-
 
@@ -394,10 +373,7 @@ om MaCl 16 συνεξητάζετό scripsi e MaClPaBVa ut coni Re
 συνεξήταζέ ΡΜ edd | τάμεν Pa 19 γέγονε Μ sed ο in ras
 
 y 21 οὖν om MaClPa | ἠβουλόμην Va 22 γεγραμμένα Ma</note>
-
-
-
-<pb n="587"/>
+               <pb n="587"/>
 
 
 
@@ -418,8 +394,7 @@ y 21 οὖν om MaClPa | ἠβουλόμην Va 22 γεγραμμένα Ma</no
 χέων, ἔστω δέ μοι καὶ τούτων αὐτῶν τῶν βραχέων
 
 ἠναγκασμένῳ συγγνώμη.</p>
-
-<p>8. Ἐγενόμεθα τούτῳ δύο παῖδες, ἐγώ τε ὁ νῦν φεύ- <lb n="10"/>
+            <p>8. Ἐγενόμεθα τούτῳ δύο παῖδες, ἐγώ τε ὁ νῦν φεύ- <lb n="10"/>
 
 γων, ὦ δικασταί, καὶ ὁ δυστυχὴς ἀδελφός, πρεσβύτερος
 
@@ -431,9 +406,10 @@ y 21 οὖν om MaClPa | ἠβουλόμην Va 22 γεγραμμένα Ma</no
 
 δαίων καὶ τερπνῶν καὶ τῶν ἔνδον καὶ τῶν ἔξω, πάν- <lb n="15"/>
 
-τῶν ἀπλῶς καὶ μικρῶν καὶ μειζόνων.</p></div>
-
-<div type="textpart" subtype="chapter" n="9"><p>φοιτῶντες δὲ
+τῶν ἀπλῶς καὶ μικρῶν καὶ μειζόνων.</p>
+         </div>
+         <div n="9" type="chapter">
+            <p>φοιτῶντες δὲ
 
 εἰς τὰς παλαίστρας καὶ τὰ διδασκαλεῖα μετ’ αἰδοῦς τε
 
@@ -443,9 +419,10 @@ y 21 οὖν om MaClPa | ἠβουλόμην Va 22 γεγραμμένα Ma</no
 
 πόλει παρείχομεν, ὥσθ’ ὑπῆρχεν αὐτῷ γεγηθέναι τε <lb n="20"/>
 
-καὶ μετ’ εὐθυμίας διάγειν.</p></div>
-
-<div type="textpart" subtype="chapter" n="10"><p>καὶ ταῦτα οὐ ψεύδο-
+καὶ μετ’ εὐθυμίας διάγειν.</p>
+         </div>
+         <div n="10" type="chapter">
+            <p>καὶ ταῦτα οὐ ψεύδο-
 
 μαι, ὦ πάτερ. οἶσθα γὰρ ὡς ἡδόμενος ᾔεις, ὁπότε σε
 
@@ -462,18 +439,14 @@ ClVa 8 ἔστω om Pa | καὶ τούτων αὐτῶν δέ μοι Pa | α
 om MaCl 10 δύο τούτω Ma | γρ τ’ οὖν ὁ φεύγων in marg
 
 Mor | ὦ ἄνδρες ὁ νῦν φεύγων MaCl 11 ἄνδρες MaClPaBVa</note>
-
-<note type="footnote">13 ὥσπερ ἂν εἰ PMMaClPa ὥσπερ ἂν ἐν BVa 17 τε
+               <note type="footnote">13 ὥσπερ ἂν εἰ PMMaClPa ὥσπερ ἂν ἐν BVa 17 τε
 
 om MaClPa 18 ἢ Cl ἧ Pa 19 περὶ Va 21 διάγειν
 
 Ma sed δια in ras m 3 22 ᾔεις scripsi e MaClVa cum lacob-
 
 sio App Pors 308 Lect εἴης PMPaB edd</note>
-
-
-
-<pb n="588"/>
+               <pb n="588"/>
 
 
 
@@ -483,9 +456,10 @@ sio App Pors 308 Lect εἴης PMPaB edd</note>
 
 καὶ μηδένα δαίμονα μηδὲ φθόνον κινῆσαί τι τῶν παρ-
 
-όντων ἀγαθῶν.</p></div>
-
-<div type="textpart" subtype="chapter" n="11"><p>ἀλλὰ σὺ μὲν ταῦτα ᾔτεις, χαλε-
+όντων ἀγαθῶν.</p>
+         </div>
+         <div n="11" type="chapter">
+            <p>ἀλλὰ σὺ μὲν ταῦτα ᾔτεις, χαλε-
 
 <lb n="5"/> πὸν δὲ ἄρα ἦν νικῆσαι τοὺς βασκάνους. οὕτω γὰρ τῶν
 
@@ -505,9 +479,10 @@ sio App Pors 308 Lect εἴης PMPaB edd</note>
 
 νεσθαι τοῖς ἡμετέροις κακοῖς ἄγριον ἐποίησεν ἄνθρω-
 
-πον οὐ τοιοῦτον.</p></div>
-
-<div type="textpart" subtype="chapter" n="12"><p>καὶ ἧκεν εὐθὺς ἐχθρὸς τοῦ παι-
+πον οὐ τοιοῦτον.</p>
+         </div>
+         <div n="12" type="chapter">
+            <p>καὶ ἧκεν εὐθὺς ἐχθρὸς τοῦ παι-
 
 <lb n="15"/> δός. τῷ δὲ οὐκ ἦν οὐ στῆναι πλησίον, οὐκ εἰπεῖν τι
 
@@ -517,9 +492,10 @@ sio App Pors 308 Lect εἴης PMPaB edd</note>
 
 καὶ τότε πρὸς ἀποκήρυξιν ὥρμησεν. οὕτως ὁ χρηστὸς
 
-ἄνθρωπος ἐκεῖνος οὐκ ἀνίει τὴν ὀργὴν ἀκονῶν.</p></div>
-
-<div type="textpart" subtype="chapter" n="13"><p>καὶ
+ἄνθρωπος ἐκεῖνος οὐκ ἀνίει τὴν ὀργὴν ἀκονῶν.</p>
+         </div>
+         <div n="13" type="chapter">
+            <p>καὶ
 
 <lb n="20"/> ἔμελλε δὴ καὶ ἐπ’ ἐμὲ. πορεύεσθαι τὸ πρῶτον ἐξεργα-
 
@@ -548,10 +524,7 @@ edd | τὴν ante ἀποκήρυξιν Pa 19 ἐκεῖνος ἄνθρωπο
 PaB Va 20 πρὸς Ma | τοπρῶτον Mor | ἐξειργασμένος Pa
 
 23 μὴ δὲ PMaClPaBVa Ferr 24 ποιῆσαι MaCPa</note>
-
-
-
-<pb n="589"/>
+               <pb n="589"/>
 
 
 
@@ -562,8 +535,7 @@ PaB Va 20 πρὸς Ma | τοπρῶτον Mor | ἐξειργασμένος Pa
 καὶ ἄμα ἠξίουν τοὺς διαβάλλοντας εἰς μέσον ἐλθεῖν
 
 καὶ μὴ φεύγειν τὸν ἔλεγχον μηδὲ ἐξ ἀφανῶν βάλλειν.</p>
-
-<p>14. τούτοις καὶ τοιούτοις λόγοις ἐμοῦ χρωμένου καὶ <lb n="5"/>
+            <p>14. τούτοις καὶ τοιούτοις λόγοις ἐμοῦ χρωμένου καὶ <lb n="5"/>
 
 τοῦ πατρὸς ἴσως ἂν ἐνδόντος ἐμπίπτει ποθὲν ἐκεῖνο
 
@@ -577,9 +549,10 @@ PaB Va 20 πρὸς Ma | τοπρῶτον Mor | ἐξειργασμένος Pa
 
 θιγεῖν ἐγγύθεν μηδὲ ταῖς χερσὶ θεραπεῦσαι τὸ σῶμα.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="15"><p>τῆς νόσου δὲ φοβούσης ἐδόκει γε δεῖν τῷ πατρὶ
+</p>
+         </div>
+         <div n="15" type="chapter">
+            <p>τῆς νόσου δὲ φοβούσης ἐδόκει γε δεῖν τῷ πατρὶ
 
 διαθήκας ποιεῖσθαι καὶ καλέσας με καὶ παρακαθισά-
 
@@ -599,13 +572,13 @@ PaB Va 20 πρὸς Ma | τοπρῶτον Mor | ἐξειργασμένος Pa
 
 σιν ἀφορμὰς τῶν καθ’ ἑαυτοῦ λόγων· ταῦτα, <lb n="21"/>
 
-ἔφη, δέδοκται. ταῦτα γράφε.</p></div>
-
-<div type="textpart" subtype="chapter" n="16"><p>ἐγὼ δέ, ὦ δικασταί,
+ἔφη, δέδοκται. ταῦτα γράφε.</p>
+         </div>
+         <div n="16" type="chapter">
+            <p>ἐγὼ δέ, ὦ δικασταί,
 
 <note type="footnote">4 Il. η 242 sq. 13 cf. t. III 52, 11. Dem. Apatur. p. 897,3</note>
-
-<note type="footnote">2 μὲν om Ma | τί post αὐτῷ MaClPa, τι Β 3 τε post
+               <note type="footnote">2 μὲν om Ma | τί post αὐτῷ MaClPa, τι Β 3 τε post
 
 ἐλθεῖν Va 4 μὴ δὲ PMaClPaBVa Ferr 5 τοῖς ante τοι-
 
@@ -624,14 +597,10 @@ MaCl 12 γε om MaClPaBVa | δὴ Ferr Mor 13 καὶ(2)
 om Va 14 καὶ om Ma | δέ Ma 16 ἐγνώκειν Va sed κ in
 
 ras m 2 18 μοι post γενέσθαι MaClPa | καὶ] κατὰ coni Mor</note>
-
-<note type="footnote">19 ἀδελφὸς ὁ σὸς MaClPaVa | οὕτω ταῦτα MaClPa | voce
+               <note type="footnote">19 ἀδελφὸς ὁ σὸς MaClPaVa | οὕτω ταῦτα MaClPa | voce
 
 μὴ inc Cr fol. 88r 22 ἄνδρες CrMaClPaVa</note>
-
-
-
-<pb n="590"/>
+               <pb n="590"/>
 
 
 
@@ -649,9 +618,10 @@ ras m 2 18 μοι post γενέσθαι MaClPa | καὶ] κατὰ coni Mor</n
 
 τα ἅπερ ἂν καὶ ὁ πατήρ, εἰ πρὸ τῆς ὀργῆς διαθήκας
 
-ἔγραφε.</p></div>
-
-<div type="textpart" subtype="chapter" n="17"><p>τούτων δὲ γεγενημένων ἔδραμον εὐθὺς
+ἔγραφε.</p>
+         </div>
+         <div n="17" type="chapter">
+            <p>τούτων δὲ γεγενημένων ἔδραμον εὐθὺς
 
 ἐπὶ τοὺς νεώς, εἵπετο δὲ καὶ ὁ δυστυχὴς ἀδελφός, καὶ
 
@@ -665,9 +635,10 @@ ras m 2 18 μοι post γενέσθαι MaClPa | καὶ] κατὰ coni Mor</n
 
 ὕπεισιν ἐλπίδες, εἶτα ὡς νενίκηται τοῦ κακοῦ τὸ πλέον,
 
-<lb n="15"/> εἶτα ὡς ἅπαν.</p></div>
-
-<div type="textpart" subtype="chapter" n="18"><p>καλεῖ δή με πάλιν καὶ τὰς διαθήκας
+<lb n="15"/> εἶτα ὡς ἅπαν.</p>
+         </div>
+         <div n="18" type="chapter">
+            <p>καλεῖ δή με πάλιν καὶ τὰς διαθήκας
 
 κελεύει φέρειν, ἀναγνοὺς δὲ καὶ συγγενόμενος ἀνθρώ-
 
@@ -710,10 +681,7 @@ MaClBVa 11 τε om Va 12 γρ ἐκεῖνον in marg Mor
 20 τὰ τοιαῦτα] ταῦτα MaClPaVa | οὕτω γράμμα MaClPa
 
 BVa | πρᾶγμα Cobet Coll 299 at cf. p. 592, 15; t. IV 393,7</note>
-
-
-
-<pb n="591"/>
+               <pb n="591"/>
 
 
 
@@ -722,8 +690,7 @@ BVa | πρᾶγμα Cobet Coll 299 at cf. p. 592, 15; t. IV 393,7</note>
 παροξύνουσι καὶ τοὖργον αὐτὸ χαριεῖσθαι. καὶ νῦν
 
 ἠκούετε κατηγοροῦντος αὐτοῦ.</p>
-
-<p>19. Νόμος γάρ μοι δέδωκεν ἀποκηρύττειν
+            <p>19. Νόμος γάρ μοι δέδωκεν ἀποκηρύττειν
 
 φησίν. οἶδα καὶ ἐπαινῶ γε τὸν νόμον βοηθοῦντα πα- <lb n="5"/>
 
@@ -735,9 +702,10 @@ BVa | πρᾶγμα Cobet Coll 299 at cf. p. 592, 15; t. IV 393,7</note>
 
 ἕκαστον λέγοντα ἐνοχλεῖν ἀρκούσης εἰς μαρτυρίαν τοὐ-
 
-μοῦ τρόπου τῆς διαθήκης τοῦ πατρός;</p></div>
-
-<div type="textpart" subtype="chapter" n="20"><p>οὐ γὰρ ἄν, <lb n="10"/>
+μοῦ τρόπου τῆς διαθήκης τοῦ πατρός;</p>
+         </div>
+         <div n="20" type="chapter">
+            <p>οὐ γὰρ ἄν, <lb n="10"/>
 
 εἰ μὴ καὶ φιλοπάτορα καὶ παιδείας ἐπιθυμητὴν καὶ
 
@@ -749,9 +717,10 @@ BVa | πρᾶγμα Cobet Coll 299 at cf. p. 592, 15; t. IV 393,7</note>
 
 συνῄδει καὶ τἄλλα πάντα ἁπλῶς ἃ τῶν ἀγαθῶν ἐστιν, <lb n="15"/>
 
-οὐκ ἂν ὅλης τῆς οὐσίας ἐποίει κύριον.</p></div>
-
-<div type="textpart" subtype="chapter" n="21"><p>ἀλλ’ ὅμως
+οὐκ ἂν ὅλης τῆς οὐσίας ἐποίει κύριον.</p>
+         </div>
+         <div n="21" type="chapter">
+            <p>ἀλλ’ ὅμως
 
 ὃν οὐδεπώποτε ἐμέμψατο νῦν ἀποκηρύττει λέγειν ἔχων
 
@@ -764,14 +733,12 @@ BVa | πρᾶγμα Cobet Coll 299 at cf. p. 592, 15; t. IV 393,7</note>
 ἔφη τρέφει τοῦ πατρὸς καταφρονῶν. ἑτέρου ταὐτὸ
 
 <note type="footnote">6 cf. t. IV 746, 17 R</note>
-
-<note type="footnote">2 τοὔργον Va τοὔργον Cl 5 τοῖς ante πατράσιν Mor
+               <note type="footnote">2 τοὔργον Va τοὔργον Cl 5 τοῖς ante πατράσιν Mor
 
 Re delevi 6 μὰ PM Ferr cf. t. VI 527,2 c. schol.
 
 7 θεοὺς in lac 12 – 14 litt om Va | νόμων Β | πεποίηταί Pa</note>
-
-<note type="footnote">8 παρὰ om BVa | καθέκαστον PMMaClPa 11 καὶ μὴ
+               <note type="footnote">8 παρὰ om BVa | καθέκαστον PMMaClPa 11 καὶ μὴ
 
 Β et γρ in marg Mor 13 πρᾶον Va Ferr Mor | ἶσον Cl | καὶ
 
@@ -788,10 +755,7 @@ PM edd 18 οἷον Va | ἔδοξεν Va 20 ὅτι ClVa 21 τρέ-
 φει scripsi e MaPaBVa ut coni Re τρέφειν Ρ sed v eras,
 
 MCl edd</note>
-
-
-
-<pb n="592"/>
+               <pb n="592"/>
 
 
 
@@ -810,8 +774,7 @@ MCl edd</note>
 μῖσος ἀποκηρύξεως αἴτ’ ἴον, καί τις ἐξέβαλεν υἱὸν
 
 αἰσθόμενος ὧς ἥδιστα ἂν ἴδοι τεθνεῶτα τὸν ἀδελφόν.</p>
-
-<p>22. Τί οὖν ἀδικῶ τούτων ἢ τί τούτοις παραπλή-
+            <p>22. Τί οὖν ἀδικῶ τούτων ἢ τί τούτοις παραπλή-
 
 <lb n="10"/> σίον; τούτων μὲν οὐδέν φησιν, ἕτερα δὲ ἐμοῦ
 
@@ -825,9 +788,10 @@ MCl edd</note>
 
 <lb n="15"/> γραμμάτων καταστὰς πονηρὸς εἰς ἐκεῖνον ἐν οἶς ἔγρα-
 
-φον ἐγιγνόμην.</p></div>
-
-<div type="textpart" subtype="chapter" n="23"><p>εἰ μὲν οὖν ἔχεις, ὦ πάτερ, ἐπιδεῖ-
+φον ἐγιγνόμην.</p>
+         </div>
+         <div n="23" type="chapter">
+            <p>εἰ μὲν οὖν ἔχεις, ὦ πάτερ, ἐπιδεῖ-
 
 ξαί με τῇ πρὸς σὲ δυσμενείᾳ τοῦτο πεποιηκότα, λάμ-
 
@@ -839,15 +803,15 @@ MCl edd</note>
 
 πῶς διαβάλλεις ἔργον οὗ μέμψασθαι τὴν αἰτίαν οὐκ
 
-ἔχεις;</p></div>
-
-<div type="textpart" subtype="chapter" n="24"><p>καὶ ἐν τοῖς φονικοῖς νόμοις οὕτω κρίνεται
+ἔχεις;</p>
+         </div>
+         <div n="24" type="chapter">
+            <p>καὶ ἐν τοῖς φονικοῖς νόμοις οὕτω κρίνεται
 
 τὰ πράγματα. οὐ δυοῖν ἀνδροφόνοιν ὁ μὲν φυγὼν
 
 <note type="footnote">1 Callim. epigr. 64, 4 3 cf. p. 97, 5. Dem. fals. leg. p. 417, 21</note>
-
-<note type="footnote">2 ἐβόησε Ρ 3 γρ ὄρεσι in marg Mor 4 μοι reposui e
+               <note type="footnote">2 ἐβόησε Ρ 3 γρ ὄρεσι in marg Mor 4 μοι reposui e
 
 libris μου edd sed γρ μοι in marg Mor 6 τὸν ante ἀδελφὸν
 
@@ -864,10 +828,7 @@ ClPa | καταστὰς — 16 πάτερ om Va 18 ἀλλὰ ΡΜ edd
 19 ἔχοι Οἶ’ 20 οὐδὲ ΡΜ edd | πεποίηκεν Ma 22 ἔργοις
 
 Ferr et γρ in marg Mor | τούτω MaClPaVa</note>
-
-
-
-<pb n="593"/>
+               <pb n="593"/>
 
 
 
@@ -881,9 +842,10 @@ Ferr et γρ in marg Mor | τούτω MaClPaVa</note>
 
 ἐκ προνοίας ἐτολμήθη τὸ ἔργον, τῷ δὲ οὐ βουλομένῳ <lb n="5"/>
 
-ἀτυχῆσαι συνέβη.</p></div>
-
-<div type="textpart" subtype="chapter" n="25"><p>διὰ τοῦτο τὸν μὲν ὁ νόμος μισεῖ,
+ἀτυχῆσαι συνέβη.</p>
+         </div>
+         <div n="25" type="chapter">
+            <p>διὰ τοῦτο τὸν μὲν ὁ νόμος μισεῖ,
 
 τὸν δὲ ἐλεεῖ. κἂν ἀμύνηταί φησιν, ἐξέστω, κἂν ἐν
 
@@ -893,9 +855,10 @@ Ferr et γρ in marg Mor | τούτω MaClPaVa</note>
 
 καὶ πρὸς αὐτὴν εἰώθαμεν βλέποντες τὸ πεπραγμένον <lb n="10"/>
 
-ἢ χρηστὸν ἢ πονηρὸν ἡγεῖσθαι.</p></div>
-
-<div type="textpart" subtype="chapter" n="26"><p>κατὰ τοῦτο τοίνυν,
+ἢ χρηστὸν ἢ πονηρὸν ἡγεῖσθαι.</p>
+         </div>
+         <div n="26" type="chapter">
+            <p>κατὰ τοῦτο τοίνυν,
 
 ὦ πάτερ, τὸ δίκαιον καὶ νῦν ἐμοὶ δίκασον. ἐγὼ ταῦ-
 
@@ -914,10 +877,8 @@ Ferr et γρ in marg Mor | τούτω MaClPaVa</note>
 μοντα, οὐ τὸν τῆς μητρὸς κατήκοον, οὐ τὸν τοῦ πα-
 
 τρός, οὐ τὸν τῶν παιδαγωγῶν; ἐξαίφνης οὖν ἐγὼ περὶ <lb n="20"/>
-
-<note type="footnote">1 cf. p. 563, 15 7 Antiph. tetral. III 4 § 7 p. 128, 39</note>
-
-<note type="footnote">1 καὶ ante κατέρχεται MaClPaVa Mor sed in hoc γρ in
+               <note type="footnote">1 cf. p. 563, 15 7 Antiph. tetral. III 4 § 7 p. 128, 39</note>
+               <note type="footnote">1 καὶ ante κατέρχεται MaClPaVa Mor sed in hoc γρ in
 
 marg om, Re | αὐτοῦ MaCl 2 τὸ ante τούτων Β 3 ἐκεῖ-
 
@@ -944,10 +905,7 @@ signa interrogationis reliqui libri edd 17 φιλέτας MaCl
 τοὺς om CrMaClPaVa 18 πρᾶον Va Ferr Mor 19 κατή-
 
 κοον τῆς μητρὸς MaCl 20 περὶ σὲ om MaClPaVa</note>
-
-
-
-<pb n="594"/>
+               <pb n="594"/>
 
 
 
@@ -958,8 +916,8 @@ signa interrogationis reliqui libri edd 17 φιλέτας MaCl
 μανείς, πῶς ἀπαιτοῦμαι δίκην; εἰ δὲ σωφρονῶν, οὐ
 
 σωφρονοῦντος τὰ τοιαῦτα.</p>
-
-<lb n="5"/> <p>27. Ἀλλὰ τί δὴ παθὼν οὐκ ἐν οἷς ἐκέλευες ἔμενον
+            <lb n="5"/>
+            <p>27. Ἀλλὰ τί δὴ παθὼν οὐκ ἐν οἷς ἐκέλευες ἔμενον
 
 οὐδὲ μόνος ἠξίουν κληρονομεῖν; ᾤκτειρα, ὦ πάτερ,
 
@@ -975,9 +933,10 @@ signa interrogationis reliqui libri edd 17 φιλέτας MaCl
 
 τῆς δαίμονος, ἧς τοὺς νόμους οἱ μὲν χρηστοὶ τηροῦ-
 
-σιν, οἱ δὲ χείρονες παραβαίνουσιν.</p></div>
-
-<div type="textpart" subtype="chapter" n="28"><p>ἐμοὶ δὲ ἡ τῶν
+σιν, οἱ δὲ χείρονες παραβαίνουσιν.</p>
+         </div>
+         <div n="28" type="chapter">
+            <p>ἐμοὶ δὲ ἡ τῶν
 
 νόμων ἐκείνων αἰδὼς συνηυξήθη, δι’ οὕς, εἴ τις σοὶ
 
@@ -992,8 +951,7 @@ signa interrogationis reliqui libri edd 17 φιλέτας MaCl
 ὀνόματα ἀπλῶς ἡγοῦμαι τὰς προσηγορίας ταύτας, τὸν
 
 <note type="footnote">9 cf. ad p. 467, 19 12 cf. ad t. V 426, 8; VI 404, 19</note>
-
-<note type="footnote">1 ὃς om FaBVa 2 ἠβουλόμην MaClPaVa 3 ἀπαι-
+               <note type="footnote">1 ὃς om FaBVa 2 ἠβουλόμην MaClPaVa 3 ἀπαι-
 
 τῶμαι ΡΜ Ferr | δ’ αὖ MaClPa | σωφρονῶ Cl 5 οὐκ —
 
@@ -1014,14 +972,10 @@ t. III 198, 2 14 τι MaCl 15 ἐπίοι scripsi e Μ sed οι ex
 Ma sed ~ del et supra ι m3 16 τυγχάνη Β | ἆρ’ οὖν scripsi
 
 cum lacobsio Lect ἆρ’ ἄν ΡΜ edd ἀρά MaClPaVa ἆρά Β</note>
-
-<note type="footnote">17 καὶ(2) om MMaCl 18 αὐτῶν Β | πέσοιμι Ma
+               <note type="footnote">17 καὶ(2) om MMaCl 18 αὐτῶν Β | πέσοιμι Ma
 
 19 ἄλλως lacobs Add 46 Lect coll t. V 543, 14</note>
-
-
-
-<pb n="595"/>
+               <pb n="595"/>
 
 
 
@@ -1029,9 +983,10 @@ cum lacobsio Lect ἆρ’ ἄν ΡΜ edd ἀρά MaClPaVa ἆρά Β</note>
 
 φόν, ἀλλ’ ἐν ἑκάστῳ τούτων τοῦ στέργειν ἀλλήλους
 
-ἀνάγκην τινὰ ἐγκεῖσθαι.</p></div>
-
-<div type="textpart" subtype="chapter" n="29"><p>ἠλέουν τὸν ἀδελφὸν καὶ
+ἀνάγκην τινὰ ἐγκεῖσθαι.</p>
+         </div>
+         <div n="29" type="chapter">
+            <p>ἠλέουν τὸν ἀδελφὸν καὶ
 
 πρὸ τῶν διαθηκῶν, ἠλέησα καὶ ἐν τῷ καιρῷ τῶν δια-
 
@@ -1057,9 +1012,10 @@ cum lacobsio Lect ἆρ’ ἄν ΡΜ edd ἀρά MaClPaVa ἆρά Β</note>
 
 γὸν δ’ ἂν τίς ἐχειροτόνησεν; ἐκ τίνων δ’ ἂν ἔγημε; <lb n="15"/>
 
-παισὶ δ’ ἂν αὑτοῦ πῶς ἐπετίμησε;</p></div>
-
-<div type="textpart" subtype="chapter" n="30"><p>ταῦτα πάντα,
+παισὶ δ’ ἂν αὑτοῦ πῶς ἐπετίμησε;</p>
+         </div>
+         <div n="30" type="chapter">
+            <p>ταῦτα πάντα,
 
 ὦ πάτερ, ἐξ ἑνὸς ἐκείνου τῶν διαθηκῶν ἐφύετο, καὶ
 
@@ -1074,14 +1030,12 @@ cum lacobsio Lect ἆρ’ ἄν ΡΜ edd ἀρά MaClPaVa ἆρά Β</note>
 <note type="footnote">6 Dem. Olymp. p. 1173,6 et 17; 1175,14; 1178,22
 
 19 Dem. fals. leg. § 208 p. 406,5</note>
-
-<note type="footnote">1 καὶ τὸν παῖδα om MaClPaBVa 4 ἠλέησα — διαθη-
+               <note type="footnote">1 καὶ τὸν παῖδα om MaClPaBVa 4 ἠλέησα — διαθη-
 
 κῶν in marg Ma 3 5 εἰ μηδὲ scripsi auctore Re εἰ μήτε
 
 libri sed ἐπεὶ οὔτε suprascr P 2, edd 8 μετεῖχεν οὐδενός Μ</note>
-
-<note type="footnote">9 εἶχε scripsi e MaClPaBVa εἶχον ΡΜ Ferr εἶχεν Mor
+               <note type="footnote">9 εἶχε scripsi e MaClPaBVa εἶχον ΡΜ Ferr εἶχεν Mor
 
 Re 11 γερόντων MaClPaBVa 12 ἠξιοῦτο Ma et ex ἠξίου
 
@@ -1096,18 +1050,16 @@ corr P 2, edd | πῶς] τίς Va 17 καὶ om Ma 19 τοῦτ’ Β
 Va | αὐτῷ reposui e libris sed ex αὐτὸ corr Va αὐτὸ edd
 
 20 ἐξέβαλε Pa 21 ὦ πάτερ ante εἰσῆλθε BVa</note>
-
-
-
-<pb n="596"/>
+               <pb n="596"/>
 
 
 
 ἤθροισεν. ὑπὸ τούτων ἡγοῦ σοι τὴν διαθήκην γεγρά-
 
-φθαι.</p></div>
-
-<div type="textpart" subtype="chapter" n="31"><p>τοὺς δὲ τοιούτους ἀνθρώπους σώζοιτ’ ἂν
+φθαι.</p>
+         </div>
+         <div n="31" type="chapter">
+            <p>τοὺς δὲ τοιούτους ἀνθρώπους σώζοιτ’ ἂν
 
 ὑμεῖς εἰκότως, ὦ δικασταί, μᾶλλον ἢ ἀπολλύοιτε νομί-
 
@@ -1125,9 +1077,10 @@ Va | αὐτῷ reposui e libris sed ex αὐτὸ corr Va αὐτὸ edd
 
 <lb n="10"/> βάρβαρον ἄν; ὁ δὲ μηδένα ἀνθρώπων&lt;ἐλεῶν&gt; δικαίως ἂν
 
-κατορύττοιτο ζῶν.</p></div>
-
-<div type="textpart" subtype="chapter" n="32"><p>οὐχ ἑώρακας ἐν πολέμοις, ὦ πάτερ,
+κατορύττοιτο ζῶν.</p>
+         </div>
+         <div n="32" type="chapter">
+            <p>οὐχ ἑώρακας ἐν πολέμοις, ὦ πάτερ,
 
 τοὺς δι’ ὅπλων ἐλθόντας ὑπὸ τῶν κεκρατηκότων θα-
 
@@ -1135,9 +1088,10 @@ Va | αὐτῷ reposui e libris sed ex αὐτὸ corr Va αὐτὸ edd
 
 πράξας κακῶς ἐλεεῖται. πολεμίων οὖν ἐλεουμένων αὐ-
 
-<lb n="15"/> τὸς ἂν ἦν εἰς ἀδελφὸν ἀνελέητος;</p></div>
-
-<div type="textpart" subtype="chapter" n="33"><p>πατὴρ ἦν ὁ
+<lb n="15"/> τὸς ἂν ἦν εἰς ἀδελφὸν ἀνελέητος;</p>
+         </div>
+         <div n="33" type="chapter">
+            <p>πατὴρ ἦν ὁ
 
 χαλεπαίνων, ἀλλ’ ὁ τῆς ὀργῆς πειρώμενος ἀδελφός. ὁ
 
@@ -1152,14 +1106,12 @@ Va | αὐτῷ reposui e libris sed ex αὐτὸ corr Va αὐτὸ edd
 ἄν, οὕτω νῦν τοῦδε μὲν ἀγριαίνοντος, ἐκείνου δὲ ὄντος
 
 ἐν συμφοραῖς τὸ πιεζόμενον παρεκάλει τὴν ῥοπήν.</p>
-
-<p>34. Ἀναμιμνήσκου δέ, ὦ πάτερ, ὡς παῖδες ὄντες
+            <p>34. Ἀναμιμνήσκου δέ, ὦ πάτερ, ὡς παῖδες ὄντες
 
 κομιδῆ καὶ τὰ τῶν τηλικούτων ἁμαρτάνοντες, ὁπότε
 
 <note type="footnote">15 [Arist.] physiogn. 29 ed. script. physiogn. t. I p. 38, 3</note>
-
-<note type="footnote">3 εἰκότως ὑμεῖς Va | ἄνδρες MaClPaVa cf. p. 584, 1
+               <note type="footnote">3 εἰκότως ὑμεῖς Va | ἄνδρες MaClPaVa cf. p. 584, 1
 
 4 αὐτοῦ MaClPaVa αὐτὸν Μ 7 ἂν om Ma 9 „malim
 
@@ -1170,10 +1122,7 @@ Va | αὐτῷ reposui e libris sed ex αὐτὸ corr Va αὐτὸ edd
 scripsi e MaClPaBVa et γρ in marg Mor αὐτὸς ΡΜ edd
 
 18 γάρ om Β 19 μὲν ἀμφοτέροις Ma 20 τὸ om Re</note>
-
-
-
-<pb n="597"/>
+               <pb n="597"/>
 
 
 
@@ -1185,9 +1134,10 @@ scripsi e MaClPaBVa et γρ in marg Mor αὐτὸς ΡΜ edd
 
 ἠγανάκτεις, τῷ δ’ ἦν ὁ | κίνδυνος μέγας, ἐγὼ δὲ <note type="marginal">RIV 679</note>
 
-ἐβοήθουν ἀδελφὸς ὤν. σύγγνωθι δὴ καὶ νῦν.</p></div>
-
-<div type="textpart" subtype="chapter" n="35"><p>εἰ <lb n="5"/>
+ἐβοήθουν ἀδελφὸς ὤν. σύγγνωθι δὴ καὶ νῦν.</p>
+         </div>
+         <div n="35" type="chapter">
+            <p>εἰ <lb n="5"/>
 
 μὲν γὰρ ἐνῆν ὁμοῦ καὶ μεταδοῦναι τοῦ κλήρου καὶ
 
@@ -1206,8 +1156,7 @@ scripsi e MaClPaBVa et γρ in marg Mor αὐτὸς ΡΜ edd
 ἀποκλίναντα καὶ τῇ φύσει τοῦ πράγματος, μὴ τῷ παιδὶ
 
 προστίθει τὴν αἰτίαν.</p>
-
-<p>36. Οὐ τοίνυν ἔστιν εἰπεῖν ὧς ἓν τοῦτ’ ἦν ἐν τῷ 15
+            <p>36. Οὐ τοίνυν ἔστιν εἰπεῖν ὧς ἓν τοῦτ’ ἦν ἐν τῷ 15
 
 τότε γενομένῳ μόνον τὸ τὸν ἀδελφὸν ἐλέου τυχεῖν,
 
@@ -1223,13 +1172,13 @@ scripsi e MaClPaBVa et γρ in marg Mor αὐτὸς ΡΜ edd
 
 προσιέναι δοκοῦσα τὴν ὀργὴν ἐπράυνεν, ἀλλ’
 
-ᾠήθη δεῖν αὐτὴν καὶ κάτω φέρων ἐλθεῖν.</p></div>
-
-<div type="textpart" subtype="chapter" n="37"><p>ταῦ-
+ᾠήθη δεῖν αὐτὴν καὶ κάτω φέρων ἐλθεῖν.</p>
+         </div>
+         <div n="37" type="chapter">
+            <p>ταῦ-
 
 <note type="footnote">23 cf. t. I 161, 6; IV 217, 17</note>
-
-<note type="footnote">1 καταφεύγομεν MaCl 2 τε om MaClPaBVa 3 εἶχε
+               <note type="footnote">1 καταφεύγομεν MaCl 2 τε om MaClPaBVa 3 εἶχε
 
 Pa | τι Ma sed ι in ras m 3 5 ἀδελφὸς ὤν] ἀδελφῶ Β sed
 
@@ -1242,16 +1191,12 @@ in marg Mor 9 προσίεσθαι] προίεσθαι Β μὴ προσίε�
 ΡΜ τὸν MaClPa Mor Re τοῦ BVa τὸ Ferr et γρ in marg
 
 Mor | προσέχει Mor Re 12 εἰκότως MaClPaBVa | ἐκεῖνον Pa</note>
-
-<note type="footnote">16 γινομένῳ MaClPaVa | τῶ Pa 17 ἄνδρες MaClPaB
+               <note type="footnote">16 γινομένῳ MaClPaVa | τῶ Pa 17 ἄνδρες MaClPaB
 
 Va cf. p. 584, 1 18 μὴ MaCl 22 voce τὴν inc Cr fol 33 v
 
 sed pleraque posteriore scriptura obtecta 23 ταῦτ’ BVa</note>
-
-
-
-<pb n="598"/>
+               <pb n="598"/>
 
 
 
@@ -1266,8 +1211,7 @@ sed pleraque posteriore scriptura obtecta 23 ταῦτ’ BVa</note>
 <lb n="5"/> τί οὖν ἠδίκουν ἐκ τῶν αὐτῶν ἀδελφῷ καὶ πατρὶ
 
 βοηθῶν;</p>
-
-<p>38. Ἄξιος γὰρ ἦν φησι ταύτην δοῦναι τὴν
+            <p>38. Ἄξιος γὰρ ἦν φησι ταύτην δοῦναι τὴν
 
 δίκην. καὶ εἶπεν ἐν ὑμῖν τὸ ἁμάρτημα τοῦ νέου. ἐγὼ
 
@@ -1285,9 +1229,10 @@ sed pleraque posteriore scriptura obtecta 23 ταῦτ’ BVa</note>
 
 <lb n="15"/> ἀλλ’ ὁ μὲν μᾶλλον, ὁ δὲ ἧττον, πάντως δὲ ἕκαστος
 
-ἁλίσκεταί που καὶ μωραίνων.</p></div>
-
-<div type="textpart" subtype="chapter" n="39"><p>καὶ τί θαυμαστόν,
+ἁλίσκεταί που καὶ μωραίνων.</p>
+         </div>
+         <div n="39" type="chapter">
+            <p>καὶ τί θαυμαστόν,
 
 ὅπου γε καὶ τὸ γῆρας οὐ πανταχοῦ φυλάττει τὸν
 
@@ -1328,10 +1273,7 @@ verbis τῆς μελέτης ἐν ᾖ ὁ ἀποκηρυχθεὶς διὰ 
 φὸν συγκληρονόμον ἀπολογεῖται laudavit Macarius Chrysocephalus
 
 fol. 80r | καὶ] ἔστιν ὅτε Macar 18 ἔδρασε BVa</note>
-
-
-
-<pb n="599"/>
+               <pb n="599"/>
 
 
 
@@ -1345,9 +1287,10 @@ fol. 80r | καὶ] ἔστιν ὅτε Macar 18 ἔδρασε BVa</note>
 
 δοται. θεῶν γάρ, οἶμαι, μόνων τὸ κρείττους ἢ ἁμαρτά- <lb n="5"/>
 
-νεῖν εἶναι.</p></div>
-
-<div type="textpart" subtype="chapter" n="40"><p>οὐκ εἶδες πώλους, ὦ πάτερ, καὶ σκιρ-
+νεῖν εἶναι.</p>
+         </div>
+         <div n="40" type="chapter">
+            <p>οὐκ εἶδες πώλους, ὦ πάτερ, καὶ σκιρ-
 
 τῶντας καὶ θορυβοῦντας τὸν ἱππέα καὶ οὐ παρὰ τοῦτο
 
@@ -1361,9 +1304,10 @@ fol. 80r | καὶ] ἔστιν ὅτε Macar 18 ἔδρασε BVa</note>
 
 σης χρῶνται πρὸς τὰ ἔργα σωφρονοῦσί τε ἤδη καὶ
 
-πολὺ τοὺς ἄλλους νικῶσιν.</p></div>
-
-<div type="textpart" subtype="chapter" n="41"><p>ἔφυγέ τι τῶν ἐπιπό-
+πολὺ τοὺς ἄλλους νικῶσιν.</p>
+         </div>
+         <div n="41" type="chapter">
+            <p>ἔφυγέ τι τῶν ἐπιπό-
 
 νων ὁ παῖς, παῖς γὰρ ἦν καὶ δεῖ τῶν τηλικούτων τοὺς
 
@@ -1378,8 +1322,7 @@ fol. 80r | καὶ] ἔστιν ὅτε Macar 18 ἔδρασε BVa</note>
 καὶ ταῦτα ζῶν ἐν δημοκρατίᾳ· εἰ δὲ εἰσὶν οἷς προσήκει
 
 <note type="footnote">19 Thuc. II 37,2</note>
-
-<note type="footnote">1 μετεμέλησε scripsi e MaClPaVa Macar μετημέλησε ΡΜΒ
+               <note type="footnote">1 μετεμέλησε scripsi e MaClPaVa Macar μετημέλησε ΡΜΒ
 
 edd 3 συγγνώμης ὑπῆρξε Pa | δὲ Macar | ἄνδρες MaClPa cf,
 
@@ -1410,16 +1353,12 @@ Macar 16 μὴ ante ἐπαινεῖν, non post μὲν Pa 17 οὔ Macar
 | δὲ Pa 18 καὶ ante ὄρα MaCl | „malim εἰ σοῦ τις vel εἰ σέ
 
 τις“ Re 19 οἷς Ma sed ι m3</note>
-
-
-
-<pb n="600"/>
+               <pb n="600"/>
 
 
 
 τούτου τυγχάνειν, τίνας πρὸ ἡμῶν τῶν νέων ἄξιον;</p>
-
-<p>42. ἔδει δοῦναι δίκην τὸν υἱόν; ἐδεδώκει καὶ ταύτην,
+            <p>42. ἔδει δοῦναι δίκην τὸν υἱόν; ἐδεδώκει καὶ ταύτην,
 
 ὡς ἐγὼ φαίην ἄν, οὐ μικράν· ἀπεστερήθη τῶν παρὰ
 
@@ -1431,9 +1370,10 @@ Macar 16 μὴ ante ἐπαινεῖν, non post μὲν Pa 17 οὔ Macar
 
 διακόνων ὕβριν, ἐν νυξὶν ἠγρύπνησεν, ἐν ἡμέραις
 
-ἔκλαυσε, τοῦ σώματος αὐτοῦ ἀνάλωσεν ἡ λύπη.</p></div>
-
-<div type="textpart" subtype="chapter" n="43"><p>τί
+ἔκλαυσε, τοῦ σώματος αὐτοῦ ἀνάλωσεν ἡ λύπη.</p>
+         </div>
+         <div n="43" type="chapter">
+            <p>τί
 
 τούτων ἔδει ζητῆσαι πλέον καὶ ταῦτα ἐπ’ αἰτίαις οὐ
 
@@ -1448,8 +1388,7 @@ Macar 16 μὴ ante ἐπαινεῖν, non post μὲν Pa 17 οὔ Macar
 φοῦ φιλανθρωπίαν πρὸς ἀδελφὸν τούτου νενόμικεν
 
 <lb n="15"/> ἀξίαν, τί ποτ’ ἂν ἔδρασεν ἐν αἰσχίστοις ἐκεῖνον λαβών;</p>
-
-<p>44. τοῦτό με μάλιστα, ὦ πάτερ, ἔπεισε τῶν ἴσων
+            <p>44. τοῦτό με μάλιστα, ὦ πάτερ, ἔπεισε τῶν ἴσων
 
 ἀξιῶσαι τὸν ἀδελφὸν τὸ καὶ παρὰ σοὶ μικρὰ κεκρίσθαι
 
@@ -1462,8 +1401,7 @@ Macar 16 μὴ ante ἐπαινεῖν, non post μὲν Pa 17 οὔ Macar
 εἰ διαφύγοις τὴν νόσον, ἐπαίνου τεύξεσθαι παρὰ σοῦ
 
 τῇ προσθήκῃ. καὶ ὡς ταῦτα ἤλπιζον μάθοις ἂν ἐκεῖθεν.</p>
-
-<p>45. τῶν μὲν γὰρ μάντεων οὐδεὶς προειρήκει τὴν τε-
+            <p>45. τῶν μὲν γὰρ μάντεων οὐδεὶς προειρήκει τὴν τε-
 
 <note type="footnote">1 τυγχάνειν Ma sed ν(2) add m 3 | τίνα MaCl 2 δέδωκε
 
@@ -1480,16 +1418,11 @@ sed οῦ ex ὸ corr m2 12 ἂν om Pa | εἶκεν Cl 14 τοῦτον
 Cl sed in τούτου corr m 2 15 ἐν om MaCl 16 με inserui
 
 e PMCrMaClPaVa om Β edd | ἔπεισε om Cr ἔπεισεν MaPa</note>
-
-<note type="footnote">17 ἀξιῶσαι τὸν ἀδελφὸν τῶν ἴσων MaClPa | καὶ om Β
+               <note type="footnote">17 ἀξιῶσαι τὸν ἀδελφὸν τῶν ἴσων MaClPa | καὶ om Β
 
 περὶ Va | μικρὰ κεκρίσθαι μικρὰ MaCl 21 διαφύγῃς MaCl</note>
-
-<note type="footnote">22 μάθοις Ma sed οι in η corr m3 23 εἰρήκει MaCl</note>
-
-
-
-<pb n="601"/>
+               <note type="footnote">22 μάθοις Ma sed οι in η corr m3 23 εἰρήκει MaCl</note>
+               <pb n="601"/>
 
 
 
@@ -1503,9 +1436,9 @@ e PMCrMaClPaVa om Β edd | ἔπεισε om Cr ἔπεισεν MaPa</note>
 
 τὸ μὴ δόξειν ἀδικεῖν, εἰ γνωσθείη, | ταῦτα δή <note type="marginal">RIV 682</note>
 
-που ἔγραφεν.</p> <lb n="6"/>
-
-<p>46. Ἐβουλόμην μὲν γὰρ αὐτόν φησιν ὑπὸ
+που ἔγραφεν.</p>
+            <lb n="6"/>
+            <p>46. Ἐβουλόμην μὲν γὰρ αὐτόν φησιν ὑπὸ
 
 πενίας γενέσθαι βελτίω. τί δ’, εἰ χείρων ὑπ’ αὐ-
 
@@ -1523,9 +1456,10 @@ e PMCrMaClPaVa om Β edd | ἔπεισε om Cr ἔπεισεν MaPa</note>
 
 βουλομένῳ χορηγεῖ, πενία δὲ καὶ τὸν οὐ βουλόμενον <lb n="15"/>
 
-ἀναγκάζει.</p></div>
-
-<div type="textpart" subtype="chapter" n="47"><p>εἰ γὰρ ἐθέλεις σκέψασθαι τοὺς ἱεροσύ-
+ἀναγκάζει.</p>
+         </div>
+         <div n="47" type="chapter">
+            <p>εἰ γὰρ ἐθέλεις σκέψασθαι τοὺς ἱεροσύ-
 
 λους καὶ τοιχωρύχους καὶ ὅσοι κινοῦσι θήκας καὶ ὅσοι
 
@@ -1534,12 +1468,10 @@ e PMCrMaClPaVa om Β edd | ἔπεισε om Cr ἔπεισεν MaPa</note>
 ὅλως τοὺς ἐπὶ κέρδεσιν ἀδικοῦντας, ἐκ τῶν ἀπόρων
 
 εὕροις ἂν πλείους ἢ ὅσοι ἐν ἀφθόνοις ζῶσι. καὶ γὰρ <lb n="20"/>
-
-<note type="footnote">3 cf. t. II 126, 4 20 cf. p. 625, 20. Dem. cor. p. 312, 17.
+               <note type="footnote">3 cf. t. II 126, 4 20 cf. p. 625, 20. Dem. cor. p. 312, 17.
 
 Xen. anab. III 2, 25; IV 5, 29; VII 6, 31</note>
-
-<note type="footnote">1 δὲ Re 2 εὔδηλον ΡΜ Ferr et γρ in marg Mor | ἔγρα-
+               <note type="footnote">1 δὲ Re 2 εὔδηλον ΡΜ Ferr et γρ in marg Mor | ἔγρα-
 
 φον MaCl 3 τε Ma sed ε add m 3 4 εἰσόμενον MaCl
 
@@ -1562,16 +1494,12 @@ e libris sed καὶ τούς Β Macar om Ferr τοὺς Mor Re
 e CrMaClPaB Va et γρ in marg Mor Macar coll Dem. et Xen.
 
 ll. ll. ἀφθόνῳ ΡΜ edd</note>
-
-
-
-<pb n="602"/>
+               <pb n="602"/>
 
 
 
 ἂν τὰ ἄλλα ἀνέχηταί τις, πεινῶντα φέρειν οὐκ ἔνι.</p>
-
-<p>48. τίς οὖν ἦν σοι τῶν θεῶν ἐγγυητὴς τοῦ μηδὲν ἄν
+            <p>48. τίς οὖν ἦν σοι τῶν θεῶν ἐγγυητὴς τοῦ μηδὲν ἄν
 
 σοι ποιῆσαι τὸν υἱὸν αἰσχρὸν βιαζομένης πενίας; καὶ
 
@@ -1599,9 +1527,10 @@ ll. ll. ἀφθόνῳ ΡΜ edd</note>
 
 <lb n="15"/> χαλεπὸν ἂν ἦν, ὦ πάτερ, ἀμείνω σοι γενέσθαι τὸν
 
-υἱὸν ὑπὸ τῆς ἀχρηματίας.</p></div>
-
-<div type="textpart" subtype="chapter" n="49"><p>μὴ χείρω μὲν οὖν γε-
+υἱὸν ὑπὸ τῆς ἀχρηματίας.</p>
+         </div>
+         <div n="49" type="chapter">
+            <p>μὴ χείρω μὲν οὖν γε-
 
 νέσθαι χαλεπὸν ἂν ἦν, μᾶλλον δέ, εἰ καὶ μηδεὶς τῶν
 
@@ -1612,10 +1541,8 @@ ll. ll. ἀφθόνῳ ΡΜ edd</note>
 <lb n="20"/> ἔδει πονηρὸν ἐπὶ τῆς διαθήκης γενόμενον φιλανθρω-
 
 πεύεσθαι μετὰ τοσαύτης βλάβης;</p>
-
-<note type="footnote">2 cf. p. 573, 5</note>
-
-<note type="footnote">1 καὶ ante τὰ MaClPa | ἀνέχεταί Β ἀνάσχηταί Pa | στό-
+            <note type="footnote">2 cf. p. 573, 5</note>
+            <note type="footnote">1 καὶ ante τὰ MaClPa | ἀνέχεταί Β ἀνάσχηταί Pa | στό-
 
 μαχόν γε ante πεινῶντα inserendum coni Re cui oblocutus est
 
@@ -1634,16 +1561,9 @@ ClPa 12 ἂν ἦν MaClPa 13 τῷ om Mor | ὥσπερ Va
 15 τὸν — 16 γενέσθαι om MaCl 16 οὖν] γὰρ Pa 18 εἰς
 
 κοινωνίαν εἰσῆγον ὕστερον MaClPa 20 γραφόμενον MaClPa</note>
-
-<note type="footnote">21 τοσαύτην βλάβην MaCl</note>
-
-
-
-<pb n="603"/>
-
-
-
-<p>50. Αὐτὰ δὲ ταῦτά φησιν, ἡνίκα ἐκέλευόν σε
+            <note type="footnote">21 τοσαύτην βλάβην MaCl</note>
+            <pb n="603"/>
+            <p>50. Αὐτὰ δὲ ταῦτά φησιν, ἡνίκα ἐκέλευόν σε
 
 γράφειν, τί μὴ πρὸς ἐμὲ διελέχθης; ἦν γάρ που
 
@@ -1659,9 +1579,10 @@ ClPa 12 ἂν ἦν MaClPa 13 τῷ om Mor | ὥσπερ Va
 
 πρᾶγμα ἐπεισῆγον τῇ νόσῳ καὶ τὸν ὀδυνώμενον τῷ
 
-πυρετῷ λόγοις ὀχληροῖς ἐβάρυνον;</p></div>
-
-<div type="textpart" subtype="chapter" n="51"><p>οὐκ ἴστε, ὦ
+πυρετῷ λόγοις ὀχληροῖς ἐβάρυνον;</p>
+         </div>
+         <div n="51" type="chapter">
+            <p>οὐκ ἴστε, ὦ
 
 δικασταί, πηλίκης δεῖ τοῖς τοιούτοις ἡσυχίας; οὐκ ἴστε <lb n="10"/>
 
@@ -1690,10 +1611,8 @@ Mus. Pioclem. VI t. 22 a. Kaibel, Inscr. Sic. et Ital. 1195)
 17 sq. cf. t. V 72, 4 sq. Plat. rep. III p. 389 B. Xen. comm. Socr.
 
 IV 2, 17</note>
-
-<note type="footnote">1 ἀντίληψις Β cf. p. 424, 1 4 λύσις Β</note>
-
-<note type="footnote">1 σοι Β 2 διειλέχθης PMaClPaB Va sed in hoc ει in η
+               <note type="footnote">1 ἀντίληψις Β cf. p. 424, 1 4 λύσις Β</note>
+               <note type="footnote">1 σοι Β 2 διειλέχθης PMaClPaB Va sed in hoc ει in η
 
 corr cf. p. 569,9; 598, 10 4 φλαύρως PaVa | τελευταῖον Ma
 
@@ -1712,10 +1631,7 @@ Macar 14 φθέγγηταί Mor Re | ἑστήκῃ Cl sed η ex ὸς corr
 ἑστήκοι PaVa ἑστηκὼς Ma | καθίζων ἦ Ma 15 κἂν σκυθρω-
 
 πάζῃ om BVa 18 μὴ δὲ PClPaBVa Ferr μὴ Ma</note>
-
-
-
-<pb n="604"/>
+               <pb n="604"/>
 
 
 
@@ -1724,8 +1640,7 @@ Macar 14 φθέγγηταί Mor Re | ἑστήκῃ Cl sed η ex ὸς corr
 λόγους ἀφ’ ὧν ἂν ἡσθεῖεν, κἂν δυσχερές τι συμβῇ,
 
 κρύπτομεν καὶ τὸ οὐκ ὄν ἀγαθὸν ὧς ὑπάρχον λέγομεν.</p>
-
-<p>52. τότ’ οὖν ἔμελλον ἀγωνίζεσθαι πρὸς σέ, πάτερ, καὶ
+            <p>52. τότ’ οὖν ἔμελλον ἀγωνίζεσθαι πρὸς σέ, πάτερ, καὶ
 
 <lb n="5"/> ταῦτα ἃ νῦν εἶπον τὰ πολλὰ διεξιέναι καὶ πειρᾶσθαι
 
@@ -1745,9 +1660,10 @@ Macar 14 φθέγγηταί Mor Re | ἑστήκῃ Cl sed η ex ὸς corr
 
 ρον μὲν οὐκ ἐπήνεγκε τῷ πατρί, διὰ θυμοῦ δὲ
 
-<note type="marginal">RIV 684</note> αὐτὸν ἀπολώλεκεν.</p></div>
-
-<div type="textpart" subtype="chapter" n="53"><p>| εἰ γὰρ νῦν ὑγιαίνων
+<note type="marginal">RIV 684</note> αὐτὸν ἀπολώλεκεν.</p>
+         </div>
+         <div n="53" type="chapter">
+            <p>| εἰ γὰρ νῦν ὑγιαίνων
 
 <lb n="15"/> οὐχ ἡδέως δέχῃ τοὺς λόγους καίτοι καὶ τῶν δικαζόν-
 
@@ -1768,8 +1684,8 @@ Macar 14 φθέγγηταί Mor Re | ἑστήκῃ Cl sed η ex ὸς corr
 ἐκαλεῖτο; καὶ οὐχὶ τοῦτο δεινότατον, τὸ δὲ σοὶ &lt;κακοῦ&gt;
 
 τινος αἴτιον γεγονέναι δοκεῖν τίνος οὐ μεῖζον κακοῦ;</p>
-
-<lb n="25"/> <p>54. Διαβέβλημαι γάρ φησιν ὑπὸ τῆς σῆς φιλ-
+            <lb n="25"/>
+            <p>54. Διαβέβλημαι γάρ φησιν ὑπὸ τῆς σῆς φιλ-
 
 <note type="footnote">1 διατοῦτο MaPaBVa | καὶ πρὸς αὐτοὺς MaClPa 2 ἂν
 
@@ -1778,8 +1694,7 @@ om BVa 3 ὑπάρχον scripsi e CrMaClPa et γρ in marg Mor
 ὂν PMBVa edd 8 γρ ἄλλων ἰατρῶν, εἰ in marg Mor
 
 9 οὐκ ante ἐπ’ MaCl 12 ἐμέμψατο Ma 13 ἐπήνεγκεν Ma</note>
-
-<note type="footnote">16 δίκαιά με Ma | μοι Pa 18 σου MaPa 19 ἐξωθεῖν
+               <note type="footnote">16 δίκαιά με Ma | μοι Pa 18 σου MaPa 19 ἐξωθεῖν
 
 Β 22 δ’ ἂν] δὲ CrMaClPaBVa 23 κακοῦ inserui auctore
 
@@ -1788,10 +1703,7 @@ Re om libri edd 24 τινος Mor sed γρ τίνος in marg | ὀργῆς
 post τινὸς Pa, αἰδοῦς MaClB Mor sed in hoc om γρ in marg,
 
 Re delevi</note>
-
-
-
-<pb n="605"/>
+               <pb n="605"/>
 
 
 
@@ -1803,9 +1715,10 @@ Re delevi</note>
 
 αὐτόν γε τὸν ἀδελφόν, ὁ δὲ αὐτὸς ἑαυτόν, ὡς ὁρᾶτε,
 
-ἀδικεῖ.</p></div>
-
-<div type="textpart" subtype="chapter" n="55"><p>ἐχρῆν δέ γε ἢ σιγᾶν ἢ πρὸς ἐμὲ μόνον <lb n="5"/>
+ἀδικεῖ.</p>
+         </div>
+         <div n="55" type="chapter">
+            <p>ἐχρῆν δέ γε ἢ σιγᾶν ἢ πρὸς ἐμὲ μόνον <lb n="5"/>
 
 ἐπαινεῖν τὰς διαθήκας καὶ φάσκειν εὖ με βεβουλεῦσθαι
 
@@ -1819,9 +1732,10 @@ Re delevi</note>
 
 τρίον δίδως λαβήν τινα τοῖς πρᾴοις καὶ φιλοτέκνοις.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="56"><p>Ἀλλ’ εἰ καὶ μὴ πρότερον, νῦν γε, πρὸς θεῶν,
+</p>
+         </div>
+         <div n="56" type="chapter">
+            <p>Ἀλλ’ εἰ καὶ μὴ πρότερον, νῦν γε, πρὸς θεῶν,
 
 09 πάτερ, γνώρισον μὲν αὑτόν, γνώρισον δὲ ἡμᾶς.
 
@@ -1835,9 +1749,10 @@ Re delevi</note>
 
 μους, χορηγούς, τριηράρχας, ῥήτορας, πρέσβεις, στρα-
 
-τιώτας ἀγαθούς, ἀριστέας, στρατηγούς.</p></div>
-
-<div type="textpart" subtype="chapter" n="57"><p>ταῦτα, ὧς
+τιώτας ἀγαθούς, ἀριστέας, στρατηγούς.</p>
+         </div>
+         <div n="57" type="chapter">
+            <p>ταῦτα, ὧς
 
 εἰκός, ἐδέου σοι γενέσθαι παρὰ τῶν θεῶν, αὗται γὰρ <lb n="20"/>
 
@@ -1850,24 +1765,18 @@ Re delevi</note>
 κρυσεν ἡ μήτηρ, ἱκανῶς ὁ δυστυχὴς ἀδελφός, ἱκανῶς ὁ
 
 τέως μὲν εὐδαίμων νομιζόμενος ἐγώ, νῦν δὲ ἀθλιώτα- <lb n="25"/>
-
-<note type="footnote">15 cf. p. 616,11. Dem. Boeot. nom. p. 1001,4 et 8; Boeot.
+               <note type="footnote">15 cf. p. 616,11. Dem. Boeot. nom. p. 1001,4 et 8; Boeot.
 
 dot. p. 1016, 29. Arist. av. 922</note>
-
-<note type="footnote">1 ὦ δικασταί om MaCl 5 γε om MaClPa | σιωπᾶν BVa</note>
-
-<note type="footnote">6 ἀπαιτεῖν Va 11 πράοις Va Ferr Mor 12 καὶ om
+               <note type="footnote">1 ὦ δικασταί om MaCl 5 γε om MaClPa | σιωπᾶν BVa</note>
+               <note type="footnote">6 ἀπαιτεῖν Va 11 πράοις Va Ferr Mor 12 καὶ om
 
 Β 13 μὲν — δὲ om Ferr | ἑαυτὸν MaClPa Mor Re
 
 14 μὲν om MaCl 16 γεγενημένων MaCl 17 δοῦναι Μ
 
 20 τῶν om MaCl | αὐταὶ BVa 24 ὁ om Ma</note>
-
-
-
-<pb n="606"/>
+               <pb n="606"/>
 
 
 
@@ -1875,9 +1784,10 @@ dot. p. 1016, 29. Arist. av. 922</note>
 
 εὐφράναμεν τούς τε φανερῶς μισοῦντας καὶ τοὺς οὐχ
 
-ὁμολογοῦντας.</p></div>
-
-<div type="textpart" subtype="chapter" n="58"><p>ἐν μὲν ταῖς ἄλλαις ἀπάσαις οἰκίαις
+ὁμολογοῦντας.</p>
+         </div>
+         <div n="58" type="chapter">
+            <p>ἐν μὲν ταῖς ἄλλαις ἀπάσαις οἰκίαις
 
 ὁμόνοια, φίλτρον, κοινοὶ λόγοι, κοιναὶ τράπεζαι, τέρψεις
 
@@ -1891,9 +1801,10 @@ dot. p. 1016, 29. Arist. av. 922</note>
 
 μισῶν τοὺς οἰκείους; οὐκ ἀπείρηκας βοῶν καὶ διαρ-
 
-<lb n="10"/> ῥηγνύμενος;</p></div>
-
-<div type="textpart" subtype="chapter" n="59"><p>ἀλλὰ πόλεις μὲν πόλεσιν ὑπὲρ τῶν
+<lb n="10"/> ῥηγνύμενος;</p>
+         </div>
+         <div n="59" type="chapter">
+            <p>ἀλλὰ πόλεις μὲν πόλεσιν ὑπὲρ τῶν
 
 μεγίστων ἐγκαλοῦσαι πολλάκις μέλλουσαι μάχεσθαι
 
@@ -1914,8 +1825,7 @@ dot. p. 1016, 29. Arist. av. 922</note>
 αιτούμεθα &lt;τὴν&gt; α δίκην; διὰ τί μὴ γενομένους
 
 <note type="footnote">12 cf. ad t. VI 213, 18 14 Arist. rhet. II 21</note>
-
-<note type="footnote">1 ὡς ante ἀληθῶς Pa 2 καὶ τοὺς] τούς τε CrMaClPa et
+               <note type="footnote">1 ὡς ante ἀληθῶς Pa 2 καὶ τοὺς] τούς τε CrMaClPa et
 
 γρ in marg Mor voce τε des Cr fol 34 r 5 ἐπιμελεῖς Β
 
@@ -1944,16 +1854,12 @@ oblocutus est lacobsius Anth. Pal. III 105 15 ποιήσης Va
 Lect 99 τὴν inserui auctore Re om libri edd | διατί MaCl
 
 PaBVa Ferr | γενομένους Β γενωμένους Va</note>
-
-
-
-<pb n="607"/>
+               <pb n="607"/>
 
 
 
 ὦ πάτερ, ἐξέθηκας μέλλων ἐπὶ τοιούτοις θρέψειν;</p>
-
-<p>60. ἀλλὰ δεῖ με πάντως τῆς οἰκίας ἐκπεσεῖν καὶ οὐ
+            <p>60. ἀλλὰ δεῖ με πάντως τῆς οἰκίας ἐκπεσεῖν καὶ οὐ
 
 περιέσται σου τῆς ὀργῆς ἡ φύσις; οὐκοῦν τοῦτο μὲν
 
@@ -1971,9 +1877,10 @@ PaBVa Ferr | γενομένους Β γενωμένους Va</note>
 
 ἐπιβουλεύουσιν, ἐξελάσαι μέν σε τοὺς σαυτοῦ παῖδας, <lb n="10"/>
 
-παῖδας δὲ ἐκείνους νομίσαι.</p></div>
-
-<div type="textpart" subtype="chapter" n="61"><p>ταῦθ’ ὑποσχέσθω παρ’
+παῖδας δὲ ἐκείνους νομίσαι.</p>
+         </div>
+         <div n="61" type="chapter">
+            <p>ταῦθ’ ὑποσχέσθω παρ’
 
 ὑμῖν, ὦ δικασταί, καὶ τὴν ἀποκήρυξιν οἴσω πρᾳότερον.
 
@@ -1988,8 +1895,7 @@ PaBVa Ferr | γενομένους Β γενωμένους Va</note>
 αὑτοῦ ποιούμενος, εἰ φαίνοιτό μοι τῶν ὄντων μετα-
 
 διδούς.</p>
-
-<p>62. Ἓν αἰτῶ σε μόνον, ὦ πάτερ, καὶ μηδὲν δεί-
+            <p>62. Ἓν αἰτῶ σε μόνον, ὦ πάτερ, καὶ μηδὲν δεί-
 
 σῃς, οὐ γὰρ λύσει τὴν ἀποκήρυξιν· ἐξέστω μοι προσ- <lb n="20"/>
 
@@ -1998,10 +1904,8 @@ PaBVa Ferr | γενομένους Β γενωμένους Va</note>
 πειν μέχρι θυρῶν, εἰσιόντα δὲ ὁ θυρωρὸς εἰ λάβοι,
 
 σφαττέτω.</p>
-
-<note type="footnote">9 [Dem.] Steph. p. 1103, 3; 1107,19</note>
-
-<note type="footnote">1 τοιούτων Ρ Ferr et γρ in marg Mor 9 κατασκευάζον-
+            <note type="footnote">9 [Dem.] Steph. p. 1103, 3; 1107,19</note>
+            <note type="footnote">1 τοιούτων Ρ Ferr et γρ in marg Mor 9 κατασκευάζον-
 
 ταί reposui e libris coll Dem. ll. ll. παρασκευάζονταί edd
 
@@ -2012,16 +1916,9 @@ Pa | τοῦθ’ MaCl 12 ἄνδρες MaClPa cf. p. 584, 1 | πραότερο
 Va Ferr Mor 13 καὶ(3) om Va 16 τίς MaClPaVa
 
 17 αὐτοῦ MaClBVa αὐτῶ Pa | μεταδιδούς Cl sed ετα inser m2</note>
-
-<note type="footnote">21 καλεῖν Ma | ἀπ’ MaCl 22 λάβῃ MaCl</note>
-
-
-
-<pb n="608"/>
-
-
-
-<p>63. Καλείτω μοῖ τις τὸν ἀδελφόν. ἐλθέ, ὦ ταλαί-
+            <note type="footnote">21 καλεῖν Ma | ἀπ’ MaCl 22 λάβῃ MaCl</note>
+            <pb n="608"/>
+            <p>63. Καλείτω μοῖ τις τὸν ἀδελφόν. ἐλθέ, ὦ ταλαί-
 
 πωρε, θάρρησον, ἅψαι τῶν γονάτων τοῦ πατρός, δά-
 
@@ -2032,15 +1929,10 @@ Va Ferr Mor 13 καὶ(3) om Va 16 τίς MaClPaVa
 <lb n="5"/> λεμεῖν. πολέμει τοίνυν καὶ λοιδόρει καὶ διαφέρου καὶ
 
 τῷ πολέμῳ τούτῳ τήρει τὴν πρὸς αὐτὸν εἰρήνην.</p>
-
-<note type="footnote">1 μοι τίς PMaClPaVa Ferr 3 τὸ inser Ma 3 4 δέ
+            <note type="footnote">1 μοι τίς PMaClPaVa Ferr 3 τὸ inser Ma 3 4 δέ
 
 σοι PMMaClPa edd | βεβαίας MaClPa | τῶ MaPa</note>
-
-</div></div>
-
-
-
-</body>
-  </text>
+         </div>
+      </body>
+   </text>
 </TEI>

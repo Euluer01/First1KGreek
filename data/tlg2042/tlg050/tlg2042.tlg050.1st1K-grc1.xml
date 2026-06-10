@@ -1,107 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">
-        <fileDesc>
-            <titleStmt>
-                <title xml:lang="lat">Selecta in Exodum</title>
-                <author xml:lang="lat">Origenes</author>
-                <editor>Charles de La Rue</editor>
-                <editor>Charles Vincent de La Rue</editor>
-                <sponsor>Harvard College Library</sponsor>
-                <funder>Harvard Library Arcadia Fund</funder>
-                <principal>Gregory Crane</principal>
-                <respStmt>
-                    <persName xml:id="DDD">Digital Divide Data</persName>
-                    <resp>Corrected and encoded the text</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Gregory Crane</persName>
-                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Matt Munson</persName>
-                    <resp>Project Manager (University of Leipzig)</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Annette Gessner</persName>
-                    <resp>Project Assistant (University of Leipzig)</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Thibault Clérice</persName>
-                    <resp>Lead Developer (University of Leipzig)</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Bruce Robertson</persName>
-                    <resp>Technical Advisor</resp>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <authority>Harvard College Library</authority>
-                <idno type="filename">tlg2042.tlg050.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Selecta in Exodum</title>
+            <author xml:lang="lat">Origenes</author>
+            <editor>Charles de La Rue</editor>
+            <editor>Charles Vincent de La Rue</editor>
+            <sponsor>Harvard College Library</sponsor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg2042.tlg050.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2017</date>
-                <publisher>Harvard College Library</publisher>
-                <pubPlace>United States</pubPlace>
-            </publicationStmt>
-            <sourceDesc>
-                <listBibl>
-                    <biblStruct>
-                        <monogr>
-                            <title xml:lang="lat">Origenis Opera Omnia</title>
-                            <editor>Charles de La Rue</editor>
-                            <editor>Charles Vincent de La Rue</editor>
-                            <author ref="urn:cts:greekLit:tlg2042">Origen</author>
-                            <imprint>
-                                <publisher>J. P. Migne</publisher>
-                                <pubPlace>Paris</pubPlace>
-                                <date>1862</date>
-                            </imprint>
-                                 <biblScope unit="volume">2</biblScope>
-                        </monogr>
-                        <series>
-                            <title level="s" xml:lang="lat">Patrologiae cursus completus (series
+            </availability>
+            <date>2017</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Origenis Opera Omnia</title>
+                     <editor>Charles de La Rue</editor>
+                     <editor>Charles Vincent de La Rue</editor>
+                     <author ref="urn:cts:greekLit:tlg2042">Origen</author>
+                     <imprint>
+                        <publisher>J. P. Migne</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date>1862</date>
+                     </imprint>
+                     <biblScope unit="volume">2</biblScope>
+                  </monogr>
+                  <series>
+                     <title level="s" xml:lang="lat">Patrologiae cursus completus (series
                                 Graeca)</title>
-                            <biblScope unit="volume">12</biblScope>
-                        </series>
-                        <ref
-                            target="https://archive.org/stream/patrologiae_cursus_completus_gr_vol_012#page/n145/mode/2up"
-                            >Internet Archive</ref>
-                    </biblStruct>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-            <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="paragraph"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
-                />
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-                <language ident="lat">Latin</language>
-            </langUsage>
-        </profileDesc>
-        <revisionDesc>
-            <change/>
-        </revisionDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2042.tlg050.1st1K-grc1">
-                        <pb n="281"/>
-                        <head>ΩΡΠΕΝΟΥΣ ΕΚΛΟΓΑΙ ΕΙΣ ΤΗΝ ΕΞΟΔΟΝ (70).</head>
-                        <div type="textpart" subtype="paragraph" n="1"><p>« Καὶ δώσω χάριν τῷ λαῷ τούτῳ ἐνώπιον τῶν Αἰγυπτίων. Ὅταν δὲ ἀποτρέχοιτε,
+                     <biblScope unit="volume">12</biblScope>
+                  </series>
+                  <ref target="https://archive.org/stream/patrologiae_cursus_completus_gr_vol_012#page/n145/mode/2up">Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="paragraph"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre"
+                    target="#prose-standard"
+                    cert="low"
+                    resp="#corpus-tools"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="edition"
+              xml:lang="grc"
+              n="urn:cts:greekLit:tlg2042.tlg050.1st1K-grc1">
+            <pb n="281"/>
+            <head>ΩΡΠΕΝΟΥΣ ΕΚΛΟΓΑΙ ΕΙΣ ΤΗΝ ΕΞΟΔΟΝ (70).</head>
+            <div type="textpart" subtype="paragraph" n="1">
+               <p>« Καὶ δώσω χάριν τῷ λαῷ τούτῳ ἐνώπιον τῶν Αἰγυπτίων. Ὅταν δὲ ἀποτρέχοιτε,
                             οὐκ ἀπελεύσεσθε κενοί.» Αὕτη ἡ ἐπαγγελία τῷ Ἀβραὰμ προεδέδοτο Μετὰ
                             ταῦτα, λέγοντος τοῦ Θεοῦ, ἐξελεύσονται ὧδε μετὰ ἀποσκευῆς. »</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="2"><p>« Καὶ κατίσχυσεν ἡ καρδία Φαραὼ, καὶ οὐκ εἰσήκουσεν αὐτῶν, καθάπερ
+            </div>
+            <div type="textpart" subtype="paragraph" n="2">
+               <p>« Καὶ κατίσχυσεν ἡ καρδία Φαραὼ, καὶ οὐκ εἰσήκουσεν αὐτῶν, καθάπερ
                             ἐνετείλατο αὐτοῖς Κύριος. Εἶπε δὲ Κύριος πρὸς Μωϋσῆν· Bεβάρυται ἡ καρδία
                             Φαραὼ, τοῦ μὴ ἐξαποστεῖλαι τὸν λαόν.» Τὸ, « Bεβάρυται ἡ καρδία Φαραὼ, »
                             λεγόμενον ὑπὸ τοῦ Κυρίου, μετὰ τὴν μεταβαλοῦσαν εἰς δράκοντα ῥάβδον τοῦ
@@ -113,11 +121,11 @@
                             καὶ μὴ ἰσχύειν ἀνθίστασθαι τῇ θειότητι, καὶ μὴ βαρύνεσθαι, μηδὲ ἕλκε
                                 <note type="footnote">91 Exod. VIII, 2. 92 Exod. X, 3. 93 Exod. IX,
                                 20, 30. 94 Exod. III,21. 95 Gen.XV,14. 96Exod. VII,13.44.</note>
-                            <note type="footnote">(69) Ἐrι. Deest in libb. antea editis, nec nonista
+                  <note type="footnote">(69) Ἐrι. Deest in libb. antea editis, nec nonista
                                 sæ paulo infra leguntur: τὸ γὰρ, ἕως τίνος οὐ βούλει ἐντραπῆναί με,
                                 sed restituuntur auctoritato co- cæ Regiæ. titcum
                                 andscrptorum.</note>
-                            <pb n="284"/> σθαι κάτω εἰς γῆν καὶ ὕλην· ἡ δὲ ἀντιτείνουσα καὶ
+                  <pb n="284"/> σθαι κάτω εἰς γῆν καὶ ὕλην· ἡ δὲ ἀντιτείνουσα καὶ
                             ἐναντισυμένη τῷ θείῳ βουλήματι, σκληρύνεσθαι καὶ ἀντιτυπεῖν δίκην λίθου,
                             καὶ ἀποκρούεσθαι τὸν λόγον, καὶ κατʼ ἀπόνοιαν ἀνθίστασθαι μετά τινος
                             ψευδωνύμου ἰσχύος. Ἀνάγκη δὲ τὴν τοιαύτην καρδίαν καθελκομένην ὑπὸ τῆς
@@ -126,40 +134,47 @@
                             τὸ κατισχύειν καὶ τὸ βαρύνεσθαι. Ἡ μὲν γὰρ, ὡς εἴρηταί που, λιθίνη
                             γίνεται ἡ καρδία καὶ σκληρύνεται· ἡ δὲ οὐ παραχωρεῖ ὡς κρείττονι τῇ θείᾳ
                             φύσει· ἀλλὰ θεομαχεῖν ἱσταμένη κατʼ αὐτῆς καὶ ἰσχύειν λέγεται.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="3"><p>« Εἶπε δὲ αὐτῷ Μωυσῆς, Ὡς ἂν ἐξέλθω τὴν πόλιν, ἐκπετάσω τὰς χεῖράς μου
+            </div>
+            <div type="textpart" subtype="paragraph" n="3">
+               <p>« Εἶπε δὲ αὐτῷ Μωυσῆς, Ὡς ἂν ἐξέλθω τὴν πόλιν, ἐκπετάσω τὰς χεῖράς μου
                             πρὸς Κύριον, καὶ αἱ φωναὶ παύσονται, καὶ ἡ χάλαζα, καὶ ὁ ὑετὸς οὐκέτι
                             ἔσται. » Ὁ γὰρ πάντων δημιουργὸς πρὸς τὴν κέλευσιν τὴν φύσιν εἴκουσαν
                             ἔχει.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="4"><p>Τοῦ αὐτοῦ. Σημειωτέον ὅτι οὐ πάντα τῇ ῥάβδῳ τερατουργεῖ Μωϋσῆς, ἀλλὰ καὶ
+            </div>
+            <div type="textpart" subtype="paragraph" n="4">
+               <p>Τοῦ αὐτοῦ. Σημειωτέον ὅτι οὐ πάντα τῇ ῥάβδῳ τερατουργεῖ Μωϋσῆς, ἀλλὰ καὶ
                             χερσὶ καὶ λόγῳ, ἴνα μὴ τὴν ῥάβδον μαγικαῖς ἀπάταις τελεῖσθαι υἱ πολλοὶ
                             νομίσωσι.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="5"><p>« Ααβέτωσαν ἕκαστος πρόβατον κατʼ οἵκους πατριῶν· » καὶ τὰ ἑξῆς. Ἀπὸ τῆς
+            </div>
+            <div type="textpart" subtype="paragraph" n="5">
+               <p>« Ααβέτωσαν ἕκαστος πρόβατον κατʼ οἵκους πατριῶν· » καὶ τὰ ἑξῆς. Ἀπὸ τῆς
                             δεκάτης φησὶ λαμβάνειν πρόβατον καὶ τρέφειν ἕως ιδ΄· καὶ ἐπονομάσαι
                             λέγοντας, Τοῦτο τὸ πρόβατον θύεται ὑπὲρ τοῦδε καὶ τοῦδε· οὐχ
                             ὑπερβαινόντων αὐτῶν ι΄ ὀνομάτων· καὶ τῇ ιδ΄ θύεται ἀνάμεσον τῶν
                             ἑσπερινῶν, ἀρχομένης τῆς ιε΄· ὡς γίνεσθαι ἀπὸ τῆς λήψεως μέχρι τῆς
                             θύσεως ἡμέρας ε΄, ὅτε πλῆρές ἐστι τῆς σελήνης τὸ φῶς.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="6"><p>« Πρόβατον τέλειον, ἄρσεν, ἐνιαύσιον ἔσται ὑμῖν. ‚ Ἐνιαύσιον πρόβατον ὁ
+            </div>
+            <div type="textpart" subtype="paragraph" n="6">
+               <p>« Πρόβατον τέλειον, ἄρσεν, ἐνιαύσιον ἔσται ὑμῖν. ‚ Ἐνιαύσιον πρόβατον ὁ
                             Χριστός ἐστι. Τὸ γὰρ ἐν μηδενὶ ὑστερεῖσθαι μηδὲ ἐλλιπές τι ἔχειν διὰ τοῦ
                             ἐνιαυτοῦ δηλοῦται.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="7"><p>« Καὶ σφάξουσιν αὐτὸ πᾶν τὸ πλῆθος συναγωγῆς υἱῶν Ἰσραὴλ πρὸς ἐσπέραν.»
+            </div>
+            <div type="textpart" subtype="paragraph" n="7">
+               <p>« Καὶ σφάξουσιν αὐτὸ πᾶν τὸ πλῆθος συναγωγῆς υἱῶν Ἰσραὴλ πρὸς ἐσπέραν.»
                             Πρὸς ἐσπέραν δὲ κελευόμεθα σφάξαι τὸ πρόβατον, ἐπειδὴ καὶ ἐσχάτῃ ὥρᾳ τὸ
                             ἀληθινὸν ἡμῶν πρόβατον εἰς τὸν κόσμον ἦλθεν ὁ Σωτήρ.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="8"><p>« Καὶ λήψονται ἀπὸ τοῦ αἵματος, καὶ θήσουσιν ἐπὶ τῶν δύο σταθμῶν, καὶ ἐπὶ
+            </div>
+            <div type="textpart" subtype="paragraph" n="8">
+               <p>« Καὶ λήψονται ἀπὸ τοῦ αἵματος, καὶ θήσουσιν ἐπὶ τῶν δύο σταθμῶν, καὶ ἐπὶ
                             τὴν φλιὰν, ἐν τοῖς οἴκοις·» καὶ τὰ ἐξῆς. Θύομεν δὲ, καὶ χρίομεν τοὺς
                             οἴκους ἡμῶν τῷ αἵματι· λέγω δὲ τὸ σῶμα, εἴπερ χρίσις πίστις ἐστὶν ἡ εἰς
                             αὐτὸν, διʼ ἧς πιστεύω τὴν τοῦ ὀλοθρευτοῦ δύναμιν καταργουμένην. Μετὰ δὲ
                             τὸ χρισθῆναι ἡμᾶς, τουτέστι πιστεῦσαι εἰς τὸν Χριστὸν, τότε καὶ ἐπὶ τὴν
                             βρῶσιν ἔρχεσθαι κελευόμεθα· μήτε δὲ ὠμὰ, μήτε ἑψημένα ἐν ὕδατι, ἀλλʼ
                             ὀπτὰ πυρί.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="9"><p>« Πᾶς ὅς ἄν φάγῃ ζύμην, ἐξολοθρευθήσεται ἡ ψυχὴ ἐκείνη ἐξ Ἰσραήλ.»
+            </div>
+            <div type="textpart" subtype="paragraph" n="9">
+               <p>« Πᾶς ὅς ἄν φάγῃ ζύμην, ἐξολοθρευθήσεται ἡ ψυχὴ ἐκείνη ἐξ Ἰσραήλ.»
                             Ἐξολοθρευθήσεται ἄνθρωπος ἕνεκεν ζύμης· καὶ ὁ τῶν ὅλων Θεὸς ὁ χρηματίζων
                             τοὺς νόμους, ὡς ὀλοθρεύει μοιχὸν, ὡς ὀλοθρεύει πόρνον, ὡς ὀλοθρεύει
                             παιδοφθόρον, οὕτως ὀλοθρεύει τὸν ἔχοντα ζύμην ἐν τῇ οἰκίᾳ αὐτοῦ ἐν τῇ
@@ -167,28 +182,32 @@
                             ἐστιν; Ἀλλʼ εἴποιμι ἂν ὅτι ἐὰν ἔχῃς ζύμην <note type="footnote">97 Exod.
                                 IX, 29. 98 Εxod. XII, 3. 99 ibid. 5. 1 ibid. 6. 2ibid. 7. 3ibid.
                                 15.</note>
-                            <pb n="285"/> πονηρίας, καὶ μὴ ἐξολοθρεύσῃς πᾶσαν ζύμην κακίας ἀπὸ τοῦ
+                  <pb n="285"/> πονηρίας, καὶ μὴ ἐξολοθρεύσῃς πᾶσαν ζύμην κακίας ἀπὸ τοῦ
                             ἡγεμονικοῦ σου· αὕτη γἅρ ἐστιν ἡ ἀληθινὴ φἰκία σου· ὁ Θεὸς τῶν ὅλων
                             νομοθετεῖ ἐξολοθρευθῆναί σε μὴ ἀποβαλόντα τὴν ζύμην τὴν παλαιὰν ἀπὸ
                             σεαυτυῦ. Χρὴ γάρ σε ἐλθόντα εἰς τὸν καιρὸν τῶν νέων, νέον γενόμενον
                             μηδὲν ἕχειν ἀρχαῖον. « Τὰ ἀρχαῖα παρῆλθε,» καὶ τὰ ἐξῆς. Ὅρα πῶς ἔδει
                             ἑορτάζειν ἐν μηνὶ τῶν νέων τὴν ἑορτὴν τῶν ἀζύμων.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="10"><p>«Καθίξετε τῆς φλιᾶς, καὶ ἐπʼ ἀμφοτέρων τῶν σταθμῶν, ἀπὸ τοῦ αἵματος ὅ
+            </div>
+            <div type="textpart" subtype="paragraph" n="10">
+               <p>«Καθίξετε τῆς φλιᾶς, καὶ ἐπʼ ἀμφοτέρων τῶν σταθμῶν, ἀπὸ τοῦ αἵματος ὅ
                             ἐστι παρὰ τὴν θύραν. » φλιᾶς μὲν, ὡς ἀποδέδωκέ τις τῶν πρὸ ἡμῶν, τοῦ
                             λογικοῦ· ἀμφοτέρων δὲ σταθμῶν, θυμικοῦ καὶ ἐπιθυμητικοῦ.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="11"><p>Γοῦ αὐτοῦ. Οὐ γὰρ ἐντὸς γενόμενον τὸν ὀλοθρευτὴν διʼ ἐπινοίας ἐκβάλλομεν,
+            </div>
+            <div type="textpart" subtype="paragraph" n="11">
+               <p>Γοῦ αὐτοῦ. Οὐ γὰρ ἐντὸς γενόμενον τὸν ὀλοθρευτὴν διʼ ἐπινοίας ἐκβάλλομεν,
                             ἀλλʼ ὅπως ἂν μηδὲ τὴν ἀρχὴν παρεισδύη, φυλακὴν διὰ τοῦ νόμου ποιούμεθα.
                             Φυλακὴ δέ ἐστι καὶ ἀσφάλεια, τὸ, τῷ αἵματι τοῦ ἀμνοῦ τήν τε φλιὰν καὶ
                             τοὺς σταθμοὺς τῆς εἰσόδου κατασημαίνεσθαι.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="12"><p>Ἐγενήθη δὲ μεσούσης τῆς νυκτὸς, καὶ Κύριος ἐπάταξε πᾶν πρωτότοκον ἐν γῇ
+            </div>
+            <div type="textpart" subtype="paragraph" n="12">
+               <p>Ἐγενήθη δὲ μεσούσης τῆς νυκτὸς, καὶ Κύριος ἐπάταξε πᾶν πρωτότοκον ἐν γῇ
                             Αἰγύπτῳ. » Διʼ ἀγγέλων γὰρ ὁ Θεὸς τὰς θανατηφόρους ταύτας ἐπάγει πληγὰς,
                             ὡς καὶ ἐν ταῖς Βασιλείαις ἔγνωμεν πῶς ἐν μιᾷ νυκτὶ ὁ ἄγγελος ἀνεῖλε τῶν
                             Ἀσσυρίων ρπε΄ χιλιάδας.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="13"><p>«Οὗτος ὁ νόμος τοῦ Πάσχα· Πᾶς ἀλλογενὴς οὐκ ἔδεται ἀπʼ αὐτοῦ. Καὶ πάντα
+            </div>
+            <div type="textpart" subtype="paragraph" n="13">
+               <p>«Οὗτος ὁ νόμος τοῦ Πάσχα· Πᾶς ἀλλογενὴς οὐκ ἔδεται ἀπʼ αὐτοῦ. Καὶ πάντα
                             οἰκέτην τινὸς, καὶ ἀργυρώνητον περιτεμεῖς αὐτὸν, καὶ τότε φάγεται ἀπʼ
                             αὐτοῦ· » καὶ τὰ ἑξῆς. Ἀκολούθως τοῖς παρατεθεῖσι τρίτος ἐστὶν οὗτος
                             νόμος. ὃν εἷπε πάλιν ὁ Κύριος παρὰ τοὺς δύο νόμους. Πρόσχες δὲ τῇ
@@ -209,25 +228,27 @@
                             Ἐκκλησίᾳ ἐσθίεις λόγους Θεοῦ, ἐσθίεις δὲ καὶ ἐν Ἰουδαίων συναγωγῇ,
                             παραβαίνεις τὴν λέγουσαν ἐντολὴν, « Ἐν οἰκίᾳ μιᾷ βρωθήσεται. » Εἰ δὲ
                             μεταλαμβάνεις λόγων Θεοῦ, ἐν οἰκίᾳ μιᾷ τῇ Ἐκκλησίᾳ· εἶτα καταλιπὼν
-                            αὐτὴν, ὑπολαμβάνεις μεταλαμβάνειν Θεοῦ ἐν αἱρετικῇ συναγω <note
-                                type="footnote">4 II Cor. v, 17. 5 Exod. XII,22. 6 ibid.29. 7 IV
+                            αὐτὴν, ὑπολαμβάνεις μεταλαμβάνειν Θεοῦ ἐν αἱρετικῇ συναγω <note type="footnote">4 II Cor. v, 17. 5 Exod. XII,22. 6 ibid.29. 7 IV
                                 Reg. XIX,35. 8 Exod.XII,43,44.</note>
-                            <pb n="288"/> γῇ, λεγούσης τῆς ἐντολῆς, « Ἐν οἰκίᾳ μιᾷ βρωθήσεται, » σὺ
+                  <pb n="288"/> γῇ, λεγούσης τῆς ἐντολῆς, « Ἐν οἰκίᾳ μιᾷ βρωθήσεται, » σὺ
                             οὐκ ἐσθίεις ἐν οἰκίᾳ μιᾷ. Μίαν οὖν νοήσαι οἰκίαν τὴν Ἐκκλησίαν· μηδαμοῦ
                             οὖν ἔσθιε τοῦ προβάτου ἔξω γενόμενος τῆς Ἐκκλησίας.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="14"><p>« Καὶ οὐκ ἐξοίσετε ἐκ τῆς οἰκίας τῶν κρεῶν ἔξω.» Ἐκκλησιαστικὸν λόγον οὐ
+            </div>
+            <div type="textpart" subtype="paragraph" n="14">
+               <p>« Καὶ οὐκ ἐξοίσετε ἐκ τῆς οἰκίας τῶν κρεῶν ἔξω.» Ἐκκλησιαστικὸν λόγον οὐ
                             δεῖ ἔξω τῆς Ἐκκλησίας πρεσβεύειν, ὡς ἕξω τῆς οἰκίας μὴ ἐκφέρειν τὰ κρέα·
                             φημὶ δὲ εἰς συναγωγὴν Ἰουδαίων ἥ αἱρετικῶν· ὅμοιον γάρ ἐστι τῷ ῥίψαι
                             τοὺς μαργαρίτας ἔμπροσθεν τῶν χοίρων.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="15"><p>«Πᾶς ἀπερίτμητος οὐκ ἕδεται ἀπʼ αὐτοῦ.» Πᾶν γέννημα ψυχῆς νοητὸν
+            </div>
+            <div type="textpart" subtype="paragraph" n="15">
+               <p>«Πᾶς ἀπερίτμητος οὐκ ἕδεται ἀπʼ αὐτοῦ.» Πᾶν γέννημα ψυχῆς νοητὸν
                             ὑπερβαῖνον τὰ ὑλικὰ (ὑλικὰ δὲ τὰ θήλεα) περιτέμνειν καὶ καθαίρειν δεῖ,
                             ἵνα οὕτως μεταλαμβάνῃ τις τῶν κρεῶν τοῦ Πάσχα· ὡς αὐτόχθων δὲ τῆς γῆς,
                             καὶ ὁ προσήλυτος γίνεται· οὐ γὰρ τὰ σπέρματα προτιμᾷ ὁ Θεὸς τὰ εὐγενῆ,
                             ἀλλὰ προαίρεσιν ἀποδέχεται.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="16"><p>Τοῦ αὐτοῦ. Ἀπερίτμητον τῇ σαρκὶ τὸν μὴ περιτεμνόμενον τὰ σαρκικά φησιν,
+            </div>
+            <div type="textpart" subtype="paragraph" n="16">
+               <p>Τοῦ αὐτοῦ. Ἀπερίτμητον τῇ σαρκὶ τὸν μὴ περιτεμνόμενον τὰ σαρκικά φησιν,
                             ὥσπερ καὶ ἀπερίτμητον ὀφθαλμοῖς τὸν βλέποντα πρὸς ἃ μὴ δεῖ. Τοῦ αὐτοῦ.
                             Ὁρᾶτε μή τις ὑμῶν ἀπερίτμητός ἐστι τῇ καρδίᾳ μήτις οὐ περιτέτμηται τὰς
                             περιτομὰς ἃς ὁ λόγος διδάσκει περιτέμνεσθαι. Ποίας δὲ ταύτας;
@@ -237,13 +258,15 @@
                             σαρκὶ εἰπεῖν, τὸν μὴ περιτεμνόμενον τὰ σαρκικὰ πράγματα· καὶ ἀπερίτμητον
                             ὀφθαλμοῖς, τὸν βλέποντα ἃ μὴ δεἴ, καὶ μὴ καθαίροντα τὸ ὁρατικόν· καὶ
                             ἀπερίτμητον σαρκὶ, τὸν πράττοντα ἃ μὴ δεῖ.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="17"><p>« Ἐξάραντες δὲ οἱ υἱοὶ Ἰσραὴλ ἐκ Σοκχὼθ, ἐστρατοπέδευσαν ἐν Ὀθὼμ παρὰ τὴν
+            </div>
+            <div type="textpart" subtype="paragraph" n="17">
+               <p>« Ἐξάραντες δὲ οἱ υἱοὶ Ἰσραὴλ ἐκ Σοκχὼθ, ἐστρατοπέδευσαν ἐν Ὀθὼμ παρὰ τὴν
                             ἔρημον.» Ἐν τοῖς Ἀριθμοῖς κεῖται, « ἀπὸ Βουθὰ ἐπὶ στόμα Ἰρώθ· δ ἐστιν
                             ἀπέναντι Bεελσεπρὼν ἐχόμενα τοῦ Βοῤῥᾶ, » παρεμβεβληκέναι τοὺς υἱοὺς
                             Ἰσραήλ.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="18"><p>« Καὶ ἔλαβε ἑξακόσια ἅρματα ἐκλεκτὰ, καὶ πᾶσαν τὴν ἵππον τῶν
+            </div>
+            <div type="textpart" subtype="paragraph" n="18">
+               <p>« Καὶ ἔλαβε ἑξακόσια ἅρματα ἐκλεκτὰ, καὶ πᾶσαν τὴν ἵππον τῶν
                             Aἰγυπτίων,καὶ τριστάτας ἐπὶ πάντων.» Τοὺς πρὸς τρεῖς δυναμένους
                             μάχεσθαι, ἢ τοὺς ἐν τῇ παρατάξειμετὰ τὸν πρωτοστάτην καὶ τὸν
                             δευτεροστάτην ἱσταμένους ἐν τῇ τρίτῃ τάξει. Ἄλλοι δέ φασιν, ὡς εἰς τὰς
@@ -253,21 +276,23 @@
                             ἁρματηλάται. Ἤ τριστάτην λέγει τὸν ἐν τῷ καθέζεσθαι τὸν βασιλέα, τρίτον
                             ἱστάμενον, ἤτοι τρίτην ἔχοντα καθέδραν· οἷος ἦν ὁ Δαυΐδ παρὰ Σαοὺλ, ὡς
                             ἐν τῇ πρώτῃ τῶν Βασιλειῶν εὑρήσεις.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="19"><p>« Ἐκεῖ ἔθετο αὐτῷ ὁ Θεὸς δικαιώματα καὶ κρίσεις, καὶ ἐκεῖ αὐτὸν
+            </div>
+            <div type="textpart" subtype="paragraph" n="19">
+               <p>« Ἐκεῖ ἔθετο αὐτῷ ὁ Θεὸς δικαιώματα καὶ κρίσεις, καὶ ἐκεῖ αὐτὸν
                             ἐπείρασε.» Ὅτε Θεὸς πειράζει, ἐπʼ ὠφελείᾳ πειράζει, οὐκ ἐπὶ τῷ
                             κακοποιῆσαι· διὸ καὶ ἐλέχθη, ὅτι Ὁ Θεὸς ἀπείραστός ἐστι κακῶν, » ὡς καὶ
                             μετʼ ὀλίγα ἐπάγει ὁ λόγος· « Ἐὰν ἀκοῇ ἀκούσῃς Κυρίου τοῦ Θεοῦ σου, πᾶσαν
                             νόσον, ἥν ἐπήγαγον τοῖς <note type="footnote">9 Exod. XII, 46. 10
                                 ibid.48. 11 Exod. XIII, 20. 12 Num. XXXIII,7. 13 Exod.XIV. 7. 14
                                 Exod. XV,25. 15 Jacob. 1, 13.</note>
-                            <pb n="289"/> Αἰγυπτίοις, οὐκ ἐπάξω ἐπὶ σέ. » Ὁ οὖν φέρων τοὺς
+                  <pb n="289"/> Αἰγυπτίοις, οὐκ ἐπάξω ἐπὶ σέ. » Ὁ οὖν φέρων τοὺς
                             πειρασμοὺς γενναίως, στεφανοῦται. Ἄλλο δέ ἐστιν ἐπὶ τοῦ διαβόλου·
                             ἐκεῖνος γὰρ πειράζει, ἵνα τοὺς πειθομένους αὐτῷ θανατώσῃ· καὶ ὁ μὲν Θεὸς
                             πειράζει οὐκ ἀγνοῶν τὸ ἐσόμενον, πλὴν διδοὺς τῷ ἀνθρώπῳ πράττειν ὃ θέλει
                             διὰ τὸ αὐτεξούσιον.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="20"><p>« Τοῦτο τὸ ῥῆμα ὃ ἐλάλησε Κύριος· Σάββατα, ἀνάπαυσις ἁγία τῷ Κυρίῳ
+            </div>
+            <div type="textpart" subtype="paragraph" n="20">
+               <p>« Τοῦτο τὸ ῥῆμα ὃ ἐλάλησε Κύριος· Σάββατα, ἀνάπαυσις ἁγία τῷ Κυρίῳ
                             αὕριον. » Ἀπογράφομαι τὰ περὶ τοῦ σαββάτου εἰρημένα· πρῶτον κατὰ τὸ
                             ῥητὸν, ἵνʼ ἴδωσι τί σημαίνει τὸ γράμμα· δεύτερον δὲ κατὰ τὴν ἀναγωγὴν,
                             καθʼ ἣν εἴποιμι ἂν ἡμέραν σαββάτου ἐνεστηκέναι τῷ δικαίῳ καταλύσαντι τὰ
@@ -280,12 +305,14 @@
                             πάντα τὰ ἔργα αὐτοῦ, ἄξιος κρίνεται ἐκείνου τοῦ σαββάτου· σχολάζων
                             οὐδενὶ ἢ τῇ θεωρίᾳ τῆς ἀληθείας, καὶ τῆς σοφίας. Ταῦτα δὲ διὰ τὸ
                             μεμνῆσθαι ἐνταῦθα τὸν Μωυσέα περὶ τοῦ σαββατίζειν, παρεθέμεθα.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="21"><p>« Καὶ πατάξεις τὴν πέτραν, καὶ ἐξελεύσεται ἐξ αὐτῆς ὕδωρ. » Πέτρᾳ
+            </div>
+            <div type="textpart" subtype="paragraph" n="21">
+               <p>« Καὶ πατάξεις τὴν πέτραν, καὶ ἐξελεύσεται ἐξ αὐτῆς ὕδωρ. » Πέτρᾳ
                             παρεικάζεται ὁ Χριστὸς διὰ τὸ ἄσειστον καὶ ἀκλόνητον. Ἐρήρεισται γὰρ ἐν
                             τοῖς ἀγαθοῖς ἡ θεία τε καὶ ὑπερτάτη φύσις.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="22"><p>« Ἐγὼ γάρ εἰμι Κύριος ὁ Θεός σου, Θεὸς ζηλωτὴς, ἀποδιδοὺς ἁμαρτίας
+            </div>
+            <div type="textpart" subtype="paragraph" n="22">
+               <p>« Ἐγὼ γάρ εἰμι Κύριος ὁ Θεός σου, Θεὸς ζηλωτὴς, ἀποδιδοὺς ἁμαρτίας
                             πατέρων ἐπὶ τέκνα, ἐπὶ τρίτην καὶ τετάρτην γενεὰν τοῖς μισοῦσί με, καὶ
                             ποιῶν ἔλεος εἰς χιλιάδας τοῖς ἀγαπῶσί με, καὶ τοῖς φυλάσσουσι τὰ
                             προστάγματά μου. » Τίνα τοῦτο τὸ ῥητὸν οὐκ ἐτάραξεν; Εἰ ἥμαρτε μὲν ὁ
@@ -308,7 +335,7 @@
                             λόγια <note type="footnote">16 Exod. XVI. 25. 17 Psal. XXXVII, 5. 18
                                 llebr. IV,9. 19 Exod.XVII,6. 20 Exod. XX, 5,6. 21 Joan.
                                 VIII,44.</note>
-                            <pb n="292"/> τὰ ἱερὰ. Λέγει ὁ Σωτὴρ καὶ Κύριος Ἰησοῦς Χριστὸς τοῖς
+                  <pb n="292"/> τὰ ἱερὰ. Λέγει ὁ Σωτὴρ καὶ Κύριος Ἰησοῦς Χριστὸς τοῖς
                             ἁμαρτάνουσιν, ὅτι « ῾ Υμεῖς ἐκ τοῦ πατρὸς τοῦ διαβόλου ἐστὲ, καὶ τὰς
                             ἐπιθυμίας τοῦ πατρὸς ὑμῶν θέλετε ποιῆσαι. Ἐκεῖνος ἀνθρωποκτόνος ἐστὶν
                             ἀπʼ ἀρχῆς, καὶ ἐν τῇ ἀληθείᾳ οὐχ ἔστηκεν. » Οὐκοῦν εἴ τις ἁμαρτάνει, ἐκ
@@ -350,7 +377,7 @@
                                 VI, 16. 23 Joan. XIII, 33. 24 Matth. IX, 22 ei 2. 25 Gen. XV, 15. 26
                                 Gen. XII. 1. 27 Psal. XLIV, 11. 28 Psal. LXXXVIII, 33. 29 Psal.
                                 LXXXVIII, 34. 30 Heb. XII, 6. 31 Osee IV, 14.</note>
-                            <pb n="293"/> τινὰ, οὐκέτι αὐτὸν κολάζει, οὕτε μαστιγοῖ. « Μαστιγοῖ »
+                  <pb n="293"/> τινὰ, οὐκέτι αὐτὸν κολάζει, οὕτε μαστιγοῖ. « Μαστιγοῖ »
                             γὰρ οὐ πάντας, ἀλλὰ « πάντα υἱὸν ὃν παραδέχεται Κύριος. » Καὶ λέγεται ἐν
                             τῷ προφήτῃ περὶ τῶν πάνυ ἁμαρτωλῶν· « Οὐκ ἐπισκέψομαι ἐπὶ τὰς θυγατέρας
                             ὑμῶν ὅταν πορνεύσωσι, καὶ ἐπὶ τὰς νύμφας ὑμῶν ὅταν μοιχευθῶσι. » Τοσούτῳ
@@ -361,8 +388,9 @@
                             μὲν γὰρ τὸ μηδὲν ἄξιον κολάσεως πεποιηκέναι. Εἰ δέ τι ἄξιον κολάσεως
                             πεποιήκαμεν, οὕτω κολασθῶμεν, ὥστε ἐν- θάδε μὲν ἀπολαβεῖν, μετὰ δὲ ταῦτα
                             εἰς τοὺς κόλπους Ἀβραὰμ ἀναπαύσασθαι.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="23"><p>« Καὶ ταῦτα τὰ δικαιώματά μου, ἃ παραθήσῃ ἐνώπιον αὐτῶν. Ἐὰν κτήσῃ παῖδα
+            </div>
+            <div type="textpart" subtype="paragraph" n="23">
+               <p>« Καὶ ταῦτα τὰ δικαιώματά μου, ἃ παραθήσῃ ἐνώπιον αὐτῶν. Ἐὰν κτήσῃ παῖδα
                             Ἑβραῖον,» καὶ τὰ ἐξῆς. Ἀναγκαῖον ἐξετάσαι τί νόμος, καὶ τί πρόσταγμα, τί
                             δὲ δικαιώματα, καὶ κρίματα, καὶ καρτύρια, καὶ ἐντολαί. Δικαιώματα μὲν
                             οὖν ἐστι, τὸ ἐνθάδε εἰρημένον, « Ἐὰν κτήσῃ παῖδα Ἑβραῖον, » καὶ τὰ ἐξῆς,
@@ -370,17 +398,20 @@
                             κατακαίηται· ἐντολαὶ δὲ, « Οὐκ ἔσονταί σοι θεοὶ ἕτεροι·» πρόσταγμα δὲ, «
                             Καταβὰς διαμάρτυραι τῷ λαῷ, καὶ πλυνάτωσαν τὰ ἱμάτια αὐτῶν· » μαρτύρια
                             δὲ, « Διαμαρτύρομαι ὑμἴν σήμερον τὸν οὐρανὸν καὶ τὴν γῆν. »</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="24"><p>« Ἕξ ἔτη δουλεύσει σοι· τῷ δὲ ἔτει τῷ ἑβδόμῳ, ἀπελεύσεται ἐλεύθερος
+            </div>
+            <div type="textpart" subtype="paragraph" n="24">
+               <p>« Ἕξ ἔτη δουλεύσει σοι· τῷ δὲ ἔτει τῷ ἑβδόμῳ, ἀπελεύσεται ἐλεύθερος
                             δωρεάν. » Σημαίνει ἡ ἐν τῷ ἑβδόμῳ ἐλευθέρωσις, ἔτι δὲ καὶ ἡ ἐν τῷ
                             σαββάτῳ τῶν ἔργων κατάπαυσις τὴν ἐν χάριτι ἡμῖν διὰ Χριστοῦ
                             ἐλευθερίαν.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="25"><p>« Προσάξει αὐτὸν ὁ κύριος αὐτοῦ πρὸς τὸ κριτήριον τοῦ Θεοῦ. » Ἀκύλας καὶ
+            </div>
+            <div type="textpart" subtype="paragraph" n="25">
+               <p>« Προσάξει αὐτὸν ὁ κύριος αὐτοῦ πρὸς τὸ κριτήριον τοῦ Θεοῦ. » Ἀκύλας καὶ
                             Σύμμαχος εἶπον, « πρὸς τοὺς θεούς. » Θεοὺς δὲ τοὺς κριτὰς ὀνομάζουσι,
                             καὶ θεοῦ κριτήριον, τὴν τούτων ψῆφον.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="26"><p>« Τρεῖς καιροὺς τοῦ ἐνιαυτοῦ ἑορτάσατέ μοι. Τὴν ἑορτὴν τῶν ἀζύμων
+            </div>
+            <div type="textpart" subtype="paragraph" n="26">
+               <p>« Τρεῖς καιροὺς τοῦ ἐνιαυτοῦ ἑορτάσατέ μοι. Τὴν ἑορτὴν τῶν ἀζύμων
                             φυλάξασθε. Ἑπτὰ ἡμέρας ἔδεσθε ἄζυμα, καθάπερ ἐνετειλάμην σοι, κατὰ τὸν
                             καιρὸν τοῦ μηνὸς τῶν νέων. Ἐν γὰρ αὐτῷ ἐξῆλθες ἐξ Αἰγύπτου. Οὐκ ὀφθήσῃ
                             ἐνώπιόν μου κενὸς, καὶ ἑορτὴν τοῦ θερισμοῦ πρωτογεννημάτων ποιήσεις τῶν
@@ -395,11 +426,10 @@
                             ἑορτάζειν τοὺς ἑορτάζοντας; Οὐκοῦν δεῖ κατʼ ἐνιαυτὸν τὴν ἑορτὴν
                             ἑορτάζειν. Ἐπαπορῶ δὲ πάλιν καὶ περὶ τοῦ δευτέρου νόμου, τοῦ κατὰ τὴν
                             ἑορτὴν τὴν δευτέραν. Φησὶ γὰρ « ἑορτὴν τοῦ θερισμοῦ τῶν πρωτογενημάτων.»
-                            Ἐάν τις σπείρῃ, καὶ μὴ γένωνται οἱ καρποὶ πρῶτοι, ἀλλὰ τελευταῖοι, <note
-                                type="footnote">32 Psal. VI,2. 33 Exod.XXI.1. 34 Exod.XX,3. 35 Exod.
+                            Ἐάν τις σπείρῃ, καὶ μὴ γένωνται οἱ καρποὶ πρῶτοι, ἀλλὰ τελευταῖοι, <note type="footnote">32 Psal. VI,2. 33 Exod.XXI.1. 34 Exod.XX,3. 35 Exod.
                                 XIX, 10. 36 Deyk.XXX,19. 37 Exod.XXI, 2. 38 ibid., 6. 39
                                 Exod.XXIII,14,15,16. 40 II Cor. VI,14.</note>
-                            <pb n="296"/> οὗτος οὐκ ἄν δύναιτο ἑορτάσαι τὴν ἀρχὴν τοῦ θερισμοῦ τῶν
+                  <pb n="296"/> οὗτος οὐκ ἄν δύναιτο ἑορτάσαι τὴν ἀρχὴν τοῦ θερισμοῦ τῶν
                             πρωτογενημάτων. Δεῖ γὰρ ἔχειν σε γεννήματα, ἵνα δυνηθῇς ἑορτάζειν. Τί
                             δὲ, ἅν χώραν μὴ ἔχω, πῶς ἂν δυναίμην τὴν ἑορτὴν ταύτην ἑορτάζειν, τῆς
                             λέξεως λεγούσης, « Καὶ ἑορτὴν θερισμοῦ τῶν πρωτογεννημάτων ποιήσεις τῶν
@@ -407,8 +437,9 @@
                             οὐκ ἔσπειρα, ὑφάντης εἰμί· ἀγρὀν οὐκ ἔχω, πῶς δύναμαι τὴν δευτέραν
                             ἑορτάζειν ἑορτήν; Καὶ δὴ καὶ περὶ τὴν τρίτην, « Καὶ ἑορτὴν συντελείας
                             ἐπʼ ἐξόδῳ τοῦ ἐνιαυτοῦ. »</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="27"><p>Καὶ μεθʼ ἕτερα. Τί βούλεται λόγος ἡμῖν λέγειν ὁ κελεύων ἡμᾶς ἑορτάζειν
+            </div>
+            <div type="textpart" subtype="paragraph" n="27">
+               <p>Καὶ μεθʼ ἕτερα. Τί βούλεται λόγος ἡμῖν λέγειν ὁ κελεύων ἡμᾶς ἑορτάζειν
                             τὴν ἑορτὴν τῶν ἀζύμων τῷ μηνὶ τῶν νέων; Ἀπόθου τὸν παλαιὸν ἅνθρωπον σὺν
                             ταῖς πράξεσιν αὐτοῦ. Καὶ ἵνα γε ποιήσῃς τὴν ἑορτὴν ἐν τῷ μηνὶ τῶν νέων,
                             καὶ σὺ νέος γενοῦ, ἵνα γένηται ὁ μὴν τῆς ἑορτῆς τῶν νέων, καὶ σὸς μήν.
@@ -424,16 +455,18 @@
                             καὶ ἀληθείας. » Ἅμα δὲ συνάγαγε τὰ νενομοθετημένα περὶ τῆς ἑορτῆς τῶν
                             ἀζύμων, καὶ ὅψει μὲν τὸ ἄλογον τῶν τῷ ῥητῷ ὡς πνευματικῷ μὴ προσεχόντων,
                             καταφρονούντων δὲ τῶν πνευματικῶν ὡς μὴ χρησίμων.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="28"><p>« Οὐκ ὀφθήσῃ ἐνώπιόν μου κενός. » Ἴσθι ὅτι πᾶς ἄνθρωπος ἢ κενός ἐστιν, ἢ
+            </div>
+            <div type="textpart" subtype="paragraph" n="28">
+               <p>« Οὐκ ὀφθήσῃ ἐνώπιόν μου κενός. » Ἴσθι ὅτι πᾶς ἄνθρωπος ἢ κενός ἐστιν, ἢ
                             πλήρης. Εἰ μὲν γὰρ οὐκ ἔγει ἅγιον Πνεῦμα, οὐκ ἔχει γνῶσιν τοῦ κτίσαντος,
                             οὐ παρεδέξατο ζωὴν Ἰησοῦν τὸν Χριστόν· εἰ οὐκ οἶδε τὸν Πατέρα τὸν ἐν
                             οὐρανοῖς, εἰ οὐ βιοῖ κατὰ τὸν λόγον, κατὰ τὸν νόμον οὐράνιον· οὐ
                             σωφρονεῖ, οὐ δικαιοπραγεῖ· ὁ τοιοῦτος κενός ἐστιν. Εἰ δὲ κεχώρηκε
                             τὸνεἰπόντα Θεόν· « Ἐνοικήσω ἐν αὐτοἴς, καὶ ἐμπεριπατήσω, καὶ ἕσομαι
                             αὐτοἴς Θεὸς, »οὗτος οὐκ ἕστι κενὸς, ἀλλὰ πλήρης.</p>
-                        </div>
-<div type="textpart" subtype="paragraph" n="29"><p>« Τρεῖς καιροὺς τοῦ ἐνιαυτοῦ ὀφθήσεται πᾶν ἀρσενικόν σου ἐνώπιον Κυρίου
+            </div>
+            <div type="textpart" subtype="paragraph" n="29">
+               <p>« Τρεῖς καιροὺς τοῦ ἐνιαυτοῦ ὀφθήσεται πᾶν ἀρσενικόν σου ἐνώπιον Κυρίου
                             τοῦ Θεοῦ σου. » Τί ἐστι τὸ. ῥητὸν εἴποιμι ἄν. Ὅ πράττομεν, ἢ θῆλύ ἐστιν,
                             ἢ ἀρσενικόν. Εἰ μὲν οὖν θηλυκόν ἐστιν ὅ ποιοῦμεν, ἢ σωματικόν ἐστιν, ἢ
                             σαρκικόν. Σπείροντες γὰρ εἰς τὴν σάρκα, ποιοῦμεν θῆλυ τὸ γέννημα τῆς
@@ -443,11 +476,11 @@
                             ἄῤῥενά ἐστι. Τὰ τοίνυν φερόμενα ἐνώπιον τοῦ <note type="footnote">41
                                 Coloss. ΙΙΙ. 9. 10. 42 I Cor. v, 8. 43 EXod. XXIII, 15. 44.45 Lcvil.
                                 XXVI, 12; II Cor. VI, 46. 46 Εxod. XXIII, 17.</note>
-                            <pb n="297"/> Θεοῦ, τὰ καὶ ὀφθησόμενα τῇ ὄψει τοῦ κτίσαντος, ἀρσενικά
+                  <pb n="297"/> Θεοῦ, τὰ καὶ ὀφθησόμενα τῇ ὄψει τοῦ κτίσαντος, ἀρσενικά
                             ἐστιν, οὐχὶ θήλεα. Οὐ γὰρ τὰ θηλυκὰ, καὶ τὰ σωματικὰ ἀξιοῖ βλέπειν ὁ
                             Θεός.</p>
-                    
-            </div></div>
-        </body>
-    </text>
+            </div>
+         </div>
+      </body>
+   </text>
 </TEI>

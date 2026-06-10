@@ -1,99 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-    
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">De tremore, palpitatione, convulsione et rigore</title>
-                <author>Galen</author>
-                <editor>Karl Gottlob Kühn</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De tremore, palpitatione, convulsione et rigore</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0057.tlg051.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg051.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-                        <author>Galen</author>
-                        <editor>Karl Gottlob Kühn</editor>
-                        <imprint>
-                            <publisher>Knobloch</publisher>
-                            <pubPlace>Leipzig</pubPlace>
-                            <biblScope unit="vol">7</biblScope>
-                            <biblScope unit="pp" from="584" to="642">584-642</biblScope>
-                            <date>1824</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/hvd.hxpp8n?urlappend=%3Bseq=596">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg051.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Leipzig</pubPlace>
+                     <biblScope unit="vol">7</biblScope>
+                     <biblScope unit="pp" from="584" to="642">584-642</biblScope>
+                     <date>1824</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/hvd.hxpp8n?urlappend=%3Bseq=596">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg051.1st1K-grc1">
-                <pb n="584"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΤΡΟΜΟΥ ΚΑΙ ΠΑΛΜΟΥ <lb/>ΚΑΙ ΣΠΑΣΜΟΥ ΚΑΙ ΡΙΓΟΥΣ ΒΙΒΛΙΟΝ.</head>
-                    <p>Ἐπειδὴ Πραξαγόρας ὁ Νικάρχου, τά τε <lb/>ἄλλα τῆς ἰατρικῆς ἐν τοῖς ἀρίστοις
+         <refsDecl n="CTS">
+            <cRefPattern n="chapter"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg051.1st1K-grc1">
+         <pb n="584"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΤΡΟΜΟΥ ΚΑΙ ΠΑΛΜΟΥ <lb/>ΚΑΙ ΣΠΑΣΜΟΥ ΚΑΙ ΡΙΓΟΥΣ ΒΙΒΛΙΟΝ.</head>
+            <p>Ἐπειδὴ Πραξαγόρας ὁ Νικάρχου, τά τε <lb/>ἄλλα τῆς ἰατρικῆς ἐν τοῖς ἀρίστοις
                         γενόμενος ἔν τε τοῖς περὶ <lb/>φύσιν λογισμοῖς δεινότατος, οὐκ ὀρθῶς μοι
                         δοκεῖ περί τε <lb/>σφυγμοῦ καὶ παλμοῦ καὶ σπασμοῦ <milestone unit="ed2page" n="200"/>καὶ τρόμου γινώσκειν, <lb/>ἀρτηριῶν μὲν ἅπαντα νομίζων εἶναι
                         πάθη, διαφέρειν <lb/>δὲ ἀλλήλων μεγέθει· διὰ τοῦτο ἔδοξέ μοι κοινῇ περὶ
@@ -105,9 +112,9 @@
                         δέδεικται καὶ <lb/>νῦν εἰρήσεται τοσοῦτον, ὅσον ἂν εἰς τὰ προκείμενα
                         χρήσιμον <lb/>εἶναι φαίνηται. περὶ δὲ τῶν ἄλλων ἐν τῷδε τῷ πράγματι
                         <lb/>δίειμι, τὴν ἀρχὴν ἐνθένδε ποιησάμενος. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>Αἰσθηταὶ κινήσεις ἐν τοῖς τῶν ζώων σώμασιν, <lb/>ὁπόταν ὑγιαίνωσι, διτταὶ τῷ
+         </div>
+         <div n="2" type="chapter">
+            <p>Αἰσθηταὶ κινήσεις ἐν τοῖς τῶν ζώων σώμασιν, <lb/>ὁπόταν ὑγιαίνωσι, διτταὶ τῷ
                         γένει φαίνονται· καθ’ <lb/>ὁρμὴν μὲν ἢ κατὰ προαίρεσιν, ἢ ὅπως ἂν ὀνομάζειν
                         ἐθέλωσιν <lb/>οἱ τὰ μὲν τοιαῦτα δεινοὶ, τῆς δὲ τῶν πραγμάτων ἐπιστήμης
                         <lb/>ἀμελοῦντες, αἱ διὰ νεύρων τε καὶ μυῶν γινόμεναι, καὶ ταύτας <lb/>ἔθος
@@ -119,9 +126,9 @@
                         ῥίγεσι νοσώδεσιν, ἐνίοτε δὲ καὶ τοῖς παλμοῖς φαίνεται. <lb/>πάντα γὰρ τὰ
                         τοιαῦτα παθήματα πλημμελεῖς κινήσεις εἰσὶ <lb/>τῶν αὐτῶν ὀργάνων, ἀφ’ ὧν
                         ὑγιαινόντων αἱ καθ’ ὁρμὴν ἐπιτελοῦνται <lb/>κινήσεις. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>Ὁ τρόμος μὲν οὖν γίνεται τῆς ὀχούσης καὶ <lb/>κινούσης τὸ σῶμα δυνάμεως
+         </div>
+         <div n="3" type="chapter">
+            <p>Ὁ τρόμος μὲν οὖν γίνεται τῆς ὀχούσης καὶ <lb/>κινούσης τὸ σῶμα δυνάμεως
                         ἀῤῥωστίᾳ. οὐ γὰρ ἐξ ἑαυτῶν <lb/>δήπου τὰ μόρια τῶν ζώων οὕτως ὄντα βαρέα καὶ
                         κάτω φέρεσθαι <lb/>πεφυκότα, τὰς εἰς ἅπαντα τόπον ἔχει κινήσεις, ἀλλ’ <lb/>ἡ
                         διὰ τῶν νεύρων τοῖς μυσὶν ἀπὸ τῆς ἀρχῆς ἐπιπεμπομένη δύναμις <lb/>οἷον ὄχημά
@@ -161,9 +168,9 @@
                         τόπους. ὄνομα δὲ τῷ <lb/>πάθει τρόμος, εἰς μὲν τὰ κάτω τῆς φορᾶς τοῖς σώμασι
                         τῷ <lb/>σφετέρῳ βάρει γινομένης, ἄνω δὲ αὖ πάλιν ὑπὸ τῆς δυνάμεως
                         <lb/>αἰρομένης. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>Ἀλλὰ καὶ παλμὸς, ἴσως φήσει τις, ὡσαύτως <lb/>τῷ τρόμῳ κίνησίς ἐστιν
+         </div>
+         <div n="4" type="chapter">
+            <p>Ἀλλὰ καὶ παλμὸς, ἴσως φήσει τις, ὡσαύτως <lb/>τῷ τρόμῳ κίνησίς ἐστιν
                         ἀβούλητός τε καὶ ἀκούσιος ἐπαιρομένων ﻿<pb n="589"/> τε καὶ καταφερομένων
                         τῶν παλλομένων μερῶν. πῇ <lb/>ποτ’ οὖν διοίσει τρόμος παλμοῦ; μέχρι μὲν
                         τοῦδε φαίνονται μηδὲν <lb/>ἀλλήλων διαφέροντες, διενηνόχασι δὲ, οὔτε γὰρ
@@ -229,9 +236,9 @@
                         <lb/>ἀδυνάτου γάρ ἐστι καὶ ἀσθενοῦς κινήσεως σύμπτωμα. <lb/>ὅθεν ὅτῳ
                         κινεῖσθαι σώματι μηδόλως ὑπάρχει, παντί που <lb/>δῆλον, ὡς οὐδὲ περὶ τὴν
                         κίνησιν ἀσθενὲς καὶ ἀδύνατον <lb/>ὑπάρξει. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>Παλμὸς δέ γε καὶ τοῖς ἀκινήτοις συμβέβηκε. <lb/>καὶ γὰρ ὀφρὺς καὶ βλέφαρον
+         </div>
+         <div n="5" type="chapter">
+            <p>Παλμὸς δέ γε καὶ τοῖς ἀκινήτοις συμβέβηκε. <lb/>καὶ γὰρ ὀφρὺς καὶ βλέφαρον
                         καὶ ὀφθαλμὸς ἐπαίρονται <lb/>πολλάκις ἄνευ βουλήσεως ἁπάσης. ἔνθα καὶ τοῦτό
                         γε σαφῶς <lb/>οἶμαι θεάσασθαι μεγάλην ἔχον μοῖραν εἰς ἐπίγνωσίν τε τοῦ
                         <lb/>πάθους τῆς φύσεως ἀκριβῆ τε διάκρισιν ἀπὸ τῶν τρεμόντων. <lb/>αἱ μὲν
@@ -430,9 +437,9 @@
                         ἂν ἢ διὰ τῶν ὀργάνων τὸ πάθος, ἢ διὰ τὴν <lb/>χρωμένην τοῖς ὀργάνοις
                         δύναμιν. παλμοὶ μὲν οὖν καὶ σπασμοὶ <lb/>καὶ παραλύσεις ὀργάνων βλάβαι,
                         τρόμοι δὲ δυνάμεως <lb/>ἀῤῥωστούσης πάθη. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>Τρόμος μὲν δὴ σαφῶς διώρισται παλμοῦ· <lb/>ῥίγους δὲ τρόμον διορίσαις ἂν ὧδε.
+         </div>
+         <div n="6" type="chapter">
+            <p>Τρόμος μὲν δὴ σαφῶς διώρισται παλμοῦ· <lb/>ῥίγους δὲ τρόμον διορίσαις ἂν ὧδε.
                         χρὴ δὲ πρότερον, οἷόν <lb/>τι τὸ ῥιγοῦν ἐστιν ἐπισκέπτεσθαι. καὶ γὰρ οὖν καὶ
                         τοῦτο <lb/>δοκεῖ μὲν εἶναι τῶν πάνυ γνωρίμων, ἔστι δ’ οὐδενὸς ἧττον <pb n="607"/> δυσδιάγνωστον οὐ ταύτῃ μόνον, ὅτι τὴν αἰτίαν εὑρεῖν ἢ <lb/>τὴν
                         ἀπ’ αὐτῆς περὶ τὸ σῶμα γινομένην διάθεσιν οὐκ εὐπετὲς, <lb/>ἀλλ’ ἔτι τούτων
@@ -535,7 +542,7 @@
                         τῷ σώματι διαθέσεως. κατὰ δὲ τὸν αὐτὸν τρόπον εἴρηται <lb/>καὶ ταῦτα· μετὰ
                         ῥίγους ἄγνοια, κακόν. κακὸν δὲ καὶ λήθη. <lb/>τὰ ἑκταῖα ῥίγεα δύσκριτα.
                         ῥίγεα δ’ ἄρχεται γυναιξὶν ἐξ <lb/>
-                        <milestone unit="ed2page" n="210"/>ὀσφύος διὰ νώτου μᾶλλον, ἀτὰρ καὶ ἀνδράσι
+               <milestone unit="ed2page" n="210"/>ὀσφύος διὰ νώτου μᾶλλον, ἀτὰρ καὶ ἀνδράσι
                         μᾶλλον <lb/>ὄπισθεν ἢ ἔμπροσθεν. ἐν ἅπασι γὰρ τούτοις οὐ τὸ τοῖς
                             <lb/>ὑγιαί<milestone unit="ed1page" n="369"/>νουσι γινόμενον, ἀλλὰ τὸ
                         νοσῶδες εἴρηται ῥῖγος, ﻿<pb n="614"/> ὅπερ ἐστι κατάψυξις ἀλγεινὴ μετά τινος
@@ -628,7 +635,7 @@
                         ἐζευγμένον· ἐπὶ τούτῳ δὲ <lb/>τὸ μὲν πρὸς τῷ μὴ λανθάνειν εἰς τὴν φύσιν
                         ἐπανάγον ἡδὺ, <lb/>τὸ δ’ ἐξιστὰν τοῦ κατὰ φύσιν ἀλγεινόν. ὅθεν ἓν καὶ ταὐτὸ
                             <pb n="620"/>
-                        <milestone unit="ed2page" n="212"/>τῷ πλήθει ψυχρὸν, τὸ μὲν ἧσε, τὸ δ’
+               <milestone unit="ed2page" n="212"/>τῷ πλήθει ψυχρὸν, τὸ μὲν ἧσε, τὸ δ’
                         ἠνίασεν. εἰ μὲν <lb/>ὑπερτεθερμασμένῳ σώματι προσάγοιτο, πάντως ἧσε τὸ γὰρ
                         <lb/>ἄμετρον, τῇ θερμασίᾳ πονούμενον, ἐπὶ τῇ τοῦ λείποντος <lb/>εἰσόδῳ
                         ψυχροῦ παρηγορηθὲν, ἥσθη μὲν, ὅτε παρηγορήθη· <lb/>τὴν δ’ ἑαυτοῦ φύσιν ἔχον
@@ -726,9 +733,9 @@
                         ἕτερον δὲ δι’ <lb/>ἀῤῥωστίαν δυνάμεως ὀλέθριον· ἢν ῥῖγος ἐμπέσῃ πυρετῷ μὴ
                         <lb/>διαλείποντι, ἤδη ἀσθενέος ἐόντος, θανάσιμον. ἀλλὰ περὶ <lb/>μὲν τούτων
                         ἐπιπλέον <milestone unit="ed1page" n="371"/>ἑτέρωθι λέγεται. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>Τὸ δὲ νῦν εἶναι σκεπτέον εἰ δικαίως ἀναφέρουσιν <lb/>ἅπαντες σχεδὸν αἰτίῳ
+         </div>
+         <div n="7" type="chapter">
+            <p>Τὸ δὲ νῦν εἶναι σκεπτέον εἰ δικαίως ἀναφέρουσιν <lb/>ἅπαντες σχεδὸν αἰτίῳ
                         ψυχρῷ τὸ ῥῖγος. ὅτι μὲν γὰρ <lb/>ψυχρὸν τὸ πάθος, ἐναργές· εἰ δὲ καὶ τὸ δρῶν
                         αὐτὸ τοιοῦτον, <lb/>ἄξιόν μοι δοκεῖ σκέψεως εἶναι. τριταίου γοῦν ἀκριβοῦς,
                         <lb/>εἴπερ τι καὶ ἄλλο, ῥῖγος γνώρισμα. συνεισβάλλουσι γὰρ οἱ
@@ -765,7 +772,7 @@
                         ὁμολογῆσαι τὴν ﻿<pb n="629"/> ἄγνοιαν. τὸ δ’ ἀναιρεῖν τὸ φαινόμενον, ὅμοιόν
                         ἐστι τῷ <lb/>μηδ’ ὁρᾷν ἡμᾶς ὁμολογεῖν, ὅτι μὴ γινώσκομεν ὅπως ὁρῶμεν.
                         <lb/>οὐκοῦν ὅτι μὲν οὐδὲν ἧττον ἐπὶ δριμεῖ τε καὶ θερμῷ <lb/>
-                        <milestone unit="ed2page" n="215"/>χυμῷ γένοιτ’ ἂν ῥῖγος, ἢ ἐπὶ ψυχρῷ τε καὶ
+               <milestone unit="ed2page" n="215"/>χυμῷ γένοιτ’ ἂν ῥῖγος, ἢ ἐπὶ ψυχρῷ τε καὶ
                         πηγνύντι, <lb/>παντὸς μᾶλλον ἀληθές. εἶτα σκοπεῖν, εἰ ἁπλῶς τὸ <lb/>ψυχρὸν ἢ
                         τὸ δριμὺ πλεονάζειν χρὴ εἰς τὸ δυνηθῆναι ῥῖγος <lb/>ἐργάσασθαι. ἐφεξῆς δ’
                         ἐκεῖνο διορισόμεθα, πολλοῖς ἀγνοούμενον, <lb/>οὔτε γὰρ ἁπλῶς ψυχροῦ χυμοῦ
@@ -812,7 +819,7 @@
                         Ἱπποκράτους δόξαν ὀλίγον ἔμπροσθεν <lb/>εἴρηται. ταῖς γὰρ τῶν θερμῶν
                         φαρμάκων ὁμιλίαις <lb/>ἐνίοτε μὲν φρίκη μόνη, πολλάκις δὲ καὶ ῥῖγος
                         ἐπιγίνεται, <lb/>
-                        <milestone unit="ed2page" n="216"/>καθάπερ ἐν καύσοις τε καὶ τριταίοις
+               <milestone unit="ed2page" n="216"/>καθάπερ ἐν καύσοις τε καὶ τριταίοις
                         πυρετοῖς κινουμένης <lb/>τῆς ξανθῆς χολῆς, οὐκ ἐν ταῖς κοιλότησι τῶν
                         ἀγγείων, <lb/>ἀλλὰ διὰ τῶν σαρκῶν, ἤτοι τῷ γεννηθῆναι πλείονα τοῦτον
                         <lb/>τὸν χυμὸν ἐν αὐταῖς, ἢ τῷ δι’ αὐτῶν ὑπὸ τῆς φύσεως ἐκκαθαίρεσθαι.
@@ -909,10 +916,10 @@
                         γὰρ <lb/>διψῶσιν οἱ πλεῖστοι καὶ θερμασίας αἰσθάνονται κατὰ τὸ <lb/>βάθος ἐν
                         αὐτῷ τοῦ ῥίγους τῷ χρόνῳ, ὧν οὐδέτερον ὑπάρχει <lb/>τοῖς ἐν τεταρταίῳ πυρετῷ
                         ῥιγοῦσιν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="8">
-                    <p>
-                        <milestone unit="ed2page" n="218"/>Ἐπεὶ δὲ καὶ περὶ ῥίγους αὐτάρκως
+         </div>
+         <div n="8" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="218"/>Ἐπεὶ δὲ καὶ περὶ ῥίγους αὐτάρκως
                         <lb/>εἴρηται, λείποιτ’ ἂν ἔτι καὶ περὶ σπασμοῦ διελθεῖν. ἔσται <lb/>δὲ οὔτε
                         μακρὸς οὔτε ἀσαφὴς ὁ λόγος, εἴ τις ὧν ἄχρι δεῦρο <lb/>διῆλθον εἴη
                         μεμνημένος. ἄρξομαι δὲ καὶ νῦν ἀπὸ τῆς ἀναμνήσεως <lb/>ὧν ἐν τοῖς περὶ μυῶν
@@ -962,8 +969,7 @@
                         γίνονται σπασμοὶ, τούτους ἰάσῃ, τὸ μὲν πλῆθος κενῶν, <lb/>τὴν φλεγμονὴν δὲ
                         τοῖς ἰδίοις αὐτῆς βοηθήμασιν ἐκθεραπεύων, <lb/>ἃ μεμάθηκας ἐν τοῖς τῆς
                         θεραπευτικῆς μεθόδου <lb/>γράμμασιν. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

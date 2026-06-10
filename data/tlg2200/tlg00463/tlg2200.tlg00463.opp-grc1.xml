@@ -1,122 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">
-    <fileDesc>
-        <titleStmt>
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
             <title xml:lang="lat">Oratio 63</title>
             <author>Libanius</author>
             <editor>Richard Foerster</editor>
-                <sponsor>University of Leipzig</sponsor>
-    <funder>European Social Fund Saxony</funder>
-    <principal>Gregory Crane</principal>
-    <respStmt>
-          <persName>Gregory R. Crane</persName>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-        </respStmt>
-        <respStmt>
-          <persName xml:id="DDD">Digital Divide Data</persName>
-          <resp>Corrected and encoded the text</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Matt Munson</persName>
-          <resp>Project Manager (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Annette Geßner</persName>
-          <resp>Project Assistant (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Thibault Clérice</persName>
-          <resp>Lead Developer (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Bruce Robertson</persName>
-          <resp>Technical Advisor</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Greta Franzini</persName>
-          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Frederik Baumgardt</persName>
-          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Simona Stoyanova</persName>
-          <resp>Project Manager (University of Leipzig), 2015</resp>
-          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-    <authority>University of Leipzig</authority>
-    <idno type="filename">tlg2200.tlg00463.opp-grc1.xml</idno>
-    <availability>
-     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-    </availability>
-    <date>2016</date>
-    <publisher>University of Leipzig</publisher>
-    <pubPlace>Germany</pubPlace>
-   </publicationStmt>
-   
-   <sourceDesc>
-    <listBibl>
-       <biblStruct>
-                <monogr>
-                    <editor>
+            <sponsor>University of Leipzig</sponsor>
+            <funder>European Social Fund Saxony</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName>Gregory R. Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Geßner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Greta Franzini</persName>
+               <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Frederik Baumgardt</persName>
+               <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Simona Stoyanova</persName>
+               <resp>Project Manager (University of Leipzig), 2015</resp>
+               <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>University of Leipzig</authority>
+            <idno type="filename">tlg2200.tlg00463.opp-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2016</date>
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg2200.tlg00463.opp-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <editor>
                         <persName>
-                            <name xml:lang="lat">Richardus Foerster</name>
-                            <addName xml:lang="deu">Richard Foerster</addName>
+                           <name xml:lang="lat">Richardus Foerster</name>
+                           <addName xml:lang="deu">Richard Foerster</addName>
                         </persName>
-                    </editor> 
-                    <author ref="urn:cts:greekLit:tlg2200">Libanius</author>  
-                    <title xml:lang="lat">Orationes LI-LXIV</title>
-                    <imprint>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg2200">Libanius</author>
+                     <title xml:lang="lat">Orationes LI-LXIV</title>
+                     <imprint>
                         <publisher>Teubner</publisher>
                         <pubPlace>Leipzig</pubPlace>
                         <date>1908</date>
-                    </imprint>
-                    <biblScope unit="volume">4</biblScope>
-                </monogr>
-                <ref target="https://archive.org/details/libaniiopera01libagoog">Internet Archive</ref>                
-            </biblStruct>
-    </listBibl>
-   </sourceDesc>
-   
-  </fileDesc>
-  <encodingDesc>
-   <p>The following text is encoded in accordance with EpiDoc standards and with the
+                     </imprint>
+                     <biblScope unit="volume">4</biblScope>
+                  </monogr>
+                  <ref target="https://archive.org/details/libaniiopera01libagoog">Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
     CTS/CITE Architecture.</p>
-      <refsDecl n="CTS">
-        <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-      </refsDecl>
-    </encodingDesc>
-  
-  <profileDesc>
-   <langUsage>
-    <language ident="lat">Latin</language>
-                <language ident="deu">German</language>
-                <language ident="grc">Greek</language>
-   </langUsage>
-  </profileDesc>
-  
- </teiHeader>
-  <text>
-    <body><div type="edition" n="urn:cts:greekLit:tlg2200.tlg00463.opp-grc1" xml:lang="grc">
-
-<div type="textpart" subtype="chapter" n="1">
-
-
-
-
-
-<pb n="387"/>
-
-<head>LXIII.</head>
-
-<head>ΥΠΕΡ ΟΛΥΜΠΙΟΥ.</head>
-
-<p>οὐκ ἂν ἔτι α δυναίμην ἐνεγκεῖν τούς οὐ δυ- Sieb. <lb n="75"/>
+         <refsDecl n="CTS">
+            <cRefPattern n="chapter"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="lat">Latin</language>
+            <language ident="deu">German</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg2200.tlg00463.opp-grc1">
+         <div n="1" type="chapter">
+            <pb n="387"/>
+            <head>LXIII.</head>
+            <head>ΥΠΕΡ ΟΛΥΜΠΙΟΥ.</head>
+            <p>οὐκ ἂν ἔτι α δυναίμην ἐνεγκεῖν τούς οὐ δυ- Sieb. <lb n="75"/>
 
 ναμένους τουτουσὶ παύσασθαι τῶν κατ’ Ὀλυμπίου
 
@@ -126,9 +124,10 @@
 
 θεῖν, ὧς οὐ παντάπασι τέθνηκε ζώντων αὐτοῦ τῶν
 
-φίλων.</p></div>
-
-<div type="textpart" subtype="chapter" n="2"><p>ὧν ἐμὲ πρῶτον ἔδει φανῆναι χαλεπῶς ἐνη-
+φίλων.</p>
+         </div>
+         <div n="2" type="chapter">
+            <p>ὧν ἐμὲ πρῶτον ἔδει φανῆναι χαλεπῶς ἐνη-
 
 νοχότα τὸν μᾶλλον ἑτέρων ἀπολελαυκότα τῆς ἀνδρίας
 
@@ -143,8 +142,7 @@
 δὲ τὰ δίκαιά με ποιοῦντα γράψειν αἰσχρόν, χείρω με
 
 τῆς τῶν ἐχθρῶν ἐλπίδος ἐπιδειχθῆναι.</p>
-
-<p>3. Πόλεμον μὲν οὖν οἶδα κινήσων ἐπ᾿ ἐμαυτόν, <lb n="15"/>
+            <p>3. Πόλεμον μὲν οὖν οἶδα κινήσων ἐπ᾿ ἐμαυτόν, <lb n="15"/>
 
 οἱ γὰρ ἔλεγχον τῆς αὑτῶν ἀδικίας ἕξοντες οὐκ ἔσθ᾿
 
@@ -153,10 +151,8 @@
 ποιήσουσιν· ἐμοὶ δὲ οὐ καλὸν μᾶλλον δείσαι τὰς τού-
 
 <note type="footnote">Β = Codex Barberinus II 41</note>
-
-<note type="footnote">Am = Ambrosianus Β 69</note>
-
-<note type="footnote">1 Ὑπὲρ Ὀλυμπίου om Am | λή post ὀλυμπίου Β 10 ποιή-
+               <note type="footnote">Am = Ambrosianus Β 69</note>
+               <note type="footnote">1 Ὑπὲρ Ὀλυμπίου om Am | λή post ὀλυμπίου Β 10 ποιή-
 
 σειν τἀμά Am | μηδὲ? 16 αὐτῶν scripsi αὐτῶν Β Am Sieb
 
@@ -165,10 +161,7 @@
 ου corr, Am βουλεύσωσι Sieb 18 ποιήσουσιν scripsi ex Am
 
 ποιήσουσι B Sieb</note>
-
-
-
-<pb n="388"/>
+               <pb n="388"/>
 
 τῶν ἐπιβουλάς ἢ τὸ προδοῦναι τὰ πρὸς τὸν ἑταῖρον
 
@@ -187,8 +180,8 @@
 τοῖς κακῶς λέγουσι καθιστάμενος τῷ σιγῇ τὰ παρ’
 
 ἐκείνων φέρειν.</p>
-
-<lb n="10"/> <p>4. Ἤλπιζον μὲν οὖν πολλά τε καὶ καλὰ περὶ ἐκεί-
+            <lb n="10"/>
+            <p>4. Ἤλπιζον μὲν οὖν πολλά τε καὶ καλὰ περὶ ἐκεί-
 
 νου τοὺς τὴν πόλιν οἰκοῦντας ἅπαντας ἐρεῖν τά τε
 
@@ -206,9 +199,10 @@
 
 οὐκ ἐώντων οὐ κατέκειτο εἰσιέναι πρός γε ταῖς θύραις
 
-ἐκάθηντο καὶ ταῖς θεραπαίναις συνῆσαν.</p></div>
-
-<div type="textpart" subtype="chapter" n="5"><p>ᾤμην μὲν
+ἐκάθηντο καὶ ταῖς θεραπαίναις συνῆσαν.</p>
+         </div>
+         <div n="5" type="chapter">
+            <p>ᾤμην μὲν
 
 <lb n="20"/> οὖν συμβάσης τῆς τελευτῆς αὑτοῖς τοὺς ἀνθρώπους
 
@@ -239,10 +233,7 @@ p. ΧΧΧ R) 8 καθιστάμενος — 9 φέρειν] καθίσταν�
 ιστάμενοι BAm Sieb 9 ἐκείνων scripsi ex Am Macar ἐκεί-
 
 vois Β Sieb 10 voce οὖν des Am 20 αὑτοῖς Sieb αὐτοῖς Β</note>
-
-
-
-<pb n="389"/>
+               <pb n="389"/>
 
 τούτους ὁμολογήσειν καὶ συμβαινούσας οἷς ἔπραξαν
 
@@ -255,10 +246,8 @@ vois Β Sieb 10 voce οὖν des Am 20 αὑτοῖς Sieb αὐτοῖς Β</no
 ἠδικημένοι, τὰ δὲ ἠδικηκότες, οὐκ ἂν αὐτοῦ τοσούτους <lb n="5"/>
 
 κατέχεαν λόγους διά πάσης ἰόντες τῆς πόλεως.</p>
-
-<p>6. Τί δὴ τὸ τούτων τῶν λόγων αἴτιον;</p>
-
-<p>Οἱ μέν οὐδαμοῦ τῶν διαθηκῶν εἶναί φασι καὶ
+            <p>6. Τί δὴ τὸ τούτων τῶν λόγων αἴτιον;</p>
+            <p>Οἱ μέν οὐδαμοῦ τῶν διαθηκῶν εἶναί φασι καὶ
 
 τοῦτο αἰτιῶνται. φέρε δὴ πρὸς τούτους πρῶτον δια-
 
@@ -274,9 +263,10 @@ vois Β Sieb 10 voce οὖν des Am 20 αὑτοῖς Sieb αὐτοῖς Β</no
 
 ἣν τοσούτων ἀνθρώπων τὴν δεινὴν ταύτην ἐπιθυμίαν <lb n="15"/>
 
-ἐμπλῆσαι.</p></div>
-
-<div type="textpart" subtype="chapter" n="7"><p>τί δ’ ἣν καὶ τὸ δίκαιον αὐτοῖς πρὸς
+ἐμπλῆσαι.</p>
+         </div>
+         <div n="7" type="chapter">
+            <p>τί δ’ ἣν καὶ τὸ δίκαιον αὐτοῖς πρὸς
 
 Ὀλύμπιον; οὔτε γὰρ ὁδὸν μακρὰν ἐπορεύθησαν ἐκείνου
 
@@ -299,20 +289,15 @@ vois Β Sieb 10 voce οὖν des Am 20 αὑτοῖς Sieb αὐτοῖς Β</no
 βόμενός &lt;τινος&gt; a αὐτῶν ἴρη· σὺ δὲ τοῦ χάριν
 
 <note type="footnote">13 cf. p. 120, 9 sq. t. Ι 199, 18; t. II 548, 2; t. III 419, 17</note>
-
-<note type="footnote">1 τούτους e τοῦτο corr Β 3 signum interrogationis po-
+               <note type="footnote">1 τούτους e τοῦτο corr Β 3 signum interrogationis po-
 
 sui, comma Β Sieb 4 ταῦτα inserui 6 punctum post πόλεως
 
 posui, colon B, signum interrogationis Sieb 12 αὑτοῦ scripsi
 
 αὐτοῦ Β Sieb 20 ἀφειλκύσαντο scripsi ἐφειλκύσαντο B Sieb</note>
-
-<note type="footnote">26 τινος inserui | ἀξιοῖς scripsi ἠξίους B Sieb</note>
-
-
-
-<pb n="390"/>
+               <note type="footnote">26 τινος inserui | ἀξιοῖς scripsi ἠξίους B Sieb</note>
+               <pb n="390"/>
 
 τῶν Ὀλυμπίου λαβεῖν; ἕξει μὲν οὐδὲν εἰπεῖν
 
@@ -324,9 +309,10 @@ posui, colon B, signum interrogationis Sieb 12 αὑτοῦ scripsi
 
 <lb n="5"/> κακῶς λέγοντας ἔσχε καὶ τοὺς ὀρεωκόμους καὶ τοὺς
 
-ταῖς καμήλοις τἀκ τῶν ἀγρῶν ἡμῖν ἄγοντας.</p></div>
-
-<div type="textpart" subtype="chapter" n="8"><p>οὕτως
+ταῖς καμήλοις τἀκ τῶν ἀγρῶν ἡμῖν ἄγοντας.</p>
+         </div>
+         <div n="8" type="chapter">
+            <p>οὕτως
 
 ἐχθές ποθεν ἥκων &lt;τις&gt; a ἠδικῆσθαι ταῖς
 
@@ -338,9 +324,10 @@ posui, colon B, signum interrogationis Sieb 12 αὑτοῦ scripsi
 
 καὶ κοινῇ τὴν βουλὴν καὶ καθ’ ἕκαστον ἰδίᾳ πειθο-
 
-μένους ἴν τισιν ἔσχε καὶ οὐκ ἀντιτείνοντας.</p></div>
-
-<div type="textpart" subtype="chapter" n="9"><p>ἐκεῖ-
+μένους ἴν τισιν ἔσχε καὶ οὐκ ἀντιτείνοντας.</p>
+         </div>
+         <div n="9" type="chapter">
+            <p>ἐκεῖ-
 
 νος γὰρ ἣν ὁ δεθῆναι κωλύσας τὴν βουλήν, ἡνίκα ἡ
 
@@ -364,27 +351,22 @@ posui, colon B, signum interrogationis Sieb 12 αὑτοῦ scripsi
 
 καὶ ὀλίγα, ὥστ' ὀφείλοντας αὐτοὺς αὑτῷ καταλιπὼν
 
-ἀπῆλθε.</p></div>
-
-<div type="textpart" subtype="chapter" n="10"><p>πῶς οὖν ὧν εὐεργετήκει καὶ μισθὸν
+ἀπῆλθε.</p>
+         </div>
+         <div n="10" type="chapter">
+            <p>πῶς οὖν ὧν εὐεργετήκει καὶ μισθὸν
 
 <lb n="25"/> προσώφειλεν; ὥσπερ ἂν εἴ τις ἰατρὸν ἀναστήσαντα
 
 <note type="footnote">3 II. ζ 142 13 cf. t. II 372 sq. et 494 sq.</note>
-
-<note type="footnote">7 τις inserui 10 εὖ πεποιήκει reposui e Β εὐπεποιήκει Sieb</note>
-
-<note type="footnote">16 τῶν] inter τὸ et αὑτῶν Sieb delevi | αὐτῶν Sieb αὐτῶν Β</note>
-
-<note type="footnote">17 ἐμβαίνοντας reposui e Β ἐκβαίνοντας Sieb 18 τοὺς ante
+               <note type="footnote">7 τις inserui 10 εὖ πεποιήκει reposui e Β εὐπεποιήκει Sieb</note>
+               <note type="footnote">16 τῶν] inter τὸ et αὑτῶν Sieb delevi | αὐτῶν Sieb αὐτῶν Β</note>
+               <note type="footnote">17 ἐμβαίνοντας reposui e Β ἐκβαίνοντας Sieb 18 τοὺς ante
 
 ἄρχοντας inser Sieb delevi 23 αὐτοὺς Sieb αὐτὰς Β | αὑτῷ
 
 scripsi αὐτῶ B Sieb</note>
-
-
-
-<pb n="391"/>
+               <pb n="391"/>
 
 τὸν ἀσθενοῦντα προσαναγκάζοι τῷ διαπεφευγότι τὴν
 
@@ -397,8 +379,7 @@ scripsi αὐτῶ B Sieb</note>
 τὸ καὶ τὸ βουλομένου γενέσθαι, καὶ γὰρ ἐκεῖνος <lb n="5"/>
 
 ἐκείνης τὸ καὶ τὸ βουλομένης γενέσθαι.</p>
-
-<p>11. Περὶ μέν γε τῶν ἐν τοῖς δικαστηρίοις τοῖς
+            <p>11. Περὶ μέν γε τῶν ἐν τοῖς δικαστηρίοις τοῖς
 
 δικαζομένοις καὶ] παρεστώτων καὶ βοηθούντων πρῶτον
 
@@ -429,8 +410,7 @@ scripsi αὐτῶ B Sieb</note>
 καὶ οἷς ἡδὺ τὸ κακῶς λέγειν ἐκ τοῦ μηδέν πράττειν
 
 λαμβάνον τὴν γένεσιν.</p>
-
-<p>12. Καὶ πρὸς μὲν τοὺς ἐκ τοῦ μὴ λαμβάνειν ἐπὶ
+            <p>12. Καὶ πρὸς μὲν τοὺς ἐκ τοῦ μὴ λαμβάνειν ἐπὶ
 
 τὸ κακῶς λέγειν ἥκοντας ἀρκεῖ, τὸ νῦν εἶναι, τοσαῦτα·
 
@@ -449,12 +429,8 @@ cellavi 10 τοῦ ante Ὀλυμπίου Sieb delevi 13 τἄλλα scripsi
 ὁ Β 26 ᾧ δ’ scripsi ᾧδ’ B Sieb | σχετλιάσαι καὶ καλέσαι
 
 scripsi σχετλιάσῃ καὶ καλέσοι B Sieb</note>
-
-
-
-<pb n="392"/>
-
-<note type="marginal">Sieb. 80</note> τούτων θεούς τε καὶ δαίμονας, οἱ αὐτοὶ | τετί-
+               <pb n="392"/>
+               <note type="marginal">Sieb. 80</note> τούτων θεούς τε καὶ δαίμονας, οἱ αὐτοὶ | τετί-
 
 μηνταί τε καὶ λοιδοροῦσι καὶ μετέχουσί τε τῆς δια-
 
@@ -470,9 +446,10 @@ scripsi σχετλιάσῃ καὶ καλέσοι B Sieb</note>
 
 ἐάν τε ἑτέρωθι καθῶνται ἐάν τε περιπατῶσιν. οἶμαι
 
-δὲ αὐτοὺς κἀν τοῖς ὀνείρασι ταῦτα ποιεῖν.</p></div>
-
-<div type="textpart" subtype="chapter" n="13"><p>καὶ εἰ
+δὲ αὐτοὺς κἀν τοῖς ὀνείρασι ταῦτα ποιεῖν.</p>
+         </div>
+         <div n="13" type="chapter">
+            <p>καὶ εἰ
 
 <lb n="10"/> μὲν πονηρὸς καὶ πανοῦργος καὶ θεοῖς ἐχθρός, τί μὴ
 
@@ -492,9 +469,10 @@ scripsi σχετλιάσῃ καὶ καλέσοι B Sieb</note>
 
 μήτε ἐκεῖνο, ἀλλ’ ἐποίει κατηγορίαν καὶ τὸ ἴσον καὶ
 
-τὸ οὐκ ἴσον;</p></div>
-
-<div type="textpart" subtype="chapter" n="14"><p>καίτοι καὶ πατέρας ἴσμεν οὕτω
+τὸ οὐκ ἴσον;</p>
+         </div>
+         <div n="14" type="chapter">
+            <p>καίτοι καὶ πατέρας ἴσμεν οὕτω
 
 <lb n="20"/> παισὶ προσενηνεγμένους. τῷ μὲν ἔδοσαν πλείω τά-
 
@@ -511,26 +489,20 @@ scripsi σχετλιάσῃ καὶ καλέσοι B Sieb</note>
 ἐνταυθοῖ γραφείσας διαθήκας οὐδ’ ὡς τὰς μὲν ἂν
 
 <note type="footnote">6 Dem. ρ. 241,28; 1481,17</note>
-
-<note type="footnote">2 τε τῆς scripsi καὶ Β Sieb 4 ἐπαίνου scripsi ἐπαίνων
+               <note type="footnote">2 τε τῆς scripsi καὶ Β Sieb 4 ἐπαίνου scripsi ἐπαίνων
 
 οὐ Β Sieb 6 ἐάν (1) scripsi ἄν Β Sieb 8 καθῶνται scripsi
 
 κάθηνταί Β κάθηνται Sieb 16 αὑτῷ scripsi αὐτῷ Β Sieb</note>
-
-<note type="footnote">20 πλείω scripsi πλέω B Sieb 23 δ' (1) Sieb</note>
-
-
-
-<pb n="393"/>
+               <note type="footnote">20 πλείω scripsi πλέω B Sieb 23 δ' (1) Sieb</note>
+               <pb n="393"/>
 
 φαίη τις σωφρονεῖν, ταύτην δὲ μαίνεσθαι οὐδ’ ὡς
 
 αἱ μέν ἐν τοῖς προσήκουσιν ἔμενον ὄροις, ἡ δὲ ἐξώ-
 
 κειλεν οὐδενὶ χαλινῷ χρησαμένη.</p>
-
-<p>15. Καὶ εἰ δὴ δεῖ κατηγορεῖν Ὀλυμπίου, τοῦτ’ ἄν
+            <p>15. Καὶ εἰ δὴ δεῖ κατηγορεῖν Ὀλυμπίου, τοῦτ’ ἄν
 
 τις ἔχοι κατ’ αὐτοῦ | λέγειν τὸ μὴ ταῖς διαθήκαις <note type="marginal">Sieb. 81</note>
 
@@ -552,9 +524,10 @@ scripsi σχετλιάσῃ καὶ καλέσοι B Sieb</note>
 
 Φρυνώνδαν καὶ τὸν Εὐρύβατον πρὸς τἀς μηχανὰς
 
-Ὀλυμπίου καὶ τέχνας καὶ παρακρούσεις.</p></div>
-
-<div type="textpart" subtype="chapter" n="16"><p>οὐκοῦν <lb n="15"/>
+Ὀλυμπίου καὶ τέχνας καὶ παρακρούσεις.</p>
+         </div>
+         <div n="16" type="chapter">
+            <p>οὐκοῦν <lb n="15"/>
 
 τοῦτον τὸν Εὐρύβατον καὶ τὸν Φρυνώνδαν πάντα
 
@@ -575,8 +548,7 @@ scripsi σχετλιάσῃ καὶ καλέσοι B Sieb</note>
 ed. Rab. ρ. 180, 28 sq. Aeschin. fals. leg. § 40 p. 83, 24 14 cf.
 
 ad t. Ι 170, 8; III 37, 7. Plat. Prot. p. 327 D. Aeschin. Ctes. § 137</note>
-
-<note type="footnote">1 μαίνεσθαι scripsi coll. Ant. l. l. φαίνεσθαι B Sieb qui
+               <note type="footnote">1 μαίνεσθαι scripsi coll. Ant. l. l. φαίνεσθαι B Sieb qui
 
 οὐ anteponendum coni 2 ἡ Sieb οἱ Β 10; posui . Β Sieb |
 
@@ -589,14 +561,11 @@ inserui e B, ut inserendum coni Bastius, Lettre critique a Bois-
 sonade p. 128: „il faut suppleer auant ἔσονται, ὅπως, ἔστε ου
 
 un mot “ om Sieb 22 τί Β</note>
-
-
-
-<pb n="394"/>
-
-</p></div>
-
-<div type="textpart" subtype="chapter" n="17"><p>καὶ ταῦτα καὶ ἔτι πλείω τούτων τόν τε ἄλλον ἦν
+               <pb n="394"/>
+            </p>
+         </div>
+         <div n="17" type="chapter">
+            <p>καὶ ταῦτα καὶ ἔτι πλείω τούτων τόν τε ἄλλον ἦν
 
 χρόνον καὶ τοῦ νοσήματος ἄγχοντος καὶ ἄρτι τὴν
 
@@ -618,9 +587,10 @@ un mot “ om Sieb 22 τί Β</note>
 
 μήτε ἀνθρώπους φοβούμενος μήτε τοὺς θεοὺς
 
-αἰδούμενος.</p></div>
-
-<div type="textpart" subtype="chapter" n="18"><p>ὁ αὐτὸς οὑν ἄνθρωπος καὶ πονηρὸς
+αἰδούμενος.</p>
+         </div>
+         <div n="18" type="chapter">
+            <p>ὁ αὐτὸς οὑν ἄνθρωπος καὶ πονηρὸς
 
 καὶ χρηστὸς καὶ θεοῖς ἐχθρὸς &lt;καὶ φίλος&gt; καὶ στε-
 
@@ -645,8 +615,7 @@ un mot “ om Sieb 22 τί Β</note>
 γομένοις καὶ πάλιν ἂν ἥπτοντο τῶν χειρῶν, ἴσως δ’
 
 <note type="footnote">8 cf. ad t. III 38, 2 9 cf. t. III 26, 17 21 cf. t. II 77, 21</note>
-
-<note type="footnote">1 τόν τε ἄλλον ἣν χρόνον repsui e Β τῶν τε ἄλλων ἦν
+               <note type="footnote">1 τόν τε ἄλλον ἣν χρόνον repsui e Β τῶν τε ἄλλων ἦν
 
 χρόνων Sieb 5 τεμούσης scripsi τεκούσης Β Sieb 6 ἀνα-
 
@@ -661,16 +630,12 @@ reposui e Β ἑκατέρως Sieb 17 ἄξιος scripsi ἄξιον Β Sieb 
 Ρ. 16= t. Ι praef. p. XXX R) | πάντων ἀνθρώπῳ ῥᾷστον scripsi
 
 κάντων ἀνθρώπων ῥᾷον B Sieb ἀνθρώπῳ παντἱ ῥᾷστον Macar</note>
-
-
-
-<pb n="395"/>
+               <pb n="395"/>
 
 ἂν καὶ γονάτων. τοσαύτην ἔχουσι πρόνοιαν τοῦ συνά-
 
 γειν ἑαυτοῖς.</p>
-
-<p>19. Ὑπισχνεῖτο γὰρ ἡμῶν ἑκάστῳ τὸν κλῆρον,
+            <p>19. Ὑπισχνεῖτο γὰρ ἡμῶν ἑκάστῳ τὸν κλῆρον,
 
 φασί. κατὰ ποίαν ἀνάγκην; τίνα μὲν ὑμῖν ἐνορῶν
 
@@ -690,9 +655,10 @@ reposui e Β ἑκατέρως Sieb 17 ἄξιος scripsi ἄξιον Β Sieb 
 
 τὸν κλῆρον εἶναι μέλλοντα αὐτῷ τὴν σωτηρίαν οἴσειν ;
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="20"><p>οὐχ ὁ μὲν νέος καὶ λαμπρὸς καὶ τῷ δύνασθαι
+</p>
+         </div>
+         <div n="20" type="chapter">
+            <p>οὐχ ὁ μὲν νέος καὶ λαμπρὸς καὶ τῷ δύνασθαι
 
 διασύρειν ἑτέρους καὶ] φοβερὸς καὶ δυσπολέμητος καὶ
 
@@ -709,8 +675,7 @@ reposui e Β ἑκατέρως Sieb 17 ἄξιος scripsi ἄξιον Β Sieb 
 τέταρτον. οὐκοῦν καὶ οὕτω μεγάλα καὶ λόγον οὐκ <lb n="20"/>
 
 ἔχοντα.</p>
-
-<p>21. Οὐ τοίνυν οὐδὲ πρὸς τὸν ἄρχοντα νῦν ἡμῶν
+            <p>21. Οὐ τοίνυν οὐδὲ πρὸς τὸν ἄρχοντα νῦν ἡμῶν
 
 εἰπεῖν τι φαίνεταί μοι τοιοῦτον δίκαιόν τε εἰδὼς ἐκεῖνον
 
@@ -721,8 +686,7 @@ reposui e Β ἑκατέρως Sieb 17 ἄξιος scripsi ἄξιον Β Sieb 
 ὑπὲρ χρημάτων βομβεῖν μέλλοντά γε ἀνύσειν οὐδέν.
 
 <note type="footnote">6 Plat. Gorg. p. 512 B 26 Plat. rep. VIII p. 564 D; Crit. p. 54 D</note>
-
-<note type="footnote">1 ἔχουσιν Sieb 2 ἑαυτοῖς reposui e Β αὐτοῖς Sieb
+               <note type="footnote">1 ἔχουσιν Sieb 2 ἑαυτοῖς reposui e Β αὐτοῖς Sieb
 
 4 ὑμῖν reposui e Β coll. t. III 370, 22 R sed fortasse etiam
 
@@ -731,10 +695,7 @@ reposui e Β ἑκατέρως Sieb 17 ἄξιος scripsi ἄξιον Β Sieb 
 III 3, 64; Her. VIII 53, 2 8 μὴ ταῦτα, τίνος scripsi μὴ τίνος
 
 (τινὸς α Sieb) ταῦτα Β Sieb 14 καὶ cancellavi 23 τί B</note>
-
-
-
-<pb n="396"/>
+               <pb n="396"/>
 
 ἦν δὲ δήπου καὶ δέος μὴ αὐτὸς μὲν εἴπῃ, ὁ δὲ ἄμα
 
@@ -744,9 +705,10 @@ III 3, 64; Her. VIII 53, 2 8 μὴ ταῦτα, τίνος scripsi μὴ τί�
 
 καὶ ὕβρεως διώκῃ, μᾶλλον δὲ διορυχῆς τῶν τε νόμων
 
-<lb n="5"/> καὶ τῶν δικαστηρίων.</p></div>
-
-<div type="textpart" subtype="chapter" n="22"><p>εἰ δ’ ὄντως ἐφθέγξατο
+<lb n="5"/> καὶ τῶν δικαστηρίων.</p>
+         </div>
+         <div n="22" type="chapter">
+            <p>εἰ δ’ ὄντως ἐφθέγξατο
 
 τοιοῦτον, καὶ ὃς ἀκούσας ἠνέσχετο, καὶ νῦν ἐπὶ μικροῖς
 
@@ -760,9 +722,10 @@ III 3, 64; Her. VIII 53, 2 8 μὴ ταῦτα, τίνος scripsi μὴ τί�
 
 κην διδοὺς λαμβάνω γνώμῃ μὲν ἴσος ὤν, τῇ
 
-τύχῃ δὲ βελτίων.</p></div>
-
-<div type="textpart" subtype="chapter" n="23"><p>καὶ περὶ ἑτέρων δὲ ἐν ἀρχαῖς
+τύχῃ δὲ βελτίων.</p>
+         </div>
+         <div n="23" type="chapter">
+            <p>καὶ περὶ ἑτέρων δὲ ἐν ἀρχαῖς
 
 ὄντων ταὐτὰ λέγοντες οἱ φάσκοντες ἐκείνοις εἶναι φίλοι
 
@@ -772,9 +735,10 @@ III 3, 64; Her. VIII 53, 2 8 μὴ ταῦτα, τίνος scripsi μὴ τί�
 
 δικάζειν ὑπέρ τοῦ τι δεῖν λαβεῖν &lt;ὄντες&gt;, α
 
-δέ λαμβάνοντες.</p></div>
-
-<div type="textpart" subtype="chapter" n="24"><p>ἐγὼ δέ ἡγοῦμαι οὐδεμίαν γεγε-
+δέ λαμβάνοντες.</p>
+         </div>
+         <div n="24" type="chapter">
+            <p>ἐγὼ δέ ἡγοῦμαι οὐδεμίαν γεγε-
 
 νῆσθαι τοιαύτην ὑπόσχεσιν οὐδὲ ἐψεῦσθαι τὸν ἄνθρω-
 
@@ -797,8 +761,7 @@ III 3, 64; Her. VIII 53, 2 8 μὴ ταῦτα, τίνος scripsi μὴ τί�
 om Sieb 7 δὴ Sieb δέ Β 9 num ἐξομοσάντων? cf
 
 tit. Delph. Bull. de Corr. Hell. XXXI 47, 28 10 τετιμωρημένων?</note>
-
-<note type="footnote">13 et 14 ταὐτὰ scripsi ταῦτα Β Sieb τί Β | ὄντες
+               <note type="footnote">13 et 14 ταὐτὰ scripsi ταῦτα Β Sieb τί Β | ὄντες
 
 inserui 19 ἔχοι scripsi ἔχει Β Sieb 21 περιουσίας scripsi
 
@@ -807,16 +770,12 @@ inserui 19 ἔχοι scripsi ἔχει Β Sieb 21 περιουσίας scripsi
 κακῶς scripsi καλῶς Β Sieb 24 αὐτοῦ scripsi αὐτοῦ B Sieb |
 
 ἐνὶ reposui e Β ἐνὶ Sieb</note>
-
-
-
-<pb n="397"/>
+               <pb n="397"/>
 
 οὐδὲ ἔργον εἰπεῖν εἷναι τῶν ὑποσχέσεων ἄλλον ἀδι-
 
 κηθῆναι.</p>
-
-<p>25. Ἀλλὰ πρὸς τῷ, φασί, μὴ φυλάξαι τὰ
+            <p>25. Ἀλλὰ πρὸς τῷ, φασί, μὴ φυλάξαι τὰ
 
 πρὸς ἐκείνους ἡμάρτανεν ἀναξίοις τισὶν ὡς
 
@@ -830,9 +789,10 @@ inserui 19 ἔχοι scripsi ἔχει Β Sieb 21 περιουσίας scripsi
 
 ἀποστροφήν, παραμυθίαν, παραψυχήν, ἀφορμὴν εὐ-
 
-θυμίας, λύπης φάρμακον;</p></div>
-
-<div type="textpart" subtype="chapter" n="26"><p>οὕτω δὲ τῶν αὑτῶν <lb n="10"/>
+θυμίας, λύπης φάρμακον;</p>
+         </div>
+         <div n="26" type="chapter">
+            <p>οὕτω δὲ τῶν αὑτῶν <lb n="10"/>
 
 ἀμελήσαντες καὶ τὸ τοῖς ἐκείνῳ δοκοῦσιν ὑπηρετεῖν
 
@@ -848,9 +808,10 @@ inserui 19 ἔχοι scripsi ἔχει Β Sieb 21 περιουσίας scripsi
 
 ταῖς ἑαυτῶν ἡδόμενοι, ἐν ταῖς εὐχαῖς τἀκείνου τῶν
 
-αὑτῶν προτιθέντες.</p></div>
-
-<div type="textpart" subtype="chapter" n="27"><p>ταῦτ᾿ οὖν ὁρῶν καὶ ταῦτ’
+αὑτῶν προτιθέντες.</p>
+         </div>
+         <div n="27" type="chapter">
+            <p>ταῦτ᾿ οὖν ὁρῶν καὶ ταῦτ’
 
 ἀριθμῶν καὶ τούτοις εὐφραινόμενος καθ’ ἑκάστην
 
@@ -865,24 +826,19 @@ inserui 19 ἔχοι scripsi ἔχει Β Sieb 21 περιουσίας scripsi
 ἐσχηκώς, ἐν δέ τῷ καιρῷ τῶν ἀμοιβῶν ἑκὼν ἀγνοήσας,
 
 τίς τίνος δικαιότερος ἔχειν πλέον. οὐ γὰρ γένος ἐν <lb n="25"/>
-
-<note type="footnote">3 τῷ scripsi τὸ Β Sieb | φασί scripsi, ut coni Sieb φησὶ
+               <note type="footnote">3 τῷ scripsi τὸ Β Sieb | φασί scripsi, ut coni Sieb φησὶ
 
 B Sieb 9 ἀποστροφήν scripsi coll. p. 153, 14; t. II 434,20; III
 
 457, 12 ἀποτροφὴν Β Sieb 10 αὑτῶν scripsi αὐτῶν Β Sieb</note>
-
-<note type="footnote">12 πάντως scripsi πάντες Β Sieb 16 πράττοντες scripsi
+               <note type="footnote">12 πάντως scripsi πάντες Β Sieb 16 πράττοντες scripsi
 
 παριόντες Β Sieb | μᾶλλον inserui 18 αὑτῶν scripsi
 
 αὐτῶν Β Sieb 20 διαθήκαις scripsi διαθήκας B Sieb
 
 21 οὐ τὴν inserui | αὐτὸν scripsi αὐτὸν B Sieb</note>
-
-
-
-<pb n="398"/>
+               <pb n="398"/>
 
 τοῖς τοιούτοις δεῖ σκοπεῖν, ἀλλά φίλτρον καὶ σπουδὰς καὶ
 
@@ -894,9 +850,10 @@ B Sieb 9 ἀποστροφήν scripsi coll. p. 153, 14; t. II 434,20; III
 
 <lb n="5"/> ἐν κοινωνίᾳ πραγμάτων δοκιμαζόντων καὶ δεικνύντων.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="28"><p>ἐρώτα ὃ τὸν Ἀχιλλέα καὶ κλαίειν ἐποίει καὶ καθ-
+</p>
+         </div>
+         <div n="28" type="chapter">
+            <p>ἐρώτα ὃ τὸν Ἀχιλλέα καὶ κλαίειν ἐποίει καὶ καθ-
 
 εύδειν οὐκ εἴα. οὐ γὰρ τὸ γένος αὐτὸν εἰσῄει τοῦ
 
@@ -916,9 +873,10 @@ B Sieb 9 ἀποστροφήν scripsi coll. p. 153, 14; t. II 434,20; III
 
 <lb n="15"/> τε καὶ τὸ λυποῦν ἐλαύνων καὶ παρακαθήμενος καὶ
 
-ἰώμενος, ἀντὶ τοῦ καθεύδειν ἐκτεταμένος.</p></div>
-
-<div type="textpart" subtype="chapter" n="29"><p>ὥστε
+ἰώμενος, ἀντὶ τοῦ καθεύδειν ἐκτεταμένος.</p>
+         </div>
+         <div n="29" type="chapter">
+            <p>ὥστε
 
 εἰ καὶ τοῦ παντὸς ἐπεποιήκει κυρίους, εἰκότως ἂν
 
@@ -929,8 +887,7 @@ B Sieb 9 ἀποστροφήν scripsi coll. p. 153, 14; t. II 434,20; III
 <lb n="20"/> ἂν καταβλάψαι, χεὶρ δὲ πατρὸς ἤδη παῖδα ἀπέκτεινε
 
 <note type="footnote">6 II. ω 3 sq. 11 Dem. c. Aph. Ι ρ. 818,8</note>
-
-<note type="footnote">2 εἴ γέ τις scripsi εἴτε τὶς Β Sieb 9 τε scripsi
+               <note type="footnote">2 εἴ γέ τις scripsi εἴτε τὶς Β Sieb 9 τε scripsi
 
 γε Β Sieb | οὗτοι scripsi αὐτοὶ Β Sieb 11 ἐταμίευε
 
@@ -953,10 +910,7 @@ om B Sieb | τὸν Scripsi πρὸς B Macar Sieb 20 ἂν κατα-
 βλάψαι scripsi coll. t. II 88, 22 ἐγκαταβλάψαι B Macar Sieb
 
 ἀπέκτεινε reposui e B Macar ἀπέκτανε Sieb</note>
-
-
-
-<pb n="399"/>
+               <pb n="399"/>
 
 καὶ ἡ τοῦ παιδὸς τὸν πατέρα. μικρὸν γὰρ λέγειν
 
@@ -971,8 +925,7 @@ om B Sieb | τὸν Scripsi πρὸς B Macar Sieb 20 ἂν κατα-
 δέοντος τῷ δεῖνι δεδωκὼς διελέγχεται μᾶλλον ἢ τοῦ
 
 προσήκοντος ἀφελών.</p>
-
-<p>30. Καὶ μὴν τά γε τῆς μητρὸς οὕτως ἴσχεν.
+            <p>30. Καὶ μὴν τά γε τῆς μητρὸς οὕτως ἴσχεν.
 
 ἐκείνη τειχίζοντα τὴν οἰκίαν εὑροῦσα τὸν Ὀλύμπιον,
 
@@ -988,9 +941,10 @@ om B Sieb | τὸν Scripsi πρὸς B Macar Sieb 20 ἂν κατα-
 
 γενέσθαι τὸν νεώτερον, ὡς ταῖς τιμαῖς αὀτοῦ &lt;μείζω&gt; <lb n="15"/>
 
-ποιῆσαι τἀκείνου.</p></div>
-
-<div type="textpart" subtype="chapter" n="31"><p>ὁ μὲν οὖν Ὀλύμπιος παῖδα αὑτοῦ
+ποιῆσαι τἀκείνου.</p>
+         </div>
+         <div n="31" type="chapter">
+            <p>ὁ μὲν οὖν Ὀλύμπιος παῖδα αὑτοῦ
 
 νομίζων τὸν ἀδελφὸν νουθεσίαις τε ποιεῖν ἐπειρᾶτο βελ-
 
@@ -1009,8 +963,7 @@ om B Sieb | τὸν Scripsi πρὸς B Macar Sieb 20 ἂν κατα-
 <note type="footnote">1 cf. p. 65, 4; 186, 9; t. III 282, 10; 483, 20 9 cf. ep.
 
 574 | cf. ep. 96</note>
-
-<note type="footnote">2 υἱέων scripsi ὑέων Β Sieb 5 εἰσάγει scripsi εἰσάγων
+               <note type="footnote">2 υἱέων scripsi ὑέων Β Sieb 5 εἰσάγει scripsi εἰσάγων
 
 Β Sieb 10 Μίκκαλον scripsi hic et in sequentibus coll. epp.
 
@@ -1023,10 +976,7 @@ B Sieb 15 μείζω inserui 16 οὑν inserui e Β om Sieb | αὑτοῦ
 scripsi αὐτοῦ Β Sieb 19 ὁ δ’ scripsi ὅδ' B Sieb 21 αὑ-
 
 τὸν reposui e Β αὐτὸν Sieb 23 ὅ τι scripsi ὅτι Β Sieb</note>
-
-
-
-<pb n="400"/>
+               <pb n="400"/>
 
 τῶν εἰς λύπην φερόντων γυναῖκάς τε ἀπείρους Ἀφρο-
 
@@ -1044,9 +994,10 @@ scripsi αὐτοῦ Β Sieb 19 ὁ δ’ scripsi ὅδ' B Sieb 21 αὑ-
 
 ἡμέραν ὄψεσθαι τήν τε ἐκείνου τελευτὴν καὶ ταῦτα.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="32"><p>καὶ μείζω γε τὴν ὕβριν ἐποίει τὸ μηδέ ἐν παρα-
+</p>
+         </div>
+         <div n="32" type="chapter">
+            <p>καὶ μείζω γε τὴν ὕβριν ἐποίει τὸ μηδέ ἐν παρα-
 
 <lb n="10"/> βύστῳ γίνεσθαι τὰς ἀπειλάς, ἀλλ’ ἐν πολλῷ τῷ φωτὶ
 
@@ -1062,9 +1013,10 @@ scripsi αὐτοῦ Β Sieb 19 ὁ δ’ scripsi ὅδ' B Sieb 21 αὑ-
 
 πολλούς δὲ τῶν παρόντων οὐ φέροντας τοὺς μέν ἀπο-
 
-πηδᾶν, τοὺς δὲ μένοντας ἀμύνεσθαι.</p></div>
-
-<div type="textpart" subtype="chapter" n="33"><p>ἆρά γε
+πηδᾶν, τοὺς δὲ μένοντας ἀμύνεσθαι.</p>
+         </div>
+         <div n="33" type="chapter">
+            <p>ἆρά γε
 
 στεφάνων ἄξια ταῦτ’ εἶναι δοκεῖ; ἐν οἷς Μίκκαλος
 
@@ -1078,15 +1030,15 @@ scripsi αὐτοῦ Β Sieb 19 ὁ δ’ scripsi ὅδ' B Sieb 21 αὑ-
 
 ραν. ἔπαυε δὲ αὐτὸν οὐδὲ τὸ λοῦσθαι πολὺ τῆς ἀπὸ
 
-τοῦ τοιαῦτα λέγειν ἡδονῆς λειπόμενον.</p></div>
-
-<div type="textpart" subtype="chapter" n="34"><p>οὐ μᾶλλον
+τοῦ τοιαῦτα λέγειν ἡδονῆς λειπόμενον.</p>
+         </div>
+         <div n="34" type="chapter">
+            <p>οὐ μᾶλλον
 
 οὖν Ὀλύμπιος ἐποίει κακῶς τὸν Μίκκαλον ἢ Μίκκαλος
 
 <note type="footnote">9 cf. t. 9, 1</note>
-
-<note type="footnote">6 &lt;ἐπὶ&gt; a παραμυθίᾳ? 8 τελευτὴν καὶ ταῦτα καὶ
+               <note type="footnote">6 &lt;ἐπὶ&gt; a παραμυθίᾳ? 8 τελευτὴν καὶ ταῦτα καὶ
 
 τελευτὴν καὶ ταῦτα Β Sieb 9 τὸ scripsi τῷ Β Sieb | μηδὲ
 
@@ -1097,10 +1049,7 @@ scripsi μὴ δὲ Β μὴ δὴ Sieb 17 γε scripsi τε Β Sieb
 Β Sieb 23 λοῦσθαι reposui e Β λοῦεσθαι λαβά-
 
 μενον coni Sieb perperam</note>
-
-
-
-<pb n="401"/>
+               <pb n="401"/>
 
 Μίκκαλον, ὃς εἶναι πρὸς ἑαυτὸν ἥμερον ἐκεῖνον ἐκώλυε
 
@@ -1116,9 +1065,10 @@ scripsi μὴ δὲ Β μὴ δὴ Sieb 17 γε scripsi τε Β Sieb
 
 ἤρεσκον, οὐκ ἂν ἐκάοντο. καὶ Μίκκαλος ἐπιθυμήσας
 
-κακῶν ἣν ἐν οἷς ἐβούλετο.</p></div>
-
-<div type="textpart" subtype="chapter" n="35"><p>ἀλλ’ οἴεταί τις Ὀλύμ-
+κακῶν ἣν ἐν οἷς ἐβούλετο.</p>
+         </div>
+         <div n="35" type="chapter">
+            <p>ἀλλ’ οἴεταί τις Ὀλύμ-
 
 πιον τὸν πολλοῖς εὐδαιμονίας αἴτιον οὐκ οὖσιν ἐν
 
@@ -1135,8 +1085,7 @@ scripsi μὴ δὲ Β μὴ δὴ Sieb 17 γε scripsi τε Β Sieb
 γίνεται δὲ ὁ βέλτιστος κρείττων τῆς προσδοκίας ἀμεί- <lb n="15"/>
 
 νῶν αὐτοῦ τοῦ γεγεννηκότος φανείς.</p>
-
-<p>36. Εἰσὶ τοίνυν οἳ προσιόντες ἐμοὶ σχῆμα προσ-
+            <p>36. Εἰσὶ τοίνυν οἳ προσιόντες ἐμοὶ σχῆμα προσ-
 
 θέντες αὑτοῖς τῶν ὑπὲρ ἡμῶν ἀχθομένων τοιαῦτα εἰῶ
 
@@ -1153,10 +1102,8 @@ scripsi μὴ δὲ Β μὴ δὴ Sieb 17 γε scripsi τε Β Sieb
 σειε δέον ἑτέρους μὲν ποιῆσαι τὰ χαλεπώτερα,
 
 σοὶ δ’ εἰ καὶ μηδὲν ἄλλο, τήν γε ἀπὸ τῆς δευ- <lb n="25"/>
-
-<note type="footnote">22 Thuc. IV 87, 4 | Lib. t. Ι 201, 1; ep. 971</note>
-
-<note type="footnote">2 ῥήμασι scripsi ῥήμασιν Β Sieb 4 num Γίγαντας post
+               <note type="footnote">22 Thuc. IV 87, 4 | Lib. t. Ι 201, 1; ep. 971</note>
+               <note type="footnote">2 ῥήμασι scripsi ῥήμασιν Β Sieb 4 num Γίγαντας post
 
 τούς inserendum coll. t. Ι 129, 4? 5 αὐτῶν scripsi τῶν Β
 
@@ -1165,14 +1112,11 @@ Sieb 19 τινες inserui e Β om Sieb ὅ τι scripsi ότι
 Β Sieb | εἰς inserui e Β om Sieb 23 ὧν scripsi auctore
 
 Sieversio p. 282, 1 ᾧ B Sieb</note>
-
-
-
-<pb n="402"/>
-
-<note type="marginal">Sieb. 88</note> τέρας | τάξεως εἰρήνην παρασχεῖν;</p></div>
-
-<div type="textpart" subtype="chapter" n="37"><p>ἐμοὶ
+               <pb n="402"/>
+               <note type="marginal">Sieb. 88</note> τέρας | τάξεως εἰρήνην παρασχεῖν;</p>
+         </div>
+         <div n="37" type="chapter">
+            <p>ἐμοὶ
 
 δὲ ἅ τε παρὰ ζῶντος ὑπῆρξεν Ὀλυμπίου μέγιστα κέ-
 
@@ -1191,8 +1135,7 @@ Sieversio p. 282, 1 ᾧ B Sieb</note>
 εἰς ἐμὰς πέμψαι χεῖρας αἰτίαν λέγων, ὅτι τῷ φιλτάτῳ
 
 <lb n="10"/> ἔστι πεπεῖσθαι ἐμέ μηδέν αὐτὸν ζητεῖν.</p>
-
-<p>38. Ἀλλ’ ὅμως οὕτως ἔχοντος τοῦ πράγματος ἤλ-
+            <p>38. Ἀλλ’ ὅμως οὕτως ἔχοντος τοῦ πράγματος ἤλ-
 
 πισάν τινες ἔχθραν ἐμποιήσειν πρὸς τὸν οἰχόμενον
 
@@ -1216,9 +1159,10 @@ Sieversio p. 282, 1 ᾧ B Sieb</note>
 
 νους ἔχουσι συνουσίας καὶ ἀκούω μέν οὐδέν, λέγω δέ.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="39"><p>οἶ δέ οὐ δυνηθέντες ὅστις ἐγὼ τὸν τρόπον μαθεῖν
+</p>
+         </div>
+         <div n="39" type="chapter">
+            <p>οἶ δέ οὐ δυνηθέντες ὅστις ἐγὼ τὸν τρόπον μαθεῖν
 
 καὶ ταῦτα ἐν τοσούτοις ἔτεσιν ἦλθον ἐκπολεμώσοντες
 
@@ -1237,10 +1181,7 @@ Sieb | αὑτὸν scripsi αὐτὸν Β Sieb ἀποστεροῦντι scri
 καὶ στεροῦντι Β Sieb 16 μείζονα coni Sieb 18 φθόνου?
 
 cf. t. Ι p. 480, 1 1 26 αὐτῶν scripsi αὐτῶν B Sieb</note>
-
-
-
-<pb n="403"/>
+               <pb n="403"/>
 
 ταῖς νοσούσαις, ταῖς δούλαις ἀργυρίου. ἐγὼ δὲ εἴ μοί
 
@@ -1255,8 +1196,7 @@ cf. t. Ι p. 480, 1 1 26 αὐτῶν scripsi αὐτῶν B Sieb</note>
 τῷ λοιπῷ μετ’ ἐκείνου βιωσόμενος ἢ τῷ παντὶ τοῦ σὺν <lb n="6"/>
 
 ἐκείνῳ στερόμενος.</p>
-
-<p>40. Παύσασθε δὴ μετὰ τοιούτων μοι προσιόντες
+            <p>40. Παύσασθε δὴ μετὰ τοιούτων μοι προσιόντες
 
 ῥημάτων καὶ πειρώμενοι κινῆσαι τὰ τούτῳ οὐ πεισό-
 
@@ -1276,9 +1216,10 @@ cf. t. Ι p. 480, 1 1 26 αὐτῶν scripsi αὐτῶν B Sieb</note>
 
 διώκοντες, ἀλλ' οὐ φεύγοντες. οὕτως ἢ χρηστὸς ἐκεῖ-
 
-νος μεθ’ ὑμῶν ἤ ὑμεῖς μετ’ ἐκείνου κακοί.</p></div>
-
-<div type="textpart" subtype="chapter" n="41"><p>εἶτ’
+νος μεθ’ ὑμῶν ἤ ὑμεῖς μετ’ ἐκείνου κακοί.</p>
+         </div>
+         <div n="41" type="chapter">
+            <p>εἶτ’
 
 οἴεσθε ταῦτα ποιοῦντες ἀσφαλῶς ἀσελγαίνειν ὡς οὔθ’
 
@@ -1292,9 +1233,10 @@ cf. t. Ι p. 480, 1 1 26 αὐτῶν scripsi αὐτῶν B Sieb</note>
 
 αὐτοῖς παρ’ αὐτοῦ τοῦ τεθνάναι μείζων καὶ μηνίσαντες
 
-ταχέως ἠμύναντο.</p></div>
-
-<div type="textpart" subtype="chapter" n="42"><p>πάνυ τοίνυν πιστεύω τοῖς μὲν <lb n="25"/>
+ταχέως ἠμύναντο.</p>
+         </div>
+         <div n="42" type="chapter">
+            <p>πάνυ τοίνυν πιστεύω τοῖς μὲν <lb n="25"/>
 
 ἔχουσι παῖδας ἀπολεῖσθαι τοὺς ὄντας, οἷς δὲ οὐκ εἰσίν,
 
@@ -1309,10 +1251,7 @@ cf. t. Ι p. 480, 1 1 26 αὐτῶν scripsi αὐτῶν B Sieb</note>
 scripsi τῇ δέ B Sieb 23 αὑτοῖς scripsi αὐτοῖς B Sieb
 
 27 δὲ scripsi τε Β Sieb | τούτων reposui e Β αὐτῶν Sieb</note>
-
-
-
-<pb n="404"/>
+               <pb n="404"/>
 
 τῶν γεγαμηκότων προσέξειν καὶ θυγατέρας πρὸ γάμων
 
@@ -1329,19 +1268,9 @@ scripsi τῇ δέ B Sieb 23 αὑτοῖς scripsi αὐτοῖς B Sieb
 ταῦτα παιδεύσει τοὺς ἄλλους μὴ καταθεῖν τοὺς τετε-
 
 λευτηκότας ὡς οὐδὲν ὄντας ἔτι.</p>
-
-<note type="footnote">7 Plat. Theaet. p. 171 D</note>
-
-<note type="footnote">2 υἱεῖς scripsi ὑμῖν Β Sieb</note>
-
-
-
-</div>
-
-</div>
-
-
-
-</body>
-  </text>
+            <note type="footnote">7 Plat. Theaet. p. 171 D</note>
+            <note type="footnote">2 υἱεῖς scripsi ὑμῖν Β Sieb</note>
+         </div>
+      </body>
+   </text>
 </TEI>

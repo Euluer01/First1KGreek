@@ -1,100 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">De flatibus</title>
-                <author>Hippocrates</author>
-                <editor>Émile Littré</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De flatibus</title>
+            <author>Hippocrates</author>
+            <editor>Émile Littré</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0627.tlg021.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0627.tlg021.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="fre">Oeuvres complètes d'Hippocrate</title>
-                        <author>Hippocrates</author>
-                        <editor>Émile Littré</editor>
-                        <imprint>
-                            <publisher>Baillière</publisher>
-                            <pubPlace>Paris</pubPlace>
-                            <biblScope unit="volume">6</biblScope>
-                            <biblScope unit="pp" from="90" to="114">90-114</biblScope>
-                            <date>1849</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/ucm.5321352149?urlappend=%3Bseq=98">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0627.tlg021.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="fre">Oeuvres complètes d'Hippocrate</title>
+                  <author>Hippocrates</author>
+                  <editor>Émile Littré</editor>
+                  <imprint>
+                     <publisher>Baillière</publisher>
+                     <pubPlace>Paris</pubPlace>
+                     <biblScope unit="volume">6</biblScope>
+                     <biblScope unit="pp" from="90" to="114">90-114</biblScope>
+                     <date>1849</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/ucm.5321352149?urlappend=%3Bseq=98">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-                <language ident="lat">Latin</language>
-                <language ident="fre">French</language>            
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0627.tlg021.1st1K-grc1">
-                <pb n="90"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΠΕΡΙ ΦΥΣΩΝ.</head>
-                    <p>1. Εἰσί τινες τῶν τεχνέων, αἳ τοῖσι μὲν κεκτημένοισίν εἰσιν <lb/>ἐπίπονοι,
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+            <language ident="fre">French</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0627.tlg021.1st1K-grc1">
+         <pb n="90"/>
+         <div n="1" type="chapter">
+            <head>ΠΕΡΙ ΦΥΣΩΝ.</head>
+            <p>1. Εἰσί τινες τῶν τεχνέων, αἳ τοῖσι μὲν κεκτημένοισίν εἰσιν <lb/>ἐπίπονοι,
                         τοῖσι δὲ χρεομένοισιν ὀνηισταὶ, καὶ τοῖσι μὲν ἰδιώτῃσι <lb/>ξυνὸν ἀγαθὸν,
                         τοῖσι δὲ μεταχειριζομένοισι σφᾶς λυπηραί. Τῶν δὴ <lb/>τοιουτέων ἐστὶ
                         τεχνέων, καὶ ἣν οἱ Ἕλληνες καλέουσιν ἰητρικήν· ὁ μὲν <lb/>γὰρ ἰητρὸς ὁρῇ τε
@@ -121,16 +129,16 @@
                         ἐλλειπόντων· <lb/>ὁ δὲ τοῦτ’ ἄριστα ποιέων ἄριστος ἰητρός· ὁ δὲ τουτέου
                         <lb/>πλεῖστον ἀπηλλαγμένος πλεῖστον ἀπήλλακται καὶ τῆς τέχνης. Τὰ <lb/>μὲν
                         οὖν ἐν παρέργῳ τοῦ λόγου τοῦ μέλλοντος εἴρηται. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>2. Τῶν δὲ δὴ νούσων ἁπασέων ὁ μὲν τρόπος ὁ αὐτὸς, ὁ δὲ τόπος <lb/>διαφέρει·
+         </div>
+         <div n="2" type="chapter">
+            <p>2. Τῶν δὲ δὴ νούσων ἁπασέων ὁ μὲν τρόπος ὁ αὐτὸς, ὁ δὲ τόπος <lb/>διαφέρει·
                         δοκέει μὲν οὖν τὰ νουσήματα οὐδὲν ἀλλήλοισιν ἐοικέναι <lb/>διὰ τὴν
                         ἀλλοιότητα καὶ ἀνομοιότητα τῶν τόπων. Ἔστι δὲ μία ἁπασέων <lb/>νούσων καὶ
                         ἰδέη καὶ αἰτίη ἡ αὐτή· ταύτην δὲ, ἥ τις ἐστὶ, διὰ <lb/>τοῦ μέλλοντος λόγου
                         φράσαι πειρήσομαι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>3. Τὰ γὰρ σώματα τῶν τε ἀνθρώπων καὶ τῶν ἄλλων ζώων ὑπὸ <lb/>τρισσέων τροφῶν
+         </div>
+         <div n="3" type="chapter">
+            <p>3. Τὰ γὰρ σώματα τῶν τε ἀνθρώπων καὶ τῶν ἄλλων ζώων ὑπὸ <lb/>τρισσέων τροφῶν
                         τρέφεται· ἔστι δὲ τῇσι τροφῇσι ταύτῃσι ταῦτα τὰ <pb n="94"/> οὐνόματα, σῖτα,
                         ποτὰ, πνεύματα. Πνεύματα δὲ τὰ μὲν ἐν τοῖσι <lb/>σώμασι φῦσαι καλέονται, τὰ
                         δὲ ἔξω τῶν σωμάτων ἀήρ. Οὗτος δὲ <lb/>μέγιστος ἐν τοῖσι πᾶσι τῶν πάντων
@@ -152,11 +160,10 @@
                         δὲ πῶς ἂν ἄλλως, ἀλλ’ ἢ διὰ <lb/>τοῦ ὕδατος, κἀκ τοῦ ὕδατος ἕλκοντα τὸν
                         ἠέρα; καὶ μὴν ἥ τε γῆ <lb/>τουτέου βάθρον, οὗτός τε τῆς γῆς ὄχημα, κενεόν τε
                         οὐδέν ἐστιν <lb/>τούτου. </p>
-                </div>
-                <pb n="96"/>
-
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>4. Διότι μὲν οὖν ἐν τοῖσιν ἄλλοισιν ὁ ἀὴρ ἔῤῥωται, εἴρηται· τοῖσι <lb/>δ’ αὖ
+         </div>
+         <pb n="96"/>
+         <div n="4" type="chapter">
+            <p>4. Διότι μὲν οὖν ἐν τοῖσιν ἄλλοισιν ὁ ἀὴρ ἔῤῥωται, εἴρηται· τοῖσι <lb/>δ’ αὖ
                         θνητοῖσιν οὗτος αἴτιος τοῦ τε βίου, καὶ τῶν νούσων τοῖσι νοσέουσι·
                         <lb/>τοσαύτη δὲ τυγχάνει πᾶσιν ἡ χρείη τοῖσι σώμασι τοῦ πνεύματος
                         <lb/>ἐοῦσα, ὥστε τῶν μὲν ἄλλων ἁπάντων ἀποσχόμενος ὥνθρωπος <lb/>καὶ σιτίων
@@ -167,18 +174,18 @@
                         πρήσσοντες, ὁ γὰρ βίος μεταβολέων πλέως <lb/>ἐστί· τοῦτο δὲ μοῦνον ἀεὶ
                         διατελέουσιν ἅπαντα τὰ θνητὰ ζῶα πρήσσοντα, <lb/>τοτὲ μὲν ἐμπνέοντα, τοτὲ δὲ
                         ἐκπνέοντα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>5. Ὅτι μὲν οὖν μεγάλη κοινωνίη ἅπασι τοῖσι ζώοισι τοῦ ἠέρος <lb/>ἐστὶν,
+         </div>
+         <div n="5" type="chapter">
+            <p>5. Ὅτι μὲν οὖν μεγάλη κοινωνίη ἅπασι τοῖσι ζώοισι τοῦ ἠέρος <lb/>ἐστὶν,
                         εἴρηται· μετὰ τοῦτο τοίνυν εὐθέως ῥητέον, ὅτι οὐκ ἄλλοθέν <lb/>ποθεν εἰκός
                         ἐστι γίνεσθαι τὰς ἀῤῥωστίας μάλιστα, ἢ ἐντεῦθεν, ὅταν <lb/>τοῦτο ἢ πλέον, ἢ
                         ἔλασσον, ἢ καὶ ἀθροώτερον, ἢ μεμιασμένον <lb/>νοσεροῖσι μιάσμασιν, ἐς τὸ
                         σῶμα ἐσέλθῃ. Περὶ μὲν οὖν ὅλου τοῦ <lb/>πρήγματος ἀρκέει μοι ταῦτα· μετὰ δὲ
                         ταῦτα πρὸς αὐτὰ τὰ ἔργα <lb/>τῷ λόγῳ πορευθεὶς, ἐπιδείξω τὰ νοσήματα τούτου
                         ἀπόγονά τε καὶ <lb/>ἔκγονα πάντα ἐόντα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>6. Πρῶτον δὲ ἀπὸ τοῦ κοινοτάτου νοσήματος ἄρξομαι, πυρετοῦ· <lb/>τοῦτο γὰρ τὸ
+         </div>
+         <div n="6" type="chapter">
+            <p>6. Πρῶτον δὲ ἀπὸ τοῦ κοινοτάτου νοσήματος ἄρξομαι, πυρετοῦ· <lb/>τοῦτο γὰρ τὸ
                         νόσημα πᾶσιν ἐφεδρεύει τοῖσιν ἄλλοισιν νουσήμασι, <lb/>μάλιστα δὲ φλεγμονῇ·
                         δηλοῖ δὲ τὰ γινόμενα προσκόμματα· ἅμα <lb/>γὰρ τῇ φλεγμονῇ εὐθὺς βουβὼν καὶ
                         πυρετὸς ἕπεται. Ἔστι δὲ δισσὰ <lb/>εἴδεα πυρετῶν, ὡς ταύτῃ διελθεῖν· ὁ μὲν
@@ -195,9 +202,9 @@
                         μιάσμασιν, ἃ τῇ ἀνθρωπίνῃ φύσει πολέμιά ἐστιν, ἄνθρωποι <lb/>τότε νοσέουσιν·
                         ὅταν δὲ ἑτέρῳ τινὶ ἔθνει ζώων ἀνάρμοστος ὁ ἠὴρ <lb/>γένηται, κεῖνα τότε
                         νοσέουσιν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>7. Αἳ μὲν οὖν δημόσιαί εἰσι τῶν νούσων, εἴρηται, καὶ ὅτε καὶ <lb/>ὅκως, καὶ
+         </div>
+         <div n="7" type="chapter">
+            <p>7. Αἳ μὲν οὖν δημόσιαί εἰσι τῶν νούσων, εἴρηται, καὶ ὅτε καὶ <lb/>ὅκως, καὶ
                         οἷσι, καὶ ἀπὸ τεῦ γίνονται· τὸν δὲ διὰ πονηρὴν δίαιταν <lb/>γινόμενον
                         πυρετὸν διέξειμί σοι. Πονηρὴ δέ ἐστιν ἡ τοιήδε δίαιτα, <lb/>τοῦτο μὲν ὅταν
                         τις πλέονας τροφὰς ἢ ὑγρὰς ἢ ξηρὰς διδῷ τῷ σώματι <lb/>ἢ τὸ σῶμα δύναται
@@ -216,9 +223,9 @@
                         τουτέων δὲ τῶν τόπων ψυχθέντων, ὅκου αἱ πηγαὶ καὶ αἱ ῥίζαι <lb/>τοῦ αἵματός
                         εἰσι, διὰ παντὸς τοῦ σώματος ἡ φρίκη διῆλθεν· ἅπαντος <lb/>δὲ τοῦ αἵματος
                         ψυχθέντος, ἅπαν τὸ σῶμα φρίσσει. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="8">
-                    <p>8. Διὰ τοῦτο μὲν οὖν πρῶτον αἱ φρῖκαι γίνονται πρὸ τῶν πυρετῶν· <lb/>ὅκως δ’
+         </div>
+         <div n="8" type="chapter">
+            <p>8. Διὰ τοῦτο μὲν οὖν πρῶτον αἱ φρῖκαι γίνονται πρὸ τῶν πυρετῶν· <lb/>ὅκως δ’
                         ἂν ὁρμήσωσιν αἱ φῦσαι πλήθει καὶ ψυχρότητι, τοιοῦτον <lb/>γίνεται καὶ τὸ
                         ῥῖγος, ἀπὸ μὲν πλεόνων καὶ ψυχροτέρων ἰσχυρότερον, <lb/>ἀπὸ δὲ ἐλασσόνων καὶ
                         ἧσσόν τι ψυχρῶν ἀνισχυρότερον. Ἐν <lb/>δὲ τῇσι φρίκῃσι καὶ οἱ τρόμοι τοῦ
@@ -252,9 +259,9 @@
                         στενῆς ὁδοῦ θερμὸν ἐὸν οὐ δύναται περαιοῦσθαι <lb/>ταχέως, πολλὰ γὰρ ἐμποδών
                         ἐστιν αὐτῷ κωλύματα καὶ ἐμφράγματα· <lb/>διὸ δὴ καὶ οἱ σφυγμοὶ γίνονται ἀμφὶ
                         τοὺς κροτάφους. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="9">
-                    <p>9. Οἱ μὲν οὖν πυρετοὶ διὰ τοῦτο γίνονται καὶ τὰ μετὰ τῶν πυρετῶν
+         </div>
+         <div n="9" type="chapter">
+            <p>9. Οἱ μὲν οὖν πυρετοὶ διὰ τοῦτο γίνονται καὶ τὰ μετὰ τῶν πυρετῶν
                         <lb/>ἀλγήματα καὶ νοσήματα· τῶν δὲ ἄλλων ἀῤῥωστημάτων, ὁκόσοι <lb/>μὲν ἂν
                         εἰλεοὶ εἶεν, ἢ ἀνειλήματα, ἢ ἕτερα ἀποστηρίγματα, φύσας <lb/>εἶναι αἴτια
                         ἅπασιν ἡγέομαι φανερὸν εἶναι· πάντων γὰρ τῶν τοιουτέων <lb/>αἰτίη τοῦ
@@ -265,9 +272,9 @@
                         πειρέονται μαλθάσσειν τὸν <lb/>πόνον· ἀραιούμενον γὰρ ὑπὸ τῆς θερμασίης τοῦ
                         πυριήματος διέρχεται <lb/>τὸ πνεῦμα διὰ τοῦ σώματος, ὥστε παῦλάν τινα
                         γενέσθαι τῶν <lb/>πόνων. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="10">
-                    <p>10. Ἴσως δ’ ἄν τις εἴποι· πῶς οὖν τὰ ῥεύματα γίνεται διὰ τὰς <lb/>φύσας; ἢ
+         </div>
+         <div n="10" type="chapter">
+            <p>10. Ἴσως δ’ ἄν τις εἴποι· πῶς οὖν τὰ ῥεύματα γίνεται διὰ τὰς <lb/>φύσας; ἢ
                         τίνα τρόπον τῶν αἱμοῤῥαγιῶν τῶν περὶ τὰ στέρνα τοῦτο <lb/>αἴτιόν ἐστιν;
                         οἶμαι δὲ καὶ ταῦτα δηλώσειν διὰ τωὐτὸ γινόμενα. <lb/>Ὅταν αἱ περὶ τὴν
                         κεφαλὴν φλέβες γεμισθῶσιν ἠέρος, πρῶτον μὲν ἡ <lb/>κεφαλὴ βαρύνεται τῶν
@@ -300,14 +307,14 @@
                         ᾑμοῤῥάγησαν, καὶ τούτοισιν οἱ πόνοι <lb/>πνεύματος ἐνέπλησαν τὰς φλέβας,
                         ἀνάγκη γὰρ τὸν πονέοντα τόπον <lb/>κατέχειν τὸ πνεῦμα, τὰ δὲ ἄλλα τοῖσιν
                         εἰρημένοισιν ὅμοια <lb/>γίνεται. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="11">
-                    <p>11. Τὰ δὲ ῥήγματα πάντα γίνεται διὰ τάδε· ὁκόταν ὑπὸ βίης <lb/>διαστέωσιν αἱ
+         </div>
+         <div n="11" type="chapter">
+            <p>11. Τὰ δὲ ῥήγματα πάντα γίνεται διὰ τάδε· ὁκόταν ὑπὸ βίης <lb/>διαστέωσιν αἱ
                         σάρκες ἀπ’ ἀλλήλων, ἐς δὲ τὴν διάστασιν ὑποδράμῃ <lb/>πνεῦμα, τοῦτο τὸν
                         πόνον παρέχει. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="12">
-                    <p>12. Ἢν δὲ διὰ τῶν σαρκῶν αἱ φῦσαι διεξιοῦσαι τοὺς πόρους τοῦ <lb/>σώματος
+         </div>
+         <div n="12" type="chapter">
+            <p>12. Ἢν δὲ διὰ τῶν σαρκῶν αἱ φῦσαι διεξιοῦσαι τοὺς πόρους τοῦ <lb/>σώματος
                         ἀραιοὺς ποιήσωσιν, ἕπεται δὲ τῇσι φύσῃσιν ὑγρασίη, ἧς <lb/>τὴν ὁδὸν ὁ ἀὴρ
                         ἀπειργάσατο· διαβρόχου δὲ γενομένου τοῦ σώματος, <lb/>ὑπεκτήκονται μὲν αἱ
                         σάρκες, οἰδήματα δὲ ἐς τὰς κνήμας καταβαίνει· <lb/>καὶ λέγεται τὸ τοιοῦτον
@@ -324,18 +331,18 @@
                         <lb/>ποτόν γε τοσοῦτον ἐσῆλθεν ἐς τὸ σῶμα· καὶ μὴν οὐδὲ σάρκες ὑπάρχουσιν
                         <lb/>ἔτι αἱ τηξόμεναι· λείπεται γὰρ ὀστέα καὶ νεῦρα καὶ ἶνες, ἀφ’ <lb/>ὧν
                         οὐδενὸς οὐδεμίη δύναιτ’ ἂν αὔξησις ὕδατος γεγενῆσθαι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="13">
-                    <p>13. Τὸ μὲν οὖν αἴτιον τοῦ ὕδρωπος ἤδη εἴρηται· αἱ δὲ ἀποπληξίαι <lb/>γίνονται
+         </div>
+         <div n="13" type="chapter">
+            <p>13. Τὸ μὲν οὖν αἴτιον τοῦ ὕδρωπος ἤδη εἴρηται· αἱ δὲ ἀποπληξίαι <lb/>γίνονται
                         καὶ αὐταὶ διὰ τὰς φύσας· ὅταν γὰρ αἱ φῦσαι ψυχραὶ οὖσαι <lb/>καὶ πολλαὶ
                         διαδύνωσι καὶ ἐμφυσήσωσι τὰς σάρκας, ἀναίσθητα <lb/>ταῦτα γίνεται τοῦ
                         σώματος· ἢν μὲν οὖν πολλαὶ φῦσαι ἐν ὅλῳ τῷ <lb/>σώματι διατρέχωσιν, ὅλος
                         ὥνθρωπος ἀπόπληκτος γίνεται· ἢν δὲ <lb/>ἐν μέρει τινὶ, τοῦτο τὸ μέρος· καὶ
                         ἢν μὲν ἀπέλθωσιν αὗται, <lb/>παύεται ἡ νοῦσος· ἢν δὲ παραμείνωσι, παραμένει·
                         ὅτι δὲ ταῦτα οὕτως <lb/>ἔχει, χασμῶνται συνεχῶς. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="14">
-                    <p>14. Δοκέει δέ μοι καὶ τὴν ἱερὴν καλεομένην νοῦσον τοῦτο εἶναι <lb/>τὸ
+         </div>
+         <div n="14" type="chapter">
+            <p>14. Δοκέει δέ μοι καὶ τὴν ἱερὴν καλεομένην νοῦσον τοῦτο εἶναι <lb/>τὸ
                         παρεχόμενον· οἷσι δὲ λόγοισιν ἐμαυτὸν ἔπεισα, τούτοισιν αὐτέοισι <lb/>καὶ
                         τοὺς ἀκούοντας πείσειν πειράσομαι. Ἡγεῦμαι δὲ ἔμπροσθεν, <lb/>μηδὲν εἶναι
                         μᾶλλον τῶν ἐν τῷ σώματι ξυμβαλλόμενον ἐς φρόνησιν, <lb/>ἢ τὸ αἷμα· τοῦτο δὲ
@@ -378,9 +385,9 @@
                         <lb/>αἱ μὲν συνεξελθοῦσαι μετὰ τοῦ πνεύματος, αἱ δὲ μετὰ τοῦ <lb/>φλέγματος·
                         ἀποζέσαντος δὲ τοῦ ἀφροῦ, καὶ καταστάντος τοῦ αἵματος, <lb/>καὶ γαλήνης ἐν
                         τῷ σώματι γενομένης, πέπαυται τὸ νόσημα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="15">
-                    <p>15. Φαίνονται οὖν αἱ φῦσαι διὰ πάντων τῶν νοσημάτων μάλιστα
+         </div>
+         <div n="15" type="chapter">
+            <p>15. Φαίνονται οὖν αἱ φῦσαι διὰ πάντων τῶν νοσημάτων μάλιστα
                         <lb/>πολυπραγμονοῦσαι· τὰ δ’ ἄλλα πάντα συναίτια καὶ μεταίτια, τὸ δὲ
                         <lb/>αἴτιον τῶν νούσων ἐὸν τοῦτο ἐπιδέδεικταί μοι. Ὑπεσχόμην δὲ τὸ αἴτιον
                         <lb/>τῶν νουσημάτων φράσαι, ἐπέδειξα δὲ τὸ πνεῦμα καὶ ἐν τοῖσιν ἄλλοισι
@@ -388,8 +395,7 @@
                         <lb/>ἐπὶ τὰ γνώριμα τῶν ἀῤῥωστημάτων, ἐν οἷσιν ἀληθὴς ἡ ὑπόθεσις <lb/>ἐφάνη·
                         εἰ γὰρ περὶ πάντων τῶν ἀῤῥωστημάτων λέγοιμι, μακρότερος <lb/>μὲν ὁ λόγος ἂν
                         γένοιτο, ἀτρεκέστερος δὲ οὐδαμῶς, οὐδὲ πιστότερος. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

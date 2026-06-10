@@ -1,98 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-	<teiHeader xml:lang="eng">    
-		<fileDesc>
-			<titleStmt><title xml:lang="lat">De uteri dissectione</title>
-				<author>Galen</author>
-				<editor>Karl Gottlob Kühn</editor>
-				<funder>Andrew W. Mellon Foundation</funder>
-				<respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-				<authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De uteri dissectione</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
 					Foundation</authority>
-				<publisher>University of Leipzig</publisher>
-				<pubPlace>Germany</pubPlace>
-				<idno type="filename">tlg0057.tlg016.1st1K-grc1.xml</idno>
-				<availability>
-					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg016.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
 						Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-				</availability>
-				<date>2016</date>
-			</publicationStmt>
-			<sourceDesc>
-				<biblStruct>
-					<monogr>
-						<title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-						<author>Galen</author>
-						<editor>Karl Gottlob Kühn</editor>
-						<imprint>
-							<publisher>Knobloch</publisher>
-							<pubPlace>Lipsiae</pubPlace>
-							<biblScope unit="vol">2</biblScope>
-							<biblScope unit="pp" from="887" to="908">887-908</biblScope>
-							<date>1821</date>
-						</imprint>
-					</monogr>
-					<ref target="https://archive.org/stream/hapantaoperaomni02galeuoft#page/886/mode/2up">HathiTrust</ref>
-				</biblStruct>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg016.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Lipsiae</pubPlace>
+                     <biblScope unit="vol">2</biblScope>
+                     <biblScope unit="pp" from="887" to="908">887-908</biblScope>
+                     <date>1821</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://archive.org/stream/hapantaoperaomni02galeuoft#page/886/mode/2up">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
 				Architecture.</p>
-			  <refsDecl n="CTS">
-				<cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-			</refsDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="grc">Greek</language>
-				<language ident="eng">English</language>
-				<language ident="lat">Latin</language>
-			</langUsage>
-		</profileDesc>
-	</teiHeader>
-	<text>
-		<body>
-
-			<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg016.1st1K-grc1">
-				<pb n="887"/>
-
-				<div type="textpart" subtype="chapter" n="1">
-					<head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΜΗΤΡΑΣ ΑΝΑΤΟΜΗΣ <lb/>ΒΙΒΛΙΟΝ.</head>
-					<p>Περὶ μήτρας ὁ λόγος θέσεώς τε καὶ μεγέθους, <lb/>καὶ σχήματος αὐτῆς, ὅθεν τε ἤρτηται,
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="eng">English</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg016.1st1K-grc1">
+         <pb n="887"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΜΗΤΡΑΣ ΑΝΑΤΟΜΗΣ <lb/>ΒΙΒΛΙΟΝ.</head>
+            <p>Περὶ μήτρας ὁ λόγος θέσεώς τε καὶ μεγέθους, <lb/>καὶ σχήματος αὐτῆς, ὅθεν τε ἤρτηται,
 						καὶ ὅθεν <lb/>τρέφεται, καὶ ὅσοις συμφύεται, καὶ τίνων ψαύει, καὶ περὶ <lb/>τῶν
 						πλεκόντων αὐτὴν, καὶ ὅσα κυούσης τῆς γυναικὸς ἐντὸς <lb/>τῆς μήτρας φύεται κατὰ τὸν
 						χορίον ἢ τοὺς τὸ ἔμβρυον <lb/>περιέχοντας ὑμένας. κεῖται μὲν δὴ ἐντὸς τοῦ περιτοναίου,
@@ -113,9 +122,9 @@
 						ὃν, οἶμαι, ἀντιδιαστέλλων <pb n="889"/> χαλαρὸν ἔφη τὸ ἄλλο μέρος τοῦ ἀπευθυσμένου,
 							<milestone unit="ed2page" n="277"/>ἔνθα <lb/>καὶ μάλιστα ἀνευρύνεται. γονὴν δὲ λέγω
 						ἤτοι τὰ γεννητικὰ <lb/>μόρια, ἢ καὶ αὐτὴν τὴν μήτραν. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="2">
-					<p>Μέγεθος δὲ οὐκ ἴση μὲν ἐπὶ πασῶν, πολὺ <lb/>γὰρ ἐλάττων μὲν ἡ τῆς κυησάσης, μείζων δὲ ἡ
+         </div>
+         <div n="2" type="chapter">
+            <p>Μέγεθος δὲ οὐκ ἴση μὲν ἐπὶ πασῶν, πολὺ <lb/>γὰρ ἐλάττων μὲν ἡ τῆς κυησάσης, μείζων δὲ ἡ
 						τῆς ἐγκύου. <lb/>καὶ ἥτις οὐδέποτε ἐκύησε, καὶ ταύτης μείων ἐστὶ, καὶ παρὰ <lb/>τὰς
 							ἡλι<milestone unit="ed1page" n="211"/>κίας, αἷς μηδέπω τοῦ λαγνεύεσθαι ὥρα ἢ μηκέτι·
 						<lb/>καὶ γὰρ καὶ ἄλλως ἐλάττων ἀεὶ ταῖς μὴ λαγνευομέναις. <lb/>πειρατέον δὲ ὑπογράψαι τό
@@ -128,9 +137,9 @@
 						ὁρίζουσιν αὐτὴν, καὶ ὅτι ἡ μὲν ἐπίκειται, αὐτὸ <lb/>δὲ ὑπόκειται. αὐτὸ δὲ τὸ αἰδοῖον τὸ
 						γυναικεῖόν ἐστιν ἡ <lb/>μεταξὺ τῶν τῆς ἥβης ὀστῶν εὐρυχωρία, κατὰ τὰ ἔξω μέρη
 						<lb/>δερματώδη ἐπίφυσιν ἔχουσα ἀνάλογον τῆς ἐπὶ τῶν ἀῤῥένων <lb/>πόσθης. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="3">
-					<p>Τὸ δὲ σχῆμα αὐτῆς, τὸ μὲν ἄλλο πᾶν <lb/>σῶμα καὶ μάλιστα ὁ πυθμὴν κύστει ἔοικε· καθ’
+         </div>
+         <div n="3" type="chapter">
+            <p>Τὸ δὲ σχῆμα αὐτῆς, τὸ μὲν ἄλλο πᾶν <lb/>σῶμα καὶ μάλιστα ὁ πυθμὴν κύστει ἔοικε· καθ’
 						ὅσον δὲ <lb/>ἐπὶ τῶν πλαγίων ἀποφύσεις ἔχει μαστοειδεῖς πρὸς τὰς λαγόνας
 						<lb/>ἀνανευούσας, ταύτῃ οὐκ ἔτι ἔοικεν. αὐτῶν δὲ τούτων <lb/>τὸ σχῆμα ὁ μὲν Ἡρόφιλος
 						ἡμιτόμου κύκλου ἕλικι <lb/>εἰκάζει· Διοκλῆς δὲ κέρασι φυομένοις. διὰ ταῦτα καὶ
@@ -153,9 +162,9 @@
 						τοιαῦτα, κατά τε τὸ μέγεθος καὶ τὴν θέσιν ﻿<pb n="892"/> καὶ τὴν διάπλασιν <milestone unit="ed2page" n="278"/>καὶ τὴν πλοκὴν καὶ τὴν πρὸς <lb/>τὰ παρακείμενα κοινωνίαν
 						ἐγένετο. νυνὶ δὲ ἐπὶ τὰ ἑξῆς <lb/>ἴωμεν. εἴη δ’ ἂν ἑξῆς λέγειν περί τε συμφύσεως καὶ
 						προσαρτήσεως <lb/>καὶ τῶν ἄλλων, ὅσα τούτοις παράκειται. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="4">
-					<p>Τῶν γὰρ τῇ μήτρᾳ σωμάτων ὁμιλούντων <lb/>τὰ μὲν ἐπιψαύει μόνον αὐτῆς, οὐκέτι δὲ καὶ
+         </div>
+         <div n="4" type="chapter">
+            <p>Τῶν γὰρ τῇ μήτρᾳ σωμάτων ὁμιλούντων <lb/>τὰ μὲν ἐπιψαύει μόνον αὐτῆς, οὐκέτι δὲ καὶ
 						συμφύεται, πολλὰ <lb/>δὲ ἑνοῦται, καὶ οὐκ ἂν αὐτὰ χωρίσαις ἄνευ τομῆς· ἔστι <lb/>δὲ καὶ
 						ἃ δερόντων ἀπολύεται, καὶ μὴν δὴ καὶ προσήρτηται <lb/>πολλοῖς, καὶ πολλὰ εἰς αὐτὴν
 						ἐμπέφυκεν. ψαύει μὲν <lb/>οὖν τῶν λεπτῶν ἐντέρων ἥ γε μετρίως ἔχουσα μεγέθους·
@@ -187,10 +196,10 @@
 						συμπεφυκέναι καὶ συμπεπλέχθαι <lb/>καὶ τρέφεσθαι. πῶς οὖν ἔχουσι μεγέθους τε <lb/>καὶ
 						θέσεως, καὶ πόσαι τὸν ἀριθμόν εἰσι, καὶ πόθεν πεφύκασιν <lb/>αἵ τε φλέβες καὶ αἱ
 						ἀρτηρίαι, ἑπόμενον ἂν εἴη <lb/>λέγειν. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="5">
-					<p>
-						<milestone unit="ed2page" n="279"/>Ἀπὸ τῆς κοίλης φλεβὸς καὶ τῆς ἐπικειμένης
+         </div>
+         <div n="5" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="279"/>Ἀπὸ τῆς κοίλης φλεβὸς καὶ τῆς ἐπικειμένης
 						<lb/>ἀρτηρίας τῆς μεγάλης ἀποφύονται δύο μὲν φλέβες, δύο <lb/>δὲ ἀρτηρίαι, μία
 						ἑκατέρωθεν, φλὲψ μὲν ἀπὸ τῆς κοίλης φλεβὸς, <pb n="895"/> ἀρτηρία δὲ ἀπὸ τῆς ἀρτηρίας.
 						εἶτα ἡ μὲν ἀπὸ τῶν δεξιῶν εἰς <lb/>τὰ δεξιὰ, ἡ δὲ ἀπὸ τῶν ἀριστερῶν εἰς τὸ ἀριστερὸν
@@ -211,9 +220,9 @@
 						τῆς εἰς τὸ αἰδοῖόν τε καὶ τὴν ἕδραν ἡκούσης μεμερισμέναι. <lb/>τοιοῦτος μὲν δὴ καὶ ὁ
 						περὶ <milestone unit="ed1page" n="212"/>τῶν τρεφόντων <lb/>καὶ πλεκόντων τὴν μήτραν
 						ἀγγείων λόγος. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="6">
-					<p>Αὐτὸ δὲ τὸ σῶμα αὐτῆς δύο χιτῶνές εἰσιν, <lb/>ἀντιστρόφως κείμενοι, νευρωδέστερος μὲν ὁ
+         </div>
+         <div n="6" type="chapter">
+            <p>Αὐτὸ δὲ τὸ σῶμα αὐτῆς δύο χιτῶνές εἰσιν, <lb/>ἀντιστρόφως κείμενοι, νευρωδέστερος μὲν ὁ
 						ἔξωθεν, φλεβωδέστερος <lb/>δὲ ὁ ἔσωθεν, ἐπὶ πολὺ διΐστασθαί τε καὶ <lb/>συστέλλεσθαι
 						πεφυκότες. τούτων ὁ μὲν ἔξωθεν ἁπλοῦς τε <lb/>καὶ εἷς ἐστι, διπλοῦς δὲ ὁ ἔσωθεν, καὶ τὰ
 						μέρη αὐτοῦ <lb/>συμβάλλει μὲν ἀλλήλοις, οὐ συμφύεται δὲ, οὐδὲ ἑνοῦται, <lb/>ἀλλὰ μόνον
@@ -223,9 +232,9 @@
 						χιτὼν τὰ μὲν ﻿<pb n="897"/> ἐνδὸν μέρη τραχύς ἐστιν ἱκανῶς, καὶ τοιοῦτος δὲ μάλιστα
 						<lb/>κατὰ τὸν πυθμένα· ὁ δὲ περικείμενος αὐτῷ ὁ νευρώδης <lb/>παχύτερος πολλῷ τοῦ τῆς
 						κύστεως χιτῶνος, καὶ φλεψὶ πολλαῖς <lb/>καὶ ἀρτηρίαις διειλημμένος. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="7">
-					<p>Ὁ δὲ αὐχὴν τῆς μήτρας, μυώδης ὢν, ἐκ σαρκὸς <lb/>γέγονε σκληρᾶς τε καὶ χονδρώδους, καὶ
+         </div>
+         <div n="7" type="chapter">
+            <p>Ὁ δὲ αὐχὴν τῆς μήτρας, μυώδης ὢν, ἐκ σαρκὸς <lb/>γέγονε σκληρᾶς τε καὶ χονδρώδους, καὶ
 						ἀεὶ σκληρότερος <lb/>ἑαυτοῦ γίνεται καὶ χονδρώδης τῷ χρόνῳ, ὥστε, ὅσαι <lb/>πολλά γε
 						ἐκύησαν, ἢ πρεσβύτιδες ἤδη εἰσὶν, ἱκανῶς ταύταις <lb/>ὁ αὐχὴν σκληρός τε καὶ χονδρώδης.
 						εἰκάζει δὲ αὐτοῦ <lb/>τὴν φύσιν ὁ Ἡρόφιλος <milestone unit="ed2page" n="280"/>βρόγχου τῷ
@@ -238,9 +247,9 @@
 						εἰς τὸν γυναικεῖον <lb/>κόλπον οὐκ ὀρθὸς, οὐδὲ εὐθὺς ἐπὶ πασῶν, ἀλλὰ ἐκκλίνεται <lb/>ἢ
 						παραστρέφεται ἐπί τε τὰ ἀριστερὰ καὶ τὰ δεξιὰ <lb/>καὶ τὰ ἄνω καὶ τὰ κάτω. περὶ δὲ τοῦ
 						πρόσω καὶ ὀπίσω, <lb/>ὅτι δὴ ὁμοίως ἁπάσαις ἔχει, ἤδη εἴρηται. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="8">
-					<p>Ἔχουσι δὲ οὐδὲ τῷ πάχει τῆς μήτρας οἱ χιτῶνες <lb/>ὡσαύτως ἀεὶ, ἀλλ’ εἰς μὲν τὴν πρώτην
+         </div>
+         <div n="8" type="chapter">
+            <p>Ἔχουσι δὲ οὐδὲ τῷ πάχει τῆς μήτρας οἱ χιτῶνες <lb/>ὡσαύτως ἀεὶ, ἀλλ’ εἰς μὲν τὴν πρώτην
 						ἡλικίαν, <lb/>ὥσπερ μικροὶ, οὕτω καὶ λεπτοί εἰσιν· ἰόντων δὲ ἤδη τῶν <lb/>ἐπιμηνίων,
 						πρὸς λόγον τοῦ μεγέθους καὶ τὸ πάχος αὔξονται, <lb/>καὶ ἢν ἔξωρος τοῦ κύειν τε καὶ
 						καθαίρεσθαι ἡ γυνὴ γίνηται, <lb/>ὥσπερ τὸ μέγεθος, οὕτω καὶ τὸ πάχος μειοῦται. κατὰ
@@ -253,9 +262,9 @@
 						ταύτῃ παχίστη. πάλιν <lb/>οὖν ἀρχομένης μὲν κύειν παχεῖα, ἐγγὺς δὲ τοῦ ἀποκυΐσκειν
 						<lb/>γενομένης μεγάλη μὲν, λεπτὴ δὲ, τὸ γὰρ πάχος εἰς τὸ <lb/>μῆκος ἐκτεινόμενον
 						ἀναλίσκεται, ἐν δὲ τῷ μεταξὺ χρόνῳ <lb/>ἀνάλογον τοῦ μεγέθους τὸ πλάτος. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="9">
-					<p>Οἱ δὲ ὄρχεις τοῦ θήλεος κεῖνται μὲν ἐκ <lb/>πλαγίων τῆς μήτρας, εἷς ἑκατέρωθεν τοῦ
+         </div>
+         <div n="9" type="chapter">
+            <p>Οἱ δὲ ὄρχεις τοῦ θήλεος κεῖνται μὲν ἐκ <lb/>πλαγίων τῆς μήτρας, εἷς ἑκατέρωθεν τοῦ
 						πυθμένος, ἐγγὺς <lb/>τῶν κεραιῶν, μεγέθει γε πολὺ μείους, ἢ τοῦ ἄῤῥενος, καὶ <lb/>τῷ
 						σχήματι δὲ καὶ τῷ συγκρίματι πάμπολυ διαφέρουσι. <lb/>πλατεῖς μὲν γὰρ οὗτοι, στρογγύλοι
 						δὲ καὶ προμήκεις ἐκεῖνοι· <lb/>καὶ ἀδενοειδεῖς μὲν οὗτοι, ἁπαλόσαρκοι δὲ οἱ τοῦ ἄῤῥενος.
@@ -284,9 +293,9 @@
 						κεραίας οὐδὲν εἰρήκασι, <lb/>καίτοι καὶ ταῦτα πόροις τε αἰσθητοῖς ἐμβέβληκεν, <lb/>ὥσπερ
 						ἐκεῖνα εἰς τὸν τράχηλον, καὶ γονὴν ἐντὸς αὑτῶν <lb/>ἔχοντα φαίνεται. ἐπὶ πλέον δὲ περὶ
 						αὐτῶν ἐν τῷ ἑξῆς <lb/>λόγῳ τῷ περὶ τῶν ἐνεργειῶν σκεψόμεθα. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="10">
-					<p>Τὸ δὲ νῦν εἶναι, ὅπερ ἐστὶν ἕν τι τῶν ﻿<pb n="902"/> προτεθέντων ὑπόλοιπον, τοῦτο
+         </div>
+         <div n="10" type="chapter">
+            <p>Τὸ δὲ νῦν εἶναι, ὅπερ ἐστὶν ἕν τι τῶν ﻿<pb n="902"/> προτεθέντων ὑπόλοιπον, τοῦτο
 						λεγέσθω, τίνα, κυούσης τῆς <lb/>γυναικὸς, ἐντὸς τῆς μήτρας φύεται. ἔστι δὲ τάδε. πρῶτον
 						<lb/>μὲν τὸ χορίον, τῇ μήτρᾳ προσφυές· μετὰ δὲ τόδε ὑμένες <lb/>οἱ τὸ ἔμβρυον
 						συνέχοντες, καὶ αὐτὸ τὸ ἔμβρυον. εἶδος δὲ <lb/>ἑκάστου τῇ φύσει τοιόνδε ἐστί. τὸ μὲν
@@ -350,7 +359,7 @@
 						τελευτήσωσιν <lb/>ὑπ’ ἄκραν τῆς γῆς τὴν ἐπιφάνειαν εἰς τὸ τοῦ <lb/>δένδρου μέρος ἐκεῖνο,
 						ὃ καλεῖται στέλεχος. καὶ γάρ τοι ﻿<pb n="907"/> τὰ ἀγγεῖα ταῦτα, οἷον ῥίζαι τινὲς οὖσαι
 						πολλαὶ καὶ μικραὶ, <lb/>συμφύονται, καὶ συμφυόμενα γίνεται μείζονα τῶν προτέρων· <lb/>
-						<milestone unit="ed2page" n="283"/>εἶτα ἐφεξῆς μείζονα γινόμενα περατοῦνται σύμπαντα
+               <milestone unit="ed2page" n="283"/>εἶτα ἐφεξῆς μείζονα γινόμενα περατοῦνται σύμπαντα
 						<lb/>εἰς δύο οἷον στελέχη, φλέβας μὲν τὰ φλεβώδη, ἀρτηρίας δὲ <lb/>τὰ ἀρτηριώδη,
 						ἑκάτερον ἐξ ἑκατέρου μέρους, δεξιοῦ τε καὶ <lb/>ἀριστεροῦ, ἐμβαλλούσας εἰς τὸ ἔμβρυον
 						κατὰ τὸν ὀμφαλόν. <lb/>οὐδὲ γὰρ οὐδὲ ἄλλο τί ἐστιν ὁ ὀμφαλὸς, ἀλλ’ ἢ τὰ τέτταρα
@@ -367,8 +376,7 @@
 						ὑγροῖς τούτοις ἡ γένεσις, καὶ τίς ἡ ἀπ’ αὐτῶν <lb/>χρεία, ἐν τῷ ἐφεξῆς λόγῳ πάντα
 						εἰρήσεται· καὶ τὰ περὶ τῶν <lb/>ἀγγείων τῶν εἰς τὸ ἔμβρυον διὰ τοῦ ὀμφαλοῦ καθηκόντων
 						<lb/>αὐτὰ καθ’ αὑτὰ εἰρήσεται ἐν ἑτέρῳ λόγῳ τῷ περὶ τῆς <lb/>τοῦ ἐμβρύου ἀνατομῆς. </p>
-				</div>
-			</div>
-		</body>
-	</text>
+         </div>
+      </body>
+   </text>
 </TEI>

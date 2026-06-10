@@ -1,97 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-	<teiHeader xml:lang="eng">    
-    
-		<fileDesc>
-			<titleStmt><title xml:lang="lat">De purgantium medicamentorum facultate</title>
-				<author>Galen</author>
-				<editor>Karl Gottlob Kühn</editor>
-				<funder>Andrew W. Mellon Foundation</funder>
-				<respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-				<authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De purgantium medicamentorum facultate</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
 					Foundation</authority>
-				<publisher>University of Leipzig</publisher>
-				<pubPlace>Germany</pubPlace>
-				<idno type="filename">tlg0057.tlg072.1st1K-grc1.xml</idno>
-				<availability>
-					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg072.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
 						Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-				</availability>
-				<date>2016</date>
-			</publicationStmt>
-			<sourceDesc>
-				<biblStruct>
-					<monogr>
-						<title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-						<author>Galen</author>
-						<editor>Karl Gottlob Kühn</editor>
-						<imprint>
-							<publisher>Knobloch</publisher>
-							<pubPlace>Lipsiae</pubPlace>
-							<biblScope unit="vol">11</biblScope>
-							<biblScope unit="pp" from="323" to="342">323-342</biblScope>
-							<date>1826</date>
-						</imprint>
-					</monogr>
-					<ref target="https://hdl.handle.net/2027/hvd.hxpp8s?urlappend=%3Bseq=335%3Bownerid=27021597764275152-339">HathiTrust</ref>
-				</biblStruct>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg072.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Lipsiae</pubPlace>
+                     <biblScope unit="vol">11</biblScope>
+                     <biblScope unit="pp" from="323" to="342">323-342</biblScope>
+                     <date>1826</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/hvd.hxpp8s?urlappend=%3Bseq=335%3Bownerid=27021597764275152-339">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
 				Architecture.</p>
-			  <refsDecl n="CTS">
-				<cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-			</refsDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="grc">Greek</language>
-			</langUsage>
-		</profileDesc>
-	</teiHeader>
-	<text>
-		<body>
-
-			<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg072.1st1K-grc1">
-				<pb n="323"/>
-
-				<div type="textpart" subtype="chapter" n="1">
-					<head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΤΗΣ ΤΩΝ ΚΑΘΑΙΡΟΝΤΩΝ <lb/>ΦΑΡΜΑΚΩΝ ΔΥΝΑΜΕΩΣ.</head>
-					<p>Κατὰ τὴν αὐτὴν αἰτίαν ἐοίκασιν οἱ παλαιότατοι <lb/>τῶν ἰατρῶν τὰς πονηρὰς δόξας
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg072.1st1K-grc1">
+         <pb n="323"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΤΗΣ ΤΩΝ ΚΑΘΑΙΡΟΝΤΩΝ <lb/>ΦΑΡΜΑΚΩΝ ΔΥΝΑΜΕΩΣ.</head>
+            <p>Κατὰ τὴν αὐτὴν αἰτίαν ἐοίκασιν οἱ παλαιότατοι <lb/>τῶν ἰατρῶν τὰς πονηρὰς δόξας
 						ἀνελέγκτους ἐᾶσαι, <lb/>καθ’ ἣν καὶ τῶν νομοθετῶν οἱ ἀρχαιότατοι τὰ μέγιστα τῶν
 						<lb/>ἁμαρτημάτων ἀτιμώρητα. μετριωτέρας γὰρ οὔσης κατ’ ἐκεῖνον <lb/>τὸν χρόνον τῆς
 						κακίας καὶ μήτε ἀδικεῖν ἐπιχειρούντων <lb/>τὰ μέγιστα μήτε ἀναισχυντεῖν ὑπομενόντων τὰ
@@ -99,7 +107,7 @@
 						ἐπῆγεν οἷς οὐδεὶς ὅλως εἶπεν; ἐπειδὴ δ’ ἐν τῷ χρόνῳ <lb/>τῆς κακίας αὐξανομένης οὔτε
 						ἀτόλμητον οὐδὲν ἔτι τοῖς <pb n="324"/> ἀνθρώποις οὔτε ἄῤῥητον ἦν, οἱ μὲν νομοθέται
 						πολλοὺς τρόπους <lb/>καινοὺς ἐξευρίσκουσι τῶν ἐπὶ τοῖς ἀδικοῦσι τιμωριῶν. <lb/>
-						<milestone unit="ed2page" n="463"/>οἱ δ’ ἀλήθειαν τιμῶντες ἐλέγχων ἰδέας πολυτρόπους
+               <milestone unit="ed2page" n="463"/>οἱ δ’ ἀλήθειαν τιμῶντες ἐλέγχων ἰδέας πολυτρόπους
 						<lb/>ἐπὶ τοῖς σοφισταῖς, ὅπερ νῦν ἐοίκαμεν καὶ ἡμεῖς ἂν δράσειν, <lb/>ἐξελέγχοντες τοὺς
 						ἀναιροῦντας μὲν τῶν καθαιρόντων φαρμάκων <lb/>τὴν ἑλκτικὴν δύναμιν ὧν ἐκκενοῦσι χυμῶν,
 						μεταβλητικὴν <lb/>δέ τινα φάσκοντας ἔχειν ἁπάντων ὁμοτίμως τῶν πλησιαζόντων <lb/>αὐτοῖς.
@@ -145,9 +153,9 @@
 						μόνον <lb/>ἐκεῖνον, οὗπερ ἂν ἀγωγὸν εἶναι λέγεται. διὸ καὶ καθαίρεσθαι <lb/>φασὶ τὸ αἷμα
 						ὑπὸ τῶν τοιούτων φαρμάκων, οὐ κενοῦσθαι <lb/>καθάπερ ἐν ταῖς φλεβοτομίαις. ταῦτα ὑμῶν
 						ἕπεται ταῖς ὑποθέσεσιν <lb/>ἑκόντων τε καὶ ἀκόντων. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="2">
-					<p>Ἀναμνήσω δ’ αὐτῶν τὰ κεφάλαια. κατὰ <lb/>μὲν τοὺς Ἀσκληπιάδας ἁπάντων τῶν ἐν ταῖς φλεψὶ
+         </div>
+         <div n="2" type="chapter">
+            <p>Ἀναμνήσω δ’ αὐτῶν τὰ κεφάλαια. κατὰ <lb/>μὲν τοὺς Ἀσκληπιάδας ἁπάντων τῶν ἐν ταῖς φλεψὶ
 						χυμῶν <lb/>ὁμότιμός ἐστιν ἡ ἐν ταῖς φλεβοτομίαις κένωσις, οὐχ ὁμότιμος ﻿<pb n="328"/> δ’
 						ἡ ἐν ταῖς καθάρσεσιν, ἀλλὰ τῶν ἄλλων ἀφαίρεσις, ὡς <lb/>καθαρὸν ἀποφῆναι τὸ αἷμα. κατὰ
 						δὲ τοὺς περὶ Ἐρασίστρατον <lb/>ὁμότιμος ἁπάντων ἐστὶν ὥσπερ ἐν ταῖς φλεβοτομίαις,
@@ -194,9 +202,9 @@
 						ἐξεκάθηρα τὸ σῶμα τοῦ χολώδους <lb/>χυμοῦ καθάρσει μιᾷ· καὶ γὰρ μυρίοι περὶ τούτου
 						μαρτυροῦσιν· <lb/>εἰ δὲ οἱ ἀναισχυντότατοι σοφισταὶ προσποιήσονται <lb/>πᾶσιν ἀνθρώποις
 						ἀπιστεῖν, θεασάσθωσαν αὐτοὶ γιγνόμενον <lb/>αὐτὸ τὸ ἔργον, ὁποσάκις ἂν βουληθῶσι. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="3">
-					<p>Καίτοι τί λέγω θεασάσθωσαν; ἐπέδειξα <lb/>γὰρ ἤδη πολλάκις αὐτοῖς τοῦτο, καὶ μέμνημαί
+         </div>
+         <div n="3" type="chapter">
+            <p>Καίτοι τί λέγω θεασάσθωσαν; ἐπέδειξα <lb/>γὰρ ἤδη πολλάκις αὐτοῖς τοῦτο, καὶ μέμνημαί
 						γε τινὰ καὶ <lb/>τοιαύτης τινὸς ἀντιλαμβανόμενον ἀδολεσχίας. ἔφησε γὰρ οὐχ <lb/>ἓν δή τι
 						χυμῶν εἶδος ἕλκεσθαι πρὸς ἑκάστου τῶν φαρμάκων, <lb/>ἀλλὰ ἁπλῶς ἕκαστον μὲν αὐτῶν ἕλκειν
 						ὥσπερ τὰ βδάλλοντα. <lb/>τῇ δὲ ὁλκῇ πρότερον μὲν ἀκολουθεῖν τὸ λεπτότερον ἐν τοῖς
@@ -250,12 +258,11 @@
 						παχυτέρων ἀεὶ μετὰ τὰ λεπτότερα <lb/>κενουμένων ἡ μέλαινα χολὴ προτέρα τοῦ αἵματος
 						<lb/>ἕλκεται, καίτοι γε οἷον ἰλύς τις οὖσα τοῦ αἵματος, ὡς ἐν <lb/>τοῖς οἴνοις ἡ τρύξ.
 					</p>
-				</div>
-				<pb n="336"/>
-
-				<div type="textpart" subtype="chapter" n="4">
-					<p>
-						<milestone unit="ed2page" n="467"/>Ἴσως οὖν ζητήσεις εἰ ἔστι τι φάρμακον <lb/>εὐθὺς ἐξ
+         </div>
+         <pb n="336"/>
+         <div n="4" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="467"/>Ἴσως οὖν ζητήσεις εἰ ἔστι τι φάρμακον <lb/>εὐθὺς ἐξ
 						ἀρχῆς αἵματος ἀγωγόν. ἔστιν, ὦ βέλτιστε, χρήσαιτο <lb/>δ’ ἂν οὐδεὶς αὐτῷ. διὰ τί; φήσεις
 						ἴσως. ὅτι σφάξαι <lb/>τοῦτ’ ἂν εἴη τὸν ἄνθρωπον, οὐ καθῆραι. τὰ γάρ τοι καθαίροντα
 						<lb/>δι’ αὐτὸ τοῦτο πρὸς ἁπάντων ὀνομάζεται καθαίροντα, <lb/>διότι καθαρὸν ἀποφαίνει τὸ
@@ -298,9 +305,9 @@
 						γοῦν θεάσασθαι τὰ τῆς τέχνης <lb/>ἔργα, τοῖς μὲν ὑδραγωγοῖς φαρμάκοις ἑπομένην ἀεὶ
 						πλείστην <lb/>κένωσιν, τοῖς δὲ τὴν μέλαιναν ἐκκαθαίρουσιν ἐλαχίστην. <lb/>δείξω δὲ καὶ
 						κατ’ ἀρχὰς εὐθέως ἐκκενουμένην τὴν <lb/>μέλαιναν. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="5">
-					<p>Ὁ μὲν οὖν ἕλκεσθαι λέγων ὁμοτίμως ἅπαντας <lb/>τοὺς χυμοὺς εἰς τοσοῦτον ἀναίσθητός τε
+         </div>
+         <div n="5" type="chapter">
+            <p>Ὁ μὲν οὖν ἕλκεσθαι λέγων ὁμοτίμως ἅπαντας <lb/>τοὺς χυμοὺς εἰς τοσοῦτον ἀναίσθητός τε
 						καὶ ἀμαθής <lb/>ἐστιν, ὁ δ’ ἀλλοιοῦσθαι θεασάσθω πάλιν εἰς ὅσον οὐδὲν <lb/>διοίσει κατ’
 						αὐτὸν ἢ φλεβοτομεῖν ἢ καθαίρειν χολαγωγῷ <lb/>φαρμάκῳ τὸν ἰκτεριῶντα. κατὰ δὲ τὸν αὐτὸν
 						τρόπον ὁμότιμόν <lb/>ἐστι φλεβοτομῆσαί τε τὸν ὑδεριῶντα καὶ κενῶσαι τινὶ <lb/>τῶν
@@ -343,8 +350,7 @@
 						καὶ πηγὴ μία τὸ πρὸς Ἱπποκράτην μῖσος, ἐξ ἧς <lb/>πηγῆς ἐῤῥύη μὲν καὶ ἄλλα πολλὰ, καὶ
 						τουτὶ δὲ αὐτὸ τὸ <lb/>ἐνεστὸς σκέμμα, τὸ περὶ τῆς ἑλκτικῆς δυνάμεως, ἧς μέρος ἢ
 						<lb/>εἶδος ἢ ὡς ἄν τις ἐθέλοι καλεῖν ἡ τῶν καθαιρόντων φαρμάκων <lb/>δύναμις. </p>
-				</div>
-			</div>
-		</body>
-	</text>
+         </div>
+      </body>
+   </text>
 </TEI>

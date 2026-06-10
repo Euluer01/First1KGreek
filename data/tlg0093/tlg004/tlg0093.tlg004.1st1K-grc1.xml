@@ -1,97 +1,110 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
- <teiHeader xml:lang="eng">
-  <fileDesc>
-   <titleStmt>
-    <title xml:lang="lat">De lapidibus</title>
-    <author>Theophrastus</author>
-    <editor>Friedrich Wimmer</editor>
-    <funder>Harvard Library Arcadia Fund</funder>
-    <principal>Gregory Crane</principal>
-    <respStmt>
-     <persName xml:id="DDD">Digital Divide Data</persName>
-     <resp>Corrected and encoded the text</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Gregory Crane</persName>
-     <resp>Editor-in-Chief, Perseus Digital Library</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Matt Munson</persName>
-     <resp>Project Manager (University of Leipzig)</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Annette Gessner</persName>
-     <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Thibault Clérice</persName>
-     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Bruce Robertson</persName>
-     <resp>Technical Advisor</resp>
-    </respStmt>
-   </titleStmt>
-   <publicationStmt>
-    <authority>Harvard College Library</authority>
-    <idno type="filename">tlg0093.tlg004.1st1K-grc1.xml</idno>
-    <availability>
-     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De lapidibus</title>
+            <author>Theophrastus</author>
+            <editor>Friedrich Wimmer</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg0093.tlg004.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
       License</licence>
-    </availability>
-    <date>2018</date>
-    <publisher>Harvard College Library</publisher>
-    <pubPlace>United States</pubPlace>
-   </publicationStmt>
-   <sourceDesc>
-    <listBibl>
-     <biblStruct>
-      <monogr>
-       <title xml:lang="lat">Theophrasti Eresii opera, quae supersunt, omnia</title>
-       <editor>
-        <persName>
-         <name>Friedrich Wimmer</name>
-        </persName>
-       </editor>
-       <author ref="urn:cts:greekLit:tlg0093">Theophrastus</author>
-       <imprint>
-        <publisher>Teubner</publisher>
-        <pubPlace>Lipsiae</pubPlace>
-        <date>1862</date>
-       </imprint>
-	      <biblScope unit="volume">3</biblScope>
-      </monogr>
-      <ref target="https://archive.org/details/theophrastieresi03theouoft">Open Content Alliance</ref>
-     </biblStruct>
-    </listBibl>
-   </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-   <p>Text encoded in accordance with the latest EpiDoc standards</p>
-   <refsDecl n="CTS">
-    <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-    <cRefPattern matchPattern="(.+)" n="fragment" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-   </refsDecl>
-  </encodingDesc>
-  <profileDesc>
-   <langUsage>
-    <language ident="grc">Greek</language>
-    <language ident="lat">Latin</language>
-   </langUsage>
-  </profileDesc>
-  <revisionDesc>
-   <change/>
-  </revisionDesc>
- </teiHeader>
-<text>
-	<body>	 
-	 <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0093.tlg004.1st1K-grc1">
-<div type="textpart" subtype="fragment" n="2">
-<head>FR. II. ΠΕΡΙ ΛΙΘΩΝ.</head>
-<div type="textpart" subtype="chapter" n="1">
-<milestone unit="1"/> <p>CAP. I. Τῶν ἐν τῇ γῇ συνισταμένων τά μεν ἐστιν
+            </availability>
+            <date>2018</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg0093.tlg004.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Theophrasti Eresii opera, quae supersunt, omnia</title>
+                     <editor>
+                        <persName>
+                           <name>Friedrich Wimmer</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg0093">Theophrastus</author>
+                     <imprint>
+                        <publisher>Teubner</publisher>
+                        <pubPlace>Lipsiae</pubPlace>
+                        <date>1862</date>
+                     </imprint>
+                     <biblScope unit="volume">3</biblScope>
+                  </monogr>
+                  <ref target="https://archive.org/details/theophrastieresi03theouoft">Open Content Alliance</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+).(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)"
+                         n="fragment"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0093.tlg004.1st1K-grc1">
+         <div n="2" type="fragment">
+            <head>FR. II. ΠΕΡΙ ΛΙΘΩΝ.</head>
+            <div n="1" type="chapter">
+               <milestone unit="1"/>
+               <p>CAP. I. Τῶν ἐν τῇ γῇ συνισταμένων τά μεν ἐστιν
 ὕδατος τὰ δὲ γῆς. ὕδατος μὲν τὰ μεταλλευόμενα καθάπερ
 ἄργυρος καὶ χρυσὸς καὶ τἆλλα, γῆς δὲ λίθος τε
 καὶ ὅσα λίθων εἴδη περιττότερα καὶ εἴ τινες δὴ τῆς
@@ -160,10 +173,10 @@
 ὀλίγοι δὲ καὶ οἱ περὶ τὴν πύρωσιν καὶ καῦσιν,
 ὑπὲρ ὧν δὴ καὶ πρῶτον ἴσως λεκτέον τίνας καὶ
 πόσας ἔχουσι διαφοράς.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="2">
-<milestone unit="9"/> <p>CAP. II. Κατὰ δὴ τὴν πύρωσιν οἱ μὲν τήκονται
+            </div>
+            <div n="2" type="chapter">
+               <milestone unit="9"/>
+               <p>CAP. II. Κατὰ δὴ τὴν πύρωσιν οἱ μὲν τήκονται
 καὶ ῥέουσιν ὥσπερ οἱ μεταλλευτοί. ῥεῖ γὰρ ἅμα τῷ
 ἀργύρῳ καὶ τῷ χαλκῷ καὶ σιδήρῳ καὶ ἡ λίθος ἡ ἐκ
 τούτων, εἴτʼ οὖν διὰ τὴν ὑγρότητα τῶν ἐνυπαρχόντων
@@ -220,10 +233,10 @@
 ξύλῳ σαπρῷ, ὅτε δʼ ἐπιχέοιτό τις ἔλαιον καίεται, καὶ
 ὅτʼ ἐκκαυθείη τότε παύεται καὶ αὐτὸς ὥσπερ ἀπαθὴς
 ὤν. τῶν μὲν οὖν καιομένων σχεδὸν αὗται διαφοραί.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="3">
-<milestone unit="18"/> <p>CAP. III. Ἀλλο δέ τι γένος ἐστὶ λίθων ὥσπερ ἐξ
+            </div>
+            <div n="3" type="chapter">
+               <milestone unit="18"/>
+               <p>CAP. III. Ἀλλο δέ τι γένος ἐστὶ λίθων ὥσπερ ἐξ
 ἐναντίων πεφυκὸς, ἄκαυστον ὅλως, ἄνθραξ καλούμενος,
 ἐξ οὗ καὶ τὰ σφραγίδια γλύφουσιν, ἐρυθρὸν μὲν
 τῷ χρώματι, πρὸς δὲ τὸν ἥλιον τιθέμενον ἄνθρακος
@@ -265,10 +278,9 @@
 ἐπὶ τοσοῦτον εἰρήσθω. περὶ δὲ τῶν πυρουμένων καὶ
 τῶν ἀπυρώτων λίθων ἀφʼ ὧν καὶ εἰς τοῦτο ἐξέβημεν
 ἐν ἄλλοις θεωρητέον τὰς αἰτίας.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="4">
-<p>CAP. IV. Τῶν δὲ λίθων καὶ ἄλλαι (διάφοροι) τυγχάνουσιν <milestone unit="23"/>
+            </div>
+            <div n="4" type="chapter">
+               <p>CAP. IV. Τῶν δὲ λίθων καὶ ἄλλαι (διάφοροι) τυγχάνουσιν <milestone unit="23"/>
 ἐξ ὧν καὶ τὰ σφραγίδια γλύφουσιν. αἱ μὲν
 τῇ ὄψει μόνον οἷον τὸ σάρδιον καὶ ἡ ἴασπις καὶ ἡ σάπφψειρος·
 αὕτη δʼ ἐστὶν ὥσπερ χρυσόπαστος. ἡ δὲ σμάραγδος
@@ -286,8 +298,7 @@
 μῆκος μὲν τετταράκοντα πηχῶν, εὖρος δὲ τῇ μὲν τέτταρας
 τῇ δὲ δύο. ταῦτα μὲν οὖν ὅτι κατὰ τὴν ἐκείνων
 γραφήν. τῶν δὲ βακτριανῶν καλουμένων ὑπὸ <milestone unit="25"/>
-
-<pb n="40"/>
+                  <pb n="40"/>
 πολλῶν ἡ ἐν Τύρῳ μεγίστη. στήλη γάρ ἐστιν εὐμεγέθης
 ἐν τῷ τοῦ Ἡρακλέους ἱερῷ· εἰ μὴ ἄρα ψευδὴς
 σμάραγδος, καὶ γὰρ τοιαύτη γίνεταί τις φύσις. γίνεται
@@ -310,10 +321,10 @@
 ἴασπις ὡς οὔπω μεταβεβληκυίας ἀπὸ τοῦ ὕδατος. ἔστι
 δέ τις αὐτῆς ἐργασία πρὸς τὸ λαμπρόν· ἀργὴ γὰρ οὖσα
 οὐ λαμπρά.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="5">
-<milestone unit="28"/> <p>CAP. V. Αὕτη τε δὴ περιττὴ τῇ δυνάμει καὶ τὸ
+            </div>
+            <div n="5" type="chapter">
+               <milestone unit="28"/>
+               <p>CAP. V. Αὕτη τε δὴ περιττὴ τῇ δυνάμει καὶ τὸ
 λυγγούριον· καὶ γὰρ ἐκ τούτου γλύφεται τὰ σφραγίδια
 καὶ ἔστι στερεωτάτη καθάπερ λίθος· ἕλκει γὰρ
 ὥσπερ τὸ ἤλεκτρον, οἱ δέ φασιν οὐ μόνον κάρφη καὶ
@@ -353,10 +364,9 @@
 ἧς ἀνενεχθείσης πρὸς στιρὰν (Ἄστυρα Schn.) σφρα
 γίδιον γλυφθὲν ἀνεπέμφθη (Ἀλεξάνδρῳ Plin.) βασιλεῖ
 διὰ τὸ περιττόν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="6">
-<p>CAP. VI. Καὶ αὗται μὲν ἅμα τῷ καλῷ καὶ τὸνιον <milestone unit="33"/>
+            </div>
+            <div n="6" type="chapter">
+               <p>CAP. VI. Καὶ αὗται μὲν ἅμα τῷ καλῷ καὶ τὸνιον <milestone unit="33"/>
 ἔχουσιν. αἱ δὲ δὴ ἐκ τῆς Ἑλλάδος εὐτελέστεραι,
 οἷον τὸ ἀνθράκιον τὸ ἐξ Ὀρχομενοῦ τῆς Ἀρκαδίας.
 ἔστι δὲ οὗτος μελάντερος τοῦ Χίου· κάτοπτρα δὲ ἐξ
@@ -397,9 +407,9 @@
 <pb n="43"/>
 φύσει καὶ ὁ ἰνδικὸς κάλαμος ἀπολελιθωμένος. ταῦτα
 μὲν οὖν ἄλλης σκέψεως.</p>
-</div>
-<div type="textpart" subtype="chapter" n="7">
-<p>CAP. VII. Τῶν δὲ λίθων πολλαί τινες αἰ φύσεις <milestone unit="39"/>
+            </div>
+            <div n="7" type="chapter">
+               <p>CAP. VII. Τῶν δὲ λίθων πολλαί τινες αἰ φύσεις <milestone unit="39"/>
 καὶ τῶν μεταλλευομένων. ἔνιαι γὰρ ἅμα χρυσὸν ἔχουσι
 κοὶ ἄργυρον, προφανῆ δὲ μόνον ἄργυρον· βαρύτεραι
 δὲ αὗται πολὺ καὶ τῇ ῥοπῇ καὶ τῇ ὀσμῇ. καὶ κύανος
@@ -466,10 +476,9 @@
 <pb n="45"/>
 τὰ ἀγάλματα ποιοῦσιν, ὃ καὶ σημεῖον ὑπολαμβάνουσιν
 ἴδιόν τι τοῦ ἕδους.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="8">
-<p>CAP. VII. Αἱ μὲν οὖν τῶν λίθων διαφοραὶ καὶ <milestone unit="48"/>
+            </div>
+            <div n="8" type="chapter">
+               <p>CAP. VII. Αἱ μὲν οὖν τῶν λίθων διαφοραὶ καὶ <milestone unit="48"/>
 δυνάμεις εἰσὶν ἐν τούτοις. αἱ δὲ τῆς γῆς ἐλάττονες μὲν
 ἰδιώτεραι δέ. τὸ μὲν γὰρ τήκεσθαι καὶ μαλάττεσθαι
 καὶ πάλιν ἀποσκληρύνεσθαι καὶ ταύτῃ συμβαίνει. τήκεται
@@ -567,8 +576,7 @@
 ἓν πρὸς ἓν ἀλείφοντες. γίνεται δὲ τὸ μὲν ὑφιστάμενον
 κάτω κιννάβαρι, τὸ δʼ ἐπάνω καὶ πλεῖον πλύσμα.
 καταδεῖξαι δέ φασι καὶ εὑρεῖν τὴν ἐργασίαν Καλλίαν <milestone unit="59"/>
-
-<pb n="48"/>
+                  <pb n="48"/>
 τινὰ Ἀθηναῖον ἐκ τῶν ἀργυρείων, ὃς οἰόμενος ἔχειν
 τὴν ἄμμον χρυσίον διὰ τὸ λαμπυρίζειν ἐπραγματεύετο
 καὶ συνέλεγεν. ἐπεὶ δʼ ἤσθετο ὅτι οὐκ ἔχει τὸ δὲ τῆς
@@ -582,10 +590,10 @@
 τις χρεία καὶ τούτου. ποιεῖται δὲ ὅταν τὸ (κιννάβαρι)
 τριφθῇ μετʼ ὄξους ἐν ἀγγείῳ χαλκῷ καὶ δοίδυκι χαλκῷ.
 τὰ μὲν οἦν τοιαύτα τάχʼ ἄν τις λάβοι πλείω.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="9">
-<milestone unit="61"/> <p>CAP. IX. Τῶν δὲ μεταλλευτῶν τὰ ἐν τοῖς γεωφανέσι
+            </div>
+            <div n="9" type="chapter">
+               <milestone unit="61"/>
+               <p>CAP. IX. Τῶν δὲ μεταλλευτῶν τὰ ἐν τοῖς γεωφανέσι
 ἔτι λοιπὰ, <del>περὶ</del> ὧν ἡ γένεσις ὥσπερ ἐλέχθη κατʼ
 ἀρχὰς ἐκ συρροῆς τινὸς καὶ ἐκκρίσεως γίνεται καθαρωτέρας
 καὶ ὁμαλωτέρας τῶν ἄλλων. χρώματα δὲ παντοῖα
@@ -657,9 +665,8 @@
 δὲ κόπτουσι ὥσπερ τὴν κονίαν. ἐκ τούτου δʼ
 ἂν δόξειεν εἶναι φανερὸν ὅτι πυρώδης τις ἡ γένεσις
 αὐτῆς τὸ ὅλον ἐστίν.</p>
-</div>
-</div>
-</div>
-</body>
-</text>
+            </div>
+         </div>
+      </body>
+   </text>
 </TEI>

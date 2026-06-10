@@ -1,106 +1,125 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">
-<fileDesc>
-<titleStmt>
- <title xml:lang="grc">Περὶ ῥημάτων</title>
- <author xml:lang="lat">Herodianus</author>
-<editor>August Lentz</editor>
- <funder>Harvard Library Arcadia Fund</funder>
- <principal>Gregory Crane</principal>
- <respStmt>
-  <persName xml:id="DDD">Digital Divide Data</persName>
-  <resp>Corrected and encoded the text</resp>
- </respStmt>
- <respStmt>
-  <persName>Gregory Crane</persName>
-  <resp>Editor-in-Chief, Perseus Digital Library</resp>
- </respStmt>
- <respStmt>
-  <persName>Matt Munson</persName>
-  <resp>Project Manager (University of Leipzig)</resp>
- </respStmt>
- <respStmt>
-  <persName>Annette Gessner</persName>
-  <resp>Project Assistant (University of Leipzig)</resp>
- </respStmt>
- <respStmt>
-  <persName>Thibault Clérice</persName>
-  <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
- </respStmt>
- <respStmt>
-  <persName>Bruce Robertson</persName>
-  <resp>Technical Advisor</resp>
- </respStmt>
-</titleStmt>
-<publicationStmt>
-<authority>Harvard College Library</authority>
-<idno type="filename">tlg0087.tlg021.1st1K-grc1.xml</idno>
-<availability>
- <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-</availability>
-<date>2017</date>
-<publisher>Harvard College Library</publisher>
-<pubPlace>United States</pubPlace>
-</publicationStmt>
-<sourceDesc>
-<listBibl>
- <biblStruct>
- <monogr>
-  <title xml:lang="lat">Herodiani Technici Reliquiae</title>
-  <editor>
-	<persName>
-	 <name>August Lentz</name>
-	</persName>
-  </editor>
-  <author ref="urn:cts:greekLit:tlg0087" xml:lang="lat">Aelius Herodianus</author>
-  <imprint>
-	<publisher>Teubner</publisher>
-	<pubPlace>Leipzig</pubPlace>
-	<date>1868</date>
-  </imprint>
-  <biblScope unit="volume">2</biblScope>
- </monogr>
-<series> 
-        <title level="s" xml:lang="lat">Grammatici Graeci</title>
-     <biblScope unit="volume">3.2.1</biblScope>
-    </series>
-  <ref target="http://hdl.handle.net/2027/njp.32101054496086">Hathi Trust</ref>
- </biblStruct>
-</listBibl>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
- <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
- <refsDecl n="CTS">
-  <cRefPattern n="paragraph" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-  <cRefPattern n="section" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
- </refsDecl>
-</encodingDesc>
-<profileDesc>
-<langUsage>
-<language ident="grc">Greek</language>
-<language ident="lat">Latin</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change/>
-</revisionDesc>
-</teiHeader>
-<text>
-<body>
- <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0087.tlg021.1st1K-grc1">
-<pb n="787"/>
-<head>ΕΚ ΤΩΝ ΗΡΩΔΙΛΝΟΥ
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="grc">Περὶ ῥημάτων</title>
+            <author xml:lang="lat">Herodianus</author>
+            <editor>August Lentz</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg0087.tlg021.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2017</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg0087.tlg021.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Herodiani Technici Reliquiae</title>
+                     <editor>
+                        <persName>
+                           <name>August Lentz</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg0087" xml:lang="lat">Aelius Herodianus</author>
+                     <imprint>
+                        <publisher>Teubner</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1868</date>
+                     </imprint>
+                     <biblScope unit="volume">2</biblScope>
+                  </monogr>
+                  <series>
+                     <title level="s" xml:lang="lat">Grammatici Graeci</title>
+                     <biblScope unit="volume">3.2.1</biblScope>
+                  </series>
+                  <ref target="http://hdl.handle.net/2027/njp.32101054496086">Hathi Trust</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+         <refsDecl n="CTS">
+            <cRefPattern n="paragraph"
+                         matchPattern="(.+).(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern n="section"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-section"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0087.tlg021.1st1K-grc1">
+         <pb n="787"/>
+         <head>ΕΚ ΤΩΝ ΗΡΩΔΙΛΝΟΥ
 ΠΕΡΙ ΡΗΜΑΤΩΝ.</head>
-<p>( Περὶ ῥήματοϲ καθολικῶϲ).</p>
-<p>(Περὶ ϲυζυγιῶν).</p>
-<div type="textpart" subtype="section" n="1">
-<head>1.</head> <lb n="5"/>
-<div type="textpart" subtype="paragraph" n="1"><p source="Il. Pros. Α 278">τὸ ῥῆμα (sc. ἐθέλω) τῶν παραλόγων κατὰ τὸν
-τόνον ἐϲτὶ τριϲύλλαβον ὄν, ὡϲ δείκνυται ἐν τοῖϲ περὶ ῥημάτων.</p></div>
-<div type="textpart" subtype="paragraph" n="2"><p>( Περὶ παρ ῳχημένων).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p source="Constantin. Lascar. βιβλίον γ’ collato Choer. p. 512 seqq">πᾶν ῥῆμα οἵαϲ
+         <p>( Περὶ ῥήματοϲ καθολικῶϲ).</p>
+         <p>(Περὶ ϲυζυγιῶν).</p>
+         <div n="1" type="section">
+            <head>1.</head>
+            <lb n="5"/>
+            <div n="1" type="paragraph">
+               <p source="Il. Pros. Α 278">τὸ ῥῆμα (sc. ἐθέλω) τῶν παραλόγων κατὰ τὸν
+τόνον ἐϲτὶ τριϲύλλαβον ὄν, ὡϲ δείκνυται ἐν τοῖϲ περὶ ῥημάτων.</p>
+            </div>
+            <div n="2" type="paragraph">
+               <p>( Περὶ παρ ῳχημένων).</p>
+            </div>
+            <div n="3" type="paragraph">
+               <p source="Constantin. Lascar. βιβλίον γ’ collato Choer. p. 512 seqq">πᾶν ῥῆμα οἵαϲ
 ἄν εἴη ϲυζυγίαϲ καὶ καταλήξεωϲ, ἢ ἀπὸ φωνήεντοϲ ὄρχεται ἢ διφθόγγου ἢ ϲυμφώνου. <lb n="10"/>
 εἰ μὲν οὖν ἀπὸ φωνήεντοϲ, ἢ μεταβολικοῦ ἢ ἀμεταβόλου· εἰ μὲν ἀπὸ
 ἀμεταβόλου δηλονότι η ῖ ῦ ω οὐδεμία τροπὴ γίνεται ἐν τοῖϲ παρῳχημένοιϲ οἷον
@@ -109,16 +128,18 @@
 ἀμετάβολα προϲαγορεύεται. τὸ δὲ ὑβρίζω καὶ ἰξεύω καὶ τὰ ὅμοια ἐν μὲν τῷ ἐνεϲτῶτι <lb n="15"/>
 θέϲει μακρὸν τὸ δίχρονον ἔχει, ἐν δὲ τοῖϲ παρψχημένοιϲ φύϲει μακρὸν τῷ
 λόγῳ τῆϲ αὐξήϲεωϲ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p>Εί δὲ τὸ ῥῆμα ἄρχεται ἀπὸ φωνήεντοϲ μεταβολικοῦ δηλονότι τὸ ᾶ ε ο, γίνεται
+            </div>
+            <div n="4" type="paragraph">
+               <p>Εί δὲ τὸ ῥῆμα ἄρχεται ἀπὸ φωνήεντοϲ μεταβολικοῦ δηλονότι τὸ ᾶ ε ο, γίνεται
 τροπὴ ἐν τοῖϲ παρῳχημένοιϲ τοῦ βραχέοϲ εἰϲ μακρὸν μεταβαλλομένου. καὶ
 εἰ μὲν ἄρχεται τὸ θέμα ἀπὸ τοῦ ᾱ τρέπεται κοινῶϲ τὸ ᾱ εἰϲ η οἰον ἀνύω ἤνυον <lb n="20"/>
 ἤνυκα ἠνύκειν νυϲα πλὴν τῶν ϲεϲημειωμένων ἀηθέϲϲω ἀἡθεϲϲον «ἀήθεϲϲον γὰρ
 ἐπ’ αὐτόνα» (Κ 493), ἀηδίζομαι ἀηδιζόμην διὰ τὴν ἐπαλληλίαν τῶν δύο ῆ, ὄω τὸ
 πνέω ὄεν ῖνα μὴ ϲυνεμπέϲῃ τῷ ῆεν, ἀω τὸ ἀκούω ὄιον νᾷ μὴ ϲυνεμπέϲῃ
 τῷ ἤϊον τῷ ἐπορευόμην.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5"><p>Τὰ δὲ ἀπὸ τοῦ ε ἀρχόμενα ῥήματα ἀδιαφόρωϲ εἴωθε κλίνεϲθαι καὶ διὰ τῆϲ ει <lb n="25"/>
+            </div>
+            <div n="5" type="paragraph">
+               <p>Τὰ δὲ ἀπὸ τοῦ ε ἀρχόμενα ῥήματα ἀδιαφόρωϲ εἴωθε κλίνεϲθαι καὶ διὰ τῆϲ ει <lb n="25"/>
 διφθόγγου κατ’ ἀρχὴν καὶ διὰ τοῦ η. ἀπὸ γοῦν τοῦ ἑλκῶ περιϲπωμένου εἵλκεον
 ( 395) φήϲαϲ τὸν παρατατικὸν διὰ τοῦ ῆ τὸν ἀόριϲτονἐξήνεγκεν ἐν τῷ «Λητὼ γὰρ
 <note type="footnote">1. 6 ef. E. M. 318, 32 et Arcad. 168. 1. 21 homerica exempla ex Choer.
@@ -128,20 +149,22 @@ praeceptum ex Il. Pr. 543 pro iis. quae Ϲhoer. et Lascaris praecipiunt: εἰ �
 ϲεϲημειωμένων διϲυλλάβων καὶ ὑπερδιϲυλλάβων, ἐν οἶϲ προϲτίθεται τὸ ῑ ἐν παρψχ
 μένοιϲ. τούτων δὲ ὁ κανὼν κατὰ τοὺϲ παλαιοὺϲ (recurrit etiam in An. Par. ΙΙΙ 346
 24) τοιοῦτόϲ τιϲ τυγχάνει γε ὦν· τὰ ἀπὸ τοῦ ε ἀρχόμενα ὑπερδιϲύλλαβα μὲν ὄντα</note>
-
-<pb n="788"/>
+                  <pb n="788"/>
 ἥλκηϲε Διόϲ» (λ 580). ὀλλ’ οὐ θέλει πάλιν τὸ τὸ κατ’ ἀρχὴν τῶν παρψχημένων
 εἰϲ ε καὶ α διαλύεϲθαι, ὁπότε ὁ ἐνεϲτὼϲ ἄρχει ἀπὸ τοῦ ε, ἀπὸ μέντοι τοῦ
 ᾱ καὶ η, ὡϲ δῆλον ἐκ τούτων, ἤλη ἐάλη, ἤγη ἐάγη, ἦδον ἕαδον.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="6"><p>Εί δὲ ἄρχεται ἀπὸ τοῦ ο μικροῦ τὸ θέμα, τρέπεται τὸ μικρὸν εἰϲ ω μέγα,
+            </div>
+            <div n="6" type="paragraph">
+               <p>Εί δὲ ἄρχεται ἀπὸ τοῦ ο μικροῦ τὸ θέμα, τρέπεται τὸ μικρὸν εἰϲ ω μέγα,
 <lb n="5"/> ὀνομάζω ὦνόμαζον ὠνόμακα ὠνομάκειν ὦνόμαϲα.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="7"><p>Ταῦτα δὲ παρὰ ποιηταῖϲ ἀναύξητα ἤτοι ἄτρεπτα μένει διὰ τὸ μέτρον ἔθει
+            </div>
+            <div n="7" type="paragraph">
+               <p>Ταῦτα δὲ παρὰ ποιηταῖϲ ἀναύξητα ἤτοι ἄτρεπτα μένει διὰ τὸ μέτρον ἔθει
 Ἰωνικῷ, ἄκουεν ἀντὶ τοῦ ῆκουεν, ἔλαυνεν ἀντὶ τοῦ λαυνεν, ὀνόμαϲεν ἀντί τοῦ
 ὦνόμαϲεν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="8"><p>Ὅτε δὲ τὸ ῥῆμα ἄρχεται ἀπὸ τῶν τριῶν τούτων μεταβολικῶν φωνηέντων,
+            </div>
+            <div n="8" type="paragraph">
+               <p>Ὅτε δὲ τὸ ῥῆμα ἄρχεται ἀπὸ τῶν τριῶν τούτων μεταβολικῶν φωνηέντων,
 <lb n="10"/> οἰ Ἀττικοὶ ποιοῦϲιν ἴδιον παρακείμενον ἐνεργητικόν, παθητικὸν καὶ μέϲον, ἵνα
 μὴ ἀπορῶϲι παρακειμένων ἀπὸ φωνήεντοϲ ἀρχομένων, τὰ ἀρκτικὰ δύο γράμματα
 τοῦ ἐνεϲτῶτοϲ προϲτιθέντεϲ τῷ κοινῷ παρακειμένῳ καὶ τὴν τρίτην ϲυλλαβήν, εἰ
@@ -158,11 +181,13 @@ praeceptum ex Il. Pr. 543 pro iis. quae Ϲhoer. et Lascaris praecipiunt: εἰ �
 λαμαι καὶ Ἀττικῶϲ ἀλήλαμαι καὶ κατὰ ὑπέρθεϲιν ἀλάλημαι. δύναται δὲ καὶ εἶναι
 ἐνεϲτώϲ ἐϲτι γὰρ ἄλημι ὡϲ τίθημι ἀλέσαι ὡϲ τίθεμαι καὶ διπλαϲιαϲμὸϲ μετ’ ἐπεκτάϲεωϲ
 <lb n="25"/> Αἰολικῆϲ ἀλάλημαι.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="9"><p>Ἑν ἐνίοιϲ δὲ μόνον προϲτίθεται ε ἐν παρατατικῷ καὶ παρακειμένῳ οἰον ὥρων
+            </div>
+            <div n="9" type="paragraph">
+               <p>Ἑν ἐνίοιϲ δὲ μόνον προϲτίθεται ε ἐν παρατατικῷ καὶ παρακειμένῳ οἰον ὥρων
 ἑώρων, ὥρακα ἑώρακα, ὦνοῦμαι ἐωνούμην ἐώνημαι. τὸ δὲ ξυνέηκα ἔειπε ποιητικά.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="10"><p>Εἰ δὲ τὸ ῥῆμα ἄρχεται ἀπὸ διφθόγγου, ἤ ἀπὸ τρεπτῆϲ ἢ ἀπὸ ἀτρέπτου. εἰ
+            </div>
+            <div n="10" type="paragraph">
+               <p>Εἰ δὲ τὸ ῥῆμα ἄρχεται ἀπὸ διφθόγγου, ἤ ἀπὸ τρεπτῆϲ ἢ ἀπὸ ἀτρέπτου. εἰ
 μὲν ἀπὸ ἀτρέπτου δηλονότι εῦ αι ου οὐδεμία τροπὴ γίνεται ἐν τοῖϲ παρψχημένοιϲ.
 <lb n="30"/> ἡ μὲν ει δίφθογγοϲ, ἐπειδὴ ἔχει γνήϲιον μέγεθοϲ, τὸ γὰρ ε μεγεθυνόμενον
 διὰ τῆϲ προϲθήκηϲ τοῦ ι μεγεθύνεται οἷον τυφθέντοϲ τυφθεῖϲα, δαρέντοϲ δαρεῖϲα
@@ -190,24 +215,27 @@ prmam syllabam corripi praecipitur, ψ 70 ἀκήδειϲ. ἄμεινον βα�
 παθῶν in E. M. 56, 27, similia tradit Choer. 569, 15 de diplasiasmo perfecti
 cf. etiam E. M. 134, 52. 1. 20 cf. Il. Pr. Δ 3, ubi ἑήνδανε, ἑέϲϲατο, ἔωϲεν,
 ἐψνοχόει proteruntur.</note>
-
-<pb n="789"/>
+                  <pb n="789"/>
 τούτου χάριν ἄτρεπτόϲ ἐϲτιν — εἰκάζω εἴκαζον καὶ ᾔκαζον παρὰ τοῖϲ Ἀθηναίοιϲ.
 ὁμοίωϲ καὶ ἡ ου δίφθογγοϲ οὐ τρέπεται ὡϲ ἔχουϲα γνήϲιον μέγεθοϲ. τὸ γὰρ
 ο μεγεθυνόμενον διὰ τῆϲ προϲθήκηϲ τοῦ υ μεγεθύνεται οἶον τύπτοντοϲ τύπτουϲα,
 λέγοντοϲ λέγοιϲα καὶ αὐτὸ δὲ τὸ ου, τὸ ὄνομα τοῦ ϲτοιχείου διὰ τοῦ ο καὶ υ γράφετα
-καὶ ἐκφωνεῖται, καὶ διὰ τοῦτο καὶ αὐτὸ ἄτρεπτον μένει οὐρῶ οὔρουν —</p> <lb n="5"/>
-</div></div>
-<div type="textpart" subtype="section" n="2">
-<head>2.</head>
-<div type="textpart" subtype="paragraph" n="1"><p>ἡ ευ δίφθογγοϲ ὡϲ μὴ ἔχουϲα γνήϲιον μέγεθοϲ (τὸ γὰρ υ οὐκ ἔϲτι γνήϲιον
+καὶ ἐκφωνεῖται, καὶ διὰ τοῦτο καὶ αὐτὸ ἄτρεπτον μένει οὐρῶ οὔρουν —</p>
+               <lb n="5"/>
+            </div>
+         </div>
+         <div n="2" type="section">
+            <head>2.</head>
+            <div n="1" type="paragraph">
+               <p>ἡ ευ δίφθογγοϲ ὡϲ μὴ ἔχουϲα γνήϲιον μέγεθοϲ (τὸ γὰρ υ οὐκ ἔϲτι γνήϲιον
 μέγεθοϲ τοῦ ε, ἀλλὰ τοῦ ο) ὀφείλει τρέπειν τὸ ἑ εἰϲ η, ὡϲ καὶ
 παρὰ Ἀττικοῖϲ. ηὐφράνθη γὰρ λέγουϲι καὶ ηὐχόμην. ἀλλ’ ἐπεκράτηϲε
 κατὰ κοινὴν διάλεκτον ἡ ευ δίφθογγοϲ μὴ τρέπεϲθαι οἷον εὔχομαι εὐχόμην, <lb n="10"/>
 εὐφραίνομαι εὐφραινόμην, εὐχαριϲτῶ εὐχαρίϲτουν καὶ ἴϲωϲ χάριν
 εὐφωνίαϲ, ὡϲ λέγει ὁ Ἡρωδιανόϲ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p>Εἰ δὲ ἄρχεται ἀπὸ τρεπτοῦ δηλονότι αι αυ οι, γίνεται ἡ αὐτὴ τροπὴ τῶν
+            </div>
+            <div n="2" type="paragraph">
+               <p>Εἰ δὲ ἄρχεται ἀπὸ τρεπτοῦ δηλονότι αι αυ οι, γίνεται ἡ αὐτὴ τροπὴ τῶν
 μεταβολικῶν φωνηέντων. εἰ μὲν ἀπὸ τῆϲ αι, τρέπεται τὸ α εἰϲ η καὶ τὸ ι προϲχόμην,
 αἰϲχύνομαι ᾐϲχυνόμην, αἰτῶ ᾔτουν εἰ δὲ ἁπὸ τῆϲ αυ, τρέπεται τὸ α <lb n="15"/>
 εἰϲ η οἶον αὐλῶ ηὔλουν, αὔξω ηὔξουν, αὐχῶ ηὔχουν, αὐτομολῶ ηὐτομόλουν. εἰ
@@ -222,13 +250,15 @@ cf. etiam E. M. 134, 52. 1. 20 cf. Il. Pr. Δ 3, ubi ἑήνδανε, ἑέϲϲ�
 ῥοῦν καὶ τὸ οἰμώζω οἴμωζον, ᾠκούρουν καὶ ὠμώζουν παρὰ Ϲοφοκλεῖ ἐν Τραχινίαιϲ <lb n="25"/>
 (928) «ἰδὼν δ’ ὁ παῖϲ ᾤμωξε» καὶ παρὰ τῷ ποιητῇ (ν 198) « ᾤμωξέν τ ἄρ’ ἔπειτα
 καὶ ὣ πεπλήγετο μηρώ».</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p>Εἰ δὲ ἀπὸ ϲυμφώνου ἄρχεται τὸ ῥῆμα, ὁ παρατατικὸϲ καὶ ἀόριϲτοϲ πρῶτοϲ
+            </div>
+            <div n="3" type="paragraph">
+               <p>Εἰ δὲ ἀπὸ ϲυμφώνου ἄρχεται τὸ ῥῆμα, ὁ παρατατικὸϲ καὶ ἀόριϲτοϲ πρῶτοϲ
 καὶ δεύτεροϲ προϲλαμβάνουϲιν ἑ, γράφω ἔγραφον ἔγραψα. οἱ δὲ Ἀττικοὶ αὔξηϲιν
 ἐπὶ αὐξήϲεωϲ ποιοῦντεϲ ἠδυνάμην ἀντὶ ἐδυνάμην καὶ ἠβουλόμην ἀντὶ ἐβουλόμην <lb n="30"/>
 καὶ ἤμελλον ἀντὶ ἔμελλον λέγουϲιν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p>Ὅτε δὲ ὁ παρατατικὸϲ ἄρχεται ἀπὸ μακρᾶϲ φύϲει ὡϲ ἐπὶ τῶν ἀπὸ φωνήεντοϲ
+            </div>
+            <div n="4" type="paragraph">
+               <p>Ὅτε δὲ ὁ παρατατικὸϲ ἄρχεται ἀπὸ μακρᾶϲ φύϲει ὡϲ ἐπὶ τῶν ἀπὸ φωνήεντοϲ
 ἀρχομένων, ἀπὸ τῆϲ αὐτῆϲ ἄρχεται καὶ ὁ παρακείμενοϲ ἠγόραζον ἠγόρακα, ὠνόμανοπολῶ
 ὦνόμακα. ὅτε δὲ ἄρχεται ἀπὸ μακρᾶϲ θέϲει ὡϲ ἐπί τῶν ἀπὸ δύο ϲυμφώνων ἀρχομένων,
 ἀπὸ τῆϲ αὐτῆϲ ἄρχεται καὶ ὁ παρακείμενοϲ οἷον ἔφθειρονἔφθαρκα, ἔϲπειρον <lb n="35"/>
@@ -245,8 +275,7 @@ cf. etiam E. M. 134, 52. 1. 20 cf. Il. Pr. Δ 3, ubi ἑήνδανε, ἑέϲϲ�
 ἐξουϲίαν οὕτω γέγονε — καὶ πλὴν τῶν ἀρχομένων ἀπὸ διπλῶν ψ ζῶ
 ἔζηκα, ψάλλω ἔψαλκα, ξηραίνω ἐξήραγκα. τὰ δὲ ἀπὸ δαϲέων θ φ χ ἀρχόμενα
 <note type="footnote">I. 7 Choer. 522, 7. l. 40 ef. Herod. περὶ παθῶν in E. M. 308, 30.</note>
-
-<pb n="790"/>
+                  <pb n="790"/>
 ἀναδιπλαϲιάζεται μέν, τρέπεται δὲ τὰ δαϲέα εἰϲ τὰ ἀντιϲτοιχοῦντα ψιλά, θεωρῶ
 τεθεώρηκα, φωνῶ πεφώνηκα, χωνεύω κεχώνευκα. ὅτε δὲ ὁ ἐνεϲτὼϲ ἄρχεται ἀπὸ
 τοῦ λ μ, οἱ Ἀττικοῖ ποιοῦϲι ἵδιον παρακείμενον ἐκβολῇ τοῦ πρώτου ἀμεταβόλου
@@ -265,13 +294,14 @@ cf. etiam E. M. 134, 52. 1. 20 cf. Il. Pr. Δ 3, ubi ἑήνδανε, ἑέϲϲ�
 ἄλλωϲ τε δὲ καὶ πολλάκιϲ εὑρίϲκεται καὶ ἐν μέτρῳ τὸ μν ἀποτελοῦν κοινὴν ϲυλλαβὴν
 οἶον ὡϲ παρὰ Καλλιμάχῳ,
 <lg>
-<l>τὼϲ μὲν ὁ Μνηϲάρχειοϲ ἔφη ξένοϲ</l>
-</lg>
+                     <l>τὼϲ μὲν ὁ Μνηϲάρχειοϲ ἔφη ξένοϲ</l>
+                  </lg>
 καὶ παρὰ Κρατίνῳ «ἀλλοτριογνώμοιϲ ἐπιλήϲμοϲι μνημονικοῖϲιν». τὸ δὲ κέκτημαι,
 <lb n="20"/> πέπταμαι καὶ πέπτωκα κατὰ πλεοναϲμὸν τοῦ κ καὶ π γέγονε Αἰολικῶϲ. οἱ γὰρ
 Αἰολεῖϲ εἰώθαϲι προϲτιθέναι ϲύμφωνον ὥϲπερ τὸ ἐπτερύγωμαι πεπτερύγωμαι.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5"><p>ἔτι δὲ εἰ μὲν μέλλων ἄρχεται ἀπὸ φωνήεντοϲ, ἰϲοϲυλλαβεῖ αὐτῷ ὁ κοινὸϲ
+            </div>
+            <div n="5" type="paragraph">
+               <p>ἔτι δὲ εἰ μὲν μέλλων ἄρχεται ἀπὸ φωνήεντοϲ, ἰϲοϲυλλαβεῖ αὐτῷ ὁ κοινὸϲ
 παρακείμενοϲ ἀγοράϲω ἠγόρακα, ὀμόϲω ὤμοκα. εἰ δὲ ἀπὸ ϲυμφώνου, περιττεύει
 τύψω τέτυφα, ποιήϲω πεποίηκα. ὁ ὑπερϲυντέλικοϲ ἐν τοῖϲ ἀπὸ φωνήεντοϲ ἀρχομένοιϲ
 <lb n="25"/> ἰϲοϲυλλαβεῖ καὶ ὁμοχρονεῖ τῷ παρακειμένῳ ἠγόρακα ἠγοράκειν, ἔφθαρκα
@@ -280,10 +310,12 @@ cf. etiam E. M. 134, 52. 1. 20 cf. Il. Pr. Δ 3, ubi ἑήνδανε, ἑέϲϲ�
 δὲ πολλάκιϲ ἐν τοῖϲ Ἀττικοῖϲ τοῖϲ ἀπὸ βραχείαϲ ἀρχομένοιϲ, ὀμώμοκα ὠμωμώκειν,
 ἀκήκοα ἠκηκόειν. καὶ ταῦτα μὲν ἐκ τοῦ πολυμαθοῦϲ Ἡρωδιανοῦ περὶ
 <lb n="30"/> παρῳχημένων γενικῶϲ.</p>
-</div></div>
-<div type="textpart" subtype="section" n="3">
-<head>3.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Choer. 522, 30">ἐπὶ τῶν ἀπὸ προθέϲεωϲ ἀρχομένων γίνεται ϲύνθεϲιϲ
+            </div>
+         </div>
+         <div n="3" type="section">
+            <head>3.</head>
+            <div n="1" type="paragraph">
+               <p source="Choer. 522, 30">ἐπὶ τῶν ἀπὸ προθέϲεωϲ ἀρχομένων γίνεται ϲύνθεϲιϲ
 κλίϲεωϲ, τουτέϲτι κατὰ χρόνον γίνεται ἡ ϲύνθεϲιϲ καὶ ὡϲ ἄν τιϲ
 εἴποι, πρῶτον κλίνεται καὶ οὕτω ϲυντίθεται οἷον ἀπὸ τοῦ γράφω
 <lb n="35"/> γίνεται καταγράφω καὶ ἀπὸ τοῦ ἔγραφον κατέγραφον καὶ ἀπὸ τοῦ
@@ -301,8 +333,7 @@ formarum κέκτημαι, πέπταμαι, πέπτωκα ex Herod. περὶ 
 c. 1), et paullo ante: ἐπειδὴ τὰ ψιλὰ πάντων τῶν ϲυμφώνων ἀϲθενέϲτερά ἐϲτιν,
 ἐν τῷ πέπτωκα καὶ κέκτημαι πτ ἐϲτὶ καὶ κτ, ταῦτα δὲ ψιλά ἐϲτιν, εἰκότωϲ τῷ
 λόγῳ τῆϲ κοινῆϲ ἀνεδιπλαϲιάϲθη.</note>
-
-<pb n="791"/>
+                  <pb n="791"/>
 ταῦτα μὲν ὁ Ἀπολλώνιόϲ φηϲι. πρὸϲ τοῦτον δὲ ἀντιλέγει ὁ Ἥρωδιανὸϲ
 λέγων, ὅτι πρῶτον μὲν οὐκ ἔϲτιν ἡ κατά πρόθεϲιϲ ἐν τῷ κατέγραφον,
 ἀλλὰ μέροϲ ἐϲτὶ τοῦ ῥήματοϲ, εἰ καὶ ἀπὸ προθέϲεωϲ ἐγένετο
@@ -313,10 +344,13 @@ c. 1), et paullo ante: ἐπειδὴ τὰ ψιλὰ πάντων τῶν ϲυ�
 ἀλλωϲ τε ἰδοὺ τὸ ϲυνήγοροϲ ἀπὸ προθέϲεωϲ ἄρχεται, καὶ ὅμωϲ
 λέγεται εὐϲυνήγοροϲ, καὶ πάλιν ϲύμβουλοϲ εὐϲύμβουλοϲ, ἐπανοίκτηϲ
 θυρεπανοίκτηϲ· οὐκ ὤφειλεν οὖν οὐδὲ ταῦτα ἀπὸ προθέϲεωϲ ἀρχόμενα <lb n="10"/>
-δέξαϲθαι ἔξωθέν τί ποτε. ταῦτα μὲν οὖν ὁ Ἡρωδιανόϲ.</p></div>
-<div type="textpart" subtype="paragraph" n="2"><p>(Περὶ ἐνεϲτῶτοϲ).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p>Τᾶν δεύτερον εἰϲ ϲ λῆγον ἀποβολῇ τοῦ ϲ ποιε τὸ τρίτον πρόϲωπον οἶον
+δέξαϲθαι ἔξωθέν τί ποτε. ταῦτα μὲν οὖν ὁ Ἡρωδιανόϲ.</p>
+            </div>
+            <div n="2" type="paragraph">
+               <p>(Περὶ ἐνεϲτῶτοϲ).</p>
+            </div>
+            <div n="3" type="paragraph">
+               <p>Τᾶν δεύτερον εἰϲ ϲ λῆγον ἀποβολῇ τοῦ ϲ ποιε τὸ τρίτον πρόϲωπον οἶον
 τύπτειϲ τύπτει, λέγειϲ λέγει, ἐτύφθηϲ ἐτύφθη, ποιεῖϲ ποιεῖ, βοᾶϲ βοᾷ, χρυϲοῖϲ
 χρυϲοῖ, ἔλεγεϲ ἔλεγε, ἔτυπτεϲ ἔτυπτε, ἔλαβεϲ ἔλαβε, ἔμαθεϲ ἔμαθε χωρίϲ τοῦ <lb n="15"/>
 παρακειμένου καὶ τοῦ πρώτου ἀορίϲτου καὶ τῶν ἀπὸ τῶν εἰϲ μι. καὶ «χωρὶϲ μὲν τοῦ
@@ -326,12 +360,15 @@ c. 1), et paullo ante: ἐπειδὴ τὰ ψιλὰ πάντων τῶν ϲυ�
 ἐπειδὴ ἐπὶ τούτων κατὰ τὸν ἐνεϲτῶτα οὐχ ὅτι τὸ ϲ οὐκ ἀποβάλλεται, ἀλλὰ καὶ <lb n="20"/>
 τὸ ι προϲέρχεται οἷον τίθημι τίθηϲ τίθηϲι, ἵϲτημι ἵϲτηϲ ἵϲτηϲι, δίδωμι δίδωϲδίδωϲι,
 ζεύγνυμι ζεύγνυϲ ζεύγνυϲι.</p>
-</div></div>
-<div type="textpart" subtype="section" n="4">
-<head>4.</head>
-<div type="textpart" subtype="paragraph" n="1"><p>περ ϲυντάξεωϲ ϲτοιχείων fr. 14.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p source="Choer. 505, 17">ἄξιόν ἐϲτι ζητῆϲαι, τίνοϲ χάριν ἀπὸ πληθυντικῶν κανόνιζομεν <lb n="25"/>
+            </div>
+         </div>
+         <div n="4" type="section">
+            <head>4.</head>
+            <div n="1" type="paragraph">
+               <p>περ ϲυντάξεωϲ ϲτοιχείων fr. 14.</p>
+            </div>
+            <div n="2" type="paragraph">
+               <p source="Choer. 505, 17">ἄξιόν ἐϲτι ζητῆϲαι, τίνοϲ χάριν ἀπὸ πληθυντικῶν κανόνιζομεν <lb n="25"/>
 τὰ δυϊκὰ ἐν ῥήμαϲι· δοκεῖ γὰρ τοῦτο ἀτάκτωϲ ἔχειν· οὐδεὶϲ γὰρ τὰ πρῶτα
 ἐκ τῶν ὑϲτέρων κανονίζει. καὶ ἔϲτιν εἰπεῖν, ὡϲ λέγει Φιλόξενοϲ, ἐπειδὴ τὰ
 δυικὰ ὑϲτερογενῆ ἐϲτιν ὕϲτερον γὰρ ἐπενοήθη τὰ δυικά ὅθεν οὐδὲ πᾶϲα διάλεκτοϲ
@@ -340,10 +377,12 @@ c. 1), et paullo ante: ἐπειδὴ τὰ ψιλὰ πάντων τῶν ϲυ�
 ἀλλ’ εἰϲ πάντα τῷ πληθυντικῷ ἀριθμῷ κέχρηται ἀντὶ τοῦ δυικοῦ ἀριθμοῦ, μὴ
 ἔχουϲα δυικά. εἰκότωϲ οὖν, ἐπειδὴ τελευταῖον ἐπενοήθη τὰ δυικά, ἔκ τῶν πληθυντικῶν
 κανονίζετοι προτερευόντων αὐτῶν.</p>
-</div></div>
-<div type="textpart" subtype="section" n="5">
-<head>5.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="II. Pr, Γ 152">τὰ τρίτα πρόϲωπα πληθυντικὰ ὁριϲτικὰ ἐνεϲτῶτοϲ <lb n="35"/>
+            </div>
+         </div>
+         <div n="5" type="section">
+            <head>5.</head>
+            <div n="1" type="paragraph">
+               <p source="II. Pr, Γ 152">τὰ τρίτα πρόϲωπα πληθυντικὰ ὁριϲτικὰ ἐνεϲτῶτοϲ <lb n="35"/>
 χρόνου τὴν αὐτὴν φωνὴν καὶ τὸν αὐτὸν τόνον ἀποφέρεται ταῖϲ πληθυντικαῖϲ
 δοτικαῖϲ μετοχαῖϲ, λέγομεν λέγεται λέγουϲι καὶ τοῖϲ λέγουϲιν,
 <note type="footnote">1. 13 Choer.499, 29. l. 20 οὐχ ὅτι scripsi pro παρ’ οἶϲ. Haec ex Herodiano
@@ -355,16 +394,19 @@ sententia exposita fuit, quae eodem redit. l. 25 altera, quae profertur,
 causa ex comparatione rerum physicarum desumpta potius Apollonio adscribam
 collat. Choer. 518, 28. l 35 simile praeceptum etiam in Rhematico exstitisse
 patet ex Theodos. 1009, 30 et Choer. 509, 24; 510, 6.</note>
-
-<pb n="792"/>
+                  <pb n="792"/>
 ἵϲταμεν ἵϲτατε ἱϲτᾶϲι καὶ τοῖϲ ἱϲτᾶϲι, ἵεμεν ἵετε ἱεῖϲι καὶ τοῖϲ ἱεῖϲι.
-ἀντιπίπτει  μόνον διά τι αἴτιον τὸ φαϲί πρὸ τὸ φᾶϲι μετοχικὸν ὡϲ ϲτᾶϲι.</p></div>
-<div type="textpart" subtype="paragraph" n="2"><p>(Περὶ παρατατικοῦ).</p>
-</div></div>
-<div type="textpart" subtype="section" n="6">
-<head>6.</head>
-<lb n="5"/>
-<div type="textpart" subtype="paragraph" n="1"><p source="Ιl. Pr. Δ 222">τὰ ἑνικὰ καὶ τὰ πληθυντικὰ ὁμοφωνοῦντα καὶ ὁμόχρονά
+ἀντιπίπτει  μόνον διά τι αἴτιον τὸ φαϲί πρὸ τὸ φᾶϲι μετοχικὸν ὡϲ ϲτᾶϲι.</p>
+            </div>
+            <div n="2" type="paragraph">
+               <p>(Περὶ παρατατικοῦ).</p>
+            </div>
+         </div>
+         <div n="6" type="section">
+            <head>6.</head>
+            <lb n="5"/>
+            <div n="1" type="paragraph">
+               <p source="Ιl. Pr. Δ 222">τὰ ἑνικὰ καὶ τὰ πληθυντικὰ ὁμοφωνοῦντα καὶ ὁμόχρονά
 ἐϲτιν οἷον ἔλεγον ἐγώ καὶ ἔλεγον ἐκεῖνοι. ἐν δὲ τοῖϲ ϲυγκοπεῖϲι
 τρίτοιϲ ἡ ϲυγκοπὴ ἀναδέχεται τὴν λῆξιν τὴν αὐτὴν τῇ παραληγούϲῃ τῆϲ
 γενικῆϲ τῆϲ κατὰ τὴν μετοχήν, ἔϲτηϲαν ἔϲταν, ϲτάντοϲ γάρ· ἔβηϲαν
@@ -373,14 +415,17 @@ patet ex Theodos. 1009, 30 et Choer. 509, 24; 510, 6.</note>
 ἔφυν, ἐπεὶ φύντοϲ ἔδυμεν ἔδυτε ἔδυϲαν ἔδυν, ἐπεὶ δύντοϲ. περὶ δὲ
 τοῦ «τῆϲ δ’ ἦν τρεῖϲ κεφαλαί» (Hesiod. Theog. 321) ἐν τοῖϲ περὶ
 ῥήματοϲ ἐροῦμεν.</p>
-</div></div>
-<div type="textpart" subtype="section" n="7">
-<head>7.</head>
- <lb n="15"/>
-<div type="textpart" subtype="paragraph" n="1"><p source="Il. Pr. B 832">ἔαϲκε κατὰ ϲυϲτολήν. οὕτωϲ καὶ πάντεϲ· τὰ γὰρ
+            </div>
+         </div>
+         <div n="7" type="section">
+            <head>7.</head>
+            <lb n="15"/>
+            <div n="1" type="paragraph">
+               <p source="Il. Pr. B 832">ἔαϲκε κατὰ ϲυϲτολήν. οὕτωϲ καὶ πάντεϲ· τὰ γὰρ
 διὰ τοῦ ϲκε παρηγμένα Ἰακῶϲ βραχεῖαν ἔχει τὴν παραλήγουϲαν «ὧδε
-δέ τιϲ εἴπεϲκε» (271) καὶ «τὴν αὐτὸϲ φορέεϲκε» (0 646).</p></div>
-<note type="footnote">1. 12 cur autem ἦν, non ἔν factum sit, Choeroboscus 536, 8 Herodiano,
+δέ τιϲ εἴπεϲκε» (271) καὶ «τὴν αὐτὸϲ φορέεϲκε» (0 646).</p>
+            </div>
+            <note type="footnote">1. 12 cur autem ἦν, non ἔν factum sit, Choeroboscus 536, 8 Herodiano,
 ut ex comparatione Il. Pros. patet, duce exposuit ἔϲτι ἦμεν ἦτε ἦϲαν καὶ γίνεται
 παρὰ τοῖϲ ποιηταῖϲ ἦν τὸ τρίτον πρόϲωπον τῶν πληθυντικῶν καὶ ἰδοὺ ἐλλείπει
 μιᾷ ϲυλλαβῇ τοῦ ἰδίου πρώτου πληθυντικοῦ· οὐδὲ (pro οὗ καὶ) γέγονε πρὸϲ
@@ -390,7 +435,7 @@ ut ex comparatione Il. Pros. patet, duce exposuit ἔϲτι ἦμεν ἦτε �
 λήγουϲαν καὶ παραλήγουϲαν, τῷ λόγῳ τῆϲ ἀρχούϲηϲ ἐφυλάχθη τὸ η καὶ οὐκ ἐγένετο
 τῷ λόγῳ τῆϲ παραληγούϲηϲ διὰ τοῦ ε. ἔϲτι καὶ ἄλλη τοιαύτη ἀπολογία,
 ἣν λέγει ὁ Ἡρωδιανὸϲ ἐν τῷ περὶ αὐτοῦ μονοβίβλῳ (cf. supra).</note>
-<note type="footnote">Etiam, quae Choeroboscus 536, 31 de formis ἐπληροῦϲαν et ἐϲχάζοϲαν profert,
+            <note type="footnote">Etiam, quae Choeroboscus 536, 31 de formis ἐπληροῦϲαν et ἐϲχάζοϲαν profert,
 ex Herodiano petita esse videntur: πάλιν δὲ ἐκ τοῦ ἐναντίου εὑρίϲκομεν παρψχημένων
 τινῶν τρίτα πρόϲωπα πληθυντικὰ ἰϲοϲυλλαβοῦντα τοῖϲ ἰδίοιϲ πρώτοιϲ πληθυντικοῖϲ,
 τῆϲ μετοχῆϲ αὐτῶν μὴ οὔϲηϲ εἰϲ ϲ  μετ’ ὀξείαϲ τάϲεωϲ, οἷόν ἐϲτιν ὁ
@@ -409,20 +454,22 @@ ex Herodiano petita esse videntur: πάλιν δὲ ἐκ τοῦ ἐναντί�
 ἀντὶ τοῦ ἀπέλυον· ταῦτα δὲ Καλχηδονίων ἰδιώματόϲ ἐϲτιν (Καρχηδονέων ἰδιώματα
 Μ; leg. cum Cobet. apud Gaisf. E. M. p. 8 Χαλκιδέων; cf. e. g. Sturz, d. dial.
 alexandr. p. 59).</note>
-<note type="footnote">1. 15 explicatum de ϲκε paragoge praeceptum habemus ap. Choerob. p. 632
+            <note type="footnote">1. 15 explicatum de ϲκε paragoge praeceptum habemus ap. Choerob. p. 632
 <lb n="28"/> quod transiit in Ep. Cr. I 309, 12 (E. M. 624, 28), ex quibus quaedam menda.
 sustuli: τὰ Ἰωνικῶϲ γινόμενα διὰ τοῦ ϲκ κατὰ τὸ τρίτον πρόϲωπον ἀπὸ μὲν βαρυ-
 τόνων ὄντα ἔχει φωνῆεν πρὸ τοῦ ϲ καὶ κ τὸ ε οἶον τύπτεϲκε λάβεϲκε λέγεϲκε,
 ὑπεϲταλμένου τοῦ πρώτου ἀορίϲτου. καὶ τὰ τῆϲ πρώτηϲ ϲυζυγίαϲ τῶν περιϲπωμένων
 καὶ τὰ τῆϲ πρώτηϲ ϲυζυγίαϲ τῶν εἰϲ μι ὁμοίωϲ τὸ ε ἔχει πρὸ τοῦ ϲ καὶ.
 κ οἶον ποίεϲκε, τίθεϲκεν, τὰ δὲ τῆϲ δευτέραϲ ϲυζυγίαϲ τῶν περιϲπωμένων ἐν τῷ</note>
-
-<pb n="793"/>
-<div type="textpart" subtype="paragraph" n="2"><p>(Περὶ παρακειμένου).</p>
-</div></div>
-<div type="textpart" subtype="section" n="8">
-<head>8.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Choer. 558, 29">εἴ τιϲ εἶποι, διὰ τί γὰρ τετύφατε καὶ ἐτύψατε διὰ
+            <pb n="793"/>
+            <div n="2" type="paragraph">
+               <p>(Περὶ παρακειμένου).</p>
+            </div>
+         </div>
+         <div n="8" type="section">
+            <head>8.</head>
+            <div n="1" type="paragraph">
+               <p source="Choer. 558, 29">εἴ τιϲ εἶποι, διὰ τί γὰρ τετύφατε καὶ ἐτύψατε διὰ
 τοῦ α φαμὲν καὶ μὴ τετύφετε καὶ ἐτύψετε διὰ τοῦ ε, λέγομεν ὅτι οὐ δύναται
 εἶναι τετύφετε καὶ ἐτύψετε διὰ τοῦ ε, ἐπειδὴ τετύφαμεν καὶ ἐτύψαμεν <lb n="5"/>
 διὰ τοῦ α ἐϲτὶ τὸ πρῶτον πρόϲωπον τῶν πληθυντικῶν· καθόλου δὲ τὰ
@@ -433,10 +480,10 @@ sustuli: τὰ Ἰωνικῶϲ γινόμενα διὰ τοῦ ϲκ κατὰ 
 λέγει δὲ ὁ Ἡρωδιανόϲ, ὅτι εὑρίϲκεται χρῆϲιϲ τῆϲ διὰ τοῦ ε γραφῆϲ,
 ὡϲ παρὰ Ἀριϲτοφάνει ἐν Ὄρνιϲι
 <lg>
-<l>ὑμεῖϲ δὲ πρεϲβεύεϲθε καὶ κεχήνετε</l>
-</lg>
+                     <l>ὑμεῖϲ δὲ πρεϲβεύεϲθε καὶ κεχήνετε</l>
+                  </lg>
 ἀντὶ τοῦ κεχήνατε.</p>
-<note type="footnote">παρατατικῷ μόνῳ τὸ α ἔχει πρὸ τοῦ ϲκ οἶον βόαϲκε γέλαϲκε· ἐν δὲ τῷ β΄ ἀορί-
+               <note type="footnote">παρατατικῷ μόνῳ τὸ α ἔχει πρὸ τοῦ ϲκ οἶον βόαϲκε γέλαϲκε· ἐν δὲ τῷ β΄ ἀορί-
 ϲτῳ ἐὰν ὅλωϲ γίνηται τὸ ε ἔχει πρὸ τοῦ ϲ καὶ κ, μυκῶ μυκᾶϲ ἔμυκον μύκεϲκε·
 τὰ δὲ τῆϲ δευτέραϲ ϲυζυγίαϲ τῶν εἰϲ μι καὶ ἐν τῷ παρατατικῷ καὶ ἐν τῷ δευτέρῳ
 ἀορίϲτῳ διὰ τοῦ α ἐκφέρεται πρὸ τοῦ ϲ καὶ κ οἶον ἵϲτημι ἵϲτηϲ ἵϲτη ἱϲταϲκε ἔϲτην
@@ -474,16 +521,19 @@ non semper omitti allatis «ἐμιϲγέϲκοντο πάροιθεν» (υ 7) 
 μήποτε δὲ ἡ πρόθεϲιϲ ὁλόκληρόϲ ἐϲτι καὶ ὀφείλει διὰ τοῦ α (pro β′) ἐκφέρεϲθαι
 παρακέϲκετο. ἔχομεν δὲ καὶ παρὰ τὸ ἐῶ ἐᾶϲ ἐᾷ εἴων εἴαϲ εἴα εἴαϲκε «ἀλλ’ οὐκ
 εἴαϲκε» (Υ 408). μήποτε δὲ καὶ τοῦτο κατὰ πάθοϲ γέγονε τοῦ ι πλεονάϲαντοϲ.</note>
-<note type="footnote">l. 12 Buttmannus ΙΙ 324 Ὄρνιϲι vitiosum esse animadvertit, quum locus
+               <note type="footnote">l. 12 Buttmannus ΙΙ 324 Ὄρνιϲι vitiosum esse animadvertit, quum locus
 ex Acharn. 133 depromptus sit, sed potest Herodianus memoria lapsus esse; idem
 adnotavit κεχήνετε potius pro imperativo quam pro indicativo habendum esse.</note>
-
-<pb n="794"/></div>
-<div type="textpart" subtype="paragraph" n="2"><p>(Περὶ μέϲου παρακειμένου).</p>
-</div></div>
-<div type="textpart" subtype="section" n="9">
-<head>9.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Choer. 584, 1">εἰ ὁ ἐνεϲτὼϲ διὰ δύο ἀμεταβόλων, διὰ τοῦ πρώτου
+               <pb n="794"/>
+            </div>
+            <div n="2" type="paragraph">
+               <p>(Περὶ μέϲου παρακειμένου).</p>
+            </div>
+         </div>
+         <div n="9" type="section">
+            <head>9.</head>
+            <div n="1" type="paragraph">
+               <p source="Choer. 584, 1">εἰ ὁ ἐνεϲτὼϲ διὰ δύο ἀμεταβόλων, διὰ τοῦ πρώτου
 ἀμεταβόλου ἐκφέρεται ὁ παρακείμενοϲ ὁ μέϲοϲ οἷον τέμνω τέτομα,
 <lb n="5"/> κάμνω κέκαμα. ἐκ τούτου πιθανεύονταί τινεϲ καὶ λέγουϲιν, ὅτι ἐν τῷ
 τίλλω τέτιλα καὶ πάλλω πέπαλα καὶ ϲτέλλω ἔϲτολα καὶ ἐν τοῖϲ ὁμοίοιϲ
@@ -514,31 +564,36 @@ adnotavit κεχήνετε potius pro imperativo quam pro indicativo habendum es
 η ᾖα διὰ τοῦ η καὶ ι ὥϲπερ εἰκάζω εἴκαζον καὶ ᾔκαζον καὶ πάλιν εἴδειν
 ᾔδειν, καὶ κατὰ διάλυϲιν τοῦ ι ἤϊα, ὡϲ παρὰ τῷ ποιητῇ (δ 433)
 <lg>
-<l>ἤια, πολλὰ θεοὺϲ γουνούμενοϲ,</l>
-</lg>
+                     <l>ἤια, πολλὰ θεοὺϲ γουνούμενοϲ,</l>
+                  </lg>
 ἀντὶ τοῦ ἐπορευόμην, οὗ τὸ τρίτον πρόϲωπον ἦϊε,
 <lg>
-<lb n="35"/> <l>ἃ δ’ ἤϊε νυκτὶ ἐοικώϲ (Α 47).</l>
-</lg>
+                     <lb n="35"/>
+                     <l>ἃ δ’ ἤϊε νυκτὶ ἐοικώϲ (Α 47).</l>
+                  </lg>
 τοῦτο τὸ ἤϊα διὰ τοῦ η καὶ ι τρέπει τὸ α εἰϲ ειν, καὶ ποιεῖ τὸ ὑπερϲυντελικὸν
 ἠΐειν κατὰ τὴν ἄρχουϲαν διὰ τοῦ η καὶ ι καὶ διὰ τῆϲ ει
 διφθόγγου κατὰ τὴν λήγουϲαν, ἐξ οὗ τὸ παρῄειν καὶ ἐξῄειν καὶ ἀπῄειν,
 ὡϲ παρὰ Μενάνδρῳ
 <lg>
-<l>ἀπῄειν τῶν τόκων ἔχων τόκουϲ.</l>
-</lg></p>
-<note type="footnote">1. 26 δείω scripsi pro δέω. l. 29 ἐγκίκρα M; cf. E. M. 121, 30 et 425, 24.</note>
-
- <pb n="796"/>
- </div></div>
-<div type="textpart" subtype="section" n="11">
-<head>11.</head>
-<div type="textpart" subtype="paragraph" n="1"><p>ϲιϲ, ἀλλὰ δοκεῖ ὅμωϲ πρωτότυπον αὐτὸ εἶναι τοῦ νείφω, ὡϲ ὑποδηλοῖ
+                     <l>ἀπῄειν τῶν τόκων ἔχων τόκουϲ.</l>
+                  </lg>
+               </p>
+               <note type="footnote">1. 26 δείω scripsi pro δέω. l. 29 ἐγκίκρα M; cf. E. M. 121, 30 et 425, 24.</note>
+               <pb n="796"/>
+            </div>
+         </div>
+         <div n="11" type="section">
+            <head>11.</head>
+            <div n="1" type="paragraph">
+               <p>ϲιϲ, ἀλλὰ δοκεῖ ὅμωϲ πρωτότυπον αὐτὸ εἶναι τοῦ νείφω, ὡϲ ὑποδηλοῖ
 καὶ τὸ ἐξ αὐτοῦ νέφοϲ καὶ ἡ νεφέλη.</p>
-</div></div>
-<div type="textpart" subtype="section" n="12">
-<head>12.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Choer. 586, 28">περὶ ποϲότητοϲ τῶν ϲυλλαβῶν λέγομεν ὅτι μὲν
+            </div>
+         </div>
+         <div n="12" type="section">
+            <head>12.</head>
+            <div n="1" type="paragraph">
+               <p source="Choer. 586, 28">περὶ ποϲότητοϲ τῶν ϲυλλαβῶν λέγομεν ὅτι μὲν
 <lb n="5"/> ἐπὶ βαρυτόνων θεμάτων ἰϲοϲυλλαβεῖ τῷ ἐνεργητικῷ παρακειμένῳ ὁ μέϲοϲ
 παρακείμενοϲ οἷον τύπτω τέτυφα τέτυπα, νύϲϲω νένυχα νένυγα,
 νήθω νένηκα νένηθα, πείθω πέπεικα πέποιθα, πλήϲϲω πέπληχα πέπληγα.
@@ -546,8 +601,9 @@ adnotavit κεχήνετε potius pro imperativo quam pro indicativo habendum es
 θεμάτων μιᾷ ϲυλλαβῇ ἐνδεῖ τοῦ ἐνεργητικοῦ ὁ μέϲοϲ παρακείμενοϲ
 <lb n="110"/> οἶον δουπῶ δουπήϲω δεδούπηκα δέδουπα, μυκῶ μυκήϲω μεμύκηκα
 μέμυκα, κτυπῶ κτυπήϲω ἐκτύπηκα ἔκτυπα.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p source="Eustath. 61, 21">ὥϲπερ μέλω μελήϲω μεμέληκα καὶ μέϲοϲ παρακείμενοϲ
+            </div>
+            <div n="2" type="paragraph">
+               <p source="Eustath. 61, 21">ὥϲπερ μέλω μελήϲω μεμέληκα καὶ μέϲοϲ παρακείμενοϲ
 μέμηλα καὶ ὤλεκα ὦλα, τεθάληκα τέθηλα, οὕτω βεβούληκα
 βέβουλα. τοιοῦτόν τι καὶ τὸ λέληκα· «δαιμόνιη, τί λέληκαϲ » (Hes.
 <lb n="15"/> Opp. 207), καὶ τὸ δεδούπηκα δέδουπα κατὰ Ἡρωδιαν ὸν «δεδουπότοϲ
@@ -556,10 +612,12 @@ adnotavit κεχήνετε potius pro imperativo quam pro indicativo habendum es
 πολλαχοῦ φανεῖται· 5 καὶ αὐτοὶ κατὰ τὰ προρρηθέντα μιᾷ ϲυλλαβῇ
 ἐνδέουϲι τοῦ ἐνεργητικοῦ, ὅπερ ἐν τοῖϲ βαρυνομένοιϲ οὐκ ἔϲτι ῥήμαϲιν.
 <lb n="20"/> ἐν ἐκείνοιϲ γὰρ ἰϲοϲυλλαβεῖ καθόλου ὁ μέϲοϲ τῷ ἐνεργητικῷ.</p>
-</div></div>
-<div type="textpart" subtype="section" n="13">
-<head>13.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Choer. 587, 15">δεῖ γινώϲκειν ὅτι τότε ἐπιλιμπάνουϲιν οἱ μέϲοι
+            </div>
+         </div>
+         <div n="13" type="section">
+            <head>13.</head>
+            <div n="1" type="paragraph">
+               <p source="Choer. 587, 15">δεῖ γινώϲκειν ὅτι τότε ἐπιλιμπάνουϲιν οἱ μέϲοι
 παρακείμενοι, ἡνίκα ἀπὸ τῶν περιϲπωμένων θεμάτων εὑρεθῇ ὁ ἐνεργητικὸϲ
 παρακείμενοϲ, καὶ τριϲύλλαβοϲ ἀπὸ δύο ϲυμφώνων ἀρχόμενοϲ, ἢ
 <lb n="25"/> ἀπὸ μόνου τοῦ ε οἷον θλῶ θλάϲω τέθλακα, κλῶ κλάϲω κέκλακα, ϲμῶ
@@ -573,28 +631,31 @@ adnotavit κεχήνετε potius pro imperativo quam pro indicativo habendum es
 ἐϲτὶν ἄτοπον ϲπανίωϲ γὰρ εὑρίϲκεται διϲύλλαβοϲ παρακείμενοϲ ἐν χρήϲει·
 ϲπάνιον δὲ εἶπον διὰ τὸ οἶδα
 <lg>
-<lb n="35"/> <l>οἶδ’ ἐπὶ δεξιὰ οἱδ’ ἐπ’ ἀριϲτερὰ νωμῆϲαι βῶν</l>
-<l>ἀζαλέην (H 238)</l>
-</lg>
+                     <lb n="35"/>
+                     <l>οἶδ’ ἐπὶ δεξιὰ οἱδ’ ἐπ’ ἀριϲτερὰ νωμῆϲαι βῶν</l>
+                     <l>ἀζαλέην (H 238)</l>
+                  </lg>
 καὶ διὰ τὸ οἶκα, ὃ ϲημαίνει τὸ ὁμοιῶ, οἷον «οἶκαϲ μὲν ὡραίῳ λίνῳ »
 παρ’ Ἀλκμᾶνι, ἀντὶ τοῦ ὅμοιοϲ εἰ, καὶ διὰ τὸ εἶα καὶ κατ’ ἔκταϲιν
 Ἀττικὴν τοῦ ε εἰϲ η ᾖα, ὃ γίνεται ἐν διαλύϲει παρὰ τῷ ποιητῇ,
 <lg>
-<lb n="40"/><l>ἤϊα πολλὰ θεοὺϲ γουνούμενοϲ.</l>
-</lg>
-<note type="footnote">1. 37 οἶκα scr. pro εἷκα et verba Alemanis explevi ex Ep. Cr. I 287, 1 et
+                     <lb n="40"/>
+                     <l>ἤϊα πολλὰ θεοὺϲ γουνούμενοϲ.</l>
+                  </lg>
+                  <note type="footnote">1. 37 οἶκα scr. pro εἷκα et verba Alemanis explevi ex Ep. Cr. I 287, 1 et
 Choer. 871, 30, verba καὶ κατ’ ἔκταϲιν — ᾖα ipse inserui, in Epim. legitur: εἶα,
 ὅπερ ἔν διαλύϲει ἔϊα καὶ ἐπαυξήϲει ἤϊα. De re cf. Mon 24, 4 οἶδα.</note>
-
-<pb n="797"/>
+                  <pb n="797"/>
 Eustath. 759,5: Ἡρωδιανὸϲ προυποθεὶϲ ῥῆμα τὸ εἴδω παράγει
 ἐξ αὐτοῦ μέϲουϲ παρακειμένουϲ ἐπὶ μὲν τοῦ θεωρῶ καὶ γινώϲκω οἶδα,
 ἐπὶ δὲ τοῦ ὁμοιῶ τὸ οἶκα, ἐξ οὗ  ἔοικα, οὗ ὑπερϲυντελικὸϲ ἐῴκειν κατὰ
 ἔκταϲιν.</p>
-</div></div>
-<div type="textpart" subtype="section" n="14">
-<head>14.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Cram. An. Ox. III 398, 3">τοῦ δείδοικα πρωτότυπον ὂν τὸ δέδοικα
+            </div>
+         </div>
+         <div n="14" type="section">
+            <head>14.</head>
+            <div n="1" type="paragraph">
+               <p source="Cram. An. Ox. III 398, 3">τοῦ δείδοικα πρωτότυπον ὂν τὸ δέδοικα
 ἐκ τοῦ δείδω τὸ δειλιῶ ἔχει ἀπορίαν πῶϲ διὰ τοῦ κ ἐκφέρεται καὶ μὴ
 διὰ τοῦ θεματικοῦ δ διὰ τὸν κανόνα, δι’ ὃν ὥριϲται καθολικῶϲ, ὅτι
 ἐπὶ τῶν βαρυτόνων, δι’ οὗ ϲυμφώνου ἐκφέρεται ὁ ἐνεϲτώϲ, διὰ τοῦ
@@ -610,20 +671,25 @@ Eustath. 759,5: Ἡρωδιανὸϲ προυποθεὶϲ ῥῆμα τὸ ε�
 τὰ τρία ἑ, ἐγράφη διὰ μόνου τοῦ ι· Ϲοφοκλῆϲ (Τrach. 754) «τεμενίαν
 τε φυλλάδα». οὕτω καὶ τὸ «ἴριδι δίῃ» κακίζεται κατὰ τὸ ἀλλεπάλληλον <lb n="20"/>
 τῶν διχρόνων.</p>
-</div></div>
-<div type="textpart" subtype="section" n="15">
-<head>15.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Choer. 592, 30">περὶ τοῦ ἔολπα ζηταοῦϲιν ὅτι πόθεν γέγονε; —
+            </div>
+         </div>
+         <div n="15" type="section">
+            <head>15.</head>
+            <div n="1" type="paragraph">
+               <p source="Choer. 592, 30">περὶ τοῦ ἔολπα ζηταοῦϲιν ὅτι πόθεν γέγονε; —
 λέγει δὲ ὁ Ἡρωδιαν ὸϲ ὅτι δύναται εἶναι ὡϲ ἀπὸ τριϲυλλάβου τοῦ
 ἐέλπω, τούτου γὰρ ὁ μέϲοϲ παρακείμενοϲ ἤελπα καὶ κατὰ τροπὴν τοῦ <lb n="25"/>
 ε εἰϲ τὸ ο καὶ ϲυϲτολῇ τοῦ η εἰϲ τὸ ε ἔολπα.</p>
-</div></div>
-<div type="textpart" subtype="section" n="16">
-<head>16.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Ϲram. An. Ox. ΙΙΙ 263, 24">τὸ ἔμμορε Ζηνόβιοϲ καὶ Ἡρωδιανὸϲ
+            </div>
+         </div>
+         <div n="16" type="section">
+            <head>16.</head>
+            <div n="1" type="paragraph">
+               <p source="Ϲram. An. Ox. ΙΙΙ 263, 24">τὸ ἔμμορε Ζηνόβιοϲ καὶ Ἡρωδιανὸϲ
 οὕτω κανονίζουϲι μείρω μερῶ, ὁ μὲν παρακείμενοϲ μέμορα καὶ ἐν
-ὑπερθέϲει τοῦ ἔμμορα.</p> <lb n="30"/>
-<note type="footnote">1. 1 cf. An. Par.ΙΙΙ 320 ubi sic fere: ἐπὶ τοῦ ὁμοιῶ ἵνα μὴ ϲυνεμπέϲῃ τῷ οἶδα
+ὑπερθέϲει τοῦ ἔμμορα.</p>
+               <lb n="30"/>
+               <note type="footnote">1. 1 cf. An. Par.ΙΙΙ 320 ubi sic fere: ἐπὶ τοῦ ὁμοιῶ ἵνα μὴ ϲυνεμπέϲῃ τῷ οἶδα
 ἐγένετο οἶκα καὶ ἔοικα. l. 6 idem refert Eustath. 149, I et de δέδοικα An. Paris.
 III 316, 6 similia etiam habet Choer. 589 Apollonio eundem de δέδοικα sententiam
 attribuens, quae hic Herodiano assignatur. — Ex Herodiano petivit fortasse
@@ -640,39 +706,49 @@ Dict. 593, 26 contra Herodiani sententiam profert: ἀλλ’ ἐλέγχει α
 οὕτωϲ· μορῶ μορήϲω ὁ πρῶτοϲ ἀόριϲτοϲ ἐμόρηϲε, ὁ δὲ δεύτεροϲ ἔμορον ἔμορεϲ
 καὶ Αἰολικῶϲ ἔμμορον ἔμμορεϲ ἔμμορε — non refutat Herodianum, nam ubi per
 ε secunda persona pronunciabatur, aoristus quidem secundus haberi debet, sed</note>
-
-<pb n="798"/>
-</div></div>
-<div type="textpart" subtype="section" n="17">
-<head>17.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Eustath.1687, 12">Ἡρωδιανὸϲ ἐκ τοῦ λήχω τὸ λαγχάνω παράγων
+               <pb n="798"/>
+            </div>
+         </div>
+         <div n="17" type="section">
+            <head>17.</head>
+            <div n="1" type="paragraph">
+               <p source="Eustath.1687, 12">Ἡρωδιανὸϲ ἐκ τοῦ λήχω τὸ λαγχάνω παράγων
 τὸ λέλοχα τροπῇ τοῦ η εἰϲ ο μικρὸν ὁμοίωϲ τῷ πήθω πέποθε
 λέγει καὶ πλεονάζειν ἐν αὐτοῖϲ τὸ ν ὡϲ καὶ ἐν τῷ κέχανδα οἷον «οἶκον
 <lb n="5"/> κεχανδότα πολλὰ καὶ ἐϲθλά (δ 96).</p>
-</div></div>
-<div type="textpart" subtype="section" n="18">
-<head>18.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="E. M. 667, 33, Ep. Cr. I 268, 32">οὐδέποτε μέϲοϲ παρακείμενοϲ
+            </div>
+         </div>
+         <div n="18" type="section">
+            <head>18.</head>
+            <div n="1" type="paragraph">
+               <p source="E. M. 667, 33, Ep. Cr. I 268, 32">οὐδέποτε μέϲοϲ παρακείμενοϲ
 διὰ δύο ϲυμφώνων κατὰ ϲύλληψιν ἐκφέρεται οὐδὲ διὰ διπλῶν ἔνθεν
 οὔτε ἀπὸ τοῦ χραιϲμῶ οὕτε ἀπὸ τοῦ ὀλιϲθῶ μέϲοι γεγόναϲι παρακείμενοι
 ὥϲπερ οὐδὲ ἀπὸ τοῦ λιχμῶ, ἵνα μὴ διὰ δύο ϲυμφώνων ἐξενεχθῶϲι.
 τὸ γὰρ «γλώϲϲῃϲι δνοφερῇϲι λελιχμότεϲ» παρ’ Ἡϲιόδῳ (Theog.
 826) οὕτωϲ ἐγένετο· ἐϲτι τι περιϲπώμενον λιχμῶ οὗ ὁ παρακείμενοϲ
 λελίχμηκα καὶ ἡ μετοχὴ λελιχμηκώϲ καὶ κατὰ ϲυγκοπὴν λελιχμώϲ. καὶ
-τὸ πεφυζώϲ γέγονεν ἀπὸ τοῦ πεφυζηκώϲ καὶ κατὰ ϲυγκοπὴν πεφυζώϲ.</p></div>
-<div type="textpart" subtype="paragraph" n="2"><p>(Περὶ ὑπερϲυντελικοῦ).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p>( Περὶ πρώτου ἀορίϲτου).</p>
-</div></div>
-<div type="textpart" subtype="section" n="19">
-<head>19.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Eustath. 36, 37">ὥϲπερ τὸ κρῆναι ἀπὸ διϲυλλάβου τοῦ κραίνω καὶ
+τὸ πεφυζώϲ γέγονεν ἀπὸ τοῦ πεφυζηκώϲ καὶ κατὰ ϲυγκοπὴν πεφυζώϲ.</p>
+            </div>
+            <div n="2" type="paragraph">
+               <p>(Περὶ ὑπερϲυντελικοῦ).</p>
+            </div>
+            <div n="3" type="paragraph">
+               <p>( Περὶ πρώτου ἀορίϲτου).</p>
+            </div>
+         </div>
+         <div n="19" type="section">
+            <head>19.</head>
+            <div n="1" type="paragraph">
+               <p source="Eustath. 36, 37">ὥϲπερ τὸ κρῆναι ἀπὸ διϲυλλάβου τοῦ κραίνω καὶ
 τὸ μιῆναι ἀπὸ τοῦ μιαίνω, οὕτω καθ’ Ἡρωδιανὸν καὶ τὸ κυδῆναι
 <lb n="20"/> ἐκ τοῦ κυδαίνω, εἰ καὶ κυδᾶναι, φηϲί, καθ’ ἡμᾶϲ λέγεται ὡϲ καὶ κερδᾶναι.</p>
-</div></div>
-<div type="textpart" subtype="section" n="20">
-<head>20.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Choer. 610, 14">ἄξιόν ἐϲτι ζητῆϲαι, διὰ τί τῶν ϲεϲημειωμένων
+            </div>
+         </div>
+         <div n="20" type="section">
+            <head>20.</head>
+            <div n="1" type="paragraph">
+               <p source="Choer. 610, 14">ἄξιόν ἐϲτι ζητῆϲαι, διὰ τί τῶν ϲεϲημειωμένων
 ἐν τῷ πρώτῳ ἀορίϲτῳ, φημὶ δὲ τὸ ἤνεγκα καὶ εἶπα καὶ ἔδωκα καὶ
 ἔθηκα καὶ ἧκα τὰ μὲν δύο τὰ ἀπὸ τῶν εἰϲ ω, λέγω δὲ τὸ εἶπα καὶ
 <lb n="25"/> ἤνεγκα, κλίνεται μὲν καὶ εἰϲ τὰϲ μετοχὰϲ καὶ εἰϲ τὰϲ λοιπὰϲ ἐγκλίϲειϲ,
@@ -693,8 +769,7 @@ cf. Choer. 607, 35: πολλάκιϲ οἱ Ἴωνεϲ τρέπουϲι τὸ �
 ὑπεϲημηνάμην, ἔφανα ἔφηνα, ἐξ οὖ ὁ α΄ μέϲοϲ ἀόριϲτοϲ ἐφηνάμην. τούτοιϲ δὲ
 τοῖϲ ὑπὸ τῶν Ἰώνων γινομένοιϲ, λέγω δὲ τὸ ἐμίηνα καὶ ἐλίηνα καὶ ἐχλίηνα καὶ
 ἐκάθηρα καὶ ἐϲήμηνα καὶ τοῖϲ ὁμοίοιϲ, χρῶνται οἱ Ἀθηναῖοι.</note>
-
-<pb n="799"/>
+                  <pb n="799"/>
 ἐνέγξω γάρ ἐϲτι ὁ μέλλων· τοῦ δὲ μέλλοντοϲ τὸ ξ ἔχοντοϲ
 καὶ ὁ πρῶτοϲ ἀόριϲτοϲ διὰ τοῦ ξ ἐφέρεται οἷον λέξω ἔλεξα, νύξω
 ἔνυξα· ἐπειδὴ οὖν τὸ εἶπα διὰ τοῦ ψ ὤφειλε καὶ τὸ ἤνεγκα διὰ τοῦ
@@ -710,19 +785,24 @@ cf. Choer. 607, 35: πολλάκιϲ οἱ Ἴωνεϲ τρέπουϲι τὸ �
 ἧκα διὰ τοῦ ϲ ὤφειλεν εἶναι, οὐκ ἐγένετο δὲ οὕτωϲ, ἀλλὰ διὰ τοῦ
 κ, τὸ δὲ x πρὸϲ τὸ ϲ οὐδεμίαν ϲυγγένειαν ἔχει, εἰκότωϲ ὡϲ μὴ φυλάξαντα
 μέροϲ τι τῆϲ ἀναλογίαϲ κωλύεται κλίνεϲθαι καὶ εἰϲ τὰϲ μετοχὰϲ <lb n="15"/>
-καὶ εἰϲ τὰϲ λοιπὰϲ ἐγκλίϲειϲ.</p></div>
-<div type="textpart" subtype="paragraph" n="2"><p>( Περὶ δευτέρου ἀορίϲτου).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p source="Ut Herodianus in fr. 12">de numero syllabarum perfecti secundi exposuit,
+καὶ εἰϲ τὰϲ λοιπὰϲ ἐγκλίϲειϲ.</p>
+            </div>
+            <div n="2" type="paragraph">
+               <p>( Περὶ δευτέρου ἀορίϲτου).</p>
+            </div>
+            <div n="3" type="paragraph">
+               <p source="Ut Herodianus in fr. 12">de numero syllabarum perfecti secundi exposuit,
 sic etiam de numero syllabarum aoristi secundi disseruisse putandus est in eum
 modum , quo disputat Choerob. 619,14:  περὶ τῆϲ ποϲότητοϲ τῶν ϲυλλαβῶν ἔϲτιν <lb n="20"/>
 εἰπεῖν, ὅτι ἀπὸ μὲν βαρυτόνων θεμάτων ἰϲοϲυλλαβεῖ τῷ πρώτῳ ἀορίϲτῳ ὁ δεύτεροϲ
 ἀόριϲτοϲ οἷον τύπτω τύψω ἔτυψα ἔτυπον, ῥάπτω ἔρραψα ἔρραφον, νύϲϲω
 ἔνυξα ἔνυγον, γράψα ἔγραψα ἔγραφον, ἐξ οὖ τὸ ἐγράφην, ἀπὸ δὲ περιϲπωμένων
 θεμάτων μιᾷ αὐτοῦ ἐνδεῖ ὁ δεύτεροϲ ἀόριϲτοϲ, οἷον δουπῶ ἐδούπηϲα ἔδουπον,
-μυκῶ ἐμύκηϲα ἔμυκον, χραιϲμῶ ἐχραίϲμηϲα ἔχραιϲμον, ὀλιϲθῶ ὠλίϲθηϲα ὤλιϲθον.</p> <lb n="25"/>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p>Atque etiam de quantitate vocalis in paenultima tractasse eum arbitror sic
+μυκῶ ἐμύκηϲα ἔμυκον, χραιϲμῶ ἐχραίϲμηϲα ἔχραιϲμον, ὀλιϲθῶ ὠλίϲθηϲα ὤλιϲθον.</p>
+               <lb n="25"/>
+            </div>
+            <div n="4" type="paragraph">
+               <p>Atque etiam de quantitate vocalis in paenultima tractasse eum arbitror sic
 fere nt Choer. 623, 13: ἰϲτέον ὅτι δεύτεροϲ ἀόριϲτοϲ εἴτε ἀπὸ βαρυτόνων
 θεμάτων εἴτε ἀπὸ περιϲπωμένων βραχείᾳ θέλει παραλήγεϲθαι, οἶον λείπω ἔλιπον,
 τρώγω ἔτραγον, λήβω ἔλαβον, κτυπῶ ἔκτυπον, μυκῶ ἔμυκον τὰ γὰρ φυλάττοντα
@@ -737,30 +817,30 @@ fere nt Choer. 623, 13: ἰϲτέον ὅτι δεύτεροϲ ἀόριϲτοϲ
 πειδὴ ἐπὶ τῆϲ ψυχικῆϲ διαθέϲεωϲ κατεπλήγη εἶπε διὰ τοῦ η διὰ τὴν ἀνάγκην
 τοῦ μέτρου, τούτου χάριν προϲέθηκε τὸ φίλον ἦτορ,
 <lg>
-<l>κατεπλήγη φίλον ἦτορ (Γ 31),</l> <lb n="40"/>
-</lg>
+                     <l>κατεπλήγη φίλον ἦτορ (Γ 31),</l>
+                     <lb n="40"/>
+                  </lg>
 ἵνα μὴ διὰ τῆϲ γραφῆϲ τοῦ η νομιϲθῇ ἐπὶ τῆϲ ϲωματικῆϲ διαθέϲεωϲ κεῖϲθαι. τὸ
 αὐτὸ δὲ λέγουϲι καὶ ἐπὶ τοῦ πονῶ πονήϲω καὶ πονέϲω, ὁ γὰρ πονῶν ἢ ϲωματικῶϲ
 <note type="footnote">I. 27 in his, quae ab Herodiano abhorrere aut dubia videbantur, omisi. De
 quantitate autem egisse Herodianum patet ex Choer. p. 755, ubi abnormem accentum
 imperativorum ἐλθέ εἰπέ εὑρέ eo excusat, quod indicativus horum productam
 paennltimam habeat reliquis aoristis secundis brevi syllaba praefinitis.</note>
-
-<pb n="800"/>
+                  <pb n="800"/>
 πονεῖ ἢ ψυχικῶϲ· καὶ εἰ μὲν ϲωματικῶϲ, πονέϲω διὰ τοῦ ε εἰ δὲ ψυχικῶϲ
 πονήϲω διὰ τοῦ η. διὰ τοῦτο ϲημειούμεθα παρὰ Ἀριϲτοφάνει (Pac. 820)
 <lg>
-<l>ἐγὼ δέ τοι πεπόνηκα κομιδῇ τὼ ϲκέλη,</l>
-</lg>
+                     <l>ἐγὼ δέ τοι πεπόνηκα κομιδῇ τὼ ϲκέλη,</l>
+                  </lg>
 ἐπειδὴ ϲωματικῶϲ λεχθὲν διὰ τοῦ η προϲηνέχθη. ἔϲτι καὶ τὸ δέρθω ἔδαρθον
 <lb n="5"/> μακρᾷ παραληγόμενον, ὅπερ γίνεται κατὰ ὑπερβιβαϲμὸν ἔδραθον, ϲημαίνει δὲ τὸ
 ἐκοιμήθην ἐϲτι δὲ καὶ τὸ ἔπεφνον· ἔϲτι καὶ τὸ ἅδε τὸ ϲημαῖνον τὸ ἤρεϲε.
 γέγονε δὲ τοῦτον τὸν τρόπον ἔϲτιν ἥδω ἐξ οὐ τὸ ἥδομαι, τούτου ὁ δεύτεροϲ.
 ἀόριϲτοϲ λόγῳ μὲν ποραληγούϲηϲ γίνεται ἅδον διὰ τοῦ α, ἐξ οὗ τὸ
 <lg>
-<l>ἄδε δ᾿  Ἕκτορι μῦθοϲ ἀπήμων (Μ 80),</l>
-</lg>
-<lb n="10"/> ὥϲπερ λήβω ἔλαβον, μήθω ἔμαθον, θήκω ἔδακον λόγῳ δὲ ἀρχούϲηϲ γίνεται ἦδον
+                     <l>ἄδε δ᾿  Ἕκτορι μῦθοϲ ἀπήμων (Μ 80),</l>
+                  </lg>
+                  <lb n="10"/> ὥϲπερ λήβω ἔλαβον, μήθω ἔμαθον, θήκω ἔδακον λόγῳ δὲ ἀρχούϲηϲ γίνεται ἦδον
 διὰ τοῦ η, καί ἦδε καὶ κατὰ διάλυϲιν τοῦ η εἰϲ ε καὶ α γίνεται ἕαδα, ὥϲπερ
 ἥλω ἑάλω ἔϲτι καὶ τὸ δέρκω ἔδαρκον, ὅπερ γίνεται κατὰ ὑπερβιβαϲμὸν ἔδρακον·
 ἔϲτι καὶ τὸ πέρθω ἔπαρθον, ὅπερ γίγνεται κατὰ ὑπερβιβαϲμὸν ἔπραθον· ἔϲτι καὶ
@@ -779,14 +859,17 @@ paennltimam habeat reliquis aoristis secundis brevi syllaba praefinitis.</note>
 οἷον ἔτυπον, ἔνυγον, ἔλαβον, ἔμαθον. ἰϲτέον δὲ ὅτι εἰδον γενόμενον ἀπὸ
 τοῦ εἴδω λόγῳ ἀρχούϲηϲ διὰ τῆϲ ει διφθόγγου γράφεται οἷον
 <lg>
-<l>εἰδον γὰρ ϲκοπιὴν ἐϲ παιπαλόεϲϲαν ἀνελθών (κ 194)</l>
-</lg>
+                     <l>εἰδον γὰρ ϲκοπιὴν ἐϲ παιπαλόεϲϲαν ἀνελθών (κ 194)</l>
+                  </lg>
 λόγῳ δὲ παραληγούϲηϲ διὰ τοῦ ι γράφεται οἷον
 <lg>
-<lb n="30"/> <l>οὐκ ἴδον οὐ πυθόμην (ψ 40).</l>
-</lg></p>
-</div>
-<div type="textpart" subtype="paragraph" n="5"><p>Ἔλθωμεν δὲ καὶ μάθωμεν πῶϲ ϲυϲτέλλεται ἐν τῷ δευτέρῳ ἡ παραλήγουϲα.
+                     <lb n="30"/>
+                     <l>οὐκ ἴδον οὐ πυθόμην (ψ 40).</l>
+                  </lg>
+               </p>
+            </div>
+            <div n="5" type="paragraph">
+               <p>Ἔλθωμεν δὲ καὶ μάθωμεν πῶϲ ϲυϲτέλλεται ἐν τῷ δευτέρῳ ἡ παραλήγουϲα.
 ίϲτέον ὅτι ὀφείλει ὁ δεύτεροϲ ἀόριϲτοϲ διχρόνῳ παραλήγεϲθαι, ὅθεν ἐπὶ τοῦ τρώγω
 ἔτραγον τὸ ω εἰϲ τὸ α ἐτράπη καὶ ἐπὶ τοῦ λήβω ἔλαβον τὸ η εἰϲ α τρέπεται
 ἐν τῷ δευτέρῳ ἀορίϲτῳ κατὰ τὴν παραλήγουϲαν, εἰϲ α δὲ ϲυϲτελλόμενον, δηλονότι
@@ -815,10 +898,12 @@ paennltimam habeat reliquis aoristis secundis brevi syllaba praefinitis.</note>
 κτενῶ ἔκτανον. πρόϲκειται «χωρὶϲ τῶν διϲυλλάβων», ἐπειδὴ ἐπὶ τῶν ὑπὲρ δύο <lb n="5"/>
 ϲυλλαβὰϲ τὸ ι μόνον ἀποβάλλεται, οὐκέτι δὲ τροπὴ παρηκολούθηϲε τοῦ ε εἰϲ τὸ
 α ἐν τῷ δευτέρῳ ἀορίϲτῳ οἶον ἐγείρω ἤγερον, ὀφείλω ὤφελον.</p>
-</div></div>
-<div type="textpart" subtype="section" n="21">
-<head>21.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Choer. 630, 8">ἰϲτέον δὲ ὅταν εὑρεθῇ τὸ ε ϲὺν ἀμεταβόλῳ, ὡϲ
+            </div>
+         </div>
+         <div n="21" type="section">
+            <head>21.</head>
+            <div n="1" type="paragraph">
+               <p source="Choer. 630, 8">ἰϲτέον δὲ ὅταν εὑρεθῇ τὸ ε ϲὺν ἀμεταβόλῳ, ὡϲ
 ἐπὶ τὸ πλεῖϲτον τρέπεται εἰϲ τὸ α κατὰ τὸν δεύτερον ἀόριϲτον ἐν τῇ <lb n="10"/>
 παραληγούϲῃ, εἶτε τοῦ ε προηγεῖται τὸ ἀμετάβολον, εἴτε ἐπιφέρεται
 αὐτῷ· τῆϲ ε′ ϲυζυγίαϲ τὸ ι δηλονότι ἀποβάλλεται οἷον κείρω ἔκαρον,
@@ -836,39 +921,42 @@ paennltimam habeat reliquis aoristis secundis brevi syllaba praefinitis.</note>
 διὰ τὸ ἀγείρω ἤγειρον, ἀείρω ἤερον καὶ ὀφείλω ὤφελον καὶ λέγω
 ἔλεγον ἐξ οὗ τὸ ἐλέγην καὶ κατελέγην ἐπὶ τούτων γὰρ οὐκ ἐτράπη <lb n="25"/>
 τὸ ε εἰϲ α.</p>
-</div></div>
-<div type="textpart" subtype="section" n="22">
-<head>22.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Choer. 631, 24">ἰϲτέον ὅτι τὸ ἔπεϲον μονῆρέϲ ἐϲτιν, οὐδέποτε
+            </div>
+         </div>
+         <div n="22" type="section">
+            <head>22.</head>
+            <div n="1" type="paragraph">
+               <p source="Choer. 631, 24">ἰϲτέον ὅτι τὸ ἔπεϲον μονῆρέϲ ἐϲτιν, οὐδέποτε
 γὰρ ὁ δεύτεροϲ ἀόριϲτοϲ πρὸ τῆϲ ον ϲυλλαβῆϲ τὸ ϲ ἔχει οἷον ἔτυπον,
 ἔνυγον, ἔλαβον, ἔμαθον, ἔφαγον, ἔδακον. λέγει δὲ Ἡρωδιανόϲ, ὅτι <lb n="30"/>
 ἐϲτὶν ὅμοιον αὐτῷ τὸ κακέμφατον, φημὶ δὲ τὸ ἔχεϲον, καὶ αὐτὸ πρὸ
 τῆϲ ον ϲυλλαβῆϲ τὸ ϲ ἔχει καὶ παρατίθεται τὴν χρῆϲιν παρ’ Ἀλκαίῳ
 ἐν Γανυμήδει ἔχουϲαν οὕτωϲ (Com. graec. ed. Mein. II 826)
 <lg>
-<l>κατέχεϲον τῆϲ Nηρηΐδοϲ.</l>
-</lg>
+                     <l>κατέχεϲον τῆϲ Nηρηΐδοϲ.</l>
+                  </lg>
 ϲχηματίζει δὲ ὁ Ἡρωδιανὸϲ τοῦτον τὸν τρόπον τὸ ἔπεϲον· φηϲὶν ὅτι <lb n="35"/>
 ὥϲπερ ἀπὸ τοῦ φυϲῶ φυϲήϲω γίνεται φύϲημα καὶ ἀπὸ τοῦ νοϲῶ νοϲήϲω
 νόϲημα, τὸν αὐτὸν τρόπον καὶ ἀπὸ τοῦ πεϲῶ περιϲπωμένου γίνεται
 πεϲήϲω καὶ πέϲημα, ὄνομα ῥηματικόν, ὡϲ παρ’ Ἐὐριπίδη ἐν Ἀνδρομόχῃ
 (652)
 <lg>
-<l rend="indent">οὗ πεϲήματα</l>
-<l>πλεῖϲθ’ Ἑλλάδοϲ πέπτωκε δορυπετῆ νεκρῶν,</l>
-</lg>
-<note type="footnote">1. 16 praeceptum de ἔδραμον ex hoc loco transiit in E M. 316, 47, E. Gud.
+                     <l rend="indent">οὗ πεϲήματα</l>
+                     <l>πλεῖϲθ’ Ἑλλάδοϲ πέπτωκε δορυπετῆ νεκρῶν,</l>
+                  </lg>
+                  <note type="footnote">1. 16 praeceptum de ἔδραμον ex hoc loco transiit in E M. 316, 47, E. Gud.
 160, 59, Zonar. 618.</note>
-
-<pb n="802"/>
+                  <pb n="802"/>
 καὶ λοιπὸν ὡϲ ἀπὸ τοῦ πεϲῶ περιϲπωμένου γέγονεν ἔπεϲον ὁ δεύτεροϲ
 ἀόριϲτοϲ ὥϲπερ καὶ ἀπὸ τοῦ χραιϲμῶ ἔχραιϲμον καὶ ἀπὸ τοῦ ὀλιϲθῶ
 ὤλιϲθον.</p>
-</div></div>
-<div type="textpart" subtype="section" n="23">
-<head>23.</head>
- <lb n="5"/>
-<div type="textpart" subtype="paragraph" n="1"><p source="E. M. 472, 13">ὁ Ἡρωδιανὸϲ λέγει τοῦτο <del> sc. τὸ ἷξον in «οἱ
+            </div>
+         </div>
+         <div n="23" type="section">
+            <head>23.</head>
+            <lb n="5"/>
+            <div n="1" type="paragraph">
+               <p source="E. M. 472, 13">ὁ Ἡρωδιανὸϲ λέγει τοῦτο <del> sc. τὸ ἷξον in «οἱ
 δ’ ἷξον κοίλην Λακεδαίμονα» (δ I)</del> καὶ τὰ ὅμοια ἐκ μέλλοντοϲ μετατεθεῖϲθαι
 εἰϲ ἐνεϲτῶτα ἵξω καὶ ὁ παρατατικὸϲ ἷξον ἷξεϲ ἷξε τὸ πληθυντικὸν
 ἵξομεν ἷξετε ἷξον. ὅτι δὲ οὐκ ἔϲτι δεύτεροϲ ἀόριϲτοϲ, ἀλλὰ παρατατικόϲ,
@@ -877,23 +965,28 @@ paennltimam habeat reliquis aoristis secundis brevi syllaba praefinitis.</note>
 δὲ οἴϲω μέλλων, οὗ ἄλλο κίνημα οὐχ εὕρηται πλήν τοῦ μέλλοντοϲ.
 οὗτοϲ δὲ μετάγεται κατὰ ποιητικὴν ἐξουϲίαν εἰϲ ἐνεϲτῶτα, οὗ τὸ προϲτακτικὸν
 οἶϲε «οἶϲε θέειον γρηΰ» (χ 481) καὶ «οἴϲετε πῦρ » (0 718).</p>
-</div></div>
-<div type="textpart" subtype="section" n="24">
-<head>24.</head>
-<lb n="15"/>
-<div type="textpart" subtype="paragraph" n="1"><p source="Choer. 618, 29">εἰ ὁ ἐνεϲτὼϲ διὰ καθαροῦ τοῦ ω ἐκφέρεται, καὶ
+            </div>
+         </div>
+         <div n="24" type="section">
+            <head>24.</head>
+            <lb n="15"/>
+            <div n="1" type="paragraph">
+               <p source="Choer. 618, 29">εἰ ὁ ἐνεϲτὼϲ διὰ καθαροῦ τοῦ ω ἐκφέρεται, καὶ
 ὁ δεύτεροϲ ἀόριϲτοϲ διὰ καθαροῦ τοῦ ον ἐκφέρεται οἷον κίω ἔκιον ὡϲ
 παρὰ τῷ ποιητῇ «ἔκιον μεγάλῳ ἀλαλητῷ » (Μ 138), καίω ἔκαον ἐξ
 οὗ τὸ ἐκάην, πίω ἔπιον.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p source="E.M. 238, 23 γόον">«οἱ μὲν ἔτι ζωὸν γόον Ἕκτορα δῖον » (Ζ 500)
+            </div>
+            <div n="2" type="paragraph">
+               <p source="E.M. 238, 23 γόον">«οἱ μὲν ἔτι ζωὸν γόον Ἕκτορα δῖον » (Ζ 500)
 <lb n="20"/> ἀντὶ τοῦ ἐγόων. ὁ μὲν Ἀπολλώνιοϲ δευτέραϲ ϲυζυγίαϲ αὐτὸ εἶναι λέγει
 καὶ παρατατικοῦ, ὁ δὲ Ἡρωδιανὸϲ δευτέρου ἀορίϲτου ὥϲπερ κτυπῶ
 ἔκτυπον, οὕτω γοῶ ἔγοον.</p>
-</div></div>
-<div type="textpart" subtype="section" n="25">
-<head>25.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Ep. Cr. Ι 267, 18">λίγξε (Δ 125) τοῦτο δηλοῖ μίμηϲιν ἤχου, ὃν
+            </div>
+         </div>
+         <div n="25" type="section">
+            <head>25.</head>
+            <div n="1" type="paragraph">
+               <p source="Ep. Cr. Ι 267, 18">λίγξε (Δ 125) τοῦτο δηλοῖ μίμηϲιν ἤχου, ὃν
 <lb n="25"/> ἀφιεμένου τοῦ βέλουϲ ἀποτελεῖ ἡ νευρά. τὰ δὲ κατὰ μίμηϲιν φωνῆϲ
 λεγόμενα εἰϲ ἰδιότητα γέγονε· καὶ τοίνυν τὸ λίγξε, εἰ καὶ ἀορίϲτου α΄
 χαρακτῆρα ἔχει, ἀλλ’ οὖν τὸ θέμα αὐτοῦ μὴ ζητήϲειϲ, ὅθεν τὸν
@@ -907,7 +1000,7 @@ paennltimam habeat reliquis aoristis secundis brevi syllaba praefinitis.</note>
 sed Herodiano abiudicanda esse vidit Lehrsius Mon. 24, 12 collato gemino Epimerismorum
 loco Cr. I 176. l. 12 verba οὗτοϲ δὲ μετάγεται addidi collato
 Choerob. p. 752. Simlia habent Ep. Cr. Ι 205 et Schol. ad 0d. δ 1.</note>
-<note type="footnote">1. 15 Choerobosci praeceptum praeposui, quia γόον ibi protulisse Herodianum
+                  <note type="footnote">1. 15 Choerobosci praeceptum praeposui, quia γόον ibi protulisse Herodianum
 arbitror, ubi de aoristis secundis puris disputavit. l.24 prior pars huius adnotamenti
 usque ad l. 4 p. seq. τῆϲ τοῦ ἤχου μιμήϲεωϲ exstat etiam in E. M. 712, 30 cum
 subscriptione οὕτω Ζηνόβιοϲ, altera pars inde ab πάλιν ἔϲτι παρὰ τῷ ποιητῇ «εκρίκε
@@ -916,8 +1009,7 @@ subscriptione οὕτω Ζηνόβιοϲ, altera pars inde ab πάλιν ἔϲτ
 cf. quae dixi n Philol. XXI p. 386 seqq. Nicandri versus in E. M. 712,41 servatus
 est. l. 25 in codice sunt τὰ δὲ κατὰ μίμηϲιν φωνῆϲ ἢ ἰδιότητα λεγόμενα
 γεγόναϲιν.</note>
-
-<pb n="803"/>
+                  <pb n="803"/>
 χρόνον ἕτερον μηδὲ ἔγκλιϲιν ἑτέραν μηδὲ ὡϲ τὸ ἵζω κλίνῃϲ τὸ ϲίζω,
 ἵνα μὴ καὶ τὸ ϲημαινόμενον διαφθείρῃϲ. πάλιν ἔϲτι τὸ «κύματα παφλάζοντα
 (Ν 798). μὴ οὖν ὥϲπερ τὸ θαυμάζω κλίνῃϲ παφλάϲω
@@ -933,10 +1025,13 @@ est. l. 25 in codice sunt τὰ δὲ κατὰ μίμηϲιν φωνῆϲ ἢ �
 μονοϲύλλαβον κρῶ, ἀφ’ οὖ τὸ κράζω ἕτερον ῥῆμα καὶ κρώζω ἀπὸ δὲ
 τοῦ κράζω γίνεται κρίζω ὡϲ ϲτάζω ϲτίζω, ϲεβάζω ϲεβίζω. τούτου δὲ
 τοῦ κρίζω ἡμαρτημένον ἀόριϲτον παραλαμβάνει τὸ κρίκε. ἡμεῖϲ δὲ οὐ <lb n="15"/>
-φαμὲν ἡμαρτῆϲθαι, ἀλλὰ πεποιῆϲθαι.</p></div>
-<div type="textpart" subtype="paragraph" n="2"><p>( Περὶ πρώτου μέλλοντοϲ).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p source="Choer. 638, 25">ἄξιόν ἐϲτι ζητῆϲαι διὰ ποίαν αἰτίαν ὁ μέλλων ϲυνάρχεϲθαι
+φαμὲν ἡμαρτῆϲθαι, ἀλλὰ πεποιῆϲθαι.</p>
+            </div>
+            <div n="2" type="paragraph">
+               <p>( Περὶ πρώτου μέλλοντοϲ).</p>
+            </div>
+            <div n="3" type="paragraph">
+               <p source="Choer. 638, 25">ἄξιόν ἐϲτι ζητῆϲαι διὰ ποίαν αἰτίαν ὁ μέλλων ϲυνάρχεϲθαι
 θέλει τῷ ἰδίῳ ἐνεϲτῶτι οἷον τύπτω τύψω, λέγω λέξω, ἄγω ἄξω, οἰκῶ οἰκήϲω.
 καὶ ἔϲτιν εἰπεῖν τὴν ἀπολογίαν ταύτην ἰϲτέον ὅτι ἀναλογεῖ ὁ μέλλων τῇ εὐθείᾳ, <lb n="20"/>
 ὁ δὲ ἐνεϲτὼϲ τῇ γενικῇ πάντα γὰρ τὰ ὄντα ἐν τῇ εὐθείᾳ ἐϲτὶ καὶ ἐν τῷ μέλλοντι,
@@ -966,17 +1061,17 @@ dicuntur ut a κρῶ κράζω et κρίζω. De κρίκε cf. Lob. Parall. 4
 τὸ λίζω καθὰ καὶ ἄλλοι τοιοῦτοι ἐνεϲτῶτεϲ. καὶ γοῦν οὐδὲ τοῦ ἔκλαγξαν ἔϲτιν
 εὑρεῖν ἐνεϲτῶτα κλάγγω οὐδὲ τοῦ λίγξε βιόϲ τὸ λίγγω οὐδὲ μὴν τὸ κρίζω τοῦ
 κρίκε ζυγόϲ ἢ κρίγεν. l.18 cf. p.481 et 643, 27.</note>
-
-<pb n="804"/>
+                  <pb n="804"/>
 θρίξ τριχόϲ τροπὴν πέπονθε τοῦ θ εἰϲ τὸ τ, τούτου χάριν ὁ ἐνεϲτὼϲ ϲυνάρχεται
 τῷ μέλλοντι.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p source="Choer. 640, 1">περὶ τῆϲ ποϲότητοϲ τῶν ϲυλλαβῶν ἰϲτέον ὅτι ἐπὶ μὲν βαρυτόνων
+            </div>
+            <div n="4" type="paragraph">
+               <p source="Choer. 640, 1">περὶ τῆϲ ποϲότητοϲ τῶν ϲυλλαβῶν ἰϲτέον ὅτι ἐπὶ μὲν βαρυτόνων
 θεμάτων ἰϲοϲυλλαβεῖ ὁ μέλλων τῷ ἐνεϲτῶτι οἷον τύπτω τύψω τὸ γὰρ
 <lb n="5"/> παρ’ Ἀριϲτοφάνει τυπτήϲω ἐν Πλούτῳ (21)
 <lg>
-<l>οὐ γάρ με τυπτήϲειϲ ϲτέφανον ἔχοντά γε</l>
-</lg>
+                     <l>οὐ γάρ με τυπτήϲειϲ ϲτέφανον ἔχοντά γε</l>
+                  </lg>
 ὡϲ ἀπὸ περιϲπωμένου ἐϲτί· λέγω λέξω, πλέκω πλέξω, γράφω γράψω, πείθω
 πείϲω, ἀκούω ἀκούϲω, βαδίζω βαδίϲω, κείρω κερῶ, φθείρω φθερῶ, μιαίνω μιανῶ.
 δε προϲθεῖναι χωρὶϲ τῶν ἐχόντων ἕν λ, ἐπὶ τούτων μιᾷ ϲυλλαβῇ περιττεύει ὁ
@@ -994,30 +1089,34 @@ dicuntur ut a κρῶ κράζω et κρίζω. De κρίκε cf. Lob. Parall. 4
 ταύτην τὴν αἰτίαν, ὅτι πολλά ἐϲτι ῥήματα καὶ ὡϲ ἀπὸ βαρυτόνων καὶ ἀπὸ περιϲπωμένων
 ποιεῖται τὴν κλίϲιν οἶον τύπτω τύψω καὶ τυπτῶ τυπτήϲω,
 <lg>
-<l>οὐ γάρ με τυπτήϲειϲ ϲτέφανον ἔχοντά γε,</l>
-</lg>
+                     <l>οὐ γάρ με τυπτήϲειϲ ϲτέφανον ἔχοντά γε,</l>
+                  </lg>
 Ἀριϲτοφάνηϲ ἐν Πλούτῳ (21)· εἴδω εἴϲω, ἐξ οὖ καὶ τὸ εἴϲομαι
 <lg>
-<lb n="25"/> <l>εἴϲομαι α κε μ’ ὁ Τυδείδηϲ κρατερὸϲ Διομήδηϲ (Θ 532),</l>
-</lg>
+                     <lb n="25"/>
+                     <l>εἴϲομαι α κε μ’ ὁ Τυδείδηϲ κρατερὸϲ Διομήδηϲ (Θ 532),</l>
+                  </lg>
 καὶ εἰδῶ εἰδήϲω, ἐξ οὖ τὸ
 <lg>
-<l>εἰδῇϲ δὲ καὶ αὐτόϲ,</l>
-</lg>
+                     <l>εἰδῇϲ δὲ καὶ αὐτόϲ,</l>
+                  </lg>
 ῥίπτω ἔρριπτον καὶ ῥιπτῶ ἐρρίπτουν, ὡϲ παρὰ τῷ ποιητῇ (ν 78) «ἀνερρίπτουν»,
 κύω ἔκυον καὶ κυῶ ἐκύουν
 <lg>
-<lb n="30"/><l>ἣ δ’ ἐκύει φίλον υἱόν (Τ 117)</l>
-</lg>
+                     <lb n="30"/>
+                     <l>ἣ δ’ ἐκύει φίλον υἱόν (Τ 117)</l>
+                  </lg>
 γράφω γράψω καὶ γραφῶ γραφήϲω, ἐξ οὖ ὁ γεγράφηκα παρακείμενοϲ. οὕτωϲ οὖν
 καὶ τὰ ἔχοτα ἕν λ ἕωϲ μὲν τοῦ παρατατικοῦ ὡϲ ἀπὸ βαρυτόνων ποιεῖται τὴν κλίϲιν,
 ἀπὸ δὲ τοῦ μέλλοντοϲ ὡϲ ἀπὸ περιϲπωμένων οἶον θέλω θελήϲω τεθέληκα
 ἐθέληϲα, μελῶ μελήϲω μεμέληκα ἐμέληϲα, ὀφείλω ὀφειλήϲω ὠφείληκα ὠφεὶληϲα,
 <lb n="35"/> ὥϲπερ νοῶ νοήϲω νενόηκα ἐνόηϲα. ταῦτα μὲν Ἀπολλώνιοϲ.</p>
-</div></div>
-<div type="textpart" subtype="section" n="26">
-<head>26.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Choer. 641, 12">ὁ δὲ Ἡρωδιανὸϲ ἀνατρέπει αὐτὸν λέγων, ὅτι
+            </div>
+         </div>
+         <div n="26" type="section">
+            <head>26.</head>
+            <div n="1" type="paragraph">
+               <p source="Choer. 641, 12">ὁ δὲ Ἡρωδιανὸϲ ἀνατρέπει αὐτὸν λέγων, ὅτι
 κακῶϲ λέγειϲ, τὰ γὰρ ὡϲ ἀπὸ βαρυτόνων καὶ ὡϲ ἀπὸ περιϲπωμένων
 ποιοῦντα τὴν κλίϲιν ἐν τῷ αὐτῷ χρόνῳ καὶ ὡϲ ἀπὸ περιϲπωμένων
 <lb n="40"/> καὶ ὡϲ ἀπὸ βαρυτόνων ποιεῖται τὴν κλίϲιν οἶον τύπτω τύψω τυπτῶ
@@ -1044,8 +1143,9 @@ dicuntur ut a κρῶ κράζω et κρίζω. De κρίκε cf. Lob. Parall. 4
 ὡϲ ἀπὸ τῶν περιϲπωμένων ποιεῖται τὴν κλίϲιν. τούτου οὖν χάριν τὰ
 δι’ ἑνὸϲ λ ἐκφερόμενα ἔχει τὸν μέλλοντα μιᾷ ϲυλλαβῇ περιττεύοντα τοῦ
 ἐνεϲτῶτοϲ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p source="Choer. 643, 27">ἰϲτέον ὅτι ἀναλογίαν ἔχει ὁ μέλλων τῇ εὐθείᾳ, ὁ δὲ ἐνεϲτὼϲ
+            </div>
+            <div n="2" type="paragraph">
+               <p source="Choer. 643, 27">ἰϲτέον ὅτι ἀναλογίαν ἔχει ὁ μέλλων τῇ εὐθείᾳ, ὁ δὲ ἐνεϲτὼϲ
 τῇ γενικῇ· ἐπειδὴ οὖν ὅτε ἡ εὐθεῖα διὰ τοῦ ψ ἐκφέρεται, τότε ἡ γενικὴ <lb n="15"/>
 διὰ τοῦ β ἢ ἢ φ ἐκφέρεται οἷον Ἄραψ Ἄραβοϲ, Κύκλωψ Κύκλωποϲ, Κίνυψ
 Κίνυφοϲ (ἔϲτι δὲ ὄνομα ποταμοῦ), τούτου χάριν καὶ ὅτε ὁ ἐνεϲτὼϲ διὰ τοῦ β
@@ -1067,10 +1167,12 @@ dicuntur ut a κρῶ κράζω et κρίζω. De κρίκε cf. Lob. Parall. 4
 χάριν καὶ ὅτε ὁ ἐνεϲτὼϲ δι’ ἀμεταβόλου ἐκφέρεται, τότε καὶ ὁ μέλλων διὰ
 τοῦ αὐτοῦ ἀμεταβόλου ἐκφέρεται οἶον κείρω κερῶ, ῥαίνω ῥανῶ, τίλλω τιλῶ,
 νέμω νεμῶ.</p>
-</div></div>
-<div type="textpart" subtype="section" n="27">
-<head>27.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Choer. 644, 30">ἡ τετάρτη ϲυζυγία τῶν βαρυτόνων διφορεῖται κατὰ
+            </div>
+         </div>
+         <div n="27" type="section">
+            <head>27.</head>
+            <div n="1" type="paragraph">
+               <p source="Choer. 644, 30">ἡ τετάρτη ϲυζυγία τῶν βαρυτόνων διφορεῖται κατὰ
 τὸν μέλλοντα· πῇ γὰρ διὰ τοῦ ϲ ἐκφέρεται οἷον ϲυρίζω ϲυρίϲω, ἐλπίζω
 ἐλπίϲω, φράζω φράϲω· πῇ δὲ διὰ τοῦ ξ οἷον πλήϲϲω πλήξω, ϲφάζω
 ϲφάξω. καὶ λέγει ὁ Ἡρωδιανόϲ, ὅτι εἰκότωϲ ἀτακτεῖ ὁ μέλλων τῆϲ <lb n="40"/>
@@ -1078,24 +1180,29 @@ dicuntur ut a κρῶ κράζω et κρίζω. De κρίκε cf. Lob. Parall. 4
 ἐκφέρεται, πῇ δὲ διὰ τοῦδε, ἐπειδὴ καὶ ὁ ἐνεϲτὼϲ ἀτακτεῖ. ποία δὲ
 ϲυγγένεια ἐπὶ τῶν β΄ ϲϲ πρὸϲ τὸ ξ; οὐ γάρ ἐϲτι τὰ β΄ ϲϲ διπλοῦν ϲύμφωνον,
 ὡϲ πρὸϲ τὸ ξ, διπλᾶ γάρ ἐϲτι τρία, ζ ξ ψ.</p>
-</div></div>
-<div type="textpart" subtype="section" n="28">
-<head>28.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Choer. 645, 30">δύναται ὁ ἐρέϲω μέλλων, ἐξ οὗ ὁ ἀόριϲτοϲ α′
+            </div>
+         </div>
+         <div n="28" type="section">
+            <head>28.</head>
+            <div n="1" type="paragraph">
+               <p source="Choer. 645, 30">δύναται ὁ ἐρέϲω μέλλων, ἐξ οὗ ὁ ἀόριϲτοϲ α′
 
 <pb n="806"/>
 ἤρεϲα «ἤρεϲα χερϲὶν ἐμῇϲιν », ὥϲ φηϲιν ὁ Ἡρωδιανόϲ, καὶ ὡϲ ἀπὸ
 περιϲπωμένου τοῦ ἐρῶ ὥϲπερ τελῶ τελέϲω.</p>
-</div></div>
-<div type="textpart" subtype="section" n="29">
-<head>29.</head>
-
-<div type="textpart" subtype="paragraph" n="1"><p source="Il. Pr. 454">ἡ τοιαύτη ὕφεϲιϲ τοῦ ϲ (sc. qualis exstat in v. <lb n="455"/>
-<lb n="5"/> «αὐτὰρ ἐπεί κε θάνω, κτεριοῦϲί με δῖοι Ἀχαιοί») Ἀττική ἐϲτι καὶ περιϲπᾷ.
+            </div>
+         </div>
+         <div n="29" type="section">
+            <head>29.</head>
+            <div n="1" type="paragraph">
+               <p source="Il. Pr. 454">ἡ τοιαύτη ὕφεϲιϲ τοῦ ϲ (sc. qualis exstat in v. <lb n="455"/>
+                  <lb n="5"/> «αὐτὰρ ἐπεί κε θάνω, κτεριοῦϲί με δῖοι Ἀχαιοί») Ἀττική ἐϲτι καὶ περιϲπᾷ.
 τοὺϲ μέλλονταϲ διά τι αἴτιον, εἰ παραλήγεται τῷ ι ϲυνεϲταλμένῳ, ὅπερ
 καὶ ἐπὶ τοῦ «τόνδε δ’ ἐγὼ κομιῶ » (ο 546). τὸ μέντοι ἐρύω οὐ δύναται
-ἔχεϲθαι ταύτηϲ τῆϲ φύϲεωϲ, ἀλλ’ ἐϲτὶν ἐνεϲτὼϲ ἀντὶ μέλλοντοϲ.</p></div>
-<div type="textpart" subtype="paragraph" n="2"><p>Causa autem perispaseos, quam significat Herodianus b. l., explicate exponitur
+ἔχεϲθαι ταύτηϲ τῆϲ φύϲεωϲ, ἀλλ’ ἐϲτὶν ἐνεϲτὼϲ ἀντὶ μέλλοντοϲ.</p>
+            </div>
+            <div n="2" type="paragraph">
+               <p>Causa autem perispaseos, quam significat Herodianus b. l., explicate exponitur
 <lb n="10"/> ap. Choer. 647, 3: ἰϲτέον ὅτι ἐπὶ τῶν διὰ τοῦ ιζω ὑπερδιϲυλλάβων διὰ τοῦ
 ι γραφομένων εἰώθαϲιν οἱ Ἀθηναῖοι ἀποβάλλειν τὸ ϲ κατὰ τὸν μέλλοντα καὶ περιϲπᾶν
 οἷον γεμίζω γεμίϲω γεμιῶ, ἐλπίζω ἐλπίϲω ἐλπιῶ, ϲυρίζω ϲυρίϲω ϲυριῶ,
@@ -1135,8 +1242,7 @@ dicuntur ut a κρῶ κράζω et κρίζω. De κρίκε cf. Lob. Parall. 4
 <note type="footnote">1. 1 voluit sine dubio ξ 351 afferre. l. 2 scribendum videtur τοῦ ἐρῶ
 εἳναι ὥϲπερ τελῶ τελέϲω, οὕτω καὶ ἐρῶ ἐρέϲω. l. 8 cf. Il. Pr. 365, Ο 351
 Υ 452.</note>
-
-<pb n="807"/>
+                  <pb n="807"/>
 θέλει τῷ ἐνεϲτῶτι οἷον τύπτω τύψω, ἢ περιττοϲυλλαβεῖν θέλει οἷον ποιῶ ποιήϲω
 βοῶ βοήϲω, θέλω θελήϲω, ὀφείλω ὀφειλήϲω. διὰ ταύτην οὖν τὴν αἰτίαν οὔτε
 ἐπὶ τῶν διὰ τοῦ αζω οὕτε ἐπὶ τῶν διὰ τοῦ οζω ἀποβάλλουϲιν οἱ Ἀθηναῖοι τὸ ϲ
@@ -1144,46 +1250,50 @@ dicuntur ut a κρῶ κράζω et κρίζω. De κρίκε cf. Lob. Parall. 4
 τοῦτο ἀποβάλλουϲι τὸ ϲ κατὰ τὸν μέλλοντα καὶ περιϲπῶϲιν, ἐπειδὴ τὸ ι καὶ τὸ <lb n="5"/>
 ω οὐδέποτε κιρνᾶται οὕτε παρ’ ἡμῖν οὕτε παρὰ τοῖϲ Ἀθηναίοιϲ οὕτε παρ’ ἄλλῃ
 τινὶ διαλέκτῳ οἷον μειδιῶ, ἐρυθριῶ, ἀξιῶ, κοπιῶ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p>Cur a verbis in υζω futur tram Atticum non formatum sit, id a technicis non
+            </div>
+            <div n="3" type="paragraph">
+               <p>Cur a verbis in υζω futur tram Atticum non formatum sit, id a technicis non
 traditum esse dicit Choer.</p>
-<note>Futuri Dorici mentionem inicit Herod. Il. Pr. B 393 ἐϲϲεῖται, Choeroboscus <lb n="10"/>
+               <note>Futuri Dorici mentionem inicit Herod. Il. Pr. B 393 ἐϲϲεῖται, Choeroboscus <lb n="10"/>
 Herodiano duce quaestionem instituit de perispasi futuri Dorici:  ἄξιόν ἐϲτι ζητῆϲαι,
 διατί οἱ Δωριεῖϲ πάνταϲ τοὺϲ ὁριϲτικοὺϲ μέλλονταϲ περιϲπῶϲι; p. 651, <lb n="13"/>
 quem locum iam attuli ad Prooemium Catholicae.</note>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p source="Futurum Aeolicum tangit Herod. in Ιl. Pr. 413">ἔλϲαν Αἰολικωτέρα κλίϲιϲ
+            </div>
+            <div n="4" type="paragraph">
+               <p source="Futurum Aeolicum tangit Herod. in Ιl. Pr. 413">ἔλϲαν Αἰολικωτέρα κλίϲιϲ
 Choer. 545, 1 τὸ φθερῶ οἱ Αἰολεῖϲ θέλοντεϲ βαρύνειν ἅτε δὴ βαρυντικοὶ <lb n="15"/>
 ὄντεϲ φθέρϲω λέγουϲι τὸ ϲ προϲτιθέντεϲ. τὸ γὰρ ϲ χαρακτηριϲτικόν ἐϲτι βαρυτόνου
 μέλλοντοϲ οἶον ποιήϲω, νοήϲω. καί πάλιν τὸ κερῶ κέρϲω λέγουϲιν ἐξ οὗ
 τὸ «ἀπέκερϲε τένονταϲ» (Κ 456).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5"><p source="Choer. 652, 29">ἔϲτι δὲ κακονίϲαι τὴν παραλήγουϲαν τοῦ μέλλοντοϲ τῆϲ
+            </div>
+            <div n="5" type="paragraph">
+               <p source="Choer. 652, 29">ἔϲτι δὲ κακονίϲαι τὴν παραλήγουϲαν τοῦ μέλλοντοϲ τῆϲ
 πρώτηϲ ϲυζυγίαϲ τῶν περιϲπωμένων οὕτωϲ· ὅτε γὰρ μακρᾷ παραλήγεται ὁ ἐνεϲτώϲ, <lb n="20"/>
 τότε ὁ μέλλων διὰ τοῦ η ἐκφέρεται οἷον ποιῶ ποιήϲω, εὑρῶ εὑρήϲω,
 τηρῶ τηρήϲω, ἀθλῶ ἀθλήϲω, πενθῶ πενθήϲω, ὀλιϲθῶ ὀλιϲθήϲω· δεῖ προϲθεῖναι
 χωρὶϲ τοῦ ἀρκῶ ἀρκέϲω, τοῦτο γὰρ μακρᾷ παραληγόμενον κατὰ τὸν ἐνεϲτῶτα
 διὰ τοῦ ε ἐξηνέχθη κατὰ τὸν μέλλοντα, καὶ χωρὶϲ τοῦ νεικῶ νεικέϲω, οἶον
 <lg>
-<l>ἀλλὰ φίλον περ ἐόντα καὶ αἰδοῖον Μενέλαον</l> <lb n="25"/>
-<l>νεικέϲω (Κ 114).</l>
-</lg>
+                     <l>ἀλλὰ φίλον περ ἐόντα καὶ αἰδοῖον Μενέλαον</l>
+                     <lb n="25"/>
+                     <l>νεικέϲω (Κ 114).</l>
+                  </lg>
 τὸ δὲ αἰνῶ αἰνέϲω ἀναλογώτερόν ἐϲτι παρὰ τοῖϲ ποιηταῖϲ λεγόμενον αἰνήϲω διὰ
 τοῦ η οἷον
 μῦθον ἐπαινήϲαντεϲ Ὀδυϲϲῆοϲ θείοιο (Β 335),
 ἐπειδὴ μακρᾷ παραλήγεται κατὰ τὸν ἐνεϲτῶτα, τοῦ παρὰ τοῖϲ ἰαμβογράφοιϲ διὰ <lb n="30"/>
 τοῦ ἑ λεγομένου οἷον αἰνέϲω καὶ ἐπαινέϲω, ὡϲ παρὰ Ϲοφοκλεῖ (Αi. 536)
 <lg>
-<l>ἐπῄνεϲ’ ἔργον (ἔργα Cod. M) καὶ πρόνοιαν ἣν ἔθου</l>
-</lg>
+                     <l>ἐπῄνεϲ’ ἔργον (ἔργα Cod. M) καὶ πρόνοιαν ἣν ἔθου</l>
+                  </lg>
 καὶ πάλιν παρ’ Εὐριπίδῃ ἐν Μηδείᾳ (707)
 <lg>
-<l>ἐᾷ δ’ Ἴάϲων, οὐδὲ ταῦτ’ ἐπῄνεϲα,</l>
-</lg>
+                     <l>ἐᾷ δ’ Ἴάϲων, οὐδὲ ταῦτ’ ἐπῄνεϲα,</l>
+                  </lg>
 καὶ τὸ αἰδῶ οἰδήϲω, ἐξ οὖ τὸ αἰδήμων, ἀναλογώτερόν ἐϲτι τοῦ αἰδέϲω οἷον <lb n="35"/>
-<lg>
-<l>αἰδεϲθείϲ βαϲιλῆοϲ ἐνιπὴν αἰδοίοιο (Δ 402).</l>
-</lg>
+                  <lg>
+                     <l>αἰδεϲθείϲ βαϲιλῆοϲ ἐνιπὴν αἰδοίοιο (Δ 402).</l>
+                  </lg>
 εἰ δὲ βραχείᾳ παραλήγεται ὁ ἐνεϲτὼϲ τῆϲ πρώτηϲ ϲυζυγίαϲ τῶν περιϲπωμένων,
 τότε ὁ μέλλων πῇ μὲν τῷ η παραλήγεται, πῇ δὲ τῷ ε οἷον φιλῶ φιλήϲω, νοῶ
 νοήϲω, τελέω τελέϲω, πατῶ πατήϲω, πῇ δὲ διφορεῖται οἷον φορῶ φορέϲω καὶ
@@ -1192,11 +1302,12 @@ Choer. 545, 1 τὸ φθερῶ οἱ Αἰολεῖϲ θέλοντεϲ βαρύ
 καὶ εἰ μὲν ϲωματικῶϲ, διὰ τοῦ πονέϲω δεῖ λέγειν, εἰ δὲ ψυχικῶϲ πονήϲω διὰ
 τοῦ η· διὰ τοῦτο ϲεϲημειούμεθα παρ’ Ἀριϲτοφάνει (Pac. 820)
 <lg>
-<l>ἔγωγέ τοι πεπόνηκα κομιδῇ τὼ ϲκέλη·</l>
-</lg>
+                     <l>ἔγωγέ τοι πεπόνηκα κομιδῇ τὼ ϲκέλη·</l>
+                  </lg>
 ἐπειδὴ ϲωματικῶϲ λεχθὲν διὰ τοῦ ε ἐξηνέχθη.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="6"><p source="Choer. 654, 18">περὶ δὲ τῆϲ παραληγούϲηϲ τοῦ μέλλοντοϲ τῆϲ δευτέραϲ ϲυζυγίαϲ
+            </div>
+            <div n="6" type="paragraph">
+               <p source="Choer. 654, 18">περὶ δὲ τῆϲ παραληγούϲηϲ τοῦ μέλλοντοϲ τῆϲ δευτέραϲ ϲυζυγίαϲ
 τῶν περιϲπωμένων ἔϲτιν εἰπεῖν ταῦτα ἰϲτέον ὅτι ὁ μέλλων τῆϲ δευτέραϲ
 ϲυζυγίαϲ τῶν περιϲπωμένων ἢ τῷ η παραλήγεται ἢ τῷ α οἷον βοήϲω,
 ἐάϲω, καὶ τῷ α ἢ μακρῷ ἢ βραχεῖ· ἡνίκα μὲν τὸ λ πρὸ τοῦ α κατὰ τὸν μέλλοντα,
@@ -1207,8 +1318,9 @@ Choer. 545, 1 τὸ φθερῶ οἱ Αἰολεῖϲ θέλοντεϲ βαρύ
 φυρῶ φυράϲω, περῶ περάϲω (ἐπὶ τοῦ παρελθεῖν τὸ γὰρ περάϲω ἐπὶ τοῦ
 πωλήϲω βραχὺ ἔχει τὸ α οἷον
 <lg>
-<lb n="5"/><l>Τρώων καὶ πολλοὺϲ ζωοὺϲ ἕλον ἠδ’ ἐπέραϲϲα <del>Φ 102</del>,</l>
-</lg>
+                     <lb n="5"/>
+                     <l>Τρώων καὶ πολλοὺϲ ζωοὺϲ ἕλον ἠδ’ ἐπέραϲϲα <del>Φ 102</del>,</l>
+                  </lg>
 ἐπλεονάϲθη γὰρ τὸ ϲ διὰ τὴν βραχεῖαν, καὶ μήποτε ὡϲ ἀπὸ τοῦ περάζω ἐϲτὶν
 ὥϲπερ ἀγοράζω ἀγοράϲω)· τὸ κεράϲω ἔχον πρὸ τοῦ α τὸ ρ καὶ ϲυϲτέλλον τὸ α
 οὐκ ἀντίκειται ἡμῖν, ἐπειδὴ οὐκ ἔϲτιν ἀπὸ τοῦ κερῶ κερᾷϲ, ἀλλ’ ιὡϲ ἀπὸ τοῦ
@@ -1217,13 +1329,14 @@ Choer. 545, 1 τὸ φθερῶ οἱ Αἰολεῖϲ θέλοντεϲ βαρύ
 ἀνιάϲω, κοπιῶ κοπιάϲω, ἀγωνιῶ ἀγωνιάϲω, μειδιῶ μειδιάϲω, ἀροτριῶ ἀροτριάϲω,
 (ἐρυθριῶ ἐρυθριάϲω, ἐῶ ἐάϲω τὸ γὰρ
 <lg>
-<l>οὐκ ἐάϲουϲιν ἐμοὶ δόμεναι βιόν (φ 233)</l>
-</lg>
+                     <l>οὐκ ἐάϲουϲιν ἐμοὶ δόμεναι βιόν (φ 233)</l>
+                  </lg>
 ποιητικῶϲ ϲυνεϲτάλη· τὸ πεινάϲω καὶ διψάϲω μακρὸν ἔχοντα τὸ α καὶ μὴ ἔχοντα
 <lb n="15"/> πρὸ τοῦ α μήτε ρ μήτε φωνῆεν οὐκ ἀντίκειται ἡμῖν, ἐπειδὴ ἀπὸ τοῦ πεινήϲω
 καὶ διψήϲω γέγονε κατὰ τροπὴν Δωρικὴν τοῦ η εἰϲ α μακρόν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="7"><p source="Choer. 659, 11">περὶ δὲ τῆϲ παραληγούϲηϲ τοῦ μέλλοντοϲ τῆϲ τρίτηϲ ϲυζυγίαϲ
+            </div>
+            <div n="7" type="paragraph">
+               <p source="Choer. 659, 11">περὶ δὲ τῆϲ παραληγούϲηϲ τοῦ μέλλοντοϲ τῆϲ τρίτηϲ ϲυζυγίαϲ
 τῶν περιϲπωμένων ἔϲτιν εἰπεῖν ταῦτα ὅτι ἡ τρίτη ϲυζυγία τῶν περιϲπωμένων
 κατὰ τὸν μέλλοντα ἢ τῷ ω παραλήγεται οἶον χρυϲῶ χρυϲώϲω ἢ τῷ
 <lb n="20"/> ο οἷον ὀμῶ ὀμόϲω. καὶ ἔϲτιν εἰπεῖν, διὰ τί; ὅτι ὅϲα μὲν ἔχει ὀνόματα παρακείμενα
@@ -1237,54 +1350,62 @@ Choer. 545, 1 τὸ φθερῶ οἱ Αἰολεῖϲ θέλοντεϲ βαρύ
 διφορεῖται· τινὲϲ μὲν γὰρ διὰ τοῦ ο γράφουϲιν αὐτὸ ϲ δοξάζοντεϲ μὴ ἔχειν
 αὐτὸ ὄνομα προυποκείμενον, τινὲϲ δὲ διὰ τοῦ ω γράφουϲιν αὐτὸ λέγοντεϲ ὅτι
 <lb n="30"/> ἔχει ὄνομα προυποκείμενον τὸ Ἄρηϲ, Ἄρηϲ γάρ ἐϲτιν ὁ ϲίδηροϲ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="8"><p>( Περὶ δευτέρου μέλλοντοϲ).</p>
-</div></div>
-<div type="textpart" subtype="section" n="30">
-<head>30.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Choer. 662, 23">ἰϲτέον ὅτι λέγει ὁ Ἡρωδιανόϲ, ὡϲ οὐδέποτε
+            </div>
+            <div n="8" type="paragraph">
+               <p>( Περὶ δευτέρου μέλλοντοϲ).</p>
+            </div>
+         </div>
+         <div n="30" type="section">
+            <head>30.</head>
+            <div n="1" type="paragraph">
+               <p source="Choer. 662, 23">ἰϲτέον ὅτι λέγει ὁ Ἡρωδιανόϲ, ὡϲ οὐδέποτε
 εὑρίϲκεται δεύτεροϲ μέλλων ἐνεργητικὸϲ ὁριϲτικὸϲ ἐν χρήϲει· ἃϲ γάρ,
 <lb n="35"/> φηϲί, παρέθετο χρήϲειϲ ὁ Ἀπολλώνιοϲ, ἢ πεπλαϲμέναι αὐτῷ εἰϲιν ὡϲ
 τὸ φυγῶ, δράμῶ (οὐδέτεροι γὰρ μέλλοντεϲ· οὐδεὶϲ γὰρ τῶν παλαιῶν,
 φηϲί, τούτοιϲ ἐχρήϲατο) ἢ ἐνεϲτῶτέϲ εἰϲιν ἀντὶ μελλόντων, ὡϲ τὸ
 <lg>
-<l>κούρην δ’ οὐ γαμέω Ἀγαμέμνονοϲ Ἀτρείδαο (Ι 388)</l>
-</lg>
+                     <l>κούρην δ’ οὐ γαμέω Ἀγαμέμνονοϲ Ἀτρείδαο (Ι 388)</l>
+                  </lg>
 καὶ ὡϲ τὸ
 <lg>
-<lb n="40"/> <l>πάντα γὰρ ἤδη τοι τελέω (ψ 20),</l>
-</lg>
-<note type="footnote">I. 16 quae sequuntur usque ad p. 657, 22 Apollonii esse iure ex iis, quae
+                     <lb n="40"/>
+                     <l>πάντα γὰρ ἤδη τοι τελέω (ψ 20),</l>
+                  </lg>
+                  <note type="footnote">I. 16 quae sequuntur usque ad p. 657, 22 Apollonii esse iure ex iis, quae
 statim sequuntur, ἰϲτέον δὲ ὅτι ὁ Ἀπολλώνιοϲ ἐν ἄλλοιϲ διδάϲκει ἡμᾶϲ Uhligius
 Mus. Rhen. XI p. 39 concludit. l. 36 φυγῶ δραμῶ scripsi pro φυγῶν δραμῶν
 τυπῶν omisso τυπῶ, quia sequens οὐδέτεροι de duabus tantum formis ser-
 monem esse indicat et quia diserte in canone ὁριϲτικόϲ memoratur. pro φύγω
 potius scribendum videtur νυγῶ: cf. infra p. 812, 9.</note>
-
-<pb n="809"/>
+                  <pb n="809"/>
 ἐνταῦθα γὰρ οἱ ἐνεϲτῶτέϲ εἰϲιν ἀντὶ μελλόντων, ἀντὶ γὰρ τοῦ γαμήϲω
 καὶ τελέϲω, ὥϲπερ καὶ ἐν τῷ
 <lg>
-<l>ἐγ δέ κ’ ἄγω Βριϲηΐδα καλλιπάρῃον (Α 184),</l>
-</lg>
+                     <l>ἐγ δέ κ’ ἄγω Βριϲηΐδα καλλιπάρῃον (Α 184),</l>
+                  </lg>
 ἐνεϲτώϲ ἐϲτιν ἀντὶ μέλλοντοϲ τοῦ ἄξω ἄλλωϲ τε δὲ οὐδέποτε ὁ μέλλων
 ὁ ὁριϲτικὸϲ διαλύεται, πῶϲ οὖν τὸ γαμέω καὶ τελέω, εἴ γε μέλοντεϲ <lb n="5"/>
 ὑπῆρχον, ἐν διαλύϲει παραλαμβάνονται; ἄρα οὖν ἐντέλειαί εἰϲιν
 ἐνεϲτῶτοϲ τοῦ γαμῶ καὶ τελῶ. πρόϲκειται «ὁριϲτικόϲ», ἐπειδὴ τὸ εὐφρανεῖν
 ἀπαρέμφατον γίνεται κατὰ διάλυϲιν,
 <lg>
-<l>εὐφρανέειν ἄλοχόν τε φίλην καὶ νήπιον υἱόν (Ε 688)</l>
-</lg>
+                     <l>εὐφρανέειν ἄλοχόν τε φίλην καὶ νήπιον υἱόν (Ε 688)</l>
+                  </lg>
 ϲημειοῦται δὲ τὸ ἐκχεῶ δευτέρου μέλλοντοϲ, οἷον καὶ τὸ κατακλιεῖ παρ’ <lb n="10"/>
 Εὐπόλιδι ἐν Χρυϲῷ Γένει οἷον
 <lg>
-<l>εἰ μή τιϲ αὐτὴν κατακλιεῖ.</l>
-</lg></p></div>
-<div type="textpart" subtype="paragraph" n="2"><p>(Περὶ παθητικῶν).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p>( Περὶ ἐνεϲτῶτοϲ καὶ παρατατικοῦ).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p source="Choer. 665, 32">πᾶϲ ἐνεϲτὼϲ ὁριϲτικὸϲ καὶ πᾶϲ μέλλων ὁριϲτικὸϲ εἰϲ ω λήγων <lb n="15"/>
+                     <l>εἰ μή τιϲ αὐτὴν κατακλιεῖ.</l>
+                  </lg>
+               </p>
+            </div>
+            <div n="2" type="paragraph">
+               <p>(Περὶ παθητικῶν).</p>
+            </div>
+            <div n="3" type="paragraph">
+               <p>( Περὶ ἐνεϲτῶτοϲ καὶ παρατατικοῦ).</p>
+            </div>
+            <div n="4" type="paragraph">
+               <p source="Choer. 665, 32">πᾶϲ ἐνεϲτὼϲ ὁριϲτικὸϲ καὶ πᾶϲ μέλλων ὁριϲτικὸϲ εἰϲ ω λήγων <lb n="15"/>
 προϲθήκῃ τῆϲ μαι ἢ παθητικὸν ἢ μέϲον ποιοῦϲι, καὶ ὁ μὲν ἐνεϲτὼϲ προϲλαμβάνων
 τὴν μαι ϲυλλαβὴν παθητικὸν καὶ μέϲον ποιεῖ οἷον τύπτω τύπτομαι ὑπ’
 αὐτοῦ καὶ τύπτομαι αὐτόν, καὶ πάλιν βιάζω βιάζομαι ὑπ’ αὐτοῦ καὶ βιάζομαι
@@ -1304,8 +1425,9 @@ potius scribendum videtur νυγῶ: cf. infra p. 812, 9.</note>
 ὑπεϲταλμένων τῶν τῆϲ δευτέραϲ ϲυζυγίαϲ τῶν περιϲπωμένων, τρέπεται.
 τὸ ω εἰϲ τὴν ου δίφθογγον εἴτε ἐνεϲτῶτέϲ εἰϲιν εἴτε μέλλοντεϲ οἷον ποιῶ ποιοῦμαι,
 ϲτεφανῶ ϲτεφανοῦμαι, κουφιῶ κουφιοῦμαι.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5"><p>Τὰ δὲ εἰϲ μι λήγοντα ῥήματα τροπῇ τῆϲ μι εἰϲ μαι τὸ παθητικὸν ποιεῖ οἷον <lb n="35"/>
+            </div>
+            <div n="5" type="paragraph">
+               <p>Τὰ δὲ εἰϲ μι λήγοντα ῥήματα τροπῇ τῆϲ μι εἰϲ μαι τὸ παθητικὸν ποιεῖ οἷον <lb n="35"/>
 τίθημι τίθεμαι, καὶ ϲυϲτέλλει τὴν παραλήγουϲαν· καὶ εἰ μὲν ἔχει ἡ πρώτη ϲυζυγία
 τὴν εἰϲ μι , ϲυϲτέλλει τὴν παραλήγουϲαν εἰϲ τὸ ε οἷον τίθημι τίθεμαι, ἵημι ἵεμαι·
 ἡ δὲ δευτέρα εἰϲ τὸ α ϲυϲτέλλει τὴν παραλήγουϲαν οἷον ἵϲτημι ἵϲταμαι· ἡ δὲ τρίτη
@@ -1316,8 +1438,7 @@ potius scribendum videtur νυγῶ: cf. infra p. 812, 9.</note>
 ἀπὸ τῶν εἰϲ ω ἢ τῷ ο παραλήγεται ἐν τῷ εἰϲ μαι παθητικῷ ἐνεϲτῶτι οἷον τύπτομαι,
 <note type="footnote">1. 4 ἐνεϲτώϲ ἐϲτιν scripsi pro ἐνεϲτῶτοϲ δὲ et l. 5 τὸ γαμέω pro τοῦ γαμέω
 et l. 10 ἐκχεῶ pro ἐκχέω.</note>
-
-<pb n="810"/>
+                  <pb n="810"/>
 λέγομαι, ἢ τῷ ω οἷον βοῶμαι περῶμαι, ἢ τῇ ου διφθόγγῳ οἶον ποιοῦμαι,
 φανοῦμαι, χρυϲοῦμαι· ἐπάν οὖν ταῦτα οὐδενὶ ἐκ τούτων παραλήγεται, ἄρα
 οὐκ ἔϲτιν ἐκ τῶν εἰϲ ω ἀλλ’ οὕτε ἀπὸ τῶν εἰϲ μι ἐϲτί τὰ γὰρ εἰϲ μι ἢ τῷ ε
@@ -1328,24 +1449,32 @@ et l. 10 ἐκχεῶ pro ἐκχέω.</note>
 δευτέρων προϲώπων ὄντα ἀπὸ τῶν εἰϲ μι, λέγω δὴ ἀπὸ τοῦ ἦμαι ἦϲαι καὶ ἀπὸ
 τοῦ κεῖϲαι οἷον ὡϲ παρὰ τῷ ποιητῇ (Υ 389)
 <lg>
-<lb n="10"/> <l>κεῖϲαι Ὀτρυντείδη πάντων ἐκπαγλότατ’ ἀνδρῶν,</l>
-</lg>
+                     <lb n="10"/>
+                     <l>κεῖϲαι Ὀτρυντείδη πάντων ἐκπαγλότατ’ ἀνδρῶν,</l>
+                  </lg>
 πᾶϲ γὰρ ἐνεϲτὼϲ εἰϲ μαι λῆγον καὶ ἔχων εἰϲ αι τὸ δεύτερον πρόϲωπον ἀπὸ τῶν
 εἰϲ μι ἐϲτὶν οἷον τίθεμαι τίθεϲαι, ἵϲταμαι ἵϲταϲαι, δίδομαι δίδοϲαι, ζεύγνυμαι ζεύγνυϲαι.
 εἰ οὖν ἐϲτι τὸ δεύτερον πρόϲωπον ἧϲαι καὶ κεῖϲαι, δηλονότι ἀπὸ τῶν
 εἰϲ μι ἐϲτίν.</p>
-<lb n="15"/> </div></div>
-<div type="textpart" subtype="section" n="31">
-<head>31.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Περὶ μον. 45, 9 ἐδάμην">οὐδὲν εἰϲ μην λῆγον ῥῆμα τρέψαν τὸ ν
+               <lb n="15"/>
+            </div>
+         </div>
+         <div n="31" type="section">
+            <head>31.</head>
+            <div n="1" type="paragraph">
+               <p source="Περὶ μον. 45, 9 ἐδάμην">οὐδὲν εἰϲ μην λῆγον ῥῆμα τρέψαν τὸ ν
 εἰϲ ϲ δεύτερον πρόϲωπον ἀποτελεῖ. ἀλλὰ μόνον τὸ ἐδάμην ἐποίηϲε τὸ
 ἐδάμηϲ καὶ ἀποβολῇ τοῦ ϲ τρίτον ἐδάμη. τὸ δὲ αἴτιον λέγεται ἐν τοῖϲ
-περὶ ῥημάτων.</p></div>
-<div type="textpart" subtype="paragraph" n="2"><p>Περὶ παρακειμένου).</p>
-</div></div>
-<div type="textpart" subtype="section" n="32">
-<head>32.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Eustath. 1436, 53">ὅτι ὥϲπερ τὸ ὕφαϲμα διὰ τοῦ ϲ οὕτω καὶ μετοχή
+περὶ ῥημάτων.</p>
+            </div>
+            <div n="2" type="paragraph">
+               <p>Περὶ παρακειμένου).</p>
+            </div>
+         </div>
+         <div n="32" type="section">
+            <head>32.</head>
+            <div n="1" type="paragraph">
+               <p source="Eustath. 1436, 53">ὅτι ὥϲπερ τὸ ὕφαϲμα διὰ τοῦ ϲ οὕτω καὶ μετοχή
 ἐϲτιν ὑφαϲμένοϲ Ἡρωδιανὸϲ δηλοῖ, ὃϲ καὶ Ἀττικῶν αὐτό φηϲιν
 εἶναι, οἳ καὶ μεμολυϲμένοϲ φαϲὶ καὶ μεμαραϲμένοϲ· εἰ καὶ ἄλλωϲ ὥϲπερ
 <note type="footnote">1. 14 quae sequuntur ἔϲτι δὲ ϲχηματίϲαι αὐτὰ οὕτωϲ· ἔϲτιν ἕω καὶ κέω κτλ.
@@ -1376,31 +1505,43 @@ esse dicit, etiam haec ex Herodiano petivisse videtur: p. 668, 6 πᾶν πρῶ
 τὸ ϲ ἢ ἀποβολῇ τοῦ τ καὶ κράϲει τῶν φωνηέντων, ἐπειδὴ οὐκ ἔχει τὸ τ κατὰ
 τὸ τρίτον πρόϲωπον· τὸ γὰρ μ τὸ ὅν ἐν τῷ πρώτῳ προϲώπῳ οὐκ ἔϲτι κλιτικὸν
 ἀλλὰ θεματικόν, ἀπὸ γὰρ τοῦ ἐνεϲτῶτοϲ ἔχει αὐτὸ δάμνω γάρ ἐϲτιν ὁ ἐνεϲτώϲ.</note>
-
-<pb n="811"/>
+                  <pb n="811"/>
 αἰϲχύνω ῇϲχυμμένοϲ, οὕτωϲ ὤφειλε εἶναι καὶ μολύνω μεμολυμμένοϲ καὶ
-μαραίνω μεμαραμμένοϲ.</p></div>
-<div type="textpart" subtype="paragraph" n="2"><p>(Περὶ ὑπερϲυντελικοῦ).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p>(Περὶ πρώτου ἀορίϲτου).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p>(Περὶ δευτέρου ἀορίϲτου).</p> <lb n="5"/>
-</div>
-<div type="textpart" subtype="paragraph" n="5"><p>(Περὶ μέϲου ἀορίϲτου πρώτου).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="6"><p>(Περὶ μέϲου ἀορίϲτου δευτέρου).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="7"><p>(Περὶ μέλλοντοϲ πρώτου).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="8"><p>(Περὶ μέλλοντοϲ δευτέρου).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="9"><p>(Περὶ μέϲου μέλλοντοϲ πρώτου).</p> <lb n="10"/>
-</div></div>
-<div type="textpart" subtype="section" n="33">
-<head>33.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Il.Pr. B 393">προπεριϲπαϲτέον τὸ ἐϲϲεῖται. οὐ γὰρ προπαροξυντέον,
+μαραίνω μεμαραμμένοϲ.</p>
+            </div>
+            <div n="2" type="paragraph">
+               <p>(Περὶ ὑπερϲυντελικοῦ).</p>
+            </div>
+            <div n="3" type="paragraph">
+               <p>(Περὶ πρώτου ἀορίϲτου).</p>
+            </div>
+            <div n="4" type="paragraph">
+               <p>(Περὶ δευτέρου ἀορίϲτου).</p>
+               <lb n="5"/>
+            </div>
+            <div n="5" type="paragraph">
+               <p>(Περὶ μέϲου ἀορίϲτου πρώτου).</p>
+            </div>
+            <div n="6" type="paragraph">
+               <p>(Περὶ μέϲου ἀορίϲτου δευτέρου).</p>
+            </div>
+            <div n="7" type="paragraph">
+               <p>(Περὶ μέλλοντοϲ πρώτου).</p>
+            </div>
+            <div n="8" type="paragraph">
+               <p>(Περὶ μέλλοντοϲ δευτέρου).</p>
+            </div>
+            <div n="9" type="paragraph">
+               <p>(Περὶ μέϲου μέλλοντοϲ πρώτου).</p>
+               <lb n="10"/>
+            </div>
+         </div>
+         <div n="33" type="section">
+            <head>33.</head>
+            <div n="1" type="paragraph">
+               <p source="Il.Pr. B 393">προπεριϲπαϲτέον τὸ ἐϲϲεῖται. οὐ γὰρ προπαροξυντέον,
 ὥϲ τινεϲ, ἐπεὶ Δώριον. ἤδη γὰρ πολλὴ χρῆϲιϲ τῶν τοιούτων παρὰ Ἀττικοῖϲ.</p>
-<note type="footnote">1. 2 hoc sumptum videtur ex eo loco, ubi Herodianus de prima persons.
+               <note type="footnote">1. 2 hoc sumptum videtur ex eo loco, ubi Herodianus de prima persons.
 perfecti passivi disputavit in eum modum, quo Choeroboscus 682, 21: ἰϲτέον
 ὅτι ὁ παθητικὸϲ παρακείμενοϲ ἐκ τοῦ ἐνεργητικοῦ γίνεται τροπῇ τοῦ τέλουϲ εἰϲ
 μαι οἷον πεποίηκα πεποίημαι· καθόλου γὰρ πᾶϲ παθητικὸϲ παρακείμενοϲ εἰϲ μαι
@@ -1443,10 +1584,10 @@ aut νένηκα νένηϲμαι hic delenda sunt), κεχρύϲωκα κεχρ
 ἵππευμαι, βαϲιλεύω βαϲιλεύϲω βεβαϲίλευκα βεβαϲίλευμαι, τοξεύω τοξεύϲω τετόξευκα
 τετόξευμαι. Hic fortasse etiam πεπάλαϲθε commemoratum fuit H 171, ad quem
 locum Schol. πεπάλαϲθε: οὕτωϲ Ἀρίϲταρχοϲ καὶ Ἡρωδιανὸϲ διὰ τοῦ ϲ, οὐ διὰ τοῦ χ.</note>
-
-<pb n="812"/>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p source="Choer. 707, 35">οἱ μέϲοι μέλλοντεϲ ἐκ τῶν ἐνεργητικῶν μελλόντων γίνονται,
+               <pb n="812"/>
+            </div>
+            <div n="2" type="paragraph">
+               <p source="Choer. 707, 35">οἱ μέϲοι μέλλοντεϲ ἐκ τῶν ἐνεργητικῶν μελλόντων γίνονται,
 ὁ α΄ ἀπὸ τοῦ πρώτου καὶ ὁ δεύτεροϲ ἀπὸ τοῦ δευτέρου τοῦτον τὸν τρόποον·
 πᾶϲ μέλλων ἐνεργητικὸϲ προϲλαβὼν τὴν μαι γίνεται, ὁ μὲν πρῶτοϲ μέλλων ἐνεργητικὸϲ
 πρῶτοϲ μέϲοϲ μέλλων γίνεται, ὁ δὲ δεύτεροϲ ἐνεργητικὸϲ β΄ μέϲοϲ μέλλων
@@ -1473,12 +1614,17 @@ locum Schol. πεπάλαϲθε: οὕτωϲ Ἀρίϲταρχοϲ καὶ Ἡρ
 <lb n="25"/> ϲυναιρεθέντεϲ, λέγω δὴ τοῦ ποιέομαι καὶ τοῦ νοέομαι, πρὸϲ τὴν ϲυναίρεϲιν ποιοῦνται
 τὴν κλίϲιν· οἱ δὲ ἀπὸ περιϲπωμένων μελλόντων μέϲοι μέλλοντεϲ, λέγω
 δὴ ὁ τυποῦμαι καὶ ὁ καροῦμαι καὶ οἱ ὅμοιοι, οὐκ ἀπὸ ϲυναιρέϲεωϲ ποιοῦνται τὴν
-κλίϲιν, οὐδὲ γάρ εἰϲιν ἀπὸ τῶν ἐντελῶν ϲυνῃρημένοι.</p></div>
-<div type="textpart" subtype="paragraph" n="3"><p>(Περὶ μέϲου μέλλοντοϲ δευτέρου).</p>
-<lb n="30"/> </div></div>
-<div type="textpart" subtype="section" n="34">
-<head>34.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Choer. 709, 5">ἰϲτέον ὅτι ὁ α΄ μέλλων ὁ ἐνεργητικὸϲ πῇ μὲν τὸ
+κλίϲιν, οὐδὲ γάρ εἰϲιν ἀπὸ τῶν ἐντελῶν ϲυνῃρημένοι.</p>
+            </div>
+            <div n="3" type="paragraph">
+               <p>(Περὶ μέϲου μέλλοντοϲ δευτέρου).</p>
+               <lb n="30"/>
+            </div>
+         </div>
+         <div n="34" type="section">
+            <head>34.</head>
+            <div n="1" type="paragraph">
+               <p source="Choer. 709, 5">ἰϲτέον ὅτι ὁ α΄ μέλλων ὁ ἐνεργητικὸϲ πῇ μὲν τὸ
 ω εἰϲ τὸ ο τρέπει ἐν τῷ πρώτῳ μέϲῳ μέλλοντι οἷον τύψω τύψομαι,
 πῇ δὲ εἰϲ τὴν δῦ δίφθογγον, καρῶ καροῦμαι. ὁ δὲ β΄ μέλλων ὁ ἐνεργητικὸϲ
 ἀεὶ τὸ ω εἰϲ τὴν ου δίφθογγον τρέπει ἐν τῷ α΄ μέϲῳ μέλλοντι.
@@ -1490,12 +1636,17 @@ locum Schol. πεπάλαϲθε: οὕτωϲ Ἀρίϲταρχοϲ καὶ Ἡρ
 <lb n="40"/> τοῦτο γινώϲκειν, ὅτι εἰ καί φηϲιν Ἡρωδιανὸϲ μήποτε εὑρίϲκεϲθαι
 ἐν χρήϲει β΄ μέλλοντα ἐνεργητικὸν ὁριϲτικόν, ἀλλ’ οὖν ἀπὸ τοῦ β΄ μέλλοντοϲ
 μέϲου εὑρίϲκεται ἐν χρήϲει· ὥϲπερ καὶ ὁ δραμοῦμαι ἀπὸ τοῦ
-δραμω καὶ ὁ κατθανοῦμαι ἀπὸ τοῦ κατθάνω.</p></div>
-<div type="textpart" subtype="paragraph" n="2"><p>(Περὶ τοῦ μετ᾿ ὀλίγον μέλλοντοϲ).</p>
-<lb n="45"/> </div>
-<div type="textpart" subtype="paragraph" n="3"><p>(Περὶ ἀπαρεμφάτων).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p source="Choer. 720, 7">δύο τελικὰ ἐϲτι τῶν ἀπαρεμφάτων, τὸ ν καὶ ἡ αι δίφθογγοϲ
+δραμω καὶ ὁ κατθανοῦμαι ἀπὸ τοῦ κατθάνω.</p>
+            </div>
+            <div n="2" type="paragraph">
+               <p>(Περὶ τοῦ μετ᾿ ὀλίγον μέλλοντοϲ).</p>
+               <lb n="45"/>
+            </div>
+            <div n="3" type="paragraph">
+               <p>(Περὶ ἀπαρεμφάτων).</p>
+            </div>
+            <div n="4" type="paragraph">
+               <p source="Choer. 720, 7">δύο τελικὰ ἐϲτι τῶν ἀπαρεμφάτων, τὸ ν καὶ ἡ αι δίφθογγοϲ
 οἷον τύπτειν τύπτεϲθαι. καὶ τοῦτο εἰκότωϲ. ἐπειδὴ γὰρ τὰ ἀπαρέμφατα ἐν μιᾷ
 
 <pb n="813"/>
@@ -1509,16 +1660,17 @@ locum Schol. πεπάλαϲθε: οὕτωϲ Ἀρίϲταρχοϲ καὶ Ἡρ
 παρὰ τοῖϲ Ἀθηναίοιϲ οἷον τέτυφαϲ. πρόϲκειται «παῤ ἡμῖν καὶ παρὰ τοῖϲ Ἀθηναίοιϲ»,
 ἐπειδὴ παρὰ ταῖϲ διαλέκτοιϲ εὑρίϲκεται τὸ ϲ καὶ α προϲώπου τελικὸν καὶ
 γ΄, ὡϲ παρὰ θεοκρίτῳ (7, 2) <lb n="10"/>
-<lg>
-<l>εἵρπομεϲ ἐκ πόλιοϲ,</l>
-</lg>
+                  <lg>
+                     <l>εἵρπομεϲ ἐκ πόλιοϲ,</l>
+                  </lg>
 ἀντὶ τοῦ εἵρπομεν ἐκ πόλεωϲ· καὶ πάλιν ἐπὶ γ΄, ἀντὶ τοῦ ἦν (7, 1),
 <lg>
-<l>ἦϲ χρόνοϲ ἁνίκ’ ἐγώ τε καὶ Εὔκριτοϲ ἐϲ τὸν Ἄλεντα,</l>
-</lg>
+                     <l>ἦϲ χρόνοϲ ἁνίκ’ ἐγώ τε καὶ Εὔκριτοϲ ἐϲ τὸν Ἄλεντα,</l>
+                  </lg>
 ἀντὶ τοῦ ἦν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5"><p source="Choer. 720, 32">κανονίζεται τὰ ἀπὸ βαρυτόνων γινόμενα ἀπαρέμφατα ἀπὸ <lb n="15"/>
+            </div>
+            <div n="5" type="paragraph">
+               <p source="Choer. 720, 32">κανονίζεται τὰ ἀπὸ βαρυτόνων γινόμενα ἀπαρέμφατα ἀπὸ <lb n="15"/>
 τοῦ ἐνεϲτῶτοϲ· πᾶϲ ἐνεϲτὼϲ ἀπὸ βαρυτόνων θεμάτων κατὰ τὸ τρίτον πρόϲωπον
 προϲλαμβάνων τὸ ν τὸ ἀπαρέμφατον ποιεῖ τοῦ ἐνεϲτῶτοϲ καὶ παρατατικοῦ οἶον
 τύπτει τύπτειν, λέγει λέγειν, γράφει γράφειν, κόπτει κόπτειν, πλήττει πλήττειν,
@@ -1550,8 +1702,9 @@ locum Schol. πεπάλαϲθε: οὕτωϲ Ἀρίϲταρχοϲ καὶ Ἡρ
 ϲτεφανοῦν· εἰ οὖν τὸ βοᾶϲθαι καὶ γελᾶϲθαι οὐκ ἔχει τὸ ῑ προϲγεγραμμένον κατὰ
 τὴν παραλήγουϲαν, ἄρα οὐδὲ τὸ βοᾶν καὶ γελᾶν ἔχει τὸ ῑ προϲγεγραμμένον κατὰ <lb n="45"/>
 τὴν παραλήγουϲαν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="6"><p source="Choer. 724, 12">εὐλόγωϲ τὰ ἀπαρέμφατα τοῦ ἐνεργηκικοῦ παρακειμένου
+            </div>
+            <div n="6" type="paragraph">
+               <p source="Choer. 724, 12">εὐλόγωϲ τὰ ἀπαρέμφατα τοῦ ἐνεργηκικοῦ παρακειμένου
 καὶ ὑπερϲυντελικοῦ καὶ τοῦ μέϲου παρακειμένου εἰϲ ναι ἐϲτίν, ἐπειδὴ καὶ ἡ μετοχὴ
 αὐτῶν εἰϲ ϲ μετ᾿ ὀξείαϲ τάϲεώϲ ἐϲτιν οἷον τετυφώϲ, πεποιηκώϲ, δεδουπάϲ·
 τὰ δὲ ἔχοντα τὴν μετοχὴν εἰϲ ϲ μετ’ ὀξείαϲ τάϲεωϲ εἰϲ ναι ἔχει τὸ ἀπαρέμφατον <lb n="50"/>
@@ -1635,20 +1788,24 @@ locum Schol. πεπάλαϲθε: οὕτωϲ Ἀρίϲταρχοϲ καὶ Ἡρ
 ϲημαίνοντοϲ τὸ γινώϲκειν, οὗ ἡ μετοχὴ ὁ εἰδώϲ. τοῦτο γάρ οὐ τῇ ἀρχούϲῃ τοῦ
 οἶδα μέϲου παρακειμένου ἠκολούθηϲεν, ἀλλὰ τῇ ἀρχούϲῃ τοῦ ἔδειν ὑπερϲυντελικοῦ,
 ὅϲτιϲ καὶ κατ᾿  ἔκταϲιν Ἀττικὴν διὰ τοῦ η καὶ ῑ γίνεται ᾔδειν.</p>
-</div></div>
-<div type="textpart" subtype="section" n="35">
-<head>35.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Il. Pr. Γ 236 ἰδέειν">οὐκ ἔϲτιν ἐντελὲϲ τὸ ἰδέειν, ἀλλὰ τοὐναντίον <lb n="25"/>
+            </div>
+         </div>
+         <div n="35" type="section">
+            <head>35.</head>
+            <div n="1" type="paragraph">
+               <p source="Il. Pr. Γ 236 ἰδέειν">οὐκ ἔϲτιν ἐντελὲϲ τὸ ἰδέειν, ἀλλὰ τοὐναντίον <lb n="25"/>
 ἀπὸ τοῦ ἰδεῖν γέγονε κατὰ διάλυϲιν ὥϲπερ ἀπὸ τοῦ εὐφρανεῖν τὸ
 εὐφρανέειν· οἱ γὰρ δεύτεροι ἀόριϲτοι καὶ μέλλοντεϲ οὐκ ἔχουϲι τὴν περιϲπωμένην
 ἀπὸ ἐντελείαϲ ὥϲπερ οἱ περιϲπώμενοι ἐνεϲτῶτεϲ.</p>
- </div>
-<div type="textpart" subtype="paragraph" n="2"><p source="ll. Pr. Ξ 221">ἄπρηκτόν γε νέεϲθαι: τούτεϲτι πορεύεϲθαι. οὕτωϲ
+            </div>
+            <div n="2" type="paragraph">
+               <p source="ll. Pr. Ξ 221">ἄπρηκτόν γε νέεϲθαι: τούτεϲτι πορεύεϲθαι. οὕτωϲ
 Ἀρίϲταρχοϲ. Δημήτριοϲ δὲ γενέεϲθαι ἀντὶ τοῦ γενήϲεϲθαι, βιαίωϲ πάνυ. <lb n="30"/>
 οὐδὲ γὰρ τὸ πυθέϲθαι πυθέεϲθαι γίνεται οὐδὲ λαβέϲθαι λαβέεϲθαι, ἵνα
 καὶ γενέϲθαι γενέεϲθαι γένηται.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p source="Choer. 728, 32">ὤφειλε τὸ ἀπαρέμφατον τοῦ δευτέρου ἀορίϲτου καὶ τοῦ δευτέρου
+            </div>
+            <div n="3" type="paragraph">
+               <p source="Choer. 728, 32">ὤφειλε τὸ ἀπαρέμφατον τοῦ δευτέρου ἀορίϲτου καὶ τοῦ δευτέρου
 μέλλοντοϲ διακεχωριϲμένον εἶναι, ἐπειδὴ καὶ ἡ μετοχὴ τούτων διακεχωριϲμένη
 ἐϲτίν, ὅτι ἡ μετοχὴ τοῦ δευτέρου ἀορίϲτου καὶ τοῦ δευτέρου μέλλοντοϲ <lb n="35"/>
 τῇ μὲν φωνῇ ϲυνέπεϲον, τόνῳ δὲ διεϲτάληϲαν ἡ μὲν γὰρ τοῦ δευτέρου ἀορίϲτου
@@ -1664,32 +1821,38 @@ locum Schol. πεπάλαϲθε: οὕτωϲ Ἀρίϲταρχοϲ καὶ Ἡρ
 τοῦ δευτέρου ἀορίϲτου καὶ τοῦ δευτέρου μέλλοντοϲ ἓν οἶον τυπεῖν· ὅτι
 δὲ τοῦτο ἀληθέϲ ἐϲτι, καὶ ἡ τοῦ τόνου χρεία τὴν ϲυνέμπτωϲιν ἐποίηϲε γενέϲθαι,
 <note type="footnote">1. 47 τόνου χρεία scripsi pro ή τούτων εὐθεῖα.</note>
-
-<pb n="816"/>
+                  <pb n="816"/>
 δῆλον, εἴ γε καὶ ἐν τοῖϲ παθητικοῖϲ καὶ ἐν τοῖϲ μέϲοιϲ διάφορόν ἐϲτι τὸ ἀπαρέμφατον
 τοῦ δευτέρου ἀορίϲτου καὶ τοῦ δευτέρου μέλλοντοϲ· τὸ μὲν γὰρ τοῦ δευτέρου
 μέϲου ἀορίϲτου ἀπαρέμφατον τυπέϲθαι καὶ νυγέϲθαι ἔϲτί, τὸ δὲ τοῦ δευτέρου
 μέϲου μέλλοντοϲ τυπεῖϲθαι καὶ νυγεῖϲθαι. καὶ πάλιν τὸ μὲν τοῦ δευτέρου ἀορίϲτου
 <lb n="5"/> παθητικοῦ ἀπαρέμφατον τυπῆναι καὶ νυγῆναί ἐϲτι, τὸ δὲ τοῦ δευτέρου μέλλοντοϲ
-τυπήϲεϲθαι καὶ νυγήϲεϲθαι.</p></div>
-<div type="textpart" subtype="paragraph" n="4"><p>(Περὶ προϲτακτικῶν).</p>
-</div></div>
-<div type="textpart" subtype="section" n="36">
-<head>36.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Herod. περὶ παθῶν in E. M. 478, 5">οὐ μόνον ἐπὶ τῶν εἰϲ ω
+τυπήϲεϲθαι καὶ νυγήϲεϲθαι.</p>
+            </div>
+            <div n="4" type="paragraph">
+               <p>(Περὶ προϲτακτικῶν).</p>
+            </div>
+         </div>
+         <div n="36" type="section">
+            <head>36.</head>
+            <div n="1" type="paragraph">
+               <p source="Herod. περὶ παθῶν in E. M. 478, 5">οὐ μόνον ἐπὶ τῶν εἰϲ ω
 <lb n="10"/> ῥημάτων, ἀλλὰ καὶ ἐπὶ τῶν εἰϲ μι τὰ τρίτα πρόϲωπα τῶν παρατατικῶν
 δεύτερα γίνεται τῶν προϲτακτικῶν οἷον νόει, φίλει, βόα.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p source="Choer. 740, 33">τὸ προϲτακτικὸν τοῦ ἐνεϲτῶτοϲ καὶ τοῦ παρατατικοῦ κανονίζεται
+            </div>
+            <div n="2" type="paragraph">
+               <p source="Choer. 740, 33">τὸ προϲτακτικὸν τοῦ ἐνεϲτῶτοϲ καὶ τοῦ παρατατικοῦ κανονίζεται
 τοῦτον τὸν τρόπον πᾶν τρίτον πρόϲωπον ἑνικὸν τοῦ ἐνεργητικοῦ παρατατικοῦ
 τοῦ ὁριϲτικοῦ, τὴν ἐν ἀρχαῖϲ κλιτικὴν ἔκταϲιν ἀποβαλόν, τὸ προϲτοκτικὸν
 <lb n="15"/> ποιεῖ τοῦ ἐνεϲτῶτοϲ καὶ παρατατικοῦ, τῆϲ βαρείαϲ τάϲεωϲ φυλαττομένηϲ οἷον
 ἔτυπτε τύπτε, ἔλεγε λέγε, ἔγραφε γράφε, ἔκοπτε κόπτε, ἐποίει ποίει, ἐνόει νόει,
 ἐβόα βόα, ἐγέλα γέλα, ἐχρύϲου χρύϲου, ἐϲτεφάνου ϲτεφάνου.</p>
-</div></div>
-<div type="textpart" subtype="section" n="37">
-<head>37.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Apollonius ap. Choerobosc. 746, 4">ex duobus perfecti imperativis in ε et θ
+            </div>
+         </div>
+         <div n="37" type="section">
+            <head>37.</head>
+            <div n="1" type="paragraph">
+               <p source="Apollonius ap. Choerobosc. 746, 4">ex duobus perfecti imperativis in ε et θ
 <lb n="20"/> hunc posteriorem in θι reiecit et solum exitum ε perfecto assignavit: ὁ Ἀπολλώνιοϲ
 λέγει ὅτι εἰϲ ε λήγει τὸ προϲτακτικὸν τοῦ παρακειμένου καὶ ὑπερϲυντελικοῦ
 ὁμοφώνωϲ τῷ τρίτῳ προϲώπῳ τῶν ἑνικῶν τοῦ ὁριϲτικοῦ παρακειμένου καὶ
@@ -1700,8 +1863,10 @@ locum Schol. πεπάλαϲθε: οὕτωϲ Ἀρίϲταρχοϲ καὶ Ἡρ
 γνόντοϲ γνῶθι· εἰ οὖν ἄρα ὁ ἐνεργητικὸϲ καί μέϲοϲ παρακείμενοϲ οὐκ ἔχουϲι τὴν
 μετοχὴν διὰ τοῦ ντ κλινομένην, εἰ καὶ ἔχουϲιν αὐτὴν εἰϲ ϲ μετ’ ὀξείαϲ τάϲεωϲ
 οἶον τετυφώϲ τετυφότοϲ, τετυπώϲ τετυπότοϲ, δηλονότι οὐδὲ τὸ προϲτακτικὸν
-<lb n="30"/> δύναται ἔχειν εἰϲ θι.</p></div>
-<div type="textpart" subtype="paragraph" n="2"><p>Herodianus contra finem θι solum comprobavit propter eas, ut
+<lb n="30"/> δύναται ἔχειν εἰϲ θι.</p>
+            </div>
+            <div n="2" type="paragraph">
+               <p>Herodianus contra finem θι solum comprobavit propter eas, ut
 videtur, causas, quas Choerob. profert 745, 25: ἰϲτέον ὅτι λέγουϲί
 τινεϲ, ὡϲ εἰϲ θι ἐϲτὶ τὰ προϲτακτικὰ τοῦ παρακειμένου καὶ ὑπερϲυντελικοῦ,
 ἐπειδὴ πᾶϲα μετοχὴ εἰϲ ϲ λήγουϲα μετ’ ὀξείαϲ τάϲεωϲ εἰϲ θι
@@ -1713,18 +1878,22 @@ videtur, causas, quas Choerob. profert 745, 25: ἰϲτέον ὅτι λέγου
 <lb n="40"/> ἀλλ᾿ ἔτρεψε τὸ ᾱ εἰϲ τὸ ε, ἵνα μὴ ὁμοφωνήϲῃ τῷ ἰδίῳ πρώτῳ, τέτυφα
 ἐγώ, τούτου χάριν ὡϲ μὴ γνηϲίαν κατάληξιν ἔχοντοϲ τοῦ γ΄ προϲώπου,
 οὐκ ἐγένετο ἐξ αὐτοῦ τὸ προϲτακτικόν, ἀλλ᾿  εἰϲ θι.</p>
- </div>
-<div type="textpart" subtype="paragraph" n="3"><p source="Choer. 746 20"><note>Imperativum vero in ε perfecto prorsus abrogavit: </note>λέγει ὁ Ἡρωδιανόϲ, ὅτι ταῦτα τὰ εἰϲ ε προϲτακτικὰ οὐκ ἔϲτι παρακειμένου
+            </div>
+            <div n="3" type="paragraph">
+               <p source="Choer. 746 20">
+                  <note>Imperativum vero in ε perfecto prorsus abrogavit: </note>λέγει ὁ Ἡρωδιανόϲ, ὅτι ταῦτα τὰ εἰϲ ε προϲτακτικὰ οὐκ ἔϲτι παρακειμένου
 <lb n="45"/> ἀλλ᾿  ἐνεϲτῶτόϲ ἐϲτι καὶ παρατατικοῦ, τοῦ παρακειμένου εἰϲ
 
 <pb n="817"/>
 ἐνεϲτῶτα μετενεχθέντοϲ, οἷον ἀπὸ τοῦ εὕρηκα γίνεται ὁ ἐνεϲτὼϲ εὑρήκω,
 καὶ ἐκ τούτου ὁ παρατατικὸϲ εὕρηκον εὕρηκεϲ εὕρηκε καὶ λοιπὸν
 τὸ προϲτακτικὸν εὕρηκε ϲύ.</p>
-</div></div>
-<div type="textpart" subtype="section" n="38">
-<head>38.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Choer. 747, 17">λέγει ὁ Ἡρωδιανὸϲ ὅτι εἰκότωϲ εἰϲ ον ἐγένετο <lb n="5"/>
+            </div>
+         </div>
+         <div n="38" type="section">
+            <head>38.</head>
+            <div n="1" type="paragraph">
+               <p source="Choer. 747, 17">λέγει ὁ Ἡρωδιανὸϲ ὅτι εἰκότωϲ εἰϲ ον ἐγένετο <lb n="5"/>
 τὸ προϲτακτικὸν τοῦ α΄ ἀορίϲτου καὶ μέλλοντοϲ· εἰϲ ε γάρ, φηϲίν, οὐκ
 ἠδύνατο γενέϲθαι, ἐπειδὴ τὸ ε οὐκ ἔϲτιν ἐνταῦθα γνήϲιον τοῦ γ΄ προϲώπου
 τοῦ ὁριϲτικοῦ ἑνικοῦ πᾶν γὰρ δεύτερον πρόϲωπον εἰϲ ϲ λῆγον
@@ -1760,19 +1929,20 @@ videtur, causas, quas Choerob. profert 745, 25: ἰϲτέον ὅτι λέγου
 εἰϲ ϲ μετ᾿  ὀξείαϲ τάϲεωϲ καὶ διὰ τοῦ ντ κλινομένην οἷον τυπείϲ
 τυπέντοϲ τύπηθι, νυγείϲ νυγέντοϲ νύγηθι, δαρείϲ δαρέντοϲ δάρηθι, γνούϲ
 γνόντοϲ γνῶθι), ἐξ ἀνάγκηϲ γέγονεν εἰϲ ον κατὰ μίμηϲιν τῶν Ϲυρακουϲίων <lb n="40"/>
-<note type="footnote">1. 32 quae post ὅπερ ἄτοπον in Choerob. de voce οὖτα tamquam imperativo
+                  <note type="footnote">1. 32 quae post ὅπερ ἄτοπον in Choerob. de voce οὖτα tamquam imperativo
 in ᾱ ϲυνεϲταλμένον exeunte sequuntur, mira quadam confusione ex Choer. 563
 27 huc translata videntur.</note>
-
-<pb n="818"/>
+                  <pb n="818"/>
 κουϲίων προϲτακτικῶν τοῦ β΄ ἀορίϲτου. οἱ γὰρ Ϲυρακούϲιοι τὰ προϲτακτικὰ
 τοῦ β΄ ἀορίϲτου εἰϲ ον μεταποιοῦϲι τὸ λάβε λάβον λέγοντεϲ
 καὶ τὸ ἄνελε ἄνελον καὶ τὸ νύγε νύγον, οὕτωϲ οὖν καὶ τύψε τύψον.</p>
-</div></div>
-<div type="textpart" subtype="section" n="39">
-<head>39.</head>
-<lb n="5"/>
-<div type="textpart" subtype="paragraph" n="1"><p source="Choer. 753, 18">τὸ γ΄ πρόϲωπον τῶν προϲτακτικῶν τοῦ α΄ ἀορίϲτου
+            </div>
+         </div>
+         <div n="39" type="section">
+            <head>39.</head>
+            <lb n="5"/>
+            <div n="1" type="paragraph">
+               <p source="Choer. 753, 18">τὸ γ΄ πρόϲωπον τῶν προϲτακτικῶν τοῦ α΄ ἀορίϲτου
 καὶ μέλλοντοϲ διὰ τοῦ ᾱ ἐγένετο οἷον τυψάτω. ἔϲτι δὲ εἰπεῖν
 ὅτι τὸ ᾱ τὸ κεχρεωϲτημένον τῷ γ΄ προϲώπῳ τοῦ ἀορίϲτου τοῦ ὁριϲτικοῦ
 τὸ προϲτακτικὸν γ΄ πρόϲωπον ἀνεδέξατο. ἐκεῖ μὲν γάρ, φημὶ δὲ
@@ -1788,22 +1958,27 @@ in ᾱ ϲυνεϲταλμένον exeunte sequuntur, mira quadam confusione ex C
 μετενεχθέντοϲ εἰϲ ἐνεϲτῶτα, καὶ λοιπὸν τοῦ ἐνεϲτῶτοϲ κλιθέντοϲ εἰϲ
 παρατατικὸν καὶ ἀπὸ τοῦ παρατατικοῦ ἀκολούθωϲ προενεχθέντοϲ τοῦ
 <lb n="20"/> προϲτακτικοῦ.</p>
-</div></div>
-<div type="textpart" subtype="section" n="40">
-<head>40.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="An. Par. III 332, 6 (Ep. Cr. 262, 19, E. M. 562,8)">λεύϲετε:
+            </div>
+         </div>
+         <div n="40" type="section">
+            <head>40.</head>
+            <div n="1" type="paragraph">
+               <p source="An. Par. III 332, 6 (Ep. Cr. 262, 19, E. M. 562,8)">λεύϲετε:
 Ἀρίϲταρχοϲ ἓν ϲ γράφει ἐγὼ δὲ ἐνεϲτῶτα αὐτὸ λέγω ὡϲ ἀπὸ τοῦ
 μέλλοντοϲ ὥϲπερ καὶ τὸ «ἄξετε» καὶ «οἴϲετε» καὶ καταβήϲεο δίφρου»
 <lb n="25"/> (Ε 109).</p>
-</div></div>
-<div type="textpart" subtype="section" n="41">
-<head>41.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="E. M. 646, 20">τὸ «ὄψεϲθε Τρῶεϲ καὶ Τρῳάδεϲ» (Ω 704) ἐνεϲτῶτα
+            </div>
+         </div>
+         <div n="41" type="section">
+            <head>41.</head>
+            <div n="1" type="paragraph">
+               <p source="E. M. 646, 20">τὸ «ὄψεϲθε Τρῶεϲ καὶ Τρῳάδεϲ» (Ω 704) ἐνεϲτῶτα
 εἶναί φηϲιν Ἡρωδιανὸϲ ἀπὸ τοῦ ὄψομαι γενόμενον μέλλοντοϲ· οὐ
 γὰρ μαντεύεται αὐτοῖϲ, φηϲίν, ἀλλ᾿  ἀντὶ τοῦ ἴδετε καὶ πάλιν «ἀλλ᾿ 
 <lb n="30"/> ὄψεϲθ᾿  ἵνα τώγε καθεύδετον» (θ 313).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p source="Choer. 755, 34">τὰ εἰϲ μην ἔχοντα τὸ μ κλιτικὸν εἶτε παθητικὰ εἴτε μέϲα
+            </div>
+            <div n="2" type="paragraph">
+               <p source="Choer. 755, 34">τὰ εἰϲ μην ἔχοντα τὸ μ κλιτικὸν εἶτε παθητικὰ εἴτε μέϲα
 τοῦ ἰδίου β΄ προϲώπου ἀποβάλλοντα τὴν ἐν ἀρχῇ κλιτικὴν ἔκταϲιν τὸ προϲτακτικὸν
 ποιεῖ, τοῦ αὐτοῦ δηλονότι τόνου φυλαττομένου οἶον ἐτυπτόμην ἐτύπτου
 τύπτου, ἐγραφόμην ἐγράφου γράφου, ἐποιούμην ἐποιοῦ ποιοῦ, ἐβοώμην ἐβοῶ
@@ -1819,8 +1994,7 @@ in ᾱ ϲυνεϲταλμένον exeunte sequuntur, mira quadam confusione ex C
 τοῦ ἄγετε. ἰϲτέον ὅτι τοῦ φέρω μέλλων οὐκ ἔϲτι. τοῦ δὲ οἴϲω ἐνεϲτὼϲ οὐκ ἔϲτι
 πλὴν ἔθοϲ τῷ ποιητῇ μετάγειν ἀπὸ μέλλοντοϲ εἰϲ ἐνεϲτῶτα. οὕτωϲ ἔχει καὶ τὸ
 ἄξετε ἀντὶ τοῦ φέρετε. v. praeterea E. M. 472, 15.</note>
-
-<pb n="819"/>
+                  <pb n="819"/>
 ἔχει τὸ μ κλιτικόν, καὶ ὅμωϲ οὐκ ἀποβάλλει τοῦ ἰδίου β΄ προϲώπου τὴν ἐν ἀρχαῖϲ
 κλιτικὴν ἔκταϲιν καὶ ποιεῖ τὸ προϲτακτικὸν οἷον ἐτυψάμην ἐτύψω. οὐ λέγομεν
 τὸ προϲτακτικὸν τύψω ἀλλὰ τύψαι, καὶ πάλιν ἐποιηϲάμην ἐποιήϲω, οὐ λέγομεν
@@ -1832,8 +2006,9 @@ in ᾱ ϲυνεϲταλμένον exeunte sequuntur, mira quadam confusione ex C
 οὐ γίνεται τὸ β΄ πρόϲωπον δάμηϲ ἀλλ᾿  οὐκ ἀντίκειται ἡμῖν τοῦτο, ἔπειδὴ οὐκ
 ἔχει τὸ μ κλιτικὸν ἀλλὰ θεματικόν, ἀπὸ γὰρ τοῦ ἐνεϲτῶτοϲ ἔχει αὐτό. δάμνω <lb n="10"/>
 γάρ ἐϲτιν ὁ ἐνεϲτὼϲ καὶ ἔχει τὸ μ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p source="Choer. 758, 7">πᾶν β΄ πρόϲωπον πληθυντικὸν ὁριϲτικὸν εἴτε ἐνεργητικὸν
+            </div>
+            <div n="3" type="paragraph">
+               <p source="Choer. 758, 7">πᾶν β΄ πρόϲωπον πληθυντικὸν ὁριϲτικὸν εἴτε ἐνεργητικὸν
 εἴτε παθητικὸν εἴτε μέϲον τροπῇ τοῦ ε εἰϲ ω προϲτακτικὸν τρίτον ἑνικὸν γίνεται
 ἐνεργητικὸν ἢ παθητικὸν ἢ μέϲον, δηλονότι καὶ τῆϲ ἐν ἀρχῇ κλιτικῆϲ ἐκτάϲεωϲ
 ἀποβαλλομένηϲ χωρίϲ τοῦ παρακειμένου· καὶ ἐπὶ τῶν ἐνεργητικῶν ἁρμόζει ὁ <lb n="15"/>
@@ -1843,8 +2018,9 @@ in ᾱ ϲυνεϲταλμένον exeunte sequuntur, mira quadam confusione ex C
 παρακειμένου καὶ τοῦ μέϲου, τετύφατε γὰρ καὶ τετύπατε τὸ ὁριϲτικὸν διὰ
 τοῦ ᾱ, τὸ δὲ προϲτακτικὸν τετυφέτω καὶ τετυπέτω διὰ τοῦ ε ἀπὸ γὰρ τοῦ <lb n="20"/>
 τέτυφε ϲύ καὶ τέτυπε ϲύ γέγονε ταῦτα προϲθέϲει τῆϲ τω.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p source="Choer. 760, 17">o δύο ἀόριϲτοι οἱ παθητικοί, φημὶ δὲ ὁ α΄ καὶ ὁ β΄, κατὰ
+            </div>
+            <div n="4" type="paragraph">
+               <p source="Choer. 760, 17">o δύο ἀόριϲτοι οἱ παθητικοί, φημὶ δὲ ὁ α΄ καὶ ὁ β΄, κατὰ
 τὸ γ΄ ἑαυτῶν πρόϲωπον προϲλαμβάνοντεϲ τὴν θι ϲυλλαβήν, ἀλλὰ καὶ τὴν ἐν ἀρχαῖϲ
 κλιτικὴν ἔκταϲιν ἀποβάλλοντεϲ, τὸ προϲτακτικὸν ποιοῦϲιν ἑαυτῶν τε καὶ τῶν
 μελλόντων· ὁ α΄ ἀόριϲτοϲ τοῦ α΄ ἀορίϲτου καὶ μέλλοντοϲ α΄ καὶ ὁ β΄ ἀόριϲτοϲ τοῦ <lb n="25"/>
@@ -1870,15 +2046,16 @@ in ᾱ ϲυνεϲταλμένον exeunte sequuntur, mira quadam confusione ex C
 «μετ᾿  ὀξείαϲ τάϲεωϲ οἶον τὰ ἔχοντα τὴν μετοχὴν εἰϲ ϲ μετ’ ὀξείαϲ τάϲεωϲ», διὰ <lb n="45"/>
 τὸ τύψαϲ τύψαντοϲ· αὕτη γὰρ εἰϲ ϲ λήγει, καὶ ἐπειδὴ οὐκ ἔϲτιν ὀξυνομένη, οὐ
 ποιεῖ τὸ προϲτακτικὸν εἰϲ θι, τύψον γὰρ τὸ προϲτακτικόν.</p>
-<note type="footnote">1. 30 sqq. omisi ubique post τὴν μετοχὴν μετ’ ὀξείαϲ τάϲεωϲ verba διὰ τοῦ
+               <note type="footnote">1. 30 sqq. omisi ubique post τὴν μετοχὴν μετ’ ὀξείαϲ τάϲεωϲ verba διὰ τοῦ
 κλινομένην, quae a Ϲhoerobosco ex Apollonii sententia perfecto exitum ε tribuentis
 apposita sunt.</note>
-
-<pb n="820"/>
-</div></div>
-<div type="textpart" subtype="section" n="42">
-<head>42.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Choer. 765, 13">ἄξιόν ἐϲτι ζητῆϲαι τοῦτο, εἰ ἄρα τὰ εἰϲ μην ἔχοντα
+               <pb n="820"/>
+            </div>
+         </div>
+         <div n="42" type="section">
+            <head>42.</head>
+            <div n="1" type="paragraph">
+               <p source="Choer. 765, 13">ἄξιόν ἐϲτι ζητῆϲαι τοῦτο, εἰ ἄρα τὰ εἰϲ μην ἔχοντα
 τὸ μ κλιτικὸν εἴτε παθητικὰ εἴτε μέϲα τοῦ ἰδίου δευτέρου προϲώπου
 ἀποβάλλοντα τὴν ἐν ἀρχαῖϲκλιτικὴν ἔκταϲιν τὸ προϲτακτικὸν ποιεῖ οἷον
 <lb n="5"/> ἐτυπτόμην ἐτύπτου τύπτου καὶ ἐπὶ τοῖϲ ὁμοίοιϲ, διατί ὁ α΄ μέϲοϲ ἀόριϲτοϲ
@@ -1919,14 +2096,16 @@ apposita sunt.</note>
 <lb n="40"/> τύπτωμαι, καὶ ἐν τοῖϲ ὁριϲτικοῖϲ οἷον τύπτομαι. ἐπειδὴ οὖν ἐν πάϲαιϲ
 <note type="footnote">1. 23 ex Herodiani sententia τέτυφα ὅθεν τετύφω ἐτέτυφον ἐτέτυφε scripsi
 pro τέτυφα τέτυφαϲ τέτυφε.</note>
-
-<pb n="821"/>
+                  <pb n="821"/>
 ταῖϲ ἐγκλίϲεϲιν εὑρίϲκεται ἡ αι δίφθογγοϲ, εἰκότωϲ καὶ τὸ προϲτακτικὸν
 τοῦ α΄ μέϲου ἀορίϲτου εἰϲ τὴν αι δίφθογγον λήγει οἷον ποίηϲαι κατάδεξαι
-ἄϲπαϲαι, ἵνα εὑρεθῇ καὶ ἐν τοῖϲ προϲτακτικοῖϲ ἡ αι δίφθογγοϲ.</p></div>
-<div type="textpart" subtype="paragraph" n="2"><p>(Περὶ εὐκτικῶν).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p source="Choer. 771, 25">íϲτέον ὅτι πολλὴν ὁμοιότητα ἔχει τὰ εὐκτικὰ πρὸϲ τὴν δοτικήν
+ἄϲπαϲαι, ἵνα εὑρεθῇ καὶ ἐν τοῖϲ προϲτακτικοῖϲ ἡ αι δίφθογγοϲ.</p>
+            </div>
+            <div n="2" type="paragraph">
+               <p>(Περὶ εὐκτικῶν).</p>
+            </div>
+            <div n="3" type="paragraph">
+               <p source="Choer. 771, 25">íϲτέον ὅτι πολλὴν ὁμοιότητα ἔχει τὰ εὐκτικὰ πρὸϲ τὴν δοτικήν
 ὥϲπερ γὰρ τὸ ῑ χαρακτηριϲτικόν ἐϲτι τῆϲ δοτικῆϲ οἷον τῷ καλῷ, τῷ Αἴαντι,
 τὸν αὐτὸν τρόπον τὸ ῑ χαρακτηριϲτικόν ἐϲτι τῶν εὐκτικῶν οἶον τύπτοιμι τυπτοίμην
 τυφθείην. ἀλλ᾿ ἐν μὲν τῇ δοτικῇ κατὰ τὸ τέλοϲ εὑρίϲκεται τὸ ῑ οἷον τῷ
@@ -1938,8 +2117,9 @@ pro τέτυφα τέτυφαϲ τέτυφε.</note>
 ἀνθρώπω, τὸν αὐτὸν τρόπον καὶ ἐπὶ τῶν εὐκτικῶν πολλάκιϲ ἀποβάλλουϲι τὸ ῑ. ἔϲτι
 γὰρ λάχοιμι, λάχοιϲ, λάχοι· τοῦτο γίνεται Ἀττικῶϲ λαχοίην λαχοίηϲ λαχοίη, ὥϲπερ <lb n="15"/>
 ἐτύφθην ἐτύφθηϲ ἐτύφθη, καὶ ἀποβάλλουϲιν οἱ Αἰολεῖϲ τὸ ῑ καὶ λέγουϲι λαχόηϲ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p>Δεῖ δὲ γινώϲκειν ὅτι τὰ εὐκτικὰ ἢ εἰϲ μι λήγει ἢ εἰϲ μην ἢ εἰϲ ην καθαρὸν
+            </div>
+            <div n="4" type="paragraph">
+               <p>Δεῖ δὲ γινώϲκειν ὅτι τὰ εὐκτικὰ ἢ εἰϲ μι λήγει ἢ εἰϲ μην ἢ εἰϲ ην καθαρὸν
 οἷον τύπτοιμι τυπτοίμην τυφθείην. καὶ τὰ μὲν εἰϲ μι ἐνεργητικά ἐϲτιν ἢ μέϲα,
 οὐδέποτε δὲ παθητικά· ἐνεργητικὰ μὲν οἷον τύπτοιμι, βοῶμι, χρυϲοῖμι, τετύφοιμι,
 μέϲα δὲ οἷον τετύποιμι, δεδούποιμι, πεποίθοιμι. τὰ δὲ εἰϲ μην παθητικά ἐϲτιν ἢ <lb n="20"/>
@@ -1966,33 +2146,38 @@ pro τέτυφα τέτυφαϲ τέτυφε.</note>
 καὶ τροπῇ τοῦ ϲ εἰϲ ποιεῖ τὸ α΄ οἷον ἐτύφθη ἐτύφθηϲ ἐτύφθην, ἐδάρη
 ἐδάρηϲ ἐδάρην, ἐνύγη ἐνύγηϲ ἐνύγην, τούτου χάριν ἐγένετο τὸ β πρόϲωπον προϲθέϲει
 τοῦ ϲ περιπατοίηϲ καὶ τροπῇ τοῦ ϲ εἰϲ τὸ ν περιπατοίην τὸ πρῶτον.</p>
-</div></div>
-<div type="textpart" subtype="section" n="43">
-<head>43.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Choer. 773, 13">ὁ δὲ Ἡρωδιανὸϲ ἀλλοίωϲ ϲχηματίζει αὐτὸ <lb n="45"/>
+            </div>
+         </div>
+         <div n="43" type="section">
+            <head>43.</head>
+            <div n="1" type="paragraph">
+               <p source="Choer. 773, 13">ὁ δὲ Ἡρωδιανὸϲ ἀλλοίωϲ ϲχηματίζει αὐτὸ <lb n="45"/>
 ὅτι ἀπὸ τοῦ περιπατοῖμι τροπῇ τῆϲ μι εἰϲ ην καὶ ἐκ τούτου τὸ
 <note type="footnote">1. 15 pro Apollonii sententia: λαχοίη κατὰ πλεοναϲμὸν τοῦ η καὶ προϲθήκῃ
 τοῦ ϲ τὸ β΄ λαχοίηϲ καὶ τροπῇ τοῦ εἰϲ τὸ ν λαχοίην ὥϲπερ ἐτύφθη ἐτύφθη.
 ἐτύφθην Herodianeam posui.</note>
-
-<pb n="822"/>
+                  <pb n="822"/>
 β΄ πρόϲωπον περιπατοίηϲ τροπῇ τοῦ ν εἰϲ ϲ καὶ τὸ γ΄ περιπατοίη ἀποβολῇ
 τοῦ ϲ, ὥϲπερ ἐτύφθην ἐτύφθηϲ ἐτύφθη, ἐδάρην ἐδάρηϲ ἐδάρη.
 τούτων οὕτωϲ ἐχόντων δεῖ γινώϲκειν ὅτι τὸ τρέφοιν, ὡϲ παρ᾿  Εὐριπίδῃ
 (fr. 152 Dind.)
 <lg>
-<lb n="5"/> <l>ἄφρων ἂν εἴην εἰ τρέφοιν τὰ τῶν πέλαϲ</l>
-</lg>
+                     <lb n="5"/>
+                     <l>ἄφρων ἂν εἴην εἰ τρέφοιν τὰ τῶν πέλαϲ</l>
+                  </lg>
 γέγονε τοῦτον τὸν τρόπον ἔϲτι τρεφοίην ὡϲ περιπατοίην καὶ λοιπὸν
 ἀπὸ τοῦ τρεφοίην κατὰ ϲυγκοπὴν τοῦ η γέγονε τρέφοιν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p source="Choer. 773,33 et 774, 10">πάντα τὰ εὐκτικὰ εἴτε εἰϲ μι λήγει εἴτε εἰϲ μην εἴτε
+            </div>
+            <div n="2" type="paragraph">
+               <p source="Choer. 773,33 et 774, 10">πάντα τὰ εὐκτικὰ εἴτε εἰϲ μι λήγει εἴτε εἰϲ μην εἴτε
 εἰϲ ην καθαρὸν διφθόγγῳ θέλει παραλήγεϲθαι τῇ μετὰ τοῦ οἷον τύπτοιμι πεποιήμην
 <lb n="10"/> τυπτοίμην τυψαίμην τυφθηϲοίμην τυφθείηϲ νυγοίην γνοίην δοίην. καὶ
 φυλάττει τὴν δίφθογγον καὶ ἐν τοῖϲ ἑνικοῖϲ καὶ ἐν τοῖϲ δυικοῖϲ καὶ ἐν τοῖϲ
 πληθυντικοῖϲ. δεῖ δὲ προϲθεῖναι, χωρὶϲ τῆϲ δ΄ ϲυζυγίαϲ τῶν εἰϲ μι ταῦτα γὰρ
-οὐ παραλήγεται τῇ διφθόγγῳ· ζευγνύην γὰρ καὶ ὀμνύην χωρὶϲ τοῦ ῑ.</p></div>
-<div type="textpart" subtype="paragraph" n="3"><p>Formas ὀμνύην, ζευγνύην, πηγνύην ῑ destitutas eodem modo quo ab Apollonio,
+οὐ παραλήγεται τῇ διφθόγγῳ· ζευγνύην γὰρ καὶ ὀμνύην χωρὶϲ τοῦ ῑ.</p>
+            </div>
+            <div n="3" type="paragraph">
+               <p>Formas ὀμνύην, ζευγνύην, πηγνύην ῑ destitutas eodem modo quo ab Apollonio,
 <lb n="15"/> de quo cf. Skrsecxka Apollon. Lehre vom Verbum I 6, ab Herodiano explicatas
 arbitror: Choer. 774, 13: καὶ λέγει ὁ Ἀπολλώνιοϲ ταύτην τὴν ἀπολογίαν, ὅτι
 τὸ ζευγνύην καὶ τὸ πηγνύην καὶ τὸ ὀμνύην προϲθέϲει τοῦ μ παθητικὰ γίνεται
@@ -2001,8 +2186,9 @@ arbitror: Choer. 774, 13: καὶ λέγει ὁ Ἀπολλώνιοϲ ταύτ�
 <lb n="20"/> οὐχ εὑρίϲκεται ἐπιφερόμενον οἷον ἅρπυια, μυῖα, υἱόϲ ὃ οὖν εἶχον ἀποβάλλειν
 ἐν τοῖϲ παθητικοῖϲ, προαπέβαλον ἐν τοῖϲ ἐνεργητικοῖϲ. τούτου οὖν χάριν
 τὰ εὐκτικὰ ἐπὶ τῆϲ δ΄ ϲυζυγίαϲ τῶν εἰϲ μι οὐ παραλήγεται διφθόγγῳ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p source="Choer. 777, 12">ἰϲτέον ὅτι τὰ εἰϲ μὲν εὐκτικά, εἰ μὲν διφθόγγῳ παραλήγεται,
+            </div>
+            <div n="4" type="paragraph">
+               <p source="Choer. 777, 12">ἰϲτέον ὅτι τὰ εἰϲ μὲν εὐκτικά, εἰ μὲν διφθόγγῳ παραλήγεται,
 ἀποβολῇ τοῦ μ τὸ γ΄ πρόϲωπον τῶν πληθυντικῶν ποιεῖ οἶον τύπτοιμεν τύπτοιεν,
 <lb n="25"/> λέγοιμεν λέγοιεν, τύψαιμεν τύψαιεν, τύψοιμεν τύψοιεν, τετύφοιμεν τετύφοιεν,
 ποιοῖμεν ποιοῖεν, βοῷμεν βοῷεν, γελῷμεν γελῷεν, τρυγῷμεν τρυγῷεν,
@@ -2012,15 +2198,18 @@ arbitror: Choer. 774, 13: καὶ λέγει ὁ Ἀπολλώνιοϲ ταύτ�
 <lb n="30"/> πληθυντικῶν δοίηϲαν γίνεται, ἐπειδὴ ἑνὶ φωνήεντι παραλήγεται· ἡνίκα δὲ γένηται
 κατὰ ϲυγκοπὴν τοῦ η
 <lg>
-<l>δοῖμεν δ᾿  Ἀτρείδαο θυγατρῶν εἷδοϲ ἀρίϲτην (N 378),</l>
-</lg>
+                     <l>δοῖμεν δ᾿  Ἀτρείδαο θυγατρῶν εἷδοϲ ἀρίϲτην (N 378),</l>
+                  </lg>
 τότε τὸ γ΄ τῶν πληθυντικῶν δοῖεν γίνεται κατὰ ἀποβολὴν τοῦ μ, ἐπειδὴ διφθόγγῳ
 παραλήγεται οἶον
 <lg>
-<lb n="35"/> <l>ὑμῖν μὲν θεοὶ δοῖεν (A 18).</l>
-</lg></p>
-</div>
-<div type="textpart" subtype="paragraph" n="5"><p source="Choer. 777, 29">κανονίζεται τὸ εὐκτικὸν τοῦ ἐνεργητικοῦ παρακειμένου καὶ
+                     <lb n="35"/>
+                     <l>ὑμῖν μὲν θεοὶ δοῖεν (A 18).</l>
+                  </lg>
+               </p>
+            </div>
+            <div n="5" type="paragraph">
+               <p source="Choer. 777, 29">κανονίζεται τὸ εὐκτικὸν τοῦ ἐνεργητικοῦ παρακειμένου καὶ
 ὑπερϲυντελικοῦ καὶ τοῦ μέϲου παρακειμένου καὶ ὑπερϲυντελικοῦ τοῦτον τὸν τρὸπον
 ἡ γενικὴ τῆϲ μετοχῆϲ τοῦ ἐνεργητικοῦ παρακειμένου καὶ ὑπερϲυντελικοῦ
 καὶ ἡ γενικὴ τῆϲ μετοχῆϲ τοῦ μέϲου παρακειμένου καὶ ὑπερϲυντελικοῦ τρέπουϲαι.
@@ -2034,8 +2223,7 @@ arbitror: Choer. 774, 13: καὶ λέγει ὁ Ἀπολλώνιοϲ ταύτ�
 τρφοίη Ἀττικῶϲ ὡϲ περιπατοίη καὶ προϲθέϲει τοῦ ϲ τὸ β΄τρεφοίηϲ καὶ τροπῇ
 τοῦ ϲ εἰϲ τὸ ν τὸ α΄, quibus Apollonii sententia repetitur. cf. Lob. El. I 331
 et II 140. l. 31 cf. Herod. Il. Pr. Γ 102.</note>
-
-<pb n="823"/>
+                  <pb n="823"/>
 ἐκεῖνα γὰρ εἰϲ ην καθαρὸν ἔχει τὸ εὐκτικὸν ὅϲα ἔχει μετ’ ὀξείαϲ τάϲεωϲ τὴν
 μετοχὴν εἰϲ ϲ καὶ διὰ τοῦ ντ κλινομένην οἶον τυφθείϲ τυφθέντοϲ τυφθείην, δαρείϲ
 δαρέντοϲ δαρείην, νυγείϲ νυγέντοϲ νυγείην, γνούϲ γνόντοϲ γνοίην. ϲεϲημείωται
@@ -2046,8 +2234,9 @@ et II 140. l. 31 cf. Herod. Il. Pr. Γ 102.</note>
 ἀπὸ τοῦ εἰδώϲ εἰδότοϲ γέγονεν εἴδοιμι, ὤϲπερ τετυφώϲ τετυφότοϲ τετύφοιμι, καὶ
 ἀπὸ τοῦ εἴδοιμ γέγονεν εἰδοίην κατὰ τροπὴν Ἀττικὴν τῆϲ μι εἰϲ ην καὶ κατὰ τροπὴν
 τοῦ ο εἰϲ τὸ ε εἰδείην.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="6"><p source="Choer. 778, 28">ἰϲτέον ὅτι τύψαντοϲ ἔϲτιν ἡ γενικὴ τῆϲ μετοχῆϲ, καὶ λοιπὸν
+            </div>
+            <div n="6" type="paragraph">
+               <p source="Choer. 778, 28">ἰϲτέον ὅτι τύψαντοϲ ἔϲτιν ἡ γενικὴ τῆϲ μετοχῆϲ, καὶ λοιπὸν
 τρέπουϲα τὴν τελευταίαν ϲυλλαβὴν εἰϲ μι καὶ πρὸ τοῦ μ δεχομένη τὸ ῑ καὶ ἀποβάλλουϲα
 τὰ μὴ δυνάμενα ϲυνεκφωνηθῆναι ϲτοιχεῖα, φημὶ δὲ τὸ ν, τὸ εὐκτικὸν
 ποιεῖ οἶον τύψαιμι· εἰ γὰρ καὶ εἶχε τὴν μετοχὴν τούτου εἰϲ καὶ διὰ τοὺ ντ κλινομένην,
@@ -2057,28 +2246,33 @@ et II 140. l. 31 cf. Herod. Il. Pr. Γ 102.</note>
 καὶ τῷ μὲν α΄ προϲώπῳ οἱ Αἰολεῖϲ μόνοι κέχρηνται, τῷ δὲ δευτέρῳ καὶ τρίτῳ
 καὶ οἱ Ἀθηναῖοι οἶον τύψειαϲ τύψειε, καὶ τύψειαν τὸ γ΄ τῶν πληθυντικῶν· τίϲειαϲ
 τίϲειε καὶ τίϲειαν τὸ γ΄ τῶν πληθυντικῶν, ὡϲ παρὰ τῷ ποιητῇ (A 42) <lb n="20"/>
-<lg>
-<l>τίϲειαν Δαναοὶ ἐμὰ δάκρυα ϲοῖϲι βέλεϲι</l>
-</lg>
+                  <lg>
+                     <l>τίϲειαν Δαναοὶ ἐμὰ δάκρυα ϲοῖϲι βέλεϲι</l>
+                  </lg>
 καὶ πάλιν ὑποϲτρέψειαϲ
 <lg>
-<l>μηδέτι ϲοῖϲι πόδεϲϲι ὑποϲτρέψειαϲ (Γ 407)</l>
-</lg>
+                     <l>μηδέτι ϲοῖϲι πόδεϲϲι ὑποϲτρέψειαϲ (Γ 407)</l>
+                  </lg>
 καὶ ὑποϲτρέψειαν τὸ πληθυντικόν.</p>
-</div></div>
-<div type="textpart" subtype="section" n="44">
-<head>44.</head>
-<div type="textpart" subtype="paragraph" n="1"><p source="Il. Pr. Ψ 361">προπαροξυτονητέον τὸ μεμνέῳτο· γράφεται δὲ καὶ
+            </div>
+         </div>
+         <div n="44" type="section">
+            <head>44.</head>
+            <div n="1" type="paragraph">
+               <p source="Il. Pr. Ψ 361">προπαροξυτονητέον τὸ μεμνέῳτο· γράφεται δὲ καὶ
 ϲὺν τῷ ῑ τὸ ω. οὕτω δὲ καὶ ὁ Ἀϲκαλωνίτηϲ, ἐκ τοῦ μεμνέοιτο ἡγούμενοϲ
 αὐτὸ εἶναι. παρὰ μέντοι Ξενοφῶντι ἄνευ τοῦ ε ἐϲτὶν ὁ ϲχηματιϲμὸϲ
 καὶ προπεριϲπᾶται ἐν Κύρου παιδείαϲ πρώτῳ (6, 3) « ἀλλ’ ὅτε
 τὰ ἄριϲτα πράττοι, τότε μάλιϲτα τὸν θεὸν μεμνῷτο ». τὸ δὲ ἀνάλογον <lb n="30"/>
 διὰ τοῦ η προϲκειμένου τοῦ ῑ παρ᾿  Ἀριϲτοφάνει ἐν Πλούτῳ δευτέρῳ
 (992) «ἵνα τοὐμὸν ἱμάτιον φορῶν μεμνῇτό μου» καὶ πάλιν προπεριϲπαϲτέον.
-ἐν ἑτέροιϲ μέντοι ἐντελῶϲ περὶ τοῦ ϲχηματιϲμοῦ διέλαβον.</p></div>
-<div type="textpart" subtype="paragraph" n="2"><p>(Περὶ ὑποτακτικῶν).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p source="Choer. 794, 17">πᾶν ἐνεργητικὸν ἢ μέϲον ἢ παθητικὸν ὑποτακτικὸν μὴ ἔχοντοϲ <lb n="35"/>
+ἐν ἑτέροιϲ μέντοι ἐντελῶϲ περὶ τοῦ ϲχηματιϲμοῦ διέλαβον.</p>
+            </div>
+            <div n="2" type="paragraph">
+               <p>(Περὶ ὑποτακτικῶν).</p>
+            </div>
+            <div n="3" type="paragraph">
+               <p source="Choer. 794, 17">πᾶν ἐνεργητικὸν ἢ μέϲον ἢ παθητικὸν ὑποτακτικὸν μὴ ἔχοντοϲ <lb n="35"/>
 τὸ μ κλιτικὸν τοῦ ἰδίου ὁριϲτικοῦ παρῳχημένου τοῦτον τὸν τρόπον κανονίζεται· πᾶϲ
 παρψχημένοϲ ὁριϲτικὸϲ εἴτε ἐνεργητικὸϲ εἴτε μέϲοϲ εἴτε παθητικὸϲ μὴ ἔχων τὸ μ
 κλιτικὸν τρέπων τὴν τελευταίαν ϲυλλαβὴν εἰϲ ω μετὰ τοῦ ἀποβάλλειν τὴν ἐν
@@ -2091,8 +2285,7 @@ et II 140. l. 31 cf. Herod. Il. Pr. Γ 102.</note>
 <note type="footnote">1. 33 verbis ἐν ἑτέροιϲ hic περὶ ῥημάτων liber signifcatus videtur. Schol.
 ad Aristoph. l. (cf. Suid. s. v): μεμνῇτο ὁ Ἡρωδιανόϲ φηϲι ἐν τῇ Ὁμηρικῇ προϲῳδίᾳ.
 cf. Lob. El. II 42.</note>
-
-<pb n="824"/>
+                  <pb n="824"/>
 τούτων δέ, φημὶ δὴ ἐπὶ τοῦ ἐὰν ἐϲτάλκω καὶ ἐὰν ἐφθάρκω, ἐφυλάχθη ἡ ἐν ἀρχῇ
 κλιτικὴ ἔκταϲιϲ, ἐπειδὴ ἡ ἄρχουϲά ἐϲτι τοῦ παρακειμένου [ἔφθαρκα καὶ ἔϲταλκα].
 ὁ δὲ παρακείμενοϲ οὐδαμοῦ ἀποβάλλει τὴν ἐν ἀρχαῖϲ αὐτοῦ κλιτικὴν ἔκταϲιν. εἰ
@@ -2100,8 +2293,9 @@ cf. Lob. El. II 42.</note>
 <lb n="5"/> παρακειμένου ἀποβαλλομένη, ὅπερ ἐϲτίν ἀδύνατον. πάλιν ἐτύφθην ἐὰν τυφθῶ,
 ἐτύπην ἐὰν τυπῶ, ἐνύγην ἐὰν νυγῶ, ἐδάμην ἐὰν δαμῶ· τοῦτο γὰρ οὐκ ἔχει τὸ
 μ κλιτικὸν ἀλλὰ θεματικόν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p source="Choer. 806, 5">πᾶϲ παρῳχημένοϲ ὁριϲτικὸϲ ἔχων τὸ κλιτικόν, εἴτε παθητικὸϲ
+            </div>
+            <div n="4" type="paragraph">
+               <p source="Choer. 806, 5">πᾶϲ παρῳχημένοϲ ὁριϲτικὸϲ ἔχων τὸ κλιτικόν, εἴτε παθητικὸϲ
 εἴτε μέϲοϲ, τρέπων τὴν τελευταίαν ϲυλλαβὴν εἰϲ μαι καὶ τὸ παραλῆγον
 <lb n="10"/> φωνῆεν εἰϲ ω μετὰ τὸ ἀποβαλεῖν τὴν ἐν ἀρχαῖϲ κλιτικὴνἔκταϲιν, δηλονότι χωρὶϲ
 τοῦ παρακειμένου, οὖτοϲ γάρ οὐδαμοῦ ἀποβάλλει τὴν ἐν ἀρχαῖϲ αὐτοῦ κλιτικὴν
@@ -2119,10 +2313,11 @@ cf. Lob. El. II 42.</note>
 τούτου γὰρ τὸ ὑποτακτικὸν οὐκ ἔϲτιν εἰϲ μαι, ἀλλ’ εἰϲ ω οἶον δαμῶ, ἀλλ’
 οὐκ ἔχει τὸ μ κλιτικόν, ἀλλὰ θεματικόν, ἀπὸ γὰρ τοῦ ἐνεϲτῶτοϲ ἔχει αὐτό
 <lb n="25"/> δάμνω γάρ ἐϲτιν ὁ ἐνεϲτὼϲ καὶ ἔχει τὸ μ κλιτικόν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5"><p>(Περὶ μετοχῶν).</p>
-</div></div>
-</div>
-</body>
-</text>
+            </div>
+            <div n="5" type="paragraph">
+               <p>(Περὶ μετοχῶν).</p>
+            </div>
+         </div>
+      </body>
+   </text>
 </TEI>

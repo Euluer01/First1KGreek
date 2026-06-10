@@ -1,107 +1,121 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
- <teiHeader xml:lang="eng">
-  <fileDesc>
-   <titleStmt>
-    <title xml:lang="lat">Scholia in Canticum canticorum</title>
-    <author>Origen</author>
-    <editor>Charles de La Rue</editor>
-    <editor>Charles Vincent de La Rue</editor>
-    <funder>Harvard Library Arcadia Fund</funder>
-    <principal>Gregory Crane</principal>
-    <respStmt>
-     <persName xml:id="DDD">Digital Divide Data</persName>
-     <resp>Corrected and encoded the text</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Gregory Crane</persName>
-     <resp>Editor-in-Chief, Perseus Digital Library</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Matt Munson</persName>
-     <resp>Project Manager (University of Leipzig)</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Annette Gessner</persName>
-     <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Thibault Clérice</persName>
-     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Bruce Robertson</persName>
-     <resp>Technical Advisor</resp>
-    </respStmt>
-   </titleStmt>
-   <publicationStmt>
-    <authority>Harvard College Library</authority>
-    <idno type="filename">tlg2042.tlg076.1st1K-grc1.xml</idno>
-    <availability>
-     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-    </availability>
-    <date>2018</date>
-    <publisher>Harvard College Library</publisher>
-    <pubPlace>United States</pubPlace>
-   </publicationStmt>
-   <sourceDesc>
-    <listBibl>
-     <biblStruct>
-      <monogr>
-       <title xml:lang="lat">Origenis Opera Omnia</title>
-       <editor>Charles de La Rue</editor>
-       <editor>Charles Vincent de La Rue</editor>
-       <author ref="urn:cts:greekLit:tlg2042">Origen</author>
-       <imprint>
-        <publisher>J. P. Migne</publisher>
-        <pubPlace>Paris</pubPlace>
-        <date>1857</date>
-       </imprint>
-       <biblScope unit="volume">7</biblScope>
-      </monogr>
-      <series>
-       <title level="s" xml:lang="lat">Patrologiae cursus completus (series
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Scholia in Canticum canticorum</title>
+            <author>Origen</author>
+            <editor>Charles de La Rue</editor>
+            <editor>Charles Vincent de La Rue</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg2042.tlg076.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2018</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg2042.tlg076.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Origenis Opera Omnia</title>
+                     <editor>Charles de La Rue</editor>
+                     <editor>Charles Vincent de La Rue</editor>
+                     <author ref="urn:cts:greekLit:tlg2042">Origen</author>
+                     <imprint>
+                        <publisher>J. P. Migne</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date>1857</date>
+                     </imprint>
+                     <biblScope unit="volume">7</biblScope>
+                  </monogr>
+                  <series>
+                     <title level="s" xml:lang="lat">Patrologiae cursus completus (series
         Graeca)</title>
-       <biblScope unit="volume">17</biblScope>
-      </series>
-      <ref target="https://archive.org/stream/patrologiae_cursus_completus_gr_vol_017#page/n137/mode/2up">The Internet Archive</ref>
-     </biblStruct>
-    </listBibl>
-   </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-   <p>Text encoded in accordance with the latest EpiDoc standards</p>
-   <refsDecl n="CTS">
-    <cRefPattern n="paragraph" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-    <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-   </refsDecl> 
-  </encodingDesc>
-  <profileDesc>
-   <langUsage>
-    <language ident="grc">Greek</language>
-    <language ident="lat">Latin</language>
-   </langUsage>
-  </profileDesc>
-  <revisionDesc>
-   <change/>
-  </revisionDesc>
- </teiHeader>
-<text>
-<body>
- <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2042.tlg076.1st1K-grc1">
-<pb n="253"/>
-  <head>ΩΡΙΓΕΝΟΥΣ ΕΙΣ ΤΑ ΑΣΜΑΤΑ ΤΩΝ ΑΣΜΑΤΩΝ.</head>
-<div type="textpart" subtype="chapter" n="pr">
-<div type="textpart" subtype="paragraph" n="1">
-<p>(Ex Catena Vaticana cui titulus : Προκοπίου Χριστιανοῦ σοφιστοῦ εἰς τὰ ᾌσμστα τῶν ᾀσμάτων ἐξηγητικῶν
+                     <biblScope unit="volume">17</biblScope>
+                  </series>
+                  <ref target="https://archive.org/stream/patrologiae_cursus_completus_gr_vol_017#page/n137/mode/2up">The Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards</p>
+         <refsDecl n="CTS">
+            <cRefPattern n="paragraph"
+                         matchPattern="(.+).(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern n="chapter"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg2042.tlg076.1st1K-grc1">
+         <pb n="253"/>
+         <head>ΩΡΙΓΕΝΟΥΣ ΕΙΣ ΤΑ ΑΣΜΑΤΑ ΤΩΝ ΑΣΜΑΤΩΝ.</head>
+         <div n="pr" type="chapter">
+            <div n="1" type="paragraph">
+               <p>(Ex Catena Vaticana cui titulus : Προκοπίου Χριστιανοῦ σοφιστοῦ εἰς τὰ ᾌσμστα τῶν ᾀσμάτων ἐξηγητικῶν
 ἐκλογῶν ἐπιτομὴ ἀπὸ φωνῆς Γρηγορίου Νύσσης καὶ Κυρίλλου Ἀλεξανδρείας, Ὠριγένους
 τε καὶ Φίλωνος τοῦ Καρπαθίου, Ἀπολιναρίου, Εὐσεβίου Καισαρείας, καὶ ἑτέρων διαφόρων, ἤγουν
 Διδύμου, τοῦ ἀγίου Ἰσιδώρου, Θεοδωρήτου καὶ Θεοφίλου. — MAI, Class. Auct., t. IX.)</p>
-  </div>
-</div>
-<div type="textpart" subtype="chapter" n="1" corresp="urn:cts:greekLit:tlg0527.tlg031:1">
-<head>ΚΕΦΑΛΑΙΟΝ Α΄.</head>
-<div type="textpart" subtype="paragraph" n="1">
-<p>Φιλησάτω με ἀπὸ φιλημάτων στόματος αὐτου.
+            </div>
+         </div>
+         <div n="1" corresp="urn:cts:greekLit:tlg0527.tlg031:1" type="chapter">
+            <head>ΚΕΦΑΛΑΙΟΝ Α΄.</head>
+            <div n="1" type="paragraph">
+               <p>Φιλησάτω με ἀπὸ φιλημάτων στόματος αὐτου.
 Μὴ διὰ προφητῶν με μνηστευσάτω, φησὶν, διʼ ἑαυτοῦ
 δὲ ὁμιλησάτω, κατʼ αἴσθησιν πνευματικήν· διʼ
 ἦς ὁ Ἰωάννης φησί· Καὶ αἱ χεῖρες ἡμῶν ἐψηλάφησαν
@@ -114,22 +128,22 @@
 ἀπὸ τοῦ στόματος τοῦ νυμφίου νομίσωμεν
 ἐν ὅσῳ δὲ ἀποροῦμεν, ὑπολάβωμεν ἐχόμενοι λέγειν
 τὸ, Φιλησάτω με ἀπὸ φιλημάτων στόματος αὐτοῦ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2">
-<p>Ὅτι ἀγαθοὶ οἱ μαστοί σου ὑπέρ οἶνον, καὶ
+            </div>
+            <div n="2" type="paragraph">
+               <p>Ὅτι ἀγαθοὶ οἱ μαστοί σου ὑπέρ οἶνον, καὶ
 ὀσμὴ μύρων σου ὑπέρ πάντα τὰ ἀρώματα.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3">
-<p>Ἥγουν αἱ ἀρεταί σου ὑπὲρ τὰς παῤ ἡμῖν ἀρετὰς
+            </div>
+            <div n="3" type="paragraph">
+               <p>Ἥγουν αἱ ἀρεταί σου ὑπὲρ τὰς παῤ ἡμῖν ἀρετὰς
 κατὰ τὸ, Ἐκάλυψεν οὐρανοὺς ἡ ἀρετὴ αὐτοῦ· ἔστι
 γὰρ αὐτοσοφία καὶ δικαιοσύνη· ἡμεῖς δὲ κατὰ μέθεξιν
 σοφοί τε καὶ δίκαιοι, κατὰ προαίρεσίν τε καὶ δύναμιν,
 ἐν τῇ τούτων εὐωδίᾳ γινόμενοι
 Μῦρον ἐκκενωθέν ὄνομά σου. Διὰ τοῦτο νεάνιδες
 ἠγάπησάν σε.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4">
-<p>Τάχα προφητεύου (20) τοῦ ὁνόματος τοῦ Χριστοῦ τὴν
+            </div>
+            <div n="4" type="paragraph">
+               <p>Τάχα προφητεύου (20) τοῦ ὁνόματος τοῦ Χριστοῦ τὴν
 τὸν κόσμον πληρώσασαν δύναμιν, κατὰ τὴν αὐτοῦ
 παρουσίαν· ὥστε γενέσθαι κατὰ τὸν Παῦλον οἷς μὲν
 ὀσμὴ ἐκ θανάτου εἰς θάνατον, οἷς δὲ δωῆς εἰς
@@ -138,16 +152,15 @@
 καὶ μὴ ἔχουσαι ῥυτίδα ἢ σπῖλον· ἐξεκενώθη
 δὲ, ὡς μηκέτι σιωπᾶσθαι κατακεκλεισμένον ἐν
 ἀποῤῥήτοις.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5">
-<p>Εἰσήγαγέ με ὁ βασιλεὺς εἰς τὸ ταμιεῖον αὐτοῦ.
+            </div>
+            <div n="5" type="paragraph">
+               <p>Εἰσήγαγέ με ὁ βασιλεὺς εἰς τὸ ταμιεῖον αὐτοῦ.
 Ἥγουν ἀδύνατον (3) τὴν ἀξιέραστον λέγει ψυχὴν ἢ
 Ἐκκλησίαν ἢ τὸ ἡγεμονικὸν τοῦ Χριστοῦ· εἰς ὄ Παῦλος
 εἰσελθὼν ἕφη· Ἡμεῖς δέ νοῦν Χριστοῦ ἔχομεν, ἵνα
 ἵδωμεν τὰ ὑπὸ Θεοῦ χαρισθέντα ἡμῖν· τίνα δὲ
 <note type="footnote">1 Joan. l, 1. 2 Psal. XLIV, 12. 3 Isa. LXII, 5.</note>
-
-<pb n="256"/>
+                  <pb n="256"/>
 ταῦτα; Ἃ ὀφθαλμὸς οὐκ οιδε καὶ ους οὐκ ήκουσε,
 καὶ ἐπὶ καρδίαν ἀνθρώπου οὐκ ἀνέβη· ταῦτα γὰρ
 ἡτοίμασεν ὁ Θεὸς τοῖς ἀγαπῶσιν αὐτόν· ἐν γὰρ
@@ -158,49 +171,49 @@
 ἐν ἱματισμῷ διαχρύσῳ, κατὰ τὸν Δαυΐδ· περὶ δὲ τῶν
 νεανίδων, ἀπενεχθήσονται τῷ βααιλεῖ παρθένοι
 ὀπίσω αὐτῆς, καὶ τὰ ἑξῆς.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="6">
-<p>Ἀγαπήσωμεν μαστούς σου ὑπὲρ οἷνον· εὐθύτης
+            </div>
+            <div n="6" type="paragraph">
+               <p>Ἀγαπήσωμεν μαστούς σου ὑπὲρ οἷνον· εὐθύτης
 ἠγάπησέ σε.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="7">
-<p>Ἤγουν εἰ καὶ νῦν διʼ ἀσθένειαν ὑπερ τους σους
+            </div>
+            <div n="7" type="paragraph">
+               <p>Ἤγουν εἰ καὶ νῦν διʼ ἀσθένειαν ὑπερ τους σους
 μαστοὺς ἀγαπῶμεν, ὦ νυμφίε, τὸν οἶνον, ὅταν βελτιωθῶμεν,
 ὑπὲρ τοῦτον αὐτοὺς ἀγαπᾷν. — Οἷνος μὲν οὖν
 εὐφραίνων νεάνιδας, τὰ νομικά· ἡ δὲ τελειότης, τσῦ
 νυμφίου μαστοί· εἶτα εἰς ἀπολογίαν τοῦ μὴ εἴδη
 ἀγαπᾷν, φησίν· Εὐθύτης ἠγάπησέ σε· ἡμεῖς δὲ
 οὔπω τὰς ἑαυτῶν πορείας εὐθείας ἐποιησάμεθα.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="8">
-<p>Μέλαινά εἰμι καὶ καλὴ, θυγατέρες Ἱερουσαλήμ·
+            </div>
+            <div n="8" type="paragraph">
+               <p>Μέλαινά εἰμι καὶ καλὴ, θυγατέρες Ἱερουσαλήμ·
 ὡς σκηνώματα Κηδὰρ, ὡς δέῤῥεις Σαλομών.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="9">
-<p>Λέγει δὲ ἡ ἐξ ἐθνῶν Ἐκκλησία ταῦτα πρὸς τὰς ἐξ
+            </div>
+            <div n="9" type="paragraph">
+               <p>Λέγει δὲ ἡ ἐξ ἐθνῶν Ἐκκλησία ταῦτα πρὸς τὰς ἐξ
 Ἱερουσαλὴμ ψυχὰς, ἤτοι τὴν Ἱερουσαλὴμ, ὁμολογοῦσαν
 τὸ μέλαν, διὰ τὸ μὴ ἐκ λαμπρῶν μηδὲ πεφωτισμένων
 πατέρων· διὸ καὶ σκοτασμῷ παραβάλλεσθαι·
 καλὴ δὲ διὰ τὸν λόγον ὂν παρεδέξατο· καὶ δέῤῥεσιν
 ἐοικέναι τοῦ Σαλομὼν ἂς εἶχεν, μεθʼ ὧν ἄλλων ἐκέκτητο
 ἐν τῇ δόξῃ αὐτοῦ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="10">
-<p>Μὴ βλέψητέ με ὅτι ἐγώ εἰμι μεμελανωμένη, ὅτι
+            </div>
+            <div n="10" type="paragraph">
+               <p>Μὴ βλέψητέ με ὅτι ἐγώ εἰμι μεμελανωμένη, ὅτι
 παρέβλεψέ με ὁ ἥλιος.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="11">
-<p>Ἤ ὅτι σκοτισθεῖσάν με τῇ ἁμαρτίᾳ, Χριστὸς
+            </div>
+            <div n="11" type="paragraph">
+               <p>Ἤ ὅτι σκοτισθεῖσάν με τῇ ἁμαρτίᾳ, Χριστὸς
 παρεῖδε διὰ τὴν ἀπιστίαν· ὂ ἥλιον δικαιοσύνης ἀναγορεύουσιν
 αἱ Γραφαί.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="12">
-<p>Υἱοὶ μητρός μου ἐμαχέσαντο ἐν ἐμοί· ἔθεντό με
+            </div>
+            <div n="12" type="paragraph">
+               <p>Υἱοὶ μητρός μου ἐμαχέσαντο ἐν ἐμοί· ἔθεντό με
 φυλάκισσαν ἐν ἀμπελῶσιν ἀμπελῶνα ἐμόν
 οὐκ ἐφύλαξα.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="13">
-<p>Ἤγουν οἱ διδάσκοντες μαθηταὶ τοῦ Χριστοὺ, καθᾶραί
+            </div>
+            <div n="13" type="paragraph">
+               <p>Ἤγουν οἱ διδάσκοντες μαθηταὶ τοῦ Χριστοὺ, καθᾶραί
 με τῶν πρὸς τούτου βουλόμενοι πονηρῶν λογισμῶν,
 καὶ τῶν συνεργούντων ταῦτα δαιμόνων,
 ἐμαχέσαντο τούτοις ἐν ἐμοὶ, τῆς αὐτῆς μοι μητρὸς
@@ -216,19 +229,18 @@
 καὶ τὴν προτέραν ἕξιν ἑαυτοῦ μὴ τηρῶν ὡς ἐκ
 Σοδόμων ὑπάρχουσαν ἀμπελῶνα, τῷ παρόντι κέχρηται
 λόγῳ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="14">
-<p>Ἐὰν μὴ γνῶς σεαυτὴν ἡ καλὴ ἐν γυναιξὶν,
+            </div>
+            <div n="14" type="paragraph">
+               <p>Ἐὰν μὴ γνῶς σεαυτὴν ἡ καλὴ ἐν γυναιξὶν,
 ἔξελθε σὺ ἐν πτέρναις τῶν ποιμνίων σου, καὶ
 ποίμαινε τὰς ἐρίφους σου ἐπὶ σκηνώμασι τῶν
 ποιμένων.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="15">
-<p>Τὸ πολυθρύλλητον δὲ παῤ Ἕλλησιν ἐπίφθεγμα
+            </div>
+            <div n="15" type="paragraph">
+               <p>Τὸ πολυθρύλλητον δὲ παῤ Ἕλλησιν ἐπίφθεγμα
 προείληπται παραδοθὲν τῷ σοφῷ Σολομῶντι, τὸ
 <note type="footnote">7 I Cor. II, 12, 16. 8 I Cor. II, 9. 9 Coloss. II, 3. 10 Psal. XLIV, 10. 11 ibid 15</note>
-
-<pb n="257"/>
+                  <pb n="257"/>
 νῶθι σαυτόν καθʼ ἣν ἀπειλεῖται νῦν ἡ ψυχὴ παρὰ
 τοῦ ἐράστου καὶ νυμφίου, εἰ μὴ τὸ δοθὲν αὐτῇ κατʼ
 εἰκόνα Θεοῦ φυλάξει κάλλος, τὴν ἔνδοθεν ἐκβολὴν, καὶ
@@ -262,9 +274,9 @@
 εἰς ὄλεθρον τῆς σαρκὸς ἀφορισθέντα τῆς Ἐκκλησίας·
 μετὰ τὸ καθάπερ ἔλεγε πρὸς τὰς νεάνιδας
 εἰσαχθῆναι παρὰ τοῦ βασιλέως εἰς τὸ ταμιεῖον αὐτοῦ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="16">
-<p>Τί ὡραιώθησαν σιαγόνες σου ὡς τρυγόνος;
+            </div>
+            <div n="16" type="paragraph">
+               <p>Τί ὡραιώθησαν σιαγόνες σου ὡς τρυγόνος;
 Ἀλλὰ καὶ μέλη Χριστοῦ Ἐκκλησίαν νύμφης ὁ Παῦλός
 φησιν· ἧς οἱονεὶ πρόσωπον, οἱ τῷ κάλλει τῶν
 λοιπῶν διαφέροντες, αἰσχρὸν οὐδὲν ἐννοοῦντες· τὴν
@@ -274,13 +286,13 @@
 σου. μὴ ἔγοντες σπῖλον ἢ ῥυτίδα; τάχα δὲ καὶ
 τῷ τὸν ἕνα μόνον γινώσκειν Θεόν· καὶ ἡ τρυγὼν γὰρ
 ἐνὶ μόνῳ συνέρχεται.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="17">
-<p>Ὃμοιώματα χρυσίου ποιήσωμέν σοι μετὰ στιγμάτων
+            </div>
+            <div n="17" type="paragraph">
+               <p>Ὃμοιώματα χρυσίου ποιήσωμέν σοι μετὰ στιγμάτων
 τοῦ ἀργυρίου.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="18">
-<p>Τοῦτο δὲ, Οὐ πολὺς ἦν σὐδὲ κεχυμένος ὁ ἄργυρος· —
+            </div>
+            <div n="18" type="paragraph">
+               <p>Τοῦτο δὲ, Οὐ πολὺς ἦν σὐδὲ κεχυμένος ὁ ἄργυρος· —
 ὀλίγα δὲ ἐν ἀποῤῥήτῳ παρὰ τῶν προφητῶν λεγόμενα
 (4) καὶ τῶν πάλαι σοφῶν· — ἐπιδημήσαντος δὲ
 τὰ ἐν τοῖς ἀβάτοις τοῦ ναοῦ, τεθεώρηται τῷ βλέποντι
@@ -288,22 +300,21 @@
 κάτω ἐπὶ τῷ θεωρηθῆναι τὰ ἔνδον, ἐπὰν ὁ ἀναπεσὼν
 κοιμηθεὶς ὡς λέων καὶ ὡς σκύμνος ἐγερθῇ.
 Καὶ μετὰ ταῦτα.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="19">
-<p>Τότε γὰρ οἱ σύμμορφοι γενόμενοι τῆς ἀναστάσεως
+            </div>
+            <div n="19" type="paragraph">
+               <p>Τότε γὰρ οἱ σύμμορφοι γενόμενοι τῆς ἀναστάσεως
 αὐτοῦ, παραλήψονται αὐτοὶ (5) ἀνθομοιωμάτων χρυ
 σόν· πληθυνθήσονται γὰρ τῷ ἀργυρίῳ κοὶ τῷ χρυσίῳ.</p>
-<note type="footnote">12 Ephes. IV, 14. 13 Ephes. v, 30. 14 ibid. 27.</note>
-<note type="footnote">(4) EdiI. Mai, λέγομαι, quod nullum sensum afert.</note>
-
-<pb n="260"/>
-</div>
-<div type="textpart" subtype="paragraph" n="20">
-<p>Ἔως οὗ ὁ βασιλεὺς ἐν ἀνακλισει αὐτοῦ, νάρδος
+               <note type="footnote">12 Ephes. IV, 14. 13 Ephes. v, 30. 14 ibid. 27.</note>
+               <note type="footnote">(4) EdiI. Mai, λέγομαι, quod nullum sensum afert.</note>
+               <pb n="260"/>
+            </div>
+            <div n="20" type="paragraph">
+               <p>Ἔως οὗ ὁ βασιλεὺς ἐν ἀνακλισει αὐτοῦ, νάρδος
 ἔδωκεν ὀσμὴν αὐτοῦ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="21">
-<p>Τὴν γὰρ τοῦ νυμφίου φησὶν ὀσμὴν ἡ ἐμὴ νάρδος ἐν
+            </div>
+            <div n="21" type="paragraph">
+               <p>Τὴν γὰρ τοῦ νυμφίου φησὶν ὀσμὴν ἡ ἐμὴ νάρδος ἐν
 ᾗ αὐτὸν ἤλειψα, δέδωκε· τῇ γὰρ ἑαυτῆς νάρδῳ τοὺς
 πόδας ἀλείψασα τοῦ Ἰησοῦ, καὶ ταῖς θριξὶν ἀπομάξασα,
 μεταπεποιημένην ἐκ τῆς ὀσμῆς τοῦ νυμφίου
@@ -312,13 +323,13 @@
 τοῦ νυμφίου ὀσμήν· διόπερ ὡς ἀπὸ τῶν χρωτῶν
 Ἰησοῦ τὴν οἰκίαν ὅλην ἐπλήρωσε τῆς μαθητρίας τὸ
 μῦρον.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="22">
-<p>Ἀπόδεσμος τῆς στακτῆς ἀδελφιδοῦς μου ἐμοὶ.
+            </div>
+            <div n="22" type="paragraph">
+               <p>Ἀπόδεσμος τῆς στακτῆς ἀδελφιδοῦς μου ἐμοὶ.
 ἀνὰ μέσον τῶν μαστῶν μου αὐλισθήσεται</p>
-</div>
-<div type="textpart" subtype="paragraph" n="23">
-<p>Εἰποῦσα τὴν νάρδον τοῦ νυμφίου δεδωκέναι μοι
+            </div>
+            <div n="23" type="paragraph">
+               <p>Εἰποῦσα τὴν νάρδον τοῦ νυμφίου δεδωκέναι μοι
 τὴν ὀσμὴν, νῦν φημι τὸν ἀδελφιδοῦν μου πνέειν στακτῆς
 οὐ διαχεομένης, οὐδʼ ἔξω πνεούσης· ἀλλʼ ἀποδεδεμένης
 καὶ πυκνότερον τὴν εὐωδίαν διδούσης· ἀδελφὸν
@@ -331,13 +342,13 @@
 καὶ ἡ ἐξ ἡμῶν εἰς εὐσέβειαν ὑπῆρξε προαγωγή· τούτου
 τοίνυν οὕτως ἀποδεδομένου τῆς νύμφης πατρὸς,
 ἀδελφὸς ὁ Σωτὴρ ὁμοίως ἐκείνοις ὑπὸ νόμον γενόμενος.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="24">
-<p>Ἰδοὺ εἶ καλὴ, ἡ πλησίον μου, ἰδοὺ εἶ κακή·
+            </div>
+            <div n="24" type="paragraph">
+               <p>Ἰδοὺ εἶ καλὴ, ἡ πλησίον μου, ἰδοὺ εἶ κακή·
 ὀφθαλμοί σου περιστεραί.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="25">
-<p>Νῦν ἔοικε πρότερον ἐνεωρακέναι τρανώτερον τῷ
+            </div>
+            <div n="25" type="paragraph">
+               <p>Νῦν ἔοικε πρότερον ἐνεωρακέναι τρανώτερον τῷ
 τοῦ νυμφίου κάλλει ἡ νύμφη· καὶ διὰ τῶν περιστερῶν
 αὐτῆς ὀφθαλμῶν αἰσθέσθαι τῆς ἐν τῷ κάλλει τοῦ
 λόγου καὶ ὑπεροχῆς· τάχα δὲ καὶ κλίνην κοινὴν ἑαυτῆς
@@ -350,16 +361,15 @@
 τῇ σοφίᾳ θεωρημάτων· ἐὰν δὲ ᾖ ἡ κοινὴ νύμφη ἀμφοῖν
 εὐθαλὴς, οὐδὲν θαυμαστὸν καὶ ἐπὶ τὸ σῶμα πᾶσαν
 τὴν διὰ τοῦ σώματος πρᾶξιν ἀγαθὴν δηλοῦσθαι.</p>
-</div>
-
-</div>
-<div type="textpart" subtype="chapter" n="2" corresp="urn:cts:greekLit:tlg0527.tlg031:2">
-<head>ΚΕΦΑΛΑΙΟΝ Β΄.</head>
-<div type="textpart" subtype="paragraph" n="1">
-<p>Ἐγὼ ἄνθος τοῦ πεδίου, κρίνον τῶν κοιλάδων.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2">
-<p>Ἄνθος λέγει τὸ ὁδεῦον ἐπὶ τὸ γενέσθαι καρπός· ἐν
+            </div>
+         </div>
+         <div n="2" corresp="urn:cts:greekLit:tlg0527.tlg031:2" type="chapter">
+            <head>ΚΕΦΑΛΑΙΟΝ Β΄.</head>
+            <div n="1" type="paragraph">
+               <p>Ἐγὼ ἄνθος τοῦ πεδίου, κρίνον τῶν κοιλάδων.</p>
+            </div>
+            <div n="2" type="paragraph">
+               <p>Ἄνθος λέγει τὸ ὁδεῦον ἐπὶ τὸ γενέσθαι καρπός· ἐν
 οὖν τῷ περιγείῳ τόπῳ πεδίῳ ῥηθέντι, ἄνθος ἐστὶν ὁ
 νυμφίος λόγος ὡς πρὸς τὰ μέλλοντα· ὅταν γὰρ ἔλθῃ
 τὸ τέλειον, μεταβαλεῖ τὸ ἄνθος εἰς τὸ γενέσθαι καρπός·
@@ -372,21 +382,20 @@
 ἐστὶ, τοῖς δὲ τούτων κατωτέροις καὶ κοιλωτέροις
 κρίνον· ταῦτα φήσας ὁ νυμφίος παραβάλλει τὴν
 <note type="footnote">15 Joan. XII, 3. 16 I Cur. VI, 15. 17 Philipp. II, 7.</note>
-
-<pb n="261"/>
+                  <pb n="261"/>
 πλησὶον αὐτοῦ ἄλλαις θυγατράσι ταἴς λοιπαῖς ψυχαῖς,
 αἴτινές εἰσιν ἄκανθαι ταύτῃ παραβαλλόμεναι.
 Τοιαῦται δὲ αἱ μὴ πλησίον τοῦ νυμφίου ψυχαί· ἡ δὲ
 πλησίον κρίνον ἐν μέσῳ διαλάμπον αὐτοῦ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3">
-<p>Ὡς μῆλον ἐν τοῖς ξύλος τοῦ δρυμοῦ, οὕτως ἀδελφεβοῦς
+            </div>
+            <div n="3" type="paragraph">
+               <p>Ὡς μῆλον ἐν τοῖς ξύλος τοῦ δρυμοῦ, οὕτως ἀδελφεβοῦς
 μου ἀνὰ μέσον τῶν υἱῶν· ὑπὸ τὴν σκιὰν
 αὐτοῦ ἐπεθύμησα καὶ ἐκάθισα, καὶ ὁ καρπὸς
 αὐτοῦ ἐν τῷ λάρυγγί μου.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4">
-<p>Ἔπρεπε τῇ νύμφῃ τοῦ κάλλους ὅλῃ τοῦ νυμφίου
+            </div>
+            <div n="4" type="paragraph">
+               <p>Ἔπρεπε τῇ νύμφῃ τοῦ κάλλους ὅλῃ τοῦ νυμφίου
 γεγενημένῃ, περὶ αὐτῆς μὲν λέγειν οὐδὲν, πρὸς οἷς
 δὲ ὁ νυμφίος ἔφη περὶ ἑαυτοῦ, μήλῳ παραβάλλειν αὐτόν·
 τοὺς παῤ αὐτῶν δὲ υἱοὺς, ξύλοις δρυμοῦ· ὑπερβολῇ
@@ -411,22 +420,22 @@
 διαυγάσῃ ἡμέρα, καὶ κινηθῶσιν αἱ σκιαί· ἔστι γὰρ
 ὁ βίος ἡμῶν ὡς σκιὰ, καὶ ἐν σκιᾷ θανάτου ὁ ἐξ ἐθνῶν
 ἐκαθέζετο, καὶ οἱ ἀπιστοῦντες ἔτι καθέζονται.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5">
-<p>Εἰσαγάγετέ με εῖς οἶκον τοῦ οἴνου.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="6">
-<p>Ταῦτα πρὸς τοὺς φίλους τοῦ νυμφίου φησὶ τοὺς
+            </div>
+            <div n="5" type="paragraph">
+               <p>Εἰσαγάγετέ με εῖς οἶκον τοῦ οἴνου.</p>
+            </div>
+            <div n="6" type="paragraph">
+               <p>Ταῦτα πρὸς τοὺς φίλους τοῦ νυμφίου φησὶ τοὺς
 ἁγίους ἀγγέλους ἢ ἀποστόλους τε καὶ προφήτας· μονονουχὶ
 λέγουσα, Συγκεράσατέ με τῷ σώματι τοῦ
 Χριστοῦ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="7">
-<p>Στηρίσατέ με ἐν μύροις, στοιβάσατέ με ἐν μήλοις,
+            </div>
+            <div n="7" type="paragraph">
+               <p>Στηρίσατέ με ἐν μύροις, στοιβάσατέ με ἐν μήλοις,
 ὅτι τετρωμένη ἀγάπης ἐγώ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="8">
-<p>Ὁ Σύμμαχος οὕτως ἐκδέδωκεν· Ἐπανακλίνατέ
+            </div>
+            <div n="8" type="paragraph">
+               <p>Ὁ Σύμμαχος οὕτως ἐκδέδωκεν· Ἐπανακλίνατέ
 με οἰνὰνθη, τοὐτέστιν εὐώδεσι δένδροις, τοῖς καλὸν
 καρπὸν ποιοῦσιν, ἀνθοῦντα· τῶν φαύλων λεγομένων
 δένδρων ἀκάρπων ἢ κακοκάρπων ὄντων· τινὰ δὲ τῶν
@@ -441,16 +450,15 @@
 τῆς αὐτῶν μεταλάβῃ ποιότητος· Τέτρωμαι γὰρ φίλτρῳ,
 φησὶ, κατὰ τὸν Σύμμαχον· ἀπὸ τοῦ ἐκλεκτοῦ
 βέλους, κατὰ τὸν Ἡσαΐαν.</p>
-<note type="footnote">18 Thren. IV, 20. 19 Hebr. x, 1. 20 Rom. VI, 14 21 l Cor. XIII, 12. 22 Cant. II, 17. 23 Isa. XLIX 2.</note>
-
-<pb n="264"/>
-</div>
-<div type="textpart" subtype="paragraph" n="9">
-<p>Φωνὴ τοῦ ἀδελφιδοῦ μου, ἰδοὺ οὗτος ἥκει πηδῶν
+               <note type="footnote">18 Thren. IV, 20. 19 Hebr. x, 1. 20 Rom. VI, 14 21 l Cor. XIII, 12. 22 Cant. II, 17. 23 Isa. XLIX 2.</note>
+               <pb n="264"/>
+            </div>
+            <div n="9" type="paragraph">
+               <p>Φωνὴ τοῦ ἀδελφιδοῦ μου, ἰδοὺ οὗτος ἥκει πηδῶν
 ἐπὶ τὰ ὄρη, διαλλόμενος ἐπὶ τοὺς βουνούς.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="10">
-<p>Τοῦτό τινες τοῖς προλαβοῦσιν ἀπέδωκαν, τὸ δὲ
+            </div>
+            <div n="10" type="paragraph">
+               <p>Τοῦτό τινες τοῖς προλαβοῦσιν ἀπέδωκαν, τὸ δὲ
 Ἐβραϊκὸν ἐξ ἰδίας τάττει περικοπῆς· καὶ δῆλόν ἐστιν
 ὡς ἡ νύμφη διαλεγομένη ταῖς θυγατράσιν Ἱερουσαλὴμ,
 αἰφνίδιον αἰσθάνεται τῆς τοῦ νυμφίου φωνῆς,
@@ -475,9 +483,9 @@
 ἐβούλετο αὐτὴν ὅλῳ προσώπῳ τῷ νυμφίῳ
 φανῆναι, καὶ τῆς ἡδείας αὐτῇ παρέχειν ἀκοῦσαι
 φωνῆς.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="11">
-<p>Ἀποκρίνεται ἀδελφιδοῦς μου καὶ λέγει μοι· Ἀνάστα,
+            </div>
+            <div n="11" type="paragraph">
+               <p>Ἀποκρίνεται ἀδελφιδοῦς μου καὶ λέγει μοι· Ἀνάστα,
 ἐλθὲ, ἡ πλησίον μου, καλή μου, περιστερά
 μου· ὅτι ἰδοὺ ὁ χειμὼν παρῆ λθεν, ὁ ὑετὸς ἀπῆλθεν
 καὶ ἐπορεύθη ἑαυτῷ· τὰ ἄνη ὤφθη ἐν τῇ γῇ·
@@ -485,9 +493,9 @@
 ἠκούσθη ἐν τῇ γῇ ἡμῶν· ἡ συκῇ ἐξήνεγκεν
 ὀλύνθους αὐτῆς· αἱ ἄμπελοι κυπρίζουσιν, ἔδωκαν
 ὀσμήν, κ. τ. ἑ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="12">
-<p>Ἀνάστα, φησὶν, ἀπὸ τῶν αἰσθητῶν πρὸς τὰ νοητὰ,
+            </div>
+            <div n="12" type="paragraph">
+               <p>Ἀνάστα, φησὶν, ἀπὸ τῶν αἰσθητῶν πρὸς τὰ νοητὰ,
 ἴνα συνῆμεν· Ὁ ὑετὸς ἀπῆλθεν· εἴπομεν ἂν ὑετὸν
 γεγονέναι, τὸν πρὸ τῆς Ἐπιδημίας καιρὸν, τοῦ Θεοῦ
 ἐντειλαμένου ταῖς νεφέλαις ὕειν τὸν νομικὸν καὶ προφητικὸν
@@ -505,9 +513,9 @@
 δεῖξόν μοι τὴν ὄψιν σου, καὶ ἀκούτισον με τὴν
 φωνήν σου, ὅτι ἡ φωνή σου ἡδεῖα, καὶ ἡ ὄψις
 σου ὡραία.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="13">
-<p>Βούλεται τὴν ψυχὴν ὑπερβῆναι τὰ αἰσθητά· ὡς ἐπὶ
+            </div>
+            <div n="13" type="paragraph">
+               <p>Βούλεται τὴν ψυχὴν ὑπερβῆναι τὰ αἰσθητά· ὡς ἐπὶ
 πόλεως δὲ τεῖχος καὶ προτείχισμα, τὸν αἰσθητὸν
 κόσμον καλεῖ· δεῖ οὖν τὴν τῷ λόγῳ κοινωνοῦσαν ψυχὴν
 ἐν σκέπῃ τῆς πέτρας, οὐ μόνον ἔξω τοῦ τείχους τῆς
@@ -525,13 +533,13 @@
 νομίζω, ἀλλὰ καὶ ἐχόμενα τοῦ προτειχίσματος· ὂς
 λόγος μέν ἐστι τελευταῖος τῶν σωματικῶν, ἀρχὴ δὲ
 τῶν ἀσωμάτων.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="14">
-<p>Πιάσατε ἡμῖν ἀλώπεκας μικροὺς ἀφανίζοντας
+            </div>
+            <div n="14" type="paragraph">
+               <p>Πιάσατε ἡμῖν ἀλώπεκας μικροὺς ἀφανίζοντας
 ἀμπελῶνας, καὶ αἱ ἄμπελοι ἡμῶν κυπρίζουσιν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="15">
-<p>Ταῦτα τοῖς φίλοις ὁ νυμφίος, ἤτοι ἀγγέλοις ἢ ἀνδράσιν
+            </div>
+            <div n="15" type="paragraph">
+               <p>Ταῦτα τοῖς φίλοις ὁ νυμφίος, ἤτοι ἀγγέλοις ἢ ἀνδράσιν
 ἀγίοις, ὅσοι τῆς Ἐκκλησίας διδάσκαλοι· ὑπὸρ
 σωτηρίας δὲ τῶν ἀμπελώνων ἡ προτροπή· ἵνα τῶν
 πανούργων συλλαμβανομένων δυνάμεων, αἵ διαφθείρουσαι
@@ -548,14 +556,14 @@
 χείρονα, καὶ τοῖς φίλοις εὐάλωτοι· λέγει δʼ ἂν καὶ
 μικροὺς τοὺς ἀμπελῶνας· οὐ δύναται γὰρ κατὰ τῶν
 μεγάλων ἀλώπηξ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="16">
-<p>Ἀδελφιδός μου ἐμοὶ, κἀγὼ αὐτῷ· ὁ ποιμαίνων
+            </div>
+            <div n="16" type="paragraph">
+               <p>Ἀδελφιδός μου ἐμοὶ, κἀγὼ αὐτῷ· ὁ ποιμαίνων
 ἐν τοῖς κρίνοις, ἕως οὗ διαπνεύσῃ ἡ ἡμέρα, καὶ
 κινηθῶσιν αἱ σκιαί.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="17">
-<p>Ἤ νύμφη πρὸς τοὺς ἑταίρους τοῦ νυμφίου φησὶν
+            </div>
+            <div n="17" type="paragraph">
+               <p>Ἤ νύμφη πρὸς τοὺς ἑταίρους τοῦ νυμφίου φησὶν
 ὡς οὐδεμίαν ἔχουσα πρὸς τοὺς ἀλώπεκας μετουσίαν·
 ἐκοινώνησαν γὰρ ἡμῖν, φησὶν, αἵματος καὶ σαρκὸς,
 καὶ ἡμεῖς αὐτῷ τῆς ἀφθαρσίας. Ἢ ὅτι ὁ Θεὸς ἐν ψυχῇ
@@ -582,17 +590,16 @@
 ἐν μέσῳ ἀκανθῶν, οὕτως ἡ πλησίον μου ἀνὰ
 μέσον τῶν θυγατέρων καὶ τήρει ὡς ἐπὶ τῆς νύμφης
 οὐκ ἔλεξεν· διὸ καὶ παραγέγονεν, εἰς τὸ ἀκάνθαις μὴ ἐμπαγῆναι τὰ ποιμαινόμενα.</p>
-<note type="footnote">26 Isa. XXVI, 1.</note>
-<note type="footnote">27 I Cor. VI, 13. 28 Joan. XV, 4. 29 Cant. VI, 2. Osc. XIV 10.</note>
-
-<pb n="268"/>
-</div>
-<div type="textpart" subtype="paragraph" n="18">
-<p>Ἕως οὗ διαπνεύσῃ ἡ ἡμέρα καὶ παρέλθωσιν αἱ
+               <note type="footnote">26 Isa. XXVI, 1.</note>
+               <note type="footnote">27 I Cor. VI, 13. 28 Joan. XV, 4. 29 Cant. VI, 2. Osc. XIV 10.</note>
+               <pb n="268"/>
+            </div>
+            <div n="18" type="paragraph">
+               <p>Ἕως οὗ διαπνεύσῃ ἡ ἡμέρα καὶ παρέλθωσιν αἱ
 σκιαί.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="19">
-<p>Διὸ καὶ αὐχεῖ μυστικῶς λέγειν ἐν Ἰακὼβ τό· ἐγενόμην
+            </div>
+            <div n="19" type="paragraph">
+               <p>Διὸ καὶ αὐχεῖ μυστικῶς λέγειν ἐν Ἰακὼβ τό· ἐγενόμην
 τῆς ἡμέρας συγκαιόμενος τῷ καύματι· ἐν τῷ τοῦ
 παρόντος γὰρ βίου καύματι δεόμεθα τοῦ ποιμαίνοντος,
 διὰ τὰ μεσημβρινὰ δαιμόνια· λέγει γὰρ πρὸς τὸν εὐπειθῆ·
@@ -609,13 +616,13 @@
 ὄντος· μετὰ δὲ τὴν ἐπιδημίαν, ποιμαίνει μὲν,
 ἀλλʼ οὐκ ἐν κρίνοις· ὡς γὰρ τῆς ἡμέρας διαπνευσάσης
 εἴρηται τὸ, ἀγαπητοὶ, γινώσκετε ὅτι ἐσχάτη ὥρα ἐστίν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="20">
-<p>Ἀπόστρεψον, ὁμοιώθητι σὺ, ἀδελφιδέ μου, τῷ
+            </div>
+            <div n="20" type="paragraph">
+               <p>Ἀπόστρεψον, ὁμοιώθητι σὺ, ἀδελφιδέ μου, τῷ
 δόρκωτιη νεβρῷ ἐλάφων ἐπὶ τὰ ὄρη τῶν κοιλωμάτων.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="21">
-<p>Τὰ πρότερα πρὸς τὰς νεανίδας εἶπεν ἡ νύμφη, τὰ
+            </div>
+            <div n="21" type="paragraph">
+               <p>Τὰ πρότερα πρὸς τὰς νεανίδας εἶπεν ἡ νύμφη, τὰ
 δὲ νῦν πρὸς τὸν νυμφίον· ὥστε τῷ παρόντι καιρῷ
 ἁρμόττουσαν ἀναλαβεῖν ὁμοιότητα πρὸς μὲν τὸν δόρκωνα,
 διὰ τὸ διορατικόν· πρὸς δὲ νεβρὸν ἐλάφων, διʼ
@@ -631,13 +638,12 @@
 δυνάμεων, ἐλάφων νεβρῷ· τὸ δὲ, ἢ νεβρῷ,
 παραδιαζευτικόν· ὁ δὲ Θεοδοτίων εἷπεν, ἐπὶ τὰ ὄρῆ
 θυμιαμάτων· οὐδὲν ἧττον τοὺς ἁγίους δηλῶν.</p>
-</div>
-
-</div>
-<div type="textpart" subtype="chapter" n="3" corresp="urn:cts:greekLit:tlg0527.tlg031:3">
-<head>ΚΕΦΑΛΑΙΟΝ Γ΄.</head>
-<div type="textpart" subtype="paragraph" n="1">
-<p>Ἐπὶ τὴν κοίτην μου ἐν νυξὶν ἐδήτησα ὃν ἠγάπησεν
+            </div>
+         </div>
+         <div n="3" corresp="urn:cts:greekLit:tlg0527.tlg031:3" type="chapter">
+            <head>ΚΕΦΑΛΑΙΟΝ Γ΄.</head>
+            <div n="1" type="paragraph">
+               <p>Ἐπὶ τὴν κοίτην μου ἐν νυξὶν ἐδήτησα ὃν ἠγάπησεν
 ὁ ψυχή μου· ἐδήτησα αὐτὸν, καὶ οὐχ
 εὗρον αὐτόν· ἐκάλεσα αὐτὸν καὶ οὐχ ὑπήκουσέ
 μου· ἀναστήσομαι δὴ καὶ κυκλώσω ἐν τῇ πόλει,
@@ -651,9 +657,9 @@
 ἐκράτησα αὐτὸν, καὶ οὐκ ἀφῆκα αὐτόν· ἕως οὗ
 εἰσήγαγον αὐτὸν εἰς οἶκον μητρός μου καὶ εἰς
 τὸ ταμιεῖον τῆς συλλαβούσης με.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2">
-<p>Περὶ τῶν πρὸ τοῦ γάμου μυστηρίων εἰπὼν, νῦν
+            </div>
+            <div n="2" type="paragraph">
+               <p>Περὶ τῶν πρὸ τοῦ γάμου μυστηρίων εἰπὼν, νῦν
 αὐτὸν διὰ νυκτὸς ἐπὶ τὴν κοίτην καλεῖ· ἀποῤῥητοτέρων
 ἐθέλων κοινωνεῖν, καὶ τῆς τελειοτέρας μετασχεῖν
 ἀναπαύσεως· τοῦτο γὰρ ἡ κοίτη· τὸ δὲ ἐν
@@ -702,51 +708,49 @@
 τῇ συλλήψει τὴν ἀρχὴν τῆς συστάσεως εἶναι· μήτηρ
 δὲ λεγομένη μετὰ τὴν μόρφωσιν, καὶ τὴν τοῦ συλληφθέντος
 τελείωσιν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3">
-<p>Τᾶς αὕτη ἡ ἀναβαίνουσα ἐκ τῆς ἐρήμου ὡς στελέχη
+            </div>
+            <div n="3" type="paragraph">
+               <p>Τᾶς αὕτη ἡ ἀναβαίνουσα ἐκ τῆς ἐρήμου ὡς στελέχη
 καπνοῦ τεθυμιαμένη; σμύρνα καὶ λίβανος
 ἀπὸ πάντων κονιορτῶν μυρεψοῦ;</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4">
-<p>Καλὴ λίαν ἡ ἀναβαίνουσα βίῳ καὶ λόγῳ ψυχὴ, φυγοῦσα
+            </div>
+            <div n="4" type="paragraph">
+               <p>Καλὴ λίαν ἡ ἀναβαίνουσα βίῳ καὶ λόγῳ ψυχὴ, φυγοῦσα
 τὰ παρὰ τοῖς πολλοῖς ἁμαρτήματα, ἅπερ ἐξ
 ἐρήμου λέγεται ἀναβαίνειν· τὸ δὲ τὸν δίκαιον εἶναι
 Χριστοῦ εὐωδίαν ἐν παντὶ τόπῳ τοῖς σωζομένοις,
 τεθυμιαμένη νοεῖται παραπλησίως στελέχεσι,
 καπνὸν ἡδὺν ἀναπέμπουσιν, εὐφραίνοντα τὰς τῶν
 μακαριζόντων ἀναπνοάς.</p>
-</div>
-
-</div>
-<div type="textpart" subtype="chapter" n="4" corresp="urn:cts:greekLit:tlg0527.tlg031:4">
-<head>ΚΕΦΑΛΑΙΟΝ Δ΄.</head>
-<div type="textpart" subtype="paragraph" n="1">
-<p>Ὀδόντες σου ὡς ἀγέλαι τῶν κεκαρμένων αἵ ἀνέβησαν
+            </div>
+         </div>
+         <div n="4" corresp="urn:cts:greekLit:tlg0527.tlg031:4" type="chapter">
+            <head>ΚΕΦΑΛΑΙΟΝ Δ΄.</head>
+            <div n="1" type="paragraph">
+               <p>Ὀδόντες σου ὡς ἀγέλαι τῶν κεκαρμένων αἵ ἀνέβησαν
 ἀπὸ τοῦ λουτροῦ· αἱ πᾶσαι διδυμεύουσαι,
 καὶ ἀτεκνοῦσα οὐκ ἔστιν ἐν αὐταῖς.
 Διδυμεύουσαι δὲ ἄλλως, διὰ τὸ διττὸν τῆς νοήσεως
 τῆς τερητῆς (6) καὶ πνευματικῆς.
 Ὡς σπαρτίον τὸ κόκκινον χείλη σου, καὶ ἡ λαλιά
 σου ὡραῖα.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2">
-<p>Ἤγουν ἔστω διάπυρος ἡ τοῦ λόγου παρασκευὴ ὡς
+            </div>
+            <div n="2" type="paragraph">
+               <p>Ἤγουν ἔστω διάπυρος ἡ τοῦ λόγου παρασκευὴ ὡς
 κερδῆσαι τὸν ἀκροατὴν δυναμένη, ἢ καὶ τὸ ἔναιμον
 <note type="footnote">31 Ephes. v, 14. 32 I Petr., 12. II Cor. II, 15.</note>
-<note type="footnote">(6) Τερητῆς. Forte τηρητῆς. EDIT.</note>
-
-<pb n="272"/>
+                  <note type="footnote">(6) Τερητῆς. Forte τηρητῆς. EDIT.</note>
+                  <pb n="272"/>
 καὶ ζωτικὸν δηλοῖ τῶν διὰ τοῦ χείλους ἐξιόντων ῥημάτων,
 οἱωνεὶ βαπτομένων ἐν τῇ ἀληθινῇ πόσει τοῦ
 αἴματος τοῦ Χριστοῦ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3">
-<p>Ὡς λέπυρον τῆς ῥόας μῆλόν σου ἐκτὸς τῆς
+            </div>
+            <div n="3" type="paragraph">
+               <p>Ὡς λέπυρον τῆς ῥόας μῆλόν σου ἐκτὸς τῆς
 σιωπήσεως σου.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4">
-<p>Προστίθησι τῷ τῆς σωφροσύνης ἐπαίνῳ, τὸν ἀπὸ
+            </div>
+            <div n="4" type="paragraph">
+               <p>Προστίθησι τῷ τῆς σωφροσύνης ἐπαίνῳ, τὸν ἀπὸ
 τῆς σιωπῆς· ἐπισταμένης τῆς νύμφης καιροὺς λαλιᾶς
 ὡραίας καὶ ἐπαινουμένης σιγῆς· καὶ ἐπεὶ πιστὸς πνοῇ
 κρύπτει πράγματα καὶ ἡ νύμφη ἐν τῷ βάθει κρύπτει
@@ -755,14 +759,14 @@
 διὸ ἐπήγαγεν· Ἐκτὸς τῆς σιωπήσεώς σου· δηλῶν
 τὰ σιωπώμενα δόγματα ὡς κόκκους ῥόας ὑπὸ τὸ
 λέπυρον αὐτῆς.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5">
-<p>Ὡς πύργος Δαιῒδ τράχηλός σου, ὁ ᾠκοδομημένος
+            </div>
+            <div n="5" type="paragraph">
+               <p>Ὡς πύργος Δαιῒδ τράχηλός σου, ὁ ᾠκοδομημένος
 ἐν Θαλπιώθ· χίλιοι θυρεοὶ κρέμανται ἔπʼ αὐτὸν,
 πᾶσαι βολίδες τῶν δυνατῶν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="6">
-<p>Ἀκύλας τὸ Θαλπιὼθ ἐπάλξεις ἐκδέδωκεν· ὁ δὲ
+            </div>
+            <div n="6" type="paragraph">
+               <p>Ἀκύλας τὸ Θαλπιὼθ ἐπάλξεις ἐκδέδωκεν· ὁ δὲ
 Σύμμαχος, ὕψη· ᾧ ἀκολουθεῖ τὸν ὑπὲρ τὰς ἐπάλξεις
 πύργον εἶναι τὴν σοφίαν, ἧς ὁμοίως ἤρτηνται θυρεοὶ
 μὲν τὰ πεπιστευμένα δόγματα, ἅπερ εἶπεν ἑνικῶς ὁ
@@ -772,14 +776,14 @@
 ἐκδέδωκεν ἡ πέμπτη ἔκδοσις, τὸν νοῦν μᾶλλον
 ἢ τὴν λέξιν ἑρμηνεύουσα· μὴ προαποκειμένων γὰρ
 ἐντολῶν, οἰκοδομηθῆναι τὴν ἀψευδῆ γνῶσιν ἀδύνατον.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="7">
-<p>Δύο μαστοί σου, ὡς δύο νεβροὶ δίδυμοι δορκάδος
+            </div>
+            <div n="7" type="paragraph">
+               <p>Δύο μαστοί σου, ὡς δύο νεβροὶ δίδυμοι δορκάδος
 οἱ νεμόμενοι ἐν τοῖς κρίνοις, ἕως οὗ διαπνεύσῃ
 ἡ ἡμέρα καὶ κινηθῶσιν αἱ σκιαί.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="8">
-<p>Τὸ ἡγεγομικὸν, ὡς ἐπὶ νύμφης μαστοί· ὅπερ ἐστὶν
+            </div>
+            <div n="8" type="paragraph">
+               <p>Τὸ ἡγεγομικὸν, ὡς ἐπὶ νύμφης μαστοί· ὅπερ ἐστὶν
 ὀξυδερκέστατον· διὸ παρείκασε δύο νεβροῖς δορκάδος
 νεμομένοις ἐν ὡραίοις τόποις καὶ εὐώδεσι· σημαίνων
 τά τε νοητὰ καὶ αἰσθητά· νεβροὺς δὲ, ἐπειδὴ νῦν ἐκ
@@ -788,14 +792,14 @@
 βίου παύσηται, καὶ καιρὸς τῆς ἀναψύξεως ἐπιστῇ,
 λυομένης καὶ τῆς σκιᾶς σκιὰ γάρ ἐστιν ὁ παρὼν
 βίος· τότε γὰρ ὡς τέλειοι, ἀλλʼ οὐχ ὡς νεβροὶ νεμηθησόμεθα.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="9">
-<p>Ἐκαρδίωσας ἡμᾶς, ἀδελφή μου νύμφη· ἐκαρδίωσας
+            </div>
+            <div n="9" type="paragraph">
+               <p>Ἐκαρδίωσας ἡμᾶς, ἀδελφή μου νύμφη· ἐκαρδίωσας
 ἡμᾶς ἑνὶ ἀπὸ ὀφθαλμῶν σου, ἐν μιᾷ ἐνθέματι
 τραχήλου σου.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="10">
-<p>Τὸ ἔνθεμα εἴρηται παρὰ τὸ ἐντίθεσθαι καὶ ἐνορμᾶσθαι
+            </div>
+            <div n="10" type="paragraph">
+               <p>Τὸ ἔνθεμα εἴρηται παρὰ τὸ ἐντίθεσθαι καὶ ἐνορμᾶσθαι
 τῷ τραχήλῳ τῆς νύμφης· εἰ δὲ ὡς δύο νεβροὶ
 δορκάδος ἔμειναν οἱ μαστοὶ τῆς νύμφης, τὸ τί ἐκαλλιώθησαν;
 οὐκ ἂν ἐῤῥέθη θαυμαστικῶς περὶ τοῦ, ὡς
@@ -806,13 +810,13 @@
 καὶ χρηστότητα καὶ ταπεινοφροσύνην χείλη δὲ οἱ
 διδάσκαλοι· καὶ κηρία μέλιτος λόγοι καλοί· εἰργάσαντο
 δὲ κηρίον καὶ μέλι προφῆται καὶ ἀπόστολοι.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="11">
-<p>Κῆπος κεκλεισ μένος, ἀδελφή μου νύμφη· κῆπος
+            </div>
+            <div n="11" type="paragraph">
+               <p>Κῆπος κεκλεισ μένος, ἀδελφή μου νύμφη· κῆπος
 κεκλεισ μένος, πηγὴ ἐσφραγισμένη.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="12">
-<p>Δεύτερον, τὸ κῆπος κεκλεισ μένος ἐῤῥέθη, τὸ μὲν
+            </div>
+            <div n="12" type="paragraph">
+               <p>Δεύτερον, τὸ κῆπος κεκλεισ μένος ἐῤῥέθη, τὸ μὲν
 ἐπὶ προκόπτοντος, τὸ δὲ ἐπὶ τελείου. ὅτε τὸ ἡγεμονικὸν
 
 <pb n="273"/>
@@ -824,31 +828,30 @@
 νῦν μὲν οὖν ἡ Γραφὴ κῆπον εἶναι
 ἀπλῶς· ἀλλαχοῦ δὲ ὡς περὶ ἑτέρου, καὶ τὸ λαχανείας
 προστίθησιν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="13">
-<p>Ἐξεγέρθητι, Βοῤῥᾶ, καὶ ἔρχου, Νότε, διάπνευσον
+            </div>
+            <div n="13" type="paragraph">
+               <p>Ἐξεγέρθητι, Βοῤῥᾶ, καὶ ἔρχου, Νότε, διάπνευσον
 κῆπόν μου, καὶ ῥευσάτωσαν ἀρώματά μου.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="14">
-<p>Ἔοικεν ἐπιτιμᾷν ἡ νύμφη τῷ Βοῤῥέᾳ, τὴν ἐξουσίαν
+            </div>
+            <div n="14" type="paragraph">
+               <p>Ἔοικεν ἐπιτιμᾷν ἡ νύμφη τῷ Βοῤῥέᾳ, τὴν ἐξουσίαν
 λαβοῦσα παρὰ τοῦ ἐπιτιμήσαντος τῷ ἀνέμῳ νυμφίου·
 διὸ παρὰ τοῖς τρισὶν εὐαγγελισταῖς ἐπιτιμηθῆναι τῷ
 ὰνέμῳ εἴρηται· οἱ δὲ ἄνεμοι ἁπλῶς ὑπακούουσιν
 αὐτῷ· Χριστὸς οὖν ἐξωθουμένους τοῦ διαβόλου, εἰσοικίζεται
 ταῖς ψυχαῖς περὶ οὗ τὸ, ὁ Θεὸς ἀπὸ Θαμὰν
 ἡξει, τουτέστιν ἐκ Νότου.</p>
-</div>
-
-</div>
-<div type="textpart" subtype="chapter" n="5" corresp="urn:cts:greekLit:tlg0527.tlg031:5">
-<head>ΚΕΦΑΛΑΙΟΝ Ε΄.</head>
-<div type="textpart" subtype="paragraph" n="1">
-<p>Ἄνοιξόν μοι, ἀδελφή μου, πλησίον μου, περιστερά
+            </div>
+         </div>
+         <div n="5" corresp="urn:cts:greekLit:tlg0527.tlg031:5" type="chapter">
+            <head>ΚΕΦΑΛΑΙΟΝ Ε΄.</head>
+            <div n="1" type="paragraph">
+               <p>Ἄνοιξόν μοι, ἀδελφή μου, πλησίον μου, περιστερά
 μου, τελεία μου, ὅτι ὁ κεφαλή μου ἐπλήσθη
 δρόσου, καὶ οἱ βόστρυχοί μου ψεκάδων νυκτός.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2">
-<p>Ἀναγκαίως ἡ τοῦ μοί προσθήκη τοῦ ἄνοιξον· ἔστι
+            </div>
+            <div n="2" type="paragraph">
+               <p>Ἀναγκαίως ἡ τοῦ μοί προσθήκη τοῦ ἄνοιξον· ἔστι
 γὰρ καὶ ἀντικειμέναις δυνάμεσιν ἀνοῖξαι· ὡς περὶ
 ὀχληρᾶς δὲ τῆς δρόσου λέγειν δοκεῖ, ὡς καὶ περὶ τῶν
 τῆς νυκτὸς ψεκάδων· ἀνάπαυλαν γὰρ ἔοικεν ἀπὸ τούτωνἐπιζητεῖν.
@@ -860,49 +863,48 @@
 εἰπόντα, ὁ Κύριός μου καὶ ὁ Θεός μου· ἡ δρόσος δὲ
 δηλοῖ τὴν κατὰ τὸν ὅρθρον ἀνάστασιν, ὅτε κάτεισι
 δρόσος.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3">
-<p>Ἀδελφιδός μου παρῆλθε· ψυχή μου ἐξῆλθεν ἐν
+            </div>
+            <div n="3" type="paragraph">
+               <p>Ἀδελφιδός μου παρῆλθε· ψυχή μου ἐξῆλθεν ἐν
 λόγῳ αὐτοῦ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4">
-<p>Ἡνίκα ἔφθασεν ἡ νύμφη τὸ κλεῖθρον, ὥστε τὴν
+            </div>
+            <div n="4" type="paragraph">
+               <p>Ἡνίκα ἔφθασεν ἡ νύμφη τὸ κλεῖθρον, ὥστε τὴν
 ψυχὴν ἀναπετάσαι τῷ λόγῳ, τότε μόνην. τὴν χεῖρα
 καί τινας ἑαυτοῦ δείξας πράξεις παρελήλυθεν, ὡς μηδέπω
 τὸ πλέον εἰς θέαν χωρούσης τῆς νύμφης· ἅμα
 δὲ καὶ οἰκονομεῖ πλέον αὐτῆς ἐπιτεῖναι τὸν ἔρωτα·
 ἐξέρχεται καὶ ἐκδημεῖ τοῦ σῶματος ἡ ψυχὴ διὰ τὸν
 τοῦ νυμφίου λόγον ἔχουσα ἐν οὐρανῷ τὸ πολίτευμα.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5">
-<p>Ἐζήτησα αὐτὸν, καὶ οὐχ εὗρον· ἐκάλεσα αὐτὸν
+            </div>
+            <div n="5" type="paragraph">
+               <p>Ἐζήτησα αὐτὸν, καὶ οὐχ εὗρον· ἐκάλεσα αὐτὸν
 καὶ οὐχ ὑπήκουσέ μου.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="6">
-<p>Συνεχῶς ἡ ψυχὴ τὸν νυμφίον λόγον ἐπιζητεῖ· καὶ
+            </div>
+            <div n="6" type="paragraph">
+               <p>Συνεχῶς ἡ ψυχὴ τὸν νυμφίον λόγον ἐπιζητεῖ· καὶ
 εὑροῦσα πάλιν ἑτέροις ἀποροῦσα ζητεῖ· κἀκεῖνα
 θεωρήσασα ποθεῖ τὴν ἑτέρων ἀποκάλυψιν· καὶ τυχοῦσα
 τούτων, ἐπʼ ἄλλοις εὔχεται τὸν νυμφίον ἐπιδημεῖν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="7">
-<p>Ἀδελφιδός μου λευκὸς κοὶ πυῤῥὸς, ἐκλελοχισμένος
+            </div>
+            <div n="7" type="paragraph">
+               <p>Ἀδελφιδός μου λευκὸς κοὶ πυῤῥὸς, ἐκλελοχισμένος
 ἀπὸ μυριάδων.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="8">
-<p>Ἤ λευκὸς ἐπειδὴ ὁ Θεὸς ἀληθινὸς, πυῤῥὸς δὲ διὰ
+            </div>
+            <div n="8" type="paragraph">
+               <p>Ἤ λευκὸς ἐπειδὴ ὁ Θεὸς ἀληθινὸς, πυῤῥὸς δὲ διὰ
 τὴν σάρκωσιν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="9">
-<p>Κεφαλὴ αὐτοῦ χρυσίον κεφάζ· βόστρυχοι αὐτοῦ
+            </div>
+            <div n="9" type="paragraph">
+               <p>Κεφαλὴ αὐτοῦ χρυσίον κεφάζ· βόστρυχοι αὐτοῦ
 ἐλάται, μέλανες ὡς κόραξ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="10">
-<p>Οἱ βόστρυχοι διὰ τὴν πυκνότητα παραβάλλονται
+            </div>
+            <div n="10" type="paragraph">
+               <p>Οἱ βόστρυχοι διὰ τὴν πυκνότητα παραβάλλονται
 ταῖς τῶν φοινίκων ἐλάταις, ἅς φασιν ἀντὶ σπέρματος
 εἶναι ταῖς θηλείαις φοίνιξιν, ὥστε καρπὸν φέρειν
 <note type="footnote">35 Matth. XIII, 12. 36 III Reg. XXI, 2. 37 Matth. VIII, 27; Marc. IV, 40; Luc. VIII, 25. 38 Habac. III, 3.</note>
-
-<pb n="276"/>
+                  <pb n="276"/>
 ἐδώδιμον· διὰ δὲ τὴν βαθύτητα τῶν ὥσπερ ἐκφυέντων
 ἀντὶ τριχῶν λογισμῶν, μέλανες ἐπαινετῶς ὀνομάζονται,
 τῷ τοῦ νυμφίου συμβαλλόμενοι κάλλει· τὸ δὲ ὡς
@@ -915,24 +917,24 @@
 εὐχαῖς σχολάζοντες, πρὸς Κύριον κεκράγασιν·
 πλανώμενοι καὶ ζητοῦντες τὰ ἐν αὐτοῖς ἐπαπορουμένοις
 ὑπʼ αὐτῶν σιτά.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="11">
-<p>Σιαγόνες αὐτοῦ ὡς φιάλαι τοῦ ἀρώματος, φύουσαι
+            </div>
+            <div n="11" type="paragraph">
+               <p>Σιαγόνες αὐτοῦ ὡς φιάλαι τοῦ ἀρώματος, φύουσαι
 μυρεψικά.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="12">
-<p>Σιαγόνας Χριστοῦ τοὺς διακονουμένους λόγῳ Θεοῦ
+            </div>
+            <div n="12" type="paragraph">
+               <p>Σιαγόνας Χριστοῦ τοὺς διακονουμένους λόγῳ Θεοῦ
 καὶ τροφῇ πνευματικῇ νοητέον· διὰ μὲν τὴν πληρότητα
 τῆς εὐωδίας τῶν καλῶν ἔργων καὶ λόγων, ἐοικότας
 φιάλαις τοῦ ἀρώματος· διὰ δὲ τὸ ἐῤῥιζωμένον ἐν
 αὐταῖς ποικίλον ἐν πάσῃ συνθέσει γραφῆς λόγον ἀεὶ
 καρποφοροῦντας μυρεψικόν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="13">
-<p>Κοιλίααὐτοῦ πυξίον ἐλεφάντινον, ἐπὶ λίθου σαπφείρου.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="14">
-<p>Κοιλία ἐστὶ τοῦ λόγου, οἱ χωρητικοὶ τῶν μυστηρίων,
+            </div>
+            <div n="13" type="paragraph">
+               <p>Κοιλίααὐτοῦ πυξίον ἐλεφάντινον, ἐπὶ λίθου σαπφείρου.</p>
+            </div>
+            <div n="14" type="paragraph">
+               <p>Κοιλία ἐστὶ τοῦ λόγου, οἱ χωρητικοὶ τῶν μυστηρίων,
 τουτέστιν οἱ κοῖλοι πρὸς ὑποδοχήν· πυξίον δὲ,
 οἱ πρὸς διατήρησιν ἐπιτήδειοι· κατὰ δὲ τὸ λαμπρὸν
 καὶ σαφὲς ἐλεφάντινον εἶναι λέγεται· ἡ δὲ τοιαύτη
@@ -942,17 +944,16 @@
 καὶ τίκτουσι πνεῦμα σωτηρίας· διὰ τοῦτο καὶ
 ἡ κοιλία τῆς θυσίας ἐν τῷ Λευιτικῷ πλύνεται, ὡς μηδὲν
 ἔχειν κοπρῶδες.</p>
-</div>
-
-</div>
-<div type="textpart" subtype="chapter" n="6" corresp="urn:cts:greekLit:tlg0527.tlg031:6">
-<head>ΚΕΦΑΛΑΙΟΝ 𝒢΄.</head>
-<div type="textpart" subtype="paragraph" n="1">
-<p>Καλὴ εἶ, ἡ πλησίον μου, ὡς εὐδοκία, ὡραία ὡς
+            </div>
+         </div>
+         <div n="6" corresp="urn:cts:greekLit:tlg0527.tlg031:6" type="chapter">
+            <head>ΚΕΦΑΛΑΙΟΝ 𝒢΄.</head>
+            <div n="1" type="paragraph">
+               <p>Καλὴ εἶ, ἡ πλησίον μου, ὡς εὐδοκία, ὡραία ὡς
 Ἱερουσαλὴμ, θάμβος ὡς τεταγμέναι.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2">
-<p>Ὅσον πλησίον γίνεται τοῦ νυμφίου, κρείττοσιν
+            </div>
+            <div n="2" type="paragraph">
+               <p>Ὅσον πλησίον γίνεται τοῦ νυμφίου, κρείττοσιν
 ἀπεικάζεται· τῷ γὰρ καλὴ καὶ ὡραία καὶ πλησίον,
 προσέθηκε τὸ ὡς Ἰερουσαλήμ· καὶ καταπληκτικὴν
 δὲ τὴν τετελειωμένην φησὶν Ἐκκλησίαν· πῆ μὲν, ἐν
@@ -962,13 +963,13 @@
 τῷ παντὶ καταστάσεσιν· ὁ δὲ Σύμμαχος· οὐ τεταγμέναιπαρατάξεις·
 θάμβος γάρ εἰσιν ὡς τάγμα παρεμβολῶν
 τοὺς πολεμίους ἐκπλήττοντα.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3">
-<p>Ἀπόστρεψον τοὺς ὀφθαλμούς σου ἀπεναντίον
+            </div>
+            <div n="3" type="paragraph">
+               <p>Ἀπόστρεψον τοὺς ὀφθαλμούς σου ἀπεναντίον
 μου, ὅτι αὐτοὶ ἀνεπτέρωσάν με.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4">
-<p>Ἡ Ἐκκλησία τῇ ὡραιότητι καὶ τῳ κάλλει ἐνορᾷ τοῦ
+            </div>
+            <div n="4" type="paragraph">
+               <p>Ἡ Ἐκκλησία τῇ ὡραιότητι καὶ τῳ κάλλει ἐνορᾷ τοῦ
 Χριστοῦ· δυναμένη τῇ πλείονι προκοπῇ κατανοεῖν
 αὐτοῦ τὴν θεότητα· καθὸ πάντα διʼ αὐτοῦ ἐγένετο·
 εὐφραινόμενος δὲ ἐπὶ τῇ δυνάμει τῶν ὀφθαλμῶν, τῆς
@@ -983,16 +984,16 @@
 γινώσκομεν· τῇ σῇ τοίνυν συνανέβη προκοπῇ, φησὶν,
 χωρησάσης σου ἐνορᾶν, καὶ μηκέτι περαιτέρω τῆς
 οἱκονομίας ζητεῖν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5">
-<p>Τρίχωμά σου ὡς ἀγέλαι τῶν αἰγῶν, αἳ ἀνέβησαν
+            </div>
+            <div n="5" type="paragraph">
+               <p>Τρίχωμά σου ὡς ἀγέλαι τῶν αἰγῶν, αἳ ἀνέβησαν
 ἀπὸ τοῦ Γαλαάδ· ὀδόντες σου, ὡς ἀγέλαι
 τῶν κεκαρμένων αἳ ἀνέβησαν ἀπὸ του λουτροῦ·
 αἱ πᾶσαι διδυμεύουσαι, καὶ ἀτεκνοῦσα οὐκ
 ἔστιν ἐν αὐταῖς.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="6">
-<p>Εἴρηται δεύτερον ταῦτα τῇ νύμφῃ, πρότερον οἶμαι
+            </div>
+            <div n="6" type="paragraph">
+               <p>Εἴρηται δεύτερον ταῦτα τῇ νύμφῃ, πρότερον οἶμαι
 τοιαύτῃ φανείσῃ κατὰ τὸ ἐνδεχόμενον, ἡνίκα ἔτι ἐν
 τῷ βίῳ τούτῳ ἐτύγχανεν· δεύτερον ὁπότε ἦλθεν ἐπὶ
 τὴν τελειότητα· διὸ καὶ νῦν μόνον παρῃνίξατο· Ὀδόντες
@@ -1004,14 +1005,14 @@
 μεύουσαι δὲ τάχα, ὡς τρεφόμεναι τῇ τῶν νοητῶν καὶ
 αἰσθητῶνθεωρίᾳ· καὶ ὡς μηδεμίαν ἄγονον εἶναι τῆς
 περὶ οὑτινοσοῦν λόγου τροφῆς.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="7">
-<p>Ἐξήκοντά εἰσι βασλισσαι καὶ ὀγδοήκοντα παλλακαὶ,
+            </div>
+            <div n="7" type="paragraph">
+               <p>Ἐξήκοντά εἰσι βασλισσαι καὶ ὀγδοήκοντα παλλακαὶ,
 καὶ νεάνιδες ὧν οὐκ ἔστιν ἀριθμός· μία
 δέ ἐστι περιστερά μου.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="8">
-<p>Αἱ νεάνιδες ἀριθμόν οὐκ ἔχουσαι· οὐ τῷ μὴ
+            </div>
+            <div n="8" type="paragraph">
+               <p>Αἱ νεάνιδες ἀριθμόν οὐκ ἔχουσαι· οὐ τῷ μὴ
 ὑποπίπτειν ἀριθμῷ, ἀλλὰ τῷ ἀξίας αὐτὰς εἶναι ἀριθμηθῆναι·
 καὶ τάχα τῆς αὐτῆς διανοίας ἔχεται, τῇ
 ἐνταῦθα διαφορᾷ τῶν νεανίδων τῶν κοινωνουμένων
@@ -1023,9 +1024,9 @@
 ζωοποιηθήσονται· ἐκασπτος ἐν τῷ ἰδίῳ τάγματε·
 ὁ γὰρ ἑκάστου βίος καὶ λόγος καὶ διάθεσις ποιήσει
 προκριθῆναι ἑκάστου κατʼ ἀξίαν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="9">
-<p>Μὴ θαύμαζε, εἰ ὁ νυμφίος ἦν ἔχων καλὴν νύμφην,
+            </div>
+            <div n="9" type="paragraph">
+               <p>Μὴ θαύμαζε, εἰ ὁ νυμφίος ἦν ἔχων καλὴν νύμφην,
 καὶ τάχα δευτέραν καὶ τρίτην καὶ πλείονας· ἐὰν νοήσῃς
 αὐτοῦ καὶ τὰς νύμφας, οὐ φοβηθήσῃ λέγειν ἀπὸ
 τοῦ ᾌσματος· Ἑξήκοντά εἰσι βασίλισσαι καὶ
@@ -1045,19 +1046,18 @@
 ἐξῆλθεν ἀπὸ τοῦ παστοῦ τοῦ ἐπουρανίου, κοινωνεῖ
 ἀγγέλοις καὶ ἀρχαγγέλοις, αἵ τινες εἰσιν αἱ
 νύμφαι τοῦ λόγου, καὶ θρόνοι καὶ κυριότητες.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="10">
-<p>Εἰς κῆπον καρύας κατέβην ἰδεῖν ἐν γεανήματι τοῦ
+            </div>
+            <div n="10" type="paragraph">
+               <p>Εἰς κῆπον καρύας κατέβην ἰδεῖν ἐν γεανήματι τοῦ
 χειμάῤῥου· ἰδεῖν εἰ ἤνθησεν ἡ ἄμπελος, εἰ ἤνθησαν
 αἱ ῥόαι· ἐκεῖ δώσω τοὺς μαστούς μου
 <note type="footnote">I Cor. ΧV, 2I, 22.</note>
-
-<pb n="280"/>
+                  <pb n="280"/>
 σοί· γῆ ἐστιν ὡς ἡ ψυχή μου· ἔθετό με ἄρματα
 Ἀμιναδάβ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="11">
-<p>Κατά τι παράδειγμα οἱ δίκαιοι καρύαι εἰσὶ, φέροντες
+            </div>
+            <div n="11" type="paragraph">
+               <p>Κατά τι παράδειγμα οἱ δίκαιοι καρύαι εἰσὶ, φέροντες
 καρπὸν διὰ τὴν πρὸς Θεὸν θεραπείαν ἱερατικὴν,
 διὰ τὸ ἕρκος ἔχειν περὶ αὐτά· ὁ μέν τι πικρὸν
 καὶ χολῶδες, ἕτερον δέ τι σκληρὸν τῶν πειρασμῶν·
@@ -1086,22 +1086,21 @@
 εἰς τὸν Χριστόν· διὰ τὸ, καθὼς Μωῦσῆς ὕψωσε
 τὸν ὄφιν ἐν τῇ ἐρήμῳ, οὕτως, φησὶν, ἅρματά με
 ἔθετο ἑαυτῷ ἡνιοχῶν μου τοὺς λογισμούς.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="12">
-<p>Ἐπίστρεφε. ἐπίστρεφε ἡ Σουλαβίτις· ἐπίστρεφε,
+            </div>
+            <div n="12" type="paragraph">
+               <p>Ἐπίστρεφε. ἐπίστρεφε ἡ Σουλαβίτις· ἐπίστρεφε,
 ἐπίστρεφε· κοὶ ὀψόμεθα ἐν σοί.</p>
-</div>
-
-</div>
-<div type="textpart" subtype="chapter" n="7" corresp="urn:cts:greekLit:tlg0527.tlg031:7">
-<head>ΚΕΦΑΛΑΙΟΝ Ζ΄.</head>
-<div type="textpart" subtype="paragraph" n="1">
-<p>Τἰ ὄψεσθε ἐν τῇ Σουλαβίτιδι; ἡ ἐρχομένη ὡς χοροὶ
+            </div>
+         </div>
+         <div n="7" corresp="urn:cts:greekLit:tlg0527.tlg031:7" type="chapter">
+            <head>ΚΕΦΑΛΑΙΟΝ Ζ΄.</head>
+            <div n="1" type="paragraph">
+               <p>Τἰ ὄψεσθε ἐν τῇ Σουλαβίτιδι; ἡ ἐρχομένη ὡς χοροὶ
 τῶν παρεμ βολῶ· ἀνέβη γὰρ ἐκ τοῦ λουτροῦ,
 ὡς τὰ ἀγγελικὰ τάγματα.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2">
-<p>Ἀκύλας καὶ ἡ πέμπτη ἔκδοσις, τὸ Σουλαβίτιο ἐξἐδωκαν,
+            </div>
+            <div n="2" type="paragraph">
+               <p>Ἀκύλας καὶ ἡ πέμπτη ἔκδοσις, τὸ Σουλαβίτιο ἐξἐδωκαν,
 εἰρηνεύουσα γνάρ· ἔστι δὲ ἡ νύμφη τοῦ λόγου
 ψυχὴ, ἡ τοῦ Χριστοῦ Ἐκκλησία, διὰ τὸν ποιήσαντα τὸ
 ἓν, καὶ τὸ μεσότοιχον τοῦ φραγμοῦ λύσαντα· ἐὰν δὲ ἡ
@@ -1122,8 +1121,7 @@
 αὐτῷ· τῷ δὲ καθελεῖν τοὺς πολεμίους παρεμβολῶν
 εἰρηνικῶν ἔχοντες· ἀλλʼ οὐκέτι σχῆμα πολε μικὸν, τὴν
 <note type="footnote">45 Num. XXI, 9.</note>
-
-<pb n="281"/>
+                  <pb n="281"/>
 ὑπὲρ τῶν ἐν χειμάῤῥῳ καμοῦσαν καὶ σκυλεῖσαν διʼ
 αὐτούς προσκαλοῦνται οἱ φίλοι τοῦ νυμφίου· ἐσκυλευμένη
 γὰρ ἐρμηνευεται Σουλαμίτις· ἐπίστρεφε
@@ -1137,40 +1135,40 @@
 διάφορα συστήματα χορευόντων, καὶ ἐπινικίους ᾀδόντων
 καὶ λεγόντων· Κύρε, ὡς ὅπλῳ εὐδοκίας ἐστεφάνωσας
 ἡμᾶς.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3">
-<p>Ῥυᾶμοὶ μηρῶν σου ὅμοιοι ὀραίσκοις, ἔργον χερῶν
+            </div>
+            <div n="3" type="paragraph">
+               <p>Ῥυᾶμοὶ μηρῶν σου ὅμοιοι ὀραίσκοις, ἔργον χερῶν
 τεχνίτου.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4">
-<p>Πολλαχοῦ τάττει τοὺς μηροὺς ἐπὶ τῆς γενέσεως
+            </div>
+            <div n="4" type="paragraph">
+               <p>Πολλαχοῦ τάττει τοὺς μηροὺς ἐπὶ τῆς γενέσεως
 ἡ Γραφή· δηλοῖ τοίνυν ἐνταῦθα τῆς νύμφης τὸ
 τεταγμένον ἐν τῷ τῆς γενέσεως χωρίῳ καὶ εὔρυθμον,
 ὁμοίῳ περιτραχηλίοις κατεσκευασμένοις τῇ
 ἀρετῇ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5">
-<p>Ὀμφαλός σου κρατὴρ τορνευτὸς, μὴ ὑστερούμενος
+            </div>
+            <div n="5" type="paragraph">
+               <p>Ὀμφαλός σου κρατὴρ τορνευτὸς, μὴ ὑστερούμενος
 κραμα· κοιλία σου, θημωνία σείου πεφραγμένη
 ἐν κρίτοις·.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="6">
-<p>Ἐπὶ τὸν ὀμφαλὸν δὲ τὸν κρατῆρα ἡ σοφία συγκαλεῖ
+            </div>
+            <div n="6" type="paragraph">
+               <p>Ἐπὶ τὸν ὀμφαλὸν δὲ τὸν κρατῆρα ἡ σοφία συγκαλεῖ
 λέγουσα· Δεῦτε, πίετε οἶνον ὃν κεκέρακα ὑμῖν·
 καὶ δηλοῖ τὸ πνευματικὸν πνεῦμα· καὶ προσέθηκε καὶ
 θημωνίαν σίτου, ἵνα τὴν πνευματικὴν τροφὴν σημάνῃ·
 τὸ γὰρ θημωνία ἀντὶ τοῦ συναγωγὴ ἀρετῶν
 πλήθους εἰς ἐν τῇ ὁμονοίᾳ συντεταγμένη.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="7">
-<p>Κρίνα δʼ ἂν εἴη καὶ τὰ ἄνθη τῆς χάριτος τοῦ Θεοῦ,
+            </div>
+            <div n="7" type="paragraph">
+               <p>Κρίνα δʼ ἂν εἴη καὶ τὰ ἄνθη τῆς χάριτος τοῦ Θεοῦ,
 ἃ συνελέξατο ἀπὸ μέσου τῶν τοῦ βίου ἀκανθῶν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="8">
-<p>Ὁ τράχηλός σου ὡς πύργος ἐλεφάντινος.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="9">
-<p>Ευργοι δὲ ἐκλήθησαν, οἱ τὰ ἀρεστὰ τῷ νυμφίῳ
+            </div>
+            <div n="8" type="paragraph">
+               <p>Ὁ τράχηλός σου ὡς πύργος ἐλεφάντινος.</p>
+            </div>
+            <div n="9" type="paragraph">
+               <p>Ευργοι δὲ ἐκλήθησαν, οἱ τὰ ἀρεστὰ τῷ νυμφίῳ
 ποιοῦντες, σκοπευτήριον ἔχοντες τὴν θεωρητικὴν ψυχὴν,
 ἐκ μετεώρου σκοπεύουσαν ἅπαντα· ἐλεφάντινον
 δὲ, διὰ τὸ λαμπρὸν καὶ λεῖον· οὐδὲν γὰρ ἀπὸ κακίας
@@ -1184,15 +1182,15 @@
 ὡς μὴ μόνον τοὺς παρὰ σοὶ ἀπολαύειν αὐτῶν τῆς
 παιδεύσεως, ἀλλʼ ἤδη καὶ τῆς ἔξωθεν καὶ πόῤῥωθεν
 τῆς αὐτῶν ἀπολαύειν ὠφελείας.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="10">
-<p>Μυκτήρ σου, ὡς πύργος τοῦ Λιβάνου σκοπεύων
+            </div>
+            <div n="10" type="paragraph">
+               <p>Μυκτήρ σου, ὡς πύργος τοῦ Λιβάνου σκοπεύων
 πρόσωπτον Δαμασεοῦ· κεφαλή σου ἐπὶ σὲ ὡς
 Κάρμηλος, καὶ πλόκιον κεφαλῆς σου ὡς πορφύραν
 βασιλεὺς δεδεμένος ἐν παραδρομαῖς.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="11">
-<p>Ὁ δὲ καθαρὰν ἔχων τὴν διαπνοὴν, καὶ διὰ τῆς αἰσθήσεως
+            </div>
+            <div n="11" type="paragraph">
+               <p>Ὁ δὲ καθαρὰν ἔχων τὴν διαπνοὴν, καὶ διὰ τῆς αἰσθήσεως
 τοῦ θείου λόγου δυνάμενος ὀπίσω αὐτοῦ εἰς
 ὀσμὴν μύρων αὐτοῦ δραμεῖν, μυκτήρ ἐστιν αἰσθανόμενος
 εὐωδίας πνευματικῆς· σκοπεύων εἴ τι ἐπιφανὲς
@@ -1202,20 +1200,19 @@
 τοῦ Θεοῦ· ὁ δὲ Κάρμηλος ἐπίγνωσις περιτομῆς ἑρ
 μηνεύεται· γινώσκει δὲ περιτομὴν ὁ μετὰ παῤῥησἱας
 <note type="footnote">Psal. v, 13. ⁴7 Prov. IX, 5.</note>
-
-<pb n="284"/>
+                  <pb n="284"/>
 λέγειν δυνάμενος· ἡμεῖς ἐσμὲν ἡ περιτομή· ἀπὸ ὁὲ τῆς
 κεφαλῆς, τουτέστι Χριστοῦ, ἐπίγνωσις πνευματικῆς
 ἐγεννήθη περιτομῆς.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="12">
-<p>Τί ὡραιώθης καὶ τί ἡδύνθης, ἀγάπη, ἐν τρυφαῖς
+            </div>
+            <div n="12" type="paragraph">
+               <p>Τί ὡραιώθης καὶ τί ἡδύνθης, ἀγάπη, ἐν τρυφαῖς
 σου; τοῦτο μέγεθός σου· ὡμοιώθης τῷ φοίνικι,
 καὶ οἱ μαστοί σου τοῖς βότρυσι· διότι ὑψηλόν
 σου τὸ φρόνημα· καὶ οὐδὲν τῶν γηΐνων ἐπιφερόμενον.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="13">
-<p>Ὅτι ταῦτά φησιν ὁ νυμφίος ἀποθαυμάζων αὐτῆς
+            </div>
+            <div n="13" type="paragraph">
+               <p>Ὅτι ταῦτά φησιν ὁ νυμφίος ἀποθαυμάζων αὐτῆς
 τὴν ἐπὶ τὸ κρεῖττον μεταβολήν· ὡς γὰρ ἡ τῶν στοιχείων
 εὐκρασία σωμάτων ὑγείαν ἐμποιεῖ, οὕτως ἐκ
 τῶν ὁρμῶν καὶ ἐκκλίσεων, ὑγεία πως καὶ κάλλος ἐπιγίνεται
@@ -1230,21 +1227,21 @@
 πάντα διʼ αὐτὴν στέγειν πάντα ὑπομένειν· ὥσπερ δὲ
 σωμάτων ἐστὶ βραχύτης (8), καὶ μέγεθος ἑτέρων, οὔτω
 καὶ ψυχῆς ἀναλόγως οἷς διαπράττεται.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="14">
-<p>Ἥγουν τὰ νοήματά σου, φησὶν, τρόφιμά τε καὶ πότιμα,
+            </div>
+            <div n="14" type="paragraph">
+               <p>Ἥγουν τὰ νοήματά σου, φησὶν, τρόφιμά τε καὶ πότιμα,
 καὶ οὐδαμῶς ὀμφακίζοντα.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="15">
-<p>Εἷτα ἀναβήσομαι ἐν τῷ φοίνικι· κρατήσω τῶν
+            </div>
+            <div n="15" type="paragraph">
+               <p>Εἷτα ἀναβήσομαι ἐν τῷ φοίνικι· κρατήσω τῶν
 ὕψεων αὐτοῦ, καὶ ἔσονται δὴ μαστοί σου ὡς
 βότρυες ἀμπέλου· καὶ ὀσμὴ ῥινός σου ὠςμῆλα,
 καὶ λάρυγξ ὡς οἶνος ἀγαθός, πορευόμενος τῷ
 ἀδελφιδῷ μου εἰς εὐθύτητα, ἱκανούμενος ἐν
 χείλεσί μου ὀδοῦσιν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="16">
-<p>Ἀπεικασθεῖσα φοίνικι, φοίνικα τὸν νυμφίου καλεῖ,
+            </div>
+            <div n="16" type="paragraph">
+               <p>Ἀπεικασθεῖσα φοίνικι, φοίνικα τὸν νυμφίου καλεῖ,
 τὸ ὕψος καὶ μέγεθος τοῦ λόγου κατανοήσασα· ἐφʼ ἂ
 καὶ ἤλπισεν ἀνελθεῖν ἐπὶ τέλει τῶν ἀσμάτων· ὅτε
 τελεία ἐστὶν ἡ νύμφη· ὅτε καὶ ἀντιλήψεται τῶν τοῦ
@@ -1260,63 +1257,62 @@
 τὰ νοήματα, ἀλλὰ καὶ τὰ χείλη αἰσθήσει δέδεται·
 οἷνος δὲ ὁ ἀγαθὸς, ὁ ἐξ ἀγαθοῦ θησαυροῦ τῆς καρδίας
 προσφερόμενος.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="17">
-<p>Ἐγὼ τῷ ἀδελφιδῷ μου· ἐπʼ ἐμὲ ἡ ἐπιστρορὴ
+            </div>
+            <div n="17" type="paragraph">
+               <p>Ἐγὼ τῷ ἀδελφιδῷ μου· ἐπʼ ἐμὲ ἡ ἐπιστρορὴ
 αὐτοῦ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="18">
-<p>Τελειωθείσης ὁ λόγος, ὅτι μηδαμοῦ παντοδαπῆ ἀνάπαυσιν
+            </div>
+            <div n="18" type="paragraph">
+               <p>Τελειωθείσης ὁ λόγος, ὅτι μηδαμοῦ παντοδαπῆ ἀνάπαυσιν
 εὑρήσει, ὅπου ἑαυτὸν ἐπιστρέψει, ὡς παῤ ἐμοί
 Ἐλθὲ, ἀδελφιδέ μου· ἐξέλθωμεν εἰς ἀγρόν αὐλισθῶμεν
 ἐν κώμαις· ὀρθρίσωμεν εἰς ἀμπελῶνας·
 ἔδωμεν εἰ ἤνθησεν ἡ ἄμπελος, ἤνθησεν ὁ κυπρισ
 μὸς, ἤνθησαν αἱ ῥόαι.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="19">
-<p>Περὶ τῶν ὑποδεεστέρων ἡ νύμφη παρακαλεῖ· ὡς
+            </div>
+            <div n="19" type="paragraph">
+               <p>Περὶ τῶν ὑποδεεστέρων ἡ νύμφη παρακαλεῖ· ὡς
 ἐκ τῶν ἐνδοτάτων καὶ μακαρίων διατριβῶν εἰς τὴν
 τούτων ἐπισκοπὴν ἐξελθεῖν· οὗτοι γὰρ ἀγρὸς καὶ
 κῶμαι καὶ ἀμπελῶνες καὶ ῥόαι</p>
-<note type="footnote">48 Joan. XV, 1. 49 Eecli. v, 14; XXIII, 13; Psal. CXL, 3.</note>
-<note type="footnote">(8) Βραχύτης. Ita corrigendum duximus quod in antea editis legebatur βραχύ τις. EDIT.</note>
-</div>
-
-</div>
-<div type="textpart" subtype="chapter" n="8" corresp="urn:cts:greekLit:tlg0527.tlg031:8">
-<pb n="285"/>
-<head>ΚΕΦΑΛΑΙΟΝ Η΄.</head>
-<div type="textpart" subtype="paragraph" n="1">
-<p>Εὑροῦσα ἔξω φιλήσω σε· καί γε οὐκ ἐξουδενώσουσί
+               <note type="footnote">48 Joan. XV, 1. 49 Eecli. v, 14; XXIII, 13; Psal. CXL, 3.</note>
+               <note type="footnote">(8) Βραχύτης. Ita corrigendum duximus quod in antea editis legebatur βραχύ τις. EDIT.</note>
+            </div>
+         </div>
+         <div n="8" corresp="urn:cts:greekLit:tlg0527.tlg031:8" type="chapter">
+            <pb n="285"/>
+            <head>ΚΕΦΑΛΑΙΟΝ Η΄.</head>
+            <div n="1" type="paragraph">
+               <p>Εὑροῦσα ἔξω φιλήσω σε· καί γε οὐκ ἐξουδενώσουσί
 με· ἰπαραλήψομαί σε· εἰσάξω σε εἰς οἶκον
 μητρός μου· καὶ εἰς ταμιεῖον τῆς συλλαβούσης
 με· ποτιῶ σε ἀπὸ οἴνου τοῦ μυρεψικοῦ,
 ἀπὸ νάματος ῥοῶν μου.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2">
-<p>Εὑρίσκουσα γὰρ αὐτὸν τῆς ἄνω περιωπῆς ἐκβάντα,
+            </div>
+            <div n="2" type="paragraph">
+               <p>Εὑρίσκουσα γὰρ αὐτὸν τῆς ἄνω περιωπῆς ἐκβάντα,
 περιεπτύξατο αὐτόν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3">
-<p>Ὥρκισα ὑμᾶς, θυγατέρες Ἱερουσαλὴμ, ἐν ταῖς
+            </div>
+            <div n="3" type="paragraph">
+               <p>Ὥρκισα ὑμᾶς, θυγατέρες Ἱερουσαλὴμ, ἐν ταῖς
 δυνάμεσι καὶ ἐν ταῖς ἰσχύσεσι (9) τοῦ ἀγροῦ, τί
 ἐγείρητε καὶ ἐξεγείρητε τὴν ἀγάπην ἕως ἂν
 θελήσῃ;</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4">
-<p>Ἤδη δεύτερον ὥρκισεν· ἀλλʼ ἀμφιβάλλουσα προετίθει
+            </div>
+            <div n="4" type="paragraph">
+               <p>Ἤδη δεύτερον ὥρκισεν· ἀλλʼ ἀμφιβάλλουσα προετίθει
 τὸ ἐάν· νῦν δὲ διδάξασα τὸ εἶδος τῆς ἐγέρσεως τῆς
 ἐξεγέρσεως καὶ τῆς ἀγάπης οἱονεὶ παρίστησιν, ὅτι
 ὁρκοῦσα ὑμᾶς κατὰ τῶνδε ὥρκισα, τὸ ἐγείρητε καὶ
 ἐξεγείρητε.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5">
-<p>Θές με ὡς σφραγίδα ἐπὶ τὴν καρδίαν σου, ὡς σφραγίδα
+            </div>
+            <div n="5" type="paragraph">
+               <p>Θές με ὡς σφραγίδα ἐπὶ τὴν καρδίαν σου, ὡς σφραγίδα
 ἐπὶ τὸν βραχίονά σου· ὅτι κραταιὰ ὡς θάνατος
 ἡ ἀγάπη, σκληρὸς ὡς ᾄδης ζῆλος.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="6">
-<p>Προτρέπεται αὐτὴν ὁ νυμφίος πᾶν νόημα καὶ πρᾶξιν
+            </div>
+            <div n="6" type="paragraph">
+               <p>Προτρέπεται αὐτὴν ὁ νυμφίος πᾶν νόημα καὶ πρᾶξιν
 μορφῶσαι τῷ ἑαυτοῦ χαρακτῆρι· ποιεῖν δὲ ταῦτά
 φησιν τὴν ὡς θάνατον κραταιὰν ἀγάπην· πάντα γὰρ
 στέγει, πάντα ὑπομένει· διὸ καὶ κραταιὰ κατὰ θάνατον
@@ -1331,9 +1327,9 @@
 ὑπὲρ τῆς ἀληθείας· καὶ ἐν τῷ ᾄδῃ δὲ τὸν Χριστὸν
 ἐζήλωσαν οἱ Ἰουδαῖοι, ὑποφθείραντες τοὺς στρατιώτας.
 Ἀδελφὴ ἡμῶν μικρὰ, καὶ μαστοὺς οὐκ ἔχει.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="7">
-<p>Ὅτι μικρὰ ἡ τοῦ ἀνθρώπου ψυχὴ, καὶ ἐπὶ γῆς ἔτι
+            </div>
+            <div n="7" type="paragraph">
+               <p>Ὅτι μικρὰ ἡ τοῦ ἀνθρώπου ψυχὴ, καὶ ἐπὶ γῆς ἔτι
 ἐπισκευαζομένη τοῦ Θεοῦ Ἐκκλησία, καὶ νοήματα
 (τοῦτο γὰρ οἱ μαστοὶ) μήπω ἔχουσα, ἐπιδίδωσιν εἰς
 μέγεθος βίου καὶ νοημάτων· ἐπʼ ἂν τρανώσῃ τὰ νοήματα
@@ -1344,9 +1340,9 @@
 φωνῆς σου· ἀκούτισόν με· φύγε, ἀδελφιδέ μου,
 καὶ ὁμοιώθητι τῇ δορκάδι, ἢ τῷ νεβρῷ τῶν ἐλάφων
 ἐπὶ ὅρη ἀρωμάτων.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="8">
-<p>Εἶδεν ἡ νύμφη τὸν νυμφίον ἀναπαυόμενον ἐν τοῖς
+            </div>
+            <div n="8" type="paragraph">
+               <p>Εἶδεν ἡ νύμφη τὸν νυμφίον ἀναπαυόμενον ἐν τοῖς
 κήποις, καὶ τοὺς ἑταίρους αὐτοὺς προσέχοντας αὐτοῦ
 τῇ φωνῇ ἦς ἤκουσεν αὐτή· καὶ βούλεται αὐτὸν ὀξέως
 καὶ διορατικῶς ὁρῶντα ἀπὸ τῶν τῇδε πραγμάτων ἐκκλῖναι,
@@ -1360,13 +1356,11 @@
 ἐν κήποις, ἐξέδωκεν· ὁ δὲ Σύμμαχος, ἡ κατοικοθσα
 ὡς λέγεσθαι τὰ πρῶτα πρὸς τὴν νύμφην
 <note type="footnote">50 Psal. LXXXVI, 1.</note>
-<note type="footnote">(9) Ἰσχύσεσι. Forte ἰσχύσι. Edit.</note>
-
-<pb n="288"/>
+                  <note type="footnote">(9) Ἰσχύσεσι. Forte ἰσχύσι. Edit.</note>
+                  <pb n="288"/>
 ῥοῦς αὐτοῦ προσεκτικῶς αὐτῆς ἀκροᾶσθαι χαίροντας.</p>
-</div>
-</div>
- </div>
-</body>
-</text>
+            </div>
+         </div>
+      </body>
+   </text>
 </TEI>

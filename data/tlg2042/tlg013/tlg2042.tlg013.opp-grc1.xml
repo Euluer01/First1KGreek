@@ -1,114 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-	<teiHeader xml:lang="eng">
-		<fileDesc>
-			<titleStmt><title xml:lang="lat">De Engastrimytho</title>
-				<editor>Erich Klostermann</editor>
-				<author xml:lang="lat">Origenes</author>
-				<sponsor>University of Leipzig</sponsor>
-				<funder>European Social Fund Saxony</funder>
-				<principal>Gregory Crane</principal>
-				<principal>Monica Berti</principal>
-				<meeting/>
-				<respStmt>
-          <persName>Gregory R. Crane</persName>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-        </respStmt>
-        <respStmt>
-          <persName xml:id="DDD">Digital Divide Data</persName>
-          <resp>Corrected and encoded the text</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Matt Munson</persName>
-          <resp>Project Manager (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Annette Geßner</persName>
-          <resp>Project Assistant (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Thibault Clérice</persName>
-          <resp>Lead Developer (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Bruce Robertson</persName>
-          <resp>Technical Advisor</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Greta Franzini</persName>
-          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Frederik Baumgardt</persName>
-          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Simona Stoyanova</persName>
-          <resp>Project Manager (University of Leipzig), 2015</resp>
-          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-				<authority>University of Leipzig</authority>
-				<idno type="filename">tlg2042.tlg013.opp-grc1.xml</idno>
-				<availability>
-					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-				</availability>
-				<date>2014</date>
-				<publisher>University of Leipzig</publisher>
-				<pubPlace>Germany</pubPlace>
-			</publicationStmt>
-			<sourceDesc>
-				<listBibl>
-					<biblStruct>
-    					<monogr>
-        			<title xml:lang="deu">Origenes Werke</title>
-       				 <editor>Erich Klostermann
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De Engastrimytho</title>
+            <editor>Erich Klostermann</editor>
+            <author xml:lang="lat">Origenes</author>
+            <sponsor>University of Leipzig</sponsor>
+            <funder>European Social Fund Saxony</funder>
+            <principal>Gregory Crane</principal>
+            <principal>Monica Berti</principal>
+            <meeting/>
+            <respStmt>
+               <persName>Gregory R. Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Geßner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Greta Franzini</persName>
+               <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Frederik Baumgardt</persName>
+               <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Simona Stoyanova</persName>
+               <resp>Project Manager (University of Leipzig), 2015</resp>
+               <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>University of Leipzig</authority>
+            <idno type="filename">tlg2042.tlg013.opp-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2014</date>
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg2042.tlg013.opp-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="deu">Origenes Werke</title>
+                     <editor>Erich Klostermann
       			  </editor>
-       		 	<author ref="urn:cts:greekLit:tlg2042" xml:lang="lat">Origenes</author>
-        		<imprint>
-            		<publisher xml:lang="deu">J. C. Hinrichs'Sche Buchhandlung</publisher>
-            		<pubPlace>Leipzig</pubPlace>
-            		<date>1901</date>
-        		</imprint>
-        		<biblScope unit="volume">3</biblScope>
-    		</monogr>
-						<ref target="https://archive.org/details/origeneswerke03orig/page/283/mode/1up">Internet Archive</ref>
-</biblStruct>
-				</listBibl>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-			  <refsDecl n="CTS">
-				<cRefPattern n="section" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-			</refsDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="grc">Greek</language>
-				<language ident="deu">German</language>
-				<language ident="lat">Latin</language>
-			</langUsage>
-		</profileDesc>
-		<revisionDesc>
-			<change who="Jack Duff" when="2016-07-05">Disambiguated milestones and marginalia, corrected
+                     <author ref="urn:cts:greekLit:tlg2042" xml:lang="lat">Origenes</author>
+                     <imprint>
+                        <publisher xml:lang="deu">J. C. Hinrichs'Sche Buchhandlung</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1901</date>
+                     </imprint>
+                     <biblScope unit="volume">3</biblScope>
+                  </monogr>
+                  <ref target="https://archive.org/details/origeneswerke03orig/page/283/mode/1up">Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+         <refsDecl n="CTS">
+            <cRefPattern n="section"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-section"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="deu">German</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="Jack Duff" when="2016-07-05">Disambiguated milestones and marginalia, corrected
 				metadata, deleted lat tag, added ref, expanded pb.</change>
-		</revisionDesc>
-	</teiHeader>
-	<text>
-		<body>
-		    <div type="edition" n="urn:cts:greekLit:tlg2042.tlg013.opp-grc1" corresp="urn:cts:greekLit:tlg0527.tlg011:28.3-28.25" xml:lang="grc">
-				<pb n="283"/>
-				<head>Die griechisch erhaltene Homilie über I Sam. 28, 3—25.</head>
-				
-				<note>Μ = cod. Monac. gr. 331 saec. X.</note>
-				<milestone unit="mspage" n="174r"/>
-				<head>Ὠριγένους εἰς τὴν τῶν Βασιλειῶν α΄.</head>
-				<milestone unit="altnumbering" n="2.490"/>
-				<div type="textpart" subtype="section" n="1">
-					<p>Τὰ ἀναγνωσθέντα πλείονά ἐστιν, καὶ ἐπεὶ χρὴ ἐπιτεμνόμενον <lb n="5"/> εἰπεῖν, δ' εἰσὶν
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg2042.tlg013.opp-grc1">
+         <pb n="283"/>
+         <head>Die griechisch erhaltene Homilie über I Sam. 28, 3—25.</head>
+         <note>Μ = cod. Monac. gr. 331 saec. X.</note>
+         <milestone unit="mspage" n="174r"/>
+         <head>Ὠριγένους εἰς τὴν τῶν Βασιλειῶν α΄.</head>
+         <milestone unit="altnumbering" n="2.490"/>
+         <div n="1" type="section">
+            <p>Τὰ ἀναγνωσθέντα πλείονά ἐστιν, καὶ ἐπεὶ χρὴ ἐπιτεμνόμενον <lb n="5"/> εἰπεῖν, δ' εἰσὶν
 						περικοπαί. ἀνεγνώσθη τὰ ἑξῆς τῶν περὶ Νάβαλ Καρμήλιον. εἶτα μετὰ τοῦτο ἡ ἱστορία ἡ περὶ
 						τοῦ κεκρύφθαι τὸν Δαβὶδ παρὰ τοῖς Ζιφαίοις καὶ διαβεβλῆσθαι αὐτὸν ὑπ’ αὐτῶν, ἐληλυθέναι
 						δὲ τὸν Σαοὺλ βουλόμενον λαβεῖν τὸν Δαβὶδ καὶ ἐληλυθότα ἐπιτηρῆσαι καιρόν, ἐπεληλυθέναι
@@ -123,19 +133,18 @@
 						ὀλίγα ἔχει, <lb n="20"/> ἀλλὰ καὶ τοὺς δυναμένους ἐξετάζειν δυνάμενα ἀσχολῆσαι ὥρας οὐ
 						μιᾶς συνάξεως ἀλλὰ καὶ πλειόνων, ὁτίποτε βούλεται ὁ ἐπίσκοπος προτεινάτω τῶν τεσσάρων,
 						ἴνα περὶ τοῦτο ἀσχοληθῶμεν. τὰ περὶ τῆς ἐγγαστριμύθου, φησίν, ἐξεταζέσθω.</p>
-				</div>
-
-				<div type="textpart" subtype="section" n="2">
-					<p>Ἔνιαι μὲν ἱστορίαι οὐχ ἅπτονται ἡμῶν, ἔνιαι δὲ ἀναγκαῖαι <lb n="25"/> πρὸς τὴν ἐλπίδα
+         </div>
+         <div n="2" type="section">
+            <p>Ἔνιαι μὲν ἱστορίαι οὐχ ἅπτονται ἡμῶν, ἔνιαι δὲ ἀναγκαῖαι <lb n="25"/> πρὸς τὴν ἐλπίδα
 						ἡμῶν· οὕτω δ’ εἶπον ἱστορίαι, ἐπεὶ οὐδέπω φθά- <note type="footnote">5 Vgl. | Sam. 25,
 							—44. — 6ff. Vgl. Ι Sam. 26, —25. — 10 Vgl. Ι Sam. 26, 12. — 13 Vgl. Ι Sam. 27, 2. — 15
 							Ι Sam. 28, 2. — 17ff. Vgl. I Sam. 28, 25. — 24 Vgl. in IKor. 3, 15 (Cat. Cram. V, 58,
 							4. 5): τοῦτο τὸ λεχθησόμενον ἑνὸς ἑκάστου ἡμῶν ἅπτεται.</note>
-						<note type="footnote">5 δ΄ εἰσὶν περικοπαί Blass Ζ. 19. 22) δίσιν περικοπαι Μ | 10 αὐτόν
+               <note type="footnote">5 δ΄ εἰσὶν περικοπαί Blass Ζ. 19. 22) δίσιν περικοπαι Μ | 10 αὐτόν
 							ΑΙ αὐτῶν Μ | 11 τοῦτο Blass τούτου Μ | 13/14 Ἀγχοὺς υἱὸν Ἀμμὰχ nach LXX αρχ’ [sic] Μ |
 							18 προφητεύειν Hu | 20 τοὺς δυναμένους Blass τοῖς δυναμένοις Μ 22 προτεινάτω ΑΙ
 							προτινάτω Μ.</note>
-						<pb n="284"/> νομεν ἐπὶ τὰ τῆς ἀναγωγῆς, παντὶ τῷ | | εἰδότι ἀνάγειν ἢ ἀκούειν
+               <pb n="284"/> νομεν ἐπὶ τὰ τῆς ἀναγωγῆς, παντὶ τῷ | | εἰδότι ἀνάγειν ἢ ἀκούειν
 							<milestone unit="altnumbering" n="2.491"/> ἀναγομένων χρήσιμα. <add>τῶν οὖν τῆς
 						ἱστορίας τινὰ μὲν χρήσιμα</add> πᾶσιν, τινὰ δὲ οὐ πᾶσιν. οἷον, ὡς ἐπὶ παραδείγματος, ἡ ἱστορία ἡ περὶ
 						τοῦ Λὼτ καὶ τῶν θυγατέρων αὐτοῦ εἰ μέν τι κατὰ τὴν ἀναγωγὴν <lb n="5"/> ἔχει χρήσιμον,
@@ -154,27 +163,25 @@
 						ἀληθῆ έστιν ἢ οὐκ ἔστιν ἀληθῆ; τὸ μὲν μὴ εἶναι ἀληθῆ λέγειν εἰς ἀπιστίαν προτρέπει
 						χωρήσει ἐπὶ κεφαλὰς τῶν λεγόντων)., τὸ δὲ εἶναι ἀληθῆ ζήτησιν καὶ <lb n="25"/>
 						ἐπαπόρησιν ἡμῖν παρέχει.</p>
-				</div>
-
-				<div type="textpart" subtype="section" n="3">
-					<p>Καὶ μὴν γοῦν ἴσμεν τινὰς τῶν ἡμετέρων ἀδελφῶν ἀντιβλέψαντας τῇ γραφῇ καὶ λέγοντας· οὐ
+         </div>
+         <div n="3" type="section">
+            <p>Καὶ μὴν γοῦν ἴσμεν τινὰς τῶν ἡμετέρων ἀδελφῶν ἀντιβλέψαντας τῇ γραφῇ καὶ λέγοντας· οὐ
 						πιστεύω τῇ ἐγγαστριμύθῳ.</p>
-					<note type="footnote">7 Vgl. Gen. 19, 30–38. — 9 Vgl. Gen. 38, 1–30. — 10 S. 51, 19. — 11
+            <note type="footnote">7 Vgl. Gen. 19, 30–38. — 9 Vgl. Gen. 38, 1–30. — 10 S. 51, 19. — 11
 						ff. Vgl. Pseudohippolyt (Hippel. I, 2, 123 Ζ. 1–4): Ζητεῖται ἀνῆλθε Σαμοrὴλ διὰ τῆς
 						ἐγγαστριμύθου ἢ οὔ. καὶ εἰ μὲν δῶμεν ὅτι ἀνῆλθεν, τὰ ψευδῆ συνιστῶμεν· πῶς γὰρ ἠδύνατο
 						δαίμων ψυχήν, οὐ λέγω δικαίου μόνον, ἀλλὰ καὶ τοῦ τυχόντος, τὴν ἀπελθοῦσαν, ἣν οὐκ ᾔδει
 						ποῖ διάγει, καλέσαι; Vgl. Theodoret MPG 80, 589ff. — 14 Vgl. Jerem. 15, 1. — 16 Psal.
 						98, 6. 7. — 19 Vgl. Ezech. 14, 14??</note>
-					<note type="footnote">6 ζητήσαις ἂν Al ζητήσεσαν Μ | 7 ὄφελός Cr ώφελός Μ | 10 ἀναγκαία]
+            <note type="footnote">6 ζητήσαις ἂν Al ζητήσεσαν Μ | 7 ὄφελός Cr ώφελός Μ | 10 ἀναγκαία]
 						ἀναγκαίως ? | 14. 16 μωϋσῆς Μ | 19 προσεύξωνται ΑΙ προσεύξονται Μ | 20 — 22 ἆρ’—
 						εἴπωμεν] Eustath. S. 51, 24–26 | 20 εἰ] &lt; Eustath. | ἦν 22 εἴπωμεν Ga εἴπομεν Μ | 22
 						— 25 γέγραπται — παρέχει] Eustath. S. 52, 1 — 5 (vgl. 15 — 19) | 22 γέγραπται]
 						ἐγγέγραπται Eustath. S. 52, 1 | ταῦτα] + ἢ οὐ γέγραπται; Eustath. S. 52, 15 | ἀληθῆ] +
 						ταῦτα Eustath. S. 52, 17 | 26 — S. 285, 1 καὶ — ψεύδεται] Eustath. S. 52, —10 | 26 γοῦν]
 						&lt; Eustath.</note>
-
-					<pb n="285"/>
-					<p>λέγει ἡ ἐγγαστρίμυθος ἑωρακέναι τὸν Σαμουήλ, ψεύδεται. Σαμουὴλ οὐχ ἀνήχθη, Σαμουὴλ οὐ
+            <pb n="285"/>
+            <p>λέγει ἡ ἐγγαστρίμυθος ἑωρακέναι τὸν Σαμουήλ, ψεύδεται. Σαμουὴλ οὐχ ἀνήχθη, Σαμουὴλ οὐ
 						λαλεῖ. ἀλλ’ ὥσπερ εἰσί τινες ψευδοπροφῆται λέγοντες· »τάδε λέγει κύριος« καὶ »κύριος οὐκ
 						ἐλάλησεν«, οὕτως καὶ τὸ δαιμόνιον τοῦτο ψεύδεται, ἐπαγγελλόμενον ἀνάγειν τὸν ὑπὸ <lb n="5"/> τοῦ Σαοὺλ προστασσόμενον. »τίνα γὰρ ἀναγάγω;« φησίν· »Σαμουὴλ ἀνάγαγέ μοι«.
 						<add>καὶ</add> ταῦτα λέγεται ὑπὸ τῶν φασκόντων τὴν ταύτην μὴ εἶναι ἀληθῆ· Σαμουὴλ ἐν ᾅδου;
@@ -194,10 +201,9 @@
 						έν <lb n="25"/> ᾅδου, πρὸς ὃν εἰρηται· »πρὸ τοῦ με πλάσαι σε ἐν κοιλίᾳ ἐπίσταμαί σε, καὶ
 						πρὸ τοῦ σε ἐξελθεῖν ἐκ μήτρας ἡγίακά σε«; ἐν ᾅδου καὶ Ἡσαΐας, ἐν ᾅδου καὶ Ἱερεμίας, ἐν
 						ᾅδου πάντες οἱ προφῆται, ἐν ᾅδου.</p>
-				</div>
-
-				<div type="textpart" subtype="section" n="4">
-					<p>Ταῦτα μὲν ἐρεῖ ὀ μὴ βουλόμενος ἀγῶνα παραδέξασθαι, ὅτι Σαμουήλ ἐστιν ὄντως ὁ ἀναχθείς·
+         </div>
+         <div n="4" type="section">
+            <p>Ταῦτα μὲν ἐρεῖ ὀ μὴ βουλόμενος ἀγῶνα παραδέξασθαι, ὅτι Σαμουήλ ἐστιν ὄντως ὁ ἀναχθείς·
 						ἐπεὶ δὲ δεῖ εὐγνώμονα εἶναι ἐν <lb n="30"/> τῷ ἀκούειν τῶν γραφῶν, πιθανῶς
 						καταβομβήσαντος ἡμῶν τοῦ λόγου καὶ ἀληθῶς δυναμένου ταράξαι καὶ κινῆσαι ἡμᾶς, ἴδωμεν
 						πότερόν ποτε νενόηται ἡ γραφὴ τῷ τοῦτο μὴ παραδεξαμένῳ, ἢ ἀπὸ ἐνδόξων μὲν ἐπιχειρεῖ,
@@ -205,11 +211,11 @@
 							2, 2 23, 17 u. ö. — 8/9 Vgl. I Sam. 1, 11. — 10 f. Vgl. I Sam. 1, 23 2, 18. — 11f.
 							Vgl. I Sam. 3, 4. 7 usw. — 13ff. Vgl. I Sam. 3, —21. — 15f. Vgl. I Sam. 12, 17. — 16
 							16ff. Vgl. I Sam. 12, 3. — 23 Vgl. Jerem. 15, 1. — 25 Jerem. 1, 5.</note>
-						<note type="footnote">1 ἑωρακέναι Eustatli. εορακέναι Μ | 10 τῷ Cr τὸ Μ | 13 ηλὶ Μ | 20
+               <note type="footnote">1 ἑωρακέναι Eustatli. εορακέναι Μ | 10 τῷ Cr τὸ Μ | 13 ηλὶ Μ | 20
 							ὁρᾶτε τι] vgl. S. 287, 12 ὁρᾶται; τίς ΑΙ | 24. 27 ἵηρεμίας Μ | 27 ἐν ᾅδου3] &lt; Cr +
 							οἱ πατριάρχαι? vgl. S. 294, 1 | 29 ἐπεὶ δὲ] ἐπειδὴ Μ | 30 καταβομβήσαντος ἡμῶν nach Ja
 							vgl. S. 286, 12 καταπομπήσαντος ἡμᾶς Μ.</note>
-						<pb n="286"/> τὰ γεγραμμένα; »καὶ εἶπεν ἡ γυνή· τίνα ἀναγάγω σοι;‘ τίνος πρόσωπόν
+               <pb n="286"/> τὰ γεγραμμένα; »καὶ εἶπεν ἡ γυνή· τίνα ἀναγάγω σοι;‘ τίνος πρόσωπόν
 						ἐστιν τὸ λέγον· »εἶπεν ἡ γυνή«; ἀρα τὸ πρόσωπον τοῦ ἁγίου πνεύματος, ἐξ οὗ πεπίστευται
 						ἀναγεγράφθαι ἡ γραφή, ἢ ἄλλου τινός; τὸ γάρ διηγηματικὸν πρόσωπον πανταχοῦ ὡς ἴσασιν <lb n="5"/> καὶ οἱ περὶ παντοδαποὺς γενόμενοι λόγους) ἐστὶ πρόσωπον τοῦ συγγραφέως·
 						συγγραφεὺς δ’ ἐπὶ τούτων τῶν λόγων πεπίστευται εἶναι οὐκ ἄνθρωπος, ἀλλὰ συγγραφεὺς τὸ
@@ -230,18 +236,18 @@
 						ἔδει γεγράφθαι· ἐνόμιζεν Σαοὺλ εἶναι αὐτὸν Σαμουήλ. νῦν δὲ γέγραπται· »ἔγνω Σαούλ«,
 						οὐδεὶς δὲ ἔγνω τὸ μὴ ὄν· »ἔγνω« οὐν »Σαοὺλ ὅτι Σαμουήλ ἐστιν«</add> »καὶ ἔπεσεν | | ἐπὶ
 						πρόσωπον ἐπὶ τὴν γῆν καὶ προσεκύνησεν‘. <milestone unit="altnumbering" n="2.493"/>
-						<lb n="30"/> εἶτα πάλιν τὸ πρόσωπον τῆς γραφῆς· »καὶ εἶπεν Σαμουὴλ πρὸς <note type="footnote">2ff. Vgl. Eustath. S. 25, 25f. 27, 24ff. 69, 16f. — 4 Vgl. z.B. Sel.
+               <lb n="30"/> εἶτα πάλιν τὸ πρόσωπον τῆς γραφῆς· »καὶ εἶπεν Σαμουὴλ πρὸς <note type="footnote">2ff. Vgl. Eustath. S. 25, 25f. 27, 24ff. 69, 16f. — 4 Vgl. z.B. Sel.
 							in Gen. 41, 1 (Lo 8, 86): τὸ μὲν διηγηματικὸν τῆς γραφῆς πρόσωπον κτλ. — 7f. Vgl. II
 							Pet. 1, 21. — 21 II Kor. 11, 14. 15. — 26ff. Vgl. Pseudohipp. 1. c. Ζ. 10: »πῶς«,
 							φησίν, »ἐπιγνοὺς Σαοὺλ προσεκύνησεν«; — 30ff. Vgl. Greg. Nyss. de Pyth. MPG 45. 112 C:
 							Εἰ δὲ λέγει ἡ Γραφὴ ὅτι καὶ εἶπεν ὁ Σαμουήλ, μὴ ταρασσέτω τὸν ἐπιστήμονα ὁ τοιοῦτος
 							λόγος· ἀλλὰ προσκεῖσθαι νομιζέτω ὅτι ὁ νομισθεὶς εἶναι Σαμουήλ.</note>
-						<note type="footnote">9 τίνα Hu | 16 τί γάρ ἐστιν] &lt; LXX | 16. 20 ἑώρακας usw. ΑΙ
+               <note type="footnote">9 τίνα Hu | 16 τί γάρ ἐστιν] &lt; LXX | 16. 20 ἑώρακας usw. ΑΙ
 							εόρακας usw. Μ | 20f. ὁ ἐκ τοῦ ἐναντίου λόγου Blass vgl. S. 287, 12 | 21ff. Vgl.
 							Eustath. S. 28, 20ff. | 23 εἶδεν AI ἴδεν Μ | —26 καὶ — ἐστίν] Eustath. S. 29, —5 30
 							23–25 | 24 ἴδεν Eustath. 29, 3 30, 24 | 26–29 εἰ—ἐστιν nach Eustath. S. (vgl. 32,
 							8–10. 16. 17. 24).</note>
-						<pb n="287"/> Σαούλ· ἵνα τί παρώργισάς με τοῦ ἀναγαγεῖν με;« εἶπεν‘ φησὶν ἡ γραφὴ
+               <pb n="287"/> Σαούλ· ἵνα τί παρώργισάς με τοῦ ἀναγαγεῖν με;« εἶπεν‘ φησὶν ἡ γραφὴ
 						ᾗ δεῖ πιστεύειν) »εἶπεν Σαμουήλ· ἵνα τί παρώργισάς με τοῦ ἀναγαγεῖν με;« εἶτα πρὸς τοῦτο
 						ἀποκρίνεται Σαούλ· »σφόδρα οἱ ἀλλόφυλοι πολεμοῦσιν ἐν ἐμοί, καὶ ὁ θεὸς ἀπέστη ἀπ’ ἐμοῦ
 						καὶ οὐκ <lb n="5"/> ἀπεκρίθη μοι ἔτι, καίγε ἐν χειρὶ τῶν προφητῶν καὶ ἐν τοῖς ἐνυπνίοις
@@ -251,11 +257,10 @@
 						δαιμόνιον προφητεύει περὶ βασιλείας Ἰσραηλιτικῆς; τί φησιν ὁ ἐναντίος λόγος; ὁρᾶτε ὅσος
 						ἀγών ἐστιν ἐν τῷ λόγῳ τοῦ θεοῦ, χρείαν ἔχων καὶ ἀκροατῶν δυναμένων ἁγίων ἀκούειν λόγων,
 						μεγάλων καὶ ἀπορρήτων τῶν περὶ τῆς ἐξόδου, ἔτι ἐπαπορουμένων τε τῶν προτέρων <lb n="15"/> οὐδὲ τῶν δευτέρων σαφῶν ὄντων.</p>
-				</div>
-
-				<div type="textpart" subtype="section" n="5">
-					<p>ἀλλ’ ὁ λόγος ἔτι ἐξετάζεται.</p>
-					<p>Λέγω δὲ ὅτι ἀναγκαία καὶ ἡ ἱστορία καὶ ἡ ἐξέτασις ἡ περὶ αὐτῆς, ἵνα ἴδωμεν τί ἡμᾶς ἔχει
+         </div>
+         <div n="5" type="section">
+            <p>ἀλλ’ ὁ λόγος ἔτι ἐξετάζεται.</p>
+            <p>Λέγω δὲ ὅτι ἀναγκαία καὶ ἡ ἱστορία καὶ ἡ ἐξέτασις ἡ περὶ αὐτῆς, ἵνα ἴδωμεν τί ἡμᾶς ἔχει
 						μετὰ τὴν ἔξοδον. »λελάληκεν ἐν χειρί μου, καὶ διαρρήξει κύριος τὴν <milestone unit="mspage" n="176r"/> βασιλείαν ἐκ χειρός σου καὶ δώσει αὐτὴν τῷ πλησίον σου τῷ
 						Δαβίδ«. δαιμόνιον δὲ οὐ <lb n="20"/> δύναται εἰδέναι τὴν βασιλείαν Δαβὶδ τὴν ὑπὸ τοῦ
 						κυρίου χειροτονηθεῖσαν. »καθότι οὐκ ἤκουσας τὴν φωνὴν τοῦ κυρίου, οὐκ ἐποίησας ὀργὴν
@@ -270,17 +275,16 @@
 							31ff. Vgl. Pseudohipp. 1. c. Z. 14f.: »πῶς οὖν προεῖπεν«, φησίν, »τὰ μέλλοντα
 							συμβαίνειν τῷ Σαοὺλ καὶ τῷ Ἰωνάθαν ἐν ταὐτῷ κακά;« (hier ist die Frage zu
 							Ende!)</note>
-						<note type="footnote">2 ᾗ δεῖ] ἤδη Μ ἔδει Ru | 3 σφόδρα] 1. Ε; σφόδρα· ? vgl. LXX u.
+               <note type="footnote">2 ᾗ δεῖ] ἤδη Μ ἔδει Ru | 3 σφόδρα] 1. Ε; σφόδρα· ? vgl. LXX u.
 							Eustath. S. 42, 18 | 7 ἐπηρώτησας Blass ἐπερώτησας Μ | 9 αὑτῷ Cr αὐτῷ Μ 11 δαιμόνιον —
 							Ἰσραηλιτικῆς] Eustath. S. 62, 7 | 19/12 δαιμόνιον — χειροτονηθεῖσαν] Eustath. S. 62,
 							—16 | 20 τοῦ] &lt; Eustath. | 22 ἐποίησας nach LXX ἐποίησ Μ | 24 περιεποιήσατο nach
 							LXX περιεπει Μ | 32 περὶ Koetschau τὰ κατὰ ? Blass.</note>
-						<pb n="288"/> προφητικοῦ, ὅτι αὔριον ἔμελλεν ἐξελεύσεσθαι ὁ Σαοὺλ τὸν βίον καὶ οἱ
+               <pb n="288"/> προφητικοῦ, ὅτι αὔριον ἔμελλεν ἐξελεύσεσθαι ὁ Σαοὺλ τὸν βίον καὶ οἱ
 						υἱοὶ αὐτοῦ μετ’ αὐτοῦ; »αὔριον σὺ καὶ οἱ υἱοί σου μετ’ ἐμοῦ«.</p>
-				</div>
-
-				<div type="textpart" subtype="section" n="6">
-					<p>Ταῦτα μὲν οὐν <add>δηλοῖ</add> ὅτι οὐκ ἔστιν ψευδῆ τὰ καὶ ὅτι Σαμουήλ ἐστιν ὁ ἀναβεβηκώς·
+         </div>
+         <div n="6" type="section">
+            <p>Ταῦτα μὲν οὐν <add>δηλοῖ</add> ὅτι οὐκ ἔστιν ψευδῆ τὰ καὶ ὅτι Σαμουήλ ἐστιν ὁ ἀναβεβηκώς·
 						τί οὖν ποιεῖ ἐγγαστρίμυθος <lb n="5"/> ἐνθάδε; τί ποιεῖ ἐγγαστρίμυθς περὶ τὴν ἀναγωγὴν
 						τῆς ψυχῆς τοῦ δικαίου; ἐκεῖνος ἔφυγεν ὁ τὸν πρῶτον λόγον εἰπών ἵνα γὰρ] μὴ ἀγῶνα ἔχειν
 						δοκῇ κατὰ τοσαῦτα ἄλλα τὰ κατὰ τὸν τόπον ζητούμενα) καὶ λέγει· οὐκ ἔστι Σαμουήλ, | |
@@ -300,7 +304,7 @@
 						φέρεται τὸ έν πεντεκαιδεκάτῳ Ψαλμῷ· »ὅτι <lb n="25"/> οὐκ ἐγκαταλείψεις τὴν ψυχήν μου
 						εἰς ᾅδου, οὐδὲ δώσεις τὸν ὅσιόν σου ἰδεῖν διαφθοράν«. εἶτα Ἰησοῦς μὲν Χριστὸς ἐν ᾅδου.
 						φοβῇ δὲ εἰπεῖν ὅτι ναὶ καὶ ἐκεῖ προφητεῦσαι καταβαίνει καὶ ἔρχεσθαι πρὸς <note type="footnote">22 Vgl. Act. 2, 27. 31. — 24 Psal. 15, 10.</note>
-						<note type="footnote">3 δηλοῖ Hu | 4–6 τί—δικαίου] Eustath. S. 69, 1–3 | 5 τι] + 6 γὰρ
+               <note type="footnote">3 δηλοῖ Hu | 4–6 τί—δικαίου] Eustath. S. 69, 1–3 | 5 τι] + 6 γὰρ
 							streicht Hu | 9/10 έστιν u. αὐτοῦ streicht Blass | 11 εἶδεν AI ἴδεν Μ | dass die
 							Unklarheit der ganzen Stelle Folge einer Auslassung ist, scheint klar; ob hierher
 							Eustath. S. 69, 9 — 15 ört: οἶμαι δὲ ὅτι καὶ μετέπειτα διελεγχόμενος ὑπὸ τῶν ὀρθότατα
@@ -312,7 +316,7 @@
 							τὴν γραφήν« κτλ., oder ob damit eine zweite Homilie gemeint ist (Allatius), ist
 							unsicher | 12 ἀπὸ] ὑπὸ Hu | 19 εἶναι streicht Blass | 27 εἰς Koetschau ἐν Μ vgl. S.
 							289, 2.</note>
-						<pb n="289"/> τὰς ψυχὰς τὰς ἑτέρας; εἶτα μετὰ τοῦτο ἐὰν ἀποκρίνηται ὅτι Χριστὸς
+               <pb n="289"/> τὰς ψυχὰς τὰς ἑτέρας; εἶτα μετὰ τοῦτο ἐὰν ἀποκρίνηται ὅτι Χριστὸς
 						εἰς ᾅδου καταβέβηκεν, ἐρῶ· Χριστὸς εἰς ᾅδου καταβέβηκεν τί ποιήσων; νικήσων ἢ
 						νικηθησόμενος ὑπὸ τοῦ θανάτου; καὶ κατελήλυθεν εἰς τὰ χωρία ἐκεῖνα οὐχ ὡς δοῦλος τῶν
 						ἐκεῖ, ἀλλ’ ὡς δεσπότης παλαίσων, <lb n="5"/> ὡς πρώην ἐλέγομεν ἐξηγούμενοι τὸν κα
@@ -330,15 +334,14 @@
 						τοὺς κακῶς ἔχοντας; τί δὲ ἄτοπόν ἐστιν ἵνα καὶ ὁ ἀρχίατρος καταβῇ πρὸς τοὺς κακῶς
 						ἔχοντας; ἐκεῖνοι μὲν ἰατροὶ ἦσαν πολλοί ὁ δὲ κύριός μου καὶ σωτὴρ ἀρχίατρός ἐστι· καὶ
 						γὰρ τὴν | | ἔνδον ἐπιθυμίαν, <milestone unit="altnumbering" n="2.495"/>
-						<lb n="25"/> ἣ οὐ δύναται ὑπὸ ἄλλων θεραπευθῆναι, αὐτὸς θεραπεύει· ἥτις »οὐκ ἴσχυσεν ὑπ’
+               <lb n="25"/> ἣ οὐ δύναται ὑπὸ ἄλλων θεραπευθῆναι, αὐτὸς θεραπεύει· ἥτις »οὐκ ἴσχυσεν ὑπ’
 						οὐδενὸς <milestone unit="mspage" n="177r"/> θεραπευθῆναι(( τῶν ἰατρῶν, Χριστὸς Ἰησοῦς
 						αὐτὴν θεραπεύει. μὴ φοβοῦ, μὴ θαμβοῦ· Ἰησοῦς εἰς ᾅδου γέγονεν, καὶ οἱ προφῆται πρὸ
 						αὐτοῦ, καὶ προκηρύσσουσι τοῦ Χριστοῦ τὴν ἐπιδημίαν.</p>
-					<lb n="30"/>
-				</div>
-
-				<div type="textpart" subtype="section" n="7">
-					<p>Εἶτα καὶ ἄλλο τι θέλω εἰπεῖν ἀπ’ αὐτῆς τῆς γραφῆς. Σαμουὴλ ἀναβαίνει, καὶ τί τῷ Σαοὺλ
+            <lb n="30"/>
+         </div>
+         <div n="7" type="section">
+            <p>Εἶτα καὶ ἄλλο τι θέλω εἰπεῖν ἀπ’ αὐτῆς τῆς γραφῆς. Σαμουὴλ ἀναβαίνει, καὶ τί τῷ Σαοὺλ
 						λέγει ἑωρακέναι ἡ γυνή; οὐ λέγει <note type="footnote">5 Psal. 21, 13–15. — 13 Vgl.
 							Deut. 18, 15. — 14 Joh. 5, 46. 47. — 21ff. in Matth. Tom. 15, 35 (Lo 3, 400): Καὶ
 							Σαμουὴλ γοῦν ἔξω σώματος εἰργάσατο προφητεύων καὶ Ἱερεμίας εὐχόμενος ὑπὲρ τοῦ λαοῦ. —
@@ -347,10 +350,10 @@
 							παρὰ τὸ ἔθος εἶδεν, οὐκ ἂν εἶπεν, »θεοὺς ἀναβαίνοντας ἐκ τῆς γῆς ἐγὼ ὁρῶ«· ἔνα
 							ἐκάλεσεν, καὶ πῶς ἀνῆθον πολλ«; τί οὖν; ὅλων τῶν φανέντων φαμὲν ἀνελθεῖν τὰς ψυχὰς
 							κτλ.;</note>
-						<note type="footnote">2 εἰς] ἐν Μ | 4 δεσπότης Μ1 δεῖσπότης Μ* | 23 ἐκεῖνοι μὲν ἰατροὶ
+               <note type="footnote">2 εἰς] ἐν Μ | 4 δεσπότης Μ1 δεῖσπότης Μ* | 23 ἐκεῖνοι μὲν ἰατροὶ
 							Blass ἐκεῖνοι ABBREV ἰατροὶ μὲν Μ | 24 ἀρχιατρός Al ἀρχιϊατρός Μ | 31 τί τῷ] ἰδοὺ Μ ἡ
 							γυνή] vgl. S. 286, 23f. ψυχήν Μ | 31 u. S. 290, 1 ἑωρακέναι ΑΙ ἑορακέναι Μ.</note>
-						<pb n="290"/> ἑωρακέναι ἄνθρωπον· ἔπτηξεν τοῦτον ὃν εἰδεν. τίνα ὁρᾷ; θεοὺς ἐγὠ«
+               <pb n="290"/> ἑωρακέναι ἄνθρωπον· ἔπτηξεν τοῦτον ὃν εἰδεν. τίνα ὁρᾷ; θεοὺς ἐγὠ«
 						φησιν »εἶδον, θεοὺς ἀναβαίνοντας ἀπὸ τῆς γῆς«. καὶ τάχα Σαμουὴλ οὐ μόνος ἀναβέβηκεν καὶ
 						τότε προφητεύσων τῷ Σαούλ· ἀλλ’ εἰκός, ὥσπερ ἐνταῦθα μετὰ ὁσίου ὁσιωθήσῃ, καὶ μετὰ
 						ἀνδρὸς <lb n="5"/> ἀθῴου ἀθῷος ἔσῃ, καὶ μετὰ ἐκλεκτοῦ ἐκλεκτὸς ἔσῃ«, καὶ εἰσὶν ἐνταῦθα
@@ -378,12 +381,12 @@
 						ἠλθεν καὶ ἡ <note type="footnote">4 Psal. 17, 26. 27. — —13 Vgl. Eustath.S. 57, —15. —
 							11 Sachar. 1, 9 u. ö. — 13 Hebr. 1, 14. — 19 Luk. 7, 28. — 24 Luk. 7, 20. — 26 Joh. 1,
 							15. — 27 Joh. 1, 14.</note>
-						<note type="footnote">1 ἴδεν Μ | 2 εἶδον AI ἴδον Μ | —12 ἢ—συναναβεβηκότες stebt in Μ
+               <note type="footnote">1 ἴδεν Μ | 2 εἶδον AI ἴδον Μ | —12 ἢ—συναναβεβηκότες stebt in Μ
 							hinter τάχα—ἐμοί, umgestellt nacb Blass | 12 πληροῦντες Hu | 14/15 τί — Χριστοῦ]
 							Eustath. S.54, 5. 6 | 15 χρῄζει τόπος] Eustatb. | Ἰησοῦ] αὐτοῦ τε τοῦ Eustatb. |
 							Χριστοῦ + καὶ τῶν προφητῶν Eustatb. (od. ist dies aus Ζ. 17?) | 22. 24 ᾔδει Cr εἴδη Μ
 							| 25. 27 εἶδεν AI ἴδεν Μ | 32 καὶ] καὶ οὐκ? οὐκ?</note>
-						<pb n="291"/> Μαρία πρὸς αὐτόν, ὡς ἐμαρτύρησεν αὐτῶ | | ἡ μήτηρ αὐτοῦ λέγουσα·
+               <pb n="291"/> Μαρία πρὸς αὐτόν, ὡς ἐμαρτύρησεν αὐτῶ | | ἡ μήτηρ αὐτοῦ λέγουσα·
 							<milestone unit="altnumbering" n="2.496"/> »ἰδοὺ γάρ, ὡς ἐγένετο ἡ φωνὴ τοῦ ἀσπασμοῦ
 						σου εἰς τὰ ὦτά μου, ἐσκίρτησεν ἐν ἀγαλλιάσει τὸ βρέφος ἐν τῇ κοιλίᾳ μου«. οὑτος οὐν ὁ
 						σκιρτήσας πρὸ γενέσεως Ἰωάννης, ὁ εἰπών· »οὗτός ἐστι περὶ οὑ <lb n="5"/> ἐγὼ εἶπον· ὁ
@@ -404,10 +407,9 @@
 						τηλικαύτην δόξαν ἀμφέβαλλεν καὶ τάχα ἠπίστει, εἰ ὁ οὕτως ἔνδοξος καὶ μέχρις ᾅδου καὶ
 						μέχρι τῆς ἀβύσσου <lb n="25"/> κατελεύσεται· διὰ τοῦτο ἔλεγεν· »σὺ εἶ ὁ ἐρχόμενος, ἢ
 						ἄλλον προσδοκῶμεν;«</p>
-				</div>
-
-				<div type="textpart" subtype="section" n="8">
-					<p>Οὐ παρεξέβην οὐδὲ ἐπελαθόμην τοῦ προκειμένου, ἀλλὰ τοῦτο θέλομεν κατασκευάσαι ὅτι, εἰ
+         </div>
+         <div n="8" type="section">
+            <p>Οὐ παρεξέβην οὐδὲ ἐπελαθόμην τοῦ προκειμένου, ἀλλὰ τοῦτο θέλομεν κατασκευάσαι ὅτι, εἰ
 						πάντες εἰς ᾅδου καταβεβήκασι πρὸ τοῦ Χριστοῦ πρόδρομοι Χριστοῦ οἱ προφῆται Χριστοῦ,
 						οὕτως καὶ <note type="footnote">2 Luk. 1, 44. — 4 Joh. 1, 30 (27). — 5 Joh. 1, 33. 34. —
 							10 Matth. 16, 13. — 11 Matth. 16, 16. — 12f. Matth. 16, 17. — 15 Luk. 18, 31. — 16
@@ -418,10 +420,10 @@
 							ἱμάντα τοῦ ἑτέρου τῶν ὑποδημάτων, νοήσας αὐτοῦ τὴν ἐν ἀνθρώποις ἐπιδημίαν, περὶ ἧς καὶ
 							μαρτυρεῖ· ἐπεὶ δὲ ἔλειπεν αὐτῷ ἡ περὶ τῶν ἑξῆς κατάληψις, οὐκ εἰδότι πότερον Ἰησοῦς
 							ἐστιν ὁ κἀκεῖ ἐρχόμενος κτλ. — 21 Vgl. Matth. 3, 16 Par. - 25 Luk. 7, 20.</note>
-						<note type="footnote">1 Μαρία] ι in Ras. (2 Bb.) Μ | ἐφ’ Blass ἐν Μ | 14/15 βοὴν τὴν
+               <note type="footnote">1 Μαρία] ι in Ras. (2 Bb.) Μ | ἐφ’ Blass ἐν Μ | 14/15 βοὴν τὴν
 							θείαν] βοήθειαν Μ 1 20 ἐν] ν in Ras. Μ | 21 εἶδεν ΑΙ ἴδεν Μ | 22 ἴδεν Μ | 24 εἰ ὁ] διὸ
 							Μ.</note>
-						<pb n="292"/> Σαμουὴλ ἐκεῖ καταβέβηκεν· οὐ γὰρ ἁπλῶς, ἀλλ’ ὡς ἅγιος. ὅπου ἐὰν ᾖ ὁ
+               <pb n="292"/> Σαμουὴλ ἐκεῖ καταβέβηκεν· οὐ γὰρ ἁπλῶς, ἀλλ’ ὡς ἅγιος. ὅπου ἐὰν ᾖ ὁ
 						ἅγιος, ἅγιος. ἅγιος. μήτι Χριστὸς οὐκέτι Χριστός ἐστιν, ἐπεὶ ἐν ᾅδου ποτὲ ἠν; οὐκέτι ἠν
 						υἱὸς θεοῦ, ἐπεὶ έν τῷ καταχθονίῳ γεγένηται τόπῳ »ἵνα <milestone unit="mspage" n="178r"/>
 						πᾶν γόνυ κάμψῃ ἐν τῷ ὀνόματι Ἰησοῦ Χριστοῦ <lb n="5"/> ἐπουρανίων καὶ ἐπιγείων καὶ
@@ -437,11 +439,10 @@
 						στρατιωτῶν, καὶ εἰσίτωσαν ὅπου αἱ δυσωδίαι τῶν τραυμάτων αὐτῶν· τοῦτο ὑποβάλλει ἡ
 						ἰατρικὴ φιλανθρωπία. οὕτω τοῦτο ὑποβέβληκεν τῷ σωτῆρι ὁ λόγος καὶ τοῖς προφήταις, καὶ
 						ἐνθάδε ἐλθεῖν καὶ εἰς ᾅδου καταβῆναι.</p>
-					<lb n="20"/>
-				</div>
-
-				<div type="textpart" subtype="section" n="9">
-					<p>Καὶ τοῦτο δὲ προσθετέον τῷ λόγῳ ὅτι <add>εἰ</add> Σαμουὴλ ἦν, καὶ ἐξελθόντος ἀπέστη ἀπ’
+            <lb n="20"/>
+         </div>
+         <div n="9" type="section">
+            <p>Καὶ τοῦτο δὲ προσθετέον τῷ λόγῳ ὅτι <add>εἰ</add> Σαμουὴλ ἦν, καὶ ἐξελθόντος ἀπέστη ἀπ’
 						αὐτοῦ τὸ πνεῦμα τὸ ἅγιον, καὶ ἀπέστη ἀπ’ αὐτοῦ ἡ προφητεία, οὐκ ἄρα ἀληθεύει ὁ λέγων
 						ἀπόστολος· »ἄρτι προφητεύω ἐκ μέρους, καὶ ἐκ μέρους γινώσκω· ὅταν δὲ ἔλθῃ τὸ τέλειον,
 						τότε τὸ ἐκ μέρους καταργηθήσεται«. οὐκοῦν <lb n="25"/> τὸ τέλειον μετὰ τὸν βίον ἐστίν.
@@ -453,14 +454,14 @@
 							Kor. 13, 10 (Cat. Cram. V, 256, 2ff.): τῆς γὰρ νῦν οὔσης γνώσεως ἐκ μέρους οὔσης, ἐπὰν
 							ἔλθῃ ἡ τελεία γνῶσις, αὕτη ἡ ἐκ μέρους τέλος ἔχει . . . . τὸ αὐτὸ δέ μοι καὶ περὶ
 							προφητείας νόει. — 29 Ι Kor. 14, 14.</note>
-						<note type="footnote">6/7 καὶ—ἦν] Eustath. S. 54, 8 — 10 | 6 ὤν, καὶ Blass τυγχάνων ὁ
+               <note type="footnote">6/7 καὶ—ἦν] Eustath. S. 54, 8 — 10 | 6 ὤν, καὶ Blass τυγχάνων ὁ
 							Χριστός Eustath. | ἵν’ Eusttath. | ὤν2] Eustath. &lt; Μ* nachgetr. a. R. Μ2 | 7 τῇ
 							Eustath. | 79 οὕτως — προαιρίσει] Eustath. S. 54, —16 | 7 οὕτω Eustath. | 8 κάτω1] +
 							ἐν τῷ Eustath. | μὲν Eustath. | 9 πυνθάνομαι δὲ] vielleicht ist etwas wie τὰ δαιμόνια
 							ausgefallen | 10–12 ἐγὼ—βασιλεύειν] Eustath. S. 63, 27–64, 2 | 11 Eustath. Σαμουὴλ]
 							&lt; Eustath. | 12 εἴσονται AI ΐσονται Μ | 14 οὐκ Blass 28 ὅτι] ὄτε Blass | 30 καίτοι]
 							καὶ ὅτι Μ.</note>
-						<pb n="293"/> οὐκ οἰκοδομεῖ ὀ γλώσσῃ λαλῶν· καὶ γὰρ λέγει ὁ Παῦλος ὅτι ἐκκλησίαν
+               <pb n="293"/> οὐκ οἰκοδομεῖ ὀ γλώσσῃ λαλῶν· καὶ γὰρ λέγει ὁ Παῦλος ὅτι ἐκκλησίαν
 						οἰκοδομεῖ ὁ προφητεύων, αὐταῖς λέξεσι λέγων· »ὁ δὲ προφη- τεύων ἐκκλησίαν οἰκοδομεῖ«. εἰ
 						δὲ »ὁ προφητεύων ἐκκλησίαν οἰκοδομεῖ«, εἶκεν <add>δὲ</add> χάριν προφητικήν οὐ γὰρ ἀπολωλέχει αὐτὴν
 						μὴ <lb n="5"/> ἁμαρτήσας· μόνος γὰρ ἀπόλλυσι χάριν προφητικήν, ὃς μετὰ τὸ προφητεῦσαι
@@ -489,22 +490,21 @@
 							Johannes d. äufer] ante eum, ut ad inferna descendens illius praedicaret adventum. —
 							22 Gen. 3, 24. — 25/26 Vgl. Exod. 14, —27 Vgl. Jos. 3, 16. — 30ff. Vgl. Luk. 16,
 							23.</note>
-						<note type="footnote">4 δὲ] + Σαμουὴλ Koetschau | 8 πνεῦμα (ABBREV) Μ | 12 τοῖς Blass
+               <note type="footnote">4 δὲ] + Σαμουὴλ Koetschau | 8 πνεῦμα (ABBREV) Μ | 12 τοῖς Blass
 							οἱς Μ 12/13 οὐ χρείαν ἔχουσιν Blass | 13 δέονται Ja (vgl. Ζ. 16) δέχ·ονται Μ | 15 ἵνα
 							Koetschau | 16 εἶχε Hu ἔχετε Μ | 19 πρὸ τῆς Cr προφήτης Μ | 25 οὐδενός nach Ζ.
 							27.</note>
-						<pb n="294"/> περιέμενον οὖν τὴν τοῦ κυρίου μου Ιησοῦ Χριστοῦ ἐπιόημίαν καὶ πα-
+               <pb n="294"/> περιέμενον οὖν τὴν τοῦ κυρίου μου Ιησοῦ Χριστοῦ ἐπιόημίαν καὶ πα-
 						τριáρχαι καὶ προφῆται καὶ πάντες, ἵν ουττος τὴν ὁδὸν a̓νοίξῃ. ψώ εἰμι ἡ ὁόόςς, Πrώ έͅμι
 						ὴ θύραa. ὁδός ἐστιν ἐπὶ τὸ ξύλον τῆς ςωῆς, ἕνα γένηται Ἀν όιΜῃς όιà πυρός, φλὸξ οὐ
 						κατακαύσει σε: ποίου δ πυρός; Α)ταξεν τὰ Χερουβὶμ καὶ. τὴν φλογίνην ῥομφαίαν τὴν στρε-
 						φομένην φυλάσσειν τὴν όδὸν τοῦ ξύλου τῆς ζωής« ’ ὥστε όιὰ τοῦτο <milestone unit="mspage" n="179r"/>περιέμενον οἱ μακáριοι ἐκεῖ, οἐκονομίαν Ι ποιοῦντες καὶ μὴ δυνάμενοι ὅπου τὸ
 						ξύλον τῆς ζωῆς, ὅπου ό παρáδεισος ό τοῦ θεοῦ, οοπου θεὸς rεωργός, ὸ́που οἱ μακάριοι καὶ
 						ἐκλεκτοὶ καὶ ἅγιοι θεοῦ Πνώθαι.</p>
-					<lb n="10"/>
-				</div>
-
-				<div type="textpart" subtype="section" n="10">
-					<p>Οὐόὲν οὖν πρόσκομμα κατὰ τὸν τόπον ἐστίν, a̓λλὰ πáντα θαυμασίως γέγραπται καὶ νενόηται
+            <lb n="10"/>
+         </div>
+         <div n="10" type="section">
+            <p>Οὐόὲν οὖν πρόσκομμα κατὰ τὸν τόπον ἐστίν, a̓λλὰ πáντα θαυμασίως γέγραπται καὶ νενόηται
 						οτͅς ἂν ό θεὸς όποκαλύψῃ. πε- ρισσὸν όέ τι ἔχομεν ἡμεῖς οἱ έπὶ συντελείᾳ τῶν αἰώνων
 						ἐληΜότες- τί περισσόν; ἐὰν ἀπαλλαrῶμεν ἐντεῦθεν, rενόμενοι καλοὶ καὶ Λrαθοίι μὴ
 						ἐπαγόμενοι τὰ τῆς ἁμαρτίας φορτία, όιελευσόμεθα καὶ αὐτοὶ <lb n="15"/> τὴν φλογίνην
@@ -520,7 +520,7 @@
 						τὸ όηνάριον ἀπὸ τῶν ἐσχάτων· οἱ όὲ πρῶτοι ᾤοντο οοτι πλεῖόν τι λήψοντα“. σὺ οὖν πρῶτος,
 						ό ἔσχατος ἐλθὼν , λαμβάνεις τοὺς μισθοὺς a̓πὸ τοῦ οἰ- κοδεσπότου ἐν Χριστῷ Ἰησοῦ τῷ
 						κυρίῳ ἡμῶν, ῳτ ἡ όόζα καὶ τὸ <lb n="30"/> κράτος εἰς τοὺς αἰῶνας τῶν αἰώνων. Ἀμήν.</p>
-					<note type="footnote">1π. Vgl. Apollinaris (cod. ν fol. TSr): Μ Χριστοῦ χάριν ἀγνοοῦντές
+            <note type="footnote">1π. Vgl. Apollinaris (cod. ν fol. TSr): Μ Χριστοῦ χάριν ἀγνοοῦντές
 						τιiες τ)ν μετατιθεῖσάν ἐξ ἅδου τὰς ψυχὰς .... οὐκ ἐπίστευσαν τῇ γραφΓιἰ τΠ- περὶ τοῦ
 						Σαμου’)λ ωις ἐν ἅδου κατεχομένης τῆς ψυχῆς αὐτοῦ .... ὲ́δει δὲ πιστεύοντας τῇ γραΜ μ’)
 						πλάττειν αὐτοἴς δαίμονα κτλ. Vgl. Anastasius Sinaita (MPG 89, 76δ): ὑπὸ ψ χεῖρα τοῦ
@@ -530,10 +530,8 @@
 						37, δ. — 15 Vgl. Gen. 3, 24. — 18 1 Kor. 3, 13. 1 (vgl. zur Form des Citats
 						Tischendorf). — 23 Vgl. Phil. 1, 23. — 26 Matth. 20, 8. 10. — 28 Vgl. Matth. 20,
 						16.</note>
-					<note type="footnote">2 οῦτος] ούτως Μ Ι 4 γένηται] Ψ τὸ Koetschau | 22 ὃ] οὐ Μ.</note>
-				</div>
-			</div>
-
-		</body>
-	</text>
+            <note type="footnote">2 οῦτος] ούτως Μ Ι 4 γένηται] Ψ τὸ Koetschau | 22 ὃ] οὐ Μ.</note>
+         </div>
+      </body>
+   </text>
 </TEI>

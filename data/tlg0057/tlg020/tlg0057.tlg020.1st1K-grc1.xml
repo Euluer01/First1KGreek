@@ -1,96 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="eng">    
-    <fileDesc>
-<titleStmt>
-  <title xml:lang="lat">De utilitate respirationis</title>
-        <author>Galen</author>
-        <editor>Karl Gottlob Kühn</editor>
-        <funder>Andrew W. Mellon Foundation</funder>
-      <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-<authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</authority>
-<publisher>University of Leipzig</publisher>
-<pubPlace>Germany</pubPlace>
-<idno type="filename">tlg0057.tlg020.1st1K-grc1.xml</idno>
-<availability>
-<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-</availability>
-<date>2016</date>
-</publicationStmt>
-<sourceDesc>
-<biblStruct>
-          <monogr>
-            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De utilitate respirationis</title>
             <author>Galen</author>
             <editor>Karl Gottlob Kühn</editor>
-            <imprint>
-              <publisher>Knobloch</publisher>
-              <pubPlace>Leipzig</pubPlace>
-              <biblScope unit="vol">4</biblScope>
-              <biblScope unit="pp" from="470" to="511">470-511</biblScope>
-              <date>1822</date>
-            </imprint>
-          </monogr>
-  <ref target="https://hdl.handle.net/2027/chi.11102513?urlappend=%3Bseq=480">HathiTrust</ref>
-        </biblStruct>    
-        </sourceDesc>
-</fileDesc>
-<encodingDesc>
-<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>    <refsDecl n="CTS">
-        <cRefPattern matchPattern="(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-      </refsDecl>
-    </encodingDesc>
-<profileDesc>
-<langUsage>
-        <language ident="grc">Greek</language>
-  <language ident="eng">English</language>
-  <language ident="lat">Latin</language>
-      </langUsage>
-    </profileDesc>
-</teiHeader>
-<text>
-<body>
-
-<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg020.1st1K-grc1">
-<pb n="470"/>
-
-<div type="textpart" subtype="chapter" n="1">
-<head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΧΡΕΙΑΣ ΑΝΑΠΝΟΗΣ
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</authority>
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg020.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg020.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Leipzig</pubPlace>
+                     <biblScope unit="vol">4</biblScope>
+                     <biblScope unit="pp" from="470" to="511">470-511</biblScope>
+                     <date>1822</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/chi.11102513?urlappend=%3Bseq=480">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(\w+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="eng">English</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg020.1st1K-grc1">
+         <pb n="470"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΧΡΕΙΑΣ ΑΝΑΠΝΟΗΣ
 <lb/>ΒΙΒΛΙΟΝ.</head>
-<p>Τίς ἡ τῆς ἀναπνοῆς χρεία; ὅτι γὰρ οὐχ
+            <p>Τίς ἡ τῆς ἀναπνοῆς χρεία; ὅτι γὰρ οὐχ
 <lb/>ἡ τυχοῦσα, φανερὸν ἐκ τοῦ μηδὲ βραχύτατον ἡμᾶς χρόνον
 <lb/>ἀρκεῖν δύνασθαι, ἀπολλυμένης αὐτῆς. ᾧ καὶ δῆλον, ὅτι
 <lb/>πρὸς οὐδεμίαν τῶν κατὰ μέρος ἐνεργειῶν, ἀλλ’ εἰς αὐτὴν
@@ -147,9 +156,9 @@
 <lb/>αὐτῆς τῆς οὐσίας χρῄζομεν τοῦ κατὰ τὴν εἰσπνοὴν ἐρχομένου
 <lb/>ἀέρος, ἢ τῆς ποιότητος, ἢ ἀμφοτέρων.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="2">
-<p>Ἐπεὶ τοίνυν εἰσπνεύσαντες μὲν τῆς μὲν
+         </div>
+         <div n="2" type="chapter">
+            <p>Ἐπεὶ τοίνυν εἰσπνεύσαντες μὲν τῆς μὲν
 <lb/>οὐσίας εὐποροῦμεν, πνιγόμεθα δὲ οὐδὲν ἧττον, ἢ εἰ μηδόλως
 <lb/>εἰσεπνεύσαμεν, ἐμφαίνεσθαι δοκεῖ τὸ μὴ δεῖσθαι τῆς
 <lb/>οὐσίας. ἀλλὰ πρὸς τοῦθ’ ὁ Ἐρασίστρατός φησιν, ὅτι μηδ’
@@ -243,7 +252,7 @@
 <lb/>συστέλλεσθαι δύναται, τί κωλύει καὶ νῦν εἰς τοσοῦτον
 <lb/>συνιζάνειν αὐτὸν, εἰς ὅσον ὑπὸ τῆς καρδίας ἐκκενοῦται;
 <lb/>
-<milestone unit="ed2page" n="416"/>τά τε γὰρ ἄλλα καὶ διὰ μυῶν ὑπὸ τῆς τοῦ ζώου
+               <milestone unit="ed2page" n="416"/>τά τε γὰρ ἄλλα καὶ διὰ μυῶν ὑπὸ τῆς τοῦ ζώου
 
 <pb n="478"/>
 
@@ -380,10 +389,10 @@
 <lb/>γενήσεται δ’ ἑτέρα. ὃ ὡς ἔστιν ἀδύνατον καὶ ἄτοπον, δι’
 <lb/>ἐκείνων ἀποδέδεικται.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="3">
-<p>
-<milestone unit="ed2page" n="418"/>Εἰ τοίνυν ἤτοι τῆς οὐσίας αὐτῆς τοῦ
+         </div>
+         <div n="3" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="418"/>Εἰ τοίνυν ἤτοι τῆς οὐσίας αὐτῆς τοῦ
 <lb/>ἀέρος ἣ ἧστινος οὖν ἐνδείᾳ ποιότητος ἀποθνήσκει τὰ ζῶα πνιγόμενα,
 <lb/>δέδεικται θάτερον ἀδύνατον. ἀπολείπεται θάτερον,
 <lb/>ἐνδείᾳ ποιότητός τινος ἐν ταῖς ἐπισχέσεσι τῆς ἀναπνοῆς
@@ -564,9 +573,9 @@
 <lb/>ἐμφύτου θερμασίας ἀπώλεια μηδὲν ἔχει τῶν φαινομένων
 <lb/>ἐναντιούμενον, εὐλογώτερον ἐκείνου προέσθαι.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="4">
-<p>Πᾶσαν τοίνυν αὐτὴν ἀναλαβόντες βασανίσωμεν,
+         </div>
+         <div n="4" type="chapter">
+            <p>Πᾶσαν τοίνυν αὐτὴν ἀναλαβόντες βασανίσωμεν,
 <lb/>ἐπεὶ τῶν ἄλλων ἀληθεστέρα φαίνεται. οὐκοῦν ἔκ
 <lb/>τε τοῦ ῥιπίζεσθαι τὴν ἀρχὴν τῆς ἐμφύτου θερμασίας, κᾀκ
 <lb/>τοῦ συμμέτρως ἐμψύχεσθαι, κᾀκ τοῦ τὸ οἷον καπνῶδες
@@ -731,9 +740,9 @@
 <lb/>πάνθ’ ὁμολογεῖν τὰ φαινόμενα τῷ προειρημένῳ δόγματι
 <lb/>περὶ χρείας ἀναπνοῆς.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="5">
-<p>Ἴδωμεν δ’ ἐφεξῆς, εἰ δύναται τρέφεσθαι τὸ
+         </div>
+         <div n="5" type="chapter">
+            <p>Ἴδωμεν δ’ ἐφεξῆς, εἰ δύναται τρέφεσθαι τὸ
 <lb/>ψυχικὸν πνεῦμα πρὸς τῆς ἀναπνοῆς. εἴπωμεν δὲ πρότερον,
 <lb/>πῶς καλοῦμέν τι ψυχικὸν πνεῦμα, ἀγνοεῖν ὁμολογοῦντες
 <lb/>οὐσίαν ψυχῆς. ἐπεὶ τοίνυν αἱ κατὰ τὸν ἐγκέφαλον κοιλίαι
@@ -941,8 +950,7 @@
 <lb/>δύναιτ’ ἂν μὴ παρέργως ἕκαστον τῶν ἐνταυθοῖ γεγραμμένων
 <lb/>ἐκλεξαμένοις.
 </p>
-</div>
-</div>
-</body>
-</text>
+         </div>
+      </body>
+   </text>
 </TEI>

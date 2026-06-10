@@ -1,120 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">    
-    <fileDesc>
-        <titleStmt>
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
             <title xml:lang="lat">Declamatio 12</title>
             <author>Libanius</author>
             <editor>Richard Foerster</editor>
-                <sponsor>University of Leipzig</sponsor>
-    <funder>European Social Fund Saxony</funder>
-    <principal>Gregory Crane</principal>
-    <respStmt>
-          <persName>Gregory R. Crane</persName>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-        </respStmt>
-        <respStmt>
-          <persName xml:id="DDD">Digital Divide Data</persName>
-          <resp>Corrected and encoded the text</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Matt Munson</persName>
-          <resp>Project Manager (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Annette Geßner</persName>
-          <resp>Project Assistant (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Thibault Clérice</persName>
-          <resp>Lead Developer (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Bruce Robertson</persName>
-          <resp>Technical Advisor</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Greta Franzini</persName>
-          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Frederik Baumgardt</persName>
-          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Simona Stoyanova</persName>
-          <resp>Project Manager (University of Leipzig), 2015</resp>
-          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-    <authority>University of Leipzig</authority>
-    <idno type="filename">tlg2200.tlg00512.opp-grc1.xml</idno>
-    <availability>
-     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-    </availability>
-    <date>2016</date>
-    <publisher>University of Leipzig</publisher>
-    <pubPlace>Germany</pubPlace>
-   </publicationStmt>
-   
-   <sourceDesc>
-    <listBibl>
-                <biblStruct>
-                    <monogr>
-                        <editor>
-                            <persName>
-                                <name xml:lang="lat">Richardus Foerster</name>
-                                <addName xml:lang="deu">Richard Foerster</addName>
-                            </persName>
-                        </editor> 
-                        <author ref="urn:cts:greekLit:tlg2200">Libanius</author>  
-                        <title xml:lang="lat">Declamationes I-XII</title>
-                        <imprint>
-                            <publisher>B.G. Teubner</publisher>
-                            <pubPlace>Leipzig</pubPlace>
-                            <date>1909</date>
-                        </imprint>
-                        <biblScope unit="volume">5</biblScope>
-                    </monogr>
-                    <ref target="https://archive.org/details/operarecensuitri05libauoft">Internet Archive</ref>     
-                </biblStruct>
+            <sponsor>University of Leipzig</sponsor>
+            <funder>European Social Fund Saxony</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName>Gregory R. Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Geßner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Greta Franzini</persName>
+               <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Frederik Baumgardt</persName>
+               <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Simona Stoyanova</persName>
+               <resp>Project Manager (University of Leipzig), 2015</resp>
+               <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>University of Leipzig</authority>
+            <idno type="filename">tlg2200.tlg00512.opp-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2016</date>
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg2200.tlg00512.opp-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <editor>
+                        <persName>
+                           <name xml:lang="lat">Richardus Foerster</name>
+                           <addName xml:lang="deu">Richard Foerster</addName>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg2200">Libanius</author>
+                     <title xml:lang="lat">Declamationes I-XII</title>
+                     <imprint>
+                        <publisher>B.G. Teubner</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1909</date>
+                     </imprint>
+                     <biblScope unit="volume">5</biblScope>
+                  </monogr>
+                  <ref target="https://archive.org/details/operarecensuitri05libauoft">Internet Archive</ref>
+               </biblStruct>
             </listBibl>
-   </sourceDesc>
-   
-  </fileDesc>
-  <encodingDesc>
-   <p>The following text is encoded in accordance with EpiDoc standards and with the
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
     CTS/CITE Architecture.</p>
-      <refsDecl n="CTS">
-        <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-      </refsDecl>
-    </encodingDesc>
-  
-  <profileDesc>
-   <langUsage>
-    <language ident="lat">Latin</language>
-     <language ident="deu">German</language>
-     <language ident="grc">Greek</language>
-   </langUsage>
-  </profileDesc>
-  
- </teiHeader>
-  <text>
-    <body><div type="edition" n="urn:cts:greekLit:tlg2200.tlg00512.opp-grc1" xml:lang="grc">
-
-<div type="textpart" subtype="chapter" n="1">
-
-<pb n="534"/>
-
-<head>XII.</head>
-
-<head>Τίμων ἐρῶν Ἀλκιβιάδου ἑαυτὸν προσαγγέλλει.</head>
-
-<head>Προθεωρία.</head>
-
-<note type="marginal">RIV 181</note> <p>Χαλεπὸν τὸ ζήτημα. δύο γὰρ | ἐναντία ἀλλή-
+         <refsDecl n="CTS">
+            <cRefPattern n="chapter"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="lat">Latin</language>
+            <language ident="deu">German</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg2200.tlg00512.opp-grc1">
+         <div n="1" type="chapter">
+            <pb n="534"/>
+            <head>XII.</head>
+            <head>Τίμων ἐρῶν Ἀλκιβιάδου ἑαυτὸν προσαγγέλλει.</head>
+            <head>Προθεωρία.</head>
+            <note type="marginal">RIV 181</note>
+            <p>Χαλεπὸν τὸ ζήτημα. δύο γὰρ | ἐναντία ἀλλή-
 
 λοις ἤθη ὑποκρίνεσθαι δεῖ, μισάνθρωπον καὶ ἐρῶντα,
 
@@ -131,26 +133,16 @@
 <lb n="10"/> νοῦ βίον κακῶς εἰπεῖν πανταχοῦ καὶ ἐρῶντος ἂν εἴη
 
 καὶ μισανθρώπου.</p>
-
-<note type="footnote">Cr = Codex Hierosolymitanus Sanctae Crucis 57</note>
-
-<note type="footnote">H = Hierosolymitanus S. Sepulcri 107</note>
-
-<note type="footnote">V = Yaticanus gr. 940</note>
-
-<note type="footnote">La = Laurentianus LVII 44</note>
-
-<note type="footnote">D = Athous S. Dionysii 342</note>
-
-<note type="footnote">Β = Barberinus E 41</note>
-
-<note type="footnote">Va = Vaticanus gr. 82</note>
-
-<note type="footnote">Ma = Matritensis 4679 (N - 49)</note>
-
-<note type="footnote">Cl = Berolinensis gr. 195 olim Claromontanus</note>
-
-<note type="footnote">2 Προθεωρία om CrHVMaCl θεωρία La 3 Χαλεπὸν
+            <note type="footnote">Cr = Codex Hierosolymitanus Sanctae Crucis 57</note>
+            <note type="footnote">H = Hierosolymitanus S. Sepulcri 107</note>
+            <note type="footnote">V = Yaticanus gr. 940</note>
+            <note type="footnote">La = Laurentianus LVII 44</note>
+            <note type="footnote">D = Athous S. Dionysii 342</note>
+            <note type="footnote">Β = Barberinus E 41</note>
+            <note type="footnote">Va = Vaticanus gr. 82</note>
+            <note type="footnote">Ma = Matritensis 4679 (N - 49)</note>
+            <note type="footnote">Cl = Berolinensis gr. 195 olim Claromontanus</note>
+            <note type="footnote">2 Προθεωρία om CrHVMaCl θεωρία La 3 Χαλεπὸν
 
 — 11 μισανθρώπου om Va 7 ἤθεσιν CrHVD edd | δὴ scripsi
 
@@ -159,14 +151,9 @@ auctore Gasda δὲ libri edd 8 προσαγγελίας scripsi coll.
 ῥ’. 537, 11; 551,17; 553,6 et 11 εἰσαγγελίας libri edd
 
 10 κακῶς scripsi e GrHLaDBMaCl καλῶς V edd | ᾔει La</note>
-
-
-
-<pb n="535"/>
-
-<p>Ἡ μελέτη.</p>
-
-<p>1. πάλιν ὑμῖν Τίμων εἰς βουλευτήριον οὐχ ὑπὲρ
+            <pb n="535"/>
+            <p>Ἡ μελέτη.</p>
+            <p>1. πάλιν ὑμῖν Τίμων εἰς βουλευτήριον οὐχ ὑπὲρ
 
 ὑμῶν τι διαπραξόμενος, οὐ γὰρ οὕτω μαίνομαι οὐδ’
 
@@ -184,9 +171,10 @@ auctore Gasda δὲ libri edd 8 προσαγγελίας scripsi coll.
 
 ἀποθανεῖν, ἔνα μὴ Ἀλκιβιάδην ἴδω τὸν καλὸν μηδ’ <lb n="10"/>
 
-ὑμῖν δι’ ἐκεῖνον ἀναγκάζωμαι προσομιλεῖν.</p></div>
-
-<div type="textpart" subtype="chapter" n="2"><p>ὧς ἴως
+ὑμῖν δι’ ἐκεῖνον ἀναγκάζωμαι προσομιλεῖν.</p>
+         </div>
+         <div n="2" type="chapter">
+            <p>ὧς ἴως
 
 μὲν ἐξῆν ἐπὶ τῆς ἐσχατιᾶς οἰκεῖν καὶ πόρρω τῆς ἀν-
 
@@ -203,8 +191,7 @@ auctore Gasda δὲ libri edd 8 προσαγγελίας scripsi coll.
 <note type="footnote">7 Dem. p. 137,2; 292,26 12 Luc. Tim. § 6. Alciphr.
 
 ep. m 34,2 17 cf. p. 551,13</note>
-
-<note type="footnote">1 Ἡ μελέτη om CrVaMaCl 3 ἡμῶν BMaCl | τί HMa
+               <note type="footnote">1 Ἡ μελέτη om CrVaMaCl 3 ἡμῶν BMaCl | τί HMa
 
 ὢ | διαπραξόμενος Ma sed ὁ in ras m 2 διαπραξάμενος CrHV
 
@@ -213,8 +200,7 @@ ep. m 34,2 17 cf. p. 551,13</note>
 lex. Darmstad. fol. 87 v 5 ἰσχύσει D Darmst | καὶ ante καθ’
 
 D | ἀποστῆσαι Ma sed ’ν supra σ’ (2) m 2 ἀπωσθῆναι Darmst</note>
-
-<note type="footnote">6 ἐξαρχῆς CID 7 τί HMaCl τὶ D | χρήζων HDCl Mor
+               <note type="footnote">6 ἐξαρχῆς CID 7 τί HMaCl τὶ D | χρήζων HDCl Mor
 
 | παρ’ — 8 που in marg Μα 2 om Γέ 8 ὑμῖν HVLaB |
 
@@ -229,24 +215,21 @@ reposui e libris sed παρ’ ὑμῶν om D ἀποθανεῖν παρ’ �
 μήθ’ libri edd 11 ἀναγκάζωμαι reposui e libris cum lacobsio
 
 Lect 96 ἀναγκάζομαι edd | ὧς om VD 12 που post πόρρω Va</note>
-
-<note type="footnote">14 ἀπήγαγε? cf. p. 548, 4 15 μηδὲ reposui e libris μὴ δὲ
+               <note type="footnote">14 ἀπήγαγε? cf. p. 548, 4 15 μηδὲ reposui e libris μὴ δὲ
 
 CrHDB VaMaCl) ἡ edd sed „verba ἢ μισάνθρωπος smpicor scho-
 
 lium esse, aut certe legendum ὁ μισάνθρωπος“ Re 17 ἐξέστην D</note>
-
-
-
-<pb n="536"/>
+               <pb n="536"/>
 
 παρῆκταί μοι τὰ τῶν λογισμῶν, ἀλλὰ τοσοῦτον γοῦν
 
 μοι καταλείπεται ἐπιγινώσκειν δύνασθαι τὴν συμφορὰν
 
-καὶ τὴν ἀπαλλαγὴν ἥτις ἔσται ζητεῖν.</p></div>
-
-<div type="textpart" subtype="chapter" n="3"><p>ἐρῶν δὲ
+καὶ τὴν ἀπαλλαγὴν ἥτις ἔσται ζητεῖν.</p>
+         </div>
+         <div n="3" type="chapter">
+            <p>ἐρῶν δὲ
 
 Ἀλκιβιάδου διὰ τὴν ὥραν τοῦ σώματος καὶ μαινόμενος
 
@@ -269,8 +252,8 @@ lium esse, aut certe legendum ὁ μισάνθρωπος“ Re 17 ἐξέστ�
 τῶν παρ’ ἐκείνου προπόσεων. οὐδὲν γὰρ ἐμοὶ προτι-
 
 μότερον τοῦ μετὰ τῶν ἀντεραστῶν ἀπολωλέναι.</p>
-
-<lb n="15"/> <p>4. Ἐμακάριζον οὖν πρότερον ἐμαυτὸν ἐπὶ τῇ μισ-
+            <lb n="15"/>
+            <p>4. Ἐμακάριζον οὖν πρότερον ἐμαυτὸν ἐπὶ τῇ μισ-
 
 ανθρωπίᾳ καὶ μέγα μοι τοῦτο ἐνόμιζον ὑπάρχειν
 
@@ -281,40 +264,31 @@ lium esse, aut certe legendum ὁ μισάνθρωπος“ Re 17 ἐξέστ�
 <note type="footnote">1 Lycurg. Leocr, § 92 p. 159, 20 5 Marian. schol. epigr.
 
 Anth. Plan. 201, 7</note>
-
-<note type="footnote">2 &lt;τὸ&gt; s ἐπιγινώσκειν Gasda ἐπιγινώσκειν Ma sed ν(2)
+               <note type="footnote">2 &lt;τὸ&gt; s ἐπιγινώσκειν Gasda ἐπιγινώσκειν Ma sed ν(2)
 
 m 2 3 ἐστὶ D 5 γὰρ — ἀνῆψε in lac 15 fere litt om D</note>
-
-<note type="footnote">6 καὶ delendum vel post μάλιστα transponendum censet
+               <note type="footnote">6 καὶ delendum vel post μάλιστα transponendum censet
 
 Gaada | διατοῦτο HVaMaCl | αὐτὸν om V 7 παρέσχεν Cl</note>
-
-<note type="footnote">8 κατηνάγκασε La sed ’ν ἴνα add s | μήτ’ (2) parum certum
+               <note type="footnote">8 κατηνάγκασε La sed ’ν ἴνα add s | μήτ’ (2) parum certum
 
 in Cr μὴ δ’ HLa μηδ’ V 9 ἄλλον scripsi e CrHVLaDB
 
 MaCl ἄλλων Va edd | ὄψομαι CrHVLaD | εὔχομαι — 13 προ-
 
 πόσεων praemissis verbis ἐκ τῆς τοῦ Τίμωνος citat Plan fol 105 r</note>
-
-<note type="footnote">10 καὶ — 11 καὶ om Plan 11 λύσαι Cl 12 ἀλλάξα-
+               <note type="footnote">10 καὶ — 11 καὶ om Plan 11 λύσαι Cl 12 ἀλλάξα-
 
 σθαι reposui e CrHVLaDB Plan ἀνταλλάξασθαι VaMaCl edd</note>
-
-<note type="footnote">13 ἐκεῖνον Im | προπώσεων Va sed π(1) et ω(1) in ras m 2
+               <note type="footnote">13 ἐκεῖνον Im | προπώσεων Va sed π(1) et ω(1) in ras m 2
 
 et πρὸς in marg τροπώσεων MaCl Plan 14 ἀντεραστῶν Va
 
 sed γρ ἰσεραστῶν in marg m 2 ἐραστῶν D 15 ἐμαυτὸν πρό-
 
 τερον D 17 ἀγαθὸν ὑπάρχειν Va | ἥτις La sed τις inser κ’</note>
-
-<note type="footnote">18 κακὸν D Mor | πάντων D</note>
-
-
-
-<pb n="537"/>
+               <note type="footnote">18 κακὸν D Mor | πάντων D</note>
+               <pb n="537"/>
 
 δ’ εὐτυχέστερος ἡμῶν Ἀλκιβιάδης ἀναπέφηνεν. ἐμοὶ
 
@@ -333,8 +307,7 @@ sed γρ ἰσεραστῶν in marg m 2 ἐραστῶν D 15 ἐμαυτὸν
 τὸ κώνειον. ἒν γὰρ καὶ ταὐτὸν ἀφ’ ἑκατέρου τούτου
 
 γένεται.</p>
-
-<p>5. Ἀτυχῶ δ’ οὐ νῦν πρῶτον, ὦ πεντακόσιοι, θα- <lb n="10"/>
+            <p>5. Ἀτυχῶ δ’ οὐ νῦν πρῶτον, ὦ πεντακόσιοι, θα- <lb n="10"/>
 
 νάτου καὶ προσαγγελίας ἄξια, οὐδ’ ἐντεῦθεν ὅθεν τις
 
@@ -348,17 +321,17 @@ sed γρ ἰσεραστῶν in marg m 2 ἐραστῶν D 15 ἐμαυτὸν
 
 ἐπειδήπερ ἀναγκαῖον ἦν τὸ τοιοῦτον εἰς φῶς παρελ-
 
-θεῖν, ἕτερόν τι ζῶον, ἀλλ’ οὐκ ἄνθρωπον εἶναι.</p></div>
-
-<div type="textpart" subtype="chapter" n="6"><p>τί
+θεῖν, ἕτερόν τι ζῶον, ἀλλ’ οὐκ ἄνθρωπον εἶναι.</p>
+         </div>
+         <div n="6" type="chapter">
+            <p>τί
 
 γὰρ ἀνθρώπου μιαρώτερον; τί δέ; οὐχ ἥμερον μὲν τὸ
 
 ζῶον ἄχρι ῥήματος, ἄγριον δὲ καὶ ἀπηνὲς τοῖς ἔργοις;
 
 <note type="footnote">18 Luc. gall. § 27 19 cf. p. 548,8; 551,12. Thuc. V 111, 3</note>
-
-<note type="footnote">1 δὲ ΗΒ | ἀλκιβιάδης Ma sed ἡ in ras m 3 3 μόνον om
+               <note type="footnote">1 δὲ ΗΒ | ἀλκιβιάδης Ma sed ἡ in ras m 3 3 μόνον om
 
 D inser Va 2 | δ’ om D 4 ἀλκιβια La sed οὐ add s ἀλκι-
 
@@ -375,8 +348,7 @@ scripsi auctoribus Gasda et Cobeto CoU 283 coll p. 552, 13
 ante ἀνθρώπους inser Ma 3 15 μὴ δὲ HDB VaMaCl IG τὸν
 
 Gasda | φῶ παρελθὼν La 17 ἄνθρωπος La sed ’ς in ras s</note>
-
-<note type="footnote">18 post δέ signum interrogationis posui colon Ma punctum
+               <note type="footnote">18 post δέ signum interrogationis posui colon Ma punctum
 
 D comma VB edd om HLa VaCl | οὐχ ἥμερον — 538, 9 ἐστί
 
@@ -385,10 +357,7 @@ praemissis verbis τῆς μελέτης ἐν ᾖ Τξων ἑαυτὸν πρ
 μελέτ. κδ) citat Macar fol. 85 | οὐχ — 19 ῥήματος] ἄχρι μὲν ῥή-
 
 ἤμερον ἥμερον ζῶον ὁ ἄνθρωπος Macar</note>
-
-
-
-<pb n="538"/>
+               <pb n="538"/>
 
 ποία γὰρ λεόντων ἐπ’ ἀλλήλους στρατεία; ἐία; τίς πόλεμος
 
@@ -400,9 +369,10 @@ praemissis verbis τῆς μελέτης ἐν ᾖ Τξων ἑαυτὸν πρ
 
 <lb n="5"/> νοῖς καὶ πλούτου καὶ χρημάτων ἐπιθυμία; τίνας κώ-
 
-μους ἢ μέθας, τίνας ἴσασι καὶ μοιχείας;</p></div>
-
-<div type="textpart" subtype="chapter" n="7"><p>πάντων
+μους ἢ μέθας, τίνας ἴσασι καὶ μοιχείας;</p>
+         </div>
+         <div n="7" type="chapter">
+            <p>πάντων
 
 ἐλεύθερον τῶν τοιούτων κακῶν τὸ τῶν θηρίων γένος.
 
@@ -420,9 +390,10 @@ praemissis verbis τῆς μελέτης ἐν ᾖ Τξων ἑαυτὸν πρ
 
 νοι δὲ ἀπὸ τῶν αἰσχίστων καταλύετε τὸν βίον ἐν τοῖς
 
-<lb n="15"/> δεινοτάτοις ἐπιτηδεύμασι.</p></div>
-
-<div type="textpart" subtype="chapter" n="8"><p>τὰ πρῶτα τῆς ἡλικίας
+<lb n="15"/> δεινοτάτοις ἐπιτηδεύμασι.</p>
+         </div>
+         <div n="8" type="chapter">
+            <p>τὰ πρῶτα τῆς ἡλικίας
 
 ὑμῖν πορνεῖαι καὶ μοιχεῖαι καὶ τὰ αἴσχιστα πληροῦσι,
 
@@ -431,8 +402,7 @@ praemissis verbis τῆς μελέτης ἐν ᾖ Τξων ἑαυτὸν πρ
 τις ἂν εἴποι κακόν, τὰ δὲ τοῦ γήρως εἰρηνικὰ μέν,
 
 <note type="footnote">8 Eur. lon. 923</note>
-
-<note type="footnote">1 ποῖα ὢ Macar | ἀλλήλοις Macar | voce στρατεία des Cr
+               <note type="footnote">1 ποῖα ὢ Macar | ἀλλήλοις Macar | voce στρατεία des Cr
 
 fol 52 reliqua usque ad σαυτόν p. 546, 5 perierunt στρατιά Η
 
@@ -451,8 +421,7 @@ I καὶ inserui e libris Macar om edd 7 κακῶν τῶν θηρίων
 Macar | τίς Ἠῶ 9 ἐστίν Οἶ’ Macar | γιγνώσκειν HV Macar
 
 10 ψεύδεσθε Va sed φθέγγεσθε in marg 12 ἡμέτερον Va</note>
-
-<note type="footnote">13 μεστὸν reposui e libris cum Gasda μεστῶν edd
+               <note type="footnote">13 μεστὸν reposui e libris cum Gasda μεστῶν edd
 
 16 ὑμῖν Ma sed ὁ in ras m 2 ἡμῖν Β | ληροῦσι Va sed ’π’ ante-
 
@@ -465,10 +434,7 @@ pos m3 et πληροῦσι in marg, Ma sed ras 1 litt ante λ et γρ
 ὅτι VaCl 18 τις ἂν εἴποι Mor sed γρ ἂν τις εἴποι in marg
 
 ἂν εἴποι τις D | τίς Ἠῶ | εἴπῃ Gasda</note>
-
-
-
-<pb n="539"/>
+               <pb n="539"/>
 
 ὑπερβολὴν δ’ οὖν ἔχοντα συμφορῶν. διαδέχεται γὰρ
 
@@ -477,8 +443,7 @@ pos m3 et πληροῦσι in marg, Ma sed ras 1 litt ante λ et γρ
 διαρρήγνυσθε δραχμῶν ἐλαχίστων τοὺς θεούς, τοὺς
 
 νόμους, τὴν ὁσίαν, πάντα ἀποδιδόμενοι.</p>
-
-<p>9. Λέγω δὲ οὐ καθ’ ὑμῶν ταῦτα μόνον, κατὰ <lb n="5"/>
+            <p>9. Λέγω δὲ οὐ καθ’ ὑμῶν ταῦτα μόνον, κατὰ <lb n="5"/>
 
 πάντων δὲ ἀνθρώπων ἀπλῶς καὶ τῆς κοινῆς φύσεως.
 
@@ -505,8 +470,7 @@ batur 2 κἀνταῦθα scripsi ex HVLaDBVa sed in hoc e
 m 3 et γρ in marg Mor κἀνταῦτα edd | ἔχοντες in lac 7 litt
 
 om Β „malim ἑκόντες“ Re cancellavi ut ex ἔχοντα (1. 1) ortum</note>
-
-<note type="footnote">6 πάντων δὲ scripsi ex HVLaD δὲ πάντων BVaMaCl
+               <note type="footnote">6 πάντων δὲ scripsi ex HVLaD δὲ πάντων BVaMaCl
 
 edd 7 τινος om D | ταύτα Va sed’ suprascr m 2 8 colon
 
@@ -545,16 +509,14 @@ ras s et γρ ἐγχειρεῖ suprascr s δωροδοκεῖν edd δωροδ
 Re Cobet | τὰ Ma sed τε suprascr ’ | τῆς scripsi e La ἐς Va
 
 εἰς reliqui libri edd | ἐπιορκίαν D | ἕτοιμος D</note>
-
-
-
-<pb n="540"/>
+               <pb n="540"/>
 
 φιλοσοφεῖν ἐπιχειρεῖ· γόης ἐστὶ καὶ τὰ οὐράνια πολυ-
 
-πραγμονεῖ.</p></div>
-
-<div type="textpart" subtype="chapter" n="10"><p>Τίμων μισάνθρωπος, ἀλλ’ Ἀλκιβιάδης
+πραγμονεῖ.</p>
+         </div>
+         <div n="10" type="chapter">
+            <p>Τίμων μισάνθρωπος, ἀλλ’ Ἀλκιβιάδης
 
 οὐκ ἐᾷ σωφρονεῖν. ταύτης ἐγενόμην τῆς φύσεως, τοῦ-
 
@@ -570,9 +532,10 @@ Re Cobet | τὰ Ma sed τε suprascr ’ | τῆς scripsi e La ἐς Va
 
 τῆς ἐσπέρας. Ἡράκλεις, τῆς διαδοχῆς τῶν κακῶν καὶ
 
-<lb n="10"/> τῆς συνεχείας.</p></div>
-
-<div type="textpart" subtype="chapter" n="11"><p>ἀλλ’ ἐπειδὴ θεῶν τις ἀφείλετό μου
+<lb n="10"/> τῆς συνεχείας.</p>
+         </div>
+         <div n="11" type="chapter">
+            <p>ἀλλ’ ἐπειδὴ θεῶν τις ἀφείλετό μου
 
 τὴν ἀχλὺν καὶ τὴν ψυχὴν ἐκάθηρε τὴν ἐμὴν καὶ κατὰ
 
@@ -593,20 +556,16 @@ Re Cobet | τὰ Ma sed τε suprascr ’ | τῆς scripsi e La ἐς Va
 τεκμαιρόμενος, πόλεμον δ’ ἄσπονδον πρὸς τὴν φύσιν
 
 <note type="footnote">5 cf. p. 537, 10 10 Il. ἑ 127 12 Plat. Phaedr. p. 229 E</note>
-
-<note type="footnote">15 Alciphr. ep. III 34, 2 18 Soph. Oed. R. 795 c. schol.
+               <note type="footnote">15 Alciphr. ep. III 34, 2 18 Soph. Oed. R. 795 c. schol.
 
 Suid. B. V. ἀστρονομία (Kock Herm. XXI 874. Nauck Mel. gr.
 
 VI 1 p. 54 not. 2). Eustath. ad Od. ἑ 276 p. 1535, 58. Diogen.
 
 prov. II 66. Luc. Icar. ’ξ 1. Ael. nat. an. VII 48. Synes. ep. 7</note>
-
-<note type="footnote">19 cf. ad t. III 261, 10 | Alciphr. 1. 1.</note>
-
-<note type="footnote">2 τίς τις B) ἄνθρωπος HVLaDB 7 ληστεῖαι VaMaCl</note>
-
-<note type="footnote">8 ἐπὶ Va et ex ἀπὸ corr Ma 3 10 τίς HMaCl 12 τὸ
+               <note type="footnote">19 cf. ad t. III 261, 10 | Alciphr. 1. 1.</note>
+               <note type="footnote">2 τίς τις B) ἄνθρωπος HVLaDB 7 ληστεῖαι VaMaCl</note>
+               <note type="footnote">8 ἐπὶ Va et ex ἀπὸ corr Ma 3 10 τίς HMaCl 12 τὸ
 
 γράμμα om Re | ποτὲ V 13 καὶ(2) inserui e libris om edd
 
@@ -619,10 +578,7 @@ sed ἡ in ras 4 litt m 4 | ἐπ’ in ras Cl 2 om Va | ἐμαυτοῦ Οἶ�
 ἐμαυ in ras m 2 17 ἐνταῦθα V 18 ἐκκλίνων ante ἄστροις
 
 D | τὸ inser Va 4 | τολοιπὸν edd</note>
-
-
-
-<pb n="541"/>
+               <pb n="541"/>
 
 ἀναδεξάμενος, ζηλωτόν τινα καὶ μακάριον διῆγον βίον
 
@@ -636,9 +592,10 @@ D | τὸ inser Va 4 | τολοιπὸν edd</note>
 
 ῥᾶς ταῖς ἀκοαῖς, εἴ πού τις ἀνθρώπων κτύπος προσιόν-
 
-των ἠκούετο.</p></div>
-
-<div type="textpart" subtype="chapter" n="12"><p>καὶ τὸν τοῖχον δ’ ἐξώρυττον, εἴπου
+των ἠκούετο.</p>
+         </div>
+         <div n="12" type="chapter">
+            <p>καὶ τὸν τοῖχον δ’ ἐξώρυττον, εἴπου
 
 τινὰ γεγραμμένον ἴδοιμι ἄνθρωπον, καὶ τὴν ἐμαυτοῦ
 
@@ -662,15 +619,14 @@ D | τὸ inser Va 4 | τολοιπὸν edd</note>
 
 καὶ ψιλῆς ὑπονοίας ἠβουλόμην παρ’ ὑμῖν μνημονεύε-
 
-σθαι.</p></div>
-
-<div type="textpart" subtype="chapter" n="13"><p>τοσοῦτον δέ μοι περιῆν τοῦ φίλτρου τοῦ
+σθαι.</p>
+         </div>
+         <div n="13" type="chapter">
+            <p>τοσοῦτον δέ μοι περιῆν τοῦ φίλτρου τοῦ
 
 πρὸς ἄνθρωπον ὥστε καὶ μέχρι θεῶν καὶ τῶν ἀγαλ- <lb n="20"/>
-
-<note type="footnote">19 cf. p. 561, 11 20 Luc. Tim. § 34. Arist. Av. 1547 sq.</note>
-
-<note type="footnote">3 καὶ — 7 ἠκούετο citat Plan 1. 1. 4 προσῄει Va | με-
+               <note type="footnote">19 cf. p. 561, 11 20 Luc. Tim. § 34. Arist. Av. 1547 sq.</note>
+               <note type="footnote">3 καὶ — 7 ἠκούετο citat Plan 1. 1. 4 προσῄει Va | με-
 
 ν
 
@@ -695,10 +651,7 @@ corr m 3, Οἶ’ 20 ἄνθρωπον scripsi ex HBVa sed in hoc ν(2)
 in σ’ corr m 4, Ma sed in hoc γρ ἀνθρώπους in marg ’, ὢ
 
 ἀνθρώπους VLaD edd</note>
-
-
-
-<pb n="542"/>
+               <pb n="542"/>
 
 μάτων ἐξετείνετο τὸ μῖσος, ὅτι δὴ τούτους οἶ κατάρα-
 
@@ -714,9 +667,10 @@ in σ’ corr m 4, Ma sed in hoc γρ ἀνθρώπους in marg ’, ὢ
 
 &lt;πλέον&gt; s τῶν ἀνθρώπων τοὺς κύνας πρέπειν
 
-πρὸς τὴν εἰκασίαν πιστεύσαντες.</p></div>
-
-<div type="textpart" subtype="chapter" n="14"><p>ηὐχόμην δὲ τὴν
+πρὸς τὴν εἰκασίαν πιστεύσαντες.</p>
+         </div>
+         <div n="14" type="chapter">
+            <p>ηὐχόμην δὲ τὴν
 
 Φαέθοντος διφρείαν ἐπιστῆναί ποτε καὶ τὸν πολὺν
 
@@ -729,8 +683,8 @@ in σ’ corr m 4, Ma sed in hoc γρ ἀνθρώπους in marg ’, ὢ
 τὴν γῆν ὧσπέρ τινος νοσήματος ἀπαλλαγῆναι καθαρ-
 
 θεῖσαν τῷ πυρί.</p>
-
-<lb n="15"/> <p>15. Ταῦτα ἐλογιζόμην, τοῦτον ἔζων τὸν βίον, ἐπὶ
+            <lb n="15"/>
+            <p>15. Ταῦτα ἐλογιζόμην, τοῦτον ἔζων τὸν βίον, ἐπὶ
 
 τοσαύτης διῆγον εὐδαιμονίας καὶ τὸ καλὸν πρόσρημα
 
@@ -745,8 +699,7 @@ in σ’ corr m 4, Ma sed in hoc γρ ἀνθρώπους in marg ’, ὢ
 <note type="footnote">6 Diod. Sic. I 86 et 87 8 Xen. comm. III 10, 1
 
 9 cf. t. II 218, 2 i Luc Tim. ’ξ 4</note>
-
-<note type="footnote">1 μοι post ἐξετείνετό D edd delevi, ἐπὶ inser Ma 3
+               <note type="footnote">1 μοι post ἐξετείνετό D edd delevi, ἐπὶ inser Ma 3
 
 2 αὐτῶν HVaMaCl 3 ἐμισοῦμεν Mor 4 καθὲν La
 
@@ -757,8 +710,7 @@ Cl τὸν τύπον ἔχοντα D edd | κατεσκευάζον La sed �
 et ὁ ex ὢ corr s | πολὺ Va sed λ in ras m 4 πολλοὶ 7 πλέον
 
 inBerui om libri πρότερον edd 9 διφρείαν Ma sed ’φ’ in ras m 3</note>
-
-<note type="footnote">10 θρυλλοῦσιν VBMaCl edd θρυλλοῦσι Va cf. p. 555,19;
+               <note type="footnote">10 θρυλλοῦσιν VBMaCl edd θρυλλοῦσι Va cf. p. 555,19;
 
 t. II 403, 3; IV 152, 14; 245, 13 11 ἂν om D 13 voce γῆν
 
@@ -769,10 +721,7 @@ des La fol 99 quae sequuntur usque ad p. 547, 13 διαρραγείς
 uno folio amisso perierunt 18 ἐκ H | λαμβάνων Va 19 τις
 
 HVaMaCl</note>
-
-
-
-<pb n="543"/>
+               <pb n="543"/>
 
 προθέσεως. καὶ θεῖόν τι φάντασμα καὶ κάλλος οὐρά-
 
@@ -786,9 +735,10 @@ HVaMaCl</note>
 
 πολλῶν ἀκούων, πάντας ὁρῶν, θορύβου καὶ κραυγῆς <lb n="6"/>
 
-ἀνεχόμενος.</p></div>
-
-<div type="textpart" subtype="chapter" n="16"><p>τῆς ἀπιστίας, Ἄπολλον, καὶ τῆς ἐξαί-
+ἀνεχόμενος.</p>
+         </div>
+         <div n="16" type="chapter">
+            <p>τῆς ἀπιστίας, Ἄπολλον, καὶ τῆς ἐξαί-
 
 φνης μεταβολῆς. ἐσχατιὰ μὲν ἡ φιλτάτη καὶ ἡ συνήθης
 
@@ -800,9 +750,10 @@ HVaMaCl</note>
 
 δεῖσθαι καὶ πίνειν ἄκρατον καὶ μεθύειν μισάνθρωπος
 
-ὤν.</p></div>
-
-<div type="textpart" subtype="chapter" n="17"><p>οὐκ ἦν ἄρα τὸ περὶ Ἡρακλέους λεγόμενον μῦθος
+ὤν.</p>
+         </div>
+         <div n="17" type="chapter">
+            <p>οὐκ ἦν ἄρα τὸ περὶ Ἡρακλέους λεγόμενον μῦθος
 
 ἄλλως καὶ ποιητῶν τις ἐξουσία, ἀλλὰ κἀκεῖνον βάρβαρός
 
@@ -811,16 +762,14 @@ HVaMaCl</note>
 ἠνάγκασεν ἑαυτῇ τῷ κάλλει δέσμιον ἔχουσα. ἀλλ’ ἐκεῖ-
 
 <note type="footnote">15 cf. t. II 568, 20. Luc. hist. conscr. ’ξ </note>
-
-<note type="footnote">14 Φᾶσί φησὶ Ma) περὶ Ἡρακλέους, ὡς ἄρα τις ἐν βαρβά-
+               <note type="footnote">14 Φᾶσί φησὶ Ma) περὶ Ἡρακλέους, ὡς ἄρα τις ἐν βαρβά-
 
 ροις γυνὴ φαρμακὶς Ὀμφάλη τοὔνομα ἐπῳδαῖς τισι τί Ma) καὶ
 
 γοητείαις τοῦτον εἶλε καὶ ὥσπερ ἀνδραπόδῳ τούτῳ ἐχρῆτο κατὰ
 
 τὰ ἐρωτικά Va 3 Ma 2</note>
-
-<note type="footnote">2 ὑπελθὸν Ma sed ὑπελθ in ras m 3 ὑπελθὼν Cl 3 τὸ
+               <note type="footnote">2 ὑπελθὸν Ma sed ὑπελθ in ras m 3 ὑπελθὼν Cl 3 τὸ
 
 αὐτὸ reposui e libris ταὐτὸ edd u signum interrogationis
 
@@ -841,10 +790,7 @@ Gasda ἄνθινα Cobet Coll 283 coll Athen. p. 521 Β et Strab.
 p. 15 (Misc. crit. 107) 11 ταινίαις reposui ex HDVaMaCl
 
 ταινίας Β edd 14 ἄλλος Οἶ’ | τίς HMaCl 16 ἑαυτῇ Va sed</note>
-
-
-
-<pb n="544"/>
+               <pb n="544"/>
 
 νος μὲν σωφρονῶν ἐπὶ τὴν πυρὰν ἐκεῖθεν ὥρμησεν,
 
@@ -853,8 +799,8 @@ p. 15 (Misc. crit. 107) 11 ταινίαις reposui ex HDVaMaCl
 των ὁ τοῦ Κλεινίου τῆς Ὀμφάλης εἰς τὸ διαφθείρειν
 
 ἐστίν.</p>
-
-<lb n="5"/> <p>18. Ἕως οὖν ἔτι σωφρονῶ καὶ τῶν ὀφθαλμῶν
+            <lb n="5"/>
+            <p>18. Ἕως οὖν ἔτι σωφρονῶ καὶ τῶν ὀφθαλμῶν
 
 ἄπεστιν Ἀλκιβιάδης τῶν ἐμῶν, ἐπινεύσατε πρὸς τὴν
 
@@ -872,9 +818,10 @@ p. 15 (Misc. crit. 107) 11 ταινίαις reposui ex HDVaMaCl
 
 ζομαι καὶ παραδίδωμι δέσμιον ἐμαυτὸν καὶ πάντων
 
-προτιμότατον ἡγοῦμαι τὸ συνεῖναι τῷ μειρακίῳ.</p></div>
-
-<div type="textpart" subtype="chapter" n="19"><p>τὴν
+προτιμότατον ἡγοῦμαι τὸ συνεῖναι τῷ μειρακίῳ.</p>
+         </div>
+         <div n="19" type="chapter">
+            <p>τὴν
 
 15 φύσιν δὲ ὅταν λογίσωμαι πάλιν καὶ τὸ κακὸν ὅσον
 
@@ -885,8 +832,7 @@ p. 15 (Misc. crit. 107) 11 ταινίαις reposui ex HDVaMaCl
 οὕτω δύναμαι, μὰ τοὺς θεούς, κατ’ ἐμαυτοῦ δὲ χρῶ-
 
 <note type="footnote">12 Her. VI 94</note>
-
-<note type="footnote">2 δ’ H | ἐπὶ τὸ scripsi auctore lacobsio Anth Pal III 250
+               <note type="footnote">2 δ’ H | ἐπὶ τὸ scripsi auctore lacobsio Anth Pal III 250
 
 coll p. 546,5 et 560,10 ἐπί τι libri edd | ὅσον οὔπω lacobs
 
@@ -907,30 +853,25 @@ quid?“ d ἐστὶν libri edd ἔστη lacobs Lect 97 | ἐμαυτὸν Ma
 κατ’ ἐμαυτοῦ suprascr m 2 ἐμαυτοῦ B ἐμαυτῷ coni Gasda
 
 ω</note>
-
-<note type="footnote">17 ἐρᾷ D | οὐδὲ οὕτω om in lac 8 litt B | οὐδὲ Ma sed
+               <note type="footnote">17 ἐρᾷ D | οὐδὲ οὕτω om in lac 8 litt B | οὐδὲ Ma sed
 
 δὲ in ras m 3 οὔτε Πα 18 ἐμοῦ VaMa | χρῶμαι scripsi ex
 
 HD χρώμενος Β VaMaCl edd</note>
-
-
-
-<pb n="545"/>
+               <pb n="545"/>
 
 μαι τῷ τρόπῳ καὶ τὸν δήμιον ἤδη καὶ τὸ κώνειον
 
 ὥσπερ ὤνιόν τι φάρμακον καὶ ἀλεξίκακον προσδοκῶ.</p>
-
-<p>20. Ὅθεν δ’ εἰς τοῦτο ἤχθην, γελάσετε μὲν οἶδ’
+            <p>20. Ὅθεν δ’ εἰς τοῦτο ἤχθην, γελάσετε μὲν οἶδ’
 
 ὅτι πάντες ἀκούσαντες, λέξω δὲ ὅμως. τί γὰρ δεῖ τῷ
 
 λόγῳ παραιτεῖσθαι νῦν ἃ τοῖς ἔργοις ὑπέστην | <note type="marginal">RIV 187</note>
 
-ὁ κακοδαίμων;</p> <lb n="6"/>
-
-<p>Ἠν ι Ἦν ἐπ᾿ ἐρημίας ἐμαυτῷ διαλεγόμενος
+ὁ κακοδαίμων;</p>
+            <lb n="6"/>
+            <p>Ἠν ι Ἦν ἐπ᾿ ἐρημίας ἐμαυτῷ διαλεγόμενος
 
 ἡσυχίας ἀπολαύων καὶ πολλὰ καταρώμενος τῇ Τύχῃ,
 
@@ -946,9 +887,10 @@ HD χρώμενος Β VaMaCl edd</note>
 
 ἐμοῦ ταῖς βώλοις καὶ τὰς προσηκούσας αὐτῷ βλασφη-
 
-μίας ἀκούων, ἴως ἦλθε πάλιν.</p></div>
-
-<div type="textpart" subtype="chapter" n="21"><p>καὶ παρῆν Ἀλκι- <lb n="15"/>
+μίας ἀκούων, ἴως ἦλθε πάλιν.</p>
+         </div>
+         <div n="21" type="chapter">
+            <p>καὶ παρῆν Ἀλκι- <lb n="15"/>
 
 βιάδης σεμνὸς ἀφ’ ἱματίου ὥσπερ πάγην τινὰ καθ’
 
@@ -959,14 +901,12 @@ HD χρώμενος Β VaMaCl edd</note>
 ἐσχατιᾶς ἥκω. μὴ δὴ μισάνθρ|ωπος ἄγαν καὶ
 
 <note type="footnote">13 cf. ῥ’. 559, 3. Luc. Tim. ’ξ 34. Alciphr. ep. III 34, 2</note>
-
-<note type="footnote">1 δῆμον Β 4 πάντες οἷδ’ ὅτι H | δὴ et 5 παραιτεῖσθε
+               <note type="footnote">1 δῆμον Β 4 πάντες οἷδ’ ὅτι H | δὴ et 5 παραιτεῖσθε
 
 Wolf et γρ in marg Mor qui δὴ et δεῖ παραιτεῖσθαι coni
 
 7 αὐτῷ D 8 καταρώμενος Ma sed καταχρώμενος suprascr m3</note>
-
-<note type="footnote">9 ὅτι VaMa | πρὸ Va sed ρὸ in ras m 2 | „malim παρέστησε“
+               <note type="footnote">9 ὅτι VaMa | πρὸ Va sed ρὸ in ras m 2 | „malim παρέστησε“
 
 Re I με Η 10 τὸ(2) om D U καὶ ante πρὸς VaMaCl |
 
@@ -987,10 +927,7 @@ cobsio 11. 11. coll p. 559,3; t. IV 397,9 et 618,11 R τοῖς D
 16 ἐφ’ Wolf et γρ in marg Mor | ἱματίων D 18 ἐπὶ ante
 
 τῆς Va sed del m 2 Ma</note>
-
-
-
-<pb n="546"/>
+               <pb n="546"/>
 
 πρὸς τοὺς ὁμοίους. καὶ τὰ τοιαῦτα πρὸς ἡμᾶς διε-
 
@@ -1008,9 +945,10 @@ cobsio 11. 11. coll p. 559,3; t. IV 397,9 et 618,11 R τοῖς D
 
 πρὸς Σωκράτην ἀφῖχθαι καί τινι τῶν ἐραστῶν
 
-διαλέγεσθαι.</p></div>
-
-<div type="textpart" subtype="chapter" n="22"><p>πολὺ τὸ καθ’ Ἀλκιβιάδη,
+διαλέγεσθαι.</p>
+         </div>
+         <div n="22" type="chapter">
+            <p>πολὺ τὸ καθ’ Ἀλκιβιάδη,
 
 <lb n="10"/> τῶν σῶν ἐπιτηδευμάτων κεχώρισται, ἡ πενία
 
@@ -1027,8 +965,7 @@ cobsio 11. 11. coll p. 559,3; t. IV 397,9 et 618,11 R τοῖς D
 <note type="footnote">4 Luc. dial. mer. 15,2 7 Xen. conv. 1,2. Plat. apoL
 
 p. 20 A 14 cf. p. 558, 1</note>
-
-<note type="footnote">2 ἐσωφρόνουν scripsi coll p. 540, 3; 544, 5 ἐγὼ ἐσωφρόνουν ἔτι
+               <note type="footnote">2 ἐσωφρόνουν scripsi coll p. 540, 3; 544, 5 ἐγὼ ἐσωφρόνουν ἔτι
 
 Β edd ἐφρόνουν ἔτι HDVa sed in lioc ἐγὼ post ἐφρόνουν in marg
 
@@ -1065,18 +1002,16 @@ om reliqui libri sed scriptura in Cr parum certa | ὅσον ante
 ἡ inserendum coni Gasda ἡ om HDBMaCl 13 mgBVa sed
 
 in hoc in ἡ corr m 3, MaCl</note>
-
-
-
-<pb n="547"/>
+               <pb n="547"/>
 
 αὐχεῖς, ἐμοὶ δὲ ἀπεναντίον ὁ τρόπος. μισῶ γὰρ
 
 οὐκ Ἀθηναίους μόνον, ἀλλὰ καὶ πάντας ὅσοι
 
-τοιαύτης εἰσὶ φύσεως.</p></div>
-
-<div type="textpart" subtype="chapter" n="23"><p>τί δὲ τὴν Ταυρέου
+τοιαύτης εἰσὶ φύσεως.</p>
+         </div>
+         <div n="23" type="chapter">
+            <p>τί δὲ τὴν Ταυρέου
 
 παλαίστραν καταλιπὼν | καὶ τὸ πολὺ τῶν <note type="marginal">RIV 188</note>
 
@@ -1095,8 +1030,7 @@ in hoc in ἡ corr m 3, MaCl</note>
 τοὺς πολλούς; τί δ’ ἐξορχῇ τὸν ἡμέτερον βίον;
 
 οὐκ ἀρκεῖ τὰ μυστήρια;</p>
-
-<p>24. Ταῦτα βοήσας καὶ διαρραγείς, ὡς ἀπηλλάττετο
+            <p>24. Ταῦτα βοήσας καὶ διαρραγείς, ὡς ἀπηλλάττετο
 
 τὸ μειράκιον, μετοικίζεσθαι διενοούμην καὶ τὴν ἀποι-
 
@@ -1111,8 +1045,7 @@ in hoc in ἡ corr m 3, MaCl</note>
 τοῦ κάλλους κατασεισθεὶς κατηνέχθην. καὶ τρόπαιον
 
 καθ’ ἡμῶν ἔστησεν Ἀλκιβιάδης καὶ τὸν ἐμὸν ἤλεγξε <lb n="20"/>
-
-<note type="footnote">1 Her. VII 34 et 55 3 cf. t. II 303, 10. Luc. paras. ἡ 43.
+               <note type="footnote">1 Her. VII 34 et 55 3 cf. t. II 303, 10. Luc. paras. ἡ 43.
 
 Plat. Charm. p. 163 A 5 cf. p. 556, 14. Luc. Tim. ’ξ 58
 
@@ -1133,18 +1066,12 @@ D | Ταυρέου scripsi e Cr sed scriptura parum certa, HD et
 οἷ HDBCl edd sed „malim οὖ Re scriptura in Cr parum
 
 certa rj VaMa 10 τίμωνι Va | ἐμὸν Ma sed ἑ in ras m 3</note>
-
-<note type="footnote">11 δὲ Η 13 voce ὧς rursus inc La fol 100 15 ὃ ὅ
+               <note type="footnote">11 δὲ Η 13 voce ὧς rursus inc La fol 100 15 ὃ ὅ
 
 VaMaCl 16 καὶ ante καιρὸν Β 20 ἔστησε καθ’ ἡμῶν D
 
 | ἀλκιβιάδου La | ἤλεγξεν ἁ</note>
-
-
-
-
-
-<pb n="548"/>
+               <pb n="548"/>
 
 τρόπον καὶ τὴν φύσιν ἀσθενεστέραν τὴν ἐμὴν τῆς
 
@@ -1154,9 +1081,10 @@ VaMaCl 16 καὶ ante καιρὸν Β 20 ἔστησε καθ’ ἡμῶν D
 
 ἤχθην ὁ μισάνθρωπος καὶ οὐχ ἑνός, τρισμυρίων δὲ
 
-<lb n="5"/> θανάτων ἄξιος.</p></div>
-
-<div type="textpart" subtype="chapter" n="25"><p>τίς κακοδαιμονέστερος Τίμωνος
+<lb n="5"/> θανάτων ἄξιος.</p>
+         </div>
+         <div n="25" type="chapter">
+            <p>τίς κακοδαιμονέστερος Τίμωνος
 
 ἕτερος ἂν γένοιτο; βοῶν, ὦ κακὴ κεφαλή, λοιδορού-
 
@@ -1168,9 +1096,10 @@ VaMaCl 16 καὶ ante καιρὸν Β 20 ἔστησε καθ’ ἡμῶν D
 
 <lb n="10"/> μόλησας ἀπὸ τῆς γενναίας ἐκείνης τάξεως τοῦ βίου.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="26"><p>μαίνομαι καὶ παραπαίω, νὴ τοὺς θεούς, καὶ τὰ
+</p>
+         </div>
+         <div n="26" type="chapter">
+            <p>μαίνομαι καὶ παραπαίω, νὴ τοὺς θεούς, καὶ τὰ
 
 παρόντα ὄναρ εἶναι δοκεῖ. ἄνθρωπόν τινα ἀγαπῶ; στέρ-
 
@@ -1189,12 +1118,10 @@ VaMaCl 16 καὶ ante καιρὸν Β 20 ἔστησε καθ’ ἡμῶν D
 κὴν τῶν κρειττόνων. Ἀπόλλων τις ἕτερος ἐκ Δήλου
 
 <note type="footnote">6 cf. p. 552, 16. Dem. fals. leg. p. 442, 4. Ar. Ach. 285</note>
-
-<note type="footnote">8 cf. p. 537, 19 16 11. θ’ 19 et 21; ῥ’ 548 17 cf. t. III
+               <note type="footnote">8 cf. p. 537, 19 16 11. θ’ 19 et 21; ῥ’ 548 17 cf. t. III
 
 99, 3 sq. Plut. Alc. 1</note>
-
-<note type="footnote">2 δὲ om HLaD et γρ in marg Mor 4 ἤχθη D Q ἂν
+               <note type="footnote">2 δὲ om HLaD et γρ in marg Mor 4 ἤχθη D Q ἂν
 
 γένοιτο scripsi ex HLaD et γρ in marg Mor scriptura in Cr
 
@@ -1211,20 +1138,17 @@ Mor I τινα scripsi cum Gasda τινὰ VaMaCl τίνα HLaDB
 edd I ἀγαπῶ scripsi ἄγω libri edd ἄγαμαι lacobs Lect 97
 
 13 δέ τινα scripsi e MaCl cum Gasda δὲ τίνα reliqui libri edd</note>
-
-<note type="footnote">14 ἀλλ’ ante οὐκ D et γρ in marg Mor | οὐδὲ Β 15 ὑπο-
+               <note type="footnote">14 ἀλλ’ ante οὐκ D et γρ in marg Mor | οὐδὲ Β 15 ὑπο-
 
 λάβοιτε Ma | δ’ ἔτι La 16 ἐξ om Β | ὑμῖν D 17 τούτῳ D
 
 et γρ in marg Mor 19 τίς LaVaCl</note>
+               <pb n="549"/>
 
-
-
-<pb n="549"/>
-
-πάλιν πρὸς ἡμᾶς | ἀφῖκται.</p></div>
-
-<div type="textpart" subtype="chapter" n="27"><p>Διόνυσός τις <note type="marginal">RIV 189</note>
+πάλιν πρὸς ἡμᾶς | ἀφῖκται.</p>
+         </div>
+         <div n="27" type="chapter">
+            <p>Διόνυσός τις <note type="marginal">RIV 189</note>
 
 οὗτος δεύτερος ἐκ Θηβῶν εἰς τὴν Ἀττικὴν κωμάζει
 
@@ -1253,8 +1177,7 @@ et γρ in marg Mor 19 τίς LaVaCl</note>
 <note type="footnote">5 Callistr. stat. 6 p. 428, 21 ed. Kayser 6 Meleag. Anth.
 
 Pal. V 143, 2 13 Ar. Eq. 968</note>
-
-<note type="footnote">1 ἀφικνεῖται Va sed ἀφῖκται in marg | διόνυσος La sed ’ς
+               <note type="footnote">1 ἀφικνεῖται Va sed ἀφῖκται in marg | διόνυσος La sed ’ς
 
 e ’ν corr s i τίς VaCl 2 δεύτερος inserui e DBMaCl δεύτε-
 
@@ -1297,16 +1220,14 @@ in ras p 13 δὲ om La καὶ Re | καταπάστοις Ma sed κατα-
 (cf. t. 1122,8; 320,3; IV 224, 9) ἁλουργίσιν D γρ ἁλουργίδι
 
 in marg Mor</note>
-
-
-
-<pb n="550"/>
+               <pb n="550"/>
 
 γήμασιν ἐμπρέπων καὶ πολὺν ἄκρατον ἐπιχέων παν-
 
-ταχοῦ.</p></div>
-
-<div type="textpart" subtype="chapter" n="28"><p>ὁ δὲ καὶ τοὺς κόλακας ἀντὶ τῶν Σατύρων
+ταχοῦ.</p>
+         </div>
+         <div n="28" type="chapter">
+            <p>ὁ δὲ καὶ τοὺς κόλακας ἀντὶ τῶν Σατύρων
 
 ἔχει καὶ τὸν αὐλὸν ἐπάγεται πρὸς τὸν θίασον καὶ τὴν
 
@@ -1335,8 +1256,7 @@ in marg Mor</note>
 <lb n="15"/> καὶ τὸ πρὸς μητρὸς Περικλέα καὶ τὴν Δεινομάχην
 
 αὐχῶν.</p>
-
-<note type="footnote">3 sq. cf. t. III 385, 20 sq. 5 Plat. conv. p. 216 D. 221 D
+            <note type="footnote">3 sq. cf. t. III 385, 20 sq. 5 Plat. conv. p. 216 D. 221 D
 
 7 cf. decL Alcib. ed. Melanges Graux p. 635, 25 9 cf.
 
@@ -1345,12 +1265,10 @@ p. 551,8; 556,8; 558,14; 562,1 et 14 10 Ar. ran. 340. Her.
 VIII 65 11 cf. decL Alcib. 1. 1. p. 636, 19. Her. IX 65
 
 13 Isocr. big. c. 10. Dem. Mid. § 144 14 Isocr. big. c. 13</note>
-
-<note type="footnote">9 Ὁ Περικλῆς γὰρ ὃς ὡς Ma) διὰ τὰ ἔργα ὑπ’ Ἀθηναίων
+            <note type="footnote">9 Ὁ Περικλῆς γὰρ ὃς ὡς Ma) διὰ τὰ ἔργα ὑπ’ Ἀθηναίων
 
 Ὀλύμπιος ἐκλήθη συγγενὴς Ἀλκιβιάδου ἦν Va 3 Ma 2</note>
-
-<note type="footnote">2 καὶ om CrBVaMaCl | τῶν om D 4 βάκχων HBVa
+            <note type="footnote">2 καὶ om CrBVaMaCl | τῶν om D 4 βάκχων HBVa
 
 MaCl 7 σοφιστὴς B et γρ in marg Mor 9 καὶ cancellavi
 
@@ -1371,12 +1289,8 @@ tura in Cr | μουσικὸν D parum certa scriptura in Cr 13 ἀλλ’
 αἰ supra ἑ ’ν ἀκμαιωνίδης Πω 1 5 τὸ scripsi ex HLaD parum
 
 certa scriptura in Cr τὸν BVaMaCl edd | περικλέους D</note>
-
-
-
-<pb n="551"/>
-
-<p>29. Τί οὖν; βούλομαι ἀποθανεῖν. ἐρῶ δικαιότερον
+            <pb n="551"/>
+            <p>29. Τί οὖν; βούλομαι ἀποθανεῖν. ἐρῶ δικαιότερον
 
 ἔρωτα πρέποντα | ἐμαυτῷ. τοῦ μὲν γὰρ Κλεινίου <note type="marginal">RIV 190</note>
 
@@ -1402,9 +1316,10 @@ certa scriptura in Cr τὸν BVaMaCl edd | περικλέους D</note>
 
 ηγορίας. σὺ δ’ ἐξέστηκας καὶ μελαγχολᾷς· δεῖ σοι
 
-κωνείου.</p></div>
-
-<div type="textpart" subtype="chapter" n="30"><p>καταφεύγω δὴ πρὸς τὸν νόμον ὅς τοῖς
+κωνείου.</p>
+         </div>
+         <div n="30" type="chapter">
+            <p>καταφεύγω δὴ πρὸς τὸν νόμον ὅς τοῖς
 
 βουλομένοις ἀποθνήσκειν δίδωσι ῥᾳστώνην. καὶ τοῖς <lb n="15"/>
 
@@ -1423,12 +1338,10 @@ big. c. 16 10 cf. p. 654, 9 11 II. β 674 12 cf. ad p. 637, 19.
 Dem. p. 72, 1 13 cf. p. 535, 17 16 Auson. id. 15. cf. Picco-
 
 lomini 1. 1. p. 60 et supra p. 529 not. 2</note>
-
-<note type="footnote">1 signum interrogationis post οὖν inserui, post ἀποθανεῖν
+               <note type="footnote">1 signum interrogationis post οὖν inserui, post ἀποθανεῖν
 
 quod habent edd delevi | ἔρωι· La | voce δικαιότερον des Cr fol 47 r</note>
-
-<note type="footnote">2 „malim ἔρωτα &lt;ἔρωτα σ μᾶλλον&gt; s πρέποντα ἐμοί“ Re
+               <note type="footnote">2 „malim ἔρωτα &lt;ἔρωτα σ μᾶλλον&gt; s πρέποντα ἐμοί“ Re
 
 om Η | ἀλλ’ ante ἀλκιβιάδης Β 5 τὸ ταῖς ἱππικαῖς scripsi e
 
@@ -1447,16 +1360,12 @@ om DB 16 ὑφ’ scripsi ex HLaDVa ἀφ’ BMaCl edd
 προσαγγελίας in marg m 2 | δικαιότατος Gasda | εἰμι inserui om
 
 libri edd 18 ὃν — 552, 1 ὅτι om Β</note>
-
-
-
-<pb n="552"/>
+               <pb n="552"/>
 
 ὑμῖν μᾶλλον ἐπαινῶ τῶν νόμων, ὅτι τοὺς ἀνθρώπους
 
 ἀποθνήσκειν βούλεται.</p>
-
-<p>31. Εἶεν· ἀλλ’ ἀντιλαμβάνεταί τις συκοφάντης τῆς
+            <p>31. Εἶεν· ἀλλ’ ἀντιλαμβάνεταί τις συκοφάντης τῆς
 
 σωτηρίας τῆς ἐμῆς καὶ τί πέπονθας θανάτου ἄξιον
 
@@ -1480,9 +1389,10 @@ libri edd 18 ὃν — 552, 1 ὅτι om Β</note>
 
 ἐπιγράφεσθαι Τίμωνα, διακονεῖν ἀντὶ παντὸς ἔσται
 
-<note type="marginal">RIV 191</note> μοι.</p></div>
-
-<div type="textpart" subtype="chapter" n="32"><p>τί δ’ εὐνοίας | ἔχων πρός με τεκμήριον,
+<note type="marginal">RIV 191</note> μοι.</p>
+         </div>
+         <div n="32" type="chapter">
+            <p>τί δ’ εὐνοίας | ἔχων πρός με τεκμήριον,
 
 <lb n="16"/> τί δὲ φιλίας δίκαιον, τί δέ, ὦ κακὴ κεφαλή, κερδαί-
 
@@ -1499,10 +1409,8 @@ libri edd 18 ὃν — 552, 1 ὅτι om Β</note>
 γάρ μοι τοῦ Κλεινίου παιδὸς τὰ τοῦ θανάτου παιδικὰ
 
 Φαίνεται.</p>
-
-<note type="footnote">16 cf. ad p. 548, 6 21 [Plat.] Eryx. p. 393 D</note>
-
-<note type="footnote">1 μάλιστα coni Gasda | τὸν νόμον DVaMaCl 3 τις e τῆς
+            <note type="footnote">16 cf. ad p. 548, 6 21 [Plat.] Eryx. p. 393 D</note>
+            <note type="footnote">1 μάλιστα coni Gasda | τὸν νόμον DVaMaCl 3 τις e τῆς
 
 corr et συκοφάντης inser Cl 2 | τῆς inserui ex HLaD om Β
 
@@ -1511,20 +1419,14 @@ VaMaCl edd 4 πέπονθα Β 6 φησιν ἀτυχήμασιν scripsi
 ex HLaD ἀτυχήμασί φησιν BVaMaCl edd 11 σιτηρέσιον
 
 Va sed σιτήσεως in marg ’ quae eadem del | τινὸς τιμῆς H</note>
-
-<note type="footnote">14 διακονεῖν scripsi ἧκον οἶς DB VaMaCl edd ἧκα οἶς
+            <note type="footnote">14 διακονεῖν scripsi ἧκον οἶς DB VaMaCl edd ἧκα οἶς
 
 HLa ἧκεν εἰς coni Mor ἡ διακονία vel eiusmodi quid coni
 
 lacobs Lect 97 18 ἑστιάτωρ Va 19 δὲ D 20 εἰ om Η</note>
-
-<note type="footnote">21 παρὼν inser Va 2 Ma 3 | ἀνεσχόμην Η</note>
-
-
-
-<pb n="553"/>
-
-<p>33. ’Αλλὰ ποῖον ἀπολώλεκα παῖδα; ἐρωτᾷ
+            <note type="footnote">21 παρὼν inser Va 2 Ma 3 | ἀνεσχόμην Η</note>
+            <pb n="553"/>
+            <p>33. ’Αλλὰ ποῖον ἀπολώλεκα παῖδα; ἐρωτᾷ
 
 πάλιν. τίς μοι τέθνηκε τῶν φιλτάτων; τί μέρος
 
@@ -1546,9 +1448,10 @@ lacobs Lect 97 18 ἑστιάτωρ Va 19 δὲ D 20 εἰ om Η</note>
 
 προσαγγελίας καὶ τὸ μηδὲ αὐτόν τινα κύριον ἑαυτοῦ
 
-τυγχάνειν οὐκ ἀγχόνης ἄξιον τῷ σωφρονοῦντι;</p></div>
-
-<div type="textpart" subtype="chapter" n="34"><p>ἐπι-
+τυγχάνειν οὐκ ἀγχόνης ἄξιον τῷ σωφρονοῦντι;</p>
+         </div>
+         <div n="34" type="chapter">
+            <p>ἐπι-
 
 λέλησαι δὲ ὧν ἀρτίως ἔλεγον, ὧν ἔναγχος ὠδυρόμην;
 
@@ -1571,8 +1474,7 @@ lacobs Lect 97 18 ἑστιάτωρ Va 19 δὲ D 20 εἰ om Η</note>
 <note type="footnote">5 cf. t. IV 571,8 R 12 cf. t. III 19, 3. Luc. Tim. § 46
 
 13 Dem. p. 1470, 12. Isocr. paneg. p. 76 b</note>
-
-<note type="footnote">2 τέθνηκεν Οἶ’ 6 ἄξιον ἄξια Va) καὶ θανάτου DVa
+               <note type="footnote">2 τέθνηκεν Οἶ’ 6 ἄξιον ἄξια Va) καὶ θανάτου DVa
 
 7 ἐλθεῖν Β I τὸ — 8 ὅλως in marg inser Va 2 om BMa
 
@@ -1583,8 +1485,7 @@ D 13 ὧν(2) scripsi coU Dem. et Isocr. 11. 11. ὧς libri edd
 sed „malim ὧν“ Re 14 ἥτις reposui e libris, ut e Par 3017
 
 coni Boissonadius Anecd. IV 06 εἴτις edd sed „malim ἥτις“ Re</note>
-
-<note type="footnote">17 ἀφῆκα Ma sed α(2) in ras m 3 ἀφῆκεν Οἶ’ 18 παρεχώ-
+               <note type="footnote">17 ἀφῆκα Ma sed α(2) in ras m 3 ἀφῆκεν Οἶ’ 18 παρεχώ-
 
 πησα — Ἀλκιβιάδη respicit Plan fol 105 v citans παραχωρῶ σοι τῆς
 
@@ -1593,14 +1494,12 @@ coni Boissonadius Anecd. IV 06 εἴτις edd sed „malim ἥτις“ Re</not
 at cf. 561, 3; p. 552, 20; 553, 6; 556, 12; 559, 8; et alloquitur ὦ
 
 πεντακόσιοι p. 537, 10; 559,11. cf. p. 529</note>
+               <pb n="554"/>
 
-
-
-<pb n="554"/>
-
-οὐκ ἀγῶνος ἡττήθην.</p></div>
-
-<div type="textpart" subtype="chapter" n="35"><p>ἀνάλωτος δὲ πρὸς πάντα
+οὐκ ἀγῶνος ἡττήθην.</p>
+         </div>
+         <div n="35" type="chapter">
+            <p>ἀνάλωτος δὲ πρὸς πάντα
 
 μείνας τἀνθρώπινα ἔρωτι δουλεύω μειρακίου, καὶ ὥσπερ
 
@@ -1616,9 +1515,10 @@ RIV 192 θεραπείᾳ καὶ γέλωτα παρέχων | ἀνθρώ�
 
 ἐμαυτῷ τῶν ἀνθρωπίνων πρότερον ἀπάντων καταγελῶν.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="36"><p>ὑπὲρ τὸ μειράκιον τὸ Θετταλὸν τὰ τῆς μεταβολῆς
+</p>
+         </div>
+         <div n="36" type="chapter">
+            <p>ὑπὲρ τὸ μειράκιον τὸ Θετταλὸν τὰ τῆς μεταβολῆς
 
 <lb n="10"/> ἐστί μοι, ὃ τὸ Πήλιον καταλιπὸν καὶ τὴν μελίαν ἐπὶ
 
@@ -1636,9 +1536,10 @@ RIV 192 θεραπείᾳ καὶ γέλωτα παρέχων | ἀνθρώ�
 
 προσηγορίας τῶν φιλτάτων κόλαξ ἀντὶ Τίμωνος ἀκού-
 
-ων, ἐραστὴς ἀντὶ μισανθρώπου.</p></div>
-
-<div type="textpart" subtype="chapter" n="37"><p>ἐμπομπεύει δ’
+ων, ἐραστὴς ἀντὶ μισανθρώπου.</p>
+         </div>
+         <div n="37" type="chapter">
+            <p>ἐμπομπεύει δ’
 
 <note type="footnote">3 cf. ad p. 491, 13 9 cf. p. 551, 10 10 Philostr. im.
 
@@ -1647,8 +1548,7 @@ II 3; 17. Themist. or. XXIV p. 308 c 11 cf. t. IV 455, 3 sq.
 15 Luc. Tim. § 42 18 hypoth. ad Dem. Lept. p. 456,17.
 
 Luc. adv, indoct. § 10. apol. ’ξ 4</note>
-
-<note type="footnote">1 ἀγώνων HLa 2 καὶ — 4 μοι citat Plan fol 105 v
+               <note type="footnote">1 ἀγώνων HLa 2 καὶ — 4 μοι citat Plan fol 105 v
 
 3 ἀναστρέφει HLaD et γρ in marg Mor ἀντεστράφη Va
 
@@ -1663,8 +1563,7 @@ in hoc γρ καταγελῶν in marg m 3 καταγέλων Οἶ’ 10 ὃ 
 BVaMaCl cum lacobsio Phil 248 et Gasda πύλιον HD edd |
 
 καταλιπὼν Va καταλιπῶν La | ὅτε post μελίαν Mor del Re</note>
-
-<note type="footnote">11 Σκῦρον scripsi e La coll p. 311, 7 et Arcad. p. 69, 7 ed.
+               <note type="footnote">11 Σκῦρον scripsi e La coll p. 311, 7 et Arcad. p. 69, 7 ed.
 
 Barker Σκῦρος ἡ νῆσος σκύρον reliqui libri edd | εἴη B
 
@@ -1675,10 +1574,7 @@ VaMaCl 14 Ἀλκιβιάδου θύρας scripsi e CrHLaDVaMaCl
 ἀλκιβιάδου χεῖρας Β θύρας Ἀλκιβιάδου edd 18 ἀντὶ La
 
 sed τὶ inser s</note>
-
-
-
-<pb n="555"/>
+               <pb n="555"/>
 
 Ἀλκιβιάδης τῇ ἐμῇ συμφορᾷ καὶ πᾶσιν ἐπιδείκνυται
 
@@ -1700,9 +1596,10 @@ sed τὶ inser s</note>
 
 σίστρατος, τίς Ἵππαρχος χαλεπὸς οὕτω τοῖς ὑπηκόοις <lb n="10"/>
 
-ὡς Ἀλκιβιάδης τοῖς ἐρασταῖς ἡμῖν;</p></div>
-
-<div type="textpart" subtype="chapter" n="38"><p>ἴωθεν ἐπὶ τὰς
+ὡς Ἀλκιβιάδης τοῖς ἐρασταῖς ἡμῖν;</p>
+         </div>
+         <div n="38" type="chapter">
+            <p>ἴωθεν ἐπὶ τὰς
 
 θύρας ἀπαντᾶν δεῖ τὰς προόδους καιροφυλακήσοντας
 
@@ -1723,12 +1620,8 @@ sed τὶ inser s</note>
 <note type="footnote">6 Luc. lup. trag. § 45 7 II. θ’ 19. Plat. Theaet. p. 153 C.
 
 Aristid. t.I p.6,17 Dind.(= t. II p. 343, 3 Keil.) 10 cf. p.44,13sq.</note>
-
-<note type="footnote">12 Luc. necyom. § 12 | Dem. p. 678,17. Luc. abdic. § 16</note>
-
-
-
-<note type="footnote">3 κεφ(??)α in κεφαλαὶ corr Cl 2 4 ὑπεροπτικὸν πρὸς ἡμᾶς
+               <note type="footnote">12 Luc. necyom. § 12 | Dem. p. 678,17. Luc. abdic. § 16</note>
+               <note type="footnote">3 κεφ(??)α in κεφαλαὶ corr Cl 2 4 ὑπεροπτικὸν πρὸς ἡμᾶς
 
 ἀπεργάζεται τὸ μειράκιον Va 5 πάντας — 7 ἔχει citat Plan
 
@@ -1751,10 +1644,7 @@ Bcriptura in θ’ parum certa ἐς edd 17 τὸ ante βουλευτή-
 prascr s 19 θρυλεῖν scripsi ex HLa θρυλλεῖν reliqui libri
 
 edd cf. ad p. 542, 10</note>
-
-
-
-<pb n="556"/>
+               <pb n="556"/>
 
 μάτα ἃ κέρδος ἦν σιωπᾶν, τοὺς Ἀλκμαιωνίδας, τὴν
 
@@ -1778,9 +1668,10 @@ RIV 193 τὴν | Δεινομάχην μακαρίζειν οἷον ἄγα�
 
 σοφήν. ταῦτα γὰρ Ἀλκιβιάδης ἀπαιτεῖ παρ’ ἡμῶν καὶ
 
-τοιούτοις ἥδεται.</p></div>
-
-<div type="textpart" subtype="chapter" n="39"><p>τὰ δὲ ἀπὸ τῆς ἑσπέρας, ἀποτρό-
+τοιούτοις ἥδεται.</p>
+         </div>
+         <div n="39" type="chapter">
+            <p>τὰ δὲ ἀπὸ τῆς ἑσπέρας, ἀποτρό-
 
 παιοι δαίμονες, τῆς συμφορᾶς. κολάκων μὲν ἐκεῖ πλῆ-
 
@@ -1803,8 +1694,7 @@ RIV 193 τὴν | Δεινομάχην μακαρίζειν οἷον ἄγα�
 imag. ’ξ 17; salt. § 25. Aristid. pro IV viris t. II p. 171, 6 Dind.
 
 10 Plat. conv. p. 201 D. Luc. imag. ’ξ 18; eun. ’ξ 7 15 cf. p. 547,5</note>
-
-<note type="footnote">5 τὴν ἐξ ἵππου Β | περὶ scripsi ex HLaDCl παρὰ BVa
+               <note type="footnote">5 τὴν ἐξ ἵππου Β | περὶ scripsi ex HLaDCl παρὰ BVa
 
 Ma edd scriptura in Cr parnni certa 6 Ἀγαρίστην scripsi
 
@@ -1829,10 +1719,7 @@ sed scriptura in Cr parum certa om edd | διοτίμην D
 οὐδὲ μία CrVaMaCl οὐδ’ ἐμία Η οὐ μία D edd | οὐ δεξαί-
 
 ρετός Η</note>
-
-
-
-<pb n="557"/>
+               <pb n="557"/>
 
 ρετός τις τιμή, πᾶσι δ’ ἴσα ἐρασταῖς καὶ δούλοις
 
@@ -1842,9 +1729,10 @@ sed scriptura in Cr parum certa om edd | διοτίμην D
 
 σεν ἑτέρῳ. ζηλωτὸς ἐκεῖνος. προὔπιε τῷ δεῖνι τὸ ἔκ-
 
-πωμα. ὅδ’ ἀθάνατος διὰ τὴν τιμήν.</p></div>
-
-<div type="textpart" subtype="chapter" n="40"><p>ἐγὼ δ’ ἐν <lb n="5"/>
+πωμα. ὅδ’ ἀθάνατος διὰ τὴν τιμήν.</p>
+         </div>
+         <div n="40" type="chapter">
+            <p>ἐγὼ δ’ ἐν <lb n="5"/>
 
 πᾶσι καὶ πανταχοῦ δεύτερος τυγχάνων ἄχθομαι καὶ
 
@@ -1860,9 +1748,10 @@ sed scriptura in Cr parum certa om edd | διοτίμην D
 
 ἡνίοχον οὐκ ἔχοντα ἀτάκτως φέρεται τῷ δρόμῳ παν-
 
-ταχοῦ.</p></div>
-
-<div type="textpart" subtype="chapter" n="41"><p>εἰς οἵαν ἦλθον ὁ κακοδαίμων μεταβολήν.
+ταχοῦ.</p>
+         </div>
+         <div n="41" type="chapter">
+            <p>εἰς οἵαν ἦλθον ὁ κακοδαίμων μεταβολήν.
 
 οἷα ὑπέστην ὁ δυστυχής. κολάκων ἀνέχομαι καὶ συγ-
 
@@ -1881,8 +1770,7 @@ sed scriptura in Cr parum certa om edd | διοτίμην D
 Arist. eccl. 741. Antiph. tetral. A ἁ § 4 p. 115,8; β § 5 p. 117,1;
 
 δ’ § 6 ῥ’ 119, 38 </note>
-
-<note type="footnote">1 τις inserui e CrHBMaCl Par 3017 cum Boissonadio 1. 1.
+               <note type="footnote">1 τις inserui e CrHBMaCl Par 3017 cum Boissonadio 1. 1.
 
 om DVa edd | δὲ CrH | ἴσα scripsi ὧς libri edd | ἐρασταῖς
 
@@ -1899,20 +1787,17 @@ et post λ ras 1 litt | ἐπεμειδίασεν Β 4 προὔπιε — ἔ�
 citat Plan fol 105 v προὔπιεν ἐκεῖνος Plan 7 παρευδοκιμού-
 
 μενος Ma sed δο in ras m 3 9 βιάζει με Va 12 δήμω Β</note>
-
-<note type="footnote">15 πρόσεστι Va sed πρόσεισι in marg m 2</note>
-
-
-
-<pb n="558"/>
+               <note type="footnote">15 πρόσεστι Va sed πρόσεισι in marg m 2</note>
+               <pb n="558"/>
 
 νῦν μὲν εἰς Ἀγάθωνος εἰσέρχεται κωμάσων. αὗθις
 
 ἐπικρούει Σωκράτην. πρὸς Καλλίαν ἀφικνεῖται μεθ’
 
-Ἱππονίκου. μεθύει πάλιν.</p></div>
-
-<div type="textpart" subtype="chapter" n="42"><p>τὴν φύσιν δ’ οὐδέπω
+Ἱππονίκου. μεθύει πάλιν.</p>
+         </div>
+         <div n="42" type="chapter">
+            <p>τὴν φύσιν δ’ οὐδέπω
 
 καὶ τήμερον δύναμαι κατιδεῖν τῶν παιδικῶν οὐδὲ τὸν
 
@@ -1938,9 +1823,10 @@ citat Plan fol 105 v προὔπιεν ἐκεῖνος Plan 7 παρευδοκ�
 
 <lb n="15"/> καὶ κατεαγὼς ἐν ταῖς μέθαις, ἀνδρόγυνος ἐπὶ τῆς
 
-ἐσπέρας, ὑπὲρ τὸν Πρωτέα τὴν φύσιν ἀμείβων.</p></div>
-
-<div type="textpart" subtype="chapter" n="43"><p>τίς
+ἐσπέρας, ὑπὲρ τὸν Πρωτέα τὴν φύσιν ἀμείβων.</p>
+         </div>
+         <div n="43" type="chapter">
+            <p>τίς
 
 δὴ γένωμαι ἢ τίνα εὕρω τῶν κακῶν μεταβολήν; φεύ-
 
@@ -1949,8 +1835,7 @@ citat Plan fol 105 v προὔπιεν ἐκεῖνος Plan 7 παρευδοκ�
 <note type="footnote">1 cf. p. 546, 14. Plat. conv. p. 212 C 11 cf. p. 547, 13
 
 16 cf. t. II 41,14; 312,18</note>
-
-<note type="footnote">1 εἰσέρχομαι Η scriptura in Cr parum certa | κωμάζων
+               <note type="footnote">1 εἰσέρχομαι Η scriptura in Cr parum certa | κωμάζων
 
 Gasda 2 σωκράτη Β 4 κατιδεῖν τῶν παιδικῶν reposui e
 
@@ -1977,10 +1862,7 @@ emblemate habui Rel. Acad. Berol. 1896, 1333 | ἄγων Η
 πρὸς τἀς ἐμαυτοῦ coni Re | μὰ δία διώκει Va sed μὰ δία
 
 in μέτα corr m 3, MaCl | ἀνακείμενον D</note>
-
-
-
-<pb n="559"/>
+               <pb n="559"/>
 
 δὲ ὁρῶν καὶ ἀπολωλότα εἰρωνευόμενος ἐρωτᾷ· τί δέ,
 
@@ -1996,9 +1878,10 @@ in μέτα corr m 3, MaCl | ἀνακείμενον D</note>
 
 προσποιῇ πεπονθὼς οὐδέν;
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="44"><p>’Αποπνίγομαι, νὴ τοὺς θεούς, καὶ παραρρήγνυ-
+</p>
+         </div>
+         <div n="44" type="chapter">
+            <p>’Αποπνίγομαι, νὴ τοὺς θεούς, καὶ παραρρήγνυ-
 
 μαι τὴν χλεύην οὐ φέρων καὶ τὸν γέλωτα ἐκείνου
 
@@ -2010,9 +1893,10 @@ in μέτα corr m 3, MaCl | ἀνακείμενον D</note>
 
 ξαντο καὶ τὸ κάλλος δι’ αὐτῶν εἰσρυὲν τὸν λογισμὸν
 
-τὸν ἐμὸν κατεδουλώσατο.</p></div>
-
-<div type="textpart" subtype="chapter" n="45"><p>| πάλαι μὲν δι’ <note type="marginal">RIV 196</note>
+τὸν ἐμὸν κατεδουλώσατο.</p>
+         </div>
+         <div n="45" type="chapter">
+            <p>| πάλαι μὲν δι’ <note type="marginal">RIV 196</note>
 
 ἔρωτα γυναικὸς καὶ κάλλος τὴν Ἑλλάδα κατὰ τῆς <lb n="15"/>
 
@@ -2025,8 +1909,7 @@ in μέτα corr m 3, MaCl | ἀνακείμενον D</note>
 Ἔρωτα συνέβησαν τοῖς τότε. νυνὶ δὲ τί; πείθομαι τῷ
 
 <note type="footnote">2 cf. p. 535, 12 3 cf. p. 545, 13 17 cf. p. 263, 15</note>
-
-<note type="footnote">3 ἔβαλες HMaCl scriptura in Cr parum certa | τοῖς DMa
+               <note type="footnote">3 ἔβαλες HMaCl scriptura in Cr parum certa | τοῖς DMa
 
 cf ad p. 545, 14 4 ἢ] καὶ VaMa 6 τί D | σε om VaMa |
 
@@ -2053,12 +1936,8 @@ inser Ma 2 16 τῶν ante ποιητῶν Wolf edd delevi
 τ
 
 γρ in marg Mor coll p. 560, 4 ἡρωικῶν Va τρωικῶν DMa edd</note>
-
-<note type="footnote">19 Ἔρωτα scripsi ἔρωτα edd | τοῖς in ras ras | τί; del Re</note>
-
-
-
-<pb n="560"/>
+               <note type="footnote">19 Ἔρωτα scripsi ἔρωτα edd | τοῖς in ras ras | τί; del Re</note>
+               <pb n="560"/>
 
 λόγῳ καὶ τὸν θεὸν μέγαν καὶ φύσεως ἀνθρωπίνης
 
@@ -2082,9 +1961,10 @@ inser Ma 2 16 τῶν ante ποιητῶν Wolf edd delevi
 
 καλὴν παρ’ ἐμοῦ λαμβάνει τῆς ὑπερηφανίας τὴν δί-
 
-κην.</p></div>
-
-<div type="textpart" subtype="chapter" n="46"><p>ἀσθένειαν κατεγίνωσκον τῶν ἡττωμένων Ἀλ-
+κην.</p>
+         </div>
+         <div n="46" type="chapter">
+            <p>ἀσθένειαν κατεγίνωσκον τῶν ἡττωμένων Ἀλ-
 
 κιβιάδου πρότερον, πολλὰς ἐποιούμην κατηγορίας, καὶ
 
@@ -2131,10 +2011,7 @@ scriptura in Cr parum certa | πολεμικοῖς D et γρ in marg
 Mor 16 et 17 signa interrogationis posui e Ma auctore Re
 
 colon et comma reliqui libri edd 17 χλευάζοντος D</note>
-
-
-
-<pb n="561"/>
+               <pb n="561"/>
 
 νος ἄνθρωπος καὶ τρίβωνα ἔχων στεφανοῦται
 
@@ -2142,9 +2019,10 @@ colon et comma reliqui libri edd 17 χλευάζοντος D</note>
 
 τινα ταύτην, ὦ θεοί, παλινῳδίαν ᾄδειν ἀναγκάζομαι.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="47"><p>οὐ νέμεσις Σωκράτην οὐδὲ Ἀγάθωνα οὐδὲ Ἀθη-
+</p>
+         </div>
+         <div n="47" type="chapter">
+            <p>οὐ νέμεσις Σωκράτην οὐδὲ Ἀγάθωνα οὐδὲ Ἀθη-
 
 ναίους ἅπαντας ἀμφὶ τοιῷδε μειρακίῳ κόπτεσθαι καὶ <lb n="5"/>
 
@@ -2158,9 +2036,10 @@ colon et comma reliqui libri edd 17 χλευάζοντος D</note>
 
 προὔλαβον τοὺς ἐραστὰς τῷ θανάτῳ, ἐγὼ δὲ ἀντιστρό- <lb n="10"/>
 
-φου πειρῶμαι τῆς τύχης.</p></div>
-
-<div type="textpart" subtype="chapter" n="48"><p>τοσοῦτον δέ μοι περίεστι
+φου πειρῶμαι τῆς τύχης.</p>
+         </div>
+         <div n="48" type="chapter">
+            <p>τοσοῦτον δέ μοι περίεστι
 
 τοῦ πρὸς αὐτὸν ἔρωτος ὥστε ἕτεροι μὲν τοὺς ὁρῶντας
 
@@ -2169,8 +2048,7 @@ colon et comma reliqui libri edd 17 χλευάζοντος D</note>
 τῆς ὕβρεως καὶ Ταυρέαν ζηλῶ τῆς πληγῆς ἢν ἐπὶ
 
 κόρρης ἐδέξατο[. ἔπαισε] χορηγὸς ὢν καὶ στεφανούμενος. <lb n="15"/>
-
-<note type="footnote">1 cf. decl. Alcib. ed. Melanges Graux p. 635, 26 7 Ovid.
+               <note type="footnote">1 cf. decl. Alcib. ed. Melanges Graux p. 635, 26 7 Ovid.
 
 met. in 353. Luc. Charid. § 24. cf. t.IV 448, 10 8 cf. t IV 450, 16
 
@@ -2179,8 +2057,7 @@ met. in 353. Luc. Charid. § 24. cf. t.IV 448, 10 8 cf. t IV 450, 16
 doc. c. Alcib. ’ξ 17. Dem. Mid. ἑ 147. Plut. Alcib. 16 14 Andoc.
 
 1. 1. 21. Dem. 1. 1. Plut. 1. 1.</note>
-
-<note type="footnote">3 ᾄδειν ἀναγκάζομαι scripsi ex HD scriptura in Cr parum
+               <note type="footnote">3 ᾄδειν ἀναγκάζομαι scripsi ex HD scriptura in Cr parum
 
 certa ἀναγκάζομαι ἄδειν BVaMaCl 4 οὐδ᾿(2) VaMa 7 τὸν
 
@@ -2205,18 +2082,14 @@ obstat 1. 10 Νιρέα coni lacobs Phil 353 at obstat iterum 1. 10
 HDB scriptura in Cr parum certa | τὴν ὥραν] τὸν Ὕλαν Gasda
 
 ὂν</note>
-
-<note type="footnote">10 ἐγὼ — 14 ὕβρεως citat Plan fol 105 v 12 αὐτῶν Ma
+               <note type="footnote">10 ἐγὼ — 14 ὕβρεως citat Plan fol 105 v 12 αὐτῶν Ma
 
 αὐτῶν Cl φίλτρου Va 13 καὶ om Η 14 Ταυρέαν scripsi
 
 e CrHD ταυραίαν B VaMaCl edd 15 ἐδέξατο χορηγὸς scripsi
 
 auctore Re ἐδέξατο. ἔπαισε χορηγὸς libri edd</note>
-
-
-
-<pb n="562"/>
+               <pb n="562"/>
 
 καὶ τὸν Ὀλύμπιον ἐπὶ τούτῳ μᾶλλον ἢ τῇ προσηγορίᾳ
 
@@ -2225,8 +2098,8 @@ auctore Re ἐδέξατο. ἔπαισε χορηγὸς libri edd</note>
 ἡγοῦμαι τὸ δι’ Ἀλκιβιάδην ἀπόλλυσθαι τήμερον καὶ
 
 πρόφασιν ἔχειν τοῦ θανάτου τὸν ἔρωτα.</p>
-
-<lb n="5"/> <p>49. Ἄγε δή, ὦ γενναία κεφαλή, τῶν καλλίστων
+            <lb n="5"/>
+            <p>49. Ἄγε δή, ὦ γενναία κεφαλή, τῶν καλλίστων
 
 γὰρ ἄρχεις, τοὺς ἐραστάς, πολλοὺς ἐπὶ τὸ βάραθρον,
 
@@ -2246,9 +2119,10 @@ auctore Re ἐδέξατο. ἔπαισε χορηγὸς libri edd</note>
 
 Πυθίου μαρτυρίαν προσειληφὼς μηδ’ ἂν τοῦ Δῖός
 
-<lb n="15"/> ἔχῃ τὴν προσηγορίαν.</p></div>
-
-<div type="textpart" subtype="chapter" n="50"><p>ἐπὶ τὰς γυναῖκας τῶν Ἀθη-
+<lb n="15"/> ἔχῃ τὴν προσηγορίαν.</p>
+         </div>
+         <div n="50" type="chapter">
+            <p>ἐπὶ τὰς γυναῖκας τῶν Ἀθη-
 
 ναίων τῇ ὥρᾳ, ἐπὶ τὰς μοιχείας ἀπόχρησαι τῇ φύσει.
 
@@ -2263,8 +2137,7 @@ auctore Re ἐδέξατο. ἔπαισε χορηγὸς libri edd</note>
 <note type="footnote">8 Phryn. Monotr. com. fr. II 587, 2 M (II 375 K) 13 cf.
 
 p. 117, 15 20 Her. VII 208, 1</note>
-
-<note type="footnote">1 τοῦτο Wolf et Mor qui τούτῳ scribendum coni Not f. V v
+               <note type="footnote">1 τοῦτο Wolf et Mor qui τούτῳ scribendum coni Not f. V v
 
 6 εἰς ante τοὺς libri edd delevi „malim ἄρχεις τοῖς ἐρα-
 
@@ -2287,16 +2160,14 @@ Mor ἀνθρώπων CrH ἀπάντων BVaMaCl edd 15 τῶν] τἀς
 μετάστησον. γενοῦ libri edd 20 αὐτὸν scripsi e CrHDVa
 
 σαυτὸν Ma σαυτὸν ὢ αὐτῶν Β edd αὐτοῖς coni Re</note>
-
-
-
-<pb n="563"/>
+               <pb n="563"/>
 
 τὴν. ἀντὶ σκηπτοῦ τινος καὶ λοιμοῦ καὶ θείας προσ-
 
-βολῆς ὄφθητι τῷ τῶν ἀνθρώπων γένει.</p></div>
-
-<div type="textpart" subtype="chapter" n="51"><p>δύνασαι δὲ
+βολῆς ὄφθητι τῷ τῶν ἀνθρώπων γένει.</p>
+         </div>
+         <div n="51" type="chapter">
+            <p>δύνασαι δὲ
 
 ἀρκέσαι πρὸς τὴν | Τίμωνος ἐπιθυμίαν. στοχάζομαί <note type="marginal">RIV 197</note>
 
@@ -2312,9 +2183,10 @@ Mor ἀνθρώπων CrH ἀπάντων BVaMaCl edd 15 τῶν] τἀς
 
 Πεισίστρατον, τυραννίδος ἐραστὴς τυγχάνεις. τὰς Λα-
 
-κεδαιμονίων περιμένεις εἰσβολάς.</p></div>
-
-<div type="textpart" subtype="chapter" n="52"><p>ἀλλὰ μικρὸν τὸ <lb n="10"/>
+κεδαιμονίων περιμένεις εἰσβολάς.</p>
+         </div>
+         <div n="52" type="chapter">
+            <p>ἀλλὰ μικρὸν τὸ <lb n="10"/>
 
 ἐνθύμημα μίαν ἀπολέσαι πόλιν, ἕνα διαφθεῖραι δῆμον.
 
@@ -2326,9 +2198,10 @@ Mor ἀνθρώπων CrH ἀπάντων BVaMaCl edd 15 τῶν] τἀς
 
 ἀρχῆς κατὰ πάντων ἀνθρώπων ὄφθητι γενναῖος καὶ <lb n="15"/>
 
-πρὸς ἅπαντας μισάνθρωπος.</p></div>
-
-<div type="textpart" subtype="chapter" n="53"><p>μή μοι μέχρι τῶν
+πρὸς ἅπαντας μισάνθρωπος.</p>
+         </div>
+         <div n="53" type="chapter">
+            <p>μή μοι μέχρι τῶν
 
 ὅρων τῆς Ἑλλάδος τὰς πράξεις μηδὲ εἴσω Πελοπον-
 
@@ -2345,8 +2218,7 @@ Mor ἀνθρώπων CrH ἀπάντων BVaMaCl edd 15 τῶν] τἀς
 <note type="footnote">1 Luc. Tim. § 37 8 Her. I 59, 4. Thuc. I 126, 3. Arist.
 
 ran. 958 19 cf. p. 92, 10</note>
-
-<note type="footnote">1 λιμοῦ VaMaCl 2 γὰρ D 4 τῆς πολιτείας reposui
+               <note type="footnote">1 λιμοῦ VaMaCl 2 γὰρ D 4 τῆς πολιτείας reposui
 
 e libris ut coni Re τὴν πολιτείαν edd 6 ποιῆι post νόμους
 
@@ -2373,10 +2245,7 @@ edd | νεῶν scripsi οὖν libri om edd 20 ἐξαγαγεῖν scripsi
 γέτω edd cf. ad t. II 553, 1 et t. IV 422, 18 | ἐπὶ τὴν ἴω inserai
 
 auctoribus lacobsio Add 130 Lect 97 et Gasda om libri edd</note>
-
-
-
-<pb n="564"/>
+               <pb n="564"/>
 
 κατὰ Σικελίαν, πολλὰς ἐν Ἑλλησπόντῳ σφαγὰς καὶ πό-
 
@@ -2388,9 +2257,10 @@ auctoribus lacobsio Add 130 Lect 97 et Gasda om libri edd</note>
 
 <lb n="5"/> Σικελίας, τοῖς ἀπὸ τῆς Ἀσίας, σατράπαις, βαρβάροις,
 
-Ἕλλησι, πᾶσιν ἀνθρώποις.</p></div>
-
-<div type="textpart" subtype="chapter" n="54"><p>μίμησαι τὴν Ἔριν ἐκεί-
+Ἕλλησι, πᾶσιν ἀνθρώποις.</p>
+         </div>
+         <div n="54" type="chapter">
+            <p>μίμησαι τὴν Ἔριν ἐκεί-
 
 νην τὴν Ὁμηρικὴν ἣ τὰ πρῶτα ἐκ φαύλων ὁρμηθεῖσα
 
@@ -2409,10 +2279,8 @@ RIV 198 Ἀλκιβιάδη, κώμασον. ταῦτα ἔχε Τίμωνο
 συμφοραῖς, ἐμὲ δὲ ἤδη τις ἐπὶ τὸν ἕτερον ἐρώμενον
 
 15 ἀγέτω, τὸν θάνατον.</p>
-
-<note type="footnote">7 Il. δ’ 442 sq.</note>
-
-<note type="footnote">1 ἑλησπόντῳ CrH | σφαγὰς scripsi auctore Re φυγὰς libri
+            <note type="footnote">7 Il. δ’ 442 sq.</note>
+            <note type="footnote">1 ἑλησπόντῳ CrH | σφαγὰς scripsi auctore Re φυγὰς libri
 
 edd | καὶ πόλεων ἀναιρέσεις om D 2 σφαγὰς post ἀναιρέσεις
 
@@ -2423,13 +2291,7 @@ CrHBMaCl delevi auctore Re | τῆς Ma sed ῆς in ras m 2 |
 B 12 τοῦ inserui e libris om edd 13 οἱ ante θεοὶ B
 
 | φυλάττοιεν Cl sed ὲν add m2</note>
-
-</div>
-
-</div>
-
-
-
-</body>
-  </text>
+         </div>
+      </body>
+   </text>
 </TEI>

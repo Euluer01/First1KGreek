@@ -1,100 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">De optima corporis nostri constitutione</title>
-                <author>Galen</author>
-                <editor>Karl Gottlob Kühn</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De optima corporis nostri constitutione</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0057.tlg024.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg024.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-                        <author>Galen</author>
-                        <editor>Karl Gottlob Kühn</editor>
-                        <imprint>
-                            <publisher>Knobloch</publisher>
-                            <pubPlace>Leipzig</pubPlace>
-                            <biblScope unit="vol">4</biblScope>
-                            <biblScope unit="pp" from="737" to="749">737-749</biblScope>
-                            <date>1822</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/chi.11102513?urlappend=%3Bseq=751%3Bownerid=13510798903411997-769">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg024.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Leipzig</pubPlace>
+                     <biblScope unit="vol">4</biblScope>
+                     <biblScope unit="pp" from="737" to="749">737-749</biblScope>
+                     <date>1822</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/chi.11102513?urlappend=%3Bseq=751%3Bownerid=13510798903411997-769">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-                <language ident="eng">English</language>
-                <language ident="lat">Latin</language>
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg024.1st1K-grc1">
-                <pb n="737"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΑΡΙΣΤΗΣ ΚΑΤΑΣΚΕΥΗΣ <lb/>ΤΟΥ ΣΩΜΑΤΟΣ ΗΜΩΝ <lb/>ΒΙΒΛΙΟΝ.</head>
-                    <p>Τίς ἡ ἀρίστη κατασκευὴ τοῦ σώματος ἡμῶν; <lb/>ἆρά γε ἡ εὐκρατοτάτη, καθάπερ
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="eng">English</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg024.1st1K-grc1">
+         <pb n="737"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΑΡΙΣΤΗΣ ΚΑΤΑΣΚΕΥΗΣ <lb/>ΤΟΥ ΣΩΜΑΤΟΣ ΗΜΩΝ <lb/>ΒΙΒΛΙΟΝ.</head>
+            <p>Τίς ἡ ἀρίστη κατασκευὴ τοῦ σώματος ἡμῶν; <lb/>ἆρά γε ἡ εὐκρατοτάτη, καθάπερ
                         ἔδοξε πολλοῖς μὲν παλαιῶν <lb/>ἰατρῶν τε καὶ φιλοσόφων; ἢ τὴν μὲν ἀρίστην
                         ἀναγκαῖον <lb/>εὐκρατοτάτην ὑπάρχειν, οὐ μὴν τήν γε εὐκρατοτάτην ἀρίστην
                         <lb/>ἐξ ἀνάγκης; ἡ μὲν γὰρ ἐκ θερμοῦ καὶ ψυχροῦ καὶ <lb/>ξηροῦ καὶ ὑγροῦ
@@ -119,9 +127,9 @@
                         <lb/>φαίνοιτο. καὶ τοίνυν καὶ ἡμεῖς οὕτως ποιῶμεν ἀπὸ τῆς κοινῆς
                         <lb/>ἐννοίας ἀρξάμενοι, καὶ ταύτην διορισάμενοι μεθόδῳ <lb/>προΐωμεν ἐπὶ τὸ
                         συνεχὲς τῆς σκέψεως. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>Τίς οὖν κοινὴ πᾶσιν ἀνθρώποις ἐστὶν ἔννοια <lb/>ἀρίστης κατασκευῆς σώματος;
+         </div>
+         <div n="2" type="chapter">
+            <p>Τίς οὖν κοινὴ πᾶσιν ἀνθρώποις ἐστὶν ἔννοια <lb/>ἀρίστης κατασκευῆς σώματος;
                         ἀκοῦσαι μὲν γὰρ ἔστιν <lb/>οὐχ ὁμοίως αὐτῶν λεγόντων τῇ λέξει, νοούντων δ’
                         ἁπάντων <lb/>ἓν καὶ ταὐτὸν πρᾶγμα. τὸ γοῦν ὑγιεινότατον σῶμα πάντες <lb/>μὲν
                         ἑξῆς ἐπαινοῦσιν, ὥσπερ οὖν καὶ τὸ εὐεκτικώτατον, <lb/>εἰς ἓν πρᾶγμα
@@ -162,9 +170,9 @@
                         <lb/>ἔκγονον ὑπάρχει. τοιοῦτον δέ ἐστι τὸ προειρημένον <lb/>σῶμα· δῆλον οὖν
                         ὡς ἐνεργήσει πάντων ἄριστα. ὅτι δὲ καὶ <lb/>δυσπαθέστατόν ἐστιν, ᾧδ’ ἂν
                         μάλιστα μάθοις. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>Αἱ βλάβαι τοῖς σώμασιν ἡμῶν, αἱ μὲν ἀπὸ <lb/>τῶν ἔξωθεν αἰτιῶν, αἱ δ’ ἀπὸ τῶν
+         </div>
+         <div n="3" type="chapter">
+            <p>Αἱ βλάβαι τοῖς σώμασιν ἡμῶν, αἱ μὲν ἀπὸ <lb/>τῶν ἔξωθεν αἰτιῶν, αἱ δ’ ἀπὸ τῶν
                         τῆς τροφῆς ὁρμῶνται <lb/>περιττωμάτων. αἱ μὲν ἀπ’ αὐτῶν τῶν ἔξωθεν αἰτιῶν
                         <lb/>ἐγκαυθεῖσί τε καὶ ψυχθεῖσιν, ὑγρανθεῖσί τε καὶ ξηρανθεῖσι <lb/>πέρα τοῦ
                         προσήκοντος. ἐν τούτῳ δὲ τῷ γένει καὶ κόπους, <lb/>καὶ λύπας, καὶ ἀγρυπνίας,
@@ -210,9 +218,9 @@
                         ὀργανικῶν <lb/>μορίων μηδὲν ἔχειν ἀμέτρως διακείμενον, οὐ πάνυ τι
                         <lb/>συνεχῶς, ἀλλ’ ἐν μακροτέραις χρόνων περιόδοις εἴωθε γίνεσθαι, <lb/>τὸ
                         δ’ ἀπολειπόμενον βραχὺ τοῦδε κᾂν συνεχῶς <lb/>θεάσαιο. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>Τὸ μὲν οὖν ἀκριβῶς εὔκρατον μέσον ἐστὶν <lb/>ἁπλοῦ τε καὶ σκληροῦ, καὶ δασέος
+         </div>
+         <div n="4" type="chapter">
+            <p>Τὸ μὲν οὖν ἀκριβῶς εὔκρατον μέσον ἐστὶν <lb/>ἁπλοῦ τε καὶ σκληροῦ, καὶ δασέος
                         καὶ ψιλοῦ τριχῶν, καὶ <lb/>φλέβας εὐρείας ἔχοντος ἢ στενὰς, καὶ σφυγμοὺς
                         μεγάλους <lb/>ἢ μικρούς. τὸ δ’ ἀκριβῶς σύμμετρον τοῖς ὀργανικοῖς μορίοις
                         <lb/>ἑνὶ κεφαλαίῳ περιληφθὲν, οἷός περ ὁ Πολυκλείτου κανὼν <lb/>ὑπάρχειν
@@ -267,8 +275,7 @@
                         περὶ κράσεων. εἴπερ <lb/>οὖν ταῦθ’ οὕτως ἔχει, τὴν ἀρίστην κατασκευὴν ἐν
                         δυοῖν <lb/>τούτοιν θετέον, εὐκρασίᾳ μὲν τῶν ὁμοιομερῶν, συμμετρίᾳ <lb/>δὲ
                         τῶν ὀργανικῶν. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

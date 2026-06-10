@@ -1,79 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="eng">    
-    <fileDesc>
-      <titleStmt>
-        <title xml:lang="lat">Quaestiones</title>
-        <author>Alexander of Aphrodisias</author>
-        <editor>Ivo Bruns</editor>
-        <funder>Andrew W. Mellon Foundation</funder>
-      </titleStmt>
-      <publicationStmt>
-        <authority>University of Leipzig</authority>
-        <idno type="filename">tlg0732.tlg012.1st1K-grc2.xml</idno>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
-            License</licence>
-        </availability>
-        <date>2016</date>
-        <publisher>University of Leipzig</publisher>
-        <pubPlace>Germany</pubPlace>
-      </publicationStmt>
-      <sourceDesc>
-        <biblStruct>
-          <monogr>
-            <title>Alexandri Aphrodisiensis praeter commentaria scripta minora</title>
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Quaestiones</title>
             <author>Alexander of Aphrodisias</author>
             <editor>Ivo Bruns</editor>
-            <imprint>
-              <pubPlace>Berlin</pubPlace>
-              <publisher>Reimer</publisher>
-              <date>1892</date>
-            </imprint>
-          </monogr>
-          <ref target="http://www.archive.org/stream/p1supplementumar02akaduoft">Open Content Alliance</ref>
-        </biblStruct>
-        <bibl>
-          <respStmt>
-            <orgName>Tufts University</orgName>
-            <orgName>Harvard University</orgName>
-            <name>A Digital Corpus for Graeco-Arabic Studies Project (http://www.graeco-arabic-studies.org/home.html)</name>
-            <resp>Digitization and Correction</resp>
-          </respStmt>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl default="false">
-        <correction status="high" default="false" method="silent">
-          <p>Data Entry</p>
-        </correction>
-      </editorialDecl>      
-        <refsDecl n="CTS">
-        <cRefPattern n="essay" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-        <cRefPattern n="quaestio" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-      </refsDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage default="false">
-        <language ident="grc">Greek</language>
-      </langUsage>
-    </profileDesc>
-</teiHeader>
-
-
-  <text>
-    <body>
-      <div type="edition" n="urn:cts:greekLit:tlg0732.tlg012.1st1K-grc2" xml:lang="grc">
-        <div type="textpart" subtype="quaestio" n="1">
-          <div type="textpart" subtype="essay" n="2">
-
-<pb n="5"/>
-
-<milestone unit="ed1page" n="5"/>
-<head>II. Περὶ χρώματός τινα.</head>
-<p>Τὸ χρῶμα ὡρίσατο Ἀριστοτέλης πέρας τοῦ ὡρισμένου διαφανοῦς ᾗ
+            <funder>Andrew W. Mellon Foundation</funder>
+         </titleStmt>
+         <publicationStmt>
+            <authority>University of Leipzig</authority>
+            <idno type="filename">tlg0732.tlg012.1st1K-grc2.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+            License</licence>
+            </availability>
+            <date>2016</date>
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Alexandri Aphrodisiensis praeter commentaria scripta minora</title>
+                  <author>Alexander of Aphrodisias</author>
+                  <editor>Ivo Bruns</editor>
+                  <imprint>
+                     <pubPlace>Berlin</pubPlace>
+                     <publisher>Reimer</publisher>
+                     <date>1892</date>
+                  </imprint>
+               </monogr>
+               <ref target="http://www.archive.org/stream/p1supplementumar02akaduoft">Open Content Alliance</ref>
+            </biblStruct>
+            <bibl>
+               <respStmt>
+                  <orgName>Tufts University</orgName>
+                  <orgName>Harvard University</orgName>
+                  <name>A Digital Corpus for Graeco-Arabic Studies Project (http://www.graeco-arabic-studies.org/home.html)</name>
+                  <resp>Digitization and Correction</resp>
+               </respStmt>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl default="false">
+            <correction status="high" default="false" method="silent">
+               <p>Data Entry</p>
+            </correction>
+         </editorialDecl>
+         <refsDecl n="CTS">
+            <cRefPattern n="essay"
+                         matchPattern="(.+).(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern n="quaestio"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre"
+                    target="#prose-standard"
+                    cert="low"
+                    resp="#corpus-tools"/>
+         </textClass>
+         <langUsage default="false">
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="edition"
+              n="urn:cts:greekLit:tlg0732.tlg012.1st1K-grc2"
+              xml:lang="grc">
+            <div type="textpart" subtype="quaestio" n="1">
+               <div type="textpart" subtype="essay" n="2">
+                  <pb n="5"/>
+                  <milestone unit="ed1page" n="5"/>
+                  <head>II. Περὶ χρώματός τινα.</head>
+                  <p>Τὸ χρῶμα ὡρίσατο Ἀριστοτέλης πέρας τοῦ ὡρισμένου διαφανοῦς ᾗ
 διαφανές. τοῦ γὰρ σώματος καθόσον μὲν σῶμα πέρας ἐπιφάνεια, καθόσον
 δὲ διαφανὲς χρῶμα. διὸ καὶ ἅμα ἐστὶ τὸ χρῶμα τῇ ἐπιφανείᾳ. ἐπεὶ γὰρ
 <milestone unit="lineno" n="5"/>παντὸς σώματος ὡς σώματος πέρας ἐπιφάνεια, καὶ τὸ διαφανὲς δὲ σῶμά
@@ -107,8 +115,7 @@
 διαφανὲς ἔχον αὐτὸ ἐνεργείᾳ, τὸ δὲ δυνάμει ὡς ὕλη ὂν δεκτικὸν τῶν τε
 
 <pb n="6"/>
-
-<milestone unit="ed1page" n="6"/>
+                     <milestone unit="ed1page" n="6"/>
 ἐναντίων χρωμάτων ἀλλήλοις καὶ τῶν τούτοις μεταξύ. καὶ ἐν παντὶ σώματι
 χρῶμα ἔχοντι ἢ ὄντι χρώματος δεκτικῷ ἐστι μεμιγμένη καὶ ἡ τοῦ
 διαφανοῦς φύσις. ἐν οἷς μὲν οὗν σώμασιν, οὖσι διαφανέσιν ἔχουσί τι διαφανὲς
@@ -144,8 +151,7 @@
 καὶ τήν γε διαφοράν. ἔστι δὲ τῶν ἁπλῶν σωμάτων μάλιστα μὲν τὸ
 
 <pb n="7"/>
-
-<milestone unit="ed1page" n="7"/>
+                     <milestone unit="ed1page" n="7"/>
 πῦρ ὁρατόν τε τῇ αὑτοῦ φύσει καὶ οὕτως διαφανὲς ὡς προεῖπον (τοιοῦτόν
 ἐστιν, ὡς καὶ φωτίζειν δύνασθαι τὸν ἀέρα καὶ παρέχειν αὐτῷ τὴν
 καθό ἐστι τελειότητα· τὸ γὰρ φῶς ἐντελέχεια καὶ εἶδος τοῦ ἀορίστου
@@ -163,16 +169,15 @@
 <milestone unit="lineno" n="15"/>χρώματος ἐρωτώμενοι τί πότ᾿ ἐστιν, εὐλόγως ἂν λέγοιμεν αὐτὸ πέρας διαφανοῦς
 ὡρισμένου, ἐπεὶ ὃν λόγον ἔχει ἐπιφάνεια πρὸς τὸ ὡρισμένον σῶμα,
 τοῦτον ἔχει τὸν λόγον χρῶμα πρὸς τὸ διαφανὲς τὸ ὡρισμένον.</p>
-<p>[Ἄμεινον τέτακται τοῦτο τὸ πρόβλημα ἐν τῷ ἐπιγραφομένῳ ‘Λέξεών
+                  <p>[Ἄμεινον τέτακται τοῦτο τὸ πρόβλημα ἐν τῷ ἐπιγραφομένῳ ‘Λέξεών
 τινων ἐκ τοῦ Περὶ αἰσθήσεως καὶ αἰσθητοῦ ἐξήγησις καὶ ἐπιδρομή’.]</p>
-          </div>
-          <div type="textpart" subtype="essay" n="5">
-            <pb n="13"/>
-            
-            <milestone unit="ed1page" n="13"/>
-            <head>V. Διὰ τί ἡ αὔξησις κατὰ τὸ εἶδος μόνον, ἀλλ᾿ οὐχὶ καὶ κατὰ
+               </div>
+               <div type="textpart" subtype="essay" n="5">
+                  <pb n="13"/>
+                  <milestone unit="ed1page" n="13"/>
+                  <head>V. Διὰ τί ἡ αὔξησις κατὰ τὸ εἶδος μόνον, ἀλλ᾿ οὐχὶ καὶ κατὰ
               <milestone unit="lineno" n="10"/>τὴν ὕλην.</head>
-            <p>Εἰ αὔξεται τὸ ὑποκείμενον τῷ αὔξεσθαι λεγομένῳ (ὑπομένει δὲ καὶ ἡ
+                  <p>Εἰ αὔξεται τὸ ὑποκείμενον τῷ αὔξεσθαι λεγομένῳ (ὑπομένει δὲ καὶ ἡ
               ὕλη, οὐ μόνον τὸ εἶδος· οὐ γὰρ δὴ πᾶσα ἀλλάσσεται), διὰ τί κατὰ τὸ εἶδος
               μόνον, ἀλλ᾿ οὐχὶ καὶ κατὰ τὴν ὕλην ἡ αὔξησις; οὐ γὰρ πᾶσα ἡ ὕλη ἡ ἐν
               τοῖς αὐξομένοις ἀλλάσσεται, ἀλλὰ μένοντός τινος ἐξ αὐτῆς ἄλλη προσγίνεται·
@@ -194,14 +199,13 @@
               <milestone unit="lineno" n="30"/>κατ᾿ ἀριθμὸν προσθήκην ἔσχεν τινὰ κατὰ ποσόν. ἣν γὰρ ἂν λάβῃς, καὶ
               αὕτη ῥεῖ καὶ μεταβάλλεται, καὶ οὐδὲν αὐτῆς ταὐτὸ κατ᾿ ἀριθμὸν μένει·
               τὸ δὲ εἶδος ταὐτὸ μένει, ἔστ᾿ ἂν σώζηται τὸ πρᾶγμα.</p>
-          </div>
-          <div type="textpart" subtype="essay" n="11a">
-            <pb n="21"/>
-            
-            <milestone unit="ed1page" n="21"/>
-            <head>XIa. Πῶς εἴρηται ἐν τῷ ᾱ Περὶ ψυχῆς· τὸ γὰρ ζῷον τὸ καθόλου
+               </div>
+               <div type="textpart" subtype="essay" n="11a">
+                  <pb n="21"/>
+                  <milestone unit="ed1page" n="21"/>
+                  <head>XIa. Πῶς εἴρηται ἐν τῷ ᾱ Περὶ ψυχῆς· τὸ γὰρ ζῷον τὸ καθόλου
               ἤτοι οὐδέν ἐστιν ἢ ὕστερον.</head>
-            <p>Ἐζητεῖτο πῶς εἴρηται ἐν τῷ πρώτῳ Περὶ ψυχῆς ὑπ᾿ Ἀριστοτέλους,
+                  <p>Ἐζητεῖτο πῶς εἴρηται ἐν τῷ πρώτῳ Περὶ ψυχῆς ὑπ᾿ Ἀριστοτέλους,
               <milestone unit="lineno" n="15"/>τὸ γὰρ ζῷον τὸ καθόλου ἤτοι οὐδέν ἐστιν ἢ ὕστερον. ὅτι μὲν
               οὖν δύναται παραδείγματι τῷ ζῴῳ κεχρῆσθαι τῶν ἐπὶ τῆς ψυχῆς καὶ τῶν
               οὕτω λεγομένων καθόλου ὡς τὸ πρῶτον ἔχειν καὶ δεύτερον, βουλόμενος
@@ -221,8 +225,7 @@
               συμβεβηκὸς πράγματι, εἶπεν αὐτὸ Ἀριστοτέλης “ἢ μηδὲν εἶναι”, ἐπεὶ
               
               <pb n="22"/>
-              
-              <milestone unit="ed1page" n="22"/>
+                     <milestone unit="ed1page" n="22"/>
               μὴ κυρίως 〈ὄν· τὸ γὰρ ὡς〉 γένος ζῷον βουλόμενος δηλῶσαι προσέθηκεν
               τῷ ζῴῳ τὸ καθόλου, εἰπὼν τὸ γὰρ ζῷον τὸ καθόλου. τοῦτ᾿ οὗν τὸ
               ὡς γένος ζῷον ἤτοι οὐδέν ἐστιν, ἐπεὶ μὴ φύσιν τινὰ οἰκείαν σημαίνει, ἀλλ᾿
@@ -243,17 +246,16 @@
               ἀναιρουμένῳ μὲν ἑνὶ τῶν ὑπὸ τὸ κοινὸν οὐ συναναιρεῖται τὸ κοινόν, διότι
               ἐστὶν ἐν πλείοσιν· εἰ δ᾿ ἀναιρεθείη τὸ κοινόν, οὐδ᾿ ἂν τῶν ὑπὸ τὸ κοινὸν
               <milestone unit="lineno" n="20"/>εἴη τι, οἷς τὸ εἶναι ἐν τῷ ἐκεῖνο ἔχειν ἐν αὑτοῖς.</p>
-          </div>
-        </div>
-        <div type="textpart" subtype="quaestio" n="3">
-          <div type="textpart" subtype="essay" n="3">
-            <pb n="82"/>
-            
-            <milestone unit="ed1page" n="82"/>
-            <head>III. Λέξεως ἐξήγησις ἐκ τοῦ δευτέρου ὁμοίως Περὶ ψυχῆς, δι᾿
+               </div>
+            </div>
+            <div type="textpart" subtype="quaestio" n="3">
+               <div type="textpart" subtype="essay" n="3">
+                  <pb n="82"/>
+                  <milestone unit="ed1page" n="82"/>
+                  <head>III. Λέξεως ἐξήγησις ἐκ τοῦ δευτέρου ὁμοίως Περὶ ψυχῆς, δι᾿
               ἧς περὶ αἰσθήσεως λέγει, ἔστι δὲ ἥδε· “διωρισμένων δὲ τούτων
               λέγωμεν κοινῇ περὶ πάσης αἰσθήσεως”.</head>
-            <p>Εἰπὼν περὶ τῆς θρεπτικῆς δυνάμεως τῆς ψυχῆς ἐπὶ τὸν περὶ αἰσθήσεως
+                  <p>Εἰπὼν περὶ τῆς θρεπτικῆς δυνάμεως τῆς ψυχῆς ἐπὶ τὸν περὶ αἰσθήσεως
               <milestone unit="lineno" n="25"/>μέτεισι λόγον, καὶ πρῶτον μὲν καθόλου καὶ κοινῶς περὶ αἰσθήσεως
               λέγει, ἔπειτα ἐρεῖ προελθὼν περὶ ἑκάστης ἰδίᾳ. πρῶτον μὲν οὖν λαμβάνει,
               ὅτι ἡ αἴσθησις γίνεται ἐν τῷ κινεῖσθαί τι καὶ πάσχειν (διὰ γὰρ κινήσεώς
@@ -268,8 +270,7 @@
               ἡ αἴσθησις τούτων, ἀλλὰ τῶν ἐκτὸς μόνων, καὶ λύσας τὴν ἀπορίαν
               
               <pb n="83"/>
-              
-              <milestone unit="ed1page" n="83"/>
+                     <milestone unit="ed1page" n="83"/>
               τῷ τότε δυνάμει τὴν αἴσθησιν εἶναι (ἡ γὰρ αἴσθησις πρὸς τὸ αἰσθητόν,
               αἰσθητὸν δ᾿ αὐτῇ τὸ κεχωρισμένον· οὐδὲν γὰρ ὑφ᾿ ἑαυτοῦ πάσχει, ἡ δὲ
               αἴσθησις διὰ πάθους· ἔστ᾿ ἂν οὖν μὴ παρῇ τὸ αἰσθητόν, δυνάμει ἡ αἴσθησίς
@@ -307,8 +308,7 @@
               <milestone unit="lineno" n="35"/>τὸ δέ τι πάσχειν εἶπεν εἶναι οὐ τῷ φθείρεσθαι, ἀλλὰ τῷ σώζεσθαι καὶ
               
               <pb n="84"/>
-              
-              <milestone unit="ed1page" n="84"/>
+                     <milestone unit="ed1page" n="84"/>
               ἐν ἐπιδόσει γενέσθαι τῇ καθὸ ἔχει ὑπὸ τοῦ ἐνεργείᾳ ὄντος καὶ ὁμοίου. ἡ
               γὰρ κατὰ τὴν ἕξιν καὶ τοιαύτην δύναμιν ἐνέργεια τελειότης οὖσα τῆς ἕξεως
               οὐ κατὰ τὴν εἰς τοὐναντίον μεταβολὴν γίγνεται, ἀλλὰ κατὰ τὴν τοῦ αὐτοῦ
@@ -349,8 +349,7 @@
               δηλονότι τὸ ζῷον (τὸ γὰρ γεννώμενον οὐδέπω τὴν ἕξιν ἔχει τὴν αἰσθητικήν,
               
               <pb n="85"/>
-              
-              <milestone unit="ed1page" n="85"/>
+                     <milestone unit="ed1page" n="85"/>
               ἀλλ᾿ ἔτι ἐστὶ δυναμένης ἕξεως δεκτικόν, γεννηθὲν δὲ ἔχει τὴν
               αἰσθητικὴν ἕξιν εὐθύς, ὥσπερ τὸ ἀναλαβὸν τὴν ἐπιστήμην), δείξας δὲ πῶς
               ἑκάτερον τῶν δυνάμει ἐπὶ τῆς αἰσθήσεώς ἐστιν, προσέθηκεν, ὅτι καὶ τὸ κατ᾿
@@ -386,12 +385,11 @@
               <milestone unit="lineno" n="35"/>ὄντος τοῦ αἰσθάνεσθαι, ἀλλὰ διὰ τὴν τῶν κυρίων ὀνομάτων ἀπορίαν (ἐδείχθη
               
               <pb n="86"/>
-              
-              <milestone unit="ed1page" n="86"/>
+                     <milestone unit="ed1page" n="86"/>
               γάρ, ὅτι οὐκ ἔστιν ἡ τοῦ οὕτω δυνάμει εἰς τὸ ἐνεργείᾳ μεταβολὴ οὔτε
               πάθος οὔτε ἀλλοίωσις οὔτε κίνησις), ἐπὶ τὸ περὶ ἑκάστης αἰσθήσεως κατ᾿
               ἰδίαν λέγειν μετῆλθεν.</p>
-            <p>Τὰ δὲ κεφάλαια τῶν εἰρημένων· πρῶτον ἔλαβεν, ὅτι ἡ αἴσθησις ἐν
+                  <p>Τὰ δὲ κεφάλαια τῶν εἰρημένων· πρῶτον ἔλαβεν, ὅτι ἡ αἴσθησις ἐν
               <milestone unit="lineno" n="5"/>τῷ κινεῖσθαί τε καὶ πάσχειν, μεθ᾿ ὃ ἐζήτησεν, πῶς τὸ πάσχειν, τὸ εἰ δύναταί
               τι καὶ ὑπὸ τοῦ ὁμοίου πάσχειν· ἐφ᾿ οἷς ἀπορήσας, διὰ τί οὐχὶ
               καὶ τῶν αἰσθητηρίων αὐτῶν αἴσθησις γίνεται ὄντων αἰσθητῶν, εἰς τὴν
@@ -423,9 +421,9 @@
               εἰς τὴν ἐνέργειαν προειρηκώς. ὁ δ᾿ ἀποδοθεὶς λόγος τῆς αἰσθήσεώς
               ἐστι τὸ αἰσθητικὸν δυνάμει ὂν οἷον τὸ αἰσθητὸν ἤδη ἐστὶν ἐντελεχείᾳ, ὃ
               <milestone unit="lineno" n="35"/>πάσχον μὲν ὑπ᾿ αὐτοῦ οὐδέπω ὅμοιόν ἐστι, πεπονθὸς δὲ ὅμοιον.</p>
-          </div>
-        </div>
-      </div>
-    </body>
-  </text>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
 </TEI>

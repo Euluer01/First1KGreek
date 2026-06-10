@@ -1,120 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">
-    <fileDesc>
-        <titleStmt>
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
             <title xml:lang="lat">Oratio 53</title>
             <author>Libanius</author>
             <editor>Richard Foerster</editor>
-                <sponsor>University of Leipzig</sponsor>
-    <funder>European Social Fund Saxony</funder>
-    <principal>Gregory Crane</principal>
-    <respStmt>
-          <persName>Gregory R. Crane</persName>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-        </respStmt>
-        <respStmt>
-          <persName xml:id="DDD">Digital Divide Data</persName>
-          <resp>Corrected and encoded the text</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Matt Munson</persName>
-          <resp>Project Manager (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Annette Geßner</persName>
-          <resp>Project Assistant (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Thibault Clérice</persName>
-          <resp>Lead Developer (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Bruce Robertson</persName>
-          <resp>Technical Advisor</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Greta Franzini</persName>
-          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Frederik Baumgardt</persName>
-          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Simona Stoyanova</persName>
-          <resp>Project Manager (University of Leipzig), 2015</resp>
-          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-    <authority>University of Leipzig</authority>
-    <idno type="filename">tlg2200.tlg00453.opp-grc1.xml</idno>
-    <availability>
-     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-    </availability>
-    <date>2016</date>
-    <publisher>University of Leipzig</publisher>
-    <pubPlace>Germany</pubPlace>
-   </publicationStmt>
-   
-   <sourceDesc>
-    <listBibl>
-    <biblStruct>
-                <monogr>
-                    <editor>
+            <sponsor>University of Leipzig</sponsor>
+            <funder>European Social Fund Saxony</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName>Gregory R. Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Geßner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Greta Franzini</persName>
+               <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Frederik Baumgardt</persName>
+               <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Simona Stoyanova</persName>
+               <resp>Project Manager (University of Leipzig), 2015</resp>
+               <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>University of Leipzig</authority>
+            <idno type="filename">tlg2200.tlg00453.opp-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2016</date>
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg2200.tlg00453.opp-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <editor>
                         <persName>
-                            <name xml:lang="lat">Richardus Foerster</name>
-                            <addName xml:lang="deu">Richard Foerster</addName>
+                           <name xml:lang="lat">Richardus Foerster</name>
+                           <addName xml:lang="deu">Richard Foerster</addName>
                         </persName>
-                    </editor> 
-                    <author ref="urn:cts:greekLit:tlg2200">Libanius</author>  
-                    <title xml:lang="lat">Orationes LI-LXIV</title>
-                    <imprint>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg2200">Libanius</author>
+                     <title xml:lang="lat">Orationes LI-LXIV</title>
+                     <imprint>
                         <publisher>Teubner</publisher>
                         <pubPlace>Leipzig</pubPlace>
                         <date>1908</date>
-                    </imprint>
-                    <biblScope unit="volume">4</biblScope>
-                </monogr>
-                <ref target="https://archive.org/details/libaniiopera01libagoog">Internet Archive</ref>                
-            </biblStruct>
-    </listBibl>
-   </sourceDesc>
-   
-  </fileDesc>
-  <encodingDesc>
-   <p>The following text is encoded in accordance with EpiDoc standards and with the
+                     </imprint>
+                     <biblScope unit="volume">4</biblScope>
+                  </monogr>
+                  <ref target="https://archive.org/details/libaniiopera01libagoog">Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
     CTS/CITE Architecture.</p>
-      <refsDecl n="CTS">
-        <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-      </refsDecl>
-    </encodingDesc>
-  
-  <profileDesc>
-   <langUsage>
-    <language ident="lat">Latin</language>
-           <language ident="deu">German</language>
-                <language ident="grc">Greek</language>
-   </langUsage>
-  </profileDesc>
-  
- </teiHeader>
-  <text>
-    <body><div type="edition" n="urn:cts:greekLit:tlg2200.tlg00453.opp-grc1" xml:lang="grc">
-
-<div type="textpart" subtype="chapter" n="1">
-
-<pb n="54"/>
-
-<head>LIII.</head>
-
-<head>ΠΕΡΙ ΤΩΝ ΕΝ ΤΑΙΣ ΕΟΡΤΑΙΣ
+         <refsDecl n="CTS">
+            <cRefPattern n="chapter"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="lat">Latin</language>
+            <language ident="deu">German</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg2200.tlg00453.opp-grc1">
+         <div n="1" type="chapter">
+            <pb n="54"/>
+            <head>LIII.</head>
+            <head>ΠΕΡΙ ΤΩΝ ΕΝ ΤΑΙΣ ΕΟΡΤΑΙΣ
 
 ΚΛΗΣΕΩΝ.</head>
-
-<note type="marginal">R III 108</note> <p>ὑπ’ ἄλλων τε πολλῶν χείρω τὴν πόλιν
+            <note type="marginal">R III 108</note>
+            <p>ὑπ’ ἄλλων τε πολλῶν χείρω τὴν πόλιν
 
 ἡμῖν γεγενῆσθαι νομίζω πράγμασι καινοῖς τισι τῶν
 
@@ -136,41 +139,30 @@
 
 μὴ τοὺς ἀκούοντας προσθεῖναι τὸ ἔργον ἔλεγχος.
 
-<lg><l>C = codex Chisianus</l>
-
-<l>A = Monacensis gr. 483 (Augustanus)</l>
-
-<l>Ρ = Palatinus gr. 282</l>
-
-<l>I = Marcianus append. XCI 2</l>
-
-<l>Par = Parisinus gr. 3016</l></lg></p>
-
-<note type="footnote">9 Xen Hell. II 3,58; Dem. p. 721,27</note>
-
-<note type="footnote">1 νς' ante περὶ A, post κλήσεων C 2 sed in hoc ξζ΄ ιν marg
+<lg>
+                  <l>C = codex Chisianus</l>
+                  <l>A = Monacensis gr. 483 (Augustanus)</l>
+                  <l>Ρ = Palatinus gr. 282</l>
+                  <l>I = Marcianus append. XCI 2</l>
+                  <l>Par = Parisinus gr. 3016</l>
+               </lg>
+            </p>
+            <note type="footnote">9 Xen Hell. II 3,58; Dem. p. 721,27</note>
+            <note type="footnote">1 νς' ante περὶ A, post κλήσεων C 2 sed in hoc ξζ΄ ιν marg
 
 in ras m m2 λόγος λθ in marg I 3 ταῖς Ὀλυμπίων ἑορταῖς Mor</note>
-
-<note type="footnote">8 ἐπ’ Ρ sed ἑ rubr 4 ὑμῖν C 6 γενομένοις I γενό-
+            <note type="footnote">8 ἐπ’ Ρ sed ἑ rubr 4 ὑμῖν C 6 γενομένοις I γενό-
 
 μεναι Par Mor 7 μὲν om I 8 δ᾿ Ι | ἤνεγκε Par
 
 γ
 
 9 λό Par λόγου Mor 11 διειλέχθαι Ρ sed ε (2) in ras m 2</note>
-
-<note type="footnote">12 πεισόμενον Cobet Coll 256 colf. Dem. p. 198, 26 τότε πει-
+            <note type="footnote">12 πεισόμενον Cobet Coll 256 colf. Dem. p. 198, 26 τότε πει-
 
 σόμενον Mor | τὸ Par Mor</note>
-
-
-
-<pb n="55"/>
-
-
-
-<p>2. Ἐφ᾿ ᾧ μὲν οὖν μέγα φρονοῦμεν, ἔστι τὰ Ὀλύμ-
+            <pb n="55"/>
+            <p>2. Ἐφ᾿ ᾧ μὲν οὖν μέγα φρονοῦμεν, ἔστι τὰ Ὀλύμ-
 
 πια τετυχηκότα σπουδῆς ὅσης οὐδὲν ἕτερον οὔτ’ ἐν
 
@@ -189,10 +181,10 @@ in ras m m2 λόγος λθ in marg I 3 ταῖς Ὀλυμπίων ἑορτ�
 παινόντων οὐ ῥᾴδιον ὀρῶν, εἰ τά περὶ τοὺς δαιτυ-
 
 μόνας δείξαιμι νῦν πλημμελούμενα, στέργοιμ’ ἄν. <lb n="10"/>
-
-</p></div>
-
-<div type="textpart" subtype="chapter" n="3"><p>Τίνες οὑν ἦσαν οὗτοι; καὶ τίνας ὁ τῶν ἄθλων
+            </p>
+         </div>
+         <div n="3" type="chapter">
+            <p>Τίνες οὑν ἦσαν οὗτοι; καὶ τίνας ὁ τῶν ἄθλων
 
 προεστηκὼς ἐκάλει; οἴ τε πρεσβύται καὶ οἷς ἦν ἐπὶ
 
@@ -208,9 +200,10 @@ in ras m m2 λόγος λθ in marg I 3 ταῖς Ὀλυμπίων ἑορτ�
 
 στατο κἂν εἰ συγγενὴς ἣν τῷ ταῦτα λειτουργοῦντι.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="4"><p>καὶ ταῦτα, εἴπερ οἷόν τ’ ἣν, ἐμαρτύρησε | μὲν 
+</p>
+         </div>
+         <div n="4" type="chapter">
+            <p>καὶ ταῦτα, εἴπερ οἷόν τ’ ἣν, ἐμαρτύρησε | μὲν 
 
 <note type="footnote">R III 110</note>
 
@@ -219,8 +212,7 @@ in ras m m2 λόγος λθ in marg I 3 ταῖς Ὀλυμπίων ἑορτ�
 πολλοὶ μὲν πρὸ αὐτῶν ἐν τῷ στεφάνῳ τούτῳ, πολλοὶ
 
 <note type="footnote">2 cf. t. I 533,19 20 cf. t. I 181,1</note>
-
-<note type="footnote">2 οὔτε par mor 5 καὶ om CAPI 6 νομίμων scripsi
+               <note type="footnote">2 οὔτε par mor 5 καὶ om CAPI 6 νομίμων scripsi
 
 auctore Re coll. t. I 404, 8 νόμων libri edd | ἐγὼ δέ ἀλγῶ μὲν]
 
@@ -237,10 +229,7 @@ auctore Re coll. t. I 404, 8 νόμων libri edd | ἐγὼ δέ ἀλγῶ �
 ᾗ reliqui libri edd 19 τ’ reposui e libris τε edd
 
 20 ὁμοῦ Mor sed ἴσ. ἐμοῦ in marg</note>
-
-
-
-<pb n="56"/>
+               <pb n="56"/>
 
 
 
@@ -270,9 +259,10 @@ auctore Re coll. t. I 404, 8 νόμων libri edd | ἐγὼ δέ ἀλγῶ �
 
 πνον καλεῖ καὶ ᾠχόμην ἡδῆ τε ὢν ἐν δόξῃ τινὶ καὶ τῷ
 
-μᾶλλον σωφρονεῖν.</p></div>
-
-<div type="textpart" subtype="chapter" n="5"><p>οὐ μὴν ἔνι γε εἰπεῖν, ὡς ἀμε-
+μᾶλλον σωφρονεῖν.</p>
+         </div>
+         <div n="5" type="chapter">
+            <p>οὐ μὴν ἔνι γε εἰπεῖν, ὡς ἀμε-
 
 <note type="marginal">R III 111</note> λούμενος τοῦτο ἔπασχον καὶ διὰ τὸ μὴ | εἷναί
 
@@ -287,8 +277,7 @@ auctore Re coll. t. I 404, 8 νόμων libri edd | ἐγὼ δέ ἀλγῶ �
 <note type="footnote">4 cf. t. I 81,12 6 cf. t. I 403, 23; 461,9 11 cf. t. I
 
 404,17 13 cf. Dem. P. 402,17; Sievers P. 43</note>
-
-<note type="footnote">1 ἤδη I 2 τὰ inserui acutore Re 4 ἐγεγόνη CA
+               <note type="footnote">1 ἤδη I 2 τὰ inserui acutore Re 4 ἐγεγόνη CA
 
 sed in hoc η in ει corr f 7 τοὐμοῦ scripsi ex I τοῦ μοῦ CA
 
@@ -305,20 +294,17 @@ om ΡΙ 12 ἐμὸς Α sed ἑ ex οὐ corr m. rec 14 μᾶλλον]
 καὶ μᾶλλον Par Mor καὶ τῆς ἡλικίας μᾶλλον coni Re 15 καὶ
 
 in ras 3 litt om Ρ | διὰ] ἃ Par quod cancellavit Mor</note>
-
-<note type="footnote">16 ἐδεόμην ante οὔτε (1) inserendum coni Re 17 post
+               <note type="footnote">16 ἐδεόμην ante οὔτε (1) inserendum coni Re 17 post
 
 ἀδελφὸς excidisse videntur ἦν, ἀλλ’ ἐκαλεῖτο παῖς</note>
+               <pb n="57"/>
 
 
 
-<pb n="57"/>
-
-
-
-οὐδέν.</p></div>
-
-<div type="textpart" subtype="chapter" n="6"><p>ἀλλὰ νῦν ὅσοι καλοῦνται πατέρες παῖδας
+οὐδέν.</p>
+         </div>
+         <div n="6" type="chapter">
+            <p>ἀλλὰ νῦν ὅσοι καλοῦνται πατέρες παῖδας
 
 ἔχοντες, τούτων καὶ παῖδες καὶ πολλαχοῦ πάντες, κἂν
 
@@ -336,9 +322,10 @@ in ras 3 litt om Ρ | διὰ] ἃ Par quod cancellavit Mor</note>
 
 μεστὸν οἴνου ποιῆσαν ἑκάτερον οὐκ ἄδηλον ἐφ’ ὃ
 
-προάγει.</p></div>
-
-<div type="textpart" subtype="chapter" n="7"><p>καὶ μὴν εἰ μὲν σιγῇ κατακέοιτο, πόσην <lb n="10"/>
+προάγει.</p>
+         </div>
+         <div n="7" type="chapter">
+            <p>καὶ μὴν εἰ μὲν σιγῇ κατακέοιτο, πόσην <lb n="10"/>
 
 δεῖ νομίζειν εἶναι τὴν ἀηδίαν· εἰ δ’ εἶναι βούλοιτο
 
@@ -352,17 +339,17 @@ in ras 3 litt om Ρ | διὰ] ἃ Par quod cancellavit Mor</note>
 
 ἀλλ’ οὐδὲ κατά τά βλεπόμενα πείθεσθαι βουλόμενον;
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="8"><p>| τὸ δὲ ἐφιέμενον τῶν παρατιθεμένων φαίνε- <note type="marginal">R III 112</note>
+</p>
+         </div>
+         <div n="8" type="chapter">
+            <p>| τὸ δὲ ἐφιέμενον τῶν παρατιθεμένων φαίνε- <note type="marginal">R III 112</note>
 
 σθαι τὸν τηλικοῦτον οὐκ αἰσχρόν; τὸ δὲ κατά σπου-
 
 δὴν ἀναιρεῖσθαί τε σῖτον καὶ παραδιδόναι τῷ στόματι;
 
 <note type="footnote">6 cf. p. 64,11 et Dem. p. 403,19</note>
-
-<note type="footnote">1 οὐδέ ἕν Ι | πατέρες Ρ sed ε (2) in ras m 5 2 τοῦτον C
+               <note type="footnote">1 οὐδέ ἕν Ι | πατέρες Ρ sed ε (2) in ras m 5 2 τοῦτον C
 
 3 „mallem αὖ τῳ“ Re 6 δ’ Re 7 καὶ om Par Mor
 
@@ -391,10 +378,7 @@ Re τί libri edd | δαὶ CA sed in hoc αι eras et ε suprascr
 m. rec 18 κατασπουδὴν Ι 19 ἀναιρεῖται Par et γρ Mor |
 
 τε om Par Mor</note>
-
-
-
-<pb n="58"/>
+               <pb n="58"/>
 
 
 
@@ -425,8 +409,8 @@ m. rec 18 κατασπουδὴν Ι 19 ἀναιρεῖται Par et γρ Mor |
 ἔγωγέ τινα πατέρα ὑμνούμενον τῇ περὶ ταῦτα τοῖν
 
 παίδοιν εἰς ἅπαν εὐχερείᾳ.</p>
-
-<lb n="15"/> <p>9. Εἰ δέ τις λογίσαιτο τοὺς χρόνους, καὶ κατὰ
+            <lb n="15"/>
+            <p>9. Εἰ δέ τις λογίσαιτο τοὺς χρόνους, καὶ κατὰ
 
 τοῦτ’ ἂν εὕροι φαυλοτέρους ἐνταυθοῖ πατέρας παίδων
 
@@ -465,10 +449,7 @@ Par | τῶν abesse “ Re 22 ἑστιᾶσθαι scripsi auctoribus
 Re qui etiam καλεῖσθαι proposuit, Iacobsio Lectt. 205, Cobeto
 
 Mnem. N. S. II 497 coll. p. 63, 9 et t. III 191, 1 R αἰτιᾶσθαι libri edd</note>
-
-
-
-<pb n="59"/>
+               <pb n="59"/>
 
 
 
@@ -478,9 +459,10 @@ Mnem. N. S. II 497 coll. p. 63, 9 et t. III 191, 1 R αἰτιᾶσθαι libri 
 
 γιγνομένου, τοῦ δὲ μὴ κατὰ κόσμον βλάπτοντος τὴν
 
-δαπάνην.</p></div>
-
-<div type="textpart" subtype="chapter" n="10"><p>οὕτω συμφορὰ τῷ λειτουργοῦντι τῶν
+δαπάνην.</p>
+         </div>
+         <div n="10" type="chapter">
+            <p>οὕτω συμφορὰ τῷ λειτουργοῦντι τῶν
 
 παίδων αἰ προσθῆκαι· πρότερον μὲν γὰρ ὁ καλούμενος <lb n="5"/>
 
@@ -507,8 +489,7 @@ Mnem. N. S. II 497 coll. p. 63, 9 et t. III 191, 1 R αἰτιᾶσθαι libri 
 πεισθῆναι δυναμένοις, ὅτι ὅτι &lt;τι&gt; ἀκολάστων ἰδεῶν
 
 αἱρετώτερον.</p>
-
-<p>11. Ἀδικεῖν μὲν οὖν ἔμοιγε δοκοῦσι καὶ οἱ καλοῦν-
+            <p>11. Ἀδικεῖν μὲν οὖν ἔμοιγε δοκοῦσι καὶ οἱ καλοῦν-
 
 τες | οὐδὲ αὐτοῖς ὁμολογοῦντες, ὅταν ἐν τοῖς <note type="marginal">R III 115</note>
 
@@ -517,8 +498,7 @@ Mnem. N. S. II 497 coll. p. 63, 9 et t. III 191, 1 R αἰτιᾶσθαι libri 
 κότας ποιῶσιν ὅπως ἄλλοι τἀκείνων πείσονται καὶ
 
 <note type="footnote">13 cf. ad t. III 274,9 15 cf. Aesch. Ag. 884</note>
-
-<note type="footnote">1 ἐλεγχομένην I 9 ἑπτέτης reposui e libris ἑπταέτης
+               <note type="footnote">1 ἐλεγχομένην I 9 ἑπτέτης reposui e libris ἑπταέτης
 
 Par) ἑπταετῶν Mor ἑπτὰ ἐτῶν Re | δεῆσαι] γε δεῆσαι Ρ sed
 
@@ -539,10 +519,7 @@ Re δυνάμενος libri edd | ὅ τι Ρ Mor | τι inserui 17 αἱρε-
 τώτερα Par 19 αὑτοῖς Ρ sed ’ in ras m 4 αὐτοῖς AIPar
 
 21 τὰκείνων Ρ sed ’ eras | πείσαντα Par πείσωνται Μοr</note>
-
-
-
-<pb n="60"/>
+               <pb n="60"/>
 
 
 
@@ -567,8 +544,7 @@ Re δυνάμενος libri edd | ὅ τι Ρ Mor | τι inserui 17 αἱρε-
 <lb n="10"/> κακῆς ἐλευθερίας μηδὲ μιγνύναι ἐν εὐωχίαις
 
 τὰ διεστηκότα τῷ τῆς ἡλικίας δικαίῳ.</p>
-
-<p>12. Ἀλλ’ εἰς 1 &lt;ἔθος&gt; τοῦτο, φησίν, ἥκει
+            <p>12. Ἀλλ’ εἰς 1 &lt;ἔθος&gt; τοῦτο, φησίν, ἥκει
 
 πολλαὶ τοιαῦτα Ὀλυμπιάδες εἱστίασαν. πλείους
 
@@ -611,16 +587,12 @@ scripsi τοιαῦται libri edd 13 et 14 ἐστίασαν Α sed ι post �
 inser m 2 CPar Mor sed in hoc priore loco γρ εἱστίασαν in
 
 marg εἱστιάθησαν coni Re 14 οὐχ scripsi οὐδ᾿ libri edd</note>
-
-<note type="footnote">15 πότερα scripsi πότερον ἂν Par Mor πότερ’ ἂν reliqui
+               <note type="footnote">15 πότερα scripsi πότερον ἂν Par Mor πότερ’ ἂν reliqui
 
 libri Re πότερον Iacobs Lectt. 205 et App. Pors. adv. 323
 
 16 βαλαντίονι C</note>
-
-
-
-<pb n="61"/>
+               <pb n="61"/>
 
 
 
@@ -636,9 +608,10 @@ libri Re πότερον Iacobs Lectt. 205 et App. Pors. adv. 323
 
 τιῶσθαι, ὁ δὲ οὐ χρηστῆς ἐστι τύχης τηρεῖν ἀνοίας
 
-τῆς ἐσχάτης.</p></div>
-
-<div type="textpart" subtype="chapter" n="13"><p>δοκεῖ δέ μοι καὶ τοῦδε γεγενῆσθαι
+τῆς ἐσχάτης.</p>
+         </div>
+         <div n="13" type="chapter">
+            <p>δοκεῖ δέ μοι καὶ τοῦδε γεγενῆσθαι
 
 πατήρ, ὅσπερ αὖ καὶ ἄλλων οὐκ ὀλίγων γέγονεν, ὧν
 
@@ -664,27 +637,25 @@ libri Re πότερον Iacobs Lectt. 205 et App. Pors. adv. 323
 
 ἤδη τοῦτο ποιοῦντες. τὸ γοῦν πρὸς ἐμὲ νυνὶ λέγειν
 
-τὸ πεπρᾶχθαι πολλάκις οὐκ ἣν τότε.</p></div>
-
-<div type="textpart" subtype="chapter" n="14"><p>κρατοίμην <lb n="20"/>
+τὸ πεπρᾶχθαι πολλάκις οὐκ ἣν τότε.</p>
+         </div>
+         <div n="14" type="chapter">
+            <p>κρατοίμην <lb n="20"/>
 
 δ’ ἂν οὐδὲ ἐγὼ δικαίως ὑπὸ τοῦδε τοῦ λόγου, ἐπεὶ
 
 καὶ ἄλλα μυρία χείρονα νενίκηκεν, ὧν οὐ μεταβάλλει
 
 <note type="footnote">10 cf. t. II 617,6 18 cf. t. II 647,6</note>
-
-<note type="footnote">2 τό Ρ sed ’ in ras m 4, Par 6 εἰσαγηοχόσιν Par Mor
+               <note type="footnote">2 τό Ρ sed ’ in ras m 4, Par 6 εἰσαγηοχόσιν Par Mor
 
 cf. t. III 75, 11; 267,6; 217,8 | ἠναντιῶσθαι scripsi auctore Re
 
 ἐναντιοῦσθαι libri Mor (om Re) 6 δ᾿ Re 8 ὥσπερ Par Mor</note>
-
-<note type="footnote">9 τοῦτο εἰσῆλθεν] „videtur μὲν “ Re 10 δὲ
+               <note type="footnote">9 τοῦτο εἰσῆλθεν] „videtur μὲν “ Re 10 δὲ
 
 om Mor 12 κωλύσαι Ρ sed ’ e ~ corr m 5 cf. ad t. I 272,6</note>
-
-<note type="footnote">14 εἴ τις om Par Mor 15 ἔδει Ρ sed ε et ει (ex η corr)
+               <note type="footnote">14 εἴ τις om Par Mor 15 ἔδει Ρ sed ε et ει (ex η corr)
 
 in ras m 4, et coni Re ἤδη reliqui libri edd | οὕτω scripsi e Ρ
 
@@ -693,10 +664,7 @@ in ras m 4, et coni Re ἤδη reliqui libri edd | οὕτω scripsi e Ρ
 om I 19 γ’ οὖν AP 20 πεπράχθαι AIPar κρατοίην
 
 coni Mor 22 χείριστα Mor</note>
-
-
-
-<pb n="62"/>
+               <pb n="62"/>
 
 
 
@@ -710,9 +678,10 @@ coni Mor 22 χείριστα Mor</note>
 
 <lb n="6"/> πρὸς τὸ δεῖν ἀεὶ κλέπτειν τὸ κεκλοφέναι πολλάκις.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="15"><p>ᾐσχυνόμην μὲν οὖν ἐξ ὅτουπερ ἐπανήκων εὗρον
+</p>
+         </div>
+         <div n="15" type="chapter">
+            <p>ᾐσχυνόμην μὲν οὖν ἐξ ὅτουπερ ἐπανήκων εὗρον
 
 πολλὰ μεθεστηκότα, ὧν ἔν τι καὶ τὸ τῶν νέων τοῦτο,
 
@@ -724,9 +693,10 @@ coni Mor 22 χείριστα Mor</note>
 
 ρων ἑτέρας ποιήσεσθαι συμβουλάς. ἐν γὰρ δὴ πολλοῖς
 
-τραύμασι πολλῶν ἂν δέοι φαρμάκων.</p></div>
-
-<div type="textpart" subtype="chapter" n="16"><p>ὁ δ’ εἰ τὸ
+τραύμασι πολλῶν ἂν δέοι φαρμάκων.</p>
+         </div>
+         <div n="16" type="chapter">
+            <p>ὁ δ’ εἰ τὸ
 
 προστεθὲν ἀναιρεθήσεται λυπούμενος καὶ πολλαχοῦ
 
@@ -765,16 +735,12 @@ libri edd | σεμνολογούμενος scripsi e ΡΙ σεμνολογησ�
 qui libri sed ησόμενος cancellavit et ούμενος suprascr A f, edd
 
 cf. ad t. I 201, 9 14 ἐκε.ῖνο Re , 15 εἰσέπαισε Cobet Coll. 256</note>
-
-<note type="footnote">16 ἀπῆι εἰ cum ras 1 litt Α | τί API | φέρειν Α sed ει in ω
+               <note type="footnote">16 ἀπῆι εἰ cum ras 1 litt Α | τί API | φέρειν Α sed ει in ω
 
 corr f, I 18 μὴ δ’ APPar 19 τι Par, τε Mor ante καὶ (1),
 
 quod delevit Re | ὑποκεχώρηκεν Par sed οκε ex ω corr m 2</note>
-
-
-
-<pb n="63"/>
+               <pb n="63"/>
 
 
 
@@ -791,8 +757,7 @@ quod delevit Re | ὑποκεχώρηκεν Par sed οκε ex ω corr m 2</note
 ζοῦσι τοὺς παῖδας, ὧσπερ ἐκεῖνο τὸ τὸν λειτουργοῦντα <lb n="†"/>
 
 κατὰ δυοῖν εὖ ποιοῦν ἐξαληλιμμένον.</p>
-
-<p>17. Τιμὴ γάρ τοῖς πατράσιν ἡδεῖα καὶ τοὺς
+            <p>17. Τιμὴ γάρ τοῖς πατράσιν ἡδεῖα καὶ τοὺς
 
 παῖδας τοῦτον ἑστιᾶσθαι τὸν τρόπον. ἀλλ’ ὅτι
 
@@ -806,9 +771,10 @@ quod delevit Re | ὑποκεχώρηκεν Par sed οκε ex ω corr m 2</note
 
 ἄνθρωπον τιμήσειεν, ἀτιμάζοι τὸν Δία, πῶς οὐ <note type="marginal">R III 120</note>
 
-τὰ μέγιστα ἂν ἐξαμαρτάνοι;</p></div>
-
-<div type="textpart" subtype="chapter" n="18"><p>καὶ μὴν κἀκεῖνο νῦν <lb n="15"/>
+τὰ μέγιστα ἂν ἐξαμαρτάνοι;</p>
+         </div>
+         <div n="18" type="chapter">
+            <p>καὶ μὴν κἀκεῖνο νῦν <lb n="15"/>
 
 ἐνδείκνυμεν βλάβην μὲν εἶναι τοῦτο τοῖς υἱέσι, βλάβην
 
@@ -833,12 +799,10 @@ Par Mor 8 πατράσιν ἡδεῖα C sed e πατράσι νὴ δία c
 πατράσι νὴ δία Ρ sed γρ ἡδεῖα supra νὴ δία scr m 3 πατράσι,
 
 Α sed νὴ δία in marg m 2, νὴ Δία coni Re at cf. p. 64, 17</note>
-
-<note type="footnote">9 ἑστιᾶσθαι scripsi auctoribus Re et Iacobsio Lectt. 206 coll.
+               <note type="footnote">9 ἑστιᾶσθαι scripsi auctoribus Re et Iacobsio Lectt. 206 coll.
 
 p. 68,22 11 δέ &lt;ὂκ&gt;? 1 13 δὴ Par Mor | ἴν’ om Par</note>
-
-<note type="footnote">14 ἀτιμάζοιτο I 15 κἀκεῖνον C κἀκεῖ Par Mor | νῦν] μὲν
+               <note type="footnote">14 ἀτιμάζοιτο I 15 κἀκεῖνον C κἀκεῖ Par Mor | νῦν] μὲν
 
 Par Mor 16 ἐδείκνυμεν Par MOr 17 πατράσι I | τὰ (2)
 
@@ -851,10 +815,7 @@ qui libri edd 19 αὐτὸν Par (desinit for. 15) Mor | γεγόνασιν
 qui lacunam indicavit adnotans in margine: Λείπει β΄ σελίδε |
 
 signum interrogationis post ἀγαθόν posui</note>
-
-
-
-<pb n="64"/>
+               <pb n="64"/>
 
 
 
@@ -882,9 +843,10 @@ signum interrogationis post ἀγαθόν posui</note>
 
 στρέφεσθαι νέον καὶ ὅτι μεγίστῳ τούτῳ κατὰ τῶν
 
-Αἰσχίνῃ βεβιωμένων κέχρηται μαρτυρίῳ.</p></div>
-
-<div type="textpart" subtype="chapter" n="19"><p>τιμὴν
+Αἰσχίνῃ βεβιωμένων κέχρηται μαρτυρίῳ.</p>
+         </div>
+         <div n="19" type="chapter">
+            <p>τιμὴν
 
 μὲν οὖν οὐδεμίαν εἶναι τῷ τηλικαύτην ἔχοντι βλάβην
 
@@ -905,12 +867,10 @@ signum interrogationis post ἀγαθόν posui</note>
 <note type="footnote">11 Dem. fals. leg. p. 403,19; cf. supra p. 57,6 13 Dem.
 
 403,15 et 24 18 Plat. Apol. p. 34 Β</note>
-
-<note type="footnote">2 ἥκουσα καλοῦ μέν scripsi ἥκουσα. καλοῦμέν libri Re
+               <note type="footnote">2 ἥκουσα καλοῦ μέν scripsi ἥκουσα. καλοῦμέν libri Re
 
 4 πρόσχημα mavult Iacobsius l. l. coll. p. 58, 9 5 αὐτὸν Re</note>
-
-<note type="footnote">7 οὐκ ὀλίγων] „putabam ἑωρακότων vel ὁρώντων“ Iacobs Lectt.
+               <note type="footnote">7 οὐκ ὀλίγων] „putabam ἑωρακότων vel ὁρώντων“ Iacobs Lectt.
 
 1. 1. 8 δ’ Re | αὐτὸν API 9 αὐτὸν scripsi coll. Adam.
 
@@ -919,16 +879,12 @@ Phys. II 48 (Physiogn. I p. 413, 4. 10. 15) αὐτὸν libri Re
 11 διηγεῖτο scripsi ἡγεῖτο libri Re | πεπωκόσιν Ρ sed ὢ in
 
 ras m 2 14 μὲν inserui e libris om Re | οὐδὲ μίαν Α</note>
-
-<note type="footnote">15 locus labem contraxit ὀρονθεῶ C Re ὄρον θεῶ Α ὄρον
+               <note type="footnote">15 locus labem contraxit ὀρονθεῶ C Re ὄρον θεῶ Α ὄρον
 
 θεω Ρ ορονθεῶ Ι num ᾧ ἐχθρὸς θεοῖς? | ῥαδίως in marg Α
 
 ῤαδίως Ρ om I 17 γίγνεσθαι I sed γ (2) eras 18 δ᾿ Re</note>
-
-
-
-<pb n="65"/>
+               <pb n="65"/>
 
 
 
@@ -946,9 +902,10 @@ ras m 2 14 μὲν inserui e libris om Re | οὐδὲ μίαν Α</note>
 
 δὲ τὰς μὲν βελτίους ἐπαινῶ, μὴ κακῶς δὲ τὰς φαυλο-
 
-τέρας λέγειν οὐκ ἂν οἷός τ᾿ εἴην;</p></div>
-
-<div type="textpart" subtype="chapter" n="20"><p>μὴ τοίνυν μηδὲ
+τέρας λέγειν οὐκ ἂν οἷός τ᾿ εἴην;</p>
+         </div>
+         <div n="20" type="chapter">
+            <p>μὴ τοίνυν μηδὲ
 
 ὑμεῖς πάντα δίδοτε μηδὲ πάντα χαρίζεσθε μηδὲ φρον-
 
@@ -968,9 +925,10 @@ ras m 2 14 μὲν inserui e libris om Re | οὐδὲ μίαν Α</note>
 
 σχύνης ἢ μετά ταύτης ἐν γέλωτι καὶ τῷ χαίρειν διάγειν.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="21"><p>ἀθυμοῦσι καὶ οἱ διδόντες δίκην, ἀλλὰ παιδεύονται
+</p>
+         </div>
+         <div n="21" type="chapter">
+            <p>ἀθυμοῦσι καὶ οἱ διδόντες δίκην, ἀλλὰ παιδεύονται
 
 τῇ δίκῃ. ὁ δὲ ἐπαινῶν τὸν ἀνδροφόνον μεθ’ ἡδονῆς
 
@@ -986,23 +944,20 @@ ras m 2 14 μὲν inserui e libris om Re | οὐδὲ μίαν Α</note>
 
 ἐκ τούτου τᾷ συμποσίῳ βλάβη, πόρρω που καθῆσθαι <lb n="25"/>
 
-τοὺς ἀναισθησίας γέμοντας;</p></div>
-
-<div type="textpart" subtype="chapter" n="22"><p>ἀλλά καὶ τοῖς νέοις
+τοὺς ἀναισθησίας γέμοντας;</p>
+         </div>
+         <div n="22" type="chapter">
+            <p>ἀλλά καὶ τοῖς νέοις
 
 <note type="footnote">3 cf. t. II 411, 13 et t. III p. LVIII sq. 4 cf. ad t. III 483,20</note>
-
-<note type="footnote">1 προσεξετάσομεν Ρ sed o (2) in ras m 5 4 num λέγοιεν
+               <note type="footnote">1 προσεξετάσομεν Ρ sed o (2) in ras m 5 4 num λέγοιεν
 
 ἄν? 6 ταῖσδε? 8 sq. μὴ δέ ΑΡΙ 16 δ’ Re 17 ἐκεί-
 
 νης Ι 19 δ’ Re 25 τῷ συμποσίῳ scripsi τοῦ συμποσίου
 
 libri Re 26 ἀναισθησίας Ρ sed σί ιν ras m 2</note>
-
-
-
-<pb n="66"/>
+               <pb n="66"/>
 
 
 
@@ -1024,9 +979,10 @@ libri Re 26 ἀναισθησίας Ρ sed σί ιν ras m 2</note>
 
 τῇ ψυχῇ πάσχων, οἷον εἰκὸς τὸν ὁρῶντά τινας τῶν
 
-<lb n="10"/> τότε συγκατακειμένων.</p></div>
-
-<div type="textpart" subtype="chapter" n="23"><p>εἰ δὲ λυποῦντες ὀνήσετε
+<lb n="10"/> τότε συγκατακειμένων.</p>
+         </div>
+         <div n="23" type="chapter">
+            <p>εἰ δὲ λυποῦντες ὀνήσετε
 
 τοὺς παῖδας, καινὸν οὐδέν, ἐπεὶ καὶ διὰ τῶν παιδα-
 
@@ -1044,9 +1000,10 @@ libri Re 26 ἀναισθησίας Ρ sed σί ιν ras m 2</note>
 
 ὥστε αὐτοῖς ἐν ἐπαίνοις ταύτας εἶναι τὰς λύπας.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="24"><p>τὸ δὲ μέγιστον ἀγαθὸν ἀσθενοῦντι τοῦ νοσήματος
+</p>
+         </div>
+         <div n="24" type="chapter">
+            <p>τὸ δὲ μέγιστον ἀγαθὸν ἀσθενοῦντι τοῦ νοσήματος
 
 <lb n="20"/> ἀπαλλαγή. τίς τοίνυν παρ’ ὅτου καὶ τοῦτο γένοιτο;
 
@@ -1063,22 +1020,17 @@ libri Re 26 ἀναισθησίας Ρ sed σί ιν ras m 2</note>
 piens „de liberis eius qui loquitur et “ cancellavi
 
 6 οὔτε et οὔτ’ Re | ἄλλοτε scripsi ἄλλως libri Re | αὐτὸ I</note>
-
-<note type="footnote">7 διατοῦτο ΡΙ 15 δύνασθαι Ρ sed θα in ras m 5
+               <note type="footnote">7 διατοῦτο ΡΙ 15 δύνασθαι Ρ sed θα in ras m 5
 
 16 οὐτῶ scripsi auctore Iacobsio Lectt. 206 et Αρρ. Pors. 254
 
 οὔπω libri edd 19 τοῦ νοσήματος denuo inc Par fol. 16
 
 Mor 20 γένοιτο; ἰατρός. Re γένοιτο ἰατρός; ἰατρός; (.Mor) libri Mor</note>
-
-<note type="footnote">22 δ’ (2) Re 23 ἀσιτίας scripsi coll. t. II 810,13 αἰτίας
+               <note type="footnote">22 δ’ (2) Re 23 ἀσιτίας scripsi coll. t. II 810,13 αἰτίας
 
 libri edd | μεμνημένον Ρ sed o in ras m 2</note>
-
-
-
-<pb n="67"/>
+               <pb n="67"/>
 
 
 
@@ -1088,9 +1040,10 @@ libri edd | μεμνημένον Ρ sed o in ras m 2</note>
 
 τε καὶ ποτὸν ἀνεῳγμένον, ἀλλ’ ἔστι καὶ πρὸ τῶν
 
-γονέων ὁ ἰατρὸς ἐκείνῳ.</p></div>
-
-<div type="textpart" subtype="chapter" n="25"><p>καὶ νῦν ἡγήσεται μὲν
+γονέων ὁ ἰατρὸς ἐκείνῳ.</p>
+         </div>
+         <div n="25" type="chapter">
+            <p>καὶ νῦν ἡγήσεται μὲν
 
 ἀθυμία, ἴψεται δὲ ἡδονή. ὧν δὲ ἀφήσουσι πρὸ τῶν <lb n="5"/>
 
@@ -1104,9 +1057,10 @@ libri edd | μεμνημένον Ρ sed o in ras m 2</note>
 
 ἀλλ’ ὅλως ἀπασῶν | τῶν τοιούτων, ποιοῦσι γὰρ <note type="marginal">R III 123</note>
 
-δὴ καὶ ἕτεροι τοιαύτας, φημὶ δεῖν ἀφεστάναι.</p></div>
-
-<div type="textpart" subtype="chapter" n="26"><p>καί- <lb n="11"/>
+δὴ καὶ ἕτεροι τοιαύτας, φημὶ δεῖν ἀφεστάναι.</p>
+         </div>
+         <div n="26" type="chapter">
+            <p>καί- <lb n="11"/>
 
 τοι τὰ μὲν Ὀλύμπια θέρους ἐστὶν ἑορτὴ καὶ ποιεῖ
 
@@ -1124,9 +1078,9 @@ libri edd | μεμνημένον Ρ sed o in ras m 2</note>
 
 πατὴρ μηδέ νύμφης ἐπὶ δεῖπνον τούς νέους, ὧς οὐκ
 
-ἐπὶ δεῖπνον μᾶλλον ἢ ἐφ’ ἅπερ ἔφην καλέσων. <lb n="20"/></p>
-
-<p>27. Καὶ οἰήσεται μέν τις περὶ δείπνων εἷναι τὸν
+ἐπὶ δεῖπνον μᾶλλον ἢ ἐφ’ ἅπερ ἔφην καλέσων. <lb n="20"/>
+            </p>
+            <p>27. Καὶ οἰήσεται μέν τις περὶ δείπνων εἷναι τὸν
 
 λόγον, ἔστι δὲ ὑπὲρ τῆς πόλεως, εἴ τις ὀρθῶς ἐξε-
 
@@ -1149,10 +1103,7 @@ fortasse recte cf. ad t. III 484,8 17 et 18 κατανόμον Par
 17 νόμων Re 18 μὴ δὲ APIPar 21 οἰήσεται P sed οἰη
 
 in ras m 2 | δεῖπνον 'P'ar Mor 22 ἔτι Par Mor</note>
-
-
-
-<pb n="68"/>
+               <pb n="68"/>
 
 
 
@@ -1173,8 +1124,8 @@ in ras m 2 | δεῖπνον 'P'ar Mor 22 ἔτι Par Mor</note>
 ὅπως ἀπὸ γενναίας τῆς βαλβῖδος ἐπὶ τὰς ἄλλας ἰόντες
 
 ἡλικίας ἐλευθέρᾳ πολιτεύσωνται τῇ γλώττῃ.</p>
-
-<lb n="10"/> <p>28. Μισήσουσιν οἱ μὴ φαγόντες τὸν ἀγωνο-
+            <lb n="10"/>
+            <p>28. Μισήσουσιν οἱ μὴ φαγόντες τὸν ἀγωνο-
 
 θέτην. ἀλλ’ οἱ θεοὶ τὸν ἄνδρα φιλήσουσι καλλίω
 
@@ -1183,8 +1134,8 @@ in ras m 2 | δεῖπνον 'P'ar Mor 22 ἔτι Par Mor</note>
 κακῶς τοῦτον, ἀλλά κακῶς φρονοῦντες, ὕστερον δέ
 
 γε ἑ ὧν ἂν νῦν εἴπωσι καταγνόντες ὑμνήσουσιν ἕτερα.</p>
-
-<lb n="15"/> <p>29. Οὐδὲν ἂν τούτων ἔδει τῶν λόγων, εἰ οἶ πατέρες
+            <lb n="15"/>
+            <p>29. Οὐδὲν ἂν τούτων ἔδει τῶν λόγων, εἰ οἶ πατέρες
 
 εἶναι πατέρες ἤθελον. ὄντες μὲν γάρ οὐκ ἂν οἱ μὲν
 
@@ -1193,8 +1144,7 @@ in ras m 2 | δεῖπνον 'P'ar Mor 22 ἔτι Par Mor</note>
 οὐκ ἂν τὸ ποιῆσαν τὴν παραίνεσιν ἣν. νῦν δέ εἰσιν
 
 <note type="footnote">8 Arist. Vesp. 548</note>
-
-<note type="footnote">1 „malim αὐτῆς“ Re αὐτὴ Cobet Coll. 256, at cf. t. II 283, 14
+               <note type="footnote">1 „malim αὐτῆς“ Re αὐτὴ Cobet Coll. 256, at cf. t. II 283, 14
 
 ἐπὶ πόλιν εὖ πεφραγμένην, οἱ δὲ ἡγοῦντο; 407, 1 Ἔδεσσα ἡ πόλις,
 
@@ -1223,10 +1173,7 @@ scripsi γοῦν libri (γ’ οὑν A) edd at ἐροῦσι κακῶς. ἐ
 ἀλλὰ coni Re 14 γε om I | νῦν om ΡΙ 18 ποιῆσαι Mor |
 
 δέ om Mor</note>
-
-
-
-<pb n="69"/>
+               <pb n="69"/>
 
 
 
@@ -1248,9 +1195,9 @@ scripsi γοῦν libri (γ’ οὑν A) edd at ἐροῦσι κακῶς. ἐ
 
 πρὸς τοὺς ἰατρούς, ὅθεν ταῦτα, λέγοντες καὶ διηγού-
 
-μενοι. <lb n="10"/></p>
-
-<p>30. Ἐγὼ μὲν οὖν τῶν οὐ διδαξάντων | εἰμὶ <note type="marginal">R III 125</note>
+μενοι. <lb n="10"/>
+            </p>
+            <p>30. Ἐγὼ μὲν οὖν τῶν οὐ διδαξάντων | εἰμὶ <note type="marginal">R III 125</note>
 
 τοιαῦτα δειπνεῖν τὸν ἐμόν, ἀφ’ οὗ καί τί μοι γένονεν
 
@@ -1261,10 +1208,8 @@ scripsi γοῦν libri (γ’ οὑν A) edd at ἐροῦσι κακῶς. ἐ
 τία πεποιηκότας εἰ μή τις ἐπισχήσει, βουλοίμην ἂν <lb n="15"/>
 
 ἀνάγκῃ φρονῆσαι βέλτιον, ἐπεὶ μὴ σφᾶς αὐτοὺς ἔπεισαν.</p>
-
-<note type="footnote">3 Luc. hist. conscr. § 50 15 cf. p. 27,6</note>
-
-<note type="footnote">1 ἄγε Mor sed γρ ὕπαγε in marg | ὅπως scripsi auctore
+            <note type="footnote">3 Luc. hist. conscr. § 50 15 cf. p. 27,6</note>
+            <note type="footnote">1 ἄγε Mor sed γρ ὕπαγε in marg | ὅπως scripsi auctore
 
 Re ὀπίσω libri edd 2 φάγῃς, ἄγε scripsi cum Re Anim
 
@@ -1279,8 +1224,7 @@ Re ὀπίσω libri edd 2 φάγῃς, ἄγε scripsi cum Re Anim
 | ὄγκον Re Anim et Cobet at cf. Luc. l. l. | ἐπιλείψηι Α sed in
 
 marg γρ λελείψηι ἐπιλείψῃ C Re ἐπιλήψη Ι cf. ep. 923</note>
-
-<note type="footnote">6 verba ἢ τεχνῶν αὐτὴ labem contraxerunt num καὶ δεῖ
+            <note type="footnote">6 verba ἢ τεχνῶν αὐτὴ labem contraxerunt num καὶ δεῖ
 
 τέχνης ἰατρῶν? 7 ὅσαι Μor 8 καταβαίνῃ Par Mor
 
@@ -1301,11 +1245,7 @@ Lectt. 206 et Cobeto Coll. 267 | βουλόμενος ἀνάγκην Mor sed
 μὴ om Par Mor | τέλος τοῦ περὶ τῶν ἐν ταῖς ἑορταῖς κλήσεων
 
 λόγου Α περὶ τῶν ἐν ταῖς ἑορταῖς κλήσεων P</note>
-
-</div></div>
-
-
-
-</body>
-  </text>
+         </div>
+      </body>
+   </text>
 </TEI>

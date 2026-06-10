@@ -1,105 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">
-<fileDesc>
-<titleStmt>
-<title xml:lang="lat">Volumina Rhetorica</title>
- <author>Philodemus</author>
-<editor>Siegfried Sudhaus</editor>
- <funder>Harvard Library Arcadia Fund</funder>
- <principal>Gregory Crane</principal>
- <respStmt>
-  <persName xml:id="DDD">Digital Divide Data</persName>
-  <resp>Corrected and encoded the text</resp>
- </respStmt>
- <respStmt>
-  <persName>Gregory Crane</persName>
-  <resp>Editor-in-Chief, Perseus Digital Library</resp>
- </respStmt>
- <respStmt>
-  <persName>Matt Munson</persName>
-  <resp>Project Manager (University of Leipzig)</resp>
- </respStmt>
- <respStmt>
-  <persName>Annette Gessner</persName>
-  <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
- </respStmt>
- <respStmt>
-  <persName>Thibault Clérice</persName>
-  <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
- </respStmt>
- <respStmt>
-  <persName>Bruce Robertson</persName>
-  <resp>Technical Advisor</resp>
- </respStmt>
-</titleStmt>
-<publicationStmt>
-<authority>Harvard College Library</authority>
- <idno type="filename">tlg1595.tlg370.1st1K-grc1.xml</idno>
-<availability>
- <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-</availability>
-<date>2018</date>
-<publisher>Harvard College Library</publisher>
-<pubPlace>United States</pubPlace>
-</publicationStmt>
-<sourceDesc>
-<listBibl>
- <biblStruct>
- <monogr>
-  <title xml:lang="lat">Philodemi Volumina rhetorica</title>
-  <editor>
-	<persName>
-	 <name>Siegfried Sudhaus</name>
-	</persName>
-  </editor>
-  <author ref="urn:cts:greekLit:tlg1595">Philodemus</author>
-  <imprint>
-	<publisher>Teubner</publisher>
-	<pubPlace>Leipzig</pubPlace>
-	<date>1895</date>
-  </imprint>
-  <biblScope unit="volume">3</biblScope>
- </monogr>
-  <ref target="https://archive.org/stream/philodemivosupple00philuoft#page/n45/mode/2up">The Internet Archive</ref>
- </biblStruct>
-</listBibl>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
- <p>Text encoded in accordance with the latest EpiDoc standards</p>
- <refsDecl n="CTS">
-  <cRefPattern matchPattern="(.+).(.+)" n="fragment" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-  <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
- </refsDecl>
-</encodingDesc>
-<profileDesc>
-<langUsage>
-<language ident="grc">Greek</language>
-<language ident="lat">Latin</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change/>
-</revisionDesc>
-</teiHeader>
-<text>
-<body>
- <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1595.tlg370.1st1K-grc1">
-<div type="textpart" subtype="book" n="1">
-<pb n="3"/>
-<head>ΦΙΛΟΔΗΜΟΥ ΠΕΡΙ ΡΗΤΟΡΙΚΗΣ
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Volumina Rhetorica</title>
+            <author>Philodemus</author>
+            <editor>Siegfried Sudhaus</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg1595.tlg370.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2018</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Philodemi Volumina rhetorica</title>
+                     <editor>
+                        <persName>
+                           <name>Siegfried Sudhaus</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg1595">Philodemus</author>
+                     <imprint>
+                        <publisher>Teubner</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1895</date>
+                     </imprint>
+                     <biblScope unit="volume">3</biblScope>
+                  </monogr>
+                  <ref target="https://archive.org/stream/philodemivosupple00philuoft#page/n45/mode/2up">The Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+).(.+)"
+                         n="fragment"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)"
+                         n="book"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre"
+                    target="#prose-standard"
+                    cert="low"
+                    resp="#corpus-tools"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="edition"
+              xml:lang="grc"
+              n="urn:cts:greekLit:tlg1595.tlg370.1st1K-grc1">
+            <div type="textpart" subtype="book" n="1">
+               <pb n="3"/>
+               <head>ΦΙΛΟΔΗΜΟΥ ΠΕΡΙ ΡΗΤΟΡΙΚΗΣ
 ΥΠΟΜΝΗΜΑΤΩΝ
 Α.</head>
-<div type="textpart" subtype="fragment" n="4a"><p><gap reason="omitted"/>ἢ πρὸς τὰς κατὰ μέρος λόγων διακοπάς, ἐπιμνησθησόμεθα. <note type="marginal">fr. IV</note>
+               <div type="textpart" subtype="fragment" n="4a">
+                  <p>
+                     <gap reason="omitted"/>ἢ πρὸς τὰς κατὰ μέρος λόγων διακοπάς, ἐπιμνησθησόμεθα. <note type="marginal">fr. IV</note>
 Τῶν γὰρ ἐπιστημῶν αἱ μὲν τὸ πᾶν ἢ τὸ
 πλεῖστον ἔχουσιν ἐκ φύσεως ὀφεῖλον προϋποκεῖσθαι
 καὶ ἐπιγείνεσθαι διὰ συνασκήσεως ὀλίγον, αἱ δὲ διʼ
 ἑαυτῶν τελεσιουργοῦσιν, αἱ δὲ καί τινος προσδέονται <lb n="5"/>
 φυσικοῦ δώρου παρὰ τῆς ἀσκήσεως οὐ περιγινομένου.</p>
-</div>
-<div type="textpart" subtype="fragment" n="2a"><gap reason="omitted"/><p>ἄσκησιν, αἱ δʼ οὐδʼ ὅλως ἔχουσιν χρείαν <note type="marginal">ΙΙ</note>
+               </div>
+               <div type="textpart" subtype="fragment" n="2a">
+                  <gap reason="omitted"/>
+                  <p>ἄσκησιν, αἱ δʼ οὐδʼ ὅλως ἔχουσιν χρείαν <note type="marginal">ΙΙ</note>
 συνασκήσεως, ἀλλὰ φύσεως ὁμοειδοῦς ἀξιολόγως ἐπιθλιβομένης
 τὸ πλεῖστον διʼ ἑαυτῶν συντελοῦσιν. Αἱ
 δʼ οὐ φύσεως ἀλλὰ τριβῆς μόνον δεηθεῖσαι μεθοδικῶς <lb n="10"/>
@@ -107,17 +123,22 @@
 πείπτει τῶν γε κατὰ μέρος καὶ ἀξιόλογά γε οὐ μόνον
 εἰς τοὺς τεχνείτας ἀλλὰ καὶ εἰς τοὺς ἀνεπιστήμονας,
 τινῶν δʼ οὐδὲ ἓν ἔργον εἰς τοὺς ἀτέχνους πείπτει.</p>
-
-<pb n="4"/>
-</div>
-<div type="textpart" subtype="fragment" n="3a"><note type="marginal">ΙΙΙ</note><p><gap reason="omitted"/>ἑστηκότα θεωρήματα προσφερομένην ὡς τὴν
+                  <pb n="4"/>
+               </div>
+               <div type="textpart" subtype="fragment" n="3a">
+                  <note type="marginal">ΙΙΙ</note>
+                  <p>
+                     <gap reason="omitted"/>ἑστηκότα θεωρήματα προσφερομένην ὡς τὴν
 γραμματικήν, οἱ δὲ τὴν σοφίαν μόνην, οἱ δὲ τὴν λόγον
 ἔχουσαν, ‘ὧι προσφέρει, ἃ προσφέρειʼ, καθάπερ Πλάτων,
 των, οἱ δὲ τὴν ἐπὶ συμφέροντι τοῦ βίου παρεισηγμένην,
 <lb n="5"/> κἂν τὴν ῥητορικὴν οὐκ οὗσαν τοιαύτην ἐκ τῶν τεχνῶν
 ἐξορίζωσιν, εἶτʼ ἀποκλίνειν πρὸς τὴν αὐτὴν ἐπιχειροῦντες.</p>
-</div>
-<div type="textpart" subtype="fragment" n="1"><note type="marginal">I</note><p><gap reason="omitted"/>καὶ τὴν ῥητορικὴν ἐναρμόσαντες εἰς αὐτὴν ἀποφαίνουσι
+               </div>
+               <div type="textpart" subtype="fragment" n="1">
+                  <note type="marginal">I</note>
+                  <p>
+                     <gap reason="omitted"/>καὶ τὴν ῥητορικὴν ἐναρμόσαντες εἰς αὐτὴν ἀποφαίνουσι
 τέχνην, ἵνʼ οὕτως ὁ καλούμενος γένηται
 <lb n="10"/> τῶν τεχνῶν σύνδεσμος. Ἀμέλει δέ τινι παρακειμένωι
 καὶ τοιούτωι συνέχονται χαρακτῆρι κακίας· διαφορῶν
@@ -126,9 +147,13 @@
 τὴν τοῦτο προσφερομένην. Τὰς μὲν οὖν ἄλλας
 <lb n="15"/> ἐάσομεν παραλλαγὰς ἐπὶ τοῦ παρόντος· οὐδὲν γὰρ
 ἐνχρήζουσιν· ἐνίων δὲ συνεργίαν τινὰ παρεξομένων <gap reason="omitted"/>
-<gap reason="omitted"/></p>
-</div>
-<div type="textpart" subtype="fragment" n="2b"><note type="marginal">ΙΙ, 21</note><p><gap reason="omitted"/>τὸ θεωρητικὸν μόνον, ὁ δὲ τὸ ῥητορικόν, ὁ δʼ
+                     <gap reason="omitted"/>
+                  </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="2b">
+                  <note type="marginal">ΙΙ, 21</note>
+                  <p>
+                     <gap reason="omitted"/>τὸ θεωρητικὸν μόνον, ὁ δὲ τὸ ῥητορικόν, ὁ δʼ
 ἑκάτερον, ἐν ὄχλωι τῆς διαθέσεως τοῦ λόγου γεινομένης·
 <lb n="20"/> μένης· ὅ καὶ ἐπὶ τῶν ἄλλων εἴπερ ἦν ἐπιστημῶν,
 ἴσως οὐκ ἂν ὁ θεωρητικὸς εὐθέως ὑπῆρχε διαλεκτικός.
@@ -150,9 +175,11 @@
 τἀληθὲς ἢ τὸ φαινόμενον ἀληθὲς τῶι συντιθέντι τὴν
 ἀπόδειξιν ἀθετῆσαι. Χάριν δὲ τῶν ἀποδείξεων τούτων
 οὐδὲ εἷς ἀποκωλύσει λέγειν τοὺς τῆς ἐναντίας
-στάσεως προισταμένους εἶναί τινα τέλειον τεχνείτην, </p><lb n="15"/>
-</div>
-<div type="textpart" subtype="fragment" n="3b"><p>ὃς τό τε σύνολον τῆς τέχνης ἔχει καὶ ἃ ἐκπε πόνηται <note type="marginal">ΙΙΙ</note>
+στάσεως προισταμένους εἶναί τινα τέλειον τεχνείτην, </p>
+                  <lb n="15"/>
+               </div>
+               <div type="textpart" subtype="fragment" n="3b">
+                  <p>ὃς τό τε σύνολον τῆς τέχνης ἔχει καὶ ἃ ἐκπε πόνηται <note type="marginal">ΙΙΙ</note>
 μέρεσιν, εἶναι δʼ ἄλλους τινάς, οἵ μέρη τινὰ τῶν τῆς
 ἐπιστήμης ἀνειλήφασιν· οὓς εἴ τις εὐθύνων οἴεται τὸν
 τέλειον εὐθύνειν, λήθαργός ἐστιν, ὧι δὴ παραδείξει
@@ -168,8 +195,10 @@
 καὶ τῶν οὐ ῥητόρων, οὐ μὴν τέλος τοῦτο τῆς ῥητορικῆς
 <lb n="5"/> ὑπάρχειν, ἀλλὰ τὸ λόγωι πείθειν, ὥστε καὶ
 πολλὴν ἀπειρολογίαν καταγνώσεται τῶν τὰ κάλλη καὶ
- <note type="marginal">IV</note> τὰς ἄλλας φλυαρίας </p></div>
- <div type="textpart" subtype="fragment" n="4b"><p rend="merge"> παραφερόντων. Ἐγὼ μὲν γὰρ
+ <note type="marginal">IV</note> τὰς ἄλλας φλυαρίας </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="4b">
+                  <p rend="merge"> παραφερόντων. Ἐγὼ μὲν γὰρ
 οἶμαι, διότι, κἂν λόγωι ποτὲ πείθειν συνχωρηθῇ τινας
 ἰδιώτας, ἀλλʼ οὐχ, ὅτι γε βέλτειον τῶν τεχνειτῶν,
 <lb n="10"/> ἔσται δεδειχώς, οὐδὲ κατὰ τὸ ἴδιον τοῦ λέγειν οὐδὲ
@@ -186,8 +215,10 @@
 
 <pb n="7"/>
 πεκστάντες οὐκ ἔσονται διημαρτημένοι. Διήκει δέ
-τις ἁμαρτία </p></div>
- <div type="textpart" subtype="fragment" n="5"><p rend="merge"> σχεδὸν διὰ τῶν πλείστων ὑπομνήσεων <note type="marginal">V</note>
+τις ἁμαρτία </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="5">
+                  <p rend="merge"> σχεδὸν διὰ τῶν πλείστων ὑπομνήσεων <note type="marginal">V</note>
 καὶ τοιαύτη· τὸ γὰρ μηδὲ τὴν τέχνην ὑπάρχειν ἐν
 τοισίδε τισὶν χρόνοις ἢ τόποις λαμβάνουσιν ἀσυκοφαντγτως,
 ὅταν δόξωσιν ὁπωσδήποτε παρεστακέναι τὸ <lb n="5"/>
@@ -203,8 +234,9 @@
 τὴν πολειτικὴν καὶ τὴν ἔμπρακτον ῥητορικήν, οὐκ, εἰ <lb n="15"/>
 δὴ μουσικὴ τὸ γράφειν καὶ ἀναγινώσκειν οὐ περιποιεῖ,
 διὰ τὴν αἰτίαν ταύτην οὐδὲ ἄλλων τινῶν ἐστιν</p>
-</div>
-<div type="textpart" subtype="fragment" n="6"><p rend="merge">ἐπιστήμη πραγμάτων. Καὶ περὶ πολιτικῆς δὲ ἐρωτώμενοι <note type="marginal">VI</note>
+               </div>
+               <div type="textpart" subtype="fragment" n="6">
+                  <p rend="merge">ἐπιστήμη πραγμάτων. Καὶ περὶ πολιτικῆς δὲ ἐρωτώμενοι <note type="marginal">VI</note>
 μενοι πολλοὶ τὸ μὴ διὰ τῆς σοφιστικῆς αὐτὴν περιγείνεσθαι
 προσάγουσιν, ἂν εὖ βάλωσιν. Ἄξιόν τε <lb n="20"/>
 ἐπιστῆσαι, μήποτε οὐκ ἀπιθάνως λέγῃ τις· ὥσπερ τὴν
@@ -220,8 +252,10 @@
 <pb n="8"/>
 ἄλλοι κακιῶν χαρακτρες διήκουσι διὰ τῶν συλλογισμῶν,
 ἀλλʼ οὔτε πρὸς ὄνηα τὴν προσκαρτέρησιν ποιεῖσθαι
- <note type="marginal">VII</note> δοκι</p></div>
- <div type="textpart" subtype="fragment" n="7"><p rend="merge">μάζομεν, ὧν συθεώρητον ἔχουσιν τὴν διάπτσομ.
+ <note type="marginal">VII</note> δοκι</p>
+               </div>
+               <div type="textpart" subtype="fragment" n="7">
+                  <p rend="merge">μάζομεν, ὧν συθεώρητον ἔχουσιν τὴν διάπτσομ.
 ἐπί τε τῆς διακοπῆ τῶν κατὰ μέρος λόγων ἔνι τῶν
 <lb n="5"/> νῦν παραλελειμμένω ἐπισημασίας ἀξιωθήσεται. Τοῖς
 δʼ ἡμετέροις μεμπιν ἂν εἴη, καὶ περιττότερ τοῖς
@@ -232,20 +266,21 @@
 τὴν τοιαύτην, ὡς ἐνιοῖς ἑξῆς ὑπομνήσομεν, τούτοις
 ἀντιγράφοντες οὐ πνυ τι μακρὰν τῆς τῶν ποτραλοιῶν
 καταδίκης ἀφεστήκαιν.</p>
-</div>
-</div>
-<div type="textpart" subtype="book" n="2">
-<pb n="11"/>
-<div type="textpart" subtype="fragment" n="1"><p>Ἐνίοτε γὰρ οἰκο οἰκο|δόμος οἰκίαν καταφθείρει καὶ ζῳγράφος <note type="marginal">I</note>
+               </div>
+            </div>
+            <div type="textpart" subtype="book" n="2">
+               <pb n="11"/>
+               <div type="textpart" subtype="fragment" n="1">
+                  <p>Ἐνίοτε γὰρ οἰκο οἰκο|δόμος οἰκίαν καταφθείρει καὶ ζῳγράφος <note type="marginal">I</note>
 πίνακα καὶ ναῦν περιτρέπει κυβερνήτης καὶ
 ἰατρὸς ἄνθρωπον ἀποκτείνει μεθοδικῶς· μηδὲ ταύτας
 οὖν τέχνας ὁμολογῶμεν, ἢ καὶ πάσας τὰς τέχνας ὁ λόγος
 ἀξιοῖ ματαίως ὠφελίμους εἶναι, καθάπερ καὶ ὁ πρὸ <lb n="5"/>
 αὐτοῦ.</p>
-<p>„Αἱ διάφοροι τέχναι τῶν ἀλλήλων τελῶν οὐ τυγχάνουσιν,
+                  <p>„Αἱ διάφοροι τέχναι τῶν ἀλλήλων τελῶν οὐ τυγχάνουσιν,
 τοῦ δὲ τῆς ῥητορικῆς τέλους καὶ φιλόσοφος
 καὶ γραμματικὸς καὶ διαλεκτικός.“</p>
-<p>Παράξουσι μέν τι λεγόμενον Πλάτωνι, οὐ τῆς ῥῆτορικῆς <lb n="10"/>
+                  <p>Παράξουσι μέν τι λεγόμενον Πλάτωνι, οὐ τῆς ῥῆτορικῆς <lb n="10"/>
 μόνον εἶναι τὴν πειθὼ καὶ τὰς πίστεις· κατὰ
 γὰρ τὸ κοινὸν πολλοὺς πείθειν τῶν οὐ ῥητορικῶν·
 ἀλλʼ οὐ τέχνην ὄντως κεκτημένους τήν τε πλεοναζομένην
@@ -254,16 +289,18 @@
 λόγου ῥητορικοῦ πείθειν τέλος ἐστὶ τῆς ῥητορικῆς,
 
 <pb n="12"/>
-<note type="marginal">ΙΙ</note> οὐ τὸ πείθειν, καὶ διαλεκτικὸς καὶ φιλόσοφος </p></div>
-<div type="textpart" subtype="fragment" n="2"><p rend="merge"> πείθει
+                     <note type="marginal">ΙΙ</note> οὐ τὸ πείθειν, καὶ διαλεκτικὸς καὶ φιλόσοφος </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="2">
+                  <p rend="merge"> πείθει
 μέν, οὐ πείθει δὲ ῥητορικῶς ἀλλὰ διαλεκτικῶς καὶ
 ἀναγκαστικῶς, ὡς καὶ Φρύνη καὶ ὥραι καὶ μουσικῆι
 πείθει μέν, οὐ ῥητορικῶς δὲ ποιεῖ τὰς κατασκευάς,
 <lb n="5"/> οὐδέ πως ὁ λόγος δύναταί τι προσάγειν ἀληθές.</p>
-<p>„Τῶν ἀτέχνων οὐδὲ εἷς ἐν τῶι τῆς τέχνης ἔργωι
+                  <p>„Τῶν ἀτέχνων οὐδὲ εἷς ἐν τῶι τῆς τέχνης ἔργωι
 νικᾶι τὸν τεχνίτην, ἐν δὲ τῶι τῆς ῥητορικῆς οὐδὲ
 τοῦτο καθολικόν“</p>
-<p>Ἐπὶ γὰρ ἐνίων, ἔφη, τῶν στοχαστικῶν ἔστιν ὅτε
+                  <p>Ἐπὶ γὰρ ἐνίων, ἔφη, τῶν στοχαστικῶν ἔστιν ὅτε
 <lb n="10"/> νικᾶι τὸν τεχνίτην ὁ ἄτεχνος, ὥσπερ κἂν εἴπαις ‘νικήσει
 τὸν ῥητορικὸν τεχνίτην ὁ ἱκανός τινος τῶν κατὰ
 μέρος καθεστώςʼ, εἰ δʼ ἡ τέχνη τῶν παγίων, τοῦτʼ
@@ -271,11 +308,15 @@
 εἰ γὰρ τὸν ἄτεχνον ὁ λόγος λαμβάνει τὸν οὐ διατριβικόν,
 <lb n="15"/> τὸν δὲ τεχνίτην τὸν ἀπὸ τῶν διδασκαλείων,
 οὔτε τὴν σοφιστικὴν μὴ εἶναι τέχνην οὔτε τὴν πολιτικὴν
-ἀποδείκνυσιν <gap reason="omitted"/></p>
-</div>
-<div type="textpart" subtype="fragment" n="3"><note type="marginal">ΙΙΙ</note><p>„Κατὰ τὰς ἄλλας τέχνας τὰ θεωρήματά ἐστιν ἀληθῆ,
+ἀποδείκνυσιν <gap reason="omitted"/>
+                  </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="3">
+                  <note type="marginal">ΙΙΙ</note>
+                  <p>„Κατὰ τὰς ἄλλας τέχνας τὰ θεωρήματά ἐστιν ἀληθῆ,
 ψευδῆ δὲ κατὰ τὴν ῥητορικήν.“</p>
-<lb n="20"/><p>Διὰ τοῦτο οὐδὲ τὴν φιλοσοφίαν τέχνην ῥητέον
+                  <lb n="20"/>
+                  <p>Διὰ τοῦτο οὐδὲ τὴν φιλοσοφίαν τέχνην ῥητέον
 οὐδὲ τὴν ἰατρικὴν οὐδὲ τὴν μουσικήν· ὡς δʼ, εἴ τινα
 ψευδῆ τῶν ὑπό τινων καταβεβλημένων <gap reason="omitted"/> νε <gap reason="omitted"/> ἐστιν,
 εἰπεῖν εἰκὸς τὸ ,τινὲς ἡμαρτήκασι τῶν τῆς τέχνης“ μηδὲ
@@ -286,12 +327,16 @@
 προσφερομένην ψευδῆ παραγγέλματα μηδʼ εἶναι τέχνην.
 — Πρὸς δὲ τὸν τέλειον καὶ ἀτέλειον ἐν γεωμετρίαι
 καὶ ταῖς ἄλλαις ἐπιστήμαις <gap reason="omitted"/> υτεβιειιειν <gap reason="omitted"/>
-<gap reason="omitted"/> καιτ <gap reason="omitted"/> εγει </p></div>
-<div type="textpart" subtype="fragment" n="4"><p rend="merge"> <gap reason="omitted"/> γο <gap reason="omitted"/> ιση . δε τὰ συνέχοντα <note type="marginal">IV</note>
-πρότερον εἰρήκαμεν, εἰρήκαμεν δὲ καὶ πρὸς τὸν παρακείμενο.</p><lb n="5"/>
-<p>„Ὁ τεχνίτης οὐκ ἀρνεῖται τεχνίτης ὑπάρχειν, ὁ δὲ
+                     <gap reason="omitted"/> καιτ <gap reason="omitted"/> εγει </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="4">
+                  <p rend="merge">
+                     <gap reason="omitted"/> γο <gap reason="omitted"/> ιση . δε τὰ συνέχοντα <note type="marginal">IV</note>
+πρότερον εἰρήκαμεν, εἰρήκαμεν δὲ καὶ πρὸς τὸν παρακείμενο.</p>
+                  <lb n="5"/>
+                  <p>„Ὁ τεχνίτης οὐκ ἀρνεῖται τεχνίτης ὑπάρχειν, ὁ δὲ
 ῥήτωρ.“</p>
-<p>Εἰ διαφορά τις καὶ τοιαύτη τεχνῶν ἐστιν, ὥστε τοὺς
+                  <p>Εἰ διαφορά τις καὶ τοιαύτη τεχνῶν ἐστιν, ὥστε τοὺς
 μὲν ἐν κοινῶι γε μηδέποτε ἐπανγέλλεσθαι, τοὺς δʼ <lb n="10"/>
 ἔχειν ὁμολογεῖν τῆς τέχνης τὸ μεθοδικόν, οὐ δεόντως
 ἕνεκα τούτου τέχνην τὴν ῥητορικὴν οὐκ ἐροῦμεν· καὶ
@@ -302,30 +347,36 @@
 τὴν τέχνην ἔχειν· οὐ γὰρ διὰ παντὸς οὐδὲ πρὸς πάντας
 ἀλλʼ ἐνίοτε καὶ πρὸς ἐνίους ἐπαρνοῦνται τὴν τέχνην
 τὸν φόβον ἡγούμενοι περιαιρεῖσθαι τῶν ἐξ ἀνάγκης
-ἀπατηθήσεσθαι προσδοκώντωον.</p><lb n="20"/>
-<p>„Ἀρνοῦνταί τε τέχνην ἔχειν τήν γε σοφιστι</p></div>
-<div type="textpart" subtype="fragment" n="5"><p rend="merge">κὴν <note type="marginal">V</note>
-
-<pb n="14"/>
+ἀπατηθήσεσθαι προσδοκώντωον.</p>
+                  <lb n="20"/>
+                  <p>„Ἀρνοῦνταί τε τέχνην ἔχειν τήν γε σοφιστι</p>
+               </div>
+               <div type="textpart" subtype="fragment" n="5">
+                  <p rend="merge">κὴν <note type="marginal">V</note>
+                     <pb n="14"/>
 λεγομένην ῥητορικὴν καὶ λέγουσιν εἶδος οὐδʼ εἶναι
 τῆς ῥητορικῆς ἴδιον· τὴν δʼ ἐμπειρίαν τὴν ἐν τοῖς
 πράγμασιν μεθοδικὴν καὶ τὴν τούτων φράσιν αὐτοὶ οὐ
 παρηιτήσαντο πώποτε, διατελοῦσιν τʼ ἐπʼ αὐτῆι κομπάζοντες
 <lb n="5"/> ὡς Δημοσθένης.“</p>
-<p>Μὴ γὰρ ἀλλὰ κακῶς ἵσταιντʼ ἂν ἔνιοι καταισχυνόμενοι
+                  <p>Μὴ γὰρ ἀλλὰ κακῶς ἵσταιντʼ ἂν ἔνιοι καταισχυνόμενοι
 περὶ τῆς τέχνης, οὐ δέον· ἡ μέντοι γε σοφιστικὴ
 χάριν τούτου τὸ μεθοδικὸν οὐ προσφερομένη πῶς δύναιτʼ
 ἂν παρίστασθαι;</p>
-<lb n="10"/><p>„Διόπερ εὔδηλον, ὅτι τινὲς ὀνειδίζουσιν τὴν τέχνην
+                  <lb n="10"/>
+                  <p>„Διόπερ εὔδηλον, ὅτι τινὲς ὀνειδίζουσιν τὴν τέχνην
 μὴ καὶ ἰδιότητα πρὸς τὰς ἄλλας ἐπιστήμας ἔχειν.“</p>
-<p>Καὶ ἐπʼ ἄλλων δὲ τεχνῶν ἢ βλαβερῶν οὐσῶν ἢ
+                  <p>Καὶ ἐπʼ ἄλλων δὲ τεχνῶν ἢ βλαβερῶν οὐσῶν ἢ
 δοκουσῶν ὀνειδίζουσίν τινες τοῖς διδάσκουσιν οὐχ ἥν
 γε ῥητῶς ἔχειν ἐπαγγέλλονται, ἀλλʼ ἣν οὐδὲ θέλουσιν
 <lb n="15"/> περιποιεῖσθαι. —</p>
-<p>„Πᾶς τεχνίτης ἐπαγγέλλεται τὸ τέλος ποιήσειν, ὁ
+                  <p>„Πᾶς τεχνίτης ἐπαγγέλλεται τὸ τέλος ποιήσειν, ὁ
 δὲ ῥήτωρ οὐκ ἐπαγγέλλεται πείσειν.“</p>
-<note type="marginal">VI</note><p>Οὐ πᾶς τεχνίτης, ἐὰν ἔχῃ φρέ </p></div>
-<div type="textpart" subtype="fragment" n="6"><p rend="merge">νᾶς, ἐπανγέλλεται
+                  <note type="marginal">VI</note>
+                  <p>Οὐ πᾶς τεχνίτης, ἐὰν ἔχῃ φρέ </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="6">
+                  <p rend="merge">νᾶς, ἐπανγέλλεται
 τὸ τέλος διὰ παντὸς ποιήσειν· οὔτε γὰρ ἰατρὸς οὔτε
 <lb n="20"/> κυβερνήτης οὔτε τοξότης οὔτε ἀπλῶς, ὅσοι τὰς ἐπιστήμας
 οὐ παγίους ἔχουσιν ἀλλὰ στοχαστικάς· ὥστʼ ἢ
@@ -336,22 +387,26 @@
 ἔστι δʼ αὐτοῦ τὸ τέλος, ὅ φέρει τῶν πραγμάτων ἡ
 φύσις, οὔτε διὰ παντὸς κείμενον οὐδὲ μὰ Δία κατὰ
 τὸ πλεῖστον, ἀλλὰ πολὺ μᾶλλον τῶν μὴ ῥητόρων τὸ
-ἔργον ποιεῖ.</p><lb n="5"/>
-<p>„Πᾶς τεχνίτης πολὺ πρότερον ἑαυτῶι περιποιεῖ τὸ
+ἔργον ποιεῖ.</p>
+                  <lb n="5"/>
+                  <p>„Πᾶς τεχνίτης πολὺ πρότερον ἑαυτῶι περιποιεῖ τὸ
 τῆς τέχνης ἔργον, ῥήτορος δὲ τὴν τέχνην εἶχον καὶ οἱ
 ἀρχαιότατοι τῶν συνηγόρων.“</p>
-<p>Διὰ τούτων μὲν τῶν λόγων καὶ τὴν ἰατρικὴν ἐκ
+                  <p>Διὰ τούτων μὲν τῶν λόγων καὶ τὴν ἰατρικὴν ἐκ
 τῶν τεχνῶν ἐκβάλωμεν, εἰ πρὸ τῆς Ἀσκληπιοῦ τις <lb n="10"/>
 ἄλλους παρίσταται εὖ θεραπεύσαντας.</p>
-<p>„Ὅ τε ῥήτωρ οὐδὲ ἀτεχνίαν ἄλλοις ἐγχειρίζει, διὰ
-δὲ ἀγωνιῶν τὴν οὐδʼ ἐῶσαν τἀκόλουθον βλέ </p></div>
-<div type="textpart" subtype="fragment" n="7"><p rend="merge">πειν ἕξιν.“</p><note type="marginal">VII</note>
-<p>Ὥστε ῥητέον μηδὲ τριβὴν καὶ ἱστορίαν εἶναι τὴν
+                  <p>„Ὅ τε ῥήτωρ οὐδὲ ἀτεχνίαν ἄλλοις ἐγχειρίζει, διὰ
+δὲ ἀγωνιῶν τὴν οὐδʼ ἐῶσαν τἀκόλουθον βλέ </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="7">
+                  <p rend="merge">πειν ἕξιν.“</p>
+                  <note type="marginal">VII</note>
+                  <p>Ὥστε ῥητέον μηδὲ τριβὴν καὶ ἱστορίαν εἶναι τὴν
 ῥητορικήν· περιεποίουν γὰρ ἂν τὸ διὰ τῆς τριβῆς πολὺ <lb n="15"/>
 πρότερον ἑαυτοῖς.</p>
-<p>„Πρὸ τοῦ καταβληθῆναι τὰς τέχνας βέλτειον ἐρητόρευον,
+                  <p>„Πρὸ τοῦ καταβληθῆναι τὰς τέχνας βέλτειον ἐρητόρευον,
 ἐφʼ οἷς δὲ συνέστησαν, χεῖρον.“</p>
-<p>Ἄγαν μὲν τοῦτό τις ἂν εἴποι πρόχειρον· οἱ γὰρ
+                  <p>Ἄγαν μὲν τοῦτό τις ἂν εἴποι πρόχειρον· οἱ γὰρ
 μετὰ Δημοσθένην πολὺ ἧττον ἤδη καταβεβλημένων <lb n="20"/>
 τῶν τεχνῶν ἔλεγον. Οὐ μὴν ἀλλὰ τῆς ῥητορικῆς
 
@@ -363,15 +418,18 @@
 <lb n="5"/> καὶ φιλόσοφοι, μετὰ δὲ τὰς εὑρέσεις τῶν τεχνολογιῶν
 οἱ τοιοῦτοι; τούτωι γὰρ τῶι τρόπωι καὶ τὴν ποιητικὴν
 καὶ τὴν ἰατρικὴν καὶ πολλὰς ἄλλας οὐκ εἶναι τέχνας
-<note type="marginal">VIII</note> λέγωμεν· καὶ καθʼ </p></div>
-<div type="textpart" subtype="fragment" n="8"><p rend="merge"> ἡμᾶς δὲ φήσαι τις ἂν ἀγαθοὺς
+<note type="marginal">VIII</note> λέγωμεν· καὶ καθʼ </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="8">
+                  <p rend="merge"> ἡμᾶς δὲ φήσαι τις ἂν ἀγαθοὺς
 εἶναι ῥήτορας ἀλλʼ οὐχὶ μόνον ἐν τοῖς πάλαι καιροῖς·
 <lb n="10"/> τό τε τοὺς σοφιστὰς μὲν διαπρέπειν πρὸ τῶν τεχνολογιῶν
 οὐ δείκνυσιν, ἀλλʼ ὑπὸ πολιτικῶν εἰσῆχθαι τὰς
 τέχνας, οὐχ ὑπὸ τῶν ἀνιστορήτων φήσει τις, ἄλλας δὲ
 εἶναι γραφαῖς οὐ περιειλημμένας ὥσπερ οὐδʼ ἐν πολλοῖς
 ἔθνεσιν τῶν βαρβάρων.</p>
-<lb n="15"/><p>Νῦν δʼ ἐπεὶ πρὸς ἅπαντας τοὺς λόγους ἀποχρώντως
+                  <lb n="15"/>
+                  <p>Νῦν δʼ ἐπεὶ πρὸς ἅπαντας τοὺς λόγους ἀποχρώντως
 διειλέγμεθα τοὺς ἠρωτημένους ὑπὲρ τοῦ μὴ εἶναι
 τὴν ῥητορικὴν τέχνην, ἑξῆς ἀποψόμεθα ταχέως καὶ
 τοὺς ὑπὲρ τοῦ τέχνην αὐτὴν εἶναι προφερομένους, οἷς
@@ -381,8 +439,10 @@
 <pb n="17"/>
 τῶν χαρακτήρων <gap reason="omitted"/> τοῖς. Οὐ μὴν ἀλλὰ
 τοιαύτης προκειμένης τῆς τῶν πολλῶν λογισμῶν πλάνης
-καὶ τοῦ παραλογισμοῦ τῶν </p></div>
-<div type="textpart" subtype="fragment" n="9"><p rend="merge"> ἀποφαινομένων αὐτῶν <note type="marginal">ΙΧ</note>
+καὶ τοῦ παραλογισμοῦ τῶν </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="9">
+                  <p rend="merge"> ἀποφαινομένων αὐτῶν <note type="marginal">ΙΧ</note>
 τὰ περὶ τῆς τέχνης καὶ τὴν ἐπαγγελίαν τῶν ῥητορικῶν,
 ὡς μέθοδον οὖσαν συναρτῶνται καὶ δὴ ἀξίως τὰ ἔργα
 συντελοῦσιν, οὐ τὰ πρόθεσιν κυροῦντα συνάγουσιν. —
@@ -396,12 +456,12 @@
 εἰ τὰς τῶν ῥητορικῶν λόγων ἔξεις καλεῖσθαι τέχνην
 καὶ ἐπιστήμην συμβέβηκεν, πῶς οὐκ ὀλίγων ἀλλὰ κοιναὶ <lb n="15"/>
 καὶ πάντων εἰσίν;</p>
-<p>Ἀλλʼ ἐπειδὴ μεγάλης οὐκ ἔστιν ἀνατάσεως χρεία X
+                  <p>Ἀλλʼ ἐπειδὴ μεγάλης οὐκ ἔστιν ἀνατάσεως χρεία X
 πρὸς αὐτάς, ἰτέον ἐπὶ τὰς τῶν κατὰ μέ μέ|ρος λόγων διακοπάς,
 ἃ δεῖ ἐπί τινων προρήσεως καὶ ἐπιρήσεως.</p>
-<p>„Εἰ μὴ τέχνην μεθώδευον οἱ ῥήτορες, οὐκ ἂν πολλοὶ <lb n="20"/>
+                  <p>„Εἰ μὴ τέχνην μεθώδευον οἱ ῥήτορες, οὐκ ἂν πολλοὶ <lb n="20"/>
 προσῄεσαν αὐτοῖς μισθοὺς διδόντες.“</p>
-<p>Ἄξιον μὲν ἐπιστάσεως, μὴ δή ποτε οὐχ ἕνεκα τέχνης
+                  <p>Ἄξιον μὲν ἐπιστάσεως, μὴ δή ποτε οὐχ ἕνεκα τέχνης
 ἀναλήψεως μόνον προσίασιν ἔνιοί τισιν, ἀλλὰ καὶ
 χάριν τῶν διʼ ἄλλου τρόπου περιγινομένων, οἷον δὴ
 καὶ τὴν ῥητορικὴν παρασκευάζειν. Οὐ μὴν ἀλλʼ ἐπειδὴ <lb n="25"/>
@@ -415,11 +475,13 @@
 ἀπατῶνται καὶ οὐκ ἀπεικότως διὰ τοιαύτην αἰτίαν·
 <lb n="5"/> ὅταν γὰρ ἀκούωσιν ἐν ταῖς δείξεσιν καὶ πανηγύρεσιν,
 τῶι μήτε περὶ συμβολαίου μήτε περί τινος τῶν τῆι
-<note type="marginal">XI</note> πόλει συμφερόντων εἶναι τὸν λόγον </p></div>
-<div type="textpart" subtype="fragment" n="11"><p rend="merge"> οὐδὲ τὸν ὅρκον
+<note type="marginal">XI</note> πόλει συμφερόντων εἶναι τὸν λόγον </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="11">
+                  <p rend="merge"> οὐδὲ τὸν ὅρκον
 ὀμωμοκότες ἢ κινδυνεύοντες, ὑπὲρ οὗτινος ἀκούουσιν
 τῶν πεπραγμένων, ὅτι . πα <gap reason="omitted"/> π <gap reason="omitted"/> νε <gap reason="omitted"/> σεικ <gap reason="omitted"/>
-<lb n="10"/> σ <gap reason="omitted"/> απο <gap reason="omitted"/> — ὅταν δʼ οὕτω διακούωσιν, τοῖς μὲν λεγομένοις
+                     <lb n="10"/> σ <gap reason="omitted"/> απο <gap reason="omitted"/> — ὅταν δʼ οὕτω διακούωσιν, τοῖς μὲν λεγομένοις
 οὐ προσέχουσιν, εἰ συμφέροντα ἔσται ἢ οὔ, καὶ
 τὸ σύνολον, εἰ ἔστιν ἀληθῆ ἢ οὐκ ἀληθῆ, ὑπʼ αὐτοῦ
 δὲ τοῦ ἤχου καὶ τῶν περιόδων καὶ παρίσων καὶ ἀντιθέτων
@@ -431,8 +493,10 @@
 τοῖς σοφισταῖς· εἶτʼ εὐθὺς ἐπιγινώσκουσιν, ὅτι ἀπολωλέκασιν
 <lb n="20"/> τὸ ἀργύριον· οὐθὲν γὰρ αὐτοῖς ἐπιτελὲς
 γίνεται τῶν ἐπιτευγμάτων ἀλλὰ πορίζουσι τοὐναντίον,
-<note type="marginal">XII</note> Τούτωι δὲ τῶι τρόπωι φήσο φήσο</p></div>
-<div type="textpart" subtype="fragment" n="12"><p rend="merge">μὲν καὶ τὴν σύμπασαν
+<note type="marginal">XII</note> Τούτωι δὲ τῶι τρόπωι φήσο φήσο</p>
+               </div>
+               <div type="textpart" subtype="fragment" n="12">
+                  <p rend="merge">μὲν καὶ τὴν σύμπασαν
 μαντικὴν τέχνην εἶναι τούτων, ὧν χάριν προσίασιν
 αὐτῆι ἀργύριον διὰ φόβον ἐκτείνοντες. Τί δὲ παραλογισμὸν
 <lb n="25"/> εἶπεν ‘τῶν προσηκόντων εἶναι καὶ τούτοις
@@ -445,15 +509,18 @@
 <gap reason="omitted"/> ε <gap reason="omitted"/> λ|σινε <gap reason="omitted"/> ου τέχνην πολιτικῆς <lb n="5"/>
 δυνάμεως πρ <gap reason="omitted"/> τας ὥς τινες <gap reason="omitted"/> |. εμο.
 |τ . μενων <gap reason="omitted"/> διαλεκτικοῖς ο <gap reason="omitted"/> | <gap reason="omitted"/>
-<gap reason="omitted"/> ωι | . ν <gap reason="omitted"/> βλεπ <gap reason="omitted"/> κλε|γειν καὶ π <gap reason="omitted"/>
+                     <gap reason="omitted"/> ωι | . ν <gap reason="omitted"/> βλεπ <gap reason="omitted"/> κλε|γειν καὶ π <gap reason="omitted"/>
 τα | πεμπομένους <gap reason="omitted"/> |<gap reason="omitted"/> σκα <gap reason="omitted"/> τα . καὶ βασιλ <gap reason="omitted"/>
-<gap reason="omitted"/> ν | δωρεαι <gap reason="omitted"/> μηφοβ . τσσ (Ο φοληστα|) <lb n="10"/>
+                     <gap reason="omitted"/> ν | δωρεαι <gap reason="omitted"/> μηφοβ . τσσ (Ο φοληστα|) <lb n="10"/>
 μειατασ . υπη . καιτοισ |πε . ευσκαι . λη <gap reason="omitted"/> ἐμπείρους
-πολλοὺς ἰδιώτας εἶναι πάντων τῶν τοι</p></div>
-<div type="textpart" subtype="fragment" n="13"><p rend="merge">οὕτων.</p><note type="marginal">XIII</note>
-<p>„Οὐκ ὀλίγοι πρότερον ὄντες ἀδύνατοι προσελθόντες
+πολλοὺς ἰδιώτας εἶναι πάντων τῶν τοι</p>
+               </div>
+               <div type="textpart" subtype="fragment" n="13">
+                  <p rend="merge">οὕτων.</p>
+                  <note type="marginal">XIII</note>
+                  <p>„Οὐκ ὀλίγοι πρότερον ὄντες ἀδύνατοι προσελθόντες
 καὶ φιλοπονήσαντες ἐγίνοντο δυνατοί.“</p>
-<p>Πρῶτον μὲν οὐ πάντες ἀλλʼ ἔνιοι, καὶ χείρους <lb n="15"/>
+                  <p>Πρῶτον μὲν οὐ πάντες ἀλλʼ ἔνιοι, καὶ χείρους <lb n="15"/>
 ἀποβαίνουσιν, παρʼ ὅσον γε τοῖς σοφισταῖς προσεληλύθασιν.
 Εἰ δὲ λέγειν ἀγαθοὶ γίνονταί τινες, ἀλλὰ διʼ
 ἄλλας αἰτίας, ἃς μὲν ἄλλοις τόποις εὐκαιρότερον ὑποζεύξομεν,
@@ -462,14 +529,16 @@
 αὐτὴν ὑπάρχειν οὔπω συνάγεται· δυνατὸν γὰρ ἀσκήσει
 καὶ τριβῆι πρὸς τοὺς ἐπιμελομένους τῆς ἀσκήσεως εἰσιόντας
 ἐνίους κρατεῖν τῆς προθέσεως.</p>
-<p>„Οὐκ ἂν τῶν ἀφηγουμένων τοὺς μὲν πολλοὺς καὶ
-ἀγαθοὺς ἀπετέλουν ἀλλὰ καχεξεῖς.“</p><lb n="25"/>
-<p>Καίτοι γε ὁρῶμεν παρʼ ἐνίων ἀτέχνων ὄντων πολλῶι
+                  <p>„Οὐκ ἂν τῶν ἀφηγουμένων τοὺς μὲν πολλοὺς καὶ
+ἀγαθοὺς ἀπετέλουν ἀλλὰ καχεξεῖς.“</p>
+                  <lb n="25"/>
+                  <p>Καίτοι γε ὁρῶμεν παρʼ ἐνίων ἀτέχνων ὄντων πολλῶι
 πλείονας ἐνίοτε καὶ δυνατωτέρους ἐξιόντας ἢ παρὰ
-τῶν ἐπιστημονικῶς </p></div>
-<div type="textpart" subtype="fragment" n="14"><p rend="merge"> τοῦτο ἀκριβούντων, ὅ μᾶλλον <note type="marginal">XIV</note>
-
-<pb n="20"/>
+τῶν ἐπιστημονικῶς </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="14">
+                  <p rend="merge"> τοῦτο ἀκριβούντων, ὅ μᾶλλον <note type="marginal">XIV</note>
+                     <pb n="20"/>
 ἀποφατικόν ἐστιν τοῦ μὴ εἶναι τέχνην τὴν ῥητορικήν.
 Φαίνεται δὲ ταὐτό, κἂν παρὰ τῶν ἀτέχνων λεγομένων
 ὀλίγοι μόνον ἐξίωσιν ἀγαθοὶ καὶ δυνατοὶ τέχνην οὐ
@@ -483,14 +552,17 @@
 μάλιστʼ, ἐνποιοῦσι· τοίγαρ εἰ οἱ μαθηταὶ ἀκολουθοῦσι
 τοιούτοις μηδὲ σοφιστικὰς ἀπραξίας ἀναδιδόντες κατατρίβουσιν
 καὶ σύνεισιν δʼ ἐνίοτέ τισιν εὐφυέσι πρὸς
-<note type="marginal">XV</note> τὸ λέγειν, παραβεβληκέναι πάντως λέγονται </p></div>
-<div type="textpart" subtype="fragment" n="15"><p rend="merge"> σοφισταῖς,
+<note type="marginal">XV</note> τὸ λέγειν, παραβεβληκέναι πάντως λέγονται </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="15">
+                  <p rend="merge"> σοφισταῖς,
 <lb n="15"/> καὶ κατʼ ἐκεῖνον ὠφελούμενοι τὸν τρόπον δόξαν παρέχουσιν,
 ὡς ὑπὸ τῶν σοφιστῶν γεγόνασιν τοιοῦτοι.</p>
-<p>„Πέμπουσιν οἱ δημηγόροι καὶ δικολόγοι τοὺς υἱοὺς
+                  <p>„Πέμπουσιν οἱ δημηγόροι καὶ δικολόγοι τοὺς υἱοὺς
 καὶ πρὸς σοφιστὰς ὡς μαθησομένους, ἃ καὶ αὐτοὶ διδαχθέντες
 ἀπετελέσθησαν δυνατοί.“</p>
-<lb n="20"/><p>Πρῶτον μὲν οὐ πάντες ἀλλʼ ὀλίγοι κραυγάζουσιν
+                  <lb n="20"/>
+                  <p>Πρῶτον μὲν οὐ πάντες ἀλλʼ ὀλίγοι κραυγάζουσιν
 ἀπολωλεκέναι τὸν χρόνον, ὃν εἰς σοφιστοῦ πεφοιτήκασιν,
 καὶ τοὺς οἱοὺς ἐπὶ τὸν οὑτων ἄγουσι διδάσκαλον,
 τὸν δῆμον, ὅμως δʼ, εἰ ποσόν τι δύνανται συνηρτημένοι
@@ -500,8 +572,10 @@
 λόγων νομίζωσιν, ἀφʼ ἧς τις ἂν προβιβάζεσθαι
 νέος ὢν δύναιτο, αὐτοί γʼ ἀφέντες σοφιστικὴν ζηλοῦσι
 τοὺς ἐν τῶι ἀγωνίζεσθαι γενομένους καὶ τὴν ἱστορίαν</p>
-</div>
-<div type="textpart" subtype="fragment" n="16"><note type="marginal">XVI</note><p rend="merge"> ἀνειληφότας τῶν πολιτικῶν. Ἔνιοι δʼ οὐδʼ ὅλῶς ἵνα
+               </div>
+               <div type="textpart" subtype="fragment" n="16">
+                  <note type="marginal">XVI</note>
+                  <p rend="merge"> ἀνειληφότας τῶν πολιτικῶν. Ἔνιοι δʼ οὐδʼ ὅλῶς ἵνα
 πρὸς πολιτικὴν δύναμιν ὠφεληθῶσιν, ἀλλʼ ὅπως ἂν
 
 <pb n="21"/>
@@ -511,15 +585,16 @@
 τοὺς ἀποστέλλοντας οὐκ αἰσχυνθησόμεθα λέγειν, δυσβλέπτους
 ὄντας τῶν ἐπὶ τὴν δύναμιν αὐτοὺς τὴν ἔμπρακτον <lb n="5"/>
 προβιβασάντων.</p>
-<p>„Ὥσπερ ἐμ μουσικῆι καὶ γραμματικῆι παραδόσεις
+                  <p>„Ὥσπερ ἐμ μουσικῆι καὶ γραμματικῆι παραδόσεις
 τινῶν εἰσιν ἀγνοουμένων, οὕτως καὶ ἐπὶ ῥητορικῆς,
 καὶ οὐκ ἀμέθοδος ἡ μελέτη γίνεται.</p>
-<p>Παραδόσεις ἀγνοουμένων δύνανταί τινες εἶναι, κἂν <lb n="10"/>
+                  <p>Παραδόσεις ἀγνοουμένων δύνανταί τινες εἶναι, κἂν <lb n="10"/>
 μὴ κατά τινα τέχνην ἐνγίνωνται, κατὰ δʼ ἱστορίαν ἢ
 παρατήρησιν ἤ τινα τοιοῦτον τρόπον· τίθησί τε τὸ
 „τὰς μελέτας οὐκ ἀμεθόδους ποιοῦνται“ φατικῶς μόνον,</p>
-</div>
- <div type="textpart" subtype="fragment" n="17"><p rend="merge">χωρὶς πίστεως ἀλλάττων ἐπὶ τὴν τέχνην. Εἰ δὲ <note type="marginal">XVII</note>
+               </div>
+               <div type="textpart" subtype="fragment" n="17">
+                  <p rend="merge">χωρὶς πίστεως ἀλλάττων ἐπὶ τὴν τέχνην. Εἰ δὲ <note type="marginal">XVII</note>
 καὶ περὶ τοὺς ἀληθινοὺς ἀγῶνας τέχνην τὴν σοφιστικὴν <lb n="15"/>
 ὑπάρχουσαν ὁ λόγος θέλει προσβιβάζειν, καὶ περὶ
 ψευδῶν τελείως ἀγωνίζεται· μεθοδικόν τε γὰρ οὐθὲν
@@ -529,10 +604,10 @@
 λόγους περιποιεῖ θαυμαστοὺς ἡ τῶν πολιτικῶν ἐμπειρία,
 τεχνικὸν δʼ οὐδὲν ἐπιφέρεται. (Es folgen 13
 fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τεχνολογίασ</p>
-</div>
- <div type="textpart" subtype="fragment" n="18"><p rend="merge"> ἀναδιδόναι δοκοῦσιν αὐτοῖς, ταῖς δ’ ἐπιστήμαις <note type="marginal">XVIII</note>
-
-<pb n="22"/>
+               </div>
+               <div type="textpart" subtype="fragment" n="18">
+                  <p rend="merge"> ἀναδιδόναι δοκοῦσιν αὐτοῖς, ταῖς δ’ ἐπιστήμαις <note type="marginal">XVIII</note>
+                     <pb n="22"/>
 ταὐτὸν δυναμένας τέχνας μηδʼ ἀρχὴν ἔχειν, καὶ
 δύναμιν καὶ τεχνολογίας ἀναδιδόντες ὀνείρους ἀναδιδόναι
 χάριν ἀπάτης τῶν ἐντυγχανόντων ὡς οἱ Χαλδαῖοι
@@ -540,17 +615,19 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 <lb n="5"/> Προσάγεταί τʼ, εἴπερ ἄρα, τὸ τέχνην εἶναι τὴν σοφιστικήν,
 τὸ δὲ καὶ τῆς πολιτικῆς εἶναι τέχνην οὐδʼ αὐτοῖς
 που δοκεῖ.</p>
-<p>„Οὐδεὶς ἐμέλλησεν τῶν δυνατῶς καὶ συνετῶς λεγόντων
+                  <p>„Οὐδεὶς ἐμέλλησεν τῶν δυνατῶς καὶ συνετῶς λεγόντων
 ἐν δήμοις καὶ δικαστηρίοις τεχνικῶς οὐδὲ ἓν
 <lb n="10"/> λέγειν·“</p>
-<p>Καίτοι γʼ ἔκειτο πρὸς τὴν ῥητορικήν, εἰ τεχνικῶς
+                  <p>Καίτοι γʼ ἔκειτο πρὸς τὴν ῥητορικήν, εἰ τεχνικῶς
 μὲν ἐν δήμοις καὶ δικαστηρίοις δοκοῦσί τινες ἀναστρέφεσθαι,
 μέτεστι δὲ τοῖς διατριβικοῖς οὐδὲ ἓν τῆς ἐν
 ἐκείνοις ἀρετῆς. Οὐ μὴν ἀλλὰ κακῶς ἐρεῖ τις ἡμᾶς
 <lb n="15"/> λέγειν καὶ παρʼ ἀδιαληψίαν τοῦ τὰ ποῖα διὰ τέχνης
 καὶ τὰ ποῖα χωρὶς τέχνης περιγείνεται· καὶ γὰρ κυνδαλισμῶν
-<note type="marginal">XIX</note> λέγομεν ἐνί </p></div>
-<div type="textpart" subtype="fragment" n="19"><p rend="merge">ους πάντες ἐπίστασθαι καὶ καταχρώμεθα
+<note type="marginal">XIX</note> λέγομεν ἐνί </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="19">
+                  <p rend="merge">ους πάντες ἐπίστασθαι καὶ καταχρώμεθα
 δὲ πολλάκις ἐν τῆι συνηθείαι τῷ τῆς τέχνης
 ὀνόματι, καθάπερ καὶ ξύλα συνδεῖν ἐνίοτε καὶ βαστάζειν
 
@@ -559,25 +636,27 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 ἡμᾶς οὐκ ἂν ῥαιδίως τις ἀθετῆσαι. Τὰ δʼ αὐτὰ παραπλησίως
 ἐφαρμόσει, καὶ ἐπειδὰν δυεῖν τούτων τὸν μὲν
 ἄτεχνον λέγωμεν εἶναι, τὸν δὲ τεχνίτην.</p>
-<p>„Ὥσπερ ἰδὼν ἄγαλμα καλὸν εἴπαις ἂν χωρὶς λόγου <lb n="5"/>
+                  <p>„Ὥσπερ ἰδὼν ἄγαλμα καλὸν εἴπαις ἂν χωρὶς λόγου <lb n="5"/>
 τέχνης ἔργον εἶναι, τὸν αὐτὸν τρόπον ἐρεῖς ἱστορήσας
 τὰ τῶν πολιτικῶν ἔργα.“</p>
-<p>Τοῦτο μὲν ἐπὶ τῶν συνγραμμάτων, ἃ συντετάχασιν
+                  <p>Τοῦτο μὲν ἐπὶ τῶν συνγραμμάτων, ἃ συντετάχασιν
 οἱ πανηγυρικοὶ ῥήτορες, ἀξιούμενον οὐκ ἀπίθανόν
 ἐστιν, εἰ καὶ χωρὶς λόγου γνοίη τις, ὅτι τέχνης ἔργα <lb n="10"/>
 ταῦτʼ ἐστιν· ἐπὶ δὲ τῶν πολιτικῶν ἔργων, ἃ παρατιθέασιν,
 οὐδʼ ὄντων περί τι τεχνικὸν πῶς νοῦν ἔχον
-τέχνην ἀποφαίνειν ὡς ἐπʼ ἀγάλματος καλοῦ; οὔκ</p></div>
-<div type="textpart" subtype="fragment" n="20"><p rend="merge">ουν <note type="marginal">XX</note>
+τέχνην ἀποφαίνειν ὡς ἐπʼ ἀγάλματος καλοῦ; οὔκ</p>
+               </div>
+               <div type="textpart" subtype="fragment" n="20">
+                  <p rend="merge">ουν <note type="marginal">XX</note>
 ἐνδέχοιτʼ ἄν μέθοδον ἐνκρῖναι ἢ τέχνην ἀνάσκητον
 οὐδʼ ἀπείραστον τελέως· ὥστε κἂν τυχὸν εἰπεῖν, ἕως <lb n="15"/>
 ἄν τις ἐνεχθῆι πίστις ἀναγκάζουσα ταὐτὸν ἐπὶ τούτου
 τε καὶ τῶν παρατεθέντων προσδέξασθαι, διότι δοκεῖ
 μόνον ἔχειν ἀξιοπιστίαν τὸ ἐπιχείρημα, πλεῖον δʼ
 οὐδὲ ἕν.</p>
-<p>„Εἰ μὴ τέχνη ἦν, τὰ τῶν πίστεων οὐκ ἂν ἐμελέτων, <lb n="20"/>
+                  <p>„Εἰ μὴ τέχνη ἦν, τὰ τῶν πίστεων οὐκ ἂν ἐμελέτων, <lb n="20"/>
 ὃ ποιοῦσιν ἐκεῖ διδαχθέντες.“</p>
-<p>Ἀλλʼ οὐ μόνον ὁ μὴ μαθὼν τὴν τέχνην ἀδυνατεῖ
+                  <p>Ἀλλʼ οὐ μόνον ὁ μὴ μαθὼν τὴν τέχνην ἀδυνατεῖ
 τὰ τῆς τέχνης ἔργα συντελεῖν ἀλλὰ καὶ τὰ διʼ ἀσκήσεως
 καί τινος ἱστορίας καὶ παρατηρήσεως ἀδυνατεῖ
 ποιεῖν ὁ τούτων ἀμοιρήσας· ὅταν τε παρατηρήσῃ, φήσω, <lb n="25"/>
@@ -587,13 +666,15 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 <pb n="24"/>
 οὐδὲ ἓν προσδεηθεὶς ἄκρως ἐν τοῖς πολιτικοῖς ἀναστραφήσεται,
 καὶ τὰ πράγματα τὴν τούτου παρέξεται
-<note type="marginal">XXI</note> καὶ συμπαράξεται </p></div>
-<div type="textpart" subtype="fragment" n="21"><p rend="merge"> πίστιν. Ἐκεῖνο δὲ μᾶλλον ἔμβριθές
+<note type="marginal">XXI</note> καὶ συμπαράξεται </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="21">
+                  <p rend="merge"> πίστιν. Ἐκεῖνο δὲ μᾶλλον ἔμβριθές
 ἐστι τεκμήριον τοῦ μὴ πολιτικὴν τέχνην εἶναι τὴν
 <lb n="5"/> σοφιστικήν, ὅ τις ἂν εἴπειεν ἀντιστρέψας, Εἰ τέχνη
 τίς ἐστιν ἐκείνη, ταύτης ὁ μαθὼν τὰς τεχνολογίας εἰς
 δῆμον ἢ δικαστήριον λεγέτωι παρελθών.</p>
-<p>Τὰ μὲν οὖν εἰρημένα τισὶν ὑπέρ τε τοῦ τέχνην
+                  <p>Τὰ μὲν οὖν εἰρημένα τισὶν ὑπέρ τε τοῦ τέχνην
 εἶναι τὴν ῥητορικὴν καὶ ὑπὲρ τοῦ μὴ τέχνην τοῦτον
 <lb n="10"/> ἡμῖν ἐπεσκέφθω τὸν τρόπον. Τῶν δʼ ἡμετέρων τοὺς
 λέγοντας τὴν ῥητορικὴν τοῦ μὲν γράφειν λόγους καὶ
@@ -603,8 +684,10 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 <lb n="15"/> καλεῖσθαι ῥητορικήν· τὴν γὰρ ῥητορικήν φασιν τούτων
 μὲν εἶναι τέχνην· μέρος δʼ ἐπαινέσασιν αὐτῆς, μὴ
 ὅλην δόξασιν τὴν σοφιστικὴν τέχνην λέγειν ἀπὸ τῶν
-<note type="marginal">XXII</note> ἐκκειμένων, ὅτι τοῦ δίκας λέ </p></div>
-<div type="textpart" subtype="fragment" n="22"><p rend="merge">γειν καὶ δημηγορεῖν οὐ
+<note type="marginal">XXII</note> ἐκκειμένων, ὅτι τοῦ δίκας λέ </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="22">
+                  <p rend="merge">γειν καὶ δημηγορεῖν οὐ
 τέχνην, πάλιν ἐγκαλέσειεν, ὅτι τῶν ζητουμένων τι κατὰ
 <lb n="20"/> τὸν τρόπον συνεχόντως παραλελοίπασιν. Λέγω δέ, πότερον
 τοῦ δίκας λέγειν εὖ καὶ δημηγορεῖν τέχνη τις
@@ -622,14 +705,15 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 τέχνην ὑπάρχειν, ὡς ἔσται φανερόν, ἐπειδάν, ὡς ἡμεῖς
 κατασκευάζομεν, παραθώμεθά γε παρὰ τῶν ἀνδρῶν
 καὶ τὰ μαρτύρια· τῶν δʼ ἀδιαστόλως ἢ τέχνην ἢ μὴ</p>
-</div>
- <div type="textpart" subtype="fragment" n="23"><p rend="merge">τέχνην τὴν ῥητορικὴν λεγόντων, καλῶς δὲ σεσημαγκέναι <note type="marginal">XXIII</note>
+               </div>
+               <div type="textpart" subtype="fragment" n="23">
+                  <p rend="merge">τέχνην τὴν ῥητορικὴν λεγόντων, καλῶς δὲ σεσημαγκέναι <note type="marginal">XXIII</note>
 περὶ τῶν καὶ ὑπʼ αὐτῶν παραλελειμμένων, ὡς ὑποδεδείχαμεν, <lb n="10"/>
 τὸν ἔλεγχον περιέχουσιν. Τὸ δὲ Πολυαίνου
 λεγόμενον περὶ ῥητορικῆς οὐχ ὑπάρχον Πολυαίνου,
 καθάπερ ἐνεφανίσαμεν, καὶ αὐτὸ τὸ τῶν παρατεθειμένων
 ἐπισεσυρμένον παρίστησιν.</p>
-<p>Οἱ μέντοι λέγοντες αὐτὴν τέχνην, προσδεομένην <lb n="15"/>
+                  <p>Οἱ μέντοι λέγοντες αὐτὴν τέχνην, προσδεομένην <lb n="15"/>
 δὲ φύσεως καὶ τριβῆς οὐκ εἰς τὴν ἑαυτῆς ἀνάληγψιν
 ἀλλʼ εἰς τὴν ἐπιτυχίαν τοῦ τέλους παντελῶς καὶ τῆς
 ἀληθείας καὶ τῆς κρίσεως τῶν καθηγεμόνων διαπεπτώκασιν·
@@ -637,10 +721,11 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 — διὸ καὶ τὴν πᾶσαν ἐν τοῖς λεγομένοις ἀναδέχονται <lb n="20"/>
 κύκησιν — ὡς τέχνης τε σχεδὸν τῆς σοφιστικῆς
 οὔσης καὶ καλουμένης ῥητορικῆς, αὐτοί, ἃ λέγουσιν,
-ἐκτεθεικασιν. Τῶν τε περὶ τὸν Ἐπίκουρον </p></div>
-<div type="textpart" subtype="fragment" n="24"><p rend="merge"> ἀποφαινομένων <note type="marginal">XXIV</note>
-
-<pb n="26"/>
+ἐκτεθεικασιν. Τῶν τε περὶ τὸν Ἐπίκουρον </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="24">
+                  <p rend="merge"> ἀποφαινομένων <note type="marginal">XXIV</note>
+                     <pb n="26"/>
 τέχνην εἶναι τὴν σοφιστικὴν τοῦ λόγους συγγράφειν
 καὶ ἐπιδείξεις ποιεῖσθαι, τοῦ δὲ δίκας λέγειν
 καὶ δημηγορεῖν οὐκ εἶναι τέχνην, τὴν σοφιστικήν γέ
@@ -655,8 +740,10 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 κατʼ αὐτῶν ἅμα κεῖται· καθάπερ γὰρ βάσιν ἐπὶ ταύτης
 προϋποκεῖσθαι δεῖ φύσιν, οὕτως καὶ ἐπὶ ῥητορικῆς·
 ἐπὶ δὲ τῆς γραμματικῆς χρεία φύσεως καὶ τριβῆς πρὸς
-<note type="marginal">XXV</note> τὴν </p></div>
-<div type="textpart" subtype="fragment" n="25"><p rend="merge"> ἀνάληψιν αὐτῆς, οὐ πρὸς τὴν ἐπιτυχίαν τοῦ τέλους·
+<note type="marginal">XXV</note> τὴν </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="25">
+                  <p rend="merge"> ἀνάληψιν αὐτῆς, οὐ πρὸς τὴν ἐπιτυχίαν τοῦ τέλους·
 <lb n="16"/> ὥστʼ εἴπερ ὁμοίως λεκτέον καὶ ἐπὶ τῆς ῥητορικῆς,
 καὶ ταύτην ῥητέον προσδεῖσθαι φύσεως καὶ τριβῆς
 πρὸς τὴν ἀνάληψιν τὴν ἑαυτῆς. Ἐπεί τέ φασιν φύσεως
@@ -673,10 +760,12 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 τὴν ἀνάληψιν αὐτῆς ἀλλὰ πρὸς τὴν ἐπιτυχίαν τοῦ
 τέλους, οὕτως ὑπόδειξιν ποιεῖσθαι ἡμῖν, τίνα πότʼ
 ἐστιν, ἃ πρὸς τὴν ἀνάληψιν αὐτῆς συνεργεῖ, καὶ τίνα</p>
-</div>
- <div type="textpart" subtype="fragment" n="26"><p rend="merge">τέχνης ἐστίν, καὶ διὰ τί οὐκ ἐκεῖνά τισιν ἐνγινόμενα <note type="marginal">XXVI</note>
-τευκτικοὺς καθίστησι τῶν τελῶν.</p><lb n="5"/>
-<p>Οὐκ ὀρθῶς δʼ ἵστασθαι νομιστέον οὐδὲ τοὺς ἀποφαινομένους
+               </div>
+               <div type="textpart" subtype="fragment" n="26">
+                  <p rend="merge">τέχνης ἐστίν, καὶ διὰ τί οὐκ ἐκεῖνά τισιν ἐνγινόμενα <note type="marginal">XXVI</note>
+τευκτικοὺς καθίστησι τῶν τελῶν.</p>
+                  <lb n="5"/>
+                  <p>Οὐκ ὀρθῶς δʼ ἵστασθαι νομιστέον οὐδὲ τοὺς ἀποφαινομένους
 οὐκ εἶναι τέχνην, εἴ τις προείληφε τέχνην
 τὴν τὸ μεθοδικὸν ἔχουσαν καὶ ἑστηκὸς παράδοσιν, εἰ
 δὲ καλεῖ καὶ τὴν ὁλοσχερῆ παρατήρησιν τὴν στοχαζομένην
@@ -690,15 +779,16 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 θέλουσι· πρὸς δὲ τούτοις, τῆς πολιτικῆς οὔτε
 οὔσης τέχνης λεγομένης τε πρὸς τῶν ἀνδρῶν οὐκ
 εἶναι, κατὰ ταύτην εἶναι τέχνην τήν γε διαστολὴν
-τῶν ἐπιστημῶν, οἵαν αὐτοὶ πεποίηνται. Κατʼ οὐδέτερον</p><lb n="20"/>
-</div>
- <div type="textpart" subtype="fragment" n="27"><p rend="merge">γὰρ τρό πον τῶν ἐκκειμένων τέχνην ἔστιν εἰπεῖν <note type="marginal">XXVII</note>
+τῶν ἐπιστημῶν, οἵαν αὐτοὶ πεποίηνται. Κατʼ οὐδέτερον</p>
+                  <lb n="20"/>
+               </div>
+               <div type="textpart" subtype="fragment" n="27">
+                  <p rend="merge">γὰρ τρό πον τῶν ἐκκειμένων τέχνην ἔστιν εἰπεῖν <note type="marginal">XXVII</note>
 τὴν πολιτικὴν ῥητορικήν. Ὅτι μὲν γὰρ οὐκ ἔχει τὴν
 μεθοδικὴν παράδοσιν καὶ τὴν τὸ ἑστηκὸς προσφερομένην
 ὁμολογοῦσιν, ὅτι δʼ οὐδὲ τὴν παρατήρησιν τὴν
 τοῦ ὡς ἐπὶ τὸ πολὺ καὶ κατὰ τὸ εὔλογον στοχαζομένην, <lb n="25"/>
-
-<pb n="28"/>
+                     <pb n="28"/>
 Ἐπίκουρος ἐν τῶι πρώτωι Περὶ βίων καὶ ἐν
 τῶι Περὶ τῆς ῥητορικῆς ὑπογέγραφεν καὶ Μητρόδωρος
 ἐν τῶι Πρὸς τοὺς ἀπὸ φυσιολογίας λέγοντας ἀγαθοὺς
@@ -709,8 +799,10 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 καὶ εὑρεῖν ἐπιμελῶς οἷός τε ἦν τὸ τῶι πλήθει
 ἑκάστοτε συνφέρον“· οὔτε δὲ τοῦτο μεθόδωι τις ἂν
 <lb n="10"/> ἔχειν εἴποι, καὶ ἄλλη πίστις ἐστὶ περὶ τοῦ τὴν πολιτικὴν
-<note type="marginal">XXVIII</note> μὴ στοχάζεσθαι τοῦ ὡς ἐπὶ τὸ πολ </p></div>
-<div type="textpart" subtype="fragment" n="28"><p rend="merge"> καὶ κατὰ
+<note type="marginal">XXVIII</note> μὴ στοχάζεσθαι τοῦ ὡς ἐπὶ τὸ πολ </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="28">
+                  <p rend="merge"> καὶ κατὰ
 τὸ εὔλογον, καὶ δῆτα καὶ φέρεται πρὸς τῶν περὶ τὸν
 Ἐπίκουρον· λέγω δὲ τὸ τῶν πολλῶν ἀόριστον καὶ τοῖς
 αὐτοῖς ὁτὲ μὲν πειθόμενον, ὁτὲ δὲ προσκόπτον. Ἡ δὲ
@@ -727,8 +819,9 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 πείθοντα κατὰ τὸ πλεῖστον· εἰ δὲ δὴ τὰ προοίμια
 ταῦτα καὶ τὰς διηγήσεις καὶ τἆλλα τοῦ λόγου παραδιδόντες,
 ὡς οὗτοι νομίζουσι, καὶ παντελῶς εἰς παραδό</p>
-</div>
- <div type="textpart" subtype="fragment" n="29"><p rend="merge">σεις ἤχασιν, εὐτελὲς ἤνεγκεν ἡ φύσις τοῦτο παρατηρῆσαι· <note type="marginal">XXIX</note>
+               </div>
+               <div type="textpart" subtype="fragment" n="29">
+                  <p rend="merge">σεις ἤχασιν, εὐτελὲς ἤνεγκεν ἡ φύσις τοῦτο παρατηρῆσαι· <note type="marginal">XXIX</note>
 τό τε προοιμιαζομένους ἡμᾶς καὶ διηγουμένους <lb n="6"/>
 καὶ τὰ συνεχῆ δρῶντας μάλιστα πείθειν οὐ λέγεται
 καλῶς· ὥστε ῥητέον καὶ τοῦτο καὶ τὸ προειρημένον
@@ -738,16 +831,17 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 οὐθὲν προσηκόντων τέχνην αὐτὴν βούλονται συμβιβάζειν,
 τοῖς ἀνδράσι καθʼ ἑκάτερον διαφωνοῦντες,
 διὸ δὴ ποικίλως συνεχεῖς ὑπέσχον ψόγους.</p>
-<p>Οἱ δὲ <del>ἐκ τῶ</del>ν Διο<del>γέ</del>νους Σχολῶν τοὺς ὑπομνηματισμοὺς <lb n="15"/>
+                  <p>Οἱ δὲ <del>ἐκ τῶ</del>ν Διο<del>γέ</del>νους Σχολῶν τοὺς ὑπομνηματισμοὺς <lb n="15"/>
 ἀναγράψαντες ἐπειδὴ σύνθετον ἐποίησαν
 ἀπόφασιν ἔκ τε ταύτης καὶ τῆς πρότερον σεσημασμένης,
 τοῖς πρὸς ἑκατέρους εἰρημένοις ὄντες ἔνοχοι μόνον
 ἐπισημανθήτωσαν, ἵνα μὴ ταὐτὰ πάλι καταλέγωμεν.
-Ὑπομνησθήτω</p></div>
-<div type="textpart" subtype="fragment" n="30"><p rend="merge"> σαν δὲ καὶ τοῦτο, διότι τέχνην τοιαύτην <note type="marginal">XXX</note>
+Ὑπομνησθήτω</p>
+               </div>
+               <div type="textpart" subtype="fragment" n="30">
+                  <p rend="merge"> σαν δὲ καὶ τοῦτο, διότι τέχνην τοιαύτην <note type="marginal">XXX</note>
 λέγοντες εἶναι τὴν ῥητορικήν, „οἵαν ἄν τις εἴποι τὴν <lb n="21"/>
-
-<pb n="30"/>
+                     <pb n="30"/>
 ἐκ παρατηρήσεως ποιᾶς συνησκημένην ἕξιν, καθʼ ἣν
 ὡς ἐπὶ τὸ πολὺ καὶ κατὰ τὸ εὔλογον περιγίνεται τὸ
 προκείμενον τέλος“, τὸ τῆς τέχνης ἴδιον αὐτῆς ἀναιροῦνται.
@@ -761,8 +855,10 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 ἐν τοῖς θαύμασιν συντόνους τεχνίτας καλεῖ καὶ τὸ
 δεξιῶς ξύλα σχίσαι καὶ συνθεῖναι καὶ ἐνεδρεῦσαί τινα
 πονηρῶς τεχνικὸν λέγει καὶ τέχνας τὰς ἐν ταῖς κωμῳδίαις
-<note type="marginal">XXXI</note> καὶ πᾶν τὸ τούτοις παραπλήσιον. </p></div>
-<div type="textpart" subtype="fragment" n="31"><p rend="merge">Καὶ μὴν τῶι
+<note type="marginal">XXXI</note> καὶ πᾶν τὸ τούτοις παραπλήσιον. </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="31">
+                  <p rend="merge">Καὶ μὴν τῶι
 <lb n="15"/> καὶ παρατήρησιν καὶ ἄσκησιν τέχνην προσαγορεύειν
 τὰ πλεῖστα τῶν ἐν τῶι βίωι τέχνας προσαγορεύοντες
 οὐκ ἂν φθάνοιμεν, καὶ τὴν ἄσκησιν καὶ παρατήρησιν
@@ -779,8 +875,10 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 κατασκευάζειν ἦν, ὡς οὐδʼ ἐκ παλαιστρικῆς ἄν,
 ὦ Κορύβαντες, ἐνφῦναι δύναιτο· τέχνην γὰρ ῥητορικὴν
 πῶς ἂν λέγοιμεν τοιαύτην, ἥ παραληφθεῖσα κατʼ
-ὀλίγα ἢ οὐθὲν ὠφελεῖ τὸν τεχνί </p></div>
-<div type="textpart" subtype="fragment" n="32"><p rend="merge"> την, οὐδὲ παρασκευάζει <note type="marginal">XXXII</note>
+ὀλίγα ἢ οὐθὲν ὠφελεῖ τὸν τεχνί </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="32">
+                  <p rend="merge"> την, οὐδὲ παρασκευάζει <note type="marginal">XXXII</note>
 δημιουργὸν τῶν ἰδίων αὐτῆς, ἀλλὰ καὶ ποεῖ που λείπεσθαι <lb n="6"/>
 κατʼ αὐτὰ τῶν μὴ μαθόντων αὐτήν· ὑπείληπτο
 δὲ τέχνη „διὰ ποιᾶς παρατηρήσεως ἕξις συνησκημένη,
@@ -795,8 +893,10 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 κερη <gap reason="omitted"/>|<gap reason="omitted"/> ε . σ τὰς τέχνας ἀνειληφότων δύνασθαι
 λέγειν ἐν δήμοις καὶ δικαστηρίοις. θαυμαστῆς δὴ
 ἀτεχνίας, ἣν οὐ μαθόντες τε αὐτουργὸν περιπεποιήκασιν
-οὔτε μαθόντες ἔχουσι. Καὶ τὰς ἄλλας </p></div>
-<div type="textpart" subtype="fragment" n="33"><p rend="merge"> διαφοράς, ἃς <note type="marginal">XXXIII</note>
+οὔτε μαθόντες ἔχουσι. Καὶ τὰς ἄλλας </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="33">
+                  <p rend="merge"> διαφοράς, ἃς <note type="marginal">XXXIII</note>
 ἀποδεδώκασιν, πρὸς οὐθὲν εὑρήσομεν ἕτερον ἁμιλλωμένας <lb n="21"/>
 ἢ πρὸς τὸ δεῖξαι κατὰ μηδένα τρόπον τέχνην
 αὐτὴν ὑπάρχουσαν. Διαφέρει γάρ, φασί, καὶ καθόσον,
@@ -814,13 +914,15 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 <lb n="10"/> χρησάμενος ἄκρως τὸ τῆς δυνάμεως ἀμέθοδον παραστήσω.
 Τάς γε μὴν πίστεις, ἃς ἐνηνόχασιν περὶ τοῦ
 καὶ δὴ προσφέρεσθαι τὰς διαφορὰς αὐτήν, ἃς ἐπεσημήναντο,</p>
-</div>
- <div type="textpart" subtype="fragment" n="34"><note type="marginal">XXXIV</note><p rend="merge"> κἂν εἴπαιμεν τὸ ὑποκεί μένον συνάγειν,
+               </div>
+               <div type="textpart" subtype="fragment" n="34">
+                  <note type="marginal">XXXIV</note>
+                  <p rend="merge"> κἂν εἴπαιμεν τὸ ὑποκεί μένον συνάγειν,
 ἀλλʼ οὐδὲν ἡμᾶς γε βλάψουσιν ἀλλʼ αὐτοὺς ἐκείνους·
 <lb n="15"/> ἐῶμεν ἄρʼ ὡς πίστεις ὑγιεῖς, εἰ μή τι κἀκ τῶν πρότερον
 εἰρημένων ἔστιν ἀνελέσθαι πρὸς αὐτὰς καὶ
 βλέπονταί τινες ἐκφανεῖς καὶ παρακείμεναι ὑπεναντιολογίαι.</p>
-<p>Καὶ τούτων δʼ ἀποτεθεωρημένων λοιπὸν ἐνέστηκεν,
+                  <p>Καὶ τούτων δʼ ἀποτεθεωρημένων λοιπὸν ἐνέστηκεν,
 <lb n="20"/> ὃ δεῖ πρὸς τὸν φίλτατον ἐπιζητῆσαι Βρόμιον, πῶς
 περὶ τεχνῶν προτεθειμένος συνγράφειν καὶ ζητῶν, εἰ
 ἡ ἰατρικὴ τέχνη καὶ εἰ ἡ γραμματική, προθεὶς δὲ καί,
@@ -833,8 +935,9 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 περὶ λόγους διατρίβουσιν ἐνεστηκυίας περὶ τῆς τοιαύτης.
 Πῶς δὲ καὶ τέχνης οὔσης τῆς σοφιστικῆς καὶ <lb n="5"/>
 λεγομένης ὑπὸ τῶν ἀνδρῶν; πῶς οὐκ, εἰ τέχνη ἐστὶν</p>
-</div>
- <div type="textpart" subtype="fragment" n="35"><p rend="merge">ἡ σοφιστική, προ εῖπε; πῶς οὐκ ἀποφάσκων αὐτὴν <note type="marginal">XXXV</note>
+               </div>
+               <div type="textpart" subtype="fragment" n="35">
+                  <p rend="merge">ἡ σοφιστική, προ εῖπε; πῶς οὐκ ἀποφάσκων αὐτὴν <note type="marginal">XXXV</note>
 εἶναι τέχνην καὶ ἀπέδειξεν; πῶς τὴν πολιτικήν, λεγομένην
 ὑπὸ τῶν ἀνδρῶν οὐ τέχνην πολύ τε τοῦ τῆς
 τέχνης ἰδίου κεχωρισμένην, τέχνην ἀπεφήνατο καὶ <lb n="10"/>
@@ -849,8 +952,9 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 καὶ δρῶντα τοὐναντίον. Ὅταν τε μηνύῃ ῥάιδιον εἶναι
 παραγενηθέντας ἐπὶ τὰ κατὰ μέρος ὑποδείγματα τοὺς <lb n="20"/>
 τεχνικῶς ἐν ἐκκλησίαις καὶ δικαστηρίοις ἀναστραφέντας</p>
-</div>
- <div type="textpart" subtype="fragment" n="36"><p rend="merge">ἀποδεῖξαι, μήποτε οὐ ῥᾶιον ἐπαγγέλληται πρᾶγμα· <note type="marginal">XXXVI</note>
+               </div>
+               <div type="textpart" subtype="fragment" n="36">
+                  <p rend="merge">ἀποδεῖξαι, μήποτε οὐ ῥᾶιον ἐπαγγέλληται πρᾶγμα· <note type="marginal">XXXVI</note>
 τετευχότας γὰρ αὐτούς, οὗ θέλουσιν, παραστήσει, τεχνικῶς
 δὲ τοὺς οὐ τεχνίτας ἀνεστραμμένους οὐ παραστήσει.
 „Νὴ Δία μᾶλλον τῶν οὐ τεχνιτῶν τοῦ τέλους <lb n="25"/>
@@ -868,9 +972,11 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 οἵ γε περὶ τὸν Ἐπίκουρον δόξουσι λέγειν κενοτάτας
 ὥς γε πρὸς πολιτικῆς δυνάμεως παρασκευήν. Οὐ μὴν
 <lb n="10"/> ἀλλὰ περὶ τούτων διασαφηθήσεταί τι, παρʼ ὅσον τι
-<note type="marginal">XXXVII</note> ἄδη</p></div>
-<div type="textpart" subtype="fragment" n="37"><p rend="merge">λον ἦν.</p>
-<p>Καιρὸς δʼ ἂν εἴη πάντων ἀπολελρμένους ἐπὶ τὰς
+<note type="marginal">XXXVII</note> ἄδη</p>
+               </div>
+               <div type="textpart" subtype="fragment" n="37">
+                  <p rend="merge">λον ἦν.</p>
+                  <p>Καιρὸς δʼ ἂν εἴη πάντων ἀπολελρμένους ἐπὶ τὰς
 ἡμετέρας ἐλθεῖν δόξας, καὶ σχεδὸν κεφάλαια τῆς οἰκονομέας
 ἔσται προκείμενα τοιαῦτα· τέχνη τί λέγεται κατὰ
 <lb n="15"/> τὴν συνήθειαν, ὑπομνῆσαι βραχέως· οὐ γὰρ ἄλλῃ τὰ
@@ -883,13 +989,15 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 εἶναι, περὶ δὲ τὸ δίκας λέγειν καὶ δημηγορεῖν οὐκ εἶναι
 τέχνην· — ἔτι τὸ τὴν πολιτικὴν ἐν ἱστορίαι καὶ τριβῆι
 καθεστηκέναι, τεχνικὸν δὲ μηδὲν προσφέρεσθαι.</p>
-<lb n="25"/><p>Καὶ νὴ Δίʼ ὅτι λέγεται παρά τισι πρὸς τὰ δειχθένθʼ
+                  <lb n="25"/>
+                  <p>Καὶ νὴ Δίʼ ὅτι λέγεται παρά τισι πρὸς τὰ δειχθένθʼ
 ἡμῖν, ὑποθώμεθα κατὰ δύναμιν ἐφʼ ἑκάστου τῶν
-<note type="marginal">XXXVIII</note> ἐκκει</p></div>
-<div type="textpart" subtype="fragment" n="38"><p rend="merge">μένων, νῦν δὲ τοῦ πρώτου κατατρέχωμεν.</p>
-
-<pb n="35"/>
-<p>Ἐστιν τοίνυν καὶ λέγεται τέχνη παρὰ τοῖς Ἕλλησιν
+<note type="marginal">XXXVIII</note> ἐκκει</p>
+               </div>
+               <div type="textpart" subtype="fragment" n="38">
+                  <p rend="merge">μένων, νῦν δὲ τοῦ πρώτου κατατρέχωμεν.</p>
+                  <pb n="35"/>
+                  <p>Ἐστιν τοίνυν καὶ λέγεται τέχνη παρὰ τοῖς Ἕλλησιν
 ἕξις ἢ διάθεσις ἀπὸ παρατηρήσεως τινῶν κοινῶν καὶ
 στοιχειωδῶν, ἂ διὰ πλειόνων διήκει τῶν ἐπὶ μέρους,
 καταλαμβάνουσά τι καὶ συντελοῦσα τοιοῦτον, οἷον
@@ -903,8 +1011,10 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 βεβουλήμεθα καὶ δὴ προὐνηνέγμεθα. Καὶ ταῖς
 ἑστηκυίαις γέ τοι καὶ παγίοις ἐπιστήμαις ὥσπερ γραινματιστικῆι
 καὶ μουσικῆι καὶ ζωγραφίαι καὶ πλαστικῆι
-πρόσεστιν τὸ </p></div>
-<div type="textpart" subtype="fragment" n="39"><p rend="merge"> διά τινος παρατηρήσεως στοιχείων <note type="marginal">XXXIX</note>
+πρόσεστιν τὸ </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="39">
+                  <p rend="merge"> διά τινος παρατηρήσεως στοιχείων <note type="marginal">XXXIX</note>
 τινῶν διηκόντων διὰ πλειόνων τῶν κατὰ μέρος καταλαμβάνειν <lb n="16"/>
 ἕκαστον καὶ δημιουργεῖν, καὶ ταῖς οὐκ ἐχούσαις
 τὸ ἑστηκὸς ἀλλὰ τὸ στοχαστικὸν τοῦτʼ ἐξ ἀνάγκης
@@ -918,15 +1028,16 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 μὴ μέντοι γε ἀπὸ τῆς διαθέσεως τῆς τῶν κοινῶν καὶ
 στοιχειωδῶν ἐντευκτικῆς ἐπὶ τὴν ἀπεργασίαν παραλλάξηι
 τῶν κατὰ μέρος, οὐκ ἂν εἴπαιμεν ἀπὸ τέχνης
-τετευ</p></div>
-<div type="textpart" subtype="fragment" n="40"><p rend="merge"> χέναι, τὸν δʼ ἔχοντα τὴν διάθεσιν ἀπὸ τέχνης. <note type="marginal">LX</note>
-
-<pb n="36"/>
+τετευ</p>
+               </div>
+               <div type="textpart" subtype="fragment" n="40">
+                  <p rend="merge"> χέναι, τὸν δʼ ἔχοντα τὴν διάθεσιν ἀπὸ τέχνης. <note type="marginal">LX</note>
+                     <pb n="36"/>
 Κἂν ἐπί τινων ἀποτυγχάνηι τῶν κατὰ μέρος, τὸ πᾶν
 οὐ δή φαμεν τέχνην· καλοῦμεν γάρ, ὃ ἔχει τοῦτο
 πάντως· Εἰ δὲ μὴ πρόσεστίν τινων διηκόντων καὶ
 στοιχειωδῶν εἴδησις <gap reason="omitted"/> επ. γα <gap reason="omitted"/> δίκω <gap reason="omitted"/> τα <gap reason="omitted"/>
-<lb n="5"/> ωιπαρα <gap reason="omitted"/> κ <gap reason="omitted"/> παρατ <gap reason="omitted"/> κ <gap reason="omitted"/> σαπλλεοσα
+                     <lb n="5"/> ωιπαρα <gap reason="omitted"/> κ <gap reason="omitted"/> παρατ <gap reason="omitted"/> κ <gap reason="omitted"/> σαπλλεοσα
 τῶν ἐπιτευκτικῶν κἀποτευκτικῶν· καὶ γὰρ ἡ τέχνη διὰ
 παντὸς οὖσα προτέθειται· κἂν μέθοδον μὴ ἔχηι ἡ
 ῥητορική, ὑπάρξειν τῶν μὴ τεχνῶν, μηδʼ ἔσεσθαι μεθοδικαῖς
@@ -937,8 +1048,11 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 τὸ ταῦτα διὰ παντὸς ἔχειν τὸ αὐτὸ τῆι τέχνηι
 φάσκομεν, ἀλλʼ οὐχὶ καὶ κατὰ ποιὰς παραλλαγὰς καὶ
 <lb n="15"/> εἰ ποτέ εἰσιν οἷοί τε πράττειν, ἃ δεῖ <del>οὐδʼ ὁ στοχαζόμενος</del>
-<note type="marginal">XLI</note> τῶν τ <gap reason="omitted"/> </p></div>
-<div type="textpart" subtype="fragment" n="41"><p rend="merge">καὶ τοῦ καλοῦ παρατετήρηκεν, πῶς
+                     <note type="marginal">XLI</note> τῶν τ <gap reason="omitted"/>
+                  </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="41">
+                  <p rend="merge">καὶ τοῦ καλοῦ παρατετήρηκεν, πῶς
 ἑαυτὸν στῆσαι δεῖ καὶ πῶς ἰέναι καὶ ποῦ τὸν πόδα
 θεῖναι καὶ ποῖ συνεπινεύειν, ἀλλὰ παρατετήρηκε, τίνα
 μόνον καὶ μόνωι τοὖργον ποιεῖ καὶ διὰ παντός, μέθοδον
@@ -955,9 +1069,11 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 παραπλησίους. Ὅταν δὲ φῶμεν μὴ λέγεσθαι τέχνην
 τὴν τῶν τοιούτων ἕξιν μηδὲ τοὺς ἄνδρας τεχνίτας, τὸ
 μὴ κυρίως προσαγορεύεσθαί φαμεν, οὐ τὸ μηδὲ καταχρηστικῶς
-λέγεσθαι διατεινόμεθα· φανερὸν γάρ, ὅτι </p><lb n="10"/>
-</div>
- <div type="textpart" subtype="fragment" n="42"><p rend="merge">καὶ τεχνίτην δρα πέτην καὶ κόλακα καὶ ὠμοφάγον καλοῦσι <note type="marginal">XLII</note>
+λέγεσθαι διατεινόμεθα· φανερὸν γάρ, ὅτι </p>
+                  <lb n="10"/>
+               </div>
+               <div type="textpart" subtype="fragment" n="42">
+                  <p rend="merge">καὶ τεχνίτην δρα πέτην καὶ κόλακα καὶ ὠμοφάγον καλοῦσι <note type="marginal">XLII</note>
 καὶ πολλοὺς ἄλλους, ὅτι παρατετήρηκε τούτων
 ἕκαστος, ἃ ποιεῖν προτέθειται, καὶ ἀποτεύγματά τινα
 καὶ ἐπιτεύγματα. Οὐ μὴν ἐγὼ μὲν τὴν συνήθειαν οὔ
@@ -972,11 +1088,12 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 πολλὰ καὶ νὴ τὸν Διʼ ἀγνοηθέντα γείνεται, πάντα
 πληροῦν ἐπιστημῶν καὶ μηδὲν ἄτεχνον ἀπολείπειν
 ἕνεκα γʼ ἡμῶν μὴ κωλυέσθω. Φεύγοντες γὰρ ἅπασαν <lb n="25"/>
-
-<pb n="38"/>
+                     <pb n="38"/>
 οὐ πραγματικὴν ἀμφισβήτησιν μεταληψόμεθα τὰς ὀνομασίας,
-<note type="marginal">XLIII</note> καὶ ταύτας, </p></div>
-<div type="textpart" subtype="fragment" n="43"><p rend="merge"> ἃς νῦν φαμεν εἶναι τέχνας,
+<note type="marginal">XLIII</note> καὶ ταύτας, </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="43">
+                  <p rend="merge"> ἃς νῦν φαμεν εἶναι τέχνας,
 τὸ τοιοῦτʼ ἔχειν εἶδος ἐροῦμεν, οἷον ἡ γραμματικὴ
 καὶ πλαστική, ταύτας δʼ, ἃς οὐ τέχνας, τὰς ἐστερημένας
 <lb n="5"/> τοῦ τοιούτου, παρατηρητικὸν δοκεῖν εἶδος, ὃ οὐ
@@ -988,14 +1105,16 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 ἰδιώματι κεχαράχθαι φήσομεν, τὴν δʼ οὐ φήσομεν,
 καὶ πρὸς ταῦτα τοὺς ἀντιλέγοντας ἀπαντᾶν ἀξιώσομεν
 καὶ ὡς κατεχρησάμεθα.</p>
-<p>Ἀλλὰ νῦν ἐπʼ ἐκεῖνο βαδίζωμεν, ὅτι „τέχνην οὐχ
+                  <p>Ἀλλὰ νῦν ἐπʼ ἐκεῖνο βαδίζωμεν, ὅτι „τέχνην οὐχ
 <lb n="15"/> ἡμεῖς λέγομεν τὴν σοφιστικήν, οἱ δὲ τὴν αἵρεσιν
 κτίσαντες ἡμῶν ἀντιφωνοῦσιν, καὶ τὴν πολιτικὴν
 ἱστορίαν τινὰ καὶ παρατήρησιν συνησκημένην, οὐχ
 ἡμεῖς“.</p>
-<p>Ἀλλὰ κἀκεῖνο παραθήσομαι, ὅπου καὶ διʼ ὧν
-<note type="marginal">XLIV</note> ἔφασκεν </p></div>
-<div type="textpart" subtype="fragment" n="44"><p rend="merge"> ὁ Ζήνων ταῦτα διασαφεῖσθαι. Ὁ τοίνυν
+                  <p>Ἀλλὰ κἀκεῖνο παραθήσομαι, ὅπου καὶ διʼ ὧν
+<note type="marginal">XLIV</note> ἔφασκεν </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="44">
+                  <p rend="merge"> ὁ Ζήνων ταῦτα διασαφεῖσθαι. Ὁ τοίνυν
 <lb n="21"/> Ἐπίκουρος ἐν τῶι Περὶ τῆς ῥητορικῆς ὅτι μὲν διατελεῖ
 λέγων “τὰ διδασκαλεῖα τῶν ῥητορικῶνʼ καὶ “τοὺς ἐκ
 τῶν διδασκαλείωνʼ καὶ τὰς δυνάμεις τὰς ἐκ τῶν
@@ -1006,17 +1125,18 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 αὐτῶν καὶ ‘τὰς παραδόσεις καὶ παραγγελίας περί τε
 λόγου καὶ ἐνθυμημάτων καὶ τῶν ἄλλων’ καὶ τἀνάλογα
 πάντα τούτοις, τί ἂν λέγοι τις;</p>
-<p>Ἀλλὰ μὴν καὶ Ἕρμαρχος ἐπὶ Μενεκλέους ἔν τινι <lb n="5"/>
-
-<pb n="40"/>
+                  <p>Ἀλλὰ μὴν καὶ Ἕρμαρχος ἐπὶ Μενεκλέους ἔν τινι <lb n="5"/>
+                     <pb n="40"/>
 πρὸς Θεοφείδην ἐπιστολῆι τὴν αὐτὴν ἔχει γνώμην.
 Ἀλεξίνου γὰρ ἐν τοῖς Περὶ ἀγωγῆς κατηγοροῦντος τῶν
 ῥητορικῶν σοφιστῶν, ὅτι πολλὰ ζητοῦσιν ἀχρήστως,
 ὧν ἐστι καὶ τὸ περὶ τὴν λέξιν αὐτῶν πραγμάτευμα
 <lb n="5"/> καὶ τὸ περὶ τὴν μνήμην, καὶ ἐν οἷς ἐπιζητοῦσι, λέγειν
 Ὅμηρον ‘ὑποβέβηκενʼ ἐν τοῖς ἔπεσιν, ὧν ἀρχὴ „ἄστρα
-<note type="marginal">XLV</note> δὲ δὴ προβέβηκε“, καὶ πε</p></div>
-<div type="textpart" subtype="fragment" n="45"><p rend="merge"> ρί τινων ἄλλων παρά τε
+<note type="marginal">XLV</note> δὲ δὴ προβέβηκε“, καὶ πε</p>
+               </div>
+               <div type="textpart" subtype="fragment" n="45">
+                  <p rend="merge"> ρί τινων ἄλλων παρά τε
 τούτωι καὶ παρʼ Εὐριπίδηι, ἀπορίας δὲ καὶ ζητήματα
 καὶ ἐν τῆι συγκεφαλαιώσει τῶν εἰρημένων καὶ ἐπιφορᾶι
 <lb n="10"/> καὶ ἄλλα δή τινα προσάπτοντος, ἐπαινέσαντος
@@ -1031,8 +1151,10 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 περὶ χρησίμων διαλέγεσθαι, φησίν, εἰ μὲν ταὐτὸν δεῖ
 <lb n="20"/> λαβεῖν τῶι περὶ τοιούτων, ἐξ ὧν γίνεταί τι κέρδος
 ἐπʼ ἀργυρίωι λόγους στρέφειν δυναμένοις, καὶ τῷ</p>
-</div>
- <div type="textpart" subtype="fragment" n="46"><note type="marginal">XLVI</note><p rend="merge"> διαλέγεσθαι χάριν οὐσίας, εἶπε μανικὸν τελείως.“
+               </div>
+               <div type="textpart" subtype="fragment" n="46">
+                  <note type="marginal">XLVI</note>
+                  <p rend="merge"> διαλέγεσθαι χάριν οὐσίας, εἶπε μανικὸν τελείως.“
 Εἶτα δείξας τὸ μανικὸν οἰκείως τῆς ὑπολήψεως ταύτης·
 „εἰ δὲ περὶ τοιούτων, φησίν, ἐξ ὧν συνίσταται (es
 <lb n="25"/> fehlen 17 Zeilen) — — σοντας καὶ μεγάλου· οὔτε
@@ -1041,8 +1163,10 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 τοὺς φρονίμους καὶ ἐπιεικεῖς ἐμ πράγμασιν εἰς ὄχλους
 
 <pb n="41"/>
-βαδίζουσι καὶ ἐχθροὺς </p></div>
-<div type="textpart" subtype="fragment" n="47"><p rend="merge"> καὶ συκοφάντας καὶ ὅρκους <note type="marginal">XLVII</note>
+βαδίζουσι καὶ ἐχθροὺς </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="47">
+                  <p rend="merge"> καὶ συκοφάντας καὶ ὅρκους <note type="marginal">XLVII</note>
 καὶ μαρτυρίας ψευδεῖς· ἀπολέσαι γὰρ κρεῖττον ἀργύριον
 πολὺ καὶ χωρίον δικαστὴν γελάσαντα καὶ τοὺς μεγίστους
 φόβους τῆι τῆς ψυχῆς ἕξει φυγόντα τελέως ἢ τούτους
@@ -1055,8 +1179,10 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 τὸ πραγμάτευμα τὸ τῶν ῥητόρων ἐπαινετεῖν, ἐν οἷς
 διδάσκουσι συμβουλεύειν δηλώσας, εἶτα συνάρας τὸν
 οἰκεῖον καὶ περὶ τούτου τοῦ μέρους λόγον ἐπιφέρει
-καὶ ταῦτα, εἰς ἔλεγχον πάντα κατακλείσας </p></div>
-<div type="textpart" subtype="fragment" n="48"><p rend="merge"> τὸν <note type="marginal">XLVIII</note>
+καὶ ταῦτα, εἰς ἔλεγχον πάντα κατακλείσας </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="48">
+                  <p rend="merge"> τὸν <note type="marginal">XLVIII</note>
 λόγον· „Εἰ δʼ ἔφη ἄξιον ἐπιθαυμάζειν τοὺς ῥητορικοὺς <lb n="15"/>
 ὡς χρησίμως πολιτευομένους, οὐδʼ οὕτω κατὰ
 τὸ πρόχειρον ἕστηκεν ὁ λόγος αὐτοῦ· καὶ γὰρ μαγείρους
@@ -1073,8 +1199,10 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 
 <pb n="42"/>
 διερμηνεῦσαι σαφῶς. Τὸ δὲ δὴ μὴ κατʼ ἐπιστήμην</p>
-</div>
- <div type="textpart" subtype="fragment" n="49"><note type="marginal">XLIX</note><p rend="merge"> περαίνεσθαί τινας τῶν ῥητορικῶν λόγων ἀλλʼ ἐμπειρίᾳ
+               </div>
+               <div type="textpart" subtype="fragment" n="49">
+                  <note type="marginal">XLIX</note>
+                  <p rend="merge"> περαίνεσθαί τινας τῶν ῥητορικῶν λόγων ἀλλʼ ἐμπειρίᾳ
 καὶ στοχασμῶι πῶς δεῖ πάλιν λαβεῖν; Οὐ γὰρ
 αὐτό γε τοῦτο δήπου νοεῖν δεῖ, σημαίνεσθαι κατὰ τὴν,
 <lb n="5"/> λέξιν ταύτην τὸ μὴ συλλογισμοὺς διαλεκτικοὺς ἔχειν
@@ -1086,11 +1214,13 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 καὶ τὰς ἐπὶ πᾶσι λέξεις, εἴ τωι γενήσεται φίλον καὶ
 ταύτας ἔχειν, οὐκ ἀγνοοῦντες, ὅτι περί τινος ἄλλου
 δόξουσι καὶ οὐχὶ περὶ τοῦ προκειμένου καταγεγράφθαι.</p>
-<p>Καὶ Μητρόδωρος δʼ ἐν τῶι πρώτωι Περὶ ποιημάτων
+                  <p>Καὶ Μητρόδωρος δʼ ἐν τῶι πρώτωι Περὶ ποιημάτων
 <lb n="15"/> ἱκανῶς ἔοικεν παρεμφαίνειν τὸ τὴν σοφιστικὴν ῥητορικὴν
 τέχνην ὑπάρχειν. Διαλεγόμενος γὰρ πρός τινα τῶν
-<note type="marginal">L</note> περὶ </p></div>
-<div type="textpart" subtype="fragment" n="50"><p rend="merge"> ποιήματος συγγεγραφότων ἄλλα τε παρίστησι
+<note type="marginal">L</note> περὶ </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="50">
+                  <p rend="merge"> ποιήματος συγγεγραφότων ἄλλα τε παρίστησι
 πολλὰ καὶ δοξάζει καὶ ταῦτα· „Ἕως γὰρ ἄν τις ἐνεχθῆι
 πίστις περὶ τῆς τῶν ῥητορικῶν τέχνης, κακῶς ῥηθήσεσθαι
 <lb n="20"/> τὸ ἐκ ταύτης ῥήτορας συντελεῖσθαι, Ἔπειτα
@@ -1107,8 +1237,10 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 οὐθέν, ὧν φασιν ἔχειν τὰς τέχνας, συντελοῦντας·
 τοῦτο δʼ ἀνοήτως τίθεται, ὡς ἄλλου μὲν ὄν λόγον <lb n="10"/>
 ἔχειν καὶ σύστημα, πῶς ἂν καὶ ἐκ τίνων γίνοιτο καλλίστη
-ῥητορεία, ἄλλου δὲ τὸ καλῶς </p></div>
-<div type="textpart" subtype="fragment" n="51"><p rend="merge"> ῥητορεύειν“. Καὶ <note type="marginal">LI</note>
+ῥητορεία, ἄλλου δὲ τὸ καλῶς </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="51">
+                  <p rend="merge"> ῥητορεύειν“. Καὶ <note type="marginal">LI</note>
 μικρὸν προβάς πως μαρτυρεῖ τὸ „μηδένα πώποτε γενέσθαι
 ποητὴν ἐν τοσούτοις ἢ ῥήτορα ἱκανὸν ἀπό γε τῶν
 τεχνολογιῶν τῶν|ωνενηιειστενο <gap reason="omitted"/> τι| <gap reason="omitted"/> ῥητορικὴν δὲ <lb n="15"/>
@@ -1121,18 +1253,21 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 οὐ δυνάμενον ὁρᾶν <add cause="omitted">ἀλλʼ εἰς</add> ἔργον ἀποβλέπων
 καὶ αὐτὸς τὸ ἔργον συντελῶν τῆς τούτου
 τέχνης ὄψεται, μήπου τινιʼ αὐτὸν διαφεύγηι, διʼ ὧν
-ἂν βελτείων γίνοιτο ῥήτωρ ἢ ποητής“.</p><lb n="25"/>
-<p>Ἃ μὲν οὖν ἔχομεν ἐκ τῆς πραγματείας παραθέσθαι,
+ἂν βελτείων γίνοιτο ῥήτωρ ἢ ποητής“.</p>
+                  <lb n="25"/>
+                  <p>Ἃ μὲν οὖν ἔχομεν ἐκ τῆς πραγματείας παραθέσθαι,
 τοιαῦτʼ ἐστίν, ἐκπεφευγότα καὶ τὴν καταχρηστικὴν
-ὑπάκουσιν καὶ τὴν ὡς </p></div>
-<div type="textpart" subtype="fragment" n="52"><p rend="merge"> περὶ τῶν σοφιστικῶν παραγγελμάτων <note type="marginal">LII</note>
+ὑπάκουσιν καὶ τὴν ὡς </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="52">
+                  <p rend="merge"> περὶ τῶν σοφιστικῶν παραγγελμάτων <note type="marginal">LII</note>
 ὄντος τοῦ λόγου, αἳ δὴ τέχναι καὶ αὐταὶ
 
 <pb n="44"/>
 ὁμωνύμως λέγονται, καθάπερ εἴσεται πᾶς ὁ μετὰ συνέσεως
 καὶ τούτοις μέν, οἷς παρεθέμεθα, προσεσχηκώς,
 μᾶλλον δʼ ὁ τὰς συνόλας γραφὰς τῶν ἀνδρῶν ἀνειληφώς.</p>
-<p>Ἔνιοι δὲ τῶν νῦν ἐν τῆι Ῥόδωι διατριβόντων
+                  <p>Ἔνιοι δὲ τῶν νῦν ἐν τῆι Ῥόδωι διατριβόντων
 <lb n="5"/> γράφουσιν ἐν τῇ Κῶι καὶ πάλιν ἐν τῇ Ῥόδωι σχολαζόντων
 αὐτῶν ὑπὲρ τοῦ μὴ εἶναι τὴν ῥητορικὴν τέχνην,
 ἐν ἑκατέραι τῶν πόλεων ἀρτίως τινὰς ἄραντας Ἀθήνηθεν
@@ -1142,8 +1277,10 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 τοῦτο, φάσκειν τότε μὲν ἐν τῶι Συμποσίωι, τότε δʼ
 ἐν τοῖς Περὶ βίων· τὸν δʼ ἕτερον, ὅπου μέν, οὐκ ἔχειν
 εἰπεῖν, εἰδέναι δʼ ἔχοντας τὴν κρίσιν ταύτην ὑπὲρ τοῦ
-<note type="marginal">LIII</note> σοφιστικοῦ μέρους τοὺς ἐν ἄστει σχολάζοντας· </p></div>
-<div type="textpart" subtype="fragment" n="53"><p rend="merge"> ταὐτὰ
+<note type="marginal">LIII</note> σοφιστικοῦ μέρους τοὺς ἐν ἄστει σχολάζοντας· </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="53">
+                  <p rend="merge"> ταὐτὰ
 <lb n="15"/> δὲ ταῦτα καὶ. ἐν τῇ Ῥόδωι κεκραγέναι τινά, τῶν ἐκ
 τῆς Ἀττικῆς πάλιν παρόντων, καὶ κελεύειν μὴ φθονεῖν
 τοῖς ῥήτορσιν, εἰ τέχνην ἔχουσιν. δʼ αἰνιττόμενος
@@ -1159,9 +1296,11 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 τούτων ἐπαγγέλλεται ποιήσασθαι τὴν συναγωγήν. Ὅσα
 μὲν οὖν ἡμῖν ἁμαρτάνειν δοκεῖ κατὰ τὴν ἀντιγραφὴν
 ὁ φιλόσοφος οὗτος, οὐκ ὀκνήσομεν κατὰ διάληψιν
-ἀναγράψαι καὶ συνδιαπορῆσαι τοῖς ἡμῶν τε κἀκείνου </p><lb n="10"/>
-</div>
- <div type="textpart" subtype="fragment" n="54"><p rend="merge">φίλοις κοινοῖς. Ἐπὶ δὲ τοῦ παρόντος αὐτῶν πιμνησθησόμεθα <note type="marginal">LIV</note>
+ἀναγράψαι καὶ συνδιαπορῆσαι τοῖς ἡμῶν τε κἀκείνου </p>
+                  <lb n="10"/>
+               </div>
+               <div type="textpart" subtype="fragment" n="54">
+                  <p rend="merge">φίλοις κοινοῖς. Ἐπὶ δὲ τοῦ παρόντος αὐτῶν πιμνησθησόμεθα <note type="marginal">LIV</note>
 τῶν δοξάντων ἂν εἰς τὴν παροῦσαν σκέψιν.
 συντείνειν, οὐ προσκαρτερητικῶς — οὐδὲ γὰρ μὰ τὸν
 Κύνα δεῖται, καθάπερ ἐμαυτὸν ἐγὼ πείθω, συνανατάσεως
@@ -1179,8 +1318,10 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 <lb n="5"/> τριβῆι λέγειν κεῖσθαι καὶ συνηθείαι τινὸς φράσεως
 χωρὶς πραγματικῆς ἱστορίας· πρὸς δὲ τούτοις δοκεῖν
 αὐτῶι κατὰ τοὺς ἄνδρας οὐ δύνασθαι συστῆναι τέχνην </p>
-</div>
- <div type="textpart" subtype="fragment" n="55"><note type="marginal">LV</note><p rend="merge"> καθάπαξ <del>ὄχλων</del> πειστικήν· ἀρέσκειν δὲ καὶ τὴν προειρημένην
+               </div>
+               <div type="textpart" subtype="fragment" n="55">
+                  <note type="marginal">LV</note>
+                  <p rend="merge"> καθάπαξ <del>ὄχλων</del> πειστικήν· ἀρέσκειν δὲ καὶ τὴν προειρημένην
 μελέτην καὶ τριβὴν καὶ ἐμπειρίαν μήτε διὰ
 <lb n="10"/> παντὸς πείθειν μήτε πλεοναζόντως, καὶ διότι τοὺς οὐ
 ῥητορικοὺς λόγους συμβέβηκεν ἐνίοτε πείθειν μᾶλλον
@@ -1194,8 +1335,11 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 καὶ τοῦ τέλους τυγχάνουσι κατὰ τὴν τέχνης καὶ ἐπιστήμης
 <lb n="20"/> ἰδέαν· κ <gap reason="omitted"/> το <gap reason="omitted"/> ο καὶ πρὸς
 ι <gap reason="omitted"/> α|γ <gap reason="omitted"/> αιτ <gap reason="omitted"/> τα|π <gap reason="omitted"/> κα <gap reason="omitted"/> υτα <gap reason="omitted"/> δι|α <gap reason="omitted"/>
-<note type="marginal">LVI</note> <gap reason="omitted"/> αβαλ <gap reason="omitted"/> ν|των <gap reason="omitted"/> αεωσ <gap reason="omitted"/> σ. </p></div>
-<div type="textpart" subtype="fragment" n="56"><p rend="merge">ται, βραχέως εἴρηται,
+                     <note type="marginal">LVI</note>
+                     <gap reason="omitted"/> αβαλ <gap reason="omitted"/> ν|των <gap reason="omitted"/> αεωσ <gap reason="omitted"/> σ. </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="56">
+                  <p rend="merge">ται, βραχέως εἴρηται,
 τί νομίζουσι· κἂν ἔχηι τις καθʼ ὑπόθεσιν διὰ
 παντὸς πείθουσαν τοὺς πολλοὺς δύναμιν, οὐκ ἀγαθῶν
 <lb n="25"/> ἀλλὰ κακῶν μεγάλων αἰτίαν εἶναι ταύτην·. Καὶ τούτων
@@ -1212,8 +1356,9 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 ἔφη γινώσκειν, ὅπου λέγουσιν οἱ περὶ τὸν Ἐπίκουρον.
 Οὔκουν ἐπιμελεῖς ἦσαν, ὧν ἂν διακούσωσιν, οί μαθηταὶ <lb n="5"/>
 ἢ κριταὶ μᾶλλον τοῦ Ῥυδίου τοῦ μέχρι τῆς </p>
-</div>
- <div type="textpart" subtype="fragment" n="57"><p rend="merge">τήμερον ἡμέρας γράφοντος, μὴ δύνασθαι παρά τινος <note type="marginal">LVII</note>
+               </div>
+               <div type="textpart" subtype="fragment" n="57">
+                  <p rend="merge">τήμερον ἡμέρας γράφοντος, μὴ δύνασθαι παρά τινος <note type="marginal">LVII</note>
 ἀκοῦσαι, ποῦ λέγεται· κατακειμένης δὲ τῆς φιλοπευστίας
 καὶ τῆς ἀνατάσεως τῆς περὶ τούτων τῶν τόπων ἐξῆν
 πρὸς τοὺς Εἰκάσιν τοιαῦτα δὴ ἀναδιδόντας ἢ καθʼ <lb n="10"/>
@@ -1226,9 +1371,11 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 αὐτοὺς ψῆφον ἐμ πελάγει ζητεῖν, ἀλλʼ ὅπου
 φαμὲν καὶ διʼ ὧν φαμεν δηλοῦσθαι τὸ τὴν σοφιστικὴν
 ῥητορικὴν τέχνην ὑπάρχειν, παρατεθείκαμεν, ἃ κἂν
-δεικνύηται μὴ κυροῦντα τὴν ἡμετέραν κρίσιν, ἀλλὰ </p><lb n="20"/>
-</div>
- <div type="textpart" subtype="fragment" n="58"><p rend="merge">χρείαν γʼ ἕξει λόγου τυχεῖν, καὶ πᾶσιν τοῖς καθʼ <note type="marginal">LVIII</note>
+δεικνύηται μὴ κυροῦντα τὴν ἡμετέραν κρίσιν, ἀλλὰ </p>
+                  <lb n="20"/>
+               </div>
+               <div type="textpart" subtype="fragment" n="58">
+                  <p rend="merge">χρείαν γʼ ἕξει λόγου τυχεῖν, καὶ πᾶσιν τοῖς καθʼ <note type="marginal">LVIII</note>
 ἡμᾶς φιλοσοφοῦσι καὶ τὰς χώρας ὑποδείκνυμεν αὐτῶν,
 καὶ διότι τέχνην τὴν σοφιστικὴν καλουμένην ῥητορικὴν
 λέγομεν, οὐχὶ τῆς ῥητορικῆς μέρος· οὐ γὰρ ἔστιν
@@ -1246,12 +1393,15 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 θεοὺς αὐτῶν — τί γὰρ ἔμελλον, οὔτʼ ἐγδοθείσης κατʼ
 αὐτῶν γραφῆς τῆς τε πρὸς αὐτοὺς ὑπομνηματικῆς
 <lb n="10"/> οὔσης; — ἀλλʼ ἵνʼ ἐγδηλῶμεν, ὡς ἔνιοι θαύματα
-<note type="marginal">IXa</note> ποιοῦσιν </p></div>
-<div type="textpart" subtype="fragment" n="9a"><p rend="merge"> ἐν φιλοσοφίαι, καὶ ταῦτα πρὸς τούτους
+<note type="marginal">IXa</note> ποιοῦσιν </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="9a">
+                  <p rend="merge"> ἐν φιλοσοφίαι, καὶ ταῦτα πρὸς τούτους
 ἀνατεινόμενοι ὑπογράψομεν. „Ἐρωτῶ γάρ, ὦ βέλτιστε
 ἀνδρῶν, φήσεις, τῶν ἀπάντων, τίς ὁ ἐκεῖνʼ ἀναγράψας
 ἐστίν;“ Οὐ Ζήνωνγε. —</p>
-<lb n="15"/><p>Τοοῦ δὲ ἐν τῆι φιλοσοφίαι τῆι καθʼ ἡμᾶς ἀνεστραμμένου
+                  <lb n="15"/>
+                  <p>Τοοῦ δὲ ἐν τῆι φιλοσοφίαι τῆι καθʼ ἡμᾶς ἀνεστραμμένου
 καὶ τῶν ἡγουμένων τοὺς Ἰσοκρατείους λόγους
 καὶ τοὺς ὁμοίους οὐκ ἀμεθόδως καὶ σχεδιάζεσθαι καὶ
 γράφεσθαι κατʼ ἄκραν ἐλενκτικόν ἐστι τὸ „δοκεῖν
@@ -1271,8 +1421,9 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 εἶναι τέχνην οἱ περὶ τὸν Ἐπίκουρον ἀποδεικνύουσιν, <lb n="5"/>
 ἕνεκα ταύτης μόνον λέγεσθαι νοεῖν, οὐχὶ καὶ χάριν
 τοῦ μηδʼ ἄλλης τινὸς μεθόδου σοφιστὰς εἶναι ἐνπεί</p>
-</div>
- <div type="textpart" subtype="fragment" n="10a"><p rend="merge">ρους, καὶ τῶν ἄλλων ὁτιοῦν ταὐτὸ τοῦτο λέγομεν <note type="marginal">Xa</note>
+               </div>
+               <div type="textpart" subtype="fragment" n="10a">
+                  <p rend="merge">ρους, καὶ τῶν ἄλλων ὁτιοῦν ταὐτὸ τοῦτο λέγομεν <note type="marginal">Xa</note>
 παρίστασθαι· πλὴν εἰ προσάγεται ταῦθʼ ὅμως διὰ τῆς
 γραφῆς καὶ τἆλλα περισ<add cause="omitted">σ</add>ομυθεὶ διοικεῖται, παρέντες <lb n="10"/>
 καὶ παραλεξάμενοι πάντα τὸ ὅλον σχεδὸν βυβλίον
@@ -1280,23 +1431,25 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 πρὸς αὐτούς, διʼ οὗ φησιν ῥητῶς ἄτεχνα τὰ μέρη
 ὑπολαμβάνεσθαι τῆς ῥητορικῆς .κ .επαμα. ων | με <gap reason="omitted"/>
 θε. αι αηοσιοιθ. | ετι <gap reason="omitted"/> ανα <gap reason="omitted"/> ειδεχον | οὐχ ὅλον <lb n="15"/>
-<gap reason="omitted"/> νταδιην | εγαφηι <gap reason="omitted"/> α <gap reason="omitted"/> ἐξ ἐπῶν σχεδὸν
+                     <gap reason="omitted"/> νταδιην | εγαφηι <gap reason="omitted"/> α <gap reason="omitted"/> ἐξ ἐπῶν σχεδὸν
 τρισχιλίων κατανοήσομεν ἐξετάζεσθαι ἀναμφιλέκτως.</p>
-<p>Ἵνα δὲ παριστῆι διελεγχόμενον ὁ Ἐπίκουρος τὸν
+                  <p>Ἵνα δὲ παριστῆι διελεγχόμενον ὁ Ἐπίκουρος τὸν
 νεανίσκον τὸν ἐκ μελέτης ῥητορικῆς ὡς ἂν δύναμιν
 ἐπαγγελλόμενον τοῦ σοφιστεύειν τὴν πανηγυρικὴν καὶ <lb n="20"/>
-
-<pb n="50"/>
+                     <pb n="50"/>
 τὴν πολειτικήν, ποιεῖ τὸν Ἰδομενέα μετὰ τὸ παρρησία
 ἔστωʼ μέχρι τῶν ‘ἔγνωστο ὑμεῖνʼ ἐξαιτούμενον συγγνώμην,
 εἰ νέος ὢν θρασύνεται, καὶ συνάπτοντά τινʼ
 αὐτὸν τοιαῦτα κατὰ λέξιν·</p>
-<lb n="5"/><p>„Θαυμαστὸν δή, εἰ σὺ μὲν οὐδὲν ἐξείργου διὰ τὴν
+                  <lb n="5"/>
+                  <p>„Θαυμαστὸν δή, εἰ σὺ μὲν οὐδὲν ἐξείργου διὰ τὴν
 ἡλικίαν, ὡς αὐτὸς ἂν φήσαις, τῶν κατὰ σεαυτὸν ἀπάντων
 νέος ὢν πρεσβυτῶν ἀνδρῶν καὶ ἐνδόξων πολὺ ἐν</p>
-</div>
- <div type="textpart" subtype="fragment" n="11a"><note type="marginal">XIa</note><p rend="merge"> τῆι ῥητορικῆι δυνά μει ὑπερέχειν.“</p>
-<p>Ὡς δʼ ἄν αὐτοῦ ἔφησας τοῦθʼ, οὗπερ ἠθέλησας·
+               </div>
+               <div type="textpart" subtype="fragment" n="11a">
+                  <note type="marginal">XIa</note>
+                  <p rend="merge"> τῆι ῥητορικῆι δυνά μει ὑπερέχειν.“</p>
+                  <p>Ὡς δʼ ἄν αὐτοῦ ἔφησας τοῦθʼ, οὗπερ ἠθέλησας·
 <lb n="10"/> παρρησία ἔστωʼ καὶ ἃ ἐπηνέγκατο· εἶτα· „θαυμαστὸν
 δή φημι, εἰ σὺ μὲν οὐδὲν ἐξείργου διὰ τὴν ἡλικίαν
 ἐν τῆι ῥητορικῆι δυνάμει προέχειν, ὃ δοκεῖ τριβῆς
@@ -1304,7 +1457,7 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 πράγματα, ὡς ἔχει, διὰ τὴν ἡλικίαν ἔστιν ἐξείργεσθαι,
 <lb n="15"/> οὗ μᾶλλον ἄν δόξαι ἐπιστήμη αἰτία εἶναι ἤπερ τριβὴ
 καὶ συνήθεια“.</p>
-<p>‘Διὰ ταύτην, φασίν, τὴν ἀπόφασιν τὴν ῥητορικὴν
+                  <p>‘Διὰ ταύτην, φασίν, τὴν ἀπόφασιν τὴν ῥητορικὴν
 
 <pb n="51"/>
 ἀπλῶς ἄπασαν αὐτῷ ἀναπέφανται τριβῆι περιγίνεσθαι
@@ -1319,14 +1472,15 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 δέ γε τέχνηι ἡ ῥητορικὴ συνείχετο ἤτοι ἅποσα ἢ καὶ <lb n="10"/>
 μέρος αὐτῆς, κωφὸς ἂν ὁ λόγος ἐγίνετο τοιοῦτος ὤν·
 ‘εἰ τὸ μεθόδωι γινόμενον οὐ κωλύεται περὶ νέον</p>
-</div>
- <div type="textpart" subtype="fragment" n="12a"><p rend="merge">ὑπάρχειν, πολλῶι μᾶλλον οὐδὲ τὸ μεθό δωι’. Καὶ γὰρ <note type="marginal">XIIa</note>
+               </div>
+               <div type="textpart" subtype="fragment" n="12a">
+                  <p rend="merge">ὑπάρχειν, πολλῶι μᾶλλον οὐδὲ τὸ μεθό δωι’. Καὶ γὰρ <note type="marginal">XIIa</note>
 οὐδὲ πολειτικὸν καὶ δικανικὸν ἐρεῖ τις αὐτὸν λαμβάνειν
 μέρος· καὶ γὰρ ῥητῶς τὴν ῥητορικὴν λέγει καὶ <lb n="15"/>
 πρὸς τὸν ἐπαγγελλόμενον σοφιστὴν πάντʼ ἔχειν τὰ
 μέρη· διόπερ οὐκ ἀποχωρήσαντος, γελοίως ὁ Ἐπίκουρός
 ἐστι τῆι μεταβάσει κεχρημένοςʼ.</p>
-<p>Τοιούτων δή τινων ὡς εἰπεῖν δυνάμει γεγραμμένων
+                  <p>Τοιούτων δή τινων ὡς εἰπεῖν δυνάμει γεγραμμένων
 
 <pb n="52"/>
 τὸ μὲν ὑπολαβεῖν, ὅτι τὴν ἀπόφασιν ποιεῖ ταύτην ὁ
@@ -1344,8 +1498,10 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 ἀθετούμενον ὑπὸ τῶν ἀνδρῶν ἐπιστήμας τινὰς πολλῆς
 τριβῆς ἐπιδεῖσθαι καὶ συνηθείας — πῶς κωφότερος
 <lb n="15"/> Ἐπίκουρος γείνεται ἐκ τούτων; πῶς δʼ εἰ τὸ μὲν πολειτικὸν</p>
-</div>
- <div type="textpart" subtype="fragment" n="13a"><note type="marginal">XIIIa</note><p rend="merge"> εἶδος ἢ μέρος τῆς ῥητορικῆς τριβῆς δεῖται
+               </div>
+               <div type="textpart" subtype="fragment" n="13a">
+                  <note type="marginal">XIIIa</note>
+                  <p rend="merge"> εἶδος ἢ μέρος τῆς ῥητορικῆς τριβῆς δεῖται
 πολλῆς καὶ συνηθείας, τὸ δὲ σοφιστικὸν ἐπιστήμης
 μόνης, κωφὸς ὁ λόγος γίνεται; πρὸς θεῶν δηλωσάτω
 τις ἡμεῖν. Οὐ γὰρ δὴ τοιοῦτός ἐστιν, καθάπερ οὗτός
@@ -1357,7 +1513,7 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 Εἰ γὰρ τὰ δύο κατακρατῆσαι ἄμα νέῳ δυνατόν,
 ἐνδεχόμενον δήπου καὶ περιγίνεσθαι νέῳ
 θἄτερον.</p>
-<p>“Των <gap reason="omitted"/> αι φυλαξ. μ. ιδειλφω — — μὴ θεῖναι <lb n="5"/>
+                  <p>“Των <gap reason="omitted"/> αι φυλαξ. μ. ιδειλφω — — μὴ θεῖναι <lb n="5"/>
 πρὸς θεῶν ‘ὃ τριβῆς ἐστιν καὶ συνηθείας πολλῆςʼ
 καὶ οὕτωι προσάγειν τὸ προκείμενον, προσθεῖναι δὲ
 
@@ -1368,12 +1524,14 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 ἐπετίθετο, καὶ διὰ τὸν στοχασμόν· καὶ γὰρ
 <lb n="5"/> τοῦτʼ οὐ μόνον ἐπὶ τῆς ῥητορικῆς ἀλλὰ καὶ ἐπὶ τῆς
 φρονήσεως ἐτήρησε, κἀκεῖ τὸ “δοκεῖ’ προσθείς· καὶ</p>
-</div>
- <div type="textpart" subtype="fragment" n="14a"><note type="marginal">XIVa</note><p rend="merge"> τὸ ‘δοκεῖ’ δεξόμεθα δηλαδὴ καὶ ἐπὶ τοῦ πολειτι κοῦ
+               </div>
+               <div type="textpart" subtype="fragment" n="14a">
+                  <note type="marginal">XIVa</note>
+                  <p rend="merge"> τὸ ‘δοκεῖ’ δεξόμεθα δηλαδὴ καὶ ἐπὶ τοῦ πολειτι κοῦ
 μέρους, ὃ πανταχῆι κεκράγασιν ὥς ἐστιν ἄτεχνον, καὶ
 τὸ πιθανὸν τῆς ἐπιχειρήσεως οὐκ ἐγ δισταζομένου
 <lb n="10"/> προσάγοιτʼ ἄν ἀλλʼ ἐξ ὁμολογουμένου’.</p>
-<p>Καὶ τίνα τρόπον, ἐὰν τούτοις συνβοηθήσωμεν,
+                  <p>Καὶ τίνα τρόπον, ἐὰν τούτοις συνβοηθήσωμεν,
 εὐγνώμονες, οὐκ εὐήθεις ὑποληφθησόμεθα; Τό τε
 γὰρ ὑποστέλλεσθαι τἀληθῆι λέγειν καὶ διστάζειν πῃ
 περὶ τῶν εὐδοκούντων ἑαυτῶι τοῦ ῥητορικοῦ στοχαζόμενον
@@ -1389,39 +1547,44 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 καὶ τέχνης, εἴτε μηθὲν ἔχει τέχνης ἴδιον, καὶ ἀληθές
 <lb n="25"/> ἐστι καὶ χαρακτηρικῶς τοῖς ἀνδράσιν σύνηθες ποιεῖν·
 καὶ γὰρ τετηρημένον καὶ ἐπὶ τῆς φρονήσεως· ἐν
-<note type="marginal">XVa</note> αὐτοῖς τε τοῖς ἔπειτʼ ἐγίνετο ἂν στοχασμὸς</p></div>
-<div type="textpart" subtype="fragment" n="15a"><p rend="merge"> τοῦ ῥητορικοῦ,
+<note type="marginal">XVa</note> αὐτοῖς τε τοῖς ἔπειτʼ ἐγίνετο ἂν στοχασμὸς</p>
+               </div>
+               <div type="textpart" subtype="fragment" n="15a">
+                  <p rend="merge"> τοῦ ῥητορικοῦ,
 τῆς ‘δοκεῖʼ φωνῆς κἀνταῦθα παρατιθεμένης· ὁ
 δʼ ἐπαγγελλόμενος ῥητὰς παρατεθήσεσθαι διαλέκτους
 
 <pb n="55"/>
 οὐ λιπαρεῖν ὀφείλει, τοῦτʼ ἐγδέχεσθαι τοὺς ἀκούοντας,
 ὃ βούλεται, καὶ ἄλλων δηλουμένων.</p>
-<p>‘Καὶ δὴ γὰρ οὐ φῇς, μὴ ὑποστελλόμενον, οἷον
+                  <p>‘Καὶ δὴ γὰρ οὐ φῇς, μὴ ὑποστελλόμενον, οἷον
 Ἐπίκουρον λέγεις, αὐτῶι τούτωι συνκατατίθεσθαι τοῖς
-ἄτεχνον τὴν ῥητορικὴν λέγουσιν;ʼ</p><lb n="5"/>
-<p>Τύτε δὴ καὶ σαφῶς ἀρέσκειν φημὶ ἐν ἄλλοις τέχνην
+ἄτεχνον τὴν ῥητορικὴν λέγουσιν;ʼ</p>
+                  <lb n="5"/>
+                  <p>Τύτε δὴ καὶ σαφῶς ἀρέσκειν φημὶ ἐν ἄλλοις τέχνην
 εἶναι κατὰ τὴν ἀλήθειαν, ὃ ἐπὶ στοχασμὸν τοῦ ῥήτορος
 ἀνάγειν μανικόν.</p>
-<p>‘Ἀλλὰ δεξόμεθα τὸ ‘δοκεῖʼ καὶ ἐπὶ τῆς πολειτικῆςʼ.</p>
-<p>Εἰ θέλεις, δεχώμεθα, μηδὲν φοβηθέντες, εἰ <lb n="10"/>
+                  <p>‘Ἀλλὰ δεξόμεθα τὸ ‘δοκεῖʼ καὶ ἐπὶ τῆς πολειτικῆςʼ.</p>
+                  <p>Εἰ θέλεις, δεχώμεθα, μηδὲν φοβηθέντες, εἰ <lb n="10"/>
 αὐτὴν ἐν ἄλλοις ἀμέθοδον· καὶ γὰρ ἡμεῖς τὸ
 ‘δοκεῖ’ νῦν ἐπὶ τῆς σοφιστικῆς προσδεχόμεθα κεῖσθαι
 τῶι μὴ παρὰ τοῦτον νῦν κυροῦσθαι μηθὲν τὸν λόγον,
 καίπερ ἐμ πολλοῖς τέχνης λεγομένης.</p>
-<p>Εἰ δʼ ἠρώτησέν τις καθιριαν <gap reason="omitted"/> ι Ἐπίκουρον, εἴπτερ <lb n="15"/>
+                  <p>Εἰ δʼ ἠρώτησέν τις καθιριαν <gap reason="omitted"/> ι Ἐπίκουρον, εἴπτερ <lb n="15"/>
 τρανώσειε τοὺς λόγους, τὸ ποῖον εἶναι εἶπεν τεχνικὸν
 καὶ τὸ ποῖον ἄτεχνον, οὐ κατὰ τὸ πιθανὸν ἐξ ὁμολογουμένου,
 κἂν περὶ ἄλλου δίσταγμα προσῆι, προσαγαγεῖν
 
 <pb n="56"/>
 ἂν ἔφη τὸ προκείμενον· διστάζεται μὲν γάρ, εἰ</p>
-</div>
- <div type="textpart" subtype="fragment" n="16a"><note type="marginal">XVIa</note><p rend="merge"> πᾶν ἐν τριβῆι καὶ συνη θείαι, σύμφωνον δʼ ἐστὶν
+               </div>
+               <div type="textpart" subtype="fragment" n="16a">
+                  <note type="marginal">XVIa</note>
+                  <p rend="merge"> πᾶν ἐν τριβῆι καὶ συνη θείαι, σύμφωνον δʼ ἐστὶν
 τὸ δεῖσθαι πολλῆς τριβῆς καὶ συνηθείας· τὸ τοίνυν
 ‘δοκεῖ’ τῶι δισταζομένωι προσθεὶς ἐκ τοῦ, κἂν τὸ δισταζόμενον
 <lb n="5"/> παρεθῇ, διδομένου προσάγει τὸ προκείμενον.</p>
-<p>Ἐφεξῆς δὲ πρὸς τὸ συστῆσαι, διότι δή τις τέχνη
+                  <p>Ἐφεξῆς δὲ πρὸς τὸ συστῆσαι, διότι δή τις τέχνη
 κατʼ Ἐπτίκουρόν ἐστιν ἡ ῥητορική, τοῦθʼ ἡμεῖς παρετίθεμεν
 λέγοντες· „εἰ μόνην τριβὴν αὐτὴν ἐνόμιζεν
 εἶναι καὶ συνήθειαν, οὐκ ἂν τὸ ‘δοκεῖʼ προσέθηκεν·,
@@ -1430,7 +1593,8 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 οὐ συνίεμεν ἡμεῖς ἑλληνιστὶ διαλεγομένων, εἰ δὲ τὸ
 δεύτερον, διὰ τίνʼ αἰτίαν αὐτοὶ χρῶνται ἀμφιβόλοις
 λέξεσιν ἐν τοῖς πρὸς ἡμᾶς ἐλέγχοις;</p>
-<lb n="15"/><p>Παραστήσω δὲ μὴ μόνον ἐπʼ αὐτῶν τῶν προκειμένων
+                  <lb n="15"/>
+                  <p>Παραστήσω δὲ μὴ μόνον ἐπʼ αὐτῶν τῶν προκειμένων
 ἀσάφειαν ὑπάρχειν, ἀλλʼ Ἐπίκουρον τοῖς ἐφεξῆς
 περὶ φρονήσεως λόγοις ,,οὗ μᾶλλον ἂν δόξειεν ἐπιστήμη
 αἰτία εἶναι ἤπερ τριβή“ πάλιν ἀμφιβόλους τεθεικέναι
@@ -1439,8 +1603,10 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 καὶ διʼ ἐπιστήμης τινὸς καὶ διὰ συνηθείας δὲ καὶ
 διὰ τριβῆς περιγεινόμενον, μᾶλλον δὲ διὰ τῆς τριβῆς
 καὶ συνηθείας ἢ διὰ τῆς τέχνης, τὸ δὲ φρονήσεως διʼ </p>
-</div>
- <div type="textpart" subtype="fragment" n="17a"><note type="marginal">XVII</note><p rend="merge"> ἀμφοτέρων μέν, μᾶλλον δὲ διʼ ἐπιστήμης ἤπερ διὰ
+               </div>
+               <div type="textpart" subtype="fragment" n="17a">
+                  <note type="marginal">XVII</note>
+                  <p rend="merge"> ἀμφοτέρων μέν, μᾶλλον δὲ διʼ ἐπιστήμης ἤπερ διὰ
 <lb n="25"/> συνηθείας καὶ τριβῆς, δηλούσας δὲ τὸ τὴν φρόνησιν
 μὲν διʼ ἀμφοτέρων, μᾶλλον δὲ διὰ θἀτέρου, τὴν δὲ
 ῥητορικὴν διὰ μόνου θἀτέρου, καὶ τρίτον τὸ καὶ τὴν
@@ -1461,9 +1627,11 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 γὰρ αὐτῆι φορᾶι ἂν εἴπαιμεν· πολλῆς μὲν φιλοπονίας
 ἐστὶ δηλονότι τὸ φιλοσοφεῖν καὶ ἡ φιλοσοφία, πολλῆς
 δʼ ἄγαν εὐτυχίας ἡ βασιλεία, καὶ πολλῆς ἐστι κακοπραγίας
-πτωχεία, καὶ πολλῆς ἐστι συνηθείας φιλία· </p><lb n="15"/>
-</div>
- <div type="textpart" subtype="fragment" n="18a"><p rend="merge">καίτοι οὕτω γʼ οὐ δεὶς ἐγένετο ἀγροῖκος, ὥσθʼ ὑπολαβεῖν <note type="marginal">XVII</note>
+πτωχεία, καὶ πολλῆς ἐστι συνηθείας φιλία· </p>
+                  <lb n="15"/>
+               </div>
+               <div type="textpart" subtype="fragment" n="18a">
+                  <p rend="merge">καίτοι οὕτω γʼ οὐ δεὶς ἐγένετο ἀγροῖκος, ὥσθʼ ὑπολαβεῖν <note type="marginal">XVII</note>
 ἡμᾶς λέγειν διὰ μόνης φιλοπονίας τὸ φιλοσοφεῖν
 καὶ τὴν φιλοσοφίαν περιγίνεσθαι καὶ τὴν βασιλείαν
 διὰ μόνης εὐτυχίας καὶ τἆλλα παραπλησίως. Οὕτως
@@ -1484,8 +1652,10 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 μέν· „Θαυμαστόν φαμεν, εἰ σὺ μὲν οὐδὲν ἐξείργου διὰ
 τὴν ἡλικίαν, τῶν ἀπάντων δὲ νέος ὢν πρεσβυτέρων
 <lb n="5"/> ἀνδρῶν καὶ ἐνδόξων πολὺ ἐν τῆι ῥητορικῆι δυνάμει
-<note type="marginal">XIXa</note> ὑπερέχειν ἕλε </p></div>
-<div type="textpart" subtype="fragment" n="19a"><p rend="merge"> γες“. Τἀνδρὸς δέ· „Θαυμαστὸν δή, εἰ
+<note type="marginal">XIXa</note> ὑπερέχειν ἕλε </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="19a">
+                  <p rend="merge"> γες“. Τἀνδρὸς δέ· „Θαυμαστὸν δή, εἰ
 σὺ μὲν οὐθὲν ἐξείργου διὰ τὴν ἡλικίαν ἐν τῆι ῥητορικῆι
 δυνάμει προέχειν“. Ἐπέζευκται δὲ τούτοις· ,,ὃ δοκεῖ
 τριβῆς εἶναι καὶ συνηθείας πολλῆς“. Οὐκοῦν δυσὶν
@@ -1505,8 +1675,10 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 ἀπαρκεῖν καὶ τὴν ἐπιστήμην, τοῦτο κατά γε τὴν φράσιν
 οἷόν τʼ ἄν ἦν. Ἀλλʼ οὐκ ἄν, οἶμαι, τὸ τοιοῦτο
 <lb n="25"/> φήσαι τις καὶ περὶ νέον δὴ καὶ ἀληθῶς εἶναι τὸ
-<note type="marginal">XXa</note> πάντων  </p></div>
-<div type="textpart" subtype="fragment" n="20a"><p rend="merge"> ἐν τῇ τέχνῃ προέχειν. Εἰ μέντοι τὰ κατὰ
+<note type="marginal">XXa</note> πάντων  </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="20a">
+                  <p rend="merge"> ἐν τῇ τέχνῃ προέχειν. Εἰ μέντοι τὰ κατὰ
 
 <pb n="59"/>
 τὴν τέχνην τριβῆς δεῖται καὶ συνηθείας πολλῆς καὶ
@@ -1522,19 +1694,20 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 ἀπομαχόμενος ἔτυχες, συκοφαντικὰς δὲ παρακαλεῖς προχειρότητας.
 — Καίτοι τί ἄν τις ἐπὶ πλεῖον διατρίβοι;
 σχεδὸν γὰρ ὑπέρκαιρα καὶ ταῦτα πρὸς τὸν τόπον.</p>
-<p>Ἀ μέντοι παρὰ Μητορδώρωι γράφεται μαρτύρια,
+                  <p>Ἀ μέντοι παρὰ Μητορδώρωι γράφεται μαρτύρια,
 τὴν δόξαν οὐ μᾶλλον ἐλέγξειεν ἂν τὴν ἡμετέραν ἢ <lb n="15"/>
 τούτου καὶ τονον <gap reason="omitted"/> λειν ἀπὸ τοιούτων τὸν
-Ἐπίκουρον (es fehlen 3 Ζeilen) προς <gap reason="omitted"/> υοιν αὐ</p></div>
-<div type="textpart" subtype="fragment" n="21a"><p rend="merge">τοῖς <note type="marginal">XXI</note>
-
-<pb n="60"/>
+Ἐπίκουρον (es fehlen 3 Ζeilen) προς <gap reason="omitted"/> υοιν αὐ</p>
+               </div>
+               <div type="textpart" subtype="fragment" n="21a">
+                  <p rend="merge">τοῖς <note type="marginal">XXI</note>
+                     <pb n="60"/>
 ανα <gap reason="omitted"/> σεξα <gap reason="omitted"/> εἴων ἄλλων ἄλλαις συνημμένων, καὶ
 αὐτοὶ δὲ κατὰ διάληψιν, ὡς ἔφαμεν, ἁψόμεθα καὶ
 τούτων. Νυνεὶ δὲ τὰ κατεπείγοντα καὶ τὰ κατάλοιπα
 τῆς διεξόδου προσθέντες παραγράψαιμεν ἂν τὸν ὑπομνηματισμόν.</p>
-<lb n="5"/>
-<p>Τὸ τοίνυν οὐκ ἀποτελεῖν κατὰ τοὺς ἄνδρας τὴν
+                  <lb n="5"/>
+                  <p>Τὸ τοίνυν οὐκ ἀποτελεῖν κατὰ τοὺς ἄνδρας τὴν
 σοφιστικὴν ῥητορικὴν τεχνείτας οὐδʼ ἔργον τῆς ἐμπράκτου
 καὶ πολειτικῆς ῥητορικῆς δηλοῖ μὲν καὶ τὸ
 πρῶτον περὶ ποιημάτων διὰ πλειόνων — ἀποχρήσει
@@ -1547,8 +1720,10 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 τὴν πολιτικὴν τὰς διατριβάς, πολλάκις δὲ καὶ μεταβαλλούσας,
 ἃ προφέρεσθαι νῦν ἐμ μέσωι κείμενα πᾶσιν
 ματαῖον φαίνεται καὶ περιττόν. Ἀλλὰ μὴν καὶ ταύτην
-<note type="marginal">XXIIa</note> τὴν τοῦ δημηγορεῖν καὶ δίκας λέγειν </p></div>
-<div type="textpart" subtype="fragment" n="22a"><p rend="merge">ἐνπειρίαν ἀπό
+<note type="marginal">XXIIa</note> τὴν τοῦ δημηγορεῖν καὶ δίκας λέγειν </p>
+               </div>
+               <div type="textpart" subtype="fragment" n="22a">
+                  <p rend="merge">ἐνπειρίαν ἀπό
 <lb n="20"/> τινος τριβῆς καὶ τῶν ἐν ταῖς πόλεσιν ἱστορίας περιγίνεσθαι
 πολλῶν ἐν τῆι πραγματείᾳ διασαφούντων,
 ἀρκέσει τὰ παρὰ Μητροδώρωι σαφῶς διδάσκοντα·
@@ -1564,7 +1739,7 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 „τί γὰρ ὑπόκειται, ὃ θεωρεία ποιεῖ, ὥσπερ ἡ περὶ τὰς
 αἱρέσεις καὶ φυγὰς καὶ περὶ τὰς πολειτικὰς ἐκ τῆς
 ἱστορίας παρακολουθήσεις“;</p>
- <p>Κεκορυφωμένου δ᾿ ἡμεῖν καὶ τοῦδε τοῦ κεφαλαίου <lb n="10"/>
+                  <p>Κεκορυφωμένου δ᾿ ἡμεῖν καὶ τοῦδε τοῦ κεφαλαίου <lb n="10"/>
 χωρῶμεν ἐπὶ τὸ τρίτον. Ἦν δὲ τοῦτο πιστοῦσθαι,
 διότι δὴ καὶ κατ᾿ ἀλήθειαν ἡ σοφιστικὴ ῥητορικὴ
 τέχνη τίς ἐστιν περί τε τὰς ἐπιδείξεις, οἵας αὐτοὶ
@@ -1572,9 +1747,10 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 γράφουσίν τε καὶ σχεδιάζουσιν. Φαμὲν τοίνυν τὸ <lb n="15"/>
 μεθοδικὸν ἔχειν αὐτήν, οὐ πολὺ δὲ καθάπερ οὐδὲ
 τὴν ποιητικήν.1)</p>
-<gap reason="omitted"/>
-</div>
-<div type="textpart" subtype="fragment" n="32a"><p>Ἀλλ᾿ ἐπὶ τὸ τελευταῖον ἐπανάγωμεν τῶν κεφαλαίων, <note type="marginal">XXXIIa</note>, <lb n="20"/>
+                  <gap reason="omitted"/>
+               </div>
+               <div type="textpart" subtype="fragment" n="32a">
+                  <p>Ἀλλ᾿ ἐπὶ τὸ τελευταῖον ἐπανάγωμεν τῶν κεφαλαίων, <note type="marginal">XXXIIa</note>, <lb n="20"/>
 ὅπερ ἦν περὶ τοῦ τὴν εὐδοκιμοῦσαν ἐν δήμοις 20
 καὶ δικαστηρίοις δύναμιν οὐχ ὑπ᾿ ἄλλης περιγίνεσθαι
 τοῖς ὅλοις ἐπιστήμης. Πρὸς μὲν οὖν τὰς ὑπολήψεις
@@ -1587,10 +1763,9 @@ fast leere Ζeilen) —, ἐπειδὴ τὰς μὲν λεγομένας τε�
 Ἐπειδὴ οὖν ἡ σοφιστικὴ κατʼ οὐδὲν συντείνει πρὸς
 <lb n="5"/> τὸ τὴν δύναμιν ἔχειν, περαίνεται τὸ χωρὶς ἐπιστήμης
 ἔχειν αὐτὴν τοὺς ἔχοντας.</p>
-</div>
-</div>
-
-</div>
-</body>
-</text>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
 </TEI>

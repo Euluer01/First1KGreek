@@ -1,100 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">De fistulis</title>
-                <author>Hippocrates</author>
-                <editor>Émile Littré</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De fistulis</title>
+            <author>Hippocrates</author>
+            <editor>Émile Littré</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0627.tlg030.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0627.tlg030.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="fre">Oeuvres complètes d'Hippocrate</title>
-                        <author>Hippocrates</author>
-                        <editor>Émile Littré</editor>
-                        <imprint>
-                            <publisher>Baillière</publisher>
-                            <pubPlace>Paris</pubPlace>
-                            <biblScope unit="volume">6</biblScope>
-                            <biblScope unit="pp" from="448" to="460">448-460</biblScope>
-                            <date>1849</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/ucm.5321352149?urlappend=%3Bseq=458">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0627.tlg030.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="fre">Oeuvres complètes d'Hippocrate</title>
+                  <author>Hippocrates</author>
+                  <editor>Émile Littré</editor>
+                  <imprint>
+                     <publisher>Baillière</publisher>
+                     <pubPlace>Paris</pubPlace>
+                     <biblScope unit="volume">6</biblScope>
+                     <biblScope unit="pp" from="448" to="460">448-460</biblScope>
+                     <date>1849</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/ucm.5321352149?urlappend=%3Bseq=458">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-                <language ident="lat">Latin</language>
-                <language ident="fre">French</language>            
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0627.tlg030.1st1K-grc1">
-                <pb n="448"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΠΕΡΙ ΣΥΡΙΓΓΩΝ.</head>
-                    <p>1. Σύριγγες γίνονται μὲν ὑπὸ φλασμάτων καὶ φυμάτων, γίνονται <lb/>δὲ καὶ ὑπὸ
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+            <language ident="fre">French</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0627.tlg030.1st1K-grc1">
+         <pb n="448"/>
+         <div n="1" type="chapter">
+            <head>ΠΕΡΙ ΣΥΡΙΓΓΩΝ.</head>
+            <p>1. Σύριγγες γίνονται μὲν ὑπὸ φλασμάτων καὶ φυμάτων, γίνονται <lb/>δὲ καὶ ὑπὸ
                         ἐρεσίης, καὶ ἱππασίης, ὅταν ἀθροισθῇ ἐν τῷ γλουτῷ <lb/>αἷμα πλησίον τῆς
                         ἕδρης· σηπόμενον γὰρ νέμεται ἐς τὰ μαλθακὰ, <lb/>ἅτε ὑγροῦ ἐόντος τοῦ τε
                         ἀρχοῦ, καὶ τῆς σαρκὸς μαλθακῆς, ἐν ᾗ νέμεται, <lb/>ἔστ’ ἂν τὸ φῦμα ῥήξῃ καὶ
@@ -104,13 +112,13 @@
                         ὑπὸ πληγῆς, <lb/>ἢ ὑπὸ πτώματος, ἢ ὑπὸ τρώματος, ἢ ἱππασίης, ἢ ἐρεσίης, ἢ
                         ὅσα <lb/>τοιουτότροπά ἐστι· ξυνίσταται γὰρ αἷμα· σηπόμενον δὲ ἐκπυΐσκεται·
                         <lb/>ὑπὸ δὲ τοῦ ἐκπυϊσκομένου πάσχει ἅπερ ἐπὶ τῶν φυμάτων εἴρηται. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>2. Πρῶτον μὲν οὖν ὅταν τι τοιοῦτον αἴσθῃ φυόμενον φῦμα, τάμνειν <lb/>ὡς
+         </div>
+         <div n="2" type="chapter">
+            <p>2. Πρῶτον μὲν οὖν ὅταν τι τοιοῦτον αἴσθῃ φυόμενον φῦμα, τάμνειν <lb/>ὡς
                         τάχιστα ὠμὸν πρὶν ἢ διαπυῆσαι ἐς τὸν ἀρχόν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>3. Ἢν δὲ νοσέοντα ἤδη τὴν σύριγγα παραλάβῃς, λαβὼν σκορόδου <lb/>φύσιγγα
+         </div>
+         <div n="3" type="chapter">
+            <p>3. Ἢν δὲ νοσέοντα ἤδη τὴν σύριγγα παραλάβῃς, λαβὼν σκορόδου <lb/>φύσιγγα
                         νεαρὴν, ἀνακλίνας τὸν ἄνθρωπον ὕπτιον, τὰ σκέλεα διαγαγὼν <lb/>τὸ μὲν ἔνθα,
                         τὸ δὲ ἔνθα, τὴν φύσιγγα καθιέναι ἔστ’ ἂν προσκόψῃ, <lb/>μετρῆσαί τε τὸ βάθος
                         τῆς συρίγγος τῇ φύσιγγι, καὶ σεσέλιος <lb/>δὲ ῥίζαν κόψας ὡς λεπτοτάτην,
@@ -130,9 +138,9 @@
                         <lb/>σαρκός· καὶ τρίψαι στυπτηρίην μετὰ ταῦτα, καὶ πλήσας τὴν βάλανον
                         <lb/>καὶ ἐς τὸν ἀρχὸν ἐμβαλὼν, ἐᾷν ἄχρις οὗ ἡ στυπτηρίη ὑγρὴ γένηται·
                         <lb/>τὸν δὲ ἀρχὸν σμύρνῃ ἀλείφειν, ἄχρις οὗ ἂν δοκέῃ <lb/>ξυμπεφυκέναι· </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>4. Ἑτέρη θεραπείη· ὠμόλινον λαβὼν ὡς λεπτότατον, συμβάλλειν <lb/>ὅσον
+         </div>
+         <div n="4" type="chapter">
+            <p>4. Ἑτέρη θεραπείη· ὠμόλινον λαβὼν ὡς λεπτότατον, συμβάλλειν <lb/>ὅσον
                         σπιθαμιαῖον πεντάπλουν, καὶ ξυμπεριλαβεῖν ἱππείην τρίχα· <lb/>ἔπειτα
                         ποιησάμενος μήλην κασσιτερίνην ἐπ’ ἄκρου τετρημένην, <lb/>ἐνείρας ἐς τὴν
                         μήλην τὴν ἀρχὴν τοῦ ὠμολίνου συμβεβλημένου, καθιέναι <lb/>τὴν μήλην ἐς τὴν
@@ -160,23 +168,23 @@
                         ξυμπέσοι <lb/>ἂν, οὔτε τὸ μὲν αὐτῆς ὑγιανθείη ἂν, τὸ δὲ πάλιν ξυμπληρωθείη,
                         <lb/>ἀλλ’ ἐν ἑωυτῇ πᾶσα ὑγιὴς ἔσται. Ἐν τῇ θεραπείῃ δὲ προσαιονᾷν ὕδατι
                         <lb/>πολλῷ θερμῷ, καὶ λιμοκτονέειν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>5. Ἢν δὲ μὴ διαβεβρώκῃ ἡ σύριγξ, προμηλώσας μήλῃ, τέμνε <lb/>ἕως ἂν διέλθῃ,
+         </div>
+         <div n="5" type="chapter">
+            <p>5. Ἢν δὲ μὴ διαβεβρώκῃ ἡ σύριγξ, προμηλώσας μήλῃ, τέμνε <lb/>ἕως ἂν διέλθῃ,
                         καὶ ἐπίπασσε ἄνθος χαλκοῦ, καὶ ἐᾷν ἐπὶ πέντε ἡμέρας· <lb/>κατάχεε δὲ ὕδωρ
                         θερμόν· καὶ ἐπάνω ὕδατι φυρῶν ἄλφιτον <lb/>κατάπασσε, καὶ φύλλα τεύτλων
                         ἐπίδει· ἐπὴν δὲ ἐκπέσῃ τὸ ἄνθος <lb/>τοῦ χαλκοῦ, καὶ καθαρὸν ᾖ τὸ ἕλκος τῆς
                         σύριγγος, ἰῶ ὥσπερ τὴν <lb/>ἔμπροσθεν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>6. Ἢν δὲ ἐν χωρίῳ ᾖ, ὃ μὴ οἷόν τε τάμνειν, βαθείη δὲ καὶ ἡ <lb/>σύριγξ, ἄνθει
+         </div>
+         <div n="6" type="chapter">
+            <p>6. Ἢν δὲ ἐν χωρίῳ ᾖ, ὃ μὴ οἷόν τε τάμνειν, βαθείη δὲ καὶ ἡ <lb/>σύριγξ, ἄνθει
                         χαλκοῦ καὶ σμύρνῃ καὶ λίτρῳ οὔρῳ διεὶς, κλύζειν, <lb/>καὶ ἐς τὸ στόμα τῆς
                         σύριγγος μολύβδιον ἐντιθέναι, ὅπως μὴ ξυμφύηται· <lb/>κλύζειν δὲ πτεροῦ
                         σύριγγα προσδήσας πρὸς κύστιν, καὶ <pb n="454"/> καθεὶς ἐς τὴν σύριγγα, πρὸς
                         τοῦτο διάγειν κλύζων. Ὑγιὴς δὲ οὐ γίνεται, <lb/>ἢν μὴ τμηθῇ. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>7. Ἢν ὁ ἀρχὸς φλεγμήνῃ, καὶ ὀδύνη ἔχῃ καὶ πυρετὸς, καὶ ἐς <lb/>ἄφοδον θαμινὰ
+         </div>
+         <div n="7" type="chapter">
+            <p>7. Ἢν ὁ ἀρχὸς φλεγμήνῃ, καὶ ὀδύνη ἔχῃ καὶ πυρετὸς, καὶ ἐς <lb/>ἄφοδον θαμινὰ
                         καθίζῃ, καὶ μηδὲν ὑποχωρέῃ, καὶ ὑπὸ τοῦ φλέγματος <lb/>δοκέῃ ἐξιέναι ἡ ἕδρη,
                         καὶ ἐνίοτε στραγγουρίη ἐπιλαμβάνῃ, τοῦτο τὸ <lb/>νόσημα γίνεται, ὅταν φλέγμα
                         ἐς τὸν ἀρχὸν καταστηρίξῃ ἐκ τοῦ σώματος. <lb/>Ξυμφέρει δὲ τὰ θερμά· δύναται
@@ -201,15 +209,15 @@
                         πρὸς ταῦτα ἀπαλλάσσηται <lb/>τῆς ὀδύνης, ἀρκείτω· ἢν δὲ μὴ, πίσαι τὸ
                         μηκώνιον τὸ <lb/>λευκόν· ἢν δὲ μὴ, ἄλλο ὅ τι φλέγμα καθαίρει· διαιτᾷν δὲ,
                         ἕως ἂν <lb/>φλεγμαίνῃ, ῥυφήμασι κούφοισιν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="8">
-                    <p>8. Ἡ δὲ στραγγουρίη ἐπιπίπτει ἐκ τῶνδε· θερμαινομένη ἡ κύστις <lb/>ἐκ τοῦ
+         </div>
+         <div n="8" type="chapter">
+            <p>8. Ἡ δὲ στραγγουρίη ἐπιπίπτει ἐκ τῶνδε· θερμαινομένη ἡ κύστις <lb/>ἐκ τοῦ
                         ἀρχοῦ προσάγεται τῇ θερμότητι φλέγμα· ὑπὸ δὲ τοῦ φλέγματος <lb/>στραγγουρίη
                         γίνεται. Ἢν μὲν οὖν ἅμα τῇ νούσῳ παύηται, φιλέει <lb/>γὰρ ὡς τὰ πολλὰ οὕτω
                         γίνεσθαι· ἢν δὲ μὴ, δίδου τῶν φαρμάκων <lb/>τῶν στραγγουρικῶν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="9">
-                    <p>9. Ἢν δὲ ὁ ἀρχὸς ἐκπίπτῃ, ἀνώσας σπόγγῳ μαλθακῷ, καὶ καταχρίσας <lb/>κοχλίῃ,
+         </div>
+         <div n="9" type="chapter">
+            <p>9. Ἢν δὲ ὁ ἀρχὸς ἐκπίπτῃ, ἀνώσας σπόγγῳ μαλθακῷ, καὶ καταχρίσας <lb/>κοχλίῃ,
                         τῶν χειρῶν δήσας, ἐκκρέμασον ὀλίγον χρόνον, <lb/>καὶ εἴσεισιν. Ἢν δὲ μεῖζον
                         ἐκπέσῃ καὶ μὴ μένῃ ἔνδον, διαζώσας ἐν <lb/>τῇσι λαγόσι, καὶ ὑφεὶς ὄπισθεν ἐκ
                         τοῦ διαζώματος ταινίην, ὤσας <lb/>ἔσω τὸν ἀρχὸν, προσθεῖναι σπόγγον μαλθακὸν
@@ -245,9 +253,9 @@
                         ἑψῆσαι ἐν οἴνῳ κεκρημένῳ, <lb/>καὶ καταπλάσσειν· τὴν δέ γε ξηρὴν τρίψαντα
                         καταπλάσσειν <lb/>ὁμοίως. Ἄλλο· σικύου πέπονος τὸ ἔνδον τρίψας λεῖον
                         καταπλάσσειν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="10">
-                    <p>10. Ἢν δὲ γένηται ὀδύνη καὶ μὴ φλεγμήνῃ, λίτρον ὀπτήσας <pb n="460"/>
+         </div>
+         <div n="10" type="chapter">
+            <p>10. Ἢν δὲ γένηται ὀδύνη καὶ μὴ φλεγμήνῃ, λίτρον ὀπτήσας <pb n="460"/>
                         ἐρυθρὸν, καὶ τρίψας λεῖον, καὶ στυπτηρίην, καὶ ἅλας φώξας, καὶ <lb/>τρίψας
                         λείους, συμμίξαι ἴσον ἑκάστου· εἶτα πίσσῃ ξυμμίξας ὡς <lb/>βελτίστῃ, ἐς
                         ῥάκος ἐναλείψας, ἐντιθέναι καὶ καταδεῖν. Ἄλλο· καππάριος <lb/>φύλλα χλωρὰ
@@ -261,8 +269,7 @@
                         <lb/>φλεγμήναντος, διαχρίειν τῷ φαρμάκῳ, ὅπη ἡ ῥητίνη καὶ τὸ ἔλαιον <lb/>καὶ
                         ὁ κηρὸς καὶ ἡ μολύβδαινα καὶ τὸ στέαρ· ὡς θερμότατα διεῤῥήθησαν
                         <lb/>καταπλάττεσθαι. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

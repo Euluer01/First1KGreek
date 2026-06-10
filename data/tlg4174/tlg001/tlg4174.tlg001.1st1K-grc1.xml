@@ -1,119 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">
-<fileDesc>
-<titleStmt>
-<title xml:lang="lat">In Dionysii periegetae orbis descriptionem</title>
-<author>Anonymous</author>
-<editor>Karl Müller</editor>
-<funder>Harvard Library Arcadia Fund</funder>
-<principal>Gregory Crane</principal>
-<respStmt>
-<persName xml:id="DDD">Digital Divide Data</persName>
-<resp>Corrected and encoded the text</resp>
-</respStmt>
-<respStmt>
-<persName>Gregory Crane</persName>
-<resp>Editor-in-Chief, Perseus Digital Library</resp>
-</respStmt>
-<respStmt>
-<persName>Matt Munson</persName>
-<resp>Project Manager (University of Leipzig)</resp>
-</respStmt>
-<respStmt>
-<persName>Annette Gessner</persName>
-<resp>Project Assistant (University of Leipzig)</resp>
-</respStmt>
-<respStmt>
-<persName>Thibault Clérice</persName>
-<resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
-</respStmt>
-<respStmt>
-<persName>Bruce Robertson</persName>
-<resp>Technical Advisor</resp>
-</respStmt>
-</titleStmt>
-<publicationStmt>
-<authority>Harvard College Library</authority>            
-                
-<idno type="filename">tlg4174.tlg001.1st1K-grc1.xml</idno>
-        
-<availability>
-<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-</availability>
-<date>2017</date>
-<publisher>Harvard College Library</publisher>
-<pubPlace>United States</pubPlace>
-</publicationStmt>
-<sourceDesc>
-<listBibl>
-<biblStruct>
-<monogr>
-
-<title xml:lang="lat">Geographi Graeci Minores</title>
-<editor>
-<persName>
-    <name>Karl Müller</name>
-</persName>
-</editor>
-<imprint>
-<publisher>Ambroise-Firmin Didot</publisher>
-<pubPlace>Paris</pubPlace>
-<date>1861</date>
-</imprint>
-<biblScope unit="volume">2</biblScope>
-</monogr>
-    <ref target="https://archive.org/details/bub_gb_63VfAAAAMAAJ/page/408/mode/2up">The Internet Archive</ref>
-</biblStruct>
-</listBibl>
-</sourceDesc>
-</fileDesc>
-
-
-<encodingDesc>
-
-<p>Text encoded in accordance with the latest EpiDoc standards</p>
-<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">In Dionysii periegetae orbis descriptionem</title>
+            <author>Anonymous</author>
+            <editor>Karl Müller</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg4174.tlg001.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2017</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg4174.tlg001.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Geographi Graeci Minores</title>
+                     <editor>
+                        <persName>
+                           <name>Karl Müller</name>
+                        </persName>
+                     </editor>
+                     <imprint>
+                        <publisher>Ambroise-Firmin Didot</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date>1861</date>
+                     </imprint>
+                     <biblScope unit="volume">2</biblScope>
+                  </monogr>
+                  <ref target="https://archive.org/details/bub_gb_63VfAAAAMAAJ/page/408/mode/2up">The Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards</p>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
 Architecture.</p>
-
-
-
-<refsDecl n="CTS">
-
-<cRefPattern n="section" matchPattern="(\w+)"
-replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-
-
-
-
-
-</refsDecl>
-
-</encodingDesc>
-<profileDesc>
-<langUsage>
-<language ident="grc">Greek</language>
-<language ident="lat">Latin</language>
-<language ident="deu">German</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change who="Chiara Palladino">created the file</change>
-</revisionDesc>
-</teiHeader>
-<text>
-<body>
-        <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg4174.tlg001.1st1K-grc1">
-                
-                
-              
-                
-<div type="textpart" subtype="section" n="1" corresp="urn:cts:greekLit:tlg0084.tlg001:1-18">
-<pb n="409"/>
-<head>ΠΑΡΑΦΡΑΣΙΣ.</head>
-
-<p>1—18. Τὰ περὶ τὴν γῆν καὶ τὸν μέγαν πόντον ᾄδειν
+         <refsDecl n="CTS">
+            <cRefPattern n="section"
+                         matchPattern="(\w+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-section"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+            <language ident="deu">German</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="Chiara Palladino">created the file</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg4174.tlg001.1st1K-grc1">
+         <div n="1" corresp="urn:cts:greekLit:tlg0084.tlg001:1-18" type="section">
+            <pb n="409"/>
+            <head>ΠΑΡΑΦΡΑΣΙΣ.</head>
+            <p>1—18. Τὰ περὶ τὴν γῆν καὶ τὸν μέγαν πόντον ᾄδειν
 ἀρχόμενος καὶ τοὺς ποταμοὺς καὶ τὰς πόλεις καὶ τῶν
 ἀνδρῶν τὰ διὰ πλῆθος κρίνεσθαι, εἴτουν διαχωρίζετθαι,
 μὴ δυνάμενα ἔθνη, πρῶτον τοῦ βαθυρρόου ὠκεανοῦ
@@ -143,9 +131,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 διαχώρισμα· τοῦ γὰρ Ἑλλησπόντου νοτιώτερον. Τὸ
 δὲ νότιον μέρος Ἑλλήσποντός ἐστι. Σῆμα δέ, ὃ ἔστι
 διαχώρισμα, ὑπερτετάνυσται νοτιώτερον ἐπὶ τὸ Ἡρακλεωτικὸν
-στόμα.</p></div>
-<div type="textpart" subtype="section" n="2" corresp="urn:cts:greekLit:tlg0084.tlg001:19-26">
-<p>19—26. Ἄλλοι δὲ πάλιν ταῖς ἠπείροις τὴν γῆν οὕτω
+στόμα.</p>
+         </div>
+         <div n="2"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:19-26"
+              type="section">
+            <p>19—26. Ἄλλοι δὲ πάλιν ταῖς ἠπείροις τὴν γῆν οὕτω
 διαχωρίζουσιν. Ἰσθμὸς ἄνω τετάνυσται ὑπέρτατος
 τῆς Ἀσιάδος γαίης, ἀναμεταξὺ τῆς Κασπίας θαλάσσης
 καὶ τοῦ Εὐξείνου πελάγους ἰσθμὸς δὲ λέγεται στενὴ γῆ
@@ -154,9 +145,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἰσθμὸς μακρὸς καὶ μέγας ἐπὶ τὸν νότον σύρεται ἐπὶ τοῦ
 Ἀραβικοῦ κόλπου καὶ μεταξὺ τῆς Αἰγύπτου, ὅστις δὴ
 ἀπὸ τῆς Ἀσιάτιδος γῆς τὴν Λιβύηνχωρίζει. Τοιαῦτα
-μὲν οἱ ἄνθρωποι περὶ τῶν ὅρων τῆς γῆς διετάξαντο.</p></div>
-<div type="textpart" subtype="section" n="3" corresp="urn:cts:greekLit:tlg0084.tlg001:27-35">
-<p>27—35. Πανταχοῦ δὲ τοῦ ἀκαμάτου, ὃ ἔστι τοῦ
+μὲν οἱ ἄνθρωποι περὶ τῶν ὅρων τῆς γῆς διετάξαντο.</p>
+         </div>
+         <div n="3"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:27-35"
+              type="section">
+            <p>27—35. Πανταχοῦ δὲ τοῦ ἀκαμάτου, ὃ ἔστι τοῦ
 ἀεικινήτου, ὠκεανοῦ ὁ ῥοῦς φέρεται, εἷς μὲν ὑπάρχων,
 πολλαῖς δὲ ἐπωνυμίαις ἀρηρὼς, ἤγουν ἡρμοσμένος.
 Καὶ οὗτος μὲν ὁ ὠκεανὸς περὶ τὴν ἐσχατιὰν τοῦ Λοκροῦ
@@ -169,9 +163,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ψυχρὸν τῶν τόπων, ὡς πηγνυμένου αὐτοῦ</add>, καὶ νεκρὸν
 εἶπον διὰ τὸ ἀσθενὲς τοῦ ἡλίου· βραδέως γὰρ ἢ ὀλίγον
 ὑπεράνω ἐκείνης τῆς θαλάσσης φαείνει, πανταχοῦ
-δὲ ὑπὸ τῶν σκιερῶν νεφελῶν παχύνεται καὶ πυκνοῦται.</p></div>
-<div type="textpart" subtype="section" n="4" corresp="urn:cts:greekLit:tlg0084.tlg001:36-42">
-<p>36—42. Ὅπου δὲ τὸ πρῶτον ἐν τῇ ἀνατολῇ ἀνατέλλει
+δὲ ὑπὸ τῶν σκιερῶν νεφελῶν παχύνεται καὶ πυκνοῦται.</p>
+         </div>
+         <div n="4"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:36-42"
+              type="section">
+            <p>36—42. Ὅπου δὲ τὸ πρῶτον ἐν τῇ ἀνατολῇ ἀνατέλλει
 τοῖς ἀνθρώποις τὸ πρὸς ἕω μέρος, ἠῷον καὶ Ἰνδικὸν καλεῖται
 τὸ κῦμα ἐκεῖνο τῆς θαλάσσης, τουτέστι τὸ μέρος
 ἐκεῖνο τοῦ ὠκεανοῦ. Τὸ δὲ πρὸς νότον κλίμα Ἐρυθραῖον
@@ -183,9 +180,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 μακρὸν ἀγκῶνα τῆς ἀοικήτου.</add> Οὕτω, καθὼς
 εἴπομεν, περιτρέχει ὁ ὠκεανὸς πᾶσαν τὴν γῆν,
 τοιοῦτος ὑπάρχων καὶ τοσαῦτα ἐπὶ τοῖς ἀνθρώποις
-ὀνόματα ἔχων.</p></div>
-<div type="textpart" subtype="section" n="5" corresp="urn:cts:greekLit:tlg0084.tlg001:43-57">
-<p>43—57. Κόλπους δὲ ἔνθα κἀκεῖσε ἐκβάλλει ἔσωθεν εἰς
+ὀνόματα ἔχων.</p>
+         </div>
+         <div n="5"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:43-57"
+              type="section">
+            <p>43—57. Κόλπους δὲ ἔνθα κἀκεῖσε ἐκβάλλει ἔσωθεν εἰς
 τὴν γῆν, μικροὺς μὲν πολλοὺς, τέτταρας δὲ μεγίστους.
 Καὶ πρῶτος μὲν ὅστις τὴν ἑσπερίαν τὴν καθ᾿  ἡμᾶς
 θάλασσαν ποιεῖ, συρόμενος ἀπὸ τῆς Λιβύης ἕως τῆς
@@ -202,9 +202,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἐξογκοῦται καὶ αὔξεται πλησίον τοῦ Περσικοῦ, νοτιώρερον
 τὸ ῥεῦμα συστρέφων τοῦ Εὐξείνου Πόντου.
 Τοσοῦτοι μὲν τοῦ βαθυρρόου ὠκεανοῦ οἱ μείζονές εἰσι
-κόλποι· ἄλλοι δὲ ἄπειροι καὶ πολλοὶ γεγένηνται.</p></div>
-<div type="textpart" subtype="section" n="6" corresp="urn:cts:greekLit:tlg0084.tlg001:58-68">
-<p>58—68. Ἀρτίως δὲ τῆς ἑσπερίας ἤτοι τῆς δυτικῆς
+κόλποι· ἄλλοι δὲ ἄπειροι καὶ πολλοὶ γεγένηνται.</p>
+         </div>
+         <div n="6"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:58-68"
+              type="section">
+            <p>58—68. Ἀρτίως δὲ τῆς ἑσπερίας ἤτοι τῆς δυτικῆς
 τῆς καθ᾿  ἡμᾶς θαλάσσης τὸν πόρον λέξω, ἥτις ἐπὶ πάσας
 τὰς ἠπείρους, ὃ ἔστιν ἐπὶ τὰ τρία τῆς οἰκουμένης
 μέρη, τοῖς λοξοῖς πελάγεσιν ἐπιστρέφεται, τουτέστι
@@ -224,9 +227,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 διεσπαρμένων, Ἀτλάντων ἢ τῶν Ἀτλαντικῶν πόρων·
 ὅπου ὁ Ἄτλας μέγιστον τῆς Λιβύης ὄρος ὡς χάλκειος
 καὶ ὑψηλὸς κίων εἰς οὐρανὸν ἀνέδραμε, πυκνοῖς καὶ
-ἰσχυροῖς νέφεσι καλυπτόμενος.</p></div>
-<div type="textpart" subtype="section" n="7" corresp="urn:cts:greekLit:tlg0084.tlg001:60-75">
-<p>60—75. Ἀρχὴν δὲ ποιουμένοις ἡμῖν τοῦ λέγειν ἔστω
+ἰσχυροῖς νέφεσι καλυπτόμενος.</p>
+         </div>
+         <div n="7"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:60-75"
+              type="section">
+            <p>60—75. Ἀρχὴν δὲ ποιουμένοις ἡμῖν τοῦ λέγειν ἔστω
 τάξις αὕτη. (τοῦτο γὰρ συνυπακούεται). Ἀπὸ τῶν Γαδείρων,
 ἤτοι Ἡρακλέους στηλῶν, πρῶτος μὲν ὁ
 Ἰβηρικὸς περικέχυται πόντος, ὅστις καὶ τῆς Εὐρώπης
@@ -240,9 +246,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἐνταῦθα ἄποικοί εἰσιν, ὥσπερ καὶ οἱ ἐν τῇ Ἀσίᾳ
 Ἴβηρες τῶν ἐν ταύτῃ</add>. Ὅπου καὶ ἡ Μασσαλία γῆ,
 ἤτοι πόλις, εὐλίμενος, ὅρμον περιφερῆ ἢ ἐπίδρομον
-ἔχουσα.</p></div>
-<div type="textpart" subtype="section" n="8" corresp="urn:cts:greekLit:tlg0084.tlg001:76-83">
-<p>76-83. Ἑξῆς δὲ μετὰ τὸν Γαλατικὸν κόλπον ἡ Λιγυστικὴ
+ἔχουσα.</p>
+         </div>
+         <div n="8"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:76-83"
+              type="section">
+            <p>76-83. Ἑξῆς δὲ μετὰ τὸν Γαλατικὸν κόλπον ἡ Λιγυστικὴ
 θάλασσα σύρεται, ὅπου οἱ τῶν Ἰταλῶν υἱοὶ
 διαπαντὸς ἐπὶ ταῖς ἠπείροις νέμονται, μέγα ἀπὸ τοῦ
 Διὸς τὸ κράτος ἔχοντες καὶ ἀρχὴν μεγίστην, ἀρξάμενοι
@@ -254,9 +263,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ὃς ἦν υἱὸς Ὀδυσσέως καὶ Κίρκης.</add> Ἑξῆς δὲ
 μετὰ τὴν Λιγυστικὴν θάλασσαν τὸ περὶ Κύρνον πέλαγος
 τὸ ἁλμυρὸν ὕδωρ προχέει. Ἐπὶ τούτῳ δὲ ὁ Σαρδόνιος
-πόντος ἔνδοθι ἀναβράζει, ἤτοι ἦχον ἀποτελεῖ.</p></div>
-<div type="textpart" subtype="section" n="9" corresp="urn:cts:greekLit:tlg0084.tlg001:84-91">
-<p>84—91. Μετὰ δὲ τὸν Σαρδόνιον πόντον τῆς Τυρσηνίδος
+πόντος ἔνδοθι ἀναβράζει, ἤτοι ἦχον ἀποτελεῖ.</p>
+         </div>
+         <div n="9"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:84-91"
+              type="section">
+            <p>84—91. Μετὰ δὲ τὸν Σαρδόνιον πόντον τῆς Τυρσηνίδος
 κῦμα θαλάσσης ἀπὸ βορέου εἰς νότον παραπέπταται·
 μετὰ δὲ τὸ Τυρσηνικὸν πέλαγος ὁ Σικελὸς ῥόος ἢ
 Σικελικὸς πόντος ἀπὸ δύσεως πρὸς ἀνατολὰς κυρτὸς ἢ
@@ -270,9 +282,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 Κριοῦ μέτωπον ταύτην εἶπον <add>διὰ τὴν κροῦσιν καὶ
 τὴν ὑπήχησιν τῶν ὑδάτων</add>. Ἐκτέταται δὲ τὸ Σικελικὸν
 πέλαγος ἐπὶ τὴν Ἰαπυγίαν <add>Ἰαπυγία δὲ ἐκλήθη
-ἀπὸ Ἰαπύγου τινός</add>, ἥτις μέρος ἐστὶ τῆς Καλαβρίας.</p></div>
-<div type="textpart" subtype="section" n="10" corresp="urn:cts:greekLit:tlg0084.tlg001:92-102">
-<p>92—102. Ἐκεῖθεν δὲ πλατυνθεῖσα ἐκτείνεται ἡ Ἀδριὰς
+ἀπὸ Ἰαπύγου τινός</add>, ἥτις μέρος ἐστὶ τῆς Καλαβρίας.</p>
+         </div>
+         <div n="10"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:92-102"
+              type="section">
+            <p>92—102. Ἐκεῖθεν δὲ πλατυνθεῖσα ἐκτείνεται ἡ Ἀδριὰς
 ἅλμη, ἤτοι πλατύτερον σύρεται τὸ Ἀδριατικὸν πέλαγος,
 πρὸς βορρᾶν, παρεκκλίνει δὲ ὀλίγον πρὸς ἑσπέραν
 ἢ δυσμὰς κατὰ τὸν ἐνδότατον κόλπον· ἥντινα
@@ -291,9 +306,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 τινα τὸ ῥεῦμα τεκμαίρεται, οἱονεὶ τελειοῖ, καὶ
 τὴν κυματώδη κίνησιν ἔχει, καὶ ἡ μὲν Τυρσηνικὴ
 νεύει ἐπὶ ζέφυρον, ἡ δὲ Σικελὴ τὸν ὅρμον καὶ τὴν
-ὁλκὴν ἔχει ἐπὶ νότον, ἡ Ἀδριὰς δὲ ἐπὶ τὸν εὖρον.</p></div>
-<div type="textpart" subtype="section" n="11" corresp="urn:cts:greekLit:tlg0084.tlg001:103-111">
-<p>103—111. Ὑπεράνω δὲ τῆς Σικελικῆς γῆς ὁ Λιβυκὸς
+ὁλκὴν ἔχει ἐπὶ νότον, ἡ Ἀδριὰς δὲ ἐπὶ τὸν εὖρον.</p>
+         </div>
+         <div n="11"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:103-111"
+              type="section">
+            <p>103—111. Ὑπεράνω δὲ τῆς Σικελικῆς γῆς ὁ Λιβυκὸς
 πόντος τὸ κῦμα κορύσσων καὶ αὔξων ἕλκεται ἔσω Λιβύης
 εἰς κόλπον μέγιστον, ἤτοι τὴν ἑτέραν Σύρτιν,
 τουτέστι τὴν νοτίαν, συστρέφων, ἥντινα καὶ μείζονα
@@ -308,9 +326,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἐπὶ τὴν ἀνατολὴν διαδέχεται πέλαγος, μέχρι τῆς
 Σαλμωνίδος ἄκρης, ἥντινα τὸ ἀνατολικώτερον τῆς
 Κρήτης ἀκρωτήριον λέγουσιν εἶναι, τὸ δὲ Κριοῦ μέτωπον
-τὸ δυτικώτερον.</p></div>
-<div type="textpart" subtype="section" n="12" corresp="urn:cts:greekLit:tlg0084.tlg001:112-129">
-<p>112—129. Δύο δὲ ἐφεξῆς προσωτέρω πυκνοῦνται, ὃ
+τὸ δυτικώτερον.</p>
+         </div>
+         <div n="12"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:112-129"
+              type="section">
+            <p>112—129. Δύο δὲ ἐφεξῆς προσωτέρω πυκνοῦνται, ὃ
 ἔστιν αὔξονται καὶ εἰς ὕψος αἴρονται, πελάγη, ὑπὸ τῆς
 τοῦ Θρᾳκικοῦ βορρᾶ ἐλαυνόμενα πνοῆς, ὀρθοῦ φυσῶντος
 αὐτοῦ, ἐπειδὴ ἐξεναντίας κεῖται αὐτῶν. Τὴν δὲ
@@ -332,7 +353,7 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 κατ᾿  εὐθὺ φέρεται, διὸ καὶ κατὰ τὴν ἕρπυσιν δράκοντι
 
 <pb n="411"/>
-<add>ἀπεικάζεται.</add> Καθάπερ γὰρ δράκων καταπληκτικοὺς
+               <add>ἀπεικάζεται.</add> Καθάπερ γὰρ δράκων καταπληκτικοὺς
 ὀφθαλμοὺς ἔχων σκολιὸς καὶ βραδὺς συρόμενος συστρέφεται,
 ὑπὸ δὲ τούτου ἐρχομένου ἡ τοῦ ὄρους ἄκρα
 πᾶσα βαρύνεται, οὕτω καὶ ἐκεῖνος ὁ Ἰσσικὸς κόλπος
@@ -343,9 +364,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 <add>αἵτινές εἶσι Μελανίππαι, Γάγαι καὶ Κορύθαλαι</add>.
 Σημεῖον δὲ καὶ πέρας ὁ Ἰσσικὸς κόλπος πρὸς τὸν ζέφυρον
 ἢ κατὰ τὴν δύσιν πόρρωθεν τὰ Πάταρα ἔχει,
-καὶ τοῦτο τὸ τέλος τοῦ Σιδονίου πελάγους.</p></div>
-<div type="textpart" subtype="section" n="13" corresp="urn:cts:greekLit:tlg0084.tlg001:130-139">
-<p>130—139. Ἐξ ἐκείνου οὖν τοῦ Ἰσσικοῦ κόλπου τῆς
+καὶ τοῦτο τὸ τέλος τοῦ Σιδονίου πελάγους.</p>
+         </div>
+         <div n="13"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:130-139"
+              type="section">
+            <p>130—139. Ἐξ ἐκείνου οὖν τοῦ Ἰσσικοῦ κόλπου τῆς
 Παμφυλίας πάλιν ἐπὶ τὰ ἀρκτῶα μέρη συστραφεὶς
 βλέπε, ὦ ἀκροατά (πρὸς γὰρ ἐκεῖνον ὁ λόγος),
 καὶ τὸν τοῦ Αἰγαίου πελάγους πόρον· ὅπου τὸ κῦμα
@@ -364,9 +388,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 λέγει δὲ τὸν Ἑλλήσποντον. Ὑπὲρ δὲ τῆς Προποντίδος
 πρὸς τὰ νότια πολλὰ καὶ ἄπειρα τῆς Ἀσίας
 ἔθνη ἐπεκτείνεται, μέγιστος γὰρ τῆς ἠπείρου, ὃ ἔστι
-τῆς γῆς, ἰσθμὸς ἐπέρχεται ἢ ἔκκειται.</p></div>
-<div type="textpart" subtype="section" n="14" corresp="urn:cts:greekLit:tlg0084.tlg001:140-145">
-<p>140—145. Ἐπὶ τῇ Προποντίδι τοῦ Θρᾳκικοῦ Βοσπόρου
+τῆς γῆς, ἰσθμὸς ἐπέρχεται ἢ ἔκκειται.</p>
+         </div>
+         <div n="14"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:140-145"
+              type="section">
+            <p>140—145. Ἐπὶ τῇ Προποντίδι τοῦ Θρᾳκικοῦ Βοσπόρου
 ἐστὶ τὸ στόμα, ὅντινά ποτε Βόσπορον ἡ Ἰὼ
 τῇ βουλῇ τῆς Ἥρας, ὡς παῤ αὐτῆς ζηλοτυπηθεῖσα,
 εἰς βοῦν μεταβληθεῖσα ἐνήξατο, ἤτοι διῆλθε
@@ -377,9 +404,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 τῆς Εὐβοίας καὶ Σικελίας ὅπου ὁ μῦθος ἐν τῇ θαλάσσῃ
 τὰς τραχείας πλανωμένας πέτρας, τὰς Κυανέας
 καὶ Συμπληγάδας λεγομένας, ἐπ᾿  ἀλλήλαις μετὰ
-κτύπου πολλοῦ κινεῖσθαι.</p></div>
-<div type="textpart" subtype="section" n="15" corresp="urn:cts:greekLit:tlg0084.tlg001:146-155">
-<p>146—155. Ἐκ τούτου δὲ τοῦ Βοσπόρου ἀνοιγόμενος ὁ
+κτύπου πολλοῦ κινεῖσθαι.</p>
+         </div>
+         <div n="15"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:146-155"
+              type="section">
+            <p>146—155. Ἐκ τούτου δὲ τοῦ Βοσπόρου ἀνοιγόμενος ὁ
 Εὔξεινος πόντος παραπέπταται, μέγιστος ὢν καὶ σύρων
 ἐπὶ τὸ ἐσώτερον μέρος πρὸς τὰς ἀνατολάς. Τούτου δὲ
 τοῦ πόντου ἀεὶ μὲν καὶ διαπαντὸς λοξαὶ ὁδοὶ ἐπιτρέχουσι,
@@ -393,9 +423,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 καλοῦσο μέτωπον, ἔστι δὲ τῆς Ταυρικῆς χερρονήσου.
 Αἵτινες ἄκραι ἐναντίαι ἀλλήλαις συνέρχονται, οὐδαμῶς
 οὖσαι πλησίον ἀλλήλων, ἀλλ᾿  ὁπόσον ἐστὶν ὁλκάδα ἢ
-ναῦν ἐπὶ τρεῖς ἡμέρας διαπερᾶσαι.</p></div>
-<div type="textpart" subtype="section" n="16" corresp="urn:cts:greekLit:tlg0084.tlg001:156-169">
-<p>156—169. Ἐξ ἐκείνου δὲ ἴδοις ἂν καὶ διθάλασσον
+ναῦν ἐπὶ τρεῖς ἡμέρας διαπερᾶσαι.</p>
+         </div>
+         <div n="16"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:156-169"
+              type="section">
+            <p>156—169. Ἐξ ἐκείνου δὲ ἴδοις ἂν καὶ διθάλασσον
 ὑπάρχοντα τὸν Πόντον, τῇ περιφερεία κυκλοτεροῦς τόξου
 νευρᾷ ὁμοιούμενον. Ἀλλὰ γένοιτο νευρᾶς σημεῖα
 τὰ δεξιὰ τοῦ Πόντου κατ᾿  εὐθεῖαν διαγραφέντα· μόνη δὲ
@@ -413,18 +446,24 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 Κιμμερίῳ Βοσπόρῳ πολλοὶ Κιμμέριοι κατοικοῦσι πρὸς
 τὰ ἔσχατα καὶ κατώτατα μέρη τοῦ ὑψηλοῦ ὄρους Ταύρου.
 Τοιαύτη μὲν ἡ μορφὴ καὶ τὸ σχῆμα τῆς μελανιζούσης
-θαλάσσης τῆς καθ᾿  ἡμᾶς.</p></div>
-<div type="textpart" subtype="section" n="17" corresp="urn:cts:greekLit:tlg0084.tlg001:170-173">
-<p>170—173. Ἀρτίως δὲ ἁπάσης τῆς ἠπείρου, ὃ ἔστι τῆς
+θαλάσσης τῆς καθ᾿  ἡμᾶς.</p>
+         </div>
+         <div n="17"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:170-173"
+              type="section">
+            <p>170—173. Ἀρτίως δὲ ἁπάσης τῆς ἠπείρου, ὃ ἔστι τῆς
 γῆς, μορφὴν λέξω, ἵνα εὔφραστον αἴσθησιν καὶ εὐσύνοπτον
 γνῶσιν καίπερ μὴ ἰδὼν ἔχῃς. Ἐκ τούτου γὰρ
 τοῦ εἰδέναι σε τὰ τῆς γῆς σχήματα καὶ μέτρα παῤ
 ἀνδρὶ μὴ γινώσκοντι καὶ ἀνεπιστήμονι ἢ μηδὲν εἰδότι
 ἕκαστα φανεροποιῶν καὶ κατὰ μέρος καὶ ἁρμοδίως λέγων
 ἐντιμότερος ἂν ὑπάρχοις καὶ αἰδοῦς καὶ ἐντροπῆς
-ἄξιος.</p></div>
-<div type="textpart" subtype="section" n="18" corresp="urn:cts:greekLit:tlg0084.tlg001:174-183">
-<p>174—183. Καὶ ἡ μὲν Λιβύη ἐκτεινομένη ἐπὶ τὸν νότον
+ἄξιος.</p>
+         </div>
+         <div n="18"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:174-183"
+              type="section">
+            <p>174—183. Καὶ ἡ μὲν Λιβύη ἐκτεινομένη ἐπὶ τὸν νότον
 πορεύεται, φημὶ δὲ ἐπὶ τὴν νοτίαν ἀνατολὴν, ἤτοι
 χειμερινὴν, παραπλησία κατὰ τὸ εἶδος τραπεζίῳ,
 σχήματι γεωμετρικῷ τετραπλεύρῳ, ἀπὸ Γαδείρων ἀρξαμένη,
@@ -439,9 +478,13 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 διψώδης γὰρ ὅλη καὶ κατάξηρός ἐστιν, ἔνθα κἀκεῖσι
 μελαίναις φολίδεσι κατάστικτος, καὶ ὥσπερ λεπίσιν
 ὑπὸ τῆς ξηρασίας πεποικιλμένη. <add>Καὶ γάρ ἐστι μελάγγεως
-καὶ ψαμμώδης καὶ ἀργιλλώδης.</add> </p></div>
-<div type="textpart" subtype="section" n="19" corresp="urn:cts:greekLit:tlg0084.tlg001:184-194">
-<p>184—194. Ἀλλ᾿  ἐπὶ μὲν τὴν ἐσχάτην γωνίαν τοῦ τετραπλεύρου
+καὶ ψαμμώδης καὶ ἀργιλλώδης.</add>
+            </p>
+         </div>
+         <div n="19"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:184-194"
+              type="section">
+            <p>184&#x8d;—194. Ἀλλ᾿  ἐπὶ μὲν τὴν ἐσχάτην γωνίαν τοῦ τετραπλεύρου
 ἐκείνου σχήματος τῆς Λιβύης ἐγγὺς τῶν
 Ἡρακλεωτικῶν στηλῶν οἱ Μαυρούσιοι κατοικοῦσιν.
 Ἐπὶ τούτοις δὲ τῶν Νομάδων τὰ πολλὰ ἔθνη παράκεινται,
@@ -456,18 +499,24 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 εἰς τὴν ἔπαυλιν ἐρχομένων, ἀλλ᾿  οὕτως ματαίως καθάπερ
 θῆρες ἐπὶ τὰ δρυοφόρα χωρία πορεύονται, ἄπειροι
 καὶ ἀμαθεῖς καὶ ἄμοιροι τῶν ἀμπέλων ἢ ἀμπελουργίας,
-καὶ τοῦ ἀμήτου, ἤτοι τοῦ θέρους, ἀνήκουστοι.</p></div>
-<div type="textpart" subtype="section" n="20" corresp="urn:cts:greekLit:tlg0084.tlg001:193-200">
-<p>193—200. Ἐπὶ τούτοις ἡ Καρχηδὼν πολύευκτον ἢ
+καὶ τοῦ ἀμήτου, ἤτοι τοῦ θέρους, ἀνήκουστοι.</p>
+         </div>
+         <div n="20"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:193-200"
+              type="section">
+            <p>193—200. Ἐπὶ τούτοις ἡ Καρχηδὼν πολύευκτον ἢ
 εὐχαρῆ ὅρμον περιέχει, ἡ πρότερον μὲν οὖσα τῶν
 Φοινίκων, νῦν δὲ τῶν Λιβύων, ἣν δὴ μυθεύονται ῥινῷ
 βοὸς μετρηθῆναι. Ἐφεξῆς δὲ ἡ μικροτέρα Σύρτις τὸν
 ἄγαν ταχέα ῥεύματα ἔχοντα ὁλκὸν συστρέφει. Μετὰ
 ταύτην δὲ ἄλλη ἀπλήρωτος ἢ μεγίστη, εὐρυτέραις
 προχοαῖς καὶ μείζοσιν ἐκβολαῖς ὡς ὑπὸ βάρους τῶν κυ
-μάτων βαρυνομένη, πρὸς ἀνατολὰς σύρεται.</p></div>
-<div type="textpart" subtype="section" n="21" corresp="urn:cts:greekLit:tlg0084.tlg001:201-204">
-<p>201—204. Ἐκεῖ δὲ αὐξανομένου ἢ ἐγειρομένου τοῦ
+μάτων βαρυνομένη, πρὸς ἀνατολὰς σύρεται.</p>
+         </div>
+         <div n="21"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:201-204"
+              type="section">
+            <p>201—204. Ἐκεῖ δὲ αὐξανομένου ἢ ἐγειρομένου τοῦ
 Τυρσηνικοῦ πελάγους καὶ τῆς θαλάσσης ἀναδιδομένης,
 ἄλλοτε μὲν πλημμυρὶς ἀνίσταται, ἄλλοτε δὲ ταῖς ξηραῖς
 ψάμμοις ἡ ἀναρρόφησις καὶ ἀναχώρησις ἐπιτρέχει,
@@ -476,9 +525,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 Νεάπολις καθ᾿  Ἕλληνας καλουμένη, ἐφ᾿  ἧς ὑπεράνω
 οἱ Λωτοφάγοι κατοικοῦσιν, ἄνδρες φιλόξενοι γεγονότες.
 Ἐκεῖσε δήποτε πλανώμενος ὁ δόλια ἢ ὁ ποικίλα καὶ
-συνετὰ βουλευόμενος ἦλθεν Ὀδυσσεύς.</p></div>
-<div type="textpart" subtype="section" n="22" corresp="urn:cts:greekLit:tlg0084.tlg001:205-215">
-<p>205—215. Περὶ δὲ τὴν χώραν ἐκείνην καὶ τῶν Νασαμώνων
+συνετὰ βουλευόμενος ἦλθεν Ὀδυσσεύς.</p>
+         </div>
+         <div n="22"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:205-215"
+              type="section">
+            <p>205—215. Περὶ δὲ τὴν χώραν ἐκείνην καὶ τῶν Νασαμώνων
 ἀνδρῶν τὰ οἰκήματα ἀφανισθέντα θεάσῃ,
 οὕστινας ἀσεβοῦντας καὶ μὴ φροντίζοντας τοῦ Διὸς ἡ
 τῶν Ῥωμαίων αἰχμὴ ἢ ὁ Ῥωμαϊκὸς πόλεμος ἀπώλεσεν.
@@ -489,9 +541,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἀποικία. Πλησίον δὲ τῆς Κυρήνης πρὸς τὴν Αἴγυπτον
 οἱ Μαρμαρίδαι εἰσίν. Ὑπεράνωθεν δὲ οἱ Γαιτοῦλοί
 εἰσι, καὶ πλησίον τῆς Γαιτούλων χώρας οἱ Νίγρητες
-κατοικοῦσιν.</p></div>
-<div type="textpart" subtype="section" n="23" corresp="urn:cts:greekLit:tlg0084.tlg001:216-227">
-<p>216—227. Ἑξῆς δὲ ἐπὶ τούτοις εἰσὶν οἱ Φαυρούσιοι,
+κατοικοῦσιν.</p>
+         </div>
+         <div n="23"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:216-227"
+              type="section">
+            <p>216—227. Ἑξῆς δὲ ἐπὶ τούτοις εἰσὶν οἱ Φαυρούσιοι,
 ὑπέρ ὧντινων γῆν οἱ Γαράμαντες πολλοὶ καὶ ἄπειροι
 κατοικοῦσιν. Ἐν δὲ τοῖς ἐνδοτάτοις μέρεσι τῆς ἠπείρου
 ἔσχατοι πάντων οἱ Αἰθίοπες οἰκοῦσιν ἐπ᾿  αὐτοῦ τοῦ
@@ -514,9 +569,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ὃ καὶ Ἡρακλεωτικόν, Σεβεννιτικόν, Σαϊτικόν, Μενδήσιον,
 Βολβίτινον καὶ Βουβαστικόν</add>) ἐκπίπτει εἰς
 τὴν θάλασσαν, τὴν λιπαρὰν γῆν τῆς Αἰγύπτου τοῖς
-ὕδασι πιαίνων.</p></div>
-<div type="textpart" subtype="section" n="24" corresp="urn:cts:greekLit:tlg0084.tlg001:228-241">
-<p>228—241. Οὐδεὶς γὰρ τῶν ἄλλων ποταμῶν τῷ Νείλῳ
+ὕδασι πιαίνων.</p>
+         </div>
+         <div n="24"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:228-241"
+              type="section">
+            <p>228—241. Οὐδεὶς γὰρ τῶν ἄλλων ποταμῶν τῷ Νείλῳ
 παραπλήσιος καὶ ὅμοιος τυγχάνει, οὐ μὲν κατὰ τὸ μέγεθος,
 ἀλλὰ κατὰ τὴν αὔξησιν καὶ τὴν ἄρδευσιν, οὔτε
 συρφετώδη χόρτον ἐπὶ γῆν βάλλειν, οὔτε πάλιν τον
@@ -535,9 +593,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 λέξομαι. Οὐ γὰρ μικρᾶς καὶ αὐτὴ τιμῆς ἔτυχεν,
 ἀλλ᾿  οὐδὲ κατὰ τὸ μέγεθος ὀλίγη ὑπάρχει, μάλιστα δὲ
 τῶν ἄλλων εὐτραφεῖς καὶ καλοὺς λειμῶνας ἔχει καὶ
-κάλλιστα πάντα φύει.</p></div>
-<div type="textpart" subtype="section" n="25" corresp="urn:cts:greekLit:tlg0084.tlg001:242-253">
-<p>242—253. Τὸ μὲν οὖν σχῆμα τῆς Αἰγύπτου τρίγωνόν
+κάλλιστα πάντα φύει.</p>
+         </div>
+         <div n="25"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:242-253"
+              type="section">
+            <p>242—253. Τὸ μὲν οὖν σχῆμα τῆς Αἰγύπτου τρίγωνόν
 ἐστι, πρὸς τὰ βόρεια μέρη καὶ τὴν ἔσω θάλασσαν
 πλατύ, ἐπὶ δὲ ἀνατολὴν ὀξὺ καὶ μέχρι τῆς βαθεῖς
 κρημνοὺς ἢ καταράκτας ἐχούσης, ἤτοι ὑψηλῆς, Συήνης
@@ -552,9 +613,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 καὶ ὅσοι τὴν μεσόγειον ἑπτὰ πόλεις ἔχουσαν
 κατοικοῦσι, καὶ ὅσοι πρὸς τὰ νότια μέρη ἐπὶ τοῖς αἰγιαλοῖς
 τῆς θαλάσσης τὴν Αἰγυπτιακὴν παραλίαν ἕως
-τῆς Σερβωνίτιδος λίμνης κατοικοῦσιν.</p></div>
-<div type="textpart" subtype="section" n="26" corresp="urn:cts:greekLit:tlg0084.tlg001:254-269">
-<p>254—269. Ταύτης οὖν τῆς Αἰγύπτου πρὸς μὲν τὸν
+τῆς Σερβωνίτιδος λίμνης κατοικοῦσιν.</p>
+         </div>
+         <div n="26"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:254-269"
+              type="section">
+            <p>254—269. Ταύτης οὖν τῆς Αἰγύπτου πρὸς μὲν τὸν
 ζέφυρον ἡ Μακεδονικὴ πόλις, τουτέστιν ἡ Ἀλεξάνδρεια,
 κεῖται, ὅπου τοῦ Σινωπίτου μεγάλου Διὸς ἱερὸν πολυτελεῖ
 καὶ πολυτιμήτῳ χρυσῷ κεκοσμημένον ἐστίν· οὐδαμῶς
@@ -575,9 +639,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 τοῖς μεσογείοις, οἱ δὲ περὶ τῆς μεγάλης καὶ πλατείας
 Τριτωνίδος λίμνης τὰ κύματα, ἥτις μέσον τῆς Λιβύης
 τὸν πλατὺν αὐτῆς κόλπον ἀμφέλκεται ἢ περισύρεται.
-Τοιαύτη μὲν τῆς Λιβύης ἡ μορφὴ καὶ τὸ σχῆμά ἐστιν.</p></div>
-<div type="textpart" subtype="section" n="27" corresp="urn:cts:greekLit:tlg0084.tlg001:270-280">
-<p>270—280. Εἰ δὲ καὶ τῆς Εὐρώπης τὸν τύπον ἐθέλεις
+Τοιαύτη μὲν τῆς Λιβύης ἡ μορφὴ καὶ τὸ σχῆμά ἐστιν.</p>
+         </div>
+         <div n="27"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:270-280"
+              type="section">
+            <p>270—280. Εἰ δὲ καὶ τῆς Εὐρώπης τὸν τύπον ἐθέλεις
 ἰδεῖν, οὐδαμῶς σε κρύψω κἀκεῖνον. Ὁ αὐτὸς δὲ
 ὁρισμός ἐστι τῆς Λιβύης, οἷον καὶ τῆς Εὐρώπης, ἄλλ᾿ 
 οὗτος μὲν ἐπὶ τὰ ἀρκτῶα μέρη ἔστραπται, ὡς βορειοτέραν
@@ -596,9 +663,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 μέσον ἢ κοινὸν μεθόριον πρὸς τῇ Ἀσίᾳ· τούτου χάριν
 τῶν ἀμφοτέρων ἠπείρων τὸν πόρον καὶ ἔκτασιν ἰδὼν
 ῥᾳδίως καὶ εὐκόλως καὶ τῆς Εὐρώπης πέρατα καὶ
-ὅρους καταλάβοις.</p></div>
-<div type="textpart" subtype="section" n="28" corresp="urn:cts:greekLit:tlg0084.tlg001:281-287">
-<p>281—287. Ἧστινος Εὐρώπης τὴν ἐσχάτην γωνίαν
+ὅρους καταλάβοις.</p>
+         </div>
+         <div n="28"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:281-287"
+              type="section">
+            <p>281—287. Ἧστινος Εὐρώπης τὴν ἐσχάτην γωνίαν
 πλησίον τῶν Ἡρακλεωτικῶν στηλῶν τῶν μεγαλοψύχων
 Ἰβήρων, ἤγουν Ἱσπανῶν, ἔθνη οἰκοῦσιν, ἐπὶ τὸ
 μῆκος τῆς ἠπείρου, ἤγουν χώρας, τετραμμένα· ὅπου
@@ -607,9 +677,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 Γερμανῶν κατοικοῦσι παρεκτεινόμενα καὶ ἐφαπλούμενα
 ἐπὶ τὰς ἄκρας καὶ τὰς ἐξοχὰς τοῦ Ἑρκυνίο δρυμοῦ.
 Τὴν δὲ γῆν ἐκείνην, δηλονότι τὴν Ἰβηρίαν, τῷ σχήματι
-βοείῃ βύρσῃ ὁμοίαν εἶναι λέγουσιν.</p></div>
-<div type="textpart" subtype="section" n="29" corresp="urn:cts:greekLit:tlg0084.tlg001:283-301">
-<p>283—301. Ἐπὶ τούτοις δὲ τοῖς Ἴβηρσι τὸ Πυρηναῖον
+βοείῃ βύρσῃ ὁμοίαν εἶναι λέγουσιν.</p>
+         </div>
+         <div n="29"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:283-301"
+              type="section">
+            <p>283—301. Ἐπὶ τούτοις δὲ τοῖς Ἴβηρσι τὸ Πυρηναῖον
 ὄρος ἐστὶ καὶ τὰ οἰκήματα τῶν Κελτῶν, πλησίον τῶν
 πηγῶν τοῦ καλλιρρόου Ἠριδανοῦ, ἐφ᾿  οὗτινός ποτε
 ταῖς ἐκβολαῖς κατὰ τὴν ἔρημον νύκτα αἱ Ἡλιάδες
@@ -628,9 +701,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἐστραμμένος, πλησίον τοῦ Εὐξείνου πόντου, εἰς ὃν
 πάντα τὸν ἀφρὸν τοῦ ὕδατος ἐρεύγεται ἢ ἐκβάλλει διὰ
 πέντε στομάτων, συστρεφόμενος περὶ τὴν Πεύκην νῆσον,
-ἣν ὁ Ἴστρος ἀποτελεῖ.</p></div>
-<div type="textpart" subtype="section" n="30" corresp="urn:cts:greekLit:tlg0084.tlg001:302-319">
-<p>302—319. Ἐπὶ μὲν τὸ βόρειον αὐτοῦ μέρος πολλοὶ
+ἣν ὁ Ἴστρος ἀποτελεῖ.</p>
+         </div>
+         <div n="30"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:302-319"
+              type="section">
+            <p>302—319. Ἐπὶ μὲν τὸ βόρειον αὐτοῦ μέρος πολλοὶ
 λίαν καὶ πάνυ ἐφαπλούμενα κέχυνται ἔθνη ἕως τοῦ
 στόματος τῆς Μαιώτιδος λίμνης, Γερμανοὶ, Σαρμάται,
 Γέται τε ὁμοῦ καὶ Βαστάρναι καὶ ἡ τῶν Λακῶν
@@ -653,9 +729,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 καλουμένης θαλάσσης, ὁ ἤλεκτρος αὔξεται ὁ ἡδεῖαν
 καὶ καλὴν τὴν λαμπηδόνα ἔχων, οἷά τις αὐγή ἐστι
 σελήνης ἀρχομένης. Πλησίον δὲ ὑπὸ τοῖς ψυχροῖς
-Ἀγαθύρσοις καὶ τὸν λαμπρότατον ἴδοις ἀδάμαντα.</p></div>
-<div type="textpart" subtype="section" n="31" corresp="urn:cts:greekLit:tlg0084.tlg001:320-329">
-<p>320—329. Τοσοῦτοι μὲν γεγόνασιν οἱ κατοικοῦντες
+Ἀγαθύρσοις καὶ τὸν λαμπρότατον ἴδοις ἀδάμαντα.</p>
+         </div>
+         <div n="31"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:320-329"
+              type="section">
+            <p>320—329. Τοσοῦτοι μὲν γεγόνασιν οἱ κατοικοῦντες
 πρὸς τὸν βορρᾶν τοῦ Ἴστρου ποταμοῦ. Πρὸς δὲ τὸν
 νότον εἰσὶν οἱ Γέρραι καὶ τὰ ἰσχυρὰ καὶ ἀσφαλῆ πολίσματα
 τῶν Νωρικίων, καὶ οἱ Παννόνιοι καὶ οἱ Βούλγαροι
@@ -668,9 +747,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 κατὰ τὴν ὑψηλὴν κορυφὴν τῆς Παλλήνης, τοῦ Θρᾳκικοῦ
 ὄρους, ὁ καλὸς λίθος ἀστέριος φύεται καθάπερ
 τις ἀστὴρ λάμπων, καὶ ὁ λυχνίτης τῇ φλογὶ τοῦ πυρὸς
-παραπλήσιος καὶ ὅμοιος.</p></div>
-<div type="textpart" subtype="section" n="32" corresp="urn:cts:greekLit:tlg0084.tlg001:330-344">
-<p>330—344. Καὶ τοσαῦτα μὲν ἔθνη περὶ τὸν Ἴστρον
+παραπλήσιος καὶ ὅμοιος.</p>
+         </div>
+         <div n="32"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:330-344"
+              type="section">
+            <p>330&#x8d;—344. Καὶ τοσαῦτα μὲν ἔθνη περὶ τὸν Ἴστρον
 ποταμὸν κατοικοῦσι. Τὸν δὲ λοιπὸν πόρον τῆς Εὐρώπης
 καλῶς διανοούμενος βλέπε, ὅστις ἐκ τριγώνου
 πλευρᾶς πρὸς τὴν ἀνατολὴν ἐρχόμενος ἀπὸ τῶν δυτικῶν
@@ -694,9 +776,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἐκεῖνο ἐπιστήμων ἀνὴρ τῆς σοφῆς Ἀθηνᾶς ὑπηρέτης,
 ὃ ἐστι σοφὸς τεχνίτης, μέμψοιτο· ἄρχεται δὲ πρὸς βορρᾶν
 ἀπὸ τῆς Ἄλπιος ὄρους, καὶ λήγει ἐπὶ τὸν Σικελικὸν
-πορθμόν.</p></div>
-<div type="textpart" subtype="section" n="33" corresp="urn:cts:greekLit:tlg0084.tlg001:345-356">
-<p>345—356. Πολλὰ δὲ περὶ τὸ Ἀπέννιον ὄρος ἑκατέρωθεν
+πορθμόν.</p>
+         </div>
+         <div n="33"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:345-356"
+              type="section">
+            <p>345—356. Πολλὰ δὲ περὶ τὸ Ἀπέννιον ὄρος ἑκατέρωθεν
 ἔθνη οἰκοῦσιν, οἵτινά σοι ῥᾳδίως καὶ εὐκόλως πάντα
 καταλέξω· ἄρξομαι δὲ ἀπὸ τῆς δυτικῆς πλευρᾶς ἐκ τοῦ
 βορέου. Πρῶτοι μὲν ἐκεῖ εἰσιν οἱ Τυρρηνοὶ, μετ᾿ 
@@ -713,9 +798,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἄλλων ποταμῶν, ὅστις εἰς δύο διαχωρίζει τὴν ἐπιθυμητὴν
 καὶ ἔνδοξεν Ῥώμην, τὸν μέγαν οἶκον, ἤγουν τὸ
 βασίλειον, τῶν ἐμῶν βασιλέων, τὴν μητέρα πασῶν
-τῶν πόλεων, τὴν πλουσίαν καὶ εὐδαίμονα χώραν.</p></div>
-<div type="textpart" subtype="section" n="34" corresp="urn:cts:greekLit:tlg0084.tlg001:357-363">
-<p>357—363. Ἐπὶ ταύτῃ δὲ τῇ Λατίνων χώρᾳ ἡ τῶν
+τῶν πόλεων, τὴν πλουσίαν καὶ εὐδαίμονα χώραν.</p>
+         </div>
+         <div n="34"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:357-363"
+              type="section">
+            <p>357—363. Ἐπὶ ταύτῃ δὲ τῇ Λατίνων χώρᾳ ἡ τῶν
 Καμπανῶν ἐστι λιπαρὰ γῆ, ὅπου ὁ οἶκος, ἤγουν ἡ
 πόλις, τῆς ἁγνῆς Παρθενόπης, μιᾶς τῶν Σειρήνων,
 ἡ πολλὰ τῶν σταχύων δράγματα ἔχουσαν, τουτέστιν ἡ
@@ -726,9 +814,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 Πευκεντίνου, ἐκβολαὶ φαίνονται. Πλησίον δέ εἰσιν
 οἱ Λευκανοὶ καὶ οἱ Βρέντιοι ἄνδρες τὸ λοιπὸν μέρος
 τῆς Ἰταλίας μέχρι τῆς Λευκῆς πέτρας κρατοῦντες καὶ
-κατοικοῦντες.</p></div>
-<div type="textpart" subtype="section" n="35" corresp="urn:cts:greekLit:tlg0084.tlg001:364-374">
-<p>364—374. Ἐκεῖθεν δὲ, ὃ ἔστιν ἀπὸ τῆς Λευκῆς πέτρας,
+κατοικοῦντες.</p>
+         </div>
+         <div n="35"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:364-374"
+              type="section">
+            <p>364—374. Ἐκεῖθεν δὲ, ὃ ἔστιν ἀπὸ τῆς Λευκῆς πέτρας,
 ἐπὶ τὸν βορρᾶν ἡ ἄκρα τοῦ ζεφύρου, ἤγουν τὸ
 Ζεφύριον ἀκρωτήριον, φαίνεται, καὶ ἐπ᾿  αὐτοῦ οἱ Λοκροὶ
 οἱ Ἐπιζεφύριοι κατοικοῦσιν, οἵτινες τοῖς προτέροις
@@ -745,9 +836,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἀθλία καὶ ταλαίπωρος Σύβαρις, τοὺς ἐνοικοῦντας ἢ
 πολίτας ἑαυτῆς ἀπολωλότας κλαίουσα, ἤγουν ἔρ??
 οὖσα, διὰ τὸ ἐπὶ τοῖς ἀναθήμασι τοῦ Ἀλφειοῦ ὑπὲρ τὰ
-δίκαιον μανέντας αἰσχρῶς ἀσεβῆσαι.</p></div>
-<div type="textpart" subtype="section" n="36" corresp="urn:cts:greekLit:tlg0084.tlg001:375-383">
-<p>375—383. Μετὰ τούτους δὲ τοὺς Συβαρίτας οἱ Σαυνῖται
+δίκαιον μανέντας αἰσχρῶς ἀσεβῆσαι.</p>
+         </div>
+         <div n="36"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:375-383"
+              type="section">
+            <p>375—383. Μετὰ τούτους δὲ τοὺς Συβαρίτας οἱ Σαυνῖται
 τὴν μέσην γῆν, ἤγουν τὴν μεσόγειον χώραν, οἰκοῦσι,
 καὶ τὰ ταχέα ἔθνη τῶν Μαρσῶν, ὑπεράνωθεν
 τοῦ Σιλάρου ποταμοῦ. Τάρας δὲ παραλία πόλις πλησίον
@@ -760,9 +854,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἐνδότερον μέρος ὄντα τοῦ Ἀδρίου, ὅπου Ἀκύλη πόλις
 ἐστίν. Ἐκεῖ καὶ ἡ Τεγεστραίων πόλις οἰκεῖται ἐπὶ
 τοῖς ἐνδοτάτοις μέρεσιν, ἤγουν ἐν τῷ μυχῷ τοῦ Ἀδριατικοῦ
-πελάγους. Τοσαῦτα μὲν ἔθη τὴν Ἰταλίαν κατοικεῖ.</p></div>
-<div type="textpart" subtype="section" n="37" corresp="urn:cts:greekLit:tlg0084.tlg001:384-397">
-<p>384—397. Ἐκεῖθεν δὲ πρὸς ἀνατολὰς σύρεται ἢ τὴν
+πελάγους. Τοσαῦτα μὲν ἔθη τὴν Ἰταλίαν κατοικεῖ.</p>
+         </div>
+         <div n="37"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:384-397"
+              type="section">
+            <p>384—397. Ἐκεῖθεν δὲ πρὸς ἀνατολὰς σύρεται ἢ τὴν
 θάλασσαν ἐπερεύγεται ὁ Ἀδρίας κόλπος, τοὺς αἰγιαλοὺς
 τῶν Λιβυρνίδων νήσων ὑποξύων, καὶ περὶ ἅπασαν
 τὴν ὑψηλὴν ἢ ἰσχυρὰν τῶν Ὑλλείων χώραν, ἤτο
@@ -784,17 +881,23 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἀμφοτέρωθεν ἐστηριγμέναι εἰσὶν, αἵτινες ἀμφότεραι
 κινούμεναι ἀλλήλαις συνέρχονται, ὁπόταν τις ἀρχὴ
 ἐπικυλιομένου κακοῦ τοῖς πολίταις γίνεται, ἤγουν σημαίνουσι
-τῶν μελλόντων κακῶν τὴν ἀρχήν.</p></div>
-<div type="textpart" subtype="section" n="38" corresp="urn:cts:greekLit:tlg0084.tlg001:398-402">
-<p>398—402. Πρὸς δὲ τὸν νότον ἢ τὰ νότια μέρη πορρωτάτω
+τῶν μελλόντων κακῶν τὴν ἀρχήν.</p>
+         </div>
+         <div n="38"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:398-402"
+              type="section">
+            <p>398—402. Πρὸς δὲ τὸν νότον ἢ τὰ νότια μέρη πορρωτάτω
 ὑπὲρ τὴν εὔγειον Θρᾴκην καὶ τὴν Ὠρικίαν
 χώραν ἡ τῆς Ἑλλάδος ἀρχὴ κατὰ πολὺ ἀνερχομένη
 προσεγγίζει, διπλῇ θαλάσσῃ διεζωσμένη ἢ περιεχομένη,
 τῇ Αἰγαίᾳ δηλονότι καὶ τῇ Σικελικῇ. ἄνεμον δὲ
 ἑκάστη ἔλαβεν, ἡ μὲν Σικελικὴ τὸν ἐσπέριον ἢ δυτικὸν,
-ὃν καὶ ζέφυρον καλοῦσιν, ἡ δὲ Αἰγαία τὸν εὖρον.</p></div>
-<div type="textpart" subtype="section" n="39" corresp="urn:cts:greekLit:tlg0084.tlg001:403-422">
-<p>403—422. Πελοπόννησος δὲ ἕπεται ἢ ἐπακολουθεῖ,
+ὃν καὶ ζέφυρον καλοῦσιν, ἡ δὲ Αἰγαία τὸν εὖρον.</p>
+         </div>
+         <div n="39"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:403-422"
+              type="section">
+            <p>403—422. Πελοπόννησος δὲ ἕπεται ἢ ἐπακολουθεῖ,
 ὁμοία πλατάνου φύλλῳ μυουρίζοντι, ἤγουν λεπτοτάτῳ
 
 <pb n="415"/>
@@ -826,9 +929,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 καὶ ἡ Σαρωνικὴ, καὶ ἡ μὲν Κορινθία ἐξ ἐναντίας
 τῆς Ἐφύρης, ὃ ἔστι τῆς Κορίνθου πόλεως πρὸς δύσιν
 ἐστὶν, ἀπὸ τοῦ Ἀδριατικοῦ πελάγους, ἡ δὲ Σαρωνικὴ
-πρὸς ἀνατολάς ἐστι συρομένη.</p></div>
-<div type="textpart" subtype="section" n="40" corresp="urn:cts:greekLit:tlg0084.tlg001:423-428">
-<p>423—428. Ἔμπροσθεν δὲ ταῦ Ἰσθμοῦ ὡς πρὸς ἀνατολὰς
+πρὸς ἀνατολάς ἐστι συρομένη.</p>
+         </div>
+         <div n="40"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:423-428"
+              type="section">
+            <p>423—428. Ἔμπροσθεν δὲ ταῦ Ἰσθμοῦ ὡς πρὸς ἀνατολὰς
 ἡ Ἀττικὴ γῆ ἐστιν, ὃ ἔστιν αἱ Ἀθῆναι· ἀνὰ μέσον
 δὲ τῶνδε κατέρχεται ὁ θεῖος ποταμὸς Ἰλισσὸς, ὅτου
 καὶ ὁ Βορρᾶς ποτε ὁ τῆς Θρᾴκης βασιλεὺς ἥρπασε τὴν
@@ -837,9 +943,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 Μετὰ τοὺς Βοιωτοὺς δὲ καὶ τοὺς Λοκροὺς ἡ Θεσσαλία
 καὶ αἱ πόλεις τῆς Μακεδονίας εἰσίν. Ἐπὶ ταύταις δὲ
 πάλιν φαίνονται αἱ κορυφαὶ τοῦ χιονώδους Αἵμου τοῦ
-Θρᾳκικοῦ ὄρους.</p></div>
-<div type="textpart" subtype="section" n="41" corresp="urn:cts:greekLit:tlg0084.tlg001:429-436">
-<p>429—436. Ἐξεναντίας δὲ τούτου πρὸς ζεφύρου πνοὴν
+Θρᾳκικοῦ ὄρους.</p>
+         </div>
+         <div n="41"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:429-436"
+              type="section">
+            <p>429—436. Ἐξεναντίας δὲ τούτου πρὸς ζεφύρου πνοὴν
 ἡ ἀπλήρωτος γῆ τῆς Δωδώνης ἐκτέταται. Ὑπεράνω
 δὲ ταύτης τῆς Δωδώνης πρὸς νότον ἡ μεγάλη τῶν Αἰτωλῶν
 ἀνδρῶν χώρα ἐστὶν ὑπὸ τοῦ ὑψηλοῦ ὄρους Ἀρακύνθου.
@@ -847,9 +956,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ποταμὸς, ὁ λαμπρὰ συστρέμματα ἔχων, ἐκβάλλει
 δὲ εἰς τὸ Σικελικὸν πέλαγος διὰ μέσων τιῶν νήσων
 ἃς Ἐχινάδας καλοῦσιν· ἐφ᾿  ὧν αἱ τῶν γειτνιαζόντων
-Κεφαλλήνων πόλεις ἐπακολουθοῦσιν.</p></div>
-<div type="textpart" subtype="section" n="42" corresp="urn:cts:greekLit:tlg0084.tlg001:437-446">
-<p>437—446. Ἐπὶ τούτῳ δὲ τῷ πεδίῳ, τῆς Αἰτωλίας δηλονότι,
+Κεφαλλήνων πόλεις ἐπακολουθοῦσιν.</p>
+         </div>
+         <div n="42"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:437-446"
+              type="section">
+            <p>437—446. Ἐπὶ τούτῳ δὲ τῷ πεδίῳ, τῆς Αἰτωλίας δηλονότι,
 πρός τε τὴν ἀνατολὴν καὶ τὴν ἠῶ, ἤγουν τὸν
 ἀνίσχοντα ἥλιον, ἡ Φωκὶς χώρα ἐστὶ, συρομένη ἢ
 ἀποκλίνουσα ἐπὶ βορρᾶν κατὰ τὸ στόμα καὶ τὰ στενὰ
@@ -863,14 +975,20 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 πεπυκνωμένος. Ὅπου πολλάκις αὐτὸς ὁ Ἀπόλλων
 ἢ ἀπὸ τῆς Μιλήτου ἢ ἀπὸ τῆς Κλάρου ἄρτι ἀναβὰς,
 ἤτοι ἐλθὼν, τὸ ἅμμα, τουτέστι τὸν δεσμὸν ἢ τὴν
-νευρὰν, τῆς χρυσῆς φαρέτρης ἀναλύει.</p></div>
-<div type="textpart" subtype="section" n="43" corresp="urn:cts:greekLit:tlg0084.tlg001:447-449">
-<p>447—449. Ἀλλ᾿  οὗτος μὲν ὁ Ἀπόλλων ἵλεως ἔστω· σὺ
+νευρὰν, τῆς χρυσῆς φαρέτρης ἀναλύει.</p>
+         </div>
+         <div n="43"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:447-449"
+              type="section">
+            <p>447—449. Ἀλλ᾿  οὗτος μὲν ὁ Ἀπόλλων ἵλεως ἔστω· σὺ
 δὲ, ὦ Μοῦσα, Διὸς καὶ Μνημοσύνης θύγατερ, πασῶν
 τῶν νήσων, αἵτινες ἐν τῷ πόντῳ ἄλλη ἀλλαχόσε ἐστραμμέναι
-ὑπάρχουσι, τὰ ὀνόματα ἐμοὶ καὶ τὴν θέσιν εἰπέ.</p></div>
-<div type="textpart" subtype="section" n="44" corresp="urn:cts:greekLit:tlg0084.tlg001:450-456">
-<p>450—456. Κατὰ μὲν τὸ μέσον τοῦ πορθμοῦ τῶν
+ὑπάρχουσι, τὰ ὀνόματα ἐμοὶ καὶ τὴν θέσιν εἰπέ.</p>
+         </div>
+         <div n="44"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:450-456"
+              type="section">
+            <p>450—456. Κατὰ μὲν τὸ μέσον τοῦ πορθμοῦ τῶν
 Ἡρακλείων στηλῶν τὰ Γάδειρα, ἡ ἐσχάτη τῆς οἰκουμένης
 νῆσος, τοῖς ἀνθρώποις φαίνεται, καὶ πόλις ἐπὶ τῆς
 περιρρεομένης ἐκείνης νήσου ἐπὶ τοῖς τέρμασι τοῦ
@@ -878,17 +996,23 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 γένος κατοικεῖ, τοῦ μεγάλου Διὸς υἱὸν Ἡρακλῆ
 τιμῶντες. Καὶ ταύτην μὲν τὴν νῆσον παρὰ τῶν
 ἐκεῖ πρότερον κατοικούντων ἀνθρώπων Κοτίνουσαν
-καλουμένην ὕστερον Γάδειρα οἱ Φοίνικες ἐκάλεσαν.</p></div>
-<div type="textpart" subtype="section" n="45" corresp="urn:cts:greekLit:tlg0084.tlg001:457-460">
-<p>457—460. Αἱ δὲ Γυμνήσιαι νῆσοι ἐφεξῆς εἰσι. Πλησίον
+καλουμένην ὕστερον Γάδειρα οἱ Φοίνικες ἐκάλεσαν.</p>
+         </div>
+         <div n="45"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:457-460"
+              type="section">
+            <p>457—460. Αἱ δὲ Γυμνήσιαι νῆσοι ἐφεξῆς εἰσι. Πλησίον
 δὲ αὐτῶν ἐστιν ἡ Βοῦσος, καὶ ἡ εὐρυτάτη, ἤγουν
 ἡ πλατεῖα ἢ μεγίστη Σαρδὼ, καὶ ἡ ἐπέραστος καὶ
 καλὴ νῆσος Κύρνος τῇ θαλάσσῃ περιεχομένη, ἥντινα
 καὶ Κορσίδα διὰ τὸ πολλὰς ἐξοχὰς ἔχειν ὀρῶν οἱ κατοικοῦντες
 ἄνδρες καλοῦσι· κατάσκιος δὲ καὶ πολύϋλος
-ὑπάρχει τοσοῦτον, ὅσον οὐδεμία τῶν ἄλλων νήσων.</p></div>
-<div type="textpart" subtype="section" n="46" corresp="urn:cts:greekLit:tlg0084.tlg001:461-467">
-<p>461—467. Μετὰ ταύτην δὲ αἱ τοῦ Αἰόλου τοῦ Ἱππότου
+ὑπάρχει τοσοῦτον, ὅσον οὐδεμία τῶν ἄλλων νήσων.</p>
+         </div>
+         <div n="46"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:461-467"
+              type="section">
+            <p>461—467. Μετὰ ταύτην δὲ αἱ τοῦ Αἰόλου τοῦ Ἱππότου
 υἱοῦ, τοῦ φιλοξένου βασιλέως, νῆσοί εἰσιν ἐν τῇ
 θαλάσσῃ πανταχοῦ περίδρομοι· ὅστις Ἱπποτάδης Αἴολος
 θεῖα, ἤγουν θαυμαστὰ, δῶρα πάντας ὑπὲρ τοὺς
@@ -897,9 +1021,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἱσταμένων ἤτοι ἡσυχαζόντων. Ἑπτὰ δέ εἰσιν αὗται αἱ
 νῆσοι, ὑπὸ τῶν ἀνθρώπων Πλωταὶ καλούμεναι, διότι
 μέσον ἔχουσιν οἱονεὶ μεταξὺ ἀλλήλων περικυκλούμενον
-διάπλουν ἢ περίπλουν.</p></div>
-<div type="textpart" subtype="section" n="47" corresp="urn:cts:greekLit:tlg0084.tlg001:468-476">
-<p>468—476. Ἐπὶ ταύταις δὲ ταῖς Αἰόλου νήσοις ἡ Τρινακία,
+διάπλουν ἢ περίπλουν.</p>
+         </div>
+         <div n="47"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:468-476"
+              type="section">
+            <p>468—476. Ἐπὶ ταύταις δὲ ταῖς Αἰόλου νήσοις ἡ Τρινακία,
 τουτέστιν ἡ Σικελία, νῆσος ὑπὲρ τὴν Ἰταλίαν ἐκτέταται
 ἐπὶ τρισὶ πλευραῖς ἑστηκυῖα. Ἄκρα δὲ αὐτῆς ἥ τε
 Πάχυνος καὶ ἡ Πελωρὶς καὶ ἡ Λιλύβη· ἀλλ᾿  ἡ μὲν Λιλύβη
@@ -913,19 +1040,24 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 τουτέστι τὰ κύματα προσπελάζει καὶ προσκρούει,
 τμηθεῖσα τῇ τριαίνῃ τοῦ Ποσειδῶνος, ὃς ἐν Ἀονίᾳ τῆς
 Παρνασοῦ. Διὰ δὲ τῆς Φωκίδος μέσον τὸ μέγα ῥεῦμα Βοιωτίας ἐτιμᾶτο.</p>
-
-<pb n="416"/></div>
-<div type="textpart" subtype="section" n="48" corresp="urn:cts:greekLit:tlg0084.tlg001:477-480">
-<p>477—480. Πφὸς δὲ τὸν νότον ὑπὲρ τοῦ Σικελικοῦ
+            <pb n="416"/>
+         </div>
+         <div n="48"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:477-480"
+              type="section">
+            <p>477—480. Πφὸς δὲ τὸν νότον ὑπὲρ τοῦ Σικελικοῦ
 πορθμοῦ ἐστιν ἡ Λιβυκὴ θάλασσα καὶ ἡ ἀρχὴ τῆς
 ἑτέρας, ἤγουν τῆς μείζονος Σύρτιδος. Ἐὰν δὲ ἐπὶ τὰ
 ἔμπροσθεν περάσῃς, καὶ τὴν ἑτέραν τὴν μικρὰν δυτικωτέραν
 οὖσαν κατόψει· ἦστινος ἔμπροσθέν εἰσι δύο
 νησίδια, ἥ τι Μῆνιγξ καὶ τὰ Κέρκινα, ὑπὸ τῆς Λιβύης
 τὸν ὅρμον, ἤγουν τὸν λιμένα καὶ τὴν πορείαν,
-ἔχουσαι.</p></div>
-<div type="textpart" subtype="section" n="49" corresp="urn:cts:greekLit:tlg0084.tlg001:481-491">
-<p>481—491. Ἀλλ᾿  ὁπότε μετὰ νηὸς ἐπὶ τὴν Ἰαπυγίαν
+ἔχουσαι.</p>
+         </div>
+         <div n="49"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:481-491"
+              type="section">
+            <p>481—491. Ἀλλ᾿  ὁπότε μετὰ νηὸς ἐπὶ τὴν Ἰαπυγίαν
 γῆν περὶ τὸν ἀριστερὸν πόρον τοῦ Ἀδριατικοῦ πελάγους
 ὁδεύσῃς, παρευθὺς εὑρήσεις τὴν τοῦ ἰσχυροτάτου Διομήδους
 νῆσον, ὅπου ὁ ἡμίθεος ἐκεῖνος ἀνὴρ, τῆς Ἀφροδίτης
@@ -939,9 +1071,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 γένος τῶν Κόλχων ἐπέδραμον, ὃ ἔστι κατέλαβον, ἡνίκα
 τῆς πλανηθείσης Λἰήτου θυγατρὸς Μηδείας τὰ ἴχνη
 ψηλαφῶντες ἐμόγησαν ἢ ἐκακοπάθησαν. Ἐφεξῆς δὲ
-ἐπὶ ταύταις αἱ Λιβυρνίδες νῆσοι ἐρριζωμέναι εἰσί.</p></div>
-<div type="textpart" subtype="section" n="50" corresp="urn:cts:greekLit:tlg0084.tlg001:492-497">
-<p>492—497. Πρὸς δὲ τὸν νότον πορευομένῃ νηῒ, ἤγουν
+ἐπὶ ταύταις αἱ Λιβυρνίδες νῆσοι ἐρριζωμέναι εἰσί.</p>
+         </div>
+         <div n="50"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:492-497"
+              type="section">
+            <p>492—497. Πρὸς δὲ τὸν νότον πορευομένῃ νηῒ, ἤγουν
 μετὰ νηὸς πορευομένῳ, μετὰ τὰ Κεραύνια ὄρη ἐξ
 ἐναντίας τῶν Ἀμβρακίων νῆσοι φαίνονται, ἥ τε λιπαρὰ
 ἢ πολυφόρος Κέρκυρα, ἡ καὶ Φαιακία λεγομένη, ἡ
@@ -950,9 +1085,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 νῆσος, ἡ ὑπὸ τὸ Νηρίτιον ὄρος, καὶ τῶν ἄλλων, δηλονότι
 τῶν Ἐχινάδων, νήσων ἡ γῆ, ὁπόσας ὁ Ἀχελῷος
 ποταμὸς ταῖς λαμπροτάταις συστροφαῖς περιρρεῖ,
-ἀπὸ τῆς Χαλκίδος πόλεως τῆς Αἰτωλίας κατερχόμενος.</p></div>
-<div type="textpart" subtype="section" n="51" corresp="urn:cts:greekLit:tlg0084.tlg001:498-512">
-<p>498—512. Πολλαὶ δὲ νῆσοι πρὸς τὰ βόρεια μέρη τοῦ
+ἀπὸ τῆς Χαλκίδος πόλεως τῆς Αἰτωλίας κατερχόμενος.</p>
+         </div>
+         <div n="51"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:498-512"
+              type="section">
+            <p>498—512. Πολλαὶ δὲ νῆσοι πρὸς τὰ βόρεια μέρη τοῦ
 Ἀμνισοῦ, ποταμοῦ τῆς Κρήτης, φαίνονται, τά
 τε Αἴγυλα, τὰ Κύθηρα καὶ ἡ τραχεῖα Καλαύρια.
 Ἐπὶ δὲ τὸ ἕτερον μέρος ἐξ ἀνατολῶν πρὸς δυσμὰς ἡ
@@ -973,9 +1111,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 κεῖται. Ἔμπροσθεν δὲ τοῦ Σουνίου, ἀκρωτηρίου τῆς
 Ἀττικῆς, ὑπεράνω τῆς Εὐβοίας τῆς ὑπὸ Ἀβάντων οἰκουμένης,
 φαίνονται ἡ Σαλαμὶς καὶ ἡ πόλις τῆς Αἰγίνης
-νήσου.</p></div>
-<div type="textpart" subtype="section" n="52" corresp="urn:cts:greekLit:tlg0084.tlg001:513-516">
-<p>513—516. Θαυμαστὸς δέ τις πόρος ἐστὶν ὁ τοῦ Αἰγαίου
+νήσου.</p>
+         </div>
+         <div n="52"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:513-516"
+              type="section">
+            <p>513—516. Θαυμαστὸς δέ τις πόρος ἐστὶν ὁ τοῦ Αἰγαίου
 πελάγους ὁ βαθὺς, ὁ περιέχων ἐντὸς αὐτοῦ ἐξ ἑκατέρων
 τῶν μερῶν ἄπειρον πλῆθος νήσων στιχηδὸν ἢ κατὰ
 τάξιν κειμένων, ἐπὶ τὸ στενὸν ὕδωρ τοῦ Ἑλλησπόντου,
@@ -984,9 +1125,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 τῆς Ἕλλης τῆς Ἀθάμαντος θυγατρὸς ἐπώνυμος· ὅπου
 ἥ τε Σηστὸς καὶ ἡ Ἄβυδος ἐξ ἐναντίας ἀλλήλων τὸν
 λιμένα ἢ τὸν ὅρμον ἔχουσαι κεῖνται, ἡ μὲν Σηστὸς τῆς
-Εὐρώπης, ἡ δὲ Ἄβυδος τῆς Ἀσίας.</p></div>
-<div type="textpart" subtype="section" n="53" corresp="urn:cts:greekLit:tlg0084.tlg001:517-524">
-<p>517—524. Τούτων δὲ τῶν νήσων τοῦ Αἰγαίου πελάγους
+Εὐρώπης, ἡ δὲ Ἄβυδος τῆς Ἀσίας.</p>
+         </div>
+         <div n="53"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:517-524"
+              type="section">
+            <p>517—524. Τούτων δὲ τῶν νήσων τοῦ Αἰγαίου πελάγους
 αἱ μὲν τῆς Εὐρώπης ἐπὶ τὰ ἀριστερὰ κεῖνται τῷ
 εἰσπλέοντι, οἱ δὲ τῆς Ἀσίας ἐπὶ τὰ δεξιὰ κατὰ τὸ μῆκος
 ἐκτεινόμεναι ἀπὸ τῆς μεσημβρίας πρὸς ἄρκτους ἢ
@@ -998,9 +1142,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 τοῦ Ἡφαίστου, καὶ ἡ ἀρχαία Θάσος, Δημήτερος
 ἀκτὴ, τουτέστι πυροφόρος χώρα, καὶ Ἴμβρος καὶ ἡ
 Σαμοθρᾴκη, ἡ πόλις τῶν Κορυβάντων τὰ μυστήρια ἐν
-αὐτῇ τελούντων.</p></div>
-<div type="textpart" subtype="section" n="54" corresp="urn:cts:greekLit:tlg0084.tlg001:525-532">
-<p>525—532. Αἱ δὲ τὴν πρώτην μοῖραν ἢ τάξιν τῆς
+αὐτῇ τελούντων.</p>
+         </div>
+         <div n="54"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:525-532"
+              type="section">
+            <p>525—532. Αἱ δὲ τὴν πρώτην μοῖραν ἢ τάξιν τῆς
 Ἀσίας λαχοῦσαι νῆσοι αὗταί εἰσιν, αἳ κύκλῳ τὴν Δῆλον
 περιέχουσι, καὶ Κυκλάδες ἐκ τούτου ὀνομάζονται.
 Χαριστήρια δὲ τῷ Ἀπόλλωνι καὶ χοροὺς ἅπασαι αἱ
@@ -1011,9 +1158,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἐφεξῆς μετὰ τὰς Κυκλάδας πανταχοῦ ἐν τῷ πόντῳ
 λάμπουσιν, ὥσπερ τὰ ἄστρα διὰ ἀνεφέλου καὶ καθαροῦ
 ἀέρος φαίνονται, τοῦ ταχυτάτου βορρᾶ τὰ ὑγρὰ
-νέφη βιασαμένου ἢ διασκεδάσαντος.</p></div>
-<div type="textpart" subtype="section" n="55" corresp="urn:cts:greekLit:tlg0084.tlg001:533-540">
-<p>533—540. Ἐπὶ ταύταις δέ εἰσιν αἱ Ἰωνίδες νῆσοι,
+νέφη βιασαμένου ἢ διασκεδάσαντος.</p>
+         </div>
+         <div n="55"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:533-540"
+              type="section">
+            <p>533—540. Ἐπὶ ταύταις δέ εἰσιν αἱ Ἰωνίδες νῆσοι,
 ὅπου ἡ Καῦνος, καὶ ἡ καλὴ καὶ ἐπιθυμητὴ Σάμος, τὸ
 ἔδαφος τῆς ἐν Πελασγίᾳ τιμωμένης Ἥρας, καὶ ἡ
 Χίος ὑπὸ τὴν πέζαν τοῦ ὑψηλοῦ Πεληναίου ὄρους.
@@ -1025,9 +1175,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 κόλπος τὸν Ἑλλήσποντον ἐπέρχεται τὸν ἀφρὸν ἀποπέμπων,
 τῷ δὲ κατὰ πολὺ ἐπὶ τὸν βορρᾶν πορευομένῳ
 τὸ αὔξημα ἢ τὸ φύσημα τῆς Προποντίδος θαλάσσης
-ἔνθα κἀκεῖσε παρατέταται.</p></div>
-<div type="textpart" subtype="section" n="56" corresp="urn:cts:greekLit:tlg0084.tlg001:541-549">
-<p>541—549. Ὑπὲρ δὲ τὸν ἀριστερὸν πόρον, ἤγουν πρὸς
+ἔνθα κἀκεῖσε παρατέταται.</p>
+         </div>
+         <div n="56"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:541-549"
+              type="section">
+            <p>541—549. Ὑπὲρ δὲ τὸν ἀριστερὸν πόρον, ἤγουν πρὸς
 τὰ ἀριστερὰ μέρη, τοῦ Εὐξείνου πόντου ἐξ ἐναντίας τοῦ
 Βορυσθένους ποταμοῦ μεγαλώνυμος καὶ ἔνδοξός τις νῆσος
 τῶν ἡμιθέων ἀνδρῶν κεῖται, Λευκὴν δὲ τὸ ἐπίκλην
@@ -1039,18 +1192,24 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 συμφύτους τόπους ἀναστρέφεσθαι. Τοῦτο δὲ τὸ δῶρον
 παρὰ τοῦ Διὸς ταῖς ἀρίσταις ψυχαῖς ἀντὶ τῆς ἀρετῆς
 ἐπακολουθεῖ· ἀφθάρτου γὰρ ἡ ἀρετὴ τιμῆς καὶ
-ἀκηράτου ἔτυχεν.</p></div>
-<div type="textpart" subtype="section" n="57" corresp="urn:cts:greekLit:tlg0084.tlg001:550-554">
-<p>550—554. Ἄλλη δὲ νῆσος ἄπειρος καὶ μεγάλη ὑπάρχει
+ἀκηράτου ἔτυχεν.</p>
+         </div>
+         <div n="57"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:550-554"
+              type="section">
+            <p>550—554. Ἄλλη δὲ νῆσος ἄπειρος καὶ μεγάλη ὑπάρχει
 ἰθύνοντί σοι καὶ ἐπ᾿  εὐθείας ὁρμῶντι ἐπὶ τὸν Κιμμέριον
 Βόσπορον, ἥτις δὴ ἔσωθεν τῆς Μαιώτιδος λίμνης
 κατὰ τὸ δεξιὸνμέρος ἐστηριγμένη ἐστίν· ἐφ᾿  ἧστινος
 λίμνης ἥ τε Φαναγόρη καὶ ἡ καλῶς ἐκτισμένη Ἑρμώνασσα,
 ὅπου καὶ ἀπὸ τῆς Ἰωνίδος γῆς ἀπόγονοι κατοικοῦσιν.
 Αὗται μὲν ἐπίσημοι καὶ μεγαλόδοξοι παρὰ
-τοῖς ἀνθρώποις νῆσοι ἐν τῇ καθ᾿  ἡμᾶς θαλάσσῃ ὑπάρχουσιν.</p></div>
-<div type="textpart" subtype="section" n="58" corresp="urn:cts:greekLit:tlg0084.tlg001:555-564">
-<p>555—564. Ἕτεραι δὲ πάλιν ἐν τῷ ὠκεανῷ κεῖνται,
+τοῖς ἀνθρώποις νῆσοι ἐν τῇ καθ᾿  ἡμᾶς θαλάσσῃ ὑπάρχουσιν.</p>
+         </div>
+         <div n="58"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:555-564"
+              type="section">
+            <p>555—564. Ἕτεραι δὲ πάλιν ἐν τῷ ὠκεανῷ κεῖνται,
 τῷ ῥῷ, ἤγουν τοῖς κύμασιν, αὐτοῦ κύκλῳ περιεχόμεναι·
 ὧντινων ἐγὼ τὴν εὔδηλον καὶ φανερὰν θέσιν λέξαιμι,
 καὶ ὁποίῳ ἀνέμῳ παράκειται ἑκάστη αὐτῶν. Περὶ
@@ -1062,17 +1221,23 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ᾤκησαν. Ὑπὸ δὲ τὴν ἱερὰν ἄκραν, ἥντινα λέγουσι τῆς
 Εὐρώπης εἶναι ἀρχὴν, καὶ τὰς Ἑσπερίδας νήσους,
 ὅπου ὁ κασσίτερος γεννᾶται, τὸ ἔθνος τῶν λαμπροτάτων
-Ἰβήρων κατοικεῖ.</p></div>
-<div type="textpart" subtype="section" n="59" corresp="urn:cts:greekLit:tlg0084.tlg001:565-569">
-<p>565—569. Ἐπὶ δὲ τὰ βόρεια μέρη τοῦ ὠκεανοῦ ἄλλαι
+Ἰβήρων κατοικεῖ.</p>
+         </div>
+         <div n="59"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:565-569"
+              type="section">
+            <p>565—569. Ἐπὶ δὲ τὰ βόρεια μέρη τοῦ ὠκεανοῦ ἄλλαι
 δύο νῆσοί εἰσι Βρετανικαὶ ἐξ ἐναντίας τοῦ Ῥήνου ποταμοῦ·
 ἐκεῖσε γὰρ ὁ Ῥῆνος τὴν ἐσχάτην αὐτοῦ συστροφήν
 τῶν ὑδάτων εἰς τὴν θάλασσαν ἀπερεύγεται.
 Τούτων δὲ τῶν νήσων τὸ μέγεθος ἄπειρον, καὶ οὐδεμία
 ἄλλη ἐν πάσαις ταῖς νήσοις τῷ μεγέθει ἐξισάζεται
-ταῖς Βρεταννικαῖς.</p></div>
-<div type="textpart" subtype="section" n="60" corresp="urn:cts:greekLit:tlg0084.tlg001:570-579">
-<p>570—579, Πλησίον δὲ τῶν λεγομένων Κασσιτερίδων
+ταῖς Βρεταννικαῖς.</p>
+         </div>
+         <div n="60"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:570-579"
+              type="section">
+            <p>570—579, Πλησίον δὲ τῶν λεγομένων Κασσιτερίδων
 ἄλλος ἐστὶ πόρος μικρῶν νησίων, ὅπου αἱ γυναῖκες
 τῶν Ἀμνιτῶν ἀντιπέραν, ὃ ἔστιν ἐξ ἐναντίας, διεγειρόμεναι
 τὰ ἱερὰ τῷ Διονύσῳ κατὰ τὸν νόμον τελοῦσι
@@ -1090,9 +1255,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 τὸν μελαίνας στροφὰς ἔχοντα τῷ μεγαλοήχῳ Διονύσῳ
 οἱ Ἰνδοὶ τὸν κῶμον ἄγουσιν, ὡς κατὰ ταύτην τὴν χώραν
 αἱ γυναῖκες τῶν Ἀμνιτῶν τὸ εὐοῖ Βάκχε, τουτέστι
-τὸν ὕμνον τὸν εἰς τὰ Διονύσια τελούμενον, λέγουσιν.</p></div>
-<div type="textpart" subtype="section" n="61" corresp="urn:cts:greekLit:tlg0084.tlg001:580-586">
-<p>580—586. Πολλὴν δὲ ὁδὸν τοῦ ὠκεανοῦ ἐπὶ τὰ ἔμπροσθεν
+τὸν ὕμνον τὸν εἰς τὰ Διονύσια τελούμενον, λέγουσιν.</p>
+         </div>
+         <div n="61"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:580-586"
+              type="section">
+            <p>580—586. Πολλὴν δὲ ὁδὸν τοῦ ὠκεανοῦ ἐπὶ τὰ ἔμπροσθεν
 βόρεια μέρη ὑπὲρ τῶν Βρετανικῶννήσων διελθὼν
 ἐπὶ τὴν Θούλην νῆσον τῇ καλῶς ἐργασθείσῃ νηῒ διαπεράσαις.
 Ἐκεῖσε μὲν τοῦ ἡλίου πρὸς τὰ ἀρκτῶα
@@ -1104,9 +1272,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 μυλοειδῶς γὰρ αὐτὴν περιστρέφεται καὶ εἰς
 αὐτὴν ἐφορᾷ καθ᾿  ὅλον τὸν κύκλον, ἕως ὅτου πάλιν
 ἔλθῃ ἐπὶ τοὺς τὰ νότια μέρη, ἤγουν τὸ ἀντικείμενον
-νότιον ἡμικύκλιον, κατοικοῦντας Ἰνδοὺς καὶ Αἰθίοπας.</p></div>
-<div type="textpart" subtype="section" n="62" corresp="urn:cts:greekLit:tlg0084.tlg001:587-605">
-<p>587—605. Ἀλλ᾿  ὅταν τοῦ Σκυθικοῦ ἢ βορείου ὠκεανοῦ
+νότιον ἡμικύκλιον, κατοικοῦντας Ἰνδοὺς καὶ Αἰθίοπας.</p>
+         </div>
+         <div n="62"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:587-605"
+              type="section">
+            <p>587—605. Ἀλλ᾿  ὅταν τοῦ Σκυθικοῦ ἢ βορείου ὠκεανοῦ
 βαθὺ ῥεῦμα τῇ νηῒ περάσῃς, εἰς τοὔμπροσθεν δὲ ἐπὶ
 τὸ ἑῷον πέλαγος κάμψῃς, ἐπὶ τὴν Χρυσῆν νῆσόν σε ὁ
 πλοῦς ἄγει Ἐκεῖ δὲ ἡ τοῦ καθαροῦ ἡλίου φαίνεται
@@ -1129,9 +1300,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 τὰ τέρατα ἐκεῖνα, ἤτοι τὰ Ἐρυθραῖα κήτη, τὴν ναῦν
 σὺν τοῖς ἀνδράσι τῆς νηὸς ἢ σὺν τοῖς ναύταις καταπίοιεν.
 Τοῖς γὰρ κακοῖς ὁ θεὸς πανταχοῦ καὶ ἐν τῇ γῇ
-καὶ ἐν τῇ θαλάσσῃ μυρία κακὰ ἡτοίμασεν.</p></div>
-<div type="textpart" subtype="section" n="63" corresp="urn:cts:greekLit:tlg0084.tlg001:606-619">
-<p>606—619. Ὑπάρχει δέ σοι ἐπὶ τὰ ἔμπροσθεν μέρη
+καὶ ἐν τῇ θαλάσσῃ μυρία κακὰ ἡτοίμασεν.</p>
+         </div>
+         <div n="63"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:606-619"
+              type="section">
+            <p>606—619. Ὑπάρχει δέ σοι ἐπὶ τὰ ἔμπροσθεν μέρη
 ἔξωθεν τῆς Καρμανίδος ἄκρας ἡ Περσόνησος, Ὤγυρις
 καλουμένη, ὅπου ὁ τύμβος ἢ τὸ σῆμα τοῦ Ἐρυθραίου
 βασιλέως, ἀφ᾿  οὗ καὶ Ἐρυθρὰ ἡ ἐκεῖθι θάλασσα
@@ -1149,9 +1323,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 
 <pb n="418"/>
 δὲ κατάκρημνοι καὶ τοῖς ναύταις ἀνεπίβατοι· ὧντινων
-οὐκ ἔστι μοι εὔκολον τὰ ὀνόματα εἰπεῖν.</p></div>
-<div type="textpart" subtype="section" n="64" corresp="urn:cts:greekLit:tlg0084.tlg001:620-626">
-<p>620 626. Τὸ δὲ σχῆμα καὶ ἡ μορφὴ τῆς Ἀσίας ἐστὶν
+οὐκ ἔστι μοι εὔκολον τὰ ὀνόματα εἰπεῖν.</p>
+         </div>
+         <div n="64"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:620-626"
+              type="section">
+            <p>620 626. Τὸ δὲ σχῆμα καὶ ἡ μορφὴ τῆς Ἀσίας ἐστὶν
 ὁ ῥυσμὸς, τουτέστιν ἡ ἔκτασις καὶ ἡ περιγραφὴ, τῶν
 ἀμφοτέρων ἠπείρων, τῆς τε Εὐρώπης καὶ Λιβύης,
 ὅμοιον δέ ἐστι τὸ σχῆμα καὶ παραπλήσιον κώνῳ, ὅπερ
@@ -1162,9 +1339,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 Θήβῃ γεννηθέντος Διονύσου αἱ στῆλαι περὶ τὰ ἔσχατα
 τοῦ ὠκεανοῦ ἵστανται ἐν τοῖς ἐσχάτοις μέρεσι τῶν
 Ἰνδῶν, ὅπου ὁ Γάγγης τὸ Νυσσαῖον λευκὸν ὕδωρ ἢ τὸ
-ἀπὸ Νύσσης κατερχόμενον ἐπὶ τὸν πλαταμῶνα κυλίει.</p></div>
-<div type="textpart" subtype="section" n="65" corresp="urn:cts:greekLit:tlg0084.tlg001:627-635">
-<p>627—635. Ἀλλ᾿  οὐδαμῶς τοσοῦτον ὑπάρχει τὸ μέγεθος
+ἀπὸ Νύσσης κατερχόμενον ἐπὶ τὸν πλαταμῶνα κυλίει.</p>
+         </div>
+         <div n="65"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:627-635"
+              type="section">
+            <p>627—635. Ἀλλ᾿  οὐδαμῶς τοσοῦτον ὑπάρχει τὸ μέγεθος
 τῆς Ἀσίας γῆς, ὅσον τῆς Λιβύης καὶ Εὐρώπης, οὐδὲ
 κατὰ τὸ εἶδος ἅπαν ὅμοιον καὶ παραπλήσιον. Καὶ
 γὰρ ἐν ἐκείναις ταῖς ἡπείροις μία μεγίστη ἡγεμονεύει
@@ -1176,9 +1356,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἔχοντα, τοὺς δύο μέν, τουτέστι τὸν Περσικὸν καὶ Ἀράβιον,
 πρὸς νότον, τὸν Κάσπιον δὲ ἐς τὸν βορρᾶν ὁρῶντα
 καὶ ἐς τὸν Λίβα ἄνεμον, γείτονα τοῦ Εὐξείνου πόντον·
-ὅντινα κόλπον ἄπειρα καὶ ἀναρίθμητα ἔθνη περιοικεῖ.</p></div>
-<div type="textpart" subtype="section" n="66" corresp="urn:cts:greekLit:tlg0084.tlg001:636-651">
-<p>636—651. Ἀμφοτέρων δὲ τῶν δύο τούτων κόλπων
+ὅντινα κόλπον ἄπειρα καὶ ἀναρίθμητα ἔθνη περιοικεῖ.</p>
+         </div>
+         <div n="66"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:636-651"
+              type="section">
+            <p>636—651. Ἀμφοτέρων δὲ τῶν δύο τούτων κόλπων
 ἄπειρος ἰσθμὸς μέσον διαχωρίζει, ἔνθα κἀκεῖσε εἰς
 πολλὰ μέρη τοῖς πεδίοις περιτεινόμενος, εἰς τὰ μέσα
 δὲ ἁπάσης τῆς Ἀσίας ὄρος ἐπιβέβηκεν ἀρξάμενον ἀπὸ
@@ -1199,9 +1382,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 πλησιόχωρον. Ἀρτίως δὲ διέλθω καὶ περιγένωμαι
 λέξων πάντα τὰ ἔθνη, ὅσα διάδηλα καὶ ἐπίσημα τὴν
 Ἀσίαν οἰκεῖ, αἱ δὲ Μοῦσαι τὴν εὐθεῖαν ὁδὸν καὶ μὴ
-διεσπαρμένην φέροιεν.</p></div>
-<div type="textpart" subtype="section" n="67" corresp="urn:cts:greekLit:tlg0084.tlg001:652-662">
-<p>652—662. Πλησίον μὲν οὖν τῆς Μαιώτιδος λίμνης
+διεσπαρμένην φέροιεν.</p>
+         </div>
+         <div n="67"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:652-662"
+              type="section">
+            <p>652—662. Πλησίον μὲν οὖν τῆς Μαιώτιδος λίμνης
 αὐτοὶ οἱ Μαιῶται οἰκοῦσι, καὶ τὸ γένος τοῦ πολεμικωτάτου
 Ἄρεος, τὰ ἔθνη τῶν ἀγαυῶν Σαυροματῶν· καὶ
 γὰρ ἐξ ἐκείνης τῆς συνουσίας τὴν γένεσιν ἕλκουσι τῶν
@@ -1215,9 +1401,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 μυχὸν ἢ τὸ μέσον τῆς Μαιώτιδος λίμνης ἐκβάλλει,
 ὅστις καὶ τὴν Εὐρώπην ἀπὸ τῆς Ἀσίας διαχωρίζει,
 ἐπὶ τὴν δύσιν μὲν τὴν Εὐρώπην, ἐπὶ δὲ τὰς αὐγὰς,
-ἤτοι τὴν ἀνατολὴν, τὴν τῆς Ἀσίας ἤπειρον.</p></div>
-<div type="textpart" subtype="section" n="68" corresp="urn:cts:greekLit:tlg0084.tlg001:663-679">
-<p>663 679. Τούτου δὲ τοῦ Τανάϊδος αἱ μὲν πηγαὶ ἐν
+ἤτοι τὴν ἀνατολὴν, τὴν τῆς Ἀσίας ἤπειρον.</p>
+         </div>
+         <div n="68"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:663-679"
+              type="section">
+            <p>663 679. Τούτου δὲ τοῦ Τανάϊδος αἱ μὲν πηγαὶ ἐν
 τοῖς Καυκασίοις πόρρωθεν ἀναβράζονται, ἤτοι ἀναπέμπονται,
 οὗτος δὲ ἔνθα κἀκεῖσε ἐπὶ τὰ Σκυθικὰ
 ὁρμῶν ἐπιτρέχει πεδία. Τούτου δὲ κυμαίνοντος ἀπὸ
@@ -1236,9 +1425,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἐκείνην τὴν γῆν, οἵτινες σὺν κακαῖς συστροφαῖς ὁρμώμενοι
 τήν τε γῆν ἅπασαν ἐκείνην καὶ τὰ πευκόεντα
 ὄρη συγκλονοῦσι. Τοσοῦτοι μὲν περὶ τὸν Τάναῖν ποταμὸν
-κατοικοῦσιν.</p></div>
-<div type="textpart" subtype="section" n="69" corresp="urn:cts:greekLit:tlg0084.tlg001:680-694">
-<p>680—694. Οἱ δὲ Σινδοὶ καὶ οἱ Κιμμέριοι πυκνοὶ καὶ
+κατοικοῦσιν.</p>
+         </div>
+         <div n="69"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:680-694"
+              type="section">
+            <p>680—694. Οἱ δὲ Σινδοὶ καὶ οἱ Κιμμέριοι πυκνοὶ καὶ
 συνεχεῖς ὄντες τοὺς Σαυρομάτας ἐπέχουσιν, οἳ τε πλησίον
 τοῦ Εὐξείνου ὄντες Κερκέτιοί τε καὶ Ὀρέται καὶ
 οἱ ἰσχυρότατοι Ἕλληνες, οὕστινάς ποτε ἀπὸ τοῦ Ξάνθου
@@ -1255,9 +1447,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 τοῖς ὑψηλοῖς ὄρεσιν αὔξεται· ὅπου ὁ Φᾶσις ποταμὸς
 κατὰ τὸν νῶτον τοῦ Κιρκαίου πεδίου συστρεφόμενος εἰς
 τὸν Εὔξεινον πόντον τὸ ἀχνῶδες καὶ χορτῶδες αὐτοῦ
-ἀπερεύγεται, ἀπὸ Ἀρμενίου ὄρους ἀρξάμενος.</p></div>
-<div type="textpart" subtype="section" n="70" corresp="urn:cts:greekLit:tlg0084.tlg001:695-705">
-<p>695—705. Πρὸς δὲ τὴν ἀνατολὴν τούτου καὶ τὸν βορρᾶν
+ἀπερεύγεται, ἀπὸ Ἀρμενίου ὄρους ἀρξάμενος.</p>
+         </div>
+         <div n="70"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:695-705"
+              type="section">
+            <p>695—705. Πρὸς δὲ τὴν ἀνατολὴν τούτου καὶ τὸν βορρᾶν
 ὁ ἰσθμὸς τῆς Κασπίας θαλάσσης καὶ τοῦ Εὐξείνου
 ἐπίκειται. Ἐπὶ δὲ τούτῳ τῷ ἰσθμῷ τὸ ἀνατολικὸν
 ἔθνος κατοικεῖ τῶν Ἰβήρων (οἵτινές ποτε Ἴβηρες ἀπὸ
@@ -1273,9 +1468,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 περιβαλόμενοι, εὐ οἱ εὐάν λέγοντες. Οὗτος δὲ ὁ Διόνυσος
 ταῖς ἑαυτοῦ φρεσὶ τὴν γενεὰν τῶν ἀνθρώπων
 καὶ τὰ ἤθεα τῆς γῆς ἐκείνης, τουτέστι περιφραστικῶς
-τὴν γῆν ἐκείνην, ἠγάπησεν.</p></div>
-<div type="textpart" subtype="section" n="71" corresp="urn:cts:greekLit:tlg0084.tlg001:706-717">
-<p>706—717. Ἐπὶ τούτοις δὲ ἡ Κασπία κυμαίνεται θάλασσα·
+τὴν γῆν ἐκείνην, ἠγάπησεν.</p>
+         </div>
+         <div n="71"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:706-717"
+              type="section">
+            <p>706—717. Ἐπὶ τούτοις δὲ ἡ Κασπία κυμαίνεται θάλασσα·
 ῥᾳδίως δέ σοι καὶ ταύτην τὴν θάλασσαν καταγράψαιμι,
 οὐδαμῶς μὲν τῶν ἄποθεν ἀπῳκισμένων
 χωρῶν τὰς θέσεις ἰδὼν, οὐδὲ μετὰ νηὸς περάσας· οὐδὲ
@@ -1290,9 +1488,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἀλλ᾿  αἱ Μοῦσαί με ἄγουσι καὶ φέρουσιν, αἵτινες
 χωρὶς πλανήσεως καὶ κακοπαθείας τὴν πολλὴν θάλασσαν
 καὶ τὴν ἄπειρον γῆν καὶ τὰ ὄρη καὶ τὴν αἰθερίαν
-ὁδὸν τῶν ἀστέρων μετρήσασθαι δύνανται.</p></div>
-<div type="textpart" subtype="section" n="72" corresp="urn:cts:greekLit:tlg0084.tlg001:718-725">
-<p>718—725. Ἀλλὰ τῆς μὲν Κασπίας θαλάσσης τὸ σχῆμα
+ὁδὸν τῶν ἀστέρων μετρήσασθαι δύνανται.</p>
+         </div>
+         <div n="72"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:718-725"
+              type="section">
+            <p>718—725. Ἀλλὰ τῆς μὲν Κασπίας θαλάσσης τὸ σχῆμα
 πανταχοῦ περιελισσόμενον καὶ περιερχόμενον κυκλοτερές
 ἐστιν· οὐδαμῶς ἂν ἐκείνην ἐπὶ τρεῖς κύκλους τῆς
 σελήνης, τουτέστιν ἐπὶ τρεῖς μῆνας, περάσεις· τοσοῦτον
@@ -1301,9 +1502,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ὠκεανοῦ ἀναμίγνυται· ἥτις Ὑρκανία ἐν τοῖς ἀνδράσι
 θαύματα πολλὰ αὔξει καὶ ἕτερα, ἀναβλαστάνει δέ καὶ
 τὸν κρύσταλλον καὶ τὴν σκοτεινὴν ἴασπιν, τὴν ἐχθρὰν
-οὖσαν ταῖς ἐμπούσαις καὶ τοῖς δαίμοσιν ἢ φάσμασιν.</p></div>
-<div type="textpart" subtype="section" n="73" corresp="urn:cts:greekLit:tlg0084.tlg001:726-738">
-<p>726—738. Ἅπαντα δέ σοι ἔθνη λέξω, ὅσα τὴν Ὑρκανίαν
+οὖσαν ταῖς ἐμπούσαις καὶ τοῖς δαίμοσιν ἢ φάσμασιν.</p>
+         </div>
+         <div n="73"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:726-738"
+              type="section">
+            <p>726—738. Ἅπαντα δέ σοι ἔθνη λέξω, ὅσα τὴν Ὑρκανίαν
 ἢ Κασπίαν θάλασσαν περιοικεῖ, ἀρξάμενος ἀπὸ
 τῆς δυτικῆς πλευρᾶς ἐκ τοῦ βορρᾶ. Πρῶτοι μὲν οἱ
 Σκύθαι ὑπάρχουσιν, ὁπόσοι κατὰ τὴν παραλίαν οἰκοῦσι
@@ -1321,9 +1525,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 χώραν τῆς ἠπείρου, ὃ ἔστι τὴν μεσόγειον, κατοικοῦσιν,
 ὑπὸ τοῖς κνημοῖς τοῦ Παρνασσοῦ· εἰς δὲ τὸ ἕτερον μέρος,
 τῆς Ὑρκανίας δηλονότι τὸ δεξιὸν, ἐπὶ τοῖς Κασπίοις
-ὕδασιν οἱ Δερκέβιοι.</p></div>
-<div type="textpart" subtype="section" n="74" corresp="urn:cts:greekLit:tlg0084.tlg001:739-748">
-<p>739—748. Μετὰ τούτους δὲ τοὺς Δερκεβίους ἐπὶ τὴν
+ὕδασιν οἱ Δερκέβιοι.</p>
+         </div>
+         <div n="74"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:739-748"
+              type="section">
+            <p>739—748. Μετὰ τούτους δὲ τοὺς Δερκεβίους ἐπὶ τὴν
 ἀνατολὴν πέραν τοῦ ἠχητικοῦ Ἀράξου ἄνδρες πολεμικοὶ
 καὶ τοξόται Μασσαγέται κατοικοῦσιν, ἐφ᾿  οἷς μήτε
 αὐτὸς ἐγὼ πλησιάσαιμι καὶ προσεγγίσαιμι, μήτε ἄλλος
@@ -1336,9 +1543,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 οἱ Χωράσμιοι, ἐφ᾿  οἷς ἡ Σουγδία ἐστὶ γῆ, ἧστινος κατὰ
 τὸ μέσον ἐστὶν ὁ μέγας ποταμὸς Ὦξος, ὅστις τὸ περὶ
 τὰς Διονύσου κείμενον στήλας Ἠμωδὸν ὄρος καταλιπὼν
-ἐπὶ τὴν Κασπίδα κατέρχεται.</p></div>
-<div type="textpart" subtype="section" n="75" corresp="urn:cts:greekLit:tlg0084.tlg001:749-761">
-<p>749—761. Μετὰ τοῦτον δὲ ἐπὶ ταῖς προχοαῖς Ἰαξάρτου
+ἐπὶ τὴν Κασπίδα κατέρχεται.</p>
+         </div>
+         <div n="75"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:749-761"
+              type="section">
+            <p>749—761. Μετὰ τοῦτον δὲ ἐπὶ ταῖς προχοαῖς Ἰαξάρτου
 κατοικοῦσιν οἱ Σάκαι τόξα φέροντες, ὡς ὄντες
 πολεμικοὶ, ἅτινα οὐδαμῶς τις ἄλλος τοξευτὴς ἀπελέγξοι
  διὰ τὸ ἀκριβὲς καὶ εὔστοχον· καὶ γὰρ οὐδαμῶς αὐτοῖς
@@ -1356,9 +1566,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 κατὰ τὰ ἔσχατα μέρη· πλησίον δὲ αὐτῶν δυσάνεμος
 καὶ τοῖς χειμερίοις ἀνέμοις καὶ ταῖς χαλάζαις
 παράκειται γῆ. Τοσοῦτοι μὲν ἄνδρες τὴν Κασπίαν θάλασσαν
-περιοικοῦσιν.</p></div>
-<div type="textpart" subtype="section" n="76" corresp="urn:cts:greekLit:tlg0084.tlg001:762-771">
-<p>762—771. Διαλογιζόμενος δὲ σκόπει ἀρτίως ἀπὸ τῶν
+περιοικοῦσιν.</p>
+         </div>
+         <div n="76"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:762-771"
+              type="section">
+            <p>762—771. Διαλογιζόμενος δὲ σκόπει ἀρτίως ἀπὸ τῶν
 Κόλχων καὶ τοῦ Φάσιδος ποταμοῦ ἐπὶ τὴν δύσιν παρὰ
 τὸ χεῖλος τοῦ Εὐξείνου πόντου τὸ πλῆθος τῶν ἐθνῶν
 ἄχρι τοῦ Θρᾳκικοῦ στόματος, ἤγουν τοῦ Βοσπόρου,
@@ -1372,9 +1585,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 τὰ τοῦ μοχθηροῦ σιδήρου ἔργα μεμαθηκότες,
 οἵτινες βαρυκτύποις σφύραις ἐπὶ τοῖς ἄκμοσιν
 ἐστηρικότες τῆς δεινῆς ταλαιπωρίας καὶ τοῦ χαλεποῦ
-κόπου οὐδαμῶς παύονται.</p></div>
-<div type="textpart" subtype="section" n="77" corresp="urn:cts:greekLit:tlg0084.tlg001:772-782">
-<p>772—782. Μετὰ δὲ τούτους τοὺς Χάλυβας τῆς Ἀσσυρίας
+κόπου οὐδαμῶς παύονται.</p>
+         </div>
+         <div n="77"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:772-782"
+              type="section">
+            <p>772—782. Μετὰ δὲ τούτους τοὺς Χάλυβας τῆς Ἀσσυρίας
 γῆς ἡ πρόχυσις ἐκτετάνυσται· λέγει δὲ τὰ περὶ
 Θερμώδοντα καὶ Παφλαγονίαν· ὅπου ταῖς Ἀμαζόσιν
 ἀπὸ τοῦ Ἀρμενίου ὄρους τὸ λευκὸν ὕδωρ ὁ πολεμικώτατος
@@ -1389,9 +1605,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἔχει. Περὶ ἐκείνου δὲ τοῦ Θερμώδοντος ποταμοῦ κρυμώδεις
 ἢ ψυχρὰς ὄχθας τὸν καθαρὸν λίθον τοῦ κρυστάλλου,
 καθάπερ χειμερίαν πάχνην, τέμνοις, εὑρήσεις
-δὲ καὶ τὴν πρασινίζουσαν ἴασπιν.</p></div>
-<div type="textpart" subtype="section" n="78" corresp="urn:cts:greekLit:tlg0084.tlg001:783-792">
-<p>783—792. Ἑξῆς δὲ ὁ Ἶρις ποταμὸς τὸ καθαρὸν ὕδωρ
+δὲ καὶ τὴν πρασινίζουσαν ἴασπιν.</p>
+         </div>
+         <div n="78"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:783-792"
+              type="section">
+            <p>783—792. Ἑξῆς δὲ ὁ Ἶρις ποταμὸς τὸ καθαρὸν ὕδωρ
 εἰς τὸν Πόντον ἐκβάλλει· ἐπὶ τούτῳ δὲ αἱ τοῦ Ἅλυος
 ποταμοῦ ῥοαὶ ἀναβλύζουσι πλησίον τῆς Καραμβίας
 ἄκρας, ἐπὶ δὲ τὸν βορρᾶν ἑλκόμεναι ἀπὸ τοῦ Ἀρμενίου
@@ -1404,17 +1623,23 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 φασιν ἐκβεβληκέναι. Καὶ τοῦτον μὲν τὸν ἰὸν ἀναμεμιγμένον
 ἡ γῆ ἐδέξατο καὶ τοῖς Μαριανδυνοῖς ἀνδράσι
 μεγάλην βλάβην ἐφύτευσε, τὴν ἀκόνιτον δηλονότι θανάσιμον
-οὖσαν.</p></div>
-<div type="textpart" subtype="section" n="79" corresp="urn:cts:greekLit:tlg0084.tlg001:793-798">
-<p>793—798. Πλησίον δὲ τῶν Μαριανδυνῶν οἱ Βιθυνοὶ
+οὖσαν.</p>
+         </div>
+         <div n="79"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:793-798"
+              type="section">
+            <p>793—798. Πλησίον δὲ τῶν Μαριανδυνῶν οἱ Βιθυνοὶ
 λιπαρὰν καὶ καλὴν χώραν κατοικοῦσιν, ἔνθα ὁ Ῥήβας
 τὸ κάλλιστον ὕδωρ εἰς τὸν Πόντον ἐκβάλλει, ὅστις
 παρὰ τοῖς στόμασι τοῦ Πόντου διέρχεται, οὗτινος κάλλιστον
 ὕδωρ ἐπὶ τὴν γῆν σύρεται. Τοσοῦτοι μὲν ἄνδρες
 τοῦ Πόντου περίοικοι ὑπάρχουσιν· ἐκεῖνά σοι
-ὑπαρχέτω τὰ προκατηριθμημένα τῆς Σκυθίας ἔθνη.</p></div>
-<div type="textpart" subtype="section" n="80" corresp="urn:cts:greekLit:tlg0084.tlg001:799-808">
-<p>799—808. Ἀρτίως δὲ τῆς παραλίας Ἀσίας τὸν πόρον,
+ὑπαρχέτω τὰ προκατηριθμημένα τῆς Σκυθίας ἔθνη.</p>
+         </div>
+         <div n="80"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:799-808"
+              type="section">
+            <p>799—808. Ἀρτίως δὲ τῆς παραλίας Ἀσίας τὸν πόρον,
 τουτέστι τὴν θέσιν, διαγράψαιμι, ὅστις δὴ ἐπὶ τὸν
 Ἑλλήσποντον ὁδεύων πρὸς τὸν νότον πορεύεται καὶ
 πρὸς τὸν νοτιώτατον ῥοῦν τοῦ Αἰγαίου πελάγους, μέχρι
@@ -1427,9 +1652,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ποταμὸς τὰ ἐπιθυμητὰ αὐτοῦ ῥεῖθρα ἐπιπέμπει, ἐφ᾿ 
 οὗτινός ποτε Κίου προχοαῖς ἢ ἐκβολαῖς τὸν ἰσχυρρότατον
 θεράποντα τοῦ μεγάλου Ἡρακλέους τὸν Ὕλαν ἡ
-νύμφη ἀνήρπασεν.</p></div>
-<div type="textpart" subtype="section" n="81" corresp="urn:cts:greekLit:tlg0084.tlg001:809-819">
-<p>809—819. Ἐκεῖσε τῆς μικροτέρας Φρυγίας ὁ πολὺς
+νύμφη ἀνήρπασεν.</p>
+         </div>
+         <div n="81"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:809-819"
+              type="section">
+            <p>809—819. Ἐκεῖσε τῆς μικροτέρας Φρυγίας ὁ πολὺς
 ἢ μέγας ἀγκὼν ἐπὶ τὸν Ἑλλήσποντον ἐπιτρέχει, ἡ δὲ
 ἑτέρα Φρυγία ἡ μεγάλη ἔνδοθεν ἐπὶ τοῖς ὕδασι τοῦ
 Σαγγαρίου ποταμοῦ κεῖται. Ἀλλ᾿  ἡ μὲν μεγάλη
@@ -1441,9 +1669,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 προσδεχομένην Ἴλιον ὑπὸ ταῖς πλευραῖς αὐτῆς ἔχουσα,
 τὴν λαμπρὰν καὶ ἐπίσημον πόλιν τῶν πάλαι γεγενημένων
 ἡμιθέων, ἣν ὅ τε Ποσειδῶν καὶ Ἀπόλλων ἔκτισε,
-καὶ ἡ Ἥρα καὶ ἡ Ἀθηνᾶ ἐπόρθησεν.</p></div>
-<div type="textpart" subtype="section" n="82" corresp="urn:cts:greekLit:tlg0084.tlg001:820-829">
-<p>820—829. Μετὰ ταύτην δὲ τὴν Φρυγίαν ἡ Αἰολὶς γῆ
+καὶ ἡ Ἥρα καὶ ἡ Ἀθηνᾶ ἐπόρθησεν.</p>
+         </div>
+         <div n="82"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:820-829"
+              type="section">
+            <p>820—829. Μετὰ ταύτην δὲ τὴν Φρυγίαν ἡ Αἰολὶς γῆ
 παρατέταται παρὰ τὸν μέγαν Ἑλλήσποντον καὶ παρὰ
 τὸ χεῖλος, ἤγουν τὴν παραλίαν, τοῦ Αἰγαίου. Ἐφεξῆς
 δὲ μετὰ τὴν Αἰολίδα οἱ εὐδοξότατοι Ἴωνες κατοικοῦσιν,
@@ -1455,9 +1686,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 Ἔφεσον τὴν μεγάλην πόλιν τῆς Ἀρτέμιδος
 ὅπου ποτὶ τῇ θεᾷ ἐν τῇ ῥίζῃ τῆς πτελέας αἱ Ἀμαζονίδες
 βωμὸν κατεσκεύασαν μέγιστον καὶ ἐξαίσιον θαῦμα
-τοῖς ἀνθρώποις.</p></div>
-<div type="textpart" subtype="section" n="83" corresp="urn:cts:greekLit:tlg0084.tlg001:830-845">
-<p>830—845. Ἐπὶ ταύταις δὲ ἡ Μήονία ἐπὶ τὴν ἀνατολὴν
+τοῖς ἀνθρώποις.</p>
+         </div>
+         <div n="83"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:830-845"
+              type="section">
+            <p>830—845. Ἐπὶ ταύταις δὲ ἡ Μήονία ἐπὶ τὴν ἀνατολὴν
 ἐκτέταται ὑπὸ τῷ ἠνεμόεντι ὄρει Τμώλῳ, ἀφ᾿  οὗ
 ὁ Πακτωλὸς διερχόμενος ταῖς συστροφαῖς αὑτοῦ ὁμοῦ
 χρυσὸν ἐπισύρων ἠχεῖ. Ἐπὶ τούτου δὲ ταῖς πλευραῖς
@@ -1476,18 +1710,24 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 παρθένοι καθάπερ νεβροὶ συσκιρτῶσιν. Ἐπὶ ταύταις
 δὲ καὶ αἱ τῶν ἀνέμων πνοαὶ τοὺς ἐπιθυμητοὺς ἐπὶ τοῖς
 στήθεσιν αὐτῶν χιτῶνας κτυποῦσαι ἠχοῦσιν. Ἀλλὰ
-ταῦτα μὲν τοῖς Λυδοῖς ἀνθρώποις ἐν φροντίδι γενήσονται.</p></div>
-<div type="textpart" subtype="section" n="84" corresp="urn:cts:greekLit:tlg0084.tlg001:846-853">
-<p>846—853. Τὴν δὲ ἐπὶ τὴν θάλασσαν κειμένην γῆν περὶ
+ταῦτα μὲν τοῖς Λυδοῖς ἀνθρώποις ἐν φροντίδι γενήσονται.</p>
+         </div>
+         <div n="84"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:846-853"
+              type="section">
+            <p>846—853. Τὴν δὲ ἐπὶ τὴν θάλασσαν κειμένην γῆν περὶ
 τὰς ἐκβολὰς τοῦ Ξάνθου, καλλίστου ἢ καλὰ ῥεύματα
 ἔχοντος ποταμοῦ, κατοικοῦσιν οἱ Λύκιοι· ὅπου τὰ ὄρη
 τοῦ Ταύρου βαθέα κρημνὰ ἔχοντος μέχρι τῆς Παμφυλίας
 φέρεται, Κράγον δὲ αὐτὸν καλοῦσιν. Ἐκεῖθεν
 δὲ πάλιν θεάσῃ περὶ τὸν ῥοῦν τοῦ Εὐρυμέδοντος ποταμοῦ
 ὑπεράνωθεν τῆς θαλάσσης Ἄσπενδον πόλιν, ὅπου
-τὴν Ἀφροδίτην ταῖς τῶν συῶν ἐξιλεοῦνται σφαγαῖς.</p></div>
-<div type="textpart" subtype="section" n="85" corresp="urn:cts:greekLit:tlg0084.tlg001:854-860">
-<p>854—860. Ἄλλαι δὲ ἐφεξῆς τῆς Παμφυλίας ὑπάρχουσι
+τὴν Ἀφροδίτην ταῖς τῶν συῶν ἐξιλεοῦνται σφαγαῖς.</p>
+         </div>
+         <div n="85"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:854-860"
+              type="section">
+            <p>854—860. Ἄλλαι δὲ ἐφεξῆς τῆς Παμφυλίας ὑπάρχουσι
 πόλεις, ἥ τε Κώρυκος καὶ ἡ Πέργη καὶ ἡ ἀνεμώδης
 Φάσηλις. Μετὰ ταῦτα δὲ ἐπὶ τὴν ἀνατολικὴν μεσόγειον
 κατοικοῦσιν οἱ ἐν τοῖς πολέμοις ἐπιτήμονες καὶ
@@ -1495,9 +1735,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 τῶν Πισιδέων πλουσία γῆ ἐστιν, ὅπου αἱ Πισιδικαὶ
 πόλεις, ἣ τε Τερμησσὸς καὶ ἡ Λύρβη καὶ ἡ Σέλγη,
 ἥντινα Σέλγην ὁ τῶν Ἀμυκλαίων, ἤτοι τῶν Λακώνων,
-λαὸς ὁ μεγαλώνυμος κατοικισθῆναι ἐποίησεν.</p></div>
-<div type="textpart" subtype="section" n="86" corresp="urn:cts:greekLit:tlg0084.tlg001:861-873">
-<p>861—873. Ἐκεῖθεν δὲ, δηλονότι· ἀπὸ τῆς Πισιδίας, ἡ
+λαὸς ὁ μεγαλώνυμος κατοικισθῆναι ἐποίησεν.</p>
+         </div>
+         <div n="86"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:861-873"
+              type="section">
+            <p>861—873. Ἐκεῖθεν δὲ, δηλονότι· ἀπὸ τῆς Πισιδίας, ἡ
 
 <pb n="421"/>
 περίδρομος θάλασσα συνεστραμμένην ὁδὸν πρὸς ἀνατολὴν
@@ -1515,9 +1758,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ὁ ἥρως Βελλεροφόντης ἐς τὸν οὐρανὸν πορευόμενος κατενεχθεὶς
 κατεάγη τοῦ ἵππου πτερορρυήσαντος. Ἐκεῖ
 δὲ ἔστι καὶ τὸ Ἀλήϊον πεδίον, ἐφ᾿  οὗτινος πεδίου ἄποθεν
-καὶ χωρὶς τῶν ἀνθρώπων πλανώμενος διῃτᾶτο.</p></div>
-<div type="textpart" subtype="section" n="87" corresp="urn:cts:greekLit:tlg0084.tlg001:874-880">
-<p>874—880. Πολλαὶ δὲ τῶν Κιλίκων ἐφεξῆς ὑπάρχουσι
+καὶ χωρὶς τῶν ἀνθρώπων πλανώμενος διῃτᾶτο.</p>
+         </div>
+         <div n="87"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:874-880"
+              type="section">
+            <p>874—880. Πολλαὶ δὲ τῶν Κιλίκων ἐφεξῆς ὑπάρχουσι
 πόλεις, ἣ τε Λυρνησσὸς καὶ ἡ Μαλλὸς καὶ ἡ Ἀγχιάλεια
 καὶ οἱ Σόλοι, αἱ μὲν κατὰ τὸ μεσόγειον, αἱ δὲ
 πλησίον αὐτῆς τῆς θαλάσσης. Ἐπὶ ταύτης δὲ τῆς
@@ -1527,9 +1773,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 γὰρ ἐπὶ τὴν δύσιν στρέφεται ὁ ὁλκὸς, ἤτοι ἡ περιφέρεια
 καὶ ὁ κύκλος, τῆς λευκῆς θαλάσσης, μέχρι τοῦ
 ὑψηλοῦ καὶ παραθαλασσίου καὶ βαθυκρήμνου, ἤτοι τοῦ
-συμφύτου καὶ δασέος, Κασίου ὄρους.</p></div>
-<div type="textpart" subtype="section" n="88" corresp="urn:cts:greekLit:tlg0084.tlg001:881-886">
-<p>881—886. Τὸν δὲ λοιπὸν πόρον τῶν γαιῶν τῆς Ἀσίας
+συμφύτου καὶ δασέος, Κασίου ὄρους.</p>
+         </div>
+         <div n="88"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:881-886"
+              type="section">
+            <p>881—886. Τὸν δὲ λοιπὸν πόρον τῶν γαιῶν τῆς Ἀσίας
 ῥᾳδίως σοι καὶ εὐκόλως προσείποιμι. Οὗτος δέ σοι ὁ
 λόγος ἐν ταῖς φρεσὶν ὑπαρχέτω, καὶ ἡ χάρις τῶν πονηθέντων
 τούτων ἔργων, ἤγουν ἡ τῶν ποιημάτων τούτων
@@ -1537,9 +1786,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 τοῦτον τὸν πόρον τῆς Ἀσίας συνίης, ταχέως ἂν καὶ
 ἄλλοις καλῶς καὶ ἐπισταμένως ἀγορεύσοις καὶ λέξοις
 τούς τε ποταμοὺς καὶ τὴν θέσιν τῶν πόλεων καὶ ἑκάστην
-χώραν.</p></div>
-<div type="textpart" subtype="section" n="89" corresp="urn:cts:greekLit:tlg0084.tlg001:887-893">
-<p>887—893. Ἔστω μὲν οὖν τὸ λοιπὸν τῆς Ἀσίας σχῆμα
+χώραν.</p>
+         </div>
+         <div n="89"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:887-893"
+              type="section">
+            <p>887—893. Ἔστω μὲν οὖν τὸ λοιπὸν τῆς Ἀσίας σχῆμα
 τετράπλευρον καὶ ἰσοσκελὲς, τοῖς μακροῖς καὶ ἐπιμήκεσι
 πεδίοις ἡπλωμένον καὶ ἐκτεταμένον πρὸς ἀνατολήν.
 Ἐπὶ γὰρ τοῖς προλεχθεῖσι παῤ ἐμοῦ εἰπόντος
@@ -1549,9 +1801,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἔστω· ὁ δὲ Νεῖλος ποταμὸς τὸ ἑσπέριον ἢ δυτικώτερον
 πλεῦρον ὑπαρχέτω· τὸ δὲ ἑῷον, ἤτοι τὸ ἀνατολικώτερον,
 ὁ Ἰνδικὸς ὠκεανός· τὸ δὲ νότιον ἡ
-Ἐρυθρὰ θάλασσα ἢ τὸ κῦμα τῆς Ἐρυθρᾶς θαλάσσης.</p></div>
-<div type="textpart" subtype="section" n="90" corresp="urn:cts:greekLit:tlg0084.tlg001:894-917">
-<p>894—917. Διανοούμενος δὲ σκέπτου καθ᾿  ὃν τρόπον
+Ἐρυθρὰ θάλασσα ἢ τὸ κῦμα τῆς Ἐρυθρᾶς θαλάσσης.</p>
+         </div>
+         <div n="90"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:894-917"
+              type="section">
+            <p>894—917. Διανοούμενος δὲ σκέπτου καθ᾿  ὃν τρόπον
 ἄρτι καὶ ἐπὶ τὰς ἀνατολὰς παραγενήσομαι, ἀπὸ τῆς
 Συρίας ὅθεν κατέλιπον ἀρξάμενος, οὐδαμῶς δέ μοί τις
 ἀνὴρ καθάπερ λόγου ψευσθέντος ἐπιμέμψοιτο. Ἀλλ᾿ 
@@ -1584,18 +1839,24 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 Ποσιδήϊα ἔργα, ἀντὶ τοῦ τὴν Ποσείδιον πόλιν οὕτω
 καλουμένην, καὶ τὰ ἱερὰ, τουτέστι μεγάλα, τέμπη
 τῆς Δάφνης, ὅπου καὶ ἐπωνύμως τῷ Ἀντιόχῳ Ἀντιόχεια
-λέγεται.</p></div>
-<div type="textpart" subtype="section" n="91" corresp="urn:cts:greekLit:tlg0084.tlg001:918-922">
-<p>918—922. Μέση δὲ τῶν εἰρημένων δύο πόλεων, τοῦ
+λέγεται.</p>
+         </div>
+         <div n="91"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:918-922"
+              type="section">
+            <p>918—922. Μέση δὲ τῶν εἰρημένων δύο πόλεων, τοῦ
 τε Ποσειδίου καὶ Δάφνης, ὑπάρχει ἡ Ἀπάμεια πόλις.
 Πρὸς δὲ τὴν ἀνατολὴν τῆς Ἀπαμείας πολὺς ὁ ὑγρὸς
 Ὀρόντης κατασύρεται, τήν τε Ἀντιόχου γῆν, ἤτοι τὴν
 Ἀντιόχειαν, μέσην διορίζων, ἢ παραρρέων μᾶλλον
 καὶ οὐ διορίζων. Ἅπασα δὲ ἡ τῶν τριῶν Συριῶν γῆ
 πλουσία τε καὶ εὔβοτος ὑπάρχει, καὶ πρὸς τὸ τρέφειν
-τὰ πρόβατα καὶ τὸν καρπὸν τοῖς δένδρεσιν αὔξειν.</p></div>
-<div type="textpart" subtype="section" n="92" corresp="urn:cts:greekLit:tlg0084.tlg001:923-932">
-<p>923—932. Ταύτης δὲ τῆς Συρίας, οὐ τῆς Ἀντιοχείας,
+τὰ πρόβατα καὶ τὸν καρπὸν τοῖς δένδρεσιν αὔξειν.</p>
+         </div>
+         <div n="92"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:923-932"
+              type="section">
+            <p>923—932. Ταύτης δὲ τῆς Συρίας, οὐ τῆς Ἀντιοχείας,
 ἐπὶ τὸ πρόσω τοῦ νότου ὁδεύων τὸν ἐνδότατον πόρον ἢ
 μυχὸν τοῦ Ἀραβίου κόλπου θεάσῃ, ὅστις ἀναμεταξὺ
 τῆς Συρίας καὶ τῆς ἐπεράστου καὶ καλῆς Ἀραβίας συστρέφεται,
@@ -1610,9 +1871,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἤτοι τὸ τέλος καὶ ἡ βάσις αὐτῆς, νοτιωτέρα ἐπὶ τὴν
 ἀνατολὴν τετραμμένη ὑπὸ τῶν Ἐρυθραίων κυμάτων
 τοῦ ὠκεανοῦ κλύζεται, τουτέστιν ὑπὸ τῆς Ἐρυθρᾶς
-θαλάσσης.</p></div>
-<div type="textpart" subtype="section" n="93" corresp="urn:cts:greekLit:tlg0084.tlg001:933-953">
-<p>933—953. Καὶ ταύτης δὲ τῆς Ἀραβίας τὴν θέσιν λέξω.
+θαλάσσης.</p>
+         </div>
+         <div n="93"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:933-953"
+              type="section">
+            <p>933—953. Καὶ ταύτης δὲ τῆς Ἀραβίας τὴν θέσιν λέξω.
 Ἐξόχως γὰρ καὶ ὑπὲρ πασῶν πολύπλουτα καὶ λαμπρὰ
 κατοικοῦνται ἔθνη, ἐξοχώτατον δὲ καὶ ἐξαίρετο??
 
@@ -1643,9 +1907,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 καὶ χρυσοῦ μέταλλα εἶναι ἐκεῖ· οἱ δὲ ποταμοὶ ἑτέρωθεν
 τοῖς θυμιάμασι καὶ τοῖς ἀρώμασι πληθύουσιν, αὐτοί
 τε οἱ κατοικοῦντες λίαν εὐτραφῆ γῆν ἔχοντες τοῖς χρυσοῖς
-καὶ μαλακοῖς πέπλοις ἀγάλλονται.</p></div>
-<div type="textpart" subtype="section" n="94" corresp="urn:cts:greekLit:tlg0084.tlg001:954-961">
-<p>954—961. Ἀλλὰ πρῶτοι μὲν ὑπὸ τὴν ἀνάκλισιν, ἤτοι
+καὶ μαλακοῖς πέπλοις ἀγάλλονται.</p>
+         </div>
+         <div n="94"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:954-961"
+              type="section">
+            <p>954—961. Ἀλλὰ πρῶτοι μὲν ὑπὸ τὴν ἀνάκλισιν, ἤτοι
 τὴν πλευρὰν, τοῦ Λιβάνου ὄρους πλούσιοι κατοικοῦσιν
 οἱ ἐπωνύμως λεγόμενοι Ναβαταῖοι, πλησίον δὲ Χαυλάσιοι,
 οἱ περὶ τὴν Χαύλαμι οὕτω καλουμένην γῆν,
@@ -1655,9 +1922,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 καὶ πλησίον αὐτῶν οἱ Κλεταβηνοί. Τοσαῦτα
 μὲν περὶ τὴν Ἀραβίαν ἐξαίσια καὶ ἐπίσημα ἔθνη
 κατοικοῦσι, καὶ ἄλλα πάνυ πλεῖστα· μεγίστη γὰρ ἔμπροσθεν
-ἢ σφόδρα καὶ πάνυ ἐπὶ τὰ ἔμπροσθέν ἐστιν.</p></div>
-<div type="textpart" subtype="section" n="95" corresp="urn:cts:greekLit:tlg0084.tlg001:962-969">
-<p>962—969. Πρὸς ἀντιπέραν δὲ ὑπὸ τὴν πνοὴν τοῦ ζεφύρου,
+ἢ σφόδρα καὶ πάνυ ἐπὶ τὰ ἔμπροσθέν ἐστιν.</p>
+         </div>
+         <div n="95"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:962-969"
+              type="section">
+            <p>962—969. Πρὸς ἀντιπέραν δὲ ὑπὸ τὴν πνοὴν τοῦ ζεφύρου,
 ὅπου καὶ οἱ καταρράκται λέγονται εἶναι, τῶν
 ἐν ὄρεσι διαιτωμένων Ἐρεμβῶν λυπηρὰ καὶ ἀνιαρὰ γῆ
 φαίνεται, τουτέστι τῶν Τρωγλοδυτῶν Ἀράβων, οἵτινες
@@ -1669,14 +1939,20 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 Ἀράβων γένος· καὶ γὰρ ἐπὶ πᾶσιν ἀνδράσιν ὁ δαίμων
 οὐ τὴν ἴσην δύναμιν ἐπὶ τῷ ὄλβῳ ἐθήκατο, τουτέστιν
 οὐκ ἐπὶ πᾶσιν ἀνθρώποις ὁ θεὸς τὴν ἴσην μοῖραν ἐν τῇ
-εὐδαιμονίᾳ τοῦ πλούτου ἔθηκεν.</p></div>
-<div type="textpart" subtype="section" n="96" corresp="urn:cts:greekLit:tlg0084.tlg001:970-976">
-<p>970—976. Ὑπεράνω δὲ τοῦ Λιβάνου πρὸς τὰς αὐγὰς,
+εὐδαιμονίᾳ τοῦ πλούτου ἔθηκεν.</p>
+         </div>
+         <div n="96"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:970-976"
+              type="section">
+            <p>970—976. Ὑπεράνω δὲ τοῦ Λιβάνου πρὸς τὰς αὐγὰς,
 ἤτοι τὴν ἀνατολὴν, τοῦ ἡλίου τῆς ἑτέρας Συρίας, τουνότι
 τοῦ Εὐξείνου πόντου, περὶ τὰς ἐκβολὰς τοῦ Θερμώδοντος
-ποταμοῦ.</p></div>
-<div type="textpart" subtype="section" n="97" corresp="urn:cts:greekLit:tlg0084.tlg001:977-982">
-<p>977—982. Ἀπὸ δὲ τῶν ὑψηλῶν καὶ τραχέων αὐτῆς
+ποταμοῦ.</p>
+         </div>
+         <div n="97"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:977-982"
+              type="section">
+            <p>977—982. Ἀπὸ δὲ τῶν ὑψηλῶν καὶ τραχέων αὐτῆς
 ὀρῶν πρὸς τὴν ἀνατολὴν τοῦ ἀπείρου, ἤτοι μεγίστου,
 ποταμοῦ Εὐφράτου ὁ ῥοῦς φαίνεται, ὅστις δὴ Εὐφράτης
 πρῶτον μὲν ἀπὸ τοῦ Ἀρμενίου ὄρους μακρὸς ἐπὶ
@@ -1684,9 +1960,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἐξεναντίας τοῦ ἡλίου πορευόμενος, μέσον τῆς Βαβυλῶνος
 περάσας εἰς τὸν Περσικὸν κόλπον τὸν ἀφρὸν αὑτοῦ ἀπερεύγεται,
 ταῖς ἐσχάταις ἐκβολαῖς ἐγγὺς τῆς Τερηδόνος
-ὁδεύων,</p></div>
-<div type="textpart" subtype="section" n="98" corresp="urn:cts:greekLit:tlg0084.tlg001:983-991">
-<p>983—991. Μετὰ τοῦτον δὲ τὸν Εὐφράτην εἰς ἀνατολὴν
+ὁδεύων,</p>
+         </div>
+         <div n="98"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:983-991"
+              type="section">
+            <p>983—991. Μετὰ τοῦτον δὲ τὸν Εὐφράτην εἰς ἀνατολὴν
 Τίγρις ὁ ταχύτατος πάντων τῶν ποταμῶν καὶ καλὰ
 ῥεύματα ἔχων φέρεται, ὃς καὶ ἀπὸ τοῦ Νιφάτου ὄρους
 γεννᾶται, ἴσον ῥοῦν καὶ ὁμαλὸν κατὰ τὸ τάχος ἐλαύνων,
@@ -1699,9 +1978,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 πάλιν δὲ ὑπόγειος ἐξ αὐτῆς ἀνατείλας ὀξύτερον ῥοῦν
 κάτω προπέμπει, διὰ τὸ πρανὲς, ἤτοι τὸ κατωφερὲς τῶν
 χωρίων· οὐδαμῶς ἂν ἐκείνου ἐπὶ πᾶσι τοῖς ποταμοῖς
-ταχύτερον κατόψει.</p></div>
-<div type="textpart" subtype="section" n="99" corresp="urn:cts:greekLit:tlg0084.tlg001:992-1000">
-<p>992—1000. Ὅση δὲ γῆ μεταξὺ κεῖται τοῦ τε Εὐφράτου
+ταχύτερον κατόψει.</p>
+         </div>
+         <div n="99"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:992-1000"
+              type="section">
+            <p>992—1000. Ὅση δὲ γῆ μεταξὺ κεῖται τοῦ τε Εὐφράτου
 καὶ Τίγριος, ταύτην οἱ περίοικοι Μεσοποταμίαν καλοῦσιν·
 οὐδαμῶς μέντοι τὰς νομὰς ἐκείνης τῆς χώρας βούκολος
 ἀνὴρ μέμψοιτο, οὐδ᾿  ὅστις τὸν κέρᾳ καὶ ὄνυξι
@@ -1712,9 +1994,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 τῆς γῆς ἐκείνης ἡ ἄροσις ἐν τῷ αὔξειν τὴν πόαν καὶ διὰ
 τὸ κάλλος καὶ τὸ ἀνθηρὸν τῶν νομῶν. Ἐν αὐτῇ δὲ
 καὶ ἡ τῶν ἀνδρῶν γενεὰ ὅμοια καὶ παραπλησία τοῖς
-ἀθανάτοις θεοῖς κατὰ τὸ μέγεθος καὶ τὸ κάλλος αὔξεται.</p></div>
-<div type="textpart" subtype="section" n="100" corresp="urn:cts:greekLit:tlg0084.tlg001:1001-1016">
-<p>1001—1016. Πρὸς βορρᾶν δὲ τῆς Μεσοποταμίας οἱ
+ἀθανάτοις θεοῖς κατὰ τὸ μέγεθος καὶ τὸ κάλλος αὔξεται.</p>
+         </div>
+         <div n="100"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:1001-1016"
+              type="section">
+            <p>1001—1016. Πρὸς βορρᾶν δὲ τῆς Μεσοποταμίας οἱ
 Ἀρμένιοι καλὴν καὶ εὐδαίμονα γῆν κατοικοῦσι καὶ οἱ
 μαχόμενοι ἐκ τῶν χειρῶν Ματιηνοὶ, εὐτραφεῖς καὶ
 ἰσχυροὶ καὶ πλούσιοι καὶ καλῶς τὰ τοῦ πολέμου μεμαθηκότες,
@@ -1735,9 +2020,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ἔσωθεν τῆς ὀφιήτιδος πέτρας φύεται. Ὑπεράνω δὲ τῆς
 Βαβυλῶνος ἐπὶ τὴν πνοὴν τοῦ βορρᾶ οἵ τε Κισσοὶ καὶ
 οἱ Μεσαβάται καὶ οἱ Χαλωνῖται κατοικοῦσιν, ἅτινά εἰσιν
-ἔθνη Συρίας.</p></div>
-<div type="textpart" subtype="section" n="101" corresp="urn:cts:greekLit:tlg0084.tlg001:1017-1038">
-<p>1017—1038. Ἀλλ᾿  ὁπόταν ἀπὸ τῶν Ἀρμενίων ὀρῶν
+ἔθνη Συρίας.</p>
+         </div>
+         <div n="101"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:1017-1038"
+              type="section">
+            <p>1017—1038. Ἀλλ᾿  ὁπόταν ἀπὸ τῶν Ἀρμενίων ὀρῶν
 ἔμπροσθεν εἰς ἀνατολὴν ὁδεύσῃς, μετὰ ταῦτα τῶν Μήδων
 τὰ στενὰ εὑρήσεις, ὅπου ἡ Μήδεια φυγοῦσα τὸν
 Θησέα ἔμεινεν. Ὧντινων τῶν Μηδικῶν ὀρῶν πρὸς τὸν
@@ -1766,9 +2054,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 μέρη καὶ ἐπὶ τὰ νότια ἐρχομένοις ἢ πορευομένοις ἡ
 ὁδὸς ὁμοίως ἐκτέταται, ἡ μὲν πρὸς βορρᾶν ἐπὶ τὰ τῆς
 Ὑρκανίας, ἡ δὲ πρὸς νότον ἐπὶ τὰ ὄρη τῆς Περσίδος
-γῆς.</p></div>
-<div type="textpart" subtype="section" n="102" corresp="urn:cts:greekLit:tlg0084.tlg001:1039-1052">
-<p>1039—1052. Ἀλλ᾿  ἐπὶ τὸ ἔσχατον τῶν Κασπίων πυλῶν
+γῆς.</p>
+         </div>
+         <div n="102"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:1039-1052"
+              type="section">
+            <p>1039—1052. Ἀλλ᾿  ἐπὶ τὸ ἔσχατον τῶν Κασπίων πυλῶν
 οἱ πολεμικώτατοι καὶ ἐπικαμπῆ τόξα ἔχοντες Πάρθοι
 κατοικοῦσι τῶν πολεμικῶν ἔμπειροι· οὐ γὰρ τὴν γῆν
 τῷ ἀρότρῳ τέμνοντες τὴν αὔλακα ἐπ᾿  εὐθείας ὁρμῶσι,
@@ -1787,9 +2078,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 εὐωχίᾳ τρέφονται. Ἀλλ᾿  ὅμως, καίτοι ἀπροσπελάστους
 ὄντας κατὰ τὴν μάχην καὶ φοβεροὺς, ἡ τοῦ Αὐσονίων
 βασιλέως, τούτεστι τοῦ Νέρωνος, ἀκωκὴ ἢ ὀξύτης τοῦ
-δόρατος ἐταπείνωσεν.</p></div>
-<div type="textpart" subtype="section" n="103" corresp="urn:cts:greekLit:tlg0084.tlg001:1053-1062">
-<p>1053—1062. Ἐὰν δέ σε ἐπιθυμία καταλαμβάνῃ καὶ
+δόρατος ἐταπείνωσεν.</p>
+         </div>
+         <div n="103"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:1053-1062"
+              type="section">
+            <p>1053—1062. Ἐὰν δέ σε ἐπιθυμία καταλαμβάνῃ καὶ
 ἐπικρατῇ καὶ τοὺς Πέρσας ἰδεῖν, σαφῶς ἄν σοι καὶ
 τούτων τὸ γένος προσείποιμι, καὶ τῶν ἀεὶ καὶ διαπαντὸς
 κατερχομένων ποταμῶν τὸν πόρον καὶ τὰς ὁδοὺς τῶν
@@ -1801,9 +2095,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 τὰ ὅπλα χρυσᾶ, χρύσειοι δὲ καὶ οἱ χαλινοὶ τοῖς
 ἵπποις αὐτῶν ἐπὶ στόμασι, χρυσᾶ δὲ καὶ τοῖς ποσὶ τὰ
 ἑαυτῶν ὑποδήματα ἐκάλλυναν· τοσοῦτος γὰρ ἦν αὐτοῖς
-ἄπειρος πλοῦτος.</p></div>
-<div type="textpart" subtype="section" n="104" corresp="urn:cts:greekLit:tlg0084.tlg001:1063-1079">
-<p>1063—1079. Ἔστω δέ σοι ὅλη ἡ Περσὶς χώρα τοῖς
+ἄπειρος πλοῦτος.</p>
+         </div>
+         <div n="104"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:1063-1079"
+              type="section">
+            <p>1063—1079. Ἔστω δέ σοι ὅλη ἡ Περσὶς χώρα τοῖς
 μεγάλοις ὄρεσι περίδρομος, ἐπὶ τὸ νοτιώτερον μέρος
 τῶν Κασπίων πυλῶν τὴν ἔκτασιν ἔχουσα, ἑλκομένη
 ἕως τῆς ὁμωνύμου, τουτέστι τῆς Περσικῆς, θαλάσσης.
@@ -1824,9 +2121,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 αἱ χαράδραι, οἱονεὶ τὰ ἀπὸ τῶν ὄμβρων τῆς γῆς
 σχίσματα, κάτω σύρουσιν. Ἀεὶ δὲ καὶ διαπαντὸς τῷ
 χλιαρῷ ἀνέμῳ οἱ καρποὶ χαίροντες πυκνοὶ καὶ συνεχεῖς
-καὶ ἐπάλληλοι θάλλουσιν.</p></div>
-<div type="textpart" subtype="section" n="105" corresp="urn:cts:greekLit:tlg0084.tlg001:1080-1085">
-<p>1080—1085. Διανοούμενος δὲ σκέπτου καὶ τὸν ὑπόλοιπον
+καὶ ἐπάλληλοι θάλλουσιν.</p>
+         </div>
+         <div n="105"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:1080-1085"
+              type="section">
+            <p>1080—1085. Διανοούμενος δὲ σκέπτου καὶ τὸν ὑπόλοιπον
 πόρον τῆς Ἀσίας ἐπὶ τὴν ἀνατολήν· καὶ γὰρ
 ἐγγὺς ἡ βάσις ἢ τὸ ἔσχατον πέρας τῆς ἠπείρου, ὃ ἔστι
 τῆς Ἀσίας, πληροῦται. Καὶ περὶ μὲν τὸ Περσικὸν
@@ -1835,9 +2135,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 τῆς Περσίδος, διχῶς μεμερισμένην γῆν ἔχοντες, οἱ
 μέν ὑπεράνωθεν τῆς θαλάσσης, οἱ δὲ ἔνδοθεν ἐν μεσογείᾳ.
 Καὶ ἡ μὲν βορεία Καρμανία ἔρημος, ἡ δὲ νοτία
-λιπαρά.</p></div>
-<div type="textpart" subtype="section" n="106" corresp="urn:cts:greekLit:tlg0084.tlg001:1086-1106">
-<p>1086—1106. Πρὸς δὲ τὴν ἀνατολὴν τῶν Καρμανῶν
+λιπαρά.</p>
+         </div>
+         <div n="106"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:1086-1106"
+              type="section">
+            <p>1086—1106. Πρὸς δὲ τὴν ἀνατολὴν τῶν Καρμανῶν
 ἡ τῶν Γεδρωσῶν χώρα ἐκτείνεται, πλησίον τοῦ ὠκεανοῦ
 τοῦ μεγάλα κήτη τρέφοντος. Ἐφ᾿  οἷστισιν ἔθνεσι πρὸς
 τὴν ἀνατολὴν παρὰ τὸν Ἰνδὸν ποταμὸν οἱ νότιοι Σκύθαι,
@@ -1863,18 +2166,24 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 πανταχοῦ δὲ ὑπὸ ταῖς πέτραις αἱ φλέβες ὠδίνουσι
 τὴν καλὴν πλάκα τῆς τε χρυσιζούσης καὶ τῆς κυανῆς
 σαπφείρου (δύο καὶ γάρ εἰσι γένη)· τούτους δὲ ἀποτέμνοντες
-τὴν ὠφέλειαν καὶ τὴν εὐπορίαν τῆς ζωῆς προσπρίζονται.</p></div>
-<div type="textpart" subtype="section" n="107" corresp="urn:cts:greekLit:tlg0084.tlg001:1107-113">
-<p>1107—1113. Πρὸς ἀνατολὰς ὃ ἡ τῶν Ἰνδῶν ἐπέραστος
+τὴν ὠφέλειαν καὶ τὴν εὐπορίαν τῆς ζωῆς προσπρίζονται.</p>
+         </div>
+         <div n="107"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:1107-113"
+              type="section">
+            <p>1107—1113. Πρὸς ἀνατολὰς ὃ ἡ τῶν Ἰνδῶν ἐπέραστος
 γῆ ἐκτείνεται πασῶν ἐσχάτη περὶ τὰ χείλη, ἤτοι τὸν
 αἰγιαλὸν, τοῦ ὠκεανοῦ, καθ᾿  ἣν ὁ ἥλιος ἐπὶ τὰ τῶν θεῶν
 καὶ ἀνθρώπων ἔργα ἀνερχόμενος, τουτέστιν ἀνατέλλων,
 πρώταις ἀκτῖσιν ἐπιλάμπει. Διὰ τοῦτο οἱ τὴν χώραν
 ἐκείνην κατοικοῦντες τὰ σώματα μελαίνονται, λίαν
 πιαινόμενοι, εὐτραφεῖς δὲ τρίχας ὁμοίας τῷ ὑακίνθῳ
-ἐπὶ ταῖς κεφαλαῖς αὐτῶν φέρουσι.</p></div>
-<div type="textpart" subtype="section" n="108" corresp="urn:cts:greekLit:tlg0084.tlg001:1114-1127">
-<p>1114—1127. Τῶν Ἰνδῶν δὲ οἱ μὲν τοῦ χρυσοῦ μέταλλα
+ἐπὶ ταῖς κεφαλαῖς αὐτῶν φέρουσι.</p>
+         </div>
+         <div n="108"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:1114-1127"
+              type="section">
+            <p>1114—1127. Τῶν Ἰνδῶν δὲ οἱ μὲν τοῦ χρυσοῦ μέταλλα
 ἐργάζονται, εὐκαμπέσι μακέλλαις τὴν γῆν
 σκάπτοντες, οἱ δὲ τοὺς ἐκ τοῦ λίνου κατασκευασθέντας
 ἱστοὺς ὑφαίνουσιν, οἱ δὲ τοὺς λευκοὺς ὀδόντας τῶν ἐλεφάντων
@@ -1891,9 +2200,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 εἰσι· καὶ γὰρ ἀλλαχοῦ μὲν ἡ κέγχρος αὔξεται,
 ἀλλαχοῦ δὲ τοῦ ἐρυθραίου καλάμου, ὅπερ ἐστὶν εἶδος
 ἀρώματος, αἱ ὗλαι θάλλουσι· τὸ δὲ ἐρυθραίου ἢ ὅτι
-ἐρυθρὰν ἔχει τὸν χροιὰν, ἢ ὅτι πρὸς τῇ Ἐρυθρᾷ φαίνεται.</p></div>
-<div type="textpart" subtype="section" n="109" corresp="urn:cts:greekLit:tlg0084.tlg001:1128-1140">
-<p>1128—1140. Διανοούμενος δὲ σκόπει, ὅπως ἄν σοι καὶ
+ἐρυθρὰν ἔχει τὸν χροιὰν, ἢ ὅτι πρὸς τῇ Ἐρυθρᾷ φαίνεται.</p>
+         </div>
+         <div n="109"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:1128-1140"
+              type="section">
+            <p>1128—1140. Διανοούμενος δὲ σκόπει, ὅπως ἄν σοι καὶ
 τὸ σχῆμα καὶ τοὺς ποταμοὺς εἴποιμι καὶ τὰ ὑψηλὰ ὄρη
 καὶ τὰ ἔθνη αὐτῆς. Καὶ αὐτὴ μὲν ἡ Ἰνδία ἐπὶ ταῖς
 τρισσαῖς πλευραῖς ἁπάσαις οὔσαις λοξαῖς ἥρμοσεν,
@@ -1908,9 +2220,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 ὁ Ὑδάσπης ναυσίπορος ποταμὸς τὸν Ἀκεσίνην ποταμὸν
 ἀπὸ τῶν ὑψηλῶν σκοπέλων συρόμενον εἰσδέχεται. Ἐπὶ
 τούτοις δὲ καὶ ὁ Κώφης ποταμὸς ὁ καλὰ συστρέμματα
-ἔχων ἐπακολουθεῖ.</p></div>
-<div type="textpart" subtype="section" n="110" corresp="urn:cts:greekLit:tlg0084.tlg001:1141-1151">
-<p>1141—1151. Μέσον δὲ τῶν ποταμῶν τούτων οἱ Σάβαι
+ἔχων ἐπακολουθεῖ.</p>
+         </div>
+         <div n="110"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:1141-1151"
+              type="section">
+            <p>1141—1151. Μέσον δὲ τῶν ποταμῶν τούτων οἱ Σάβαι
 κατοικοῦσι καὶ οἱ τοξίλοι, οἱονεὶ οἱ τοξικοὶ ἄνδρες, ἢ
 οὕτω καλούμενοι Τοξίλοι· ἐφεξῆς δὲ καὶ οἱ Σκόδροι.
 Ἐπακολουθεῖ δὲ καὶ τὰ ἄγρια ἢ βάρβαρα ἔθνη τῶν
@@ -1927,9 +2242,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 συστρέμματα ἔχοντα ὠκεανὸν ὑψηλὴ προνένευκε, τοῖς
 ταχέσιν ὀρνέοις δυσέκβατος οὖσα διὰ τοῦτο καὶ οἱ ἄνθρωποι
 Ἄορνιν αὐτὴν καλοῦσιν ἢ ἐπιδοξάζουσιν, ὡς
-μὴ ἔχουσαν ὄρνιν διὰ τὸ ὕψος.</p></div>
-<div type="textpart" subtype="section" n="111" corresp="urn:cts:greekLit:tlg0084.tlg001:1152-1166">
-<p>1152—1166. Ὑπάρχει δὲ θαυμαστός τις καὶ τίμιος καὶ
+μὴ ἔχουσαν ὄρνιν διὰ τὸ ὕψος.</p>
+         </div>
+         <div n="111"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:1152-1166"
+              type="section">
+            <p>1152—1166. Ὑπάρχει δὲ θαυμαστός τις καὶ τίμιος καὶ
 μέγας τόπος περὶ τὸν καλὰ ῥεύματα ἔχοντα Γάγγην,
 ὅν ποτε ὁ Βάκχος ὀργιζόμενος ἐπάτησεν, ὅτε αἱ ἁπαλαὶ
 καὶ τρυφεραὶ τῶν Βακχῶν νεβρῖδες εἰς ἀσπίδας ἠλλάσσοντο,
@@ -1945,9 +2263,12 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 περὶ τὰ ἔσχατα τῆς γῆς στήσας χαίρων ἐπὶ τὸν Ἰσμηνὸν
 ποταμὸν, ἤτοι εἰς τὰς Θήβας, κατῆλθε. Τοσοῦτοι μὲν
 κατὰ τὴν γῆν μάλιστα ἐπίσημοι καὶ ἐπιφανεῖς ἄνδρες
-ὑπάρχουσιν.</p></div>
-<div type="textpart" subtype="section" n="112" corresp="urn:cts:greekLit:tlg0084.tlg001:1167-1185">
-<p>1167—1185. Ἄλλοι δὲ πλεῖστοι ἔνθα κἀκεῖσε ἐπὶ τὰς
+ὑπάρχουσιν.</p>
+         </div>
+         <div n="112"
+              corresp="urn:cts:greekLit:tlg0084.tlg001:1167-1185"
+              type="section">
+            <p>1167—1185. Ἄλλοι δὲ πλεῖστοι ἔνθα κἀκεῖσε ἐπὶ τὰς
 ἠπείρους πλανῶνται, οὓς οὐκ ἄν τις τῶν θνητῶν φανερῶς
 καὶ διαδήλως εἴποι· μόνοι δὲ οἱ θεοὶ ῥᾳδίως καὶ
 εὐκόλως δύνανται πάντα. Αὐτοὶ γὰρ πρῶτοι τὰ τῆς γῆς
@@ -1974,13 +2295,7 @@ replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
 δὲ τὸν πολλὰς ἔχοντα στροφὰς πόρον τῆς ἠπείρου· ὧντινων
 ποιημάτων ἕνεκα ἐκ τῶν μακαρίων καὶ ἀθανάτων
 θεῶν ἡ ἀνταπόδοσις ἀνταξία ἐμοὶ γένοιτο.</p>
-</div>
-
-                
-   </div>
-            
-            
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>
-

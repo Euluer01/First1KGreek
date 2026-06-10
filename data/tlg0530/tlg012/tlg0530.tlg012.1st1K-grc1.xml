@@ -1,101 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-    
-        <fileDesc>
-            <titleStmt>
-                <title xml:lang="lat">Introductio seu medicus</title>
-                <author>Pseudo-Galen</author>
-                <editor>Karl Gottlob Kühn</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-                    <resp>Published original versions of the electronic texts</resp>
-                    <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Introductio seu medicus</title>
+            <author>Pseudo-Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for
                         Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-                    <persName>Mark Schiefsky, Harvard University</persName>
-                    <persName>Gregory R. Crane, Universität Leipzig</persName>
-                    <persName>Uwe Vagelpohl, University of Warwick</persName>
-                </respStmt>
-                <respStmt>
-                    <resp>Keyboarding</resp>
-                    <orgName xml:id="DDD">Digital Divide Data</orgName>
-                </respStmt>
-                <respStmt>
-                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
-                    <persName>Gregory R. Crane</persName>
-                </respStmt>
-                <respStmt>
-                    <resp>Project Manager (University of Leipzig)</resp>
-                    <persName>Matt Munson</persName>
-                </respStmt>
-                <respStmt>
-                    <resp>Project Assistant (University of Leipzig)</resp>
-                    <persName>Annette Geßner</persName>
-                </respStmt>
-                <respStmt>
-                    <resp>Lead Developer (University of Leipzig)</resp>
-                    <persName>Thibault Clérice</persName>
-                </respStmt>
-                <respStmt>
-                    <resp>Technical Advisor</resp>
-                    <persName>Bruce Robertson</persName>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0530.tlg012.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0530.tlg012.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-                        <author>Pseudo-Galen</author>
-                        <editor>Karl Gottlob Kühn</editor>
-                        <imprint>
-                            <publisher>Cnobloch</publisher>
-                            <pubPlace>Lipsiae</pubPlace>
-                            <biblScope unit="vol">14</biblScope>
-                            <biblScope unit="pp" from="674" to="797">674-797</biblScope>
-                            <date>1827</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/hvd.hxpp8u?urlappend=%3Bseq=684">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0530.tlg012.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Pseudo-Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Cnobloch</publisher>
+                     <pubPlace>Lipsiae</pubPlace>
+                     <biblScope unit="vol">14</biblScope>
+                     <biblScope unit="pp" from="674" to="797">674-797</biblScope>
+                     <date>1827</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/hvd.hxpp8u?urlappend=%3Bseq=684">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0530.tlg012.1st1K-grc1">
-                <pb n="674"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΓΑΛΗΝΟΥ ΕΙΣΑΓΩΓΗ Η ΙΑΤΡΟΣ.</head>
-                    <p>[Πῶς εὕρηται ἡ ἰατρική.] <lb/>Ἕλληνες τῶν τεχνῶν τὰς εὑρέσεις ἢ θεῶν παισὶν
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0530.tlg012.1st1K-grc1">
+         <pb n="674"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΕΙΣΑΓΩΓΗ Η ΙΑΤΡΟΣ.</head>
+            <p>[Πῶς εὕρηται ἡ ἰατρική.] <lb/>Ἕλληνες τῶν τεχνῶν τὰς εὑρέσεις ἢ θεῶν παισὶν
                         ἀνατιθέασιν, <lb/>ἤ τισιν ἐγγὺς αὐτῶν οἷς πρῶτοι οἱ θεοὶ πάσης <lb/>τέχνης
                         ἐκοινώνησαν. οὕτως οὖν καὶ τὴν ἰατρικὴν πρῶτον <lb/>μὲν Ἀσκληπιὸν παρ᾿
                         Ἀπόλλωνος τοῦ πατρός φασιν ἐκμαθεῖν <lb/>καὶ ἀνθρώποις μεταδοῦναι, διὸ καὶ
@@ -121,9 +127,9 @@
                         τοὺς Ἀσκληπιάδας παρὰ τούτου διαδεξαμένους <lb/>τοῖς ἔπειτα παραδοῦναι,
                         μάλιστα δὲ Ἱπποκράτης, ὃς πάντων <lb/>ὑπερήνεγκε καὶ πρῶτος εἰς φῶς ἐξήνεγκε
                         τὴν τελείαν <lb/>παρ᾿ Ἕλλησιν ἰατρικήν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>[Τίνες ἀρχαὶ ἰατρικῆς.] Ἀρχαὶ οὖν τῆς <lb/>ἰατρικῆς τρεῖς· ἡ μὲν εὑρέσεως, ἡ
+         </div>
+         <div n="2" type="chapter">
+            <p>[Τίνες ἀρχαὶ ἰατρικῆς.] Ἀρχαὶ οὖν τῆς <lb/>ἰατρικῆς τρεῖς· ἡ μὲν εὑρέσεως, ἡ
                         δὲ ἐκ τοῦ συστήσασθαι <lb/>τὴν τέχνην, ἡ δὲ ὑφηγήσεως. εὑρέσεως μὲν οὖν
                         ἁπλῶς τῆς <lb/>ἐν τῇ ἰατρικῇ ἡ παλαιοτάτη καὶ ἄνευ λόγου ἀρχὴ ἡ πεῖρα,
                         <lb/>ὡς παρὰ Αἰγυπτίοις καὶ πᾶσι βαρβάροις. τοῦ δὲ εἰς σύστημα <lb/>τέχνης
@@ -145,9 +151,9 @@
                         ἄρχεται καὶ <pb n="678"/> κατὰ ταύτην ἡ τοῦ ὁμοίου μετάβασις. τοῖς δὲ
                         μεθοδικοῖς <lb/>ἀρχὴ ἡ κατὰ τὰ φαινόμενα τοῦ ὁμοίου θεωρία, ἢ γνῶσις
                         <lb/>φαινομένων κοινοτήτων. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>[Πόσαι αἱ αἱρέσεις ἐν ἰατρικῇ καὶ τίνα χαρακτηρίζοντα <lb/>αὐτάς.] Αἱρέσεις
+         </div>
+         <div n="3" type="chapter">
+            <p>[Πόσαι αἱ αἱρέσεις ἐν ἰατρικῇ καὶ τίνα χαρακτηρίζοντα <lb/>αὐτάς.] Αἱρέσεις
                         δὲ ἐν ἰατρικῇ τρεῖς, λογικὴ, ἐμπειρικὴ, <lb/>μεθοδική· λογικὴ μὲν ἡ
                         φυσιολογίαν παρέχουσα καὶ <lb/>τὰς αἰτίας τῶν νόσων ἐξετάζουσα καὶ σημειώσει
                         πρὸς εὕρεσιν <lb/>τῶν αἰτίων χρωμένη τήν τε θεραπείαν ἐξ ὧν ὑπαγορεύουσιν
@@ -220,9 +226,9 @@
                         κοινοτήτων ἐνδείξεως τὴν θεραπείαν λαμβάνειν <lb/>καὶ μήτε τὰ αἴτια αὐτοὺς
                         ὑπαγορεύειν, ὡς τοὺς λογικοὺς, <lb/>μήτε τῇ ἐπὶ ταῖς συνδρομαῖς τηρήσει τῶν
                         διὰ πείρας <lb/>ἁρμοζόντων ἀρκεῖσθαι, ὡς τοὺς ἐμπειρικούς. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>[Τίνες προέστησαν τῶν τριῶν αἱρέσεων.] <lb/>Προέστησαν δὲ τῆς μὲν λογικῆς
+         </div>
+         <div n="4" type="chapter">
+            <p>[Τίνες προέστησαν τῶν τριῶν αἱρέσεων.] <lb/>Προέστησαν δὲ τῆς μὲν λογικῆς
                         αἱρέσεως Ἱπποκράτης <lb/>Κῶος, ὃς καὶ αἱρεσιάρχης ἐγένετο καὶ πρῶτος
                         συνέστησε <lb/>τὴν λογικὴν αἵρεσιν, μετὰ δὲ τοῦτον Διοκλῆς ὁ Καρύστιος,
                         <lb/>Πραξαγόρας Κῶος, Ἡρόφιλος Χαλκηδόνιος, Ἐρασίστρατος <lb/>Χῖος,
@@ -241,9 +247,9 @@
                         Μιλήσιος <lb/>καὶ Μενέμαχος ὁ Ἀφροδισεὺς καὶ Σωρανὸς ὁ Ἐφέσιος.
                         <lb/>ἐγένοντο δέ τινες καὶ ἐπισυνθετικοὶ, ὡς Λεωνίδης ὁ <lb/>Ἀλεξανδρεύς.
                         καὶ ἐκλεκτοὶ, ὡς Ἀρχιγένης ὁ Ἀπαμεὺς τῆς Συρίας. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>[Εἰ ἐπιστήμη ἡ ἰατρικὴ, ἢ τέχνη.] Τινὲς <lb/>τῶν λογικῶν, ὧν ἐστι καὶ
+         </div>
+         <div n="5" type="chapter">
+            <p>[Εἰ ἐπιστήμη ἡ ἰατρικὴ, ἢ τέχνη.] Τινὲς <lb/>τῶν λογικῶν, ὧν ἐστι καὶ
                         Ἐρασίστρατος, ὑπέλαβον τὸ μέν <lb/>τι ἐπιστημονικὸν ἔχειν τὴν ἰατρικὴν, οἷον
                         τὸ αἰτιολογικὸν <lb/>καὶ φυσιολογικὸν, τὸ δὲ στοχαστικὸν, οἷον τὸ
                         θεραπευτικὸν <lb/>καὶ τὸ σημειωτικόν. οἱ δὲ μεθοδικοὶ καὶ δι᾿ ὅλου ἐπιστήμην
@@ -275,9 +281,9 @@
                         ἐπιμένει τὰ ἔργα. τούτων δ᾿ ἂν εἴη καὶ <lb/>ἡ ἰατρική. ἐν γὰρ τῷ θεραπεύειν
                         οὐδέπω αὐτῆς διαδείκνυται <lb/>τὸ τέλος, ἐνισταμένης ἀεὶ πρὸς τὰς νόσους·
                         ὅταν δὲ <lb/>συντελέσῃ τὰς θεραπείας, τότε ὑγιῆ τὸν ἄνθρωπον ἀπέφηνεν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>[Τί ἐστιν ἰατρική.] Ὅροις μὲν ἐχρήσαντο <lb/>οἱ λογικοί· ὑπογραφαῖς δὲ οἱ
+         </div>
+         <div n="6" type="chapter">
+            <p>[Τί ἐστιν ἰατρική.] Ὅροις μὲν ἐχρήσαντο <lb/>οἱ λογικοί· ὑπογραφαῖς δὲ οἱ
                         ἐμπειρικοί· τὸ δὲ περὶ τούτων <lb/>ζητεῖν φιλοσόφοις μόνοις ἁρμόζει· ἁπλῶς
                         δὲ καἰ οὕτως <lb/>ὡρίσαντο οἱ παλαιοὶ ἰατροὶ τὴν ἰατρικὴν, ἢ ὑπέγραψαν. <pb n="687"/> ἰατρική ἐστι κατὰ μὲν Ἱπποκράτην πρόσθεσις καὶ ἀφαίρεσις·
                         <lb/>πρόσθεσις μὲν τῶν ἐλλειπόντων, ἀφαίρεσις δὲ τῶν πλεοναζόντων <lb/>ἐπὶ
@@ -309,9 +315,9 @@
                         οὐδετέρων δέ ἐστιν ἅπαντα τὰ <lb/>προσφερόμενα ἐν ταῖς νόσοις βοηθήματα καὶ
                         ἡ ὕλη αὐτῶν. ﻿<pb n="689"/> ταῦτα γὰρ πρὶν ἢ παραληφθῆναι ὑπὸ τοῦ ἰατροῦ,
                         οὐδέτερά <lb/>ἐστιν, οὐδὲ ὑγιεινὰ οὐδὲ νοσώδη. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>[Πόσα μέρη ἰατρικῆς.] Μέρη ἰατρικῆς <lb/>τὰ μὲν πρῶτά ἐστι, τό τε
+         </div>
+         <div n="7" type="chapter">
+            <p>[Πόσα μέρη ἰατρικῆς.] Μέρη ἰατρικῆς <lb/>τὰ μὲν πρῶτά ἐστι, τό τε
                         φυσιολογικὸν καὶ τὸ αἰτιολογικὸν, <lb/>ἢ παθολογικὸν καὶ τὸ ὑγιεινὸν καὶ τὸ
                         σημειωτικὸν καὶ <lb/>τὸ θεραπευτικόν. Ἀθήναιος δὲ ἀντὶ τοῦ σημειωτικοῦ τὸ
                         <lb/>ὑλικὸν τάττει, ὅ ἐστιν ἐν τῷ θεραπευτικῷ. ἄνευ γὰρ τοῦ <lb/>ὑλικοῦ τὸ
@@ -336,9 +342,9 @@
                         παρεληλυθότων καὶ εἰς τὴν ἐπίσκεψιν τῶν <lb/>συνεδρευόντων καὶ εἰς πρόγνωσιν
                         τῶν μελλόντων. τὸ δὲ θεραπευτικὸν <lb/>ὁμοίως καὶ αὐτὸ εἰς τρία διαιρεῖται,
                         εἴς τε <lb/>δίαιταν καὶ χειρουργίαν καὶ φαρμακείαν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="8">
-                    <p>[Εἰ ἀναγκαία ἡ εἰς τὰ πέντε μέρη τῆς <lb/>ἰατρικῆς διαίρεσις.] Τὸ μὲν οὖν
+         </div>
+         <div n="8" type="chapter">
+            <p>[Εἰ ἀναγκαία ἡ εἰς τὰ πέντε μέρη τῆς <lb/>ἰατρικῆς διαίρεσις.] Τὸ μὲν οὖν
                         φυσιολογεῖν ἀναγκαῖόν <lb/>ἐστιν, ὅτι οὐχ οἷόν τε τὰ παρὰ φύσιν εἰδέναι μὴ
                         πρότερον <lb/>ἐπιστάμενον τὰ κατὰ φύσιν. παρὰ γὰρ τὴν τούτων φύσιν <pb n="691"/> συνίσταται τὰ νοσήματα. τὸ δὲ αἰτιολογεῖν καὶ παθολογεῖν
                         <lb/>καὶ αὐτὰ ἀναγκαῖα· τὸ μὲν ἵνα τὰς αἰτίας τῶν παθῶν ἴδωμεν, <lb/>πρὸς ἃς
@@ -403,9 +409,9 @@
                         δύναιτ᾿ ἄν τις, μὴ ἐπεσκεμμένος ἐκ τίνων στοιχείων <lb/>ὁ ἄνθρωπος συνέστηκε
                         καὶ πῶς τρεπομένων τούτων παρὰ <lb/>τὴν ἐξ ἀρχῆς φύσιν αἱ νόσοι γίνονται.
                     </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="9">
-                    <p>[Περὶ στοιχείων ἐξ ὧν ὁ ἄνθρωπος συνέστηκεν.] <lb/>Συνέστηκε τοίνυν ὁ
+         </div>
+         <div n="9" type="chapter">
+            <p>[Περὶ στοιχείων ἐξ ὧν ὁ ἄνθρωπος συνέστηκεν.] <lb/>Συνέστηκε τοίνυν ὁ
                         ἄνθρωπος ἀκολούθως τοῖς <lb/>φυσικοῖς καθ᾿ Ἱπποκράτην ἐκ τῶν κοσμικῶν τῶν
                         πρώτων <lb/>στοιχείων, ἐκ πυρὸς καὶ ἀέρος καὶ ὕδατος καὶ γῆς· οὐχ ὡς <lb/>ἐκ
                         τούτων αὐτῶν, ἀλλὰ ἐκ τῶν ἀναλόγων αὐτοῖς συνεστῶτος <lb/>τοῦ ἀνθρώπου. ἐν
@@ -464,9 +470,9 @@
                         <lb/>τῷ διήκοντι δι᾿ αὐτῶν πνεύματι καὶ τὰ φυσικὰ συνεστάναι <lb/>τε καὶ
                         διοικεῖσθαι καὶ τὰ νοσήματα πάντα, τούτου <lb/>πρωτοπαθοῦντος γίνεσθαι
                         ἀπεφήναντο, ὅθεν καὶ πνευματικοὶ χρηματίζουσι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="10">
-                    <p>[Ὀνομασίαι τῶν ἐκτὸς μερῶν τοῦ σώματος.] <lb/>Περὶ δὲ τῶν ἐκτὸς μερῶν τοῦ
+         </div>
+         <div n="10" type="chapter">
+            <p>[Ὀνομασίαι τῶν ἐκτὸς μερῶν τοῦ σώματος.] <lb/>Περὶ δὲ τῶν ἐκτὸς μερῶν τοῦ
                         σώματος ἢ μορίων καὶ τίνες <lb/>αἱ ὀνομασίαι αὐτῶν, πρῶτος μὲν ὁ Ἀριστοτέλης
                         ὑπελάβετο <lb/>διδάξαι τε καὶ συγγράψαι. ἀναγκαῖον δὲ καὶ τοῖς
                         μεταγενεστέροις <lb/>ἰατροῖς ἔδοξε καὶ αὐτοῖς τὰ αὐτὰ πραγματεύεσθαι,
@@ -607,9 +613,9 @@
                         τοῖς τῶν χειρῶν, οὐ τυχόντες δὲ τῶν αὐτῶν <lb/>ὀνομάτων, διὰ τὸ μηδὲ τὰς
                         αὐτὰς χρείας ἐπιτελεῖν, πλὴν <lb/>ὅσα ἐκ τῆς κατὰ τὸ μέγεθος διαφορᾶς, ἢ ἐκ
                         τῆς κατὰ τὴν <lb/>θέσιν τάξεως. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="11">
-                    <p>[Ἀνατομὴ τῶν ἐντός.] Ἀνατομὴ <lb/>καταχρηστικῶς μὲν λέγεται καὶ ἡ τῶν ἐκτὸς
+         </div>
+         <div n="11" type="chapter">
+            <p>[Ἀνατομὴ τῶν ἐντός.] Ἀνατομὴ <lb/>καταχρηστικῶς μὲν λέγεται καὶ ἡ τῶν ἐκτὸς
                         μερῶν τε καὶ <lb/>μορίων τοῦ σώματος διέξοδος, ἥτις ἐστὶ διὰ λόγου διήγησις
                         <lb/>ἑκάστου, μετὰ τῆς κατὰ φύσιν θέσεως αὐτῶν καὶ τάξεως <lb/>καὶ χρείας,
                         ἣν παρέχεται τῷ ζώῳ καὶ τῆς οἰκείας ἑκάστου <lb/>ὀνομασίας, περὶ ὧν ἤδη
@@ -767,9 +773,9 @@
                         αἱ μὲν φλέβες <pb n="720"/> ἐπὶ ἥπατος πύλας τὸ αἷμα διδόασιν ἐπὶ τῶν
                         ἐμβρύων. αἱ δὲ <lb/>ἀρτηρίαι κατὰ τὴν κύστιν εἰς τὴν παχεῖαν ἀρτηρίαν
                         ἐμβάλλουσι. <lb/>τὸ δὲ νεῦρον τοῦτο εἰς τὴν ῥάχιν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="12">
-                    <p>[Περὶ ὀστεολογίας.] Τῶν δὲ <lb/>ὀστῶν διττὴ ἡ σύνθεσις, ἡ μὲν πρὸς τὸ
+         </div>
+         <div n="12" type="chapter">
+            <p>[Περὶ ὀστεολογίας.] Τῶν δὲ <lb/>ὀστῶν διττὴ ἡ σύνθεσις, ἡ μὲν πρὸς τὸ
                         κινεῖσθαι καὶ καλεῖται <lb/>ἄρθρον, ἡ δὲ πρὸς τὸ ἀκίνητον καὶ καλεῖται
                         συνάρθρωσις. <lb/>εἴδη δὲ ταύτης τρία, ῥαφὴ, σύμφυσις, γόμφωσις, <lb/>κατὰ
                         ῥαφὴν μὲν οὖν σύγκεινται τὰ ἐκ τῆς κεφαλῆς ὀστᾶ. <lb/>ῥαφαὶ δὲ εὑρίσκονται
@@ -855,9 +861,9 @@
                         δύο ἐγένετο. <lb/>συνάγουσι δὲ τὰς μὲν τούτων διαρθρώσεις ὑμενώδεις τινὲς
                         <lb/>σύνδεσμοι, τὰς δὲ κατὰ τὸν ἀστράγαλόν τε καὶ τὴν πτέρναν <lb/>ἰσχυροί
                         τε πάνυ καί τινες ἐξ αὐτῶν στρογγύλοι τε ἅμα καὶ νευροχονδρώδεις. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="13">
-                    <p>[Περὶ χυμῶν τε καὶ δυνάμεων καὶ <pb n="726"/> νόσων καὶ διαφορῶν αὐτῶν καὶ
+         </div>
+         <div n="13" type="chapter">
+            <p>[Περὶ χυμῶν τε καὶ δυνάμεων καὶ <pb n="726"/> νόσων καὶ διαφορῶν αὐτῶν καὶ
                         αἰτιῶν καὶ θεραπειῶν.] <lb/>Οἱ δὲ ἐν τῷ σώματι χυμοὶ ἐκ πρώτης γενέσεως
                         τέσσαρες <lb/>ὄντες συμμιγεῖς μέν εἰσιν ἀλλήλοις καὶ ἀνακεκραμένοι τῷ
                         <lb/>σώματι. πλεονάζει δὲ ἄλλος ἐν ἄλλῳ μᾶλλον τόπῳ, τὸ μὲν <lb/>αἷμα ἐν
@@ -1345,9 +1351,9 @@
                         διαφέρει τῷ λεῖον εἶναι καὶ μὴ τραχύνεσθαι τὸ <lb/>δέρμα, ὡς ἐπὶ λέπρας.
                         ῥύεται δὲ τούτων ἁπάντων τὰ φλεγμαγωγὰ <lb/>φάρμακα καὶ τὰ ἔξωθεν σμήγματα.
                     </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="14">
-                    <p>[Περὶ συνθέσεως ἀρίστης καθαρσίου.] <lb/>Συντίθεται δὲ ἡ πρὸς τὰ ἐντὸς
+         </div>
+         <div n="14" type="chapter">
+            <p>[Περὶ συνθέσεως ἀρίστης καθαρσίου.] <lb/>Συντίθεται δὲ ἡ πρὸς τὰ ἐντὸς
                         φαρμακεία ἀπό τε ἀποφρακτικῶν <lb/>καὶ τμητικῶν καὶ λεπτυντικῶν καὶ
                         προοδοποιητικῶν <lb/>καὶ προτρεπτικῶν καὶ καθαρτικῶν καὶ κολαστικῶν <lb/>τῆς
                         τῶν φαρμάκων κακίας, εὐστομάχων τε καὶ ἐφεκτικῶν <lb/>τῆς ἀλόγου φορᾶς.
@@ -1382,9 +1388,9 @@
                         ἀλόγου τῶν φαρμάκων φορᾶς, ὅσα τονοῖ καὶ <lb/>συνέχει καὶ τὰς φυσικὰς
                         διεγείρει ἐνεργείας. τὸ δὲ <lb/>κατὰ μέρος ταῦτα ἐπεξεργάσασθαι περισσὸν νῦν
                         ἡμῖν ἔδοξε. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="15">
-                    <p>[Περὶ διαιρέσεως τῆς διὰ φαρμάκων θεραπείας.] <lb/>Ἡ δὲ φαρμακεία διττή
+         </div>
+         <div n="15" type="chapter">
+            <p>[Περὶ διαιρέσεως τῆς διὰ φαρμάκων θεραπείας.] <lb/>Ἡ δὲ φαρμακεία διττή
                         ἐστιν, ἡ μὲν πρὸς τὰ <lb/>ἐντὸς πάθη, ᾗ μάλιστα χρῆται ὁ διαιτητικός· ἡ δὲ
                         πρὸς <lb/>τὰ ἐκτὸς, ἧς οὐκ ἄνευ συντελεῖται τὰ κατὰ χειρουργίαν. τῆς
                         <lb/>μὲν οὖν πρὸς τὰ ἐντὸς φαρμακείας εἴδη ἐστὶ δεκαδύο. τὸ <lb/>μὲν τῶν ἐν
@@ -1461,11 +1467,10 @@
                         παραμυθουμένοις, οἷον ναρδίνοις <lb/>καὶ θεοδοτίοις. ὅσα δὲ πρὸς εὐμορφίαν
                         ἐπιχρίεται, ὡς <lb/>τὰ διὰ σάνδυκος καὶ ἡδυχρόου, οὐκ ἰατρικῆς, ἀλλὰ
                         καλλωπιστικῆς <lb/>ἐστιν ἴδια. </p>
-                </div>
-                <pb n="767"/>
-
-                <div type="textpart" subtype="chapter" n="16">
-                    <p>[Περὶ τῶν ἐν ὀφθαλμοῖς συνισταμένων <lb/>παθῶν.] Πάθη δὲ περὶ μὲν τὸν ὅλον
+         </div>
+         <pb n="767"/>
+         <div n="16" type="chapter">
+            <p>[Περὶ τῶν ἐν ὀφθαλμοῖς συνισταμένων <lb/>παθῶν.] Πάθη δὲ περὶ μὲν τὸν ὅλον
                         ὀφθαλμὸν συνίσταται <lb/>τάδε. τάραξις, ὀφθαλμία, ἐπιφορὰ, φλεγμονὴ, οἴδημα,
                         <lb/>ἐμφύσημα, σκίῤῥωσις, χήμωσις, ἄνθραξ, στραβισμὸς, σπασμὸς, <lb/>παλμὸς,
                         μυωπίασις, γάγγραινα, σηπεδὼν, ἕλκος, σῦριγξ, <lb/>ξηροφθαλμία, ψωροφθαλμία,
@@ -1622,9 +1627,9 @@
                         ἐστιν ἕλκος ἐσχαρῶδες μετὰ νομῆς καὶ ῥεύματος καὶ βουβῶνος <lb/>ἐνίοτε καὶ
                         πυρετῶν γινομένων περὶ τὸ ἄλλο πᾶν σῶμα, <lb/>ἔστι δὲ ὅτε καὶ περὶ
                         ὀφθαλμούς. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="17">
-                    <p>[Περὶ τῶν ἐκτὸς τῆς κεφαλῆς παθῶν.] <lb/>Περὶ δὲ τὰ ἐκτὸς τῆς κεφαλῆς
+         </div>
+         <div n="17" type="chapter">
+            <p>[Περὶ τῶν ἐκτὸς τῆς κεφαλῆς παθῶν.] <lb/>Περὶ δὲ τὰ ἐκτὸς τῆς κεφαλῆς
                         συνίστανται τάδε, ἃ <lb/>οὐκ ἀναγέγραπται ἐν τοῖς χρονίοις, περὶ τῶν ἐν τῇ
                         κεφαλῇ <lb/>καταγμάτων τοῦ κρανίου. διαφοραὶ δὲ αὐτῶν εἰσι πέντε,
                         <lb/>ῥωγμὴ; ἐγγείσωμα, ἐκπίεσμα, ἀπήχημα, καμάρωσις, διάτασις <lb/>ῥαφῶν,
@@ -1656,9 +1661,9 @@
                         δὲ ἰγνὺν <lb/>στεατώματα, ἀγκύλη. περὶ δὲ κνήμην κιρσοί. ἐν γαστροκνημίᾳ
                         <lb/>σκίῤῥωμα, χειρώνεια ἕλκη. περὶ δὲ ἄκρα ποδὸς <lb/>μελανίαι, νεκρώσεις,
                         ποδάγρα, σύριγγες. περὶ δὲ πτέρνας λεπίδες. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="18">
-                    <p>[Περὶ τῶν τοῦ δέρματος παθῶν.] Περὶ <lb/>δὲ τὸ δέρμα καὶ τόπους καθ᾿ ὅλου τοῦ
+         </div>
+         <div n="18" type="chapter">
+            <p>[Περὶ τῶν τοῦ δέρματος παθῶν.] Περὶ <lb/>δὲ τὸ δέρμα καὶ τόπους καθ᾿ ὅλου τοῦ
                         σώματος λέπρα, <lb/>ψώρα, ἀλφὸς λευκὸς, ἀλφὸς μέλας, λεύκη, λειχὴν ἁπλοῦς,
                             <pb n="780"/> λειχὴν ἄγριος, δρακοντίασις, ἀκροχορδόνες, θύμοι,
                         μυρμηκίαι, <lb/>ἦλοι, πῶροι, οἱ μὲν ἐκ ποδάγρας καὶ ἀρθρίτιδος, οἱ <lb/>δὲ
@@ -1672,9 +1677,9 @@
                         ἄνευ τούτων. <lb/>περὶ δὲ τὰ ἄρθρα πάντα παραγωγαὶ, παρακινήματα,
                         <lb/>ἐξαρθρήματα, παραρθρήματα, σύνδεσις, πώρωσις, ῥευματισμοὶ,
                         <lb/>διάστασις συμφύσεων. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="19">
-                    <p>[Περὶ χειρουργίας εἰδῶν.] Χειρουργία <lb/>ἐστὶν ἄρσις ἐμμέθοδος τοῦ ἰδίως
+         </div>
+         <div n="19" type="chapter">
+            <p>[Περὶ χειρουργίας εἰδῶν.] Χειρουργία <lb/>ἐστὶν ἄρσις ἐμμέθοδος τοῦ ἰδίως
                         λεγομένου ἀλλοτρίου, <lb/>διὰ τομῶν καὶ καταρτισμῶν μετὰ τῆς τῶν τραυμάτων
                             <pb n="781"/> καὶ ἑλκῶν θεραπείας, ἐπ᾿ ἀνθρώπου σώματι παραλαμβανομένη.
                         <lb/>χειρουργίας δὲ καθολικαὶ μὲν ἐνέργειαι δύο, σύνθεσις <lb/>καὶ
@@ -1838,9 +1843,9 @@
                         <lb/>πρὸς τὸ μὴ τὴν σάρκα φυεῖσαν, χάλασμα παρασχεῖν· τὰ δὲ <lb/>ἐν τοῖς
                         ὠσὶν ἢ μυκτῆρσιν κολοβώματα, ὅταν ὁ χόνδρος ᾖ διῃρημένος, <lb/>ἐκχονδρίζειν
                         δεῖ καὶ οὕτως διαῤῥάπτειν ἐρείῳ ῥάμματι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="20">
-                    <p>[Περὶ καταγνυμένων κώλων καὶ ἐξαρθρουμένων <lb/>μορίων.] Τὰ δὲ καταγνύμενα
+         </div>
+         <div n="20" type="chapter">
+            <p>[Περὶ καταγνυμένων κώλων καὶ ἐξαρθρουμένων <lb/>μορίων.] Τὰ δὲ καταγνύμενα
                         κῶλα ἐκ διατάσεως <lb/>μὲν εὐθετίζεται, ἐξ ἐπιδέσεως δὲ πωροῦται. τὰ μὲν οὖν
                         περὶ <lb/>κεφαλὴν κατάγματα ποσαχῶς τε γίνεται καὶ ὅπως θεραπεύεται
                         <lb/>εἴρηται. κᾂν ἐν προσώπῳ κάταγμα γένηται, ὡς τὰ <lb/>ἐν τῇ κεφαλῇ
@@ -1932,8 +1937,7 @@
                         αἱ ἐσχάραι, ὡς ἕλκη θεραπεύομεν. <lb/>τὰ δὲ τῶν ἰοβόλων δήγματα οὐδὲ ταχὺ
                         ἐπουλοῦσθαι <lb/>βουλόμεθα, ἀλλ᾿ ὡς ἐπὶ τὸ πλεῖστον ῥευματίζεσθαι τὰ
                         <lb/>ἕλκη σπουδάζομεν. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

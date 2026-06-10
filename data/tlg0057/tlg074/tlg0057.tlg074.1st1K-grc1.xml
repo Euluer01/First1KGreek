@@ -1,99 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-    
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">Pro puero epileptico consilium</title>
-                <author>Galen</author>
-                <editor>Karl Gottlob Kühn</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Pro puero epileptico consilium</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0057.tlg074.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg074.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-                        <author>Galen</author>
-                        <editor>Karl Gottlob Kühn</editor>
-                        <imprint>
-                            <publisher>Knobloch</publisher>
-                            <pubPlace>Leipzig</pubPlace>
-                            <biblScope unit="vol">11</biblScope>
-                            <biblScope unit="pp" from="357" to="368">357-368</biblScope>
-                            <date>1826</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/hvd.hxpp8s?urlappend=%3Bseq=369%3Bownerid=27021597764275719-373">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg074.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Leipzig</pubPlace>
+                     <biblScope unit="vol">11</biblScope>
+                     <biblScope unit="pp" from="357" to="368">357-368</biblScope>
+                     <date>1826</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/hvd.hxpp8s?urlappend=%3Bseq=369%3Bownerid=27021597764275719-373">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg074.1st1K-grc1">
-                <pb n="357"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΓΑΛΗΝΟΥ ΤΩΙ ΕΠΙΛΗΠΤΩΙ ΠΑΙΔΙ <lb/>ΥΠΟΘΗΚΗ.</head>
-                    <p>Ἐγὼ μὲν ὤμην, ὦ Καικιλιανὲ, μηδὲν δεήσεσθαί <lb/>σε τῶν ἡμετέρων ὑποθηκῶν εἰς
+         <refsDecl n="CTS">
+            <cRefPattern n="chapter"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg074.1st1K-grc1">
+         <pb n="357"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΤΩΙ ΕΠΙΛΗΠΤΩΙ ΠΑΙΔΙ <lb/>ΥΠΟΘΗΚΗ.</head>
+            <p>Ἐγὼ μὲν ὤμην, ὦ Καικιλιανὲ, μηδὲν δεήσεσθαί <lb/>σε τῶν ἡμετέρων ὑποθηκῶν εἰς
                         τὴν τοῦ παιδὸς <lb/>νόσον. ὁ γὰρ τεθεαμένος αὐτὸν ἤδη καὶ μέλλων ἅμα σοι
                         <lb/>πλευσεῖσθαι πάλιν ἐς Ἀθήνας, Διονύσιος, ἱκανός ἐστι καὶ <lb/>πρᾶξαι
                         παρὼν τὰ δέοντα καὶ χωριζόμενος, αὖθις ὑποθήκας <lb/>διδόναι τῇ τοῦ
@@ -105,7 +112,7 @@
                         <lb/>τὴν γραφὴν, ὃ μηδέποτε πρότερον ἔπραξα, τοῦτο <lb/>νῦν ὑπομένω πρᾶξαι
                         σοὶ χαριζόμενος, ὑποθήκας τινὰς γράψαι <lb/>θεραπείας ἐπιλήπτου παιδός. ἐν
                         αἷς ἀνάγκη τι καὶ <lb/>παρακοῦσαι τὸν ἰδιώτην καὶ σφαλῆναι περὶ τὸ μέτρον ἢ <lb/>
-                        <milestone unit="ed2page" n="488"/>τὸν καιρὸν τῆς χρήσεως. ἀποδέδεικται γὰρ
+               <milestone unit="ed2page" n="488"/>τὸν καιρὸν τῆς χρήσεως. ἀποδέδεικται γὰρ
                         ἡμῖν ἐν <lb/>ἑτέροις ὡς οὐκ ἐνδέχεται χωρὶς τοῦ μέθοδόν τινα ἐκμαθεῖν
                         <lb/>θεραπευτικὴν ἰάσασθαί τι καλῶς οὐδὲ τῶν σμικροτάτων νοσημάτων, <lb/>μή
                         τί γε τῶν οὕτω μεγάλων ἡλίκον καὶ τὸ τῆς ἐπιληψίας <lb/>ἐστί. καὶ ὅ γε
@@ -125,16 +132,16 @@
                         <lb/>ὠφελεῖν δυναμένην, ἀλλ’ οὐδὲ τοὺς ἐπιτυχόντας τῶν ἰατρῶν. <lb/>ἐπεὶ δὲ
                         σὺ βιάζεις με περὶ μορίου ἑνὸς τῆς τέχνης ποιήσασθαι <lb/>τὸν λόγον, ἄνευ
                         τῆς ἄλλης ἁρμονίας, εἴκω τῇ βίᾳ καὶ <milestone unit="ed1page" n="29"/>
-                        <lb/>πείθομαι, καὶ γράφω σοὶ μὲν αὐτάρκεις ὑποθήκας, ἱκανὸν <lb/>γὰρ ἰδιώτῃ
+               <lb/>πείθομαι, καὶ γράφω σοὶ μὲν αὐτάρκεις ὑποθήκας, ἱκανὸν <lb/>γὰρ ἰδιώτῃ
                         μὴ μέγα τι καὶ ἀνήκεστον ἐξαμαρτεῖν ἐν ταῖς τῶν <lb/>ἰατρῶν καὶ μάλιστα τῷ
                         νομίμως μεμαθηκότι τοιούτοις ὁμιλεῖν <lb/>ὑπομνήμασιν. ἐκείνοις μὲν οὖν ἡ
                         τῆς θεραπευτικῆς μεθόδου <lb/>πραγματεία γέγραπται, σοὶ δὲ καὶ τοῖς ἄλλοις
                         ὅσοι τεχνῶν <pb n="360"/> μὲν τινῶν ἐστὲ λογικῶν ἐπιστήμονες, ἰδιῶται δὲ τῆς
                         ἰατρικῆς, <lb/>γένοιτ’ ἂν ἴσως, οἶμαι, καὶ παρὰ τοῦδε τοῦ γράμματος ὠφέλεια.
                     </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>Πειράσομαι δὲ ὡς οἷόν τε σαφέστατα διελθεῖν, <lb/>ᾧ χρώμενος ὁ παῖς τρόπῳ τῆς
+         </div>
+         <div n="2" type="chapter">
+            <p>Πειράσομαι δὲ ὡς οἷόν τε σαφέστατα διελθεῖν, <lb/>ᾧ χρώμενος ὁ παῖς τρόπῳ τῆς
                         διαίτης ὀνίναιτό τε ἂν οὐ <lb/>σμικρὰ καὶ ἥκιστα βλάπτοιτο πρὸς τῶν ἐφ’
                         ἡμέρᾳ συμπιπτόντων <lb/>ἀδοκήτως αὐτῷ. φυλάττεσθαι μὲν οὖν καὶ ταῦτα
                         προσήκει, <lb/>καθ’ ὅσον ἐγχωρεῖ. περιπίπτειν γε μὴν ἀναγκαῖον ἐνίοτε καὶ
@@ -147,13 +154,13 @@
                         <lb/>αὐτῶν παρακολουθήσει παροξυσμὸς, ἀποσχέσθαι μὲν τελέως <lb/>τηνικαῦτα
                         πάσης κινήσεως, ἐπὶ δὲ τῆς οἰκίας διατρῖψαι καὶ <lb/>πάνυ λεπτῶς
                         διαιτηθῆναι, μέχρι περ ἂν ἀπόθηται τὸ σῶμα <pb n="361"/>
-                        <milestone unit="ed2page" n="489"/>τὸν ἐκ τοῦ παροξυσμοῦ κάματον. ἥτις δὲ ἡ
+               <milestone unit="ed2page" n="489"/>τὸν ἐκ τοῦ παροξυσμοῦ κάματον. ἥτις δὲ ἡ
                         λεπτὴ <lb/>δίαιτα καὶ γνώσκειν μὲν οἶμαί σε καὶ διὰ τῶν ἐφεξῆς ἀναγνοὺς,
                         <lb/>οὐδὲν ἧττον ἀκούσει τί περὶ αὐτῆς. ἄρξασθαι γὰρ <lb/>οὖν ἤδη μοι τῶν
                         ὑποθηκῶν καιρός. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>Εἰσβάλλοντος τοῦ ἦρος, καὶ γάρ πως οὕτως <lb/>συμβαίνει κινεῖσθαι τὰ τῆς
+         </div>
+         <div n="3" type="chapter">
+            <p>Εἰσβάλλοντος τοῦ ἦρος, καὶ γάρ πως οὕτως <lb/>συμβαίνει κινεῖσθαι τὰ τῆς
                         ἐπανόδου, καθῆραι φημὶ χρῆναι <lb/>τὸν παῖδα μετρίᾳ καθάρσει. ταύτης δ’ ἂν
                         ἐπιστατήσειε <lb/>καὶ προσταίη παρὼν ὁ Διονύσιος, εἰδὼς ἀκριβῶς ὅπως τε
                         <lb/>χρὴ παρασκευάσαι πρὸς τὴν κάθαρσιν τὸ σῶμα, καὶ ᾧτινι <lb/>χρήσασθαι
@@ -218,9 +225,9 @@
                         μετὰ τὸ γυμνάσιον, ἀλλ’ <lb/>ἐπειδὰν ἀκριβῶς καταστῇ τὸ πνεῦμα καὶ παύσηται
                         τελέως <lb/>ἡ ἐκ τοῦ γυμνασίου ταραχὴ, τηνικαῦτα δή που καὶ τὴν <lb/>κεφαλὴν
                         ἐπιπλεῖστον τρίβειν σινδόνι, πολλάκις δὲ καὶ κτενὶ <lb/>προχρῆσθαι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>Μετὰ δὲ ταῦτα πρὸς τὸ ἄριστον ἰέναι, <lb/>καί τι πρό γε αὐτοῦ τῶν λαπαττόντων
+         </div>
+         <div n="4" type="chapter">
+            <p>Μετὰ δὲ ταῦτα πρὸς τὸ ἄριστον ἰέναι, <lb/>καί τι πρό γε αὐτοῦ τῶν λαπαττόντων
                         τὴν γαστέρα λαχάνων, <lb/>ἢ καὶ ταρίχους, ἢ πτισάνης, ἢ ἐλαίων ἅμα τῷ τρίτῳ
                         <lb/>μέρει τοῦ ἄρτου προσενεγκάμενον, εἰς τὸ δεῖπνον ἀποθέσθαι <pb n="366"/>
                         τὰ λοιπὰ δύο μέρει μετὰ τῶν ἰσχυροτέρων ὄψων. εἰρήσεται δὲ <lb/>τὰ
@@ -312,10 +319,10 @@
                         μᾶλλον ἢ ὥστε διὰ τὴν σφοδρὰν ἐπιθυμίαν <lb/>ἀκαίρως ἀναγκασθῆναι πλείω τε
                         ἅμα καὶ λάβρως <lb/>προσενέγκασθαι. τὰ μὲν δὴ κατὰ τὴν τροφὴν οὕτω
                         <lb/>διατετάχθω. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>
-                        <milestone unit="ed2page" n="493"/>Μετὰ δὲ ταῦτα διαλιπόντα χρόνον
+         </div>
+         <div n="5" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="493"/>Μετὰ δὲ ταῦτα διαλιπόντα χρόνον
                         <lb/>ὀλίγον ἀτρέμα περιπατῆσαι κελεύω πρὶν ἐπὶ τὰ μαθήματα
                         <lb/>παραγίνεσθαι. καὶ μὲν δὴ καὶ ἀπαλλαγέντα τῶν μαθημάτων, <lb/>αὖθις ἀξιῶ
                         περιπατῆσαι πρὸ τοῦ δείπνου, κἄπειθ’ οὕτως <lb/>τοῦ μὲν ἄρτου τὰς ὑπολοίπους
@@ -343,9 +350,9 @@
                         καλῶς ἑψηθεῖσα πᾶν ἀποτίθεται τὸ φυσῶδες. <lb/>ἀλλ’ οὐ χρὴ πλεονάζειν ἐν
                         αὐτῇ, παχὺν ὑποτρεφούση χυμόν. <lb/>εἰς μὲν δὴ τὴν ἐφήμερον δίαιταν ἱκανὰ
                         καὶ ταῦτ’ <lb/>ἐστὶ παραγγέλματα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>Τῷ δὲ διὰ τῆς σκίλλης φαρμάκῳ τῷ <lb/>πρὸς ἡμῶν σοι δεδομένῳ μετὰ τὴν
+         </div>
+         <div n="6" type="chapter">
+            <p>Τῷ δὲ διὰ τῆς σκίλλης φαρμάκῳ τῷ <lb/>πρὸς ἡμῶν σοι δεδομένῳ μετὰ τὴν
                         κάθαρσιν, ἣν εἰσβάλλοντος <lb/>τοῦ ἦρος ἠξίωσα γενέσθαι, χρήσεται καθ’
                         ἑκάστην <lb/>ἡμέραν ὁ υἱός σου, πρὶν εἰς τὴν παλαίστραν ἀπιέναι, καὶ <lb/>εἰ
                         μὴ μεγάλη τις εἴη πάνυ καὶ <milestone unit="ed2page" n="494"/>σκιῤῥώδης ἡ
@@ -407,8 +414,7 @@
                         ἑψήσαντες ἐν ὕδατι τὴν σκίλλαν <lb/>λειοῦσιν, ἐκλύουσι τὴν δύναμιν αὐτῆς,
                         ὥσπερ ὅσοι δι’ ὄξους, <lb/>ἰσχυρὸν μὲν σφοδρῶς ἐργάζονται τὸ φάρμακον, οὐκ
                         ἀβλαβὲς <lb/>δὲ τῶν νεύρων. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

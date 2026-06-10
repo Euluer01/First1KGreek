@@ -1,99 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-    
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">De venae sectione adversus Erasistratum</title>
-                <author>Galen</author>
-                <editor>Karl Gottlob Kühn</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De venae sectione adversus Erasistratum</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0057.tlg068.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg068.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-                        <author>Galen</author>
-                        <editor>Karl Gottlob Kühn</editor>
-                        <imprint>
-                            <publisher>Knobloch</publisher>
-                            <pubPlace>Leipzig</pubPlace>
-                            <biblScope unit="vol">11</biblScope>
-                            <biblScope unit="pp" from="147" to="186">147-186</biblScope>
-                            <date>1826</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/hvd.hxpp8s?urlappend=%3Bseq=159%3Bownerid=27021597764275152-163">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg068.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Leipzig</pubPlace>
+                     <biblScope unit="vol">11</biblScope>
+                     <biblScope unit="pp" from="147" to="186">147-186</biblScope>
+                     <date>1826</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/hvd.hxpp8s?urlappend=%3Bseq=159%3Bownerid=27021597764275152-163">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg068.1st1K-grc1">
-                <pb n="147"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΦΛΕΒΟΤΟΜΙΑΣ ΠΡΟΣ <lb/>ΕΡΑΣΙΣΤΡΑΤΟΝ ΒΙΒΛΙΟΝ.</head>
-                    <p>Ἄξιον εἶναί μοι δοκεῖ ζητήσεως οὐ σμικρᾶς <lb/>τί δή ποτε καὶ τἄλλα τῆς
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg068.1st1K-grc1">
+         <pb n="147"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΦΛΕΒΟΤΟΜΙΑΣ ΠΡΟΣ <lb/>ΕΡΑΣΙΣΤΡΑΤΟΝ ΒΙΒΛΙΟΝ.</head>
+            <p>Ἄξιον εἶναί μοι δοκεῖ ζητήσεως οὐ σμικρᾶς <lb/>τί δή ποτε καὶ τἄλλα τῆς
                         τέχνης ἱκανὸς ὢν ὁ Ἐρασίστρατος, <lb/>κᾀν τοῖς σμικροτάτοις οὕτως ἐπιμελὴς
                         ὥστε καὶ <lb/>λαχάνων τινῶν καὶ καταπλασμάτων ἑψήσεις γράφειν, ἐφ’ ὧν
                         <lb/>ἤρκεσεν ἂν ἑτέρῳ πρὸς ὅ τι συμφέρει μόνον εἰπόντι τὸν τρόπον <lb/>τῆς
@@ -144,9 +151,9 @@
                         σμικρὰ τῶν τοῖς πάθεσιν συμφερόντων γραφῆς ᾤετο <lb/>δεῖσθαι, τὰ δ’ οὕτω
                         μεγάλα δύνασθαί τινα καὶ χωρὶς τοῦ <lb/>παρ’ ἐκείνου μαθεῖν αὐτὸν ἐξευρεῖν.
                     </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>Ἡ δ’ αἰτία δι’ ἣν οὐκ ἐχρῆτο φλεβοτομίᾳ, <lb/>τὸ μὲν ἀληθέστατον φάναι, τάχ’
+         </div>
+         <div n="2" type="chapter">
+            <p>Ἡ δ’ αἰτία δι’ ἣν οὐκ ἐχρῆτο φλεβοτομίᾳ, <lb/>τὸ μὲν ἀληθέστατον φάναι, τάχ’
                         ἄν τῳ δόξειε μαντείας δεῖσθαι. <pb n="151"/> τί γὰρ ἄν τις εἰδείη πῶς
                         Ἐρασίστρατος ἐγίνωσκεν <lb/>ὑπὲρ ὧν αὐτὸς οὐδὲν ἐμνημόνευσε διεξοδικῶς; ὅμως
                         δ’ οὖν <lb/>ἐτόλμησάν τινες ἀπομαντεύσασθαι τῆς γνώμης αὐτοῦ. κατάφωροι
@@ -177,10 +184,10 @@
                         οὕτω <lb/>λόγον μῆκος ἐκπεσεῖν ἀνάγκη, καὶ ἄλλως οὐδὲν κατεπείγει τὰ
                         <lb/>μήθ’ ὑπ’ Ἐρασιστράτου μήθ’ ὑπ’ ἄλλου τινὸς τῶν Χρυσίππου <lb/>μαθητῶν
                         εἰρημένα νῦν ἐπιχειρεῖν ἐξελέγχειν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>
-                        <milestone unit="ed1page" n="2"/>Ἄριστα οὖν μοι δοκῶ διαθέσθαι τὸν <pb n="153"/> λόγον, εἰ τἄλλα παραλιπὼν ἀπ’ αὐτῶν ἀρξαίμην τῶν Ἐρασιστράτῳ
+         </div>
+         <div n="3" type="chapter">
+            <p>
+               <milestone unit="ed1page" n="2"/>Ἄριστα οὖν μοι δοκῶ διαθέσθαι τὸν <pb n="153"/> λόγον, εἰ τἄλλα παραλιπὼν ἀπ’ αὐτῶν ἀρξαίμην τῶν Ἐρασιστράτῳ
                         <lb/>δοκούντων· εἰρήσεται δ’ ὡς ἔνι μάλιστα διὰ βραχυτάτων. <lb/>ἀρέσκει δὲ
                         αὐτῷ πνεύματος μὲν ἀγγεῖον εἶναι τὴν <lb/>ἀρτηρίαν, αἵματος δὲ τὴν φλέβα·
                         σχιζόμενα δ’ ἀεὶ τὰ μείζω <lb/>τῶν ἀγγείων εἰς ἐλάττονα μὲν τὸ μέγεθος,
@@ -238,9 +245,9 @@
                         τυγχάνουσαι καὶ διατεταμέναι, συμφωνεῖται τοῦτό γε <lb/>καὶ αὐτῷ τῷ
                         Ἐρασιστράτῳ. τὸ δὲ ὅτῳ χρὴ τρόπῳ κενῶσαι <lb/>αὐτὰς τὸ ἀμφισβητούμενόν
                         ἐστιν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>Ἐγὼ μὲν οὖν ᾤμην, ἐπειδὴ ἅπαξ τὸ κενούμενον <lb/>ὡμολόγηται, ῥᾷστόν τε ἤδη
+         </div>
+         <div n="4" type="chapter">
+            <p>Ἐγὼ μὲν οὖν ᾤμην, ἐπειδὴ ἅπαξ τὸ κενούμενον <lb/>ὡμολόγηται, ῥᾷστόν τε ἤδη
                         καὶ ἑτοιμότατόν ἐστιν <lb/>τεμεῖν τὴν φλέβα· καὶ γὰρ ἂν τάχιστα οὕτω καὶ
                         αὐτὰς μόνας <lb/>τὰς φλεγμονὰς ἐξεκενώσαμεν, ὡς αἵ γε ἀσιτίαι πρὸς τῷ χρόνου
                         <lb/>δεῖσθαι μακροῦ καὶ ὅλην τὴν ἕξιν κενοῦσιν ὁμοίως· τὸ <lb/>δὲ οὐ χρή. τί
@@ -312,9 +319,9 @@
                         τῶν νεφριτικῶν παθημάτων συνδρομῇ <lb/>προειπὼν καὶ ἐς νεφρὸν ὀδύνη βαρείη,
                         ἀρχὴ μηροῦ <lb/>κατ’ ἰξὺν ἐπιφέρει, ἰγνὺν τέμνειν, τοῦτ’ ἐστὶ τὴν ἐν ἰγνύῃ
                         <lb/>τέμνειν φλέβα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>Ἐκεῖνο δὲ πῶς εἴρηται; ἐκ Στυμαργέω οἰκέτιδος <lb/>οὐδὲ αἷμα ἐγένετο, ὡς
+         </div>
+         <div n="5" type="chapter">
+            <p>Ἐκεῖνο δὲ πῶς εἴρηται; ἐκ Στυμαργέω οἰκέτιδος <lb/>οὐδὲ αἷμα ἐγένετο, ὡς
                         ἔτεκε θυγατέρα, ἀπέστραπτο τὸ <lb/>στόμα πρὸς ἰσχίον καὶ σκέλος, ὀδύνη παρὰ
                         σφυρὸν τμηθεῖσα <lb/>ἐράϊσε, καίτοι τρόμοι τὸ σῶμα περικατεῖχον. ἀλλ’ ἐπὶ
                         τὴν <lb/>πρόφασιν χρὴ ἐλθεῖν καὶ τῆς προφάσιος τὴν τροφήν. Ἱπποκράτης
@@ -395,9 +402,9 @@
                         πεῖρα διδάσκει με, ὅ τε λόγος οὕτως ἐπὶ τὴν πρόφασιν <lb/>κελεύει ἔρχεσθαι
                         καὶ τῆς προφάσεως τὴν ῥοπήν. ὅτι δὲ <lb/>καὶ ἡ πεῖρα, τὰ τῶν ἐμπειρικῶν
                         ἀναγνοὺς εἴσῃ γράμματα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>Μὴ τοίνυν ἔτι φιλονεικεῖν Ἱπποκράτει μόνῳ <lb/>δόκει κενοῦν αἷμα παραινοῦντι,
+         </div>
+         <div n="6" type="chapter">
+            <p>Μὴ τοίνυν ἔτι φιλονεικεῖν Ἱπποκράτει μόνῳ <lb/>δόκει κενοῦν αἷμα παραινοῦντι,
                         κᾂν εἰς τρόμον, κᾂν εἰς ὕδερον, ﻿<pb n="167"/> κᾂν εἰς ἄλλο τι ψυχρὸν πάθος
                         ἢ ἀνὴρ δι’ ἐπίσχεσιν <lb/>αἱμοῤῥοΐδος ἢ γυνὴ δι’ ἐμμηνίων ἐμπέσοι, ἀλλὰ καὶ
                         τοῖς ἀπὸ <lb/>τῆς ἐμπειρίας ἅπασιν ἰατροῖς καὶ τῷ βίῳ τῶν ἀνθρώπων·
@@ -431,7 +438,7 @@
                         ἐβουλόμην ἄν <lb/>μοι διαλέγεσθαι. τὸ γὰρ ἐπίστασθαι πηνίκα μὲν χρὴ τέμνειν
                         <lb/>τὴν ἐν τῷ μετώπῳ φλέβα, πηνίκα δὲ τὰς παρὰ τοὺς κανθοὺς <lb/>τῶν
                         ὀφθαλμῶν ἢ τὰς ὑπὸ τῇ γλώττῃ ἢ τὴν ὠμιαίαν <lb/>
-                        <milestone unit="ed2page" n="400"/>ὀνομαζομένην, ἢ τὴν διὰ μασχάλων, ἢ τὰς
+               <milestone unit="ed2page" n="400"/>ὀνομαζομένην, ἢ τὴν διὰ μασχάλων, ἢ τὰς
                         κατ’ ἰγνύας ἢ <lb/>παρὰ σφυρὸν, ὑπὲρ ὧν ἁπασῶν ἐδίδαξεν Ἱπποκράτης, τοῦτον
                         <lb/>ἐγὼ νομίζω τὸν λογισμὸν ἰατρῶν εἶναι. τὸ δ’ ὅτι χρὴ τὰ <lb/>ἐναντία
                         τοῖς ἐναντίοις ἰᾶσθαι καὶ ὡς τῷ πλήθει ἡ κένωσις <lb/>ἐναντίον, τοσούτῳ δέω
@@ -456,9 +463,9 @@
                         ἑάλωσαν, ἄλλοι δὲ αἵματος ἤμεσαν <lb/>ἐκ γαστρὸς, ἢ ἐκ θώρακος ἀνέβηξαν, ἢ
                         παραπληγίαις ἢ ὑδέροις <lb/>ἀπώλοντο. ταῦτ’ ἐγὼ χρῆναι γινώσκειν φημὶ τὸν
                         ἰατρόν. <lb/>αὕτη μεγάλη περὶ τὰς κενώσεις τέχνη. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>Τὸ δ’ ὅσον χρὴ κενοῦν αἵματος πλεονάζοντος <lb/>οὐδὲν μέγα. τί δήποτ’ οὖν
+         </div>
+         <div n="7" type="chapter">
+            <p>Τὸ δ’ ὅσον χρὴ κενοῦν αἵματος πλεονάζοντος <lb/>οὐδὲν μέγα. τί δήποτ’ οὖν
                         παρεῖδεν ὁ Ἐρασίστρατος <pb n="171"/> αὐτὸ καθάπερ τι τῶν μεγάλων; ἢ τί
                         ληροῦσιν οἱ πρὸς ἅπαν <lb/>ἐρίζειν ἑτοιμότατοι τῆς κενώσεως ἄγνωστον εἶναι
                         φάσκοντες, <lb/>ὥσπερ καὶ τῶν ἄλλων βοηθημάτων ταυτὸν κατηγοροῦντες; <lb/>ἢ
@@ -535,9 +542,9 @@
                         πολὺν χρόνον ἀσιτήσαντι κίνδυνος ἐκλυθῆναι. σαφῶς <lb/>γὰρ ἐνταῦθα τὸν κατ’
                         ἔνδειαν κίνδυνον εὐλαβεῖσθαί φησιν <lb/>αὐτὸν, ὃν ἐξ ἀνάγκης ἀκολουθήσειν
                         οἴεται πλείονι χρόνῳ, διὰ <lb/>τὴν φλεγμονὴν λιμαγχονουμένου τἀνθρώπον. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="8">
-                    <p>Καὶ οὐ δέομαι πάλιν ἐνταῦθα ληρούντων <lb/>Ἐρασιστρατείων διὰ τί προσφέρειν
+         </div>
+         <div n="8" type="chapter">
+            <p>Καὶ οὐ δέομαι πάλιν ἐνταῦθα ληρούντων <lb/>Ἐρασιστρατείων διὰ τί προσφέρειν
                         τροφὰς τοῖς φλεγμαίνουσιν <lb/>ἀνθρώποις εἶπεν, ἀλλ’ αὐτὸν Ἐρασίστρατον
                         ἐξηγούμενον <lb/>ἑαυτὸν ἔχω δι’ ὧν ἔμπροσθεν ἐμνημόνευσα ῥήσεων. ἐκ μὲν
                         <lb/>τοῦ τρίτου περὶ πυρετῶν ὑπὲρ τῶν ἐπὶ πλήθει γινομένων <lb/>φλεγμονῶν·
@@ -585,9 +592,9 @@
                         σὺ δέ μοι δοκεῖς ὥσπερ ἐπιθυμῶν ἀσιτίαν συμβουλεύειν <lb/>αὐτὸς ἐργάζεσθαι
                         πάθη χρῄζοντα λιμαγχονίας. τί δεινὸν ἦν <lb/>τὸ λυπῆσον κενώσαντα μηδὲ ἔχειν
                         πρᾶγμα; </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="9">
-                    <p>Καίτοι μάτην πολλὰ κάμνω παρὸν ὑπομνῆσαί <lb/>σε τὸν λόγον. εἰ γὰρ οὐκ αὐτὸς
+         </div>
+         <div n="9" type="chapter">
+            <p>Καίτοι μάτην πολλὰ κάμνω παρὸν ὑπομνῆσαί <lb/>σε τὸν λόγον. εἰ γὰρ οὐκ αὐτὸς
                         ἡμᾶς ἐδίδαξας ἐν τῷ <lb/>προτέρῳ τῶν ὑγιεινῶν, ἔνθα γένεσιν τοῦ κατὰ τὰς
                         φλέβας <lb/>πλήθους προειπὼν ἐφεξῆς γράφεις ἰάματα, σκοπὸν μὲν αὐτῶν
                         <lb/>ἁπάντων κένωσιν θέμενος, ἄλλην δ’ ἄλλῳ συμφέρειν φάσκων· <pb n="180"/>
@@ -680,8 +687,7 @@
                         βοηθημάτων <pb n="186"/> εἰς ἀσιτίαν κατακλεισθέντων. εἰ μὲν μόνῃ χρησόμεθα,
                         <lb/>πλεῖον οὐδὲν ἕξομεν, οὐ γὰρ κενοῖ μόνη. σὺν ᾗ <lb/>κενοῦν πέφυκε,
                         μείζονας ταῦτα τὰς ἄλλας βλάβας τῆς ἐκ τοῦ <lb/>κενοῦν ὠφελείας ἔχει. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

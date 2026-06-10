@@ -1,96 +1,111 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">
-        <fileDesc>
-            <titleStmt>
-                <title xml:lang="lat">Physiognomonica (epitome Matritensis)</title>
-                <author xml:lang="lat">Adamantius</author>
-                <editor>Richard Foerster</editor>
-                <funder>Harvard Library Arcadia Fund</funder>
-                <principal>Gregory Crane</principal>
-                <respStmt>
-                    <persName xml:id="DDD">Digital Divide Data</persName>
-                    <resp>Corrected and encoded the text</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Gregory Crane</persName>
-                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Matt Munson</persName>
-                    <resp>Project Manager (University of Leipzig)</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Annette Gessner</persName>
-                    <resp>Project Assistant (University of Leipzig)</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Thibault Clérice</persName>
-                    <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Bruce Robertson</persName>
-                    <resp>Technical Advisor</resp>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <authority>Harvard College Library</authority>
-<idno type="filename">tlg0731.tlg003.1st1K-grc1.xml</idno>
-<availability>
-<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Physiognomonica (epitome Matritensis)</title>
+            <author xml:lang="lat">Adamantius</author>
+            <editor>Richard Foerster</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg0731.tlg003.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2017</date>
-                <publisher>Harvard College Library</publisher>
-                <pubPlace>United States</pubPlace>
-            </publicationStmt>
-            <sourceDesc>
-                <listBibl>
-                    <biblStruct>
-                        <monogr>
-                            <title>Scriptores physiognomonici Graeci et Latini</title>
-                            <editor>
-                                <persName>
-                                    <name>Richard Foerster</name>
-                                </persName>
-                            </editor>
-                            <author ref="urn:cts:greekLit:tlg0731">Adamantius Judaeus</author>
-                            <imprint>
-                                <publisher>Teubner</publisher>
-                                <pubPlace>Leipzig</pubPlace>
-                                <date>1893</date>
-                            </imprint>
-                            <biblScope unit="volume">1</biblScope>
-                        </monogr>
-                        <ref target="https://babel.hathitrust.org/cgi/pt?id=umn.31951p000664493">Hathi Trust</ref>
-                    </biblStruct>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>Text encoded in accordance with the latest EpiDoc standards</p>
-            <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+).(.+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-                <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-                <language ident="lat">Latin</language>
-            </langUsage>
-        </profileDesc>
-        <revisionDesc>
-            <change/>
-        </revisionDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0731.tlg003.1st1K-grc1">
-<div type="textpart" subtype="book" n="1">
-<pb n="320"/>
-<div type="textpart" subtype="section" n="1"><p>τὰς κόρας, νμεγάλοι τε ὀφθαλμοὶ καὶ
+            </availability>
+            <date>2017</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg0731.tlg003.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title>Scriptores physiognomonici Graeci et Latini</title>
+                     <editor>
+                        <persName>
+                           <name>Richard Foerster</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg0731">Adamantius Judaeus</author>
+                     <imprint>
+                        <publisher>Teubner</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1893</date>
+                     </imprint>
+                     <biblScope unit="volume">1</biblScope>
+                  </monogr>
+                  <ref target="https://babel.hathitrust.org/cgi/pt?id=umn.31951p000664493">Hathi Trust</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+).(.+)"
+                         n="section"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)"
+                         n="book"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
+                  <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+               </citeStructure>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-book-section"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0731.tlg003.1st1K-grc1">
+         <div n="1" type="book">
+            <pb n="320"/>
+            <div n="1" type="section">
+               <p>τὰς κόρας, νμεγάλοι τε ὀφθαλμοὶ καὶ
 στίλβοντες κινούμενοι δεδορκότες θυμῷ καὶ τὰ βλέφαρα αὐτῶν
 ἀνοίγονται, πάντων οὗτοι ἄχρηστοι. τῶν γὰρ λύκων καὶ
 συῶν ἀγρίων ταῦτα τὰ εἴδη. καὶ ὑπολάμπει ἔσω ὡς πῦρ· <lb n="10"/>
@@ -102,8 +117,7 @@
 ῶχραι Ma super ταῖς m. rubr. pos. τοῖς Ma 13. post
 εἴρηται, excidisse videtur καθάπερ
 </note>
-
-<pb n="321"/>
+                  <pb n="321"/>
 Matr. ὠμότεροι ἀγριώτεροί τε καὶ ἁρπακτικώτεροι. μείζους
 <lb n="10"/> δὲ οὖσαι ἢ ἐλάττους ἡμερώτερα σημαίνουσιν. αἱ δε αἱματώδεις
 τῶν κέγχρων ἐν τοῖς μέλασι φαρμακώδεις ἀνθρώπους μη-
@@ -115,8 +129,7 @@ m. rubr. 11. κέγχρων] κεγχρῶν Ma 12. ὠχροὶ| ὦχραι
 Ma 14. κέγχροις] κέγχρεσι supra εσι m. rubr. οισ pos. Ma
 χαροποί ] χαροπεῖς supra εῖς m. rubr. οί pos. Ma
 </note>
-
-<pb n="322"/>
+                  <pb n="322"/>
 Matr. ἀλλʼ εἰσὶ πεποεκιλμένοι, τούτων τὸ μέγεθος καὶ τὴν
 χροιὰν ἐπισκέπτου. εἰ μέλαινα ἢ ἑτέρα πυρρὰ ἐν ὑγροῖς ὀφθαλ-
 μοῖς καί γε μηδὲν ἄλλο ἄτοπον φαίνοιτο, ἄνδρα δηλοῦσι <lb n="10"/>
@@ -128,20 +141,19 @@ m. rubr. εἰ Ma ἑτέρα] ἕτερα Ma πυρρά] πυρά Μa 10.
 τοῦ μετρίου] παρὰ τὸ μέτριον Ma 12. εἰ Ma, sed ε m. rubr.
 antepos. ἴτυς] ᾖ τοῖς Ma
 </note>
-
-<pb n="323"/>
+                  <pb n="323"/>
 Matr. κλέπτην, γυναιξὶν ὁμιλοῦντα αἰσχρῶς καὶ ἀτόπως. ἴτυες
 αἰόλοι χρόαν ταῖς ἴρισιν ὅμοιοι ξηρότεροι τοῖς ὀφθαλμοῖς
 ματαιότητα σημαίνουσιν, ἐν δὲ ὑγροῖς μεγαλόνοιαν καὶ ἀν-
 <lb n="10"/> δρείαν καὶ εὐθυλογίαν καὶ ὀρθοβουλίαν, ταχύτεροι δὲ εἰς
 ὀργὴν καὶ ἐν ἀφροδισίοις ἔργοις ἐπτοημένοι.</p>
-<note type="footnote">Matr. 7. ἴτυες] Οἱ τινες Μa, sed O m. rubr. antepos. 8.
+               <note type="footnote">Matr. 7. ἴτυες] Οἱ τινες Μa, sed O m. rubr. antepos. 8.
 αἰόλοι ἕωλοι Μa ἴρισιν] ῥισίν Μa
 </note>
-
-<pb n="324"/>
-</div>
-<div type="textpart" subtype="section" n="2"><p>Κοῖλοι πάνυ ὀφθαλμοὶ οὐκ ἐπαινετοί· ὅσοι δὲ
+               <pb n="324"/>
+            </div>
+            <div n="2" type="section">
+               <p>Κοῖλοι πάνυ ὀφθαλμοὶ οὐκ ἐπαινετοί· ὅσοι δὲ
 κοῖλοι ὄντες ὥσπερ ἐν ἀγγείῳ ὕδωρ καὶ μὴ ὑποκινοῦνται
 μεγάλοι ὄντες οὐ πονηροί, εἰ μή τι ἄλλο σημεῖον ποιεῖ· τὴν
 〈γὰρ〉 κοιλότητα ἥ τε ἰκμὰς καὶ τὸ μέγεθος παραμυθοῦνται· <lb n="10"/>
@@ -152,14 +164,14 @@ rubr. Ma 8. κοῖλοι] κύκλοι Ma καὶ μὴ] ἡμιδεεῖ? 9. �
 τὴν 〈γὰρ〉] ποιεῖ τὴν Ma 10. κοιλότητα| κυκλότητα Ma ἥ]
 εἴ Ma 11. κοίλων] κύκλων Ma δόλια] δειλία Ma
 </note>
-
-<pb n="325"/>
+                  <pb n="325"/>
 Matr. ἀπιστίαν, προδοσίαν, ἱεροσυλίαν σημαίνουσι καὶ τὰ ὅμοια
 τούτων. οἱ μὲν οὖν ἀτενεῖς περιττότερα ἤθη ἐμφαίνουσιν, οἱ
 δὲ ὑπορρέοντες δολερώτερα, εἰ μέντοι ὑπορρέοιεν ἀμαυρότητι,
 <lb n="10"/> μωρότερα σημαίνουσι.</p>
-</div>
-<div type="textpart" subtype="section" n="3"><p>Τῶν ἐξεχόντων ὀφθαλμῶν, 〈οἳ〉 οὔκ εἰσιν ἐπαινετοί,
+            </div>
+            <div n="3" type="section">
+               <p>Τῶν ἐξεχόντων ὀφθαλμῶν, 〈οἳ〉 οὔκ εἰσιν ἐπαινετοί,
 τοῖς μὲν οἴδημα περίκειται κύκλῳ, τοῖς δὲ ὡς τάφρος βαθεῖα
 <note type="footnote">Matr. 8. περιττότερα] phys.lat.§ 31 insaniae arguunt 9.
 ὑπορρέοιεν] ἀπορρέοι Ma 10. μωρότερα] ἐμμορώτερα Ma ση-
@@ -167,8 +179,7 @@ Matr. ἀπιστίαν, προδοσίαν, ἱεροσυλίαν σημαίν�
 ὀφθαλμῶν m. rubr. Ma οἳ inserui εἰσιν] ἐῶσιν Ma 12.
 οἴδημα] ὑπόδυμα Ma περίκειται] παράκειται Ma
 </note>
-
-<pb n="326"/>
+                  <pb n="326"/>
 Matr. καὶ στενὴ περιακολουθεῖ, δολερὸν ἦθος· οἱ δὲ πάντη
 ἀνεστηκότες ἀσωτείαν κατηγοροῦσι καὶ ματαιότητα καὶ μανίαν.
 προπήδησις ὀφθαλμῶν αἱματωδῶν οἰνοφλύγων καὶ γαστριμάρ-
@@ -181,8 +192,7 @@ Matr. καὶ στενὴ περιακολουθεῖ, δολερὸν ἦθος
 Ma πατροφόνοι τε καὶ μητροφόνοι] πατρόφονοί τε καὶ μητρό-
 φονοι· Ma
 </note>
-
-<pb n="327"/>
+                  <pb n="327"/>
 Matr. τε καὶ μητροφόνοι παιδοφόνοι τε καὶ φαρμακοὶ καὶ τὰ
 ὅμοια. εἰ δὲ ὑψηλοί εἰσιν οἱ ὀφθαλμοὶ μεγάλοι τε καὶ λαμπροὶ
 <lb n="10"/> καὶ εὐαγεῖς καὶ ὑγρὸν βλέποντες, δίκαιοι, συνετοί, φιλομαθεῖς,
@@ -190,14 +200,14 @@ Matr. τε καὶ μητροφόνοι παιδοφόνοι τε καὶ φαρ
 τοῦ προσώπου πολὺ ἐξέχοντες μικροί τε πάνυ καὶ πυρροὶ οὐ
 φρενήρη μόνον, ἀλλὰ παρειμένον καὶ τὴν γλῶτταν καὶ τὸ
 σῶμα εἶναι τὸν ἄνδρα λέγουσι.</p>
-<note type="footnote">Matr. 8. παιδοφόνοι] παιδοφόνοι Ma 10. εὐαγεῖς| εὐλι-
+               <note type="footnote">Matr. 8. παιδοφόνοι] παιδοφόνοι Ma 10. εὐαγεῖς| εὐλι-
 γεῖς Ma 11. οἷος] οἷον Ma 12. τοῦ προσώπου] τὸ πρόσ-
 ωπον Ma 13. μόνον delendum videtur
 </note>
-
-<pb n="328"/>
-</div>
-<div type="textpart" subtype="section" n="4"><p>Ὀφθαλμοὶ μικροὶ παλλόμενοι κακομηχάνους καὶ
+               <pb n="328"/>
+            </div>
+            <div n="4" type="section">
+               <p>Ὀφθαλμοὶ μικροὶ παλλόμενοι κακομηχάνους καὶ
 δολίους, μεγάλοι δὲ ἀνοήτους καὶ ματαίους ἐλέγχουσιν ἄνδρας.
 ὅσοι δὲ ὥσπερ ἐκπηδῶντες πάλλονται, κακοὺς ἄνδρας καὶ
 τούτους σημαίνουσιν, εἰ μέντοι μὴ μεγέθους εὖ ἔχωσι καὶ <lb n="15"/>
@@ -215,38 +225,37 @@ Matr. τε καὶ μητροφόνοι παιδοφόνοι τε καὶ φαρ
 μεῖζον ἡ] μεῖζόν τι Ma 21. ὁ Μακεδὼν] Μακεδὼν ὁ Ma 22.
 λάγνους| λαγωούς Ma
 </note>
-
-<pb n="329"/>
+                  <pb n="329"/>
 Matr. ριστάς, αὐλητάς, μουσικούς· καὶ τὰ ἐκ τῶν ἐντὸς ση-
 μείων ἔχοντα τοιούτους εἶναί φασι τοὺς ἄνδρας. ὀφθαλμοὶ
 <lb n="10"/> περιπελιδνοί, εἰ καὶ τὰ ἐντὸς σημεῖα ἔχουσιν, ἀπίστους καὶ
 ἀδίκους καὶ παντόλμους τοὺς τοιούτους λέγουσιν ἄνδρας.</p>
-</div>
-<div type="textpart" subtype="section" n="5"><p>Σκοτεινοὶ ὀφθαλμοὶ οὐ πολύφρονας σημαίνουσιν ἄν-
+            </div>
+            <div n="5" type="section">
+               <p>Σκοτεινοὶ ὀφθαλμοὶ οὐ πολύφρονας σημαίνουσιν ἄν-
 δρας· ξηροὶ δὲ ὄντες ἀνομωτέρους δηλοῦσιν, εἰ δὲ καὶ μικροί
 εἰσι θολεροί, ἐπιβούλους, κακοτέχνους, προβούλους. ὀφθαλμοὶ
 <note type="footnote">Matr. 8. αὐλητάς] αὐλιστάς Ma 10. ἔχουσιν] ε Ma
 12. ante Σκοτεινοὶ titulus περὶ ὀφθαλμῶν σκοτεινῶν m. rubr.
 Μa οὐ πολύφρονας | φιλόφρονας οὐ πολύ Ma
 </note>
-
-<pb n="330"/>
+                  <pb n="330"/>
 Matr. σκότιοι ὑγροὶ κοῖλοι αὐταρκως μεγέθους ἔχοντες εὐσταθῆ
 φροντιστήν, πολυθεάμονα, εὐμαθῆ, εὐλαβῆ καὶ δειλὸν καὶ
 φειδόμενον δηλοῦσιν , οἱ δὲ ἀγλυώδεις δολερούς, ἀπίστους, <lb n="10"/>
 ἀκολάστους.</p>
-<p>Οἱ εὐφεγγεῖς ὀφθαλμοὶ ἄριστοί εἰσιν, εἰ μή τι ἄλλο ἀντι-
+               <p>Οἱ εὐφεγγεῖς ὀφθαλμοὶ ἄριστοί εἰσιν, εἰ μή τι ἄλλο ἀντι-
 λέγει σημεῖον· πάντα γὰρ ἀκριβῶς ἐπισκέπτεσθαι δεῖ τὰ
 σημεῖα.</p>
-<note type="footnote">Matr. 8. σκότιοι] σκολιοί Ma, etiam in marg. m. rubr.
+               <note type="footnote">Matr. 8. σκότιοι] σκολιοί Ma, etiam in marg. m. rubr.
 περὶ σκολιῶν κοῖλοι αὐτάρκως] κοιλιαυτάρκεις Ma 12.
 ante Οἱ titulus περὶ ὀφθαλμῶν εὐφεγγῶν m. rubr. Ma ἀντι-
 λέγει] ἀντλέ Ma
 </note>
-
-<pb n="331"/>
-</div>
-<div type="textpart" subtype="section" n="6"><p>Ἐὰν μαρμαρύσσωσιν οἱ ὀφθαλμοὶ ὅμοιοι, κἂν
+               <pb n="331"/>
+            </div>
+            <div n="6" type="section">
+               <p>Ἐὰν μαρμαρύσσωσιν οἱ ὀφθαλμοὶ ὅμοιοι, κἂν
 φῶς ἐν αὐτοῖς ἐστιν, οὐκ ἀγαθοί· μαρμαρυγὴ γὰρ εἰ ἔσται ἐν
 <lb n="10"/> γλαυκοῖς καὶ αἱματώδεσιν ὀφθαλμοῖς, θερμῶς ὀργιζόμενον δηλοῖ
 καὶ ἐν ἑκάστῳ θερμὸν πάντολμον ἄνδρα καὶ ἐγγὺς μανίας
@@ -257,8 +266,7 @@ ante Οἱ titulus περὶ ὀφθαλμῶν εὐφεγγῶν m. rubr. Ma �
 ζόμενον| ἐργαζόμενον? 12. χαροποῖς εἴη] χαροποῖσι Ma δει-
 λίαν] δηλίαν Ma πᾶν γὰρ χρῆμα| παραχρῆμα Ma
 </note>
-
-<pb n="332"/>
+                  <pb n="332"/>
 Matr. καὶ κακομήχανοι σφόδρα, καὶ τοιούτους εἶναι δηλοῦσι
 τοὺς ἄνδρας. οἱ δὲ τοιούτους ὀφθαλμοὺς ἔχοντες καὶ γελώδεις
 τουτέστιν ὑπογελῶντας εἰς ἀκρότητα πάσης κακίας ἔρχονται.
@@ -270,9 +278,8 @@ Matr. καὶ κακομήχανοι σφόδρα, καὶ τοιούτους ε
 ἔνυδρον Ma ἰσχυρούς] ἰσχυρῶς Ma 11. ἀτόλμους] ἀτραύ-
 λους Ma 12. καὶ inser. m. rubr. Ma κακοὺς] ἀκάκους
 </note>
-
-<pb n="333"/>
-<lb n="5"/> Matr. μαίνουσιν, οἱ δὲ μικρότεροι καὶ κοῖλοι χείρους, ὠμὸν τὸ
+                  <pb n="333"/>
+                  <lb n="5"/> Matr. μαίνουσιν, οἱ δὲ μικρότεροι καὶ κοῖλοι χείρους, ὠμὸν τὸ
 φρόνημα ἔχοντας, ἐπιβούλους, κρυψινόους τουτέστι τὸν σκοπὸν
 αὐτῶν ὑποκρύπτοντας καὶ ἄλλους ὑποσυλῶντας. εἰ δὲ ἐπὶ
 τοιούτοις ὀφθαλμοῖς ἐπισκύνιον ἔχουσιν ἐννεῦον ταῖς ὀφρῦσι
@@ -284,24 +291,24 @@ Matr. καὶ κακομήχανοι σφόδρα, καὶ τοιούτους ε
 supra prius ο pos. ἐννεῦον] ἐννενεύοντες Ma 9. βλέφαρα]
 βλέφαρά τε?
 </note>
-
-<pb n="334"/>
+                  <pb n="334"/>
 Matr. μὲν ἐπισκύνιον τά τε βλέφαρα καὶ τὰς ὀφρῦς μὴ οὕτως
 ἔχουσι, τὸ δὲ βλέμμα αὐτῶν ἐφʼ ἑαυτῶν πικρὸν καὶ τραχύ,
 χείρους οὗτοι τῶν προρρηθέντων.</p>
-</div>
-<div type="textpart" subtype="section" n="7"><p>, Ὅσοις ὀφθαλμοῖς ἡδονὴ καὶ γέλως ἐγκατοικεῖ, ἐπ- <lb n="10"/>
+            </div>
+            <div n="7" type="section">
+               <p>, Ὅσοις ὀφθαλμοῖς ἡδονὴ καὶ γέλως ἐγκατοικεῖ, ἐπ- <lb n="10"/>
 αινετοί, ἀλλʼ οὐ πάντη· εἰσὶ γὰρ καὶ ἐν τούτοις δολεροὶ
 κρύπτοντες τὸν νοῦν καὶ τὸν σκοπὸν αὐτῶν, κακομήχανοι,
 <note type="footnote">Matr. 7. ἐπισκύνιον| ἐπιχείμιον Ma 8. πικρὸν| μικρὸν
 Ma 10. post Ὅσοις inser. δʼ m. rubr. Ma ἐπαινετοί] ἐπ-
 αινετόν Ma 12. αὐτῶν| αὐτῶν Ma
 </note>
-
-<pb n="335"/>
+                  <pb n="335"/>
 Matr. κακοῦργοι. ὅσοι δὲ ἄμα τῷ γέλωτι ὑποβλέποντές εἰσι
 καὶ ξηροί, οἱ τοιοῦτοι κακίστους ὑποσημαίνουσιν ἄνδρας.</p>
-<lb n="10"/><p> Ὀφθαλμοὶ κοῖλοι γέλωτα ἔχοντες ὥσπερ λοχῶντες κακόν
+               <lb n="10"/>
+               <p> Ὀφθαλμοὶ κοῖλοι γέλωτα ἔχοντες ὥσπερ λοχῶντες κακόν
 τι βουλεύονται· εἰ τὰ ἐκτὸς τῶν ὀφθαλμῶν κινεῖ τὸ μέτωπον
 καὶ παρειαὶ καὶ ὀφρύες καὶ χεῖλος, κακὸς ὁ γέλως οὗτος·
 βουλὴν ἐπιτείνων ἐλθεῖν πονηρὰν καὶ ἄδικον. κἂν μὲν πρὸς
@@ -312,8 +319,7 @@ m. rubr. Ma κοῖλοι m. rubr. in marg., in textu κύκλοι Ma
 μέτωπον| κινεῖται, οἷον μέτωπον? 14. σεσηρότι] σεσειρότι Ma
 μύωσί τε καὶ] ὀμοιώσαιτο. εἰ δʼ Μa
 </note>
-
-<pb n="336"/>
+                  <pb n="336"/>
 Matr. ἔργα ἄδικα· εἰ δὲ ἀνοικτοὺς καὶ σεσηρότας τουτέστιν
 ἀποτεινομένους τοὺς ὀφθαλμοὺς ἔχουσιν, αἱ τούτων πράξεις εἰς
 ἄνομα ἔργα κινοῦνται. τοὺς δὲ πάνυ ἀναγελῶντας ὀφθαλ-
@@ -325,36 +331,35 @@ Matr. ἔργα ἄδικα· εἰ δὲ ἀνοικτοὺς καὶ σεση�
 γελῶντας] ἀνεῳγμένους καὶ γελῶντας? 10. μαντεύου] μαντεύει
 Ma 12. ἅμα ὑγρότητι] ἀμαυρότητι Μa
 </note>
-
-<pb n="337"/>
+                  <pb n="337"/>
 Matr. τητι, βλέφαρα ἀνειμένα, μέτωπον μαλακόν, τὰ ἀμφὶ τὰ
 βλέφαρα λαγαρὰ ἤθη δηλοῦσι μεγαλοπρεπῆ, δίκαια, ἥμερα,
 εὐσεβῆ, φιλόξενα, συνετά, εὔβουλα, εὐμαθῆ, ἔρωτος πλήρη
 <lb n="10"/> τυγχάνοντα.</p>
-</div>
-<div type="textpart" subtype="section" n="8"><p>Ὀφθαλμοὶ σκυθρωπάζοντες τουτέστι στυγοῦντες ἅμα
+            </div>
+            <div n="8" type="section">
+               <p>Ὀφθαλμοὶ σκυθρωπάζοντες τουτέστι στυγοῦντες ἅμα
 ὑγρότητι φροντιστὴν ἢ φιλότεχνον μαρτυροῦσιν· ἐὰν δὲ συμ-
 <note type="footnote">Matr. 7. ἀνειμένα| ἀνήμερα Ma ἀμφὶ τὰ βλέφαρα| ἀμ-
 φότερα Ma 8. λαγαρὰ] λιγυρά, Ma 9. συνετά] συνεχῆ Ma
 11. ante Ὀφθαλμοὶ titulus περὶ ὀφθαλμῶν σκυθρωπῶν m.
 rubr. Ma ἅμα ὑγρότητι] ἀμαυρότητι Ma
 </note>
-
-<pb n="338"/>
+                  <pb n="338"/>
 Matr. μύωσι καὶ αἱ ὀφρύες χαλῶσι καὶ τὸ μέτωπον χαλαρὸν
 φαίνοιτο ἄμα τῇ σκυθρωπότητι, πιστὰ τούτων τὰ ἤθη καὶ
 βέβαια εὔβουλά τε καὶ σώφρονα. ζηροὶ δὲ ὀφθαλμοὶ λυ-
 πηρὸν βλέποντες φιλοφροσύνης εἰσὶ πλήρεις. εἰ καὶ τὸ
 μέτωπον τραχὺ καὶ βλέμμα ἀτενὲς βλέφαρά τε ὀρθά, ἀγριό- <lb n="10"/>
 βουλον ἄνδρα σημαίνουσιν.</p>
-<note type="footnote">Matr. 9. φιλοφροσύνης] οὐ πολυφροσύνης? cf. p. 329, 12
+               <note type="footnote">Matr. 9. φιλοφροσύνης] οὐ πολυφροσύνης? cf. p. 329, 12
 et 15 11. post σημαίνουσιν quae sunt in Po a πᾶν (l. 17)
 usque ad σπεύδοντα (p. 339, 14) in Ma exciderunt
 </note>
-
-<pb n="339"/>
-</div>
-<div type="textpart" subtype="section" n="9"><p>Οἱ συγκλειόμενοι ὀφθαλμοὶ καὶ αὖθις ἐπανοιγό-
+               <pb n="339"/>
+            </div>
+            <div n="9" type="section">
+               <p>Οἱ συγκλειόμενοι ὀφθαλμοὶ καὶ αὖθις ἐπανοιγό-
 μενοι ἐπίβουλον καὶ ἐπίκλοπον ἄνδρα σημαίνουσιν, εἰ μέντοι
 <lb n="10"/> ὑγροί εἰσι, φροντιστὴν καὶ φιλότεχνον. εἰ δὲ τρόμος αὐτοῖς ἐστι
 καὶ ἅμα ὠχρότης, μανίαν σημαίνει ἐπιληψίαν τε δηλοῖ τῷ
@@ -363,8 +368,7 @@ usque ad σπεύδοντα (p. 339, 14) in Ma exciderunt
 ὀφθαλμῶν m. rubr. Ma ἐπανοιγόμενοι] ἐπαναγόμενοι Ma 12.
 ἐστὶν] ἔστι Ma πρὸς] εἰς Ma
 </note>
-
-<pb n="340"/>
+                  <pb n="340"/>
 Matr. τὸ συγκλείεσθαι ὑπορρέοιεν καὶ εἰς τὸ ἄνω χωροῦσιν,
 ἀκολασίαν τουτέστιν ἄσωτον τὸν ἄνδρα δηλοῦσι καὶ μάταιον
 καὶ μαινόμενον κατηγοροῦσιν· εἰ δὲ ὀρθοὶ ὄντες συγκλείονται
@@ -375,8 +379,7 @@ Matr. τὸ συγκλείεσθαι ὑπορρέοιεν καὶ εἰς τὸ
 <note type="footnote">Matr. 7. ὑπορρέοιεν| ὑπορρέοι Ma χωροῦσιν| χωρεῖ Ma
 10. τοῦ om. Ma 11. γλυκύνουν| γλυκόνουν Ma
 </note>
-
-<pb n="341"/>
+                  <pb n="341"/>
 Matr. εἰ δὲ πρὸς τούτῳ μέτωπον τραχύ, ὀφρῦς συντετα-
 <lb n="10"/> μένας, βλέφαρα σκληρὰ πεπηγότα ἔχοι τις, ἀγριώτερος τὸν
 θυμόν, τολμᾶν ἑτοιμότερος, χαυνούμενος μέντοι ἐπαίνοις καὶ
@@ -384,38 +387,37 @@ Matr. εἰ δὲ πρὸς τούτῳ μέτωπον τραχύ, ὀφρῦς 
 ὅσοι δὲ τὰ βλέφαρα οὐκ ἔχουσιν ὀρθὰ οὐδὲ τὰς ὀφρῦς
 ἀκλινεῖς, ἀλλὰ τρόμος αὐτοῖς ἔνεστι καὶ ἅμα τὸ βλέμμα ὑπο-
 <lb n="15"/> κινεῖται, οὗτοι ἀνδρόγυνοι ὄντες ἄνδρες εἶναι βιάζονται.</p>
-<note type="footnote">Matr. 10. πεπηγότα] πεπληγότα Ma
+               <note type="footnote">Matr. 10. πεπηγότα] πεπληγότα Ma
 </note>
-
-<pb n="342"/>
-</div>
-<div type="textpart" subtype="section" n="10"><p>Ὀφθαλμοὶ ἀνοιγόμενοι ἐπὶ μέγα καὶ ἅμα ἱστά-
+               <pb n="342"/>
+            </div>
+            <div n="10" type="section">
+               <p>Ὀφθαλμοὶ ἀνοιγόμενοι ἐπὶ μέγα καὶ ἅμα ἱστά-
 μενοι ὡς ἐννοοῦντές τι, τὴν γὰρ αὐτῶν ὁποία ἐστί, σημαίνουσιν
 ἔννοιαν, δηλοῦσιν ὡς εἴρηται, τὸ [γὰρ] ξηρόν, τὸ ὑγρόν, τὸ <lb n="10"/>
 σκοτεινόν, τὸ λαμπρόν, μικρὸν καὶ μέγα, κοῖλον, ὑψηλόν,
 μαλακόν, ἀτενές, τὰ ἄλλα τὰ ἐπὶ τούτοις, ἃ πολλάκις διείληπται.</p>
-<note type="footnote">Matr. 8. iuxta Ὀφθαλμοὶ titulus περὶ ὀφθαλμῶν ἀνοιγο-
+               <note type="footnote">Matr. 8. iuxta Ὀφθαλμοὶ titulus περὶ ὀφθαλμῶν ἀνοιγο-
 μένων m. rubr. in marg. Ma 9. ἐννοοῦντές τι] ἐννοοῦντες
 τί Ma ὁποία] ὁποῖα Ma 10. ad δηλοῦσιν m. rubr. in marg.
 δηλοί εἰσιν Ma num καὶ δηλοῦσιν? γὰρ uncis inclusi 12.
 ad διείληπται m. rubr. in marg. Ma ἐπί τισι σημείοις ἐτάχθησαν
 </note>
-
-<pb n="343"/>
-<p>Matr. ὅσοι οὖν ὀφθαλμοὶ ἀεὶ ἀνεῳγμένοι εἰσὶ σκοτεινοὶ
+               <pb n="343"/>
+               <p>Matr. ὅσοι οὖν ὀφθαλμοὶ ἀεὶ ἀνεῳγμένοι εἰσὶ σκοτεινοὶ
 μὲν ὄντες καὶ ὑγροί, φροντιστάς, εἰ δὲ πρὸς τούτῳ ἥμερον
 <lb n="10"/> βλέπουσι, καὶ χρηστοὺς σημαίνουσιν. ὀφθαλμοὶ ἐκπεπετασμένοι
 ζηροὶ μαρμαρύσσοντες καθαρὸν καὶ λαμπρὸν βλέποντες ἀν-
 αισχύντους καὶ παντόλμους δηλοῦσιν ἄνδρας.</p>
-</div>
-<div type="textpart" subtype="section" n="11"><p>Ὀφθαλμοὶ σκαρδαμύττοντες δειλίας κατήγοροί εἰσι·
+            </div>
+            <div n="11" type="section">
+               <p>Ὀφθαλμοὶ σκαρδαμύττοντες δειλίας κατήγοροί εἰσι·
 τοὺς γὰρ τοιούτους καὶ ἐπιβούλους ἢ κακόν τι κρυπτῶς
 <note type="footnote">Matr. 10. βλέπουσι] βλέ Ma 13. ante Ὀφθαλμοὶ titulus
 περὶ ὀφθαλμῶν σκαρδαμυττόντων in Ma σκαρδαμύττοντες]
 σκαρδαμμύττοντες Ma
 </note>
-
-<pb n="344"/>
+                  <pb n="344"/>
 Matr. ἀρτύοντας μαντεύουσιν. οἱ δὲ αὐτοὶ οὗτοι διάστροφοι
 ἢ ὑπωχριῶντες μωρίαν δηλοῦσιν. ὀφθαλμοὶ ἀσκαρδάμυκτοι
 δεινὸν βλέποντες κακόν τι μηχανῶνται. πράως δὲ ἑστῶτες <lb n="10"/>
@@ -428,20 +430,21 @@ corr. Ma 10. ad πράως m. rubr. in marg. ἑστῶτες ὑγροί,
 Μa ἐρωτικοὺς] ὁρατικοὺς Ma 13. ἀσκαρδάμυκτοι] ἀσκαρδα-
 μυττοί (supra οί m. rubr. ί pos.) Ma φοινικοῖ] φοινικοί Ma
 </note>
-
-<pb n="345"/>
+                  <pb n="345"/>
 Matr. τητι, κακίαν καὶ μάχην ἢ ὀργὴν ἢ δαιμονικὴν κακό-
 τητα ἐμφαίνουσιν . . . . . .</p>
-<lb n="10"/></div>
-<div type="textpart" subtype="section" n="12"><p>Κύστεις ὀφθαλμῶν κάτωθεν προκείνμεναι οἰνόφλυγας
+               <lb n="10"/>
+            </div>
+            <div n="12" type="section">
+               <p>Κύστεις ὀφθαλμῶν κάτωθεν προκείνμεναι οἰνόφλυγας
 ὑπνηλοὺς ἄνδρας δηλοῦσιν.</p>
-<note type="footnote">Matr. 8. ἢ δαιμονικὴν κακότητα] δαιμονικὴν καὶ κακό-
+               <note type="footnote">Matr. 8. ἢ δαιμονικὴν κακότητα] δαιμονικὴν καὶ κακό-
 τητα Ma post ἐμφαίνουσιν lacunam indicavi
 </note>
-
-<pb n="346"/>
-</div>
-<div type="textpart" subtype="section" n="13"><p>Ὀξεῖς ὀφθαλμοὶ ταραχώδεις ἄρπαγας ἄνδρας
+               <pb n="346"/>
+            </div>
+            <div n="13" type="section">
+               <p>Ὀξεῖς ὀφθαλμοὶ ταραχώδεις ἄρπαγας ἄνδρας
 σημαίνουσιν· εἰ δὲ λεπτοὶ ὄντες τὰ βλέφαρα ἐπιβάλλωσιν,
 ἀνδρόγυνον ἄνδρα σημαίνουσιν. εἰ δὲ τὸ ἕτερον τῶν βλε-
 φάρων ὑποβάλλωσι ... . . πισταί, μοιχοὶ οἱ τοιοῦτοι. εἰ <lb n="10"/>
@@ -451,39 +454,37 @@ Ma 8. λεπτοὶ ὄντες] ἰλλώπτοντες? 10. post ὑποβάλ
 plura exciderunt in Ma nullo lacunae indicio μοιχοὶ]
 μυχοί Ma
 </note>
-
-<pb n="347"/>
-<lb n="5"/> Matr. κουσι, τὰ δὲ ἀμφότερα ἀνασπῶσι . . . . καὶ αὐτοὶ
+                  <pb n="347"/>
+                  <lb n="5"/> Matr. κουσι, τὰ δὲ ἀμφότερα ἀνασπῶσι . . . . καὶ αὐτοὶ
 μοιχοί εἰσιν· ὁμοίως καὶ οἱ τὰ μέσα τῶν βλεφάρων ἀνα-
 σπῶντες, τὰ δὲ ἑκάτερα συγκλείοντες.</p>
-<note type="footnote">Matt. 5. post ἀνασπῶσι nonnulla in Ma exciderunt nullo
+               <note type="footnote">Matt. 5. post ἀνασπῶσι nonnulla in Ma exciderunt nullo
 lacunae indicio 6. μοιχοί ] μυχοί Ma
 </note>
-</div>
-</div>
-
-<div type="textpart" subtype="book" n="2">
-<pb n="351"/>
-<div type="textpart" subtype="section" n="14"><p>Εὐνούχοις τοῖς ἐκ φύσεως κακίας σημεῖά
+            </div>
+         </div>
+         <div n="2" type="book">
+            <pb n="351"/>
+            <div n="14" type="section">
+               <p>Εὐνούχοις τοῖς ἐκ φύσεως κακίας σημεῖά
 ἐστι κἀκείνοις ἢ ἄλλοις ἀνθρώποις καὶ ὡς τὸ πολύ εἰσιν
 <note type="footnote">Matr. 12. Εὐνοὐχοις τοῖς] Ὄνυχες πλατεῖς Ma antecedente
 titulo m. rubr. περὶ εὐνούχων καὶ ὀνύχων 13. ἐστι κἀκείνοις
 ἢ] locus labem contraxit
 </note>
-
-<pb n="352"/>
+                  <pb n="352"/>
 Matr. οὗτοι ὠμόφρονες, δολεροί τε καὶ κακοῦργοι, ἕτεροι δὲ
 ἑτέρων μᾶλλον. τῶν δὲ 〈τομιῶν〉 εὐνούχων μεταβάλλει ἅμα
 τῇ τομῇ σημεῖα, τὸ δὲ πλέον τῆς συγγενοῦς φύσεως ἐμμένει.</p>
-</div>
-<div type="textpart" subtype="section" n="15"><p>Όνυχες πλατεῖς λευκοὶ ὑπόξανθοι εὐφυεῖς ἄνδρας <lb n="10"/>
+            </div>
+            <div n="15" type="section">
+               <p>Όνυχες πλατεῖς λευκοὶ ὑπόξανθοι εὐφυεῖς ἄνδρας <lb n="10"/>
 δηλοῦσιν, οἱ δὲ στενοὶ καὶ προμήκεις καὶ κυρτοὶ ἀναισθήτους
 <note type="footnote">Matr. 7. ὠμόφρονες] τούτοις ὁμόφρονες Ma 8. 〈τομιῶν+003E
 inserui 9. τομῇ] τόλμῃ Ma 10. ante Ὄνυχες titulus περὶ
 ὀνύχων m. rubr. Ma
 </note>
-
-<pb n="353"/>
+                  <pb n="353"/>
 Matr. καὶ θηριώδεις, οἱ δὲ σκολιοὶ [ καὶ] σφόδρα ἅρπαγας ἄν-
 δρας, οἱ δὲ προσφυεῖς τῇ σαρκὶ ἐπὶ πλεῖον ἅρπαγας ἄνδρας καὶ
 ἀναισθήτους καὶ θηριώδεις. μικροὶ πάνυ ὄνυχες πανουργίας
@@ -492,12 +493,12 @@ Matr. καὶ θηριώδεις, οἱ δὲ σκολιοὶ [ καὶ] σφό�
 <note type="footnote">Matr. 7. θηριώδεις] θηλυντικούς Ma καὶ delevi 11.
 μοιχῶν] μυχῶν Ma
 </note>
-
-<pb n="354"/>
+                  <pb n="354"/>
 Matr. οὐδὲ τῶν ἄλλων τὰ πολλὰ ἀξιόλογα, εἰ [μὴ] μόνον τις
 καθʼ ἕκαστον ἐφʼ ἑαυτοῦ σκοπήσει, μάλιστα δὲ ὄνυχες.</p>
-</div>
-<div type="textpart" subtype="section" n="16"><p>Οἱ δακύλους ἔχοντες συμφυεῖς ὑώδεις τουτέστι χοι-
+            </div>
+            <div n="16" type="section">
+               <p>Οἱ δακύλους ἔχοντες συμφυεῖς ὑώδεις τουτέστι χοι-
 ρώδεις καὶ μιαροί· οἱ συνεσταλμένους ἔχοντες πανοῦργοι, <lb n="10"/>
 κακοήθεις, φιλοχρήματοι. μικροὶ δὲ πάνυ ὄντες καὶ λεπτοὶ
 ἀνοητοτέρους δηλοῦσιν ἄνδρας. δάκτυλοι παχεῖς κολοβοὶ
@@ -506,21 +507,20 @@ Matr. οὐδὲ τῶν ἄλλων τὰ πολλὰ ἀξιόλογα, εἰ 
 titulus περὶ δακτύλων in marg. m. rubr. Ma 10. μιαροί
 μωροί Ma
 </note>
-
-<pb n="355"/>
+                  <pb n="355"/>
 Matr. τολμητικὸν καὶ ἀπρονόητον καὶ θηριώδη ἄνδρα δηλοῦσι,
 καὶ οἱ πολὺ δὲ μακροὶ καὶ λεπτοὶ ἀνοητοτέρους, χαυνοτέρους,
 φλυαροτέρους σημαίνουσιν, οἱ δὲ εὐμεγέθεις καὶ εὐειδεῖς
 <lb n="10"/> δακτύλους ἔχοντες ἄριστοι οὗτοι ἄνδρες.</p>
-</div>
-<div type="textpart" subtype="section" n="17"><p>Πόδες νευρώδεις ἀρθρώδεις γενναῖα ἤθη ἀνδρὸς
+            </div>
+            <div n="17" type="section">
+               <p>Πόδες νευρώδεις ἀρθρώδεις γενναῖα ἤθη ἀνδρὸς
 σημαίνουσι καὶ ἀνδρείαν, ἀπαλοὶ δὲ πόδες καὶ σαρκωδέστεροι
 τοιαῦτα καὶ τὰ ἤθη παρέχουσι τουτέστιν ἁπαλὰ καὶ ἐν παντὶ
 <note type="footnote">Matr. 8. μακροὶ] μικροὶ Ma 11. ante Πόδες titulus περὶ
 ποδῶν m. rubr. Ma
 </note>
-
-<pb n="356"/>
+                  <pb n="356"/>
 Matr. συνερχομένους τοὺς τοιούτους σημαίνουσιν ἄνδρας. πόδες
 κολοβοὶ καὶ παχεῖς θηριώδους ψυχῆς [σημείων] σημαντικοί·
 οἱ δὲ μακροὶ πάνυ πολυπράγμονος ἢ κακομηχάνου εἰσὶν
@@ -528,26 +528,26 @@ Matr. συνερχομένους τοὺς τοιούτους σημαίνουσ
 μαίνουσι τὸν κεκτημένον. πόδες κυρτοὶ ἢ [ οἱ ] κάτωθεν κοῖλοι
 κακοί· ὁμοίως καὶ οἱ τὰ κάτω ὁμαλὰ ἔχοντες καὶ ὡς τοῖς
 σφυροῖς βαίνοντες πανούργους δηλοῦσι τοὺς κεκτημένους.</p>
-<note type="footnote">Matr. 8. σημείων uncis inclusi 10. δὲ πόδες] πόδες τὲ
+               <note type="footnote">Matr. 8. σημείων uncis inclusi 10. δὲ πόδες] πόδες τὲ
 Ma 11. οἱ uncis inclusi 12. ὡς scripsi οἱ Ma
 </note>
-
-<pb n="357"/>
-</div>
-<div type="textpart" subtype="section" n="18"><p>Σφυρὰ διηκριβωμένα στερεὰ γενναῖον ἄνδρα
+               <pb n="357"/>
+            </div>
+            <div n="18" type="section">
+               <p>Σφυρὰ διηκριβωμένα στερεὰ γενναῖον ἄνδρα
 ἐπαγγέλλουσι, τὰ δὲ μαλακὰ καὶ λεῖα ἀνανδροτέρου, λεπτὰ δὲ
 πάνυ δολίου καὶ ἀκολάστου σημεῖα. παχέα δὲ σφυρὰ καὶ
 <lb n="10"/> πτέρναι τραχεῖαι καὶ πόδες σαρκώδεις καὶ κολοβοὶ δάκτυλοι
 κνῆμαί τε παχεῖαι ἐξηχοῦντας ποιοῦσιν ὧς ἐπὶ τὸ πλεῖστον
 ἢ δαιμονίζοντας.</p>
-<note type="footnote">Matr. 7. ante Σφυρὰ titulus περὶ σφυρῶν m. rubr. Ma
+               <note type="footnote">Matr. 7. ante Σφυρὰ titulus περὶ σφυρῶν m. rubr. Ma
 8. μαλακὰ] μανά, Ma λεῖα] λίαν Ma ἀνανδροτέρου]
 ἀνανδρεστέρου Ma
 </note>
-
-<pb n="358"/>
-</div>
-<div type="textpart" subtype="section" n="19"><p>Κνῆνμαι εὐμεγέθεις διηρθρωμέναι στερεαὶ [καὶ]
+               <pb n="358"/>
+            </div>
+            <div n="19" type="section">
+               <p>Κνῆνμαι εὐμεγέθεις διηρθρωμέναι στερεαὶ [καὶ]
 γενναίους ἄνδρας καὶ εὐφυεῖς σημαίνουσιν· ἁπαλαὶ μέν, ἄν-
 αρθροι δὲ δειλότερον καὶ ἀνανδρότερον εἶναι τὸν ἄνδρα <lb n="10"/>
 δηλοῦσιν· αἱ λεπταὶ πάνυ 〈 δειλὸν καὶ〉 κακοήθη ἄνδρα δη-
@@ -559,35 +559,34 @@ rubr. Ma στερεαὶ] στερεοὺς Ma καὶ uncis inclusi 11.
 〈δειλὸν καὶ〉 inserui 12. νευρώδεις] εὐρώδεις Ma 14. βδε-
 λυροὺς] βδελυροὺς Ma ἀσώτους] ἀνώτους Ma
 </note>
-
-<pb n="359"/>
+                  <pb n="359"/>
 Matr. νουσιν· ὡς τὸ πολὺ δὲ κνημῶν καὶ πτερνῶν παχύτης
 δουλοπρεπῆ ἄνδρα καὶ ἀμαθῆ δηλοῖ. ὁμοίως ταῖς κνήμαις
 καὶ τοῖς μηροῖς λέγε.</p>
-</div>
-<div type="textpart" subtype="section" n="20"><p>Οἱ τὰ γόνατα ἔσω νεύοντες ὥστε συγκροτεῖν γυναι-
+            </div>
+            <div n="20" type="section">
+               <p>Οἱ τὰ γόνατα ἔσω νεύοντες ὥστε συγκροτεῖν γυναι-
 κεῖοι, λεπτὰ δὲ ὀλιγόσαρκα ῥικνά, ὥσπερ ἐκτετηκότα, παν-
 οῦργον ἄνδρα δηλοῦσι· τοιαῦτα γὰρ καὶ 〈 τὰ〉 τῶν πιθήκων.</p>
-<note type="footnote">Matr. 10. ante Οἱ titulus περὶ γονάτων καὶ ἰσχίων m.
+               <note type="footnote">Matr. 10. ante Οἱ titulus περὶ γονάτων καὶ ἰσχίων m.
 rubr. in marg. Ma νεύοντες] μένοντες Ma γυναικεῖοι]
 γυναικείοις Ma 12. 〈 τὰ) inserui post πιθήκων in M
 sequitur c. 21 περὶ χροιῶν p. 386, 12 sq.; quae apud Ada-
 mantium intercedunt exciderunt.
 </note>
-
-<pb n="386"/>
-</div>
-<div type="textpart" subtype="section" n="21"><p>Δῆλον ἀπὸ τῶν προλεγομένων, σημαίνει ἡ
+               <pb n="386"/>
+            </div>
+            <div n="21" type="section">
+               <p>Δῆλον ἀπὸ τῶν προλεγομένων, σημαίνει ἡ
 μέλαινα χροιὰ 〈δειλίαν〉 καὶ πολυμηχανίαν ἔχειν τὸν ἄνδρα,
 ἡ δὲ λευκὴ καὶ ὑπόξανθος ἀλκὴν καὶ θυμὸν λέγει, τὸ δὲ
 πάνυ λευκὸν ἄκρατον εἰς ἀνανδρίαν φέρει, πυρρὸν δὲ τὸ <lb n="15"/>
-<note type="footnote">Matr. 12. ante Δῆλον titulus περὶ χροιῶν m. rubr. Ma
+                  <note type="footnote">Matr. 12. ante Δῆλον titulus περὶ χροιῶν m. rubr. Ma
 Δῆλον] Δειλόν Ma 13. 〈δειλίαν〉 inserui πολυμηχανίαν]
 πολυμηχανίας. Ma 14. θυμὸν] μῦθον Ma 15. ἀνανδρίαν]
 ἀνδρείαν Ma
 </note>
-
-<pb n="387"/>
+                  <pb n="387"/>
 Matr. σῶμα πᾶν δολερίαν καὶ πολυτροπίαν τοῦ ἀνδρὸς ση-
 μαίνει. χροιὰ δὲ ἀνατετραμμένη ὑπόχλωρος δειλίαν ἄμα καὶ
 κακομηχανίαν δηλοῖ, εἰ μὴ ὑπὸ νόσου γενόμενον. τὸ δὲ μελί-
@@ -597,33 +596,34 @@ Matr. σῶμα πᾶν δολερίαν καὶ πολυτροπίαν τοῦ 
 δειλόν] δηλοῖ Ma 11. ἐμμανές] ἐμμερές a, γρ. ἐμμανές m.
 rubr. in mrg.
 </note>
-
-<pb n="388"/>
-    Matr. πράως ἐρυθρὸν εὐφυές ἐστιν, εὐμαθές, ὀξυκίνητον.</p></div>
-    <div type="textpart" subtype="section" n="22"><p>ταῦτα μὲν περὶ παντὸς τοῦ σώματος· κατὰ μέρος 〈δὲ〉
+                  <pb n="388"/>
+    Matr. πράως ἐρυθρὸν εὐφυές ἐστιν, εὐμαθές, ὀξυκίνητον.</p>
+            </div>
+            <div n="22" type="section">
+               <p>ταῦτα μὲν περὶ παντὸς τοῦ σώματος· κατὰ μέρος 〈δὲ〉
 τὰ στέρνα ὑπερυθριῶντα ζέειν ἔνδον τὴν ὀργὴν ἀγγέλλει,
 ὥσπερ τὰς τῶν αὐχένων φλέβας καὶ τὰς ἐν τοῖς κροτάφοις
 δεῖ σκοπεῖν.</p>
-<note type="footnote">Matr. 8. περὶ] παρὰ Ma κατά μέρος 〈δὲ〉 τὰ] πᾶν
+               <note type="footnote">Matr. 8. περὶ] παρὰ Ma κατά μέρος 〈δὲ〉 τὰ] πᾶν
 μέρος: τὰ δὲ Ma 9. ὑπερυθριῶντα] ὥσπερ ἰθρύοντα Ma
 ζέειν] ζέσιν Ma
 </note>
-
-<pb n="389"/>
-</div>
-<div type="textpart" subtype="section" n="23"><p>Πρόσωπα τὴν χροιὰν αὐτὰ καθʼ ἑαυτὰ ἐρυθρὰ
+               <pb n="389"/>
+            </div>
+            <div n="23" type="section">
+               <p>Πρόσωπα τὴν χροιὰν αὐτὰ καθʼ ἑαυτὰ ἐρυθρὰ
 τραχεῖς ἄνδρας δηλοῖ· εἰ δὲ μόναι αἱ παρειαὶ τοιαῦται εἶεν,
 οἰνόφλυγας εἶναι τοὺς ἄνδρας σκόπει.</p>
-</div>
-<div type="textpart" subtype="section" n="24"><p>Περὶ δὲ τῶν ἐν ὀφθαλμοῖς χροιῶν εἴρηται μὲν
+            </div>
+            <div n="24" type="section">
+               <p>Περὶ δὲ τῶν ἐν ὀφθαλμοῖς χροιῶν εἴρηται μὲν
 πρόσθεν, λεχθήσεται δὲ καὶ ὧδε ὅσα ἡ χρεία ἀπαιτεῖ. ὅσοι
 ὀφθαλμοὶ ὑποφοινίσσουσιν εἰ μὲν ἅμα ξηρότητι, ὀργίλους
 <note type="footnote">Matr. 9. οἰνόφλυγας] τοιούτους Ma σκόπει] σημαίνει, ut
 p. 395, 9? 10. ante Περὶ titulus περὶ ὀφθαλμῶν χροιῶν m.
 tubr. Ma
 </note>
-
-<pb n="390"/>
+                  <pb n="390"/>
 Matr. τοὺς ἀνθρώπους δηλοῦσιν, εἰ δʼ ἅμα ὑγρότητι, σημαί-
 νουσιν οἰνόφλυγας. γλαυκότης ἐν ὀφθαλμοῖς ἀγριώτερον ἄνδρα
 εἶναι λέγει· γλαυκὰ γὰρ τῶν ἀγρίων ζώων τὰ πλείονα ὑπ- <lb n="10"/>
@@ -634,33 +634,31 @@ Matr. τοὺς ἀνθρώπους δηλοῦσιν, εἰ δʼ ἅμα ὑγ�
 <note type="footnote">Matr. 8. σημαίνουσιν] οἷον Ma 13. ταῖς ἐλαίαις] τέ-
 λειον Ma
 </note>
-
-<pb n="391"/>
+                  <pb n="391"/>
 Matr. δειλόν τε καὶ δολερόν, τὸ δὲ ὑπόξανθον ἰσχυρόν τε καὶ
 <lb n="10"/> μεγαλόψυχον ἄνδρα δηλοῖ. τὰ μαρμαρύσσοντα ὄμματα ματαίους
 ἄνδρας δηλοῖ, ὠχρὰ δὲ ὄμματα καὶ ἀλλοχροίας ἔχοντα χαί-
 ροντα ἄνδρα καὶ ὑπονοούμενον εἰς κλεψοσύνας τὸν τοιοῦτον
 σημαίνει· στίλβοντες ὀφθαλμοὶ ἀφροδισιαστικοὺς καὶ δειλοὺς
 δηλοῦσιν.</p>
-<note type="footnote">Matr. 12. κλεψοσύνας] κλεπτοσύνας?
+               <note type="footnote">Matr. 12. κλεψοσύνας] κλεπτοσύνας?
 </note>
-
-<pb n="392"/>
-</div>
-<div type="textpart" subtype="section" n="25"><p>Ἄνδρα οὐλότριχα πάνυ δειλὸν καὶ κερδαλέον
+               <pb n="392"/>
+            </div>
+            <div n="25" type="section">
+               <p>Ἄνδρα οὐλότριχα πάνυ δειλὸν καὶ κερδαλέον
 εἶναι λέγε χωρὶς πάσης ἀντιλογίας, τὸν δὲ εὐθύτριχα ἀγριώτερον
 καὶ ἀνοητότερον. ἀρίστη δὲ κόμη ἡ τὸ μέσον τούτων ἔχουσα.
 πυκνότης τριχῶν ἄκρως θηριώδη ἄνδρα σημαίνει· οὕτω γὰρ
 καὶ τῶν θηρίων . . . . . . . . τὸ δὲ τῶν τριχῶν μέσον ἐπαινε- <lb n="10"/>
-<note type="footnote">Matr. 6. ante Ἄνδρα titulus περὶ εἴδους τριχῶν m. rubr.
+                  <note type="footnote">Matr. 6. ante Ἄνδρα titulus περὶ εἴδους τριχῶν m. rubr.
 et in marg. περὶ τριχῶν m. rubr. Ma κερδαλέον m2 corr. e
 κερδαλαῖον Ma 8. ἀνοητότερον] νοητότερον Ma 10. post
 θηρίων exciderunt verba qualia sunt apud Adamantium καὶ
 ψεδνότης δὲ κακοηθείας καὶ δόλου σημεῖον τὸ δὲ τῶν τριχῶν
 μέσον m. rubr. in marg., in textu καὶ τῶν τριχῶν μέσον Ma
 </note>
-
-<pb n="393"/>
+                  <pb n="393"/>
 Matr. τόν. μαλακαῖς δὲ πάνυ θριξὶ τετριχῶσθαι γυναικεῖον·
 οὐ μέντοι γυπὸς τὸ ἦθος ἔχουσι. σκληραὶ τρίχες ἀγαθαί· ἀγριό-
 <lb n="10"/> τητος γὰρ τὸ τοιοῦτον σημεῖόν ἐστι. μέλαινα κόνμη δειλίαν
@@ -673,8 +671,7 @@ Ma 9. οὐ μέντοι — ἀγαθαί verba labem contraxerunt
 11. πολυκερδίαν] πολυκαρδίαν Ma 12. ὁποία] ὁποῖα Ma
 14. ἄκρατος] ἀκρατῶς Ma
 </note>
-
-<pb n="394"/>
+                  <pb n="394"/>
 Matr. ὡς τὸ ῥοιᾶς ἄνθος οὐκ ἀγαθῶν ἀνδρῶν τουτὶ τὸ ση-
 μεῖον. ὡς ἐπὶ πλεῖστον γὰρ αὐτῶν εἰσι τὰ ἤθη θηριώδη. σκέλη
 τετριχωμένα πάνυ θριξὶ πυκναῖς καὶ μεγάλαις δυσμάθειαν <lb n="10"/>
@@ -686,8 +683,7 @@ Matr. ὡς τὸ ῥοιᾶς ἄνθος οὐκ ἀγαθῶν ἀνδρῶν
 κομῶντα ἰδὼν κουφόνουν καὶ ἀλλοπρόσαλλον καὶ ἀσελγῆ] κο-
 μῶντες εἰδῶν καὶ φόνων καὶ ἄλλο πρὸς ἄλλο· καὶ ἃ στέγρ Ma
 </note>
-
-<pb n="395"/>
+                  <pb n="395"/>
 Μatr. κουφόνυν καὶ ἀλλοπρόσαλλον καὶ ἀσελγῆ λέγε τὸν τοι-
 οῦτον εἶναι ἄνδρα. στέρνα δὲ αὐτὰ καθʼ ἑαυτὰ τετριχωμένα
 θριξὶ δασείαις θερμοβούλους, εὐψύχους ἄνδρας σημαίνει. ὤμους
@@ -699,8 +695,7 @@ Matr. ὡς τὸ ῥοιᾶς ἄνθος οὐκ ἀγαθῶν ἀνδρῶν
 σεῖαι εὐχάριστα 10. ὄρνισιν] ὀρνίθεσιν Μa 13. αὐτοῦ]
 αὐτοῦ Μa
 </note>
-
-<pb n="396"/>
+                  <pb n="396"/>
 Matr. τοῦ δὲ αὐχένος τοῦ πρὸς τῇ κεφαλῇ δασέος ὄντος δυ-
 νατὸν καὶ εὔψυχον τὸν ἄνδρα νόει. καὶ τοῦ μετώπου δὲ εἰς τὸ
 μέσον ἐπιβαίνοντος ἡ χαίτη δὲ ἑκατέρωθεν ὑποχωρεῖ, μεγα-
@@ -711,18 +706,17 @@ Matr. τοῦ δὲ αὐχένος τοῦ πρὸς τῇ κεφαλῇ δασ
 χαίτη δὲ verba labem contraxerunt 11. κατηγοροῦσιν] ἐγ-
 χωρεῖ Ma, del. m. rubr.
 </note>
-
-<pb n="397"/>
-<lb n="15"/> Matr. δὲ ἐφʼ ἑκάτερα εἰς τοὺς κροτάφους χωρεῖ, τούτους τοῖς
+                  <pb n="397"/>
+                  <lb n="15"/> Matr. δὲ ἐφʼ ἑκάτερα εἰς τοὺς κροτάφους χωρεῖ, τούτους τοῖς
 χοίροις εἴκαζε· τοιοῦτοι γὰρ καὶ τῇ γνώμῃ καὶ τῇ ψυχῇ. οἱ
 δὲ σφόδρα συνόφρυες ἀνιαροί· πρέπει γὰρ αὐτοῖς ἡ λύπη.</p>
-<note type="footnote">Matr. 15. ἐφʼ ἑκάτερα] ἐφεκάτερα Ma 17. συνόφρυες]
+               <note type="footnote">Matr. 15. ἐφʼ ἑκάτερα] ἐφεκάτερα Ma 17. συνόφρυες]
 συνοφρῦες Ma Adam. § 38 deest
 </note>
-
-<pb n="398"/>
-</div>
-<div type="textpart" subtype="section" n="26"><p>Οἱ μακρὰ βαίνοντές εἰσι τελεστικοὶ παντὸς <lb n="15"/>
+               <pb n="398"/>
+            </div>
+            <div n="26" type="section">
+               <p>Οἱ μακρὰ βαίνοντές εἰσι τελεστικοὶ παντὸς <lb n="15"/>
 πράγματος, μεγαλόνοοι· οἱ μικρὰ βαίνοντες ἄπρακτοι, πικροὶ
 καὶ ... ... ... λαθραῖα βουλευόμενοι· οἱ δὲ ταχυκίνητοι ἅμα
 μὲν ὀρθότητι καὶ λαμπρότητι εἴδους θερμόβουλον, ἐπιχειρητήν,
@@ -732,8 +726,7 @@ post καὶ lacunam indicavi οἱ δὲ ταχυκίνητοι] ἡ δὲ τα
 κίνησις? 19. οὐ δράστην] φυλακτήν Ma verba qualia sunt
 apud Adamantium 14 εἰ δὲ ταχὺ — 399, 3 παρέχει τεκμήρια desunt
 </note>
-
-<pb n="399"/>
+                  <pb n="399"/>
 Matr. ραχος ἐν ὀφθαλμοῖς καὶ κεφαλῆς ἀστασία καὶ ἆσθμα
 ταῦτα εἴδη κακορέκτου καὶ μεγαλορέκτου καὶ φευκτοῦ ἀνδρός.
 <lb n="15"/> ὁ δὲ ταχὺ μέν, μικρὰ 〈δὲ〉 βαίνων φιλοκερδής, κακοῦργος, δειλίας
@@ -741,16 +734,17 @@ Matr. ραχος ἐν ὀφθαλμοῖς καὶ κεφαλῆς ἀστασ�
 στέρα καὶ βαθυγνώμονα σημαίνει τὸν ἄνδρα, πραεῖα δέ, εἰ
 μὴ ἀντιλέγοι τὰ μείζω σημεῖα. εἰ δὲ ἑκὼν βραδύνει, ἐφιστά-
 μενος δὲ ἐν ταῖς ὁδοῖς περιβλέπει, ὑψαύχενα ἤθη αὐτῶν
-    <lb n="20"/> καὶ ὑβριστὰς καὶ ὑπερηφάνους καὶ μοιχικοὺς δηλοῖ.</p></div>
-    <div type="textpart" subtype="section" n="27"><p>χεῖρας
+    <lb n="20"/> καὶ ὑβριστὰς καὶ ὑπερηφάνους καὶ μοιχικοὺς δηλοῖ.</p>
+            </div>
+            <div n="27" type="section">
+               <p>χεῖρας
 <note type="footnote">Matr. 13. κεφαλῆς | κεφαλῆ Ma 14. μεγαλορέκτου]
 μεγαλολέκτου Ma 15 〈δέ〉 inserui 16 σχολαία] σκολια
 Ma 17. βαθυγνώμονα] παχυγνώμονα Ma 18. ἑκὼν] ἐκ
 τούτων Ma 20. ὑπερηφάνους] ὑπερηφανοῦς Ma μοιχικοὺς]
 μυχικούς Ma
 </note>
-
-<pb n="400"/>
+                  <pb n="400"/>
 Matr. δὲ καὶ πόδας καλόν ἐστι κατὰ ταὐτὸν πάντη ἔχειν φορᾶς
 τε καὶ κινήσεως. ὁ δὲ ἐν τοῖς ὤμοις ὑποκινούμενος καὶ ἅμα
 πράως κεκυφὼς μεγαλονοίας καὶ ἀνδρείας καλῶς μέτοχος.
@@ -765,12 +759,13 @@ Matr. δὲ καὶ πόδας καλόν ἐστι κατὰ ταὐτὸν π�
 λῆς Ma 16. ὡς γὰρ] ὥσπερ Ma 18. 〈 = 〈ἂν〉 inserui 19.
 μελῶν] μέλων Ma
 </note>
-
-<pb n="401"/>
+                  <pb n="401"/>
 Matr. ἀποκλίνοντες ἀνοητότεροι ὑπάρχουσιν. ὅσοι δὲ κατα-
 κλῶσιν ἑαυτοὺς ἐγκλίνοντες, κόλακές εἰσιν.</p>
-<lb n="10"/></div>
-<div type="textpart" subtype="section" n="28"><p>Πνεῦμα τὸ ἀεὶ ἀτρεμοῦν, ὡς ἄπνοον ἐοικέναι, φρον-
+               <lb n="10"/>
+            </div>
+            <div n="28" type="section">
+               <p>Πνεῦμα τὸ ἀεὶ ἀτρεμοῦν, ὡς ἄπνοον ἐοικέναι, φρον-
 τιστοῦ ἀνδρός. ποταπὴ δὲ ἡ φροντίς, παρὰ τῶν ὀφθαλμῶν
 τὸ ἀκριβὲς δεῖ ἐκμανθάνειν καὶ οὐκ ἀγνοεῖν. εἰ δὲ ἀτρενμὲς
 ὂν ἐπὶ πολὺ ἀθρόως λαλοῦντος φαίνοιτο ὥσπερ καὶ παλιρ-
@@ -779,8 +774,7 @@ Ma 9. ἐγκλίνοντες] ἐκκλίνοντες Ma 10. ante Πνεῦμα
 lus περὶ πνεύματος m. rubr. Ma ἀτρεμοῦν] ἀνατρέμον Ma
 12. ἐκμανθάνειν] εκμαθάνειν Ma 13. καὶ] ἐκ?
 </note>
-
-<pb n="402"/>
+                  <pb n="402"/>
 Matr. ροίας καὶ πλημμυρίδος, λύπῃ τινὶ συνέχεται. εἰ δὲ κεφαλὴν
 ἐπικινῶν ἅμα ἐπιστενάζει, μετανοεῖν ἔοικε κακόν τι ποιήσας
 ἢ ἰδών. ἐὰν δεδορκὼς τοῖς ὀφθαλμοῖς, ταῦτα προβουλεύει
@@ -791,34 +785,32 @@ Matr. ροίας καὶ πλημμυρίδος, λύπῃ τινὶ συνέχ�
 κακὲ] προβουλεύῃ καὶ Ma 10. μετανοεῖ | μετανοῆ Ma ἀκτύ-
 πως] ἀκτὐπῳ Ma 11. γνώμην καλῶς] γνώμῃ καλόν Ma
 </note>
-
-<pb n="403"/>
+                  <pb n="403"/>
 Matr. ἀσθματίαι, ὁπόσοις καθάπερ ἐκ δρόμου τὸ πνεῦμα
 ἐλαύνεται, ἄβουλοι, κακόθυμοι . . . . παντολόγοι. ταῖς
 <lb n="10"/> ῥισὶν ἐμπνέοντες δειλοί εἰσιν καὶ ἀθυμοῦντες· γίνονται δὲ
 καὶ ἀνδρόγυνοι, ὅταν τὰ ἄλλα σημεῖα τούτοις συμμαρτυρῇ.</p>
-<note type="footnote">Matr. 8. ἀσθματίαι] ἄσθματι ἀεί Ma δρόμου] δρόμοις
+               <note type="footnote">Matr. 8. ἀσθματίαι] ἄσθματι ἀεί Ma δρόμου] δρόμοις
 Μa 9. post κακόθυμοι vox qualis est apud Adamantium
 παντορέκται, Ante ταῖς ῥισὶν verba qualia 3 ὅσοι δὲ μετάρσιον
 — 4 πνεῦμα ἐν exciderunt παντολόγοι] παντολόγοι Ma
 11. συμμαρτυρῇ] συμμαρτυρεῖ Ma
 </note>
-
-<pb n="404"/>
-</div>
-<div type="textpart" subtype="section" n="29"><p>Φθέγγεσθαι βαρὺ πάνυ καὶ σαθρὸν ἀνόητον
+               <pb n="404"/>
+            </div>
+            <div n="29" type="section">
+               <p>Φθέγγεσθαι βαρὺ πάνυ καὶ σαθρὸν ἀνόητον
 καὶ ὑβριστὴν δηλοῖ καὶ γαστρίνμαργον. ἠχὴ δὲ κακοηχεστέρα
 καὶ βληχωδεστέρα ἀναίσθητον ἄνδρα δηλοῖ. ὅσοις δὲ ἀπὸ
 βαρέος ἀρξαμένοις φθόγγου εἰς ὀξὺ τελευτᾷ, ὀδύρται καὶ
 δύσθυμοι ὑπάρχουσιν οἱ τοιοῦτοι. ὀξὺ δὲ καὶ λυπηρὸν <lb n="10"/>
-<note type="footnote">Matr. 6. ante Φθέγγεσθαι titulus περὶ φωνῆς m. rubr.
+                  <note type="footnote">Matr. 6. ante Φθέγγεσθαι titulus περὶ φωνῆς m. rubr.
 Ma 7. δηλοῖ] δεῖ νοεῖν Ma ἠχὴ] ἤθη Ma κακοηχε-
 στέρα] κακοηθέστερα Ma 8. βληχωδεστέρα] βηχηδέστερα Ma
 δηλοῖ] δηλοῦσιν Ma 9. ὀδύρται] ὀδυρταὶ Ma 10. δύσ-
 θυμοι] δύσφημοι Ma
 </note>
-
-<pb n="405"/>
+                  <pb n="405"/>
 Matr. φθέγγεσθαι ποικίλου ἀνδρός ἐστι σημεῖον, ἐὰν ὀξὺ καὶ
 αὐχνμηρόν. εἰ δὲ ὀξὺ καὶ μαλακὸν 〈καὶ〉 εὐκαμπὲς φθέγ-
 <lb n="10"/> γοιτο, ἀνδρόγυνον ἐπισημαίνει εἶναι τὸν τοιοῦτον. ὅσοι δὲ
@@ -832,8 +824,7 @@ serui φθέγγοιτο] φθέγξοιτο Ma 11. κοῖλον| κηλόν Ma
 ἀκαμπὲς| εὐκαμπές Ma 13. ἀγαθὰ] ἄγαν Ma 15. ὀρνί-
 θειον] ὀρνιθεί Ma
 </note>
-
-<pb n="406"/>
+                  <pb n="406"/>
 Matr. ἀσθενὴς δὲ φωνὴ καὶ ἅμα ὑποκλαίουσα φιλοκερδῆ καὶ
 λυπηρὸν καὶ ἐν πᾶσιν ὑπονοούμενον ἄνδρα σημαίνει. ὁπόσοι
 δὲ ἐν ῥινὶ φθέγγονται, ψευδεῖς καὶ κακοήθεις καὶ φθονεροί, <lb n="10"/>
@@ -844,27 +835,25 @@ Matr. ἀσθενὴς δὲ φωνὴ καὶ ἅμα ὑποκλαίουσα �
 <note type="footnote">Matr. 12.〉καὶ〉 inserui〉καὶ ἀνομίαν〉 inserui 14.
 βραχὺ] βραδὺ?
 </note>
-
-<pb n="407"/>
+                  <pb n="407"/>
 Matr. φθέγγεσθαι ἀργίας καὶ δειλίας σημεῖον· ταχὺ δὲ ἀβού-
 λευτον καὶ ἀνόητον ἄνδρα 〈δηλοῖ〉 . οἱ χαλεπῶς φεγγόμενοι
 <lb n="10"/> κακοὶ καὶ ἀνόητοι ὡς ἐπὶ τὸ πολὺ δηλοῦνται εἶναι. εἰ
 δέ τι ἄλλο ....................................</p>
-<note type="footnote">Matr. 9. ἀνόητον] ἀνόσιον Ma〉δηλοῖ〉 inserui 11.
+               <note type="footnote">Matr. 9. ἀνόητον] ἀνόσιον Ma〉δηλοῖ〉 inserui 11.
 post ἄλλο verba qualia sunt apud Adamantium 2 καὶ φωνὴν —
 408, 3 κακόν in Ma nullo lacunae indicio exciderunt
 </note>
-
-<lb n="408"/>
-</div>
-<div type="textpart" subtype="section" n="30"><p>Εἷδος ἀνδρεῖον ὄρθιον τὸ πᾶν σχῆμα, πλευραὶ
+               <lb n="408"/>
+            </div>
+            <div n="30" type="section">
+               <p>Εἷδος ἀνδρεῖον ὄρθιον τὸ πᾶν σχῆμα, πλευραὶ
 καὶ ἄρθρα τοῦ σώματος πάντα ἐρρωμένα, ὀστᾶ μεγάλα, κόμη <lb n="10"/>
-<note type="footnote">Matr. 9. ante Εἶδος titulus Ὅροι ἰ(corr. ex εἰ) δεῶν ἀν-
+                  <note type="footnote">Matr. 9. ante Εἶδος titulus Ὅροι ἰ(corr. ex εἰ) δεῶν ἀν-
 θρώπων· περὶ ἀνδρείου εἴδους m. rubr. Ma πλευραὶ]
 πλευρὰ Ma
 </note>
-
-<pb n="409"/>
+                  <pb n="409"/>
 Matr. σκληρά, κοιλία πλατεῖα καὶ κοίλη, μοι καρτεροί, ὠμο-
 πλάται εὐρεῖαι διεστηκυῖαι, στέρνα ῥωμαλέα καὶ μετάφρενα,
 <lb n="10"/> ἰσχία σκληρά, σκέλη σαρκώδη, περὶ τοῖς σφυροῖς καρτερία,
@@ -875,25 +864,25 @@ Matr. σκληρά, κοιλία πλατεῖα καὶ κοίλη, μοι κα
 12. σφαλίζοντες] ἀσφαλίζοντες Ma 13. τε uncis inclusi τέ-
 λειον οὐ μήν τε ὀλίγον] οὔτε λεῖον οὔτε μὴν τραχὺ λίαν?
 </note>
-
-<pb n="410"/>
+                  <pb n="410"/>
 Matr. φωνή τε ἀπηνεστέρα ἰσχυρὰ μεγάλη, πνεῦμα εὐσταθές.
 τοιοῦτος μὲν ὁ εὔψυχος καὶ καρτερός.</p>
-</div>
-<div type="textpart" subtype="section" n="31"><p>Εἴδους δειλοῦ σημεῖα τοιαῦτα· τρίχες μαλακαί, τὸ <lb n="10"/>
+            </div>
+            <div n="31" type="section">
+               <p>Εἴδους δειλοῦ σημεῖα τοιαῦτα· τρίχες μαλακαί, τὸ <lb n="10"/>
 πᾶν σχῆμα ἀνειμένος, τράχηλος μακρός, τὸ χρῶμα μελίχρωον,
 τὰ ὄμματα ταραχώδη, βλέφαρα ταχυκίνητα, ἄσθματι ἀσθμώ-
 δης, σκέλη λεπτά, ὀσφὺς μακρά, στέρνα ἀσθενῆ, μακρόχειρ,
 φωνὴ λιγυρὰ μαλακή.</p>
-<note type="footnote">Matr. 8. ἀπηνεστέρα] ταπεινοτέρα Ma 10. ante Εἴδους
+               <note type="footnote">Matr. 8. ἀπηνεστέρα] ταπεινοτέρα Ma 10. ante Εἴδους
 titulus περὶ εἴδους δειλοῦ m. rubr. in marg. Ma Εἴδους]
 Εἴδη Ma 11. ἀνειμένος] ἀνήμερος Ma 12. ταραχώδη] τρα-
 χώδη Ma 11. λιγυρά] λυγρά Ma
 </note>
-
-<pb n="411"/>
-</div>
-<div type="textpart" subtype="section" n="32"><p>Εὐφυοῦς σημεῖα τοιαῦτα· μεγέθους εὖ ἔχοντα
+               <pb n="411"/>
+            </div>
+            <div n="32" type="section">
+               <p>Εὐφυοῦς σημεῖα τοιαῦτα· μεγέθους εὖ ἔχοντα
 λευκὸν αὐτὸν ὄντα καὶ ὑπέρυθρον, οὐ πάνυ δὲ οὖλον οὐδὲ
 <lb n="10"/> εὐθύτριχα, τὸ πᾶν σῶμα ὄρθιον, τὰ ἄρθρα ἀπολελυμένα
 ἀλλήλων, σὰρξ μετρία ἁπαλή, σκέλη τε καὶ μηροὶ εὐτραφεῖς,
@@ -905,56 +894,58 @@ rubr. Ma, εὐφυοῦς m. rubr. in marg. μεγέθους] μέγεθος Ma
 λων, ἐπηρμένα πρόσωπα καὶ] ἀλλήλων ἐπηρμένα· καὶ πρόσ-
 ωπα Ma
 </note>
-
-<pb n="412"/>
+                  <pb n="412"/>
 Matr. καὶ σαρκώδη οὐδὲ μὴν λεπτά, ὀφθαλμοὶ ὑγροὶ εὐλαμπεῖς
 χαροποί, τὸ ἐν αὐτοῖς〉ἦθος〉 γεγηθός.</p>
-</div>
-<div type="textpart" subtype="section" n="33"><p>Τοῦ ἀναισθήτου σημεῖα ταῦτά ἐστι· λευκὸς πάνυ
+            </div>
+            <div n="33" type="section">
+               <p>Τοῦ ἀναισθήτου σημεῖα ταῦτά ἐστι· λευκὸς πάνυ
 ἢ μέλας πάνυ, σαρκώδης ἢ προγάστωρ, παχυσκελής, τὰ δὲ
 ἄρθρα μικρὰ συνδεδεμένα, κλεῖδας συμπεφυκυίας καὶ τράχη-
 λον κολοβὸν παχύν ἔχων, ἄκρα ἀτελῆ, παρειὰς σαρκώδεις,
 μέτωπον στρογγύλον, βλέμμα κωφὸν ἀχανές.</p>
-<note type="footnote">Matr. 10.〉ἦθος〉 inserui 11. ante Τοῦ titulus περὶ
+               <note type="footnote">Matr. 10.〉ἦθος〉 inserui 11. ante Τοῦ titulus περὶ
 εἴδους ἀναισθήτου m. rubr. Ma, ἀφυοῦς m. rubr. in marg.
 13. κλεῖδας] πληγάς Ma 14. ἔχων] ἔχοντος Ma ἀτελῆ,
 παρειὰς σαρκώδεις] τε λιπαρά, εὐσαρκώδους Ma
 </note>
-
-    <pb n="413"/></div>
-    <div type="textpart" subtype="section" n="34">
-<p>Μatr. 34. Ἀναισχύντου ἀνδρὸς σημεῖα τάδε· ὀφθαλμοὶ
+               <pb n="413"/>
+            </div>
+            <div n="34" type="section">
+               <p>Μatr. 34. Ἀναισχύντου ἀνδρὸς σημεῖα τάδε· ὀφθαλμοὶ
 ἀνεπτυγμένοι λαμπροί, βλέφαρα ἐκπεπετασμένα παχέα, παχύ-
 <lb n="10"/> πους, παχύρρινος, ἀντίον ὁρῶν, ἄνω τείνων ἑαυτόν, πυρρὸς
 τὴν χροιάν, τὴν φωνὴν ὀξύς.</p>
-</div>
-<div type="textpart" subtype="section" n="35"><p>Ὁ δὲ κόσμιος βαρὺ φθέγγεται, βραχὺ μέν, τὰ δὲ
+            </div>
+            <div n="35" type="section">
+               <p>Ὁ δὲ κόσμιος βαρὺ φθέγγεται, βραχὺ μέν, τὰ δὲ
 <note type="footnote">Matr. 8. ante Ἀναισχύντου titulus περὶ εἴδους ἀναισχύντου
 in Ma 9. ἀνεπτυγμένοι] ἀνεπτηγμένοι Ma 10. παχύρρινος]
 παχύρινος Ma ἀντίον ὁρῶν] ἀντίορος Ma πυρρὸς] πύρρος
 Ma 12. ante titulus περὶ εἴδους κοσμίου m. rubr. Ma
 μέν] βαίνει?
 </note>
-
-<pb n="414"/>
+                  <pb n="414"/>
 Matr. βλέφαρα κινεῖ μέσως, οὔτε συνεχῶς οὔτε διὰ χρόνου,
 χαροπὸς οὐ λαμπρόν, ὑγρὸν δὲ ὁρῶν, ἐρυθήματος ὑπόπλεως.</p>
-</div>
-<div type="textpart" subtype="section" n="36"><p>Σημεῖα εὐθύμου· μέτωπον σαρκῶδες λεῖον χθαμα-
+            </div>
+            <div n="36" type="section">
+               <p>Σημεῖα εὐθύμου· μέτωπον σαρκῶδες λεῖον χθαμα-
 λόν, καὶ τὸ πᾶν πρόσωπον σαρκωδέστερον, τὸ δὲ εἶδος ὑπνη- <lb n="10"/>
 λόν, ὀφθαλμοὶ εὐλαμπεῖς, οὐ δεδορκότες, κίνησις σχολαία,
 φωνὴ ἠπία. τοιαῦτα τοῦ εὐθύμου σημεῖα.</p>
-<note type="footnote">Matr. 8. λαμπρόν] λαμπρός Ma ἐρυθήματος] βοηθήμα-
+               <note type="footnote">Matr. 8. λαμπρόν] λαμπρός Ma ἐρυθήματος] βοηθήμα-
 τος Ma 9. ante Σημεῖα titulus περὶ εἴδους εὐθύμου m. rubr.
 Ma 11. σχολαία] σκολιά Ma 12. ἠπία] ὕπτια Ma
 </note>
-
-<pb n="415"/>
-</div>
-<div type="textpart" subtype="section" n="37"><p>Σημεῖα ἀνιαροῦ ταῦτα· πρόσωπα ἰσχνά, ὀφρύες
+               <pb n="415"/>
+            </div>
+            <div n="37" type="section">
+               <p>Σημεῖα ἀνιαροῦ ταῦτα· πρόσωπα ἰσχνά, ὀφρύες
 ἐπεστραμμέναι, βλέφαρα ἐντεταμένα, κινεῖται ὥσπερ ὑπέρινοι.</p>
-</div>
-<div type="textpart" subtype="section" n="38"><p>Σημεῖα ἀνδρογύνου ταῦτα· ὑγρὸν βλέπει καὶ ἰταμόν,
+            </div>
+            <div n="38" type="section">
+               <p>Σημεῖα ἀνδρογύνου ταῦτα· ὑγρὸν βλέπει καὶ ἰταμόν,
 <lb n="10"/> καὶ δονεῖται τὰ ὄμματα καὶ περιτρέχει, μέτωπον σπᾷ καὶ
 παρειάς, αἱ ὀφρύες〉οὐ〉 μένουσιν εἰς χώραν, τράχηλος
 <note type="footnote">Matr. 7. ante Σημεῖα titulus περὶ σὴ ἀνιαροῦ m. rubr.
@@ -962,15 +953,15 @@ Ma 8. ὑπέρινοι] ὑπεροινῶν Ma 9. ante Σημεῖα titulus
 σημεῖα ἀνδρογύνου m. rubr. in marg. Ma 11. παρειάς, αἱ
 ὀφρύες] παρειαί εὐφυεῖς Ma〉οὐ〉 inserui
 </note>
-
-<pb n="416"/>
+                  <pb n="416"/>
 Matr. κέκλιται, ὀσφὺς οὐκ ἀτρεμεῖ, κινεῖται πάντα τὰ μέλη καὶ
 ἁλματίας ἐστί, γονύκροτος, χειρῶν φέρεται ὡς ἀνάταυρος,
 παραβλέπει ἑαυτὸν καὶ περιβλέπει, φωνὴ λεπτὴ κράζουσα
 λιγυρὰ σχολαία πάνυ καὶ ἐπίτρονμος.</p>
-</div>
-<div type="textpart" subtype="section" n="39"><p>Πικρὸν ἄνδρα σεσηρέναι. τραχὺ καὶ ξηρὸν <lb n="10"/>
-<note type="footnote">Matr. 7. ἁλματίας| ἄλματι Ma φέρεται ὡς ἀνάταυρος] φο-
+            </div>
+            <div n="39" type="section">
+               <p>Πικρὸν ἄνδρα σεσηρέναι. τραχὺ καὶ ξηρὸν <lb n="10"/>
+                  <note type="footnote">Matr. 7. ἁλματίας| ἄλματι Ma φέρεται ὡς ἀνάταυρος] φο-
 ραί, ὡσὰν γαῦρος an ὡς ὁ ταὼς περιβλέπει, ut Synes. or. p. 39c
 καθάπερ ὁ ταως περιαθρῶν ἑαυτόν? in ἀνάταυρος secundum
 α in Ma certo dispici iam non potest 9. σχολαία] σκολιά Ma
@@ -978,13 +969,13 @@ Matr. κέκλιται, ὀσφὺς οὐκ ἀτρεμεῖ, κινεῖται
 σεσειρέναι Ma post σεσηρέναι excidit χρὴ καὶ ὕπωχρον εἶναι
 τραχὺ] ταχύ· Ma ξηρὸν] ξηρά Ma
 </note>
-
-<pb n="417"/>
+                  <pb n="417"/>
 Matr. βλέπειν, μέτωπον ἔχειν ῥυσσόν, [φορεῖν] φθέγγεσθαι
 σφοδρόν, ἀσθμαίνειν καὶ χεῖρας συγκροτεῖν ἢ ἀνατρίβειν,
 πολλάκις πόδας ἐπιρρήσσειν.</p>
-</div>
-<div type="textpart" subtype="section" n="40"><p>Ὁ πρᾶος πέφυκε καρτερὸς τὸ πᾶν σῶμα, εὔσαρκος,
+            </div>
+            <div n="40" type="section">
+               <p>Ὁ πρᾶος πέφυκε καρτερὸς τὸ πᾶν σῶμα, εὔσαρκος,
 <lb n="10"/> σὰρξ ὑγρὰ μαλθακή, τοῖς μέλεσι σύμμετρος, τὸ βλέμμα
 <note type="footnote">Matr. 6. φορεῖν uncis inclusi, sed fortasse in σφοδρὸν
 mutandum φθέγγεσθαι σφοδρόν, ἀσθμαίνειν] φθέγγεσθαι·
@@ -992,26 +983,27 @@ mutandum φθέγγεσθαι σφοδρόν, ἀσθμαίνειν] φθέγγ�
 m. rubr. α supr υ pos. 9. ante titulus περὶ πράου m.
 ruhr. Ma
 </note>
-
-<pb n="418"/>
+                  <pb n="418"/>
 Matr. εὐσταθές, βραχὺ κίνημα καὶ σκολιόν, φωνὴ βαρεῖα
 μαλακή, τῶν τριχῶν ὁ περίδρομος ἀναθρώσκων.</p>
-</div>
-<div type="textpart" subtype="section" n="41"><p>εἴρων καὶ ἐναντιόβουλος τοὺς ὀφθαλμοὺς χαλα-
+            </div>
+            <div n="41" type="section">
+               <p>εἴρων καὶ ἐναντιόβουλος τοὺς ὀφθαλμοὺς χαλα-
 ροὺς ἔχει, τὸ βλέιμμα ὑπόκομψον, φωνὴν ὑφειμένην, βαίνει <lb n="10"/>
 εὔστροφα καὶ κινεῖται τὰ πάντα εὐρύθμως.</p>
-<note type="footnote">Matr. 9. ante Ὁ titulus περὶ εἴδους εἴρωνος m. rubr. Ma
+               <note type="footnote">Matr. 9. ante Ὁ titulus περὶ εἴδους εἴρωνος m. rubr. Ma
 10. ὑπόκομψον] ὑπόκαμψον Ma ὑφειμένην] ὑφιεμένην Ma
 </note>
-
-<pb n="419"/>
-</div>
-<div type="textpart" subtype="section" n="42"><p>Τὸν δὲ φιλοχρήματον ἄνδρα τοιοῦτον εἶναι
+               <pb n="419"/>
+            </div>
+            <div n="42" type="section">
+               <p>Τὸν δὲ φιλοχρήματον ἄνδρα τοιοῦτον εἶναι
 〈νόει〉· μικρομελῆ, μικρόμματον, μικροπρόσωπον, ταχυπερί-
 πατον, ἐγκεκυφότα, ταχύφωνον, ὀξύφωνον, τὴν χροιὰν ὑπὸ-
 <lb n="10"/> φοινίσσοντα.</p>
-</div>
-<div type="textpart" subtype="section" n="43"><p>Δασὺς ἀνὴρ θριξὶν εὐθυγένειος ἢ μέλας, δασεῖαν
+            </div>
+            <div n="43" type="section">
+               <p>Δασὺς ἀνὴρ θριξὶν εὐθυγένειος ἢ μέλας, δασεῖαν
 τὴν ὑπήνην ἔχων, κροτάφους........ μαρμαρύσσον, φιλό-
 <note type="footnote">Matr. 7. ante Τὸν titulus περὶ εἴδους φιλοχρημάτου m.
 rubr. Ma 8. 〈νόει〉 inserui 11. ante Δασὺς titulus περὶ
@@ -1020,12 +1012,12 @@ rubr. Ma 8. 〈νόει〉 inserui 11. ante Δασὺς titulus περὶ
 sunt in Po 420, 15 δασεῖς — στίλβον καὶ μαρμαρύσσον]
 μαρύσσων Ma φιλόκωμος] φιλόκοιμος Ma
 </note>
-
-<pb n="420"/>
+                  <pb n="420"/>
 Matr. κωμος, φιλορχηστής, φίλοινος. ταῦτα τῶν δύο εἰδῶν
 εἰσι τὰ σημεῖα.</p>
-</div>
-<div type="textpart" subtype="section" n="44"><p>Γίνονται δὲ καὶ μωροπόνηροι οἱ μικτὰ ἔχοντες τὰ
+            </div>
+            <div n="44" type="section">
+               <p>Γίνονται δὲ καὶ μωροπόνηροι οἱ μικτὰ ἔχοντες τὰ
 σημεῖα πονηρίας καὶ μωρίας. ἕτεροι δὲ τὰ τῆς μωρίας ση- <lb n="10"/>
 μεῖα ἔχουσι τὰ αὐτὰ καὶ χαλεπώτεροι καὶ ἀγριώτεροι πε-
 ποίηνται. ἐκ τούτου οὖν εἰσι μωροπόνηροι, ὥσπερ τῶν
@@ -1036,8 +1028,7 @@ Ma 9. μικτά| μὴ Ma 11. τὰ αὐτὰ — ἀγριώτεροι] τὰ
 qualia sunt apud Adamantium 6 τούτων γὰρ — 421, 2 ἡμέρων
 ἐστὶν exciderunt
 </note>
-
-<pb n="421"/>
+                  <pb n="421"/>
 Matr. εἰσιν, ....... εὐηθικώτερα ... καὶ ταραχωδέστερα [καὶ] ὡς
 τὸ πολύ. ὅπερ ἂν ἐπισκέψαιο καὶ μάλιστα ἐπὶ αἰγῶν ἀγρίων καὶ
 <lb n="10"/> προβάτων, ἔτι δὲ καὶ ἵππων καὶ ὄνων καὶ ὅσα τοιαῦτα· ἐοικότα
@@ -1048,8 +1039,7 @@ uncis inclusi 9. ἐπισκέψαιο] ἐπισκέψαιτο Ma ἐπὶ] ὅ
 11. post λειότερα exciderunt qualia sunt apud Adamantium
 422, 1 καὶ ἠπιώτερα — 2 καὶ ξηρότερα
 </note>
-
-<pb n="422"/>
+                  <pb n="422"/>
 Matr. καὶ τὰ ἤθη οὖν αὐτῶν τοῖς εἴδεσιν ἀκολουθεῖ. καὶ ἐπὶ
 ἀνθρώπων τοίνυν οὕτω χρὴ διαιρεῖν· τὸ γὰρ διπλοῦν τοῦτο
 τῆς ἰδέας ἐν ἀνθρώποις φαίνεται καθʼ ἕκαστον σημεῖον. δί- <lb n="10"/>
@@ -1057,8 +1047,7 @@ Matr. καὶ τὰ ἤθη οὖν αὐτῶν τοῖς εἴδεσιν ἀκ
 ἀγριώτερα ἤθη, οἱ δὲ ἡμερώτερα ἔχουσι καὶ σώφρονες ὁμοίως
 <note type="footnote">Matr. 10. φαίνεται] φύεται Ma 11. ἀλλʼ οἱ] ἄλλα Ma
 </note>
-
-<pb n="423"/>
+                  <pb n="423"/>
 Matr. καὶ ἀνδρεῖοι. τὸ δὲ διάφορον τῶν σημείων τραχύτητι
 καὶ λειότητι καὶ σκληρίᾳ καὶ μαλακίᾳ καὶ ἀγωνίᾳ καὶ πραό-
 τητι καὶ τῷ ὑγρῷ τε καὶ ξηρῷ διαιρετέον. οὕτω δὲ καὶ
@@ -1068,15 +1057,14 @@ Matr. καὶ ἀνδρεῖοι. τὸ δὲ διάφορον τῶν σημε�
 <note type="footnote">Matr. 8. ἀγωνίᾳ m. rubr. in marg., in textu ἀτονίᾳ Ma
 9. διαιρετέον] διαιρετόν Ma 12. ἠπιωτέραν] πιοτέραν Ma
 ἡ m. rubr. ante π pos.</note>
-
-<pb n="424"/>
+                  <pb n="424"/>
 Matr. δείκνυσι, κἀν τοῖς ἀνδρογύνοις οἱ μὲν πολλοὶ ἄγριοι,
 ἕτεροι δὲ τιθασοί εἰσι. καὶ τούτων οὐκ ὄντα ἕτερα σημεῖα
-μόνοις οἷς εἶπον διαιρεῖται.</p><lb n="10"/>
-<note type="footnote">Matr. 10. voce διαιρεῖται desinit Ma</note>
-</div>
+μόνοις οἷς εἶπον διαιρεῖται.</p>
+               <lb n="10"/>
+               <note type="footnote">Matr. 10. voce διαιρεῖται desinit Ma</note>
             </div>
-            </div>
-</body>
-</text>
+         </div>
+      </body>
+   </text>
 </TEI>

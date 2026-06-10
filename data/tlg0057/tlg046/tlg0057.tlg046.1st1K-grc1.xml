@@ -1,99 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-    
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">De morborum temporibus</title>
-                <author>Galen</author>
-                <editor>Karl Gottlob Kühn</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De morborum temporibus</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0057.tlg046.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg046.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-                        <author>Galen</author>
-                        <editor>Karl Gottlob Kühn</editor>
-                        <imprint>
-                            <publisher>Knobloch</publisher>
-                            <pubPlace>Leipzig</pubPlace>
-                            <biblScope unit="vol">7</biblScope>
-                            <biblScope unit="pp" from="406" to="439">406-439</biblScope>
-                            <date>1824</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/hvd.hxpp8n?urlappend=%3Bseq=418">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg046.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Leipzig</pubPlace>
+                     <biblScope unit="vol">7</biblScope>
+                     <biblScope unit="pp" from="406" to="439">406-439</biblScope>
+                     <date>1824</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/hvd.hxpp8n?urlappend=%3Bseq=418">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg046.1st1K-grc1">
-                <pb n="406"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΤΩΝ ΕΝ ΤΑΙΣ ΝΟΣΟΙΣ <lb/>ΚΑΙΡΩΝ ΒΙΒΛΙΟΝ.</head>
-                    <p>Οἷόν τι τοῖς ζώοις ἐστὶν ἡ κατὰ τὰς ἡλικίας <lb/>διαφορὰ, τοιοῦτον τοῖς
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg046.1st1K-grc1">
+         <pb n="406"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΤΩΝ ΕΝ ΤΑΙΣ ΝΟΣΟΙΣ <lb/>ΚΑΙΡΩΝ ΒΙΒΛΙΟΝ.</head>
+            <p>Οἷόν τι τοῖς ζώοις ἐστὶν ἡ κατὰ τὰς ἡλικίας <lb/>διαφορὰ, τοιοῦτον τοῖς
                         νοσήμασιν οὓς ὀνομάζουσι καιρούς. <lb/>οὔτε γὰρ ὁ χρόνος ἁπλῶς δηλοῦται διὰ
                         τῆσδε τῆς <lb/>προσηγορίας, οὔθ’ ὁ προσήκων χρόνος, ὑπὲρ οὗ καὶ τὰ βοηθήματα
                         <lb/>σκοπούμεθα· μόνη δὲ ἡ τῶν νοσημάτων, ὡς εἴρηται, <lb/>ἡλικία, χρόνων
@@ -138,9 +145,9 @@
                         πυρετώδει <lb/>θερμασίᾳ, τοὐντεῦθεν ἕτερος ἐφ’ ἑτέρῳ καιρὸς ἐκδέχεται
                         <lb/>τὴν αὔξησιν τοῦ πάθους, ἄχρι τῆς παντελοῦς ἀκμῆς, ἣν <lb/>ἐν ἑκάστῳ τῶν
                         ὄντων ἔσχατον τὸ μέγεθος εἶναι νοοῦμεν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>Οὗτος ὁ λόγος ἐπιεικής ἐστι καὶ δεῖταί τινος <lb/>ἀγωνιστοῦ γενναίου πρὸς τὴν
+         </div>
+         <div n="2" type="chapter">
+            <p>Οὗτος ὁ λόγος ἐπιεικής ἐστι καὶ δεῖταί τινος <lb/>ἀγωνιστοῦ γενναίου πρὸς τὴν
                         ἀπάντησιν, ὃς ἐπιδείξει <lb/>ταῖς ἀρχαῖς τῶν νοσημάτων εἶδος ἴδιον ὑπάρχειν
                         ὥσπερ τοῖς <lb/>ζώοις διαπλαττομένοις, ἀνακείμενόν τε τούτῳ τὸν πρῶτον
                         <lb/>χρόνον ὅροις οἰκείοις περιγραφόμενον. ἐφ’ ὧν ἐστελ<milestone unit="ed1page" n="380"/>λόμην <lb/>ἂν ἤδη διδάσκων ἃ γινώσκω, εἰ μή με
@@ -161,7 +168,7 @@
                         ἅπαντες οἱ πρὸ Ἀρχιγένους ἀρχήν τινα λέγουσιν <lb/>ἑκάστου νοσήματος, οὐ τὴν
                         πρώτην εἰσβολὴν ἐκείνην μόνην <lb/>τὴν ἀπλατῆ, μῆκος δέ τι χρόνου καὶ πλάτος
                         αὐτῇ προσγράφουσιν <lb/>ἀξιόλογον ἔστιν ὅτε, καὶ μετὰ ταύτην τὴν ἀνάβασιν, <lb/>
-                        <milestone unit="ed2page" n="294"/>εἶτ’ ἀκμὴν, ἐφ’ ᾗ δηλονότι τὴν καλουμένην
+               <milestone unit="ed2page" n="294"/>εἶτ’ ἀκμὴν, ἐφ’ ᾗ δηλονότι τὴν καλουμένην
                         παρακμήν. <lb/>ἐθεασάμεθα γοῦν ἐνίους ἐν τῷ πράττειν ὁτιοῦν ﻿<pb n="411"/>
                         τῶν κατὰ τὸν βίον ἀτρέμα φρίξαντας τὸ πρῶτον, εἶτ’ αὖθίς <lb/>τε καὶ αὖθις
                         ἀνωμαλίας τέ τινος ἰσχυροτέρας, καὶ φρίκης <lb/>ἀξιολογωτέρας αἰσθανομένους,
@@ -196,9 +203,9 @@
                         <lb/>ἀφικνοῦνται, καθάπερ ἐν τοῖς προειρημένοις πυρετοῖς, <pb n="413"/>
                         ἀμφημερινῷ καὶ τριταίῳ καὶ τεταρταίῳ· ποτὲ δὲ εἰς παρακμὴν <lb/>μόνον, ἤτοι
                         πλησίον ἀπυρεξίας ἥκουσαν, ἢ καὶ <lb/>ποῤῥωτέρω. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>Παραδείγματος οὖν ἕνεκεν ἐπὶ τριταίου <lb/>πυρετοῦ πρῶτον ἡμῖν ὁ λόγος
+         </div>
+         <div n="3" type="chapter">
+            <p>Παραδείγματος οὖν ἕνεκεν ἐπὶ τριταίου <lb/>πυρετοῦ πρῶτον ἡμῖν ὁ λόγος
                         γινέσθω. φρίκη μετρία τῶν <lb/>τοιούτων πυρετῶν ἄρχεται, εἶτ’ ἄκρων ψύξις
                         ἅμα φρίκαις <lb/>μείζοσιν, εἶτ’ ἤδη καὶ ῥιγοῦσι καὶ ψύχονται τὰ πλεῖστα τοῦ
                         <lb/>σώματος. ὁ δὲ σφυγμὸς αὐτῶν ἐν τῷδε τῷ καιρῷ σκληρότερός <lb/>τε καὶ
@@ -259,10 +266,10 @@
                         οὖν τῶν τριταίων πυρετῶν αἱ κατὰ μέρος διαφοραὶ <pb n="417"/> τῆς περιόδου
                         τοιαῦταί τινες ὑπάρχουσιν· ἐπ’ ἄλλων δὲ ἄλλαι <lb/>διαφοραὶ πυρετῶν εἰσιν,
                         ὑπὲρ ὧν ἐφεξῆς ἐρῶ. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>
-                        <milestone unit="ed2page" n="296"/>Νυνὶ δὲ ἐπὶ τούτου πρῶτον, οὗ <lb/>πρῶτον
+         </div>
+         <div n="4" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="296"/>Νυνὶ δὲ ἐπὶ τούτου πρῶτον, οὗ <lb/>πρῶτον
                         παρεθέμην, ὁ λόγος ἐξεταζέσθω. πρῶτος οὖν ἦν <lb/>καιρὸς ὁ συνάπτων τῇ
                         ἀπυρεξίᾳ, ψύξεως αἴσθησιν παρέχων, <lb/>ὃν ἀρχὴν ὠνομάσαμεν· δεύτερος ὁ
                         ἀποτιθέμενος τὴν ψύξιν, <lb/>ὡς εἴρηται, κατὰ βραχὺ, καὶ καλείσθω συντόμου
@@ -302,10 +309,10 @@
                         <lb/>ἀπ’ ἄλλου πάθους ὁρμηθεὶς, ἕνα κοινὸν ἀξιώσει λόγον ἁπάντων
                         <lb/>ὑπάρχειν. αὕτη μὲν οὖν ἡ πρώτη καὶ μεγίστη τῆς ἁμαρτίας <lb/>αὐτῶν
                         αἰτία. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>
-                        <milestone unit="ed2page" n="297"/>Τὰς δ’ ἄλλας ἐφεξῆς ἐρῶ, κατὰ τὴν
+         </div>
+         <div n="5" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="297"/>Τὰς δ’ ἄλλας ἐφεξῆς ἐρῶ, κατὰ τὴν
                         <lb/>τῆς χρείας τάξιν, ἐπειδὰν πρότερον ὀνόματα θῶ τοῖς εἰρημένοις <lb/>τῆς
                         τριταίας περιόδου καιροῖς. Ἱπποκράτους γοῦν εἰρηκότος· <lb/>οἱ πυρετοὶ
                         ὁκόσοι μὴ διαλείποντες διὰ τρίτης ἰσχυροὶ <pb n="420"/> γίνονται,
@@ -341,7 +348,7 @@
                         καταψύχεται μὲν τὰ ἐκτὸς, <lb/>εἰς δὲ τὸ βάθος ἐναργῶς φαίνεται τὸ αἷμα
                         συῤῥέον, ἕτερός <lb/>ἐστι καιρὸς ὅλος, ὅλῳ τῷδε κατ’ ἀντίθεσιν ὑφιστάμενος,
                             <pb n="422"/>
-                        <milestone unit="ed1page" n="382"/>διαμαχομένου μὲν τοῦ θερμοῦ τῇ ψύξει;
+               <milestone unit="ed1page" n="382"/>διαμαχομένου μὲν τοῦ θερμοῦ τῇ ψύξει;
                         ἀποτεινομένου <lb/>δὲ πρὸς τὰ ἐκτὸς τοῦ αἵματος. καὶ εἴ γ’ οὕτως αὐτὸν ἕνα
                         <lb/>λέγοιεν, ὡς εἴρηται νῦν, οὐ διοίσει καλεῖν τοῦτον ὅλον τὸν <lb/>καιρὸν
                         ἀνάβασιν· εἰ δ’ οὕτω καλέσαντες, ἄτμητον ἐάσειαν, <lb/>οὐ σμικρὰ βλάψουσι
@@ -401,9 +408,9 @@
                         <lb/>κείσθω· τῷ δὲ δευτέρῳ τὸ τῆς ἀνωμαλίας· τῷ δὲ τρίτῳ <lb/>τὸ τῆς
                         ἀναβάσεως· καὶ τῷ τετάρτῳ τὸ τῆς ἀκμῆς· καὶ τῷ <lb/>πέμπτῳ τὸ τῆς παρακμῆς·
                         ὁ δὲ ἕκτος, ὁ τῆς ἀπυρεξίας, <lb/>διάλειμμα προσαγορευέσθω. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>Ἔξεστι δὲ καὶ κατ’ ἄλλον τινα τρόπον <lb/>εἰς μείζω μέρη διελεῖν ὅλην τὴν
+         </div>
+         <div n="6" type="chapter">
+            <p>Ἔξεστι δὲ καὶ κατ’ ἄλλον τινα τρόπον <lb/>εἰς μείζω μέρη διελεῖν ὅλην τὴν
                         περίοδον, εἴ γε εἰς δύο ﻿<pb n="426"/> δυνατὸν αὐτὴν ὅλην διελεῖν, ἓν μὲν τὸ
                         τοῦ πρώτου παροξυσμοῦ <lb/>ποιοῦντας, ἀπὸ τῆς πρώτης εἰσβολῆς ἄχρι τῆς
                         ἐσχάτης <lb/>ἀνέσεως· τὸ δὲ (μετὰ) μεταξὺ (ἐστὶ) τῆς παρακμῆς καὶ τῆς
@@ -430,9 +437,9 @@
                         παρακμὴν, ἢ ἔνδοσιν, ἢ ὕφεσιν, ἢ ἀφαίρεσιν <lb/>ἐθέλοι. πρόκειται γὰρ οὐ
                         περὶ τῶν ὀνομάτων ζυγομαχεῖν, <lb/>ἀλλὰ τὰ μέρη τῆς περιόδου σκοπεῖν ὁπόσα
                         τε τὸν ἀριθμόν <lb/>ἐστι καὶ ὅπῃ διενήνοχεν ἀλλήλων. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>Αὐτὴ μὲν οὖν ἡ τομὴ τῶν εἰς ἀπυρεξίαν <lb/>ληγόντων ἁπάντων ἐστὶ πυρετῶν,
+         </div>
+         <div n="7" type="chapter">
+            <p>Αὐτὴ μὲν οὖν ἡ τομὴ τῶν εἰς ἀπυρεξίαν <lb/>ληγόντων ἁπάντων ἐστὶ πυρετῶν,
                         ἀμφημερινῶν, τριταίων, <lb/>τεταρταίων, ὡς ἓξ ἐχόντων τὰ μέρη διαφέροντα
                         ἀλλήλων <lb/>ἰδέαις εὐσήμοις· ἑτέρα δὲ, τῶν μὴ διαλειπόντων, εἰς πέντε
                         <lb/>μέρη διαιρουμένων. εἰσὶ δὲ καὶ οὗτοι πάμπολλοι, τινὲς μὲν <pb n="428"/>
@@ -497,9 +504,9 @@
                         <lb/>παρὰ τοὺς ἐν τοῖς παροξυσμοῖς καιροὺς, οὓς <lb/>ὀλίγον ὕστερον ἐρῶ, καὶ
                         μάλιστα ὅτι σφάλλονται πάντες ἐν <lb/>αὐτοῖς ἰατροὶ, καίτοιγε Ἱπποκράτους
                         ὀρθότατα διδάξαντος <lb/>ὑπὲρ αὐτῶν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="8">
-                    <p>Ἀλλὰ νῦν ἐπὶ τοὺς κατὰ περίοδόν τινα <lb/>παροξύνοντας ἐπανέλθωμεν τῷ λόγῳ,
+         </div>
+         <div n="8" type="chapter">
+            <p>Ἀλλὰ νῦν ἐπὶ τοὺς κατὰ περίοδόν τινα <lb/>παροξύνοντας ἐπανέλθωμεν τῷ λόγῳ,
                         πᾶν ὅσον ὑπόλοιπον <pb n="432"/> ἐν αὐτοῖς ἄσκοπον ἀφεῖται διαιροῦντες. ἑνὸς
                         μὲν δὴ καὶ <lb/>πρώτου μεμνῆσθαι κελεύω, τοῦ γεγονέναι τὸν λόγον ἡμῖν
                         <lb/>ἅπαντα τὸν ἀπ’ ἀρχῆς ἄχρι δεῦρο περὶ τῶν ἁπλῶν περιόδων. <lb/>ἐν γὰρ
@@ -540,7 +547,7 @@
                         μόνην, ὀλιγοχρόνιόν τε καὶ σμικράν. ἀναβαίνει <lb/>δὲ καὶ οὗτος ὁ παροξυσμὸς
                         ἐπὶ τὴν ἀκμὴν ἐν χρόνῳ <lb/>πολλῷ, καὶ παρακμάζει ὡσαύτως ἐν οὐκ ὀλίγῳ
                         χρόνω, <lb/>
-                        <milestone unit="ed2page" n="302"/>καὶ διὰ τοῦτ’ αὐτὸ ἐπὶ τῆς τρίτης ἡμέρας
+               <milestone unit="ed2page" n="302"/>καὶ διὰ τοῦτ’ αὐτὸ ἐπὶ τῆς τρίτης ἡμέρας
                         ὁ αὐτὸς τῷ <lb/>κατὰ τὴν πρώτην ἐκδέχεται παροξυσμὸς, εἶτ’ αὖθις ὁ κατὰ τὴν
                         <lb/>τετάρτην ὁ αὐτὸς τῷ κατὰ τὴν δευτέραν, καὶ τοῦτο ἐφεξῆς <lb/>ἀεί.
                         τοῦτον ἐγὼ τὸν πυρετὸν ἕνεκα συντόμου καὶ σαφοῦς <lb/>διδασκαλίας ἑνὶ
@@ -585,10 +592,10 @@
                         τῶν ἰατρῶν ἔνιοι παντάπασι φυσῶνται ἐξ ὧν <lb/>ἀλόγως φλυαροῦσι, καὶ δόξαν
                         ἀποφέρονται παρὰ τοῖς ἀσυνέτοις, <lb/>ὡς ἐπιμελεῖς τε καὶ πονητικοὶ καί τι
                         σοφώτερον ἐπιστάμενοι <lb/>τῶν μόνα τὰ χρήσιμα γραφόντων. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="9">
-                    <p>
-                        <milestone unit="ed2page" n="303"/>Εἰσβάλλει τοίνυν ὁ παροξυσμὸς τῶν
+         </div>
+         <div n="9" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="303"/>Εἰσβάλλει τοίνυν ὁ παροξυσμὸς τῶν
                         <lb/>καθ’ ἑκάστην ἡμέραν παροξυνομένων πυρετῶν ἐνίοτε μὲν <lb/>ἄνευ σαφοῦς
                         περιψύξεως, ἐνίοτε δὲ σὺν ταύτῃ, καὶ διαμένει <lb/>γε τὰ τῆς ἀρχῆς ἴδια τοῖς
                         μὲν ἐπὶ πλείονα, τοῖς δὲ ἐπ’ ἐλάττονα <lb/>χρόνον· καὶ δὴ καὶ τὰ τῆς
@@ -618,8 +625,7 @@
                         χωρίον, ἔνθα συνάπτειν μέλλω τοῖς εἰρημένοις <lb/>καιροῖς τὰ βοηθήματα.
                         πραχθήσεται δέ μοι τοῦτο <lb/>τοὺς ὅλου τοῦ νοσήματος ἐπιδείξαντι καιρούς·
                         ἄχρι μὲν γὰρ <lb/>τοῦδε τοὺς ἐν μέρει διῆλθον μόνους. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

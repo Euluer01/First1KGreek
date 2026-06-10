@@ -1,117 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">
-  <fileDesc>
-   <titleStmt>
-    <title xml:lang="grc">Μακκαβαίων Δ΄</title>
-    <author xml:lang="lat">Septuaginta</author>
-    <editor>Henry Barclay Swete D.D.</editor>
-    <funder>Harvard Library Arcadia Fund</funder>
-    <principal>Gregory Crane</principal>
-    <respStmt>
-     <persName xml:id="DDD">Digital Divide Data</persName>
-     <resp>Corrected and encoded the text</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Gregory Crane</persName>
-     <resp>Editor-in-Chief, Perseus Digital Library</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Matt Munson</persName>
-     <resp>Project Manager (University of Leipzig)</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Annette Gessner</persName>
-     <resp>Project Assistant (University of Leipzig)</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Thibault Clérice</persName>
-     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Bruce Robertson</persName>
-     <resp>Technical Advisor</resp>
-    </respStmt>
-   </titleStmt>
-   <publicationStmt>
-    <authority>Harvard College Library</authority>
-    <idno type="filename">tlg0527.tlg026.1st1K-grc1.xml</idno>
-    <availability>
-     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="grc">Μακκαβαίων Δ΄</title>
+            <author xml:lang="lat">Septuaginta</author>
+            <editor>Henry Barclay Swete D.D.</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg0527.tlg026.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
       License</licence>
-    </availability>
-    <date>2017</date>
-    <publisher>Harvard College Library</publisher>
-    <pubPlace>United States</pubPlace>
-   </publicationStmt>
-   <sourceDesc>
-    <listBibl>
-     <biblStruct>
-      <monogr>
-       <title>The Old Testament in Greek</title>
-       <editor>
-        <persName>
-         <name>Henry Barclay Swete D.D.</name>
-        </persName>
-       </editor>
-       <author ref="urn:cts:greekLit:tlg0527" xml:lang="lat">Septuaginta</author>
-       <imprint>
-        <publisher>Cambridge University Press</publisher>
-        <pubPlace>Cambridge</pubPlace>
-        <date>1905</date>
-       </imprint>
-       <biblScope unit="volume">3</biblScope>
-      </monogr>
-      <ref target="https://archive.org/details/theoldtestamenti03swetuoft/page/n751/mode/2up">The Internet Archive</ref>
-     </biblStruct>
-    </listBibl>
-   </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-   <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-   <refsDecl n="CTS">
-    <cRefPattern matchPattern="(.+).(.+)" n="verse" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-    <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-   </refsDecl>
-  </encodingDesc>
-  <profileDesc>
-   <langUsage>
-    <language ident="grc">Greek</language>
-    <language ident="lat">Latin</language>
-   </langUsage>
-  </profileDesc>
-  <revisionDesc>
-   <change/>
-  </revisionDesc>
- </teiHeader>
-
-
-<text>
-  <body>
-    <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0527.tlg026.1st1K-grc1">
-<pb n="729"/>
-<head>ΜΑΚΚΑΒΑΙΩΝ Δ</head>
-
-<div type="textpart" subtype="chapter" n="1">
- <div type="textpart" subtype="verse" n="1"><p>ΦIΔΟΣOΦΩΤΑΤΟΝ λόγον ἐπιδείκνυσθαι μέλλων, εἰ αὐτοδέσποτός <note type="marginal">A</note>
+            </availability>
+            <date>2017</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg0527.tlg026.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title>The Old Testament in Greek</title>
+                     <editor>
+                        <persName>
+                           <name>Henry Barclay Swete D.D.</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg0527" xml:lang="lat">Septuaginta</author>
+                     <imprint>
+                        <publisher>Cambridge University Press</publisher>
+                        <pubPlace>Cambridge</pubPlace>
+                        <date>1905</date>
+                     </imprint>
+                     <biblScope unit="volume">3</biblScope>
+                  </monogr>
+                  <ref target="https://archive.org/details/theoldtestamenti03swetuoft/page/n751/mode/2up">The Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+).(.+)"
+                         n="verse"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0527.tlg026.1st1K-grc1">
+         <pb n="729"/>
+         <head>ΜΑΚΚΑΒΑΙΩΝ Δ</head>
+         <div n="1" type="chapter">
+            <div n="1" type="verse">
+               <p>ΦIΔΟΣOΦΩΤΑΤΟΝ λόγον ἐπιδείκνυσθαι μέλλων, εἰ αὐτοδέσποτός <note type="marginal">A</note>
 ἐστιν τῶν παθῶν ὁ εὐσεβὴς λογισμός, συμβουλεύσαιμʼ ἂν ὑμῖν ὀρθῶς
-ὅπως προθύμως προσέχητε τῇ φιλοσοφίᾳ.</p></div> <div type="textpart" subtype="verse" n="2"><p>καὶ γὰρ ἀναγκαῖος εἰς
+ὅπως προθύμως προσέχητε τῇ φιλοσοφίᾳ.</p>
+            </div>
+            <div n="2" type="verse">
+               <p>καὶ γὰρ ἀναγκαῖος εἰς
 ἐπιστήμην παντὶ ὁ λόγος, καὶ ἄλλως τῆς μεγίστης ἀρετῆς, λέγω δὴ
-φρονήσεως, περιέχει ἔπαινον.</p></div> <div type="textpart" subtype="verse" n="3"><p> εἰ ἄρα τῶν σωφροσύνης κωλυτικῶν
-παθῶν ὁ λογισμὸς φαίνεται ἐπικρατεῖν, γαστριμαργίας τε καὶ ἐπιθυμίας·</p></div>
-<div type="textpart" subtype="verse" n="4"><p>ἀλλὰ καὶ τῶν τῆς δικαιοσύνης ἐμποδιστικῶν παθῶν κυριεύειν
+φρονήσεως, περιέχει ἔπαινον.</p>
+            </div>
+            <div n="3" type="verse">
+               <p> εἰ ἄρα τῶν σωφροσύνης κωλυτικῶν
+παθῶν ὁ λογισμὸς φαίνεται ἐπικρατεῖν, γαστριμαργίας τε καὶ ἐπιθυμίας·</p>
+            </div>
+            <div n="4" type="verse">
+               <p>ἀλλὰ καὶ τῶν τῆς δικαιοσύνης ἐμποδιστικῶν παθῶν κυριεύειν
 ἀναφαίνεται, οἶον κακοηθείας, καὶ τῶν τῆς ἀνδρίας ἐμποδιστικῶν
-παθῶν, θυμοῦ τε καὶ πόνου καὶ φόβου.</p></div> <div type="textpart" subtype="verse" n="5"><p>πῶς οὖν, ἴσως εἵποιεν ἄν
+παθῶν, θυμοῦ τε καὶ πόνου καὶ φόβου.</p>
+            </div>
+            <div n="5" type="verse">
+               <p>πῶς οὖν, ἴσως εἵποιεν ἄν
 τινες, εἰ τῶν παθῶν ὁ λογισμὸς κρατεῖ, λήθης καὶ ἀγνοίας οὐ δεσπόζει;
-γελοῖον ἐπιχειροῦντες λέγειν·</p></div> <div type="textpart" subtype="verse" n="6"><p>οὐ γὰρ τῶν ἑαυτοῦ παθῶν ὁ
+γελοῖον ἐπιχειροῦντες λέγειν·</p>
+            </div>
+            <div n="6" type="verse">
+               <p>οὐ γὰρ τῶν ἑαυτοῦ παθῶν ὁ
 λογισμὸς κρατεῖ, ἀλλὰ τῶν τῆς δικαιοσύνης καὶ ἀνδρείας καὶ σωφροσύνης
 καὶ φρονήσεως ἐναντίων· καὶ τούτων, οὐχ ὥστε αὐτὰ καταλῦσαι,
-ἀλλ᾿ ὥστε αὐτοῖς μὴ εἶξαι.</p></div> <div type="textpart" subtype="verse" n="7"><p> Πολλαχόθεν μὲν οὗν καὶ
+ἀλλ᾿ ὥστε αὐτοῖς μὴ εἶξαι.</p>
+            </div>
+            <div n="7" type="verse">
+               <p> Πολλαχόθεν μὲν οὗν καὶ
 ἀλλαχόθεν ἔχοιμʼ ἂν ὑμῖν ἐπιδεῖξαι, ὅτι αὐτοκράτωρ ἐστὶν τῶν παθῶν
-ὁ εὐσεβὴς λογισμός.</p></div> <div type="textpart" subtype="verse" n="8"><p>πολὺ δὲ πλέον τοῦτο ἀποδείξαιμι ἀπὸ τῆς
+ὁ εὐσεβὴς λογισμός.</p>
+            </div>
+            <div n="8" type="verse">
+               <p>πολὺ δὲ πλέον τοῦτο ἀποδείξαιμι ἀπὸ τῆς
 ἀνδραγαθείας τῶν ὑπέρ ἀρετὴν ἀποθανόντων, Ἐλεαζάρου τε καὶ
-ἑπτὰ ἀδελφῶν καὶ τῆς τούτων μητρός.</p></div> <div type="textpart" subtype="verse" n="9"><p>ἄπαντες γὰρ οὗτοι τῶν ἕως
+ἑπτὰ ἀδελφῶν καὶ τῆς τούτων μητρός.</p>
+            </div>
+            <div n="9" type="verse">
+               <p>ἄπαντες γὰρ οὗτοι τῶν ἕως
 θανάτου πόνων ὑπεριδόντες ἐπεδείξαντο ὅτι περικρατεῖ τῶν παθῶν
 <note type="footnote">Inscr Μακκαβαιων δ΄ U+05D0AV I 1 μελλον V* (-λλων Vᵃ) om ευσε- <note type="marginal">U+05D0V</note>
 βης V προσεχητε προθυμως U+05D0V φιλοσοφια] + τοις μελλουσιν λεγεσθαι V
@@ -123,33 +156,68 @@
 V om ευσεβης U+05D0V 8 ανδραγαθειας] καλοκαγαθιας U+05D0 ἀνδρειας V*
 (ανδραγ. V 1ᵐᵍ) αρετης U+05D0V επτα] pr των U+05D0* (improb U+05D0c.a ) 9 παντες
 U+05D0* (απαντες U+05D0c.a ) τους εως θαν. πονους U+05D0V</note>
-
-<pb n="730"/>
-<note type="marginal">A</note> ὁ λογισμός.</p></div> <div type="textpart" subtype="verse" n="10"><p>τῶν μέν οὗν ἀρετῶν ἔπεστί μοι ἐπαινεῖν τοὺς κατὰ
+                  <pb n="730"/>
+                  <note type="marginal">A</note> ὁ λογισμός.</p>
+            </div>
+            <div n="10" type="verse">
+               <p>τῶν μέν οὗν ἀρετῶν ἔπεστί μοι ἐπαινεῖν τοὺς κατὰ
 τοῦτον τὸν καιρὸν ὑπέρ τῆς καλοκἀγαθίας ἀποθανόντας μετὰ τῆς
-μητρὸς ἄνδρας· τῶν δὲ τιμῶν μακαρίσαιμʼ ἄν.</p></div> <div type="textpart" subtype="verse" n="11"><p>θαυμασθέντες γὰρ
+μητρὸς ἄνδρας· τῶν δὲ τιμῶν μακαρίσαιμʼ ἄν.</p>
+            </div>
+            <div n="11" type="verse">
+               <p>θαυμασθέντες γὰρ
 ἐκεῖνοι οὐ μόνον ὑπὸ πάντων ἀνθρώπων ἐπὶ τῇ ἀνδρίᾳ καὶ τῇ
 ὑπομονῇ, ἀλλὰ καὶ ὑπὸ τῶν αἰκισαμένων, αἴτιοι κατέστησαν τοῦ
 καταλυθῆναι τὴν κατὰ τοῦ ἔθνους τυραννίδα, νικήσαντες τὸν τύραννον
-τῇ ὑπομονῇ, ὥστε καθαρισθῆναι δι᾿ αὐτῶν τὴν πατρίδα. </p></div> <div type="textpart" subtype="verse" n="12"><p>ἀλλὰ καὶ
+τῇ ὑπομονῇ, ὥστε καθαρισθῆναι δι᾿ αὐτῶν τὴν πατρίδα. </p>
+            </div>
+            <div n="12" type="verse">
+               <p>ἀλλὰ καὶ
 περὶ τούτου νῦν αὐτίκα δὴ λέγειν ἐξέσται, ἀρξαμένων τῆς ὑποθέσεως,
 ὅπερ εἴωθα ποιεῖν, καὶ οὕτως εἰς τὸν περὶ αὐτῶν τρέψομαι λόγον,
-δόξαν διδοὺς τῷ πανσόφῳ θεῷ.</p></div>
-<div type="textpart" subtype="verse" n="13"><p>Ζητοῦμεν δὴ τοίνυν, εἰ αὐτοκράτωρ ἐστὶν τῶν παθῶν ὁ λογισμός.</p></div>
-<div type="textpart" subtype="verse" n="14"><p>διακρίνωμεν δέ, τί ποτέ ἐστιν λογισμός, καὶ τί πάθος, καὶ πόσαι
-παθῶν εἰδέαι, καὶ εἰ πάντων ἐπικρατεῖ τούτων ὁ λογισμός.</p></div> <div type="textpart" subtype="verse" n="15"><p>λογισμὸς
-μέν δὴ τοίνυν ἐστὶν νοῦς μετὰ ὀρθοῦ βίου προτιμῶν τὸν σοφίας λόγον.</p></div>
-<div type="textpart" subtype="verse" n="16"><p>σοφία δὴ τοίνυν ἐστὶν γνῶσις θείων καὶ ἀνθρωπίνων πραγμάτων,
+δόξαν διδοὺς τῷ πανσόφῳ θεῷ.</p>
+            </div>
+            <div n="13" type="verse">
+               <p>Ζητοῦμεν δὴ τοίνυν, εἰ αὐτοκράτωρ ἐστὶν τῶν παθῶν ὁ λογισμός.</p>
+            </div>
+            <div n="14" type="verse">
+               <p>διακρίνωμεν δέ, τί ποτέ ἐστιν λογισμός, καὶ τί πάθος, καὶ πόσαι
+παθῶν εἰδέαι, καὶ εἰ πάντων ἐπικρατεῖ τούτων ὁ λογισμός.</p>
+            </div>
+            <div n="15" type="verse">
+               <p>λογισμὸς
+μέν δὴ τοίνυν ἐστὶν νοῦς μετὰ ὀρθοῦ βίου προτιμῶν τὸν σοφίας λόγον.</p>
+            </div>
+            <div n="16" type="verse">
+               <p>σοφία δὴ τοίνυν ἐστὶν γνῶσις θείων καὶ ἀνθρωπίνων πραγμάτων,
 καὶ τῶν τούτων αἰτιῶν. ¹⁷αὕτη δὴ τοίνυν ἐστὶν ἡ τοῦ νόμου παιδία,
-δι᾿ ἧς τὰ θεῖα σεμνῶς καὶ τὰ ἀνθρώπινα συμφερόντως μανθάνομεν.</p></div>
-<div type="textpart" subtype="verse" n="18"><p> Τῆς δὲ σοφίας εἰδέαι καθεστᾶσιν φρόνησις καὶ
-δικαιοσύνη καὶ ἀνδρία καὶ σωφροσύνη.</p></div> <div type="textpart" subtype="verse" n="19"><p>κυριωτάτη δὲ πάντων ἡ
-φρόνησις, ἐξ ἧς δὴ τῶν παθῶν ὁ λογισμὸς ἐπικρατεῖ</p></div> <div type="textpart" subtype="verse" n="20"><p>παθῶν δὲ
+δι᾿ ἧς τὰ θεῖα σεμνῶς καὶ τὰ ἀνθρώπινα συμφερόντως μανθάνομεν.</p>
+            </div>
+            <div n="18" type="verse">
+               <p> Τῆς δὲ σοφίας εἰδέαι καθεστᾶσιν φρόνησις καὶ
+δικαιοσύνη καὶ ἀνδρία καὶ σωφροσύνη.</p>
+            </div>
+            <div n="19" type="verse">
+               <p>κυριωτάτη δὲ πάντων ἡ
+φρόνησις, ἐξ ἧς δὴ τῶν παθῶν ὁ λογισμὸς ἐπικρατεῖ</p>
+            </div>
+            <div n="20" type="verse">
+               <p>παθῶν δὲ
 φύσεις εἰσὶν αἱ περιεκτικώταται δύο, ἡδονή τε καὶ πόνος· τούτων δὲ
-ἑκάτερον καὶ περὶ τὴν ψυχὴν πέφυκεν.</p></div> <div type="textpart" subtype="verse" n="21"><p>πολλαὶ δὲ καὶ περὶ τὴν
-ἡδονὴν καὶ τὸν πόνον παθῶν εἰσιν ἀκολουθίαι.</p></div> <div type="textpart" subtype="verse" n="22"><p>πρὸ μὲν οὗν τῆς
-ἡδονῆς ἐστιν ἐπιθυμία· μετὰ δὲ τὴν ἡδονήν, χαρά.</p></div> <div type="textpart" subtype="verse" n="23"><p>πρὸ δὲ τοῦ
-<note type="marginal">U+05D0V</note><note type="footnote">10 κατα τουτον] κατ εκεινον V ανδρας] παιδας V μακαρισαιμι Vᵃ αν]
+ἑκάτερον καὶ περὶ τὴν ψυχὴν πέφυκεν.</p>
+            </div>
+            <div n="21" type="verse">
+               <p>πολλαὶ δὲ καὶ περὶ τὴν
+ἡδονὴν καὶ τὸν πόνον παθῶν εἰσιν ἀκολουθίαι.</p>
+            </div>
+            <div n="22" type="verse">
+               <p>πρὸ μὲν οὗν τῆς
+ἡδονῆς ἐστιν ἐπιθυμία· μετὰ δὲ τὴν ἡδονήν, χαρά.</p>
+            </div>
+            <div n="23" type="verse">
+               <p>πρὸ δὲ τοῦ
+<note type="marginal">U+05D0V</note>
+                  <note type="footnote">10 κατα τουτον] κατ εκεινον V ανδρας] παιδας V μακαρισαιμι Vᵃ αν]
 + αυτους V 11 om εκεινοι U+05D0 επι τη ανδρια (-δρεια V)] επ ανδρια U+05D0
 και τη υπομονη] om U+05D0* και υπομ. U+05D0c.a V 12 τουτου] του U+05D0 τουτων V om
 νυν V αρξαμενω U+05D0V om εις V αυτον V* (αυτων Vᵃ) 13 ζητουμεν δη
@@ -164,38 +232,77 @@ om των U+05D0 20 φυσις U+05D0A εκατερος U+05D0* εκατερων
 περι] pr και περι το σωμα η γλωσσα (sic) V* improb η γλ. V1 ¹(fort) πεφυκος
 Va 21 πολλα A τω πονων A (sed τo prius ut vid) παθων] αγαθω
 U+05D0 | ακολουθιαι] ακολουθ rescr U+05D01</note>
-
-<pb n="731"/>
-πόνου ἐστὶν φόβος· μετὰ δὲ τὸν πόνον, λύπη.</p></div> <div type="textpart" subtype="verse" n="24"><p>θυμὸς δὲ κοινὸν <note type="marginal">Α</note>
-πάθος ἐστὶν ἡδονῆς καὶ πόνου, ἐὰν ἐννοηθῇ τις ὅτε αὐτῷ περιέπεσεν.</p></div>
-<div type="textpart" subtype="verse" n="25"><p>ἐν δὲ τῇ ἡδονῇ ἐστιν καὶ ἡ κακοήθης διάθεσις, πολυτροπωτάτη
-πάντων τῶν παθῶν οὖσα.</p></div> <div type="textpart" subtype="verse" n="26"><p>κατὰ μέν ψυχῆς ἀλαζονία καὶ φιλαργυρία
-καὶ φιλοδοξία καὶ φιλονεικία καὶ βασκανία·</p></div> <div type="textpart" subtype="verse" n="27"><p> κατὰ δὲ τὸ σῶμα
-παντοφαγία καὶ λαιμαργία καὶ μονοφαγία.</p></div> <div type="textpart" subtype="verse" n="28"><p>καθάπερ οὗν δυοῖν
+                  <pb n="731"/>
+πόνου ἐστὶν φόβος· μετὰ δὲ τὸν πόνον, λύπη.</p>
+            </div>
+            <div n="24" type="verse">
+               <p>θυμὸς δὲ κοινὸν <note type="marginal">Α</note>
+πάθος ἐστὶν ἡδονῆς καὶ πόνου, ἐὰν ἐννοηθῇ τις ὅτε αὐτῷ περιέπεσεν.</p>
+            </div>
+            <div n="25" type="verse">
+               <p>ἐν δὲ τῇ ἡδονῇ ἐστιν καὶ ἡ κακοήθης διάθεσις, πολυτροπωτάτη
+πάντων τῶν παθῶν οὖσα.</p>
+            </div>
+            <div n="26" type="verse">
+               <p>κατὰ μέν ψυχῆς ἀλαζονία καὶ φιλαργυρία
+καὶ φιλοδοξία καὶ φιλονεικία καὶ βασκανία·</p>
+            </div>
+            <div n="27" type="verse">
+               <p> κατὰ δὲ τὸ σῶμα
+παντοφαγία καὶ λαιμαργία καὶ μονοφαγία.</p>
+            </div>
+            <div n="28" type="verse">
+               <p>καθάπερ οὗν δυοῖν
 τοῦ σώματος καὶ τῆς ψυχῆς φυτῶν ὄντων ἡδονῆς τε καὶ πόνου, πολλαὶ
-τούτων τῶν παθῶν εἰσιν παραφυάδες·</p></div> <div type="textpart" subtype="verse" n="29"><p> ὦν ἕκαστος ὁ πανγέωργος
+τούτων τῶν παθῶν εἰσιν παραφυάδες·</p>
+            </div>
+            <div n="29" type="verse">
+               <p> ὦν ἕκαστος ὁ πανγέωργος
 λογισμὸς περικαθαίρων τε καὶ ἀποκνίζων καὶ περιπλέκων καὶ ἐπάρδων
 καὶ πάντα τρόπον μεταχέων ἐξημεροῖ τὰς τῶν ἠθῶν καὶ παθῶν
-ὕλας.</p></div> <div type="textpart" subtype="verse" n="30"><p> Ὁ γὰρ λογισμὸς τῶν μέν ἀρετῶν ἐστιν ἡγεμών, τῶν
+ὕλας.</p>
+            </div>
+            <div n="30" type="verse">
+               <p> Ὁ γὰρ λογισμὸς τῶν μέν ἀρετῶν ἐστιν ἡγεμών, τῶν
 δὲ παθῶν αὐτοκράτωρ. ἐπιθεώρει γε τοίνυν πρῶτον διὰ τῶν κωλυτικῶν
 τῆς σωφροσύνης ἔργων, ὅτι αὐτοδέσποτός ἐστιν τῶν παθῶν ὁ
-λογισμός.</p></div> <div type="textpart" subtype="verse" n="31"><p>σωφροσύνη δὴ τοίνυν ἐστὶν ἐπικράτεια τῶν ἐπιθυμιῶν.</p></div>
-<div type="textpart" subtype="verse" n="32"><p> τῶν δὲ ἐπιθυμιῶν αἱ μέν εἰσιν ψυχικαί, αἱ δὲ σωματικαί καὶ τούτων
-ἀμφοτέρων ὁ λογισμὸς ἐπικρατεῖν φαίνεται.</p></div> <div type="textpart" subtype="verse" n="33"><p> ἐπεὶ πόθεν
+λογισμός.</p>
+            </div>
+            <div n="31" type="verse">
+               <p>σωφροσύνη δὴ τοίνυν ἐστὶν ἐπικράτεια τῶν ἐπιθυμιῶν.</p>
+            </div>
+            <div n="32" type="verse">
+               <p> τῶν δὲ ἐπιθυμιῶν αἱ μέν εἰσιν ψυχικαί, αἱ δὲ σωματικαί καὶ τούτων
+ἀμφοτέρων ὁ λογισμὸς ἐπικρατεῖν φαίνεται.</p>
+            </div>
+            <div n="33" type="verse">
+               <p> ἐπεὶ πόθεν
 κινούμενοι πρὸς τὰς ἀπειρημένας τροφάς, ἀποτρεπόμεθα τὰς ἐξ αὐτῶν
 ἡδονάς; οὐχ ὅτι δύναται τῶν ὀρέξεων ἐπικρατεῖν ὁ λογισμός ; ἐγὼ
-μέν οἶμαι.</p></div> <div type="textpart" subtype="verse" n="34"><p>τοιγαροῦν ἐνύδρων ἐπιθυμοῦντες καὶ ὀρνέων καὶ τετραπόδων,
+μέν οἶμαι.</p>
+            </div>
+            <div n="34" type="verse">
+               <p>τοιγαροῦν ἐνύδρων ἐπιθυμοῦντες καὶ ὀρνέων καὶ τετραπόδων,
 παντοίων βρωμάτων τῶν ἀπηγορευμένων ἡμῖν κατὰ τὸν νόμον
-ἀπεχόμεθα διὰ τὴν τοῦ λογισμοῦ ἐπικράτειαν.</p></div> <div type="textpart" subtype="verse" n="35"><p> ἀντέχεται γὰρ τὰ
+ἀπεχόμεθα διὰ τὴν τοῦ λογισμοῦ ἐπικράτειαν.</p>
+            </div>
+            <div n="35" type="verse">
+               <p> ἀντέχεται γὰρ τὰ
 τῶν ὀρέξεων πάθη ὑπὸ τοῦ σώφρονος νοὸς ἀνακαμπτόμενα· καὶ
-φιλοτιμοῦνται πάντα τὰ τοῦ σώματος κινήματα ὑπὸ τοῦ λογισμοῦ.</p></div>
-</div>
-
-<div type="textpart" subtype="chapter" n="2">
- <div type="textpart" subtype="verse" n="1"><p>Καὶ τί θαυμαστόν, εἰ αἱ τῆς ψυχῆς ἐπιθυμίαι πρὸς τὴν τοῦ
-κάλλους μετουσίαν ἀκυροῦνται;</p></div> <div type="textpart" subtype="verse" n="2"><p> ταύτῃ γοῦν ὁ σώφρων Ἰωσήφ
-ἐπαινεῖται, ὅτι τῷ λογισμῷ διανοίᾳ περιεκράτησεν τῆς ἡδυπαθείας.</p></div>
-<div type="textpart" subtype="verse" n="3"><p> νέος γὰρ ὤν καὶ ἀκμάζων πρὸς συνουσιασμὸν ἠκύρωσεν τῷ λογισμῷ
+φιλοτιμοῦνται πάντα τὰ τοῦ σώματος κινήματα ὑπὸ τοῦ λογισμοῦ.</p>
+            </div>
+         </div>
+         <div n="2" type="chapter">
+            <div n="1" type="verse">
+               <p>Καὶ τί θαυμαστόν, εἰ αἱ τῆς ψυχῆς ἐπιθυμίαι πρὸς τὴν τοῦ
+κάλλους μετουσίαν ἀκυροῦνται;</p>
+            </div>
+            <div n="2" type="verse">
+               <p> ταύτῃ γοῦν ὁ σώφρων Ἰωσήφ
+ἐπαινεῖται, ὅτι τῷ λογισμῷ διανοίᾳ περιεκράτησεν τῆς ἡδυπαθείας.</p>
+            </div>
+            <div n="3" type="verse">
+               <p> νέος γὰρ ὤν καὶ ἀκμάζων πρὸς συνουσιασμὸν ἠκύρωσεν τῷ λογισμῷ
 <note type="footnote">24 και] pr τε V οτε] οτι U+05D0V 25 εν τη ηδ. δε U+05D0V εστιν] ενεστι <note type="marginal">U+05D0V</note>
 U+05D0 | πολυποτρωτατη (sic) A ουσα των παθων U+05D0V 26 κατα] και τα
 U+05D0 | αλαζονεια Vᵃ φιλοδοξια] κενοδοξια V 27 και λαιμαργια και νομο-
@@ -209,35 +316,74 @@ U+05D0V* (-τεια Vᵃ) 32 om και V επικρατειν ο λογισμο�
 U+05D0c.ᵃ) επικρατιαν V* (-τειαν Vᵃ) 35 ανεχεται U+05D0 | ανακαμπτομενα ( -μεθα
 A)] ανακοπτομενα U+05D0V φιλοτιμουνται] φιμουται U+05D0 (φειμ.) V II 2 om
 τω λογισμω U+05D0 | περιεκρατησε V 3 ηκυρωσε U+05D0</note>
-
-<pb n="732"/>
-<note type="marginal">A</note> τὸν τῶν παθῶν οἶστρον.</p></div> <div type="textpart" subtype="verse" n="4"><p>οὐ μόνον δὲ τὴν τῆς ἡδυπαθείας οἰστρηλασίαν
-ἐπικρατεῖν ὁ λογισμὸς φαίνεται, ἀλλὰ καὶ πάσης ἐπιθυμίας.</p></div>
-<div type="textpart" subtype="verse" n="5"><p>λέγει γοῦν ὁ νόμος Οὐκ ἐπιθυμήσεις τὴν γυναῖκα τοῦ πλησίον σου,
-οὐδὲ ὅσα τῷ πλησίον σού ἐστιν.</p></div> <div type="textpart" subtype="verse" n="6"><p>καίτοι ὅτε μὴ ἐπιθυμεῖν εἵρηκεν
+                  <pb n="732"/>
+                  <note type="marginal">A</note> τὸν τῶν παθῶν οἶστρον.</p>
+            </div>
+            <div n="4" type="verse">
+               <p>οὐ μόνον δὲ τὴν τῆς ἡδυπαθείας οἰστρηλασίαν
+ἐπικρατεῖν ὁ λογισμὸς φαίνεται, ἀλλὰ καὶ πάσης ἐπιθυμίας.</p>
+            </div>
+            <div n="5" type="verse">
+               <p>λέγει γοῦν ὁ νόμος Οὐκ ἐπιθυμήσεις τὴν γυναῖκα τοῦ πλησίον σου,
+οὐδὲ ὅσα τῷ πλησίον σού ἐστιν.</p>
+            </div>
+            <div n="6" type="verse">
+               <p>καίτοι ὅτε μὴ ἐπιθυμεῖν εἵρηκεν
 ἡμᾶς ὁ νόμος, πολὺ πλέον πείσαιμʼ ἂν ὑμᾶς ὅτι τῶν ἐπιθυμιῶν κρατεῖν
 δύναται ὁ λογισμός, ὥσπερ καὶ τῶν κωλυτικῶν τῆς δικαιοσύνης
-παθῶν.</p></div> <div type="textpart" subtype="verse" n="7"><p>ἐπεὶ τίνα τρόπον μονοφάγος τις ὢν τὸ ἦθος καὶ γαστρίμαργος
+παθῶν.</p>
+            </div>
+            <div n="7" type="verse">
+               <p>ἐπεὶ τίνα τρόπον μονοφάγος τις ὢν τὸ ἦθος καὶ γαστρίμαργος
 καὶ μέθυσος μεταπαιδεύεται, εἰ μὴ δῆλον ὅτι κύριός ἐστιν
-τῶν παθῶν ὁ λογισμός;</p></div> <div type="textpart" subtype="verse" n="8"><p>αὐτίκα γοῦν τῷ νόμῳ πολιτευόμενος, κἂν
+τῶν παθῶν ὁ λογισμός;</p>
+            </div>
+            <div n="8" type="verse">
+               <p>αὐτίκα γοῦν τῷ νόμῳ πολιτευόμενος, κἂν
 φιλάργυρός τις εἴη, βιάζεται τὸν ἑαυτοῦ τρόπον, τοῖς δεομένοις δανί
-ζων χωρὶς τόκων, καὶ τὸ δάνιον τῶν ἑβδομάδων ἐνστασῶν χρεοκοπούμενος.</p></div>
-<div type="textpart" subtype="verse" n="9"><p>κἂν φειδωλός τις ᾖ, ὑπὸ τοῦ νόμου κρατεῖται διὰ τὸν λογισμόν,
+ζων χωρὶς τόκων, καὶ τὸ δάνιον τῶν ἑβδομάδων ἐνστασῶν χρεοκοπούμενος.</p>
+            </div>
+            <div n="9" type="verse">
+               <p>κἂν φειδωλός τις ᾖ, ὑπὸ τοῦ νόμου κρατεῖται διὰ τὸν λογισμόν,
 μήτε ἐπικαρπούμενος τοὺς ἀμήτους, μήτε ἐπιρωγολογούμενος
 τοὺς ἀμπελῶνας· καὶ ἐπὶ τῶν ἑτέρων δʼ ἔστιν ἐπιγνῶναι τοῦθʼ, ὅτι
-τῶν παθῶν ἐστιν ὁ λογισμὸς κρατῶν.</p></div> <div type="textpart" subtype="verse" n="10"><p>ὁ γὰρ νόμος καὶ τῆς πρὸς
-γονεῖς εὐνοίας κρατεῖ, μὴ καταπροδιδοὺς τὴν ἀρετὴν δι᾿ αὐτούς·</p></div> <div type="textpart" subtype="verse" n="11"><p>καὶ
-τῆς πρὸς γαμετῆς φιλίας ἐπικρατεῖ, διὰ παρανομίαν αὐτὴν ἀπελέγχων·</p></div>
-<div type="textpart" subtype="verse" n="12"><p>καὶ τῆς τέκνων φιλίας κυριεύει, διὰ κακίαν αὐτῶν κολάζων· καὶ τῆς
-φίλων συνηθείας δεσπόζει, διὰ πονηρίας αὐτοὺς ἐξελέγχων.</p></div> <div type="textpart" subtype="verse" n="13"><p> καὶ
+τῶν παθῶν ἐστιν ὁ λογισμὸς κρατῶν.</p>
+            </div>
+            <div n="10" type="verse">
+               <p>ὁ γὰρ νόμος καὶ τῆς πρὸς
+γονεῖς εὐνοίας κρατεῖ, μὴ καταπροδιδοὺς τὴν ἀρετὴν δι᾿ αὐτούς·</p>
+            </div>
+            <div n="11" type="verse">
+               <p>καὶ
+τῆς πρὸς γαμετῆς φιλίας ἐπικρατεῖ, διὰ παρανομίαν αὐτὴν ἀπελέγχων·</p>
+            </div>
+            <div n="12" type="verse">
+               <p>καὶ τῆς τέκνων φιλίας κυριεύει, διὰ κακίαν αὐτῶν κολάζων· καὶ τῆς
+φίλων συνηθείας δεσπόζει, διὰ πονηρίας αὐτοὺς ἐξελέγχων.</p>
+            </div>
+            <div n="13" type="verse">
+               <p> καὶ
 μὴ νομίσητε παράδοξον εἶναι, ὅπου καὶ ἔχθραν ὁ λογισμὸς ἐπικρατεῖν
-δύναται διὰ τὸν νόμον,</p></div> <div type="textpart" subtype="verse" n="14"><p> μηδὲ δενδροτομῶν τὰ ἥμερα τῶν πολεμίων
+δύναται διὰ τὸν νόμον,</p>
+            </div>
+            <div n="14" type="verse">
+               <p> μηδὲ δενδροτομῶν τὰ ἥμερα τῶν πολεμίων
 φυτά, τὰ δὲ τῶν ἐχθρῶν τοῖς ἀπολέσασιν διασώζων, καὶ τὰ πεπτωκότα
-συνεγείρων.</p></div> <div type="textpart" subtype="verse" n="15"><p>Καὶ διὰ τῶν βιαιοτέρων δὲ παθῶν κρατεῖν ὁ λογισμὸς
+συνεγείρων.</p>
+            </div>
+            <div n="15" type="verse">
+               <p>Καὶ διὰ τῶν βιαιοτέρων δὲ παθῶν κρατεῖν ὁ λογισμὸς
 φαίνεται, φιλαρχίας καὶ κενοδοξίας καὶ ἀλαζονίας καὶ μεγαλαυχίας
-καὶ βασκανίας.</p></div> <div type="textpart" subtype="verse" n="16"><p> πάντα γὰρ ταῦτα τὰ κακοήθη πάθη ὁ σώφρων
-νοῦς ἀπωθεῖται, ὥσπερ καὶ τὸν θυμόν· καὶ γὰρ τούτου δεσπόζει.</p></div> <div type="textpart" subtype="verse" n="17"><p> θυμούμενος
-<note type="marginal">U+05D0v</note><note type="footnote">4 ου] pr και U+05D0* (improb U+05D0c.a c.b) την της] της της (sic) A την επι της U+05D0*
+καὶ βασκανίας.</p>
+            </div>
+            <div n="16" type="verse">
+               <p> πάντα γὰρ ταῦτα τὰ κακοήθη πάθη ὁ σώφρων
+νοῦς ἀπωθεῖται, ὥσπερ καὶ τὸν θυμόν· καὶ γὰρ τούτου δεσπόζει.</p>
+            </div>
+            <div n="17" type="verse">
+               <p> θυμούμενος
+<note type="marginal">U+05D0v</note>
+                  <note type="footnote">4 ου] pr και U+05D0* (improb U+05D0c.a c.b) την της] της της (sic) A την επι της U+05D0*
 (improb U+05D0c.a ) V ο λογισμος επικρατειν U+05D0 5 om σου 2⁰ V 6 om
 οτε V πεισαιμι αν Vᵃ δυναται κρατειν V παθων] πασων A (ω rescr A¹)
 7 τινα τις τροπον μονοφαγος (-γως V) U+05D0V και 2⁰] pr η U+05D0V 8 τω νομω]
@@ -251,36 +397,73 @@ U+05D0 αυτα V συνηθιας U+05D0 | πονηριαν U+05D0V εξελε�
 απολεσασι U+05D0V 15 om δια U+05D0c.ac.b V βιοτερων (sic) A κρατειν]
 επικρατειν U+05D0c.a φιλαρχιας] φιλαργυριας U+05D0 (-χιας U+05D0c.a c.b ) αλαζονειας U+05D0V2
 16 om τα U+05D0* (hab U+05D0c.ᵃ)</note>
-
-<pb n="733"/>
+                  <pb n="733"/>
 γέ τοι Μωσῆς κατὰ Δαθὰν καὶ Ἀβειρών, οὐ θυμῷ τι κατʼ αὐτῶν <note type="marginal">A</note>
-ἐποίησεν, ἀλλὰ λογισμῷ τὸν θυμὸν διήτησεν.</p></div> <div type="textpart" subtype="verse" n="18"><p>δυνατὸς γὰρ
+ἐποίησεν, ἀλλὰ λογισμῷ τὸν θυμὸν διήτησεν.</p>
+            </div>
+            <div n="18" type="verse">
+               <p>δυνατὸς γὰρ
 ὁ σώφρων νοῦς, ὡς ἔφην, κατὰ τῶν παθῶν ἀριστεῦσαι, καὶ τὰ μέν
-αὐτῶν μεταθεῖναι, τὰ δὲ καὶ ἀκυρῶσαι.</p></div> <div type="textpart" subtype="verse" n="19"><p>ἐπεὶ διὰ τί ὁ πάνσοφος
+αὐτῶν μεταθεῖναι, τὰ δὲ καὶ ἀκυρῶσαι.</p>
+            </div>
+            <div n="19" type="verse">
+               <p>ἐπεὶ διὰ τί ὁ πάνσοφος
 ἡμῶν πατήρ Ἰακὼβ τοὺς περὶ Συμεὼν καὶ Δευεὶν αἰτιᾶται μὴ λογισμῷ
 τοὺς Σικιμίτας ἐθνηδὸν ἀποσφάξαντας, λέγων Ἐπικατάρατος ὁ θυμὸς
-αὐτῶν;</p></div> <div type="textpart" subtype="verse" n="20"><p>εἰ μὴ γὰρ ἐδύνατο τῶν θυμῶν ὁ λογισμὸς κρατεῖν, οὐκ ἂν
-εἶπεν οὕτως.</p></div> <div type="textpart" subtype="verse" n="21"><p> ὁπηνίκα γὰρ ὁ θεὸς τὸν ἄνθρωπον κατεσκεύασεν, τα
-παθη αὐτοῦ καὶ τὰ ἤθη περιεφύτευσεν·</p></div> <div type="textpart" subtype="verse" n="22"><p>καὶ τηνικαῦτα δέ περὶ
-πάντων τὸν ἱερὸν ἡγεμόνα νοῦν διὰ τῶν αἰσθητηρίων ἐνεθρόνισεν·</p></div>
-<div type="textpart" subtype="verse" n="23"><p> καὶ τούτῳ νόμον ἔδωκεν, καθʼ ὃν πολιτευόμενος βασιλεύσει βασιλείαν
-σώφρονά τε καὶ δικαίαν καὶ ἀγαθὴν καὶ ἀνδρείαν.</p></div>
-<div type="textpart" subtype="verse" n="24"><p>Πῶς οὖν, εἶποι τις ἄν, εἰ τῶν παθῶν ὁ λογισμὸς κρατεῖ, λήθης
-καὶ ἀγνοίας οὐ κρατεῖ ;</p></div>
-</div>
-
-<div type="textpart" subtype="chapter" n="3">
-<div type="textpart" subtype="verse" n="1"><p>ἔστι δέ κομιδῇ γελοῖος ὁ λογισμός· οὐ γὰρ
-τῶν ἑαυτοῦ παθῶν ὁ λογισμὸς ἐπικρατεῖν φαίνεται, ἀλλὰ τῶν σωματικῶν.</p></div>
-<div type="textpart" subtype="verse" n="2"><p>οἶον ἐπιθυμίαν τις ὑμῶν οὐ δύναται ἐκκόψαι, ἀλλὰ μὴ
-δουλωθῆναι τῇ ἐπιθυμίᾳ δύναται ὁ λογισμὸς παρασχέσθαι.</p></div> <div type="textpart" subtype="verse" n="3"><p>θυμον
-τις οὐ δύναται ἐκκόψαι ὑμῶν τῆς ψυχῆς, ἀλλὰ τῷ θυμῷ δυνατὸν βοηθῆσαι.</p></div>
-<div type="textpart" subtype="verse" n="4"><p>κακοήθειάν τις ὑμῶν οὐ δύναται ἐκκόψαι, ἀλλὰ τὸ μὴ καμφθῆναι
-τῇ κακοηθείᾳ δυνατὸν ὁ λογισμὸς συμμαχῆσαι.</p></div> <div type="textpart" subtype="verse" n="5"><p> οὐ γὰρ ἐκριζωτὴς
-τῶν παθῶν ὁ λογισμός ἐστιν, ἀλλὰ ἀνταγωνιστής.</p></div> <div type="textpart" subtype="verse" n="6"><p>ἕστιν γοῦν
-τοῦτο διὰ τῆς Δαυεὶδ τοῦ βασιλέως δίψης σαφέστερον ἐπιλογίσασθαι.</p></div>
-<div type="textpart" subtype="verse" n="7"><p>ἐπεὶ γὰρ δι᾿ ὅλης ἡμέρας προσβάλλων τοῖς ἀλλοφύλοις ὁ Δαυεὶδ πολλοὺς
-αὐτῶν ἀπέκτεινεν μετὰ τῶν τοῦ ἔθνους στρατιωτῶν,</p></div> <div type="textpart" subtype="verse" n="8"><p>τότε δὴ
+αὐτῶν;</p>
+            </div>
+            <div n="20" type="verse">
+               <p>εἰ μὴ γὰρ ἐδύνατο τῶν θυμῶν ὁ λογισμὸς κρατεῖν, οὐκ ἂν
+εἶπεν οὕτως.</p>
+            </div>
+            <div n="21" type="verse">
+               <p> ὁπηνίκα γὰρ ὁ θεὸς τὸν ἄνθρωπον κατεσκεύασεν, τα
+παθη αὐτοῦ καὶ τὰ ἤθη περιεφύτευσεν·</p>
+            </div>
+            <div n="22" type="verse">
+               <p>καὶ τηνικαῦτα δέ περὶ
+πάντων τὸν ἱερὸν ἡγεμόνα νοῦν διὰ τῶν αἰσθητηρίων ἐνεθρόνισεν·</p>
+            </div>
+            <div n="23" type="verse">
+               <p> καὶ τούτῳ νόμον ἔδωκεν, καθʼ ὃν πολιτευόμενος βασιλεύσει βασιλείαν
+σώφρονά τε καὶ δικαίαν καὶ ἀγαθὴν καὶ ἀνδρείαν.</p>
+            </div>
+            <div n="24" type="verse">
+               <p>Πῶς οὖν, εἶποι τις ἄν, εἰ τῶν παθῶν ὁ λογισμὸς κρατεῖ, λήθης
+καὶ ἀγνοίας οὐ κρατεῖ ;</p>
+            </div>
+         </div>
+         <div n="3" type="chapter">
+            <div n="1" type="verse">
+               <p>ἔστι δέ κομιδῇ γελοῖος ὁ λογισμός· οὐ γὰρ
+τῶν ἑαυτοῦ παθῶν ὁ λογισμὸς ἐπικρατεῖν φαίνεται, ἀλλὰ τῶν σωματικῶν.</p>
+            </div>
+            <div n="2" type="verse">
+               <p>οἶον ἐπιθυμίαν τις ὑμῶν οὐ δύναται ἐκκόψαι, ἀλλὰ μὴ
+δουλωθῆναι τῇ ἐπιθυμίᾳ δύναται ὁ λογισμὸς παρασχέσθαι.</p>
+            </div>
+            <div n="3" type="verse">
+               <p>θυμον
+τις οὐ δύναται ἐκκόψαι ὑμῶν τῆς ψυχῆς, ἀλλὰ τῷ θυμῷ δυνατὸν βοηθῆσαι.</p>
+            </div>
+            <div n="4" type="verse">
+               <p>κακοήθειάν τις ὑμῶν οὐ δύναται ἐκκόψαι, ἀλλὰ τὸ μὴ καμφθῆναι
+τῇ κακοηθείᾳ δυνατὸν ὁ λογισμὸς συμμαχῆσαι.</p>
+            </div>
+            <div n="5" type="verse">
+               <p> οὐ γὰρ ἐκριζωτὴς
+τῶν παθῶν ὁ λογισμός ἐστιν, ἀλλὰ ἀνταγωνιστής.</p>
+            </div>
+            <div n="6" type="verse">
+               <p>ἕστιν γοῦν
+τοῦτο διὰ τῆς Δαυεὶδ τοῦ βασιλέως δίψης σαφέστερον ἐπιλογίσασθαι.</p>
+            </div>
+            <div n="7" type="verse">
+               <p>ἐπεὶ γὰρ δι᾿ ὅλης ἡμέρας προσβάλλων τοῖς ἀλλοφύλοις ὁ Δαυεὶδ πολλοὺς
+αὐτῶν ἀπέκτεινεν μετὰ τῶν τοῦ ἔθνους στρατιωτῶν,</p>
+            </div>
+            <div n="8" type="verse">
+               <p>τότε δὴ
 γενομένης ἑσπέρας, ἱδρῶν καὶ σφόδρα κεκμηκώς, ἐπὶ τὴν βασίλειον
 <note type="footnote">17 Μωυσης V Αβιρων V* (- βηρ. Vᵃ) 18 δυνατος] ικανος U+05D0* (δυν. <note type="marginal">U+05D0V</note>
 U+05D0c.ᵇ) μεταθειναι] μετα sup ras A¹fort) 19 Σικειμιτας A αυτων] + οτι
@@ -298,40 +481,77 @@ V επικρατειν] κρατειν U+05D0c.a επικρατων V αλλα] 
 (παρασχ. U+05D0c.a ) V 3 υμων εκκοψαι U+05D0 | δυνατον] + τον λογισμον U+05D0V
 4 κακοηθιαν, κακοηθια U+05D0 | δυνατον] δυναιτ αν U+05D0 | δυναται V 7 ημερας] pr
 της V προσβαλων U+05D0V ο Δαυειδ] om ο V 8 ιδρων] pr εσπευδεν U+05D0</note>
-
-<pb n="734"/>
-<note type="marginal">A</note> σκηνὴν ᾖλθεν, περὶ ἤν ὁ πᾶς τῶν προγόνων στρατὸς ἐστρατοπεδεύκει.</p></div>
-<div type="textpart" subtype="verse" n="9"><p>οἱ μέν οὗν ἄλλοι πάντες ἐπὶ τὸ δεῖπνον ἦσαν· </p></div> <div type="textpart" subtype="verse" n="10"><p>ὁ δὲ βασιλεὺς ὡς
+                  <pb n="734"/>
+                  <note type="marginal">A</note> σκηνὴν ᾖλθεν, περὶ ἤν ὁ πᾶς τῶν προγόνων στρατὸς ἐστρατοπεδεύκει.</p>
+            </div>
+            <div n="9" type="verse">
+               <p>οἱ μέν οὗν ἄλλοι πάντες ἐπὶ τὸ δεῖπνον ἦσαν· </p>
+            </div>
+            <div n="10" type="verse">
+               <p>ὁ δὲ βασιλεὺς ὡς
 μάλιστα διψῶν, καίπερ ἀφθόνους ἔχων πηγάς, οὐκ ἠδύνατο δι᾿ αὐτῶν
-ἰάσασθαι τὴν δίψαν.</p></div> <div type="textpart" subtype="verse" n="11"><p>ἀλλά τις αὐτὸν ἀλόγιστος ἐπιθυμία
+ἰάσασθαι τὴν δίψαν.</p>
+            </div>
+            <div n="11" type="verse">
+               <p>ἀλλά τις αὐτὸν ἀλόγιστος ἐπιθυμία
 τοῦ παρὰ τοῖς πολεμίοις ὕδατος ἐπιτείνουσα συνέφρυγε, καὶ λύουσα
-κατέφλεγεν.</p></div> <div type="textpart" subtype="verse" n="12"><p>ὅθεν τῶν ὑπερασπιστῶν ἐπὶ τῇ τοῦ βασιλέως ἐπιθυμίᾳ
+κατέφλεγεν.</p>
+            </div>
+            <div n="12" type="verse">
+               <p>ὅθεν τῶν ὑπερασπιστῶν ἐπὶ τῇ τοῦ βασιλέως ἐπιθυμίᾳ
 σχετλιαζόντων, δύο νεανίσκοι στρατιῶται καρτεροί, καταιδεσθέντες
 τὴν τοῦ βασιλέως ἐπιθυμίαν, τὰς πανοπλίας καθωπλίσαντο,
-καὶ κάλπιν λαβόντες ὑπερέβησαν τοὺς τῶν πολεμίων χάρακας·</p></div> <div type="textpart" subtype="verse" n="13"><p>καὶ
+καὶ κάλπιν λαβόντες ὑπερέβησαν τοὺς τῶν πολεμίων χάρακας·</p>
+            </div>
+            <div n="13" type="verse">
+               <p>καὶ
 λαθόντες τοὺς τῶν πυλῶν ἀκροφύλακας, διεξήεσαν εὑράμενοι κατὰ
-πᾶν τὸ τῶν  πολεμίων στρατοπέδου.</p></div> <div type="textpart" subtype="verse" n="14"><p>καὶ ἀνευράμενοι θαρραλέως
-τὴν πηγήν, ἐξ αὐτῆς ἐγέμισαν τῷ βασιλεῖ τὸ ποτόν.</p></div> <div type="textpart" subtype="verse" n="15"><p>ὁ δὲ καὶ περὶ
+πᾶν τὸ τῶν  πολεμίων στρατοπέδου.</p>
+            </div>
+            <div n="14" type="verse">
+               <p>καὶ ἀνευράμενοι θαρραλέως
+τὴν πηγήν, ἐξ αὐτῆς ἐγέμισαν τῷ βασιλεῖ τὸ ποτόν.</p>
+            </div>
+            <div n="15" type="verse">
+               <p>ὁ δὲ καὶ περὶ
 τὴν δίψαν διαπυρούμενος, ἐλογίσατο πάνδεινον εἶναι κίνδυνον τῇ
-ψυχῇ λογισθὲν ἰσοδύναμον τὸ ποτὸν αἵματι.</p></div> <div type="textpart" subtype="verse" n="16"><p>ὅθεν ἀντιθεὶς τῇ
-ἐπιθυμίᾳ τὸν λογισμόν, ἔσπεισεν τὸ πόμα τῷ θεῷ.</p></div> <div type="textpart" subtype="verse" n="17"><p>δυνατὸς γὰρ
+ψυχῇ λογισθὲν ἰσοδύναμον τὸ ποτὸν αἵματι.</p>
+            </div>
+            <div n="16" type="verse">
+               <p>ὅθεν ἀντιθεὶς τῇ
+ἐπιθυμίᾳ τὸν λογισμόν, ἔσπεισεν τὸ πόμα τῷ θεῷ.</p>
+            </div>
+            <div n="17" type="verse">
+               <p>δυνατὸς γὰρ
 ὁ σώφρων νοῦς νικῆσαι τὰς τῶν παθῶν ἀνάγκας, καὶ σβέσαι τὰς τῶν
-οἴστρων φλεγμονάς,</p></div> <div type="textpart" subtype="verse" n="18"><p>καὶ τὰς τῶν σωμάτων ἀλγηδόνας καθʼ ὑπερβολὴν
+οἴστρων φλεγμονάς,</p>
+            </div>
+            <div n="18" type="verse">
+               <p>καὶ τὰς τῶν σωμάτων ἀλγηδόνας καθʼ ὑπερβολὴν
 οὔσας καταπαλαῖσαι, καὶ τῆς καλοκἀγαθίας τοῦ λογισμοῦ
-ἀποπτύσαι πάσας τὰς τῶν παθῶν ἐπικρατίας.</p></div>
- <div type="textpart" subtype="verse" n="19"><p>Ἤδη δὲ καὶ ὁ καιρὸς ἡμᾶς καλεῖ ἐπὶ τὴν ἀπόδειξιν τῆς ἱστορίας
-τοῦ σώφρονος λογισμοῦ.</p></div> <div type="textpart" subtype="verse" n="20"><p>ἐπειδὴ γὰρ βαθεῖαν εἰρήνην διὰ τὴν
+ἀποπτύσαι πάσας τὰς τῶν παθῶν ἐπικρατίας.</p>
+            </div>
+            <div n="19" type="verse">
+               <p>Ἤδη δὲ καὶ ὁ καιρὸς ἡμᾶς καλεῖ ἐπὶ τὴν ἀπόδειξιν τῆς ἱστορίας
+τοῦ σώφρονος λογισμοῦ.</p>
+            </div>
+            <div n="20" type="verse">
+               <p>ἐπειδὴ γὰρ βαθεῖαν εἰρήνην διὰ τὴν
 εὐνομίαν οἱ πατέρες ἡμῶν εἶχον, καὶ ἔπραττον καλῶς, ὥστε καὶ τὸν
 τῆς Ἀσίας βασιλέα Σέλευκον τὸν Νικάνορα καὶ χρήματα εἰς τὴν
-ἱερουργίαν αὐτοῖς ἀφορίσαι, καὶ τὴν πολιτίαν αὐτῶν ἀποδέχεσθαι</p></div>
-<div type="textpart" subtype="verse" n="21"><p>τότε δὴ τινες πρὸς τὴν κοινὴν νεωτερίσαντες ὁμόνοιαν πολυτρόπως
-ἐχρήσαντο συμφοραῖς.</p></div> 
-</div>
-
-<div type="textpart" subtype="chapter" n="4">
-<div type="textpart" subtype="verse" n="1"><p>Σίμων γάρ τις πρὸς Ὀνίαν ἀντιπολιτευόμενος
+ἱερουργίαν αὐτοῖς ἀφορίσαι, καὶ τὴν πολιτίαν αὐτῶν ἀποδέχεσθαι</p>
+            </div>
+            <div n="21" type="verse">
+               <p>τότε δὴ τινες πρὸς τὴν κοινὴν νεωτερίσαντες ὁμόνοιαν πολυτρόπως
+ἐχρήσαντο συμφοραῖς.</p>
+            </div>
+         </div>
+         <div n="4" type="chapter">
+            <div n="1" type="verse">
+               <p>Σίμων γάρ τις πρὸς Ὀνίαν ἀντιπολιτευόμενος
 τόν ποτε τὴν ἀρχιερωσύνην ἔχοντα διὰ βίου, καλὸν καὶ
-<note type="marginal">U+05D0V</note><note type="footnote">8 εστρατοπεδευκεν V* (παιδ. Vᵃ) 10 om ως U+05D0 11 διεφρυγε
+<note type="marginal">U+05D0V</note>
+                  <note type="footnote">8 εστρατοπεδευκεν V* (παιδ. Vᵃ) 10 om ως U+05D0 11 διεφρυγε
 U+05D0* συνεφρυγεν U+05D0c.a V 12 υπερασπιστων] υπασπιστων U+05D0 | πανοπλιας]
 παντευχιας U+05D0V | καλπην U+05D0 καρπιν V* καρπην V¹⁽ᵛid) 12—13 χαρα-
 κας και sup ras et in mg Aᵃ 13 ευραμενοι] ανευρωμενοι U+05D0* ανερευ-
@@ -343,35 +563,66 @@ om το U+05D0V 16 πομα sup ras et in mg Aᵃ 18 ουσας] pr δυνατα
 U+05D0 | τη καλοκαγαθια U+05D0V | επικρατειας U+05D0Vᵃ 19 om και V 20 τον
 Νικανορος V αφορισοι] αποφορισαι A πολειτειαν U+05D0 πολιτειαν V 21 τοτε
 δη τινες προς την in mg et sup ras Aa πολυτροποις U+05D0V</note>
-
-<pb n="735"/>
+                  <pb n="735"/>
 ἀγαθὸν ἄνδρα, ἐπειδὴ πάντα τρόπον διαβάλλων ὑπέρ τοῦ ἔθνους <note type="marginal">A</note>
-οὐκ ἴσχυσεν κακῶσαι, φυγὰς ᾤχετο, τὴν πατρίδα προδώσων.</p></div> <div type="textpart" subtype="verse" n="2"><p> ὅθεν
+οὐκ ἴσχυσεν κακῶσαι, φυγὰς ᾤχετο, τὴν πατρίδα προδώσων.</p>
+            </div>
+            <div n="2" type="verse">
+               <p> ὅθεν
 ἥκων πρὸς Ἀπολλώνιον, τὸν Συρίας τε καὶ Φοινίκης καὶ Κιλικίας
-στρατηγόν, ἔλεγεν</p></div> <div type="textpart" subtype="verse" n="3"><p>Εὔνους ὣν τοῖς τοῦ βασιλέως πράγμασιν ἥκω,
+στρατηγόν, ἔλεγεν</p>
+            </div>
+            <div n="3" type="verse">
+               <p>Εὔνους ὣν τοῖς τοῦ βασιλέως πράγμασιν ἥκω,
 μηνύων πολλὰς ἰδιωτικῶν χρημάτων μυριάδας ἐν τοῖς Ἰεροσολύμων
 γαζοφυλακίοις τεθησαυρίσθαι τῷ ἱερῷ μὴ ἐπικοινωνούσας, ἀλλὰ προσἠκειν
-ταῦτα Σελεύκῳ τῷ βασιλεῖ</p></div> <div type="textpart" subtype="verse" n="4"><p>τούτων ἕκαστα γνοὺς ὁ Ἀπολλώνιος,
+ταῦτα Σελεύκῳ τῷ βασιλεῖ</p>
+            </div>
+            <div n="4" type="verse">
+               <p>τούτων ἕκαστα γνοὺς ὁ Ἀπολλώνιος,
 τὸν μέν Σίμωνα τῆς εἰς τὸν βασιλέα κηδεμονίας ἐπαινεῖ, πρὸς
-δὲ τὸν Σέλευκον ἀναβὰς κατεμήνυε τὸν τῶν χρημάτων θησαυρόν·</p></div>
-<div type="textpart" subtype="verse" n="5"><p> καὶ λαβὼν τὴν περὶ αὐτῶν ἐξουσίαν, ταχὺ εἰς τὴν πατρίδα ἡμῶν
-μετὰ τοῦ καταράτου Σίμωνος καὶ βαρυτάτου στρατοῦ</p></div> <div type="textpart" subtype="verse" n="6"><p>προσελθών,
+δὲ τὸν Σέλευκον ἀναβὰς κατεμήνυε τὸν τῶν χρημάτων θησαυρόν·</p>
+            </div>
+            <div n="5" type="verse">
+               <p> καὶ λαβὼν τὴν περὶ αὐτῶν ἐξουσίαν, ταχὺ εἰς τὴν πατρίδα ἡμῶν
+μετὰ τοῦ καταράτου Σίμωνος καὶ βαρυτάτου στρατοῦ</p>
+            </div>
+            <div n="6" type="verse">
+               <p>προσελθών,
 ταῖς τοῦ βασιλέως ἐντολαῖς ἥκειν ἔλεγεν, ὅπως τὰ ἰδιωτικὰ τοῦ
-γαζοφυλακίου λάβοι χρήματα.</p></div> <div type="textpart" subtype="verse" n="7"><p>καὶ τοῦ ἔθνους πρὸς τὸν λόγον
+γαζοφυλακίου λάβοι χρήματα.</p>
+            </div>
+            <div n="7" type="verse">
+               <p>καὶ τοῦ ἔθνους πρὸς τὸν λόγον
 σχετλιάσαντος ἀντιλέγοντός τε, πάνδεινον εἶναι νομίσαντες εἰ οἱ τὰς
 παρακαταθήκας πιστεύσαντες τῷ ἱερῷ θησαυρῷ στερηθήσονται, ὡς
-οἷόν τε ἣν ἐκώλυον.</p></div> <div type="textpart" subtype="verse" n="8"><p>μετὰ ἀπειλῆς δὲ ὁ Ἀπολλώνιος ἀπῄει εἰς
-τὸ ἱερόν.</p></div> <div type="textpart" subtype="verse" n="9"><p>τῶν δὲ ἱερέων μετὰ γυναικῶν καὶ παιδίων ἐν τῷ ἱερῷ
-ἱκετευσάντων τὸν θεὸν ὑπερασπίσαι τοῦ καταφρονουμένου τύπου,</p></div>
-<div type="textpart" subtype="verse" n="10"><p>ἀνιόντος τε μετὰ καθωπλισμένης στρατιᾶς τοῦ Ἀπολλωνίου πρὸς
+οἷόν τε ἣν ἐκώλυον.</p>
+            </div>
+            <div n="8" type="verse">
+               <p>μετὰ ἀπειλῆς δὲ ὁ Ἀπολλώνιος ἀπῄει εἰς
+τὸ ἱερόν.</p>
+            </div>
+            <div n="9" type="verse">
+               <p>τῶν δὲ ἱερέων μετὰ γυναικῶν καὶ παιδίων ἐν τῷ ἱερῷ
+ἱκετευσάντων τὸν θεὸν ὑπερασπίσαι τοῦ καταφρονουμένου τύπου,</p>
+            </div>
+            <div n="10" type="verse">
+               <p>ἀνιόντος τε μετὰ καθωπλισμένης στρατιᾶς τοῦ Ἀπολλωνίου πρὸς
 τὴν τῶν χρημάτων ἁρπαγήν, οὐρανόθεν προυφάνησαν ἔφιπποι ἄγγελοι
 περιαστράπτοντες τοῖς ὅπλοις, καὶ πολὺν αὐτοῖς φόβον τε καὶ
-τρόμον ἐνιόντες.</p></div> <div type="textpart" subtype="verse" n="11"><p>καταπεσών γε τοι ἡμιθανὴς ὁ Ἀπολλώνιος ἐπὶ
+τρόμον ἐνιόντες.</p>
+            </div>
+            <div n="11" type="verse">
+               <p>καταπεσών γε τοι ἡμιθανὴς ὁ Ἀπολλώνιος ἐπὶ
 τὸν πάμφυλον τοῦ ἱεροῦ περίβολον, τὰς χεῖρας ἐξέτεινεν εἰς τὸν
 οὐρανὸν καὶ μετὰ δακρύων τοὺς Ἐβραίους παρεκάλει ὅπως περὶ αὐτοῦ
-εὐξόμενοι, τὸν ἐπουράνιον ἐξευμενίσωνται στρατόν.</p></div> <div type="textpart" subtype="verse" n="12"><p>ἔλεγεν γὰρ
+εὐξόμενοι, τὸν ἐπουράνιον ἐξευμενίσωνται στρατόν.</p>
+            </div>
+            <div n="12" type="verse">
+               <p>ἔλεγεν γὰρ
 ἡμαρτηκώς, ὥστε καὶ ἀποθανεῖν ἄξιος ὑπάρχειν, πᾶσίν τε ἀνθρώποις
-<note type="marginal">IV</note><note type="footnote">1 διαβαλων V 2 ηκως A προς] ως U+05D0 3 μηνυσων V γαζο- <note type="marginal">U+05D0V</note>
+<note type="marginal">IV</note>
+                  <note type="footnote">1 διαβαλων V 2 ηκως A προς] ως U+05D0 3 μηνυσων V γαζο- <note type="marginal">U+05D0V</note>
 φυλακειοις A Vᵃ τεθησαυρισται A τω ιερω (ω sup ras Aᵃ?)] τοις ιεροις U+05D0 |
 αλλα] και U+05D0V 4 τουτων] + δε V κατεμηνυσε U+05D0 τον 4⁰ το A (τον A¹)
 5 λαβων] ελαβεν U+05D0V ταχυ] pr και U+05D0V 6 προελθων U+05D0* (προσελθ.
@@ -384,39 +635,79 @@ U+05D0c.a ) ηκειν] εικειν Vᵃ γαζοφυλακιου (-κειου 
 V αυτοις] ουτων U+05D0 | ενιοντες] ενιθlτες U+05D0 11 γε] δε U+05D0V om ο Απολ-
 λωνιος V om και A (hab U+05D0V) παρεκαλει] ρε sup ras A ευξομενοι (εξ.
 A* ευξ. Aa?)] προσευξαμενοι U+05D0V | επουρανιον] ουρανιον U+05D0V 12 τε]</note>
-
-<pb n="736"/>
-<note type="marginal">A</note> ὑμνήσειν σωθεὶς τὴν τοῦ ἱεροῦ τόπου μακαριότητα.</p></div> <div type="textpart" subtype="verse" n="13"><p>τούτοις ἐπαχθεὶς
+                  <pb n="736"/>
+                  <note type="marginal">A</note> ὑμνήσειν σωθεὶς τὴν τοῦ ἱεροῦ τόπου μακαριότητα.</p>
+            </div>
+            <div n="13" type="verse">
+               <p>τούτοις ἐπαχθεὶς
 τοῖς λόγοις Ὀνίας ὁ ἀρχιερεύς. καίπερ ἄλλως εὐλαβηθεὶς μή ποτε
 νομίσειεν ὁ βασιλεὺς Σέλευκος ἐξ ἀνθρωπίνης ἐπιβουλῆς καὶ μὴ θείας
-δίκης ἀνῃρῆσθαι τὸν Ἀπολλώνιον, ηὔξατο περὶ αὐτοῦ.</p></div> <div type="textpart" subtype="verse" n="14"><p>καὶ ὁ μέν
+δίκης ἀνῃρῆσθαι τὸν Ἀπολλώνιον, ηὔξατο περὶ αὐτοῦ.</p>
+            </div>
+            <div n="14" type="verse">
+               <p>καὶ ὁ μέν
 παραδόξως διασωθεὶς ᾤχετο, δηλώσων τῷ βασιλεῖ τὰ συμβάντα
-αὐτῷ.</p></div> <div type="textpart" subtype="verse" n="15"><p>Γελευτήσαντος δὲ Σελεύκου τοῦ βασιλέως, διαδέχεται
+αὐτῷ.</p>
+            </div>
+            <div n="15" type="verse">
+               <p>Γελευτήσαντος δὲ Σελεύκου τοῦ βασιλέως, διαδέχεται
 τὴν ἀρχὴν ὁ υἱὸς αὐτοῦ Ἀντίοχος Ἐπιφανής, ἀνὴρ ὑπερήφανος,
-δεινός·</p></div> <div type="textpart" subtype="verse" n="16"><p>ὃς καταλύσας τὸν Ὀνίαν τῆς ἀρχιερωσύνης Ἰάσονα τὸν
-ἀδελφὸν αὐτοῦ κατέστησεν ἀρχιερέα,</p></div> <div type="textpart" subtype="verse" n="17"><p>συνθέμενον δώσειν, εἰ ἐπιτρέψειεν
+δεινός·</p>
+            </div>
+            <div n="16" type="verse">
+               <p>ὃς καταλύσας τὸν Ὀνίαν τῆς ἀρχιερωσύνης Ἰάσονα τὸν
+ἀδελφὸν αὐτοῦ κατέστησεν ἀρχιερέα,</p>
+            </div>
+            <div n="17" type="verse">
+               <p>συνθέμενον δώσειν, εἰ ἐπιτρέψειεν
 αὐτῷ τὴν ἀρχήν, κατʼ ἐνιαυτὸν τρισχίλια ἑξακόσια ἑξήκοντα
-τάλαντα.</p></div> <div type="textpart" subtype="verse" n="18"><p> ὁ δὲ ἐπέτρεψεν αὐτῷ ἀρχιερᾶσθαι καὶ τοῦ ἔθνους ἀφηγεῖσθαι.</p></div>
-<div type="textpart" subtype="verse" n="19"><p>ὃς καὶ ἐξεζήτησεν τὸ ἔθνος, καὶ ἐξεπολίτευσεν ἐπὶ πᾶσαν
-παρανομίαν·</p></div> <div type="textpart" subtype="verse" n="20"><p>ὣστε μὴ μόνον ἐπʼ αὐτῇ τῇ ἄκρᾳ τῆς πατρίδος ἡμῶν
-γυμνάσιον κατασκευάσαι, ἀλλὰ καὶ καταλῦσαι τὴν τοῦ ἱεροῦ κηδεμονίαν.</p></div>
-<div type="textpart" subtype="verse" n="21"><p>ἐφʼ οἶς ἀγανακτήσασα ἡ θεία δίκη αὐτόν τοιτὸν Ἀντίοχον ἐπολέμησεν.</p></div>
-<div type="textpart" subtype="verse" n="22"><p>ἐπειδὴ γὰρ πολεμῶν ἣν κατʼ Aἴγυπτον Πτολεμαίῳ, ἤκουσέν τε ὅτι
+τάλαντα.</p>
+            </div>
+            <div n="18" type="verse">
+               <p> ὁ δὲ ἐπέτρεψεν αὐτῷ ἀρχιερᾶσθαι καὶ τοῦ ἔθνους ἀφηγεῖσθαι.</p>
+            </div>
+            <div n="19" type="verse">
+               <p>ὃς καὶ ἐξεζήτησεν τὸ ἔθνος, καὶ ἐξεπολίτευσεν ἐπὶ πᾶσαν
+παρανομίαν·</p>
+            </div>
+            <div n="20" type="verse">
+               <p>ὣστε μὴ μόνον ἐπʼ αὐτῇ τῇ ἄκρᾳ τῆς πατρίδος ἡμῶν
+γυμνάσιον κατασκευάσαι, ἀλλὰ καὶ καταλῦσαι τὴν τοῦ ἱεροῦ κηδεμονίαν.</p>
+            </div>
+            <div n="21" type="verse">
+               <p>ἐφʼ οἶς ἀγανακτήσασα ἡ θεία δίκη αὐτόν τοιτὸν Ἀντίοχον ἐπολέμησεν.</p>
+            </div>
+            <div n="22" type="verse">
+               <p>ἐπειδὴ γὰρ πολεμῶν ἣν κατʼ Aἴγυπτον Πτολεμαίῳ, ἤκουσέν τε ὅτι
 φήμης διαδοθείσης περὶ τοῦ τεθνάναι αὐτόν, ὡς ἔνι μάλιστα χαίροιεν
-οἱ Ἰεροσολυμεῖται, ταχέως ἐπʼ αὐτοὺς ἀνέζευξεν.</p></div> <div type="textpart" subtype="verse" n="23"><p> καὶ ὡς ἐπόρθησεν
+οἱ Ἰεροσολυμεῖται, ταχέως ἐπʼ αὐτοὺς ἀνέζευξεν.</p>
+            </div>
+            <div n="23" type="verse">
+               <p> καὶ ὡς ἐπόρθησεν
 αὐτούς, δόγμα ἔθετο ὅπως εἴτινες αὐτῶν φάνοιεν τῷ πατρίῳ πολιτευόμενοι
-νόμῳ, θάνοιεν.</p></div> <div type="textpart" subtype="verse" n="24"><p>καὶ ἐπεὶ κατὰ μηδένα τρόπον ἴσχυεν καταλῦσαι
+νόμῳ, θάνοιεν.</p>
+            </div>
+            <div n="24" type="verse">
+               <p>καὶ ἐπεὶ κατὰ μηδένα τρόπον ἴσχυεν καταλῦσαι
 διὰ τῶν δογμάτων τὴν τοῦ ἔθνους εὔνοιαν, ἀλλὰ πάσας τὰς ἑαυτοῦ
-ἀπειλὰς καὶ τιμωρίας ἑώρα καταλυομένας,</p></div> <div type="textpart" subtype="verse" n="25"><p>ὥστε καὶ γυναῖκας, ὅτι
+ἀπειλὰς καὶ τιμωρίας ἑώρα καταλυομένας,</p>
+            </div>
+            <div n="25" type="verse">
+               <p>ὥστε καὶ γυναῖκας, ὅτι
 περιέτεμον τὰ παιδία, μετὰ τῶν βρεφῶν κατακρημνισθῆναι, προειδυίας
-ὅτι τοῦτο πείσονται·</p></div> <div type="textpart" subtype="verse" n="26"><p> ἐπεὶ οὖν τὰ δόγματα αὐτοῦ κατεφρονεῖτο ὑπὸ
+ὅτι τοῦτο πείσονται·</p>
+            </div>
+            <div n="26" type="verse">
+               <p> ἐπεὶ οὖν τὰ δόγματα αὐτοῦ κατεφρονεῖτο ὑπὸ
 τοῦ λαοῦ, αὐτὸς διὰ βασάνων ἕνα ἕκαστον τοῦ ἔθνους ἠνάγκαζεν,
-μιερῶν ἀπογευομένους τροφῶν, ἐξόμνυσθαι τὸν Ἰουδαισμόν.</p></div>
-</div>
-
-<div type="textpart" subtype="chapter" n="5">
-<div type="textpart" subtype="verse" n="1"><p>Προκαθίσας γέ τοι μετὰ τῶν συνέδρων ὁ τύραννος Ἀντίοχος ἐπί
-<note type="marginal">U+05D0V</note><note type="footnote">13 τουτοις] pr ελεγεν V υπαχθεις U+05D0 | Ονειας U+05D0 | ανηρησασθαι A ανη-
+μιερῶν ἀπογευομένους τροφῶν, ἐξόμνυσθαι τὸν Ἰουδαισμόν.</p>
+            </div>
+         </div>
+         <div n="5" type="chapter">
+            <div n="1" type="verse">
+               <p>Προκαθίσας γέ τοι μετὰ τῶν συνέδρων ὁ τύραννος Ἀντίοχος ἐπί
+<note type="marginal">U+05D0V</note>
+                  <note type="footnote">13 τουτοις] pr ελεγεν V υπαχθεις U+05D0 | Ονειας U+05D0 | ανηρησασθαι A ανη-
 ρησεσθαι V 14 παραδοξως διασωθεις] παραδοξωσωθεις V* παραδοξως
 σωθεις V¹? 15 τελευτησαντος...ανηρ paene evanuere in V ο υιος] om ο
 U+05D0* (hab U+05D0c.ᵃ) Επιφανης] pr ο U+05D0 δεινος] pr και U+05D0 16 ος] και V
@@ -429,35 +720,78 @@ U+05D0 | εξεζητησεν] εξεδιητησεν U+05D0V 20 om αλλα κ�
 μιται V 23 τινες] τις U+05D0 | φανιε (sic) A 24 ευνοιαν] ευνομιαν U+05D0V
 εορα A 25 γυναικας] pr τας V 26 κατεφρονητο V του εθνους]
 τουτου θνους (sic) A μιαρων U+05D0V | απογευσαμενους V</note>
-
-<pb n="737"/>
+                  <pb n="737"/>
 τινος ὑψηλοῦ τόπου, καὶ τῶν στρατευμάτων αὐτῶν παρεστηκότων <note type="marginal">A</note>
-κυκλόθεν ἐνόπλων,</p></div> <div type="textpart" subtype="verse" n="2"><p> παρεκέλευεν τοις δορυφόροις ἕνα ἕκαστον τῶν
+κυκλόθεν ἐνόπλων,</p>
+            </div>
+            <div n="2" type="verse">
+               <p> παρεκέλευεν τοις δορυφόροις ἕνα ἕκαστον τῶν
 Ἐβραίων περισπᾶσθαι, καὶ κρεῶν ὑείων καὶ εἰδωλοθύτων ἀναγκάζειν
-ἀπογεύεσθαι</p></div> <div type="textpart" subtype="verse" n="3"><p>εἰ δέ τινες μὴ θέλοιεν μιεροφαγῆσαι, τούτους τροχισθέντας
-ἀναιρεθῆναι.</p></div> <div type="textpart" subtype="verse" n="4"><p>πολλῶν δὲ συναρπασθέντων, εἰς πρῶτος ἐκ τῆς
+ἀπογεύεσθαι</p>
+            </div>
+            <div n="3" type="verse">
+               <p>εἰ δέ τινες μὴ θέλοιεν μιεροφαγῆσαι, τούτους τροχισθέντας
+ἀναιρεθῆναι.</p>
+            </div>
+            <div n="4" type="verse">
+               <p>πολλῶν δὲ συναρπασθέντων, εἰς πρῶτος ἐκ τῆς
 ἀγέλης Ἐβραῖος ὀνόματι Ἐλεάζαρος, τὸ γένος ἱερεύς, τὴν ἐπιστήμην
 νομικός, καὶ τὴν ἡλικίαν προήκων, καὶ πολλοῖς τῶν περὶ τὸν τύραννον
-διὰ τὴν ἡλικίαν γνώριμος. παρήχθη πλησίον αὐτοῦ.</p></div> <div type="textpart" subtype="verse" n="5"><p>καὶ αὐτὸν ἰδὼν
-ὁ Ἀντίοχος ἔφη</p></div> <div type="textpart" subtype="verse" n="6"><p>Ἐγὼ πρὶν ἄρξασθαι τῶν κατὰ σοῦ βασάνων,
+διὰ τὴν ἡλικίαν γνώριμος. παρήχθη πλησίον αὐτοῦ.</p>
+            </div>
+            <div n="5" type="verse">
+               <p>καὶ αὐτὸν ἰδὼν
+ὁ Ἀντίοχος ἔφη</p>
+            </div>
+            <div n="6" type="verse">
+               <p>Ἐγὼ πρὶν ἄρξασθαι τῶν κατὰ σοῦ βασάνων,
 πρεσβῦτα, συμβουλεύσαιμʼ ἄν σοι ταῦτα ὅπως ἀπογευσάμενος τῶν
 ὑείων σώζοιο· αἰδοῦμαι γάρ σου τὴν ἡλικίαν καὶ τὴν πολιάν, ἣν
 μετὰ τοσοῦτον ἔχων χρόνον οὕ μοι δοκεῖς φιλοσοφεῖν, τῇ Ἰουδαίων
-χρώμενος θρησκείᾳ.</p></div> <div type="textpart" subtype="verse" n="7"><p>διά τί γὰρ τῆς φύσεως κεχαρισμένης καλλίστην
-τὴν τοῦδε τοῦ ζῴου σαρκοφαγίαν βδελύττῃ;</p></div> <div type="textpart" subtype="verse" n="8"><p> καὶ γὰρ ἀνόητον τοῦτο
+χρώμενος θρησκείᾳ.</p>
+            </div>
+            <div n="7" type="verse">
+               <p>διά τί γὰρ τῆς φύσεως κεχαρισμένης καλλίστην
+τὴν τοῦδε τοῦ ζῴου σαρκοφαγίαν βδελύττῃ;</p>
+            </div>
+            <div n="8" type="verse">
+               <p> καὶ γὰρ ἀνόητον τοῦτο
 τὸ μὴ ἀπολαύειν τῶν χωρὶς ὀνείδους ἡδέων, καὶ ἄδικον ἀποστρέφεσθαι
-τὰς τῆς φύσεως χάριτας.</p></div> <div type="textpart" subtype="verse" n="9"><p>σὺ δέ μοι καὶ ἀνοητότερον ποιήσεῖν
-δοκεῖς, εἰ κενοδοξῶν περὶ τὸ ἀληθές</p></div> <div type="textpart" subtype="verse" n="10"><p>ἔτι κἀμοῦ καταφρονήσεις
+τὰς τῆς φύσεως χάριτας.</p>
+            </div>
+            <div n="9" type="verse">
+               <p>σὺ δέ μοι καὶ ἀνοητότερον ποιήσεῖν
+δοκεῖς, εἰ κενοδοξῶν περὶ τὸ ἀληθές</p>
+            </div>
+            <div n="10" type="verse">
+               <p>ἔτι κἀμοῦ καταφρονήσεις
 ἐπὶ τῇ ἰδίᾳ τιμωρίᾳ· οὐκ ἐξυπνώσεις ἀπὸ τῆς φλυάρου φιλοσοφίας
-ὑμῶν;</p></div> <div type="textpart" subtype="verse" n="11"><p>καὶ ἀποσκεδάσεις σου τὸν λῆρον ¶ τὸν λογισμόν, καὶ ἄξιον <note type="marginal">¶ V</note>
-τῆς ἡλικίας ἀναλαβὼν νοῦν φιλοσοφήσεις τὴν τοῦ συμφέροντος ἀλήθειαν,</p></div>
-<div type="textpart" subtype="verse" n="12"><p> καὶ προσκυνήσας μου τὴν φιλάνθρωπον παρηγορίαν οἰκτειρήσεις
-τὸ σεαυτοῦ γῆρας</p></div> <div type="textpart" subtype="verse" n="13"><p>καὶ γὰρ ἐνθυμήθητι, ὡς εἰ καί τίς ἐστιν
+ὑμῶν;</p>
+            </div>
+            <div n="11" type="verse">
+               <p>καὶ ἀποσκεδάσεις σου τὸν λῆρον ¶ τὸν λογισμόν, καὶ ἄξιον <note type="marginal">¶ V</note>
+τῆς ἡλικίας ἀναλαβὼν νοῦν φιλοσοφήσεις τὴν τοῦ συμφέροντος ἀλήθειαν,</p>
+            </div>
+            <div n="12" type="verse">
+               <p> καὶ προσκυνήσας μου τὴν φιλάνθρωπον παρηγορίαν οἰκτειρήσεις
+τὸ σεαυτοῦ γῆρας</p>
+            </div>
+            <div n="13" type="verse">
+               <p>καὶ γὰρ ἐνθυμήθητι, ὡς εἰ καί τίς ἐστιν
 τῆσδετῆς θρησκείας ἐποπτικὴ δύναμις. συγγνωμονήσειἐν σοι ἐπὶ πᾶσιν
-δι᾿ ἀνάγκην παρανομίᾳ γινομένῃ.</p></div> <div type="textpart" subtype="verse" n="14"><p> Τοῦτον τὸν τρόπον ἐπὶ
+δι᾿ ἀνάγκην παρανομίᾳ γινομένῃ.</p>
+            </div>
+            <div n="14" type="verse">
+               <p> Τοῦτον τὸν τρόπον ἐπὶ
 τὴν ἔκθεσμον σαρκοφαγίαν ἐποτρύνοντος τοῦ τυράννου, λόγον ᾔτησεν
-ὁ Ἐλεάζαρος.</p></div> <div type="textpart" subtype="verse" n="15"><p>καὶ λαβὼν τοῦ λέγειν ἐξουσίαν, ἤρξατο δημηγορεῖν
-οὕτως</p></div> <div type="textpart" subtype="verse" n="16"><p>Ἡμεῖς, Ἀντίοχε, θείῳ πεπεισμένοι νόμῳ πολιτεύεσθαι, οὐδεμίαν
+ὁ Ἐλεάζαρος.</p>
+            </div>
+            <div n="15" type="verse">
+               <p>καὶ λαβὼν τοῦ λέγειν ἐξουσίαν, ἤρξατο δημηγορεῖν
+οὕτως</p>
+            </div>
+            <div n="16" type="verse">
+               <p>Ἡμεῖς, Ἀντίοχε, θείῳ πεπεισμένοι νόμῳ πολιτεύεσθαι, οὐδεμίαν
 <note type="footnote">V 1 αυτων] αυτω U+05D0 2 των Εβραιων] Εβραιον U+05D0* (των Εβραιων U+05D0c.a) <note type="marginal">U+05D0V</note>
 περισπασθαι] επισπασθαι U+05D0V υιων A V* (υειων U+05D0Vᵃ): item 6 ιδωλοθυτων
 (λ sup ras upi prius ν ut vid) U+05D0 3 τις U+05D0* (τινες U+05D0c.a ) θελοιεν] θελουσι
@@ -471,38 +805,96 @@ ras U+05D01 | την τουδε του ζωου] τουτου του ζ. Vᵛid 
 X II 1, folio codicis abscisso των λογισμων U+05D0 | αναλαβωνουν A 12 οικτιρη·
 σεις A 13 om ως U+05D0* (hab U+05D0c.a) θρησκειας] +υμων U+05D0 | συγνωμ. A συνγνU+05D0 |
 πασιν] παση 14 εχθεσμὸ U+05D0* (εκθ.U+05D0 c) 16 Αντιωχε A πεπεισμενω A</note>
-
-<pb n="738"/>
-<note type="marginal">A</note> ἀνάγκην βιαιοτέραν εἶναι νομίζομεν τῆς πρὸς τὸν νόμον ἡμῶν
-εὐπειθείας.</p></div> <div type="textpart" subtype="verse" n="17"><p>διὸ δὴ κατʼ οὐδένα τρόπον παρανομεῖν ἀξιοῦμεν. </p></div> <div type="textpart" subtype="verse" n="18"><p>καίτοι
+                  <pb n="738"/>
+                  <note type="marginal">A</note> ἀνάγκην βιαιοτέραν εἶναι νομίζομεν τῆς πρὸς τὸν νόμον ἡμῶν
+εὐπειθείας.</p>
+            </div>
+            <div n="17" type="verse">
+               <p>διὸ δὴ κατʼ οὐδένα τρόπον παρανομεῖν ἀξιοῦμεν. </p>
+            </div>
+            <div n="18" type="verse">
+               <p>καίτοι
 εἰ καὶ κατὰ ἀλήθειαν μὴ ἦν ὁ νόμος ἡμῶν, ὡς σὺ ὑπολαμβάνεις,
 θεῖος, ἄλλως δὲ νομίζομεν αὐτὸν εἶναι θεῖον, οὐδὲ οὕτως ἐξὸν ἡμῖν ἦν
-τὴν ἐπὶ τῇ εὐσεβεία δόξαν ἀκυρῶσαι.</p></div> <div type="textpart" subtype="verse" n="19"><p> μὴ μικρὰν οὗν εἶναι νομίσῃς
-ταύτην, εἰ μιεροφαγήσαιμεν, ἁμαρτίαν.</p></div> <div type="textpart" subtype="verse" n="20"><p> τὸ γὰρ ἐν μικροῖς καὶ ἐν
-μεγάλοις παρανομεῖν ἰσοδύναμόν ἐστιν·</p></div> <div type="textpart" subtype="verse" n="21"><p>δι᾿ ἑκατέρου γὰρ ὡς ὁμοίως
-ὁ νόμος ὑπερηφανεῖται.</p></div> <div type="textpart" subtype="verse" n="22"><p> χλευάζεις δέ ἡμῶν τὴν φιλοσοφίαν, ὥσπερ
-οὐ μετὰ εὐλογιστίας ἐν αὐτῇ βιούντων.</p></div> <div type="textpart" subtype="verse" n="23"><p>σωφροσύνην τε γὰρ ἡμᾶς
+τὴν ἐπὶ τῇ εὐσεβεία δόξαν ἀκυρῶσαι.</p>
+            </div>
+            <div n="19" type="verse">
+               <p> μὴ μικρὰν οὗν εἶναι νομίσῃς
+ταύτην, εἰ μιεροφαγήσαιμεν, ἁμαρτίαν.</p>
+            </div>
+            <div n="20" type="verse">
+               <p> τὸ γὰρ ἐν μικροῖς καὶ ἐν
+μεγάλοις παρανομεῖν ἰσοδύναμόν ἐστιν·</p>
+            </div>
+            <div n="21" type="verse">
+               <p>δι᾿ ἑκατέρου γὰρ ὡς ὁμοίως
+ὁ νόμος ὑπερηφανεῖται.</p>
+            </div>
+            <div n="22" type="verse">
+               <p> χλευάζεις δέ ἡμῶν τὴν φιλοσοφίαν, ὥσπερ
+οὐ μετὰ εὐλογιστίας ἐν αὐτῇ βιούντων.</p>
+            </div>
+            <div n="23" type="verse">
+               <p>σωφροσύνην τε γὰρ ἡμᾶς
 ἐκδιδάσκει, ὥστε πασῶν τῶν ἡδονῶν καὶ ἐπιθυμιῶν κρατεῖν, καὶ
-ἀνδρείαν ἐξασκεῖν, ὥστε πάντα πόνον ἑκουσίως ὑπομένειν·</p></div> <div type="textpart" subtype="verse" n="24"><p>καὶ
+ἀνδρείαν ἐξασκεῖν, ὥστε πάντα πόνον ἑκουσίως ὑπομένειν·</p>
+            </div>
+            <div n="24" type="verse">
+               <p>καὶ
 δικαιοσύνην παιδεύει, ὥστε διὰ πάντων τῶν ἠθῶν ἰσονομεῖν καὶ εὐσέβειαν
-διδάσκειν, ὥστε μόνον τὸν ὄντα θεὸν σέβειν μεγαλοπρεπῶς.</p></div>
-<div type="textpart" subtype="verse" n="25"><p>διὸ οὐ μιεροφαγοῦμεν· πιστεύοντες γὰρ θεοῦ καθεστάναι τὸν νόμον,
+διδάσκειν, ὥστε μόνον τὸν ὄντα θεὸν σέβειν μεγαλοπρεπῶς.</p>
+            </div>
+            <div n="25" type="verse">
+               <p>διὸ οὐ μιεροφαγοῦμεν· πιστεύοντες γὰρ θεοῦ καθεστάναι τὸν νόμον,
 οἴδαμεν ὅτι καὶ κατὰ φύσιν ἡμῖν συμπαθεῖ νομοθετῶν ὁ τοῦ κόσμου
-κτίστης·</p></div> <div type="textpart" subtype="verse" n="26"><p>τὰ μέν οἰκειωθησόμενα ἡμῶν ταῖς ψυχαῖς ἐπέτρεψεν
-ἐσθίειν, τὰ δέ ἐναντιωθησόμενα ἐκώλυσεν σαρκοφαγεῖν.</p></div> <div type="textpart" subtype="verse" n="27"><p>τυραννικὸν
+κτίστης·</p>
+            </div>
+            <div n="26" type="verse">
+               <p>τὰ μέν οἰκειωθησόμενα ἡμῶν ταῖς ψυχαῖς ἐπέτρεψεν
+ἐσθίειν, τὰ δέ ἐναντιωθησόμενα ἐκώλυσεν σαρκοφαγεῖν.</p>
+            </div>
+            <div n="27" type="verse">
+               <p>τυραννικὸν
 δὲ οὐ μόνον ἀναγκάζεις ἡμᾶς παρανομεῖν, ἀλλὰ καὶ ἐσθίειν, ὅπως τῇ
-ἐχθίστη ἡμῶν μιεροφαγίᾳ ταύτῃ ἔτι ἐγγελάσῃς</p></div> <div type="textpart" subtype="verse" n="28"><p> ἀλλ᾿ οὐ γελάσεις
-κατʼ ἐμοῦ τοῦτον τὸν γέλωτα·</p></div> <div type="textpart" subtype="verse" n="29"><p> οὔτε τοὺς ἱεροὺς τῶν προγόνων περὶ
-τοῦ φυλάξαι τὸν νόμον ὅρκους οὐ παρήσω,</p></div> <div type="textpart" subtype="verse" n="30"><p> οὐδ᾿ ἂν ἐκκόψεις μου τὰ
-ὄμματα καὶ τὰ σπλάγχνα μου τήξεις.</p></div> <div type="textpart" subtype="verse" n="31"><p> οὐχ οὕτως εἰμὶ γέρων ἐγὼ
-καὶ ἄνανδρος, ὥστε μοι διὰ τὴν εὐσέβειαν μὴ νεάζειν τὸν λογισμόν.</p></div>
-<div type="textpart" subtype="verse" n="32"><p>πρὸς ταῦτα τροχοὺς εὐτρέπιζε, καὶ τὸ πῦρ ἐκφύσα σφοδρότερον.</p></div>
-<div type="textpart" subtype="verse" n="33"><p>οὐχ οὕτως οἰκτειρήσω τὸ ἐμαυτοῦ γῆρας, ὥστε με δι᾿ ἐμαυτοῦ τὸν
-πάτριον καταλῦσαι νόμον.</p></div><div type="textpart" subtype="verse" n="34"><p>οὐ ψεύσομαί σε, παιδευτὰ νόμε, οὐδέ
-φεύξομαί σε, φίλη ἐγκράτεια·</p></div> <div type="textpart" subtype="verse" n="35"><p>οὐδὲ καταισχυνῶ σε, φιλόσοφε λόγε,
-οὐδὲ ἐξαρνήσομαί σε. ἱερωσύνη τιμία καὶ νομοθεσίας ἐπιστήμη·</p></div> <div type="textpart" subtype="verse" n="36"><p>οὐδὲ
-μιανεῖς μου τὸ σεμνὸν γήρως στόμα, οὐδὲ νομίμου βίου ἡλικίαν.</p></div>
-<note type="marginal">U+05D0</note><note type="footnote">18 om και U+05D0 | ημων] η U+05D0* (ημ. U+05D0c.a) om συ U+05D0 | ενομιζομεν U+05D0 | ην
+ἐχθίστη ἡμῶν μιεροφαγίᾳ ταύτῃ ἔτι ἐγγελάσῃς</p>
+            </div>
+            <div n="28" type="verse">
+               <p> ἀλλ᾿ οὐ γελάσεις
+κατʼ ἐμοῦ τοῦτον τὸν γέλωτα·</p>
+            </div>
+            <div n="29" type="verse">
+               <p> οὔτε τοὺς ἱεροὺς τῶν προγόνων περὶ
+τοῦ φυλάξαι τὸν νόμον ὅρκους οὐ παρήσω,</p>
+            </div>
+            <div n="30" type="verse">
+               <p> οὐδ᾿ ἂν ἐκκόψεις μου τὰ
+ὄμματα καὶ τὰ σπλάγχνα μου τήξεις.</p>
+            </div>
+            <div n="31" type="verse">
+               <p> οὐχ οὕτως εἰμὶ γέρων ἐγὼ
+καὶ ἄνανδρος, ὥστε μοι διὰ τὴν εὐσέβειαν μὴ νεάζειν τὸν λογισμόν.</p>
+            </div>
+            <div n="32" type="verse">
+               <p>πρὸς ταῦτα τροχοὺς εὐτρέπιζε, καὶ τὸ πῦρ ἐκφύσα σφοδρότερον.</p>
+            </div>
+            <div n="33" type="verse">
+               <p>οὐχ οὕτως οἰκτειρήσω τὸ ἐμαυτοῦ γῆρας, ὥστε με δι᾿ ἐμαυτοῦ τὸν
+πάτριον καταλῦσαι νόμον.</p>
+            </div>
+            <div n="34" type="verse">
+               <p>οὐ ψεύσομαί σε, παιδευτὰ νόμε, οὐδέ
+φεύξομαί σε, φίλη ἐγκράτεια·</p>
+            </div>
+            <div n="35" type="verse">
+               <p>οὐδὲ καταισχυνῶ σε, φιλόσοφε λόγε,
+οὐδὲ ἐξαρνήσομαί σε. ἱερωσύνη τιμία καὶ νομοθεσίας ἐπιστήμη·</p>
+            </div>
+            <div n="36" type="verse">
+               <p>οὐδὲ
+μιανεῖς μου τὸ σεμνὸν γήρως στόμα, οὐδὲ νομίμου βίου ἡλικίαν.</p>
+            </div>
+            <note type="marginal">U+05D0</note>
+            <note type="footnote">18 om και U+05D0 | ημων] η U+05D0* (ημ. U+05D0c.a) om συ U+05D0 | ενομιζομεν U+05D0 | ην
 ημῖ U+05D0 | ευσεβια U+05D0 19 μιαροφαγ. U+05D0 20 εν 1⁰] επι U+05D0 om εν 2⁰ U+05D0
 22 χλευαζει A 23 ανδριαν U+05D0 | εξασκειν] εκδιδασκειν U+05D0 | (εξασκειν U+05D0c: ν vid
 improbasse U+05D0c.a(? ) restit U+05D0c.b ) 24 παιδευειν A διδασκειν] εκδιδασκει U+05D0
@@ -512,40 +904,95 @@ U+05D0 | παρανομειν αλλα και εσθιειν] μιαροφαγε
 ετι εγγελασης] επεγγελασης U+05D0 29 ουτε] ουδε U+05D0* ου μα U+05D0c.a
 30 εκκοψειας U+05D0 | μου 2⁰ improb U+05D0c.a τηξειας U+05D0c.a 33 οικτειρησω] οικτει-
 ρομαι U+05D0 | om με U+05D0 34 φευξομαι] εξομουμαι U+05D0 36 μιανει U+05D0* (-νεις U+05D0c.a)</note>
-
-<pb n="739"/>
-<div type="textpart" subtype="verse" n="37"><p>ἁγνόν με οἱ πατέρες προσδέξονται, μὴ φοβηθέντα σου τὰς μέχρι <note type="marginal">A</note>
-θανάτου ἀνάγκας.</p></div> <div type="textpart" subtype="verse" n="38"><p> ἀσεβῶν μέν γὰρ τυραννήσεις· τῶν δὲ ἐμῶν περὶ
-τῆς εὐσεβείας λογισμῶν οὔτε λόγοις δεσπόσεις, οὕτε δι᾿ ἔργων.</p></div>
-</div>
-
-<div type="textpart" subtype="chapter" n="6">
- <div type="textpart" subtype="verse" n="1"><p>Τοῦτον τὸν τρόπον ἀντιρητορεύσαντα ταῖς τοῦ τυράννου παρηγορίαις,
+            <pb n="739"/>
+            <div n="37" type="verse">
+               <p>ἁγνόν με οἱ πατέρες προσδέξονται, μὴ φοβηθέντα σου τὰς μέχρι <note type="marginal">A</note>
+θανάτου ἀνάγκας.</p>
+            </div>
+            <div n="38" type="verse">
+               <p> ἀσεβῶν μέν γὰρ τυραννήσεις· τῶν δὲ ἐμῶν περὶ
+τῆς εὐσεβείας λογισμῶν οὔτε λόγοις δεσπόσεις, οὕτε δι᾿ ἔργων.</p>
+            </div>
+         </div>
+         <div n="6" type="chapter">
+            <div n="1" type="verse">
+               <p>Τοῦτον τὸν τρόπον ἀντιρητορεύσαντα ταῖς τοῦ τυράννου παρηγορίαις,
 παραστάντες οἱ δορυφόροι πικρῶς ἔσυραν ἐπὶ τὰ βασανιστήρια
-τὸν Ἐλεάζαρον.</p></div> <div type="textpart" subtype="verse" n="2"><p> καὶ πρῶτον μέν περιέδυσαν τὸν γεραιὸν
-ἐκκεκοσμημένον τὴν περὶ τὴν εὐσέβειαν εὐσχημοσύνην.</p></div> <div type="textpart" subtype="verse" n="3"><p>ἔπειτα περιαγκωνίσαντες
-ἑκατέρωθεν, μάστιξιν κατῄκιζον,</p></div> <div type="textpart" subtype="verse" n="4"><p>Πείσθητι ταῖς τοῦ
-βασιλέως ἐντολαῖς, ἑτέρωθεν κήρυκος ἐπιβοῶντος.</p></div> <div type="textpart" subtype="verse" n="5"><p>ὁ δὲ μεγαλόφρων
+τὸν Ἐλεάζαρον.</p>
+            </div>
+            <div n="2" type="verse">
+               <p> καὶ πρῶτον μέν περιέδυσαν τὸν γεραιὸν
+ἐκκεκοσμημένον τὴν περὶ τὴν εὐσέβειαν εὐσχημοσύνην.</p>
+            </div>
+            <div n="3" type="verse">
+               <p>ἔπειτα περιαγκωνίσαντες
+ἑκατέρωθεν, μάστιξιν κατῄκιζον,</p>
+            </div>
+            <div n="4" type="verse">
+               <p>Πείσθητι ταῖς τοῦ
+βασιλέως ἐντολαῖς, ἑτέρωθεν κήρυκος ἐπιβοῶντος.</p>
+            </div>
+            <div n="5" type="verse">
+               <p>ὁ δὲ μεγαλόφρων
 καὶ εὐγενὴς ὡς ἀληθῶς Ἐλεάζαρος, ὥσπερ ἐν ὀνείρῳ βασανιζόμενος
-κατʼ οὐδένα τρόπον μετετρέπετο.</p></div> <div type="textpart" subtype="verse" n="6"><p>ἀλλὰ ὑψηλοὺς ἀνατείνας εἰς τὸν
+κατʼ οὐδένα τρόπον μετετρέπετο.</p>
+            </div>
+            <div n="6" type="verse">
+               <p>ἀλλὰ ὑψηλοὺς ἀνατείνας εἰς τὸν
 οὐρανὸν τοὺς ὀφθαλμούς, ἀπεξαίνετο ταῖς μάστιξιν τὰς σάρκας ὁ
-γέρων, καὶ κατερρεῖτο τῷ αἵματι, καὶ τὰ πλευρὰ κατετιτρώσκετο,</p></div> <div type="textpart" subtype="verse" n="7"><p> καὶ
+γέρων, καὶ κατερρεῖτο τῷ αἵματι, καὶ τὰ πλευρὰ κατετιτρώσκετο,</p>
+            </div>
+            <div n="7" type="verse">
+               <p> καὶ
 πίπτων εἰς τὸ ἔδαφος, ἀπὸ τοῦ μὴ φέρειν τὸ σῶμα τὰς ἀλγηδόνας,
-ὀρθὸν εἶχεν καὶ ἀκλινῆ τὸν λογισμόν.</p></div> <div type="textpart" subtype="verse" n="8"><p>λάξ γέ τοι τῶν πικρῶν τις
+ὀρθὸν εἶχεν καὶ ἀκλινῆ τὸν λογισμόν.</p>
+            </div>
+            <div n="8" type="verse">
+               <p>λάξ γέ τοι τῶν πικρῶν τις
 δορυφόρων εἰς τοὺς κενεῶνας ἐναλλόμενος ἔτυπτεν, ὅπως ἐξανίσταυτο
-πίπτων.</p></div> <div type="textpart" subtype="verse" n="9"><p>ὁ δὲ ὑπέμεινεν τοὺς πόνους καὶ περιεφρόνει τῆς ἀνάγκης
-καὶ διεκαρτέρει τοὺς αἰκισμούς,</p></div> <div type="textpart" subtype="verse" n="10"><p> καὶ καθάπερ γενναῖος ἀθλητὴς τυπτόμενος
-ἐνίκα τοὺς βασανίζοντας ὁ γέρων.</p></div> <div type="textpart" subtype="verse" n="11"><p>ἱδρῶν γέ τοι τὸ πρόσωπον,
+πίπτων.</p>
+            </div>
+            <div n="9" type="verse">
+               <p>ὁ δὲ ὑπέμεινεν τοὺς πόνους καὶ περιεφρόνει τῆς ἀνάγκης
+καὶ διεκαρτέρει τοὺς αἰκισμούς,</p>
+            </div>
+            <div n="10" type="verse">
+               <p> καὶ καθάπερ γενναῖος ἀθλητὴς τυπτόμενος
+ἐνίκα τοὺς βασανίζοντας ὁ γέρων.</p>
+            </div>
+            <div n="11" type="verse">
+               <p>ἱδρῶν γέ τοι τὸ πρόσωπον,
 καὶ ἐπασθμαίνων σφοδρῶς, καὶ ὑπʼαὐτῶν τῶν βασανιζόντων ἐθαυμάζετο
-ἐπὶ τῆ εὐτυχίᾳ.</p></div> <div type="textpart" subtype="verse" n="12"><p>ὅθεν τὰ μέν ἐλεῶντες τὰ τοῦ γήρως αὐτοῦ,</p></div> <div type="textpart" subtype="verse" n="13"><p>τὰ
+ἐπὶ τῆ εὐτυχίᾳ.</p>
+            </div>
+            <div n="12" type="verse">
+               <p>ὅθεν τὰ μέν ἐλεῶντες τὰ τοῦ γήρως αὐτοῦ,</p>
+            </div>
+            <div n="13" type="verse">
+               <p>τὰ
 δὲ ἐν συνπαθείᾳ τῆς συνηθείας ὄντες, τὰ δὲ ἐν θαυμαστῷ τῆς καρτερίας
-προσιόντες αὐτῷ τινες τῶν τοῦ βασιλέως ἔλεγον</p></div> <div type="textpart" subtype="verse" n="14"><p>Τί τοῖς κακοῖς
-τούτοις σεαυτὸν ἀλογίστως ἀπόλεις, Ἐλεάζαρ;</p></div> <div type="textpart" subtype="verse" n="15"><p> ἡμεῖς μέν τῶν ἡψημέναων
+προσιόντες αὐτῷ τινες τῶν τοῦ βασιλέως ἔλεγον</p>
+            </div>
+            <div n="14" type="verse">
+               <p>Τί τοῖς κακοῖς
+τούτοις σεαυτὸν ἀλογίστως ἀπόλεις, Ἐλεάζαρ;</p>
+            </div>
+            <div n="15" type="verse">
+               <p> ἡμεῖς μέν τῶν ἡψημέναων
 βρωμάτων παραθήσομεν· σὺ δὲ ὑποκρινόμενος τῶν ὑείων
-ἀπογεύσασθαι, σώθητι.</p></div> <div type="textpart" subtype="verse" n="16"><p>Καὶ ὁ Ἐλεάζαρος, ὥσπερ πικρότερον
-διὰ τῆς συμβουλίας αἰκισθείς, ἀνεβόησεν</p></div> <div type="textpart" subtype="verse" n="17"><p>Μὴ οὕτως κακῶς φρονήσαιμεν,
+ἀπογεύσασθαι, σώθητι.</p>
+            </div>
+            <div n="16" type="verse">
+               <p>Καὶ ὁ Ἐλεάζαρος, ὥσπερ πικρότερον
+διὰ τῆς συμβουλίας αἰκισθείς, ἀνεβόησεν</p>
+            </div>
+            <div n="17" type="verse">
+               <p>Μὴ οὕτως κακῶς φρονήσαιμεν,
 οἱ Ἀβραὰμ παῖδες, ὥστε μαλακοψυχήσαντας ἀπρεπές ἡμῖν
-δρᾶμα ὑποκρίνασθαι</p></div> <div type="textpart" subtype="verse" n="18"><p>καὶ γὰρ ἀλόγιστον, εἰ πρὸς ἀλήθειαν ζήσαντες
+δρᾶμα ὑποκρίνασθαι</p>
+            </div>
+            <div n="18" type="verse">
+               <p>καὶ γὰρ ἀλόγιστον, εἰ πρὸς ἀλήθειαν ζήσαντες
 <note type="footnote">37 αγνον] + δε U+05D0c.a εισδεξονται U+05D0* (προσδεξ, U+05D0c.a ) 38 περι] υπερ U+05D0 | <note type="marginal">U+05D0</note>
 ευσεβιας U+05D0 VII αντιρητορευσαντος U+05D0* (αντιρρ. U+05D0c.ᵃ) 2 εκκεκοσμη-
 μενον] ενκοσμουμενον U+05D0 τη περι την ευσεβιαν ευσχημοσυνη U+05D0 6 τον
@@ -557,42 +1004,96 @@ U+05D0* (της συνηθειας U+05D0c.a) θαυμαστω] θαυμασμω
 14 om τι (hab U+05D0¹?c) απολλεις αλογιστως U+05D0 15 μεν] μεντοι U+05D0 | συ]
 σε A αποκρινομενος U+05D0c.a (postea restit υποκρ.) απογευεσθαι U+05D0 | σωζοιο U+05D0
 18 ζησαντας U+05D0c.a</note>
-
-<pb n="740"/>
-<note type="marginal">A</note> τὸν μέχρι γήρως βίον, καὶ τὴν ἐπʼ αὐτῶν δόξαν νομίμως φυλάσσοντες, εἰ
-νῦν μεταβαλοίμεθα,</p></div> <div type="textpart" subtype="verse" n="19"><p>καὶ αὐτοὶ μὲν ἡμεῖς γενοίμεθα τοῖς νέοις ἀσεβείας
-τύπος, ἵνα παράδειγμα γενώμεθα τῆς μιεροφαγίας.</p></div> <div type="textpart" subtype="verse" n="20"><p> αἰσχρὸν γὰρ εἰ
+                  <pb n="740"/>
+                  <note type="marginal">A</note> τὸν μέχρι γήρως βίον, καὶ τὴν ἐπʼ αὐτῶν δόξαν νομίμως φυλάσσοντες, εἰ
+νῦν μεταβαλοίμεθα,</p>
+            </div>
+            <div n="19" type="verse">
+               <p>καὶ αὐτοὶ μὲν ἡμεῖς γενοίμεθα τοῖς νέοις ἀσεβείας
+τύπος, ἵνα παράδειγμα γενώμεθα τῆς μιεροφαγίας.</p>
+            </div>
+            <div n="20" type="verse">
+               <p> αἰσχρὸν γὰρ εἰ
 ἐπιβιώσομεν ὀλίγον χρόνον, καὶ τοῦτον καταγελώμενοι πρὸς ἁπάντων
-ἐπὶ δειλίᾳ·</p></div> <div type="textpart" subtype="verse" n="21"><p> καὶ ὑπὸ μὲν τοῦ τυράννου καταφρονηθῶμεν ὡς ἄνανδροι,
-τὸν δε θεῖον ἡμῶν νόμον μέχρι θανάτου μὴ προασπίσαιμεν.</p></div> <div type="textpart" subtype="verse" n="22"><p> πρὸς
-ταῦτα ὑμεῖς μέν, ὦ Ἀβραὰμ παῖδες, εὐγενῶς ὑπὲρ τῆς εὐσεβείας τελευτᾶτε.</p></div>
-<div type="textpart" subtype="verse" n="23"><p>οἱ δὲ τοῦ τυράννου δορυφόροι, τί μέλλετε;</p></div> <div type="textpart" subtype="verse" n="24"><p>Πρὸ
+ἐπὶ δειλίᾳ·</p>
+            </div>
+            <div n="21" type="verse">
+               <p> καὶ ὑπὸ μὲν τοῦ τυράννου καταφρονηθῶμεν ὡς ἄνανδροι,
+τὸν δε θεῖον ἡμῶν νόμον μέχρι θανάτου μὴ προασπίσαιμεν.</p>
+            </div>
+            <div n="22" type="verse">
+               <p> πρὸς
+ταῦτα ὑμεῖς μέν, ὦ Ἀβραὰμ παῖδες, εὐγενῶς ὑπὲρ τῆς εὐσεβείας τελευτᾶτε.</p>
+            </div>
+            <div n="23" type="verse">
+               <p>οἱ δὲ τοῦ τυράννου δορυφόροι, τί μέλλετε;</p>
+            </div>
+            <div n="24" type="verse">
+               <p>Πρὸ
 τὰς ἀνάγκας οὕτως μεγαλοφρονοῦντα αὐτὸν ἰδόντες, καὶ μηδέ πρὸς τὸν
-οἰκτειρμὸν αὐτῶν μεταβαλλόμενοι, ἐπὶ τὸ πῦρ αὐτὸν ἤγαγον.</p></div> <div type="textpart" subtype="verse" n="25"><p>ἔνθα
+οἰκτειρμὸν αὐτῶν μεταβαλλόμενοι, ἐπὶ τὸ πῦρ αὐτὸν ἤγαγον.</p>
+            </div>
+            <div n="25" type="verse">
+               <p>ἔνθα
 διὰ κακοτέχνων ὀργάννων καταφλέγοντες αὐτὸν ὑπερίπτοσαν καὶ
-δυσώδεις χυλοὺς εἰς τοὺς μυκτῆρας αὐτοῦ κατέχεον.</p></div> <div type="textpart" subtype="verse" n="26"><p>ὁ δὲ μέχρι
+δυσώδεις χυλοὺς εἰς τοὺς μυκτῆρας αὐτοῦ κατέχεον.</p>
+            </div>
+            <div n="26" type="verse">
+               <p>ὁ δὲ μέχρι
 ἀστέων ἤδη κατακεκαυμένος καὶ μέλλων λιποθυμεῖν, ἀνέτεινεν τὰ
-ὄμματα πρὸς τὸν θεόν, καὶ εἶπεν</p></div> <div type="textpart" subtype="verse" n="27"><p>Σὺ οἶσθα, θεέ, παρόν μοι σώζεσθαι,
-βασάνοις καυστικαῖς ἀποθνήσκω διὰ τὸν νόμον.</p></div> <div type="textpart" subtype="verse" n="28"><p> ἵλεως γενοῦ τῷ
-ἔθνει σου, ἀρκεσθεὶς τῇ ἡμετέρᾳ περὶ αὐτῶν δίκῃ.</p></div> <div type="textpart" subtype="verse" n="29"><p>καθάρσιον
+ὄμματα πρὸς τὸν θεόν, καὶ εἶπεν</p>
+            </div>
+            <div n="27" type="verse">
+               <p>Σὺ οἶσθα, θεέ, παρόν μοι σώζεσθαι,
+βασάνοις καυστικαῖς ἀποθνήσκω διὰ τὸν νόμον.</p>
+            </div>
+            <div n="28" type="verse">
+               <p> ἵλεως γενοῦ τῷ
+ἔθνει σου, ἀρκεσθεὶς τῇ ἡμετέρᾳ περὶ αὐτῶν δίκῃ.</p>
+            </div>
+            <div n="29" type="verse">
+               <p>καθάρσιον
 αὐτῶν ποίησον τὸ ἐμὸν αἷμα, καὶ ἀντίψυχον αὐτῶν λάβε τὴν ἐμὴν
-ψυχήν.</p></div> <div type="textpart" subtype="verse" n="30"><p> καὶ ταῦτα εἰπὼν ὁ ἱερὸς ἀνὴρ εὐγενῶς ταῖς βασάνοις ἐναπἐθανεν,
+ψυχήν.</p>
+            </div>
+            <div n="30" type="verse">
+               <p> καὶ ταῦτα εἰπὼν ὁ ἱερὸς ἀνὴρ εὐγενῶς ταῖς βασάνοις ἐναπἐθανεν,
 καὶ μέχρι τῶν τοῦ θανάτου βασάνων ἀντέστη τῷ λογισμῷ διὰ
-τὸν νόμον.</p></div> <div type="textpart" subtype="verse" n="31"><p>ὁμολογουμένως οὖν δεσπότης ἐστιν τῶν παθῶν ὁ εὐσεβὴς
-λογισμός.</p></div> <div type="textpart" subtype="verse" n="32"><p>εἰ γὰρ τὰ πάθη τοῦ λογισμοῦ κεκρατήκει, τούτοις ἂν
-ἀπεδόμην τὴν τῆς ἐπικρατίας μαρτυρίαν.</p></div> <div type="textpart" subtype="verse" n="33"><p>νυνὶ δὲ τοῦ λογισμοῦ τὰ
+τὸν νόμον.</p>
+            </div>
+            <div n="31" type="verse">
+               <p>ὁμολογουμένως οὖν δεσπότης ἐστιν τῶν παθῶν ὁ εὐσεβὴς
+λογισμός.</p>
+            </div>
+            <div n="32" type="verse">
+               <p>εἰ γὰρ τὰ πάθη τοῦ λογισμοῦ κεκρατήκει, τούτοις ἂν
+ἀπεδόμην τὴν τῆς ἐπικρατίας μαρτυρίαν.</p>
+            </div>
+            <div n="33" type="verse">
+               <p>νυνὶ δὲ τοῦ λογισμοῦ τὰ
 πάθη νικήσαντος, αὐτῷ προσηκόντως τὴν τῆς ἡγεμονίας προσνέμομεν
-ἐξουσίαν.</p></div> <div type="textpart" subtype="verse" n="34"><p>καὶ δίκαιόν ἐστιν ὁμολογεῖν ἡμᾶς τὸ κράτος εἶναι τοῦ
-λογισμοῦ, ὅπου γε καὶ τῶν ἔξωθεν ἀλγηδόνων ἐπικρατεῖ</p></div> <div type="textpart" subtype="verse" n="35s"><p>ἐπεὶ καὶ
+ἐξουσίαν.</p>
+            </div>
+            <div n="34" type="verse">
+               <p>καὶ δίκαιόν ἐστιν ὁμολογεῖν ἡμᾶς τὸ κράτος εἶναι τοῦ
+λογισμοῦ, ὅπου γε καὶ τῶν ἔξωθεν ἀλγηδόνων ἐπικρατεῖ</p>
+            </div>
+            <div n="35s" type="verse">
+               <p>ἐπεὶ καὶ
 γελοῖον. καὶ οὐ μόνον τῶν ἀλγηδόνων ἐπιδείκνυμι κεκρατηκέναι τὸν
-λογισμόν, ἀλλὰ καὶ τῶν ἡδονῶν κρατεῖν, μηδὲ αὐταῖς ὑπείκειν.</p></div>
-</div>
-
-<div type="textpart" subtype="chapter" n="7">
-<div type="textpart" subtype="verse" n="1"><p>Ὥσπερ γὰρ ἄριστος κυβερνήτης ὁ τοῦ πατρὸς ἡμῶν Ἐλεαζάρου
+λογισμόν, ἀλλὰ καὶ τῶν ἡδονῶν κρατεῖν, μηδὲ αὐταῖς ὑπείκειν.</p>
+            </div>
+         </div>
+         <div n="7" type="chapter">
+            <div n="1" type="verse">
+               <p>Ὥσπερ γὰρ ἄριστος κυβερνήτης ὁ τοῦ πατρὸς ἡμῶν Ἐλεαζάρου
 λογισμός, πηδαλιουχῶν τὴν τῆς εὐσεβείας ναῦν ἐν τῷ τῶν παθῶν
-πελάγει,</p></div> <div type="textpart" subtype="verse" n="2"><p>καὶ καταικιζόμενος ταῖς τοῦ τυράννου ἀπειλαῖς καὶ καταντλούμενος
-<note type="marginal">U+05D0</note><note type="footnote">18 αυτων] αυτω U+05D0 | φυλαξαντες U+05D0c.a | om ει 2⁰ U+05D0 19 γενοιμεθα] γενο-
+πελάγει,</p>
+            </div>
+            <div n="2" type="verse">
+               <p>καὶ καταικιζόμενος ταῖς τοῦ τυράννου ἀπειλαῖς καὶ καταντλούμενος
+<note type="marginal">U+05D0</note>
+                  <note type="footnote">18 αυτων] αυτω U+05D0 | φυλαξαντες U+05D0c.a | om ει 2⁰ U+05D0 19 γενοιμεθα] γενο-
 μεθα A γενωμεθα U+05D0 | μιαροφαγιας U+05D0 20 γαρ] δε U+05D0 | προς αποντων] υπο
 παντων U+05D0 | δειλια] διλια A* διλεια A1 21—22 προασπισαιμεν προς
 ταυτα· A 22 om προς ταυτα U+05D0 24 τον] ον sup ras U+05D0¹ | μεταβαλλομενον
@@ -602,35 +1103,75 @@ pr των U+05D0 | κατακεκαυμενος] κεκαυμενος U+05D0 | �
 κεκρατηκεναι] κρατεῖ U+05D0 | μηδε] και μηδεν U+05D0 VΙΙ 1 αριστος] pr ο
 U+05D0 | πηδαλιου εχων A | ευσεβιας U+05D0 2 om και 1⁰ U+05D0 | om ταις του U+05D0 |
 improb και 2⁰ U+05D0c.a</note>
-
-<pb n="741"/>
-ταῖς τῶν βασάνων τρικυμίαις,</p></div> <div type="textpart" subtype="verse" n="3"><p>κατʼ οὐδένα τρόπον μετέτρεψεν <note type="marginal">A</note>
+                  <pb n="741"/>
+ταῖς τῶν βασάνων τρικυμίαις,</p>
+            </div>
+            <div n="3" type="verse">
+               <p>κατʼ οὐδένα τρόπον μετέτρεψεν <note type="marginal">A</note>
 τοὺς τῆς εὐσεβείας οἴακας, ἕως οὗ ἔπλευσεν ἐπὶ τὸν τῆς θανάτου
-νίκης λιμένα.</p></div> <div type="textpart" subtype="verse" n="4"><p>οὐχ οὕτως πόλις πολλοῖς καὶ ποικίλοις μηχανήμασιν
+νίκης λιμένα.</p>
+            </div>
+            <div n="4" type="verse">
+               <p>οὐχ οὕτως πόλις πολλοῖς καὶ ποικίλοις μηχανήμασιν
 ἀντέσχεν ποτὲ πολιορκουμένη, ὡς ὁ πανάγιος ἐκεῖνος τὴν ἱερὰν ψυχὴν
 αἰκισμοῖς τε καὶ στρέβλαις πυρπολούμενος ἐκίνησεν τοὺς πολιορκοῦντας,
-διὰ τὸν ὑπερασπίζοντα τῆς εὐσεβείας λογισμόν.</p></div> <div type="textpart" subtype="verse" n="5"><p>ὥσπερ
+διὰ τὸν ὑπερασπίζοντα τῆς εὐσεβείας λογισμόν.</p>
+            </div>
+            <div n="5" type="verse">
+               <p>ὥσπερ
 γὰρ πρόκρημνον ἄκραν τὴν ἑαυτοῦ διάνοιαν ὁ πατὴρ Ἐλεάζαρος ἐκτεινας,
-περιέκλασεν τοὺς μαινομένους τῶν παθῶν κλύδωνας.</p></div> <div type="textpart" subtype="verse" n="6"><p>Ὦ
+περιέκλασεν τοὺς μαινομένους τῶν παθῶν κλύδωνας.</p>
+            </div>
+            <div n="6" type="verse">
+               <p>Ὦ
 ἄξιε τῆς ἱερωσύνης ἱερεῦ, οὐκ ἐμίανας τοὺς ἱεροὺς ὀδόντας, οὐδὲ τὴν
-θεοσέβειαν καὶ καθαρισμὸν χωρήσασαν γαστέρα ἐκοινώνησας μιεροφαγίᾳ.</p></div>
-<div type="textpart" subtype="verse" n="7"><p>ὦ σύμφωνε νόμου καὶ φιλόσοφε θείου βίου.</p></div> <div type="textpart" subtype="verse" n="8"><p>τοιούτους
+θεοσέβειαν καὶ καθαρισμὸν χωρήσασαν γαστέρα ἐκοινώνησας μιεροφαγίᾳ.</p>
+            </div>
+            <div n="7" type="verse">
+               <p>ὦ σύμφωνε νόμου καὶ φιλόσοφε θείου βίου.</p>
+            </div>
+            <div n="8" type="verse">
+               <p>τοιούτους
 δεῖ εἶναι τοὺς δημιουργοῦντας τὸν νόμον ἰδίῳ αἵματι, καὶ γενναίῳ
-ἱδρῶτι τοῖς μέχρι θανάτου πάθεσιν ὑπερασπίζοντας.</p></div> <div type="textpart" subtype="verse" n="9"><p>σύ, πάτερ,
+ἱδρῶτι τοῖς μέχρι θανάτου πάθεσιν ὑπερασπίζοντας.</p>
+            </div>
+            <div n="9" type="verse">
+               <p>σύ, πάτερ,
 τὴν εὐνομίαν ἡμῶν διὰ τῶν ὑπομονῶν εἰς δόξαν ἐκύρωσας, καὶ
 τὴν ἁγιαστίαν σεμνολογήσας οὐ κατέλυσας, καὶ διὰ τῶν ἔργων ἐπιστοποίησας
-τοὺς τῆς φιλοσοφίας λόγους.</p></div> <div type="textpart" subtype="verse" n="10"><p>ὦ βασάνων βιαιότερε
+τοὺς τῆς φιλοσοφίας λόγους.</p>
+            </div>
+            <div n="10" type="verse">
+               <p>ὦ βασάνων βιαιότερε
 γέρων, πυρὸς εὐτονώτερε πρεσβῦτα, καὶ παθῶν μέγιστε βασιλεῦ,
-Ἐλεαζάρ.</p></div> <div type="textpart" subtype="verse" n="11"><p>Ὥσπερ γὰρ ὁ πατὴρ Ἀαρὼν τῷ θυμιατηρίῳ
+Ἐλεαζάρ.</p>
+            </div>
+            <div n="11" type="verse">
+               <p>Ὥσπερ γὰρ ὁ πατὴρ Ἀαρὼν τῷ θυμιατηρίῳ
 καθωπλισμένος, διὰ τοῦ ἐθνοπλήθους ἐπιτρέχων τὸν ἐμπυριστὴν
-ἐνίκησεν ἄγγελον,</p></div> <div type="textpart" subtype="verse" n="12"><p>οὕτως ὁ Ἀαρωνίδης Ἐλεάζαρος διὰ τοῦ πυρὸς
-ὑπερτηκόμενος οὐ μετετράπη τὸν λογισμόν.</p></div> <div type="textpart" subtype="verse" n="13"><p>καίτοι τὸ θαυμασιώτατον,
+ἐνίκησεν ἄγγελον,</p>
+            </div>
+            <div n="12" type="verse">
+               <p>οὕτως ὁ Ἀαρωνίδης Ἐλεάζαρος διὰ τοῦ πυρὸς
+ὑπερτηκόμενος οὐ μετετράπη τὸν λογισμόν.</p>
+            </div>
+            <div n="13" type="verse">
+               <p>καίτοι τὸ θαυμασιώτατον,
 γέρων ὤν, λελυμένων ἤδη τῶν τοῦ σώματος πόνων καὶ
 περικεχαλασμένων δὲ τῶν σαρκῶν, κεκμηκότων δὲ καὶ τῶν νεύρων,
-ἀνενέασεν</p></div> <div type="textpart" subtype="verse" n="14"><p>τῷ πνεύματι τοῦ λογισμοῦ, καὶ τῷ Ἰσακείῳ λογισμῷ
-τὴν πολυκέφαλον στρέβλαν ἠκύρωσεν.</p></div> <div type="textpart" subtype="verse" n="15"><p>ὦ μακαρίου γήρως καὶ
+ἀνενέασεν</p>
+            </div>
+            <div n="14" type="verse">
+               <p>τῷ πνεύματι τοῦ λογισμοῦ, καὶ τῷ Ἰσακείῳ λογισμῷ
+τὴν πολυκέφαλον στρέβλαν ἠκύρωσεν.</p>
+            </div>
+            <div n="15" type="verse">
+               <p>ὦ μακαρίου γήρως καὶ
 σεμνῆς πολιᾶς καὶ βίου νομίμου, ὃν πιστὴ θανάτου σφραγὶς ἐτελεί
-ωσεν.</p></div> <div type="textpart" subtype="verse" n="16"><p> Εἰ δὲ τοίνυν γέρων τῶν μέχρι θανάτου βασάνων
+ωσεν.</p>
+            </div>
+            <div n="16" type="verse">
+               <p> Εἰ δὲ τοίνυν γέρων τῶν μέχρι θανάτου βασάνων
 περιεφρόνησεν δι᾿ εὐσέβειαν, ὁμολογουμένως ἡγεμών ἐστιν τῶν παθῶν
 ὁ εὐσεβὴς λογισμός. ¹⁷ἴσως δʼ ἂν εἴποιέν τινες, τῶν παθῶν
 <note type="footnote">3 μετετρεψεν] ετρεψε U+05D0 | ευσεβιας A | θανατου] αθανατου U+05D0 4 αν- <note type="marginal">U+05D0</note>
@@ -644,42 +1185,84 @@ prob U+05D0c.a) A*vid (ras A) 12 Αρωνιαδης Avid | Ελεαζαρ U+05D0
 νων] + μεν U+05D0 | πονων] τονων U+05D0 | om και 1⁰ U+05D0 | περιεχαλασμ. A | και 2⁰] αι
 sup ras Aᵃ? 14 του λογισμου] pr δια U+05D0 | Ισακιω U+05D0 | ηκυρωσεν] ενικησεν
 U+05D0 16 γερων] + ανηρ U+05D0 | περιεφρονει U+05D0 17 om δ U+05D0* (hab U+05D0c.a)</note>
-
-<pb n="742"/>
-<note type="marginal">A</note> οὐ πάντες περικρατοῦσιν· ὅτι οὺδὴ πάντες φρ όνιμον ἔχουσιν τὸν λογισμόν.</p></div>
-<div type="textpart" subtype="verse" n="18"><p>ἀλλ ὅσοι τῆς εὐσεβείας προνοοῦσιν ἐξ ὅλης καρδίας, οὗτοι
-μόνοι δύυανται κρατεῖν τῶν τῆς σαρκὸς παθῶν·</p></div> <div type="textpart" subtype="verse" n="19"><p>φἱ πιστεύοντες, ὅτι
+                  <pb n="742"/>
+                  <note type="marginal">A</note> οὐ πάντες περικρατοῦσιν· ὅτι οὺδὴ πάντες φρ όνιμον ἔχουσιν τὸν λογισμόν.</p>
+            </div>
+            <div n="18" type="verse">
+               <p>ἀλλ ὅσοι τῆς εὐσεβείας προνοοῦσιν ἐξ ὅλης καρδίας, οὗτοι
+μόνοι δύυανται κρατεῖν τῶν τῆς σαρκὸς παθῶν·</p>
+            </div>
+            <div n="19" type="verse">
+               <p>φἱ πιστεύοντες, ὅτι
 θεῷ οὐκ ἀποθνήσκουσιν, ὥσπερ γὰρ οἱ πατριάρχαι ἡμῶν Ἀβραάμ,
-Ἰσαάκ, Ἰακώβ, ἀλλὰ ζῶσιν τῷ θεῷ.</p></div> <div type="textpart" subtype="verse" n="20"><p>οὐδὲν οὖν ἐναντιοῦται τὸ φαί
-νεσθαί τινας παθοκρατεῖσθαι διὰ τὸν ἀσθενῆ λογισμόν.</p></div> <div type="textpart" subtype="verse" n="21"><p>ἐπεὶ τίς
+Ἰσαάκ, Ἰακώβ, ἀλλὰ ζῶσιν τῷ θεῷ.</p>
+            </div>
+            <div n="20" type="verse">
+               <p>οὐδὲν οὖν ἐναντιοῦται τὸ φαί
+νεσθαί τινας παθοκρατεῖσθαι διὰ τὸν ἀσθενῆ λογισμόν.</p>
+            </div>
+            <div n="21" type="verse">
+               <p>ἐπεὶ τίς
 πρὸς ὁλον τὸν τῆς φιλοσοφίας κανόνα εὐσεβῶς φιλοσοφῶν, καὶ
-πεπιστευκὼς θεῷ,</p></div> <div type="textpart" subtype="verse" n="22"><p>καὶ εἰδὼς ὅτι διὰ τὴν ἀρετὴν πάντα πόνον
+πεπιστευκὼς θεῷ,</p>
+            </div>
+            <div n="22" type="verse">
+               <p>καὶ εἰδὼς ὅτι διὰ τὴν ἀρετὴν πάντα πόνον
 ὑπομένειν μακάριόν ἐστιν, οὐκ ἂν περικρατήσειεν τῶν παθῶν διὰ
-τὴν εὐσέβειαν;</p></div> <div type="textpart" subtype="verse" n="23"><p>μόνος γὰρ ὁ σοφὸς καὶ σώφρων ἀνδρεῖός ἐστιν τῶν
-παθῶν κύριος.</p></div> <div type="textpart" subtype="verse" n="24"><p>διὰ τοῦτό γε τοι καὶ μειρακίσκοι τῷ τῆς εὐσεβείmς
-λογισμῷ φιλοσοφοῦντες χαλεπωτέραον βασανιστηρίων ἐπεκράτησαν.</p></div>
-</div>
-
-<div type="textpart" subtype="chapter" n="8">
- <div type="textpart" subtype="verse" n="1"><p>Ἐπειδὴ γὰρ κατὰ τὴν πράτην πεῖραν ἐνικήθη περιφανὴς ὁ
-τύραννος, μὴ δυνηθεὶς ἀναγκάσαι γέροντα μιεροφαγῆσαι,</p></div> <div type="textpart" subtype="verse" n="2"><p>τότε δὴ
+τὴν εὐσέβειαν;</p>
+            </div>
+            <div n="23" type="verse">
+               <p>μόνος γὰρ ὁ σοφὸς καὶ σώφρων ἀνδρεῖός ἐστιν τῶν
+παθῶν κύριος.</p>
+            </div>
+            <div n="24" type="verse">
+               <p>διὰ τοῦτό γε τοι καὶ μειρακίσκοι τῷ τῆς εὐσεβείmς
+λογισμῷ φιλοσοφοῦντες χαλεπωτέραον βασανιστηρίων ἐπεκράτησαν.</p>
+            </div>
+         </div>
+         <div n="8" type="chapter">
+            <div n="1" type="verse">
+               <p>Ἐπειδὴ γὰρ κατὰ τὴν πράτην πεῖραν ἐνικήθη περιφανὴς ὁ
+τύραννος, μὴ δυνηθεὶς ἀναγκάσαι γέροντα μιεροφαγῆσαι,</p>
+            </div>
+            <div n="2" type="verse">
+               <p>τότε δὴ
 σφόδρα περιπαθῶς ἐκέλευσεν ἄλλους ἐκ τῆς ἡλικίας τῶν Ἐβραίων
 ἀγαγεῖν· καὶ εἰ μὲν μιεροφαγήσαιεν, ἀπολύειν φαγόντας· εἰ δὲ
-ἀντιλέγοιεν, πικρότερον βασανίζειν.</p></div> <div type="textpart" subtype="verse" n="3"><p>ταῦτα διαταξαμένου τοῦ
+ἀντιλέγοιεν, πικρότερον βασανίζειν.</p>
+            </div>
+            <div n="3" type="verse">
+               <p>ταῦτα διαταξαμένου τοῦ
 τυράννου, παρῆσαν ἀγόμενοι μετὰ γεραις μητρὸς ἑπτὰ ἀδελφοί,
-καλοί τε καὶ αἰδήμονες καὶ γενναῖοι καὶ ἐν παντὶ χαρίεντες.</p></div> <div type="textpart" subtype="verse" n="4"><p>οὓς
+καλοί τε καὶ αἰδήμονες καὶ γενναῖοι καὶ ἐν παντὶ χαρίεντες.</p>
+            </div>
+            <div n="4" type="verse">
+               <p>οὓς
 ἰδὼν ὁ τύραννος καθάπερ ἐν χορῷ περιέχοντας μέσην τὴν μητέρα,
 ἴσθετο ἐπʼ αὐτοὶς, καὶ τῆς εὐπρεπείας ἐκπλαγεὶς καὶ τῆς εὐγενίας,
-προσεμειδίασεν αὐτοῖς, καὶ πλησίον καλέσας ἔφη</p></div> <div type="textpart" subtype="verse" n="5"><p>Ὠ υεανίαι, φιλοφρόναως
+προσεμειδίασεν αὐτοῖς, καὶ πλησίον καλέσας ἔφη</p>
+            </div>
+            <div n="5" type="verse">
+               <p>Ὠ υεανίαι, φιλοφρόναως
 ἐγὼ καθʼ ἑνὸς ἑκάστου ὑμῶν θαυμάζω τὸ κάλλος· καὶ τὸ
 πλῆθος τοσούτων ἀδελφῶν ὑπερτιμῶν, οὐ μόνον συμβουλεύω μὴ
-<note type="marginal">§ II</note> μανῆναι τὴν ²αὐτὴν τῷ προβασανισθέντι γέροντι μανίαν,</p></div> <div type="textpart" subtype="verse" n="6"><p>ἀλλὰ καὶ
+<note type="marginal">§ II</note> μανῆναι τὴν ²αὐτὴν τῷ προβασανισθέντι γέροντι μανίαν,</p>
+            </div>
+            <div n="6" type="verse">
+               <p>ἀλλὰ καὶ
 παρακαλῶ συνείξαντάς μοι τῆς ἐμῆς ἀπολαῦσαι φιλίας· δυναίμην γὰρ
 <note type="marginal">¶ II</note> ὥσπερ κολάζειν τοὺς ἀπειθοῦντάς μου τοῖς ἐπιτάγμσιν, οὕτως καὶ
-εὐεργετεῖν τοὺς εὐπειθοῦντάς μοι.</p></div> <div type="textpart" subtype="verse" n="7"><p>πιστεύσατε οὖν, καὶ ἀρχὰς ἐπὶ
+εὐεργετεῖν τοὺς εὐπειθοῦντάς μοι.</p>
+            </div>
+            <div n="7" type="verse">
+               <p>πιστεύσατε οὖν, καὶ ἀρχὰς ἐπὶ
 τῶν ἐμῶν πραγμάταων ἡγεμονικὰς λήμψεσθε, ἀρνησάμενοι τὸν πάτριον
-ὑμῶν τῆς πολιτίας θεσμόν·</p></div> <div type="textpart" subtype="verse" n="8"><p>καὶ μεταλαβόντες Ἑλληνικοῦ βίου
-<note type="marginal">U+05D0II</note><note type="footnote">18 ευσεβιας U+05D0 19 οι πιστ.] om οι U+05D0 | γαρ] ουδε U+05D0 | Ισαακ Ιακωβ]
+ὑμῶν τῆς πολιτίας θεσμόν·</p>
+            </div>
+            <div n="8" type="verse">
+               <p>καὶ μεταλαβόντες Ἑλληνικοῦ βίου
+<note type="marginal">U+05D0II</note>
+                  <note type="footnote">18 ευσεβιας U+05D0 19 οι πιστ.] om οι U+05D0 | γαρ] ουδε U+05D0 | Ισαακ Ιακωβ]
 και Ισ. και Ιακ. U+05D0 | τω θεω] om τω U+05D0 20 δια] pr η U+05D0* (improb
 U+05D0c.a) 21 om ευσεβως U+05D0 22 ευσεβειαν] θεοσεβειαν U+05D0 23 ο σοφος]
 om ο U+05D0 | om σωφρων U+05D0 | των παθ.] pr ο U+05D0 VΙΙΙ 1 περιφανως U+05D0 |μια
@@ -689,37 +1272,81 @@ om ο U+05D0 | om σωφρων U+05D0 | των παθ.] pr ο U+05D0 VΙΙΙ 1 �
 ευγνειας U+05D0 5 βασανεσθεντι U+05D0* (προβ.  U+05D0c.a II) 6 om και 1⁰ II ειξαντας
 II απολαυειν U+05D0 απολλυειν Π γαρ] δ αν U+05D0 ουτω U+05D0 7 αρνησαμενοι]
 αρνηθεντες U+05D0c.a υμων] ημων A 8 μεταλαβοντες] λαβοντες U+05D0</note>
-
-<pb n="743"/>
-καὶ μεταδιαιτηθέντες ἐντρυφήσατε ταῖς νεότησιν ὑμῶν.</p></div> <div type="textpart" subtype="verse" n="9"><p>ἐπεὶ ἐὰν <note type="marginal">A</note>
+                  <pb n="743"/>
+καὶ μεταδιαιτηθέντες ἐντρυφήσατε ταῖς νεότησιν ὑμῶν.</p>
+            </div>
+            <div n="9" type="verse">
+               <p>ἐπεὶ ἐὰν <note type="marginal">A</note>
 ἀργίλως με διάθησθε διὰ τῆς ἀπειθείας ὑμῶν, ἀναγκάσετέ με ἐπὶ
-δειναῖς κολάσεσιν ἕνα ἕκαστον ὑμῶν διὰ τῶν βασάνων ἀπολέσαι.</p></div>
-<div type="textpart" subtype="verse" n="10"><p>κατελεήσατε οὗν ἑαυτούς, οὓς καὶ ὁ πολέμιος ἔγωγε καὶ τῆς ἡλικίας
-καὶ τῆς εὐμορφίας οἰκτείρομαι.</p></div> <div type="textpart" subtype="verse" n="11"><p>οὐ διαλογιεῖσθε τοῦτο, ὅτι οὐδέν
-ὑμῖν ἀπειθήσασιν πλὴν τοῦ μετὰ στρεβλῶν ἀποθανεῖν ἀπόκειται;</p></div>
-<div type="textpart" subtype="verse" n="12"><p>ταῦτα δὲ λέγων, ἐκέλευσεν εἰς τὸ ἔμπροσθεν προτεθῆναι τὰ βα. <note type="marginal">§ II</note>
-σανιστήρια, ὅπως καὶ διὰ τοῦ φόβου πείσειεν αὐτοὺς μιεροφαγῆσαι.</p></div>
-<div type="textpart" subtype="verse" n="13"><p>ὡς δὲ τροχούς τε καὶ ἀρθρενβόλους στρεβλωτήριά τε καὶ τροχαντῆρας <note type="marginal">¶ II</note>
+δειναῖς κολάσεσιν ἕνα ἕκαστον ὑμῶν διὰ τῶν βασάνων ἀπολέσαι.</p>
+            </div>
+            <div n="10" type="verse">
+               <p>κατελεήσατε οὗν ἑαυτούς, οὓς καὶ ὁ πολέμιος ἔγωγε καὶ τῆς ἡλικίας
+καὶ τῆς εὐμορφίας οἰκτείρομαι.</p>
+            </div>
+            <div n="11" type="verse">
+               <p>οὐ διαλογιεῖσθε τοῦτο, ὅτι οὐδέν
+ὑμῖν ἀπειθήσασιν πλὴν τοῦ μετὰ στρεβλῶν ἀποθανεῖν ἀπόκειται;</p>
+            </div>
+            <div n="12" type="verse">
+               <p>ταῦτα δὲ λέγων, ἐκέλευσεν εἰς τὸ ἔμπροσθεν προτεθῆναι τὰ βα. <note type="marginal">§ II</note>
+σανιστήρια, ὅπως καὶ διὰ τοῦ φόβου πείσειεν αὐτοὺς μιεροφαγῆσαι.</p>
+            </div>
+            <div n="13" type="verse">
+               <p>ὡς δὲ τροχούς τε καὶ ἀρθρενβόλους στρεβλωτήριά τε καὶ τροχαντῆρας <note type="marginal">¶ II</note>
 καὶ καταπέλτας καὶ λέβητας, τήγανά τε καὶ δακτυλήθρας, καὶ
 χεῖρας σιδηρᾶς καὶ σφῆνας καὶ τὰ ζώπυρα τοῦ πυρὸς οἱ δορυφόροι
-προέθεσαν, ὑπολαβὼν δὲ ὁ τύραννος ἔφη</p></div> <div type="textpart" subtype="verse" n="14"><p>Μειράκια, φοβήθητε,
-καὶ ἣν σέβεσθε δίκην, ἵλεως ὑμῖν ἔσται δι᾿ ἀνάγκην παρανομήκασιν.</p></div>
-<div type="textpart" subtype="verse" n="15"><p>Οί δὲ ἀκούσαντες ἐπαγαωγὰ καὶ ἀρῶντες δεινα,
+προέθεσαν, ὑπολαβὼν δὲ ὁ τύραννος ἔφη</p>
+            </div>
+            <div n="14" type="verse">
+               <p>Μειράκια, φοβήθητε,
+καὶ ἣν σέβεσθε δίκην, ἵλεως ὑμῖν ἔσται δι᾿ ἀνάγκην παρανομήκασιν.</p>
+            </div>
+            <div n="15" type="verse">
+               <p>Οί δὲ ἀκούσαντες ἐπαγαωγὰ καὶ ἀρῶντες δεινα,
 οὐ μόνον οὐκ ἐφοβήθησαν, ἀλλὰ καὶ ἀντεφιλοσόφησαν §τῷ τυράννῳ, <note type="marginal">§ ΙΙ</note>
-καὶ διὰ τῆς εὐλογιστίας τὴν τυραννίδα αὐτοῦ κατέλυσαυ.</p></div> <div type="textpart" subtype="verse" n="16"><p>καίτοι <note type="marginal">¶ II</note>
+καὶ διὰ τῆς εὐλογιστίας τὴν τυραννίδα αὐτοῦ κατέλυσαυ.</p>
+            </div>
+            <div n="16" type="verse">
+               <p>καίτοι <note type="marginal">¶ II</note>
 λογισώμεθα· εἰ δειλόψυχοί τινες ἦσαν καὶ ἄνανδροι ἐν αὐτοῖς, ποίοις
-ἂν ἐχρήσαντο λόγοις ; οὐχὶ τούτοις;</p></div> <div type="textpart" subtype="verse" n="17"><p> Ὦ τάλανες ἡμεῖς, καὶ λίαν
+ἂν ἐχρήσαντο λόγοις ; οὐχὶ τούτοις;</p>
+            </div>
+            <div n="17" type="verse">
+               <p> Ὦ τάλανες ἡμεῖς, καὶ λίαν
 ἀνόητοι· βασιλέως ἡμάς παρακαλοῦντος καὶ ἐπὶ εὺεργεσίᾳ φωυοῦυτος,
-μὴ πεισθείημεν αὐτῷ;</p></div> <div type="textpart" subtype="verse" n="18"><p>τί βουλήμασιν κενοῖς ἑαυτοὺς εὐφραίνομεν,
-καὶ θανατηφόρον ἀπειθίαν τολμῶμεν;</p></div> <div type="textpart" subtype="verse" n="19"><p>οὐ φοβησόμεθα, ἄνδρες
+μὴ πεισθείημεν αὐτῷ;</p>
+            </div>
+            <div n="18" type="verse">
+               <p>τί βουλήμασιν κενοῖς ἑαυτοὺς εὐφραίνομεν,
+καὶ θανατηφόρον ἀπειθίαν τολμῶμεν;</p>
+            </div>
+            <div n="19" type="verse">
+               <p>οὐ φοβησόμεθα, ἄνδρες
 ἀδελφοί, τὰ βασανιστήρια, καὶ λογιούμεθα τὰς τῶν βασάνων ἀπειλάς,
-καὶ φευξόμεθα τὴν κενοδοξίαν ταύτην καὶ ὀλεθροφόρον ἀλαζονίαν</p></div>
-<div type="textpart" subtype="verse" n="20"><p>ἐλεήσωμεν τὰς ἑαυτῶν ἡλικίας, καὶ κατοκτειρησωμεν τὸ τῆς μητρὸς
-γῆρας·</p></div> <div type="textpart" subtype="verse" n="21"><p>καὶ ἐνθυμηθῶμεν, ὅτι ἀπειθοῦντες τεθνηξόμεθα.</p></div> <div type="textpart" subtype="verse" n="22"><p>συγγνώσεται
-δέ ἡμῖν καὶ ἡ θεία δίκη δι᾿ ἀνάγκην τὸν βασιλέα φοβηθεῖσιν.</p></div>
-<div type="textpart" subtype="verse" n="23"><p>τί ἐξάγομεν ἑαυτοὺς τοῦ ἡδίστου βίου, καὶ ἀποστεροῦμευ ἑαυτοὺς
-τοῦ γλυκέος κόσμου;</p></div> <div type="textpart" subtype="verse" n="24"><p>μὴ βιαζώμεθα τὴν ἀνάγκην, μηδέ κενοδοξῇσαωμεν
-ἐπὶ τῇ ἑαυτῶν στρέβλῃ.</p></div> <div type="textpart" subtype="verse" n="25"><p>οὐδὲ αὐτὸς ὁ νόμος ἑκουσίως ἡμᾶς
+καὶ φευξόμεθα τὴν κενοδοξίαν ταύτην καὶ ὀλεθροφόρον ἀλαζονίαν</p>
+            </div>
+            <div n="20" type="verse">
+               <p>ἐλεήσωμεν τὰς ἑαυτῶν ἡλικίας, καὶ κατοκτειρησωμεν τὸ τῆς μητρὸς
+γῆρας·</p>
+            </div>
+            <div n="21" type="verse">
+               <p>καὶ ἐνθυμηθῶμεν, ὅτι ἀπειθοῦντες τεθνηξόμεθα.</p>
+            </div>
+            <div n="22" type="verse">
+               <p>συγγνώσεται
+δέ ἡμῖν καὶ ἡ θεία δίκη δι᾿ ἀνάγκην τὸν βασιλέα φοβηθεῖσιν.</p>
+            </div>
+            <div n="23" type="verse">
+               <p>τί ἐξάγομεν ἑαυτοὺς τοῦ ἡδίστου βίου, καὶ ἀποστεροῦμευ ἑαυτοὺς
+τοῦ γλυκέος κόσμου;</p>
+            </div>
+            <div n="24" type="verse">
+               <p>μὴ βιαζώμεθα τὴν ἀνάγκην, μηδέ κενοδοξῇσαωμεν
+ἐπὶ τῇ ἑαυτῶν στρέβλῃ.</p>
+            </div>
+            <div n="25" type="verse">
+               <p>οὐδὲ αὐτὸς ὁ νόμος ἑκουσίως ἡμᾶς
 <note type="footnote">9 απιθιας B om υμων 10 U+05D0 | δειναις] διναι A? (seq ras 1 lit A* ) <note type="marginal">U+05D0II</note>
 10 πολεμος A 12 om το ΙΙ προτεθηναι] τιθεναι U+05D0 και] καν ΙΙ μιαρο-
 ηφαγησαι U+05D0c.b 13 τροχλους U+05D0* (τροχους U+05D0¹) αρθενβολους A αρθρεμβολας U+05D0*
@@ -730,37 +1357,79 @@ ras Aᵃ? om δε 20 U+05D0 14 σεβεσται A 16 εν αυτοις και α
 ῃ U+05D0* τι U+05D0c.a 18 om κενοις U+05D0* (hab U+05D0c.a) ευφρενουμεν U+05D0* (.νομεν U+05D0¹)
 19 φοβηθησομεθα τ 20 κατοικτιρωμεν U+05D0 22 συγνωσεται (sic) A
 συνγνωσεται U+05D0 25 ουδε] ουδ U+05D0 | νομος U+05D0] ναος A</note>
-
-<pb n="744"/>
-<note type="marginal">A</note> θανατοῖ φοβηθέντας τὰ βασανιστήρια.</p></div> <div type="textpart" subtype="verse" n="26"><p> π όθεν ἡμῖν ἡ τοσαύτη ἐντέτηκεν
+                  <pb n="744"/>
+                  <note type="marginal">A</note> θανατοῖ φοβηθέντας τὰ βασανιστήρια.</p>
+            </div>
+            <div n="26" type="verse">
+               <p> π όθεν ἡμῖν ἡ τοσαύτη ἐντέτηκεν
 φιλονεικία, καὶ ἡ θαυατηφόρος ἀρέσκει καρτερίn, παρὸν μετὰ
-ἀταραξίας ζῇν τῷ βασιλεῖ πεισθέντας;</p></div> <div type="textpart" subtype="verse" n="27"><p>ἀλλὰ τούτων οὐδὲυ
-οἱ νεανίαι βασανίζεσθαι μέλλοντες, οὐδὲ ἐνεθυμήθησαν.</p></div> <div type="textpart" subtype="verse" n="28"><p>ἦσαν γὰρ
-<note type="marginal">§ II</note> περίφρονες τῶν παθῶν, καὶ αὐτοκράτορες τῶν ἀλγηδόνων.</p></div> <div type="textpart" subtype="verse" n="29"><p>§ὥσητε
+ἀταραξίας ζῇν τῷ βασιλεῖ πεισθέντας;</p>
+            </div>
+            <div n="27" type="verse">
+               <p>ἀλλὰ τούτων οὐδὲυ
+οἱ νεανίαι βασανίζεσθαι μέλλοντες, οὐδὲ ἐνεθυμήθησαν.</p>
+            </div>
+            <div n="28" type="verse">
+               <p>ἦσαν γὰρ
+<note type="marginal">§ II</note> περίφρονες τῶν παθῶν, καὶ αὐτοκράτορες τῶν ἀλγηδόνων.</p>
+            </div>
+            <div n="29" type="verse">
+               <p>§ὥσητε
 <note type="marginal">§ ΙΙ</note> ἅμα τῷ παύσασθαι τὸν τύραννον συμβουλεύοντα αὐτοῖς μιεροφαγῆσαι,¶
-πάντες διὰ μιᾶς φωνῆς ὁμοῦ, ὥσπερ ἀπὸ τῆς αὐτῆς ψυχῆς, εἶπον</p></div>
-</div>
-
-<div type="textpart" subtype="chapter" n="9">
-<div type="textpart" subtype="verse" n="1"><p>Τί μέλλεις, ὦ τύραννε; ἕτοιμοι γάρ ἐσμεν ἀποθνήσκειν, ἢ παραβαίνειν
-τὰς πατρίους ἡμῶν ἐντολάς.</p></div> <div type="textpart" subtype="verse" n="2"><p>καὶ αἰσχυνόμεθα γὰρ τοὺς προγόνους
+πάντες διὰ μιᾶς φωνῆς ὁμοῦ, ὥσπερ ἀπὸ τῆς αὐτῆς ψυχῆς, εἶπον</p>
+            </div>
+         </div>
+         <div n="9" type="chapter">
+            <div n="1" type="verse">
+               <p>Τί μέλλεις, ὦ τύραννε; ἕτοιμοι γάρ ἐσμεν ἀποθνήσκειν, ἢ παραβαίνειν
+τὰς πατρίους ἡμῶν ἐντολάς.</p>
+            </div>
+            <div n="2" type="verse">
+               <p>καὶ αἰσχυνόμεθα γὰρ τοὺς προγόνους
 εἰκότως, εἰ μὴ τῇ τοῦ νόμου εὐπειθείᾳ συμβούλῳ καὶ γνώσει χρησαί
-μέθα.</p></div> <div type="textpart" subtype="verse" n="3"><p>σύμβουλε τύραννε παρανομίας, μὴ ἡμᾶς μισῶν ὑπέρ αὐτοὺς
-ἡμᾶς ἐλέα.</p></div> <div type="textpart" subtype="verse" n="4"><p>χαλεπώτερον γὰρ αὐτοῦ τοῦ θαυάτου νομίζομεν εἶναί σου
-τὸν ἐπὶ τῇ παρανόμῳ σωτηρίᾳ ἡμῶν ἔλεον.</p></div> <div type="textpart" subtype="verse" n="5"><p>ἐκφοβεῖς δὲ ἡμᾶς, τὸν
+μέθα.</p>
+            </div>
+            <div n="3" type="verse">
+               <p>σύμβουλε τύραννε παρανομίας, μὴ ἡμᾶς μισῶν ὑπέρ αὐτοὺς
+ἡμᾶς ἐλέα.</p>
+            </div>
+            <div n="4" type="verse">
+               <p>χαλεπώτερον γὰρ αὐτοῦ τοῦ θαυάτου νομίζομεν εἶναί σου
+τὸν ἐπὶ τῇ παρανόμῳ σωτηρίᾳ ἡμῶν ἔλεον.</p>
+            </div>
+            <div n="5" type="verse">
+               <p>ἐκφοβεῖς δὲ ἡμᾶς, τὸν
 διὰ τῶν βασάνων ἡμῖν θάνατον ἀπειλῶν, ἄὥσπερ οὐχὶ πρὸ βραχέως
-παρὰ Ἐλεαζάρου μαθών.</p></div> <div type="textpart" subtype="verse" n="6"><p>εἰ δ᾿ οἱ γέροντες τῶν Ἐβραίων διὰ τὴν
+παρὰ Ἐλεαζάρου μαθών.</p>
+            </div>
+            <div n="6" type="verse">
+               <p>εἰ δ᾿ οἱ γέροντες τῶν Ἐβραίων διὰ τὴν
 εὐσέβειαν καὶ βασανισμοὺς ὑπομείναντες ἀπέθανον, ἀποθάνοιμεν ἂν
 δικαιότερον ἡμεῖς οἱ νέοι, τὰς βασάνους τῶν σῶν ἀναγκῶν ὑπεριδόντες
-ἄς καὶ ὁ παιδευτὴς γέρων ἐνίκησεν.</p></div> <div type="textpart" subtype="verse" n="7"><p>πείραζε γὰρ οὖν, τύραννε·
+ἄς καὶ ὁ παιδευτὴς γέρων ἐνίκησεν.</p>
+            </div>
+            <div n="7" type="verse">
+               <p>πείραζε γὰρ οὖν, τύραννε·
 καὶ τὰς ἡμῶν ψυχὰς εἰ θανατώσεις διὰ τὴν εὐσέβειαν, μὴ νομίσῃς
-ἡμᾶς βλάπτειν βασανίζων.</p></div> <div type="textpart" subtype="verse" n="8"><p>ἡμεῖς μὲν γὰρ διὰ τῆσδε τῆς κακοπαθείας
-καὶ ὑπομονῆς τὰ τῆς ἀρετῆς ἆθλα οἴσομεν,</p></div> <div type="textpart" subtype="verse" n="9"><p>σὺ δὲ διὰ τὴν ἡμῶν
+ἡμᾶς βλάπτειν βασανίζων.</p>
+            </div>
+            <div n="8" type="verse">
+               <p>ἡμεῖς μὲν γὰρ διὰ τῆσδε τῆς κακοπαθείας
+καὶ ὑπομονῆς τὰ τῆς ἀρετῆς ἆθλα οἴσομεν,</p>
+            </div>
+            <div n="9" type="verse">
+               <p>σὺ δὲ διὰ τὴν ἡμῶν
 μιεροφονίαν αὐτάρκη καρτερήσεις ὑπὸ τῆς θείας δίκης αἰόνιον βασάνου
-διὰ πυρός.</p></div>
-<div type="textpart" subtype="verse" n="10"><p>Ταῦτα αὐτῶν εἰπόντων, οὐ μόνον ὡς κατὰ ἀπειθούντων ἐχαλέπαινεν
-ὁ τύραννος, ἀλλ᾿ ὁὡς καὶ κατὰ ἀχαρίστων ὠργίσθη.</p></div> <div type="textpart" subtype="verse" n="11"><p>ὅθεν
-<note type="marginal">U+05D0IΙ</note><note type="footnote">25 om φοβηθεντας τα βασανιστηρια U+05D0* (hab U+05D0c.ᵃ) 26 εντεθηκεν
+διὰ πυρός.</p>
+            </div>
+            <div n="10" type="verse">
+               <p>Ταῦτα αὐτῶν εἰπόντων, οὐ μόνον ὡς κατὰ ἀπειθούντων ἐχαλέπαινεν
+ὁ τύραννος, ἀλλ᾿ ὁὡς καὶ κατὰ ἀχαρίστων ὠργίσθη.</p>
+            </div>
+            <div n="11" type="verse">
+               <p>ὅθεν
+<note type="marginal">U+05D0IΙ</note>
+                  <note type="footnote">25 om φοβηθεντας τα βασανιστηρια U+05D0* (hab U+05D0c.ᵃ) 26 εντεθηκεν
 A εντετηκε U+05D0 | ζην] χρη A πισθεντες (-τας U+05D0c.ᵃ) 27 νεανιαις
 A 26 γαρ] + μελλοντες U+05D0 (improb U+05D01 c.ᵃ) περιφρονες των παθων]
 π. τα των παθ, U+05D0* (αν et ες superscr U+05D0c.a ; fors παντες pro τα voluit)
@@ -776,34 +1445,78 @@ U+05D0c.ᵃ) παιδευτης] ημων U+05D0 7 γαρ ουν] τοιγαρο
 ταυτα πασχομεν U+05D0 9 ημων] υμων A μιεφονιαν (sic) U+05D0 | καρτερησεις]
 καρτερηθ incep U+05D0* (-ρησεις U+05D01) improb) δια πυρος U+05D0c.ᵃ 10 αλλ ως και]
 αλλα λαι ως U+05D0 | καταχαριστων U+05D0* κατα αχ. U+05D0</note>
-
-<pb n="745"/>
+                  <pb n="745"/>
 τὸν πρεσβύτατον οὐτων κελευσθέντες παρήγαγον οἱ μμστισταί, καὶ <note type="marginal">A</note>
 διαρρήξαντες τὸν χιτῶνα διέδησαν τὰς χεῦρας αὐτοῦ καὶ τοὺς βραχί
-ὀνᾶς ἱμᾶσιν ἑκατέρωθεν.</p></div> <div type="textpart" subtype="verse" n="12"><p>ὼς δὲ τύπτοντες ταῖς μάστιξιν ἐκοπίασαν,
-μηδέν ἀνύοντες, ἀνέβαλον αὐτὸν ἐπὶ τὸν τροχόν.</p></div> <div type="textpart" subtype="verse" n="13"><p>περὶ ὅν κατατεινόμενος
-ὁ εὐγενὴς νεανίας ἔξαρθρος ἐγίνετο.</p></div> <div type="textpart" subtype="verse" n="14"><p>καὶ κατὰ πᾶν μέλος
-κλώμενος κατηγόρει λέγων</p></div> <div type="textpart" subtype="verse" n="15"><p>Γύραννε μιερώτατε καὶ τῆς οὐραυίου
+ὀνᾶς ἱμᾶσιν ἑκατέρωθεν.</p>
+            </div>
+            <div n="12" type="verse">
+               <p>ὼς δὲ τύπτοντες ταῖς μάστιξιν ἐκοπίασαν,
+μηδέν ἀνύοντες, ἀνέβαλον αὐτὸν ἐπὶ τὸν τροχόν.</p>
+            </div>
+            <div n="13" type="verse">
+               <p>περὶ ὅν κατατεινόμενος
+ὁ εὐγενὴς νεανίας ἔξαρθρος ἐγίνετο.</p>
+            </div>
+            <div n="14" type="verse">
+               <p>καὶ κατὰ πᾶν μέλος
+κλώμενος κατηγόρει λέγων</p>
+            </div>
+            <div n="15" type="verse">
+               <p>Γύραννε μιερώτατε καὶ τῆς οὐραυίου
 δίκης ἐχθρέ καὶ ὠμόφρον, οὐκ ἀνδροφονήσαντά με τοῦτον καταικίζεις
-τὸν τρόπον, οὐδὲ ἀσεβήσαντα, ἀλλὰ θείου υόμου προασπίζοντα.</p></div> <div type="textpart" subtype="verse" n="16"><p>καὶ
+τὸν τρόπον, οὐδὲ ἀσεβήσαντα, ἀλλὰ θείου υόμου προασπίζοντα.</p>
+            </div>
+            <div n="16" type="verse">
+               <p>καὶ
 τῶν δορυφόρων λεγόντων Ομολόγησον φαγεῖν, ὅπως ἀπαλλαγὴς
-τῶν βασάνων,</p></div> <div type="textpart" subtype="verse" n="17"><p>ὁ δὲ εἶπεν Οὐχ οὕτως ἰσχυρὸς ὑμῶν ἐστιν ὁ
+τῶν βασάνων,</p>
+            </div>
+            <div n="17" type="verse">
+               <p>ὁ δὲ εἶπεν Οὐχ οὕτως ἰσχυρὸς ὑμῶν ἐστιν ὁ
 τρόπος, ὠ σμιεροὶ διάκονοι, ὥστε μου τὸν λογισμὸν ἄξαι. τέμνετέ μου
-μέλη, καὶ πυροῦτε τὰς σάρκας, καὶ στρεβλοῦτε τὰ ἄρθρα ·</p></div> <div type="textpart" subtype="verse" n="18"><p>διο
+μέλη, καὶ πυροῦτε τὰς σάρκας, καὶ στρεβλοῦτε τὰ ἄρθρα ·</p>
+            </div>
+            <div n="18" type="verse">
+               <p>διο
 πασῶν γὰρ ὑμᾶς πείσω τῶν βασάνων ὅτι μόνοι οἱ παῖδες Ἐβραίων
-ὑπέρ ἀρετῆς εἰσιν ἀνίκητοι.</p></div> <div type="textpart" subtype="verse" n="19"><p>πρῦτα λέγοντες ἔτι πῦρ ἐπέστραωσαν,
-καὶ διερεθίζοντες τὸν τροχὸν προσεπικατέτεινον.</p></div> <div type="textpart" subtype="verse" n="20"><p>ἐμολύνετο δὲ
+ὑπέρ ἀρετῆς εἰσιν ἀνίκητοι.</p>
+            </div>
+            <div n="19" type="verse">
+               <p>πρῦτα λέγοντες ἔτι πῦρ ἐπέστραωσαν,
+καὶ διερεθίζοντες τὸν τροχὸν προσεπικατέτεινον.</p>
+            </div>
+            <div n="20" type="verse">
+               <p>ἐμολύνετο δὲ
 πάντοθεν αἵματι ὁ τροχός, καὶ ὁ σωρὸς τῆς ἀνθρακιᾶς τοῖς τῶν ἰχώραον
 ἐσβέννυτο σταλαγμοῖς, καὶ περὶ τοὺς ἄξονας τοῦ ἀργάνου περιέρεον
-αἱ σάρκες.</p></div> <div type="textpart" subtype="verse" n="21"><p>καὶ περιτετηγμένον ἤδη ἔχων τὸ τῶν ὀστέων πῆγμα ὁ
-μεγαλόφρων καὶ Ἀβραμιαῖος νεανίας οὐκ ἐστέναξεν.</p></div> <div type="textpart" subtype="verse" n="22"><p>ἀλλʼ ὥσπερ
+αἱ σάρκες.</p>
+            </div>
+            <div n="21" type="verse">
+               <p>καὶ περιτετηγμένον ἤδη ἔχων τὸ τῶν ὀστέων πῆγμα ὁ
+μεγαλόφρων καὶ Ἀβραμιαῖος νεανίας οὐκ ἐστέναξεν.</p>
+            </div>
+            <div n="22" type="verse">
+               <p>ἀλλʼ ὥσπερ
 ἐν πυρὶ μετασχηματιζόμενος εἰς ἀφθαρσίαν, ὑπέμεινεν εὐγενῶς τὰς
-στρέβλας</p></div> <div type="textpart" subtype="verse" n="23"><p>Μιμήσασθέ με, ἀδελφοί, λέγων· μὴ μου τὸν αἰῶνα λειποτακτήσητε,
+στρέβλας</p>
+            </div>
+            <div n="23" type="verse">
+               <p>Μιμήσασθέ με, ἀδελφοί, λέγων· μὴ μου τὸν αἰῶνα λειποτακτήσητε,
 μηδέ ἐξομόσησθέ μου τὴν τῆς εὐψυχίας ἀδελφότητα·
-ἱερὰν καὶ εὐγενῆ στρατείαν στρατεύσασθε περὶ τῆς εὐσεβείας,</p></div> <div type="textpart" subtype="verse" n="24"><p>δί ἧς
+ἱερὰν καὶ εὐγενῆ στρατείαν στρατεύσασθε περὶ τῆς εὐσεβείας,</p>
+            </div>
+            <div n="24" type="verse">
+               <p>δί ἧς
 ἵλεως ἡ δικαία καὶ πάτριος ἡμῶν πρόνοια τῷ ἔθνει γενηθεῖσα τιμαορησειεν
-τὸν ἀλάστορα τύραννον.</p></div> <div type="textpart" subtype="verse" n="25"><p>καὶ ταῦτα εἰπ ὼν ὁ ἱεροπρεπὴς
-νεανίας ἀπέρρηξεν τὴν ψυχὴν.</p></div> <div type="textpart" subtype="verse" n="26"><p>Θαυμασάντων δὲ πάντων
+τὸν ἀλάστορα τύραννον.</p>
+            </div>
+            <div n="25" type="verse">
+               <p>καὶ ταῦτα εἰπ ὼν ὁ ἱεροπρεπὴς
+νεανίας ἀπέρρηξεν τὴν ψυχὴν.</p>
+            </div>
+            <div n="26" type="verse">
+               <p>Θαυμασάντων δὲ πάντων
 τὴν καρτεροψυχίαν αὐτοῦ, ἦγον οἱ δορυφόροι τὸν καθʼ ἡλικίαν τοῦ
 <note type="footnote">11 κελευθ. A παρηγον U+05D0 | μαστισται] υπασπισται U+05D0 12 ανεβαλον] <note type="marginal">U+05D0</note>
 ανεβαλλον U+05D0* ανελαβον U+05D0c.a επι] περι U+05D0 13 εξαρθος Α 14 κατη-
@@ -818,40 +1531,80 @@ ras A αυξονας A 21 περιτετηκμενον A περιτετμημε�
 Αβρααμʼ υιος U+05D0* Αβρααμιαιος U+05D0c.a ᵃ 23 στρατιαν U+05D0 | εστρατευσασθε U+05D0 |
 ευσεβιας U+05D0 24 ημων] η U+05D0* (ημ. U+05D0c.ᵃ) 25 improb και U+05D0c.a ⁽ᵛⁱᵈ bostea
 fort epos απερηξεν U+05D0* απερρ. U+05D0c 26 δορυφοροιl incep δυρο U+05D0* (δορυφ</note>
-
-<pb n="746"/>
-<note type="marginal">A</note> προτέρου δεύτερον, καὶ σιδηρᾶς ἐναρμοσάμενοι χείρας ἀξέσιν τοῖς
-ὄυυξιν, τοῖς ὀργάνοις καὶ καταπέλτῃ προσέδησαν αὐτόν.</p></div> <div type="textpart" subtype="verse" n="27"><p>ὡς δʼ εἰ
+                  <pb n="746"/>
+                  <note type="marginal">A</note> προτέρου δεύτερον, καὶ σιδηρᾶς ἐναρμοσάμενοι χείρας ἀξέσιν τοῖς
+ὄυυξιν, τοῖς ὀργάνοις καὶ καταπέλτῃ προσέδησαν αὐτόν.</p>
+            </div>
+            <div n="27" type="verse">
+               <p>ὡς δʼ εἰ
 φαγεῖν βούλοιτο πρὶν βασανίζεσθαι πυνθανόμενοι, τὴν εὐγενῆ γναώμην
-ἤκουσαν,</p></div> <div type="textpart" subtype="verse" n="28"><p>ἀπ ὸ τῶν τενόντωυ ταῖς σιδηραῖς χερσὶν ἐπισπασάμενοι,
+ἤκουσαν,</p>
+            </div>
+            <div n="28" type="verse">
+               <p>ἀπ ὸ τῶν τενόντωυ ταῖς σιδηραῖς χερσὶν ἐπισπασάμενοι,
 <note type="marginal">§ ΙΙ</note> μενοι, μθχρ γε τῶν γενείων τὴν σάρκα πᾶσαυ §καὶ τὴν τῆς κεφαλῆς
 δορὰν οἱ παρδάλιοι θῆρες ἀπέσυραν· ὁ δὲ ταύτην βαρέως τὴν ἀλγηδόνα
-καρτερῶν, ἔλεγεν</p></div> <div type="textpart" subtype="verse" n="29"><p>Ὡς ἡδὺς πᾶς τρόπος θανάτου διὰ τὴν πάτριον
-<note type="marginal">¶ II</note> ἡμῶν εὺσέβειαν· ἔφη τε πρὸς τὸν τύραννον</p></div> <div type="textpart" subtype="verse" n="30"><p>ὐ δοκεῖς,¶ πάντων
+καρτερῶν, ἔλεγεν</p>
+            </div>
+            <div n="29" type="verse">
+               <p>Ὡς ἡδὺς πᾶς τρόπος θανάτου διὰ τὴν πάτριον
+<note type="marginal">¶ II</note> ἡμῶν εὺσέβειαν· ἔφη τε πρὸς τὸν τύραννον</p>
+            </div>
+            <div n="30" type="verse">
+               <p>ὐ δοκεῖς,¶ πάντων
 ὠμότατε τύραννε, πλεῖον ἐμοῦ σε υῦυ βασανίζεσθαι, ὁρῶν σου νικώμενον
 τὸν τῆς τυραννίδος ὑπερήφανον λογισμὸν ὑπὸ τῆς διὰ τὴν
-<note type="marginal">§ II</note> εὐσέβειαν ἡμῶν ὑπομονῆς ;</p></div> <div type="textpart" subtype="verse" n="31"><p>ἐγὼ μέν γὰρ ταῖς διὰ τὴν ἀρετὴν
-ἡδοναῖς τὸν πόνον ἐπικουφίζομαι</p></div> <div type="textpart" subtype="verse" n="32"><p>σὺ δὲ ἐν ταῖς τῆς ἀσεβείας
+<note type="marginal">§ II</note> εὐσέβειαν ἡμῶν ὑπομονῆς ;</p>
+            </div>
+            <div n="31" type="verse">
+               <p>ἐγὼ μέν γὰρ ταῖς διὰ τὴν ἀρετὴν
+ἡδοναῖς τὸν πόνον ἐπικουφίζομαι</p>
+            </div>
+            <div n="32" type="verse">
+               <p>σὺ δὲ ἐν ταῖς τῆς ἀσεβείας
 ἀπειλαῖς βασανίζῃ· οὐκ ἐκφεύξῃ δέ, μιερώτατε τύραννε, τὰς τῆς θείας
-<note type="marginal">¶ ΙΙ</note> ἀργῆς δίκας.¶</p></div>
-</div>
-
-<div type="textpart" subtype="chapter" n="10">
-<div type="textpart" subtype="verse" n="1"><p>Καὶ τούτου τὸν ἀοίδιμον θάνατον καρτερήσαντος,
+<note type="marginal">¶ ΙΙ</note> ἀργῆς δίκας.¶</p>
+            </div>
+         </div>
+         <div n="10" type="chapter">
+            <div n="1" type="verse">
+               <p>Καὶ τούτου τὸν ἀοίδιμον θάνατον καρτερήσαντος,
 ὁ τρίτος ἡγετο, παρακαλούμενος πολλὰ υπὸ πολλῶν ὅπως
-ἀπογευσμμμενος σώζοιτο.</p></div> <div type="textpart" subtype="verse" n="2"><p> δὲ ἀναβοήσας ἔφη Ἦ ἀγνοεῖτε ὅτι
+ἀπογευσμμμενος σώζοιτο.</p>
+            </div>
+            <div n="2" type="verse">
+               <p> δὲ ἀναβοήσας ἔφη Ἦ ἀγνοεῖτε ὅτι
 αὑτός με τοῖς ἀποθανοῦσιν ἔσπειρεν πατήρ, καὶ ἡ αὐτὴ μήτηρ ἐγέννησεν,
-καὶ ἐπὶ τοῖς αὐτοῖς ἀνετράφην δόγμασιν;</p></div> <div type="textpart" subtype="verse" n="3"><p>οὐκ ἐξόμνυμαι τὴν
-εὐγενῆ τῆς ἀδελφότητος συγγένειαν.</p></div> <div type="textpart" subtype="verse" n="4"><p>πρὸς ταῦτα εἵ τι ἔχετε κολαστήριον,
+καὶ ἐπὶ τοῖς αὐτοῖς ἀνετράφην δόγμασιν;</p>
+            </div>
+            <div n="3" type="verse">
+               <p>οὐκ ἐξόμνυμαι τὴν
+εὐγενῆ τῆς ἀδελφότητος συγγένειαν.</p>
+            </div>
+            <div n="4" type="verse">
+               <p>πρὸς ταῦτα εἵ τι ἔχετε κολαστήριον,
 προσαγάγετε τῷ σώματί μου· τῆς γὰρ ψυχῆς μου, οὐδʼ ἡυ
-θέλητε, ἅψεσθε.</p></div> <div type="textpart" subtype="verse" n="5"><p>οἱ δὲ πικρῶς ἐνέγκαντες τὴν παρρησίαν τοῦ
+θέλητε, ἅψεσθε.</p>
+            </div>
+            <div n="5" type="verse">
+               <p>οἱ δὲ πικρῶς ἐνέγκαντες τὴν παρρησίαν τοῦ
 ἀνδρός, ἀρθρεμβόλοις ὀργάνοις τὰς χεῖρας αὐτοῦ καὶ τοὺς πόδας
-ἐξήρθρουν, καὶ ἐξ ἁρμῶν ἀναμοχλεύοντες ἐξεμέλιζον·</p></div> <div type="textpart" subtype="verse" n="6"><p>καὶ τοὺς
+ἐξήρθρουν, καὶ ἐξ ἁρμῶν ἀναμοχλεύοντες ἐξεμέλιζον·</p>
+            </div>
+            <div n="6" type="verse">
+               <p>καὶ τοὺς
 δακτύλους καὶ τοὺς βραχίονας καὶ τὰ σκέλη καὶ τοὺς ἀγκῶνας
-περιέλκων.</p></div> <div type="textpart" subtype="verse" n="7"><p>καὶ κατὰ μηδένα τρόπον ἰσχύοντες αὐτὸν ἄγξαι, περισύραντες
+περιέλκων.</p>
+            </div>
+            <div n="7" type="verse">
+               <p>καὶ κατὰ μηδένα τρόπον ἰσχύοντες αὐτὸν ἄγξαι, περισύραντες
 τὸ δέρμα σὺν ἄκραις ταῖς τῶυ δακτύλων κορυφαῖς ἀπεσκύ
-θιζον, καὶ εὐθέως ἦγον ἐπὶ τὸν τροχόν.</p></div> <div type="textpart" subtype="verse" n="8"><p>περὶ ὃν ἐκ σφονδύλων
-<note type="marginal">U+05D0Π</note><note type="footnote">26 προτερου] πρεσβυτερου U+05D0 | σιδηρεας U+05D0* ( ρας U+05D0?) οξεσι U+05D0 | ονυξι U+05D0 |
+θιζον, καὶ εὐθέως ἦγον ἐπὶ τὸν τροχόν.</p>
+            </div>
+            <div n="8" type="verse">
+               <p>περὶ ὃν ἐκ σφονδύλων
+<note type="marginal">U+05D0Π</note>
+                  <note type="footnote">26 προτερου] πρεσβυτερου U+05D0 | σιδηρεας U+05D0* ( ρας U+05D0?) οξεσι U+05D0 | ονυξι U+05D0 |
 τοῖς οργανοις] πνργανω U+05D0 27 την ευγ.] pr και U+05D0 | ηκουσαν] ακουσαντες
 ειλκυσαν U+05D0* improb ειλκ. U+05D0c.a c.b 28 σιδηραιαις U+05D0* ( ραις U+05D0c.b) om γε
 U+05D0 | παρδαλιοι AΠ| παρδαλεοι -λαιοι U+05D0c.a απεσυρον U+05D0 | βαρ. την αλγ.] την
@@ -865,41 +1618,103 @@ pr o U+05D0 c.a 3 συγγενειαν] ευγενιαν U+05D0 4 om U+05D0 | α
 5 αθρεμβολοις A 6 om και 10 U+05D0* (hab U+05D0c.a) περιελκων] περιεκλων U+05D0
 7 ισχυσαντες U+05D0* (ισχυοντες U+05D0c.a) | περισυραντες το δερμα] περιλυσαντες τα
 οργανα U+05D0* (περισ. το δ. U+05D0c.ᵃ) 8 σφονδυλων] σπονδυλων U+05D0</note>
-
-<pb n="747"/>
+                  <pb n="747"/>
 ἐκμελιζόμενος ἑώρα τὰς ἑαυτοῦ σάρκας περιλακιζομένας καὶ κατά <note type="marginal">Α</note>
-σπλάγχναων σταγόνας αἵματος ἀπορρεούσας.</p></div> <div type="textpart" subtype="verse" n="9"><p>μέλλων δὲ ἀποθνήσκειν,
-ἔφη</p></div> <div type="textpart" subtype="verse" n="10"><p> Ἡμεῖς μέν, ὦ μιερώτατε τύραννε, διὰ παιδείαν καὶ ἀρετὴν
-θεοῦ ταῦτα πάσχομεν·</p></div> <div type="textpart" subtype="verse" n="11"><p>ηὺ ῆὲ διή τὴν ἀσέβειαν καὶ μιαιβονίαν
-ἀκαταλύτους καρτερήσεις βασάνους.</p></div> <div type="textpart" subtype="verse" n="12"><p>Καὶ τούτου θανόντος
-ἀδελφοπρεπῶς, τὸν τέταρτον ἐπεσπῶντο, λέγοντες</p></div> <div type="textpart" subtype="verse" n="13"><p>Μὴ μανῆς καὶ
+σπλάγχναων σταγόνας αἵματος ἀπορρεούσας.</p>
+            </div>
+            <div n="9" type="verse">
+               <p>μέλλων δὲ ἀποθνήσκειν,
+ἔφη</p>
+            </div>
+            <div n="10" type="verse">
+               <p> Ἡμεῖς μέν, ὦ μιερώτατε τύραννε, διὰ παιδείαν καὶ ἀρετὴν
+θεοῦ ταῦτα πάσχομεν·</p>
+            </div>
+            <div n="11" type="verse">
+               <p>ηὺ ῆὲ διή τὴν ἀσέβειαν καὶ μιαιβονίαν
+ἀκαταλύτους καρτερήσεις βασάνους.</p>
+            </div>
+            <div n="12" type="verse">
+               <p>Καὶ τούτου θανόντος
+ἀδελφοπρεπῶς, τὸν τέταρτον ἐπεσπῶντο, λέγοντες</p>
+            </div>
+            <div n="13" type="verse">
+               <p>Μὴ μανῆς καὶ
 σὺ τοῖς ἀδελφοῖς σου τὴν αὐτὴν μανίαν, ἀλλὰ πεισθεὶς τῷ βασιλεῖ
-σῶζε σεαυτόν.</p></div><div type="textpart" subtype="verse" n="14"><p>ὁ δὲ αὐτοῖς ἔφη Οὐχ οὕταως καυστικώτερον ἔχετε
-κατʼ ἐμοῦ τὸ πῦρ, ὥστε με δειλανδρῆσαι.</p></div> <div type="textpart" subtype="verse" n="15"><p>μὰ τὸν μακάριον τῶν
+σῶζε σεαυτόν.</p>
+            </div>
+            <div n="14" type="verse">
+               <p>ὁ δὲ αὐτοῖς ἔφη Οὐχ οὕταως καυστικώτερον ἔχετε
+κατʼ ἐμοῦ τὸ πῦρ, ὥστε με δειλανδρῆσαι.</p>
+            </div>
+            <div n="15" type="verse">
+               <p>μὰ τὸν μακάριον τῶν
 ἀδελφῶν μου θάυατον, καὶ τὸν αἰώνιον τοῦ τυράννου ὄλεθρον, καὶ τὸν
-ἀοίδιμον τῶν εὐσεβῶν βίον, οὐκ ἀρνήσομαι τὴν εὐγενῆ ἀδελφότητα.</p></div>
-<div type="textpart" subtype="verse" n="16"><p>ἐπινόει, τύραννε, βασάνους· ἵνα καὶ διή τούτων μάθῃς, ὅτι ἀδελφός
-εἰμι τῶν προβασανισθέντωυ.</p></div> <div type="textpart" subtype="verse" n="17"><p>ταῦτα ἀκούσας ὁ αἱμοβόρος καὶ φονώδης
+ἀοίδιμον τῶν εὐσεβῶν βίον, οὐκ ἀρνήσομαι τὴν εὐγενῆ ἀδελφότητα.</p>
+            </div>
+            <div n="16" type="verse">
+               <p>ἐπινόει, τύραννε, βασάνους· ἵνα καὶ διή τούτων μάθῃς, ὅτι ἀδελφός
+εἰμι τῶν προβασανισθέντωυ.</p>
+            </div>
+            <div n="17" type="verse">
+               <p>ταῦτα ἀκούσας ὁ αἱμοβόρος καὶ φονώδης
 καὶ πανμιερώτατος Ἀντίοχος, ἐκέλευσεν τὴν γλῶτταν αὐτοῦ
-ἐκτεμεῖν.</p></div> <div type="textpart" subtype="verse" n="18"><p>ὁ δὲ ἔφη Κδν ἀφέλῃς τὸ τῆς φωνῆς ὄργανον, καὶ σιωπώντων
-ἀκούει ὁ θεός.</p></div> <div type="textpart" subtype="verse" n="19"><p>ἰδηὺ κεχάλασται ἡ γλῶσσα· τέμνε. οὐ
-γὰρ παρά τοῦτο τὸν λογισμὸν ἡρῶν γλωσσοτομήσεις.</p></div> <div type="textpart" subtype="verse" n="20"><p>ἡδέως ὑπέρ
-τοῦ θεοῦ τ τοῦ σώματος μέλη ἀκραυτηριαζόμεθα.</p></div> <div type="textpart" subtype="verse" n="21"><p>ηὲ δὲ ταχέαος
+ἐκτεμεῖν.</p>
+            </div>
+            <div n="18" type="verse">
+               <p>ὁ δὲ ἔφη Κδν ἀφέλῃς τὸ τῆς φωνῆς ὄργανον, καὶ σιωπώντων
+ἀκούει ὁ θεός.</p>
+            </div>
+            <div n="19" type="verse">
+               <p>ἰδηὺ κεχάλασται ἡ γλῶσσα· τέμνε. οὐ
+γὰρ παρά τοῦτο τὸν λογισμὸν ἡρῶν γλωσσοτομήσεις.</p>
+            </div>
+            <div n="20" type="verse">
+               <p>ἡδέως ὑπέρ
+τοῦ θεοῦ τ τοῦ σώματος μέλη ἀκραυτηριαζόμεθα.</p>
+            </div>
+            <div n="21" type="verse">
+               <p>ηὲ δὲ ταχέαος
 μετελεύσεται ὁ θεός· τὴν γάρ τῶν θείων ὕμνων μελῳδὸν γλῶτταν
-ἐκτέμνεις.</p></div>
-</div>
-
-<div type="textpart" subtype="chapter" n="11">
-<div type="textpart" subtype="verse" n="1"><p> Ὡς δὲ καὶ οὐτος ταῖς βασάνοις καταικισθεὶς
-ἐναπέθανεν, ὁ πέμπτος παρεπήδησεν, λέγων</p></div> <div type="textpart" subtype="verse" n="2"><p>Οὐ μέλλω, τύραννε, πρὸς
-τὸν ὑπέρ τῆς ἀρετῆς βασανισμὸν παραιτεῖσθαι</p></div> <div type="textpart" subtype="verse" n="3"><p>αὐτὸς δʼ ἀπʼ ἐμαυτοῦ
+ἐκτέμνεις.</p>
+            </div>
+         </div>
+         <div n="11" type="chapter">
+            <div n="1" type="verse">
+               <p> Ὡς δὲ καὶ οὐτος ταῖς βασάνοις καταικισθεὶς
+ἐναπέθανεν, ὁ πέμπτος παρεπήδησεν, λέγων</p>
+            </div>
+            <div n="2" type="verse">
+               <p>Οὐ μέλλω, τύραννε, πρὸς
+τὸν ὑπέρ τῆς ἀρετῆς βασανισμὸν παραιτεῖσθαι</p>
+            </div>
+            <div n="3" type="verse">
+               <p>αὐτὸς δʼ ἀπʼ ἐμαυτοῦ
 παρῆλθου, ὅπως κἀμέ κατακτείνας, περὶ πλειόνων ἀδικημάτων ὄφιλήσῃς
-τῇ οὐρανίῳ δίκῃ τιμαωρίαν.</p></div> <div type="textpart" subtype="verse" n="4"><p>ὦ μισάρετε και μισάνθρωπε, τί
-δράσαντας ἡμᾶς τοῦτον πορθεῖς τὸν τρόπον;</p></div> <div type="textpart" subtype="verse" n="5"><p>ἤ κακόν σοι δοκεῖ, ὅτι
+τῇ οὐρανίῳ δίκῃ τιμαωρίαν.</p>
+            </div>
+            <div n="4" type="verse">
+               <p>ὦ μισάρετε και μισάνθρωπε, τί
+δράσαντας ἡμᾶς τοῦτον πορθεῖς τὸν τρόπον;</p>
+            </div>
+            <div n="5" type="verse">
+               <p>ἤ κακόν σοι δοκεῖ, ὅτι
 τὸν πάντων κτίστην εὐσεβοῦμεν, καὶ κατἀ τὸν ἔνάρετον αὐτοῦ ζῶμεν
-νόμον;</p></div> <div type="textpart" subtype="verse" n="6"><p>ἁλλὰ ταῦτα τιμῶν. οὐ βασάνων ἐστὶν ἄξια,</p></div> <div type="textpart" subtype="verse" n="7"><p>εἴπερ ᾐσθάνου
-ἀνθρώπους ποθῶν, καὶ ἐλπίδα εἰχες παρὰ θεῷ σωτηρίου·</p></div> <div type="textpart" subtype="verse" n="8"><p>νῖν ἰδὲ
-ἀλλότριος ὧν θεοῦ, πολεμεῖς τοὺς εὐσεβοῦντας εἰς τὸν θεόν.</p></div><div type="textpart" subtype="verse" n="9"><p>τοιαῦτα
+νόμον;</p>
+            </div>
+            <div n="6" type="verse">
+               <p>ἁλλὰ ταῦτα τιμῶν. οὐ βασάνων ἐστὶν ἄξια,</p>
+            </div>
+            <div n="7" type="verse">
+               <p>εἴπερ ᾐσθάνου
+ἀνθρώπους ποθῶν, καὶ ἐλπίδα εἰχες παρὰ θεῷ σωτηρίου·</p>
+            </div>
+            <div n="8" type="verse">
+               <p>νῖν ἰδὲ
+ἀλλότριος ὧν θεοῦ, πολεμεῖς τοὺς εὐσεβοῦντας εἰς τὸν θεόν.</p>
+            </div>
+            <div n="9" type="verse">
+               <p>τοιαῦτα
 <note type="footnote">8 απορεουσας U+05D0 10 μιαρωτατε U+05D0 11 ασεβιαν U+05D0 12 αδελφο- <note type="marginal">U+05D0</note>
 πρεπως] φοπρ sup ras Aᵃ 14 αυτοις] αυτω U+05D0 | κλαυστικωερον (sic) A
 (καυστικωτ. A¹⁽ᵛⁱᵈ) 15 αοιδιμον] ολεθρον αιδμή U+05D0* (imbrob ολεθρ. U+05D0¹ c.a)
@@ -912,35 +1727,86 @@ U+05D0 3 οφιλησεις (-σις A) τη ουρανιω δικη] τη επ�
 ιμωριαν sup ras A¹ 4 μισαρετε] μιαρωτατε U+05D0 τον τροπον πορθεις U+05D0
 5 om η κακον σοι δοκει U+05D0 6 εστιν] εισῖ| U+05D0 7 8 om ειπερ ησθα-
 νου...εις τον θgον U+05D0</note>
-
-<pb n="748"/>
-<note type="marginal">A</note> λέγοντα οἱ δορυφόροι δήσαντες αὐτὸν εἷλκον ἐπὶ τὸυ καταπέλτην·</p></div>
-<div type="textpart" subtype="verse" n="10"><p>ἐφʼ ὃν δήσαντες αὐτὸν ἐπὶ τά γόνατα, καὶ ταῦτα ποδάγραις σιδηραῖς
+                  <pb n="748"/>
+                  <note type="marginal">A</note> λέγοντα οἱ δορυφόροι δήσαντες αὐτὸν εἷλκον ἐπὶ τὸυ καταπέλτην·</p>
+            </div>
+            <div n="10" type="verse">
+               <p>ἐφʼ ὃν δήσαντες αὐτὸν ἐπὶ τά γόνατα, καὶ ταῦτα ποδάγραις σιδηραῖς
 ἐφαρμόσαντες τὴν ὀσφὺν αὐτοῦ ἐπὶ τὸν τροχιαῖον σφῆνα κατέκαμψαν·
-περὶ ὃν ὁλος ἐπὶ τὸν τροχὸν σκορπίου τρόπον ἀνακλώμενος ἐξεμελίζετο.</p></div>
-<div type="textpart" subtype="verse" n="11"><p>κατὰ τοῦτον τὸν τρόπον καὶ τὸ πνεῦμα στενοχααορούμενος καὶ
-τὸ σῶμα ἀγχόμενος</p></div> <div type="textpart" subtype="verse" n="12"><p>Καλάς, ἔλεγεν, ἄκων, ὁ τύραννος. χάριτας ἡμῖν
+περὶ ὃν ὁλος ἐπὶ τὸν τροχὸν σκορπίου τρόπον ἀνακλώμενος ἐξεμελίζετο.</p>
+            </div>
+            <div n="11" type="verse">
+               <p>κατὰ τοῦτον τὸν τρόπον καὶ τὸ πνεῦμα στενοχααορούμενος καὶ
+τὸ σῶμα ἀγχόμενος</p>
+            </div>
+            <div n="12" type="verse">
+               <p>Καλάς, ἔλεγεν, ἄκων, ὁ τύραννος. χάριτας ἡμῖν
 χαρίζῃ, καλάς, διὰ γενναιοτέρων πονων ἐπιδείξασθαι παρέχων τὴν εἰς
-τὸν νόμον ἡμῶν καρτερίαν.</p></div><div type="textpart" subtype="verse" n="13"><p>Τελευτήσαντος δέ καὶ τούτου,
+τὸν νόμον ἡμῶν καρτερίαν.</p>
+            </div>
+            <div n="13" type="verse">
+               <p>Τελευτήσαντος δέ καὶ τούτου,
 ὁ ἔκτος ἤγετο μειρακίσκος· ὃς πυνθανομένου τοῦ τυράννου εἰ βούλοιτο
-φαγὼν ἀπολύεσθαι, ὁ δὲ ἔφη</p></div> <div type="textpart" subtype="verse" n="14"><p>Ἐγὼ τῇ μὲν ἡλικίᾳ τῶν ἀδελφῶν μου
-εἰμὶ νεώτερος, τῇ δὲ διανοίᾳ ἡλικιώτης.</p></div> <div type="textpart" subtype="verse" n="15"><p>εἰς τὰ αὐτὰ γὰρ καὶ γενηθέντες
+φαγὼν ἀπολύεσθαι, ὁ δὲ ἔφη</p>
+            </div>
+            <div n="14" type="verse">
+               <p>Ἐγὼ τῇ μὲν ἡλικίᾳ τῶν ἀδελφῶν μου
+εἰμὶ νεώτερος, τῇ δὲ διανοίᾳ ἡλικιώτης.</p>
+            </div>
+            <div n="15" type="verse">
+               <p>εἰς τὰ αὐτὰ γὰρ καὶ γενηθέντες
 καὶ τραφέντες, ὑπὲρ τῶν αὐτῶν καὶ ἀποθνήσκειν ὀφίλομεν
-ὁμοίως.</p></div> <div type="textpart" subtype="verse" n="16"><p>ὥστε εἴ σοι δοκεῖ βασανίζειν μὴ μιεροφαγοῦντας, βασάνιζε.</p></div>
-<div type="textpart" subtype="verse" n="17"><p>ταῦτα αὐτὸν εἰπόντα παρῆγον ἐπὶ τὸν τροχόν.</p></div> <div type="textpart" subtype="verse" n="18"><p>ἐφʼ οὗ κατατεινόμενος
-εὐμελῶς καὶ ἐκσφονδυλιζόμενος ὑπεκαίετο.</p></div> <div type="textpart" subtype="verse" n="19"><p>καὶ ὀβελίσκους
+ὁμοίως.</p>
+            </div>
+            <div n="16" type="verse">
+               <p>ὥστε εἴ σοι δοκεῖ βασανίζειν μὴ μιεροφαγοῦντας, βασάνιζε.</p>
+            </div>
+            <div n="17" type="verse">
+               <p>ταῦτα αὐτὸν εἰπόντα παρῆγον ἐπὶ τὸν τροχόν.</p>
+            </div>
+            <div n="18" type="verse">
+               <p>ἐφʼ οὗ κατατεινόμενος
+εὐμελῶς καὶ ἐκσφονδυλιζόμενος ὑπεκαίετο.</p>
+            </div>
+            <div n="19" type="verse">
+               <p>καὶ ὀβελίσκους
 ὀξεῖς πυρώσαντες, τοῖς νώτοις προσέφερον· καὶ τὰ πλευρὰ διαπεί
-ραντες, ἀπʼ αὐτοῦ τὰ σπλάγχνα διέκαιον.</p></div> <div type="textpart" subtype="verse" n="20"><p>ὁ δὲ βασανιζόμενος Ὦ
+ραντες, ἀπʼ αὐτοῦ τὰ σπλάγχνα διέκαιον.</p>
+            </div>
+            <div n="20" type="verse">
+               <p>ὁ δὲ βασανιζόμενος Ὦ
 ἱεροπρεποῦς αἰῶνος, ἔλεγεν, ἐφʼ ὃν διὰ τὴν εὐσέβειαν εἰς γυμνασίαν
-πόνων ἀδελφοὶ τοσοῦτοι κληθέντες οὐκ ἐνικήθημεν.</p></div> <div type="textpart" subtype="verse" n="21"><p>ἀνίκητος γάρ
-ἐστιν, ὦ τύραννε, ἡ εὐσεβὴς ἐπιστήμη.</p></div> <div type="textpart" subtype="verse" n="22"><p>καλοκἀγαθίᾳ καθωπλισμένος
-τεθνήξομαι κἀγὼ μετὰ τῶν ἀδελφῶν μου,</p></div> <div type="textpart" subtype="verse" n="23"><p>μέγαν σοι προσβάλλων
+πόνων ἀδελφοὶ τοσοῦτοι κληθέντες οὐκ ἐνικήθημεν.</p>
+            </div>
+            <div n="21" type="verse">
+               <p>ἀνίκητος γάρ
+ἐστιν, ὦ τύραννε, ἡ εὐσεβὴς ἐπιστήμη.</p>
+            </div>
+            <div n="22" type="verse">
+               <p>καλοκἀγαθίᾳ καθωπλισμένος
+τεθνήξομαι κἀγὼ μετὰ τῶν ἀδελφῶν μου,</p>
+            </div>
+            <div n="23" type="verse">
+               <p>μέγαν σοι προσβάλλων
 καὶ αὐτὸς ἀλάστορα, καινουργὲ τῶν βασάνων, καὶ πολέμιε τῶν ἀληθῶς
-εὐσεβούντων.</p></div> <div type="textpart" subtype="verse" n="24"><p>ἓξ μειράκια κατελύσαμέν σου τὴν τυραννίδα.</p></div> <div type="textpart" subtype="verse" n="25"><p>τὸ
+εὐσεβούντων.</p>
+            </div>
+            <div n="24" type="verse">
+               <p>ἓξ μειράκια κατελύσαμέν σου τὴν τυραννίδα.</p>
+            </div>
+            <div n="25" type="verse">
+               <p>τὸ
 γὰρ μὴ δυνηθῆναί σε μεταπεῖσαι τὸν λογισμὸν ἡμῶν, μήτε βιάσασθαι
-πρὸς τὴν μιεροφαγίαν, οὐ κατάλυσίς ἐστίν σου;</p></div> <div type="textpart" subtype="verse" n="26"><p>τὸ πῦρ σου ψυχρὸν
-ἡμῖν, καὶ ἄπονοι οἱ καταπέλται, καὶ ἀδύνατος ἡ βία σου.</p></div> <div type="textpart" subtype="verse" n="27"><p>οὐ γὰρ
-<note type="marginal">U+05D0</note><note type="footnote">9 τοιαυτα] τοι αυτα A (praec Spat 3 litt : fors καιτοι voluit A*) + δε U+05D0 |
+πρὸς τὴν μιεροφαγίαν, οὐ κατάλυσίς ἐστίν σου;</p>
+            </div>
+            <div n="26" type="verse">
+               <p>τὸ πῦρ σου ψυχρὸν
+ἡμῖν, καὶ ἄπονοι οἱ καταπέλται, καὶ ἀδύνατος ἡ βία σου.</p>
+            </div>
+            <div n="27" type="verse">
+               <p>οὐ γὰρ
+<note type="marginal">U+05D0</note>
+                  <note type="footnote">9 τοιαυτα] τοι αυτα A (praec Spat 3 litt : fors καιτοι voluit A*) + δε U+05D0 |
 ειλκον] εικον U+05D0* (ειλκ. U+05D0c.a) 10 εφαρμοσαντες U+05D0 c.a| εφορμασαντες
 U+05D0*A επι τον τροχιαιον] περι τροχ. U+05D0 | επι τον τροχον] περι τον τραχηλον
 U+05D0 | σκοπιου U+05D0* (σκορπ. U+05D0c.a) εξεμελιζετο] με sup ras Aᵃ 11 και 2⁰] και
@@ -955,37 +1821,78 @@ U+05D0 | εκσπο δυλιζομενος U+05D0 | υπεκαιετο] + πυρ
 20 αιωνος] αγωνος U+05D0 | ελεγον U+05D0* (-γεν U+05D0¹) ευσεβιαν U+05D0 | ενικημεν U+05D0* (-κηθη.
 μεν U+05D0c.a) 21 om ω U+05D0 23 και αυτος προσβαλλα U+05D0 24 κατελυσα-
 μεν] καταλελυκαμεν U+05D0 26 αδυνατοις U+05D0* (-τος U+05D0¹) 27 improb οι U+05D0c.a</note>
-
-<pb n="749"/>
+                  <pb n="749"/>
 τυράννου ἀλλὰ θείου νόμου προεστήκασιν ἡμῶν οἱ δορυφόροι· διά <note type="marginal">A</note>
-τοῦτο ἀνίκητον ἔχομεν τὸν λογισμόν.</p></div>
-</div>
-
-<div type="textpart" subtype="chapter" n="12">
-<div type="textpart" subtype="verse" n="1"><p>Ὡς δὲ καὶ οὅτος
+τοῦτο ἀνίκητον ἔχομεν τὸν λογισμόν.</p>
+            </div>
+         </div>
+         <div n="12" type="chapter">
+            <div n="1" type="verse">
+               <p>Ὡς δὲ καὶ οὅτος
 μακαρίως ἐναπέθανεν ⁷καταβληθεὶς εἰς λέβητα, ὁ ἕβδομος παρεγίνετο, <note type="marginal">§ V</note>
-πάντων νεώτερος.</p></div> <div type="textpart" subtype="verse" n="2"><p>ὅν κατοικτειρήσας ὁ τύραννος, καίπερ δειυῶς ὑπὸ
-τῶν ἀδελφῶν αὐτοῦ κακισθείς,</p></div> <div type="textpart" subtype="verse" n="3"><p>ὁρῶν ἤδη τὰ δεσμά περικείμενον.
-πλησιέστερον αὐτὸν μετεπέμψατο, καὶ παρηγορεῖν ἐπειρᾶτο, λέγων</p></div>
-<div type="textpart" subtype="verse" n="4"><p>Γῆς μέν τῶν ἀδελφῶν σου ἀπονοίας τὸ τέλος ὁρᾶς· διὰ γὰρ ἀπείθειαν
+πάντων νεώτερος.</p>
+            </div>
+            <div n="2" type="verse">
+               <p>ὅν κατοικτειρήσας ὁ τύραννος, καίπερ δειυῶς ὑπὸ
+τῶν ἀδελφῶν αὐτοῦ κακισθείς,</p>
+            </div>
+            <div n="3" type="verse">
+               <p>ὁρῶν ἤδη τὰ δεσμά περικείμενον.
+πλησιέστερον αὐτὸν μετεπέμψατο, καὶ παρηγορεῖν ἐπειρᾶτο, λέγων</p>
+            </div>
+            <div n="4" type="verse">
+               <p>Γῆς μέν τῶν ἀδελφῶν σου ἀπονοίας τὸ τέλος ὁρᾶς· διὰ γὰρ ἀπείθειαν
 στρεβλωθέντες τεθνήκασιν. σύ, εἰ μέν μὴ πεισθείης, τάλας βασανισθεὶς
-καὶ αὐτὸς τεθνήξῃ πρὸ ὥρας.</p></div> <div type="textpart" subtype="verse" n="5"><p>πεισθεὶς δέ φίλος ἔσῃ, καὶ τῶν
-ἐπὶ τῆς βασιλείας ἀφηγήσῃ πραγμάτων.</p></div> <div type="textpart" subtype="verse" n="6"><p>καὶ ταῦτα παρακαλῶν, τὴν
+καὶ αὐτὸς τεθνήξῃ πρὸ ὥρας.</p>
+            </div>
+            <div n="5" type="verse">
+               <p>πεισθεὶς δέ φίλος ἔσῃ, καὶ τῶν
+ἐπὶ τῆς βασιλείας ἀφηγήσῃ πραγμάτων.</p>
+            </div>
+            <div n="6" type="verse">
+               <p>καὶ ταῦτα παρακαλῶν, τὴν
 μητέρα τοῦ παιδὸς μετεπέμψατο, ὅπως αὐτὴν ἐλεήσας τοσούτων υἱῶν
 στερηθεῖσαν παρορμήσειεν ἐπὶ τὴν σωτηρίαν εὐπειθῆ ποιῆσαι τὸν
-περιλειπόμενον.</p></div> <div type="textpart" subtype="verse" n="7"><p>ὁ δὲ τῆς μητρὸς τῇ Ἐραίδι φωνῇ προτρεψαμένης
-αὐτόν, ὡς ἐροῦμεν μετά μικρὸν ὕστερον</p></div> <div type="textpart" subtype="verse" n="8"><p>ʼἈπολύσατέ με, φησίν· εἴπω
-τῷ βασιλεῖ καὶ τοῖς σὺν αὐτῷ φίλοις πᾶσιν.</p></div> <div type="textpart" subtype="verse" n="9"><p>καὶ ἐπιχαρέντες μάλιστα
-ἐπὶ τῇ ἐπαγγελίᾳ τοῦ παιδός, ταχέως ἔλυσαν αὐτόν.</p></div> <div type="textpart" subtype="verse" n="10"><p>καὶ
-δραμὼν ἐπὶ πλησίον τῶν τηγάνων, ἔφη</p></div> <div type="textpart" subtype="verse" n="11"><p> Ἀνόσιε, φησίν, καὶ πάντων
+περιλειπόμενον.</p>
+            </div>
+            <div n="7" type="verse">
+               <p>ὁ δὲ τῆς μητρὸς τῇ Ἐραίδι φωνῇ προτρεψαμένης
+αὐτόν, ὡς ἐροῦμεν μετά μικρὸν ὕστερον</p>
+            </div>
+            <div n="8" type="verse">
+               <p>ʼἈπολύσατέ με, φησίν· εἴπω
+τῷ βασιλεῖ καὶ τοῖς σὺν αὐτῷ φίλοις πᾶσιν.</p>
+            </div>
+            <div n="9" type="verse">
+               <p>καὶ ἐπιχαρέντες μάλιστα
+ἐπὶ τῇ ἐπαγγελίᾳ τοῦ παιδός, ταχέως ἔλυσαν αὐτόν.</p>
+            </div>
+            <div n="10" type="verse">
+               <p>καὶ
+δραμὼν ἐπὶ πλησίον τῶν τηγάνων, ἔφη</p>
+            </div>
+            <div n="11" type="verse">
+               <p> Ἀνόσιε, φησίν, καὶ πάντων
 τῶν πονηρῶν ἀσεβέστατε τύραννε, οὐκ ᾐδέσθης παρά τοῦ θεοῦ λαβὼν
 τὰ ἀγαθα καὶ τὴν βασιλείαν, τοὺς θεράποντας αὐτοῦ κατακτεῖναι, καὶ
-τοὺς τῆς εὐσεβείας ἀσκητάς στρεβλῶσαι;</p></div> <div type="textpart" subtype="verse" n="12"><p>ἀυθʼ ὦν ταμιεύεταί σε ἡ
+τοὺς τῆς εὐσεβείας ἀσκητάς στρεβλῶσαι;</p>
+            </div>
+            <div n="12" type="verse">
+               <p>ἀυθʼ ὦν ταμιεύεταί σε ἡ
 θεία δίκη πυκνοτέρῳ καὶ αἰωνίῳ πυρὶ καὶ βασάνοις, αἰ εἰς ὅλον τὸν
-αἰῶνα οὐκ ἀνήσουσίν σε.</p></div> <div type="textpart" subtype="verse" n="13"><p>οὐκ ᾐδέσθης ἄνθρωπος ὧν, θηριωδέστατε,
+αἰῶνα οὐκ ἀνήσουσίν σε.</p>
+            </div>
+            <div n="13" type="verse">
+               <p>οὐκ ᾐδέσθης ἄνθρωπος ὧν, θηριωδέστατε,
 τοὺς ὁμοιοπαθεῖς καὶ ἐκ τῶν αὐτῶν γεγονότας στοιχείων γλωττοτομῆσαι,
-καὶ τοῦτον καταικίσας τὸν τρόπον βασανίσαι;</p></div> <div type="textpart" subtype="verse" n="14"><p>ἀλλʼ οἱ μέν
-εὐγενῶς ἀποθανόντες ἐπλήρωσαν τὴν εἰς τὸν θεὸν εὐσέβειαν·</p></div> <div type="textpart" subtype="verse" n="15"><p>σὺ
+καὶ τοῦτον καταικίσας τὸν τρόπον βασανίσαι;</p>
+            </div>
+            <div n="14" type="verse">
+               <p>ἀλλʼ οἱ μέν
+εὐγενῶς ἀποθανόντες ἐπλήρωσαν τὴν εἰς τὸν θεὸν εὐσέβειαν·</p>
+            </div>
+            <div n="15" type="verse">
+               <p>σὺ
 <note type="footnote">XII 1 ουτος] αυτος U+05D0 εναπεθανεν] απεθανεν U+05D0 | καταβληθεις] ..ταβληθεις <note type="marginal">U+05D0V</note>
 V παρεγενετο v 2 κατοικτιρας U+05D0V (-τειρ.) 3 περικειμενα V πλησιετερον
 U+05D0 πλησιοι. V* σιαιτ. Vᵃ 4 το τελος] om το U+05D0* (hab U+05D0c.ᵃ) απειθειαν]
@@ -1002,35 +1909,76 @@ U+05D0c.a) V 13 θηριωδεστα V* (.τατε Vᵃ) γλωττο| μησα�
 καταικισας (κατακεισ. A) τον τροπον] τουτον κατακαυσας τον τρ, U+05D0 | τουτον
 τον τρ. καταικ. (κατεκ. V*) V βασανιζει U+05D0* (.σαι U+05D0c.a) 14 ε υσε-
 βιαν U+05D0</note>
-
-<pb n="750"/>
-<note type="marginal">A</note> δὲ κακῶς οἰμώξεις, τοὺς τῆς ἀρετῆς ἀγαωνιστἀς ἀναιτίως ἀποκτεῖναι.</p></div>
-<div type="textpart" subtype="verse" n="16"><p>ὅθεν καὶ αὐτὸς ἀποθνήσκειν μέλλων, ἔφη</p></div> <div type="textpart" subtype="verse" n="17"><p>Οὐκ ἀπαυτομολῶ τῆς
-τῶν ἀδελφῶν μου μαρτυρίας.</p></div> <div type="textpart" subtype="verse" n="18"><p>ἐπικαλοῦμαι δὲ τὸν πατρῷον θεόν,
-ὅπως ἵλεως γένηται τῷ γένει μου.</p></div> <div type="textpart" subtype="verse" n="19"><p>σὲ δὲ καὶ ἐν τῷ νῦν βίῳ καὶ
-θανόντα τιμααορήσεται.</p></div> <div type="textpart" subtype="verse" n="20"><p> καὶ ταῦτα κατευξάμενος, ἑαυτὸν ἔριψεν κατὰ
-τῶν τηγάναον· καὶ οὕτως ἀπέδωκεν.</p></div>
-</div>
-
-<div type="textpart" subtype="chapter" n="13">
-<div type="textpart" subtype="verse" n="1"><p> Εἰ δὲ τοίνυν τῶν μέχρι θανάτου πόνων ὑπερεφρόνησαν οἱ ἑπτὰ
+                  <pb n="750"/>
+                  <note type="marginal">A</note> δὲ κακῶς οἰμώξεις, τοὺς τῆς ἀρετῆς ἀγαωνιστἀς ἀναιτίως ἀποκτεῖναι.</p>
+            </div>
+            <div n="16" type="verse">
+               <p>ὅθεν καὶ αὐτὸς ἀποθνήσκειν μέλλων, ἔφη</p>
+            </div>
+            <div n="17" type="verse">
+               <p>Οὐκ ἀπαυτομολῶ τῆς
+τῶν ἀδελφῶν μου μαρτυρίας.</p>
+            </div>
+            <div n="18" type="verse">
+               <p>ἐπικαλοῦμαι δὲ τὸν πατρῷον θεόν,
+ὅπως ἵλεως γένηται τῷ γένει μου.</p>
+            </div>
+            <div n="19" type="verse">
+               <p>σὲ δὲ καὶ ἐν τῷ νῦν βίῳ καὶ
+θανόντα τιμααορήσεται.</p>
+            </div>
+            <div n="20" type="verse">
+               <p> καὶ ταῦτα κατευξάμενος, ἑαυτὸν ἔριψεν κατὰ
+τῶν τηγάναον· καὶ οὕτως ἀπέδωκεν.</p>
+            </div>
+         </div>
+         <div n="13" type="chapter">
+            <div n="1" type="verse">
+               <p> Εἰ δὲ τοίνυν τῶν μέχρι θανάτου πόνων ὑπερεφρόνησαν οἱ ἑπτὰ
 ἀδελφοί, συνομολογεῖται πανταχόθεν, ὅτι αὐτοδέσποτός ἐστιν τῶν
-παθῶν ὁ εὐσεβὴς λογισμός.</p></div> <div type="textpart" subtype="verse" n="2"><p>ὥσπερ γὰρ οἱ τοῖς πάθεσιν δουλωθέντες
-ἐμιεροφάγησαν, ἐλέγομεν γὰρ αὐτοὺς τούτοις νενικῆσθαι</p></div>
-<div type="textpart" subtype="verse" n="3"><p>νυνὶ δὲ οὐχ οὕτως· ἀλλὰ τῷ ἐπαινουμένῳ λογισμῷ παρὰ θεῷ
-περιεγένοντο τῶν παθῶν.</p></div> <div type="textpart" subtype="verse" n="4"><p>καὶ οὐκ ἔστιν παριδεῖν τὴν ἡγεμονίαν
-τῆς διανοίας· ἐπεκράτησαν γὰρ καὶ πάθους καὶ πονων.</p></div> <div type="textpart" subtype="verse" n="5"><p>πῶς οὖν
+παθῶν ὁ εὐσεβὴς λογισμός.</p>
+            </div>
+            <div n="2" type="verse">
+               <p>ὥσπερ γὰρ οἱ τοῖς πάθεσιν δουλωθέντες
+ἐμιεροφάγησαν, ἐλέγομεν γὰρ αὐτοὺς τούτοις νενικῆσθαι</p>
+            </div>
+            <div n="3" type="verse">
+               <p>νυνὶ δὲ οὐχ οὕτως· ἀλλὰ τῷ ἐπαινουμένῳ λογισμῷ παρὰ θεῷ
+περιεγένοντο τῶν παθῶν.</p>
+            </div>
+            <div n="4" type="verse">
+               <p>καὶ οὐκ ἔστιν παριδεῖν τὴν ἡγεμονίαν
+τῆς διανοίας· ἐπεκράτησαν γὰρ καὶ πάθους καὶ πονων.</p>
+            </div>
+            <div n="5" type="verse">
+               <p>πῶς οὖν
 οὐκ ἔστιν τούτοις τὴν τῆς εὐλογιστίας παθοκρατίαν ὁμολογεῖν, οἱ
-τῶν μὲν διὰ πυρὸς ἀλγηδόνων οὐκ ἐπεστράφησαν;</p></div> <div type="textpart" subtype="verse" n="6"><p>καθάπερ γὰρ
+τῶν μὲν διὰ πυρὸς ἀλγηδόνων οὐκ ἐπεστράφησαν;</p>
+            </div>
+            <div n="6" type="verse">
+               <p>καθάπερ γὰρ
 προβλῆτες λιμένων πύργοι τὰς κυμάτων ἀπειλὰς ἀνακόπτοντες,
-γαληνὸν παρέχουσιν τοῖς εἰσπλέουσιν τὸν ὅρμον·</p></div> <div type="textpart" subtype="verse" n="7"><p>οὕτως ἡ ἑπτάπυργος
+γαληνὸν παρέχουσιν τοῖς εἰσπλέουσιν τὸν ὅρμον·</p>
+            </div>
+            <div n="7" type="verse">
+               <p>οὕτως ἡ ἑπτάπυργος
 τῶν νεανίσκων εὐλογιστία τὸν τῆς εὐσεβείας ὀχυρωσασα λιμένα
-τὴν τῶν παθῶν ἐνίκησεν ἀκολασίαν.</p></div> <div type="textpart" subtype="verse" n="8"><p> ἱερὸν γὰρ εὐσεβείας
-στήσαντες χορὸν παρεθάρσυνον ἀλλήλους, λέγοντες</p></div> <div type="textpart" subtype="verse" n="9"><p>Ἀδελφικῶς
+τὴν τῶν παθῶν ἐνίκησεν ἀκολασίαν.</p>
+            </div>
+            <div n="8" type="verse">
+               <p> ἱερὸν γὰρ εὐσεβείας
+στήσαντες χορὸν παρεθάρσυνον ἀλλήλους, λέγοντες</p>
+            </div>
+            <div n="9" type="verse">
+               <p>Ἀδελφικῶς
 ἀποθάνοιμεν ἀδελφοὶ περὶ τοῦ νόμου· μιμησώμεθα τοὺς τρεῖς τοὺς
-ἐπὶ τῆς Συρίας νεανίσκους, οἵ τῆς ἰσοπάλιδος καμίνου κατεφρόνησαν.</p></div>
-<div type="textpart" subtype="verse" n="10"><p>μὴ δειλανδρήσωμεν πρὸς τὴν τῆς εὐσεβίας ἀπόδειξιν.</p></div>
-<note type="marginal">U+05D0V</note><note type="footnote">15 κακως] pr κακος ων V αποκτεινας U+05D0 (-κτιν.) V 16 om εφη U+05D0c.a
+ἐπὶ τῆς Συρίας νεανίσκους, οἵ τῆς ἰσοπάλιδος καμίνου κατεφρόνησαν.</p>
+            </div>
+            <div n="10" type="verse">
+               <p>μὴ δειλανδρήσωμεν πρὸς τὴν τῆς εὐσεβίας ἀπόδειξιν.</p>
+            </div>
+            <note type="marginal">U+05D0V</note>
+            <note type="footnote">15 κακως] pr κακος ων V αποκτεινας U+05D0 (-κτιν.) V 16 om εφη U+05D0c.a
 (repos ut vid U+05D0c.b) V 17 απαυτομολω] αυτωμολω V * (.τομ. Vᵃ) αδελ
 φων μου] παιδων U+05D0* (αδ. μου U+05D0c.a αδελφων V μαρτυριας] αριστιας U+05D0V*
 (-τειας Vᵃ) 18 πατριον V γενει μου] εθνει (-νι U+05D0) ημων U+05D0V 20 ερ-
@@ -1049,31 +1997,65 @@ A* πανθοκρατιαν U+05D0* (παθ. U+05D0¹) παθοκρατειαν 
 μεν U+05D0V (-νομ. V* -νωμ. Vᵃ) Ασσυριας (ασ superscr) A¹?ᵃU+05D0?V | εισεπο-
 λιδος A ισοπολιτιδου U+05D0* ισοπολιτιδος U+05D0c.a V καμινου] καιομενης U+05D0* (καμειν.
 U+05D0c.a) 10 ευσεβειας V επιδιξιν U+05D0</note>
-
-<pb n="751"/>
-<div type="textpart" subtype="verse" n="11"><p>καὶ ὁ μέν Θάρει, ἀδελφέ, ἔλεγεν· ὁ δέ Εὐγενῶς καρτέρησον.</p></div> <div type="textpart" subtype="verse" n="12"><p>ὁ <note type="marginal">A</note>
+            <pb n="751"/>
+            <div n="11" type="verse">
+               <p>καὶ ὁ μέν Θάρει, ἀδελφέ, ἔλεγεν· ὁ δέ Εὐγενῶς καρτέρησον.</p>
+            </div>
+            <div n="12" type="verse">
+               <p>ὁ <note type="marginal">A</note>
 δὲ ἔλεγεν Μνήσθητε πόθεν ἐστέ, ἡ τίνος πατρὸς χειρὶ σφαγιασθῆναι
-διὰ τὴν εὐσέβειαν ὑπέρεινεν ὁ Ἰσαάκ.</p></div> <div type="textpart" subtype="verse" n="13"><p>εἶς δὲ ἕκαστος καὶ ἀλλήλους
+διὰ τὴν εὐσέβειαν ὑπέρεινεν ὁ Ἰσαάκ.</p>
+            </div>
+            <div n="13" type="verse">
+               <p>εἶς δὲ ἕκαστος καὶ ἀλλήλους
 ὁμοῦ πάντες ἐφορῶντες φαιδροὶ καὶ μάλα θαρραλέοι Ἑαυτούς,
 ἔλεγον, τῷ θεῷ ἀφιερώσομεν ἐξ ὅλης τῆς καρδίας τῷ δόντι τὰς
-ψυχάς, καὶ χρήσωμεν τῆ περὶ τὸν νόμον φυλακῇ τὰ σώματα.</p></div>
-<div type="textpart" subtype="verse" n="14"><p>μὴ φοβηθῶμεν τὸν δοκοῦντα ἀποκτενεῖν.</p></div> <div type="textpart" subtype="verse" n="15"><p>μέγας γὰρ ψυχῆς
+ψυχάς, καὶ χρήσωμεν τῆ περὶ τὸν νόμον φυλακῇ τὰ σώματα.</p>
+            </div>
+            <div n="14" type="verse">
+               <p>μὴ φοβηθῶμεν τὸν δοκοῦντα ἀποκτενεῖν.</p>
+            </div>
+            <div n="15" type="verse">
+               <p>μέγας γὰρ ψυχῆς
 ἀγὼν καὶ κίνδυνος ἐν αἰωνίῳ βασάνῳ κείμενος τοῖς παραβᾶσιν τὴν
-ἐντολὴν τοῦ θεοῦ.</p></div> <div type="textpart" subtype="verse" n="16"><p> καθοπλισώμεθα τοιγαροῦν τῇ τοῦ θείου λογισμοῦ
-παθοκρατίᾳ.</p></div> <div type="textpart" subtype="verse" n="17"><p>οὕτως παθόντας ἡμᾶς Ἀβραὰμ καὶ Ἰσαὰι
-καὶ Ἰακὼβ ὑποδέξονται, καὶ πάντες οἱ πατέρες ἐπαινέσουσιν.</p></div> <div type="textpart" subtype="verse" n="18"><p>καὶ
+ἐντολὴν τοῦ θεοῦ.</p>
+            </div>
+            <div n="16" type="verse">
+               <p> καθοπλισώμεθα τοιγαροῦν τῇ τοῦ θείου λογισμοῦ
+παθοκρατίᾳ.</p>
+            </div>
+            <div n="17" type="verse">
+               <p>οὕτως παθόντας ἡμᾶς Ἀβραὰμ καὶ Ἰσαὰι
+καὶ Ἰακὼβ ὑποδέξονται, καὶ πάντες οἱ πατέρες ἐπαινέσουσιν.</p>
+            </div>
+            <div n="18" type="verse">
+               <p>καὶ
 ἐνὶ ἑκάστῳ τῶν ἀποσπωμένων αὐτῶν ἀδελφῶν ἔλεγον οἱ περιλειπόμενοι
-Μὴ καταισ χύνῃς ἡμᾶς, ἀδελφέ, μηδέ ψεύσῃ τοὺς προαποθανόντας.</p></div>
-<div type="textpart" subtype="verse" n="19"><p>Οὐκ ἀγνοεῖτε δὲ τὰ τῆς ἀνθρωπότητος φίλτρα,
+Μὴ καταισ χύνῃς ἡμᾶς, ἀδελφέ, μηδέ ψεύσῃ τοὺς προαποθανόντας.</p>
+            </div>
+            <div n="19" type="verse">
+               <p>Οὐκ ἀγνοεῖτε δὲ τὰ τῆς ἀνθρωπότητος φίλτρα,
 ἄπερ ἡ θεία καὶ πάνσοφος πρόνοια διὰ τῶν πατέρων τοῖς γενναομένοις
-ἐμέρισεν, καὶ διὰ τῆς μητρῷος φυτεύσισα γαστρός·</p></div> <div type="textpart" subtype="verse" n="20"><p>ἐν ἦ
+ἐμέρισεν, καὶ διὰ τῆς μητρῷος φυτεύσισα γαστρός·</p>
+            </div>
+            <div n="20" type="verse">
+               <p>ἐν ἦ
 τὸν ἴσον ἀδελφοὶ κατοικήσαντες χρόνον, καὶ ἐν τῷ αὐτῷ χρόνῳ πλασθέντες,
 καὶ ἀπὸ τοῦ αὐτοῦ αἵματος αὐξηθέντες, καὶ διὰ τῆς αὐτῆς
-ψυχῆς τελεσφορηθέντες,</p></div> <div type="textpart" subtype="verse" n="21"><p>καὶ διὰ τῶν ἴσων ἀποτεχθεντες χρόναον,
+ψυχῆς τελεσφορηθέντες,</p>
+            </div>
+            <div n="21" type="verse">
+               <p>καὶ διὰ τῶν ἴσων ἀποτεχθεντες χρόναον,
 καὶ ἀπὸ τῶν αὐτῶν γαλακτοποτοῦντες πηγῶν, ἀφʼ οὗ συντρέφονται
-ἐναγκαλισμάτων φιλάδελφοι ψυχαί</p></div> <div type="textpart" subtype="verse" n="22"><p>καὶ αδξονται σφοδρότερον διὰ
+ἐναγκαλισμάτων φιλάδελφοι ψυχαί</p>
+            </div>
+            <div n="22" type="verse">
+               <p>καὶ αδξονται σφοδρότερον διὰ
 συντροφίας καὶ τῆς καθʼ ἡμέραν συνηθείας καὶ τῆς ἄλλης παιδίας
-καὶ τῆς ἡμετέρας ἐν νόμῳ θεοῦ ἀσκήσεως.</p></div> <div type="textpart" subtype="verse" n="23"><p>οὕτως δὴ τοίνυν καθεστηκυίας
+καὶ τῆς ἡμετέρας ἐν νόμῳ θεοῦ ἀσκήσεως.</p>
+            </div>
+            <div n="23" type="verse">
+               <p>οὕτως δὴ τοίνυν καθεστηκυίας
 τῆς φιλαδελφίας συμπαθούσης, οἱ ἑπτὰ ἀδελφοὶ συνπαθέστερον
 <note type="footnote">11 κατερησον V (καρτ. Vᵃ) 12 ελεγεν] pr καταμνησθεις U+05D0V om <note type="marginal">U+05D0V</note>
 μνησθητε U+05D0* (hab U+05D0c.a) πατρος] προ (pro κρς) A ευσεβιαν ο Ισαακ
@@ -1092,37 +2074,71 @@ U+05D0 | γαστρος] incep α U+05D0* (improb U+05D01) 20 χρονω] χρο
 (? μα τῶν U+05D0*)] εν αγκάλαις ματων V (αl)ματων) Vᵃ) φιλαδελφων U+05D0* (-φοι
 U+05D0c.a) 22 συντροφαν συνηθιας U+05D0 | παιδειας 23 συνπαθουσης της
 φιλαδελφίας U+05D0 συμπαθοῦς της φιλ. V</note>
-
-<pb n="752"/>
-<note type="marginal">A</note> ἔσχον τὴν πρὸς ἀλλήλους ὁμόνοιαν.</p></div> <div type="textpart" subtype="verse" n="24"><p>νόμῳ γὰρ τῷ αὐτῷ
+                  <pb n="752"/>
+                  <note type="marginal">A</note> ἔσχον τὴν πρὸς ἀλλήλους ὁμόνοιαν.</p>
+            </div>
+            <div n="24" type="verse">
+               <p>νόμῳ γὰρ τῷ αὐτῷ
 παιδευθέντες, καὶ τὰς αὐτὰς ἐξασκήσαντες ἀρετάς, καὶ τῷ δικαίῳ
-συντραφέντες βίῳ, μᾶλλον ἐφʼ αὐτοὺς ἤγαγον.</p></div> <div type="textpart" subtype="verse" n="25"><p>ἡ γὰρ ὁμοζηλία
-τῆς καλοκἀγαθίας ἐπέτεινεν αὐτῶν τὴν πρὸς ἀλλήλους ὁμόνοιαν</p></div>
-<div type="textpart" subtype="verse" n="26"><p>σὺν γὰρ τῇ εὐσεβείᾳ ποθεινοτέραν αὐτοῖς κατεσκεύαζεν τὴν φιλαδελφίαν.</p></div>
-<div type="textpart" subtype="verse" n="27"><p>ἀλλʼ ὁμοίως καίπερ τῆς φύσεως καὶ τῆς συνηθείας καὶ
+συντραφέντες βίῳ, μᾶλλον ἐφʼ αὐτοὺς ἤγαγον.</p>
+            </div>
+            <div n="25" type="verse">
+               <p>ἡ γὰρ ὁμοζηλία
+τῆς καλοκἀγαθίας ἐπέτεινεν αὐτῶν τὴν πρὸς ἀλλήλους ὁμόνοιαν</p>
+            </div>
+            <div n="26" type="verse">
+               <p>σὺν γὰρ τῇ εὐσεβείᾳ ποθεινοτέραν αὐτοῖς κατεσκεύαζεν τὴν φιλαδελφίαν.</p>
+            </div>
+            <div n="27" type="verse">
+               <p>ἀλλʼ ὁμοίως καίπερ τῆς φύσεως καὶ τῆς συνηθείας καὶ
 τῶν τῆς ἀρετῆς ἠθῶν τὰ τῆς ἀδελφότητος αὐτοῖς φίλτρα συναυξόντων,
 ἀνέσχοντο διὰ τὴν εὺσέβειαν τοὺς ἀδελφοὺς οἱ ὑπολελιμμένοι
-τοὺς καταικιζομένους ὁρῶντες μέχρι θαυάτου βασανιζομένους.</p></div>
-</div>
-
-<div type="textpart" subtype="chapter" n="14">
-<div type="textpart" subtype="verse" n="1"><p>προσέτι καὶ ἐπὶ τὸν αἰκισμὸν ἐποτρύνοντες, ὡς μὴ μόνον
+τοὺς καταικιζομένους ὁρῶντες μέχρι θαυάτου βασανιζομένους.</p>
+            </div>
+         </div>
+         <div n="14" type="chapter">
+            <div n="1" type="verse">
+               <p>προσέτι καὶ ἐπὶ τὸν αἰκισμὸν ἐποτρύνοντες, ὡς μὴ μόνον
 τῶν ἀλγηδόνων περιφρονῆσαι αὐτούς, ἀλλὰ καὶ τῆς τῶν ἀδελφῶν
-φιλαδελφίας παθῶν κρατῆσαι.</p></div> <div type="textpart" subtype="verse" n="2"><p>Ὦ βασιλέως λογισμοὶ βασιλικώτεροι
-καὶ ἐλευθέρων ἐλευθερώτεροι·</p></div> <div type="textpart" subtype="verse" n="3"><p>ὦ ἱερᾶς καὶ ἐναρμόστου
-περὶ τῆς εὐσεβείας τῶν ἑπτὰ ἀδελφῶν συμφωνίας.</p></div> <div type="textpart" subtype="verse" n="4"><p>οὐδεὶς ἐκ τῶν
-ἑπτὰ μειρακίων ἐδειλίασεν, οὐδὲ πρὸς τὸν θάνατον ὡκνησεν·</p></div> <div type="textpart" subtype="verse" n="5"><p>ἀλλὰ
+φιλαδελφίας παθῶν κρατῆσαι.</p>
+            </div>
+            <div n="2" type="verse">
+               <p>Ὦ βασιλέως λογισμοὶ βασιλικώτεροι
+καὶ ἐλευθέρων ἐλευθερώτεροι·</p>
+            </div>
+            <div n="3" type="verse">
+               <p>ὦ ἱερᾶς καὶ ἐναρμόστου
+περὶ τῆς εὐσεβείας τῶν ἑπτὰ ἀδελφῶν συμφωνίας.</p>
+            </div>
+            <div n="4" type="verse">
+               <p>οὐδεὶς ἐκ τῶν
+ἑπτὰ μειρακίων ἐδειλίασεν, οὐδὲ πρὸς τὸν θάνατον ὡκνησεν·</p>
+            </div>
+            <div n="5" type="verse">
+               <p>ἀλλὰ
 πάντες, ὥσπερ ἐπʼ ἀθανασίας ὁδὸν τρέχοντες, ἐπὶ τὸν διὰ τῶν βασάνων
-θάνατον ἔκ πευδον.</p></div> <div type="textpart" subtype="verse" n="6"><p>καθάπερ γὰρ χείρες καὶ πόδες συμφώνως
+θάνατον ἔκ πευδον.</p>
+            </div>
+            <div n="6" type="verse">
+               <p>καθάπερ γὰρ χείρες καὶ πόδες συμφώνως
 τοῖς τῆς ψυχῆς ἀφηγήμασιν κινοῦνται· οὕτως οἱ ἱεροὶ μείρακες
 ἐκεῖνοι ὡς ὑπὸ ψυχῆς ἀθανάτου τῆς εὐσεβείας πρὸς τὸν ὑπέρ αὐτῆς
-συνεφώνησαν θάνατον.</p></div><div type="textpart" subtype="verse" n="7"><p> πανάγιε συμφώνων ἀδελφῶν ἑβδομάς·
-καθάπερ γὰρ ἑπτὰ τῆς κοσμοποιίας ἡμέραι περὶ τὴν εὐσέβειαν,</p></div>
-<div type="textpart" subtype="verse" n="8"><p>οὕτως περὶ τὴν ἑβδομάδα χορεύοντες οἱ μείρακες ἐκύκλουν, τὸν τῶν
-βασάνων φόβον καταλύοντες.</p></div> <div type="textpart" subtype="verse" n="9"><p>νῦν ἡμεῖς ἀκούοντες τὴν θλίγιν τῶν
+συνεφώνησαν θάνατον.</p>
+            </div>
+            <div n="7" type="verse">
+               <p> πανάγιε συμφώνων ἀδελφῶν ἑβδομάς·
+καθάπερ γὰρ ἑπτὰ τῆς κοσμοποιίας ἡμέραι περὶ τὴν εὐσέβειαν,</p>
+            </div>
+            <div n="8" type="verse">
+               <p>οὕτως περὶ τὴν ἑβδομάδα χορεύοντες οἱ μείρακες ἐκύκλουν, τὸν τῶν
+βασάνων φόβον καταλύοντες.</p>
+            </div>
+            <div n="9" type="verse">
+               <p>νῦν ἡμεῖς ἀκούοντες τὴν θλίγιν τῶν
 νεανιῶν ἐκείνων, φρίττομεν· οἱ δὲ οὐ μόνον ὁρῶντες, ἀλλʼ οὐδὲ aόνον
 ἀκούοντες τὸν παραχρῆμα ἀπειλῆς λόγον, ἀλλὰ καὶ πάσχοντες,
-<note type="marginal">U+05D0V</note><note type="footnote">23 την προς αλληλους ορονοιαν] προς αλληλους U+05D0V 24 συστρα-
+<note type="marginal">U+05D0V</note>
+                  <note type="footnote">23 την προς αλληλους ορονοιαν] προς αλληλους U+05D0V 24 συστρα-
 φεντες U+05D0* (συντραφ. U+05D0c.a) εφ (επ A) αυτους ηγαγον] εαυτους ηγαπων U+05D0V
 25 ουτων] ω sup ras A¹ αυτω U+05D0 | αλληλοις A¹ ομονοιαν] pr ευνοιαν και U+05D0
 ευνοιαν V 26 συν γαρ τη ευσεβεια] sup ras pl lilt A¹ + ομολογισμος V
@@ -1138,35 +2154,63 @@ U+05D0 | μεχρι] pr και V X IV 1 επι τον αικ.] επ εκ. V* (ε
 νοι ως] νοι ως sup ras A¹ ως] ωσπερ V om υπο V αθανατου] pr της
 V ευσεβειας (βιας U+05D0)] + κινουμεεαοι V 7 εβδομαδας U+05D0* ( μας U+05D0c.a ) ευ-
 σεβιαν 8 ουτω U+05D0 (.τως U+05D0c.a) τον των] των των V * (τον των Vᵃ)</note>
-
-<pb n="753"/>
-ἐκαρτέρουν καὶ τοῦτο ταῖς διὰ πυρὸς ὀδύναις.</p></div><div type="textpart" subtype="verse" n="10"><p>Κὧυ τί γένοιτο ἐπαλγέστερον; <note type="marginal">A</note>
+                  <pb n="753"/>
+ἐκαρτέρουν καὶ τοῦτο ταῖς διὰ πυρὸς ὀδύναις.</p>
+            </div>
+            <div n="10" type="verse">
+               <p>Κὧυ τί γένοιτο ἐπαλγέστερον; <note type="marginal">A</note>
 ὀξεῖα γὰρ καὶ σύντομος ἡ τοῦ πυρὸς οὗσα δύναμις ταχέως
-διέλυσε τὰ σώματα.</p></div>
- <div type="textpart" subtype="verse" n="11"><p>Καὶ μὴ θαυμαστὸν ἡγεῖσθε εἰ ὁ λογισμὸς περιεκρατησεν τῶν
+διέλυσε τὰ σώματα.</p>
+            </div>
+            <div n="11" type="verse">
+               <p>Καὶ μὴ θαυμαστὸν ἡγεῖσθε εἰ ὁ λογισμὸς περιεκρατησεν τῶν
 ἀνδρῶν ἐκείνων ἐν ταῖς βασάνοις, ὅπου γε καὶ γυναικὸς νοῦς πολυτροπαωτέρων
-ὑπερεφρόνησεν ἀλγηδόνων.</p></div> <div type="textpart" subtype="verse" n="12"><p>ἡ μήτηρ γὰρ τῶν ἑπτὰ
-νεανίσκων ὑπήνεγκεν τὰς ἐφʼ ἑνὶ ἑκάστῳ τῶν τέκνων στρέβλας.</p></div>
-<div type="textpart" subtype="verse" n="13"><p>θεωρεῖτε δὲ πῶς πολύπλοκός ἐστιν ἡ τῆς φιλοτεκνίας στοργή,
-ἕλκουσα πάντα πρὸς τὴν τῶν σ πλάγχνων συνπαθειαν·</p></div> <div type="textpart" subtype="verse" n="14"><p>ἀποῦ γε
+ὑπερεφρόνησεν ἀλγηδόνων.</p>
+            </div>
+            <div n="12" type="verse">
+               <p>ἡ μήτηρ γὰρ τῶν ἑπτὰ
+νεανίσκων ὑπήνεγκεν τὰς ἐφʼ ἑνὶ ἑκάστῳ τῶν τέκνων στρέβλας.</p>
+            </div>
+            <div n="13" type="verse">
+               <p>θεωρεῖτε δὲ πῶς πολύπλοκός ἐστιν ἡ τῆς φιλοτεκνίας στοργή,
+ἕλκουσα πάντα πρὸς τὴν τῶν σ πλάγχνων συνπαθειαν·</p>
+            </div>
+            <div n="14" type="verse">
+               <p>ἀποῦ γε
 καὶ τὰ ἄλογα ζῷα ὁμοίαν τὴν πρὸς τὰ ἐξ αὐτῶν γεννώμενα συνπάθείαν
-καὶ στοργὴν ἔχει τοῖς ἀνθρώποις.</p></div> <div type="textpart" subtype="verse" n="15"><p>καὶ γὰρ τῶν πετεινῶν,
-τὰ μέν ἥμερα κατὰ τὰς οἰκίας ὀροφοιτοῦντα προασπίζει τῶν νεοττῶν·</p></div>
-<div type="textpart" subtype="verse" n="16"><p>τὸ δέ κατὰ τὰς κορυφὰς ἀρέων καὶ φαράγγων ἀπορρῶγας καὶ
+καὶ στοργὴν ἔχει τοῖς ἀνθρώποις.</p>
+            </div>
+            <div n="15" type="verse">
+               <p>καὶ γὰρ τῶν πετεινῶν,
+τὰ μέν ἥμερα κατὰ τὰς οἰκίας ὀροφοιτοῦντα προασπίζει τῶν νεοττῶν·</p>
+            </div>
+            <div n="16" type="verse">
+               <p>τὸ δέ κατὰ τὰς κορυφὰς ἀρέων καὶ φαράγγων ἀπορρῶγας καὶ
 δένδρων ὀπὰς καὶ τὰς τούτων ἄκρας νοσσοποιησάμενα ἀποτίκτει, καὶ
-τὸν προσιόντα κωλύει</p></div> <div type="textpart" subtype="verse" n="17"><p>κζ δὲ καὶ μὴ δύναιντο κωλύειν, περιιπτάμενα
+τὸν προσιόντα κωλύει</p>
+            </div>
+            <div n="17" type="verse">
+               <p>κζ δὲ καὶ μὴ δύναιντο κωλύειν, περιιπτάμενα
 κυκλόθεν αὐτῶν ἀλγοῦντμ τῇ στοργή, ἀνακαλούμενα τῆ ἰδίᾳ
-φωνῇ, καθʼ ὁν δύναται τρόπον βοηθεῖ τοῖς τέκνοις.</p></div> <div type="textpart" subtype="verse" n="18"><p>καὶ τί δεῖ τὴν
-διὰ τῶν ἀλόγων ζῷων ἐπιδεικνύναι τὴν πρὸς τὰ τέκνα συνπάθειαν;</p></div>
-<div type="textpart" subtype="verse" n="19"><p>ὅπου γε καὶ μέλισσαι περὶ τὸν τῆς κηρογονίας καιρὸν ἐπαμύνονται
+φωνῇ, καθʼ ὁν δύναται τρόπον βοηθεῖ τοῖς τέκνοις.</p>
+            </div>
+            <div n="18" type="verse">
+               <p>καὶ τί δεῖ τὴν
+διὰ τῶν ἀλόγων ζῷων ἐπιδεικνύναι τὴν πρὸς τὰ τέκνα συνπάθειαν;</p>
+            </div>
+            <div n="19" type="verse">
+               <p>ὅπου γε καὶ μέλισσαι περὶ τὸν τῆς κηρογονίας καιρὸν ἐπαμύνονται
 τοὺς προσιόντας, καὶ καθάπερ σιδήρῳ τῷ κέντρῳ πλήσσουσι
-τοὺς προσιόντας τῆ νοσσιᾶ αὐτῶν, καὶ ἐπαμύνονται ἕως θανάτου.</p></div>
-<div type="textpart" subtype="verse" n="20"><p>ἀλλʼ οὐχὶ τὴν Ἀβραὰμ ὁμόψυχον τῶν νεανιῶν μητέρα μετεκίνησεν
-ἡ συμπάθεια τέκνων.</p></div>
-</div>
-
-<div type="textpart" subtype="chapter" n="15">
-<div type="textpart" subtype="verse" n="1"><p>Ὦ λογισμέ τέκνων παθῶν τύραννε,
+τοὺς προσιόντας τῆ νοσσιᾶ αὐτῶν, καὶ ἐπαμύνονται ἕως θανάτου.</p>
+            </div>
+            <div n="20" type="verse">
+               <p>ἀλλʼ οὐχὶ τὴν Ἀβραὰμ ὁμόψυχον τῶν νεανιῶν μητέρα μετεκίνησεν
+ἡ συμπάθεια τέκνων.</p>
+            </div>
+         </div>
+         <div n="15" type="chapter">
+            <div n="1" type="verse">
+               <p>Ὦ λογισμέ τέκνων παθῶν τύραννε,
 καὶ εὐσέβεια μητρὶ τέκνων ποθεινοτέρα. μήτηρ δυεῖν προκειμέναων,
 <note type="footnote">9 εκαρτερουν] ενεκαρτερου U+05D0 | ταις δια πυρος] ταις του πυρος U+05D0* ταις δια <note type="marginal">U+05D0V</note>
 τ. π. U+05D0c.a ταις δι.πυρος V * (δια π. V ) 10 γενοιτο] pr αν κς |επαν-
@@ -1187,32 +2231,63 @@ sν δυναται τροπον βοηθει] καθ ο δυνανται βοη�
 19 επαμυνονται 2⁰] απαμυνουσιν U+05D0 20 την] τη U+05D0* (την U+05D0c.a ) νεανισκων
 τη συμπαθεια A συμπαθια U+05D0 συμπαθεια V X V 1 ευσεβια U+05D0 2 μη-
 τηρ] ηρ (in μηρ) sup ras Aᵃ</note>
-
-<pb n="754"/>
+                  <pb n="754"/>
 εὐσεβείας, καὶ τῆς ἑπτὰ υἱῶν σαωτηρίας προσκαίρου κατὰ
-τὴν τοῦ τυράννου ὑπόσχεσιν·</p></div> <div type="textpart" subtype="verse" n="3"><p>τὴν εὐσέβειαν μᾶλλον ἠγάπησεν
-τὴν σώζουσαν εἰς αἰώνιον ζωὴν κατὰ θεόν.</p></div> <div type="textpart" subtype="verse" n="4"><p> Ὦ τίνα
+τὴν τοῦ τυράννου ὑπόσχεσιν·</p>
+            </div>
+            <div n="3" type="verse">
+               <p>τὴν εὐσέβειαν μᾶλλον ἠγάπησεν
+τὴν σώζουσαν εἰς αἰώνιον ζωὴν κατὰ θεόν.</p>
+            </div>
+            <div n="4" type="verse">
+               <p> Ὦ τίνα
 τρόπον ἠθολογήσαιμι φιλότεκνα γονέων πάθη, ψυχῆς τε καὶ μορφῆς
 ὁμοιότητα εἰς μικρὸν παιδοχαρακτῆρα θαυμάσιον ἐναποσφραγίζον<del>τα</del>,
 μάλιστα διὰ τὸ τῶν πατέρων τοῖς γεννηθεῖσιν τὰς μητέρας καθεστάναι
-συνπαθεστέρας.</p></div> <div type="textpart" subtype="verse" n="5"><p>ὅσῳ γὰρ καὶ ἀσθενόψυχοι καὶ πολυγονάτεραι
-ὑπάρχουσιν μητέρες, τοσούτῳ μᾶλλόν εἰσιν φιλοτεκνώτεραι.</p></div> <div type="textpart" subtype="verse" n="6"><p>πασῶν
+συνπαθεστέρας.</p>
+            </div>
+            <div n="5" type="verse">
+               <p>ὅσῳ γὰρ καὶ ἀσθενόψυχοι καὶ πολυγονάτεραι
+ὑπάρχουσιν μητέρες, τοσούτῳ μᾶλλόν εἰσιν φιλοτεκνώτεραι.</p>
+            </div>
+            <div n="6" type="verse">
+               <p>πασῶν
 δὲ τῶν μητέρων ἐγένετο ἡ τῶν ἑπτὰ μήτηρ φιλοτεκνωτέρα,
-ἥτις ἑπτὰ κυοφορίαις τὴν πρὸς αὐτοὺς ἐπιφυτευομένη φιλοστοργίαν·</p></div>
-<div type="textpart" subtype="verse" n="7"><p>καὶ διὰ πολλὰς τὰς καθʼ ἕκαστον αὐτῶν ὠδῖνας ἠναγκασμένην
-εἰς αὐτοὺς ἔχειν συμπάθειαν,</p></div> <div type="textpart" subtype="verse" n="8"><p>διὰ τὸν πρὸς τὸν θεὸν φόβον ὑπερεῖδεν
-τὴν τῶν τέκνων πρόσκαιρον σωτηρίαν.</p></div> <div type="textpart" subtype="verse" n="9"><p>οὐ μὴν δέ, ἀλλὰ καὶ διὰ
+ἥτις ἑπτὰ κυοφορίαις τὴν πρὸς αὐτοὺς ἐπιφυτευομένη φιλοστοργίαν·</p>
+            </div>
+            <div n="7" type="verse">
+               <p>καὶ διὰ πολλὰς τὰς καθʼ ἕκαστον αὐτῶν ὠδῖνας ἠναγκασμένην
+εἰς αὐτοὺς ἔχειν συμπάθειαν,</p>
+            </div>
+            <div n="8" type="verse">
+               <p>διὰ τὸν πρὸς τὸν θεὸν φόβον ὑπερεῖδεν
+τὴν τῶν τέκνων πρόσκαιρον σωτηρίαν.</p>
+            </div>
+            <div n="9" type="verse">
+               <p>οὐ μὴν δέ, ἀλλὰ καὶ διὰ
 τὴν καλοκἀγαθίαν τῶν υἱῶν καὶ τὴν πρὸς τὸν νόμον αὐτῶν εὐπειθίαν,
-μείζω τὴν ἐν αὐτοῖς ἔσχεν φιλοστοργίαν.</p></div> <div type="textpart" subtype="verse" n="10"><p>δίκαιοί τε γὰρ ἦσαν
+μείζω τὴν ἐν αὐτοῖς ἔσχεν φιλοστοργίαν.</p>
+            </div>
+            <div n="10" type="verse">
+               <p>δίκαιοί τε γὰρ ἦσαν
 καὶ σώφρονες καὶ ἀνδρεῖοι καὶ μεγαλόψυχοι καὶ φιλάδελφοι, καὶ
 φιλομήτορες οὕτως, ὥστε καὶ μέχρι θανάτου τὰ νόμιμα φυλάσσοντας
-πείθεσθαι αὐτῇ·</p></div> <div type="textpart" subtype="verse" n="11"><p>Bλλʼ ὅμως, καίπερ τοσούτων ὄντων τῶν περὶ
+πείθεσθαι αὐτῇ·</p>
+            </div>
+            <div n="11" type="verse">
+               <p>Bλλʼ ὅμως, καίπερ τοσούτων ὄντων τῶν περὶ
 φιλοτεκνίαν εἰς συνπάθειαν ἑλκόντων τὴν μητέρα, ἐπʼ οὐδενὸς αὐτῶν
-τὸν λογισμὸν αὐτῆς αἱ πανποίκιλοι βάσανοι ἴσχυσnν μετατρέψαι.</p></div>
-<div type="textpart" subtype="verse" n="12"><p>λλὰ καὶ καθʼ ἔυα παῖδα καὶ ὁμοῦ πάντας ἡ μήτηρ ἐπὶ τὸν
-τῆς εὐσεβείας προετρέπετο. θάνατον.</p></div> <div type="textpart" subtype="verse" n="13"><p>Ὦ φύσις ἱερά, καὶ
+τὸν λογισμὸν αὐτῆς αἱ πανποίκιλοι βάσανοι ἴσχυσnν μετατρέψαι.</p>
+            </div>
+            <div n="12" type="verse">
+               <p>λλὰ καὶ καθʼ ἔυα παῖδα καὶ ὁμοῦ πάντας ἡ μήτηρ ἐπὶ τὸν
+τῆς εὐσεβείας προετρέπετο. θάνατον.</p>
+            </div>
+            <div n="13" type="verse">
+               <p>Ὦ φύσις ἱερά, καὶ
 φίλτρα γονέων καὶ γονεῦσιν φιλόστοργε, καὶ τροφεῖα, καὶ μητέρων
-<note type="marginal">U+05D0V</note><note type="footnote">2 ευσεβιας U+05D0 | προσκαιρους A προσκαιρου U+05D0c.a V υποσχεσιν] προσχεσῖ (ρ
+<note type="marginal">U+05D0V</note>
+                  <note type="footnote">2 ευσεβιας U+05D0 | προσκαιρους A προσκαιρου U+05D0c.a V υποσχεσιν] προσχεσῖ (ρ
 sup vas quasi prius csset τυραννουποσχ.) U+05D0¹⁽ᵛiᵈ) c.b 3 ευσεμιαν (sic) U+05D0*
 (ευσεβ. U+05D0c.a ⁽ᵛiᵈ)) ηγαπησας U+05D0* (-σεν U+05D0c.ᵃ) σωζουσαν] ζωσαν U+05D0 | αιωνιαν U+05D0
 4 μορφῆς] μ superscr, φ sup ras U+05D0¹ seq ακ in U+05D0* quod improb U+05D01 παι-
@@ -1231,29 +2306,61 @@ AV om την 3⁰ U+05D0* (hab U+05D0c.a) εσχεν (-χε V)] ειχεν U+05D
 εφ B υχ V αυτης] incep αυσ U+05D0* (αυτ. U+05D0c.a ᵃ) παμποικιλοι V om βασανοι
 A μεταστρεψαι V 12 της ευσεβειας (-βιας U+05D0)] pr υπερ V 13 γονευσιν]
 γεννημασι U+05D0 γενεσει V</note>
-
-<pb n="755"/>
-ἀδάμαστα πάθη.</p></div> <div type="textpart" subtype="verse" n="14"><p>καθʼ ἕνα στρεβλουμενον καὶ φλεγομενον ὁρῶσα <note type="marginal">A</note>
-μήτηρ, οὐ μετεβάλετο διὰ τὴν εὺσέβειαν.</p></div> <div type="textpart" subtype="verse" n="15"><p>τὰς σάρκας τῶν τέκνων
+                  <pb n="755"/>
+ἀδάμαστα πάθη.</p>
+            </div>
+            <div n="14" type="verse">
+               <p>καθʼ ἕνα στρεβλουμενον καὶ φλεγομενον ὁρῶσα <note type="marginal">A</note>
+μήτηρ, οὐ μετεβάλετο διὰ τὴν εὺσέβειαν.</p>
+            </div>
+            <div n="15" type="verse">
+               <p>τὰς σάρκας τῶν τέκνων
 ἑώρα περὶ τὸ πῦρ τηκομένας, καὶ τοὺς τῶν ποδῶν καὶ χειρῶν δακτύλους
 ἐπὶ γῆς σπαίροντας, καὶ τὰς τῶν κεφαλῶν μέχρι τῶν περὶ τὰ γένεια
-σάρκας ὥσπερ προσαοπεῖα προκειμένας.</p></div> <div type="textpart" subtype="verse" n="16"><p>ὦ πικροτέραων μέν νῦν
-μήτηρ πόνων πειρασθεῖσα, ἤπερ τῶν ἐπʼ αὐτοῖς ὠδίνων.</p></div> <div type="textpart" subtype="verse" n="17"><p>ὼ μόνη
-γύναι τὴν εὺσέβειαν ὁλόκληρον ἀποκυήσασα.</p></div> <div type="textpart" subtype="verse" n="18"><p>οὐ μετέτρεψέν σε
+σάρκας ὥσπερ προσαοπεῖα προκειμένας.</p>
+            </div>
+            <div n="16" type="verse">
+               <p>ὦ πικροτέραων μέν νῦν
+μήτηρ πόνων πειρασθεῖσα, ἤπερ τῶν ἐπʼ αὐτοῖς ὠδίνων.</p>
+            </div>
+            <div n="17" type="verse">
+               <p>ὼ μόνη
+γύναι τὴν εὺσέβειαν ὁλόκληρον ἀποκυήσασα.</p>
+            </div>
+            <div n="18" type="verse">
+               <p>οὐ μετέτρεψέν σε
 πραωτότοκος ἀποπνέων· οὐῆὲ δεύτερος είς οἰκτρὸν βλέπων ἐν βασάνοις·
-οὐδέ τρίτος ἀποψύχων.</p></div> <div type="textpart" subtype="verse" n="19"><p>οὐδε τοὺς ὀφθαλμοὺς ἑνὸς ἑκάστου θεωροῦσα
+οὐδέ τρίτος ἀποψύχων.</p>
+            </div>
+            <div n="19" type="verse">
+               <p>οὐδε τοὺς ὀφθαλμοὺς ἑνὸς ἑκάστου θεωροῦσα
 ταυρηδὸν ἐπὶ τῶν βασάνων ὁρῶντας τὸν αὐτὸν αἰκισμόν, καὶ τοὺς
-μυκτῆρας προσημειουμένους αὐτῶν τὸν θάυατον, οὐκ ἔκλαυσας.</p></div> <div type="textpart" subtype="verse" n="20"><p>ἐπὶ
+μυκτῆρας προσημειουμένους αὐτῶν τὸν θάυατον, οὐκ ἔκλαυσας.</p>
+            </div>
+            <div n="20" type="verse">
+               <p>ἐπὶ
 σαρξὶν τέκνων ὁρῶσα σάρκας τέκνων ἀποκεκομμένας, καὶ ἐπὶ χερσὶν
 χῖρας ἀποτεμνομένας, καὶ ἐπὶ κεφαλαῖς κεφαλὰς ἀποδειροτομουμένας.
 καὶ ἐπὶ νεκροῖς νεκροὺς πίπτοντας, καὶ πολυάνδριον ὁρῶσα τῶν τέκνων
-χααορίον διὰ τῶν βασάνων, οὐκ ἐδάκρυσας.</p></div> <div type="textpart" subtype="verse" n="21"><p>οὐχ οὕτως σειρήνιοι
+χααορίον διὰ τῶν βασάνων, οὐκ ἐδάκρυσας.</p>
+            </div>
+            <div n="21" type="verse">
+               <p>οὐχ οὕτως σειρήνιοι
 μελῳδίαι οὐδὲ κύκνιοι πρὸς φιληκοίαν φωναὶ τοὺς ἀκούοντας ἐφέλ.
-κονίαι, ὦ τέκνων φαοναὶ μετὰ βασάνων μητέρα φωνούντων.</p></div> <div type="textpart" subtype="verse" n="22"><p>πηλίκαις
+κονίαι, ὦ τέκνων φαοναὶ μετὰ βασάνων μητέρα φωνούντων.</p>
+            </div>
+            <div n="22" type="verse">
+               <p>πηλίκαις
 καὶ πόσαις τότε ἡ μήτηρ, τῶν υἱῶν βασανιζομένων τροχοῖς τε καὶ
-καυτηρίοις, ἐβασανίζετο βασάνοις;</p></div> <div type="textpart" subtype="verse" n="23"><p>ἀλλὰ τὰ σπλάγχνα αὐτῆς ὁ
+καυτηρίοις, ἐβασανίζετο βασάνοις;</p>
+            </div>
+            <div n="23" type="verse">
+               <p>ἀλλὰ τὰ σπλάγχνα αὐτῆς ὁ
 εὐσεβὴς λογισμὸς ἐν αὐτοῖς τοῖς πάθεσιν ἀνδρειώσας ἐπέτεινευ τὴν
-πρόσκαιρον φιλοτεκνίαν παριδεῖν.</p></div> <div type="textpart" subtype="verse" n="24"><p>καίπερ ἑπτὰ τέκνων ὁρῶσα
+πρόσκαιρον φιλοτεκνίαν παριδεῖν.</p>
+            </div>
+            <div n="24" type="verse">
+               <p>καίπερ ἑπτὰ τέκνων ὁρῶσα
 ἀπώλειαν καὶ τὴν τῶν στρεβλῶν πολύπλοκον ποικιλίαν, ἀσπάσασα
 <note type="footnote">13 αδαμαστη B (.τα U+05D0c.a ⁽ᵛiᵈ) 14 μετεβαλλετο U+05D0V ευσεβιαν U+05D0 <note type="marginal">U+05D0V</note>
 15 σπαιροντας] σπεροντα A περοντας (sc) U+05D0* σπειροντας U+05D0c.a σπεροντας V
@@ -1275,36 +2382,71 @@ U+05D0* ( ριοις U+05D0c.a) κου στηριοις V 23 αλλα] + και 
 προσκαιρον] α sup ras Aᵃ 24 ορωσαν V | απωλιαν U+05D0 | στρεβλων] incep
 τεκνων U+05D0* (improh U+05D0¹) πολυπλοκον] πολυτροπον U+05D0 | ασπασασα] ας σπασας
 U+05D0* (ασπασας U+05D0c.b) V ανασπασασα coniec Bensly versione Syr fretus</note>
-
-<pb n="756"/>
-<note type="marginal">A</note> ἡ γενναία μήτηρ ἐξέλυσεν διὰ τὴν πρὸς θεὸν πίστιν.</p></div> <div type="textpart" subtype="verse" n="25"><p>καθάπερ
+                  <pb n="756"/>
+                  <note type="marginal">A</note> ἡ γενναία μήτηρ ἐξέλυσεν διὰ τὴν πρὸς θεὸν πίστιν.</p>
+            </div>
+            <div n="25" type="verse">
+               <p>καθάπερ
 γὰρ ἐν βουλευτηρίῳ τῇ ἑαυτῆς ψυχῇ δεινοὺς ὁρῶσα συμβούλους,
-ύσιν καὶ γένεσιν καὶ φιλοτεκνίαν καὶ τέκνων στοέβλαν,</p></div>
-<div type="textpart" subtype="verse" n="26"><p>ῆὺο ψήφους κρατοῦσα μήτηρ, θανατηφόρον τε καὶ σωτήριον ὑπέρ
-τέκνων,</p></div> <div type="textpart" subtype="verse" n="27"><p>οὺκ ἐπέγνω τὴν σώζουσαν ἑπτὰ υἱοὺς πρὸς ἀλίγον χρόνον
-σωτηρίαν·</p></div> <div type="textpart" subtype="verse" n="28"><p>ἀλλὰ τῆς θεοσεβοῦς Ἀβραὰμ καρτερίας ἡ θυγάτηρ
-ἐμνήσθη.</p></div> <div type="textpart" subtype="verse" n="29"><p>Ὦ μήτηρ ἔθνους, ἔκδικε τοῦ υόμου, καὶ ὑπερασπίστεια
-τῆς εὐσεβείας, καὶ τοῦ διὰ σπλάγχνον ἀγῶνος ἀθλοφόρε.</p></div>
-<div type="textpart" subtype="verse" n="30"><p>ὦ ἀρρέναν πρὸς καρτερίαν γενναιοτέρα, καὶ ἀνδρῶν πρὸς ὑπομονὴν
-ἀνδρειοτέρα.</p></div> <div type="textpart" subtype="verse" n="31"><p>καθάπερ γὰρ ἡ Νῶε κιβωτὸς ἐν τῷ κοσμοπληθεῖ κατακλυσμῷ
-κοσμοφοροῦσα καρτεροὺς ὑπήνεγκεν τοὺς κλύδωνας·</p></div> <div type="textpart" subtype="verse" n="32"><p>οὕτως
+ύσιν καὶ γένεσιν καὶ φιλοτεκνίαν καὶ τέκνων στοέβλαν,</p>
+            </div>
+            <div n="26" type="verse">
+               <p>ῆὺο ψήφους κρατοῦσα μήτηρ, θανατηφόρον τε καὶ σωτήριον ὑπέρ
+τέκνων,</p>
+            </div>
+            <div n="27" type="verse">
+               <p>οὺκ ἐπέγνω τὴν σώζουσαν ἑπτὰ υἱοὺς πρὸς ἀλίγον χρόνον
+σωτηρίαν·</p>
+            </div>
+            <div n="28" type="verse">
+               <p>ἀλλὰ τῆς θεοσεβοῦς Ἀβραὰμ καρτερίας ἡ θυγάτηρ
+ἐμνήσθη.</p>
+            </div>
+            <div n="29" type="verse">
+               <p>Ὦ μήτηρ ἔθνους, ἔκδικε τοῦ υόμου, καὶ ὑπερασπίστεια
+τῆς εὐσεβείας, καὶ τοῦ διὰ σπλάγχνον ἀγῶνος ἀθλοφόρε.</p>
+            </div>
+            <div n="30" type="verse">
+               <p>ὦ ἀρρέναν πρὸς καρτερίαν γενναιοτέρα, καὶ ἀνδρῶν πρὸς ὑπομονὴν
+ἀνδρειοτέρα.</p>
+            </div>
+            <div n="31" type="verse">
+               <p>καθάπερ γὰρ ἡ Νῶε κιβωτὸς ἐν τῷ κοσμοπληθεῖ κατακλυσμῷ
+κοσμοφοροῦσα καρτεροὺς ὑπήνεγκεν τοὺς κλύδωνας·</p>
+            </div>
+            <div n="32" type="verse">
+               <p>οὕτως
 σύ, ἡ νομοφύλαξ, πανταχόθεν ἐν τῷ τῶν παθῶν περιαντλουμένη
 κατακλυσμῷ, καὶ καρτεροῖς ἀνέμοις ταῖς τῶν υἱῶν βασάνοις συνεχομένη,
-γενναίως ὑπέμεινας τοὺς τῆς εὐσεβείας χειμῶνας.</p></div>
-</div>
-
-<div type="textpart" subtype="chapter" n="16">
-<div type="textpart" subtype="verse" n="1"><p>Εὶ δὲ τοίνυν και γυνὴ καὶ γεραιὰ καὶ ἑπτὰ παίδων μητηρ ὐπέμεινεν
+γενναίως ὑπέμεινας τοὺς τῆς εὐσεβείας χειμῶνας.</p>
+            </div>
+         </div>
+         <div n="16" type="chapter">
+            <div n="1" type="verse">
+               <p>Εὶ δὲ τοίνυν και γυνὴ καὶ γεραιὰ καὶ ἑπτὰ παίδων μητηρ ὐπέμεινεν
 τὰς μέχρι θανάτου βασάνους ὁρῶσα τῶν τέκνων· ἁμολογουμένααως
-αὐτοκράτωρ ἐστὶν τῶν παθῶν ὁ εὐσεβὴς λογισμός. </p></div><div type="textpart" subtype="verse" n="2"><p>αἀπέδειξα οὖν ὅτι
+αὐτοκράτωρ ἐστὶν τῶν παθῶν ὁ εὐσεβὴς λογισμός. </p>
+            </div>
+            <div n="2" type="verse">
+               <p>αἀπέδειξα οὖν ὅτι
 οὐ μόνον τῶν παθὼυ ἄνδρες επεκράτησαν, ἀλλὰ καὶ γυνη τῶν μεγίστααον
-βασάνων ὑπερεφρόνησεν.</p></div> <div type="textpart" subtype="verse" n="3"><p>καὶ οὐχ ουτως οἱ περὶ Δανιὴλ λέοντες
+βασάνων ὑπερεφρόνησεν.</p>
+            </div>
+            <div n="3" type="verse">
+               <p>καὶ οὐχ ουτως οἱ περὶ Δανιὴλ λέοντες
 ἦσαν ἄγριοι, οὐδὲ Μισαὴλ ἐκφλεγομένη κάμινος λαβροτάτῳ πυρί, ὡς
 τῆς φιλοτεκνίας περιέκαιεν ἐκείνη φύσις, ὁρῶσα αὐτῆς τοὺς ἑπτὰ υἱοὺς
-βασανιζομένους.</p></div> <div type="textpart" subtype="verse" n="4"><p>ἀλλὰ τῷ λογισμῷ τῆς εὐσεβείας κατέσβεσε τοσαῦτα
-καὶ τηλικαῦτα πάθη ἡ μήτηρ.</p></div> <div type="textpart" subtype="verse" n="5"><p>καὶ γὰρ τοῦτο ἐπιλογίσασθαι,
+βασανιζομένους.</p>
+            </div>
+            <div n="4" type="verse">
+               <p>ἀλλὰ τῷ λογισμῷ τῆς εὐσεβείας κατέσβεσε τοσαῦτα
+καὶ τηλικαῦτα πάθη ἡ μήτηρ.</p>
+            </div>
+            <div n="5" type="verse">
+               <p>καὶ γὰρ τοῦτο ἐπιλογίσασθαι,
 ὅτι εἰ δειλόψυχος ἧν ἡ γυνή. καίπερ μήτηρ οὗσα, ὠλοφύρετο ἂν
-<note type="marginal">U+05D0V</note><note type="footnote">24 θεον] pr τον U+05D0 25 omI γαρ U+05D0 τη εαυτης ψυχη (-χης A)] της αυτης
+<note type="marginal">U+05D0V</note>
+                  <note type="footnote">24 θεον] pr τον U+05D0 25 omI γαρ U+05D0 τη εαυτης ψυχη (-χης A)] της αυτης
 ψυχης U+05D0* (τη εαυτ. ψυχη U+05D0c.a) φασιν U+05D0* (φυσιν U+05D0c.a) τε U+05D0 | στρεβλας U+05D0V
 26 μητηρ] pr η V 26 27 om υπερ τεκνων. σωτηριαν U+05D0* (hab U+05D0c.a)
 27 επεγνω] εγνω U+05D0c.a 28 θεοσεβιας U+05D0* ( σεβους U+05D0c.a) κατεριας V *
@@ -1321,32 +2463,72 @@ X V Ι 1 om και 1⁰, 2⁰ V γηραια Vᵃ υπεμεινε V των τε
 οmI V τοσαυτα] pr τα U+05D0V η μητηρ] pr ενικησεν V 5 om και γαρ
 τουτο... δειλοψ. ην V ει δειλοψ. ην η γυνη] δ. ει η γυνη U+05D0* δ. ει ην γ. U+05D0c.a
 ωλοφυρετο (ωλυφερ. U+05D0* ωλοφυρ. U+05D01)] ουκ ωλοφυρατο V</note>
-
-<pb n="757"/>
-ἐπʼ αὐτοῖς· καὶ ἴσως ἂν ταῦτα οὕτως εἶπεν</p></div> <div type="textpart" subtype="verse" n="6"><p>Ὦ μελέα ἔγωγε καὶ <note type="marginal">A</note>
-πολλάκις τρισαθλία, ἥτις ἑπτὰ παῖδας τεκοῦσα, οὐδενὸς μήτηρ γεγένημαι.</p></div>
-<div type="textpart" subtype="verse" n="7"><p>ὦ μάταιοι ἑπτὰ κυοφορίαι, καὶ ἀνόνητοι ἑπτὰ δεκάμηνοι, καὶ
-ἄκαρποι τιθηνίαι, καὶ ταλαίπωροι γαλακτοτροφίαι.</p></div> <div type="textpart" subtype="verse" n="8"><p>μάτην ἐφʼ ὑμῖν,
-ὦ παῖδες, πολλὰς ὑπέμεινα ὼδῖυας καὶ χαλεπωτέρας φροντίδας ἀνατροφῆς.</p></div>
-<div type="textpart" subtype="verse" n="9"><p>ὦ τῶν ἐμῶν παίδων, οἱ μὲν ἄγαμοι, οἱ δέ γαμήσαντες ἀνονητοι,
-οὐκ ὄψομαι ὑμῶν τέκνα, οὐδέ μάμμη κληθεῖσα μακαρισθήσομαι.</p></div>
-<div type="textpart" subtype="verse" n="10"><p>ὦ ἡ πολύπαις καὶ καλλίπαις ἐγὼ γυνὴ χήρα καὶ μόνη πολύθρηνος·</p></div>
-<div type="textpart" subtype="verse" n="11"><p>οὐδʼ ἂν ἀποθάνω, θάπτοντα τῶν υἱῶν ἔξω τινά. ἀλλὰ τούτῳ τῷ θρήνῳ
-οὐδένα ὀλοφύρετο ἡ ἱερὰ καὶ θεοσεβὴς μήτηρ,</p></div> <div type="textpart" subtype="verse" n="12"><p>οὐδʼ ἵνα μὴ ἀποθάνωσν
-ἀπέτρεπεν αὐτῶν τινα, οὐδʼ ὡς ἀποθνησκόντων ἐλυπήθη.</p></div> <div type="textpart" subtype="verse" n="13"><p>ἀλλʼ ὥσπε
+                  <pb n="757"/>
+ἐπʼ αὐτοῖς· καὶ ἴσως ἂν ταῦτα οὕτως εἶπεν</p>
+            </div>
+            <div n="6" type="verse">
+               <p>Ὦ μελέα ἔγωγε καὶ <note type="marginal">A</note>
+πολλάκις τρισαθλία, ἥτις ἑπτὰ παῖδας τεκοῦσα, οὐδενὸς μήτηρ γεγένημαι.</p>
+            </div>
+            <div n="7" type="verse">
+               <p>ὦ μάταιοι ἑπτὰ κυοφορίαι, καὶ ἀνόνητοι ἑπτὰ δεκάμηνοι, καὶ
+ἄκαρποι τιθηνίαι, καὶ ταλαίπωροι γαλακτοτροφίαι.</p>
+            </div>
+            <div n="8" type="verse">
+               <p>μάτην ἐφʼ ὑμῖν,
+ὦ παῖδες, πολλὰς ὑπέμεινα ὼδῖυας καὶ χαλεπωτέρας φροντίδας ἀνατροφῆς.</p>
+            </div>
+            <div n="9" type="verse">
+               <p>ὦ τῶν ἐμῶν παίδων, οἱ μὲν ἄγαμοι, οἱ δέ γαμήσαντες ἀνονητοι,
+οὐκ ὄψομαι ὑμῶν τέκνα, οὐδέ μάμμη κληθεῖσα μακαρισθήσομαι.</p>
+            </div>
+            <div n="10" type="verse">
+               <p>ὦ ἡ πολύπαις καὶ καλλίπαις ἐγὼ γυνὴ χήρα καὶ μόνη πολύθρηνος·</p>
+            </div>
+            <div n="11" type="verse">
+               <p>οὐδʼ ἂν ἀποθάνω, θάπτοντα τῶν υἱῶν ἔξω τινά. ἀλλὰ τούτῳ τῷ θρήνῳ
+οὐδένα ὀλοφύρετο ἡ ἱερὰ καὶ θεοσεβὴς μήτηρ,</p>
+            </div>
+            <div n="12" type="verse">
+               <p>οὐδʼ ἵνα μὴ ἀποθάνωσν
+ἀπέτρεπεν αὐτῶν τινα, οὐδʼ ὡς ἀποθνησκόντων ἐλυπήθη.</p>
+            </div>
+            <div n="13" type="verse">
+               <p>ἀλλʼ ὥσπε
 ἀδαμαντινον ἔχουσα τὸν νοῦν, καὶ εἰς ἀθανασίαν ἀνατίκτουσα τὸν τῶν υἱῶν
 ἀριθμόν, μᾶλλον ὑπέρ τῆς εὐσεβείας ἐπὶ τὸν θάνατον αὐτοὺς προετρέπετο
-ἱκετεύουσα.</p></div> <div type="textpart" subtype="verse" n="14"><p>Ὧ μήτηρ δι εὐσέβειαν θεοῦ στρατιῶτι.
+ἱκετεύουσα.</p>
+            </div>
+            <div n="14" type="verse">
+               <p>Ὧ μήτηρ δι εὐσέβειαν θεοῦ στρατιῶτι.
 πρεσβῦτι καὶ γυνή, διὰ καρτερίαν καὶ τύραννον ἐνίκησας, καὶ ἔργοις
-δυνατωτέρα καὶ λόγοις εὑρέθης ἂν ἀνδρός.</p></div> <div type="textpart" subtype="verse" n="15"><p>καὶ γὰρ ὅτε συνελήμφθηι
+δυνατωτέρα καὶ λόγοις εὑρέθης ἂν ἀνδρός.</p>
+            </div>
+            <div n="15" type="verse">
+               <p>καὶ γὰρ ὅτε συνελήμφθηι
 μετὰ τῶν παίδων, εἱστήκεις τὸν Ἐλεάζαρον ὁρῶσα βασανιζόμενον, καί
-ἔλεγες τοῖς παισὶν ἐν τῇ Ἑβραΐδι φωνῇ</p></div> <div type="textpart" subtype="verse" n="16"><p>Ὦ παῖδες, γενναῖος ὁ ἀγών
+ἔλεγες τοῖς παισὶν ἐν τῇ Ἑβραΐδι φωνῇ</p>
+            </div>
+            <div n="16" type="verse">
+               <p>Ὦ παῖδες, γενναῖος ὁ ἀγών
 ἐφʼ ὃν κληθέντες ὑπὲρ τῆς διαμαρτυρίας τοῦ ἔθνους, ἐναγωνίσασθε
-προθύμως ὑπὲρ τοῦ πατρίου νόμου.</p></div> <div type="textpart" subtype="verse" n="17"><p>καὶ γὰρ αἰσχρὸν τὸν μὲν
+προθύμως ὑπὲρ τοῦ πατρίου νόμου.</p>
+            </div>
+            <div n="17" type="verse">
+               <p>καὶ γὰρ αἰσχρὸν τὸν μὲν
 γέροντα τοῖτον ὑπομένειν τὰς διὰ τὴν εὐσέβειαν ἀλγηδόνας, ὑμᾶς δε
-τοὺς νεωτέρους καταπλαγῆναι τὰς βασάνους.</p></div> <div type="textpart" subtype="verse" n="18"><p>ἀναμνήσθητε ὅτι διο
-τὸν θεὸν τοῦ κόσμου μετελάβετε, καὶ τοῦ βίου ἀπελαύσατε·</p></div> <div type="textpart" subtype="verse" n="19"><p>καὶ διὰ
-τοῦτο ὀφίλετε πάντα πόνον ὑπομένειν διὰ τὸν θεόν.</p></div> <div type="textpart" subtype="verse" n="20"><p>δι᾿ ὃν καὶ ὁ
+τοὺς νεωτέρους καταπλαγῆναι τὰς βασάνους.</p>
+            </div>
+            <div n="18" type="verse">
+               <p>ἀναμνήσθητε ὅτι διο
+τὸν θεὸν τοῦ κόσμου μετελάβετε, καὶ τοῦ βίου ἀπελαύσατε·</p>
+            </div>
+            <div n="19" type="verse">
+               <p>καὶ διὰ
+τοῦτο ὀφίλετε πάντα πόνον ὑπομένειν διὰ τὸν θεόν.</p>
+            </div>
+            <div n="20" type="verse">
+               <p>δι᾿ ὃν καὶ ὁ
 πατὴρ ἡμῶν Ἀβραὰμ ἔσπευδεν τὸν ἐθυοπάτορα υἱὸν σφαγιάσαι Ἰσαάκ,
 <note type="footnote">5 om αν 2° V om ουτως U+05D0V 6 ουδενος] ουδε ενος U+05D0 7 ανωνητοι U+05D0V
 A : item 9 επτα 2⁰] pr αι U+05D0 | τιθηνιοι U+05D0 8 ματην] + δε U+05D0 + δ V 9 γαμη-
@@ -1364,36 +2546,70 @@ U+05D0c.a) 18 αναμνησθητε] + δε U+05D0 οτι] δια incep U+05D0*
 σετε U+05D0 απηλαυσατε V 19 οφειλε| V οφειλετε V ᵃ πονον υπομενειν]
 υπομιναι π. U+05D0 π. υπομειναι V 20 δια U+05D0* (δι ον U+05D0c.a) εσπευδον V | τον]
 τιν V* (τον V¹) | Ισακ U+05D0* (Ισαακ U+05D0c.a)</note>
-
-<pb n="758"/>
-<note type="marginal">A</note> καὶ τὴν πατρῴαν χεῖρα ξιφηφόρον καταφερομένην ἐπʼ αὐτὸν ὁρῶν
-οὐκ ἔπτηξεν.</p></div> <div type="textpart" subtype="verse" n="21"><p>καὶ Δανιὴλ ὁ δίκαιος εἰς λέοντας ἐβλήθη· καὶ Ἀνανίας
+                  <pb n="758"/>
+                  <note type="marginal">A</note> καὶ τὴν πατρῴαν χεῖρα ξιφηφόρον καταφερομένην ἐπʼ αὐτὸν ὁρῶν
+οὐκ ἔπτηξεν.</p>
+            </div>
+            <div n="21" type="verse">
+               <p>καὶ Δανιὴλ ὁ δίκαιος εἰς λέοντας ἐβλήθη· καὶ Ἀνανίας
 καὶ Ἀζαρίας καὶ Μισαὴλ εἰς κάμινον πυρὸς ἀπεσφενδονήθησαν,
-καὶ ὑπέμειναν διὰ τὸν θεόν.</p></div> <div type="textpart" subtype="verse" n="22"><p>καὶ ὑμεῖς οὗν τὴν αὐτὴν πίστιν πρὸς
-τὸν θεὸν ἔχοντες, μὴ χαλεπαίνητε·</p></div> <div type="textpart" subtype="verse" n="23"><p>ἀλόγιστον γὰρ εἰδότας εὐσέβειαν
-μὴ ἀνθίστασθαι τοῖς πόνοις.</p></div> <div type="textpart" subtype="verse" n="24"><p>Διὰ τούτων τῶν λόγων ἡ
+καὶ ὑπέμειναν διὰ τὸν θεόν.</p>
+            </div>
+            <div n="22" type="verse">
+               <p>καὶ ὑμεῖς οὗν τὴν αὐτὴν πίστιν πρὸς
+τὸν θεὸν ἔχοντες, μὴ χαλεπαίνητε·</p>
+            </div>
+            <div n="23" type="verse">
+               <p>ἀλόγιστον γὰρ εἰδότας εὐσέβειαν
+μὴ ἀνθίστασθαι τοῖς πόνοις.</p>
+            </div>
+            <div n="24" type="verse">
+               <p>Διὰ τούτων τῶν λόγων ἡ
 ἑπταμήταωρ ἕνα ἕκαστον τῶν υἱῶν παρακαλοῦσα ἔπεισε μᾶλλον ἀποθανεῖν,
-ἡ παραβῆναι τὴν ἐντολὴν τοῦ θεοῦ.</p></div> <div type="textpart" subtype="verse" n="25"><p>ἔτι δὲ καὶ ταῦτα ἰδόντες
+ἡ παραβῆναι τὴν ἐντολὴν τοῦ θεοῦ.</p>
+            </div>
+            <div n="25" type="verse">
+               <p>ἔτι δὲ καὶ ταῦτα ἰδόντες
 ὅτι διὰ τὸν θεὸν ἀποθανόντες ζῶσιν τῷ θεῷ, ὥσπερ Ἀβραὰμ καὶ
-Ἰσαὰκ καὶ Ἰακώβ, καὶ πάντες οἱ πατριάρχαι.</p></div>
-</div>
-
-<div type="textpart" subtype="chapter" n="17">
-<div type="textpart" subtype="verse" n="1"><p>ἔλεγον δὲ καὶ τῶν
+Ἰσαὰκ καὶ Ἰακώβ, καὶ πάντες οἱ πατριάρχαι.</p>
+            </div>
+         </div>
+         <div n="17" type="chapter">
+            <div n="1" type="verse">
+               <p>ἔλεγον δὲ καὶ τῶν
 ορυφόρων τινές ὡς ὅτε ἔμελλεν καὶ αὐτὴ συλλαμβάνεσθαι πρὸς
 θάνατον, ἵνα μὴ ψαύσειέν τι τοῦ σώματος αὐτῆς, ἑαυτὴν ἔρριψεν κατὰ
-τῆς πυρᾶς.</p></div> <div type="textpart" subtype="verse" n="2"><p>Ὦ μήτηρ σίν ἑπτὰ παισὶν καταλύσασα τὴν
+τῆς πυρᾶς.</p>
+            </div>
+            <div n="2" type="verse">
+               <p>Ὦ μήτηρ σίν ἑπτὰ παισὶν καταλύσασα τὴν
 τοῦ τυράννου βίαν, καὶ ἀκυρώσασα τὰς κακὰς ἐπινοίας αὐτοῦ, καὶ
-ἐπιδείξασα τὴν τῆς πίστεως γενναιότητα.</p></div> <div type="textpart" subtype="verse" n="3"><p>καθάπερ γὰρ σὺ στέγη
+ἐπιδείξασα τὴν τῆς πίστεως γενναιότητα.</p>
+            </div>
+            <div n="3" type="verse">
+               <p>καθάπερ γὰρ σὺ στέγη
 ἐπὶ τοῦ στύλου τῶν παίδων γενναίως ἱδρυμένη, ἀκλινῶς ὑπήνεγκας
-τὸν διὰ τῶν βασάνων σεισμόν.</p></div> <div type="textpart" subtype="verse" n="4"><p>θάρρει τοιγαροῖν, ὁ μήτηρ ἱερόψυχε.
-τὴν ἐλπίδα τῆς ὑπομονῆς γενναίως ἔχουσα πρὸς θεόν.</p></div> <div type="textpart" subtype="verse" n="5"><p>οὐχ οὕτω
+τὸν διὰ τῶν βασάνων σεισμόν.</p>
+            </div>
+            <div n="4" type="verse">
+               <p>θάρρει τοιγαροῖν, ὁ μήτηρ ἱερόψυχε.
+τὴν ἐλπίδα τῆς ὑπομονῆς γενναίως ἔχουσα πρὸς θεόν.</p>
+            </div>
+            <div n="5" type="verse">
+               <p>οὐχ οὕτω
 σελήνη κατʼ οὐρανὸν σὺν ἄστροις σεμνὴ καθέστηκεν, ὡς σὺ τοὺς ἰσαστέρους
 ἑπτὰ παῖδας φωταγωγήσασα πρὸς τὴν εὐσέβειαν ἔντιμος
-καθέστηκας θεῷ, καὶ ἐστήρισαι ἐν οὐρανῷ σὺν αὐτοῖς.</p></div> <div type="textpart" subtype="verse" n="6"><p>ἦν γὰρ ἡ
-παιδοποιία σου ἀπὸ Ἀβραὰμ τοῦ παιδός.</p></div> <div type="textpart" subtype="verse" n="7"><p>Εἰ δὲ ἐξὸν ἡμῖν
+καθέστηκας θεῷ, καὶ ἐστήρισαι ἐν οὐρανῷ σὺν αὐτοῖς.</p>
+            </div>
+            <div n="6" type="verse">
+               <p>ἦν γὰρ ἡ
+παιδοποιία σου ἀπὸ Ἀβραὰμ τοῦ παιδός.</p>
+            </div>
+            <div n="7" type="verse">
+               <p>Εἰ δὲ ἐξὸν ἡμῖν
 ἤν, ὥσπερ τινός, ζωγραφῆσαι τὴν τῆς ἱστορίας σου εὐσέβειαν, οὐκ ἂν
-<note type="marginal">U+05D0V</note><note type="footnote">20 πατρωα U+05D0* (.αν U+05D0c.a) πατρωον V om ορων U+05D0 | επηξεν U+05D0* (επτηξεν
+<note type="marginal">U+05D0V</note>
+                  <note type="footnote">20 πατρωα U+05D0* (.αν U+05D0c.a) πατρωον V om ορων U+05D0 | επηξεν U+05D0* (επτηξεν
 U+05D0c.a) 21 Αννανιας A απεσφενδονισθησαν V 22 χαλεπαινετε U+05D0V
 (-νητε Vᵃ) 26 εἰδοτες V ανθιστασθαι] αντιτασσεσθαι U+05D0 ανιστασθε Va
 24 επταμητηρ U+05D0c.a sed statim repos -τωρ επεισεν U+05D0 | om αποθανειν A
@@ -1412,30 +2628,70 @@ U+05D0c.a (improb 2⁰ U+05D0c.a) ουτως V* ουχ ουτ. V1 | συν 1⁰]
 U+05D0c.a ιστοριας σ. ευσεβειαν] ευσεβειας (-βιας U+05D0) σ. ιστοριαν U+05D0V 7 8 ουκ
 αν εφριττον και γαρ αξιον ην sup ras et in mgg A (om ουκ αν εφριττον...
 ευσεβειαν (2⁰) A* ᵛⁱᵈ)</note>
-
-<pb n="759"/>
+                  <pb n="759"/>
 ἔφριττον οἱ θεωροῦντες μητέρα ἑπτὰ τέκνων δι᾿ εὺσέβειαν ποικίλας <note type="marginal">Λ</note>
-βασάνους μέχρι θανάτου ὑπομείνασαν;</p></div> <div type="textpart" subtype="verse" n="8"><p>καὶ γὰρ ἄξιον ἦν καὶ ἐπὶ
+βασάνους μέχρι θανάτου ὑπομείνασαν;</p>
+            </div>
+            <div n="8" type="verse">
+               <p>καὶ γὰρ ἄξιον ἦν καὶ ἐπὶ
 αὐτοῦ τοῦ ἐπιταφίου ἀναγράψαι καὶ ταῦτα τοῖς ἀπὸ τοῦ ἔθνους εἰς
-μνείαν λεγόμενα</p></div> <div type="textpart" subtype="verse" n="9"><p>Ἐνταῦθα φέρων ἱερεύU+03F2, καὶ φυνὴ φεραιά,
+μνείαν λεγόμενα</p>
+            </div>
+            <div n="9" type="verse">
+               <p>Ἐνταῦθα φέρων ἱερεύU+03F2, καὶ φυνὴ φεραιά,
 καὶ ἑπτὰ παῖδεU+03F2 ἐνκεκήδευνται διὰ τυράννου βίδν, τὴν
-Ἐβρδίων πολιτίαν καταλῦU+03F2αι θέλοντοU+03F2.</p></div> <div type="textpart" subtype="verse" n="10"><p>οἳ καὶ ἐξεδίκηU+03F2αν
+Ἐβρδίων πολιτίαν καταλῦU+03F2αι θέλοντοU+03F2.</p>
+            </div>
+            <div n="10" type="verse">
+               <p>οἳ καὶ ἐξεδίκηU+03F2αν
 τὸ ἔθνοU+03F2 εἰU+03F2 θεὸν ἀφορῶντεU+03F2, καὶ μέχρι θανάτου τὰU+03F2 βαU+03F2άνουU+03F2
-ὑπομίναντεU+03F2.</p></div> <div type="textpart" subtype="verse" n="11"><p>ἀληθῶς γὰρ ἦν ἀγὼν θεῖος ὁ δι᾿ αὐτῶν
-γεγενημένος.</p></div> <div type="textpart" subtype="verse" n="12"><p>θλοθέτει γὰρ τότε ἀρετὴ δι᾿ ὑπομονῆς δοκιμάζουσ·
-τὀ νῖκος ἐν ἀφθαρσίᾳ ἐν ζωῇ πολυχρονίῳ.</p></div> <div type="textpart" subtype="verse" n="13"><p>Ἐλεαζαρ δἑ προηγωνί
-ζετο· ἡ δέ μήτηρ τῶν ἑπτὰ παίδων ἐνήθλει· οἱ δὲ ἀδελφοὶ ἠγωνίζοντο·</p></div>
-<div type="textpart" subtype="verse" n="14"><p>ὁ τύραννος ἀντηγωνίζετο· ὁ δέ κόσμος καὶ ὁ τῶν ἀνθρώπων βίος
-ἐθεώρει·</p></div> <div type="textpart" subtype="verse" n="15"><p>θεοσέβεια δέ ἐνίκα, τοὺς ἑαυτῆς ἀθλητὰς στεφανοῦσα.</p></div>
-<div type="textpart" subtype="verse" n="16"><p>τίνες οὐκ ἐθαύμασαν τοὺς τ ῆς ἀληθείας νομοθεσίας ἀθλητάς ; τίνες
-οὐκ ἐξεπλάγησαν</p></div> <div type="textpart" subtype="verse" n="17"><p>Αὺτός γέ τοι ὁ τύραννος καὶ ὅλον τὸ
-συνέδριον αὐτῶν ἐξεθαύμασαν αὐτῶν τὴν ὑπομονήν,</p></div> <div type="textpart" subtype="verse" n="18"><p>ὄι ἣν καὶ τῷ
-θείῳ νῦν παρεστήκασιν θρόνῳ, καὶ τὸν μακάριον βιοῦσιν αἰῶνα·</p></div> <div type="textpart" subtype="verse" n="19"><p>καὶ
-γάρ φησιν ὁ Μωσ ῆς Καὶ πάντες οἱ ἡγιασμένοι ὑπὸ τὰς χεῖράς σου.</p></div>
-<div type="textpart" subtype="verse" n="20"><p>καὶ οὐτοι οὗν ἁγιασθέντες διὰ θεὸν τετίμηνται οὐ μόνον οὗν ταύτῃ
+ὑπομίναντεU+03F2.</p>
+            </div>
+            <div n="11" type="verse">
+               <p>ἀληθῶς γὰρ ἦν ἀγὼν θεῖος ὁ δι᾿ αὐτῶν
+γεγενημένος.</p>
+            </div>
+            <div n="12" type="verse">
+               <p>θλοθέτει γὰρ τότε ἀρετὴ δι᾿ ὑπομονῆς δοκιμάζουσ·
+τὀ νῖκος ἐν ἀφθαρσίᾳ ἐν ζωῇ πολυχρονίῳ.</p>
+            </div>
+            <div n="13" type="verse">
+               <p>Ἐλεαζαρ δἑ προηγωνί
+ζετο· ἡ δέ μήτηρ τῶν ἑπτὰ παίδων ἐνήθλει· οἱ δὲ ἀδελφοὶ ἠγωνίζοντο·</p>
+            </div>
+            <div n="14" type="verse">
+               <p>ὁ τύραννος ἀντηγωνίζετο· ὁ δέ κόσμος καὶ ὁ τῶν ἀνθρώπων βίος
+ἐθεώρει·</p>
+            </div>
+            <div n="15" type="verse">
+               <p>θεοσέβεια δέ ἐνίκα, τοὺς ἑαυτῆς ἀθλητὰς στεφανοῦσα.</p>
+            </div>
+            <div n="16" type="verse">
+               <p>τίνες οὐκ ἐθαύμασαν τοὺς τ ῆς ἀληθείας νομοθεσίας ἀθλητάς ; τίνες
+οὐκ ἐξεπλάγησαν</p>
+            </div>
+            <div n="17" type="verse">
+               <p>Αὺτός γέ τοι ὁ τύραννος καὶ ὅλον τὸ
+συνέδριον αὐτῶν ἐξεθαύμασαν αὐτῶν τὴν ὑπομονήν,</p>
+            </div>
+            <div n="18" type="verse">
+               <p>ὄι ἣν καὶ τῷ
+θείῳ νῦν παρεστήκασιν θρόνῳ, καὶ τὸν μακάριον βιοῦσιν αἰῶνα·</p>
+            </div>
+            <div n="19" type="verse">
+               <p>καὶ
+γάρ φησιν ὁ Μωσ ῆς Καὶ πάντες οἱ ἡγιασμένοι ὑπὸ τὰς χεῖράς σου.</p>
+            </div>
+            <div n="20" type="verse">
+               <p>καὶ οὐτοι οὗν ἁγιασθέντες διὰ θεὸν τετίμηνται οὐ μόνον οὗν ταύτῃ
 τῇ τιμῇ, ἀλλὰ καὶ τῷ δι᾿ αὐτοὺς τὸ ἔθνος ἡμῶν τοὺς πολεμίους μὴ
-ἐπικρατῆσαι,</p></div> <div type="textpart" subtype="verse" n="21"><p>καὶ τὸν τύραννον τιμωρηθῆναι καὶ τὴν πατρίδα καθαρισθῆναι·</p></div>
-<div type="textpart" subtype="verse" n="22"><p>ὧσπερ ἀντίψυχον γεγονότας τῆς τοῦ ἔθνους ἁμαρτίας καὶ
+ἐπικρατῆσαι,</p>
+            </div>
+            <div n="21" type="verse">
+               <p>καὶ τὸν τύραννον τιμωρηθῆναι καὶ τὴν πατρίδα καθαρισθῆναι·</p>
+            </div>
+            <div n="22" type="verse">
+               <p>ὧσπερ ἀντίψυχον γεγονότας τῆς τοῦ ἔθνους ἁμαρτίας καὶ
 <note type="footnote">7 θεωρουντες] + ορωντες U+05D0V μεχρι θανατου] om U+05D0* (hab) U+05D0c.a) + γιγνο- <note type="marginal">U+05D0V</note>
 μενας U+05D0c.a ᵇ+ γινομενας V υπομενουσαν V 8 επι] επ τ V 9 ενταυθα]
 ενταυθοι U+05D0c.a (sed statim repos θα) V (ενταυθ οι sic V .σοι Vνοs ¹) |ιερευς
@@ -1456,36 +2712,67 @@ pr αρετην και την U+05D0 pr αρετην και V 18 δι ην... α
 om τω V hab τη V ¹⁽ᵛiᵈ (τω Vᵃ) τω δι αυτους· A επικρατησας A
 21 τιμωρηθηναι] pr καταισχυνθηναι και V 22 ωσπερ] +γαρ V γεγονας
 U+05D0* (.νοτος U+05D0c.a)</note>
-
-<pb n="760"/>
-<note type="marginal">A</note> διὰ τοῦ αἵματος τῶν εὐσεβῶν ἐκείνων καὶ τοῦ ἱλαστηρίου θανάτου
-αὐτῶν, ἡ θεία πρόνοια τὸν Ἰσραὴλ προκακωθέντα διέσωσεν.</p></div> <div type="textpart" subtype="verse" n="23"><p>πρὸς
+                  <pb n="760"/>
+                  <note type="marginal">A</note> διὰ τοῦ αἵματος τῶν εὐσεβῶν ἐκείνων καὶ τοῦ ἱλαστηρίου θανάτου
+αὐτῶν, ἡ θεία πρόνοια τὸν Ἰσραὴλ προκακωθέντα διέσωσεν.</p>
+            </div>
+            <div n="23" type="verse">
+               <p>πρὸς
 γὰρ τὴν ἀνδρίαν αὐτῶν τῆς ἀρετῆς καὶ τὴν ἐπὶ ταῖς βασάνοις αὐτῶν
 ὑπομονὴν ὁ τύραννος ἀφιδὼν Ἀντίοχος ἀνεκήρυξεν τοῖς στρατιώταις
-αὐτοῦ εἰς ὑπόδιγμα τὴν ἐκείνων ὑπομονὴν·</p></div> <div type="textpart" subtype="verse" n="24"><p>ἔσχεν τε αὐτοὺς
+αὐτοῦ εἰς ὑπόδιγμα τὴν ἐκείνων ὑπομονὴν·</p>
+            </div>
+            <div n="24" type="verse">
+               <p>ἔσχεν τε αὐτοὺς
 γενναίους καὶ ἀνδρείους εἰς πεζομαχίαν καὶ πολιορκίnν· καὶ ἐκπορθήσας
-ἐνίκησεν πάντας τοὺς πολεμίους.</p></div>
-</div>
-
-<div type="textpart" subtype="chapter" n="18">
-<div type="textpart" subtype="verse" n="1"><p>Ὦ τῶν Ἀβραμιαίων σπερμάτων ἀπόγονοι παῖδες Ἰσραηλεῖται, πείθεσθε
-τῷ νόμῳ τούτῳ, καὶ πάντα τρόπον εὐσεβεῖτε·</p></div> <div type="textpart" subtype="verse" n="2"><p>γινάσκοντες ὅτι
+ἐνίκησεν πάντας τοὺς πολεμίους.</p>
+            </div>
+         </div>
+         <div n="18" type="chapter">
+            <div n="1" type="verse">
+               <p>Ὦ τῶν Ἀβραμιαίων σπερμάτων ἀπόγονοι παῖδες Ἰσραηλεῖται, πείθεσθε
+τῷ νόμῳ τούτῳ, καὶ πάντα τρόπον εὐσεβεῖτε·</p>
+            </div>
+            <div n="2" type="verse">
+               <p>γινάσκοντες ὅτι
 τῶν παθῶν δεσπότης ἐστὶν ὁ εὐσεβὴς λογισμός, καὶ οὐ μόνον τῶν
-ἔνδοθεν ἀλλὰ καὶ τῶν ἔξωθεν πόνων·</p></div> <div type="textpart" subtype="verse" n="3"><p>ἀυθʼ ὧν διὰ τὴν εὐσέβειαν
+ἔνδοθεν ἀλλὰ καὶ τῶν ἔξωθεν πόνων·</p>
+            </div>
+            <div n="3" type="verse">
+               <p>ἀυθʼ ὧν διὰ τὴν εὐσέβειαν
 προιἐμενοι τὰ σώματα τοῖς πόνοις ἐκείνοι, οὐ μόνον ὑπὸ τῶυ ἀνθρώπων
-ἐθαυμάσθησαν, ἀλλὰ καὶ θείας μερίδος κατηξιώθησαν.</p></div> <div type="textpart" subtype="verse" n="4"><p>καὶ δι αὐτοὺς
+ἐθαυμάσθησαν, ἀλλὰ καὶ θείας μερίδος κατηξιώθησαν.</p>
+            </div>
+            <div n="4" type="verse">
+               <p>καὶ δι αὐτοὺς
 είρήνευσεν τὸ ἔθυος, καὶ τὴν εὐνομίαν τὴν ἐπὶ τῆς πατρίδος ἀνανεωσάμενος,
-ἐκπεπολιόρκηκε τοὺς πολεμίους.</p></div> <div type="textpart" subtype="verse" n="5"><p>καὶ ὁ τύραννος Ἀντίοχος
+ἐκπεπολιόρκηκε τοὺς πολεμίους.</p>
+            </div>
+            <div n="5" type="verse">
+               <p>καὶ ὁ τύραννος Ἀντίοχος
 καὶ ἐπὶ γῆς τετιμώρηται, καὶ ἀποθανὼν κολάζεται· ὡς γὰρ οὐδὲν
 οὐδαμῶς ἴσχυσεν ἀναγκάσαι τοὺς Ἰεροσολυμείτας ἀλλοφυλῆσαι, καὶ
-τῶν πατρίων ἐθνῶν ἐκδιαιτηθῆναι,</p></div> <div type="textpart" subtype="verse" n="6"><p>τότε δὴ ἀπάρας ἀπὸ τῶν Ἰεροσολύμων
+τῶν πατρίων ἐθνῶν ἐκδιαιτηθῆναι,</p>
+            </div>
+            <div n="6" type="verse">
+               <p>τότε δὴ ἀπάρας ἀπὸ τῶν Ἰεροσολύμων
 ἐστρατοπέδευσεν ἐπὶ Πέρσας. Ἔλεγεν δὲ ἡ μήτηρ
-τῶν ἑπτὰ παίδων καὶ ταῦτα ἡ δικαία τοῖς τέκνοις</p></div> <div type="textpart" subtype="verse" n="7"><p>ὅτι Ἐγὼ ἐγενήθην
+τῶν ἑπτὰ παίδων καὶ ταῦτα ἡ δικαία τοῖς τέκνοις</p>
+            </div>
+            <div n="7" type="verse">
+               <p>ὅτι Ἐγὼ ἐγενήθην
 παρθένος ἁγνή, καὶ οὐχ ὑπερέβην πατρικὸν οἶκον· ἐφύλασσον δὲ τὴν
-ᾠκοδομημένην πλευράν.</p></div> <div type="textpart" subtype="verse" n="8"><p>οὐ διέφθειρέν με λυμεὼν τῆς ἐρημίας
+ᾠκοδομημένην πλευράν.</p>
+            </div>
+            <div n="8" type="verse">
+               <p>οὐ διέφθειρέν με λυμεὼν τῆς ἐρημίας
 φθορεὺς ἐν πεδίῳ· οὐδὲ ἐλυμήνατό μου τὰ ἁγνὰ τῆς παρθενίας λυμεὼν
-ἀπάτης ὄφις· ἔμεινα δέ χρόνον ἀκμῆς σὺν ἀνδρί</p></div> <div type="textpart" subtype="verse" n="9"><p>τούτων δέ
-<note type="marginal">U+05D0V</note><note type="footnote">22 δια] της U+05D0* (δια U+05D0c.a) θανατου] pr του U+05D0 | προκακωθεντα τον Ισλ U+05D0
+ἀπάτης ὄφις· ἔμεινα δέ χρόνον ἀκμῆς σὺν ἀνδρί</p>
+            </div>
+            <div n="9" type="verse">
+               <p>τούτων δέ
+<note type="marginal">U+05D0V</note>
+                  <note type="footnote">22 δια] της U+05D0* (δια U+05D0c.a) θανατου] pr του U+05D0 | προκακωθεντα τον Ισλ U+05D0
 23 ανδρειαν V τη 2⁰] της A om ουτων 2⁰ αφιδων] 1δῶν V ανεκηρυξεν
 ο Αντιοχος U+05D0 ανεκ. Αντ. V υποδειγμα 24 om και ανδρειους
 εκπορθουντας XV III 1 Αβρααμιθιων U+05D0* Ἀβρααμιαιων U+05D0c.a Ισδρα-
@@ -1500,30 +2787,68 @@ om παιδων V η δικαια] τα δικαιωματα U+05D0 ιδια V 7
 ουδε U+05D0 om και V ωκοδομουμενην A οικοδομουμενην U+05D0 οικοδομημενην V 8 ου
 διεφθειρεν] ουδε εφθιρεν U+05D0 | της ερημιας] τ sup ras A (seq spat 4 lilt) om της U+05D0V |
 απατης A*U+05D0c.a ᵇV| απατηλος Aa¹ απατητης U+05D0* | εμειν A* (α superscr Aᵃ?)</note>
-
-<pb n="761"/>
+                  <pb n="761"/>
 ἐνηλίκαων γενομέναον ἐτελεύτησεν ὁ πατήρ. μακάριος μέν ἐκεῖνος· τὸυ <note type="marginal">A</note>
 γὰρ τῆς εὐτεκνίας βίον ἐπιζητήσας, τὸν τῆς ἀτεκνίας οὐκ ὠδυνήθη
-καιρόν·</p></div> <div type="textpart" subtype="verse" n="10"><p>ὸς ἐδίδασκεν ὑμᾶς, ἔτι ὧν σὺν ἡμῖν, τὸν νόμον καὶ τοὺς
-προφήτας</p></div> <div type="textpart" subtype="verse" n="11"><p>τὸν ἀναιρεθέντα Ἅβελ ὑπὸ Κάιν ἀνεγίνωσκεν δὲ ἡμῖν,
-καὶ τὸν ὁλοκαρπούμενον Ἰσαάκ, καὶ τὸν ἐν φυλακῇ Ἰωσήφ·</p></div> <div type="textpart" subtype="verse" n="12"><p>ἔλεγεν
+καιρόν·</p>
+            </div>
+            <div n="10" type="verse">
+               <p>ὸς ἐδίδασκεν ὑμᾶς, ἔτι ὧν σὺν ἡμῖν, τὸν νόμον καὶ τοὺς
+προφήτας</p>
+            </div>
+            <div n="11" type="verse">
+               <p>τὸν ἀναιρεθέντα Ἅβελ ὑπὸ Κάιν ἀνεγίνωσκεν δὲ ἡμῖν,
+καὶ τὸν ὁλοκαρπούμενον Ἰσαάκ, καὶ τὸν ἐν φυλακῇ Ἰωσήφ·</p>
+            </div>
+            <div n="12" type="verse">
+               <p>ἔλεγεν
 δὲ ἡμῖν τὸν ζηλωτὴν Φινεές, ἐδίδασκεν δὲ ὑμᾶς τοὺς ἐν πυρὶ Ἀνανίαν
-καὶ Ἀζαρίαν καὶ Μισαήλ·</p></div> <div type="textpart" subtype="verse" n="13"><p>ἐδόξαζεν δὲ καὶ τὸν ἐν λάκκῳ λεόντων
-Δανιὴλ, ὃν καὶ ἐμακάριζεν·</p></div> <div type="textpart" subtype="verse" n="14"><p>ὑπεμίμνησ κεν δὲ ὑμᾶς τὴν Ἠσαίου
-γραφὴν τὴν λέγουσαν Κδν διὰ πυρὸς διέλθῃς, φλὸξ οὐ κατακαύσει σε.</p></div>
-<div type="textpart" subtype="verse" n="15"><p>τὸν ὑμνογράφον ἐμελῴδει ἡμῖν Δαυεὶδ τὸν λέγοντα Πολλαὶ αἱ
-θλίψεις τῶν δικαίων.</p></div> <div type="textpart" subtype="verse" n="16"><p>τὸν Σαλομῶντα ἐπαροιμίαζεν ἡμῖν τὸν λέγοντα
-Ξλον ζωῆς ἐστιν πᾶσιν τοῖς ποιοῦσιν αὐτοῦ τὸ θέλημα.</p></div> <div type="textpart" subtype="verse" n="17"><p>τὸν
-Ἰεζεκιὴλ ἐπιστοποιεῖτο τὸν λέγοντα Εἰζήσεται τὰ ὀστᾶ τὰ ξηρὰ ταῦτα;</p></div>
-<div type="textpart" subtype="verse" n="18"><p>Αὀδὴν μέν γὰρ ἣν ἐδίδαξεν Μωσῆς οὐκ ἐπελάθετο τὴν διδάσκουσαν
-Ἐγὼ ἀποκτενῶ, καὶ ζῆν ποιήσω.</p></div> <div type="textpart" subtype="verse" n="19"><p>Αλὕτη ἡ ζωὴ ὑμῶν καὶ ἡ μακαριότης
-τῶν ἡμερῶον.</p></div>
- <div type="textpart" subtype="verse" n="20"><p>Ὦ πικρᾶς τῆς τότε ἡμέρας, καὶ οὐ πικρᾶς, ὅτε ὁ πικρὸς Ἐλλήνων
+καὶ Ἀζαρίαν καὶ Μισαήλ·</p>
+            </div>
+            <div n="13" type="verse">
+               <p>ἐδόξαζεν δὲ καὶ τὸν ἐν λάκκῳ λεόντων
+Δανιὴλ, ὃν καὶ ἐμακάριζεν·</p>
+            </div>
+            <div n="14" type="verse">
+               <p>ὑπεμίμνησ κεν δὲ ὑμᾶς τὴν Ἠσαίου
+γραφὴν τὴν λέγουσαν Κδν διὰ πυρὸς διέλθῃς, φλὸξ οὐ κατακαύσει σε.</p>
+            </div>
+            <div n="15" type="verse">
+               <p>τὸν ὑμνογράφον ἐμελῴδει ἡμῖν Δαυεὶδ τὸν λέγοντα Πολλαὶ αἱ
+θλίψεις τῶν δικαίων.</p>
+            </div>
+            <div n="16" type="verse">
+               <p>τὸν Σαλομῶντα ἐπαροιμίαζεν ἡμῖν τὸν λέγοντα
+Ξλον ζωῆς ἐστιν πᾶσιν τοῖς ποιοῦσιν αὐτοῦ τὸ θέλημα.</p>
+            </div>
+            <div n="17" type="verse">
+               <p>τὸν
+Ἰεζεκιὴλ ἐπιστοποιεῖτο τὸν λέγοντα Εἰζήσεται τὰ ὀστᾶ τὰ ξηρὰ ταῦτα;</p>
+            </div>
+            <div n="18" type="verse">
+               <p>Αὀδὴν μέν γὰρ ἣν ἐδίδαξεν Μωσῆς οὐκ ἐπελάθετο τὴν διδάσκουσαν
+Ἐγὼ ἀποκτενῶ, καὶ ζῆν ποιήσω.</p>
+            </div>
+            <div n="19" type="verse">
+               <p>Αλὕτη ἡ ζωὴ ὑμῶν καὶ ἡ μακαριότης
+τῶν ἡμερῶον.</p>
+            </div>
+            <div n="20" type="verse">
+               <p>Ὦ πικρᾶς τῆς τότε ἡμέρας, καὶ οὐ πικρᾶς, ὅτε ὁ πικρὸς Ἐλλήνων
 τύραννος πῦρ φλέξας λέβησιν ὠμοίς, καὶ ζέουσι θυμοῖς ἀγαγὼν ἐπὶ
 τὸν καταπέλτην καὶ πάλιν τὰς βασάνους αὐτοῦ τοὺς ἑπτὰ παῖδας
-τῆς Ἀβραμίτιδος,</p></div> <div type="textpart" subtype="verse" n="21"><p>τὰς τῶν ὀμμάτων κόρας ἐπήρωσεν, καὶ γλώσσας
-ἐξέτεμεν, καὶ βασάνοις ποικίλαις ἀπέκτεινεν.</p></div> <div type="textpart" subtype="verse" n="22"><p>ὑπέρ ἱὧν ἡ θεία
-δίκη μετῆλθεν καὶ μετελεύσεται τὸν ἀλάστορα.</p></div> <div type="textpart" subtype="verse" n="23"><p>οἱ δῆ Ἀβραμιαῖοι
+τῆς Ἀβραμίτιδος,</p>
+            </div>
+            <div n="21" type="verse">
+               <p>τὰς τῶν ὀμμάτων κόρας ἐπήρωσεν, καὶ γλώσσας
+ἐξέτεμεν, καὶ βασάνοις ποικίλαις ἀπέκτεινεν.</p>
+            </div>
+            <div n="22" type="verse">
+               <p>ὑπέρ ἱὧν ἡ θεία
+δίκη μετῆλθεν καὶ μετελεύσεται τὸν ἀλάστορα.</p>
+            </div>
+            <div n="23" type="verse">
+               <p>οἱ δῆ Ἀβραμιαῖοι
 <note type="footnote">9 ἐνηλίκων] ενικων (sic) A πατηρ] ουτων U+05D0V μεν] δε U+05D0* (μεν U+05D0c.ᵃ) | U+05D0V
 επιζητξσας] επιζησας U+05D0c.a V 10 ημιν A⁽ᵛⁱᵈ) V] υμιν U+05D0 om και U+05D0* (hab
 U+05D01(vid) c.ᵃ) V 11 δε] τε τγ ημιν] υμιν Ισακ U+05D0* (Ισαακ U+05D0c.a)
@@ -1544,21 +2869,20 @@ om ο U+05D0* (hab U+05D0c.a) V Bλληνων] + ω| U+05D0* (improb U+05D0c.a) 
 ras Aᵇ) των ομμ. κορος] και των ομμ. τας κ. U+05D0 pr και V επηρωσεν U+05D0¹ (incep
 λ ante επ. U+05D0*)] επληρωσεν A V γλωσσα| U+05D0* (γλωσσας U+05D0c.a) ποικειλοις A
 22 αλαστορα] + τυραννον U+05D0 23 Αβρααμιαιοι U+05D0</note>
-
-<lb n="762"/>
-<note type="marginal">A</note> παίδες σὺν τῇ άθλοφόρῳ νητρὶ εἰς πατέρων χώρον συναγελάζονται,
-ψυχὰς ἁγνὰς καὶ ἀθανάτους ἀπειληφότες παρὰ τοῦ θεοῦ·</p></div> <div type="textpart" subtype="verse" n="24"><p>ᾧ ᾑ δόξα
-εἰς τοὺς αἰῶνας τῶν αἰώνων. ἀμήν.</p></div>
-<note type="marginal">U+05D0V</note><note type="footnote">23 αθλοφορω]+ αυτοω V | εις] U+05D0* (ειw U+05D0c.a) | χωρον] χορον U+05D0 | συνα-
+                  <lb n="762"/>
+                  <note type="marginal">A</note> παίδες σὺν τῇ άθλοφόρῳ νητρὶ εἰς πατέρων χώρον συναγελάζονται,
+ψυχὰς ἁγνὰς καὶ ἀθανάτους ἀπειληφότες παρὰ τοῦ θεοῦ·</p>
+            </div>
+            <div n="24" type="verse">
+               <p>ᾧ ᾑ δόξα
+εἰς τοὺς αἰῶνας τῶν αἰώνων. ἀμήν.</p>
+            </div>
+            <note type="marginal">U+05D0V</note>
+            <note type="footnote">23 αθλοφορω]+ αυτοω V | εις] U+05D0* (ειw U+05D0c.a) | χωρον] χορον U+05D0 | συνα-
 γελαζονται] ευαγγελιζονται U+05D0* (συναυ. U+05D0c.a) | αθανατους AaU+05D0c.aV] αθλο-
 φορους U+05D0* Α* fort (νατους sup ras) | του θεου] om του U+05D0* (hab U+05D0c.a) V
 24 om των αιωνων V</note>
-</div>
-
-
-
-
-    </div>
-  </body>
-</text>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,103 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">
-<fileDesc>
-<titleStmt>
- <title xml:lang="grc">Περὶ καταρχῶν</title>
-<author xml:lang="lat">Maximus, Astrologus</author>
-<editor>Arthur Ludwich</editor>
- <funder>Harvard Library Arcadia Fund</funder>
- <principal>Gregory Crane</principal>
- <respStmt>
-  <persName xml:id="DDD">Digital Divide Data</persName>
-  <resp>Corrected and encoded the text</resp>
- </respStmt>
- <respStmt>
-  <persName>Gregory Crane</persName>
-  <resp>Editor-in-Chief, Perseus Digital Library</resp>
- </respStmt>
- <respStmt>
-  <persName>Matt Munson</persName>
-  <resp>Project Manager (University of Leipzig)</resp>
- </respStmt>
- <respStmt>
-  <persName>Annette Gessner</persName>
-  <resp>Project Assistant (University of Leipzig)</resp>
- </respStmt>
- <respStmt>
-  <persName>Thibault Clérice</persName>
-  <resp>Lead Developer (University of Leipzig)</resp>
- </respStmt>
- <respStmt>
-  <persName>Bruce Robertson</persName>
-  <resp>Technical Advisor</resp>
- </respStmt>
-</titleStmt>
-<publicationStmt>
-<authority>Harvard College Library</authority>
-<idno type="filename">tlg1487.tlg001.1st1K-grc1.xml</idno>
-<availability>
- <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="grc">Περὶ καταρχῶν</title>
+            <author xml:lang="lat">Maximus, Astrologus</author>
+            <editor>Arthur Ludwich</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg1487.tlg001.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
  License</licence>
-</availability>
-<date>2016</date>
-<publisher>Harvard College Library</publisher>
-<pubPlace>United States</pubPlace>
-</publicationStmt>
-<sourceDesc>
-<listBibl>
- <biblStruct>
- <monogr>
-  <title xml:lang="lat">Maximi et Ammonis carminum de actionum auspiciis reliquiae</title>
-  <editor>
-	<persName>
-	 <name>Arthur Ludwich</name>
-	</persName>
-  </editor>
-  <author ref="urn:cts:greekLit:tlg1487" xml:lang="lat">Maximus, Astrologus</author>
-  <imprint>
-	<publisher>Leipzig</publisher>
-	<pubPlace>Teubner</pubPlace>
-	<date>1877</date>
-  </imprint>
- </monogr>
-  <ref target="http://hdl.handle.net/2027/mdp.39015028371915">Hathi Trust</ref>
- </biblStruct>
-</listBibl>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
-<p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-   <refsDecl n="CTS">
-  <cRefPattern matchPattern="(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
- </refsDecl>
-</encodingDesc>
-<profileDesc>
-<langUsage>
-<language ident="grc">Greek</language>
-<language ident="lat">Latin</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change/>
-</revisionDesc>
-</teiHeader>
-<text>
-	<body>
-	 <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1487.tlg001.1st1K-grc1">
-<div type="textpart" subtype="chapter" n="praef">
-<pb n="3"/>
-<p>Εἰ δʼ ἄγε μοι κούρη Πιμπληιὰς ἔννεπε Μοῦσα <note type="marginal">1a</note>
+            </availability>
+            <date>2016</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Maximi et Ammonis carminum de actionum auspiciis reliquiae</title>
+                     <editor>
+                        <persName>
+                           <name>Arthur Ludwich</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg1487" xml:lang="lat">Maximus, Astrologus</author>
+                     <imprint>
+                        <publisher>Leipzig</publisher>
+                        <pubPlace>Teubner</pubPlace>
+                        <date>1877</date>
+                     </imprint>
+                  </monogr>
+                  <ref target="http://hdl.handle.net/2027/mdp.39015028371915">Hathi Trust</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(\w+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre"
+                    target="#verse-stichic"
+                    cert="low"
+                    resp="#corpus-tools"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="edition"
+              xml:lang="grc"
+              n="urn:cts:greekLit:tlg1487.tlg001.1st1K-grc1">
+            <div type="textpart" subtype="chapter" n="praef">
+               <pb n="3"/>
+               <p>Εἰ δʼ ἄγε μοι κούρη Πιμπληιὰς ἔννεπε Μοῦσα <note type="marginal">1a</note>
 Μήνην ἠερόφοιτον, ὅπως ἄνδρεσσιν ἕκαστα
 σημαίνει σκολιωπὸν ἐπιστείχουσα κέλευθον.</p>
-</div>
-<div type="textpart" subtype="chapter" n="1">
-<head>I. Περὶ γενέσεως.</head>
-<p>ἢν δʼ ἴσχῃ Κρονίωνα Σεληναίη ἅμα δίῃ <lb n="606"/>
+            </div>
+            <div type="textpart" subtype="chapter" n="1">
+               <head>I. Περὶ γενέσεως.</head>
+               <p>ἢν δʼ ἴσχῃ Κρονίωνα Σεληναίη ἅμα δίῃ <lb n="606"/>
 ἐν γενέθλῃ, παράδος μιν ἐπʼ ἠγάθεον Φαέθοντα
 * * *</p>
-<note type="footnote">Titulum in praecedente folio positum, qu cum carminis
+               <note type="footnote">Titulum in praecedente folio positum, qu cum carminis
 initio periit in L; exhibui secutus mataphrasten codicis M col-
 lata subscriptione codicis L; vulgo Μαξίμου φιλοσόφου περὶ
 καταρχῶν ex Suida, qui haec habet: Μάξιμος Ἠπειρώτης
@@ -105,7 +115,7 @@ lata subscriptione codicis L; vulgo Μαξίμου φιλοσόφου περὶ
 Παραβάτου. ἔγραψε περὶ ἀλύτων ἀντιθέσεων, περὶ καταρ-
 χῶν, περὶ ἀριθμῶν, ὑπόμνημα εἰς Ἀριστοτέλην καὶ ἄλλα τινὰ
 πρὸς τὸν αὐτὸν Ἰουλιανόν.</note>
-<note type="footnote">‘Desunt multa’ f, plena lacunae signa posuit k. — Tres
+               <note type="footnote">‘Desunt multa’ f, plena lacunae signa posuit k. — Tres
 versus 1abc ex codice M iam a Bandinio (Catalog. codd. Gr.
 bibl. Laurent. t. II p. 61) editos ipsum initium carminis esse
 primus vidit anon. Ien. p. 250, om. v. — 1b ἱεροφοιτον M,
@@ -119,20 +129,17 @@ k ex coni. Dorvillii p. 663. nominativum retinui, cum Luna sub-
 iectum esse debeat, ut ex similibus locis (ex. gr. 364) intellegi-
 tur. — ἁμαδίη Lf, corr. Dorvill. l. l. an ἅμα δῖα? — Tzetzes
 ad Lycophr. vs. 523 δείκνυσι δὲ καὶ Ὀρφευς τὴν τούτων δια-</note>
-</div>
-
-<div type="textpart" subtype="chapter" n="2">
-<pb n="4"/>
-<head>II. Περὶ κτήσεως δούλων.</head>
-</div>
-
-<div type="textpart" subtype="chapter" n="3">
-<head>III. Περὶ πλοῦ καὶ ἐμπορίας.</head>
-</div>
-
-<div type="textpart" subtype="chapter" n="4">
-<head>IV. Περὶ ὁδοιπορίας.</head>
-<p>εἰ δὲ Νεμειήταο μέσην κατὰ μοῖραν ὁδεύοι
+            </div>
+            <div type="textpart" subtype="chapter" n="2">
+               <pb n="4"/>
+               <head>II. Περὶ κτήσεως δούλων.</head>
+            </div>
+            <div type="textpart" subtype="chapter" n="3">
+               <head>III. Περὶ πλοῦ καὶ ἐμπορίας.</head>
+            </div>
+            <div type="textpart" subtype="chapter" n="4">
+               <head>IV. Περὶ ὁδοιπορίας.</head>
+               <p>εἰ δὲ Νεμειήταο μέσην κατὰ μοῖραν ὁδεύοι
 δευτέρῃ εἰν ἠοῖ, ἀγανωτέρη ἔσσεται οἶμος
 <note type="footnote">φοράν, οὑτωσὶ λέγων ἐν ταῖς Δωδεκαετηρίσιν ‘ἔσται δʼ οὖ τις
 (αὖτις Lobeck. Aglaoph. p. 425) ἀνὴρ ἢ κοίρανος ἠὲ τύραννος
@@ -163,14 +170,13 @@ sine accentu. — ὁδεῦοι L. — 2 δευτέρη L ac similiter δίη 3
 26, al. sine iota. — ἐν ιοῖ L, εἰν ἠοῖ v. — οῖμοσ L spiritu
 omisso ut in ήματι 3, οῖκόν et αῦτισ 10, οπωρινοῖσ 11, αίτ᾿ 12
 εντύνηται 16, όγ᾿ 17, οῖκον 31, άπασαν 33, ἐξεισ et οῦδασ 34, al. —</note>
-
-<pb n="5"/>
+                  <pb n="5"/>
 ἤματι, νυκτὶ δὲ δίῃ ἀπειρέσια τρύχουσα,
 μαψίδιοί τε πέλοιντο πόνοι τῆμόσδε βροτοῖσι
 γαίῃ ἐν ἀλλοδαπῇ· τῷ καὶ πεφυλαγμένος εἴης, <lb n="5"/>
 μή σε λάθῃ κούρης Θειαντίδος ὠκέα κύκλα
 λοίγιον εἰς ὁρμὴν εἱλεύμενα θηρὸς ἐν αἴγλῃ.</p>
-<p>εἰ δὲ κόρην αὐγῇσι περισκέπτοις ἐπιλάμποι
+               <p>εἰ δὲ κόρην αὐγῇσι περισκέπτοις ἐπιλάμποι
 Ἀστραίην, δηρὸν μὲν ὁμιλήσεις ξένῃ αἴῃ,
 ἀβλαβέως δʼ οἶκόν τε φίλους τʼ εἰσόψεαι αὖτις. <lb n="10"/>
 εἰ δέ κʼ ὀπωρινοῖς ἐνὶ γλήνεσιν αὐγάζοιτο
@@ -203,21 +209,21 @@ vill. p. 669, εἰ δέ κʼ corr. g imrobante anon. Ien. p. 252 (qui
 εἰ δέ τʼ coniecit), probante anonymo Hal. p. 826 (qui cum anon.
 Ien. l.l. etiam de εἰ δέ γʼ cogitabat). — 12 χηλάων L. — τʼ αίτ᾿
 L, αἵ τʼ τ᾿ f, αἵ τ᾿ g, αἵτ᾿ k. — Post hunc versum quaedam</note>
-
-<pb n="6"/>
+                  <pb n="6"/>
 ἦ μὲν ἐπὶ πρήξει τε καὶ ἔργοις ἰθυδίκοισιν
 οὔτε τι χάρμα φέρει περιώσιον οὔτε τι πῆμα·
 εἰ δέ τʼ ἐπὶ σκολιοῖσι καὶ οὐκ εὐήρεσιν ἔργοις <lb n="15"/>
 τημόσδ’ ἐντύνηται ὁδὸν πολυπαίπαλος ἀνήρ,
 ἦ τε παλιμποίνοισιν ὅγʼ ἐγκύρσειε δίκῃσιν.</p>
-<p>εἰ δὲ πέλοι Τιτηνὶς ἐν ἄστρασιν ἠερίοισι
+               <p>εἰ δὲ πέλοι Τιτηνὶς ἐν ἄστρασιν ἠερίοισι
 Σκορπίου αἰθερίοιο, φέροιό κεν ἐσθλὸν ὄνειαρ <lb n="19"/>
 εἰδώλῳ ἐνὶ τῷδε Σεληναίην ἐσαθρήσας. <lb n="24"/>
 εἰ δέ κεν οἰκείηνδε λιλαίεαι ἀπονέεσθαι, <lb n="20"/>
 καὶ δʼ ἂν ἐπίκρυφον οἶμον ἐπιφραδέως ἀνέλοιο,
 δεικήλῳ δʼ ἐνὶ τῷδε φάοι πανδῖα Σελήνη,
-κερδαλέον κʼ ἀνύσαιο θοῶς ἐρικυδὲς ὄνειαρ.</p> <lb n="23"/>
-<p>εἰ δʼ ἄρα τοξευτῆρος ἐλαφροῦ φαίδιμον ἄστρον <lb n="25"/>
+κερδαλέον κʼ ἀνύσαιο θοῶς ἐρικυδὲς ὄνειαρ.</p>
+               <lb n="23"/>
+               <p>εἰ δʼ ἄρα τοξευτῆρος ἐλαφροῦ φαίδιμον ἄστρον <lb n="25"/>
 Τιτηνὶς φαιδρῇσιν ἐπαυγάζοι ἀμαρυγαῖς,
 <note type="footnote">excidisse indicavit g. — 13 εἰ μὲν Lv, ‘post hunc versum lacu-
 nae signa posui. alioquin vs. 16 post eum esset transferen-
@@ -241,8 +247,7 @@ Lith. vs. 247, corr. g. — 22 πανδία L, idem vitium 113 123
 25 εἰ δʼ ἀῦ L (‘nec quin εἰ δʼ αὖ verum sit dubitari potest’
 k*), εἰ δέ κε v, reddidi nostro quod amat εἰ δʼ ἄρα coll. 131
 208 253 320 367 382 509 544. — 26 ἐπαυγάζηι Lv, optativum</note>
-
-<pb n="7"/>
+                  <pb n="7"/>
 γαῖαν ἐς ἀλλοδαπὴν δʼ ἐθέλοις τῆμόσδε νέεσθαι,
 ἡ τʼ ἂν ἔτι προτέρω δολιχὴν τελέσειας ἀταρπὸν
 δηθύνων, καὶ δηρὸν ἀπέσσεαι· ἀσπασίως δὲ
@@ -251,18 +256,18 @@ k*), εἰ δέ κε v, reddidi nostro quod amat εἰ δʼ ἄρα coll. 131
 ἐς δὲ πάτρην νόστησον ἰδὼν ἐριῶπα Σελήνην
 Τοξευτῆρι θέουσαν ὁμοῦ· τῆμος γὰρ ἅπασαν
 εὐφροσύνην ἕξεις ἐσιδὼν πατρώιον οὖδας.</p>
-<p>μὴ μὲν ὁδοιπορίης μιμνήσκεο φάεʼ ἀθρήσας <lb n="35"/>
+               <p>μὴ μὲν ὁδοιπορίης μιμνήσκεο φάεʼ ἀθρήσας <lb n="35"/>
 Μήνης Αἰγοκερῆος ἐν ἄστρασιν οἰχνεύοντα·
 ἦ γάρ σοι δολιχός τε πόρος καὶ ἄπρηκτα κέλευθα
 ἐσσεῖται, καὶ δʼ ἄν κε κατηφείῃσιν ἔχοιο.
 πάτρην δʼ εἰσανιόντι μετʼ Αἰγοκερῆος ἐοῦσα
 ὑψίκερως Μήνη πρηῢν καὶ ἀπήμονα νόστον <lb n="40"/>
 σημαίνει· σὺ δὲ μή τι νόῳ νοσφίζεο τῶνδε.</p>
-<p>Ὑδροχόου δʼ ἠὼ πρώτην πεφυλαγμένος ἔσσο·
+               <p>Ὑδροχόου δʼ ἠὼ πρώτην πεφυλαγμένος ἔσσο·
 εἰ δέ γε δεύτερον ἦμαρ ἄγοι, πρηεῖά κεν εἴη
 καὶ πρῆξίν κε φέρῃσιν ἀπήμονα κερδαλέην τε.</p>
-<p>Ἰχθύσι δʼ εἰαρινοῖσιν ἐπὶ στρατιὴν πόλεμόν τε <lb n="45"/>
-<note type="footnote">scripsi cum Wittingio (de usu coniunctivi et optativi in enun-
+               <p>Ἰχθύσι δʼ εἰαρινοῖσιν ἐπὶ στρατιὴν πόλεμόν τε <lb n="45"/>
+                  <note type="footnote">scripsi cum Wittingio (de usu coniunctivi et optativi in enun-
 tiationibus secundariis apud epicos Graecos. Halae 1867 p. 49),
 nam coniunctivus vs. 382 εἰ δʼ ἄρ᾿ ἐν εἰαρινοῖσι φαεινομένη
 φορέηται metro excusatur. — 28 ἠ τʼ L, ἤ τʼ f, ἦτ᾿ g, ἦ τ᾿ k.
@@ -277,12 +282,11 @@ L et eodem modo 69 71 89 97 127 135 158 171 185 231 253
 — πρηΐα Lf (sed 201 πρηεία L), corr. Dorvill. p. 659 et g. —
 44 γε L, κ superscr. l, κε v. — 45 εἱαρινοῖσιν L, item 255 et
 382. — στρατίην Lf. —</note>
-
-<pb n="8"/>
+                  <pb n="8"/>
 στειχέμεναι, καὶ δʼ ἄν κε φέροι γριπεῦσιν ὄνειαρ,
 ἠδὲ καὶ ὅσσοι φῶτες ἀνὰ δρυμὰ βησσήεντα
 στείχοντες ταχινῇσι κυνηλασίῃσι μέλονται.</p>
-<p>χρὴ δὲ καὶ εἰς ἑτέρους σε περιφραδέως ἐσαθρῆσαι
+               <p>χρὴ δὲ καὶ εἰς ἑτέρους σε περιφραδέως ἐσαθρῆσαι
 ἀστέρας, ἢν κεραῆς ταυρώπιδος ἀργέτιν αἴγλην <lb n="50"/>
 δέρκωνται τετράγωνον ἐπιστείχοντες ἀταρπόν,
 ἠὲ τρίπλευρον ἔχωσι Σεληναίης ἀμαρυγήν,
@@ -292,11 +296,10 @@ L et eodem modo 69 71 89 97 127 135 158 171 185 231 253
 βαίνουσαν κατὰ μέτρον ἐυσταθέων εἰδώλων,
 θαρσήσας ξείνης ἐπὶ ἤθεα καλὰ πόληος
 στειχέμεναι, καὶ δʼ ἄν τοι ἀτάρβητος πέλοι οἶμος.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="5">
-<head>V. Περὶ γάμου.</head>
-<p>Εἰ δὲ γάμου λελίησαι ἐπαυρέμεν ἱμερόεντος,
+            </div>
+            <div type="textpart" subtype="chapter" n="5">
+               <head>V. Περὶ γάμου.</head>
+               <p>Εἰ δὲ γάμου λελίησαι ἐπαυρέμεν ἱμερόεντος,
 <note type="footnote">46 φέροιο Lf, φέροις Iacobs. ad AG. VII 504, 12, em. Dorvill.
 p. 663 et Spitzner de vers. her. p. 45. — 48 ταχυνῇσι f. — 49
 σὲ L. — ἐσαθρήσας f. — 50 ο habebat L, ὁι corr. l, οἳ v,
@@ -316,8 +319,7 @@ quod alii in mentem venire possit αὖ τοι consulto posthabui’ k.
 attamen ἄν τοι codox ‘recte, nec quicquam omissum. etiam
 paraphrasis indicat non loqui poetam de reditu’ d assentiente
 k*. — Post hunc versum lacunae signa posuit k reprobante k*.</note>
-
-<pb n="9"/>
+                  <pb n="9"/>
 ἐς θαλάμους δʼ ἀγαγέσθαι ἐνηέα βούλεαι εὖνιν, <lb n="60"/>
 σκέπτεσθαι κεραὴν ἑλικόδρομον. ἢν μὲν ἔῃσι
 Τοξευτῆρα κατʼ αὐτὸν ἢ Ἰχθύας ὑγροκελεύθους,
@@ -329,7 +331,7 @@ k*. — Post hunc versum lacunae signa posuit k reprobante k*.</note>
 ἔσται δʼ ἠπιόμυθος, ἐχέφρων. ἀγλαοεργός,
 ἥντε κεν ἤμασι τοῖσδε πορών περικαλλέα ἕδνα
 κουριδίην οἰκοισιν ἑοῖς ἐσάγηται ἄνασσαν <lb n="70"/>
-<note type="footnote">60 εὐνιν L, εὖνιν v, εὐνὶν anon. Ien. p. 252 et anon. Hal.
+                  <note type="footnote">60 εὐνιν L, εὖνιν v, εὐνὶν anon. Ien. p. 252 et anon. Hal.
 p. 827, sed v. Lentzii Herodian. I p. 95, 9 et II p. 701, 3. —
 61 ἑλικόδρόμον L. — κʼ ἠν L, κᾒν f, ἢν em. Dorvill. p. 657.
 — ἔησιν L, ἔῃσι fg, ἔῃσιν k. — 62 Ad hunc versum referen-
@@ -356,10 +358,9 @@ praestat ἥν κεν ἐν coll. 210. — πόρῶν L, πόρων f. — π�
 AG. IX 621, 4. vide ad vs. 355. — 70 εἰσηται L sine accentu
 (quo ‘dubitationem librarii de integritate scripturae’ indicari
 opinabatur d, sed vide ad vs. 8), εἰσῆται fg, εἰσῆκται Dorvill.</note>
-
-<pb n="10"/>
+                  <pb n="10"/>
 ἀνήρ, εἰ μονίην στυγέοι καὶ ἐλεύθερον ἦμαρ.</p>
-<p>ἢν δʼ ἄρα νυκτιφαὴς ἐπέχῃ κλυτοῦ Ἀρνειοῖο
+               <p>ἢν δʼ ἄρα νυκτιφαὴς ἐπέχῃ κλυτοῦ Ἀρνειοῖο
 ἀστέρας, ἢ Ταύροιο κατʼ εὐκεράοιο πολεύῃ,
 μὴ σύγε μοι μνώοιο πολυκτεάνων ὑμεναίων·
 τεύξει γὰρ φαέθουσα Σεληναίη κλυτόπωλος <lb n="75"/>
@@ -369,7 +370,7 @@ opinabatur d, sed vide ad vs. 8), εἰσῆται fg, εἰσῆκται Dorvil
 τεύξει ὁμοφροσύνην· τῷ σε φράζεσθαι ἄνωγα,
 ὁππότʼ ἐνὶ Κριοῖο παλιστρέπτοιο κελεύθῳ <lb n="80"/>
 αἴγλῃ ἐρευθομένην ἐσίδῃς χρυσάμπυκα Μήνην.</p>
-<p>εἰ δὲ κόραις Ἄτλαντος ὁμὴν ἀνύῃσι κέλευθον,
+               <p>εἰ δὲ κόραις Ἄτλαντος ὁμὴν ἀνύῃσι κέλευθον,
 ἢ καὶ μαινομένῃσιν ἐφʼ Τάσιν ἰνδάλληται,
 αἵτε κατʼ εὐκραίρητος ἐρυγμήλοιο φέρονται
 Σιδονίου Ταύροιο, καὶ ἐς δόμον ἀρτύνοιο <lb n="85"/>
@@ -393,8 +394,7 @@ ad AG. IX 524, 13, μαινομένῃσιν em. Dorvill. p. 656 addens
 448, πολληντευεστω 534, ἠδάλιον 537, al. — 85 Ταύρου Dor-
 vill. p. 655. — 86 ἕδνοισιν Lf, em. Iacobs. ad AG. IX 402. —
 χλιδάνην Lf. — 87 ἠτ L, ἤτ᾿ i. e. ἤτοι Dorvill. p 678, Υ τʼ v. —</note>
-
-<pb n="11"/>
+                  <pb n="11"/>
 ξυνὴν ὀθνείοισιν ἔχων δυσπέμφελον εὐνήν·
 οὐ γάρ κεν στέρξειεν ἑνὸς λέχος ἤμασι τοῖσδε
 γημαμένη, οὐδʼ εἰ νόον αἰνετὸν Ἰκαριώνης <lb n="90"/>
@@ -434,16 +434,16 @@ verbi finiti defectus indicat’ k, quod iam viderat anon. Ien.
 p. 252. (de ‘ὅς et sim. cum participio sine temp. finito v. me
 ad Soph. Oed. R. 1511. ibi adscriptis nunc addo Hom. II. VIII
 306’ Naeke l. l.) —</note>
-
-<pb n="12"/>
-Ταύρῳ ἐπεμβεβαυῖα Θεαντὶς χρυσοέθειρα.</p> <lb n="25"/>
-<p>εἰ δὲ Θεραπναίοισιν ἐπορνυμένη Διδύμοισι
+                  <pb n="12"/>
+Ταύρῳ ἐπεμβεβαυῖα Θεαντὶς χρυσοέθειρα.</p>
+               <lb n="25"/>
+               <p>εἰ δὲ Θεραπναίοισιν ἐπορνυμένη Διδύμοισι
 δεύτερον ἦμαρ ἄγῃσι, γάμου μεμνημένος εἶναι·
 οἰκοσόον γὰρ ἄκοιτιν ἐνὶ μεγάροισι κομίζοις.</p>
-<p>μὴ μὲν ἔοι φλογερῷ ἐνὶ Καρκίνῳ· ἡ γὰρ ἂν ὦκα
+               <p>μὴ μὲν ἔοι φλογερῷ ἐνὶ Καρκίνῳ· ἡ γὰρ ἂν ὦκα
 ἐκπροφύγοι μεγάρων ἄλοχος πόσιν ἐχθήρασα, <lb n="100"/>
 ἄσπετʼ ἐπεσβολέουσα καὶ ἄκριτα ποιφύσσουσα.</p>
-<p>εἰ δὲ τύχοι γλήνεσσι Νεμειήταο Λέοντος
+               <p>εἰ δὲ τύχοι γλήνεσσι Νεμειήταο Λέοντος
 Θειαντὶς κούρη φορέουσʼ ἐριλαμπέτιν αἴγλην,
 ἦ τʼ ἂν ὑπερφίαλόν τε δυσόργητόν τε γυναῖκα
 τέτμοι ἀνήρ, ἀτενεῖ δὲ νόῳ κεχαρημένη εἴη. <lb n="105"/>
@@ -473,26 +473,25 @@ quentis versus locum mutavit (cfr. ad vs. 43). — ὄρσολοπεύοι
 sic L, ὀρσοπολεύοι fg, corr. Meineke l. l. et k. — 108 ὀνειδίωι
 L, ὀνειδίωΐ f, ὀνειδίωί h, corr. Dorvill. p. 668 et Iacobs. ad
 AG. IX 573, 2 et Meineke l. l. — κε τε Lh, κέτε f, ἢ καὶ Dor-</note>
-
-<pb n="13"/>
+                  <pb n="13"/>
 μαφίδιοι μῦθοι, κενὰ δʼ ἔργματα τῇδε πέλοιντο.
 πολλάκι καὶ χείρεσσιν ἑὸν λωβήσετʼ ἀκοίτην <lb n="110"/>
 δρασσομένη χαίτης, ἢ καὶ ῥεθέεσσιν ἐφεῖσα
 ἀτηρὰς παλάμας, ἢ ἐπιρρήσσουσα χιτῶνας.</p>
-<p>ἢν δέ γε δῖα θεὰ Ὑπεριονὶς ἐν σταχύεσσιν
+               <p>ἢν δέ γε δῖα θεὰ Ὑπεριονὶς ἐν σταχύεσσιν
 Ἀστραίης κούρης εὐώπιδος αὐγάζηται,
 χήρην μοι τῆμόσδε συνάορον ἐντύναιο, <lb n="115"/>
 παρθενικὴν δʼ ἀλέασθαι, ἐπεὶ μογεροῦ βιότοιο
 αὐτή τʼ ἠδὲ πόσις κεχολώσεται ἤματα πάντα.</p>
-<p>ἢν δέ νυ Χηλάων ἐνὶ τείρεσιν αὐγάζηται,
+               <p>ἢν δέ νυ Χηλάων ἐνὶ τείρεσιν αὐγάζηται,
 κουριδίην μὲν ἀεικὲς ἑὸν ποτὶ δῶμʼ ἀγαγέσθαι,
 ὠνητὴ δʼ ἂν ἔοι πολὺ φιλτέρη, εὖτε πέληται <lb n="120"/>
 παλλακίς· ὧδε γὰρ ἄστρον ἀναγκαίῃ ὑπὸ λυγρῇ
 λέκτρον ἀεικέλιον γαμίων πάρος ἤγαγε θεσμῶν.</p>
-<p>εἰ δὲ πέλοι πανδῖα χαλαζήεντα κατʼ αὐτὸν
+               <p>εἰ δὲ πέλοι πανδῖα χαλαζήεντα κατʼ αὐτὸν
 Σκορπίον ἀλγινόεντα, τότʼ ἐν πρώτῃ γαμέοιο
 ἠοῖ παρθενικήν, καί κεν φρένας ἠπίη εἴη, <lb n="125"/>
-<note type="footnote">vill. p. 668, καί τοι Iacobs. l. l. et ad X 55, 5, καίτε g, καί τε
+                  <note type="footnote">vill. p. 668, καί τοι Iacobs. l. l. et ad X 55, 5, καίτε g, καί τε
 Meineke l. l. et k. cf. 159 226 306 308 434 447 457 486. —
 109 πέλοντο L, πέλοιντο v. — 110 λωβήσατ᾿ Lf, λωβήσαι Ia-
 cobs. ad AG. III 7, 4, λωβήσετʼ gk (‘de λωβήσατ’ adhuc incer-
@@ -510,24 +509,25 @@ l. l. et coni. Dorvill. p. 646. — εὔτε L, item 251 275 451. —
 Lf, παρεσήγαγε g cum Dorvillio p. 646, πάρος ἤραρε k. nihil
 mutavi propter ἐπιφέρει metaphrastae. — θεσμόν L, θεσμῶν v.
 — 123 Incipit fol. 2v L. —</note>
-
-<pb n="14"/>
+                  <pb n="14"/>
 ἀρτίφρων, ἀγανῇσι πεποιθυῖα πραπίδεσσιν·
 εἰ δʼ ἐς δεύτερον ἦμαρ ἢ ἐς τρίτον ἰθύσειεν,
 ἦ τʼ ἂν καὶ δμώεσσι δυηπαθέεσσι μιγείη.</p>
-<p>ἢν δὲ πελάζηται Μήνη κλυτῷ Αἰγοκερῆι,
+               <p>ἢν δὲ πελάζηται Μήνη κλυτῷ Αἰγοκερῆι,
 πρωτογάμῳ μὲν ἄγει λύπας καὶ πήματα λυγρά· <lb n="130"/>
 εἰ δʼ ἄρα δεύτερον ἴσχοι ἀνὴρ λέχος, ἔσσετʼ ἄμεινον,
 χήρην ὀπάσει παντερπέα τῷδε δάμαρτα.</p>
-<p>μὴ μὲν δὴ συνόδοισι Σεληναίης ἀγάγοιο
+               <p>μὴ μὲν δὴ συνόδοισι Σεληναίης ἀγάγοιο
 εὐνέτιν ἐν μεγάροισιν, ἢ ἐν διχομήνιδι πλείῃ·
-οὐ γάρ κεν γάμος εἴη ὀφέλλιμος ἤμασι τούτοις.</p> <lb n="135"/>
-<p>σκέπτεο δʼ εἴ κ᾿ ἐσθλοῖσι οὺν ἄστρασι δινεύηται,
+οὐ γάρ κεν γάμος εἴη ὀφέλλιμος ἤμασι τούτοις.</p>
+               <lb n="135"/>
+               <p>σκέπτεο δʼ εἴ κ᾿ ἐσθλοῖσι οὺν ἄστρασι δινεύηται,
 ἢ Φαέθοντι κλυτῷ ἢ Ἑωσφόρῳ αἰγλήεντι
 ἠὲ καὶ εὐπέπλου Μαίης ἐρικυδέι παιδί
 τεύξει γὰρ βιότῳ τε μέγα κλέος εὐφροσύνην τε
-ἤθεσι, μειλιχίην τε χάριν τʼ εὐεργέα δώσει.</p> <lb n="140"/>
-<note type="footnote">126 ἀγάνῆσι L, ἀγάνῃσι f. — πεπυιθοῖα f (non h. corr. iam Dorvill.
+ἤθεσι, μειλιχίην τε χάριν τʼ εὐεργέα δώσει.</p>
+               <lb n="140"/>
+               <note type="footnote">126 ἀγάνῆσι L, ἀγάνῃσι f. — πεπυιθοῖα f (non h. corr. iam Dorvill.
 p. 674). — 127 εἰ δέ τε . . . ἠ ἐκ L, εἰ δέ τε . . . ἠὲ v, sed correptio
 prioris syllabae in vocabulo ἠὲ (cfr. O. Schneideri Nicandrea
 p. 98) Maximo videtur displicuisse. itaque scripsi εἰ δʼ ἐς . . .
@@ -547,16 +547,15 @@ certe codex Laurentianus XXXII 16 habet σιγὴ γὰρ πάσησιν
 ται, sed prius ι ex ει correctum L, δινεύηται v, δινεύοιτο
 Witting. l. l. p. 49. sed cfr. 476. — 137 αἴγληεντι L. — 140
 ἤθεα Lfg, ἡδέα Iacobs. ad AG. V 108, 4, ἤθεσι k cum Dor-</note>
-</div>
-
-<div type="textpart" subtype="chapter" n="6">
-<pb n="15"/>
-<head>VI. Περὶ νόσων.</head>
-<p>Νῦν δʼ ἄγε μοι, κούρη Λιβηθριάς, ἔννεπε Μοῦσα,
+            </div>
+            <div type="textpart" subtype="chapter" n="6">
+               <pb n="15"/>
+               <head>VI. Περὶ νόσων.</head>
+               <p>Νῦν δʼ ἄγε μοι, κούρη Λιβηθριάς, ἔννεπε Μοῦσα,
 ὅσσα φέρει νούσοισιν ἀκήματα δῖα Σελήνη,
 ὅσσα τε λυγρὰ πέλονται ἐν εἰδώλοισι θεούσης
 δώδεκα, τοῖς ἔνι τέρμα πολυτλήτου βιότοιο.</p>
-<p>εἰ μέν γʼ εἰαρινοῖσιν ἐν ἄστρασιν Ἀρνειοῖο <lb n="145"/>
+               <p>εἰ μέν γʼ εἰαρινοῖσιν ἐν ἄστρασιν Ἀρνειοῖο <lb n="145"/>
 πασιφαὴς εἱλοῖτο βροτοῖς πανδῖα Σελήνη,
 ὁππότε τις νούσῳ ἀρημένος ἀλγινοέσσῃ
 ἀργαλέην ἴσχῃσι μεληδόνα, μή νύ τι πῆμα
@@ -565,7 +564,7 @@ Witting. l. l. p. 49. sed cfr. 476. — 137 αἴγληεντι L. — 140
 thonis loco excusavit Dorvillius l. c. scripsi κεὐεργέα, crasi
 ex vs. 234 deprompta’ k. quidni μειλιχίη nomen substantivum
 esse potest?</note>
-<note type="footnote">141 λιβηθριὰσ L, quod revocavi, πιμπληϊὰς l in marg. et v
+                  <note type="footnote">141 λιβηθριὰσ L, quod revocavi, πιμπληϊὰς l in marg. et v
 (πιμπλήϊας f). Tzetzes Chil. VI vs. 945 seqq. ὄρος καὶ τὸ Λει-
 βήθριόν ἐστιν, ἀλλὰ καὶ πόλις, τῆς γῆς Θρᾳκῶν τῶν Ὀδρυσ-
 σῶν, ὧν ὁ Ὀρφεύς ὑπῆρχεν. γράφει γὰρ οὕτως ὁ ἀνὴρ ἐν τοῖς
@@ -590,8 +589,7 @@ p. 185. — 144 δωδεκάτοῖσ sic L, δωδεκάτοις f. — ἐν�
 ‘Fuit qui coniiceret πολυκλαύτου’ g, sed πολυτλήτου βιότοιο in
 exitu versus legitur etiam apud Quintum XIII 477. — 145
 ἀστράσιν gk. — 147 ἀρήμενος Lu. —</note>
-
-<pb n="16"/>
+                  <pb n="16"/>
 δειδέχθαι· Παιών γὰρ ἐναίσιμος ἀνθρώποισιν,
 εἴ κεν ἔοις, ἢν τοῦδε κατʼ εἰδώλοιο φέρηται <lb n="150"/>
 εὐδερκὴς κερόεσσα Σεληναίη κλυτόπωλος,
@@ -630,12 +628,11 @@ quidem non ex more poetae nostri dictum videtur, quare εἴ
 γʼ vs. 145 requirit εἰ δὲ (ut 183 267 349 393 584), sicuti ἢν δὲ
 legitur 72 332 370 praecedente ἢν μὲν. — ὠδείνεσσι L, idem
 vitium 198 et 217. — 156 ἀκλεὰ L. — 158 ἀεικαιλίηι L, quod</note>
-
-<pb n="17"/>
+                  <pb n="17"/>
 μοχθήσει, καί τʼ ἐγγὺς ἀδευκέος ἔσσετʼ ὀλέθρου·
 εἰ δὲ φάος κεν ἔχοι Κριῷ ἔπι δεύτερον ἤδη, <lb n="160"/>
 σώζεται ἐκ καμάτοιο φυγοῦσʼ ἐριώδυνον ἄτην.</p>
-<p>ἢν δὲ κατʼ εὐκεράοιο Βοὸς μετανισσομένη που
+               <p>ἢν δὲ κατʼ εὐκεράοιο Βοὸς μετανισσομένη που
 ἰνδαλθῇ κερόεσσα, τότʼ αὖ μέγα θαρσαλέος τοι
 αὐδήσω πτοιητὸν ἐπʼ ἀνέρι πορσύνουσαν
 ἦτορ καὶ πραπίδων ἑτερήρεα δύσφορον ὁρμὴν <lb n="165"/>
@@ -669,11 +666,10 @@ Dorvill. l. l.), ν addidit l, ἔχειν v. cfr. 586. — δωκειαν L,
 μένη Lfg, ἐπαζομένη h, ‘substitueram ἐπαξομένη’ g, sed quo
 modo mulier subiectum manere possit, non perspicio. scriben-
 Maximus et Ammon</note>
-
-<pb n="18"/>
+                  <pb n="18"/>
 δευτέρῃ εἰν ἠοῖ δὲ πέλει ἐλαφρώτερον ἄλγος,
 εἰ τόκος ἐκ μελέων ἀνεμώλιος ἀίξῃσι.</p>
-<p>μὴ μὲν δὴ Διδύμοισιν ἐπιθρώσκουσα Σελήνη <lb n="175"/>
+               <p>μὴ μὲν δὴ Διδύμοισιν ἐπιθρώσκουσα Σελήνη <lb n="175"/>
 ἰξύος ἄλγος ἄγοι, μηδʼ ὤμοισιν κακότητα
 ἢ πάρεσιν μελέεσσι φέροι· δύστλητα γὰρ ἔσται
 κήδεα, καὶ δʼ ἂν ἀκεσφορίην ἀνεμώλιον ἔλποι.
@@ -688,7 +684,7 @@ Maximus et Ammon</note>
 ἀμβλώσῃ, ξυνήν κεν ἐς Ἄιδα παιδὶ κέλευθον
 στέλλοιτʼ, εἰ μή τίς μιν ἐρύσσεται ἤπιος ἀστὴρ
 ἀγλαοφεγγέα δῖαν ἐσαθρήσας κερόεσσαν.</p>
-<p>πρηΰτατος δὲ πέλει κάματος βροτῷ αὐδήεντι, <lb n="190"/>
+               <p>πρηΰτατος δὲ πέλει κάματος βροτῷ αὐδήεντι, <lb n="190"/>
 εἴ κεν συμφορέηται ἀγαυὴ Θειαντίνη
 <note type="footnote">dum erat ὀπαζομένῳ, referendum ad diem fatalem’ k. consulto
 nihil mutavi coll. 242 et 245. — 173 πέλει L, ‘quod non est
@@ -704,8 +700,7 @@ emendavi ἐπιρρέπῃ εἰ μὲν coll. Oppian. Hal. II 520, al. — 180
 et 165), υἷα k. — 187 ἅϊδα L, ἀΐδα f. — 191 συμφορέοιτο
 Witting. l. l. p. 49. male. — ἀγαυη _(ἀγαυῆι corr. l) θειαντίνι
 L, ἀγαυῇ Θειαντῖνι f, sed em. in nota. —</note>
-
-<pb n="19"/>
+                  <pb n="19"/>
 Καρκίνῳ αἰγλήεντι, θοὴν δὲ φέρει ἐπαρωγήν.
 μοῦνον μὴ στέρνοισιν ἔχοι ὀλοφώιον ἄλγος·
 δυσπονέως γάρ μιν Παιήονος ἔργα σαώσοι.
@@ -714,7 +709,7 @@ L, ἀγαυῇ Θειαντῖνι f, sed em. in nota. —</note>
 ἀμβλώσει δʼ οὔ πέρ τι φέρει κακόν, οὐδέ τι λοιγόν.
 κούφως δʼ αἱμορύτοισιν ἐπʼ ὠδίνεσσι πονοῖτο
 ἡμιτελὲς ῥίψασα γυνὴ ἀνεμώλιον ἄχθος.</p>
-<p>ναὶ μὴν ἠυγένειον ἐπιστείχουσα Λέοντα <lb n="200"/>
+               <p>ναὶ μὴν ἠυγένειον ἐπιστείχουσα Λέοντα <lb n="200"/>
 εἴη τοι πρηεῖα καὶ ἤπιος· οὔτι γὰρ ἐσθλὸν
 ἄρξασθαι τῆμόσδε δυσηλεγέος καμάτοιο·
 οὐ γάρ κεν προφύγοισθα κακὸν φλογερῶν ὀδυνάων,
@@ -722,7 +717,7 @@ L, ἀγαυῇ Θειαντῖνι f, sed em. in nota. —</note>
 οὐ μὲν δὴ κυέουσαν, ὅτʼ ἀμβλώσειε, γυναῖκα <lb n="205"/>
 ῥεῖά κεν οὐδʼ αὐτὴ Παιηονὶς ἰήσαιτο
 Ἠπιόνη χείρεσσιν ἀκεσφορίην ἐπάγουσα.</p>
-<note type="footnote">192 θωὴν L. — ἐπʼ ἀρωγήν Lf. — 193 μὴ Lgk, μοι f, sed
+               <note type="footnote">192 θωὴν L. — ἐπʼ ἀρωγήν Lf. — 193 μὴ Lgk, μοι f, sed
 em. in nota. — ὁλοφώιον L, idem vitium 222 320 426. — 194
 παιηῶνοσ L, παιηόνος f. — 195 μὴ δὲ L, item 214 215 221
 238 286 511. cfr. ad vs. 176. — ἐπισπέρχοι Ldk*, ἐπεισέρχοι
@@ -741,9 +736,8 @@ p. 643. — 201 πρηεία L, ὡρήεια f, corr. Dorvill. p. 659. —
 ἀπο L, ἀπὸ f. — 206 αὐτὴ Lgk, ἀυτῃ f, αὐτῇ h, quod corr.
 Iacobs. ad AG. VI 244, 4. — 207 ἡπιόνη L, sed ι in ras. scripsit
 l. — ἀκεσφορίην γ᾿ Lf, γʼ del. gk auctore Iacobsio l. l. —</note>
-
-<pb n="20"/>
-<p>εἰ δʼ ἄρα συμφορέοιτο Δίκῃ πανδῖα Σελήνη,
+               <pb n="20"/>
+               <p>εἰ δʼ ἄρα συμφορέοιτο Δίκῃ πανδῖα Σελήνη,
 δηρὸν ἀμυδρὴ νοῦσος ἐφημερίοις κε πέλοιτο
 ἀνθρώποις· πότμον δʼ ὑπαλεύεται, ὅς κεν ἐν ἠοῖ <lb n="210"/>
 ἄρξηται κείνῃ μογέειν εὐήρεα γυῖα.
@@ -755,7 +749,7 @@ l. — ἀκεσφορίην γ᾿ Lf, γʼ del. gk auctore Iacobsio l. l. —<
 ὠδῖνα ζωοῖσιν ἐπὶ βρεφέεσσι λύεσθαι,
 ἦ τʼ ἂν ἐλαφρίσσαιτο πόνον στυγερῶν ὀδυνάων
 Ἀστραίη κούρη σταχυηφόρος ἠπιόδωρος.</p>
-<p>δείδιθι Χηλάων ἐνὶ τείρεσι χρυσοέθειραν <lb n="220"/>
+               <p>δείδιθι Χηλάων ἐνὶ τείρεσι χρυσοέθειραν <lb n="220"/>
 Μήνην, μηδέ τε νούσῳ ὑπʼ ἀργαλέῃ μεμογηκώς
 κλινοπετὴς γίνοιο· φέρει δʼ ὀλοφώιον ἄστρον
 δοιῶν μοιράων ἑτέρην βροτῷ ἀλγινόεντι,
@@ -777,19 +771,18 @@ Hal. p. 828. — 217 ζώιοισιν L, ζώοισιν fg, ζωοῖσιν k. 
 mam litteram scripsit ου l. — κούρησ L. — 221 νούσω L, ι
 adscr. l. — ἀργαλέϊ L. — 222 γεινοιο L, ί suprascr. l. — 224
 ὑγίην ἠ L, ἡγίην ἢ fg, ὑγείην ἢ h, ὑγίειαν ἢ k. —</note>
-
-<pb n="21"/>
+                  <pb n="21"/>
 εἴ κεν δηθύνῃσι πόνος, καὶ ἀδευκέα πότμον, <lb n="225"/>
 καί τε γυναιξὶν ὄλεθρον, ὅτʼ ἂν βρέφος ἐκπροθόρῃσι
 ψυχολιπὲς μελέων· τὰ δέ σε φρεσὶ πευκαλίμῃσι
 φράζεσθαι ἐπέοικεν, ἵνʼ ἄλγεα δεινὰ φύγῃσθα.</p>
-<p>ὀκταπόδην δʼ ἐπὶ θῆρα φανεῖσʼ εὐῶπις ἄνασσα
+               <p>ὀκταπόδην δʼ ἐπὶ θῆρα φανεῖσʼ εὐῶπις ἄνασσα
 Σκορπίον, ἐν πρώτῃ μὲν ἐναίσιμος ἠριγενείῃ· <lb n="230"/>
 εἰ δέ γε δεύτερον ἦμαρ ἄγοι, κίνδυνον ἰάψει.</p>
-<p>Τοξευτῆρι δʼ ἐλαφρῷ ὁμοδρομέουσα Σελήνη
+               <p>Τοξευτῆρι δʼ ἐλαφρῷ ὁμοδρομέουσα Σελήνη
 μειότερον θήσει κάματον βροτῷ, ὦκα δὲ καλὴν
 ἀρτεμίην ὀπάσειε φίλην εὐήρεσι γυίοις.</p>
-<p>αὕτως δʼ Αἰγοκερῆα διαστείχουσα φερίστη, <lb n="235"/>
+               <p>αὕτως δʼ Αἰγοκερῆα διαστείχουσα φερίστη, <lb n="235"/>
 ὠκείην γυίοισιν ἄγουσ᾿ ἐπιτάρροθον ἀλκήν.
 μὴ μὲν ἔοι τῆμόσδε περὶ πλευρῇσι μογῆσαι
 ἀνέρι, μηδέ τε λῦμαρ ἐν ἰσχίῳ ἐμπελάσειε·
@@ -799,8 +792,9 @@ adscr. l. — ἀργαλέϊ L. — 222 γεινοιο L, ί suprascr. l. —
 ἤματι μὲν προτέρῳ παῦρον πόνον ἐγγυαλίξει,
 ἔμπης δʼ ἠελίου κεχαρήσεται ἀκτίνεσσι,
 δηρὸν ὁρῶσα φάος τερψιμβρότου ἠελίοιο·
-δευτέρῃ εἰν ἠοῖ δὲ κακώτερον ἄλγος ὀπάσσει.</p> <lb n="245"/>
-<note type="footnote">225 δηδυνηισι L, ex quo δηδῦνηισι fecit l. — 226 ἐκπροθό-
+δευτέρῃ εἰν ἠοῖ δὲ κακώτερον ἄλγος ὀπάσσει.</p>
+               <lb n="245"/>
+               <note type="footnote">225 δηδυνηισι L, ex quo δηδῦνηισι fecit l. — 226 ἐκπροθό-
 ρῃσιν Lv. — 227 μολέον f (quod verum putabat Iacobs. ad AG.
 II 128). — πευκαλίμῃσιν k. — 229 εὔωπις Lv. — 232 ὁμο-
 δρομέουσα L, ὁμοδρεύουσα f, quod corr. Dorvill. p. 674. —
@@ -812,9 +806,8 @@ ex em. Hermanni Orph. p. 749. — 238 μὴ δέ τε L, μηδέ τε fg,
 — 240 εἰ δὲ: cfr. Dorvill. ad vs 155. — γυΐων L. — ἡλιτό-
 μηνον L. — 241 ἐκπροβαλῆισιν L, ἐκ προβαλῇσιν f, ἐκπροβα-
 λῇσιν h. — 243 ἀκτίνεσσιν Lv. — 215 Incipit fol. 4r L. —</note>
-
-<pb n="22"/>
-<p>Ὑδροχόον δʼ ἐφέπουσα φαεσφόρος αἰγλήεσσα
+               <pb n="22"/>
+               <p>Ὑδροχόον δʼ ἐφέπουσα φαεσφόρος αἰγλήεσσα
 ἄλλας μὲν νούσους ἰήσεται· εἰ δέ κε κρείσσων
 χρειὼ ἀναγκαίη σε βιήσεται αἰνὰ παθόντα
 ἀργαλέου ὑδέροιο, τότʼ αὖ κακότητα φράσασθαι
@@ -823,12 +816,12 @@ ex em. Hermanni Orph. p. 749. — 238 μὴ δέ τε L, μηδέ τε fg,
 ἄμβλωσις γίνηται ὀιζυροῖο τόκοιο·
 εἰ δʼ ἄρα δεύτερον ἦμαρ ἄγοι φαεσίμβροτος αἴγλη,
 μειότερον τελέσειε πόνον λῆξίν τʼ ὀδυνάων.</p>
-<p>Ἰχθύσι δʼ εἰαρινοῖσι παλίγκοτα πήματα φεύγει <lb n="255"/>
+               <p>Ἰχθύσι δʼ εἰαρινοῖσι παλίγκοτα πήματα φεύγει <lb n="255"/>
 ῥηιδίως, εἴ πέρ τε νόσῳ δέμας ἀλγυνθείη·
 εἰ δέ τε νειαίρης γαστρὸς λύσις ἀντήσειεν
 ἢ νεύρων, τάτε φωτὶ ποδῶν ὑποέκλασεν ἄρθρα,
 οὐκ ἂν ῥηιδίως μιν ἀπήμονα πορσύνειας.</p>
-<p>χρὴ δέ σʼ ἐπίφρονα μῆτιν ἐνὶ στέρνοισιν ἔχοντα <lb n="260"/>
+               <p>χρὴ δέ σʼ ἐπίφρονα μῆτιν ἐνὶ στέρνοισιν ἔχοντα <lb n="260"/>
 ἴδμεναι, οὕνεκα δῖα Σεληναίη κλυτόπωλος,
 εἰ μὲν συμφορέηται ἐνηέσιν ἄστρασι καλοῖς,
 εὐδερκεῖ Φαέθοντι ἢ εὐσκόπῳ Ἑρμάωνι
@@ -848,8 +841,7 @@ cfr Hom. Il. Ψ 602 ὑποείξομαι, al. — 261 κλυτοπόλοσ L, 
 τοπῶλος f. — 262 ἄστρασιν L, ἀστράσι v. — 264 In margine
 σημείωσαι δὴ τί λέγεται ἡ Ἀφροδίτη (hanc vocem siglo astro-
 logico expressit) Παφείη sic l. —</note>
-
-<pb n="23"/>
+                  <pb n="23"/>
 κουφότερον τελέει πόνον ἀνέρι, καὶ λύσιν ἄλγους <lb n="265"/>
 ὦκα φέρει, πρὶν ἀιστῶσαι εὐήρεα γυῖα·
 εἰ δέ τε λοίγιον ἄστρον ὁμοδρομέοι κεροέσσῃ,
@@ -860,12 +852,12 @@ logico expressit) Παφείη sic l. —</note>
 καὶ γὰρ Ζηνὶ συνοῦσα καὶ αὐτῇ Κυπρογενείῃ
 ἀμβλώσεις χαλεπάς τε δυσηλεγέας τε τίθησιν.
 ἀλλὰ σύ μοι μούνην πανδερκέα βούλεο Μήνην
-ἔμμεναι, εὖτε γυναικὶ πέλει ἀμβλώσιμον ἦμαρ.</p> <lb n="275"/>
-</div>
-
-<div type="textpart" subtype="chapter" n="7">
-<head>VII. Περὶ τομῆς καὶ χειρουργίας.</head>
-<p>Νῦν δʼ ἄγε μοι κατάλεξον, ἐύθρονε πότνια Μοῦσα,
+ἔμμεναι, εὖτε γυναικὶ πέλει ἀμβλώσιμον ἦμαρ.</p>
+               <lb n="275"/>
+            </div>
+            <div type="textpart" subtype="chapter" n="7">
+               <head>VII. Περὶ τομῆς καὶ χειρουργίας.</head>
+               <p>Νῦν δʼ ἄγε μοι κατάλεξον, ἐύθρονε πότνια Μοῦσα,
 πῶς κεν ἄνευ λοιγοῖο τομεὺς ἐπὶ φωτὶ σίδηρος
 <note type="footnote">265 λύσιν Lgk et Dorvill. p. 666, χύσιν f. — 266 αι . . τῶσαι
 (post αι duae litterae erasae) L, ἀιστῶσαι corr. l, ἀϊστῶσαι v.
@@ -886,11 +878,10 @@ Hermannus quoque probabat, v. eum ad Orph. Lith vs. 247),
 ἄνευ λοιγοῖο gk. — ἐπὶ ανδρα L, ἐπὶ ἄνδρα lfg, ἐπὶ ἀνδρὶ
 Dorvill. l. l., ἐπὶ φωτὶ k ex em. Hermanni Orph. p. 749. cfr.
 299 et 379. —</note>
-
-<pb n="24"/>
+                  <pb n="24"/>
 ἀρτεμίην τεύξειεν, ὑπʼ ἰητῆρος ἀγαυοῦ
 σώματι δυσπαθέοντι λύσιν καμάτοιο τιτύσκων.</p>
-<p>εἰ μὲν ἀπʼ Ὡκεανοῖο νέον προφάῃσιν ἀγαυὴ <lb n="280"/>
+               <p>εἰ μὲν ἀπʼ Ὡκεανοῖο νέον προφάῃσιν ἀγαυὴ <lb n="280"/>
 Πληιὰς εἰαρόεσσ᾿, ἢ καὶ πανδῖα Σελήνη
 Ταύρῳ ἐνιδρομέουσα κατʼ οὐρανὸν ἰνδάλληται,
 ἠὲ καὶ ὑγροφόροιο κατʼ Αἰγοκερῆος ὁδεύοι,
@@ -898,7 +889,7 @@ Dorvill. l. l., ἐπὶ φωτὶ k ex em. Hermanni Orph. p. 749. cfr.
 ἀκμὴ παμφαίνοντος ἐυσμήκτοιο σιδήρου, <lb n="285"/>
 μηδὲ τάμοι χρόα φωτός, ἐπεὶ μογεροῖσιν ἰάψει
 ὦκα πόνοις, μηδʼ αὖτις ἀναβλήδην γε τάμοιο.</p>
-<note type="footnote">278 ἰητῆροσ L, sed ἰ in ras. scripsit l. — 281 πληϊασ αιοερωση
+               <note type="footnote">278 ἰητῆροσ L, sed ἰ in ras. scripsit l. — 281 πληϊασ αιοερωση
 L, πληϊασ αἰόερωσ ἠ corr. l, Πληϊὰς αἰοερωσ᾿ ἢ fg, Πληϊὰς
 ἠερόεσσ᾿ ἢ vel ἀερόεσσ᾿ ἢ Dorvill. p. 674 (coll. Quint. Sm. VII
 300 αἰγοκερῆι συνέρχεται ἠερόεντι), Πληϊὰς αἰθερόεσσ᾿ ἤ coni.
@@ -926,21 +917,20 @@ xim. p. LXII. — 284 φείδεο μοι Lgk, φείδεο μὴ f. — χάλ�
 p.715, ‘epico sermoni potius responderet τάμοιʼ g, quod recepi
 coll. 287 296 469 508. — ἐπὶ Lf, ἐπεὶ gk ex em. Hermanni
 l. l. — 287 καὶ δʼ Lfg, μὴ δʼ k. cfr. 295 sq.—</note>
-
-<pb n="25"/>
-<p>αὔτως δʼ ἢν φορέηται ἐπʼ ἄστρασιν Ἰκαριώνης
+               <pb n="25"/>
+               <p>αὔτως δʼ ἢν φορέηται ἐπʼ ἄστρασιν Ἰκαριώνης
 παρθένου, ἡσυχίην ἀγέμεν, καὶ λώιον εἴη.</p>
-<p>μὴ μὲν δὴ κελάδοντος ἀπʼ Ὠκεανοῖο φέροιτο <lb n="290"/>
+               <p>μὴ μὲν δὴ κελάδοντος ἀπʼ Ὠκεανοῖο φέροιτο <lb n="290"/>
 Ἀστραίη κούρη σταχυηφόρος· ἦ γὰρ ἀνίας
 τεύξει τεμνομένοισι καὶ ἄλγεα δακρυόεντα.</p>
-<p>ὥς δʼ αὕτως τροπικοῖσιν ἐν εἰδώλοις ἀλέασθαι
+               <p>ὥς δʼ αὕτως τροπικοῖσιν ἐν εἰδώλοις ἀλέασθαι
 πανδῖον στείχουσαν, ἐπεὶ πολὺ βέλτερον ἔσται
 ἀτρεμίην ἐχέμεν, μηδʼ ἐν συνόδοισιν ἐούσης <lb n="295"/>
 θηγαλέῳ γε τάμοιο δέμας μορόεντι σιδήρῳ.</p>
-<p>αὕτως δʼ οὖ διχόμηνον ἀλεύεσθαι ἐπέοικε.</p>
-<p>φράζεσθαι δʼ, εἴ κεν στυγερῷ Πυρόεντι συνείη,
+               <p>αὕτως δʼ οὖ διχόμηνον ἀλεύεσθαι ἐπέοικε.</p>
+               <p>φράζεσθαι δʼ, εἴ κεν στυγερῷ Πυρόεντι συνείη,
 μὴ θαμάκις χρειώ σε τομῆς ἐπὶ φωτὶ λάβῃσιν.</p>
-<p>ὣς δʼ αὕτως τοῖς ἐστιν Ἄρης ἐνὶ δεικήλοισιν <lb n="300"/>
+               <p>ὣς δʼ αὕτως τοῖς ἐστιν Ἄρης ἐνὶ δεικήλοισιν <lb n="300"/>
 ὡρονομῶν, πολλῇ μὲν ἐφημερίους κακότητι
 βλάψει, εἴ κεν ἀκμὴν χαλυβηίδα σώματος ἄγχι
 δέξωνται, καὶ δʼ ἄν κε καὶ αἵματος ἄσχετον ὁρμὴν
@@ -962,30 +952,29 @@ tum lenem add. l, εἶκεν f, corr. Dorvill. p. 669. — 299 μήθ’
 αμάκισ L, μήθʼ ἁμάκις f (ἀμ. h), corr. Dorvill. l. l. — 301
 πολλοὺς μὲν Lfg, πολλούς κεν anon. Hal. p. 828, πολλῇ μὲν k.
 — 302 βλάψει’ anon. Hal. l. l. — 303 δέξονται h (non f). —</note>
-
-<pb n="26"/>
+                  <pb n="26"/>
 τεύξειεν βλύζοντος ἄδην στυγερῇ ὑπʼ ἀκωκῇ.</p>
-<p>εἰ δὲ Κρόνῳ συνίῃσι φαεσφόρος ἀργέτα Μήνη, <lb n="305"/>
+               <p>εἰ δὲ Κρόνῳ συνίῃσι φαεσφόρος ἀργέτα Μήνη, <lb n="305"/>
 καί τε τομὴν ἐπάγῃσιν ἀνὴρ Παιῶνι μεμηλώς,
 δηρὸν μοχθήσειε, τέλος δʼ ἀναδέξεται αἰνόν,
 καί τε δυσαχθέα νοῦσον ἐπʼ ἀνέρι τῷδʼ ὀπάσειεν.</p>
-<p>εἰ δέ τʼ ἄνευ καμάτοιο καὶ αἰνοτλήτου ἀνίης
+               <p>εἰ δέ τʼ ἄνευ καμάτοιο καὶ αἰνοτλήτου ἀνίης
 βούλεαι ἐντύνασθαι ἀοσσητῆρα σίδηρον, <lb n="310"/>
 Μήνην αὐγάζοιο σὺν αἰγιόχῳ Κρονίωνι
 ἠὲ Διωναίῃ, καί τʼ εἰ φάος ἐλλιπὲς εἴη
 λῆγον ἀπὸ διχομήνου ἐπʼ εἰκάδι καὶ δʼ ἔτι πρόσσω
 πλὴν συνόδου· λῷον γὰρ ἀκεσφορίην ἀνύσαιο,
-ἢν ἀλέῃ συνόδοισι μεμηλότα φάεα Μήνης.</p> <lb n="315"/>
-<p>ὣς δʼ αὔτως συνιόντες ἀπʼ Ὠκεανοῖο ῥοάων
+ἢν ἀλέῃ συνόδοισι μεμηλότα φάεα Μήνης.</p>
+               <lb n="315"/>
+               <p>ὣς δʼ αὔτως συνιόντες ἀπʼ Ὠκεανοῖο ῥοάων
 Φωσφόρος ἢ Φαέθων τελέουσʼ εὐήρεα τμῆσιν.</p>
-<p>αὕτως δʼ, εἰ φλέβα κεῖραι ὑφʼ αἵματι πεπληθυῖαν
+               <p>αὕτως δʼ, εἰ φλέβα κεῖραι ὑφʼ αἵματι πεπληθυῖαν
 ἱμείρεις, ταύτῃσιν ἐφημοσύναις πεπίθοιο.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="8">
-<head>VIII. Περὶ δραπετῶν.</head>
-<p>Εἰ δʼ ἄρα καὶ δμώων ὀλοφώια ἔργα πύθοιο, <lb n="320"/>
-<note type="footnote">304 ἅδην L. — ἐπʼ Lfg, ὑπʼ k ex Gerhardii coniectura — 306
+            </div>
+            <div type="textpart" subtype="chapter" n="8">
+               <head>VIII. Περὶ δραπετῶν.</head>
+               <p>Εἰ δʼ ἄρα καὶ δμώων ὀλοφώια ἔργα πύθοιο, <lb n="320"/>
+                  <note type="footnote">304 ἅδην L. — ἐπʼ Lfg, ὑπʼ k ex Gerhardii coniectura — 306
 καίγε Lf, corr. g. — παίωνι L, Παιῶνι υ. vide Lentzii Herod.
 l p. 21, 13 not. — 307 μοχθήσειεν Lf. — 312 καὶ εἰ Lfg, εἰ
 καὶ coni. Gerhard. Lect. Apoll. p.160, ‘sed scribendum fuisse καὶ
@@ -999,25 +988,24 @@ et Nauck. in Mélanges Gréco-Romains lV 1 p. 162 sq. — 318
 πεπληθεῖαν (quod corr. Dorvill. p. 342). — 319 ἐφημοσύνησ
 Lf, ἐφημοσύνῃς g, ἐφημοσύναις k ex coni. Fabricii.
 320 Post ὁλοφώια ras. L. —</note>
-
-<pb n="27"/>
+                  <pb n="27"/>
 οἵτε γʼ ἑοὺς λείποντες ἐνὶ μεγάροισιν ἄνακτας
 γαῖαν ἐς ὀθνείην ποσὶ καρπαλίμοις ἀλάληνται,
 δρῆσται ἀταρτηροί, φιλίην λείποντες ἐδητύν,
 οὔτε τραπέζης μνῆστιν ἐφεστίου, οὐ Κρονίωνος
 Ἑρκείου σέβας ἁγνὸν ἐνὶ πραπίδεσσι σέβοντες· <lb n="325"/>
 ἀλλὰ σὺ καὶ τοίων μερόπων ἐπιφράζεο μοῖραν.</p>
-<p>ἢν μὲν ἔῃ πανδῖα μετʼ εὐπόκου Ἀρνειοῖο,
+               <p>ἢν μὲν ἔῃ πανδῖα μετʼ εὐπόκου Ἀρνειοῖο,
 ὦκά μιν εἰσανάγοιο· τάχʼ ἂν δὲ καὶ αὐτὸς ἵκοιτο
 δεσπόσυνον ποτὶ δῶμʼ ὑποδείελος, ἠύτε τις φώρ,
 παλλόμενος κραδίην ὑπὸ δείματι, καὶ δέ κεν ὦπας <lb n="330"/>
 ταρβαλέοις δακρύοισι πεφυρμένος ἰνδάλλοιτο.</p>
-<p>ἢν δέ γε Ταῦρον ἔχῃσι παλίμφοιτος κερόεσσα,
+               <p>ἢν δέ γε Ταῦρον ἔχῃσι παλίμφοιτος κερόεσσα,
 ἀνέρος ἀφνειοῦ ἐνὶ δώμασιν ἠλασκάζων
 δμὼς ὀλοὸς κρύπτοιτο· μόλις δὲ καὶ εἰς ἑὸν οἶκον
 σπουδῇ ἀναγκαίῃ μιν ἄναξ ὑποδέξεται αὖτις, <lb n="335"/>
 ὀτλήσας μάλα πολλὰ καὶ ἐν πραπίδεσσι μογήσας.</p>
-<p>ἢν δʼ ἐν Ἀμυκλαίοισιν ἴδῃς κεραῶπα Σελήνην
+               <p>ἢν δʼ ἐν Ἀμυκλαίοισιν ἴδῃς κεραῶπα Σελήνην
 ἠιθέοις, ταχέως μιν ἑὸν δόμον εἰσανάγοιο·
 ἢ δʼ ἄρʼ ἀλεύηται πέντʼ ἤματα κρυπταδίῃ τε
 <note type="footnote">321 οίτε L, spiritum asperum add. l, οἵτε fg, οἵ ῥά θʼ k ex
@@ -1035,15 +1023,16 @@ sed post φ ras. L. — 330 κενπασ L, ω et circumflexum su-
 prascr. l. — 332 παλέμφοιτος f. — 334 δμῶσ Lf. — δέ κεν
 Lfg, δὲ καὶ k. — 336 πραπήδεσσι L. — 337 ἴδοισ Lf, corr. g
 (improbante anon. Ien. p. 252). — κεράωπα Lυ. — 339 κρυπτὰ</note>
-
-<pb n="28"/>
-λανθάνῃ, ἦ τʼ ἄν μιν τρίτατον μετὰ μῆνα δέχοιο.</p> <lb n="340"/>
-<p>εἰ δέ γε Καρκίνον οἶκον ἑὸν βασίλεια Σελήνη
+                  <pb n="28"/>
+λανθάνῃ, ἦ τʼ ἄν μιν τρίτατον μετὰ μῆνα δέχοιο.</p>
+               <lb n="340"/>
+               <p>εἰ δέ γε Καρκίνον οἶκον ἑὸν βασίλεια Σελήνη
 οἰχνεύοι, τέτμοις κεν ἐν ἱερῷ ἄίσει δμῶα,
 ἠὲ καὶ ἐν τεμένει κρυφίην ποιεύμενον αὖλιν,
 δευτέρῃ εἰν ἠοῖ· θεόθεν δʼ ἱκέτην ἀνάγοιο
-ὀρθῇσιν χαίτῃσι πεφρικότα βαμβαίνοντα.</p> <lb n="345"/>
-<p>ἤν δὲ Νεμειήταο πέλῃ κατὰ μέτρα Λέοντος,
+ὀρθῇσιν χαίτῃσι πεφρικότα βαμβαίνοντα.</p>
+               <lb n="345"/>
+               <p>ἤν δὲ Νεμειήταο πέλῃ κατὰ μέτρα Λέοντος,
 εἰ μὲν ἐπὶ πρώτῃ ἠοῖ δρόμον ἐντύνειε,
 λήσεται, οὐδέ μιν αὖτις ἐφʼ ἑστίῃ οἷο ἄνακτος
 ἀθρήσαις θεράποντα φυγόπτολιν· εἰ δέ γʼ ἐν ἠοῖ
@@ -1075,23 +1064,22 @@ erat ἀθρήσειςʼ g. idem iam Hermann. ll. ll. proposuerat. —
 l p. 283. — 351 δρησμοσύνην sic id. ib. — ἐνὶμμεγάροισι L, sed
 accentum gravem pinxit l. — 352 ναίοντος fg, vertitur, quasi
 ναίοντα legeretur, forte recteʼ Dorvill. l. l., γαίοντος [sic L]</note>
-
-<pb n="29"/>
+                  <pb n="29"/>
 δίζεο δʼ ἐν χώρῃ μιν ἢ εἰν ἐριθηλέι κήπῳ.</p>
-<p>εἰ δὲ Σεληναίης ἐνὶ Παρθένῳ οἰχνευούσης
+               <p>εἰ δὲ Σεληναίης ἐνὶ Παρθένῳ οἰχνευούσης
 λείποι οἶκον ἄνακτος, ἕλοις κέ μιν ἐν πολέεσσιν <lb n="355"/>
 ἤμασι· δηθύνει γὰρ ἀπόκρυφος, εἴ κʼ ἐνὶ τῷδε
 δεικήλῳ Μήνης εὐφεγγέος αἰθροπολεύσης
 φύξιμον ἦμαρ ἕλῃσι, καὶ ἐν θαλεροῖσι πετήλοις
 πεπτηὼς ἀλέηται ἑὸν δηναιὸν ἄνακτα.</p>
-<p>Χηλῇσιν δʼ εἴ κεν σὺ Σεληναίην ἐσαθρήσαις, <lb n="360"/>
+               <p>Χηλῇσιν δʼ εἴ κεν σὺ Σεληναίην ἐσαθρήσαις, <lb n="360"/>
 θαρσαλέος δρήστην προτιόσσεο· δὴ γὰρ ἄνεισιν
 αὐτόματος, σκήψει δὲ καὶ αἱμυλίοισι λόγοισι
 πρηυνέει θυμὸν δυσπέμφελον οἷο ἄνακτος.</p>
-<p>ἢν δὲ Σκορπιόεν δέμας ἴσχῃ δῖα Σελήνη,
+               <p>ἢν δὲ Σκορπιόεν δέμας ἴσχῃ δῖα Σελήνη,
 ἦ τʼ ἂν ἔοι θεράπων ἐν ἀνακτόρῳ ἢ τεμένεσσι <lb n="365"/>
 κρυπτόμενος· καὶ δʼ ἄν κεν ἑκών οἶκόνδε νέοιτο.</p>
-<note type="footnote">scripsi, quamquam propter genitivum dubitanterʼ k. — 353
+               <note type="footnote">scripsi, quamquam propter genitivum dubitanterʼ k. — 353
 χωορηϊ (ϊ im ras. ) L. — 354 οἰχνευούσης Ldk*, ἰχνευούσης υ.
 — 355 λειπει L, λείπει corr. l, λείποι υ (et k*). hiatus in
 λείποι οἶκον ab Homero excusationem habet ut in ἐπὶ ἤθεα
@@ -1113,23 +1101,22 @@ p. 662, recte, opinor, modo intellegatur τῇ σκήψει i. e. προ-
 πρηϋνέειν gk ex coniectura Wesselingii p. 339. — 365 τεμέ-
 νεσσι (supra τε ras.) L, τεμένεσσιν k. — 366 Incipit fol. 5 L.
 — οἶκον δὲ Lf. —</note>
-
-<pb n="30"/>
-<p>εἰ δʼ ἄρα Τοξευτῆρα διοιχνεύοι κερόεσσα,
+               <pb n="30"/>
+               <p>εἰ δʼ ἄρα Τοξευτῆρα διοιχνεύοι κερόεσσα,
 ἢν μὲν ἐνὶ πρώτοις πέντʼ ἤμασιν αἰσυλοεργὸν
 δμῶ᾿ ἀνάγῃ, δοίη κε δίκην δρησμοῖο ταχεῖαν·
 ἢν δʼ ἄρ᾿ ὑπερβάλλῃ πέντʼ ἤματα, δηρὸν ἂν αὔτως <lb n="370"/>
 πλάζοιτʼ, οὐδέ μιν ὦκα κιχήσεαι, ἀλλὰ χρόνοιο
 πολλοῦ μεσσάτιον τελέει δρόμον ἠλασκάζων.</p>
-<p>ἢν δʼ ἄρʼ ἐν Αἰγόκερῳ φεύγῃ δμώς, οἷο ἄνακτος
+               <p>ἢν δʼ ἄρʼ ἐν Αἰγόκερῳ φεύγῃ δμώς, οἷο ἄνακτος
 ἐν ξείνῃ ληφθεὶς ἄγεται ποτὶ δώματα θᾶσσον.</p>
-<p>Ὑδροχόῳ δʼ εἴ κεν κεραὴν εὐῶπιν ἀθρήσαις <lb n="375"/>
+               <p>Ὑδροχόῳ δʼ εἴ κεν κεραὴν εὐῶπιν ἀθρήσαις <lb n="375"/>
 νισσομένην, ὅτε δρῆστιν ἐπεντύνῃσι κέλευθον
 λαιδρὸς ἀνήρ, τότʼ ἄνακτος ἑοῦ πάτρην ἀπολείπων
 ἐν πόλει ὀθνείῃ βίον ἄρνυται, οὐδʼ ἐπὶ δηρὸν
 λήσεται, ἀλλά μιν ὦκα τέτμοις ἐπὶ φωτὶ κυροῦντα,
 ὃς δήμου θεράπων κοινὸς πέλει, ἠὲ φερόπλῳ <lb n="380"/>
-<note type="footnote">367 διϊχνεύοι, sed post δι una littera (certe ο) erasa L, διϊχνεύοι
+                  <note type="footnote">367 διϊχνεύοι, sed post δι una littera (certe ο) erasa L, διϊχνεύοι
 v, διοιχνεύοι dk*. — 369 δμῶαναγη L, δμῶἀνάγη corr. l, δμῶ
 ἂν ἄγῃ f, ‘forte δμῶʼ ἀνάγῃ᾿ Dorvill. p. 662, δμῶ ἀνάγῃς gk,
 sufficit δμῶʼ ἀνάγῃ. cfr. vs. 581. — τε Lf, κε gk. — 370 ἠν
@@ -1151,30 +1138,29 @@ post ὑδροχόῳ᾿ g, Ὑδροχόῳ δ k. — 376 νεισομένη
 Epist. crit. I (Lips. 1827) p. 143 et Dorvillio p. 662. — ἐπ᾿ ἐν-
 τυνῃσι habet Ruhnken. l. l. et coni. Dorvill. l. l. — 378 οὔτ᾿
 Lf, οὐδʼ gk. — 379 τέτμοι Lf, corr. Dorvill. l. l. —</note>
-
-<pb n="31"/>
+                  <pb n="31"/>
 ἀνέρι, τῷ στρατιαί τε βοηδρομίαι τε μέλονται.</p>
-<p>εἰ δʼ ἄρʼ ἐν εἰαρινοῖσι φαεινομένη φορέηται
+               <p>εἰ δʼ ἄρʼ ἐν εἰαρινοῖσι φαεινομένη φορέηται
 Ἰχθύσιν, ἠοῖ μὲν προτέρῃ κίνδυνον ἰάψει
 δρήστῃ ἀταρτηρῷ, τάχα δʼ ἂν καὶ ὀλέθριον ἦμαρ,
 αἶψα δʼ ἄρα φίφεϊ τμηθεὶς ἀμφήκεϊ δειρὴν <lb n="385"/>
 * * * * * * * *
 δευτέρῃ εἰν ἠοῖ δὲ φυγὼν σῶός κε πέλοιτο,
 καί κεν ἄνακτος ἵκοιτο δόμον περίαλλα πεπονθώς.</p>
-<p>χρή δὲ περίφρονα μῆτιν ἐνὶ φρεσὶν αἶψα τίθεσθαι·
+               <p>χρή δὲ περίφρονα μῆτιν ἐνὶ φρεσὶν αἶψα τίθεσθαι·
 εἰ μὲν γὰρ μούνην σὺ Σεληναίην ὁρόῳο,
 οὔτι φέρει δρησμὸν βροτῷ ἀνέρι, μαψιδίην δὲ <lb n="390"/>
 οἴσει ἄλην τῇ καὶ τῇ ἀλυσκάζοντι κέλευθον
 ἀγχόθι δεσποσύνων μεγάρων καὶ ὁμήθεος οἴκου.</p>
-<p>εἰ δὲ τύχοι πανδῖα σὺν ἀστέρι δινεύουσα,
+               <p>εἰ δὲ τύχοι πανδῖα σὺν ἀστέρι δινεύουσα,
 ὅντε πλάνητα λέγουσιν ἐπὶ χθονὶ φῦλʼ ἀνθρώπων,
 ἦ τʼ ἂν προσσοτέρω θεράπων ὁδὸν ἐντύνοιτο, <lb n="395"/>
 φεύγων νείκεʼ ἄνακτος ὁμοκλήν τʼ ἀλγινόεσσαν.</p>
-<p>ἀλλʼ ἢν μὲν Φαίνοντι συνῇ κερόεσσα Σελήνη
+               <p>ἀλλʼ ἢν μὲν Φαίνοντι συνῇ κερόεσσα Σελήνη
 φλογερῷ Πυρόεντι, φυγὴν ἀνεμώλιον ἴσχει
 δοῦλος ἀνὴρ κενεῇσιν ἐπʼ ἐλπωρῇσι γεγηθώς·
 ἦ γὰρ ἂν ἐς δόμον αἶψα λυγρῇ πεπεδημένος ἄτῃ <lb n="400"/>
-<note type="footnote">381 στρατίαι Lv. — 382 fort. φορέοιτο coll. 208 544 al.; an
+                  <note type="footnote">381 στρατίαι Lv. — 382 fort. φορέοιτο coll. 208 544 al.; an
 ἢν δʼ ἄρ᾿? — 385 ξίφει Lf, corr. Dorvill l. l. — ἀμφηκέϊ Lf.
 — ‘vellem aut εἰσανίδοι scripsisset vel simile qud, aut addi-
 disset versum’ g, ante hunc versum quaedam excidisse vide-
@@ -1186,10 +1172,9 @@ Et. M. p. 741, 43. cf. Lentzii Herodian. II p. 420, 23. — 389
 οροςο L, ὁρόωο lf, ὁροῷο gk. — 391 αλην L, ἀλὴν lf. — 393
 δΠνεύουσα δῖνεύουσα L, sed ῖ e corr. l. — 395 προσσοτέρωι L. — 397 In
 margine signa Lunae Saturni Martis pinxit l. —</note>
-
-<pb n="32"/>
+                  <pb n="32"/>
 βαίη ἀναγκαίῃ βεβιημένος ἀλγινοέσσῃ.</p>
-<p>εἰ δὲ Ζηνὸς ἄνακτος ἢ ἁγνῆς Ἀφρογενείης
+               <p>εἰ δὲ Ζηνὸς ἄνακτος ἢ ἁγνῆς Ἀφρογενείης
 ἴχνια βαίνῃσιν Θειαντιὰς ἀγλαόφοιτος,
 ἦ τʼ ἂν κρυπταδίην εὐήρεα φύξιν ἕλοιτο
 ὀτρηρὸς θεράπων ποσὶ καρπαλίμοισι πιθήσας. <lb n="405"/>
@@ -1223,14 +1208,13 @@ crit. p. 235 (194). — ὠρειθυϊα L, -υῖα corr. l, ὠρειθυῖ�
 418 χόρον f. — ἐπιλλίσσοιο L, ἐπʼ Ἰλλίσσοιο f, corr. Wesseling.
 p. 139 et Iacobs. ad AG. XVI 51, 14. — 419 ἀνεράψατο Lf,
 corr. Wesseling. l. l., Ruhnken. l. l., Toup. Emend. in Suid.</note>
-
-<pb n="33"/>
+                  <pb n="33"/>
 Ἀτθίδος ἐν νεφέεσσι μεταχρονίην φορέεσκε, <lb n="420"/>
 μέσφʼ ὅτʼ ἐπὶ Θρῄκης χιονώδεας ἷξεν ἐναύλους, —
 οὐδ’ εἴ κʼ Ἰφίκλοιο θοώτερος αὐγάζοιο,
 ὅστε καὶ ἀνθερίκοισιν ἐπέτρεχεν, οὐδέ τι καρπὸν
 σίνετʼ ἀήσυρα γυῖα φέρων ἐπὶ λήιον ἄκρον.</p>
-<note type="footnote">t. IV p. 212, Iacobs. l. l. — 420 μετὰχρόνιον L, μεταχρόνιον v,
+               <note type="footnote">t. IV p. 212, Iacobs. l. l. — 420 μετὰχρόνιον L, μεταχρόνιον v,
 μεταχθόνιον Iacobs. l. l., μεταχρονίην est apud Ruhnken. Epist.
 crit. p. 246 (207). — φορέεσκεν Lv. — 421 μεσφοτ᾿ L, μεσφότ᾿
 f. — χιονωδέας Lf. — ϊξεν L, ἵξεν corr. l. — 422—424 affert
@@ -1265,17 +1249,16 @@ Hesych. et Et. M. s. v. ἀήσυρον et Suid. I 1 p. 129 Bernh. —
 crit. III p. 141. cf. Hom. Υ 227 ἄκρον ἐπ᾿ ἀνθερίκων καρ-
 πὸν θέον, οὐδὲ κατέκλων. Hesiod. ap. Eustath. ad Il. p. 245
 26 (323, 47) ἄκρον ἐπʼ ἀνθερίκων καρπὸν θέεν, οὐδὲ κατέκλα, |</note>
-
-<pb n="34"/>
-<p>εἰ δέ τʼ ἔοι κερόεσσα σὺν εὐσκόπῳ Ἑρμάωνι, <lb n="425"/>
+               <pb n="34"/>
+               <p>εἰ δέ τʼ ἔοι κερόεσσα σὺν εὐσκόπῳ Ἑρμάωνι, <lb n="425"/>
 οὔ κε φύγοι θεράπων ὀλοφώιος, ἀλλὰ τάχιστα
 εὕροις, εἰ καὶ γοῦνα θοώτερα καὶ πόδας ἴσχοι
 κουφοτέρους Λᾴδαο καὶ ὠκυδρόμοιο Φαΰλλου.</p>
-<p>μὴ μὲν δὴ συνόδοισιν ἐπιστείχουσα Σελήνη
+               <p>μὴ μὲν δὴ συνόδοισιν ἐπιστείχουσα Σελήνη
 ἢ καὶ πλησιφαὴς εἴη δρησμοῖο τυχόντος· <lb n="430"/>
 ἦ γὰρ ἂν ἠλασκάζοι ἐπὶ ξείνης τότε γαίης,
 ἢ δεσμοῖσιν ἔχοιτο παρʼ ὀθνείοισι βροτοῖσιν.</p>
-<p>εἰ δὲ Κρόνῳ κρυόεντι συνείη δῖα Σελήνη,
+               <p>εἰ δὲ Κρόνῳ κρυόεντι συνείη δῖα Σελήνη,
 καί τε δμὼς προφύγῃσιν ἔχων κλωπήιον ἄχθος,
 ἄλλοις φώρεσι κέρδος ἀποίσεται· οὐ γὰρ ὄνησιν <lb n="435"/>
 ἁρπακτοῖς κτεάτεσσι φέρει τηλεσκόπος ἀστήρ,
@@ -1304,15 +1287,13 @@ ad vs. 8), ἢ v, scripsi ἦ coll. 99 400 407 (37 291 557). — τόγε
 L, τότε v. — 432 βροτοῖσι Lfg. — 433 In margine signa Lunae
 et Saturni pinxit l. — 434 προφύγησιν L, προφύσῃσιν f, quod
 corr. Spitzner de vers. her. p. 46. — 436 ἀρπακτοῖσ L. —</note>
-
-<pb n="35"/>
+                  <pb n="35"/>
 ἀλλʼ ἐπάγει θεράποντι δολόφρονι πολλάκις ἄνδρα
 λαιδρότερον Φαίνων, καὶ φὼρ ἐπὶ φωρὶ κυρήσει.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="9">
-<head>IX. Περὶ παίδων διδασκαλίας.</head>
-<p>Εἰ δὲ τέχνης ἐθέλεις δεδαηκότας ἐντύνασθαι
+            </div>
+            <div type="textpart" subtype="chapter" n="9">
+               <head>IX. Περὶ παίδων διδασκαλίας.</head>
+               <p>Εἰ δὲ τέχνης ἐθέλεις δεδαηκότας ἐντύνασθαι
 ἢ σοφίης υἱῆας ἢ ὀτρηροὺς θεράποντας, <lb n="440"/>
 χρυσοφαὴς εἴη τοι ἐπʼ Ἀρνειοῖο Σελήνη,
 ἠὲ καὶ ὠκυπόροισιν ἐπʼ Ἰχθύσι καλὰ φαείνοι,
@@ -1323,7 +1304,7 @@ corr. Spitzner de vers. her. p. 46. — 436 ἀρπακτοῖσ L. —</note>
 ἠὲ τριπλεύροισιν — καί τʼ ἂν πολὺ λώιον εἴη —
 ἠὲ κατʼ ἰθὺν ἴῃσιν ἐφʼ ἑβδομάτοιο βεβῶσα
 δεικήλου, καὶ γὰρ τὸ πέλει τέχνῃσιν ὄνειαρ.</p>
-<p>μὴ μὲν δὴ σύνοδον τούτοις ἐνὶ τείρεσι θείη, <lb n="450"/>
+               <p>μὴ μὲν δὴ σύνοδον τούτοις ἐνὶ τείρεσι θείη, <lb n="450"/>
 ἢ διχόμηνον ἄγοι σέλας ἔκφατον, εὖτέ σε χρειὼ
 τέχνην ἢ σοφίην δεδαήμεναι ὀτρύνῃσιν·
 <note type="footnote">438 φῶρʼ ἐπὶ φώρεϊ κύρσει Lf, φὼρ ἐπὶ φωρέϊ (φώρεϊ Dor-
@@ -1335,7 +1316,7 @@ mutatio perquam inelegans est. hinc scripsi, quod multo signa-
 tius, φῶρ᾿ ἐπὶ φωρὶ κορύσσει᾿ k, praetuli φὼρ ἐπὶ φωρὶ κυρή-
 σει, de subiecti mutatione securus coll. 105 106 sq. 124 sq.
 131 sq. 571 sq., al.</note>
-<note type="footnote">443 ἱκαριώνησ L. — 446 ἐρευθομένη L, sed ἐ in ras.
+                  <note type="footnote">443 ἱκαριώνησ L. — 446 ἐρευθομένη L, sed ἐ in ras.
 scripsit l. — τετραγώνοισ L, τετραγώνοι f, quod corr. Dorvill.
 p. 646. — 447 Incipit fol. 6v L. — 448 ηϊσιν L, ἤϊσιν corr. l,
 ἴησιν fg. — ἐπἐβδομάτοιο L, ἐπ᾿ ἑβδομάτοιο corr. l, ἐπʼ ἐκδο-
@@ -1343,16 +1324,15 @@ p. 646. — 447 Incipit fol. 6v L. — 448 ηϊσιν L, ἤϊσιν corr. l,
 δόμα δικήλου τοῖο’) et k, correo ἐφʼ ἑβδομάτοιο. — 450 Supra
 hunc versum novus titulus περὶ συνόδου L. — θεν L, θείη
 corr. l. — 451 εὔτέ L. —</note>
-
-<pb n="36"/>
+                  <pb n="36"/>
 οὐ γὰρ ἂν ἐκτελέσειας, ἃ βούλεαι, οὐδέ τινʼ ἐσθλὴν
 παιδὶ δαημοσύνην διχομηνιὰς ἐντύνειεν,
-οὐδέ τι λειψιφαής· ἀνεμώλια δʼ ἔργα τίθησιν.</p> <lb n="455"/>
-</div>
-
-<div type="textpart" subtype="chapter" n="10">
-<head>X. Περὶ γεωργίας.</head>
-<p>Εἰ δὲ γεωπονίης σε φιλομβρότου ἵμερος αἱρεῖ,
+οὐδέ τι λειψιφαής· ἀνεμώλια δʼ ἔργα τίθησιν.</p>
+               <lb n="455"/>
+            </div>
+            <div type="textpart" subtype="chapter" n="10">
+               <head>X. Περὶ γεωργίας.</head>
+               <p>Εἰ δὲ γεωπονίης σε φιλομβρότου ἵμερος αἱρεῖ,
 καί τʼ ἐπὶ χρυσείης γενεῆς ἐντύνεαι ἔργα
 γαῖαν ἐπὶ ζείδωρον ἄγων εὐκαμπὲς ἄροτρον,
 ἢ γύροις ἔνι κλῆμα Μεθυμναίου λελίησαι
@@ -1363,7 +1343,7 @@ corr. l. — 451 εὔτέ L. —</note>
 <note type="footnote">453 ἐκτελέσειαι f. — 454 διχομηνίασ L, διχομήνιας f. ‘coniici
 possit διχόμηνις ἂν ἐντύνειεν’ Spitzner de vers. her. p. 192. —
 455 ουδʼ έτι L, sed ου in ras. l, οὐδʼ ἔτι f, corr. g.</note>
-<note type="footnote">456—465 affert Tzetzes in prooemio commentarii in He-
+                  <note type="footnote">456—465 affert Tzetzes in prooemio commentarii in He-
 siodi OD. p. 18 Gaisf. his verbis τῶν τοῦ μεγάλου Ὀρφέως Ἔρ-
 γων καὶ Ἡμερῶν, ὧν [Ἔργων Ὀρφέως, ἤτοι τοῦ περὶ Γεωργίας]
 οὕτως ἐστὶν ἡ ἀρχὴ ‘εἰ δὲ γεωπονίης’ κτἑ. cfr. Wesseling.
@@ -1384,21 +1364,23 @@ probantibus Gaisfordio Lobeckio Mullachio, ἱμείρεις v. — λα-
 τοι pro τοι καὶ Tzetzes. — ἐτιτυμίην L. — 463 ἀν δία, sed ί
 in ras. L, ἂν δία γε f, ἂν πανδῖα gk cum Tzetza. — σελήνη
 πεπύθοιτο apud Tzetzen erat ante Heinsium, qui ex Scaligeri</note>
-
-<pb n="37"/>
+                  <pb n="37"/>
 ὄμπνιά σοι Δήμητρος ἀερσινόοιό τε Βάκχου
-δῶρʼ ἀναπεμπέμεναι καὶ ἐπητανὸν ὄλβον ὀπάζειν.</p> <lb n="465"/>
-<p>εἰ μὲν γὰρ στείχῃσιν ἐπʼ Ἀρνειοῖο θοοῖο,
+δῶρʼ ἀναπεμπέμεναι καὶ ἐπητανὸν ὄλβον ὀπάζειν.</p>
+               <lb n="465"/>
+               <p>εἰ μὲν γὰρ στείχῃσιν ἐπʼ Ἀρνειοῖο θοοῖο,
 πάντα φέρει κλυτὰ ἔργα φυτευέμεν ἠδὲ βαλέσθαι
 σπέρματα καὶ σηκοὺς εὐερκέας ἀμφιπένεσθαι·
 καὶ δʼ ἂν ἀεργηλὸν χῶρον τότε καλὰ τάμοιο
-βουσί τε καὶ σμινύῃσιν, ἔοι δέ κε κάρπιμος ὦκα.</p> <lb n="470"/>
-<p>ὣς δʼ αὕτως Ταύρῳ κεραῷ πονέεσθαι ἕκαστα,
+βουσί τε καὶ σμινύῃσιν, ἔοι δέ κε κάρπιμος ὦκα.</p>
+               <lb n="470"/>
+               <p>ὣς δʼ αὕτως Ταύρῳ κεραῷ πονέεσθαι ἕκαστα,
 ὅσσα τε γειοπόνων ἐρικυδέα φαίνεται ἔργα.
 μὴ μὲν δὴ τῆμόσδ᾿ ἐθέλειν ἐρίβωλον ἄρουραν
 ἄρνυσθαι μισθῷ ἐπὶ λατρίῳ· οὐ γὰρ ἄμεινον,
-οὐδὲ φέροι κεν ὄνειαρ ἐπʼ ἀλλοτρίῳ μογέοντι.</p> <lb n="475"/>
-<p>εἰ δὲ Θεραπναίοισιν ἐν ἄστρασι δινεύηται
+οὐδὲ φέροι κεν ὄνειαρ ἐπʼ ἀλλοτρίῳ μογέοντι.</p>
+               <lb n="475"/>
+               <p>εἰ δὲ Θεραπναίοισιν ἐν ἄστρασι δινεύηται
 κούρων εὐεάνου Αἰτωλίδος, ἦ τʼ ἂν ἐμοῖσι
 <note type="footnote">emendatione scripsit σεληναίη πεπίθοιτο. — 465 ἐπητανον L,
 ἐπήτανον f, ἐπηετανὸν Tzetzes probante anon. Hal. p. 829 coll.
@@ -1421,22 +1403,22 @@ p. 662, τῆμόσδ᾿ ἐθέλειν k e corr. Gerhardii Lect. Apoll. p. 91
 — ἐρίβουλον f, quod corr. Dorvill. l. l. — 474 ἐπιλατρίωι Lf,
 corr. Dorvill. l. l. — 475 ἀλλοτρίωι L, sed α (erat η) et ο ex
 corr. l. — 476 ἀστράσι k. — δεινεύηται L. — 477 κούροις Lfg,</note>
-
-<pb n="38"/>
+                  <pb n="38"/>
 μύθοισιν πεπίθοιο, καὶ ἀρξάμενος πονέεσθαι
 ἀμφὶ γεωπονίῃ τε φυτείῃ θʼ ἱμεροέσσῃ
-ζηλωτὸς πολλοῖς κε πέλοις ἐπὶ κέρδεϊ τῷδε.</p> <lb n="480"/>
-<p>κήπους δʼ εὐθαλέας τεύξεις καὶ γῦρον ὀρύξεις,
+ζηλωτὸς πολλοῖς κε πέλοις ἐπὶ κέρδεϊ τῷδε.</p>
+               <lb n="480"/>
+               <p>κήπους δʼ εὐθαλέας τεύξεις καὶ γῦρον ὀρύξεις,
 γαῖαν ἀεργηλήν τε προμηθείως ἀνύσαιο
 εὐεργόν, Μήνης ἐνὶ Καρκίνῳ αἰθροπολεύσης.</p>
-<p>εἰ φλογερῷ δὲ Λέοντι φάος πολυδερκὲς ἐφείη
+               <p>εἰ φλογερῷ δὲ Λέοντι φάος πολυδερκὲς ἐφείη
 ἠερόφοιτος ἄνασσα, τότε σπόρον ὁπλίσσαιο <lb n="485"/>
 κριθῶν ἢ πυρῶν, καί τʼ ἂν πολύχοια γένοιτο.
 ἄλλο δὲ μή τι βάλοιο κατʼ αὔλακος· οὐ γὰρ ἄμεινον.</p>
-<p>Ἀστραίη κούρη δὲ πέλει πρὸς ἅπαντα φερίστη
+               <p>Ἀστραίη κούρη δὲ πέλει πρὸς ἅπαντα φερίστη
 σπέρματα, καὶ δὲ φυτοῖσιν ἐναίσιμος, ἔν τε βόθροισι
 βάλλειν ἔρνεα πάντα, τάτε δρυὸς ἄκρα λέγονται. <lb n="490"/>
-<note type="footnote">κούρων ‘ut alibi semper’ k. cfr. 19 145 288. — ἐτωλίδοσ L. —
+                  <note type="footnote">κούρων ‘ut alibi semper’ k. cfr. 19 145 288. — ἐτωλίδοσ L. —
 ἐμοῖσιν k. — 479 φυτίη ἔ., φυτίῃ f, corr. g cum Dorvill. p 659.
 — 480 δὲ Lf, κε gk. — 481 γύρον L, in margine βόθρον l.
 — 482 ἀεργήλην Lf. — προμηθιόως Lf, corr. g cum Dorvillio
@@ -1460,15 +1442,14 @@ Chr. G. Muellero teste in Tzetzae codicibus Vitt. 2 et 3 est
 βάλλειν ἐννέα πάντας τά τε δρυὸς λέγεται, in Vit. 1 et Ciz.
 βάλλειν ἐρνεά τε πάντα τὰ τε δρυός, omisso cum Sebast. λέγε-
 ται. ceterum vide Wesseling. p. 136. Lobeck Aglaoph. p. 416.</note>
-
-<pb n="39"/>
+                  <pb n="39"/>
 οἴνας δʼ ἐξαλέασθαι, ἐπεὶ στυγέει περίαλλα
 καρίου κούρη ἑλίνους καὶ ἀδευκέας οἴνας,
 μνωομένη, ὅσα λυγρὰ Διωνύσοιο ἕκητι
 Ἀκταῖοι μήσαντο μέθῃ δεδμημένοι αἰνῇ
 Ἰκάριον, καί μιν στυφελαῖς κορύναις ἐδάιξαν <lb n="495"/>
 σφαλλόμενοι δώροισι χοροιμανέος Βάκχοιο.</p>
-<p>ἀλλὰ σὺ Χηλάων ἐνὶ τείρεσιν αἰθροπολεῦσαν
+               <p>ἀλλὰ σὺ Χηλάων ἐνὶ τείρεσιν αἰθροπολεῦσαν
 εἰσορόων κερόεσσαν ἐπιφραδέως πονέεσθαι
 ἀμφὶ γεωτομίῃ· σὺ δέ κʼ ἐν νειοῖσι βάλοιο
 σπέρματα θαρσαλέως, θεῖναί τʼ ἐνὶ κλήματα γύροις, <lb n="500"/>
@@ -1500,15 +1481,14 @@ corr. g. — νειοῖο L, νείοιο f, corr. g cum Dorvillio p. 658. —
 ἐνὶ (Beitraege zur Kritik des Nonnos p. 111) coll. 459 ἢ γύροις
 ἔνι κλῆμα . . . κατθέμεναι et Nonn. Dionys. XLVII 69 βαλεῖν
 τʼ ἐνὶ κλήματα γύροις. — γύροις Lf, γυροῖς gk. —</note>
-
-<pb n="40"/>
+                  <pb n="40"/>
 τέρχνεσιν ἀργεννοῖσι φίλην δείκνυσιν ὀπώρην.</p>
-<p>ἢν δὲ Σκορπιόεν δέμας αἴθριον ἐκπεράῃσιν
+               <p>ἢν δὲ Σκορπιόεν δέμας αἴθριον ἐκπεράῃσιν
 αἴγλαις ἀργεννῇσι κλυτὴ πανδῖα Σελήνη,
 σπέρματα δάσσασθαι νειοῖς ἔνι· καὶ δέ κεν εἴη <lb n="505"/>
 τῆμος ἐνιβληθέντα κατʼ αὐλακόεσσαν ἄρουραν
 ὄμπνια Δηοῦς δῶρα καὶ ἐμπλήσειεν ἀλωήν.</p>
-<p>καὶ δέ κʼ ἀεργηλὴν γαῖαν τῆμόσδε τάμοιο.
+               <p>καὶ δέ κʼ ἀεργηλὴν γαῖαν τῆμόσδε τάμοιο.
 εἰ δʼ ἄρα Τοξευτῆρι φάοι ταυρῶπις ἄνασσα,
 μὴ σύγε πυροῖσιν βαλέειν χθόνα βωτιάνειραν, <lb n="510"/>
 μηδὲ θέμεν κρῖ λευκὸν ἐν αὔλακι, μηδέ τινʼ ἄλλα
@@ -1518,10 +1498,10 @@ corr. g. — νειοῖο L, νείοιο f, corr. g cum Dorvillio p. 658. —
 ἄρνασιν ἠδ᾿ ἐρίφοισι, βοῶν τʼ εὐερκέα μάνδρην <lb n="515"/>
 πορσύναις, πονέοις δὲ καὶ ὠκυπόδεσσιν ἐφʼ ἵπποις,
 φορβήν τʼ ἐντύναιο νεογλαγέας περὶ πώλους.</p>
-<p>αὕτως δʼ Αἰγοκερῆα διαστείχουσα Σελήνη
+               <p>αὕτως δʼ Αἰγοκερῆα διαστείχουσα Σελήνη
 μήλοισιν σύμπασιν ἐναίσιμος ἠδὲ φερίστη,
 εἴ κεν ἄγοις ἑτέρην χώρην ἐριαχθέα ποίμνην <lb n="520"/>
-<note type="footnote">502 τέρχνεσιν; in margine φυτοῖς νέοις l. — ἀργέννοισι Lf. —
+                  <note type="footnote">502 τέρχνεσιν; in margine φυτοῖς νέοις l. — ἀργέννοισι Lf. —
 503 σκορπίου Lf, coll. vs. 364 emend. Dorvill. p. 666. — 504
 πανδια, sed ι in ras. L. — σελήνη L, ι adscr. l. — 505 δάσ-
 σεσθαι Lf, corr. g. — 506 ἄρουρα L, ν adscr. l. — 507 δηουσ
@@ -1535,18 +1515,17 @@ quam l. — 515 ἄρνασιν: vide ad vs. 18. — ἠ L, ἢ f, ἠδ᾿ gk.
 — 516 πορσύναι Lfg, em. k. — ὠκοπόδεσσιν f. — 517 νεο-
 γλαγέασ L, sed εο in ras. scripsit l. — 518 αἰγοκέρῆα L (inter
 Υ et α ras.) L. —</note>
-
-<pb n="41"/>
+                  <pb n="41"/>
 ἠδʼ ἀγέλας, καὶ δʼ ἄν κε καὶ αἰπόλια πλατέʼ αἰγῶν
 ὦκα θέοι, νομὸν ἄλλον ἐπιστείβοντα πόδεσσιν.</p>
-<p>Ὑδροχόῳ δʼ ὁρόων εὐώπιδος ἀργέτιν αἴγλην
+               <p>Ὑδροχόῳ δʼ ὁρόων εὐώπιδος ἀργέτιν αἴγλην
 Μήνης εὖ μὲν ἄροτρα καὶ αὔλακα πορσύνειας,
 εὖ δὲ καὶ ἐν γύροις ὑποδέξεαι ἔρνεα καλά, <lb n="525"/>
 εὖ δʼ ἐν ἀεργηλοῖσιν ὕνιν πήξειας ἀρούραις.</p>
-<p>αὕτως δʼ εἰαρινοῖσιν ἐν Ἰχθύσιν ἐστὶ φερίστη
+               <p>αὕτως δʼ εἰαρινοῖσιν ἐν Ἰχθύσιν ἐστὶ φερίστη
 γειοπόνοις Θειαντίς, ὅτʼ ὄμπνια ἔργα πένωνται
 Δηοῦς εὐωδῖνος ἐυστεφέος τʼ Ἰοβάκχου.</p>
-<p>σκέπτεσθαι δʼἐπέοικε καὶ ἀστέρας ἠνεκὲς ἄλλους. <lb n="530"/>
+               <p>σκέπτεσθαι δʼἐπέοικε καὶ ἀστέρας ἠνεκὲς ἄλλους. <lb n="530"/>
 ἢν μὲν γὰρ Φαέθων τε καὶ ἁγνὴ Κυπρογένεια
 Μήνῃ συμφορέωντʼ ἠδ᾿ εὔπτερος Ἀργειφόντης,
 πάντα τάδʼ ἀλδήεντα καὶ αὔξιμα τοῖσδε πιφαύσκοις
@@ -1574,23 +1553,21 @@ anonymo Hal. p. 829, sed propter τε καὶ praecedentis versus
 corrigendum erat συμφορέωντʼ ἠδ᾿. cfr. ad 515 et 548. — 533
 τοῖσ δὲ πιφαύσκοισ L, τοῖσδε πιφάσκοις fg, ‘corrupto τοῖσδε
 πιφάσκοις substituam potius τοῖσδε πιφαύσκοις quam τοῖσδ’ ἔπι</note>
-
-<pb n="42"/>
+                  <pb n="42"/>
 πολλήν τʼ εὐεστώ φερέμεν καὶ θέσφατον ὄλβον.</p>
-<p>εἰ δὲ Κρόνος κρυόεις Ἄρης τʼ ὀλοφώιος εἶεν <lb n="535"/>
+               <p>εἰ δὲ Κρόνος κρυόεις Ἄρης τʼ ὀλοφώιος εἶεν <lb n="535"/>
 ἀμφὶ Σεληναίῃ, μινύθουσʼ ἐρικυδέα ἔργα
 ἠδ’ ἅλιον φαίνουσι γεωπονίην μερόπεσσι.</p>
-<p>τοιγὰρ ὅρα δείκηλα κατʼ οὐρανὸν ἀγλαὰ πρῶτον,
+               <p>τοιγὰρ ὅρα δείκηλα κατʼ οὐρανὸν ἀγλαὰ πρῶτον,
 οἷς κούρη Θειαντὶς ἐναίσιμα ἔργα προφαίνει,
 αὖτις δʼ ἀστέρα καλὸν ἐρισθενέος Κρονίωνος <lb n="540"/>
 ἢ Παφίης ἢ φαιδρὸν ἐύσκοπον Ἑρμάωνα·
 ξυνὴν γὰρ τούτοισι, διοιχνεύουσα κέλευθον
 ἀρχὴν καὶ τέλος ἐσθλὸν ἄγει μερόπων ἐπὶ ἔργοις.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="11">
-<head>XI. Περὶ τῶν ἐν δεσμοῖς.</head>
-<p>Εἰ δʼ ἄρα καὶ δεσμοῖσιν ἀεικέσιν ὀχμάζοιτο
+            </div>
+            <div type="textpart" subtype="chapter" n="11">
+               <head>XI. Περὶ τῶν ἐν δεσμοῖς.</head>
+               <p>Εἰ δʼ ἄρα καὶ δεσμοῖσιν ἀεικέσιν ὀχμάζοιτο
 δειλὸς ἀνήρ, Κριῷ μὲν ἔχων ἐριώπιδα Μήνην <lb n="545"/>
 δηναιὴν εὕροι κε λύσιν δυερῶν ὀδυνάων.
 ὣς δὲ καὶ ἐν θερινοῖσιν ὁρωμένη εἰδώλοισιν,
@@ -1613,25 +1590,27 @@ hanc sibi poscere formam docuit Eust. ad Od. α 44 p. 1388,
 569, κεραῆς ταυρώπιδος 50 (ἐριῶπα Σελήνην 32. κεραῖπα Σε-
 λήνην 337). — 546 δηναίνη Lv, corr. anon. Hal. p. 829. —
 δυερῶν: in margine τῶν δεινῶν l. —</note>
-
-<pb n="43"/>
+                  <pb n="43"/>
 ἢ Διδύμοις ἢ αἰπυτάτῳ ἐνὶ Καρκίνῳ οὖσα,
 ἠὲ Νεμειήταο κατʼ ἀργαλέοιο Λέοντος,
-πουλὺν ἐπὶ χρόνον οἴσει ἀπείρατα δεσμὰ βροτοῖσιν.</p> <lb n="550"/>
-<p>εἰ δέ κεν αἰθερίῳ ἐν Σκορπίῳ ἠδέ τʼ ἐλαφρῷ
+πουλὺν ἐπὶ χρόνον οἴσει ἀπείρατα δεσμὰ βροτοῖσιν.</p>
+               <lb n="550"/>
+               <p>εἰ δέ κεν αἰθερίῳ ἐν Σκορπίῳ ἠδέ τʼ ἐλαφρῷ
 Τοξευτῇ, Ταύρῳ τε καὶ ἐν Ζυγῷ αἰγλήεντι,
 ἠδὲ καὶ Ἀστραίου σταχυηφόρῳ ἀμφὶ θυγατρὶ
 δινεύῃσι, ταχεῖαν ἄγει λύσιν ἡμερίοισιν,
-ἔκ τε πόνων ἀνέπαυσε καὶ ἅψεα κούφισεν ἀνδρός.</p> <lb n="555"/>
-<p>μὴ μὲν ἁλιπλάγκτοισιν ἐν Ἰχθύσιν αὐγάζοιτο·
+ἔκ τε πόνων ἀνέπαυσε καὶ ἅψεα κούφισεν ἀνδρός.</p>
+               <lb n="555"/>
+               <p>μὴ μὲν ἁλιπλάγκτοισιν ἐν Ἰχθύσιν αὐγάζοιτο·
 ἦ γὰρ ἀναπλήσειεν ἀεικέλιον βροτὸς ἄλγος,
 καὶ δὲ μόλις δεσμοῖο δυσηχέος ἄσπετον ἄχθος
 ἐκπροφύγοι· πολλοὶ δὲ καὶ ἐς βιότοιο τελευτὴν
-εἰλλάδας ἀργαλέας γυίων ἐφόρησαν ὕπερθεν.</p> <lb n="560"/>
-<p>ἢν δὲ σὺν ἀστέρι Μήνη ἐνηέι καλὰ φαείνῃ
+εἰλλάδας ἀργαλέας γυίων ἐφόρησαν ὕπερθεν.</p>
+               <lb n="560"/>
+               <p>ἢν δὲ σὺν ἀστέρι Μήνη ἐνηέι καλὰ φαείνῃ
 Ζηνὸς ἢ Ἑρμείο ἢ εὐεάνου Ἀφροδίτης,
 ἦ τʼ ἂν κουφότερός τε πόνος παῦρός τε γένοιτο.</p>
-<note type="footnote">548 διδύμοις Lv, fortasse scribendum Διδύμοισιν coll. vs. 134.
+               <note type="footnote">548 διδύμοις Lv, fortasse scribendum Διδύμοισιν coll. vs. 134.
 sed res dubia. vide 564 ἢ Ἄρεϊ et 355 λείποι οἶκον et O. Schnei
 der. ad Callimach. hym. V 61. — ἠδ᾿ αἰπυτάτωι L, ἢ δ᾿ αἰπυτάτῳ
 f, corr. g. — 551 ὡς δὲ καὶ Lf, ὣς δὲ καὶ g, sed oppositio
@@ -1650,19 +1629,17 @@ k. — γυΰων L. — 561 ἦν δε L, ἢν δὲ fgk*, εἰ δὲ k (‘f
 vice versa 564 ἢν restituendum erat, ita ut particulae sedem
 permutanerint’ k). — φαείνη L, ι adscr. l, φανείῃ f, φανείη
 hgk, φαείνῃ k*. —</note>
-
-<pb n="44"/>
-<p>εἰ δὲ Κρόνῳ κρυερῷ ἢ Ἄρεϊ συμφορέηται,
+               <pb n="44"/>
+               <p>εἰ δὲ Κρόνῳ κρυερῷ ἢ Ἄρεϊ συμφορέηται,
 πολλάκις ἀργαλέοιο βίῃ δεσμοῖο πονηθεὶς <lb n="565"/>
 μέσφα πότμου φρουρεῖται ἀεὶ ἀδάμαντι συναπτῷ.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="12">
-<head>XII. Περὶ κλοπῆς.</head>
-<p>Εἰ δέ τι κλεμμάδιον μεγάρων κειμήλιον ἔρροι,
+            </div>
+            <div type="textpart" subtype="chapter" n="12">
+               <head>XII. Περὶ κλοπῆς.</head>
+               <p>Εἰ δέ τι κλεμμάδιον μεγάρων κειμήλιον ἔρροι,
 ἢν μὲν ἐν Ἀρνειῷ κεραὴ τροχάῃσι Σελήνη,
 σώεται ἂ ἐς δῶμα καὶ ἐς χέρας εἶσιν ἄνακτος.</p>
-<p>Ταύρῳ δʼ ἐμβεβαυῖα παλίμφοιτος κερόεσσα <lb n="570"/>
+               <p>Ταύρῳ δʼ ἐμβεβαυῖα παλίμφοιτος κερόεσσα <lb n="570"/>
 πέμπει πρὸς σθεναρὸν κτῆμα βροτόν, οὐδέ κε ῥεῖα
 αὐτὸ κίχοις, οὐδʼ αὐτὸς ὀνήσεται ἠλίθιος φώρ,
 κέρδεος ἁρπαλέοιο δίκην ἰθεῖαν ὑποσχών·
@@ -1675,7 +1652,7 @@ p. 663. — 566 (ἀεὶ om.) συναπτῶι ἀδάμαντι Lfg, ‘ἐ�
 απτῷ’ idem p. 672, ‘posterius praeferendum esset, nisi ipsum
 illud συναπτῷ videretur sanum esse. hinc ἀεὶ ἀδάμαντι συναπτῷ
 dedi’ k, ἐν ἀτρύτῳ ἀδάμαντι anon. Hal. p. 829.</note>
-<note type="footnote">Περὶ κλοπῆς: incipit fol.8 L. — 568 ἠ L, ἢ f, εἰ gk, ἢν
+                  <note type="footnote">Περὶ κλοπῆς: incipit fol.8 L. — 568 ἠ L, ἢ f, εἰ gk, ἢν
 scripsi cum anon. Hal. p. 829 coll. vs. 367 sq. (179 et 346 sq.).
 — 569 σώεται Lfg, ‘lege σεύεται. vide Hesych. Dorvill. p. 663
 probante Nauckio in Melanges Gréco-Romains t. IV 1 p. 137
@@ -1690,18 +1667,17 @@ dubio σθεναρὸν corruptum. an legendumo στυγερὸν — οὐδʼ
 corr. l, κέρδεος v. — 574 ἐσ δεκάτην τόδε L, εἰς δεκάτην τόδε
 fg, ἑνδεκάτην τότε k ex coni. Dorvillii p. 663, cui obloquitur d
 ‘non debebas Dorvillii coniecturam inferre poetae, qui dicit:</note>
-
-<pb n="45"/>
+                  <pb n="45"/>
 αἰ δʼ ἄλλαι καλαὶ καὶ ἀπήμονες ἀνέρι μοῖραι, <lb n="575"/>
 οὐδέ τʼ ἀνιηρὴν ἐπάγουσ᾿ ἀλιτήμονι θωήν,
 ἢν μὴ Ἄρει ξυνοῖο δρόμου τετύχῃσι Σελήνη.</p>
-<p>εἰ δέ κε δεικήλοις Διδύμων περάῃσιν ἄνασσα,
+               <p>εἰ δέ κε δεικήλοις Διδύμων περάῃσιν ἄνασσα,
 τέτμοις μέν, παῦρον δὲ νόῳ νοσφίζεο πῆμα.</p>
-<p>Καρκίνον αὖ ἐφέπουσα φαεσφόρος, εἰ μὲν ὄλοιτο <lb n="580"/>
+               <p>Καρκίνον αὖ ἐφέπουσα φαεσφόρος, εἰ μὲν ὄλοιτο <lb n="580"/>
 ἄργυρος αἰγλήεις, ἀνάγει πάλιν ἐς τεὸν οἶκον,
 χρυσόν τʼ εὐλαμπῆ· κτῆσις δʼ ἁλιώσεται ἄλλη,
 ἥτις ἂν ἐκ μεγάρων συλήσιος οἰχνεύσειεν.</p>
-<p>εἰ δὲ Λέοντος ἔχῃσι μένος πολυωπέτις αἴγλη
+               <p>εἰ δὲ Λέοντος ἔχῃσι μένος πολυωπέτις αἴγλη
 Μήνης ἠυκόμοιο, τότʼ οὐ μάλα θαρσαλέος τοι <lb n="585"/>
 αὐδήσω παλίνορσον ἑλεῖν κτέαρ. εἰ δέ τε κούρην
 <note type="footnote">hoc, quod monui, mente teneas usque ad decimam diem
@@ -1728,23 +1704,22 @@ coll. vs. 512. — 583 ἤτισ L, ἥτις v, ἥν (ἤν?) τις Dorvill. 
 corr. l, quod recepit f, τότʼ οὖ gk improbante d. — θαρσά-
 λέος σοι Lf, θαρσαλέος σοι g, ‘neque multum abfuit, quin
 scriberem θαρσαλέος τοι, ut vs. 163’ g, quod recepit k. —</note>
-
-<pb n="46"/>
+                  <pb n="46"/>
 Ἀστραίην διίῃσι κερασφόρος ἀργέτα Μήνη,
 δηθύνει κλόπιον, χρόνιον δʼ ἀναφαίνεται αὖτις·</p>
-<p>δήεις τʼ, εἰ Χηλῇσιν ὁμοδρομέοι κερόεσσα,</p>
-<p>εὕροις τʼ, εἰ καὶ ἐπʼ ὀκταπόδῃ βεβαυῖα τύχῃσι <lb n="590"/>
+               <p>δήεις τʼ, εἰ Χηλῇσιν ὁμοδρομέοι κερόεσσα,</p>
+               <p>εὕροις τʼ, εἰ καὶ ἐπʼ ὀκταπόδῃ βεβαυῖα τύχῃσι <lb n="590"/>
 Σκορπίῳ. ἢν δέ γε Τοξότεω δέμας αἰνὸν ἔχῃσιν,
 ὄλλυται, ἕρμαιον δὲ πέλει φώρεσσιν ἀνιγροῖς.</p>
-<p>Αἰγόκερω δʼ εἴ κεν κλυτὰ τείρεα παμφαίνῃσιν
+               <p>Αἰγόκερω δʼ εἴ κεν κλυτὰ τείρεα παμφαίνῃσιν
 αἴγλῃσιν φιαρῇσι παλιστρέπτοιο Σελήνης,
 ἦ τʼ ἂν δηναιὴ πέλοι εὕρεσις. εἰ δέ κεν ἄστρον <lb n="505"/>
 Ὑδροχόου διίῃσιν ἀγαυὴ Θειαντίνη,
 ἐν δοιῇ σῶσίς τοι ἀπολλυμένου κτεάνοιο.</p>
-<p>ὣς δὲ καὶ εἰαρινοῖσιν ἐν Ἰχθύσιν αἰθροπολεύσης
+               <p>ὣς δὲ καὶ εἰαρινοῖσιν ἐν Ἰχθύσιν αἰθροπολεύσης
 εὐκεράου Μήνης, μόλις οἴσεαι, ὅττι κακὸς φὼρ
 ἐν παλάμαις κεν ἕλῃ· θαμέως δέ κεν ἀμφὶ κλοπείου <lb n="600"/>
-<note type="footnote">587 Ἀστραίου Lv, scripsi Ἀστραίην coll. 9 114 219 291 488.
+                  <note type="footnote">587 Ἀστραίου Lv, scripsi Ἀστραίην coll. 9 114 219 291 488.
 — κέρασφόροσ L. — 589 δηεισ κʼ L, δήεις κʼ f, δήοις κʼ g,
 δήοις δʼ k. scripsi δήεις τʼ. indicativum tuetur vs. 604. —
 591 et 592 inverso ordine scripsit L, numeris praescriptis corr. l.
@@ -1766,17 +1741,16 @@ Maximus vs. 21 [quem vide] et similiter duplex κὲν vs. 599 sq.
 neque enim alterum cum Dorvilliο in μὲν mutaverim’ Hermann.
 ad Orph. Lith. vs. 247. ‘nisi corruptum est κεν ἕλοι latetque
 ἔλθῃ vel simile quid, scribendum videtur φωρεύς, de qua vocis</note>
-
-<pb n="47"/>
+                  <pb n="47"/>
 εἰσαΐοις, τὰ δὲ πολλὰ πέλοντʼ ἀνεμώλιοι αὔτως
 μῦθοι ἐπαγγελίῃσι κεναῖς θέλγοντες ἀκουάς.</p>
-<p>εἰ δὲ Σεληναίη ξυνὴν τρίβον ἐγκονέῃσιν
+               <p>εἰ δὲ Σεληναίη ξυνὴν τρίβον ἐγκονέῃσιν
 ἄστροις ἀργαλέοις, δήεις κτέαρ. ἢν δὲ φερίστοις,
 Ζηνὶ κελαινεφέι * * * <lb n="605"/>
 * * * κλόπιον κτέαρ ὄλλυται αὔτως.
 * * * * * *
 οὔτι λίην· φώρεσσι δʼ ἐναίσιμα γίνεται ἐσθλὰ <lb n="608"/>
-<note type="footnote">forma conferas vs. 438’ g. ἐς παλάμας κε πέλοι k (πέλμ k*).
+                  <note type="footnote">forma conferas vs. 438’ g. ἐς παλάμας κε πέλοι k (πέλμ k*).
 equidem de iterata particula κε (anon. Hal. p. 829 affert Hom. Od.
 δ 733 τῷ κε μάλ᾿ ἤ κεν ἔμεινε) apud hunc poetam valde du-
 bito. quare scripsi ὅττι κακὸς φὼρ ἐν παλάμαις κεν ἕλῃ coll.
@@ -1806,11 +1780,10 @@ Etiam ante οὔτι λίην (‘quod finem continet admonitionis, ne
 nimis velit ob rem furto ablatam moerori se dedere: cfr.
 410 sq. 579’) lacunae signa posuit k. — 608 Incipit fol. 8v L.
 — αἰνέσιμα L, ἐναίσιμα v. — γίνεται L, γείνεται corr. l. —</note>
-
-<pb n="48"/>
+                  <pb n="48"/>
 τείρεα Κυπρογένεια καὶ αἰγλήεις Διὸς ἀστὴρ
 ἠδὲ καὶ ὠκυδρόμοιο φερεπτέρου Ἑρμάωνος.</p>
-<note type="footnote">610 φερεπτέρου L., signum ὑφέν infra pinxit l. — Subscriptio
+               <note type="footnote">610 φερεπτέρου L., signum ὑφέν infra pinxit l. — Subscriptio
 μαξίμου περὶ καταρχῶν πεπλήρωται βιβλίον ἕν Lfg. — Tzetzes
 in prooemio ad Hesiodi OD. p. 18 Gaisf. haec affert: καὶ τῶν
 μὲν Ἔργων Ὀρφέως οὕτως ἐστὶν ἡ ἁρχή (vide supra ad vs. 456).
@@ -1825,8 +1798,8 @@ legitur. cfr. Hermann. Orph. p. 494. Lobeck. Aglaoph. p. 414.)
 adhuc integrum essetʼ Gaisford., quocum consentit B. Giseke
 l. l. p. 102 hos versus sub finem carminis a Maximo scriptos
 fuisse coniiciens. quorum nihil probo.</note>
-</div>
-</div>
-</body>
-</text>
+            </div>
+         </div>
+      </body>
+   </text>
 </TEI>

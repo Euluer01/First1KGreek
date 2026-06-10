@@ -1,100 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-    
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">Adversus Lycum</title>
-                <author>Galen</author>
-                <editor>Karl Gottlob Kühn</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Adversus Lycum</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0057.tlg093.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg093.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-                        <author>Galen</author>
-                        <editor>Karl Gottlob Kühn</editor>
-                        <imprint>
-                            <publisher>Knobloch</publisher>
-                            <pubPlace>Leipzig</pubPlace>
-                            <biblScope unit="vol">18.1</biblScope>
-                            <biblScope unit="pp" from="196" to="245">196-245</biblScope>
-                            <date>1829</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/hvd.hxpp8z?urlappend=%3Bseq=210">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg093.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Leipzig</pubPlace>
+                     <biblScope unit="vol">18.1</biblScope>
+                     <biblScope unit="pp" from="196" to="245">196-245</biblScope>
+                     <date>1829</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/hvd.hxpp8z?urlappend=%3Bseq=210">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg093.1st1K-grc1">
-                <pb n="196"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΓΑΛΗΝΟΥ ΠΡΟΣ ΛΥΚΟΝ ΒΙΒΛΙΟΝ.</head>
-                    <p>
-                        <milestone unit="ed2page" n="358"/>Ἀνεμέσητον μὲν δήπου Λύκῳ καὶ παντὶ τῷ
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg093.1st1K-grc1">
+         <pb n="196"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΡΟΣ ΛΥΚΟΝ ΒΙΒΛΙΟΝ.</head>
+            <p>
+               <milestone unit="ed2page" n="358"/>Ἀνεμέσητον μὲν δήπου Λύκῳ καὶ παντὶ τῷ
                         <lb/>βουληθέντι πρὸς Ἱπποκράτην γράφειν. ἔτι δὲ ἀνεμεσητότερον <lb/>οἶμαι
                         τοῖς δυναμένοις ἀπολύσασθαι τὰ κακῶς εἰρημένα πρὸς <lb/>αὐτὸν ἐγκλήματα,
                         καθάπερ ἐν δικα<milestone unit="ed2page" n="359"/>στηρίῳ τοῖς
@@ -124,9 +131,9 @@
                         πλεῖστον ἔχει τὸ ἔμφυτον θερμὸν, εἶτα πολλῶν <lb/>καὶ ἄλλων παρακαλεσάντων
                         ἀπολογήσασθαι πρὸς τὰς κατηγορίας, <lb/>οὕτως ἀναγκασθεὶς ἐπὶ τόνδε τὸν
                         λόγον ἧκον. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>Ἵνα δὲ τοῖς μὲν ὑπ’ ἐκείνου λεγομένοις, ὑπ’ ἐμοῦ δὲ <lb/>μέλλουσι πρὸς αὐτὰ
+         </div>
+         <div n="2" type="chapter">
+            <p>Ἵνα δὲ τοῖς μὲν ὑπ’ ἐκείνου λεγομένοις, ὑπ’ ἐμοῦ δὲ <lb/>μέλλουσι πρὸς αὐτὰ
                         ῥηθῆναι, ῥᾷον ἀκολουθήσωσιν οἱ δικάσοντες <lb/>ἡμῖν, ἀναγκαῖον ἔσται μοι
                         βραχέα προειπεῖν. ὅτι <lb/>μέν ἐστι θερμὸν ἐν ἡμῖν ἐναργῶς ἅπασι φαίνεται,
                         πότερα <lb/>δ’ ἐκ κινήσεως τοῦτο τῆς κατὰ τὴν καρδίαν <milestone unit="ed1page" n="330"/>καὶ <lb/>τὰς ἀρτηρίας ἔχει τὴν γένεσιν ἢ καθάπερ
@@ -232,9 +239,9 @@
                         ἰατροῖς ἀδήλου ﻿<pb n="206"/> διαπνοῆς, ἣν διαπνεῖται τὰ σώματα, τὸ μὲν
                         τοιοῦτόν <lb/>ἐστιν οἷον ἀτμὸς, ἕτερον δὲ οἷον ἀὴρ ξηρὸς, ἕτερον δὲ σὺν
                         <lb/>αἰσθηταῖς ὑγρότησιν ἐκπῖπτον. λείπει τινά. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>Αὕτη μὲν ἡ ῥῆσίς ἐστι τῶν ὑπὸ τοῦ Λύκου γεγραμμένων <lb/>εἰς κατασκευὴν τοῦ
+         </div>
+         <div n="3" type="chapter">
+            <p>Αὕτη μὲν ἡ ῥῆσίς ἐστι τῶν ὑπὸ τοῦ Λύκου γεγραμμένων <lb/>εἰς κατασκευὴν τοῦ
                         μηδὲν διαφέρειν ἕτερον ἑτέρου <lb/>θερμὸν οὐκ ἀναμένουσα τὸν ἔξωθεν ἔλεγχον,
                         ἀλλ’ ἑαυτὴν <lb/>καταβάλλουσα. τί γάρ δὴ καί φησι; τὸ θερμὸν ᾗ νενόηται
                         <lb/>θερμὸν, οὐδεμίαν ἔχει παραλλαγὴν πρὸς ἕτερον θερμόν. <lb/>εἰ μὲν οὖν
@@ -306,7 +313,7 @@
                         παραδείγματα δὲ σαφηνείας ἕνεκεν προσέθηκε, <lb/>τὴν γραμματικήν τε καὶ
                         μουσικὴν, οὕτως καὶ ἡμᾶς ἓν ἔτι <lb/>προσθεῖναι παράδειγμα, τέχνης μὲν
                         γραφικῆς, ὕλης δ’ <lb/>
-                        <milestone unit="ed2page" n="364"/>ὑποκειμένης αὐτῇ χρωμάτων. ἔξεστι γὰρ
+               <milestone unit="ed2page" n="364"/>ὑποκειμένης αὐτῇ χρωμάτων. ἔξεστι γὰρ
                         δήπου <lb/>λέγειν κἀνταῦθα τὸ χρῶμα τοῦ χρώματος, ᾗ χρῶμά ἐστιν, <lb/>οὐδὲν
                         διαφέρει, καὶ κατὰ τοῦτ’ ἀναιρεῖν ἁπάσας τὰς ἐν αὐτοῖς <lb/>διαφορὰς, ὅπερ
                         ἀμέλει καὶ ὁ Πλάτων αὐτὸς ἐν ἀρχῇ <lb/>τοῦ Φιλήβου δεδήλωκε. διαιρουμένῳ γὰρ
@@ -379,11 +386,10 @@
                         θερμοῦ διαλλάττειν φαμὲν, οὐ μὴν ἐναντίου γε <lb/>ὑπάρχειν πάντῃ. χρῶμα δὲ
                         χρώματος οὐ διαφέρειν μόνον, <lb/>ἀλλὰ καὶ τὴν φύσιν ἐναντιώτατόν ἐστι τοῦ
                         λευκοῦ τὸ <lb/>μέλαν. </p>
-                </div>
-                <pb n="217"/>
-
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>Καὶ πῶς ἐγχωρεῖ, φήσειεν ἂν ὁ Λύκος, ἐναντίον εἶναι <lb/>τῷ χρώματι καθ’ ὃ
+         </div>
+         <pb n="217"/>
+         <div n="4" type="chapter">
+            <p>Καὶ πῶς ἐγχωρεῖ, φήσειεν ἂν ὁ Λύκος, ἐναντίον εἶναι <lb/>τῷ χρώματι καθ’ ὃ
                         νενόηται χρῶμα ὄν; καὶ ἀληθεύσει γε <lb/>ναὶ μὰ τοὺς θεοὺς, ὅσον ἐπὶ
                         χρώματος καὶ τὸ χρῶμα μηδὲν <lb/>ἡγούμενος ἕτερον ἑτέρου διαφέρειν, ἀλλ’
                         ὥσπερ τοῦτο <lb/>ἀληθὲς, οὕτω κἀκεῖνο τὸ λευκὸν τοῦ μέλανος οὐ μόνον
@@ -474,10 +480,10 @@
                         τε καὶ τριταῖον καὶ τεταρταῖον. <lb/>ἀλλὰ καὶ αὐτὸς ὁ Λύκος ἑτέρωθι γράφει
                         πυρετῶν <lb/>διαφορὰς, ὥσπερ γε καὶ τῶν ἄλλων σχεδὸν ἁπάντων <lb/>πραγμάτων.
                     </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>
-                        <milestone unit="ed2page" n="368"/>Τί ποτ’ οὖν δόξαν αὐτῷ νῦν ἐπελάθετο τοῦ
+         </div>
+         <div n="5" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="368"/>Τί ποτ’ οὖν δόξαν αὐτῷ νῦν ἐπελάθετο τοῦ
                         <lb/>τέμνειν ἕκαστον τῶν ἄλλων εἰς τὰς οἰκείας διαφορὰς, ὅς γε <lb/>καὶ περὶ
                         τοῦ τῶν ἀχύρων ἐξαπτομένου πυρὸς, ὡς χρῆσθαι <lb/>τοῖς τὸν χρυσὸν
                         ἐργαζομένοις ἔθος, οὐδεμίαν εἶναι νομίζει <lb/>διαφορὰν, ἀλλὰ πρὸς τὸ τὰς
@@ -502,9 +508,9 @@
                         μᾶλλον <lb/>ὑπ’ αὐτῶν ἐκτεθερμασμένος ᾖ, ποτὲ δ’ ἧττον, ἀναγκαῖον <lb/>εἶναι
                         παμπόλλην γε ποικιλίαν γίγνεσθαι καὶ διαφορὰν οὐκ <lb/>ὀλίγην τῆς φλογός. ἡ
                         γὰρ τῆς μίξεως ἀνομοιότης τὸ πλῆθος <lb/>τῶν διαφορῶν ἐργάζεται. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>Ὥσπερ δὲ τὰ περὶ τοῦ πυρὸς ἀμαθῶς εἴρηται τῷ <lb/>Λύκῳ, κατὰ τὸν αὐτὸν,
+         </div>
+         <div n="6" type="chapter">
+            <p>Ὥσπερ δὲ τὰ περὶ τοῦ πυρὸς ἀμαθῶς εἴρηται τῷ <lb/>Λύκῳ, κατὰ τὸν αὐτὸν,
                         οἶμαι, τρόπον κἀπειδὰν φάμενος τριχῶς <lb/>ἐννοεῖσθαι τὸ πολὺ θερμὸν,
                         ἕκαστον τῶν σημαινομένων <lb/>ἐπεξέρχεται. τὸ μὲν γάρ τι κατὰ τὴν οὐσίαν
                         φησὶν <lb/>ἐννοεῖσθαι τὸ πολὺ θερμὸν, τὸ δὲ τι κατὰ τὴν ἐπίστασιν <lb/>τῆς
@@ -553,7 +559,7 @@
                         δὲ μέλι καὶ ἡ πίττα ἐν ὑπερβολῇ. οὕτω δὲ καὶ <pb n="229"/> πρὸς τὸν περὶ
                         θερμοῦ ἐρόμενον ποῖόν τί ἐστιν ἕτερον ἑτέρου <lb/>θερμότερον ὀρθῶς ἔστιν
                         ἀποκρίνασθαι τὸ μάλιστα ἐπιτεταμένον <lb/>
-                        <milestone unit="ed2page" n="370"/>κατὰ τὴν θάλψιν, οἷον τὸ πῦρ οὐκ ἂν ἐπ’
+               <milestone unit="ed2page" n="370"/>κατὰ τὴν θάλψιν, οἷον τὸ πῦρ οὐκ ἂν ἐπ’
                         <lb/>ὀλίγης οὐσίας θεωρεῖται, ἕτερον δὲ τί που θερμὸν καὶ <lb/>χλιαρὸν
                         ἀντεξεταζόμενον τούτου τυγχάνον ἐπὶ πλείονος οὐσίας <lb/>ὑπάρχον. πρὸς μὲν
                         οὖν ταῦτα αἵδ’ ἀποκρίσεις εἰσὶ, <lb/>πρὸς δὲ τὸν ἀναπυνθανόμενον, ποῖόν τί
@@ -637,12 +643,11 @@
                         λέγεσθαι συγχωρεῖ, κεχρῆσθαι <lb/>δὲ οὐ καλῶς αὐτὸν ἀποφαίνει τῇ λέξει.
                         χρῆναι γὰρ οὐ <lb/>πλέον, ἀλλ’ ἰσχυρότερον ὡς πρὸς τὴν ἐνέργειαν εἰρῆσθαι τὸ
                         <lb/>τῶν αὐξανομένων θερμόν. </p>
-                </div>
-                <pb n="235"/>
-
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>
-                        <milestone unit="ed2page" n="372"/>Ἀλλ’, ὦ βέλτιστε Λύκε, φαίη τις ἂν,
+         </div>
+         <pb n="235"/>
+         <div n="7" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="372"/>Ἀλλ’, ὦ βέλτιστε Λύκε, φαίη τις ἂν,
                         οἶμαι, <lb/>πρὸς αὐτὸν ἀπολογούμενος ὑπὲρ ὧν ἐπηρεάζει τὸν Ἱπποκράτην
                         <lb/>μὴ ταῦτα εἶναι μοχθηρὰ τὰ λεγόμενα. εὐθὺς οὖν τὸ <lb/>κατὰ τὴν οὐσίαν
                         πλέον θερμὸν, οὐχ ἁπλῶς κρίνεται τῷ <lb/>τοῦ παντὸς ὄγκῳ σώματος, ἀλλ’ ὡς
@@ -691,7 +696,7 @@
                         ἀναφέροντες ἁπλῶς τῶν οἰκιῶν, ἀλλὰ πρὸς τὸν οἰκεῖον <lb/>ἀέρα τοῦ βαλανείου,
                         οὕτως καὶ κατὰ τὸν ἄνθρωπον <lb/>ἐροῦμεν ἤτοι πλείστην εἶναι τὴν οὐσίαν ἢ
                         ὀλίγην τοῦ <milestone unit="ed1page" n="336"/>
-                        <lb/>ἐμφύτου θερμοῦ, παραβάλλοντες τοῖς οὐκ ἐμφύτοις σώμασιν.
+               <lb/>ἐμφύτου θερμοῦ, παραβάλλοντες τοῖς οὐκ ἐμφύτοις σώμασιν.
                         <lb/>αἱματωδέστατα γὰρ ἅπαντα ἔχει τὸ βρέφος, ἄχρι καὶ τοῖς <lb/>ὀστοῖς
                         ἐμφαίνεσθαί τι τοιοῦτον. ἔμπαλιν δὲ οἱ γέροντες <lb/>ἀναιμότατα πάντ’
                         ἔχουσιν ἄχρι τῶν σαρκῶν· καὶ γὰρ ταύταις <lb/>ἐλάχιστον αἵματος ὑπάρχει.
@@ -797,8 +802,7 @@
                         διακρίνειν ἀληθεῖς λόχους ψευδῶν. ἐφ’ ἅπασι δὲ <lb/>τούτοις τολμηρότατός τε
                         ἅμα καὶ φλύαρος ὤφθης, ἐπιχειρήσας <lb/>γράφειν ἐξηγήσεις τῶν ὑφ’
                         Ἱπποκράτους εἰρημένων <lb/>ἄνευ τοῦ μεμαθηκέναι πρότερον αὐτά. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

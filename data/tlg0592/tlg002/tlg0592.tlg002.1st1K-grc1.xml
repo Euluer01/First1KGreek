@@ -1,101 +1,116 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">
-<fileDesc>
-<titleStmt>
- <title xml:lang="grc">Περὶ τῶν στάσεων</title>
- <author xml:lang="lat">Hermogenes</author>
-<editor>Hugo Rabe</editor>
- <funder>Harvard Library Arcadia Fund</funder>
- <principal>Gregory Crane</principal>
- <respStmt>
-  <persName xml:id="DDD">Digital Divide Data</persName>
-  <resp>Corrected and encoded the text</resp>
- </respStmt>
- <respStmt>
-  <persName>Gregory Crane</persName>
-  <resp>Editor-in-Chief, Perseus Digital Library</resp>
- </respStmt>
- <respStmt>
-  <persName>Matt Munson</persName>
-  <resp>Project Manager (University of Leipzig)</resp>
- </respStmt>
- <respStmt>
-  <persName>Annette Gessner</persName>
-  <resp>Project Assistant (University of Leipzig)</resp>
- </respStmt>
- <respStmt>
-  <persName>Thibault Clérice</persName>
-  <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
- </respStmt>
- <respStmt>
-  <persName>Bruce Robertson</persName>
-  <resp>Technical Advisor</resp>
- </respStmt>
-</titleStmt>
-<publicationStmt>
-<authority>Harvard College Library</authority>
-<idno type="filename">tlg0592.tlg002.1st1K-grc1.xml</idno>
-<availability>
- <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="grc">Περὶ τῶν στάσεων</title>
+            <author xml:lang="lat">Hermogenes</author>
+            <editor>Hugo Rabe</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg0592.tlg002.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
  License</licence>
-</availability>
-<date>2017</date>
-<publisher>Harvard College Library</publisher>
-<pubPlace>United States</pubPlace>
-</publicationStmt>
-<sourceDesc>
-<listBibl>
- <biblStruct>
- <monogr>
-  <title xml:lang="lat">Hermogenis Opera</title>
-  <editor>
-	<persName>
-	 <name>Hugo Rabe</name>
-	</persName>
-  </editor>
-  <author ref="urn:cts:greekLit:tlg0592" xml:lang="lat">Hermogenes</author>
-  <imprint>
-	<publisher>Teubner</publisher>
-	<pubPlace>Leipzig</pubPlace>
-	<date>1913</date>
-  </imprint>
- </monogr>
-  <series>
-   <title xml:lang="lat">Rhaetores Graeci</title>
-   <biblScope unit="volume">6</biblScope>
-  </series>
-  <ref target="http://hdl.handle.net/2027/mdp.39015002968520">Hathi Trust</ref>
- </biblStruct>
-</listBibl>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
- <p>Text encoded in accordance with the latest EpiDoc standards</p>
- <refsDecl n="CTS">
-  <cRefPattern matchPattern="(.+).(.+)" n="paragraph" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-  <cRefPattern matchPattern="(.+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
- </refsDecl>
-</encodingDesc>
-<profileDesc>
-<langUsage>
-<language ident="grc">Greek</language>
-<language ident="lat">Latin</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change/>
-</revisionDesc>
-</teiHeader>
-<text>
-	<body>
-	 <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0592.tlg002.1st1K-grc1">
-<pb n="28"/>
-<note type="marginal">W. 1</note> <head>ΕΡΜΟΓΕΝΟΥΣ ΤΕΧΝΗΣ ΡΗΤΟΡΙΚΗΣ</head> <note type="marginal">8p. 133</note>
-<div type="textpart" subtype="section" n="1">
-<head>ΠΕΡΙ ΤΩΝ ΣΤΑΣΕΝΩ.</head>
-<div type="textpart" subtype="paragraph" n="1"><p>Πολλῶν ὄντων καὶ μεγάλων, ἃ τὴν ῥητορικὴν συνίστησι
+            </availability>
+            <date>2017</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg0592.tlg002.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Hermogenis Opera</title>
+                     <editor>
+                        <persName>
+                           <name>Hugo Rabe</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg0592" xml:lang="lat">Hermogenes</author>
+                     <imprint>
+                        <publisher>Teubner</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1913</date>
+                     </imprint>
+                  </monogr>
+                  <series>
+                     <title xml:lang="lat">Rhaetores Graeci</title>
+                     <biblScope unit="volume">6</biblScope>
+                  </series>
+                  <ref target="http://hdl.handle.net/2027/mdp.39015002968520">Hathi Trust</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+).(.+)"
+                         n="paragraph"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)"
+                         n="section"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-section"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0592.tlg002.1st1K-grc1">
+         <pb n="28"/>
+         <note type="marginal">W. 1</note>
+         <head>ΕΡΜΟΓΕΝΟΥΣ ΤΕΧΝΗΣ ΡΗΤΟΡΙΚΗΣ</head>
+         <note type="marginal">8p. 133</note>
+         <div n="1" type="section">
+            <head>ΠΕΡΙ ΤΩΝ ΣΤΑΣΕΝΩ.</head>
+            <div n="1" type="paragraph">
+               <p>Πολλῶν ὄντων καὶ μεγάλων, ἃ τὴν ῥητορικὴν συνίστησι
 καὶ τέχνην ποιεῖ, καταληφθέντα τε ἐξ ἀρχῆς δηλαδὴ
 καὶ συγγυμνασθέντα τῷ χρόνῳ σαφῆ τε τὴν ὠφέλειαν <lb n="5"/>
 παρεχόμενα τῷ βίῳ κἀν ταῖς βουλαῖς κἀν τοῖς
@@ -107,12 +122,13 @@
 διαιρέσεως εἰς τὰ λεγόμενα κεφάλαια ὁ λόγος γινέσθω·
 <note type="marginal">2</note> ἔστι δὲ σχεδὸν ὁ αὐτὸς τῷ περὶ εὑρέσεως, πλὴν
 ὅσον οὐ πάντα ἔχει τὰ περὶ εὑρέσεως.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p>Καὶ πρῶτόν γε, ὅ τι ἔστι πολιτικὸν ζήτημα, ῥητέον· <lb n="15"/>
-<note type="footnote">P = Pa Pc</note>
-<note type="footnote">V = Vc Ac Ba</note>
-<note type="footnote">Ph, Py</note>
-<note type="footnote">1 de titulo v. Praef. 4 sq. cf J. ab Arnim, Stoic vet. fragn l
+            </div>
+            <div n="2" type="paragraph">
+               <p>Καὶ πρῶτόν γε, ὅ τι ἔστι πολιτικὸν ζήτημα, ῥητέον· <lb n="15"/>
+                  <note type="footnote">P = Pa Pc</note>
+                  <note type="footnote">V = Vc Ac Ba</note>
+                  <note type="footnote">Ph, Py</note>
+                  <note type="footnote">1 de titulo v. Praef. 4 sq. cf J. ab Arnim, Stoic vet. fragn l
 p 21. lI p 30. 31 5 | συγ m. po.] γυμνασθέντα Ba; συγ supr. Ph
 8—1 cf. Π εὑρ. 205 206. 201 Sp. 8 τῆς διαιρέσεως Vc Ba Ph
 δὴ Vc Ba, Sop. 9 schol. Wc (Glöckner, Über den Kommmentar des
@@ -123,22 +139,23 @@ Ac | ῥητορικῆς μέρος Ac Phy, Syr 13 σχεδὸν ὁ αὐτὸ
 Syr.; ὁ αὐτὸς σχεδὸν P: ὁ αὐτὸς λόγος Sop 14 περὶ τῆς εὑ-
 ρέσεως Ph 15 Sop W V 26, 24 (9, 15): Μινουκιανοῦ ἐπιλαμ-
 βάνεται |γε om. Vc Ac; μὲν Marc IV 69, 9 W. |ὅ τί ποτέ Ac</note>
-
-<pb n="29"/>
+                  <pb n="29"/>
 ἔστι τοίνυν ἀμφισβήτησις λογικὴ ἐπὶ μέρους ἐκ τῶν
 παρʼ ἑκάστοις κειμένων νόμων ἢ ἐθῶν περὶ τοῦ νομισθέντος
 δικαίου ἢ τοῦ καλοῦ ἢ τοῦ συμφέροντος ἢ
 καὶ πάντων ἅμα ἢ τινῶν· τὸ γὰρ ὡς ἀληθῶς τε καὶ
 <lb n="5"/> καθόλου καλὸν ἢ συμφέρον ἢ τὰ τοιαῦτα ζητεῖν οὐ
 ῥητορικῆς.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p>Τὴν δὲ ἀμφισβήτησιν ταύτην ἀνάγκη περί τε πρόσωπα
+            </div>
+            <div n="3" type="paragraph">
+               <p>Τὴν δὲ ἀμφισβήτησιν ταύτην ἀνάγκη περί τε πρόσωπα
 γίνεσθαι καὶ πράγματα· ὧν πλείστη δήπου διαφορά,
 ἣν τοῖς ἐπιγνοῦσι ῥᾴδιον ἤδη τὰς διαιρέσεις
 <lb n="10"/> συνιδεῖν τὰς εἰς τὰ κεφάλαια τῶν ζητημάτων καὶ ὅσα
 ὅλως διαιρεῖσθαι δύναται.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p>Τῶν οὖν προσώπων τὰ μέν ἐστιν οἷα καὶ δύνασθαι
+            </div>
+            <div n="4" type="paragraph">
+               <p>Τῶν οὖν προσώπων τὰ μέν ἐστιν οἷα καὶ δύνασθαι
 ἐξετάζεσθαι, τὰ δὲ οὔ, τόπον δὲ ἄλλως ἐπέχει προσώπου.
 τῶν δʼ αὖ ἐξεταζομένων ἰσχυροτάτην μὲν ἔχει δύναμιν
 <note type="marginal">134</note> τὰ ὡρισμένα καὶ κύρια, οἷον ὁ Περικλῆς, ὁ Δημοσθένης
@@ -162,8 +179,7 @@ Sop. | δύνασθαι Pc h Sr, Syr., (τ supr.) Vc; δύναται Pa y Ac Ba
 16 τοιαῦτα Pc h V, cf. Sop.; ὅμοια Pa 17 δὲ τὰ Vo Py; δὲ
 τάξιν ἔχουσι τὰ Sr 18 δὲ τὰ Pγ 19 καὶ λίχνοι Ph 22 καὶ
 mo.2 supr. ante κρίσιν Vc</note>
-
-<pb n="30"/>
+                  <pb n="30"/>
 κατὰ συμπλοκὴν προσώπου καὶ πράγματος, οἷον μειράκιον
 καλλωπιζόμενον φεύγει πορνείας· ἑβδόμην τὰ
 ἁπλᾶ προσηγορικά, οἷον στρατηγός, ῥήτωρ. ταυτὶ δὲ
@@ -173,16 +189,19 @@ mo.2 supr. ante κρίσιν Vc</note>
 ὅθεν καὶ μείζονα ἔχει δύναμιν τὰ ὡρισμένα καὶ
 κύρια· ἀλλὰ δεῖ περὶ ἑκάστου τῆς δυνάμεως ἰδίᾳ γνόντα
 χρῆσθαι, ὡς ἂν ὁ καιρὸς διδῷ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5"><p>Τὰ μὲν οὖν ἐξεταζόμενα τῶν προσώπων ταῦτα, καὶ <lb n="10"/>
+            </div>
+            <div n="5" type="paragraph">
+               <p>Τὰ μὲν οὖν ἐξεταζόμενα τῶν προσώπων ταῦτα, καὶ <lb n="10"/>
 δεῖ τοῖς ἐγκωμιαστικοῖς ἀκολουθοῦντα τόποις χρῆσθαι
 τοῖς ἐμπίπτουσιν. οὐκ ἐπιδέχεται δὲ ἐξέτασιν τά τε
 ἀόριστα, οἷον τὸ τίς, καὶ τὰ ἱσάζοντα διόλου, οἷον δύο
 νέοι πλούσιοι εἰ ἐπί τῳ κρίνοιεν ἀλλήλους· ὃ γὰρ ἄν
 τις εἴπῃ κατὰ τοῦ ἑτέρου, ἔσται τοῦτο καὶ κατὰ τοῦ <lb n="15"/>
 ἑτέρου.</p>
-<note type="marginal">4</note> </div>
-<div type="textpart" subtype="paragraph" n="6"><p>Ὥσπερ δὲ τῶν προσώπων, οὕτω καὶ τῶν πραγμιάτων
+               <note type="marginal">4</note>
+            </div>
+            <div n="6" type="paragraph">
+               <p>Ὥσπερ δὲ τῶν προσώπων, οὕτω καὶ τῶν πραγμιάτων
 ἔστι διαφορά. καὶ ἰσχυροτάτην μὲν ἐξέτασιν ἐπιδέχεται
 ταῦτα, ἐφʼ οἷς τις αὐτὸς ὡς ποιήσας κρίνεται, ὡς ὁ θάπτων
 τὸ νεοσφαγὲς σῶμα ἐπʼ ἐρημίας καὶ φωραθεὶς καὶ <lb n="20"/>
@@ -200,8 +219,7 @@ Ba 18 πλείστη (pro ἔστι) Sop μὲν ἔχει δύναμιν τα�
 post φωραθεὶς Ph 22 εἰς τοῦτον Ba | τὸν Ph: τὸ [l] Ac
 23. 31, 1 προδοσίας κρίνεται V Ph : φεύγει προδοσίας Py, Syr. 2
 p. 67, 26, v. l. P. cf. 44, 7</note>
-
-<pb n="31"/>
+                  <pb n="31"/>
 προδοσίας· τρίτην, ἃ μεταξὺ τούτων ἐστίν, οἷον ἔγραψεν
 ὁ Περικλῆς εἰς δέον ἀνηλωκέναι πεντήκοντα τάλαντα,
 <note type="marginal">135</note> καὶ Ἀρχίδαμος δώρων φεύγει· τὸ γὰρ τῶν πεντήκοντα
@@ -213,16 +231,18 @@ p. 67, 26, v. l. P. cf. 44, 7</note>
 πρᾶγμα ἐνταῦθα κρινόμενον, θαυμάζω δέ, εἰ μὴ κρινομένου
 <lb n="10"/> πράγματος αἰτίαν τις ἀποδώσει καὶ τὸ λεγόμενον <note type="marginal">5</note>
 χρῶμα, ἀπολογήσεται δὲ οἶμαι ὁ ἄσωτος καὶ ἐρεῖ τι.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="7"><p>Πρᾶγμα δὲ οὐ κρίνεται κατά γε ἐμὲ τὸ ἐξισάζον μόνον,
+            </div>
+            <div n="7" type="paragraph">
+               <p>Πρᾶγμα δὲ οὐ κρίνεται κατά γε ἐμὲ τὸ ἐξισάζον μόνον,
 οἷον πένης καὶ πλούσιος ἑκάτεροι ὡραίας ἔχοντες
 γυναῖκας κατὰ ταὐτὸν ἄμφω πεφωράκασιν ἀλλήλους
 <lb n="15"/> ἐξιόντας ἐκ τῶν ἀλλήλων οἰκιῶν καὶ μοιχείας ἀλλήλοις
 ἀντεγκαλοῦσιν· ἐνταῦθα γὰρ αὖ πάλιν τὰ μὲν πρόσωπα
 διαλλάττοντα ἐπιδέχεται ἐξέτασιν, τὰ πράγματα δὲ οὐ
 διὰ τὸ ἰσάζειν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="8"><p>Μετὰ ταῦτα τοίνυν ἔστιν ἐξ αὐτῶν ἐπιγνῶναι τά τε
+            </div>
+            <div n="8" type="paragraph">
+               <p>Μετὰ ταῦτα τοίνυν ἔστιν ἐξ αὐτῶν ἐπιγνῶναι τά τε
 <note type="footnote">1 ἃ PVPy; ἣ| Ι?] Ρh; Sοp V 53, 1 Marc. IV 129. 16 W. τρίτην
 ἐξ ὑπονοίας (vel ὑποψίας) ἢ legerunt | Sop. V 55, 17 W.: πρὸς τὸν
 Μινουκιανὸν (cf Christoph f. 25 r, Rhein. Museum 50, 243) φι-
@@ -239,8 +259,7 @@ Pa Ac; πρᾶγμα ἐνταυθοῖ τὸ Py; τὸ πρᾶγμα ἐντα�
 ζόμενον Pc Vc 12. 13 schol. P (W VII 135, 27): πρὸς Μινουκιανὸν
 ἀντιλέγει 14 κατὰ ταυτὸν post 15 ἐξιόντας Ph: κατὰ ταὐτὸν ἄμφω
 om. Py 15 ἀπὸ (pro ἐκ) Ba Py; cf. 32, 16 17 δὲ πράγματα Vc</note>
-
-<pb n="32"/>
+                  <pb n="32"/>
 συνεστῶτα καὶ διαιρεῖσθαι δυνάμενα τῶν ζητημάτων
 καὶ ὅσα μὴ συνέστηκε. τὰ μὲν γὰρ ἤτοι ἄμφω καὶ πρόσωπον
 ἔχοντα καὶ πρᾶγμα κρινόμενον ἢ τὸ ἕτερόν γε
@@ -250,8 +269,10 @@ om. Py 15 ἀπὸ (pro ἐκ) Ba Py; cf. 32, 16 17 δὲ πράγματα Vc</n
 ἀφανὲς καὶ μὴ προειλημμένον δυνάμενόν τε πέρας λαβεῖν
 συνέστηκε· τὰ δʼ οὑτινοσοῦν τούτων ἐνδεᾶ ταῦτα
 ἀσύστατά ἐστιν. εἰρήσεται δὲ καὶ κατʼ εἶδος.</p>
-<note type="marginal">6</note> </div>
-<div type="textpart" subtype="paragraph" n="9"><p>Καὶ πρῶτόν γε ἀσυστάτων εἶδος τὸ μονομερές, ᾧ τὰ <lb n="10"/>
+               <note type="marginal">6</note>
+            </div>
+            <div n="9" type="paragraph">
+               <p>Καὶ πρῶτόν γε ἀσυστάτων εἶδος τὸ μονομερές, ᾧ τὰ <lb n="10"/>
 τῶν λόγων μὴ ἑκατέρωθεν ἰσχυρά, οἷον πορνοβοσκὸς
 δέκα νέους κωμάζοντας ἐπὶ τὴν οἰκίαν αὐτοῦ ὄρυγμα
 ποιήσας ὑποδεξάμενος ἀπέκτεινε καὶ φεύγει φόνου. —
@@ -276,8 +297,7 @@ add. Ba Py, post γυναῖκας v. l. P, cf. 31, 13; γυναῖκας ἔχ�
 ὡραίας Ac | ἄμφω γυναίκας ἔχοντες ὡραίας κατὰ ταυτὸν Ph
 ἄμφω om. Py 16 ἐξιόντας ἀλλήλους ἐκ P 17 κατὰ om. Ac,
 Syr, Sop. 21 παραθήκην Ph | ἀπαιτεῖ Ph; ἀπήτει PV Py</note>
-
-<pb n="33"/>
+                  <pb n="33"/>
 ὀφείλειν ἔτι φησίν. ἐνταῦθα γὰρ οὔτε διάφορα οὔτε
 ἰσχυρὰ τὰ τῶν πίστεων αὐτοῖς· περιπετεῖς γὰρ τοῖς
 ἑαυτῶν ἄμφω γίνονται λόγοις. — Τέταρτον κατὰ τὸ
@@ -294,8 +314,9 @@ Syr, Sop. 21 παραθήκην Ph | ἀπαιτεῖ Ph; ἀπήτει PV Py</
 μισθωσαμένῳ. — Ὄγδοον κατὰ τὸ ἀπερίστατον, οἷον
 <lb n="15"/> ἀποκηρύσσει τις τὸν υἱὸν ἐπʼ οὐδεμιᾷ αἰτίᾳ. Τʹαῦτα
 γὰρ οὐκ ἂν εἴη ζητήματα.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="10"><p>Παρὰ δὲ ταῦτα εἴδη ἔστιν ἕτερα ἐγγὺς μὲν ἀσυστάτων,
+            </div>
+            <div n="10" type="paragraph">
+               <p>Παρὰ δὲ ταῦτα εἴδη ἔστιν ἕτερα ἐγγὺς μὲν ἀσυστάτων,
 μελετώμενα δὲ ὅμως. πρῶτον μὲν τὸ ἑτερορρεπές,
 οἷον καταφυγόντος Κριτίου ἐπὶ τὰς Ἁρμοδίου καὶ
 <lb n="20"/> Ἀριστογείτονος εἰκόνας βουλεύονται Ἀθηναῖοι, εἰ δεῖ
@@ -312,8 +333,7 @@ Syr., Sop. |ἐμισθώσατό Ph 13 ἀπολαμβάνων V Ph y, v. l.
 τὸν ἑαυτοῦ υἱὸν Ac Py 17 εἴδη τῶν ἀσυστάτων ἐστιν ἕτερα·
 Pb, (εἰσὶν) Py | ἕτερα om. Sop. 19 τοῦ κριτίου Ac Ph 20 οἱ
 ἀθηναῖοι Ph |δεῖ PV: χρὴ Ph; χρὴ αὐτὸν Py</note>
-
-<pb n="34"/>
+                  <pb n="34"/>
 ἀποσπᾶν· τουτὶ γὰρ μονομερὲς μὲν οὐκ ἔστιν, ἑτερορρεπὲς
 <note type="marginal">8</note> δὲ. — Εἶτα τὸ κακόπλαστον, οἷον μετὰ τὴν Νικίου
 ἐπιστολὴν γράφει τις Κλέωνα στρατηγεῖν, ἢ πάλιν
@@ -328,9 +348,11 @@ Pb, (εἰσὶν) Py | ἕτερα om. Sop. 19 τοῦ κριτίου Ac Ph 20 
 ἐκεῖνον καὶ μοιχείας αὐτῇ ἐγκαλεῖ· θαυμάζω γάρ, εἴ
 τις αὐτῆς καταψηφιεῖται, κἂν ἐλεγχθῇ μεμοιχευμένη,
 διʼ ἣν ὁ τύραννος ἀνῄρηται. — Τάχα δʼ ἂν καὶ παρὰ
-ταῦτα εἴδη τινὰ εὑρεθείη ἄλλα τοιαῦτα.</p><lb n="15"/>
-</div>
-<div type="textpart" subtype="paragraph" n="11"><p>Ἀλλὰ περί γε τῆς τῶν συνεστώτων διαιρέσεως ἤδη
+ταῦτα εἴδη τινὰ εὑρεθείη ἄλλα τοιαῦτα.</p>
+               <lb n="15"/>
+            </div>
+            <div n="11" type="paragraph">
+               <p>Ἀλλὰ περί γε τῆς τῶν συνεστώτων διαιρέσεως ἤδη
 λεκτέον. εἴδους γὰρ ἕνεκα προβλημάτων καὶ τρόπου
 περίεργον ἂν εἴη λέγειν ἐν τῷ παρόντι· τὰ μὲν γὰρ
 εἴδη καὶ τοὺς τρόπους διὰ τοῦτο μανθάνομεν δήπου,
@@ -349,8 +371,7 @@ Ac Ba Py; τρόπων οὐ Ph |Syr. 2 p. 42, 13: εἰς Μινουκιανὸ
 αἰνίττεται κτλ. 20. 21 τὰ προβλήματα μελετῶμεν om Pc (init.
 fol..) 22 ἐπιδεικτικῶς τὸ ἐπιδεικτικόν Vc Py, (τὰ ἐπιδεικτικά)
 Ac; πανηγυρικῶς τὸ ἐπιδεικτικόν P; ἐπιδεικτικῶς τὸ πανηγυρι-</note>
-
-<pb n="35"/>
+                  <pb n="35"/>
 τὸ ἐπιδεικτικὸν καὶ ἕκαστον ὡς προσήκει προσφόρως
 τοῖς ὑποκειμένοις· τοὺς δὲ μήπω περὶ ψιλῆς διαιρέσεως
 τῆς εἰς τὰ λεγόμενα κεφάλαια τῶν ζητημάτων ἐπεσκεμμένους
@@ -365,8 +386,10 @@ Ac; πανηγυρικῶς τὸ ἐπιδεικτικόν P; ἐπιδεικτ
 τοῦ λόγου καὶ τῆς χρήσεως αὐτῶν ἑκάστης λόγος. νῦν
 οὖν περὶ ἐκείνης τῆς διαιρέσεως λεκτέον τῆς εἰς τὰ
 κεφάλαια.</p>
-<lb n="15"/></div>
-<div type="textpart" subtype="paragraph" n="12"><p>Διαιρήσει τοίνυν ὀρθῶς ὁ τήν τε διαφορὰν καὶ τὴν
+               <lb n="15"/>
+            </div>
+            <div n="12" type="paragraph">
+               <p>Διαιρήσει τοίνυν ὀρθῶς ὁ τήν τε διαφορὰν καὶ τὴν
 δύναμιν τῶν τε προσώπων καὶ τῶν πραγμάτων καὶ ἔτι <note type="marginal">10</note>
 τὴν λεγομένην στάσιν ἐπιγνοὺς τοῦ ζητήματος ὅθεν
 μὲν γὰρ εἴρηται στάσις, εἴτε ἀπὸ τοῦ στασιάζειν τοὺς
@@ -377,7 +400,7 @@ Ac; πανηγυρικῶς τὸ ἐπιδεικτικόν P; ἐπιδεικτ
 τὰ ἔνδοξα Sοp., (add καὶ ἐπιδεικτικῶς τὰ ἐπιδεικτικά) Ph: om
 Syr.; Vk mg.: ἐπιδεικτικῶς. πανηγυρικῶς ἔν τισι δὲ τῶν βι-
 βλίων ἀποδεικτικῶς γράφεται, ἀντὶ τοῦ ἀγωνιστικῶς κτλ.</note>
-<note type="footnote">2 διαιρέσεως ante 3 τῶν Ac Ba Phy, cf. Sr, Syr 4 δὴ
+                  <note type="footnote">2 διαιρέσεως ante 3 τῶν Ac Ba Phy, cf. Sr, Syr 4 δὴ
 τοῦτο Sop.; δὴ om. Vc Ac Py 6 γ᾿ ὀῦν Ph 7 καὶ om. Pab
 8 τι λέγειν ἐπιχειρήσωμεν Pc | περὶ αὐτῶν λέγειν Vc Ba Pb
 νῦν Py 9 Agathon. fr. 11 N. 2 | alt ὁ om. Vc Ac Phy | ἂν etiam
@@ -386,18 +409,19 @@ om. Syr. 17 εἰδὼς Syr 2 p. 46, 25 (at 47, 6) | schol P (W VII
 170, 13; cf. ann. 58): ἀποτείνεται δὲ πρὸς Μινουκιανὸν ἐτυμο-
 λογήσαντα; cf. Marc. W IV 195, 16 Sop. IV 199. 4 W 18.19
 τοὺς ἀγωνιζομένους om. Syr. 2 p. 47, 12 (at 47, 17)</note>
-
-<pb n="36"/>
+                  <pb n="36"/>
 τῶν ζητημάτων ἁπάντων, ὅπως τοῦτο ἐπιγνωσόμεθα
 τὴν μέθοδον ἐνταυθοῖ προθεὶς ποιήσομαι τὴν ἀρχὴν
 τῆς διαιρέσεως τῶν κεφαλαίων ἀπὸ στοχασμοῦ, ἀναγκαίως,
 ὡς αὐτὸ δηλώσει· ἐφεξῆς δὲ καὶ περὶ τῶν ἄλλων
-λελέξεται. Ἡ δʼ οὖν μέθοδός ἐστιν ἥδε.</p><lb n="5"/>
-</div></div>
-
-<div type="textpart" subtype="section" n="2">
-<head>ΜΕΘΟΔΟΣ ΤΩΝ ΣΤΑΣΕΩΝ.</head>
-<div type="textpart" subtype="paragraph" n="1"><p>Παντὸς οὑτινοσοῦν προτεθέντος ζητήματος, εἰ συνεστήκοι,
+λελέξεται. Ἡ δʼ οὖν μέθοδός ἐστιν ἥδε.</p>
+               <lb n="5"/>
+            </div>
+         </div>
+         <div n="2" type="section">
+            <head>ΜΕΘΟΔΟΣ ΤΩΝ ΣΤΑΣΕΩΝ.</head>
+            <div n="1" type="paragraph">
+               <p>Παντὸς οὑτινοσοῦν προτεθέντος ζητήματος, εἰ συνεστήκοι,
 ἐπισκοπεῖν δεῖ τὸ κρινόμενον, εἰ ἀφανές ἐστιν
 ἢ φανερόν. κἂν μὲν ἀφανὲς ᾖ, στοχασμὸς ἔσται· ἔστι
 γὰρ στοχασμὸς ἀδήλου πράγματος ἔλεγχος οὐσιώδης <lb n="10"/>
@@ -405,8 +429,9 @@ om. Syr. 17 εἰδὼς Syr 2 p. 46, 25 (at 47, 6) | schol P (W VII
 ὑποψίας</del>, οἷον πεφώραται τις θάπτων νεοσφαγὲς
 σῶμα ἐπʼ ἐρημίας καὶ φόνου φεύγει· ἀπὸ γὰρ τοῦ
 θάπτειν φανεροῦ ὄντος ἀφανές τι πρᾶγμα ζητοῦμεν
-οὐσιωδῶς τὸ τίς ὁ φονεύσας.</p><lb n="15"/>
-<note type="footnote">1 καὶ ante ὅπως add. Ba Ph, (supr.; m. 2?) Vc | τοῦτο P Ph, m.2
+οὐσιωδῶς τὸ τίς ὁ φονεύσας.</p>
+               <lb n="15"/>
+               <note type="footnote">1 καὶ ante ὅπως add. Ba Ph, (supr.; m. 2?) Vc | τοῦτο P Ph, m.2
 Vc (p 43, 9: τὰς στάσεις; W VII 174, 10: τὴν μέθοδον . . . διʼ ἧς
 ἑκάστην τῶν στάσεων ἐπιγνωσόμεθα); τούτων Vc Ba Py; τοῦτοων
 Ac 2 μέθοδος: l. 6 — p. 43, 8 (cf. Sop. V 78, 28 W.): διαίρεσις;
@@ -426,10 +451,10 @@ Glöckner, Quaest. rhet, dissertationis thes 2 (collatis Syr. 2 p. 61,
 m. po. supr ante ἢ Ac 12 cf 30, 19. 49, 16. 54, 5. Auct. ad Her.
 I 11, 18. Quin IV 2, 13 Cic. de inv I 8. 11 14 ζητοῦμεν om
 m. 1 Vc</note>
-
-<pb n="37"/>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p>Ἂν δὲ φανερὸν τὸ κρινόμενον, πάλιν ἐπισκεπτέον,
+               <pb n="37"/>
+            </div>
+            <div n="2" type="paragraph">
+               <p>Ἂν δὲ φανερὸν τὸ κρινόμενον, πάλιν ἐπισκεπτέον,
 εἰ τέλειόν ἔστιν ἢ ἀτελές· λέγω δὲ ἀτελές, ᾧ προστεθέντος
 τινὸς ὡς λείποντος ὄνομά τε εὐθύς γίνεται καὶ
 οὐκέτι ἔχει ζήτησιν οὐδεμίαν τὸ πρᾶγμα· ἂν γὰρ ᾖ
@@ -442,14 +467,16 @@ m. 1 Vc</note>
 εἶναι λέγει· ἐὰν γὰρ προστεθῇ τὸ καὶ ἱερὰ εἶναι τὰ
 χρήματα, σαφής γε οὗτος ἱερόσυλος καὶ οὐκέτι ἔχει τὸ
 πρᾶγμα ζήτησιν.</p>
-<note type="marginal">139</note> </div>
-<div type="textpart" subtype="paragraph" n="3"><p>Ἂν μέντοι φανερὸν καὶ τέλειον τὸ κρινόμενον, ἡ
+               <note type="marginal">139</note>
+            </div>
+            <div n="3" type="paragraph">
+               <p>Ἂν μέντοι φανερὸν καὶ τέλειον τὸ κρινόμενον, ἡ
 <lb n="15"/> ζήτησις περὶ τὴν ποιότητα τοῦ πράγματος ἵσταται, οἷον
 εἰ δίκαιον, εἰ νόμιμον, εἰ συμφέρον ἤ τι τῶν τούτοις
 ἐναντίων. καὶ ὄνομα μὲν γενικὸν τούτῳ ποιότης, ἤτοι
 δὲ περί τι πρᾶγμα ἔχει τὴν ζήτησιν ἢ περὶ ῥητόν· κἂν
 μὲν περὶ ῥητόν, νομικὴν ποιεῖ τὴν στάσιν, περὶ ὧν <note type="marginal">12</note>
-<lb n="20"/> ὕστερον ἐροῦμεν, ἂν δὲ περὶ πρᾶγμα, λογικήν. —
+                  <lb n="20"/> ὕστερον ἐροῦμεν, ἂν δὲ περὶ πρᾶγμα, λογικήν. —
 <note type="footnote">2 ἢ (pro εἰ), om. πάλιν ἐπισκεπτέον, Sr | μὲν ante ὧι add. Pc
 3 τι γίγνεται Vc, (γίν.) Ba | μετὰ ταῦτα post καὶ add. Phy 4 τὸ
 πρᾶγμια om Ph (signum ascriptum est) 5 ὁριστικὴν Ph |ποι-
@@ -464,8 +491,7 @@ Sop., cf Marc. IV 224, 8 17 W 17 ὡς γενικὸν Sop. V 90,18.
 20. 97, 6. 9 W., Nilus | τούτων Nilus | κοινὸν Sr | W IV 223, 4:
 τοὺς περὶ Ἑρμαγόραν ἐλέγχει κτλ. 18 περί τι ῥητόν Ph 19 ῥη-
 τὸν ᾖ Of, Marc. IV 224, 30 W. | ποιήσει Ph: ποιεῖται Py</note>
-
-<pb n="38"/>
+                  <pb n="38"/>
 Διαιρήσεις δὲ καὶ τοῦτο δίχα· ἢ γὰρ περὶ μέλλοντος
 πράγματος ἔχει τὴν ζήτησιν ἢ περί τινος ἤδη γεγονότος·
 κἂν μὲν περὶ μέλλοντος, ἔσται πραγματική·
@@ -501,8 +527,7 @@ IV 240, 2 W. | γὰρ PV Py ; δὲ Ph 28 ἀνθιστῆ Ac Ba ; ἀνθί-
 στησιν Vc Ph y, Nilus ; ἀντεισάγῃ Pf Syr. 2 p 139, 3: ἀντιτιθῇ
 εὐεργέτημα PPh, cf Syr.; εὐεργέτημα μεῖζον V Pγ, v. l. P; μεῖζον
 εὐεργέτημα Nilus, Syr. l l 12; p. 73, 14. 83, 15</note>
-
-<pb n="39"/>
+                  <pb n="39"/>
 πεπραγμένον. ἂν δὲ εἴς τι τῶν ἔξωθεν, ἤτοι εἰς
 αὐτὸν τὸν παθόντα ἢ εἰς ἄλλο τι· κἂν μὲν εἰς τὸν
 παθόντα, ποιεῖ ἀντέγκλημα· γίνεται γὰρ ἀντέγκλημα,
@@ -522,12 +547,14 @@ IV 240, 2 W. | γὰρ PV Py ; δὲ Ph 28 ἀνθιστῆ Ac Ba ; ἀνθί-
 εἰ δέ τις ἡμῖν τι περὶ τούτων ἀμφισβητεῖ, συγγνώμης
 λέγω καί μεταστάσεως, ἀκριβέστερον ἐν τῷ περὶ ἀντιθέσεως
 λελέξεται.</p>
-<lb n="20"/> </div>
-<div type="textpart" subtype="paragraph" n="4"><p>Τὰς μὲν οὖν λογικὰς τῶν στάσεων ἐκ τούτων ἐπιγνωσόμεθα·
+               <lb n="20"/>
+            </div>
+            <div n="4" type="paragraph">
+               <p>Τὰς μὲν οὖν λογικὰς τῶν στάσεων ἐκ τούτων ἐπιγνωσόμεθα·
 τὰς δʼ αὖ νομικὰς οὕτω. πρῶτον μὲν περὶ
 ῥητὰ ἀνάγκη τὴν ζήτησιν ἐνταῦθα γίνεσθαι· ῥητὰ δὲ
 λέγω οἷον νόμους, διαθήκας, ψηφίσματα, ἐπιστολάς, <note type="marginal">14</note>
-<note type="footnote">2 ἢ — 3 παθόντα om. Pc |ἕτερον γίγνεται post τι add. Ph
+                  <note type="footnote">2 ἢ — 3 παθόντα om. Pc |ἕτερον γίγνεται post τι add. Ph
 ἂν μὲν γὰρ εἰς Ph |αὐτὸν τὸν Ac 6 τι om. Sop |μεθιστῆι Vc, Sop.,
 Nilus; μεθίστησι Ac Phy 7 τι om Nilus; τι καὶ Pc 8 τὸ (pro
 τι) Pc | πεποιηκέναι τι Ba 11 μὲν P Ba Py; δὲ Vc Ph ; om.
@@ -538,8 +565,7 @@ om. Py 17 schol. P (W VII 206, 15): πρὸς Μινουκιανὸν κτλ
 στάσεως ἕνεκα Vc Ph | p. 75, 11 20 οὕτως (pro ἐκ τούτων) Ba
 21 μὲν οὖν Ph 22 ῥητὸν Pγ, Marc. IV 254, 20 W. al. | ἐν-
 ταυθοῖ Py</note>
-
-<pb n="40"/>
+                  <pb n="40"/>
 κηρύγματα ὡρισμένα, πάντα ἁπλῶς τὰ ἐν ῥητοῖς. ταύτην
 δὲ τὴν ζήτησιν ἤτοι περὶ ἓν ἢ καὶ πλείονα γίγνεσθαι
 συμβαίνει ῥητά· λέγω δὲ πλείονα, κἂν ἕν τι ῥητὸν
@@ -559,9 +585,10 @@ om. Py 17 schol. P (W VII 206, 15): πρὸς Μινουκιανὸν κτλ
 παράθεσις εἰς ταὐτὸν συνάγοντός τινος τὸ ἄγραφον
 τῷ ἐγγράφῳ· οἷον τὸν ἐξ ἑταίρας μὴ λέγειν, ἐκ
 <note type="marginal">15</note> πόρνου τινὰ γεγονότα λέγειν κωλύει τις.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5"><p>Εἰ μέντοι περὶ δύο ῥητὰ ἢ καὶ πλείονα ἢ καὶ ἓν εἰς <lb n="20"/>
-<note type="footnote">1 κηρύγματα, ὡρισμένα πάντα Nilus, schol. P W VII 213, 6 (cf.
+            </div>
+            <div n="5" type="paragraph">
+               <p>Εἰ μέντοι περὶ δύο ῥητὰ ἢ καὶ πλείονα ἢ καὶ ἓν εἰς <lb n="20"/>
+                  <note type="footnote">1 κηρύγματα, ὡρισμένα πάντα Nilus, schol. P W VII 213, 6 (cf.
 Sοp. V 103, 4 W.) 2 [ἢ] καὶ P W IV 255, 16, ἢ περὶ 256. 1: ἢ καὶ
 περὶ Ah Oh Vg 2. 3 συμβαίνει γίνεσθαι Py 4 διήιρηται Ba Ph, m.1
 Vc ὁ om. Ac 5 φαίνωνται χρώμενοι Py 7 τὰς ante 6 περὶ Ph
@@ -576,8 +603,7 @@ cf. Cic. de or. II 24, 100 Quint. VII 6, 6. Aps. 2 p. 273, 2 Sp. -H.
 m. 1, ex ν] Pa; cf. l.17 15 ἄγον Vc, (ω, supr ο) P: συνάγον Py
 τὸ ἔγγραφον τῶι ἀγράφωι Vc, Sοp. 17 συνάγοντος εἰς τἀυτόν
 Ac Ba Ph | τινος om. Py 18 cf Quint VII 6, 3. Aps. l 2 p. 275, 5</note>
-
-<pb n="41"/>
+                  <pb n="41"/>
 δύο διαιρούμενον ἡ ζήτησις εἴη, ἀντινομία γίνεται·
 ἔστι γὰρ ἀντινομία δύο ἢ καὶ πλειόνων ῥητῶν ἢ καὶ
 ἑνὸς διαιρουμένου μὴ φύσει ἐναντίων κατὰ περίστασιν
@@ -590,8 +616,9 @@ Ac Ba Ph | τινος om. Py 18 cf Quint VII 6, 3. Aps. l 2 p. 275, 5</note>
 <lb n="10"/> ἢ γάμον ἢ θάνατον αἱρείσθω τοῦ βιασαμένου,
 δύο τις κατὰ ταὐτὸν ἐβιάσατο κόρας, καὶ ἣ μὲν γάμον
 αὐτοῦ, ἣ δὲ θάνατον αἱρεῖται.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="6"><p>Ἡ μέντοι ἀμιφιβολία καὶ ἀπʼ αὐτοῦ τοῦ ὀνόματός
+            </div>
+            <div n="6" type="paragraph">
+               <p>Ἡ μέντοι ἀμιφιβολία καὶ ἀπʼ αὐτοῦ τοῦ ὀνόματός
 ἐστι φανερά· ἔστι γὰρ ἀμφιβολία ἀμφισβήτησις περὶ
 <lb n="15"/> ῥητὸν ἐκ προσῳδίας ἢ διαστάσεως συλλαβῶν γινομένη·
 ἐκ μὲν προσῳδίας, οἷον ἑταίρα χρυσία εἰ φοροίη, δημοσια
@@ -602,7 +629,7 @@ Ac Ba Ph | τινος om. Py 18 cf Quint VII 6, 3. Aps. l 2 p. 275, 5</note>
 διάστασιν συλλαβῶν, οἷον δύο ἦσάν τῳ παῖδες, Λέων
 <note type="footnote">Sp. -Η. 19 λέγειν post τις Ac 20 ἂν Py, ἐὰν Sop. l ῥητὰ
 ἦ ἢ Nilus | ἢ καὶ πλείονα om. m. 1Py |pr καὶ om. Ph</note>
-<note type="footnote">1 εἴη post 40, 20 ἓν (om. εἰς δύο) Ac 3 ἐναντίου Ph, m. 1Vc
+                  <note type="footnote">1 εἴη post 40, 20 ἓν (om. εἰς δύο) Ac 3 ἐναντίου Ph, m. 1Vc
 4 δὲ om Ph 5 ὁ supr Ph: om Pcy ; cf 85, 1 6 cf. Auct
 ad Her. I 11, 19. Cic. de inv. II 51, 153 7 τῆς νεώς Pc V Phy,
 mg. Pa; αὐτῆς Pa | ἔμεινε Pc | πατρώαι ante νηὶ add. Vc Ph,
@@ -615,14 +642,14 @@ II 129, 19 Sp. Cic. de inv. II 40, 118 | εἰ χρυσία Vc Pγ 10 18. 19
 εἶναι Pah V, Syr.; cf. 91, 4 19 νόμον m. 1, τόνον m. 2, Vc
 20 ἀνταναγινώσκοντες Phy, v. l. P 20. 21 περὶ δὲ διαστάσεως
 Md Οh, (ἐκ pro περὶ) DLz 21 cf. Quint VII 9, 6</note>
-
-<pb n="42"/>
+                  <pb n="42"/>
 καὶ Πανταλέων· διέθετο οὕτως ῾ ἐχέτω τὰ ἐμὰ πανταλεων’,
 <note type="marginal">16</note> καὶ ἑκάτερος ἀντιποιεῖται πάντων, ὃ μὲν ὑφʼ
 ἓν ἀναγινώσκων Πανταλέων, ὃ δὲ διιστὰς πάντα, εἶτα
 Λέων.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="7"><p>Ταύτας μὲν οὖν οὕτως ἐπιγνωσόμεθα, τὴν δὲ μετάληψιν <lb n="5"/>
+            </div>
+            <div n="7" type="paragraph">
+               <p>Ταύτας μὲν οὖν οὕτως ἐπιγνωσόμεθα, τὴν δὲ μετάληψιν <lb n="5"/>
 οὐκέθʼ ὁμοίως, ἀλλʼ ὅταν ἡ ζήτησις ᾖ περὶ τοῦ
 εἰ δεῖ τὸν ἀγῶνα εἰσελθεῖν· ἐν γὰρ μεταλήψει οὔτε εἰ <note type="marginal">142</note>
 ἔστι τι προηγουμένως ζητήσεις, καθάπερ ἐν στοχασμῷ,
@@ -638,7 +665,7 @@ Md Οh, (ἐκ pro περὶ) DLz 21 cf. Quint VII 9, 6</note>
 καὶ πάλιν φεύγει· κατὰ ῥητὸν καὶ διάνοιαν ἡ πρώτη
 ἐξέτασις, εἶθʼ ἕπεται τὸ στοχαστικόν, εἰ ἐφόνευσέ πουἡ
 δὲ ἄγραφος ἔστι μὲν ἀπαγωγὴ τῆς εὐθυδικίας καὶ <lb n="20"/>
-<note type="marginal">17</note> αὐτὴ κατὰ παραγραφὴν ἀπὸ ῥητοῦ, τὴν ζήτησιν δὲ οὐ
+                  <note type="marginal">17</note> αὐτὴ κατὰ παραγραφὴν ἀπὸ ῥητοῦ, τὴν ζήτησιν δὲ οὐ
 περὶ τὸ ῥητὸν ἔχει, ἀλλὰ περί τι τῶν περὶ τὸ πρᾶγμα,
 <note type="footnote">1 ante διέθετο: add καὶ La R Vu: add. τελευτῶν Px VIW Wa;
 add καὶ τελευτῶν Ba, m. 2Vc; add καὶ τελευτῶν ὁ πατὴρ Pγ
@@ -652,8 +679,7 @@ Ph, Nilus 10 ταῖς λοιπαῖς Py; ἐν λοιπαῖς Nilus (at 75, 1
 Syr. 2 p. 159, 7 19 mg. ἐν ἄλλοις τὸ εἰ ἐφόνευσέ πουʼ οὐκ
 ἔστιν Pa; verba desunt Py 20 ἐστὶν ἀπαγωγὴ μὲν Vc | Phy
 εὐθείας Ph 21 δὲ ζήτησιν Pγ</note>
-
-<pb n="43"/>
+                  <pb n="43"/>
 τόπον ἢ χρόνον ἢ πρόσωπον ἢ αἰτίαν ἢ τρόπον, ὅταν
 τὸ μὲν πρᾶγμα συγχωρῶμεν, ἓν δέ τι τούτων αἰτιώμεθα
 μεταλαμβάνοντες· οἷον ἐξῆν ἀποκτιννύναι καὶ τὸν
@@ -662,24 +688,28 @@ Syr. 2 p. 159, 7 19 mg. ἐν ἄλλοις τὸ εἰ ἐφόνευσέ που
 δακρύουσαν εὑρὼν ἀπέκτεινε τὴν γυναῖκα καὶ φόνου
 φεύγει· τὸν γὰρ τόπον ἐνταῦθα καὶ τὸν χρόνον αἰτιώμεθα
 δήπουθεν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="8"><p>Τὰς μὲν οὖν λεγομένας στάσεις οὕτως ἐπιγνωσόμεθα·
+            </div>
+            <div n="8" type="paragraph">
+               <p>Τὰς μὲν οὖν λεγομένας στάσεις οὕτως ἐπιγνωσόμεθα·
 <lb n="10"/> περὶ δὲ τῆς καθʼ ἑκάστην διαιρέσεως ἤδη λεκτέον.
 εἰδέναι μέντοι χρή, ὡς τὰ περὶ στοχασμοῦ λεχθησόμενα,
 περὶ οὗ δὴ πρῶτον ἀναγκαίως λελέξεται,
 σχεδὸν εἰς ἅπόντα συντελεῖ τὰ μετὰ ταῦτα· διὸ καὶ
 εἰκότως μακρότερα ἔσται.</p>
-</div></div>
-
-<div type="textpart" subtype="section" n="3">
-<note type="marginal">143</note> <head>ΔΙΑΙΡΕΣΙΣ ΤΩΝ ΣΤΑΣΕΩΝ.</head>
-<lb n="16"/> <head>Περὶ στοχασμοῦ.</head>
-<div type="textpart" subtype="paragraph" n="1"><p>Ὁ στοχασμὸς τοίνυν διαιρεῖται, ὅτε καὶ πρόσωπα 
+            </div>
+         </div>
+         <div n="3" type="section">
+            <note type="marginal">143</note>
+            <head>ΔΙΑΙΡΕΣΙΣ ΤΩΝ ΣΤΑΣΕΩΝ.</head>
+            <lb n="16"/>
+            <head>Περὶ στοχασμοῦ.</head>
+            <div n="1" type="paragraph">
+               <p>Ὁ στοχασμὸς τοίνυν διαιρεῖται, ὅτε καὶ πρόσωπα 
 ἔχοι καὶ πράγματα κρινόμενα, παραγραφικῷ ἔστιν ὅτε,
 ἐλέγχων ἀπαιτήσει, βουλήσει, δυνάμει, τοῖς ἀπʼ ἀρχῆς <note type="marginal">18</note>
-<lb n="20"/> ἄχρι τέλους, ἀντιλήψει, μεταλήψει, μεταθέσει αἰτίας,
+                  <lb n="20"/> ἄχρι τέλους, ἀντιλήψει, μεταλήψει, μεταθέσει αἰτίας,
 πιθανῇ ἀπολογίᾳ, ποιότητι κοινῇ.</p>
-<note type="footnote">1 cf. 45, 22. 47, 10. Π. εὑρ. p. 212, 19. 28 Sp. |τόπον ἢ χρόνον
+               <note type="footnote">1 cf. 45, 22. 47, 10. Π. εὑρ. p. 212, 19. 28 Sp. |τόπον ἢ χρόνον
 etiam post τρόπον add. P, m. 2Vc | ἢ ὅταν Py 3 λαμβάνοντες
 Pa |cf. Senec. controv. l 4 lX 1. Quint. VII 1, 7 | ἀποκτεῖναι
 Py | καὶ om. Py 4 μεμοιχευμένην Pc, cf. Syr. 2 p. 154,8 6. 7
@@ -690,10 +720,10 @@ Py | καὶ om. Py 4 μεμοιχευμένην Pc, cf. Syr. 2 p. 154,8 6. 7
 Ba; περὶ στοχασμοῦ διαίρεσις στοχασμοῦ Ph; περὶ στοχασμοῦ καὶ
 τῶν κεφαλαίων αὐτοῦ Wc 17 καὶ om Py 18 ἔχει Py 20 τῆς
 αἰτίας Py</note>
-
-<pb n="44"/>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p>Τὸ παραγραφικὸν γίνεται κατὰ τρόπους τέσσαρας·
+               <pb n="44"/>
+            </div>
+            <div n="2" type="paragraph">
+               <p>Τὸ παραγραφικὸν γίνεται κατὰ τρόπους τέσσαρας·
 ἤτοι ἀπὸ τοῦ λείποντος, οἷον ἀσώτου πατὴρ ἀφανὴς
 γέγονε, καὶ φόνου φεύγει· ἀξιώσει γὰρ δεικνύναι πρῶτον,
 εἰ ἀνῄρηται. ἢ ἀπὸ τοῦ ὑπερβάλλοντος, οἷον δέκα
@@ -712,8 +742,9 @@ Ba; περὶ στοχασμοῦ διαίρεσις στοχασμοῦ Ph; π�
 χρωμένῳ αὐτῷ ὁ θεὸς ἀνεῖλεν ῾ ἀνδροφόνοις οὐ χρῶʼ,
 καὶ πάλιν φεύγει· ῾ δὶς γὰρ περὶ τῶν αὐτῶν, κωλύουσιν
 οἱ νόμοι κρίνεσθαιʼ, παραγράφεται οὖν καὶ γίνεται τὸ
-πρῶτον ζήτημα νομικὸν ἐκ παραγραφῆς.</p><lb n="20"/>
-<note type="footnote">2 p. 31, 7 cf. Aps, l 2 p 223, 25. 276, 15 Sp. -H. |post
+πρῶτον ζήτημα νομικὸν ἐκ παραγραφῆς.</p>
+               <lb n="20"/>
+               <note type="footnote">2 p. 31, 7 cf. Aps, l 2 p 223, 25. 276, 15 Sp. -H. |post
 ὑπερβάλλοντος add. Ph : ὅτ᾿ ἂν πλέον τι συνάπτηται τῆι τοῦ κρι-
 νομένου ὑπερθέσει ἐκ τῆς τοῦ πράγματος περιστάσεως, schol. P
 (W VII 261,11) 6 ἀυτῶν ἁυτὸν Ph |ὅτι om. Ac 7 πεποιή-
@@ -728,10 +759,10 @@ Ba; περὶ στοχασμοῦ διαίρεσις στοχασμοῦ Ph; π�
 λεν ὁ θεὸς Ac Py 18 cf. 42, 15 18. 19 οἱ νόμοι κωλύουσι
 Py 19 νομοθέται Vc | παραγράφεται οὖν ante 18 δὶς transq. ? |
 τὸ om. Py</note>
-
-<pb n="45"/>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p>Ἡ τῶν ἐλέγχων ἀπαίτησις διπλῆ ἐστιν· ἢ γὰρ εἰσὶν
+               <pb n="45"/>
+            </div>
+            <div n="3" type="paragraph">
+               <p>Ἡ τῶν ἐλέγχων ἀπαίτησις διπλῆ ἐστιν· ἢ γὰρ εἰσὶν
 οἱ μάρτυρες ἢ οὔ· οἷον μνωμένῳ τινὶ κόρην ἡ μήτηρ <note type="marginal">19</note>
 ἔφη τῆς κόρης θᾶττον τεθνήξεσθαι αὐτὴν ἢ ἐκείνῳ
 δοθήσεσθαι, ἀπέθανεν ἐπὶ σημείοις φαρμάκων ἡ παῖς,
@@ -753,7 +784,7 @@ Py 19 νομοθέται Vc | παραγράφεται οὖν ante 18 δὶς t
 <lb n="20"/> εἶναι διʼ ἡλικίαν ἀξιοπίστους. — Εἰ δὲ μὴ εἶεν μάρτυρες,
 ὁ μὲν φεύγων χρήσεται ἀπαιτῶν αὐτοὺς τοῖσδε·
 προσώπῳ οἷον ῾τίς ὁ δούςʼ, πράγματι οἷον ῾ τί δούςʹ, <note type="marginal">20</note>
-<note type="footnote">1 ἡ τῶν om. Pγ |διττή Ac Py Sr, Sοp.; διττή τίς Pγ 2 οἱ
+                  <note type="footnote">1 ἡ τῶν om. Pγ |διττή Ac Py Sr, Sοp.; διττή τίς Pγ 2 οἱ
 om. Sop. W IV 329, 27: cf. l. 8 | cf Senec controv VI 6 3 αὐ-
 τὴν om. Pγ 5 ὁ πατὴρ om Pa 6 τῆς om. Pγ | πλέον om.
 Pγ; εἰδέναι πλέον Ph 8 οἱ om. Py 9. 10 ἀπαιτήσεις . . δια-
@@ -765,8 +796,7 @@ Vc Ba Ph 17—19 ῾ aut ἢ ante διαβάλλειν del., aut διὰ τὸ
 ante μὴ εἶναιʼ Spengel 18. 19 αὐτοῖς Pc; αὐτῶ Vγ 21 αὐ-
 τοὺς om. Ac 22 cf. 43, 1 | πράγματι οἶον τί δούς post 46, 1
 πῶς Ph: om. Py</note>
-
-<pb n="46"/>
+                  <pb n="46"/>
 τόπῳ οἷον ῾ ποῦʼ, τρόπῳ οἷον ῾ πῶςʼ, χρόνῳ οἷον ῾ πότε᾿ .
 αἰτίᾳ οἷον ῾ διὰ τί ᾿ , καὶ τούτοις χρήσεται πᾶσιν ἢ τοῖς
 ἐμπίπτουσιν· ὁ δὲ κατηγορῶν ἀποφανεῖ τὸν διὰ τῶν
@@ -774,8 +804,9 @@ ante μὴ εἶναιʼ Spengel 18. 19 αὐτοῖς Pc; αὐτῶ Vγ 21 α�
 ῾οὔτε γὰρ πεπεισμένα τὰ πράγματα οὔτε χαριζόμενά <lb n="5"/>
 τῳ λέξει, ὥσπερ οἱ μάρτυρες πολλάκις, ἀλλʼ
 οἷα ἔστι φύσει, τοιαῦτα καὶ ἐξεταζόμενα φαίνεταιʼ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p>Ἡ βούλησις καὶ ἡ δύναμις ἀπὸ τῶν παρακολουθούντων
+            </div>
+            <div n="4" type="paragraph">
+               <p>Ἡ βούλησις καὶ ἡ δύναμις ἀπὸ τῶν παρακολουθούντων
 τῷ προσώπῳ γίνεται, δηλονότι τῶν ἐγκωμιαστικῶν·
 καὶ ὅτε μὲν εἴη τὸ πρόσωπον ὡρισμένον, πάντα <lb n="10"/>
 σχεδὸν ἐμπεσεῖται, εἰ δέ τι τῶν ἄλλων, κατὰ τὰ εὑρισκόμενα
@@ -802,8 +833,7 @@ p. 1376 a 19 5 6 χωριζόμενα τῆι λέξει Ph 7 ταῦτα Py; τ
 πλούσιος Py | καὶ τὰ ὅμοια Ph 18 ἀφʼ P Pγ: ἐφʼ V Ph 21 γὰρ
 om. Phy οὕτω om. Phyρ 22. 24 (ἂν om.) φαίνεται Pc
 28 αὐτῶ Py</note>
-
-<pb n="47"/>
+                  <pb n="47"/>
 τῶν κρινομένων μόνον προσώπων δεῖ, ἀλλʼ ὅσαπερ ἂν
 ἔχῃ τὸ πρόβλημα· αὐτίκα τὸν τοὺς ἀποκηρύκτους τρέφοντα
 νέον πλούσιον καὶ φεύγοντα τυραννίδος ἐπιθέσεως
@@ -811,8 +841,9 @@ om. Phy οὕτω om. Phyρ 22. 24 (ἂν om.) φαίνεται Pc
 <lb n="5"/> ἀποκηρύκτων ἐξεταζομένης. διὸ δεῖ σκοπεῖν ἐν ἅπασι
 τοῖς στοχασμοῖς περὶ πάντων τῶν προσώπων, ἃ ἐπιδέχεται
 κρίσιν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5"><p>Τὰ ἀπʼ ἀρχῆς ἄχρι τέλους ἔστι μὲν ὡς ἐπὶ τὸ πλεῖστον
+            </div>
+            <div n="5" type="paragraph">
+               <p>Τὰ ἀπʼ ἀρχῆς ἄχρι τέλους ἔστι μὲν ὡς ἐπὶ τὸ πλεῖστον
 τοῦ κατηγόρου, γίνεται δὲ καὶ αὔξεται, ἀφʼ ὧνπερ καὶ
 <lb n="10"/> ἡ τῶν ἐλέγχων ἀπαίτησις· ἔστι δὲ τάδε· τίς, τί, ποῦ,
 πῶς, πότε, διὰ τί. — Κἂν μὲν ᾖ τοῦ κατηγόρου μόνου
@@ -839,20 +870,21 @@ ante ὁ add. Ac Ba, m.2 Vc, cf. Syr. 2 p. 77, 14 19 τὴν post
 γέρας add. Pc; αὐτοῦ add. Ph 20 καὶ om. Vy | ἐτυράννησεν,
 mg. νευ m.1, Ph 21 οὗτος om. VcBaPhy γ 22 αὐτὰ Ph,
 m.2 Vc 23 ταῦτα Py, v.l. Vk</note>
-
-<pb n="48"/>
+                  <pb n="48"/>
 δεῖ ἀμφοτέρους λῦσαι τὰ ἀλλήλων. — Μόνου δὲ τοῦ
 φεύγοντος γενέσθαι τὰ ἀπʼ ἀρχῆς ἄχρι τέλους ἀδύνατον.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="6"><p>Ἡ ἀντίληψις οὐκ ἀεὶ ἐμπίπτει, ἀλλʼ ἐὰν μὲν ἀφʼ ὧν <note type="marginal">146</note>
+            </div>
+            <div n="6" type="paragraph">
+               <p>Ἡ ἀντίληψις οὐκ ἀεὶ ἐμπίπτει, ἀλλʼ ἐὰν μὲν ἀφʼ ὧν <note type="marginal">146</note>
 αὐτὸς πεποίηκε κρίνηταί τις, πάντως ἐμπεσεῖται καὶ ἡ
 ἀντίληψις, ἐὰν δὲ ἀφʼ ὧν ἄλλοι, οὐκέτι. ἔστι δὲ τοιοῦτον, <lb n="5"/>
 οἷον ὅτι ῾ ἔξεστι καὶ οὐ κεκώλυταιʼ. παράδειγμα
 αὐτοῦ· νέος πλούσιος πάντας τοὺς ἀποκηρύκτους τρέφει
 καὶ τυραννίδος ἐπιθέσεως φεύγει· ἐρεῖ γὰρ ὅτι
 ῾ἔξεστι τρέφειν, οὓς βούλεταί τιςʼ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="7"><p>Ἡ μετάληψις ἀεὶ ἐναντία ἐστὶ τῇ ἀντιλήψει, οὐκ <lb n="10"/>
+            </div>
+            <div n="7" type="paragraph">
+               <p>Ἡ μετάληψις ἀεὶ ἐναντία ἐστὶ τῇ ἀντιλήψει, οὐκ <lb n="10"/>
 στοχασμῷ μόνον, ἀλλʼ ὅλως ἔνθα ἂν εὑρίσκηται· καὶ
 ἐὰν τὸ ἕτερον μέρος τῶν ἀντιδίκων ὁποτερῳοῦν τούτων
 χρήσηται, τῇ ἀντιλήψει λέγω ἢ τῇ μεταλήψει, τῷ
@@ -863,7 +895,7 @@ m.2 Vc 23 ταῦτα Py, v.l. Vk</note>
 ἔξεστιν, ἀλλʼ οὐχ οὕτως οὐδὲ ἐπὶ τούτοις, οἷον μειράκιον
 καλλωπιζόμενον φεύγει πορνείας· βιάσεται ὁ διώκων
 μὴ ἐξεῖναι καλλωπίζεσθαι ἀνδράσιν, εἶτα ὅτι, εἰ <lb n="20"/>
-<note type="marginal">23</note> καὶ ἔξεστιν, οὐχ οὕτως οὐδὲ ἐπὶ τούτοις. ποτέρῳ δὲ
+                  <note type="marginal">23</note> καὶ ἔξεστιν, οὐχ οὕτως οὐδὲ ἐπὶ τούτοις. ποτέρῳ δὲ
 <note type="footnote">1 δήπου ante λῦσαι add. Vc Ba 7 τούτου Ph | πάντας post
 ἀποκηρύκτους Vc Ba; om. Ac 7. 8 τρέφει τις τοὺς ἀποκηρύ-
 κτους νέος πλούσιος καὶ Ph, (om. τις) Ac 8 φεύγει ante τυ-
@@ -876,16 +908,16 @@ m. 2supr.⌉ούτοις Vc | cf. 30, 1. 51, 13 20 ὡς μὴ Vc Ba Phy
 (m.1 ex τούτοις) Pa | ποτέρωι δὲ π⌊ρ postea add. m. 1 ⌉ότερον Pa;
 ποτέρωι δὲ προτέρωι( ποτέρωι Ph) Vc BaPh; π⌊ρ m. po. add.⌉ότερον 
 δὲ ποτέρω Pγ; πότερον δὲ προτέρωι Ac, Marc. IV 380,28 W.</note>
-
-<pb n="49"/>
+                  <pb n="49"/>
 πρότερον χρηστέον, τῇ ἐνστάσει ἢ τῇ ἀντιπαραστάσει,
 οὐ ῥᾴδιον εἰπεῖν· ἄλλοτε γὰρ ἄλλην διὰ τὰς φύσεις
 τῶν πραγμάτων λαμβάνει τάξιν. δεῖ δὲ ὁρᾶν, μὴ σφόδρα
 ἀναιδὲς ἔν τισιν ᾖ τὸ ἐξ ἀρχῆς φάσκειν μὴ ἐξεῖναι,
 <lb n="5"/> δεύτερον δὲ τιθέμενον μᾶλλον ἰσχύειν δύναται,
 καὶ ὡς ἂν ἡ χρεία μᾶλλον ἀπαιτῇ μεθοδεύειν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="8"><p>Ἡ μετάθεσις τῆς αἰτίας πρὸς τὰ ἀπʼ ἀρχῆς ἄχρι τέλους
+            </div>
+            <div n="8" type="paragraph">
+               <p>Ἡ μετάθεσις τῆς αἰτίας πρὸς τὰ ἀπʼ ἀρχῆς ἄχρι τέλους
 γίγνεται· ἐκεῖνα δὲ ἤτοι ἐν λόγοις ἐστὶν ἢ ἐν
 ἔργοις ἢ ἐν πάθεσι. κἂν μὲν ἐν λόγοις ᾖ, κατὰ ῥητὸν
 <lb n="10"/> καὶ διάνοιαν ἡ μετάθεσις τῆς αἰτίας εἰσάγεται, οἷον
@@ -902,7 +934,7 @@ m. 2supr.⌉ούτοις Vc | cf. 30, 1. 51, 13 20 ὡς μὴ Vc Ba Phy
 συνεχῶς εἰς τὴν ἀκρόπολιν νέος πλούσιος ἀφορῶν δακρύει
 καὶ φεύγει τυραννίδος ἐπιθέσεως· ῾ ἐλεήσαςʼ γάρ
 φησι ῾ τούς τυραννουμένους οὕτω διετέθην᾿ . Εἰδέναι <note type="marginal">24</note>
-<note type="footnote">4 de Minuciano cf. P (W VII 315, 10) 5 δύναηται P 6 ἀπαι-
+                  <note type="footnote">4 de Minuciano cf. P (W VII 315, 10) 5 δύναηται P 6 ἀπαι-
 τῆι μᾶλλον Vc; μᾶλλον om. Py | ἀπαιτεῖ Ph | μεθοδεύοιμεν Ac Py
 11 νύκτωρ post δεσμωτήριον Ac Ph | ἐπὶ Pc Vc Ba, (εἰς supr; m.1 ?)
 Pa; εἰς Ac Phy 12 ὦ δεσμῶται PAc, cf. Syr.2 p.83, 29; om. Vc
@@ -911,8 +943,7 @@ Ba Phy | εἰσἀῦθις γὰρ καὶ ante οὐκ add. Ac 16 ἐξετα
 V Phy | cf. Aps. l 2 p. 235, 10 Sp. -H. 20 τῆς αἰτίας om. Vc
 Ba Phy | γίνεται P, εἰσάγεται V Phy | cf Aps. l 2 p. 243, 13.
 273,12 Sp. -H. 22 mg. φήσει Ba</note>
-
-<pb n="50"/>
+                  <pb n="50"/>
 δὲ δεῖ, ὅτι ταῦτα μὲν πάντα ἐν πᾶσι στοχασμοῖς εὑρίσκεται,
 πλεονάζει δὲ ἕκαστον ἐν τῷ οἰκείῳ. ─ Ἔτι
 ἡ μετάθεσις τῆς αἰτίας, ἂν μὲν ἀφʼ ὧν ἕτεροι πεποιήκασιν
@@ -932,8 +963,9 @@ Ba Phy | γίνεται P, εἰσάγεται V Phy | cf Aps. l 2 p. 243, 13.
 μᾶλλον τηνικαῦτα διδόασιν οἱ ἄνθρωποι ἀνειμένοι ἤδη
 τῇ γνώμῃ, καὶ εἴ τι τοιοῦτον· ταῦτα γὰρ πολλὰ ὄντα
 οὐκ ἐναντιοῦνται ἀλλήλοις.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="9"><p>Ἡ πιθανὴ ἀπολογία ἀναστρέφουσά ἐστι πρὸς τὰ ἀπʼ <lb n="20"/>
+            </div>
+            <div n="9" type="paragraph">
+               <p>Ἡ πιθανὴ ἀπολογία ἀναστρέφουσά ἐστι πρὸς τὰ ἀπʼ <lb n="20"/>
 ἀρχῆς ἄχρι τέλους· οἷς γὰρ ὁ ἕτερος χρήσεται ὡς σημείοις
 τοῦ εἶναί τι, τούτοις ὁ ἕτερος ὡς σημείοις χρήσεται
 <note type="footnote">1 στοχασμοῖς om. Vc Ba Phy γ, Marc. IV 395, 9 13 W. 3 ἄλλοι
@@ -947,13 +979,12 @@ Ph 17 οἱ supr. Pa; om. Ba Phy | ἀνειμένοι V Pc hy, (η supr.)
 Pa; ἀνειμένη Va kδ | ἤδη om. Pa 19 ἐναντιοῦται V Ph 20 ἡ
 προς περισσή mg m. 1Ba; cf. Va f. 46r, Sop. lV 402, 21 W. 21
 χρῆται Vc Ba 22 χρήσεται ante ὡς Vγ, m. 2Vc: om. P</note>
-
-<pb n="51"/>
+                  <pb n="51"/>
 τοῦ μὴ εἶναί τι, οἷον ῾ ὅπου ἀφορᾷς καὶ δακρύεις,
 τυραννήσειςʼ· ῾ καὶ μὴν εἰ ἔμελλον τυραννεῖν, οὐκ
 <note type="marginal">148</note> ἂν ἀφεώρων, ὥστε εἶναι καταφανήςʼ. ─ Τὸ δὲ κεφάλαιον
 τοῦτο ἔστιν ὅτε ἐκλείπει· καὶ ἐκλείπει γε, ὅταν <note type="marginal">25</note>
-<lb n="5"/> τὰ σημεῖα, ἀφʼ ὧν ἡ κρίσις, ἀναγκαίως ἑπόμενα ᾖ τῷ
+                  <lb n="5"/> τὰ σημεῖα, ἀφʼ ὧν ἡ κρίσις, ἀναγκαίως ἑπόμενα ᾖ τῷ
 πράγματι, ἐφʼ ᾧ ἡ κρίσις, οἷον τῷ ἐπιτιθεμένῳ τυραννίδι
 ἀναγκαῖον ὅπλα παρασκευάσασθαι. σκέψαι τοίνυν·
 σκηπτοῦ κατενεχθέντος εἰς τὴν Περικλέους οἰκίαν
@@ -983,15 +1014,16 @@ Marc. IV 408, 27; ἀναστρέφον Py | alt. τὸ om. Ac Py; τὸ πρᾶ
 om. arc. IV 408, 27 (410, 13: τὸ μὴ ἀντίστρ|ο m.1 ex έ⌉φον τοῦτο)
 19 μὲν supr. Ph, om. Vδ k 20 ἀναγκαίως add. ante ὅπλα Py
 ὅπλα add. post γε Vδk</note>
-
-<pb n="52"/>
+                  <pb n="52"/>
 ἄλλου τινὸς ἕνεκα παρασκευάσασθαι ὅπλαʼ, καὶ πάλιν
 ῾ οἱ μὲν πορνεύοντες καλλωπίζονται, οὐ μὴν οἵ γε καλλωπιζόμενοι
 πάντως καὶ πορνεύουσιν· ἔστι γὰρ καὶ διʼ
 ἄλλο τι καλλωπίζεσθαιʼ, καὶ ἐρεῖ δηλαδή, ὅσα κἀν τῇ
-μεταθέσει τῆς αἰτίας.</p><lb n="5"/>
-</div>
-<div type="textpart" subtype="paragraph" n="10"><p>Ἡ κοινὴ ποιότης οἱ ἐπίλογοί εἰσι καὶ αἱ δευτερολογίαι.
+μεταθέσει τῆς αἰτίας.</p>
+               <lb n="5"/>
+            </div>
+            <div n="10" type="paragraph">
+               <p>Ἡ κοινὴ ποιότης οἱ ἐπίλογοί εἰσι καὶ αἱ δευτερολογίαι.
 <note type="marginal">26</note> γίνονται δὲ ἐν παντὶ ζητήματι, οὐκ ἐν στοχασμῷ
 μόνον, ὑπὸ μὲν τῶν κατηγόρων τοπικῶς μετὰ
 τὰς ἀποδείξεις κατατρεχόντων τοῦ ἐγκλήματος, οἷον
@@ -1021,8 +1053,7 @@ cet. IV 423. 9 W. 16 τε om. Pc 17 αἱ (pro καὶ) Py; καὶ αἱ
 Vδ; γὰρ καὶ Ac; δὲ καὶ Wc | τῶν τε Vc Ba 21 καὶ τὸ δί-
 καιον καὶ τὸ (τὸ om. Ac) συμφέρον καὶ δυνατὸν V Ph | καὶ τὸ
 ἔνδοξον Py</note>
-
-<pb n="53"/>
+                  <pb n="53"/>
 — Ὅλῶς τε οἱ ἐπίλογοι λαμβάνονται μέν, ἀφʼ
 ὧνπερ καὶ τὰ προοίμια, καὶ ἰσχύουσί γε τὰ αὐτά·
 πάθους γὰρ ψυχῆς ἕνεκα εἰσάγεται ἄμφω, οἷον φόβου
@@ -1032,12 +1063,13 @@ Vδ; γὰρ καὶ Ac; δὲ καὶ Wc | τῶν τε Vc Ba 21 καὶ τὸ 
 τοὺς δὲ ἐπιλόγους ἢ αὔξειν ἢ μειοῦν διὰ τῶν κεφαλαίων
 τό τε ἤδη τέλεον ἐξαίρειν. καὶ ἔτι ἐν τούτῳ διαφέρουσιν
 οἱ ἐπίλογοι καὶ τὰ προοίμια τῷ τοὺς ἐπιλόγους <note type="marginal">27</note>
-<lb n="10"/> λελύσθαι τε ἤδη κατὰ τὸν ῥυθμὸν καὶ ἐπὶ πλεῖον
+                  <lb n="10"/> λελύσθαι τε ἤδη κατὰ τὸν ῥυθμὸν καὶ ἐπὶ πλεῖον
 ἕκαστον προάγεσθαι τῶν εὑρισκομένων, ἀλλὰ μὴ διὰ
 βραχέων ὥσπερ ἐν τοῖς προοιμίοις· ἀκριβέστερον δὲ
 ἐν τῷ περὶ προοιμίου λελέξεται ταῦτα.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="11"><p>Ἡ μὲν δὴ τοῦ τελείου τε καὶ ἁπλοῦ στοχασμοῦ διαίρεσις
+            </div>
+            <div n="11" type="paragraph">
+               <p>Ἡ μὲν δὴ τοῦ τελείου τε καὶ ἁπλοῦ στοχασμοῦ διαίρεσις
 <lb n="15"/> αὕτη. εἰσὶ δὲ καὶ ἀτελεῖς τινὲς τῶν στοχασμῶν,
 <note type="footnote">1 τε PV Pγ (p.73,7); δὲ Ph, Marc. IV 421, 1 W., (τε supr.) Vδ
 3 ἕνεκα ψυχῆς Ac |εἰσάγονται Vγ 3. 4 φόβου ὀργῆς ἐλέου
@@ -1061,26 +1093,27 @@ mg. m. po. ἁπλοῖ) Ba; καὶ ἀτελεῖς τινες αὐτῶν σ
 P; (καὶ ἀτελεῖς m. 2 suppl, post δέ) τινες ⌊lI—III⌉ τῶν στοχασμῶν
 Vc; τινες αὐτῶν στοχασμοὶ (om. καὶ ἀτελεῖς) Py; καὶ ἁπλοῖ τινες
 ἀτελεῖς στοχασμοὶ Sop. | τῶν 〈ἁπλῶν〉 στοχασμῶν?</note>
-
-<pb n="54"/>
+                  <pb n="54"/>
 καὶ αὖ διπλοῖ τέλειοί τε καὶ ἀτελεῖς, ἐν οἷς διπλῇ καὶ
 τῇ διαιρέσει χρώμεθα· περὶ ὧν λεκτέον.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="12"><p>Ἀτελὴς ἐκ μόνων πραγμάτων συνεστώς ἐστιν, ὅταν
+            </div>
+            <div n="12" type="paragraph">
+               <p>Ἀτελὴς ἐκ μόνων πραγμάτων συνεστώς ἐστιν, ὅταν
 τὸ πρόσωπον μὴ κρινόμενον ἑνὸς ὄντος τοῦ πράγματος,
 οἷον θάπτων τις νεοσφαγὲς σῶμα ἐπʼ ἐρημίας <lb n="5"/>
 πεφώραται καὶ φόνου φεύγει. οὗτος βούλησιν μὲν καὶ
 δύναμιν οὐκ ἔχει, τοῖς δὲ ἄλλοις διαιρεῖται πᾶσιν
 ὁμοίως τῷ τελείῳ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="13"><p>Ἀτελὴς δὲ ἐκ μόνων προσώπων ἁπλοῦς οὐ γίνεται
+            </div>
+            <div n="13" type="paragraph">
+               <p>Ἀτελὴς δὲ ἐκ μόνων προσώπων ἁπλοῦς οὐ γίνεται
 κατά γε ἐμὲ στοχασμός, καὶ τοῖς γε ἐπεσκεμμένοις τὰ <lb n="10"/>
 εἰρημένα ὀλίγῳ πρότερον περὶ τῶν κρινομένων πραγμάτων
 σαφέστατον εἶναι τοῦτο νομίζω. τεθείκασι δʼ οὖν
 τινὲς ὡς ἀτελοῦς ἁπλοῦ παράδειγμα, λέγοντες μόνον <note type="marginal">150</note>
 τὸ πρόσωπον κρίνεσθαι ἐνταῦθα· ἀσώτου πατὴρ ἀφανὴς
 γέγονε, καὶ φεύγει φόνου. πρῶτον οὖν ἐρήσομαι <lb n="15"/>
-<note type="marginal">28</note> αὐτούς, εἰ οὐκ ἔστιν ἐνταῦθα τὰ ἀπʼ ἀρχῆς ἄχρι τέλους.
+                  <note type="marginal">28</note> αὐτούς, εἰ οὐκ ἔστιν ἐνταῦθα τὰ ἀπʼ ἀρχῆς ἄχρι τέλους.
 καὶ μὴν ἔστι, τὸ ἐκποδὼν εἶναι τὸν πατέρα· τοῦτο
 δὲ οὐ τοῦ προσώπου ἀλλὰ τοῦ πράγματός ἐστιν.
 ἀλλὰ μετάθεσιν αὐτὸν τῆς αἰτίας οὐκ ἀπαιτήσομεν;
@@ -1100,8 +1133,7 @@ Pγ Sr | μὴ ἔχων πρᾶγμα· τί δαὶ Pc Vc Ac, (δὲ) Ba, (δ�
 (ἑνὶ Sr) πράγματι τῆιδε (τῆ Sr) Pγ Sr; εἴ γε μὲν ἑνὶ πράγματι· τῆι
 Ph 22 οὐ om. Py |τούτῳ Vδk; cf. Pγ Vγ: χρήσεται δὲ οἶμαι
 καὶ τούτω |ἀτελὴς ὁ τοιοῦτος m. 2 (καὶ τοῦτο m. 1) Vc</note>
-
-<pb n="55"/>
+                  <pb n="55"/>
 ὁ τοιοῦτος; ἀλλʼ ἧττον ἰσχύει τὰ πράγματα ἐνταῦθα
 ἢ ἐν τῷ θάπτοντι τὸ νεοσφαγὲς σῶμα· καὶ γὰρ
 ἐν πᾶσι στοχασμοῖς ἧττον ἰσχύει τὰ ἀπʼ ἀρχῆς ἄχρι
@@ -1110,12 +1142,14 @@ Ph 22 οὐ om. Py |τούτῳ Vδk; cf. Pγ Vγ: χρήσεται δὲ οἶ�
 ὡς ἐπὶ τοῦ Ἀρχιδάμου τοῦ κρινομένου δώρων, ἐπειδὴ
 ἔγραψεν ὁ Περικλῆς ἐν τοῖς λογισμοῖς εἰς δέον ἀνηλωκέναι
 πεντήκοντα τάλαντα.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="14"><p>Ἁπλοῦς μὲν οὖν στοχασμὸς ἐκ μόνων προσώπων
+            </div>
+            <div n="14" type="paragraph">
+               <p>Ἁπλοῦς μὲν οὖν στοχασμὸς ἐκ μόνων προσώπων
 <lb n="10"/> οὐκ ἔστι κατά γε ἐμέ, διπλοῦς δὲ ἔστι. πρῶτον δὲ περὶ
 τοῦ τελείου διπλοῦ λεκτέον.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="15"><p>Διπλοῦς τέλειος γίνεται, ὅταν δύο πρόσωπα καὶ δύο
+            </div>
+            <div n="15" type="paragraph">
+               <p>Διπλοῦς τέλειος γίνεται, ὅταν δύο πρόσωπα καὶ δύο
 πράγματα κρινόμενα ἔχῃ, οἷον Αἰσχίνης καὶ Δημοσθένης
 ἀπὸ τῆς παρὰ Φίλιππον ἥκοντες πρεσβείας ἀντεγκαλοῦσι
 <lb n="15"/> δώρων ἀλλήλοις, ἐπειδὴ ὃ μὲν χρυσίον εὕρηται
@@ -1136,13 +1170,13 @@ Vc | τὸ κρινόμενον post ἀναφέρηται add. Vc, (m. 1 supr.)
 V Ph y Sr, W VI 54, 18 19 ??μφοῖν Py | διχῶς Vc 20 ἐβουλή-
 θην V Phy 21 ἠβουλήθης Ph |ἂν om. Vδ 22 ἐξετάσωμεν
 VcBa; ἐξετάζομεν Ph</note>
-
-<pb n="56"/>
+                  <pb n="56"/>
 τῶν κεφαλαίων, χωρὶς δὲ κατηγορῆσαι πάλιν τοῖς αὐτοῖς
 κεφαλαίοις οὐκ ἀγωνιστικὸν ἀλλὰ σφόδρα ὕπτιον· <note type="marginal">151</note>
 συμπλέκειν οὖν δεῖ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="16"><p>Διπλοῦς δὲ ἀτελὴς ἐκ μὲν τῶν πραγμάτων, ὅταν
+            </div>
+            <div n="16" type="paragraph">
+               <p>Διπλοῦς δὲ ἀτελὴς ἐκ μὲν τῶν πραγμάτων, ὅταν
 τὰ πράγματα κρίνηται, οἷον δύο ῥήτορες πρεσβεύμόνα <lb n="5"/>
 σαντες παρὰ τύραννον καὶ ἐπανήκοντες ἀλλήλοις ἀντεγκαλοῦσι
 δώρων, ἐπειδὴ ὃ μὲν χρυσίον εὕρηται κατορύττων,
@@ -1152,16 +1186,19 @@ VcBa; ἐξετάζομεν Ph</note>
 πάλιν οὖν ἡ μὲν βούλησις καὶ ἡ δύναμις ἐκλέλοιπε,
 τοῖς δὲ ἄλλοις ὁμοίως διαιρεθήσεται κεφαλαίοις, οἷσπερ
 καὶ ὁ τέλειος διπλοῦς, κατὰ ἀντεξέτασιν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="17"><p>Ἐκ δʼ αὖ μόνων προσώπων διπλοῦς γίνεται στοχασμός,
+            </div>
+            <div n="17" type="paragraph">
+               <p>Ἐκ δʼ αὖ μόνων προσώπων διπλοῦς γίνεται στοχασμός,
 ὅταν μόνα τὰ πρόσωπα κρίνηται, οἷον ἐπὶ <lb n="15"/>
 μείοις φαρμάκων ἀριστεὺς ἐτελεύτα μητρυιὰν ἔχων καὶ
 αἰχμάλωτον παλλακίδα, καὶ ἀντεγκαλοῦσιν ἀλλήλαις·
 ἐνταῦθα μόνη ἡ βούλησις καὶ ἡ δύναμις ἐξετάζεται, ἃ
 <note type="marginal">30</note> δὴ καὶ φύσει τοῦ προσώπου ἐστὶν ἴδια, τὰ δὲ ἄλλα
-πάντα ἰσάζει.</p><lb n="20"/>
-</div>
-<div type="textpart" subtype="paragraph" n="18"><p>Ἔστι παρὰ ταῦτα ἕτερα εἴδη στοχασμῶν διπλῶν
+πάντα ἰσάζει.</p>
+               <lb n="20"/>
+            </div>
+            <div n="18" type="paragraph">
+               <p>Ἔστι παρὰ ταῦτα ἕτερα εἴδη στοχασμῶν διπλῶν
 τρία, οὓς καλοῦμεν συνεζευγμένους, ὅ τε ἐμπίπτων
 καὶ ὁ προκατασκευαζόμενος καὶ ὁ συγκατασκευαζόμενος.
 καὶ ὁ μὲν ἐμπίπτων γίνεται, ὅταν ἐν τῇ μεταθέσει τῆς
@@ -1173,8 +1210,7 @@ VcBa; ἐξετάζομεν Ph</note>
 alt. ἡ om Ba 13 cf. 55, 22 | ἐξέτασιν Pc 17 καὶ om. Vc
 Ba 21 ἔστι καὶ Sr; ἔστι δὲ Vγ 25 τι om. Ac 26 cf Aps
 Ι 2 p. 267, 6 Sp. -H.</note>
-
-<pb n="57"/>
+                  <pb n="57"/>
 προδοσίας δεδέσθαι παρὰ τῷ στρατηγῷ, μέχρις ἂν εἴπῃ
 τοὺς συνειδότας· ἁλούς τις προδοσίας στρατηγὸς
 ἐδέδετο παρὰ τῷ συστρατήγῳ, ὃ δὲ ἀπέκτεινεν αὐτὸν
@@ -1189,7 +1225,8 @@ Ba 21 ἔστι καὶ Sr; ἔστι δὲ Vγ 25 τι om. Ac 26 cf Aps
 γίνεται, ὅταν πρὸ τοῦ ζητήματος ἕτερον ἀναγκαῖον ᾖ
 προκατασκευασθῆναί τι πρᾶγμα στοχαστικῶς ὡς ἂν ἢ
 οὐκ ὄν, οἷον πλούσιος στρατηγὸς πένητος ἐχθροῦ παῖδας
-<lb n="15"/> <add cause="omitted">τρεῖς</add> ὡς προδιδόντας συνέλαβε καὶ τοὺς μὲν
+<lb n="15"/>
+                  <add cause="omitted">τρεῖς</add> ὡς προδιδόντας συνέλαβε καὶ τοὺς μὲν
 δύο μηδὲν ὁμολογήσαντας ἐν ταῖς βασάνοις ἀπέκτεινε, <note type="marginal">31</note>
 τὸν δὲ τρίτον πρὸ τῶν βασάνων ὁμολογήσαντα προδιδόναι,
 καὶ μὴ ἐπεξιόντα τὸν πατέρα κρίνει συνειδότος·
@@ -1209,8 +1246,7 @@ v.l.Pc; ἦ ζητῆσαι P 14 στρατηγῶν Ph |παῖδας ἐχθρ
 p.93, 18; om. PV 16 μὴ Py |αὐταῖς post βασάνοις add. V Ph.
 v. l.P, Nilus 18 ἀπέκτεινεν ante καὶ add. VcPy,(er.) Ba 19 πρῶ-
 τον Py 21 pr. τὸ om. Py | καὶ om. Vγδ</note>
-
-<pb n="58"/>
+                  <pb n="58"/>
 προδεδωκέναι ἐκείνους ὁ πένης τὸ καθʼ ἑαυτὸν ἀπολογήσεται.
 — Συγκατασκευαζόμενος δὲ γίνεται, ὅταν
 τὰ σημεῖα τοῦ πράγματος διʼ ἀλλήλων κατασκευάζηται,
@@ -1226,14 +1262,15 @@ v. l.P, Nilus 18 ἀπέκτεινεν ante καὶ add. VcPy,(er.) Ba 19 πρ�
 τε ὑπονοίας τοῦ ἀνδρὸς καὶ τοῦ λῦσαι αὐτὸν τὴν γυναῖκα
 καὶ εἴ τι εἴη ἕτερον. διαφέρει δὲ τοῦ προκατασκευαζομένου,
 ὅτι ἐκεῖ μὲν κεχώρισται ἀλλήλων τὰ ζητήματα, <lb n="15"/>
-<note type="marginal">32</note> ἐνταῦθα δὲ διʼ ἀλλήλων κατασκευάζεται πάντα.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="19"><p>Ὁ ἀπὸ γνώμης παρὰ τούτους ἐστὶ στοχασμός, ὃς
+                  <note type="marginal">32</note> ἐνταῦθα δὲ διʼ ἀλλήλων κατασκευάζεται πάντα.</p>
+            </div>
+            <div n="19" type="paragraph">
+               <p>Ὁ ἀπὸ γνώμης παρὰ τούτους ἐστὶ στοχασμός, ὃς
 ψιλῇ τῇ γνώμῃ ἐξετάζεται, φανεροῦ ὄντος καὶ τοῦ
 πράγματος καὶ τοῦ πράξαντος, οἷον ἐν δόξῃ μανίας
 μητρυιὰ τὸν μὲν υἱὸν ἔτρωσε, τὸν δὲ πρόγονον ἀπέκτεινε, <note type="marginal">153</note>
 καὶ ἀνενεγκοῦσα φεύγει φόνου. διαφέρει δὲ <lb n="21"/>
-<note type="footnote">4 θεσμοφορ⌊ίοις m. po.; ex οις?⌉ Pa 5 ⌊ὑπὸ m.po.⌉νοήσας Pc
+                  <note type="footnote">4 θεσμοφορ⌊ίοις m. po.; ex οις?⌉ Pa 5 ⌊ὑπὸ m.po.⌉νοήσας Pc
 6—8 sic P; γρ καὶ οὕτως· ἔλυσε τοῖς θεσμοφορίοις ἀποδημοῦν-
 τος τοῦ ἀνδρὸς ἡ γυνή· ἀπέδρα ὁ οἰκέτης· ἐπανιὼν ὁ ἀνὴρ εὕ-
 ρηται πεφονευμένος· καὶ μετὰ ταῦτα ἡ γυνὴ συνειδότος φεύγει
@@ -1246,29 +1283,32 @@ Ph 9 ἀνηιρῆσθαι V Ph 10 καὶ τὸ (pro τό τε) Vc Ba 11 τὸ
 Ph, m.1Py | αὐτὸν ante ὑπʼ Ac | δεδέσθαι Ac, (in ras. m. po.) Pa
 12 ἐκ (pro μετὰ) Sop. 17 τούτους m. 2 ex ταῦτα Vc Ba 20 μὲν
 om. VcBa 21 φόνου φεύγει V Ph γ</note>
-
-<pb n="59"/>
+                  <pb n="59"/>
 συγγνώμης ὁ τοιοῦτος στοχασμός, ὅτι ἐκεῖ μὲν ἔφʼ ὃ
 μεθίστησιν ὡμολόγηται, οἷον ἔλεος ἢ βάσανοι καὶ τὰ
 τοιαῦτα, ἐνταῦθα δὲ εἰ μέμηνε ζητεῖται δήπου ἢ οὔ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="20"><p>Τάχα δʼ ἂν παρὰ ταῦτα καὶ ἄλλα εἴδη στοχασμῶν
+            </div>
+            <div n="20" type="paragraph">
+               <p>Τάχα δʼ ἂν παρὰ ταῦτα καὶ ἄλλα εἴδη στοχασμῶν
 <lb n="5"/> εὑρεθείη, περιττὸν δὲ εἰς ἄπειρον περιεργάζεσθαι· νομίζω
 γάρ, ὁποῖον ἂν γένηται ἄλλο, διὰ τούτων πως
 συμπλεκόμενον εὑρίσκεσθαι, καὶ δῆλον, ὡς τοῖς τὰ
 τοιαῦτα ἐπεσκεμμένοις οὐ χαλεπὴ γενήσεται καὶ ἡ ἐν
 ἐκείνοις διαίρεσις.</p>
-</div></div>
-
-<div type="textpart" subtype="section" n="4">
-<lb n="10"/> <head>Περὶ ὅρου.</head>
-<div type="textpart" subtype="paragraph" n="1"><p>Ὅ ὅρος διαιρεῖται προβολῇ, ὅρῳ, ἀνθορισμῷ, συλλογισμῷ, 
+            </div>
+         </div>
+         <div n="4" type="section">
+            <lb n="10"/>
+            <head>Περὶ ὅρου.</head>
+            <div n="1" type="paragraph">
+               <p>Ὅ ὅρος διαιρεῖται προβολῇ, ὅρῳ, ἀνθορισμῷ, συλλογισμῷ, 
 γνώμῃ νομοθέτου, πηλικότητι, πρός τι, μιᾷ
 τῶν ἀντιθετικῶν ἔστιν ὅτε, ἥτις εἰ ἐμπέσοι, εὑρεθήσεται <note type="marginal">33</note>
 καὶ μετάληψις καὶ ἀντίληψις εὐθὺς ἑπόμεναι, εἶτα
 <lb n="15"/> ποιότητι καὶ γνώμῃ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p>Ἡ προβολή ἐστιν αὐτὰ τὰ ἀπʼ ἀρχῆς ἄχρι τέλους·
+            </div>
+            <div n="2" type="paragraph">
+               <p>Ἡ προβολή ἐστιν αὐτὰ τὰ ἀπʼ ἀρχῆς ἄχρι τέλους·
 ὁ ὅρος χωρίζει τὸ πρᾶγμα καὶ γίνεται ἐκ τῶν παρειμένων
 τοῖς ἀπʼ ἀρχῆς ἄχρι τέλους· οἷον τύραννον
 ἔπεισε φιλόσοφος ἀποθέσθαι τὴν τυραννίδα καὶ αἰτεῖ
@@ -1287,8 +1327,7 @@ Pγ γ 11. 12 συλλογισμῷ om. Ph (init. pag.) 15 ποιότητι κο
 18 ὁ⌊ῖον m. po.⌉ Pa |cf. Quint. VII 3, 7 19 ἀποθέσθαι PPy; κα-
 ταθέσθαι V Phy Vγ, v. l.P, cf. Marc. IV 502, 12. Syr.2 p. 101, 25.
 Anon. l 2 p.391, 9 Sp. -H.</note>
-
-<pb n="60"/>
+                  <pb n="60"/>
 τὸ γέρας. ἡ προβολὴ ῾ ἔπαυσα τὴν τυραννίδα καὶ δεῖ
 λαμβάνειν με τὴν δωρεάνʼ· τοῦτο δὲ δηλονότι αὔξων
 ἀπὸ τῶν παρακολουθούντων τοῖς ἀπʼ ἀρχῆς ἄχρι τέλους
@@ -1323,8 +1362,7 @@ P Py | ἐπ Ph 17 καὶ om. Pγ Vγ | τὸ om. Ac | δίχα Ba, (ἄνευ
 m. 2.) Vc | σφαγῆς Nilus | θορύβων Vc Ph 18 ταραχῶν Pγ Vγ
 τούτων; ὅπλων P Phy; γρ τοῦ μετὰ τούτων καὶ ἐν ἄλλοις
 μετὰ τοιούτων mg. P 19 pr. δὲ om. VcBa 20 τῶν ἄλλων Pc</note>
-
-<pb n="61"/>
+                  <pb n="61"/>
 φεύγει· μετὰ γὰρ τὸ τίς ὁ μοιχὸς ζήτημα διὰ τῶν
 προειρημένων περανθὲν ἀντεγκαλέσει ὡς ἀξίῳ παθεῖν,
 ἃ πέπονθε. — Τούτῳ δὲ ἕπεται ἀναγκαίως ἡ μετάληώψις,
@@ -1345,8 +1383,9 @@ m. 2.) Vc | σφαγῆς Nilus | θορύβων Vc Ph 18 ταραχῶν Pγ V�
 ὅμοια. ἡ μέντοι κοινὴ ποιότης συμπεπλεγμένως ἐνταῦθα
 τῇ ποιότητι τοῦ προσώπου καὶ τῇ γνώμῃ
 <lb n="20"/> ἐξετασθήσεται.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p>Ὥσπερ δὲ στοχασμῶν εἴδη πλείονα ἔστιν, οὕτω καὶ <note type="marginal">35</note>
+            </div>
+            <div n="3" type="paragraph">
+               <p>Ὥσπερ δὲ στοχασμῶν εἴδη πλείονα ἔστιν, οὕτω καὶ <note type="marginal">35</note>
 ὅρων· καὶ ἁπλοῦς μὲν ὁ προειρημένος, οἱ δὲ ἄλλοι
 <note type="footnote">2 γρ καὶ περατωθέν P |ἀντεγκαλεῖ Py 3 τοῦτο VcBa 4 ὅτι
 om. Ph | ἥτις ἐστὶν ὅτι om. V Pγ, Nilus; ἥτις ἐστὶ μὴδὲ (ὅτι m. po
@@ -1361,8 +1400,7 @@ supr.) Py; (ἥτις ἐστὶν om.) ὅτι οὐχ οὕτως Vγ | κρί
 ἐξετάσει Ac |ἡ δὲ Ph 16 ὑπʼ P; ἐπ᾿ V Phy γ, v. l. Pa |ἀμφοῖν
 P Py γ; ἀμφοτέρων V Ph, v. l.P 21 ἔστιν PahVSr, Nilus; εἰσιν Py;
 om. Pcγ, Sop. 22 τῶν ὅρων Sr | εἰρημένος Ph | p. 59, 18 sq.</note>
-
-<pb n="62"/>
+                  <pb n="62"/>
 διπλοῖ εἰσι. καὶ πρῶτός γέ ἐστιν ὁ ἀντονομάζων καλούμενος,
 ὅταν ὄνομα ὀνόματι ὁ φεύγων ἀντιτιθῇ,
 οἷον ὑφείλετό τις ἐξ ἱεροῦ Ἰδιωτικὰ χρήματα καὶ ὡς
@@ -1372,9 +1410,11 @@ om. Pcγ, Sop. 22 τῶν ὅρων Sr | εἰρημένος Ph | p. 59, 18 sq.<
 κεφαλαίῳ, οἷον ῾ ἱερόσυλος εἶ ἀλλʼ οὐ κλέπτης
 κλέπτης μὲν γὰρ τόδε τί ἐστιν, ἱερόσυλος δὲ τόδε᾿,
 καὶ τοῖς ἑξῆς ὁμοίως. καὶ ὁ φεύγων δὲ παραπλησίως
-ἀναστρέψας χρήσεται τῷ λόγῳ.</p><lb n="10"/>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p>Δεύτερος ὁ κατὰ σύλληψιν ὀνομαζόμενος, ὅταν τοῦ
+ἀναστρέψας χρήσεται τῷ λόγῳ.</p>
+               <lb n="10"/>
+            </div>
+            <div n="4" type="paragraph">
+               <p>Δεύτερος ὁ κατὰ σύλληψιν ὀνομαζόμενος, ὅταν τοῦ
 φεύγοντος ἀντονομάζοντος ὁ διώκων καὶ τούτῳ κἀκείνῳ
 ὑπεύθυνον αὐτὸν εἶναι λέγῃ τῷ ὀνόματι. πάνυ δὲ
 οὗτος ἔοικε τῷ ἀντονομάζοντι· ὅπῃ δὲ διαφέρει, θέντες
@@ -1399,8 +1439,7 @@ Pa; om. V Phγ |λέξωμεν Ph | p. 63, 14 17 cf. Quint. V 10, 39 |
 αὐτὸν κατατίθεσθαι Ph 19 γὰρ καὶ Ba | τῶκ βιαίωι P Ac;
 κατὰ τοῦ βιασαμένου VcBaPhy 21 ⌊αὐτὸν del.⌉ ὑπεύθυνον
 ἀυτὸν Ph |αὐτὸν om. Py | φήσει Pc; φησὶν, ει supr. m.1, Pa</note>
-
-<pb n="63"/>
+                  <pb n="63"/>
 καὶ τῇ βίᾳ καὶ τῷ δημοσίῳ ἀδικήματι. ἂν γὰρ μὴ
 φάσκῃ αὐτὸν βεβιάσθαι, δηλαδὴ ἀφίησι καὶ τοῦ δημοσίου
 ἀδικήματος· εἰ γὰρ μὴ εἴη βία, δηλαδὴ οὐδὲ
@@ -1435,13 +1474,13 @@ add. P Phγ 17 κλέπτηι V, v.l. Pc; τὸ κλέπτην Pc, (ν er.) Pa;
 δήπου κλέπτης χρημάτων 18 δήπουθέν ἐστι VcBa 19 τ|ὸ ex
 ωι⌉ Pa Vc | βίαιον VcBaPhy; βιαίῳ P Ac | post εἶναι add. Vc Ba:
 ἀλλὰ τῶι βιασαμένωι δημοσία ἠδικηκέναι ἕπεται 21 συλλαβὼν Py</note>
-
-<pb n="64"/>
+                  <pb n="64"/>
 τοῦτο οὖν πλέον ἔχει κεφάλαιον οὗτος ἐν τῇ διαιρέσει
 <note type="marginal">37</note> τοῦ ἀντονομάζοντος, καὶ διαφέρουσα δηλαδὴ καὶ ἡ
 διαίρεσις γίνεται διὰ τοῦτο πρὸς τὸν ἀντονομάζοντα.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5"><p>Τρίτος ὁ κατὰ πρόσωπα διπλοῦς· γίνεται δέ, ὅταν
+            </div>
+            <div n="5" type="paragraph">
+               <p>Τρίτος ὁ κατὰ πρόσωπα διπλοῦς· γίνεται δέ, ὅταν
 πρᾶγμα ὁλόκληρον ὑπὸ δυοῖν ᾖ πεπραγμένον ἢ ἄλλως <lb n="5"/>
 δύο προσώποις τισὶν ὑπάρχον, οἷον τὰς ἱερωσύνας
 τοὺς παῖδας διαδέχεσθαι· παῖδα ἔχων ἠρίστευσέ τις καὶ
@@ -1452,8 +1491,9 @@ add. P Phγ 17 κλέπτηι V, v.l. Pc; τὸ κλέπτην Pc, (ν er.) Pa;
 ἐν τῇ ἱερωσύνῃ, τῷ δὲ τὸ τέλος, τὸ ἱερέα ἔτι
 ὄντα τεθνάναι αὐτῷ τὸν πατέρα. καὶ τοῦτον δὲ παραπλησίως
 διαιρήσεις, κεφάλαιον ἀντιτιθεὶς κεφαλαίῳ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="6"><p>Τέταρτος ὁ ἐμπίπτων, ὅταν ὥσπερ ἐν στοχασμῷ μεταξὺ <lb n="15"/>
+            </div>
+            <div n="6" type="paragraph">
+               <p>Τέταρτος ὁ ἐμπίπτων, ὅταν ὥσπερ ἐν στοχασμῷ μεταξὺ <lb n="15"/>
 τῶν κεφαλαίων ἄλλο ἐμπέσῃ ζήτημα ὁλόκληρον,
 οἷον ἀμύητος ὄναρ ἰδὼν τὰ μυστήρια ἤρετό τινα, εἰπὼν
 ἃ εἶδεν, εἰ οὕτως ἔχοι· συγκατέθετο ὁ ἐρωτηθεὶς
@@ -1462,7 +1502,7 @@ add. P Phγ 17 κλέπτηι V, v.l. Pc; τὸ κλέπτην Pc, (ν er.) Pa;
 ἐμπεσεῖται καὶ τίς ὁ ἀμύητος ἄλλο ζήτημα. καὶ διαιρήσεις
 γε καὶ τοῦτο πᾶσι τοῖς ἑξῆς μέχρι τοῦ πρός τι,
 εἶτα κοινὰ ποιήσεις τὰ λοιπὰ κεφάλαια.</p>
-<note type="footnote">3 γίνεται ante 2 (alt.) καὶ Py, m. 1.c; post 3 ἀντονομάζοντα
+               <note type="footnote">3 γίνεται ante 2 (alt.) καὶ Py, m. 1.c; post 3 ἀντονομάζοντα
 Ac, m. 2Vc ἐστὶν ὁ Pγ Vγ | δὲ Pa hy γ, Nilus; om. Pc V 5 ἀνὰ
 μέρος post πεπραγμένον add v. Pa, m. 2Vc; cf. (Marc. ?) IV 563,
 19 W in textum v.l. irrepsit τι (sc τινὲς) προστιθέασιν ἀνὰ μέρος
@@ -1474,27 +1514,30 @@ p. 56, 25 17 τινα μυηθέντα Py; Syr. 2 p. 119, 9: μεμυημένο�
 17. 18 εἰπεῖν Py; om Vδk | εἰπὼν ἃ εἶδεν om. Nilus 18 ἔχει Vγk
 19 τὸ εἰπεῖν Pc 20 προσιούσης Phy 22 γε, m. 2 μὲν supr..
 Vc; om. Py | ἐφεξῆς Pc 23 ποιήσεις κοινὰ, m.2 cr., Vc</note>
-
-<pb n="65"/>
-</div>
-<div type="textpart" subtype="paragraph" n="7"><p>Πέμπτον εἶδος οἱ δύο καλούμενοι ὅροι, ὃ γίνεται,
+               <pb n="65"/>
+            </div>
+            <div n="7" type="paragraph">
+               <p>Πέμπτον εἶδος οἱ δύο καλούμενοι ὅροι, ὃ γίνεται,
 ὅταν περὶ δύο ὀνομάτων ἐφʼ ἑνὸς προσώπου ἡ ζήτησις
 οὐκ ἀντονομαζομένων, οἷον τὸν καθαρὸν καὶ ἐκ <note type="marginal">38</note>
-<note type="marginal">157</note> καθαροῦ ἱερᾶσθαι· πατέρα τις μοιχὸν ἀποκτείνας εἴργεται
+                  <note type="marginal">157</note> καθαροῦ ἱερᾶσθαι· πατέρα τις μοιχὸν ἀποκτείνας εἴργεται
 <lb n="5"/> ἱερᾶσθαι· ἡ γὰρ ζήτησις, τίς ὁ καθαρὸς καὶ τί
 ὁ ἔκ καθαροῦ, καὶ χρὴ τὸ ἕτερον πρότερον τελείως ἐπελθόντα
 τοῖς κεφαλαίοις αὖθις ἐπὶ τὸ ἕτερον ἐξ ἀρχῆς
 ἰέναι. Ταῦτα περὶ ὅρου.</p>
-</div></div>
-
-<div type="textpart" subtype="section" n="5">
-<head>Περὶ ἀντιλήψεως.</head>
-<lb n="10"/> <div type="textpart" subtype="paragraph" n="1"><p>Ἡ δὲ ἀντίληψις διαιρεῖται προβολῇ, μορίοις δικαίου, 
+            </div>
+         </div>
+         <div n="5" type="section">
+            <head>Περὶ ἀντιλήψεως.</head>
+            <lb n="10"/>
+            <div n="1" type="paragraph">
+               <p>Ἡ δὲ ἀντίληψις διαιρεῖται προβολῇ, μορίοις δικαίου, 
 προσώπῳ, ὅρῳ καὶ τοῖς ἑπομένοις τῷ ὅρῳ μέχρι
 τοῦ πρός τι, αὐτῇ τῇ ἀντιλήψει, μεταλήψει, ἀντιθέσει,
 ἑτέρᾳ μεταλήψει, θέσει, ποιότητι καὶ γνώμῃ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p>Ἡ προβολὴ γίνεται, ὡς καὶ ἐν τῷ ὅρῳ. — Τὸ δὲ
+            </div>
+            <div n="2" type="paragraph">
+               <p>Ἡ προβολὴ γίνεται, ὡς καὶ ἐν τῷ ὅρῳ. — Τὸ δὲ
 <lb n="15"/> μόριον τοῦ δικαίου ταὐτὸν μέν ἐστι τῇ ἀντιλήψει, διαφέρει
 δέ, ὅτι ἐνταῦθα μὲν ἄνευ τε κατασκευῆς ἁπλῶς
 κατʼ ἀρχὰς τίθεται καὶ ἐν παραγραφικοῦ μοίρᾳ, ἐκεῖ
@@ -1512,8 +1555,7 @@ Pcγ 14 ὥσπερ (om. καὶ) Sop. 16 τε om. Phy 17 καὶ
 tuum doctrina ab Hermogene tradita p 13 | ναυάγια Pcy, (ον
 supr.) Pa; ναυάγιον W Ph 19 τῶν ἐμπόρων post καταίροντος
 add. Vγ (cf. 66, 17) 21 οὐ δεῖ με ἐπὶ (om. εἰ) Sop. V 167,13 W.</note>
-
-<pb n="66"/>
+                  <pb n="66"/>
 ἀλλὰ δημοσίων γε οὐ τοὺς ἰδιώτας, τοὺς δὲ ῥήτορας
 <note type="marginal">39</note> ἢ τοὺς πρεσβευτὰς ἢ τοὺς στρατηγοὺς ἢ τὰ ὅμοια·
 οὗτοι γὰρ καὶ δύναιντʼ ἂν ἀδικεῖν δημοσίᾳ, ὅτι καὶ
@@ -1550,8 +1592,7 @@ Vc Ba Ph 17 ἐν P; ἐπὶ V Phy γ, v. l.P; Marc. IV 609, 21 W.:
 τούτοις add. Pa, (er.) Pc, m. po. Py; fort. interpretationi vel v.l.
 ἐν — ἐπί ascripta erant ut p. 71,8 ann. 17. 18 τῆι πηλικότητι
 λέγω Vc Ba</note>
-
-<pb n="67"/>
+                  <pb n="67"/>
 ἐμπίπτει ἀναγκαίως. — Πρὸς ἃ ἡ ἀντίληψις, ὡς ἐμάθομεν
 ἐν στοχασμῷ, ὅτι ‘ἔξεστι καὶ οὐδεὶς κεκώλυκε νόμος’.
 — Εἶθ᾿ ἡ μετάληψις, ἐνστάσει μέν, εἰ ἐγχωροίη, <note type="marginal">40</note>
@@ -1573,8 +1614,9 @@ Vc Ba Ph 17 ἐν P; ἐπὶ V Phy γ, v. l.P; Marc. IV 609, 21 W.:
 μεμαθήκαμεν. Ταυτὶ δὲ οὐχ ὡς διαιροῦντες εἴπομεν
 <lb n="20"/> — πολλὰ γὰρ παρεῖται —, ἀλλʼ ὅσον ἐνδείξασθαι τὴν
 φύσιν τῶν κεφαλαίων.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p>Ἔστι καὶ ἀντιλήψεων εἴδη πλείονα· καὶ ἁπλαῖ μὲν
+            </div>
+            <div n="3" type="paragraph">
+               <p>Ἔστι καὶ ἀντιλήψεων εἴδη πλείονα· καὶ ἁπλαῖ μὲν
 αὐτῶν δύο, διπλαῖ δʼ αὖ προηγουμένως μὲν δύο, γίνονται
 <note type="footnote">1 de Minuciano: Georgius 755 Schilling | ante ἡ add. ἀν-
 αγκαίως Nilus; post ἀντίληψις add. ἡ οὖν ἀντίληψις Ph V Vγ k Sr,
@@ -1588,14 +1630,14 @@ V Ph |⌊ἀντί er.⌉ θεσις Pa 14 νῦν om. Py, Nilus 18 πῶς Py
 18. 19 μεμαθήκαμεν ἐν (τῶι add Vc Ba) ὅρωι V Phy | p. 61, 6
 19 ταῦτα Ph | εἴπομεν suppl. m. 2VcBa 22 δὲ καὶ Vγ Wc | ἀντι-
 λήψεως Nilus, (ν supr.) Ac 23 αὐτῶν etiam ante alt. δύο Vc Ba</note>
-
-<pb n="68"/>
+                  <pb n="68"/>
 δʼ αὖ καὶ ἐπιπλοκαί τινες, ὡς καὶ πλείους εὑρίσκεσθαι.
 ἀλλὰ τὰ προειρημένα γε εἴδη μόνα μαθοῦσιν
 ὑπάρχει μὴ σφάλλεσθαι τῆς ὀρθῆς διαιρέσεως μηδὲ
 <note type="marginal">41</note> ἐν ἐκείνοις. διὸ καὶ περὶ τούτων λέξομεν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p>Τῶν οὖν ἁπλῶν ἣ μὲν ἀπ᾿ αὐτοῦ τοῦ πεπραγμένου <lb n="5"/>
+            </div>
+            <div n="4" type="paragraph">
+               <p>Τῶν οὖν ἁπλῶν ἣ μὲν ἀπ᾿ αὐτοῦ τοῦ πεπραγμένου <lb n="5"/>
 τὴν κρίσιν ἔχει, οἷον Ἀλκιβιάδης μετὰ τὰ κατὰ Κύζικον <note type="marginal">159</note>
 κατελθών, εἶτα ἔχων ἐν ἐκπώμασι τὰ περὶ Σικελίαν
 φεύγει δημοσίων ἀδικημάτων· αὕτη τοῖς προειρημένοις
@@ -1624,8 +1666,7 @@ om. Ac 16.17 νεκροὺς om. Ac; del. Vc 18 ἀδικημάτων PV,
 Syr. 2 p. 130, 1; om. Ph 19 ἀντιλήψεσιν om. Ph 20 ἐστι
 ante 19 παρὰ Py | τὸ om. Vc Ba Phγ γ; ὡς Vγ | cf. Π εὑρ
 251, 6 Sp. 23 κρίνεις με Ph</note>
-
-<pb n="69"/>
+                  <pb n="69"/>
 δεῖ, ἐφʼ οἷς ἄλλοι ποιοῦσιν, ἕτερον εὐθύνεσθαι, οὐδ᾿
 εἰ προσήκοντες εἶεν γένει, μήτι γε δὴ πολέμιοι καὶ
 μηδὲν προσήκοντες· εἰ δέ, ἐφʼ οἷς ἐξ ἀρχῆς συνεβούλευσα
@@ -1647,7 +1688,7 @@ ante 19 παρὰ Py | τὸ om. Vc Ba Phγ γ; ὡς Vγ | cf. Π εὑρ
 μόνον εἰδέναι, ὅπερ καὶ μόνον τουτὶ τὸ βιβλίον ἐπαγγέλλεται,
 <lb n="20"/> ἀλλὰ καὶ τὸ εἰδέναι μεταχειρίζεσθαι. Καὶ
 περὶ μὲν ἁπλῶν ἀντιλήψεων ταῦτα.</p>
-<note type="footnote">1.2 Marc. IV 636, 5 W. refert οὐδεὶς ἐφʼ οἷς ἕτερος πεποίηκε
+               <note type="footnote">1.2 Marc. IV 636, 5 W. refert οὐδεὶς ἐφʼ οἷς ἕτερος πεποίηκε
 κρίνεται 2. 3 ⌊καὶ⌉ μη⌊δὲν supr.⌉, cr. m. 2, Vc: ἢ μηδὲν Ph: ἢ
 μὴ Ba ἔδει σε Phy | ἢ εἴργειν om. Pb Va; Marc. IV 636,
 13 W. 5 τί ante βιάζῃ add. m. po Va 6 alt. καὶ om. Phy
@@ -1660,10 +1701,10 @@ ante 19 παρὰ Py | τὸ om. Vc Ba Phγ γ; ὡς Vγ | cf. Π εὑρ
 20 ἀλλὰ καὶ τὸ εἰδέναι μεταχειρίζεσθαι P; om. Py; τὸ om. Ac;
 τὸ et μεταχειρίζεσθαι om. Ph; τὸ εἰδέναι om. Ba, (ἀλλὰ καὶ με-
 ταχ. punctis del., m. 2?) Vc 21 τοσαῦτα Vy Wc</note>
-
-<pb n="70"/>
-</div>
-<div type="textpart" subtype="paragraph" n="5"><p>Τῶν δʼ αὖ διπλῶν ἣ μέν ἐστι κατὰ συμπλοκήν, ἣ
+               <pb n="70"/>
+            </div>
+            <div n="5" type="paragraph">
+               <p>Τῶν δʼ αὖ διπλῶν ἣ μέν ἐστι κατὰ συμπλοκήν, ἣ
 δὲ κατὰ διαίρεσιν. καὶ κατὰ συμπλοκὴν μέν, ὅταν δυοῖν
 ὄντοιν τοῖν ἐγκλημάτοιν μὴ δύνηται χωρὶς ἑκάτερον
 αὐτῶν εἶναι ἔγκλημα, μετὰ δὲ τῆς τοῦ ἑτέρου συμπλοκῆς,
@@ -1695,12 +1736,12 @@ Vc Ba 12 διελεῖν P 13 τὸν om. Vc Ba; del. Ph 10 δὲ διαί-
 ρεσιν Ac Ph y, Nilus 17 τιθέμενος PVPy, Sop. V 171, 25 W.
 θετοὺς ποιούμενος Ph, m.2Ac, cf. Syr. 2 p. 136, 23 21 δὲ (om.
 αὖ) Ac</note>
-
-<pb n="71"/>
+                  <pb n="71"/>
 ἐπιδέξασθαι τὸ πρᾶγμα ἢ τοῦτον εἰσαγόμενον τὸν
 τρόπον.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="6"><p>Ἔφην δύνασθαι εἶναι καὶ πλείονα εἴδη ἀντιλήψεων.
+            </div>
+            <div n="6" type="paragraph">
+               <p>Ἔφην δύνασθαι εἶναι καὶ πλείονα εἴδη ἀντιλήψεων.
 αὐτίκα τόδε τῶν προειρημένων διαφέρει, οἷον γραψάμενοί
 <note type="marginal">161</note> τινες μοιχείας ἀλλήλους, καθυφέντες τὰς γραφὰς
 <lb n="6"/> ἤμειψαν τὰς γυναῖκας καὶ φεύγουσι κακοῦ βίου. πρῶτον
@@ -1712,11 +1753,13 @@ Vc Ba 12 διελεῖν P 13 τὸν om. Vc Ba; del. Ph 10 δὲ διαί-
 τούτων γε ἑκάστην ἀνάγκη λύειν τῷ κατηγόρῳ. φανερὰ
 δὲ ἡ μέθοδος ἐπ᾿ ἀμφοῖν, ἐπί τε τοῦ κατηγόρου καὶ
 ἐπὶ τοῦ φεύγοντος, ἀπὸ τῶν προειρημένων.</p>
-<lb n="15"/></div>
-<div type="textpart" subtype="paragraph" n="7"><p>Ἔστι δὲ καὶ ἄλλα εἴδη ἀντιλήψεων, ἃ περιττὸν ἂν
+               <lb n="15"/>
+            </div>
+            <div n="7" type="paragraph">
+               <p>Ἔστι δὲ καὶ ἄλλα εἴδη ἀντιλήψεων, ἃ περιττὸν ἂν
 εἴη λέγειν νῦν· πᾶσαν γὰρ ἀντίληψιν τοῖς προειρημένοις
 ἄν τις ὀρθῶς ἑπόμενος διαιροίη.</p>
-<note type="footnote">3 p. 67, 22 | καὶ om. Py 5 μοιχείας τινὲς Ac Ba Ph, m.1Vc
+               <note type="footnote">3 p. 67, 22 | καὶ om. Py 5 μοιχείας τινὲς Ac Ba Ph, m.1Vc
 καὶ καθυφέντες Pγ Vγ 7 τὰ om. Vγ 8 τέσσαρες Ba; τρεῖς P Vc
 AcPy; γρ΄ καὶ τέσσαρας ὃ καὶ κρεῖττον m. 2Vc; σκόπει ⌊π er.⌉
 ὅσαι (sic) Ph | καὶ αὗται παῤ ἀμφοῖν P Ac Ph; γρ καὶ ταῦτα
@@ -1728,21 +1771,23 @@ Py;? Ph 10 γῆμαι Vc Ba | καὶ om. V Phγ | ἀποβαλέσθαι V
 Py 11 κωλύεται Ph 12 ἑκάστην γε V Phy 15 ἀντιλήψεων
 om. Ac Py; ?Ph 10 νυνί V Ph 17 sic P Py; ἑπόμενος ὀρθῶς
 ἄν τις VPh, v.l.P</note>
-</div></div>
-
-<pb n="72"/>
-<div type="textpart" subtype="section" n="6">
-<head>Περὶ τῶν ἀντιθετικῶν,
+            </div>
+         </div>
+         <pb n="72"/>
+         <div n="6" type="section">
+            <head>Περὶ τῶν ἀντιθετικῶν,
 ἀντιστάσεως, ἀντεγκλήματος, μεταστάσεως, συγγνώμης.</head>
-<div type="textpart" subtype="paragraph" n="1"><p>Αἱ ἀντιθετικαὶ πᾶσαι διαιροῦνται προβολῇ, ὅρῳ
+            <div n="1" type="paragraph">
+               <p>Αἱ ἀντιθετικαὶ πᾶσαι διαιροῦνται προβολῇ, ὅρῳ
 ἔστιν ὅτε καὶ τοῖς ἑπομένοις τῷ ὅρῳ μέχρι τοῦ πρός
 τι, διανοίᾳ, αὐτῇ τῇ ἀντιθέσει, ἥ ἐστιν ὁμώνυμος τῇ <lb n="5"/>
 στάσει αὐτῇ τοῦ ζητήματος, ἀντιστατικῇ ἢ ἀντεγκληματικῇ
 ἢ μεταστατικῇ ἢ συγγνωμονικῇ, ἑτέρᾳ διανοίᾳ,
 μεταλήψει, πρός τι, ὅρῳ βιαίῳ, θέσει, ἑτέρᾳ μεταλήψει,
 ἀντιλήψει, ποιότητι καὶ γνώμῃ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p>Ἡ προβολὴ φανερὰ ἀπὸ τῶν συμβεβηκότων. τῷ δὲ <lb n="10"/>
+            </div>
+            <div n="2" type="paragraph">
+               <p>Ἡ προβολὴ φανερὰ ἀπὸ τῶν συμβεβηκότων. τῷ δὲ <lb n="10"/>
 ὁρικῷ ὅτε ἐμπίπτοι ὁμοίως χρησόμεθα, καθάπερ καὶ
 <note type="marginal">45</note> ἐν τῇ ἀντιλήψει προείρηται. καὶ μετὰ τὴν αὔξησιν δηλαδὴ
 τὰ ἀπ᾿ ἀρχῆς ἄχρι τέλους ἐστί, πρὸς ἃ τῇ διανοίᾳ
@@ -1753,7 +1798,7 @@ om. Ac Py; ?Ph 10 νυνί V Ph 17 sic P Py; ἑπόμενος ὀρθῶς
 τέλους, ἐπειδὴ μὴ ἐμπέπτωκε τὸ ὁρικόν. — Πρὸς ἃ ὁ
 φεύγων τῇ διανοίᾳ χρήσεται ἀξιῶν μὴ τὸ γεγονὸς μόνον <note type="marginal">162</note>
 ἐξετάζειν, ἀλλὰ καὶ μεθʼ ἧς γνώμης, πρῶτον μὲν <lb n="20"/>
-<note type="footnote">1 τῶν om. Ac, m. 1 supr. Ba 2 om. V Ph 3 πᾶσαι om. Py
+                  <note type="footnote">1 τῶν om. Ac, m. 1 supr. Ba 2 om. V Ph 3 πᾶσαι om. Py
 5 post τι add. Ba, m. po. Pa; τοῖς ἀπ᾿ ἀρχῆς ἄχρι τέλους | ἥτις Pγ
 6 αὐτῆι P Ac; αὐτοῦ Vc Ba Py; ? Ph | ἢ om. Pc 7 ἑτέραι P; πάλιν
 V Phy, v.l. P, Nilus 8 πρός τι — 9 γνώμῃ non legit Sopater
@@ -1766,8 +1811,7 @@ ras., καί supr m 2⌉γνώμηι Vc 11 ὁριστικῶι P Vc Phy, Nilus;
 Sp. -H. | δὲ om. Py 15.16 φόνου φεύγει Pc Ba Py 16 et 18
 ὁρικὸν ex cr. Pa Ac; ὁριστικὸν Pc hy Vc Ba; cf. 1. 11 19 ἄξιον
 Pc | ἀξι ⌊VI—VII evan.⌉ ο γεγονὸς μὴ μόνον Ph</note>
-
-<pb n="73"/>
+                  <pb n="73"/>
 ὅτι οὐ δύσνους ὢν οὐδὲ ἐπιβουλεύων τῷ παιδί, ἔπειτα
 ὅτι ἄκων μὲν ἀναγκαίως δέ. — Εἶτα ἡ ἀντίθεσις,
 ἐνταῦθα ἀντεγκλημιατικὴ ἐμπέπτωκεν, ὅτι ἄξιος ἦν, καὶ
@@ -1803,8 +1847,7 @@ Ph, v.l.Pa, Nilus, (καὶ pro ἀλλʼ) v.l.Pc 14. 15 ἐστιν post με�
 add. Phy 15 ἀνταποδεικνύμενον Ph 17 τούτου τοῦ VcBa
 19 τι P Ph y, cf. Syr. 2 p. 140, 21. Aps. I 2 p. 232,17 Sp -H.;
 om. V 20 μὲν om. Pc</note>
-
-<pb n="74"/>
+                  <pb n="74"/>
 δὲ ὕστερον φεύγει. ὁ οὖν βίαιος ὅρος, εἰ μηδὲ νίκη
 τοῦτο, ἀλλʼ ἅλωσις πόλεως καὶ κατασκαφή· καὶ πάλιν
 ὑπὸ τοῦ φεύγοντος ὡς ἑτέρως, εἰ μηδὲ διακόψαι τεῖχος
@@ -1819,14 +1862,16 @@ om. V 20 μὲν om. Pc</note>
 ἦν, καὶ ἐξῆν δήπου’ ἢ ὅτι ‘πατρί γε ὄντι ἐξὸν ἦν μοι <note type="marginal">163</note>
 βουλεύσασθαι περὶ τοῦ παιδός’. καὶ ὅλως τοῖς ἐμπίπτουσι
 χρησόμεθα, ὡς ἂν ὁ καιρὸς διδῷ. — Ἡ ποιότης
-καὶ ἡ γνώμη ὡς γίνεται, ἐν ὅρῳ μεμαθήκαμεν.</p><lb n="15"/>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p>Ἐπειράθησαν δὲ τινὲς τῶν ἐπιγραψαμένων Τέχνην
+καὶ ἡ γνώμη ὡς γίνεται, ἐν ὅρῳ μεμαθήκαμεν.</p>
+               <lb n="15"/>
+            </div>
+            <div n="3" type="paragraph">
+               <p>Ἐπειράθησαν δὲ τινὲς τῶν ἐπιγραψαμένων Τέχνην
 <note type="marginal">47</note> ῥητορικὴν τὸ περὶ διαιρέσεως μέρος αὐτῆς εἴδη τινὰ
 εἰπεῖν ἀντιστάσεων καὶ νὴ Δία γε τῶν ἄλλων ἀντιθετικῶν
 στάσεων, οὐχ ἵνα διάφορόν τινα οὖσαν τὴν διαίρεσιν
 ἐν αὐταῖς διδάξωσιν ἡμᾶς, καθάπερ ἡμεῖς ἔν <lb n="20"/>
-<note type="footnote">3 ὑπὸ om. Py | τὸ τεῖχος Pγ 5—7 cf. Herod. 8, 80 de
+                  <note type="footnote">3 ὑπὸ om. Py | τὸ τεῖχος Pγ 5—7 cf. Herod. 8, 80 de
 dolo Themistoclis 5 δεῖ [circ. IX⌉ τὸν Pc | καθʼ P; πάντα V
 Phy; πᾶνθʼ v.l.Pc 5.6 ἂν ἐγχωροίη Ba; ἐγχωρεῖ Py 8 εἶναι
 (pro ἐν) Ac, v.l.P | πάση⌊η m. po⌉ Pc 8. 9 πάσηι τῆι θέσει (ἀντϊ
@@ -1840,8 +1885,7 @@ cianus apud Georgium 756 Schilling cet. | (δὲ om.) τινὲς τῶν
 ἀντιγράφων Sr | ἐπιγραψάντων, μένων m.2 supr., Vc 17 καὶ
 εἴδη Sop. 18 καὶ post γε add. Ph γ 19 τὴν om. Phy, v.l.P
 20 καθάπερ καὶ VcBa, Marc. IV 684, 22 W.</note>
-
-<pb n="75"/>
+                  <pb n="75"/>
 τε ἀντιλήψει καὶ ἄλλοις πεποιήκαμεν — ἡ γὰρ ἂν ἴσως
 τινὸς ἦν ἄξιον —, ἀλλʼ ὅτι, φασίν, ἣ μὲν ἰδιωτική, ἣ
 δὲ δημοσία, ἣ δὲ μικτή ἐστι, καὶ τοιαῦτά τινα. τὸ δὲ
@@ -1852,8 +1896,9 @@ cianus apud Georgium 756 Schilling cet. | (δὲ om.) τινὲς τῶν
 ἐκεῖνα εἰδέναι· μὴ γινώσκοντι δὲ τί ἂν ὄφελος γένοιτο
 τῆς διαφορᾶς τῶν ζητημάτων, ὅ τι ἰδιωτικὸν ἢ ὅ τι
 <lb n="10"/> δημόσιόν ἐστιν;</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p>Ἔτι τὴν συγγνώμην ἀπὸ τῆς μεταστάσεως οὐ τῷ
+            </div>
+            <div n="4" type="paragraph">
+               <p>Ἔτι τὴν συγγνώμην ἀπὸ τῆς μεταστάσεως οὐ τῷ
 ἀνευθύνῳ καὶ ὑπευθύνῳ ἐχώρισαν τινές, ἀλλὰ ἀπλῶς
 τὰ μὲν εἴς τι τῶν ἔξωθεν μεθιστάντα τὸ ἀδίκημα
 πάντα μεταστατικὰ εἰρήκασιν εἶναι, ἐάν τε χειμὼν ἐάν
@@ -1877,25 +1922,29 @@ Ba; |οἶκτον m. po Pc | καὶ (pro alt. ἢ) Phy | εἴ om. Pγ 19 τι
 ἂν VcAc, m. 2Ph (ὧι — τίς ἂν — 20 συγγνώμαις suppl. m.2Ba)
 20 〈ὡς〉 κἀν? 21 αὖ τῆι PV: αὐτῆι v.l.P; αὐτῆ τῆ Vγ | πάλιν
 αὖ τοὐναντίον μεταστάσει Py ; τῆι μεταστάσει πάλιν αὖ τοὐναν-</note>
-
-<pb n="76"/>
+                  <pb n="76"/>
 δὲ οὐ τοῦ διαιρετικοῦ εἴδους οἶμαι, τοῦ δὲ τοῖς καιροῖς
 εἰδέναι χρῆσθαι καὶ μεθοδεύειν ὀρθῶς τὰ νοήματα.</p>
-</div></div>
-
-<div type="textpart" subtype="section" n="7">
-<head>Περὶ πραγματικῆς.</head> <note type="marginal">164</note>
-<div type="textpart" subtype="paragraph" n="1"><p>Ἡ πραγματικὴ διαιρεῖται νομίμῳ, δικαίῳ, συμφέροντι,
-δυνατῷ, ἐνδόξῳ, τῷ ἐκβησομένῳ.</p><lb n="5"/>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p>Ἔστι δὲ ἣ μὲν ἔγγραφος, ἣ δὲ ἄγραφος· ἔγγραφος
+            </div>
+         </div>
+         <div n="7" type="section">
+            <head>Περὶ πραγματικῆς.</head>
+            <note type="marginal">164</note>
+            <div n="1" type="paragraph">
+               <p>Ἡ πραγματικὴ διαιρεῖται νομίμῳ, δικαίῳ, συμφέροντι,
+δυνατῷ, ἐνδόξῳ, τῷ ἐκβησομένῳ.</p>
+               <lb n="5"/>
+            </div>
+            <div n="2" type="paragraph">
+               <p>Ἔστι δὲ ἣ μὲν ἔγγραφος, ἣ δὲ ἄγραφος· ἔγγραφος
 μὲν ἡ ἀπὸ ῥητοῦ τὸ ζήτημα ἔχουσα, οἷον ἐν τρισὶν
 ἡμέραις περὶ πολέμου βουλεύεσθαι νόμος ἐκέλευεν,
 ·Ἐλάτειαν ἔχοντος Φιλίππου γράφει Δημοσθένης αὐθημερὸν
 ἐξιέναι· ἄγραφος δὲ ἡ μὴ ἀπὸ ῥητοῦ, οἷον ἀξιοῖ <lb n="10"/>
 μετὰ τὰ κατὰ Πύλον Κλέων Πύθιος καλεῖσθαι.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p>Τὸ τοίνυν νόμιμον ἐν μὲν τῇ ἐγγράφῳ μιᾷ τῶν νομικῶν
+            </div>
+            <div n="3" type="paragraph">
+               <p>Τὸ τοίνυν νόμιμον ἐν μὲν τῇ ἐγγράφῳ μιᾷ τῶν νομικῶν
 ὑποπίπτει στάσεων καὶ κατʼ αὐτήν γε διαιρεθήσεται·
 αὐτίκα δὲ περὶ τῶν νομικῶν στάσεων λέξομεν.
 — Ἐν δὲ τῇ ἀγράφῳ τὸ ἔθος ὡς νόμιμον ἐξεταστέον, <lb n="15"/>
@@ -1908,7 +1957,7 @@ Ba; |οἶκτον m. po Pc | καὶ (pro alt. ἢ) Phy | εἴ om. Pγ 19 τι
 Ὀλύμπιος ἐκλήθη᾿ . ποτέρῳ δὲ πρότερον χρηστέον, τῇ
 <note type="footnote">τίον Ph γ | τοὐναντίον [Il], m. 2 γρ ἀνάπαλιν, Vc; vix san |οὐ
 ante χρήσεται add. AcBaPh, (er.) Vc |ταυτὶ V</note>
-<note type="footnote">1 οὐ om. Ph |εἶναι, m.2 οἶμαι, Vc |τοῖσδε (pro τοῦ δὲ) Ph
+                  <note type="footnote">1 οὐ om. Ph |εἶναι, m.2 οἶμαι, Vc |τοῖσδε (pro τοῦ δὲ) Ph
 5 τῷ om. Phy γ, Sop. 6 ἡ μὲν ἔγγραφος πραγματικὴ VPh y,
 v.l P 7. 8 οἷον νόμου κελεύοντος ἐν ἡμέραις τρισὶ περὶ πο-
 λέμου βουλεύεσθαι Py | cf Aps. l 2 p. 245, 4 Sp -H. 8 βουλεύ-
@@ -1917,16 +1966,17 @@ VPh; Syr. 2 p. 164, 3 11 τὰ κατὰ P: om. VPhy 18 κατὰ
 ταύτην Ph γ 14 p. 82, 4 sq. 10 ὅτι om. Py 19 τὸ Ph 21 alt.
 καὶ om. 22 ποτέρω δὲ PPy; πότερον δὲ W Ph | πρότερον
 Pcy; πότερον Pa; προτέρωι VcBa; ποτέρωι AcPh</note>
-
-<pb n="77"/>
+                  <pb n="77"/>
 ἐνστάσει ἢ τῇ ἀντιπαραστάσει, οἱ καιροὶ διδάσκουσιν,
 ὡς καὶ ἐν στοχασμῷ διωρισάμεθα.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p>Τὸ δίκαιον μιᾷ τῶν δικαιολογικῶν ὑποπίπτει καὶ
+            </div>
+            <div n="4" type="paragraph">
+               <p>Τὸ δίκαιον μιᾷ τῶν δικαιολογικῶν ὑποπίπτει καὶ
 κατʼ ἐκείνην γε διαιρεθήσεται, ὡς ἂν ἐγχωρῇ, τοῖς
 <lb n="5"/> κεφαλαίοις.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5"><p>Τὸ συμφέρον διττόν ἐστιν, ὅτι χρήσιμον καὶ ὅτι
+            </div>
+            <div n="5" type="paragraph">
+               <p>Τὸ συμφέρον διττόν ἐστιν, ὅτι χρήσιμον καὶ ὅτι
 ἀναγκαῖον, οἷον χρήσιμον προσλαβεῖν Ὀλυνθίους, μᾶλλον
 δὲ ἀναγκαῖον, ἵνα μὴ μέγας ὁ Φίλιππος ἑλὼν
 ἐκείνους γένηται καθʼ ἡμῶν᾿ . τοῦτο δὲ διχῶς ἐξετάσεις,
@@ -1940,8 +1990,10 @@ Pcy; πότερον Pa; προτέρωι VcBa; ποτέρωι AcPh</note>
 μὲν προσγενησόμενα δʼ ἂν οὐ προσέσται, καὶ πάλιν τὰ
 μὲν ὑπάρχοντα φαῦλα παραμενεῖ, τὰ δὲ οὐκ ὄντα <note type="marginal">50</note>
 προσέσταιʼ.</p>
-<lb n="20"/></div>
-<div type="textpart" subtype="paragraph" n="6"><p>Τὸ δʼ αὖ δυνατὸν ὑποδιαιρήσεις, πρῶτον μὲν ὅτι
+               <lb n="20"/>
+            </div>
+            <div n="6" type="paragraph">
+               <p>Τὸ δʼ αὖ δυνατὸν ὑποδιαιρήσεις, πρῶτον μὲν ὅτι
 οὐ χαλεπὸν δεικνύς, ἐνστάσει χρώμενος· εἶτα ἀντιπαραστάσει,
 <note type="footnote">2 p. 49, 1 3 τὸ δὲ Ph, Nilus | δικολογικῶν m. 1VcBa 4 γε
 om. Py e διπλοῦν Py | alt ὅτι om. Py 7 ὅτι post οἷον Py,
@@ -1956,8 +2008,7 @@ Demosth 1,12 10 τὸ (pro τι) AcPy 11 γενήσεται Ac 12 ἤδη
 20— p.78, 1 cf. Anaxim p. 13, 12 Sp .-H. 21 τῆ ἐνστάσει AcPy
 21—p. 78, 1 δεικνύς· εἶτα ἐκτάσει χρώμενος ὁτι, om. cet., mg.
 *ἀντιπαρα, Ph | τῆ ἀντιπαραστάσει AC</note>
-
-<pb n="78"/>
+                  <pb n="78"/>
 ὅτι, εἰ καὶ χαλεπόν, ἀλλʼ ἀναγκαῖον, καὶ
 ὅτι δεῖ ὑπὲρ τῶν χρηστῶν καὶ πόνους καὶ κινδύνους
 ὑφίστασθαι, καὶ ὅτι ὑπὲρ τοῦ μὴ χαλεπωτέροις περιπεσεῖν·
@@ -1978,9 +2029,10 @@ Demosth 1,12 10 τὸ (pro τι) AcPy 11 γενήσεται Ac 12 ἤδη
 τοῦ πράγματος τὴν τέχνην προσακτέον κατὰ τὸ
 ἐγχωροῦν· τὸ μὲν γὰρ τῆς εὑρέσεώς ἐστι, τὸ δὲ τῆς
 κρίσεως· ἄλλως τε οὐχ ὅσα δἂν εὕρωμεν, ἐροῦμεν, ἀλλʼ <lb n="20"/>
-<note type="marginal">51</note> ὅσα δἂν κρίνωμεν εἶναι ῥητέα.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="7"><p>Τὸ ἔνδοξον ὁμοίως τῷ συμφέροντι, οἷον ῾ τίς δόξα
+                  <note type="marginal">51</note> ὅσα δἂν κρίνωμεν εἶναι ῥητέα.</p>
+            </div>
+            <div n="7" type="paragraph">
+               <p>Τὸ ἔνδοξον ὁμοίως τῷ συμφέροντι, οἷον ῾ τίς δόξα
 ὑπάρχουσα ἡμῖν παραμενεῖ καὶ τίς οὐκ οὖσα περιέσται,
 εἰ ποιοῖμεν ταῦτα, περὶ ὧν ἡ βουλή; καὶ τίνα ἀπωσόμεθα
 <note type="footnote">1 ἀναγκαῖον ὄν Ph (Syr. 2 p.182,1 ἀλλʼ οὖν ἀναγκαῖον) 6 cf.
@@ -1992,16 +2044,16 @@ Ph 9 Dem. 2, 17 10 τῶν ἀθηναίων Ph 11 ἡ etiam ante
 Vc; παραλείπομεν Phy 17.18 φύσει δὲ 20 οὐ γὰρ (pro
 ἄλλως τε οὐχ) Ph 20. 21 ὅσα ἂν ... ὅσα δἂν Vγ 21 κρίνομεν,
 om. δἂν, Py 24 ποιοῦμεν Vγ, m. po.Ba</note>
-
-<pb n="79"/>
+                  <pb n="79"/>
 ἀδοξίαν οὖσαν καὶ τίνα οὐ προσληψόμεθα μὴ
 οὖσαν, προσδοκωμένην δέ; καὶ πάλιν εἰ μὴ ποιοῖμεν,
 <note type="marginal">166</note> τίνα αἰσχύνην οὖσαν οὐκ ἀπωσόμεθα καὶ τίς οὐκ οὖσα
 καταλήψεται ἡμᾶς; καὶ τίς ὑπάρχουσά τε ἡμῖν δόξα
 <lb n="5"/> διαφεύξεται καὶ μὴ ὑπάρχουσα προσγενομένη δʼ ἂν οὐ
 προσέσται;ʼ</p>
-</div>
-<div type="textpart" subtype="paragraph" n="8"><p>Τὸ δὲ ἐκβησόμενον καθʼ ὑπόθεσιν λαμβάνεται ἐφʼ
+            </div>
+            <div n="8" type="paragraph">
+               <p>Τὸ δὲ ἐκβησόμενον καθʼ ὑπόθεσιν λαμβάνεται ἐφʼ
 ἑκάτερα τῶν ἀποβαινόντων, οἷον ὅτι, ἐάν τε κρατήσωμεν
 ἐάν τε μή, λυσιτελεῖ τὸ βοηθῆσαι, ἤδη δὲ καὶ τὸ
 <lb n="10"/> ψηφίσασθαι μόνον· ὡς ἐν Φιλιππικοῖς οἷον «οὔτοι
@@ -2011,11 +2063,13 @@ om. δἂν, Py 24 ποιοῦμεν Vγ, m. po.Ba</note>
 ληφθῇ», καὶ πάλιν ὅτι χωρὶς ἡμῶν ἐάν τε ἡττηθῶσιν
 <lb n="15"/> οἱ δεόμενοι ἡμῶν σύμμαχοι ἐάν τε κρατήσωσι, βλαβεροὶ
 ἐφʼ ἑκάτερα, ὡς ἐν τῷ Ὑπὲρ Μεγαλοπολιτῶν.</p>
-</div></div>
-
-<div type="textpart" subtype="section" n="8">
-<head>Περὶ μεταλήψεως.</head> <note type="marginal">52</note>
-<div type="textpart" subtype="paragraph" n="1"><p>Ἡ μετάληψις πάλιν ἣ μὲν ἔγγραφός ἐστιν, ἣ δὲ 
+            </div>
+         </div>
+         <div n="8" type="section">
+            <head>Περὶ μεταλήψεως.</head>
+            <note type="marginal">52</note>
+            <div n="1" type="paragraph">
+               <p>Ἡ μετάληψις πάλιν ἣ μὲν ἔγγραφός ἐστιν, ἣ δὲ 
 ἄγραφος. καὶ ἡ μὲν ἔγγραφος τελεία τέ ἐστι παραγραφὴ
 <lb n="20"/> καὶ τὸ πρότερον ζήτημα περὶ μίαν εὑρίσκεται στάσιν
 τῶν νομικῶν, περὶ ὧν αὐτίκα λέξομεν, ὡς εἴρηται·
@@ -2030,8 +2084,7 @@ Dem. | ὡς ἐγὼ AcPy; ὡς τοῦτο ἔγωγε Ph 13 εὐπρεπε�
 Ba; m. 1Pc | ἠμᾶ Py 15 ὑμῶν Pc; cf. Dem 16, 30. 31
 15. 16 βλαβερὸν ἐφʼ ἑκάτερον Ac 20 21 τῶν νομικῶν στάσεων
 Py 21 p.82, 4. 76,14</note>
-
-<pb n="80"/>
+                  <pb n="80"/>
 ἔστι δὲ ὅτε ὁρικῶς τέμνεται τὸ πρότερον ζήτημα· τὸ
 δὲ μετὰ τὴν παραγραφὴν καθʼ ἑτέραν τινὰ διαιρεθήσεται
 τῶν λογικῶν στάσεων. οἷον τὸν ἀντιλέγοντα
@@ -2045,14 +2098,15 @@ Py 21 p.82, 4. 76,14</note>
 εἴσω τῶν τριάκοντα ἡμερῶν προστάττει ἀντιλέγειν
 ὁ νόμος, καὶ ὅτι οὐ τοῖς πρεσβεύουσιν οὐδὲ τοῖς ἀποῦσι
 καὶ ὅσα ἄλλα τοιαῦτα· ἡ δευτέρα δὲ κατὰ τὴν <note type="marginal">167</note>
-<note type="marginal">53</note> πραγματικήν, εἰ νόμιμον τὸ εἰσενεχθὲν γράμμα, εἰ δίκαιον
+                  <note type="marginal">53</note> πραγματικήν, εἰ νόμιμον τὸ εἰσενεχθὲν γράμμα, εἰ δίκαιον
 καὶ τὰ ἑξῆς. ἐμπέπτωκε δὲ ἐνταῦθα καὶ δεύτερόν <lb n="15"/>
 τι ὡς παραγραφικόν, οἷον οὐκ ἔχων τὰ πέντε τάλαντα
 οὐ δύνασαι λέγεινʼ· δῆλον δέ, ὡς καὶ πρὸς τοῦτο
 ἀπαντήσεται τῇ φύσει τοῦ πράγματος· ἔτι γὰρ τῆς
 ζητήσεως οὔσης περὶ τοῦ εἰ χρὴ δοκιμασθῆναι αὐτόν,
-οὐχ οἷόν τε ἤδη ὡς κυρίῳ χρῆσθαι.</p> <lb n="20"/>
-<note type="footnote">1 καὶ m. po. add. post ὅτε Vc | ὁρικῶς ν .l.P; ὁρικῶι Ac; ὁριστι-
+οὐχ οἷόν τε ἤδη ὡς κυρίῳ χρῆσθαι.</p>
+               <lb n="20"/>
+               <note type="footnote">1 καὶ m. po. add. post ὅτε Vc | ὁρικῶς ν .l.P; ὁρικῶι Ac; ὁριστι-
 κῶς P Vc Phy,? m.1Ba, Sop., Nilus l πρῶτον Ph 3 στάσιν V.
 v.l.P 4 ἔσω Py | τῶν om. Phy γ, Syr. 2 p.158, 25, (supr. m po )
 Pc 4 5 sic V Ph, v. l.P, (ἀντιλέγειν ἡμερῶν) Pγ; τριάκοντα ἡμε-
@@ -2067,10 +2121,10 @@ Phy γ, (ἀ|ποῦ m po.|σι) Pc, (οὐδὲ etiam pro οὐ) Pa; οὐ το
 rum del. 13 τοιαῦτα om. Phγ γ 14 ῥάμμα (sic) Ac; πρᾶγ-
 μα Pγ 18 ἀπαντήσεται (ει m. 1?) Vc; ἀπαντήσει Ph 20 κυ-
 ρίωι Ph: κυρίως Pγ</note>
-
-<pb n="81"/>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p>Ἡ δὲ ἄγραφος διαιρεῖται προβολῇ, παραγραφικῷ τῷ
+               <pb n="81"/>
+            </div>
+            <div n="2" type="paragraph">
+               <p>Ἡ δὲ ἄγραφος διαιρεῖται προβολῇ, παραγραφικῷ τῷ
 ἀπὸ τοῦ ῥητοῦ, μεταλήψει, συλλογισμῷ, ὅρῳ, ἀντιθέσει,
 ἑτέρᾳ μεταλήψει, ἀντιλήψει, θέσει, ποιότητι καὶ
 γνώμῃ. οἷον ἀριστεύσας τις ᾔτησε πολίτου φόνον καὶ
@@ -2089,7 +2143,8 @@ rum del. 13 τοιαῦτα om. Phγ γ 14 ῥάμμα (sic) Ac; πρᾶγ-
 ἀντίθεσις ῾ ὅπου καὶ ὁ δῆμος αὐτοῦ κατεψηφίσατο, ἄξιος
 ἦν᾿ . — Ἑτέρα μετάληψις ὅτι ἐχρῆν αὐτὸ τοῦτο εἰπόντα <note type="marginal">54</note>
 σε, ὡς ἀπέκτεινας καὶ ὅτι ἄξιος ἦν ἀποσφαγῆναι,
-<lb n="20"/> <del>καὶ</del> αἰτεῖν ἄφεσιν. — Οἷς ἀκόλουθος ἡ ἀντίληψις
+<lb n="20"/>
+                  <del>καὶ</del> αἰτεῖν ἄφεσιν. — Οἷς ἀκόλουθος ἡ ἀντίληψις
 ὅτι ῾ ἐξῆν ὅπερ ἐβουλόμην αἰτεῖν, καὶ οὐχ ὑμιᾶς
 ὁριστὰς δεῖ μοι εἶναι τοῦ τρόπου, καθʼ ὃν ἐχρῆν αἰτεῖνʼ.
 <note type="footnote">1 δ’ αὖ Py | προβολῆι διαιρεῖται Ba, (tum cr.) Vc 2 τοῦ
@@ -2104,22 +2159,24 @@ Ac, Nilus: εἰ ὅπου PPh; εἰ[Ι]που Ba; εἰ[Ι]ὅπου Vc 18 α�
 Ph 10 σε supr. Ph; om. Ac, Nilus | ὡς ὅτι Ph: ὅτι Nilus
 ἀπέκτεινα AcPh; ἀπέκτονας Nilus 20 καὶ om. Vγ, m. 1Ph
 22 δεῖ VcBaPh; ἔδει PAc, m. 2Vc</note>
-
-<pb n="82"/>
+                  <pb n="82"/>
 — Ἡ θέσις, εἰ δεῖ ταῦτα ἐπιτρέπειν ἢ οὐ δεῖ τοὺς
 ἀρίστους ἐπὶ τοῖς συκοφάνταις ποιεῖνʼ. — Ἡ ποιότης
 καὶ ἡ γνώμη, ὡς ἐν τοῖς ἔμπροσθεν.</p>
-</div></div>
-
-<div type="textpart" subtype="section" n="9">
-<head>Περὶ ῥητοῦ καὶ διανοίς.</head> <note type="marginal">168</note>
-<div type="textpart" subtype="paragraph" n="1"><p>Ἡ κατὰ ῥητὸν καὶ διάνοιαν ζήτησις διαιρεῖται προβολῇ <lb n="5"/>
+            </div>
+         </div>
+         <div n="9" type="section">
+            <head>Περὶ ῥητοῦ καὶ διανοίς.</head>
+            <note type="marginal">168</note>
+            <div n="1" type="paragraph">
+               <p>Ἡ κατὰ ῥητὸν καὶ διάνοιαν ζήτησις διαιρεῖται προβολῇ <lb n="5"/>
 ῥητοῦ, τῇ διανοίᾳ, τῷ μὴ προσδιωρίσθαι, πάλιν
 διανοίᾳ τοῦ νομοθέτου, συλλογισμῷ, ὅρῳ, ἀντιθέσει,
 μεταλήψει, πρός τι, ὅρῳ βιαίῳ, θέσει, ἑτέρᾳ μεταλήψει,
 ἀντιλήψει, ποιότητι καὶ γνώμῃ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p>Ἡ προβολή ἐστιν αὐτὸ τὸ παρὰ τὸ ἔγγραφον <lb n="10"/>
+            </div>
+            <div n="2" type="paragraph">
+               <p>Ἡ προβολή ἐστιν αὐτὸ τὸ παρὰ τὸ ἔγγραφον <lb n="10"/>
 νός, οἷον ξένος εἰ ἀνέλθοι ἐπὶ τὸ τεῖχος, τεθνάτω,
 πολέμου ὄντος ἀνελθών τις ἠρίστευσε καὶ ὑπάγεται
 τῷ νόμῳ. ἡ τοίνυν προβολὴ ὅτι ῾ ἀνῆλθες᾿ . — Ἡ διάνοια
@@ -2143,8 +2200,7 @@ et ἐπὶ Syr. 2 p.194, 2. 3 sq 12 πολιορκίας οὔσης Py, 40, 12
 V | τοῦ τε (pro καὶ τοῦ) Pc 16 τίσι Va, (νι m.1 su r.) Pa,
 cf. Marc. IV 806,5 W.: τίνι δὴ Ac 17 ἀνῆλθον P κνῆλθε
 Ac; ἀνῆλθες Vγ 18 τὸν νόμον (pro μόνον) Py | alt. καὶ o ??. Phy</note>
-
-<pb n="83"/>
+                  <pb n="83"/>
 οἷον οὐδὲν τούτων προσδιώρισεν ὁ νομιοθέτης, ἀλλʼ
 ἀπλῶς εἶπε τὸν ξένον μὴ ἀνιέναι᾿ . — δὲ ἑτέρα διάνοια
 κοινή ἐστιν ἀμφοῖν· ὁ μὲν γὰρ φεύγων πρὸς τὸ
@@ -2163,11 +2219,14 @@ Ac; ἀνῆλθες Vγ 18 τὸν νόμον (pro μόνον) Py | alt. κα�
 τὸ εὐεργέτημα ἢ τὸ ἀδίκημα· καὶ ἔστι κοινὸν ἀμφοῖν. <note type="marginal">56</note>
 Καὶ τὰ λοιπὰ δὲ κεφάλαια οὕτως ὡς ἐν ταῖς ἀντιθετικαῖς
 ἐξετασθήσεται.</p>
-</div></div>
-
-<div type="textpart" subtype="section" n="10">
-<note type="marginal">169</note> <head>Περὶ ἀκτινομίας.</head>
-<lb n="20"/> <div type="textpart" subtype="paragraph" n="1"><p>Ἡ ἀντινομία ἔστι μὲν οἷον διπλοῦν τι ῥητὸν καὶ 
+            </div>
+         </div>
+         <div n="10" type="section">
+            <note type="marginal">169</note>
+            <head>Περὶ ἀκτινομίας.</head>
+            <lb n="20"/>
+            <div n="1" type="paragraph">
+               <p>Ἡ ἀντινομία ἔστι μὲν οἷον διπλοῦν τι ῥητὸν καὶ 
 διάνοια. ὡς κἀν τῇ μεθόδῳ, καθʼ ἣν ἐπέγνωμεν τὰς
 <note type="footnote">2 ἡ δευτέρα Py, Nilus | δὲ om. Ba 4 διωρίσασθαι v.lPa; διωρίσθαι
 Py; διορεῖσθαι, ι mg., Ph 6 κωλύεσθαι V Phy 7 ἐρεῖ
@@ -2181,13 +2240,13 @@ Ph | καὶ om Ba 15 cf. 73,14 17 οὕτως om. VPh, Nilus
 ὡς om. Pc | cf 73, 16sq. 20 διπλοῦν τι PaBa, (τι supr.; m 1?)
 Vc: τι διπλοῦν PcAc; τι om Phy γ, Nilus 21 ἐπ[έ]γνωμεν Ba;
 ἐπιγνωσόμεθα Phγ</note>
-
-<pb n="84"/>
+                  <pb n="84"/>
 στάσεις, ὡρισάμην· καὶ τοῖς γε πλείστοις κεφαλαίοις
 κοινωνεῖ τῇ στάσει ταύτῃ διπλοῖς δηλαδὴ γινομένοις,
 ἔχει δέ τι καὶ ἴδιον, ὡς φανεῖται.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p>Οὑτωσὶ δὲ διαιρήσεις· προβολῇ ῥητοῦ, διανοίᾳ, ἑτέρᾳ
+            </div>
+            <div n="2" type="paragraph">
+               <p>Οὑτωσὶ δὲ διαιρήσεις· προβολῇ ῥητοῦ, διανοίᾳ, ἑτέρᾳ
 προβολῇ ῥητοῦ καὶ πάλιν ἑτέρᾳ διανοίᾳ. — Τῶν <lb n="5"/>
 δὲ ἐφεξῆς κεφαλαίων τινὰ ὡς ἐπὶ τὸ πλεῖστον ἐκλείπει
 διὰ τὸ ἰσάζειν, οἷον ἕπεται μὲν τούτοις ὥσπερ ἐν
@@ -2203,9 +2262,11 @@ Vc: τι διπλοῦν PcAc; τι om Phy γ, Nilus 21 ἐπ[έ]γνωμεν Ba
 διανοίᾳ διαίρεσιν ἡ περὶ τοῦ πότερον περιέχει καὶ
 πότερον περιέχεται τῶν ῥητῶν ζήτησις, οἷον ποτέρου
 γενομένου μηδέτερον ἀναιρεθήσεται τῶν ῥητῶν· ὅπερ
-κεφάλαιον μετὰ τὸ πρός τι τεθήσεται.</p><lb n="20"/>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p>Ἀπὸ δὲ τοῦ παραδείγματος ἔσται φανερὰ πάντα,
+κεφάλαιον μετὰ τὸ πρός τι τεθήσεται.</p>
+               <lb n="20"/>
+            </div>
+            <div n="3" type="paragraph">
+               <p>Ἀπὸ δὲ τοῦ παραδείγματος ἔσται φανερὰ πάντα,
 <note type="footnote">1 p. 40, 20 |ὡρισάμην Pahy γ; ὡρισάμεθα, ην m.1 supr., Pc;
 διωορισάμην | πλείστοις γε Py 3 l. 15 3. 4 ὡς φανεῖται
 οὕτως· ἡ δὲ διαίρεσις Ph 4 τοῦ ῥητοῦ Py 7 ἰσάζειν AcPy,
@@ -2218,8 +2279,7 @@ Vγ, m. 2Ba 15 ἀντίληψις om. VcBaPhy, Marc. 16 τῷ om.
 Pc | τῆ supr Pa; om. Phy 18 [Ι]τῶν Pa ἡ add. ante ζήτη-
 σις Vc, (supr.; m. 1?) Py 19 γενομένου Pa; γινομένου Pc 21
 cf. 87, 10 ἐστι VcBa | ad φανερὰ πάντα mg. γρ ταῦτα P</note>
-
-<pb n="85"/>
+                  <pb n="85"/>
 οἷον ὁ ἀποκήρυκτος μὴ μετεχέτω τῶν πατρῴων καὶ ὁ
 ἐπιμείνας χειμαζομένῃ νηὶ δεσπότης ἔστω τῆς νεώς,
 ἀποκήρυκτος ἐπιμείνας πατρῴᾳ νηὶ χειμαζομένῃ κωλύεται
@@ -2235,8 +2295,9 @@ cf. 87, 10 ἐστι VcBa | ad φανερὰ πάντα mg. γρ ταῦτα P</
 τηνικαῦτα δίδωσιν, ὅταν μὴ πατρῷον τὸ κτῆμια,
 ὅταν ἀλλότριον, ὅταν μὴ ἀποκήρυκτός τις ᾖ, ὅταν μὴ
 <lb n="15"/> νόμῳ εἰργόμενοςʼ.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p>Εἶτά ἐστι τὸ μὴ προσδιωρίσθαι· ᾧ ὁπότερος ἂν χρήσηται,
+            </div>
+            <div n="4" type="paragraph">
+               <p>Εἶτά ἐστι τὸ μὴ προσδιωρίσθαι· ᾧ ὁπότερος ἂν χρήσηται,
 καὶ τῷ ἑτέρῳ ἔστι χρήσασθαι, καὶ ἰσάζει. τάχα <note type="marginal">58</note>
 δʼ ἄν τις αὐτὸ καὶ μεθοδεύσειε διαιρῶν· νῦν δὲ ἡμεῖς
 <note type="footnote">1 ὁ om Phy; cf. 41, 5 2 ἔσται τῆς νηός Ph 3 ἐπέμεινε
@@ -2256,8 +2317,7 @@ Pc 14 τις om. Py 16.17 εἶτα ἔστι τὸ μὴ προσδιωρίσα
 σεται. καὶ Ph 16 ὧι ὁπότερος ἂν PPγ; ὡς ὁ ἕτερος ἂν Py;
 καὶ οἷς ὁ ἕτερος ἂν Vc, (ὧ ex οἷς, m.2?) Ba; καὶ οἷς ἂν ὁ ἕτερος
 Ac, v.l. Pa, (om ἂν) v.l Pc 18 νυνὶ Phy</note>
-
-<pb n="86"/>
+                  <pb n="86"/>
 οὐ διαιροῦμεν, ἀλλὰ τὰ κεφάλαια δείκνυμεν, καὶ ἔστι
 φανερά. ἀκολούθως δὲ τούτῳ τῷ κεφαλαίῳ καὶ ὁ ὅρος
 καὶ ὁ συλλογισμὸς ἰσάζει. — Ἡ μέντοι ἑτέρα διάνοια,
@@ -2275,8 +2335,9 @@ Ac, v.l. Pa, (om ἂν) v.l Pc 18 νυνὶ Phy</note>
 ἢ ὅ τι ἂν εὑρίσκωσιν ἀμφότεροι. Πολλάκις δὲ διεμαρτυράμην, <lb n="15"/>
 ὡς οὐ διαιρῶν λέγω νῦν, ὅσον δὲ πρὸς ἔνδειξιν
 τῶν κεφαλαίων ταῦτα ἐκτίθεμαι.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5"><p>Ἡ δὲ ἀντίθεσις διπλῆ παρʼ ἀμφοῖν, οἷον ῾ ἀλλὰ ἀποκήρυκτος
+            </div>
+            <div n="5" type="paragraph">
+               <p>Ἡ δὲ ἀντίθεσις διπλῆ παρʼ ἀμφοῖν, οἷον ῾ ἀλλὰ ἀποκήρυκτος
 εἶʼ, καὶ καταδρομὴ ἐνταῦθα τοπική· ὃ δὲ
 ῾ἀλλʼ ἐπέμεινα τῇ νηίʼ, καὶ ἔστιν οἷον ἀντιστατικόν τι <lb n="20"/>
 ἐνταῦθα καὶ ἔκφρασις τῶν περὶ τὸν χειμῶνα. — Ἡ
@@ -2292,8 +2353,7 @@ Marc. IV 825, 4 W.) 15 l. 1. p. 81, 14. 67, 19 16 ὅσον δὲ P Phy;
 χειμῶνος Py 21 παρὰ Ba 23 οὐ P; κατʼ οὐδὲν μᾶλλον Ac,
 v. I.Pc, (κατʼ om.) Vc Ba Phy, cf. schol. P (W VII 651, 24), Marc.
 IV 827, 24 | ἂν om. Ph, Marc. | νηὸς Phy, Marc.</note>
-
-<pb n="87"/>
+                  <pb n="87"/>
 εἴην· οὐ γὰρ νῦν καιρὸς ταῦτα κατηγορεῖνʼ, ὃ δὲ ῾ ἐφʼ
 ἑτέροις ἔδει ἀνδρίζεσθαι καὶ μὴ ἐπὶ τούτοιςʹ. — Τὸ
 <note type="marginal">171</note> πρός τι, πότερον φυλάξαι βέλτιον τῶν νόμων, εἰ ἐγχωροίη
@@ -2329,28 +2389,30 @@ IV 830, 2 W., Marc 830, 18; τοῦ κλύδωνος δὲ VPy | ἢ εἰ μὴ
 Pa, (δὲ om. ) Pc; ἢ, om. cet. , Ph; εἰ, om. cet. , Py: ὁ δὲ ὅτι
 Ac; ὅτι οὐδʼ εἰ μὴ Ba; [ὁ δὲ m. 2 supr.] ὅτι [II—III] εἰ μη|δὲ m.2
 supr.] Vc; ὁ δὲ εἰ μὴδὲ Vγ | πατρός ἐστιν V Py; πατρὸς εἴτε Ph</note>
-
-<pb n="88"/>
+                  <pb n="88"/>
 ἀλλʼ οὐδʼ ἑτέρου τινός᾿ . — θέσις δὲ καὶ τὰ ἑξῆς,
 εἰ ἐμπίπτοι, ἐξετασθήσεται ὡς ἐν ταῖς ἀντιθετικαῖς.</p>
-</div></div>
-
-<div type="textpart" subtype="section" n="11">
-<head>Περὶ συλλογισμοῦ.</head>
-<div type="textpart" subtype="paragraph" n="1"><p>Ὁ συλλογισμὸς διαιρεῖται προβολῇ πράγματος, τῷ
+            </div>
+         </div>
+         <div n="11" type="section">
+            <head>Περὶ συλλογισμοῦ.</head>
+            <div n="1" type="paragraph">
+               <p>Ὁ συλλογισμὸς διαιρεῖται προβολῇ πράγματος, τῷ
 ῥητῷ, τῷ συλλογισμιῷ, ὅρῳ, γνώμῃ νομοθέτου, πηλικότητι, <lb n="5"/>
 εἶτα ὅρῳ βιαίῳ, τῷ πρός τι, ἀντιθέσει ἔστιν ὅτε,
 ἥτις εἰ ἐμπέσοι, εὑρεθήσεται καὶ μετάληψις, ᾗ ἕπεται
 πάντως ἡ ἀντίληψις, εἶτα ποιότητι καὶ γνώμῃ· καὶ
 ὅλως πλὴν τῆς ἐναλλαγῆς τῶν πρώτων κεφαλαίων ὁ
-συλλογισμὸς κατὰ τὸν ὅρον διαιρεῖται.</p><lb n="10"/>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p>Ἐπὶ δὲ τοῦ παραδείγματος ἔσται φανερώτερον, οἷον
+συλλογισμὸς κατὰ τὸν ὅρον διαιρεῖται.</p>
+               <lb n="10"/>
+            </div>
+            <div n="2" type="paragraph">
+               <p>Ἐπὶ δὲ τοῦ παραδείγματος ἔσται φανερώτερον, οἷον
 ὀνομαστὶ κωμῳδεῖν ὁ νόμος ἐκώλυσεν, αὐτοπροσώπους
 εἰσάγων τις τοὺς κωμῳδουμένους ὑπάγεται τῷ νόμῳ
 ὡς ὀνομαστὶ κωμῳδῶν. — προβολὴ τοῦ πράγματος <note type="marginal">172</note>
 ῾παρὰ τὸν νόμον κωμῳδεῖς τοὺς πολίταςʼ. — Τὸ ῥητὸν <lb n="15"/>
-<note type="marginal">61</note> ῾ καὶ μὴν οὐκ ὠνόμασα οὐδένα· τοῦτο γάρ ἐστι τὸ κωλυόμενονʼ.
+                  <note type="marginal">61</note> ῾ καὶ μὴν οὐκ ὠνόμασα οὐδένα· τοῦτο γάρ ἐστι τὸ κωλυόμενονʼ.
 — συλλογισμός, εἰ μηδὲν διαφέρει τοῦτο
 ἐκείνου. — Ὁ ὅρος, ὅτι πλεῖστον διαφέρει. — Ἡ
 γνώμη τοῦ νομοθέτου κοινή, τί βουλόμενος ἐκώλυσε
@@ -2367,8 +2429,7 @@ suppl. m.1Ph; om. Pa (m. po. suppl.) 8 ἡ om. Py; καὶ vulg.
 om. V 16. 17 κεκωλυμένον Ph 17 εἰ, ὅτι m. po. supr., Vc;
 ὅτι Py 18 ὅτι om. Vγ; εἰ Ph, Nilus, (ὅτι supr.) Pa | τὸ πλεῖστον
 Ba 19. 20 τοῦτο ἐκώλυσεν V Phy 20 ὁ νομοθέτης om. Ph</note>
-
-<pb n="89"/>
+                  <pb n="89"/>
 τῶν πολιτῶν, ἐφʼ ὅτῳ ἂν οὗτοι ἐθέλωσιν ἐγκλήματιʼ,
 ὁ δʼ αὖ φεύγων ῾ οὐ διὰ τοῦτοʼ ἔρεῖ, ῾ ἀλλʼ ἐπιστρέφεσθαι
 μὲν αὐτοὺς διὰ τῆς κωμῳδίας ἐβούλετο,
@@ -2382,8 +2443,9 @@ Ba 19. 20 τοῦτο ἐκώλυσεν V Phy 20 ὁ νομοθέτης om. Ph</
 ὅτι μέγα τὸ γινόμενον. — Ὁ δὲ βίαιος ὅρος, εἰ καὶ
 ὀνομαστὶ κωμιῳδεῖν τοῦτό ἐστι. — Τὸ πρός τι καὶ τὰ
 ἐξῆς πάντα καθάπερ καὶ ἐν τῷ ὅρῳ ἐξετασθήσεται.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p>Πλείονα δὲ εἴδη ἔστι συλλογισμῶν, ἃ δὴ πάντα ὁμοίως
+            </div>
+            <div n="3" type="paragraph">
+               <p>Πλείονα δὲ εἴδη ἔστι συλλογισμῶν, ἃ δὴ πάντα ὁμοίως
 <lb n="15"/> διαιρήσεις· ὅμωωος μέντοι ἐκκείσθω αὐτῶν παραδείγματα.
 γίνονται γὰρ ἤτοι ἀπὸ τοῦ ἴσου ὡς ὁ προειρημένος,
 ἢ ἀπὸ τοῦ μείζονος, οἷον ἐξῆν ἀποκτιννύναι
@@ -2404,17 +2466,18 @@ om. VcBa 17 ἐξὸν Ac 17.18 ἀποκτεῖναι, ϊννύ m.2 supr., Vc;
 τινὰ om. Vc Ba; ἀριστέα λιπόντα Ac 22 ἀπέκτεινεν ὁ |στρατη-
 γὸς m.2; ex ἀριστεὺς?] Vc; ὁ ἀριστεὺς ἀπέκτεινε Py | φόνου
 φεύγει Ac 28 ἀντεγκλήματι PPy, W IV 842, 17; ἐγκλήματι</note>
-
-<pb n="90"/>
+                  <pb n="90"/>
 χρήσεται. ἢ ἀπὸ τοῦ ἐλάττονος κατὰ τὸ ἐξ αὐτοῦ
 ἀποβαῖνον, οἷον ἔξεστι στίζειν τοὺς μοιχούς, στίζων
 τις ἀπέκτεινε καὶ φόνου φεύγει· ῾ ὁ γὰρ τὸ πρότερονʼ, <note type="marginal">173</note>
 φησί, δοὺς καὶ τὸ ἐξ αὐτοῦ ἀποβαῖνον ἔδωκεν᾿ .</p>
-</div></div>
-
-<div type="textpart" subtype="section" n="12">
-<head>Περὶ ἀμφιβολίας.</head> <lb n="5"/>
-<div type="textpart" subtype="paragraph" n="1"><p>Ἡ ἀμφιβολία διαιρεῖται προβολῇ ῥητοῦ, ἑτέρᾳ τοῦ
+            </div>
+         </div>
+         <div n="12" type="section">
+            <head>Περὶ ἀμφιβολίας.</head>
+            <lb n="5"/>
+            <div n="1" type="paragraph">
+               <p>Ἡ ἀμφιβολία διαιρεῖται προβολῇ ῥητοῦ, ἑτέρᾳ τοῦ
 αὐτοῦ ῥητοῦ προβολῇ κατὰ τὸ ἀμφίβολον, διανοίᾳ τοῦ
 νομοθέτου, τῷ περιέχοντι καὶ περιεχομένῳ, ἀντιθέσει,
 μεταλήψει, θέσει, ποιότητι καὶ γνώμῃ. — Εἰδέναι δὲ
@@ -2423,10 +2486,11 @@ om. VcBa 17 ἐξὸν Ac 17.18 ἀποκτεῖναι, ϊννύ m.2 supr., Vc;
 ὡσαύτως ὑπόψυχρον· μέρος δὲ εἰ γένοιτο ζητήματος,
 χρήσιμον τὸ περὶ τὴν διαίρεσιν αὐτῆς γίγνεται. ἐν δὲ
 τοῖς ἀπὸ χρησμῶν καὶ λογίων πλαττομένοις ζητήμασι
-πᾶσι τοῦθʼ ὅπερ ἐστὶν εὑρίσκεται.</p> <lb n="15"/>
-<note type="footnote">VPh, v.l.Pa | ἀλλὰ — προειρημένων suppl. m.po.Pc | τινα (pro
+πᾶσι τοῦθʼ ὅπερ ἐστὶν εὑρίσκεται.</p>
+               <lb n="15"/>
+               <note type="footnote">VPh, v.l.Pa | ἀλλὰ — προειρημένων suppl. m.po.Pc | τινα (pro
 μετὰ) Ph</note>
-<note type="footnote">2 οἷον ὅτι Py | ἐξ[ην m.2] [lI&#x7f;—III]στίζειν Vc | μαστίζειν τοὺς
+               <note type="footnote">2 οἷον ὅτι Py | ἐξ[ην m.2] [lI&#x7f;—III]στίζειν Vc | μαστίζειν τοὺς
 *μοιχούς· μαστίζων, mg. m.1 *αὐτομόλους, Ph 3 μοιχοὺς etiam
 post τις Py, cf. Syr. 2 p. 198, 18 | φεύγει φόνου VPhy 6 μὲν
 ante διαιρεῖται Ba, (er.) Vc, post διαιρεῖται AcPh γ 8 καὶ τῶι
@@ -2444,10 +2508,10 @@ Ac | τὴν om. Ac 12 εἰ Pc, (ὅτε m. 1 supr.) Pa; ὅτε VPγ Vγ sr;
 αὐτῆς om. Pγ 14 λόγων γιγνωμένοις Ph 15 [π]ᾶσιν τούτοις
 ἑυρίσκεται Ph | ἐστιν m.1 supr. Pa | τοῦτο παρευρίσκεται v.l. Max.
 Plan. IV 846, 10 W.; γρʹ παρευρίσκεται m.2Ba</note>
-
-<pb n="91"/>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p>Πρὸς οὖν ἐπίσκεψιν τῶν κεφαλαίων ἔστω ζήτημα <note type="marginal">63</note>
+               <pb n="91"/>
+            </div>
+            <div n="2" type="paragraph">
+               <p>Πρὸς οὖν ἐπίσκεψιν τῶν κεφαλαίων ἔστω ζήτημα <note type="marginal">63</note>
 τόδε· ἑταίρα χρυσία εἰ φοροίη, δημοσια ἔστω, πεφώραται
 φοροῦσά τις ἑταίρα χρυσία καὶ δημοσίαν τίς φησιν
 αὐτὴν εἶναι, ἣ δὲ οὐκ αὐτὴν εἶναι δημοσίαν φησί, τὰ
@@ -2463,7 +2527,7 @@ Plan. IV 846, 10 W.; γρʹ παρευρίσκεται m.2Ba</note>
 καὶ τὰ χρυσία ἔσται δημόσια, τῶν δὲ χρυσίων μόνων
 <lb n="15"/> γενομένων δημοσίων ἡ ἑταίρα ἀφεῖται. — Ἡ ἀντίθεσις
 <note type="footnote">90, 5 —92, 11: folia exciderunt Py</note>
-<note type="footnote">2 cf. 41, 16 2 sq. χρύσεια Ph | δημόσια φησὶν εἶναι Ph 3 τις
+                  <note type="footnote">2 cf. 41, 16 2 sq. χρύσεια Ph | δημόσια φησὶν εἶναι Ph 3 τις
 om Vγ 3. 4 τίς φησιν αὐτὴν Pa Vc; τις αὐτήν φησιν BaPh,
 (τις om.) Pc; φησί τις αὐτὴν Ac 4 εἶναι δημοσίαν φησὶ P
 φησιν εἶναι δημοσίαν VcAcPh; φησι δημοσίαν εἶναι Ba 5 post
@@ -2480,12 +2544,11 @@ m.2?] ἀδικημάτων, mg. κατὰ λόγον m. 2, Vc; ἐπὶ τῶν
 Vc 12. 13 τῶι περιέχοντι καὶ περιεχομένωι | καὶ περιεχόμενον
 om. Ph 14 δημόσια ἔσται VPh 15 δημοσίων om. Ph | ἀφεῖ-
 ται Pc, (ίε supr) Pa; ἀφίεται VPh</note>
-
-<pb n="92"/>
+                  <pb n="92"/>
 εὐθύς ἕπεται· ἔστι γὰρ οἷον ἀντεγκληματική, κατὰ ἑταίρας
 λόγον περαίνοντος τοπικῶς τοῦ κατηγόρου. — Ἧι
 πάλιν ἕπεται ἡ μετάληψις, οἷον ῾ εἰ καὶ ἑταίρα, ἀλλʼ <note type="marginal">174</note>
-<note type="marginal">64</note> ἰδίαν ἔχουσά γε τῆς προαιρέσεως ταύτης ἐπιτιμίαν τὸ
+                  <note type="marginal">64</note> ἰδίαν ἔχουσά γε τῆς προαιρέσεως ταύτης ἐπιτιμίαν τὸ
 μὴ ὁμοίαν εἶναι ταῖς ἐλευθέραις μηδὲ τῶν αὐτῶν ἀξιοῦσθαιʼ, <lb n="5"/>
 καὶ ἅμα ἐλεεινολογήσεται δηλαδὴ πενίαν προβαλλόμενος
 ἤ τι τοιοῦτον ὁ λέγων ὑπὲρ αὐτῆς. — Ἡ
@@ -2493,14 +2556,14 @@ om. Ph 14 δημόσια ἔσται VPh 15 δημοσίων om. Ph | ἀφεῖ
 δὲ ἐν τούτῳ τῷ ζητήματι καὶ πλείονά γε τὴν ἐξέτασιν
 τῆς γνώμης εἶναι, εἰ καταφρονήσασα ἢ ἄλλως ἀγνοήσασα <lb n="10"/>
 τὸν νόμον ἐφόρεσε τὰ χρυσία.</p>
-<note type="footnote">1 εὐθὺς ἕπεται· ἔστι γὰρ οἷον ἀντεγκληματικὴ Ph, (om. ἔστι
+               <note type="footnote">1 εὐθὺς ἕπεται· ἔστι γὰρ οἷον ἀντεγκληματικὴ Ph, (om. ἔστι
 γὰρ οἷον) Ac Vγ; ἀντεγκληματικὴ εὐθὺς ἕπεται (om. cet.) P; εὐθὺς
 ἕπεται (om. 1 ἔστι — l. 3 ἕπεται) VcBa | κατὰ — l. 3 ἡ sic P,
 (ἐυθὺς pro l. 3 πάλιν) Ph, (καὶ εὐθὺς pro l. 3 πάλιν) mg. m.2
 Vc; καὶ τόπος κοινὸς κατὰ τῆς ἑταίρας· ἐν πάσηι γὰρ ἀντεγκλη-
 ματικῆι ἀντίθεσις τοπικὴ γίνεται· ἡ Ac, v.l.Pa, (τῆς om.) v l.Pc,
 (ἀντιθέσει καταδρομὴ τοπικὴ γίνεται) m.po.VcBa; cf. 73, 4. 86,19</note>
-<note type="footnote">2 add. VcBa, Nilus (schol. P W VII 689, 16: ἕπεται ἀναγκαίως
+               <note type="footnote">2 add. VcBa, Nilus (schol. P W VII 689, 16: ἕπεται ἀναγκαίως
 ἡ μετάληψις) 4 ἰδία⌊ι⌉ Ph | ἔχουσάν VcBa; ἔχουσίν Ph | ἐπι-
 |τιμί, m. 2]αν VcBa | τὸ Pc; supr Pa; om. VPh 5 ὁμοίαν
 Pa; ὅμοιαι Ph | ἐλευθερίαις P, cr.m.po. 6 ἅμα P; ἅμα γε
@@ -2508,8 +2571,8 @@ Ph; ἄλλα δὲ V, Nilus 7 τοι (pro τι) Ph 8 ποιότης δὲ
 Pc 10 ἢ (pro εἰ) Ph | εἰ (pro ἢ) Pc 11 subscr. τέλος τῶν
 στάσεων P; ἑρμογένους τέχνη ῥητορική VcBa; ἔρρωσο ῥητὴρ τῆι
 μελιρρύτωι τέχνη Ph; om Ac</note>
-</div></div>
-	 </div>
-</body>
-</text>
+            </div>
+         </div>
+      </body>
+   </text>
 </TEI>

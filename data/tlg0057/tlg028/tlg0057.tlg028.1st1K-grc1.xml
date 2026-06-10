@@ -1,100 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-	<teiHeader xml:lang="eng">
-		<fileDesc>
-			<titleStmt>
-				<title xml:lang="lat">De propriorum animi cuiuslibet affectuum dignotione et curatione</title>
-				<author>Galen</author>
-				<editor>Karl Gottlob Kühn</editor>
-				<funder>Andrew W. Mellon Foundation</funder>
-				<respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-				<authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De propriorum animi cuiuslibet affectuum dignotione et curatione</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
 					Foundation</authority>
-				<publisher>University of Leipzig</publisher>
-				<pubPlace>Germany</pubPlace>
-				<idno type="filename">tlg0057.tlg028.1st1K-grc1.xml</idno>
-				<availability>
-					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg028.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
 						Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-				</availability>
-				<date>2016</date>
-			</publicationStmt>
-			<sourceDesc>
-				<biblStruct>
-					<monogr>
-						<title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-						<author>Galen</author>
-						<editor>Karl Gottlob Kühn</editor>
-						<imprint>
-							<publisher>Knobloch</publisher>
-							<pubPlace>Leipzig</pubPlace>
-							<biblScope unit="vol">5</biblScope>
-							<biblScope unit="pp" from="1" to="57">1-57</biblScope>
-							<date>1823</date>
-						</imprint>
-					</monogr>
-					<ref target="https://hdl.handle.net/2027/chi.15862725?urlappend=%3Bseq=11%3Bownerid=13510798903412083-17">HathiTrust</ref>
-				</biblStruct>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg028.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Leipzig</pubPlace>
+                     <biblScope unit="vol">5</biblScope>
+                     <biblScope unit="pp" from="1" to="57">1-57</biblScope>
+                     <date>1823</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/chi.15862725?urlappend=%3Bseq=11%3Bownerid=13510798903412083-17">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
 				Architecture.</p>
-			  <refsDecl n="CTS">
-				<cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-			</refsDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="grc">Greek</language>
-				<language ident="eng">English</language>
-				<language ident="lat">Latin</language>
-			</langUsage>
-		</profileDesc>
-	</teiHeader>
-	<text>
-		<body>
-
-			<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg028.1st1K-grc1">
-				<pb n="1"/>
-
-				<div type="textpart" subtype="chapter" n="1">
-					<head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΔΙΑΓΝΩΣΕΩΣ ΚΑΙ <lb/>ΘΕΡΑΠΕΙΑΣ ΤΩΝ ΕΝ ΤΗι ΕΚΑΣΤΟΥ <lb/>ΨΥΧΗι ΙΔΙΩΝ
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="eng">English</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg028.1st1K-grc1">
+         <pb n="1"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΔΙΑΓΝΩΣΕΩΣ ΚΑΙ <lb/>ΘΕΡΑΠΕΙΑΣ ΤΩΝ ΕΝ ΤΗι ΕΚΑΣΤΟΥ <lb/>ΨΥΧΗι ΙΔΙΩΝ
 						ΠΑΘΩΝ.</head>
-					<p>Ἐπειδὴ καὶ δι’ ὑπομνημάτων ἔχειν βούλει, <lb/>ἃ πρὸς τὴν ἐρώτησιν ἀπεκρινάμην, ἣν
+            <p>Ἐπειδὴ καὶ δι’ ὑπομνημάτων ἔχειν βούλει, <lb/>ἃ πρὸς τὴν ἐρώτησιν ἀπεκρινάμην, ἣν
 						ἐνέστησα πρὸς ἡμᾶς <lb/>ὑπὲρ τοῦ γραφέντος Ἀντωνίῳ τῷ Ἐπικουρείῳ βιβλίου περὶ <lb/>τῆς
 						ἐπὶ τοῖς ἰδίοις πάθεσιν ἐφεδρείας, ἤδη πράξω τοῦτο, <lb/>καὶ τήνδε τίθεμαι τὴν ἀρχήν.
 						ἄριστον μὲν ἦν αὐτὸν τὸν <lb/>Ἀντώνιον εἰρηκέναι σαφῶς, τί ποτε βούλεται σημαίνειν ἐκ
@@ -120,9 +128,9 @@
 						αὐτὰ, ὥσπερ κᾀγώ. <lb/>τὰ δ’ οὖν κεφάλαια διὰ τοῦ πρώτου λόγου τοῦδε διὰ συντόμου,
 						<lb/>ἐπειδὴ κελεύεις, διήξω σοι πάντα, καθ’ ἣν ἤδη <lb/>τάξιν ἤκουσας, ὅτ’ ἐπύθου περὶ
 						τοῦ γεγραμμένου τῷ Ἀντωνίῳ <lb/>βιβλίου. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="2">
-					<p>Ὅτι μὲν εἰκός ἐστιν ἁμαρτάνειν, εἰ καὶ μὴ <lb/>δοκοίημεν αὐτοὶ σφάλλεσθαί τι, πάρεστιν
+         </div>
+         <div n="2" type="chapter">
+            <p>Ὅτι μὲν εἰκός ἐστιν ἁμαρτάνειν, εἰ καὶ μὴ <lb/>δοκοίημεν αὐτοὶ σφάλλεσθαί τι, πάρεστιν
 						ἐκ τῶνδε τῶν λόγων <lb/>λογίσασθαι. πάντας ἀνθρώπους ὁρῶμεν ἑαυτοὺς ὑπολαμβάνοντας
 						<lb/>ἤτοι γε ἀναμαρτήτους εἶναι παντάπασιν ἢ <lb/>ὀλίγα καὶ σμικρὰ διὰ λόγου σφάλλεσθαι,
 						καὶ τοῦτο <pb n="4"/> μάλιστα πεπονθότας, οὓς ἄλλοι πλεῖστα νομίζουσιν ἁμαρτάνειν.
@@ -165,9 +173,9 @@
 						ὠφελήσεται πλεονεκτικῶς, διπλῆν ἀνθ’ <lb/>ἁπλῆς εὑρὼν ὁδὸν σωτηρίας· εἰ δὲ μὴ, ἀλλ’ αὐτῇ
 						γε τῇ <lb/>ἡμετέρᾳ διατελεῖ χρώμενος, ἄχρι περ ἂν ἑτέραν εὕρῃ βελτίονα. <lb/>τίς οὖν ἡ
 						ἐμὴ, λέγειν ἂν ἤδη καιρὸς, ἀρχὴν τῷ <lb/>λόγῳ τήνδε ποιησάμενον. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="3">
-					<p>Ἐπειδὴ τὰ μὲν ἁμαρτήματα διὰ τὴν ψευδῆ <lb/>δόξαν γίγνονται, τὰ δὲ πάθη διὰ τὴν ἄλογον
+         </div>
+         <div n="3" type="chapter">
+            <p>Ἐπειδὴ τὰ μὲν ἁμαρτήματα διὰ τὴν ψευδῆ <lb/>δόξαν γίγνονται, τὰ δὲ πάθη διὰ τὴν ἄλογον
 						ὁρμὴν, ἔδοξέ <lb/>μοι πρότερον αὐτὸν ἐλευθερῶσαι τῶν παθῶν· εἰκὸς γάρ <lb/>πως καὶ διὰ
 						ταῦτα ψεῦδος ἡμᾶς δοξάζειν. ἔστι δὲ πάθη <lb/>ψυχῆς, ἅπερ ἅπαντες γιγνώσκουσι, θυμὸς,
 						καὶ ὀργὴ, καὶ <lb/>φόβος, καὶ λύπη, καὶ φθόνος, καὶ ἐπιθυμία σφοδρά. <lb/>κατὰ
@@ -188,7 +196,7 @@
 						πάντα. τὸν δὲ μὴ προσαγορεύοντα, μήτε <lb/>παραπέμποντα, μήτε συνδειπνοῦντα καὶ τοῖς
 						πολὺ δυναμένοις <lb/>ἢ πλουτοῦσι, κεκολασμένῃ τῇ διαίτῃ χρώμενον, ἐλπίσας
 						<lb/>ἀληθεύειν, εἰς βαθυτέραν ἀφικέσθαι πειράθητι γνῶσιν, <lb/>
-						<milestone unit="ed2page" n="522"/>ὁποῖός τέ τίς ἐστιν, (ἐν συνουσίαις δ’ αὕτη
+               <milestone unit="ed2page" n="522"/>ὁποῖός τέ τίς ἐστιν, (ἐν συνουσίαις δ’ αὕτη
 						πολυχρονιωτέραις <lb/>γίγνεται,) κᾂν εὕρῃς τοιοῦτον, ἰδίᾳ ποτὲ μόνῳ <lb/>διαλέχθητι,
 						παρακαλέσας, ὅ τι ἄν σοι βλέπῃ τῶν εἰρημένων <lb/>παθῶν, εὐθέως δηλοῦν, ὡς χάριν ἕξοντι
 						τούτου μεγίστην, <lb/>ἡγησομένῳ τε σωτῆρα μᾶλλον, ἢ εἰ νοσοῦντα τὸ σῶμα διέσωσε.
@@ -229,7 +237,7 @@
 						αὐτὸ, προῃρημένος ὄντως εἷς γενέσθαι καλὸς <lb/>κᾀγαθὸς, ἔσῃ τοιοῦτος. ἐν μὲν δὴ τῷ
 						πρώτῳ χρόνῳ μηδ’ <lb/>ἂν καὶ σκεπτόμενος ἀκριβῶς εὕροις ἐπηρεαστικῶς τε καὶ <lb/>ψευδῶς
 						σε κρίνειν, καὶ ἀπείρως αὐτὸν πείθειν, ὡς οὐδὲν <lb/>
-						<milestone unit="ed2page" n="523"/>ἥμαρτες. ἀλλά σοι ταὐτὸ τοῦτο φιλοσόφημα τὸ καρτερεῖν
+               <milestone unit="ed2page" n="523"/>ἥμαρτες. ἀλλά σοι ταὐτὸ τοῦτο φιλοσόφημα τὸ καρτερεῖν
 						<lb/>ἐπηρεαζόμενον. ὕστερον δέ ποτε κατεσταλμένος ἱκανῶς, <lb/>σαυτοῦ παθῶν αἰσθόμενος,
 						ἐπιχειρήσεις ἀπολογεῖσθαι. <lb/>τοῖς ἐπηρεάζουσι μηδέποτε πικρῶς, μηδ’ ἐλεγκτικῶς, μηδὲ
 						<lb/>τὸ φιλονείκως ἐμφαῖνον, μηδὲ τὸ καταβάλλειν ἐθέλειν <lb/>ἐκεῖνον, ἀλλ’ ὠφελείας
@@ -253,9 +261,9 @@
 						<lb/>ἡνίκα μάλιστα ἐγώ σοι φανοῦμαι λέγων ἀληθῆ, μηδένα <lb/>φάσκων ἔξω παθῶν ἢ
 						ἁμαρτημάτων εἶναι, μηδ’ ἂν εὐφυέστατος <lb/>ᾖ, μηδ’ ἂν ἐν ἔθνεσι τοῖς καλῶς
 						τεθραμμένοις, <lb/>ἀλλὰ πάντως τινὰ σφάλλεσθαι, καὶ <milestone unit="ed1page" n="354"/>μᾶλλον ὅταν ἔτι <lb/>νέος ᾖ. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="4">
-					<p>Δεῖται γὰρ ἀσκήσεως ἕκαστος ἡμῶν σχεδὸν <lb/>ὅλου τοῦ βίου πρὸς τὸ γενέσθαι τέλειος
+         </div>
+         <div n="4" type="chapter">
+            <p>Δεῖται γὰρ ἀσκήσεως ἕκαστος ἡμῶν σχεδὸν <lb/>ὅλου τοῦ βίου πρὸς τὸ γενέσθαι τέλειος
 						ἀνήρ. οὐ μὴν <lb/>ἀφίστασθαι χρὴ τοῦ βελτίω ποιεῖν ἑαυτὸν, εἰ καὶ πεντηκοντούτης
 						<lb/>τις ὢν αἴσθοιτο τὴν ψυχὴν λελωβημένος οὐκ <lb/>ἀνίατον οὐδ’ ἀνεπανόρθωτον λώβην.
 						οὐδὲ γὰρ εἰ τὸ σῶμα <lb/>κακῶς διέκειτο πεντηκοντούτης ὢν, ἔκδοτον ἂν ἔδωκε τῇ καχεξίᾳ,
@@ -337,11 +345,11 @@
 						εἰς βίον σεμνότερον. <lb/>αἰσχρὸν γὰρ, ἵνα μέν τις ἰατρὸς, ἢ γραμματικὸς, <lb/>ἢ ῥήτωρ,
 						ἢ γεωμέτρης γένηται, πολλοῖς ἔτεσιν ἐφεξῆς κάμνειν, <lb/>ὡς δ’ ἄνθρωπος ἀγαθὸς, μηδέποθ’
 						ἑλέσθαι τῷ <lb/>μήκει τοῦ χρόνου κάμνειν. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="5">
-					<p>Τίς οὖν ἐστιν ἡ τῆς ἀσκήσεως ἀρχὴ, πάλιν <lb/>ἀναλάβωμεν· ὑπὲρ γὰρ τῶν ἀναγκαιοτάτων
+         </div>
+         <div n="5" type="chapter">
+            <p>Τίς οὖν ἐστιν ἡ τῆς ἀσκήσεως ἀρχὴ, πάλιν <lb/>ἀναλάβωμεν· ὑπὲρ γὰρ τῶν ἀναγκαιοτάτων
 						οὐδὲν χεῖρόν <lb/>ἐστι καὶ δὶς καὶ τρὶς λέγειν τὰ αὐτά. τὸ μηδέποτε <lb/>
-						<milestone unit="ed1page" n="355"/>μηδένα τῶν οἰκετῶν ἁμαρτάνοντα διὰ τῶν ἑαυτοῦ χειρῶν
+               <milestone unit="ed1page" n="355"/>μηδένα τῶν οἰκετῶν ἁμαρτάνοντα διὰ τῶν ἑαυτοῦ χειρῶν
 						<lb/>νουθετεῖν, ἀλλ’ ὥσπερ ἐγώ ποτε, πυθόμενος αἱρεῖσθαι <lb/>Πλάτωνα πρός τινα τῶν
 						ὑπηρετῶν ἁμαρτόντα, διὰ παντὸς <lb/>οὕτως ἔπραξα, καλὸν ἡγησάμενος εἶναι τὸ ἔργον, οὕτω
 						καὶ <lb/>σὺ παράγγειλον σαυτῷ, μήτ’ αὐτὸς διὰ τῶν σαυτοῦ χειρῶν <lb/>οἰκέτην πλῆξαι μήτ’
@@ -408,9 +416,9 @@
 						ἰδίαν οἰκίαν πράττεις. ἀλλ’ ἐκεῖνοι μὲν <lb/>αἰδούμενοι τοὺς ἄλλους ἁμαρτόντες τι
 						φωραθῆναι μόνους <lb/>ἑαυτοὺς οὐκ αἰδοῦνται, σὺ δὲ σαυτὸν αἰδοῦ μάλιστα <lb/>πειθόμενος
 						τῷ φάντι· Πάντων δὲ μάλιστ’ αἰσχύνεο <lb/>σαυτόν. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="6">
-					<p>Οὕτως γὰρ πράττων δυνήσῃ ποτὲ τὴν τοῦ <lb/>θυμοειδοῦς ἔν σοι δύναμιν ἄλογον ὥσπερ τι
+         </div>
+         <div n="6" type="chapter">
+            <p>Οὕτως γὰρ πράττων δυνήσῃ ποτὲ τὴν τοῦ <lb/>θυμοειδοῦς ἔν σοι δύναμιν ἄλογον ὥσπερ τι
 						θηρίον ἡμερῶσαί <pb n="27"/> τε καὶ πρᾳῧναι. ἢ δεινὸν ἂν εἴη, τοὺς μὲν ἱππικοὺς
 						<lb/>ἄνδρας, ἀχρείους τοὺς ἵππους παραλαβόντας, ἐν ὀλίγῳ <lb/>χρόνῳ χειροηθεῖς
 						ἐργάζεσθαι, σὲ δ’, οὐκ ἔξωθέν τι λαβόντα <lb/>ζῶον, ἀλλ’ ἐν τῇ ψυχῇ δύναμιν ἄλογον, ᾗ
@@ -475,7 +483,7 @@
 						<lb/>προσαράμενοι. τοῦ χρόνου δὲ προϊόντος, οὐκ ἔτι οὐδὲ πρὸς <lb/>τοὺς δειπνοῦντας
 						ἀποβλέπειν ἀξιώσαιμ’ ἄν σε· μέγα γὰρ οὐδὲν <pb n="32"/> ἐκείνων ἐσθίειν τε καὶ πίνειν
 						ἐγκρατέστερον. εἰ δέ περ οὕτως <lb/>
-						<milestone unit="ed2page" n="529"/>σαυτὸν ἔγνωκας τιμᾷν, ἐπισκέπτου μᾶλλόν ποτε
+               <milestone unit="ed2page" n="529"/>σαυτὸν ἔγνωκας τιμᾷν, ἐπισκέπτου μᾶλλόν ποτε
 						<lb/>ἐγκρατῶς διῃτῆσθαι χθὲς ἢ τήμερον. ἐὰν γὰρ τοῦτο ποιῇς, <lb/>αἰσθήσῃ καθ’ ἑκάστην
 						ἡμέραν εὐκολώτερον ὧν εἶπον ἀπεχόμενος, <lb/>αἰσθήσῃ τε μεγάλα εὐφρανθησόμενος τὴν
 						ψυχὴν, <lb/>ἐάν γε σωφροσύνης ὄντως ἐραστὴς ὑπάρχῃς· οὕτω γάρ <lb/>τις ἐρασθεὶς χαίρει
@@ -513,11 +521,10 @@
 						εἴωθα λέγειν ἑκάστοτε, <lb/>καὶ νῦν ἐρῶ· καθ’ ἕτερον μὲν τρόπον ἁπάντων ἐστὶ
 						<lb/>δυσκολώτατον ἑαυτὸν γνῶναι, καθ’ ἕτερον δὲ ῥᾷστον. ἐὰν <lb/>μὲν γὰρ ἐντὸς θέλῃ τις
 							<milestone unit="ed1page" n="357"/>αὐτὸς χαλεπώτατόν ἐστιν. </p>
-				</div>
-				<pb n="35"/>
-
-				<div type="textpart" subtype="chapter" n="7">
-					<p>Ἐγὼ μὲν οὖν ἅπαντα ταῦτ’ εἰρημένα καὶ <lb/>τὰ μέλλοντα λεχθήσεσθαι τοῖς βουληθεῖσιν
+         </div>
+         <pb n="35"/>
+         <div n="7" type="chapter">
+            <p>Ἐγὼ μὲν οὖν ἅπαντα ταῦτ’ εἰρημένα καὶ <lb/>τὰ μέλλοντα λεχθήσεσθαι τοῖς βουληθεῖσιν
 						ὑποτίθεμαι. <lb/>τάχα μὲν <milestone unit="ed2page" n="530"/>οὖν οὔσης καὶ ἄλλης τινὸς
 						ὁδοῦ πρὸς τὸ <lb/>καλὸν κᾀγαθὸν γενέσθαι, μὴ γινώσκων δ’ εὑρεῖν αὐτὴν, <lb/>ἐχρησάμην τε
 						δι’ ὅλου τοῦ βίου ταύτῃ, καὶ τοῖς ἄλλοις <lb/>ἀφθόνως δηλῶν παρεκάλουν ἀντιδιδόναι τε
@@ -560,7 +567,7 @@
 						ἐγένου δίκαιος, <lb/>οὕτω εὐπρεπῶς ἀποκρινάμενον ἐποίησεν· ἡ μὲν φύσις τὸ <lb/>μέγιστον,
 						ἔπειτα δὲ κᾀγὼ τὴν φύσιν προθύμως συνελάμβανον. <lb/>οὐ μόνον οὖν ἕτοιμοι τῶν νέων
 						φύσεις πρὸς τὸ <lb/>
-						<milestone unit="ed2page" n="531"/>λυπεῖσθαι ῥᾳδίως, ἀλλὰ καὶ πρὸς τὸ θυμοῦσθαι <lb/>καὶ
+               <milestone unit="ed2page" n="531"/>λυπεῖσθαι ῥᾳδίως, ἀλλὰ καὶ πρὸς τὸ θυμοῦσθαι <lb/>καὶ
 						λιχνεύειν, ὧν περ αὐτῶν ἄχρι δεῦρο τὸν πλεῖστον λόγον <lb/>ἐποιησάμην. ἔτι δὲ πρὸς τοῖς
 						εἰρημένοις ἐστιν ἰδεῖν ἔνια <lb/>μὲν ἀναίσχυντα τῶν παιδίων, ἔνια δὲ καὶ αἰδούμενα, καὶ
 						<lb/>τὰ μὲν μνημονικὰ, τὰ δὲ ἀμνήμονα, τινὰ δὲ ἐπιλήσμονα, <lb/>καὶ τὰ μὲν φιλόπονα περὶ
@@ -586,9 +593,9 @@
 						<lb/>σκορπίος οὐκ ἄχρι τοῦ δοκεῖν ἡμεροῦσθαι προέρχεται. ἐγὼ <lb/>τοίνυν ὅπως μὲν τὴν
 						φύσιν ἔχω, οὐκ ἔχω γνῶναι· τὸ γὰρ <lb/>ἑαυτὸν φάναι χαλεπόν ἐστι καὶ τοῖς τελείοις
 						ἀνδράσιν, μή <lb/>τοί γε δὴ τοῖς παισί. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="8">
-					<p>Εὐτύχησα δὲ μεγάλην εὐτυχίαν, ἀοργητότατον <lb/>καὶ δικαιότατον καὶ χρηστότατον καὶ
+         </div>
+         <div n="8" type="chapter">
+            <p>Εὐτύχησα δὲ μεγάλην εὐτυχίαν, ἀοργητότατον <lb/>καὶ δικαιότατον καὶ χρηστότατον καὶ
 						φιλανθρωπότατον <lb/>ἔχων πατέρα, μητέρα δὲ ὀργιλωτάτην, ὡς δάκνειν μὲν ﻿<pb n="41"/>
 						ἐνίοτε τὰς θεραπαίνας, ἀεὶ δὲ κεκραγέναι τε καὶ μάχεσθαι <lb/>τῷ πατρὶ μᾶλλον, ἢ
 						Ξανθίππη Σωκράτει. παράλληλά τε <lb/>ὁρῶντί μοι τὰ καλὰ τῶν τοῦ πατρὸς ἔργων τοῖς
@@ -640,14 +647,14 @@
 						κτημάτων, ὡς μὴ πεινᾷν, μὴ ῥιγοῦν, μὴ <lb/>διψᾷν· εἰ δὲ πλείω τις εἰς ταῦτα χρεία εἴη,
 						καὶ πρὸς τὰς <lb/>καλὰς πράξεις, ἔφη, χρηστέον αὐτῶν. ἐμοὶ τοίνυν ἄχρι δεῦρο
 						<lb/>τοσαύτη χρημάτων χρῆσίς ἐστιν, ὡς καὶ πρὸς τὰς τοιαύτας <pb n="45"/>
-						<milestone unit="ed2page" n="533"/>πράξεις ἐξαρκεῖν. οἶδα δὲ, ἔφη, καί σε διπλασίαν
+               <milestone unit="ed2page" n="533"/>πράξεις ἐξαρκεῖν. οἶδα δὲ, ἔφη, καί σε διπλασίαν
 						<lb/>τε ἐμοῦ κεκτημένον, ἐπιτίμιόν τε κατὰ τὴν πόλιν ἡμῶν οὕτως, <lb/>ὡς, τίς ἂν εἴη σοι
 						λύπης αἰτία, πλὴν ἀπληστίας, οὐχ <lb/>ὁρῶ. πρὸς ταύτην οὖν ἄσκησιν μόνην ἄνεισον ἐγὼ διὰ
 						<lb/>μνήμης ἔχων, καὶ μελετῶν ἀεὶ, καὶ σκοπούμενος, μέχρι περ <lb/>ἂν τούτῳ ἐπείσθην, ὡς
 						τὸ τὰ δὶς δύο τέσσαρα εἶναι. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="9">
-					<p>Θεασώμεθα γὰρ, εἶπεν, ἐπὶ σχολῆς, ὁποῖόν <lb/>τι πάθος ἐστὶν ἡ ἀπληστία· τὴν δ’ ἀρχὴν
+         </div>
+         <div n="9" type="chapter">
+            <p>Θεασώμεθα γὰρ, εἶπεν, ἐπὶ σχολῆς, ὁποῖόν <lb/>τι πάθος ἐστὶν ἡ ἀπληστία· τὴν δ’ ἀρχὴν
 						τῆς σκέψεως <lb/>ἡ περὶ τὰς τροφὰς ἀπληστία παρέξει. τὸ γοῦν ἐπέκεινα τοῦ <lb/>συμμέτρου
 						προσφέρεσθαι σίτου ἀπληστίαν ὀνομάζουσι· τὸ <lb/>σύμμετρον δ’ αὐτῶν κρίνουσι τῇ χρείᾳ
 						τῆς τροφῆς· χρεία <lb/>δ’ αὐτῆς ἐστι τὸ θρέψαι τὸ σῶμα. θρέψει δὲ πεφθεῖσα <lb/>καλῶς,
@@ -737,9 +744,9 @@
 						ὑπῆρξε, τοῦτο τοῖς ἀτυχήσασιν <lb/>ἐκείνοις ὕστερόν ποθ’ ὑπάρξει δι’ ἧς εἶπον ὁδοῦ.
 						<lb/>τίς γὰρ οὐκ ἂν ἐθελήσαι ἀλύπως εἶναι παρ’ ὅλον αὑτοῦ τὸν <lb/>βίον; ἢ τίς οὐκ ἂν
 						τοῦτον προέλοιτο τοῦ πλούτου κινητοῦ <lb/>τε καὶ μιαροῦ μᾶλλον; </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="10">
-					<p>Ἐγὼ μὲν οὖν καὶ ταῦτα καὶ ἄλλα πολλὰ <lb/>διῆλθον ἐκείνῳ τε καὶ ἄλλοις ὕστερον πολλοῖς,
+         </div>
+         <div n="10" type="chapter">
+            <p>Ἐγὼ μὲν οὖν καὶ ταῦτα καὶ ἄλλα πολλὰ <lb/>διῆλθον ἐκείνῳ τε καὶ ἄλλοις ὕστερον πολλοῖς,
 						καὶ πάντας <lb/>ἔπεισα τό γε παραυτίκα· τὴν δὲ ἐκ τῶν ὑστέρων ὠφέλειαν <lb/>ὀλιγίστους
 						εἶδον ὕστερον ἔχοντας. τηλικαῦτα γὰρ ἤδη τὰ <lb/>πάθη τῆς ψυχῆς ηὐξήκασιν οἱ πολλοὶ τῶν
 						ἀνθρώπων, ὡς <lb/>ἀνίατα ὑπάρχειν. εἰ δέ τις ἔτι μετρίοις δουλεύει πάθεσιν, <pb n="53"/>
@@ -795,8 +802,7 @@
 						<lb/>ἑαυτὸν φιλήσας καὶ βουληθεὶς γενέσθαι καλὸς κᾀγαθὸς, <pb n="57"/> οὐ φαίνεσθαι
 						μόνον. ἡ μὲν δὴ τῶν παθῶν τῆς ψυχῆς <lb/>γνῶσίς τε καὶ θεραπεία κατὰ τὴν εἰρημένην ὁδόν·
 						περὶ <lb/>δὲ τῶν ἁμαρτημάτων ἐφεξῆς εἰρήσεται. </p>
-				</div>
-			</div>
-		</body>
-	</text>
+         </div>
+      </body>
+   </text>
 </TEI>

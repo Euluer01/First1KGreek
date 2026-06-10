@@ -1,99 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-    
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">De inaequali intemperie</title>
-                <author>Galen</author>
-                <editor>Karl Gottlob Kühn</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De inaequali intemperie</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0057.tlg055.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg055.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-                        <author>Galen</author>
-                        <editor>Karl Gottlob Kühn</editor>
-                        <imprint>
-                            <publisher>Knobloch</publisher>
-                            <pubPlace>Leipzig</pubPlace>
-                            <biblScope unit="vol">7</biblScope>
-                            <biblScope unit="pp" from="733" to="752">733-752</biblScope>
-                            <date>1824</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/hvd.hxpp8n?urlappend=%3Bseq=745">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg055.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Leipzig</pubPlace>
+                     <biblScope unit="vol">7</biblScope>
+                     <biblScope unit="pp" from="733" to="752">733-752</biblScope>
+                     <date>1824</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/hvd.hxpp8n?urlappend=%3Bseq=745">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg055.1st1K-grc1">
-                <pb n="733"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΑΝΩΜΑΛΟΥ ΔΥΣΚΡΑΣΙΑΣ <lb/>ΒΙΒΛΙΟΝ</head>
-                    <p>Ἀνώμαλος δυσκρασία γίνεται μὲν καὶ καθ’ <lb/>ὅλον τοῦ ζώου τὸ σῶμα ἐνίοτε,
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg055.1st1K-grc1">
+         <pb n="733"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΑΝΩΜΑΛΟΥ ΔΥΣΚΡΑΣΙΑΣ <lb/>ΒΙΒΛΙΟΝ</head>
+            <p>Ἀνώμαλος δυσκρασία γίνεται μὲν καὶ καθ’ <lb/>ὅλον τοῦ ζώου τὸ σῶμα ἐνίοτε,
                         καθάπερ ἔν τε τοῖς ἀνὰ σάρκα <lb/>λεγομένοις ὑδέροις, καὶ τοῖς ἠπιάλοις
                         καλουμένοις πυρετοῖς, <lb/>καὶ σχεδὸν ἅπασι τοῖς ἄλλοις, πλὴν τῶν ἑκτικῶν
                         ὀνομαζομένων· <lb/>γίνεται δὲ καὶ καθ’ ἓν ὁτιοῦν μόριον, οἰδισκόμενον,
@@ -117,12 +124,11 @@
                         γένηται, ἀναμνῆσαι <lb/>χρὴ πάντων τοῦ σώματος μορίων, ἀρξάμενον ἀπὸ τῶν
                         μεγίστων, <lb/>ἃ δὴ καὶ τοῖς ἰδιώταις γινώσκεται. χεῖρας γάρ τοι καὶ πόδας
                         <lb/>καὶ γαστέρα καὶ θώρακα καὶ κεφαλὴν οὐκ ἔστιν ὃς ἀγνοεῖ. </p>
-                </div>
-                <pb n="735"/>
-
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>
-                        <milestone unit="ed2page" n="171"/>Τεμνέσθω δὲ πάλιν ὑφ’ ἡμῶν ἓν <lb/>ὁτιοῦν
+         </div>
+         <pb n="735"/>
+         <div n="2" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="171"/>Τεμνέσθω δὲ πάλιν ὑφ’ ἡμῶν ἓν <lb/>ὁτιοῦν
                         ἐξ αὐτῶν εἰς τὰ προσεχῆ καλούμενα μόρια, σκέλος μὲν <lb/>εἰ τύχῃ εἰς μηρὸν
                         καὶ κνήμην καὶ πόδα, χεὶρ δ’ αὖ εἰς βραχίονά <lb/>τε καὶ πῆχυν καὶ ἄκραν
                         χεῖρα· καὶ μὲν δὴ καὶ ἄκρας <lb/>χειρὸς οἰκεῖα μόρια καρπὸς καὶ μετακάρπιον
@@ -149,9 +155,9 @@
                         κοινόν· αἱ διαφοραὶ δὲ ταῖς τῶν <lb/>πεπονθότων σωμάτων ἕπονται φύσεσιν.
                         ἄλλως μὲν γὰρ ἡ <lb/>ἁπλῆ σὰρξ, ἄλλως δὲ ὁ σύμπας μῦς εἰς ἀνώμαλον
                         ἀφικνεῖται <lb/>κρᾶσιν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>Αὐτίκα γέ τοι ῥεύματος θερμοῦ κατασκήψαντος <lb/>εἰς μῦν, πρῶτον μὲν αἱ
+         </div>
+         <div n="3" type="chapter">
+            <p>Αὐτίκα γέ τοι ῥεύματος θερμοῦ κατασκήψαντος <lb/>εἰς μῦν, πρῶτον μὲν αἱ
                         μείζους ἀρτηρίαι καὶ φλέβες ἐμπίπλανταί <lb/>τε καὶ διατείνονται, μετὰ ταῦτα
                         δὲ αἱ μικρότεραι, <lb/>καὶ τοῦτο γίνεται μέχρι τῶν σμικροτάτων· ἐν αἷς ὅταν
                         ἰσχυρῶς <pb n="737"/> σφηνωθῇ καὶ μηκέτι στέγηται τὸ ῥεῦμα, τὸ μέν τι κατὰ
@@ -201,11 +207,10 @@
                         <lb/>διψῇν, ἐπιλειπούσης ἔνθα μὲν τῆς ὑγρᾶς οὐσίας, ἔνθα δὲ τῆς <lb/>ξηρᾶς·
                         ἐν δὲ τῷ τιτρώσκεσθαι καὶ διαβιβρώσκεσθαι καὶ τείνεσθαι <lb/>καὶ θλίβεσθαι
                         καὶ ἀνασπᾶσθαι, τῆς συνεχείας λυομένης. </p>
-                </div>
-                <pb n="740"/>
-
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>Εἰ μὲν οὖν ἥ τε θερμότης τοῦ αἵματος ἡ <lb/>κατὰ τὸ φλεγμαῖνον μόριον
+         </div>
+         <pb n="740"/>
+         <div n="4" type="chapter">
+            <p>Εἰ μὲν οὖν ἥ τε θερμότης τοῦ αἵματος ἡ <lb/>κατὰ τὸ φλεγμαῖνον μόριον
                         ἐπιεικὴς ὑπάρχει καὶ τὸ περιεχόμενον <lb/>αἷμα καθ’ ὅλον τὸ τοῦ ζώου σῶμα
                         μετρίως ἔχει κράσεως, <lb/>οὐ πάνυ τι ῥᾳδίως συνεκθερμαίνεται τῷ πεπονθότι·
                         <lb/>εἰ δ’ ἤτοι ζέοι σφοδρότερον, ἢ εἰ καὶ τὸ καθ’ ὅλον τὸ τοῦ <lb/>ζώου
@@ -237,9 +242,9 @@
                         πνευματῶδες, καὶ ταῦτα <lb/>πάντα μᾶλλόν τε καὶ ἧττον, ὥστ’ ἀνάγκη
                         πολυειδεῖς γίνεσθαι <pb n="742"/> τὰς ἀλλοιώσεις, ἑτέρου τε πρὸς ἕτερον
                         παραβαλλομένου καὶ <lb/>αὐτοῦ τινος πρὸς ἑαυτό. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>Αὗται πᾶσαι δυσκρασίαι τοῦ σώματος ἀνώμαλοι <lb/>γίγνονται, μάλιστα μὲν
+         </div>
+         <div n="5" type="chapter">
+            <p>Αὗται πᾶσαι δυσκρασίαι τοῦ σώματος ἀνώμαλοι <lb/>γίγνονται, μάλιστα μὲν
                         ἐκπυρουμένου τοῦ κατὰ τὴν <lb/>φλεγμονὴν αἵματος, ἐφεξῆς δὲ τοῦ κατὰ τὰ
                         σπλάγχνα καὶ <lb/>τοῦ κατὰ τὴν καρδίαν, καὶ ταύτης μάλιστα τοῦ κατὰ τὴν
                         <lb/>ἀριστερὰν κοιλίαν, εἰς ἣν εἰ καὶ ζῶντος τοῦ ζώου καὶ μηδέπω
@@ -273,9 +278,9 @@
                         πάντες ἄπονοί τε καὶ τελέως <lb/>εἰσὶν ἀναίσθητοι τοῖς κάμνουσιν. οὐ γὰρ ἔτι
                         τῶν ἐν <lb/>αὐτοῖς μορίων τὸ μὲν ποιεῖ, τὸ δὲ πάσχει, πάντων ὁμοίων
                         <lb/>ἀλλήλοις ἤδη γεγονότων, καὶ μίαν ἐχόντων ὁμόλογον κρᾶσιν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>Εἰ δὲ δὴ καὶ τὸ μὲν εἴη θερμότερον αὐτῶν, <lb/>τὸ δὲ ψυχρότερον, ἀλλὰ τοσούτῳ
+         </div>
+         <div n="6" type="chapter">
+            <p>Εἰ δὲ δὴ καὶ τὸ μὲν εἴη θερμότερον αὐτῶν, <lb/>τὸ δὲ ψυχρότερον, ἀλλὰ τοσούτῳ
                         θερμότερον ἢ <lb/>ψυχρότερον, ὡς μὴ λυπεῖν τὸ πλησιάσαν· ἢ οὕτως ἂν ἦν
                         <lb/>ἀλλήλοις λυπηρὰ καὶ κατὰ φύσιν ἔχοντα τὰ μόρια, ὡς <lb/>διαφέροντά γε
                         καὶ αὐταῖς ταῖς κράσεσι. σὰρξ μὲν γὰρ <lb/>θερμὸν μόριον, ὀστοῦν δὲ ψυχρόν.
@@ -312,9 +317,9 @@
                         τῷ ἐνεστῶτι λόγῳ, πρὶν ἀποδεῖξαι περὶ τῶν φυσικῶν <lb/>δυνάμεων, ὅσαι τέ
                         εἰσι καὶ ὁποῖαι, καὶ ὅ τι δρᾷν ἑκάστη πέφυκεν. <lb/>ἀλλ’ ἐν ταῖς τῶν
                         συμπτωμάτων αἰτίαις ὑπὲρ ἁπάντων εἰρήσεται. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>Ἐπάνειμι δὲ πάλιν ἐπὶ τὰς τῆς ἀνωμάλου <lb/>δυσκρασίας διαφοράς. ὅπως μὲν γὰρ
+         </div>
+         <div n="7" type="chapter">
+            <p>Ἐπάνειμι δὲ πάλιν ἐπὶ τὰς τῆς ἀνωμάλου <lb/>δυσκρασίας διαφοράς. ὅπως μὲν γὰρ
                         ἐπὶ φλεγμονῇ γίγνεται πυρετὸς <lb/>ἅπας, ὅτι τε καὶ πυρετὸς καὶ φλεγμονὴ
                         πᾶσα, χωρὶς τῶν <lb/>ἑκτικῶν ὀνομαζομένων, ἐκ τῶν ἀνωμάλως κεκραμένων
                         νοσημάτων, <pb n="747"/> ἤδη μοι λέλεκται. γίνεται δὲ καὶ χωρὶς φλεγμονῆς
@@ -345,9 +350,9 @@
                         σώματος κράσεως, <lb/>οὕτως ἐν κρύει πολλάκις ἐψύγησαν ἰσχυρῶς ἔνιοι σύμπαν
                         <lb/>τὸ σῶμα, καί τινες ἐξ αὐτῶν ἀπέθανον· καὶ μὲν δὴ καὶ <lb/>ὡς ἀλγοῦσιν
                         οὕτω πάντες, οὐδὲ τοῦτ’ ἄδηλον. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="8">
-                    <p>Ἀλγοῦσι δὲ καὶ ὅσοι καταψυχόμενοι σφοδρῶς <lb/>ὑπὸ κρύους καρτεροῦ
+         </div>
+         <div n="8" type="chapter">
+            <p>Ἀλγοῦσι δὲ καὶ ὅσοι καταψυχόμενοι σφοδρῶς <lb/>ὑπὸ κρύους καρτεροῦ
                         προεθυμήθησαν ἐκθερμῆναι ταχέως <lb/>ἑαυτοὺς, καὶ πολλοί γε αὐτῶν
                         ἐπενέγκαντες ἀθρόως τῷ πυρὶ <lb/>τὰς χεῖρας, ἀλγήματος αἰσθάνονται σφοδροῦ
                         κατὰ τὰς ῥίζας <pb n="749"/> τῶν ὀνύχων. εἶτά τις οὕτως ὁρῶν ἐναργῶς ὀδύνης
@@ -382,7 +387,7 @@
                         τὸν ἄνθρωπον, <lb/>ἔξ οὗ χυμὸς ἀργὸς καὶ ψυχρὸς καὶ ὠμὸς καὶ φλεγματώδης
                         <lb/>γεννᾶται, ὁποῖόν τινα καὶ Πραξαγόρας ἡγήσατο τὸν <pb n="751"/>
                         ὑαλοειδῆ. πάλαι δὲ, ὡς ἔοικεν, οὐδεὶς οὕτως ἔπασχεν, ὅτι μηδεὶς <lb/>
-                        <milestone unit="ed2page" n="177"/>τοσοῦτον ἀργῶς καὶ πλησμίως διῃτᾶτο, καὶ
+               <milestone unit="ed2page" n="177"/>τοσοῦτον ἀργῶς καὶ πλησμίως διῃτᾶτο, καὶ
                         διὰ τοῦτο <lb/>γέγραπται παρὰ τοῖς παλαιοῖς ἰατροῖς ἕπεσθαι ῥίγει πυρετόν·
                         <lb/>ἀλλὰ καὶ ἡμῖν αὐτοῖς καὶ ἄλλοις πολλοῖς τῶν νεωτέρων ἰατρῶν <lb/>ὦπται
                         πολλάκις ῥῖγος ᾧ πυρετὸς οὐκ ἐπηκολούθησε. σύνθετος <lb/>δ’ ἐκ ταύτης ἐστὶ
@@ -392,9 +397,9 @@
                         <lb/>καλῶ τοῦτον ἠπίαλον. ὥστε διὰ τῶν ἀνωμάλων δυσκρασιῶν <lb/>ὁ ἠπίαλος
                         συμπέπλεκται, καὶ οἱ λοιποὶ δὲ πυρετοὶ σχεδὸν <lb/>ἅπαντες, πλὴν τῶν ἑκτικῶν
                         ὀνομαζομένων. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="9">
-                    <p>Ὡσαύτως καὶ ὅσα μορίου τινός ἐστι νοσήματα <lb/>μετ’ ὄγκου, καὶ ταῦτα
+         </div>
+         <div n="9" type="chapter">
+            <p>Ὡσαύτως καὶ ὅσα μορίου τινός ἐστι νοσήματα <lb/>μετ’ ὄγκου, καὶ ταῦτα
                         σύμπαντα παραπλησίως τῇ φλεγμονῇ <lb/>κατὰ δυσκρασίαν ἀνώμαλον ἀποτελεῖται,
                         καρκῖνος, ἐρυσίπελας, <lb/>ἄνθραξ, ἕρπης, οἴδημα, φλεγμονὴ, φαγέδαινα,
                         <lb/>γάγγραινα. κοινὸν μὲν γὰρ αὐτοῖς ἅπασι τὸ ἐξ ἐπιῤῥοῆς ὑγρῶν
@@ -413,8 +418,7 @@
                         γε διαθέσει κατασταίη. <lb/>ταῦτα ἀρκεῖν μοι δοκεῖ προεγνῶσθαι τοῖς μέλλουσι
                         τῆ τε περὶ <lb/>φαρμάκων ἀκολουθήσειν πραγματείᾳ καὶ μετ’ αὐτὴν τῇ τῆς
                         <lb/>θεραπευτικῆς μεθόδου. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

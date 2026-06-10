@@ -1,143 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-	<teiHeader xml:lang="eng">
-		<fileDesc>
-			<titleStmt>
-				<title xml:lang="lat">Prolegomena Longini commentariique reliquiae</title>
-				<author>Cassius Longinus</author>
-				<editor>Maximilian Consbruch</editor>
-				<funder>Center for Hellenic Studies</funder>
-
-				<respStmt>
-					<resp>Published original versions of the electronic texts</resp>
-					<orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
-					<persName role="principal">Gregory Crane</persName>
-					<persName role="principal">Leonard Muellner</persName>
-					<persName role="principal">Bruce Robertson</persName>
-				</respStmt>
-
-				<respStmt>
-					<resp>Proofreading</resp>
-					<persName>Madeline McIntire</persName>
-					<orgName>Mt. Allison University</orgName>
-				</respStmt>
-
-				<respStmt>
-					<resp>CTS conversion</resp>
-					<persName>Michael Konieczny</persName>
-					<orgName>Center for Hellenic Studies</orgName>
-				</respStmt>
-			</titleStmt>
-
-			<publicationStmt>
-				<publisher>Open Greek and Latin</publisher>
-				<idno type="filename">tgl2178.tlg004.1st1K-grc1.xml</idno>
-				<availability>
-					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Prolegomena Longini commentariique reliquiae</title>
+            <author>Cassius Longinus</author>
+            <editor>Maximilian Consbruch</editor>
+            <funder>Center for Hellenic Studies</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+               <persName role="principal">Gregory Crane</persName>
+               <persName role="principal">Leonard Muellner</persName>
+               <persName role="principal">Bruce Robertson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofreading</resp>
+               <persName>Madeline McIntire</persName>
+               <orgName>Mt. Allison University</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>CTS conversion</resp>
+               <persName>Michael Konieczny</persName>
+               <orgName>Center for Hellenic Studies</orgName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Open Greek and Latin</publisher>
+            <idno type="filename">tgl2178.tlg004.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
 						Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-				</availability>
-				<date>2020-08-02</date>
-			</publicationStmt>
-
-
-			<sourceDesc>
-				<biblStruct>
-					<monogr>
-						<title xml:lang="lat">Hephaestionis Enchiridion cum commentariis veteribus</title>
-						<author>Hephaestion</author>
-						<editor>Maximilian Consbruch</editor>
-						<imprint>
-							<pubPlace>Leipzig</pubPlace>
-							<publisher>Teubner</publisher>
-							<date>1906</date>
-						</imprint>
-					</monogr>
-					<ref target="https://archive.org/details/hephaestionisenc00heph/page/n115/mode/2up">
+            </availability>
+            <date>2020-08-02</date>
+            <idno type="CTS">urn:cts:greekLit:tlg2178.tlg004.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Hephaestionis Enchiridion cum commentariis veteribus</title>
+                  <author>Hephaestion</author>
+                  <editor>Maximilian Consbruch</editor>
+                  <imprint>
+                     <pubPlace>Leipzig</pubPlace>
+                     <publisher>Teubner</publisher>
+                     <date>1906</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://archive.org/details/hephaestionisenc00heph/page/n115/mode/2up">
 						Internet Archive</ref>
-				</biblStruct>
-			</sourceDesc>
-		</fileDesc>
-
-		<encodingDesc>
-			<editorialDecl>
-				<quotation marks="none"/>
-				<normalization>
-					<p/>
-				</normalization>
-				<correction>
-					<p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison
-						University. Developed through the support of the <ref target="https://nbif.ca/en"
-							>NBIF</ref>.</p>
-				</correction>
-			</editorialDecl>
-
-			<refsDecl n="CTS">
-				<cRefPattern matchPattern="(\w+).(\w+)" n="section"
-					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
-					<p>This pointer pattern extracts fragment and section.</p>
-				</cRefPattern>
-
-				<cRefPattern matchPattern="(\w+)" n="fragment"
-					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
-					<p>This pointer pattern extracts fragments.</p>
-				</cRefPattern>
-			</refsDecl>
-		</encodingDesc>
-
-		<profileDesc>
-			<langUsage>
-				<language ident="grc">Greek</language>
-				<language ident="lat">Latin</language>
-			</langUsage>
-		</profileDesc>
-
-		<revisionDesc>
-			<change when="2020-08-02" who="Michael Konieczny">initial markup of new file</change>
-		</revisionDesc>
-	</teiHeader>
-
-	<text>
-		<body>
-			<div type="edition" n="urn:cts:greekLit:tlg2178.tlg004.1st1K-grc1" xml:lang="grc">
-				<div type="textpart" subtype="fragment" n="1">
-					<div type="textpart" subtype="section" n="1">
-						<head rend="center"><pb facs="hephaestionisenc00hephuoft_0115"/>Τὰ προλεγόμενα εἰς τὸ
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <quotation marks="none"/>
+            <normalization>
+               <p/>
+            </normalization>
+            <correction>
+               <p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison
+						University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+            </correction>
+         </editorialDecl>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(\w+).(\w+)"
+                         n="section"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+               <p>This pointer pattern extracts fragment and section.</p>
+            </cRefPattern>
+            <cRefPattern matchPattern="(\w+)"
+                         n="fragment"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+               <p>This pointer pattern extracts fragments.</p>
+            </cRefPattern>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-section"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2020-08-02" who="Michael Konieczny">initial markup of new file</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg2178.tlg004.1st1K-grc1">
+         <div n="1" type="fragment">
+            <div n="1" type="section">
+               <head rend="center">
+                  <pb facs="hephaestionisenc00hephuoft_0115"/>Τὰ προλεγόμενα εἰς τὸ
 							τοῦ Ἡφαιστίωνος ἐγχειρίδιον</head>
-						<p rend="indent">Ἀλλʼ εἴτε νέα τῶν μέτρων ἡ θεωρία εἴτε Μούσης εὕρημα παλαιᾶς ἑκάτερον
+               <p rend="indent">Ἀλλʼ εἴτε νέα τῶν μέτρων ἡ θεωρία εἴτε Μούσης εὕρημα παλαιᾶς ἑκάτερον
 							ἕξει καλῶς. ἀρχαία ὲν γὰρ οὖσα ἐκ τῆς παλαιότητος ἕξει τὴν σεμνότητα, νέα δὲ οὖσα
-							ποθεινοτέρα καθʼ Ὅμηρον (α 351)· <quote rend="blockquote"><lb/>τὴν γὰρ ἀοιδὴν πάντες
-								ἐπικλείουσʼ ἄνθρωποι, <lb/>ἥτις ἀϊόντεσσι νεωτάτη ἀμφιπέληται. </quote></p>
-						<p rend="indent">Μέτρου δὲ πατὴρ ῥυθμὸς καὶ θεός· ἀπὸ ῥυθμοῦ ὰρ ἔσχε τὴν ἀρχήν, θεὸς δὲ
+							ποθεινοτέρα καθʼ Ὅμηρον (α 351)· <quote rend="blockquote">
+                     <lb/>τὴν γὰρ ἀοιδὴν πάντες
+								ἐπικλείουσʼ ἄνθρωποι, <lb/>ἥτις ἀϊόντεσσι νεωτάτη ἀμφιπέληται. </quote>
+               </p>
+               <p rend="indent">Μέτρου δὲ πατὴρ ῥυθμὸς καὶ θεός· ἀπὸ ῥυθμοῦ ὰρ ἔσχε τὴν ἀρχήν, θεὸς δὲ
 							τὸ μέτρον ἀνεφθέγξατο. </p>
-						<div type="textpart" subtype="section" n="2">
-							<p rend="indent"><pb facs="hephaestionisenc00hephuoft_0115"/>Τοῦ δὲ περὶ μέτρων λόγου
+               <div n="2" type="section">
+                  <p rend="indent">
+                     <pb facs="hephaestionisenc00hephuoft_0115"/>Τοῦ δὲ περὶ μέτρων λόγου
 								πολλοὶ πολλαχῶς ἤρξαντο, οἱ μὲν ἀπὸ στοιχείων ὡς Φιλόξενος, οἱ δὲ ἀπὸ τοῦ μέτρων
 								ὅρου ὡς Ἡλιόδωρος· ἡμεῖς δὲ ʼHφαιστίωνι κατακολουθήσομεν ἀπὸ συλλαβῆς ἀρξάμενοι.
-								ρῶτον δὲ ὀλίγα προειπεῖν δίκαιον. <pb facs="hephaestionisenc00hephuoft_0116"/></p>
-						</div>
-
-						<div type="textpart" subtype="section" n="3">
-							<p rend="indent">Κριτήριον μέτρου ἀκοή. ἔνιοι γοῦν οὕτως ὡρίσαντο· μέτρον ἐστὶ ποδῶν ἢ
+								ρῶτον δὲ ὀλίγα προειπεῖν δίκαιον. <pb facs="hephaestionisenc00hephuoft_0116"/>
+                  </p>
+               </div>
+               <div n="3" type="section">
+                  <p rend="indent">Κριτήριον μέτρου ἀκοή. ἔνιοι γοῦν οὕτως ὡρίσαντο· μέτρον ἐστὶ ποδῶν ἢ
 								βάσεων σύνταξις αἰσθήσει τῇ διʼ ἀκοῆς παραλαμβανομένη. εἰ δὲ τὸ κρῖνόν ἐστιν ἀκοή,
 								τὸ κοσμοῦν ἐστι φωνή. ὡς γὰρ τὸν ἦχον ῆς εὐρυθμίας ἐκτείνουσά τε καὶ συστέλλουσα
 									<add>ἡ</add> φωνὴ σχηματίζει τὰς συλλαβάς, οὕτως εἰσδεξαμένη κρίνει ἡ ἀκοή. διὰ
 								τοῦτο πολλὰ τῶν μέτρων συμβέβηκεν ἀποκρύπτεσθαι σιωπώμενα ἐν τῇ κατὰ πεζὸν ῥήσει·
 								καὶ αὖ πάλιν πολλὰς συνεμπτώσεις ἔχει πρὸς λλα μέτρα. εὕροι γοῦν ἄν τις παρὰ
 								Δημοσθένει τῷ ῥήτορι στίχον ἡρωϊκὸν κεκρυμμένον, ὃς ἠδυνήθη λαθεῖν διὰ τὸ πεζὴν
-								οὖσαν τὴν προφορὰν συναρπάσαι τῷ λόγῳ τὴν ἀκοήν. φησὶ γοῦν (de cor. 143) <quote
-									rend="blockquote">
-									<lb/>τὸν γὰρ ἐν Ἀμφίσσῃ πόλεμον, διʼ ὅν εἰς Ἐλάτειαν <lb/>ἦλθε Φίλιππος.
-								</quote><lb/>στίχος ἐστὶν ἡρῷος· ἀλλὰ μὴν καὶ Ἰωνικόν, ὅταν λέγῃ (Ol. III 4) <quote
-									rend="blockquote"><lb/>πολλῶν δὲ λόγων καὶ θορύβου γιγνομένου παρʼ ὑμῖν. </quote>
-								<lb/>τοῦτο γὰρ ἄντικρυς Ἰωνικόν ἐστιν ἀπὸ μείζονος ὅμοιον ῷ (Sapph. 76 = Heph. 36,
-								17) <quote rend="blockquote"><lb/>εὐμορφοτέρα Μνασιδίκα τᾶς ἁπαλᾶς Γυρίννως.
-								</quote><lb/>τὰς δὲ τῶν μέτρων συνεμπτώσεις ἐν τοῖς ἑξῆς ἐπιδείξομεν. <pb
-									facs="hephaestionisenc00hephuoft_0117"/></p>
-						</div>
-
-						<div type="textpart" subtype="section" n="4">
-							<p rend="indent">Διαφέρει δὲ μέτρον ῥυθμοῦ. ὕλη μὲν γὰρ τοῖς μέτροις ἡ συλλαβὴ καὶ
+								οὖσαν τὴν προφορὰν συναρπάσαι τῷ λόγῳ τὴν ἀκοήν. φησὶ γοῦν (de cor. 143) <quote rend="blockquote">
+                        <lb/>τὸν γὰρ ἐν Ἀμφίσσῃ πόλεμον, διʼ ὅν εἰς Ἐλάτειαν <lb/>ἦλθε Φίλιππος.
+								</quote>
+                     <lb/>στίχος ἐστὶν ἡρῷος· ἀλλὰ μὴν καὶ Ἰωνικόν, ὅταν λέγῃ (Ol. III 4) <quote rend="blockquote">
+                        <lb/>πολλῶν δὲ λόγων καὶ θορύβου γιγνομένου παρʼ ὑμῖν. </quote>
+                     <lb/>τοῦτο γὰρ ἄντικρυς Ἰωνικόν ἐστιν ἀπὸ μείζονος ὅμοιον ῷ (Sapph. 76 = Heph. 36,
+								17) <quote rend="blockquote">
+                        <lb/>εὐμορφοτέρα Μνασιδίκα τᾶς ἁπαλᾶς Γυρίννως.
+								</quote>
+                     <lb/>τὰς δὲ τῶν μέτρων συνεμπτώσεις ἐν τοῖς ἑξῆς ἐπιδείξομεν. <pb facs="hephaestionisenc00hephuoft_0117"/>
+                  </p>
+               </div>
+               <div n="4" type="section">
+                  <p rend="indent">Διαφέρει δὲ μέτρον ῥυθμοῦ. ὕλη μὲν γὰρ τοῖς μέτροις ἡ συλλαβὴ καὶ
 								χωρὶς συλλαβῆς οὐκ ἂν γένοιτο μέτρον, ὁ δὲ ῥυθμὸς γίνεται μὲν καὶ ἐν συλλαβαῖς,
 								γίνεται δὲ καὶ χωρὶς συλλαβῆς· καὶ γὰρ ἐν κρότῳ· ὅταν μὲν γὰρ τοὺς χαλκέας ἴδωμεν
 								τὰς σφύρας καταφέροντας, ἅμα τινὰ καὶ ῥυθμὸν ἀκούομεν. καὶ ἵππων δὲ πορεία ῥυθμὸς
@@ -149,14 +151,16 @@
 								χρόνον ποιεῖ ακρόν. Ὅτι δὲ τοῦτο οὕτως ἔχει καὶ τὴν διαφορὰν ἴσασιν οἱ ποιηταί,
 								λάβωμεν παράδειγμα ἀπὸ παιζούσης κωμῳδίας ἐν σπουδαζούσῃ φιλοσοφίᾳ· ὁ γοῦν
 									<del>Ἀριστοφάνης</del> ἐν ταῖς Νεφέλαις (638) φησὶ Σωκράτης, εἰ καὶ τωθάζει
-								Ἀριστοφάνης· <quote rend="blockquote"><lb/>πότερον περὶ μέτρων ἢ περὶ ἐπῶν ἢ ῥυθμῶν·
-								</quote><lb/>ἀντιδιέστειλε γὰρ ἐκεῖνος ἀπὸ ῥυθμῶν τὰ μέτρα· εἰς ἑκάτερον γοῦν τὸ
+								Ἀριστοφάνης· <quote rend="blockquote">
+                        <lb/>πότερον περὶ μέτρων ἢ περὶ ἐπῶν ἢ ῥυθμῶν·
+								</quote>
+                     <lb/>ἀντιδιέστειλε γὰρ ἐκεῖνος ἀπὸ ῥυθμῶν τὰ μέτρα· εἰς ἑκάτερον γοῦν τὸ
 								παράδειγμα σημειωτέον, ὅτι τε ῥυθμὸς μέτρου διαφέρει καὶ ὅτι ἴσασιν ἐν διδασκαλίᾳ οἱ
-								παλαιοὶ τὴν τῶν μέτρων θεωρίαν. <pb facs="hephaestionisenc00hephuoft_0118"/></p>
-						</div>
-
-						<div type="textpart" subtype="section" n="5">
-							<p rend="indent">Το δὲ μέτρον λέγεται πολλαχῶς. καὶ γὰρ τὴν εὐμετρίαν μέτρον
+								παλαιοὶ τὴν τῶν μέτρων θεωρίαν. <pb facs="hephaestionisenc00hephuoft_0118"/>
+                  </p>
+               </div>
+               <div n="5" type="section">
+                  <p rend="indent">Το δὲ μέτρον λέγεται πολλαχῶς. καὶ γὰρ τὴν εὐμετρίαν μέτρον
 								προσαγορεύομεν ὡς ὁ εἰπὼν μέτρον ἄριστον — εἴτε σοφὸν ἀπόφθεγμα εἶτε θεῖον ἀνάθημα.
 								Ἀπόλλωνι μὲν γὰρ ἁρμοδιώτατον, ἐπεὶ καὶ μέτρων ὑρετής. — Λέγεται δὲ μέτρον καὶ αὐτὸ
 								τὸ μετροῦν καὶ τὸ μετρούμενον· ὡς ὅταν εἴπωμεν τὸν μέδιμνον μέτρον καὶ τὸ ἐν αὐτῷ
@@ -173,40 +177,39 @@
 								ἰαμβικὸν τὸ ἀπὸ ἕξ ποδῶν συγκείμενον τρίμετρον καλῶμεν. <add>μέτρον καλοῦμεν καὶ τὸν
 									πόδα ......</add>. μέτρον καλοῦμεν καὶ τὸν χρόνον, ὅν τινες τῶν ῥυθμικῶν σημεῖον
 								προσαγορεύουσιν. ὅτι δὲ τοῦτο οὕτως ἔχει, παράδειγμα τεθήσεται, ὅ τινες μὲν Ὀρφέως,
-								τινὲς δὲ τῆς Πυθίας ὑπολαμβάνουσι· περὶ γὰρ τῶν ἐπῶν λέγων ἢ λέγουσα <quote
-									rend="blockquote"><lb/>ὄρθιον ἑξαμερὲς τετόρων καὶ εἴκοσι μέτρων. </quote></p>
-							<p rend="indent">Καὶ ταῦτα οὕτως ἔχει ὥσπερ εἴρηκα. μέτρον γὰρ καὶ ὸ μετροῦν καὶ τὸ
+								τινὲς δὲ τῆς Πυθίας ὑπολαμβάνουσι· περὶ γὰρ τῶν ἐπῶν λέγων ἢ λέγουσα <quote rend="blockquote">
+                        <lb/>ὄρθιον ἑξαμερὲς τετόρων καὶ εἴκοσι μέτρων. </quote>
+                  </p>
+                  <p rend="indent">Καὶ ταῦτα οὕτως ἔχει ὥσπερ εἴρηκα. μέτρον γὰρ καὶ ὸ μετροῦν καὶ τὸ
 								μετρούμενον· οὕτως καὶ ἐπὶ τῶν προειρημένων αὐτὸ τὸ μετρούμενον τουτέστι τὸ ποίημα
 								μέτρον προσαγορεύεται, καὶ ἕκαστον τῶν μετρούντων τῆς ὁμοίας τετύχηκεν ὀνομασίας.
 								χρόνος γὰρ συλλαβὴν ποιεῖ, συλλαβὴ δὲ πόδα, ποὺς δὲ συζυγίαν, συζυγία δὲ στίχον,
 								στίχος δὲ ποίημα. πάντα οὖν εἰκότως μέτρα προσαγορεύεται. </p>
-						</div>
-
-						<div type="textpart" subtype="section" n="6">
-							<p rend="indent">Γέγονε δὲ ἀπὸ τοῦ μείρω ῥήματος, ὅ ἐστι μερίζω, ἀφʼ οὗ παρὰ τῷ ποιητῇ
-								(I 612) <quote rend="blockquote"><lb/>ἶσον ἐμοὶ βασίλευε καὶ ἥμισυ μείρεο τιμῆς.
-								</quote><lb/>ὡς γὰρ παρὰ τὸ σείω σεῖστρον γίνεται καὶ παρὰ τὸ δέρω δέρτρον καὶ παρὰ
+               </div>
+               <div n="6" type="section">
+                  <p rend="indent">Γέγονε δὲ ἀπὸ τοῦ μείρω ῥήματος, ὅ ἐστι μερίζω, ἀφʼ οὗ παρὰ τῷ ποιητῇ
+								(I 612) <quote rend="blockquote">
+                        <lb/>ἶσον ἐμοὶ βασίλευε καὶ ἥμισυ μείρεο τιμῆς.
+								</quote>
+                     <lb/>ὡς γὰρ παρὰ τὸ σείω σεῖστρον γίνεται καὶ παρὰ τὸ δέρω δέρτρον καὶ παρὰ
 								τὸ φέρω φέρτρον, οὕτω καὶ παρὰ τὸ μείρω <add>μέρτρον καὶ</add> μέτρον. ὄνομα γοῦν
-								ἐστὶ καὶ ἐκ τῆς ἐτυμολογίας τοῦ μερισμοῦ. <pb facs="hephaestionisenc00hephuoft_0120"
-								/></p>
-						</div>
-
-						<div type="textpart" subtype="section" n="7">
-							<p rend="indent">Περὶ δὲ ὅρου μέτρου νῦν εἰπεῖν οὐκ ἀναγκαῖον· αὐτὸς γὰρ ὁ Ἡφαιστίων
+								ἐστὶ καὶ ἐκ τῆς ἐτυμολογίας τοῦ μερισμοῦ. <pb facs="hephaestionisenc00hephuoft_0120"/>
+                  </p>
+               </div>
+               <div n="7" type="section">
+                  <p rend="indent">Περὶ δὲ ὅρου μέτρου νῦν εἰπεῖν οὐκ ἀναγκαῖον· αὐτὸς γὰρ ὁ Ἡφαιστίων
 								αἰτιᾶται τὸν Ἡλιόδωρον, ὅτι τοῖς ὑπαρχομένοις γράφει· τοῖς γὰρ ἀπείροις καὶ
 									<del>τοῖς</del> μήπω τῆς μετροποιίας γεγευμένοις ἀδύνατον νοῆσαι ὸν ὅρον. </p>
-						</div>
-
-						<div type="textpart" subtype="section" n="8">
-							<p rend="indent">Ἐπιγέγραπται δὲ ἐγχειρίδιον, οὐχ ὥς τινες ᾠήθησαν παρὰ τὸ ξίφος διὰ
+               </div>
+               <div n="8" type="section">
+                  <p rend="indent">Ἐπιγέγραπται δὲ ἐγχειρίδιον, οὐχ ὥς τινες ᾠήθησαν παρὰ τὸ ξίφος διὰ
 								τὸ ὀξύνειν τῶν μετιόντων τὰς ψυχάς, ἀλλὰ διὰ τὸ ἐν χερσὶν ἔχειν τοὺς βουλομένους τὰ
 								κεφάλαια τῶν μετρικῶν παραγγελμάτων. τι δὲ ταῦτα οὕτως ἔχει, Ἡλιόδωρος τοῦ
 								ἐγχειριδίου ἀρχόμενος οὕτως λέγει· τοῖς βουλομένοις ἐν χερσὶν ἔχειν τὰ
 								κεφαλαιωδέστατα τῆς μετρικῆς γέγραπται τὸ βιβλίον τοῦτο. </p>
-						</div>
-
-						<div type="textpart" subtype="section" n="9">
-							<p rend="indent">Ἤρξατο δὲ αὐτὸς ὁ Ἡφαιστίων, ὡς ἔφην, ἀπὸ υλλαβῆς. ὕλη γὰρ τοῖς
+               </div>
+               <div n="9" type="section">
+                  <p rend="indent">Ἤρξατο δὲ αὐτὸς ὁ Ἡφαιστίων, ὡς ἔφην, ἀπὸ υλλαβῆς. ὕλη γὰρ τοῖς
 								μέτροις ἡ συλλαβή, καὶ ἄνευ ταύτης οὐκ ἂν συσταίη τὸ μέτρον· τὸ <add>δέ</add> ποιοῦν
 								πρὸ τοῦ ποιηθέντος, ὅθεν <add>ἀπὸ συλλαβῆς</add> ἄρξασθαι δίκαιον. οὐκ ἀπὸ τοῦ
 								γένους δὲ ἤρξατο, ἀλλʼ ἀπὸ τοῦ εἴδους. διαφέρει δὲ εἶδος καὶ γένος, ᾗ γένος μέν ἐστι
@@ -220,21 +223,19 @@
 								τοῦτο ὠνόμασται, παρὰ τὸ ποσότητα στοιχείων εἰς ταὐτὸν συλλαμβάνειν ὧν ἔξεστιν ὑφʼ
 								ἕνα. φθόγγον παραλαβεῖν· <add>οὐχ γὰρ</add> ἂν εἴποι τις τὰς μονογραμμάτους. ἀλλὰ
 								ταῦτα μὲν ζητείτωσαν ἱ τεχνικοί. — </p>
-						</div>
-
-						<div type="textpart" subtype="section" n="10">
-							<p rend="indent">Ἐν δὲ τοῖς μετρικοῖς εἰδέναι δεῖ, ὅτι πᾶσα βραχεῖα ἴση καὶ πᾶσα μακρὰ
+               </div>
+               <div n="10" type="section">
+                  <p rend="indent">Ἐν δὲ τοῖς μετρικοῖς εἰδέναι δεῖ, ὅτι πᾶσα βραχεῖα ἴση καὶ πᾶσα μακρὰ
 								ἴση· καθόλου γὰρ αἱ μέν εἰσι δίχρονοι, αἱ δὲ μονόχρονοι. ἐντεῦθεν τὸν μὲν δάκτυλον
 								καλοῦμεν τετράχρονον, τὸν δὲ πυρρίχιον δίχρόνον, οὐ πολυπραγμονοῦντες τῆς ποιητικῆς
 								λέξεως ἢ συλλαβῆς τὰ στοιχεῖα οὐδὲ ἐν ποσότητι καταμετροῦντες τοὺς χρόνους ἀλλʼ ἐν
 								δυνάμει <del>τῆς ποσότητος</del>. </p>
-						</div>
-					</div>
-
-					<div type="textpart" subtype="fragment" n="2">
-						<div type="textpart" subtype="section" n="1">
-							<head rend="center">Περὶ βραχείας συλλαβῆς</head>
-							<p rend="indent">Ἀρκτέον δὲ ἀπὸ βραχείας. οὕτω τοίνυν ὁ Ἡφαιστίων αὐτὴν ὁρίζεται·
+               </div>
+            </div>
+            <div n="2" type="fragment">
+               <div n="1" type="section">
+                  <head rend="center">Περὶ βραχείας συλλαβῆς</head>
+                  <p rend="indent">Ἀρκτέον δὲ ἀπὸ βραχείας. οὕτω τοίνυν ὁ Ἡφαιστίων αὐτὴν ὁρίζεται·
 								βραχεῖά ἐστι συλλαβὴ ἡ <pb facs="hephaestionisenc00hephuoft_0122"/>ἔχουσα βραχὺ
 								φωνῆεν ἢ βραχυνόμενον, μὴ ἐπὶ τέλους λέξεως, οὕτως ὡς μεταξὺ αὐτοῦ καὶ τοῦ ἐν τῇ
 								ἑξῆς συλλαβῇ φωνήεντος μὴ ὑπάρχειν σύμφωνα πλείονα ἑνὸς ἁπλοῦ, ἀλλʼ ἤτοι ἓν ἢ ηδὲ
@@ -249,30 +250,28 @@
 								λογικὸν θνητὸν νοῦ καὶ ἐπιστήμης δεκτικόν, τοῦτό ἐστιν ἄνθρωπος πάντως. καὶ αὖ
 								πάλιν· φωνή ἐστιν ὴρ πεπληγμένος. εἴ τι οὖν ἐστὶν ἀὴρ πεπληγμένος, τοῦτο φωνὴ
 								πάντως· οὕτως οὖν καὶ ἐπὶ τοῦ προκειμένου ὅρου ἴδωμεν τὸ ἀντιστρέφον· εἴ τι ἐστὶ
-								βραχὺ φωνῆεν, μὴ ἐπὶ τέλους λέξεως κείμενον, μετα<add>ξύ ἑαυτοῦ<pb
-										facs="hephaestionisenc00hephuoft_0123"/> καὶ</add> τῆς ἄλλης συλλαβῆς οὐκ ἔχον
+								βραχὺ φωνῆεν, μὴ ἐπὶ τέλους λέξεως κείμενον, μετα<add>ξύ ἑαυτοῦ<pb facs="hephaestionisenc00hephuoft_0123"/> καὶ</add> τῆς ἄλλης συλλαβῆς οὐκ ἔχον
 								σύμφωνα ἑνὸς πλείονα, τοῦτο πάντως ἐστὶ συλλαβὴ βραχεῖα. – Πρόσκειται δὲ τὸ μὴ ἐπὶ
 								τέλους λέξεως κείμενον διὰ τὴν κοινὴν λεγομένην. ἐὰν γὰρ εἰς μέρος ἀπαρτίζῃ λόγου,
 								τῷ τῆς κοινῆς ὑποπίπτει λόγῳ, οἷον ἡ τ͞α συλλαβὴ βραχεῖά ἐστιν, ἐπὶ <add>δὲ</add>
-								τέλους λέξεως κειμένη ἐνομίσθη ποτὲ μακρὰ ὡς παρὰ τῷ ποιητῇ (Φ 352) <quote
-									rend="blockquote"><lb/>τὰ περὶ καλὰ ῥέεθρα. </quote><lb/>καὶ αὖ πάλιν ἡ πρὸς
-								συλλαβὴ βραχεῖά ἐστιν, ἀλλʼ ἐν τόπῳ κεῖται μακρᾶς, ὅταν Ὅμηρος εἴπῃ (I 147) <quote
-									rend="blockquote"><lb/>πρὸς οἶκον Πηλῆος· <lb/></quote>σπονδεῖον γὰρ δεῖ εἶναι τὸν
+								τέλους λέξεως κειμένη ἐνομίσθη ποτὲ μακρὰ ὡς παρὰ τῷ ποιητῇ (Φ 352) <quote rend="blockquote">
+                        <lb/>τὰ περὶ καλὰ ῥέεθρα. </quote>
+                     <lb/>καὶ αὖ πάλιν ἡ πρὸς
+								συλλαβὴ βραχεῖά ἐστιν, ἀλλʼ ἐν τόπῳ κεῖται μακρᾶς, ὅταν Ὅμηρος εἴπῃ (I 147) <quote rend="blockquote">
+                        <lb/>πρὸς οἶκον Πηλῆος· <lb/>
+                     </quote>σπονδεῖον γὰρ δεῖ εἶναι τὸν
 								πόδα <quote>πρὸς οἷ</quote>. — Ἔτι δέ φησι μὴ ἔχειν σύμφωνα μεταξὺ – ἓν διὰ τὴν
 									<add>θέσει</add> μακράν· εἰ γὰρ συμβαίη βραχεῖ ἢ βραχυνομένῳ φωνήεντι δύο σύμφωνα
 								ἐπενεχθῆναι, μακρὰν ποιήσει ὴν συλλαβήν, οἷον ἡ ε̄ συλλαβή ἐστι βραχεῖα, ἀλλʼ ἐὰν
 								δύο σύμφωνα ἐπενεχθῇ ὡς ἐν τῷ Ἕκτωρ, μακρὰν ποιήσει τὴν συλλαβήν. διὰ τοῦτο
 								προσέθηκε μὴ δεῖν ὑπάρχειν σύμφωνα δύο, ἀλλʼ ἓν ἁπλοῦν ἢ μηδὲ ἕν. καὶ γὰρ ἐὰν
-								διπλοῦν προσενεχθῇ, μακρὰν ποιήσει ὴν συλλαβὴν ὡς ἐν τῷ (A 139) <quote
-									rend="blockquote"><lb/>ἄξω ἑλών. </quote></p>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-
-			<!--<div type="apparatus" n="urn:cts:greekLit:tlg2178.tlg004.1st1K-grc1" xml:lang="mul">
+								διπλοῦν προσενεχθῇ, μακρὰν ποιήσει ὴν συλλαβὴν ὡς ἐν τῷ (A 139) <quote rend="blockquote">
+                        <lb/>ἄξω ἑλών. </quote>
+                  </p>
+               </div>
+            </div>
+         </div>
+         <!--<div type="apparatus" n="urn:cts:greekLit:tlg2178.tlg004.1st1K-grc1" xml:lang="mul">
 				<div type="textpart" subtype="fragment" n="1">
 					<div type="textpart" subtype="section" n="1">
 						<p><pb facs="hephaestionisenc00hephuoft_0115"/>2 τοῦ om. C || 4—84,7 μέτρον om. C || 5
@@ -440,7 +439,6 @@
 				</div>
 
 			</div>-->
-
-		</body>
-	</text>
+      </body>
+   </text>
 </TEI>

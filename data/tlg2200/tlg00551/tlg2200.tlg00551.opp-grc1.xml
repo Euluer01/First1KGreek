@@ -1,117 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">    
-    <fileDesc>
-        <titleStmt>
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
             <title xml:lang="lat">Declamatio 51</title>
             <author>Libanius</author>
             <editor>Richard Foerster</editor>
-                <sponsor>University of Leipzig</sponsor>
-                <funder>European Social Fund Saxony</funder>
-                <principal>Gregory Crane</principal>
-                <respStmt>
-          <persName>Gregory R. Crane</persName>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-        </respStmt>
-        <respStmt>
-          <persName xml:id="DDD">Digital Divide Data</persName>
-          <resp>Corrected and encoded the text</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Matt Munson</persName>
-          <resp>Project Manager (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Annette Geßner</persName>
-          <resp>Project Assistant (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Thibault Clérice</persName>
-          <resp>Lead Developer (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Bruce Robertson</persName>
-          <resp>Technical Advisor</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Greta Franzini</persName>
-          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Frederik Baumgardt</persName>
-          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Simona Stoyanova</persName>
-          <resp>Project Manager (University of Leipzig), 2015</resp>
-          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>University of Leipzig</authority>
-                <idno type="filename">tlg2200.tlg00551.opp-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-                </availability>
-                <date>2016</date>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-            </publicationStmt>
-            
-            <sourceDesc>
-                  <listBibl>
-                <biblStruct>
-                    <monogr>
-                        <editor>
-                            <persName>
-                                <name xml:lang="lat">Richardus Foerster</name>
-                                <addName xml:lang="deu">Richard Foerster</addName>
-                            </persName>
-                        </editor> 
-                        <author ref="urn:cts:greekLit:tlg2200">Libanius</author>  
-                        <title xml:lang="lat">Declamationes XXXI-LI</title>
-                        <imprint>
-                            <publisher>B.G. Teubner</publisher>
-                            <pubPlace>Leipzig</pubPlace>
-                            <date>1913</date>
-                        </imprint>
-                        <biblScope unit="volume">7</biblScope>
-                    </monogr>
-                    <ref target="https://archive.org/details/operarecensuitri07libauoft">Internet Archive</ref>  
-                </biblStruct>
+            <sponsor>University of Leipzig</sponsor>
+            <funder>European Social Fund Saxony</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName>Gregory R. Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Geßner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Greta Franzini</persName>
+               <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Frederik Baumgardt</persName>
+               <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Simona Stoyanova</persName>
+               <resp>Project Manager (University of Leipzig), 2015</resp>
+               <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>University of Leipzig</authority>
+            <idno type="filename">tlg2200.tlg00551.opp-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2016</date>
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg2200.tlg00551.opp-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <editor>
+                        <persName>
+                           <name xml:lang="lat">Richardus Foerster</name>
+                           <addName xml:lang="deu">Richard Foerster</addName>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg2200">Libanius</author>
+                     <title xml:lang="lat">Declamationes XXXI-LI</title>
+                     <imprint>
+                        <publisher>B.G. Teubner</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1913</date>
+                     </imprint>
+                     <biblScope unit="volume">7</biblScope>
+                  </monogr>
+                  <ref target="https://archive.org/details/operarecensuitri07libauoft">Internet Archive</ref>
+               </biblStruct>
             </listBibl>
-            </sourceDesc>
-            
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-            <refsDecl n="CTS">
-        <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-      </refsDecl>
-    </encodingDesc>
-        
-        <profileDesc>
-            <langUsage>
-                <language ident="lat">Latin</language>
-                    <language ident="deu">German</language>
+         <refsDecl n="CTS">
+            <cRefPattern n="chapter"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="lat">Latin</language>
+            <language ident="deu">German</language>
             <language ident="grc">Greek</language>
-            </langUsage>
-        </profileDesc>
-        
-</teiHeader>
-
-  <text>
-    <body><div type="edition" n="urn:cts:greekLit:tlg2200.tlg00551.opp-grc1" xml:lang="grc">
-
-<div type="textpart" subtype="chapter" n="1">
-
-<pb n="729"/>
-
-<head>LI.</head>
-
-<p>οἴμοι τοῦ πάθους, οἴμοι τῆς συμφορᾶς. Boiss. <note type="marginal">p. 165</note>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg2200.tlg00551.opp-grc1">
+         <div n="1" type="chapter">
+            <pb n="729"/>
+            <head>LI.</head>
+            <p>οἴμοι τοῦ πάθους, οἴμοι τῆς συμφορᾶς. Boiss. <note type="marginal">p. 165</note>
 
 πῶς ὑποίσω, πῶς οὐ καὶ τὴν ψυχὴν ἀπερεύξομαι; πέ-
 
@@ -123,9 +125,10 @@
 
 πάντα δ’ ὄλβον, ὅς μοι χρόνῳ καὶ κόπῳ καλῶς συν-
 
-ελθόντοιν συνείλεκτο, ἦμαρ ἔν μ’ ἀφείλετο.</p></div>
-
-<div type="textpart" subtype="chapter" n="2"><p>ὢ πό-
+ελθόντοιν συνείλεκτο, ἦμαρ ἔν μ’ ἀφείλετο.</p>
+         </div>
+         <div n="2" type="chapter">
+            <p>ὢ πό-
 
 σαι με νύκτες οὐδ’ ἄκροις ὀφθαλμοῖς τοῦ ὕπνου παρα-
 
@@ -137,19 +140,18 @@
 
 ὃν περίκειμαι. ὢ πόσας ἡμέρας ἀπόσιτος διαγέγονα.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="3"><p>εἰ δ’ ἔστιν ὅτε μοι καὶ τροφῆς ἐδέησε μετασχεῖν,
+</p>
+         </div>
+         <div n="3" type="chapter">
+            <p>εἰ δ’ ἔστιν ὅτε μοι καὶ τροφῆς ἐδέησε μετασχεῖν,
 
 ἄρτος ἦν αὕτη καὶ οὗτος μέλας τε ἀκριβῶς καὶ κατε-
 
 <note type="footnote">Ρ = Codex Parisinus gr. 2720</note>
-
-<note type="footnote">1 Sever. ethop. Rhet. gr. I 543, 3 ed. Walz. 5 sq. Eur.
+               <note type="footnote">1 Sever. ethop. Rhet. gr. I 543, 3 ed. Walz. 5 sq. Eur.
 
 Hec. 285 9 Luc. Icarom. 27</note>
-
-<note type="footnote">4 ἐσμὸν Ρ sed ἐσμὸς in marg m 2 5 τὸν — 730, 3 ἄφθο-
+               <note type="footnote">4 ἐσμὸν Ρ sed ἐσμὸς in marg m 2 5 τὸν — 730, 3 ἄφθο-
 
 νον ad versus comoediae Atticae revocavit Kockius Herm. XXI
 
@@ -168,10 +170,7 @@ Hec. 285 9 Luc. Icarom. 27</note>
 μέλας τ’ ἀκριβῶς καὶ κατεσκληκώς, λίθων | οὐδὲν διαφέρων, καὶ
 
 ποτόν γ’ ἦν σύμμετρον | ὕδωρ, ὅ μοι τὸ φρέαρ ἀνίησ’ ἄφθονον.</note>
-
-
-
-<pb n="730"/>
+               <pb n="730"/>
 
 
 
@@ -181,9 +180,10 @@ Hec. 285 9 Luc. Icarom. 27</note>
 
 ησιν ἄφθονον. ᾧπερ ἥδιον ἐχρώμην αὐτὸς ἢ τοῖς εὐ-
 
-ώδεσι καὶ καλλίστοις τῶν οἴνων ἕτεροι.</p></div>
-
-<div type="textpart" subtype="chapter" n="4"><p>ἰχθύων δὲ
+ώδεσι καὶ καλλίστοις τῶν οἴνων ἕτεροι.</p>
+         </div>
+         <div n="4" type="chapter">
+            <p>ἰχθύων δὲ
 
 <lb n="5"/> ἢ κρεωδαισίας τοσοῦτον ἀπεῖχον ὥστ’, εἴ ποτέ μοι
 
@@ -199,9 +199,10 @@ Hec. 285 9 Luc. Icarom. 27</note>
 
 παντός, οὕτ’ ὢ πρὸς τὴν φύσιν ἀπεμαχόμην καὶ ταύτῃ
 
-τῆς νίκης ὑπεξανιστάμην ὡς ἥκιστα.</p></div>
-
-<div type="textpart" subtype="chapter" n="5"><p>ἄλλους μὲν
+τῆς νίκης ὑπεξανιστάμην ὡς ἥκιστα.</p>
+         </div>
+         <div n="5" type="chapter">
+            <p>ἄλλους μὲν
 
 εἶχον σημπόσια, πανηγύρεις, ἐκκλησίαι, θέατρα, ὅθεν
 
@@ -215,21 +216,20 @@ Hec. 285 9 Luc. Icarom. 27</note>
 
 ματα ἐπιδοῦναι καὶ ἁδροτέρων ἀπολαῦσαι τῶν βαλαν-
 
-τίων.</p></div>
-
-<div type="textpart" subtype="chapter" n="6"><p>εὖ γὰρ ᾔδειν ὡς, εἴ γέ τις τῷ φθάσαντι
+τίων.</p>
+         </div>
+         <div n="6" type="chapter">
+            <p>εὖ γὰρ ᾔδειν ὡς, εἴ γέ τις τῷ φθάσαντι
 
 <note type="footnote">3 cf. t. V 24, 5. Dio Chrys. or VI ’ξ 12 5 Themist. or.
 
 II p. 28 a 9 [Luc.] Ocyp. 108 10 cf. p. 422, 9 12 Luc.
 
 Demon. 63 19 cf. p. 46, 1 sq.</note>
-
-<note type="footnote">19 Ἡσιόδου· εἰ γάρ κεν καὶ σμικρὸν ἐπὶ σμικρὸν καταθεῖο καὶ
+               <note type="footnote">19 Ἡσιόδου· εἰ γάρ κεν καὶ σμικρὸν ἐπὶ σμικρὸν καταθεῖο καὶ
 
 θαμὰ τοῦθ’ ἔρδοις, τάχα κεν μέγα καὶ τὸ γένοιτο (op. 361 sq.) P2</note>
-
-<note type="footnote">5 κρεωδαισίας scripsi κραιωδαισίαις Ρ sed ε supra αἰ m2
+               <note type="footnote">5 κρεωδαισίας scripsi κραιωδαισίαις Ρ sed ε supra αἰ m2
 
 κρεωδαισίαις Boiss 12 ἄλλους — 731, 4 συνιστάμενον ad
 
@@ -248,10 +248,7 @@ versus comoediae Atticae revocavit Kockius 11. 11. 399 et 1508
 πληρούμενον 16 ταῦτ’ Ρ corr Boiss 17 καὶ τι μηχανώμε-
 
 νον ἐφῶτε Ρ corr Boiss 18 ἁδροτέρων Ρ corr Boiss</note>
-
-
-
-<pb n="731"/>
+               <pb n="731"/>
 
 
 
@@ -263,9 +260,10 @@ versus comoediae Atticae revocavit Kockius 11. 11. 399 et 1508
 
 ἄλλοθεν ἄλλης συνεισρεούσης ἔξεστιν ὁρᾶν συνιστά-
 
-μενον.</p></div>
-
-<div type="textpart" subtype="chapter" n="7"><p>ποσάκις ταῖς νεφέλαις ἐμεμψάμην, ποσάκις <lb n="5"/>
+μενον.</p>
+         </div>
+         <div n="7" type="chapter">
+            <p>ποσάκις ταῖς νεφέλαις ἐμεμψάμην, ποσάκις <lb n="5"/>
 
 ταύταις λοίδορον ἀφῆκα φωνήν, ὅτι μὴ καὶ νῦν, ὥσπερ
 
@@ -277,9 +275,10 @@ versus comoediae Atticae revocavit Kockius 11. 11. 399 et 1508
 
 τοῖς τότε ξυντετάχθαι βροτοῖς ἢ γοῦν ταὐτὰ συμβῆναι <lb n="10"/>
 
-καὶ νῦν.</p></div>
-
-<div type="textpart" subtype="chapter" n="8"><p>ποσάκις πρὸς τὴν Τύχην διείλεγμαι μονον-
+καὶ νῦν.</p>
+         </div>
+         <div n="8" type="chapter">
+            <p>ποσάκις πρὸς τὴν Τύχην διείλεγμαι μονον-
 
 ουχὶ κατ’ ὀφθαλμοὺς ἐντυγχάνων αὐτῇ· μέχρι τίνος
 
@@ -294,10 +293,8 @@ versus comoediae Atticae revocavit Kockius 11. 11. 399 et 1508
 γασαι. ἂν ᾖ βουλομένη σοι, τὸ προσιστάμενον
 
 <note type="footnote">7 cf. ad p. 10, 16. ep. 873 8 II. λ 637 15 Hes. theog. 730</note>
-
-<note type="footnote">17 ἀττικῶς ἤγουν εἰ ἐθέλῃς P2 | ἤγουν ἐμποδίζον P2</note>
-
-<note type="footnote">1 κατὰ βραχὺ scripsi καταβραχὺ Ρ Boiss 5 ποσάκις —
+               <note type="footnote">17 ἀττικῶς ἤγουν εἰ ἐθέλῃς P2 | ἤγουν ἐμποδίζον P2</note>
+               <note type="footnote">1 κατὰ βραχὺ scripsi καταβραχὺ Ρ Boiss 5 ποσάκις —
 
 732, 3 διαλέγεσθαι ad versus comoediae Atticae revocavit Kockius
 
@@ -322,10 +319,7 @@ versus comoediae Atticae revocavit Kockius 11. 11. 399 et 1508
 Κορινθίοις Ρ Boiss | ἐπομβρῆσαν Ρ corr Boiss 10 ταὐτὰ
 
 scripsi ταῦτα Ρ sed ~ eras et ` supra α m2, Boiss</note>
-
-
-
-<pb n="732"/>
+               <pb n="732"/>
 
 
 
@@ -333,9 +327,10 @@ scripsi ταῦτα Ρ sed ~ eras et ` supra α m2, Boiss</note>
 
 παροιμίας ἐπὶ κωφῷ, ἀλλ’ αἰγιαλοῖς ἐδόκουν προσομι-
 
-λεῖν ἢ νεκρῷ πρὸς οὖς διαλέγεσθαι.</p></div>
-
-<div type="textpart" subtype="chapter" n="9"><p>ἐπεὶ οὔτε τῶν
+λεῖν ἢ νεκρῷ πρὸς οὖς διαλέγεσθαι.</p>
+         </div>
+         <div n="9" type="chapter">
+            <p>ἐπεὶ οὔτε τῶν
 
 νεφελῶν οὔτε τῆς Τύχης ἀπωνάμην οὐδέν, αὐτὸς ἐμαυ-
 
@@ -347,9 +342,10 @@ scripsi ταῦτα Ρ sed ~ eras et ` supra α m2, Boiss</note>
 
 ἐπέδωκε, πῶς ἂν εἴποις, τοῦτον ἡδέως ἑώρων καὶ ψυ-
 
-χῆς ἐναπολαβεῖν ἔνδον ἤθελον μονονού.</p></div>
-
-<div type="textpart" subtype="chapter" n="10"><p>προσῄει
+χῆς ἐναπολαβεῖν ἔνδον ἤθελον μονονού.</p>
+         </div>
+         <div n="10" type="chapter">
+            <p>προσῄει
 
 <lb n="10"/> προσαιτῶν καὶ πρὸς μεταδόσεις προσεκαλεῖτο, ἐγὼ δὲ
 
@@ -372,8 +368,7 @@ scripsi ταῦτα Ρ sed ~ eras et ` supra α m2, Boiss</note>
 μᾶλλον αἱρούμενος ἢ γοῦν ὀβολὸν τῶν ἐμῶν προέσθαι
 
 <lb n="20"/> χείρων.</p>
-
-<p>11. Ἀλλ᾿ ἐγὼ μὲν οὕτως, οἵ γε μὴν ἀνειμένως
+            <p>11. Ἀλλ᾿ ἐγὼ μὲν οὕτως, οἵ γε μὴν ἀνειμένως
 
 βιοῦντες καὶ χλιδῇ χαίροντες ἀπ’ ἐναντίας ἐμοὶ καί,
 
@@ -392,14 +387,10 @@ Theocr. Χ 55 c. schol. Arist. vesp. 1357 c. schol. Aristot. eth.
 Nic. IV 3 p. 1121 b 27; Mor. Magn. I 25 p. 1192 a 9. 21 Thuc.
 
 II 39,2</note>
-
-<note type="footnote">10 μεταδώσεις Ρ corr Boiss 21 hunc locum lacunam
+               <note type="footnote">10 μεταδώσεις Ρ corr Boiss 21 hunc locum lacunam
 
 sibi contraxisse censet Boiss 22 ἀπεναντίας Ρ corr Boiss</note>
-
-
-
-<pb n="733"/>
+               <pb n="733"/>
 
 
 
@@ -409,9 +400,10 @@ sibi contraxisse censet Boiss 22 ἀπεναντίας Ρ corr Boiss</note>
 
 γε καὶ δεῖ. πῶς γὰρ ἔμελλον, ὅπου γε καὶ πρὸς τὴν
 
-ὄψιν ἀηδῶς διεκείμην αὐτήν;</p></div>
-
-<div type="textpart" subtype="chapter" n="12"><p>εἰ γὰρ ἔστιν ὅτε
+ὄψιν ἀηδῶς διεκείμην αὐτήν;</p>
+         </div>
+         <div n="12" type="chapter">
+            <p>εἰ γὰρ ἔστιν ὅτε
 
 τινὶ συμβὰν οὕτω καὶ περιτύχοιμι, ἢ ἑτέραν ἐτραπό- <lb n="5"/>
 
@@ -437,9 +429,9 @@ sibi contraxisse censet Boiss 22 ἀπεναντίας Ρ corr Boiss</note>
 
 τελείας ἐξὸν εὐώνοις περιβλήμασι τὴν χρείαν ὰπο-
 
-πληροῦν;</p> <note type="marginal">Boiss. p. 169</note>
-
-<p>13. Ἀλλ’ οὕτω μὲν αὐτὸς βιούς, οὕτω δ’ ἀποστόρ-
+πληροῦν;</p>
+            <note type="marginal">Boiss. p. 169</note>
+            <p>13. Ἀλλ’ οὕτω μὲν αὐτὸς βιούς, οὕτω δ’ ἀποστόρ-
 
 γως ἔχων τῶν παρὰ πολὺ τοῖς ἐμοῖς τρόποις μὴ συμ-
 
@@ -452,22 +444,15 @@ sibi contraxisse censet Boiss 22 ἀπεναντίας Ρ corr Boiss</note>
 ἡγησάμενος φυλακήν, προσέτι καὶ τῇ τῶν γειτόνων
 
 <note type="footnote">1 cf. p. 256, 18 7 cf. t. VI 656, 4 9 Luc. Icarom. 29</note>
-
-<note type="footnote">10 II. ’ξ 214 sq. 11 cf. p. 693,11 12 sq. Luc. Icarom.
+               <note type="footnote">10 II. ’ξ 214 sq. 11 cf. p. 693,11 12 sq. Luc. Icarom.
 
 14 15 II ἴ’ 312; Od. ’ξ 156</note>
-
-<note type="footnote">15 σημείωσαι Ὁμηρικόν P2</note>
-
-<note type="footnote">9 χρησοπάστους Ρ corr Boiss 12 τούτοις] πρὸς αὐτὸν</note>
-
-<note type="footnote">13 στυλπνότητος Ρ corr Boiss 15 τι Ρ corr Boiss
+               <note type="footnote">15 σημείωσαι Ὁμηρικόν P2</note>
+               <note type="footnote">9 χρησοπάστους Ρ corr Boiss 12 τούτοις] πρὸς αὐτὸν</note>
+               <note type="footnote">13 στυλπνότητος Ρ corr Boiss 15 τι Ρ corr Boiss
 
 19 παραπολὺ Ρ Boiss</note>
-
-
-
-<pb n="734"/>
+               <pb n="734"/>
 
 
 
@@ -479,9 +464,10 @@ sibi contraxisse censet Boiss 22 ἀπεναντίας Ρ corr Boiss</note>
 
 ἀποφήναντες, ἐκείνους δὲ πενίας εἰς ἔσχατον περιστή-
 
-<lb n="5"/> σαντες.</p></div>
-
-<div type="textpart" subtype="chapter" n="14"><p>τοῦτο δὴ δεδιὼς ἐν μυχῷ γῆς κατορύττω
+<lb n="5"/> σαντες.</p>
+         </div>
+         <div n="14" type="chapter">
+            <p>τοῦτο δὴ δεδιὼς ἐν μυχῷ γῆς κατορύττω
 
 τὰ χρήματα συγκατορύξας ἐμαυτὸν τρόπον ἕτερον. οὔ-
 
@@ -493,9 +479,10 @@ sibi contraxisse censet Boiss 22 ἀπεναντίας Ρ corr Boiss</note>
 
 <lb n="10"/> περιήθρουν, περιεσκόπουν μή πού τι καὶ συνηνέχθη
 
-τῶν ἀβουλήτων.</p></div>
-
-<div type="textpart" subtype="chapter" n="15"><p>ἀλλὰ γάρ, οἴμοι τῶν ἐπεισφρη-
+τῶν ἀβουλήτων.</p>
+         </div>
+         <div n="15" type="chapter">
+            <p>ἀλλὰ γάρ, οἴμοι τῶν ἐπεισφρη-
 
 σάντων δεινῶν, πῶς εἴπω; πῶς διεξέλθω; ἐπέχεταί μοι
 
@@ -507,9 +494,10 @@ sibi contraxisse censet Boiss 22 ἀπεναντίας Ρ corr Boiss</note>
 
 τὸν μὲν βόθυνον ἀνορωρυγμένον ὁρῶ, τὰ χρήματα δὲ
 
-οὐδαμοῦ.</p></div>
-
-<div type="textpart" subtype="chapter" n="16"><p>ὧς δὲ εἶδον, ὡς κατενόησα, ὥσπερ ἤχῳ
+οὐδαμοῦ.</p>
+         </div>
+         <div n="16" type="chapter">
+            <p>ὧς δὲ εἶδον, ὡς κατενόησα, ὥσπερ ἤχῳ
 
 βροντῆς παταχθεὶς ἐννεὸς ἐγεγόνειν. τὴν τῆς Γοργόνος
 
@@ -526,18 +514,12 @@ sibi contraxisse censet Boiss 22 ἀπεναντίας Ρ corr Boiss</note>
 μοῖς ἐχρησάμην. ἔπεισί μοι θαυμάζειν ὅπως οὐκ ἀφῆκα
 
 <note type="footnote">7 cf. ad t. V 514, 16 20 Luc. Tox. 17</note>
-
-<note type="footnote">18 ἤγουν ἐμβρόντητος in marg P2</note>
-
-<note type="footnote">1 προπολλοῦ Ρ corr Boiss 2 αὐτοῖς scripsi αὐτῶν Ρ
+               <note type="footnote">18 ἤγουν ἐμβρόντητος in marg P2</note>
+               <note type="footnote">1 προπολλοῦ Ρ corr Boiss 2 αὐτοῖς scripsi αὐτῶν Ρ
 
 Boiss qui αὐτοῖς αὐτῶν coni 11 ἐπισφρησάντων Ρ corr Boiss</note>
-
-<note type="footnote">18 ἐνεὸς Boiss 20 οὗ? 23 βόθρου?</note>
-
-
-
-<pb n="735"/>
+               <note type="footnote">18 ἐνεὸς Boiss 20 οὗ? 23 βόθρου?</note>
+               <pb n="735"/>
 
 
 
@@ -546,8 +528,7 @@ Boiss qui αὐτοῖς αὐτῶν coni 11 ἐπισφρησάντων Ρ co
 μὴν σιδήρου τὴν ψυχὴν ἀπεσφυρηλάτημαι ἀπαθῶς
 
 ἐνέγκαι τοσαύτην, ὦ Γῆ καὶ Ἥλιε, συμφοράν.</p>
-
-<p>17. Τις ὁ ταῦτά με δράσας; τίνι τὸ συμβὰν ἐπι-
+            <p>17. Τις ὁ ταῦτά με δράσας; τίνι τὸ συμβὰν ἐπι-
 
 γράψομαι; εἴθε ποῦ γῆς ἐστιν ὁ κάκιστ’ ἀπολούμενος <lb n="5"/>
 
@@ -557,9 +538,10 @@ Boiss qui αὐτοῖς αὐτῶν coni 11 ἐπισφρησάντων Ρ co
 
 ἀπορρῆξαι τὴν ψυχὴν παρεσκεύασα. τάχ’ ἂν οὕτω, κἂν
 
-ᾖ τῆς ἀξίας ἐλάττων, δίκην ἀπέτισε.</p></div>
-
-<div type="textpart" subtype="chapter" n="18"><p>ποῦ μοι τὸ
+ᾖ τῆς ἀξίας ἐλάττων, δίκην ἀπέτισε.</p>
+         </div>
+         <div n="18" type="chapter">
+            <p>ποῦ μοι τὸ
 
 Πυθικὸν χρηστήριον νῦν, ὡς τοῦ προκειμένου πέρι <lb n="10"/>
 
@@ -575,9 +557,10 @@ Boiss qui αὐτοῖς αὐτῶν coni 11 ἐπισφρησάντων Ρ co
 
 ’μαι; ἐκ τῶν περιλειφθέντων χρημάτων; ἀλλ’ ἀπολώ-
 
-λασιν ἅπαντα.</p></div>
-
-<div type="textpart" subtype="chapter" n="19"><p>τίς γένωμαι; ποῖ τράπωμαι; θανεῖν
+λασιν ἅπαντα.</p>
+         </div>
+         <div n="19" type="chapter">
+            <p>τίς γένωμαι; ποῖ τράπωμαι; θανεῖν
 
 ἢ περιεῖναι βέλτιον ἥγημαι. τὸ πᾶσιν ἀπευκτὸν ἐμοὶ
 
@@ -596,20 +579,15 @@ Boiss qui αὐτοῖς αὐτῶν coni 11 ἐπισφρησάντων Ρ co
 <note type="footnote">1 sq. Pind. fr. 123,3 Schr. 3 cf. ad p. 697,10
 
 11 Luc. fug. 10 21 cf. ad p. 723,2</note>
-
-<note type="footnote">5 ποῦ scripsi ποῖ Ρ Boiss qui ποῦ coni | ἔστιν Ρ</note>
-
-<note type="footnote">9 ἐλάττω Ρ corr Boiss 10 περὶ Ρ corr Boiss 12 ἀν-
+               <note type="footnote">5 ποῦ scripsi ποῖ Ρ Boiss qui ποῦ coni | ἔστιν Ρ</note>
+               <note type="footnote">9 ἐλάττω Ρ corr Boiss 10 περὶ Ρ corr Boiss 12 ἀν-
 
 ήσει scripsi ἀνῆκε Ρ ἂν ἀνῆκε coni Boiss 13 ἴνα scripsi
 
 καὶ Ρ Boiss | πυθοίμην ἂν coni Boiss 18 ἡγοῦμαι coni
 
 Boiss 24 βουλόμενος τίς Ρ corr Boiss</note>
-
-
-
-<pb n="736"/>
+               <pb n="736"/>
 
 
 
@@ -618,19 +596,11 @@ Boiss 24 βουλόμενος τίς Ρ corr Boiss</note>
 τοσοῦτον, ὥς φασιν, ἰσχύος περίεστιν ὡς ἀμνηστίαν
 
 τοῖς πεπωκόσιν ἐργάζεσθαι.</p>
-
-<note type="footnote">1 Anth. Pal. VII 17, 4; Plan. IV 244,4</note>
-
-<note type="footnote">1 πηγὴ δὲ αὕτη post ληθεδόνος Ρ Boiss qui ut scholium
+            <note type="footnote">1 Anth. Pal. VII 17, 4; Plan. IV 244,4</note>
+            <note type="footnote">1 πηγὴ δὲ αὕτη post ληθεδόνος Ρ Boiss qui ut scholium
 
 deleudum vidit</note>
-
-</div>
-
-</div>
-
-
-
-</body>
-  </text>
+         </div>
+      </body>
+   </text>
 </TEI>

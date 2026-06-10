@@ -1,101 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">De ossibus ad tirones</title>
-                <author>Galen</author>
-                <editor>Karl Gottlob Kühn</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De ossibus ad tirones</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0057.tlg012.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg012.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-                        <author>Galen</author>
-                        <editor>Karl Gottlob Kühn</editor>
-                        <imprint>
-                            <publisher>Knobloch</publisher>
-                            <pubPlace>Leipzig</pubPlace>
-                            <biblScope unit="vol">2</biblScope>
-                            <biblScope unit="pp" from="732" to="778">732-778</biblScope>
-                            <date>1821</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://archive.org/stream/hapantaoperaomni02galeuoft#page/732/mode/2up">Internet Archive</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg012.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Leipzig</pubPlace>
+                     <biblScope unit="vol">2</biblScope>
+                     <biblScope unit="pp" from="732" to="778">732-778</biblScope>
+                     <date>1821</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://archive.org/stream/hapantaoperaomni02galeuoft#page/732/mode/2up">Internet Archive</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-                <language ident="eng">English</language>
-                <language ident="lat">Latin</language>
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg012.1st1K-grc1">
-                <pb n="732"/>
-
-                <div type="textpart" subtype="chapter" n="prooemium">
-                    <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΟΣΤΩΝ ΤΟΙΣ <lb/>ΕΙΣΑΓΟΜΕΝΟΙΣ.</head>
-                    <head>ΠΡΟΟΙΜΙΟΝ.</head>
-                    <p>Τῶν ὀστῶν ἕκαστον οἷόν τέ ἐστιν αὐτὸ καθ’ ἑαυτὸ καὶ <lb/>ὡς ἔχει τῆς πρὸς
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="eng">English</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg012.1st1K-grc1">
+         <pb n="732"/>
+         <div n="prooemium" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΟΣΤΩΝ ΤΟΙΣ <lb/>ΕΙΣΑΓΟΜΕΝΟΙΣ.</head>
+            <head>ΠΡΟΟΙΜΙΟΝ.</head>
+            <p>Τῶν ὀστῶν ἕκαστον οἷόν τέ ἐστιν αὐτὸ καθ’ ἑαυτὸ καὶ <lb/>ὡς ἔχει τῆς πρὸς
                         ἄλληλα συντάξεως, ἐπίστασθαί φημι χρῆναι <lb/>τὸν ἰατρὸν, εἴπερ γε ὀρθῶς
                         μέλλει τά τε κατάγματα <lb/>αὐτῶν καὶ τὰ ἐξαρθρήματα ἰᾶσθαι. δῆλον γὰρ δὴ,
                         ὡς <lb/>ἐν ἅπασι τοῖς ἐν ἰατρικῇ σκοπὸν ἔχειν δεῖ τὸ κατὰ φύσιν. <lb/>ὅστις
@@ -118,7 +126,7 @@
                         τῶν ἄλλων ὀνομάτων, οἷς <lb/>χρησόμεθα κατὰ τὸν λόγον, ἤδη διελθεῖν, ὅπως μὴ
                         μεταξὺ <lb/>τῆς διηγήσεως χρωμένων αὐτοῖς ἢ ἀσαφὲς γένηται τὸ
                         <lb/>λεγόμενον, ἢ τὸ συνεχὲς τῆς διδασκαλίας διακόπτηται, τὸ <lb/>
-                        <milestone unit="ed2page" n="10"/>παραπίπτον ἀεὶ σαφηνίζειν προαιρουμένων
+               <milestone unit="ed2page" n="10"/>παραπίπτον ἀεὶ σαφηνίζειν προαιρουμένων
                         ἡμῶν. ἄριστον <lb/>δέ μοι δοκεῖ, ἐνθένδε ποθὲν ἄρξασθαι. τῶν ἐν τοῖς
                         ἀνθρώποις <lb/>ὀστῶν ἁπάντων συνημμένων ἀλλήλοις ἡ μὲν ὅλη <lb/>σύνταξις
                         ὀνομάζεται σκελετός· ὥστε τινὲς ἤδη καὶ τὰς βίβλους <lb/>αὑτῶν, ἐν αἷς περὶ
@@ -196,9 +204,9 @@
                         συνθήκῃ <lb/>καιρὸς ἂν εἴη λέγειν ἤδη περὶ τῶν ὀστῶν ἰδίᾳ καθ’ <lb/>ἕκαστον,
                         ἀρξαμένους ἀπὸ τοῦ κρανίου. καλοῦσι γὰρ οὕτω <lb/>τὸ τῇς κεφαλῆς ὀστοῦν.
                     </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="1">
-                    <p>Εἴρηται μὲν ἤδη καὶ πρόσθεν, ὅτι τε <lb/>κράνιον ὀνομάζεται τὸ τῆς κεφαλῆς
+         </div>
+         <div n="1" type="chapter">
+            <p>Εἴρηται μὲν ἤδη καὶ πρόσθεν, ὅτι τε <lb/>κράνιον ὀνομάζεται τὸ τῆς κεφαλῆς
                         ὀστοῦν, ὅτι τε ῥαφαί <lb/>τινες ὑπάρχουσι κατ’ αὐτό. πόσαι δέ εἰσιν αὗται
                         καὶ τίνες, <lb/>ὁποῖόν τε τὸ εἶδος ἑκάστης αὐτῶν, οὐδέπω μὲν εἴρηται <pb n="740"/> πρόσθεν, εἰρήσεται δὲ ἐν τῷδε. καὶ πρῶτόν γε, ὅτι παρὰ <lb/>τὸ
                         σχῆμα τῆς κεφαλῆς ἥ τε θέσις αὐτῶν ὑπαλλάττεται <lb/>καὶ τὸ πλῆθος. ἔστι γὰρ
@@ -287,15 +295,15 @@
                         τὸν κρόταφον. περὶ <lb/>δὲ τῶν τρημάτων τῆς κεφαλῆς ἐν ταῖς τῶν ἀγγείων καὶ
                         <lb/>νεύρων ἀνατομαῖς εἰρήσεται. καὶ γὰρ γέγονεν ἐκείνων ἕνεκα, <pb n="746"/> καὶ διέρχεται καθ’ ἕκαστον αὐτῶν ἢ ἀρτηρία τις, ἢ φλὲψ, <lb/>ἢ νεῦρον, ἤ
                         τινα τούτων, ἢ πάντα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>Τοῦ κροταφίτου μυὸς ὀστοῦν προβέβληται, <lb/>λοξὴν κατὰ μέσον ἑαυτοῦ περιέχον
+         </div>
+         <div n="2" type="chapter">
+            <p>Τοῦ κροταφίτου μυὸς ὀστοῦν προβέβληται, <lb/>λοξὴν κατὰ μέσον ἑαυτοῦ περιέχον
                         ῥαφὴν, ὥστ’ εἶναι συνεχῆ <lb/>τὴν μὲν ὄπισθεν ἅπασαν μοῖραν αὐτοῦ τῷ κατὰ τὸ
                         <lb/>οὖς ὀστῷ τῆς κεφαλῆς, τὴν δὲ ἔμπροσθεν τῷ κατὰ τὸν <lb/>μικρὸν κανθὸν
                         πέρατι τῆς ὀφρύος. ὀνομάζεται δὲ ὅλον τὸ <lb/>ὀστοῦν τοῦτο ζύγωμα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>Περὶ μὲν οὖν τῶν ἀφοριζουσῶν ῥαφῶν τὴν <lb/>ἄνω γένυν ἀπό τε τῆς κεφαλῆς καὶ
+         </div>
+         <div n="3" type="chapter">
+            <p>Περὶ μὲν οὖν τῶν ἀφοριζουσῶν ῥαφῶν τὴν <lb/>ἄνω γένυν ἀπό τε τῆς κεφαλῆς καὶ
                         τοῦ σφηνοειδοῦς ὀστοῦ <lb/>προείρηται· <milestone unit="ed2page" n="14"/>περὶ δὲ τῶν κατ’ αὐτὴν τὴν γένυν ἐν τῷδε <lb/>λεχθήσεται. πρότερον ἴσως
                         ἄμεινόν ἐστι διηγήσασθαι τὸ <lb/>τῆς ῥαφῆς ὄνομα, πῶς ἅπασι λέλεκται τοῖς
                         νεωτέροις ἀνατομικοῖς. <lb/>εἰώθασι γὰρ καὶ τὰς καθ’ ἁρμονίαν συνθέσεις
@@ -346,9 +354,9 @@
                         ἥ <lb/>τ’ ἐγκαρσία τοῦ σφηνοειδοῦς ὀστοῦ, ἡ μεταξὺ τῶν ἐσχάτων <lb/>ὀδόντων.
                         αὗται μὲν οὖν τῶν περιεχόντων αὐτὰ χωρίζουσιν, <pb n="750"/> ἀλλήλων δὲ κατὰ
                         τὴν εὐθεῖαν τὴν ἐν οὐρανίσκῳ ῥαφὴν <lb/>διώρισται. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>Καὶ μὴν καὶ τὰ τῆς ῥινὸς ὀστᾶ δύο ἐστὶν, <lb/>ἀφοριζόμενα ταῖς ἀπὸ τοῦ
+         </div>
+         <div n="4" type="chapter">
+            <p>Καὶ μὴν καὶ τὰ τῆς ῥινὸς ὀστᾶ δύο ἐστὶν, <lb/>ἀφοριζόμενα ταῖς ἀπὸ τοῦ
                         μεσοφρύου καθηκούσαις ῥαφαῖς, <lb/>ἃς ἄρτι τριττὰς τὰς πάσας ἠρίθμησα κατὰ
                         τὴν τῶν μεγίστων <lb/>ὀστῶν διήγησιν. ἔστι δὲ καὶ κατ’ αὐτὴν τὴν ῥῖνα
                         <lb/>τρίτη τις ἄλλη παρ’ αὐτὰς ῥαφὴ, κοινὴ τῶν ἰδίων αὐτῆς <lb/>ὀστῶν, ἀπὸ
@@ -385,9 +393,9 @@
                         τὰ μέγιστα τῶν ἐν ὅλῃ τῇ γένυϊ, τὰ κατὰ τὰ <lb/>μῆλά τε καὶ τοὺς ὀδόντας,
                         ὀλίγου δεῖν, ἅπαντας, ὡς ἔμπροσθεν <lb/>εἴρηται· καὶ τὸ σφηνοειδὲς, ἀζυγὲς
                         ὂν ἐν ἅπασι <lb/>μόνον. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>Ἐν τοῖς ὀστοῖς ἀριθμητέον ἐστὶ καὶ τοὺς <lb/>ὀδόντας, εἰ καί τισι τῶν
+         </div>
+         <div n="5" type="chapter">
+            <p>Ἐν τοῖς ὀστοῖς ἀριθμητέον ἐστὶ καὶ τοὺς <lb/>ὀδόντας, εἰ καί τισι τῶν
                         σοφιστῶν οὐ δοκεῖ. καίτοιγε δίκαιοι <lb/>ἦσαν, εἰ μὴ τοῦτο καλεῖν <milestone unit="ed2page" n="16"/>αὐτοὺς ἐπιτρέπουσιν <lb/>ἡμῖν, ἑτέραν δοῦναι
                         προσηγορίαν αὐτοῖς. ὅτι μὲν γὰρ <lb/>οὔτε χόνδρους, οὔτε ἀρτηρίας, οὔτε
                         φλέβας, οὔτε νεῦρα <pb n="753"/> προσῆκεν ὀνομάζειν αὐτοὺς, ἄντικρυς δῆλον·
@@ -416,9 +424,9 @@
                         <lb/>ὀνομάζονται. μετειλήφασι δὲ τῶν ἀπὸ ἐγκεφάλου νεύρων <lb/>τῶν μαλακῶν
                         ὀδόντες μόνοι τῶν ἄλλων ὀστῶν, ὅθεν περ <lb/>καὶ σαφῶς αἰσθάνονται μόνοι.
                     </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>Οὐδὲ τὸ τῆς κάτω γένυος ὀστοῦν ἐστιν <lb/>ἁπλοῦν, ὡς ἄν τῳ δόξειεν. ἑψόμενον
+         </div>
+         <div n="6" type="chapter">
+            <p>Οὐδὲ τὸ τῆς κάτω γένυος ὀστοῦν ἐστιν <lb/>ἁπλοῦν, ὡς ἄν τῳ δόξειεν. ἑψόμενον
                         γὰρ καὶ τοῦτο διαλύεται <lb/>κατ’ ἄκρον τὸ γένειον, ὡς φαίνεσθαι σαφῶς, ὅτι
                         <lb/>συνεπεφύκει. τὸ δὲ ἀντεινόμενον ὡς ἐπὶ τὴν κεφαλὴν αὐτοῦ <pb n="755"/>
                         μέρος εἰς δύο τελευτᾷ πέρατα. καὶ τούτων τῶν περάτων <lb/>τῷ μὲν ὀξέϊ τὸν ἐκ
@@ -426,9 +434,9 @@
                         πρὸς τὸ τῆς κεφαλῆς <lb/>ὀστοῦν ὑπὸ τὴν ἀπόφυσιν τὴν μαστοειδῆ, κονδυλώδει
                         τινὶ <lb/>περιφερείᾳ κατὰ τῆς ἐνταῦθα γληνοειδοῦς κοιλότητος
                         <lb/>ἐπιβεβηκός. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>Τῆς ὅλης ῥάχεως οἱ σπόνδυλοι τέσσαρες <lb/>ἐπὶ τοῖς εἴκοσιν ὑπάρχουσι. παρὰ
+         </div>
+         <div n="7" type="chapter">
+            <p>Τῆς ὅλης ῥάχεως οἱ σπόνδυλοι τέσσαρες <lb/>ἐπὶ τοῖς εἴκοσιν ὑπάρχουσι. παρὰ
                         φύσιν γὰρ ἤδη τὸ πλέον <lb/>καὶ τοὔλαττον, ὥσπερ καὶ αἱ φοξαὶ κεφαλαί.
                         διαιρεῖται δὲ <lb/>ἡ σύμπασα σύνταξις αὐτῶν εἰς τράχηλόν τε καὶ νῶτον, καὶ
                         <lb/>ὀσφὺν, καὶ ἱερὸν ὀστοῦν. ὁ μὲν οὖν τράχηλος ἔζευκται τῇ <lb/>κεφαλῇ· ὁ
@@ -440,9 +448,9 @@
                         τὸν <lb/>νῶτον δώδεκα, κατὰ δὲ τὸν ὀσφὺν πέντε. περὶ πρώτων <pb n="756"/>
                         οὖν εἰρήσεται τῶν κατὰ τὸν αὐχένα. διαφέρει γὰρ οὐδὲν, <lb/>ἢ τράχηλον, ἢ
                         αὐχένα προσαγορεύειν αὐτόν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="8">
-                    <p>Τῶν κατὰ τὸν αὐχένα σπονδύλων οἱ πρῶτοι <lb/>μὲν δύο διήρθρωνται πάντῃ· τῶν
+         </div>
+         <div n="8" type="chapter">
+            <p>Τῶν κατὰ τὸν αὐχένα σπονδύλων οἱ πρῶτοι <lb/>μὲν δύο διήρθρωνται πάντῃ· τῶν
                         δὲ ἄλλων τῶν πέντε <lb/>τὸ πρόσω μέρος ἰσχυρὸς συμφύει δεσμός. οὐ γὰρ δὴ διὰ
                         <lb/>χόνδρου γε συμφύονται, καθάπερ οἴονταί τινες· ἀλλ’ ὁ τὰς <lb/>τοῦ
                         νωτιαίου δύο μήνιγγας ἔξωθεν περιλαμβάνων χιτὼν, <lb/>εἰς τὴν μεταξὺ χώραν
@@ -490,9 +498,9 @@
                         <lb/>διεκπίπτουσιν ἑκάτερος τῶν τοῦ τραχήλου σπονδύλων ἴσον <lb/>πως
                         συντελεῖ τῷ πρώτῳ· τῶν δὲ ἄλλων ἁπάντων ὁ ὑπερκείμενος <lb/>ἤτοι τὸ
                         πλεῖστον, ἢ τὸ σύμπαν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="9">
-                    <p>Ὅτι μὲν δώδεκα τὸν ἀριθμόν εἰσι τοῦ <lb/>θώρακος σπόνδυλοι, πρόσθεν εἴρηται,
+         </div>
+         <div n="9" type="chapter">
+            <p>Ὅτι μὲν δώδεκα τὸν ἀριθμόν εἰσι τοῦ <lb/>θώρακος σπόνδυλοι, πρόσθεν εἴρηται,
                         πλὴν εἰ σπάνιόν <lb/>τινι λείπων εἷς ἢ περιττεύων εὑρεθήσεται. καὶ τούτων δὲ
                         <lb/>αὐτῶν τὸ περιττεύειν τοῦ λείπειν σπανιώτερον, ἅπασι δ’ <lb/>αὐτοῖς αἱ
                         τῆς ἀκάνθης ἀποφύσεις μέγισται τυγχάνουσιν οὖσαι <lb/>μέχρι τοῦ δεκάτου.
@@ -511,9 +519,9 @@
                         γληνοειδεῖς. τῶν δὲ ἄλλων τοῖς μὲν <lb/>ὑπερκειμένοις τοῦ δεκάτου
                         κονδυλώδεις μέν εἰσιν αἱ ἀνάντεις, <lb/>γληνοειδεῖς δὲ αἱ κατάντεις, τοῖς δὲ
                         ὑποτεταγμένοις <lb/>ἀνάπαλιν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="10">
-                    <p>Περὶ τῶν κατὰ τὸν ὀσφὺν σπονδύλων τὰ <lb/>μὲν ἄλλα σχεδὸν ἤδη προείρηται. καὶ
+         </div>
+         <div n="10" type="chapter">
+            <p>Περὶ τῶν κατὰ τὸν ὀσφὺν σπονδύλων τὰ <lb/>μὲν ἄλλα σχεδὸν ἤδη προείρηται. καὶ
                         γὰρ ὅτι πέντε, καὶ <lb/>ὅτι μέγιστοι μὲν οὗτοι τῶν ἄλλων εἰσὶ καὶ παχύτατοι,
                         τὸ <lb/>δὲ ἔνδον ἑκάστου τρῆμα στενὸν, ὥσπερ γε καὶ ὁ κατ’ αὐτοὺς
                         <lb/>νωτιαῖος ἰσχνός· ἀλλὰ καὶ ὅτι τὰς ἀποφύσεις ἄνω <pb n="761"/> νευούσας
@@ -530,9 +538,9 @@
                         νεύρου τεταγμένη. καὶ αὕτη ποτὲ μὲν ἐν ἅπασίν <lb/>ἐστι, ποτὲ δὲ ἐν τοῖς
                         ὑστάτοις ἢ σμικρὰ παντάπασιν ἢ <lb/>οὐδ’ ὅλως ἐστίν. οἱ δὲ ὑπερκείμενοι διὰ
                         παντὸς ἔχουσιν <lb/>αὐτὴν, ὥσπερ καὶ οἱ ἔσχατοι τοῦ νώτου δύο. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="11">
-                    <p>[Περὶ τοῦ ἱεροῦ ὀστοῦ.] Καὶ τοῦτο τοῖς σπονδύλοις <lb/>ἀνάλογον ἔχει κατά γε
+         </div>
+         <div n="11" type="chapter">
+            <p>[Περὶ τοῦ ἱεροῦ ὀστοῦ.] Καὶ τοῦτο τοῖς σπονδύλοις <lb/>ἀνάλογον ἔχει κατά γε
                         τὴν πρὸς τὸν ὑπερκείμενον διάρθρωσιν. ﻿<pb n="762"/> ὑποδέχεται γὰρ αὐτοῦ
                         τὰς κατάντεις ἀποφύσεις, ὡς <lb/>ἐκεῖνος τὰς πρὸ αὑτοῦ. καὶ μέν γε καὶ τὴν
                         ἄκανθαν ὁμοίαν ἔχει <lb/>τοῖς ἄλλοις. αἱ δὲ εἰς τὸ πλάγιον ἀποφύσεις αὐτοῦ
@@ -545,9 +553,9 @@
                         μὲν τὰς συντάξεις τῶν οἷον σπονδύλων ἐν <lb/>αὐτῷ διεξέρχεται, καθάπερ καὶ
                         καθ’ ὅλην τὴν ῥάχιν· οὐ <lb/>μὴν ἐκ τῶν πλαγίων γε μερῶν, ἀλλ’ ἐκ τῶν ἔνδον
                         τε καὶ <lb/>ἔξωθεν. εἰσὶ δ’ ἅπασαι τρεῖς αὐτῶν συζυγίαι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="12">
-                    <p>Ἐπὶ τῷ πέρατι τοῦ πλατέος ἕτερον ὀστοῦν <lb/>ἐστι τὸ καλούμενον κόκκυξ, ἐκ
+         </div>
+         <div n="12" type="chapter">
+            <p>Ἐπὶ τῷ πέρατι τοῦ πλατέος ἕτερον ὀστοῦν <lb/>ἐστι τὸ καλούμενον κόκκυξ, ἐκ
                         τριῶν καὶ τοῦτο συγκείμενον <lb/>ἰδίων μορίων χονδρωδεστέρων, ἢ κατὰ τὸ
                         πλατὺ, καὶ μάλιστα <pb n="763"/> τὸ κατὰ τὸ πέρας ὑποκείμενον. διεξέρχεται
                         δὲ καὶ κατὰ <lb/>τὰς τούτων συντάξεις ἐκ τῶν ὀπίσω καὶ πρόσω μερῶν
@@ -556,9 +564,9 @@
                         καὶ τρίτη κατὰ τὴν <lb/>τοῦ δευτέρου πρὸς τὸ τρίτον. ὅσον δὲ ὑπόλοιπον τοῦ
                         νωτιαίου <lb/>κατὰ τὸ πέρας αὐτοῦ τοῦ τρίτου διεξέρχεται μόνον <lb/>ἀζυγές.
                     </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="13">
-                    <p>Στέρνον καὶ πλευραὶ καὶ τῆς ῥάχεως οἳ <lb/>κατὰ τὸν νῶτον σπόνδυλοι τὰ τοῦ
+         </div>
+         <div n="13" type="chapter">
+            <p>Στέρνον καὶ πλευραὶ καὶ τῆς ῥάχεως οἳ <lb/>κατὰ τὸν νῶτον σπόνδυλοι τὰ τοῦ
                         θώρακός ἐστιν ὀστᾶ, <lb/>δώδεκα μὲν ἑκατέρωθεν αἱ πλευραὶ, καθάπερ καὶ οἱ
                         σπόνδυλοι. <lb/>διήρθρωται γὰρ ἑκάστη πρὸς ἕνα, τὰ δὲ τοῦ στέρνου
                         <lb/>συνήρθρωται μὲν ἀλλήλοις, ἑπτὰ δ’ ἐστὶ τὸν ἀριθμὸν, <lb/>ὅσαι περ καὶ
@@ -593,9 +601,9 @@
                         μῆκος δὲ οὐδὲ ταύταις οὔτε ταῖς <lb/>ἄλλαις πλευραῖς ἴσον ἁπάσαις ἐστὶν,
                         ἀλλ’ αἱ μὲν ἄνωθέν <lb/>τε καὶ κάτωθεν βραχύτεραι τυγχάνουσιν οὖσαι,
                         μακρότεραι <lb/>δὲ αἱ μέσαι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="14">
-                    <p>Αἱ ὠμοπλάται κεῖνται μὲν ὄπισθεν τοῦ <lb/>θώρακος· συμφύονται δὲ διὰ μυῶν τῷ
+         </div>
+         <div n="14" type="chapter">
+            <p>Αἱ ὠμοπλάται κεῖνται μὲν ὄπισθεν τοῦ <lb/>θώρακος· συμφύονται δὲ διὰ μυῶν τῷ
                         τε κατ’ ἰνίον ὀστῷ <lb/>τῆς κεφαλῆς, καὶ τῇ τῆς ῥάχεως ἀκάνθῃ, καὶ ταῖς τοῦ
                             <pb n="766"/> θώρακος πλευραῖς, καὶ τῷ προτεταγμένῳ τοῦ λάρυγγος
                         <lb/>ὀστῷ. ἀνώμαλοι δέ εἰσιν ἱκανῶς καὶ πᾶσι τοῖς μέρεσιν <lb/>ἀνόμοιαι·
@@ -613,18 +621,18 @@
                         <lb/>ἔστι δὲ καὶ ἄλλη ταύτῃ ἔσωθεν ἀπόφυσις ὀξεῖα καὶ σμικρά. <lb/>καλοῦσι
                         δ’ αὐτὴν οἱ μὲν ἀγκυροειδῆ, οἱ δὲ κορακοειδῆ, ﻿<pb n="767"/> διότι τὸ πέρας
                         αὐτῆς ἐκτὸς ἐπινένευκεν, ὥσπερ <lb/>κορώνη. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="15">
-                    <p>Τοῦ στέρνου τῷ ἄνω πέρατι τῶν κλειδῶν <lb/>ἑκατέρα διαρθροῦται, σηραγγώδης τε
+         </div>
+         <div n="15" type="chapter">
+            <p>Τοῦ στέρνου τῷ ἄνω πέρατι τῶν κλειδῶν <lb/>ἑκατέρα διαρθροῦται, σηραγγώδης τε
                         οὖσα καὶ ἀνώμαλος <lb/>τό τε σχῆμα καὶ τὸ πάχος. τὸ κάτω μὲν γὰρ αὐτῶν, ὃ
                         <lb/>καὶ διαρθροῦται πρὸς τὸ στέρνον, <milestone unit="ed2page" n="21"/>παχύτερόν τε τῶν <lb/>ἄλλων ἐστὶ καὶ στρογγυλώτερον· ὅσον δὲ ἑξῆς τούτῳ,
                         <lb/>πολὺ μὲν ἰσχνότερον, ἔστι δὲ στρογγύλον· ἀνώμαλον δὲ τὸ <lb/>ἐπὶ τούτῳ
                         σύμπαν ἄχρι τῆς πρὸς τὴν ὠμοπλάτην συντάξεως, <lb/>ἔνθα καὶ πλατύνεταί πως
                         ἀτρέμα. συμπάσης δ’ αὐτῆς <lb/>τὰ μέσα μέρη κυρτὰ πρὸς τὸ ἐκτός ἐστι; καὶ
                         μᾶλλον <lb/>ἐν αὐτοῖς, ὅσα πρὸς τὴν ὠμοπλάτην ῥέπει. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="16">
-                    <p>Τὸ τοῦ βραχίονος ὀστοῦν, ἁπάντων ὀστῶν <lb/>μέγιστον ὑπάρχον πλὴν τοῦ μηροῦ,
+         </div>
+         <div n="16" type="chapter">
+            <p>Τὸ τοῦ βραχίονος ὀστοῦν, ἁπάντων ὀστῶν <lb/>μέγιστον ὑπάρχον πλὴν τοῦ μηροῦ,
                         διαρθροῦται κατ’ ἄμφω <lb/>τὰ πέρατα, ἄνω καὶ κάτω. κατὰ μὲν δὴ τὸν ὦμον
                         ἐπίφυσιν <lb/>ἔχει κεφαλῆς εὐμεγέθους ἐπ’ αὐχένι σμικρῷ. καί τις <lb/>ἐν
                         αὐτῷ κοιλότης ἐστὶν ὥσπερ τομὴ πλατεῖα κατὰ τὰ <lb/>πρόσω μέρη, διαιροῦσα
@@ -641,9 +649,9 @@
                         τὰ δὲ ἄλλα μέρη <lb/>περιφερής ἐστιν ὁ βραχίων, οὐ μὴν εὐθὺς, οὐδ’ ὅμοιος
                         <lb/>πάντῃ· κυρτὸς μὲν γὰρ εἴς τε τὸ πρόσω καὶ τὸ ἔξω, σιμὸς <lb/>δὲ ὄπισθέν
                         τε καὶ ἔνδον ἐστί. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="17">
-                    <p>Πῆχυς καλεῖται μὲν καὶ ὅλον τὸ μεταξὺ <lb/>βραχίονος καὶ καρποῦ, καλεῖται δὲ
+         </div>
+         <div n="17" type="chapter">
+            <p>Πῆχυς καλεῖται μὲν καὶ ὅλον τὸ μεταξὺ <lb/>βραχίονος καὶ καρποῦ, καλεῖται δὲ
                         καὶ τὸ ἕτερον ὀστοῦν <lb/>τῶν ἐν αὐτῷ τὸ μεῖζον, ὕπερ ὑποτέτακται θατέρῳ, τῇ
                             <pb n="769"/> κερκίδι προσαγορευομένῃ. αὕτη μὲν οὖν κατὰ τὸ πέρας
                         <lb/>αὑτῆς τὸ ἄνω περιλαμβάνει τὸν ἔξω τοῦ βραχίονος κόνδυλον <lb/>ἐπιπολαίῳ
@@ -663,10 +671,10 @@
                         αὐτὴ πρὸς τὸν καρπόν. ἀλλὰ <lb/>ταύτης μὲν ἔργον ἡ εἰς τὰ πλάγια περιφορὰ
                         τοῦ καρποῦ, <lb/>τῆς δὲ ἑτέρας αἱ κατ’ εὐθὺ, καθ’ ἃς ἐκτείνομέν τε καὶ
                         <lb/>κάμπτομεν τὴν ἄκραν χεῖρα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="18">
-                    <p>
-                        <milestone unit="ed2page" n="22"/>Ὀκτὼ συντίθησιν ὀστᾶ τὸν καρπὸν, <lb/>ἐπὶ
+         </div>
+         <div n="18" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="22"/>Ὀκτὼ συντίθησιν ὀστᾶ τὸν καρπὸν, <lb/>ἐπὶ
                         δύο στίχους συγκείμενα, σκληρὰ πάντα, καὶ σμικρὰ, καὶ <lb/>ἀμύελα, καὶ
                         πολυειδῆ τὸ σχῆμα. πῇ μὲν γάρ ἐστι κυρτὰ, πῇ <lb/>δὲ σιμὰ, καὶ πῇ μὲν εὐθέα,
                         πῇ δὲ περιφερῆ. συνδεῖται δὲ <lb/>πάντα δεσμοῖς νευροχονδρώδεσι,
@@ -683,9 +691,9 @@
                         μετακαρπίῳ, τὸ <lb/>πέμπτον δὲ ἐποχούμενον ἔχει τοῖς μέρεσιν ἐκείνοις τοῦ
                         καρποῦ, <lb/>καθ’ ἃ μάλιστά ἐστιν ἡ στυλοειδὴς τοῦ πήχεως <lb/>ἀπόφυσις.
                     </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="19">
-                    <p>Τὸ μεταξὺ καρποῦ τε καὶ δακτύλων μετακάρπιον <lb/>ὀνομάζεται, συναρθρούμενον
+         </div>
+         <div n="19" type="chapter">
+            <p>Τὸ μεταξὺ καρποῦ τε καὶ δακτύλων μετακάρπιον <lb/>ὀνομάζεται, συναρθρούμενον
                         μὲν πρὸς τὸν καρπὸν, <lb/>διαρθρούμενον δὲ πρὸς τὰς πρώτας τῶν· δακτύλων
                         <lb/>φάλαγγας, (οὕτω γὰρ καλεῖται τὰ τῶν δακτύλων ὀστᾶ, <lb/>ἔνιοι δὲ
                         σκυταλίδας ὀνομάζουσιν αὐτὰ,) μόνου τοῦ μεγάλου <lb/>δακτύλου τῆς πρώτης
@@ -700,9 +708,9 @@
                         δὲ τῶν πέντε δακτύλων. ὅσοι δὲ τὸ τρίτον <lb/>ὀστοῦν τοῦ μεγάλου δακτύλου τῷ
                         μετακαρπίῳ προσνέμουσι, <lb/>τεσσαρακαίδεκα μὲν εἶναί φασι τὰ τῶν δακτύλων,
                         πέντε δὲ <lb/>τὰ τοῦ μετακαρπίου. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="20">
-                    <p>Ταῖς ἀπὸ τῶν πλαγίων ἀποφύσεσι ταῖς <lb/>ὀρθαῖς τε καὶ μεγάλαις τοῦ πλατέος
+         </div>
+         <div n="20" type="chapter">
+            <p>Ταῖς ἀπὸ τῶν πλαγίων ἀποφύσεσι ταῖς <lb/>ὀρθαῖς τε καὶ μεγάλαις τοῦ πλατέος
                         ὀστοῦ συντέτακταί <lb/>τινα δύο, μηδὲν ἐφ’ ὅλων ἑαυτῶν ὄνομα κείμενον
                         ἔχοντα. <lb/>τὰ μὲν γὰρ ἄνωθεν αὐτῶν μέρη τὰ πλατέα λαγόνων ὀστᾶ
                         <lb/>καλεῖται, τὰ δὲ μετὰ τὴν ἐπίβασιν ἔξωθέν τε καὶ κάτωθεν <lb/>ἰσχίων
@@ -710,12 +718,11 @@
                         διατετρημένα καὶ συμφυόμενα <lb/>κατὰ τὸ πέρας ἀλλήλοις ἥβης ὀστᾶ. κοτύλη δέ
                         ἐστιν ἐν <lb/>ἑκατέρῳ τῶν ἰσχίων εὐμεγέθης, ἰσχυροτάτῳ συνδέσμῳ συμπεφυκυῖα
                         <lb/>τῆ τοῦ μηροῦ κεφαλῇ. </p>
-                </div>
-                <pb n="773"/>
-
-                <div type="textpart" subtype="chapter" n="21">
-                    <p>
-                        <milestone unit="ed2page" n="23"/>Τὸ κατὰ τὸν μηρὸν ὀστοῦν μέγιστον <lb/>μὲν
+         </div>
+         <pb n="773"/>
+         <div n="21" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="23"/>Τὸ κατὰ τὸν μηρὸν ὀστοῦν μέγιστον <lb/>μὲν
                         ἁπάντων ἐστὶ τῶν κατὰ τὸ ζῶον, διαρθροῦται δὲ ἄνω μὲν <lb/>πρὸς ἰσχίον, κάτω
                         δὲ πρὸς κνήμην. καὶ ἄνω μὲν ἐπίφυσιν <lb/>ἔχει κεφαλῆς ἀκριβῶς περιφεροῦς
                         ἐπ’ αὐχένι προμήκει, πρὸς <lb/>τὰ ἐντὸς μέρη ῥέποντι, κάτω δὲ εἰς δύο
@@ -729,11 +736,10 @@
                         μὲν ἐν τῷ πρόσω καὶ ἔξω, σιμὸς δὲ ἐν τῷ ὀπίσω <lb/>καὶ ἔνδον. ἀποφύσεις δὲ
                         ἔχει δύο μικρὰς ὑποκάτω τοῦ αὐχένος, <lb/>ἃς τροχαντῆρας ὀνομάζουσι, πολλῷ
                         δὲ μείζονα τὴν <lb/>ἔξωθεν, ἣ γλουτὸς ὀνομάζεται. </p>
-                </div>
-                <pb n="774"/>
-
-                <div type="textpart" subtype="chapter" n="22">
-                    <p>Ἡ κνήμη καλεῖται μὲν οὕτω καὶ ὅλον τοῦ <lb/>σκέλους τὸ μέρος, ὅσον ἐστὶ
+         </div>
+         <pb n="774"/>
+         <div n="22" type="chapter">
+            <p>Ἡ κνήμη καλεῖται μὲν οὕτω καὶ ὅλον τοῦ <lb/>σκέλους τὸ μέρος, ὅσον ἐστὶ
                         μεταξὺ τοῦ γόνατος καὶ ἀστραγάλου, <lb/>καλεῖται δὲ καὶ τὸ μεῖζον ὀστοῦν ἐν
                         αὐτῷ. τέτακται <lb/>δὲ ἔσωθεν τοῦτο, καὶ πρὸς μόνον αὐτὸ διαρθροῦται <lb/>ὁ
                         μηρός. τὸ γὰρ ἔξωθεν ὀστοῦν, ἡ περόνη καλουμένη, <lb/>καὶ τῷ πάχει μὲν
@@ -752,18 +758,18 @@
                         <lb/>ὥστε οὐκ ἂν ἅψαιο αὐτοῦ. πέρατα δέ ἐστι ταῦτα <lb/>τῶν τῆς κνήμης τε
                         καὶ περόνης ἀποφύσεων, κυρτὰ μὲν <lb/>ἔξωθεν, ὥσπερ καὶ φαίνεται, κοῖλα δὲ
                         ἔνδον. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="23">
-                    <p>Κατὰ τῆς τοῦ μηροῦ καὶ τῆς κνήμης διαρθρώσεως <lb/>ἔξωθεν ὀστοῦν χονδρῶδες
+         </div>
+         <div n="23" type="chapter">
+            <p>Κατὰ τῆς τοῦ μηροῦ καὶ τῆς κνήμης διαρθρώσεως <lb/>ἔξωθεν ὀστοῦν χονδρῶδες
                         ἐπίκειται, περιφερὲς τῷ <lb/>σχήματι, τὰ κυρτὰ μὲν καὶ οἷον κονδυλώδη τῶν
                         ὑποκειμένων <lb/>ὀστῶν περιλαμβάνον ἐπιτηδείοις κοιλότησιν, ἐξοχῇ <lb/>δέ
                         τινι βραχείᾳ τὴν μεταξὺ μηροῦ τε καὶ κνήμης εὐρυχωρίαν <lb/>καταλαμβάνον.
                         ὀνομάζουσι δὲ τὸ ὀστοῦν τοῦτο τινὲς μὲν <lb/>ἐπιγονατίδα, τινὲς δὲ μύλην.
                     </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="24">
-                    <p>
-                        <milestone unit="ed2page" n="24"/>Ὑπὸ τῶν ὀλίγον ἔμπροσθεν εἰρημένων
+         </div>
+         <div n="24" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="24"/>Ὑπὸ τῶν ὀλίγον ἔμπροσθεν εἰρημένων
                         <lb/>ἀποφύσεων ἐπὶ τοῖς κάτω πέρασι κνήμης τε καὶ <lb/>περόνης ὁ ἀστράγαλος
                         περιλαμβάνεται, τὸ τέτρωρον <lb/>αὑτοῦ καλούμενον ἄνω νενευκὸς ἔχων. τῶν δὲ
                         ἄλλων <lb/>αὐτοῦ μερῶν τὰ μὲν ὀπίσω λεῖα πάντα καὶ μετρίως ἐστὶ <pb n="776"/> περιφερῆ, ῥέποντα μᾶλλον ἄνω· τὰ δὲ πρόσω κεφαλῇ <lb/>σφαιροειδεῖ ἐπ’
@@ -785,9 +791,9 @@
                         <lb/>ὀστᾶ τρία μικρὰ, συναρθρούμενα τῷ κάτω πέρατι τοῦ <lb/>σκαφοειδοῦς, οἷς
                         καὶ αὐτοῖς ἔξωθεν συμπαρεκτείνεται τὸ <lb/>κυβοειδές. καὶ μετὰ ταῦτα τὰ
                         τέτταρα παύεται μὲν ὁ <lb/>ταρσὸς τοῦ ποδός. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="25">
-                    <p>Ἄρχεται δὲ τὸ καλούμενον πεδίον, ἐκ <lb/>πέντε συγκείμενον ὀστῶν, οἷς ἐφεξῆς
+         </div>
+         <div n="25" type="chapter">
+            <p>Ἄρχεται δὲ τὸ καλούμενον πεδίον, ἐκ <lb/>πέντε συγκείμενον ὀστῶν, οἷς ἐφεξῆς
                         εἰσιν οἱ δάκτυλοι <lb/>τοῦ ποδὸς, ἐκ τριῶν δὲ ἅπαντες φαλάγγων ὁμοίως τοῖς
                         <lb/>κατὰ τὰς χεῖρας συγκείμενοι πλὴν τοῦ μεγάλου δακτύλου· <lb/>μόνος γὰρ
                         οὗτος ἐν αὐτοῖς ἐκ δυοῖν ὀστοῖν ἐγένετο. <lb/>συνδέουσι τὰς μὲν τούτων
@@ -798,8 +804,7 @@
                         ἄλλο μόριον ὀστοῦν <pb n="778"/> μικρὸν εὑρίσκεται, καθάπερ ἐν καρδίᾳ τε καὶ
                         λάρυγγι, καὶ <lb/>ῥινὶ, καί τισι τῶν δακτύλων, τὰ σησαμοειδῆ καλούμενα,
                         <lb/>καὶ εἴ τι τοιοῦτο ἕτερον, οὐκ ἀνάγκη νῦν λέγειν. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

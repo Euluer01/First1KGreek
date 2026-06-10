@@ -1,87 +1,92 @@
-<?xml version="1.0" encoding="UTF-8"?> <?xml-model
-href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng"
-schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-	<teiHeader xml:lang="eng"> 
-		<fileDesc> 
-			<titleStmt> 
-				<title xml:lang="lat">Passio S. Perpetuae</title>
-				<author xml:lang="lat">Martyrium Perpetuae et Felcitatis</author> 
-				<editor>J. Armitage Robinson</editor> 
-				<funder>Center for Hellenic Studies</funder> 
-				<respStmt> 
-					<resp>Published original versions of the electronic texts</resp> 
-					<orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>   
-					<persName role="principal">Gregory Crane</persName> 
-					<persName role="principal">Leonard Muellner</persName> 
-					<persName role="principal">Bruce Robertson</persName>
-				</respStmt>
-				
-				<respStmt> 
-					<resp>Proofreading and CTS conversion</resp> 
-					<persName>Jeannie Sellick</persName>
-				</respStmt> 
-			</titleStmt>
-			
-			<publicationStmt> 
-				<publisher>Open Greek and Latin</publisher> 
-				<idno type="filename">tlg2016.tlg001.1st1K-lat.xml</idno> 
-				<availability> 
-					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons
-						Attribution-ShareAlike 4.0 International License</licence> 
-				</availability>
-				<date>2020-07-21</date> 
-			</publicationStmt> 
-			
-			<sourceDesc> 
-				<biblStruct> 
-					<monogr> 
-						<title>The Passion of S. Perpetua</title> 
-						<editor>J. Armitage Robinson</editor> 
-						<imprint> 
-							<pubPlace>Cambridge</pubPlace> 
-							<publisher>Cambridge University Press</publisher> 
-							<date>1891</date> 
-						</imprint> 
-					</monogr> 
-					<ref target="https://archive.org/details/MN5140ucmf_2/page/n71/mode/2up">The Internet Archive</ref>
-				</biblStruct> 
-			</sourceDesc> 
-		</fileDesc>
-		
-		<encodingDesc>     
-			<editorialDecl> 
-				<quotation marks="none"/> 
-				<normalization> <p></p>
-				</normalization> 
-				<correction> <p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Passio S. Perpetuae</title>
+            <author xml:lang="lat">Martyrium Perpetuae et Felcitatis</author>
+            <editor>J. Armitage Robinson</editor>
+            <funder>Center for Hellenic Studies</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+               <persName role="principal">Gregory Crane</persName>
+               <persName role="principal">Leonard Muellner</persName>
+               <persName role="principal">Bruce Robertson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofreading and CTS conversion</resp>
+               <persName>Jeannie Sellick</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Open Greek and Latin</publisher>
+            <idno type="filename">tlg2016.tlg001.1st1K-lat.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons
+						Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2020-07-21</date>
+            <idno type="CTS">urn:cts:greekLit:tlg2016.tlg001.1st1K-lat1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>The Passion of S. Perpetua</title>
+                  <editor>J. Armitage Robinson</editor>
+                  <imprint>
+                     <pubPlace>Cambridge</pubPlace>
+                     <publisher>Cambridge University Press</publisher>
+                     <date>1891</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://archive.org/details/MN5140ucmf_2/page/n71/mode/2up">The Internet Archive</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <quotation marks="none"/>
+            <normalization>
+               <p/>
+            </normalization>
+            <correction>
+               <p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of
 					Classics, Mount Allison University.  Developed through the support of the 
-					<ref target="https://nbif.ca/en">NBIF</ref>.</p> 
-				</correction> 
-			</editorialDecl>
-			
-			<refsDecl n="CTS"> 
-				<cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"> 
-					<p>This pointer pattern extracts sections.</p> 
-				</cRefPattern> 
-			</refsDecl> 
-		</encodingDesc>
-		
-		<profileDesc> 
-			<langUsage> 
-				<language ident="lat">Latin</language> 
-			</langUsage> 
-		</profileDesc>
-		
-		<revisionDesc> 
-			<change when="2020-07-23" who="Michael Konieczny">initial markup of new file</change> 
-		</revisionDesc> 
-	</teiHeader>
-	
-	<text>
-		<body>
-			<div type="translation" n="urn:cts:greekLit:tlg2016.tlg001.1st1K-lat1" xml:lang="lat">
-					<div type="textpart" subtype="section" n="1"><p rend="indent"><pb facs="MN5140ucmf_2_0084"/>Si
+					<ref target="https://nbif.ca/en">NBIF</ref>.</p>
+            </correction>
+         </editorialDecl>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(\w+)"
+                         n="section"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+               <p>This pointer pattern extracts sections.</p>
+            </cRefPattern>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-section"/>
+         </textClass>
+         <langUsage>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2020-07-23" who="Michael Konieczny">initial markup of new file</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg2016.tlg001.1st1K-lat1">
+         <div n="1" type="section">
+            <p rend="indent">
+               <pb facs="MN5140ucmf_2_0084"/>Si
 					uetera fidei exempla, et Dei gratiam testificantia et aedificationem hominis operantia, propterea in
 					litteris sunt digesta, ut lectione eorum quasi repraesentatione rerum et Deus honoretur et homo
 					confortetur; cur non et noua documenta aeque utrique causae conuenientia et digerantur? uel quia
@@ -90,8 +95,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
 					uirtutem Spiritus unius Sancti pro aetatibus iudicent temporum: cum maiora reputanda sunt
 					nouitiora quaeque ut nouissimiora, secundum exuperationem gratiae in ultima saeculi spatia decretam.
 					In nouissimis enim diebus, dicit Dominus, effundam de Spiritu meo super omnem carnem, et
-					prophetabunt filii filiaeque eorum: et super seruos et ancillas meas de meo <pb
-					facs="MN5140ucmf_2_0086"/>Spiritu effundam: et iuuenes uisiones uidebunt, et senes somnia
+					prophetabunt filii filiaeque eorum: et super seruos et ancillas meas de meo <pb facs="MN5140ucmf_2_0086"/>Spiritu effundam: et iuuenes uisiones uidebunt, et senes somnia
 					somniabunt. itaque et nos qui sicut prophetias ita et uisiones nouas pariter repromissas e
 					agnoscimus et honoramus, ceterasque uirtutes Spiritus Sancti ad instrumentum Ecclesiae deputamus,
 					cui et missus est idem omnia donatiua administrans in omnibus prout unicuique distribuit Dominus,
@@ -102,18 +106,19 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
 					annuntiamus et uobis, fratres et filioli: ut et uos qui interfuistis rememoremini gloriae Domini, et
 					qui nunc cognoscitis per auditum communionem habeatis cum sanctis martyribus, et per illos cum
 					Domino Iesu Christo, cui est claritas et honor in saecula saeculorum. amen
-					</p></div>
-					
-					<div type="textpart" subtype="section" n="2"><p rend="indent">Apprehensi sunt adolescentes
+					</p>
+         </div>
+         <div n="2" type="section">
+            <p rend="indent">Apprehensi sunt adolescentes
 					catechumini, Reuocatus et Felicitas conserua eius, Saturninus et Secundulus. inter hos et Vibia
 					Perpetua, honeste nata, liberaliter instituta matronaliter nupta, habens patrem et matrem et fratres
 					duos, alterum aeque catechuminum, et filium infantem ad ubera: erat autem ipsa circiter annorum
 					uiginti duo. haec ordinem totum martyrii sui iam hinc ipsa narrauit, sicut conscriptum manu sua
-					et suo sensu reliquit. </p></div>
-					
-					<div type="textpart" subtype="section" n="3"><p rend="indent">Cum adhuc, inquit, cum prosecutoribus
-					essem, et me pater uerbis euertere cupiret et deicere pro sua affectione <pb
-					facs="MN5140ucmf_2_0088"/>perseueraret: Pater, inquam, uides, uerbi gratia, uas hoc iacens, urceolum
+					et suo sensu reliquit. </p>
+         </div>
+         <div n="3" type="section">
+            <p rend="indent">Cum adhuc, inquit, cum prosecutoribus
+					essem, et me pater uerbis euertere cupiret et deicere pro sua affectione <pb facs="MN5140ucmf_2_0088"/>perseueraret: Pater, inquam, uides, uerbi gratia, uas hoc iacens, urceolum
 					siue aliud? et dixit: Video. et ego dixi ei: Numquid alio nomine uocari potest, quam quod est? et
 					ait: Non. Sic et ego aliud me dicere non possum, nisi quod sum, Christiana. tunc pater motus hoc
 					uerbo mittit se in me, ut oculos mihi erueret: sed uexauit tantum, et profecto est uictus cum
@@ -128,9 +133,10 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
 					filium. tabescebam ideo quod illos tabescere uideram mei beneficio. tales sollicitudines multis
 					diebus passa sum: et usurpaui ut mecum infans in carcere maneret; et statim conualui et releuata
 					sum a <pb facs="MN5140ucmf_2_0090"/>labore et sollicitudine infantis: et factus est mihi carcer
-					subito praetorium, ut ibi mallem essem quam alicubi. </p></div>
-					
-					<div type="textpart" subtype="section" n="4"><p rend="indent">Tunc dixit mihi frater meus:
+					subito praetorium, ut ibi mallem essem quam alicubi. </p>
+         </div>
+         <div n="4" type="section">
+            <p rend="indent">Tunc dixit mihi frater meus:
 					Domina soror, iam in magna dignatione es, tanta ut postules uisionem et ostendatur tibi an passio
 					sit an commeatus. et ego quae me sciebam fabulari cum Domino, cuius beneficio tanta experta eram
 					fidenter repromisi ei, dicens: Crastina die tibi renuntiabo. et postulaui, et ostensum est mihi hoc.
@@ -149,9 +155,10 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
 					tegnon. et clamauit me, et de caseo quod mulgebat dedit mihi quasi buccellam; et ego accepi iunctis
 					manibus, et manducaui: et uniuersi circumstantes dixerunt Amen. et ad sonum uocis experrecta sum,
 					commanducans adhuc dulcis nescio quid. et retuli statim fratri meo, et inteleximus passionem esse
-					futuram: et coepimus nullam iam spem in saeculo habere </p></div>
-					
-					<div type="textpart" subtype="section" n="5"><p rend="indent">Post paucos dies rumor
+					futuram: et coepimus nullam iam spem in saeculo habere </p>
+         </div>
+         <div n="5" type="section">
+            <p rend="indent">Post paucos dies rumor
 					cucurrit ut audiremur. superuenit autem et de ciuitate pater meus, consumptus taedio: et ascendit
 					ad me, ut me deiceret, dicens: Miserere, filia, canis meis; miserere patri, si dignus sum a te pater
 					uocari; si his te manibus ad hunc florem aetatis prouexi; si te praeposui omnibus fratribus tuis:
@@ -162,9 +169,10 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
 					non fiiiam nominabat, sed dominam. et ego dolebam causam patris mei, quod solus de passione mea
 					gauisurus non esset de toto genere meo; et confortaui eum, dicens: Hoc fiet in illa catasta quod
 					Deus uoluerit: scito enim nos non in nostra esse potestate constitutos, sed in Dei. et recessit a
-					me contristatus. </p></div>
-					
-					<div type="textpart" subtype="section" n="6"><p rend="indent">Alio die cum pranderemus, subito rapti
+					me contristatus. </p>
+         </div>
+         <div n="6" type="section">
+            <p rend="indent">Alio die cum pranderemus, subito rapti
 					sumus ut audiremur: et peruenimus ad forum. rumor statim per uicinas fori partes cucurrit, et
 					factus est populus immensus. ascendimus in catastam. interrogati ceteri confessi sunt. uentum est
 					et ad me. et apparuit pater ilico cum filio meo, et extraxit me de gradu, supplicans: Miserere
@@ -177,9 +185,10 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
 					carcerem. tunc quia consueuerat a me infans mammas accipere, et mecum in carcere manere, statim
 					mitto ad patrem Pomponium diaconum, <pb facs="MN5140ucmf_2_0096"/>postulans infantem. sed pater
 					dare noluit. et quomodo Deus uoluit, neque ille amplius mammas desiderat, neque mihi feruorem
-					fecerunt: ne sollicitudine infantis et dolore mammarum macerarer. </p></div>
-					
-					<div type="textpart" subtype="section" n="7"><p rend="indent">Post dies
+					fecerunt: ne sollicitudine infantis et dolore mammarum macerarer. </p>
+         </div>
+         <div n="7" type="section">
+            <p rend="indent">Post dies
 					paucos, dum uniuersi oramus, subito media oratione profecta est mihi uox, et nominaui Dinocraten:
 					et obstipui quod numquam mihi in mentem uenisset nisi tunc; et dolui commemorata casus eius. et
 					cognoui me statim dignam esse, et pro eo petere debere. et coepi de ipso orationem facere multum,
@@ -193,26 +202,28 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
 					extendebat se Dinocrates quasi bibiturus. ego dolebam quod et piscina illa aquam habebat, et tamen
 					propter altitudinem marginis bibiturus non esset. et experrecta sum et cognoui fratrem meum
 					laborare. sed fidebam me profuturam labori eius: et orabam pro eo omnibus diebus quousque transi-
-					uimus in carcerem castrensem: munere enim castrensi eramus <pb
-					facs="MN5140ucmf_2_0098"/>pugnaturi: natale tunc Getae Caesaris. et feci pro illo orationem die et
-					nocte gemens et lacrymans ut mihi donaretur. </p></div>
-					
-					<div type="textpart" subtype="section" n="8"><p rend="indent">Die quo in neruo mansimus, ostensum
+					uimus in carcerem castrensem: munere enim castrensi eramus <pb facs="MN5140ucmf_2_0098"/>pugnaturi: natale tunc Getae Caesaris. et feci pro illo orationem die et
+					nocte gemens et lacrymans ut mihi donaretur. </p>
+         </div>
+         <div n="8" type="section">
+            <p rend="indent">Die quo in neruo mansimus, ostensum
 					est mihi hoc. uideo locum illum quem retro uideram, et Dinocraten mundo corpore, bene uestitum,
 					refrigerantem; et ubi erat uulnus, uideo cicatricem: et piscinam illam quam retro uideram,
 					summisso margine usque ad umbilicum pueri; et aquam de ea trahebat sine cessatione: et super
 					margine fiala aurea plena aqua; et accessit Dinocrates, et de ea bibere coepit: quae fiala non
 					deficiebat. et satiatus accessit de aqua ludere more infantium gaudens. et experrecta sum. tunc
-					intellexi translatum eum esse de poena. </p></div>
-					
-					<div type="textpart" subtype="section" n="9"><p rend="indent">Deinde post dies paucos Pudens, miles
+					intellexi translatum eum esse de poena. </p>
+         </div>
+         <div n="9" type="section">
+            <p rend="indent">Deinde post dies paucos Pudens, miles
 					optio praepositus carceris, qui nos magnificare coepit intellegens magnam uirtutem esse in
 					nobis, multos ad nos admittebat, ut et nos et illi inuicem refrigeraremus. ut autem proximauit dies
 					muneris, intrat ad me pater meus consumptus taedio, et coepit barbam suam euellere et in terram
 					mittere, et prosternere se in faciem, et inproperare annis suis, et dicere tanta uerba quae
-					mouerent uniuersam creaturam. ego dolebam pro infelici senecta eius, </p></div>
-					
-					<div type="textpart" subtype="section" n="10"><p rend="indent">Pridie quam
+					mouerent uniuersam creaturam. ego dolebam pro infelici senecta eius, </p>
+         </div>
+         <div n="10" type="section">
+            <p rend="indent">Pridie quam
 					pugnaremus, uideo in horomate hoc uenisse <pb facs="MN5140ucmf_2_0100"/>Pomponium diaconum ad
 					ostium carceris, et pulsare uehementer. et exiui ad eum, et aperui ei: qui erat uestitus discinctam
 					candidam, habens multiplices galliculas. et dixit mihi: Perpetua, te exspectamus: ueni. et tenuit
@@ -235,9 +246,10 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
 					lanistam, et accepi ramum. et osculatus est me, et dixit mihi: Filia, pax tecum. et coepi ire cum
 					gloria ad portam Sanauiuariam. et experrecta sum: et intellexi me non ad bestias, sed contra
 					diabolum esse pugnaturam: sed sciebam mihi esse uictoriam. hoc usque in pridie muneris egi: ipsius
-					autem muneris actum, si quis uoluerit, scribat. </p></div>
-					
-					<div type="textpart" subtype="section" n="11"><p rend="indent">Sed et Saturus benedictus
+					autem muneris actum, si quis uoluerit, scribat. </p>
+         </div>
+         <div n="11" type="section">
+            <p rend="indent">Sed et Saturus benedictus
 					hanc uisionem suam edidit, quam ipse conscripsit. Passi, inquit, eramus, et exiuimus de carne, et
 					coepimus ferri a quattuor angelis in orientem, quorum manus nos non tangebat. ibamus autem non
 					supini sursum uersi, sed quasi mollem cliuum ascendentes. et liberato primo mundo uidimus lucem
@@ -250,9 +262,10 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
 					quattuor illi angeli, qui gestabant nos, deposuerunt nos: et pedibus nostris transiuimus stadium
 					uiolatum: ubi inuenimus Iocundum et Saturninum et Artaxium, qui eadem persecutione uiui arserunt;
 					et Quintum, qui et ipse martyr in carcere exierat; et quaerebamus de illis ubi essent. ceteri angeli
-					dixerunt nobis: Venite prius, introite, et salutate Dominum. </p></div>
-					
-					<div type="textpart" subtype="section" n="12"><p rend="indent">Et uenimus
+					dixerunt nobis: Venite prius, introite, et salutate Dominum. </p>
+         </div>
+         <div n="12" type="section">
+            <p rend="indent">Et uenimus
 					prope locum, cuius loci parietes tales erant, quasi de luce aedificati; et ante ostium loci illius
 					angeli quattuor stabant, qui introeuntes uestierunt stolas candidas. et introiuimus, et audiuimus
 					uocem unitam dicentem: Agios, agios, agios: sine cessatione. et uidimus in eodem loco sedentem
@@ -262,9 +275,10 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
 					osculati sumus illum, et de manu sua traiecit nobis in faciem. et ceteri seniores dixerunt nobis:
 					Stemus. et stetimus, et pacem fecimus. et dixerunt nobis seniores: Ite et ludite. et dixi Perpetuae
 					: Habes quod uis. et dixit mihi: Deo gratias, ut quomodo in carne hilaris fui, hilarior sum et
-					hic modo. </p></div>
-					
-					<div type="textpart" subtype="section" n="13"><p rend="indent">Et exiuimus, et uidimus ante fores
+					hic modo. </p>
+         </div>
+         <div n="13" type="section">
+            <p rend="indent">Et exiuimus, et uidimus ante fores
 					Optatum episcopum <pb facs="MN5140ucmf_2_0106"/>ad dexteram, et Aspasium presbyterum doctorem ad
 					sinistram, Separatos et tristes. et miserunt se ad pedes nobis, et dixerunt: Componite inter nos,
 					quia existis, et sic nos reliquistis. et diximus illis: Non tu es papa noster, et tu presbyter? ut
@@ -275,14 +289,16 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
 					conueniunt quasi de circo redeuntes, et de factionibus certantes. et sic nobis uisum est quasi
 					uellent claudere portas. et coepimus illic multos fratres cognoscere, sed et martyras. uniuersi
 					odore inenarrabili alebamur, qui nos satiabat tunc gaudens experrectus sum.
-					</p></div>
-					
-					<div type="textpart" subtype="section" n="14"><p rend="indent">Hae uisiones insigniores ipsorum
+					</p>
+         </div>
+         <div n="14" type="section">
+            <p rend="indent">Hae uisiones insigniores ipsorum
 					martyrum beatissimorum Saturi et Perpetuae, quas ipsi conscripserunt. Secundum uero Deus maturiore
 					exitu de saeculo adhuc in carcere euocauit, non sine gratia, ut bestias lucraretur. gladium tamen
-					etsi non anima certe caro eius agnouit. </p></div>
-					
-					<div type="textpart" subtype="section" n="15"><p rend="indent">Circa Felicitatem uero, et illi gratia
+					etsi non anima certe caro eius agnouit. </p>
+         </div>
+         <div n="15" type="section">
+            <p rend="indent">Circa Felicitatem uero, et illi gratia
 					Domini eiusnobis <pb facs="MN5140ucmf_2_0108"/>modi contigit. cum octo iam mensium uentrem
 					haberet, (nam praegnans fuerat adprehensa) instante spectaculi die, in magno erat luctu, ne propter
 					uentrem differretur; quia non licet praegnantes poenae repraesentari: et ne inter alios postea
@@ -293,9 +309,10 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
 					quidam ex ministris cataractariorum: Quae sic modo doles, quid facies obiecta bestiis, quas
 					contempsisti cum sacrificare noluisti? et illa respondit: Modo ego patior quod patior; illic autem
 					alius erit in me qui patietur pro me, quia et ego pro illo passura sum. ita enixa est puellam,
-					quam sibi quaedam soror in filiam educauit. </p></div>
-					
-					<div type="textpart" subtype="section" n="16"><p rend="indent">Quoniam ergo permisit et permittendo
+					quam sibi quaedam soror in filiam educauit. </p>
+         </div>
+         <div n="16" type="section">
+            <p rend="indent">Quoniam ergo permisit et permittendo
 					uoluit Spiritus Sanctus ordinem ipsius muneris conscribi, etsi indigne ad supplementum tantae
 					gloriae describendae, tamen quasi mandatum sanctissimae Perpetuae, immo fideicommissum eius
 					exequimur, unum adicientes documentum de ipsius constantia et animi sublimitate. cum a tribuno
@@ -305,17 +322,19 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
 					natali eiusdem pugnaturis? aut non tua gloria est, si pinguiores illo producamur? horruit et erubuit
 					tribunus; et ita iussit illos humanius haberi, ut fratribus eius et ceteris facultas fieret
 					introeundi, et refrigerandi cum eis; iam et ipso optione carceris credente.
-					</p></div>
-					
-					<div type="textpart" subtype="section" n="17"><p rend="indent">Pridie quoque cum illam cenam
+					</p>
+         </div>
+         <div n="17" type="section">
+            <p rend="indent">Pridie quoque cum illam cenam
 					ultimam, quam liberam uocant, quantum in ipsis erat non cenam liberam sed agapen cenarent, eadem
 					constantia ad populum uerba ista lactabant, comminantes iudicium Dei, contestantes passionis suae
 					felicitatem, inridentes concurrentium curiositatem; dicente Saturo: Crastinus satis uobis non est,
 					quod libenter uidetis quod odistis? hodie amici, cras inimici. notate tamen nobis facies nostras
 					diligenter, ut recognoscatis nos in die illo. ita omnes inde adtoniti discedebant: ex quibus
-					multi crediderunt. </p></div>
-					
-					<div type="textpart" subtype="section" n="18"><p rend="indent">Inluxit dies uictoriae illorum, et
+					multi crediderunt. </p>
+         </div>
+         <div n="18" type="section">
+            <p rend="indent">Inluxit dies uictoriae illorum, et
 					processerunt de carcere in amphitheatrum, quasi in caelum, hilares uultu decori; si forte gaudio
 					pauentes non timore. sequebatur Perpetua lucido incessu, ut matrona Christi, ut Dei delicata: uigore
 					ocuei <pb facs="MN5140ucmf_2_0112"/>lorum deiciens omnium conspectum. item Felicitas, saluam se
@@ -329,9 +348,10 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
 					comminabantur de hoc. ut sub conspectu Hilariani peruenerint, gestu et nutu coeperunt Hilariano
 					dicere: Tu nos, inquiunt, te autem Deus. ad hoc populus exasperatus, flagellis eos uexari pro
 					ordine uenatorum postulauit. et utique gratulati sunt, quod aliquid et de dominicis passionibus
-					essent consecuti. </p></div>
-					
-					<div type="textpart" subtype="section" n="19"><p rend="indent">Sed qui dixerat Petite et accipietis
+					essent consecuti. </p>
+         </div>
+         <div n="19" type="section">
+            <p rend="indent">Sed qui dixerat Petite et accipietis
 					petentibus dederat eum exitum quem quisque desiderauerat. nam, si quando inter se de martyrii sui
 					uoto sermocinabantur, Saturninus quidem omnibus bestiis uelle se obici profitebatur: ut scilicet
 					gloriosiorem gestaret coronam. itaque in commissione spectaculi reuocatus leopardo expertus etiam
@@ -339,9 +359,10 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
 					quam ursum abominabatur: sed uno morsu leopardi confici se iam praesumebat. itaque cum apro
 					subministraretur, uenator potius qui illum apro subligauerat, subfossus ab eadem bestia, post dies
 					muneris obiit. Saturus solummodo tractus est. et cum ad ursum substrictus esset in ponte, ursus de
-					cauea prodire noluit. itaque secundo Saturus inlaesus reuocatur. </p></div>
-					
-					<div type="textpart" subtype="section" n="20"><p rend="indent">Puellis
+					cauea prodire noluit. itaque secundo Saturus inlaesus reuocatur. </p>
+         </div>
+         <div n="20" type="section">
+            <p rend="indent">Puellis
 					autem ferocissimam uaccam, ideoque praeter consuetudinem comparatam, diabolus praeparauit: sexui
 					earum etiam de bestia aemulatus. itaque dispoliatae et reticulis indutae producebantur. horruit
 					populus, alteram respiciens queam delicatam, alteram a partu recentem stillantibus mammis. ita
@@ -356,9 +377,10 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
 					uaccam illam, nescio. et cum audisset quod iam <pb facs="MN5140ucmf_2_0116"/>euenerat, non prius
 					credidit, nisi quasdam notas uexationis in corpore et habitu suo recognouisset. exinde accersitum
 					fratrem suum et illum catechuminum adlocuta est, dicens; In fide state, et inuicem omnes diligite;
-					et passionibus nostris ne scandaliemini </p></div>
-					
-					<div type="textpart" subtype="section" n="21"><p rend="indent">Item Saturus in alia porta Pudentem
+					et passionibus nostris ne scandaliemini </p>
+         </div>
+         <div n="21" type="section">
+            <p rend="indent">Item Saturus in alia porta Pudentem
 					militem exortabatur, dicens: Ad summam, inquit, certe, sicut praesumpsi et praedixi, nullam usque
 					adhuc bestiam sensi. et nunc de toto corde credas. ecce prodeo illo, et ab uno morsu leopardi
 					consumor. et statim in fine spectaculi, leopardo eiecto, de uno morsu tanto perfusus est sanguine, ut
@@ -369,8 +391,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
 					iam exanimis prosternitur cum ceteris ad iugulationem solito loco. et cum populus illos in medio
 					postularet, ut gladio penetranti in eorum corpore oculos suos comites homicidii adiungerent,
 					ultro surrexerunt, et se quo uolebat populus transtulerunt: ante iam osculati inuicem, ut martyrium
-					per solemnia pacis consummarent. ceteri quidem inmobiles, et cum silentio <pb
-					facs="MN5140ucmf_2_0118"/>ferrum receperunt: multo magis Saturus, qui et prior ascenderat, prior
+					per solemnia pacis consummarent. ceteri quidem inmobiles, et cum silentio <pb facs="MN5140ucmf_2_0118"/>ferrum receperunt: multo magis Saturus, qui et prior ascenderat, prior
 					reddidit spiritum; nam et Perpetuam sustinebat. Perpetua autem, ut aliquid doloris gustaret, inter
 					ossa conpuncta exululauit; et errantem dexteram tirunculi gladiatoris ipsa in iugulum suum
 					transtulit. fortasse tanta femina aliter non potuisset occidi, quae ab inmundo spiritu timebatur,
@@ -379,8 +400,8 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
 					ueteribus exempla in aedificationem Ecclesiae legere debet, ut nouae quoque uirtutes unum et eundem
 					semper Spiritum Sanctum usque adhuc operari testificentur, <add>et</add> omnipotentem Deum Patrem et Filium
 					eius Iesum Christum Dominum nostrum, cui est claritas et inmensa potestas in saecula saeculorum.
-					amen </p></div>
-					</div>
-		</body>
-	</text>
+					amen </p>
+         </div>
+      </body>
+   </text>
 </TEI>

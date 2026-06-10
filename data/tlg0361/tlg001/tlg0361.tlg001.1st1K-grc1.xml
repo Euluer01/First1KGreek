@@ -1,106 +1,118 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-	<teiHeader xml:lang="eng">
-		<fileDesc>
-			<titleStmt>
-				<title>Εἰσαγωγὴ ἁρμονική</title>
-				<author xml:lang="lat">Cleonides</author>
-				<editor>Karl von Jan</editor>
-				<funder>Harvard Library Arcadia Fund</funder>
-				<principal>Gregory Crane</principal>
-				<respStmt>
-					<persName xml:id="DDD">Digital Divide Data</persName>
-					<resp>Corrected and encoded the text</resp>
-				</respStmt>
-				<respStmt>
-					<persName>Gregory Crane</persName>
-					<resp>Editor-in-Chief, Perseus Digital Library</resp>
-				</respStmt>
-				<respStmt>
-					<persName>Matt Munson</persName>
-					<resp>Project Manager (University of Leipzig)</resp>
-				</respStmt>
-				<respStmt>
-					<persName>Annette Gessner</persName>
-					<resp>Project Assistant (University of Leipzig)</resp>
-				</respStmt>
-				<respStmt>
-					<persName>Thibault Clérice</persName>
-					<resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
-				</respStmt>
-				<respStmt>
-					<persName>Bruce Robertson</persName>
-					<resp>Technical Advisor</resp>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<authority>Harvard College Library</authority>
-				<idno type="filename">tlg0361.tlg001.1st1K-grc1.xml</idno>
-				<availability>
-					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title>Εἰσαγωγὴ ἁρμονική</title>
+            <author xml:lang="lat">Cleonides</author>
+            <editor>Karl von Jan</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg0361.tlg001.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
 						License</licence>
-				</availability>
-				<date>2017</date>
-				<publisher>Harvard College Library</publisher>
-				<pubPlace>United States</pubPlace>
-			</publicationStmt>
-			<sourceDesc>
-				<listBibl>
-					<biblStruct>
-						<monogr>
-							<title xml:lang="lat">Musici scriptores Graeci</title>
-							<editor>
-								<persName>
-									<name>Karl von Jan</name>
-								</persName>
-							</editor>
-							<author ref="urn:cts:greekLit:tlg0361" xml:lang="lat">Cleonides</author>
-							<imprint>
-								<publisher>Teubner</publisher>
-								<pubPlace>Leipzig</pubPlace>
-								<date>1895</date>
-							</imprint>
-						</monogr>
-						<ref target="https://hdl.handle.net/2027/mdp.39015016868666?urlappend=%3Bseq=276%3Bownerid=13510798888313003-282">HathiTrust</ref>
-					</biblStruct>
-				</listBibl>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<p>Text encoded in accordance with the latest EpiDoc standards</p>
-			<refsDecl n="CTS">
-				<cRefPattern matchPattern="(.+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-			</refsDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="grc">Greek</language>
-				<language ident="lat">Latin</language>
-			</langUsage>
-		</profileDesc>
-		<revisionDesc>
-			<change/>
-		</revisionDesc>
-	</teiHeader>
-<text>
-<body>
-	<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0361.tlg001.1st1K-grc1">
-<pb n="179"/>
-<head><del>ΚΛΕΟΝΕΙΔΟΥ</del></head>
-<p>Εἰσαγωγὴ ἁρμονική.</p>
-		<div type="textpart" subtype="section" n="1">
-<p> Ἁρμονική ἐστιν ἐπιστήμη θεωρητική τε καὶ πρακτικὴ
+            </availability>
+            <date>2017</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg0361.tlg001.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Musici scriptores Graeci</title>
+                     <editor>
+                        <persName>
+                           <name>Karl von Jan</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg0361" xml:lang="lat">Cleonides</author>
+                     <imprint>
+                        <publisher>Teubner</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1895</date>
+                     </imprint>
+                  </monogr>
+                  <ref target="https://hdl.handle.net/2027/mdp.39015016868666?urlappend=%3Bseq=276%3Bownerid=13510798888313003-282">HathiTrust</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="section"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-section"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0361.tlg001.1st1K-grc1">
+         <pb n="179"/>
+         <head>
+            <del>ΚΛΕΟΝΕΙΔΟΥ</del>
+         </head>
+         <p>Εἰσαγωγὴ ἁρμονική.</p>
+         <div n="1" type="section">
+            <p> Ἁρμονική ἐστιν ἐπιστήμη θεωρητική τε καὶ πρακτικὴ
 τῆς τοῦ ἡρμοσμένου φύσεως. ἡρμοσμένον δὲ τὸ
 <lb n="5"/> ἐκ φθόγγων τε καὶ διαστημάτων ποιὰν τάξιν ἐχόντων
 συγκείμενον. μέρη δὲ αὐτῆς ἐστιν ἑπτά· περὶ φθόγγων,
 περὶ διαστημάτων, περὶ γενῶν, περὶ συστήματος, περὶ
 τόνου, περὶ μεταβολῆς, περὶ μελοποιΐας.</p>
-<p>Φθόγγος μὲν οὖν ἐστι φωνῆς πτῶσις ἐμμελὴς ἐπὶ
+            <p>Φθόγγος μὲν οὖν ἐστι φωνῆς πτῶσις ἐμμελὴς ἐπὶ
 <lb n="10"/> μίαν τάσιν.</p>
-<p>Διάστημα δὲ τὸ περιεχόμενον ὑπὸ δύο φθόγγων
+            <p>Διάστημα δὲ τὸ περιεχόμενον ὑπὸ δύο φθόγγων
 ἀνομοίων ὀξύτητι καὶ βαρύτητι.</p>
-<note type="footnote">Κλεονείδου εἰ. ἁρ. N fol. 55 (cum Par. 2535, B fol. 311.
+            <note type="footnote">Κλεονείδου εἰ. ἁρ. N fol. 55 (cum Par. 2535, B fol. 311.
 Vat.221, Riccard., Bonon 2432). Εὐκλείδου εἰ. ἁρ. M4 in ras. Ι
 (U. Bon 2048. Vat. 1341. 1346. Urb 77a. Regin. 94. Mon. 104.
 Berol. Phil. 1552. Par. 2456. 2457. 246Οa. suppl. 449. Escor.
@@ -108,26 +120,28 @@ Berol. Phil. 1552. Par. 2456. 2457. 246Οa. suppl. 449. Escor.
 cum N fol. 16. Par. Crameri 2460 (f. 52). Vat. 221. 671. Urb 77
 Ζωσίμου Madridensis N. 48. Ἀνωνύμου cod. Vulc. rasura
 in M1. titulum omittunt VW1H1).</note>
-<note type="footnote">3 ἁρμονικὴ — 6 ἑπτά om. B (fol. 300). τε om. WL.
+            <note type="footnote">3 ἁρμονικὴ — 6 ἑπτά om. B (fol. 300). τε om. WL.
 4 δέ ἐστι τὸ WI. τε om. WL. 6 in συγκείμενον M
 corr. o. τάξιν τῶν συγκειμένων ἔχον WL. 7 post γενῶν
 inserit in marg. περὶ μελοποιΐας M et omittit infra, numeris
 inscriptis mutat M4. περὶ συστημάτων, περὶ γενῶν hoc ord.
 Vat. 1341, item infra p. 180, 1. 2. συστημάτων WBL.
 8 τόνου M, τόνων WBL. 9 φθόγγος] φθόγγων L.</note>
-
-<pb n="180"/>
-<p>Γένος δέ ἐστι ποιὰ τεττάρων φθόγγων διαίρεσις.</p>
-<p>Σύστημα δέ ἐστι τὸ ἐκ πλειόνων ἢ ἑνὸς διαστημάτων
+            <pb n="180"/>
+            <p>Γένος δέ ἐστι ποιὰ τεττάρων φθόγγων διαίρεσις.</p>
+            <p>Σύστημα δέ ἐστι τὸ ἐκ πλειόνων ἢ ἑνὸς διαστημάτων
 συγκείμενον. (p. 2 Μ.)</p>
-<p>Τόνος δέ ἐστι τόπος τις τῆς φωνῆς δεκτικὸς συστήματος
-ἀπλατής.</p> <lb n="5"/>
-<p>Μεταβολὴ δέ ἐστιν ὁμοίου τινὸς εἰς ἀνόμοιον τόπον
+            <p>Τόνος δέ ἐστι τόπος τις τῆς φωνῆς δεκτικὸς συστήματος
+ἀπλατής.</p>
+            <lb n="5"/>
+            <p>Μεταβολὴ δέ ἐστιν ὁμοίου τινὸς εἰς ἀνόμοιον τόπον
 μετάθεσις.</p>
-<p>Μελοποιΐα δέ ἐστι χρῆσις τῶν ὑποκειμένων τῇ
-ἁρμονικῇ πραγματείᾳ πρὸς τὸ οἰκεῖον ἑκάστης ὑποθέσεως.</p> <lb n="10"/>
-</div>
-<div type="textpart" subtype="section" n="2"><p> Ταῦτα δὲ θεωρεῖται ἐν φωνῆς ποιότητι, ἧς
+            <p>Μελοποιΐα δέ ἐστι χρῆσις τῶν ὑποκειμένων τῇ
+ἁρμονικῇ πραγματείᾳ πρὸς τὸ οἰκεῖον ἑκάστης ὑποθέσεως.</p>
+            <lb n="10"/>
+         </div>
+         <div n="2" type="section">
+            <p> Ταῦτα δὲ θεωρεῖται ἐν φωνῆς ποιότητι, ἧς
 κινήσεις εἰσὶ δύο, ἡ μὲν συνεχής τε ταὶ λογικὴ καλουμένη,
 ἡ δὲ διαστηματική τε καὶμελῳ δική. ἡ μὲν
 οὖν συνεχὴς κίνησις τῆς φωνῆς τάς τε ἐπιτάσεις καὶ
@@ -137,31 +151,32 @@ Vat. 1341, item infra p. 180, 1. 2. συστημάτων WBL.
 μεταξὺ τούτων διαστάσεις, ἐναλλὰξ αὐτῶν ἑκάτερον
 τιθεῖσα. τὰς μὲν οὖν μονὰς τάσεις καλοῦμεν, τὰς δὲ
 μεταβάσεις τὰς ἀπὸ τάσεων ἐπὶ τάσεις διαστήματα. τὰ <lb n="20"/>
-<note type="footnote">6 τόπον (cf. Bacchium § 58 et Anonymum lI § 65) an
+               <note type="footnote">6 τόπον (cf. Bacchium § 58 et Anonymum lI § 65) an
 τύπον? cf. Ar. Qu. l 11, (p. 24s. M) ἀλλοίωσις . .. τοῦ τῆς
 φωνῆς χαρακτῆρος· εἰ γὰρ ἑκάστῳ συστήματι καὶ ποιός τις
 ἐπακολουθεῖ τῆς φωνῆς τύπος κτλ. Jan, Bacchius, Argent. 1891
 p. 22. 19 τιθεῖται W, τέθειται L. τὰς δὲ διαστάσεις μετα-
 βάσεις τὰς ἀπὸ τάσεων ἐπὶ τάσεις WL. 20 διαστήματα δὲ
 τὰ WL.</note>
-<note type="footnote">Cap. 1 τόπος — ἀπλατής cf. Porph. ad Ptol. p. 258.
+               <note type="footnote">Cap. 1 τόπος — ἀπλατής cf. Porph. ad Ptol. p. 258.
 Cap. 2. cf. Arstx. p. 8 Mb. Nicom. barm. cap. 2. Porphyrius
 ad Ptol. p. 194. Manuel Bryenn. harm. I 3.</note>
-
-<pb n="181"/>
+               <pb n="181"/>
 δὲ ποιοῦντα τὴν τῶν τάσεων διαφορὰν ἐπίτασίς ἐστι
 καὶ ἄνεσις, ἀποτέλεσμα δὲ τούτων ὀξύτης καὶ βαρύτης.
 τὸ μὲν γὰρ διʼ ἐπιτάσεως γινόμενον εἰς ὀξύτητα ἄγει,
 τὸ δὲ διʼ ἀνέσεως εἰς βαρύτητα. καὶ ὀξύτης μὲν οὖν
 <lb n="5"/> ἐστι τὸ διʼ ἐπιτάσεως γινόμενον ἀποτέλεσμα, βαρύτης δὲ
-τὸ διʼ ἀνέσεως. <del> <gap reason="omitted"/> ἀμφοῖν γὰρ συμβέβηκε τὸ τετάσθαι.</del>
+τὸ διʼ ἀνέσεως. <del>
+                  <gap reason="omitted"/> ἀμφοῖν γὰρ συμβέβηκε τὸ τετάσθαι.</del>
 καλοῦνται δὲ αἱ τάσεις καὶ φθόγγοι· τάσεις
 μὲν ἀπὸ τῶν καθαπτῶν ὀργάνων παρὰ τὸ τετάσθαι,
 φθόγγοι δὲ, ἐπεὶ ὑπὸ φωνῆς ἐνεργοῦνται. (p. 3 M.)
 <lb n="10"/> φθόγγοι δέ εἰσι τῇ μὲν τάσει ἄπειροι, τῇ δὲ δυνάμει
 καθʼ ἕκαστον γένος δεκαοκτώ.</p>
-</div>
-<div type="textpart" subtype="section" n="3"><p> Γένη δέ ἐστι τρία, διάτονον χρῶμα ἁρμονία.
+         </div>
+         <div n="3" type="section">
+            <p> Γένη δέ ἐστι τρία, διάτονον χρῶμα ἁρμονία.
 καὶ μελῳδεῖται τὸ μὲν διάτονον ἐπὶ μὲν τὸ βαρὺ κατὰ
 τόνον καὶ τόνον καὶ ἡμιτόνιον, ἐπὶ δὲ τὸ ὀξὺ ἐνανκατὰ
 <lb n="15"/> ἡμιτόνιον καὶ τόνον καὶ τόνον. τὸ δὲ
@@ -180,17 +195,17 @@ mittit tamen solus W ὅτι τάσις καλεῖται παρὰ τὸ τετ
 καλεῖται δὲ καὶ φθόγγος, ἐπεὶ ὑπὸ φωνῆς ἐνεργεῖται. quae
 postea redeunt. 7 αἱ solus W. om. cet. 8 καθʼ αὐτῶν WL.
 9 ἐνεργεῖται B. 11 δέκα καὶ ὀκτώ W. 13 κατὰ τὸν τ. B.</note>
-<note type="footnote">Cap. 3 cf. c. 6. Aristox. p. 45 Mb. Nicom. 12 p. 25. Ptolem.
+               <note type="footnote">Cap. 3 cf. c. 6. Aristox. p. 45 Mb. Nicom. 12 p. 25. Ptolem.
 harm. l c. 12—15. Theo de mus. c. 10—11. Bellermann ad
 Anon. § 52. Gevaert Histoire et théorie l chap. 4. Jan, Er-
 klärung zu Bacchius p. 3.</note>
-
-<pb n="182"/>
+               <pb n="182"/>
 ἐπὶ μὲν τὸ βαρὺ κατὰ δίτονον καὶ δίεσιν καὶ δίεσιν,
 ἐπὶ δὲ τὸ ὀξὺ ἐναντίως κατὰ δίεσιν καὶ δίεσιν καὶ
 δίτονον.</p>
-</div>
-<div type="textpart" subtype="section" n="4"><p>Εἰσὶ δὲ οἱ μὲν ἐν τῷ διατόνῳ φθόγγοι οἵδε.
+         </div>
+         <div n="4" type="section">
+            <p>Εἰσὶ δὲ οἱ μὲν ἐν τῷ διατόνῳ φθόγγοι οἵδε.
 προσλαμβανόμενος
 ὑπάτη ὑπάτων
 παρυπάτη ὑπάτων
@@ -209,17 +224,16 @@ klärung zu Bacchius p. 3.</note>
 τρίτη ὑπερβολαίων (p. 4)
 παρανήτη ὑπερβολαίων διάτονος
 νήτη ὑπερβολαίων.</p>
-<note type="footnote">4 δὲ W BL, om. MN. διατ. γένει φθ. N. 6 ὑπάτων
+            <note type="footnote">4 δὲ W BL, om. MN. διατ. γένει φθ. N. 6 ὑπάτων
 semper M et aliquot locis V. ὑπατῶν corr. M. ita semper
 N B L, cf. ad Euclidem p 164, 2. 8 λιχανός videtur M1
 semper, V N W B L. λίχανος M corr., vide Euclidem 162, 1.
 13 τρίτη] νήτη WB L. 14 διάτονος, νήτη συν. om. W.
 16 παραμέση συνημμένων W. 21 22 νήτη et παρανήτη invertit W.</note>
-<note type="footnote">Cap. 4 cf. Nicom. c. 11. Ptolem l 4. A Qu. l 6. et qui
+            <note type="footnote">Cap. 4 cf. Nicom. c. 11. Ptolem l 4. A Qu. l 6. et qui
 multa cum Cleonide habet communia Bryennium l 4.</note>
-
-<pb n="183"/>
-<p>Ἐν δὲ χρώματι οἵδε
+            <pb n="183"/>
+            <p>Ἐν δὲ χρώματι οἵδε
 προσλαμβανόμενος
 ὑπάτη ὑπάτων
 παρυπάτη ὑπάτων
@@ -238,7 +252,8 @@ multa cum Cleonide habet communia Bryennium l 4.</note>
 τρίτη ὑπερβολαίων
 παρανήτη ὑπερβολαίων χρωματική
 νήτη ὑπερβολαίων.</p>
-<lb n="20"/><p> Εν δὲ ἁρμονίᾳ οἵδε
+            <lb n="20"/>
+            <p> Εν δὲ ἁρμονίᾳ οἵδε
 προσλαμβανόμενος
 ὑπάτη ὑπάτων
 παρυπάτη ὑπάτων
@@ -249,8 +264,7 @@ multa cum Cleonide habet communia Bryennium l 4.</note>
 μέση
 <note type="footnote">24 om. λιχανὸς ὑπάτων W. 25—27 μέσων] μέση WL.
 28 μέση om. W.</note>
-
-<pb n="184"/>
+               <pb n="184"/>
 τρίτη συνημμένων ἐναρμόνιος
 παρανήτη συνημμένων ἐναρμόνιος (p. 5)
 νήτη συνημμένων
@@ -260,8 +274,9 @@ multa cum Cleonide habet communia Bryennium l 4.</note>
 νήτη διεζευγμένων
 τρίτη ὑπερβολαίων ἐναρμόνιος
 παρανήτη ὑπερβολαίων ἐναρμόνιος
-νήτη ὑπερβολαίων.</p> <lb n="10"/>
-<p>Κατὰ δὲ μίξιν τῶν γενῶν οἵδε
+νήτη ὑπερβολαίων.</p>
+            <lb n="10"/>
+            <p>Κατὰ δὲ μίξιν τῶν γενῶν οἵδε
 προσλαμβανόμενος
 ὑπάτη ὑπάτων
 παρυπάτη ὑπάτων
@@ -283,8 +298,7 @@ lin. 5 et 9. 3 4 νήτη συν., παρανήτη συν. W (cum codd. Meib.)
 7 παραμέση διεζευγμ. ἐναρμόνιος W. 15—18 ita in B. in
 M rasura et fere omnia nova. om. 15 λιχ. ὑπ., habet reli-
 qua. W habet 15 ἐναρμόνιος, om. rel. 15 et 16, habet 17—18.</note>
-
-<pb n="185"/>
+               <pb n="185"/>
 παρανήτη συνημμένων ἐναρμόνιος
 παρανήτη συνημμένων χρωματική
 παρανήτη συνημμένων διάτονος
@@ -300,7 +314,7 @@ qua. W habet 15 ἐναρμόνιος, om. rel. 15 et 16, habet 17—18.</note>
 παρανήτη ὑπερβολαίων χρωματική
 παρανήτη ὑπερβολαίων διάτονος
 <lb n="15"/> νήτη ὑπερβολαίων.</p>
-<p>Τῶν δὲ ἐξηριθμημένων φθόγγων οἱ μέν εἰσιν
+            <p>Τῶν δὲ ἐξηριθμημένων φθόγγων οἱ μέν εἰσιν
 ἑστῶτες, οἱ δὲ κινούμενοι. ἑστῶτες μὲν οὖν εἰσιν
 ὅσοι ἐν ταῖς τῶν γενῶν διαφοραῖς οὐ μεταπίπτουσιν,
 ἀλλὰ μένουσιν ἐπὶ μιᾶς τάσεως. κινούμενοι δὲ ὅσοι
@@ -310,23 +324,22 @@ qua. W habet 15 ἐναρμόνιος, om. rel. 15 et 16, habet 17—18.</note>
 ὑπάτη ὑπάτων, ὑπάτη μέσων, μέση, νήτη συνημμένων,
 παραμέση, νήτη διεζευγμένων, νήτη ὑπερβολαίων·
 <lb n="25"/> κινούμενοι δὲ οἱ ἀνὰ μέσον τούτων πάντες.</p>
-<note type="footnote">6 τρίτη M in ras., νήτη WB. 7 a γμένων ad 185, 9 δι-
+            <note type="footnote">6 τρίτη M in ras., νήτη WB. 7 a γμένων ad 185, 9 δι-
 άτονος M in ras., V N om. haec inde ab ἐναρμόνιος. 11 τρ.
 ὑπ. χρωματική W. 12—14 παρανήτη ὑπβ. διάτονος (om.
 rel.) W. ante lin. 16 addunt Vulcani et Possevini codices, etiam
 ,,Paris. 449 suppl· “quae exstant apud Ar Qu. p. 10, 6—11, 31 M.
 a κινούμενοι l. 17 ad κινούμενοι l. 19 aberrat W. 25 κιν. οἵδε
 οἱ B, κιν. δὲ οἵδε οἱ W, κιν. δὲ οἱ δὲ οἱ L.</note>
-
-<pb n="186"/>
-<p>Τῶν δὲ ἑστώτων οἱ μέν εἰσι βαρύπυκνοι, οἱ δὲ
+            <pb n="186"/>
+            <p>Τῶν δὲ ἑστώτων οἱ μέν εἰσι βαρύπυκνοι, οἱ δὲ
 ἄπυκνοι καὶ περιέχοντες τὰ τέλεια συστήματα. βαρύπυκνοι
 μὲν οὖν εἰσι πέντε οἵδε· ὑπάτη ὑπάτων, ὑπάτη
 μέσων, μέση, (p. 7) παραμέση, νήτη διεζευγμένων.
 ἄπυκνοι δὲ καὶ περιέχοντες τὰ τέλεια συστήματα οἱ <lb n="5"/>
 λοιποὶ τρεῖς οἵδε· προσλαμβανόμενος, νήτη συνημμένων,
 νήτη ὑπερβολαίων.</p>
-<p>Τῶν δὲ κινουμένων οἱ μέν εἰσι μεσόπυκνοι, οἱ
+            <p>Τῶν δὲ κινουμένων οἱ μέν εἰσι μεσόπυκνοι, οἱ
 δὲ ὀξύπυκνοι, οἱ δὲ διάτονοι. μεσόπυκνοι μὲν οὖν
 εἰσι πέντε οἵδε· παρυπάτη ὑπάτων, παρυπάτη μέσων, <lb n="10"/>
 τρίτη συνημμένων, τρίτη διεζευγμένων, τρίτη ὑπερβολαίων.
@@ -351,12 +364,12 @@ corr. ipse. 19 μ. χρωματική M4 ex μ. διάτονος, item ter in
 sqq. aberraverunt enim M1W ad lin. 22. 22 ἐν δὲ διατόνῳ
 οἵδε B, sed vide 186, 14. haec omnia usque ad 187, 2
 om. M4L. sed haberunt sonos diatonos W, habent VNB.</note>
-
-<pb n="187"/>
+               <pb n="187"/>
 διεζευγμένων διάτονος, παρανήτη ὑπερβολαίων
 διάτονος (p. 8).</p>
-</div>
-<div type="textpart" subtype="section" n="5"><p> Τῶν δὲ διαστημάτων διαφοραί εἰσι πέντε, ᾗ
+         </div>
+         <div n="5" type="section">
+            <p> Τῶν δὲ διαστημάτων διαφοραί εἰσι πέντε, ᾗ
 τε μεγέθει ἀλλήλων διαφέρει καὶ ᾗ κατὰ γένος καὶ ᾗ
 <lb n="5"/>τὰ σύμφωνα τῶν διαφώνων καὶ ᾗ τὰ σύνθετα τῶν
 ἀσυνθέτων καὶ τὰ ῥητὰ τῶν ἀλόγων. — Ἡ μὲν οὖν
@@ -384,10 +397,9 @@ dunt δίεσις M4L. 14 τὰ διὰ τεσσ. W. 16 6 σ. πάντα M2NL
 18 post τόνος add. τριημιτόνιον M4L. 19 Addunt Possevinus
 et Vulcanius ἔστι δὲ συμφωνία μὲν δυοῖν φθόγγων ὀξύτητι καὶ
 βαρύτητι διαφερόντων κατὰ τὸ αὐτὸ πτῶσις καὶ κρᾶσις. δεῖ</note>
-<note type="footnote">Cum cap. 5 confer Aristx. p. 39, Bryenn. 1, 5. ArQu. 1, 7.
+               <note type="footnote">Cum cap. 5 confer Aristx. p. 39, Bryenn. 1, 5. ArQu. 1, 7.
 De symphonia vide quae contulerim supra p. 133.</note>
-
-<pb n="188"/>
+               <pb n="188"/>
 βαρυτέρο· διαφωνία δὲ τοὐναντίον δύο φθόγγων ἀμιξαι,
 ὥστε μὴ κραθῆναι, ἀλλὰ τραχυνθῆναι τὴν ἀκοήν.—
 Ἡ δὲ τοῦ συνθέτου ἐστὶ διαφορὰ, καθʼ ἣν ἃ μέν
@@ -414,7 +426,7 @@ De symphonia vide quae contulerim supra p. 133.</note>
 τῆς θατέρου. ἐὰν γὰρ ἡ ἀκοὴ τοῦ βαρέος μᾶλλον ἐν τῇ συγκρούσει
 ποιεῖ τὴν ἀντίληψιν ἢ πάλιν τοῦ ὀξέος, ἀσύμφωνόν ἐστι
 τοιοῦτον (cf. Βry. p. 382).</note>
-<note type="footnote">1 διαφωνία — ἀμιξία Meib. ex Penae puto textparte (quae
+               <note type="footnote">1 διαφωνία — ἀμιξία Meib. ex Penae puto textparte (quae
 pergit μὴ οἵων τε κραθῆναι), om. libri omnes. 2 ὥστε μὴ
 κραθῆναι] μὴ ὥστε ἢ καθαρθῆναι MB L, μὴ ὥ. ἐκκαθαρθῆναι W.
 τραχυνθῆναι MWL., τραχῦναι B. 4 ἐστι] ἔτι L. 5 φθ.
@@ -424,8 +436,7 @@ pergit μὴ οἵων τε κραθῆναι), om. libri omnes. 2 ὥστε μ�
 om. W. ἐν ἁρμονίᾳ μὲν W 13 ὁ δὲ τόνος B. 16 δίτονον
 WL, δί///τονον M, διτόνιον B. 17 δι[ α]τόνῳ B (δι-
 τόνῳ PH).</note>
-
-<pb n="189"/>
+               <pb n="189"/>
 πάντα ἐστὶν ἀσύνθετα· ὁμοίως δὲ καὶ τὰ μείζω τοῦ
 διτόνου πάντα σύνθετα. — Ἡ δὲ τοῦ ῥητοῦ καὶ ἀλόγου
 διαφορά ἐστι, καθʼ ἣν τῶν διαστημάτων ἃ μὲν
@@ -434,8 +445,9 @@ WL, δί///τονον M, διτόνιον B. 17 δι[ α]τόνῳ B (δι-
 δίτονον τρίτονον καὶ τὰ ὅμοια· ἄλογα δὲ τὰ παραλλάντοντα
 ταῦτα τὰ μεγέθη ἐπὶ τὸ μεῖζον ἢ ἐπὶ τὸ ἔλαττον
 ἀλόγῳ τινὶ μεγέθει.</p>
-</div>
-<div type="textpart" subtype="section" n="6"><p> Γένη δὲ ἐστι τρία τὰ προειρημένα. πᾶν οὖν
+         </div>
+         <div n="6" type="section">
+            <p> Γένη δὲ ἐστι τρία τὰ προειρημένα. πᾶν οὖν
 <lb n="10"/>ἔσται μέλος ἤτοι διατονικὸν ἢ χρωματικὸν ἢ ἐναρμόνιον
 ἢ κοινὸν ἢ μικτὸν ἐκ τούτων. διατονικὸν μὲν
 οὖν ἐστι τὸ τῇ διατονικῇ διαιρέσει χρώμενον, χρωματικὸν
@@ -457,27 +469,28 @@ p. 383, 10—12. 7 τῷ μεγέθει W, om. quae seqq. ad μεγέθει.
 item postea 17 et 18. ἢ (prius) om. B. 19 φθόγγων τό-
 πους W. 20 ἐν τῷ τον. WN 21 διεσιαίῳ B M4, δεσιαίω V,
 δισιαιῳ (prius ι in ras.) N, δ//σιαίω M1, διεσίῳ WL.</note>
-<note type="footnote">Cap. 6. Ad γένος μικτὸν et κοινὸν cf. Arstx. p. 44 M. ad
+               <note type="footnote">Cap. 6. Ad γένος μικτὸν et κοινὸν cf. Arstx. p. 44 M. ad
 universum caput Bryenn. I 7.</note>
-
-<pb n="190"/>
+               <pb n="190"/>
 ἡ τόνον ἀπὸ τοῦ ἑτέρου ἀπέχουσα τῶν τὸ τετράχορδον
 περιεχόντων, βαρυτάτη δὲ ἡ δίτονον. ὁμοίως δὲ καὶ
 παρυπάτη ἐστὶ βαρυτάτη μὲν ἡ δίεσιν ἀπὸ τοῦ βαρυτέρου
 τῶν τὸ τετράχορδον περιεχόντων ἀπέχουσα,
-ὀξυτάτη δὲ ἡ ἡμιτόνιον ἀπέχουσα.</p><lb n="5"/>
-</div>
-<div type="textpart" subtype="section" n="7"><p> Χρόα δέ ἐστι γένους εἰδικὴ διαίρεσις. χρόαι
+ὀξυτάτη δὲ ἡ ἡμιτόνιον ἀπέχουσα.</p>
+            <lb n="5"/>
+         </div>
+         <div n="7" type="section">
+            <p> Χρόα δέ ἐστι γένους εἰδικὴ διαίρεσις. χρόαι
 δέ εἰσιν αἱ ῥηταὶ καὶ γνώριμοι ἕξ, ἁρμονίας μία, χρώματος
 τρεῖς, διατόνου δύο.</p>
-<p>Ἡ μὲν οὖν τῆς ἁρμονίας τῇ αὐτοῦ τοῦ γένους
+            <p>Ἡ μὲν οὖν τῆς ἁρμονίας τῇ αὐτοῦ τοῦ γένους
 διαιρέσει κέχρηται· μελῳδεῖται γὰρ κατὰ δίεσιν καὶ<lb n="10"/>
 δίεσιν τὴν ἴσην καὶ δίτονον.</p>
-<p>Τῶν δὲ χρωματικῶν διαιρέσεων βαρυτάτη μέν ἐστιν
+            <p>Τῶν δὲ χρωματικῶν διαιρέσεων βαρυτάτη μέν ἐστιν
 ἡ τοῦ μαλακοῦ χρώματος χρόα, μελῳδεῖται δὲ κατὰ
 δίεσιν τριτημόριον τόνου καὶ δίεσιν τὴν ἴσην καὶ τὸ
 ἴσον τόνῳ καὶ τῷ ἡμίσει καὶ τρίτῳ. τὸ δὲ ἡμιόλιον <lb n="15"/>
-<note type="footnote">1 ἑτέρου VNWB , et mg. L, ὀξυτέρου M4L, add. τόνου W.
+               <note type="footnote">1 ἑτέρου VNWB , et mg. L, ὀξυτέρου M4L, add. τόνου W.
 τετραχόρδων WL. 2 δί///τονον M. καὶ om. W. 3 ἐστι]
 ἤ W. μὲν] μέση L. δίεσιν ἀπὸ om. W, qui pergit τοῦ
 βαρυτέρου τὸ τῶν τετραχόρδων περιεχόντων δίτονον ἀπέχουσα,
@@ -497,9 +510,8 @@ addit quae leguntur apud Ar Qu. p. 14, 32 δίεσις μὲν οὖν ἐκαλ
 14 τριτημ, MB, τὸ τριτημ WVNL. τὸ V NB, videtur om. M,
 om. L. 15 καὶ M4N2L, om. rel. post τρίτῳ add. ἀσύνθετον
 διάστημα M4L, W autem inde a 14 τριτημόριον τόνου haec</note>
-<note type="footnote">Cum cap 7 cf. Aristox. p. 24 Mb Ar Qu 1, 9 (p. 19,28 M).</note>
-
-<pb n="191"/>
+               <note type="footnote">Cum cap 7 cf. Aristox. p. 24 Mb Ar Qu 1, 9 (p. 19,28 M).</note>
+               <pb n="191"/>
 κατὰ δίεσιν ἡμιόλιον τῆς ἐναρμονίου διέσεως καὶ
 δίεσιν τὴν ἴσην καὶ ἑπτὰ τεταρτημορίων διέσεων (p. 11)
 ἀσύνθετον διάστημα. τὸ δὲ τονιαῖον χρῶμα τῇ αὐτῇ
@@ -513,7 +525,7 @@ om. L. 15 καὶ M4N2L, om. rel. post τρίτῳ add. ἀσύνθετον
 τὸ διὰ πέντε καὶ τὴν ἴσην τόνῳ καὶ τὴν τετάρτην (5 sunt dieses
 sive, 1/4 tonus in molli diatono). τὸ δὲ ἡμιόλιον κτλ. eadem
 im marg. L. Mon Baroc.</note>
-<note type="footnote">1 κατὰ δίεσιν WBM4L, καὶ δ. V N, om. M1. ἡμιόλιον
+               <note type="footnote">1 κατὰ δίεσιν WBM4L, καὶ δ. V N, om. M1. ἡμιόλιον
 τῆς ἐναρμ. διέσεως LM4, ἡμιολίου τῆς ἐναρμ. δ. B (ἡμιολίαν
 Cram. Hamb.) ὁμοιολίαν τῆς ἐ. δ. N, om. M1W et mg. L.
 2 τὴν ἴσην om. W et mg. L. καὶ BM4L, om. M1W ἑπτὰ
@@ -531,7 +543,7 @@ eius, qui 41/2 + 41/2 + 21= 30 demonstraret. 4 χρόᾳ κεχρ
 ἐνυπαρχόντων αὐτῷ διέσεων, ἡμιολίων τῶν ἐναρμονίων διέσεων
 M4 L, καὶ ἡμιόλιον ἀπὸ NB, ἡμιόλιον δέ ἐστι W, ἡμιόλιόν
 ἐστι V. reliqua omm.</note>
-<note type="footnote">Continent partes toni duodecimas:
+               <note type="footnote">Continent partes toni duodecimas:
 e f g a
 Genus enarmonium 3 + 3 + 24
 Chroma molle 4 + 4 + 22
@@ -540,20 +552,19 @@ tonicum 6 + 6 + 18
 Diatonicum molle 6 + 9 + 15
 altum 6 + 12 + 12
 mi fa sol la.</note>
-
-<pb n="192"/>
+               <pb n="192"/>
 ἐνυπαρχουσῶν αὐτῷ διέσεων, ἡμιολίων τῶν ἐναρμονίων
 διέσεων, μαλακὸν δὲ τὸ τοῦ ἐλαχίστου πυκνοῦ
 ὡσαύτως χρῶμα, ἐπειδὴ τὸ ἐν αὐτῷ πυκνὸν ἀνίεταί
 τε καὶ ἐκλύεται.</p>
-<p>Τῶν δὲ διατονικῶν διαιρέσεων τὸ μὲν διάτονον <lb n="5"/>
+            <p>Τῶν δὲ διατονικῶν διαιρέσεων τὸ μὲν διάτονον <lb n="5"/>
 μαλακὸν καλεῖται, τὸ δὲ σύντονον. ἡ μὲν οὖν τοῦ
 μαλακοῦ διατόνου χρόα μελῳδεῖται κατὰ ἡμιτόνιον καὶ
 τριῶν διέσεων ἀσύνθετον διάστημα καὶ πέντε διέσεων
 ὁμοίως ἀσύνθετον διάστημα. ἡ δὲ τοῦ συντόνου διατόνου
 τῇ αὐτῇ τοῦ γένους ἐπικοινωνεῖ διαιρέσει· μελῳδεῖται <lb n="10"/>
 γὰρ καθʼ ἡμιτόνιον καὶ τόνον καὶ τόνον.</p>
-<p>Δείκνυνται δὲ καὶ διʼ ἀριθμῶν αἱ χρόαι τὸν τρόπον
+            <p>Δείκνυνται δὲ καὶ διʼ ἀριθμῶν αἱ χρόαι τὸν τρόπον
 τοῦτον. ὑποτίθεται γὰρ ὁ τόνος εἰς δώδεκά τινα
 ἐλάχιστα μόρια διαιρούμενος, ὧν ἕκαστον δωδεκατημύριον
 τόνου καλεῖται· ἀναλόγως δὲ τῷ τόνῳ καὶ τὰ <lb n="15"/>
@@ -574,12 +585,12 @@ in litura M4, καθὼς V. καὶ τόνον M3, om. M1. 12 καὶ
 om. W διʼ ἀριθμῶν B, ἀριθμῶ M, ἀριθμῶν VL,
 ἀριθμῷ W, ἐν ἀριθμῷ N. 15 τόνου τόνος κ. W. 18 τέσ-
 σαρα] τρία W.</note>
-
-<pb n="193"/>
+               <pb n="193"/>
 διάτονον κατὰ Ϛ καὶ θ καὶ ιε, τὸ δὲ σύντονον
 κατὰ Ϛ καὶ ιβ καὶ ιβ.</p>
-</div>
-<div type="textpart" subtype="section" n="8"><p> Τῶν δὲ συστημάτων διαφοραί εἰσιν ἑπτά.
+         </div>
+         <div n="8" type="section">
+            <p> Τῶν δὲ συστημάτων διαφοραί εἰσιν ἑπτά.
 τέσσαρες μὲν αἱ αὐταὶ τοῖς διαστήμασιν, ἣ τε κατὰ
 <lb n="5"/>μέγεθος καὶ ἡ κατὰ γένος καὶ ἡ τοῦ συμφώνου καὶ ἡ
 τοῦ ῥητοῦ καὶ ἀλόγου· τρεῖς δὲ ἴδιαι τῶν συστημάτων
@@ -600,10 +611,9 @@ quamquam in 2 falso scribunt κ δ pro κβ et in 3 bis δ, om. ??
 et quartum schema male inscribunt ἡμιτόν. ἡμιτόν. 9 καὶ
 ἐμμεταβόλου om. L. 10 συστήματα ] | συστημάτων W. 12 γένει ]
 γένη M1. διατονικὰ διαφέρει τῶν W. 13 χρωμ. καὶ ἐν. B.14 διοίσει] διαφορᾷ W.</note>
-<note type="footnote">Cap 8. De systemate cf. Aristox. p. 6 et 17. A Qu. 1, 8
+               <note type="footnote">Cap 8. De systemate cf. Aristox. p. 6 et 17. A Qu. 1, 8
 (p. 15 M). Bryenn. I 6.</note>
-
-<pb n="194"/>
+               <pb n="194"/>
 ὑπὸ τῶν συμφώνων φθόγγων περιεχόμενα τῶν ὑπὸ
 διαφώνων. σύμφωνα δέ ἐστιν ἐν τῷ ἀμεταβόλῳ
 συστήματι ἕξ· ἐλάχιστον μὲν τὸ διὰ τεσσάρων, τόνων
@@ -636,14 +646,14 @@ om. W. 10 ἡμίσους MW, ἡμίσεως M4. 11 νήτη L. συνημ-
 om. M1. add. WL πέμπτον τὸ διὰ πασῶν καὶ διὰ πέντε,
 ἕκτον τὸ δὶς διὰ πασῶν, M facit signum rei omissae λυ.
 21 αὔξεται] αὔξει W. δὶς om. M1WB, item p.195,1,habent LM3.</note>
-<note type="footnote">De vocis spatio cf. Aristox. p. 14. 20.</note>
-
-<pb n="195"/>
+               <note type="footnote">De vocis spatio cf. Aristox. p. 14. 20.</note>
+               <pb n="195"/>
 διὰ πασῶν καὶ διὰ τεσσάρων καὶ δὶς διὰ πασῶν καὶ
 διὰ πέντε. — διάφωνα δέ ἐστι τά τε ἐλάττω τῶν διὰ
 τεσσάρων καὶ μεταξὺ τῶν εἰρημένων συμφώνων πάντα.</p>
-</div>
-<div type="textpart" subtype="section" n="9"><p> Γίνεται δὲ καὶ σχήματα τοῦ αὐτοῦ μεγέθους
+         </div>
+         <div n="9" type="section">
+            <p> Γίνεται δὲ καὶ σχήματα τοῦ αὐτοῦ μεγέθους
 <lb n="5"/> ἐκ τῶν αὐτῶν ἀσυνθέτων συγκείμενα καὶ ἀριθμοῦ,
 εἰ ἡ τάξις αὐτῶν ἀλλοίωσιν λάβοι ἐνυπάρχοντός τινος
 ἀνομοίου· τὰ γὰρ ἐξ ἴσων πάντων ἢ ὁμοίων σχημάτων
@@ -667,13 +677,12 @@ om. M1. add. WL πέμπτον τὸ διὰ πασῶν καὶ διὰ πέν�
 11 ὑπάτην μέσων BLM3. ὑπάτων μέσην M1W 13 παρυ-
 πάτην BLM3. ὑπάτων M1W 15 μέσων WN B, μέσον M1.
 18 δέ] an γάρ 20 τόνοι WB (L mg), τονιαῖα MNL.</note>
-<note type="footnote">Cap. 9. De his consonantiarum formis cf. Aristox. p. 74
+               <note type="footnote">Cap. 9. De his consonantiarum formis cf. Aristox. p. 74
 Dia tessaron.
 Hc d e 1. forma Si do re mi
 c d ef 2. „do re mi fa
 d ef g 3. „ re mi fa sol.</note>
-
-<pb n="196"/>
+               <pb n="196"/>
 ἡμιτόνιον μὲν ἕν, τόνοι δὲ τρεῖς· ἐν δὲ τῷ διὰ πασῶν
 ἡμιτόνια μὲν δύο, τόνοι δὲ πέντε· πρὸς δὲ τὴν τῶν
 ἡμιτονίων σχέσιν τὰ σχήματα θεωρεῖται. τοῦ οὖν διὰ
@@ -682,7 +691,7 @@ d ef g 3. „ re mi fa sol.</note>
 τὸ ὀξὺ, τρίτον οὗ μέσον τῶν τόνων. ἔστι δὲ καὶ
 ταῦτα ὁμοίως τοῖς λοιποῖς γένεσιν ἀπὸ τῶν αὐτῶν
 φθόγγων ἐπὶ τοὺς αὐτούς.</p>
-<p>Τοῦ δὲ διὰ πέντε τέσσαρά ἐστι σχήματα. πρῶτον
+            <p>Τοῦ δὲ διὰ πέντε τέσσαρά ἐστι σχήματα. πρῶτον
 μὲν τὸ ὑπὸ βαρυπύκνων περιεχόμενον, οὗ πρῶτος ὁ <lb n="10"/>
 τόνος ἐπὶ τὸ ὀξύ· ἔστι δὲ ἀπὸ ὑπάτης μέσων ἐπὶ παραμέσην.
 δεύτερον δὲ τὸ ὑπὸ μεσοπύκνων περιεχόμενον,
@@ -694,7 +703,7 @@ d ef g 3. „ re mi fa sol.</note>
 οὗ πρῶτος ὁ τόνος (ἐπὶ τὸ βαρύ)· ἔστι δὲ ἀπὸ
 μέσης ἐπὶ νήτην διεζευγμένων ἢ ἀπὸ προσλαμβανομένου
 ἐπὶ ὑπάτην μέσων: ἐν δὲ διατόνῳ πρῶτον μέν <lb n="20"/>
-<note type="footnote">2 πρὸς δὲ τὴν] προσδέοι M 5 πρῶτον ἐπὶ τὸ ὀξὺ
+               <note type="footnote">2 πρὸς δὲ τὴν] προσδέοι M 5 πρῶτον ἐπὶ τὸ ὀξὺ
 Μ1W N B, μέσον τῶν τόνων M4, ita et L qui addit τὸ ὀξύ.
 6 μέσον τῶν τόνων W B, μέσων τ. τ. M1N, πρῶτον ἐπὶ τὸ ὀξὺ
 τῶν τόνων M4L. ἔστι ] ἔχει M4L. 7 τ. λ. τὴν L (M4 mg.).
@@ -702,34 +711,33 @@ d ef g 3. „ re mi fa sol.</note>
 βαρυτάτης B. 17 τέταρτον δὲ τὸ M4WL. 18 πρῶτος ego
 collata p. 197, 3, τέταρτος libri. ἐ. τ. βαρὺ BL. om. M1W
 ἐ. τ. ὀξὺ M4. 19 (πρλβ)μένων MWL. 20 ὑπάτη B.</note>
-<note type="footnote">Dia pente.
+               <note type="footnote">Dia pente.
 ef g a — h 1. forma mi fa sol la — si
 f g a — hc΄ 2. fa sol la — si do
 a — hc΄ d΄ 3. sol la — si do re
 a — hc΄ δ΄ e΄ 4. la — si do re mi.</note>
-
-<pb n="197"/>
+               <pb n="197"/>
 ἐστι σχῆμα οὗ πρῶτον τὸ ἡμιτόνιον ἐπὶ τὸ βαρ κεῖται,
 δεύτερον δὲ οὗ πρῶτον ἐπὶ τὸ ὀξὺ, τρίτον οὗ δεύτερον
 ἐπὶ τὸ ὀξὺ, τέταρτον οὗ πρῶτον ἐπὶ τὸ βαρύ.</p>
-<p>Τοῦ δὲ διὰ πασῶν εἴδη ἐστὶν ἑπτά. πρῶτον μὲν
+            <p>Τοῦ δὲ διὰ πασῶν εἴδη ἐστὶν ἑπτά. πρῶτον μὲν
 <lb n="5"/> τὸ ὑπὸ βαρυπύκνων περιεχόμενον, οὗ πρῶτος ὁ τόνος
 ἐπὶ τὸ ὀξὺ· ἔστι δὲ ἀπὸ ὑπάτης ὑπάτων ἐπὶ παραμέσην,
 ἐκαλεῖτο δὲ ὑπὸ τῶν ἀρχαίων μιξολύδιον.</p>
-<p>Δεύτερον τὸ ὑπὸ μεσοπύκνων περιεχόμενον οὗ
+            <p>Δεύτερον τὸ ὑπὸ μεσοπύκνων περιεχόμενον οὗ
 δεύτερος ὁ τόνος ἐπὶ τὸ ὀξύ· ἔστι δὲ ἀπὸ παρυπάτης
 <lb n="10"/>ὑπάτων ἐπὶ τρίτην διεζευγμένων, ἐκαλεῖτο δὲ λύδιον.</p>
-<p>Τρίτον τὸ ὑπὸ ὀξυπύκνων περιεχόμενον, οὗ τρίτος
+            <p>Τρίτον τὸ ὑπὸ ὀξυπύκνων περιεχόμενον, οὗ τρίτος
 ὁ τόνος ἐπὶ τὸ ὀξύ· ἔστι δὲ ἀπὸ λιχανοῦ ὑπάτων ἐπὶ
 παρανήτην διεζευγμένων, ἐκαλεῖτο δὲ φρύγιον.</p>
-<p>Τέταρτον τὸ ὑπὸ βαρυπύκνων περιεχόμενον, οὗ
+            <p>Τέταρτον τὸ ὑπὸ βαρυπύκνων περιεχόμενον, οὗ
 <note type="footnote">1 οὗ πρῶτον — 3 δεύτ. ἐπὶ τὸ ὀξύ om. M1N. ἐπὶ τὸ
 βαρύ om. L. κεῖται W B, om. rel. 2 τρίτον οὗ — ὀξύ
 om. WL. 3 τέταρτον οὐ M. πρῶτον ἐπὶ] τρίτον ἐπὶ libri,
 cf. 196, 18. βαρύ libb., ὀξύ Meib. 6 ἔστι δὲ] W. 8 δεύ-
 τερο δὲ τὸ L. 12 ἀπὸ] ὑπὸ L. 13 ad 198, 14 scholion τὸ
 δὲ ὑπὸ διατόνου ἤτοι λιχανοῦ φρύγιον. M2.</note>
-<note type="footnote">Dia pason.
+               <note type="footnote">Dia pason.
 Forma 1. Hc d ef g a — h mixolydia.
 c d ef g a — hc lydia
 d ef g a — hc d΄ phrygia
@@ -744,22 +752,21 @@ niavit, ea refelli in Berliner Wochenschrift 1886, p. 1134. et
 quae de variorum modorum exitu statuerat Gevaertusque ab
 illo recepit, ea falsa esse W. declaravit in Aristoxeno
 (1893) p. 1.</note>
-
-<pb n="198"/>
+               <pb n="198"/>
 τέταρτος ὁ τόνος ἐπὶ τὸ ὀξύ· ἔστι δὲ ἀπὸ ὑπάτης
 μέσων ἐπὶ νήτην διεζευγμένων, ἐκαλεῖτο δὲ δώριον.</p>
-<p>Πέμπτον τὸ ὑπὸ μεσοπύκνων περιεχόμενον οὗ
+            <p>Πέμπτον τὸ ὑπὸ μεσοπύκνων περιεχόμενον οὗ
 πέμπτος ὁ τόνος ἐπὶ τὸ ὀξύ· ἔστι δὲ ἀπὸ παρυπάτης
 (p. 16) μέσων ἐπὶ τρίτην ὑπερβολαίων, ἐκαλεῖτο δὲ <lb n="5"/>
 ὑπολύδιον.</p>
-<p>Ἕκτον τὸ ὑπὸ ὀξυπύκνων περιεχόμενον, οὗ ἕκτος
+            <p>Ἕκτον τὸ ὑπὸ ὀξυπύκνων περιεχόμενον, οὗ ἕκτος
 ὁ τόνος ἐπὶ τὸ ὀξύ· ἔστι δὲ ἀπὸ λιχανοῦ μέσων ἐπὶ
 παρανήτην ὑπερβολαίων, ἐκαλεῖτο δὲ ὑποφρύγιον.</p>
-<p>Ἕβδομον τὸ ὐπὸ βαρυπύκνων περιεχόμενον, οὗ <lb n="10"/>
+            <p>Ἕβδομον τὸ ὐπὸ βαρυπύκνων περιεχόμενον, οὗ <lb n="10"/>
 πρῶτος ὁ τόνος ἐπὶ τὸ βαρύ· ἔστι δὲ ἀπὸ μέσης ἐπὶ
 νήτην ὑπερβολαίων ἢ ἀπὸ προσλαμβανομένου ἐπὶ μέσην·
 ἐκαλεῖτο δὲ κοινὸν καὶ λοκριστὶ καὶ ὑποδώριον.</p>
-<p>Ἐν δὲ διατόνῳ πρῶτον μέν ἐστιν εἶδος τὸ διὰ
+            <p>Ἐν δὲ διατόνῳ πρῶτον μέν ἐστιν εἶδος τὸ διὰ
 πασῶν, οὗ πρῶτον μὲν ἐπὶ τὸ βαρὺ, τέταρτον δὲ ἐπὶ <lb n="15"/>
 τὸ ὀξύ ἐστι τὸ ἡμιτόνιον· δεύτερον δὲ οὗ τρίτον μὲν
 ἐπὶ τὸ βαρὺ, πρῶτον δὲ ἐπὶ τὸ ὀξύ· τρίτον δὲ οὗ
@@ -780,20 +787,20 @@ illo recepit, ea falsa esse W. declaravit in Aristoxeno
 τερον δὲ M in lit. et L, δεύτερον δὲ πέμπτον V, οὗ πρότερον
 μὲν ἐ. τὸ βαρὺ, δεύτερον δὲ W 22 δεύτερον] πρότερον W
 βαρὺ] ὀξὺ M1WB. τρίτον] δεύτερον W, πέμπτον LM4.</note>
-
-<pb n="199"/>
+               <pb n="199"/>
 ἐπὶ τὸ ὀξύ. ἔστι δὲ καὶ ταῦτα ἀπὸ τῶν αὐτῶν φθόγγων
 ἐπὶ τοὺς αὐτοὺς καθάπερ ἐπὶ τῆς ἁρμονίας καὶ
 τοῦ χρώματος καὶ ἐκαλεῖτο τοῖς αὐτοῖς ὀνόμασι.</p>
-</div>
-<div type="textpart" subtype="section" n="10"><p> Τῇ δὲ τοῦ ῥητοῦ καὶ ἀλόγου διαφορᾷ διοίσει
+         </div>
+         <div n="10" type="section">
+            <p> Τῇ δὲ τοῦ ῥητοῦ καὶ ἀλόγου διαφορᾷ διοίσει
 <lb n="5"/>συστήματα, ὅσα ἐκ ῥητῶν διαστημάτων σύγκειται, τῶν
 ἐξ ἀλόγων. ὅσα μὲν γὰρ ἐκ ῥητῶν ῥητά ἐστιν, ὅσα
 δὲ ἐξ ἀλόγων ἄλογα.</p>
-<p>Τ δὲ τοῦ ἑξῆς καὶ ὑπερβατοῦ διαφορᾷ διοίσει
+            <p>Τ δὲ τοῦ ἑξῆς καὶ ὑπερβατοῦ διαφορᾷ διοίσει
 (p. 17) συστήματα τὰ διὰ τῶν ἑξῆς φθόγγων μελῳδούμενα
 <lb n="10"/>τῶν καθʼ ὑπερβατόν.</p>
-<p>Τ δὲ τοῦ συνημμένου καὶ διεζευγμένου διαφορᾷ
+            <p>Τ δὲ τοῦ συνημμένου καὶ διεζευγμένου διαφορᾷ
 διοίσει συστήματα, ὅσα διὰ τῶν συνημμένων
 τετραχόρδων τὴν σύνθεσιν ἔχει τῶν διὰ τῶν διεζευγμένων.
 ἔστι δὲ συναφὴ μὲν δύο τετραχόρδων ἑξῆς
@@ -807,11 +814,10 @@ inserit M1, hab. NL, om. WB. 10 τῶν Βry. p. 385, τῇ libri.
 12 διοίσει ὁμοίως σ. W. ὅσα] ἃ W διὰ τῶν διέσεων
 συν. M1WN. 13 τετρ.] τῶν τετρ. W. διὰ τῶν om. MNBL.
 17 ἀνὰ μέσων N.</note>
-<note type="footnote">Systema synemmenon.
+               <note type="footnote">Systema synemmenon.
 hypatom meson synemmenon
 Proslamb. bypate parypate lichanos hypate parypate lichanos Mese trite paranete nete</note>
-
-<pb n="200"/>
+               <pb n="200"/>
 ἔστι βαρυτάτη μὲν ἡ <del>ἐκ</del> τοῦ ὑπάτων καὶ μέσων τετραχόρδου·
 κοινὸς δὲ αὐτῇ συνάπτει φθόγγος ὑπάτη
 μέσων. μέση δέ ἐστι συναφὴ ἡ τοῦ μέσων καὶ νητῶν
@@ -821,14 +827,14 @@ Proslamb. bypate parypate lichanos hypate parypate lichanos Mese trite paranete 
 διεζευγμένων. διάζευξις δέ ἐστι μία ἡ τοῦ μέσων καὶ
 νητῶν διεζευγμένων· κοινὸς δὲ αὐτὰ διαζεύγνυσι τόνος
 ὁ μεταξὺ μέσης καὶ παραμέσης.</p>
-<p>Τέλεια δέ ἐστι συστήματα δύο, ὧν τὸ μὲν ἔλαττον, <lb n="10"/>
+            <p>Τέλεια δέ ἐστι συστήματα δύο, ὧν τὸ μὲν ἔλαττον, <lb n="10"/>
 τὸ δὲ μεῖζον. καὶ ἔστι τὸ μὲν ἔλαττον κατὰ
 συναφὴν ἀπὸ προσλαμβανομένου ἐπὶ νήτην συνημμένων.
 ὑπάρχει δὲ ἐν αὐτῷ τετράχορδα τρία συνημμένα
 τάδε· ὑπάτων μέσων συνημμένων, καὶ τόνος ἀπὸ προσλαμβανομένου
 ἐπὶ ὑπάτην ὑπάτων· συμφώνῳ δὲ ὁρίζεται <lb n="15"/>
 τῷ (p. 18) διὰ πασῶν καὶ διὰ τεσσάρων.</p>
-<p>Τὸ δὲ μεῖζόν ἐστι κατὰ διάζευξιν ἀπὸ προσλαμβανομένου
+            <p>Τὸ δὲ μεῖζόν ἐστι κατὰ διάζευξιν ἀπὸ προσλαμβανομένου
 <note type="footnote">1 τετραχόρδων N. 2 αὐτῇ MW Bry., αὐτὰ BM3L.
 ὑπ. τῶν μ. N. 3 a μέση 3 ad μέση 4 aberrat W ἡ ego
 ἐκ (vel u) libri, cf. lin. 1. 5. 7. νητῶν in M erasum, hab.
@@ -840,14 +846,13 @@ lit. WBL, τῶν N. αὐτὰ WBM3, αὐτὴν VL. τόπος W
 νήτην M4, νήτη M1L. 14 ὑπάτων] ὑπὸ τῶν Ν. ὑπάτη B.
 15 συμφώνῳ LM4, σύμφωνον B (M1?) συμφόνου συμφώνου
 16 τῷ] τὸ L.</note>
-<note type="footnote">Unum novisse videtur systema perfectum Aristox. p. 6 (et
+               <note type="footnote">Unum novisse videtur systema perfectum Aristox. p. 6 (et
 apud Porphyrium in Ptol. p. 258), sicuti Ptolemaeus barm. II1.
 eadem, quae hic Cleonides, docet Gaudentius p. 8. eadem
 habet systemata, nomina alia Nicomachus harm. c. 11: eadem
 sunt nomina, minus systema diezeugmenon apud Bacchium
 § 74, cf. annot. meas (1891) p. 9b.</note>
-
-<pb n="201"/>
+               <pb n="201"/>
 ἐπὶ νήτην ὑπερβολαίων. ὑπάρχει δὲ ἐν αὐτῷ
 τετράχορδα μὲν τέσσαρα διὰ δυοῖν διεζευγμένα, ἀλλήλοις
 δὲ συνημμένα, τό τε ὑπάτων καὶ μέσων, καὶ διεζευγμένων
@@ -855,14 +860,15 @@ sunt nomina, minus systema diezeugmenon apud Bacchium
 <lb n="5"/> ἀπὸ προσλαμβανομένου ἐπὶ ὑπάτην ὑπάτων καὶ ὁ ἀπὸ
 παραμέσης ἐπὶ μέσην. συμφώνῳ δὲ διορίζεται τῷ δὶς
 διὰ πασῶν.</p>
-<p>Πέντε δὲ ὄντων τετραχόρδων ἐν τῷ ἀμεταβόλῳ
+            <p>Πέντε δὲ ὄντων τετραχόρδων ἐν τῷ ἀμεταβόλῳ
 συστήματι ὅπερ ἐστὶν ἐξ ἀμφοῖν τελείοιν σύνθετον,
 <lb n="10"/> τὰ μὲν δύο κοινά ἐστιν ἑκατέρῳ τῶν τελείων, τό τε
 ὑπάτων καὶ μέσων· ἴδια δὲ τοῦ μὲν κατὰ συναφὴν τὸ
 νητῶν συνημμένων, τοῦ δὲ κατὰ διάξευξιν τὸ νητῶν
 διεζευγμένων καὶ νητῶν ὑπερβολαίων.</p>
-</div>
-<div type="textpart" subtype="section" n="11"><p> Τῇ δὲ τοῦ ἀμεταβόλου καὶ ἐμμεταβόλου
+         </div>
+         <div n="11" type="section">
+            <p> Τῇ δὲ τοῦ ἀμεταβόλου καὶ ἐμμεταβόλου
 <lb n="15"/> διοίσει, καθʼ ἣν διαφέρει τὰ ἀπλᾶ συστήματα τῶν
 μὴ ἁπλῶν. ἀπλᾶ μὲν οὖν ἐστι τὰ πρὸς μίαν μέσην
 ἡρμοσμένα, διπλᾶ δὲ τὰ πρὸς δύο, τριπλᾶ δὲ τὰ πρὸς
@@ -883,15 +889,16 @@ N1BM3L, τῶν M1WN2. 12 τὸ] τῶν M1W 14 τῇ δὲ
 etiam M, orbe inclusit M4. ego malim ἀπαθῆ ὄντα τῆς τῶν
 γενῶν διαφορᾶς. Bacchii septem definitionibus § 80 nihil ex-
 peditur.</note>
-
-<pb n="202"/>
+               <pb n="202"/>
 συμβαίνει τριῶν τετραχόρδων συνημμένων ἤτοι τοῦ
 μέσου ὀξυτάτῳ εἶναι, ἤτοι τοῦ ὀξυτάτου βαρυτάτῳ.
 (p. 19) ἀπὸ δὲ τῆς μέσης καὶ τῶν λοιπῶν φθόγγων αἱ
 δυνάμεις γνωρίζονται, τὸ γὰρ πῶς ἔχειν ἕκαστον αὐτῶν
-πρὸς τὴν μέσην φανερῶς γίνεται.</p> <lb n="5"/>
-</div>
-<div type="textpart" subtype="section" n="12"><p> Τόνος δὲ λέγεται τετραχῶς· καὶ γὰρ ὡς φθόγγος
+πρὸς τὴν μέσην φανερῶς γίνεται.</p>
+            <lb n="5"/>
+         </div>
+         <div n="12" type="section">
+            <p> Τόνος δὲ λέγεται τετραχῶς· καὶ γὰρ ὡς φθόγγος
 καὶ ὡς διάστημα καὶ ὡς τόπος φωνῆς καὶ ὡς
 τάσις. ἐπὶ μὲν οὖν τοῦ φθόγγου χρῶνται τῷ ὀνόματι
 οἱ λέγοντες ἑπτάτονον τὴν φόρμιγγα καθάπερ
@@ -902,7 +909,7 @@ peditur.</note>
 ἑνδεκάχορδε λύρα, δεκαβάμονα τάξιν ἔχουσα
 τὰς συμφωνούσας ἁρμονίας τριόδους· <lb n="15"/>
 πρὶν μέν σ᾿ ἑπτάτονον ψάλλον δὶς τέσσαρα πάντες</p>
-<p>Ἕλληνες σπανίαν μοῦσαν ἀειράμενοι.
+            <p>Ἕλληνες σπανίαν μοῦσαν ἀειράμενοι.
 <note type="footnote">2 ἤτι Ν. ὀξυτάτου L. 3 αἱ om. M1NW, add. M4L,
 ante τῶν λ. insert B. 4 δύναμις M1, δυνάμει W, μεις
 corr. M4. ἔχει ἕκαστος W 7 ὡς (ante διάστ.) W, om. rel.
@@ -915,32 +922,31 @@ G. Hermann. ἔχουσα Meibom, ἔχοις ἀεὶ MWBL, ἔχεις
 libri posteaque ipse Berggk et Hiller; at sunt bina tetrachorda
 lyrae septem chordarum, terna lyrae chordarum undecim.
 τεσσάρων L.</note>
-<note type="footnote">Tres habent toni significationes Ar Qu. 1, 10 (p. 22), Porphyr.
+               <note type="footnote">Tres habent toni significationes Ar Qu. 1, 10 (p. 22), Porphyr.
 in Ptol. p. 258, quattuor habet Bry. 1, 8.</note>
-<note type="footnote">De quattuor sonorum scala v. Jani annot. ad Bacchium
+               <note type="footnote">De quattuor sonorum scala v. Jani annot. ad Bacchium
 (Arg. 1891) p. 6, de Ionis tribus tetrachordis ib. p. 8. sunt
 autem soni: Si do re mi fa sol La si do re mi.
 Hc d e f g a h cʹ dʹ eʹ.</note>
-
-<pb n="203"/>
+               <pb n="203"/>
 καὶ ἕτεροι δὲ οὐκ ὀλίγοι κέχρηνται τῷ ὀνόματι. ἐπὶ
 δὲ τοῦ διαστήματος, ὅταν λέγωμεν ἀπὸ μέσης ἐπὶ
 παραμέσην τόνον εἶναι.</p>
-<p>δὲ ὡς τόπος φωνῆς, ὅταν λέγωμεν δώριον ἤ
+            <p>δὲ ὡς τόπος φωνῆς, ὅταν λέγωμεν δώριον ἤ
 <lb n="5"/> φρύγιον ἢ λύδιον ἢ τῶν ἄλλων τινά. εἰσὶ δὲ κατὰ
 Ἀριστόξενον ιγ τόνοι.</p>
-<p>Ὑπερμιξολύδιος καὶ ὑπερφρύγιος καλούμενος·</p>
-<p>μιξολύδιοι δύο, ὀξύτερος καὶ βαρύτερος, ὧν ὁ
+            <p>Ὑπερμιξολύδιος καὶ ὑπερφρύγιος καλούμενος·</p>
+            <p>μιξολύδιοι δύο, ὀξύτερος καὶ βαρύτερος, ὧν ὁ
 ὀξύτερος καὶ ὑπεριάστιος καλεῖται, ὁ δὲ (p. 20) βαρύτερος
 <lb n="10"/>καὶ ὑπερδώριος·</p>
-<p>λύδιοι δύο, ὀξύτερος καὶ βαρύτερος, ὧν ὁ βαρύτερος
+            <p>λύδιοι δύο, ὀξύτερος καὶ βαρύτερος, ὧν ὁ βαρύτερος
 καὶ αἰόλιος καλεῖται·</p>
-<note type="footnote">3 εἶναι τόνον inv. W. 4 ὡς om. L. τόπος ὅταν λέ-
+            <note type="footnote">3 εἶναι τόνον inv. W. 4 ὡς om. L. τόπος ὅταν λέ-
 γωμεν φωνῆς libri. 6 τόνοι W L, om. cet. 7 καὶ]
 ὁ καὶ B. ὑποφρύγιος W. 8 καὶ om. W 9 olim
 ὑποιάστιος M. 10 ὑποδώριος W. 11 ὧν ὁ βαρύτερος WNB,
 ὅς M3L. om. M1.</note>
-<note type="footnote">De hisce tonis vel scalis pauca dicit Aristox. p. 37, plura
+            <note type="footnote">De hisce tonis vel scalis pauca dicit Aristox. p. 37, plura
 (sentem indicat scalas) Bacchius § 47, Aristides (15 scalas)
 l 10 p. 23. cf. Bellermann ad anon p. 42, Τonleitern u. Μusik-
 noten p. 5, Marquard ad Aristox. p. 308. Dorii toni ( ═syste-
@@ -958,9 +964,8 @@ g hypoly vel hypoaeolii sol2 sol2 #
 s hypopbrygii fa2 fa2 #
 f hypopbrygii vel hypoionici  fa2 fa2 #
 hypodorii mi2.</note>
-
-<pb n="204"/>
-<p>φρύγιο δύο, ὀξύτερος καὶ βαρύτερος, ὧν ὁ βαρύτερος
+            <pb n="204"/>
+            <p>φρύγιο δύο, ὀξύτερος καὶ βαρύτερος, ὧν ὁ βαρύτερος
 καὶ ἰάστιος καλεῖται·
 δώριος εἷς·
 ὑπολύδιοι δύο, ὀξύτερος καὶ βαρύτερος, ὅς καὶ
@@ -968,18 +973,20 @@ hypodorii mi2.</note>
 ὑποφρύγιοι δύο, ὧν ὁ βαρύτερος καὶ ὑποιάστιος
 καλεῖται·
 ὑποδώριος.</p>
-<p>Τούτων ὀξύτατος μὲν ὁ ὑπερμιξολύδιος, βαρύτατος
+            <p>Τούτων ὀξύτατος μὲν ὁ ὑπερμιξολύδιος, βαρύτατος
 δὲ ὁ ὑπο-δώριος· οἱ δὲ ἐξῆς οἱ ἀπὸ τῶν ὀξυτάτων <lb n="10"/>
 μεχρὶ τοῦ βαρυτάτου ἡμιτόνιον ἀλλήλων ὑπερέχοντες,
 παράλληλοι δὲ δύο τόνον, οἱ δὲ τρίτοι τριημιτόνιον·
 ἀναλόγως δὲ ἕξει καὶ ἐπὶ τῆς τῶν λοιπῶν τόνων διαστάσεως.
 ὁ δὲ ὑπερμιξολύδιος τοῦ ὑποδωρίου τῷ διὰ
-πασῶν ἐστιν ὀξύτερος.</p><lb n="15"/>
-<p>Ὁ δὲ ὡς τάσις τόνος λέγεται, καθʼ ὅ φαμεν ὀξυτονεῖν
+πασῶν ἐστιν ὀξύτερος.</p>
+            <lb n="15"/>
+            <p>Ὁ δὲ ὡς τάσις τόνος λέγεται, καθʼ ὅ φαμεν ὀξυτονεῖν
 τινα ἢ βαρυτονεῖν μέσῳ τῷ τῆς φωνῆς τόνῳ
 κεχρῆσθαι.</p>
-</div>
-<div type="textpart" subtype="section" n="13"><p> Μεταβολὴ δὲ λέγεται τετραχῶς· καὶ γὰρ
+         </div>
+         <div n="13" type="section">
+            <p> Μεταβολὴ δὲ λέγεται τετραχῶς· καὶ γὰρ
 <note type="footnote">1 a καὶ βαρύτερος ad 4 βαρύτερος errant W, quae cum
 M4 corrigeret, etiam quae praecedunt (a p. 203 καλεῖται) erasit
 et litteris minoribus scripsit. ὧν ὁ βαρύτερος — καλεῖται
@@ -993,11 +1000,10 @@ om. M W, corrigens renovat usque ad τριημιτ. 12 τόνον,
 οἱ δὲ τρίτοι ego supplevi. τριημιτονίῳ LM3, τριημιτόνιον
 cet. 13 ἐπὶ τῶν N. διατάσεως W. 14 ὑπερμιξ. NBL.
 ὑπομιξ. M1W.</note>
-<note type="footnote">Cap. 13. De metabola vide Aristox. p. 38. Aristid. 1, 11
+               <note type="footnote">Cap. 13. De metabola vide Aristox. p. 38. Aristid. 1, 11
 (p. 24). Bacchium § 50 ss. et 88 cum comment. p. 21. Beller-
 mann ad Anon. p. 30. Bry. 1, 9.</note>
-
-<pb n="205"/>
+               <pb n="205"/>
 κατὰ γένος καὶ κατὰ σύστημα καὶ κατὰ τόνον καὶ κατὰ
 μελοποιΐαν. κατὰ μὲν οὖν γένος γίνεται μεταβολὴ,
 ὅταν ἐκ διατόνου εἰς χρῶμα ἢ ἁρμονίαν, ἢ ἐκ χρώματος
@@ -1031,11 +1037,10 @@ W NB, τούτων δʼ αἱ μὲν ἐμμ. M L, τούτων ἐμμελε�
 πλείων] πλεῖον M1 ? 17 ἐν ὅσαις δὲ ἐλ. ἐκμ. om. M W, hab.
 B NL (δὲ et άττων corr. Ν, ὅλαις L). 19 φθόγγον erat
 φθόγγων M1.</note>
-
-<pb n="206"/>
+               <pb n="206"/>
 φθόγγοι κατὰ τὴν τοῦ πυκνοῦ μετοχὴν, ἐμμελὴς γίνεται
 ἡ μεταβολὴ, ὅταν δὲ ἀνόμοιοι, ἐκμελής.</p>
-<p>Κατὰ δὲ μελοποιΐαν γίνεται μεταβολὴ, ὅταν ἐκ
+            <p>Κατὰ δὲ μελοποιΐαν γίνεται μεταβολὴ, ὅταν ἐκ
 διασταλτικοῦ ἤθους εἰς συσταλτικὸν ἢ ἡσυχαστικὸν, ἢ
 ἐξ ἡσυχαστικοῦ εἴς τι τῶν λοιπῶν ἡ μεταβολὴ γένηται.<lb n="5"/>
 ἔστι δὲ διασταλτικὸν μὲν ἦθος μελοποιΐας, διʼ οὗ
@@ -1051,10 +1056,11 @@ B NL (δὲ et άττων corr. Ν, ὅλαις L). 19 φθόγγον erat
 τε καὶ εἰρηνικόν. ἁρμόσουσι δὲ αὐτῷ ὕμνοι
 παιᾶνες (p. 22) ἐγκώμια συμβουλαὶ καὶ τὰ τούτοις
 ὅμοια.</p>
-</div>
-<div type="textpart" subtype="section" n="14"><p> Μελοποιΐα ἐστὶ χρῆσις τῶν προειρημένων
+         </div>
+         <div n="14" type="section">
+            <p> Μελοποιΐα ἐστὶ χρῆσις τῶν προειρημένων
 μερῶν τῆς ἁρμονικῆς καὶ ὑποκειμένων δύναμιν ἐχόντων. <lb n="20"/>
-<note type="footnote">2 δὲ om. M ἐκμελής erat ἐκμελεῖς M1. 3 ὅταν
+               <note type="footnote">2 δὲ om. M ἐκμελής erat ἐκμελεῖς M1. 3 ὅταν
 δὲ ἐκ L. 4 διασταλτικοῦ L, διαστατικοῦ M1 W B, διαστη-
 τικοῦ N, διαστηματικοῦ M3. συσταλτικόν BM3 L, συστατικόν
 M1W. ἡσυχαστικὸν ἢ ἐξ om. 5 ἡσυχαστικοῦ] ἡσυ-
@@ -1063,11 +1069,10 @@ M1W. ἡσυχαστικὸν ἢ ἐξ om. 5 ἡσυχαστικοῦ] ἡσυ-
 12 κατάστημα fuisse vid. καταίστημα M1. 15 ἡρμότης B.
 19 (προειρη)μέν(ων) in ras. M. 20 μερῶν — ὑποκειμένων
 om. M1, hab. N, sed ἁρμονίας.</note>
-<note type="footnote">Cap. 14. De melopoeia cf. Aristox. p. 38. ArQu. 12 (p. 29).
+               <note type="footnote">Cap. 14. De melopoeia cf. Aristox. p. 38. ArQu. 12 (p. 29).
 Anon. Bell. § 2 84 ss. Bryenn. IIl 3.5, praecipue 10. Trinkler,
 Harmonik und Melopöie. Posen 1842. p. 34.</note>
-
-<pb n="207"/>
+               <pb n="207"/>
 διʼ ὧν δὲ μελοποιΐα ἐπιτελεῖται δ ἐστιν· ἀγωγὴ
 πλοκὴ πεττεία τονή. ἀγωγὴ μὲν οὖν ἐστιν ἡ διὰ τῶν
 ἐξῆς φθόγγων ὁδὸς τοῦ μέλους, πλοκὴ δὲ ἡ ἐναλλὰξ
@@ -1075,16 +1080,20 @@ Harmonik und Melopöie. Posen 1842. p. 34.</note>
 <lb n="5"/> ἑνὸς τόνου πολλάκις γινομένη πλῆξις, τονὴ δὲ ἡ ἐπὶ
 πλείονα χρόνον μονὴ κατὰ μίαν γινομένη προφορὰν
 τῆς φωνῆς.</p>
-<p><del status="error">Διάγραμμα</del> δὲ σχῆμα ἐπίπεδον τὰς τῶν μελῳδου-
+            <p>
+               <del status="error">Διάγραμμα</del> δὲ σχῆμα ἐπίπεδον τὰς τῶν μελῳδου-
 μένων περιέχον δυνάμεις.</p>
-<lb n="10"/> <p>Δύναμις δέ ἐστι τάξις φθόγγου ἐν συστήματι, ἢ
+            <lb n="10"/>
+            <p>Δύναμις δέ ἐστι τάξις φθόγγου ἐν συστήματι, ἢ
 δύναμίς ἐστι τάξις φθόγγου, διʼ ἧς γνωρίζομεν τῶν
 φθόγγων ἕκαστον.</p>
-<p>Μελοποιΐα δέ ἐστι χρῆσις τῶν ὑποκειμένων τῇ
+            <p>Μελοποιΐα δέ ἐστι χρῆσις τῶν ὑποκειμένων τῇ
 ἁρμονικῇ πραγματείᾳ πρὸς τὸ οἰκεῖον ἑκάστης
-<lb n="15"/> <del status="error">ὑποθέσεως.</del></p>
-<p>Οὗτος ὁ ὅρος τῆς κατὰ τὸ ἡρμοσμένον ἐστὶ πραγματείας.</p>
-<note type="footnote">2 ἡ W N2B LM4, om. M1. 4 τῶν τε ML. 5 γινο-
+<lb n="15"/>
+               <del status="error">ὑποθέσεως.</del>
+            </p>
+            <p>Οὗτος ὁ ὅρος τῆς κατὰ τὸ ἡρμοσμένον ἐστὶ πραγματείας.</p>
+            <note type="footnote">2 ἡ W N2B LM4, om. M1. 4 τῶν τε ML. 5 γινο-
 μένου V, γενομένη W 6 γενομένη W. 7 Hic finis isagoge
 in Vat. 1341. 8 δὲ insertum vid. M. μελῳδουμ.] ὁμο-
 λογουμ. W. 9 δυνάμεις] δύναμις M1. 10 Hoc loco erat
@@ -1094,9 +1103,7 @@ uncino indicatum sequentia cum praecedentibus esse iungenda
 τάξις φθόγγον ad alterum errat B. ἢ W ἡ ML. 14 τὸ
 om. W. 17 Addit titulum εἰσαγωγὴ ἁρμονικὴ εὐκλείδου W2.
 περὶ φθόγγων (tit. sectionis can.) N.</note>
-
-</div>
-</div>
-</body>
-</text>
+         </div>
+      </body>
+   </text>
 </TEI>

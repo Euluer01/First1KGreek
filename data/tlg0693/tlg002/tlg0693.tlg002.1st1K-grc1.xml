@@ -1,97 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="eng">
-    <fileDesc>
-      <titleStmt>
-        <title xml:lang="grc">Εἰσαγογὴ εἰς τοὺς Πλάτωνος διαλόγους</title>
-        <author>Albinus</author>
-        <editor>Karl Friedrich Hermann</editor>
-        <funder>Center for Hellenic Studies</funder>
-        <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
-          <persName role="principal">Gregory Crane</persName>
-          <persName role="principal">Leonard Muellner</persName>
-          <persName role="principal">Bruce Robertson</persName>
-        </respStmt>
-
-        <respStmt>
-          <resp>Proofreading and CTS conversion</resp>
-          <persName>Madeline McIntire</persName>
-        </respStmt>
-      </titleStmt>
-
-      <publicationStmt>
-        <publisher>Open Greek and Latin</publisher>
-        <idno type="filename">tlg0693.tlg002.1st1K-grc1.xml</idno>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
-            Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-        </availability>
-        <date>2020-08-21</date>
-      </publicationStmt>
-
-      <sourceDesc>
-        <biblStruct>
-          <monogr>
-            <title xml:lang="lat">Platonis dialogi secundum Thrasylli tetralogias dispositi</title>
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="grc">Εἰσαγογὴ εἰς τοὺς Πλάτωνος διαλόγους</title>
+            <author>Albinus</author>
             <editor>Karl Friedrich Hermann</editor>
-            <author>Plato</author>
-            <imprint>
-              <pubPlace>Leipzig</pubPlace>
-              <publisher>Teubner</publisher>
-              <date>1884</date>
-            </imprint>
-            <biblScope unit="volume">6</biblScope>
-          </monogr>
-          <ref target="https://archive.org/details/platonisdialogi06plat/page/146/mode/2up">The
+            <funder>Center for Hellenic Studies</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+               <persName role="principal">Gregory Crane</persName>
+               <persName role="principal">Leonard Muellner</persName>
+               <persName role="principal">Bruce Robertson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofreading and CTS conversion</resp>
+               <persName>Madeline McIntire</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Open Greek and Latin</publisher>
+            <idno type="filename">tlg0693.tlg002.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+            Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2020-08-21</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0693.tlg002.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Platonis dialogi secundum Thrasylli tetralogias dispositi</title>
+                  <editor>Karl Friedrich Hermann</editor>
+                  <author>Plato</author>
+                  <imprint>
+                     <pubPlace>Leipzig</pubPlace>
+                     <publisher>Teubner</publisher>
+                     <date>1884</date>
+                  </imprint>
+                  <biblScope unit="volume">6</biblScope>
+               </monogr>
+               <ref target="https://archive.org/details/platonisdialogi06plat/page/146/mode/2up">The
             Internet Archive</ref>
-        </biblStruct>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-
-      <editorialDecl>
-        <quotation marks="none"/>
-        <normalization>
-          <p/>
-        </normalization>
-        <correction>
-          <p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison
-            University. Developed through the support of the <ref target="https://nbif.ca/en"
-              >NBIF</ref>.</p>
-        </correction>
-      </editorialDecl>
-
-      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <quotation marks="none"/>
+            <normalization>
+               <p/>
+            </normalization>
+            <correction>
+               <p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison
+            University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+            </correction>
+         </editorialDecl>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
         Architecture</p>
-
-      <refsDecl n="CTS">
-        <cRefPattern matchPattern="(\w+)" n="chapter"
-          replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
-          <p>This pointer pattern extracts chapters.</p>
-        </cRefPattern>
-      </refsDecl>
-
-    </encodingDesc>
-
-    <profileDesc>
-      <langUsage>
-        <language ident="grc">Greek</language>
-      </langUsage>
-    </profileDesc>
-
-    <revisionDesc>
-      <change when="2020-08-21" who="Michael Konieczny">Initial markup of new file</change>
-    </revisionDesc>
-  </teiHeader>
-
-  <text>
-    <body>
-      <div type="edition" n="urn:cts:greekLit:tlg0693.tlg002.1st1K-grc1" xml:lang="grc">
-        <div type="textpart" subtype="chapter" n="1">
-          <p><pb facs="platonisdialogi06plat_0193"/>Ὅτι τῷ μέλλοντι ἐντεύξεσθαι τοῖς Πλάτωνος
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(\w+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+               <p>This pointer pattern extracts chapters.</p>
+            </cRefPattern>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2020-08-21" who="Michael Konieczny">Initial markup of new file</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0693.tlg002.1st1K-grc1">
+         <div n="1" type="chapter">
+            <p>
+               <pb facs="platonisdialogi06plat_0193"/>Ὅτι τῷ μέλλοντι ἐντεύξεσθαι τοῖς Πλάτωνος
             διαλόγοις προσήκει πρότερον ἐπίστασθαι αὐτὸ τοῦτο, τί ποτέ ἐστιν ὁ διάλογος. οὔτε γὰρ
             ἄνευ τέχνης τινὸς καὶ δυνάμεως γεγραμμένοι εἰσίν, οὔτε τεχνικῶς γνωρίσαι ῥᾴδιον τῷ γε
             θεωρίας ἀπείρως ἔχοντι. ἀρέσκει δὲ τῷ φιλοσόφῳ περὶ παντὸς οὑτινοσοῦν τὴν σκέψιν
@@ -105,10 +104,9 @@
             ἄλλο τι ἢ λόγος ἐξ ἐρωτήσεως καὶ ἀποκρίσεως συγκείμενος περί τινος τῶν πολιτικῶν καὶ
             φιλοσόφων πραγμάτων, μετὰ τῆς πρεπούσης ἠθοποιΐας τῶν παραλαμβανομένων προσώπων καὶ τῆς
             κατὰ τὴν λέξιν κατασκευῆς. </p>
-        </div>
-
-        <div type="textpart" subtype="chapter" n="2">
-          <p>Λόγος μὲν οὖν λέγεται ὁ διάλογος καθάπερ ὁ ἄνθρωπος ζῶον· ἐπεὶ δὲ ὁ λόγος ἐστὶν ὁ
+         </div>
+         <div n="2" type="chapter">
+            <p>Λόγος μὲν οὖν λέγεται ὁ διάλογος καθάπερ ὁ ἄνθρωπος ζῶον· ἐπεὶ δὲ ὁ λόγος ἐστὶν ὁ
             μὲν ἐνδιάθετος ὁ δὲ προορικός, ἀκουσόμεθα τοῦ προφορικοῦ· καὶ ἐπεὶ τούτου ὁ μέν ἐστι
             κατὰ διέξοδον λεγόμενος, ὁ δὲ κατ᾽ ἐρώτησιν καὶ ἀπόκρισιν, ἴδιον τοῦ διαλόγου ἐρωτήσεις
             καὶ ἀποκρίσεις· ὅθεν ὁ λόγος ἐξ ἐρωτήσεως εἶναι λέγεται. τὸ δὲ περί τινος τῶν φιλοσόφων
@@ -127,10 +125,9 @@
             ὀρθῶς ἂν λέγοιτο. οὕτω τὸ παρὰ Θουκυδίδῃ λεγόμενον <del>τῶν δυνάμεων</del> εἰδοποιεῖν τὴν
             ἰδιότητα τῶν διαλόγων οὐ φήσομεν εἶναι διάλογον, ἀλλὰ μᾶλλον δύο δημηγορίας κατ᾽
             ἐνθύμησιν ἀλλήλαις ἀντιγεγραμμένας. </p>
-        </div>
-
-        <div type="textpart" subtype="chapter" n="3">
-          <p>Ἐπεὶ οὖν ὅ τί ποτέ ἐστιν ὁ διάλογος τεθεωρήκαμεν, περὶ τῆς διαφορᾶς αὐτοῦ τοῦ κατὰ
+         </div>
+         <div n="3" type="chapter">
+            <p>Ἐπεὶ οὖν ὅ τί ποτέ ἐστιν ὁ διάλογος τεθεωρήκαμεν, περὶ τῆς διαφορᾶς αὐτοῦ τοῦ κατὰ
             Πλάτωνα διαλόγου ἴδωμεν, τουτέστι περὶ τῶν χαρακτήρων, πόσοι τέ εἰσιν οἱ ἀνωτάτω καὶ
             πόσοι ἐκείνων ὑποδιαιρεθέντες εἰς τοὺς ἀτόμους ἐστήσαντο. περὶ μὲν οὖν χαρακτήρων ἐν
             τοῖς ἑξῆς τελεώτατα μετὰ ὑπογραφῆς εἰρήσεται, ἐνθάδε δὲ γνωστέον τοσοῦτον περὶ τῶν
@@ -142,11 +139,11 @@
             Πολιτικός, τῷ δὲ ἐλεγκτικῳῷ Παρμενίδης, Πρωταγόρας· τῷ δὲ πολιτικῷ Κρίτων, Πολιτεία,
             Φαίδων, Μίνως, Συμπόσιον, Νόμοι, Ἐπιστολαί, Ἐπινομίς, Μενέξενος, Κλειτοφῶν, Φίληβος· τῷ
             δὲ πειραστικῷ ὐθύφρων, Μένων, Ἴων, Χαρμίδης· τῷ δὲ μαιευτικῷ Ἀλκιβιάδης, τῷ δὲ
-            ἀνατρεπτικῷ Ἱππίας, Εὐθύδημος, Γοργίας. <pb facs="platonisdialogi06plat_0195"/></p>
-        </div>
-
-        <div type="textpart" subtype="chapter" n="4">
-          <p>Ἐπεὶ οὖν τεθεωρήκαμεν τὴν διαφορὰν αὐτῶν ὡς πέφυκε γίγνεσθαι καὶ τοὺς χαρακτῆρας,
+            ἀνατρεπτικῷ Ἱππίας, Εὐθύδημος, Γοργίας. <pb facs="platonisdialogi06plat_0195"/>
+            </p>
+         </div>
+         <div n="4" type="chapter">
+            <p>Ἐπεὶ οὖν τεθεωρήκαμεν τὴν διαφορὰν αὐτῶν ὡς πέφυκε γίγνεσθαι καὶ τοὺς χαρακτῆρας,
             ἐπὶ τούτοις λεγωμεν, ἀπὸ ποίων διαλόγων δεῖ ἀρχομένους ἐντυγχάνειν τῷ Πλάτωνος λόγῳ.
             διάφοροι γὰρ δόξαι γεγόνασιν· οἱ μὲν ἀπὸ τῶν πιστολῶν ἄρχονται, οἱ δὲ ἀπὸ τοῦ Θεάγους·
             εἰσὶ δὲ οἱ κατὰ τετραλογίαν διελόντες αὐτοὺς καὶ τάττουσι πρώτην τετραλογία περιέχουσαν
@@ -160,10 +157,9 @@
             Πλάτωνος λόγου μὴ εἶναι μίαν καὶ ὡρισμένην ἀρχήν· ἐοικέναι γὰρ αὐτὸν τέλειον ὄντα τελείῳ
             σχήματι κύκλου· ὥσπερ οὖν κύκλου μία καὶ ὡρισμένη οὐκ ἔστιν ἀρχή, οὕτως οὐδὲ τοῦ λόγου.
           </p>
-        </div>
-
-        <div type="textpart" subtype="chapter" n="5">
-          <p>Οὐ μὴν διὰ τοῦτο ὁπωσοῦν ὡς ἔτυχεν ἐντευξόμεθα αὐτῷ· οὐδὲ γὰρ εἰ δέοι κύκλον
+         </div>
+         <div n="5" type="chapter">
+            <p>Οὐ μὴν διὰ τοῦτο ὁπωσοῦν ὡς ἔτυχεν ἐντευξόμεθα αὐτῷ· οὐδὲ γὰρ εἰ δέοι κύκλον
             γράφειν, ἀφ᾽ οὑτινοσοῦν σημείου ἀρχόμενός τις γράφει τὸν κύκλον· ἀλλ᾽ ἀφ᾽ ἧς ἂν ἕκαστος
             ἡμῶν σχέσεως ἔχῃ πρὸς τὸν λόγον ἀρχόμενος ἐντεύξεται τοῖς διαλόγοις. σχέσεις δὲ πλείους
             καὶ διάφοροί εἰσιν ἡμῶν πρὸς τὸν λόγον. ἡ μὲν γάρ ἐστι κατὰ φύσιν, οἷον εὐφυὴς ἀφυής· ἡ
@@ -183,10 +179,9 @@
             δὲ δεῖ καὶ ἐν γνώσει τῶν θείων γενέσθαι, ὡς δύνασθαι κτησάμενον τὴν ἀρετὴν ὁμοιωθῆναι
             αὐτοῖς, ἐντευξόμεθα τῷ Τιμαίῳ· αὐτῇ γὰρ τῇ περὶ τὴν φύσιν ἱστορίᾳ ἐντυγχάνοντες καὶ τῇ
             λεγμένῃ θεολογίᾳ καὶ τῇ τῶν ὅλων διατάξει ἀντοψόμεθα τὰ θεῖα ἐναργῶς. </p>
-        </div>
-
-        <div type="textpart" subtype="chapter" n="6">
-          <p>Ἔτι δέ τις καὶ ἐν κεφαλαίῳ δύναιτ᾽ ἂν κατιδεῖν τὴν προσήκουσαν τάξιν τῶν διαλόγων
+         </div>
+         <div n="6" type="chapter">
+            <p>Ἔτι δέ τις καὶ ἐν κεφαλαίῳ δύναιτ᾽ ἂν κατιδεῖν τὴν προσήκουσαν τάξιν τῶν διαλόγων
             τῇ κατὰ Πλάτωνα διδασκαλίᾳ τῷ τὰ Πλάτωνος αἱρουμένῳ. ἀναγκαίου γὰρ ὄντος θεατὰς γενέσθαι
             καὶ τῆς ἑαυτοῦ ψυχῆς καὶ τῶν θείων καὶ τῶν θεῶν αὐτῶν καὶ τοῦ καλλίστου νοῦ τυχεῖν, δεῖ
             πρῶτον μὲν ἐκκαθᾶραι τὰς ψευδεῖς δόξας τῶν ὑπολήψεων· οὐδὲ γὰρ οἱ ἰατροὶ νενομίκασι,
@@ -212,11 +207,9 @@
             ἀποδείκνυται, τὰ δὲ ψευδῆ ἐλέγχεται. πρὸς δὲ τούτοις ἐπεὶ καὶ δεῖ ἀπαραλογίστους ἀπὸ
             σοφιστῶν εἶναι, τοῖς τοῦ ἐπιδεικτικοῦ καὶ ἀνατρεπτικοῦ χαρακτῆρος διαλόγοις ἐντευξόμεθα·
             ἐν οἷς ἔστιν ἐκμαθεῖν, ὅπως τε δεῖ ἐπαΐειν τῶν σοφιστῶν καὶ ὅπως αὐτοῖς καὶ ὅντινα
-            τρόπον προσφέρεσθαι κακουργοῦσι περὶ τοὺς λόγους. <pb facs="platonisdialogi06plat_0198"
-            /></p>
-        </div>
-
-      </div>
-    </body>
-  </text>
+            τρόπον προσφέρεσθαι κακουργοῦσι περὶ τοὺς λόγους. <pb facs="platonisdialogi06plat_0198"/>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

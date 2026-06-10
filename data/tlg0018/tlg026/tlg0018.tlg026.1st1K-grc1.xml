@@ -1,138 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="eng">
-
-    <fileDesc>
-<titleStmt><title xml:lang="lat">De praemiis et poenis et De exsecrationibus</title>
-  <author xml:lang="lat">Philo Judaeus</author>
-<editor>Leopold Cohn</editor>
-  <funder>European Social Fund Saxony</funder>
-  <principal>Gregory Crane</principal>
-  <respStmt>
-    <persName xml:id="DDD">Digital Divide Data</persName>
-    <resp>Corrected and encoded the text</resp>
-  </respStmt>
-  <respStmt>
-    <persName>Gregory Crane</persName>
-    <resp>Editor-in-Chief, Perseus Digital Library</resp>
-  </respStmt>
-  <respStmt>
-    <persName>Matt Munson</persName>
-    <resp>Project Manager (University of Leipzig)</resp>
-  </respStmt>
-  <respStmt>
-    <persName>Annette Geßner</persName>
-    <resp>Project Assistant (University of Leipzig)</resp>
-  </respStmt>
-  <respStmt>
-    <persName>Thibault Clérice</persName>
-    <resp>Lead Developer (University of Leipzig)</resp>
-  </respStmt>
-  <respStmt>
-    <persName>Bruce Robertson</persName>
-    <resp>Technical Advisor</resp>
-  </respStmt>
-  <respStmt>
-    <persName>Greta Franzini</persName>
-    <resp>Project Manager (University of Leipzig), 2013-2014</resp>
-  </respStmt>
-  <respStmt>
-    <persName>Frederik Baumgardt</persName>
-    <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
-  </respStmt>
-  <respStmt>
-    <persName>Simona Stoyanova</persName>
-    <resp>Project Manager (University of Leipzig), 2015</resp>
-    <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
-  </respStmt>
-      </titleStmt>
-      <publicationStmt>
-<authority>University of Leipzig</authority>
-<idno type="filename">tlg0018.tlg026.1st1K-grc1.xml</idno>
-<availability>
-<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De praemiis et poenis et De exsecrationibus</title>
+            <author xml:lang="lat">Philo Judaeus</author>
+            <editor>Leopold Cohn</editor>
+            <funder>European Social Fund Saxony</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Geßner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Greta Franzini</persName>
+               <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Frederik Baumgardt</persName>
+               <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Simona Stoyanova</persName>
+               <resp>Project Manager (University of Leipzig), 2015</resp>
+               <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>University of Leipzig</authority>
+            <idno type="filename">tlg0018.tlg026.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
 License</licence>
-</availability>
-<date>2014</date>
-<publisher>University of Leipzig</publisher>
-<pubPlace>Germany</pubPlace>
-</publicationStmt>
-<sourceDesc>
-<listBibl>
-<biblStruct>
-<monogr>
-  <title xml:lang="lat">Philonis Alexandrini Opera Quae Supersunt</title>
-<editor>
-<persName>
-  <name>Leopold Cohn</name>
-</persName>
-</editor>
- <author xml:lang="lat">Philo Judaeus</author>
-<imprint>
-  <publisher>Reimer</publisher>
-  <pubPlace>Berlin</pubPlace>
-<date>1906</date>
-</imprint>
-<biblScope unit="volume">5</biblScope>
-</monogr>
-  <ref target="https://babel.hathitrust.org/cgi/pt?id=hvd.32044054757604;view=2up;seq=376">Hathi Trust</ref>
-</biblStruct>
-</listBibl>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
-<p>Text encoded in accordance with the latest EpiDoc standards (January 2014) </p>
-    <refsDecl n="CTS">
-        <cRefPattern n="section" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-      </refsDecl>
-    </encodingDesc>
-<profileDesc>
- <abstract>
-  <p>
+            </availability>
+            <date>2014</date>
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Philonis Alexandrini Opera Quae Supersunt</title>
+                     <editor>
+                        <persName>
+                           <name>Leopold Cohn</name>
+                        </persName>
+                     </editor>
+                     <author xml:lang="lat">Philo Judaeus</author>
+                     <imprint>
+                        <publisher>Reimer</publisher>
+                        <pubPlace>Berlin</pubPlace>
+                        <date>1906</date>
+                     </imprint>
+                     <biblScope unit="volume">5</biblScope>
+                  </monogr>
+                  <ref target="https://babel.hathitrust.org/cgi/pt?id=hvd.32044054757604;view=2up;seq=376">Hathi Trust</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards (January 2014) </p>
+         <refsDecl n="CTS">
+            <cRefPattern n="section"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-section"/>
+         </textClass>
+         <abstract>
+            <p>
    There are few complex symbols which do not have a Unicode equivalent. We used <foreign xml:lang="abbr">ABBREV</foreign>
-  </p>
- </abstract>
-<langUsage>
-<language ident="grc">Greek</language>
-<language ident="lat">Latin</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-  <change who="Gregory Crane" when="2023-08-01">Original text was generated with OCR in 2013 and many errors had crept in. GRC, through manual and automated methods, made more than 228 corrections. Markup was also refined and changed throughout.</change>
-<change who="Lia H" when="2018-01-16">updated teiHeader</change>
-</revisionDesc>
-</teiHeader>
-  <text>
-    <body><div type="edition" n="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" xml:lang="grc">
-
-
-<pb n="v.5.p.336"/>
-<head>ΠΕΡΙ ΑΘΛΩΝ KAΙ ΕΠΙΤΙΜΙΩΝ ΚΑΙ ΑΡΩΝ</head>
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="1">
-<p><milestone unit="altref" n="1"/> Τῶν μὲν οὖν διὰ τοῦ προφήτου Μωυσέως λογίων τρεῖς ἰδέας <note xml:lang="mul" type="marginal">II p. 408 Μ.</note>
+            </p>
+         </abstract>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="Gregory Crane" when="2023-08-01">Original text was generated with OCR in 2013 and many errors had crept in. GRC, through manual and automated methods, made more than 228 corrections. Markup was also refined and changed throughout.</change>
+         <change who="Lia H" when="2018-01-16">updated teiHeader</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1">
+         <pb n="v.5.p.336"/>
+         <head>ΠΕΡΙ ΑΘΛΩΝ KAΙ ΕΠΙΤΙΜΙΩΝ ΚΑΙ ΑΡΩΝ</head>
+         <div n="1" type="section">
+            <p>
+               <milestone unit="altref" n="1"/> Τῶν μὲν οὖν διὰ τοῦ προφήτου Μωυσέως λογίων τρεῖς ἰδέας <note xml:lang="mul" type="marginal">II p. 408 Μ.</note>
 εἶναι συμβέβηκε, τὴν μὲν περὶ κοσμοποιίας, τὴν δὲ ἱστορικήν, τὴν δὲ
 τρίτην νομοθετικήν. ἡ μὲν οὖν κοσμοποιία παγκάλως πᾶσα καὶ θεοπρεπῶς
 μεμήνυται, λαβοῦσα τὴν ἀρχὴν ἀπὸ γενέσεως οὐρανοῦ καὶ λήξασα εἰς <lb n="5"/>
 ἀνθρώπου κατασκευήν· ὁ μὲν γὰρ ἀφθάρτων τελειότατος, ὁ δὲ θνητῶν.
 ἀθάνατα δὲ καὶ θνητὰ ἐν γενέσει συνυφαίνων ὁ ποιητὴς εἰργάσατο τὸν
 κόσμον, τὰ μὲν [γενόμενα] <add>ὡς</add> ἡγεμονικά, τὰ δ’ ὡς ὑπήκοα [καὶ]
- γενησόμενα.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="2">
-<p>τὸ δὲ ἱστορικὸν μέρος ἀναγραφὴ βίων ἐστὶ σπουδαίων καὶ πονηρῶν
+ γενησόμενα.</p>
+         </div>
+         <div n="2" type="section">
+            <p>τὸ δὲ ἱστορικὸν μέρος ἀναγραφὴ βίων ἐστὶ σπουδαίων καὶ πονηρῶν
 καὶ τὰ ὁρισθέντα ἑκατέροις ἐπιτίμια καὶ γέρα ἐν ἑκάσταις γενεαῖς. τοῦ δὲ <lb n="10"/>
 νομοθετικοῦ τὸ μὲν καθολικωτέραν ὑπόθεσιν ἔχει, τὸ δ’ ἕτερον <add>τῶν κατὰ</add>
 μέρος νομίμων εἰσὶν ἐντολαί· κεφάλαια μὲν δέκα, ἅπερ λέγεται κεχρησμῳδῆσθαι
 οὐ δι’ ἑρμηνέως ἀλλ’ ἐν τῷ ὑψώματι τοῦ ἀέρος σχηματιζόμενα
 καὶ ἄρθρωσιν ἔχοντα λογικήν, τὰ δ’ ἄλλα τὰ κατ’ εἶδος [μέρη]
- διὰ τοῦ <milestone unit="altpage1" n="p. 409 M."/>  προφήτου θεσπισθέντα.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="3">
-<p>περὶ ὧν ἁπάντων ὅσα καιρὸς ἐν ταῖς
+ διὰ τοῦ <milestone unit="altpage1" n="p. 409 M."/>  προφήτου θεσπισθέντα.</p>
+         </div>
+         <div n="3" type="section">
+            <p>περὶ ὧν ἁπάντων ὅσα καιρὸς ἐν ταῖς
 προτέραις συντάξεσι διεξελθὼν καὶ προσέτι τῶν ἀρετῶν ἃς ἀπένειμεν <lb n="16"/>
-<note xml:lang="mul" type="footnote">
-<lb/>1 tit. περὶ ἄθλων καὶ ἐπιτιμίων HP (καὶ ἀρῶν addidi ex Euseb. Hist. eccl. II 18,5), τοῦ αὐτοῦ περὶ ἄθλων καὶ ἐπιτιμίων F, τοῦ αὐτοῦ φίλωνος περὶ ἄθλων καὶ ἐπιτιμιῶν Α 
+               <note xml:lang="mul" type="footnote">
+                  <lb/>1 tit. περὶ ἄθλων καὶ ἐπιτιμίων HP (καὶ ἀρῶν addidi ex Euseb. Hist. eccl. II 18,5), τοῦ αὐτοῦ περὶ ἄθλων καὶ ἐπιτιμίων F, τοῦ αὐτοῦ φίλωνος περὶ ἄθλων καὶ ἐπιτιμιῶν Α 
 <lb/>2 τῶν scripsi: τἀς codd. (v) ante διὰ add. τῶν AHP (v), omisi cum F μωϋσέος P, μώσεως FAH λογίων om. F
 <lb/>3 μὲν FA: μέν γάρ HP (v) τῆς κοσμοποιίας Α δ’ F
 <lb/>4 παγκάλως πᾶσα A: πᾶσα om. F, πᾶσα παγκάλως P (γρ. καλῶς mg Ρ2), πᾶσα καλῶς Η (Turn.)
@@ -144,45 +154,43 @@ License</licence>
 <lb/>11 καθολικωτέραν ὑπόθεσιν Α: καθολικώτερον τὴν ὑπόθεσιν FHP; καθολικωτέραν τὴν ὑπόθεσιν v 11.12 τῶν κατά μέρος scripsi: τῶν κατὰ om. codd.: τῶν ἐν μέρει coni. Mang.
 <lb/>12 νομίμων] νόμων P (fort. recte) μὲν scripsi: δὲ AHP (v), om. F
 <lb/>14 δὲ F alt. τὰ om. A μέρη seclusit Mang.
-<lb/>16 διελθὼν Α ἃς ἀπένειμεν] αἳ βραβεύουσιν Α</note>  
-
-<pb n="v.5.p.337"/>
+<lb/>16 διελθὼν Α ἃς ἀπένειμεν] αἳ βραβεύουσιν Α</note>
+               <pb n="v.5.p.337"/>
 εἰρήνῃ τε καὶ πολέμῳ μέτειμι κατὰ τὸ ἀκόλουθον ἐπὶ τὰ προτεθέντα
-καὶ τοῖς ἀγαθοῖς ἆθλα καὶ τοῖς πονηροῖς ἐπιτίμια.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="4">
-<p>συνασκήσας γὰρ ὑφηγήσεσι καὶ προτροπαῖς μαλακωτέραις καὶ πάλιν ἐπανατάσεσι καὶ
+καὶ τοῖς ἀγαθοῖς ἆθλα καὶ τοῖς πονηροῖς ἐπιτίμια.</p>
+         </div>
+         <div n="4" type="section">
+            <p>συνασκήσας γὰρ ὑφηγήσεσι καὶ προτροπαῖς μαλακωτέραις καὶ πάλιν ἐπανατάσεσι καὶ
 νουθεσίαις ἐμβριθεστέραις τοὺς κατ’ αὐτὸν πολιτευομένους ἐκάλεσεν εἰς
 <lb n="5"/> τὴν ὧν ἐπαιδεύθησαν ἐπίδειξιν· οἱ δὲ παρελθόντες ὥσπερ εἰς ἱερὸν
 ἀγῶνα γυμνὴν τὴν ἑαυτῶν προαίρεσιν ἀνέφηναν εἰς ἐναργέστατον ἔλεγχον
-τῆς ἀληθείας.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="5">
-<p>εἶτα οἱ μὲν ἀθληταὶ τῷ ὄντι ἀρετῆς ἀνευρίσκοντο μὴ ψεύσαντες τῆς ἐπ’ αὐτοῖς χρηστῆς ἐλπίδος τοὺς ἀλείπτας νόμους, οἱ δὲ
+τῆς ἀληθείας.</p>
+         </div>
+         <div n="5" type="section">
+            <p>εἶτα οἱ μὲν ἀθληταὶ τῷ ὄντι ἀρετῆς ἀνευρίσκοντο μὴ ψεύσαντες τῆς ἐπ’ αὐτοῖς χρηστῆς ἐλπίδος τοὺς ἀλείπτας νόμους, οἱ δὲ
 ἄνανδροι καὶ ἀγεννεῖς ὑπὸ τῆς ἐμφύτου μαλακίας τὰς ψυχάς, πρὶν ἢ
 <lb n="10"/> δυνατώτερόν τι ἀντιβιάσασθαι, προκαταπίπτοντες αἰσχύνη καὶ γέλως
-θεατῶν ἐγίνοντο.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="6">
-<p>δι’ ἣν αἰτίαν οἱ μὲν βραβείων καὶ κηρυγμάτων καὶ τῶν ἄλλων ὅσα νικῶσι δίδοται μετελάμβανον, οἱ δὲ οὐκ ἀστεφάνωτοι
+θεατῶν ἐγίνοντο.</p>
+         </div>
+         <div n="6" type="section">
+            <p>δι’ ἣν αἰτίαν οἱ μὲν βραβείων καὶ κηρυγμάτων καὶ τῶν ἄλλων ὅσα νικῶσι δίδοται μετελάμβανον, οἱ δὲ οὐκ ἀστεφάνωτοι
 μόνον ἀπῄεσαν, ἀλλὰ καὶ ἧτταν ἐπονείδιστον ἐνδεξάμενοι τῶν ἐν τοῖς
 γυμνικοῖς ἀγῶσιν ἀργαλεωτέραν· ἐκεῖ μὲν γὰρ ἀθλητῶν σώματα κλίνεται
 <lb n="15"/> ῥᾳδίως ὀρθοῦσθαι δυνάμενα, ἐνταῦθα δὲ ὅλοι βίοι πίπτουσιν, οὓς ἅπαξ
 ἀνατραπέντας μόλις ἔστιν ἀνεγεῖραι.</p>
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="7">
-<p>Τῆς δὲ προνομίας καὶ τιμῆς καὶ τοὐναντίον κολάσεως τάξεις ἐναρμονίους ὑφηγεῖται, κατ’ ἄνδρας, κατ’ οἴκους, κατὰ πόλεις, κατὰ χώρας
+         </div>
+         <div n="7" type="section">
+            <p>Τῆς δὲ προνομίας καὶ τιμῆς καὶ τοὐναντίον κολάσεως τάξεις ἐναρμονίους ὑφηγεῖται, κατ’ ἄνδρας, κατ’ οἴκους, κατὰ πόλεις, κατὰ χώρας
 καὶ ἔθνη, κατὰ κλίματα γῆς μεγάλα. <milestone unit="altref" n="2"/> πρότερον δ’ ἐρευνητέον τὰ
 <lb n="20"/> ἐπὶ τιμαῖς, ἐπειδὴ καὶ λυσιτελέστερα καὶ ἡδίω πρὸς ἀκρόασιν, ἀρχὴν
-λαμβάνοντας τὴν ἀφ’ ἑνὸς ἑκάστου τῶν ἐν μέρει.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="8">
-<p>φασὶ τὸν παλαιὸν ἐκεῖνον Τριπτόλεμον Ἕλληνες ἀρθέντα μετέωρον ἐπὶ πτηνῶν δρακόντων
+λαμβάνοντας τὴν ἀφ’ ἑνὸς ἑκάστου τῶν ἐν μέρει.</p>
+         </div>
+         <div n="8" type="section">
+            <p>φασὶ τὸν παλαιὸν ἐκεῖνον Τριπτόλεμον Ἕλληνες ἀρθέντα μετέωρον ἐπὶ πτηνῶν δρακόντων
 τὸν τοῦ σίτου καρπὸν εἰς ἅπασαν τὴν γῆν κατασπείρειν, ἀντὶ βαλανηφαγίας
 ἵν’ ἔχῃ τὸ ἀνθρώπων γένος ἥμερον καὶ ὠφέλιμον καὶ ἡδίστην
 <note xml:lang="mul" type="footnote">
-<lb/>1 προταθέντα coni. Mang.
+                  <lb/>1 προταθέντα coni. Mang.
 <lb/>2 ἐπιτίμια corr. ex ἐπίτιμα Η
 <lb/>3 ἐπαναστάσεσι F 
 <lb/>4 καί αὐτὸν FP: ὑπ’ αὐτὸν ΑΗ (ὑπ᾿ αὐτοῦ v)
@@ -202,30 +210,30 @@ License</licence>
 <lb/>20 pr. καὶ om. Α ἥδιστα F2
 <lb/>21 λαμβάνοντας Α: λαβόντας FHP (v) ἐφ’ ἑνός ἑκάστου Α ἀφ’ ἑ. ἑ. scripsi): ἀφ’ ἑκάστου HP, ἐφ’ ἑκάστου F (v)
 <lb/>23 ἅπασαν] ἅπαν F1
-<lb/>24 ἔχοι F</note> <note xml:lang="mul" type="footnote">8—11 DR fol. 138v Φίλωνος: οἱ ἄνανδροι ὑπὸ—γέλως ἑαυτῶν (sic) 
-<lb/>22 cf. A pollod. Bibl. I 5,2. Himer. Or. 253.</note>  
-
-<pb n="v.5.p.338"/>
+<lb/>24 ἔχοι F</note>
+               <note xml:lang="mul" type="footnote">8—11 DR fol. 138v Φίλωνος: οἱ ἄνανδροι ὑπὸ—γέλως ἑαυτῶν (sic) 
+<lb/>22 cf. A pollod. Bibl. I 5,2. Himer. Or. 253.</note>
+               <pb n="v.5.p.338"/>
 τροφήν. τοῦτο μὲν οὖν ὥσπερ πολλὰ καὶ ἄλλα τοῖς εἰωθόσι τερατεύεσθαι
 μύθου πλάσμα ὂν ἀπολελείφθω σοφιστείαν πρὸ σοφίας καὶ γοητείαν πρὸ
- ἀληθείας ἐπιτετηδευκόσιν.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="9">
-<p>ἐξ ἀρχῆς γὰρ ἅμα τῇ πρώτῃ γενέσει τῶν ὅλων
+ ἀληθείας ἐπιτετηδευκόσιν.</p>
+         </div>
+         <div n="9" type="section">
+            <p>ἐξ ἀρχῆς γὰρ ἅμα τῇ πρώτῃ γενέσει τῶν ὅλων
 ὁ θεὸς προευτρεπίσατο τὰ ἐπιτήδεια πᾶσι τοῖς ζῴοις ἐκ γῆς ἀνείς, καὶ
 μάλιστα τῷ γένει τῷ ἀνθρώπων, ᾧ τὴν ἐφ’ ἅπασι τοῖς γηγενέσιν ἡγεμονίαν <lb n="5"/>
 ἐχαρίζετο. τῶν γὰρ θείων ἔργων οὐδὲν ὀψίγονον, ἀλλὰ καὶ ὅσα τέχναις καὶ
 ἐπιμελείαις ὕστερον τελειοῦσθαι δοκεῖ, πάντως ἡμίεργα προϋπόκειται προμηθείᾳ
 φύσεως, ὡς μὴ ἀπὸ σκοποῦ τὰς <milestone unit="altpage1" n="p. 410 Μ."/>  μαθήσεις ἀναμνήσεις εἶναι
- λέγεσθαι.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="10">
-<p>ταῦτα μὲν οὖν ὑπερκείσθω· τὴν δ’ ἀναγκαιοτάτην σπορὰν
+ λέγεσθαι.</p>
+         </div>
+         <div n="10" type="section">
+            <p>ταῦτα μὲν οὖν ὑπερκείσθω· τὴν δ’ ἀναγκαιοτάτην σπορὰν
 ἐπισκεπτέον, ἣν ὁ ποιητὴς ἐν ἀρετώσῃ χώρᾳ κατέσπειρε, λογικῇ ψυχῇ. <lb n="10"/>
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="11">
-<p>ταύτης δ’ ὁ πρῶτος σπόρος ἐστὶν ἐλπίς, ἡ πηγὴ τῶν βίων. ἐλπίδι μὲν
+            </p>
+         </div>
+         <div n="11" type="section">
+            <p>ταύτης δ’ ὁ πρῶτος σπόρος ἐστὶν ἐλπίς, ἡ πηγὴ τῶν βίων. ἐλπίδι μὲν
 γὰρ κέρδους ὁ χρηματιστὴς ἐπαποδύεται πολυτρόποις ἰδέαις πορισμῶν,
 ἐλπίδι δ’ ὁ ναύκληρος εὐπλοίας περαιοῦται τὰ μακρὰ πελάγη· ἐλπίδι
 δόξης καὶ ὁ φιλότιμος αἱρεῖται πολιτείαν καὶ κοινῶν πραγμάτων ἐπιμέλειαν·
@@ -234,20 +242,20 @@ License</licence>
 ἀρετῆς ζηλωτὰς ἐπαίρει φιλοσοφεῖν, ὡς ταύτῃ δυνησομένους καὶ τὴν
 τῶν ὄντων φύσιν ἰδεῖν καὶ δρᾶσαι τὰ ἀκόλουθα πρὸς τὴν τῶν ἀρίστων
 βίων θεωρητικοῦ τε καὶ πρακτικοῦ τελείωσιν, ὧν ὁ τυχὼν εὐθύς ἐστιν
- εὐδαίμων.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="12">
-<p>ἔνιοι μὲν οὖν τὰ ἐλπίδος σπέρματα ἢ ὡς πολέμιοι τὰς ἐν <lb n="20"/>
+ εὐδαίμων.</p>
+         </div>
+         <div n="12" type="section">
+            <p>ἔνιοι μὲν οὖν τὰ ἐλπίδος σπέρματα ἢ ὡς πολέμιοι τὰς ἐν <lb n="20"/>
 τῇ ψυχῇ κακίας ζωπυρήσαντες ἐνέπρησαν ἢ ὡς ἀμελεῖς τέχνης τῆς
 γεωργικῆς ὑπὸ ῥᾳθυμίας διέφθειραν. εἰσὶ δ’ οἳ καὶ δόξαντες ἐπιμελεῖσθαι,
 φιλαυτίαν πρὸ εὐσεβείας ἀσπασάμενοι, τὰς αἰτίας τῶν κατορθωμάτων
- ἀνέθηκαν ἑαυτοῖς.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="13">
-<p>ὑπαίτιοι δὲ πάντες οὗτοι· μόνος δ’ ἀποδοχῆς
+ ἀνέθηκαν ἑαυτοῖς.</p>
+         </div>
+         <div n="13" type="section">
+            <p>ὑπαίτιοι δὲ πάντες οὗτοι· μόνος δ’ ἀποδοχῆς
 ἄξιος ὁ ἀναθεὶς τὴν ἐλπίδα θεῷ καὶ ὡς αἰτίῳ τῆς γενέσεως αὐτῆς καὶ <lb n="25"/>
-<note xml:lang="mul" type="footnote">
-<lb/>1 οὑν οm. P
+               <note xml:lang="mul" type="footnote">
+                  <lb/>1 οὑν οm. P
 <lb/>2 <add>ἄτε</add> ante μύθου fort. inserendum μύθου πλάσμα ὂν F: κατά πλάσμα οἷον μῦθος ὢν Α, κατὰ πλάσμα οἷον μύθου ὂν HP; οἶον πλάσμα μύθου ὂν Mang. σοφιστείαν πρὸ σοφίας FP: πρὸ σοφίας om. AH (add. mg. H) 2.3 καὶ γοητείαν ἔχον, οὐ μὴν ἀφορῶν πρὸς ἀλήθειαν (om, ἐπιτετηδευκόσιν) A 3.4 τῶν ὅλων θεὸς Α
 <lb/>4 προευτρεπίσατο FHP: ηὐτρεπίσατο Α (Mang.) τοῖς ζώοις F: τοῖς om. ΑΗΡ (v) ἀνεὶς FA (Mang.): ἀνιεὶς HP
 <lb/>5 γηγενέσιν] γένεσιν F
@@ -263,45 +271,44 @@ License</licence>
 <lb/>19 θεωρητικήν τε καὶ πρακτικὴν Α εὐθύς ἐστιν F: ἐστιν εὐθὺς AHP (v) 
 <lb/>22 διεφθάρησαν A 22.23 ἐπιμελεῖσθαι FA: ἐπιμεμελῆσθαι HP (v) 
 <lb/>24 αὐτοῖς F ὑπαίτιοι—θεῷ (25) om. Α δὲ P
-<lb/>25 γεννήσεως Α αὐτῆς] αὑτοῖς Α</note>  
-
-<pb n="v.5.p.339"/>
+<lb/>25 γεννήσεως Α αὐτῆς] αὑτοῖς Α</note>
+               <pb n="v.5.p.339"/>
 ὡς ἀσινῆ καὶ ἀδιάφθορον ἱκανῷ μόνῳ διαφυλάξαι. τί οὖν ἆθλον πρόκειται
 τῷ στεφανωθέντι τὸν ἀγῶνα τοῦτον; τὸ μικτὸν ἐκ θνητῆς καὶ
 ἀθανάτου φύσεως ζῷον, ὁ ἄνθρωπος, οὔθ’ ὁ αὐτὸς οὔθ’ ἕτερος ὢν τοῦ
-λαβόντος.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="14">
-<p>τοῦτον Χαλδαῖοι μὲν προσονομάζουσιν Ἐνώς, εἰς δ’ Ἑλλάδα <lb n="5"/> γλῶτταν μεταληφθείς ἐστιν ἄνθρωπος, τὸ κοινὸν ὄνομα τοῦ γένους
+λαβόντος.</p>
+         </div>
+         <div n="14" type="section">
+            <p>τοῦτον Χαλδαῖοι μὲν προσονομάζουσιν Ἐνώς, εἰς δ’ Ἑλλάδα <lb n="5"/> γλῶτταν μεταληφθείς ἐστιν ἄνθρωπος, τὸ κοινὸν ὄνομα τοῦ γένους
 ἴδιον λαβών, ἆθλον ἐξαίρετον, ὡς δέον μηδένα νομίζεσθαι τὸ παράπαν
 ἄνθρωπον, ὃς ἂν μὴ ἐπὶ θεὸν ἐλπίζῃ.</p>
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="15">
-<p><milestone unit="altref" n="3"/> Μετὰ δὲ τὴν ἐλπίδος νίκην ἀγὼν δεύτερός ἐστιν, ἐν ᾧ μετάνοια ἀγωνίζεται τῆς μὲν ἀτρέπτου καὶ ἀμεταβλήτου καὶ ἀεὶ κατὰ ταὐτὰ
+         </div>
+         <div n="15" type="section">
+            <p>
+               <milestone unit="altref" n="3"/> Μετὰ δὲ τὴν ἐλπίδος νίκην ἀγὼν δεύτερός ἐστιν, ἐν ᾧ μετάνοια ἀγωνίζεται τῆς μὲν ἀτρέπτου καὶ ἀμεταβλήτου καὶ ἀεὶ κατὰ ταὐτὰ
 <lb n="10"/> καὶ ὡσαύτως ἐχούσης φύσεως ἀμοιρήσασα, ζήλῳ δὲ καὶ ἔρωτι τοῦ
 βελτίονος ἐξαίφνης κατασχεθεῖσα καὶ σπεύδουσα καταλιπεῖν μὲν τὴν σύντροφον
 πλεονεξίαν καὶ ἀδικίαν, μεθορμίσασθαι δὲ πρὸς σωφροσύνην καὶ
-δικαιοσύνην καὶ τὰς ἄλλας ἀρετάς.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="16">
-<p>ἆθλα καὶ ταύτῃ προτίθεται διττὰ ἐπὶ διττοῖς κατορθώμασιν, ἀπολείψει μὲν αἰσχρῶν, αἱρέσει δὲ τῶν καλλίστων. τὰ δ’ ἆθλα ἀποικία καὶ μόνωσις· φησὶ  <milestone unit="altpage2" n="p. 411 Μ."/> γὰρ ἐπὶ τοῦ τὰς μὲν
+δικαιοσύνην καὶ τὰς ἄλλας ἀρετάς.</p>
+         </div>
+         <div n="16" type="section">
+            <p>ἆθλα καὶ ταύτῃ προτίθεται διττὰ ἐπὶ διττοῖς κατορθώμασιν, ἀπολείψει μὲν αἰσχρῶν, αἱρέσει δὲ τῶν καλλίστων. τὰ δ’ ἆθλα ἀποικία καὶ μόνωσις· φησὶ  <milestone unit="altpage2" n="p. 411 Μ."/> γὰρ ἐπὶ τοῦ τὰς μὲν
 <lb n="16"/> σώματος νεωτεροποιίας ἀποδράντος, αὐτομολήσαντος δὲ πρὸς ψυχήν·
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="17">
-<p>„οὐχ εὑρίσκετο, διότι μετέθηκεν αὐτὸν ὁ θεός“ (Gen. 5,24). αἰνίττεται δὲ ἐναργῶς διὰ μὲν τῆς μεταθέσεως τὴν ἀποικίαν, διὰ δὲ τοῦ μὴ εὑρίσκεσθαι
+</p>
+         </div>
+         <div n="17" type="section">
+            <p>„οὐχ εὑρίσκετο, διότι μετέθηκεν αὐτὸν ὁ θεός“ (Gen. 5,24). αἰνίττεται δὲ ἐναργῶς διὰ μὲν τῆς μεταθέσεως τὴν ἀποικίαν, διὰ δὲ τοῦ μὴ εὑρίσκεσθαι
 τὴν μόνωσιν· καὶ σφόδρα οἰκείως· εἰ γὰρ τῷ ὄντι ἄνθρωπος
 <lb n="20"/> καταπεφρόνηκεν ἡδονῶν καὶ ἐπιθυμιῶν καὶ ἐπάνω τῶν παθῶν ἀψευδῶς
 ἔγνωκεν ἵστασθαι, [πρὸς] μετανάστασιν εὐτρεπιζέσθω φεύγων ἀμεταστρεπτὶ
-καὶ οἶκον καὶ πατρίδα καὶ συγγενεῖς καὶ φίλους.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="18">
-<p>ὁλκὸν γὰρ ἡ συνήθεια, ὡς δέος εἶναι, μὴ καταμείνας ἁλῷ τοσούτοις ἐν κύκλῳ φίλτροις
+καὶ οἶκον καὶ πατρίδα καὶ συγγενεῖς καὶ φίλους.</p>
+         </div>
+         <div n="18" type="section">
+            <p>ὁλκὸν γὰρ ἡ συνήθεια, ὡς δέος εἶναι, μὴ καταμείνας ἁλῷ τοσούτοις ἐν κύκλῳ φίλτροις
 ἀποληφθείς, ὧν αἱ φαντασίαι τὴν ἐγγενομένην ἡσυχίαν τῶν αἰσχρῶν
 <lb n="25"/> ἐπιτηδευμάτων πάλιν ἀνακινήσουσι καὶ μνήμας ἐναύλους, ὧν ἐπιλελῆσθαι
 <note xml:lang="mul" type="footnote">
-<lb/>1 ἀδιάφορον Turn.
+                  <lb/>1 ἀδιάφορον Turn.
 <lb/>3 alt. οὔτε ΗΡ
 <lb/>4 προσονομάζουσιν F: ὀνομάζουσιν ΑΗΡ (Turn.) εἰς δ’ ἑλλάδα ΑΗΡ: ὃς εἰς ἑλλάδα F (Mang.)
 <lb/>5 γλῶσσαν Α μεταληφθείς] μεταβληθείς L (Turn.)
@@ -316,49 +323,50 @@ License</licence>
 <lb/>19 οἰκείως] εἰκότως conicio 19—21 ἄνθρωπος καταπεφρόνηκεν ἡδονῶν καὶ καὶ ἐπάνω—ἵστασθαι F: ἐπάνω—ἵστασθαι ἄνθρωπος δὲ add. Α) καταφρονήσας ἡδονῶν καὶ ἐπιθυμιῶν AHP (v)
 <lb/>21 πρὸς μετανάστασιν F πρός seclusi): om. AHP (v)
 <lb/>23 δέος] δέον H1P μεταμείνας F
-<lb/>24 ἐναποληφθείς coni. Mang. ἐγγινομένην Α, γενομένην F</note> <note xml:lang="lat" type="footnote">
-<lb/>4 sqq. Gen. 4,26. cf. de Abrahamo §
-<lb/>7 sqq.</note>  
-
-<pb n="v.5.p.340"/>
- καλὸν ἦν, ἐνεργάσονται.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="19">
-<p>πολλοὶ γοῦν ἀποδημίαις ἐσωφρονίσθησαν, ἔρωτας
+<lb/>24 ἐναποληφθείς coni. Mang. ἐγγινομένην Α, γενομένην F</note>
+               <note xml:lang="lat" type="footnote">
+                  <lb/>4 sqq. Gen. 4,26. cf. de Abrahamo §
+<lb/>7 sqq.</note>
+               <pb n="v.5.p.340"/>
+ καλὸν ἦν, ἐνεργάσονται.</p>
+         </div>
+         <div n="19" type="section">
+            <p>πολλοὶ γοῦν ἀποδημίαις ἐσωφρονίσθησαν, ἔρωτας
 ἐκμανεῖς καὶ λελυττηκότας θεραπευθέντες, οὐκέτι τῆς ὄψεως χορηγεῖν
 δυναμένης τῷ πάθει τῆς ἡδονῆς τὰ εἴδωλα· τῇ γὰρ διαζεύξει κατὰ
- κενοῦ βαίνειν ἀνάγκη, μηκέτι παρόντος ὑφ’ οὗ διερεθισθήσεται.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="20">
-<p>κἂν
+ κενοῦ βαίνειν ἀνάγκη, μηκέτι παρόντος ὑφ’ οὗ διερεθισθήσεται.</p>
+         </div>
+         <div n="20" type="section">
+            <p>κἂν
 μεταναστῇ μέντοι, τοὺς τῶν πολλῶν θιάσους ἐκτρεπέσθω μόνωσιν <lb n="5"/>
 ἀσπαζόμενος· πέφυκε γὰρ καὶ ἐπὶ τῆς ἀλλοδαπῆς ὅμοια τοῖς οἴκοι
 δίκτυα, οἷς ἀνάγκη περιπείρεσθαι τοὺς ἀπροοράτως ἔχοντας καὶ ταῖς
 τῶν πολλῶν χαίροντας ὁμιλίαις· ὅ τι γὰρ ἄτακτον, ἄκοσμον, πλημμελές,
 ὑπαίτιον, τοῦτο ὄχλος ἐστί, μεθ’ οὗ φέρεσθαι τῷ νῦν πρῶτον μετοικισαμένῳ
- πρὸς ἀρετὴν ἀλυσιτελέστατον.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="21">
-<p>ὡς γὰρ τοῖς ἐκ νόσου μακρᾶς <lb n="10"/>
+ πρὸς ἀρετὴν ἀλυσιτελέστατον.</p>
+         </div>
+         <div n="21" type="section">
+            <p>ὡς γὰρ τοῖς ἐκ νόσου μακρᾶς <lb n="10"/>
 ἀρχομένοις ἀναλαμβάνειν εὐάλωτά πώς ἐστι τὰ σώματα μήπω πρὸς
 ἰσχὺν παγέντα κραταιοτέραν, οὕτως καὶ οἷς ἡ ψυχὴ νῦν πρῶτον ὑγιάζεται
 πλαδῶσιν οἱ νοεροὶ τόνοι καὶ κραδαίνονται, ὡς δέος εἶναι, μὴ
 πάλιν ἐξορμήσῃ τὸ πάθος, ὃ πέφυκεν ἐκ τῆς τῶν εἰκαιοτέρων συνδιαιτήσεως
-ἀνερεθίζεσθαι.</p> <lb n="15"/>
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="22">
- <p><milestone unit="altref" n="4"/> Μετὰ δὲ τοὺς μετανοίας ἀγῶνας τρίτα ἆθλα τίθεται δικαιοσύνης,
+ἀνερεθίζεσθαι.</p>
+            <lb n="15"/>
+         </div>
+         <div n="22" type="section">
+            <p>
+               <milestone unit="altref" n="4"/> Μετὰ δὲ τοὺς μετανοίας ἀγῶνας τρίτα ἆθλα τίθεται δικαιοσύνης,
 ἧς ὁ μεταποιησάμενος λαμβάνει γέρα διττά, τὸ μὲν σωτήριον ἐν
 κοινῇ φθορᾷ, τὸ δὲ ταμίαν καὶ φύλακα γενέσθαι ἐξ ἑκάστης ζῴων
 ἰδέας ἡρμοσμένων ζυγάδην εἰς δευτέραν γένεσιν ἀντὶ τῆς ἀπολλυμένης.
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="23">
-<p>ἠξίωσε γὰρ ὁ ποιητὴς τὸν αὐτὸν καὶ τέλος γενέσθαι τῆς κατακρίτου <lb n="20"/>
+</p>
+         </div>
+         <div n="23" type="section">
+            <p>ἠξίωσε γὰρ ὁ ποιητὴς τὸν αὐτὸν καὶ τέλος γενέσθαι τῆς κατακρίτου <lb n="20"/>
 γενεᾶς καὶ ἀρχὴν τῆς ἀνυπαιτίου, διδάσκων τοὺς ἀπρονόητον εἶναι τὸν
 <note xml:lang="mul" type="footnote">
-<lb/>1 ἐργάσονται Α
+                  <lb/>1 ἐργάσονται Α
 <lb/>2 οὐκέτι τῆς ὄψεως] ἔτι τῆς ὄψεως οὐ Α
 <lb/>3 τῷ πάθει] τά πάτη L (Turn.)
 <lb/>4 ἐρεθισθήσεται F
@@ -373,44 +381,45 @@ License</licence>
 <lb/>16 δέ om. F μετανοίας F: τῆς μετανοίας AHP (v) τρίτα] τρία L1 (Turn.) 
 <lb/>18 φύλαξ Η (Turn.) γενέσθαι Α: om. FHP1, add. mg P2 ἐξ ἑκάστης codd.: ἐξ om. V
 <lb/>19 ἡρμοσμένων AH2: ἡρμοσμένον FH1P, ἡρμοσμένου L (Turn.) ζυγάδην Mang.: ζυγά δ’ ἣν F, ζυγὰ δὲ ἦν AHP
-<lb/>20 κατακρίτου] καταρρύπου (sic) DR, καραῥύπον (sic) DH</note> <note xml:lang="mul" type="footnote">10—15 Escur. X—I—13 fol. 237v: ὥσπερ τοῖς ἐκ νόσου μακρᾶς—ἀνερεθίζεσθαι.</note> <note xml:lang="mul" type="footnote">20—341,3 DR fol. 128v Φίλωνος ἐκ τοῦ περὶ ἄθλων καὶ ἐπιτιμίων DH fol. 242r Φίλωνος: τὸν δικαιοσύνης μεταποιησάμενον Νῶε ἠξίωσεν ὁ ποιητὴς τὸν αὐτὸν—ἑνὸς ἀνδρὸς δικαιοσύνης οὐκ ἄξια ἐβίωσαν.</note>  
-
-<pb n="v.5.p.341"/>
+<lb/>20 κατακρίτου] καταρρύπου (sic) DR, καραῥύπον (sic) DH</note>
+               <note xml:lang="mul" type="footnote">10—15 Escur. X—I—13 fol. 237v: ὥσπερ τοῖς ἐκ νόσου μακρᾶς—ἀνερεθίζεσθαι.</note>
+               <note xml:lang="mul" type="footnote">20—341,3 DR fol. 128v Φίλωνος ἐκ τοῦ περὶ ἄθλων καὶ ἐπιτιμίων DH fol. 242r Φίλωνος: τὸν δικαιοσύνης μεταποιησάμενον Νῶε ἠξίωσεν ὁ ποιητὴς τὸν αὐτὸν—ἑνὸς ἀνδρὸς δικαιοσύνης οὐκ ἄξια ἐβίωσαν.</note>
+               <pb n="v.5.p.341"/>
 κόσμον λέγοντας ἔργοις, οὐ ῥήμασιν, ὅτι καθ’ ὃν εἰσηγήσατο νόμον ἐν
  τῇ φύσει τῶν ὅλων αἱ σύμπασαι μυριάδες τῶν ἀνθρώπων  <milestone unit="altpage2" n="p. 412 Μ."/> μετὰ ἀδικίας
 ζήσασαι ἑνὸς ἀνδρὸς οὐκ ἄξιαι δικαιοσύνῃ συμβιοῦντος. τοῦτον Ἕλληνες
 μὲν Δευκαλίωνα, Χαλδαῖοι δὲ Νῶε ἐπονομάζουσιν, ἐφ’ οὗ τὸν μέγαν
 <lb n="5"/> κατακλυσμὸν συνέβη γενέσθαι.
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="24">
-<p>Μετὰ δὲ τὴν τριάδα ταύτην ἑτέρα τριὰς ὁσιωτέρα καὶ θεοφιλεστέρα γίνεται μιᾶς συγγενείας· πατὴρ γὰρ καὶ υἱὸς καὶ υἱωνὸς ἐπὶ τὸ αὐτὸ τέλος
+</p>
+         </div>
+         <div n="24" type="section">
+            <p>Μετὰ δὲ τὴν τριάδα ταύτην ἑτέρα τριὰς ὁσιωτέρα καὶ θεοφιλεστέρα γίνεται μιᾶς συγγενείας· πατὴρ γὰρ καὶ υἱὸς καὶ υἱωνὸς ἐπὶ τὸ αὐτὸ τέλος
 ἔσπευσαν τοῦ βίου <add>τὸ</add> τῷ ποιητῇ καὶ πατρὶ τῶν ὅλων εὐαρεστῆσαι, καταφρονήσαντες
 μὲν ὧν θαυμάζουσιν οἱ πολλοί, δόξης καὶ πλούτου καὶ
 <lb n="10"/> ἡδονῆς, γελάσαντες δὲ καὶ τῦφον, ὃς ἐκ ψευσμάτων ἀεὶ συνυφαίνεται καὶ
-καταποικίλλεται πρὸς ἀπάτην τῶν ὁρώνταν.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="25">
-<p>οὗτός ἐστιν ὁ γόης, ὁ τὰ ἄψυχα θεοπλαστῶν, ὁ μέγας καὶ δυσάλωτος ἐπιτειχισμός, οὗ τοῖς
+καταποικίλλεται πρὸς ἀπάτην τῶν ὁρώνταν.</p>
+         </div>
+         <div n="25" type="section">
+            <p>οὗτός ἐστιν ὁ γόης, ὁ τὰ ἄψυχα θεοπλαστῶν, ὁ μέγας καὶ δυσάλωτος ἐπιτειχισμός, οὗ τοῖς
 σοφίσμασι καὶ στρατηγήμασι πᾶσα πόλις δελεάζεται προκαταλαμβάνοντος
 τὰς τῶν νέων ψυχάς· εἰσοικισάμενος γὰρ ἐκ πρώτης ἡλικίας ἄχρι
 <lb n="15"/> γήρως ἐνίδρυται, πλὴν οἷς ἂν ὁ θεὸς αὐγὴν ἐπιλάμψῃ τῆς ἀληθείας·
 ἀληθείᾳ δὲ τῦφος ἀντίπαλον, ὃς μόλις μὲν ἀλλ’ οὖν κραταιοτέρᾳ δυνάμει
-νικηθεὶς ὑπεξίσταται.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="26">
-<p>τουτὶ δὲ τὸ γένος ἀριθμῷ μέν ἐστιν ὀλίγον, δυνάμει δὲ πολὺ καὶ μέγιστον, ὡς μηδ’ ἅπαντα τὸν τῆς γῆς κύκλον
+νικηθεὶς ὑπεξίσταται.</p>
+         </div>
+         <div n="26" type="section">
+            <p>τουτὶ δὲ τὸ γένος ἀριθμῷ μέν ἐστιν ὀλίγον, δυνάμει δὲ πολὺ καὶ μέγιστον, ὡς μηδ’ ἅπαντα τὸν τῆς γῆς κύκλον
 αὐτὸ χωρεῖν δύνασθαι, φθάνειν δ’ εἰς οὐρανόν· ἱμέρῳ γὰρ τοῦ θεωρεῖν
 <lb n="20"/> καὶ τοῖς θείοις ἀεὶ συνεῖναι κατεσχημένον ἀλέκτῳ, τὴν ὁρατὴν ὅταν
 ἅπασαν φύσιν διερευνήσῃ καὶ διεξέλθῃ, πρὸς τὴν ἀσώματον καὶ νοητὴν
 εὐθὺς μέτεισιν, οὐδεμίαν τῶν αἰσθήσεων ἐπαγόμενον, ἀλλ’ ὅσον μὲν τῆς
 ψυχῆς ἄλογον μεθιέμενον, τῷ δ’ ὃ κέκληται νοῦς καὶ λογισμὸς μόνῳ
-προσχρώμενον.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="27">
-<p>ὁ<sic>ὁ</sic> μὲν οὖν ἡγεμὼν τῆς θεοφιλοῦς δόξης, ὁ<sic>ὁ</sic> πρῶτος ἐκ <lb n="25"/> τύφου μεθορμισάμενος πρὸς ἀλήθειαν, διδακτικῇ χρησάμενος ἀρετῇ
+προσχρώμενον.</p>
+         </div>
+         <div n="27" type="section">
+            <p>ὁ<sic>ὁ</sic> μὲν οὖν ἡγεμὼν τῆς θεοφιλοῦς δόξης, ὁ<sic>ὁ</sic> πρῶτος ἐκ <lb n="25"/> τύφου μεθορμισάμενος πρὸς ἀλήθειαν, διδακτικῇ χρησάμενος ἀρετῇ
 <note xml:lang="mul" type="footnote">
-<lb/>2 τῶν ἀνθρώπων D: τῶν om. codd. (v) μετ’ F
+                  <lb/>2 τῶν ἀνθρώπων D: τῶν om. codd. (v) μετ’ F
 <lb/>3 ζήσασι D: om. codd. (Turn.) ἑνὸς ἀνδρός δικαιοσύνης οὐκ ἄξια ἐβίωσαν DR
 <lb/>8 τὸ addidi: τὸ pro τῷ scribere voluit Mang.
 <lb/>9 καὶ δόξης Α
@@ -424,47 +433,46 @@ License</licence>
 <lb/>19 φθάνειν codd.: φθάνει Mang. post οὐρανὸν add. F verba (interpolata) καὶ τά πέρατα τοῦ κόσμου, μᾶλλον δέ καὶ τὴν μετά κόσμου (κόσμον?) οὐσίαν ἱμέρω γὰρ τοῦ θεωρεῖν F: γάρ τοῦ θεωρεῖν ἔρωτι Α (Mang.), καὶ τοῦ θεωρεῖν ΗΡ (Turn.)
 <lb/>20 συνεῖναι Α: συνιέναι FHP (Turn.) κατϊσχημένον Α ἀλέκτως L ( ἀλέκτως ὅ Turn.) 
 <lb/>21 διερευνήσας διεξέλθῃ Α
-<lb/>25 μεθορμισάμενος FH: μεθορμησάμενος P, μεθαρμοσάμενος Α (Mang.) πρός] εἰς F διδακτὴ vel διδασκαλικῇ coni. Mang.</note>  
-
-<pb n="v.5.p.342"/>
+<lb/>25 μεθορμισάμενος FH: μεθορμησάμενος P, μεθαρμοσάμενος Α (Mang.) πρός] εἰς F διδακτὴ vel διδασκαλικῇ coni. Mang.</note>
+               <pb n="v.5.p.342"/>
 πρὸς τελείωσιν, ἆθλον αἴρεται τὴν πρὸς θεὸν πίστιν· τῷ δὲ κατ’ εὐμοιρίαν φύσεως αὐτήκοον καὶ αὐτομαθῆ καὶ αὐτοδίδακτον κτησαμένῳ τὴν
 ἀρετὴν βραβεῖον ἀναδίδοται χαρά· τοῦ δ’ ἀσκητοῦ καὶ πόνοις ἀτρύτοις
 καὶ ἀκαμπέσι περιποιησαμένου τὸ καλὸν ὁ στέφανός ἐστιν ὅρασις θεοῦ.
 τοῦ δὲ πιστεύειν θεῷ καὶ διὰ παντὸς τοῦ βίου χαίρειν καὶ ὁρᾶν ἀεὶ τὸ <lb n="5"/>
 ὂν τί ἂν ὠφελιμώτερον ἢ σεμνότερον ἐπινοήσειέ τις;</p>
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="28">
- <p><milestone unit="altref" n="5"/> Ἐπαυγασώμεθα δ’ αὐτῶν ἕκαστον ἀκριβέστερον, μὴ τοῖς
+         </div>
+         <div n="28" type="section">
+            <p>
+               <milestone unit="altref" n="5"/> Ἐπαυγασώμεθα δ’ αὐτῶν ἕκαστον ἀκριβέστερον, μὴ τοῖς
 ὀνόμασι παραχθέντες, ἀλλὰ διακύψαντες εἴσω καὶ ταῖς διανοίαις ἐμβαθύναντες.
 ὁ μὲν τοίνυν ἀψευδῶς πιστεύσας θεῷ τὴν ἐν τοῖς ἄλλοις
 ὅσα γενητὰ καὶ φθαρτὰ κατείληφεν ἀπιστίαν, ἀρξάμενος ἀπὸ τῶν ἐν <lb n="10"/>
 αὐτῷ μέγα πνεόντων, λογισμοῦ τε καὶ αἰσθήσεως· ἑκατέρῳ γὰρ ἴδιον
 <milestone unit="altpage2" n="p. 413 M."/>  συνέδριον καὶ δικαστήριον προσκεκλήρωται, τῷ μὲν εἰς τὴν τῶν νοητῶν
 ἐπίσκεψιν, οὗ τέλος ἀλήθεια, τῇ δὲ εἰς τὴν τῶν ὁρατῶν, οὗ τέλος δόξα.
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="29">
-<p>τὸ μὲν οὖν ἀνίδρυτον καὶ πεπλανημένον τῆς δόξης ἐνθένδε δῆλον· εἰκόσι
+</p>
+         </div>
+         <div n="29" type="section">
+            <p>τὸ μὲν οὖν ἀνίδρυτον καὶ πεπλανημένον τῆς δόξης ἐνθένδε δῆλον· εἰκόσι
 γὰρ καὶ πιθανοῖς ἐφορμεῖ· πᾶσα δὲ εἰκὼν ὁμοιότητι εὐπαραγώγῳ ψεύδεται <lb n="15"/>
 τὸ ἀρχέτυπον. ὅ τε ἡγεμὼν αἰσθήσεως λογισμὸς τὰς κρίσεις οἰόμενος
 ἀνῆφθαι τῶν νοητῶν καὶ κατὰ τὰ αὐτὰ καὶ ὡσαύτως ἐχόντων ἁλίσκεται
 περὶ πολλὰ κηραίνων· ὅταν γὰρ μυρίοις οὖσι τοῖς κατὰ μέρος ποιῆται
 τὰς προσβολάς, ἀδυνατεῖ καὶ ἐξασθενεῖ καὶ ἀπαγορεύει καθάπερ ἀθλητὴς
- ὑπὸ ῥώμης δυνατωτέρας ἐκτραχηλιζόμενος.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="30">
-<p>ὅτῳ δ’ ἐξεγένετο πάντα μὲν <lb n="20"/>
+ ὑπὸ ῥώμης δυνατωτέρας ἐκτραχηλιζόμενος.</p>
+         </div>
+         <div n="30" type="section">
+            <p>ὅτῳ δ’ ἐξεγένετο πάντα μὲν <lb n="20"/>
 σώματα πάντα δ’ ἀσώματα ὑπεριδεῖν καὶ ὑπερκῦψαι, μόνῳ δ’ ἐπερείσασθαι
 καὶ στηρίσασθαι θεῷ μετ’ ἰσχυρογνώμονος λογισμοῦ καὶ ἀκλινοῦς
 καὶ βεβαιοτάτης πίστεως, εὐδαίμων καὶ τρισμακάριος οὗτος ὡς ἀληθῶς.
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="31">
-<p>Μετὰ πίστιν προὔκειτο τῷ περιπεποιημένῳ τὴν ἀρετὴν ἐκ φύσεως
+</p>
+         </div>
+         <div n="31" type="section">
+            <p>Μετὰ πίστιν προὔκειτο τῷ περιπεποιημένῳ τὴν ἀρετὴν ἐκ φύσεως
 ἀκονιτὶ καὶ νικηφορήσαντι χαρὰ τὸ ἆθλον· ὠνομάσθη γάρ, ὡς μὲν ἂν <lb n="25"/>
-<note xml:lang="mul" type="footnote">
-<lb/>1 καὶ ἆθλον Α αἴρεται FA (Mang.): αἱρεῖται HP θεὸν Α: τὸν θεὸν FHP (v) 
+               <note xml:lang="mul" type="footnote">
+                  <lb/>1 καὶ ἆθλον Α αἴρεται FA (Mang.): αἱρεῖται HP θεὸν Α: τὸν θεὸν FHP (v) 
 <lb/>2 καὶ αὐτοδίδακτον om. Α
 <lb/>3 βραβεῖον om. Turn.
 <lb/>4 καὶ <add>ἤθεσιν</add> ἀκαμπέσι e. gr. conicio
@@ -483,45 +491,46 @@ License</licence>
 <lb/>21 πάντα δ’ ἀσώματα om. L (Turn.) 21.
 <lb/>22 ὑπερείσασθαι HP (Turn.)
 <lb/>23 οὗτος ὡς ἀληθῶς scripsi: ὡς ἀληθῶς F, οὗτος ἀληθῶς AHP (v)
-<lb/>24 προὔκειτο HP: προϋπέκειτο FA περιπεποιημένῳ codd.: περιποιουμένῳ V</note> <note xml:lang="lat" type="footnote">
-<lb/>9 Gen. 156.</note>  
-
-<pb n="v.5.p.343"/>
+<lb/>24 προὔκειτο HP: προϋπέκειτο FA περιπεποιημένῳ codd.: περιποιουμένῳ V</note>
+               <note xml:lang="lat" type="footnote">
+                  <lb/>9 Gen. 156.</note>
+               <pb n="v.5.p.343"/>
 εἴποιεν Ἕλληνες, γέλως, ὡς δὲ Χαλδαῖοι προσονομάζουσιν, Ἰσαάκ·
 γέλως δὲ σημεῖον ἐπὶ τοῦ σώματος φανερὸν ἀφανοῦς τῆς κατὰ διάνοιαν
-χαρᾶς ἐστι.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="32">
-<p>χαρὰν δὲ τῶν εὐπαθειῶν ἀρίστην καὶ καλλίστην εἶναι συμβέβηκεν, ὑφ’ ἧς ὅλη δι’ ὅλων εὐθυμίας ἡ ψυχὴ καταπίμπλαται,
+χαρᾶς ἐστι.</p>
+         </div>
+         <div n="32" type="section">
+            <p>χαρὰν δὲ τῶν εὐπαθειῶν ἀρίστην καὶ καλλίστην εἶναι συμβέβηκεν, ὑφ’ ἧς ὅλη δι’ ὅλων εὐθυμίας ἡ ψυχὴ καταπίμπλαται,
 <lb n="5"/> γεγηθυῖα μὲν ἐπὶ τῷ πατρὶ καὶ ποιητῇ τῶν συμπάντων θεῷ, γεγηθυῖα
 δὲ καὶ ἐπὶ τοῖς ἄνευ κακίας δρωμένοις, κἂν μὴ τυγχάνῃ καθ’ ἡδονὴν
-ὄντα, ὡς καλῶς γινομένοις καὶ ἐπὶ τῇ τῶν ὅλων διαμονῇ.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="33">
-<p>καθάπερ γὰρ ἰατρὸς μὲν ἐν ταῖς μεγάλαις καὶ ἐπισφαλέσι νόσοις ἔστιν ὅτε μέρη
+ὄντα, ὡς καλῶς γινομένοις καὶ ἐπὶ τῇ τῶν ὅλων διαμονῇ.</p>
+         </div>
+         <div n="33" type="section">
+            <p>καθάπερ γὰρ ἰατρὸς μὲν ἐν ταῖς μεγάλαις καὶ ἐπισφαλέσι νόσοις ἔστιν ὅτε μέρη
 σωμάτων ἀφαιρεῖ στοχαζόμενος τῆς τοῦ λοιποῦ σώματος ὑγείας, κυβερνήτης
 <lb n="10"/> δὲ χειμώνων ἐπιγινομένων ἀποφορτίζεται προνοίᾳ τῆς τῶν ἐμπλεόντων
 σωτηρίας, καὶ μέμψις οὔτε τῷ ἰατρῷ τῆς πηρώσεως οὔτε τῷ
 κυβερνήτῃ τῆς ἀποβολῆς ἕπεται, τοὐναντίον δὲ ἔπαινος ἑκατέρῳ τὸ συμφέρον
-πρὸ τοῦ ἡδέος ἰδόντι καὶ κατορθώσαντι,</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="34">
-<p>τὸν αὐτὸν τρόπον καὶ τὴν τῶν ὅλων φύσιν ἀεὶ θαυμαστέον καὶ τοῖς ἐν τῷ κόσμῳ πραττομένοις
+πρὸ τοῦ ἡδέος ἰδόντι καὶ κατορθώσαντι,</p>
+         </div>
+         <div n="34" type="section">
+            <p>τὸν αὐτὸν τρόπον καὶ τὴν τῶν ὅλων φύσιν ἀεὶ θαυμαστέον καὶ τοῖς ἐν τῷ κόσμῳ πραττομένοις
 <lb n="15"/> ἅπασιν ἄνευ τῆς ἑκουσίου κακίας εὐαρεστητέον ἐξετάζοντας, οὐκ εἴ
 τι μὴ καθ’ ἡδονὴν ἰδίαν συμβέβηκεν, ἀλλ’ εἰ τρόπον εὐνόμου πόλεως ὁ
-κόσμος ἡνιοχεῖταί τε καὶ κυβερνᾶται σωτηρίως.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="35">
-<p>μακάριος οὖν καὶ οὗτος οὐχ ἧττον τοῦ προτέρου, συννοίας καὶ κατηφείας ἀμέτοχος ὤν, ἄλυπόν τε
+κόσμος ἡνιοχεῖταί τε καὶ κυβερνᾶται σωτηρίως.</p>
+         </div>
+         <div n="35" type="section">
+            <p>μακάριος οὖν καὶ οὗτος οὐχ ἧττον τοῦ προτέρου, συννοίας καὶ κατηφείας ἀμέτοχος ὤν, ἄλυπόν τε
 καὶ ἄφοβον ζωὴν καρπούμενος, αὐστηροῦ καὶ αὐχμηροῦ βίου μηδ’ ὄναρ
  προσαψάμενος διὰ τὸ  <milestone unit="altpage2" n="p. 414 M."/> πάντα τόπον τῆς ψυχῆς αὐτοῦ χαρᾷ προκατέχεσθαι.</p>
-<lb n="21"/> </div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="36">
-<p><milestone unit="altref" n="6"/>Μετὰ τὸν αὐτομαθῆ δὲ καὶ πλουσίᾳ χρησάμενον τῇ φύσει τρίτος ὁ ἀσκητὴς τελειοῦται λαμβάνων γέρας ἐξαίρετον ὅρασιν θεοῦ.
+            <lb n="21"/>
+         </div>
+         <div n="36" type="section">
+            <p>
+               <milestone unit="altref" n="6"/>Μετὰ τὸν αὐτομαθῆ δὲ καὶ πλουσίᾳ χρησάμενον τῇ φύσει τρίτος ὁ ἀσκητὴς τελειοῦται λαμβάνων γέρας ἐξαίρετον ὅρασιν θεοῦ.
 πάντων γὰρ τῶν κατὰ τὸν ἀνθρώπινον βίον ἐφαψάμενος καὶ πᾶσιν
 <note xml:lang="mul" type="footnote">
-<lb/>1 προονομάζουσιν L (Turn.)
+                  <lb/>1 προονομάζουσιν L (Turn.)
 <lb/>2 φανερὸν F: om. AHP
 <lb/>3 τε καὶ F 
 <lb/>4 ἀφ’ ἧς A κατεμπίπλαται Α
@@ -541,37 +550,38 @@ License</licence>
 <lb/>19 αὐστηροῦ καὶ αὐχμηροῦ F: αὐχμηροῦ καὶ αὐστηροῦ ΑΗΡ ν) βίου om. Α
 <lb/>20 αὐτοῦ FA: αὐτὼ HP (v)
 <lb/>21 τὸν] τὴν L (Turn.) αὐτομαθεῖ coni. Mang. πλουσία FAP2: πλουσίω ΗΡ1 (v)
-<lb/>22 6 om. Α</note> <note xml:lang="mul" type="footnote">7—17 DH fol. 337r Φίλωνος: καθάπερ ἰατρὸς—καὶ κυβερνάται σωτηρίως.</note> <note xml:lang="mul" type="footnote">23—345,5 N fol. 159v: πάντων—ἄνω προῆλθον.</note>  
-
-<pb n="v.5.p.344"/>
+<lb/>22 6 om. Α</note>
+               <note xml:lang="mul" type="footnote">7—17 DH fol. 337r Φίλωνος: καθάπερ ἰατρὸς—καὶ κυβερνάται σωτηρίως.</note>
+               <note xml:lang="mul" type="footnote">23—345,5 N fol. 159v: πάντων—ἄνω προῆλθον.</note>
+               <pb n="v.5.p.344"/>
 ἐνομιλήσας οὐ παρέργως καὶ μηδένα πόνον ἢ κίνδυνον παρελθών, εἴ
 πως δυνηθείη τὴν ἀξιέραστον ἀλήθειαν ἰχνηλατῆσαι, παρὰ τῷ θνητῷ
 γένει πολὺν ζόφον ἀνεύρισκε κατὰ γῆν καὶ ὕδωρ καὶ ἀέρα καὶ αἰθέρα·
 καὶ γὰρ ὁ αἰθὴρ καὶ ὁ σύμπας οὐρανὸς νυκτὸς αὐτῷ παρεῖχε φαντασίαν,
 ἐπειδὴ πᾶσα ἡ αἰσθητὴ φύσις ἀόριστος· τὸ δ’ ἀόριστον ἀδελφὸν σκότους <lb n="5"/>
- καὶ συγγενές.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="37">
-<p>καταμύσας οὖν τὸ τῆς ψυχῆς ὄμμα τὸν ἔμπροσθεν
+ καὶ συγγενές.</p>
+         </div>
+         <div n="37" type="section">
+            <p>καταμύσας οὖν τὸ τῆς ψυχῆς ὄμμα τὸν ἔμπροσθεν
 αἰῶνα τοῖς συνεχέσιν ἄθλοις μόλις ἤρξατο διοίγνυσθαι καὶ τὴν ἐπισκιάσασαν
 διακρίνειν καὶ ἀποβάλλειν ἀχλύν· καθαρωτέρα γὰρ αἰθέρος
 ἀσώματος ἐξαίφνης ἐπιλάμψασα αὐγὴ τὸν νοητὸν κόσμον ἀνέφηνεν
- ἡνιοχούμενον.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="38">
-<p>ὁ δ’ ἡνίοχος ἀκράτῳ φέγγει περιλαμπόμενος ἐν κύκλῳ <lb n="10"/>
+ ἡνιοχούμενον.</p>
+         </div>
+         <div n="38" type="section">
+            <p>ὁ δ’ ἡνίοχος ἀκράτῳ φέγγει περιλαμπόμενος ἐν κύκλῳ <lb n="10"/>
 δυσόρατος καὶ δυστόπαστος ἦν, ταῖς μαρμαρυγαῖς τῆς ὄψεως ἀμυδρουμένης·
 ἡ δέ, καίτοι πολλοῦ ῥέοντος εἰς αὐτὴν πυρός, ἀντεῖχεν ἔρωτι ἐκτόπῳ
-τοῦ θεάσασθαι.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="39">
-<p>γνήσιον δὲ ἵμερον καὶ πόθον ἰδὼν ὁ πατὴρ καὶ σωτὴρ
+τοῦ θεάσασθαι.</p>
+         </div>
+         <div n="39" type="section">
+            <p>γνήσιον δὲ ἵμερον καὶ πόθον ἰδὼν ὁ πατὴρ καὶ σωτὴρ
 ἠλέησε καὶ κράτος δοὺς τῇ τῆς ὄψεως προσβολῇ τῆς ἑαυτοῦ θέας
 οὐκ ἐφθόνησε, καθ’ ὅσον οἷόν τε ἦν χωρῆσαι γενητὴν καὶ θνητὴν <lb n="15"/>
- φύσιν, οὐχὶ τῆς ὅ ἐστιν ἐμφαινούσης, ἀλλὰ τῆς ὅτι ἔστιν.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="40">
-<p>ἐκεῖνο μὲν
+ φύσιν, οὐχὶ τῆς ὅ ἐστιν ἐμφαινούσης, ἀλλὰ τῆς ὅτι ἔστιν.</p>
+         </div>
+         <div n="40" type="section">
+            <p>ἐκεῖνο μὲν
 γάρ, ὃ καὶ ἀγαθοῦ κρεῖττον καὶ μονάδος πρεσβύτερον καὶ ἑνὸς εἱλικρινέστερον,
 ἀμήχανον ὑφ’ ἑτέρου θεωρεῖσθαί τινος, διότι μόνῳ θέμις
 αὐτῷ ὑφ’ ἑαυτοῦ καταλαμβάνεσθαι. <milestone unit="altref" n="7"/> τὸ δ’ ὅτι ἔστιν, ὑπάρξεως
@@ -579,7 +589,7 @@ License</licence>
 ἀλλ’ οἱ μὲν ἄντικρυς ἀπεφήναντο μηδ’ ὅλως εἶναι τὸ θεῖον,
 οἱ δὲ ἐνεδοίασαν ἐπαμφοτερίσαντες ὡς οὐκ ἔχοντες εἰπεῖν, εἴτε ἔστιν
 <note xml:lang="mul" type="footnote">
-<lb/>1 παρεισελθών HP (Turn.) 1.2 εἴ πως] ὅπως N
+                  <lb/>1 παρεισελθών HP (Turn.) 1.2 εἴ πως] ὅπως N
 <lb/>2 περὶ N 
 <lb/>3 γένει FN: βίω καὶ γένει AHP (v)
 <lb/>4 καὶ γὰρ καὶ ὁ Α
@@ -595,15 +605,15 @@ License</licence>
 <lb/>18 θεωρεῖσθαι τινὸς D: τινὸς θεωρεῖσθαι codd. (v) μόνω AH1PND : μόνον FH2(v) 
 <lb/>19 αὐτῶ Α: αὐτὸ FNPD, αὐτὸν H (ν) ὑφ᾿ ἑαυτοῦ FNDC: ὑφ᾿ αὑτοῦ AHP, καθ᾿ ἑαυτὸ DR
 <lb/>20 ὄνομα Α: ὀνόματι FNHP: ἔννοιαν κατάληπτον (sic) οὖσαν coni. Mang. τῇ om. F
-<lb/>22 δ’ F ἐνεδἱασαν F, ἐνεδύασαν N, ἐνεδοίαζον H1P ὡς] ἢ N</note> <note xml:lang="lat" type="footnote">13—19 DC fol. 44v DR fol. 55v (praecedit excerptum ex libro de mutatione nominum §15): γνήσιον πόθον ἰδὼν ὁ πατὴρ καὶ σωτὴρ — καταλαμβάνεσθαι.</note>  
-
-<pb n="v.5.p.345"/>
+<lb/>22 δ’ F ἐνεδἱασαν F, ἐνεδύασαν N, ἐνεδοίαζον H1P ὡς] ἢ N</note>
+               <note xml:lang="lat" type="footnote">13—19 DC fol. 44v DR fol. 55v (praecedit excerptum ex libro de mutatione nominum §15): γνήσιον πόθον ἰδὼν ὁ πατὴρ καὶ σωτὴρ — καταλαμβάνεσθαι.</note>
+               <pb n="v.5.p.345"/>
 εἴτε μή, οἱ δὲ καὶ ἔθει μᾶλλον ἢ λογισμῷ τὰς περὶ ὑπάρξεως θεοῦ
 κομίσαντες ἐννοίας παρὰ τῶν τρεφόντων ἔδοξαν εὐστόχως εὐσεβεῖν δεισιδαιμονίᾳ
-τὴν εὐσέβειαν χαράξαντες.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="41">
-<p>εἰ δέ τινες καὶ δι’ ἐπιστήμης ἴσχυσαν φαντασιωθῆναι τὸν ποιητὴν καὶ ἡγεμόνα τοῦ παντός, τὸ λεγόμενον
+τὴν εὐσέβειαν χαράξαντες.</p>
+         </div>
+         <div n="41" type="section">
+            <p>εἰ δέ τινες καὶ δι’ ἐπιστήμης ἴσχυσαν φαντασιωθῆναι τὸν ποιητὴν καὶ ἡγεμόνα τοῦ παντός, τὸ λεγόμενον
 <lb n="5"/> δὴ τοῦτο κάτωθεν ἄνω προῆλθον. ὥσπερ γὰρ εἰς εὔνομον πόλιν
 τόνδε τὸν κόσμον παρελθόντες καὶ θεασάμενοι γῆν μὲν ἀρετῶσαν ὀρεινὴν
 καὶ πεδιάδα, σπαρτῶν καὶ δένδρων καὶ καρπῶν ἔτι δὲ καὶ παντοίων
@@ -612,26 +622,26 @@ License</licence>
 <lb n="10"/> εὐκρασίας, καὶ τῶν ἐτησίων ὡρῶν τὰς ἐναρμονίους μεταβολάς, καὶ ἐπὶ
 πᾶσιν ἥλιον καὶ σελήνην πλάνητάς τε καὶ ἀπλανεῖς ἀστέρας καὶ τὸν
 σύμπαντα οὐρανὸν ἐν τάξεσι μετὰ τῆς οἰκείας στρατιᾶς ἡρμοσμένον,
-κόσμον ἀληθινὸν ἐν κόσμῳ περιπολοῦντα,</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="42">
-<p>θαυμάσαντες καὶ καταπλαγέντες εἰς ἔννοιαν ἦλθον ἀκόλουθον τοῖς φανεῖσιν, ὅτι ἄρα τοσαῦτα
+κόσμον ἀληθινὸν ἐν κόσμῳ περιπολοῦντα,</p>
+         </div>
+         <div n="42" type="section">
+            <p>θαυμάσαντες καὶ καταπλαγέντες εἰς ἔννοιαν ἦλθον ἀκόλουθον τοῖς φανεῖσιν, ὅτι ἄρα τοσαῦτα
 <lb n="15"/> κάλλη καὶ οὕτως ὑπερβάλλουσα τάξις οὐκ ἀπαυτοματισθέντα γέγονεν,
 ἀλλ’ ὑπό τινος δημιουργοῦ κοσμοποιοῦ, καὶ ὅτι πρόνοιαν ἀναγκαῖον
 εἶναι· νόμος γὰρ φύσεως ἐπιμελεῖσθαι τὸ πεποιηκὸς τοῦ γεγονότος.
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="43">
-<p>ἀλλ’ οὗτοί γε οἱ θεσπέσιοι καὶ τῶν ἄλλων διενηνοχότες, ὅπερ ἔφην, κάτωθεν ἄνω προῆλθον οἷα διά τινος οὐρανίου κλίμακος, ἀπὸ τῶν
+</p>
+         </div>
+         <div n="43" type="section">
+            <p>ἀλλ’ οὗτοί γε οἱ θεσπέσιοι καὶ τῶν ἄλλων διενηνοχότες, ὅπερ ἔφην, κάτωθεν ἄνω προῆλθον οἷα διά τινος οὐρανίου κλίμακος, ἀπὸ τῶν
 <lb n="20"/> ἔργων εἰκότι λογισμῷ στοχασάμενοι τὸν δημιουργόν. εἰ δέ τινες ἐδυνήθησαν
 αὐτὸν ἐξ ἑαυτοῦ καταλαβεῖν ἑτέρῳ μηδενὶ χρησάμενοι λογισμῷ
 συνεργῷ πρὸς τὴν θέαν, ἐν ὁσίοις καὶ γνησίοις θεραπευταῖς καὶ θεοφιλέσιν
-ὡς ἀληθῶς ἀναγραφέσθωσαν.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="44">
-<p>τούτων ἐστὶν ὁ Χαλδαϊστὶ μὲν προσαγορευόμενος Ἰσραήλ, Ἑλληνιστὶ δὲ ὁρῶν θεόν, οὐχ οἷός ἐστιν
+ὡς ἀληθῶς ἀναγραφέσθωσαν.</p>
+         </div>
+         <div n="44" type="section">
+            <p>τούτων ἐστὶν ὁ Χαλδαϊστὶ μὲν προσαγορευόμενος Ἰσραήλ, Ἑλληνιστὶ δὲ ὁρῶν θεόν, οὐχ οἷός ἐστιν
 <note xml:lang="mul" type="footnote">
-<lb/>1 θεοῦ ὑπάρξεως transp. FN
+                  <lb/>1 θεοῦ ὑπάρξεως transp. FN
 <lb/>2 κομίσαντες Α: νομίσαντές HP (Turn.) λαβόντες FN περὶ N
 <lb/>3 χαράξαντες AFN: ἐγχαράξαντες ΗΡ (v)
 <lb/>4 τοῦ παντός FNHP: τοῦδε τοῦ παντός Α Μang.)
@@ -650,51 +660,49 @@ License</licence>
 <lb/>19 οἷα HP: οἷον Α, ἶνα F διά FA: δή HP (Turn.) 19.20 ἀπό τῶν ἔργων FA mg Ρ2: om. HP (Turn.) 20.21 ἠδυνήθησαν codd, 
 <lb/>21 λογισμῶ FA: om. HP (Turn.)
 <lb/>22 καὶ γνησίοις oin. L (Turn.), καὶ γνησίοις— ἀληθῶς (23) om. F
-<lb/>23 ὡς om. Α</note>  
-
-<pb n="v.5.p.346"/>
+<lb/>23 ὡς om. Α</note>
+               <pb n="v.5.p.346"/>
 ὁ θεός — τοῦτο γὰρ ἀμήχανον, ὡς ἔφην —, ἀλλ’ ὅτι ἔστιν, οὐ παρ’
 ἑτέρου τινὸς μαθών, οὐχὶ τῶν κατὰ γῆν, οὐχὶ τῶν κατ’ οὐρανόν, οὐχὶ
 τῶν ὅσα στοιχεῖα ἢ συγκρίματα θνητά τε αὖ καὶ ἀθάνατα, ἀλλὰ παρ’
 αὐτοῦ μόνου μετακληθεὶς τὴν ἰδίαν ὕπαρξιν ἀναφῆναι θελήσαντος ἱκέτῃ.
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="45">
-<p>πῶς δ’ ἡ προσβολὴ γέγονεν, ἄξιον διά τινος εἰκόνος ἰδεῖν. τὸν αἰσθητὸν <lb n="5"/>
+</p>
+         </div>
+         <div n="45" type="section">
+            <p>πῶς δ’ ἡ προσβολὴ γέγονεν, ἄξιον διά τινος εἰκόνος ἰδεῖν. τὸν αἰσθητὸν <lb n="5"/>
 τοῦτον ἥλιον μὴ ἑτέρῳ τινὶ θεωροῦμεν ἢ ἡλίῳ; τὰ δὲ ἄστρα μή τισιν
 ἄλλοις ἢ ἄστροις θεωροῦμεν; καὶ συνόλως τὸ φῶς ἆρ’ οὐ φωτὶ βλέπεται;
 τὸν αὐτὸν δὴ τρόπον καὶ ὁ θεὸς ἑαυτοῦ φέγγος ὢν δι’ αὐτοῦ μόνου
 θεωρεῖται, μηδενὸς ἄλλου συνεργοῦντος ἢ δυναμένου συνεργῆσαι πρὸς
- τὴν εἱλικρινῆ κατάληψιν τῆς ὑπάρξεως αὐτοῦ.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="46">
-<p>στοχασταὶ μὲν οὖν οἱ <lb n="10"/>
+ τὴν εἱλικρινῆ κατάληψιν τῆς ὑπάρξεως αὐτοῦ.</p>
+         </div>
+         <div n="46" type="section">
+            <p>στοχασταὶ μὲν οὖν οἱ <lb n="10"/>
 ἀπὸ τῶν γεγονότων τὸν ἀγένητον καὶ γεννητὴν τῶν ὅλων σπεύδοντες
 θεωρεῖν, ὅμοιόν τι δρῶντες τοῖς ἀπὸ δυάδος μονάδος φύσιν ἐρευνῶσι,
 δέον ἔμπαλιν ἀπὸ μονάδος — ἀρχὴ γὰρ αὕτη — δυάδα σκοπεῖν· ἀλήθειαν
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="47">
-<p> δὲ μετίασιν οἱ τὸν θεὸν θεῷ φαντασιωθέντες, φωτὶ φῶς. <milestone unit="altref" n="8"/> τὸ
+</p>
+         </div>
+         <div n="47" type="section">
+            <p> δὲ μετίασιν οἱ τὸν θεὸν θεῷ φαντασιωθέντες, φωτὶ φῶς. <milestone unit="altref" n="8"/> τὸ
 μὲν οὖν μέγιστον ἆθλον εἴρηται. πρὸς δὲ τούτοις λαμβάνει βραβεῖον ὁ <lb n="15"/>
 ἀσκητὴς λεχθῆναι μὲν οὐκ εὔφημον, νοηθῆναι δὲ ἄριστον· ὀνομάζεται
 δὲ τὸ βραβεῖον πλάτους νάρκη (Genes. 32,25) συμβολικῶς· ἀλαζονεία
 μὲν γὰρ καὶ ὑπεροψία <milestone unit="altpage1" n="p. 416 Μ."/>  διὰ τοῦ πλάτους ἐμφαίνεται, χεομένης τῆς ψυχῆς
 ἄμετρον ἐφ’ ἃ μὴ δεῖ χύσιν, διὰ δὲ τῆς νάρκης μετεώρου καὶ πεφυσημένου
- πράγματος, οἰήσεως, συστολή.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="48">
-<p>σύμφορον δὲ οὐδὲν οὕτως ὡς τὸ <lb n="20"/>
+ πράγματος, οἰήσεως, συστολή.</p>
+         </div>
+         <div n="48" type="section">
+            <p>σύμφορον δὲ οὐδὲν οὕτως ὡς τὸ <lb n="20"/>
 κεχαλασμένον καὶ ἀνειμένον τῶν ὁρμῶν ἀνακοπῆναί τε καὶ ναρκῆσαι
 παρεθὲν τοὺς πνευματικοὺς τόνους, ἵν’ ἡ τῶν παθῶν ἄμετρος ἰσχὺς
 ἐξασθενήσασα πλάτος ἐμπαράσχῃ ψυχῆς τῷ βελτίονι μέρει.</p>
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="49">
- <p>Προσεξεταστέον δὲ ὅτι καὶ οἰκειότατον ἑκάστῳ τῶν τριῶν ἀπενεμήθη
+         </div>
+         <div n="49" type="section">
+            <p>Προσεξεταστέον δὲ ὅτι καὶ οἰκειότατον ἑκάστῳ τῶν τριῶν ἀπενεμήθη
 τὸ ἆθλον. τῷ μὲν γὰρ ἐκ διδασκαλίας τελειωθέντι πίστις, ἐπειδὴ <lb n="25"/>
-<note xml:lang="mul" type="footnote">
-<lb/>1 οὐ om. Α παρ’] ὑπὸ Α
+               <note xml:lang="mul" type="footnote">
+                  <lb/>1 οὐ om. Α παρ’] ὑπὸ Α
 <lb/>2 οὐχὶ τῶν κατ’ οὐρανόν om. F 
 <lb/>3 ἢ συγγράμματα (sic) Α
 <lb/>4 μόνου AHP: μόνον F (v) μετακληθεὶς FA: καταβληθεὶς ΗΡ (v) ; καταληφθεὶς vel κατηχηθεὶς coni. Mang. οἰκέτῃ HP (οὐκέτι Turn.)
@@ -711,41 +719,40 @@ License</licence>
 <lb/>20 συ στολή (συ ss. F2) σύμφορον] συμφέρον coni. Mang. δ’ F
 <lb/>22 παρεθέν FHP: παρεθέντα Α (παραθὲν Turn.)
 <lb/>23 ἀσθενήσασα Α
-<lb/>24 προσεξεταστέον] προσθετέον coni. Mang. δ’ F</note>  
-
-<pb n="v.5.p.347"/>
+<lb/>24 προσεξεταστέον] προσθετέον coni. Mang. δ’ F</note>
+               <pb n="v.5.p.347"/>
 τὸν μανθάνοντα πιστεῦσαι δεῖ τῷ διδάσκοντι περὶ ὧν ὑφηγεῖται· δύσκολον
-γάρ, μᾶλλον δ’ ἀδύνατον ἀπιστοῦντα παιδεύεσθαι.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="50">
-<p>τῷ δὲ κατ’ εὐμοιρίαν φύσεως ἐπ’ ἀρετὴν φθάσαντι χαρά· χαρτὸν γὰρ ἡ εὐφυΐα καὶ τὰ φύσεως
+γάρ, μᾶλλον δ’ ἀδύνατον ἀπιστοῦντα παιδεύεσθαι.</p>
+         </div>
+         <div n="50" type="section">
+            <p>τῷ δὲ κατ’ εὐμοιρίαν φύσεως ἐπ’ ἀρετὴν φθάσαντι χαρά· χαρτὸν γὰρ ἡ εὐφυΐα καὶ τὰ φύσεως
 δῶρα. τῆς διανοίας εὐθιξίαις καὶ εὐσκόποις ἐπιβολαῖς προσγανουμένης,
 <lb n="5"/> ἐν αἷς ἀπόνως εὑρίσκει τὰ ζητούμενα, καθάπερ ὑποβολέως ἔνδοθεν
-ὑπηχοῦντος· ἡ γὰρ σύντομος τῶν ἀπορουμένων εὕρεσις χαρτόν.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="51">
-<p>τῷ δὲ δι’ ἀσκήσεως περιποιησαμένῳ φρόνησιν ὅρασις· μετὰ γὰρ τὸν ἐν νεότητι
+ὑπηχοῦντος· ἡ γὰρ σύντομος τῶν ἀπορουμένων εὕρεσις χαρτόν.</p>
+         </div>
+         <div n="51" type="section">
+            <p>τῷ δὲ δι’ ἀσκήσεως περιποιησαμένῳ φρόνησιν ὅρασις· μετὰ γὰρ τὸν ἐν νεότητι
 πρακτικὸν  βίον ὁ ἐν γήρᾳ θεωρητικὸς βίος ἄριστος καὶ ἱερώτατος, ὃν
 οἷα κυβερνήτην παραπέμψας ἐπὶ πρύμναν ὁ θεὸς ἐνεχείρισε τοὺς οἴακας
 <lb n="10"/> ὡς ἱκανῷ πηδαλιουχεῖν τὰ ἐπίγεια· χωρὶς γὰρ θεωρίας ἐπιστημονικῆς
 οὐδὲν τῶν πραττομένων καλόν.</p>
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="52">
-<p><milestone unit="altref" n="9"/> Ἑνὸς ἔτι μνησθεὶς ἀνδρός, στοχαζόμενος τοῦ μὴ μακρηγορεῖν, ἐπὶ τὰ ἀκόλουθα τῶν λόγων τρέψομαι. ὁ δ’ ἀνὴρ οὗτος τοὺς ἱεροὺς
+         </div>
+         <div n="52" type="section">
+            <p>
+               <milestone unit="altref" n="9"/> Ἑνὸς ἔτι μνησθεὶς ἀνδρός, στοχαζόμενος τοῦ μὴ μακρηγορεῖν, ἐπὶ τὰ ἀκόλουθα τῶν λόγων τρέψομαι. ὁ δ’ ἀνὴρ οὗτος τοὺς ἱεροὺς
 ἀγῶνας ἑξῆς στεφανωθεὶς ἐκηρύχθη· λέγω δὲ ἱεροὺς οὐ τοὺς παρὰ
 <lb n="15"/> πολλοῖς νομιζομένους — ἀνίεροι γὰρ οὗτοί γε βίαις καὶ ὕβρεσι καὶ
 ἀδικίαις ἀντὶ τῶν ἀνωτάτω τιμωριῶν γέρα καὶ τιμὰς προτείνοντες —,
 ἀλλ’ οὓς ἡ ψυχὴ πέφυκε διαθλεῖν, φρονήσει μὲν ἠλιθιότητα καὶ πανουργίαν
 ἐλαύνουσα, σωφροσύνῃ δὲ ἀσωτίαν καὶ φειδωλίαν, ἀνδρείᾳ δὲ
 θρασύτητα καὶ δειλίαν, καὶ ταῖς ἄλλαις ἀρεταῖς τὰς ἀντιθέτους κακίας,
-<lb n="20"/> αἳ μήθ’ ἑαυταῖς μήτε ἄλλαις συμφέρουσιν.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="53">
-<p>πᾶσαι μὲν οὖν αἱ ἀρεταὶ παρθένοι, καλλιστεύει δὲ ὡς ἐν χορῷ παραλαβοῦσα τὴν ἡγεμονίαν ἡ
+<lb n="20"/> αἳ μήθ’ ἑαυταῖς μήτε ἄλλαις συμφέρουσιν.</p>
+         </div>
+         <div n="53" type="section">
+            <p>πᾶσαι μὲν οὖν αἱ ἀρεταὶ παρθένοι, καλλιστεύει δὲ ὡς ἐν χορῷ παραλαβοῦσα τὴν ἡγεμονίαν ἡ
 εὐσέβεια, ἣν ἐκληρώσατο διαφερόντως ὁ θεολόγος Μωυσῆς, δι’ ἣν μετὰ
 <note xml:lang="mul" type="footnote">
-<lb/>2 γάρ] μὲν γὰρ A παιδεύεσθαι FAP: παιδευθῆναι Η (v)
+                  <lb/>2 γάρ] μὲν γὰρ A παιδεύεσθαι FAP: παιδευθῆναι Η (v)
 <lb/>4 εὐθιξίαις F: εὐθηξίαις HP, ἐν εὐεξίαις Α καὶ κόποις (sic) καὶ ἐπιβουλαῖς Α προγανουμένης conicio
 <lb/>5 αἷς] οἷς codd. (v) εὑρίσκει] ἂν εὑρίσκῃ Α
 <lb/>6 χαρτόν] χαρτή Α
@@ -761,49 +768,50 @@ License</licence>
 <lb/>19 ἀντιθέους (sic) Α
 <lb/>20 μήθ’ FA: μήτε HP μήτε FHP: μήτ’ Α συμφέρουσιν scripsi: συμφέρονται codd. (v) αἱ om. Α
 <lb/>21 δ’ F 21.22 ἡ εὐσέβεια Α: ἡ δικαιοσύνη F, ἡ εὐσέβεια καὶ δικαιοσύνη HP (v)
-<lb/>22 μωσῆς codd. δι’ ἣν FAH1P: διὸ Η2 (v)</note> <note xml:lang="mul" type="footnote">7—11 DR fol. 131r τοῦ αὐτοῦ ἐκ τοῦ περὶ ἄθλων καὶ ἐπιτιμίων Anton. Mel. II 17 Col. 1056 Φίλωνος: μετὰ τόν ἐν νεότητι πρακτικὸν βίον—οὐδὲν τῶν πραττομένων καλόν.</note> <note xml:lang="mul" type="footnote">10.11 DP fol. 97v Φίλωνος: χωρὶς θεωρίας ἐπιστημονικῆς οὐδὲν τῶν πραττομένων καλόν·</note>  
-
-<pb n="v.5.p.348"/>
+<lb/>22 μωσῆς codd. δι’ ἣν FAH1P: διὸ Η2 (v)</note>
+               <note xml:lang="mul" type="footnote">7—11 DR fol. 131r τοῦ αὐτοῦ ἐκ τοῦ περὶ ἄθλων καὶ ἐπιτιμίων Anton. Mel. II 17 Col. 1056 Φίλωνος: μετὰ τόν ἐν νεότητι πρακτικὸν βίον—οὐδὲν τῶν πραττομένων καλόν.</note>
+               <note xml:lang="mul" type="footnote">10.11 DP fol. 97v Φίλωνος: χωρὶς θεωρίας ἐπιστημονικῆς οὐδὲν τῶν πραττομένων καλόν·</note>
+               <pb n="v.5.p.348"/>
 μυρίων ἄλλων, ἅπερ ἐν τοῖς γραφεῖσι περὶ τοῦ κατ’ αὐτὸν βίου μεμήνυται,
 τεττάρων ἄθλων ἐξαιρέτων τυγχάνει, [τυχὼν] βασιλείας, νομοθεσίας,
- προφητείας, ἀρχιερωσύνης.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="54">
-<p>βασιλεύς τε γὰρ γέγονεν, οὐκ ἔθει
+ προφητείας, ἀρχιερωσύνης.</p>
+         </div>
+         <div n="54" type="section">
+            <p>βασιλεύς τε γὰρ γέγονεν, οὐκ ἔθει
 τῷ καθεστῶτι μετὰ <milestone unit="altpage1" n="p. 417 M."/>  στρατιᾶς τε καὶ ὅπλων ναυτικῆς τε καὶ πεζικῆς
 καὶ ἱππικῆς δυνάμεως, ἀλλ’ ὑπὸ θεοῦ χειροτονηθεὶς ἑκουσίῳ γνώμῃ τῶν <lb n="5"/>
 ἀρχομένων, ὃς τοῖς ὑπηκόοις ἐνειργάσατο τὴν ἑκούσιον αἵρεσιν. ἄναυδος
 γὰρ καὶ ἀκτήμων καὶ ἀχρήματος μόνος οὗτος βασιλεὺς ἡμῖν ἀνεγράφη,
 πρὸ τοῦ τυφλοῦ τὸν βλέποντα πλοῦτον ἀσπασάμενος καί, εἰ δεῖ μηδὲν
- ὑποστειλάμενον εἰπεῖν, τὸν θεοῦ κλῆρον ἰδίαν οὐσίαν ὑπολαμβάνων.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="55">
-<p>ὁ δ’
+ ὑποστειλάμενον εἰπεῖν, τὸν θεοῦ κλῆρον ἰδίαν οὐσίαν ὑπολαμβάνων.</p>
+         </div>
+         <div n="55" type="section">
+            <p>ὁ δ’
 αὐτὸς γίνεται καὶ νομοθέτης· δεῖ γὰρ τὸν βασιλέα προστάττειν καὶ <lb n="10"/>
 ἀπαγορεύειν· νόμος δὲ οὐδέν ἐστιν ἕτερον ἢ λόγος προστάττων ἃ χρὴ
 καὶ ἀπαγορεύων ἃ μὴ χρή. ἐπεὶ δ’ ἄδηλον τὸ ἐν ἑκατέρῳ συμφέρον —
 ἀγνοίᾳ γὰρ πολλάκις κελεύομεν ἃ μὴ δεῖ καὶ ἀπαγορεύομεν ἃ δεῖ πράττειν
 —, οἰκεῖον ἦν τρίτον λαβεῖν, προφητείαν, εἰς τὸ ἄπταιστον· ἑρμηνεὺς
 γάρ ἐστιν ὁ προφήτης ἔνδοθεν ὑπηχοῦντος τὰ λεκτέα τοῦ θεοῦ, <lb n="15"/>
- παρὰ θεῷ δ’ οὐδὲν ὑπαίτιον.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="56">
-<p>τέταρτον δ’ ἀρχιερωσύνην, δι’ ἧς προφητεύων
+ παρὰ θεῷ δ’ οὐδὲν ὑπαίτιον.</p>
+         </div>
+         <div n="56" type="section">
+            <p>τέταρτον δ’ ἀρχιερωσύνην, δι’ ἧς προφητεύων
  ἐπιστημονικῶς θεραπεύσει τὸ ὂν καὶ τὰς ὑπὲρ τῶν ὑπηκόων
 κατορθούντων μὲν εὐχαριστίας, εἰ δὲ διαμαρτάνοιεν, εὐχὰς καὶ ἱκεσίας
 ἱλασκόμενος ποιήσεται. ταῦτα μιᾶς ὄντα ἰδέας ἀλληλουχεῖν ὀφείλει τοῖς
 ἁρμονίας δεσμοῖς ἑνωθέντα καὶ περὶ τὸν αὐτὸν ἐξετάζεσθαι, ὡς ὅ <lb n="20"/>
 γέ τινος τῶν τεττάρων ὑστερίζων ἀτελὴς εἰς ἡγεμονίαν, χωλὴν ἀνημμένος
 κοινῶν πραγμάτων ἐπιμέλειαν.</p>
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="57">
- <p><milestone unit="altref" n="10"/> Ἅλις μὲν δὴ τῶν καθ’ ἕκαστον ἄνδρα τιθεμένων ἄθλων·
+         </div>
+         <div n="57" type="section">
+            <p>
+               <milestone unit="altref" n="10"/> Ἅλις μὲν δὴ τῶν καθ’ ἕκαστον ἄνδρα τιθεμένων ἄθλων·
 τίθεται δὲ καὶ ὅλοις οἴκοις καὶ πολυανθρώποις συγγενείαις. αὐτίκα τοῦ
 ἔθνους εἰς δώδεκα φυλὰς διανεμηθέντος ἰσάριθμοι ταῖς φυλαῖς εἰσιν <lb n="25"/>
 ἡγεμόνες, οὐ μόνον μιᾶς οἰκίας ἢ συγγενείας, ἀλλὰ καὶ γνησιωτέρας
 <note xml:lang="mul" type="footnote">
-<lb/>1 κατὰ FH1P αὐτὸν βίου] τὸν βίον F 1.2 μεμήνυται om. A 
+                  <lb/>1 κατὰ FH1P αὐτὸν βίου] τὸν βίον F 1.2 μεμήνυται om. A 
 <lb/>2 τεττάρων δ’ H1P τυγχάνει om. FA τυχὼν seclusi (cf. Mang.) 
 <lb/>4 pr. τε om. F G τὴν ἑκούσιον αἵρεσιν Α: τὴν εἰς τὸ ἑκούσιον αἵρεσιν FHP (v): σπουδὴν εἰς τὴν ἑκούσιον αἵρεσιν coni. Mang. ἄναυδος HP: ἄναυλος FA 
 <lb/>7 καὶ ἀκτήμων F: καὶ ἀνούσιος καὶ ἀκτήμων AP, καὶ ἀνακούσιος καὶ ἀκτήμων H; ἀνάκουστος (pro ἀνακούσιος) coni. Cotelier βασιλέων F
@@ -819,45 +827,45 @@ License</licence>
 <lb/>17 θεραπεύει Α ὑπὲρ F: om. ΑΗΡ (v) 
 <lb/>20 τοῖς codd.: τῆς v
 <lb/>21 γε om. Tnrn. ἀνειμένος Α
-<lb/>25 ἔθνους om. Α post ἰσάριθμοι add. γάρ Α εἰσιν] ἤσαν coni. Mang.</note>  
-
-<pb n="v.5.p.349"/>
+<lb/>25 ἔθνους om. Α post ἰσάριθμοι add. γάρ Α εἰσιν] ἤσαν coni. Mang.</note>
+               <pb n="v.5.p.349"/>
 οἰκειότητος· ἀδελφοὶ γὰρ ὁμοπάτριοι πάντες· ὁ δὲ τούτων πάππος καὶ
-πρόπαππος σὺν τῷ πατρὶ γεγόνασιν ἀρχηγέται τοῦ ἔθνους.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="58">
-<p>ὁ μὲν οὖν πρῶτος πρὸς ἀλήθειαν ἐκ τύφου μεταθέμενος καὶ τῆς ἐν τοῖς μαθήμασι
+πρόπαππος σὺν τῷ πατρὶ γεγόνασιν ἀρχηγέται τοῦ ἔθνους.</p>
+         </div>
+         <div n="58" type="section">
+            <p>ὁ μὲν οὖν πρῶτος πρὸς ἀλήθειαν ἐκ τύφου μεταθέμενος καὶ τῆς ἐν τοῖς μαθήμασι
 Χαλδαϊκῆς τερθρείας ὑπεριδὼν ἕνεκα τελειοτέρας ὄψεως, ἣν θεασάμενος
 <lb n="5"/> ἑλχθεὶς ἠκολούθησε τῇ φαντασίᾳ, καθάπερ τὸν σίδηρόν φασιν
 ὑπὸ λίθου τῆς μαγνήτιδος ἕλκεσθαι, ἀντὶ σοφιστοῦ γενόμενος ἐκ διδασκαλίας
 σοφός, πολλοὺς μὲν ἔσχε παῖδας, ἅπαντας δὲ πλὴν ἑνὸς ὑπαιτίους,
 ὃς τὰ πείσματα τοῦ γένους ἐκδησάμενος ἀσφαλῶς ἐνωρμίσατο.
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="59">
-<p>τῷ δ’ υἱῷ πάλιν αὐτομαθῆ καὶ αὐτοδίδακτον κτησαμένῳ φύσιν δύο <lb n="10"/> συνέβη παῖδας γενέσθαι, τὸν μὲν ἄγριον καὶ ἀτίθασον, θυμοῦ γέμοντα
+</p>
+         </div>
+         <div n="59" type="section">
+            <p>τῷ δ’ υἱῷ πάλιν αὐτομαθῆ καὶ αὐτοδίδακτον κτησαμένῳ φύσιν δύο <lb n="10"/> συνέβη παῖδας γενέσθαι, τὸν μὲν ἄγριον καὶ ἀτίθασον, θυμοῦ γέμοντα
 καὶ ἐπιθυμίας καὶ συνόλως τὸ τῆς ψυχῆς ἄλογον μέρος ἐπιτετειχικότα
  τῷ λογικῷ, τὸν δ’ ἥμερον καὶ φιλάνθρωπον, καλοκἀγαθίας  <milestone unit="altpage2" n="p. 418 Μ."/> ἐραστὴν
 ἰσότητός τε καὶ ἀτυφίας, ἐν βελτίονι τεταγμένον τάξει, λογισμοῦ προαγωνιστήν,
-ἀφροσύνης ἀντίπαλον·</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="60">
-<p>οὗτός ἐστιν ὁ τρίτος τῶν ἀρχηγετῶν, <lb n="15"/> ὁ πολύπαις τε καὶ μόνος εὔτεκνος, ἀσινὴς ἐν ἅπασι τοῖς μέρεσι τῆς
+ἀφροσύνης ἀντίπαλον·</p>
+         </div>
+         <div n="60" type="section">
+            <p>οὗτός ἐστιν ὁ τρίτος τῶν ἀρχηγετῶν, <lb n="15"/> ὁ πολύπαις τε καὶ μόνος εὔτεκνος, ἀσινὴς ἐν ἅπασι τοῖς μέρεσι τῆς
 οἰκίας, οἷά τις γεωργὸς εὐδαίμων ἅπασαν τὴν σπορὰν ἐπιδὼν σῶον ἥμερόν
-τε καὶ καρποφόρον. </p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="61">
-<p><milestone unit="altref" n="11"/> ἔχει δ’ ἕκαστος τῶν τριῶν τὴν ῥητὴν διήγησιν σύμβολον διανοίας ἀφανοῦς, ἣν ἐπισκεπτέον. αὐτίκα παντὶ τῷ
+τε καὶ καρποφόρον. </p>
+         </div>
+         <div n="61" type="section">
+            <p>
+               <milestone unit="altref" n="11"/> ἔχει δ’ ἕκαστος τῶν τριῶν τὴν ῥητὴν διήγησιν σύμβολον διανοίας ἀφανοῦς, ἣν ἐπισκεπτέον. αὐτίκα παντὶ τῷ
 διδασκομένῳ συμβαίνει μετιόντι πρὸς ἐπιστήμην ἀπολιπεῖν ἀμαθίαν·
 <lb n="20"/> ἀμαθία δὲ πολύχουν. διὰ τοῦτο ὁ πρῶτος λέγεται πολύπαις μέν,
 οὐδένα δὲ τῶν ἄλλων ἀξιώσας υἱὸν αὑτοῦ χρηματίζειν πλὴν ἑνός·
 τρόπον γάρ τινα καὶ ὁ μανθάνων ἀποκηρύττει τὰ τῆς ἀμαθίας ἔκγονα
-καὶ ὡς ἐχθρὰ καὶ δυσμενῆ παραιτεῖται.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="62">
-<p>φύσει γε μὴν πάντες οἱ ἄνθρωποι, πρὶν τελειωθῆναι τὸν ἐν αὑτοῖς λόγον, κείμεθα ἐν μεθορίῳ
+καὶ ὡς ἐχθρὰ καὶ δυσμενῆ παραιτεῖται.</p>
+         </div>
+         <div n="62" type="section">
+            <p>φύσει γε μὴν πάντες οἱ ἄνθρωποι, πρὶν τελειωθῆναι τὸν ἐν αὑτοῖς λόγον, κείμεθα ἐν μεθορίῳ
 <note xml:lang="mul" type="footnote">
-<lb/>2 σὺν τῷ πατρὶ om. F
+                  <lb/>2 σὺν τῷ πατρὶ om. F
 <lb/>3 πρὸς] εἰς F μετατιθέμενος Α
 <lb/>5 ἑλχθεὶς scripsi: θελχθεὶς codd. (v)
 <lb/>6 μαγνίτιδος F
@@ -876,46 +884,46 @@ License</licence>
 <lb/>20 διὰ τοῦθ’ F
 <lb/>21 δὲ FH2: καὶ Η1Ρ, om. Α υἱὸν Α: υἱῶν FHP (Turn.) αὐτοῦ codd. (v) πλὴν ἑνὸς χρηματίζειν transp. F
 <lb/>23 γε μὴν] μὲν οὖν F οἱ om. HP πάντες οἱ ora. Turn.)
-<lb/>24 αὐτοῖς codd.</note> <note xml:lang="mul" type="footnote">7—17 N fol. 160r: ἀδελφοὶ—καρποφόρον.</note>  
-
-<pb n="v.5.p.350"/>
+<lb/>24 αὐτοῖς codd.</note>
+               <note xml:lang="mul" type="footnote">7—17 N fol. 160r: ἀδελφοὶ—καρποφόρον.</note>
+               <pb n="v.5.p.350"/>
 κακίας καὶ ἀρετῆς πρὸς μηδέτερά πω ταλαντεύοντες· ἐπειδὰν δὲ πτερυξάμενος
 ὁ νοῦς ὅλῃ τῇ ψυχῇ διὰ πάντων αὐτῆς τῶν μερῶν φαντασιωθῇ
 τὸ ἀγαθόν, ἄφετος πρὸς αὐτὸ καὶ πτηνὸς ὁρμᾷ τὸ συγγεγεννημένον
 ἀδελφὸν κακὸν ὀπίσω καταλιπών, ὃ καὶ ἀποφεύγει τὴν ἐναντίαν ὁδὸν
- ἀμεταστρεπτί.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="63">
-<p>τοῦτ’ ἐστὶν ὃ αἰνίττεται φάσκων υἱοὺς δύο γεγενῆσθαι <lb n="5"/>
+ ἀμεταστρεπτί.</p>
+         </div>
+         <div n="63" type="section">
+            <p>τοῦτ’ ἐστὶν ὃ αἰνίττεται φάσκων υἱοὺς δύο γεγενῆσθαι <lb n="5"/>
 διδύμους τῷ φύσεως εὐμοίρου λαχόντι· παντὸς γὰρ ἀνθρώπου κατ’
 ἀρχὰς ἅμα τῇ γενέσει κυοφορεῖ δίδυμα ἡ ψυχή, κακόν, ὡς ἔφην, καὶ
 ἀγαθόν, ἑκάτερον φαντασιουμένη· μακαρίας δὲ καὶ εὐδαίμονος ὅταν
 τύχῃ μερίδος, ὁλκῇ μιᾷ ῥέπει πρὸς τὸ ἀγαθόν, μήτ’ ἐπὶ θάτερά ποτε
- ταλαντεύσασα μήτ’ ἐπαμφοτερίσασα πρὸς τὸ ἰσόρροπον.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="64">
-<p>ἡ δ’ ἀγαθῆς μὲν <lb n="10"/>
+ ταλαντεύσασα μήτ’ ἐπαμφοτερίσασα πρὸς τὸ ἰσόρροπον.</p>
+         </div>
+         <div n="64" type="section">
+            <p>ἡ δ’ ἀγαθῆς μὲν <lb n="10"/>
 φύσεως ἀγαθῆς δὲ καὶ παιδεύσεως ἐπιλαχοῦσα κἀκ τρίτου συνασκηθεῖσα
 τοῖς τῆς ἀρετῆς θεωρήμασιν, ὡς μηδὲν αὐτῶν ἐξ ἐπιπολῆς πλαδᾶν, ἔγκολλα
 δ’ εἶναι καὶ ἐντετυπωμένα τὰ πάντα καθάπερ νεύροις τισὶν ἑνωθέντα, κτᾶται
 μὲν ὑγείαν, κτᾶται δὲ δύναμιν, οἷς εὔχροια μὲν ἐξ αἰδοῦς, εὐεξία δὲ καὶ
- κάλλος ἐπιγίνεται.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="65">
-<p>γενομένη δὲ πλήρωμα ἀρετῶν ἥδε ἡ ψυχὴ διὰ τριῶν <lb n="15"/>
+ κάλλος ἐπιγίνεται.</p>
+         </div>
+         <div n="65" type="section">
+            <p>γενομένη δὲ πλήρωμα ἀρετῶν ἥδε ἡ ψυχὴ διὰ τριῶν <lb n="15"/>
 τῶν ἀρίστων, φύσεως καὶ μαθήσεως καὶ ἀσκήσεως, οὐδὲν ἐν ἑαυτῇ
 καταλιποῦσα κενὸν εἰς πάροδον ἄλλων, γεννᾷ τέλειον ἀριθμόν, διττὰς
 υἱῶν ἑξάδας, ἀπεικόνισμα καὶ μίμημα τοῦ ζῳδιακοῦ κύκλου, πρὸς τὴν
 τῶν ἐνταῦθα βελτίωσιν. οὗτός ἐστιν ὁ ἀσινὴς οἶκος, ὁ τέλειος καὶ
 συνεχὴς ἐν ταῖς ῥηταῖς γραφαῖς καὶ ἐν ταῖς καθ’ ὑπόνοιαν ἀλληγορίαις, <lb n="20"/>
 ὃς ἔλαβεν ἆθλον, καθάπερ εἶπον, ἡγεμονίαν τῶν τοῦ ἔθνους <milestone unit="altpage1" n="p. 419 Μ."/>  φυλῶν.
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="66">
-<p>ἐκ τοῦδε τοῦ οἴκου χρόνοις εἰς πολυανθρωπίαν ἐπιδόντος εὔνομοι
+</p>
+         </div>
+         <div n="66" type="section">
+            <p>ἐκ τοῦδε τοῦ οἴκου χρόνοις εἰς πολυανθρωπίαν ἐπιδόντος εὔνομοι
 πόλεις ἐκτίσθησαν, διδασκαλεῖα φρονήσεως καὶ δικαιοσύνης καὶ ὁσιότητος,
 <note xml:lang="mul" type="footnote">
-<lb/>1 ἕτερα F πως Α
+                  <lb/>1 ἕτερα F πως Α
 <lb/>3 πρὸς αὐτὸν A συγγεγεννημένον P: συγγεγενημένον FAH (v)
 <lb/>5 τοῦτ’ ἔσθ’ F
 <lb/>7 ὡς] ὃ Α
@@ -931,40 +939,40 @@ License</licence>
 <lb/>20 καὶ συνεχὴς HP: ὁ συνεχῶς F, κύκλος καὶ (sic) Α; καὶ καλὸς coni. Mang.
 <lb/>21 ὃς] ἧς Α ἡγεμονίαν AHP: ἡγεμονίας F (v) 
 <lb/>22 ἐκ τοῦδε F: ἐκ τοῦδε οὑν AHP (v) ἐπιδόντος F: ἐπιδιδόντος AHP (v) 
-<lb/>23 post ἐκτίσθησαν add. καὶ HP (v) διδασκαλεῖα Mang.: διδασκαλία HP1, διδασκαλίαι AP2, διδασκαλίας F</note> <note xml:lang="mul" type="footnote">6—8 DP fol. 376v Φίλωνος: παντὸς ἀνθρώπου κατ’ ἀρχὰς ἄμα τῇ γενέσει κυοφορεῖ ἡ ψυχή, κακὸν καὶ ἀγαθόν, ἑκάτερον φαντασιούμενον.</note>  
-
-<pb n="v.5.p.351"/>
+<lb/>23 post ἐκτίσθησαν add. καὶ HP (v) διδασκαλεῖα Mang.: διδασκαλία HP1, διδασκαλίαι AP2, διδασκαλίας F</note>
+               <note xml:lang="mul" type="footnote">6—8 DP fol. 376v Φίλωνος: παντὸς ἀνθρώπου κατ’ ἀρχὰς ἄμα τῇ γενέσει κυοφορεῖ ἡ ψυχή, κακὸν καὶ ἀγαθόν, ἑκάτερον φαντασιούμενον.</note>
+               <pb n="v.5.p.351"/>
 ἐν οἷς καὶ ἡ τῆς ἄλλης ἀρετῆς μεταποίησις μεγαλοπρεπῶς
 διερευνᾶται.</p>
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="67">
-<p><milestone unit="altref" n="12"/> Τὰ μὲν οὖν ἀπονεμηθέντα πάλαι τοῖς ἀγαθοῖς ἆθλα κοινῇ τε καὶ ἰδίᾳ λέλεκται τυπωδέστερον, ἀφ’ ὧν καὶ τὰ παραλειφθέντα
+         </div>
+         <div n="67" type="section">
+            <p>
+               <milestone unit="altref" n="12"/> Τὰ μὲν οὖν ἀπονεμηθέντα πάλαι τοῖς ἀγαθοῖς ἆθλα κοινῇ τε καὶ ἰδίᾳ λέλεκται τυπωδέστερον, ἀφ’ ὧν καὶ τὰ παραλειφθέντα
 <lb n="5"/> δύναιτ’ ἄν τις εὐμαρέστατα συνορᾶν. ἑξῆς δὲ τὰς προτεθείσας τοῖς
 πονηροῖς κολάσεις [ἐν μέρει] πάλιν ἐπισκεπτέον γενικώτερον, ἐπεὶ τὰς
-κατὰ μέρος ἀναγράφειν οὐ καιρός.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="68">
-<p>ἐγένετό τις κατ’ ἀρχὰς εὐθύς, ὅτ’ οὔπω τὸ τῶν ἀνθρώπων γένος ἐπλήθυνεν, ἀδελφοκτόνος. οὗτός ἐστιν
+κατὰ μέρος ἀναγράφειν οὐ καιρός.</p>
+         </div>
+         <div n="68" type="section">
+            <p>ἐγένετό τις κατ’ ἀρχὰς εὐθύς, ὅτ’ οὔπω τὸ τῶν ἀνθρώπων γένος ἐπλήθυνεν, ἀδελφοκτόνος. οὗτός ἐστιν
 ὁ πρῶτος ἐναγής, ὁ πρῶτος καθαρευούσῃ τῇ γῇ μίασμα προσβαλὼν
 <lb n="10"/> ἄηθες ἀνθρωπείου αἵματος, ὁ πρῶτος ἀνιεῖσαν καὶ βλαστάνουσαν γένη
 ζῴων καὶ φυτῶν καὶ οἷς εὐτοκεῖ πᾶσι τεθηλυῖαν τῆς εὐτοκίας ἐπισχών,
 ὁ πρῶτος φθορὰν γενέσει καὶ θάνατον ζωῇ καὶ πένθος χαρᾷ καὶ κακὰ
-ἀγαθοῖς ἐπιτειχίσας.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="69">
-<p>τί ἂν οὖν παθὼν ἀξίαν ἐδεδώκει δίκην, ὃς διὰ μιᾶς πράξεως οὐδὲν τῶν βιαίων καὶ ἀσεβῶν παρέλιπεν; ἴσως ἂν εἴποι
+ἀγαθοῖς ἐπιτειχίσας.</p>
+         </div>
+         <div n="69" type="section">
+            <p>τί ἂν οὖν παθὼν ἀξίαν ἐδεδώκει δίκην, ὃς διὰ μιᾶς πράξεως οὐδὲν τῶν βιαίων καὶ ἀσεβῶν παρέλιπεν; ἴσως ἂν εἴποι
 <lb n="15"/> τις· ἀναιρεθείς. ὁ λογισμὸς οὗτος ἀνθρώπου τὸ μέγα δικαστήριον οὐ
 βλέποντος· ἄνθρωποι μὲν γὰρ πέρας τιμωριῶν εἶναι νομίζουσι τὸν
-θάνατον, ἐν δὲ τῷ θείῳ δικαστηρίῳ μόλις οὗτός ἐστιν ἀρχή.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="70">
-<p>ἐπεὶ τοίνυν καινὸν τὸ ἔργον, ἔδει καὶ τὴν ἐπ’ αὐτῷ τιμωρίαν καινὴν εὑρεθῆναι.
+θάνατον, ἐν δὲ τῷ θείῳ δικαστηρίῳ μόλις οὗτός ἐστιν ἀρχή.</p>
+         </div>
+         <div n="70" type="section">
+            <p>ἐπεὶ τοίνυν καινὸν τὸ ἔργον, ἔδει καὶ τὴν ἐπ’ αὐτῷ τιμωρίαν καινὴν εὑρεθῆναι.
 τίς οὖν ἐστιν αὕτη; ζῆν ἀποθνῄσκοντα ἀεὶ καὶ τρόπον τινὰ
 <lb n="20"/> θάνατον ἀθάνατον ὑπομένειν καὶ ἀτελεύτητον. θανάτου γὰρ διττὸν εἶδος·
 τὸ μὲν κατὰ τὸ τεθνάναι, ὅπερ ἀγαθόν ἐστιν <add>ἢ</add> ἀδιάφορον, τὸ δὲ κατὰ
 <note xml:lang="mul" type="footnote">
-<lb/>1 ἐν οἷς καὶ om. HP (έν οἷς om. Turn.) ἦς (sic) F ἠ FA: om. HP μεταποίησις FHP: πόνησις Α
+                  <lb/>1 ἐν οἷς καὶ om. HP (έν οἷς om. Turn.) ἦς (sic) F ἠ FA: om. HP μεταποίησις FHP: πόνησις Α
 <lb/>5 εὐμαρέστατα scripsi: εὐμαρέστερον codd. (v) 
 <lb/>6 ἐν μέρει seclusi τὰς] πάσας conicio
 <lb/>8 τὸ om. Turn. τῶν ἀνθρώπων] ἀνθρώπινον F 8.
@@ -978,24 +986,24 @@ License</licence>
 <lb/>16 πέρα ΗΡ νομίζουσιν εἶναι DM 16.17 τὸν θάνατον D: τόν om. codd. (v)
 <lb/>17 μόλις F: μόγις AHPI) ν) οὗτός ἐστιν D: ἐστὶ οὗτος codd. (v)
 <lb/>20 ἀθάνατον om. L (Turn.)
-<lb/>21 ἡ ἀδιάφορον v ἢ add. Turn.): ἡ om. FHP, ἡ ἀδιάφορον om. Α</note> <note xml:lang="mul" type="footnote">
-<lb/>7 sqq. Gen. cap. 4. 12.13 N fol. ν: πρῶτος—ἐπιτειχίσας. 10.
-<lb/>17 DM fol. 287v Φίλωνος ἐκ τοῦ περὶ ἄθλων καὶ ἐπιτιμίων λόγου DH fol. 334v DV p. 730 Mel. Harocc. fol. 259 v Φίλωνος: ἄνθρωποι μὲν γὰρ πέρας τιμωριῶν εἶναι νομίζουσι τὸν θάνατον ἐν δὲ τῷ θείῳ δικαστηρίῳ μόγις οὗτός ἐστιν ἀρχή ἡ ἀρχὴ Bar.)</note>  
-
-<pb n="v.5.p.352"/>
+<lb/>21 ἡ ἀδιάφορον v ἢ add. Turn.): ἡ om. FHP, ἡ ἀδιάφορον om. Α</note>
+               <note xml:lang="mul" type="footnote">
+                  <lb/>7 sqq. Gen. cap. 4. 12.13 N fol. ν: πρῶτος—ἐπιτειχίσας. 10.
+<lb/>17 DM fol. 287v Φίλωνος ἐκ τοῦ περὶ ἄθλων καὶ ἐπιτιμίων λόγου DH fol. 334v DV p. 730 Mel. Harocc. fol. 259 v Φίλωνος: ἄνθρωποι μὲν γὰρ πέρας τιμωριῶν εἶναι νομίζουσι τὸν θάνατον ἐν δὲ τῷ θείῳ δικαστηρίῳ μόγις οὗτός ἐστιν ἀρχή ἡ ἀρχὴ Bar.)</note>
+               <pb n="v.5.p.352"/>
 τὸ ἀποθνῄσκειν, ὃ δὴ κακὸν πάντως καὶ ὅσῳ χρονιώτερον βαρύτερον.
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="71">
-<p>πῶς οὖν ὁ θάνατος αὐτῷ συνδιαιωνίζει, σκόπει. τεττάρων ὄντων ἐν τῇ
+</p>
+         </div>
+         <div n="71" type="section">
+            <p>πῶς οὖν ὁ θάνατος αὐτῷ συνδιαιωνίζει, σκόπει. τεττάρων ὄντων ἐν τῇ
 ψυχῇ παθῶν, δυοῖν μὲν περὶ τὸ ἀγαθὸν ἐνεστὸς ἢ μέλλον, ἡδονῆς καὶ
 ἐπιθυμίας, δυοῖν δὲ περὶ τὸ κακὸν παρὸν ἢ προσδοκώμενον, λύπης καὶ
 φόβου, τὴν μὲν τοῦ ἀγαθοῦ ῥίζαις αὐταῖς ἐξέτεμε συζυγίαν, ἵνα μηδ’ ἐκ <lb n="5"/>
 τύχης ἡσθῇ ποτε ἢ ἐπιθυμήσῃ τινὸς ἡδέος, τὴν δὲ τοῦ κακοῦ μόνην
- ἐνεφύτευσεν εἰς λύπην εὐθυμίας ἀμιγῆ καὶ φόβον ἄκρατον.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="72">
-<p>φησὶ γάρ,
+ ἐνεφύτευσεν εἰς λύπην εὐθυμίας ἀμιγῆ καὶ φόβον ἄκρατον.</p>
+         </div>
+         <div n="72" type="section">
+            <p>φησὶ γάρ,
 ὅτι ἀρὰν ἐπηράσατο τῷ ἀδελφοκτόνῳ, ὡς <milestone unit="altpage1" n="p. 420 M."/>  „στένειν καὶ τρέμειν ἀεί“
 (Gen. 4, 12), καὶ σημεῖον ἔθετο αὐτῷ μὴ ἀναιρεθῆναι πρός τινος
 (ib. v. 15), ἵνα μὴ ἅπαξ ἀποθάνῃ, διαιωνίζῃ δέ, ὡς εἶπον, ἀποθνῄσκων <lb n="10"/>
@@ -1004,23 +1012,23 @@ License</licence>
 ἄχθηται καὶ τὴν φορὰν τῶν μελλόντων προορώμενος μὴ δύνηται φυλάξασθαι,
 τῆς ἐλπίδος ἐκτετμημένης αὐτῷ, ἣν ὁ θεὸς ἀνθρώπων γένει
 κατέσπειρεν, ἵν’ ἔχοντες συμφυὲς παραμύθιον ἐπελαφρίζωνται τὰς ἀνίας <lb n="15"/>
- οἱ μὴ ἀνίατα δράσαντες.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="73">
-<p>ὥσπερ οὖν τῷ συναρπασθέντι ὑπὸ χειμάρρου
+ οἱ μὴ ἀνίατα δράσαντες.</p>
+         </div>
+         <div n="73" type="section">
+            <p>ὥσπερ οὖν τῷ συναρπασθέντι ὑπὸ χειμάρρου
 φοβερὸν μὲν τὸ πλησίον ῥεῦμα ᾧ κατασύρεται, φοβερώτερον δὲ τὸ
 ἄνωθεν ἐπιφερόμενον, ὃ τῇ μὲν βίᾳ συντόνως ἐπωθεῖ καὶ ἀλήκτως, τῇ
 δ’ ἐπαναστάσει μετεωριζόμενον ἐπικλύζει, τὸν αὐτὸν τρόπον καὶ τῶν
 κακῶν ἀνιαρὰ μὲν τὰ ἐν χερσίν, ἀργαλεώτερα δὲ τὰ ἐκ φόβου ῥέοντα· <lb n="20"/>
 χορηγεῖ γὰρ ὁ φόβος καθάπερ ἐκ πηγῆς τὰ ὀδυνηρά.</p>
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="74">
- <p><milestone unit="altref" n="13"/> Ταῦτα μέν ἐστι τὰ ὁρισθέντα κατὰ τοῦ πρώτου γεγονότος
+         </div>
+         <div n="74" type="section">
+            <p>
+               <milestone unit="altref" n="13"/> Ταῦτα μέν ἐστι τὰ ὁρισθέντα κατὰ τοῦ πρώτου γεγονότος
 ἀδελφοκτόνου· ὡρίσθη δὲ καὶ ἐπ’ οἰκίαις ἕτερα συνθεμέναις κοινοπραγίαν
 ἁμαρτημάτων. ἦσάν τινες νεωκόροι καὶ ἱερόδουλοι τὴν πυλωρῶν
 <note xml:lang="mul" type="footnote">
-<lb/>3 δυοῖν] θάτερον Α ἐνεστὸς Η2: ἐνεστὼς FAH1P μέλλων H1P 
+                  <lb/>3 δυοῖν] θάτερον Α ἐνεστὸς Η2: ἐνεστὼς FAH1P μέλλων H1P 
 <lb/>5 ῥίζαν ἐν αὐταῖς ἐξέτεμε συζυγίαις Α μηδ’] μὴ Α
 <lb/>6 μόνην FAP: μόνον H (v) 
 <lb/>7 εὐθυμία A φόβου L (Turn.) ἑκάτερα καὶ ἄκρατον Α
@@ -1036,45 +1044,46 @@ License</licence>
 <lb/>19 ἐπικλύζῃ F
 <lb/>22 ἐστι om. Α πρώτου] ᾱ L; αὖ Turn.
 <lb/>23 κοινοπραγία HP (-ίᾳ 
-<lb/>24 ἦσάν τινες FA: ἤσαν τέ τινες HP; ἤσαν δέ τινες v, δή pro δέ coni. Μang. post τινες add. τεταγμένοι AHP (v), om. F τὴν] τῶν A</note> <note xml:lang="mul" type="footnote">16—21 N fol. 160v: ὥσπερ—ὀδυνηρά.
-<lb/>24 sqq. Num. cap. 16.</note>  
-
-<pb n="v.5.p.353"/>
+<lb/>24 ἦσάν τινες FA: ἤσαν τέ τινες HP; ἤσαν δέ τινες v, δή pro δέ coni. Μang. post τινες add. τεταγμένοι AHP (v), om. F τὴν] τῶν A</note>
+               <note xml:lang="mul" type="footnote">16—21 N fol. 160v: ὥσπερ—ὀδυνηρά.
+<lb/>24 sqq. Num. cap. 16.</note>
+               <pb n="v.5.p.353"/>
 τεταγμένοι τάξιν· οὗτοι φρονήματος ὑποπλησθέντες ἀλόγου τοῖς ἱερεῦσιν
-ἐπανέστησαν, ἀξιοῦντες τὰ ἐκείνων γέρα σφετερίζεσθαι.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="75">
-<p>προστησάμενοι δὲ τῆς συστάσεως ἡγεμόνα τὸν πρεσβύτατον, ὃς καὶ τοῦ τολμήματος
+ἐπανέστησαν, ἀξιοῦντες τὰ ἐκείνων γέρα σφετερίζεσθαι.</p>
+         </div>
+         <div n="75" type="section">
+            <p>προστησάμενοι δὲ τῆς συστάσεως ἡγεμόνα τὸν πρεσβύτατον, ὃς καὶ τοῦ τολμήματος
 μετ’ ὀλίγων τῶν συναπονοηθέντων εἰσηγητὴς ἐγένετο, καταλιπόντες τὰ
 <lb n="5"/> προπύλαια καὶ τὰς ἐσχατιὰς ἐπὶ τῶν ἀδύτων ἐχώρουν τοὺς χρησμοῖς
-ἀξιωθέντας τῆς ἱερωσύνης μεθιστάντες.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="76">
-<p>ταραχὴ μὲν οὖν, ὡς εἰκός, ἐπεῖχε τὴν πληθὺν ἅπασαν, ἅτε κινουμένων τῶν ἀκινήτων καὶ παρασπονδουμένων
+ἀξιωθέντας τῆς ἱερωσύνης μεθιστάντες.</p>
+         </div>
+         <div n="76" type="section">
+            <p>ταραχὴ μὲν οὖν, ὡς εἰκός, ἐπεῖχε τὴν πληθὺν ἅπασαν, ἅτε κινουμένων τῶν ἀκινήτων καὶ παρασπονδουμένων
 τῶν νόμων καὶ τοῦ περὶ τὸ ἱερὸν κόσμου σύγχυσιν λαμβάνοντος
-ὑπ’ ἀταξίας δεινῆς.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="77">
-<p>ἐφ’ οἷς ὁ τοῦ ἔθνους ἐπιμελητὴς καὶ <lb n="10"/> προστάτης ἠγανάκτει. καὶ τὸ μὲν πρῶτον ἤθει βαρυτέρῳ χρώμενος
+ὑπ’ ἀταξίας δεινῆς.</p>
+         </div>
+         <div n="77" type="section">
+            <p>ἐφ’ οἷς ὁ τοῦ ἔθνους ἐπιμελητὴς καὶ <lb n="10"/> προστάτης ἠγανάκτει. καὶ τὸ μὲν πρῶτον ἤθει βαρυτέρῳ χρώμενος
 χωρὶς ὀργῆς — ἦν γὰρ καὶ τὴν φύσιν ἀόργητος — λόγοις ἀναδιδάσκειν
 ἐπειρᾶτο μεταβάλλεσθαι καὶ τοὺς ταχθέντας ὅρους μὴ ὑπερβαίνειν μηδὲ
 νεωτερίζειν εἰς τὰ ἅγια καὶ καθωσιωμένα, ὧν αἱ τοῦ ἔθνους ἐλπίδες
-ἐκκρέμανται.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="78">
-<p>ἐπεὶ δ’ οὐδὲν ἤνυεν, ἀλλ’ ἐκεκώφηντο πρὸς ἅπαντα νομίζοντες <lb n="15"/> αὐτὸν ἡττηθέντα φιλοικείου πάθους ἀρχιερέα μὲν τὸν ἀδελφὸν
+ἐκκρέμανται.</p>
+         </div>
+         <div n="78" type="section">
+            <p>ἐπεὶ δ’ οὐδὲν ἤνυεν, ἀλλ’ ἐκεκώφηντο πρὸς ἅπαντα νομίζοντες <lb n="15"/> αὐτὸν ἡττηθέντα φιλοικείου πάθους ἀρχιερέα μὲν τὸν ἀδελφὸν
 καταστῆσαι, τοῖς δ’ ἀδελφιδοῖς ἐγχειρίσαι τὴν ἱερωσύνην, δεινὸν οὐχὶ
  τοῦθ’ ὑπελάμβανε καίπερ ὂν δεινόν, ἀλλ’ ἐκεῖνο  <milestone unit="altpage2" n="p. 421 M."/> παγχάλεπον, εἰ δόξει
 τῶν λογίων, καθ’ ἃ γέγονεν ἡ αἵρεσις τῶν ἱερέων, ἀλογεῖν. * * *</p>
-
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="79">
-<head><add>Περὶ εὐχῶν καὶ εὐλογιῶν.</add></head>
-<p><milestone unit="altref" n="14"/> * * * μαρτυρία δὲ σαφὴς ἐν τοῖς ἱεροῖς ἀνάκειται γράμμασι. λέγε τὰς εὐχὰς πρότερον, ἃς „εὐλογίας“ εἴωθεν ὀνομάζειν. ἐάν, φησί,
+         </div>
+         <div n="79" type="section">
+            <head>
+               <add>Περὶ εὐχῶν καὶ εὐλογιῶν.</add>
+            </head>
+            <p>
+               <milestone unit="altref" n="14"/> * * * μαρτυρία δὲ σαφὴς ἐν τοῖς ἱεροῖς ἀνάκειται γράμμασι. λέγε τὰς εὐχὰς πρότερον, ἃς „εὐλογίας“ εἴωθεν ὀνομάζειν. ἐάν, φησί,
 τὰς θείας ἐντολὰς φυλάττητε καταπειθεῖς γινόμενοι τοῖς προστάγμασι
 <note xml:lang="mul" type="footnote">
-<lb/>2 ἀξιοῦντες—σφετερίζεσθαι post ἡγεμόνα (3) transp. A σφετερίζεσθαι FA: σφετερίσασθαι HP (v)
+                  <lb/>2 ἀξιοῦντες—σφετερίζεσθαι post ἡγεμόνα (3) transp. A σφετερίζεσθαι FA: σφετερίσασθαι HP (v)
 <lb/>3 συστάσεως FH: στάσεως AP πρεσβύτερον A 
 <lb/>4 συναπονηθέντων Α
 <lb/>5 ἐπὶ] ἄχρι coni. Mang. 5.
@@ -1089,15 +1098,15 @@ License</licence>
 <lb/>18 καθ’ ἅπερ A post ἀλογεῖν multa deesse videri recte animadvertit Mangey; interciderunt finis capitis de poenis περὶ ἐπιτιμίων) et initium capitis de benedictionibus περὶ εὐχῶν καὶ εὐλογιῶν)
 <lb/>19 tit. περὶ εὐχῶν καὶ εὐλογιῶν addidi
 <lb/>21 λέγε FH1P1: λέγειν AH2P2 (v) ; λέγει coni. Mang. εἴωθεν εὐλογίας transp. Α 
-<lb/>22 γινόμενοι F: γενόμενοι AHP (v)</note> <note xml:lang="lat" type="footnote">
-<lb/>21 sqq, Ex. 23,22. Lev. 26,3 sqq, Deut. 7,12 sqq. 28,1 sqq. 30,1 sqq.</note>  
-
-<pb n="v.5.p.354"/>
+<lb/>22 γινόμενοι F: γενόμενοι AHP (v)</note>
+               <note xml:lang="lat" type="footnote">
+                  <lb/>21 sqq, Ex. 23,22. Lev. 26,3 sqq, Deut. 7,12 sqq. 28,1 sqq. 30,1 sqq.</note>
+               <pb n="v.5.p.354"/>
 καὶ τὰ διαγορευόμενα μὴ μέχρις ἀκοῆς καταδέχησθε, ἀλλὰ διὰ τῶν τοῦ
- βίου πράξεων ἐπιτελῆτε, πρώτην δωρεὰν ἕξετε νίκην κατ’ ἐχθρῶν.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="80">
-<p>οὐ
+ βίου πράξεων ἐπιτελῆτε, πρώτην δωρεὰν ἕξετε νίκην κατ’ ἐχθρῶν.</p>
+         </div>
+         <div n="80" type="section">
+            <p>οὐ
 γὰρ ὑπέρογκοι καὶ βαρύτεραι τῆς τῶν χρησομένων δυνάμεως αἱ προστάξεις
 εἰσὶν οὐδὲ μακρὰν τὸ ἀγαθὸν ἀφέστηκεν, ἢ πέραν θαλάττης ἢ ἐν
 ἐσχατιαῖς γῆς, ὡς δεῖσθαι πολυχρονίου καὶ καματηρᾶς ἀποδημίας, οὐδ’ <lb n="5"/>
@@ -1105,37 +1114,37 @@ License</licence>
 καὶ πτηνὸς ἀρθεὶς μόλις ἐφικέσθαι τούτων δυνηθῇ· πλησίον δ’ ἐστὶ καὶ
 ἐγγυτάτω, τρισὶ μέρεσι τῶν καθ’ ἕκαστον ἡμῶν ἐνιδρυμένον, "στόματι
 καὶ καρδίᾳ καὶ χερσί“, τροπικώτερον λόγῳ καὶ διανοίᾳ καὶ πράξεσιν.
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="81">
-<p>ἐὰν γὰρ οἷα τὰ βουλεύματα τοιοῦτοι οἱ λόγοι καὶ οἷα τὰ λεγόμενα τοιαίδε <lb n="10"/>
+</p>
+         </div>
+         <div n="81" type="section">
+            <p>ἐὰν γὰρ οἷα τὰ βουλεύματα τοιοῦτοι οἱ λόγοι καὶ οἷα τὰ λεγόμενα τοιαίδε <lb n="10"/>
 αἱ πράξεις ὦσι, καὶ ταῦτα ἀλλήλοις ἀντακολουθῇ δεθέντα ἁρμονίας
 ἀλύτοις δεσμοῖς, εὐδαιμονία κρατεῖ, τουτέστιν ἡ ἀψευδεστάτη σοφία καὶ
 φρόνησις, σοφία μὲν [γὰρ] πρὸς θεραπείαν θεοῦ, φρόνησις δὲ πρὸς
- ἀνθρωπίνου βίου διοίκησιν.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="82">
-<p>ἄχρι μὲν οὖν λέγεται μόνον τὰ τῶν νόμων
+ ἀνθρωπίνου βίου διοίκησιν.</p>
+         </div>
+         <div n="82" type="section">
+            <p>ἄχρι μὲν οὖν λέγεται μόνον τὰ τῶν νόμων
 παραγγέλματα, βραχείας ἢ οὐδεμιᾶς ἀποδοχῆς τυγχάνει· προσγενομένων <lb n="15"/>
 δ’ ἀκολούθων καὶ ἑπομένων ἔργων ἐν τοῖς τοῦ βίου πᾶσιν ἐπιτηδεύμασιν,
 ὥσπερ ἐκ ζόφου βαθέος εἰς φῶς ἀναχθέντα περιλαμφθήσεται δι’ εὐκλείας
- καὶ εὐφημίας.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="83">
-<p>τίς γὰρ οὐκ ἂν εἴποι καὶ τῶν φύσει βασκάνων, ὅτι
+ καὶ εὐφημίας.</p>
+         </div>
+         <div n="83" type="section">
+            <p>τίς γὰρ οὐκ ἂν εἴποι καὶ τῶν φύσει βασκάνων, ὅτι
 σοφὸν ἄρα γένος καὶ ἐπιστημονικώτατον μόνον τοῦτ’ ἐστίν, ᾧ τὰς θείας
 παραινέσεις ἐξεγένετο μὴ κενὰς καὶ ἐρήμους ἀπολιπεῖν τῶν οἰκείων <lb n="20"/>
- πράξεων, ἀλλὰ πληρῶσαι τοὺς λόγους ἔργοις ἐπαινετοῖς;</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="84">
-<p>τοῦτο τὸ γένος
+ πράξεων, ἀλλὰ πληρῶσαι τοὺς λόγους ἔργοις ἐπαινετοῖς;</p>
+         </div>
+         <div n="84" type="section">
+            <p>τοῦτο τὸ γένος
 οὐ μακρὰν ἀπῴκισται θεοῦ, φαντασιούμενον ἀεὶ τὰ αἰθέρια κάλλη καὶ
 ποδηγετούμενον ὑπ’ ἔρωτος οὐρανίου, ὡς, κἂν εἰ πύθοιτό τις, ποῖον
 ἔθνος μέγα, προσφυῶς ἄν τινας ἀποκρίνασθαι· ᾧ ὁ θεός ἐστιν ἐπήκοος
 ἱεροπρεπεστάτων εὐχῶν καὶ ταῖς ἀπὸ καθαροῦ τοῦ συνειδότος κατακλήσεσι <lb n="25"/>
 συνεγγίζων.</p>
-<note xml:lang="mul" type="footnote">
-<lb/>2 πρώτην FAP: πρὸς τὴν Η (Turn.) 3.
+            <note xml:lang="mul" type="footnote">
+               <lb/>2 πρώτην FAP: πρὸς τὴν Η (Turn.) 3.
 <lb/>4 προστάξεις] πράξεις Α
 <lb/>4 τἀγαθὸν F θαλάττης F: θαλάσσης AHP (v)
 <lb/>5 οὐδὲ HP
@@ -1150,43 +1159,43 @@ License</licence>
 <lb/>19 ἐπιστημονικώτερον Α 
 <lb/>21 post πληρῶσαι add. καὶ A
 <lb/>24 τινας ἐποκρίνασθαι FA: τιν’ ἀνταποκρίνασθαι HP (v) ἐπήκοος v (Turn.): ὑπήκοος codd.
-<lb/>25 τοῦ καθαροῦ transp. Α</note> <note xml:lang="lat" type="footnote">
-<lb/>2 sqq. Deut. 11—14.
-<lb/>19 cf. Dent. 4,6. 23—26 Deut. 4,7.</note>  
-
-<pb n="v.5.p.355"/>
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="85">
-<p><milestone unit="altref" n="15"/> Ἐπεὶ δ’ ἐχθρῶν διττὸν εἶδος, τὸ μὲν ἀνθρώπων ἐκ πλεονεξίας ἐπιτηδεύσει γεγονός, τὸ δὲ θηρίων ἄνευ ἐπιτηδεύσεως ἀλλοτριότητι
+<lb/>25 τοῦ καθαροῦ transp. Α</note>
+            <note xml:lang="lat" type="footnote">
+               <lb/>2 sqq. Deut. 11—14.
+<lb/>19 cf. Dent. 4,6. 23—26 Deut. 4,7.</note>
+            <pb n="v.5.p.355"/>
+         </div>
+         <div n="85" type="section">
+            <p>
+               <milestone unit="altref" n="15"/> Ἐπεὶ δ’ ἐχθρῶν διττὸν εἶδος, τὸ μὲν ἀνθρώπων ἐκ πλεονεξίας ἐπιτηδεύσει γεγονός, τὸ δὲ θηρίων ἄνευ ἐπιτηδεύσεως ἀλλοτριότητι
 χρώμενον φυσικῇ, περὶ ἑκατέρου λεκτέον ἐν μέρει, καὶ πρότερόν γε
 τοῦ κατὰ τοὺς φύσει πολεμίους θῆρας· οὗτοι γὰρ οὐ μιᾶς πόλεως ἢ
 <lb n="5"/> ἔθνους ἑνός, ἀλλὰ τοῦ σύμπαντος ἀνθρώπων γένους δυσμενεῖς εἰσιν, οὐ
  πρὸς  <milestone unit="altpage2" n="p. 422 M."/> ὡρισμένου χρόνου μῆκος, ἀλλὰ τὸν ἀόριστον καὶ ἀπερίγραφον
-αἰῶνα.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="86">
-<p>τούτων οἱ μὲν ὡς δεσπότην ἄνθρωπον δεδιότες ὑποπτήσσουσιν ἐγκότῳ μίσει, οἱ δὲ τολμηταὶ καὶ θρασύτεροι προεπιχειροῦσι καιροφυλακοῦντες,
+αἰῶνα.</p>
+         </div>
+         <div n="86" type="section">
+            <p>τούτων οἱ μὲν ὡς δεσπότην ἄνθρωπον δεδιότες ὑποπτήσσουσιν ἐγκότῳ μίσει, οἱ δὲ τολμηταὶ καὶ θρασύτεροι προεπιχειροῦσι καιροφυλακοῦντες,
 εἰ μὲν ἀσθενέστεροι τυγχάνουσιν, ἐξ ἐνέδρας, εἰ δὲ δυνατώτεροι,
-<lb n="10"/> φανερῶς.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="87">
-<p>ἄσπονδος γὰρ καὶ ἀκήρυκτος εἷς πόλεμος οὗτος, ὡς λύκοις πρὸς ἄρνας, καὶ πᾶσι θηρίοις πρὸς πάντας ἀνθρώπους, ἐνύδροις τε καὶ
+<lb n="10"/> φανερῶς.</p>
+         </div>
+         <div n="87" type="section">
+            <p>ἄσπονδος γὰρ καὶ ἀκήρυκτος εἷς πόλεμος οὗτος, ὡς λύκοις πρὸς ἄρνας, καὶ πᾶσι θηρίοις πρὸς πάντας ἀνθρώπους, ἐνύδροις τε καὶ
 χερσαίοις· ὃν θνητὸς μὲν οὐδεὶς δυνατὸς καθαιρεῖν, ὁ δ’ ἀγένητος μόνος
 καθαιρεῖ, ὅταν κρίνῃ τινὰς σωτηρίας ἀξίους, εἰρηνικοὺς μὲν τὸ ἦθος,
 ὁμοφροσύνην δὲ καὶ κοινωνίαν ἀσπαζομένους, οἷς φθόνος ἢ συνόλως οὐκ
 <lb n="15"/> ἐνῴκησεν ἢ τάχιστα μετανέστη τὰ ἴδια προφέρειν εἰς μέσον ἀγαθὰ
-διεγνωκόσιν εἰς κοινὴν μετουσίαν καὶ ἀπόλαυσιν.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="88">
-<p>εἰ γὰρ ἐπιλάμψειέ ποτε τῷ βίῳ τὸ ἀγαθὸν τοῦτο καὶ δυνηθείημεν τὸν καιρὸν ἰδεῖν ἐκεῖνον, ἐν
+διεγνωκόσιν εἰς κοινὴν μετουσίαν καὶ ἀπόλαυσιν.</p>
+         </div>
+         <div n="88" type="section">
+            <p>εἰ γὰρ ἐπιλάμψειέ ποτε τῷ βίῳ τὸ ἀγαθὸν τοῦτο καὶ δυνηθείημεν τὸν καιρὸν ἰδεῖν ἐκεῖνον, ἐν
 ᾧ χειροήθη ποτὲ γενήσεται τὰ ἀτίθασα. πολὺ δὲ πρότερον τὰ ἐν τῇ
 ψυχῇ θηρία τιθασευθήσεται, οὗ μεῖζον ἀγαθὸν οὐκ ἔστιν εὑρεῖν· ἢ οὐχὶ
 <lb n="20"/> εὔηθες ὑπολαμβάνειν, ὅτι τὰς ἀπὸ τῶν ἐκτὸς θηρίων βλάβας ἐκφευξόμεθα
 τὰ ἐν αὑτοῖς εἰς δεινὴν ἀγριότητα ἀεὶ συγκροτοῦντες; ὅθεν οὐκ ἀπελπιστέον,
 ὅτι ἐξημερωθέντων τῶν κατὰ διάνοιαν καὶ τὰ ζῷα ἡμερωθήσεται.</p>
-<note xml:lang="mul" type="footnote">
-<lb/>2 γεγονός FAP: γένος H (Turn.)
+            <note xml:lang="mul" type="footnote">
+               <lb/>2 γεγονός FAP: γένος H (Turn.)
 <lb/>3 προτέρου F γε om. Α 
 <lb/>4 τοῦ FAH1P (Mang.): τὸ Η2 (v) οὐδεμιᾶς Α
 <lb/>5 ἑνός F: om. AHP (v) δυσμενεῖς <add>πολέμιοι</add> coni. Mang.
@@ -1204,13 +1213,12 @@ License</licence>
 <lb/>19 τιθασευθήσεται HP: τιθασσευθήσεται FA (v) εὑρεῖν F: οὐδέν HP (Turn.), εὑρεῖν οὐδέν Α (Mang.) 
 <lb/>20 εὔηθες] ᾠήθης Α ἀπὸ Α: ὑπὸ FHPD (v) φευξόμεθα Α 
 <lb/>21 τά δ’ AH2 αὐτοῖς codd. συγκροτοῦντες ἐσόμεθα Α
-<lb/>22 τὰ <add>ἔξω</add> vel <add>ἐκτὸς</add> ζῷα coni. Maug.</note> <note xml:lang="mul" type="footnote">20.21 DR fol. 229r Φίλωνος: εὔηθες—ἀγριότητα πρὸς ἀλλήλους συγκινοῦντες.</note>  
-
-<pb n="v.5.p.356"/>
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="89">
- <p>τότε μοι δοκοῦσιν ἄρκτοι καὶ λέοντες καὶ παρδάλεις καὶ τὰ παρ’ Ἰνδοῖς,
+<lb/>22 τὰ <add>ἔξω</add> vel <add>ἐκτὸς</add> ζῷα coni. Maug.</note>
+            <note xml:lang="mul" type="footnote">20.21 DR fol. 229r Φίλωνος: εὔηθες—ἀγριότητα πρὸς ἀλλήλους συγκινοῦντες.</note>
+            <pb n="v.5.p.356"/>
+         </div>
+         <div n="89" type="section">
+            <p>τότε μοι δοκοῦσιν ἄρκτοι καὶ λέοντες καὶ παρδάλεις καὶ τὰ παρ’ Ἰνδοῖς,
 ἐλέφαντές τε καὶ τίγρεις, καὶ ὅσα ἄλλα τὰς ἀλκὰς καὶ τὰς δυνάμεις
 ἀήττητα μεταβαλεῖν ἐκ τοῦ μονωτικοῦ τε καὶ μονοτρόπου πρὸς τὸ
 σύννομον· κἀκ τοῦ πρὸς ὀλίγον μιμήσει τῶν ἀγελαίων ἡμερωθήσεται
@@ -1218,30 +1226,30 @@ License</licence>
 ὡς ἄρχοντα καὶ φύσει δεσπότην εὐλαβῶς ἕξει, ἔνια δὲ καὶ
 τοῦ χειροήθους ἅμα καὶ φιλοδεσπότου τῇ παραζηλώσει, καθάπερ τὰ
 Μελιταῖα τῶν κυνιδίων ταῖς κέρκοις μεθ’ ἱλαρωτέρας κινήσεως προσσαίνοντα.
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="90">
-<p>τότε καὶ τὰ σκορπίων γένη καὶ ὄφεων καὶ τῶν ἄλλων ἑρπετῶν
+</p>
+         </div>
+         <div n="90" type="section">
+            <p>τότε καὶ τὰ σκορπίων γένη καὶ ὄφεων καὶ τῶν ἄλλων ἑρπετῶν
 ἄπρακτον ἕξει τὸν ἰόν· φέρει καὶ ποταμὸς ὁ Αἰγύπτιος ὅμοια τοῖς οἰκήτορσι <lb n="10"/>
 τῆς χώρας ἀνθρωποβόρα ζῷα, τοὺς κροκοδείλους λεγομένους καὶ ποταμίους
 ἵππους, φέρει καὶ τὰ πελάγη μυρίας ἰδέας ἀργαλεωτάτων ζῴων· παρ’
 οἷς ἅπασιν ἱερὸς καὶ ἄσυλος γένοιτ’ ἂν ὁ σπουδαῖος, ἀρετὴν τιμήσαντος
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="91">
-<p> θεοῦ καὶ γέρας αὐτῇ παρασχόντος τὸ ἀνεπιβούλευτον. <milestone unit="altref" n="16"/> οὕτως μὲν
+</p>
+         </div>
+         <div n="91" type="section">
+            <p> θεοῦ καὶ γέρας αὐτῇ παρασχόντος τὸ ἀνεπιβούλευτον. <milestone unit="altref" n="16"/> οὕτως μὲν
 ὁ πρεσβύτερος καὶ χρόνῳ καὶ φύσει καταλυθήσεται πόλεμος, ἡμερωθέντων <lb n="15"/>
 καὶ μεταβαλόντων τῶν θηρίων πρὸς τὸ τιθασόν. ὁ δὲ <milestone unit="altpage1" n="p. 423 Μ."/>  νεώτερος καὶ
 ἐπιτηδεύσει γενόμενος ἐκ πλεονεξίας ῥᾳδίως διαλυθήσεται, τῶν ἀνθρώπων,
 ὥς γέ μοι δοκεῖ, δυσωπηθέντων, εἰ μελλήσουσιν ἀγριώτεροι ζῴων ἀλόγων
 ἐξετάζεσθαι, ὅτε τὰς ἀπὸ τῶν ἀλόγων ζημίας καὶ βλάβας ἐκπεφεύγασιν.
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="92">
-<p>αἴσχιστον γάρ, ὡς εἰκός, φανεῖται, τὰ μὲν ἰοβόλα καὶ ἀνθρωποβόρα καὶ <lb n="20"/>
+</p>
+         </div>
+         <div n="92" type="section">
+            <p>αἴσχιστον γάρ, ὡς εἰκός, φανεῖται, τὰ μὲν ἰοβόλα καὶ ἀνθρωποβόρα καὶ <lb n="20"/>
 ἄμικτα καὶ ἀκοινώνητα ἔνσπονδα γεγενῆσθαι μεταβαλόντα πρὸς εἰρήνην,
 <note xml:lang="mul" type="footnote">
-<lb/>1 καὶ παρδάλεις om. Α παρ᾿ Ἰνδοῖς <add>ζῷα</add> coni. Mang.
+                  <lb/>1 καὶ παρδάλεις om. Α παρ᾿ Ἰνδοῖς <add>ζῷα</add> coni. Mang.
 <lb/>3 μεταβαλεῖν (Turn.): μεταβάλλειν codd. μονητικοῦ F 3.4 πρός τὸ σύννομον] καὶ σύννομα ἔσται Α
 <lb/>4 ἡμερωθήσεται codd.: ἡμερωθήσεσθαι v
 <lb/>5 μηκέθ’ F
@@ -1258,41 +1266,41 @@ License</licence>
 <lb/>18 γέ μοι FA: γ’ ἐμοὶ Η2 (v), ἔμοιγε H1P
 <lb/>19 τῶν ἀλόγων scripsi: τῶν ἄλλων codd. (v): τῶν αὐτῶν coni. Mang. βλάβας καὶ ζημίας F
 <lb/>20 ὡς om. L (Turu.) τὰ μὲν γὰρ A 
-<lb/>21 μεταβαλόντα FP: μεταβάλλοντα (sic) Η, μεταβάλλοντα Α (v)</note> <note xml:lang="lat" type="footnote">
-<lb/>1 sqq. cf. Iesai. 11,6 sqq.</note>  
-
-<pb n="v.5.p.357"/>
+<lb/>21 μεταβαλόντα FP: μεταβάλλοντα (sic) Η, μεταβάλλοντα Α (v)</note>
+               <note xml:lang="lat" type="footnote">
+                  <lb/>1 sqq. cf. Iesai. 11,6 sqq.</note>
+               <pb n="v.5.p.357"/>
 τὸ δὲ ἥμερον φύσει ζῷον, ἄνθρωπον, κοινωνίας καὶ ὁμονοίας συγγενές,
-ἀσπονδεὶ φονᾶν κατὰ τῶν ὁμοίων.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="93">
-<p>ἢ τὸ παράπαν οὖν, φησίν, οὐ διελεύσεται πόλεμος διὰ χώρας εὐσεβῶν, ἀλλ’ αὐτὸς καταρρυήσεται καὶ συντριβήσεται
+ἀσπονδεὶ φονᾶν κατὰ τῶν ὁμοίων.</p>
+         </div>
+         <div n="93" type="section">
+            <p>ἢ τὸ παράπαν οὖν, φησίν, οὐ διελεύσεται πόλεμος διὰ χώρας εὐσεβῶν, ἀλλ’ αὐτὸς καταρρυήσεται καὶ συντριβήσεται
 πρὸς ἑαυτόν, πρὸς οἵους ἔσοιτο ὁ ἀγὼν αἰσθανομένων τῶν ἀντιπάλων,
 <lb n="5"/> ἅτε χρωμένους ἀνανταγωνίστῳ συμμαχίᾳ τοῦ δικαίου· μεγαλοπρεπὲς
 γὰρ καὶ περίσεμνον ἀρετὴ καὶ μόνη καθ’ ἡσυχίαν ἱκανὴ φορὰς
-μεγάλων ἐξευμαρίζειν κακῶν.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="94">
-<p>ἢ κἂν μεμηνότες τινὲς ᾄττωσιν ἀκαθέκτῳ καὶ ἀπαρηγορήτῳ χρώμενοι τῇ τοῦ πολεμεῖν ἐπιθυμίᾳ, μέχρι μὲν συνίστανται,
+μεγάλων ἐξευμαρίζειν κακῶν.</p>
+         </div>
+         <div n="94" type="section">
+            <p>ἢ κἂν μεμηνότες τινὲς ᾄττωσιν ἀκαθέκτῳ καὶ ἀπαρηγορήτῳ χρώμενοι τῇ τοῦ πολεμεῖν ἐπιθυμίᾳ, μέχρι μὲν συνίστανται,
 καταλαζονεύσονται θρασυνόμενοι, πρὸς δὲ χειρῶν ἅμιλλαν ἥκοντες
 <lb n="10"/> αἰσθήσονται κενὸν αὔχημα αὐχήσαντες, ὡς μὴ δυνάμενοι νικᾶν· ῥώμῃ
 γὰρ ἀντιβιασθέντες κραταιοτέρᾳ φεύξονται προτροπάδην πρὸς πεντάδων
 ἑκατοντάδες καὶ πρὸς ἑκατοντάδων μυριάδες, πολλαῖς ὁδοῖς οἱ κατὰ μίαν
-ἐπελθόντες.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="95">
-<p>ἔνιοι δέ, μηδὲ διώκοντος μηδενὸς ὅτι μὴ φόβου, τὰ νῶτα τοῖς ἀντιπάλοις εἰς βολὰς εὐσκόπους ἐπιστρέψουσιν, ὡς εὐμάρειαν εἶναι
+ἐπελθόντες.</p>
+         </div>
+         <div n="95" type="section">
+            <p>ἔνιοι δέ, μηδὲ διώκοντος μηδενὸς ὅτι μὴ φόβου, τὰ νῶτα τοῖς ἀντιπάλοις εἰς βολὰς εὐσκόπους ἐπιστρέψουσιν, ὡς εὐμάρειαν εἶναι
 <lb n="15"/> πάντας ἡβηδὸν ἀναιρεθέντας πεσεῖν. „ἐξελεύσεται γὰρ ἄνθρωπος,“
 φησὶν ὁ χρησμός, καὶ στραταρχῶν καὶ πολεμῶν ἔθνη μεγάλα καὶ
 πολυάνθρωπα χειρώσεται, τὸ ἁρμόττον ὁσίοις ἐπικουρικὸν ἐπιπέμψαντος
 τοῦ θεοῦ· τοῦτο δ’ ἐστὶ θάρσος ψυχῶν ἀκατάπληκτον καὶ σωμάτων
 ἰσχὺς κραταιοτάτη, ὧν καὶ θάτερον φοβερὸν ἐχθροῖς, ἄμφω δὲ εἰ συνέλθοι,
-<lb n="20"/> καὶ παντελῶς ἀνυπόστατα.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="96">
-<p>ἐνίους δὲ τῶν ἐχθρῶν ἀναξίους ἔσεσθαί
+<lb n="20"/> καὶ παντελῶς ἀνυπόστατα.</p>
+         </div>
+         <div n="96" type="section">
+            <p>ἐνίους δὲ τῶν ἐχθρῶν ἀναξίους ἔσεσθαί
 <note xml:lang="mul" type="footnote">
-<lb/>1 δὲ F: δ’ AHP ἄνθρωπον F: τόν ἄνθρωπον AHP (v)
+                  <lb/>1 δὲ F: δ’ AHP ἄνθρωπον F: τόν ἄνθρωπον AHP (v)
 <lb/>2 ἀσπονδεὶ F (coni. Mang.): ἀσπονδεῖ Η1Ρ, ἀσπονδεῖν AH2 (v) οὑν, φησίν om. HP (Turn.) 
 <lb/>4 ἔσοιτο FA: ἐστὶν HP (v) post ἀγὼν add. ὡς ἀηττήτους A mg P2, καὶ ὡς ἀηττήτους Mang. 4.
 <lb/>5 ἀντιπάλων] πολεμίων Α
@@ -1308,18 +1316,19 @@ License</licence>
 <lb/>16 καὶ στραταρχῶν FHP: καταστραταρχῶν Α (Mang.) πολέμων F ἔθνη F: ἔθνη τε AHP (v)
 <lb/>18 τοῦ θεοῦ F: θεοῦ ΑΗΡ (ν) θάρσος codd. (Mang.): θράσος v
 <lb/>19 ὧ F θάτερα F
-<lb/>20 ἀνυπόστατα Mang.: ἀνυπόστατον codd.</note> <note xml:lang="mul" type="footnote">
-<lb/>2 sqq. Lev. 26,5. 5—7 DH fol. 120v Φίλωνος ἐκ τοῦ περὶ ἄθλων καὶ ἐπιτιμιῶν fol. ν DR fol. 33v Φίλωνος: μεγαλοπρεπὲς καὶ περίσεμνον τῶν σοφῶν ἡ ἀρετὴ καθ’ ἡσυχίαν ἱκανὴ φορὰς μεγάλω ἐξευμαρίζειν κακῶν.
-<lb/>11 Lev. 26,7. 8.</note> <note xml:lang="lat" type="footnote">
-<lb/>12 Deut. 28,7.
-<lb/>15 Num. 247.</note>  
-
-<pb n="v.5.p.358"/>
+<lb/>20 ἀνυπόστατα Mang.: ἀνυπόστατον codd.</note>
+               <note xml:lang="mul" type="footnote">
+                  <lb/>2 sqq. Lev. 26,5. 5—7 DH fol. 120v Φίλωνος ἐκ τοῦ περὶ ἄθλων καὶ ἐπιτιμιῶν fol. ν DR fol. 33v Φίλωνος: μεγαλοπρεπὲς καὶ περίσεμνον τῶν σοφῶν ἡ ἀρετὴ καθ’ ἡσυχίαν ἱκανὴ φορὰς μεγάλω ἐξευμαρίζειν κακῶν.
+<lb/>11 Lev. 26,7. 8.</note>
+               <note xml:lang="lat" type="footnote">
+                  <lb/>12 Deut. 28,7.
+<lb/>15 Num. 247.</note>
+               <pb n="v.5.p.358"/>
 φησιν ἥττης τῶν ἀνθρώπων, οἷς σμήνη σφηκῶν ἀντιτάξειν ἐπ’ ὀλέθρῳ
- αἰσχίστῳ προπολεμοῦντα τῶν ὁσίων.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="97">
-<p>τούτους δ’ οὐ μόνον τὴν ἐν
+ αἰσχίστῳ προπολεμοῦντα τῶν ὁσίων.</p>
+         </div>
+         <div n="97" type="section">
+            <p>τούτους δ’ οὐ μόνον τὴν ἐν
 πολέμῳ νίκην ἀναιμωτὶ βεβαίως ἕξειν, ἀλλὰ καὶ κράτος ἀρχῆς ἀνανταγώνιστον
 ἐπ’ ὠφελείᾳ τῶν <milestone unit="altpage1" n="p. 424 M."/>  ὑπηκόων, ἣ γένοιτ’ ἂν δι’ εὔνοιαν ἢ φόβον
 ἢ αἰδῶ. τρία γὰρ ἐπιτηδεύουσι τὰ μέγιστα καὶ συντείνοντα πρὸς ἡγεμονίαν <lb n="5"/>
@@ -1327,30 +1336,30 @@ License</licence>
 ἀποτελεῖται τὰ λεχθέντα· τὸ μὲν γὰρ σεμνὸν αἰδῶ κατασκευάζει, τὸ δὲ
 δεινὸν φόβον, τὸ δὲ εὐεργετικὸν εὔνοιαν, ἅπερ ἀνακραθέντα καὶ ἁρμοσθέντα
 ἐν ψυχῇ καταπειθεῖς ἄρχουσιν ὑπηκόους ἀπεργάζεται.</p>
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="98">
- <p><milestone unit="altref" n="17"/> Ταῦτα μὲν δὴ πρῶτά φησι συμβήσεσθαι τοῖς ἑπομένοις θεῷ <lb n="10"/>
+         </div>
+         <div n="98" type="section">
+            <p>
+               <milestone unit="altref" n="17"/> Ταῦτα μὲν δὴ πρῶτά φησι συμβήσεσθαι τοῖς ἑπομένοις θεῷ <lb n="10"/>
 καὶ περιεχομένοις ἀεὶ καὶ πανταχοῦ τῶν προσταγμάτων αὐτοῦ καὶ
 ἑκάστῳ τῶν τοῦ βίου μερῶν ταῦτα ἐφαρμόττουσιν, ὡς μηδὲν νόσῳ
 πλαζόμενον ἐκδιαιτᾶσθαι· δεύτερον δὲ πλοῦτον, ὃς κατὰ τὸ ἀναγκαῖον
- εἰρήνῃ καὶ ἀρχῇ ἕπεται.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="99">
-<p>πλοῦτος δὲ ὁ μὲν τῆς φύσεως εὐτελής ἐστι
+ εἰρήνῃ καὶ ἀρχῇ ἕπεται.</p>
+         </div>
+         <div n="99" type="section">
+            <p>πλοῦτος δὲ ὁ μὲν τῆς φύσεως εὐτελής ἐστι
 τροφὴ καὶ σκέπη· τροφὴ μὲν οὖν ἄρτος καὶ ναματιαῖον ὕδωρ, ὃ πανταχοῦ <lb n="15"/>
 τῆς οἰκουμένης ἀνακέχυται· σκέπης δὲ διττὸν εἶδος, τὸ μὲν ἀμπεχόνη,
 τὸ δὲ οἰκία, διὰ τὰς ἀπὸ κρυμοῦ καὶ θάλπους παρακολουθούσας ζημίας·
 ὧν ἑκάτερον, εἴ τις ἐθελήσειε τὴν περίεργον καὶ περιττὴν ἀφελεῖν πολυτέλειαν,
- εὐποριστότατον.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="100">
-<p>οἳ δ’ ἂν ζηλώσωσι τὸν λεχθέντα πλοῦτον
+ εὐποριστότατον.</p>
+         </div>
+         <div n="100" type="section">
+            <p>οἳ δ’ ἂν ζηλώσωσι τὸν λεχθέντα πλοῦτον
 ἀσπασάμενοι τὰ φύσεως δῶρα, μὴ τὰ τῆς κενῆς δόξης, ὀλιγοδεΐαν καὶ <lb n="20"/>
 ἐγκράτειαν ἀσκήσαντες, ἕξουσι κατὰ πολλὴν περιουσίαν καὶ τὸν τῆς
 ἁβροδιαίτου τροφῆς πλοῦτον οὐκ ἐπιτηδεύσαντες· ἐπιπηδήσει γὰρ ὡς
 <note xml:lang="mul" type="footnote">
-<lb/>1 τῶν ἀνθρώπων F: τῶν οm. AHP (v) 1.2 ἐπ’ αἰσχίστω ὀλέθρω transp. F 
+                  <lb/>1 τῶν ἀνθρώπων F: τῶν οm. AHP (v) 1.2 ἐπ’ αἰσχίστω ὀλέθρω transp. F 
 <lb/>2 τούτους scripsi: τοῦτο codd. (τοῦτον v) 3.4 ἀνταγώνιστον Α
 <lb/>4 ἡ ἂν FA: οἳ γένοιντ᾿ ἂν ΗΡ (v)
 <lb/>6 δειλότητα F
@@ -1369,43 +1378,43 @@ License</licence>
 <lb/>19 εὐποριστότατον ἕξει A τὸν λεχθέντα πλοῦτον F: τὰ λεχθέντα AHP (v)
 <lb/>20 τῆς om. Α ὀλιγόδειαν codd.: ὀλιγόδειαν v
 <lb/>21 περιουσίαν] τὴν ἐξουσίαν A
-<lb/>22 ἐπιπηδήσει A: ἐπιτηδεύσει FHP; ἐπελεύσεται v (Turn.)</note> <note xml:lang="lat" type="footnote">
-<lb/>1 Ex. 23,28. Deut. 7,20.
+<lb/>22 ἐπιπηδήσει A: ἐπιτηδεύσει FHP; ἐπελεύσεται v (Turn.)</note>
+               <note xml:lang="lat" type="footnote">
+                  <lb/>1 Ex. 23,28. Deut. 7,20.
 <lb/>14 sqq. cf. Wendland Beitr. z. Gesch. d. griech. Philos u. Religion p. 9.
-<lb/>15 sq.</note>  
-
-<pb n="v.5.p.359"/>
+<lb/>15 sq.</note>
+               <pb n="v.5.p.359"/>
 πρὸς ἐπιτηδειοτάτους καὶ σεμνοὺς τῆς ἁρμοττούσης χρήσεως ἐπιστήμονας,
 ἀποδρὰς ἄσμενος τὰς τῶν ἀκολάστων καὶ ὑβριστῶν συνδιαιτήσεις,
 ἵνα μὴ χορηγῇ τοῖς ἐπὶ βλάβῃ τῶν πλησίον ζῶσι παρελθὼν τοὺς
-κοινωφελεῖς.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="101">
-<p>λόγιον γάρ ἐστιν ὅτι τοῖς τὰς ἱεροπρεπεῖς ἐντολὰς φυλάττουσιν <lb n="5"/> ὁ μὲν οὐρανὸς ὀμβρήσει καιρίους ὑετούς, ἡ δὲ γῆ καρπῶν παντοδαπῶν
+κοινωφελεῖς.</p>
+         </div>
+         <div n="101" type="section">
+            <p>λόγιον γάρ ἐστιν ὅτι τοῖς τὰς ἱεροπρεπεῖς ἐντολὰς φυλάττουσιν <lb n="5"/> ὁ μὲν οὐρανὸς ὀμβρήσει καιρίους ὑετούς, ἡ δὲ γῆ καρπῶν παντοδαπῶν
 οἴσει φοράν, ἡ μὲν πεδιὰς σπαρτῶν, ἡ δ’ ὀρεινὴ τῶν ἀκροδρύων,
 καὶ ὅτι χρόνος οὐδεὶς ἀπολειφθήσεται κενὸς εὐεργεσίας, ἀλλὰ τῷ συνεχεῖ
 καὶ ἐπαλλήλῳ τῶν τοῦ θεοῦ χαρίτων „καταλήψεται ὁ μὲν ἄμητος
-τρύγητον, καταλήψεται δὲ ὁ τρύγητος σπόρον“</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="102">
-<p>(Lev. 26, 5), ὡς ἀνελλιπῶς <lb n="10"/> καὶ ἀδιαστάτως ἀεὶ τὰ μὲν συγκομίζειν, τὰ δὲ ἐλπίζειν, ἐφεδρευόντων
+τρύγητον, καταλήψεται δὲ ὁ τρύγητος σπόρον“</p>
+         </div>
+         <div n="102" type="section">
+            <p>(Lev. 26, 5), ὡς ἀνελλιπῶς <lb n="10"/> καὶ ἀδιαστάτως ἀεὶ τὰ μὲν συγκομίζειν, τὰ δὲ ἐλπίζειν, ἐφεδρευόντων
 ἑτέροις ἑτέρων, ἵνα τοῖς πέρασι τῶν προτέρων αἱ τῶν ὑστέρων
 ἀρχαὶ συνάπτουσαι κύκλον τινὰ καὶ χορείαν ἀποτελῶσιν ἀνεπιδεᾶ παντὸς
-ἀγαθοῦ.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="103">
-<p>τὸ γὰρ πλῆθος τῶν γινομένων ἐξαρκέσει καὶ πρὸς τὴν παραυτίκα χρῆσιν καὶ ἀπόλαυσιν καὶ πρὸς τὴν τοῦ μέλλοντος ἄφθονον περιουσίαν,
+ἀγαθοῦ.</p>
+         </div>
+         <div n="103" type="section">
+            <p>τὸ γὰρ πλῆθος τῶν γινομένων ἐξαρκέσει καὶ πρὸς τὴν παραυτίκα χρῆσιν καὶ ἀπόλαυσιν καὶ πρὸς τὴν τοῦ μέλλοντος ἄφθονον περιουσίαν,
 <lb n="15"/> νέων ἐπακμαζόντων παλαιοῖς καὶ τὴν ἐκείνων ἔνδειαν προσαναπληρούντων·
  ἔστι δὲ ὅτε καὶ ὑπ’ εὐφορίας ἀλέκτου τῶν  <milestone unit="altpage2" n="p. 425 M."/> πάλαι συγκομισθέντων
 φροντίσει τὸ παράπαν οὐδείς, ἀλλ’ ἀταμίευτα καὶ ἀθησαύριστα καταλείψουσι
-τοῖς βουλομένοις ἀφέντες τὴν χρῆσιν ἀδεᾶ.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="104">
-<p>οἷς μὲν γὰρ ὁ ἀληθινὸς πλοῦτος ἐν οὐρανῷ κατάκειται διὰ σοφίας καὶ ὁσιότητος ἀσκηθείς,
+τοῖς βουλομένοις ἀφέντες τὴν χρῆσιν ἀδεᾶ.</p>
+         </div>
+         <div n="104" type="section">
+            <p>οἷς μὲν γὰρ ὁ ἀληθινὸς πλοῦτος ἐν οὐρανῷ κατάκειται διὰ σοφίας καὶ ὁσιότητος ἀσκηθείς,
 <lb n="20"/> τούτοις καὶ ὁ τῶν χρημάτων ἐπὶ γῆς περιουσιάζει, προνοίᾳ καὶ ἐπιμελείᾳ
 θεοῦ τῶν ταμείων ἀεὶ πληρουμένων, ἐκ τοῦ τὰς ὁρμὰς τῆς διανοίας
 <note xml:lang="mul" type="footnote">
-<lb/>1 σεμνοὺς] συγγενεῖς coni. Mang. ἁρμοττούσης F: ἁρμοζούσης AHP (v) 
+                  <lb/>1 σεμνοὺς] συγγενεῖς coni. Mang. ἁρμοττούσης F: ἁρμοζούσης AHP (v) 
 <lb/>2 ἀποδρὰς ἄσμενος] ἀποδρασάμενος F
 <lb/>3 τοῖς codd. Μang.): τοὺς Turn. 5.
 <lb/>6 καρπῶν παντοδαπῶν οἴσει F: παντοδαπῶν καρπῶν οἴσει AHP παντοδαπῶν οἴσει καρπῶν Mang.), καρπῶν om. L παντοδαπὸν οἵσει Turn.)
@@ -1425,31 +1434,32 @@ License</licence>
 <lb/>19 ἐν οὐρανοῖς ἀνθρώποις DM) ἀπόκειται D ἀσκηθείς om. D; αὐξηθείς coni. Mang., ἄσκησιν conicio 
 <lb/>20 γῆς om. N (in fine lineae) προνοία
 <lb/>61 Α
-<lb/>21 ἐκ] ἕνεκα conicio</note> <note xml:lang="mul" type="footnote">
-<lb/>4 sqq. Lev. 26,3. 4. Deut. 11,13. 14. 18—360,4 DP fol. 368v Φίλωνος DM fol. DR fol. 276r Φίλωνος ἐκ τοῦ περὶ εὐχῆς καὶ εὐλογιῶν. οἶς
-<lb/>6 ἀληθινὸς πλοῦτος—εὐοδεῖν πέφυκεν ἡ κτῆσις. 18—360,6 Ν fol. 160v: οἷς μὲν ὁ ἀληθινὸς αναγκαιον ἕπεται.</note>  
-
-<pb n="v.5.p.360"/>
+<lb/>21 ἐκ] ἕνεκα conicio</note>
+               <note xml:lang="mul" type="footnote">
+                  <lb/>4 sqq. Lev. 26,3. 4. Deut. 11,13. 14. 18—360,4 DP fol. 368v Φίλωνος DM fol. DR fol. 276r Φίλωνος ἐκ τοῦ περὶ εὐχῆς καὶ εὐλογιῶν. οἶς
+<lb/>6 ἀληθινὸς πλοῦτος—εὐοδεῖν πέφυκεν ἡ κτῆσις. 18—360,6 Ν fol. 160v: οἷς μὲν ὁ ἀληθινὸς αναγκαιον ἕπεται.</note>
+               <pb n="v.5.p.360"/>
 καὶ τῶν χειρῶν τὰς ἐπιβολὰς μὴ ἐμποδίζεσθαι πρὸς τὴν τῶν ἀεὶ σπουδαζομένων
- καλῶν κατόρθωσιν.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="105">
-<p>οἷς δὲ ὁ κλῆρος οὐκ ἔστιν οὐράνιος δι’
+ καλῶν κατόρθωσιν.</p>
+         </div>
+         <div n="105" type="section">
+            <p>οἷς δὲ ὁ κλῆρος οὐκ ἔστιν οὐράνιος δι’
 ἀσέβειαν καὶ ἀδικίαν, οὐδὲ τῶν ἐπὶ γῆς ἀγαθῶν εὐοδεῖν πέφυκεν ἡ
 κτῆσις· ἀλλὰ κἂν προσγένηται, τάχιστα ἀπεπήδησεν, ὡς παραγενομένη
 τὴν ἀρχὴν οὐκ ἐπ’ ὠφελείᾳ τῶν λαβόντων, ἀλλ’ ὑπὲρ τοῦ βαρῦναι τὴν <lb n="5"/>
 ἀνίαν σφοδρότερον, ἥτις ἐκ τοῦ στέρεσθαι κατὰ τὸ ἀναγκαῖον ἕπεται.
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="106">
-<p> <milestone unit="altref" n="18"/> τότε δή, φησίν, ὑπὸ τῆς ἄγαν εὐφορίας καὶ ἀφθονίας ὃ νῦν
+</p>
+         </div>
+         <div n="106" type="section">
+            <p>
+               <milestone unit="altref" n="18"/> τότε δή, φησίν, ὑπὸ τῆς ἄγαν εὐφορίας καὶ ἀφθονίας ὃ νῦν
 ὑπομένεις ἐργάσῃ· νῦν μὲν γὰρ μήτε τῶν νόμων μήτε τῶν πατρίων
 ἐθῶν αἰδῶ ποιούμενος ἀλλὰ πάντων ἀθρόως ἀλογῶν ὑστερίζεις μὲν τῶν
 ἀναγκαίων, θεραπεύεις δὲ τὰς τῶν δανειστῶν καὶ ὀβολοστατῶν οἰκίας <lb n="10"/>
- ἐπὶ πολλῷ δανειζόμενος· τότε δ’, ὥσπερ ἔφην, δράσεις τοὐναντίον.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="107">
-<p>ὑπὸ
+ ἐπὶ πολλῷ δανειζόμενος· τότε δ’, ὥσπερ ἔφην, δράσεις τοὐναντίον.</p>
+         </div>
+         <div n="107" type="section">
+            <p>ὑπὸ
 γὰρ ἀφθόνου περιουσίας αὐτὸς ἄλλοις δανειεῖς, καὶ οὐκ ὀλίγα οὐδ’ ὀλίγοις,
 ἀλλὰ πολλὰ καὶ πολλοῖς, ὅλοις μὲν οὖν ἔθνεσι, πάντων καὶ τῶν κατὰ
 πόλιν καὶ τῶν κατὰ χώραν εὐτυχῶς ἀπαντώντων, τῶν μὲν κατὰ πόλιν
@@ -1457,13 +1467,13 @@ License</licence>
 διὰ λόγων καὶ πράξεων κοινωφελοῦς, τῶν δὲ κατ’ ἀγρὸν εὐφορίαις καὶ
 τῶν ἀναγκαίων, σίτου, οἴνου, ἐλαίου, καὶ τῶν πρὸς ἁβροδίαιτον βίον,
 ταῦτα δ’ ἐστὶ τὰ ἀμύθητα γένη τῶν ἀκροδρύων καὶ ἔτι βουκολίων
- αἰπολίων τῶν ἄλλων θρεμμάτων εὐτοκία.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="108">
-<p>ἀλλὰ τί τούτων ὄφελος,
+ αἰπολίων τῶν ἄλλων θρεμμάτων εὐτοκία.</p>
+         </div>
+         <div n="108" type="section">
+            <p>ἀλλὰ τί τούτων ὄφελος,
 εἴποι τις ἄν, τῷ μὴ μέλλοντι κληρονόμους καὶ διαδόχους ἀπολιπεῖν; <lb n="20"/>
-<note xml:lang="mul" type="footnote">
-<lb/>1 τῶν χειρῶν τὰς ἐπιβολὰς D: τὰς τῶν χειρῶν ἐπιβολὰς codd. (v) ἐπιβουλὰς ΡDM 
+               <note xml:lang="mul" type="footnote">
+                  <lb/>1 τῶν χειρῶν τὰς ἐπιβολὰς D: τὰς τῶν χειρῶν ἐπιβολὰς codd. (v) ἐπιβουλὰς ΡDM 
 <lb/>2 καλῶν add. D: om. codd. (v)
 <lb/>3 καὶ ἀδικίαν D: ἡ ἀδικίαν codd. (v) post ἀδικίαν add. καὶ γηίνας μερίμνας ἀπρεπεῖς D
 <lb/>4 κτίσις P ἀπεπήδησεν] ἀπεδήμησεν Α
@@ -1482,39 +1492,40 @@ License</licence>
 <lb/>17 καὶ ἐλαίου Α (Mang.) 
 <lb/>18 βουκόλων Α
 <lb/>19 αἰπόλων F1 corr. F2
-<lb/>20 καὶ διαδόχους ἀπολιπεῖν F: ἀπολιπεῖν καὶ διαδόχους Α, καὶ διαδόχους om. HP (Turn.)</note> <note xml:lang="lat" type="footnote">
-<lb/>12 Deut. 15,6 28,12. 13.14 Deut. 28,3.
-<lb/>16 sqq. Deut. 7,13. 28,4.</note>  
-
-<pb n="v.5.p.361"/>
+<lb/>20 καὶ διαδόχους ἀπολιπεῖν F: ἀπολιπεῖν καὶ διαδόχους Α, καὶ διαδόχους om. HP (Turn.)</note>
+               <note xml:lang="lat" type="footnote">
+                  <lb/>12 Deut. 15,6 28,12. 13.14 Deut. 28,3.
+<lb/>16 sqq. Deut. 7,13. 28,4.</note>
+               <pb n="v.5.p.361"/>
 διὰ τοῦτο ἐπισφραγιζόμενος τὰς εὐεργεσίας φησίν· οὐδεὶς ἄγονος οὐδὲ
 στεῖρα γενήσεται, πάντες δὲ οἱ θεραπευταὶ θεοῦ γνήσιοι νόμον ἐκπληρώσουσι
-φύσεως τὸν ἐπὶ παιδοποιΐᾳ·</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="109">
-<p>καὶ γὰρ ἄνδρες ἔσονται πατέρες καὶ πατέρες εὔπαιδες καὶ γυναῖκες ἔσονται μητέρες καὶ μητέρες εὔτεκνοι, ὡς ἕκαστον
+φύσεως τὸν ἐπὶ παιδοποιΐᾳ·</p>
+         </div>
+         <div n="109" type="section">
+            <p>καὶ γὰρ ἄνδρες ἔσονται πατέρες καὶ πατέρες εὔπαιδες καὶ γυναῖκες ἔσονται μητέρες καὶ μητέρες εὔτεκνοι, ὡς ἕκαστον
 <lb n="5"/> οἶκον πλήρωμα εἶναι πολυανθρώπου συγγενείας, μηδενὸς ἐλλειφθέντος ἢ
 μέρους ἢ ὀνόματος τῶν ὅσα ἐπιφημίζεται τοῖς προσήκουσι, καὶ πρὸς
 τοὺς ἄνω, γονεῖς, θείους, πάππους, καὶ πρὸς τοὺς κάτω πάλιν ὁμοίως,
  <add>υἱούς</add>, ἀδελφούς, ἀδελφιδοῦς, υἱωνούς, θυγατριδοῦς, ἀνεψιούς,  <milestone unit="altpage2" n="p.426 M."/> ἀνεψιαδοῦς,
-τοὺς ἐξ αἵματος πάντας.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="110">
-<p>ὠκύμορος δ’ ἢ ἀτελὴς οὐδεὶς ἂν γένοιτο <lb n="10"/> τῶν κοσμουμένων τοῖς νόμοις οὐδέ τινος ἡλικίας ἄμοιρος ὧν ὁ θεὸς
+τοὺς ἐξ αἵματος πάντας.</p>
+         </div>
+         <div n="110" type="section">
+            <p>ὠκύμορος δ’ ἢ ἀτελὴς οὐδεὶς ἂν γένοιτο <lb n="10"/> τῶν κοσμουμένων τοῖς νόμοις οὐδέ τινος ἡλικίας ἄμοιρος ὧν ὁ θεὸς
 ἔνειμεν ἀνθρώπων γένει· ἀλλ’ ἐκ βρέφους ἐπαινὼν ἑξῆς ὥσπερ δι’ ἀναβαθμῶν,
 τεταγμέναις χρόνων περιόδοις ἑκάστης ἡλικίας τοὺς ὁρισθέντας
 ἀριθμοὺς συνεκπληρώσας, ἐπὶ τὴν τελευταίαν ἀφίξεται τὴν θανάτῳ
 μᾶλλον δ’ ἀθανασίᾳ γειτνιῶσαν, ὁ πρὸς ἀλήθειαν εὔγηρως, εὔπαιδα καὶ
-<lb n="15"/> πολύπαιδα οἶκον ἀνθ’ αὑτοῦ καταλιπών. </p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="111">
-<p><milestone unit="altref" n="19"/> τοῦτ’ ἐστὶν ὅπερ εἶπέ που προθεσπίζων, ὅτι "τὸν ἀριθμὸν τῶν ἡμερῶν σου ἀναπληρώσεις“
+<lb n="15"/> πολύπαιδα οἶκον ἀνθ’ αὑτοῦ καταλιπών. </p>
+         </div>
+         <div n="111" type="section">
+            <p>
+               <milestone unit="altref" n="19"/> τοῦτ’ ἐστὶν ὅπερ εἶπέ που προθεσπίζων, ὅτι "τὸν ἀριθμὸν τῶν ἡμερῶν σου ἀναπληρώσεις“
 (Exod. 23, 26), παγκάλως χρησάμενος τοῖς ὀνόμασι κυρίοις ἅμα καὶ
 προσφυέσιν. ὁ μὲν γὰρ ἀμαθὴς καὶ ἔκνομος „οὔτ’ ἐν λόγῳ,“ φασίν,
 „οὔτ’ ἐν ἀριθμῷ“, τῷ δὲ παιδείας καὶ νόμων ἱερῶν μεταποιουμένῳ
 <lb n="20"/> πρώτη χάρις ἐστὶν ἐλλογίμῳ καὶ δοκίμῳ φανέντι μεταλαχεῖν ἀριθμοῦ
 <note xml:lang="mul" type="footnote">
-<lb/>1 διὰ τοῦτο ἐπισφραγιζόμενος F: διὰ τοῦτο post φησὶ transp. Α, διὰ τοῦτο om. HP ἐπισφρ. διὰ τοῦτο Mang.)
+                  <lb/>1 διὰ τοῦτο ἐπισφραγιζόμενος F: διὰ τοῦτο post φησὶ transp. Α, διὰ τοῦτο om. HP ἐπισφρ. διὰ τοῦτο Mang.)
 <lb/>3 ἐπὶ παιδογονία F ἔσονται ἄνδρες transp. Α 3,
 <lb/>4 καὶ πατέρες εὔπαιδες om. Α
 <lb/>4 καὶ γυναῖκες ἔσονται μητέρες καὶ μητέρες εὔτεκνοι F: καὶ γυναῖκες μητέρες εὔτεκνοι Α (Mang.), καὶ μητέρες εὔτεκνοι (cet. om.) HP (Turn.) 4.
@@ -1532,49 +1543,50 @@ License</licence>
 <lb/>16 προθεσπίζων FA: θεσπίζων HP (v) ἀναπληρώσεις Α: ἀναπλήσεις FHP (v) ; ἀναπληρώσω LXX 17.
 <lb/>18 κυρίως ἅμα καὶ προσφυῶς F
 <lb/>18 φασίν scripsi: φησίν codd. (v)
-<lb/>19 μεταποιουμένῳ] ἁπτομένῳ Α</note> <note xml:lang="mul" type="footnote">
-<lb/>1 Exod. 23,26. Deut. 7, 14. 18.
+<lb/>19 μεταποιουμένῳ] ἁπτομένῳ Α</note>
+               <note xml:lang="mul" type="footnote">
+                  <lb/>1 Exod. 23,26. Deut. 7, 14. 18.
 <lb/>19 οὔτ’ ἐν λόγῳ οὔτ’ ἐν ἀριθμῷ: Orac. ap. Phot. (Suid.) s. v. ὑμεῖς, (0 Μεγαρεῖς, οὔτε τρίτοι οὔτε τέταρτοι. Schol. Theocr. 14,48. Iamblich. Vit. Pythag.
-<lb/>35 (259).</note>  
-
-<pb n="v.5.p.362"/>
- καὶ τάξεως.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="112">
-<p>ὑπερφυῶς δὲ ἔχει καὶ ἡ πλήρωσις οὐ μηνῶν ἢ ἐνιαυτῶν
+<lb/>35 (259).</note>
+               <pb n="v.5.p.362"/>
+ καὶ τάξεως.</p>
+         </div>
+         <div n="112" type="section">
+            <p>ὑπερφυῶς δὲ ἔχει καὶ ἡ πλήρωσις οὐ μηνῶν ἢ ἐνιαυτῶν
 ἀλλ’ ἡμερῶν, ὡς δέον ἑκάστην ἡμέραν τοῦ σπουδαίου μηδὲν ἔρημον καὶ
 κενὸν ἐᾶν εἰς πάροδον ἁμαρτημάτων, ἀλλὰ πᾶσι τοῖς μέρεσι καὶ διαστήμασιν
 ἑαυτῆς καλοκἀγαθίας πεπληρῶσθαι· κρίνεται γὰρ οὐ ποσότητι
 ἀλλὰ ποιότητι ἡ ἀρετὴ καὶ τὸ καλόν. ὅθεν ἰσότιμον καλῷ βίῳ σοφοῦ <lb n="5"/>
- καὶ μίαν ἡμέραν ὑπέλαβεν εἶναι κατορθουμένην.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="113">
-<p>τοῦτ’ ἐστὶν ὃ καὶ ἐν
+ καὶ μίαν ἡμέραν ὑπέλαβεν εἶναι κατορθουμένην.</p>
+         </div>
+         <div n="113" type="section">
+            <p>τοῦτ’ ἐστὶν ὃ καὶ ἐν
 ἑτέροις αἰνίττεται φάσκων εὐλογίας ἄξιον ἔσεσθαι καὶ εἰσιόντα καὶ ἐξιόντα
 τὸν τοιοῦτον ἄνδρα, διότι πάσαις μὲν ταῖς κινήσεσι πάσαις δὲ ταῖς
 σχέσεσιν ὁ σπουδαῖος ἐπαινετός, ἔνδον τε καὶ ἔξω, πολιτικὸς ὁμοῦ καὶ
 οἰκονόμος, ὡς τὰ μὲν ἔνδον ἐξορθοῦν οἰκονομικῶς, τὰ δ’ ἔξω πολιτικῶς, <lb n="10"/>
- ᾗ συμφέρον ἐπανορθοῦσθαι.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="114">
-<p>ἐὰν μὲν οὖν εἷς ἀνὴρ τυγχάνῃ τοιοῦτος
+ ᾗ συμφέρον ἐπανορθοῦσθαι.</p>
+         </div>
+         <div n="114" type="section">
+            <p>ἐὰν μὲν οὖν εἷς ἀνὴρ τυγχάνῃ τοιοῦτος
 ὢν ἐν πόλει, τῆς πόλεως ὑπεράνω φανεῖται, ἐὰν δὲ πόλις, τῆς ἐν κύκλῳ
 χώρας, ἐὰν δὲ ἔθνος, ἐπιβήσεται πᾶσιν ἔθνεσιν ὥσπερ κεφαλὴ σώματι
 τοῦ περιφαίνεσθαι χάριν, οὐχ ὑπὲρ εὐδοξίας μᾶλλον ἢ τῆς τῶν ὁρώντων
 ὠφελείας· αἱ γὰρ συνεχεῖς τῶν καλῶν παραδειγμάτων φαντασίαι παραπλησίας <lb n="15"/>
 εἰκόνας ἐγχαράττουσι ταῖς μὴ πάνυ σκληραῖς καὶ ἀποκρότοις
- ψυχαῖς.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="115">
-<p>ὅθεν εἴρηται πρὸς τοὺς ἐθέλοντας μιμεῖσθαι τὰ σπουδαῖα καὶ
+ ψυχαῖς.</p>
+         </div>
+         <div n="115" type="section">
+            <p>ὅθεν εἴρηται πρὸς τοὺς ἐθέλοντας μιμεῖσθαι τὰ σπουδαῖα καὶ
 θαυμαστὰ κάλλη μὴ ἀπογινώσκειν τὴν ἀμείνω μεταβολὴν μηδὲ τὴν
 ὥσπερ ἐκ διασπορᾶς ψυχικῆς ἣν εἰργάσατο κακία πρὸς ἀρετὴν καὶ
- σοφίαν ἐπάνοδον· ἵλεως γὰρ ὅταν ᾖ ὁ θεός, ἐξευμαρίζεται πάντα.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="116">
-<p><milestone unit="altpage1" n="p. 42"/>  γίνεται
+ σοφίαν ἐπάνοδον· ἵλεως γὰρ ὅταν ᾖ ὁ θεός, ἐξευμαρίζεται πάντα.</p>
+         </div>
+         <div n="116" type="section">
+            <p>
+               <milestone unit="altpage1" n="p. 42"/>  γίνεται
 <note xml:lang="mul" type="footnote">
-<lb/>1 ὑπερφυῶς—ἡμερῶν (2) om. HP (Turn.) μηνῶν] μονῶν Α
+                  <lb/>1 ὑπερφυῶς—ἡμερῶν (2) om. HP (Turn.) μηνῶν] μονῶν Α
 <lb/>2 ὡς δέον FHP: ὡς δὲ Α ὡς δὴ Mang.) 2.3 ἔρημον καὶ κενὸν ἐᾶν AHP: ἔχειν ἔρημον καὶ κενόν F
 <lb/>4 ἑαυτῆς ’P: αὐτῆς Η2 (v) 4.
 <lb/>5 ποσότητος . . . ποιότητος Η (Turn.)
@@ -1588,44 +1600,44 @@ License</licence>
 <lb/>17 ὅθεν Y: ὅθεν ὥσπερ Α, ὥσπερ Η1Ρ, ὅπερ Η2 (v) εἴρηται 2 εὕρηται FAH1P
 <lb/>18 τὰ θαυμαστὰ F ἀπογινώσκειν scripsi: ἀπογινώσκεσθαι codd. μηδὲ F: μήτε AHP (v) τὴν] τῆς F
 <lb/>19 ψυχικῆς. FHP: ψυχῆς Α (Mang.) κακίαν Α
-<lb/>20 ἐξευμαρίζει couicio</note> <note xml:lang="lat" type="footnote">5.
+<lb/>20 ἐξευμαρίζει couicio</note>
+               <note xml:lang="lat" type="footnote">5.
 <lb/>6 cf. Quaest. in Exod. II §
 <lb/>20 Optimum utique non mensibus neque secundum numeros (? annos?) supputare vitam cultorum dei sed diebus, qui sunt plane aequi honoris cum ipso aeterno supputati ac connumerati. Posidon. ap. Senec. Epist. 78,25 unus dies hominum eruditorum plus patet quam imperitis longissima aetas. Cic. Tusc. V
 <lb/>5 est autem unus dies bene et ex praeceptis tuis (scil. philosophiae) actus peccanti immortalitati anteponendus.
-<lb/>7 Deut. 28,6.</note>  
-
-<pb n="v.5.p.363"/>
+<lb/>7 Deut. 28,6.</note>
+               <pb n="v.5.p.363"/>
 δὲ ἵλεως τοῖς αἰδουμένοις καὶ μεθορμιζομένοις ἐξ ἀκρασίας εἰς ἐγκράτειαν
 καὶ τὰ μὲν τῆς ὑπαιτίου ζωῆς κακίζουσι καὶ ὅσα ἐναπεμάξαντο
 ταῖς ψυχαῖς αἰσχρὰ εἴδωλα μυσαττομένοις, εὐδίαν δὲ παθῶν ἐζηλωκόσι
-καὶ γαλήνην καὶ εἰρήνην βίου μετατρέχουσι.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="117">
-<p>καθάπερ οὖν ἀνθρώπους <lb n="5"/> ἐν ἐσχατιαῖς ἀπῳκισμένους ῥᾳδίως <add>ἂν</add> ἑνὶ κελεύσματι συναγάγοι ὁ θεὸς
+καὶ γαλήνην καὶ εἰρήνην βίου μετατρέχουσι.</p>
+         </div>
+         <div n="117" type="section">
+            <p>καθάπερ οὖν ἀνθρώπους <lb n="5"/> ἐν ἐσχατιαῖς ἀπῳκισμένους ῥᾳδίως <add>ἂν</add> ἑνὶ κελεύσματι συναγάγοι ὁ θεὸς
 ἀπὸ περάτων εἰς ὅ τι ἂν θελήσῃ χωρίον, οὕτω καὶ τὸν νοῦν ἐξ ἄλης
 πολυχρονίου πάντῃ πλανηθέντα καὶ κακωθέντα πρὸς ἡδονῆς καὶ ἐπιθυμίας,
 δεσποινῶν ἐκτετιμημένων, ἐλεῶν ὁ σωτὴρ ἐξ ἀνοδίας εἰς ὁδὸν
 εὐπετῶς ἂν ἀγάγοι, ἀμεταστρεπτὶ φεύγειν διεγνωκότα φυγήν, οὐ τὴν
 <lb n="10"/> ἐπονείδιστον λεγομένην, ἀλλὰ τὴν σωτήριον, ἣν οὐκ ἄν τις ἁμάρτοι λέγων
 καθόδου κρείττονα.</p>
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="118">
-<p><milestone unit="altref" n="20"/> Τὰ μὲν οὖν ἐκτὸς ἀγαθὰ εἴρηται, νῖκαι κατ’ ἐχθρῶν, κράτη πολέμων, εἰρήνης βεβαιώσεις καὶ τῶν κατ’ εἰρήνην ἀγαθῶν περιουσίαι,
+         </div>
+         <div n="118" type="section">
+            <p>
+               <milestone unit="altref" n="20"/> Τὰ μὲν οὖν ἐκτὸς ἀγαθὰ εἴρηται, νῖκαι κατ’ ἐχθρῶν, κράτη πολέμων, εἰρήνης βεβαιώσεις καὶ τῶν κατ’ εἰρήνην ἀγαθῶν περιουσίαι,
 πλοῦτοι καὶ τιμαὶ καὶ ἀρχαὶ καὶ τὰ παρεπόμενα τοῖς εὖ πράττουσιν
 <lb n="15"/> ἐγκώμια, διὰ παντὸς στόματος καὶ φίλων καὶ δυσμενῶν ἐπαινουμένοις,
 τῶν μὲν διὰ φόβον, τῶν δὲ δι’ εὔνοιαν· λεκτέον δὲ καὶ τὰ τούτων
-οἰκειότερα, τὰ περὶ σῶμα.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="119">
-<p>φησὶν οὖν, ὅτι τοῖς ἀρετὴν διαπονοῦσι καὶ τοὺς ἱεροὺς νόμους ἡγεμόνας τῶν κατὰ τὸν βίον λόγων καὶ ἔργων προστησαμένοις
+οἰκειότερα, τὰ περὶ σῶμα.</p>
+         </div>
+         <div n="119" type="section">
+            <p>φησὶν οὖν, ὅτι τοῖς ἀρετὴν διαπονοῦσι καὶ τοὺς ἱεροὺς νόμους ἡγεμόνας τῶν κατὰ τὸν βίον λόγων καὶ ἔργων προστησαμένοις
 ἰδίᾳ τε καὶ κοινῇ περιέσται τὸ εἰς ἅπαν ἄνοσον· εἰ δὲ καὶ
 <lb n="20"/> γένοιτό τις ἀσθένεια, τοῦ μὲν κακῶσαι χάριν οὐκ ἂν γένοιτο, τοῦ δ’
 ὑπομνῆσαι τὸν θνητὸν ὅτι θνητός ἐστιν, εἰς ὑπεραύχου φρονήματος
 κατάλυσιν καὶ βελτίωσιν ἠθῶν· ὑγείᾳ δ’ ἕψεται καὶ εὐαισθησία καὶ τὸ
 ἐν ἅπασι τοῖς μέρεσιν ὁλόκληρον καὶ παντελές, εἰς τὰς πρὸς ὃ γέγονεν
 <note xml:lang="mul" type="footnote">
-<lb/>1 μεθορμιζομένοις F: μεθαρμοζομένοις AHP (v)
+                  <lb/>1 μεθορμιζομένοις F: μεθαρμοζομένοις AHP (v)
 <lb/>4 γαλήνην καὶ εἰρήνην F: εἰρήνην καὶ γαλήνην AHP (v)
 <lb/>5 αἰσχατιαῖς F ἂν add. Turn., om. codd. ὁ θεός FA: θεός HP (v)
 <lb/>6 ἀπό περάτων om. P ἐξ ἄλης H2: ἐξ ἄλλης FH1P, ἐκ ζάλης Α
@@ -1643,45 +1655,46 @@ License</licence>
 <lb/>19 συστησαμένοις F 
 <lb/>20 οὐκ ἂν γένοιτο F: οὐκ ἂν γένοιτ’ ἄν AHP (v)
 <lb/>21 ἐστιν] εἶ Α
-<lb/>23 γέγονεν A: σ προγέγονεν FP (v), προγέγονεν H, προσγέγονεν L</note> <note xml:lang="lat" type="footnote">
-<lb/>19 Deut. 7,15.</note>  
-
-<pb n="v.5.p.364"/>
- ἕκαστον ἀκωλύτους ὑπηρεσίας.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="120">
-<p>ἐδικαίωσε γὰρ ὁ θεὸς γέρας τῷ σπουδαίῳ
+<lb/>23 γέγονεν A: σ προγέγονεν FP (v), προγέγονεν H, προσγέγονεν L</note>
+               <note xml:lang="lat" type="footnote">
+                  <lb/>19 Deut. 7,15.</note>
+               <pb n="v.5.p.364"/>
+ ἕκαστον ἀκωλύτους ὑπηρεσίας.</p>
+         </div>
+         <div n="120" type="section">
+            <p>ἐδικαίωσε γὰρ ὁ θεὸς γέρας τῷ σπουδαίῳ
 παρασχεῖν εὖ συνῳκοδομημένην καὶ συνηρμοσμένην ἐκ θεμελίων
 ἄχρι στέγους οἰκίαν — οἰκία δὲ ψυχῆς συμφυεστάτη σῶμα — διά τε
 πολλὰ τῶν εἰς τὸν βίον ἀναγκαίων καὶ χρησίμων καὶ μάλιστα διὰ τόνδε
- τὸν καθάρσεσι τελείαις νοῦν καθαρθέντα·</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="121">
-<p><add>ὃν</add> καὶ μύστην γεγονότα τῶν <lb n="5"/>
+ τὸν καθάρσεσι τελείαις νοῦν καθαρθέντα·</p>
+         </div>
+         <div n="121" type="section">
+            <p>
+               <add>ὃν</add> καὶ μύστην γεγονότα τῶν <lb n="5"/>
 θείων τελετῶν καὶ συμπεριπολοῦντα ταῖς τῶν οὐρανίων χορείαις καὶ
 περιόδοις ἐγέραρεν ὁ θεὸς ἠρεμίᾳ, βουληθεὶς ἀμέθεκτον εἶναι, κηραίνοντα
 περὶ μηδὲν πάθος ὧν αἱ τοῦ σώματος γεννῶσιν ἀνάγκαι ἐπιτιθέμεναι
 κατὰ πλεονεξίαν παθῶν δυναστείας· <milestone unit="altpage1" n="p. 428 M."/>  ἢ γὰρ περιέψυξέ τι ἢ
 περιέφλεξε[ν οὐρανὸς] καὶ αὐχμηρὸν ἢ τοὐναντίον ῥοῶδες ἀπειργάσατο· <lb n="10"/>
 δι’ ὧν ἁπάντων ὁ νοῦς εὐθύνειν ἀδυνατεῖ τὴν τοῦ καθ’ αὑτὸν βίου
- πορείαν.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="122">
-<p>ἐνδιαιτώμενος δὲ ὑγιεινῷ σώματι κατὰ πολλὴν εὐμάρειαν
+ πορείαν.</p>
+         </div>
+         <div n="122" type="section">
+            <p>ἐνδιαιτώμενος δὲ ὑγιεινῷ σώματι κατὰ πολλὴν εὐμάρειαν
 ἐνδιατρίψει καὶ ἐνσχολάσει τοῖς σοφίας θεωρήμασι, μακαρίας καὶ εὐδαίμονος
 ζωῆς ἐπιλαχών· οὗτός ἐστιν ὁ πολὺν ἄκρατον σπάσας τῆς
 εὐεργέτιδος τοῦ θεοῦ δυνάμεως καὶ λόγων ἱερῶν καὶ δογμάτων ἑστιαθείς· <lb n="15"/>
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="123">
-<p>οὗτος ᾧ φησιν ὁ προφήτης τὸν θεὸν "ἐμπεριπατεῖν" οἷα βασιλείῳ,
+            </p>
+         </div>
+         <div n="123" type="section">
+            <p>οὗτος ᾧ φησιν ὁ προφήτης τὸν θεὸν "ἐμπεριπατεῖν" οἷα βασιλείῳ,
 καὶ γάρ ἐστι τῷ ὄντι βασίλειον καὶ οἶκος θεοῦ σοφοῦ διάνοια· τούτου
 καλεῖται θεὸς ἰδίως ὁ τῶν συμπάντων θεός, καὶ λαὸς ἐξαίρετος πάλιν
 οὗτος, οὐ τῶν κατὰ μέρος ἀρχόντων, ἀλλὰ τοῦ ἑνὸς καὶ πρὸς ἀλήθειαν
- ἄρχοντος, ἁγίου ἅγιος·</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="124">
-<p>οὗτός ἐστιν ὁ πρὸ μικροῦ πολλαῖς μὲν <lb n="20"/>
+ ἄρχοντος, ἁγίου ἅγιος·</p>
+         </div>
+         <div n="124" type="section">
+            <p>οὗτός ἐστιν ὁ πρὸ μικροῦ πολλαῖς μὲν <lb n="20"/>
 ἡδοναῖς, πολλαῖς δ’ ἐπιθυμίαις, μυρίαις δ’ ἀνάγκαις κακιῶν καὶ
 <note xml:lang="mul" type="footnote">1.2 σπουδαίω F: τοῖς σπουδαίοις AHP (v)
 <lb/>2 συνηρμοσμένην καὶ συνοικοδομουμένην οἰκίαν Α
@@ -1696,46 +1709,45 @@ License</licence>
 <lb/>10 περιέφλεξεν οὐρανὸς Α (Mang.): αὖον FUP (Turn.) ; οὐρανὸς seclusi
 <lb/>15 τοῦ om. Α
 <lb/>16 οὗτος ᾧ] τούτων οὑν Α φησιν: hic desinit F, cetera supplevit man. rcc. (lacobus Diassorimis)
-<lb/>18 ἐξαίρετος Α: ἐξαίρετος χάριτι HP ἐξαιρέτῳ χάριτι v)</note> <note xml:lang="mul" type="footnote">16—18 Lev. 26,12. 17.
+<lb/>18 ἐξαίρετος Α: ἐξαίρετος χάριτι HP ἐξαιρέτῳ χάριτι v)</note>
+               <note xml:lang="mul" type="footnote">16—18 Lev. 26,12. 17.
 <lb/>18 DR fol. 195v Anton. Mel. II
-<lb/>87 Col. 1209 Φίλωνοζι οἶκος θεοῦ σοφοῦ διάνοια· τούτου καλεῖται θεὸς ἰδίως ὁ τῶν συμπάντων, ὥς ὅ DR) φησιν ὁ προφήτης, ὡς (ᾧ?) θεὸς (ὁ θεὸς DR) ἐμπεριπατεῖ οἷα βασιλείῳ (16). DR fol. 137r ἔστι γὰρ τῷ ὄντι βασίλειον καὶ οἶκος θεοῦ σοφοῦ διάνοια, ὥς φησιν ὁ προφήτης τόν θεὸν ἐμπεριπατεῖν οἷα βασιλείῳ. τούτου καλεῖται θεὸς ὁ τῶν συμπάντων ἵδιος.</note>  
-
-<pb n="v.5.p.365"/>
+<lb/>87 Col. 1209 Φίλωνοζι οἶκος θεοῦ σοφοῦ διάνοια· τούτου καλεῖται θεὸς ἰδίως ὁ τῶν συμπάντων, ὥς ὅ DR) φησιν ὁ προφήτης, ὡς (ᾧ?) θεὸς (ὁ θεὸς DR) ἐμπεριπατεῖ οἷα βασιλείῳ (16). DR fol. 137r ἔστι γὰρ τῷ ὄντι βασίλειον καὶ οἶκος θεοῦ σοφοῦ διάνοια, ὥς φησιν ὁ προφήτης τόν θεὸν ἐμπεριπατεῖν οἷα βασιλείῳ. τούτου καλεῖται θεὸς ὁ τῶν συμπάντων ἵδιος.</note>
+               <pb n="v.5.p.365"/>
 ἐπιθυμιῶν ὑπεζευγμένος· τούτου τὰ κακὰ τῆς δουλείας συνέτριψεν ὁ θεὸς
 εἰς ἐλευθερίαν ἐξαιρούμενος· οὗτος ὁ μὴ ἀπαρρησιάστου τυχὼν εὐεργεσίας
 ἀλλὰ διαβεβοημένης καὶ περιηγγελμένης πάντῃ διὰ τὴν τοῦ
 προασπίζοντος ἐξουσίαν, ὑφ’ ἧς οὐχ ὑπεσύρη πρὸς τὰ οὐραῖα, ἀλλ’ ἐπὶ
-<lb n="5"/> κεφαλὴν ἄνω παρεπέμφθη.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="125">
-<p>ταῦτα δ’ ἀλληγορεῖται τροπικῶς ἐξενεχθέντα· καθάπερ γὰρ ἐν ζῴῳ κεφαλὴ μὲν πρῶτον καὶ ἄριστον, οὐρὰ δ’ ὕστατον
+<lb n="5"/> κεφαλὴν ἄνω παρεπέμφθη.</p>
+         </div>
+         <div n="125" type="section">
+            <p>ταῦτα δ’ ἀλληγορεῖται τροπικῶς ἐξενεχθέντα· καθάπερ γὰρ ἐν ζῴῳ κεφαλὴ μὲν πρῶτον καὶ ἄριστον, οὐρὰ δ’ ὕστατον
 καὶ φαυλότατον, οὐ μέρος συνεκπληροῦν τὸν τῶν μελῶν ἀριθμόν, ἀλλὰ
 σόβησις τῶν ἐπιποτωμένων, τὸν αὐτὸν τρόπον κεφαλὴν μὲν τοῦ ἀνθρωπείου
 γένους ἔσεσθαί φησι τὸν σπουδαῖον εἴτε ἄνδρα εἴτε λαόν, τοὺς
 <lb n="10"/> δὲ ἄλλους ἅπαντας οἷον μέρη σώματος ψυχούμενα ταῖς ἐν κεφαλῇ καὶ
 ὑπεράνω δυνάμεσιν.</p>
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="126">
-<p>Αὗται μὲν αἱ ὑπὲρ τῶν ἀνθρώπων τῶν ἀγαθῶν εἰσιν εὐχαὶ καὶ τοὺς νόμους ἔργοις ἐπιτελούντων, ἅς φησι τελεσφορηθήσεσθαι χάριτι
+         </div>
+         <div n="126" type="section">
+            <p>Αὗται μὲν αἱ ὑπὲρ τῶν ἀνθρώπων τῶν ἀγαθῶν εἰσιν εὐχαὶ καὶ τοὺς νόμους ἔργοις ἐπιτελούντων, ἅς φησι τελεσφορηθήσεσθαι χάριτι
 τοῦ φιλοδώρου θεοῦ τὰ καλὰ διὰ τὴν πρὸς αὑτὸν ὁμοιότητα σεμνοποιοῦντος
 <lb n="15"/> καὶ γεραίροντος· τὰς δὲ κατὰ τῶν ἐκνόμων καὶ ἀθέσμων
 ὁρισθείσας ἀρὰς ἐπισκεπτέον.</p>
-
- </div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="127">
-<head>Περὶ ἀρῶν.</head>
-<p><milestone unit="altref" n="1"/>  <milestone unit="altpage2" n="p. 429 Μ."/> Πρώτην ἀρὰν ὡς κουφότατον κακὸν ἀναγράφει πενίαν καὶ ἔνδειαν καὶ σπάνιν τῶν ἀναγκαίων καὶ μετουσίαν παντελοῦς ἀπορίας·
+         </div>
+         <div n="127" type="section">
+            <head>Περὶ ἀρῶν.</head>
+            <p>
+               <milestone unit="altref" n="1"/>
+               <milestone unit="altpage2" n="p. 429 Μ."/> Πρώτην ἀρὰν ὡς κουφότατον κακὸν ἀναγράφει πενίαν καὶ ἔνδειαν καὶ σπάνιν τῶν ἀναγκαίων καὶ μετουσίαν παντελοῦς ἀπορίας·
 <lb n="20"/> τὸν γὰρ σπόρον, φησίν, ἀτελῆ μὲν ὄντα δῃώσουσι, τελειωθέντα δ’
 ἀμήσουσιν ἐξαίφνης ἐπελθόντες πολέμιοι, διττὴν ἐργασάμενον συμφοράν,
 λιμὸν μὲν φίλοις, ἐχθροῖς δὲ περιουσίαν· λυπεῖ γὰρ μᾶλλον ἢ οὐχ
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="128">
-<p>ἧττον τῶν ἰδίων κακῶν τῶν δυσμενῶν τὰ ἀγαθά. καὶ ἡσυχαζόντων δὲ
+</p>
+         </div>
+         <div n="128" type="section">
+            <p>ἧττον τῶν ἰδίων κακῶν τῶν δυσμενῶν τὰ ἀγαθά. καὶ ἡσυχαζόντων δὲ
 <note xml:lang="mul" type="footnote">
-<lb/>1 συνεζευγμένος Α τῆς δουλείας HP: κἀν τῆ δουλεία Α (Mang.)
+                  <lb/>1 συνεζευγμένος Α τῆς δουλείας HP: κἀν τῆ δουλεία Α (Mang.)
 <lb/>3 ἀλλὰ διαβεβοημένης om. H (Turn.)
 <lb/>4 ἐξουσίαν codd.: ὑπερουσίαν Turn. ὑφ’ om. Turn. 6.
 <lb/>7 ὕστατόν τε καὶ A
@@ -1748,47 +1760,47 @@ License</licence>
 <lb/>17 tit. περὶ ἀρῶν Η, τοῦ αὐτοῦ περὶ ἀρῶν P, τοῦ αὐτοῦ φίλωνος περὶ ἀρῶν Α
 <lb/>19 ἀπορίας HP: ἀπωλείας Α
 <lb/>21 ἀμύσουσιν 1 ἐργασάμενον scripsi: ἐργασάμενοι codd., ἐργασόμενοι v
-<lb/>23 τῶν δυσμενῶν τὰ ἀγαθά A: τά δυσμενῶν ἀγαθά HP (v) δὲ Α: μὲν HP (v)</note> <note xml:lang="lat" type="footnote">
-<lb/>1 Lev. 26,13.
+<lb/>23 τῶν δυσμενῶν τὰ ἀγαθά A: τά δυσμενῶν ἀγαθά HP (v) δὲ Α: μὲν HP (v)</note>
+               <note xml:lang="lat" type="footnote">
+                  <lb/>1 Lev. 26,13.
 <lb/>4 Deut. 28,13.
-<lb/>18 sqq. Lev. 26,16. Deut. 28,20.</note>  
-
-<pb n="v.5.p.366"/>
+<lb/>18 sqq. Lev. 26,16. Deut. 28,20.</note>
+               <pb n="v.5.p.366"/>
 τῶν ἐχθρῶν οὐχ ἡσυχάσουσιν αἱ ἐκ φύσεως ἀργαλεώτεραι ζημίαι· σὺ
 μὲν γὰρ κατασπείρεις τὴν βαθύγειον τῆς πεδιάδος, ἀκρίδων δὲ νέφος
 ἐξαίφνης καταπτάμενον ἐκθερίσει καὶ τὰ ὑπολειφθέντα πολλοστὸν εἰς
 συγκομιδὴν ἔσται μέρος τῶν σπαρέντων· καὶ σὺ μὲν ἀμπελῶνα φυτεύεις
 δαπάναις ἀφειδέσι <add>καὶ</add> κακοπαθείαις ἀτρύτοις, ἃς εἰκὸς γεωπόνους <lb n="5"/>
 ἀναδέχεσθαι, τελειωθέντα δὲ ἤδη καὶ βλαστάνοντα καὶ βρίθοντα ὑπ’
- εὐφορίας σκώληκες ἐπιγενόμενοι τρυγήσουσι.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="129">
-<p>τοὺς ἐλαιῶνας ὅταν ἴδῃς
+ εὐφορίας σκώληκες ἐπιγενόμενοι τρυγήσουσι.</p>
+         </div>
+         <div n="129" type="section">
+            <p>τοὺς ἐλαιῶνας ὅταν ἴδῃς
 εὐθηνοῦντας καὶ καρπῶν ἄφθονον πλῆθος, ἡσθήσῃ, ὥσπερ εἰκός, δι’
 ἐλπίδα συγκομιδῆς εὐτυχοῦς, ὅταν δὲ ἄρξῃ συγκομίζειν, αἰσθήσῃ τῆς
 ἀτυχίας μᾶλλον ἢ τῆς ἀσεβείας· τὸ μὲν γὰρ ἔλαιον καὶ ὅσον πῖον <lb n="10"/>
 ἐκρυήσεται σύμπαν ἀφανῶς, ὁ δ’ ἐκτὸς ὄγκος αὐτὸς εἰς ἀπάτην ψυχῆς
 κενὸς κενῆς ὑπολειφθήσεται. καὶ συνόλως ὅσα σπαρτὰ ἢ δένδρα καρποῖς
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="130">
-<p> αὐτοῖς ἐξαναλωθήσεται πρὸς ἐρυσίβης. <milestone unit="altref" n="2"/> ἐφεδρεύουσι δὲ καὶ ἄλλαι
+</p>
+         </div>
+         <div n="130" type="section">
+            <p> αὐτοῖς ἐξαναλωθήσεται πρὸς ἐρυσίβης. <milestone unit="altref" n="2"/> ἐφεδρεύουσι δὲ καὶ ἄλλαι
 συμφοραὶ δίχα τῶν εἰρημένων, ἐνδείας καὶ ἀπορίας δημιουργοί. δι’ ὧν
 γὰρ ἀνθρώποις ἡ φύσις ἐχορήγει τὰ ἀγαθά, στειρωθήσεται, γῆ καὶ <lb n="15"/>
 οὐρανός, ἡ μὲν ἀμβλίσκουσα καὶ τελειογονεῖν ἀδυνατοῦσα τοὺς καρπούς,
 ὁ δὲ μεταβεβηκὼς εἰς ἀγονίαν, τῶν ἐτησίων ὡρῶν μὴ χειμῶνος, μὴ
 θέρους, μὴ ἔαρος, μὴ μετοπώρου πρὸς τὰς οἰκείας τάξεις ἀνιόντων, ἀλλ’
 εἰς ἄποιον καὶ πεφορημένην σύγκρισιν βιασθέντων ἀποκριθῆναι δεσποτικοῦ
- κράτους ἀρχῇ. οὐ γὰρ ὄμβρος, οὐχ</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="131">
-<p>ὑετός, οὐ λεπτὴ ψεκάς, οὐ βραχεῖα <lb n="20"/>
+ κράτους ἀρχῇ. οὐ γὰρ ὄμβρος, οὐχ</p>
+         </div>
+         <div n="131" type="section">
+            <p>ὑετός, οὐ λεπτὴ ψεκάς, οὐ βραχεῖα <lb n="20"/>
 λιβάς, οὐ δρόσος, οὐκ ἄλλο τι τῶν αὔξειν δυναμένων ἐπιγενήσεται,
 τοὐναντίον δὲ ὅσα λυμαντικὰ μὲν φυομένων, φθοροποιὰ δὲ καρπῶν καταπεπανθέντων
 καὶ ἵνα μὴ τελειωθῇ παρεσκευασμένα· „θήσω“ γάρ φησι
 „τὸν οὐρανὸν ὑμῖν χαλκοῦν καὶ τὴν γῆν σιδηρᾶν“ (Lev. 26, 19.
 <note xml:lang="mul" type="footnote">
-<lb/>1 ἡσυχάσουσιν HP (coni. Μang.): ἡσυχάζουσιν Α (v) post ἀργαλεώτεραι add. δέ v, om. codd.
+                  <lb/>1 ἡσυχάσουσιν HP (coni. Μang.): ἡσυχάζουσιν Α (v) post ἀργαλεώτεραι add. δέ v, om. codd.
 <lb/>2 γάρ οm. A κατασπερεῖς coni. Mang. τὴν βαθύγειον Η: τὸ βαθύγειον P, τὸ βαθύγαιον Α
 <lb/>3 ἐκθεριεῖ conicio
 <lb/>4 ἀμπελῶνας Α φυτεύεις codd.: φυτεύσεις V
@@ -1804,51 +1816,52 @@ License</licence>
 <lb/>19 σύγκρισιν] σύγχυσιν conicio βιασθέντων ἀποκριθῆναι Α: ἀποκριθῆναι βιασθέντων
 <lb/>11 P (v)
 <lb/>23 παρεσκευασμένα Α: παρεσκευασμένων HP
-<lb/>24 ἡμῖν Η (Turn.)</note> <note xml:lang="lat" type="footnote">
-<lb/>2 Deut. 28,38.
+<lb/>24 ἡμῖν Η (Turn.)</note>
+               <note xml:lang="lat" type="footnote">
+                  <lb/>2 Deut. 28,38.
 <lb/>4 Deut. 28,39.
 <lb/>10 Dent. 28,40. 12.
-<lb/>13 Deut. 28,42.</note>  
-
-<pb n="v.5.p.367"/>
+<lb/>13 Deut. 28,42.</note>
+               <pb n="v.5.p.367"/>
  ξφ. δευτ. 28,23), αἰνιττόμενος τὸ μηδέτερον αὐτῶν  <milestone unit="altpage2" n="p. 430 M."/> τὰ οἰκεῖα καὶ πρὸς
-ἃ γέγονεν ἐπιτελέσειν ἔργα·</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="132">
-<p>ποῦ γὰρ ἢ σίδηρος ἐσταχυηφόρησεν ἢ ὑετὸν ἤνεγκε χαλκός, ὧν χρεῖα τὰ ζῷα καὶ μάλιστα τὸ ἐπίκηρον καὶ πολλῶν
+ἃ γέγονεν ἐπιτελέσειν ἔργα·</p>
+         </div>
+         <div n="132" type="section">
+            <p>ποῦ γὰρ ἢ σίδηρος ἐσταχυηφόρησεν ἢ ὑετὸν ἤνεγκε χαλκός, ὧν χρεῖα τὰ ζῷα καὶ μάλιστα τὸ ἐπίκηρον καὶ πολλῶν
 ἐπιδεές, ἄνθρωπος; μηνύει δ’ οὐ μόνον ἀφορίαν καὶ τῶν ἐτησίων ὡρῶν
 <lb n="5"/> φθοράν, ἀλλὰ καὶ πολέμων γενέσεις καὶ τῶν ἐν τούτοις ἀφορήτων καὶ
 ἀμυθήτων κακῶν· χαλκὸς γὰρ καὶ σίδηρος πολεμιστηρίων ὅπλων ὗλαι.
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="133">
-<p>καὶ γῆ μέντοι κονιορτὸν οἴσει καὶ χοῦς ἄνωθεν ἐξ οὐρανοῦ καταχθήσεται βαρύτατον ἐπιφέρων καρπὸν εἰς τὴν διὰ πνίγους ἀπώλειαν, ἵνα μηδὲν
+</p>
+         </div>
+         <div n="133" type="section">
+            <p>καὶ γῆ μέντοι κονιορτὸν οἴσει καὶ χοῦς ἄνωθεν ἐξ οὐρανοῦ καταχθήσεται βαρύτατον ἐπιφέρων καρπὸν εἰς τὴν διὰ πνίγους ἀπώλειαν, ἵνα μηδὲν
 παραλειφθῇ τῶν ἐπ’ ὀλέθρῳ. πολυάνθρωποι μὲν ἐρημωθήσονται συγγένειαι,
 <lb n="10"/> κεναὶ δὲ αἱ πόλεις ἐξαπιναίως οἰκητόρων ἔσονται, μνημεῖα
 παλαιᾶς μὲν εὐτυχίας προσκαίρου δὲ βαρυδαιμονίας ὑπολειφθεῖσαι πρὸς
-νουθεσίαν τῶν δυναμένων σωφρονίζεσθαι. </p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="134">
-<p><milestone unit="altref" n="3"/> τοσαύτη δὲ ἐφέξει σπάνις τῶν ἀναγκαίων, ὥστε ἀλλοτριωθέντες τούτων τρέψονται ἐπ’
+νουθεσίαν τῶν δυναμένων σωφρονίζεσθαι. </p>
+         </div>
+         <div n="134" type="section">
+            <p>
+               <milestone unit="altref" n="3"/> τοσαύτη δὲ ἐφέξει σπάνις τῶν ἀναγκαίων, ὥστε ἀλλοτριωθέντες τούτων τρέψονται ἐπ’
 ἀλληλοφαγίας, οὐ μόνον ὀθνείων καὶ μηδὲν προσηκόντων, ἀλλὰ καὶ τῶν
 <lb n="15"/> οἰκειοτάτων καὶ φιλτάτων· ἅψεται γὰρ καὶ πατὴρ υἱοῦ σαρκῶν καὶ
 μήτηρ σπλάγχνων θυγατρὸς καὶ ἀδελφῶν ἀδελφοὶ καὶ γονέων παῖδες·
 ἀεὶ δὲ οἱ ἀσθενέστεροι τῶν δυνατωτέρων κακαὶ καὶ ἐπάρατοι τροφαί·
 τὰ Θυέστεια παιδιὰ [καὶ] συγκρινόμενα ταῖς ὑπερβολαῖς τῶν συμφορῶν,
-ἃς μεγαλουργήσουσιν οἱ καιροί.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="135">
-<p>μετὰ γὰρ τῶν ἄλλων, ὥσπερ τοῖς ἐν <lb n="20"/> εὐτυχίαις ποθεινὸς ὁ βίος εἰς ἀπόλαυσιν ἀγαθῶν, οὕτως καὶ τοῖς βαρυδαίμοσιν
+ἃς μεγαλουργήσουσιν οἱ καιροί.</p>
+         </div>
+         <div n="135" type="section">
+            <p>μετὰ γὰρ τῶν ἄλλων, ὥσπερ τοῖς ἐν <lb n="20"/> εὐτυχίαις ποθεινὸς ὁ βίος εἰς ἀπόλαυσιν ἀγαθῶν, οὕτως καὶ τοῖς βαρυδαίμοσιν
 ἐκείνοις ἔρως πολὺς ἐνιδρυθήσεται τοῦ ζῆν πρὸς ἀμέτρων καὶ
 ἀπαύστων κακῶν μετουσίαν, ἁπάντων ἀνιάτων. ἧττον γὰρ <add>χαλεπὸν</add>
 ἀπαλγήσαντας ἐπιτεμεῖν θανάτῳ τὰς ἀνίας, ὃ τοῖς μὴ λίαν φρενοβλαβέσιν
 ἔθος δρᾶν· οἱ δ’ ἐκ παραπληξίας ἐθέλοιεν ἂν καὶ μακροβιώτατοι γενέσθαι,
-<lb n="25"/> τῆς ἀνωτάτω βαρυδαιμονίας ἀπλήστως καὶ ἀκορέστως ἔχοντες.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="136">
-<p>τοιαῦτα
+<lb n="25"/> τῆς ἀνωτάτω βαρυδαιμονίας ἀπλήστως καὶ ἀκορέστως ἔχοντες.</p>
+         </div>
+         <div n="136" type="section">
+            <p>τοιαῦτα
 <note xml:lang="mul" type="footnote">
-<lb/>2 ἐσταχυηφόρησεν scripsi: ἐσταχυφόρησεν codd. 2.3 ὑετὸν ἤνεγκε χαλκός Α: χαλκοῦς (sic) ὑετὸν ἤνεγκε HP (χαλκὸς ὑετὸν ἤνεγκε v)
+                  <lb/>2 ἐσταχυηφόρησεν scripsi: ἐσταχυφόρησεν codd. 2.3 ὑετὸν ἤνεγκε χαλκός Α: χαλκοῦς (sic) ὑετὸν ἤνεγκε HP (χαλκὸς ὑετὸν ἤνεγκε v)
 <lb/>3 ὧν om. H (Turn.) 
 <lb/>4 ὡρῶν] καρπῶν coni. Mang.
 <lb/>5 γενέσεις] κινήσεις coni. Mang.
@@ -1865,37 +1878,37 @@ License</licence>
 <lb/>21 καὶ] ἢ Α
 <lb/>22 ἧττον γὰρ χαλεπὸν scripsi: ἧττον γὰρ codd.; αἱρετώτερον γὰρ coni. Mang.
 <lb/>23 ἀνίας] ἡνίας Η(Turn.)
-<lb/>24 καὶ om. Α</note> <note xml:lang="lat" type="footnote">
-<lb/>7 Deut. 28,24. Lev. 26,31.
-<lb/>15 Lev. 26,29. Deut. 28,53.</note>  
-
-<pb n="v.5.p.368"/>
+<lb/>24 καὶ om. Α</note>
+               <note xml:lang="lat" type="footnote">
+                  <lb/>7 Deut. 28,24. Lev. 26,31.
+<lb/>15 Lev. 26,29. Deut. 28,53.</note>
+               <pb n="v.5.p.368"/>
 τὸ κουφότατον εἶναι δοκοῦν τῶν κακῶν, ἀπορία, προσεργάζεσθαι πέφυκεν,
 ὅταν θεήλατος ἐπάγηται δίκη· καὶ γὰρ εἰ χαλεπὰ ῥῖγος, δίψος, ἔνδεια
 τροφῆς, ἀλλ’ εὐκταιότατα γένοιτ’ ἂν ἐπὶ καιρῶν, εἰ μόνον ἀνυπέρθετον
 φθορὰν ἐργάσοιτο· χρονίζοντα δὲ καὶ τήκοντα ψυχήν τε καὶ σῶμα τῶν
 τετραγῳδημένων, ἃ δι’ ὑπερβολὰς μεμυθεῦσθαι δοκεῖ, βαρύτερα πέφυκε <lb n="5"/>
 καινουργεῖν.</p>
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="137">
- <p><milestone unit="altref" n="4"/> Δουλεία τοῖς ἐλευθέροις ἀφορητότατόν ἐστιν, ὑπὲρ ἧς σπουδάζουσιν
+         </div>
+         <div n="137" type="section">
+            <p>
+               <milestone unit="altref" n="4"/> Δουλεία τοῖς ἐλευθέροις ἀφορητότατόν ἐστιν, ὑπὲρ ἧς σπουδάζουσιν
 ἀποθνῄσκειν οἱ σώφρονες <milestone unit="altpage1" n="p. 431 Μ."/>  ἀγωνιζόμενοι φιλοκινδύνως πρὸς
 τοὺς ἐπανατεινομένους δεσποτείαν· ἀφόρητον δὲ καὶ ἐχθρὸς ἄμαχος· εἰ
 δ’ ὁ αὐτὸς ἀμφότερα γένοιτο, δεσπότης ὁμοῦ καὶ πολέμιος, τίς ἂν ὑποσταίη <lb n="10"/>
-<add>τὸν</add> τὸ μὲν δύνασθαι ἀδικεῖν ἐκ δεσποτικῆς ἐξουσίας, τὸ δὲ μηδὲν
- συγγινώσκειν ἐξ ἀσυμβάτου δυσμενείας περιπεποιημένον;</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="138">
-<p>ἐχθροῖς οὖν
+               <add>τὸν</add> τὸ μὲν δύνασθαι ἀδικεῖν ἐκ δεσποτικῆς ἐξουσίας, τὸ δὲ μηδὲν
+ συγγινώσκειν ἐξ ἀσυμβάτου δυσμενείας περιπεποιημένον;</p>
+         </div>
+         <div n="138" type="section">
+            <p>ἐχθροῖς οὖν
 φησι δεσπόταις εἰς τὸ ἀνηλεὲς χρήσεσθαι τοὺς ἀλογοῦντας νόμων ἱερῶν,
 οὐ μόνον ἐξ ἐπιθέσεως τῆς ἐκείνων ὑπαχθέντας, ἀλλὰ καὶ γνώμαις
 ἑκουσίοις ἐκδόντας αὑτοὺς ἕνεκα τῶν ἀβουλήτων, ἃ λιμὸς καὶ σπάνις <lb n="15"/>
 τῶν ἀναγκαίων ἀπεργάζεται· τὰ γὰρ ἐλάττω κακὰ φυγῇ μειζόνων αἱρετὰ
- νομίζουσί τινες, εἰ δή τι βραχὺ τῶν εἰρημένων ἐστί.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="139">
-<p>δουλεύοντες <add>γὰρ</add>
+ νομίζουσί τινες, εἰ δή τι βραχὺ τῶν εἰρημένων ἐστί.</p>
+         </div>
+         <div n="139" type="section">
+            <p>δουλεύοντες <add>γὰρ</add>
 πικρῶν μὲν ἐπιταγμάτων ὑπηρεσίας ἀναδέξονται τοῖς σώμασι, πικροτέρων
 δὲ θεαμάτων ἀνίαις κατατεινόμενοι τὰς ψυχὰς ἀπαγορεύσουσιν· ὄψονται
 γὰρ ὧν συνῳκοδόμησαν ἢ κατεφύτευσαν ἢ περιεποιήσαντο κληρονόμους <lb n="20"/>
@@ -1903,8 +1916,9 @@ License</licence>
 καὶ τὰ πίονα τῶν ἰδίων θρεμμάτων εὐωχουμένους, ἱερεύοντας καὶ
 παραρτύοντας εἰς ἀπόλαυσιν ἡδίστην, οἱ στερόμενοι τοὺς ἀφελομένους·
 ὄψονται καὶ γυναῖκας, ἃς ἠγάγοντο κουριδίας ἐπὶ γνησίων παίδων σπορᾷ,
-<note xml:lang="lat" type="footnote"><p> 
-<lb/>1 δοκούντων κακῶν H κακῶν] ἀρῶν A
+<note xml:lang="lat" type="footnote">
+                  <p>
+                     <lb/>1 δοκούντων κακῶν H κακῶν] ἀρῶν A
 <lb/>2 ῥῖγος suspectum; πνῖγος conicio 
 <lb/>3 γένοιντ’ A μόνην A
 <lb/>4 ἐργάσοιτο om. Α; ἐργάσαιτο conicio 
@@ -1919,47 +1933,47 @@ License</licence>
 <lb/>17 γάρ add. Mang.
 <lb/>22 ἱερεύοντας Mang.: ἱεροῦντας codd.
 <lb/>23 01 στερόμενοι AP (Mang.): ὑστερούμενοι H (v) τοὺς ἀφελομένους Mang.: τοῖς ἀφελομένοις codd. τῆς ἀφελομένης v)
-<lb/>24 ἅς] οὓς P κουριδίας H: κουριδίοις AP; scribondum fortasse κουριδίους σπορὰ Α: σπορὰν ΗΡ (Turn.)</p> </note> <note xml:lang="lat" type="footnote">
-<lb/>13 Deut. 28,48.
+<lb/>24 ἅς] οὓς P κουριδίας H: κουριδίοις AP; scribondum fortasse κουριδίους σπορὰ Α: σπορὰν ΗΡ (Turn.)</p>
+               </note>
+               <note xml:lang="lat" type="footnote">
+                  <lb/>13 Deut. 28,48.
 <lb/>20 Deut. 28,30.
 <lb/>22 Deut. 28,31. 51.
-<lb/>24 Deut. 28,30.</note>  
-
-<pb n="v.5.p.369"/>
+<lb/>24 Deut. 28,30.</note>
+               <pb n="v.5.p.369"/>
 σώφρονας <add>καὶ</add> οἰκουροὺς καὶ φιλάνδρους ἑταιρῶν τρόπον ὑβριζομένας.
-καὶ πρὸς μὲν ἄμυναν ὁρμήσουσιν,</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="140">
-<p>ἔξω δὲ τοῦ σφαδᾴζειν οὐδὲν ἐργάσασθαι δυνήσονται πᾶσαν ἰσχὺν ἐκτετμημένοι καὶ ἐκνενευρισμένοι· προκείσονται
+καὶ πρὸς μὲν ἄμυναν ὁρμήσουσιν,</p>
+         </div>
+         <div n="140" type="section">
+            <p>ἔξω δὲ τοῦ σφαδᾴζειν οὐδὲν ἐργάσασθαι δυνήσονται πᾶσαν ἰσχὺν ἐκτετμημένοι καὶ ἐκνενευρισμένοι· προκείσονται
 γὰρ σκοποὶ τοῖς ἐθέλουσιν ἄγειν, φέρειν, ἁρπάζειν, ὑβρίζειν,
 <lb n="5"/> τιτρώσκειν, εἰς βλάβας, εἰς αἰκίας, εἰς πανωλεθρίαν, ὡς μηδὲν ἀφεθῆναι
 τῶν βλημάτων κωφόν, ἀλλ’ εὔσκοπα καὶ εὔστοχα πάντα.</p>
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="141">
-<p>Ἐπάρατοι μὲν ἐν πόλεσι καὶ κώμαις, ἐπάρατοι δ’ ἐν οἰκίαις καὶ ἐπαύλεσιν ἔσονται· ἐπάρατος μὲν ἡ πεδιὰς καὶ ὅσα κατεβλήθη σπέρματα, ἐπάρατος
+         </div>
+         <div n="141" type="section">
+            <p>Ἐπάρατοι μὲν ἐν πόλεσι καὶ κώμαις, ἐπάρατοι δ’ ἐν οἰκίαις καὶ ἐπαύλεσιν ἔσονται· ἐπάρατος μὲν ἡ πεδιὰς καὶ ὅσα κατεβλήθη σπέρματα, ἐπάρατος
 δὲ ἡ βαθύγειος τῆς ὀρεινῆς καὶ ὅσα γένη δένδρων ἡμέρων· ἐπάρατοι
 <lb n="10"/> τῶν θρεμμάτων αἱ ἀγέλαι, στειρωθήσονται γὰρ πρὸς ἀγονίαν· ἐπάρατοι
 πάντες οἱ καρποί, τῷ γὰρ καιριωτάτῳ τῆς ἀκμῆς ἀνεμόφθοροι γενήσονται.
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="142">
-<p>τὰ πλήρη ταμεῖα τροφῶν καὶ χρημάτων κενωθήσεται· πόρος οὐδεὶς εὐοδήσει, τέχναι πᾶσαι, πραγματεῖαι πολύτροποι, βίων ἰδέαι
+</p>
+         </div>
+         <div n="142" type="section">
+            <p>τὰ πλήρη ταμεῖα τροφῶν καὶ χρημάτων κενωθήσεται· πόρος οὐδεὶς εὐοδήσει, τέχναι πᾶσαι, πραγματεῖαι πολύτροποι, βίων ἰδέαι
 μυρίων τοῖς χρωμένοις οὐδὲν ὄφελος· ἀτελεῖς γὰρ αἱ τῶν σπουδαζομένων
   <milestone unit="altpage2" n="p. 432 M."/> ἐλπίδες ἔσονται καὶ συνόλως ὅτου ἐφάψονται διὰ πονηρῶν ἐπιτηδευμάτων
 <lb n="16"/> ἢ ἔργων, ὧν κεφαλὴ καὶ τέλος ἀπόλειψις θεραπείας θεοῦ· τὰ
 γὰρ ἀσεβείας καὶ παρανομίας ἐπίχειρα ταῦτα.</p>
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="143">
-<p><milestone unit="altref" n="5"/> Καὶ πρὸς τούτοις αἱ σωματικαὶ νόσοι μέλος ἕκαστον καὶ μέρος ἰδίᾳ κατεργαζόμεναι καὶ διεσθίουσαι καὶ πάλιν ὅλα δι’ ὅλων καταξαίνουσαι,
+         </div>
+         <div n="143" type="section">
+            <p>
+               <milestone unit="altref" n="5"/> Καὶ πρὸς τούτοις αἱ σωματικαὶ νόσοι μέλος ἕκαστον καὶ μέρος ἰδίᾳ κατεργαζόμεναι καὶ διεσθίουσαι καὶ πάλιν ὅλα δι’ ὅλων καταξαίνουσαι,
 <lb n="20"/> πυρετοῖς, ῥίγεσι, φθινάσι τηκεδόσι, ψώραις ἀγρίαις, ἰκτέροις,
 σφακελίζουσιν ὀφθαλμοῖς, ἕλκεσιν ὑποπύοις <add>καὶ</add> ἑρπηνώδεσι κατὰ πάσης
 χεομένοις τῆς δορᾶς, κακώσεσι τῶν ἐντοσθίων, ἀνατροπαῖς στομάχου,
 τῶν ἐν πνεύμονι πόρων ἀποφράξεσιν ὑπὲρ τοῦ μὴ εὐοδεῖν τὴν ἀναπνοήν
 — πάρεσις γλώσσης, κώφωσις ὤτων, πήρωσις ὀφθαλμῶν, τῶν ἄλλων
 <note xml:lang="mul" type="footnote">
-<lb/>1 καὶ addidi ἑταιρῶν Α, ἑταίρων HP: ἑτέρων L (Turn.) ὑβριζομένας A: ἀφαιρομένας H1P, ἀφαιρουμένας H2 (Turn.)
+                  <lb/>1 καὶ addidi ἑταιρῶν Α, ἑταίρων HP: ἑτέρων L (Turn.) ὑβριζομένας A: ἀφαιρομένας H1P, ἀφαιρουμένας H2 (Turn.)
 <lb/>2 καὶ] κἄν Α μὲν om. Α ὁρμήσωσιν Α 2.
 <lb/>3 ἐργάσεσθαι Η2, ἐργάσασθαι om. Α (fort. recte) 
 <lb/>6 κλημάτων A εὔστοχα καὶ εὔσκοπα Α
@@ -1975,50 +1989,52 @@ License</licence>
 <lb/>20 φθινάσι HP: φθινώδεσι A
 <lb/>21 ὑποπύοις Α. ὑποποιοῖς H1P, ὑποποίοις 2 καὶ add. Mang. πᾶσι (sic) P
 <lb/>23 εὐωδεῖν P
-<lb/>24 κώφωσις ὤτων A: κωφὸν οὖς HP (Turn.)</note> <note xml:lang="lat" type="footnote">
-<lb/>2 Deut. 28,32.
+<lb/>24 κώφωσις ὤτων A: κωφὸν οὖς HP (Turn.)</note>
+               <note xml:lang="lat" type="footnote">
+                  <lb/>2 Deut. 28,32.
 <lb/>7 Deut. 28,16.
 <lb/>8 sqq. Deut. 28,18.
-<lb/>12 Deut. 28,17.</note> <note xml:lang="lat" type="footnote">
-<lb/>18 sqq. Lev. 26,16. Deut. 28,22. 27.</note>  
-
-<pb n="v.5.p.370"/>
+<lb/>12 Deut. 28,17.</note>
+               <note xml:lang="lat" type="footnote">
+                  <lb/>18 sqq. Lev. 26,16. Deut. 28,22. 27.</note>
+               <pb n="v.5.p.370"/>
 ἀμυδρότης αἰσθήσεων καὶ σύγχυσις, καίτοι δεινὰ ὄντα, συγκρινόμενα
- βαρυτέροις οὐ φαίνεται δεινά —,</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="144">
-<p>τοῦ μὲν ἐν φλεψὶν αἵματος ἀποβαλόντος
+ βαρυτέροις οὐ φαίνεται δεινά —,</p>
+         </div>
+         <div n="144" type="section">
+            <p>τοῦ μὲν ἐν φλεψὶν αἵματος ἀποβαλόντος
 ὅσον ἦν ἐν αὐτῷ ζωτικόν, τοῦ δ’ ἐν ἀρτηρίαις πνεύματος τὴν ἔξωθεν
 ἀπὸ τοῦ συμφυοῦς ἀέρος μηκέθ’ ὁμοίως ἐπιδεχομένου σωτήριον κρᾶσιν,
- τῶν δὲ νεύρων ἀνεθέντων καὶ χαλασθέντων·</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="145">
-<p>οἷς ἐπακολουθεῖ τῆς ἁρμονίας <lb n="5"/>
+ τῶν δὲ νεύρων ἀνεθέντων καὶ χαλασθέντων·</p>
+         </div>
+         <div n="145" type="section">
+            <p>οἷς ἐπακολουθεῖ τῆς ἁρμονίας <lb n="5"/>
 καὶ συμφωνίας τῶν μελῶν πάρεσις πρότερον πονηθέντων ἁλμυροῦ καὶ
 πάνυ πικροῦ φορᾷ ῥεύματος εἴσω παραδυομένου καί, ὁπότε στενοῖς ἐγκατακλεισθείη
 πόροις εὐμαρεῖς διεξόδους οὐκ ἔχουσι, θλιβομένου τε καὶ
 θλίβοντος εἰς πικρῶν καὶ δυσυπομονήτων γένεσιν ἀλγηδόνων, ἐξ ὧν
 φύεται τὰ ποδαγρικὰ καὶ ἀρθριτικὰ πάθη καὶ νοσήματα, πρὸς ἃ σωτήριον <lb n="10"/>
 οὐδὲν ἐπενοήθη φάρμακον, ἀλλ’ ἔστιν ἀνθρωπίναις ἐπινοίαις ἀνίατα.
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="146">
-<p>ταῦτα ὁρῶντες ἔνιοι καταπλαγήσονται, πῶς οἱ πρὸ μικροῦ πίονες εὔσαρκοί
+</p>
+         </div>
+         <div n="146" type="section">
+            <p>ταῦτα ὁρῶντες ἔνιοι καταπλαγήσονται, πῶς οἱ πρὸ μικροῦ πίονες εὔσαρκοί
 τε καὶ εὐεξίᾳ μάλιστα θάλλοντες οὕτως αἰφνίδιον ἐκτακέντες ῥικνοὶ
 γεγόνασιν ἶνες αὐτὸ μόνον καὶ λεπτὴ δορά, καὶ πῶς γυναῖκες ἁβροδίαιτοι
 καὶ πανάπαλοι διὰ τὴν ἐκ πρώτης ἡλικίας συναυξηθεῖσαν τρυφὴν ὑπὸ <lb n="15"/>
- κακώσεως δεινῆς ἅμα ταῖς ψυχαῖς καὶ τὰ σώματα ἐξηγρίωνται.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="147">
-<p>τότε
+ κακώσεως δεινῆς ἅμα ταῖς ψυχαῖς καὶ τὰ σώματα ἐξηγρίωνται.</p>
+         </div>
+         <div n="147" type="section">
+            <p>τότε
 δὴ τότε διώξονται μὲν ἐχθροὶ καὶ μάχαιρα ἐκδικήσει δίκην, οἱ δ’ εἰς
 τὰς πόλεις καταφεύγοντες, ὅταν ἐν ἀσφαλεῖ γεγενῆσθαι νομίσωσιν,
 ἐλπίδος ἀπάτῃ φενακισθέντες ἡβηδὸν ἀπολοῦνται προκαταδύντες ἐνέδραις
-ἐχθρῶν.</p> <lb n="20"/>
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="148">
- <p><milestone unit="altref" n="6"/> Κἂν <add>εἰ</add> ἐπὶ τούτοις μὴ σωφρονίζοιντο πλαγιάζοντες καὶ τὰς
+ἐχθρῶν.</p>
+            <lb n="20"/>
+         </div>
+         <div n="148" type="section">
+            <p>
+               <milestone unit="altref" n="6"/> Κἂν <add>εἰ</add> ἐπὶ τούτοις μὴ σωφρονίζοιντο πλαγιάζοντες καὶ τὰς
 ἐπ’ ἀλήθειαν ἀγούσας εὐθυτενεῖς ὁδοὺς ἐκτρεπόμενοι, δειλία καὶ φόβος
 ταῖς ψυχαῖς αὐτῶν ἐνιδρυθήσεται, καὶ φεύξονται μὲν οὐδενὸς διώκοντος,
 φήμαις δὲ οἷα φιλεῖ ψευδέσι πεσοῦνται προτροπάδην, φύλλου τε κτύπος
@@ -2038,45 +2054,45 @@ License</licence>
 <lb/>22 ἐπ’ ἀλήθειαν Η: ἐπ’ ἀληθεία AP ἀγούσας Η2: ἀναγούσας H1P, ἀλγούσας A 
 <lb/>23 ἐνιδρυθήσεται codd.: ἐνιδρυθήσονται Mang.
 <lb/>24 φύλλου codd. (Mang.): φύλλων Turn. τε Α, ss. P: om. H (Turn.)
-<lb/>25 πτοίαν] ποίαν Α</note> <note xml:lang="mul" type="footnote">
-<lb/>15 πανάπαλοι Hom. Od. ν223
+<lb/>25 πτοίαν] ποίαν Α</note>
+               <note xml:lang="mul" type="footnote">
+                  <lb/>15 πανάπαλοι Hom. Od. ν223
 <lb/>17 Lev. 26,25.
-<lb/>21 spp. Lev. 26,23. 36.</note>  
-
-<pb n="v.5.p.371"/>
+<lb/>21 spp. Lev. 26,23. 36.</note>
+               <pb n="v.5.p.371"/>
 ὅσην ὁ τραχύτατος πόλεμος ἐκ δυνατωτέρων ἐχθρῶν, ὡς καὶ τέκνα
 γονέων καὶ γονεῖς τέκνων καὶ ἀδελφοὺς ἀδελφῶν ὑπεριδεῖν, ἐκ μὲν τῆς
 ἀλλήλων ἐπιβοηθείας ἅλωσιν προσδοκήσαντας, σωτηρίαν δ’ ἐκ τοῦ
-ἑαυτοὺς ἀποδιδράσκειν ἕκαστον.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="149">
-<p>πονηρῶν δὲ ἀνθρώπων ἀτελεῖς ἐλπίδες· <lb n="5"/> μᾶλλον γὰρ ἢ οὐχ ἧττον οἱ διαπεφευγέναι δόξαντες τῶν προκαταληφθέντων
+ἑαυτοὺς ἀποδιδράσκειν ἕκαστον.</p>
+         </div>
+         <div n="149" type="section">
+            <p>πονηρῶν δὲ ἀνθρώπων ἀτελεῖς ἐλπίδες· <lb n="5"/> μᾶλλον γὰρ ἢ οὐχ ἧττον οἱ διαπεφευγέναι δόξαντες τῶν προκαταληφθέντων
 ἁλώσονται. κἂν διαλάθωσι μέντοι τινές, ἐφεδρείαν δ’ ἕξουσι
 τῶν φύσει πολεμίων· οὗτοι δέ εἰσιν ἀγριώτατοι θῆρες ἐξ ἑαυτῶν εὐοπλοῦντες,
 οὓς ὁ θεὸς ἅμα τῇ πρώτῃ γενέσει τοῦ παντὸς ἐδημιούργει
 πρὸς ἀνθρώπων τῶν μὲν δυναμένων νουθετεῖσθαι φόβον τῶν δὲ ἀνιάτως
-<lb n="10"/> ἐχόντων ἀπαραίτητον δίκην.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="150">
-<p>ἀπιστήσουσι μὲν οἱ θεασάμενοι τὰς αὐτοῖς θεμελίοις ἀναιρεθείσας πόλεις, εἰ πώποτε ᾠκίσθησαν· ἐν εἴδει δὲ παροιμίας
+<lb n="10"/> ἐχόντων ἀπαραίτητον δίκην.</p>
+         </div>
+         <div n="150" type="section">
+            <p>ἀπιστήσουσι μὲν οἱ θεασάμενοι τὰς αὐτοῖς θεμελίοις ἀναιρεθείσας πόλεις, εἰ πώποτε ᾠκίσθησαν· ἐν εἴδει δὲ παροιμίας
 θήσονται τὰς ἐκ λαμπρῶν εὐτυχημάτων ἐξαπιναίους κακοπραγίας, ὅσαι
-καὶ ἀνεγράφησαν καί εἰσιν ἄγραφοι.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="151">
-<p>παρελεύσονται καὶ μέχρι σπλάγχνων αἱ τηκεδόνες ἀθυμίας τε καὶ ἀδημονίας ἐμποιοῦσαι σὺν ἐκθλίψει. ζωὴν
+καὶ ἀνεγράφησαν καί εἰσιν ἄγραφοι.</p>
+         </div>
+         <div n="151" type="section">
+            <p>παρελεύσονται καὶ μέχρι σπλάγχνων αἱ τηκεδόνες ἀθυμίας τε καὶ ἀδημονίας ἐμποιοῦσαι σὺν ἐκθλίψει. ζωὴν
 <lb n="15"/> ἀνίδρυτον καὶ κρεμαμένην ὥσπερ ἐξ ἀγχόνης ἐργάσονται φόβου διαδοχαὶ
 μεθ’ ἡμέραν τε καὶ νύκτωρ τὴν ψυχὴν ἄνω καὶ κάτω κλονοῦσαι, ὡς
 πρωΐας μὲν ἑσπέραν ἑσπέρας δὲ ὄρθρον εὔχεσθαι διὰ τὰς καὶ ἐγρηγορότων
 κακώσεις ἐμφανεῖς καὶ κοιμωμένων ἐξ ὀνειράτων ἀποτροπαίους
-φαντασίας.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="152">
-<p>ὁ μὲν ἔπηλυς ἄνω ταῖς εὐτυχίαις μετέωρος ἀρθεὶς περίβλεπτος <lb n="20"/> ἔσται, θαυμαζόμενος καὶ μακαριζόμενος ἐπὶ δυσὶ τοῖς καλλίστοις,
+φαντασίας.</p>
+         </div>
+         <div n="152" type="section">
+            <p>ὁ μὲν ἔπηλυς ἄνω ταῖς εὐτυχίαις μετέωρος ἀρθεὶς περίβλεπτος <lb n="20"/> ἔσται, θαυμαζόμενος καὶ μακαριζόμενος ἐπὶ δυσὶ τοῖς καλλίστοις,
 τῷ τε αὐτομολῆσαι πρὸς θεὸν καὶ τῷ γέρας λαβεῖν οἰκειότατον τὴν ἐν
 οὐρανῷ τάξιν βεβαίαν, ἣν οὐ θέμις εἰπεῖν, ὁ δ’ εὐπατρίδης παρακόψας
 τὸ νόμισμα τῆς εὐγενείας ὑποσυρήσεται κατωτάτω πρὸς αὐτὸν τάρταρον
 <note xml:lang="mul" type="footnote">
-<lb/>1 τραχύτατος Α: βραχύτατος H1P, βαρύτατος H2 (v)
+                  <lb/>1 τραχύτατος Α: βραχύτατος H1P, βαρύτατος H2 (v)
 <lb/>3 βοηθείας A προσδοκήσαντας AP: προσδοκήσαντες Η (v)
 <lb/>4 ἑαυτοὺς HP: ὡς αὐτοὺς Α (Mang.) ἕκαστον Α (Mang.): ἕκαστοι HP δὲ Α: δ’ ΗP
 <lb/>5 δόξαντες] δόξαις H 
@@ -2094,54 +2110,55 @@ License</licence>
 <lb/>18 ἀποτρόπαιον Α
 <lb/>20 καὶ μακαριζόμενος om. A
 <lb/>21 τῶ . . . τῶ Α: τό . . . τὸ ΗP
-<lb/>23 τῆς om. A</note> <note xml:lang="lat" type="footnote">
-<lb/>2 Lev. 26,37.
+<lb/>23 τῆς om. A</note>
+               <note xml:lang="lat" type="footnote">
+                  <lb/>2 Lev. 26,37.
 <lb/>7 Lev. 26,22.
 <lb/>10 Lev. 26, 31. 32.
 <lb/>11 sqq. Deut. 28,37. 61. 
 <lb/>14 sqq. Deut. 28,66. 67.
-<lb/>19 sqq. Deut. 28,43.</note>  
-
-<pb n="v.5.p.372"/>
+<lb/>19 sqq. Deut. 28,43.</note>
+               <pb n="v.5.p.372"/>
 καὶ βαθὺ σκότος ἐνεχθείς, ἵνα ταῦτα ὁρῶντες τὰ παραδείγματα πάντες
 ἄνθρωποι σωφρονίζωνται, μανθάνοντες ὅτι τὴν ἐκ δυσγενείας ἀρετὴν
 φυομένην θεὸς ἀσπάζεται, τὰς μὲν ῥίζας ἐῶν χαίρειν, τὸ δὲ στελεχωθὲν
 ἔρνος, ὅτι μετέβαλεν ἡμερωθὲν πρὸς εὐκαρπίαν, ἀποδεχόμενος.
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="153">
-<p> <milestone unit="altref" n="7"/> Οὕτως καθάπερ ὑπὸ πυρὸς δαπανηθεισῶν τῶν πόλεων καὶ <lb n="5"/>
+</p>
+         </div>
+         <div n="153" type="section">
+            <p>
+               <milestone unit="altref" n="7"/> Οὕτως καθάπερ ὑπὸ πυρὸς δαπανηθεισῶν τῶν πόλεων καὶ <lb n="5"/>
 τῆς χώρας ἐρημωθείσης, ἄρξεταί ποτε διαπνεῖν καὶ ἀνακύπτειν ἡ πολλὰ
 γυμνασθεῖσα καὶ τραχηλισθεῖσα γῆ πρὸς οἰκητόρων ἀφορήτου βίας, οἳ
 τὰς παρθένους <milestone unit="altpage1" n="p. 434 M."/>  ἑβδομάδας ὑπερορίους καὶ τῆς χώρας καὶ τῆς αὑτῶν
 διανοίας ἀπήλασαν. μόνας γὰρ ἢ τό γε ἀσφαλέστερον εἰπεῖν πρώτας
 ἀνέδειξεν ἑορτὰς ἡ φύσις τὰς ἑβδομάδας ἡμερῶν τε καὶ ἐνιαυτῶν, πρὸς <lb n="10"/>
- ἀνάπαυλαν ἀνθρώποις μὲν τὰς ἡμερῶν, τῇ δὲ χώρᾳ τὰς ἐνιαυτῶν.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="154">
-<p>οἱ
+ ἀνάπαυλαν ἀνθρώποις μὲν τὰς ἡμερῶν, τῇ δὲ χώρᾳ τὰς ἐνιαυτῶν.</p>
+         </div>
+         <div n="154" type="section">
+            <p>οἱ
 δ’ ὅλον τοῦτον παρακαλυψάμενοι τὸν νόμον, τοὺς ἅλας, τὰς σπονδάς,
 τὸν ἐλέου βωμόν, τὴν κοινὴν ἑστίαν, ἐξ ὧν φιλία καὶ ὁμόνοια ἡρμόζετο
 — πάντα γὰρ δι’ ἑβδομάδος καὶ ἑβδομάς —, ἐβάρυναν μὲν ἀνθρώπους
 ἀσθενεστέρους οἱ δυνατώτεροι συνεχέσι καὶ ἀδιαστάτοις ἐπιτάγμασιν, <lb n="15"/>
 ἐβάρυναν δὲ καὶ τὰς ἀρούρας ἀεὶ κέρδη μεταδιώκοντες ἐκ πλεονεξιῶν
 ἄδικα, ταῖς ἐπιθυμίαις ἐφιστάντες ἀχαλίνους καὶ ἀδίκους ὁρμὰς εἰς τὸ
- ἀκόρεστον.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="155">
-<p>ἀντὶ γὰρ τοῦ παρασχεῖν μὲν ἀνθρώποις, κατὰ τὸν ἀψευδέστατον
+ ἀκόρεστον.</p>
+         </div>
+         <div n="155" type="section">
+            <p>ἀντὶ γὰρ τοῦ παρασχεῖν μὲν ἀνθρώποις, κατὰ τὸν ἀψευδέστατον
 λόγον ἀδελφοῖς, ὧν μία μήτηρ ἡ κοινὴ φύσις, τὰς προστεταγμένας
 δι’ ἓξ ἡμερῶν ἐκεχειρίας, παρέχειν δὲ καὶ τῇ χώρᾳ τὰς δι’ ἓξ <lb n="20"/>
 ἐνιαυτῶν ἀνέσεις μήτε σποραῖς μήτε φυτείαις βαρύνοντας, ἵνα μὴ
- καμάτοις ἐπαλλήλοις ἀπαγορεύσῃ,</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="156">
-<p>ἀμελήσαντες τουτωνὶ τῶν χρηστῶν
+ καμάτοις ἐπαλλήλοις ἀπαγορεύσῃ,</p>
+         </div>
+         <div n="156" type="section">
+            <p>ἀμελήσαντες τουτωνὶ τῶν χρηστῶν
 παραινέσεων εἰς ἡμερότητα προκαλουμένων τὰ μὲν σώματα καὶ τὰς
 ψυχὰς ὧν ἐδύναντο πάντων ἀνάγκαις ἀτρύτοις ἐπίεσαν, τῆς βαθυγείου δὲ
 τὴν ἰσχὺν ὑπετέμοντο φοραῖς ταῖς ὑπὲρ δύναμιν ἀπλήστως προσοδευόμενοι <lb n="25"/>
-<note xml:lang="mul" type="footnote">
-<lb/>2 δυσγενείας Mang.: δυσμενείας codd.
+               <note xml:lang="mul" type="footnote">
+                  <lb/>2 δυσγενείας Mang.: δυσμενείας codd.
 <lb/>3 φυομένην v (Turn.): φθιομένην H1P, φθινομένην H2, οὐ φθειρομένην Α (prob. Mang.) στελεχωθὲν Α: στελεχόθεν HP (Turn.)
 <lb/>4 ἡμερωθὲν om. Α πρὸς] εἰς Α
 <lb/>6 διαναπνεῖν P 
@@ -2157,47 +2174,47 @@ License</licence>
 <lb/>20 ἐκκεχειρίας H παρέχειν H: παρέχει AP; παρασχεῖν coni. Mang.
 <lb/>23 μὲν Α: μὲν γὰρ Η1P, γὰρ expunxit H2 
 <lb/>24 ἡδύναντο codd. (v) τῆς βαθυγαίου (sic) δὲ A: τῆς δέ βαθυγείου HP (v) 
-<lb/>25 προοδευόμενοι Α</note> <note xml:lang="lat" type="footnote">
-<lb/>5 sqq. Lev. 26,33—35.</note>  
-
-<pb n="v.5.p.373"/>
+<lb/>25 προοδευόμενοι Α</note>
+               <note xml:lang="lat" type="footnote">
+                  <lb/>5 sqq. Lev. 26,33—35.</note>
+               <pb n="v.5.p.373"/>
 καὶ δασμοῖς οὐκ ἐτησίοις μόνον ἀλλὰ καὶ ἐφημέροις ὅλην δι’ ὅλων
-ἐκτραχηλίζοντες.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="157">
-<p>ὑπὲρ ὧν οἱ μὲν τὰς λεχθείσας ἀρὰς καὶ δίκας ἀναπλήσουσιν, ἡ δ’ ἐκνευρισθεῖσα χώρα καὶ μυρίας ὑπομείνασα κακώσεις,
+ἐκτραχηλίζοντες.</p>
+         </div>
+         <div n="157" type="section">
+            <p>ὑπὲρ ὧν οἱ μὲν τὰς λεχθείσας ἀρὰς καὶ δίκας ἀναπλήσουσιν, ἡ δ’ ἐκνευρισθεῖσα χώρα καὶ μυρίας ὑπομείνασα κακώσεις,
 ἀποφορτισαμένη τὸ τῶν ἀσεβῶν οἰκητόρων ἄχθος, ἐπελαφρισθήσεται·
 <lb n="5"/> καὶ ὅταν ἐν κύκλῳ περιβλεψαμένη μηδένα θεάσηται τῶν καθελόντων
 αὐτῆς τὸ μεγαλαύχημα καὶ ἀξίωμα, ἀλλὰ κενὰς μὲν αὐτῆς τὰς ἀγορὰς
 θορύβων καὶ πολέμων καὶ ἀδικημάτων, πλήρεις δὲ ἡσυχίας καὶ εἰρήνης
 καὶ δικαιοσύνης, ἀνηβήσει καὶ ἐπακμάσει καὶ τοὺς τῶν ἱερῶν ἑβδομάδων
 καιροὺς ἑορτώδεις ἠρεμήσει καὶ ἀναπαύσεται συλλεγομένη καθάπερ
-<lb n="10"/> ἀθλητὴς προηγωνισμένος δύναμιν.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="158">
-<p>εἶθ’ οἷα μήτηρ φιλόστοργος οἰκτιεῖται μὲν υἱοὺς καὶ θυγατέρας οὓς ἀπέβαλεν, οἳ καὶ ἀποθανόντες καὶ ζῶντες
+<lb n="10"/> ἀθλητὴς προηγωνισμένος δύναμιν.</p>
+         </div>
+         <div n="158" type="section">
+            <p>εἶθ’ οἷα μήτηρ φιλόστοργος οἰκτιεῖται μὲν υἱοὺς καὶ θυγατέρας οὓς ἀπέβαλεν, οἳ καὶ ἀποθανόντες καὶ ζῶντες
 ἔτι μᾶλλον ὀδύναι τοῖς τοκεῦσιν ἐγένοντο· πάλιν δὲ νεάσασα εὐφορήσει
 καὶ τέξεται γενεὰν ἀνεπίληπτον, ἐπανόρθωμα τῆς προτέρας· ἡ γὰρ
  ἔρημος, ᾗ φησιν ὁ προφήτης, εὔτεκνός  <milestone unit="altpage2" n="p. 435 M."/> τε καὶ πολύπαις, ὅπερ λόγιον
-<lb n="16"/> καὶ ἐπὶ ψυχῆς ἀλληγορεῖται.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="159">
-<p>πολλὴ μὲν γὰρ ὅταν ᾖ, παθῶν καὶ κακιῶν ἀνάπλεως, οἷα περικεχυμένων αὐτῇ τέκνων, ἡδονῶν, ἐπιθυμιῶν,
+<lb n="16"/> καὶ ἐπὶ ψυχῆς ἀλληγορεῖται.</p>
+         </div>
+         <div n="159" type="section">
+            <p>πολλὴ μὲν γὰρ ὅταν ᾖ, παθῶν καὶ κακιῶν ἀνάπλεως, οἷα περικεχυμένων αὐτῇ τέκνων, ἡδονῶν, ἐπιθυμιῶν,
 ἀφροσύνης, ἀκολασίας, ἀδικίας, ἀσθενεῖ καὶ νοσεῖ καὶ ἐπικήρως ἔχουσα
 θανατᾷ, στειρωθεῖσα δὲ καὶ ἀγονήσασα τούτων ἢ καὶ ἀποβαλοῦσα ἀθρόα
-γίνεται μὲν ἐκ μεταβολῆς ἁγνὴ παρθένος,</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="160">
-<p>παραδεξαμένη δὲ τὸν θεῖον <lb n="20"/> σπόρον διαπλάττει καὶ ζῳογονεῖ περιμαχήτους φύσεις, θαυμαστὰ κάλλη,
+γίνεται μὲν ἐκ μεταβολῆς ἁγνὴ παρθένος,</p>
+         </div>
+         <div n="160" type="section">
+            <p>παραδεξαμένη δὲ τὸν θεῖον <lb n="20"/> σπόρον διαπλάττει καὶ ζῳογονεῖ περιμαχήτους φύσεις, θαυμαστὰ κάλλη,
 φρόνησιν, ἀνδρείαν, σωφροσύνην, δικαιοσύνην, ὁσιότητα, εὐσέβειαν, τὰς
 ἄλλας ἀρετάς τε καὶ εὐπαθείας, ὧν οὐ μόνον ἡ γένεσις εὔτεκνος ἀγαθόν,
 ἀλλὰ καὶ ἡ προσδοκία τῆς γενέσεως ἐλπίδι προγανοῦσα τὴν ἀσθένειαν.
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="161">
-<p>ἐλπὶς δὲ χαρὰ πρὸ χαρᾶς ἐστιν, εἰ καὶ ἐνδεὴς παρὰ τελείαν, ἀλλά τοι
+</p>
+         </div>
+         <div n="161" type="section">
+            <p>ἐλπὶς δὲ χαρὰ πρὸ χαρᾶς ἐστιν, εἰ καὶ ἐνδεὴς παρὰ τελείαν, ἀλλά τοι
 <note xml:lang="mul" type="footnote">
-<lb/>2 ἀρὰς AH2: ἀρετὰς H1P
+                  <lb/>2 ἀρὰς AH2: ἀρετὰς H1P
 <lb/>3 χώρα om. Turn.
 <lb/>4 ἀσεβῶν om. Α ἐπελαφρισθήσεται H2: ἀπελαφρισθήσεται AH1P
 <lb/>6 alt. αὐτῆς Α (coni. Mang.): αὐτοῦ HP ἀγορὰς] ἀγροὺς coni. Mang.
@@ -2213,25 +2230,25 @@ License</licence>
 <lb/>21 ἀνδρίαν Α ὁσιότητα om. Α
 <lb/>22 εὔτεκνος Mang.: εὔτεκνον codd.
 <lb/>23 προγανοῦσα AP2: προγανῦσα Η (Turn.), προγανεῖσα P1 ἀσθένειαν] διάνοιαν coni. Mang.
-<lb/>24 ἐνδεὲς H1P παρὰ τελείαν HP: παρατέλεια Α</note> <note xml:lang="mul" type="footnote">13.14 cf. lesai. 54,1 εὐφράνθητι στεῖρα . . ., ὅτι πολλὰ τὰ τέκνα τῆς ἐρήμου μᾶλλον ἢ τῆς ἐχούσης τὸν ἄνδρα.</note>  
-
-<pb n="v.5.p.374"/>
+<lb/>24 ἐνδεὲς H1P παρὰ τελείαν HP: παρατέλεια Α</note>
+               <note xml:lang="mul" type="footnote">13.14 cf. lesai. 54,1 εὐφράνθητι στεῖρα . . ., ὅτι πολλὰ τὰ τέκνα τῆς ἐρήμου μᾶλλον ἢ τῆς ἐχούσης τὸν ἄνδρα.</note>
+               <pb n="v.5.p.374"/>
 τῆς ἐπιγινομένης καθ’ ἑκάτερα βελτίων, ὅτι τε τὸ αὐχμηρὸν ἀναχαλᾷ
 καὶ λιπαίνει τῶν φροντίδων καὶ ὅτι φθάνουσα τὸ μέλλον καὶ πλῆρες
 ἀγαθὸν εὐαγγελίζεται.</p>
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="162">
- <p><milestone unit="altref" n="8"/> Τὰς μὲν οὖν ἀρὰς καὶ τιμωρίας, ἃς ὑπομένειν ἄξιον τοὺς τῶν
+         </div>
+         <div n="162" type="section">
+            <p>
+               <milestone unit="altref" n="8"/> Τὰς μὲν οὖν ἀρὰς καὶ τιμωρίας, ἃς ὑπομένειν ἄξιον τοὺς τῶν
 ἱερῶν νόμων δικαιοσύνης καὶ εὐσεβείας ὑπερορῶντας καὶ ταῖς πολυθέοις <lb n="5"/>
 δόξαις ὑπαχθέντας, ὧν ἀθεότης τὸ τέλος, λήθῃ τῆς συγγενοῦς καὶ
 πατρίου διδασκαλίας, ἣν ἐκ πρώτης ἡλικίας ἐπαιδεύθησαν τὴν τοῦ ἑνὸς
 φύσιν τὸν ἀνωτάτω νομίζειν θεόν, ᾧ δεῖ μόνῳ προσκεκληρῶσθαι τοὺς
 ἄπλαστον ἀλήθειαν ἀντὶ πεπλασμένων μύθων μεταδιώκοντας, οὐδὲν
- ὑποστειλάμενος δεδήλωκα.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="163">
-<p>ἐὰν μέντοι μὴ ἐπ’ ὀλέθρῳ δέξωνται τὰς <lb n="10"/>
+ ὑποστειλάμενος δεδήλωκα.</p>
+         </div>
+         <div n="163" type="section">
+            <p>ἐὰν μέντοι μὴ ἐπ’ ὀλέθρῳ δέξωνται τὰς <lb n="10"/>
 δυνάμεις μᾶλλον ἢ νουθεσίᾳ καὶ καταιδεσθέντες ὅλῃ ψυχῇ μεταβάλωσι,
 κακίσαντες μὲν αὑτοὺς τῆς πλάνης, ἐξαγορεύσαντες δὲ καὶ ὁμολογήσαντες
 ὅσα ἥμαρτον καθ’ αὑτοὺς διανοίᾳ κεκαθαρμένῃ τὸ πρῶτον εἰς τὸ τοῦ
@@ -2239,23 +2256,23 @@ License</licence>
 τῶν ἀκουόντων, εὐμενείας τεύξονται τῆς τοῦ σωτῆρος καὶ ἵλεω θεοῦ τῷ <lb n="15"/>
 γένει τῶν ἀνθρώπων ἐξαίρετον παρασχομένου καὶ μεγίστην δωρεάν, τὴν
 πρὸς τὸν αὐτοῦ λόγον συγγένειαν, ἀφ’ οὗ καθάπερ ἀρχετύπου γέγονεν
- ὁ ἀνθρώπινος νοῦς·</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="164">
-<p>κἂν γὰρ ἐν ἐσχατιαῖς ὦσι γῆς δουλεύοντες παρὰ
+ ὁ ἀνθρώπινος νοῦς·</p>
+         </div>
+         <div n="164" type="section">
+            <p>κἂν γὰρ ἐν ἐσχατιαῖς ὦσι γῆς δουλεύοντες παρὰ
 τοῖς αἰχμαλώτους αὐτοὺς ἀπάγουσιν ἐχθροῖς, ὥσπερ ἀφ’ ἑνὸς συνθήματος
 ἡμέρᾳ μιᾷ πάντες ἐλευθερωθήσονται, τῆς ἀθρόας πρὸς ἀρετὴν μεταβολῆς <lb n="20"/>
 κατάπληξιν ἐργασαμένης τοῖς δεσπόταις· μεθήσονται γὰρ αὐτοὺς αἰδεσθέντες
-</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="165">
-<p> κρειττόνων ἄρχειν. <milestone unit="altref" n="9"/> ὅταν δὲ τύχωσι τῆς ἀπροσδοκήτου
+</p>
+         </div>
+         <div n="165" type="section">
+            <p> κρειττόνων ἄρχειν. <milestone unit="altref" n="9"/> ὅταν δὲ τύχωσι τῆς ἀπροσδοκήτου
 ταύτης ἐλευθερίας, οἱ πρὸ μικροῦ σποράδες ἐν Ἑλλάδι καὶ βαρβάρῳ
 κατὰ νήσους καὶ κατὰ ἠπείρους ἀναστάντες <milestone unit="altpage1" n="p. 436 M."/>  ὁρμῇ μιᾷ πρὸς ἕνα συντενοῦσιν
 ἀλλαχόθεν ἄλλοι τὸν ἀποδειχθέντα χῶρον, ξεναγούμενοι πρός <lb n="25"/>
 τινος θειοτέρας ἢ κατὰ φύσιν ἀνθρωπίνην ὄψεως, ἀδήλου μὲν ἑτέροις,
 <note xml:lang="mul" type="footnote">
-<lb/>1 καθ᾿ ἕτερα A
+                  <lb/>1 καθ᾿ ἕτερα A
 <lb/>2 λιπαίνει] λύει coni. Mang.
 <lb/>8 δεῖ] δὴ P
 <lb/>9 μύθων om. Α
@@ -2271,48 +2288,47 @@ License</licence>
 <lb/>23 ἀπροσδοκήτου ταύτης om. Α
 <lb/>23 σποράδην Α 
 <lb/>24 καὶ om. H1P alt. κατά om. Α 24.25 συντενοῦσιν Mang.: συντείνουσιν codd.
-<lb/>26 ἀνθρωπίνην Mang.: ἀνθρωπίνης codd.</note> <note xml:lang="lat" type="footnote">
-<lb/>13 sqq. Lev. 26,40, 44. Deut. 30,15.</note>  
-
-<pb n="v.5.p.375"/>
-μόνοις δὲ τοῖς ἀνασῳζομένοις ἐμφανοῦς,</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="166">
-<p>τρισὶ χρησάμενοι παρακλήτοις τῶν πρὸς τὸν πατέρα καταλλαγῶν, ἑνὶ μὲν ἐπιεικείᾳ καὶ χρηστότητι τοῦ
+<lb/>26 ἀνθρωπίνην Mang.: ἀνθρωπίνης codd.</note>
+               <note xml:lang="lat" type="footnote">
+                  <lb/>13 sqq. Lev. 26,40, 44. Deut. 30,15.</note>
+               <pb n="v.5.p.375"/>
+μόνοις δὲ τοῖς ἀνασῳζομένοις ἐμφανοῦς,</p>
+         </div>
+         <div n="166" type="section">
+            <p>τρισὶ χρησάμενοι παρακλήτοις τῶν πρὸς τὸν πατέρα καταλλαγῶν, ἑνὶ μὲν ἐπιεικείᾳ καὶ χρηστότητι τοῦ
 παρακαλουμένου συγγνώμην πρὸ τιμωρίας ἀεὶ τιθέντος, δευτέρῳ δὲ τῇ
 τῶν ἀρχηγετῶν τοῦ ἔθνους ὁσιότητι, ὅτι ταῖς ἀφειμέναις σωμάτων ψυχαῖς
 <lb n="5"/> ἄπλαστον καὶ γυμνὴν ἐνδεικνύμενοι πρὸς τὸν ἄρχοντα θεραπείαν τὰς ὑπὲρ
 υἱῶν καὶ θυγατέρων ἱκετείας οὐκ ἀτελεῖς εἰώθασι ποιεῖσθαι, γέρας αὐτοῖς
-παρέχοντος τοῦ πατρὸς τὸ ἐπήκοον ἐν εὐχαῖς,</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="167">
-<p>τρίτῳ δὲ δι’ ὃ μάλιστα καὶ ἡ τῶν λεχθέντων εὐμένεια φθάνει προαπαντῶσα, τοῦτο δέ ἐστι
+παρέχοντος τοῦ πατρὸς τὸ ἐπήκοον ἐν εὐχαῖς,</p>
+         </div>
+         <div n="167" type="section">
+            <p>τρίτῳ δὲ δι’ ὃ μάλιστα καὶ ἡ τῶν λεχθέντων εὐμένεια φθάνει προαπαντῶσα, τοῦτο δέ ἐστι
 βελτίωσις τῶν ἀγομένων εἰς σπονδὰς καὶ συμβάσεις, οἳ μόλις ἐξ ἀνοδίας
 <lb n="10"/> εἰς ὁδὸν ἐδυνήθησαν ἐλθεῖν, ἧς τὸ πέρας οὐδὲν ἕτερον ἢ εὐαρεστεῖν τῷ
-θεῷ καθάπερ υἱοὺς πατρί.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="168">
-<p>παραγενομένων δὲ πολισθήσονται πάλιν αἱ ἐρείπιοι γενόμεναι πρὸ μικροῦ καὶ ἡ ἔρημος οἰκισθήσεται καὶ ἡ στειρωθεῖσα
+θεῷ καθάπερ υἱοὺς πατρί.</p>
+         </div>
+         <div n="168" type="section">
+            <p>παραγενομένων δὲ πολισθήσονται πάλιν αἱ ἐρείπιοι γενόμεναι πρὸ μικροῦ καὶ ἡ ἔρημος οἰκισθήσεται καὶ ἡ στειρωθεῖσα
 γῆ μεταβαλεῖ πρὸς εὐγονίαν· αἵ τε πατέρων καὶ προγόνων
 εὐτυχίαι βραχὺ μέρος εἶναι νομισθήσονται διὰ τὰς ἀφθόνους τῶν ἐν
 <lb n="15"/> χερσὶ περιουσίας, αἳ καθάπερ <add>ἀπ’</add> ἀενάων πηγῶν τῶν τοῦ θεοῦ χαρίτων
 ῥέουσαι βαθὺν πλοῦτον ἰδίᾳ τε ἑκάστῳ καὶ πᾶσι κοινῇ περιποιήσουσι
-φθόνου κρείττονα.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="169">
-<p>μεταβολὴ δὲ πάντων ἐξαπιναίως ἔσται· τρέψει γὰρ ὁ θεὸς τὰς ἀρὰς ἐπὶ τοὺς <add>τῶν</add> μετανενοηκότων ἐχθρούς, οἵτινες κακοπραγίαις
+φθόνου κρείττονα.</p>
+         </div>
+         <div n="169" type="section">
+            <p>μεταβολὴ δὲ πάντων ἐξαπιναίως ἔσται· τρέψει γὰρ ὁ θεὸς τὰς ἀρὰς ἐπὶ τοὺς <add>τῶν</add> μετανενοηκότων ἐχθρούς, οἵτινες κακοπραγίαις
 τοῦ ἔθνους ἐφήδοντο κατακερτομοῦντες καὶ ἐπιχλευάζοντες, ὡς
 <lb n="20"/> αὐτοὶ μὲν ἀκαθαίρετον ἕξοντες κλῆρον εὐτυχίας, ὃν παισὶ καὶ ἐκγόνοις
 κατὰ διαδοχὴν ἀπολείψειν ἤλπισαν, αἰεὶ δὲ ἐποψόμενοι τοὺς ἀντιπάλους
 ἐν βεβαίῳ καὶ ἀκλινεῖ δυστυχίᾳ ταμιευθησομένῃ καὶ ταῖς ἔπειτα γενεαῖς,
 </p>
-</div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="170">
-<p>ὑπὸ φρενοβλαβείας οὐ συνιέντες ὅτι καὶ τῆς πρὸ μικροῦ λαμπρότητος ἀπέλαυσαν οὐ δι’ αὑτοὺς ἀλλὰ διὰ νουθεσίαν ἑτέρων, οἷς τὰ πάτρια
+         </div>
+         <div n="170" type="section">
+            <p>ὑπὸ φρενοβλαβείας οὐ συνιέντες ὅτι καὶ τῆς πρὸ μικροῦ λαμπρότητος ἀπέλαυσαν οὐ δι’ αὑτοὺς ἀλλὰ διὰ νουθεσίαν ἑτέρων, οἷς τὰ πάτρια
 <lb n="25"/> καταλύσασι φάρμακον ἀνευρέθη σωτήριον, λύπη, τὰ τῶν δυσμενῶν
 <note xml:lang="mul" type="footnote">
-<lb/>1 χρησάμενοι codd.: χρησόμενοι v
+                  <lb/>1 χρησάμενοι codd.: χρησόμενοι v
 <lb/>3 ante συγγνώμην add. ὃς H2 (v) τιθέντος AP: τίθεται Η (v) δευτέρω Α: δευτέρου HP
 <lb/>5 ἐνδεικνύμενοι HP (Turn.): ἐνδεικνυμέναις Α (ἐπιδεικνυμέναις ι Mang.)
 <lb/>6 εἰώθασι HP: εἰωθὸς Α; coni. Mang. αὐτοῖς HP: αὐταῖς Α
@@ -2328,33 +2344,34 @@ License</licence>
 <lb/>21 ἀντιπάλους] ἀεννάους Α 
 <lb/>22 ταμιευσομένη A
 <lb/>24 ἀπήλαυσαν codd. (v) αὑτοὺς ΑΗ2: αὐτοὺς H1P (ἐαυτοὺς v)
-<lb/>25 ἄν εὑρεθῇ Α τὰ codd.: om. v</note> <note xml:lang="lat" type="footnote">13.14 Deut. 30,5. 17.
-<lb/>18 Deut. 307.</note>  
-
-<pb n="v.5.p.376"/>
+<lb/>25 ἄν εὑρεθῇ Α τὰ codd.: om. v</note>
+               <note xml:lang="lat" type="footnote">13.14 Deut. 30,5. 17.
+<lb/>18 Deut. 307.</note>
+               <pb n="v.5.p.376"/>
 ἀγαθὰ περιαλγήσασι· κλαύσαντες οὖν καὶ στενάξαντες τὴν ἰδίαν τροπὴν
 ἐπὶ τὴν ἀρχαίαν καὶ προγονικὴν ἀνακάμψουσιν εὐτυχίαν διαυλοδρομήσαντες,
- οἷς μὴ εἰς ἅπαν ἐξοκεῖλαι συνέβη.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="171">
-<p>οἱ δὲ γελάσαντες τὰς ὀλοφύρσεις
+ οἷς μὴ εἰς ἅπαν ἐξοκεῖλαι συνέβη.</p>
+         </div>
+         <div n="171" type="section">
+            <p>οἱ δὲ γελάσαντες τὰς ὀλοφύρσεις
 ἐκείνων καὶ δημοτελεῖς ἑορτὰς ἄγειν ψηφισάμενοι τὰς ἀποφράδας
 αὐτῶν καὶ τὰ πένθη κατευωχηθέντες καὶ συνόλως <milestone unit="altpage1" n="p. 437 M."/>  τὴν ἑτέρων κακοδαιμονίαν
 εὐδαιμονήσαντες, ὅταν ἄρξωνται κομίζεσθαι τὰ ἐπίχειρα τῆς <lb n="6"/>
 ὠμότητος, αἰσθήσονται διότι οὐκ εἰς ἀφανεῖς καὶ ἠμελημένους ἐξημάρτανον,
 ἀλλ’ εἰς εὐπατρίδας ἔχοντας ἐναύσματα τῆς εὐγενείας, ἀφ’ ὧν
- ἀναρριπισθέντων ἐξέλαμψεν ἡ πρὸ μικροῦ σβεσθεῖσα εὔκλεια.</p></div>
-
-<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg026.1st1K-grc1" subtype="section" n="172">
-<p>καθάπερ
+ ἀναρριπισθέντων ἐξέλαμψεν ἡ πρὸ μικροῦ σβεσθεῖσα εὔκλεια.</p>
+         </div>
+         <div n="172" type="section">
+            <p>καθάπερ
 γὰρ ὑποτμηθέντων τῶν στελεχῶν, ὅταν μὴ ἀφαιρεθῶσιν αἱ ῥίζαι, νέα <lb n="10"/>
 ἔρνη βλαστάνει, ὑφ’ ὧν τὰ γεράνδρυα παρευημερεῖται, τὸν αὐτὸν τρόπον
 καὶ ἐν ψυχαῖς βραχυτάτου σπέρματος τῶν εἰς ἀρετὴν ὑπολειφθέντος,
 ἄλλων περιαιρεθέντων, οὐδὲν ἧττον ἀπὸ τοῦ βραχέος φύεται τὰ τιμιώτατα
 καὶ κάλλιστα τῶν ἐν ἀνθρώποις, δι’ ἃ πάλιν εὐανδροῦσαι [αἱ]
-πόλεις συνοικίζονται καὶ ἔθνη πρὸς πολυανθρωπίαν ἐπιδίδωσιν.</p> <lb n="15"/>
-<note xml:lang="mul" type="footnote">
-<lb/>3 ἐξοκεῖλαι Α: ἐξωκεῖλαι HP (Turn.) γελάσαντες HP: τελέσαντες Α 
+πόλεις συνοικίζονται καὶ ἔθνη πρὸς πολυανθρωπίαν ἐπιδίδωσιν.</p>
+            <lb n="15"/>
+            <note xml:lang="mul" type="footnote">
+               <lb/>3 ἐξοκεῖλαι Α: ἐξωκεῖλαι HP (Turn.) γελάσαντες HP: τελέσαντες Α 
 <lb/>4 ἀποφράδας HP: ἀποσφραγῖδας Α
 <lb/>5 τὴν] τῆς P
 <lb/>6 εὐδαιμονίσαντες Turn. κομίζειν Α τἀπίχειρα HP
@@ -2366,4 +2383,8 @@ License</licence>
 <lb/>12 βραχυτάτου σπέρματος Α: βραχύτατον σπέρμα HP βραχυτάτων σπερμάτων Turn.) ὑπολειφθέντος Α: ὑπολειφθέντων HP (Turn.)
 <lb/>13 περαιωθέντων A
 <lb/>14 αἱ seclusi
-<lb/>15 συνοικίζονται om. Α ἐπιδιδόασιν Α</note> </div></div>  </body>   </text> </TEI>   
+<lb/>15 συνοικίζονται om. Α ἐπιδιδόασιν Α</note>
+         </div>
+      </body>
+   </text>
+</TEI>

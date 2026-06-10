@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <teiHeader xml:lang="eng">    
+   <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
             <title xml:lang="lat">Epistula ad Diognetum</title>
@@ -36,6 +36,7 @@
             <availability>
                <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
             </availability>
+            <idno type="CTS">urn:cts:greekLit:tlg0646.tlg004.1st1K-grc1</idno>
          </publicationStmt>
          <sourceDesc>
             <biblStruct>
@@ -55,26 +56,39 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>    <refsDecl n="CTS">
-            <cRefPattern matchPattern="(\w+).(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern matchPattern="(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(\w+).(\w+)"
+                         n="section"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(\w+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim=":" match="div[@type='chapter']" use="@n">
+                  <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+               </citeStructure>
+            </citeStructure>
          </refsDecl>
       </encodingDesc>
       <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter-section"/>
+         </textClass>
          <langUsage>
             <language ident="lat">Latin</language>
             <language ident="grc">Greek</language>
          </langUsage>
       </profileDesc>
- </teiHeader>
-
+   </teiHeader>
    <text>
-      <body>
-         <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0646.tlg004.1st1K-grc1">
+      <body xml:base="urn:cts:greekLit:tlg0646.tlg004.1st1K-grc1">
          <pb xml:id="p.350"/>
          <head>ΕΠΙΣΤΟΛΗ ΠΡΟΣ ΔΙΟΓΝΗΤΟΝ</head>
-         <div type="textpart" subtype="chapter" n="1">
-            <div type="textpart" subtype="section" n="1">
+         <div n="1" type="chapter">
+            <div n="1" type="section">
                <p>
 Ἐπειδὴ ὁρῶ, κράτιστε Διόγνητε, ὑπερεσπουδακότα
 σε τὴν θεοσέβειαν τῶν Χριστιανῶν
@@ -95,8 +109,8 @@
 </p>
             </div>
          </div>
-         <div type="textpart" subtype="chapter" n="2">
-            <div type="textpart" subtype="section" n="1">
+         <div n="2" type="chapter">
+            <div n="1" type="section">
                <p>
  Ἄγε δή, καθάρας σεαυτὸν ἀπὸ πάντων τῶν
 προκατεχόντων σου τὴν διάνοιαν λογισμῶν καὶ τὴν
@@ -109,7 +123,7 @@
 εἴδους τυγχάνουσιν, οὓς ἐρεῖτε καὶ νομίζετε θεούς.
 </p>
             </div>
-            <div type="textpart" subtype="section" n="2">
+            <div n="2" type="section">
                <p> οὐχ ὁ μέν τις λίθος ἐστίν, ὅμοιος τῷ πατουμένῳ,
 ὁ δ̓ ἐστὶ χαλκός, οὐ κρείσσων τῶν εἰς τὴν χρῆσιν
 ἡμῖν κεχαλκευμένων σκευῶν, ὁ δὲ ξύλον, ἤδη καὶ
@@ -119,7 +133,7 @@
 πρὸς τὴν ἀτιμοτάτην ὑπηρεσίαν εὐπρεπέστερον;
 </p>
             </div>
-            <div type="textpart" subtype="section" n="3">
+            <div n="3" type="section">
                <p> οὐ φθαρτῆς ὕλης ταῦτα πάντα; οὐχ ὑπὸ
 σιδήρου καὶ πυρὸς κεχαλκευμένα; οὐχ ὃ μὲν
 αὐτῶν λιθοξόος, ὃ δὲ χαλκεύς, ὃ δὲ ἀργυροκόπος,
@@ -130,25 +144,25 @@
 γένοιτ̓ ἄν, εἰ τύχοι τῶν αὐτῶν τεχνιτῶν, ὅμοια τοιούτοις;
 </p>
             </div>
-            <div type="textpart" subtype="section" n="4">
+            <div n="4" type="section">
                <p> οὐ ταῦτα πάλιν, τὰ νῦν ὑφ̓ ὑμῶν προσκυνούμενα,
 δύναιτ̓ ἂν ὑπὸ ἀνθρώπων σκεύη ὅμοια
 γενέσθαι τοῖς λοιποῖς; οὐ κωφὰ πάντα; οὐ τυφλά;
 οὐκ ἄψυχα; οὐκ ἀναίσθητα; οὐκ ἀκίνητα; οὐ
 πάντα σηπόμενα; οὐ πάντα φθειρόμενα; </p>
             </div>
-            <div type="textpart" subtype="section" n="5">
+            <div n="5" type="section">
                <p> ταῦτα
 θεοὺς καλεῖτε; τούτοις δουλεύετε; τούτοις προσκυνεῖτε,
 τέλεον δ̓ αὐτοῖς ἐξομοιοῦσθε. </p>
             </div>
-            <div type="textpart" subtype="section" n="6">
+            <div n="6" type="section">
                <p> διὰ
 <pb xml:id="p.354"/>
 τοῦτο μισεῖτε Χριστιανούς, ὅτι τούτους οὐχ
 ἡγοῦνται θεούς; </p>
             </div>
-            <div type="textpart" subtype="section" n="7">
+            <div n="7" type="section">
                <p> ὑμεῖς γὰρ αἰνεῖν νομίζοντες
 καὶ οἰόμενοι, οὐ πολὺ πλέον αὐτῶν καταφρονεῖτε;
 οὐ πολὺ μᾶλλον αὐτοὺς χλευάζετε καὶ ὑβρίζετε,
@@ -157,13 +171,13 @@
 ταῖς νυξὶ καὶ ταῖς ἡμέραις φύλακας παρακαθιστάντες,
 ἵνα μὴ κλαπῶσιν; </p>
             </div>
-            <div type="textpart" subtype="section" n="8">
+            <div n="8" type="section">
                <p> αἷς δὲ δοκεῖτε
 τιμαῖς προσφέρειν, εἰ μὲν αἰσθάνονται, κολάζετε
 μᾶλλον αὐτούς: εἰ δὲ ἀναισθητοῦσιν, ἐλέγχοντες
 αἵματι καὶ κνίσαις αὐτοὺς θρησκεύετε. </p>
             </div>
-            <div type="textpart" subtype="section" n="9">
+            <div n="9" type="section">
                <p> ταῦθ̓
 ὑμῶν τις ὑπομεινάτω, ταῦτα ἀνασχέσθω τις
 ἑαυτῷ γενέσθαι. ἀλλὰ ἄνθρωπος μὲν οὐδὲ εἷς
@@ -172,7 +186,7 @@
 ἀναισθητεῖ γάρ. οὐκ οὖν τὴν αἴσθησιν αὐτοῦ
 ἐλέγχετε; </p>
             </div>
-            <div type="textpart" subtype="section" n="10">
+            <div n="10" type="section">
                <p> περὶ μὲν οὖν τοῦ μὴ δεδουλῶσθαι
 Χριστιανοὺς τοιούτοις θεοῖς πολλὰ μὲν ἂν καὶ
 ἄλλα εἰπεῖν ἔχοιμι: εἰ δέ τινι μὴ δοκοίη κἂν
@@ -180,14 +194,14 @@
 </p>
             </div>
          </div>
-         <div type="textpart" subtype="chapter" n="3">
-            <div type="textpart" subtype="section" n="1">
+         <div n="3" type="chapter">
+            <div n="1" type="section">
                <p>
  Ἑξῆς δὲ περὶ τοῦ μὴ κατὰ τὰ αὐτὰ Ἰουδαίοις
 θεοσεβεῖν αὐτοὺς οἶμαί σε μάλιστα ποθεῖν ἀκοῦσαι.
 </p>
             </div>
-            <div type="textpart" subtype="section" n="2">
+            <div n="2" type="section">
                <p> Ἰουδαῖοι τοίνυν, εἰ μὲν ἀπέχονται ταύτης
 τῆς προειρημένης λατρείας, καλῶς θεὸν ἕνα
 τῶν πάντων σέβειν καὶ δεσπότην ἀξιοῦσι φρονεῖν:
@@ -195,7 +209,7 @@
 προσάγουσιν αὐτῷ ταύτην, διαμαρτάνουσιν.
 </p>
             </div>
-            <div type="textpart" subtype="section" n="3">
+            <div n="3" type="section">
                <p> ἃ γὰρ τοῖς ἀναισθήτοις καὶ κωφοῖς
 <pb xml:id="p.356"/>
 προσφέροντες οἱ Ἕλληνες ἀφροσύνης δεῖγμα
@@ -205,14 +219,14 @@
                      <bibl>Exod. 20. 11; Ps. 146, 6; Acts 14, 15</bibl>
                   </note> ἡγοῖντ̓ ἄν, οὐ θεοσέβειαν. </p>
             </div>
-            <div type="textpart" subtype="section" n="4">
+            <div n="4" type="section">
                <p> ὁ γὰρ ποιήσας
 τὸν οὐρανὸν καὶ τὴν γῆν καὶ πάντα τὰ ἐν αὐτοῖς
 καὶ πᾶσιν ἡμῖν χορηγῶν, ὧν προσδεόμεθα, οὐδενὸς
 ἂν αὐτὸς προσδέοιτο τούτων ὧν τοῖς οἰομένοις
 διδόναι παρέχει αὐτός. </p>
             </div>
-            <div type="textpart" subtype="section" n="5">
+            <div n="5" type="section">
                <p> οἱ δέ γε θυσίας αὐτῷ δἰ
 αἵματος καὶ κνίσης καὶ ὁλοκαυτωμάτων ἐπιτελεῖν
 οἰόμενοι καὶ ταύταις ταῖς τιμαῖς αὐτὸν γεραίρειν,
@@ -223,8 +237,8 @@
 </p>
             </div>
          </div>
-         <div type="textpart" subtype="chapter" n="4">
-            <div type="textpart" subtype="section" n="1">
+         <div n="4" type="chapter">
+            <div n="1" type="section">
                <p>
  Ἀλλὰ μὴν τό γε περὶ τὰς βρώσεις αὐτῶν
 ψοφοδεὲς καὶ τὴν περὶ τὰ σάββατα δεισιδαιμονίαν
@@ -233,26 +247,26 @@
 καὶ οὐδενὸς ἄξια λόγου, οὐ νομίζω σε
 χρῄζειν παῤ ἐμοῦ μαθεῖν. </p>
             </div>
-            <div type="textpart" subtype="section" n="2">
+            <div n="2" type="section">
                <p> τό τε γὰρ τῶν ὑπὸ
 τοῦ θεοῦ κτισθέντων εἰς χρῆσιν ἀνθρώπων ἃ μὲν
 ὡς καλῶς κτισθέντα παραδέχεσθαι, ἃ δ̓ ὡς
 ἄχρηστα καὶ περισσὰ παραιτεῖσθαι, πῶς οὐκ
 ἀθέμιστον; </p>
             </div>
-            <div type="textpart" subtype="section" n="3">
+            <div n="3" type="section">
                <p> τὸ δὲ καταψεύδεσθαι θεοῦ ὡς
 κωλύοντος ἐν τῇ τῶν σαββάτων ἡμέρᾳ καλόν τι
 ποιεῖν, πῶς οὐκ ἀσεβές; </p>
             </div>
-            <div type="textpart" subtype="section" n="4">
+            <div n="4" type="section">
                <p> τὸ δὲ καὶ τὴν μείωσιν
 τῆς σαρκὸς μαρτύριον ἐκλογῆς ἀλαζονεύεσθαι ὡς
 <pb xml:id="p.358"/>
 διὰ τοῦτο ἐξαιρέτως ἠγαπημένους ὑπὸ θεοῦ, πῶς
 οὐ χλεύης ἄξιον; </p>
             </div>
-            <div type="textpart" subtype="section" n="5">
+            <div n="5" type="section">
                <p> τὸ δὲ παρεδρεύοντας αὐτοὺς
 ἄστροις καὶ σελήνῃ τὴν παρατήρησιν τῶν μηνῶν
 καὶ τῶν ἡμερῶν ποιεῖσθαι καὶ τὰς οἰκονομίας θεοῦ
@@ -261,7 +275,7 @@
 πένθη: τίς ἂν θεοσεβείας καὶ οὐκ ἀφροσύνης
 πολὺ πλέον ἡγήσαιτο δεῖγμα; </p>
             </div>
-            <div type="textpart" subtype="section" n="6">
+            <div n="6" type="section">
                <p> τῆς μὲν οὖν
 κοινῆς εἰκαιότητος καὶ ἀπάτης καὶ τῆς Ἰουδαίων
 πολυπραγμοσύνης καὶ ἀλαζονείας ὡς ὀρθῶς ἀπέχονται
@@ -271,24 +285,24 @@
 </p>
             </div>
          </div>
-         <div type="textpart" subtype="chapter" n="5">
-            <div type="textpart" subtype="section" n="1">
+         <div n="5" type="chapter">
+            <div n="1" type="section">
                <p>Χριστιανοὶ γὰρ οὔτε γῇ οὔτε φωνῇ οὔτε ἔθεσι
 διακεκριμένοι τῶν λοιπῶν εἰσιν ἀνθρώπων. </p>
             </div>
-            <div type="textpart" subtype="section" n="2">
+            <div n="2" type="section">
                <p> οὔτε
 γάρ που πόλεις ἰδίας κατοικοῦσιν οὔτε διαλέκτῳ
 τινὶ παρηλλαγμένῃ χρῶνται οὔτε βίον παράσημον
 ἀσκοῦσιν. </p>
             </div>
-            <div type="textpart" subtype="section" n="3">
+            <div n="3" type="section">
                <p> οὐ μὴν ἐπινοίᾳ τινὶ καὶ φροντίδι
 πολυπραγμόνων ἀνθρώπων μάθημα τοῦτ̓ αὐτοῖς
 ἐστιν εὑρημένον, οὐδὲ δόγματος ἀνθρωπίνου προεστᾶσιν,
 ὥσπερ ἔνιοι. </p>
             </div>
-            <div type="textpart" subtype="section" n="4">
+            <div n="4" type="section">
                <p> κατοικοῦντες δὲ πόλεις
 ἑλληνίδας τε καὶ βαρβάρους, ὡς ἕκαστος ἐκληρώθη,
 καὶ τοῖς ἐγχωρίοις ἔθεσιν ἀκολουθοῦντες
@@ -296,7 +310,7 @@
 καὶ ὁμολογουμένως παράδοξον ἐνδείκνυνται
 τὴν κατάστασιν τῆς ἑαυτῶν πολιτείας. </p>
             </div>
-            <div type="textpart" subtype="section" n="5">
+            <div n="5" type="section">
                <p> πατρίδας
 οἰκοῦσιν ἰδίας, ἀλλ̓ ὡς πάροικοι: μετέχουσι
 <pb xml:id="p.360"/>
@@ -304,17 +318,17 @@
 ξένοι: πᾶσα ξένη πατρίς ἐστιν αὐτῶν, καὶ πᾶσα
 πατρὶς ξένη. </p>
             </div>
-            <div type="textpart" subtype="section" n="6">
+            <div n="6" type="section">
                <p> γαμοῦσιν ὡς πάντες, τεκνογονοῦσιν:
 ἀλλ̓ οὐ ῥίπτουσι τὰ γεννώμενα. </p>
             </div>
-            <div type="textpart" subtype="section" n="7">
+            <div n="7" type="section">
                <p> τράπεζαν
 <note>
                      <bibl>II Cor. 10, 3; Rom. 8, 12. 13</bibl>
                   </note> κοινὴν παρατίθενται, ἀλλ̓ οὐ κοίτην. </p>
             </div>
-            <div type="textpart" subtype="section" n="8">
+            <div n="8" type="section">
                <p> ἐν
 σαρκὶ τυγχάνουσιν, ἀλλ̓ οὐ κατὰ σάρκα ζῶσιν.
 <note>
@@ -322,15 +336,15 @@
                   </note>
                </p>
             </div>
-            <div type="textpart" subtype="section" n="9">
+            <div n="9" type="section">
                <p> ἐπὶ γῆς διατρίβουσιν, ἀλλ̓ ἐν οὐρανῷ πολιτεύονται.
 </p>
             </div>
-            <div type="textpart" subtype="section" n="10">
+            <div n="10" type="section">
                <p> πείθονται τοῖς ὡρισμένοις νόμοις,
 καὶ τοῖς ἰδίοις βίοις νικῶσι τοὺς νόμους. </p>
             </div>
-            <div type="textpart" subtype="section" n="11">
+            <div n="11" type="section">
                <p> ἀγαπῶσι
 πάντας, καὶ ὑπὸ πάντων διώκονται.
 <note>
@@ -338,18 +352,18 @@
                   </note>
                </p>
             </div>
-            <div type="textpart" subtype="section" n="12">
+            <div n="12" type="section">
                <p> ἀγνοοῦνται, καὶ κατακρίνονται: θανατοῦνται,
 <note>
                      <bibl>II Cor. 6, 10</bibl>
                   </note> καὶ ζωοποιοῦνται. </p>
             </div>
-            <div type="textpart" subtype="section" n="13">
+            <div n="13" type="section">
                <p> πτωχεύουσι, καὶ πλουτίζουσι
 πολλούς: πάντων ὑστεροῦνται, καὶ ἐν πᾶσι
 περισσεύουσιν. </p>
             </div>
-            <div type="textpart" subtype="section" n="14">
+            <div n="14" type="section">
                <p> ἀτιμοῦνται, καὶ ἐν ταῖς
 ἀτιμίαις δοξάζονται. βλασφημοῦνται, καὶ δικαιοῦνται.
 <note>
@@ -357,37 +371,37 @@
                   </note>
                </p>
             </div>
-            <div type="textpart" subtype="section" n="15">
+            <div n="15" type="section">
                <p> λοιδοροῦνται, καὶ εὐλογοῦσιν: ὑβρίζονται,
 <note>
                      <bibl>II Cor. 6, 10</bibl>
                   </note> καὶ τιμῶσιν. </p>
             </div>
-            <div type="textpart" subtype="section" n="16">
+            <div n="16" type="section">
                <p> ἀγαθοποιοῦντες ὡς
 κακοὶ κολάζονται: κολαζόμενοι χαίρουσιν ὡς
 ζωοποιούμενοι. </p>
             </div>
-            <div type="textpart" subtype="section" n="17">
+            <div n="17" type="section">
                <p> ὑπὸ Ἰουδαίων ὡς ἀλλόφυλοι
 πολεμοῦνται καὶ ὑπὸ Ἑλλήνων διώκονται: καὶ
 τὴν αἰτίαν τῆς ἔχθρας εἰπεῖν οἱ μισοῦντες οὐκ ἔχουσιν.
 </p>
             </div>
          </div>
-         <div type="textpart" subtype="chapter" n="6">
-            <div type="textpart" subtype="section" n="1">
+         <div n="6" type="chapter">
+            <div n="1" type="section">
                <p>
  Ἁπλῶς δ̓ εἰπεῖν, ὅπερ ἐστὶν σώματι ψυχή,
 τοῦτ̓ εἰσὶν ἐν κόσμῳ Χριστιανοί. </p>
             </div>
-            <div type="textpart" subtype="section" n="2">
+            <div n="2" type="section">
                <p> ἔσπαρται
 κατὰ πάντων τῶν τοῦ σώματος μελῶν ἡ ψυχή,
 καὶ Χριστιανοὶ κατὰ τὰς τοῦ κόσμου πόλεις.
 </p>
             </div>
-            <div type="textpart" subtype="section" n="3">
+            <div n="3" type="section">
                <p> οἰκεῖ μὲν ἐν τῷ σώματι ψυχή, οὐκ ἔστι δὲ ἐκ
 <note>
                      <bibl>Jo. 17, 11., 14. 16</bibl>
@@ -395,7 +409,7 @@
 <pb xml:id="p.362"/>
 οὐκ εἰσὶ δὲ ἐκ τοῦ κόσμου. </p>
             </div>
-            <div type="textpart" subtype="section" n="4">
+            <div n="4" type="section">
                <p> ἀόρατος ἡ ψυχὴ
 ἐν ὁρατῷ φρουρεῖται τῷ σώματι: καὶ Χριστιανοὶ
 γινώσκονται μὲν ὄντες ἐν τῷ κόσμῳ, ἀόρατος δὲ
@@ -403,7 +417,7 @@
                      <bibl>Gal. 5, 17</bibl>
                   </note> αὐτῶν ἡ θεοσέβεια μένει. </p>
             </div>
-            <div type="textpart" subtype="section" n="5">
+            <div n="5" type="section">
                <p> μισεῖ τὴν ψυχὴν ἡ
 σὰρξ καὶ πολεμεῖ μηδὲν ἀδικουμένη, διότι ταῖς
 ἡδοναῖς κωλύεται χρῆσθαι: μισεῖ καὶ Χριστιανοὺς
@@ -412,39 +426,39 @@
                      <bibl>Jo. 15, 18., 19</bibl>
                   </note> ἀντιτάσσονται. </p>
             </div>
-            <div type="textpart" subtype="section" n="6">
+            <div n="6" type="section">
                <p> ἡ ψυχὴ τὴν μισοῦσαν ἀγαπᾷ
 σάρκα καὶ τὰ μέλη: καὶ Χριστιανοὶ τοὺς μισοῦντας
 <note>
                      <bibl>Mt. 5, 44;, Luk. 6, 27</bibl>
                   </note> ἀγαπῶσιν. </p>
             </div>
-            <div type="textpart" subtype="section" n="7">
+            <div n="7" type="section">
                <p> ἐγκέκλεισται μὲν ἡ ψυχὴ τῷ
 σώματι, συνέχει δὲ αὐτὴ τὸ σῶμα: καὶ Χριστιανοὶ
 κατέχονται μὲν ὡς ἐν φρουρᾷ τῷ κόσμῳ,
 αὐτοὶ δὲ συνέχουσι τὸν κόσμον. </p>
             </div>
-            <div type="textpart" subtype="section" n="8">
+            <div n="8" type="section">
                <p> ἀθάνατος ἡ
 ψυχὴ ἐν θνητῷ σκηνώματι κατοικεῖ: καὶ Χριστιανοὶ
 παροικοῦσιν ἐν φθαρτοῖς, τὴν ἐν οὐρανοῖς
 ἀφθαρσίαν προσδεχόμενοι. </p>
             </div>
-            <div type="textpart" subtype="section" n="9">
+            <div n="9" type="section">
                <p> κακουργουμένη
 σιτίοις καὶ ποτοῖς ἡ ψυχὴ βελτιοῦται: καὶ
 Χριστιανοὶ κολαζόμενοι καθ̓ ἡμέραν πλεονάζουσι
 μᾶλλον. </p>
             </div>
-            <div type="textpart" subtype="section" n="10">
+            <div n="10" type="section">
                <p> εἰς τοσαύτην αὐτοὺς τάξιν ἔθετο ὁ
 θεός, ἣν οὐ θεμιτὸν αὐτοῖς παραιτήσασθαι.
 </p>
             </div>
          </div>
-         <div type="textpart" subtype="chapter" n="7">
-            <div type="textpart" subtype="section" n="1">
+         <div n="7" type="chapter">
+            <div n="1" type="section">
                <p>
  Οὐ γὰρ ἐπιγειον, ὡς ἔφην, εὕρημα τοῦτ̓
 αὐτοῖς παρεδόθη, οὐδὲ θνητὴν ἐπίνοιαν φυλάσσειν
@@ -453,7 +467,7 @@
                      <bibl>I Cor. 9, 17</bibl>
                   </note> μυστηρίων πεπίστευνται. </p>
             </div>
-            <div type="textpart" subtype="section" n="2">
+            <div n="2" type="section">
                <p> ἀλλ̓ αὐτὸς
 ἀληθῶς ὁ παντοκράτωρ καὶ παντοκτίστης καὶ
 <pb xml:id="p.364"/>
@@ -478,7 +492,7 @@
 βάθεσι, τὰ ἐν τῷ μεταξύ: τοῦτον πρὸς αὐτοὺς
 ἀπέστειλεν. </p>
             </div>
-            <div type="textpart" subtype="section" n="3">
+            <div n="3" type="section">
                <p> ἆρά γε, ὡς ἀνθρώπων ἄν τις
 λογίσαιτο, ἐπὶ τυραννίδι καὶ φόβῳ καὶ καταπλήξει;
 <note>
@@ -486,7 +500,7 @@
                   </note>
                </p>
             </div>
-            <div type="textpart" subtype="section" n="4">
+            <div n="4" type="section">
                <p> οὐ μὲν οὖν: ἀλλ̓ ἐν ἐπιεικείᾳ καὶ
 <note>
                      <bibl>Jo. 3, 17</bibl>
@@ -498,41 +512,41 @@
 πείθων, οὐ βιαζόμενος: βία γὰρ οὐ πρόσεστι τῷ
 θεῷ. </p>
             </div>
-            <div type="textpart" subtype="section" n="5">
+            <div n="5" type="section">
                <p> ἔπεμψεν ὡς καλῶν, οὐ διώκων: ἔπεμψεν
 <note>
                      <bibl>Malach. 3, 2</bibl>
                   </note> ὡς ἀγαπῶν, οὐ κρίνων. </p>
             </div>
-            <div type="textpart" subtype="section" n="6">
+            <div n="6" type="section">
                <p> πέμψει γὰρ αὐτὸν
 κρίνοντα: καὶ τίς αὐτοῦ τὴν παρουσίαν ὑποστήσεται;
 ... </p>
             </div>
-            <div type="textpart" subtype="section" n="7">
+            <div n="7" type="section">
                <p>.. παραβαλλομένους θηρίοις,
 <pb xml:id="p.366"/>
 ἵνα ἀρνήσωνται τὸν κύριον, καὶ μὴ νικωμένους;
 </p>
             </div>
-            <div type="textpart" subtype="section" n="8">
+            <div n="8" type="section">
                <p> οὐχ ὁρᾷς, ὅσῳ πλείονες κολάζονται, τοσούτῳ
 πλεονάζοντας ἄλλους; </p>
             </div>
-            <div type="textpart" subtype="section" n="9">
+            <div n="9" type="section">
                <p> ταῦτα ἀνθρώπου οὐ
 δοκεῖ τὰ ἔργα: ταῦτα δύναμίς ἐστι θεοῦ: ταῦτα
 τῆς παρουσίας αὐτοῦ δείγματα.
 </p>
             </div>
          </div>
-         <div type="textpart" subtype="chapter" n="8">
-            <div type="textpart" subtype="section" n="1">
+         <div n="8" type="chapter">
+            <div n="1" type="section">
                <p>
  Τίς γὰρ ὅλως ἀνθρώπων ἠπίστατο, τί ποτ̓
 ἐστὶ θεὸς πρὶν αὐτὸν ἐλθεῖν; </p>
             </div>
-            <div type="textpart" subtype="section" n="2">
+            <div n="2" type="section">
                <p> ἢ τοὺς κενοὺς καὶ
 ληρώδεις ἐκείνων λόγους ἀποδέχῃ τῶν ἀξιοπίστων
 φιλοσόφων, ὧν οἱ μέν τινες πῦρ ἔφασαν εἶναι τὸν
@@ -540,49 +554,49 @@
 θεόν̓, οἱ δὲ ὕδωρ, οἱ δ̓ ἄλλο τι τῶν στοιχείων τῶν
 ἐκτισμένων ὑπὸ θεοῦ; </p>
             </div>
-            <div type="textpart" subtype="section" n="3">
+            <div n="3" type="section">
                <p> καίτοι γε, εἴ τις τούτων
 τῶν λόγων ἀποδεκτός ἐστι, δύναιτ̓ ἂν καὶ τῶν
 λοιπῶν κτισμάτων ἓν ἕκαστον ὁμοίως ἀποφαίνεσθαι
 θεόν. </p>
             </div>
-            <div type="textpart" subtype="section" n="4">
+            <div n="4" type="section">
                <p> ἀλλὰ ταῦτα μὲν τερατεία καὶ
 πλάνη τῶν γοήτων ἐστίν: </p>
             </div>
-            <div type="textpart" subtype="section" n="5">
+            <div n="5" type="section">
                <p> ἀνθρώπων δὲ οὐδεὶς
 οὔτε εἶδεν οὔτε ἐγνώρισεν, αὐτὸς δὲ ἑαυτὸν ἐπέδειξεν.
 </p>
             </div>
-            <div type="textpart" subtype="section" n="6">
+            <div n="6" type="section">
                <p> ἐπέδειξε δὲ διὰ πίστεως, ᾗ μόνῃ θεὸν ἰδεῖν
 συγκεχώρηται. </p>
             </div>
-            <div type="textpart" subtype="section" n="7">
+            <div n="7" type="section">
                <p> ὁ γὰρ δεσπότης καὶ δημιουργὸς
 τῶν ὅλων θεός, ὁ ποιήσας τὰ πάντα καὶ κατὰ τάξιν
 διακρίνας, οὐ μόνον φιλάνθρωπος ἐγένετο, ἀλλὰ
 καὶ μακρόθυμος. </p>
             </div>
-            <div type="textpart" subtype="section" n="8">
+            <div n="8" type="section">
                <p> ἀλλ̓ οὗτος ἦν μὲν ἀεὶ τοιοῦτος
 καὶ ἔστι καὶ ἔσται, χρηστὸς καὶ ἀγαθὸς
 καὶ ἀόργητος καὶ ἀληθής, καὶ μόνος ἀγαθός ἐστιν:
 </p>
             </div>
-            <div type="textpart" subtype="section" n="9">
+            <div n="9" type="section">
                <p> ἐννοήσας δὲ μεγάλην καὶ ἄφραστον ἔννοιαν
 ἀνεκοινώσατο μόνῳ τῷ παιδί. </p>
             </div>
-            <div type="textpart" subtype="section" n="10">
+            <div n="10" type="section">
                <p> ἐν ὅσῳ μὲν
 οὖν κατεῖχεν ἐν μυστηρίῳ καὶ διετήρει τὴν σοφὴν
 αὐτοῦ βουλήν, ἀμελεῖν ἡμῶν καὶ ἀφροντιστεῖν
 <pb xml:id="p.368"/>
 ἐδόκει: </p>
             </div>
-            <div type="textpart" subtype="section" n="11">
+            <div n="11" type="section">
                <p> ἐπεὶ δὲ ἀπεκάλυψε διὰ τοῦ ἀγαπητοῦ
 παιδὸς καὶ ἐφανέρωσε τὰ ἐξ ἀρχῆς ἡτοιμασμένα,
 πάνθ̓ ἅμα παρέσχεν ἡμῖν καὶ μετασχεῖν τῶν
@@ -591,8 +605,8 @@
 </p>
             </div>
          </div>
-         <div type="textpart" subtype="chapter" n="9">
-            <div type="textpart" subtype="section" n="1">
+         <div n="9" type="chapter">
+            <div n="1" type="section">
                <p>
  Πάντ̓ οὖν ἤδη παῤ ἑαυτῷ σὺν τῷ παιδὶ
 <note>
@@ -613,7 +627,7 @@
 ἀδύνατον εἰσελθεῖν εἰς τὴν βασιλείαν τοῦ θεοῦ τῇ
 δυνάμει τοῦ θεοῦ δυνατοὶ γενηθῶμεν. </p>
             </div>
-            <div type="textpart" subtype="section" n="2">
+            <div n="2" type="section">
                <p> ἐπεὶ δὲ
 πεπλήρωτο μὲν ἡ ἡμετέρα ἀδικία καὶ τελείως
 πεφανέρωτο, ὅτι ὁ μισθὸς αὐτῆς κόλασις καὶ
@@ -634,24 +648,24 @@
 ὑπὲρ τῶν ἀδίκων, τὸν ἄφθαρτον ὑπὲρ τῶν φθαρτῶν,
 τὸν ἀθάνατον ὑπὲρ τῶν θνητῶν. </p>
             </div>
-            <div type="textpart" subtype="section" n="3">
+            <div n="3" type="section">
                <p> τί γὰρ ἄλλο
 τὰς ἁμαρτίας ἡμῶν ἠδυνήθη καλύψαι ἢ ἐκείνου
 δικαιοσύνη; </p>
             </div>
-            <div type="textpart" subtype="section" n="4">
+            <div n="4" type="section">
                <p> ἐν τίνι δικαιωθῆναι δυνατὸν τοὺς
 ἀνόμους ἡμᾶς καὶ ἀσεβεῖς ἢ ἐν μόνῳ τῷ υἱῷ τοῦ
 θεοῦ; </p>
             </div>
-            <div type="textpart" subtype="section" n="5">
+            <div n="5" type="section">
                <p> ὢ τῆς γλυκείας ἀνταλλαγῆς, ὢ τῆς
 ἀνεξιχνιάστου δημιουργίας, ὢ τῶν ἀπροσδοκήτων
 εὐεργεσιῶν: ἵνα ἀνομία μὲν πολλῶν ἐν δικαίῳ
 ἑνὶ κρυβῇ, δικαιοσύνη δὲ ἑνὸς πολλοὺς ἀνόμους
 δικαιώσῃ. </p>
             </div>
-            <div type="textpart" subtype="section" n="6">
+            <div n="6" type="section">
                <p> ἐλέγξας οὖν ἐν μὲν τῷ πρόσθεν
 χρόνῳ τὸ ἀδύνατον τῆς ἡμετέρας φύσεως εἰς τὸ
 τυχεῖν ζωῆς, νῦν δὲ τὸν σωτῆρα δείξας δυνατὸν
@@ -665,15 +679,15 @@
 </p>
             </div>
          </div>
-         <div type="textpart" subtype="chapter" n="10">
-            <div type="textpart" subtype="section" n="1">
+         <div n="10" type="chapter">
+            <div n="1" type="section">
                <p>
  Ταύτην καὶ σὺ τὴν πίστιν ἐὰν ποθήσῃς, καὶ
 <note>
                      <bibl>Jo. 3, 16 ; I Jo. 4, 9</bibl>
                   </note> λάβῃς πρῶτον μὲν ἐπίγνωσιν πατρός... </p>
             </div>
-            <div type="textpart" subtype="section" n="2">
+            <div n="2" type="section">
                <p> ὁ γὰρ
 θεὸς τοὺς ἀνθρώπους ἠγάπησε, δἰ οὓς ἐποίησε τὸν
 κόσμον, οἷς ὑπέταξε πάντα τὰ ἐν τῇ γῇ, οἷς λόγον
@@ -685,7 +699,7 @@
 τὴν ἐν οὐρανῷ βασιλείαν ἐπηγγείλατο, καὶ δώσει
 τοῖς ἀγαπήσασιν αὐτόν. </p>
             </div>
-            <div type="textpart" subtype="section" n="3">
+            <div n="3" type="section">
                <p> ἐπιγνοὺς δὲ τίνος οἴει
 <pb xml:id="p.372"/>
                   <note>
@@ -693,13 +707,13 @@
                   </note> πληρωθήσεσθαι χαρᾶς; ἢ πῶς ἀγαπήσεις τὸ
 οὕτως προαγαπήσαντά σε; </p>
             </div>
-            <div type="textpart" subtype="section" n="4">
+            <div n="4" type="section">
                <p> ἀγαπήσας δὲ μιμη
 τὴς ἔσῃ αὐτοῦ τῆς χρηστότητος. καὶ μὴ θαυμάσῃ
 εἰ δύναται μιμητὴς ἄνθρωπος γενέσθαι θεοῦ
 δύναται θέλοντος αὐτοῦ. </p>
             </div>
-            <div type="textpart" subtype="section" n="5">
+            <div n="5" type="section">
                <p> οὐ γὰρ τὸ καταδυν̔??ʼ
 στεύειν τῶν πλησίον οὐδὲ τὸ πλέον ἔχειν βούλεσθ̔??ʼ
 τῶν ἀσθενεστέρων οὐδὲ τὸ πλουτεῖν καὶ βιάζεσθἁ??ʼ
@@ -709,7 +723,7 @@
                      <bibl>Gal. 6. 2</bibl>
                   </note> ἐκτὸς τῆς ἐκείνου μεγαλειότητος. </p>
             </div>
-            <div type="textpart" subtype="section" n="6">
+            <div n="6" type="section">
                <p> ἀλλ̓ ὅστις
 τὸ τοῦ πλησίον ἀναδέχεται βάρος, ὃς ἐν ᾧ κρείσσων
 ἐστὶν ἕτερον τὸν ἐλαττούμενον εὐεργετεῖν
@@ -719,7 +733,7 @@
                      <bibl>Eph. 6, 9 Col. 4, 1</bibl>
                   </note> οὗτος μιμητής ἐστι θεοῦ. </p>
             </div>
-            <div type="textpart" subtype="section" n="7">
+            <div n="7" type="section">
                <p> τότε θεάσῃ
 τυγχάνων ἐπὶ γῆς, ὅτι θεὸς ἐν οὐρανοῖς πολιτεύεται,
 τότε μυστήρια θεοῦ λαλεῖν ἄρξῃ, τότε τοὺς κολαζομένους
@@ -732,7 +746,7 @@
 εἰς τὸ πῦρ τὸ αἰώνιον, ὃ τοὺς παραδοθέντας
 αὐτῷ μέχρι τέλους κολάσει. </p>
             </div>
-            <div type="textpart" subtype="section" n="8">
+            <div n="8" type="section">
                <p> τότε τοὺς
 ὑπομένοντας ὑπὲρ δικαιοσύνης θαυμάσεις τὸ πῦρ
 τὸ πρόσκαιρον καὶ μακαρίσεις, ὅταν ἐκεῖνο τὸ πῦρ ἐπιγνῷς.
@@ -740,15 +754,15 @@
                </p>
             </div>
          </div>
-         <div type="textpart" subtype="chapter" n="11">
-            <div type="textpart" subtype="section" n="1">
+         <div n="11" type="chapter">
+            <div n="1" type="section">
                <p>
  Οὐ ξένα ὁμιλῶ οὐδὲ παραλόγως ζητῶ, ἀλλὰ
 ἀποστόλων γενόμενος μαθητὴς γίνομαι διδάσκαλος
 ἐθνῶν: τὰ παραδοθέντα ἀξίως ὑπηρετῶ γινομένοις
 ἀληθείας μαθηταῖς. </p>
             </div>
-            <div type="textpart" subtype="section" n="2">
+            <div n="2" type="section">
                <p> τίς γὰρ ὀρθῶς διδαχθεὶς
 καὶ λόγῳ προσφιλὴς γενηθεὶς οὐκ ἐπιζητεῖ σαφῶς
 μαθεῖν τὰ διὰ λόγου δειχθέντα φανερῶς μαθηταῖς,
@@ -759,7 +773,7 @@
                      <bibl>Jo. 1, 9</bibl>
                   </note> πατρὸς μυστήρια; </p>
             </div>
-            <div type="textpart" subtype="section" n="3">
+            <div n="3" type="section">
                <p> οὗ χάριν ἀπέστειλε λόγον,
 <note>
                      <bibl>I Tim. 3, 16</bibl>
@@ -770,7 +784,7 @@
                   </note>
                </p>
             </div>
-            <div type="textpart" subtype="section" n="4">
+            <div n="4" type="section">
                <p> οὗτος ὁ ἀπ̓ ἀρχῆς, ὁ καινὸς φανεὶς καὶ παλαιὸς
 εὑρεθεὶς καὶ πάντοτε νέος ἐν ἁγίων καρδίαις γεννώμενος.
 <note>
@@ -778,7 +792,7 @@
                   </note>
                </p>
             </div>
-            <div type="textpart" subtype="section" n="5">
+            <div n="5" type="section">
                <p> οὗτος ὁ ἀεί, ὁ σήμερον υἱὸς λογισθείς,
 δἰ οὗ πλουτίζεται ἡ ἐκκλησία καὶ χάρις ἁπλουμένη
 ἐν ἁγίοις πληθύνεται, παρέχουσα νοῦν, φανεροῦσα
@@ -788,26 +802,26 @@
 πίστεως οὐ θραύεται οὐδὲ ὅρια πατέρων παρορίζεται.
 </p>
             </div>
-            <div type="textpart" subtype="section" n="6">
+            <div n="6" type="section">
                <p> εἶτα φόβος νόμου ᾅδεται, καὶ προφητῶν
 χάρις γινώσκεται, καὶ εὐαγγελίων πίστις ἵδρυται,
 καὶ ἀποστόλων παράδοσις φυλάσσεται, καὶ ἐκκλησίας
 χάρις σκιρτᾷ. </p>
             </div>
-            <div type="textpart" subtype="section" n="7">
+            <div n="7" type="section">
                <p> ἣν χάριν μὴ λυπῶν
 ἐπιγνώσῃ, ἃ λόγος ὁμιλεῖ δἰ ὧν βούλεται, ὅτε
 θέλει. </p>
             </div>
-            <div type="textpart" subtype="section" n="8">
+            <div n="8" type="section">
                <p> ὅσα γὰρ θελήματι τοῦ κελεύοντος λόγου
 ἐκινήθημεν ἐξειπεῖν μετὰ πόνου, ἐξ ἀγάπης τῶν
 ἀποκαλυφθέντων ἡμῖν γινόμεθα ὑμῖν κοινωνοί.
 </p>
             </div>
          </div>
-         <div type="textpart" subtype="chapter" n="12">
-            <div type="textpart" subtype="section" n="1">
+         <div n="12" type="chapter">
+            <div n="1" type="section">
                <p>
  Οἷς ἐντυχόντες καὶ ἀκούσαντες μετὰ σπουδῆς
 εἴσεσθε, ὅσα παρέχει ὁ θεὸς τοῖς ἀγαπῶσιν ὀρθῶς,
@@ -817,7 +831,7 @@
 εὐθαλοῦν ἀνατείλαντες ἐν ἑαυτοῖς, ποικίλοις καρποῖς
 κεκοσμημένοι. </p>
             </div>
-            <div type="textpart" subtype="section" n="2">
+            <div n="2" type="section">
                <p> ἐν γὰρ τούτῳ τῷ χωρίῳ
 <note>
                      <bibl>Gen. 2, 9</bibl>
@@ -825,19 +839,19 @@
 οὐ τὸ τῆς γνώσεως ἀναιρεῖ, ἀλλ̓ ἡ παρακοὴ
 ἀναιρεῖ. </p>
             </div>
-            <div type="textpart" subtype="section" n="3">
+            <div n="3" type="section">
                <p> οὐδὲ γὰρ ἄσημα τὰ γεγραμμένα, ὡς
 θεὸς ἀπ̓ ἀρχῆς ξύλον γνώσεως καὶ ξύλον ζωῆς ἐν
 μέσῳ παραδείσου ἐφύτευσε, διὰ γνώσεως ζωὴν
 ἐπιδεικνύς: ᾗ μὴ καθαρῶς χρησάμενοι οἱ ἀπ̓ ἀρχῆς
 πλάνῃ τοῦ ὄφεως γεγύμνωνται. </p>
             </div>
-            <div type="textpart" subtype="section" n="4">
+            <div n="4" type="section">
                <p> οὐδὲ γὰρ ζωὴ
 ἄνευ γνώσεως οὐδὲ γνῶσις ἀσφαλὴς ἄνευ ζωῆς
 ἀληθοῦς: διὸ πλησίον ἑκάτερον πεφύτευται. </p>
             </div>
-            <div type="textpart" subtype="section" n="5">
+            <div n="5" type="section">
                <p> ἣν
 δύναμιν ἐνιδὼν ὁ ἀπόστολος τήν τε ἄνευ ἀληθείας
 <pb xml:id="p.378"/>
@@ -847,7 +861,7 @@
                   </note> λέγει: Ἡ γνῶσις φυσιοῖ, ἡ δὲ ἀγάπη οἰκοδομεῖ.
 </p>
             </div>
-            <div type="textpart" subtype="section" n="6">
+            <div n="6" type="section">
                <p> ὁ γὰρ νομίζων εἰδέναι τι ἄνευ γνώσεως
 ἀληθοῦς καὶ μαρτυρουμένης ὑπὸ τῆς ζωῆς οὐκ
 ἔγνω, ὑπὸ τοῦ ὄφεως πλανᾶται, μὴ ἀγαπήσας τὸ
@@ -857,18 +871,18 @@
                   </note> ἐπ̓ ἐλπίδι φυτεύει, καρπὸν προσδοκῶν.
 </p>
             </div>
-            <div type="textpart" subtype="section" n="7">
+            <div n="7" type="section">
                <p> ἤτω σοὶ καρδία γνῶσις, ζωὴ δὲ λόγος ἀληθής,
 χωρούμενος. </p>
             </div>
-            <div type="textpart" subtype="section" n="8">
+            <div n="8" type="section">
                <p> οὗ ξύλον φέρων καὶ καρπὸν
 αἱρῶν τρυγήσεις ἀεὶ τὰ παρὰ θεῷ ποθούμενα, ὧν
 ὄφις οὐχ ἅπτεται οὐδὲ πλάνη συγχρωτίζεται:
 οὐδὲ Εὔα φθείρεται, ἀλλὰ παρθένος πιστεύεται:
 </p>
             </div>
-            <div type="textpart" subtype="section" n="9">
+            <div n="9" type="section">
                <p> καὶ σωτήριον δείκνυται, καὶ ἀπόστολοι συνετίζονται,
 καὶ τὸ κυρίου πάσχα προέρχεται, καὶ
 καιροὶ συνάγονται καὶ μετὰ κόσμου ἁρμόζονται,
@@ -878,7 +892,6 @@
 
 </p>
             </div>
-         </div>
          </div>
       </body>
    </text>

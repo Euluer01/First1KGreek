@@ -1,113 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_verse.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="eng">
-    
-    <fileDesc>
-<titleStmt><title xml:lang="mul">Appendix to Isaias</title>
-<editor>Richard Rusden Ottley</editor>
-<sponsor>University of Leipzig</sponsor>
-<funder>European Social Fund Saxony</funder>
-<principal>Gregory Crane</principal>
-<principal>Monica Berti</principal>
-<meeting/>
-<respStmt>
-          <persName>Gregory R. Crane</persName>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-        </respStmt>
-        <respStmt>
-          <persName xml:id="DDD">Digital Divide Data</persName>
-          <resp>Corrected and encoded the text</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Matt Munson</persName>
-          <resp>Project Manager (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Annette Geßner</persName>
-          <resp>Project Assistant (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Thibault Clérice</persName>
-          <resp>Lead Developer (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Bruce Robertson</persName>
-          <resp>Technical Advisor</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Greta Franzini</persName>
-          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Frederik Baumgardt</persName>
-          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Simona Stoyanova</persName>
-          <resp>Project Manager (University of Leipzig), 2015</resp>
-          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-<authority>University of Leipzig</authority>
-        <idno type="filename">tlg0527.tlg048.1st1K-eng1b.xml</idno>
-<availability>
-<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="mul">Appendix to Isaias</title>
+            <editor>Richard Rusden Ottley</editor>
+            <sponsor>University of Leipzig</sponsor>
+            <funder>European Social Fund Saxony</funder>
+            <principal>Gregory Crane</principal>
+            <principal>Monica Berti</principal>
+            <meeting/>
+            <respStmt>
+               <persName>Gregory R. Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Geßner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Greta Franzini</persName>
+               <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Frederik Baumgardt</persName>
+               <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Simona Stoyanova</persName>
+               <resp>Project Manager (University of Leipzig), 2015</resp>
+               <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>University of Leipzig</authority>
+            <idno type="filename">tlg0527.tlg048.1st1K-eng1b.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
 License</licence>
-</availability>
-<date>2014</date>
-<publisher>University of Leipzig</publisher>
-<pubPlace>Germany</pubPlace>
-</publicationStmt>
-<sourceDesc>
-<listBibl>
-<biblStruct>
-<monogr>
-<title>The Book Of Isaiah</title>
-<editor>
-<persName>
-<name>Richard Rusden Ottley</name>
-</persName>
-</editor>
-       <author ref="urn:cts:greekLit:tlg0527" xml:lang="lat">Septuaginta</author>
-<imprint>
-<publisher>Cambridge University Press</publisher>
-<pubPlace>Cambridge</pubPlace>
-<date>1904</date>
-</imprint>
-<biblScope unit="volume">2</biblScope>
-</monogr>
-  <ref target="https://archive.org/details/IsaiahAccordingToTheSeptuagint/page/390/mode/2up">The Internet Archive</ref>
-</biblStruct>
-</listBibl>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
-<p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-    <refsDecl n="CTS">
-        <cRefPattern n="entry" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-      </refsDecl>
-    </encodingDesc>
-<profileDesc>
-<langUsage>
-<language ident="lat">Latin</language>
-  <language ident="eng">English</language>
-  <language ident="grc">Greek</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change/>
-</revisionDesc>
-</teiHeader>
-  <text>
-    <body>
-
-
-<div type="commentary" subtype="appendix" n="urn:cts:greekLit:tlg0527.tlg048.1st1K-eng1b" xml:lang="eng">
-<pb n="390"/>
-<head>APPENDIX.</head>
-<div type="textpart" subtype="paragraph" n="1"><p>A few additional notes are here collected; some overlooked until
+            </availability>
+            <date>2014</date>
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg0527.tlg048.1st1K-eng1b</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title>The Book Of Isaiah</title>
+                     <editor>
+                        <persName>
+                           <name>Richard Rusden Ottley</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg0527" xml:lang="lat">Septuaginta</author>
+                     <imprint>
+                        <publisher>Cambridge University Press</publisher>
+                        <pubPlace>Cambridge</pubPlace>
+                        <date>1904</date>
+                     </imprint>
+                     <biblScope unit="volume">2</biblScope>
+                  </monogr>
+                  <ref target="https://archive.org/details/IsaiahAccordingToTheSeptuagint/page/390/mode/2up">The Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+         <refsDecl n="CTS">
+            <cRefPattern n="entry"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="line" delim="." match="l" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#verse-stichic"/>
+         </textClass>
+         <langUsage>
+            <language ident="lat">Latin</language>
+            <language ident="eng">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0527.tlg048.1st1K-eng1b">
+         <div type="commentary"
+              subtype="appendix"
+              n="urn:cts:greekLit:tlg0527.tlg048.1st1K-eng1b"
+              xml:lang="eng">
+            <pb n="390"/>
+            <head>APPENDIX.</head>
+            <div n="1" type="paragraph">
+               <p>A few additional notes are here collected; some overlooked until
 the bulk of the notes were in print, some suggested by books which
 have appeared while this volume was in the press. Among these must
 be named Prof. ’s edition of Isaiah (i.-xxxix.) in the
@@ -117,127 +130,163 @@ very interesting Prolegomena, Vol. I. of a fresh Grammar of New
 Testament Greek. These have come into my hands too late for me to
 make as full use as I could have wished of the valuable hints and side-
 lights they afford.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p>On i. 8. ὀπωροθυλάκιον] see Mozley's note on Ps. lxxix. 1.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p>i. 18. διελεγχθῶμεν] Cf. Acts xix. 38.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p>i. 24. Cf. also Prov. xxiii. 29, for use of οὐαί.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5"><p>i. 27. More probably ἡ αἰχμαλωσία is intended to render ‘her
+            </div>
+            <div n="2" type="paragraph">
+               <p>On i. 8. ὀπωροθυλάκιον] see Mozley's note on Ps. lxxix. 1.</p>
+            </div>
+            <div n="3" type="paragraph">
+               <p>i. 18. διελεγχθῶμεν] Cf. Acts xix. 38.</p>
+            </div>
+            <div n="4" type="paragraph">
+               <p>i. 24. Cf. also Prov. xxiii. 29, for use of οὐαί.</p>
+            </div>
+            <div n="5" type="paragraph">
+               <p>i. 27. More probably ἡ αἰχμαλωσία is intended to render ‘her
 (<foreign xml:lang="abbr">ABBREV</foreign>taken as <foreign xml:lang="abbr">ABBREV</foreign>So Alexander, and Prof. Whitehouse
 in Century Bible. In this case ἡ ἀποστροφὴ αὐτῆς, read by ℵ* 301, is a
 duplicate.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="6"><p>iii. 6. For ‘ruin’ cf. Heb. of Zeph. i. 3 (Lxx. ἀσθενήσουσιν)</p>
-</div>
-<div type="textpart" subtype="paragraph" n="7"><p>iii. 10. Cf. also Wisdom iv. 12, ῥεμβασμός, with Isai. xxiii. 16 (also
+            </div>
+            <div n="6" type="paragraph">
+               <p>iii. 6. For ‘ruin’ cf. Heb. of Zeph. i. 3 (Lxx. ἀσθενήσουσιν)</p>
+            </div>
+            <div n="7" type="paragraph">
+               <p>iii. 10. Cf. also Wisdom iv. 12, ῥεμβασμός, with Isai. xxiii. 16 (also
 Prov. vii. 12).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="8"><p>iii. 12. Prof. Whitehouse considers ἀπαιτοῦντες due to a different
+            </div>
+            <div n="8" type="paragraph">
+               <p>iii. 12. Prof. Whitehouse considers ἀπαιτοῦντες due to a different
 punctuation, <foreign xml:lang="abbr">ABBREV</foreign>‘women’ being taken as <foreign xml:lang="abbr">ABBREV</foreign>‘creditors.’
-in ix. 4 ἀπαιτούτων clearly represents <foreign xml:lang="abbr">ABBREV</foreign></p>
-</div>
-<div type="textpart" subtype="paragraph" n="9"><p>iii. 25. Cf. also Amos viii. IO, Zech. xii. 10</p>
-</div>
-<div type="textpart" subtype="paragraph" n="10"><p>vi. 5. κατανένυγμαι] Mozley, on Ps. iv. 5, page 7, has an exhaustive
+in ix. 4 ἀπαιτούτων clearly represents <foreign xml:lang="abbr">ABBREV</foreign>
+               </p>
+            </div>
+            <div n="9" type="paragraph">
+               <p>iii. 25. Cf. also Amos viii. IO, Zech. xii. 10</p>
+            </div>
+            <div n="10" type="paragraph">
+               <p>vi. 5. κατανένυγμαι] Mozley, on Ps. iv. 5, page 7, has an exhaustive
 note on the meaning of this verb. I leave untouched what I have
 written.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="11"><p>vii. 6. βασιλεῦσαι, in causal sense, ‘to make...king,’ is not
+            </div>
+            <div n="11" type="paragraph">
+               <p>vii. 6. βασιλεῦσαι, in causal sense, ‘to make...king,’ is not
 common in Lxx.: 1 Sam. viii. 22, 1 Kings xii. 1, 2 Kings xi. 12
 xxiii. 30, 2 Chron. xxvi. 1, are instances. In 2 Kings xiv. 21 the
 reading is doubtful.</p>
-
-<pb n="391"/>
-</div>
-<div type="textpart" subtype="paragraph" n="12"><p>viii. 19. The use of πρὸς, according to ’s text, is difficult
+               <pb n="391"/>
+            </div>
+            <div n="12" type="paragraph">
+               <p>viii. 19. The use of πρὸς, according to ’s text, is difficult
 Perhaps it IS akin to that in John i. 1, 2, 1 John i. 2 (where see
 Bp Westcott's notes).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="13"><p>ix. 1. Schlcusner on this verse explains ταχὺ ποιεῖν, “vili facere,
+            </div>
+            <div n="13" type="paragraph">
+               <p>ix. 1. Schlcusner on this verse explains ταχὺ ποιεῖν, “vili facere,
 vuce ficta’</p>
-</div>
-<div type="textpart" subtype="paragraph" n="14"><p>ix. 5. For the construction θελήσουσιν εἰ... cf. Luke xii. 49, τί
+            </div>
+            <div n="14" type="paragraph">
+               <p>ix. 5. For the construction θελήσουσιν εἰ... cf. Luke xii. 49, τί
 θέλω εἰ ἤδη ἀνήφθη: Ecclus. xxiii. 14, θελήσειε εἷ μὴ ἐγεννήθης. The
 latter, especially, seems to support the alternative rendering in the
 note, Vol. I. p. 97.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="15"><p>x. 14. σείσω seems due to reading <foreign xml:lang="abbr">ABBREV</foreign>‘Ι will make to tremble,
+            </div>
+            <div n="15" type="paragraph">
+               <p>x. 14. σείσω seems due to reading <foreign xml:lang="abbr">ABBREV</foreign>‘Ι will make to tremble,
 for <foreign xml:lang="abbr">ABBREV</foreign>‘I brought down.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="16"><p>x. 18. Is any light thrown on the use of ὁτοσβεσθήσεται by
+            </div>
+            <div n="16" type="paragraph">
+               <p>x. 18. Is any light thrown on the use of ὁτοσβεσθήσεται by
 Ecclus. xliil. 21? καταφάγεται ὅρη καὶ ἴρημον ἐκκαύσεις, καὶ ἀποσβέσει
 χλόην ὡς πῦρ. In some, at any rate, of its compounds, σβεννύναι is
 used in senses rather different from the quenching of fire: see
 Aeschylus, Agata. 887,
-<lg><l>κλαυμάτων ἐπίσσυτοι</l>
-<l>πηγαὶ κατεσβήκασιν, οὐδ’ ἔνι σταγών.</l></lg>
+<lg>
+                     <l>κλαυμάτων ἐπίσσυτοι</l>
+                     <l>πηγαὶ κατεσβήκασιν, οὐδ’ ἔνι σταγών.</l>
+                  </lg>
 And again, 958
-<lg><l>ἔστιν θάλασσα, τίς δέ νιν κατασβέσεις</l></lg>
+<lg>
+                     <l>ἔστιν θάλασσα, τίς δέ νιν κατασβέσεις</l>
+                  </lg>
 Also Septcm c. Thcbas 584
-<lg><l>μητρός τε πηγὴν τίς κατασβέσει δίκης</l></lg>
+<lg>
+                     <l>μητρός τε πηγὴν τίς κατασβέσει δίκης</l>
+                  </lg>
 Lxx. must, on this supposition, while rendering <foreign xml:lang="abbr">ABBREV</foreign>by the pass. of
 ἀποσβεννύναι, have used the verb with a secondary sense to help the
 meaning.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="17"><p>xi. 9. On ’opmu, see Vol. 1. pp. 26, 109. It represents <foreign xml:lang="abbr">ABBREV</foreign>
+            </div>
+            <div n="17" type="paragraph">
+               <p>xi. 9. On ’opmu, see Vol. 1. pp. 26, 109. It represents <foreign xml:lang="abbr">ABBREV</foreign>
 which is elsewhere in Lxx. οἰκουμένη, as in xiii. 11, xiv. 17, xxiv. 4, c.
 with or without ὅλη: or simply γῆ, as in xiv. 21, xxvi. 9, 18, c. <foreign xml:lang="abbr">ABBREV</foreign>
 is frequently parallel to <foreign xml:lang="abbr">ABBREV</foreign>as in xxiv. 4. In classical Creek the
 phrase is to be found, as it were, in the making, Aristoph.
 Cloud: 203:
-<lg><l>ΜΑΘ. γῆν ἀναμετρεῖσθαι ΣΤΡ. πότερα τὴν κληρουχικὴν;</l>
-<l>MAG. οὔκ. ἀλλὰ τὴν σύμπασαν. ΣΤΡ. ἀστεῖον λέγεις.</l></lg></p>
-</div>
-<div type="textpart" subtype="paragraph" n="18"><p>xi. 14. verso-Meow occurs also Ps. lv. 6.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="19"><p>xiv. 6. Many critics support the emendation <foreign xml:lang="abbr">ABBREV</foreign>‘rule’ ( ‘tramplings,’
+<lg>
+                     <l>ΜΑΘ. γῆν ἀναμετρεῖσθαι ΣΤΡ. πότερα τὴν κληρουχικὴν;</l>
+                     <l>MAG. οὔκ. ἀλλὰ τὴν σύμπασαν. ΣΤΡ. ἀστεῖον λέγεις.</l>
+                  </lg>
+               </p>
+            </div>
+            <div n="18" type="paragraph">
+               <p>xi. 14. verso-Meow occurs also Ps. lv. 6.</p>
+            </div>
+            <div n="19" type="paragraph">
+               <p>xiv. 6. Many critics support the emendation <foreign xml:lang="abbr">ABBREV</foreign>‘rule’ ( ‘tramplings,’
 Cheyne) for <foreign xml:lang="abbr">ABBREV</foreign>‘pursuit.’ See notes in various commentaries,
 esp. Cheyne, Skinner, Alexander. I doubt whether ’s παίων can
 be fairly quoted in support of this, their rendering being hardly exact
 in any case. They do not support the converse change of n to ἢ pro-
 posed in 2 Kings x. 32 (συνκόπτειν), <foreign xml:lang="abbr">ABBREV</foreign>‘to be angry’ for <foreign xml:lang="abbr">ABBREV</foreign>
 cut short.</p>
-
-<pb n="392"/>
-</div>
-<div type="textpart" subtype="paragraph" n="20"><p>xiv. 19. νεκρὸς ἐβδελυγμένος. Cf. the addition to Ps. xxxviii. 21
+               <pb n="392"/>
+            </div>
+            <div n="20" type="paragraph">
+               <p>xiv. 19. νεκρὸς ἐβδελυγμένος. Cf. the addition to Ps. xxxviii. 21
 found in R and other authorities. It is possible that met. confused
 various clauses of ver. 19, 20 in translating.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="21"><p>xxiii. 2, 11. Φοινίκης, Χανάαν. To the note on ver. 11 it should be
+            </div>
+            <div n="21" type="paragraph">
+               <p>xxiii. 2, 11. Φοινίκης, Χανάαν. To the note on ver. 11 it should be
 added that Lxx. use Φοινίκη, Φοίνισσα, Φοῖνιξ, to represent ‘Canaan.
 ‘Canaanite,’ in Exod. vi. 15, xvi. 35, Job xli. 6 ‘merchants,’ A.V.,
 R.V.); Prov. xxxi. 24 (xxix. 42 in LXX., again ‘merchants’) is
 Χαναναίοις, and in Deut. iii. 9 Φοίνικες represents ‘Zidonians.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="22"><p>xxiii. 7. παραδοθῆναι. The various uses of this word in the Greek
+            </div>
+            <div n="22" type="paragraph">
+               <p>xxiii. 7. παραδοθῆναι. The various uses of this word in the Greek
 Isaiah almost defy explanation. Here possibly <foreign xml:lang="abbr">ABBREV</foreign>was misread,
 and some of its letters mistaken for <foreign xml:lang="abbr">ABBREV</foreign>παραδοῦναι, I Chr. xii. 17).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="23"><p>xxx. 11. If τὸ λόγιον is a corruption of τὸν ἅγιον, the converse
+            </div>
+            <div n="23" type="paragraph">
+               <p>xxx. 11. If τὸ λόγιον is a corruption of τὸν ἅγιον, the converse
 appears in Ps. cxxxviii. 2, where Mozley points out that τὸ ἅγιόν σου
 corresponds to ‘thy word’ ( λόγιον often=<foreign xml:lang="abbr">ABBREV</foreign>).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="24"><p>xxxii. 6. νοήσει, due to reading <foreign xml:lang="abbr">ABBREV</foreign>for <foreign xml:lang="abbr">ABBREV</foreign>‘will work.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="25"><p>xxxiii. 23. The word <foreign xml:lang="abbr">ABBREV</foreign>‘prey,’ here taken by LXX. as ‘until,’ has
+            </div>
+            <div n="24" type="paragraph">
+               <p>xxxii. 6. νοήσει, due to reading <foreign xml:lang="abbr">ABBREV</foreign>for <foreign xml:lang="abbr">ABBREV</foreign>‘will work.</p>
+            </div>
+            <div n="25" type="paragraph">
+               <p>xxxiii. 23. The word <foreign xml:lang="abbr">ABBREV</foreign>‘prey,’ here taken by LXX. as ‘until,’ has
 caused confusion elsewhere. In Numb. xxiii. 24 it is rightly rendered,
 οὐ κοιμηθήσεται ἕως φάγῃ θήραν. But in Gen. xlix. 27, in the morning
 he shall devour the prey’ appears as τὸ πρωινὸν ἔδεται ἔτι (i.e.
 Zeph. iii. 8, for ‘ until the day that I rise up to the prey,’ has εἷς
 ἀναστάσεὼς μου εἷς μαρτύριον (i.e. <foreign xml:lang="abbr">ABBREV</foreign>which some support. Other cases
 of confusion are:
-<lg><l>Hosea ii. 12, ‘α forest’ <foreign xml:lang="abbr">ABBREV</foreign>Lxx. μαρτύριον</l>
-<l>Amos i. 11, ‘perpetually’ <foreign xml:lang="abbr">ABBREV</foreign>εἷς μαρτύριον, and so Micah vii. 18<lb/>
-Prov. xxix. 14</l></lg>
+<lg>
+                     <l>Hosea ii. 12, ‘α forest’ <foreign xml:lang="abbr">ABBREV</foreign>Lxx. μαρτύριον</l>
+                     <l>Amos i. 11, ‘perpetually’ <foreign xml:lang="abbr">ABBREV</foreign>εἷς μαρτύριον, and so Micah vii. 18<lb/>
+Prov. xxix. 14</l>
+                  </lg>
 Vulg. is more generally right (ultra in Amos and Micah), but has in
 futurum in Zephaniah.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="26"><p>xli. 11. For ἀντίδικος cf. also 1 Pet. v. 8.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="27"><p>xlv. 23. The difficulty of εἰ μήν, which is somewhat hastily dismissed
+            </div>
+            <div n="26" type="paragraph">
+               <p>xli. 11. For ἀντίδικος cf. also 1 Pet. v. 8.</p>
+            </div>
+            <div n="27" type="paragraph">
+               <p>xlv. 23. The difficulty of εἰ μήν, which is somewhat hastily dismissed
 in my note, is that if ‘if,’ the meaning of the clause is the opposite
 of what is wanted, and of what is given by εἰ μὴ or ἦ μήν. Moreover,
 μὴν does not seem to be used with εἰ conditional (or interrogative) in
@@ -255,8 +304,9 @@ almost certainly the right one, have said that εἷ μὴν “is hardly possib
 (am-pt as an equivalent to ἦ μήν: and this, as written in the days of
 our Mss. or their predecessors, and almost back to the days of the
 Alexandrian translators, it apparently was.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="28"><p>hii. 5. Α reads ἐμαλακίσθη, but on general principles the reading of
+            </div>
+            <div n="28" type="paragraph">
+               <p>hii. 5. Α reads ἐμαλακίσθη, but on general principles the reading of
 the great body of MSS., μεμαλάκισται, must be preferred. We then have
 a perf. and an aorist in parallel clauses. Above, in ver. 2, there are
 ἔστιν and εἶχον, then the perf. ἀπέστραπται (Cf. Josh. v. 5, ἀνέστραπται),
@@ -269,8 +319,9 @@ In xlviii. 16 the text has variants: lvii. 18, ἑὠρακα...ἰασάμην
 ἀπιστήαμεν...ἀφέστηκεν, ἦρται...μετέστησαν; lxi. I, ἔχρισεν...ἀπέσταλκεν.
 Also with temporal or causal connecting particles, ix. 4
 xiv. 8, xl. 2; cf. xxiii. 1, xxviii. 7, xlviii. 10.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="29"><p>On this subject see Moulton, N.T. Grammar, Vol. 1. pp. 140146
+            </div>
+            <div n="29" type="paragraph">
+               <p>On this subject see Moulton, N.T. Grammar, Vol. 1. pp. 140146
 Mozley, Psalter of the Church, p. 148. I return to the subject below,
 Grammatical Note, § 6; meantime I venture on the provisional
 opinion that, where each tense has not its own proper force, some
@@ -279,14 +330,16 @@ aorist in meaning, but that aorist itself having in the Lxx. a somewhat
 extended force, which renders the approach easier. In x. 7, λελόγισται
 might be passive and impersonal (l have not however translated it so)
 which seems to help the proper sense of the perfect.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="30"><p>lvii. 15, 16. It seems to me (and l have endeavoured to punctuate
+            </div>
+            <div n="30" type="paragraph">
+               <p>lvii. 15, 16. It seems to me (and l have endeavoured to punctuate
 so as to make this sense not impossible) that here, according to the
 won, the meaning is somewhat like Exod. xxxiii. 19, xxxiv. 5-7,
 Lord proclaiming His own attributes, and His words beginning at
 Ἄγιος ἐν ἁγίοις, or even at ὁ ἐν ὑψηλοῖς.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="31"><p>lxiii. 8, 9. The punctuation might here be made to agree with Heb.,
+            </div>
+            <div n="31" type="paragraph">
+               <p>lxiii. 8, 9. The punctuation might here be made to agree with Heb.,
 beginning a fresh sentence with ἐκ πάσης θλίψεως. Various other
 passages might be brought by similar means to show less discrepancy:
 e.g. iii. 17, 18, xxii. 24, 25, and possibly xxxiv. 9, 10, lvi. 7, 8, lx. 5, 6.
@@ -294,17 +347,19 @@ But xxvi. 18, hi. 6, 7, would need alteration of text: lxiii. 2, 3 probably
 requires a different division from the Heb.; and i. 11—13, xxvi. 8
 xxviii. 27, 28, xxix. 5, 6, xxxii. 13, 14, and lix. 17, 18, seem to defy this
 treatment.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="32"><p>lxvi. 14 σεβομένοις] For the variant φοβουμένοις (B) cf. Jonah i. 9
+            </div>
+            <div n="32" type="paragraph">
+               <p>lxvi. 14 σεβομένοις] For the variant φοβουμένοις (B) cf. Jonah i. 9
 where for σέβομαι καὶ) has φοβοῦμαι, supported, according to H. and Ρ.,
 by V 40 91 130 153 311.</p>
-
-<pb n="394"/>
-</div>
-<div type="textpart" subtype="paragraph" n="33"><p>ADDITIONAL NOTE ON THE GRAMMAR
+               <pb n="394"/>
+            </div>
+            <div n="33" type="paragraph">
+               <p>ADDITIONAL NOTE ON THE GRAMMAR
 AND STYLE OF THE LXX.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="34"><p>§ 1. There is not yet, so far as I know, any work in English which
+            </div>
+            <div n="34" type="paragraph">
+               <p>§ 1. There is not yet, so far as I know, any work in English which
 deals mainly and directly with the grammar and style of the Greek
 O.T. The student has still to depend principally upon such books
 as deal with Hellenistic Greek generally, and with the lexicology and
@@ -330,8 +385,9 @@ decide this, either every such sentence must be noticed, or very care-
 fully reasoned principles must be collected and laid down. Neither of
 these things can be done here, nor can even an outline be attempted.
 Only a few roughly assorted remarks can be put together.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="35"><p>§ 2. Many points, both of accidence and syntax, can but be
+            </div>
+            <div n="35" type="paragraph">
+               <p>§ 2. Many points, both of accidence and syntax, can but be
 registered; they will hardly perplex the reader, or, if they should,
 he must turn for guidance to a translation—the Revised
 represents standard opinions on many points—unless he can find
@@ -353,8 +409,9 @@ extended by comparison with ’s Greek, while ποῖος interrogative
 clamatory, as xiv. 4, 2 Sam. i. 19, 25, 27, Ezek. xxvi. 17, Lam. i. 1, with
 which compare Gen. xxviii. 17, Numb. xxiv. 5, Ps. lxxxiii. 1, cxix. 97
 where the more classical ὡς appears.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="36"><p>§ 3. The article is generally used very much as in Attic: its
+            </div>
+            <div n="36" type="paragraph">
+               <p>§ 3. The article is generally used very much as in Attic: its
 omission before βασιλεὺς Ἀσσυρίων, vii. 20, xxxvi. 15, c. might seem
 anaIOgous to that of βασιλεὺς alone for the Persian king, in Herodotus
 (v. 1, ἃς.) and Thucydides (1. 18, c.): but it is also omitted in the
@@ -371,8 +428,9 @@ article is often repeated in such arrangements as τὰ βδελύγματα α
 on the other hand, phrases like ὁ τοῦ θεοῦ οἶκος, oi ἐν Σαμαρείᾳ ἐγκαθή-
 μενοι, are rarely found (though see ix. 14, lix. 21); cf. ii. 2, ix. 9, but
 almost any page will show instances.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="37"><p>§ 4. Nouns need cause little difficulty, apart from forms, spellings,
+            </div>
+            <div n="37" type="paragraph">
+               <p>§ 4. Nouns need cause little difficulty, apart from forms, spellings,
 and vocabulary. The neuter plural is constantly used with a plural
 verb, as well as with the singular, with seeming indifference: the MSS.
 very often vary. On the other hand, xviii. 2, 3 contains what may be
@@ -387,12 +445,14 @@ apposition to a genitive (indeclinable) in xxxvii. 38! Both passages
 can be construed as they stand, but still the doubt occurs. On ὃν
 τρόπον, used commonly as a conjunction, see on vii. 2. τοῦτον τρόπον
 is found in Attic, but less commonly than the dative.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="38"><p>Adjectives, being relatively scarce in Heb., are not very common in
+            </div>
+            <div n="38" type="paragraph">
+               <p>Adjectives, being relatively scarce in Heb., are not very common in
 the LXX.'s somewhat literal rendering. The indeclinable πλήρης
 most probably to be found in lxiii. 2, where see note.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="39"><p>§ 5. Pronouns decidedly show some blunting of the classical
+            </div>
+            <div n="39" type="paragraph">
+               <p>§ 5. Pronouns decidedly show some blunting of the classical
 usage. Ἀὐτὸς in oblique cases is excessively frequent as 3rd pers.
 pronoun, and this, corresponding to mere suffixes in Heb., has often
 been noticed as a disfigurement of the LXX.'s style. Even in the
@@ -411,16 +471,18 @@ stands last in these cases, contrast ix. 14, 15, xiv. 26. Ὅδε occurs in
 Isaiah at any rate once, lx. 8; also Jerem. xlviii. Xlviii. 33, xxv. 3c
 (xxxii. 16). Τοιοῦτος occurs, lviii. 6, lxvi. 8: probably it was not often
 needed.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="40"><p>§ 6. The verbs show many non-Attic forms. The 3rd pers. pl. in
+            </div>
+            <div n="40" type="paragraph">
+               <p>§ 6. The verbs show many non-Attic forms. The 3rd pers. pl. in
 σαν meets us frequently in second aorists, and sometimes in optatives,
 such as ἐνέγκαισαν, lxvi. 20, already mentioned (cf. Moulton, Ν.Τ.
 Grammar, p. 33): also an occasional perfect 3rd pl. in καν, as v. 29 B.
 Εἶπα is common (εἶπαν in Ii. 23); ἐλθάτω in v. 19B, xxvi. 2 NA. The
 second perfect πέποιθα has imperat. 2nd pl. in ατε, l. 10; cf. Jerem. ix. 4
 Ps. cxlvi. 3, and Josh. x. 19 ἑστήκατε ( Cannaris).</p>
-</div>
-<div type="textpart" subtype="paragraph" n="41"><p>On the use of the tenses generally. see Vol. 1., Introduction, “Or.
+            </div>
+            <div n="41" type="paragraph">
+               <p>On the use of the tenses generally. see Vol. 1., Introduction, “Or.
 Methods of Rendering.” The aorist seems to be used with full
 of meaning; there are comparatively few cases in which the
 ‘gnomic’ use, with those of the ‘immediate past’ and ‘indefinite
@@ -434,15 +496,17 @@ xxiv. 20; ἐπένθησεν, xxxiii. 9; ἀπέστησαν, xxxiii. 14: ὑ
 are seldom felt in reading the classical Attic authors. Many other
 aorists are found which, though not in themselves impossible, are
 difficult in consideration of their context and probable meaning.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="42"><p>In Isaiah, the future causes little difficulty: it may have sometimes
+            </div>
+            <div n="42" type="paragraph">
+               <p>In Isaiah, the future causes little difficulty: it may have sometimes
 been wrongly chosen by the translator, but his intention is seldom
 doubtful. ln clauses after ὃν τρόπον it is, however, awkward. The
 idea seems not so much to represent the Heb. imperf., which is not
 always found in the original, as to assimilate the tense to the corresponding
 clause.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="43"><p>Most instances of the perfect in lsaiah are natural enough; and
+            </div>
+            <div n="43" type="paragraph">
+               <p>Most instances of the perfect in lsaiah are natural enough; and
 the tense is fairly common: but see above on liii. 5 for cases where it
 occurs in parallel clauses with the aorist. From Prof. Moulton's discussion
 of the matter (Grammar of N.T. Greek, p. 140 foll.) we see
@@ -458,8 +522,9 @@ use of the perf. in titles of Pss. xciiii., xcvi., after ὅτε, and a few othe
 such as B's εἴρηκε in 2 Kings vi. 7. ὁπότε and ἡνίκα, rather than ὅτε,
 seem to be used in titles of Psalms with unmistakable aorists: cf. in
 Isaiah, xvi. 13, xx. 1, xxxviii. 9; but this is not invariable, see lxiii. 19.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="44"><p>As to aoristic perfects in the LXX., we have to remember ﬁrst, that
+            </div>
+            <div n="44" type="paragraph">
+               <p>As to aoristic perfects in the LXX., we have to remember ﬁrst, that
 the translation Is not homogeneous: and Prof. Moulton says (p. 143),
 “We are entirely at liberty to recognise such perfects in one writer
 and deny them to another, or to allow them for certain verbs and
@@ -491,8 +556,9 @@ Heb. perfect. The rest of the prophetic, lyric, and poetic passages of
 the Ο.Τ. are, so far as I can see, not unlike Isaiah in this respect.
 Plain narrative, introducing the help of a continuous story or context,
 stands on a different footing.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="45"><p>The rendering of the LXX. into English has of course difficulties of
+            </div>
+            <div n="45" type="paragraph">
+               <p>The rendering of the LXX. into English has of course difficulties of
 its own, of which these tenses form not the least important. The
 English translator has to determine what the Greek translator meant,
 and to judge (see § 1) how far to render in the light of the original,
@@ -508,14 +574,20 @@ evidently, in form to the English tense with ‘have,’ and jaimai on the
 whole to I loved; but the usage often differs considerably. I choose,
 almost at random, a quotation from MM. Erckhmann-Chatrian's
 Waterloo, chap. ix.:
-<lg><l>” Cette montre...je Lai regue du prince ène pour une action</l>
-<l>éclat.’</l></lg>
+<lg>
+                     <l>” Cette montre...je Lai regue du prince ène pour une action</l>
+                     <l>éclat.’</l>
+                  </lg>
 And one from Racine (Athalie, Act II. Sc. V. l. 511 foll.)
-<lg><l>“Mais lorsque revenant de mon trouble funeste</l>
-<l>J'admirais sa douceur, son air noble et modeste,</l>
-<l>Ƒai senti tout à coup un homicide acier.’</l></lg></p>
-</div>
-<div type="textpart" subtype="paragraph" n="46"><p>Could an Englishman possibly use the tense I have... in sentences
+<lg>
+                     <l>“Mais lorsque revenant de mon trouble funeste</l>
+                     <l>J'admirais sa douceur, son air noble et modeste,</l>
+                     <l>Ƒai senti tout à coup un homicide acier.’</l>
+                  </lg>
+               </p>
+            </div>
+            <div n="46" type="paragraph">
+               <p>Could an Englishman possibly use the tense I have... in sentences
 such as either of these? We must therefore be prepared to ﬁnd even
 
 <pb n="399"/>
@@ -523,8 +595,9 @@ the Greek aorist and perfect occasionally approximating in their
 meanings, and frequently, at one or another stage of the language,
 impossible to render into English each by a single tense-form of
 our own.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="47"><p>The tenses in other moods than the indicative (as the perfects
+            </div>
+            <div n="47" type="paragraph">
+               <p>The tenses in other moods than the indicative (as the perfects
 κεκλήσθω, iv. 1, κεκακῶσθαι, liii. 7) need not detain US: on ’u’xpa’yov
 see note on vi. 3, comparing Moulton, p. 147. The participles are for
 the most part ordinary: the active perf. participle (in form) occurs
@@ -535,26 +608,31 @@ and may be considered awkward, but cannot be fairly called irregular.
 Apart from πέποιθα, βεβούλευμαι (iii. 9, xiv. 24., 26, 27, xlvi. 10, 11) and
 πέπαυται (xxiv. 8, xxvi. to, xxxii. to, xxxiii. 8) are the commonest
 ﬁnite perfects; the required meaning, of course, accounting for this.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="48"><p>τοῦ with infin. mostly stands for Heb. <foreign xml:lang="abbr">ABBREV</foreign>with infin.; very occasionally
+            </div>
+            <div n="48" type="paragraph">
+               <p>τοῦ with infin. mostly stands for Heb. <foreign xml:lang="abbr">ABBREV</foreign>with infin.; very occasionally
 for D with infin. (privativc sense), which is oftener τοῦ μή. Notice the
 doubt as to the insertion of μὴ in viii. 16, xxv. 2 (Heb. <foreign xml:lang="abbr">ABBREV</foreign>and <foreign xml:lang="abbr">ABBREV</foreign>with
 nouns), and the variant τὸ with infin., apparently consecutive, in xxi. 3.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="49"><p>(In the phrases Ζῶ ἐγώ, xlix. 18, ᾖ κύριος, the verb is indicative; the
+            </div>
+            <div n="49" type="paragraph">
+               <p>(In the phrases Ζῶ ἐγώ, xlix. 18, ᾖ κύριος, the verb is indicative; the
 Latin is vivo ego, and this agrees with Heb. Contrast 2 Sam. xvi. 16
 1 Kings i. 39, &amp;c.)</p>
-</div>
-<div type="textpart" subtype="paragraph" n="50"><p>Note the subj. following a future in x. 14, and the optatives in xi. 9
+            </div>
+            <div n="50" type="paragraph">
+               <p>Note the subj. following a future in x. 14, and the optatives in xi. 9
 XXI. Ι.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="51"><p>§ 7. On adverbs there is little to say. Prof. Moulton (p. 105)
+            </div>
+            <div n="51" type="paragraph">
+               <p>§ 7. On adverbs there is little to say. Prof. Moulton (p. 105)
 alludes to the N.T. use of ἀνὰ and κατὰ distributively: Lxx. also use
 ἀνὰ with numerals, as l Kings xviii. 13, but these, being mostly inde-
 clinables, give no clue to the case. The double adverbial phrase,
 ταχὺ κούφως ἔρχονται, ν. 26, is noticeably awkward.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="52"><p>§ 8. Prepositions show more departure from classical standards.
+            </div>
+            <div n="52" type="paragraph">
+               <p>§ 8. Prepositions show more departure from classical standards.
 The niceties of Attic, as in other matters, are blurred. For instance,
 ἐπὶ τὸ ὅρος τοῦτο, XXV. 6, is much nearer in meaning to ἐπ’ ἄκρων τῶν
 ὀρέων, ii. 2, ἐπὶ κούφοις, xxx. 16, or the neighbouring ἐν τῷ ὄρει τούτῳ,
@@ -575,8 +653,9 @@ prepositions but for the predominant ἐν: in the Lxx. it might be said
 generally that certain uses of the dative are abundant, but the number
 of constructions in which the case is commonly used is smaller than in
 classical Greek.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="53"><p>§ 9. Conjunctions and particles have somewhat shifted their force
+            </div>
+            <div n="53" type="paragraph">
+               <p>§ 9. Conjunctions and particles have somewhat shifted their force
 and proportion. ὅτι often represents Heb. <foreign xml:lang="abbr">ABBREV</foreign>and it is sometimes
 difficult to know whether it represents ‘that’ or ‘for’: μὲν and δέ,
 their regular antithesis, have all but disappeared; δέ alone is not very
@@ -585,21 +664,25 @@ doubtful, and xli. 7, where it is absent. On ὅτε, ὁπότε, ἡνίκα
 § 6. Relative particles or conjunctional phrases seem increasingly
 common: ἕως οὗ, ἀφ’ οὗ, with perf. xiv. 8, with aor. xliii. 4, διότι, ὃν
 τρόπον: cf. perhaps ἐφ’ ἅ(??), xxv. 11.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="54"><p>On εἷ μὴ ἤκουσας; xl. 28, see note there. It certainly seems
+            </div>
+            <div n="54" type="paragraph">
+               <p>On εἷ μὴ ἤκουσας; xl. 28, see note there. It certainly seems
 simplest to take it as interrogative.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="55"><p>The apodosis is sometimes marked by καὶ, as in lviii. 13, 14, where
+            </div>
+            <div n="55" type="paragraph">
+               <p>The apodosis is sometimes marked by καὶ, as in lviii. 13, 14, where
 it is uncertain which καὶ has this office; which perhaps comes from the
 use of Heb. <foreign xml:lang="abbr">ABBREV</foreign>though this is not found in either of these instances. I
 cannot recall an instance of δέ similarly used in the book, but its com-
 parative rarity in any sense makes this not surprising.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="56"><p>ἀλλὰ and πρὶν are often followed by ἤ, MSS. varying much. The
+            </div>
+            <div n="56" type="paragraph">
+               <p>ἀλλὰ and πρὶν are often followed by ἤ, MSS. varying much. The
 meaning is hardly affected, unless some slight emphasis is to be under-
 stood.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="57"><p>Οὐ and μὴ present no very marked peculiarities. Μὴ introducing a
+            </div>
+            <div n="57" type="paragraph">
+               <p>Οὐ and μὴ present no very marked peculiarities. Μὴ introducing a
 hesitating assertion or suggestion may possibly occur xxviii. 17, where
 see note. Οὐ may be seen used to negative a specitic phrase after ἵνα
 c. subj. in viii. 20, and cf. x. 15, where however the phrase οὐχ οὕτως is
@@ -607,13 +690,15 @@ a special weakness of the Lxx. With participles οὐκ occurs, as in
 xli. 11, 12, lvi. 11, lix. 10; μή, less frequently than might be expected,
 as in xxix. 12.. In relative clauses, οὐκ, as in lxv. 20; μή, as in
 lviii. 11.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="58"><p>Interjections, as a matter of usage, differ from Attic. φεῦ and αἰαῖ
+            </div>
+            <div n="58" type="paragraph">
+               <p>Interjections, as a matter of usage, differ from Attic. φεῦ and αἰαῖ
 are replaced generally by οὐαί, see on i. 24. Occasionally ὦ is used, as
 in Habak. ii. 9, 15, 2 Kings vi. 5. See also such passages as Judg. xi. 35
 Jerem. xxii. 18, with their variants.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="59"><p>§ 10. But the general colouring of the style remains the chief
+            </div>
+            <div n="59" type="paragraph">
+               <p>§ 10. But the general colouring of the style remains the chief
 peculiarity of the LXX.'s Greek. It is not so much that the constructions
 are unclassical, as that most classical arrangements are rare or
 
@@ -639,8 +724,9 @@ though see vii. 2, with the variants. Other instances of looseness in
 the matter of cases may be seen at xvi. 6, xxviii. 1, xxxi. 1 pOSSIbly,
 xxxii. 13, xxxiii. 20, ἃς. Α strange apposition, but of another kind, is
 that in vii. 17, ἡμέρας...τὸν βασιλέα Ἀσσυρίων.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="60"><p>Special Hebraisms have been noted where they occur; their
+            </div>
+            <div n="60" type="paragraph">
+               <p>Special Hebraisms have been noted where they occur; their
 combination with the features here briefly mentioned, with the
 addition of a vocabulary and ideas not those of Attic Greek, produce
 a marked difference in general effect. The scope ofa remark made by
@@ -652,7 +738,8 @@ it the paramount duty to be literal, and not caring for the usages of
 literary Greek. But if they were not masters of Attic by inheritance or
 acquirement, neither were they devoid of native gift of language, nor
 of some conception of a ’s duty, nor of skill to carry it out.</p>
-</div></div>
-</body>
-  </text>
+            </div>
+         </div>
+      </body>
+   </text>
 </TEI>

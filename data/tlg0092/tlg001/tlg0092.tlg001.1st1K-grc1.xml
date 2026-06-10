@@ -1,128 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang='eng'>
-        <fileDesc>
-            <titleStmt>
-                <title xml:lang="lat">Geographiae expositio compendiaria</title>
-                <author>Anonymous</author>
-                <editor>Karl Müller</editor>
-                <funder>Harvard Library Arcadia Fund</funder>
-                <principal>Gregory Crane</principal>
-                <respStmt>
-                    <persName xml:id="DDD">Digital Divide Data</persName>
-                    <resp>Corrected and encoded the text</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Gregory Crane</persName>
-                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Matt Munson</persName>
-                    <resp>Project Manager (University of Leipzig)</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Annette Gessner</persName>
-                    <resp>Project Assistant (University of Leipzig)</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Thibault Clérice</persName>
-                    <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Bruce Robertson</persName>
-                    <resp>Technical Advisor</resp>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <authority>Harvard College Library</authority>
-                
-                <idno type="filename">tlg0092.tlg001.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Geographiae expositio compendiaria</title>
+            <author>Anonymous</author>
+            <editor>Karl Müller</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg0092.tlg001.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2017</date>
-                <publisher>Harvard College Library</publisher>
-                <pubPlace>United States</pubPlace>
-            </publicationStmt>
-            <sourceDesc>
-                <listBibl>
-                    <biblStruct>
-                        <monogr>
-                            
-                            
-                            <title xml:lang="lat">Geographi Graeci Minores</title>
-                            <editor>
-                                <persName>
-                                    <name>Karl Müller</name>
-                                    <addName xml:lang="deu">Karl Müller</addName>
-                                </persName>
-                            </editor>
-                            <author ref="urn:cts:greekLit:tlg0092" xml:lang="lat">Anonymi Geographiae Expositio Compendiaria</author>                  
-                            <imprint>
-                                <publisher>Didot</publisher>
-                                <pubPlace>Paris</pubPlace>
-                                <date>1861</date>
-                            </imprint>
-                            
-                            <biblScope unit="volume">2</biblScope>
-                            
-                        </monogr>
-                        <ref target="https://archive.org/details/bub_gb_63VfAAAAMAAJ/page/494/mode/2up">The Internet Archive</ref>
-                    </biblStruct>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-        
-        
-        <encodingDesc>
-            
-            <p>Text encoded in accordance with the latest EpiDoc standards</p>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2017</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg0092.tlg001.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Geographi Graeci Minores</title>
+                     <editor>
+                        <persName>
+                           <name>Karl Müller</name>
+                           <addName xml:lang="deu">Karl Müller</addName>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg0092" xml:lang="lat">Anonymi Geographiae Expositio Compendiaria</author>
+                     <imprint>
+                        <publisher>Didot</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date>1861</date>
+                     </imprint>
+                     <biblScope unit="volume">2</biblScope>
+                  </monogr>
+                  <ref target="https://archive.org/details/bub_gb_63VfAAAAMAAJ/page/494/mode/2up">The Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards</p>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-            
-            
-            <refsDecl n="CTS">
-                
-                <cRefPattern n="section" matchPattern="(.+).(.+)"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
-                    <p>This pointer pattern extracts sections</p>
-                </cRefPattern> 
-                
-                <cRefPattern n="chapter" matchPattern="(.+)"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
-                    <p>This pointer pattern extracts chapters</p>
-                    
-                </cRefPattern>
-               
-            </refsDecl>
-            
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-                <language ident="lat">Latin</language>
-                <language ident="deu">German</language>
-            </langUsage>
-        </profileDesc>
-        <revisionDesc>
-            <change who="Chiara Palladino">created the file</change>
-        </revisionDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0092.tlg001.1st1K-grc1">
-                
-<div type="textpart" subtype="chapter" n="1">
-    <pb n="494"/>
-<head><del>ΑΝΩΝΥΜΟΥ</del>
+         <refsDecl n="CTS">
+            <cRefPattern n="section"
+                         matchPattern="(.+).(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+               <p>This pointer pattern extracts sections</p>
+            </cRefPattern>
+            <cRefPattern n="chapter"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+               <p>This pointer pattern extracts chapters</p>
+            </cRefPattern>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim=":" match="div[@type='chapter']" use="@n">
+                  <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+               </citeStructure>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter-section"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+            <language ident="deu">German</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="Chiara Palladino">created the file</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0092.tlg001.1st1K-grc1">
+         <div n="1" type="chapter">
+            <pb n="494"/>
+            <head>
+               <del>ΑΝΩΝΥΜΟΥ</del>
 ΥΠΟΤΥΠΩΣΙΣ ΓΕΩΓΡΑΦΙΑΣ
 ΕΝ ΕΠΙΤΟΜΗ.</head>
-<head>I. Ἀναμέτρησις τῆ, ὅλης γῆς.</head>
-
-<div type="textpart" subtype="section" n="1">
-<p>1. Ἡ τῆς ὅλης γῆς περίμετρος σταδίων ,κα μυριάδων
+            <head>I. Ἀναμέτρησις τῆ, ὅλης γῆς.</head>
+            <div n="1" type="section">
+               <p>1. Ἡ τῆς ὅλης γῆς περίμετρος σταδίων ,κα μυριάδων
 καὶ β παραδέδοται. Μῆκος δὲ τῆς οἰκουμένης
 τὸ μὲν ἀπʼ ἀνατολῆς ἐπὶ δύσιν σταδίων ἀναμεμέτρηται
 <lb n="5"/> ἑπτακισμυρίων. Τοῦτο δέ ἐστι τὸ ἀπὸ Γάγγου ποταμοῦ
@@ -134,10 +130,9 @@
 Τὸ δὲ πλάτος, ᾗ πλατυτάτη οὖσα τυγχάνει,
 τρισμυρίων ἀναμετρεῖται σταδίων, χιλίων ἔλαττον, ἀπὸ
 μεσημβρίας ἐπὶ τὰς ἄρκτους.</p>
-</div>
-
-<div type="textpart" subtype="section" n="2">
-<p>2. Καὶ τὰ μὲν ἀπὸ τοῦ ἀρκτικοῦ πόλου μέχρι τοῦ
+            </div>
+            <div n="2" type="section">
+               <p>2. Καὶ τὰ μὲν ἀπὸ τοῦ ἀρκτικοῦ πόλου μέχρι τοῦ
 <lb n="15"/> ἀρκτικοῦ κύκλου τριάκοντα καὶ ἓξ τμήματα πάντα
 ἐστὶν ἀοίκητα διὰ κρύος· στάδιοι δʼ εἰσὶν οὗτοι δισμύριοι
 καὶ ε καὶ σ΄· ἀοίκητα δέ ἐστι καὶ τὰ ἀπὸ τοῦ
@@ -150,14 +145,12 @@
 θ, ἅπερ ἐστὶ μίλια μὲν ,γχκε΄, σχοῖνοι δὲ, ἐκ σταδίων
 <lb n="25"/> λ΄, μικρῷ πλέον ἐννακόσιοι· ὃ δὴ καὶ πλάτος ἐστὶ τῆς
 καθʼ ἡμᾶς οἰκουμένης.</p>
-</div>
-</div>
-
-<div type="textpart" subtype="chapter" n="2">
-<head>II. Πεφὶ διαιρέσεως τῆς οἰκουμένης.</head>
-
-<div type="textpart" subtype="section" n="3">
-<p>3. Διαιρεῖται δὲ ἡ ὅλη οἰκουμένη εἰς ἠπείρους τρεῖς,
+            </div>
+         </div>
+         <div n="2" type="chapter">
+            <head>II. Πεφὶ διαιρέσεως τῆς οἰκουμένης.</head>
+            <div n="3" type="section">
+               <p>3. Διαιρεῖται δὲ ἡ ὅλη οἰκουμένη εἰς ἠπείρους τρεῖς,
 Ἀσίαν τε καὶ Λιβύην καὶ Εὐρώπην. Ἡ δὲ διαίρεσις
 <lb n="30"/> ἰσθμοῖς ἢ πορθμοῖς. Καί εἰσιν ὅροι τῶν ἠπείρων, τῆς
 μὲν Εὀρώπης πρὸς τὴν Λιβύην Ειῆλαι τε καὶ προθμὸς
@@ -173,37 +166,33 @@
 γραμμή. Οἱ μέντοι παλαιοὶ τήν τε Λιβύην καὶ τὴν
 Εὐρώπην, ὥσπερ μίαν οὖσαν, συναμφοτέρας ἐκάλουν
 <lb n="5"/> ἑνὶ καὶ μόνῳ τῷ τῆς Εὐρώπης ὀνόματι.</p>
-</div>
-</div>
-
-<div type="textpart" subtype="chapter" n="3">
-<head>IΙI. Πῶς ἔχουσι σχεσεως αἱ τρεῖς ἤπειροι πρὸς τὸν ὁρίζοντα
+            </div>
+         </div>
+         <div n="3" type="chapter">
+            <head>IΙI. Πῶς ἔχουσι σχεσεως αἱ τρεῖς ἤπειροι πρὸς τὸν ὁρίζοντα
 τὴν οἰκουμένην κύκλον.</head>
-
-<div type="textpart" subtype="section" n="4">
-<p>4. Πάλιν δὲ τῶν τριῶν ἠπείρων ἡ μὲν Εὐρώπη
+            <div n="4" type="section">
+               <p>4. Πάλιν δὲ τῶν τριῶν ἠπείρων ἡ μὲν Εὐρώπη
 πρὸς ἄρκτους καὶ δύσεις ἐστὶ πᾶσα, ἡ δὲ Λιβύη πρὸς
 <lb n="10"/> μεσημβρίαν καὶ δύσιν, ἡ δὲ Ἀσία πρὸς τὰς ἀνατολὰς
 κειμένη ἀντιπαρήκει ταῖς δύο ἠπείροις· ἀπὸ γὰρ τῶν
 βορειοτάτων ἐπὶ τὰ νοτιώτατα τῆς ἐγνωσμένης
 ἐκτείνεται.</p>
-</div>
-</div>
- 
-<div type="textpart" subtype="chapter" n="4">
-<head>IV. Περὶ τῶν κατὰ τὴν Εὐρώπην ἐθνῶν.</head>
-
-<div type="textpart" subtype="section" n="5">
-<lb n="5"/> <p>5. Τούτων ἐκκειμένων, ὑπογραψόμεθα ὁλοσχερῶς
+            </div>
+         </div>
+         <div n="4" type="chapter">
+            <head>IV. Περὶ τῶν κατὰ τὴν Εὐρώπην ἐθνῶν.</head>
+            <div n="5" type="section">
+               <lb n="5"/>
+               <p>5. Τούτων ἐκκειμένων, ὑπογραψόμεθα ὁλοσχερῶς
 κατὰ τὸ τυπωδέστατον τὰ καθʼ ἑκάστην ἤπειρον ἔθνη,
 καὶ τὰς ἐμπεριεχομένας θαλάσσας, ὡς δύνασθαι ῥᾷστά
 τινα, διὰ τῆς πρὸς ἄλληλα σχέσεως αὐτῶν, τὴν ὅλην
 οἰκουμένην μηδὲν εἰκόνος δεηθέντα τῷ νῷ
 <lb n="10"/> περιαθρῆσαι.</p>
-</div>
-
-<div type="textpart" subtype="section" n="6">
-<p>6. Ἕστι τοίνυν κατὰ τὸ κεφαλαιῶδες ἐν μὲν τῇ
+            </div>
+            <div n="6" type="section">
+               <p>6. Ἕστι τοίνυν κατὰ τὸ κεφαλαιῶδες ἐν μὲν τῇ
 Εὐρώπῃ ἔθνη τάδε· Ἱσπανίαι τρεῖς, ἃς Ἰβηρίας πρότερον
 ἐκάλουν. Αὗται δὲ χερρονήσου δίκην περιρρέονται
 ὑπὸ θαλάσσης κατὰ σφόδρα στενὸν ἰσθμὸν, ἐφ’ οὗ τὰ
@@ -213,21 +202,19 @@
 τι καὶ τῆς ἔξω μετὰ τὸν πορθμὸν ἐπιλαμβάνουσα·
 ἡ δὲ Ταρρακωνησία διήκει ἀπὸ τοῦ ὠκεανοῦ ἢ τῆς
 <lb n="20"/> ἐκτὸς θαλάσσης ἐπὶ τὴν ἐντὸς θάλασσαν.</p>
-</div>
-
-<div type="textpart" subtype="section" n="7">
-<p>7. Τῶν δὲ Γαλλιῶν, ἃς πρότερον Γαλατίας ἔλεγον,
+            </div>
+            <div n="7" type="section">
+               <p>7. Τῶν δὲ Γαλλιῶν, ἃς πρότερον Γαλατίας ἔλεγον,
 ἑξῆς κειμένων, ἡ μέν Ἀκουιτανία καὶ Λουγδουνησία
 καὶ Βελγικὴ, ἐν ᾗ εἰσὶν αἱ δύο Γερμανίαι, πρὸς τὴν
 ἐκτὸς νενεύκασι θάλασσαν· ἐπιλαμβάνουσι μέντοι ὅσον
 πλεῖστον τῆς μεσογαίου, καὶ μάλιστα ἡ Λουγδουνησία·
 πρὸς δὲ τὴν ἐντὸς θάλασσαν ἀντιπαρατείνουσα
 ταύταις ἡ Ναρβωνησία κεῖται.</p>
-</div>
-
-<div type="textpart" subtype="section" n="8">
-<pb n="496"/>
-<p>8. Πάλιν δὲ μετὰ τὴν Βελγικὴν πρόσεισιν ἐπ’ ἀνατολὰς
+            </div>
+            <div n="8" type="section">
+               <pb n="496"/>
+               <p>8. Πάλιν δὲ μετὰ τὴν Βελγικὴν πρόσεισιν ἐπ’ ἀνατολὰς
 συχνὸν ὅσον ἡ Γερμανία, νενευκυῖα καὶ αὐτὴ
 πρὸς τὴν ἐκτὸς θάλασσαν· μετὰ δὲ τὴν Ναρβωνησίαν
 ἡ Ἰταλία περιεχομένη δύο θαλάσσαις. Ὁρίζεται δὲ
@@ -237,20 +224,18 @@
 Ἄλπεσιν. Αὗται δʼ ἀνιοῦσαι πρὸς ἄρκτους,
 εἶτα πρὸς ἀνατολὰς ἐπιστραφεῖσαι καὶ τὴν λοιπὴν
 <lb n="10"/> Ἰταλίαν ἀπὸ τῶν ὑπερκειμένων ἐθνῶν χωρίζουσιν.</p>
-</div>
-
-<div type="textpart" subtype="section" n="9">
-<p>9. Οὐ πρὸ πολλοῦ δὲ τῶν τοῦ Ῥήνου πηγῶν τὰς ἀρχὰς
+            </div>
+            <div n="9" type="section">
+               <p>9. Οὐ πρὸ πολλοῦ δὲ τῶν τοῦ Ῥήνου πηγῶν τὰς ἀρχὰς
 ἔχων ὁ Ἴστρος, ὃν μέχρι Νουιοδούνου πόλεως Δάνουβιν
 καλοῦσιν, ὁρίζει τὴν Γερμανίαν πρὸς τὰ ὑποκείμενα
 ἔθνη, Ῥαιτίαν μὲν καὶ Οὐινδελικίαν καὶ
 <lb n="15"/> Νωρικὸν ὑπὲρ τὰς Ἄλπεις καὶ τὴν Ἰταλίαν κείμενα,
 ἐκτὸς δὲ τῶν Ἄλπιων τὰς δύο Παννονίας, ὑφʼ ἃς <del>ἥ</del>
 ἐστι κατὰ τὰ ἀνατολικὰ Δαλματία καλεῖται.</p>
-</div>
-
-<div type="textpart" subtype="section" n="10">
-<p>10. Τῆς Γερμανίας μετὰ τὸν Οὐϊστούλαν ποταμὸν
+            </div>
+            <div n="10" type="section">
+               <p>10. Τῆς Γερμανίας μετὰ τὸν Οὐϊστούλαν ποταμὸν
 ἔχεται Σαρματία, ἀναλαμβάνουσα πολλὴν γῆν καὶ
 <lb n="20"/> πολλὰ ἔθνη καὶ τῆς ἑτέρας ἠπείρου μένουσα δέ πως
 ἀποτερματίζεται παρὰ Εὐρώπῃ λίμνῃ τῇ Μαιώτιδι·
@@ -258,10 +243,9 @@
 δὲ ἔκκειται πορθμὸν πρὸς τὴν Ἀσίαν ποιοῦσα τὸν καλούμενον
 Κιμμέριον Βόσπορον) ἀπολαμβάνει τοῦ Πόντου
 <lb n="25"/> τὰ μέχρι Βορυσθένους ποταμοῦ.</p>
-</div>
-
-<div type="textpart" subtype="section" n="11">
-<p>11. Καὶ ἔστιν ὑπὸ μὲν τὰ δυτικώτατα τῆς Σαρματίας
+            </div>
+            <div n="11" type="section">
+               <p>11. Καὶ ἔστιν ὑπὸ μὲν τὰ δυτικώτατα τῆς Σαρματίας
 ἐπὶ νότον κατιοῦσα μετὰ τοὺς Ἰάζυγας τοὺς Μετανάστας
 ἡ Δοκία, ὁριζομένη τῷ Ἴστρῳ, ὑπὸ δὲ τὰ
 λοιπὰ καὶ πρὸς ἀνατολὰς ὑποβέβληται ἡ κάτω Μυσία·
@@ -270,10 +254,9 @@
 ἐπιλαμβάνει δὲ καὶ αὕτη συχνόν τι καὶ τῆς ὑπὲρ τὸν
 Ἴστρον χώρας, τήν τε παράλιον κατέχει πᾶσαν ὅση
 ἐστὶν ἀπὸ Βορυσθένους ἐπὶ Μεσημβρίαν πόλιν.</p>
-</div>
-
-<div type="textpart" subtype="section" n="12">
-<p>12. Ὑπόκειται δὲ καὶ τῇ Δακίᾳ μετὰ τὸν Ἴστρον
+            </div>
+            <div n="12" type="section">
+               <p>12. Ὑπόκειται δὲ καὶ τῇ Δακίᾳ μετὰ τὸν Ἴστρον
 <lb n="5"/> ἡ ἄνω Μυσία, συνάπτουσα πρὸς μὲν ἀνατολὰς τῇ κάτω
 Μυσίᾳ, πρὸς δὲ δύσεις Δαλματίᾳ. Ἔστι δὲ καὶ
 ὑπὸ τὴν Δαλματίαν καὶ μέρος τῆς ἄνω Μυσίας ἡ Μακεδονία,
@@ -283,37 +266,35 @@
 δύσεις ἡ Ἤπεριρος κεῖται, ἐπὶ δὲ τὰς ἀνατολὰς ἡ Θεσσαλία,
 αἷς ὑπάκειται ἡ Ἑλλὰς, κατὰ τὸν ἐν τῷ Κρισσαίῳ
 κόλπῳ ἰσθμὸν ποιοῦσα τὴν Πελσπόννησον.</p>
-</div>
-
-<div type="textpart" subtype="section" n="13">
-<p>13. Νῆσοι δὲ ταύτης τῆς ἠπείρου ἀξιόλογοι ἐν μὲν
+            </div>
+            <div n="13" type="section">
+               <p>13. Νῆσοι δὲ ταύτης τῆς ἠπείρου ἀξιόλογοι ἐν μὲν
 <lb n="15"/> τῇ ἐκτὸς θαλάσσῃ αἱ Βρεττανικαὶ δύο Ἰουερνία τε καὶ
 Ἀλουίων. Ἀλλʼ ἡ μὲν Ἰουερνία δυτικωτάτη κειμένη,
 ἀντιπαρεκτείνεται μέχρι τινὸς τῇ Ἱσπανίᾳ· ἡ δὲ
 Ἀλουίων, ἔν ᾗ καὶ τὰ στρατόπεδα ἵδροται, μεγίστη
 τέ ἐστι καὶ ἐπιμηκεστάτη· ἀρξαμένη γὰρ ἀπὸ ἄρκτων
-<lb n="20"/> <del>ἐπὶ μὲν δύσιν μέχρι τῶν</del> μέσων τῆς Ταρρακωνησίας
+<lb n="20"/>
+                  <del>ἐπὶ μὲν δύσιν μέχρι τῶν</del> μέσων τῆς Ταρρακωνησίας
 πρόσεισιν, ἐπʼ ἀνατολὰς <del>δὲ</del> μέχρι τῶν μέσων
 σχεδὸν τῆς Γερμανίας, Εἴη δʼ ἂν ἀξιόλογος καὶ ἡ
 Θούλη, καὶ ἡ μεγάλη Σκάνδεια, ἢ κεῖται ὁπὸ τὴν
 Κιμβρικὴν χερρόνησον· ἔκκειται γὰρ τῆς Γερμανίας
 <lb n="25"/> πρὸς ἄρκτους καὶ τὸν ἐκείνης ὠκεανὸν ἐπὶ πλεῖστον.</p>
-</div>
-    <div type="textpart" subtype="section" n="14">
-<p>14. Ἐν δὲ τῇ ἐντὸς θαλάσσῃ ὁπὸ μὲν τὰ δυτικώτερα
+            </div>
+            <div n="14" type="section">
+               <p>14. Ἐν δὲ τῇ ἐντὸς θαλάσσῃ ὁπὸ μὲν τὰ δυτικώτερα
 Ἰταλίας ἡ Κύρνος, ἡ καὶ Κορσικὴ, ὑποκειμένην
 ἔχουσα τὴν Σαρδονίαν, ὑπὸ δὲ τὰ ἀνατολικώτερα καὶ
 πρὸς τὸν πορθμὸν ἡ Σικελία, καὶ παρὰ μὲν τὴν Ἀττικὴν
 <lb n="30"/> καὶ τὴν Πελοπόννησον ἐκτεινομένη πρὸς ἀνατολὰς
 ἡ Κρήτη, παρὰ δὲ τὴν Ἀχαίαν ἡ Εὔβοια.</p>
-</div>
-</div>
-
-<div type="textpart" subtype="chapter" n="5">
-<head>V. Περὶ τῶν κατὰ τὴν Λιβύην ἐθνῶν.</head>
-
-<div type="textpart" subtype="chapter" n="15">
-<p>15. Τῆς δὲ Διβύης ἀρχομένης ἀπὸ τοῦ Ἡρακλείου
+            </div>
+         </div>
+         <div n="5" type="chapter">
+            <head>V. Περὶ τῶν κατὰ τὴν Λιβύην ἐθνῶν.</head>
+            <div n="15" type="chapter">
+               <p>15. Τῆς δὲ Διβύης ἀρχομένης ἀπὸ τοῦ Ἡρακλείου
 πορθμοῦ εἰσιν αἱ δύο Μαυριτανίαι, δυτικωτέρα μὲν ἡ
 <lb n="5"/> Τιγγιτανὴ, ἐχομένη δὲ ταύτης ἡ Καισαρηνσία· μεθʼ
 ἣν ἡ Ἀφρικὴ, εἶτα ἡ Κυρηναῖκὴ Πεντάπολις, <del>εἶτα</del>
@@ -322,27 +303,24 @@
 ἡ ἄβροχός τε καὶ δίαμμος γῆ. Ἐκτείνεται
 <lb n="10"/> δὲ ἡ ἔρημος αὕτη καὶ μέχρι τῆς Αἰγύπτου κειμένη
 ἀρχομένης.</p>
-</div>
-
-<div type="textpart" subtype="section" n="16">
-<p>16. <del>Ἔθνη δὲ τῆς Λιβύης</del> ἀπὸ δυσμῶν τάδει· Δαράδαι,
+            </div>
+            <div n="16" type="section">
+               <p>16. <del>Ἔθνη δὲ τῆς Λιβύης</del> ἀπὸ δυσμῶν τάδει· Δαράδαι,
 Πέρορσοι, Ὀδραγγῖδαι, Μίμακες, Νοῦβαι,
 
 <pb n="498"/>
 Γαράμαντες, Δερβίκαι, Μελανογαίτουλοι, Γίγγοι,
 Νιγρῖται, Ἀφρικέρωνες, Λευκαιθίοπες.</p>
-</div>
-
-<div type="textpart" subtype="section" n="17">
-<p>17. Ἐν δὲ τῆ ὑπὸ τὴν Αἴγυπτον Αἰθιοπίᾳ ἡ μὲν
+            </div>
+            <div n="17" type="section">
+               <p>17. Ἐν δὲ τῆ ὑπὸ τὴν Αἴγυπτον Αἰθιοπίᾳ ἡ μὲν
 πρὸς τῇ θαλάσσῃ πᾶσα ὅση ἐστὶν ἀπὸ Βερονίκης μέχρι
 <lb n="5"/> τῶν στενῶν τοῦ Ἀραβικοῦ κόλπου καλεῖται Τρωγλοδυτική.
 Ταύτης δὲ ἐνδοτέρα κεῖται ἡ Ἀζανία, ἐν ᾗ
 παντοῖοί εἰσι ἐλέφαντες, καὶ ἡ Ἀρωματοφόρος χώρα.</p>
-</div>
-
-<div type="textpart" subtype="section" n="18">
-<p>18. Καὶ μετὰ τὸν μέγαν καταράκτην ἀπὸ μὲν δυσμῶν
+            </div>
+            <div n="18" type="section">
+               <p>18. Καὶ μετὰ τὸν μέγαν καταράκτην ἀπὸ μὲν δυσμῶν
 τοῦ Νείλου Εὐωνυμῖται, Σεβρίδαι, Κάτοιποι καὶ
 <lb n="10"/> πρὸς τῇ Μερόῃ νήσῳ Μέμνονες μεθʼ οὓς Ἐλεφαντοφάγοι
 Αἰθίοπες εἶτα Πεσενδάραι καὶ <del>ἡ</del> Κινναμωμοφόρος
@@ -357,14 +335,12 @@
 <lb n="20"/> θαλάσσης Ἀνθρωποφάγοι Αἰθίοπες. Τούτων
 δὲ πρὸς ἀνατολὰς ἅμα καὶ μεσημβρίαν πλησιάζουσα
 τῇ ἀγνώστῳ ἐστὶ χώρα πολλήκαλουμένη Ἀγίσυμβα.</p>
-</div>
-</div>
-
-<div type="textpart" subtype="chapter" n="6">
-<head>VI. Περὶ τῶν κατὰ τὴν Ἀσίαν ἐθνῶν.</head>
-
-<div type="textpart" subtype="section" n="19">
-<p>19. Τὸ δὲ ἐν τῇ Ἀσίᾳ ἔθνη ἔχει οὕτως. Μετὰ γὰρ
+            </div>
+         </div>
+         <div n="6" type="chapter">
+            <head>VI. Περὶ τῶν κατὰ τὴν Ἀσίαν ἐθνῶν.</head>
+            <div n="19" type="section">
+               <p>19. Τὸ δὲ ἐν τῇ Ἀσίᾳ ἔθνη ἔχει οὕτως. Μετὰ γὰρ
 <lb n="25"/> τὸν ἰσθμὸν καὶ τὸν Τάναῖν ἐπεκταθεῖσα τὸν εἰρημένον
 
 <pb n="499"/>
@@ -378,14 +354,14 @@
 ὀλίγου γὰρ δεῖν συνάπτει τῇ Ἰνδικῇ. Μετὰ δὲ τὴν
 σύμπασαν Σκυθίαν ἐστὶν ἡ Σηρικὴ, τὸ ἀνατολικώτατον
 <lb n="10"/> ἀποτερματίζουσα τῆς ἐγνωσμένης.</p>
-</div>
-
-<div type="textpart" subtype="section" n="20">
-<p>20. Ὑπόκειται δὲ τῇ Σαρματίᾳ πρὸς μὲν τῷ Πόντῳ
+            </div>
+            <div n="20" type="section">
+               <p>20. Ὑπόκειται δὲ τῇ Σαρματίᾳ πρὸς μὲν τῷ Πόντῳ
 ἡ Κολχική, πρὸς δὲ τῇ Κασπίᾳ ἡ Ἀλβανίᾳ, ἧς μεταξὺ
 κεῖται ἡ Ἰβηρία. Εἶτα τῆς μετὰ τὴν Προποντίδα
 καὶ τοὺς πορθμοὺς ἠπείρου πρόκειται Ποντοβιθυνία,
-<lb n="15"/> <del>ἡ</del> καὶ ὁ ἐνδοτέρῳ Πόντος, μεθʼ ἧς ἐστιν ἡ Παφλαγονία.
+<lb n="15"/>
+                  <del>ἡ</del> καὶ ὁ ἐνδοτέρῳ Πόντος, μεθʼ ἧς ἐστιν ἡ Παφλαγονία.
 Ὑπόκειται δὲ τῇ Ποντοβιθυνίᾳ προϊοῦσα μέχρι
 τοῦ Δινδύμου ὄρους ἡ Ἀσία· μεθʼ ἥν ἐστιν ἡ Λυκία
 καὶ <del>ἡ Παμφυλία</del>· Παμφυλίας δὲ καὶ Πόντου μεταξὺ
@@ -396,10 +372,9 @@
 ἔοικε καὶ αὐτὴ χερρονήσῳ πλατὺν ἐχούσῃ τὸν αὐχένα.
 Εἴη δʼ ἂν οὗτος ἀπὸ τοῦ Ἰσσικοῦ κόλπου ἐπὶ Τραπεζοῦντα
 <lb n="25"/> πόλιν ἐν τῷ Πόντῳ κειμένην διήκων.</p>
-</div>
-
-<div type="textpart" subtype="section" n="21">
-<p>21. Πάλιν δὲ τῇ μὲν Ἰβηρίᾳ καὶ μέρει τῆς Ἀλβανίας
+            </div>
+            <div n="21" type="section">
+               <p>21. Πάλιν δὲ τῇ μὲν Ἰβηρίᾳ καὶ μέρει τῆς Ἀλβανίας
 ὑπόκειται ἡ Ἀρμενία, χωριζομένη τῆς Καππαδοκίας
 τῷ Εὐφράτῃ. Ταύτῃ δὲ ὑπόκειται ἡ Μεσοποταμία,
 δυτικωτέραν ἔχουσα τὴν Συρίαν. Συρία δὲ ὑπόκειται
@@ -412,10 +387,11 @@
 τῆς Ἐρήμου καὶ τῆς Πετραίας Ἀραβίας καὶ τοῦ Ἀραβίου
 <del>καὶ</del> κόλπου τῆς Ἐρυθρᾶς θαλάσσης καὶ μέρους
 τοῦ Περσικοῦ κόλπου, καλεῖται Ἀραβία Εὐδαίμων,
-καὶ ἐστὶ τῷ μεγέθει μεγίστη.</p></div>
-    
-    <div type="textpart" subtype="section" n="22">
-<lb n="40"/> <p>22. Κεῖται δὲ ὑπὸ μὲν τὴν Κασπίαν θάλασσαν μετὰ
+καὶ ἐστὶ τῷ μεγέθει μεγίστη.</p>
+            </div>
+            <div n="22" type="section">
+               <lb n="40"/>
+               <p>22. Κεῖται δὲ ὑπὸ μὲν τὴν Κασπίαν θάλασσαν μετὰ
 τὰ μεθόρια τῆς Ἀρμενίας ἡ Μηδία· ὑπὸ δὲ ταύτην
 ὡς πρὸς ἀνατολὰς τοῦ Τίγριδος ἡ Ἀσσυρία, εἰς ἣν ἡ
 Κτησιφῶν. Μετὰ δὲ τὰς συμβολὰς Εὐφράτου τε καὶ
@@ -429,10 +405,9 @@
 ταύτην ἡ Παρθία. Ταύτῃ δὲ ὑποβέβληται <del>ἡ</del> ἔρημος
 Καρμανία, μεθʼ ἣν ἡ ἀληθὴς κεῖται Καρμανία μέχρι
 θαλάσσης.</p>
-</div>
-
-<div type="textpart" subtype="section" n="23">
-<p>23. Πάλιν δὲ τῇ μέχρις Ἰμάου ὅρους Σκυθίᾳ ὑπόκεινται
+            </div>
+            <div n="23" type="section">
+               <p>23. Πάλιν δὲ τῇ μέχρις Ἰμάου ὅρους Σκυθίᾳ ὑπόκεινται
 <lb n="10"/> ἀπὸ δύσεως ἀρχόμεναι Μαργιανὴ, εἶτα Σογδιανὴ,
 εἶτα Σακία. Καὶ ἐστιν ὑπὸ τὴν Μαργιανὴν ὡς
 ἀπὸ ἀνατολῶν τῆς Παρθίας ἡ Ἀρία· τῇ· δὲ Σογδιανῇ
@@ -442,34 +417,30 @@
 ἔχουσα τὰ δυτικώτερα τῆς Γεδρωσίας, δυτικήν
 ἐχούσης τὴν Καρμανίαν, ᾗ ὑπόκειται ἡ
 Δραγγιανή.</p>
-</div>
-
-<div type="textpart" subtype="section" n="24">
-<p>24. Τὴν δὲ λοιπὴν τὴν μέχρι τῶν Θινῶν ἤπειρον
+            </div>
+            <div n="24" type="section">
+               <p>24. Τὴν δὲ λοιπὴν τὴν μέχρι τῶν Θινῶν ἤπειρον
 <lb n="20"/> ἅπασαν, πλείστην οὖσαν καὶ ὑπὸ πολλῶν ἐθνῶν κατοικουμένην,
 Ἰνδοὶ κατανέμονται, ἀφοριζομένην πρὸς
 μὲν ἀνατολαῖς Σίναις, πρὸς δὲ ταῖς δύσεσι Γεδρωσίᾳ,
 πρὸς δὲ ταῖς ἄρκτοις Παροπανισάδαις καὶ Ἀραχωσίᾳ,
 Σογδιανοῖς τε καὶ Σάκαις, Σκυθία τε καὶ τῇ
 <lb n="25"/>  Σηρικῇ.</p>
-</div>
-
-<div type="textpart" subtype="section" n="25">
-<p>25. Ἔστι δὲ καὶ τῆς ἠπείρου ταύτης κατὰ μὲν τὸ
+            </div>
+            <div n="25" type="section">
+               <p>25. Ἔστι δὲ καὶ τῆς ἠπείρου ταύτης κατὰ μὲν τὸ
 Ἰνδικὸν πέλαγος μεγίστη νῆσος, ἡ πάλαι μὲν Σιμοῦνδα
 καλουμένη, νῦν δὲ Σαλικὴ, ἐν ᾗ φασι πάντα γίνεσθαι
 τὰ πρὸς τὴν χρῆσιν τὴν βιωτικήν, ἔχειν τε παντοῖα
 <lb n="30"/> μέταλλα, καὶ τοὺς κατοικοῦντας αὐτὴν ἄνδρας μαλλοῖς
 γυναικείοις ἀναδεῖσθαι τὰς κεφαλάς· κατὰ δὲ τὴν
 καθ᾿  ἡμᾶς θάλασσαν ἡ Κύπος. (Ὁμοῦ ἔθνη ρνγ΄.)</p>
-</div>
-</div>
-
-<div type="textpart" subtype="chapter" n="7">
-<head>VII. Σύγκρισις τῶν τριῶν ἠπείρων.</head>
-
-<div type="textpart" subtype="section" n="26">
-<p>26. Συγκρινομένων δὲ τῶν τριῶν ἠπείρων πρὸς ἀλλήλας,
+            </div>
+         </div>
+         <div n="7" type="chapter">
+            <head>VII. Σύγκρισις τῶν τριῶν ἠπείρων.</head>
+            <div n="26" type="section">
+               <p>26. Συγκρινομένων δὲ τῶν τριῶν ἠπείρων πρὸς ἀλλήλας,
 <lb n="35"/> μεγίστη μὲν ἂν φανείη ἡ Ἀσία, εἶτα ἡ Λιβύη,
 τελευταία δὲ ἡ Εὐρώπη. Ἀνάπαλιν δὲ πρὸς εὐδαιμονίαν
 καὶ εὐετηρίαν πρός τε τὰ τῶν ἀέρων καταστήματα καὶ
@@ -485,14 +456,12 @@
 ἐν τῇ Λιβύῃ ἥ τε Ἀφρικὴ καὶ ἡ Αἴγυπτος καὶ τῶν
 Ἀσιανῶν παρὰ πάντα μὲν ἰδίως ἡ Ἰνδικὴ, μεγίστη δὲ
 <lb n="5"/> καὶ Σκυθία Σηρική τε καὶ ἡ Εὐδαίαων.</p>
-</div>
-</div>
-
-<div type="textpart" subtype="chapter" n="8">
-<head>VIII. Περὶ νήσων μεγίστων.</head>
-
-<div type="textpart" subtype="section" n="27">
-<p>27. Τῶν δὲ νήσων τῶν πάνυ μεγίστων πρωτεύει
+            </div>
+         </div>
+         <div n="8" type="chapter">
+            <head>VIII. Περὶ νήσων μεγίστων.</head>
+            <div n="27" type="section">
+               <p>27. Τῶν δὲ νήσων τῶν πάνυ μεγίστων πρωτεύει
 μὲν παρὰ πάσας ἐν τῇ οἰκουμένῃ ἡ Σαλικὴ, δευτερεύει
 δὲ ἡ Ἀλουΐων, τὰ δὲ τρίτα φέροιτʼ ἂν ἡ Ἰουερνία. Τῶν
 <lb n="10"/> δὲ ἄλλων μὲν μεγάλων, ἐλαττόνων δὲ ἢ κατὰ τὰς εἰρημένας,
@@ -502,14 +471,12 @@
 ἐν μεγέθει τάξιν ἐχουσῶν πρώτη μὲν ἂν εἴη ἡ Κορσικὴ
 <lb n="15"/> ἡ καὶ Κύρνος, δευτέρα ἡ Λέσβος, τρίτη δὲ ἡ
 Ῥόδος.</p>
-</div>
-</div>
-
-<div type="textpart" subtype="chapter" n="9">
-<head>IX. Περὶ ὀρῶν. μεγίστων.</head>
-
-<div type="textpart" subtype="section" n="28">
-<p>28. Ἔστι δὲ καὶ τῶν ὀρῶν μέγιστα, ἐν μὲν τῇ
+            </div>
+         </div>
+         <div n="9" type="chapter">
+            <head>IX. Περὶ ὀρῶν. μεγίστων.</head>
+            <div n="28" type="section">
+               <p>28. Ἔστι δὲ καὶ τῶν ὀρῶν μέγιστα, ἐν μὲν τῇ
 Ἀσίᾳ ὅ τʼ Ἰμάϊος καὶ τὰ Ἠμωδὰ καὶ τὰ Καυκάσια·
 <lb n="20"/> ταῦτα δὲ καὶ τὰ Ῥίπαιά φασι παρὰ πάντα ὑψηλότατα
 εἶναι μέγιστον δʼ ὄρος καὶ ὁ παροπάνισος καὶ ὁ
@@ -525,14 +492,13 @@
 τὸν Μακεδονικὸν δὲ Ὄλυμπον καὶ τὸν Ἄθω καὶ τῆς
 Ἠπείρου τὰ Ἀκροκεραύνια· ταῦτα δὲ καὶ ἀπὸ Κανυσίου
 φασὶν ὁρᾶσθαι.</p>
-</div>
-</div>
-
-<div type="textpart" subtype="chapter" n="10">
-<head>X. Περὶ ποταμῶν μεγίστων.</head>
-
-<div type="textpart" subtype="section" n="29">
-<lb n="35"/> <p>29. Τῶν δὲ ἐν τῇ οἰκουμένῃ ποταμῶν μέγιστοι μέν
+            </div>
+         </div>
+         <div n="10" type="chapter">
+            <head>X. Περὶ ποταμῶν μεγίστων.</head>
+            <div n="29" type="section">
+               <lb n="35"/>
+               <p>29. Τῶν δὲ ἐν τῇ οἰκουμένῃ ποταμῶν μέγιστοι μέν
 εἶσιν, ἐν μὲν τῆ Ἀσίᾳ πολλῶν ὄντων παρὰ πάντας ὅ
 τε Γάγγης καὶ ὁ Ἰνδός· οὗτοι γὰρ ἀρξάμενοι ἀπὸ τῶν
 βορειοτάτων τῆς οἰκουμένης, καὶ προσλαμβάνοντες
@@ -547,20 +513,18 @@
 Φᾶσις δὲ καὶ Θερμώδων καὶ Σάγγαρις εἰς τὸν Πόντον.
 Οὗιοι δὲ σχεδόν τι περὶ τοὺς αὐτοὺς τόπους τὰς ἐκβολὰς
 <lb n="5"/> ἔχουσι ταῖς πηγαῖς.</p>
-</div>
-
-<div type="textpart" subtype="section" n="30">
-<p>30. Τῶν δὲ ἐν τῇ Εὐρώπη πρωτεύοι μὲν ἂν εἰκότως
+            </div>
+            <div n="30" type="section">
+               <p>30. Τῶν δὲ ἐν τῇ Εὐρώπη πρωτεύοι μὲν ἂν εἰκότως
 ὁ Ἴστρος, ὃς φεφόμενος ἀπὸ τῶν πρὸς δύσιν τόπων
 τοσαῦτά τε διερχόμενος ἔνυη καὶ τόπους ἐκδίδωσιν εἰς
 τὸν Πόντον· ἐξῆς δὲ μέγιστοι Βορυσθένης, Οὐιστούλας,
 <lb n="10"/> τάναϊς, Ῥῆνος. Εἰσὶ δὲ καὶ ἄλλοι μεγάλοι ποταμοὶ
 πρὸς ταῖς ἐκβολαῖς γινόμενοι, μάλιστα Ἠρίδανος,
 Ἴβηρ, Βαῖτις, Σηκοάνας, Δορίας καὶ οἱ ἀμφὶ Ῥοδανόν.</p>
-</div>
-
-<div type="textpart" subtype="section" n="31">
-<p>31. Ἐν δὲ τῇ Λιβύῃ μέγιστός ἐστιν ὁ Νεῖλος· ὁρμιώμενος
+            </div>
+            <div n="31" type="section">
+               <p>31. Ἐν δὲ τῇ Λιβύῃ μέγιστός ἐστιν ὁ Νεῖλος· ὁρμιώμενος
 <lb n="15"/> γὰρ ἐκ τῶν ὑπὲρ τὸν ἰσημερινὸν ἐν βάθει τῆς
 μεσημβρίας τόπων, ἐκδίδωσιν εἰς τὴν καθʼ ἡμᾶς θάλασσαν,
 ἐλικογραφῶν, ὡς εἰκὸς, ὅπερ ἐστὶν ἴδιον ποταμῶν,
@@ -572,23 +536,20 @@
 διαρρεόντων σὴν ἐντὸς Αἰθιοπίαν καὶ τάς τε ἀρχὰς καὶ
 τὰ τέλη ἐν ἠπείρῳ ἐχόντων, μέγιστος ἐστιν ὅ τε Γὶρ καὶ
 <lb n="25"/> Νίγιρ.</p>
-</div>
-</div>
-
-<div type="textpart" subtype="chapter" n="11">
-<head>XI. Περὶ τῆς μεγάλης θαλάσσης</head>
-
-<div type="textpart" subtype="section" n="32">
-<p>32. Τῆς δὲ μεγίστης τε καὶ πρὸς ταῖς ἀνατολαῖς
+            </div>
+         </div>
+         <div n="11" type="chapter">
+            <head>XI. Περὶ τῆς μεγάλης θαλάσσης</head>
+            <div n="32" type="section">
+               <p>32. Τῆς δὲ μεγίστης τε καὶ πρὸς ταῖς ἀνατολαῖς
 θαλάσσης τὰ μὲν νοτιώτατα καὶ πρὸς τῇ ἀγνώστῳ καλεῖται
 Πρασώδης θάλασσα· λέγεται γὰρ τῷ χρώματι
 <lb n="30"/> τοιαύτη τις εἶναι, καὶ βρύον ἔχειν πλεῖστον καὶ μέγιστον
 ἐμφερὲς πράσῳ, ὅθεν εἰκὸς αὐτῇ καὶ τὴν πρασώδη
 φαντασίαν προσγίνεσθαι.</p>
-</div>
-
-<div type="textpart" subtype="section" n="33">
-<p>33. Μετὰ δὲ ταύτην ὡς πρὸς ἄρκτους ἡ Βραχεῖα
+            </div>
+            <div n="33" type="section">
+               <p>33. Μετὰ δὲ ταύτην ὡς πρὸς ἄρκτους ἡ Βραχεῖα
 κεῖται θάλασσα, ἣ οὐ διὰ βραχύτητα τοῦ μεγέθους
 <lb n="35"/> (ἐστὶ γὰρ μεγίστη) τούτου τετύχηκε τοῦ ὁδόματος,
 ἀλλὰ διὰ τὰ ἐν αὐτῇ βράχη· τὰς γὰρ ἀμπώτεις γίνεσθαι
@@ -598,20 +559,18 @@
 <lb n="40"/> πλέοντας, εἰ περιπέσοιέν ποτε τούτῳ τῷ πάθει, ὑποστηρίξαντας
 τὸ πλοῖον ἀναβαίνειν καθάπερ εἰς
 ἤπειρον.</p>
-</div>
-
-<div type="textpart" subtype="section" n="34">
-<p>34. Ταύτης δὲ τῆς θαλάσσης ὑπέρκειται ἡ λοιπὴ
+            </div>
+            <div n="34" type="section">
+               <p>34. Ταύτης δὲ τῆς θαλάσσης ὑπέρκειται ἡ λοιπὴ
 ἡ παρὰ τὴν ἤπειρον· καὶ ἔστι μὲν αὐτῆς μέγιστον μὲν
 <lb n="45"/> Ἰνδικὸν πέλαγος, ἐν ᾧ χερρόνησοι καὶ κόλποι πάνυ
 
 <pb n="503"/>
 μεγάλοι, ὅ τε Θηριώδης καὶ ὁ Μέγας καὶ ὁ
 Γαγγητικός.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="35">
-<p>35. Τοῦ δὲ Ἰνδικοῦ πελάγους ἔχεται τὸ Καρμάνιον,
+            </div>
+            <div n="35" type="chapter">
+               <p>35. Τοῦ δὲ Ἰνδικοῦ πελάγους ἔχεται τὸ Καρμάνιον,
 προῖὸν ὡς ἐπὶ δύσεις, τούτου δὲ ἡ Ἐρυθρὰ θάλασσα,
 <lb n="5"/> ὧν περὶ τὰς συμβολὰς καὶ τὸ τοῦ Περσικοῦ κόλπου
 στόμα κεῖται. Αὐτὸς δὲ ὁ κόλπος περιέχεται μὲν ἀπὸ
@@ -619,10 +578,9 @@
 μεταβαίνουσιν ἐπὶ δύσεις Περσίδι καὶ Σουσιανῇ καὶ
 Βαβυλωνίᾳ, ἀπὸ δὲ δόσεως Ἀραβίᾳ Ἐρήμῳ, εἶτα
 <lb n="10"/> πάλιν ἀπὸ μεσημβρίας τῇ Εὐδαίμονι.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="36">
-<p>36. Ἀπὸ δὲ τῆς Ἐρυθρᾶς θαλάσσης ἕως Αἰγύπτου
+            </div>
+            <div n="36" type="chapter">
+               <p>36. Ἀπὸ δὲ τῆς Ἐρυθρᾶς θαλάσσης ἕως Αἰγύπτου
 ὁ Ἀράβιος κόλπος, ἔνθα μάλιστά ἐστι τὸ στενότατον
 τῆς ἠπείρου καὶ διεῖργον τὸ μὴ συνάψαι τὴν καθʼ ἡμᾶς
 θάλασσαν. Οὗ τὸ χρῶμά φασιν ἐρυθρὸν ἔχειν, οὐχ᾿, ὡς
@@ -641,20 +599,18 @@
 Μετὰ τὸν Ἀράβιον κόλπον καὶ τὰ λοιπὰ τῆς Ἐρυθρᾶς
 θαλάσσης ἐστὶν ἡ κατὰ τὴν βαρβαρίαν Αἰθιοπικὴ
 θάλασσα.</p>
-</div>
-</div>
-
-<div type="textpart" subtype="chapter" n="12">
-<lb n="30"/> <head>XII. Περὶ τῶν κατὰ τὴν οἰκουμένην ἀνέμων.</head>
-
-<div type="textpart" subtype="section" n="37">
-<p>37. Αἱ δὲ περὶ τῶν κατὰ τὴν οἰκουμένην ἀνέμων
+            </div>
+         </div>
+         <div n="12" type="chapter">
+            <lb n="30"/>
+            <head>XII. Περὶ τῶν κατὰ τὴν οἰκουμένην ἀνέμων.</head>
+            <div n="37" type="section">
+               <p>37. Αἱ δὲ περὶ τῶν κατὰ τὴν οἰκουμένην ἀνέμων
 τε καὶ πνευμάτων θέσεις, καὶ ἀφʼ ὧν ἕκαστος ὁρμᾶται
 τόπων, καὶ διʼ ὧν ἔρχεται, ἔχουσιν οὕτως.</p>
-</div>
-
-<div type="textpart" subtype="section" n="38">
-<p>38. Νοηθέντος γὰρ μεγίστου κύκλου περιέχοντος τὸ
+            </div>
+            <div n="38" type="section">
+               <p>38. Νοηθέντος γὰρ μεγίστου κύκλου περιέχοντος τὸ
 <lb n="35"/> ἐγνωσμένου, καὶ ἓξ διαμέτροις εἰς ἴσα δώδεκα διαιρεθέντος,
 ὥστε δύο τῶν πρὸς ὀρθὰς ἀλλήλαις τὴν μὲν
 ἰσημερινὴν ποιεῖσθαι, τὴν δὲ μεσημβρινήν, τάσσουσιν
@@ -673,14 +629,12 @@
 <lb n="5"/> ἀντιπνέοντες ἀλλήλοις, ἀπηλώτης μὲν ζεφύρῳ, καικίας
 δὲ λιβὶ, βορέας δὲ λιβονότῳ, καὶ ἀπαρκτίᾳς μὲν νότῳ,
 θρασκίας δὲ εὐρονότῳ, καὶ ἰάπυξ εὔρῳ.</p>
-</div>
-</div>
-
-<div type="textpart" subtype="chapter" n="13">
-<head>XIII. Περὶ μήκους καὶ πλάτους τῆς ὅλης οἰκουμένης.</head>
-
-<div type="textpart" subtype="section" n="39">
-<p>39. Ἀναγκαῖον δὲ καὶ περὶ μήκους καὶ πλάτους τῆς
+            </div>
+         </div>
+         <div n="13" type="chapter">
+            <head>XIII. Περὶ μήκους καὶ πλάτους τῆς ὅλης οἰκουμένης.</head>
+            <div n="39" type="section">
+               <p>39. Ἀναγκαῖον δὲ καὶ περὶ μήκους καὶ πλάτους τῆς
 <lb n="10"/> ὅλης οἰκουμένης εἰπεῖν. Τὸ μῆκος τοίνυν αὐτῆς ληψόμεθα,
 οὐ τὸ συνακολουθοῦν τῷ ῥομβοειδεῖ σχήματι,
 ἀλλά τινι κύκλου τμήματι, ὃ τῶν ἄλλων τῶν διʼ ὅλου
@@ -698,43 +652,39 @@
 (δὲ) διὰ τῶν Ἱππικῶν τῆς Σαρματίας ὀρῶν,
 <lb n="25"/> στάδια τρισμύρια δισχίλια φ΄, ἤτοι μιλίων χιλιάδες
 δ καὶ τλγ΄.</p>
-</div>
-</div>
-
-<div type="textpart" subtype="chapter" n="14">
-<pb n="505"/>
-<head>XIV. Περὶ μήκους καὶ πλάτους τῶν κατὰ τὴν οἰκουμένην
+            </div>
+         </div>
+         <div n="14" type="chapter">
+            <pb n="505"/>
+            <head>XIV. Περὶ μήκους καὶ πλάτους τῶν κατὰ τὴν οἰκουμένην
 θαλασσῶν.</head>
-
-<div type="textpart" subtype="section" n="40">
-<p>40. Τῶν δὲ τῆς οἰκουμένης θαλασσῶν τὰ μήκη καὶ
+            <div n="40" type="section">
+               <p>40. Τῶν δὲ τῆς οἰκουμένης θαλασσῶν τὰ μήκη καὶ
 πλάτη τόνδε τὸν τρόπον ἔχει. Τῆς μὲν καθʼ ἡμᾶς θαλάσσης
-<lb n="5"/> <del>μῆκος μὲν</del> τὰ ἀπὸ Κώτου, τοῦ τῆς Μαυριτανίας
+<lb n="5"/>
+                  <del>μῆκος μὲν</del> τὰ ἀπὸ Κώτου, τοῦ τῆς Μαυριτανίας
 Τιγγιταγῆς ἔκρου, μέχρι τῆς Ἰσσοῦ στάδιοί
 εἰσι δισμύριοι ευ΄, ἤτοι μίλια γτπϚ΄· πλάτος δὲ ἀπὸ
 Μασσιλίας (ἐπεὶ τὸ πλεῖστον ἡ Γαλλικὴ θάλασσα ἐνταῦθα
 πρὸς ἄρκτους ἀνακολποῦται) ἐπ’ Ἰγίλγιλιν κολώνειαν
 <lb n="10"/> τῆς Μαυριτανίας στάδια εφ΄, μίλια δὲ ψλγ΄.</p>
-</div>
-
-<div type="textpart" subtype="section" n="41">
-<p>41. Τοῦ δὲ Πόντου ἀπὸ Τόμων ἐπὶ τὰς τοῦ Φάσιδος
+            </div>
+            <div n="41" type="section">
+               <p>41. Τοῦ δὲ Πόντου ἀπὸ Τόμων ἐπὶ τὰς τοῦ Φάσιδος
 ἐκβολὰς μῆκος μὲν στάδια Ϛ<del>σ</del>΄, μίλια ωκϚ΄, πλάτος
 δὲ τὸ ἀπὸ Φαναγορίας ἐν Βοσπόρῳ ἐπὶ τὰς τοῦ
 Ἄλυος ἐκβολὰς, ἧπερ καὶ πλατύτατός ἐστιν ὁ Πόντος,
 <lb n="15"/> στάδια βυ΄, μίλια τκ΄.</p>
-</div>
-
-<div type="textpart" subtype="section" n="42">
-<p>42. Ἔστι δὲ τῆς Κασπίας θαλάσσης μῆκος μὲν τὸ
+            </div>
+            <div n="42" type="section">
+               <p>42. Ἔστι δὲ τῆς Κασπίας θαλάσσης μῆκος μὲν τὸ
 ἀπὸ τῶν τοῦ Κύρου ἐκβολῶν, ὃς κάτεισιν ἀπὸ τῆς Ἀρμενίας,
 ἐπὶ τὰς τοῦ Ἰαξάρτου ἐκβολὰς σταδίων ησ΄,
 ἤτοι μιλίων αU+2220δ΄, πλάτος δὲ πλεῖστον σταδίων βφ΄,
 <lb n="20"/> μιλίων δὲ τλδ΄.</p>
-</div>
-
-<div type="textpart" subtype="section" n="43">
-<p>43. Τῆς δὲ κατὰ τὸ Ἰνδικὸν πέλαγος Βραχείας θαλάσσης,
+            </div>
+            <div n="43" type="section">
+               <p>43. Τῆς δὲ κατὰ τὸ Ἰνδικὸν πέλαγος Βραχείας θαλάσσης,
 ἐπείπερ αὕτη παρὰ τὰς ἄλλας΄ ἐπὶ πλεῖστον
 πρὸς ἀνατολὰς καὶ δύσεις ἐκτείνεται, τὸ ἀπὸ Ἐσιναῦ
 ἐμπορίου τῆς Βαρβαρίας ἢ τῶν Ῥαπτῶν τῆς μητροπόλεως
@@ -742,18 +692,16 @@
 μυριάδες ε΄ καὶ βφ΄, μίλια δὲ ζ· πλάτος δὲ τὸ ἀπὸ
 τοῦ μυχοῦ τοῦ Μεγάλου κόλπου ἐπὶ τὴν ἄγνωστον στάδια
 <del>μυρία</del> τρισχίλια, ἤτοι μίλια αψ<del>λ</del>γ΄.</p>
-</div>
-
-<div type="textpart" subtype="section" n="44">
-<p>44. Τοῦ δὲ Ἀραβίου κόλπου ἐκκλίνοντος πρὸς ἀνατολὰς
+            </div>
+            <div n="44" type="section">
+               <p>44. Τοῦ δὲ Ἀραβίου κόλπου ἐκκλίνοντος πρὸς ἀνατολὰς
 
 <pb n="506"/>
 τὰ μέχρι τῶν στενῶν οὐκ ἔλαττόν ἐστι μυρίων
 σταδίων, ἃ ἐστι μίλια ατλγ΄, γ΄.</p>
-</div>
-
-<div type="textpart" subtype="section" n="45">
-<p>45. Αὕτη δὲ ἡ μεγάλη θάλασσα, ἡ τὴν ὅλην οἰκουμένην
+            </div>
+            <div n="45" type="section">
+               <p>45. Αὕτη δὲ ἡ μεγάλη θάλασσα, ἡ τὴν ὅλην οἰκουμένην
 περιρρέουσα κοινῶ μὲν ὀνόματι ὠκεανὸς καλεῖται,
 <lb n="5"/> κατὰ κλίματα δὲ διαφόρους ἔχει ἐπωνυμίας. Ὁ
 μὲν γὰρ ὑπὸ ταῖς ἄρκτοις πᾶς μὲν ἀρκτικὸς καὶ βόρειος
@@ -770,11 +718,10 @@
 δύσιν, ἀφʼ οὗπερ ἡ καθʼ ἡμᾶς θάλασσα πληροῦται,
 Ἑσπέριος ὠκεανὸς, καὶ κατʼ ἐξοχὴν Ἀτλαντικὸν προσαγορεύεται
 πέλαγος.</p>
-</div>
-
-<div type="textpart" subtype="section" n="46">
-<pb n="507"/>
-<p>46. Ἡ δʼ ὑπὸ τούτων περιρρεομένη γῆ τριχῆ νενέμηται
+            </div>
+            <div n="46" type="section">
+               <pb n="507"/>
+               <p>46. Ἡ δʼ ὑπὸ τούτων περιρρεομένη γῆ τριχῆ νενέμηται
 ὑπὸ τῶν ἄριστα τὴν οἰκουμένην διελόντων, εἴς
 τε τὴν Εὐρώπην καὶ τὴν Ἀσίαν καὶ τὴν Λιβύην. Ὅροι
 δὲ τῆς μὲν Εὐρώπης πρὸς Λιβύην ὁ καθ᾿  Ἡρ??λέους
@@ -792,10 +739,9 @@
 Κασπίας θαλάσσης καὶ τοῦ Πόντου, τὴν δὲ Λιβύην τῷ
 μεταξὺ τοῦ Ἀραβίου κόλπου καὶ τῆς κατὰ τὸ Πηλούσιον
 θαλάσσης.</p>
-</div>
-
-<div type="textpart" subtype="section" n="47">
-<p>47. Αἱ μὲν ὁλοσχερεῖς τομαὶ τῆς οἰκουμένης εἰσὶ
+            </div>
+            <div n="47" type="section">
+               <p>47. Αἱ μὲν ὁλοσχερεῖς τομαὶ τῆς οἰκουμένης εἰσὶ
 <lb n="20"/> τοιαῦται. Τῶν δὲ ἐμφερομένων ἐν αὐτῇ πελάγων τὸ
 μὲν ἀπὸ δύσεως τῶν Ἰβηρικῶν ἄκρων ἐπʼ ἀνατολὴν ἄχρι
 τοῦ κατὰ τήν Κιλικίαν Ἰσσικοῦ κόλπου διῆκον, στάδιά
@@ -811,11 +757,10 @@
 δὲ ἐπὶ πορθμὸν πλείονες ἢ χίλιοι· δίαρμα δὲ ἐντεῦθεν
 ἐπὶ Στήλας μυρίοι καὶ γ. Ἀπὸ δὲ Στηλῶν ἐπὶ
 τὸ Ἱερὸν ἀκρωτήριον γ. Τοῦτο μὲν δὴ τὸ μῆκος.</p>
-</div>
-
-<div type="textpart" subtype="section" n="48">
-<pb n="508"/>
-<p>48. Τοῦ δὲ πελάγους πλάτος ἐστι τὸ μέγιστον σταδίων
+            </div>
+            <div n="48" type="section">
+               <pb n="508"/>
+               <p>48. Τοῦ δὲ πελάγους πλάτος ἐστι τὸ μέγιστον σταδίων
 ε, τὸ ἀπὸ τοῦ Γαλατικοῦ κόλπου, τοῦ μεταξὺ
 Νάρβῶνος καὶ Μασσαλίας, ἐπὶ τὴν καταντικρὺ Λιβύην.
 Ὀνομασίας δὲ ἔχει τὸ σύμπαν κατὰ τόπους
@@ -830,10 +775,9 @@
 δυτικωτέρα οὖσα τῆς ἑτέρας περίμετρον ἔχει σταδίων
 αχ΄, μίλια δὲ <del>ρζ΄</del> ἡ δὲ μείζων ε· ταύτης δὲ
 <lb n="15"/> βάθος α ἐστὶ καὶ φ΄, ὅσον καὶ τὸ πλάτος τοῦ στόματος.</p>
-</div>
-
-<div type="textpart" subtype="section" n="49">
-<p>49. Τὸ δὲ πρὸς τῇ Εὐρώπῃ πέλαγος πλείονας ἔχει
+            </div>
+            <div n="49" type="section">
+               <p>49. Τὸ δὲ πρὸς τῇ Εὐρώπῃ πέλαγος πλείονας ἔχει
 τὰς ἐπωνυμίας. Τὸ μὲν γὰρ πρῶτον ἀπὸ τῆς δύσεως
 Ἴβηρικὸν λέγεται, μετʼ ἐκεῖνο δέ ἐστιν ὁ κατὰ Μασσαλίκν
 Γαλατικὸς κόλπος. Εἶτα κατὰ
@@ -848,10 +792,10 @@
 α καὶ σ΄. Τούτου δὶ <del>τὰ δεξιὰ</del> Ἰλλυρίς ἐστι, τὰ
 δὲ εὐώνυμα ἡ Ἰταλία μέχρι τοῦ κατʼ Ἀκυληίαν μυχοῦ
 καὶ Πόλας.</p>
-</div>
-
-<div type="textpart" subtype="section" n="50">
-<lb n="30"/> <p>50. Μετὰ δὲ τὸ Σικελικὸν πέλαγος ἐκδέχεται τὸ
+            </div>
+            <div n="50" type="section">
+               <lb n="30"/>
+               <p>50. Μετὰ δὲ τὸ Σικελικὸν πέλαγος ἐκδέχεται τὸ
 Κρητικὸν, ᾧ συνάπτει τὸ Αἰγύπτιον, μεθʼ ὃ τὸ Φοινίκιον,
 εἶτ᾿ ἤδη ἐπὶ τὰς ἄρκτους παρεγκλίνει τὴν ἄνω
 Συρίαν καὶ τὴν Κιλικίαν παραξύον, μεθʼ ἃς ἐπὶ δύσιν
@@ -862,10 +806,9 @@
 πλάτος δὲ ᾗ πλατύτατον β. Μαθʼ ὃν συνάγεται εἰς
 στενὸν <del>ὁ</del> Ἑλλήσποντος, ἑπτὰ σταδίων ἔχων διάστημα
 <lb n="40"/> κατὰ Σηστὸν καὶ Ἄβυδον.</p>
-</div>
-
-<div type="textpart" subtype="section" n="51">
-<p>51. Εἶτα ἀπʼ αὐτοῦ πλατύνεται ἡ Προποντὶς, μῆκος
+            </div>
+            <div n="51" type="section">
+               <p>51. Εἶτα ἀπʼ αὐτοῦ πλατύνεται ἡ Προποντὶς, μῆκος
 μὲν ἔχουσα τὸ ἀπὸ τῆς Τρωάδος ἐπὶ τὸ Βυζάντιον σταδίων
 ,α καὶ φ΄,μιλίων δὲ [σ],πάρισον δέ πως καὶ πλά
 
@@ -878,20 +821,19 @@
 που καὶ φ΄ σταδίους, ὧν ἡ μὲν ἐπὸ τῆς Ἀσίας
 ἐπʼ ἄρκτους ἀνατείνουσα καλεῖται Κάραμβις, ἡ δὲ
 ἀπὸ τῆς Εὐρώπης πρὸς νότον Κριοῦ μέτωπον προσαγορεύεται.</p>
-</div>
-
-<div type="textpart" subtype="section" n="52">
-<lb n="10"/> <p>52. Καὶ τὰ μὲν ἀριστερὰ τοῦ Πόντου, ἅπερ ἐστὶ
+            </div>
+            <div n="52" type="section">
+               <lb n="10"/>
+               <p>52. Καὶ τὰ μὲν ἀριστερὰ τοῦ Πόντου, ἅπερ ἐστὶ
 πρὸς ἑσπέραν, μῆκος μὲν ἔχει ἀπὸ Βυζαντίου μέχρι
 τῶν ἐκβολῶν Βορυσθένους σταδίων γω΄, μιλίων δὲ<del>φζ΄</del>,
 πλάτος δὲ β· τὸ δὲ ἑῶον μέρος, ὅπερ ἐστὶ καὶ δεξιὸν
 τοῖς εἰσπλέουσι, μῆκος ἔχει ε ἢ μικρῷ πλέον ἀπὸ
 <lb n="15"/> τοῦ στόματος ἐπὶ τὸν κατὰ Διοσκουριάδα μυχὸν, πλάτος
 δὲ γ.</p>
-</div>
-
-<div type="textpart" subtype="section" n="53">
-<p>53. Ἡ δὲ περίμετρος τοῦ σύμπαντος Πόντου δισμύριά
+            </div>
+            <div n="53" type="section">
+               <p>53. Ἡ δὲ περίμετρος τοῦ σύμπαντος Πόντου δισμύριά
 ριά ἐστι καὶ ε, ἐοικυῖα Σκυθικῷ τόξῳ. Τὰ μὲν γὰρ
 δεξιὰ τῇ νευρᾷ παρομοιοῦσι, πάντοθεν γάρ ἐστιν ἰθυτενῆ
 <lb n="20"/> πλὴν τῆς ἀνεχούσης Καράμβεως, τὸ δὲ λοιπὸν
@@ -902,15 +844,13 @@
 <lb n="25"/> τὴν περίμετρον θ οὖσα σταδίων, ἧς τὸ στόμα Κιμμερικὸς
 καλεῖται Βόσπορος. Ἡ μὲν δὴ καθ᾿ ἡμᾶς
 θάλασσα τοιαύτη.</p>
-</div>
-</div>
-
-<div type="textpart" subtype="chapter" n="15">
-<head>ΑΠΟΣΠΑΣΜΑΤΑ.</head>
-<head>A.</head>
-
-<div type="textpart" subtype="section" n="1">
-<p>Τῶν δʼ εὐμεγεθῶν νήσων Σαρδὼ μὲν τὴν περίμετρον
+            </div>
+         </div>
+         <div n="15" type="chapter">
+            <head>ΑΠΟΣΠΑΣΜΑΤΑ.</head>
+            <head>A.</head>
+            <div n="1" type="section">
+               <p>Τῶν δʼ εὐμεγεθῶν νήσων Σαρδὼ μὲν τὴν περίμετρον
 ἔχει σταδίων δυμ΄, μιλίων φ<del>Ϟβ΄</del>, Κύρνος δὲ, ἣν Κορσικὴν
 <lb n="30"/> κὴν οἱ ἐπιχώριοι καλοῦσι, τὰ κύκλῳ ἔχει σταδίων δυμ΄
 Τῆς δὲ Κρήτης τὰ κύκλῳ ἐστὶ σταδίων δτ΄. Ἡ δὲ
@@ -924,10 +864,10 @@
 σταδίων ωκε΄, Κῶ δὲ νήσου σταδίων ώ. Χίος δὲ
 σταδίων αχ΄. Λέσβου δὲ τὰ κύκλῳ αρπ΄. Ἡ δὲ Σαμία
 νῆσος σταδίων ω΄.</p>
-</div>
-
-<div type="textpart" subtype="section" n="2">
-<lb n="5"/> <p>2. Μῆκος τῆς ὅλης γῆς ἀπὸ ἀνατολῶν εἰς δυσμάς
+            </div>
+            <div n="2" type="section">
+               <lb n="5"/>
+               <p>2. Μῆκος τῆς ὅλης γῆς ἀπὸ ἀνατολῶν εἰς δυσμάς
 φασι σταδίους ὀκτακισμυρίους. Τῆς δʼ ὅλης γῆς τὸ μέγιστον
 ἐχούσης κύκλῳ εἰς μυριάδας σταδίων κε, τὴν
 σύμπασαν αὐτῆς ἐπιφάνειαν λογιζόμενοι, τίθεμεν εἰς
@@ -935,26 +875,18 @@
 <lb n="10"/> οἰκουμένης ὡς τέταρτόν ἐστι τούτου. Μῆκος δὲ τοῦ
 παντὸς χύματος ἀφʼ Ἡρακλείων στηλῶν ἕως τῆς πρὸς
 ἀνατολαῖς Συρίας οὐ πολὺ λείπει τρισμυρίων σταδίων.</p>
-</div>
-
-<div type="textpart" subtype="section" n="3">
-<pb n="511"/>
-<p>3. Νάξος νῆσος<gap reason="omitted"/>. — Ἡ Μαραθὼν τῆς Ἀττικῆς σταδίους
+            </div>
+            <div n="3" type="section">
+               <pb n="511"/>
+               <p>3. Νάξος νῆσος<gap reason="omitted"/>. — Ἡ Μαραθὼν τῆς Ἀττικῆς σταδίους
 δίους τριακοσίους ἀπέχουσα τῆς πόλεως. Ἔστι δὲ ὁ
 Ἑλλήσποντος πορθμὸς, φερόμενος ἀπὸ τῆς Προποντίδος
 ἐπὶ τὸ Αἰγαῖον πέλαγος, ἔχων τὸ πλάτος σταδίων,
 <lb n="5"/> δίων ζ΄, ὃν ἔζευξε Ξέρξης. Ἔστι δὲ ἡ Σικελία νῆσος
 σταδίων τετρακισχιλίων ὀκτακοσίων ἔχουσα τὴν περίμετρον,
 μιλίων χμε΄.</p>
-</div>
-</div>
-
-
-
             </div>
-            
-            
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>
-

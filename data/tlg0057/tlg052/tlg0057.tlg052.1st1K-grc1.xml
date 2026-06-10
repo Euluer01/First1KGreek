@@ -1,97 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-	<teiHeader xml:lang="eng">    
-    
-		<fileDesc>
-			<titleStmt><title xml:lang="lat">De comate secundum Hippocratem</title>
-				<author>Galen</author>
-				<editor>Karl Gottlob Kühn</editor>
-				<funder>Andrew W. Mellon Foundation</funder>
-				<respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-				<authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De comate secundum Hippocratem</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
 					Foundation</authority>
-				<publisher>University of Leipzig</publisher>
-				<pubPlace>Germany</pubPlace>
-				<idno type="filename">tlg0057.tlg052.1st1K-grc1.xml</idno>
-				<availability>
-					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg052.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
 						Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-				</availability>
-				<date>2016</date>
-			</publicationStmt>
-			<sourceDesc>
-				<biblStruct>
-					<monogr>
-						<title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-						<author>Galen</author>
-						<editor>Karl Gottlob Kühn</editor>
-						<imprint>
-							<publisher>Knobloch</publisher>
-							<pubPlace>Lipsiae</pubPlace>
-							<biblScope unit="vol">7</biblScope>
-							<biblScope unit="pp" from="643" to="665">643-665</biblScope>
-							<date>1824</date>
-						</imprint>
-					</monogr>
-					<ref target="https://hdl.handle.net/2027/hvd.hxpp8n?urlappend=%3Bseq=655">HathiTrust</ref>
-				</biblStruct>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg052.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Lipsiae</pubPlace>
+                     <biblScope unit="vol">7</biblScope>
+                     <biblScope unit="pp" from="643" to="665">643-665</biblScope>
+                     <date>1824</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/hvd.hxpp8n?urlappend=%3Bseq=655">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
 				Architecture.</p>
-			  <refsDecl n="CTS">
-				<cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-			</refsDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="grc">Greek</language>
-			</langUsage>
-		</profileDesc>
-	</teiHeader>
-	<text>
-		<body>
-
-			<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg052.1st1K-grc1">
-				<pb n="643"/>
-
-				<div type="textpart" subtype="chapter" n="1">
-					<head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΤΟΥ ΠΑΡ’ ΠΙΠΟΚΡΑΤΕΙ <lb/>ΚΩΜΑΤΟΣ ΒΙΒΛΙΟΝ.</head>
-					<p>Τί ποτε σημαίνει τὸ τοῦ κώματος ὄνομα <lb/>παρ’ Ἱπποκράτει; πότερον τὴν εἰς ὕπνον
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg052.1st1K-grc1">
+         <pb n="643"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΤΟΥ ΠΑΡ’ ΠΙΠΟΚΡΑΤΕΙ <lb/>ΚΩΜΑΤΟΣ ΒΙΒΛΙΟΝ.</head>
+            <p>Τί ποτε σημαίνει τὸ τοῦ κώματος ὄνομα <lb/>παρ’ Ἱπποκράτει; πότερον τὴν εἰς ὕπνον
 						καταφορὰν, ὥς <lb/>τινες τῶν <milestone unit="ed2page" n="192"/>ἐξηγησαμένων ἔφασαν; ἢ
 						ὕπνον αὐτόν; ἢ, <lb/>καθάπερ ἄλλοι, τὴν ὑπνώδη καταφοράν; καὶ γὰρ καὶ οὕτως
 						<lb/>ὠνόμασάν τινες ἐν συνθέτῳ προσηγορίᾳ τὴν ἐξήγησιν ποιησάμενοι. <lb/>τινὲς δ’ οὐδὲν
@@ -100,10 +108,10 @@
 						μάλιστα καθ’. ἑτέρου <pb n="644"/> πράγματος ἐκεῖνοι τοὔνομα φέρουσιν, οὐδὲν κωλύει τὸν
 						Ἱπποκράτην <lb/>διαφερόντως χρῆσθαι. αὐτίκα παρὰ τῷ ποιητῇ <lb/>δόξειεν ἂν ὕπνον δηλοῦν
 						τοὔνομα·</p>
-					<l>Ἦ με μάλ’ αἰνοπαθῆ μαλακὸν περὶ κῶμ’ ἐκάλυψεν.</l>
-					<p>καὶ</p>
-					<l>— — ἐπεὶ αὐτῷ ἐγὼ μαλακὸν περὶ κῶμα κάλυψα.</l>
-					<p>ἀλλ’ οὐχ Ἱπποκράτης οὕτω φαίνεται χρώμενος, εἴγε καὶ μετὰ <lb/>ἀγρυπνίας πολλάκις τὸ
+            <l>Ἦ με μάλ’ αἰνοπαθῆ μαλακὸν περὶ κῶμ’ ἐκάλυψεν.</l>
+            <p>καὶ</p>
+            <l>— — ἐπεὶ αὐτῷ ἐγὼ μαλακὸν περὶ κῶμα κάλυψα.</l>
+            <p>ἀλλ’ οὐχ Ἱπποκράτης οὕτω φαίνεται χρώμενος, εἴγε καὶ μετὰ <lb/>ἀγρυπνίας πολλάκις τὸ
 						κῶμα γίγνεσθαί φησι καὶ φρενιτικοῖς <lb/>συνεδρεύειν. ἐν ἀρχῇ μὲν τοῦ προῤῥητικοῦ τάδε
 						γράφει· οἱ <lb/>κωματώδεες ἐν ἀρχῇσι γινόμενοι, μετὰ κεφαλῆς, ὀσφύος, <lb/>ὑποχονδρίου,
 						τραχήλου ὀδύνης, ἀγρυπνέοντες, ἆρά γε φρενιτικοί <lb/>εἰσιν; ἐν δὲ τῷ τρίτῳ τῶν
@@ -135,10 +143,10 @@
 						ἐφαίνετο. καί τις ἴσως ἔχειν ἤδη <lb/>τὸ πᾶν δόξειεν ἂν, ἀλλ’ ἂν βραχὺ περιμείνας ἀκούσῃ
 						ἐκ τοῦ <lb/>αὐτοῦ βιβλίου τοῦ τρίτου τῶν ἐπιδημιῶν ῥήσεων ἑτέρων, οὐχ <lb/>ὅπως τὸ πᾶν,
 						ἀλλ’ οὐδὲ τὸ ἥμισυ τοῦ παντὸς ἑαυτὸν εὑρήσει <lb/>γιγνώσκοντα. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="2">
-					<p>
-						<milestone unit="ed2page" n="193"/>Σκόπει οὖν, ἐπί τινος ἀῤῥώστου γυναικὸς <lb/>ἃ λέγει.
+         </div>
+         <div n="2" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="193"/>Σκόπει οὖν, ἐπί τινος ἀῤῥώστου γυναικὸς <lb/>ἃ λέγει.
 						ἑτέρην ἐξ ἀποφθορῆς περὶ πεντάμηνον, οἰκέτεω <lb/>γυναῖκα, πῦρ ἔλαβεν, ἀρχομένη δὲ
 						κωματώδης, καὶ πάλιν <pb n="647"/> ἄγρυπνος. φαίνεται γὰρ διαστέλλων κατ’ ἀντίθεσιν τὸ
 						κῶμα <lb/>τῆς ἀγρυπνίας, ὡς ἐναντία. αὖθις δ’ ἐν τῇ λοιμώδει καταστάσει,
@@ -253,9 +261,9 @@
 						ὑπνώδη, τὴν δὲ ἄγρυπνον <lb/>ἐκάλουν, καὶ τὴν μὲν ὑπνώδη ἰδίαν εἶναι τῶν ληθαργικῶν
 						<lb/>καὶ διαπαντὸς ὑπάρχειν αὐτοῖς, τὴν δὲ οὔτε ἰδίαν <lb/>εἶναι τῶν φρενιτικῶν οὔτε
 						ὑπάρχειν αὐτοῖς διαπαντός. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="3">
-					<p>Ἡ μὲν οὖν ὑπνώδης, ὅσον ἐπὶ τῷ παρόντι, <lb/>τοῖς ληθαργικοῖς συμπίπτει· τὴν δ’
+         </div>
+         <div n="3" type="chapter">
+            <p>Ἡ μὲν οὖν ὑπνώδης, ὅσον ἐπὶ τῷ παρόντι, <lb/>τοῖς ληθαργικοῖς συμπίπτει· τὴν δ’
 						ἄγρυπνον, ἥτις τοῖς φρενιτικοῖς <lb/>ἐπιγίγνεται, πειράσομαι διορίζειν, ἵνα δυνηθῇς
 						εὑρίσκειν <lb/>τὴν ὑφ’ Ἱπποκράτους εἰρημένην διαφοράν. οὐ γὰρ <lb/>ἦν τῶν ματαίως τὰ
 						ὀνόματα ἐπιτιθέντων οὗτος ὁ ἀνὴρ, οὔτ’ <lb/>ἀνοήτως πρόσκειται τῇ καταφορᾷ τὸ νωθρὰ,
@@ -345,9 +353,9 @@
 						τοιοῦτον; εἰ τοίνυν χρὴ κεφαλὴν <lb/>ἐπιδοῦναι τῷ λόγῳ, καὶ μήτ’ ἄλλος τις τῶν Ἑλλήνων
 						<lb/>οὕτω κέχρηται τῷ ἆρα συνδέσμῳ μήθ’ Ἱπποκράτης αὐτὸς, <lb/>ὡς ἐγὼ νῦν ἔδειξα,
 						μέμψαιτ’ ἄν τις, οἶμαι, τοὺς ἐξηγησαμένους <lb/>ὡς οὐκ ἀπορητικὸν σύνδεσμον. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="4">
-					<p>Καί τοι χαλεπώτερον ἐμαυτὸν τὸν λόγον <lb/>ἐπίσταμαι ποιεῖν. διωρισμένης γὰρ τῆς
+         </div>
+         <div n="4" type="chapter">
+            <p>Καί τοι χαλεπώτερον ἐμαυτὸν τὸν λόγον <lb/>ἐπίσταμαι ποιεῖν. διωρισμένης γὰρ τῆς
 						ὑπνώδους καταφορᾶς <lb/>ἀπὸ τῆς οὐχ ὑπνώδους φρενίτιδος, οὐκ ἂν ἔτι δεόντως ἀπορῶν
 						<lb/>φαίνοιτο καὶ μὴ βεβαίως ἀποφαινόμενος φρενιτικοὺς εἶναι <lb/>τοὺς τοιούτους. ἀλλ’
 						ἧττον γὰρ ἐμοὶ μέλει τῆς ἐν τοῖς λόγοις <lb/>χαλεπότητος ἢ τῆς ἀληθείας, ὅτι τε
@@ -359,7 +367,7 @@
 						γιγνόμενον. ὅταν μὲν κωματώδεις <lb/>ὦσι, καὶ σφάλλονται, καὶ βαρῶσι τὴν κεφαλὴν, καὶ
 						<lb/>μηδ’ εἰ βιάζοιντο διαίρειν δύνανται τὰ βλέφαρα· δι’ αὐτὸ <lb/>δ’ αὖ πάλιν τοῦτο τὸ
 						βάρος ὑπνοῦν ἀδυνατοῦσιν ἀσώμενοι, <lb/>
-						<milestone unit="ed2page" n="199"/>καὶ στρεφόμενοι, καὶ ῥιπτοῦντες ἑαυτοὺς, καὶ
+               <milestone unit="ed2page" n="199"/>καὶ στρεφόμενοι, καὶ ῥιπτοῦντες ἑαυτοὺς, καὶ
 						μεταβάλλοντες <lb/>ἄλλοτ’ εἰς ἄλλο σχῆμα. ταῦτα γὰρ ἔστιν ἰδεῖν πολλάκις <lb/>ἐπὶ τῶν
 						μεθυσθέντων γιγνόμενα, πληρωθείσης αὐτῶν <lb/>ἐν τῇ μέθῃ τῆς κεφαλῆς, εἶθ’ ὑπὸ τοῦ
 						βάρους ἅμα τ’ εἰς κῶμα <lb/>κατασπώσης ἅμα τε ὕπνον κωλυούσης. οὕτως οὖν καὶ πλήθους
@@ -374,8 +382,7 @@
 						ὕστερον ἔσεσθαι προσδοκᾷν, <lb/>τοῦθ’ ἑτέρας ἂν εἴη σκέψεως, οὔτ’ ὠφελούσης τι τὰ νῦν
 						προκείμενα, <lb/>καὶ ἄλλως διὰ τοῦ εἰσίν, ὃ καί τινες προσγράφουσι <lb/>τῷ ἆρα
 						φρενιτικοὶ, τινὲς δ’ οὔ. </p>
-				</div>
-			</div>
-		</body>
-	</text>
+         </div>
+      </body>
+   </text>
 </TEI>

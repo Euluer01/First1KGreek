@@ -1,97 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-	<teiHeader xml:lang="eng">    
-    
-		<fileDesc>
-			<titleStmt><title xml:lang="lat">De tumoribus praeter naturam</title>
-				<author>Galen</author>
-				<editor>Karl Gottlob Kühn</editor>
-				<funder>Andrew W. Mellon Foundation</funder>
-				<respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-				<authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De tumoribus praeter naturam</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
 					Foundation</authority>
-				<publisher>University of Leipzig</publisher>
-				<pubPlace>Germany</pubPlace>
-				<idno type="filename">tlg0057.tlg054.1st1K-grc1.xml</idno>
-				<availability>
-					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg054.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
 						Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-				</availability>
-				<date>2016</date>
-			</publicationStmt>
-			<sourceDesc>
-				<biblStruct>
-					<monogr>
-						<title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-						<author>Galen</author>
-						<editor>Karl Gottlob Kühn</editor>
-						<imprint>
-							<publisher>Knobloch</publisher>
-							<pubPlace>Lipsiae</pubPlace>
-							<biblScope unit="vol">7</biblScope>
-							<biblScope unit="pp" from="705" to="732">705-732</biblScope>
-							<date>1824</date>
-						</imprint>
-					</monogr>
-					<ref target="https://hdl.handle.net/2027/hvd.hxpp8n?urlappend=%3Bseq=717">HathiTrust</ref>
-				</biblStruct>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg054.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Lipsiae</pubPlace>
+                     <biblScope unit="vol">7</biblScope>
+                     <biblScope unit="pp" from="705" to="732">705-732</biblScope>
+                     <date>1824</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/hvd.hxpp8n?urlappend=%3Bseq=717">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
 				Architecture.</p>
-			  <refsDecl n="CTS">
-				<cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-			</refsDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="grc">Greek</language>
-			</langUsage>
-		</profileDesc>
-	</teiHeader>
-	<text>
-		<body>
-
-			<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg054.1st1K-grc1">
-				<pb n="705"/>
-
-				<div type="textpart" subtype="chapter" n="1">
-					<head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΤΩΝ ΠΑΡΑ ΦΥΣΙΝ <lb/>ΟΓΚΩΝ ΒΙΒΛΙΟΝ.</head>
-					<p>Ἕν τι τῶν συμβεβηκότων τοῖς σώμασιν <lb/>ὑπάρχει τὸ δηλούμενον πρᾶγμα πρὸς τῆς ὄγκου
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg054.1st1K-grc1">
+         <pb n="705"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΤΩΝ ΠΑΡΑ ΦΥΣΙΝ <lb/>ΟΓΚΩΝ ΒΙΒΛΙΟΝ.</head>
+            <p>Ἕν τι τῶν συμβεβηκότων τοῖς σώμασιν <lb/>ὑπάρχει τὸ δηλούμενον πρᾶγμα πρὸς τῆς ὄγκου
 						φωνῆς. τὴν <lb/>γὰρ εἰς μῆκος καὶ πλάτος καὶ βάθος διάστασιν οὕτως ὀνομάζουσιν
 						<lb/>Ἕλληνες. ἔστι δ’ ὅτε καὶ τὴν ὑπὲρ τὸ κατὰ φύσιν <lb/>αὔξησιν ὄγκον καλοῦσιν, ὅπερ
 						οὐ τοῖς νοσοῦσι μόνον <lb/>καθ’ ὁτιοῦν μόριον, ἀλλὰ καὶ τοῖς ὑγιαίνουσιν ὑπάρχει.
@@ -110,10 +118,10 @@
 						<lb/>τοὺς δ’ ἄλλους ὄγκους, ὅσοι κατὰ τὴν διάθεσιν αὐτῶν τῶν <pb n="707"/> σωμάτων, οὐ
 						μόνον τὴν ποσότητα πρώτην, τοῦ κατὰ φύσιν <lb/>ἐξεστήκασιν, ἤδη σκοπῶμεν, ἀπὸ φλεγμονῆς
 						ἀρξάμενοι. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="2">
-					<p>
-						<milestone unit="ed2page" n="313"/>Λέγεσθαι δὲ εἴθισται τοῖς Ἕλλησι <lb/>τοὔνομα τοῦτο
+         </div>
+         <div n="2" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="313"/>Λέγεσθαι δὲ εἴθισται τοῖς Ἕλλησι <lb/>τοὔνομα τοῦτο
 						κατὰ τῶν ἐν ὄγκῳ μείζονι μορίων <lb/>σαρκωδῶν, ἅμα τάσει καὶ ἀντιτυπίᾳ καὶ ὀδύνῃ
 						σφυγματώδει <lb/>καὶ θερμῇ καὶ μετ’ ἐρυθήματος· ἥτις δ’ ἐστὶν ἡ <lb/>αἰτία, δι’ ἣν ταῦτα
 						ἐγένετο τὰ συμπτώματα, μὴ ὅτι τοῖς <lb/>πολλοῖς, ἀλλ’ οὐδ’ αὐτοῖς τοῖς ἰατροῖς ἔγνωσται
@@ -216,11 +224,10 @@
 						τὰς ἀρτηρίας ἐν κύκλῳ ταῖς διαστολαῖς <lb/>αὐτῶν ἀνακείμεναι· κατὰ δὲ τὰς φλεγμονὰς
 						ἅπασαι πληροῦνται <lb/>τοῦ αἵματος, ἐκ μὲν τῶν ἀγγείων διιδρουμένου <lb/>κατὰ τοὺς
 						χιτῶνας αὐτῶν, ἐν παντὶ δὲ μορίῳ τῆς σαρκὸς <lb/>ἀναμιγνυμένου δροσοειδῶς. </p>
-				</div>
-				<pb n="715"/>
-
-				<div type="textpart" subtype="chapter" n="3">
-					<p>Ὅταν δὲ ἐν τῷ χρόνῳ κρατήσῃ μὲν ἡ φύσις, <lb/>πεφθῇ δὲ σύμπαν τὸ ῥεῦμα, καὶ γένηται
+         </div>
+         <pb n="715"/>
+         <div n="3" type="chapter">
+            <p>Ὅταν δὲ ἐν τῷ χρόνῳ κρατήσῃ μὲν ἡ φύσις, <lb/>πεφθῇ δὲ σύμπαν τὸ ῥεῦμα, καὶ γένηται
 						πύον, ἐκτὸς ὠθεῖται <lb/>τῆς σαρκὸς, ὑπὸ τῆς ἐν αὐτῇ δυνάμεως ἀποκριτικῆς τῶν
 						<lb/>ἀλλοτρίων. ἔνθα μὲν οὖν ἤτοι πόρος ἐστὶ φυσικὸς ἀξιόλογος, <lb/>οἷον ὀχετός τις
 						ἐκροῆς περιττωμάτων παρεσκευασμένος, <lb/>ἢ αὐτὸ τὸ χωρίον ἐνταῦθα ἀραιὸν, τοῦ πύου τὸ
@@ -244,9 +251,9 @@
 						<lb/>παρασκευαστικὰ πρὸς τὴν θεραπευτικήν εἰσι μέθοδον, ἐν ᾗ <lb/>τὰς διαθέσεις, οὐ τὰς
 						προσηγορίας αὐτῶν ἰώμεθα. τούτων <lb/>τοίνυν ἀεὶ μεμνημένους ἐπὶ τὰ λείποντα αὖθις τῶν
 						πραγμάτων <lb/>ἰτέον. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="4">
-					<p>Ὅταν ἀποδείρῃ τὰ σώματα τὸ πύον, ἀποστήσῃ <lb/>τε καὶ διαστήσῃ τῶν ὑποκειμένων τὰ
+         </div>
+         <div n="4" type="chapter">
+            <p>Ὅταν ἀποδείρῃ τὰ σώματα τὸ πύον, ἀποστήσῃ <lb/>τε καὶ διαστήσῃ τῶν ὑποκειμένων τὰ
 						περιέχοντα, κᾄπειτα <lb/>κενωθέντος αὐτοῦ καθ’ ὁντιναοῦν τρόπον, ἀδυνατήσει <lb/>τὰ
 						διαστάντα τὴν ἀρχαίαν ἀπολαβεῖν κατάστασιν, ὀνομάζεται <pb n="717"/> τὸ πάθος κόλπος. εἰ
 						δὲ μὴ ταχέως τις αὐτὸν θεραπεύσῃ, <lb/>τυλοῦται καὶ σκληρὸς γίνεται τῷ χρόνῳ, καὶ οὐχ
@@ -266,9 +273,9 @@
 						μελιτώδει, καὶ μυξώδει, καὶ ὀστοῖς, καὶ λίθοις, καὶ <lb/>πώροις, ὄνυξί τε καὶ θριξὶν, ἐν
 						ἀποστήμασιν εὑρίσκεται <lb/>παραπλήσια σώματα, καὶ μὴν καὶ ζῶα πολλάκις εὕρηνται,
 						<lb/>σχεδὸν ἅπασι τοῖς ἐκ σηπεδόνος ἔχουσι τὴν γένεσιν <lb/>ὁμοιότατα. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="5">
-					<p>Ἔστι δὲ καὶ ἡ σύριγξ ὀνομαζομένη στενὸς <lb/>καὶ προμήκης κόλπος, ὁμοίως τοῖς ἄλλοις
+         </div>
+         <div n="5" type="chapter">
+            <p>Ἔστι δὲ καὶ ἡ σύριγξ ὀνομαζομένη στενὸς <lb/>καὶ προμήκης κόλπος, ὁμοίως τοῖς ἄλλοις
 						κόλποις προστελλομένη <lb/>τε καὶ αὖθις ἀφισταμένη δι’ ἐπιῤῥοὴν περιττωμάτων, <lb/>ὥσπερ
 							<milestone unit="ed2page" n="317"/>ἐκεῖνοι. ἀθερώματα δὲ καὶ στεατώματα καὶ
 						<lb/>μελικηρίδας, ὅσα τε ἄλλα τοιαῦτα, τινὲς μὲν ἐν τοῖς ἀποστήμασι <lb/>τίθενται, τινὲς
@@ -279,9 +286,9 @@
 						ἄνθρακες, καὶ <lb/>γάγγραιναι, καὶ ἕρπητες, ἐρυσιπέλατά τε καὶ σκίῤῥοι, καὶ
 						<lb/>οἰδήματα, καὶ καρκῖνοι, καὶ πνευματώσεις, ὑπὲρ ὧν οὐδ’ <lb/>αὐτῶν ἀγνοεῖν χρὴ τὸν
 						ἰατρὸν, ἀλλ’ ἀκριβῶς ἐπισκέπτεσθαι <lb/>τήν τε γένεσιν ἑκάστου καὶ τὴν οὐσίαν. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="6">
-					<p>Αἱ μὲν δὴ γάγγραιναι καὶ οἱ ἄνθρακες, <lb/>ἐπειδὰν οἷον ζέσαν τὸ αἷμα ἐγγύς τε τῆς
+         </div>
+         <div n="6" type="chapter">
+            <p>Αἱ μὲν δὴ γάγγραιναι καὶ οἱ ἄνθρακες, <lb/>ἐπειδὰν οἷον ζέσαν τὸ αἷμα ἐγγύς τε τῆς
 						φλεγμονῆς διακαύσῃ <lb/>τὸ δέρμα. ταῦτ’ ἄρα καὶ σὺν ἐσχάρᾳ γίγνονται, καὶ φλύκταιναι
 						<lb/>προηγοῦνται τοῦ ἕλκους, ὥσπερ ἐν τοῖς πυρικαύστοις, <lb/>ὀξύτατόν τε πυρετὸν
 						ἐπιφέρουσι, καὶ κίνδυνον ὑπόγυιον ἀμφὶ <lb/>τῇ ζωῇ. μέλαινα δὲ τοὐπίπαν καὶ τεφρώδης ἡ
@@ -292,17 +299,17 @@
 						πίττα. τοιαύτη δέ ἐστι καὶ ἀκριβὴς ﻿<pb n="720"/> μέλαινα χολή. καὶ τοίνυν καὶ ἡ
 						κακοήθεια τῶν ἐν τοῖς ἄνθραξιν <lb/>ἑλκῶν ἐντεῦθέν ἐστιν. ἔοικε γὰρ ἤτοι γε ἐξ ἀρχῆς
 						<lb/>εὐθέως, ἢ ὑπεροπτώμενον ἐν τῇ ζέσει τὸ αἷμα μελαγχολικὸν <lb/>γίνεσθαι. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="7">
-					<p>Χωρὶς δὲ τοῦ ζεῖν ἡ μέλαινα χολὴ τοὺς καρκίνους <lb/>ἐργάζεται, καὶ ἢν δριμυτέρα τύχῃ,
+         </div>
+         <div n="7" type="chapter">
+            <p>Χωρὶς δὲ τοῦ ζεῖν ἡ μέλαινα χολὴ τοὺς καρκίνους <lb/>ἐργάζεται, καὶ ἢν δριμυτέρα τύχῃ,
 						μεθ’ ἕλκους. ταῦτ’ <lb/>ἄρα καὶ μελάντεροι τῇ χροιᾷ τῶν φλεγμαινόντων εἰσὶ, καὶ
 						<lb/>ἥκιστα θερμοί. πληροῦνται δὲ αἱ φλεβὲς ἐπ’ αὐτῶν καὶ τείνονται <lb/>μᾶλλον ἢ ἐν
 						ταῖς φλεγμοναῖς. ἧττον γὰρ ἐκπίπτει <lb/>τῶν ἀγγείων εἰς τὴν πέριξ σάρκα διὰ πάχος ὁ
 						γεννῶν τοὺς <lb/>καρκίνους χυμός. οὐ μὴν οὐδὲ ἐρυθραὶ καθάπερ ἐν ταῖς <lb/>φλεγμοναῖς αἱ
 						φλέβες εἰσὶν, ἀλλὰ καὶ αὐταὶ κατὰ τὸν λυποῦντα <lb/>χυμόν. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="8">
-					<p>Ἕπεται δὲ ταῖς μεγάλαις φλεγμοναῖς ἡ <lb/>καλουμένη γάγγραινα, νέκρωσίς τε οὖσα τοῦ
+         </div>
+         <div n="8" type="chapter">
+            <p>Ἕπεται δὲ ταῖς μεγάλαις φλεγμοναῖς ἡ <lb/>καλουμένη γάγγραινα, νέκρωσίς τε οὖσα τοῦ
 						πάσχοντος <lb/>μορίου. κᾂν μὴ διὰ ταχέων τις αὐτὴν ἰάσηται, νεκροῦται <lb/>ῥᾳδίως τὸ
 						παθὸν οὕτω μόριον, ἐπιλαμβάνει τε τὰ <lb/>συνεχῆ καὶ ἀποκτείνει τὸν ἄνθρωπον. ἐπειδὰν
 						γὰρ ἰσχυρῶς <lb/>φραχθῇ κατὰ τὰς μεγίστας φλεγμονὰς τά τε στόματα <pb n="721"/> τῶν
@@ -320,11 +327,11 @@
 						διὰ τὴν φλεγμονήν. ὅταν δὲ <lb/>καὶ αὐτὸς ὁ χιτὼν ἤδη φλεγμαίνῃ, πλήττουσά τε ἅμα καὶ
 							<pb n="722"/> πληττομένη διπλασιάζει τὴν ὀδύνην. περὶ μὲν δὴ τούτων <lb/>αὐτάρκως
 						εἴρηται. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="9">
-					<p>Λεκτέον δὲ ἐφεξῆς τὰ χολώδη ῥεύματα. <lb/>νενίκηκε γὰρ οὐκ οἶδ’ ὅπως τὸ τῶν ἰατρῶν
+         </div>
+         <div n="9" type="chapter">
+            <p>Λεκτέον δὲ ἐφεξῆς τὰ χολώδη ῥεύματα. <lb/>νενίκηκε γὰρ οὐκ οἶδ’ ὅπως τὸ τῶν ἰατρῶν
 						ἔθος, ἄν τε χολὴν <lb/>ὀνομάσωμεν ἁπλῶς ἄν τε χολώδη χυμὸν, ἀκούειν ἡμᾶς <lb/>
-						<milestone unit="ed1page" n="356"/>τὴν ὠχρὰν καὶ πικρὰν, οὐ τὴν ὀξεῖαν καὶ μέλαιναν.
+               <milestone unit="ed1page" n="356"/>τὴν ὠχρὰν καὶ πικρὰν, οὐ τὴν ὀξεῖαν καὶ μέλαιναν.
 						<lb/>ἐκείνην γὰρ ἀεὶ μετὰ προσθήκης ὀνομάζουσι, συνάπτοντες τῇ <lb/>προσηγορίᾳ τοῦ χυμοῦ
 						τὴν χρόαν. ὅταν οὖν κατασκήψῃ χολῶδες <lb/>ῥεῦμα, τὸ μὲν ἀκριβὲς ἑλκοῖ τὸ δέρμα, τὸ δὲ
 						ὑδατώδεσιν <lb/>ἰχῶρσιν ἢ αἵματι συμμιγὲς ἧττόν ἐστι δριμὺ καὶ μᾶλλον <lb/>εἰς ὄγκον
@@ -353,17 +360,17 @@
 						ἀμφοῖν <lb/>ὁ μείζων τοῦ κατὰ φύσιν ὄγκος ἀνώδυνός τε καὶ σκληρὸς, ἥ τε <lb/>γένεσις
 						ἀμφοτέρων ἐνίοτε μὲν ἐξ ἀρχῆς, ἔστιν ὅτε δὲ ἐκ μεταπτώσεως <lb/>ἤτοι φλεγμονῆς, ἢ
 						ἐρυσιπελάτων, ἢ οἰδήματος, <lb/>ἐμψυχθέντων ἀμετρότερον. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="10">
-					<p>Ἐγγὺς δ’ ἐστὶ σκίῤῥου τά τε ἐκχυμώματα <lb/>καλούμενα καὶ τὰ μελάσματα, πρεσβύταις
+         </div>
+         <div n="10" type="chapter">
+            <p>Ἐγγὺς δ’ ἐστὶ σκίῤῥου τά τε ἐκχυμώματα <lb/>καλούμενα καὶ τὰ μελάσματα, πρεσβύταις
 						μάλιστα συμβαίνοντα <lb/>θλασθεισῶν τῶν φλεβῶν. ἔστι δὲ καὶ τούτων <lb/>ἔνια μὲν, ὡς
 						εἴρηται, μέλανα, καὶ μάλιστα γέρουσι γίγνεται <lb/>ταῦτα, διὰ σμικρὰς προφάσεις· ἔνιοι
 						δὲ καὶ ἐρυθροὶ <lb/>καὶ μέλανες ἐν τῷ μεταξὺ, τὰ καλούμενα πελιδνά. ﻿<pb n="725"/>
 						γίγνεται δ’ ἅπαντα τὰ τοιαῦτα ἐκ τῶν φλεβῶν αἵματος ἐκχεομένου, <lb/>ποτὲ μὲν διὰ τῶν
 						χιτώνων θλασθέντων, ἔστι δ’ <lb/>ὅτε ἀναστομωθέντων κατὰ τὸ πέρας. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="11">
-					<p>Ἀρτηρίας δ’ ἀναστομωθείσης τὸ πάθος <lb/>ἀνεύρυσμα καλεῖται. γίγνεται δὲ τρωθείσης
+         </div>
+         <div n="11" type="chapter">
+            <p>Ἀρτηρίας δ’ ἀναστομωθείσης τὸ πάθος <lb/>ἀνεύρυσμα καλεῖται. γίγνεται δὲ τρωθείσης
 						αὐτῆς, ἐπειδὰν <lb/>εἰς οὐλὴν μὲν ἀφίκηται τὸ προσκείμενον αὐτῇ δέρμα, μένῃ <lb/>δὲ τῆς
 						ἀρτηρίας ἕλκος μήτε συμφυθείσης μήτε συνουλωθείσης <lb/>μήτε σαρκὶ φραχθείσης.
 						διαγινώσκεται δὲ τὰ τοιαῦτα <lb/>παθήματα τῶν σφυγμῶν τῶν ἐργασαμένων ἀρτηριῶν, ἀλλὰ
@@ -381,20 +388,20 @@
 						σφακελῶν ὑπάρχουσα, προσηγορίαν δὲ ἰδίαν <lb/>ἐξαίρετον ἐπὶ τῇ κοινῇ κεκτημένη. ταῦτ’
 						οὖν αὐτάρκως διώρισται, <lb/>καὶ λέγειν ἤδη καιρὸς περὶ τῶν μελαγχολικῶν <lb/>ῥευμάτων.
 					</p>
-				</div>
-				<div type="textpart" subtype="chapter" n="12">
-					<p>Ὅταν δὲ εἰς σάρκα μέλαινα κατασκήψῃ <lb/>χολὴ, δακνώδης μὲν οὖσα διαβιβρώσκει τὸ
+         </div>
+         <div n="12" type="chapter">
+            <p>Ὅταν δὲ εἰς σάρκα μέλαινα κατασκήψῃ <lb/>χολὴ, δακνώδης μὲν οὖσα διαβιβρώσκει τὸ
 						περικείμενον <lb/>
-						<milestone unit="ed2page" n="320"/>δέρμα, καὶ ἕλκος ἐργάζεται· μετριωτέρα δὲ ὑπάρχουσα,
+               <milestone unit="ed2page" n="320"/>δέρμα, καὶ ἕλκος ἐργάζεται· μετριωτέρα δὲ ὑπάρχουσα,
 						<lb/>τὸν χωρὶς ἑλκώσεως ἀποτελεῖ καρκῖνον. εἴρηται δὲ ἔμπροσθεν <lb/>ὅτι καὶ τὰς φλέβας
 						ἐξαίρει μειζόνως τῶν φλεγμονῶν, ὁποῖόν <lb/>τε τὸ εἶδος αὐτῶν τῆς χρόας ἐστίν. οὐ μόνον
 						δὲ τὸ καρκινῶδες <lb/>ἕλκος, ἀλλὰ καὶ ἄλλα πολλὰ σὺν ὄγκοις τῶν περιεχόντων <lb/>αὐτὰ
 						συνίσταται σωμάτων, ἔγγονα σύμπαντα κακοχυμίας, <pb n="727"/> ἤτοι πικροχολίας τινὸς, ἢ
 						μελαγχολικῆς, ἢ καί πως ἄλλως <lb/>ἰώδους τε καὶ μοχθηρᾶς ἐκ διαφθορᾶς μείζονος
 						ὑποτραφείσης. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="13">
-					<p>Ὅσα δὲ ἐν αὐτοῖς ἐπινέμεται καὶ τῶν πέριξ <lb/>ἅπτεται διαβιβρώσκοντα τὸ περιέχον ὑγιὲς
+         </div>
+         <div n="13" type="chapter">
+            <p>Ὅσα δὲ ἐν αὐτοῖς ἐπινέμεται καὶ τῶν πέριξ <lb/>ἅπτεται διαβιβρώσκοντα τὸ περιέχον ὑγιὲς
 						σῶμα, ταῦτα σύμπαντα <lb/>φαγεδαινικὰ προσαγορεύεται· τὰ δ’ ἐξ ἀμφοῖν σύνθετα, <lb/>τοῦ
 						τε ἕλκους αὐτοῦ καὶ τοῦ πέριξ ὄγκου, φαγέδαιναν ὀνομάζουσιν. <lb/>ἐπινέμεται μὲν οὖν καὶ
 						ὁ ἕρπης ἀναβιβρώσκων τὰ <lb/>πέριξ, ἀλλ’ ἔστι μόνον τοῦ δέρματος ἕλκωσις, ἡ φαγέδαινα
@@ -402,9 +409,9 @@
 						καλεῖν ἕλκη περιττόν· ἀρκεῖ γὰρ ἅπαντα <lb/>κοινῇ κακοήθη προσαγορεύειν. ἔστι δὲ καὶ ἡ
 						ψώρα καὶ ἡ λέπρα <lb/>μελαγχολικὰ πάθη μόνου τοῦ δέρματος, ὡς εἴγε κᾀν ταῖς <lb/>φλεψὶ
 						καὶ τῇ σαρκὶ γίγνοιτο, καρκῖνος ὀνομάζεται. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="14">
-					<p>Μελαγχολικὸν δὲ πάθος καὶ ὁ ἐλέφας ἐστὶ, <lb/>τὴν μὲν πρώτην γένεσιν ἐξ αἵματος ἴσχων
+         </div>
+         <div n="14" type="chapter">
+            <p>Μελαγχολικὸν δὲ πάθος καὶ ὁ ἐλέφας ἐστὶ, <lb/>τὴν μὲν πρώτην γένεσιν ἐξ αἵματος ἴσχων
 						μελαγχολικοῦ, τῷ <lb/>χρόνῳ δὲ πλείων ἡ μέλαινα γίνεται τοῦ αἵματος, ἡνίκα δυσώδεις
 						<lb/>εἰσὶ καὶ ἀπεχθεῖς ἰδεῖν, ἐνίοις δὲ αὐτῶν καὶ ἕλκη συμπίπτει. <pb n="728"/> τοῦτο τὸ
 						πάθος ἀρχόμενον ὀνομάζουσι σατυριασμὸν, <lb/>ἐπειδὴ τοῖς σατύροις ὅμοιοι γίγνονται τὸ
@@ -412,9 +419,9 @@
 						<lb/>γίγνονται δὲ καὶ κατ’ ἄλλα μόρια τοιαῦται τῶν ὀστῶν ἐξοχαὶ, <lb/>καὶ καλοῦσιν αὐτὰς
 						ἐξοστώσεις ἔνιοι, καθάπερ καὶ τὰς κατὰ <lb/>φύσιν ἐντάσεις τῶν αἰδοίων μὴ καθισταμένας
 						τινὲς ὀνομάζουσι <lb/>σατυριασμὸν, τινὲς δὲ πριαπισμόν. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="15">
-					<p>Ἔστι δὲ καὶ ὁ ἀχὼρ ἕλκος μικρὸν ἐν τῷ <lb/>δέρματι τῆς κεφαλῆς, εἰκάσαις δὲ αὐτὸ
+         </div>
+         <div n="15" type="chapter">
+            <p>Ἔστι δὲ καὶ ὁ ἀχὼρ ἕλκος μικρὸν ἐν τῷ <lb/>δέρματι τῆς κεφαλῆς, εἰκάσαις δὲ αὐτὸ
 						φλέγματος ἁλμυροῦ <lb/>καὶ νιτρώδους ἔκγονον ὑπάρχειν. ἐκρεῖ γοῦν αὐτοῦ τις ἰχὼρ
 						<lb/>οὔθ’ ὑδατώδης ἁπλῶς οὔτ’ ἤδη παχὺς ὥσπερ τὸ μέλι, καθάπερ <lb/>ἐν τοῖς κηρίοις
 						ὀνομαζομένοις. καὶ γὰρ καὶ ταῦτα σὺν <lb/>ὄγκῳ τινὶ καὶ κατατρήσεσι πλείοσι <milestone unit="ed1page" n="357"/>γίγνεται, μελιτώδους <lb/>ἐκρέοντος ὑγροῦ. μικρὸς δὲ καὶ
@@ -437,9 +444,9 @@
 						λεγομένης συλλαβῆς, οὐ διὰ τοῦ α΄, καθάπερ ὑπὸ <lb/>τῶν Ἀθηναίων. ὥσπερ δὲ τῶν εἰρημένων
 						ὀνομάτων ἕκαστον ﻿<pb n="730"/> ἐνδείκνυται τοῦ μέρους τὸ νόσημα καθ’ οὗ λέγεται, οὕτω
 						καὶ <lb/>ἡ κιρσοκήλη νεώτερον ὄνομα δηλοῖ τὸ πάθος ἐφ’ οὗ λέλεκται. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="16">
-					<p>Κιρσοὺς δὲ καὶ τὰς ἄλλας ἁπάσας φλέβας <lb/>εὐρυνομένας ὀνομάζουσιν οἱ παλαιοί. κιρσοὺς
+         </div>
+         <div n="16" type="chapter">
+            <p>Κιρσοὺς δὲ καὶ τὰς ἄλλας ἁπάσας φλέβας <lb/>εὐρυνομένας ὀνομάζουσιν οἱ παλαιοί. κιρσοὺς
 						δὲ καὶ ταύτας <lb/>οἱ νεώτεροι καλοῦσιν ἰατροὶ, τὸ ι΄ στοιχεῖον μετὰ τοῦ κ΄
 						<lb/>στοιχείου τιθέντες, οὐ καθάπερ οἱ Ἀθηναῖοι. γίνονται δὲ <lb/>καὶ κατὰ τὰ σκέλη
 						κιρσοὶ διὰ ἀῤῥωστίαν τῶν τῇδε φλεβῶν, <lb/>καὶ μᾶλλον ὅταν αἷμα παχὺ πλεονάζῃ κατὰ τὸ
@@ -456,10 +463,10 @@
 						ἀποστήματα <lb/>καὶ ὅσα τοιαῦτα. κατὰ δὲ τοὺς ὑδερικοὺς ἀθροίζεται <lb/>ταύτῃ πλῆθος,
 						ὑδατῶδες μὲν ἐν τοῖς ἀσκίταις, πνευματῶδες <lb/>δὲ ἐν τοῖς τυμπανίταις, φλεγματῶδες δὲ
 						ἐν τοῖς ἀνὰ σάρκα <lb/>καὶ λευκοφλεγματίαις ὀνομαζομένοις. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="17">
-					<p>
-						<milestone unit="ed2page" n="322"/>Ἤδη δὲ καὶ ἄλλοι τινὲς ὄγκοι τετυχήκασιν <lb/>ἰδίων
+         </div>
+         <div n="17" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="322"/>Ἤδη δὲ καὶ ἄλλοι τινὲς ὄγκοι τετυχήκασιν <lb/>ἰδίων
 						ὀνομάτων, οὐδὲν ἐξαίρετον ἔχοντες, οἷον ἐπουλίδες <lb/>τε καὶ παρουλίδες, καὶ θύμοι, καὶ
 						τἄλλα ὅσα τοιαῦτα <lb/>σαρκώδη βλαστήματα. καθάπερ γε πάλιν αἱ σταφυλαὶ καὶ <lb/>τὰ
 						παρίσθμια καὶ αἱ ἀντιάδες οὐκ ἄλλό τι ἢ φλεγμοναί <lb/>εἰσιν, αἱ μὲν σταφυλαὶ τοῦ
@@ -477,8 +484,7 @@
 						τοιούτων ἁπάντων, ὅσα <lb/>κατὰ τοὺς ὀφθαλμοὺς συνίσταται πάθη, δι’ ἑτέρου. καιρὸς
 						<lb/>οὖν ἤδη παύειν ἐν τῷδε τὸν λόγον, οὐδὲ μιᾶς ἔτι τῶν παρὰ <lb/>φύσιν ὄγκων ἰδέας
 						ἀῤῥήτου καταλελειμμένης. </p>
-				</div>
-			</div>
-		</body>
-	</text>
+         </div>
+      </body>
+   </text>
 </TEI>

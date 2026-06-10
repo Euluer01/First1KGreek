@@ -1,112 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-        <fileDesc>
-            <titleStmt>
-                <title xml:lang="lat">De nervorum dissectione</title>
-                <author>Galen</author>
-                <editor>Karl Gottlob Kühn</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De nervorum dissectione</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0057.tlg014.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg014.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-                        <author>Galen</author>
-                        <editor>Karl Gottlob Kühn</editor>
-                        <imprint>
-                            <publisher>Knobloch</publisher>
-                            <pubPlace>Leipzig</pubPlace>
-                            <biblScope unit="vol">2</biblScope>
-                            <biblScope unit="pp" from="831" to="856">831-856</biblScope>
-                            <date>1821</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://archive.org/stream/hapantaoperaomni02galeuoft#page/830/mode/2up">Internet Archive</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg014.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Leipzig</pubPlace>
+                     <biblScope unit="vol">2</biblScope>
+                     <biblScope unit="pp" from="831" to="856">831-856</biblScope>
+                     <date>1821</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://archive.org/stream/hapantaoperaomni02galeuoft#page/830/mode/2up">Internet Archive</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-                <language ident="eng">English</language>
-                <language ident="lat">Latin</language>
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg014.1st1K-grc1">
-                <pb n="831"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΝΕΥΡΩΝ ΑΝΑΤΟΜΗΣ <lb/>ΒΙΒΛΙΟΝ.</head>
-                    <p>Ὅτι μὲν οὐδὲν τῶν τοῦ ζώου μορίων οὔτε <lb/>κίνησιν, ἣν προαιρετικὴν
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="eng">English</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg014.1st1K-grc1">
+         <pb n="831"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΝΕΥΡΩΝ ΑΝΑΤΟΜΗΣ <lb/>ΒΙΒΛΙΟΝ.</head>
+            <p>Ὅτι μὲν οὐδὲν τῶν τοῦ ζώου μορίων οὔτε <lb/>κίνησιν, ἣν προαιρετικὴν
                         ὀνομάζομεν, οὔτε αἴσθησιν ἔχει <lb/>χωρὶς νεύρου, καὶ ὡς, εἰ τμηθείη τὸ
                         νεῦρον, ἀκίνητόν τε <lb/>καὶ ἀναίσθητον εὐθέως γίνεται τὸ μόριον, ὡμολόγηται
                         πᾶσι <lb/>τοῖς ἰατροῖς. ὅτι δὲ καὶ ἡ ἀρχὴ τῶν νεύρων ἐστὶν ὁ ἐγκέφαλος,
                         <lb/>ὥσπερ καὶ τοῦ νωτιαίου μυελοῦ, καὶ ὅτι τὰ μὲν <lb/>ἐξ αὐτοῦ τοῦ
                         ἐγκεφάλου, τὰ δὲ ἐκ τοῦ νωτιαίου πέφυκεν, <lb/>οὐ πᾶσιν ἐγνώσθη, καίτοι τό
                         γε κατὰ τὰς ἀνατομὰς φαινόμενον <lb/>τοῦτον ἔχει τὸν τρόπον. </p>
-                </div>
-                <pb n="832"/>
-
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>Αὐταὶ μὲν αἱ ἐμπρόσθιαι κοιλίαι αἱ κατὰ τὸν <lb/>ἐγκέφαλον εἰς τὸ πρόσω
+         </div>
+         <pb n="832"/>
+         <div n="2" type="chapter">
+            <p>Αὐταὶ μὲν αἱ ἐμπρόσθιαι κοιλίαι αἱ κατὰ τὸν <lb/>ἐγκέφαλον εἰς τὸ πρόσω
                         φερόμεναι στενοῦνται κατὰ βραχὺ <lb/>κώνου σχήματι παραπλησίως, ἄχρι περ ἂν
                         ἐπὶ τὴν ἀρχὴν <lb/>ἀφίκωνται τῆς ῥινὸς, ἀλλήλαις παρακείμεναί τε καὶ
                         ψαύουσαι <lb/>διὰ παντὸς, ὡς μηδὲν εἶναι μέσον αὐτῶν, ὅτι μὴ τὴν <lb/>λεπτὴν
@@ -130,17 +136,16 @@
                         <lb/>τῆς ἐνεργείας τοὔνομα θέμενοι. καὶ πρώτην γε ταύτην συζυγίαν
                         <lb/>ἀριθμοῦσιν τῶν ἀπ’ ἐγκεφάλου νεύρων, ἁπασῶν τῶν <lb/>ἄλλων οὖσαν
                         μαλακωτάτην. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>Ἑτέρα δ’ ἐφεξῆς ἐστι συζυγία τοῖς κινοῦσι <lb/>τοὺς ὀφθαλμοὺς μυσὶ
+         </div>
+         <div n="3" type="chapter">
+            <p>Ἑτέρα δ’ ἐφεξῆς ἐστι συζυγία τοῖς κινοῦσι <lb/>τοὺς ὀφθαλμοὺς μυσὶ
                         διανεμομένη, σκληροτέρα τε καὶ μικροτέρα <lb/>πολλῷ τῆς προειρημένης, καὶ
                         διεκπίπτει γε τοῦ <lb/>κρανίου παραπλήσιον ἐκείνοις, ὀστῷ λεπτοτάτῳ
                         <lb/>διοριζομένη. </p>
-                </div>
-                <pb n="834"/>
-
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>Παράκειταί δὲ αὐτῇ κατὰ τὴν τοῦ κρανίου <lb/>φορὰν, οὐ μὴν κατὰ τὴν πρώτην
+         </div>
+         <pb n="834"/>
+         <div n="4" type="chapter">
+            <p>Παράκειταί δὲ αὐτῇ κατὰ τὴν τοῦ κρανίου <lb/>φορὰν, οὐ μὴν κατὰ τὴν πρώτην
                         ἔκφυσιν, τρίτη τῶν νεύρων <lb/>συζυγία. καλοῦσι δ’ αὐτὰ μαλακὰ, πάμπολλα
                         φαινόμενα <lb/>κατὰ τὴν πρώτην ῥίζαν εὐθὺς, εἰ προσέχεις τὸν νοῦν
                         <lb/>αὐτοῖς ἀκριβῶς, ὡς ἀμελέστερόν γε θεωμένῳ πάντα ἕν σοι <lb/>δόξει.
@@ -149,9 +154,9 @@
                         φαίνεται τοιαῦτα, <lb/>διότι πλείονα τὸν ἀριθμὸν ὄντα καὶ θριξὶν ὁμοίως
                         λεπτὰ <lb/>κατ’ ἀλλήλων ἐπίκεινται χωρὶς τοῦ πεπιλῆσθαί τε καὶ
                         <lb/>καταπεπλέχθαι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>Βραχὺ δὲ αὐτῶν οὖσα σκληροτέρα τῶν ἀπ’ <lb/>ἐγκεφάλου νεύρων ἡ τετάρτη
+         </div>
+         <div n="5" type="chapter">
+            <p>Βραχὺ δὲ αὐτῶν οὖσα σκληροτέρα τῶν ἀπ’ <lb/>ἐγκεφάλου νεύρων ἡ τετάρτη
                         συζυγία μετὰ τὴν ἔκφυσιν <lb/>εὐθέως ἀναμίγνυται τῇ τρίτῃ, καὶ
                         συνδιεξέρχεται πρώτην <lb/>μὲν τὴν παχεῖαν μήνιγγα, μετὰ ταῦτα δὲ ἤδη καὶ τὸ
                         κατὰ <lb/>τὴν κεφαλὴν ὀστοῦν εἶτ’ αὖθις ἀποχωρίζεται πρὸς τὴν <lb/>ὑπερῴαν
@@ -171,7 +176,7 @@
                         <lb/>ἀριστεροῖς μέρεσιν, ἀκριβῶς. ἀλλήλοις ἴσα τὸ μέγεθος. <pb n="836"/>
                         ὅπως μὲν οὖν ταῦτα τὰ νεῦρα φέρεται διά τε τοῦ τραχήλου <lb/>καὶ τοῦ θώρακος
                         εἰς τὰ κάτω τῶν φρενῶν χωρία, <lb/>
-                        <milestone unit="ed2page" n="243"/>καὶ τίς αὐτῶν ἡ νομὴ, προϊὼν ὁ λόγος
+               <milestone unit="ed2page" n="243"/>καὶ τίς αὐτῶν ἡ νομὴ, προϊὼν ὁ λόγος
                         ἐξηγήσεται· <lb/>νῦν δὲ ἐπὶ τὰ λοιπὰ μόρια τῆς τρίτης συζυγίας ἀνέλθωμεν.
                         <lb/>ἐκπίπτουσα γὰρ τοῦ κρανίου ψαύει μὲν τῆς δευτέρας, οὐ <lb/>μὴν
                         ἀναμίγνυται ταύτῃ, καθάπερ ἄλλαι τινὲς μίγνυνται, <lb/>σχίζεται δὲ
@@ -194,9 +199,9 @@
                         <lb/>τομή. λέλεκται δὲ καὶ περὶ τῆς δ΄, ἣν ὀρθῶς ὁ Μαρῖνος <lb/>εὗρεν
                         ἀποχωριζομένην τῆς τρίτης, ἐπί τε τὴν ὑπερῴαν <lb/>ἀφικνουμένην, ἣν ἐν ταῖς
                         ἀνατομικαῖς ἐγχειρήσεσιν <lb/>λέγομεν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>Ἔστι δὲ καὶ ἄλλη συζυγία νεύρων, ἥν <lb/>Μαρῖνος ὀνομάζει πέμπτην, καίτοι γε
+         </div>
+         <div n="6" type="chapter">
+            <p>Ἔστι δὲ καὶ ἄλλη συζυγία νεύρων, ἥν <lb/>Μαρῖνος ὀνομάζει πέμπτην, καίτοι γε
                         οὐκ ἐκ μιᾶς ἀκριβῶς <lb/>ῥίζης ἀνίσχουσαν, ἀλλ’ εἰσὶ μὲν πλησίον ἀλλήλων,
                         <lb/>ἕτερον δ’ ἐξ ἑτέρας ἐκφύεται νεῦρον· ἐν μὲν τοῖς πρόσω <pb n="838"/>
                         μᾶλλον ὃ καλοῦσιν ἀκουστικὸν, εἰς τὸ τρῆμα τῆς ἀκοῆς <lb/>ἐκπίπτον ἅμα τῇ
@@ -215,24 +220,24 @@
                         συζυγίαν, εἰ καὶ παραλείποιτό ποτε κατὰ <pb n="839"/> τὴν λέξιν. τοιαύτη μὲν
                         οὖν καὶ ἡ τῆς πέμπτης συζυγίας <lb/>νομή. κείσθω γὰρ εἶναι μία διὰ Μαρῖνον,
                         εἰ καὶ διττὴ <lb/>φανερῶς ἐστιν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>
-                        <milestone unit="ed2page" n="244"/>Ἡ δὲ ἕκτη συζυγία τῶν ἀπ’ ἐγκεφάλου
+         </div>
+         <div n="7" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="244"/>Ἡ δὲ ἕκτη συζυγία τῶν ἀπ’ ἐγκεφάλου
                         <lb/>νεύρων κέχρηται τρήματι τῷ κατὰ τὸ κάτω πέρας τῆς λαμβδοειδοῦς
                         <lb/>ῥαφῆς. ἀρχὰς δ’ εὐθὺς ἐξ ἐγκεφάλου τριῶν ἔχει <lb/>νεύρων, ἐκπεσόντα δ’
                         ἔξω τοῦ κρανίου ταῦτα πολυειδῶς <lb/>ἀλλήλοις τε καὶ τοῖς παρακειμένοις, ἃ
                         μικρὸν ὕστερον ἐρῶ, <lb/>μίγνυται. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="8">
-                    <p>Λοιπὴ δ’ ἐστὶν ἡ ἑβδόμη συζυγία τῶν ἀπ’ <lb/>ἐγκεφάλου νεύρων, τῷ πλείστῳ
+         </div>
+         <div n="8" type="chapter">
+            <p>Λοιπὴ δ’ ἐστὶν ἡ ἑβδόμη συζυγία τῶν ἀπ’ <lb/>ἐγκεφάλου νεύρων, τῷ πλείστῳ
                         μέρει σφῶν αὐτῶν εἰς τοὺς <lb/>τῆς γλώττης μῦς διανεμομένη. μικρὸν γάρ τι
                         μόριον αὐτῶν <lb/>ἀεὶ μὲν εἰς τοὺς κοινοὺς μῦς ἀφικνεῖται τοῦ τε θυροειδοῦς
                         <lb/>χόνδρου τοῦ λάρυγγος καὶ τῶν ταπεινῶν πλευρῶν τοῦ <lb/>λαμβδοειδοῦς,
                         οὐκ ἀεὶ δὲ καὶ εἰς ἄλλους τινάς. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="9">
-                    <p>Ἐπιμίγνυται δ’, ὡς ἔφην, ἀλλήλοις τὰ <lb/>κάτω τῆς κεφαλῆς φερόμενα νεῦρα, τό
+         </div>
+         <div n="9" type="chapter">
+            <p>Ἐπιμίγνυται δ’, ὡς ἔφην, ἀλλήλοις τὰ <lb/>κάτω τῆς κεφαλῆς φερόμενα νεῦρα, τό
                         τε ἀπὸ τῆς γ΄ συζυγίας <pb n="840"/> καὶ τῶν νῦν εἰρημένων ἐσχάτων δυοῖν.
                         καὶ μέντοι <lb/>καὶ τῶν ἀπὸ τοῦ νωτιαίου νεύρων ἥ τε πρώτη καὶ ἡ δευτέρα
                         <lb/>συζυγία πολλὴν ἐπιμιξίαν ποιεῖται πρὸς ταῦτα τὰ νεῦρα. <lb/>καὶ
@@ -250,9 +255,9 @@
                         συζυγίας ἀπονενέμηται νεῦρα κατὰ τρεῖς ἐκφύσεις <lb/>ἑκατέρωθεν, ὡς εἶναι
                         τὰς πάσας ἓξ. ἔγνωσαν δ’ <lb/>ἔνιοι μὲν τὰς δύο μόνας αὐτῶν, ἔνιοι δ’ οὐδὲ
                         ταύτας. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="10">
-                    <p>Οἵ γε μὴν κοινοὶ πρὸς ἄλλα μόρια τοῦ <lb/>λάρυγγος μύες οὐ διὰ παντὸς ἀπὸ τῆς
+         </div>
+         <div n="10" type="chapter">
+            <p>Οἵ γε μὴν κοινοὶ πρὸς ἄλλα μόρια τοῦ <lb/>λάρυγγος μύες οὐ διὰ παντὸς ἀπὸ τῆς
                         ς΄ συζυγίας λαμβάνουσι <lb/>νεῦρα, καθάπερ οὐδὲ οἱ τὸ λαμβδοειδές τε καὶ
                         <lb/>ὑοειδὲς ὀστοῦν ὀνομαζόμενον τῷ στέρνῳ συνάπτοντες· ὑπὲρ <lb/>ὧν
                         ἀκριβοῦται μὲν ἐν ταῖς ἀνατομικαῖς ἐγχειρήσεσιν, ἐν αἷς <lb/>καὶ περὶ τῶν
@@ -299,10 +304,10 @@
                         <lb/>μὲν ἀναγιγνώσκουσιν, ἀλλὰ μὴ μετ’ ἐμοῦ τὰ διὰ τῶν ἀνατομῶν
                         <lb/>φαινόμενα εἰσορῶσιν ἄδηλον εἶναι δόξει, πότερον <lb/>ἅπαντες ἐκεῖνοι ἢ
                         μόνος ἐγὼ ἥμαρτον. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="11">
-                    <p>
-                        <milestone unit="ed2page" n="246"/>Πρώτη μὲν οὖν συζυγία τῶν ἀπὸ τοῦ
+         </div>
+         <div n="11" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="246"/>Πρώτη μὲν οὖν συζυγία τῶν ἀπὸ τοῦ
                         <lb/>νωτιαίου νεύρων ἐκφύεται διατετρημένου τοῦ πρώτου σπονδύλου
                         <lb/>τρήμασι τούτων τῶν τοῖς πρώτοις ς΄ σπονδύλοις κοινῶν <lb/>ὑπαρχόντων
                         διαφερομένοις. τὰ μὲν γὰρ ἐν ταῖς ἐγκαρσίαις <lb/>ἀποφύσεσίν ἐστι καὶ
@@ -319,9 +324,9 @@
                         μέρεσι καὶ μάλιστα ἐν τραχήλῳ ὁμοιοτάτοις <lb/>εἰς μόνους τοὺς περὶ τὴν
                         διάρθρωσιν τῆς κεφαλῆς <lb/>μῦς ἡ πρώτη νενέμηται συζυγία, καὶ αὐτοὺς οὐκ
                         ἀκριβῶς <lb/>ὑπὸ τῶν ἀνατομικῶν ἐγνωσμένους. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="12">
-                    <p>Ἡ δὲ δευτέρα τῶν ἀπὸ τοῦ νωτιαίου συζυγία <lb/>νεύρων ἐκ τῶν ὀπίσω μὲν
+         </div>
+         <div n="12" type="chapter">
+            <p>Ἡ δὲ δευτέρα τῶν ἀπὸ τοῦ νωτιαίου συζυγία <lb/>νεύρων ἐκ τῶν ὀπίσω μὲν
                         ἀνίσχει καὶ αὐτὴ μερῶν, οὐ <pb n="846"/> μὴν διὰ τρημάτων γέ τινων, καθάπερ
                         ἡ πρώτη. χώρα γάρ <lb/>τίς ἐστι καθ’ ἑκάτερον μέρος τῆς ἀκάνθης γυμνὴ τῶν
                         κατὰ <lb/>τοὺς σπονδύλους ὀστῶν ἐν τῷ μεταξὺ τοῦ τε πρώτου καὶ <lb/>τοῦ
@@ -337,12 +342,12 @@
                         <lb/>τῆς ἀρχῆς τοῦ βρέγματος. οὕτως μὲν καὶ τὸ εἰς πρόσω φερόμενον
                         <lb/>σχεδὸν καὶ αὐτὸ εἰς ἅπαν τὸ πρόσω τῆς κεφαλῆς <lb/>μέρος διασπείρεται.
                     </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="13">
-                    <p>Ἡ δὲ τρίτη συζυγία τῶν ἀπὸ τοῦ νωτιαίου <pb n="847"/> νεύρων ἐκ μὲν τῶν
+         </div>
+         <div n="13" type="chapter">
+            <p>Ἡ δὲ τρίτη συζυγία τῶν ἀπὸ τοῦ νωτιαίου <pb n="847"/> νεύρων ἐκ μὲν τῶν
                         πλαγίων μερῶν φύεται, καθ’ ὃ συμβάλλοντες <lb/>ἀλλήλοις ὁ δεύτερός τε καὶ
                         τρίτος σπόνδυλος <lb/>ἐργάζονται τρῆμα κοινὸν στρογγύλον, ἴσον εὖρος τῷ <lb/>
-                        <milestone unit="ed2page" n="247"/>πάχει τοῦ νεύρου. σχιζομένη δ’ αὐτίκα τῷ
+               <milestone unit="ed2page" n="247"/>πάχει τοῦ νεύρου. σχιζομένη δ’ αὐτίκα τῷ
                         μὲν ἑτέρῳ <lb/>τῶν μερῶν ὀπίσω φέρεται διὰ βάθους τῶν ἐνταῦθα μυῶν,
                         <lb/>ἀπονεμήσεις αὐτοῖς διδοῦσά τινας· ἔπειτα ἀνίσχει παρ’ αὐτὴν <lb/>τὴν
                         ἄκανθαν τῆς ῥάχεως. ἐντεῦθέν τε πάλιν ἐπὶ τὰ πρόσω <lb/>φέρεται τὸ νεῦρον
@@ -361,9 +366,9 @@
                         <lb/>τοῖς τε κοινοῖς τοῦ τραχήλου καὶ τῆς κεφαλῆς μυσὶν <lb/>αὐτὴ χορηγεῖ τὰ
                         νεῦρα, καὶ τοῖς τὰς γνάθους κινοῦσιν, ὥσπερ <lb/>γε καὶ τοῖς ὀπίσω τῶν ὤτων
                         ἅπασι μέρεσι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="14">
-                    <p>Αἱ δ’ ἐφεξῆς συζυγίαι κοινὸν μὲν ἔχουσιν <lb/>ἅπασαι τὸ διάτρημα, δι’ οὗ
+         </div>
+         <div n="14" type="chapter">
+            <p>Αἱ δ’ ἐφεξῆς συζυγίαι κοινὸν μὲν ἔχουσιν <lb/>ἅπασαι τὸ διάτρημα, δι’ οὗ
                         ἐκπίπτει τὰ νεῦρα, κοινὸν δ’ <lb/>ἐπὶ τούτων καὶ τὸ σχίζεσθαι κατὰ μὲν τὴν
                         ἔκφυσιν αὐτίκα, <lb/>φέρεσθαί τε τῷ μὲν ἑτέρῳ τῷ ἐλάττονι εἰς τὰ πρόσω, τῷ
                         <lb/>δὲ ἑτέρῳ τῷ μείζονι διὰ βάθους· καὶ πρῶτον μὲν ὡς ἐπὶ <lb/>τὴν ἄκανθαν,
@@ -381,10 +386,10 @@
                         τι. ταῦτα μὲν <lb/>οὖν ἁπάντων κοινὰ τῶν καθ’ ὅλον τὸν τράχηλον, τὸν
                         <lb/>μὲν τράχηλον (ἐν πᾶσιν αὐτοῖς ζώοις τοῖς μὴ πάνυ ἀνομοίας <lb/>τῇ
                         ἀνθρωπίνῃ φύσεως ἐχομένοις) ἑπτὰ σπονδύλων <lb/>ὄντα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="15">
-                    <p>
-                        <milestone unit="ed2page" n="248"/>Ὅσα δὲ καθ’ ἑκάστην εἰσὶν ἴδια,
+         </div>
+         <div n="15" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="248"/>Ὅσα δὲ καθ’ ἑκάστην εἰσὶν ἴδια,
                         <lb/>ταῦτα μὲν ἀκριβῶς καὶ ἐν ταῖς ἀνατομικαῖς ἐγχειρήσεσι <lb/>προείρηται,
                         νῦν δὲ καὶ κεφαλαιωδῶς ἐμὲ λέγειν, ὡς κατὰ <lb/>δύναμιν μικροτάτῳ τῷ λόγῳ
                         συλλαμβάνοντα, ἀναγκαῖόν <pb n="850"/> ἐστιν. Οἱ μὲν πάντες ἐν τοῖς
@@ -409,9 +414,9 @@
                         ἀνίσχει σπόνδυλον, <lb/>ἐκ τῶν κοινῶν, ὡς εἴρηται, τρημάτων, ἐπιμιγνύμεναι
                         δ’ ἀλλήλαις <lb/>ἐπί τε τὰ σιμὰ τῶν ὠμοπλατῶν φέρονται καὶ τὸν <lb/>βραχίονα
                         διὰ τῆς μασχάλης. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="16">
-                    <p>Ἄλλη δ’ ἐφεξῆς συζυγία αὐτῆς προειρημέναις <lb/>ταῖς συζυγίαις ἐπιμίγνυται τὸ
+         </div>
+         <div n="16" type="chapter">
+            <p>Ἄλλη δ’ ἐφεξῆς συζυγία αὐτῆς προειρημέναις <lb/>ταῖς συζυγίαις ἐπιμίγνυται τὸ
                         πλεῖστον μέρος ἐκ τῶν <lb/>τοῦ θώρακος ἤδη σπονδύλων ἐκφυομένη μεταξὺ τοῦ
                         πρώτου <lb/>καὶ δευτέρου κατ’ αὐτόν. μέρος μὲν οὖν τι σμικρὸν αὐτῆς <lb/>εἴς
                         τε τὸ πρῶτον κατασχίζεται μεσοπλεύριον καὶ εἰς τοὺς <lb/>ῥαχίτας ὀπίσω μῦς
@@ -445,11 +450,10 @@
                         πρώτους ἐπιβεβλημένους ἔξωθεν <lb/>μῦς τοὺς λοξοὺς τοὺς ἄνωθεν ἐκ τοῦ
                         θώρακος καταφερομένους <lb/>καὶ τοὺς κατάντεις τοὺς σαρκώδεις διανεμομένη.
                     </p>
-                </div>
-                <pb n="854"/>
-
-                <div type="textpart" subtype="chapter" n="17">
-                    <p>Μετὰ δὲ ταύτας εἰσὶν αἱ κατὰ τὴν ὀσφὺν <lb/>ἐκφύσεις τῶν νεύρων, οὐκ ἐκ
+         </div>
+         <pb n="854"/>
+         <div n="17" type="chapter">
+            <p>Μετὰ δὲ ταύτας εἰσὶν αἱ κατὰ τὴν ὀσφὺν <lb/>ἐκφύσεις τῶν νεύρων, οὐκ ἐκ
                         κοινοῦ τρήματος, ὥσπερ αἱ <lb/>κατὰ τὸν τράχηλον. ὁ γὰρ ὑπερκείμενος
                         σπόνδυλος ἐνταῦθα <lb/>μόνος διατετρημένος ἔξοδον ἐπιτήδειον παρέχει τῷ
                         <lb/>νεύρῳ κοινῷ ἐκείνῳ τρήματι τῷ ἐν τραχήλῳ ἐκ τοῖν ἀμφοῖν <lb/>σπονδύλοιν
@@ -480,8 +484,7 @@
                         καὶ ἱερὸν καλούμενον ἐγκειμένοις, ἐκ <pb n="856"/> τούτων ἔνδοθεν καὶ ἔσωθεν
                         αὐτοῦ τοῦ ὀστοῦ ἱεροῦ τρημάτων <lb/>τὰς νεύρων ἐκφύσεις ἀπὸ νωτιαίου
                         γεννᾶσθαι εἰς τὸ <lb/>κόκκυγος ὀστοῦν καλούμενον τελευτώσας. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

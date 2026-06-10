@@ -1,100 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">Prognosticon</title>
-                <author>Hippocrates</author>
-                <editor>Émile Littré</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Prognosticon</title>
+            <author>Hippocrates</author>
+            <editor>Émile Littré</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0627.tlg003.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0627.tlg003.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="fre">Oeuvres complètes d'Hippocrate</title>
-                        <author>Hippocrates</author>
-                        <editor>Émile Littré</editor>
-                        <imprint>
-                            <publisher>Baillière</publisher>
-                            <pubPlace>Paris</pubPlace>
-                            <biblScope unit="volume">2</biblScope>
-                            <biblScope unit="pp" from="110" to="190">110-190</biblScope>
-                            <date>1840</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/ucm.5321352185?urlappend=%3Bseq=170">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0627.tlg003.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="fre">Oeuvres complètes d'Hippocrate</title>
+                  <author>Hippocrates</author>
+                  <editor>Émile Littré</editor>
+                  <imprint>
+                     <publisher>Baillière</publisher>
+                     <pubPlace>Paris</pubPlace>
+                     <biblScope unit="volume">2</biblScope>
+                     <biblScope unit="pp" from="110" to="190">110-190</biblScope>
+                     <date>1840</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/ucm.5321352185?urlappend=%3Bseq=170">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-                <language ident="lat">Latin</language>
-                <language ident="fre">French</language>
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0627.tlg003.1st1K-grc1">
-                <pb n="110"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΠΡΟΓΝΩΣΤΙΚΟΝ</head>
-                    <p>1. Τὸν ἰητρὸν δοκέει μοι ἄριστον εἶναι πρόνοιαν ἐπιτηδεύειν·
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+            <language ident="fre">French</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0627.tlg003.1st1K-grc1">
+         <pb n="110"/>
+         <div n="1" type="chapter">
+            <head>ΠΡΟΓΝΩΣΤΙΚΟΝ</head>
+            <p>1. Τὸν ἰητρὸν δοκέει μοι ἄριστον εἶναι πρόνοιαν ἐπιτηδεύειν·
                         <lb/>προγιγνώσκων γὰρ καὶ προλέγων παρὰ τοῖσι νοσέουσι τά τε παρεόντα
                         <lb/>καὶ τὰ προγεγονότα καὶ τὰ μέλλοντα ἔσεσθαι, ὁκόσα τε παραλείπουσιν
                         <lb/>οἱ ἀσθενέοντες ἐκδιηγεύμενος, πιστεύοιτ᾿ ἂν μᾶλλον <lb/>γιγνώσκειν τὰ
@@ -113,9 +121,9 @@
                         <lb/>διαφυλάσσειν, ἐκ πλείονος χρόνου προβουλευόμενος πρὸς ἕκαστα, <lb/>καὶ
                         τοὺς ἀποθανουμένους τε καὶ σωθησομένους προγιγνώσκων <lb/>καὶ προαγορεύων
                         ἀναίτιος ἂν εἴη. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>2. Σκέπτεσθαι δὲ χρὴ ὧδε ἐν τοῖσιν ὀξέσι νουσήμασι· <lb/>πρῶτον μὲν τὸ
+         </div>
+         <div n="2" type="chapter">
+            <p>2. Σκέπτεσθαι δὲ χρὴ ὧδε ἐν τοῖσιν ὀξέσι νουσήμασι· <lb/>πρῶτον μὲν τὸ
                         πρόσωπον τοῦ νοσέοντος, εἰ ὅμοιόν ἐστι τοῖσι τῶν <lb/>ὑγιαινόντων, μάλιστα
                         δὲ, εἰ αὐτὸ ἑωυτέῳ. Οὕτω γὰρ ἂν εἴη <pb n="114"/> ἄριστον, τὸ δ᾿
                         ἐναντιώτατον τοῦ ὁμοίου, δεινότατον. Εἴη δ᾿ ἂν <lb/>τὸ τοιόνδε· ῥὶς ὀξεῖα,
@@ -146,9 +154,9 @@
                         χεῖλος, ἢ ῥὶς, μετά τινος τῶν ἄλλων σημείων, εἰδέναι χρὴ <lb/>ἐγγὺς ἐόντα
                         θανάτου· θανατῶδες δὲ καὶ χείλεα ἀπολυόμενα, <lb/>καὶ κρεμάμενα, καὶ ψυχρὰ,
                         καὶ ἔκλευκα γιγνόμενα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>3. Κεκλιμένον δὲ χρὴ καταλαμβάνεσθαι τὸν νοσέοντα ὑπὸ τοῦ <lb/>ἰητροῦ ἐπὶ τὸ
+         </div>
+         <div n="3" type="chapter">
+            <p>3. Κεκλιμένον δὲ χρὴ καταλαμβάνεσθαι τὸν νοσέοντα ὑπὸ τοῦ <lb/>ἰητροῦ ἐπὶ τὸ
                         πλευρὸν τὸ δεξιὸν, ἢ τὸ ἀριστερὸν, καὶ τὰς χεῖρας <lb/>καὶ τὸν τράχηλον καὶ
                         τὰ σκέλεα ὀλίγον ἐπικεκαμμένα ἔχοντα, <lb/>καὶ τὸ ξύμπαν σῶμα ὑγρὸν
                         κείμενον· οὕτω γὰρ καὶ οἱ πλεῖστοι <lb/>τῶν ὁγιαινόντων κατακλίνονται·
@@ -169,24 +177,24 @@
                         <lb/>καὶ προγεγονὸς τύχῃ ἔχων, ἤν τε καὶ ἐν τῇ νούσῳ γένηται, καταμανθάνειν
                         <lb/>δεῖ· ἢν γὰρ μέλλῃ ἀπόλλυσθαι ὁ ἄνθρωπος, πρὸ τοῦ <lb/>θανάτου πελιδνόν
                         τε καὶ ξηρὸν ἔσται, ἢ ὠχρόν τε καὶ ξηρόν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>4. Περὶ δὲ χειρῶν φορῆς τάδε γιγνώσκω· ὁκόσοισιν ἐν πυρετοῖσιν <lb/>ὀξέσιν, ἢ
+         </div>
+         <div n="4" type="chapter">
+            <p>4. Περὶ δὲ χειρῶν φορῆς τάδε γιγνώσκω· ὁκόσοισιν ἐν πυρετοῖσιν <lb/>ὀξέσιν, ἢ
                         ἐν περιπλευμονίῃσιν, ἢ ἐν φρενίτισιν, ἢ ἐν <lb/>κεφαλαλγίῃσι, πρὸ τοῦ
                         προσώπου φερομένας καὶ θηρευούσας <lb/>διὰ κενῆς, καὶ ἀποκαρφολογεούσας, καὶ
                         κροκίδας ἀπὸ τῶν ἱματίων <lb/>ἀποτιλλούσας, καὶ ἀπὸ τοῦ τοίχου ἄχυρα
                         ἀποσπώσας, πάσας <lb/>εἶναι κακὰς καὶ θανατώδεας. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>5. Πνεῦμα δὲ πυκνὸν μὲν ἐὸν πόνον σημαίνει ἢ φλεγμονὴν <lb/>ἐν τοῖσιν ὑπὲρ
+         </div>
+         <div n="5" type="chapter">
+            <p>5. Πνεῦμα δὲ πυκνὸν μὲν ἐὸν πόνον σημαίνει ἢ φλεγμονὴν <lb/>ἐν τοῖσιν ὑπὲρ
                         τῶν φρενῶν χωρίοισι· μέγα δὲ ἀναπνεόμενον καὶ <lb/>διὰ πολλοῦ χρόνου
                         παραφροσύνην δηλοῖ· ψυχρὸν δὲ ἐκπνεόμενον ἐκ <lb/>τῶν ῥινῶν καὶ τοῦ στόματος
                         ὀλέθριον κάρτα ἤδη γίγνεται. Εὔπνοιαν <lb/>δὲ χρὴ νομίζειν κάρτα μεγάλην
                         δύναμιν ἔχειν ἐς σωτηρίην <lb/>ἐν ἅπασι τοῖσιν ὀξέσι νουσήμασιν, ὅσα ξὺν
                         πυρετοῖσίν ἐστι καὶ ἐν <lb/>τεσσαράκοντα ἡμέρῃσι κρίνεται. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>6. Οἱ δὲ ἱδρῶτες ἄριστοι μέν εἰσιν ἐν πᾶσι τοῖσιν ὀξέσι νουσήμασιν, <pb n="124"/> ὁκόσοι ἐν ἡμέρῃσί τε κρισίμοισι γίγνονται καὶ τελείως τὸν
+         </div>
+         <div n="6" type="chapter">
+            <p>6. Οἱ δὲ ἱδρῶτες ἄριστοι μέν εἰσιν ἐν πᾶσι τοῖσιν ὀξέσι νουσήμασιν, <pb n="124"/> ὁκόσοι ἐν ἡμέρῃσί τε κρισίμοισι γίγνονται καὶ τελείως τὸν
                         <lb/>πυρετὸν ἀπαλλάσσουσιν. Ἀγαθοὶ δὲ καὶ ὁκόσοι διὰ παντὸς τοῦ <lb/>σώματος
                         γιγνόμενοι ἀπέδειξαν τὸν ἄνθρωπον εὐπετέστερον φέροντα <lb/>τὸ νούσημα. Οἳ
                         δ᾿ ἂν μὴ τοιοῦτόν τι ἐξεργάσωνται, οὐ λυσιτελέες. <lb/>Κάκιστοι δὲ οἱ ψυχροί
@@ -197,9 +205,9 @@
                         <lb/>τράχηλον γιγνόμενοι πονηροί. Οἱ δὲ μετὰ σταλαγμῶν καὶ ἀτμίζοντες,
                         <lb/>ἀγαθοί. Κατανοέειν δὲ χρὴ τὸ ξύνολον τῶν ἱδρώτων. Γίγνονται <lb/>γὰρ οἱ
                         μὲν δι᾿ ἔκλυσιν σωμάτων, οἱ δὲ διὰ ξυντονίην φλεγμονῆς. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>7. Ὑποχόνδριον δὲ ἄριστον μὲν ἀνώδυνόν τε ἐὸν καὶ μαλθακὸν <pb n="126"/> καὶ
+         </div>
+         <div n="7" type="chapter">
+            <p>7. Ὑποχόνδριον δὲ ἄριστον μὲν ἀνώδυνόν τε ἐὸν καὶ μαλθακὸν <pb n="126"/> καὶ
                         ὁμαλὸν, καὶ ἐπὶ δεξιὰ καὶ ἐπ᾿ ἀριστερά. Φλεγμαῖνον δὲ, ἢ <lb/>ὀδύνην
                         παρέχον, ἢ ἐντεταμένον, ἢ ἀνωμάλως διακείμενα τὰ <lb/>δεξιὰ πρὸς τὰ
                         ἀριστερὰ, ταῦτα πάντα φυλάσσεσθαι χρή. Εἰ δὲ <lb/>καὶ σφυγμὸς ἐνείη ἐν τῷ
@@ -224,7 +232,7 @@
                         δακτύλῳ πιεζόμενα <lb/>ὑπείκει, χρονιώτερα ἐκείνων. Τὰς δὲ ἀποστάσιας ἧσσον
                         τὰ ἐν <lb/>τῇ γαστρὶ οἰδήματα ποιέεται τῶν ἐν τοῖσιν ὑποχονδρίοισιν, ἥκιστα
                         δὲ <lb/>τὰ ὑποκάτω τοῦ ὀμφαλοῦ ἐς ἐπιπύησιν τρέπεται· αἵματος δὲ <pb n="130"/>
-                        <lb/>ῥῆξιν ἐκ τῶν ἄνω τόπων μάλιστα προσδέχεσθαι. Ἁπάντοιν δὲ χρὴ <lb/>τῶν
+               <lb/>ῥῆξιν ἐκ τῶν ἄνω τόπων μάλιστα προσδέχεσθαι. Ἁπάντοιν δὲ χρὴ <lb/>τῶν
                         οἰδημάτων χρονιζόντων περὶ ταῦτα· τὰ χωρία ὑποσκέπτεσθαι <lb/>τὰς ἐκπυήσιας.
                         Τὰ δὲ διαπυήματα ὧδε δεῖ σκέπτεσθαι τὰ ἐντεῦθεν· <lb/>ὁκόσα μὲν ἔξω
                         τρέπεται, ἄριστά ἐστι, μικρά τε ἐόντα, καὶ <lb/>ὡς μάλιστα ἐκκλίνοντα ἔξω,
@@ -234,9 +242,9 @@
                         ἀνώδυνα <lb/>καὶ πᾶν τὸ ἔξω χωρίον ὁμόχροον φαίνεται. Τὸ δὲ πῦον
                         <lb/>ἄριστον λευκόν τε εἶναι καὶ ὁμαλὸν καὶ λεῖον καὶ ὡς ἥκιστα
                         <lb/>δυσῶδες· τὸ δὲ ἐναντίον τουτέου κάκιστον. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="8">
-                    <p>8. Οἱ δὲ ὕδρωπες οἱ ἐκ τῶν ὀξέων νουσημάτων πάντες <lb/>κακοί· οὔτε γὰρ τοῦ
+         </div>
+         <div n="8" type="chapter">
+            <p>8. Οἱ δὲ ὕδρωπες οἱ ἐκ τῶν ὀξέων νουσημάτων πάντες <lb/>κακοί· οὔτε γὰρ τοῦ
                         πυρὸς ἀπαλλάσσουσιν; ἐπώδυνοί τέ εἰσι κάρτα <lb/>καὶ θανατώδεες. Ἄρχονται δὲ
                         οἱ πλεῖστοι μὲν ἀπὸ τῶν κενεώνων <lb/>καὶ τῆς ὀσφύος, οἱ δὲ ἀπὸ τοῦ ἥπατος·
                         οἷσι μὲν οὖν ἀπὸ τῶν <lb/>κενεώνων καὶ τῆς ὀσφύος αἱ ἀρχαὶ γίγνονται, οἵ τε
@@ -247,9 +255,9 @@
                         λόγου, <lb/>καὶ οἱ πόδες οἰδέουσι, καὶ ἡ γαστὴρ οὐ διαχωρέει, εἰ μὴ σκληρά
                         <lb/>τε καὶ πρὸς ἀνάγκην, καὶ περὶ τὴν κοιλίην γίγνεται οἰδήματα, τὰ
                         <lb/>μὲν ἐπὶ δεξιὰ, τὰ δ᾿ ἐπ᾿ ἀριστερὰ, ἱστάμενά τε καὶ καταπαυόμενα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="9">
-                    <p>9. Κεφαλὴ δὲ καὶ χεῖρες καὶ πόδες ψυχρὰ ἐόντα κακὸν, τῆς τε <lb/>κοιλίης καὶ
+         </div>
+         <div n="9" type="chapter">
+            <p>9. Κεφαλὴ δὲ καὶ χεῖρες καὶ πόδες ψυχρὰ ἐόντα κακὸν, τῆς τε <lb/>κοιλίης καὶ
                         τῶν πλευρῶν θερμῶν ἐόντων. Ἄριστον δὲ καὶ ὅλον τὸ <lb/>σῶμα θερμόν τε ἐὸν
                         καὶ μαλθακὸν ὁμαλῶς. Στρέφεσθαι δὲ χρὴ <lb/>ῥηϊδίως τὸν ἀλγεῦντα, καὶ ἐν
                         τοῖσι μετεωρισμοῖσιν ἐλαφρὸν εἶναι· <lb/>εἰ δὲ βαρὺς ἐὼν φαίνοιτο καὶ τὸ
@@ -263,18 +271,18 @@
                         περιγενέσθαι, τὰ δὲ μελανθέντα τοῦ σώματος <lb/>ἀποπεσεῖν. Ὄρχιες δὲ καὶ
                         αἰδοῖα ἀνεσπασμένα πόνους ἰσχυροὺς <lb/>σημαίνει καὶ κίνδυνον θανατώδεα.
                     </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="10">
-                    <p>10. Περὶ δὲ ὕπνων, ὥσπερ κατὰ φύσιν ξύνηθες ἡμῖν ἐστι, <lb/>τὴν μὲν ἡμέρην
+         </div>
+         <div n="10" type="chapter">
+            <p>10. Περὶ δὲ ὕπνων, ὥσπερ κατὰ φύσιν ξύνηθες ἡμῖν ἐστι, <lb/>τὴν μὲν ἡμέρην
                         ἐγρηγορέναι χρὴ, τὴν δὲ νύκτα καθεύδειν. Ἢν δὲ <lb/>εἴη τοῦτο
                         μεταβεβλημένον, κάκιον· ἥκιστα. δ᾿ ἂν λυπέοιτο, <lb/>εἰ κοιμῷτο τὸ πρωΐ ἐς
                         τὸ τρίτον μέρος τῆς ἡμέρης· οἱ δὲ <lb/>ἀπὸ τουτέου| τοῦ χρόνου ὕπνοι
                         πονηρότεροί εἰσι· κάκιστον δὲ μὴ <lb/>κοιμᾶσθαι, μήτε τῆς νυκτὸς, μήτε τῆς
                         ἡμέρης· ἢ γὰρ ὑπὸ <lb/>ὀδύνης τε καὶ πόνων ἀγρυπνέειν ἢ παραφρονήσειν ἕπεται
                         ἀπὸ τουτέου <lb/>τοῦ σημείου. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="11">
-                    <p>11. Διαχώρημα δέ ἐστιν· ἄριστον τὸ μαλθακόν τε καὶ <lb/>ξυνεστηκὸς, καὶ τὴν
+         </div>
+         <div n="11" type="chapter">
+            <p>11. Διαχώρημα δέ ἐστιν· ἄριστον τὸ μαλθακόν τε καὶ <lb/>ξυνεστηκὸς, καὶ τὴν
                         ὥρην ἥνπερ καὶ ὑγιαίνοντι ὑπεχώρεε, πλῆθος <lb/>δὲ πρὸς λόγον τῶν ἐσιόντων·
                         τοιαύτης γὰρ ἐούσης τῆς διεξόδου, <lb/>ἡ κάτω κοιλίη ὑγιαίνοι ἄν. Εἰ δὲ εἴη
                         ὑγρὸν τὸ διαχώρημα, ξυμφέρει <lb/>μήτε τρύζειν, μήτε πυκνόν τι εἶναι, καὶ
@@ -301,9 +309,9 @@
                         ὑποχονδρίῳ, καὶ μάλιστα μὲν διεξιὼν ξὺν κόπρῳ <lb/>τε καὶ οὔρῳ καὶ φύσῃ, ἢν
                         δὲ μὴ, καὶ αὐτὸς δὴ περαιωθεὶς <lb/>ὠφελέει· ὠφελέει δὲ καὶ ὑποκαταβὰς ἐς τὰ
                         κάτω χωρία. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="12">
-                    <p>12. Τὸ δὲ οὖρον ἄριστόν ἐστιν, ὅταν ᾖ λευκή τε ἡ ὑπόστασις, <lb/>καὶ λείη,
+         </div>
+         <div n="12" type="chapter">
+            <p>12. Τὸ δὲ οὖρον ἄριστόν ἐστιν, ὅταν ᾖ λευκή τε ἡ ὑπόστασις, <lb/>καὶ λείη,
                         καὶ ὁμαλὴ παρὰ πάντα τὸν χρόνον, ἔστ᾿ ἂν κριθῇ ἡ <pb n="140"/> γοῦσος·
                         σημαίνει γὰρ ἀσφάλειάν τε καὶ νούσημα ὀλιγοχρόνιον <lb/>ἔσεσθαι. Εἰ δὲ
                         διαλείποι, καὶ ποτὲ μὲν καθαρὸν οὐρέοιτο, ποτὲ <lb/>δὲ ὑφίσταται τὸ λευκὸν
@@ -330,9 +338,9 @@
                         κακὰς εἶναι, καὶ μέμφεσθαι. Μὴ ἐξαπατάτω <lb/>δέ σε, ἤν γε ἡ κύστις τι
                         νούσημα ἔχουσα τῶν οὔρων τὰ τοιαῦτα <lb/>ἀποδιδῷ· οὐ γὰρ τοῦ ὅλου σώματος
                         σημεῖόν ἐστιν, ἀλλ᾿ αὐτῆς <lb/>καθ᾿ ἑωυτῆς. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="13">
-                    <p>13. Ἔμετος δὲ ὠφελιμώτατος ὁ φλέγματος καὶ χολῆς ξυμμεμιγμένων <pb n="144"/>
+         </div>
+         <div n="13" type="chapter">
+            <p>13. Ἔμετος δὲ ὠφελιμώτατος ὁ φλέγματος καὶ χολῆς ξυμμεμιγμένων <pb n="144"/>
                         ὅτι μάλιστα· καὶ μὴ παχὺς κάρτα, μηδὲ πολὺς ἐμεέσθω· <lb/>οἱ γὰρ
                         ἀκρητέστεροι κακίους εἰσίν. Εἰ δὲ εἴη τὸ ἐμεύμενον <lb/>πρασοειδὲς, ἢ
                         πελιὸν, ἢ μέλαν, ὅ τι ἂν ᾖ τουτέων τῶν χρωμάτων, <lb/>νομίζειν χρὴ πονηρὸν
@@ -340,9 +348,9 @@
                         ὀλέθριον τοῦτο γίγνεται· τάχιστον δὲ <lb/>θάνατον σημαίνει τὸ πελιὸν τῶν
                         ἐμεσμάτων, εἰ ὄζει δυσῶδες. <lb/>Πᾶσαι δὲ αἱ ὑπόσαπροι καὶ δυσώδεες ὀσμαὶ
                         κακαὶ ἐπὶ πᾶσι τοῖσιν ἐμεομένοισιν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="14">
-                    <p>14. Πτύελον χρὴ ἐπὶ πᾶσι τοῖσιν ἀλγήμασι τοῖσι περὶ <lb/>τὸν πλεύμονα καὶ τὰς
+         </div>
+         <div n="14" type="chapter">
+            <p>14. Πτύελον χρὴ ἐπὶ πᾶσι τοῖσιν ἀλγήμασι τοῖσι περὶ <lb/>τὸν πλεύμονα καὶ τὰς
                         πλευρὰς ταχέως τε ἀναπτύεσθαι καὶ <lb/>εὐπετέως, ξυμμεμιγμένον τε φαίνεσθαι
                         τὸ ξανθὸν ἰσχυρῶς τῷ <lb/>πτυέλῳ. Εἰ γὰρ πολλῷ ὕστερον μετὰ τὴν ἀρχὴν τῆς
                         ὀδύνης ἀναπτύοιτο, <lb/>ξανθὸν ἐὸν, ἢ πυῤῥὸν, ἢ πολλὴν βῆχα παρέχον, ἢ
@@ -359,9 +367,9 @@
                         ἀσφαλές. Πάντα <lb/>δὲ πτύελα πονηρά ἐστιν ὁκόσα ἂν τὴν ὀδύνην μὴ παύῃ.
                         <lb/>Κάκιστα δὲ τὰ μέλανα, ὡς διαγέγραπται. Τὰ δὲ παύοντα ὀδύνην,
                         <lb/>πάντων ἀμείνω ἀναπτυόμενα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="15">
-                    <p>15. Ὁκόσα δὲ τῶν ἀλγημάτων ἐκ τουτέων τῶν χωρίων μὴ <pb n="148"/> παύηται,
+         </div>
+         <div n="15" type="chapter">
+            <p>15. Ὁκόσα δὲ τῶν ἀλγημάτων ἐκ τουτέων τῶν χωρίων μὴ <pb n="148"/> παύηται,
                         μήτε πρὸς τὰς τῶν πτυέλων καθάρσιας, μήτε πρὸς τὴν <lb/>τῆς κοιλίης
                         ἐκκόπρωσιν, μήτε πρὸς τὰς φλεβοτομίας τε καὶ φαρμακείας <lb/>καὶ διαίτας,
                         εἰδέναι δεῖ ἐκπυήσοντα. Τῶν δὲ ἐκπυημάτων <lb/>ὁκόσα μὲν ἔτι χολώδεος ἐόντος
@@ -391,9 +399,9 @@
                         γὰρ ἄν τις ᾶληθεύοι <lb/>μάλιστα. Αἱ δὲ ἄλλαι ἐκπυήσιες ῥήγνυνται αἱ
                         πλεῖσται, <lb/>αἱ μὲν εἰκοσταῖαι, αἱ δὲ τριηκοσταῖαι, αἱ δὲ
                         τεσσαρακονθήμεροι, <lb/>αἱ δὲ πρὸς τὰς ἑξήκοντα ἡμέρας ἀφικνέονται. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="16">
-                    <p>16. Ἐπισκέπτεσθαι δὲ χρὴ τὴν ἀρχὴν τοῦ ἐμπυήματος ἔσεσθαι <pb n="152"/>
+         </div>
+         <div n="16" type="chapter">
+            <p>16. Ἐπισκέπτεσθαι δὲ χρὴ τὴν ἀρχὴν τοῦ ἐμπυήματος ἔσεσθαι <pb n="152"/>
                         λογιζόμενον ἀπὸ τῆς ἡμέρης ἧς τὸ πρῶτον ὁ ἄνθρωπος <lb/>ἐπύρεξεν, ἢ εἴ ποτε
                         αὐτὸν ῥῖγος ἔλαβε, καὶ εἰ φαίη <lb/>ἀντὶ τῆς ὀδύνης αὐτέῳ βάρος γεγενῆσθαι
                         ἐν τῷ τόπῳ ἐν ᾧ <lb/>ἤλγεεν· ταῦτα γὰρ ἐν ἀρχῇσι γίγνεται τῶν ἐμπυημάτων.
@@ -404,9 +412,9 @@
                         τὸ ἕτερον τοῦ ἑτέρου, κατακλινομένου ἐπὶ <lb/>τὸ ὑγιαῖνον πλευρὸν, ἐρωτᾷν εἴ
                         τι αὐτέῳ δοκέει βαρὺ ἀποκρέμασθαι <lb/>ἐκ τοῦ ἄνωθεν. Εἰ γὰρ εἴη τοῦτο, ἐπὶ
                         θάτερόν <lb/>ἐστι τὸ ἐμπύημα, ἐπὶ ὁκοῖον ἂν πλευρὸν τὸ βάρος γίγνηται. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="17">
-                    <p>17. Τοὺς δὲ ξύμπαντας ἐμπύους γιγνώσκειν χρὴ τοισίδε <lb/>τοῖσι σημείοισι.
+         </div>
+         <div n="17" type="chapter">
+            <p>17. Τοὺς δὲ ξύμπαντας ἐμπύους γιγνώσκειν χρὴ τοισίδε <lb/>τοῖσι σημείοισι.
                         Πρῶτον μὲν, ὁ πυρετὸς οὐκ ἀφίησιν, ἀλλὰ τὴν <lb/>μὲν ἡμέρην λεπτὸς ἴσχει,
                         τὴν δὲ νύκτα πλείων, καὶ ἱδρῶτες <pb n="154"/> πολλοὶ ἐπιγίγνονται, βῆξαί τε
                         θυμὸς ἐγγίγνεται αὐτέοισιν, καὶ <lb/>ἀποπτύουσιν οὐδὲν ἄξιον λόγου, καὶ οἱ
@@ -436,9 +444,9 @@
                         δ᾿ ἂν τουτέων τὰ μὲν ἐπιγένηται, τὰ <lb/>δὲ μὴ, οἱ μὲν αὐτέων ἀπόλλυνται, οἱ
                         δὲ ἐν πολλῷ χρόνῳ περιγίγνονται. <pb n="158"/> Ἀλλ᾿ ἐκ πάντων τῶν τεκμηρίων
                         τῶν ἐόντων ἐν τουτέοισι <lb/>σημαίνεσθαι, καὶ τοῖσιν ἄλλοισι πᾶσιν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="18">
-                    <p>18. Ὁκόσοισι δὲ ἀποστάσιες γίγνονται ἐκ τῶν περιπλευμονικῶν <lb/>νουσημάτων
+         </div>
+         <div n="18" type="chapter">
+            <p>18. Ὁκόσοισι δὲ ἀποστάσιες γίγνονται ἐκ τῶν περιπλευμονικῶν <lb/>νουσημάτων
                         παρὰ τὰ ὦτα, καὶ ἐκπυέουσιν, ἢ ἐς τὰ κάτω χωρία, <lb/>καὶ συριγγοῦνται,
                         οὗτοι περιγίγνονται. Ἐπισκέπτεσθαι δὲ <lb/>χρὴ τὰ τοιαῦτα ὧδε· ἢν ὅ τε
                         πυρετὸς ἔχῃ, καὶ ἡ ὀδύνη μὴ παύηται, <lb/>καὶ τὸ πτύελον μὴ ἐκχωρέῃ κατὰ
@@ -463,9 +471,9 @@
                         ἀποθνήσκουσιν. Ὁκόσοι δὲ τῶν <pb n="164"/> ἐμπύων καίονται ἢ τέμνονται,
                         οἷσιν ἂν καθαρὸν μὲν τὸ <lb/>πῦον ᾖ καὶ λευκὸν καὶ μὴ δυσῶδες, σώζονται·
                         οἷσι δὲ ὕφαιμόν <lb/>τε καὶ βορβορῶδες, ἀπόλλυνται. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="19">
-                    <p>19. Αἱ δὲ ξὺν πυρετῷ γιγνόμεναι ὀδύναι περὶ τὴν ὀσφῦν <lb/>τε καὶ τὰ κάτω
+         </div>
+         <div n="19" type="chapter">
+            <p>19. Αἱ δὲ ξὺν πυρετῷ γιγνόμεναι ὀδύναι περὶ τὴν ὀσφῦν <lb/>τε καὶ τὰ κάτω
                         χωρία, ἢν τῶν φρενῶν ἅπτωνται, τὰ κάτω <lb/>ἐκλείπουσαι, ὀλέθριαι κάρτα.
                         Προσέχειν οὖν δεῖ τὸν νόον <lb/>τοῖσιν ἄλλοισι σημείοισιν, ὡς ἤν τι καὶ τῶν
                         ἄλλων σημείων <lb/>ἐπιφαίνηται πονηρὸν, ἀνέλπιστος ὁ ἄνθρωπος ἢν δὲ,
@@ -480,9 +488,9 @@
                         πυρετὸς <lb/>ξυνεχὴς ᾖ, ἐν τῇσι πρώτῃσι περιόδοισι τοῦ νουσήματος ἐλπὶς τὸν
                         <lb/>ἀλγέοντα ἀπολέσθαι. Ὁ δὲ τρόπος οὗτος ἅπτεται τῶν παιδίων <lb/>μάλιστα
                         τῶν ἑπταετέων, ἕως ἂν ἐς τὰ πεντεκαίδεκα ἔτεα γένωνται. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="20">
-                    <p>20. Οἱ δὲ πυρετοὶ κρίνονται ἐν τῇσιν αὐτέῃσιν ἡμέρῃσι τὸν <lb/>ἀριθμὸν, ἐξ ὧν
+         </div>
+         <div n="20" type="chapter">
+            <p>20. Οἱ δὲ πυρετοὶ κρίνονται ἐν τῇσιν αὐτέῃσιν ἡμέρῃσι τὸν <lb/>ἀριθμὸν, ἐξ ὧν
                         τε περιγίγνονται οἱ ἄνθρωποι καὶ ἐξ ὧν ἀπόλλυνται. <lb/>Οἵ τε γὰρ
                         εὐηθέστατοι τῶν πυρετῶν καὶ ἐπὶ σημείων ἀσφαλεστάτων <lb/>βεβῶτες τεταρταῖοι
                         παύονται, ἢ πρόσθεν· οἵ τε κακοηθέστατοι <lb/>καὶ ἐπὶ σημείων δεινοτάτων
@@ -510,9 +518,9 @@
                         χρὴ, κατά τε τὸν χρόνον, κατά τε τὴν <lb/>πρόσθεσιν ἑκάστην ἐπὶ τὴν κρίσιν
                         ἰόντων τῶν νουσημάτων. Κατὰ <lb/>δὲ τὸν αὐτὸν λόγον καὶ τῇσι γυναιξὶν αἱ
                         κρίσιες ἐκ τῶν τόκων <lb/>γίγνονται. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="21">
-                    <p>21. Κεφαλῆς δὲ ὀδύναι ἰσχυραί τε καὶ ξυνεχέες ξὺν πυρετῷ· <lb/>ἢν μέν τι τῶν
+         </div>
+         <div n="21" type="chapter">
+            <p>21. Κεφαλῆς δὲ ὀδύναι ἰσχυραί τε καὶ ξυνεχέες ξὺν πυρετῷ· <lb/>ἢν μέν τι τῶν
                         θανατωδέων σημείων προσγίγνοιτο, <lb/>ὀλέθριον κάρτα. Εἰ δὲ ἄτερ τῶν
                         τοιούτων σημείων ἡ ὀδύνη <lb/>ὑπερβάλλοι εἴκοσιν ἡμέρας, ὅ τε πυρετὸς ἔχοι,
                         ὑποσκέπτεσθαι χρὴ <lb/>αἵματος ῥῆξιν διὰ ῥινῶν, ἢ ἄλλην τινὰ ἀπόστασιν ἐς τὰ
@@ -521,11 +529,10 @@
                         κροτάφους καὶ τὸ μέτωπον ᾖ· μᾶλλον δὲ <lb/>χρὴ προσδέχεσθαι τοῦ μὲν αἵματος
                         τὴν ῥῆξιν τοῖσι νεωτέροισι <lb/>πέντε καὶ τριήκοντα ἐτέων, τοῖσι δὲ
                         γεραιτέροισι τὴν ἐκπύησιν. </p>
-                </div>
-                <pb n="174"/>
-
-                <div type="textpart" subtype="chapter" n="22">
-                    <p>22. Ὠτὸς δὲ ὀξείη ὀδύνη ξὺν πυρετῷ ξυνεχεῖ τε καὶ ἰσχυρῷ <lb/>δεινόν·
+         </div>
+         <pb n="174"/>
+         <div n="22" type="chapter">
+            <p>22. Ὠτὸς δὲ ὀξείη ὀδύνη ξὺν πυρετῷ ξυνεχεῖ τε καὶ ἰσχυρῷ <lb/>δεινόν·
                         κίνδυνος γὰρ παραφρονῆσαι τὸν ἄνθρωπον καὶ ἀπολέσθαι. <lb/>Ὡς οὖν τουτέου
                         τοῦ τόπου σφαλεροῦ ἐόντος, ταχέως δεῖ προσέχειν <lb/>τὸν νόον τοῖσι
                         σημείοισι πᾶσιν ἀπὸ τῆς πρώτης ἡμέρης. Ἀπόλλυνται <lb/>δὲ οἱ μὲν νεώτεροι
@@ -537,9 +544,9 @@
                         ἀπόλλυνται· πλὴν ἀλλ᾿ ἤν γε ῥυῇ πῦον λευκὸν <lb/>ἐκ τοῦ ὠτὸς, ἐλπὶς τῷ
                         νεωτέρῳ περιγενέσθαι, ἤν γε καὶ ἄλλο <lb/>τι αὐτέῳ ἐπιγένηται χρηστὸν
                         σημεῖον. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="23">
-                    <p>23. Φάρυγξ δὲ ἑλκουμένη ξὺν πυρετῷ δεινόν· ἀλλ᾿ ἤν τι <pb n="176"/> καὶ ἄλλο
+         </div>
+         <div n="23" type="chapter">
+            <p>23. Φάρυγξ δὲ ἑλκουμένη ξὺν πυρετῷ δεινόν· ἀλλ᾿ ἤν τι <pb n="176"/> καὶ ἄλλο
                         σημεῖον γένηται τῶν προκεκριμένων πονηρῶν εἶναι·, <lb/>προλέγειν δεῖ ὡς ἐν
                         κινδύνῳ ἐόντος τοῦ ἀνθρώπου. Αἱ δὲ κυνάγχαι <lb/>δεινόταται μέν εἰσι, καὶ
                         τάχιστα ἀναιρέουσιν, ὁκόσαι <lb/>μήτε ἐν τῇ φάρυγγι μηδὲν ἔκδηλον ποιέουσι,
@@ -566,9 +573,9 @@
                         ἀσφαλὲς διαχειρίζειν. <lb/>Ἄμεινον δὲ καὶ τὴν κοιλίην ὑποκενώσαντα τῇ
                         χειρουργίῃ <lb/>χρέεσθαι, ἢν ὅ τε χρόνος ξυγχωρέῃ, καὶ μὴ ἀποπνίγηται ὁ
                         ἄνθρωπος. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="24">
-                    <p>24. Ὁκόσοισι δ᾿ ἂν οἱ πυρετοὶ παύωνται, μήτε σημείων <lb/>γενομένων λυτηρίων,
+         </div>
+         <div n="24" type="chapter">
+            <p>24. Ὁκόσοισι δ᾿ ἂν οἱ πυρετοὶ παύωνται, μήτε σημείων <lb/>γενομένων λυτηρίων,
                         μήτε ἐν ἡμέρῃσι κρισίμῃσιν, <lb/>ὑποστροφὴν προσδέχεσθαι χρὴ τουτέοισιν.
                         Ὅστις δ᾿ ἂν τῶν <lb/>πυρετῶν μηκύνῃ περιεστικῶς διακειμένου τοῦ ἀνθρώπου,
                         <lb/>μηκέτι ὀδύνης ἐχούσης διὰ φλεγμονήν τινα, μήτε διὰ πρόφασιν <lb/>ἄλλην
@@ -617,9 +624,9 @@
                         τῶν ἄλλων τεχμαίρεσθαι <lb/>τοῖσι ξύμπασι σημείοισιν, ὡς ἐφ᾿ ἑκάστοισιν
                         ἕκαστα διαγέγραπται. <lb/>Ταῦτα δὲ λέγω περί τε τῶν ὀξέων νουσημάτων
                         <lb/>καὶ ὅσα ἐκ τουτέων γίγνεται. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="25">
-                    <p>25. Χρὴ δὲ τὸν μέλλοντα ὀρθῶς προγιγνώσκειν τοὺς περιεσομένους <lb/>καὶ τοὺς
+         </div>
+         <div n="25" type="chapter">
+            <p>25. Χρὴ δὲ τὸν μέλλοντα ὀρθῶς προγιγνώσκειν τοὺς περιεσομένους <lb/>καὶ τοὺς
                         ἀποθανουμένους, ὅσοισί τε ἂν μέλλῃ <lb/>πλέονας ἡμέρας παραμένειν τὸ νούσημα
                         καὶ ὅσοισιν ἂν ἐλάσους, <lb/>τὰ σημεῖα ἐκμανθάνοντα πάντα δύνασθαι κρίνειν,
                         <lb/>λογιζόμενον τὰς δυνάμιας αὐτέων πρὸς ἀλλήλας, ὥσπερ <lb/>διαγέγραπται
@@ -636,8 +643,7 @@
                         <lb/>οὔνομα, ὅτι μὴ τυγχάνῃ ἐνθάδε γεγραμμένον· πάντα <lb/>γὰρ ὁκόσα ἐν
                         τοῖσι χρόνοισι τοῖσι προειρημένοισι χρίνεται, <lb/>γνώσῃ τοῖσιν αὐτέοισι
                         σημείοισιν. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

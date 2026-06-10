@@ -1,134 +1,147 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">
-<fileDesc>
-<titleStmt>
-	<title xml:lang="lat">Isagoge musica</title>
-	<author xml:lang="lat">Alypius</author>
-<editor>Karl von Jan</editor>
-	<funder>Harvard Library Arcadia Fund</funder>
-	<principal>Gregory Crane</principal>
-	<respStmt>
-		<persName xml:id="DDD">Digital Divide Data</persName>
-		<resp>Corrected and encoded the text</resp>
-	</respStmt>
-	<respStmt>
-		<persName>Gregory Crane</persName>
-		<resp>Editor-in-Chief, Perseus Digital Library</resp>
-	</respStmt>
-	<respStmt>
-		<persName>Matt Munson</persName>
-		<resp>Project Manager (University of Leipzig)</resp>
-	</respStmt>
-	<respStmt>
-		<persName>Annette Gessner</persName>
-		<resp>Project Assistant (University of Leipzig)</resp>
-	</respStmt>
-	<respStmt>
-		<persName>Thibault Clérice</persName>
-		<resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
-	</respStmt>
-	<respStmt>
-		<persName>Bruce Robertson</persName>
-		<resp>Technical Advisor</resp>
-	</respStmt>
-</titleStmt>
-<publicationStmt>
-<authority>Harvard College Library</authority>
-<idno type="filename">tlg2135.tlg001.1st1K-grc1.xml</idno>
-<availability>
-<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Isagoge musica</title>
+            <author xml:lang="lat">Alypius</author>
+            <editor>Karl von Jan</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg2135.tlg001.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
 License</licence>
-</availability>
-<date>2017</date>
-<publisher>Harvard College Library</publisher>
-<pubPlace>United States</pubPlace>
-</publicationStmt>
-<sourceDesc>
-<listBibl>
-<biblStruct>
-<monogr>
-	<title xml:lang="lat">Musici scriptores Graeci</title>
-<editor>
-<persName>
- <name>Karl von Jan</name>
-</persName>
-</editor>
-<author ref="urn:cts:greekLit:tlg2135" xml:lang="lat">Alypius</author>
-<imprint>
-<publisher>Teubner</publisher>
-<pubPlace>Leipzig</pubPlace>
-<date>1895</date>
-</imprint>
-</monogr>
-	<ref target="https://archive.org/details/musiciscriptore00jangoog/page/n464/mode/2up">Internet Archive</ref>
-</biblStruct>
-</listBibl>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<p>Text encoded in accordance with the latest EpiDoc standards</p>
-	<refsDecl n="CTS">
-		<cRefPattern matchPattern="(.+).(.+)" n="fragment" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-		<cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-	</refsDecl>
-</encodingDesc>
-<profileDesc>
-<langUsage>
-<language ident="grc">Greek</language>
-<language ident="lat">Latin</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change/>
-</revisionDesc>
-</teiHeader>
-<text>
-<body>
-	<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2135.tlg001.1st1K-grc1">
-<pb n="367"/>
-<head>ALYPIOY
+            </availability>
+            <date>2017</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg2135.tlg001.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Musici scriptores Graeci</title>
+                     <editor>
+                        <persName>
+                           <name>Karl von Jan</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg2135" xml:lang="lat">Alypius</author>
+                     <imprint>
+                        <publisher>Teubner</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1895</date>
+                     </imprint>
+                  </monogr>
+                  <ref target="https://archive.org/details/musiciscriptore00jangoog/page/n464/mode/2up">Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+).(.+)"
+                         n="fragment"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)"
+                         n="book"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
+                  <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+               </citeStructure>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-book-section"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg2135.tlg001.1st1K-grc1">
+         <pb n="367"/>
+         <head>ALYPIOY
 EISAGVGH MOYSIKH.</head>
-	<div type="textpart" subtype="book" n="1">
-<div type="textpart" subtype="fragment" n="1">
-<p>Τῆς μουσικῆς ἐκ τριῶν τῶν συνεκτικωτάτων ἐπιστημῶν
+         <div n="1" type="book">
+            <div n="1" type="fragment">
+               <p>Τῆς μουσικῆς ἐκ τριῶν τῶν συνεκτικωτάτων ἐπιστημῶν
 τελειουμένης, ἁρμονικῆς ῥυθμικῆς μετρικῆς,
 <lb n="5"/> πρώτην τε τάξει καὶ στοιχειωδεστάτην νοητέον τὴν
 περὶ τὸ ἡρμοσμένον πραγματείαν. αὕτη δὲ ἁρμονικὴ
 καλεῖται <del>δια</del> κριτικὴν τινα δύναμιν ἔχουσα καὶ καταληπτικὴν
 τῶν ἐμμελῶν καὶ διαστηματικῶν φθόγγων
 καὶ τῶν ἐν αὐτοῖς γινομένων διαφορῶν.</p>
-</div>
-
-<div type="textpart" subtype="fragment" n="2">
-<lb n="10"/> <p>2. Ἀναστρέφεται δὲ μάλιστα καὶ θεωρεῖται περὶ
+            </div>
+            <div n="2" type="fragment">
+               <lb n="10"/>
+               <p>2. Ἀναστρέφεται δὲ μάλιστα καὶ θεωρεῖται περὶ
 τὸ ἡρμοσμένον τῆς μουσικῆς μέρος. οὗ μέρη ἑπτά·
 πρῶτον περὶ φθόγγων, δεύτερον περὶ διαστημάτων,
 τρίτον περὶ συστημάτων, τέταρτον περὶ γενῶν, πέμπτον
 περὶ τόνων, ἕκτον περὶ μεταβολῶν, ἕβδομον περὶ αὐτῆς
 <lb n="15"/> τῆς μελοποιίας.</p>
-</div>
-
-<div type="textpart" subtype="fragment" n="3">
-<p>3. Οὕτω δὲ τεταγμένων τούτων (p. 2) εὐχρηστὸν
+            </div>
+            <div n="3" type="fragment">
+               <p>3. Οὕτω δὲ τεταγμένων τούτων (p. 2) εὐχρηστὸν
 ἐστιν ἡμῖν ἄμα δὲ καὶ ἀναγκαῖον διδασκαλικώτερον
 ἀρχομένοις τῆς ἁρμονικῆς στοιχειώσεως τὴν παράδοσιν
 ποιεῖσθαι καὶ πρὸ πάντων αὐτὴν διελεῖν εἰς τοὺς
 <lb n="20"/> λεγομένους τρόπους τε καὶ τόνους, ὄντας πεντεκαίδεκα
 τὸν ἀριθμόν. ὧν ἐστι πρῶτος ὁ λύδιος. <del>λυδίου
 τρόπου σημεῖα, τὰ μὲν ἄνω τῆς λέξεως, τὰ δὲ κάτω
-τῆς κρούσεως.</del></p>
-<note type="footnote">7 διακριτ.] scribendum κριτικήν. Aristot. supra p.2430.
+τῆς κρούσεως.</del>
+               </p>
+               <note type="footnote">7 διακριτ.] scribendum κριτικήν. Aristot. supra p.2430.
 Plut. mus 36. 11 μέρος an μέλος? 21 λυδίου κ τ. λ.
 melius transponitur post 368, 18.</note>
-<note type="footnote">Cf Anon. Bell. II 30. Aristox. princ. harm. § 1. ἄνω,
+               <note type="footnote">Cf Anon. Bell. II 30. Aristox. princ. harm. § 1. ἄνω,
 κάτω v. ad 350, 10.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="4">
-<pb n="368"/>
-<p>4.Τῶν φθόγγων οἱ μέν εἰσιν ἑστῶτες καὶ ἀκλινεῖς,
+            </div>
+            <div n="4" type="fragment">
+               <pb n="368"/>
+               <p>4.Τῶν φθόγγων οἱ μέν εἰσιν ἑστῶτες καὶ ἀκλινεῖς,
 οἱ δὲ κινούμενοι καὶ κεκλιμένοι. ἑστῶτες μὲν οὖν εἰσιν
 ὀκτώ· προσλαμβανόμενος, ὑπάτη ὑπάτων, ὑπάτη μέσων,
 μέση, νήτη συνημμένων, παραμέση, νήτη διεζευγμένων,
@@ -144,20 +157,19 @@ melius transponitur post 368, 18.</note>
 εἰσι πέντε· ὑπάτη ὑπάτων, ὑπάτη μέσων, μέση, παραμέση,
 νήτη διεζευγμένων. ἄπυκνοι δὲ τρεῖς· προσλαμβανόμενος, <lb n="15"/>
 νήτη συνημμένων, νήτη ὑπερβολαίων. (p. 3)</p>
-</div>
-	</div>
-	<div type="textpart" subtype="book" n="2">
-<div type="textpart" subtype="fragment" n="1">
-<head>1. Λυδίου τρόπου σημεῖα κατὰ τὸ
+            </div>
+         </div>
+         <div n="2" type="book">
+            <div n="1" type="fragment">
+               <head>1. Λυδίου τρόπου σημεῖα κατὰ τὸ
 διάτονον γένος.</head>
-<note type="footnote">1 ἀκλινεῖς] λ M2. 19 nota 1 a in M T. n. 7a et 16a
+               <note type="footnote">1 ἀκλινεῖς] λ M2. 19 nota 1 a in M T. n. 7a et 16a
 forma minuscula. notae 11 a 12 b 13a et b 14 a 15 b abierunt
 in formas rotundas. nota 15 a quasi θ fere semper. 15 b ??M.
 nota 16 b W, vide prolegg. 17 et 18 carent accentu.</note>
-<note type="footnote">ἑστῶτες leon. c. 4 p. 185.</note>
-
-<pb n="369"/>
-<p>Προσλαμβανόμενος ζῆτα ἐλλειπὲς καὶ,
+               <note type="footnote">ἑστῶτες leon. c. 4 p. 185.</note>
+               <pb n="369"/>
+               <p>Προσλαμβανόμενος ζῆτα ἐλλειπὲς καὶ,
 ταῦ πλάγιον
 ὑπάτη ὑπάτων γάμμα ἀπεστραμμένο
 καὶ γάμμα ὀρθόν
@@ -187,19 +199,18 @@ nota 16 b W, vide prolegg. 17 et 18 carent accentu.</note>
 καθειλκυσμένον, ἐπὶ τὴν ὀξύτητα
 <lb n="30"/> νήτη ὑπερβολαίων ἰῶτα καὶ λάμβδα
 πλάγιον, ἐπὶ τὴν ὀξύτητα</p>
-<note type="footnote">1 ἐλλειπές libri fere semper, saepe M corr. in ἐλλιπές.
+               <note type="footnote">1 ἐλλειπές libri fere semper, saepe M corr. in ἐλλιπές.
 ἐλλιπὲς M p. 379, 5. s. 380, 10. . 13. nota 1a erat Z, sed tertia
 pars erasa. alterum notarum signum, prout spatium suppedi-
 tat, aut iuxta alterum positum in M aut infra. cf. ad Bacchium
 p. 293. 13 λάβδα. M insert μ. item l. 14. n. 8 b ?? minusc.,
 cf. Bch. 294, 4. 9 b item ??. 21 E quadratum M, rotun-
 dum M1. n. 16b v. prolegomena p. 366. n. 17 μ min. M.</note>
-</div>
-
-<div type="textpart" subtype="section" n="2">
-<pb n="370"/>
-<head>2. Ὑπολυδίου σημεῖα κατὰ τὸ διάτονον γένος.</head>
-<p>Προσλαμβανόμενος ου κάτω γραμμὴν
+            </div>
+            <div n="2" type="section">
+               <pb n="370"/>
+               <head>2. Ὑπολυδίου σημεῖα κατὰ τὸ διάτονον γένος.</head>
+               <p>Προσλαμβανόμενος ου κάτω γραμμὴν
 ἔχον καὶ ἦτα
 ὑπάτη ὑπάτων μῦ ἀνεστραμμένον καὶ
 <lb n="5"/> ἦτα ἐλλειπές
@@ -228,16 +239,15 @@ dum M1. n. 16b v. prolegomena p. 366. n. 17 μ min. M.</note>
 <lb n="20"/> ὕπτιον καὶ ζῆτα
 νήτη ὑπερβολαίων φῖ πλάγιον καὶ
 ἦτα ἀμελητικὸν καθειλκυσμένον</p>
-<note type="footnote">3 ἔχον] ἔχοντα M. 6 λάβδα] ἄλφα M, pro M quasi V.
+               <note type="footnote">3 ἔχον] ἔχοντα M. 6 λάβδα] ἄλφα M, pro M quasi V.
 20 notae ut 8 in tono lyd. 23 ξ min. 28 ε item. 30 ζ item.
 32 καθειλκυσμένον add. Meib., om. libri.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="3">
-<pb n="371"/>
-<head>3. Ὑπερλυδίου τρόπου σημεῖα κατὰ
+            </div>
+            <div n="3" type="fragment">
+               <pb n="371"/>
+               <head>3. Ὑπερλυδίου τρόπου σημεῖα κατὰ
 τὸ διάτονον γένος.</head>
-<p>Προσλαμβανόμενος φῖ καὶ δίγαμμα
+               <p>Προσλαμβανόμενος φῖ καὶ δίγαμμα
 ὑπάτη ὑπάτων σίγμα καὶ σίγμα
 <lb n="5"/> παρυπάτη ὑπάτων ῥῶ καὶ σίγμα ἀνεστραμμένον
 ὑπάτων διάτονος μῦ καὶ πῖ καθειλκυσμένον
@@ -265,7 +275,7 @@ dum M1. n. 16b v. prolegomena p. 366. n. 17 μ min. M.</note>
 ὀξύτητα
 <lb n="30"/> νήτη ὑπερβολαίων ω τετράγωνον καὶ ζῆτα, ἐπὶ
 τὴν ὀξύτητα</p>
-<note type="footnote">Omnia exhibet M, nos premit spatii inopia. 9 V] M.
+               <note type="footnote">Omnia exhibet M, nos premit spatii inopia. 9 V] M.
 13 post δεξιὸν add. κάτω νεῦον Meib., om. libri. de signo
 altero v. prolegg., item de lin. 15. 17 semper forma min,
 accentus desunt in M, quod fit saepissime; est etiam cum
@@ -274,13 +284,12 @@ prior nota destituatur accentu, altera habeat. 19 pro M M ??.
 tum notan om. accentus, item duos acc. om. l. 31; quod non
 amplius notabo. 30 post τετράγωνον add. ὕπτιον Meib.
 31 Z forma min., quod monere hinc desino.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="4">
-<pb n="372"/>
-<head>4. Ἀἰολίου τρόπου σημεῖα κατὰ τὸ
+            </div>
+            <div n="4" type="fragment">
+               <pb n="372"/>
+               <head>4. Ἀἰολίου τρόπου σημεῖα κατὰ τὸ
 διάτονον γένος.</head>
-<p>Προσλαμβανόμενος ἦτα ἐλλειπὲς ἀπεστραμμένον
+               <p>Προσλαμβανόμενος ἦτα ἐλλειπὲς ἀπεστραμμένον
 καὶ ει τετράγωνον ἀπεστραμμένον
 <lb n="5"/> ὑπάτη ὑπάτων δέλτα ἀνεστραμμένον καὶ ταῦ
 πλάγιον ἀπεστραμμένον
@@ -304,18 +313,17 @@ amplius notabo. 30 post τετράγωνον add. ὕπτιον Meib.
 τὴν ὀξύτητα
 νήτη ὑπερβολαίων κάππα καὶ ἡμίδελτα
 καθειλκυσμένον, ἐπὶ τὴν ὀξύτητα</p>
-<note type="footnote">4 ἀπεστρ. L(ips.), ἀντεστρ. M. 5 ἀνεστρ. L, ἀντεστρ. M.
+               <note type="footnote">4 ἀπεστρ. L(ips.), ἀντεστρ. M. 5 ἀνεστρ. L, ἀντεστρ. M.
 6 ἀπεστρ. L, ἀντεστρ. M. 10 μέσων] μείζων M. 13 κλ M
 et semper ita. 22 n. alt. ??. M. 23 φῖ in ras. M.</note>
-<note type="footnote">De tredecim tonis Aristoreni vide Cleon. c. 12, de quin-
+               <note type="footnote">De tredecim tonis Aristoreni vide Cleon. c. 12, de quin-
 decim tonis recentiorum ArQu. I 10. p. 22.</note>
-</div>
-
-<div type="textpart" subtype="section" n="5">
-<pb n="373"/>
-<head>5. Ὑποαιολίου τρόπου σημεῖα
+            </div>
+            <div n="5" type="section">
+               <pb n="373"/>
+               <head>5. Ὑποαιολίου τρόπου σημεῖα
 κατὰ τὸ διάτονον γένος.</head>
-<p>Προσλαμβανόμενος πῖ ἀνεστραμμένον
+               <p>Προσλαμβανόμενος πῖ ἀνεστραμμένον
 καὶ σίγμα διπλοῦν ἀπεστραμμένον
 <lb n="5"/> ὑπάτη ὑπάτων ἀντίνυ καὶ πῖ διπλοῦν
 παρυπάτη ὑπάτων μῦ ἀνεστραμμένον
@@ -345,15 +353,14 @@ decim tonis recentiorum ArQu. I 10. p. 22.</note>
 <lb n="30"/> καὶ βαρεῖα
 νήτη ὑπερβολαίων χῖ διεφθορὸς καὶ
 ἡμίαλφα ἀριστερὸν κάτω νεῦον</p>
-<note type="footnote">1 ὑποαιόλου M. 7 ?? om. M. 21 ??.] M item l 25.
+               <note type="footnote">1 ὑποαιόλου M. 7 ?? om. M. 21 ??.] M item l 25.
 28 hanc lineam om. M, insert post l. 32. 32 ?? λ M.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="6">
-<pb n="374"/>
-<head>6 Ὑπεραιολίου τρόπου σημεῖα
+            </div>
+            <div n="6" type="fragment">
+               <pb n="374"/>
+               <head>6 Ὑπεραιολίου τρόπου σημεῖα
 κατὰ τὸ διάτονον γένος.</head>
-<p>Προσλαμβανόμενος χῖ καὶ ἡμίμυ δεξιόν
+               <p>Προσλαμβανόμενος χῖ καὶ ἡμίμυ δεξιόν
 ὑπάτη ὑπάτων ταῦ καὶ δίγαμμα
 <lb n="5"/> ἀπλστραμμένον
 παρυπάτη ὑπάτων σίγμα καὶ σίγμα
@@ -382,18 +389,17 @@ decim tonis recentiorum ArQu. I 10. p. 22.</note>
 <lb n="30"/> ἐπὶ τὴν ὀξύτητα
 νήτη ὑπερβολαίων α καὶ βαρεῖα, ἐπὶ τὴν
 ὀξύτητα. (p. 11)</p>
-<note type="footnote">5 ?? F M. 20 ?? λ fere M.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="7">
-<pb n="375"/>
-<head>(p. 11) 7. Φρυγίου τρόπου σημεῖα κατὰ
+               <note type="footnote">5 ?? F M. 20 ?? λ fere M.</note>
+            </div>
+            <div n="7" type="fragment">
+               <pb n="375"/>
+               <head>(p. 11) 7. Φρυγίου τρόπου σημεῖα κατὰ
 τὸ διάτονον γένος.</head>
-<p>Προσλαμβανόμενος ἰῶτα πλάγιον καὶ
+               <p>Προσλαμβανόμενος ἰῶτα πλάγιον καὶ
 ει τετράγωνον
 <lb n="5"/> ὑπάτη ὑπάτων ζῆτα ἐλλειπὲς καὶ ταῦ
 πλάγιον</p>
-<p>Παρυπάτη ὑπάτων δίγαμμα καὶ ταῦ
+               <p>Παρυπάτη ὑπάτων δίγαμμα καὶ ταῦ
 ἀνεστραμμένον
 ὑπάτων διάτονος ω καὶ ἡμίμυ
 <lb n="10"/> ἀριστερόν
@@ -419,17 +425,16 @@ decim tonis recentiorum ArQu. I 10. p. 22.</note>
 καὶ ἡμίαλφα δεξιὸν ἄνω νεῦον
 νήτη ὑπερβολαίων μῦ καὶ πῖ καθειλκυσμένον,
 ἐπὶ τὴν ὀξύτητα</p>
-<note type="footnote">4 —] \ M semper. 10 ]  M. 11 post δίγαμμα verbum
+               <note type="footnote">4 —] \ M semper. 10 ]  M. 11 post δίγαμμα verbum
 erasum M. 18 ]
 22 post νῦ item πλάγιον et ἀπεστραμμένον erasum. lin. 22
 om M. 29 ]  M. 31 δεξιὸν L, ἀρίστερον M. ] M.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="8">
-<pb n="376"/>
-<head>8. Ὑποφρυγίου τρόπου σημεῖα.
+            </div>
+            <div n="8" type="fragment">
+               <pb n="376"/>
+               <head>8. Ὑποφρυγίου τρόπου σημεῖα.
 κατὰ τὸ διάτονον γένος.</head>
-<p>Προσλαμβανόμενος σίγμα διπλοῦν ἀπεστραμμένον
+               <p>Προσλαμβανόμενος σίγμα διπλοῦν ἀπεστραμμένον
 καὶ σίγμα διπλοῦν
 <lb n="5"/> ὑπάτη ὑπάτων ου κάτω γραμμὴν ἔχον
 καὶ ἦια
@@ -457,14 +462,13 @@ om M. 29 ]  M. 31 δεξιὸν L, ἀρίστερον M. ] M.</note>
 ὑπερβολαίων διάτονος γάμμα καὶ νῦ
 νήτη ὑπερβολαίων ω τετράγωνον καὶ
 ζῆτα</p>
-<note type="footnote">10 —] \ M. 33 ὕπτιον] add. Mb. pos τετράγωνον.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="9">
-<pb n="377"/>
-<head>9. Ὑπερφρυγίου τρόπου σημεῖα
+               <note type="footnote">10 —] \ M. 33 ὕπτιον] add. Mb. pos τετράγωνον.</note>
+            </div>
+            <div n="9" type="fragment">
+               <pb n="377"/>
+               <head>9. Ὑπερφρυγίου τρόπου σημεῖα
 κατὰ τὸ διάτονον γένος.</head>
-<p>Προσλαμβανόμενος ω καὶ ἡμίμυ ἀριστερόν
+               <p>Προσλαμβανόμενος ω καὶ ἡμίμυ ἀριστερόν
 ὑπάτη ὑπάτων φῖ καὶ δίγαμμα
 <lb n="5"/> παρυπάτη ὑπάτων υ καὶ δίγαμμα ἀνεστραμμένον
 ὑπάτων διάτονος πῖ καὶ σίγμα ἀπεστραμμένον
@@ -492,16 +496,16 @@ om M. 29 ]  M. 31 δεξιὸν L, ἀρίστερον M. ] M.</note>
 <lb n="30"/> ἀπεστραμμένον, ἐπὶ τὴν ὀξύτητα
 νήτη ὑπερβολαίων γάμμα καὶ νῦ, ἐπὶ τὴν
 ὀξύτητα (p. 15)</p>
-<note type="footnote">17 ἀριστερὸν Meib., δεξιὸν libri. κάτω L, ἄνω M.
+               <note type="footnote">17 ἀριστερὸν Meib., δεξιὸν libri. κάτω L, ἄνω M.
 pro ?? M ??. 18—19 in paginae ne periit. 20 ὕπτιον add.
 Meib. 22 ??] M 24 ??] ?? M.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="10">
-<pb n="378"/>
-<note>(p. 15)</note><head> 1Ο. Ἰαστίου τρόπου σημεῖα κατὰ
+            </div>
+            <div n="10" type="fragment">
+               <pb n="378"/>
+               <note>(p. 15)</note>
+               <head> 1Ο. Ἰαστίου τρόπου σημεῖα κατὰ
 τὸ διάτονον γένος.</head>
-<p>Προσλαμβανόμενος μῦ ἀνεστραμμένον καὶ
+               <p>Προσλαμβανόμενος μῦ ἀνεστραμμένον καὶ
 ἦτα ἐλλειπές
 <lb n="5"/> ὑπάτη ὑπάτων ἦτα ἐλλειπὲς ἀπεστραμμένον
 καὶ ει τετράγωνον ἀπεστραμμένον
@@ -529,14 +533,13 @@ Meib. 22 ??] M 24 ??] ?? M.</note>
 ἀμελητικὸν καθειλκυσμένον
 νήτη ὑπερβολαίων ου καὶ κάππα, ἐπὶ τὴν
 ὀξύτητα</p>
-<note type="footnote">28 ὕπτιον om. M.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="11">
-<pb n="379"/>
-<head>11. Ὑποϊαστίου τρόπου σημεῖα
+               <note type="footnote">28 ὕπτιον om. M.</note>
+            </div>
+            <div n="11" type="fragment">
+               <pb n="379"/>
+               <head>11. Ὑποϊαστίου τρόπου σημεῖα
 κατὰ τὸ διάτονον γένος.</head>
-<p>Προσλαμβανόμενος ταῦ πλάγιον ἀπεστραμμένον
+               <p>Προσλαμβανόμενος ταῦ πλάγιον ἀπεστραμμένον
 καὶ ταῦ ὀρθόν
 <lb n="5"/> ὑπάτη ὑπάτων πῖ ἀνεστραμμένον καὶ σίγμα
 διπλοῦν ἀπεστραμμένον
@@ -564,14 +567,13 @@ Meib. 22 ??] M 24 ??] ?? M.</note>
 <lb n="30"/> ὑπερβολαίων διάτονος ζῆτα καὶ πῖ
 πλάγιον
 νήτη ὑπερβολαίων ἄλφα καὶ βαρεῖα</p>
-<note type="footnote">6 ἀπεστραμ.] ἀντεστραμ. M. ?? ] ?? M.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="12">
-<pb n="380"/>
-<head>12. Ὑπτεριαστίου τρόπου σημεῖα
+               <note type="footnote">6 ἀπεστραμ.] ἀντεστραμ. M. ?? ] ?? M.</note>
+            </div>
+            <div n="12" type="fragment">
+               <pb n="380"/>
+               <head>12. Ὑπτεριαστίου τρόπου σημεῖα
 κατὰ τὸ διάτονον γένος.</head>
-<p>Προσλαμβανόμενος γάμμα ἀπεστραμμένον
+               <p>Προσλαμβανόμενος γάμμα ἀπεστραμμένον
 καὶ γάμμα ὀρθόν
 <lb n="5"/> ὑπάτη ὑπάτων χῖ καὶ ἡμίμυ δεξιόν
 παρυπάτη ὑπάτων φῖ καὶ δίγαμμα
@@ -600,50 +602,51 @@ Meib. 22 ??] M 24 ??] ?? M.</note>
 πλάγιον, ἐπὶ τὴν ὀξύτητα
 <lb n="30"/> νήτη ὑπερβολαίων ζῆτα καὶ πῖ πλάγιον,
 ἐπὶ τὴν ὀξύτητα (p. 19)</p>
-<note type="footnote">6 δίγαμμα corr. in δίγαμμον M. 15 et 20 ὕπτιον om M.
+               <note type="footnote">6 δίγαμμα corr. in δίγαμμον M. 15 et 20 ὕπτιον om M.
 23 καθειλκυσμένον om. M. 31 ?? sine accentu M.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="13">
-<pb n="381"/>
-<head>(p. 19) 13. Δωρίου τρόπου σημεῖα κατὰ
+            </div>
+            <div n="13" type="fragment">
+               <pb n="381"/>
+               <head>(p. 19) 13. Δωρίου τρόπου σημεῖα κατὰ
 τὸ διάτονον γένος.</head>
-<p>Προσλαμβανόμενος ἀντίνυ καὶ πῖ
+               <p>Προσλαμβανόμενος ἀντίνυ καὶ πῖ
 διπλοῦν</p>
-<lb n="5"/> <p>ὑπάτη ὑπάτων ἰῶτα πλάγιον καὶ ει
+               <lb n="5"/>
+               <p>ὑπάτη ὑπάτων ἰῶτα πλάγιον καὶ ει
 τετράγωνον</p>
-<p>παρυπάτη ὑπάτων ἡμιθῆτα κάτω νεῦον καί ει τετράγωνον ὕπτιον</p>
-<p>ὑπάτων διάτονος δέλτα ἀνεστραμμένον καὶ
+               <p>παρυπάτη ὑπάτων ἡμιθῆτα κάτω νεῦον καί ει τετράγωνον ὕπτιον</p>
+               <p>ὑπάτων διάτονος δέλτα ἀνεστραμμένον καὶ
 <lb n="10"/> ταῦ πλάγιον ἀπεστραμμένον</p>
-<p>ὑπάτη μέσων ω καὶ ἡμίμυ ἀριστερόν</p>
-<p>παρυπάτη μέσων ψῖ καὶ ἡμίμυ
+               <p>ὑπάτη μέσων ω καὶ ἡμίμυ ἀριστερόν</p>
+               <p>παρυπάτη μέσων ψῖ καὶ ἡμίμυ
 ὕπτιον</p>
-<p>μέσων διάτονος ταῦ καὶ δίγαμμα
+               <p>μέσων διάτονος ταῦ καὶ δίγαμμα
 <lb n="15"/> ἀπεστραμμένον</p>
-<p>μέση πῖ καὶ σίγμα ἀπεστραμμένον</p>
-<p>τρίτη συνημμένων ου καὶ κάππα</p>
-<p>συνημμένων διάτονος κάππα καὶ ἡμίδελτα
+               <p>μέση πῖ καὶ σίγμα ἀπεστραμμένον</p>
+               <p>τρίτη συνημμένων ου καὶ κάππα</p>
+               <p>συνημμένων διάτονος κάππα καὶ ἡμίδελτα
 καθειλκυσμένον</p>
-<lb n="20"/> <p>νήτη συνημμένων ἦτα καὶ λάμβδα πλάγιον
+               <lb n="20"/>
+               <p>νήτη συνημμένων ἦτα καὶ λάμβδα πλάγιον
 ἀπεστραμμένον</p>
-<p>παράμεσος μῦ καὶ πῖ καθειλκυσμένον</p>
-<p>τρίτη διεζευγμένων λάμβδα καὶ ἡμίδελτα
+               <p>παράμεσος μῦ καὶ πῖ καθειλκυσμένον</p>
+               <p>τρίτη διεζευγμένων λάμβδα καὶ ἡμίδελτα
 ὕπτιον</p>
-<lb n="25"/> <p>διεζευγμένων διάτονος ἦτα καὶ (p. 20)
+               <lb n="25"/>
+               <p>διεζευγμένων διάτονος ἦτα καὶ (p. 20)
 λάμβδα πλάγιον ἀπεστραμμένον</p>
-<p>νήτη διεζευγμένων γάμμα καὶ νῦ</p>
-<p>ὑπερβολαίων διάτονος χῖ διεφθορὸς καὶ
+               <p>νήτη διεζευγμένων γάμμα καὶ νῦ</p>
+               <p>ὑπερβολαίων διάτονος χῖ διεφθορὸς καὶ
 <lb n="30"/> ἡμίαλφα ἀριστερὸν κάτω νεῦον</p>
-<p>νήτη ὑπερβολαίων ταῦ ἀνεστραμμένον καὶ
+               <p>νήτη ὑπερβολαίων ταῦ ἀνεστραμμένον καὶ
 ἡμίαλφα δεξιὸν ἄνω νεῦον</p>
-<note type="footnote">11]  M. 32 ultima nota M.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="14">
-<pb n="382"/>
-<head>14 Ὑποδωρίου τρόπον σημεῖα
+               <note type="footnote">11]  M. 32 ultima nota M.</note>
+            </div>
+            <div n="14" type="fragment">
+               <pb n="382"/>
+               <head>14 Ὑποδωρίου τρόπον σημεῖα
 κατὰ τὸ διάτονον γένος.</head>
-<p>Προσλαμβανόμενος ἡμίφι πλάγιον ἀπεστραμμένον
+               <p>Προσλαμβανόμενος ἡμίφι πλάγιον ἀπεστραμμένον
 καὶ ἡμίφι πλάγιον
 <lb n="5"/> ὑπάτη ὑπάτων σίγμα διπλοῦν ἀπεστραμμένον
 καὶ σίγμα διπλοῦν
@@ -674,14 +677,13 @@ Meib. 22 ??] M 24 ??] ?? M.</note>
 ὑπερβολαίων διάτονος ἦτα καὶ λάμβδα
 πλάγιον ἀπεστραμμένον
 νήτη ὑπερβολαίων γάμμα καὶ νῦ</p>
-<note type="footnote">3 ἡμίφι] ἡμί c. spat. M. 16 ]  M. 17 Ψ ] (Z) M.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="15">
-<pb n="383"/>
-<head>15. Ὑπερδωρίου τρόπου σημεῖα
+               <note type="footnote">3 ἡμίφι] ἡμί c. spat. M. 16 ]  M. 17 Ψ ] (Z) M.</note>
+            </div>
+            <div n="15" type="fragment">
+               <pb n="383"/>
+               <head>15. Ὑπερδωρίου τρόπου σημεῖα
 κατὰ τὸ διάτονον γένος.</head>
-<p>Προσλαμβανόμενος δέλτα ἀνεστραμμένον καὶ
+               <p>Προσλαμβανόμενος δέλτα ἀνεστραμμένον καὶ
 ταῦ πλάγιον ἀπεστραμμένον
 <lb n="5"/> ὑπάτη ὑπάτων ω καὶ ἡμίμυ ἀριστερόν
 παρυπάτη ὑπάτων ψῖ καὶ ἡμίμυ ὕπτιον
@@ -710,16 +712,16 @@ Meib. 22 ??] M 24 ??] ?? M.</note>
 καθειλκυσμένον, ἐπὶ τὴν ὀξύτητα
 <lb n="30"/> νήτη ὑπερβολαίων ἦτα καὶ λάμβδα πλάγιον
 ἀπεστραμμένον, ἐπὶ τὴν ὀξύτητα (p. 23)</p>
-<note type="footnote">4 ταῦ πλ. ἀνεστρ. M. 18 et 22 ?? λ M. 25 δεξιὸν Meib.
+               <note type="footnote">4 ταῦ πλ. ἀνεστρ. M. 18 et 22 ?? λ M. 25 δεξιὸν Meib.
 ἀριστερὸν M. ] M.</note>
-</div>
-	</div>
-	<div type="textpart" subtype="book" n="3">
-<div type="textpart" subtype="fragment" n="1">
-<pb n="384"/>
-<head>1. Δυδίου τρόπου σημεῖα κατὰ τὸ
+            </div>
+         </div>
+         <div n="3" type="book">
+            <div n="1" type="fragment">
+               <pb n="384"/>
+               <head>1. Δυδίου τρόπου σημεῖα κατὰ τὸ
 χρωματικὸν γένος.</head>
-<p>Προσλαμβανάμινος ζῆτα ἐλλειπὲς καὶ ταῦ
+               <p>Προσλαμβανάμινος ζῆτα ἐλλειπὲς καὶ ταῦ
 πλάγιον
 <lb n="5"/> ὑπάτη ὑπάτων γάμμα ἀπεστραμμένον καὶ
 γάμμα ὀρθόν
@@ -756,16 +758,15 @@ Meib. 22 ??] M 24 ??] ?? M.</note>
 γραμμὰς ἔχοτα, ἐπὶ τὴν ὀξύτητα
 νήτη ὑπερβολαίων ἰῶτα καὶ λάμβδα πλάγιον,
 ἐπὶ τὴν ὀξύτητα</p>
-<note type="footnote">9 χρωματικός M item l. 14. 11 γρ ἔχ. add. Meib.
+               <note type="footnote">9 χρωματικός M item l. 14. 11 γρ ἔχ. add. Meib.
 16 μέσα M. sed cf. l. 22. 34 et 36 hemialpha ?? M, sed
 cf. prolegg. 36 δεξιὸν Meib., ἀριστερόν M. 37 γρ. ἔχ. ego.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="2">
-<pb n="385"/>
-<head>2. Ὑπολυδίου τρόπου σημεῖα κατὰ
+            </div>
+            <div n="2" type="fragment">
+               <pb n="385"/>
+               <head>2. Ὑπολυδίου τρόπου σημεῖα κατὰ
 τὸ χρωματικὸν γένος.</head>
-<p>Προσλαμβανόμενος ου κάτω γραμμὴν ἔχον
+               <p>Προσλαμβανόμενος ου κάτω γραμμὴν ἔχον
 καὶ ἦτα
 <lb n="5"/> ὑπάτη ὑπάτων μῦ ἀνεστραμμένον καὶ ἦτα
 ἐλλειπές
@@ -798,14 +799,13 @@ cf. prolegg. 36 δεξιὸν Meib., ἀριστερόν M. 37 γρ. ἔχ. ego.
 πῖ πλάγιον ἀπεστραμμένον
 νήτη ὑπερβολαίων φῖ πλάγιον καὶ ἦτα ἀμελητικὸν
 <lb n="35"/> καθειλκυσμένον (p. 26)</p>
-<note type="footnote">6 ]M.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="3">
-<pb n="386"/>
-<head>(p. 26) 3. Ὑπερλυδίου τρόπου σημεῖα κατὰ
+               <note type="footnote">6 ]M.</note>
+            </div>
+            <div n="3" type="fragment">
+               <pb n="386"/>
+               <head>(p. 26) 3. Ὑπερλυδίου τρόπου σημεῖα κατὰ
 τὸ χρωματικὸν γένος.</head>
-<p>Προσλαμβανόμενος φῖ καὶ δίγαμμον
+               <p>Προσλαμβανόμενος φῖ καὶ δίγαμμον
 ὑπάτη ὑπάτων σίγμα καὶ σίγμα
 <lb n="5"/> παρυπάτη ὑπάτων ῥῶ καὶ σίγμα 
 νεστραμμένον
@@ -838,15 +838,14 @@ cf. prolegg. 36 δεξιὸν Meib., ἀριστερόν M. 37 γρ. ἔχ. ego.
 ὀξύτητα
 νήτη ὑπερβολαίων ω τετράγωνον ὕπτιον καὶ
 <lb n="35"/> ζῆτα, ἐπὶ τὴν ὀξύτητα</p>
-<note type="footnote">12—13 om. M. 18 κ. ν. om. M. pro ?? M ??, sed
+               <note type="footnote">12—13 om. M. 18 κ. ν. om. M. pro ?? M ??, sed
 vide prolegg. 20 ἐπὶ τ. ὀ. om. M.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="4">
-<pb n="387"/>
-<head>4. Αἰολίου τρόπου σημεῖα κατὰ τὸ
+            </div>
+            <div n="4" type="fragment">
+               <pb n="387"/>
+               <head>4. Αἰολίου τρόπου σημεῖα κατὰ τὸ
 χρωματικὸν γένος.</head>
-<p>Προσλαμβανόμενος ἦτα ἐλλειπὲς ἀπεστραμμένον
+               <p>Προσλαμβανόμενος ἦτα ἐλλειπὲς ἀπεστραμμένον
 καὶ ει τετράγωνον ἀπεστραμμένον
 <lb n="5"/> ὑπάτη ὑπάτων δέλτα ἀνεστραμμένον καὶ
 ταῦ πλάγιον ἀπεστραμμένον
@@ -878,14 +877,13 @@ vide prolegg. 20 ἐπὶ τ. ὀ. om. M.</note>
 ἄνω νεῦον
 νήτη ὑπερβολαίων κάππα καὶ ἡμίδελια
 καθειλκυσμένον, ἐπὶ τὴν ὀξύτητα</p>
-<note type="footnote">6 ] δ M. 30 χρωματικὴ om. M. 32 hemialpha ?? M.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="5">
-<pb n="388"/>
-<head>5. Ὑποαιολίου τρόπου σημεῖα κατὰ,
+               <note type="footnote">6 ] δ M. 30 χρωματικὴ om. M. 32 hemialpha ?? M.</note>
+            </div>
+            <div n="5" type="fragment">
+               <pb n="388"/>
+               <head>5. Ὑποαιολίου τρόπου σημεῖα κατὰ,
 τὸ χρωματικὸν γένος.</head>
-<p>Προσλαμβανόμενος πῖ ἀνεστραμμένον καὶ
+               <p>Προσλαμβανόμενος πῖ ἀνεστραμμένον καὶ
 σίγμα διπλοῦν ἀπεστραμμένον
 <lb n="5"/> ὑπάτη ὑπάτων ἀντίνυ καὶ πῖ διπλοῦν
 παρυπάτη ὑπάτων μῦ ἀνεστραμμένον καὶ
@@ -916,14 +914,13 @@ vide prolegg. 20 ἐπὶ τ. ὀ. om. M.</note>
 καὶ πῖ πλάγιον ἀπεστραμμένον
 νήτη ὑπερβολαίων χῖ διεφθορὸς καὶ ἡμίαλφα
 ἀριστερὸν κάτω νεῦον</p>
-<note type="footnote">7 et 9 pro  et  M: </note>
-</div>
-
-<div type="textpart" subtype="fragment" n="6">
-<pb n="389"/>
-<head>6. Ὑπεραιολίου τρόπον σημεῖα κατὰ
+               <note type="footnote">7 et 9 pro  et  M: </note>
+            </div>
+            <div n="6" type="fragment">
+               <pb n="389"/>
+               <head>6. Ὑπεραιολίου τρόπον σημεῖα κατὰ
 τὸ χρωματικὸν γένος.</head>
-<p>Προσλαμβανόμενος χῖ καὶ ἡμίμυ δεξιόν
+               <p>Προσλαμβανόμενος χῖ καὶ ἡμίμυ δεξιόν
 ὑπάτη ὑπάτων ταῦ καὶ δίγαμμον
 <lb n="5"/> ἀπεστραμένον
 παρυπάτη ὑπάτων σίγμα καὶ σίγμα
@@ -956,14 +953,13 @@ vide prolegg. 20 ἐπὶ τ. ὀ. om. M.</note>
 ὀξύτητα
 νήτη ὑπερβολαίων ἄλφα καὶ βαρεῖα, ἐπὶ
 <lb n="35"/> τὴν ὀξύτητα (p. 32)</p>
- <note type="footnote">12 pro ⟨M.⟩ 20 ἐπὶ τ. ὀ. om. M.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="7">
-<pb n="390"/>
-<head>(p. 32) 7 Φρυγίου τρόπου σημεῖα κατὰ
+               <note type="footnote">12 pro ⟨M.⟩ 20 ἐπὶ τ. ὀ. om. M.</note>
+            </div>
+            <div n="7" type="fragment">
+               <pb n="390"/>
+               <head>(p. 32) 7 Φρυγίου τρόπου σημεῖα κατὰ
 τὸ χρωματικὸν γένος.</head>
-<p>Προσλαμβανόμενος ἰῶτα πλάγιον καὶ ει
+               <p>Προσλαμβανόμενος ἰῶτα πλάγιον καὶ ει
 τετράγωνον
 <lb n="5"/> ὑπάτη ὑπάτων ζῆτα ἐλλειπὲς καὶ ταῦ πλάγιον
 παρυπάτη ὑπάτων δίγαμμον καὶ ταῦ
@@ -994,15 +990,14 @@ vide prolegg. 20 ἐπὶ τ. ὀ. om. M.</note>
 καὶ ἡμίαλφα ἀριστερὸν κάτω νεῦον
 νήτη ὑπερβολαίων μῦ καὶ πῖ καθειλκυσμένον,
 ἐπὶ τὴν ὀξύτητα</p>
-<note type="footnote">19 ἡμιδέλτα M, etiam 393, 20. 397, 33. accentum om. 397, 30.
+               <note type="footnote">19 ἡμιδέλτα M, etiam 393, 20. 397, 33. accentum om. 397, 30.
 29 κάτω] ἄνω M. 31 κάτω νεῦον om. M.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="8">
-<pb n="391"/>
-<head>8. Ὑποφρυγίου τρόπου σημεῖα
+            </div>
+            <div n="8" type="fragment">
+               <pb n="391"/>
+               <head>8. Ὑποφρυγίου τρόπου σημεῖα
 κατὰ τὸ χρωματικὸν γένος.</head>
-<p>Προσλαμβανόμενος σίγμα διπλοῦν ἀπεστραμμένον
+               <p>Προσλαμβανόμενος σίγμα διπλοῦν ἀπεστραμμένον
 καὶ σίγμα διπλοῦν
 <lb n="5"/> ὑπάτη ὑπάτων ου κάτω γραμμὴ ἔχον
 καὶ ἦτα
@@ -1035,14 +1030,13 @@ vide prolegg. 20 ἐπὶ τ. ὀ. om. M.</note>
 λάμβδα πλάγιον ἀπεστραμμένον
 νήτη ὑπερβολαίων ω τετράγωνον ὕπτιον
 <lb n="35"/> καὶ ζῆτα</p>
-<note type="footnote">26 χρωμ. om. M. 32 item.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="9">
-<pb n="392"/>
-<head>9. Ὑπερφρυγίου τρόπου σημεῖα
+               <note type="footnote">26 χρωμ. om. M. 32 item.</note>
+            </div>
+            <div n="9" type="fragment">
+               <pb n="392"/>
+               <head>9. Ὑπερφρυγίου τρόπου σημεῖα
 κατὰ τὸ χρωματικὸν γένοις.</head>
-<p>Προσλαμβανόμενος ω καὶ ἡμίμυ ἀριστερόν
+               <p>Προσλαμβανόμενος ω καὶ ἡμίμυ ἀριστερόν
 ὑπάτη ὑπάτων φῖ καὶ δίγαμμον
 <lb n="5"/> παρυπάτη ὑπάτων υ καὶ δίγαμμον ἀνεστραμμένον
 (p. 35)
@@ -1073,17 +1067,16 @@ vide prolegg. 20 ἐπὶ τ. ὀ. om. M.</note>
 τὴν ὀξύτητα
 νήτη ὑπερβολαίων γάμμα καὶ νῦ, ἐπὶ τὴν
 ὀξύτητα</p>
-<note type="footnote">11 ἠμίδελτα] λ M, item lin. 27. 30. 14 νῦ] μῦ M.
+               <note type="footnote">11 ἠμίδελτα] λ M, item lin. 27. 30. 14 νῦ] μῦ M.
 22 δεξιὸν κάτω] ἀριστερὸν ἄνω M, ἀριστ. et L. 23 χρωμ.
 om. M, item 29. 28 alterum signum
-Meib., ἀπεστραμμ. M. 31 alterum signum M >.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="10">
-<pb n="393"/>
-<head>10. Ἰαστίου τρόπου σημεῖα κατὰ
+Meib., ἀπεστραμμ. M. 31 alterum signum M &gt;.</note>
+            </div>
+            <div n="10" type="fragment">
+               <pb n="393"/>
+               <head>10. Ἰαστίου τρόπου σημεῖα κατὰ
 τὸ χρωματικὸν γένος.</head>
-<p>Προσλαμβανόμενος μῦ ἀνεστραμμένον καὶ
+               <p>Προσλαμβανόμενος μῦ ἀνεστραμμένον καὶ
 ἦτα ἐλλειπές
 <lb n="5"/> ὑπάτη ὑπάτων ἦτα ἐλλειπὲς ἀπεστραμμένον
 καὶ ει τετράγωνον ἀπεστραμμένον
@@ -1113,15 +1106,14 @@ Meib., ἀπεστραμμ. M. 31 alterum signum M >.</note>
 <lb n="30"/> καὶ ἡμίαλφα ἀριστερὸν κάτω νεῦον
 νήτη ὑπερβολαίων ου καὶ κάππα, ἐπὶ τὴν
 ὀξύτητα</p>
-<note type="footnote">4 pro  M  et ita saepius. 23 pro 〈 M V. 24 χρωμ
+               <note type="footnote">4 pro  M  et ita saepius. 23 pro 〈 M V. 24 χρωμ
 om. M. 30 ἀριστερόν] δεξιόν M. ] . M.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="11">
-<pb n="394"/>
-<head>11. Ὑπτοϊαστίου τρόπου σημεῖα κατὰ
+            </div>
+            <div n="11" type="fragment">
+               <pb n="394"/>
+               <head>11. Ὑπτοϊαστίου τρόπου σημεῖα κατὰ
 τὸ χρωματικὸν γένος.</head>
-<p>Προσλαμβανόμενος ταῦ πλάγιον ἀπεστραμμένον
+               <p>Προσλαμβανόμενος ταῦ πλάγιον ἀπεστραμμένον
 καὶ ταῦ ὀρθόν
 <lb n="5"/> ὑπάτη ὑπάτων πῖ ἀνεστραμμένον καὶ σίγμα
 διπλοῦν ἀπεστραμμένον
@@ -1151,15 +1143,14 @@ om. M. 30 ἀριστερόν] δεξιόν M. ] . M.</note>
 <lb n="30"/> παρανήτη ὑπερβολαίων χρωματικὴ ἦτα καὶ
 λάμβδα πλάγιον ἀπεστραμμένον
 νήτη ὑπερβολαίων ἄλφα καὶ βαρεῖα (p. 39)</p>
-<note type="footnote">5—6 πῖ διπλοῦν ἀν. et M, sed cf. tonum hypoaeolium,
+               <note type="footnote">5—6 πῖ διπλοῦν ἀν. et M, sed cf. tonum hypoaeolium,
 et chrom. hypodor. 13 v. ad 393, 4. 18 pro  M .</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="12">
-<pb n="395"/>
-<head>(p. 39) 12. Ὑπεριαστίου τρόπου σημεῖα κατὰ
+            </div>
+            <div n="12" type="fragment">
+               <pb n="395"/>
+               <head>(p. 39) 12. Ὑπεριαστίου τρόπου σημεῖα κατὰ
 τὸ χρωματικὸν γένος.</head>
-<p>Προσλαμβανόμενος γάμμα ἀπεστραμμένο
+               <p>Προσλαμβανόμενος γάμμα ἀπεστραμμένο
 καὶ γάμμα ὀρθόν
 <lb n="5"/> ὑπάτη ὑπάτων χῖ καὶ ἡμίμυ δεξιόν
 παρυπάτη ὑπάτων φῖ καὶ δίγαμμον
@@ -1191,13 +1182,12 @@ et chrom. hypodor. 13 v. ad 393, 4. 18 pro  M .</note>
 κάππα ἀπεστραμμένον, ἐπὶ τὴν ὀξύτητα
 νήτη ὑπερβολαίων ζῆτα καὶ πῖ πλάγιον,
 ἐπὶ τὴν ξύτητα</p>
-</div>
-
-<div type="textpart" subtype="fragment" n="13">
-<pb n="396"/>
-<head>13. Δωρίου τρόπου σημεῖα κατὰ τὸ
+            </div>
+            <div n="13" type="fragment">
+               <pb n="396"/>
+               <head>13. Δωρίου τρόπου σημεῖα κατὰ τὸ
 χρωματικὸν γένος.</head>
-<p>Προσλαμβανόμενος ἀντίνυ καὶ πῖ διπλοῦν
+               <p>Προσλαμβανόμενος ἀντίνυ καὶ πῖ διπλοῦν
 ὑπάτη ὑπάτων ἰῶτα πλάγιον καὶ ει
 <lb n="5"/> τετράγωνον
 παρυπάτη ὑπάτων ἡμιθῆτα κάτω νεῦον
@@ -1227,15 +1217,14 @@ et chrom. hypodor. 13 v. ad 393, 4. 18 pro  M .</note>
 <lb n="30"/> βαρεῖα
 νήτη ὑπερβολαίων ταῦ ἀνεστραμμένον καὶ
 ἡμίαλφα δεξιὸν ἄνω νεῦον</p>
-<note type="footnote">11 pro  M  et vice versa l. 14. 12 Ψ  M.
+               <note type="footnote">11 pro  M  et vice versa l. 14. 12 Ψ  M.
 23—25 λάμβδα — διεζευγμένων om. M. 32 alt. sign.  M.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="14">
-<pb n="397"/>
-<head>14. Ὑποδωρίου τρόπου σημεῖα κατὰ
+            </div>
+            <div n="14" type="fragment">
+               <pb n="397"/>
+               <head>14. Ὑποδωρίου τρόπου σημεῖα κατὰ
 τὸ χρωματικὸν γένος.</head>
-<p>Προσλαμβανόμενος ἡμίφι πλάγιον ἀπεστραμμένον
+               <p>Προσλαμβανόμενος ἡμίφι πλάγιον ἀπεστραμμένον
 καὶ ἡμίφι πλάγιον
 <lb n="5"/> ὑπάτη ὑπάτων σίγμα διπλοῦν ἀπεστραμμένον
 καὶ σίγμα διπλοῦν
@@ -1267,16 +1256,15 @@ et chrom. hypodor. 13 v. ad 393, 4. 18 pro  M .</note>
 παρανήτη ὑπερβολαίων χρωματικὴ κάππα
 καὶ ἡμίδελτα καθειλκυσμένον
 (p. 43) νήτη ὑπερβολαίων γάμμα καὶ νῦ</p>
-<note type="footnote">5 σίγμα — ὑπάτων om. M. 9 χρωματικός M. 18 et 21
+               <note type="footnote">5 σίγμα — ὑπάτων om. M. 9 χρωματικός M. 18 et 21
 M invertit ?? ut supra p. 396. 24 δίγαμμον ἀνεστραμμένον
 et . M.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="15">
-<pb n="398"/>
-<head>15. Ὑπερδωρίου τρόπου σημεῖα κατὰ
+            </div>
+            <div n="15" type="fragment">
+               <pb n="398"/>
+               <head>15. Ὑπερδωρίου τρόπου σημεῖα κατὰ
 τὸ χρωματικὸν γένος.</head>
-<p>Προσλαμβανόμενος δέλτα ἀνεστραμμένον καὶ.
+               <p>Προσλαμβανόμενος δέλτα ἀνεστραμμένον καὶ.
 ταῦ πλάγιον ἀπεστραμμένον
 <lb n="5"/> ὑπάτη ὑπάτων ω καὶ ἡμίμυ ἀριστερόν
 παρυπάτη ὑπάτων ψῖ καὶ ἡμίμυ ὕπτιον
@@ -1306,17 +1294,16 @@ et . M.</note>
 <lb n="30"/> κάππα ἀπεστραμμένον, ἐπὶ τὴν ὀξύτητα
 νήτη ὑπερβολαίων ἦτα καὶ λάμβδα πλάγιον
 ἀπεστραμμένον, ἐπὶ τὴν ὀξύτητα</p>
-<note type="footnote">15 pro > M
-32 > M invertit ut supra lin.15.</note>
-</div>
-	</div>
-	<div type="textpart" subtype="book" n="4">
-
-<div type="textpart" subtype="fragment" n="1">
-<pb n="399"/>
-<head>1. Λυδίου τρόπου σημεῖα κατὰ τὸ
+               <note type="footnote">15 pro &gt; M
+32 &gt; M invertit ut supra lin.15.</note>
+            </div>
+         </div>
+         <div n="4" type="book">
+            <div n="1" type="fragment">
+               <pb n="399"/>
+               <head>1. Λυδίου τρόπου σημεῖα κατὰ τὸ
 ἐναρμόνιον γένος.</head>
-<p>Προσλαμβανόμενος ζῆτα ἐλλειπὲς καὶ ταῦ
+               <p>Προσλαμβανόμενος ζῆτα ἐλλειπὲς καὶ ταῦ
 πλάγιον
 <lb n="5"/> ὑπάτη ὑπάτων γάμμα ἀπεστραμμένον καὶ
 γάμμα ὀρθόν
@@ -1348,15 +1335,14 @@ et . M.</note>
 καὶ ἡμίαλφα δεξιὸν ἄνω νεῦον
 νήτη ὑπερβολαίων ἰῶτα καὶ λάμβδα πλάγιον
 ἐπὶ τὴν ὀξύτητα</p>
-<note type="footnote">19 post ἀπεστρ. addit γραμμὴν ἔχον διὰ μέσου et litt.
-H  M. 34 >΄ ut saepe M.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="2">
-<pb n="400"/>
-<head>2. Ὑπολυδίου τρόπου σημεῖα κατὰ
+               <note type="footnote">19 post ἀπεστρ. addit γραμμὴν ἔχον διὰ μέσου et litt.
+H  M. 34 &gt;΄ ut saepe M.</note>
+            </div>
+            <div n="2" type="fragment">
+               <pb n="400"/>
+               <head>2. Ὑπολυδίου τρόπου σημεῖα κατὰ
 τὸ ἐναρμόνιον γένος.</head>
-<p>Προσλαμβανόμενος ου κάτω γραμμὴν ἔχον
+               <p>Προσλαμβανόμενος ου κάτω γραμμὴν ἔχον
 καὶ ἦτα
 <lb n="5"/> ὑπάτη ὑπάτων μῦ ἀνεστραμμένον καὶ ἦτα
 ἐλλειπές
@@ -1389,13 +1375,12 @@ H  M. 34 >΄ ut saepe M.</note>
 καὶ πῖ πλάγιον ἀπεστραμμένον
 (p. 47) νήτη ὑπερβολαίων φῖ πλάγιον
 καὶ ἦτα ἀμελητικὸν καθειλκυσμένον</p>
-</div>
-
-<div type="textpart" subtype="fragment" n="3">
-<pb n="401"/>
-<head>3. Ὑπερλυδίου τρόπου σημεῖα κατὰ
+            </div>
+            <div n="3" type="fragment">
+               <pb n="401"/>
+               <head>3. Ὑπερλυδίου τρόπου σημεῖα κατὰ
 τὸ ἐναρμόνιον γένος.</head>
-<p>Προσλαμβανόμενος φῖ καὶ δίγαμμον
+               <p>Προσλαμβανόμενος φῖ καὶ δίγαμμον
 ὑπάτη ὑπάτων σίγμα καὶ σίγμα
 <lb n="5"/> παρυπάτη ὑπάτων ῥῶ καὶ σίγμα
 ἀνεστραμμένον
@@ -1428,15 +1413,14 @@ H  M. 34 >΄ ut saepe M.</note>
 ὀξύτητα
 νήτη ὑπερβολαίων ω τετράγωνον ὕπτιον καὶ
 <lb n="35"/> ζῆτα, ἐπὶ τὴν ὀξύτητα</p>
-<note type="footnote">22 notae sunt in M. 29—31 om. M.
+               <note type="footnote">22 notae sunt in M. 29—31 om. M.
 Mus. script. ed. Jan.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="4">
-<pb n="402"/>
-<head>4. Ἀιολίου τρόπου σημεῖα κατὰ τὸ
+            </div>
+            <div n="4" type="fragment">
+               <pb n="402"/>
+               <head>4. Ἀιολίου τρόπου σημεῖα κατὰ τὸ
 ἐναρμόνιον γένος.</head>
-<p>Προσλαμβανόμενος ἦτα ἐλλειπὲς ἀπεστραμμένον
+               <p>Προσλαμβανόμενος ἦτα ἐλλειπὲς ἀπεστραμμένον
 καὶ ει τετράγωνον ἀπεστραμμένον
 <lb n="5"/> ὑπάτη ὑπάτων δέλτα ἀνεστραμμένον (p. 49)
 καὶ ταῦ πλάγιον ἀπεστραμμένον
@@ -1453,13 +1437,13 @@ Mus. script. ed. Jan.</note>
 τρίτη συνημμένων ἰῶτα καὶ λάμβδα πλάγιον
 παρανήτη συνημμένων ἐναρμόνιος η καὶ
 λ πλάγιον ἀπεστραμμένον</p>
-<lb n="20"/> <p>Reliqua huius toni et initium sequentis desiderantur.
+               <lb n="20"/>
+               <p>Reliqua huius toni et initium sequentis desiderantur.
 periit folium in archetypo.</p>
-</div>
-
-<div type="textpart" subtype="fragment" n="5">
-<head>5. Tonus hypoaeolius.</head>
-<p>(p. 51) παρανήτη διεζευγμένων ἐναρμόνιος
+            </div>
+            <div n="5" type="fragment">
+               <head>5. Tonus hypoaeolius.</head>
+               <p>(p. 51) παρανήτη διεζευγμένων ἐναρμόνιος
 νῦ καὶ κ ἀπεστραμμένον
 <lb n="25"/> νήτη διεζευγμένων η καὶ λ πλάγιον
 ἀπεστραμμένον
@@ -1468,14 +1452,13 @@ periit folium in archetypo.</p>
 πῖ πλάγιον ἀπεστραμμένον
 <lb n="30"/> νήτη ὑπερβολαίων χῖ διεφθορὸς καὶ ἡμίαλφα
 ἀριστερὸν κάτω νεῦον</p>
-<note type="footnote">6 notas om. M. 10 pro M Z.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="6">
-<pb n="403"/>
-<head>6. Ὑπεραιολίου τρόπου σημεῖα κατὰ
+               <note type="footnote">6 notas om. M. 10 pro M Z.</note>
+            </div>
+            <div n="6" type="fragment">
+               <pb n="403"/>
+               <head>6. Ὑπεραιολίου τρόπου σημεῖα κατὰ
 τὸ ἐναρμόνιον γένος.</head>
-<p>Προσλαμβανόμενος χῖ καὶ ἡμίμυ δεξιόν
+               <p>Προσλαμβανόμενος χῖ καὶ ἡμίμυ δεξιόν
 ὑπάτη ὑπάτων ταῦ καὶ δίγαμμον
 <lb n="5"/> ἀπεστραμμένον
 παρυπάτη ὑπάτων σίγμα καὶ σίγμα
@@ -1508,14 +1491,13 @@ periit folium in archetypo.</p>
 ἐπὶ τὴν ὀξύτητα
 νήτη ὑπερβολαίων ἄλφα καὶ βαρεῖα, ἐπὶ
 <lb n="35"/> τὴν ὀξύτητα</p>
-<note type="footnote">11 πλάγιον om. M et habet notam λ. 32 πλ. om. M.</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="7">
-<pb n="404"/>
-<head>7. Φρυγίου τρόπου σημεῖα κατὰ τὸ
+               <note type="footnote">11 πλάγιον om. M et habet notam λ. 32 πλ. om. M.</note>
+            </div>
+            <div n="7" type="fragment">
+               <pb n="404"/>
+               <head>7. Φρυγίου τρόπου σημεῖα κατὰ τὸ
 ἐναρμόνιον γένος.</head>
-<p>Προσλαμβανόμενος ἰῶτα πλάγιον καὶ ει
+               <p>Προσλαμβανόμενος ἰῶτα πλάγιον καὶ ει
 τετράγωνον
 <lb n="5"/> ὑπάτη ὑπάτων ζῆτα ἐλλεπὲς καὶ ταῦ πλάγιον
 παρυπάτη ὑπάτων δίγαμμον καὶ ταῦ
@@ -1546,14 +1528,13 @@ periit folium in archetypo.</p>
 καὶ ἡμίαλφα ἀριστερὸν κάτω νεῦον
 νήτη ὑπερβολαίων μῦ καὶ πῖ καθειλκυσμένον,
 ἐπὶ τὴν ὀξύτητα</p>
-<note type="footnote">28 κάτω νεῦον om. M</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="8">
-<pb n="405"/>
-<head>8. Ὑποφρυγίου τρόπου σημεῖα κατὰ
+               <note type="footnote">28 κάτω νεῦον om. M</note>
+            </div>
+            <div n="8" type="fragment">
+               <pb n="405"/>
+               <head>8. Ὑποφρυγίου τρόπου σημεῖα κατὰ
 τὸ ἐναρμόνιον γένος.</head>
-<p>Προσλαμβανόμενος σίγμα διπλοῦν ἀπεστραμμένον
+               <p>Προσλαμβανόμενος σίγμα διπλοῦν ἀπεστραμμένον
 καὶ σίγμα διπλοῦν
 <lb n="5"/> ὑπάτη ὑπάτων ου κάτω γραμμὴν ἔχον
 καὶ ἦτα
@@ -1585,14 +1566,14 @@ periit folium in archetypo.</p>
 λάμβδα πλάγιον ἀπεστραμμένον
 νήτη ὑπερβολαίων ω τετράγωνον ὕπτιον καὶ
 ζῆτα</p>
-<note type="footnote">17 Haec linea cum membrana periit in M (om et L).</note>
-</div>
-
-<div type="textpart" subtype="fragment" n="9">
-<pb n="406"/>
-<note>(p. 56)</note> <head>9. Ὑπερφρυγίου τρόπου σημεῖα
+               <note type="footnote">17 Haec linea cum membrana periit in M (om et L).</note>
+            </div>
+            <div n="9" type="fragment">
+               <pb n="406"/>
+               <note>(p. 56)</note>
+               <head>9. Ὑπερφρυγίου τρόπου σημεῖα
 κατὰ τὸ ἐναρμόνιον γένος.</head>
-<p>Προσλαμβανόμενος ω καὶ ἡμίμυ
+               <p>Προσλαμβανόμενος ω καὶ ἡμίμυ
 ἀριστερόν
 <lb n="5"/> ὑπάτη ὑπάτων φῖ καὶ δίγαμμον
 παρυπάτη ὑπάτων υ καὶ δίγαμμον
@@ -1602,18 +1583,16 @@ periit folium in archetypo.</p>
 <lb n="10"/> ὑπάτη μέσων μῦ καὶ πῖ καθειλκυσμένον
 παρυπάτη μέσων λάμβδα καὶ ἡμίδελταν
 πλάγιον</p>
-<p>Reliqua desunt.</p>
-<p>Toni Alypi.
+               <p>Reliqua desunt.</p>
+               <p>Toni Alypi.
 diat. chrom. enarm.
 Lydius p. 368 p. 384 p. 399
 Aeolius „ 372 „ 387 „ 402
 Phrygius ,, 375 „ 390 „ 404
 Ionius ,, 378 „ 393
 Dorius „ 381 „ 396</p>
-</div>
-</div>
-
-	</div>
-</body>
-</text>
+            </div>
+         </div>
+      </body>
+   </text>
 </TEI>

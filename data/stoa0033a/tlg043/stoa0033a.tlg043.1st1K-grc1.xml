@@ -1,99 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-	<teiHeader>
-    
-		<fileDesc>
-			<titleStmt>
-				<title>De spiritu</title>
-				<author>pseudo-Aristotle</author>
-				<editor>Immanuel Bekker</editor>
-				<funder>Andrew W. Mellon Foundation</funder>
-				<respStmt>
-					<resp>Published original versions of the electronic texts</resp>
-					<orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De spiritu</title>
+            <author>pseudo-Aristotle</author>
+            <editor>Immanuel Bekker</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic
 						Studies, funded by the Andrew W. Mellon Foundation</orgName>
-					<persName>Mark Schiefsky, Harvard University</persName>
-					<persName>Gregory R. Crane, Universität Leipzig</persName>
-					<persName>Uwe Vagelpohl, University of Warwick</persName>
-				</respStmt>
-				<respStmt>
-					<resp>Keyboarding</resp>
-					<orgName xml:id="DDD">Digital Divide Data</orgName>
-				</respStmt>
-				<respStmt>
-					<resp>Editor-in-Chief, Perseus Digital Library</resp>
-					<persName>Gregory R. Crane</persName>
-				</respStmt>
-				<respStmt>
-					<resp>Project Manager (University of Leipzig)</resp>
-					<persName>Matt Munson</persName>
-				</respStmt>
-				<respStmt>
-					<resp>Project Assistant (University of Leipzig)</resp>
-					<persName>Annette Geßner</persName>
-				</respStmt>
-				<respStmt>
-					<resp>Lead Developer (University of Leipzig)</resp>
-					<persName>Thibault Clérice</persName>
-				</respStmt>
-				<respStmt>
-					<resp>Technical Advisor</resp>
-					<persName>Bruce Robertson</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
 					Foundation</authority>
-				<publisher>University of Leipzig</publisher>
-				<pubPlace>Germany</pubPlace>
-				<idno type="filename">stoa0033a.tlg043.1st1K-grc1.xml</idno>
-				<availability>
-					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">stoa0033a.tlg043.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
 						Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-				</availability>
-				<date>2016</date>
-			</publicationStmt>
-			<sourceDesc>
-				<biblStruct>
-					<monogr>
-						<title>Aristotelis Opera</title>
-						<author>pseudo-Aristotle</author>
-						<editor>Immanuel Bekker</editor>
-						<imprint>
-							<publisher>Oxford University Press</publisher>
-							<pubPlace>Oxford</pubPlace>
-							<biblScope unit="vol">3</biblScope>
-							<biblScope unit="pp" from="355" to="367">355-367</biblScope>
-							<date>1837</date>
-						</imprint>
-					</monogr>
-					<ref target="https://catalog.hathitrust.org/Record/001222547">HathiTrust</ref>
-				</biblStruct>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:stoa0033a.tlg043.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Aristotelis Opera</title>
+                  <author>pseudo-Aristotle</author>
+                  <editor>Immanuel Bekker</editor>
+                  <imprint>
+                     <publisher>Oxford University Press</publisher>
+                     <pubPlace>Oxford</pubPlace>
+                     <biblScope unit="vol">3</biblScope>
+                     <biblScope unit="pp" from="355" to="367">355-367</biblScope>
+                     <date>1837</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://catalog.hathitrust.org/Record/001222547">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
 				Architecture.</p>
-			  <refsDecl n="CTS">
-				<cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-			</refsDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="grc">Greek</language>
-			</langUsage>
-		</profileDesc>
-	</teiHeader>
-	<text>
-		<body>
-
-			<div type="edition" xml:lang="grc" n="urn:cts:greekLit:stoa0033a.tlg043.1st1K-grc1">
-				<pb n="355"/>
-
-				<div type="textpart" subtype="chapter" n="1">
-					<head>ΠΕΡΙ ΠΝΕΥΜΑΤΟΣ.</head>
-					<p>ΤΙΣ ἡ τοῦ ἐμφύτου πνεύματος διαμονή, καὶ τίς ἡ αὔξησις; <lb/>Ὁρῶμεν γὰρ ὅτι πλέον καὶ
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:stoa0033a.tlg043.1st1K-grc1">
+         <pb n="355"/>
+         <div n="1" type="chapter">
+            <head>ΠΕΡΙ ΠΝΕΥΜΑΤΟΣ.</head>
+            <p>ΤΙΣ ἡ τοῦ ἐμφύτου πνεύματος διαμονή, καὶ τίς ἡ αὔξησις; <lb/>Ὁρῶμεν γὰρ ὅτι πλέον καὶ
 						ἰσχυρότερον γίνεται καὶ <lb/>καθ’ ἡλικίας μεταβολὴν καὶ κατὰ διάθεσιν σώματος. Ἢ <lb/>ὡς
 						τἆλλα μέρη, προσγινομένου τινός. Προσγίνεται δὲ <lb/>τροφὴ τοῖς ἐμψύχοις, ὥστε ταύτην
 						σκεπτέον ποία τε καὶ <lb/>πόθεν. Δύο δὴ τρόποι δι’ ὧν γίνεται, ἢ διὰ τῆς ἀναπνοῆς,
@@ -112,9 +119,9 @@
 						δὲ παχύτερον, ἔσονταί <pb n="356"/> ταί τινες πόροι μείζους. Εἰ δ’ ἄρα κατὰ τοὺς αὐτοὺς
 						λαμβάνει <lb/>καὶ ἐκπέμπει, τοῦτ’ αὐτὸ παράλογον καὶ ἄτοπον. <lb/>Ἡ μὲν οὖν ἐκ τῆς
 						τροφῆς αὔξησις καὶ διαμονὴ σχεδὸν <lb/>ταῦτα. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="2">
-					<p>Ἡ δ’ ἐκ τῆς ἀναπνοῆς, ὥσπερ Ἀριστογένης οἴεται (τροφὴν <lb/>γὰρ οἴεται καὶ τὸ πνεῦμα
+         </div>
+         <div n="2" type="chapter">
+            <p>Ἡ δ’ ἐκ τῆς ἀναπνοῆς, ὥσπερ Ἀριστογένης οἴεται (τροφὴν <lb/>γὰρ οἴεται καὶ τὸ πνεῦμα
 						πεττόμενον, οὐ τοῦ ἀέρος ἐν <lb/>τῷ πνεύματι· τοῦτο δ’ εἰς τὰ ἀγγεῖα διαδίδοσθαι, τὸ
 						περίττωμα <lb/>πάλιν ἐκπέμπεσθαι) πλείους ἔχει τὰς ἀπορίας. <lb/>Ἥ τε γὰρ πέψις ὑπὸ
 						τίνος; Εἰκὸς μὲν γὰρ ὑπ’ αὐτοῦ, καθάπερ <lb/>καὶ τῶν ἄλλων. Αὐτὸ δὲ τοῦτ’ ἄτοπον, εἰ μὴ
@@ -156,9 +163,9 @@
 						ἐνυπάρχειν ὅλως ἐν τῷ ὑγρῷ φαμὲν <lb/>ἀέρα. Λοιπὸν ἄρα διὰ τῆς τροφῆς, ὡς οὐχ ὁμοίως
 						πᾶσιν, <lb/>ἢ κἀκεῖνα διὰ τῆς τροφῆς τὰ ἔνυγρα· τριῶν γὰρ τούτων <lb/>ἀναγκαῖον ἕν. Καὶ
 						ταῦτα μὲν ὡς περὶ τὴν αὔξησιν καὶ τροφὴν <lb/>τοῦ πνεύματος. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="3">
-					<p>Περὶ δὲ ἀναπνοῆς οἱ μὲν οὐ λέγουσι τίνος χάριν, ἀλλὰ <lb/>μόνον ὃν τρόπον γίνεται,
+         </div>
+         <div n="3" type="chapter">
+            <p>Περὶ δὲ ἀναπνοῆς οἱ μὲν οὐ λέγουσι τίνος χάριν, ἀλλὰ <lb/>μόνον ὃν τρόπον γίνεται,
 						καθάπερ Ἐμπεδοκλῆς καὶ Δημόκριτος· <lb/>οἱ δ’ οὐδὲ τὸν τρόπον ὅλως λέγουσιν, ἀλλ’ ὡς
 						φανερῷ <lb/>χρῶνται. Δεῖ δὲ καὶ εἰ καταψύξεως χάριν, αὐτὸ <lb/>τοῦτο διασαφῆσαι. Εἰ γὰρ
 						ἐν τοῖς ἄνω τὸ θερμόν, οὐκ <lb/>ἂν ἔτι δέοιτο κάτω. Τὸ δὲ σύμφυτον πνεῦμα δι’ ὅλου, καὶ
@@ -174,9 +181,9 @@
 						φαίνεται <lb/>πᾶσι δι’ ἀρτηριῶν, οἷον αὐτοῖς τε τοῖς ἀγγείοις καὶ ἄλλοις <lb/>τισὶ τῶν
 						μερῶν· ζῇ δὲ τὰ φυτὰ καὶ τρέφεται. Ταῦτα μὲν <lb/>οἰκειότερά πως τοῖς περὶ τὰς τροφάς.
 					</p>
-				</div>
-				<div type="textpart" subtype="chapter" n="4">
-					<p>Ἐπεὶ δὲ τρεῖς αἱ κινήσεις τοῦ ἐν τῇ ἀρτηρίᾳ πνεύματος, <lb/>ἀναπνοή, σφυγμός, τρίτη δ’
+         </div>
+         <div n="4" type="chapter">
+            <p>Ἐπεὶ δὲ τρεῖς αἱ κινήσεις τοῦ ἐν τῇ ἀρτηρίᾳ πνεύματος, <lb/>ἀναπνοή, σφυγμός, τρίτη δ’
 						ἡ τὴν τροφὴν ἐπάγουσα καὶ <pb n="359"/> κατεργαζομένη, λεκτέον ὑπὲρ ἑκάστης καὶ ποῦ καὶ
 						πῶς καὶ <lb/>τίνος χάριν. Τούτων δ’ ἡ μὲν τοῦ σφυγμοῦ καὶ τῇ αἰσθήσει <lb/>φανερὰ καθ’
 						ὁτιοῦν μέρος ἁπτομένοις, ἡ δὲ τῆς ἀναπνοῆς <lb/>μέχρι μέν του φανερά, τὸ δὲ πλέον κατὰ
@@ -205,9 +212,9 @@
 						ἀρχῇ ξυνισταμένης τῆς καρδίας, <lb/>καθάπερ ἐν τοῖς ᾠοῖς γίνεται φανερόν. Ὥστε αὕτη
 						<lb/>πρώτη, καὶ ἔοικεν ἐνεργείᾳ τινὶ καὶ οὐκ ἐναπολήψει πνεύματος, <lb/>εἰ μὴ ἄρα τοῦτο
 						πρὸς τὴν ἐνέργειαν. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="5">
-					<p>Τὸ δὲ πνεῦμα <lb/>τὸ ἐκ τῆς ἀναπνοῆς φέρεσθαι μὲν εἰς τὴν κοιλίαν, οὐ διὰ <lb/>τοῦ
+         </div>
+         <div n="5" type="chapter">
+            <p>Τὸ δὲ πνεῦμα <lb/>τὸ ἐκ τῆς ἀναπνοῆς φέρεσθαι μὲν εἰς τὴν κοιλίαν, οὐ διὰ <lb/>τοῦ
 						στομάχου (τοῦτο μὲν γὰρ ἀδύνατον), ἀλλὰ πόρον εἶναι <lb/>παρὰ τὴν ὀσφύν, δι’ οὗ τὸ
 						πνεῦμα τῇ ἀναπνοῇ φέρεσθαι <lb/>ἐκ τοῦ βραγχίου εἰς τὴν κοιλίαν καὶ πάλιν ἔξω· τοῦτο δὲ
 						<lb/>τῇ αἰσθήσει φανερόν. Ἔχει δ’ ἀπορίαν καὶ τὰ περὶ τὴν αἴσθησιν. <lb/>Εἰ γὰρ ἡ
@@ -253,9 +260,9 @@
 						καταψύξεως, σχεδὸν φανερὸν τῷ <lb/>αἷμα κατέχειν ἐν τῇ φλεβὶ τὸ θερμὸν οἷον ἀποστέγον·
 						διὸ <lb/>καὶ ὅταν ἐκρυῇ, μεθιέναι τε καὶ ἀποθνήσκειν, τῷ τὸ ἧπαρ <lb/>οὐκ ἔχειν οὐδεμίαν
 						ἀρτηρίαν. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="6">
-					<p>Πότερον δὲ τὸ σπέρμα διὰ τῆς ἀρτηρίας ὡς καὶ συνθλιβόμενον, <lb/>καὶ ἐν τῇ προέσει
+         </div>
+         <div n="6" type="chapter">
+            <p>Πότερον δὲ τὸ σπέρμα διὰ τῆς ἀρτηρίας ὡς καὶ συνθλιβόμενον, <lb/>καὶ ἐν τῇ προέσει
 						μόνον; Ἐν οἷς δὴ φαίνεται καὶ <lb/>ἡ ἐξ αἵματος μεταβολὴ τῷ τὰ νεῦρα ἀπὸ τῶν ὀστῶν
 						τρέφεσθαι· <lb/>καθάπτει γὰρ αὐτά. Ἢ οὔτε τοῦτ’ ἀληθές· καὶ <lb/>γὰρ ἐν τῇ καρδίᾳ
 						νεῦρον, καὶ νεῦρα δὲ ἐκ τῶν ὀστῶν ἠρτημένα. <lb/>Οὐ συνάπτει δὲ ἐν ἑτέρῳ, ἀλλ’ εἰς σάρκα
@@ -278,9 +285,9 @@
 						<lb/>τίνων ἡ ἐκ τῆς κοιλίας δίοδος; Καὶ πάλιν ἡ ἐκείνων ἀναστροφὴ <lb/>πρὸς τὴν σάρκα,
 						καίπερ ἄλογος οὖσα. Πολὺ γάρ <lb/>τι θαυμαστὸν φαίνεται καὶ ἀδύνατον ὅλως. Ἄρα γε ἄλλοις
 						<lb/>ἄλλη τροφή, καὶ οὐ πᾶσι τροφὴ τὸ αἷμα· πλὴν ἐκ τούτου <lb/>τἆλλα. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="7">
-					<p>Τὴν τῶν ὀστῶν φύσιν ἄρα σκεπτέον ἢ πρὸς κίνησιν ἢ πρὸς <lb/>ἔρεισμα, καὶ πρὸς τὸ
+         </div>
+         <div n="7" type="chapter">
+            <p>Τὴν τῶν ὀστῶν φύσιν ἄρα σκεπτέον ἢ πρὸς κίνησιν ἢ πρὸς <lb/>ἔρεισμα, καὶ πρὸς τὸ
 						στέγειν καὶ περιέχειν, ἔτι δ’ εἰ ὥσπερ <lb/>ἀρχαὶ ἔνια, καθάπερ ὁ πόλος. Λέγω δὲ πρὸς
 						μὲν κίνησιν, <lb/>οἷον ποδὸς ἢ χειρὸς ἢ σκέλους ἢ ἀγκῶνος, ὁμοίως τήν τε <lb/>καμπτικὴν
 						καὶ τὴν κατὰ τόπον· οὐδὲ γὰρ τὴν τοπικὴν οἷόν <lb/>τε ἄνευ κάμψεως. Σχεδὸν δὲ καὶ τὰ
@@ -302,9 +309,9 @@
 						χεῖρας καὶ πόδας. Τὰ δ’ ἄλλα συνδέσμου χάριν, <lb/>ὅσα δεῖται. Ἐνίοις γὰρ ἴσως οὐδὲν ἢ
 						ἐπ’ ὀλίγον, οἷον ἡ <lb/>ῥάχις· ἀλλ’ ἡ κάμψις. Καὶ γὰρ ἡ πρὸς ἄλληλα κόλλησις <lb/>ἰχώρ
 						ἐστι καὶ ὑγρότης μυξώδης. Τὰ δὲ καὶ συνδεῖται νεύροις, <lb/>οἷον τὰ περὶ τὰ ἄρθρα. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="8">
-					<p>Πάντων δ’ ἐστὶ λόγος ὁ βελτίων ὡς καὶ νῦν ζητεῖν· ἀλλὰ <lb/>τὰς ἀρχὰς ἐφ’ ἱκανόν, ὧν
+         </div>
+         <div n="8" type="chapter">
+            <p>Πάντων δ’ ἐστὶ λόγος ὁ βελτίων ὡς καὶ νῦν ζητεῖν· ἀλλὰ <lb/>τὰς ἀρχὰς ἐφ’ ἱκανόν, ὧν
 						χάριν, σκεπτέον. Οὐκ ἂν δόξειε <lb/>κινήσεως ἕνεκα τὰ ὀστᾶ, ἀλλὰ μᾶλλον τὰ νεῦρα ἢ τὰ
 						ἀνάλογον, <pb n="365"/> ἐν ᾧ πρώτῳ τὸ πνεῦμα τὸ κινητικόν, ἐπεὶ καὶ ἡ <lb/>κοιλία
 						κινεῖται καὶ ἡ καρδία νεῦρα ἔχει· τὰ δ’ οὐ πᾶσιν, ἀλλ’ <lb/>ἐνίοις, ἀνάγκη καὶ πρὸς τὴν
@@ -321,9 +328,9 @@
 						τὰ ἴδια, <lb/>καὶ εἴ τι μὴ προφανές, οἷον διὰ τί τὰ πολύποδα βραδύτατα, <lb/>καίτοι τὰ
 						τετράποδα θάττω τῶν διπόδων· πότερον ὅτι ἐπὶ <lb/>γῆς ὅλα τὰ σώματα; ἢ ὅτι φύσει ψυχρὰ
 						καὶ δυσκίνητα; <lb/>ἢ δι’ ἄλλην αἰτίαν; </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="9">
-					<p>Οἱ ἀναιροῦντες ὡς οὐ τὸ θερυὸν τὸ ἐργαζόμενον ἐν τοῖς <lb/>σώμασιν, ἢ ὅτι μία τις φορὰ
+         </div>
+         <div n="9" type="chapter">
+            <p>Οἱ ἀναιροῦντες ὡς οὐ τὸ θερυὸν τὸ ἐργαζόμενον ἐν τοῖς <lb/>σώμασιν, ἢ ὅτι μία τις φορὰ
 						καὶ δύναμις ἡ τμητικὴ τοῦ <lb/>πυρός, οὐ καλῶς λέγουσιν. Οὐδὲ γὰρ ὅλα τοῖς ἀψύχοις
 						<lb/>ταὐτὸ ποιεῖ πᾶσιν, ἀλλὰ τὰ μὲν πυκνοῖ, τὰ δὲ μανοῖ καὶ <lb/>τήκει, τὰ δὲ πήγνυσιν.
 						Ἐν δὲ δὴ τοῖς ἐμψύχοις οὕτως <lb/>ὑποληπτέον, ὥσπερ φύσεως πῦρ ζητοῦντα, καθάπερ τέχνης·
@@ -361,8 +368,7 @@
 						φλεβὸς καὶ ἀρτηρίας <lb/>καὶ τῶν λοιπῶν. Ὥστε δυεῖν θάτερον, ἢ οὐχ εἷς ὁ <lb/>λόγος
 						τούτων κατὰ τὴν μίξιν, ἢ οὐ σκληρότητι καὶ πυκνότητι <lb/>καὶ τοῖς ἐναντίοις τοὺς λόγους
 						ληπτέον. </p>
-				</div>
-			</div>
-		</body>
-	</text>
+         </div>
+      </body>
+   </text>
 </TEI>

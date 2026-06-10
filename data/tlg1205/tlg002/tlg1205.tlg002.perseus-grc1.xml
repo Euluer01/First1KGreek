@@ -1,91 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
-  <teiHeader xml:lang="eng">
-        <fileDesc>
-      <titleStmt>
-        <title xml:lang="lat">De Resurrectione</title>
-        <author>Athenagoras</author>
-        <editor>Johann Karl Theodor von Otto</editor>
-	      	<funder>Google Digital Humanities Awards Program</funder>
-		<principal>Gregory Crane</principal>
-		<respStmt>
-		    <persName xml:id="DDD">Digital Divide Data</persName>
-		    <resp>Corrected and encoded the text</resp>
-		</respStmt>
-		<respStmt>
-		    <persName>Gregory Crane</persName>
-		    <resp>Editor-in-Chief, Perseus Digital Library</resp>
-		</respStmt>
-		<respStmt>
-		    <persName>Matt Munson</persName>
-		    <resp>Project Manager (University of Leipzig)</resp>
-		</respStmt>
-		<respStmt>
-		    <persName>Annette Gessner</persName>
-		    <resp>Project Assistant (University of Leipzig)</resp>
-		</respStmt>
-		<respStmt>
-		    <persName>Thibault Clérice</persName>
-		    <resp>Lead Developer (University of Leipzig)</resp>
-		</respStmt>
-		<respStmt>
-		    <persName>Bruce Robertson</persName>
-		    <resp>Technical Advisor</resp>
-		</respStmt>
-      </titleStmt>
-      <publicationStmt>
-	      <publisher>Trustees of Tufts University</publisher>
-	      <pubPlace>Medford, MA</pubPlace>
-	      <authority>Perseus Project</authority>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-        </availability>
-	    </publicationStmt>
-      <sourceDesc>
-        <biblStruct>
-          <monogr>
-            <title xml:lang="lat">Athenagorae Philosophi Atheniensis Opera</title>
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De Resurrectione</title>
             <author>Athenagoras</author>
             <editor>Johann Karl Theodor von Otto</editor>
-            <imprint>
-              <publisher>Mauke</publisher>
-              <pubPlace>Jena</pubPlace>
-              <date>1857</date>
-            </imprint>
-          </monogr>
-          <series>
-            <title xml:lang="lat">Corpus apologetarum christianorum saeculi secundi</title>
-            <biblScope unit="volume">7</biblScope>
-          </series>
-          <ref target="https://archive.org/stream/athenagoraephilo00athe#page/186/mode/2up">Internet
+            <funder>Google Digital Humanities Awards Program</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Trustees of Tufts University</publisher>
+            <pubPlace>Medford, MA</pubPlace>
+            <authority>Perseus Project</authority>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <idno type="CTS">urn:cts:greekLit:tlg1205.tlg002.perseus-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Athenagorae Philosophi Atheniensis Opera</title>
+                  <author>Athenagoras</author>
+                  <editor>Johann Karl Theodor von Otto</editor>
+                  <imprint>
+                     <publisher>Mauke</publisher>
+                     <pubPlace>Jena</pubPlace>
+                     <date>1857</date>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title xml:lang="lat">Corpus apologetarum christianorum saeculi secundi</title>
+                  <biblScope unit="volume">7</biblScope>
+               </series>
+               <ref target="https://archive.org/stream/athenagoraephilo00athe#page/186/mode/2up">Internet
             Archive</ref>
-        </biblStruct>
-        
-        </sourceDesc>
-    </fileDesc><encodingDesc>
-  <refsDecl n="CTS">
-        <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-      </refsDecl>
-
-    </encodingDesc><profileDesc>
-      <langUsage>
-	<language ident="grc">Greek</language>
-	      <language ident="lat">Latin</language>
-      </langUsage>
-    </profileDesc>
-    <revisionDesc>
-      <change who="Jack Duff" when="2016-06-13">Removed 2 extra XPath, removed Latin language tag, changed pb from xml:id to n.</change>
-      <change who="Jack Duff" when="2016-06-14">Corrected fileDesc, replaced pb alt with milestones.</change>
-    </revisionDesc></teiHeader>
-
-  <text><body> <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1205.tlg002.perseus-grc1">
-<pb n="v.2.p.186"/>
-
-<head>ΑΘΗΝΑΓΟΡΟΥ
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <refsDecl n="CTS">
+            <cRefPattern n="chapter"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="Jack Duff" when="2016-06-13">Removed 2 extra XPath, removed Latin language tag, changed pb from xml:id to n.</change>
+         <change who="Jack Duff" when="2016-06-14">Corrected fileDesc, replaced pb alt with milestones.</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg1205.tlg002.perseus-grc1">
+         <pb n="v.2.p.186"/>
+         <head>ΑΘΗΝΑΓΟΡΟΥ
 ΑΘΗΝΑΙΟΥ ΦΙΛΟΣΟΦΟΥ ΧΡΙΣΤΙΑΝΟΥ
 ΠΕΡΙ ΑΝΑΣΤΑΣΕΩΣ ΝΕΚΡΩΝ.</head>
-<milestone unit="altnumbering" n="40.B"/><div type="textpart" subtype="chapter" n="1"><p>Παντὶ δόγματι καὶ λόγῳ τῆς ἐν τοῖς οὖσιν ἀληθείας ἐχομένῳ
+         <milestone unit="altnumbering" n="40.B"/>
+         <div n="1" type="chapter">
+            <p>Παντὶ δόγματι καὶ λόγῳ τῆς ἐν τοῖς οὖσιν ἀληθείας ἐχομένῳ
 παραφύεταί τι ψεῦδος· παραφύεται δὲ οὐκ ἐξ ὑποκειμένης
 τινὸς ἀρχῆς κατὰ φύσιν ὁρμώμενον ἢ τῆς κατ᾿ αὐτὸ ὅπερ
 ἐστὶν ἕκαστον αἰτίας, ἀλλ᾿ ὑπὸ τῶν τὴν ἔκθεσμον σπορὰν ἐπὶ <milestone unit="altnumbering" n="40.C"/>
@@ -137,9 +150,9 @@
 ταῦτα πάσχουσιν, οὐδ᾿ ἡντιναοῦν ἔχοντες ἐκ τῶν πραγμάτων
 ἀπιστίας ἀφορμήν, οὐδ᾿ αἰτίαν εὑρίσκοντες εἰπεῖν εὔλογον, δι᾿
 ἣν ἀπιστοῦσιν ἢ διαποροῦσιν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="2"><p>Σκοπῶμεν δὲ οὕτως. Εἰ πᾶσα ἀπιστία μὴ προχείρως <milestone unit="altnumbering" n="41.D"/>
+         </div>
+         <div n="2" type="chapter">
+            <p>Σκοπῶμεν δὲ οὕτως. Εἰ πᾶσα ἀπιστία μὴ προχείρως <milestone unit="altnumbering" n="41.D"/>
 καὶ κατά τινα δόξαν ἄκριτον ἐγγινομένη τισίν, ἀλλὰ μετά
 τινος αἰτίας ἰσχυρᾶς καὶ τῆς κατὰ τὴν ἀλήθειαν ἀσφαλείας· τότε
 γὰρ τὸν εἰκότα σώζει λόγον, ὅταν αὐτὸ τὸ πρᾶγμα περὶ οὗ
@@ -168,7 +181,7 @@
 οὔτε ποιῆσαι τὸ παράπαν δυνηθείη ὅπερ ἀγνοεῖ· ὅ τε γινώσκων
 καλῶς τὸ ποιηθησόμενον, καὶ πόθεν γένοιτ᾿ ἂν καὶ πῶς, δύναμιν
 δὲ ἢ μηδ᾿ ὅλως ἔχων πρὸς τὸ ποιῆσαι τὸ γινωσκόμενον ἢ <milestone unit="altnumbering" n="42.C"/>
-<pb n="v.2.p.196"/>
+               <pb n="v.2.p.196"/>
 
 μὴ ἀρκοῦσαν ἔχων, οὐκ ἂν ἐγχειρήσειε τὴν ἀρχήν, εἰ σωφρονοίη
 καὶ τὴν ἰδίαν ἐπισκέψαιτο δύναμιν, ἐγχειρήσας δὲ ἀπερισκέπτως
@@ -189,11 +202,10 @@
 <milestone unit="altnumbering" n="43.A"/>ὅσον δὲ πρὸς τὴν ἀξίαν τοῦ θεοῦ καὶ τὴν τούτου σοφίαν, 
 ἀμφότερα κατὰ φύσιν, καὶ ῥᾴδιον ἐπ᾿ ἴσης τῷ τὰ μὴ
 γενόμενα προγινώσκειν τὸ καὶ διαλυθέντα γινώσκειν.</p>
-<pb n="v.2.p.198"/>
-
-</div>
-
-<div type="textpart" subtype="chapter" n="3"><p>Καὶ μὴν καὶ τὴν δύναμιν, ὡς ἔστιν ἀρκοῦσα πρὸς τὴν
+            <pb n="v.2.p.198"/>
+         </div>
+         <div n="3" type="chapter">
+            <p>Καὶ μὴν καὶ τὴν δύναμιν, ὡς ἔστιν ἀρκοῦσα πρὸς τὴν
 τῶν σωμάτων ἀνάστασιν, δείκνυσιν ἡ τούτων αὐτῶν γένεσις.
 Εἰ γὰρ μὴ ὄντα κατὰ τὴν πρώτην σύστασιν ἐποίησε τὰ τῶν
 ἀνθρώπων σώματα καὶ τὰς τούτων ἀρχάς, καὶ διαλυθέντα, καθ᾿
@@ -221,9 +233,9 @@
 εἰς ταύτας ἀνάλυσιν· ὃ δὴ καὶ μάλιστα ταράττειν ἔδοξέ τινας <milestone unit="altnumbering" n="43.D"/>
 καὶ τῶν ἐπὶ σοφίᾳ θαυμαζομένων, ἰσχυρὰς οὐκ οἶδ᾿ ὅπως ἡγησαμένων
 τὰς παρὰ τῶν πολλῶν φερομένας διαπορήσεις.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="4"><p>Οὗτοι δέ γέ φασιν πολλὰ μὲν σώματα τῶν ἐν ναυαγίοις
+         </div>
+         <div n="4" type="chapter">
+            <p>Οὗτοι δέ γέ φασιν πολλὰ μὲν σώματα τῶν ἐν ναυαγίοις
 καὶ ποταμοῖς δυσθανάτων ἰχθύσι γενέσθαι τροφήν, πολλὰ
 δὲ τῶν ἐν πολέμοις θνησκόντων ἢ κατ᾿ ἄλλην τινὰ τραχυτέραν
 αἰτίαν καὶ πραγμάτων περίστασιν ταφῆς ἀμοιρούντων τοῖς
@@ -253,9 +265,9 @@
 προτέρων συστῆναι μὴ δύνασθαι, μετεληλυθότων τῶν ταῦτα
 συμπληρούντων μερῶν πρὸς ἑτέρους, ἢ τούτων ἀποδοθέντων τοῖς
 προτέροις ἐνδεῶν ἕξειν τὰ τῶν ὑστέρων.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="5"><p>Ἐμοὶ δὲ δοκοῦσιν οἱ τοιοῦτοι πρῶτον μὲν τὴν τοῦ
+         </div>
+         <div n="5" type="chapter">
+            <p>Ἐμοὶ δὲ δοκοῦσιν οἱ τοιοῦτοι πρῶτον μὲν τὴν τοῦ
 δημιουργήσαντος καὶ διοικοῦντος τόδε τὸ πᾶν ἀγνοεῖν δύναμίν
 τε καὶ σοφίαν, ἑκάστου ζώου φύσει καὶ γένει τὴν προσφυῆ καὶ
 κατάλληλον συναρμόσαντος τροφήν, καὶ μήτε πᾶσαν φύσιν πρὸς
@@ -287,10 +299,11 @@
 τῆς τε καταλειφθείσης τροφῆς ἐν αὐτοῖς ἐσθ᾿ ὅτε τοῖς
 τρεφομένοις μέρεσι καὶ μορίοις πρὸς ἕτερόν τι μεταβαλλούσης,
 κατὰ τὴν ἐπικράτειαν τοῦ πλεονάζοντος ἢ περιττεύοντος καὶ
-φθείρειν πως ἢ πρὸς ἑαυτὸ τρέπειν τὸ πλησιάσαν εἰωθότος. <milestone unit="altnumbering" n="45.C"/></p>
-</div>
-
-<div type="textpart" subtype="chapter" n="6"><p>Πολλῆς οὖν οὔσης ἐν πᾶσι τοῖς ζώοις τῆς φυσικῆς διαφορᾶς,
+φθείρειν πως ἢ πρὸς ἑαυτὸ τρέπειν τὸ πλησιάσαν εἰωθότος. <milestone unit="altnumbering" n="45.C"/>
+            </p>
+         </div>
+         <div n="6" type="chapter">
+            <p>Πολλῆς οὖν οὔσης ἐν πᾶσι τοῖς ζώοις τῆς φυσικῆς διαφορᾶς,
 καὶ αὐτῆς γε τῆς κατὰ φύσιν τροφῆς ἑκάστῳ γένει
 ζώου καὶ τῷ τρεφομένῳ σώματι συνεξαλλαττομένης, τριττῆς δὲ
 κατὰ τὴν ἑκάστου ζώου τροφὴν γινομένης καθάρσεως καὶ διακρίσεως,
@@ -339,9 +352,9 @@
 δυνάμεσι νικηθέν, μετ᾿ οὐκ ὀλίγης ἐξεῤῥύη τῆς βλάβης, ὡς
 μηδὲν φέρον τοῖς κατὰ φύσιν εἰρηνικὸν διὰ τὸ πρὸς τὴν
 φύσιν ἀσύγκρατον.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="7"><p>Ὅλως δὲ κἂν συγχωρήσῃ τις τὴν ἐκ τούτων εἰσιοῦσαν
+         </div>
+         <div n="7" type="chapter">
+            <p>Ὅλως δὲ κἂν συγχωρήσῃ τις τὴν ἐκ τούτων εἰσιοῦσαν
 τροφήν (προσειρήσθω δὲ τοῦτο συνηθέστερον), καίπερ οὖσαν <milestone unit="altnumbering" n="46.D"/>
 παρὰ φύσιν, διακρίνεσθαι καὶ ματαβάλλειν εἰς ἕν τι τῶν ὑγραινόντων
 ἢ ξηραινόντων ἢ θερμαινόντων ἢ ψυχόντων, οὐδ᾿ οὕτως
@@ -365,7 +378,7 @@
 πάλιν ὡς μέρος εἰς τὴν ἐκείνου τελεῖν συμπλήρωσιν, τῷ μήτε αὐτὴν
 τὴν προσλαμβάνουσαν σάρκα πάντοτε φυλάττειν ἣν προσείληφεν,
 μήτε τὴν ἑνωθεῖσαν ταύτην μόνιμον εἶναι καὶ παραμένειν  <milestone unit="altnumbering" n="47.C"/>
-<pb n="v.2.p.214"/>
+               <pb n="v.2.p.214"/>
 παραμένειν τοῖς μέρεσιν ἃ συνδεῖν ἢ στέγειν ἢ θάλπειν πέφυκεν
 τὴν ὑπὸ τῆς φύσεως ἐξειλεγμένην καὶ τούτοις προσπεφυκυῖαν
 οἷς τὴν κατὰ φύσιν συνεξέπλησε ζωὴν καὶ τοὺς ἐν τῇ ζωῇ πόνους.
@@ -379,9 +392,9 @@
 εἴ γε μὴ λελήθασιν ἡμᾶς ἀνθρωποειδεῖς τινες ὄντες θῆρες,
 ἢ μικτὴν ἔχοντες φύσιν ἐξ ἀνθρώπων καὶ θηρίων, οἵους πλάττειν
 εἰώθασιν οἱ τολμηρότεροι τῶν ποιητῶν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="8"><p>Καὶ τί δεῖ λέγειν περὶ τῶν μηδενὶ ζώῳ πρὸς τροφὴν
+         </div>
+         <div n="8" type="chapter">
+            <p>Καὶ τί δεῖ λέγειν περὶ τῶν μηδενὶ ζώῳ πρὸς τροφὴν
 <milestone unit="altnumbering" n="48.A"/>ἀποκληρωθέντων σωμάτων, μόνην δὲ τὴν εἰς γῆν γῆν ταφὴν ἐπὶ 
 <pb n="v.2.p.216"/>
 
@@ -417,9 +430,9 @@
 νεκρωθέντος ἢ καὶ πάντη διαλυθέντος ἀνάστασιν καὶ ζωήν.
 Ταῦτα μὲν οὖν ἐπὶ πλεῖον μηκύνειν οὐκ εὔκαιρον· ὁμολογουμένην
 γὰρ ἔχει τὴν ἐπίκρισιν, τοῖς γε μὴ μιξοθήροις.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="9"><p>Πολλῶν δὲ ὄντων τῶν εἰς τὴν προκειμένην ἐξέτασιν
+         </div>
+         <div n="9" type="chapter">
+            <p>Πολλῶν δὲ ὄντων τῶν εἰς τὴν προκειμένην ἐξέτασιν
 χρησιμωτέρων, παραιτοῦμαι δὴ νῦν τοὺς καταφεύγοντας ἐπὶ
 τὰ τῶν ἀνθρώπων ἔργα καὶ τοὺς τούτων δημιουργοὺς ἀνθρώπους,
 οἳ τὰ συντριβέντα τῶν ἔργων ἢ χρόνῳ παλαιωθέντα ἢ
@@ -439,13 +452,13 @@
 τούτων ὡς ἐνδόξων καὶ διὰ πάντων τῶν μικρῷ πρόσθεν
 ἐξητασμένων δείκνυσιν ὁ λόγος δυνατόν, εὔδηλον ὡς οὐκ ἀδύνατον.
 Ἀλλὰ μὴν οὐδ᾿ ἀβούλητον.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="10"><p>Τὸ γὰρ ἀβούλητον ἢ ὡς ἄδικον αὐτῷ ἐστιν ἀβούλητον
+         </div>
+         <div n="10" type="chapter">
+            <p>Τὸ γὰρ ἀβούλητον ἢ ὡς ἄδικον αὐτῷ ἐστιν ἀβούλητον
 ἢ ὡς ἀνάξιον. Καὶ πάλιν τὸ ἄδικον ἢ περὶ αὐτὸν θεωρεῖται
 τὸν ἀναστησόμενον ἢ περὶ ἄλλον τινὰ παρ᾿ αὐτόν. Ἀλλ᾿
 ὅτι μὲν οὐδεὶς ἀδικεῖται τῶν ἔξωθεν καὶ τῶν ἐν τοῖς οὖσιν ἀριθμουμένων, <milestone unit="altnumbering" n="49.C"/>
-<pb n="v.2.p.222"/>
+               <pb n="v.2.p.222"/>
 
 πρόδηλον. Οὔτε γὰρ αἱ νοηταὶ φύσεις ἐκ τῆς τῶν
 ἀνθρώπων ἀναστάσεως ἀδικηθεῖεν ἄν· οὐδὲ γὰρ ἐμπόδιόν τι
@@ -480,9 +493,9 @@
 σῶμα καὶ συναγαγεῖν· εἰ γὰρ τὸ χεῖρον οὐκ ἀνάξιον,
 τοῦτ᾿ ἔστι τὸ φθαρτὸν ποιῆσαι σῶμα καὶ παθητόν, πολὺ μᾶλλον
 τὸ κρεῖττον οὐκ ἀνάξιον, ὅπερ ἐστὶν ἄφθαρτον καὶ ἀπαθές.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="11"><p>Εἰ δὲ διὰ τῶν κατὰ φύσιν πρώτων καὶ τῶν τούτοις ἑπομένων
+         </div>
+         <div n="11" type="chapter">
+            <p>Εἰ δὲ διὰ τῶν κατὰ φύσιν πρώτων καὶ τῶν τούτοις ἑπομένων
 δέδεικται τῶν ἐξητασμένων ἕκαστον, εὔδηλον ὅτι καὶ δυνατὸν
 καὶ βουλητὸν καὶ ἄξιον τοῦ δημιουργήσαντος ἔργον ἡ τῶν <milestone unit="altnumbering" n="50.C"/>
 διαλυθέντων σωμάτων ἀνάστασις· διὰ γὰρ τούτων ἐδείχθη ψεῦδος
@@ -535,9 +548,9 @@
 τοῦ ποιήσαντος ἐπὶ τούτοις κρίσεως, καθ᾿ ὅσον ἕκαστος ἔζησε <milestone unit="altnumbering" n="51.D"/>
 χρόνον καὶ καθ᾿ οὓς ἐπολιτεύσατο νόμους, ἣν οὐκ ἄν τις
 ἀμφισβητήσειεν εἶναι δικαίαν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="12"><p>Ἔστι δὲ ὁ μὲν ἀπὸ τῆς αἰτίας λόγος, ἐὰν ἐπισκοπῶμεν
+         </div>
+         <div n="12" type="chapter">
+            <p>Ἔστι δὲ ὁ μὲν ἀπὸ τῆς αἰτίας λόγος, ἐὰν ἐπισκοπῶμεν
 πότερον ἁπλῶς καὶ μάτην γέγονεν ἄνθρωπος ἤ τινος ἕνεκεν·
 εἰ δέ τινος ἕνεκεν, πότερον ἐπὶ τοῦτο γενόμενον αὐτὸ
 τὸ ζῆν καὶ διαμένειν καθ᾿ ἣν ἐγένετο φύσιν ἢ διὰ χρείαν τινός·
@@ -623,9 +636,10 @@
 μέγεθος τὴν ἀνάστασιν. Εἶδος γάρ τι μεταβολῆς, καὶ πάντων
 ὕστατον, ἡ ἀνάστασις ἥ τε τῶν κατ᾿ ἐκεῖνον τὸν χρόνον περιόντων
 ἔτι πρὸς τὸ κρεῖττον μεταβολή.</p>
-</div>
-
-<milestone unit="altnumbering" n="54.A"/><div type="textpart" subtype="chapter" n="13"><p>Ἐπὶ δὲ τούτοις τεθαῤῥηκότες, οὐ μεῖον ἢ τοῖς ἤδη 
+         </div>
+         <milestone unit="altnumbering" n="54.A"/>
+         <div n="13" type="chapter">
+            <p>Ἐπὶ δὲ τούτοις τεθαῤῥηκότες, οὐ μεῖον ἢ τοῖς ἤδη 
 γενομένοις, καὶ τὴν ἑαυτῶν ἐπισκοποῦντες φύσιν, τήν τε μετ᾿
 ἐνδείας καὶ φθορᾶς ζωὴν στέργομεν, ὡς τῷ παρόντι βίῳ προσήκουσαν,
 καὶ τὴν ἐν ἐφθαρσίᾳ διαμονὴν ἐλπίζομεν βεβαίως·
@@ -656,9 +670,9 @@
 τούτοις δικαία κρίσις, τούτοις τε πᾶσι τὸ τοῦ βίου τέλος. Ἐξητασμένων <milestone unit="altnumbering" n="54.D"/>
 δὲ ἡμῖν τῶν προτεταγμένων ἐπισκεπτέον ἑξῆς τὴν
 τῶν ἀνθρώπων φύσιν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="14"><p>Ἡ τῶν τῆς ἀληθείας δογμάτων ἢ τῶν ὁπωσοῦν εἰς
+         </div>
+         <div n="14" type="chapter">
+            <p>Ἡ τῶν τῆς ἀληθείας δογμάτων ἢ τῶν ὁπωσοῦν εἰς
 ἐξέτασιν προβαλλομένων ἀπόδειξις, τὴν ἀπλανῆ τοῖς λεγομένοις
 <pb n="v.2.p.242"/>
 
@@ -707,9 +721,9 @@
 καὶ αὐτοὶ δικαιοῦσιν ὡς οὐ διὰ τὴν κρίσιν ἡ ἀνάστασις γίνεται
 <milestone unit="altnumbering" n="56.A"/>κατὰ πρῶτον λόγον, ἀλλὰ διὰ τὴν τοῦ δημιουργήσαντος γνώμην 
 καὶ τὴν τῶν δημιουργηθέντων φύσιν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="15"><p>Ἀρκούσης δὲ καὶ μόνης τῆς ἐπὶ τῇ γενέσει τῶν ἀνθρώπων
+         </div>
+         <div n="15" type="chapter">
+            <p>Ἀρκούσης δὲ καὶ μόνης τῆς ἐπὶ τῇ γενέσει τῶν ἀνθρώπων
 θεωρουμένης αἰτίας δεῖξαι τὴν ἀνάστασιν κατὰ φυσικὴν
 ἀκολουθίαν ἑπομένην τοῖς διαλυθεῖσι σώμασι, δίκαιον ἴσως πρὸς
 μηδὲν ἀποκνῆσαι τῶν προτεθέντων, ἀκολούθως δὲ τοῖς εἰρημένοις
@@ -771,9 +785,9 @@
 καὶ τῶν ὑπ᾿ ἐκεῖνου διδομένων δωρεῶν τὸ μάταιον, δεῖ
 πάντως τῷ τῆς ψυχῆς ἀτελευτήτῳ συνδιαιωνίζειν τὴν τοῦ σώματος
 διαμονὴν κατὰ τὴν οἰκείαν φύσιν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="16"><p>Ξενιζέσθω δὲ μηδεὶς εἰ τὴν θανάτῳ καὶ φθορᾷ διακοπτομένην
+         </div>
+         <div n="16" type="chapter">
+            <p>Ξενιζέσθω δὲ μηδεὶς εἰ τὴν θανάτῳ καὶ φθορᾷ διακοπτομένην
 ζωὴν ὀνομάζομεν διαμονήν, λογιζόμενος ὡς οὐχ
 εἷς τοῦ προσρήματος ὁ λόγος, οὐχ ἓν τῆς διαμονῆς τὸ μέτρον,
 ὅτι μηδὲ τῶν διαμενόντων φύσις μία. Εἴπερ γὰρ κατὰ τὴν
@@ -819,9 +833,9 @@
 ἑαυτῇ συνεισάγει τὴν ἀνάστασιν, ἀπογινώσκειν ὀφείλομεν, κἂν
 ἐπὶ ποσὸν διακόπτηται τῷ χωρισμῷ τῆς ψυχῆς ἀπὸ τοῦ
 σώματος.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="17"><p>Αὕτη γὰρ τῶν ἀνθρώπων ἡ φύσις, ἄνωθεν καὶ κατὰ
+         </div>
+         <div n="17" type="chapter">
+            <p>Αὕτη γὰρ τῶν ἀνθρώπων ἡ φύσις, ἄνωθεν καὶ κατὰ
 γνώμην τοῦ ποιήσαντος συγκεκληρωμένην ἔχουσα τὴν ἀνωμαλίαν,
 ἀνώμαλον ἔχει τὴν ζωὴν καὶ τὴν διαμονήν, ποτὲ μὲν ὕπνῳ
 ποτὲ δὲ θανάτῳ διακοπτομένην καὶ ταῖς καθ᾿ ἑκάστην ἡλικίαν
@@ -858,9 +872,9 @@
 τὸ πιστόν, πολὺ μᾶλλον ὁ λόγος ἐκ τῆς φυσικῆς ἀκολουθίας <milestone unit="altnumbering" n="59.D"/>
 ἀνιχνεύων τὴν ἀλήθειαν πιστοῦται τὴν ἀνάστασιν, ἀσφαλέστερος
 ὢν καὶ κρείττων τῆς πείρας πρὸς πίστωσιν ἀληθείας.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="18"><p>Τῶν πρώην ἡμῖν εἰς ἐξέτασιν προτεθέντων λόγων
+         </div>
+         <div n="18" type="chapter">
+            <p>Τῶν πρώην ἡμῖν εἰς ἐξέτασιν προτεθέντων λόγων
 καὶ τὴν ἀνάστασιν πιστουμένων πάντες μέν εἰσιν ὁμογενεῖς,
 ὡς ἐκ τῆς αὐτῆς φύντες ἀρχῆς· ἀρχὴ γὰρ αὐτοῖς ἡ τῶν πρώτων
 ἀνθρώπων ἐκ δημιουργίας γένεσις· ἀλλ᾿ οἱ μὲν ἐξ αὐτῆς
@@ -878,7 +892,7 @@
 ἢ δίκης καὶ τοῦ κατὰ τὸν ἀνθρώπινον βίον τέλους, αὐτῶν δὲ
 τούτων προτάξαι τὸν κατὰ φύσιν ἡγούμενον, καὶ πρῶτόν γε
 διασκέψασθαι τὸν περὶ τῆς κρίσεως λόγον· τοσοῦτον μόνον ὑπειπόντας, <milestone unit="altnumbering" n="60.B"/>
-<pb n="v.2.p.262"/>
+               <pb n="v.2.p.262"/>
 
 φροντίδι τῆς προσηκούσης τοῖς προκειμένοις ἀρχῆς καὶ
 τάξεως, ὅτι δεῖ τοὺς ποιητὴν τὸν θεὸν τοῦδε τοῦ παντὸς παραδεξαμένους
@@ -931,9 +945,9 @@
 τῶν νεκρωθέντων καὶ πάλιν ἑνωθέντων τῶν κεχωρισμένων ἢ
 καὶ πάντη διαλελυμένων, ἕκαστος κομίσηται δικαίως ἃ διὰ τοῦ
 σώματος ἔπραξεν, εἴτε ἀγαθὰ εἴτε κακά.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="19"><p>Πρὸς μὲν οὖν τοὺς ὁμολογοῦντας τὴν πρόνοιαν καὶ
+         </div>
+         <div n="19" type="chapter">
+            <p>Πρὸς μὲν οὖν τοὺς ὁμολογοῦντας τὴν πρόνοιαν καὶ
 τὰς αὐτὰς ἡμῖν παραδεξαμένους ἀρχάς, εἶτα τῶν οἰκείων ὑποθέσεων
 οὐκ οἶδ᾿ ὅπως ἐκπίπτοντας, τοιούτοις χρήσαιτ᾿ ἄν τις λόγοις <milestone unit="altnumbering" n="61.D"/>
 καὶ πολλῷ πλείοσι τούτων, εἴ γε πλατύνειν ἐθέλοι τὰ
@@ -984,9 +998,9 @@
 καὶ μηδὲ πρὸς ἕν τι τῶν εἰργασμένων τῆς θνητῆς ἐξαρκούσης
 φύσεως; Οὔτ᾿ οὖν κατὰ τὴν παροῦσαν ζωὴν ἡ κατ᾿ ἀξίαν δείκνυται
 κρίσις οὔτε μετὰ θάνατον.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="20"><p>Ἤτοι γὰρ παντελής ἐστι σβέσις τῆς ζωῆς ὁ θάνατος,
+         </div>
+         <div n="20" type="chapter">
+            <p>Ἤτοι γὰρ παντελής ἐστι σβέσις τῆς ζωῆς ὁ θάνατος,
 συνδιαλυομένης τῷ σώματι τῆς ψυχῆς καὶ συνδιαφθειρομένης,
 <milestone unit="altnumbering" n="63.A"/>ἢ μένει μὲν καθ᾿ ἑαυτὴν ἄλυτος ἡ ψυχή, ἀσκέδαστος, ἀδιάφθορος, 
 φθείρεται δὲ καὶ διαλύεται τὸ σῶμα, οὐδεμίαν ἔτι σῶζον
@@ -1008,9 +1022,9 @@
 ἀνομίαν· ὁ γὰρ διαπραξάμενος ἕκαστον τῶν κατὰ τὸν βίον
 ἐφ᾿ οἷς ἡ κρίσις ἄνθρωπος ἦν, οὐ ψυχὴ καθ᾿ ἑαυτήν. Τὸ δὲ <milestone unit="altnumbering" n="63.C"/>
 σύμπαν εἰπεῖν, ὁ λόγος οὗτος ἐπ᾿ οὐδενὸς φυλάξει τὸ δίκαιον.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="21"><p>Κατορθωμάτων τε γὰρ τιμωμένων, ἀδικηθήσεται τὸ
+         </div>
+         <div n="21" type="chapter">
+            <p>Κατορθωμάτων τε γὰρ τιμωμένων, ἀδικηθήσεται τὸ
 σῶμα σαφῶς ἐκ τοῦ κοινωνῆσαι μὲν τῇ ψυχῇ τῶν ἐπὶ τοῖς
 σπουδαζομένοις πόνων, μὴ κοινωνῆσαι δὲ τῆς ἐπὶ τοῖς κατορθωθεῖσι
 τιμῆς, καὶ συγγνώμης μὲν τυγχάνειν πολλάκις τὴν
@@ -1026,8 +1040,7 @@
 πῶς οὐκ ἄδικον τὴν ψυχὴν κρίνεσθαι καθ᾿ ἑαυτὴν ὑπὲρ ὧν οὐδ᾿
 ἡντινοῦν ἔχει κατὰ τὴν ἑαυτῆς φύσιν οὐκ ὄρεξιν, οὐ κίνησιν,
 <pb n="v.2.p.274"/>
-
-<milestone unit="altnumbering" n="64.A"/>οὐχ ὁρμήν, οἷον λαγνείας ἢ βίας ἢ πλεονεξίας ἢ ἀδικίας καὶ 
+               <milestone unit="altnumbering" n="64.A"/>οὐχ ὁρμήν, οἷον λαγνείας ἢ βίας ἢ πλεονεξίας ἢ ἀδικίας καὶ 
 τῶν ἐπὶ τούτοις ἀδικημάτων; Εἰ γὰρ τὰ πλεῖστα τῶν τοιούτων
 γίνεται κακῶν ἐκ τοῦ μὴ κατακρατεῖν τοὺς ἀνθρώπους τῶν
 ἐνοχλούντων παθῶν, ἐνοχλοῦνται δὲ ὑπὸ τῆς τοῦ σώματος ἐνδείας
@@ -1063,14 +1076,13 @@
 ἄτοπον, τὸ τὰς ἐκ τούτων ἁμαρτίας καὶ τὰς ἐπὶ ταύταις τιμωρίας
 ἐπὶ μόνας φέρειν τὰς ψυχὰς ὑπερβαλλόντως ἄδικον καὶ
 τῆς τοῦ θεοῦ κρίσεως ἀνάξιον.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="22"><p>Πρὸς δὲ τοῖς εἰρημένοις πῶς οὐκ ἄτοπον τὴν μὲν ἀρετὴν
+         </div>
+         <div n="22" type="chapter">
+            <p>Πρὸς δὲ τοῖς εἰρημένοις πῶς οὐκ ἄτοπον τὴν μὲν ἀρετὴν
 καὶ τὴν κακίαν μηδὲ νοηθῆναι δύνασθαι χωρὶς ἐπὶ τῆς
 ψυχῆς (ἀνθρώπου γὰρ ἀρετὰς εἶναι γινώσκομεν τὰς ἀρετάς,
 <pb n="v.2.p.278"/>
-
-<milestone unit="altnumbering" n="65.A"/>ὡσπεροῦν καὶ τὴν ταύταις ἀντικειμένην κακίαν οὐ ψυχῆς κεχωρισμένης 
+               <milestone unit="altnumbering" n="65.A"/>ὡσπεροῦν καὶ τὴν ταύταις ἀντικειμένην κακίαν οὐ ψυχῆς κεχωρισμένης 
 τοῦ σώματος καὶ καθ᾿ ἑαυτὴν οὔσης), τὴν δ᾿ ἐπὶ τούτοις
 τιμὴν ἢ τιμωρίαν ἐπὶ μόνης φέρεσθαι τῆς ψυχῆς; Ἢ πῶς
 ἄν τις καὶ νοήσειεν ἐπὶ ψυχῆς μόνης ἀνδρείαν ἢ καρτερίαν, οὐκ
@@ -1095,9 +1107,9 @@
 μήτε χρῆσθαί τισιν ἤ τινι πεφυκυίας, καὶ διὰ τοῦτο μήτε τῆς
 λεγομένης ἰδιοπραγίας τῶν μερῶν ἐπὶ τῆς οὕτως ἐχούσης
 ψυχῆς εὑρεθῆναι δυναμένης;</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="23"><p>Καὶ μὴν κἀκεῖνο πάντων παραλογώτατον, τὸ τοὺς
+         </div>
+         <div n="23" type="chapter">
+            <p>Καὶ μὴν κἀκεῖνο πάντων παραλογώτατον, τὸ τοὺς
 μὲν θεσπισθέντας νόμους ἐπ᾿ ἀνθρώπους φέρειν, τῶν δὲ νομίμως
 ἢ παρανόμως πεπραγμένων τὴν δίκην ἐπὶ μόνας τρέπειν
 τὰς ψυχάς. Εἰ γὰρ ὁ τοὺς νόμους δεξάμενος οὗτος δέξαιτ᾿
@@ -1137,9 +1149,9 @@
 ὑποδεῖξαι τοῖς συνελθοῦσιν ἅ χρὴ περὶ ἀναστάσεως φρονεῖν,
 καὶ τῇ δυνάμει τῶν παρόντων συμμετρῆσαι τὰς ἐπὶ τοῦτο φερούσας
 ἀφορμάς.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="24"><p>Ἐξητασμένων δὲ ποσῶς τῶν προτεθέντων ὑπόλοιπον
+         </div>
+         <div n="24" type="chapter">
+            <p>Ἐξητασμένων δὲ ποσῶς τῶν προτεθέντων ὑπόλοιπον
 <pb n="v.2.p.284"/>
 
 ἂν εἴη καὶ τὸν ἀπὸ τοῦ τέλους διασκέψασθαι λόγον, ἥδη μὲν
@@ -1171,9 +1183,9 @@
 ἀτελῆ δὲ εἶναι τὸν κατ᾿ ἀρετήν. Κτηνῶν γὰρ οἶμαι καὶ βοσκημάτων
 οἰκεῖον τοῦτο τέλος, οὐκ ἀνθρώπων ἀθανάτῳ ψυχῇ καὶ <milestone unit="altnumbering" n="67.C"/>
 λογικῇ κρίσει χρωμένων.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="25"><p>Οὐ μὴν οὐδὲ μακαριότης ψυχῆς κεχωρισμένης σώματος·
+         </div>
+         <div n="25" type="chapter">
+            <p>Οὐ μὴν οὐδὲ μακαριότης ψυχῆς κεχωρισμένης σώματος·
 οὐδὲ γὰρ τὴν θατέρου τούτων ἐξ ὧν συνέστηκεν ἄνθρωπος
 ἐσκοποῦμεν ζωὴν ἢ τέλος, ἀλλὰ τοῦ συνεστῶτος ἐξ ἀμφοῖν·
 τοιοῦτος γὰρ πᾶς ὁ τόνδε τὸν βίον λαχὼν ἄνθρωπος, καὶ δεῖ
@@ -1210,6 +1222,8 @@
 τέλους, ἰδιαζούσης τῆς ἐπὶ τούτοις ἐξετάσεως καὶ τῆς ἑκάστῳ
 συμμετρουμένης ὑπὲρ τῶν εὖ ἢ κακῶς βεβιωμένων τιμῆς ἢ
 δίκης.</p>
-<pb n="v.2.p.292"/>
-
-</div></div></body></text></TEI>
+            <pb n="v.2.p.292"/>
+         </div>
+      </body>
+   </text>
+</TEI>

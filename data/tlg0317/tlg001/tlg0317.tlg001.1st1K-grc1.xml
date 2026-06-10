@@ -1,96 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">
-<fileDesc>
-<titleStmt>
-<title xml:lang="lat">Acta Joannis</title>
-<author xml:lang="lat">Acta Joannis</author>
-<editor>Maximilian Bonnet</editor>
- <funder>Harvard Library Arcadia Fund</funder>
- <principal>Gregory Crane</principal>
- <respStmt>
-  <persName xml:id="DDD">Digital Divide Data</persName>
-  <resp>Corrected and encoded the text</resp>
- </respStmt>
- <respStmt>
-  <persName>Gregory Crane</persName>
-  <resp>Editor-in-Chief, Perseus Digital Library</resp>
- </respStmt>
- <respStmt>
-  <persName>Matt Munson</persName>
-  <resp>Project Manager (University of Leipzig)</resp>
- </respStmt>
- <respStmt>
-  <persName>Annette Gessner</persName>
-  <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
- </respStmt>
- <respStmt>
-  <persName>Thibault Clérice</persName>
-  <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
- </respStmt>
- <respStmt>
-  <persName>Bruce Robertson</persName>
-  <resp>Technical Advisor</resp>
- </respStmt>
-</titleStmt>
-<publicationStmt>
-<authority>Harvard College Library</authority>
-<idno type="filename">tlg0317.tlg001.1st1K-grc1.xml</idno>
-<availability>
- <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-</availability>
-<date>2018</date>
-<publisher>Harvard College Library</publisher>
-<pubPlace>United States</pubPlace>
-</publicationStmt>
-<sourceDesc>
-<listBibl>
- <biblStruct>
- <monogr>
-  <title xml:lang="lat">Acta apostolorum apocrypha</title>
-  <editor>
-	<persName>
-	 <name xml:lang="lat">Maximilianus Bonnet</name>
-	</persName>
-  </editor>
-  <author ref="urn:cts:greekLit:tlg0317" xml:lang="lat">Acta Joannis</author>
-  <imprint>
-	<publisher>Mendelssohn</publisher>
-	<pubPlace>Leipzig</pubPlace>
-	<date>1898</date>
-  </imprint>
-  <biblScope unit="volume">2.1</biblScope>
- </monogr>
-  <ref target="https://archive.org/stream/actaapostolorvm00tiscgoog#page/n201/mode/2up">The Internet Archive</ref>
- </biblStruct>
-</listBibl>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
- <p>Text encoded in accordance with the latest EpiDoc standards</p>
- <refsDecl n="CTS">
-  <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
- </refsDecl>
-</encodingDesc>
-<profileDesc>
-<langUsage>
-<language ident="grc">Greek</language>
-<language ident="lat">Latin</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change/>
-</revisionDesc>
-</teiHeader>
-<text>
-<body>
-<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0317.tlg001.1st1K-grc1">
-<pb n="151"/>
-<head>Πράξεις τοῦ ἁγίου ἀσποστόλου καὶ εὐαγγελιστοῖ Ἰωάννου
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Acta Joannis</title>
+            <author xml:lang="lat">Acta Joannis</author>
+            <editor>Maximilian Bonnet</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg0317.tlg001.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2018</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg0317.tlg001.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Acta apostolorum apocrypha</title>
+                     <editor>
+                        <persName>
+                           <name xml:lang="lat">Maximilianus Bonnet</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg0317" xml:lang="lat">Acta Joannis</author>
+                     <imprint>
+                        <publisher>Mendelssohn</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1898</date>
+                     </imprint>
+                     <biblScope unit="volume">2.1</biblScope>
+                  </monogr>
+                  <ref target="https://archive.org/stream/actaapostolorvm00tiscgoog#page/n201/mode/2up">The Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0317.tlg001.1st1K-grc1">
+         <pb n="151"/>
+         <head>Πράξεις τοῦ ἁγίου ἀσποστόλου καὶ εὐαγγελιστοῖ Ἰωάννου
 τοῦ θεολόγου.</head>
-<div type="textpart" subtype="chapter" n="1">
-<p>1 Βασιλεύοντος τῶν Ἰουδαίων Ἀγρίππα, ὃν διὰ τὸ συμβουλεύειν <note type="marginal">266 T</note>
+         <div n="1" type="chapter">
+            <p>1 Βασιλεύοντος τῶν Ἰουδαίων Ἀγρίππα, ὃν διὰ τὸ συμβουλεύειν <note type="marginal">266 T</note>
 εἰρήνην λιθοβολήσαντες ἀπέκτειναν, ἐν τῷ καιρῷ
 ἐκείνῳ Οὐεσπεσιανὸς Καῖσαρ ὑπάρχων πολλῷ στρατεύματι <lb n="5"/>
 περιχαρακώσας τὴν Ἱερουσαλὴμ τοὺς μὲν δορυαλώτους λαβὼν
@@ -99,14 +109,13 @@
 καὶ τὰ σκεύη τὰ ἅγια εἰς ναῦν ἐμβαλὼν ἔπεμψεν εἰς Ῥώμην
 ποιήσασθαι τῆς Εἰρήνης σκήνωμα, καὶ τοῖς ἐκ πολέμου σκύλοις <lb n="10"/>
 ἐκοσμεῖτο.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="2">
-<p>2 Οὐεσπεσιανοῦ δὲ ἀποθανόντος ἐγκρατὴς γενόμενος ὁ
+         </div>
+         <div n="2" type="chapter">
+            <p>2 Οὐεσπεσιανοῦ δὲ ἀποθανόντος ἐγκρατὴς γενόμενος ὁ
 νἱὸς αὐτοῦ Δομετιανὸς τῆς βασιλείας μετὰ τῶν ἄλλων ἀδικημάτων
 αὐτοῦ προσέθετο καὶ διωγμὸν ποιεῖν κατὰ τῶν δικαίων
 ἀνθρώπων. μαθὼν γὰρ τὴν πόλιν πεπληρῶσθαι Ἰουδαίωγ, <lb n="15"/>
-<note type="footnote">P Paris gr 520 s XI T Taurin B II 9 n 67 s XIII
+               <note type="footnote">P Paris gr 520 s XI T Taurin B II 9 n 67 s XIII
 Γ W Vindob hist gr 126 s XV Σ O Ottob gr 27 s XV
 A Ambros A 63 inf s X aut XI Σ X Vatic gr 834 s XV
 Δ V Vatoc gr 654 s XI Σ΄ Y — 1181 s  XV
@@ -116,25 +125,25 @@ U Vatic gr 866 s XIII Cossarto
 Q Paris gr 1468 s XI I acta concilii in latinum conuersa
 M Venet Marc gr 363 s XII ab Anastasio
 C Vindob hst gr 63 anni 1324</note>
-<note type="footnote">Metaphr Symeo Metaphrastes α consummatio Io armenice
+               <note type="footnote">Metaphr Symeo Metaphrastes α consummatio Io armenice
 𝔄 Abdias qui fertur c transitus Io coptice
 acta Io syriace α acta Io aethiopice</note>
-<note type="footnote">Γ (═ PWA) 1—2 πρ. - θεολ.]. καὶ ταῦτα μὲν οὕτως ὅπως δὲ πάλιν ὁ
+               <note type="footnote">Γ (═ PWA) 1—2 πρ. - θεολ.]. καὶ ταῦτα μὲν οὕτως ὅπως δὲ πάλιν ὁ
 ἰωάννης πρὸς τὴν ῥώμην ἄκων τὴν ὑποστροφὴν ἐποιήσατο ἔνθεν ἐρῶ A ‖
 πράξις εἰς τὴν μετάστασιν W ‖2 θεολ.] περὶ τῆς ἐξορίας καὶ μεταστάσεαως
 αὐτοῦ add P ‖ 3 βασ.] γὰρ add A ‖ ἀγρίππου W ‖5 οὐεσπασιανὸς
 A ‖ 6 δοριαλώτους A ‖ 7 διέφθ.] ἀπέκτεινε A ‖ 10-11 καὶ - ἐκοσμ. om A: del? ‖
 12 οὐεσπασανοῦ A ‖ ἐγκρ. γ. post βασ. (13) A ‖ 13-14 αὐτ. ἀδ. A ‖14 ποιῆσαι A</note>
-
-<pb n="152"/>
+               <pb n="152"/>
 μεμνημένος τῶν ὑπὸ τοῦ πατρὸς αὐτοῦ περὶ αὐτῶν κελευσθέντων,
 ὥρμησεν ἐπὶ τὸ πάντας ἐκβαλεῖν ἐκ τῆς τῶν Ῥωμαίων
 πόλεως. τολμήσαντες δέ τινες τῶν Ἰουδαίων ἔθωκαν τῷ Δομετιανῷ
 βίβλον ἐν ᾧ ἐγέγραπτο τάδε· |</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="3">
-<note type="marginal">267 T</note> <lb n="5"/> <p>3 Δομετιανὲ Καῖσαρ βασιλεῦ πάσης τῆς οἰκουμένης,
+         </div>
+         <div n="3" type="chapter">
+            <note type="marginal">267 T</note>
+            <lb n="5"/>
+            <p>3 Δομετιανὲ Καῖσαρ βασιλεῦ πάσης τῆς οἰκουμένης,
 ὅσοι Ἰουδαῖοι σοῦ δεόμεθα καὶ ἱκέται προσκείμεθα τῆς σῆς
 δυνάμεως μὴ φυγαδεύειν ἡμᾶς ἀπὸ τοῦ θείου καὶ φιλανθρώπου
 σου προσώπου· εἴκομεν γάρ σοι, καὶ τοῖς ἕθεσι καὶ τοῖς
@@ -160,26 +169,23 @@ A ‖ 6 δοριαλώτους A ‖ 7 διέφθ.] ἀπέκτεινε A ‖ 10
 ὄν.] περιφέροντες τῶν add A  ‖ χριστιανόν PW  ‖ οὗτοι] οἷ τὸν W  ‖ 15 θεὸν]
 τὸν θεὸν μὲν A  ‖ 16 δὲ] τοῦ add A 19 βλ. κ. τ. ἄν. α. A ‖ 21 ἐπισυνάπ-
 τουσι A  ‖ ⟨σταυρῷ⟩ παγέντα?</note>
-<note type="footnote">V 22 πάσης οὖν τῆς πόλεως χαλεπαινούσης ἐπὶ τῆ καταπτώσει τοῦ
+               <note type="footnote">V 22 πάσης οὖν τῆς πόλεως χαλεπαινούσης ἐπὶ τῆ καταπτώσει τοῦ
 ἱεροῦ τῆς ἀρτέμιδος (quae sunt ex Prochoro p 173, 12 Zahn) ἀνήνεγκαν V |
 29 ἐπώλεσαι V: scr ἀπολέσει??</note>
-
-<pb n="153"/>
+               <pb n="153"/>
 νεκρῶν ἀναστάντα δοξολογοῦσιν· πρὸς τούτοις καὶ ἀναληφθέντα
 ἐν νεφέλαις ἐν τοῖς οὐρανοῖς καταψεύδονται.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="4">
-<p>4 Ἐπὶ τούτοις πᾶσιν ὀργῇ συσχεθεὶς ὁ βασιλεὺς θόγμα
+         </div>
+         <div n="4" type="chapter">
+            <p>4 Ἐπὶ τούτοις πᾶσιν ὀργῇ συσχεθεὶς ὁ βασιλεὺς θόγμα
 τῇ συγκλήτῳ ἐκελεύσατο ἵνα ἄρδην τοὺς ὁμολογοῦντας αὐτοὺς
 εἶναι χριστιανοὺς φονεύσωσιν. τῶν οὖν παραυτὰ τῆς ὀργῆς <lb n="5"/>
 εὑρεθέντων καὶ τὸν τῆς ὑπομονῆς καρπὸν τρυγησάντων στεψαμένων
 τε τὸν πάμμαχον ἀγῶνα κατὰ τῶν τοῦ διαβόλου πραγμάτων
 προσελάβετο ἡ τῆς ἀφθαρσίας ἀνάψυξις.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="5">
-<p>5 Διεφημίσθη τε ἐν τῇ Ῥώμῃ ἡ τοῦ Ἰωάννου διδασκαλία
+         </div>
+         <div n="5" type="chapter">
+            <p>5 Διεφημίσθη τε ἐν τῇ Ῥώμῃ ἡ τοῦ Ἰωάννου διδασκαλία
 καὶ μέχρι τῶν Δομετιανοῦ ἀκοῶν, εἶναί τινα ἐν Ἐφέσῳ Ἑβραῖον <lb n="10"/>
 ὀνόματι Ἰωάννην, ὃς περὶ τοῦ Ῥωμαίων βασιλείου διαφημίζει
 λέγων ἐν τάχει ἐκριζωθήσεσθαι, καὶ ἑτέρῳ τὴν βασιλείαν τῶν
@@ -201,17 +207,16 @@ W ‖ τῶν repet A ‖ τραυμάτων A ‖ 10 καὶ om A ‖ τῶ
 cf 16 ‖ 19 ἀπ. εἶπεν] πραεία τῆ φωνῆ ἀποκρίνεται A ‖ 20 πεν.] θεωρήσαντες
 καὶ δῆθεν add A 20—21 μετὰ σφοδρᾶς τῆς ἀπ. ἐπέπληττον A ‖ 22 τὲ
 ἐκείνου A πάλιν om A ‖ ἀλλὰ om A</note>
-<note type="footnote">V 26 scr φασίν??</note>
-
-<pb n="154"/>
+               <note type="footnote">V 26 scr φασίν??</note>
+               <pb n="154"/>
 μαρτυρούντων, ἔφησαν αὐτὸν ἐν τάχει ἐξιέναι σὺν
 αὐτοῖς πρὸς τὸν βασλέα ἐν Ῥώμῃ. τοῦ δὲ παρακαλέσαντος
 αὐτοὺς λαβεῖν ἐφόδια, ἐπιστρέψας καὶ λαβὼν φοίνικας ὀλίγους
 ἐξῆλθεν εὐθέως.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="6">
-<lb n="5"/> <p>6 Καὶ λαβόντες οἱ στρατιῶται δημόσια ὀχήματα ἐν τάχει
+         </div>
+         <div n="6" type="chapter">
+            <lb n="5"/>
+            <p>6 Καὶ λαβόντες οἱ στρατιῶται δημόσια ὀχήματα ἐν τάχει
 ὥδενον, μέσον αὐτὸν καθίσαντες. ἐλθόντων οὖν αὐτῶν εἰς
 τὴν πρώτην ἀλλαγήν, ὥρας ἀρίστου οὔσης, ἐδέοντο αὐτοῦ
 εὐψυχεῖν καὶ λαβόντα ἄρτον σὺν αὐτοῖς ἐσθίειν. ὁ δὲ Ἰωάννης
@@ -235,15 +240,13 @@ add A ‖ 5—6 ὥδ, ἐν τ. A ‖ 9—10 μεταλαβεῖν οὐ δύ�
 αὐτ. περ. κινδ. A ‖ βὲ] ἐν αὐτῶ add A ‖ 18 αὐτὸν αὐτοῖς ἐδ. A ‖ ἑβδό P ‖
 19 αὐτ.] πρὸς αὐτούς A ‖ 20 τροφ. γεύσασθαι A fort uerum ‖ scr τροφῇ??
 πρόσωπ.] καὶ add A</note>
-<note type="footnote">V 28 scr ἔσχατον</note>
-
-<pb n="155"/>
+               <note type="footnote">V 28 scr ἔσχατον</note>
+               <pb n="155"/>
 προσευξάμενος προεκόμιζεν τὸ λέντιον καὶ λαβὼν ἕνα
 τῶν φοινίκων ἤσθιεν πάντων ὁρώντων.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="7">
-<p>7 Πολλοῦ οὖν χρόνου διιππεύσαντος ἔφθασαν τὴν ὁδόν,
+         </div>
+         <div n="7" type="chapter">
+            <p>7 Πολλοῦ οὖν χρόνου διιππεύσαντος ἔφθασαν τὴν ὁδόν,
 τοῦ Ἰωάννου οὕτως νηστεύοντος. προσαγαγόντες δὲ αὐτὸν <note type="marginal">269 T</note>
 τῷ βασιλεῖ εἶπον· Σεβαστὲ βασλεῦ, Ἰωάννην σοι προσάγομεν, <lb n="5"/>
 θεὸν οὐκ ἄνθρωπον· ἐξ ἧς γὰρ αὐτὸν συνελάβομεν ἄχρι τῆς
@@ -255,25 +258,24 @@ add A ‖ 5—6 ὥδ, ἐν τ. A ‖ 9—10 μεταλαβεῖν οὐ δύ�
 Καὶ ὁ Ἰωάννης πρὸς αὐτὸν εἶπεν· Δίκαιον τὴν χεῖρα τοῦ
 θεοῦ ἐν πρώτοις προσκυνεῖν, καὶ οὕτως τὸ στόμα τοῦ βασιλέως
 καταφιλεῖν· γέγραπται γὰρ ἐν ταῖς ἱεραῖς βίβλοις· Καρδία
-βασιλέως ἐν χειρὶ θεοῦ.</p> <lb n="15"/>
-</div>
-
-<div type="textpart" subtype="chapter" n="8">
-<p>8 Καὶ ὁ βασιλεὺς εἶπεν αὐτῷ· Σὺ εἶ Ἰωάννης ὁ τὴν
+βασιλέως ἐν χειρὶ θεοῦ.</p>
+            <lb n="15"/>
+         </div>
+         <div n="8" type="chapter">
+            <p>8 Καὶ ὁ βασιλεὺς εἶπεν αὐτῷ· Σὺ εἶ Ἰωάννης ὁ τὴν
 βασιλείαν μου λέγων ἐν τάχει ἐκριζωθήσεσθαι καὶ μέλλειν
 ἕτερον βασιλεύειν ἀντʼ ἐμοῦ, Ἰησοῦν; Ἀποκριθεὶς δὲ ὁ Ἰωάννης
 εἶπεν αὐτῷ· Σὺ καὶ βασιλεύσῃ πολλοῖς χρόνοις τοῖς ὑπὸ θεοῦ
 <note type="footnote">11 et 29 Prou 21, 1 ‖ 30 ??</note>
-<note type="footnote">1 προσεκόμιζεν W ἐκόμισε A ‖ τὸ om. A ‖ 2 ὁρ. π. A ‖ ἔφθ.] ἤνυσαν
+               <note type="footnote">1 προσεκόμιζεν W ἐκόμισε A ‖ τὸ om. A ‖ 2 ὁρ. π. A ‖ ἔφθ.] ἤνυσαν
 πᾶσαν A ‖ 4 οὕτω A ‖ δὲ om A ‖ 5 βασιλεῦ] δομετιανὲ A ‖ προσηγάγομεν A ‖
 9—10 τ. κ. ἀπ. A ‖ 11 ἐπ.] ὅτι add A ‖ 12 om W ‖ εἶπεν om A ‖ 13 οὕτω A ‖
 14 ταῖς β. τ. ἱερ. A ‖ τοῖς ἱερεῖς W: cf 152, 4 ‖ 16 εἶπε πρὸς αὐτόν A ‖
 16—17 τ. β. τὴν ἐμὴν ἐν τ. λέγ. καταλυθήσεσθαι A: cf 153, 12 ‖ 17 ἐκριζω-
 θῆναι W ‖ 18 ἀντὶ W 18—19 αὐτῶ ἰω. ε. A ‖ 19 βασιλεύσει W βασιλεύσεις A
 fort recte ‖ 19—156, 1 τοῖς - δεδ. om A</note>
-<note type="footnote">V 24 scr ἐγγ. αὐτῷ? ‖ 34 ⟨τὸ⟩ τῶν?? ‖ 31— 156, 22 ἐν φ. τ. corrupta uid</note>
-
-<pb n="156"/>
+               <note type="footnote">V 24 scr ἐγγ. αὐτῷ? ‖ 34 ⟨τὸ⟩ τῶν?? ‖ 31— 156, 22 ἐν φ. τ. corrupta uid</note>
+               <pb n="156"/>
 σοι δεδομένοις, καὶ μετὰ σὲ ἕτεροι πλεῖστοι· πληρωθέντων δὲ
 τῶν ἐπὶ γῆς χρόνων ἐξ οὐρανοῦ ἐλεύσεται βασιλεὺς αἰώνιος,
 ἀληθής, κριτὴς ζώντων καὶ νεκρῶν, πᾶν ἔθνος καὶ φυλαὶ
@@ -282,10 +284,9 @@ fort recte ‖ 19—156, 1 τοῖς - δεδ. om A</note>
 δὲ ἐστιν ὁ κύριος ὁ δυνατὸς καὶ βασιλεὺς πάσης πνοῆς καὶ
 σαρκός, ὁ λόγος καὶ υἱὸς τοῦ θεοῦ τοῦ ζῶντος, ὅς ἐστιν
 Ἰησοῦς Χριστός.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="9">
-<p>9 Πρὸς ταῦτα ἔφη αὐτῷ ὁ Δομετιανός· Τίς τούτων ἀπόδειξις;
+         </div>
+         <div n="9" type="chapter">
+            <p>9 Πρὸς ταῦτα ἔφη αὐτῷ ὁ Δομετιανός· Τίς τούτων ἀπόδειξις;
 <lb n="10"/> ῥήμασιν μόνοις οὐ πείθομαι· ὄψις ἀδόλων τὰ φθεγγόμενα.
 τί δύνῃ θεῖξαι ἐπίγειον ἢ ἐπουράνιον ἐν τῇ δυνάμει
 ἐκείνου τοῦ μέλλοντος βασιλεύειν καθὼς καὶ λέγεις; ποιήσει
@@ -299,21 +300,19 @@ fort recte ‖ 19—156, 1 τοῖς - δεδ. om A</note>
 <lb n="20"/> ποίησον αὐτὸ πόμα ζωῆς καὶ σωτηρίας γενέσθαι εἰς ἴασιν
 ψυχῆς καὶ σώματος, εἰς πέψιν, εἰς ἀβλαβῆ διοίκησιν, εἰς
 <note type="footnote">5 cf Rom 3, 19 ‖ 18 cf Matth 20, 22</note>
-<note type="footnote">3 καὶ alt om P ‖ φ.] πᾶσαι αἱ φ. A φυλὴ Tischendorf ueri similius ‖
+               <note type="footnote">3 καὶ alt om P ‖ φ.] πᾶσαι αἱ φ. A φυλὴ Tischendorf ueri similius ‖
 ξομολογήσονται A ‖ πᾶσα - καταργ. om A ‖ 5 κ. πᾶν - φραγ. om W ‖ 7 τοῦ
 θ. om P ‖ 10 πείσομαι A ‖ 11 δύναι W ‖ οὐράνιον A ‖ 12 καὶ om AW ‖ 13 θ.]
 τοῦ θ. P ‖ 15 φ. α. π.] π. ἄφθορον φ. W προσεκομίσθη αὐτῆ τῆ ὥρα τὸ
 φ. A ‖ οὖν ὁ] ὀοῦν P οὖν αὐτὸ ὁ A ‖ 16 μεγάλη A: cf 157, 3 ‖ πλ.] τὲ add
 A ‖ 18 ποτ.] τοῦτο add A ‖ γλύκανον A fort recte ‖ 21 καὶ] ὁμοῦ καὶ τοῦ A</note>
-<note type="footnote">V 25 βοηθήσει ⟨σοι⟩? ‖ 28 scr αὐτοῦ?</note>
-
-<pb n="157"/>
+               <note type="footnote">V 25 βοηθήσει ⟨σοι⟩? ‖ 28 scr αὐτοῦ?</note>
+               <pb n="157"/>
 πίστιν ἀμετανόητον, εἰς ἀνεξάρνητον μαρτύριον τοῦ θανάτου
 ὡς ποτήριον εὐχαριστίας.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="10">
-<p>10 Ἐκπιόντος οὖν αὐτοῦ τὸν κύλικα περιέμενον οἱ παρεστῶτες
+         </div>
+         <div n="10" type="chapter">
+            <p>10 Ἐκπιόντος οὖν αὐτοῦ τὸν κύλικα περιέμενον οἱ παρεστῶτες
 τῷ Δομετιανῷ πότε μέλλει σπασθεὶς καταπίπτειν ἐπὶ
 τῆς γῆς. τοῦ δὲ Ἰωάννου ἱλαροῦ ἑστῶτος καὶ σῴου προσομιλοῦντος <lb n="5"/>
 ὠργίσθη ὁ Δομετιανὸς πρὸς τοὺς δόντας τὸ φάρμακον
@@ -327,18 +326,17 @@ A ‖ 18 ποτ.] τοῦτο add A ‖ γλύκανον A fort recte ‖ 21 
 ποτηρίῳ καὶ περικλύσας μετὰ πάσης τῆς ὑποστάθμης ἐπέδωκεν
 τῷ κατακρίτῳ. ὃ δὲ λαβὼν καὶ πιὼν παραχρῆμα ἔπεσεν καὶ <lb n="15"/>
 ἐτελεύτησεν.</p>
-<note type="footnote">26 Marc 16, 18</note>
-<note type="footnote">2 ὡς] καὶ εἰς A ‖ 3 τὴν A: cf 156, 16 ‖ 4 post δο (μετιανῷ) schedis rescissis
+            <note type="footnote">26 Marc 16, 18</note>
+            <note type="footnote">2 ὡς] καὶ εἰς A ‖ 3 τὴν A: cf 156, 16 ‖ 4 post δο (μετιανῷ) schedis rescissis
 deficit W: cf 205, 10</note>
-<note type="footnote">PA 7 φεισαμένου P φεισαμένοις Tischendorf: cf V ‖ ὁ δὲ ἐπομοσά-
+            <note type="footnote">PA 7 φεισαμένου P φεισαμένοις Tischendorf: cf V ‖ ὁ δὲ ἐπομοσά-
 μενος A ‖ 8 καὶ] τὴν add A ‖ 10 ὑποψιθυρίζουσιν A ‖ 11 δ λ. κ.] ἔα πεῖραν
 Tischendorf quod illa legere non potuit 11—12 τὴν τ. φ. τούτου τὴν δ. A ‖
 13 παραγεναμένου A ‖ 11 περικλίσας A ‖ τῆς om P ‖ 15 κατ.] πιεῖν add A</note>
-</div>
-
-<pb n="158"/>
-<div type="textpart" subtype="chapter" n="11">
-<p>11 Θαυμασάντων δὲ πάντων ἐπὶ τοῖς γενομένοις σημείοις
+         </div>
+         <pb n="158"/>
+         <div n="11" type="chapter">
+            <p>11 Θαυμασάντων δὲ πάντων ἐπὶ τοῖς γενομένοις σημείοις
 καὶ τοῦ Δομετιανοῦ τῷ φόβῳ συσχεθέντος καὶ ἀπερχομένου
 εἰς τὸ παλάτιον, ἔφη πρὸς αὐτὸν ὁ Ἰωάννης· Ῥωμαίων βασιλεῦ
 Δομετιανέ, τοῦτο ἠβουλήθης ἵνα σοῦ παρόντος καὶ μαρτυροῦντος
@@ -352,10 +350,10 @@ Tischendorf quod illa legere non potuit 11—12 τὴν τ. φ. τούτου τ�
 ὅτι ὁ λόγος τοῦ θεοῦ καὶ φαρμάκου πολὺ δυνατώτερος
 καὶ ζωῆς δεσπόζει, Λαβόμενος δὲ τῆς χειρὸς αὐτοῦ ἀνέστησεν
 αὐτὸν ζῶντα.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="12">
-<lb n="15"/> <p>12 Δοξαζόντων δὲ τὸν θεὸν πάντων καὶ θαυμαζόντων
+         </div>
+         <div n="12" type="chapter">
+            <lb n="15"/>
+            <p>12 Δοξαζόντων δὲ τὸν θεὸν πάντων καὶ θαυμαζόντων
 τὴν τοῦ Ἰωάννου πίστιν, ἔφη αὐτῷ ὁ Δομετιανός· Δόγμα τῆς
 συγκλήτου ἐξέθηκα πάντας τοὺς τοιούτους ἀναπολογήτους
 ἀπάγεσθαι· ἀλλʼ ἐπειδὴ διὰ σοῦ εὑρίσκω αὐτοὺς ἀθφῴους καὶ
@@ -368,15 +366,13 @@ cf ep ad Col 1, 16 (sed etiam ep Pet 2, 2, 10; 11) ‖ 11 πάλιν γενησ
 12 θεοῦ καὶ om P: del καὶ? ?? ‖ δυν.] καὶ θανάτου add A fort uerum:
 cf 159, 8 ‖ 14 ζῶν (in ima pagina) P ‖ 15 π. τ. θ. A ‖ 16 τοῦ om A ‖ ὁ om A ‖
 17 ἐκέλευσα A: cf 163, 4 ‖ 20 α. ἐγὼ τὰ ἐμ. κατ. A ‖</note>
-<note type="footnote">V 24 scr τῷ ἀνθρώπῳ τούτῳ ?? ‖ 30 ⟨οὐχ⟩ εὑρίσκει?</note>
-
-<pb n="159"/>
+               <note type="footnote">V 24 scr τῷ ἀνθρώπῳ τούτῳ ?? ‖ 30 ⟨οὐχ⟩ εὑρίσκει?</note>
+               <pb n="159"/>
 αὐτοῦ εἶπεν ὁ Ἰωάννης· Ὕπαγε, χάριο ἔχε τῷ θεῷ τῷ
 σύμερόν σε ἐκ φυλακῆς καὶ ἐκ θανάτου λυτρωσαμένῳ.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="13">
-<p>13 Ἑστώτων δὲ αὐτῶν θρεπτή τις Δομετιανοῦ τῶν πρὸς
+         </div>
+         <div n="13" type="chapter">
+            <p>13 Ἑστώτων δὲ αὐτῶν θρεπτή τις Δομετιανοῦ τῶν πρὸς
 τῷ κοιτῶνι αἰφνιδίως ληφθεῖσα ὑπό του ἀκαθάρτου δαίμονος
 ἔκειτο νεκρά, καὶ ἀνηγγέλη τῷ βασιλεῖ. κινηθεὶς δὲ ὁ βασλεὺς <lb n="5"/>
 ἐδέετο τοῦ Ἰωάννου βοηθῆσαι αὐτῇ. ὁ δὲ Ἰωάννης εἶπεν·
@@ -387,17 +383,17 @@ cf 159, 8 ‖ 14 ζῶν (in ima pagina) P ‖ 15 π. τ. θ. A ‖ 16 τοῦ 
 κόρῃ ταύτῃ πνοὴν ζωῆς. Καὶ εὐξάμενος ἀνέστησεν αὐτήν.
 ἐκπλαγεὶς δὲ ἐπὶ πᾶσι τοῖς θαυμασίοις ὁ Δομετιανὸς ἀπέλυσεν
 αὐτὸν εἰς νῆσον, ὁρίσας αὐτὸν τακτὸν χρόνον.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="14">
-<p>14 Εὐθέως δὲ ἀπέπλευσεν ὁ Ἰωάννης εἰς Πάτμον, ὅπλου
+         </div>
+         <div n="14" type="chapter">
+            <p>14 Εὐθέως δὲ ἀπέπλευσεν ὁ Ἰωάννης εἰς Πάτμον, ὅπλου
 καὶ ἠξιώθη τὴν τῆς συντελείας ἰδεῖν ἀποκάλυψιν. τελευτήσαντος <lb n="15"/>
 δὲ τοῦ Δομετιανοῦ παρέλαβεν τὴν βασλείαν Νέρβας,
 ὃς πάντας τοὺς ἐξορισθέντας ἀνεκαλέσατο· ἐνιαυτὸν δὲ κατασχὼν
 τὴν βασιλείαν, διάδοχον τῆς βασιλείας Τφαίανὸν ἐποιήσατο.
 οὗ βασιλεύοντος Ῥωμαίων ἐπανελθὼν εἰς τὴν Ἔφεσον
-ὁ Ἰωάννης ἐκρά τυνεν πᾶν τὸ τῆς ἐκκλησίας διδασκαλεῖον, <lb n="20"/> <note type="marginal">272 T</note>
-<note type="footnote">εἶπεν] αὐτῶ add A ‖ ὁ ἰω. post ᾐτήσατο (158, 21) A: del? ‖ 2 καὶ - λ.]
+ὁ Ἰωάννης ἐκρά τυνεν πᾶν τὸ τῆς ἐκκλησίας διδασκαλεῖον, <lb n="20"/>
+               <note type="marginal">272 T</note>
+               <note type="footnote">εἶπεν] αὐτῶ add A ‖ ὁ ἰω. post ᾐτήσατο (158, 21) A: del? ‖ 2 καὶ - λ.]
 ῥυσαμένω καὶ τοῦ θαν, A ‖ 4 ἀφνιδίως A ‖ του om A: τοῦ Tischendorf ‖
 δαίμ. ἀκ. ἀν.] περὶ ταύτης add A ‖ αὐτήν P ‖ 7 ἐπεὶ] ἐπειδὴ A ‖ 8 δὲ]
 τοῦτο add A ‖ τίς] ἐστιν ὃς add A ‖ 9 βασ. σου] σῆς βασ. τὴν A ‖ καὶ] ταῦτα
@@ -407,29 +403,27 @@ cf 159, 8 ‖ 14 ζῶν (in ima pagina) P ‖ 15 π. τ. θ. A ‖ 16 τοῦ 
 νῆσον A ‖ ἐν ἧπερ A ὅπου Tischendorf recte ‖ 15 προηξιώθη A ‖ σφαγέντος
 A ‖ 17 ἐξορ.] χριστιανοὺς add A ‖ δὲ] ἕνα add A ‖ 19—20 ἐπαν. -  Ἰ.] πάλιν
 εἰς τ. ἔφ. ἰω. ἐπαν. A ‖ 20 ἐκράτησε A</note>
-<note type="footnote">V 2 post Πάτμῳ ad Prochorum (p 47, 15 Zahn) redit (𝔣 112 - 145)
+               <note type="footnote">V 2 post Πάτμῳ ad Prochorum (p 47, 15 Zahn) redit (𝔣 112 - 145)
 dein (𝔣 145) τοῦ δὲ βασ. et habet V ‖ 26 αὐτίκα] ante memorari debebat
 exulum reuocatio ‖ 28 φελοῦ V</note>
-
-<pb n="160"/>
+               <pb n="160"/>
 πολλά τε προσομιλῶν καὶ ἀπομνημονεύων ὅσα ὁ κύριος αὐτοῖς
 ἔλεγεν καὶ τίνα ἑκάστῳ διηγεῖτο. γενόμενος δὲ γηραλέος καὶ
 μεταλλάσσων ἐπισκοπεύειν τῇ ἐκκλησίᾳ τῷ Πολυκάρπῳ
 ἐνεκελεύσατο.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="18">
-<lb n="5"/> <p>18 Ὁ δὲ Ἰωάννης ἠπείγετο εἰς τὴν Ἔφεσον ὑπὸ ὁράματος
+         </div>
+         <div n="18" type="chapter">
+            <lb n="5"/>
+            <p>18 Ὁ δὲ Ἰωάννης ἠπείγετο εἰς τὴν Ἔφεσον ὑπὸ ὁράματος
 κεκινημένος· ὁ οὖν Δαιμόνικος καὶ ὁ συγγενὴς αὐτοῦ Ἀριστόθημος
 καί τις πάνυ πλούσιος Κλεόβιος καὶ ἡ γυνὴ τοῦ
 <note type="footnote">1 τε om A ‖ ὁ κύρ] χριστὸς. A ‖ 2 τίνα] ὅσα A ‖ γηρ.] ὁ μακάριος
 οὗτος ἰωάννης add A ‖ 3 τῆς ἐκκλησίας A: recte? 5—203, 7 om Γ: cf praef,</note>
-<note type="footnote">R 5 ὁ δὲ Ἰ.] antecedunt uerba Prochori p 128, 18 Zahn ed inde a
+               <note type="footnote">R 5 ὁ δὲ Ἰ.] antecedunt uerba Prochori p 128, 18 Zahn ed inde a
 p 127 ualde mutata R ‖ 6 δαιμονικὸς R(?): scr Δαμόνικος cf 165, 1</note>
-<note type="footnote">V 9 scr εὔσχημος? ‖ 26 ἀποστόλου| quae sequuntur (καὶ πᾶσιν ἐπευ-
+               <note type="footnote">V 9 scr εὔσχημος? ‖ 26 ἀποστόλου| quae sequuntur (καὶ πᾶσιν ἐπευ-
 ξάμενος cel) cf 203, 8</note>
-
-<pb n="161"/>
+               <pb n="161"/>
 Μαρκέλλου ἐπέσχον αὐτὸν μόλις μιᾶς ἡμέρας ἐν τῇ Μιλήτῳ
 συναναπαυόμενοι αὐτῷ. ὡς δὲ ὑπὸ βαθὺν ὄρθρον ἐξήεσαν
 καὶ ἤδη τῆς ὁδοῦ ἤνυστο ὡσεὶ μίλια τέσσαρα, φωνὴ ἠνέχθη
@@ -439,10 +433,9 @@ p 127 ualde mutata R ‖ 6 δαιμονικὸς R(?): scr Δαμόνικος cf
 σοῦ πιστεύειν. Ἐνενόει οὖν ὁ Ἰωάννης ἐν ἑαυτῷ ἀγαλλιώμενος
 τί ἄρα ἦν τὸ μέλλον ἐν Ἐφέσῳ ἀπαντᾶν, λέγων· Κύριε
 ἰδοὺ κατὰ τὸ θέλημά σου βαδίζω· γενέσθαι ὃ βούλει.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="19">
-<p>19 Καὶ ἐγγιζόντων ἡμῶν τῇ πόλει ὁ στρατηγὸς Ἐφεσίων <lb n="10"/>
+         </div>
+         <div n="19" type="chapter">
+            <p>19 Καὶ ἐγγιζόντων ἡμῶν τῇ πόλει ὁ στρατηγὸς Ἐφεσίων <lb n="10"/>
 Λυκομήδης, ἄνθρωπος τῶν δαιμόνων, ἀπήντησεν ἡμῖν, καὶ
 προσπεσὼν τοῖς ποσὶν Ἰωάννου παρεκάλει λέγων· Ἰωάννης
 ἐστί σοι ὄνομα; ἕπεμψέ σε ὁ θεὸς ὃν κηρύσσεις ἐπʼ εὐεργεσίᾳ
@@ -461,23 +454,21 @@ p 127 ualde mutata R ‖ 6 δαιμονικὸς R(?): scr Δαμόνικος cf
 αὐτοῦ νεανίσκοις· Ἀπέλθατε πρὸς τὸν συγγενῆ μου Κάλλιππον
 καὶ ξενίαν ἀρετήν λάβετε παῤ αὐτοῦ—ἔχων γὰρ τὸν υἱὸν αὐτοῦ
 παραγίνομαι ἐκεῖ — ὅπως εὐπρεπῆ τὰ πάντα εὕρωμεν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="20">
-<p>20 Γενόμενος δὲ ὁ Λυκομήδης σὺν τῷ Ἰωάννῃ ἐν τῇ
+         </div>
+         <div n="20" type="chapter">
+            <p>20 Γενόμενος δὲ ὁ Λυκομήδης σὺν τῷ Ἰωάννῃ ἐν τῇ
 οἱκίᾳ ἐν ᾗ ἡ γυνὴ ἕκειτο πάλιν αὐτοῦ τῶν ποδῶν ἥπτετο λέγων· <lb n="30"/>
 Ἴδε κύριε τὸ μαρανθὲν κάλλος, ἔδε τὴν νεότητα, ἴδε τὸ
 διαβόητον ἄνθος τῆς ταλαιπώρου μου γυναικὸς ἐφʼ ᾧ ὅλη ἡ
 Ἔφεσος ἐξεστήκει· ἐφθονήθην ὁ τάλας, ἐταπεινώθην, ὀφθαλμὸς
 ἐχθρῶν ἔπληξέ με· οὐδέποτε ἠδίκησα οὐδένα, καίτοι πολλοὺς
 δυνάμενος βλάψαι, τοῦτο αὐτὸ προορώμενος, μή τι κακὸν <lb n="35"/>
-<note type="footnote">1 μαρκέλου R ‖ 5 ἤση R ‖ 9 scr γενέσθω: cf 183, 15 ‖ 11 λικομίδης R ‖ scr
+               <note type="footnote">1 μαρκέλου R ‖ 5 ἤση R ‖ 9 scr γενέσθω: cf 183, 15 ‖ 11 λικομίδης R ‖ scr
 εὐδαιμόνων? item Iames ‖ 13 σε]  σε? σει? R ‖ 14 scr παραπλῆγος γεγονυίας?
 cf 162, 5 ‖ 17 scr ἐμαυτῷ ? ‖ scr τούτων? sed plura corrupta uid ‖ scr
 Λυκόμηδες ‖ 19 scr σεαυτῷ ?? ‖ ταύτῃ Iames probabiliter ‖ 22 scr ἑαυτόν? ‖
 25 scr Λυκομήδει? ‖ 26 κάλιππον R ‖ 27 scr ἀρεστὴν? ‖ 28 scr εὐτρεπῆ?</note>
-
-<pb n="162"/>
+               <pb n="162"/>
 ἤ τινα τύχη ταύτην ἴδοιμι φυλασσόμενος. τί οὖν οφελος γέγονε
 Κλεοπάτρα εὐλαβούμενόν με; τί οὖν ὤνησα εὐσεβὴς χρηματίσας
 ἕως σήμερον; δυσσεβοῦς χείρονα πάσχω ὅτι σὲ τοαύτην
@@ -490,10 +481,9 @@ cf 162, 5 ‖ 17 scr ἐμαυτῷ ? ‖ scr τούτων? sed plura corrupta u
 <lb n="10"/> Σύ μου τὸ φῶς ἐβιάσω Κλεοπάτραν ἀφαρπάσασα· σύ με νεκρὸν
 ἐποίησας γενέσθαι τοῦτό μοι παρασχομένη· σύ με τὴν
 πρόνοιαν ἐβιάσω ἐνυβρίσαι ἐκκόψασά μου τὴν παρρησίαν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="21">
-<p>21 Καὶ ἔτι πλείονα λέγων ὁ Λυκομήδης πρὸς τὴν Κλεοπάτραν
+         </div>
+         <div n="21" type="chapter">
+            <p>21 Καὶ ἔτι πλείονα λέγων ὁ Λυκομήδης πρὸς τὴν Κλεοπάτραν
 προσελθὼν τῇ κλίνῃ ἀναβοῶν ἐθρήνει. ὁ δὲ Ἰωάννης
 <lb n="15"/> ἀπέσπασεν αὐτὸν εἰπών· Μετάστηθι τῶν θρήνων τούτων
 καὶ τῶν ἀναρμόστων σου ῥημάτων. οὐ προσήκει ἀπεισθῆναι
@@ -522,15 +512,13 @@ cf 162, 5 ‖ 17 scr ἐμαυτῷ ? ‖ scr τούτων? sed plura corrupta u
 161, 22 ‖ 23 scr ἀναστήσει (scil αὐτήν)? ἀναστῇ?? ‖ ὀλιγοψυχῶν Ιαμεσ optime ‖
 25 scr ἐμοὶ? ⟨κατ᾿⟩ ἐμοῦ? cf 26; 163,3  ‖ 26 ⟨τοιαῦτα⟩ τεχνασαμένου? ‖ 26 scr
 παραδιδοῖς? ‖ 30 scr ἐάσουσιν??? ‖ 31 del με?? cf 168, 12 et 15 ‖ 32 scr ἡμῶν ?</note>
-
-<pb n="163"/>
+               <pb n="163"/>
 ἐπʼ ἀλλοτρίοις κακοῖς ἡδομένῳ· μὴ δῷς τούτῳ ὀρχεῖσθαι τῷ
 καταγγέλοντι ἡμῶν ἀεί. ἀλλά σου τὸ ἅγιον ὄνομα καὶ τὸ ἕλεος
 σπευσάτω. ἀνέγειρον πτώματα δύο κατʼ ἐμοῦ γεγενημένα.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="22">
-<p>22 Καὶ δὴ τοῦ Ἰωάννου ἐκβοῶντος ἡ Ἐφεσίων πόλις
+         </div>
+         <div n="22" type="chapter">
+            <p>22 Καὶ δὴ τοῦ Ἰωάννου ἐκβοῶντος ἡ Ἐφεσίων πόλις
 συνέδραμεν εἰς τὸν οἶκον Λυκομήδους ὡς τετελευτηκότος. ὁ <lb n="5"/>
 δὲ Ἰωάννης ἰδὼν τὸν πολὺν ὄχλον τὸν ἐληλυθότα εἶπε πρὸς
 κύριον· Νῦν καιρὸς ἀναψύξεως καὶ παρρησίας τῆς πρὸς σὲ
@@ -550,10 +538,9 @@ cf 162, 5 ‖ 17 scr ἐμαυτῷ ? ‖ scr τούτων? sed plura corrupta u
 σωθήσονταί τινες αὐτῶν. παράσχου οὖν καὶ αὐτὸς ἐλπίδα
 ἐπὶ σέ. πρόσειμι τοίνυν τῇ Κλεοπάτρᾳ λέγων· Ἀνάστηθι ἐν
 τῷ ὀνόματι Ἰησοῦ Χριστοῦ.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="23">
-<p>23 Καὶ προσελθών, ἁψάμενος τοῦ προσώπου αὐτῆς ἔφη·
+         </div>
+         <div n="23" type="chapter">
+            <p>23 Καὶ προσελθών, ἁψάμενος τοῦ προσώπου αὐτῆς ἔφη·
 Κλεοπάτρα, λέγει ὃν ἐφοβήθη πᾶς ἄρχων καὶ πᾶσα κτίσις, <lb n="25"/>
 δύναμις, ἄβυσσός τε καὶ σκότος ἅπαν καὶ θάνατος ἀγέλαστος
 καὶ οὐρανῶν ὕψωμα καὶ ᾅδου κυκλώματα καὶ νεκρῶν ἀνάστασις
@@ -565,14 +552,13 @@ cf 162, 5 ‖ 17 scr ἐμαυτῷ ? ‖ scr τούτων? sed plura corrupta u
 ἀναστήσεις δέ μου δἰ ἡμερῶν ἑπτὰ ἡ πόλις Ἐφεσίων ἐκινεῖτο
 ἐπὶ τῷ παραδόξῳ θεεάματι. ἠρὠτα δὲ ἡ Κλεοπάτρα περὶ τοῦ
 <note type="footnote">14 Matth 7, 7</note>
-<note type="footnote">2 scr καταγελῶντι? item Iames ‖ 9 scr ἰώμενε?  (cf 206, 10) item Iames
+               <note type="footnote">2 scr καταγελῶντι? item Iames ‖ 9 scr ἰώμενε?  (cf 206, 10) item Iames
 10 scr ἐπάμυνον? ‖ 12 σοὶ R ‖ 16 κτίσιν R ‖ ὄντων ⟨καὶ⟩? ‖ 17 μέλλ.] μέλλεις
 πάντας Iames optime nisi forte μέλλ⟨εις τοὺς παρ⟩όντας: cf 21 ‖ 19 scr
 ἄρρηκτόν?? ἄπταιστόν?? ἄυευστόν? ‖ 30 scr θλῖψις ψυχαῖς δυναμέναις?
 33 post ἑπτὰ interpungit, lacunam quae uidelur esse post μου (μου τὸν
 ἄνδρα· Ἀναστάσης δὲ αὐτῆς temptabat Iames) non signigicat R</note>
-
-<pb n="164"/>
+               <pb n="164"/>
 ἀνδρὸς αὐτῆς Λυκομήδους· ὁ δὲ Ἰωάννης εἶπεν αὐτῇ· Κλεοπάτρα,
 ἀκίνητον ἔχουσα τὴν ψυχὴν καὶ ἀμετάτρεπτον αὐτόθεν
 ἕξεις Λυκομήδην τὸν σύμβιόν σου ἐνταῦθά σοι παρεστῶσα,
@@ -580,10 +566,9 @@ cf 162, 5 ‖ 17 scr ἐμαυτῷ ? ‖ scr τούτων? sed plura corrupta u
 <lb n="5"/> τῷ θεῷ μου, ὅστις διʼ ἐμοῦ ζῶντα αὐτὸν χαρίσεται. ἐλθὲ οὖν
 ἅμα ἐμοὶ εἰς τὸν ἕτερόν σου κοιτῶνα, καὶ θεάσῃ αὐτὸν νενεκρωμένον,
 ἀνιστάμενον δὲ τῇ τοῦ θεοῦ μου δυνάμει.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="24">
-<p>24 Καὶ ἡ Κλεοπάτρα ἐλθοῦσα σὺν τῷ Ἰωάννῃ εἰς τον
+         </div>
+         <div n="24" type="chapter">
+            <p>24 Καὶ ἡ Κλεοπάτρα ἐλθοῦσα σὺν τῷ Ἰωάννῃ εἰς τον
 κοιτῶνα αὐτῆς καὶ ἰδοῦσα τὸν Λυκομήδην τεθνηκότα αὐτὴ
 <lb n="10"/> ἕνεκα, ἔπασχε τῇ φωνῇ καὶ τοῖς ὀδοῦσιν ἔτριζε καὶ τὴν γλῶσσαν
 ἀπέδακνε καὶ τοὺς ὀφθαλμοὺς καμμύουσα δάκρυα προσέβρεχε·
@@ -605,10 +590,10 @@ cf 162, 5 ‖ 17 scr ἐμαυτῷ ? ‖ scr τούτων? sed plura corrupta u
 τοῦ ἐδάφους τοὺς τοῦ Ἰωάννου πόδας κατεφίλει. ὃ δὲ ἐγείρας
 αὐτὸν λέγει· Μὴ τοὺς ἐμοὺς πόδας ἄνθρωπε φίλει ἀλλὰ τοὺς
 τοῦ θεοῦ οὗ δυνάμει ἀνέστητε ἀμφότεροι.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="25">
-<lb n="30"/> <p>25 Ὁ δὲ Λυκομήδης τῷ Ἰωάννῃ ἔφη· Παρακαλῶν σε
+         </div>
+         <div n="25" type="chapter">
+            <lb n="30"/>
+            <p>25 Ὁ δὲ Λυκομήδης τῷ Ἰωάννῃ ἔφη· Παρακαλῶν σε
 ἐνορκίζω οὗ ὀνόματι ἤγειρας ὑμᾶς θεοῦ οὺν ὑμῖν μεῖναι ἅμα
 τοῖς σύν σοι πᾶσιν. Ὁμοίως δὲ καὶ ἡ Κλεοπάτρα τῶν ποδῶν
 αὐτοῦ ἁπτομένη ταὐτά ἔλεγεν. ὁ δὲ Ἰωάννης ἔφη αὐτοῖς·
@@ -619,15 +604,13 @@ cf 162, 5 ‖ 17 scr ἐμαυτῷ ? ‖ scr τούτων? sed plura corrupta u
 κάλεσε? ‖ 15 ⟨καὶ⟩ εἷπε? ‖ 16 Κλεο[;ατρας Iames probabiliter ‖scr ἐκβοῶσαν?
 item Iames ‖ 17 del ὅτι? an plura interciderunt? ‖ 23 scr εἰπέ? εἶπον
 imperatiuum probat Iames: cf 188, 24 ‖ 33 ταῦτα R</note>
-
-<pb n="165"/>
+               <pb n="165"/>
 Ἀριστοδήμῳ καὶ ὁ Δαμόνικος πληγέντες τὰς ψυχὰς ἔφησαν τῷ
 Ἰωάννῃ· Μείνωμεν πρὸς αὐτοὺς ὅπως ἀσκανδάλιστοι μείνωσι
 πρὸς τὸν κύριον. Ὃ δὲ ἐπέμεινεν ἐκεῖ σὺν τοῖς ἀδελφοῖς.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="26">
-<p>26 Συνῆλθου οὖν πλήθους πολλοῦ συναγωγὴ τοῦ Ἰωάννου
+         </div>
+         <div n="26" type="chapter">
+            <p>26 Συνῆλθου οὖν πλήθους πολλοῦ συναγωγὴ τοῦ Ἰωάννου
 ἕνεκα. καὶ ἐν τῷ ὁμιλεῖν αὐτὸν τοῖς παροῦσιν ὁ Λυκομήδης <lb n="5"/>
 φίλον εὐφυῆ ἔχων ζωγράφον δρομαῖος ἐπʼ αὐτὸν ἦλθε,
 καὶ λέγει αὐτῷ· Ὁρᾷς ἐμὲ αὐτὸν ἐσκυλμένον πρὸς σέ· ἐλθὲ
@@ -640,10 +623,9 @@ imperatiuum probat Iames: cf 188, 24 ‖ 33 ταῦτα R</note>
 ἀπόστολος· συνῆν δὲ ὁ Λυκομήδης τῷ μακαρίῳ εὐωχούμενος
 τῇ πίστει καὶ τῇ γνώσει τοῦ θεοῦ ἡμῶν, ἐπὶ πλεῖον δὲ ἠγαλλιάσατο <lb n="15"/>
 ὅτι ἐν εἰκόνι ἤμλλεν αὐτὸν ἔχει.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="27">
-<p>Ὁ οὖν ζωγράφος τῇ πρώτῃ ἡμέρᾳ σκιαγραφήσας αὐτὸν <note type="marginal">223 Z</note>
+         </div>
+         <div n="27" type="chapter">
+            <p>Ὁ οὖν ζωγράφος τῇ πρώτῃ ἡμέρᾳ σκιαγραφήσας αὐτὸν <note type="marginal">223 Z</note>
 ἀπηλλάγη· τῇ δὲ ἐξῆς καὶ τοῖς χρώμασιν αὐτὸν κατεκέρασε,
 καὶ οὕτως τῷ Λυκομήδει χαίροντι τὴν εἰκόνα ἀπέδωκεν. ἣν
 λαβὼν καὶ ἀναθεὶς εἰς τὸν ἑαυτοῦ κοιτῶνα ἔστεφεν· ὡς ὕστερον <lb n="20"/>
@@ -656,7 +638,7 @@ imperatiuum probat Iames: cf 188, 24 ‖ 33 ταῦτα R</note>
 φωνήσας αὐτὸν εἶπε· Λυκόμηδες, τί βούλεταί σοι τὸ τῆς εἰκόνος
 ταύτης; τῶν θεῶν σού τις τυγχάνει ὁ γεγραμμένος; ὁρῶ γάρ
 <note type="footnote">scr συνῆλθεν? ἀπόστολος ⟨....⟩? cf 167, 9 ‖ 15 scr ἔτι?</note>
-<note type="footnote">Σ΄ (═ Σ[═ TOXYZ] e l) R 17 ὁ οὖν] antecedunt haec: Λεόντιος ὁ...
+               <note type="footnote">Σ΄ (═ Σ[═ TOXYZ] e l) R 17 ὁ οὖν] antecedunt haec: Λεόντιος ὁ...
 βασιλικὸς ἀσηκρῆτις εἶπεν· Κατὰ τὴν κέλευσιν τῆς ἁγίας συνόδου πάρεισιν
 αἱ θεῖαι βίβλοι . . . οὐ μόνον δὲ ἀλλὰ καὶ τῶν κακωνύμων αἱρετικῶν τῶν
 ἐκ παλαιοῦ τὰς τιμίας εἰκόνας διαβεβληκότων. ἁγία σύνοδος εἶπεν·
@@ -668,18 +650,16 @@ post σοὶ e om nonne ego tecum l ‖ λοιποῖς om R ‖ 24 ἤ] τί R
 R ‖ 25 εἴσ.] συνεισῆλθεν αὐτῶ R ‖ πρ. περ. R ‖ 26 παρακειμένην R ‖ κ. β. ἔ.
 om I ‖ βωμὸν R: sic Thilo coniecerat ‖ 27 καλέσας R ‖ αὐτ.] ὁ ἰωάννης ad l
 R ‖ σου R ‖ 28 τίς τ. θ. σ. Σ΄ ‖ τὸν θεὸν R</note>
-
-<pb n="166"/>
+               <pb n="166"/>
 σε ἔτι ἐθνικῶς ζῶντα. Καὶ ὁ Λυκομήδης αὐτῷ ἀπεκρίνατο·
 Ὁ θεὸς μέν μοί ἐστιν ἐκεῖνος μόνος ὁ ἐμὲ ἐγείρας ἐκ τοῦ θανάτου
 μετὰ τῆς συμβίου μου. εἰ δὲ γε καὶ μετὰ τὸν θεὸν
 ἐκεῖνον τοὺς εὐεργέτας ἡμῶν ἀνθρώπους θεοὺς χρὴ καλεῖσθαι,
 <lb n="5"/> σὺ εἶ πάτερ ὁ ἐν τῇ εἰκόνι γεγραμμένος μοι, ὃν στέφω καὶ
 φιλῶ καὶ σέβομαι ὁδηγὸν ἀγαθόν μοι γεγονότα.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="28">
-<p>28 Καὶ ὁ Ἰωάννης μηδέποτε τὸ ἑαυτοῦ πρόσωπον θεασάμενος
+         </div>
+         <div n="28" type="chapter">
+            <p>28 Καὶ ὁ Ἰωάννης μηδέποτε τὸ ἑαυτοῦ πρόσωπον θεασάμενος
 εἶπεν αὐτῷ· Παίζεις με τέκνον· τοιοῦτός εἰμι τῇ
 μορφῇ τὸν κύριόν σου; πῶς με πείθεις ὅτι μοι ἡ εἰκὼν
 <lb n="10"/> ὁμοία ὑπάρχει; Καὶ ὁ Λυκομήδης αὐτῷ προσήγαγε κάτοπτρον·
@@ -690,10 +670,9 @@ R ‖ σου R ‖ 28 τίς τ. θ. σ. Σ΄ ‖ τὸν θεὸν R</note>
 <lb n="15"/> γράψαι, χρωμάτων τῶν δεδομένων σοι νῦν ἀπορῆσαι αὐτὸν
 καὶ σανίδων καὶ τόπου καὶ πόλις καὶ σχήματος μορφῆς καὶ
 γύρους καὶ νεότητος καὶ πάντων τῶν ὁρωμένων.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="29">
-<p>29 γενοῦ δέ μοι σὺ ἀγαθὸς ζωγράφος Λυκόμηδες· ἔχεις
+         </div>
+         <div n="29" type="chapter">
+            <p>29 γενοῦ δέ μοι σὺ ἀγαθὸς ζωγράφος Λυκόμηδες· ἔχεις
 χρώματα ἅ σοι δίδωσι διʼ ἐμοῦ ὁ ἑαυτῷ πάντας ἡμᾶς ζωγραφῶν
 <lb n="20"/> Ἰησοῦς, ὁ τὰς μορφὰς καὶ τὰ εἴδη καὶ τὰ σχήματα καὶ
 τὰς διαθέσεις καὶ τοὺς τύπους τῶν ψυχῶν ἡμῶν ἐπιστάμενος.
@@ -715,11 +694,10 @@ coniectura futtili ‖ με π.] τοίνυν πείσεις με R: cf 165, 24 
 ὑπ. ἡ εἰκ. αὕτη R: cf 12 ‖ 10 προσήνεγκεν αὐτῶ κάτ. R ‖ 11 καὶ - κατ. om R ‖
 12 κύρ.] μου add R ‖ ὅτι ῥμ. μου ἐστὶ ἡ εἰκ. αὕτη R: cf 9 12—167, 7 οὐκ -
 εἰκόνα] κακῶς δὲ τοῦτο διεπράξω (cf167, 6) reliqua desunt usque ad 196,79 Σ΄</note>
-<note type="footnote">R 13 scr ἐμὲ? ‖ 15—17 ⟨μὴ νομίσης⟩ χρωμάτων?? ‖ 16 τ. κ. π.] scr
+               <note type="footnote">R 13 scr ἐμὲ? ‖ 15—17 ⟨μὴ νομίσης⟩ χρωμάτων?? ‖ 16 τ. κ. π.] scr
 κόλλης κ. τύπου?? cf 21 ‖ ⟨καὶ⟩ μορφῆς? cf 20 ‖ 28 scr σπειρομένας?
 διασπειρομένας?</note>
-
-<pb n="167"/>
+               <pb n="167"/>
 ὀφθαλμούς σου παιδεύων καὶ τὰ σπλάγχνα σου καθαρίζων καὶ
 τὴν γαστέρα σου κοιλαίνων καὶ τὰ ὑπογάστριά σου ἐκκόπτων·
 καὶ ἁπλῶς ὅλη συνελθοῦσα τῶν τοιούτων χρωμάτων καὶ μίξεις
@@ -727,10 +705,9 @@ coniectura futtili ‖ με π.] τοίνυν πείσεις με R: cf 165, 24 
 αὐτὴν ἐπὶ τὸν κύριον ἡμῶν Ἰησοῦν Χριστὸν καταστήσει· ὃ <lb n="5"/>
 δὲ νῦν διεπράξω παιδιῶδες καὶ ἀτελές· ἔγραψας νεκροῦ νεκρὰν
 εἰκόνα.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="30">
-<p>30 Καὶ κελεύσας Βήρῳ τῷ διακονοῦντι αὐτῷ ἀδελφῷ
+         </div>
+         <div n="30" type="chapter">
+            <p>30 Καὶ κελεύσας Βήρῳ τῷ διακονοῦντι αὐτῷ ἀδελφῷ
 τὰς ἐν ὅλῃ τῇ Εφέσῳ ἀγαγεῖν πρεσβυτέρας, ἡτοιμάζετο δὲ
 ἅμα τῇ Κλεοπάτρᾳ καὶ τῷ Λυκομήδει τὰ πρὸς ἐπιμέλειαν. <lb n="10"/>
 ἦλθεν οὖν ὁ Βῆρος λέγων τὸν Ἰωάννην· Τῶν ἐνθάδε οὐσῶν
@@ -746,10 +723,9 @@ coniectura futtili ‖ με π.] τοίνυν πείσεις με R: cf 165, 24 
 διʼ ἐμοῦ θεράπευσον αὐτάς· εἰσὶ γάρ τινες τῶν ἐρχομένων ἐπὶ
 τῇ θέᾳ ταύτῃ οὓς διὰ τῶν τοιούτων ἰάσεων εἴ τι χρήσιμον
 γενόμενος ἐπιστρέψω.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="31">
-<p>31 Τοῦ δὲ παντὸς ὄχλου συνελθόντος πρὸς τὸν Λυκομήδην
+         </div>
+         <div n="31" type="chapter">
+            <p>31 Τοῦ δὲ παντὸς ὄχλου συνελθόντος πρὸς τὸν Λυκομήδην
 τοῦ Ἰωάννου ἕνεκα ἀπετάξατο πᾶσι λέγων· Αὔριον γίνεσθε <lb n="25"/>
 ἐν τῷ θεάτρῳ ὁπόσοι βούλεσθε τὴν τοῦ θεοῦ δύναμιν.
 Οἱ δὲ ὄχλοι τῇ ἐπαύριον ἐκ νύκτωρ ἦλθον εἰς τὸ θέατρον·
@@ -760,27 +736,25 @@ coniectura futtili ‖ με π.] τοίνυν πείσεις με R: cf 165, 24 
 ἔλεγεν, ἔχειν, τὸ δημόσιον θέατρον ἀνεῳγὸς εἰσιέτω γυμνός,
 μηδὲν ἐπὶ τῶν χειρῶν αὐτοῦ κρατῶν, μηδὲ τὸ μαγικὸν ἐκεῖνο
 ὀνομαζέτω ὄνομα ὃ ἀκήκοα αὐτοῦ λέγοντος.</p>
-<note type="footnote">1 scr ἐπιδεύων?? φαιδρύνων?? ‖ 3 ⟨ἄθροισις⟩ καὶ μίξις? ‖ 4 scr
+            <note type="footnote">1 scr ἐπιδεύων?? φαιδρύνων?? ‖ 3 ⟨ἄθροισις⟩ καὶ μίξις? ‖ 4 scr
 ἄτρεστον? ‖ 9 πρεσβυτέρας ⟨....⟩? cf 165, 14 ‖ 11 ⟨πρὸς⟩ τὸν Ἰ.? τῷ Ἰωάννῃ? ‖
 12 scr τέσσαρας? ‖ 13 ⟨τινὰς μὲν τονούσας,⟩ τινὰς? cf 15 ‖ 19 παρρησίας
 ⟨θέλων⟩?? ‖ 22 scr εἴς τι?? ‖ 22—23 scr χρησίμων γενομένων?? ‖ 23 ⟨....⟩
 γενόμενος? ‖ 26 βούλεσθε ⟨θεᾶσθαι⟩? an δύναμιν ⟨ἰδεῖν⟩? ‖ 27 ἐκ] scr ἔτι?? ‖
 29 scr στρατηγὸς πρῶτος??? cf 161, 10; 168, 16: 186, 21; 121, 13 Ph c 14 i ;
 27; 37; al ‖ 31 τῷ Ἰ. ὑπεσχῆσθαι? an τὸν Ἰωάννην ὑπισχνεῖσθαι? ‖ 32 scr ἔχει?</note>
-</div>
-
-<div type="textpart" subtype="chapter" n="32">
-<pb n="168"/>
-<p>32 Ταῦτα οὖν γνοὺς ὁ Ἰωάννης καὶ κινηθεὶς ὑπὸ τῶν
+         </div>
+         <div n="32" type="chapter">
+            <pb n="168"/>
+            <p>32 Ταῦτα οὖν γνοὺς ὁ Ἰωάννης καὶ κινηθεὶς ὑπὸ τῶν
 ῥημάτων τούτων ἐκέλευσε τὰς πρεσβύτιδας εἰς τὸ θέατρον
 ἀχθῆναι. ὡς δὲ εἰσήχθησαν πᾶσαι, αἳ μὲν κραββάτοις αἳ δὲ
 νυσταγμῷ κείμεναι αὐτῶν, εἰς τὸ μέσον, καὶ τῆς πόλεως συνδραμούσης,
 <lb n="5"/> σιγῆς πολλῆς γενομένης, ὁ Ἰωάννης ἀνοίξας τὸ
 στόμα αὐτοῦ ἤρξατο λέγειν·</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="33">
-<p>33 Ἄνδρες Ἐφέσιοι, γνῶτε πρῶτον τίνος ἕνεκεν τῇ ὑμετέρᾳ
+         </div>
+         <div n="33" type="chapter">
+            <p>33 Ἄνδρες Ἐφέσιοι, γνῶτε πρῶτον τίνος ἕνεκεν τῇ ὑμετέρᾳ
 πόλει ἐπιθημῶ, ἢ τίς ἡ τοσαύτη μου παρρησία πρὸς ὑμᾶς,
 ὡς καὶ τῷ κοινῷ τούτῳ βουλευτηρίῳ πᾶσιν ἡμῖν καταδήλου
 <lb n="10"/> γενέσθαι. ἀπέσταλμαι οὖν ἀποστολὴν οὐκ ἀνθρωπίνην οὐδὲ
@@ -793,10 +767,10 @@ coniectura futtili ‖ με π.] τοίνυν πείσεις με R: cf 165, 24 
 ἡμῶν κατακειμένας ἀνιστῶν, ἃς πάντες ὁρᾶτε ἐν οἵῳ δὴ καὶ
 ἐν ποίοις νόσοις ὑπάρχετε· καὶ οὐκ ἔστι μοι νῦν τοῦτο ὀλυσμένων
 αὐτῶν καὶ θεραπείαις συναρεθήσονται.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="34">
-<lb n="20"/> <p>34 ἐκεῖνο δὲ ἐβουλόμην πρῶτον ἐγκατασπεῖραι ὑμῶν τοῖς,
+         </div>
+         <div n="34" type="chapter">
+            <lb n="20"/>
+            <p>34 ἐκεῖνο δὲ ἐβουλόμην πρῶτον ἐγκατασπεῖραι ὑμῶν τοῖς,
 ἀκοαῖς τῷ τῶν ψυχῶν ἐπιμελεῖσθαι, οὗ ἕνεκεν παραγέγονα
 πρὸς ὑμᾶς, μὴ προσδοκᾶν τὸν χρόνον τοῦτον αἰῶνα ὑπάρχειν
 ὅς ἐστι ζυγοῦ, μηδὲ θησαυρίζειν ἐπὶ τῆς γῆς ἔνθα ἅπαντα
@@ -808,10 +782,9 @@ coniectura futtili ‖ με π.] τοίνυν πείσεις με R: cf 165, 24 
 πλείονα χρήματα· ἐν γὰρ τῷ ταῦτα κεκτῆσθαι ἀχώριστον τὴν
 <lb n="30"/> λύπην πορίζεσθε ἀπολυόμενοι αὐτῶν· καὶ πάλιν φοβεῖσθε παρόντες
 μή τις πείθεται ὑμῖν αὐτῶν ἕνεκα.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="35">
-<p>35 ὁ δὲ ἐν εὐμορφίᾳ σώματος ἐπαιρόμενος καὶ τὸ βλέμμα
+         </div>
+         <div n="35" type="chapter">
+            <p>35 ὁ δὲ ἐν εὐμορφίᾳ σώματος ἐπαιρόμενος καὶ τὸ βλέμμα
 ἐπανατείνων τὸ τέλος γοῦν τῆς ἐπαγγελίας ἐπὶ τοῦ μνήματος
 θεάσῃ· ὁ δὲ μοιχείᾳ χαίρων γνῶθι ὅτι καὶ νόμῳ καὶ φύσις
 <note type="footnote">4 νυσταγμῶ num sanum ? ‖ κείμεναι, τεθειμένων αὐτῶν ε. τὸ μ. Iames:
@@ -821,8 +794,7 @@ scr ὑπάρχουσιν?? ‖ 18—19 ὀλ - συναιρ. corrupta ‖ 21 τ
 23 ζ.] ζ. ῥοπή Iames: fort t [ζυγοῦ] ⟨ῥοπή⟩ ‖ 24 scr ἡγεῖσθαι? ‖ 25 scr ἀναπεπαῦ-
 σθαι? ‖ 26 scr πειρᾶσθαι?? ‖ scr λυπεῖσθαι?? λυπεῖσθε? ‖ scr ἔχετε?? ‖ 28
 μακαρίζουσι? ‖ 30 scr παρόντων ?? ‖ 31 scr πείθηται ?? ἐπίθηται? ‖ 34 scr νόμος?</note>
-
-<pb n="169"/>
+               <pb n="169"/>
 τετιμώρηται καὶ πρὸ τούτων ἡ συνείδησις. ἡ δὲ μοιχευομένη
 γυνὴ αὔταρκις οὖσα τῷ νόμῳ ἀγνοεῖς ὅπου καντατήσεις. ὁ δὲ
 τοῖς δεομένοις μὴ κοινωνῶν, ἔχων δὲ χρήματα ἀπόθεται,
@@ -831,10 +803,9 @@ scr ὑπάρχουσιν?? ‖ 18—19 ὀλ - συναιρ. corrupta ‖ 21 τ
 μανιώδης γνῶθι ὅτι ὅμοια τοῖς ἀλόγοις ζῴοις πολιτεύῃ. ὁ δὲ
 μέθυσος καὶ αἰρετικὸς κατάμαθε ὅτι ἐξίσταται τῶν φρενῶν
 δουλεύων αἰσχρᾷ καὶ ῥυπαρᾷ ἐπιθυμίᾳ.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="36">
-<p>36 ὁ δὲ χρυσῷ χαίρων καὶ ἐλεφαντίνων καὶ λίθοις τερπόμενος
+         </div>
+         <div n="36" type="chapter">
+            <p>36 ὁ δὲ χρυσῷ χαίρων καὶ ἐλεφαντίνων καὶ λίθοις τερπόμενος
 νυκτὸς ἐπελθούσης ἃ φιλεῖς θεᾶσαι; ὁ δὲ μαλακαῖς <lb n="10"/>
 ἐσθῆσι νικώμενος, εἶτα δὲ ἀπαλλασσόμενος τοῦ βίου, ταῦτα
 ὀφλῆσαι κἀκεῖ ὅπου πορεύῃ; ὁ δὲ φονεὺς γινωσκέτω τὴν ἀξίαν
@@ -847,10 +818,9 @@ scr ὑπάρχουσιν?? ‖ 18—19 ὀλ - συναιρ. corrupta ‖ 21 τ
 καὶ τοῦτο ὅτι οἱ βασιλεῖς, οἱ δυνάσται, οἱ τύραννοι, οἱ
 ἀλαζόνες, οἱ πολέμους χειρωσάμενοι γυμνοὶ τῶν ἐνθένδε ἀπαλλασσόμενοι, <lb n="20"/>
 ἐν κακοῖς δὲ αἰωνίοις συγγινόμενοι ὀδυνῶνται.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="37">
-<p>37 Καὶ ταῦτα εἰπὼν ὁ Ἰωάννης δυνάμει θεοῦ ἰάσατο
+         </div>
+         <div n="37" type="chapter">
+            <p>37 Καὶ ταῦτα εἰπὼν ὁ Ἰωάννης δυνάμει θεοῦ ἰάσατο
 πάσας τὰς νόσους. οἱ δὲ ἀπὸ Μιλήτου ἀδελφοὶ ἔφησαν τῷ
 Ἰωάννῃ· Πολὺν χρόνον ἐν τῇ Ἐφέσῳ μεμενήκαμεν· εἰ δοκεῖ
 σοι, καὶ εἰς Σμύρνην πορευθῶμεν. ἤδη γαρ ἀκούομεν τὰ μεγαλεῖα <lb n="25"/>
@@ -858,29 +828,28 @@ scr ὑπάρχουσιν?? ‖ 18—19 ὀλ - συναιρ. corrupta ‖ 21 τ
 αὐτοῖς· Ὁπόταν ὁ διδάσκαλος θέλῃ, τότε πορευθῶμεν. Ὁ δὲ
 Ἰωάννης ἔφη· Πρῶτον ἐν τῷ τῆς Ἀρτέμιδος ναῷ πορευθῶμεν.
 τάχα γὰρ κἀκεῖ ἡμῶν ὀφθέντων εὑρεθη σονται τοῦ κυρίου
-οἱ δοῦλοι.</p> <lb n="30"/>
-<note type="footnote">2—5 cf Luc 16, 19 ss ‖ 11 cf Luc 12, 20</note>
-<note type="footnote">1 τετιμ.] σὲ τιμωρεῖται? ‖ 2 scr αὐτάρκης??? an ἄνταρτις (fem ab eo
+οἱ δοῦλοι.</p>
+            <lb n="30"/>
+            <note type="footnote">2—5 cf Luc 16, 19 ss ‖ 11 cf Luc 12, 20</note>
+            <note type="footnote">1 τετιμ.] σὲ τιμωρεῖται? ‖ 2 scr αὐτάρκης??? an ἄνταρτις (fem ab eo
 q e ἀντάρτης)?? ‖ scr καταντήσεις: cf 18 ‖ 3 del δὲ?? ‖ scr ἀπόθετα ‖ 5 scr
 ἕξεις? ‖ 7 scr ἐμετικὸς? ‖ scr ἐξίστασαι? ‖ 9 scr ἐλεφαντίνῳ? ‖ 12 scr ὠφελεῖ
 σε? ὠφελήσει Iames ‖ scr γίνωσκέ σοι? ‖ 15 scr ὑπάρχετε?? cf 152, 6 ‖
 17 scr βυθὸν κολαστήριον? ‖ 20 scr πολεμίους? ‖ 21 del ἐν??  ‖ 25 scr Σμύρναν??
 cf 173, 7: 179, 3 ‖ 30 del οἱ ?? cf 173, 8</note>
-<note type="footnote">Q 32 μετὰ et inseruit in Prochori in p 162, 3 Q: cf 179, 30</note>
-</div>
-
-<div type="textpart" subtype="chapter" n="38">
-<pb n="170"/>
-<p>38 Ἦν οὖν μετὰ δύο ἡμέρας ἡ γενέθλιος τοῦ εἰδωλείου.
+            <note type="footnote">Q 32 μετὰ et inseruit in Prochori in p 162, 3 Q: cf 179, 30</note>
+         </div>
+         <div n="38" type="chapter">
+            <pb n="170"/>
+            <p>38 Ἦν οὖν μετὰ δύο ἡμέρας ἡ γενέθλιος τοῦ εἰδωλείου.
 ὁ ουν Ἰωάννης πάντων λευκοφορούντων μόνος ἐνδυσάμενος
 μέλανα ἀνῄει εἰς τὸν ναόν· οἳ δὲ συλλαβόμενοι αὐτὸν ἀνελεῖν
 ἐπειρῶντο. ὁ δὲ Ἰωάννης ἔφη· Μεμήνατε ἐπιχειροῦντες ἐμοὶ
 <lb n="5"/> ἄνθρες δοῦλοι τοῦ μόνου θεοῦ. Καὶ ἀνελθών ἐπί τινα βάσιν
 ὑψηλὴν ἔλεγε πρὸς αὐτούς·</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="39">
-<p>39 Κινδυνεύετε ἄνδρες Ἐφέσιοι θαλάσσης ἐπέχειν τρόπον.
+         </div>
+         <div n="39" type="chapter">
+            <p>39 Κινδυνεύετε ἄνδρες Ἐφέσιοι θαλάσσης ἐπέχειν τρόπον.
 πᾶς ποταμὸς ἀπορρέων καὶ πάσα πηγὴ κατατρέχουσα, ὄμβρον
 τε καὶ ἐπάλληλοι κλύδωνες καὶ χειμάρροι πετρώδεις ὑπὸ τῆς
 <lb n="10"/> ἐν αὐτῇ πικρᾶς ἐπαγγελίας συνεξαλμυροῦνται· οὕτω καὶ ὑμεῖς
@@ -895,10 +864,9 @@ cf 173, 7: 179, 3 ‖ 30 del οἱ ?? cf 173, 8</note>
 μόνος ἀποθάνω· ἢ μόνος ἐγώ, μὴ δυναμένων ὑμῶν τοῦτο
 <lb n="20"/> ποιῆσαι, τὸν ἴδιόν μου θεὸν ἐπικαλεσάμενος διὰ τὴν ἀπιστίαν
 ὑμῶν πάντας ὑμᾶς θαναταώσω.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="40">
-<p>40 Οἱ δὲ πεπειραμένοι αὐτοῦ πάλαι καὶ θεασάμενοι νεκροὺς
+         </div>
+         <div n="40" type="chapter">
+            <p>40 Οἱ δὲ πεπειραμένοι αὐτοῦ πάλαι καὶ θεασάμενοι νεκροὺς
 ἐγηγερμένους ἐβόων· Μὴ οὕτως ἀνέλῃς ἡμᾶς, παρακαλοῦμέν
 σε Ἰωάννη· ἐπιστάμεθα οὖν ὅτι δύνῃ. Καὶ ὁ Ἰωάννης
 <lb n="25"/> ἔφη αὐτοῖς· Εὶ οὖν μὴ θέλετε ὑμεῖς ἀποθανεῖν, ἐλεγχθήτω
@@ -907,10 +875,9 @@ cf 173, 7: 179, 3 ‖ 30 del οἱ ?? cf 173, 8</note>
 αὐτοὶ ἐπιστρέψατε διὰ τοῦ θεοῦ μου ἢ αὐτὸς ἀποθανοῦμαι
 διὰ τῆς θεᾶς ὑμῶν· εὔξομαι γὰρ ἐνώπιον ὑμῶν παρακαλέσας
 <lb n="30"/> μου τὸν θεὸν ἐλεηθῆναι ὑμᾶς.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="41">
-<p>41 Καὶ εἰπὼν ταῦτα προσηύξατο οὕτως· Ὁ θεὸς ὁ ὑπὲρ
+         </div>
+         <div n="41" type="chapter">
+            <p>41 Καὶ εἰπὼν ταῦτα προσηύξατο οὕτως· Ὁ θεὸς ὁ ὑπὲρ
 πάντων λεγομένων θεῶν ὑπάρχων θεός· ὁ μέχρι σήμερον ἐν
 τῇ Ἐφεσίων πόλει ἀθετούμενος· ὁ ὑπερβαλών μου τῇ διανοίᾳ
 ἐλθεῖν εἰς τὸν τόπον τοῦτον ὃν οὐδέποτε ἐν νῷ εἶχον· ὁ
@@ -920,17 +887,16 @@ cf 173, 7: 179, 3 ‖ 30 del οἱ ?? cf 173, 8</note>
 corruptum? ‖ 16—17 scr τῷ ἀνθρωπίνῳ λογισμῷ? cf 183,25 ‖ 18 del εἶναι? an
 ἔχειν corruptum ? ‖ ἐν] scr οὖν? item Iames ‖ 24  scr γοῦν? ‖ 26 καὶ - ἐλ
 corrupta uid ‖ ἐλέγχεται Iamer ‖ scr ἀποστήσεσθε? ‖ 33 scr ὑποβαλών?</note>
-
-<pb n="171"/>
+               <pb n="171"/>
 πᾶσαν θεοσέβειαν ἐλέγξας διὰ τῆς σῆς ἐπιστροφῆς· οὗ ὀνόματι
 πᾶν εἴδωλον φεύγει καὶ πᾶς δαίμων δύναμίς τε καὶ πᾶσα
 ἀκάθαρτος· καὶ νῦν φεύγων τῷ ὀνόματι τῷ σῷ τοῦ ἐνθάδε
 δαίμονος, ὅστις πλανᾷ τοσοῦτον ὄχλον, δεῖξον τὸ σὸν ἔλεος ἐν
-τῷ τόπῳ τούτῳ, ὅτι πεπλάνηνται.</p> <lb n="5"/>
-</div>
-
-<div type="textpart" subtype="chapter" n="42">
-<p>42 Καὶ ἅμα τῷ λέγειν τὸν Ἰωάννην ταῦτα ἐξαπίνης ὁ
+τῷ τόπῳ τούτῳ, ὅτι πεπλάνηνται.</p>
+            <lb n="5"/>
+         </div>
+         <div n="42" type="chapter">
+            <p>42 Καὶ ἅμα τῷ λέγειν τὸν Ἰωάννην ταῦτα ἐξαπίνης ὁ
 βωμὸς τῆς Ἀρτέμιδος διέστη εἰς μέρη πολλά, καὶ τὰ ἐν τῷ
 ναῷ ἀνακείμενα ἄφνω πάντα εἰς ἔδαφος ἔπεσε, καὶ τὸ δόξαν
 αὐτῷ διερράγη, ὁμοίως καὶ τῶν ξοάνων πλεῖον τῶν ἑπτά·
@@ -938,22 +904,20 @@ corrupta uid ‖ ἐλέγχεται Iamer ‖ scr ἀποστήσεσθε? ‖
 τοῦ στυμόνος μονόπληγα ἀναιρεθῆναι. ὁ οὖν ὄχλος
 Ἐφεσίων ἐβόα· Εἷς θεὸς Ἰωάννου, εἷς θεὸς ὁ ἐλεῶν ἡνᾶς.
 <note type="footnote">22 cf Matth 23, 38 ‖ 29 cf Io 17, 3</note>
-<note type="footnote">1 scr ἐπισκοπῆς?? cf 207, 5 ‖ 2 scr τε καὶ δύναμις ? ‖ 3 φ. τῷ] scr
+               <note type="footnote">1 scr ἐπισκοπῆς?? cf 207, 5 ‖ 2 scr τε καὶ δύναμις ? ‖ 3 φ. τῷ] scr
 φεύγοντος? ‖ 11 στήμονος Iames (? cf στύω στῦλος)</note>
-<note type="footnote">1 Q 15 καταστρ.] ut narrauit Prochorus ‖ 19 ἔφερεν Zahn: recte??
+               <note type="footnote">1 Q 15 καταστρ.] ut narrauit Prochorus ‖ 19 ἔφερεν Zahn: recte??
 ἤνεγκεν exspectes ‖ 27 scr τῆς γῆς? ‖ 30 καὶ et q s] cf Lipsius I p 468
 36 ἀνεχόμενον Zahn uik tolerabilius ‖ 38 deest uerbum : cf 174, 23</note>
-
-<pb n="172"/>
+               <pb n="172"/>
 ὅτι σὺ μόνος θεός, νῦν ἐπεστρέψαμεν ὁρῶντές σου τὰ θαυμάσια·
 ἐλέησον ἡμᾶς ὁ θεὸς ὡς θέλεις, καὶ τῆς πολλῆς πλάνης
 ῥῦσαι ἡμάς. Καὶ οἳ μὲν αὐτῶν ἐπʼ ὄψιν κείμενοι ἐλιτάνευον·
 οἳ δὲ τὰ γόνατα κλίνοντες ἐδέοντο· οἳ δὲ τὰς ἐσθῆτας διαρρήξαντες
 <lb n="5"/> ἔκλαον· οἳ δὲ φυγεῖν ἐπειρῶντο.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="43">
-<p>43 Ὁ δὲ Ἰωάννης ἀνατείνας αὐτοῦ τὰς χεῖρας ἐπαρθεὶς
+         </div>
+         <div n="43" type="chapter">
+            <p>43 Ὁ δὲ Ἰωάννης ἀνατείνας αὐτοῦ τὰς χεῖρας ἐπαρθεὶς
 τὴν ψυχὴν εἶπε πρὸς τὸν κύριον· Δόξα σοι Ἰησοῦ μου ὁ τῆς
 ἀληθείας μόνος θεός, ὅτι σὺ τοὺς σοὺς δούλους τέχνῃ ἀπολαμβάνεις
 ποικίλῃ. Καὶ τοῦτο εἰπὼν εἶπε πρὸς τὸν ὄχλον·
@@ -965,10 +929,9 @@ corrupta uid ‖ ἐλέγχεται Iamer ‖ scr ἀποστήσεσθε? ‖
 <lb n="15"/> ἡ δύναμις τῆς δαίμονος; ποῦ αἱ θυσίαι; ποῦ αἱ γενίθλιαι
 ἡμέραι; ποῦ αἱ ἑορταί; ποῦ τὰ στεφανώματα; ποῦ ἡ πολλὴ
 μαγεία καὶ ἡ ταύτῃ ἀδελφὴ φαρνακεία;</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="44">
-<p>44 Οἱ δὲ ὄχλοι ἀναστάντες τοῦ ἐδάφους πορευθέντες δρομαῖοι
+         </div>
+         <div n="44" type="chapter">
+            <p>44 Οἱ δὲ ὄχλοι ἀναστάντες τοῦ ἐδάφους πορευθέντες δρομαῖοι
 καὶ τὰ λοιπὰ τοῦ εἰδωλείου κατέβαλον βοῶντες· Τὸν
 <lb n="20"/> Ἰωάννου θεὸν μόνον οἴδαμεν, ὃν καὶ λοιπὸν προσκυνοῦμεν
 ἐλεηθέντες ὑπʼ αὐτοῦ. Καὶ καταβαίνοντος ἐκεῖθεν τοῦ Ἰωάννου
@@ -978,18 +941,17 @@ corrupta uid ‖ ἐλέγχεται Iamer ‖ scr ἀποστήσεσθε? ‖
 <lb n="25"/> ἐλπίδι τῇ πρὸς τὸν θεόν σου· εἴδομεν τὴν ὁδὸν ἣν ἐπλανήθημεν
 <note type="footnote">12 scr ὁρμωμένην?? cf 178, 9 ‖ 13 scr ἑαυτῇ? ‖ 15 scr γενέθλιαι ‖ 19 εἰ-
 δωλίου R: cf 170, 1: 171. 10 ‖ 23 scr μταίως??? cf 173, 1</note>
-<note type="footnote">Q 26 scr ἀπολλώμεθα?</note>
-
-<pb n="173"/>
+               <note type="footnote">Q 26 scr ἀπολλώμεθα?</note>
+               <pb n="173"/>
 ἀπολέσαντες· εἴδομεν τοὺς θεοὺς ἡμῶν ματαίως ἱδραμένους·
 εἴδομεν τὸν ἐν αὐτοῖς πολὺν καὶ αἰσχρὸν καταγέλωτα.
 ἀλλ᾿ ἐπίτρεπε ἡμῖν, δεόμεθά σου, παραγενομένοις εἰς τὴν οἰκίαν
 βοηθεῖσθαι ἀκωλύτως. δέχου ἡμᾶς τοὺς ἐν ἀπορίᾳ  
-γεγονότας.</p> <lb n="5"/>
-</div>
-
-<div type="textpart" subtype="chapter" n="45">
-<p>45 Ὁ δὲ Ἰωάννης εἶπεν αὐτοῖς· Ἄνδρες πιστεύσατε ὅτι
+γεγονότας.</p>
+            <lb n="5"/>
+         </div>
+         <div n="45" type="chapter">
+            <p>45 Ὁ δὲ Ἰωάννης εἶπεν αὐτοῖς· Ἄνδρες πιστεύσατε ὅτι
 ὑμῶν ἕνεκεν ἐν τῇ Ἐφεσίων πόλει ἔμεινα, τὴν ὁρμὴν εἰς Σμύρνην
 νην ἐσχηκὼς καὶ τὰς λοιπὰς πόλεις, ὅπως καὶ οἱ ἐκεῖ δοῦλοι
 τοῦ Χριστοῦ ἐπιστρέψουσι πρὸς αὐτόν. ἀλλʼ ἐπειδὴ ἀνισταμένην
@@ -998,11 +960,11 @@ corrupta uid ‖ ἐλέγχεται Iamer ‖ scr ἀποστήσεσθε? ‖
 ὁπόταν ὑμᾶς στηρίξω· ὃ καὶ ἰδὼν γεγονὼς καὶ ἔτι μᾶλλον
 γινόμενος οὐκ ἀπολειφθήσομαι ὑμῶν μέχρις ἂν καθάπερ παῖδας
 τοῦ τῆς τροφοῦ γάλακτος ἀποσπάσω καὶ ἐπὶ στερεὰν
-πέτραν καταστήσω.</p> <lb n="15"/>
-</div>
-
-<div type="textpart" subtype="chapter" n="46">
-<p>46 Ἐπέμενεν οὖν ὁ Ἰωάννης παῤ αὐτοῖς εἰσδεχόμενος
+πέτραν καταστήσω.</p>
+            <lb n="15"/>
+         </div>
+         <div n="46" type="chapter">
+            <p>46 Ἐπέμενεν οὖν ὁ Ἰωάννης παῤ αὐτοῖς εἰσδεχόμενος
 αὐτοὺς τοῖς ἐν τοῖς Ἀνδρονίκου. ἐν οἷς τις τῶν συνεδρευόντων
 καὶ τὸν τῆς Ἀρτέμιδος ἱερέα πρὸ τοῦ ἱεροῦ τοῦ πυλῶνος
 ἀναπαύσας νεκρὸν εἰσεπήδησεν ἔνδον σὺν τοῖς λοιποῖς
@@ -1012,15 +974,14 @@ corrupta uid ‖ ἐλέγχεται Iamer ‖ scr ἀποστήσεσθε? ‖
 ποιησάμενος ἔφη ἐν τῷ πνεύματι· Ἐπὶ ταύτης τῶν ἐνθάδε
 πίστει τῇ εἰς θεὸν ἀγόμενος, τὸν τῆς Ἀρτέμιδος ἱερέα πρὸ
 <note type="footnote">26 cf Matth 4, 23</note>
-<note type="footnote">1 scr ἀπολέσαντα (scil αὐτόν)?? ‖ ἱδρυμένους Iames recte ut uid: nisi
+               <note type="footnote">1 scr ἀπολέσαντα (scil αὐτόν)?? ‖ ἱδρυμένους Iames recte ut uid: nisi
 forte scr ἑδρασμένους ‖ 3 scr τὰ οἰκεῖα?? ‖ 6 Ἄνδρες ⟨ Εφέσιοι⟩?? cf 170, 5 ‖
 7 scr Σμύρναν?? cf 169, 25 ‖ 9 scr ἀνιστάμην? ‖ 12 scr γεγονὸς ‖ 13 scr
 γινόμενον ‖ 17 del τοῖς prius? cf 181, 17 ‖ 17—18 scr καί τις τ. συνεδρ.? ‖ 18 scr
 τ. πυλ. τ. ἱεροῦ?? del τ. ἱερ.? cf Chrysost ed Montf t X p 773 πρὸς τὴν
 θύραν τοῦ Ἰωάννου ‖ 22 del μετὰ? ‖ 23 ἐπὶ τ.] scr Ἔστιν τις? ‖ 25 ἀγόμενος ⟨ὃς⟩?</note>
-<note type="footnote">Q 31 καταλειπὼν Q καταλείπων Zahn ‖ πρ.] cf 160, 3: Lipsius I p 468</note>
-
-<pb n="174"/>
+               <note type="footnote">Q 31 καταλειπὼν Q καταλείπων Zahn ‖ πρ.] cf 160, 3: Lipsius I p 468</note>
+               <pb n="174"/>
 τοῖ πυλῶνος ἀναπαύσας εἰσῆλθεν, τῷ τῆς ψυχῆς τῆς ἑαυτοῦ
 πόθῳ πρότερον τὴν ἑαυτοῦ ἐπιμέλειαν ποιούμενος ἐνεθυμήθη
 τοῦτο ἐν ἑαυτῷ· Ἄμεινον ἐμὲ τοῦ ζῶντος φροντίζειν ἢ τοῦ
@@ -1034,10 +995,9 @@ forte scr ἑδρασμένους ‖ 3 scr τὰ οἰκεῖα?? ‖ 6 Ἄνδ
 ἑαυτὸν εἰς τοὺς πόδας αὐτοῦ. Καὶ ὁ Ἰωάννης· Ὁ κύριος
 ἡμῶν ἐστιν Ἰησοῦς Χριστός, ὅστις τὴν δύναμιν αὐτοῦ δείξει
 ἐν τῷ νεκρῷ σου συγγενεῖ ὁ ἀναστήσας αὐτόν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="47">
-<p>47 Καὶ ἀναστήσας τὸν νεανίσκον καὶ τῆς χειρὸς αὐτοῦ
+         </div>
+         <div n="47" type="chapter">
+            <p>47 Καὶ ἀναστήσας τὸν νεανίσκον καὶ τῆς χειρὸς αὐτοῦ
 <lb n="15"/> λαβόμενος εἶπεν· Οὐκ ἔστι μέγας ἀνδρὶ μεγάλων μυστηρίων
 κρατούντων ἔτι ἐν τοῖς μικροῖς κατατρίβεσθαι. ἢ τί μέγα
 νόσοις νόσους σωματικὰς ἀπαλλάττεσθαι; Καὶ ἔτι τὸν νεανίσκον
@@ -1050,20 +1010,18 @@ forte scr ἑδρασμένους ‖ 3 scr τὰ οἰκεῖα?? ‖ 6 Ἄνδ
 μύθη? ‖ 3 scr ἐμοῦ? ‖ 6 τοῦ ⟨ἰδίου⟩?? ‖ 10 scr Κἀκεῖνος ‖ φρίκει R: cf 28 ‖
 13 del ὁ? ‖ 15 scr μέγα? ‖ 16 scr κρατοῦντι? ‖ 17 νόσοις del ? ‖ 20 scr νεανίσκος ‖
 22 scr αὐτῷ? ‖ εἰς] scr πρὸς?  cf 178, 34</note>
-<note type="footnote">Q 23 deest uerbum: cf 171, 38 ‖ 25 ⟨ἐκ⟩ νεκρῶν? ‖ 28 scr αὐτῷ? item
+               <note type="footnote">Q 23 deest uerbum: cf 171, 38 ‖ 25 ⟨ἐκ⟩ νεκρῶν? ‖ 28 scr αὐτῷ? item
 Zahn ‖ 30 ⟨τόπῳ⟩?? ‖ 35 scr αὐτοῦ? item Zahn</note>
-
-<pb n="175"/>
+               <pb n="175"/>
 τὸν Ἰωάννην. ὁ δὲ Ἰωάννης ἰδὼν τὸν ἐγηγερμένον εἶπε· Νῦν
 ἀναστὰς οὐ ζῇς ὄντως οὐδὲ τῆς ἀληθινῆς ζωῆς κοινωνὸς καὶ
 κληρονόμος· βούλει γενέσθαι οὗ ὀνόματι καὶ δυνάμει ἀνέστης;
 καὶ νῦν πίστευσον, καὶ ζήσεις εἰς ἅπαντας αἰῶνας. Ὃ δὲ
 αὐτόθε πιστεύσας ἐπὶ τὸν κύριον Ἰησοῦν ἦν λοιπὸν προσκαρτερῶν
 τῷ Ἰωάννῃ.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="48">
-<p>48 Τῇ δὲ ἑξῆς ἡμέρᾀ ὄναρ θεασάμενος ὁ Ἰωάννης μίλια
+         </div>
+         <div n="48" type="chapter">
+            <p>48 Τῇ δὲ ἑξῆς ἡμέρᾀ ὄναρ θεασάμενος ὁ Ἰωάννης μίλια
 τρία ἔξω πυλῶν περιπατῆσαι, οὐκ ἠμέλησεν, ἀλλ᾿  ὄρθρου ἀναστὰς
 ἅμα τοῖς ἀδελφοῖς ἐπὶ τὴν ὁδὸν ἐβάδιζε. καί τις χωρικὸς
 νουθετούμενος ὑπὸ τοῦ ἰδίου πατρὸς ὅπως τὴν τοῦ συνεργοῦ <lb n="10"/>
@@ -1071,20 +1029,19 @@ Zahn ‖ 30 ⟨τόπῳ⟩?? ‖ 35 scr αὐτοῦ? item Zahn</note>
 ἐκείνου, ὁ νεανίσκος μὴ φέρων τὴν νουθεσίαν τοῦ πατρὸς λακτίσας
 αὐτὸν ἄφωνον ἔθηκεν. ἰδὼν δὲ τὸ συμβὰν ὁ᾿ Ἰωάννης
 εἶπε πρὸς τὸν κύριον· Κύριε, τούτου με ἕνεκεν ἐκέλευσας σήμερον
-ἐνθάδε ἐξελθεῖν;</p> <lb n="15"/>
-</div>
-
-<div type="textpart" subtype="chapter" n="49">
-<p>49 Ὁ δὲ νεανίσκος ἰδὼν τὸ ὀξὺ τοῦ θανάτου, προσδοκῶν
+ἐνθάδε ἐξελθεῖν;</p>
+            <lb n="15"/>
+         </div>
+         <div n="49" type="chapter">
+            <p>49 Ὁ δὲ νεανίσκος ἰδὼν τὸ ὀξὺ τοῦ θανάτου, προσδοκῶν
 συλληφθῆναι, σπασάμενος ὃ ἦν ἐν τῇ ζώνῃ αὐτοῦ δρέπανον
 ὁρμᾷ εἰς τὴν ἑαυτοῦ ἔπαυλιν δρομαίως· καὶ ὁ Ἰωάννης ἀπαντήσας
 <note type="footnote">21 cf Matth 4, 23</note>
-<note type="footnote">3 ⟨ὑπάρχεις⟩· βούλει? ‖ 11 scr ἑαυτὸν σφ.?‖ 13 scr ἄφνω ἔθηκε ⟨νε-
+               <note type="footnote">3 ⟨ὑπάρχεις⟩· βούλει? ‖ 11 scr ἑαυτὸν σφ.?‖ 13 scr ἄφνω ἔθηκε ⟨νε-
 κρό⟩ν? cf 29; 188, 16; 48, 2 ‖ 18 scr δρομαῖος?</note>
-<note type="footnote">Q 22 θαλάσσης utroque loco Zahn recte ut uid ‖ 28 scr διαβόλου: item
+               <note type="footnote">Q 22 θαλάσσης utroque loco Zahn recte ut uid ‖ 28 scr διαβόλου: item
 Zahn ‖ 34 scr ὧ ἐπεφ. δρεπάνῳ?</note>
-
-<pb n="176"/>
+               <pb n="176"/>
 αὐτῷ ἔφη· Στῆθι σὺ δαῖμον ἀναιδέστατε, καὶ λέγε
 μοι ποῦ τὴν ὁρμὴν ἔχων φέρεις δρέπανον αἵματος ὀρεγόμενον.
 Καὶ ὁ νεανίσκος ταραχθεὶς καὶ τὸ σίδηρον εἰς γῆν ἀφεὶς
@@ -1097,10 +1054,9 @@ Zahn ‖ 34 scr ὧ ἐπεφ. δρεπάνῳ?</note>
 <lb n="10"/> αὐτὴν σφάξαι πειρώμενος καὶ τὸν ἄνδρα αὐτῆς καὶ ἐμαυτὸν
 ὕστερον πάντων, μὴ ὑποφέρων ὁραθῆναι τῷ τῆς γυναικὸς
 ἀνδρί, δίκην θανάτου ὑπομένων.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="50">
-<p>50 Καὶ ὁ Ἰωάννης εἶπεν αὐτῷ· Ἰνα μὴ τόπον δῶ τῷ
+         </div>
+         <div n="50" type="chapter">
+            <p>50 Καὶ ὁ Ἰωάννης εἶπεν αὐτῷ· Ἰνα μὴ τόπον δῶ τῷ
 ἐν σοὶ θέλοντι γελᾶν καὶ παίζειν ὑποχωρήσας καὶ παριδὼν
 <lb n="15"/> ὑμᾶς κινδυνεύοντας, ἐλθὲ σὺν ἐμοὶ καὶ τὸν πατέρα σου δεῖξόν
 μοι ποῦ ἐστι κείμενος. καὶ ἐάν σοι αὐτὸν ἀναστήσω, ἀποστήσω
@@ -1108,10 +1064,9 @@ Zahn ‖ 34 scr ὧ ἐπεφ. δρεπάνῳ?</note>
 εἶπεν· Ἐὰν ζῶντά μοι αὐτὸν τὸν πατέρα μου ἀναστήσῃς,
 καὶ ὄψομαι αὐτὸν ὅλον διαλεγόμενον ἐν τῷ βίῳ, ἀποστήσομαι
 <lb n="20"/> τοῦ λοιποῦ.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="51">
-<p>51 Καὶ ὡς ταῦτα ἔλεγεν, ἐπέστησαν τῷ τόπῳ λέγοντες
+         </div>
+         <div n="51" type="chapter">
+            <p>51 Καὶ ὡς ταῦτα ἔλεγεν, ἐπέστησαν τῷ τόπῳ λέγοντες
 ἔνθα ἔκειτο ὁ πρεσβύτης νεκρός, καὶ παροδιτῶν πλειόνων
 παρεστώτων τῷ τόπῳ. Ὁ δὲ Ἰωάννης ἔφη τῷ νεωτέρῳ· Ταλαίπωρε,
 οὐδὲ τὸ γῆρας ἐφείσω τοῦ πατρός σου; Ὁ δὲ κλαίων
@@ -1121,19 +1076,17 @@ Zahn ‖ 34 scr ὧ ἐπεφ. δρεπάνῳ?</note>
 5 τὸ] scr τι? ‖ 6 scr ἐμαυτόν?? cf 195, 4, 202, 7 ‖ 16 ἀποστήσω ⟨σε⟩? an
 scr ἀποστήσει? cf 19 ‖18 scr παραστήσης?? cf 177, ‖ 19 scr διαιτώμενον? ‖
 21 λέγοντες num sanum ??? ‖ 24 scr τοῦ γήρως? ‖ 25 scr κατατεινόμενος??</note>
-<note type="footnote">Q 27 δαίμων Q : cf 1 ‖ 28 τῷ Ἰωάννῃ Zahn: recte? ‖ 34 scr τοῦ κακοῦ??</note>
-
-<pb n="177"/>
+               <note type="footnote">Q 27 δαίμων Q : cf 1 ‖ 28 τῷ Ἰωάννῃ Zahn: recte? ‖ 34 scr τοῦ κακοῦ??</note>
+               <pb n="177"/>
 εἰς τὸν τόπον τοῦτον, ὁ ἐπιστάμενος ὅτι τοῦτο ἤμελλε
 γίνεσθαι, ὃν μηδὲ λαθεῖν δύναται τῶν ἐν τῷ βίῳ πράξεων,
 ὅπως ἂν θεραπείαν καὶ ἴασιν παρεχόμενός μοι θελήματι τῷ
 σῷ· καὶ νῦν παράσχου τὸν πρεσβύτην ζῶντα, ὁρῶν τὸν φονέαν
 ἑαυτοῦ δικαστὴν γενόμενον· καὶ φεῖσαι αὐτοῦ μόνος σὺ κύριε <lb n="5"/>
 ἀφειδήσαντῶ πατρὸς συμβουλεύεσθαι αὐτῷ τὰ ἄριστα.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="52">
-<p>52 Καὶ ταῦτα εἰπὼν προσελθὼν τῷ γέροντι εἶπεν· Οὐκ
+         </div>
+         <div n="52" type="chapter">
+            <p>52 Καὶ ταῦτα εἰπὼν προσελθὼν τῷ γέροντι εἶπεν· Οὐκ
 ἀτονήσει μου ὁ κύριος καὶ μέχρι σοῦ τὸ χρηστὸν ἔλεος καὶ
 τὰ ἀνυπερήφανα σπλάγχνα ἁπλῶσαι· ἀναστὰς οὖν δὸς τοῦ
 ἐπιχείρου γεγενημένου ἔργου δόξαν τῷ θεῷ. Καὶ ὁ γέρων <lb n="10"/>
@@ -1145,27 +1098,26 @@ scr ἀποστήσει? cf 19 ‖18 scr παραστήσης?? cf 177, ‖ 19 s
 αὐτὸν εἰσήγαγεν εἰς τὴν πόλιν εὐαγγελιζόμενος αὐτῷ
 τὴν χάριν τοῦ θεοῦ, ὡς πρὶν ἐπιβῆναι τῇ πύλῃ τὸν πρεσβύτην
 πιστεῦσαι.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="53">
-<p>53 Ὁ δὲ νεανίσκος θεασάμενος τὴν ἀπροσδόκητον τοῦ
+         </div>
+         <div n="53" type="chapter">
+            <p>53 Ὁ δὲ νεανίσκος θεασάμενος τὴν ἀπροσδόκητον τοῦ
 πατρὸς ἀνάστασιν καὶ τὴν ἑαυτοῦ σωτηρίαν, λαβὼν δρέπανον <lb n="20"/>
 τὰ ἑαυτοῦ μόρια ἀφείλατο, καὶ δραμὼν εἰς τὴν οἰκίαν ἐν ᾗ
 τὴν μοιχαλίδα εἶχεν, εἰς ὄψιν αὐτῆς προσέρριψεν εἰπών· Διὰ
 σὲ πατρὸς φονεὺς καὶ ὑμῶν τῶν δύο καὶ ἐμαυτοῦ ἐγενόμην.
 ἔχεις τὰ τούτῳ ὅμοια καὶ αἴτια. ἐμὲ γὰρ ὁ θεὸς ἠλέησεν
-ἐπιγνῶναι αὐτοῦ τὴν δύναμιν.</p> <lb n="25"/>
-<note type="footnote">2 scr μηδεμία?? μηδὲν? ‖ 3 ὅπως ἄν] scr ὁ πᾶσαν ‖ 4scr ζῶντα
+ἐπιγνῶναι αὐτοῦ τὴν δύναμιν.</p>
+            <lb n="25"/>
+            <note type="footnote">2 scr μηδεμία?? μηδὲν? ‖ 3 ὅπως ἄν] scr ὁ πᾶσαν ‖ 4scr ζῶντα
 δρᾶν? ‖ scr φονέα?  ‖ 5 σοὶ R ‖ 6 scr ἀφειδήσαντος τοῦ π. ⟨διὰ τὸ⟩?? ‖
 10 ἐπιχ. mum sanum ? ‖ 12 scr ὑποφέροντα? ‖ 13 scr ἀφιλοστοργίαν? ‖ 14 τίνι;
 ⟨Ὁ δὲ Ἰωάννης ἀπεκρίνατο αὐτῷ Εἰ⟩ ἐπὶ τοῖς α.? ‖ 20 ⟨τὸ⟩ δρέπανον?
 cf Q et 175, 17 ‖ 21 scr ἀφείλετο? cf Q et 182, 3 et 3 - 4 ‖ 23 scr ἡμῶν (κ.
 ἐμ. del: cf Q) ?? cf 176, 10 ‖ 21 scr τούτων: cf Q</note>
-</div>
-
-<div type="textpart" subtype="chapter" n="54">
-<pb n="178"/>
-<p>54 Καὶ ἀνελθὼν ἀνήγγειλε τῷ Ἰωάννῃ ἔμπροσθεν τῶν
+         </div>
+         <div n="54" type="chapter">
+            <pb n="178"/>
+            <p>54 Καὶ ἀνελθὼν ἀνήγγειλε τῷ Ἰωάννῃ ἔμπροσθεν τῶν
 ἀδελφῶν τὸ ὑπʼ αὐτοῦ πραχθέν. ὁ δὲ Ἰωάννης εἶπεν αὐτῷ·
 Ὁ ὑποβαλών σοι νεανίσκε τὸν πατέρα σου ἀποκτεῖναι καὶ
 μοιχὸν ἀλλοτρίας γυναικὸς γενέσθαι, οὗτός σοι ὡς δίκαιον
@@ -1180,27 +1132,25 @@ cf Q et 175, 17 ‖ 21 scr ἀφείλετο? cf Q et 182, 3 et 3 - 4 ‖ 23 scr
 μετεγνωκὼς ἐπὶ τοῖς προτέροις ἁμαρτήμασιν ὅπως
 ἀφέσεως τύχῃ παρὰ τῆς τοῦ θεοῦ χρηστότητος· καὶ οὐκ ἐχωρίζετο
 <lb n="15"/> τοῦ Ἰωάννου.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="55">
-<p>55 Τούτων οὖν γινομένων ὑπʼ αὐτοῦ ἐν τῇ Ἐφεσίων πόλει
+         </div>
+         <div n="55" type="chapter">
+            <p>55 Τούτων οὖν γινομένων ὑπʼ αὐτοῦ ἐν τῇ Ἐφεσίων πόλει
 Σμυρναῖοι διεπέμψαντο πρὸς αὐτὸν πρέσβεις λέγοντας· Ἀκούο-
 <note type="footnote">5 scr ἀκραῖα ἐνεποίησεν? ‖ 8 scr τῶν ἀνθρώπων?? ‖ 9 κινεῖται satin
 sanum? ‖ 11 scr ἕξεις? ‖ 12 scr ἔγχρήζοντα?</note>
-<note type="footnote">Q 19 scr σοι? ‖ 20 scr σοι? ‖ 21 αὐτῶν del? cf R: ἐκ τοῦ σώματος ex-
+               <note type="footnote">Q 19 scr σοι? ‖ 20 scr σοι? ‖ 21 αὐτῶν del? cf R: ἐκ τοῦ σώματος ex-
 spectabat Vsener ‖ 25 λαβεῖν Zahn rect ut uid: cf 154, 2; 173, 11 ‖
 27 αὐτὸν Zahn ‖ 37 scr κονιζομένης? cf 32; 35; 179, 18; 21</note>
-
-<pb n="179"/>
+               <pb n="179"/>
 μεν ὃν κηρύσσεις θεὸν ἄφθονός ἐστι καὶ διετάξατό σοι μὴ
 ἐμφιλοχωρεῖν ἐν ἑνὶ τόπῳ. ὡς οὖν θεοῦ τοιούτου κῆρυξ
 ὑπάρχεις, ἐλθὲ εἰς τὴν Σμύρναν καὶ εἰς τὰς λοιπὰς πόλεις,
 ἵνα σου τὸν θεὸν ἐπιγνῶμεν, καὶ ἐπιγνόντες αὐτὸν ἐν αὐτῷ
-τὰς ἐλπίδας ἔχωμεν.</p> <lb n="5"/>
-</div>
-
-<div type="textpart" subtype="chapter" n="58">
-<p>58 Χρόνου δὲ ἱκανοῦ διελθόντος καὶ μηδενὸς τῶν ἀδελφῶν <note type="marginal">225 Z</note>
+τὰς ἐλπίδας ἔχωμεν.</p>
+            <lb n="5"/>
+         </div>
+         <div n="58" type="chapter">
+            <p>58 Χρόνου δὲ ἱκανοῦ διελθόντος καὶ μηδενὸς τῶν ἀδελφῶν <note type="marginal">225 Z</note>
 λυπηθέντος πώποτε ὑπὸ Ἰωάννου, ἐλυπήθησαν τότε εἰρηκότος
 αὐτοῦ· Ἀδελφοί, ἤδη με καιρὸς τὴν Ἐφεσον καταλαβεῖν·
 συντίθεμαι γὰρ τοῖς ἐκεῖ μένουσι, μήπως ῥᾳθυμήσωσι πολλῷ
@@ -1211,21 +1161,20 @@ spectabat Vsener ‖ 25 λαβεῖν Zahn rect ut uid: cf 154, 2; 173, 11 ‖
 Εἰ κἀγὼ χωρίζομαι ὑμῶν, ἀλλ᾿ ὁ Χριστὸς σὺν ὑμῖν ἐστιν ἀεί·
 ὃν ἐὰν καθαρῶς φιλῆτε, ἀνεπίλειπτον ἕξετε τὴν ἀπʼ αὐτοῦ <lb n="15"/>
 κοινωνίαν· φιλούμενος γὰρ φθάνει τοὺς φιλοῦντας αὐτόν.</p>
-<note type="footnote">1 θεὸν ⟨ὅτι⟩? ‖ 3 scr ὑπάρχων? ‖ 5 ἔχομεν R</note>
-<note type="footnote">MR 6 ἀπὸ λαοδικίας ἐν ἐφέσω τὸ δεύτερον inscr M ‖ διαγενομένου
+            <note type="footnote">1 θεὸν ⟨ὅτι⟩? ‖ 3 scr ὑπάρχων? ‖ 5 ἔχομεν R</note>
+            <note type="footnote">MR 6 ἀπὸ λαοδικίας ἐν ἐφέσω τὸ δεύτερον inscr M ‖ διαγενομένου
 R ‖ 7 λυπηθέντων M  ‖ποτὲ R ‖ 8 με] ῥ add R ‖ τ. Ἔ. κ.] ἐν τῆ ἐφέσω
 ἐπανελθεῖν ἐπισπεύδει R ‖ 9 συντ. μέν. om R ‖ 10 ἄνθρωπον del Vsener ‖
 10—12 εἰς - ἡμῶν om R ‖ 12 scr ὑμῶν? ‖ οἱ ἀδ. παῤ α. R ‖ 13 ἐπειδὴ] ὅτι R ‖
 αὐτῶ R ‖ καὶ ὁ] ὁ δὲ R ‖ 14 ἐγὼ ὑμᾶς R ‖ ἀλλ᾿ ὁ om R Χρ.] ἰησοῦς
 add R ‖ 15 ἀνυπόληπτον R ἀνεπίληπτον Zahn: cf 180,24 ἀδιόχλητοι ‖ ἀπ᾿ α.]
 ἑαυτοῦ R</note>
-<note type="footnote">Q 29 κατηχίσας Q ‖ 30 δοξάζοντα Zahn ‖ c 58 - 105 om (add Prochori
+            <note type="footnote">Q 29 κατηχίσας Q ‖ 30 δοξάζοντα Zahn ‖ c 58 - 105 om (add Prochori
 p 162, 3 - 9) Q: cf 169, 31</note>
-</div>
-
-<pb n="180"/>
-<div type="textpart" subtype="chapter" n="59">
-<p>59 Καὶ ταῦτα εἰπὼν καὶ συνταξάμενος αὐτοῖς, καταλιπών
+         </div>
+         <pb n="180"/>
+         <div n="59" type="chapter">
+            <p>59 Καὶ ταῦτα εἰπὼν καὶ συνταξάμενος αὐτοῖς, καταλιπών
 τε πολλὰ χρήματα τοῖς ἀδελφοῖς εἰς διάδοσιν, πενθούντων
 ἀπάντων τῶν ἀδελφῶν καὶ στεναζόντων ἐξῆλθεν εἰς
 Ἔφεσον. συνῄεσαν δὲ αὐτῷ ἐκ τῆς Ἐφέσου Ἀνδρόνικός τε
@@ -1235,10 +1184,9 @@ p 162, 3 - 9) Q: cf 169, 31</note>
 Ξενοφῶντι, καὶ ἡ σώφρων πόρνη, καὶ ἕτεροι πλείονες, οὓς
 ἑκάστοτε προέτρεπεν ἐπὶ τὸν κύριον, καὶ μηκέτι βουλόμενοι
 <lb n="10"/> χαωρίζεσθαι αὐτοῦ.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="60">
-<p>60 Καταχθέντων δὲ ἡμῶν ἔν τινι πανθοχείῳ ἐρήμῳ τὴν
+         </div>
+         <div n="60" type="chapter">
+            <p>60 Καταχθέντων δὲ ἡμῶν ἔν τινι πανθοχείῳ ἐρήμῳ τὴν
 πρώτην ἡμέραν, καὶ ἀπορούντων κραββάτου ἕνεκεν Ἰωάννου,
 παίγνιον εἴδομεν. εἷς τις ἦν ἐκεῖ ἄστρωτος κράββατος κείμενος
 <note type="marginal">226 Z</note> ἔν τινι τόπῳ, ἐφʼ ᾧ ἃ ἐπεφερόμεθα περιβόλαια στρώσαντες
@@ -1252,10 +1200,10 @@ p 162, 3 - 9) Q: cf 169, 31</note>
 πόρρω τῶν δούλων τοῦ θεοῦ. Καὶ ἡμῶν γελώντων καὶ ἐπὶ
 πλέον ὁμλούντων ὁ Ἰωάννης εἰς ὕπνον ἐτράπετο· αὐτοὶ δὲ
 ἡρέμα λαλοῦντες ἀδιόχλητοι αὐτῷ ἐγινόμεθα.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="61">
-<lb n="25"/> <p>61 Ἡμέρας δὲ ἐπιφαυούσης ἤδη φθάσας ἀνίσταμαι καὶ
+         </div>
+         <div n="61" type="chapter">
+            <lb n="25"/>
+            <p>61 Ἡμέρας δὲ ἐπιφαυούσης ἤδη φθάσας ἀνίσταμαι καὶ
 σὺν ἐμοὶ Βῆρος καὶ Ἀνδρόνικος· καὶ ὁρῶμεν πρὸς τὴν θύραν
 <note type="footnote">1 ἀποταξάμενος R ‖ 1—2 κατ. τε] καταλειπόντες R ‖ 2 εἰς δ. τ. ἀδ, R ‖
 3 τ. ἀδ. om R: del?? cf 181, 2 ‖ ἐξῆλθον R ‖ 3—4 εἰς Ἔ.] ἐκ τῆς ἐφέσου R:
@@ -1274,8 +1222,7 @@ uisum κεἶτε) sup scr ει compendio M: scr κἦτε uel καὶ ἦτε??
 ἡμ. - δὲ] εἰς ὕπνον οὖν τοῦ ἰωάννου τραπέντος ἡμεῖς R ‖ 24 λαλ.] ἀκηκοότες
 R ‖ γεγόναμεν R: scr ἐγενόμεθα?? ‖ 25 οὖν ἐπιφωσκούσης R ‖ ἤδη φθ.
 om R ‖ ἀν.] ἐγὼ add R</note>
-
-<pb n="181"/>
+               <pb n="181"/>
 τοῦ οἰκήματος οὗ  εἰλήφαμεν πλεονασμὸν κορίων ἑστῶτα· ἐξεστηκότων
 δὲ ἡμῶν ἐπὶ τῇ πολλῇ θέᾳ αὐτῶν, καὶ τῶν ἀδελφῶν
 πάντων ἐγηγερμένων δι᾿ αὐτούς, ὁ Ἰωάννης ἐκάθευδεν. καὶ
@@ -1290,19 +1237,17 @@ om R ‖ ἀν.] ἐγὼ add R</note>
 ἔμεινε παῤ ἑαυτῷ ἠρεμῆσαν καὶ μὴ παραβάν· ἡμεῖς δὲ φωνὴν
 θεοῦ ἀκούοντες καὶ ἐντολῶν παρακούομεν καὶ ῥᾳθυμοῦμεν·
 καὶ μέχρι πότε;</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="62">
-<p>62 Μετὰ δὲ ταῦτα γινόμεθα εἰς τὴν Ἔφεσον· καὶ οἱ <lb n="15"/>
+         </div>
+         <div n="62" type="chapter">
+            <p>62 Μετὰ δὲ ταῦτα γινόμεθα εἰς τὴν Ἔφεσον· καὶ οἱ <lb n="15"/>
 ἐκεῖ ἀδελφοὶ ἐγνωκότες διὰ χρόνου ἱκανοῦ τὸν Ἰωάννην ἀφικόμενον <note type="marginal">227 Z</note>
 συνέτρεχον ἐν τοῖς Ἀνδρονίκου, ἔνθα καὶ κατήγετο,
 τῶν ποδῶν αὐτοῦ ἁπτόμενοι, καὶ τὰς χεῖρας αὐτοῦ εἰς τὰ
 ἴδια πρόσωπα τιθέντες ἐφίλουν αὐτάς, ὡς ὅτι κἂν ἥψαντο
 τῶν ἐκείνου ἐνδυμάτων.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="63">
-<p>63 Καὶ πολλῆς ἀγάπης οὔσης καὶ χαρᾶς ἀνυπερβλήτου
+         </div>
+         <div n="63" type="chapter">
+            <p>63 Καὶ πολλῆς ἀγάπης οὔσης καὶ χαρᾶς ἀνυπερβλήτου
 ἐν τοῖς ἀδελφοῖς, εἷς τις ἐπίπεμπτος τοῦ Σατανᾶ ἐρᾷ τῆς
 Λρουσιανῆς, ὁρῶν καὶ ἐπιστάμενος τοῦ Ἀνδρονίκου ταύτην
 εἶναι γυναῖκα· ᾧ οἱ πλείονες ἔλεγον· Ἀδύνατόν σε τυχεῖν ταύτης
@@ -1323,8 +1268,7 @@ plerigue etiam tactu uestis hilarati quia tetigerant amictum sancti
 apostoli sanabantur (cf act 19, 12) add 𝔘 uera ut uid ‖ 22 ἐν τ. ἀδ. om R ‖
 23 καὶ] αὐτὴν καίπερ R(𝔘?) ‖ ταύτην om R ‖ 24 οὖσαν R ‖ ᾧ] ὃν R ‖
 25 κεχ.] καὶ χωρισμένην R ‖ αὐτῆς om R ‖ 26 σὺ μ.] ἢ R ‖ πρώην R</note>
-
-<pb n="182"/>
+               <pb n="182"/>
 Ἀνδρόνικος τοῦτο ὅπερ ἐστὶ νῦν, θεοσεβὴς ἀνύρ, κατέκλεισεν
 αὐτὴν εἴς τι μνημεῖον λέγων· Ἢ γυναῖκά σε ἔχω ἔχειν ἣν εἶχον
 πάλαι, ἢ τεθνήξῃ· Καὶ εἵλατο μᾶλλον ἀποθανεῖν ἢ τὸ μύσος
@@ -1333,11 +1277,11 @@ apostoli sanabantur (cf act 19, 12) add 𝔘 uera ut uid ‖ 22 ἐν τ. ἀδ.
 τοῦτον φρονῆσαι, σοὶ μοιχῷ αὐτῇ θέλοντι γενέσθαι συνθήσεται;
 ἀπόστηθι μανίας μὴ ἐχούσης ἐν σοὶ ἀνάπαυσιν· ἀπόστηθι
 πράγματος ᾧ τέλος ἐπαγαγεῖν οὐ δύνασαι.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="64">
-<p>64 Καὶ λέγοντες πρὸς αὐτὸν ταῦτα οἱ συνήθεις αὐτοῦ |
-<note type="marginal">228 Z</note> <lb n="10"/> φίλοι οὐκ ἔπεισαν αὐτόν, ἀλλ᾿ ἀναίδειαν χρησάμενος προσέπεμψεν
+         </div>
+         <div n="64" type="chapter">
+            <p>64 Καὶ λέγοντες πρὸς αὐτὸν ταῦτα οἱ συνήθεις αὐτοῦ |
+<note type="marginal">228 Z</note>
+               <lb n="10"/> φίλοι οὐκ ἔπεισαν αὐτόν, ἀλλ᾿ ἀναίδειαν χρησάμενος προσέπεμψεν
 αὐτήν· καὶ γνοὺς τὰς παῤ ἐκείνης ἀτιμίας καὶ ὕβρεις
 ἐν ἀθυμίᾳ διῆγεν αὐτοῦ τὸν βίον. μετὰ δὲ ἡμέρας δύο κατακλιθεῖσα
 ἡ Δρουσιανὴ ἀπὸ τῆς ἀθυμίας ἐπύρεττε λέγουσα·
@@ -1349,10 +1293,9 @@ apostoli sanabantur (cf act 19, 12) add 𝔘 uera ut uid ‖ 22 ἐν τ. ἀδ.
 τάχιον. Καὶ παρόντος Ἰωάννου, μηδενὸς ὅλως ἐγνωκότος τὸ
 <lb n="20"/> τοιοῦτον, ἀπαλλάσσεται τοῦ βίου ἡ Δρουσιανή, οὐ πάνυ ἡδομένη
 ἀλλὰ καὶ λυπουμένη διὰ τὴν ἐκείνου ψυχικὴν θραῦσιν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="65">
-<p>65 Ὁ δὲ Ἀνδρόνικος λυπούμενος λύπην ἀπόκρυφον ἐπένθει
+         </div>
+         <div n="65" type="chapter">
+            <p>65 Ὁ δὲ Ἀνδρόνικος λυπούμενος λύπην ἀπόκρυφον ἐπένθει
 τῇ ψυχῇ, καὶ φανερῶς δὲ ἔκλαιεν, ὡς τὸν Ἰωάννην πολλὰ
 ἐπιστομίζειν καὶ λέγειν αὐτῷ· Ἐπὲ βελτίονι ἐλπίδι μετῆλθεν
 <note type="footnote">1 θεοσ.] ὁ add M ‖ 2 τι om M: cf 210, 1 ‖ ἔχειν om M ‖ 3 τεθνήξειν
@@ -1374,25 +1317,23 @@ scr μηδὲ? (praesente Ioanne sed causam ignorante 𝔘: cf 183, 6)  ‖ �
 ἄλλου M  ‖ 20 δρουσίνα M: cf 193, 24: 202, 21; 203, 4  ‖ ἡδομένου R  ‖ 21 ἀλλὰ
 κ. λ. om R  ‖ 23 ἔκλαιε δὲ καὶ φ. R  ‖ πολλὰ] αὐτὸν add R  ‖ 24 αὐτῷ om R  ‖
 βελτίω R  ‖ μετήλλαξεν suspicabatur Vsener: at cf Prochori p 4, 4</note>
-
-<pb n="183"/>
+               <pb n="183"/>
 Δρουσιανὴ τοῦτον τὸν βίον τὸν ἄδικον. Καὶ ὁ Ἀνδρόνικος
 αὐτῷ ἀπεκρίνατο· Καὶ πέπεισμαι ὦ Ἰωάννη καὶ οὐκ ἀμφιβάλλω
 ὅλως περὶ τῆς εἰς τὸν θεόν μου πίστεως· ἀλλὰ μάλιστα
 τοῦτο αὐτὸ κρατύνω ὅτι καθαρῶς τοῦ βίου ἀνέλυσεν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="66">
-<p>66 Ἐκκομισθείσης δὲ αὐτῆς ἐπιλαβόμενος ὁ Ἰνάννης τοῦ <lb n="5"/>
+         </div>
+         <div n="66" type="chapter">
+            <p>66 Ἐκκομισθείσης δὲ αὐτῆς ἐπιλαβόμενος ὁ Ἰνάννης τοῦ <lb n="5"/>
 Ἀνδρονίκου καὶ ἐγνωκώς τὴν αἰτίαν μᾶλλον ἐπένθει τοῦ Ἀνδρονίκου·
 καὶ ἡσύχαζεν ἀφορῶν εἰς τὰς ἐπηρείας τοῦ ἀλλοτρίου,
 ἐπʼ ὀλίγον καθεσθείς· εἶτα τῶν ἀδελφῶν ἐπισυλλεγέντων
 ὑπὲρ τοῦ ἀκοῦσαι τίνας λόγους ἐρεῖ πρὸς τὴν ἀπηλλαγμένην,
-καὶ ἤ ρξατο λέγειν·</p> <lb n="10"/>
-</div>
-
-<div type="textpart" subtype="chapter" n="67">
-<p>67 Ὁ κυβερνήτης ναυτιλλόμενος ἅμα τοῖς ἐμπλέουσι καὶ <note type="marginal">229 Z</note>
+καὶ ἤ ρξατο λέγειν·</p>
+            <lb n="10"/>
+         </div>
+         <div n="67" type="chapter">
+            <p>67 Ὁ κυβερνήτης ναυτιλλόμενος ἅμα τοῖς ἐμπλέουσι καὶ <note type="marginal">229 Z</note>
 αὐτῇ τῇ νηῒ ὁπηνίκα ἂν καταχθῇ εἰς εὔδιον καὶ ἀχείμαστον
 λιμένα τηνικαῦτα φασκέτω σεσῶσθαι. καὶ ὁ γεωργὸς παραδοὺς
 τῇ γῇ τὰ σπέρματα καὶ πολλὰ καμὼν ἐπὶ τὴν τούτων
@@ -1403,10 +1344,9 @@ scr μηδὲ? (praesente Ioanne sed causam ignorante 𝔘: cf 183, 6)  ‖ �
 καυχάσθω ὅταν τοὺς στεφάνους δέξηται. καὶ τὰ ἑξῆς ἅπαντα
 ἀγωνίσματα καὶ αἱ τέχναι, ὁπόταν ἐν τῷ τέλει μὴ ἔρημοι <lb n="20"/>
 ὦσιν, ἀλλὰ δεικνύωνται ἐκείνοις πρὸς ἅπερ ἐπηγγέλλοντο.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="68">
-<p>68 τὸ αὐτὸ δὲ ἡγοῦμαι ὑπάρχειν καὶ πρὸς ἣν ἕκαστος
+         </div>
+         <div n="68" type="chapter">
+            <p>68 τὸ αὐτὸ δὲ ἡγοῦμαι ὑπάρχειν καὶ πρὸς ἣν ἕκαστος
 ἡμῶν ἀσκεῖ πίστιν· τότε ταύτην ἐκκρίνεσθαι εἰ ἄρα ἀληθής,
 ὁπόταν μέχρις ἔξω τοῦ βίου ὁμαλισθῇ. πολλὰ γὰρ ἐμπόδια
 παρεμπίπτει καὶ θόρυβον παρασκευάζει τῷ ἀνθρωπίνῳ λογισμῷ· <lb n="25"/>
@@ -1418,7 +1358,7 @@ om R ‖ 5 προσλαβόμενος (τὸν Ἀνδρόνικον) suspic V s
 5—6 τὸν ἀνδρόνικον M: cf 174, 35 ‖ 6 τῶ ἀνδρονίκω R ‖ 7 ἀφ. εἰς] διαπορῶν
 R ‖ 8 ἐπ᾿] καὶ ἐπὶ R ‖ εἶτα] δὲ καὶ add ἀδ.] ἁπάντων add R: cf 203, 10? ‖
 ἐπισ.] πρὸς αὐτὸν add R ‖ 9—10 ὑπὲρ καὶ om  R ‖ 10 del καὶ?  ‖ ἤρξ.] ὁ ἰωάννης
-add R ‖ 11—13 ὁ κ. σεσ. καὶ om R ‖ 14 τῇ γῇ om R ‖ 14—16 καὶ π. - σπέρμ.
+add R ‖ 11&#x8d;—13 ὁ κ. σεσ. καὶ om R ‖ 14 τῇ γῇ om R ‖ 14&#x8d;—16 καὶ π. - σπέρμ.
 om R ‖ 14—15 scr τῇ τ. ἐπιμελείᾳ κ. φρουρᾷ? ‖ 15 ἐχέτω V sener et Zahn
 recte ut uid: cf 161, 9 ‖ 16 πολυπλασίονα et add τότε χαιρέτω  R ‖ 17 δρ.
 ὑπ.] τρέχων R ‖ 18—21 ὁ πυκτ. - ἐπηγγ. om R ‖ 18 ⟨ἐπὶ⟩ uel ⟨πρὸς⟩ πυκτικὴν? ‖
@@ -1427,8 +1367,7 @@ recte ut uid: cf 161, 9 ‖ 16 πολυπλασίονα et add τότε χαιρ
 R ‖ καὶ om R ‖ 23 ὑμῶν R ‖ 23—24 τότε - ὁμ. om R ‖ 25 παραπίπτειν R ‖
 26 ἀκμή om R ‖ 27 ἐπιθ. πλούτου Zahn cum Lazio: cf 184, 1  ‖ ὀργή et
 ῥᾳθ. om </note>
-
-<pb n="184"/>
+               <pb n="184"/>
 φθόνος, πλοῦτος, ζῆλος, ἀμέλεια, ὕβρις, ἔρως, δόλος, χρήματα,
 πρόφασις, καὶ ἄλλα ὁπόσα ἐστὶν ἐν τῷ βίῳ τοιαῦτα ἐμπόδια,
 ὡς καὶ τῷ κυβερνήτῃ ρερομένῳ εὐδίῳ δρόμῳ ἐναντιοῦται πνευμέτων
@@ -1436,12 +1375,12 @@ R ‖ καὶ om R ‖ 23 ὑμῶν R ‖ 23—24 τότε - ὁμ. om R �
 <lb n="5"/> εὐδίας, καὶ τῷ γεωργῷ χειμὼν ἄωρος καὶ ἐρυσίβη καὶ ἑρπετὰ
 ἐκ τῆς γῆς ἀναφανέντα, καὶ τοῖς ἀγωνισταῖς τὸ παρὰ μικρόν,
 καὶ τοῖς τὰς τέχνας μετιοῦσι τὸ παῤ ἐκείνων.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="69">
-<p>69 χρὴ δὲ πρὸ τῶν ἄλλων ἁπάντων τὸν πιστὸν ἄνθρωπον
+         </div>
+         <div n="69" type="chapter">
+            <p>69 χρὴ δὲ πρὸ τῶν ἄλλων ἁπάντων τὸν πιστὸν ἄνθρωπον
 τὴν ἔξοδον προορᾶν, καὶ καταμανθάνειν ταύτην ὁποία
-<note type="marginal">230 Z</note> <lb n="10"/> τις ἐπιστή| σεται, ἆρα διεργὴς καὶ νηφαλέα καὶ μηδὲν ἐμπόδιον
+<note type="marginal">230 Z</note>
+               <lb n="10"/> τις ἐπιστή| σεται, ἆρα διεργὴς καὶ νηφαλέα καὶ μηδὲν ἐμπόδιον
 ἔχουσα, ἢ τεθορυβημένη καὶ τὰ ὧδε κολακεύουσα καὶ καταδεδεμένη
 ἐπιθυμίαις. οὕτως ἔστιν ἐπαινεῖσθαι καὶ σῶμα εὔμορφον
 ὁπόταν ὅλον ἀποδύσηται, καὶ στρατηγὸν μέγαν ὁπόταν
@@ -1475,18 +1414,16 @@ om R ‖ 21-185,6 paulo pleniora habet 𝔘 ‖ 21 ⟨τὰ μένοντα π�
 νοντα? ita fere 𝔘 ‖ 21—22 neque honorauerit quae honorificanda non sunt
 neque amauerit plena opera contumeliis 𝔘 ‖ 22 ἀτ. om R ‖ ἔ. ὕβ. om M:
 uerba trunca post ἄξια ponenda cf 𝔘 ‖ ἐνέχειρα R ‖ 23—185,1 οὐδὲ - ὄφιν om R</note>
-
-<pb n="185"/>
+               <pb n="185"/>
 οἴκῳ τὸν ὄφιν, οὐδὲ τὴν ὀνειδιζομένην διὰ θεόν, εἶτα μὴ
 αἰσχυνομένην· οὐδὲ τὴν στόματι μὲν λέγουσαν ναί, ἔργῳ δὲ
 ἑαυτῇ οὐ δεικνύουσα· ἀλλὰ τὴν ὑπομείνασαν ὑπὸ ἡδονῆς ῥυπαρᾶς
 μὴ ἐκλυθῆναι, ὑπὸ ῥᾳθυμίας μὴ ἡττηθῆναι, ὑπὸ φιλαργυρίας
 μηδὲ δελεασθῆναι, ὑπὸ ἀκμῆς σώματος καὶ ὀργῆς <lb n="5"/>
 μὴ προδοθῆναι.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="70">
-<p>70 Καὶ ἔτι πλείονας λόγους ποιουμένου τοῦ Ἰωάννου
+         </div>
+         <div n="70" type="chapter">
+            <p>70 Καὶ ἔτι πλείονας λόγους ποιουμένου τοῦ Ἰωάννου
 πρὸς τοὺς ἀδελφοὺς, ὡς τῶν προσκαίρων ἕνεκεν τούτους καταφρονεῖν,
 ὁ τῆς Δρουσιανῆς ἐρῶν ἐξαφθεὶς δεινοτάτῃ ἐπιθυμίᾳ
 καὶ ἐνεργείᾳ τοῦ πολυμόρφου Σατανᾶ τὸν τοῦ Ἀνδρονίκου <lb n="10"/>
@@ -1502,12 +1439,12 @@ uerba trunca post ἄξια ponenda cf 𝔘 ‖ ἐνέχειρα R ‖ 23—1
 λέγοντες· Τί ὠφέλησας ταλαίπωρε Δρουσιανή; τοῦτο <lb n="20"/>
 ζῶσα πεποιηκέναι οὐκ ἠδύνασο, ὁ τάχα ἂν οὐδέν σε ἐλύπησεν
 ἑκοῦσαν τοῦτο ποιησαμένην;</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="71">
-<p>71 Καὶ ταῦτα τούτων λεγόντων, καὶ μόνον ὃ σύνηθες
+         </div>
+         <div n="71" type="chapter">
+            <p>71 Καὶ ταῦτα τούτων λεγόντων, καὶ μόνον ὃ σύνηθες
 καρκάλιον περὶ τὴν σάρκα ταύτης ἐναπομεῖναν, ξένον ὁρᾶται
-θέαμα ὃ παθεῖν ἄξιον τοὺς ταῦτα δρῶντας· ὄφις ποθὲν <lb n="25"/> <note type="marginal">231 Z</note>
+θέαμα ὃ παθεῖν ἄξιον τοὺς ταῦτα δρῶντας· ὄφις ποθὲν <lb n="25"/>
+               <note type="marginal">231 Z</note>
 ἐπιφανεὶς τὸν μὲν ἐπίτροπον μονόπληγα τίθησιν· ὃν καὶ ἀνεῖλεν·
 <note type="footnote">1 οἴκῳ] pectus 𝔘: cf 189, 20 ‖ 1—3 οὐδὲ τ. ὀν. - δεικν. om M ‖ 1 del μὴ?
 cf ep Petri 1, 4, 14; 16 ‖ 3 scr ἑαυτὴν?? ‖ scr οὐκ ἐπιδεικνύουσαν? ‖ 4 ἐκλ.]
@@ -1524,15 +1461,13 @@ add R ‖ σώματος R fort recte: cf 13 (at 187, 21) ‖ 21 ἐδύνασ�
 αὐτῶ (i e αὐτὸ) R: cf 24 al ‖ 23—25 ταῦτα δρ.] ὡς λοιπὸν περιέμενε περὶ
 τὴν γύμνωσιν αὐτῆς τὸ διακρούσιον μόνον R ‖ 24 scr καρακάλλιον? δικρόσ-
 σιον?? cf 187, 3 ‖ 25 scr τοιαῦτα? ‖ 26 μον. - καὶ] πλήξας R: cf 188, 11</note>
-
-<pb n="186"/>
+               <pb n="186"/>
 ἐκεῖνον δὲ τὸν νεανίσκον οὐ τύπτει, ἀλλὰ τοῖς ποσὶν αὐτοῦ
 περιειλεῖτο δεινῶς ἀποφυσῶν, καὶ πεσόντος αὐτοῦ ἐπαναβὰς
 ὁ ὄφις ἐπάνω αὐτοῦ ἐκαθέζετο.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="72">
-<p>72 Τῇ δὲ ἐξῆς ἡμέρᾳ παραγίνεται ὁ Ἰωάννης ἅμα τῷ
+         </div>
+         <div n="72" type="chapter">
+            <p>72 Τῇ δὲ ἐξῆς ἡμέρᾳ παραγίνεται ὁ Ἰωάννης ἅμα τῷ
 <lb n="5"/> Ἀνδρονίκῳ καὶ τοῖς ἀδελφοῖς ἐξ ἑωθινῆς εἰς τὸ μνῆμα, τρίτην
 ἡμέραν ἐχούσης τῆς Δρουσιανῆς, ὅπως ἄρτον κλάσωμεν ἐκεῖ.
 καὶ τὰ μὲν πρῶτα ἐρχομένων αὐτῶν αἱ κλεῖς οὐχ εὑρίσκοντο
@@ -1540,10 +1475,9 @@ add R ‖ σώματος R fort recte: cf 13 (at 187, 21) ‖ 21 ἐδύνασ�
 ἀπώλοντο· Δρουσιανὴ γὰρ ἐν τῷ μνήματι οὐκ ἔστιν. ἀλλ᾿ ὅμως
 <lb n="10"/> ἀπέλθωμεν, ὅπως μὴ ῥᾳθυμήσῃς, καὶ αὐτόματοι αἱ θύραι ἀνοιχθήσονται,
 ὡς καὶ ἄλλα πολλὰ παρέσχεν ἡμῖν ὁ κύριος.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="73">
-<p>73 Καὶ γενομένων ἡμῶν ἐν τῷ τόπῳ κελεύσει τοῦ διδασκάλου
+         </div>
+         <div n="73" type="chapter">
+            <p>73 Καὶ γενομένων ἡμῶν ἐν τῷ τόπῳ κελεύσει τοῦ διδασκάλου
 αἱ θύραι ἠνοίχθησαν, καὶ περὶ τὸν τάφον τῆς Δρουσιανῆς
 εἶδόν τινα νεανίσκον εὔμορφον μειδιῶντα· ὃν ἰδὼν
 <lb n="15"/> ὁ Ἰνάννης κράξας ἔφη· Καὶ ὧδε φθάνεις ὑμᾶς ὁ καλός; τίνος
@@ -1551,7 +1485,8 @@ add R ‖ σώματος R fort recte: cf 13 (at 187, 21) ‖ 21 ἐδύνασ�
 ἕνεκεν, ἣν σὺ μέλλεις ἀναστήσειν—παρὰ βραχὺ γὰρ ἤμην εὑρὼν
 αὐτήν — καὶ τὸ πλησίον ἀπονεύσαντος τοῦ τάφου αὐτῆς. Καὶ
 εἰπὼν ταῦτα ὁ καλὸς πρὸς τὸν Ἰωάννην εἰς οὐρανοὺς ἀνῄει
-<note type="marginal">232 Z</note> <lb n="20"/> βλεπόντων πάντων ὑμῶν. ὁ δὲ Ἰωάννης ἐπιστραφεὶς εἰς τὸ
+<note type="marginal">232 Z</note>
+               <lb n="20"/> βλεπόντων πάντων ὑμῶν. ὁ δὲ Ἰωάννης ἐπιστραφεὶς εἰς τὸ
 ἕτερον μέρος τοῦ μνήματος ὁρᾷ νεανίσκον πρῶτον τῶν Ἐφεσίων
 Καλλίμαχον —τοῦτο γὰρ ἐκαλεῖτο— καὶ ἐπικαθεύδοντα αὐτῷ
 ὄφιν παμμεγέθη, καὶ τὸν ἐπίτροπον Ἀνδρονίκου, Φουρτουνᾶτον
@@ -1559,7 +1494,7 @@ add R ‖ σώματος R fort recte: cf 13 (at 187, 21) ‖ 21 ἐδύνασ�
 <lb n="25"/> λέγων πρὸς τοὺς ἀδελφούς· Τί βούλεται τὸ τοιοῦτον θέαμα;
 ἢ διὰ τί μοι ὁ κύριος οὐκ ἐνεφάνισε τὰ ὧδε πραχθέντα,
 μηδέποτέ μου ἀμελήσαντος;</p>
-<note type="footnote">1 οὐ τ. ἀλλὰ om R ‖ 2 ἐπιπεσόντος R ‖ 3 ἐκ. ἐπ. α. R ‖ 4—5 παρ. -
+            <note type="footnote">1 οὐ τ. ἀλλὰ om R ‖ 2 ἐπιπεσόντος R ‖ 3 ἐκ. ἐπ. α. R ‖ 4—5 παρ. -
 ἑωθ.] ἕωθεν ἅμα τ. ἀνδ. κ. τ. ἀδ. παρ. M ‖ 6 κλάσωσιν οὐκ εὐρέ-
 θησαν R ‖ 9 Δρ.] μὴ V sener ‖ 10 αὐτόμαται sup scr οι M αὐτομάτως R ‖
 ἀνοιγήσονται R ‖ 11 παρέσχετο R ‖ 12 δ.] ἰνάννου R Iohannis 𝔘: cf 169, 27
@@ -1574,11 +1509,10 @@ matus iacet, qai et honorificabunt propter me deum 𝔘 ‖ scr τοῦ et ἀ�
 om R: del?? καὶ om M ‖ 23 μέγα R ‖ Ἀνδ. om R ‖ 24 λεγ. om R ‖ ἰδ. ἀμφ.
 R ‖ ἠπορ. om R ‖ 25 θέ.] εἶναι add R: cf 165, 27; 194, 12; 17; 24 ‖ 27 μηδ. -
 ἀμελ. om R ‖ scr ἀμελήσας? item Zahn qui numquam me dedignari solet </note>
-</div>
-
-<div type="textpart" subtype="chapter" n="74">
-<pb n="187"/>
-<p>74 Καὶ ὁ Ἀνδρόνικος ἰδὼν ἐκείνους νεκροὺς ἀναπηδήσας
+         </div>
+         <div n="74" type="chapter">
+            <pb n="187"/>
+            <p>74 Καὶ ὁ Ἀνδρόνικος ἰδὼν ἐκείνους νεκροὺς ἀναπηδήσας
 ἦλθεν ἐπὶ τὸν Δρουσιανῆς τάφον· καὶ ἰδὼν αὐτὴν ἐν μόνῳ
 τῷ δικρουσίῳ ἔφη τῷ Ἰωάννῃ· Συνεῖδον τὸ γεγονὸς μακάριε
 δοῦλε τοῦ θεοῦ Ἰωάννη· ὁ Καλλίμαχος οὗτος ἤρα τῆς ἀδελφῆς
@@ -1597,16 +1531,16 @@ R ‖ ἠπορ. om R ‖ 25 θέ.] εἶναι add R: cf 165, 27; 194, 12; 17;
 αὐτὸν ἐκελεύθης ἀναστῆσαι· περὶ γὰρ τοῦ ἑτέρου οἶδα ὅτι
 ἀνάξιός ἐστιν ἡ ἐκείνου σωτηρία. ἀλλ᾿ ἕν σε τοῦτο παρακαλῶ·
 ἀνέγειρον πρῶτον τὸν Καλλίμαχον, καὶ οὗτος ἡμῖν ὁμολογήσει
-τὸ γεγονός.</p> <lb n="20"/>
-</div>
-
-<div type="textpart" subtype="chapter" n="75">
-<p>75 Ὁ δὲ Ἰωάννης ἀπιδὼν τῷ πτώματι καὶ εἰπὼν τῷ
+τὸ γεγονός.</p>
+            <lb n="20"/>
+         </div>
+         <div n="75" type="chapter">
+            <p>75 Ὁ δὲ Ἰωάννης ἀπιδὼν τῷ πτώματι καὶ εἰπὼν τῷ
 ἰοβόλῳ ἑρπετῷ Ἀπόστηθι τοῦ μέλλοντος Ἰησοῦ Χριστῷ δουλεύειν,
 ἀναστὰς ἐπηύξατο οὕτως· Ὁ θεὸς οὗ τὸ ὄνομα δοξάζεται
 ὑφʼ ἡμῶν ἀξίως· ὁ θεὸς ὁ πᾶσαν ἐνέργειαν κακωτικὴν
 δαμάζων· ὁ θεὸς οὗ τὸ θέλημα τελειοῦται, ὁ ὑπακούων ἡμῶν <lb n="25"/>
-<note type="footnote">1 ἰδ. ἐκ. ν. om R ‖ ν.] γυμνοὺς sup scr νεκροὺς M ‖ 2 τάρ. δρ R ‖
+               <note type="footnote">1 ἰδ. ἐκ. ν. om R ‖ ν.] γυμνοὺς sup scr νεκροὺς M ‖ 2 τάρ. δρ R ‖
 3 διακρουσίω R δικροσσίῳ Zahn fort recte (cf 210, 11) sed cf 190, 27 ‖ 3—4 συν. -
 Ἰω. om M intellego qaid factum sit sancte et beate lohannes 𝔘 ‖ 5 αὐτῆ
 R  ‖ 6 μου om R ‖ τούτω R ‖ χρήματος ἱκανοῦ R: cf 185, 11 ‖ 7 ἴσως V senero
@@ -1624,21 +1558,21 @@ R: cf 189, 6 ‖ γὰρ om R ‖ 17 αὐτὸς ἐκέλευσεν ἀνασ�
 22 ἰησοῦν χριστὸν R ‖ δουλ.] καὶ add R ‖ 23 οὕτως om M: cf 206, 6; 207, 7
 210, 12 ‖ 23—25 ὁ - δαμ. om R ‖ 25 ὁ alt om M ‖ scr ἐπακούων?? cf 197
 16; 18; 99, 11; 121, 23</note>
-
-<pb n="188"/>
+               <pb n="188"/>
 πάντοτε· καὶ νῦν τελειούσθω σου ἡ δωρεὰ ἐπὶ τῷ νεανίσκῳ
 τούτῳ· καὶ εἴ τις διʼ αὐτοῦ οἰκονομία γίγνοιτο, ταύτην ἐγηγερμένου
 αὐτοῦ ἐμφάνισον ἡμῖν. Καὶ εὐθέως ὁ νεανίσκος
 ἀναστὰς ὅλην τὴν ὥραν ἡσύχαζεν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="76">
-<lb n="5"/> <p>76 Ὡς δὲ ἐν τῷ ἑαυτοῦ λογισμῷ ἐγένετο, ἐπύθετο αὐτοῦ
+         </div>
+         <div n="76" type="chapter">
+            <lb n="5"/>
+            <p>76 Ὡς δὲ ἐν τῷ ἑαυτοῦ λογισμῷ ἐγένετο, ἐπύθετο αὐτοῦ
 ὁ Ἰωάννης τὴν ἐν τῷ μνημείῳ εἴσοδον τί ἐβούλετο· καὶ μαθὼν
 παῤ αὐτοῦ ἅπερ ὁ Ἀνδρόνικος εἰρήκει αὐτῷ, ὡς δῆθεν ἐρῶντος
 αὐτοῦ Δρουσιανῆς, ἐπύθετο αὐτοῦ ὁ Ἰωάννης πάλιν εἰ
 τοῦ μιαροῦ ἔσχε τέλους, ἐνυβρίσαι λειψάνου σεμνότητος γέμοντι·
-<note type="marginal">234 Z</note> <lb n="10"/> ὃ δὲ ἀπεκρίνατο αὐτῷ· Πῶς γὰρ | ἠδυνάμην τοῦτο διαπράξασθαι;
+<note type="marginal">234 Z</note>
+               <lb n="10"/> ὃ δὲ ἀπεκρίνατο αὐτῷ· Πῶς γὰρ | ἠδυνάμην τοῦτο διαπράξασθαι;
 ὅπου τὸ δεινὸν τοῦτο ζῷον τὸν μὲν Φουρτουνᾶτον μονόπληγα
 ἔβαλεν ὁρῶντος ἐμοῦ, καὶ εἰκότως, αὐτοῦ μοι τὴν τοσαύτην
 μανίαν παραθαρρύνοντος ἤδη τῆς ἀκαίρου ἐκείνης
@@ -1672,8 +1606,7 @@ cf 185, 19 ‖ 20 μου om R ‖ ὡς ὁρᾷς om R ‖ 20—21 πάλ. - 
 rans me ad impiam facinus 𝔘 ‖ 22 αὐτῆ R ‖ 23 ἀπεπήδησαν R ‖ τὴν ὄψιν
 R ‖ ὅς M: cf 185, 12; 189, 10 ‖ 23—24 εἰς - λέγ.] εἴρηκέ μοι M in me ueniens
 uocem dedit 𝔘  ‖ 24 ἀπόθανον (cf 164, 23; 189, 9) et add οὖν R</note>
-
-<pb n="189"/>
+               <pb n="189"/>
 ᾔδειν δοῦλε τοῦ θεοῦ· ὅτι δὲ σοῦ ὀφθέντος ἐνθάδε γνωρίζω
 ἄγγελον αὐτὸν εἶναι θεοῦ εὖ οἶδα· τοῦτο δὲ ἀληθῶς ἐπίσταμαι
 ὅτι ἀληθὴς θεὸς ὑπὸ σοῦ καταγγέλλεται καὶ τοῦτο πέπεισμαι.
@@ -1687,10 +1620,9 @@ uocem dedit 𝔘  ‖ 24 ἀπόθανον (cf 164, 23; 189, 9) et add οὖν
 ὁ ἄπιστος, ὁ ἄτακτος, ὁ ἄθεος· ἐγύγερμαι δὲ ὑπὸ σοῦ ὁ μέλλων
 πιστός, θεοσεβής, ὁ ἀληθείας γνωρίζων, ὃν παρακαλῶ
 ὑπὸ σοῦ γνωρισθῆναί μοι.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="77">
-<p>77 Καὶ ὁ Ἰωάννης ἐν εὐφρασίᾳ πολλῇ ληφθεὶς καὶ καταμαθὼν
+         </div>
+         <div n="77" type="chapter">
+            <p>77 Καὶ ὁ Ἰωάννης ἐν εὐφρασίᾳ πολλῇ ληφθεὶς καὶ καταμαθὼν
 τὴν ὅλην θεωρίαν τῆς σωτηρίας τοῦ ἀνθρώπου <lb n="15"/>
 εἶπεν· Ὢ τί κρατεῖς κύριε Ἰησοῦ Χριστὲ οὐκ οἶδα, ἠπορημένος
 ἐπὶ τῇ πολλῇ σου εὐσπλαγχνίᾳ καὶ ἀπείρῳ μακροθυμίᾳ· ὢ
@@ -1704,7 +1636,7 @@ uocem dedit 𝔘  ‖ 24 ἀπόθανον (cf 164, 23; 189, 9) et add οὖν
 μακροθυμίαν ἅγιε Ἰησοῦ· ὅτι σὺ μόνος θεὸς καὶ οὐχὶ ἕτερος· <lb n="25"/>
 ὁ τὸ ἀνεπιβούλευτον κράτος καὶ νῦν καὶ εἰς τοὺς ἅπαντας
 αἰῶνας τῶν αἰώνων· ἀμήν.</p>
-<note type="footnote">1 ἄνθρωπε M: cf 177, 13 et 161, 22; 187, 4 sed quia te uideo hic
+            <note type="footnote">1 ἄνθρωπε M: cf 177, 13 et 161, 22; 187, 4 sed quia te uideo hic
 dei seruum et apparuisti mihi, cognosco et illum angelum dei fuisse 𝔘 ‖
 ὅτι om M ‖ σοῦ δὲ M ‖ scr σὲ ὀφθέντα?? cf 𝔘 ‖ 2 θ. ἄγγ. α. εἶναι R ‖ εὖ
 οἴδα om M: cf 162, 30 ‖ 2—3 τοῦτο - πέπ.] et noui quia uere a te deus
@@ -1717,22 +1649,20 @@ M ‖ 4 κ. σὲ π βέομαί σου M rogo et deprecor 𝔘: fort scr κ. 
 quae ait oportere me mori ut uiuerem 𝔘 ‖ 9 ᾖ] ἡ R ‖ ⟨ἡ⟩ εἰρηκυῖα?
 cf 187, 13 ‖ 12 πιστὸς ⟨εἶναι καὶ εὔτακτος καὶ⟩? ‖ scr ἀλήθειαν et ἣν? ‖
 14—27 καὶ ὁ - ἀμήν om M</note>
-<note type="footnote">R 16 ὦ τί R qaid 𝔘 : scr Ὅ τι?? Τί?? ‖ κρ] agam 𝔘: scr φράσω?? ‖
+            <note type="footnote">R 16 ὦ τί R qaid 𝔘 : scr Ὅ τι?? Τί?? ‖ κρ] agam 𝔘: scr φράσω?? ‖
 21 σώματα ⟨μιαίνοντος τὴν ψυχὴν⟩? ‖ 26 ὁ] scr οὗ?</note>
-</div>
-
-<pb n="190"/>
-<div type="textpart" subtype="chapter" n="78">
-<p>78 Καὶ εἰπὼν ταῦτα ὁ Ἰωάννης προσλαβόμενος τὸν Καλλίμαχον
+         </div>
+         <pb n="190"/>
+         <div n="78" type="chapter">
+            <p>78 Καὶ εἰπὼν ταῦτα ὁ Ἰωάννης προσλαβόμενος τὸν Καλλίμαχον
 ἠσπάζετο λέγων· Δόξα τῷ θεῷ ἡμῶν τέκνον τῷ ἐλεύσαντί
 σε καὶ καταξιώσαντί με δοξάσαι τὴν αὐτοῦ δύναμιν,
 καὶ καταξιώσαντι καὶ σὲ μεθόδῳ τῆς παρὰ σοῦ ἐκείνης σου
 <lb n="5"/> μανίας καὶ μέθης μεταστῆναι, ἐπὶ δὲ τὴν ἰδίαν ἀνάπαυσιν καὶ
 ἀνακαίνισιν βίου καλέσαντι.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="79">
-<p>Ὁ δὲ Ἀνδρόνικος θεασάμενος τὸν Καλλίμαχον νεκρὸν
+         </div>
+         <div n="79" type="chapter">
+            <p>Ὁ δὲ Ἀνδρόνικος θεασάμενος τὸν Καλλίμαχον νεκρὸν
 ἐγηγερμένον ἐδέετο τοῦ Ἰωάννου ἅμα τοῖς ἀδελφοῖς ὅπως καὶ
 τὴν Δρουσιανὴν ἀνεγείρῃ λέγων· Ἰωάννη, ἀναστήτω καὶ τὸ
 <lb n="10"/> βραχὺ κατορθωσάτω ὅπερ ἀπεκόμισεν λυπουμένη Δρουσιανὴ
@@ -1750,10 +1680,10 @@ cf 187, 13 ‖ 12 πιστὸς ⟨εἶναι καὶ εὔτακτος καὶ
 δυνατόν, καὶ ἡ Δρουσιανὴ ἴδῃ ὅπως ἡ ἀναπεπαυμένη, τοῦ νεανίσκου
 ἐπιστρέψαντος ἐμπόδιον μεθ᾿ ἑαυτῦς μηδὲ τὸ βραχύτατον
 ἐπικομίζουσα ἐπιγενομένη πρὸς σέ.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="80">
-<lb n="25"/> <p>80 Καὶ εἰπὼν ταῦτα ὁ Ἰωάννης τῆ Δρουσιανῇ ἔφη·
+         </div>
+         <div n="80" type="chapter">
+            <lb n="25"/>
+            <p>80 Καὶ εἰπὼν ταῦτα ὁ Ἰωάννης τῆ Δρουσιανῇ ἔφη·
 Δρουσιανὴ ἀνάστηθι, Ἣ δὲ ἀναστᾶσα ἀπέβη τοῦ τάφου·
 καὶ ἰδοῦσα αὐτὴν ἐν διακρουσίῳ μόνον περὶ τὸ πρᾶγμα διηπόρει·
 καὶ μαθοῦσα ἀκριβῶς πάντα παρὰ τοῦ Ἀνδρονίκου,
@@ -1771,14 +1701,12 @@ plura habet 𝔘 ‖ 3 καὶ κ. - δύν. om M ‖ 4—5 καταξ. - μετ
 om R: del? ‖ 27 καὶ ἰδ. διηπ. om M ‖ scr ἑαυτήν? ‖ scr δικροσσίῳ?
 cf 187, 3 ‖ 28—20 πάντα - ὄψιν] τὰ ἐπʼ αὐτῆ γεγενημένα M ‖ 20—191,2 καὶ τ. -
 ὁμ. δοξ.] μετὰ πάντων καὶ αὐτὴ ἐδόξασε τὸν θεὸν τὸν διὰ τοῦ θεράποντος</note>
-
-<pb n="191"/>
+               <pb n="191"/>
 φωνῆς καὶ δακρύων δοξάζοντος τὸν θεόν, ἠγαλλιᾶτο καὶ αὐτὴ
 ὁμοίως δοξάζουσα. |</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="81">
-<p>81 Ὡς δὲ ἐνεδύσατο, ἐπιστραφεῖσα εἶδε τὸν Φουρτουνᾶτον <note type="marginal">235 Z</note>
+         </div>
+         <div n="81" type="chapter">
+            <p>81 Ὡς δὲ ἐνεδύσατο, ἐπιστραφεῖσα εἶδε τὸν Φουρτουνᾶτον <note type="marginal">235 Z</note>
 κείμενον· λέγει πρὸς Ἰωάννην· Πάτερ καὶ οὗτος ἀναστήτω
 καὶ εἰ μάλιστα προδότης μου ἐπειράθη γενέσθα. Ὁ δὲ Καλλίμαχος <lb n="5"/>
 ἀκούσας ταῦτα αὐτῆς εἰρηκυίας ἔφη· Μή, παρακαλῶ
@@ -1798,10 +1726,9 @@ cf 187, 3 ‖ 28—20 πάντα - ὄψιν] τὰ ἐπʼ αὐτῆ γεγε�
 καὶ μὴ μνησικακήσας ἐπὶ τοῖς πρώτοις δοῦλον ἑαυτοῦ <lb n="20"/>
 παρέστησαν ἐπιτηροῦντα αὐτοῦ τῷ ἐλέει. ὅθεν εἰ μὴ ἐπιτρέπεις
 τὸν Φουρτουνᾶτον ἀναστῆνα, Δρουσιανῆς χρεία.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="82">
-<p>Ἣ δὲ μὴ μελλήσασα ἀγαλλιάσει πνεύματος καὶ ψυχῆς
+         </div>
+         <div n="82" type="chapter">
+            <p>Ἣ δὲ μὴ μελλήσασα ἀγαλλιάσει πνεύματος καὶ ψυχῆς
 προσελθοῦσα τῷ Φουρτουνάτου πτώματι εἶπεν· Ὁ θεὸς τῶν
 αἰώνων Ἰησοῦ Χριστέ, ὁ θεὸς τῆς ἀληθείας, ὁ παρασχόμενός <lb n="25"/>
 μοι ἰδεῖν τέρατα καὶ σημεῖα, ὁ χαρισάμενός μοι τοῦ ὀνόματός
@@ -1813,26 +1740,24 @@ cf 187, 3 ‖ 28—20 πάντα - ὄψιν] τὰ ἐπʼ αὐτῆ γεγε�
 ὁ τελευτῆσάν με ὑπὸ Ἰωάννου ἀναστήσας τοῦ σοῦ θεράποντος·
 <note type="footnote">( cf 191, 32) αὐτοῦ ἰωάννου ποιοῦντα ἔνδοξά τε καὶ ἐξαίσια ὧν οὐκ ἔστιν
 εἰκασμός M</note>
-<note type="footnote">1 αὕτη R ‖ 3—208, 10 ὡς εἰκον. om M</note>
-<note type="footnote">R 4 ⟨καὶ⟩ λέγει? ‖ scr εἰ καὶ? cf 192. 5 ‖ scr ἀκήκοεν (cf 186, 16)??
+               <note type="footnote">1 αὕτη R ‖ 3—208, 10 ὡς εἰκον. om M</note>
+               <note type="footnote">R 4 ⟨καὶ⟩ λέγει? ‖ scr εἰ καὶ? cf 192. 5 ‖ scr ἀκήκοεν (cf 186, 16)??
 cf 188, 23? ‖ 8 ἰδὼν ⟨ἐγηγερμένην⟩?? cf 192, 11 ‖ 10 dignum morte iudicauit
 quem dignam resurrectione non prodidit 𝔘 ‖ ἐπέσχ.] scr ἠπίστατο?? cf
 𝔘 ‖ scr καλῶς (i e merito)?? ‖ 13 scr ἡμῶν? ‖ 16 scr ἐπεξῆλθεν ‖ scr
 ἐσπλαγχνίσθη? ‖ 20 del καὶ? ‖ 21 scr παρέστησεν? κατέστησεν? ‖ scr ἐπιτη-
 ροῦντι?? ‖ εἰ ⟨ἐμοὶ⟩? si mihi 𝔘 ‖ 22 scr ἀναστῆσαι? (ut resurgat 𝔘) cf 187, 17
 192, 5 ‖ 23 μελήσασα R ‖⟨ἐν⟩ ἀγαλλιάσει? ‖ 32 scr τελευτήσασάν?</note>
-
-<pb n="192"/>
+               <pb n="192"/>
 ὁ καὶ ἐγηγερμένην με δείξας τὸν σκανδαλισθέντα ἀσκανδάλιστον·
 ὁ ἀναπαύσας με ἐπὶ σὲ τελείως καὶ κουφίσας τῆς
 ἀποκρύφου μανίας· ὃν ἐφίλησα καὶ ἠγάπησα· δέομαί σου
 Χριστὲ μὴ παραπέμψῃ τὴν σὴν Δρουσιανὴν αἰτουμένην σε
 <lb n="5"/> τὸν Φουρτουνᾶτον ἀναστῆναι, εἰ καὶ μάλιστα προδότης μου
 ἐπειράθη γενέσθαι.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="83">
-<p>83 Καὶ λαβομένη τῆς χειρὸς τοῦ τεθνεῶτος ἔφη· Ἀνάστα
+         </div>
+         <div n="83" type="chapter">
+            <p>83 Καὶ λαβομένη τῆς χειρὸς τοῦ τεθνεῶτος ἔφη· Ἀνάστα
 Φουρτουνᾶτε ἐν τῷ ὀνόματι τοῦ κυρίου ἡμῶν Ἰησοῦ Χριστοῦ.
 Ὁ δὲ Φουρτουνᾶτος ἀναστὰς καὶ ἰδὼν τὸν Ἰωάννην ἐν τῷ
 <lb n="10"/> μνήματι καὶ τὸν Ἀνδρόνικον καὶ τὴν Δρουσιανὴν ἐκ νεκρῶν
@@ -1841,10 +1766,9 @@ quem dignam resurrectione non prodidit 𝔘 ‖ ἐπέσχ.] scr ἠπίστα
 δεινῶν ἀνθρώπων τούτων αἱ δυνάμεις ἐχώρησαν· οὐκ ἐβουλόμην
 ἐγηγέρθαι ἀλλὰ μᾶλλον τεθνάναι, ὅπως αὐτοὺς μὴ ὁρῶ.
 <lb n="15"/> Καὶ ταῦτα εἰπκὼν φυγὼν ἐξῆλθε τοῦ μνήματος.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="84">
-<p>84 Καὶ ὁ Ἰωάννης ἰθὼν τὴν ἀμετάθετον τοῦ Φουρτουνάτου
+         </div>
+         <div n="84" type="chapter">
+            <p>84 Καὶ ὁ Ἰωάννης ἰθὼν τὴν ἀμετάθετον τοῦ Φουρτουνάτου
 ψυχὴν εἶπεν· Ὢ φύσις μὴ καταβαλλομένη πρὸς τὸ
 κρεῖττον· ὢ πηγὴ ψυχῆς μενούσης ἐν ῥύπῳ· ὢ οὐσία φθορᾶς
 σκότους πλήρης· ὢ θάνατε ἐν τοῖς σοῖς ὀρχούμενε· ὢ δένδρον
@@ -1864,17 +1788,16 @@ quem dignam resurrectione non prodidit 𝔘 ‖ ἐπέσχ.] scr ἠπίστα
 καὶ θεοῦ ἐχθρὲ Σατανᾶ καταργήσει σε Ἰησοῦς Χριστὸς
 ὁ θεὸς ἡμῶν καὶ τῶν ὁμοίων σου τῶν ἐχόντων σου τὸν
 <lb n="35"/> τρόπον.</p>
-<note type="footnote">1 scr ἐγηγερμέηῃ μοι? ‖ scr παραπέμψῃς? ‖ 5 scr ἀναστῆσαι ?? (iube
+            <note type="footnote">1 scr ἐγηγερμέηῃ μοι? ‖ scr παραπέμψῃς? ‖ 5 scr ἀναστῆσαι ?? (iube
 resurgere 𝔘) cf 191, 22 ‖ 11 scr πεπιστευκότα? credidisse 𝔘 ‖ 17—193,12 multa
 om multa de suo add 𝔘 ‖ 17 scr μεταβαλλομένη?? ‖ 20 scr ἄνθ. φέρον? ‖
 21 γείτων R ‖ 24 ἡ ὁδός] ὁ καρπός exspectes ‖ 27 ἀπωλ.] scr ἀσχολίας?? ‖
 28 scr ἀναπαύσεως?? ‖ 31 scr κηδείας?? ‖ 33 σε del? ‖ 34 καὶ ⟨κύριος⟩ ??
 καὶ ⟨κριτὴς⟩?</note>
-</div>
-
-<div type="textpart" subtype="chapter" n="85">
-<pb n="193"/>
-<p>85 Καὶ ταῦτα εἰπὼν ὁ Ἰωάννης ἐπευξάμενος καὶ λαβὼν
+         </div>
+         <div n="85" type="chapter">
+            <pb n="193"/>
+            <p>85 Καὶ ταῦτα εἰπὼν ὁ Ἰωάννης ἐπευξάμενος καὶ λαβὼν
 ἄρτον ἐκόμισεν εἰς τὸ μνῆμα κλάσαι· καὶ εἶπε· Δοξάζομέν σου
 τὸ ὄνομα τὸ ἐπιστρέφον ἡμᾶς ἐκ τῆς πλάνης καὶ ἀνηλεοῦς
 ἀπάτης· δοξάζομέν σε τὸν παῤ ὀφθαλμοῖς δείξαντα ἡμῖν ἃ
@@ -1886,10 +1809,9 @@ om multa de suo add 𝔘 ‖ 17 scr μεταβαλλομένη?? ‖ 20 scr ἄ
 ἡμῖν δεδωκότι ταύτην ὅτι σὺ μόνος καὶ νῦν καὶ ἀεί· <lb n="10"/>
 οἱ σοὶ δοῦλοι εὐχαριστοῦμέν σοι μετὰ προφάσεως συλλεγόμενοι
 καὶ ἀναλεγόμενοι ἅγιε.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="86">
-<p>86 Καὶ εὐξάμενος οὕτως καὶ δοξάσας ἐξῄει τοῦ μνήματος,
+         </div>
+         <div n="86" type="chapter">
+            <p>86 Καὶ εὐξάμενος οὕτως καὶ δοξάσας ἐξῄει τοῦ μνήματος,
 κοινωνήσας τοῖς ἀδελφοῖς πᾶσι τῆς τοῦ κυρίου εὐχαριστίας·
 καὶ γενόμενος ἐν τοῖς Ἀνδρονίκου ἔλεγε τοῖς ἀδελφοῖς· <lb n="15"/>
 Ἀδεδφοί, πνεῦμά τι ἐν ἐμοὶ ἐμαντεύσατο τὸν Φουρτουνᾶτον
@@ -1899,30 +1821,28 @@ om multa de suo add 𝔘 ‖ 17 scr μεταβαλλομένη?? ‖ 20 scr ἄ
 τὴν μελανίαν νεμομένην καὶ ἁψαμένης τῆς καρδίας αὐτοῦ· <lb n="20"/>
 καὶ ἐλθὼν ἀνήγγειλε τῷ Ἰωάννῃ τρίωρον αὐτὸν τεθνάναι.
 καὶ εἶπεν ὁ Ἰωάννης· Ἀπέχει τὸ τέκνον σου διάβολε.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="87">
-<p>87 (1 Iames) Ἐξήτασαν οὖν οἱ παρόντες τὴν αἰτίαν, καὶ <note type="marginal">2I</note>
+         </div>
+         <div n="87" type="chapter">
+            <p>87 (1 Iames) Ἐξήτασαν οὖν οἱ παρόντες τὴν αἰτίαν, καὶ <note type="marginal">2I</note>
 μάλιστα ἠπόρουν εἰρηκυίας τῆς Δρουσίνης ὅτι Μοι ὁ κύριος
 ὡς Ἰωάννῃ ὤφθη ἐν τῷ μνήματι καὶ ὡς νεανίσκος. Ἠπορημένων <lb n="25"/>
 οὖν αὐτῶν καὶ τρόπον τινὰ μηδέπω ἐστηριγμένων τῇ
 πίστει βεβαίως φέρων ὁ Ἰωάννης εἶπεν·</p>
-<note type="footnote">5 scr ποικίλως φανείσῃ? ‖ ὄνομα· ⟨εὐχαριστοῦμέν σοιρ⟩? ‖ 7 scr σοι? ‖
+            <note type="footnote">5 scr ποικίλως φανείσῃ? ‖ ὄνομα· ⟨εὐχαριστοῦμέν σοιρ⟩? ‖ 7 scr σοι? ‖
 πεπείσμεθά ⟨σου τὴν χάριν⟩? ‖ 8 scr σοι? χρ. corruptum?? ‖ 9 del
 φύσιν? ‖ 10 ταύτην ⟨πίστιν⟩? ‖ 11 et 12 προφ. et ἀναλ. num sana? ‖ 17 scr
 μέλλοντα? ‖ 19 scr εὗρεν? ‖ 20 scr ἁψαμένην? ‖ 22 scr Ἀπέχεις? habes 𝔘 ‖
 διάβολε] sequuntur 203, 8 συνῆν οὖν cet R</note>
-<note type="footnote">C 23 διήγησις θαυμαστῆ περὶ τὰς πράξεις καὶ ὁπτασίας ἢν ίδεν ὁ
+            <note type="footnote">C 23 διήγησις θαυμαστῆ περὶ τὰς πράξεις καὶ ὁπτασίας ἢν ίδεν ὁ
 ἀγιος ϊῶάννης ὁ θεὁλόγος παρὰ τοῦ κυρίου ἡμῶν ἰησοῦ χριστοῦ πῶς
 ἐφάνει ἀπαρχῆς πέτρον καὶ ϊάκοβον καὶ ὅπου διἡγίται τοῦ σταυροῦ τὸ
 μυστήριον εὐλόγησον δέσποτα inscr C ‖ 24 scr Δρουσιανῆς? item Iames:
 cf 182, 20 ‖ 25 scr Ἰνάννης: item Iames ‖ 27 βεβ.] scr βαρέως? βεβ. defendit
 Hilgenfeld ‖ φέρειν Imaes</note>
-</div>
-
-<div type="textpart" subtype="chapter" n="88">
-<pb n="194"/>
-<p>88 Ἄνδρες ἀδελφοί, οὐδὲν ξένον πεπόνθατε οὐδὲ παράδοξον
+         </div>
+         <div n="88" type="chapter">
+            <pb n="194"/>
+            <p>88 Ἄνδρες ἀδελφοί, οὐδὲν ξένον πεπόνθατε οὐδὲ παράδοξον
 περὶ τῆς εἰς τὸν ἐκδοχῆς, ὅπου γε καὶ ὑμεῖς, οὓς ἐξελέξατο
 ἑαυτῷ ἀποστόλους, πολλὰ ἐπεράσθησαν· ἐγὼ μὲν ὑαῖν
 προσομιλῶν οὔτε γράψαι χωρῶ ἅ τε εἶθον ἅ τε ἤκουσα. καὶ
@@ -1940,10 +1860,9 @@ Hilgenfeld ‖ φέρειν Imaes</note>
 ἄνδρα εὔμορφον καλὸν ἱλαροπρόσωπον; Ὃ δέ μοι εἶπεν· Τούτου
 οὐχ ὁρῶ ἀδελφέ· ἀλλ᾿ ἐξέλθωμε καὶ ὀψόμεθα τὸ τί
 βούλεται.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="89">
-<p>89 Καὶ οὕτως σιγῇ τὸ πλοῖον ἀγαγόντες εἴδομεν καὶ
+         </div>
+         <div n="89" type="chapter">
+            <p>89 Καὶ οὕτως σιγῇ τὸ πλοῖον ἀγαγόντες εἴδομεν καὶ
 <lb n="20"/> αὐτὸν ἅμα ὑμῖν βοηθοῦντα ὅπως τὸ πλοῖον ἑδράσωμεν. ὡς
 δὲ ἀπέστημεν τοῦ τόπου αὐτῷ βουληθέντες ὅπεσθαι, πάλιν
 ὤφθη ἐμοὶ ὑπόψιλον ἔχων, τὸ δὲ γένειον δασὶν καταγόμενον,
@@ -1954,7 +1873,7 @@ Hilgenfeld ‖ φέρειν Imaes</note>
 γὰρ αὐτὸν κατʼ ἰδίαν ὁρᾶν, καὶ οὐδεπώποτε εἶθον τοὺς ὀφθαλμοὺς
 αὐτοῦ ἐπονεύοντας, ἀλλὰ μόνον ἀνεῳγότας. πολλάκις
 <note type="footnote">4 cf Io 1, 1, 1 ‖ 8 cf Marc 1, 16; 17 ‖ 9 cf Marc 1, 19 (Io 1, 37)</note>
-<note type="footnote">2 τὸν ⟨κύριον⟩? recepit Iames ‖ 3 scr ἐπειράσθημεν? item Iames ‖ 4 πρ.]
+               <note type="footnote">2 τὸν ⟨κύριον⟩? recepit Iames ‖ 3 scr ἐπειράσθημεν? item Iames ‖ 4 πρ.]
 οὔτε προσομιλεῖν Iames ⟨οὔτε εἰπεῖν⟩ οὔτε? ‖ 5 μὴ] μὲν Iames recte ut
 uid ‖ 6 scr ἐκείνων? ἐκεῖνα Iames ‖ 7 αὐτῶν C corr Iamex ‖ 11 ⟨ἀκούσας⟩
 εἶπεν? ‖ ἰῶ΄ C ‖ ⟨τὸ⟩ ἐπὶ? item Iames ‖ 15 οὐ σὺ] scr ὄψιν?? φάσμα???
@@ -1966,8 +1885,7 @@ item Iames ‖ 23 ἀρχιγένιος corr ex ἀρχιγένιον(?) C: scr 
 ὑπ. μὲν] ἠποροῦμεν Iames recte ‖ 24 ὅ τι] τὸ τί??? cf 17 ‖ 25 ἠπορ.]
 σφοδρότερον addend suspicatur Iames ‖ 26 scr τόδε? recepit Iames ‖ 28 ἐπ-
 νεύοντας Iames: scr ἐπιμύοντας uel ἀπομύοντας?</note>
-
-<pb n="195"/>
+               <pb n="195"/>
 δέ μοι καὶ μικρὸς ἄνθρωπος ἐνφαίνεται δύσμορφος καὶ τὸ
 πᾶν εἰς οὐρανὸν ἀποβλέπων. εἶχεν δὲ καὶ ἕτερον θαυμαστόν·
 ἀνακείμενον ἐμὲ ἐπὶ τὰ ἴδια στήθη ἐδέχεται, κἀγὼ συνεῖχον
@@ -1975,10 +1893,9 @@ item Iames ‖ 23 ἀρχιγένιος corr ex ἀρχιγένιον(?) C: scr 
 ἐψηλαφᾶτο, ποτὲ δὲ σκληραὶ ὥσπερ πέτραις ὅμοια, ὡς διαπορεῖν <lb n="5"/>
 με ἐν ἐμαυτῷ καὶ λέγει· Τί ἐστι τοῦτο, οὗτός μοι.
 Καὶ ἐννοοῦντός μου ταῦτα αὐτὸς <gap reason="omitted"/>|</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="90">
-<p>90 (3) ἄλλοτε δὲ ποτε παραλαμβάνει με, Ἰάκωβον καὶ <note type="marginal">6 I</note>
+         </div>
+         <div n="90" type="chapter">
+            <p>90 (3) ἄλλοτε δὲ ποτε παραλαμβάνει με, Ἰάκωβον καὶ <note type="marginal">6 I</note>
 Πέτερον εἰς τὸ ὄρος ὅπου ἦν αὐτῷ ἔθος εὔχεσθαι, καὶ εἴδομεν
 αὐτῷ φῶς τοιοῦτον ὁποῖον οὐκ ἔστιν δυνατὸν ἀνθρώπῳ χρώμενον <lb n="10"/>
 λόγῳ φθαρτῷ ἐκφέρειν οἷον ἦν. (4) πάλιν ὁμοίως ἀνάγει
@@ -1999,7 +1916,7 @@ item Iames ‖ 23 ἀρχιγένιος corr ex ἀρχιγένιον(?) C: scr 
 ἡμέρας τριάκον, ὥστε με εἰπεῖν αὐτῷ· Κύριε, εἰ τὸ
 τίαμα σου παίζοντος τοιαύτην ἀλγηδόνα πεποίηκεν, τί εἰ ῥαπίσμασίν
 <note type="footnote">3 cf Io 13, 23; 25 ‖ 5 cf Io 1, 1, 1 ‖ 23 cf Io 20, 27</note>
-<note type="footnote">1 scr ἐφαίνετο? cf 3; 194, 26 ‖ 1—2 τὸ πᾶν] τότε πάλιν coni Iames: scr τὰ
+               <note type="footnote">1 scr ἐφαίνετο? cf 3; 194, 26 ‖ 1—2 τὸ πᾶν] τότε πάλιν coni Iames: scr τὰ
 πολλὲ??? ‖ 3 ἀνακ.] ον compend breuissimum ut uideatur ἀνακειμὲν C ‖
 scr ἐδέχετο? (cf 1) item Iames ‖ 3—4 scr συβ⟨εχῶς προσ⟩εῖχον αὐτῷ? ‖ 5 scr
 σκληρὰ (ita Iames)? an σκληρ⟨ὰ κ⟩αὶ? ‖ 6 λέγειν Iames recte ‖ οὕτως Iames:
@@ -2012,14 +1929,12 @@ ut uid αὐτὸν del ?? ‖ 17 τούτων Iames recte ut uid scr ⟨τῶν
 Iames ‖ 22 κρατήσαντά Iames recte ‖ 23 ἰῶ΄ C ‖ 25 πεπόνηκα Iames recte
 26 scr τριάκοντα: item Iames ‖ 26—27 τοτί· άμα C: scr τὸ τίλμα? recepit
 Iames</note>
-
-<pb n="196"/>
+               <pb n="196"/>
 μοι ἔλαβεσ; Καὶ αὐτός μοι εἶπεν· Σὸν λοιπὸν εἰ
 τὸν μὴ πειράζειν τὸν ἀπείραστον.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="91">
-<p>91 (5) Ὁ δὲ Πέτρου καὶ Ἰακώβου ἐμοῦ ὁμιλοῦντος τῷ
+         </div>
+         <div n="91" type="chapter">
+            <p>91 (5) Ὁ δὲ Πέτρου καὶ Ἰακώβου ἐμοῦ ὁμιλοῦντος τῷ
 κυρίῳ ἠγανάκτων διανευόμενοί μοι ὅπως παραγένωμαι πρὸς
 <lb n="5"/> αὐτοὺς ἀπολιπὼν μόνῳ τῷ κυρίῳ. καὶ ἐπορεύθην καὶ εἶπόν
 μοι ἀμφότεροι· Ὁ τῷ κυρίῳ προσομιλῶν γένον ἐπὶ τοῦ ὕψους
@@ -2027,10 +1942,9 @@ Iames</note>
 <note type="marginal">8I</note> νοήσας τὴν πολλὴν χάριν αὐτοῦ καὶ πολυπρόσωπον ἑνότητα
 καὶ σοφίαν ἄληκτον εἰς ἡμᾶς ἀποβλέπουσα εἶπον· Μαθήσεσθε
 <lb n="10"/> αὐτῷ τοῦτο αὐτὸν ἐξετάσαντες.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="92">
-<p>92 (6) Πάλιν ποτὲ ἡμῶν πάντων τῶν μαθητῶν αὐτοῦ εἰς
+         </div>
+         <div n="92" type="chapter">
+            <p>92 (6) Πάλιν ποτὲ ἡμῶν πάντων τῶν μαθητῶν αὐτοῦ εἰς
 Γεννησαρὲτ ἐν ἐνὶ καθευβῶν τῶ οἴκῳ ἐγὼ μόνος ἀπὸ τὸ ἱμάτιον
 ἐντυλιξάμενος ἐπετήρουν τί πράσσει, καὶ ἢκουσα τὸ πρῶτον
 λέγοντος αὐτοῦ· Ἰωάννη κάθευδε. Κἀγὼ τότε προσποιησάμενος
@@ -2038,17 +1952,17 @@ Iames</note>
 τινα, οὗ κὐκροασάμην λέγοντος τῷ κυρίῳ μου· Ἰησοῦ, οὓς
 ἐξελέξω ἔτι σοι ἀπιστοῦσιν. Καὶ ὁ κύριός μου εἶπεν αὐτῷ·
 Καλῶς λέγεις· ἄνθρωπος γάρ εἰσιν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="93">
-<note type="marginal">219 Z</note> <p>93 (7) Ἑτέραν δὲ ὑμῖν δόξαν ὁρῶ ἀδελφοὶ· ποτὲ βουλόμενος
+         </div>
+         <div n="93" type="chapter">
+            <note type="marginal">219 Z</note>
+            <p>93 (7) Ἑτέραν δὲ ὑμῖν δόξαν ὁρῶ ἀδελφοὶ· ποτὲ βουλόμενος
 <lb n="20"/> αὐτὸν κρατῆσαι ἐν ὑλώδει καὶ παχεῖ σώματι προσέβαλλον·
 ἄλλοτε δέ ποτε πάλιν ψηλαφῶντός μου αὐτὸν ἄυλον
 ἦν καὶ ἀσώματον τὸ ὑποκείμενον καὶ ὡς μηδὲ ὅλως ὄν. (8) εἰ
 δὲ ὑπό τινός ποτε τῶν φαρισαίων κληθεὶς εἰς κλῆσιν ἐπορεύετο,
 συναπῄειμεν αὐτῷ· καὶ ἑκάστῳ παρετίθετο ἄρτος εἷς ὑπὸ
 <note type="footnote">4 cf Ιo 13, 24 ‖ 21 cf Ιo 1, 1, 1 ‖ 23 cf Luc 7. 36; 14, 1</note>
-<note type="footnote">1 με Iames recte ut uid scr ἔβαλες? ‖ 2 εἰ τὸν] ἔστω Iames: scr
+               <note type="footnote">1 με Iames recte ut uid scr ἔβαλες? ‖ 2 εἰ τὸν] ἔστω Iames: scr
 ἤτω?? ἐστὶν?? τέκνον?? del (dittogr)? ‖ 3 Πέτρος κ. Ἰάκωβος Iames
 recte ut uid ἡγανάκτον sup scr ω C: scr ἠγανάκτουν? item Iames
 5 μόνον τὸν κύριον Iames recte ‖ 6 γένον] scr μένων? μένοντι Iames γενο-
@@ -2066,8 +1980,7 @@ C οὗ καὶ ἠκροασάμην Iames optime ‖ post Ἰ. interpungit C: 
 προσέβαλον C ‖ 21 ποτε om Σ΄: cf 195, 8 ψιλαφοῦντος C ‖ 23 ποτε ὑ.
 τ. Σ e: cf 197, 5 ‖ κληθεὶς om C ‖ κλίσιν C recubitum I ‖ 24 ἑκ. - εἷς]
 ἕκαστος ἡμῶν (cf 197, 2) ἐλάμβανε τακτὸν ἄρτον ἕνα Σ΄</note>
-
-<pb n="197"/>
+               <pb n="197"/>
 τῶν κεκληκότων, ἐν οἷς καὶ αὐτὸς ἐλάμβανεν ἕνα· τὸν δὲ αὐτοῦ
 εὐλογῶν διεμέριζεν ἡμῖν· καὶ ἐκ τοῦ βραχέος ἕκαστος ἐχορτάζετο
 καὶ οἱ ἡμῶν ἄρτοι ὁλόκληροι ἐφυλάσσοντο, ὥστε ἐκπλήττεσθαι
@@ -2077,11 +1990,11 @@ C οὗ καὶ ἠκροασάμην Iames optime ‖ post Ἰ. interpungit C: 
 εἶδον. (10) καὶ ταῦτα ὑμῖν ἔτι ὥσπερ προτροπῆς ἕνεκεν
 ἀδελφοὶ τῆς ἐπʼ αὐτὸν πίστεως ὁμιλῶ· τὰ γὰρ μεγαλεῖα αὐτοῦ
 καὶ θαυμάσια τὸ νῦν σεσιγήσθω, ἄρρητα ὄντα καὶ τάχα οὐ
-δυνάμενα οὔτε λέγεσθαι οὔτε ἀκούεσθαι. |</p> <lb n="10"/>
-</div>
-
-<div type="textpart" subtype="chapter" n="94">
-<p>94 (11) πρὶν δὲ συλληφθῆναι αὐτὸν ὑπὸ τῶν ἀνόμων <note type="marginal">220 Z</note>
+δυνάμενα οὔτε λέγεσθαι οὔτε ἀκούεσθαι. |</p>
+            <lb n="10"/>
+         </div>
+         <div n="94" type="chapter">
+            <p>94 (11) πρὶν δὲ συλληφθῆναι αὐτὸν ὑπὸ τῶν ἀνόμων <note type="marginal">220 Z</note>
 καὶ ὑπὸ ἀνόμου ὄφεως νομοθετουμένων Ἰουδαίων συναγαγὼν
 πάντας ἡμᾶς ἔφη· Πρίν με ἐκείνοις παραδοθῆναι ὑμνήσωμεν
 τὸν πατέρα καὶ οὕτως ἐξέλθωμεν ἐπὶ τὸ προκείμενον. Κελεύσας
@@ -2092,15 +2005,14 @@ C οὗ καὶ ἠκροασάμην Iames optime ‖ post Ἰ. interpungit C: 
 Δόξα σοι λόγε· δόξα σοι χάρις. Ἀμήν. Δόξα σοι τὸ πνεῦμα·
 δόξα σοι ἅγιε· δόξα σου τῇ δόξῃ. Ἀνήν. Ἀὶνοῦμέν σε πάτερ· <lb n="20"/>
 εὐχαριστοῦμέν σοι φῶς ἐν ᾧ σκότος οὐκ οἰκεῖ. Ἀμήν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="95">
-<p>95 Ἐφ᾿ δὲ εὐχαριστοῦμεν λέγω· | σωθῆναι θέλω καὶ <note type="marginal">12 I</note>
+         </div>
+         <div n="95" type="chapter">
+            <p>95 Ἐφ᾿ δὲ εὐχαριστοῦμεν λέγω· | σωθῆναι θέλω καὶ <note type="marginal">12 I</note>
 σῷσαι θέλω. Ἀμήν. Λυθῆναι θέλω καὶ λῦσαι θέλω. Ἀμήν.
 Τρωθῆναι θέλω καὶ τρῶσαι θέλω. Ἀμήν. Γεννᾶσθαι θέλω <note type="marginal">221 Z</note>
 καὶ γεννῶν θέλω. Ἀμήν. Φαγεῖν θέλω καὶ βρωθῆναι θέλω. <lb n="25"/>
-<note type="footnote">2 cf Io 6, 7 Marc 8, 8 ‖ 13 cf Marc 14, 26 ‖ 19 cf Io 1, 1 ‖ 21 cf lo 1, 1, 5</note>
-<note type="footnote">1 τοῦ κεκληκότος C: cf 4 ‖ 2 ἐκ] εἰς C ‖ ἕκ.] ἡμῶν add Σ΄: cf 196, 24 ‖ 3 ἄ.
+               <note type="footnote">2 cf Io 6, 7 Marc 8, 8 ‖ 13 cf Marc 14, 26 ‖ 19 cf Io 1, 1 ‖ 21 cf lo 1, 1, 5</note>
+               <note type="footnote">1 τοῦ κεκληκότος C: cf 4 ‖ 2 ἐκ] εἰς C ‖ ἕκ.] ἡμῶν add Σ΄: cf 196, 24 ‖ 3 ἄ.
 ἡμ. C ‖ 5 ἰδεῖν εἰ ante ἴχνος Σ΄: cf 204, 5 ‖ ἀπὸ - ἑαυτ. om C ‖ 7—8 ὑμ. - τῆς]
 ἡμῖν ἀδ. προτροτροπῆς ένεκα τὴν C ‖ 8 ἀμιλῶ C ‖ 9 θ.] τὰ θ. Σε τὸ νῦν om l ‖
 σεσιγείσθαι C ‖ καὶ τάχα om C ‖ 10 δυνάμεθα C ‖ οὔτε om C ‖ οὔτε] ὄντα C ‖
@@ -2116,8 +2028,7 @@ uolo Augustinus ‖ 23—25 λυθ. - βρωθ. θ. om C ‖ 23 soluere uolo et
 nolo Augustinus bis ‖ 24 τρωθ.] tabefieri τρῶσαι] tabescere facere I ‖
 24—25 γενν. θ. κ. γ. θ. ἀμ. om TXY (add y) e generari uolo Augustinus
 nasci uolo et gignere uolo amen I</note>
-
-<pb n="198"/>
+               <pb n="198"/>
 Ἀμήν. Ἀκούειν θέλω καὶ ἀκούεσθαι θέλω. Ἀμήν. Νοηθῆναι
 θέλω νοῦς ὢν ὅλος. Ἀμήν. Λούσασθαι θέλω καὶ λούειν θέλω.
 Ἀμήν. Ἡ χάρις χορεύει· αὐλῦσαι θέλω· ὀρχήσασθε πάντες.
@@ -2131,10 +2042,10 @@ nasci uolo et gignere uolo amen I</note>
 οὐκ ἔχω καὶ ναοὺς ἔχω. Ἀμήν. Λύχνος εἰμί σοι τῷ βλέποντί με.
 Ἀμήν. Ἔσοπτρόν εἰμί σοι τῷ νοοῦντί με. Ἀμήν. Θύρα εἰμί σοι
 κρούοντί με. Ἀμήν. Ὁδός εἰμί σοι παροδίτῃ.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="96">
-<note type="marginal">14</note> <p>96 ὑπακούω δέ μου τῇ χορείᾳ ἴδε σεαυτὸν ἐν ἐμοὶ λαλοῦνται,
+         </div>
+         <div n="96" type="chapter">
+            <note type="marginal">14</note>
+            <p>96 ὑπακούω δέ μου τῇ χορείᾳ ἴδε σεαυτὸν ἐν ἐμοὶ λαλοῦνται,
 <lb n="15"/> καὶ ἰδὼν ὃ πράσσων τὰ μυστήριά μου σίγα. ὁ χορεύων
 νόει ὃ πράσσω, ὅτι σόν ἐστιν τοῦτο τοῦ ἀνθρώπου πάθος
 ὃ μέλλω πάσχειν· οὐ γὰρ ἐδύνου ὅλως συνιδεῖν ὃ πάσχεις εἰ
@@ -2147,11 +2058,11 @@ nasci uolo et gignere uolo amen I</note>
 αὐτός σε διδάξω. θεός εἰμι σοῦ, οὐ τοῦ προδότου. ῥυθμίζεσθαι
 <note type="footnote">11 cf apoc 21, 23 ‖ 13 cf Io 10, 9; 14, 6 ‖ 18 cf Io 1, 1 1; 1, 4, 14 ‖
 21 et 23 cf Io 13, 7</note>
-<note type="footnote">1 ἀμήν om C ‖ ἀκούεσθαι] ἀκοῦεσ C: cf 8 ‖ 2 ὢν] οὖν C ‖ λούεσθαι
+               <note type="footnote">1 ἀμήν om C ‖ ἀκούεσθαι] ἀκοῦεσ C: cf 8 ‖ 2 ὢν] οὖν C ‖ λούεσθαι
 conicit Τhilo recte ut uid: cf λούειν ἡ om C ‖ cantare uolo et saltate
 cuncti Augustinus plangere uolo tundite uos omnes Augustinus ‖
 4—199,6 ὀγδοὰς - ἀμήν] καὶ μεθʼ ἕτερα Σ΄</note>
-<note type="footnote">C 6 τὸ δὲ ὅλον ᾧ χ. Iames τὸ δὲ ὅλον ἀχόρευτον antea idem ‖ ὅλ. ὦ]
+               <note type="footnote">C 6 τὸ δὲ ὅλον ᾧ χ. Iames τὸ δὲ ὅλον ἀχόρευτον antea idem ‖ ὅλ. ὦ]
 scr ὅλῳ ἄνω? (cf 5) ὅλῳ ΑΩ (coll apoc 1, 8) Hilgenfeld scr φεύγειν ?
 item Iames: cf 2 ‖ 8 ornare uolo et ornari uolo Augustinus  ‖ κοσμεῖσθαι
 Iames recte: cf 1 ‖ 9 ἑνῶσαι Iames recte ‖ 11 lucerna sum tibi ille qui
@@ -2164,18 +2075,16 @@ Augustinus ‖ scr πράσσω: item Iames ‖ 15—16 χ. ν.] χωρέβων
 defendit Hilgenfeld ‖ 20 μὲν] με Iames optime ‖ 21 scr γνώσῃ? item
 Iames εἰμί· ⟨ὃ δέ εἰμι⟩? recepit Iames ‖ 22 σοι C ‖ 23 σύγγ.] σὺ
 γνῶθι Iames fort recte ‖ οΐδας ex ΐδες C</note>
-
-<pb n="199"/>
+               <pb n="199"/>
 θέλω ψυχαῖς ἁγίαις ἐπ᾿ ἐμέ. τὸν λόγον γνῶθι τῆς
 σοφίας. πάλιν ἐμοὶ λέγε· δόξα σοι πάτερ· δόξα σοι λόγε·
 δόξα σοι πνεῦμα ἅγιον. τὸ δὲ ἐμὸν ἡθελήσώμην γνῶναι.
 λόγον ἅπαξ ἔπαιξα πάντα καὶ οὐκ ἐπαισχύνθην ὅλως. ἐγὼ
 ἐσκίρτησα, σὺ δὲ νόει τὸ πᾶν, καὶ νοήσας λέγε· δόξα σοι <lb n="5"/>
 πάτερ. Ἀμήν.|</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="97">
-<p>97 (12) Ταῦτα ἀγαπητοὶ χορεύσας μεθ᾿ ἡμῶν ὁ κύριος <note type="marginal">16 I</note>
+         </div>
+         <div n="97" type="chapter">
+            <p>97 (12) Ταῦτα ἀγαπητοὶ χορεύσας μεθ᾿ ἡμῶν ὁ κύριος <note type="marginal">16 I</note>
 ἐθῆλθεν· καὶ ἡμεῖς ὥσπερ πλανηθέντες ἢ καὶ ἀποκοιμηθέντες <note type="marginal">222 Z</note>
 ἄλλος ἀλλαχόσε πεφεύγειmεν. ἐγὼ μὲν οὖν ἰδὼν αὐτὸν
 πάσχοντα οὐδὲ προσέμεινα αὐτοῦ τῷ πάθε, ἀλλ᾿ ἔφυγον εἰς <lb n="10"/>
@@ -2188,21 +2097,20 @@ Iames εἰμί· ⟨ὃ δέ εἰμι⟩? recepit Iames ‖ 22 σοι C ‖ 23
 ἐγώ σοι ὑπέβαλον ἀνελθεν εἰς τοῦτο τὸ ὄρος ὅπως ἀκούσῃς
 ἃ δεῒ μαθητὴν παρὰ διδασκάλου μανθάνει καὶ ἄνθρωπον
 παρὰ θεοῦ.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="98">
-<p>98 (13) Καὶ εἰπὼν ταῦτα ἔδειξέν μοι σταυρὸν φωτὸς <lb n="20"/>
+         </div>
+         <div n="98" type="chapter">
+            <p>98 (13) Καὶ εἰπὼν ταῦτα ἔδειξέν μοι σταυρὸν φωτὸς <lb n="20"/>
 πεπηγ| μένον καὶ περὶ τὸν σταυρὸν ὄχλον πολύν, μίαν μορφὴν <note type="marginal">223 Z</note>
 μὴ ἔχοντα. καὶ ἐν αὐτῷ ἦν μορφὴ μία καὶ δέα ὁμοία. αὐτὸν
 <note type="footnote">9 cf Marc 14, 50 Io 16, 32 (19, 26 ‖ 12 cf Marc 15, 33 (Io 19, 14) ‖
 15—16 cf Io 19, 34 euang Petri 9; 16 Mare 15, 19; 36 Matth 27, 34</note>
-<note type="footnote">1 ἁγίαις· ἐπ᾿ ἐμοὶ τὸν Iames ⟨ἐλπιζούσαις⟩ ἐπʼ ἐμέ?? cf 189, 8
+               <note type="footnote">1 ἁγίαις· ἐπ᾿ ἐμοὶ τὸν Iames ⟨ἐλπιζούσαις⟩ ἐπʼ ἐμέ?? cf 189, 8
 192, 25; 207, 2 ‖ 2 ⟨σὺν⟩ ἐμοὶ?? (recepit Iames) cf 5 ‖ 3 τὴν δὲ ἐμὴν εἰ
 θέλεις γνώμην γν. inter alia temptabat Zahn ἐμὸν ⟨....⟩? ‖ scr εἰ θέλεις ὃ
 ἤμην?? ‖ 4 uerbo illusi cuncta et non sum Iusus in totum Augustinus
 scr λόγῳ? idem coni Iames ἅπαξ del (dittogr)? scr ἐνέπαιξα ? ‖ scr
 ἐπαίχθην? an ἐνεπαίχθην? ἐπῃσχύνθην Iames fort recte</note>
-<note type="footnote">Σ΄ (= Σ [= TOXYZ e I) C ἀγαπ.] μου add OC: cf 202, 23; 209, 2 ‖
+               <note type="footnote">Σ΄ (= Σ [= TOXYZ e I) C ἀγαπ.] μου add OC: cf 202, 23; 209, 2 ‖
 8 ἢ κ. ἀπ. om C ‖ scr ἀποπτοηθέντες?? ‖ 9 ἀλλαχοῦ CO φεύγημεν C
 ἐπεφεύγειμεν 0 πεφεύγομεν XYZ πεφεύγαμεν Τ e Iames fugimus I: cf 13
 ἐγεγόνει οὖν om TXYZ e ergo l: del? ‖ α. ἰδ. C ‖ εἶδον T εἰδὼν OXYZ
@@ -2216,9 +2124,8 @@ extr om Σ΄: cf Corssen p 127; 128 ‖ 17 εἰς τὸ ὄρ. τοῦτο ἀ�
 21—22 μίαν - ὁμ.] κ. ἐν αὐτῷ ἦν μ. μία κ. ἰδ. μία· καὶ ἐν τῷ σταυρῷ ἄλλον
 τινὰ ὄχλον μίαν μ. μὴ ἔχ. coll 201, 1 - 3 Iames acute: sed cf Hilgenfeld ‖
 22 ἐνεαὐτῶ C ‖ μορφῆν C ‖ ὁμοία mirabatur Zahn: μία C</note>
-
-<pb n="200"/>
-<note type="marginal">18 I</note> δὲ τὸν κόριον ἐπάνω τοῦ σταυροῦ ἑώρων | σχῆμα μὴ ἔχοντα
+               <pb n="200"/>
+               <note type="marginal">18 I</note> δὲ τὸν κόριον ἐπάνω τοῦ σταυροῦ ἑώρων | σχῆμα μὴ ἔχοντα
 ἀλλά τινα φωνὴν μόνον, φανὴν δὲ οὐ ταύτην τὴν ἡμῖν συνήθη,
 ἀλλά τινα ἡδεῖαν καὶ χρηστὴν καὶ ἀληθῶς θεοῦ, λέγουσαν
 πρός με· Ἰωάννη, ἕνα δεῖ παῤ ἐμοῦ ταῦτα ἀκοῦσαι· ἑνὸς γὰρ
@@ -2234,10 +2141,9 @@ extr om Σ΄: cf Corssen p 127; 128 ‖ 17 εἰς τὸ ὄρ. τοῦτο ἀ�
 καὶ ἀριστεροί, δυνάμεις, ἐξουσίαι, ἀρχαὶ καὶ δαίμονες, ἐνέργειαι,
 <lb n="15"/> ἀπειλαί, θυμοί, διάβολοι, Σατανᾶς καὶ ἡ κατωτικὴ ῥίζα,
 ἄφες τῶν γινομένων προῆλθεν φύσις.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="99">
-<p>99 οὗτος οὖν ὁ σταυρὸς ὁ διαπηξάμενος τὰ πάντα λόγῳ
+         </div>
+         <div n="99" type="chapter">
+            <p>99 οὗτος οὖν ὁ σταυρὸς ὁ διαπηξάμενος τὰ πάντα λόγῳ
 καὶ διορίσας τὰ ἀπὸ γενέσεως καὶ κατωτέρω, εἶτα καὶ εἰς
 πάντα πηγάσας· οὐχ οὗτος δέ ἐστιν ὁ σταυρὸς ὃν μέλλεις ὁρᾶν
 <lb n="20"/> ξύλινον κατελθών ἐντεῦθεν· οὔτε ἐγώ εἰμι ὁ ἐπὶ τοῦ σταυροῦ,
@@ -2246,12 +2152,12 @@ extr om Σ΄: cf Corssen p 127; 128 ‖ 17 εἰς τὸ ὄρ. τοῦτο ἀ�
 <note type="marginal">20 I</note> ἐροῦσιν ταπεινὸν καὶ οὐκ ἐμοῦ ἄξιον. ὡς οὖν ὁ τόπος τῆς
 ἀναπαύσεως οὔτε ὁρᾶται οὔτε λέγεται, πολλῷ μᾶλλον ὁ τούτου
 <lb n="25"/> κύριος οὔτε ὀφθήσομαι.</p>
-<note type="footnote">6 cf Io 1, 1 ‖ 7 Io 10, 9; 14, 6; 6, 35; 48 ‖ 8 et 9 Io 11, 25 ‖ 9 Io 14, 6
+            <note type="footnote">6 cf Io 1, 1 ‖ 7 Io 10, 9; 14, 6; 6, 35; 48 ‖ 8 et 9 Io 11, 25 ‖ 9 Io 14, 6
 1 δὲ om C ‖ 2 μόνον om C: cf 21 ‖ τὴν om C ‖ ἡδ.] ἰδίαν O propriam I
 ἰδέαν C ‖ λέγουσα C ‖ 4 ἀκοῦσται C ‖ οὗτος om Σ΄ ‖ 6 ἡμᾶς TXYZC ‖ δὲ
 om C: del? ‖ 7 δὲ om C: del? ‖ Ἰ. π. om Σ΄ ‖ 8 πόρος C ‖ υἱὸς] Ἰησοῦς Σ΄
 (sed filius Longolius): cf 7 ‖ 8—9 π. πν. om C ‖ 9 post χάρις desinit Σ΄</note>
-<note type="footnote">C 10 ται] καὶ ταῦτα Iames probabiliter ‖ 11 scr ἑαυτὸν?? αὑτὸν Iames ‖
+            <note type="footnote">C 10 ται] καὶ ταῦτα Iames probabiliter ‖ 11 scr ἑαυτὸν?? αὑτὸν Iames ‖
 ὑμᾶς Iames recte ut uid ‖ 12 τὸν πεπιγμένων C τῶν πεπηγμένων Iames:
 cf 199, 21 ‖ ἀν. βι.] ἀναγγελία Robinson ‖ scr ἀνάγει?? ἀνάγκη Robinson et
 Zahn ἀναγωγὴ Robinson Iames Hilgenfeld βιαία Robinson βεβαία Zahn
@@ -2263,11 +2169,10 @@ del Σατ.?? cf 214, 8 ‖ 16 ἄφες] ἀφʼ ἧς Iames fort recte ‖ τ
 Hilgenfeld ‖ 19 πήξας Iames ‖ 20 scr οὐδὲ? ‖ 22 ὀν ήμην C ‖  ἤμην] scr
 ἐνομιζόμην??? εἰμὶ?? cf 201, 8; 9 ‖ ἄλλοις] scr τοῖς? ‖ scr ἄλλο τι?? ἀλλ᾿
 ἄλλο τι Iames probabilius ‖ 25 ὀφθήσομαι ⟨οὔτε λεχθήσομαι⟩? item Iames</note>
-</div>
-
-<div type="textpart" subtype="chapter" n="100">
-<pb n="201"/>
-<p>100 (14) ὁ δὲ περὶ τὸν σταυρὸν μονοειδὴς ὄχλος ἡ κατωτικὴ
+         </div>
+         <div n="100" type="chapter">
+            <pb n="201"/>
+            <p>100 (14) ὁ δὲ περὶ τὸν σταυρὸν μονοειδὴς ὄχλος ἡ κατωτικὴ
 φύσις ὑπάρχει. καὶ οὓς ὁρᾷς ἐν τῷ σταυρῷ, εἰ καὶ μίαν
 μορφὴν οὐκ ἔχουσιν, οὐδέπω τὸ πᾶν τοῦ κατελθόντος συνελήφθη
 μέλος. ὅταν δὲ ἀναληφθῇ ἄνθρωποι φύσις καὶ γένος προσχωροῦν
@@ -2279,10 +2184,9 @@ Hilgenfeld ‖ 19 πήξας Iames ‖ 20 scr οὐδὲ? ‖ 22 ὀν ήμην 
 παῤ ἐμαυτῷ· παρὰ γὰρ τοῦ τοῦτο εἶ. τῶν οὖν πολλῶν, ἀμέλει <lb n="10"/>
 καὶ τῶν ἔξω τοῦ μυστηρίου, καταφρόνει· γίνωσκε γάρ με ὅλον
 παρὰ τῷ πατρὶ καὶ τὸν πατέρα παῤ ἐμοί.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="101">
-<p>101 (15) οὐδὲν οὖν ὧν μέλλουσιν λέγειν περὶ ἐμοῦ ἔπαθα·
+         </div>
+         <div n="101" type="chapter">
+            <p>101 (15) οὐδὲν οὖν ὧν μέλλουσιν λέγειν περὶ ἐμοῦ ἔπαθα·
 ἀλλὰ καὶ τὸ πάθος ἐκεῖνο ὃ ἔδειξά σοι καὶ τοῖς λοιποῖς χορεύων
 μυστήριον βούλομαι καλεῖσθαι. ὃ γὰρ εἰ σὺ ὁρᾷς <lb n="15"/>
 τοῦτο ἐγώ σοι ἔδειξα· δὲ εἰμι τοῦτο ἐγὼ μόνος οἶδα, ἄλλος
@@ -2297,7 +2201,7 @@ Hilgenfeld ‖ 19 πήξας Iames ‖ 20 scr οὐδὲ? ‖ 22 ὀν ήμην 
 λόγου νύξι, λόγου αἷμα, λόγου τραῦμα, λόγου ἐξάρτησιν, λόγου <lb n="25"/>
 πάθος, λόγου πῆξιν, λόγου θάνατον· καὶ οὕτως χωρίσας ἄνθρωπον
 <note type="footnote">5 cf Io 10, 16 ‖ 11 cf Io 14, 10 ‖ 21 cf Io 19, 34</note>
-<note type="footnote">1—3 cf 199, 21 - 22 adnot ‖ 3—9 multa corrupta uid ‖ 3 scr ἀνελήφθη? cf 4
+               <note type="footnote">1—3 cf 199, 21 - 22 adnot ‖ 3—9 multa corrupta uid ‖ 3 scr ἀνελήφθη? cf 4
 μέλος] scr γένος (cf q seq)?? μέρος?? ‖ ἄνθρ.] compend C: scr ἀνθρώπου??
 ἄνω coll 1 Iames ‖ 5 ὃν - σὺ] scr ὃ νῦν ἀκούομεν?? ὃ νῦν οὔπω ἔστιν??
 οὐ νῦν ἀκοῦόν με, ὡς σὺ coni Iames ‖ 6 γεννήσεται C ‖ ⟨....⟩ ἀλλ᾿ ? ‖ 7 scr
@@ -2312,24 +2216,22 @@ Iames antea) σὲ δεῖ νῦν Iames primo scr γνωρίζεις?? γνώρ
 antea ‖ 21 scr ῥεῦσαν? ‖ 22 ταῦτα ⟨γίνωσκέ με⟩? ‖ 23—24 αἰν. σην] ἐν ὕσσω.
 μεσην C αἰνίσσομαί σοι Iames probabiliter ‖ 24 σην] scr νῦν?? με] μοι
 coni Iames αἴεσιν] ser αἴκισιν??? ἀναίρεσιν??? ‖ 26 χωρήσας C</note>
-
-<pb n="202"/>
+               <pb n="202"/>
 λέγω. τὸν μὲν οὖν πρῶτον λόγον νόησον, εἶτα κύριον
 νοήσεις, τὸν δὲ ἄνθρωπον τρίτον καὶ τὸ τί πέπονθεν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="102">
-<p>102 (16) Ταῦτα εἰρηκότος πρός με καὶ ἕτερα ἃ οὐκ οἶδα
+         </div>
+         <div n="102" type="chapter">
+            <p>102 (16) Ταῦτα εἰρηκότος πρός με καὶ ἕτερα ἃ οὐκ οἶδα
 εἰπεῖν ὡς αὐτὸς θέλει, ἀνελήφθη μηθενὸς αὐτὸν θεασαμένου
 <lb n="5"/> τῶν ὄχλων. καὶ ἐλθόντος μου κατεγέλων ἐκείνων ἁπάντων
 εἰρηκότος πρός με ἅπερ εἰρήκασιν περὶ αὐτοῦ, τοῦτο μόνον
 κρατύνων ἐν ἑαυτῷ ὅτι συμβολικῶς πάντα ὁ κύριος ἐπραματεύσατο
 καὶ οἰκονομικῶς εἰς ἀνθρώπους ἐπιστροφὴν καὶ
 σωτηρίαν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="103">
-<lb n="10"/><p>103 (17) θεασάμενοι οὖν ἀδελφοὶ τὴν τοῦ κυρίου χάριν
+         </div>
+         <div n="103" type="chapter">
+            <lb n="10"/>
+            <p>103 (17) θεασάμενοι οὖν ἀδελφοὶ τὴν τοῦ κυρίου χάριν
 καὶ στοργὴν τὴν πρὸς ἡμᾶς προσκυνοῦμεν αὐτοῦ ἐλεηθέντες
 ὑπʼ αὐτοῦ, μὴ δακτύλοις, μηδὲ στόμασιν, μηδὲ γλώσσῃ μηδ᾿ ἑνὶ
 ὅλως σωματικῷ ὀργάνῳ, ἀλλὰ τῇ ψυχῇ τῇ διαθέσει, αὐτῷ τοῦ
@@ -2342,16 +2244,15 @@ coni Iames αἴεσιν] ser αἴκισιν??? ἀναίρεσιν??? ‖ 26 �
 <lb n="20"/> ὑμῶν, ἀλλ᾿ ὡς πάντῃ ὢν πάντων ὑμῶν ἀκούειν, καὶ
 νῦν ἐμοῦ δὲ καὶ τῆς Δρουσίνης, ἐγκεκλεισμένων θεὸς ὤν,
 βοήθειαν ἡμῖν προσάγων τῆ ἰδίμ εὐσπλαγχνίᾳ.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="104">
-<p>104 (18) πείσθητε οὖν καὶ ὑμεῖς ἀγαπητοὶ ὅτι οὐκ ἄνθρωπον
+         </div>
+         <div n="104" type="chapter">
+            <p>104 (18) πείσθητε οὖν καὶ ὑμεῖς ἀγαπητοὶ ὅτι οὐκ ἄνθρωπον
 ὑμῖν καταγγέλων σέβει, ἀλλὰ θεὸν ἀμετάτρεπτον,
 <lb n="25"/> θεὸν ἀκράτειστον, θεὸν πάσης ἐξουσίας ἀνώτερον καὶ πάσης
 δυνάμεως καὶ ἀγγέλων πάντων καὶ κτίσεων λεγομένων καὶ
 αἰώνων ὅλων πρεσβύτερον καὶ ἰσχυρότερον. εἰς τοῦτο οὖν
 <note type="footnote">12 cf Io 1, 3, 18</note>
-<note type="footnote">1 scr λέγε?? scr τὸ? ‖ 3 scr εἰρηκὼς?? cf 5 ‖ 5 τὸν ὄχλον C ‖ ἐλθ.]
+               <note type="footnote">1 scr λέγε?? scr τὸ? ‖ 3 scr εἰρηκὼς?? cf 5 ‖ 5 τὸν ὄχλον C ‖ ἐλθ.]
 κατελθόντος Iames probabiliter μου ⟨....⟩? ‖ ⟨αὐτοῦ⟩ εἰρηκότος?? an scr
 εἰρηκότων? ‖ 7 κρατείνων C: cf 183, 4 ‖ scr ἐπραγματεύσατο: item Iames ‖
 8 ἀνθρ.] ἀνθρώπους πρὸς Iames ἀνθρώπων idem ante melius: scr ἀνθρώ-
@@ -2366,29 +2267,26 @@ scr Δρουσιανῆς? cf 182, 20 ‖ 24 καταγγέλων sup scr μ C �
 Iames καταγγέλλω idem ante quod malim σέβειν Iames recte ‖ 25 scr
 ἀκράτητον: item Iames ‖ 26 λεγομένων ⟨ἢ νοουμένων⟩? cf 205, 3 ‖ 27 et
 203, 1 scr εἰς τοῦτον (idem Iames coni)?? ἐν τούτῳ??</note>
-
-<pb n="203"/>
+               <pb n="203"/>
 ἐμμείναντες καὶ εἰς τοῦτο οἰκοδομούμενοι ἀκαθαίρετον ὑμῶν
 τὴν ψυχὴν ἕξετε.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="105">
-<p>105 (19) Καὶ παραδοὺς ταῦτα τοῖς ἀδελφοῖς ὁ Ἰωάννης
+         </div>
+         <div n="105" type="chapter">
+            <p>105 (19) Καὶ παραδοὺς ταῦτα τοῖς ἀδελφοῖς ὁ Ἰωάννης
 ἀνεχώρησεν ἅμα τῷ Ἀνδρονίκῳ εἰς περίπατον. καὶ ἡ Δρουσίνη
 δὲ ἀπὸ μακρόθεν ὐκολούθει ἅμα ποσί, ἵνα τὰς ὑπʼ αὐτοῦ <lb n="5"/>
 πράξεις γενομένας θεωροῦσιν καὶ τὸν αὐτοῦ λόγον ἀκούουσιν
 πάντοτε ἐν κυρίῳ. |</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="106">
-<p>106 (15 Τ) Συνῆν οὖν τοῖς ἀδελφοῖς ὁ Ἰωάννης ἀγαλλιώμενος <note type="marginal">239 Z</note>
+         </div>
+         <div n="106" type="chapter">
+            <p>106 (15 Τ) Συνῆν οὖν τοῖς ἀδελφοῖς ὁ Ἰωάννης ἀγαλλιώμενος <note type="marginal">239 Z</note>
 ἐν κυρίῳ. τῇ δὲ ἑξῆς κυριακῆς οὔσης καὶ τῶν ἀδελφῶν <note type="marginal">272 Τ</note>
 πάντων συλλεγέντων ἤρξατο λέγειν αὐτοῖς· Ἀδελφοὶ καὶ σύνδουλοι <lb n="10"/>
 καὶ συγκληρονόμοι καὶ συμμέτοχοι τῆς τοῦ κυρίου
 βασιλείας, γινώσκετε τὸν κύριον πόσας δυνάμεις διʼ ἐμοῦ παρέσχεν
 ὑμῖν, πόσα τέρατα, ἰάσεις πόσας, πόσα σημεῖα, χαρίσματα
 οἷα, διδαχάς, κυβερ νήσεις, ἀναπαύσεις, διακονίας, γνώσεις, <note type="marginal">240 Z</note>
-<note type="footnote">1 εἰς τ.] cf 202, 27 ‖ ἡμῶν sup scr υ C ‖ 4 scr Δρουσιανή? item Iames:
+               <note type="footnote">1 εἰς τ.] cf 202, 27 ‖ ἡμῶν sup scr υ C ‖ 4 scr Δρουσιανή? item Iames:
 cf 182, 20 ‖ 5 ποσίν] scr ⟨τοῖς ἀδελφοῖς⟩ πᾶσιν?? quod probat Iames: τοῖς
 λοιποῖς coni idem ‖ 6 scr γινομένας? recepit Iames scr θεωροῦσα?? an
 θεωρῶσιν (item Iames)? scr ἀκούουσα?? an ἀκούωσιν (item Iames)? ‖
@@ -2411,9 +2309,8 @@ om 𝔣 ἰωάννης add B κ. σύνδ. om R ‖ 11 κ. συμμ. om κυρ.
 13—14 ὅσα σημ ὅσα χαρ. ὅσας διδ. B  ‖ χαρ. οἷα om 𝔣 (?) ‖ 14—204,3 κυβ. - ἀκουόμ.
 om V ‖ 14—204,1 δόξ. διακ. ἀναπ. (om γν.) A χάρ. γνώσ. δόξ. πίστ. κοιν.
 δωρ. ‖ 14 γνώσ. om ΓΒ 𝔣 α: cf Q</note>
-<note type="footnote">Q 15 ὡς et q s] cf 179, 30</note>
-
-<pb n="204"/>
+               <note type="footnote">Q 15 ὡς et q s] cf 179, 30</note>
+               <pb n="204"/>
 δόξας, χάριτας, σωρεάς, πίστεις, κοινωνίας, ὅσα εἴδετε
 παῤ ὀφθαλμοῖς διδόμενα ὑμῖν ὑπʼ αὐτοῦ, μὴ φαινόμενα ὀφθαλμοῖς
 τούτοις μηδὲ ἀκοαῖς ταύτας ἀκουόμενα. στηρίζεσθε οὖν
@@ -2424,12 +2321,11 @@ om V ‖ 14—204,1 δόξ. διακ. ἀναπ. (om γν.) A χάρ. γνώσ. 
 ἀκόλαστος· οἶδεν γὰρ καὶ ὕβρια τὴν ἐξ ὑμῶν,
 οἶδεν καὶ ἀτιμίαν, οἶδεν καὶ ἐπιβουλήν, οἶδεν καὶ κόλασιν
 <lb n="10"/> παρακουόντων αὐτοῦ τῶν ἐντολῶν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="107">
-<p>107 (16) μὴ οὖν λυπείσθω ὁ ἀγαθὸς ἡμῶν θεός, ὁ εὔσπλαγχνος,
+         </div>
+         <div n="107" type="chapter">
+            <p>107 (16) μὴ οὖν λυπείσθω ὁ ἀγαθὸς ἡμῶν θεός, ὁ εὔσπλαγχνος,
 <note type="footnote">16 Heb 2, 13</note>
-<note type="footnote">1 πίστ. κοιν. χάρ. δωρ. UB πίστ. κοιν. om 𝔣 ‖ ὁπόσα Tischendorf
+               <note type="footnote">1 πίστ. κοιν. χάρ. δωρ. UB πίστ. κοιν. om 𝔣 ‖ ὁπόσα Tischendorf
 Zahn ‖ 2 παῤ] ἐν A κατʼ Δ: cf 172, 12; 193, 4 ὀφθαλμοὺς VUB ‖
 διδ. om PA (habent 𝔣 α): scr δεικνύμενα? (ita α??) ὑμῶν A ἡμῶν P
 om R 2—3 ὑπ᾿ - τούτοις] καὶ A om P ‖ 2 ὑπ᾿ α. om α ‖ φαινομένου
@@ -2451,8 +2347,7 @@ luxuriam α ‖ 10 παρ.] ἡμῶν παρ. B παρ. ἡμῶν R παρ. �
 τ. ἐ.] τ. ἁγίων α. ἐ. Δ 𝔣 α: cf 181, 13 ‖ 11 λυπ. οὖν PA λυπῆσθε R λυ-
 θειθῶ U ‖ ὁ om B ‖ ἡμ. θ.] ὢν ὁ μόνος παντοκράτορ B ‖ ὑμῶν U 𝔣  a
 uobis α om VR ‖ θεός] dominus α</note>
-
-<pb n="205"/>
+               <pb n="205"/>
 ὁ ἐλεήμων, ὁ ἅγιος, ὁ καθαρός, ὁ ἀμίαντος, ὁ
 ἄυλος, ὁ μόνος, ὁ εἷς, ὁ | ἀμετάβολος, ὁ εἰλικρινής, ὁ ἄδολος, <note type="marginal">241 Z</note>
 ὁ ἀόργητος, ὁ πάσης λεγομένης ἢ νοουμένης ἡμῖν προσηγορίας
@@ -2462,11 +2357,12 @@ uobis α om VR ‖ θεός] dominus α</note>
 ἀμερινείτω ἐγκρατῶς ἡμῶν βιούντων, ἡδέσθω
 κοινωνούντων ἡμῶν, μειδιάτω σωφρονούντων ἡμῶν, εὐωχείσθω
 φιλούντων ἡμῶν αὐτόν. ταῦτα ὑμῖν ἀδελφοὶ ὁμιλῶ νῦν ἐπειγόμενος
-πρὸς τὸ προκείμενόν μοι ἔργον ἤδη τελειούμενον ὑπὸ <lb n="10"/> <note type="marginal">273 T</note>
+πρὸς τὸ προκείμενόν μοι ἔργον ἤδη τελειούμενον ὑπὸ <lb n="10"/>
+               <note type="marginal">273 T</note>
 τοῦ κυρίου. τί γὰρ ἕτερον ἔχοιμι πρὸς ὑμᾶς εἰπεῖν; ἔχετε
 τοῦ θεοῦ ἡμῶν τὰ ἐνέχυρα· ἔχετε τοὺς ἀρραβῶνας τῆς ἀγαθωσύνης
 <note type="footnote">10 cf Io 17, 4</note>
-<note type="footnote">1 ἅγ,] δίκαιος add R ‖ ὁ καθ.] κόλασιν παρέχειν τοῖς τὰς αὐτοῦ ἐν-
+               <note type="footnote">1 ἅγ,] δίκαιος add R ‖ ὁ καθ.] κόλασιν παρέχειν τοῖς τὰς αὐτοῦ ἐν-
 τολὰς παραβαίνουσιν αὐτὸς γὰρ μόνος ἐστὶ καθ. V (cf 204, 8-11) om 𝔣 ‖ 13
 nouiens om V ὁ ἄυλ. om PAR 𝔣 ‖ 2 ὁ εἷς om R 𝔣 ‖ ἀμετάβλητος PA:
 cf 193, 8 ‖ ὁ om R ‖ εἰλικρινός P iustus α om R ‖ 3 μὴ ὀργιζόμενος PA
@@ -2486,22 +2382,20 @@ lecto P) Zahn ‖ 8 ἡμ. κοιν. A ‖ κοινῶν οὖν τῶ U ‖ ὑ
 R ‖ νῦν om PAV 𝔣 (habet α) ‖ 9—11 ἐπ. - κυρ.] ὅτι ὁ κύριος κέκληκέ με
 πρὸς ἑαυτόν V ‖ 10 πρὸς] ἐπὶ B εἰς RU ‖ μοι] uobis (?) α om 𝔣 ‖ ἤδη om B ‖
 redit (ab [τελειουμε]νόν) W: cf 157, 4</note>
-<note type="footnote">Γ(═ PWA) Δ(═ VRUB) 10 τελουμένουν P μοι add Γ dein τῶν add W ‖
+               <note type="footnote">Γ(═ PWA) Δ(═ VRUB) 10 τελουμένουν P μοι add Γ dein τῶν add W ‖
 11 τοῦ om Γ γὰρ] ἂν add U ‖ ἔχ. ἕτ. V ‖ ἕτ. om ἔχοιμι] ἔχω R μοι
 W eat 𝔣 habeam α 12 ὑμῶν AU α om 𝔣 τὰ om Γ: cf Q 12—206 1 ἔχ. -
 αὐτοῦ om Γ: cf Q ‖ 12 ἀγαθ.] gratiae 𝔣</note>
-<note type="footnote">Q 15 scr πορευόμενος?</note>
-
-<pb n="206"/>
+               <note type="footnote">Q 15 scr πορευόμενος?</note>
+               <pb n="206"/>
 αὐτοῦ· ἔχετε τὴν ἀπαραίτητον αὐτοῦ παρουσίαν.
 <note type="marginal">242 Z</note> εἰ μὲν οὖν μηκέτι ἁμαρτάνετε, ἃ ἐν ἀγνοίᾳ ἐπράξατε ἀφίησιν
 ὑμῖν· εἰ δὲ καὶ αὐτὸν ἐγνωκότες καὶ ὑπʼ αὐτοῦ ἐλεηθέντες ἐν
 τοῖς ὁμοίοις πάλιν ἀναστρέφεσθε, καὶ τὰ πρότερα ὑμῖν λογισθήσεται
 <lb n="5"/> καὶ οὐχ ἕξετε μέρος ἢ ἔλεο, ἐνώπιον αὐτοῦ.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="108">
-<p>108 (17) Καὶ εἰπὼν ταῦτα πρὸς αὐτοὺς ηὔξατο οὕτως·
+         </div>
+         <div n="108" type="chapter">
+            <p>108 (17) Καὶ εἰπὼν ταῦτα πρὸς αὐτοὺς ηὔξατο οὕτως·
 Ο τὸν στέφανον τοῦτον πλέξας τῇ σῇ πλοκῇ Ἰησοῦ· ὁ τὰ
 πολλὰ ταῦτα ἄνθη εἰς τὸ ἀδιάπνευστόν σου ἄνθος τοῦ προσώπου
 ἐναρμόσας, ὁ ἐγκατασπείρας τοὺς λόγους τούτους· ὁ
@@ -2510,7 +2404,7 @@ W eat 𝔣 habeam α 12 ὑμῶν AU α om 𝔣 τὰ om Γ: cf Q 12—206 1 �
 φιλάνθρωπος, ὁ μόνος σωτὴρ καὶ δίκαιος, ὁ ἀεὶ ὁρῶν τὰ
 πάντων καὶ ἐν πᾶσιν ὢν καὶ πανταχοῦ παρὼν καὶ τὰ πάντα
 <note type="footnote">3 cf Io 1, 2, 4.</note>
-<note type="footnote">1 αὐτοῦ om B ‖ ἀπόληπτον P ἀναπόληπτον W ἀναπόλειπτον A inde-
+               <note type="footnote">1 αὐτοῦ om B ‖ ἀπόληπτον P ἀναπόληπτον W ἀναπόλειπτον A inde-
 precabilem 𝔣 ineuitabilem α: scr ἀνεπίλειπτον? (cf 179, 15) ἀνεπίληπτον
 coni Zahn (ἀπαραίτητον ex 𝔣 idem: cf 193, 9) ‖ παρρησίαν R ‖ 2 εἰ μὲν οὖν]
 quoniam α ‖ εἰ] καὶ εἰ RW οἶν om B ‖ ἃ] ὅσα V RU ‖ 3 ἡμῖν P διʼ ἐμοῦ add
@@ -2537,18 +2431,16 @@ add W δούλων om Γ (nom om 𝔣 α): cf 207, 5 ‖ καὶ ἰα. om V ἰ
 𝔘 α) καὶ om PA ‖ 12—13 ἀεὶ - ὢν] ὢν ἐν πᾶσι τοῖς σωζομένοις B ‖ ὁρ.
 τὰ π.] ὢν VRU α (α)‖ 13 παρών] ὢν B ‖ 13—207,1 καὶ τὰ π. περ. om ΓVB α
 Q c 108 - 110 om Q: cf 209, 8</note>
-
-<pb n="207"/>
+               <pb n="207"/>
 περιέχων καὶ πληρῶν τὰ πάντα Χριστὲ Ἰησοῦ θεὲ κύριε, ὁ ταῖς
 σαῖς δωρεαῖς καὶ τῷ σῷ ἐλέει περισκεπάζων τοὺς ἐπὶ σὲ ἐλπίζοντας,
 ὁ ἐπιστάμενος ἀκριβῶς τοῦ πανταχῇ ἡνῷν ἀντθίκου
 τὰς τέχνας τάς τε ἐπηρείας πάσας ἃς καθʼ ἡμῶν ἐπιβουλεύει·
 σὺ μόνος κύριε βοήθησον ἐν τῇ ἐπισκοπῇ σου τοῖς σοῖς δούλοις· <lb n="5"/>
 ναὶ κύριε. |</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="109">
-<p>109 (18) Καὶ αἰτήσας ἄρτον ευχαρίστησεν οὕτως· Τίνα <note type="marginal">243 Z</note>
+         </div>
+         <div n="109" type="chapter">
+            <p>109 (18) Καὶ αἰτήσας ἄρτον ευχαρίστησεν οὕτως· Τίνα <note type="marginal">243 Z</note>
 αἶνον σποίαν προσφορὰν ἢ τίνα εὐχαριστίαν κλῶντες τὸν
 ἄρτον τοῦτον ἐπονομάσωμεν ἀλλʼ ἢ σὲ μόνον κύριε Ἰησοῦ; δοξάζομέν
 σου τὸ λεχθὲν ὑπὸ τοῦ πατρὸς ὄνομα. δοξάζομέν σου <lb n="10"/>
@@ -2557,7 +2449,7 @@ Q c 108 - 110 om Q: cf 209, 8</note>
 δοξάζομέν σου τὴν ὁδόν. δοξάζομέν σου τὸν σπόρον,
 τὸν λόγον, τὴν χάριν, τὴν πίστιν, τὸ ἅλας, τὸν ἄλεκτον μαργαρίτην,
 <note type="footnote">14 cf Io 1. 1 Matth 13, 46</note>
-<note type="footnote">1 καὶ πλ. τὰ π. om ΓΒ α ‖ θεὲ ἰ. χρ. κύρ. Γ ἰ. χρ. υἱὲ τοῦ θεοῦ B
+               <note type="footnote">1 καὶ πλ. τὰ π. om ΓΒ α ‖ θεὲ ἰ. χρ. κύρ. Γ ἰ. χρ. υἱὲ τοῦ θεοῦ B
 deus meus Iesu α ‖ θεὲ] incipit c ‖ θ. κ.] solus deus uerus c ‖ κύρ.] καὶ R ‖
 ὁ] σὺ RUB om V ‖ 1—2 ταῖς - ἐλέει om V ‖ 2 καὶ - ἐλέει om α ‖ ἐλ.] gratia
 𝔣 ‖ 2—3 περισκ. - ἐπιστ. om U ‖ 2 περ.] περίσκεπε πάντας VRB 𝔣 α (c?) α ‖
@@ -2587,8 +2479,7 @@ om R ‖ 9—10 δοξ. - π. ὄν. om V ‖ 10 σου] σε U κύριε add U
 νεκρῶν B ‖ διὰ σοῦ ἡμ. AW ‖ ἡμῖν om R ‖ 13 δοξ. - ὁδὸν om ΓU 𝔣 ‖ δοξάζω
 V  ‖σου τ. ὁ.] te qui es uia c ‖ δοξ. σου om V ‖ σου] te qui es c ‖ τ.
 σπόρ. om 𝔣 ‖ 11 τ. λ.] τῶν λογίων VR ‖ τ. χ.] gloriam tuam 𝔣 ‖ τ. πίστ.]</note>
-
-<pb n="208"/>
+               <pb n="208"/>
 τὸν θησαυρόν, τὸ ἄροτρον, τὴν σαγήνην, τὸ μέγεθος,
 τὸ διάδημα, τὸν διʼ ἡμᾶς λεχθέντα υἱὸν ἀνθρώπου, τὸν χαρισάμενον
 <note type="marginal">274 T</note> ἡμῖν τὴν ἀλήθειαν, | τὴν ἀνάπαυσιν, τὴν γνῶσιν, τὴν
@@ -2599,17 +2490,16 @@ V  ‖σου τ. ὁ.] te qui es uia c ‖ δοξ. σου om V ‖ σου] te 
 σε διὰ τούτων γνωρίζωμέν σου τὸ μέγεθος ἀθεώρητον
 ὑμῖν ἐπὶ τοῦ παρόντος ὑπάρχον, καθαροῖς δὲ θεωρητὸν μόνον
 <lb n="10"/> ἐν τῷ μόνῳ σου ἀνθρώπῳ εἰκονιζόμενον.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="110">
-<p>110 (19) Καὶ κλάσας τὸν ἄρτον ἐπέδωκεν πᾶσιν ἡμῖν,
+         </div>
+         <div n="110" type="chapter">
+            <p>110 (19) Καὶ κλάσας τὸν ἄρτον ἐπέδωκεν πᾶσιν ἡμῖν,
 ἑκάστῳ τῶν ἀδελφῶν ἐπευχόμενος ἄξιον ἔσεσθαι αὐτὸν τῆς
 τοῦ κυρίον χάριτος καὶ τῆς ἁγιωτάτης εὐχαριστίας. γευσάμενος
 <note type="footnote">1 cf Matth 13, 44; 47 ‖ 2 cf Io 5, 27 Marc 8, 38 al</note>
-<note type="footnote">granum α (scr τὸν σὸν??) om Γ 𝔣 c τὸ ἄλας om ΓR 𝔣 c ‖ ἄληκτον R
+               <note type="footnote">granum α (scr τὸν σὸν??) om Γ 𝔣 c τὸ ἄλας om ΓR 𝔣 c ‖ ἄληκτον R
 ἐκλεκτὸν V ἀληθινόν Γ ineffabilem 𝔣 α (unde ἀνεκλάλητον Zahn) om B (c):
 del (τὸν ἄλεκ ditlogr uu τὸ ἅλας)??</note>
-<note type="footnote">1 τὸν ἄρ. R om 𝔣 ‖ 2 τὸ διάδ.] humilitatem (om codd plures) α om
+               <note type="footnote">1 τὸν ἄρ. R om 𝔣 ‖ 2 τὸ διάδ.] humilitatem (om codd plures) α om
 B 𝔣 c ‖ λ. υ. ἀ.] φορέσαντα τὸν ἄνθρωπον ὁλόκληρον B ‖ 2—3 τὸν χ. ἡμ.
 om ΓB 𝔣 α c: del? at cf 5 εἰς σὲ ‖ 3 cognitionem requiem 𝔣 ‖ 3—4 τ. δύν.
 om PW ‖ 4 τ. ἐντ. τ. ἀγ. om Γ τ. παρρ. - τ. ἀγ. om α τ. ἐλπ. τ. ἀγ,
@@ -2636,21 +2526,19 @@ cf 191, 3 ‖ 11 καὶ - ἄρτ.] (post καὶ αἰτήσας ἄρτον 2
 manum add 𝔣 ‖ πᾶσιν om ΓΒ α c ‖ ἡμῖν eis 𝔣 α c om B ‖ 12 τῶν ἀδ.]
 ἀδελφῶ Δ homini 𝔣 (fratrum α c) ‖ αξιῶν ἕπεσθαι B ‖ 13 χάρ. - ἁγ. om Γ
 (non om 𝔣 α) ‖ καὶ - εὐχ. om V ‖ 13—209,2 γευσ. ἀγαπ.] καὶ ταῦτα εἰπών V</note>
-
-<pb n="209"/>
+               <pb n="209"/>
 δὲ καὶ αὐτὸς ὁμοίως καὶ εἰρηκὼς Κἀμοὶ μέρος ἔστω
 μεθ᾿ ὑμῶν, καὶ Εἰρήνη μεθʼ ὑμῶν ἀγαπητοί,</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="111">
-<p>111 (20) μετὰ ταῦτα ἔφη τῷ Βήρῳ· Παραλαβών τινας
+         </div>
+         <div n="111" type="chapter">
+            <p>111 (20) μετὰ ταῦτα ἔφη τῷ Βήρῳ· Παραλαβών τινας
 σὺν σοὶ ἄνδρας δύο ἔχοντας κοφίνους καὶ σκα φεῖα ἀκολούθησόν <note type="marginal">245 Z</note>
 μοι. Ὁ δὲ Βῆρος μὴ μελλήσας διεπράξατο ἐκελεύσθη <lb n="5"/>
 ὑπὸ τοῦ δούλου τοῦ θεοῦ Ἰωάννου. προελὼν οὖν ὁ μακάριος
 Ἰωάννης τῆς οἰκίας ἐβάδιζε πρὸ τῶν πυλῶν εἰρηκὼς τοῖς πλείοσιν
 <note type="footnote">iterum exhortatus est eos ut se seruarent idoneos illi (scil sacrae cenae)
 dein dedit eis pacem α</note>
-<note type="footnote">1 δὲ] οὖν Γ ὁμ. post κἀμοὶ 𝔣 om RU ‖ καὶ om ΓR εἴρηκεν (Γ) ‖ ἔσται
+               <note type="footnote">1 δὲ] οὖν Γ ὁμ. post κἀμοὶ 𝔣 om RU ‖ καὶ om ΓR εἴρηκεν (Γ) ‖ ἔσται
 RU ἐστὲ W om B sit α ‖ 2 μ. ὑμ. om RU (non om α) ‖ ἡμῷν W ἀγαπη-
 τοὶ add A ‖ καὶ εἰρ.] ἐν εἰρ. R (c) ‖ ἄγ. μ. ὑμ. (ἡμῶν R) RU ‖ μ. ὑμ. om
 ΓB (non α) ‖ ἀγ,] et amor 𝔣 om A mei add α c ἀπέλυσε πάντας ἐν εἰρήνη
@@ -2667,7 +2555,7 @@ PW) πολλαῖς γὰρ ἀνάγκαις περιπέσεις (ὑποπε�
 Prochorum sequitur A (cf 210, 3) ὡς δὲ ταῦτα καὶ πλείονα τούτων ἐλάλησεν
 ὁ ἰωάννης παραθέμενος αὐτῶ τὸ ποίμνιον τοῦ χριστοῦ λέγει πρὸς αὐτόν
 add PW: cf Zahn Acta Io p CXI; CLII; 244; Lipsius I p 518</note>
-<note type="footnote">PWΔ (═ VRUB) M 3 ἔφη μ. τ. R μ. τ.] tum 𝔣 om BM α (non
+               <note type="footnote">PWΔ (═ VRUB) M 3 ἔφη μ. τ. R μ. τ.] tum 𝔣 om BM α (non
 om c α) ‖ τῶι β. ἔφη ὁ ἰωάννης M: cf 208, 11 ‖ τῷ] τινὶ ἀνθρώπω ὀνόματι
 V (hoo nomen uiro erat 𝔄) ‖ βήρρω B βίρρω U 𝔣 (α) ad Birrum 𝔄 Biro
 c Prochoro α τινας om RB ‖ 4 σὺν σοὶ om PWB ‖ ἄνδ. δύο] δύο ἀδελφοὺς
@@ -2683,9 +2571,8 @@ om α ‖ 7 Ἰω. om Δ τ. οἰκ.] τοῦ ἄστεος Metaphr ex urbe c (
 ἐβάπτιζε R θυρῶν B τῆς πόλεως add V πᾶσιν V (cf 2) RU multis 𝔣
 multitudini α maiori parti maltitudinis c plerique 𝔄 (cr 181, 24) τοῦ
 add B</note>
-<note type="footnote">Q 8 scr ταῦτα καὶ? ‖ 9 τῶ ἐδάφη Q: scr τὸ ἔδαφος? ‖ scr τὸν καὶ</note>
-
-<pb n="210"/>
+               <note type="footnote">Q 8 scr ταῦτα καὶ? ‖ 9 τῶ ἐδάφη Q: scr τὸ ἔδαφος? ‖ scr τὸν καὶ</note>
+               <pb n="210"/>
 ἀποστῦναι ἀπʼ αὐτοῦ· καὶ γενόμενος εἴς τι μνημεῖον ἀδελφοῦ
 ὑμῶν ἔφη τοῖς νεανίσκοις· Σκάψατε τέκνα. Κἀκεῖνοι ἔσκαπτον.
 ὃ δὲ μᾶλλον ἐπέκειτο αὐτοῖς λέγων· Βαθύτερον ἔστω τὶ
@@ -2698,21 +2585,21 @@ add B</note>
 <lb n="10"/> αὐτὰ ὥσπερ τινὰ στρωμνήν ἐν τῷ βάθει τοῦ σκάμματος καὶ
 ἐν μόνῳ τῷ δικροσσίῳ στὰς ἀνατείνας τὰς χεῖρας ηὔξατο
 οὕτως·</p>
-<note type="footnote">1 ἀπʼ om UB ‖ 1—2 εἴς ἡμ.] ἐν τῶ μέσω τῆς πόλεως V ἔν τινι μνη-
+            <note type="footnote">1 ἀπʼ om UB ‖ 1—2 εἴς ἡμ.] ἐν τῶ μέσω τῆς πόλεως V ἔν τινι μνη-
 μείω M ἐν τόπω τινὶ B (cf Prochori p 162, 15) ad tumulum cuiusdam
 fratris nostri 𝔣 (α) ad sepulchrum quoddam unias de fratribus 𝔘 πρός
 τι ὔρος ἀνελθὼν ἔνθα νῖν ὁ τούτου ναὸς ἵδρυται Metaphr ‖ 1 τι] τὸ
 RW c ‖ ἀδελφὸς R ‖ 2 ἔφη - τέκνα] εἶπεν αὐτοῖς σκάπτειν PW ‖ τ. ν.]
 nobis α ‖ νέοις M ‖ σκ.] ὧδε add M c α (fort uerum) ἐνταῦθα add
 Metaphr ‖ τεκνία om α ‖ 2—7 κἀκ. - ἑκ. ἡμ. om M ‖ 2 καὶ ἐκεῖνοι U</note>
-<note type="footnote">Γ (= PWA) Δ (= VRUB) 3 ὃ δὲ] redit A: cf 209, 3 ‖ μᾶλλον - λέγων
+            <note type="footnote">Γ (= PWA) Δ (= VRUB) 3 ὃ δὲ] redit A: cf 209, 3 ‖ μᾶλλον - λέγων
 om Γ ‖ αὐτ. ἐπ. B ‖ βαθ.] altum 𝔣 φησὶν add Γ ‖ ἤτω AB ‖ 4 ὄρυγμα V ‖ κἀκ.]
 δὲ add W ‖ 4—5 ὡμ. - θ. καὶ om Γ ‖ τ. λ. τ. θ. om 𝔣 ‖ 5 τ. θ.] τῆς σωτηρίας
 B uitae α ‖ 5—7 καὶ πρ. - ἑκ. ἡμ. om V ‖ 5—6 τοὺς - ἐξ.] eos secum et cam
 eis qui domo exierant 𝔣 eos c ‖ ἐξελ. ἀ. τ. οἰκ. RU ‖ 6 ἐελθόντας B ‖
 αὐτ. κ. κατ. A ‖ καὶ om U ‖ 7 θεοῦ] κυρίου Γ Christi 𝔣 ‖ κ. ἐπ. ἑκ. ἡμ. om
 Γ (non om α) ‖ καὶ om B ‖ ἡμ.] illorum f α c</note>
-<note type="footnote">Γ (= PWA) Δ (VRUB) M 7—8 ὡς - ἠβ.] καὶ οἱ νεανίσκοι τὸ ὄρυγμα
+            <note type="footnote">Γ (= PWA) Δ (VRUB) M 7—8 ὡς - ἠβ.] καὶ οἱ νεανίσκοι τὸ ὄρυγμα
 ἐκτελέσαντες M ‖ 7 ἐτέλ.] καὶ add PW in circuitu add α ‖ 8 οἱ νέοι τὸ
 σκ. A ‖ ὄρυγμα V ‖ νεανίκοι R νέοι PW τετροπωμένον add U προτρεπο-
 μένων add R ‖ καθ. ἠβ.] nonnulla ex Prochoro A ‖ ὡς VRU ‖ ἠβουλήθην
@@ -2726,12 +2613,11 @@ add B ‖ τινὰ om ‖ 11 δικροσίω VU διακρουσίω R (cf 18
 (Γ) ‖ ἑστῶς B indutus α ‖ χεῖρας] spectans ad orientem add α: cf 215, 1
 Γ 𝔣 ‖ εὔξατο B ἢρξατο εὔχεσθαι καὶ λέγειν VRU precatus est 𝔣: cf
 206, 6 ‖ 12 οὕτως] dicens 𝔘 c α om PWVB (non om 𝔣 α): cf 187, 23</note>
-<note type="footnote">Q 15 post ποίμνι(ον) (𝔣 82u) deficit Q (𝔣 83r ex Prochoro)</note>
-</div>
-
-<div type="textpart" subtype="chapter" n="112">
-<pb n="211"/>
-<p>112 (21) Ὁ ἐκλεζάμενος ἡμᾶς εἰς ἀποστολὴν ἐθνῶν· ὁ
+            <note type="footnote">Q 15 post ποίμνι(ον) (𝔣 82u) deficit Q (𝔣 83r ex Prochoro)</note>
+         </div>
+         <div n="112" type="chapter">
+            <pb n="211"/>
+            <p>112 (21) Ὁ ἐκλεζάμενος ἡμᾶς εἰς ἀποστολὴν ἐθνῶν· ὁ
 πέμψας ἡμᾶς εἰς τὴν οἰκουμένην θεός· ὁ δείξας ἑαυτὸν διὰ
 τοῦ νόμου καὶ τῶν προφητῶν· ὁ μὴ ἠρεμήσας πώποτε ἀλλὰ
 ἀεὶ σῴζων ἀπὸ καταβολῆς κόσμου τοὺς δυναμένους σωθῆναι·
@@ -2740,7 +2626,8 @@ add B ‖ τινὰ om ‖ 11 δικροσίω VU διακρουσίω R (cf 18
 καὶ ἡσύχιον ποιήσας· ὁ διψώσῃ αὐτῇ τοὺς σοὺς λόγους ἑαυτὸν
 δούς· ὁ νεκρουμένῃ αὐτῇ ἐν τάχει ὀφθείς· ὁ βυθιζομένῃ
 αὐτῇ εἰς ἀνομίαν νόμος φανείς· ὁ νενικημένῃ αὐτῇ ὑπὸ τοῦ
-Σατανᾶ ἐμφανισθείς· ὁ νικήσας τὸν ἀντίδκον αὐτῆς | ἐπὶ σὲ <lb n="10"/> <note type="marginal">247 Z</note>
+Σατανᾶ ἐμφανισθείς· ὁ νικήσας τὸν ἀντίδκον αὐτῆς | ἐπὶ σὲ <lb n="10"/>
+               <note type="marginal">247 Z</note>
 καταφυγούσης· ὁ δοὺς αὐτῇ τὴν σὴν χεῖρα καὶ ἀνεγείρας τῶν
 ἐν ᾅδου πραγμάτων· ὁ νὴ ἐάσας αὐτὴν ἐν σώματι πολιτεύεσθαι·
 ὁ δείξας αὐτῇ τὸν ἔδιον ἐχθρόν· ὁ τὴν ἐπὶ σὲ γνῶσιν
@@ -2775,17 +2662,15 @@ cf 8 ‖ ἀντίπαλον Γ ‖ εἰς Γ ‖ 11 καταφυγούση A 
 παρανομίαις V ut illa secundum carnem uiueret α c perturbari tamquam
 corpus 𝔣 ‖ 13 αὐτὴν R ‖ ἐπὶ σὲ om 𝔣 α ‖ εἰς Γ ‖ γνώμην W societatem 𝔣 (cogni-
 tionem α c)</note>
-
-<pb n="212"/>
+               <pb n="212"/>
 καθαρὰν πεποιημένος θεὲ Ἰησοῦ· ὁ τῶν ὑπερουρανίων πατήρ·
 ὁ τῶν ἐπουρανίων δεσπότης· ὁ τῶν αἰθερίων νόμος καὶ τῶν
 ἀερίων δρόμος· ὁ τῶν ἐπιγείων φύλαξ καὶ τῶν ὑπογείων
 φόβος καὶ τῶν ἰδίων χάρις· δέξαι καὶ τοῦ σοῦ Ἰωάννου τὴν
 <lb n="5"/> ψθχὴν τάχα ἠξιωμένην ὑπὸ σοῦ.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="113">
-<p>113 ὁ κἀμὲ φυλάξας μέχρι τῆς ἄρτι ὥρας καθαρὸν
+         </div>
+         <div n="113" type="chapter">
+            <p>113 ὁ κἀμὲ φυλάξας μέχρι τῆς ἄρτι ὥρας καθαρὸν
 ἑαυτῷ καὶ ἀμιγῆ μίξεαως γυνακός· ὁ θέλοντί μοι ἐν νεότητι
 γῆμαι ἐπιφανεὶς καὶ εἰρηκώς μοι· Χρῄζω σου Ἰωάννη· Ὁ καὶ
 <note type="marginal">248 Z</note> ἀσθένειάν μοι σω|ματικὴν προοικονομήσας· ὁ τρίτον μου βουληθέντος
@@ -2826,8 +2711,7 @@ Ioannes (cf 8) et nisi egerem 𝔣 ‖ ἐμ.] μου ἄξιος B ‖ 12 ἔ�
 precari me c ‖ 12—13 πηρ - ἔτει om Γ ‖ 12 πήρωσίν μοι ἐνθεὶς B ‖ δύο ἔ. π.] ἔτι
 δυσπενθεῖν R ὄντι ἐτῶν δύο π. B ‖ 13 παρασχ. om B ‖ ἀνοίξας RUB ‖
 13—213,1 τὰ τοῦ ν. μου ὄψ. U ‖ τοῦ ν. μου R ‖ 13 μου PWB</note>
-
-<pb n="213"/>
+               <pb n="213"/>
 νοὸς τὰς ὄψεις καὶ τοὺς φαινομένους ὀφθαλμοὺς χαρισάμενός
 μοι· ὁ διαβλέψαντός μου καὶ τὸ ἀτενίσαι γυναικὶ ἐπαχθές
 μοι διαγράψας· ὁ τῆς προσκαίρου φαντασίας ῥυσάμενός με
@@ -2837,13 +2721,14 @@ precari me c ‖ 12—13 πηρ - ἔτει om Γ ‖ 12 πήρωσίν μοι �
 τῆς ψυχῆς μου φιμώσας καὶ τὴν φανερὰν πρᾶξιν ἐκκόψας·
 ὁ θλίψας καὶ ἐξορίσας τὸν ἐν ἐμοὶ στασιάζοντα· ὁ ἄσπιλόν
 μου τὴν πρὸς σὲ φλίον καταστήσας· ὁ ἄθραυστόν μου τὴν
-πρὸς σὲ πορείαν καταρτίσας· ὁ ἀνενδοίαστόν μου τὴν εἰς σὲ <lb n="10"/> <note type="marginal">249 Z</note>
+πρὸς σὲ πορείαν καταρτίσας· ὁ ἀνενδοίαστόν μου τὴν εἰς σὲ <lb n="10"/>
+               <note type="marginal">249 Z</note>
 πίστιν δούς· ὁ καθαράν μου τὴν εἰς σὲ γνώμην ὑπογράψας·
 ὁ τῶν ἔργων ἑκάστῳ τὸν ἐπάξιον ἀποδιδοὺς μισθόν· ὁ ἐγκαταθέμενός
 μου τῇ ψυχῇ μηδὲν ἔχειν κτῆμα ἢ σὲ μόνον· τί γὰρ
 σοῦ τιμιώτερον; νῦν οὖν κύριε ὅτε ἣν ἐπιστεύθην oἰκονομίαν
 <note type="footnote">24 cf Cor 1, 9, 17</note>
-<note type="footnote">1 νοῦ PWB ‖ 2 μοι om Γ ‖ 2-3) ὁ διαβλ. - διαγρ. om B ‖ 2 διαβλ. -
+               <note type="footnote">1 νοῦ PWB ‖ 2 μοι om Γ ‖ 2-3) ὁ διαβλ. - διαγρ. om B ‖ 2 διαβλ. -
 ἀτ.] uidere et aspicere 𝔣 c aspectum α ‖ ἀτεν.] διαβλέψαι V ‖ 2—3 ἐπ, -
 διαγρ.] διαγρ. ἐπ. A ἐπιγράψας ἐπ. PW ‖ 4 καὶ - ὁδ. με om U ‖ καὶ]
 φρουρήσας add A ‖ εἰς] ἐπὶ R ‖ διαμένουσαν A frugiferam 𝔣 ζωὴν add
@@ -2873,15 +2758,13 @@ B om Γ ‖ μ. ἀπ. RU ‖ ἀνταποδιδοὺς B ‖ 13 τῆ ψ. μ
 et c om PWU 𝔣 α ‖ ὅτε κύρ. PW ‖ κύρ. om VRU ἰησοῦ χριστὲ add B mi
 Iesu add α (c) ‖ ὅτε om VB 𝔣 α c ‖ ήνπερ A ‖ 14—214,1 παρὰ σοῦ ἐπιστ.
 οἰκ. A ‖ 14 ἐνεπιστεύθην V ‖ 14—214,1 ὑπὸ σοῦ (κύριε ἰησοῦ add U) οἰκ. UB</note>
-
-<pb n="214"/>
+               <pb n="214"/>
 παρὰ σοῦ ἐτέλεσα, καταξίωσόν με τῆς σῆς ἀναπαύσεως τὸ ἐν
 σοὶ τέλος χαριζόμενός μοι, ὅπερ ἐστὶν ἄρρητος καὶ ἄφθεγκτος
 σωτηρία.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="114">
-<p>114 καὶ ἐρχομένον μου πρός σε ὑποχωρησάτω πῦρ, νικηθήτω
+         </div>
+         <div n="114" type="chapter">
+            <p>114 καὶ ἐρχομένον μου πρός σε ὑποχωρησάτω πῦρ, νικηθήτω
 <lb n="5"/> σκότος· ἀτονησάτω χάος· μαρανθήτω κάμινος· σβεσθήτω
 γέεννα· ἀκολουθησάτωσαν ἄγγελοι, φοβηθήτωσαν δαίμονες·
 θραυσθήτωσαν ἄρχοντες, δυνάμεις πεσέτωσαν· δεξιοὶ τόποι
@@ -2892,7 +2775,7 @@ Iesu add α (c) ‖ ὅτε om VB 𝔣 α c ‖ ήνπερ A ‖ 14—214,1 π
 ἡ ῥίζα αὐτοῦ ἀπορρηθήτω. καὶ δός μοι τὴν πρὸς σὲ ὁδὸν
 ἀνύβριστον καὶ ἀνεπηρέαστον διανύσαι, ἀπολαμβάνοντα ἅπερ
 ὑπέσχου τοῖς καθαρῶς βιοῦσιν καὶ σὲ μόνον ἀγαπήσασιν. |</p>
-<note type="footnote">1 παρὰ] ὑπὸ R om PW ‖ σοῦ om B κύριε ἰησοῦ add VR χριστὲ add
+            <note type="footnote">1 παρὰ] ὑπὸ R om PW ‖ σοῦ om B κύριε ἰησοῦ add VR χριστὲ add
 R ‖ ἐτελείωσα Γ καὶ add V ‖ ἀξίωσον PW ‖ 1—3 τὸ ἐν - σωτ. om V ‖
 1—2 τὸ - τέλ.] misericordiam tuam α ‖ 2 μοι τέλειον χαρ. A ‖ τέλειον PW ‖
 χαρ. μοι] βουλόμενός μοι δοῦναι B ‖ ἐργαζόμενος PW ‖ μοι om PW ‖
@@ -2923,24 +2806,23 @@ sed 𝔣 om α ‖ εἰς Γ ‖ ἄνοδον B ‖ 13 ἀνύβ. om V ‖ �
 περέαστον (P) W ‖ ἀνύσαι Γ om 𝔣 ‖ ἀπολαμβάνοντι B ἀπολαβεῖν δὲ Γ
 recipiens a accipiam 𝔣 ψυχὴν καὶ σάρκα καὶ πνεῦμα ἅγιον διδοὺς add
 B ‖ ὅπερ B ‖ 14 βιώσασιν (V)U(B) 𝔣 ‖ σὲ μόνον] σεμνὸν Γ honeste te α te</note>
-</div>
-
-<div type="textpart" subtype="chapter" n="115">
-<pb n="215"/>
-<p>115 (22) Καὶ σφραγισάμενος ἑαυτὸν ὅλον ἑστὼς καὶ <note type="marginal">250 Z</note>
+         </div>
+         <div n="115" type="chapter">
+            <pb n="215"/>
+            <p>115 (22) Καὶ σφραγισάμενος ἑαυτὸν ὅλον ἑστὼς καὶ <note type="marginal">250 Z</note>
 εἰρηκὼς Σὺ μετ᾿ ἐμοῦ κύριε Ἰησοῦ Χριστέ, κατεκλίθη ἐν τῷ
 σκάμματι ἔνθα τὰ ἱμάτια αὐτοῦ ὑπέστρωσεν· καὶ εἰπὼν ἡμῖν
 Εἰρήνη μεθʼ ὑμῶν ἀδελφοί, παρέδωκε τὸ πνεῦμα χαίρων.</p>
-<note type="footnote">solum 𝔣 ἠγαπηκόσι et add βίον καὶ μετὰ τὸ προσεύξασθαι αὐτὸν
+            <note type="footnote">solum 𝔣 ἠγαπηκόσι et add βίον καὶ μετὰ τὸ προσεύξασθαι αὐτὸν
 ἠσπάσατο ἡμᾶς καὶ ἔθηκεν ἑαυτὸν ἐπὶ χεῖρας καὶ πόδας (cf Prochori
 p 163, 9 m2) add A ἡμῶν δὲ κλαιόντων καὶ ὀδυρομένων ἀποκριθεὶς
 εἶπέ μοι τέκνον πρόχωρε τί κλαίεις καὶ τούτοις τοῖς ἀδελφοῖς εἰς
 ὀδυρμὸν προτρέπη ἐμοῦ πρὸς βασιλείαν πορευομένου καὶ εἰπὼν εἰρήνη
 ὑμῖν add V</note>
-<note type="footnote">1 καὶ] ἀτενίσας πρὸς (εἰς PW) ἀνατολὰς (τὸν οὐρανὸν PW) ἐδόξασεν
+            <note type="footnote">1 καὶ] ἀτενίσας πρὸς (εἰς PW) ἀνατολὰς (τὸν οὐρανὸν PW) ἐδόξασεν
 τὸν θεὸν add Γ et conuersus est ad orientem et glorificauit 𝔣 probat
 Corssen p 99 fort recte: cf 210, 11 a</note>
-<note type="footnote">Γ (═ PWA) Δ(═ VRBU) M 1 κατασφραγισάμενος V σφραγίσας B et
+            <note type="footnote">Γ (═ PWA) Δ(═ VRBU) M 1 κατασφραγισάμενος V σφραγίσας B et
 signans 𝔄 obsignans 𝔞 om 𝔣 τε add Γ ‖ ἑ. ἑστ. ὅλ. B ἑστ. ὅλ. ἑ. U ἔστρωσεν
 ἑ. ὅλ. V ἑ. ὅλ. τῶ τοῦ σταυροῦ τύπω M ὅλως (ὅλος A) ἑστὼς Γ ἑ. ἑστ.
 ὅλ, τὸ σῶμα B stans totus 𝔣 se totum astitit 𝔄 totum se 𝔞 τοῖς τε ἀδελ-
@@ -2974,9 +2856,7 @@ coepto V ἐνέγκαντες οὖν σινδόνα εἰπλώσαμεν ἐ�
 οὖν (post nonnulla ex Prochoro καὶ παραγενομένων ἡμῶν A) ἐπὶ τὴν
 αὔριον (καὶ ὀρυξάντων ἐν ὧπερ κατετέθη τόπω add A) αὐτὸν μὲν οὐχ
 εὗρον (ηὗρον εὕρομεν A) ἀλλὰ (μόνα δὲ A) τὰ σανδάλια (σαντάλια P)</note>
-</div>
-
-</div>
-</body>
-</text>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,98 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="eng">    
-    <fileDesc>
-<titleStmt>
-  <title xml:lang="lat">De temperamentis</title>
-        <author>Galen</author>
-        <editor>Karl Gottlob Kühn</editor>
-        <funder>Andrew W. Mellon Foundation</funder>
-      <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-<authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</authority>
-<publisher>University of Leipzig</publisher>
-<pubPlace>Germany</pubPlace>
-<idno type="filename">tlg0057.tlg009.1st1K-grc1.xml</idno>
-<availability>
-<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-</availability>
-<date>2016</date>
-</publicationStmt>
-<sourceDesc>
-<biblStruct>
-          <monogr>
-            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De temperamentis</title>
             <author>Galen</author>
             <editor>Karl Gottlob Kühn</editor>
-            <imprint>
-              <publisher>Knobloch</publisher>
-              <pubPlace>Leipzig</pubPlace>
-              <biblScope unit="vol">1</biblScope>
-              <biblScope unit="pp" from="509" to="694">509-694</biblScope>
-              <date>1821</date>
-            </imprint>
-          </monogr>
-  <ref target="https://hdl.handle.net/2027/hvd.hxpp8j?urlappend=%3Bseq=783%3Bownerid=27021597764275188-785">HathiTrust</ref>
-        </biblStruct>
-        </sourceDesc>
-</fileDesc>
-<encodingDesc>
-<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>    <refsDecl n="CTS">
-        <cRefPattern matchPattern="(\w+).(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-        <cRefPattern matchPattern="(\w+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-      </refsDecl>
-    </encodingDesc>
-<profileDesc>
-<langUsage>
-        <language ident="grc">Greek</language>
-  <language ident="eng">English</language>
-  <language ident="lat">Latin</language>
-      </langUsage>
-    </profileDesc>
-</teiHeader>
-<text>
-<body>
-
-<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg009.1st1K-grc1">
-<pb n="509"/>
-
-<div type="textpart" subtype="book" n="1">
-<div type="textpart" subtype="chapter" n="1">
-<head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΚΡΑΣΕΩΝ ΒΙΒΛΙΟΝ
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</authority>
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg009.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg009.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Leipzig</pubPlace>
+                     <biblScope unit="vol">1</biblScope>
+                     <biblScope unit="pp" from="509" to="694">509-694</biblScope>
+                     <date>1821</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/hvd.hxpp8j?urlappend=%3Bseq=783%3Bownerid=27021597764275188-785">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(\w+).(\w+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(\w+)"
+                         n="book"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
+                  <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+               </citeStructure>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-book-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="eng">English</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg009.1st1K-grc1">
+         <pb n="509"/>
+         <div n="1" type="book">
+            <div n="1" type="chapter">
+               <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΚΡΑΣΕΩΝ ΒΙΒΛΙΟΝ
 <lb/>ΠΡΩΤΟΝ.</head>
-<p>Ὅτι μὲν οὖν ἐκ θερμοῦ καὶ ψυχροῦ καὶ
+               <p>Ὅτι μὲν οὖν ἐκ θερμοῦ καὶ ψυχροῦ καὶ
 <lb/>ξηροῦ καὶ ὑγροῦ τὰ μὲν ζώων σώματα κέκραται, καὶ ὡς
 <lb/>οὐκ ἴση πάντων ἐστὶν ἐν τῇ κράσει μοῖρα, παλαιοῖς ἀνδράσιν
 <lb/>ἱκανῶς ἀποδέδεικται, φιλοσόφων τε καὶ ἰατρῶν τοῖς
@@ -120,10 +133,10 @@
 <lb/>πλεονεκτεῖ, ψυχρὸν δὲ, ἐν ᾧ τὸ ψυχρὸν τοῦ θερμοῦ.
 <lb/>αὕτη μὲν τῶν ὀνομάτων χρῆσις.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="2">
-<p>
-<milestone unit="ed2page" n="33"/>Ὥρα δ’ ἂν εἴη λέγειν ἤδη καὶ περὶ
+            </div>
+            <div n="2" type="chapter">
+               <p>
+                  <milestone unit="ed2page" n="33"/>Ὥρα δ’ ἂν εἴη λέγειν ἤδη καὶ περὶ
 <lb/>τῶν κράσεων αὐτῶν. ἡ μὲν δὴ πλείστη δόξα τῶν ἐπιφανεστάτων
 <lb/>ἰατρῶν τε καὶ φιλοσόφων, ὑγρὰν εἶναι καὶ θερμὴν
 
@@ -180,11 +193,11 @@
 <lb/>ἀεί. τὸν γοῦν βοῤῥᾶν, ξηρὸν καὶ ψυχρὸν ἄνεμον τυγχάνοντα,
 <lb/>ξηραίνειν ἅπαντα καὶ ψύχειν. καὶ τοῦτ’ εἶναι τὸ
 <lb/>πρὸς Ὁμήρου λεγόμενον,</p>
-<lg>
-<l>Ὡς δ’ ὅτ’ ὀπωρινὸς βορέης νεοαρδέ’ ἀλωὴν</l>
-<l>Αἶψα ξηραίνει.</l>
-</lg>
-<p>Κατὰ δὲ τὸν αὐτὸν τρόπον καὶ τὸν τοῦ μήκωνος ὀπὸν
+               <lg>
+                  <l>Ὡς δ’ ὅτ’ ὀπωρινὸς βορέης νεοαρδέ’ ἀλωὴν</l>
+                  <l>Αἶψα ξηραίνει.</l>
+               </lg>
+               <p>Κατὰ δὲ τὸν αὐτὸν τρόπον καὶ τὸν τοῦ μήκωνος ὀπὸν
 <lb/>καὶ ἄλλα μυρία φάρμακα ξηραίνειν ἅμα καὶ ψύχειν. ὥστ’
 <lb/>οὐκ ἀναγκαῖον, οὔτ’ εἴ τι ψυχρὸν, εὐθὺς τοῦτο καὶ ὑγρὸν
 <lb/>ὑπάρχειν, οὔτ’, εἴ τι θερμὸν, εὐθὺς καὶ ξηρόν· οὔκουν
@@ -289,11 +302,10 @@
 <lb/>εἰρήκασι, ταῦτά ἐστιν. ἃ δ’ ἐγὼ παραλιπεῖν αὐτοὺς
 <lb/>νομίζω, λέγειν ἤδη καιρός.
 </p>
-</div>
-<pb n="519"/>
-
-<div type="textpart" subtype="chapter" n="3">
-<p>Ἕν μὲν δὴ καὶ πρῶτον, ὅτι τὴν εὔκρατον
+            </div>
+            <pb n="519"/>
+            <div n="3" type="chapter">
+               <p>Ἕν μὲν δὴ καὶ πρῶτον, ὅτι τὴν εὔκρατον
 <lb/>φύσιν, ὥσπερ οὐκ ἀρετῇ τε ἅμα καὶ δυνάμει προὔχουσαν,
 <lb/>ἐπελάθοντό τε καὶ τελέως παρέλιπον, ὥσπερ μηδ’ ὅλως
 <lb/>οὖσαν, καίτοι μηδὲ φθέγξασθαί τι χωρὶς ἐκείνης ὑπὲρ τῶν
@@ -392,10 +404,10 @@
 <lb/>προήκοντι τῷ λόγῳ δείξαιμι· δοκοῦσι γάρ μοι παρακούειν
 <lb/>αὐτοῦ.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="4">
-<p>
-<milestone unit="ed2page" n="37"/>Τὸ δέ γε νῦν εἶναι, πειράσομαι πρῶτον
+            </div>
+            <div n="4" type="chapter">
+               <p>
+                  <milestone unit="ed2page" n="37"/>Τὸ δέ γε νῦν εἶναι, πειράσομαι πρῶτον
 
 ﻿<pb n="524"/>
 
@@ -610,9 +622,9 @@
 <lb/>εἰς τὰς τέτταρας ταύτας συζυγίας ἀνάγουσι τὰς
 <lb/>διαφοράς.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="5">
-<p>Ὧι καὶ δῆλον, εἰς ὅσον οἱ περὶ φύσεως ἀνθρώπου
+            </div>
+            <div n="5" type="chapter">
+               <p>Ὧι καὶ δῆλον, εἰς ὅσον οἱ περὶ φύσεως ἀνθρώπου
 <lb/>λογισμοὶ, σφαλέντες τῆς ἀληθείας, εἰς τὰς ἰάσεις
 <lb/>βλάπτουσι, καὶ βέλτιόν ἐστι δυοῖν θάτερον, ἢ μηδ’ ὅλως
 <lb/>ἅπτεσθαι τῶν τοιούτων λόγων, ἀλλ’ ἐπιτρέψαι τῇ πείρᾳ τὸ
@@ -693,9 +705,9 @@
 <lb/>ξηρός. αὐτῶν δὲ τῶν κυνῶν κατ’ εἶδος, ὁδὶ μὲν ξηρὸς,
 <lb/>ὁδὶ δὲ ὑγρὸς, ἄλλος δέ τις, ὡς κύων, εὔκρατος.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="6">
-<p>Λέλεκται μὲν οὖν ἐπὶ πλεῖστον ἡμῖν ὑπὲρ
+            </div>
+            <div n="6" type="chapter">
+               <p>Λέλεκται μὲν οὖν ἐπὶ πλεῖστον ἡμῖν ὑπὲρ
 <lb/>ἁπάσης τῆς τοιαύτης χρήσεως τῶν ὀνομάτων ἐν δευτέρῳ
 <lb/>περὶ διαγνώσεως σφυγμῶν. ἀνάγκη δὲ, ὡς ἔοικεν, εἰπεῖν τι
 <lb/>καὶ νῦν ὑπὲρ αὐτῶν διὰ κεφαλαίων, ὅσον εἰς τὰ παρόντα
@@ -934,7 +946,7 @@
 <lb/>εἶναι φήσομεν, ἅμα μὲν τῇ μέσῃ παραβάλλοντες, ἅμα δὲ
 <lb/>καὶ τῶν ἐναντίων στοιχείων ἐξέτασιν ἐπ’ αὐτῆς ποιούμενοι.
 <lb/>
-<milestone unit="ed2page" n="45"/>καὶ δὴ καὶ κατὰ τοῦτο μὲν ἁπλῶς ἐροῦμεν
+                  <milestone unit="ed2page" n="45"/>καὶ δὴ καὶ κατὰ τοῦτο μὲν ἁπλῶς ἐροῦμεν
 <lb/>αὐτὴν ἢ θερμὴν, ἢ ξηρὰν, ἢ ψυχρὰν, ἢ ὑγράν ὑπάρχειν.
 <lb/>ἐπειδὰν δὲ τῇ μέσῃ κράσει παραβάλλωμεν, οὐχ
 <lb/>ἁπλῶς, ἀλλ’ ὅτι πρὸς τὸ σύμμετρον ὁμογενὲς οὕτως ἔχει.
@@ -960,9 +972,9 @@
 <lb/>μεταξὺ τῶν ἀτόμων τε καὶ τῶν πρώτων γενῶν εἴδη τε ἅμα
 <lb/>καὶ γένη προσαγορεύουσιν.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="7">
-<p>Ὁπότ’ οὖν διῄρηται τὰ σημαινόμενα, καὶ
+            </div>
+            <div n="7" type="chapter">
+               <p>Ὁπότ’ οὖν διῄρηται τὰ σημαινόμενα, καὶ
 <lb/>ὡς οὐχ ἁπλῶς ἀποφαίνεσθαι χρὴ θερμόν τε καὶ ψυχρὸν,
 <lb/>καὶ ξηρὸν καὶ ὑγρὸν σῶμα, σαφῶς ἀποδέδεικται, ζητητέον
 
@@ -1021,9 +1033,9 @@
 <lb/>καίτοι φαίνεται σμικρὸν ὂν τὸ διαστέλλεσθαι τὰς ὁμωνυμίας,
 <lb/>ἐν τῇ χρείᾳ τῶν πραγμάτων ἱκανῶς ἀξιόλογον ὑπάρχον.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="8">
-<p>Ἀλλ’ ἐπειδὴ καὶ τοῦτο σαφῶς ἤδη διώρισται,
+            </div>
+            <div n="8" type="chapter">
+               <p>Ἀλλ’ ἐπειδὴ καὶ τοῦτο σαφῶς ἤδη διώρισται,
 <lb/>ἐπὶ τὸ ὑπόλοιπον αὖθις ἐπανιτέον. οὔσης γάρ τινος
 <lb/>ἀκράτου καὶ ἀμίκτου ποιότητος, ὑγρότητός τε καὶ ξηρότητος,
 <lb/>καὶ θερμότητος καὶ ψυχρότητος, ὅσα ταύτας διεδέξαντο
@@ -1122,9 +1134,9 @@
 <lb/>ἅμα καὶ θερμὴν, καὶ ψυχρὰν ἅμα καὶ ὑγρὰν, καὶ ψυχρὰν
 <lb/>ἅμα καὶ ξηράν.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="9">
-<p>Ἐν ἑκάστῃ δὲ τῶν εἰρημένων κράσεων τὸ
+            </div>
+            <div n="9" type="chapter">
+               <p>Ἐν ἑκάστῃ δὲ τῶν εἰρημένων κράσεων τὸ
 <lb/>μᾶλλόν τε καὶ τὸ ἦττον πάμπολυ, κατά τε τὰς ἁπλᾶς
 <lb/>λεγομένας κράσεις, ἐπί τε τῆς ὅλης οὐσίας, ἤδη δὲ καὶ
 <lb/>καθ’ ἕν ὁτιοῦν γένος. εἰ δή τις βούλεται διαγνωστικὸς εἶναι
@@ -1143,7 +1155,7 @@
 <lb/>ταῦτ’ εἶναι λέγομεν, ὅσα μήπω μέν ἐστιν ὃ λέγεται,
 <lb/>ῥᾷστον δ’ αὐτοῖς γενέσθαι, φυσικήν τινα ἐπιτηδειότητα
 <lb/>
-<milestone unit="ed1page" n="67"/>κεκτημένοις εἰς τὸ γενέσθαι. περὶ πρώτων οὖν διέλθωμεν
+                  <milestone unit="ed1page" n="67"/>κεκτημένοις εἰς τὸ γενέσθαι. περὶ πρώτων οὖν διέλθωμεν
 <lb/>τῶν ἐνεργείᾳ θερμῶν καὶ ψυχρῶν, καὶ ξηρῶν καὶ
 <lb/>ὑγρῶν, ἀπὸ τῆς συμπάσης οὐσίας ἀρξάμενοι, κᾄπειτα μεταβῶμεν
 <lb/>ἐπί τε τὰ ζῶα καὶ τὰ φυτά. τελέως γὰρ ἂν οὕτως
@@ -1363,15 +1375,14 @@
 <lb/>λείπει τῇ συμπάσῃ περὶ κράσεων πραγματείᾳ διὰ τῶν
 <lb/>ἐφεξῆς δυοῖν ὑπομνημάτων εἰρήσεται.
 </p>
-</div>
-</div>
-<pb n="572"/>
-
-<div type="textpart" subtype="book" n="2">
-<div type="textpart" subtype="chapter" n="10">
-<head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΚΡΑΣΕΩΝ ΒΙΒΛΙΟΝ
+            </div>
+         </div>
+         <pb n="572"/>
+         <div n="2" type="book">
+            <div n="10" type="chapter">
+               <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΚΡΑΣΕΩΝ ΒΙΒΛΙΟΝ
 <lb/>ΔΕΥΤΕΡΟΝ.</head>
-<p>Ὅτι μὲν δὴ τῶν πολλαχῶς λεγομένων ἐστὶν
+               <p>Ὅτι μὲν δὴ τῶν πολλαχῶς λεγομένων ἐστὶν
 <lb/>ὑγρόν τε καὶ ξηρὸν σῶμα, καὶ θερμὸν καὶ ψυχρὸν, ἐν τῷ
 <lb/>πρὸ τοῦδε λόγῳ διῄρηται. δέδεικται δὲ, ὡς ἐννέα διαφοραὶ
 <lb/>τῶν κράσεών εἰσι, μία μὲν ἡ σύμμετρός τε καὶ εὔκρατος, αἱ
@@ -1401,8 +1412,7 @@
 <lb/>τινὶ παραβαλλόμενον ἢ φυτῶν ἢ ζώων ἢ ἀψύχων γένει.
 
 <pb n="574"/>
-
-<milestone unit="ed2page" n="53"/>τὸ μὲν γὰρ τοῦ ζῶντος σῶμα, τῷ τοῦ νεκροῦ παραβαλλόμενον,
+                  <milestone unit="ed2page" n="53"/>τὸ μὲν γὰρ τοῦ ζῶντος σῶμα, τῷ τοῦ νεκροῦ παραβαλλόμενον,
 <lb/>ὑγρότερόν ἐστι καὶ θερμότερον. οἷον, εἰ τύχοι,
 <lb/>λέων ζῶν λέοντος τεθνεῶτος, ἢ αὐτὸς ἑαυτοῦ τις, ἢ ἕτερος
 <lb/>ἑτέρου θερμότερός ἐστι καὶ ὑγρότερος. καὶ διὰ τοῦτ’
@@ -1470,10 +1480,10 @@
 <lb/>τρίχας ἔχει, παῖς μὲν ὢν, πυῤῥοτέρας μᾶλλον ἢ μελαντέρας,
 <lb/>ἀκμάζων δ’ ἔμπαλιν.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="11">
-<p>
-<milestone unit="ed2page" n="54"/>Ἐπεὶ δὲ καὶ τῆς κατὰ τὰς ἡλικίας
+            </div>
+            <div n="11" type="chapter">
+               <p>
+                  <milestone unit="ed2page" n="54"/>Ἐπεὶ δὲ καὶ τῆς κατὰ τὰς ἡλικίας
 <lb/>αὐτοῦ διαφορᾶς ἐπεμνήσθημεν, οὐδὲν ἂν εἴη χεῖρον ἤδη τι
 <lb/>καὶ περὶ τούτων εἰπεῖν. ἐβουλόμην μὲν οὖν πρότερον ἑκάστου
 <lb/>τῶν εἰρημένων γνωρισμάτων ἐπελθεῖν τὰς αἰτίας, ἀλλ’ ἐπεὶ
@@ -1876,7 +1886,7 @@
 <lb/>αἴσθησιν ἐν πολλῇ τῇ κατὰ μέρος ἐμπειρίᾳ, τὴν ἰσότητα
 <lb/>τῆς θερμότητος ἐξευρεῖν ἔν τε τοῖς παισὶ καὶ τοῖς ἀκμάζουσι,
 <lb/>
-<milestone unit="ed2page" n="60"/>καὶ μὴ τῷ τὴν μὲν ἐφ’ ὑγρᾶς οὐσίας φαίνεσθαι,
+                  <milestone unit="ed2page" n="60"/>καὶ μὴ τῷ τὴν μὲν ἐφ’ ὑγρᾶς οὐσίας φαίνεσθαι,
 <lb/>τὴν δ’ ἐπὶ ξηρᾶς, ἐξαπατᾶσθαι. καὶ γὰρ λίθος ὕδατι δύναταί
 <lb/>ποτε τὴν ἴσην δέξασθαι θερμασίαν, οὐδὲν διαφέρον,
 <lb/>εἰ ξηρὸς μὲν ὁ λίθος ἐστὶν, ὑγρὸν δὲ τὸ ὕδωρ. οὕτως οὖν
@@ -1898,9 +1908,9 @@
 <lb/>ἥδιον· ἐν δὲ τοῖς ἀκμάζουσιν ὀλίγη καὶ ξηρὰ καὶ οὐχ
 <lb/>ὁμοίως ἡδεῖα τῆς θερμασίας ἡ προσβολή.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="12">
-<p>Θερμοῦ μὲν δὴ καὶ ψυχροῦ σώματος ἁφὴ
+            </div>
+            <div n="12" type="chapter">
+               <p>Θερμοῦ μὲν δὴ καὶ ψυχροῦ σώματος ἁφὴ
 <lb/>μόνη γνώμων ἐστίν· ὑγροῦ δὲ καὶ ξηροῦ σὺν τῇ ἁφῇ λογισμός.
 <lb/>τὸ μὲν γὰρ ξηρὸν σκληρὸν πάντως· ἀλλὰ τοῦτο μὲν
 <lb/>ἁφῇ αἰσθητόν· οὐ μὴν, εἴ τι καὶ σκληρὸν, εὐθὺς ἤδη καὶ
@@ -1939,7 +1949,7 @@
 <lb/>ἐφεξῆς ἐστι τῇ πιμελῇ καθ’ ὑγρότητα, τῇ μαλακότητι τεκμαίρεσθαι
 <lb/>πάρεστιν. οὐ γὰρ δὴ ὑπὸ ψυχροῦ γε πέπηγεν,
 <lb/>
-<milestone unit="ed2page" n="61"/>ὅτι μηδὲ θερμῷ χεῖται. πλησίον δὲ τούτων καὶ ὁ
+                  <milestone unit="ed2page" n="61"/>ὅτι μηδὲ θερμῷ χεῖται. πλησίον δὲ τούτων καὶ ὁ
 <lb/>μυελὸς τὴν φύσιν ἐστὶν, οὐ μὴν ὁμοιογενὴς ὁ καθ’
 <lb/>ἕκαστον ὀστοῦν μυελὸς ἐγκεφάλῳ τε καὶ νωτιαίῳ. ἀλλ’
 <lb/>ἐγκέφαλος μὲν καὶ νωτιαῖος ἐκ ταὐτοῦ γένους· οἱ δ’ ἄλλοι
@@ -2018,9 +2028,9 @@
 ἀλλ’ ὑγρότητι συμφύτῳ τοιοῦτο ἐγένετο. περὶ μὲν
 <lb/>οὖν τῶν κατὰ τὸ σῶμα μορίων τε καὶ χυμῶν ᾧδε ἔχει.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="13">
-<p>Περὶ δὲ τῶν ἑπομένων ταῖς κράσεσιν ἐφεξῆς
+            </div>
+            <div n="13" type="chapter">
+               <p>Περὶ δὲ τῶν ἑπομένων ταῖς κράσεσιν ἐφεξῆς
 <lb/>χρὴ διελθεῖν. ἕπεται μὲν γὰρ καὶ τὰ προειρημένα, μᾶλλον
 <lb/>δ’ ἀχώριστα τελέως ἐστὶ, ξηρῷ μὲν σκληρότης, ὑγρῷ δὲ
 <lb/>μαλακότης, ὅταν γε μετὰ χλιαρᾶς ᾖ θερμότητος. ἀλλὰ καὶ
@@ -2074,7 +2084,7 @@
 <lb/>πιμελωδέστερα. καὶ γυναῖκες ἀνδρῶν, ὅτι καὶ τῇ κράσει
 <lb/>ψυχρότερον ἄῤῥενος τὸ θῆλυ, καὶ οἰκουρεῖ τὰ πολλά.
 <lb/>ὅσαι μὲν οὖν ἕξεις σωμάτων εὔκρατοί τέ εἰσι φύσει <milestone unit="ed2page" n="63"/>
-<lb/>καὶ πονοῦσι τὰ μέτρια, ταύτας ἀναγκαῖον εὐσάρκους γίνεσθαι,
+                  <lb/>καὶ πονοῦσι τὰ μέτρια, ταύτας ἀναγκαῖον εὐσάρκους γίνεσθαι,
 
 ﻿<pb n="607"/>
 
@@ -2146,7 +2156,7 @@
 <lb/>θερμοῦ τὴν ἀρίστην εὐκρασίαν φυλάττοντος, αὐξηθὲν
 <lb/>τὸ ὑγρὸν ἐν ὅροις ὑγιεινοῖς οὐ πιμελώδη τὸν ἄνθρωπον,
 <lb/>
-<milestone unit="ed2page" n="64"/>ἀλλὰ πολύσαρκον ἀποδείκνυσι, συναυξομένης μὲν ἐπ’
+                  <milestone unit="ed2page" n="64"/>ἀλλὰ πολύσαρκον ἀποδείκνυσι, συναυξομένης μὲν ἐπ’
 <lb/>ὀλίγον καὶ τῆς πιμελῆς, ἀλλὰ πολλῷ πλείονι μέτρῳ τῆς
 <lb/>σαρκός· οὕτως αὖ πάλιν, εἰ τὸ ὑγρόν τε καὶ ξηρὸν ἀκριβῆ
 <lb/>τὴν πρὸς ἄλληλα φυλάττοι συμμετρίαν, ἧττον δ’ εἴη θερμὸς
@@ -2168,9 +2178,9 @@
 <lb/>λεπτότητα καὶ πάχος εἴρηται νῦν, ὑπὲρ δὲ τῶν ἄλλων ἤδη
 <lb/>λεγέσθω.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="14">
-<p>Δασεῖα μὲν ἡ θερμὴ καὶ ξηρὰ κρᾶσίς ἐστιν,
+            </div>
+            <div n="14" type="chapter">
+               <p>Δασεῖα μὲν ἡ θερμὴ καὶ ξηρὰ κρᾶσίς ἐστιν,
 <lb/>ἀλλ’ αὕτη μὲν ἐσχάτως· μετρίως δ’ ἡ θερμὴ μὲν, σύμμετρος
 <lb/>δὲ κατὰ τὴν ἑτέραν ἀντίθεσιν· ὥσπερ γε καὶ ἡ ξηρὰ
 <lb/>μὲν, εὔκρατος δὲ κατὰ τὸ θερμόν τε καὶ ψυχρὸν· ἔστι γὰρ
@@ -2288,7 +2298,7 @@
 εὐθυπορεῖν ὑπ’ ἀῤῥωστίας ἀδυνατοῦσα, καθ’ ὃν ἂν
 <lb/>αὕτη τρόπον ἑλίττηται, καὶ τὸν πόρον οὕτως ἐτύπωσεν.
 <lb/>
-<milestone unit="ed2page" n="66"/>ἐνίοτε δὲ ἡ μὲν ἀναθυμίασις εὔρωστός ἐστιν, ὑπὸ δὲ
+                  <milestone unit="ed2page" n="66"/>ἐνίοτε δὲ ἡ μὲν ἀναθυμίασις εὔρωστός ἐστιν, ὑπὸ δὲ
 <lb/>τῆς τοῦ δέρματος φύσεως, σκληροτέρας τοῦ προσήκοντος
 <lb/>οὔσης, εἰργομένη φέρεσθαι κατ’ εὐθὺ, πρὸς τὸ πλάγιον
 <lb/>ἐπιστρέφεται, καθάπερ γε κᾀκτὸς ἰδεῖν ἐστιν, οὐ μόνον
@@ -2360,7 +2370,7 @@
 <lb/>μέντοι πλῆθος οὐκ ὀλίγον ἔκ τε τῶν κατὰ τὸν ἐγκέφαλον,
 <lb/>ἤδη δὲ κᾀξ ὅλου τοῦ σώματος αἰθαλωδῶν περιττωμάτων.
 <lb/>
-<milestone unit="ed2page" n="67"/>ὥσθ’, οἶον τοῖς ἀκμάζουσιν ὅλον γίνεται τὸ σῶμα,
+                  <milestone unit="ed2page" n="67"/>ὥσθ’, οἶον τοῖς ἀκμάζουσιν ὅλον γίνεται τὸ σῶμα,
 <lb/>τοιοῦτο ἤδη τὸ δέρμα τῆς κεφαλῆς ἐστι τοῖς βρέφεσι. εὐλόγως
 <lb/>οὖν ἔνιοι φαλακροῦνται, τοῦ χρόνου προϊόντος, <milestone unit="ed1page" n="76"/>οἷς
 <lb/>ἐξ ἀρχῆς ἦν σκληρότερον τὸ δέρμα. δέδεικται γὰρ ἔμπροσθεν,
@@ -2390,11 +2400,10 @@
 <lb/>σαρκώδης δὲ πᾶς μῦς, ἡ δὲ σὰρξ ὀστοῦ καὶ δέρματος
 <lb/>ὑγροτέρα.
 ﻿</p>
-</div>
-<pb n="622"/>
-
-<div type="textpart" subtype="chapter" n="15">
-<p>Ἀκριβῶς δὲ χρὴ προσέχειν τῷ λεγομένῳ τὸν
+            </div>
+            <pb n="622"/>
+            <div n="15" type="chapter">
+               <p>Ἀκριβῶς δὲ χρὴ προσέχειν τῷ λεγομένῳ τὸν
 <lb/>νοῦν, ὅπως μὴ λάθωμεν ἡμᾶς αὐτοὺς παρακούσαντές τι καὶ
 <lb/>σφαλέντες, οἶα δὴ πολλοὶ τῶν πάνυ δοκούντων ἀρίστων ἰατρῶν
 <lb/>εἶναι σφάλλονται, εἴ τίς ἐστι φαλακρὸς, εὐθὺς τοῦτον
@@ -2502,12 +2511,12 @@
 <lb/>αὐτῶν. προσεπισκέψασθαι δὲ καὶ τὰς τῶν περιεχόντων
 <lb/>αὐτὰ μορίων διαθέσεις, ὧν ἁπάντων ἔξωθέν ἐστι τὸ δέρμα,
 <lb/>
-<milestone unit="ed2page" n="69"/>κατὰ τὴν ἡμετέραν οἴκησιν εὔκρατον οὖσαν, ἐνδεικνύμενον
+                  <milestone unit="ed2page" n="69"/>κατὰ τὴν ἡμετέραν οἴκησιν εὔκρατον οὖσαν, ἐνδεικνύμενον
 <lb/>τῶν ὑποκειμένων μορίων τὴν φύσιν, οὐδ’ ἐν αὐτῇ
 <lb/>πάντων ἁπλῶς, ἀλλ’ ὅσα ταῖς κράσεσιν ὡσαύτως ἔχει τῷ
 <lb/>δέρματι. κατὰ δὲ τὰς ὑπὸ ταῖς ἄρκτοις τε καὶ τῇ μεσημβρίᾳ
 <lb/>
-<milestone unit="ed1page" n="77"/>χώρας, ἐπειδὴ τῶν μὲν εἰς τὸ βάθος ἀπελήλαται
+                  <milestone unit="ed1page" n="77"/>χώρας, ἐπειδὴ τῶν μὲν εἰς τὸ βάθος ἀπελήλαται
 <lb/>τὸ θερμὸν, ὑπὸ τοῦ περιέχοντος ἔξωθεν κρύους νικώμενον,
 <lb/>τῶν δὲ εἰς τὸ δέρμα προσελήλυθεν, ὑπὸ τοῦ περιέχοντος
 <lb/>θάλπους ἑλκόμενον, οὐκ ἐκ τῆς κατὰ τὸ δέρμα διαθέσεως
@@ -2643,7 +2652,7 @@
 
 καὶ βόεια κάλλιον πεφθήσονται τῶν πετραίων ἰχθύων.
 <lb/>
-<milestone unit="ed2page" n="71"/>εἰ δ’ ἐξ ἥπατος καταῤῥέοι, παρὰ τὴν τῶν ἐδεσμάτων
+                  <milestone unit="ed2page" n="71"/>εἰ δ’ ἐξ ἥπατος καταῤῥέοι, παρὰ τὴν τῶν ἐδεσμάτων
 <lb/>ὑπάλλαξιν οὐδὲ μία τῆς πέψεως ἔσται διαφορά. ἐν τούτοις
 <lb/>μὲν δὴ διώρισται τὸ δι’ ἄλλο τι καὶ μὴ διὰ τὴν κρᾶσιν
 <lb/>γενόμενον. κατὰ τὸν <milestone unit="ed1page" n="78"/>αὐτὸν δὲ τρόπον, εἰ κᾀκ
@@ -2854,7 +2863,7 @@
 <lb/>ἀνώμαλος γάρ τις ἐν τοῖς φλεγμαίνουσι μορίοις γίνεται
 <lb/>δυσκρασία, τῶν μὲν ὁμοιομερῶν σωμάτων οὔπω τῆς οἰκείας
 <lb/>
-<milestone unit="ed2page" n="74"/>ἐξεστηκότων φύσεως, ἀλλ’ ἔτι μεταβαλλομένων τε καὶ
+                  <milestone unit="ed2page" n="74"/>ἐξεστηκότων φύσεως, ἀλλ’ ἔτι μεταβαλλομένων τε καὶ
 <lb/>ἀλλοιουμένων, ἐμπεπλησμένων δὲ τοῦ ῥεύματος ἁπάντων
 <lb/>τῶν μεταξὺ χώρων. ἅπαντα οὖν, ὅσα θερμὰ καὶ ὑγρὰ τὴν
 <lb/>κρᾶσίν ἐστιν, προσαγόμενα τοῖς οὕτω διακειμένοις, ἐκκενοῖ
@@ -2876,15 +2885,14 @@
 <lb/>ἅπας ἡμῖν ὁ περὶ κράσεων λόγος, εἴς τε τὴν θεραπευτικὴν
 <lb/>μέθοδον οὐ σμικρὰς ἀφορμὰς παρέξει.
 </p>
-</div>
-</div>
-<pb n="646"/>
-
-<div type="textpart" subtype="book" n="3">
-<div type="textpart" subtype="chapter" n="16">
-<head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΚΡΑΣΕΩΝ ΒΙΒΛΙΟΝ
+            </div>
+         </div>
+         <pb n="646"/>
+         <div n="3" type="book">
+            <div n="16" type="chapter">
+               <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΚΡΑΣΕΩΝ ΒΙΒΛΙΟΝ
 <lb/>ΤΡΙΤΟΝ.</head>
-<p>Ὅτι μὲν οὖν ἕκαστον τῶν ἐνεργείᾳ θερμῶν
+               <p>Ὅτι μὲν οὖν ἕκαστον τῶν ἐνεργείᾳ θερμῶν
 <lb/>καὶ ψυχρῶν καὶ ξηρῶν καὶ ὑγρῶν ἢ τῷ τὴν ἄκραν δεδέχθαι
 <lb/>ποιότητα τοιοῦτο εἶναί φαμεν, ἢ ἐπικρατήσει τινὸς ἐξ αὐτῶν,
 <lb/>ἢ πρὸς τὸ σύμμετρον ὁμογενὲς παραβάλλοντες, ἢ πρὸς
@@ -3047,7 +3055,7 @@
 <lb/>ὅλης τῆς οὐσίας ἑκάστου τῶν σωμάτων, ἣν ἐκ θερμοῦ
 <lb/>καὶ ψυχροῦ, καὶ ξηροῦ καὶ ὑγροῦ κεκρᾶσθαι φαμέν.
 <lb/>
-<milestone unit="ed2page" n="78"/>ἐπειδὰν δὲ κατὰ μίαν ἡντιναοῦν τῶν ἐν αὐτῇ ποιοτήτων
+                  <milestone unit="ed2page" n="78"/>ἐπειδὰν δὲ κατὰ μίαν ἡντιναοῦν τῶν ἐν αὐτῇ ποιοτήτων
 <lb/>τὸ σῶμα μεταβάλλῃ τὸ πλησιάζον, οὔτε καθ’ ὅλην ἐνεργεῖν
 <lb/>αὐτοῦ τηνικαῦτα τὴν οὐσίαν ὑποληπτέον, οὔτ’ ἐξομοιωθῆναι
 <lb/>δύνασθαι τὸ μεταβαλλόμενον· ὥστ’ οὐδὲ θρέψειεν ἄν ποτε
@@ -3060,13 +3068,13 @@
 τοῦ μεταβληθέντος. οὐδὲ γὰρ ἄλλο τι θρέψις ἐστὶ παρὰ
 <lb/>τὴν τελείαν ὁμοίωσιν.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="17">
-<p>Ἐπειδὴ δὲ τοῦτο διώρισται, πάλιν ἐκεῖθεν
+            </div>
+            <div n="17" type="chapter">
+               <p>Ἐπειδὴ δὲ τοῦτο διώρισται, πάλιν ἐκεῖθεν
 <lb/>ἀρκτέον τοῦ λόγου. τῶν ζώων ἕκαστον οἰκείαις τρέφεται
 <lb/>τροφαῖς· οἰκεία δ’ ἐστὶν ἑκάστῳ τροφὴ, πᾶν ὅ τι ἂν ἐξομοιωθῆναι
 <lb/>
-<milestone unit="ed1page" n="81"/>δύνηται τῷ τρεφομένῳ σώματι. χρὴ τοίνυν
+                  <milestone unit="ed1page" n="81"/>δύνηται τῷ τρεφομένῳ σώματι. χρὴ τοίνυν
 <lb/>ὅλην τὴν οὐσίαν τοῦ τρέφοντος ὅλῃ τῇ τοῦ τρεφομένου φύσει
 <lb/>κοινωνίαν τέ τινα καὶ ὁμοιότητα κεκτῆσθαι, πάντως οὐκ
 <lb/>ὀλίγης οὐδ’ ἐνταῦθα τῆς κατὰ τὸ μᾶλλόν τε καὶ ἧττον
@@ -3193,9 +3201,9 @@
 <lb/>ἅπαντα τοῖς τε περὶ στοιχείων καὶ τοῖς περὶ κράσεων
 <lb/>λογισμοῖς.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="18">
-<p>Ἐκεῖνο δ’ ἂν ἴσως δόξειε διαφέρεσθαι, τό
+            </div>
+            <div n="18" type="chapter">
+               <p>Ἐκεῖνο δ’ ἂν ἴσως δόξειε διαφέρεσθαι, τό
 <lb/>τινα τῶν ἐσθιομένων ἐν τροφῆς χρείᾳ, κατὰ τοῦ δέρματος
 <lb/>ἐπιτιθέμενα, διαβιβρώσκειν τε καὶ ἑλκοῦν αὐτὸ, καθάπερ
 <lb/>νάπυ καὶ τάριχος, σκόροδά τε καὶ κρόμμυα. καίτοι τοῦτο
@@ -3326,9 +3334,9 @@
 εἰ δὲ τῶν ἐπ’ ὀλίγον ποσὸν ἀλλοιουμένων, θερμαίνει πάντως·
 <lb/>εἰ δὲ τῶν μηδ’ ὅλως, ψύχει μάλιστα.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="19">
-<p>Προσέχειν δὲ, ὡς εἴρηται, μάλιστα καὶ διορίζεσθαι
+            </div>
+            <div n="19" type="chapter">
+               <p>Προσέχειν δὲ, ὡς εἴρηται, μάλιστα καὶ διορίζεσθαι
 <lb/>τὰ καθ’ ἑαυτὰ τῶν κατὰ συμβεβηκὸς, οὐκ ἐπὶ
 <lb/>θερμῶν καὶ ψυχρῶν μόνον, ἀλλ’ οὐδὲν ἧττον αὐτῶν ἐφ’
 <lb/>ὑγρῶν τε καὶ ξηρῶν. ἔνια γὰρ τῶν τοιούτων, ξηρὰ ταῖς
@@ -3482,14 +3490,13 @@
 <lb/>μὲν ἔτι καὶ τότε τὸ νικώμενον εἰς τὸ κρατοῦν, ἀλλ’ οὕτω
 
 ﻿<pb n="676"/>
-
-<milestone unit="ed1page" n="84"/>σμικρὸν, ὡς λανθάνειν τὴν αἴσθησιν. οὐδὲ γὰρ ὁ
+                  <milestone unit="ed1page" n="84"/>σμικρὸν, ὡς λανθάνειν τὴν αἴσθησιν. οὐδὲ γὰρ ὁ
 <lb/>τμητικώτατος σίδηρος εἰ τὸν μαλακώτατον τέμνει κηρὸν δι’
 <lb/>ὅλης ἡμέρας καὶ νυκτὸς, ἀδύνατον αὐτῷ μὴ οὐκ ἀμβλὺν
 <lb/>γενέσθαι σαφῶς. οὕτω δή που κᾀκεῖνο καλῶς εἰρῆσθαι
 <lb/>δοκεῖ,</p>
-<l>Πέτρην κοιλαίνει ῥανὶς ὕδατος ἐνδελεχείῃ.</l>
-<p>καὶ γὰρ καὶ φαίνεται γινόμενον οὕτως. ἀλλ’ ἐπὶ μὲν μιᾶς
+               <l>Πέτρην κοιλαίνει ῥανὶς ὕδατος ἐνδελεχείῃ.</l>
+               <p>καὶ γὰρ καὶ φαίνεται γινόμενον οὕτως. ἀλλ’ ἐπὶ μὲν μιᾶς
 <lb/>ἢ καὶ δευτέρας προσβολῆς οὐδὲν οὔπω σαφὲς ἐν τοῖς τοιούτοις
 <lb/>ἰδεῖν ἐστιν. ὅθεν, οἶμαι, καὶ τὸ μηδ’ ὅλως πάσχειν
 <lb/>ἔνια πρὸς τῶν ὁμιλούντων ἐδοξάσθη τισί· καὶ συγχωρητέον
@@ -3650,10 +3657,10 @@
 <lb/>ἡ μὲν γὰρ τῶν ὀρτύγων κρᾶσις ἐξομοιοῦν ἑαυτῇ δύναται
 <lb/>τὸν ἑλλέβορον, ἡ δὲ τῶν ἀνθρώπων οὐ δύναται.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="20">
-<p>
-<milestone unit="ed2page" n="87"/>Φανερὸν οὖν ἤδη γέγονεν, ὡς ἡ κρίσις
+            </div>
+            <div n="20" type="chapter">
+               <p>
+                  <milestone unit="ed2page" n="87"/>Φανερὸν οὖν ἤδη γέγονεν, ὡς ἡ κρίσις
 <lb/>τῶν πρὸς ἡμᾶς ὑγρῶν, ἢ ξηρῶν, ἢ ψυχρῶν, ἢ θερμῶν, οὐκ
 <lb/>ἔξωθέν ποθεν, ἀλλ’ ἐξ ὧν ἡμεῖς αὐτοὶ πάσχομεν, ἀκριβῶς
 <lb/>ἂν γίνοιτο, καὶ ὡς πρώτην μὲν καὶ μάλιστα ταύτην εἴη
@@ -3829,9 +3836,9 @@
 <lb/>γυμνασίαν ἁπάντων ἅμα τούτων τοῖς οἰκείοις παραδείγμασιν,
 <lb/>ἐν τοῖς περὶ φαρμάκων ὑπομνήμασι ποιησόμεθα.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="21">
-<p>Νυνὶ δὲ πάλιν ἀναμνήσας, ὧν ἤδη καὶ πρόσθεν
+            </div>
+            <div n="21" type="chapter">
+               <p>Νυνὶ δὲ πάλιν ἀναμνήσας, ὧν ἤδη καὶ πρόσθεν
 <lb/>εἶπον, ἐπιθεῖναι πειράσομαι τῷ παρόντι λόγῳ τὴν προσήκουσαν
 <lb/>τελευτήν. ἐπειδὴ γὰρ τὸ θερμὸν σῶμα πολλαχῶς ἐλέγετο,
 
@@ -3843,7 +3850,7 @@
 <lb/>πρὸς ὁτιοῦν τὸ τυχὸν, οὕτω χρὴ καὶ τὸ δυνάμει μὲν θερμὸν,
 <lb/>ἐνεργείᾳ δ’ οὐδέπω, καὶ νοεῖσθαι καὶ δοκιμάζεσθαι πολλαχῶς.
 <lb/>
-<milestone unit="ed2page" n="90"/>ὅθεν οὐκ ὀρθῶς, εἴ τι μὴ ταχέως ἐκπυροῦται, τοῦτ’
+                  <milestone unit="ed2page" n="90"/>ὅθεν οὐκ ὀρθῶς, εἴ τι μὴ ταχέως ἐκπυροῦται, τοῦτ’
 <lb/>ἔνιοι νομίζουσιν οὐδὲ πρὸς ἡμᾶς εἶναι δυνάμει θερμόν. εἴτε γὰρ
 <lb/>εὔπεπτόν ἐστι, καὶ τρέφει ταχέως, εἴη ἂν ὡς πρὸς ἡμᾶς θερμὸν,
 <lb/>εἴτε θερμαίνει προσφερόμενον ὡς φάρμακον, εἴη ἂν καὶ
@@ -3868,9 +3875,8 @@
 <lb/>ἐπικτήτου θερμασίας τε καὶ ψύξεως ἀπηλλάχθαι χρὴ, καθότι
 <lb/>κᾀπὶ τῶν φαρμάκων αὐτῶν εἴρηται πρόσθεν.
 </p>
-</div>
-</div>
-</div>
-</body>
-</text>
+            </div>
+         </div>
+      </body>
+   </text>
 </TEI>

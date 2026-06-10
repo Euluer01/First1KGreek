@@ -1,160 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">
-    <fileDesc>
-        <titleStmt>
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
             <title xml:lang="lat">Oratio 60</title>
             <author>Libanius</author>
             <editor>Richard Foerster</editor>
-                <sponsor>University of Leipzig</sponsor>
-    <funder>European Social Fund Saxony</funder>
-    <principal>Gregory Crane</principal>
-    <respStmt>
-          <persName>Gregory R. Crane</persName>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-        </respStmt>
-        <respStmt>
-          <persName xml:id="DDD">Digital Divide Data</persName>
-          <resp>Corrected and encoded the text</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Matt Munson</persName>
-          <resp>Project Manager (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Annette Geßner</persName>
-          <resp>Project Assistant (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Thibault Clérice</persName>
-          <resp>Lead Developer (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Bruce Robertson</persName>
-          <resp>Technical Advisor</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Greta Franzini</persName>
-          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Frederik Baumgardt</persName>
-          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Simona Stoyanova</persName>
-          <resp>Project Manager (University of Leipzig), 2015</resp>
-          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-    <authority>University of Leipzig</authority>
-    <idno type="filename">tlg2200.tlg00460.opp-grc1.xml</idno>
-    <availability>
-     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-    </availability>
-    <date>2016</date>
-    <publisher>University of Leipzig</publisher>
-    <pubPlace>Germany</pubPlace>
-   </publicationStmt>
-   
-   <sourceDesc>
-    <listBibl>
-    <biblStruct>
-                <monogr>
-                    <editor>
+            <sponsor>University of Leipzig</sponsor>
+            <funder>European Social Fund Saxony</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName>Gregory R. Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Geßner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Greta Franzini</persName>
+               <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Frederik Baumgardt</persName>
+               <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Simona Stoyanova</persName>
+               <resp>Project Manager (University of Leipzig), 2015</resp>
+               <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>University of Leipzig</authority>
+            <idno type="filename">tlg2200.tlg00460.opp-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2016</date>
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg2200.tlg00460.opp-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <editor>
                         <persName>
-                            <name xml:lang="lat">Richardus Foerster</name>
-                            <addName xml:lang="deu">Richard Foerster</addName>
+                           <name xml:lang="lat">Richardus Foerster</name>
+                           <addName xml:lang="deu">Richard Foerster</addName>
                         </persName>
-                    </editor> 
-                    <author ref="urn:cts:greekLit:tlg2200">Libanius</author>  
-                    <title xml:lang="lat">Orationes LI-LXIV</title>
-                    <imprint>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg2200">Libanius</author>
+                     <title xml:lang="lat">Orationes LI-LXIV</title>
+                     <imprint>
                         <publisher>Teubner</publisher>
                         <pubPlace>Leipzig</pubPlace>
                         <date>1908</date>
-                    </imprint>
-                    <biblScope unit="volume">4</biblScope>
-                </monogr>
-                <ref target="https://archive.org/details/libaniiopera01libagoog">Internet Archive</ref>                
-            </biblStruct>
-    </listBibl>
-   </sourceDesc>
-   
-  </fileDesc>
-  <encodingDesc>
-   <p>The following text is encoded in accordance with EpiDoc standards and with the
+                     </imprint>
+                     <biblScope unit="volume">4</biblScope>
+                  </monogr>
+                  <ref target="https://archive.org/details/libaniiopera01libagoog">Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
     CTS/CITE Architecture.</p>
-      <refsDecl n="CTS">
-        <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-      </refsDecl>
-    </encodingDesc>
-  
-  <profileDesc>
-   <langUsage>
-    <language ident="lat">Latin</language>
-              <language ident="deu">German</language>
-                <language ident="grc">Greek</language>
-   </langUsage>
-  </profileDesc>
-  
- </teiHeader>
-  <text>
-    <body><div type="edition" n="urn:cts:greekLit:tlg2200.tlg00460.opp-grc1" xml:lang="grc">
-
-<div type="textpart" subtype="chapter" n="1">
-
-
-
-
-
-<pb n="311"/>
-
-<head>LX.</head>
-
-<head>ΜΟΝΩΙΔΙΑ ΕΙΣ ΤΟΝ ΕΝ ΤΗΙ ΔΑΦΝΗΙ
+         <refsDecl n="CTS">
+            <cRefPattern n="chapter"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="lat">Latin</language>
+            <language ident="deu">German</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg2200.tlg00460.opp-grc1">
+         <div n="1" type="chapter">
+            <pb n="311"/>
+            <head>LX.</head>
+            <head>ΜΟΝΩΙΔΙΑ ΕΙΣ ΤΟΝ ΕΝ ΤΗΙ ΔΑΦΝΗΙ
 
 ΝΕΩΝ ΤΟΥ ΑΠΟΛΛΩΝΟΣ.</head>
-
-<p>ἄνδρες, ὧν τοῖς ὀφθαλμοῖς ἀχλὺς κα- RIII 332
+            <p>ἄνδρες, ὧν τοῖς ὀφθαλμοῖς ἀχλὺς κα- RIII 332
 
 τακέχυται, ὥσπερ οὖν καὶ τοῖς ἐμοῖς, μήτε κα-
 
 <lg>
-
-<l>Μο = Monacensis gr. 101</l>
-
-<l>Ρ = Palatinus gr. 282</l>
-
-<l>U = Urbinas gr. 126</l>
-
-<l>Ι = Marcianus append. XCI 2</l>
-
-<l>Ν = Neapolitnus II Ε 17</l>
-
-<l>Β = Barberinus II 41</l>
-
-<l>Μ = Marcianus gr. 437</l>
-
-<l>L = Laurentianus XXXII 37</l>
-
-<l>chrys = Ioannis Chrysostomi oratio de S. Babyla
+                  <l>Μο = Monacensis gr. 101</l>
+                  <l>Ρ = Palatinus gr. 282</l>
+                  <l>U = Urbinas gr. 126</l>
+                  <l>Ι = Marcianus append. XCI 2</l>
+                  <l>Ν = Neapolitnus II Ε 17</l>
+                  <l>Β = Barberinus II 41</l>
+                  <l>Μ = Marcianus gr. 437</l>
+                  <l>L = Laurentianus XXXII 37</l>
+                  <l>chrys = Ioannis Chrysostomi oratio de S. Babyla
 
 contra Iulianum</l>
-
-<l>Chrys Sav = Ioannis Chrysostomi editio Saviliana</l>
-
-<l>Chrys Duc = Ioannis Chrysostomi ed Frontonis Ducaei</l>
-
-<l>Chrys Montf = Ioannis Chrysostomi ed. Montefalconis</l>
-
-</lg>
-
-<note type="footnote">3 II. υ 421; ε 696; π 344; Od. χ 88 4 Plat. Phaedr. p. s 242</note>
-
-<note type="footnote">1 Μονῳδία] ἑτέρα Ι | εἰς τὸν scripsi e MoUINML Thom M
+                  <l>Chrys Sav = Ioannis Chrysostomi editio Saviliana</l>
+                  <l>Chrys Duc = Ioannis Chrysostomi ed Frontonis Ducaei</l>
+                  <l>Chrys Montf = Ioannis Chrysostomi ed. Montefalconis</l>
+               </lg>
+               <note type="footnote">3 II. υ 421; ε 696; π 344; Od. χ 88 4 Plat. Phaedr. p. s 242</note>
+               <note type="footnote">1 Μονῳδία] ἑτέρα Ι | εἰς τὸν scripsi e MoUINML Thom M
 
 ρ. 35, 18; 42, 2; 103, 1 et 234, 6 ἐπὶ τῷ Ρ sed in ras m2, i
 
@@ -171,8 +154,7 @@ Thom M p. 35, 18; 39,9; 42,1; 103,1 ναὸν UIM Thom M p. 234, 6
 πυρὶ· ι ὣς ι φασι δέ κεραυνῶ post ἀπόλλωνος Par 963
 
 λόγος ἡ in marg I</note>
-
-<note type="footnote">3 Ἄνδρες — p. i 312, 1 πόλιν citavit Chrys § 18 p. i 566
+               <note type="footnote">3 Ἄνδρες — p. i 312, 1 πόλιν citavit Chrys § 18 p. i 566
 
 missis verbis καὶ ὅτι οὐ κομπάζων λέγω ταῦτα, αὐτά παραθή-
 
@@ -189,18 +171,14 @@ missis verbis καὶ ὅτι οὐ κομπάζων λέγω ταῦτα, α�
 missis verbis παρὰ Λιβανίῳ ἐν τῇ εἰς τὸν ναὸν τοῦ Ἀπόλλωνος
 
 μονῳδία·</note>
-
-
-
-<pb n="312"/>
+               <pb n="312"/>
 
 
 
 λὴν μή·τε μεγάλην ἔτι καλῶμεν τήνδε τὴν πό-
 
 λιν. . . .</p>
-
-<p>2. Τόν τοι βασιλέα Περσῶν τοῦ νῦν τούτου πο-
+            <p>2. Τόν τοι βασιλέα Περσῶν τοῦ νῦν τούτου πο-
 
 λεμοῦντος πρόγονον προδοσίᾳ τὸ ἄστυ λαβόντα καὶ
 
@@ -211,16 +189,15 @@ missis verbis παρὰ Λιβανίῳ ἐν τῇ εἰς τὸν ναὸν �
 νησε τῷ Ἀπόλλωνι. οὕτως αὐτὸν κατεπράυνέ τε καὶ
 
 διήλλαξε φανείς. . . .</p>
-
-<note type="marginal">RIII 833</note> <p>3. Ὁ μὲν στρατὸν ἐφ’ | ἡμᾶς ἀγαγὼν ᾤετο αὑτῷ
+            <note type="marginal">RIII 833</note>
+            <p>3. Ὁ μὲν στρατὸν ἐφ’ | ἡμᾶς ἀγαγὼν ᾤετο αὑτῷ
 
 <note type="footnote">3 Saporem cf. t. II 531, 18. Malal. XII ρ. 296, 4 sq. Zonar.
 
 XII 23 ρ. 630 Β. Amm. XXIII 5, 3 9 Zos. III 32; Malal. XII
 
 p. i 296, 4 sq.; Amm. XXIII 5, 3; Iul. Capit. Gord.</note>
-
-<note type="footnote">1 ἔτι post μεγάλην inserui cum Mor e Chrys Sav PUIN
+               <note type="footnote">1 ἔτι post μεγάλην inserui cum Mor e Chrys Sav PUIN
 
 ML, post καλὴν Chrys Duc Montf, post καλῶμεν MoB Thom Re
 
@@ -242,7 +219,7 @@ p. o 565 Β praemissis verbis εἰ γὰρ τὸν Περσῶν βασιλέ�
 
 διαφυγεῖν. om libri edd 9 Ὁ μἐν—p. s 313,5 ἀνάλωσεν
 
-Chrys § 18 ρ. 566 Β praemissis verbis εἶτα εἰπὼν τινα περὶ τοὐ
+Chrys &#x9d;§ 18 ρ. 566 Β praemissis verbis εἶτα εἰπὼν τινα περὶ τοὐ
 
 μύθου τῆς Δάφνης καὶ διαλεχθείς, οὐ γὰρ ἅπαντα ἐνθεῖναι τὸν
 
@@ -345,10 +322,7 @@ vit Plan I. I. | τόν νεὼν] τοῦτον Plan | μὲν om Plan
 
 
 </note>
-
-
-
-<pb n="313"/>
+               <pb n="313"/>
 
 
 
@@ -360,9 +334,9 @@ vit Plan I. I. | τόν νεὼν] τοῦτον Plan | μὲν om Plan
 
 τῶν οὔτε Ἱππέων οὔτε ψιλῶν τινων δεηθεὶς μικρῷ
 
-σπινθῆρι πάντα ἀνάλωσεν; . . .</p> <lb n="5"/>
-
-<p>4. Καὶ δὴ καὶ ἡμῖν τὸν νεὼν ὁ μὲν πολὺς ἐκεῖνος
+σπινθῆρι πάντα ἀνάλωσεν; . . .</p>
+            <lb n="5"/>
+            <p>4. Καὶ δὴ καὶ ἡμῖν τὸν νεὼν ὁ μὲν πολὺς ἐκεῖνος
 
 
 
@@ -373,8 +347,7 @@ vit Plan I. I. | τόν νεὼν] τοῦτον Plan | μὲν om Plan
 κατακλυσμὸς οὐ παρέσυρεν, ἐν αἰθρίᾳ δὲ καὶ τῆς νε-
 
 φέλης παρελθούσης κατενήνεκται. . . . . .</p>
-
-<p>5. Εἶτα διψώντων μέν σοι τῶν βωμῶν αἵματος
+            <p>5. Εἶτα διψώντων μέν σοι τῶν βωμῶν αἵματος
 
 ἔμενες, Ἄπολλον, φρουρὸς ἀκριβὴς τῆς Δάφνης, καὶ
 
@@ -389,8 +362,7 @@ vit Plan I. I. | τόν νεὼν] τοῦτον Plan | μὲν om Plan
 <note type="footnote">1 Arist. Eq. 527 6 Arist. Mon. Smyrn. t. I p. i 427,2
 
 (= t. II p. i 10, 17 K)</note>
-
-<note type="footnote">1 νεφέλης] αἰθρίας Plan 3 Εἶτα — p. i 315, 4
+               <note type="footnote">1 νεφέλης] αἰθρίας Plan 3 Εἶτα — p. i 315, 4
 
 citavit Chrys § 18 p. i 566 C praemissis verbis καὶ πάλιν
 
@@ -449,10 +421,7 @@ edd sed γρ ὅπη in marg Mor 6 ἠνέσχου Chrys Duc Montf Ι
 νου ἀνόσιον L 8 ποδὶ Β sed ο in ras 2 litt m2 i | ἠγάπας
 
 sed προὔλεγες in marg</note>
-
-
-
-<pb n="315"/>
+               <pb n="315"/>
 
 
 
@@ -463,8 +432,7 @@ sed προὔλεγες in marg</note>
 πείας ἀποπεπήδηκας. πόθεν ἔτι φιλοτιμησόμεθα πρὸς
 
 ἄνδρας ἱερῶν μεμνημένους καὶ ἀγαλμάτων;</p>
-
-<p>6. Οἴαν, ὦ Ζεῦ, γνώμης καμνούσης ἀφῃρέθημεν
+            <p>6. Οἴαν, ὦ Ζεῦ, γνώμης καμνούσης ἀφῃρέθημεν
 
 ἀνάπαυλαν. ὡς καθαρὸν μὲν θορύβων ἡ Δάφνη χω-
 
@@ -475,8 +443,7 @@ sed προὔλεγες in marg</note>
 ἀμφοῖν, πλείω δὲ τὴν ἡσυχίαν παρεχομένου τοῦ δευ-
 
 <note type="footnote">8 Eur. Hipp. 235</note>
-
-<note type="footnote">1 περ,ὶ τοῦ ἁγίου Βαβύλα λέγει, ὃς ἐν τᾔ Δάφνῃ ταφεὶς οὐκ
+               <note type="footnote">1 περ,ὶ τοῦ ἁγίου Βαβύλα λέγει, ὃς ἐν τᾔ Δάφνῃ ταφεὶς οὐκ
 
 εἴα τὸν Ἀπόλλω μαντεύεσθαι, ὁ(om INB) Ἰουλιανὸς δὲ βασι-
 
@@ -485,8 +452,7 @@ sed προὔλεγες in marg</note>
 καὶ ἐκβέβληται καὶ ἐκ in ras P 2) P 2 I 2 N 2 B 2 cf. Socr. h. e. III
 
 18; Sozom. V 19 et ad Lib. t. II 210, 6</note>
-
-<note type="footnote">1 μεμηνυμένου Ρ sed η in ras m 2 | ἀγαθοῦ L 2 ἐνο-
+               <note type="footnote">1 μεμηνυμένου Ρ sed η in ras m 2 | ἀγαθοῦ L 2 ἐνο-
 
 χλοῦντος inser B2 i om ML 3 πεπήδηκας U sed ras 3
 
@@ -503,8 +469,7 @@ tisae loco paucis in hunc modum adumbravit: ὅτι μὲν οὑν με-
 δεικται. καὶ γάρ καὶ ἐν μέσῳ που τῆς μονῳδίας ῥητῶς
 
 οὕτως περὶ τὰ καίρια πεπλῆχθαι αὐτούς ὡμολόγησεν.</note>
-
-<note type="footnote">5 Οἴαν—p. i 316, 3 νήσους citavit Chrys § 19 p. i 568
+               <note type="footnote">5 Οἴαν—p. i 316, 3 νήσους citavit Chrys § 19 p. i 568
 
 missis verbis ἀλλὰ γάρ τὸν παρ’ ἡμῶν λόγον στήσαντες τέως
 
@@ -529,10 +494,7 @@ in subsequentibus repetivit πῶς δὲ καθαρώτερος θορύβω�
 scripsi e Chrys (et Laur. LIX 30 fol. 157v) i τοῦ δευτέρου
 
 μένου libri edd</note>
-
-
-
-<pb n="316"/>
+               <pb n="316"/>
 
 
 
@@ -541,8 +503,7 @@ scripsi e Chrys (et Laur. LIX 30 fol. 157v) i τοῦ δευτέρου
 οὐκ ἂν φόβον, τίς δὲ οὐκ ἂν πένθος; τίς δὲ ἂν ἐπό-
 
 θησε τὰς τῶν] Μακάρων νήσους; . . .</p>
-
-<p>7. Ὀλύμπια μὲν οὐ μάλα πόρρω, συγκαλέσει δὲ ἡ
+            <p>7. Ὀλύμπια μὲν οὐ μάλα πόρρω, συγκαλέσει δὲ ἡ
 
 <lb n="5"/> πανήγυρις τὰς πόλεις. αἶ δὲ ἥξουσι βοῦς ἄγουσαι τῷ
 
@@ -554,9 +515,10 @@ scripsi e Chrys (et Laur. LIX 30 fol. 157v) i τοῦ δευτέρου
 
 <note type="marginal">RIII 334</note> τὰ Ὀλύμπια τοῦ πτ·ώματος ἐγγύθεν ἐπεμβάλλον-
 
-<lb n="10"/> τος ὀδυρμόν;</p></div>
-
-<div type="textpart" subtype="chapter" n="8"><p>δὸς τόξα μοι κερουλκά, φησὶν ἡ
+<lb n="10"/> τος ὀδυρμόν;</p>
+         </div>
+         <div n="8" type="chapter">
+            <p>δὸς τόξα μοι κερουλκά, φησὶν ἡ
 
 τραγῴδία. ἐγὼ δὲ λέγω, καὶ μαντικῆς τι μικρόν, ὅπως
 
@@ -567,10 +529,8 @@ scripsi e Chrys (et Laur. LIX 30 fol. 157v) i τοῦ δευτέρου
 <note type="footnote">1 Luc. Catapl. 16 4 Sievers p. i 207 sq. 7 cf. ad t.
 
 328, 20; t. III 215, 14. Soph. O. 1662 10 Eur. Or. 268</note>
-
-<note type="footnote">13 Od. λ 576 sq. Men. rhet. t. III ρ. 441, 13 ed. Sp.</note>
-
-<note type="footnote">1 δ’ Β edd 2 φόβον] πένθος MoPUIBML | δ’ ΡΜ
+               <note type="footnote">13 Od. λ 576 sq. Men. rhet. t. III ρ. 441, 13 ed. Sp.</note>
+               <note type="footnote">1 δ’ Β edd 2 φόβον] πένθος MoPUIBML | δ’ ΡΜ
 
 Re Ι πένθος φόβον MoPUIBML | δ’ libri edd 3 τῶν post
 
@@ -607,10 +567,7 @@ sed γρ ἐγγύθεν in marg 10 κερουλκά] καὶ χοίνικα 
 Mor 12 τοῖς] τᾔ Chrys | ὦ Re 13 καθαρᾶς L | θρασείας
 
 χειρὸς in marg I</note>
-
-
-
-<pb n="317"/>
+               <pb n="317"/>
 
 
 
@@ -626,9 +583,10 @@ Mor 12 τοῖς] τᾔ Chrys | ὦ Re 13 καθαρᾶς L | θρασείας
 
 πόρρωθεν φέροντι τὸ πῦρ οὐκ ἀπήντησεν οἰστὸς ἐπ’
 
-αὐτὴν πετόμενος τὴν καρδίαν;</p></div>
-
-<div type="textpart" subtype="chapter" n="9"><p>ὢ δεξιᾶς τελχῖνος,
+αὐτὴν πετόμενος τὴν καρδίαν;</p>
+         </div>
+         <div n="9" type="chapter">
+            <p>ὢ δεξιᾶς τελχῖνος,
 
 ὤ πυρὸς ἀδίκου. ποῦ ποτε ἄρα τὸ πρῶτον ἔπεσε; τί
 
@@ -645,8 +603,7 @@ Mor 12 τοῖς] τᾔ Chrys | ὦ Re 13 καθαρᾶς L | θρασείας
 or. II p. 36b. Iul. or. I p. i 28 C 7 Nonn. Dion. VIII 108.
 
 Lib. t. IV 586, 16 R</note>
-
-<note type="footnote">1 ἕτερος οὕτος PUINBML | λυγγέως libri cf. Apostol.
+               <note type="footnote">1 ἕτερος οὕτος PUINBML | λυγγέως libri cf. Apostol.
 
 prov. Χ 79 3 τοῦτο reposui e Chrys τοῦτ’ libri edd | τὸ in-
 
@@ -691,10 +648,7 @@ exhibet κίθαριν Ο. Mueller I. I. p. i 47 Ι Ἥφαιστος — p. i
 πυράν repetivit Chrys § 20, citavit Plan I. I. 12 δὲ δή scripsi
 
 e Chrys Sav Plan δὴ om libri edd</note>
-
-
-
-<pb n="318"/>
+               <pb n="318"/>
 
 
 
@@ -704,17 +658,17 @@ e Chrys Sav Plan δὴ om libri edd</note>
 
 ἀφῆκεν ἐπὶ τὴν φλόγα καὶ ταῦτα Λυδῶν ποτε βασιλεῖ
 
-δυστυχήσαντι σβέσας πυράν;</p></div>
-
-<div type="textpart" subtype="chapter" n="10"><p>τί ποτε ἄρα πρὸς
+δυστυχήσαντι σβέσας πυράν;</p>
+         </div>
+         <div n="10" type="chapter">
+            <p>τί ποτε ἄρα πρὸς
 
 <lb n="5"/> αὐτὸν εἶπεν ὁ τὸν πόλεμον ἀράμενος; πόθεν ποτὲ τὸ
 
 θάρσος; πῶς δ’ ἐφύλαξε τὴν ὁρμήν; πῶς δ’ οὐκ ἔλυσε
 
 τὸ δόγμα τοῦ θεοῦ τὸ κάλλος αἰδεσθείς;</p>
-
-<p>11. Ἄνδρες, ἕλκομαι τὴν ψυχὴν πρὸς τὸ εἶδος τοῦ
+            <p>11. Ἄνδρες, ἕλκομαι τὴν ψυχὴν πρὸς τὸ εἶδος τοῦ
 
 <lb n="9"/> θεοῦ καί μοι πρὸ τῶν ὀμμάτων ἵστησιν ὁ λογισμὸς |
 
@@ -725,10 +679,8 @@ e Chrys Sav Plan δὴ om libri edd</note>
 32, 2 3 Her. I 87. Nicol. Dam. fr. 68 (Hist. fr. III p. i 408
 
 Myth. Vat. I 196; II 190 6 Plat. Leg. p. i 867 A</note>
-
-<note type="footnote">3 ποτε βασιλεῖ] τῷ Κροίσῳ suprascr P2N2I</note>
-
-<note type="footnote">1 μηνύματος Chrys Sav sed γρ μηνίματος in marg 2 ἡνίας
+               <note type="footnote">3 ποτε βασιλεῖ] τῷ Κροίσῳ suprascr P2N2I</note>
+               <note type="footnote">1 μηνύματος Chrys Sav sed γρ μηνίματος in marg 2 ἡνίας
 
 Ρ sed η in ras m 5 | ὕδωρ ἄφηκεν scripsi e Chrys Plan ἄφηκεν
 
@@ -769,10 +721,7 @@ praemissis verbis Λιβάνιος ἐν τᾔ εἰς τὸν νεὼν το�
 μονῳδίᾳ· | δέρης reposui e PUIBM Thom δέρρης Chrys reli-
 
 qui libri edd</note>
-
-
-
-<pb n="319"/>
+               <pb n="319"/>
 
 
 
@@ -791,8 +740,7 @@ qui libri edd</note>
 μοι φαίνεται καὶ σπένδειν ἀπὸ τῆς χρυσῆς κυάθου,
 
 ὅτι τὴν κόρην ἴκρυψε ῥαγεῖσά τε καὶ συνελθοῦσα. . . .</p>
-
-<p>12. Ἐβόα μέν ὁδοιπόρος ἀνιούσης τῆς αὐγῆς, ἐκυ-
+            <p>12. Ἐβόα μέν ὁδοιπόρος ἀνιούσης τῆς αὐγῆς, ἐκυ-
 
 κᾶτο δέ φίλη Δάφνης ἔνοικος, ἱέρεια τοῦ θεοῦ. πλη- <lb n="10"/>
 
@@ -811,8 +759,7 @@ qui libri edd</note>
 
 
 <note type="footnote">3 cf. t. II 307, 1 8 cf. t. IV 1102 R</note>
-
-<note type="footnote">1 καὶ ταῦτα post ἐν λίθῳ Chrys num anteponenda? |
+               <note type="footnote">1 καὶ ταῦτα post ἐν λίθῳ Chrys num anteponenda? |
 
 ζωστῆρα—5 κιθαρίζοντος citavit Plan 1.1. | τὸ στῆθος libri |
 
@@ -831,8 +778,7 @@ sed υ ex ι corr m2 9 Ἐβόα—p. 320, 2 πῦρ citavit Chrys § 20
 p. 571 B praemissis verbis εἶτα μικρὰ πρὸς τὸν ἐμπρησμὸν ὀλοφυρόμενος
 
 ἐβόα μέν, φησίν | γῆς M sed γρ αὐγῆς in marg m2</note>
-
-<note type="footnote">10 δὲ φίλη B sed φι in Φυ corr m2, Mor sed γρ δὲ Φύλη
+               <note type="footnote">10 δὲ φίλη B sed φι in Φυ corr m2, Mor sed γρ δὲ Φύλη
 
 in marg δ᾿ ἐφ᾿ ὕλῃ Chrys et coni Mor1 Not. p. 23 | πληγὴ
 
@@ -847,12 +793,7 @@ Montf Plan | ζητῶν] „videtur λαβὼν melius convenire“ Re | εἶ�
 ante αὐτὸς Chrys Sau sed γρ ζητῶν αὐτὸς in marg, Plan qui
 
 haec verba usque ad p. 320, 2 φθείρουσαι citavit | μὲν om Plan</note>
-
-
-
-
-
-<pb n="320"/>
+               <pb n="320"/>
 
 
 
@@ -870,9 +811,10 @@ haec verba usque ad p. 320, 2 φθείρουσαι citavit | μὲν om Plan</n
 
 ἀποροῦντες, ὃ καταλαμβάνει τοὺς ἀπὸ γῆς ναυαγίαν
 
-ὁρῶντας, ὧν ἡ βοήθεια δακρύσαι τὸ γιγνόμενον.</p></div>
-
-<div type="textpart" subtype="chapter" n="13"><p>ἡ
+ὁρῶντας, ὧν ἡ βοήθεια δακρύσαι τὸ γιγνόμενον.</p>
+         </div>
+         <div n="13" type="chapter">
+            <p>ἡ
 
 που μέγαν μὲν ἤγειραν γόον ἐκπηδήσασαι τῶν πηγῶν αἱ
 
@@ -889,10 +831,8 @@ haec verba usque ad p. 320, 2 φθείρουσαι citavit | μὲν om Plan</n
 ed. Dind. (t. II p. i 10, 10 Κ) 13 cf. t. Ι 133, 8; t. II 152,
 
 444, 17; t. III 143, 7</note>
-
-<note type="footnote">9 ὁρᾶτε πλάνης Λιβάνιον πλήρη L in marg sup. folii 195</note>
-
-<note type="footnote">1 δοκοὶ — 2 πῦρ citavit Thom M s. ν. δοκός ρ. 102,16 prae-
+               <note type="footnote">9 ὁρᾶτε πλάνης Λιβάνιον πλήρη L in marg sup. folii 195</note>
+               <note type="footnote">1 δοκοὶ — 2 πῦρ citavit Thom M s. ν. δοκός ρ. 102,16 prae-
 
 missis verbis τὸ δοκὸς καὶ ἐπὶ θηλυκοῦ καὶ ἐπὶ ἀρσενικοῦ
 
@@ -925,18 +865,14 @@ Montf, ΡΙ sed in utroque o ex ω corr, Β sed o ex ω corr m2,
 coll. p. 84,7 et t. II 314,6 υἱέως Chrys Sav Duc reliqui libri
 
 edd 12 μυρίων δαιμόνων ML μυρίος Chrys Sav</note>
-
-
-
-<pb n="321"/>
+               <pb n="321"/>
 
 
 
 λιόπη τοῦ χοροποιοῦ τῶν Μουσῶν ἠδικημένου τῷ
 
 πυρί. . . .</p>
-
-<p>14. Γενοῦ μοι καὶ νῦν, Ἄπολλον, οἷόν σε ἐποίησεν
+            <p>14. Γενοῦ μοι καὶ νῦν, Ἄπολλον, οἷόν σε ἐποίησεν
 
 ὁ Χρύσης καταρώμενος τοῖς Ἀχαιοῖς θυμοῦ τε πλήρη
 
@@ -947,10 +883,8 @@ edd 12 μυρίων δαιμόνων ML μυρίος Chrys Sav</note>
 προανηρπάσθη τὸ τιμώμενον οἷον νυμφίου τινὸς πλε-
 
 κομένων ἤδη &lt;τῶν&gt; στεφάνων</p>
-
-<note type="footnote">4 II. α 44 et 47 | cf. t. II 528, 14</note>
-
-<note type="footnote">1 ἠδικημένων Μο quod admitti posse censuit Re, si scri-
+            <note type="footnote">4 II. α 44 et 47 | cf. t. II 528, 14</note>
+            <note type="footnote">1 ἠδικημένων Μο quod admitti posse censuit Re, si scri-
 
 batur τοῦ χοροποιοῦ, τῶν Μουσῶν ὁμοίως ἠδικημένων | non-
 
@@ -967,11 +901,7 @@ Duc Montf et γρ in marg Sav, Plan 7 τινὸς om Re 8 τῶν
 inserui e Plan om Chrys libri edd | Μονῳδία εἰς τὸν ἐν τῆ
 
 δάφνη ναὸν τοῦ ἀπόλλωνος subscr I2</note>
-
-</div></div>
-
-
-
-</body>
-  </text>
+         </div>
+      </body>
+   </text>
 </TEI>

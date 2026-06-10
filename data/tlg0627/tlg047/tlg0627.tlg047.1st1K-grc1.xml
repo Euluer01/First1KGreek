@@ -1,101 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">
-    
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">De visu</title>
-                <author>Hippocrates</author>
-                <editor>Émile Littré</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De visu</title>
+            <author>Hippocrates</author>
+            <editor>Émile Littré</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0627.tlg047.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0627.tlg047.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="fre">Oeuvres complètes d'Hippocrate</title>
-                        <author>Hippocrates</author>
-                        <editor>Émile Littré</editor>
-                        <imprint>
-                            <publisher>Baillière</publisher>
-                            <pubPlace>Paris</pubPlace>
-                            <biblScope unit="volume">9</biblScope>
-                            <biblScope unit="pp" from="152" to="160">152-160</biblScope>
-                            <date>1861</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/pst.000022913487?urlappend=%3Bseq=162">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0627.tlg047.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="fre">Oeuvres complètes d'Hippocrate</title>
+                  <author>Hippocrates</author>
+                  <editor>Émile Littré</editor>
+                  <imprint>
+                     <publisher>Baillière</publisher>
+                     <pubPlace>Paris</pubPlace>
+                     <biblScope unit="volume">9</biblScope>
+                     <biblScope unit="pp" from="152" to="160">152-160</biblScope>
+                     <date>1861</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/pst.000022913487?urlappend=%3Bseq=162">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-                <language ident="lat">Latin</language>
-                <language ident="fre">French</language>            
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0627.tlg047.1st1K-grc1">
-                <pb n="152"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΠΕΡΙ ΟΨΙΟΣ.</head>
-                    <p>1. Αἱ ὄψιες αἱ διεφθαρμέναι, αὐτόματοι μὲν κυανίτιδες γιγνόμεναι,
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+            <language ident="fre">French</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0627.tlg047.1st1K-grc1">
+         <pb n="152"/>
+         <div n="1" type="chapter">
+            <head>ΠΕΡΙ ΟΨΙΟΣ.</head>
+            <p>1. Αἱ ὄψιες αἱ διεφθαρμέναι, αὐτόματοι μὲν κυανίτιδες γιγνόμεναι,
                         <lb/>ἐξαπίνης γίνονται, καὶ ἐπειδὰν γένωνται, οὐκ ἔστιν ἴησις <lb/>τοιαύτη.
                         Αἱ δὲ θαλασσοειδέες γιγνόμεναι, κατὰ μικρὸν ἐν πολλῷ <lb/>χρόνῳ
                         διαφθείρονται, καὶ πολλάκις ὁ ἕτερος ὀφθαλμὸς ἐν πολλῷ <lb/>χρόνῳ ὕστερον
@@ -109,16 +116,16 @@
                         Ξυμφέρει δὲ τουτέῳ κάθαρσίς τε καὶ καῦσις τῆς κεφαλῆς· <lb/>αἷμα δὲ
                         τουτέοισιν οὐ ξυμφέρει ἀφιέναι, οὔτε τῇ κυανίτιδι, οὔτε τῇ
                         <lb/>θαλασσοειδεῖ. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>2. Καὶ τὸ ὄμμα ἐν τοῖσιν ὀφθαλμοῖσι, τῆς ὄψιος ὑγιέος οὔσης <lb/>τῶν νεωτέρων
+         </div>
+         <div n="2" type="chapter">
+            <p>2. Καὶ τὸ ὄμμα ἐν τοῖσιν ὀφθαλμοῖσι, τῆς ὄψιος ὑγιέος οὔσης <lb/>τῶν νεωτέρων
                         ἀνθρώπων, ἤν τε θήλεια ᾖ ἤν τ’ ἄρσην, οὐκ ἂν <pb n="154"/> ὠφελείης ποιέων
                         οὐθὲν, ἕως ἂν αὔξηται τὸ σῶμα ἔτι. Ὅταν δὲ <lb/>μηκέτι αὐξάνηται, αὐτέῳ τῷ
                         ὀφθαλμῷ σκεψάμενος τὰ βλέφαρα λεπτύνειν, <lb/>ξύων, ἢν δοκέῃ προσδέεσθαι,
                         καὶ ἐπικαίων ἔνδοθεν μὴ <lb/>διαφανέσιν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>3. .... Ἔπειτα ἀναδήσας, τὰ σκέλεα ἐκτείνας, δίφρον ὑποθεὶς <lb/>ἀφ’ οὗ
+         </div>
+         <div n="3" type="chapter">
+            <p>3. .... Ἔπειτα ἀναδήσας, τὰ σκέλεα ἐκτείνας, δίφρον ὑποθεὶς <lb/>ἀφ’ οὗ
                         στηρίζηται τῇσι χερσί· μέσον δέ τις ἐχέτω. Ἔπειτα <lb/>διασημήνασθαι τὰς
                         νωτιαίας φλέβας, σκοπεῖν δὲ ὄπισθεν. Ἔπειτα <lb/>καίειν παχέσι σιδηρίοισι
                         καὶ ἡσυχίῃ διαθερμαίνειν, ὅκως ἂν μὴ <lb/>ῥαγῇ αἷμα καίοντι· προαφιέναι δὲ
@@ -137,9 +144,9 @@
                         ἀναιρησόμεναι φαίνονται, ἕως ἂν <lb/>χρόνος ἐπιγένηται· καὶ κεφαλῆς
                         καυθείσης καὶ στήθεος, ὁμοίως δὲ <lb/>καὶ παντὶ τῷ σώματι ὅκου ἂν καυθῇ.
                     </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>4. Ὅταν δὲ ξύῃς βλέφαρα ὀφθαλμοῦ, ξύειν [εἶτα καίειν] εἰρίῳ <lb/>Μιλησίῳ,
+         </div>
+         <div n="4" type="chapter">
+            <p>4. Ὅταν δὲ ξύῃς βλέφαρα ὀφθαλμοῦ, ξύειν [εἶτα καίειν] εἰρίῳ <lb/>Μιλησίῳ,
                         οὔλῳ, καθαρῷ, περὶ ἄτρακτον περιειλῶν, αὐτὴν τὴν <lb/>στεφάνην τοῦ ὀφθαλμοῦ
                         φυλασσόμενος, μὴ διακαύσῃς πρὸς τὸν <lb/>χόνδρον. Σημεῖον δὲ ὅταν ἀπόχρη τῆς
                         ξύσιος, οὐκ ἔτι λαμπρὸν <lb/>αἷμα εξέρχεται, ἀλλὰ ἰχὼρ αἱματώδης ἢ ὑδατώδης.
@@ -149,34 +156,34 @@
                         <lb/>τομὴν διὰ τοῦ βρέγματος. Ὅταν δὲ τὸ αἷμα ἀποῤῥυῇ, χρὴ <lb/>διαχρίειν τῳ
                         ἐναίμῳ φαρμάκῳ. Ὕστερον δὲ τουτέου ἔργον καὶ <lb/>πάντων τὴν κεφαλὴν
                         καθῆραι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>5. Τὰ βλέφαρα τὰ παχύτερα τῆς φύσιος, τὸ κάτω ἀποταμὼν <pb n="158"/> τὴν
+         </div>
+         <div n="5" type="chapter">
+            <p>5. Τὰ βλέφαρα τὰ παχύτερα τῆς φύσιος, τὸ κάτω ἀποταμὼν <pb n="158"/> τὴν
                         σάρκα ὁκόσην εὐμαρέστατα δύνῃ, ὕστερον δὲ τὸ βλέφαρον <lb/>ἐπικαῦσαι μὴ
                         διαφανέσι, φυλασσόμενος τὴν φύσιν τῶν τριχῶν, ἢ <lb/>τῷ ἄνθει ὀπτῷ λεπτῷ
                         προστεῖλαι. Ὅταν δὲ ἀποπέσῃ ἡ ἐσχάρα, <lb/>ἰητρεύειν τὰ λοιπά. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>6. Ὁκόταν δὲ βλέφαρα ψωριᾷ καὶ κνησμὸς ἔχῃ, ἄνθος χαλκοῦ <lb/>βώλιον πρὸς
+         </div>
+         <div n="6" type="chapter">
+            <p>6. Ὁκόταν δὲ βλέφαρα ψωριᾷ καὶ κνησμὸς ἔχῃ, ἄνθος χαλκοῦ <lb/>βώλιον πρὸς
                         ἀκόνην τρίψας, ἔπειτα τὸ βλέφαρον ἀποτρίψας αὐτέου, <lb/>καὶ τότε τὴν φολίδα
                         τοῦ χαλκοῦ τρίβειν ὡς λεπτοτάτην· ἔπειτα <lb/>χυλὸν ὄμφακος διηθημένον
                         παραχέας καὶ τρίψας λεῖον, τὸ δὲ λοιπὸν <lb/>ἐν χαλκῷ ἐρυθρῷ παραχέων, κατ’
                         ὀλίγον ἀνατίρβειν, ἕως ἂν <lb/>πάχος γένηται ὡς μυττωτός· ἔπειτα, ἐπειδὰν
                         ξηρανθῇ, τρίψας <lb/>λεῖον χρῆσθαι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>7. Νυκτάλωπος φάρμακον· πινέτω ἐλατήριον, καὶ τὴν κεφαλὴν <lb/>καθαιρέσθω,
+         </div>
+         <div n="7" type="chapter">
+            <p>7. Νυκτάλωπος φάρμακον· πινέτω ἐλατήριον, καὶ τὴν κεφαλὴν <lb/>καθαιρέσθω,
                         καὶ κατάξας τὸν αὐχένα ὡς μάλιστα, πιέσας <lb/>πλεῖστον χρόνον. Ἐπανιεὶς δὲ
                         διδόναι ἐν μέλιτι βάπτων ἧπαρ βοὸς <lb/>ὠμὸν καταπιεῖν μέγιστον ὡς ἂν
                         δύνηται, ἓν ἢ δύο. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="8">
-                    <p>8. Ἤν τινι οἱ ὀφθαλμοὶ ὑγιέες ἐόντες διαφθείροιεν τὴν ὄψιν, <lb/>τουτέῳ χρὴ
+         </div>
+         <div n="8" type="chapter">
+            <p>8. Ἤν τινι οἱ ὀφθαλμοὶ ὑγιέες ἐόντες διαφθείροιεν τὴν ὄψιν, <lb/>τουτέῳ χρὴ
                         ταμόντα κατὰ τὸ βρέγμα, ἐπαναδείραντα, ἐκπρίσαντα τὸ <lb/>ὀστέον, ἀφελόντα
                         τὸν ὕδρωπα, ἰῆσθαι· καὶ οὕτως ὑγιέες γίνονται. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="9">
-                    <p>9. Ὀφθαλμίης τῆς ἐπετείου καὶ ἐπιδημίου ξυμφέρει κάθαρσις <pb n="160"/>
+         </div>
+         <div n="9" type="chapter">
+            <p>9. Ὀφθαλμίης τῆς ἐπετείου καὶ ἐπιδημίου ξυμφέρει κάθαρσις <pb n="160"/>
                         κεφαλῆς καὶ τῆς κάτω κοιλίης· καὶ εἰ ἔχοι τὸ σῶμα, αἵματος <lb/>ἀφαίρεσις
                         ξυμφέρει πρὸς ἔνια τῶν τοιούτων ἀλγημάτων, καὶ σικύαι <lb/>κατὰ τὰς φλέβας.
                         Σῖτος ὀλίγος ἄρτος, καὶ ὕδατος πόσις. Κατακεῖσθαι <lb/>δὲ ἐν σκότῳ, ἀπό τε
@@ -191,8 +198,7 @@
                         λαμπρά· ἀλλ’ οὐδὲ ξυμμύειν <lb/>πουλὺν χρόνον, ἢν ἔχῃ ῥεῦμα θερμὸν μάλιστα·
                         θερμαίνει γὰρ τὸ <lb/>δάκρυον ἰσχόμενον. Ῥεύματος δὲ μὴ ἔχοντος, μετά γέ του
                         ξηροῦ <lb/>τὴν ὑπάλειψιν ξυμφέρει ποιέεσθαι. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

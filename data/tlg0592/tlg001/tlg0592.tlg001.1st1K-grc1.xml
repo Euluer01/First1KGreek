@@ -1,111 +1,123 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">
-<fileDesc>
-<titleStmt>
- <title xml:lang="lat">Progymnasmata [Dub.]</title>
- <author xml:lang="lat">Hermogenes</author>
-<editor>Hugo Rabe</editor>
- <funder>Harvard Library Arcadia Fund</funder>
- <principal>Gregory Crane</principal>
- <respStmt>
-  <persName xml:id="DDD">Digital Divide Data</persName>
-  <resp>Corrected and encoded the text</resp>
- </respStmt>
- <respStmt>
-  <persName>Gregory Crane</persName>
-  <resp>Editor-in-Chief, Perseus Digital Library</resp>
- </respStmt>
- <respStmt>
-  <persName>Matt Munson</persName>
-  <resp>Project Manager (University of Leipzig)</resp>
- </respStmt>
- <respStmt>
-  <persName>Annette Gessner</persName>
-  <resp>Project Assistant (University of Leipzig)</resp>
- </respStmt>
- <respStmt>
-  <persName>Thibault Clérice</persName>
-  <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
- </respStmt>
- <respStmt>
-  <persName>Bruce Robertson</persName>
-  <resp>Technical Advisor</resp>
- </respStmt>
-</titleStmt>
-<publicationStmt>
-<authority>Harvard College Library</authority>
-<idno type="filename">tlg0592.tlg001.1st1K-grc1.xml</idno>
-<availability>
- <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Progymnasmata [Dub.]</title>
+            <author xml:lang="lat">Hermogenes</author>
+            <editor>Hugo Rabe</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg0592.tlg001.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
  License</licence>
-</availability>
-<date>2017</date>
-<publisher>Harvard College Library</publisher>
-<pubPlace>United States</pubPlace>
-</publicationStmt>
-<sourceDesc>
-<listBibl>
- <biblStruct>
- <monogr>
-  <title xml:lang="lat">Hermogenis Opera</title>
-  <editor>
-	<persName>
-	 <name>Hugo Rabe</name>
-	</persName>
-  </editor>
-  <author ref="urn:cts:greekLit:tlg0592" xml:lang="lat">Hermogenes</author>
-  <imprint>
-	<publisher>Teubner</publisher>
-	<pubPlace>Leipzig</pubPlace>
-	<date>1913</date>
-  </imprint>
- </monogr>
-  <series>
-   <title xml:lang="lat">Rhaetores Graeci</title>
-   <biblScope unit="volume">6</biblScope>
-  </series>
-  <ref target="http://hdl.handle.net/2027/mdp.39015002968520">Hathi Trust</ref>
- </biblStruct>
-</listBibl>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
- <p>Text encoded in accordance with the latest EpiDoc standards</p>
- <refsDecl n="CTS">
-  <cRefPattern matchPattern="(.+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
- </refsDecl>
-</encodingDesc>
-<profileDesc>
-<langUsage>
-<language ident="grc">Greek</language>
-<language ident="lat">Latin</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change/>
-</revisionDesc>
-</teiHeader>
-<text>
-	<body>
-	 <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0592.tlg001.1st1K-grc1">
-<pb n="1"/>
-<note type="marginal">Sp. 3</note> <head>ΕΡΜΟΓΕΝΟΥΣ ΠΡΟΓΥΜΝΑΣΜΑΤΑ</head> <note type="marginal">W. 9</note>
-<div type="textpart" subtype="section" n="1">
-<head>Περὶ μύθου.</head>
-<p>Τὸν μῦθον πρῶτον ἀξιοῦσι προσάγειν τοῖς νέοις ,διότι 1
+            </availability>
+            <date>2017</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg0592.tlg001.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Hermogenis Opera</title>
+                     <editor>
+                        <persName>
+                           <name>Hugo Rabe</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg0592" xml:lang="lat">Hermogenes</author>
+                     <imprint>
+                        <publisher>Teubner</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1913</date>
+                     </imprint>
+                  </monogr>
+                  <series>
+                     <title xml:lang="lat">Rhaetores Graeci</title>
+                     <biblScope unit="volume">6</biblScope>
+                  </series>
+                  <ref target="http://hdl.handle.net/2027/mdp.39015002968520">Hathi Trust</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="section"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-section"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0592.tlg001.1st1K-grc1">
+         <pb n="1"/>
+         <note type="marginal">Sp. 3</note>
+         <head>ΕΡΜΟΓΕΝΟΥΣ ΠΡΟΓΥΜΝΑΣΜΑΤΑ</head>
+         <note type="marginal">W. 9</note>
+         <div n="1" type="section">
+            <head>Περὶ μύθου.</head>
+            <p>Τὸν μῦθον πρῶτον ἀξιοῦσι προσάγειν τοῖς νέοις ,διότι 1
 τὰς ψυχὰς αὐτῶν πρὸς τὸ βέλτιον ῥυθμίζειν δύναται·
 <lb n="5"/> ἔτι οὖν αὐτοὺς ἁπαλοὺς ὄντας ἀξιοῦσι πλάττειν.</p>
-<p>Φαίνονται δὲ τούτῳ χρησάμενοι καὶ οἱ ἀρχαῖοι, Ἡσίοδος <note type="marginal">10</note>
+            <p>Φαίνονται δὲ τούτῳ χρησάμενοι καὶ οἱ ἀρχαῖοι, Ἡσίοδος <note type="marginal">10</note>
 μὲν τὸν τῆς ἀηδόνος εἰπών, Ἀρχίλοχος δὲ τὸν τῆς
 ἀλώπεκος.</p>
-<p>Ὀνομάζονται δὲ ἀπὸ τῶν εὑρόντων οἳ μὲν Κύπριοι,
+            <p>Ὀνομάζονται δὲ ἀπὸ τῶν εὑρόντων οἳ μὲν Κύπριοι,
 <lb n="10"/> οἳ δὲ Λιβυκοί, οἳ δὲ Συβαριτικοί· πάντες δὲ κοινῶς <note type="marginal">11</note>
-<note type="footnote">Lb Ρζ</note>
-<note type="footnote">Ph, (1, 1—3, 1 et 21, 5 sq. multa evanuerunt) Pg</note>
-<note type="footnote">AcOn (24, 2—26, 9. 7)</note>
-<note type="footnote">1 sic sic Ph​ ζχψ AiNbSc T; ἑρμογένους ῥήτορος προγυμνάσματα Lb;
+               <note type="footnote">Lb Ρζ</note>
+               <note type="footnote">Ph, (1, 1—3, 1 et 21, 5 sq. multa evanuerunt) Pg</note>
+               <note type="footnote">AcOn (24, 2—26, 9. 7)</note>
+               <note type="footnote">1 sic sic Ph​ ζχψ AiNbSc T; ἑρμογένους ῥήτορος προγυμνάσματα Lb;
 ἑρμογένους τοῦ τεχνογράφου προγυμνάσματα PφΟl; evan. Pg
 3 Priscianus definitionem praefigit: fabula est oratio ficta verisi-
 mili dispositione imaginem exhibens veritatis (Nicolaus: μῦθος
@@ -121,24 +133,24 @@ etiam Homerum nominant Theon II 73, 15 Sp. Philostr. mai. Imag.
 I 3 (II 298, 24 K.2) 7 Archil. fr. 86 Bergk 9 ὀνομάζεται Pζ
 10 οἱ δὲ λιβυκοί Phg, Prisc., Dox., (λυβικοὶ) Lb; om. Pζ: οἱ δὲ
 τυρσηνοί ς | πάντως Ρζ | ult. δὲ om. Ρζ</note>
-
-<pb n="2"/>
+               <pb n="2"/>
 Αἰσώπειοι λέγονται, διότι τοῖς μύθοις Αἴσωπος ἔχρῆτο
 πρὸς τὰς συνουσίας.</p>
-<p>Ὑπογραφὴν δέ τινα τοιαύτην ἀποδιδόασιν αὐτοῦ·
+            <p>Ὑπογραφὴν δέ τινα τοιαύτην ἀποδιδόασιν αὐτοῦ·
 ψευδῆ μὲν αὐτὸν ἀξιοῦσιν εἶνὰι, πάντως δὲ χρήσιμον
 <note type="marginal">12</note> πρός τι τῶν ἐν τῷ βίῳ· ἔτι δὲ καὶ πιθανὸν εἶναι βούλονται. <lb n="5"/>
 πῶς δʼ ἂν γένοιτο πιθανός; ἂν τὰ προσήκοντα
 πράγματα τοῖς προσώποις ἀποδιδῶμεν. οἶον περὶ κάλλους
 τις ἀγωνίζεται· ταὼς οὗτος ὑποκείσθω. δεῖ τινι
 <note type="marginal">13</note> σοφόν τι περιτεθῆναι· ἀλώπηξ ἐνταῦθα. μιμούμενοι
-τὰ τῶν ἀνθρώπων πράγματα· ἐνταῦθα οἱ πίθηκοι.</p><lb n="10"/>
-<p>Χρὴ δὲ αὐτοὺς ποτὲ μὲν ἐκτείνειν, ποτὲ δὲ συστέλλειν.
+τὰ τῶν ἀνθρώπων πράγματα· ἐνταῦθα οἱ πίθηκοι.</p>
+            <lb n="10"/>
+            <p>Χρὴ δὲ αὐτοὺς ποτὲ μὲν ἐκτείνειν, ποτὲ δὲ συστέλλειν.
 πῶς δʼ ἂν τοῦτο γένοιτο; εἰ νῦν μὲν αὐτὸν ψιλὸν
 λέγοιμεν κατὰ ἀφήγησιν, νῦν δὲ λόγους πλάττοιμεν
 τῶν δεδομένων προσώπων· οἶον, ἵνα σοι καὶ ἐπὶ παραδείγματος
 <note type="marginal">14</note> γένηται φανερόν, ῾ οἱ πίθηκοι συνελθόντες <lb n="15"/>
-<note type="footnote">1 διὸ ϛ | αἴσωπος LbPζ, Prisc.; om. Phϛ; ?Pg | ἐχρήσατο ὁ
+               <note type="footnote">1 διὸ ϛ | αἴσωπος LbPζ, Prisc.; om. Phϛ; ?Pg | ἐχρήσατο ὁ
 αἴσωπος Dox. II 164, 10 W. | ἐχρῆτο Pζ, (frequenter solebat . . . 
 uti) Prisc.; ἐχρήσατο LbPφOl, (ex cr.) Ρχψ, cf. Theon II 73, 20
 Sp.; ἐχρήσαντο PhgAiNbSc 3 ἀποδιδοασιν LbPhgAi; ἀποδε-
@@ -161,8 +173,7 @@ volumus ostendere: hic simiis est locus); 〈εἰσάγομεν〉 μιμουμ
 τοῦτο Sard. (Wc f. 65v), Dox. II 176,4 W. | ψιλῶς ς 18 κατὰ
 ἀφήγησιν λέγομεν Dox. | πλάττομεν Sard. (Wc f. 65v), Dox. 14 σοι
 LbΡζ, Sard., Dox., cf. p. 12, 13; om. Phς; ? Pg 15 γένοιτο Ρζ</note>
-
-<pb n="3"/>
+               <pb n="3"/>
 ἐβουλεύοντο περὶ τοῦ χρῆναι πόλιν οἰκίζειν· καὶ ἐπειδὴ
 ἔδοξεν αὐτοῖς, ἤμελλον ἅπτεσθαι τοῦ ἔργου. γέρων
 <note type="marginal">4</note> οὖν πίθηκος ἐπέσχεν αὐτοὺς εἰπών, ὅτι ῥᾷον ἁλώσονται
@@ -177,9 +188,10 @@ LbΡζ, Sard., Dox., cf. p. 12, 13; om. Phς; ? Pg 15 γένοιτο Ρζ</note
 παντοδαποῖς᾿, καὶ οὕτω πρόαγε διατρίβων καὶ λέγων,
 ὅτι καὶ τὸ ψήφισμα ἐγέγραπτο, καὶ λόγον πλάττε καὶ
 παρὰ τοῦ γέροντος πιθήκου. Καὶ ταῦτα μὲν ταύτῃ.</p>
-<lb n="15"/><p>Τὴν δὲ ἀπαγγελίαν βούλονται περιόδων ἀλλοτρίαν
+            <lb n="15"/>
+            <p>Τὴν δὲ ἀπαγγελίαν βούλονται περιόδων ἀλλοτρίαν
 εἶναι γλυκύτητος ἐγγύς.</p>
-<note type="footnote">1 ἐβουλεύοντο Phg, Sard. (Wc), Dox. ; ἐβούλοντο Pζ: ἐβουλεύ-
+            <note type="footnote">1 ἐβουλεύοντο Phg, Sard. (Wc), Dox. ; ἐβούλοντο Pζ: ἐβουλεύ-
 σαντο Lb, Sard. (Vω) περὶ om. Phg 2.3 sed vetus Prisc. 3 τις
 πίθηκος Lb | ῥᾷον ἂν Dox. 4 ἀπολειφθέντες Phg, Sard. (Vω)
 5 πρόσαγε Ph, Dox.;? Pg; om. Prisc. 10 εἰ θέατρον Pζ | ἀνα-
@@ -199,32 +211,35 @@ pleniore): οἷον ὅτι πολλῶν ἡμῖν αἴτιος ἔσται 
 δεινότατον (χαλεπώτατον Wc), παγγενῆ φθαρησόμεθα οὐδὲ σπέρμα
 τοῦ γένους καταλιπόντεςʼ 15 ἐπαγγελίαν Pg | cf. Theon II
 74,10 Sp. | περίοδον Pg 16 εἶναι 〈καὶ〉 ?</note>
-
-<pb n="4"/>
-<note type="marginal">16</note> <p>Ὁ δὲ λόγος ὁ τὴν ὠφέλειαν δεικνύς τὴν ἀπὸ τοῦ
+            <pb n="4"/>
+            <note type="marginal">16</note>
+            <p>Ὁ δὲ λόγος ὁ τὴν ὠφέλειαν δεικνύς τὴν ἀπὸ τοῦ
 μύθου ποτὲ μὲν προταχθήσεται, ποτὲ δὲ ὑποταχθήσεται.</p>
-<p>Φαίνονται δὲ καὶ οἱ ῥήτορες αὐτῷ χρησάμενοι ἀντὶ παραδείγματος.</p>
-</div>
-
-<div type="textpart" subtype="section" n="2">
-<head>Περὶ διηγήματος.</head><lb n="5"/>
-<p>2 Τὸ διήγημα βούλονται εἶναι ἔκθεσιν πράγματος γεγονότος
+            <p>Φαίνονται δὲ καὶ οἱ ῥήτορες αὐτῷ χρησάμενοι ἀντὶ παραδείγματος.</p>
+         </div>
+         <div n="2" type="section">
+            <head>Περὶ διηγήματος.</head>
+            <lb n="5"/>
+            <p>2 Τὸ διήγημα βούλονται εἶναι ἔκθεσιν πράγματος γεγονότος
 ἢ ὡς γεγονότος. ἔνιοι μέντοι τὴν χρείαν ἔταξαν
 πρὸ τούτου.</p>
-<p>Διαφέρει δὲ διήγημα διηγήσεως, ὡς ποίημα ποιήσεως·
+            <p>Διαφέρει δὲ διήγημα διηγήσεως, ὡς ποίημα ποιήσεως·
 ποίημα μὲν γὰρ καὶ διήγημα περὶ πρᾶγμα ἕν, <lb n="10"/>
 ποίησις δὲ καὶ διήγησις περὶ πλείονα, οἷον ποίησις ἡ
 Ἰλιὰς καὶ ποίησις ἡ Ὀδύσσεια, ποιήματα δὲ ἀσπιδοποιία,
 νεκυομαντεία, μνηστηροφονία. καὶ πάλιν διήγησις
 μὲν ἡ ίστορία Ἡροδότου, ἡ συγγραφὴ Θουκυδίδου,
-διήγημα δὲ τὸ κατὰ Ἀρίονα, τὸ κατὰ Ἀλκμαίωνα.</p><lb n="15"/>
-<note type="marginal">17</note> <p>Εἴδη δὲ διηγήματος βούλονται εἶναι τέτταρα· τὸ μὲν
+διήγημα δὲ τὸ κατὰ Ἀρίονα, τὸ κατὰ Ἀλκμαίωνα.</p>
+            <lb n="15"/>
+            <note type="marginal">17</note>
+            <p>Εἴδη δὲ διηγήματος βούλονται εἶναι τέτταρα· τὸ μὲν
 γὰρ εἶναι μυθικόν, τὸ δὲ πλασματικόν, ὃ καὶ δραματικὸν
 καλοῦσιν, οἷα τὰ τῶν τραγικῶν, τὸ δὲ ἱστορικόν,
 τὸ δὲ πολιτικὸν ἢ ἰδιωτικόν. ἀλλὰ νῦν ἡμῖν περὶ τοῦ
-τελευταίου ὁ λόγος.</p><lb n="20"/>
-<p>Σχήματα δὲ διηγημάτων ἔστιν ε΄· ὀρθὸν ἀποφαντικόν, <note type="marginal">5</note>
-<note type="footnote">2 ποτὲ — ὁτὲ Lb 3 δὲ om. Lb 6 cf. Cic. De inv. I 27 Theon
+τελευταίου ὁ λόγος.</p>
+            <lb n="20"/>
+            <p>Σχήματα δὲ διηγημάτων ἔστιν ε΄· ὀρθὸν ἀποφαντικόν, <note type="marginal">5</note>
+               <note type="footnote">2 ποτὲ — ὁτὲ Lb 3 δὲ om. Lb 6 cf. Cic. De inv. I 27 Theon
 II 78, 15 Sp. 7 ἔνιοι: cf. Theon II 64, 30 Sp. (Dox. II, 192, 14
 W. cod. Vat. 901: οἱ δὲ περὶ Θέωνα καὶ Ἁρποκρατίωνα τὴν
 χρείαν ἔταξαν πρὸ τοῦ διηγήματος κτλ.) | μέντοι Phζ; μὲν LbPg
@@ -238,8 +253,7 @@ Sp. | σχήματα δὲ διηγημάτων ἔστιν LbPζ, (εἰσὶν
 γυμνάσια δέ ἐστιν Phg | ad 19—20 cf. Prisc.: nunc autem de ea,
 quae ad exercitationem pertinet, dicimus; quam variis proferre
 modis solemus | ε΄ Pζ; om. LbPhg, Dox, Prisc. | ἀποφατικὸν Phg</note>
-
-<pb n="5"/>
+               <pb n="5"/>
 ἀποφαντικὸν ἐγκεκλιμένον, ἐλεγκτικόν, ἀσύνδετον,
 συγκριτικόν. ὀρθὸν μὲν οὖν ἀποφαντικόν, οἷον
 ῾Μήδεια ἦν Αἰήτου θυγάτηρ· αὕτη προὔδωκε τὸ χρυσόμαλλον
@@ -259,7 +273,7 @@ modis solemus | ε΄ Pζ; om. LbPhg, Dox, Prisc. | ἀποφατικὸν Phg</n
 τοῦ σωφρονεῖν ἠράσθη, ἀντὶ δὲ τοῦ φυλάττειν τὸ χρυσόμαλλον
 δέρας προὔδωκεν, ἀντὶ δὲ τοῦ σῴζειν τὸν
 ἀδελφὸν Ἄψυρτον ἐφόνευσενʼ. — Τὸ μὲν οὖν ὀρθὸν <note type="marginal">19</note>
-<lb n="20"/> ἱστορίαις πρέπει, σαφέστερον γάρ· τὸ δὲ ἐγκεκλιμένον
+               <lb n="20"/> ἱστορίαις πρέπει, σαφέστερον γάρ· τὸ δὲ ἐγκεκλιμένον
 <note type="footnote">1 ἀποφατικὸν Pg; om. Ph 2 ἀποφατικὸν Phg 3 ἦν
 scripsi, cf. Prisc. fuit; ἡ LbPhgζ, Dox | ⌊γὰρ del.⌉ πρόυδοκε Ph
 4 vellus et sequentia Prisc. 6 ἀποφατικὸν δὲ κεκλιμένον Phg |
@@ -275,18 +289,16 @@ Prisc.; om. LbPhg, Dox. 16 ἐστι LbPζ. Dox., Prisc; om. Phg
 17. 18 sic Pζ; ἀντὶ — 18 προὔδωκεν post 19 ἐφόνευσεν (ἀπέκτεινεν
 Lb) LbPhg, Dox., Prisc. 19 ἄψυρτον Pζ: om. LbPhg, Dox.,
 Prisc. | historiae Prisc.</note>
-
-<pb n="6"/>
+               <pb n="6"/>
 μᾶλλον ἀγῶσι. τὸ δὲ ἐλεγκτικὸν ἁρμόττει τοῖς ἐλέγχοις,
 τὸ δὲ ἀσύνδετον τοῖς ἐπιλόγοις· παθητικὸν γάρ.</p>
-</div>
-
-<div type="textpart" subtype="section" n="3">
-<head>Περὶ χρείας.</head>
-<p>3 Χρεία ἐστὶν ἀπομνημόνευμα λόγου τινὸς ἢ πράξεως
+         </div>
+         <div n="3" type="section">
+            <head>Περὶ χρείας.</head>
+            <p>3 Χρεία ἐστὶν ἀπομνημόνευμα λόγου τινὸς ἢ πράξεως
 ἢ συναμφοτέρου σύντομον ἔχον δήλωσιν, ὡς ἐπὶ τὸ <lb n="5"/>
 πλεῖστον χρησίμου τινὸς ἕνεκα.</p>
-<p>Τῶν δὲ χρειῶν αἳ μέν εἰσι λογικαί, αἳ δὲ πρακτικαί,
+            <p>Τῶν δὲ χρειῶν αἳ μέν εἰσι λογικαί, αἳ δὲ πρακτικαί,
 αἳ δὲ μικταί· λογικαὶ μέν, αἷς λόγος ἔνεστι μόνον, οἷον
 Πλάτων ἔφησε τὰς Μούσας ἐν ταῖς ψυχαῖς τῶν εὐφυῶν <lb n="9"/>
 οἰκεῖνʼ· πρακτικαὶ δέ, ἐν αἷς πρᾶξις μόνον, οἶον <note type="marginal">6</note>
@@ -294,8 +306,8 @@ Prisc. | historiae Prisc.</note>
 <note type="marginal">20</note> ἐτύπτησεʼ. μικταὶ δὲ αἰ μῖξιν ἔχουσαι λόγου καὶ πράξεως,
 οἶον ῾ Διογένης ἰδὼν μειράκιον ἀτακτοῦν τὸν παιδαγωγὸν
 ἐτύπτησε λέγων· τί γὰρ τοιαῦτα ἐπαίδευες;᾿</p>
-<p>Διαφέρει δὲ χρεία ἀπομνημονεύματος μάλιστα τῷ <lb n="15"/>
-<note type="marginal">21</note> μέτρῳ· τὰ μὲν γὰρ ἀπομνημονεύματα καὶ διὰ μακροτέρων
+            <p>Διαφέρει δὲ χρεία ἀπομνημονεύματος μάλιστα τῷ <lb n="15"/>
+               <note type="marginal">21</note> μέτρῳ· τὰ μὲν γὰρ ἀπομνημονεύματα καὶ διὰ μακροτέρων
 ἂν γένοιτο, τὴν δὲ χρείαν σύντομον εἶναι δεῖ.
 γνώμης δὲ διαφέρει τῷ τὴν μὲν ἐν ἀποφάνσει ψιλῇ
 <note type="footnote">1 ἁρμόζει Lb; om. Dox. 2 παθητικὸν γάρ om. Dox.; at
@@ -314,18 +326,18 @@ Max. II 14,14 W.)· πανταχοῦ (πολλαχοῦ On) γὰρ καὶ ἐ
 addit Pζ ex Theone II 97, 5. 6 Sp. (om. LbPhg, Prisc.!): ἔτι δὲ
 ὅτι ἡ μὲν ἀναφέρεται εἴς τινα πρόσωπα, τὸ δὲ ἀπομνημόνευμα
 καὶ καθʼ αὐτὸ μνημονεύεται 18 ἀποφάσει LbPhg | ψιλὴν Pζ</note>
-
-<pb n="7"/>
+               <pb n="7"/>
 λέγεσθαι, τὴν δὲ χρείαν πολλάκις <add cause="omitted">καὶ</add> κατὰ ἐρώτησιν
 καὶ κατὰ ἀπόκρισιν· καὶ πάλιν τῷ τὴν μὲν χρείαν καὶ
 ἐν πράξεσιν εἶναι, τὴν δὲ γνώμην ἐν λόγοις μόνον·
 καὶ πάλιν τῷ τὴν μὲν χρείαν τὸ πεποιηκὸς πρόσωπον
 <lb n="5"/> ἔχειν ἢ εἰρηκός, τὴν δὲ γνώμην ἄνευ προσώπου
 λέγεαθαι.</p>
-<p>Λέγεται δὲ περὶ διαφορᾶς χρειῶν πλεῖστα παρὰ τοῖς
+            <p>Λέγεται δὲ περὶ διαφορᾶς χρειῶν πλεῖστα παρὰ τοῖς
 παλαιοῖς, ὅτι αἳ μὲν αὐτῶν εἰσιν ἀποφαντικαί, αἳ δὲ
 ἐρωτηματικαί, αἳ δὲ πυσματικαί.</p>
-<lb n="10"/><p>Ἀλλὰ νῦν ἐπὶ τὸ συνέχον χωρῶμεν, τοῦτο δέ ἐστιν
+            <lb n="10"/>
+            <p>Ἀλλὰ νῦν ἐπὶ τὸ συνέχον χωρῶμεν, τοῦτο δέ ἐστιν
 ἡ ἐργασία. ἐργασία τοίνυν οὕτως ἔστω. πρῶτον ἐγκώμιον
 διὰ βραχέων τοῦ εἰπόντος ἢ πράξαντος, εἶτα αὐτῆς <note type="marginal">22</note>
 τῆς χρείας παράφρασις, εἶτα ἡ αἰτία, οἷον ῾Ἰσοκράτης
@@ -350,8 +362,7 @@ II 275, 23 W. 12 βραχέος Lb 13 fort. post αἰτία cetera ca-
 pita (20. 8, 2. 7) enumerata erant 14 ἔφη Aphth., Dox., Nic.;
 dicebat Prisc. 16 πλατύνεις Phgζ; producis vel producens
 Prisc. | εἶτα καὶ ἡ Dox. 17 πλατύνεις Pg</note>
-
-<pb n="8"/>
+               <pb n="8"/>
 ἀηδέστατον ἔχει, τὰ σπουδαῖα δὲ τοὐναντίον᾿. εἶτα ἐπ
 παραβολῆς ῾ ὥσπερ γὰρ τοὺς γεωργούς δεῖ πονήσαντας
 <note type="marginal">23</note> περὶ τὴν γῆν κομίζεσθαι τοὺς καρπούς, οὕτω καὶ περὶ
@@ -361,31 +372,32 @@ Prisc. | εἶτα καὶ ἡ Dox. 17 πλατύνεις Pg</note>
 ἔστι δὲ καὶ ἐκ κρίσεως ἐπιχειρῆσαι, οἷον
 ῾Ἡσίοδος μὲν γὰρ ἔφη
 <lg>
-<l>τῶς δʼ ἀρετῆς ἱδρῶτα θεοὶ προπάροιθεν ἔθηκαν,</l>
-</lg>
+                  <l>τῶς δʼ ἀρετῆς ἱδρῶτα θεοὶ προπάροιθεν ἔθηκαν,</l>
+               </lg>
 ἄλλος δὲ ποιητής φησι <lb n="10"/>
-<lg>
-<l>τῶν πόνων πωλοῦσιν ἡμῖν πάντα τἀγάθ᾿ οἱ θεοί.᾿</l>
-</lg>
+               <lg>
+                  <l>τῶν πόνων πωλοῦσιν ἡμῖν πάντα τἀγάθ᾿ οἱ θεοί.᾿</l>
+               </lg>
 ἐν δὲ τῷ τέλει παράκλησιν προσθήσεις, ὅτι χρὴ πείθεσθαι
 τῷ εἰρηκότι ἢ πεποιηκότι. — Τοσαῦτα πρὸς τὸ
 παρόν· τὴν δὲ τελεωτέραν διδασκαλίαν ὕστερον εἴσῃ.</p>
-</div>
-
-<div type="textpart" subtype="section" n="4">
-<note type="marginal">24</note> <head>Περὶ γνώμης.</head><lb n="15"/>
-<p>4 Γνώμη ἐστὶ λόγος κεφαλαιώδης ἐν ἀποφάνσει καθολικῇ
+         </div>
+         <div n="4" type="section">
+            <note type="marginal">24</note>
+            <head>Περὶ γνώμης.</head>
+            <lb n="15"/>
+            <p>4 Γνώμη ἐστὶ λόγος κεφαλαιώδης ἐν ἀποφάνσει καθολικῇ
 ἀποτρέπων τι ἢ προτρέπων ἐπί τι ἢ ὁποῖον ἕκαστόν
 ἐστι δηλῶν· ἀποτρέπων μὲν ὡς ἐν ἐκείνῳ
 <lg>
-<l>«οὐ χρὴ παννύχιον εὕδειν βουληφόρον ἄνδρα»,</l>
-</lg>
+                  <l>«οὐ χρὴ παννύχιον εὕδειν βουληφόρον ἄνδρα»,</l>
+               </lg>
 προτρέπων δὲ ὡς ἐν ἐκείνῳ <lb n="20"/>
-<lg>
-<l>«χρὴ πενίην φεύγοντα καὶ ἐς μεγακήτεα πόντον</l>
-<l>ῥιπτεῖν καὶ πετρῶν, Κύρνε, κατʼ ἠλιβάτων»·</l>
-</lg>
-<note type="marginal">25</note> ἢ τούτων μὲν οὐδέτερον ποιεῖ, ἀποφαίνεται δὲ περὶ
+               <lg>
+                  <l>«χρὴ πενίην φεύγοντα καὶ ἐς μεγακήτεα πόντον</l>
+                  <l>ῥιπτεῖν καὶ πετρῶν, Κύρνε, κατʼ ἠλιβάτων»·</l>
+               </lg>
+               <note type="marginal">25</note> ἢ τούτων μὲν οὐδέτερον ποιεῖ, ἀποφαίνεται δὲ περὶ
 <note type="footnote">1 ἀηδέστερον Pg | δὲ σπουδαῖα Phg 5 ἐν om. Pζ | καὶ om.
 Pζ e cf. Dem. 18, 58 7 ἐπιχείρημα Pg 9 Hes. Op. 289 | μὲν
 (pro δʼ) Pζ 11 Epicharm. fr. 287 Kaibel | ἅκαντα τʼ ἀγαθὰ
@@ -394,36 +406,39 @@ Phg, (τὰ ἀγ.) LbPζ 13 cf. 14, 14 | τοσαῦτα — 14 εἴσῃ om. 
 ἀποφάσει LbPhgζ 17 pr. ἢ LbPhg; καὶ Pζ 17. 18 ἔστιν
 ἕκαστον Pζ 18 δηλῶν om. Phg 19 Hom. B 24 21 Theogn.
 175 | οὐ χρὴ Ph 23 οὐδέποτέ τι ποιεῖ Pg</note>
-
-<pb n="9"/>
+               <pb n="9"/>
 τῆς τοῦ πράγματος φύσεως, οἷον «τὸ γὰρ εὖ πράττειν
 παρὰ τὴν ἀξίαν ἀφορμὴ τοῦ κακῶς φρονεῖν τοῖς ἀνοήτοις
 γίνεται».</p>
-<p>Ἔτι δὲ τῶν γνωμῶν αἳ μέν εἰσιν ἀληθεῖς, αἳ δὲ
+            <p>Ἔτι δὲ τῶν γνωμῶν αἳ μέν εἰσιν ἀληθεῖς, αἳ δὲ
 <lb n="5"/> πιθαναί, αἳ δὲ ἀπλαῖ, αἳ δὲ συνεζευγμέναι, αἳ δὲ ὑπερβολικαί·
 ἀληθεῖς μὲν οἷον
 <lg>
-<l>«οὐκ ἔστιν εὑρεῖν βίον ἄλυπον οὐδενί»,</l>
-</lg>
+                  <l>«οὐκ ἔστιν εὑρεῖν βίον ἄλυπον οὐδενί»,</l>
+               </lg>
 πιθαναὶ δὲ οἷον
 <lg>
-<l>«ὅστις δʼ ὁμιλῶν ἥδεται κακοῖς ἀνήρ,</l>
-<lb n="10"/><l>Lοὐπώποτʼ ἠρώτησα, γινώσκων ὅτι</l>
-<l>τοιοῦτός ἐστιν, οἷσπερ ἥδεται ξυνών»,</l>
-</lg>
+                  <l>«ὅστις δʼ ὁμιλῶν ἥδεται κακοῖς ἀνήρ,</l>
+                  <lb n="10"/>
+                  <l>Lοὐπώποτʼ ἠρώτησα, γινώσκων ὅτι</l>
+                  <l>τοιοῦτός ἐστιν, οἷσπερ ἥδεται ξυνών»,</l>
+               </lg>
 ἀπλαῖ δὲ οἷον
 <lg>
-<note type="marginal">8</note> <l>«δύναται τὸ πλουτεῖν καὶ φιλανθρώπους ποιεῖν»,</l>
-</lg>
+                  <note type="marginal">8</note>
+                  <l>«δύναται τὸ πλουτεῖν καὶ φιλανθρώπους ποιεῖν»,</l>
+               </lg>
 συνεζευγμέναι δὲ οἷον
 <lg>
-<lb n="15"/><l>«οὐκ ἀγαθὸν πολυκοιρανίη, εἷς κοίρανος ἔστω»,</l>
-</lg>
+                  <lb n="15"/>
+                  <l>«οὐκ ἀγαθὸν πολυκοιρανίη, εἷς κοίρανος ἔστω»,</l>
+               </lg>
 ὑπερβολικαὶ δὲ οἷον
 <lg>
-<l>«οὐδὲν ἀκιδνότερον γαῖα τρέφει ἀνθρώποιο»,</l>
-</lg></p>
-<p>Ἡ δὲ ἐργασία παραπλησία τῆς χρείας, πρόεισι γὰρ <note type="marginal">26</note>
+                  <l>«οὐδὲν ἀκιδνότερον γαῖα τρέφει ἀνθρώποιο»,</l>
+               </lg>
+            </p>
+            <p>Ἡ δὲ ἐργασία παραπλησία τῆς χρείας, πρόεισι γὰρ <note type="marginal">26</note>
 τοῖσδε· ἐγκωμίῳ τοῦ εἰρηκότος βραχεῖ, καθάπερ ἐν
 <note type="footnote">1 Dem 1, 23 | cf. Π. εὑρ. 241, 20 Sp. 4 δὲ LbPζ; om. Phg,
 Prisc. 7 Menandri fr. 411, III p. 120 Kock | οὐδενὶ LbPg,
@@ -439,21 +454,21 @@ Phgζ, Prisc, Aphth. (praeter Ld); cf. Sard.: . . μία μέν ἐστιν ἡ
 om. LbPh, Prisc. 17 Hom. σ 130 18 ⌊τῆς⌉ς Pζ; τῇ τῆς Spengel;
 cf. Prisc. meditationi usus | γὰρ LbPζ, Prisc.; om. Phg 19 ἐγ-
 κώμια . . βραχέα Phg | ἐν om. Ph</note>
-
-<pb n="10"/>
+               <pb n="10"/>
 χρείᾳ, κατὰ τὸ ἀπλοῦν, κατὰ τὴν αἰτίαν, κατὰ τὸ ἐναντίον,
 κατὰ τὸ ἐνθύμημα, κατὰ παραβολήν, κατὰ παράδειγμα,
 κατὰ κρίσιν. ἔστω δὲ ἡ γνώμη ὡς ἐν
 παραδείγματι
 <lg>
-<l>«οὐ χρὴ παννύχιον εὕδειν βουληφόρον ἄνδρα».</l><lb n="5"/>
-</lg>
+                  <l>«οὐ χρὴ παννύχιον εὕδειν βουληφόρον ἄνδρα».</l>
+                  <lb n="5"/>
+               </lg>
 οὐκοῦν ἐπαινέσεις διὰ βραχέων τὸν εἰρηκότα. εἶτα κατὰ
 τὸ ἀπλοῦν, τοῦτο δʼ ἔστι τὸ παραφράσαι τὴν γνώμην,
 οἷον ῾ διʼ ὅλης νυκτὸς οὐ προσήκει ἄνδρα ἐν βουλαῖς ἐξεταζόμενον
 καθεύδειν᾿. κατὰ τὴν σἰτίαν ῾ δεῖ μὲν γὰρ
 ἀεὶ διὰ φροντίδος εἶναι τὸν ἡγούμενον, ὕπνος δὲ βουλὴν <lb n="10"/>
-<note type="marginal">27</note> ἀφαιρεῖται᾿. κατὰ τὸ ἐναντίον· ἐναντίον δʼ ἔστι
+               <note type="marginal">27</note> ἀφαιρεῖται᾿. κατὰ τὸ ἐναντίον· ἐναντίον δʼ ἔστι
 βασιλεῖ μὲν ἰδιώτης, τῷ δὲ ἐγρηγορέναι τὸ καθεύδειν·
 πῶς ἂν οὖν λαμβάνοιτο; ‘εἰ τὸν ἰδιώτην οὐδὲν δεινὸν
 διʼ ὅλης νυκτὸς καθεύδειν, εὔδηλον, ὡς τὸν βασιλέα
@@ -464,7 +479,7 @@ cf. Prisc. meditationi usus | γὰρ LbPζ, Prisc.; om. Phg 19 ἐγ-
 καθεύδων ἀλλὰ φροντίζων κατάσκοπον ἐπὶ τὰς ναῦς
 ἔπεμπε Δόλωνα᾿. ὕστατος δέ ἐστι τόπος ὁ κατὰ κρίσιν. <lb n="20"/>
 τὸ δὲ τέλος παράκλησιν ἐχέτω.</p>
-<note type="footnote">2 κατὰ τὸ ἐνθύμημα om. Prisc.; deest l. 15; cf. Aphth. | τὸ
+            <note type="footnote">2 κατὰ τὸ ἐνθύμημα om. Prisc.; deest l. 15; cf. Aphth. | τὸ
 Pgζ; om. Lb Ph 3 a iudicio, a conclusione Prisc. | δὲ ἡ Pζ
 5 Hom. B 24 e κατὰ Lb Pζ ; om. Phg 7 ἐστὶ Lb Ph; ἔσται
 Pζ; ἐπὶ Pg; est enim Prisc. | τῶ Pg 8. 9 virum in summa po-
@@ -472,18 +487,18 @@ testate multis praesidentem Prisc. 10 αἰεὶ Pg | ἰέναι Spengel
 12 (μὲν om.) ἰδιώτας Pζ 12 τὸ (pro τῷ) Ph 13 〈κατὰ τὸ
 ἐνθύμημα〉 πῶς Ward 14 ὅλης τῆς Phg 15 προσῆκεν Pgζ
 18 Hom. K 299 sq. 20 ὕστερός (om. δέ) Phg</note>
-</div>
-
-<pb n="11"/>
-<div type="textpart" subtype="section" n="5">
-<head>Περὶ ἀνασκευῆς καὶ κατασκευῆς.</head>
-<p>Ἀνασκευή ἐστιν ἀνατροπὴ τοῦ προτεθέντος πράγματος, <note type="marginal">5</note>
+         </div>
+         <pb n="11"/>
+         <div n="5" type="section">
+            <head>Περὶ ἀνασκευῆς καὶ κατασκευῆς.</head>
+            <p>Ἀνασκευή ἐστιν ἀνατροπὴ τοῦ προτεθέντος πράγματος, <note type="marginal">5</note>
 κατασκευὴ δὲ τοὐναντίον βεβαίωσις.</p>
-<note type="marginal">9</note> <p>Τὰ δὲ πάνυ ψευδῆ οὔτε ἀνασκευαστέον οὔτε κατασκευαστέον, <note type="marginal">28</note>
-<lb n="5"/> ὥσπερ τούς μύθους, ἀλλὰ δεῖ δήπου τὰς
+            <note type="marginal">9</note>
+            <p>Τὰ δὲ πάνυ ψευδῆ οὔτε ἀνασκευαστέον οὔτε κατασκευαστέον, <note type="marginal">28</note>
+               <lb n="5"/> ὥσπερ τούς μύθους, ἀλλὰ δεῖ δήπου τὰς
 ἀνασκευὰς καὶ τὰς κατασκευὰς τῶν ἐφʼ ἑκάτερα τὴν
 ἐπιχείρησιν· δεχομένων ποιεῖσθαι.</p>
-<p>Ἀνασκευάσεις δὲ ἐκ τοῦ ἀσαφοῦς, ἐκ τοῦ ἀπιθάνου,
+            <p>Ἀνασκευάσεις δὲ ἐκ τοῦ ἀσαφοῦς, ἐκ τοῦ ἀπιθάνου,
 ἐκ τοῦ ἀδυνάτου, ἐκ τοῦ ἀνακολούθου τοῦ καὶ ἐναντίου
 <lb n="10"/> καλουμένου, ἐκ τοῦ ἀπρεποῦς, ἐκ τοῦ ἀσυμφόρου. ἐκ
 τοῦ ἀσαφοῦς οἷον ῾ ἀσαφὴς ἦν ὁ περὶ Νάρκισσον χρόνοςʼ.
@@ -496,11 +511,11 @@ testate multis praesidentem Prisc. 10 αἰεὶ Pg | ἰέναι Spengel
 θεὸν ὄντα θνητῇ μίγνυσθαι᾿. ἐκ τοῦ ἀσυμφόρου, ὅταν
 λέγωμεν, ὅτι οὐδὲ συμφέρει ταῦτα ἀκούειν. — Κατασκευάσεις
 <lb n="20"/> δὲ ἐκ τῶν ἐναντίων.</p>
-</div>
-
-<div type="textpart" subtype="section" n="6">
-<head>Περὶ κοινοῦ τόπου.</head> <note type="marginal">29</note>
-<p>Ὁ τόπος ὁ κοινὸς προσαγορευόμενος αὔξησιν ἔχει 6
+         </div>
+         <div n="6" type="section">
+            <head>Περὶ κοινοῦ τόπου.</head>
+            <note type="marginal">29</note>
+            <p>Ὁ τόπος ὁ κοινὸς προσαγορευόμενος αὔξησιν ἔχει 6
 τοῦ ὁμολογουμένου πράγματος ὡς τῶν ἀποδείξεων ἤδη
 <note type="footnote">1 καὶ κατασκευῆς Pgζ; καὶ περὶ κατασκευῆς ἅμα Ph; om. Lb,
 Prisc. 2 προκειμένου Dox. II 319, 3 353,10 W.; cf. Aphth.
@@ -513,14 +528,14 @@ Herod. 1, 24 | ἐόντα Pg | ἆσαι βουληθῆναι Pζ 14 τὸν�
 om. Lb 15 καὶ om. Pg 16 ἦν om. Pg | τῶ LbPζ: τὸ Ph;
 τοῦ Pg | ἂν om. Pζ 17 ἀπόλλω Pζ | de Daphne cf. Aphth.
 22 ὁ κοινὸς τόπος Pζ 22 [τοῦ]? cf. 25, 13; Theon II 106, 5 Sp.</note>
-
-<pb n="12"/>
+               <pb n="12"/>
 γεγενημένων· οὐ γὰρ ἔτι ζητοῦμεν, εἰ οὗτος ἱερόσυλος,
 εἰ οὗτος ἀριστεύς, ἀλλʼ ὡς ἀποδεδειγμένου τὴν αὔξησιν
 ποιούμεθα.</p>
-<p>Λέγεται δὲ κοινὸς τόπος, διότι ἁρμόττει κατὰ παντὸς
-μὲν ἱεροσύλου, ὑπὲρ παντὸς δὲ ἀριστέως.</p><lb n="5"/>
-<p>Χρὴ δὲ οὕτως προάγειν· πρῶτα κατὰ τὴν ἐξέτασιν
+            <p>Λέγεται δὲ κοινὸς τόπος, διότι ἁρμόττει κατὰ παντὸς
+μὲν ἱεροσύλου, ὑπὲρ παντὸς δὲ ἀριστέως.</p>
+            <lb n="5"/>
+            <p>Χρὴ δὲ οὕτως προάγειν· πρῶτα κατὰ τὴν ἐξέτασιν
 τοῦ ἐναντίου, εἶτα αὐτὸ τὸ πρᾶγμα, εἶτα ἡ σύγκρισις,
 εἶτα ἡ γνώμη, εἶτα στοχαστικῶς τὸν παρελθόντα βίον
 ἀπὸ τοῦ παρόντος διαβαλεῖς, εἶτα ἐκβαλεῖς τὸν ἔλεον
@@ -549,8 +564,7 @@ Prisc.; post 17 βούλεσθε ponere mavult Spengel | τοῦτο Ph
 et fidei religionisque violatio nescio an minores debeat sacrilegio
 poenas Prisc. | ὅρκους οὓς ὑμεῖς ὠμόσατε Dox. | τῆσδε τῆς
 Dox. (Ld)</note>
-
-<pb n="13"/>
+               <pb n="13"/>
 εἰ φαυλοτέραν δίκην ἔχει τῆς παρανομίας᾿. εἶτα πρὶν
 ἐλθεῖν ἐπʼ αὐτὸ τὸ πρᾶγμα, περὶ τοῦ ἐναντίου διαλεκτέον;
 ὅτι ῾ οἱ νόμοι τῆς τῶν θεῶν θεραπείας προὐνοήσαντο,
@@ -583,8 +597,7 @@ Ph 16 ἀνθρώπους LbPζ, cf. Dox. II 381,14 W.; ἄνον Phg
 17 οἱ δὲ εἰς θεούς· Pg 17. 18 παραπλησίως Pg 19 ὅτε Ph
 20 ἅπτωνται Ph 22 cf. Theon II 108,11 Sp. 23 δέ οἱ Pg
 24 διαβάλλειν Phg | cf. Theon II 108, 17 sq. Sp.</note>
-
-<pb n="14"/>
+               <pb n="14"/>
 κλέπτην ἔχετε καὶ τοιχωρύχον καὶ μοιχόνʼ. ἐξετάσεις
 <note type="marginal">34</note> δὲ καὶ τὴν γνώμην, ἀφʼ ἧς ἦλθεν ἐπὶ τοῦτο, ὅτι ῾ μὴ
 βουλόμενος γεωργεῖν ἀπὸ τοιούτων πλουτεῖν ἐθέλει᾿.
@@ -599,16 +612,17 @@ Ph 16 ἀνθρώπους LbPζ, cf. Dox. II 381,14 W.; ἄνον Phg
 τῶν ἀναθημάτων ἁπτόμενον᾿. καὶ τελεύτα εἰς παράκλησιν
 ῾τί μέλλετε; τί βουλεύεσθε περὶ οὗ πάλαι κέκριται;ʼ
 — Ταῦτα ὡς ἐν τῷ παρόντι· τὴν δὲ τελεωτέραν
-μέθοδον ὕστερον εἴσῃ.</p><lb n="15"/>
-</div>
-
-<div type="textpart" subtype="section" n="7">
-<note type="marginal">35</note> <head>Περὶ ἐγκωμίου.</head>
-<p>7 Ἐγκώμιόν ἐστιν ἔκθεσις τῶν προσόντων ἀγαθῶν
+μέθοδον ὕστερον εἴσῃ.</p>
+            <lb n="15"/>
+         </div>
+         <div n="7" type="section">
+            <note type="marginal">35</note>
+            <head>Περὶ ἐγκωμίου.</head>
+            <p>7 Ἐγκώμιόν ἐστιν ἔκθεσις τῶν προσόντων ἀγαθῶν
 τινι κοινῶς ἢ ἰδίως· κοινῶς μὲν οἷον ἐγκώμιον ἀνθρώπου,
 ἰδίως δὲ οἷον ἐγκώμιον Σωκράτους.</p>
-<p>Ἐγκωμιάζομεν δὲ καὶ πράγματα οἷον δικαιοσύνην <lb n="20"/>
-<note type="footnote">1 ἐξετάσεις — 3 ἐθέλει ante 13, 23 ἔξεστι ponenda? cf. 12, 8
+            <p>Ἐγκωμιάζομεν δὲ καὶ πράγματα οἷον δικαιοσύνην <lb n="20"/>
+               <note type="footnote">1 ἐξετάσεις — 3 ἐθέλει ante 13, 23 ἔξεστι ponenda? cf. 12, 8
 2 προῆλθεν Lb 3 τοιτων Pζ; τῶν φόνων LbPhg; per sacri-
 legia Prisc. (cf. Dox. II 392, 22 W. ἐκ τῶν ἀλλοτρίων) 4 λέγεις
 Pgζ | εἰ — 5 ὀρφανοί a themate (p. 12, 13) aliena; nec magis aptus
@@ -622,14 +636,13 @@ Sp. orta 6 ἐκβάλλεις Ph | δὲ LbPζ: om. Phg 6. 7 καλουμέ-
 15 εἴσῃ om. Prisc. | cf. 8,13 | ὡς LbPζ; νῦν Phg 15 ὕστερον
 Phg; om. LbPζ 18 ἀνθρώπου — 19 ἐγκώμιον om. Phg 20 καὶ
 vulg., cf. Prisc. etiam; om. LbPhgζ; τὰ Pφ</note>
-
-<pb n="15"/>
+               <pb n="15"/>
 καὶ ἄλογα ζῴα οἷον ἵππον, ἤδη δὲ καὶ φυτὰ καὶ ὄρη
 καὶ ποταμούς.</p>
-<p>Κέκληται δὲ ἐγκώμιον, ὥς φασιν, ἐκ τοῦ τοὺς ποιητὰς <note type="marginal">36</note>
+            <p>Κέκληται δὲ ἐγκώμιον, ὥς φασιν, ἐκ τοῦ τοὺς ποιητὰς <note type="marginal">36</note>
 τοὺς ὕμνους τῶν θεῶν ἐν ταῖς κώμαις τὸ παλαιὸν
 <lb n="5"/> ᾄδειν· ἐκάλουν δὲ κώμας τοὺς στενωπούς.</p>
-<p>Ἐπαίνου δὲ διαφέρει τὸ ἐγκώμιον, ὅτι ὁ μὲν ἔπαινος
+            <p>Ἐπαίνου δὲ διαφέρει τὸ ἐγκώμιον, ὅτι ὁ μὲν ἔπαινος
 καὶ ἐν βραχεῖ γένοιτʼ ἄν, οἷον Σωκράτης σοφόςʼ, τὸ
 δὲ ἐγκώμιον ἐν μακροτέρᾳ διεξόδῳ. μὴ ἀγνόει δέ, ὅτι
 καὶ τοὺς ψόγους τοῖς ἐγκωμίοις προσνέμουσιν, ἤτοι
@@ -641,7 +654,7 @@ vulg., cf. Prisc. etiam; om. LbPhgζ; τὰ Pφ</note>
 <lb n="15"/> τέλει φαίνεσθαι, ἐν τῇ ἐκβάσει· ἐν μὲν γὰρ τῷ κοινῷ <note type="marginal">37</note>
 τόπῳ σκοπός ἐστι δωρεὰν λαβεῖν, τὸ δὲ ἐγκώμιον ψιλὴν
 ἀρετῆς ἔχει μαρτυρίαν.</p>
-<p>Τόποι δέ εἰσιν ἐγκωμιαστικοὶ ἔθνος οἷον Ἕλλην,
+            <p>Τόποι δέ εἰσιν ἐγκωμιαστικοὶ ἔθνος οἷον Ἕλλην,
 πόλις οἷον Ἀθηναῖος, γένος οἷον Ἀλκμαιωνίδης. ἐρεῖς
 <lb n="20"/> δέ τινα καὶ ἃ περὶ τὴν γένεσιν συνέπεσεν ἄξια θαύματος,
 οἷον ἐξ ὀνειράτων ἢ συμβόλων ἢ τινων τοιούτων.
@@ -659,8 +672,7 @@ loca … haec sunt Prisc. 20 γέννησιν Ph | Menand. III
 μάσια . . Κύρῳ τὰ τῆς μητρὸς ὀνείρατα; cf. Herod 1, 107. <lb n="108"/>
 21 τινων LbPζ; om. Phg; vel huiuscemodi quibusdam praenun-
 tiationibus Prisc.</note>
-
-<pb n="16"/>
+               <pb n="16"/>
 ἐπὶ τούτοις ἡ τροφή, οἷον ὥσπερ ἐπὶ τοῦ Ἀχιλλέως,
 ὅτι μυελοῖς λεόντων ἐτράφη καὶ παρὰ τῷ Χείρωνι.
 εἶτα ἡ ἀγωγή, πῶς ἤχθη ἢ πῶς ἐπαιδεύθη. καὶ
@@ -681,11 +693,11 @@ tiationibus Prisc.</note>
 τῶν διὰ τὸ γῆρας γινομένων’. ἔτι δὲ καὶ ἀπὸ τοῦ τρόπου
 τῆς τελευτῆς, ὅπως ἀπέθανεν ὑπὲρ τῆς πατρίδος
 μαχόμενος· καὶ εἴ τι παράδοξον ἐνταῦθα, ὡς ἐπὶ τοῦ <lb n="20"/>
-<note type="marginal">39</note> Καλλιμάχου, ὅτι καὶ νεκρὸς εἱστήκει· καὶ ἀπὸ τοῦ
+               <note type="marginal">39</note> Καλλιμάχου, ὅτι καὶ νεκρὸς εἱστήκει· καὶ ἀπὸ τοῦ
 ἀποκτείναντος αὐτὸν ἐπαινέσεις, οἷον ὅτι Ἀχιλλεὺς ὑπὸ
 θεοῦ ἀπέθανε τοῦ Ἀπόλλωνος. ἐξετάσεις δὲ καὶ τὰ μετὰ
 τὴν τελευτήν, εἰ ἀγῶνες ἐτέθησαν ἐπʼ αὐτῷ, ὡς ἐπὶ <note type="marginal">13</note>
-<note type="footnote">1 οἷον ὥσπερ LbPζ; ὡς (om. cet.) Phg; quomodo Prisc. 2 Apollod.
+               <note type="footnote">1 οἷον ὥσπερ LbPζ; ὡς (om. cet.) Phg; quomodo Prisc. 2 Apollod.
 3,172. Menand. III 371, 24 Sp. 8 ὅπως Phg 10 ἐν — 11 πράξεις
 om. LbPg 11 προελόμενος Lb 16 ἐξ — 17 μακρόβιον om. Lb
 16 μακροβίωτον Dox. (Wc) | ἐπαινέση Pζ | cf. [Dion.] II 1 p. 282,
@@ -695,13 +707,13 @@ Sard. 18 τῶν Pgζ, Sard.; om. LbPh | τὸ om. Pg 21 cf. Plut.
 Parall. 1 p. 305 C 22 κτείναντος Lb | οἷον ὅτι LbPζ, Sard.;
 ὡς Phg | ὁ ἀχιλλεὺς Pζ 23 τὰ om. Phg; καὶ τὰ om. Sard.;
 24 Hom. Ψ 262</note>
-
-<pb n="17"/>
+               <pb n="17"/>
 Πατρόκλῳ, εἰ χρησμός τις περὶ τῶν ὀστέων, ὡς ἐπὶ <note type="marginal">40</note>
 Ὀρέστου, εἰ οἱ παῖδες ἔνδοξοι, ὡς ὁ Νεοπτόλεμος. μεγίστη
 δὲ ἐν τοῖς ἐγκωμίοις ἀφορμὴ ἡ ἀπὸ τῶν συγκρίσεων,
 ἃς τάξεις, ὡς ἂν ὁ καιρὸς ὑφηγῆται.</p>
-<lb n="5"/><p>Παραπλησίως δὲ καὶ τὰ ἄλογα ζῷα κατὰ τὸ ἐγχωροῦν.
+            <lb n="5"/>
+            <p>Παραπλησίως δὲ καὶ τὰ ἄλογα ζῷα κατὰ τὸ ἐγχωροῦν.
 καὶ γὰρ ἀπὸ τοῦ τόπου, ἐν ᾧ γίνεται, ἐγκωμιάσεις.
 εἰς δὲ τὴν τοῦ γένους χώραν ἐρεῖς, τίνι θεῶν
 ἀνάκειται, οἷον ἡ γλαῦξ τῇ Ἀθηνᾷ, ὁ ἵππος τῷ Ποσειδῶνι.
@@ -709,7 +721,7 @@ Parall. 1 p. 305 C 22 κτείναντος Lb | οἷον ὅτι LbPζ, Sard.;
 <lb n="10"/> ψυχήν, ποταπὸν τὸ σῶμα, τίνα ἔργα ἔχει, ποῦ χρήσιμα,
 πόσος ὁ χρόνος τοῦ βίου. καὶ συγκρινεῖς δὲ καὶ
 ὅλως τοῖς ἐμπίπτουσι τῶν τόπων χρήσῃ.</p>
-<p>Τὰ δὲ πράγματα ἐγκωμιάσεις ἀπὸ τῶν εὑρόντων,
+            <p>Τὰ δὲ πράγματα ἐγκωμιάσεις ἀπὸ τῶν εὑρόντων,
 οἷον τὴν θηρατικὴν Ἄρτεμις εὗρε καὶ Ἀπόλλων· ἀπὸ
 <lb n="15"/> τῶν χρησαμένων, ὅτι ἥρωες αὐτῇ ἐχρῶντο· μέθοδος δὲ
 ἀρίστη ἐπὶ τῶν τοιούτων ἐγκωμίων, ὅσα περὶ πραγμάτων,
@@ -719,7 +731,7 @@ Parall. 1 p. 305 C 22 κτείναντος Lb | οἷον ὅτι LbPζ, Sard.;
 <lb n="20"/> τὰ σώματα. — Ἐντεῦθεν οὐκ ἀγνοήσεις, ὅπως θεοὺς
 ἐγκωμιαστέον. ἰστέον δέ, ὅτι τὰ εἰς θεοὺς ὕμνους
 κλητέον.</p>
-<p>Καὶ μὴν καὶ τὰ φυτὰ παραπλησίως ἀπὸ τοῦ τόπου,
+            <p>Καὶ μὴν καὶ τὰ φυτὰ παραπλησίως ἀπὸ τοῦ τόπου,
 <note type="footnote">1 Herod. 1, 67 | περὶ LbPhζ, Sard.; ἐπὶ Pg 2 τοῦ ὀρέστου Pg |
 ὁ om. Pg, Sard. 4 ἃς scripsi, cf. Prisc. quas; ἣν codd. | ἀφη-
 γῆται Pζ 5 παραπλησίως — τὰ om. Lb | καὶ om. Pζ 7 cf. 15,19
@@ -731,8 +743,7 @@ locis (cf. 30, 11) 14 οἷον ὅτι Nic. | εὗρε καὶ LbPζ, Sard.; �
 Lb 20 ἐντεῦθεν — 22 κλητέον suspecta; cf. 15, 4 20 sq.
 cf. Alex. III 4, 14—6, 9 Sp. 21 cf. Theon II 109, 24.; Plat.
 Reip. X 607 A 23 ὡς ἀπὸ Pg</note>
-
-<pb n="18"/>
+               <pb n="18"/>
 ἐν ᾧ φύεται· ἀπὸ τοῦ θεοῦ, ἀνάκειται, ὡς ἡ ἐλαία
 τῇ Ἀθηνᾷ· ἀπὸ τῆς τροφῆς, οἷον πῶς τρέφεται. καὶ
 εἰ μὲν πολλῆς ἐπιμελείας δέοιτο, τοῦτο θαυμάσεις, ἂν
@@ -740,23 +751,23 @@ Reip. X 607 A 23 ὡς ἀπὸ Pg</note>
 ἀναδρομήν, τὸ κάλλος, εἰ ἀειθαλές, ὡς ἡ ἐλαία· εἶτα <lb n="5"/>
 τὸ χρήσιμον, ᾧ μάλιστα ἐνδιατρίψεις. τὰς δὲ συγκρίσεις
 πανταχοῦ παραληπτέον.</p>
-<p>Καὶ μὴν καὶ πόλεως ἐγκώμιον ἐκ τούτων οὐκ ἂν
+            <p>Καὶ μὴν καὶ πόλεως ἐγκώμιον ἐκ τούτων οὐκ ἂν
 χαλεπῶς μεταχειρίσαιο· ἐρεῖς γὰρ καὶ περὶ γένους, ὅτι <note type="marginal">14</note>
-<note type="marginal">42</note> αὐτόχθονες, καὶ περὶ τροφῆς, ὡς ὑπὸ θεῶν ἐτράφησαν, <lb n="10"/>
+               <note type="marginal">42</note> αὐτόχθονες, καὶ περὶ τροφῆς, ὡς ὑπὸ θεῶν ἐτράφησαν, <lb n="10"/>
 καὶ περὶ παιδείας, ὡς ὑπὸ θεῶν ἐπαιδεύθησαν. ἐξετάσεις
 δὲ ὡς ἐπὶ ἀνθρώπου, ποδαπὴ τούς τρόπους ἡ
 πόλις, ποδαπὴ τὴν κατασκευήν, τίσιν ἐπιτηδεύμασιν
 ἐχρήσατο, τίνα κατέπραξε.</p>
-</div>
-
-<div type="textpart" subtype="section" n="8">
-<head>Περὶ συγκρίσεως.</head> <lb n="15"/>
-<p>8 Ἡ σύγκρισις παρείληπται μὲν καὶ ἐν τόπῳ κοινῷ
+         </div>
+         <div n="8" type="section">
+            <head>Περὶ συγκρίσεως.</head>
+            <lb n="15"/>
+            <p>8 Ἡ σύγκρισις παρείληπται μὲν καὶ ἐν τόπῳ κοινῷ
 κατὰ σύγκρισιν ἡμῶν αὐξόντων τὰ ἀδικήματα, παρείληπται
 δὲ καὶ ἐν ἐγκωμίῳ κατὰ σύγκρισιν ἡμῶν αὐξόντων
 τὰ χρηστά, παρείληπται δὲ· καὶ ἐν ψόγῳ τὴν αὐτὴν
 παρεχομένη δύναμιν. ἐπεὶ δὲ οὐ τῶν φαύλων τινὲς καὶ <lb n="20"/>
-<note type="footnote">2 et a pastu Prisc., cf. Sard. | τῆς om. Pζ | οἷον om. Prisc
+               <note type="footnote">2 et a pastu Prisc., cf. Sard. | τῆς om. Pζ | οἷον om. Prisc
 5 εἶτα LbPζ; εἰ Phg 5. 6 εἰ τῶ χρήσιμον Pg, (εἴ τῳ) ς; et quid
 utile habeat Prisc. | διατρίψεις Pζ 7 ληπτέον Pg 8 urbium
 laudes Prisc. | cf. [Dion.] ΙΙ 1 p. 275, 19 sq. Us. 11 ἐξεταστέον
@@ -769,11 +780,10 @@ ante p. 19, 3 ponenda erat | cf. 13, 14 18 ἐν om. LbPg | cf.
 moratus non est nisi 15,9 | ἐν om. Pg 20 ἐπεὶ Pζ, (ει ex parte
 evan.) Lb: ἐπειδὴ Phg | οὐ Pζ; om. LbPhg; Prisc.: doctissimi
 oratorum | τινές: cf. Theon II 112, 20 Sp.</note>
-
-<pb n="19"/>
+               <pb n="19"/>
 αὐτὴν καθʼ αὐτὴν ἐποίησαν γύμνασμα, μικρὸν περὶ
 αὐτῆς λεκτέον.</p>
-<p>Πρόεισι τοίνυν κατὰ τοὺς ἐγκωμιαστικοὺς τόπους·
+            <p>Πρόεισι τοίνυν κατὰ τοὺς ἐγκωμιαστικοὺς τόπους·
 συγκρίνομεν γὰρ καὶ πόλιν πόλει, ἀφʼ ὧν οἱ ἄνδρες,
 <lb n="5"/> καὶ γένος γένει καὶ τροφὴν τροφῇ καὶ ἐπιτηδεύματα
 καὶ πράξεις καὶ τὰ ἐκτὸς καὶ τρόπους θανάτων καὶ τὰ
@@ -784,7 +794,7 @@ oratorum | τινές: cf. Theon II 112, 20 Sp.</note>
 πρώτους ἀψαμένους τῶν πραγμάτων καὶ τοὺς μετιόντας
 παραθήσεις ἀλλήλοις, ποιότητα ψυχῆς, ποιότητα σώματος.
 ταὐτὸν δέ σοι καὶ περὶ πάντων κείσθω θεώρημια.</p>
-<p>Ἐνίοτε μὲν οὖν κατὰ τὸ ἴσον προάγομεν τὰς συγκρίσεις,
+            <p>Ἐνίοτε μὲν οὖν κατὰ τὸ ἴσον προάγομεν τὰς συγκρίσεις,
 <lb n="15"/> ἴσα δεικνύντες, ἃ παραβάλλομεν, ἢ διὰ πάντων
 ἢ διὰ πλειόνων· ἐνίοτε δὲ θάτερον προτίθεμεν,
 ἐγκωμιάζοντες κἀκεῖνο, οὗ τοῦτο προτίθεμεν· ἐνίοτε δὲ <note type="marginal">44</note>
@@ -805,22 +815,21 @@ Phg 16 πλειόνων LbPζ, Sard.; τῶν πλειόνων Pg; τῶν πλ�
 Ph 16 et 17 προστίθεμεν Ph 17 ἐνίοτε — 18 ἐπαινοῦμεν
 LbPζ; om. Phg 18 λέγεις Pζ 19 δικαιοσύνη Pζ 20 βέλ-
 τιστον Ph</note>
-
-<pb n="20"/>
+               <pb n="20"/>
 ἴσον τῷ κρείττονι δεῖξαι, οἷον εἰ σύγκρισιν λέγοις
 Ἡρακλέους καὶ Ὀδυσσέως. ἀπαιτεῖ δὲ τὸ τοιοῦτο βίαιον
 ῥήτορα καὶ δεινότητα, δεῖται δὲ καὶ γοργότητος
 ἡ ἐργασία πανταχοῦ διὰ τὸ δεῖν ταχείας ποιεῖσθαι τὰς
-μεταβάσεις.</p><lb n="5"/>
-</div>
-
-<div type="textpart" subtype="section" n="9">
-<head>Περὶ ἠθοποιίας.</head>
-<p>9 Ἠθοποιία ἐστὶ μίμησις ἤθους ὑποκειμένου προσώπου,
+μεταβάσεις.</p>
+            <lb n="5"/>
+         </div>
+         <div n="9" type="section">
+            <head>Περὶ ἠθοποιίας.</head>
+            <p>9 Ἠθοποιία ἐστὶ μίμησις ἤθους ὑποκειμένου προσώπου,
 οἷον τίνας ἂν εἴποι λόγους Ἀνδρομάχη ἐπὶ Ἕκτορι.
 προσωποποιία δέ, ὅταν πράγματι περιτιθῶμεν
 πρόσωπον, ὥσπερ ὁ Ἔλεγχος παρὰ Μενάνδρῳ, καὶ <lb n="10"/>
-<note type="marginal">45</note> ὥσπερ παρὰ τῷ Ἀριστείδῃ ἡ θάλασσα ποιεῖται τοὺς
+               <note type="marginal">45</note> ὥσπερ παρὰ τῷ Ἀριστείδῃ ἡ θάλασσα ποιεῖται τοὺς
 λόγους πρὸς τοὺς Ἀθηναίους. ἡ δὲ διαφορὰ δήλη·
 ἐκεῖ μὲν γὰρ ὄντος προσώπου λόγους πλάττομεν, ἐνταῦθα
 δὲ οὐκ ὂν πρόσωπον πλάττομεν. εἰδωλοποιίαν
@@ -828,12 +837,12 @@ LbPζ; om. Phg 18 λέγεις Pζ 19 δικαιοσύνη Pζ 20 βέλ-
 ὥσπερ Ἀριστείδης ἐν τῷ Πρὸς Πλάτωνα ὑπὲρ
 τῶν τεσσάρων· τοῖς γὰρ ἀμφὶ τὸν Θεμιστοκλέα περιῆψε
 λόγους.</p>
-<p>Γίνονται δὲ ἠθοποιίαι καὶ ὡρισμένων καὶ ἀορίστων
+            <p>Γίνονται δὲ ἠθοποιίαι καὶ ὡρισμένων καὶ ἀορίστων
 προσώπων· ἀορίστων μέν, οἷον ποίους ἂν εἴποι λόγους <lb n="20"/>
 τις πρὸς τοὺς οἰκείους μέλλων ἀποδημεῖν, ὡρισμένων
 δέ, οἷον ποίους ἂν εἴποι λόγους Ἀχιλλεὺς πρὸς Δηιδάμειαν
 μέλλων ἐπὶ τὸν πόλεμον ἐξιέναι.</p>
-<p>Τῶν δὲ ἠθοποιιῶν αἳ μέν εἰσιν ἀπλαῖ, ὅταν τις
+            <p>Τῶν δὲ ἠθοποιιῶν αἳ μέν εἰσιν ἀπλαῖ, ὅταν τις
 <note type="footnote">4 cf. Herm. p. 344, 4. 24 Sp. 7 sq. cf. Aphth. 8 ἐπὶ Phgζ;
 περὶ Lb | cf. 21, 14 9 aliter Aps. I 2 p. 299,10 Sp. -H. 10 πρόσ-
 ωπα Phg | ὡς (om. περ) Pζ | Menandri fr. 545, III p. 165 Kock
@@ -842,18 +851,18 @@ LbPζ; om. Phg 18 λέγεις Pζ 19 δικαιοσύνη Pζ 20 βέλ-
 II p 301 sq. Dind. 17 cf. Aphth. II 44, 30 Sp.; Geometres
 apud Dox. II 497, 5 W.; Sopater in schol. Aristid. III 674 Dind.
 18 λόγους Pζ: λόγοις Phg, (ι ex υ) Lb 23 τὸν om. Pg</note>
-
-<pb n="21"/>
+               <pb n="21"/>
 αὐτὸς καθʼ ἑαυτὸν ὑποκέηται λόγους διατιθέμενος, αἳ
 δὲ διπλαῖ, ὅταν πρὸς ἄλλον· καθʼ ἑαυτὸν μέν, οἷον
 τίνας ἂν εἴποι λόγους στρατηγὸς ἀπὸ τῆς νίκης ἀναστρέφων,
 πρὸς ἄλλον δέ, οἷον τίνας ἂν εἴποι λόγους
 <lb n="5"/> στρατηγὸς πρὸς τὸ στρατόπεδον μετὰ τὴν νίκην.</p>
-<p>Πανταχοῦ δὲ σώσεις τὸ οἰκεῖον πρέπον τοῖς ὑποκειμένοις <note type="marginal">46</note>
+            <p>Πανταχοῦ δὲ σώσεις τὸ οἰκεῖον πρέπον τοῖς ὑποκειμένοις <note type="marginal">46</note>
 προσώποις τε καὶ καιροῖς· ἄλλος μὲν γὰρ νέου
 λόγος, ἄλλος δὲ πρεσβύτου, ἄλλος δὲ γεγηθότος, ἄλλος
 ἀνιωμένου.</p>
-<lb n="10"/><p>Εἰσὶ δὲ αἳ μὲν ἠθικαί, αἳ δὲ παθητικαί, αἳ δὲ
+            <lb n="10"/>
+            <p>Εἰσὶ δὲ αἳ μὲν ἠθικαί, αἳ δὲ παθητικαί, αἳ δὲ
 μικταί· ἠθικαὶ μέν, ἐν αἷς ἐπικρατεῖ διόλου τὸ ἦθος,
 οἷον τίνας ἂν εἴποι λόγους γεωργὸς πρῶτον ἰδὼν
 ναῦν· παθητικαὶ δέ, ἐν αἷς διόλου τὸ πάθος, οἷον
@@ -862,10 +871,10 @@ apud Dox. II 497, 5 W.; Sopater in schol. Aristid. III 674 Dind.
 <note type="marginal">16</note> ἂν εἴποι λόγους Ἀχιλλεὺς ἐπὶ Πατρόκλῳ· καὶ γὰρ τὸ
 πάθος διὰ τὴν τοῦ Πατρόκλου σφαγὴν καὶ τὸ ἦθος,
 ἐν ᾧ περὶ τοῦ πολέμου βουλεύεται.</p>
-<p>Ἡ δὲ ἐργασία κατὰ τοὺς τρεῖς χρόνους πρόεισι· καὶ
+            <p>Ἡ δὲ ἐργασία κατὰ τοὺς τρεῖς χρόνους πρόεισι· καὶ
 <lb n="20"/> ἄρξῃ γε ἀπὸ τῶν παρόντων, ὅτι χαλεπά· εἶτα ἀναδραμῇ
 <note type="footnote">21, 5 — 25,6 multa evanuerunt Pg</note>
-<note type="footnote">1 αὐτὸς Phζ; αὐτὸν LbPg | ὑπόκειται Pg; ὑποκέκτηται Pζ
+               <note type="footnote">1 αὐτὸς Phζ; αὐτὸν LbPg | ὑπόκειται Pg; ὑποκέκτηται Pζ
 2 ad alios Prisc. 3 ἀπὸ — 5 στρατηγὸς om. Ph 4 ἄλλον
 LbPζ; ἄλλους Pg, Prisc. | οἷον om. Prisc. | τίνας LbPζ; ποίους
 Pg 5 τὴν om. Lb 6 πρέπον· ⌊II—III⌉ τοῖς Ph 9 ἀνιωμένου
@@ -878,20 +887,20 @@ Phg, Prisc. (Aphth. II 45, 6 Sp.: τῶν δὲ ἠθοποιιῶν αἳ μέ�
 καὶ (καὶ om. Vc) ἦθος καὶ πάθος Aphth. (PahVcAcBa; καὶ ἦθος
 καὶ πάθος om. Pc) | ἤθους καὶ πάθους LbPζ: om. Phg, Prisc.
 16 τῶ πατρόκλω Pζ 18 βούλεται Lb 20 γε LbPhg; τε Pζ</note>
-
-<pb n="22"/>
-<note type="marginal">47</note> πρὸς τὰ πρότερα, ὅτι πολλῆς εὐδαιμονίας μετέχοντα·
+               <pb n="22"/>
+               <note type="marginal">47</note> πρὸς τὰ πρότερα, ὅτι πολλῆς εὐδαιμονίας μετέχοντα·
 εἶτα ἐπὶ τὰ μέλλοντα μετάβηθι, ὅτι πολλῷ δεινότερα
 τὰ καταληψόμενα.</p>
-<p>Ἔστω δὲ καὶ σχήματα καὶ λέξεις πρόσφοροι τοῖς ὑποκειμένοις
-προσώποις.</p> <lb n="5"/>
-</div>
-
-<div type="textpart" subtype="section" n="10">
-<head>Περὶ ἐκφράσεως.</head>
-<lb n="10"/> <p>Ἔκφρασίς ἐστι λόγος περιηγηματικός, ὥς φασιν, ἐναργὴς
-καὶ ὑπ᾿ ὄψιν ἄγων τὸ δηλούμενον.</p> 
-<p>Γίνονται δὲ ἐκφράσεις προσώπων τε καὶ πραγμάτων
+            <p>Ἔστω δὲ καὶ σχήματα καὶ λέξεις πρόσφοροι τοῖς ὑποκειμένοις
+προσώποις.</p>
+            <lb n="5"/>
+         </div>
+         <div n="10" type="section">
+            <head>Περὶ ἐκφράσεως.</head>
+            <lb n="10"/>
+            <p>Ἔκφρασίς ἐστι λόγος περιηγηματικός, ὥς φασιν, ἐναργὴς
+καὶ ὑπ᾿ ὄψιν ἄγων τὸ δηλούμενον.</p>
+            <p>Γίνονται δὲ ἐκφράσεις προσώπων τε καὶ πραγμάτων
 καὶ καιρῶν καὶ τόπων καὶ χρόνων καὶ πολλῶν ἑτέρων· <lb n="10"/>
 προσώπων μέν, ὡς παρʼ Ὁμήρῳ «φολκὸς ἔην, χωλὸς
 δʼ ἕτερον πόδα»· πραγμάτων δὲ οἷον ἔκφρασις πεζομαχίας
@@ -901,9 +910,9 @@ Phg, Prisc. (Aphth. II 45, 6 Sp.: τῶν δὲ ἠθοποιιῶν αἳ μέ�
 <note type="marginal">48</note> τις καὶ μικτὴ ἔκφρασις, ὡς παρὰ τῷ Θουκυδίδῃ ἡ
 νυκτομαχία· ἡ μὲν γὰρ νύξ καιρός τις, ἡ δὲ μάχη
 πρᾶξις.</p>
-<p>Ἐπιχειρήσομεν δὲ τὰ μὲν πράγματα ἐκφράζοντες ἀπὸ
+            <p>Ἐπιχειρήσομεν δὲ τὰ μὲν πράγματα ἐκφράζοντες ἀπὸ
 τῶν προγεγονότων καὶ ἐν αὐτοῖς γινομένων καὶ ἐπισυμβαινόντων· <lb n="20"/>
-<note type="footnote">2 ἐπὶ LbPhζ, Sard.; εἰς Pg 6 sq. cf. [Dion.] II 1 p. 372,
+               <note type="footnote">2 ἐπὶ LbPhζ, Sard.; εἰς Pg 6 sq. cf. [Dion.] II 1 p. 372,
 4 sq. Us. 7. 8 περιηγηματικὸς ἐναργῶς ὑπ᾿ ὄψιν ἄγων τὸ δη-
 λούμενον Theon II 118, 7 Sp. (cf. Aphth.) 7 ἐνεργὴς Pζ 8 τὸ
 γινόμενον Phϛ 10 καὶ καιρῶν LbPζ; om. Phς; ? Pg 11 φολκὸς
@@ -916,8 +925,7 @@ om. Theon II 119, 3 Sp. 17 Thuc. 3, 22 | καιρός ἐστιν Theon
 19 ἐπιχειρίσ⌊ο ex ω⌉μεν Ph 20 καὶ τῶν ἐν . . καὶ τῶν ἐπι-
 συμβαινόντων Dox. II 519, 6 W. | καὶ ἐπισυμβαινόντων om. Pζ;
 vel aguntur Prisc. (Aphth.: καὶ ὅσα ἐκ τούτων ἐκβαίνειν φιλεῖ)</note>
-
-<pb n="23"/>
+               <pb n="23"/>
 οἷον εἰ πολέμου λέγοιμεν ἔκφρασιν,
 πρῶτον μὲν τὰ πρὸ τοῦ πολέμου ἐροῦμεν, τὰς στρατολογίας,
 τὰ ἀναλώματα, τοὺς φόβους, εἶτα τὰς συμβολάς,
@@ -926,13 +934,14 @@ vel aguntur Prisc. (Aphth.: καὶ ὅσα ἐκ τούτων ἐκβαίνει
 τὴν δουλείαν. — Ἐὰν δὲ τόπους ἐκφράζωμεν ἢ χρόνους <note type="marginal">49</note>
 ἢ πρόσωπα, ἕξομέν τινα καὶ ἐκ τῆς διηγήσεως καὶ ἐκ
 τοῦ καλοῦ ἢ χρησίμου ἢ παραδόξου λόγον.</p>
-<p>Ἀρεταὶ δὲ ἐκφράσεως μάλιστα μὲν σαφήνεια καὶ
+            <p>Ἀρεταὶ δὲ ἐκφράσεως μάλιστα μὲν σαφήνεια καὶ
 <lb n="10"/> ἐνάργεια· δεῖ γὰρ τὴν ἑρμηνείαν διὰ τῆς ἀκοῆς σχεδὸν
 τὴν ὄψιν μηχανᾶσθαι. ἔτι μέντοι συνεξομοιοῦσθαι τὰ
 τῆς φράσεως ὀφείλει τοῖς πράγμασιν· ἂν ἀνθηρὸν τὸ
 πρᾶγμα, ἔστω καὶ ἡ λέξις τοιαύτη, ἂν αὐχμηρὸν τὸ <note type="marginal">50</note>
-<note type="marginal">17</note> πρᾶγμα, ἔστω καὶ ἡ λέξις παραπλησία.</p>
-<lb n="15"/><p>Ἰστέον δέ, ὡς τῶν ἀκριβεστέρων τινὲς οὐκ ἔθηκαν
+               <note type="marginal">17</note> πρᾶγμα, ἔστω καὶ ἡ λέξις παραπλησία.</p>
+            <lb n="15"/>
+            <p>Ἰστέον δέ, ὡς τῶν ἀκριβεστέρων τινὲς οὐκ ἔθηκαν
 τὴν ἔκφρασιν εἰς γύμνασμα ὡς προειλημμένην καὶ ἐν
 μύθῳ καὶ ἐν διηγήματι καὶ ἐν τόπῳ κοινῷ καὶ ἐν ἐγκωμίῳ·
 καὶ γὰρ ἐκεῖ, φασίν, ἐκφράζομεν καὶ τόπους
@@ -940,7 +949,7 @@ vel aguntur Prisc. (Aphth.: καὶ ὅσα ἐκ τούτων ἐκβαίνει
 <lb n="20"/> ἐπειδή τινες οὐ φαῦλοι καὶ ταύτην ἐγκατηρίθμησαν
 τοῖς γυμνάσμασιν, οἷς ἠκολουθήσαμεν καὶ ἡμεῖς ῥᾳθυμίας
 ἔγκλημα φεύγοντες.</p>
-<note type="footnote">1 λέγομεν Lb, Dox. 2 πρὸ Phg; περὶ Ρζ; om. Lb 3 συμι-
+            <note type="footnote">1 λέγομεν Lb, Dox. 2 πρὸ Phg; περὶ Ρζ; om. Lb 3 συμι-
 βολάς Lb Ρζ, Sard.; συμπλοκάς Phg τὸ Lb Pζ; om. Phg;
 τὰ τρόπαια Theon lI 119, 21 Sp. 5 τῶν δὲ 〈ἡττωμένων〉
 Heeren, coll. Prisc. illorum vero qui victi sunt 6 χρόνους etiam
@@ -953,12 +962,11 @@ pro τόπους Pζ 7 alt. καὶ Phh, Prisc.; om Lb Pζ 8 παρα-
 ταμοὺς — forsan χρόνους vel καιρούς’ Ward 20 τινες: Theon
 lI 118, 6 Sp. 21 οἷς Phg ς; om Lb Pζ; fort τούτοις; Prisc.:
 non incomgruum est eos imitari</note>
-</div>
-
-<pb n="24"/>
-<div type="textpart" subtype="section" n="11">
-<head>Περὶ θέσως.</head>
-<p>11 Τῆς θέσεως ὅρον ἀποδεδώκασι τὸ τὴν θέσιν εἶναι
+         </div>
+         <pb n="24"/>
+         <div n="11" type="section">
+            <head>Περὶ θέσως.</head>
+            <p>11 Τῆς θέσεως ὅρον ἀποδεδώκασι τὸ τὴν θέσιν εἶναι
 ἐπίσκεψίν τινος πράγματος θεωρουμένου ἀμοιροῦσαν
 <note type="marginal">51</note> πάσης ἰδικῆς περιστάσεως. ἔοικε γὰρ ἡ θέσις καθολικῆς
 συμβουλῆς τόπον ἐπέχειν οὐ πρός τι πρόσωπον ὑποκείμενον, <lb n="5"/>
@@ -992,11 +1000,10 @@ Ph: om. Ac On | τὸ ὁτιοῦν On 7 μόνον Lb Ac; μόνην On.
 σω) Ph | αὐτῷ om. Ph (cf l. 7) | ποιούμε Pζ 14 ⌊ὥι⌉τιὀῦν
 Ph | τὸ om. On 15. 16 ὡρισμένον πρόσωπον Lb Pg ς; πρόσωπον
 ὡρισμένον Phζ Ac On 16 λάβοιμεν Pζ Ac On | ἢ (pro pr. καὶ) On</note>
-
-<pb n="25"/>
+               <pb n="25"/>
 τὴν διέξοδον τῶν λόγων ποιώμεθα, οὐ θέσις ἔσται
 ἀλλ᾿ ὑπόθεσις.</p>
-<p>Τῶν δὲ θέσεων αἳ μὲν πολιτικαί, αἳ δὲ οὔ· καὶ πολιτικαὶ
+            <p>Τῶν δὲ θέσεων αἳ μὲν πολιτικαί, αἳ δὲ οὔ· καὶ πολιτικαὶ
 μὲν αἱ ὑποπεπτωκυῖαι ταῖς κοιναῖς ἐννοίαις, οἷον
 <lb n="5"/> εἰ ῥητορευτέον καὶ ὅσα τοιαῦτα· οὐ πολιτικαὶ δέ, ὅσαι <lb n="52"/>
 οἰκεῖαί τινος ἐπιστήμης καὶ προσήκουσαι τοῖς περὶ αὐτὰς
@@ -1006,16 +1013,16 @@ Ph | τὸ om. On 15. 16 ὡρισμένον πρόσωπον Lb Pg ς; πρόσ
 <lb n="10"/> γυμναστέον. ὠνόμιασαν δὲ τινὲς ταύτας μὲν πρακτικάς,
 ἐκείνας δὲ θεωρητικάς· ταύτας μὲν γὰρ ἐνδέχεται καὶ
 πραχθῆναι, ἐκείνων δὲ τὸ τέλος ἡ θεωρία.</p>
-<p>Διαφέρει δὲ τόπου ἡ θέσις, ὅτι ὁ μὲν τόπος ἐστὶν
+            <p>Διαφέρει δὲ τόπου ἡ θέσις, ὅτι ὁ μὲν τόπος ἐστὶν
 <note type="marginal">18</note> ὁμολογουμένου πράγματος αὔξησις, ἡ δὲ θέσις ἀμφισβητουμένου
 <lb n="15"/> πράγματος ζήτησις.</p>
-<p>Τῶν δὲ θέσεων αἳ μὲν ἁπλαῖ, αἳ δὲ κατὰ τὸ πρός
+            <p>Τῶν δὲ θέσεων αἳ μὲν ἁπλαῖ, αἳ δὲ κατὰ τὸ πρός
 τι λαμβάνονται, αἳ δὲ διπλαῖ νομίζονται. ἐὰν γὰρ λέγωμεν
 ῾εἰ γαμητέονʼ, ἁπλῆ· ἐὰν δὲ ῾ εἰ βασιλεῖ γαμητέονʼ, <note type="marginal">53</note>
 πρός τι· ἐὰν δὲ λέγωμεν εἰ ἀθλητέον μᾶλλον ἢ
 <lb n="20"/> γεωργητέον᾿ , διπλῆ, δεῖ γὰρ τοῦ μὲν ἀποτρέπειν, ἐπὶ
 δὲ τὸ προτρέπειν.</p>
-<p>Διαιροῦνται δὲ αἱ θέσεις τοῖς τελικοῖς καλουμένοις
+            <p>Διαιροῦνται δὲ αἱ θέσεις τοῖς τελικοῖς καλουμένοις
 <note type="footnote">1 ποιούμεθα Lb Pg 3 sq cf 28, 15 sq. 4 ἐν ταῖς On
 6 καὶ αἱ Pg | προσήκουσα Pζ | αὐτὰ ϛ, (ut vid..) Pg; αὐτὴν Dox.
 II 542, 23 W. 7 οὐρανός On, Dox (cf. Aphth. lI 49, 20 Sp.
@@ -1027,8 +1034,7 @@ cf. 11, 22 14 αὔξησις Lb Phgζ; ἔνδειξις Ac On 15 πράγμα�
 ζήτησις om. Theon 16 τὸ Pgζ Ac; om. Lb Ph Οn 17 α — 19
 τι om On 18 pr γαμητέον — 19 εἰ om Ph 19 ἢ (pro εἰ)
 On 20 τὸ Ac On 21 δὲ om. On</note>
-
-<pb n="26"/>
+               <pb n="26"/>
 κεφαλαίοις, τῷ δικαίῳ, τῷ συμφέροντι, τῷ δυνατῷ,
 τῷ πρέποντι· οἷον ὅτι δίκαιον γαμεῖν καὶ τὸν αὐτὸν
 ἔρανον εἰσφέρειν τῷ βίῳ· ὅτι συμφέρον, πολλὰ γὰρ ἐξ
@@ -1038,11 +1044,11 @@ On 20 τὸ Ac On 21 δὲ om. On</note>
 ἐναντίων. λύσεις δὲ καὶ τὰς εὑρισκομένας ἀντιθέσεις.
 ἐπὶ δὲ τελευτῆς αἱ προτροπαὶ καὶ τὰ κοινὰ ἔθη πάντων
 ἀνθρώπων.</p>
-</div>
-
-<div type="textpart" subtype="section" n="12">
-<head>Περὶ νόμου εἰσφορᾶς.</head><lb n="10"/>
-<p>12 Καὶ τὴν τοῦ νόμου εἰσφορὰν τάττουσι τινὲς ἐν γυμνάσμασιν.
+         </div>
+         <div n="12" type="section">
+            <head>Περὶ νόμου εἰσφορᾶς.</head>
+            <lb n="10"/>
+            <p>12 Καὶ τὴν τοῦ νόμου εἰσφορὰν τάττουσι τινὲς ἐν γυμνάσμασιν.
 ἐπεὶ δὲ καὶ ἐν πραγματικῇ νόμων θέσεις
 <note type="marginal">54</note> καὶ κατηγορίαι ἐμπίπτουσαι ποιοῦσι ζήτησιν, διαφορὰν
 ἐκείνην φασίν· ἐν μὲν γὰρ πραγματικῇ περίστασίς ἐστιν,
@@ -1051,8 +1057,8 @@ On 20 τὸ Ac On 21 δὲ om. On</note>
 καιρὸν τὴν σπάνιν· ἐν γυμνάσματι δὲ τοῦτο οὐκ ἔστιν,
 ἀλλʼ ἁπλῶς γράφει τις ὠνητὰς εἶναι τὰς ἀρχάς, ἄνευ
 καιροῦ καὶ τῆς ἄλλης περιστάσεως.</p>
-<note type="footnote">5 δοκεῖν — 27, 10 folium intercidit Pg</note>
-<note type="footnote">1 τῶ συμφέροντι τῶ δικαίω Pζ 2 οἶον Pζ Ac On; om. Lb Phg
+            <note type="footnote">5 δοκεῖν — 27, 10 folium intercidit Pg</note>
+            <note type="footnote">1 τῶ συμφέροντι τῶ δικαίω Pζ 2 οἶον Pζ Ac On; om. Lb Phg
 3 ὅτι συμφέρει On; ὅτι συμφέρειν Pζ 4 ὅτι δυνατόν Lb Pζ
 (ὅτι om.) δυνατόν Ac, (δύναται) On; om. Phg |ἐκ — 5 δυνατόν
 om Lb 4. 5 cf progymnasma in Oxyr. Pap. l 124: Ἄδραστος
@@ -1067,9 +1073,8 @@ Pζ; δὲ ἐκείνην Ph, Prisc. 15 ἐν (τῷ add. Sard.) γυμνάσμ
 δὲ οὐκ ἔστιν οἷον Lb Pζς, Sard ; οἷον ἐν τῶι γυμνάσματι (omn
 cet.) Ph |alt ἐν — 18 ἀπλῶς om. Prisc 16 ἔχει Sard. 17 ἐγ-
 γύμνασμα δὲ Ph |τοῦτο om. Pζ 17—19 cf. Π εὑρ 192, 18 Sp.</note>
-
-<pb n="27"/>
-<p>Διαιρεῖται δὲ τῷ σαφεῖ, τῷ δικαίῳ, τῷ νομίμῳ, τῷ
+            <pb n="27"/>
+            <p>Διαιρεῖται δὲ τῷ σαφεῖ, τῷ δικαίῳ, τῷ νομίμῳ, τῷ
 συμφέροντι, τῷ δυνατῷ, τῷ πρέποντι. τῷ μὲν σαφεῖ,
 ὡς παρὰ Δημοσθένει «ἀλλὰ πᾶσιν εἶναι ταῦτα γνῶναι
 καὶ μαθεῖν ἁπλᾶ καὶ σαφῆ τὰ δίκαια»· τῷ νομίμῳ δέ,
@@ -1079,17 +1084,14 @@ cet.) Ph |alt ἐν — 18 ἀπλῶς om. Prisc 16 ἔχει Sard. 17 ἐγ-
 καὶ νῦν καὶ εἰς τὸν ἐπιόντα χρόνον βλάπτειʼ· τῷ δυνατῷ
 δέ, ὅταν λέγωμεν ὅτι ῾ οὐδὲ δύναται γενέσθαιʼ·
 <lb n="10"/> τῷ πρέποντι δέ, ὅταν λέγωμεν ὡς ῾ εἰς δόξαν βλάπτειʼ.</p>
-<note type="footnote">1 legitimo, iusto Prisc.; cf. l. 4. 6 3 παρὰ τῶ δημοσθένει
+            <note type="footnote">1 legitimo, iusto Prisc.; cf. l. 4. 6 3 παρὰ τῶ δημοσθένει
 Pζ | πᾶσιν ᾖ ταὐτὰ ἀναγνῶναι Dem. 20, 93 5 sq. cf. Anaxim.
 p. 14, 23 sq. Sp -H. | ὅτι — 6 λέγωμεν om. Phζ 6 ὅτι καὶ scripsi
 coll. Prisc quod et; ὅτι om. Lb Phζ, Sard ; καὶ om vulg. 9 οὐδὲ
 Lb Pζ: οὐ Ph: neque Prisc. | γενέσθαι scripsi (γίνεσθαι Heeren;
 cf. Anaxin p 14, 23 Sp. -H ., v. l.); λέγειν Lb Phζ: fieri Prisc. 10 δὲ
 om. Ph (2 μὲν et 4. 6. 7. 9. 10. δὲ om Prisc)</note>
-</div>
-
-
-	 </div>
-</body>
-</text>
+         </div>
+      </body>
+   </text>
 </TEI>

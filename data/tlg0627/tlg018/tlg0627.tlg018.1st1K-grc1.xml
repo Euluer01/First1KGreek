@@ -1,94 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="eng">    
-    <fileDesc>
-<titleStmt><title xml:lang="lat">De arte</title>
-        <author>Hippocrates</author>
-        <editor>Émile Littré</editor>
-        <funder>Andrew W. Mellon Foundation</funder>
-      <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-<authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</authority>
-<publisher>University of Leipzig</publisher>
-<pubPlace>Germany</pubPlace>
-<idno type="filename">tlg0627.tlg018.1st1K-grc1.xml</idno>
-<availability>
-<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-</availability>
-<date>2016</date>
-</publicationStmt>
-<sourceDesc>
-<biblStruct>
-          <monogr>
-            <title xml:lang="fre">Oeuvres complètes d'Hippocrate</title>
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De arte</title>
             <author>Hippocrates</author>
             <editor>Émile Littré</editor>
-            <imprint>
-              <publisher>Baillière</publisher>
-              <pubPlace>Paris</pubPlace>
-              <biblScope unit="volume">6</biblScope>
-              <biblScope unit="pp" from="2" to="26">2-26</biblScope>
-              <date>1849</date>
-            </imprint>
-          </monogr>
-  <ref target="https://hdl.handle.net/2027/ucm.5321352149?urlappend=%3Bseq=10">HathiTrust</ref>
-        </biblStruct>    
-        </sourceDesc>
-</fileDesc>
-<encodingDesc>
-<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>    <refsDecl n="CTS">
-        <cRefPattern matchPattern="(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-      </refsDecl>
-    </encodingDesc>
-<profileDesc>
-<langUsage>
-        <language ident="grc">Greek</language>
-  <language ident="lat">Latin</language>
-  <language ident="fre">French</language>            
-      </langUsage>
-    </profileDesc>
-</teiHeader>
-<text>
-<body>
-
-<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0627.tlg018.1st1K-grc1">
-<pb n="2"/>
-
-<div type="textpart" subtype="chapter" n="1">
-<head>ΠΕΡΙ ΤΕΧΝΗS.</head>
-<p>1. Εἰσί τινες οἳ τέχνην πεποίηνται τὸ τὰς τέχνας αἰσχροεπεῖν,
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</authority>
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0627.tlg018.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0627.tlg018.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="fre">Oeuvres complètes d'Hippocrate</title>
+                  <author>Hippocrates</author>
+                  <editor>Émile Littré</editor>
+                  <imprint>
+                     <publisher>Baillière</publisher>
+                     <pubPlace>Paris</pubPlace>
+                     <biblScope unit="volume">6</biblScope>
+                     <biblScope unit="pp" from="2" to="26">2-26</biblScope>
+                     <date>1849</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/ucm.5321352149?urlappend=%3Bseq=10">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(\w+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+            <language ident="fre">French</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0627.tlg018.1st1K-grc1">
+         <pb n="2"/>
+         <div n="1" type="chapter">
+            <head>ΠΕΡΙ ΤΕΧΝΗS.</head>
+            <p>1. Εἰσί τινες οἳ τέχνην πεποίηνται τὸ τὰς τέχνας αἰσχροεπεῖν,
 <lb/>ὡς μὲν οἴονται οἱ τοῦτο διαπρησσόμενοι, οὐχ ὃ ἐγὼ λέγω, ἀλλ’ ἱστορίης
 <lb/>οἰκείης ἐπίδειξιν ποιεύμενοι. Ἐμοὶ δὲ τὸ μέν τι τῶν μὴ εὑρημένων
 <lb/>ἐξευρίσκειν, ὅ τι καὶ εὑρεθὲν κρέσσον ᾖ ἢ ἀνεξεύρετον, ξυνέσιος
@@ -106,9 +116,9 @@
 <lb/>ἐναντιώσεται, θρασυνόμενος μὲν διὰ τούτους οὓς ψέγει, εὐπορέων
 <lb/>δὲ διὰ τὴν τέχνην ᾗ βοηθεῖ, δυνάμενος δὲ διὰ σοφίην ᾗ πεπαίδευται.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="2">
-<p>2. Δοκέει δή μοι τὸ μὲν σύμπαν τέχνη εἶναι εἶναι οὐδεμία οὐκ ἐοῦσα·
+         </div>
+         <div n="2" type="chapter">
+            <p>2. Δοκέει δή μοι τὸ μὲν σύμπαν τέχνη εἶναι εἶναι οὐδεμία οὐκ ἐοῦσα·
 
 <pb n="4"/>
 
@@ -125,9 +135,9 @@
 <lb/>φύσιος νομοθετήματά ἐστι, τὰ δὲ εἴδεα οὐ νομοθετήματα, ἀλλὰ
 <lb/>βλαστήματα.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="3">
-<p>3. Περὶ μὲν οὖν τούτων εἴ γέ τις μὴ ἱκανῶς ἐκ τῶν εἰρημένων ξυνίησιν,
+         </div>
+         <div n="3" type="chapter">
+            <p>3. Περὶ μὲν οὖν τούτων εἴ γέ τις μὴ ἱκανῶς ἐκ τῶν εἰρημένων ξυνίησιν,
 <lb/>ἐν ἄλλοισιν ἂν λόγοισι σαφέστερον διδαχθείη. Περὶ δὲ ἰητρικῆς,
 <lb/>ἐς ταύτην γὰρ ὁ λόγος, ταύτης οὖν τὴν ἀπόδειξιν ποιήσομαι,
 <lb/>καὶ πρῶτόν γε διοριεῦμαι ὃ νομίζω ἰητρικὴν εἶναι, τὸ δὴ πάμπαν
@@ -142,9 +152,9 @@
 <lb/>λόγους τῶν αἰσχύνειν αὐτὴν οἰομένων ἀναιρήσω, ᾗ ἂν ἕκαστος αὐτῶν
 <lb/>πρήσσειν τι οἰόμενος τυγχάνῃ.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="4">
-<p>4. Ἐστὶ μὲν οὖν μοι ἀρχὴ τοῦ λόγου, ἣ καὶ ὁμολογηθήσεται παρὰ
+         </div>
+         <div n="4" type="chapter">
+            <p>4. Ἐστὶ μὲν οὖν μοι ἀρχὴ τοῦ λόγου, ἣ καὶ ὁμολογηθήσεται παρὰ
 <lb/>πᾶσιν· ὅτι μὲν ἔνιοι ἐξυγιαίνονται τῶν θεραπευομένων ὑπὸ ἰητρικῆς
 <lb/>ὁμολογέεται· ὅτι δὲ οὐ πάντες, ἐν τούτῳ ἤδη ψέγεται ἡ τέχνη, καί
 <lb/>φασιν οἱ τὰ χείρω λέγοντες, διὰ τοὺς ἁλισκομένους ὑπὸ τῶν νοσημάτων,
@@ -160,9 +170,9 @@
 <lb/>ἐπέτρεψαν καὶ ἐπίστευσαν αὐτῇ σφᾶς αὐτοὺς, ἐν τούτῳ αὐτῆς καὶ
 <lb/>τὸ εἶδος ἐσκέψαντο καὶ τὴν δύναμιν, περανθέντος τοῦ ἔργου, ἔγνωσαν.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="5">
-<p>5. Ἐρεῖ δὴ ἐνταῦθα ὁ τἀναντία λέγων, ὅτι πολλοὶ ἤδη καὶ οὐ
+         </div>
+         <div n="5" type="chapter">
+            <p>5. Ἐρεῖ δὴ ἐνταῦθα ὁ τἀναντία λέγων, ὅτι πολλοὶ ἤδη καὶ οὐ
 <lb/>χρησάμενοι ἰητρῷ νοσέοντες ὑγιάσθησαν, καὶ ἐγὼ τῷ λόγῳ οὐκ ἀπιστέω·
 <lb/>δοκέει δέ μοι οἷόν τε εἶναι καὶ ἰητρῷ μὴ χρωμένους ἰητρικῇ
 
@@ -191,9 +201,9 @@
 <lb/>ἀτεχνίην εἶναι, ὅπου μήτε ὀρθὸν ἔνι μηδὲν, μήτε οὐκ ὀρθόν· ὅπου
 <lb/>δὲ τούτων ἔνεστιν ἑκάτερον, οὐκ ἔτ’ ἂν τοῦτο ἔργον ἀτεχνίης εἴη.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="6">
-<p>6. Ἔτι τοίνυν εἰ μὲν ὑπὸ φαρμάκων τῶν τε καθαιρόντων καὶ
+         </div>
+         <div n="6" type="chapter">
+            <p>6. Ἔτι τοίνυν εἰ μὲν ὑπὸ φαρμάκων τῶν τε καθαιρόντων καὶ
 
 <pb n="10"/>
 
@@ -212,9 +222,9 @@
 <lb/>καὶ ἐν τοῖσι διά τι καὶ ἐν τοῖσι προνοουμένοισι φαίνεταί τε καὶ φανεῖται
 <lb/>αἰεὶ οὐσίην ἔχουσα.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="7">
-<p>7. Τοῖσι μὲν οὖν τῇ τύχῃ τὴν ὑγιείην προστιθεῖσι, τῆς δὲ τέχνης
+         </div>
+         <div n="7" type="chapter">
+            <p>7. Τοῖσι μὲν οὖν τῇ τύχῃ τὴν ὑγιείην προστιθεῖσι, τῆς δὲ τέχνης
 <lb/>ἀφαιρέουσι, τοιαῦτ’ ἄν τις λέγοι· τοὺς δ’ ἐν τῇσι τῶν ἀποθνησκόντων
 <lb/>ξυμφορῇσι τὴν τέχνην ἀφανίζοντας θαυμάζω, ὅτεῳ ἐπαιρεόμενοι ἀξιοχρέῳ
 <lb/>λόγῳ τὴν μὲν τῶν ἀποθνησκόντων ἀκρησίην οὐκ αἰτίην καθιστᾶσι,
@@ -243,9 +253,9 @@
 <lb/>ὧν οἱ μὴ ὀρθῶς λογιζόμενοι τὰς αἰτίας τοῖς οὐδὲν αἰτίοις ἀνατιθέασι,
 <lb/>τοὺς αἰτίους ἐλευθεροῦντες;
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="8">
-<p>8. Εἰσὶ δέ τινες οἳ καὶ διὰ τοὺς μὴ ἐθέλοντας ἐγχειρέειν τοῖσι κεκρατημένοισιν
+         </div>
+         <div n="8" type="chapter">
+            <p>8. Εἰσὶ δέ τινες οἳ καὶ διὰ τοὺς μὴ ἐθέλοντας ἐγχειρέειν τοῖσι κεκρατημένοισιν
 <lb/>ὑπὸ τῶν νουσημάτων μέμφονται τὴν ἰητρικὴν, λέγοντες
 <lb/>ὡς ταῦτα μὲν καὶ αὐτὰ ὑφ’ ἑαυτῶν ἂν ἐξυγιάζοιτο, ἃ ἐγχειρέουσιν
 <lb/>ἰῆσθαι, ἃ δ’ ἐπικουρίης δεῖται, οὐχ ἅπτονται, δεῖν δὲ, εἴπερ ἦν ἡ
@@ -279,11 +289,10 @@
 <lb/>ἔτι τε τῶν ἐνδειῶν, ἅς τε τοῖς δημιουργοῦσιν ἀναθετέον, ἅς τε τοῖσι
 <lb/>δημιουργεομένοισιν.
 </p>
-</div>
-<pb n="16"/>
-
-<div type="textpart" subtype="chapter" n="9">
-<p>9. Τὰ μὲν οὖν κατὰ τὰς ἄλλας τέχνας ἄλλος χρόνος μετ’ ἄλλου λόγου
+         </div>
+         <pb n="16"/>
+         <div n="9" type="chapter">
+            <p>9. Τὰ μὲν οὖν κατὰ τὰς ἄλλας τέχνας ἄλλος χρόνος μετ’ ἄλλου λόγου
 <lb/>δείξει· τὰ δὲ κατὰ τὴν ἰητρικὴν, οἷά τέ ἐστιν, ὥς τε κριτέα, τὰ
 <lb/>μὲν ὁ παροιχόμενος, τὰ δὲ ὁ παρεὼν διδάξει λόγος. Ἐστὶ γὰρ τοῖσι
 <lb/>ταύτην τὴν τέχνην ἱκανῶς εἰδόσι τὰ μὲν τῶν νοσημάτων οὐκ ἐν δυσόπτῳ
@@ -298,9 +307,9 @@
 <lb/>τοῖσι δυνηθεῖσι· δύνανται δὲ, οἷσι τά τε τῆς παιδείης μὴ ἐκποδὼν,
 <lb/>τά τε τῆς φύσιος μὴ ταλαίπωρα.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="10">
-<p>10. Πρὸς μὲν οὖν τὰ φανερὰ τῶν νοσημάτων οὕτω δεῖ εὐπορέειν
+         </div>
+         <div n="10" type="chapter">
+            <p>10. Πρὸς μὲν οὖν τὰ φανερὰ τῶν νοσημάτων οὕτω δεῖ εὐπορέειν
 <lb/>τὴν τέχνην· δεῖ γε μὴν αὐτὴν μηδὲ πρὸς τὰ ἧσσον φανερὰ ἀπορέειν·
 <lb/>ἐστὶ δὲ ταῦτα, ἃ πρός τε τὰ ὀστέα τέτραπται καὶ τὴν νηδύν· ἔχει δὲ
 <lb/>τὸ σῶμα οὐ μίαν, ἀλλὰ πλείους· δύο μὲν γὰρ αἱ τὸν σῖτον δεχόμεναί
@@ -326,9 +335,9 @@
 <lb/>αὐτὸ θαλάμας, ἃς καταγγέλλει ἰχὼρ, ὃς ἐκ διοιγομένων αὐτέων πολύς
 <lb/>τε καὶ πολλὰ λυπήσας ἐξέρχεται.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="11">
-<p>11. Οὐ γὰρ δὴ ὀφθαλμοῖσί γε ἰδόντι τούτων τῶν εἰρημένων οὐδενὶ
+         </div>
+         <div n="11" type="chapter">
+            <p>11. Οὐ γὰρ δὴ ὀφθαλμοῖσί γε ἰδόντι τούτων τῶν εἰρημένων οὐδενὶ
 <lb/>οὐδέν ἐστιν εἰδέναι· διὸ καὶ ἄδηλα ἐμοί τε ὠνόμασται καὶ τῇ
 <lb/>τέχνῃ κέκριται εἶναι, οὐ μὴν ὅτι ἄδηλα, κεκράτηκεν, ἀλλ’ ᾗ δυνατὸν,
 <lb/>κεκράτηται· δυνατὸν δὲ, ὅσον αἵ τε τῶν νοσεόντων φύσιες ἐς τὸ
@@ -377,9 +386,9 @@
 <lb/>ἐλιννύει· καί τοι κἀκείναις τὸ βραδὺ πρὸς τὸ λυσιτελέστερον ἀσύμφορον,
 <lb/>ἀλλ’ ὅμως προτιμᾶται.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="12">
-<p>12. Ἰητρικὴ δὲ, τοῦτο μὲν τῶν ἐμπύων, τοῦτο δὲ τῶν τὸ ἧπαρ
+         </div>
+         <div n="12" type="chapter">
+            <p>12. Ἰητρικὴ δὲ, τοῦτο μὲν τῶν ἐμπύων, τοῦτο δὲ τῶν τὸ ἧπαρ
 <lb/>ἢ τοὺς νεφροὺς, τοῦτο δὲ τῶν ξυμπάντων ἐν τῇ νηδύϊ νοσεύντων
 
 <pb n="24"/>
@@ -411,9 +420,9 @@
 <lb/>γίνεσθαι τάς τ’ ἐγχειρήσιας βραχυτέρας, οὕτω δι’ ἀλλοτρίων ἑρμηνειῶν
 <lb/>πρὸς τὴν θεραπεύουσαν ξύνεσιν ἑρμηνευομένων.
 </p>
-</div>
-<div type="textpart" subtype="chapter" n="13">
-<p>13. Ὅτι μὲν οὖν καὶ λόγους ἐν ἑωυτῇ εὐπόρους ἐς τὰς ἐπικουρίας
+         </div>
+         <div n="13" type="chapter">
+            <p>13. Ὅτι μὲν οὖν καὶ λόγους ἐν ἑωυτῇ εὐπόρους ἐς τὰς ἐπικουρίας
 <lb/>ἔχει ἡ ἰητρικὴ, καὶ οὐκ εὐδιορθώτοισι δικαίως οὐκ ἂν ἐγχειρέοι
 <lb/>τῇσι νούσοισιν, ἢ ἐγχειρευμένας ἀναμαρτήτους ἂν παρέχοι, οἵ τε νῦν
 <lb/>λεγόμενοι λόγοι δηλοῦσιν αἵ τε τῶν εἰδότων τὴν τέχνην ἐπιδείξιες, ἃς
@@ -421,8 +430,7 @@
 <lb/>καταμελετήσαντες, ἀλλὰ τὴν πίστιν τῷ πλήθει ἐξ ὧν ἂν ἴδωσιν οἰκειοτέρην
 <lb/>ἡγεύμενοι, ἢ ἐξ ὧν ἂν ἀκούσωσιν.
 </p>
-</div>
-</div>
-</body>
-</text>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,98 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">De foetuum formatione</title>
-                <author>Galen</author>
-                <editor>Karl Gottlob Kühn</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De foetuum formatione</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0057.tlg022.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg022.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-                        <author>Galen</author>
-                        <editor>Karl Gottlob Kühn</editor>
-                        <imprint>
-                            <publisher>Knobloch</publisher>
-                            <pubPlace>Leipzig</pubPlace>
-                            <biblScope unit="vol">4</biblScope>
-                            <biblScope unit="pp" from="652" to="702">652-702</biblScope>
-                            <date>1822</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/chi.11102513?urlappend=%3Bseq=666%3Bownerid=13510798903411997-684">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg022.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Leipzig</pubPlace>
+                     <biblScope unit="vol">4</biblScope>
+                     <biblScope unit="pp" from="652" to="702">652-702</biblScope>
+                     <date>1822</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/chi.11102513?urlappend=%3Bseq=666%3Bownerid=13510798903411997-684">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg022.1st1K-grc1">
-                <pb n="652"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΚΥΟΥΜΕΝΩΝ <lb/>ΔΙΑΠΛΑΣΕΩΣ.</head>
-                    <p>Περὶ τῆς τῶν κυουμένων διαπλάσεως ἐπεχείρησαν <lb/>μέν τι καὶ φιλόσοφοι
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg022.1st1K-grc1">
+         <pb n="652"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΚΥΟΥΜΕΝΩΝ <lb/>ΔΙΑΠΛΑΣΕΩΣ.</head>
+            <p>Περὶ τῆς τῶν κυουμένων διαπλάσεως ἐπεχείρησαν <lb/>μέν τι καὶ φιλόσοφοι
                         γράφειν, μηδεμίαν ἀφορμὴν <lb/>ὧν λέγουσιν ἐξ ἀνατομῆς περιεχόμενοι. καὶ
                         θαυμαστόν γε <lb/>οὐδέν ἐστιν ἁμαρτεῖν τῆς ἀληθείας αὐτοὺς, διαφωνῆσαί
                         <lb/>τε πρὸς ἀλλήλους. ὅπου γὰρ τοῖς ἀνατεμοῦσιν ἐπιμελῶς <lb/>ἠγνοήθη τινὰ,
@@ -131,9 +139,9 @@
                         μοι ἐδόκει εἶναι ὀμφαλὸς, καὶ ἐκείνῳ τὴν <lb/>πνοὴν καὶ ἔξω καὶ ἔσω
                         ποιεῖσθαι τὸ πρῶτον, καὶ ὁ ὑμὴν <lb/>ἐξ ἐκείνου ἐτέτατο πᾶς ὁ περιέχων τὴν
                         γονήν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>Ἐν τούτῳ τῷ λόγῳ τὸν μὲν περιέχοντα τὴν <lb/>γονὴν ὑμένα τὸ καλούμενον
+         </div>
+         <div n="2" type="chapter">
+            <p>Ἐν τούτῳ τῷ λόγῳ τὸν μὲν περιέχοντα τὴν <lb/>γονὴν ὑμένα τὸ καλούμενον
                         χορίον, τὸ δὲ τὰς λευκὰς καὶ <lb/>παχείας ἶνας ἔχον ἐν ἑαυτῷ ξὺν ἰχῶρι παχεῖ
                         καὶ ἐρυθρῷ <lb/>φλεβῶν καὶ ἀρτηριῶν ὑπογραφὴν τῆς γενέσεως ἡγητέον ὑπάρχειν.
                         <lb/>αὐξανόμενον γοῦν τὸ κύημα διὰ παντὸς ὁρᾶται περιεχόμενον <lb/>ὑπὸ τοῦ
@@ -204,10 +212,10 @@
                         ὁρῶμεν ἐκ τῆς ἀρχῆς τοῦ <lb/>πρέμνου τό θ’ ὑπόλοιπον αὐτοῦ πρὸς ὕψος
                         ἀνατεινόμενον <lb/>εἴς τε τοὺς κλάδους σχιζόμενον γεννᾶσθαι. τοῦτο μὲν ἡμῖν
                         <lb/>οἷον θεμέλιον τῶν ἐφεξῆς εἰρησομένων ὑποβεβλήσθω. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>
-                        <milestone unit="ed2page" n="288"/>Σκοπώμεθα δ’ ἐπ’ αὐτοῖς, ὅπως εἰκός
+         </div>
+         <div n="3" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="288"/>Σκοπώμεθα δ’ ἐπ’ αὐτοῖς, ὅπως εἰκός
                         <lb/>ἐστι τὸ κυούμενον ὑπὸ τῆς κατὰ τὸ σπέρμα δυνάμεως ἅπαν <lb/>ἐφεξῆς
                         διαπλασθῆναι, τὴν ἀρχὴν τῆς εὑρέσεως αὖθις ἀπὸ <lb/>τῶν κατὰ τὰς ἀνατομὰς
                         ὁρωμένων ποιησάμενοι. <milestone unit="ed1page" n="215"/>φαίνεται <lb/>γὰρ
@@ -415,9 +423,9 @@
                         ὀργάνοις τελειούμεναι αἱ τῆς ψυχῆς δυνάμεις <lb/>ἐνεργοῦσιν. ἔνεστι δὲ τοῦτο
                         μαθεῖν τῷ βουληθέντι τὸ βιβλίον <lb/>ἀναγνῶναι, καθ’ ὃ δείκνυμι ταῖς τοῦ
                         σώματος κράσεσιν <lb/>ἕπεσθαι τὰς τῆς ψυχῆς δυνάμεις. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>Τί ποτ’ οὖν ἔδοξε Χρυσίππῳ καὶ ἄλλοις <lb/>πολλοῖς φιλοσόφοις Στωϊκοῖς τε καὶ
+         </div>
+         <div n="4" type="chapter">
+            <p>Τί ποτ’ οὖν ἔδοξε Χρυσίππῳ καὶ ἄλλοις <lb/>πολλοῖς φιλοσόφοις Στωϊκοῖς τε καὶ
                         Περιπατητικοῖς ἀποφήνασθαι <lb/>περὶ καρδίας, ὡς πρώτη τε φύεται τῶν τοῦ
                         ζώου <lb/>μορίων, ὑπ’ αὐτῆς τε τἄλλα γίγνοιτο, καὶ ὡς τῷ πρώτως
                         <lb/>διαπλασθέντι καὶ φλεβῶν καὶ νεύρων ἀναγκαῖον ὑπάρχειν <lb/>ἀρχήν; οὔτε
@@ -479,10 +487,10 @@
                         <lb/>πρόφασιν εὑρεῖν τῆς ζητήσεως αὐτῶν δυνάμενοι, καθάπερ <lb/>οἱ
                         θεωρητικοὶ ὑποθέμενοι τὴν εἴτε φιλοσοφίαν χρὴ <lb/>λέγειν εἴτ’ εὐδαιμονίαν.
                     </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>
-                        <milestone unit="ed2page" n="294"/>Ὃ δὲ προσθεῖναι τοῖς προειρημένοις
+         </div>
+         <div n="5" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="294"/>Ὃ δὲ προσθεῖναι τοῖς προειρημένοις
                         <lb/>ἀναγκαῖόν ἐστιν, ἀγνοούμενον καὶ αὐτὸ τοῖς γενναίοις φιλοσόφοις,
                         <lb/>ὥσπερ καὶ τἄλλα τὰ ἐξ ἀνατομῆς φαινόμενα, καιρὸς <lb/>ἤδη μοι φράσαι,
                         τὴν ἀρχὴν ἀφ’ ὧν Ἡρόφιλος ἔγραψε ποιησαμένῳ. <lb/>τὰς γὰρ ἀνατομικὰς
@@ -494,7 +502,7 @@
                         Ἱπποκράτην καὶ Πλάτωνα <lb/>δογμάτων ὑπομνήμασιν, ἐν κεφαλαίοις δὲ καὶ νῦν
                         <lb/>ἀναγκαίοις οὖσι λεχθῆναι. πρῶτος μὲν οὖν διορισμός <lb/>ἐστιν ἀπὸ τῶν
                         ἀποτεμνομένων ἢ βρόχῳ διαλαμβανομένων <lb/>
-                        <milestone unit="ed1page" n="218"/>ἀρτηριῶν τε καὶ φλεβῶν καὶ νεύρων, ἐφ’ ὧν
+               <milestone unit="ed1page" n="218"/>ἀρτηριῶν τε καὶ φλεβῶν καὶ νεύρων, ἐφ’ ὧν
                         ὁρᾶται <lb/>τὰ μὲν ἐπὶ θάτερα μέρη τῶν βρόχων ἐνεργοῦντα τὰς οἰκείας
                         <lb/>ἐνεργείας, τὰ δ’ ἀπολλύντα τελέως. τὸ δ’ αὐτὸ τοῦτο κᾀπὶ <lb/>τοῦ
                         νωτιαίου μυελοῦ φαινόμενον ἐναργῶς ἰδεῖν ἔστιν. διαιρεθέντος <lb/>γὰρ αὐτοῦ
@@ -576,7 +584,7 @@
                         ἐνεργείαις, καὶ μήτε τοὺς νεφροὺς δεῖσθαί <lb/>τινος ἄλλου μορίου πρὸς τὴν
                         ἰδίαν ἐνέργειαν, μήτε τὰς <lb/>μήτρας, μήτε σπλῆνα, μήτ’ ἔντερα, μήθ’ ὅλως
                         ἄλλο μηδὲν <lb/>
-                        <milestone unit="ed2page" n="296"/>ὄργανον φυσικόν. ἐπεὶ δὲ οὔτε κατὰ τὸ
+               <milestone unit="ed2page" n="296"/>ὄργανον φυσικόν. ἐπεὶ δὲ οὔτε κατὰ τὸ
                         ποσὸν ἡ <lb/>οὐσία διαμένει τῶν μορίων, ἀποῤῥοῆς αὐτῶν ἱκανῆς ὁσημέραι
                         <lb/>γιγνομένης, οὔτε ἡ κατὰ τὸ ποιὸν, ἀλλοιοῦται γὰρ <lb/>καὶ κατὰ τοῦτο
                         πολυειδῶς, ἐπικουρίας δεῖται τῆς ἐξ ἀλλήλων, <lb/>ὅπως ἀναπληροῦται τὸ
@@ -616,10 +624,10 @@
                         τἄλλα διαπλάττειν <lb/>αὐτὴν, οὐκ ἐξ ἀνάγκης ἑπόμενον, τοῖς δὲ τὰς ἐν τοῖς
                         τελείοις <lb/>ζώοις ἐνεργείας ὑπ’ ἐκείνης γίγνεσθαι, οὐδὲ ταὐτόν <lb/>ἐστιν
                         ἢ γενέσεως ἢ διοικήσεως ἀρχὴν εἶναί τι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>
-                        <milestone unit="ed2page" n="297"/>Μεταβάντες οὖν ἐπὶ τὸ μάλιστα προκείμενον
+         </div>
+         <div n="6" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="297"/>Μεταβάντες οὖν ἐπὶ τὸ μάλιστα προκείμενον
                         <lb/>ἐν τῇδε τῇ πραγματείᾳ δείξομεν αὐτοὺς μηδὲ τὰ <lb/>πρὸς τῶν ἰατρῶν
                         ἐζητημένα καλῶς ἀξιώσαντας ζητῆσαι, ἀλλ’ <lb/>οἰομένους, ἐὰν εἴπωσιν, ὑπὸ
                         τῆς φύσεως διαπλάττεσθαι τὸ <lb/>κυούμενον, οὐμενοῦν εἰρηκέναι μηδὲν πλέον
@@ -834,8 +842,7 @@
                         παντάπασιν <pb n="702"/> ἀσώματος, οὔτ’ εἰ σωματική τίς ἐστιν, οὔτ’ εἰ
                         τελέως <lb/>ἀΐδιος, οὔτ’ εἰ φθαρτὴ, γραμμικαῖς ἀποδείξεσιν εὗρόν <lb/>τινα
                         κεχρημένον, ὡς ἐν τῇ περὶ τῶν εἰδῶν τῆς ψυχῆς <lb/>πραγματείᾳ διῆλθον. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

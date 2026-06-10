@@ -1,121 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="eng">    
-    <fileDesc>
-      <titleStmt>
-        <title xml:lang="lat">Declamatio de Atheniensium defensio (ad Libanii declamationem antilogia)</title>
-        <author>Gregory II, of Cyprus, Patriarch of Constantinople</author>
-        <editor>Richard Foerster</editor>
-        <sponsor>University of Leipzig</sponsor>
-    <funder>European Social Fund Saxony</funder>
-    <principal>Gregory Crane</principal>
-    <respStmt>
-          <persName>Gregory R. Crane</persName>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-        </respStmt>
-        <respStmt>
-          <persName xml:id="DDD">Digital Divide Data</persName>
-          <resp>Corrected and encoded the text</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Matt Munson</persName>
-          <resp>Project Manager (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Annette Geßner</persName>
-          <resp>Project Assistant (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Thibault Clérice</persName>
-          <resp>Lead Developer (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Bruce Robertson</persName>
-          <resp>Technical Advisor</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Greta Franzini</persName>
-          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Frederik Baumgardt</persName>
-          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Simona Stoyanova</persName>
-          <resp>Project Manager (University of Leipzig), 2015</resp>
-          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-    <authority>University of Leipzig</authority>
-    <idno type="filename">tlg9006.tlg016.1st1K-grc1.xml</idno>
-    <availability>
-     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-    </availability>
-    <date>2014</date>
-    <publisher>University of Leipzig</publisher>
-    <pubPlace>Germany</pubPlace>
-   </publicationStmt>
-   
-   <sourceDesc>
-    <listBibl>
-     <biblStruct>
-      <monogr>
-        <title xml:lang="lat">Declamatio de Atheniensium defensio (ad Libanii declamationem antilogia)</title>
-         <author>Libanius</author>     
-        <editor>
-         <persName>
-           <name>Richard Foerster</name>
-         </persName>
-        </editor>
-       <imprint>
-        <publisher>Teubner</publisher>
-        <pubPlace>Leipzig</pubPlace>
-        <date>1911</date>
-       </imprint>
-       <biblScope unit="volume">6</biblScope>
-      </monogr>
-       <ref target="http://archive.org/details/operarecensuitri06libauoft/page/52/mode/2up">Internet Archive</ref>
-      
-     </biblStruct>
-    </listBibl>
-   </sourceDesc>
-   
-  </fileDesc>
-  <encodingDesc>
-   <p>The following text is encoded in accordance with EpiDoc standards and with the
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Declamatio de Atheniensium defensio (ad Libanii declamationem antilogia)</title>
+            <author>Gregory II, of Cyprus, Patriarch of Constantinople</author>
+            <editor>Richard Foerster</editor>
+            <sponsor>University of Leipzig</sponsor>
+            <funder>European Social Fund Saxony</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName>Gregory R. Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Geßner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Greta Franzini</persName>
+               <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Frederik Baumgardt</persName>
+               <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Simona Stoyanova</persName>
+               <resp>Project Manager (University of Leipzig), 2015</resp>
+               <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>University of Leipzig</authority>
+            <idno type="filename">tlg9006.tlg016.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2014</date>
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg9006.tlg016.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Declamatio de Atheniensium defensio (ad Libanii declamationem antilogia)</title>
+                     <author>Libanius</author>
+                     <editor>
+                        <persName>
+                           <name>Richard Foerster</name>
+                        </persName>
+                     </editor>
+                     <imprint>
+                        <publisher>Teubner</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1911</date>
+                     </imprint>
+                     <biblScope unit="volume">6</biblScope>
+                  </monogr>
+                  <ref target="http://archive.org/details/operarecensuitri06libauoft/page/52/mode/2up">Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
     CTS/CITE Architecture.</p>
-      <refsDecl n="CTS">
-        <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-      </refsDecl>
-    </encodingDesc>
-  
-  <profileDesc>
-   <langUsage>
-    <language ident="lat">Latin</language>
-     <language ident="grc">Greek</language>
-   </langUsage>
-  </profileDesc>
-  
- </teiHeader>
-  <text>
-    <body><div type="edition" n="urn:cts:greekLit:tlg9006.tlg016.1st1K-grc1" xml:lang="grc">
-
-<div type="textpart" subtype="chapter" n="1">
-
-<pb n="52"/>
-
-<head>οἱ Ποτιδαιᾶται ἀλλήλων ἐγεύσαντο ὑπ’
+         <refsDecl n="CTS">
+            <cRefPattern n="chapter"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="lat">Latin</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg9006.tlg016.1st1K-grc1">
+         <div n="1" type="chapter">
+            <pb n="52"/>
+            <head>οἱ Ποτιδαιᾶται ἀλλήλων ἐγεύσαντο ὑπ’
 
 Ἀθηναίων πολιορκούμενοι, καὶ γράφονται
 
 Ἀθηναίους ἀσεβείας Κορίνθιοι. Ἀθηναῖοι
 
 ἀπολογούμενοι.</head>
-
-<lb n="5"/> <p>ἄνδρες Λακεδαιμόνιοι, ὅπερ ἡγούμεθα Κοριν-
+            <lb n="5"/>
+            <p>ἄνδρες Λακεδαιμόνιοι, ὅπερ ἡγούμεθα Κοριν-
 
 θίους ἐπᾶραι τοσαῦτ’ ἀναισχυντῆσαι καὶ οὕτω πολλῷ
 
@@ -141,9 +144,10 @@
 
 ὁτιοῦν ψευδομἕνους ἀνεξελέγκτους οἴεσθαι μεῖναι, μὴ
 
-πολλὰ θρασύνεσθαι καὶ παράλογα οὐκ εἰκός.</p></div>
-
-<div type="textpart" subtype="chapter" n="2"><p>οὐ
+πολλὰ θρασύνεσθαι καὶ παράλογα οὐκ εἰκός.</p>
+         </div>
+         <div n="2" type="chapter">
+            <p>οὐ
 
 μὴν ἀλλ’ εἰ μὲν ἑωρῶμεν ὑμᾶς διατεθειμένους καθά-
 
@@ -152,22 +156,14 @@
 τὸ δὲ ἦν ταῖς σφῶν ἡδοναῖς ὑμᾶς αὐτοὺς ἐπιτρέψαι
 
 <lg>
-
-<l>L = Codex Leidensis Gr. F. 49</l>
-
-<l>V = Vaticanus gr. 933</l>
-
-<l>Schm = editio Schmidtiana.</l>
-
-</lg>
-
-<note type="footnote">1 ποτιδαιάται LV ut constanter 5 Κορινθίοις V
+                  <l>L = Codex Leidensis Gr. F. 49</l>
+                  <l>V = Vaticanus gr. 933</l>
+                  <l>Schm = editio Schmidtiana.</l>
+               </lg>
+               <note type="footnote">1 ποτιδαιάται LV ut constanter 5 Κορινθίοις V
 
 12 τί L ut constanter</note>
-
-
-
-<pb n="53"/>
+               <pb n="53"/>
 
 ἐπαινοῦντας μὲν ἅπανθ’ ἐξῆς ὅσα εἰρήκασι, μηδὲν δὲ
 
@@ -201,9 +197,10 @@
 
 τιμῶντες ἐπὶ τούτῳ τοὺς δικαστὰς ὁρκοῦντές εἰσιν,
 
-ἀνέστημεν καὶ αὐτοὶ ἐροῦντες ὑπὲρ ἡμῶν.</p></div>
-
-<div type="textpart" subtype="chapter" n="3"><p>πλὴν οὐχ
+ἀνέστημεν καὶ αὐτοὶ ἐροῦντες ὑπὲρ ἡμῶν.</p>
+         </div>
+         <div n="3" type="chapter">
+            <p>πλὴν οὐχ
 
 ὥσπερ Κορίνθιοι καὶ ἡμεῖς εἰς τὰς κατ’ αὐτῶν λοι-
 
@@ -232,16 +229,14 @@
 cf. t. IV 391,24 17 αὐτοὶ reposui e LV αὐτοῦ
 
 20 συνηθείας reposui e LV συνήθεις Schm</note>
-
-
-
-<pb n="54"/>
+               <pb n="54"/>
 
 ἡνίκα καὶ τὸ πρᾶγμα μὰ δῆλον αὐτόθεν ἐστὶ καί τινος
 
-δεῖται λόγου ἔξωθεν μαρτυρήσοντος οὐδαμῶς.</p></div>
-
-<div type="textpart" subtype="chapter" n="4"><p>ἢ τίς
+δεῖται λόγου ἔξωθεν μαρτυρήσοντος οὐδαμῶς.</p>
+         </div>
+         <div n="4" type="chapter">
+            <p>ἢ τίς
 
 Ἰωνίαν οὐκ οἶδεν ἀποικίαν καὶ αὐτὴν ἡμετέραν οὖσαν
 
@@ -269,9 +264,10 @@ cf. t. IV 391,24 17 αὐτοὶ reposui e LV αὐτοῦ
 
 <lb n="15"/> ὑμᾶς φερούσης καὶ ταῦτα τῆς ὑπομνήσεως ἐν τῷ νῦν
 
-ἀγῶνι πλέον οὐδὲν εἰς ἡμᾶς;</p></div>
-
-<div type="textpart" subtype="chapter" n="5"><p>οὔκουν ἡμεῖς γε περὶ
+ἀγῶνι πλέον οὐδὲν εἰς ἡμᾶς;</p>
+         </div>
+         <div n="5" type="chapter">
+            <p>οὔκουν ἡμεῖς γε περὶ
 
 τῶνδ’ ἐθελήσομεν λέγειν, ἀλλ’ ἀποχωρήσαντες σπουδῇ,
 
@@ -290,24 +286,18 @@ cf. t. IV 391,24 17 αὐτοὶ reposui e LV αὐτοῦ
 τὰ καίρια μάλιστα τῆς κατηγορίας καὶ γενναῖα καθ’
 
 <lb n="25"/> ἡμῶν δοκοῦντα τὸν λόγον τρεψόμεθα.</p>
-
-<note type="footnote">1 Argum. Dem. Boeot. p. 994, 18 8 Thuc. I 73, 3
+            <note type="footnote">1 Argum. Dem. Boeot. p. 994, 18 8 Thuc. I 73, 3
 
 11 Thuc. I 102 14 Thuc. I 68, 3</note>
-
-<note type="footnote">5 τὴν πᾶσαν in marg L 2 9 πλαταιάσιν LV 14 ὑμῶν
+            <note type="footnote">5 τὴν πᾶσαν in marg L 2 9 πλαταιάσιν LV 14 ὑμῶν
 
 scripsi ἡμῶν LV Schm | τί om VL inser Schm 16 ἡμᾶς
 
 ω ω
 
 scripsi e V ὑμᾶς L Schm 25 τ(??)ν λόγον V</note>
-
-
-
-<pb n="55"/>
-
-<p>6. Ἀσέβειαν προφέρουσιν ἡμῖν Κορίνθιοι, ἀσέ-
+            <pb n="55"/>
+            <p>6. Ἀσέβειαν προφέρουσιν ἡμῖν Κορίνθιοι, ἀσέ-
 
 βειαν, 60 ἄνδρες Λακεδαιμόνιοι, πρᾶγμα ὅπερ ἐς δεῦρο
 
@@ -340,8 +330,7 @@ scripsi e V ὑμᾶς L Schm 25 τ(??)ν λόγον V</note>
 περὶ μηδενὸς καὶ ἡμῖν τὸν λόγον τὴν πρέπουσαν λαμ
 
 βάνειν ἀρχήν.</p>
-
-<p>7. Ποτίδαιαν τὴν ὑπὸ Παλλήνην, τὸ Θρᾳκικὸν
+            <p>7. Ποτίδαιαν τὴν ὑπὸ Παλλήνην, τὸ Θρᾳκικὸν
 
 ὄρος, ἴστε που πάντες. ἄποικοι Κορινθίων ἔχουσι ταύ-
 
@@ -356,12 +345,10 @@ scripsi e V ὑμᾶς L Schm 25 τ(??)ν λόγον V</note>
 τε δημιουργοὺς καὶ μάλα ἀσμένως δέχεσθαι ἥκοντας
 
 ἐκεῖθεν καὶ ὅ τι προσέταττον ὧς ἑτοιμότατα κατακούειν <lb n="25"/>
-
-<note type="footnote">24 οὕτω Κορίνθιοι τοὺς ἐκπεμπομένους ἄρχοντας εἰς τὰς
+               <note type="footnote">24 οὕτω Κορίνθιοι τοὺς ἐκπεμπομένους ἄρχοντας εἰς τὰς
 
 αὐτῶν ἀποικίας ὠνόμαζον LV 2 cf. ad p. 13,12; 56,12</note>
-
-<note type="footnote">7 ὥστ’ om L sed γρ ὥστ’ in marg m 2 13 λέγωμεν scripsi
+               <note type="footnote">7 ὥστ’ om L sed γρ ὥστ’ in marg m 2 13 λέγωμεν scripsi
 
 λέγομεν LV Schm 15 ἂν inserui e LV om Schm | καλῶς
 
@@ -370,18 +357,16 @@ inserui e LV om Schm 21 τούτου scripsi e LV τούτων
 Schm 23 τε ante τό τε inser Schm delevi 25 ὃ τι scripsi
 
 ὅτι LV Schm</note>
-
-
-
-<pb n="56"/>
+               <pb n="56"/>
 
 καὶ εἶναι μὲν ταύτην αὐτοῖς φιλοτιμιῶν τὴν με-
 
 γίστην, ἀρκεῖν δὲ καὶ ἀντὶ πάντων οἷς ἄνθρωποι
 
-μέγα φρονοῦσι τὴν μητρόπολιν Κόρινθον.</p></div>
-
-<div type="textpart" subtype="chapter" n="8"><p>ἀλλ’
+μέγα φρονοῦσι τὴν μητρόπολιν Κόρινθον.</p>
+         </div>
+         <div n="8" type="chapter">
+            <p>ἀλλ’
 
 εἰ μὲν ἐν ἅπαντι τῷ χρόνῳ διέσωζον ταυτηνὶ Πο-
 
@@ -405,9 +390,10 @@ Schm 23 τε ante τό τε inser Schm delevi 25 ὃ τι scripsi
 
 ἐκ Πελοποννήσου, καὶ καθ’ ἑαυτοὺς γενόμενοι οὐκ
 
-<lb n="15"/> ἔστιν ὅντινα καὶ προσίεντο.</p></div>
-
-<div type="textpart" subtype="chapter" n="9"><p>καὶ ὅπως οὐ παραχρῆμα
+<lb n="15"/> ἔστιν ὅντινα καὶ προσίεντο.</p>
+         </div>
+         <div n="9" type="chapter">
+            <p>καὶ ὅπως οὐ παραχρῆμα
 
 τότε ἢ μεθύστερον ἐπιόντες Κορίνθιοι ἢ ἔπεισαν αὖθις
 
@@ -425,9 +411,10 @@ Schm 23 τε ante τό τε inser Schm delevi 25 ὃ τι scripsi
 
 λαμβάνειν, εἴ τι καὶ παραλυποίη, ἀποσοβεῖν δύνα-
 
-σθαι.</p></div>
-
-<div type="textpart" subtype="chapter" n="10"><p>καὶ ταῦτα μὲν ἴως οὔπω καὶ τούτοις ἴδει
+σθαι.</p>
+         </div>
+         <div n="10" type="chapter">
+            <p>καὶ ταῦτα μὲν ἴως οὔπω καὶ τούτοις ἴδει
 
 <lb n="25"/> κινηθῆναι τὰ πράγματα, ἐπεὶ δ᾿ ἐκινήθη καὶ ἀντέ-
 
@@ -442,10 +429,7 @@ Schm 23 τε ante τό τε inser Schm delevi 25 ὃ τι scripsi
 in ras m 2 11 δὲ inserui e LV om Schm 27 ἀνθρωπείων
 
 scripsi e LV ἀνθρωπίνων Schm 28 καὶ cancellavit Schm</note>
-
-
-
-<pb n="57"/>
+               <pb n="57"/>
 
 ὅσον οὔπω τὰ ἔσχατα πείσεσθαι οὐκ οὔσης δυνάμεως
 
@@ -469,9 +453,10 @@ scripsi e LV ἀνθρωπίνων Schm 28 καὶ cancellavit Schm</note>
 
 ὅτι μὴ αὐτοὶ ἑαυτοὺς καὶ παρελθόντες εἰς βουλευτήριον
 
-ἐνεχείριζον σφᾶς αὐτούς.</p></div>
-
-<div type="textpart" subtype="chapter" n="11"><p>δεήσεις δὲ παραλείπομεν
+ἐνεχείριζον σφᾶς αὐτούς.</p>
+         </div>
+         <div n="11" type="chapter">
+            <p>δεήσεις δὲ παραλείπομεν
 
 λέγειν ὂν παντάπασιν ἵξω καιροῦ καὶ παρακλήσεις καὶ
 
@@ -499,13 +484,13 @@ scripsi e LV ἀνθρωπίνων Schm 28 καὶ cancellavit Schm</note>
 
 νικοῦ γένους βαρβαρικοῖς ὑποκύπτειν προσ- <lb n="25"/>
 
-τάγμασι᾿.</p></div>
-
-<div type="textpart" subtype="chapter" n="12"><p>ταῦτ’ ἔλεγον καὶ ἡμεῖς ἐνεδίδομεν
+τάγμασι᾿.</p>
+         </div>
+         <div n="12" type="chapter">
+            <p>ταῦτ’ ἔλεγον καὶ ἡμεῖς ἐνεδίδομεν
 
 <note type="footnote">10 Thuc. I 58</note>
-
-<note type="footnote">3 ἔργον inserui e LV om Schm 7 μετιόντες scripsi e
+               <note type="footnote">3 ἔργον inserui e LV om Schm 7 μετιόντες scripsi e
 
 LV μετιόντας Schm 8 θεοὺς in lac 4 litt inser L rubr
 
@@ -514,10 +499,7 @@ LV μετιόντας Schm 8 θεοὺς in lac 4 litt inser L rubr
 19 κατένευεν scripsi e LV κατένευσεν Schm 25 προστάγμασι
 
 scripsi e LV πράγμασι Schm</note>
-
-
-
-<pb n="58"/>
+               <pb n="58"/>
 
 καὶ ὡμολογοῦμεν δέχεσθαι καί, τί γὰρ ἦν ἄλλο ποι-
 
@@ -556,8 +538,8 @@ scripsi e LV πράγμασι Schm</note>
 σαφῶς, οἷς δ’ ἄν τις ὅμως ἐκ τῶν ἔξωθεν εἴκασεν,
 
 οὐδὲν ἀηδὲς πεπονθόσιν ἐῴκεσαν.</p>
-
-<lb n="20"/> <p>13. Πλὴν ὅσα μὲν ἐντεῦθεν ἀναλῶσαι συνέβη τῷ
+            <lb n="20"/>
+            <p>13. Πλὴν ὅσα μὲν ἐντεῦθεν ἀναλῶσαι συνέβη τῷ
 
 δήμῳ, τοῦτο μὲν τριήρεις παρασκευάζοντι, τοῦτο δὲ
 
@@ -593,9 +575,10 @@ scripsi e LV πράγμασι Schm</note>
 
 τιῶται, πολλοὶ δὲ εἰκότως καὶ οἱ μισθοὶ συνέπλεον
 
-καὶ τἀναλώματα καὶ ὅσα τείνει πρὸς σωτηρίαν.</p></div>
-
-<div type="textpart" subtype="chapter" n="14"><p>ὑστέ- <lb n="5"/>
+καὶ τἀναλώματα καὶ ὅσα τείνει πρὸς σωτηρίαν.</p>
+         </div>
+         <div n="14" type="chapter">
+            <p>ὑστέ- <lb n="5"/>
 
 ῥεῖ δὲ οὐδὲν εὐδαίμονας εἶναι Ποτιδαιάτας ἡσυχῆ
 
@@ -635,9 +618,10 @@ scripsi e LV πράγμασι Schm</note>
 
 τοῦθ’ ὑπέστημεν ἂν ἢ ἐκεῖνοι προισταμένων ἡμῶν.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="15"><p>ὃ δ’ οὖν αὐτοὺς ἀπώλεσε καὶ τὰς ἐνεστώσας ἐπή- <lb n="25"/>
+</p>
+         </div>
+         <div n="15" type="chapter">
+            <p>ὃ δ’ οὖν αὐτοὺς ἀπώλεσε καὶ τὰς ἐνεστώσας ἐπή- <lb n="25"/>
 
 νεγκε συμφοράς, ἡ πρὸς ἀγνωμοσύνην μεταβολὴ καὶ ἡ
 
@@ -650,10 +634,7 @@ om Schm 19 καὶ scripsi e LV ἣ Schm 23 ἡμεῖς in-
 serui e LV om Schm 25 ὃ scripsi e V ὁ L Schm | έπή-
 
 νεγκε scripsi e LV ἀπήνεγκε Schm</note>
-
-
-
-<pb n="60"/>
+               <pb n="60"/>
 
 ἀλλοίωσις, ἣν ἡμεῖς οὐ, μὰ τοὺς θεούς, ἐπεπόνθειμεν,
 
@@ -676,8 +657,7 @@ serui e LV om Schm 25 ὃ scripsi e V ὁ L Schm | έπή-
 <lb n="10"/> καὶ ἐπενέβαλλον οὐδένα χρόνον μεταξὺ νοήματός τε
 
 καὶ ἔργων.</p>
-
-<p>16. Πρὸς οὖν ταῦτα τίς οὐκ ἂν ἔπαθεν ἀκούσας
+            <p>16. Πρὸς οὖν ταῦτα τίς οὐκ ἂν ἔπαθεν ἀκούσας
 
 τὸ κοινὸν πάντων ἀνθρώπων καὶ ὀργῇ ληφθεὶς ὥρ-
 
@@ -706,8 +686,7 @@ serui e LV om Schm 25 ὃ scripsi e V ὁ L Schm | έπή-
 <lb n="25"/> σώζειν Ποτιδαιάτας καὶ αὖθις, μόνον εἰ βου-
 
 <note type="footnote">6 Pind. Ol. Ι 57</note>
-
-<note type="footnote">1 θεοὑς Schm λόγους V sed in marg γρ νόμους lac. 4 litt
+               <note type="footnote">1 θεοὑς Schm λόγους V sed in marg γρ νόμους lac. 4 litt
 
 L cf. p. 57,8; 58,24; 64,10; 73,24; 77,11 et 12 et 23 3 ἧς scripsi
 
@@ -716,10 +695,7 @@ e LV ὧν Schm 6 tvqonti L 10 ἐπενέβαλλον scripsi e V
 épenqebalon L ἐνέβαλον Schm 14 τῷ Schm τω LV num
 
 ἐν τῷ? 15 σφόδρα ὑπῆρχεν V</note>
-
-
-
-<pb n="61"/>
+               <pb n="61"/>
 
 λομένοις αὐτοῖς ἐστι καθελοῦσι τὸν κύκλῳ
 
@@ -731,9 +707,10 @@ e LV ὧν Schm 6 tvqonti L 10 ἐπενέβαλλον scripsi e V
 
 ἔν’, εἰ μὴ λόγοις σύνθωνται πεισθέντες, τῷ γοῦν φόβῳ <lb n="5"/>
 
-τῶν ὅπλων ὑποκύψωσι βιασθέντες.</p></div>
-
-<div type="textpart" subtype="chapter" n="17"><p>οὐ πολὺς ὁ
+τῶν ὅπλων ὑποκύψωσι βιασθέντες.</p>
+         </div>
+         <div n="17" type="chapter">
+            <p>οὐ πολὺς ὁ
 
 μετὰ ταῦτα χρόνος, καὶ παρῆσαν οἱ πρέσβεις, συμπαρῆν
 
@@ -761,9 +738,10 @@ e LV ὧν Schm 6 tvqonti L 10 ἐπενέβαλλον scripsi e V
 
 πρώτην ἀρξάμενα.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="18"><p>Τοῖς δὲ δὴ τοιούτοις μὲν οὖσιν αὐτοῖς, τοιού- <lb n="20"/>
+</p>
+         </div>
+         <div n="18" type="chapter">
+            <p>Τοῖς δὲ δὴ τοιούτοις μὲν οὖσιν αὐτοῖς, τοιού- <lb n="20"/>
 
 τῶν δὲ καὶ πραγμάτων ἡμῖν γεγενημένοις αἰτίοις τίνα
 
@@ -774,10 +752,8 @@ e LV ὧν Schm 6 tvqonti L 10 ἐπενέβαλλον scripsi e V
 τὴν δικαίαν ἐνταῦθα, ὑπερβάλλειν γὰρ πολὺ τὸ ἀδί-
 
 κημα, ὡς καὶ αὐτὸν θάνατον μικρὸν εἶναι πρὸς τοῦτο <lb n="25"/>
-
-<note type="footnote">1 Thuc. I 56 15 Thuc. I 58 16 Thuc. I 57</note>
-
-<note type="footnote">3 καὶ delendum? 4 τοῖς inserui e LV om Schm
+               <note type="footnote">1 Thuc. I 56 15 Thuc. I 58 16 Thuc. I 57</note>
+               <note type="footnote">3 καὶ delendum? 4 τοῖς inserui e LV om Schm
 
 7 μέτα LV 11 εἰ δοκεῖτε scripsi e LV ἐδοκεῖτε Schm
 
@@ -786,10 +762,7 @@ e LV ὧν Schm 6 tvqonti L 10 ἐπενέβαλλον scripsi e V
 14 ἀφίστανται inserui e LV om Schm 15 χαλκιδαίων L
 
 18 ἐν scripsi coll. p. 70,22 ἐπὶ LV Schm 23 μὴ δ’ V</note>
-
-
-
-<pb n="62"/>
+               <pb n="62"/>
 
 νομίζειν· ἡμεῖς δὲ τοσοῦτον ἀπέσχομεν μὴ τῆς συνῆ,
 
@@ -821,9 +794,10 @@ e LV ὧν Schm 6 tvqonti L 10 ἐπενέβαλλον scripsi e V
 
 <lb n="15"/> τὸ στρατόπεδον κύκλῳ εἰς ἀκριβῆ πολιορκίαν καθίστη.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="19"><p>καὶ ἃ μὲν ἑαυτοὺς ἔδρασαν συγκλεισθέντες, εἴθ’
+</p>
+         </div>
+         <div n="19" type="chapter">
+            <p>καὶ ἃ μὲν ἑαυτοὺς ἔδρασαν συγκλεισθέντες, εἴθ’
 
 ὅσια εἴτ’ ἀνόσιαι εἰδεῖεν αὐτοί· ἅ δὲ τέως ἡμεῖς διε-
 
@@ -840,16 +814,13 @@ e LV ὧν Schm 6 tvqonti L 10 ἐπενέβαλλον scripsi e V
 ζωήν, ἅπαντας δὲ σῶς κελεύσαντες τῆς πόλεως ἀπιέναι
 
 <note type="footnote">3 τοῖς στρατηγοῖς scripsi e V τοὺς στρατηγοὺς L Schm</note>
-
-<note type="footnote">5 κομίζοντες V | στόλον scripsi e LV στόχον Schm
+               <note type="footnote">5 κομίζοντες V | στόλον scripsi e LV στόχον Schm
 
 6 μὴ δὲ V 7 ἐπιμελομένους V 8 μὴ δ’ LV 10 στρα-
 
 τηγὸς V ὅ τι scripsi ὅτι LVSchm | ἡμῖν V sed ι in ras m 2</note>
-
-<note type="footnote">13 ἡμέρως V sed ἡ in ras m 2 | τὰ inserui e LV om Schm</note>
-
-<note type="footnote">14 τὰ ante αὐτούς Schm delevi 18 παρεστησάμεθα V
+               <note type="footnote">13 ἡμέρως V sed ἡ in ras m 2 | τὰ inserui e LV om Schm</note>
+               <note type="footnote">14 τὰ ante αὐτούς Schm delevi 18 παρεστησάμεθα V
 
 sed μέθᾳ in marg m 2 19 οὔτε βαρβαρικὰ καὶ in marg V 2 |
 
@@ -858,10 +829,7 @@ sed μέθᾳ in marg m 2 19 οὔτε βαρβαρικὰ καὶ in marg V 2 
 εἰν in ras m 2 | αὐτοὺς V sed αὑ in ras et οὑς suprascr m 2
 
 22 ἐζημιώσαμεν V sed ζ in ras m 2 23 ἅπαντες V</note>
-
-
-
-<pb n="63"/>
+               <pb n="63"/>
 
 τοὔδαφος κατελίπομεν ἑαυτοῖς τήν τ’ ὀργὴν ἐξηνέγκα-
 
@@ -874,8 +842,7 @@ sed μέθᾳ in marg m 2 19 οὔτε βαρβαρικὰ καὶ in marg V 2 
 ἡμῶν τὸ ἀσέβημα, ὅτι τοῦ γένους φεισάμενοι ὑφή- <lb n="5"/>
 
 κάμεν τοῦ δικαίου καὶ τὴν ἀξίαν οὐκ ἐλαμβάνομεν.</p>
-
-<p>20. Ἀλλ' οὐχὶ τοῦτό ἐστιν οὗ δὴ χάριν ἐπὶ τὴν
+            <p>20. Ἀλλ' οὐχὶ τοῦτό ἐστιν οὗ δὴ χάριν ἐπὶ τὴν
 
 κατηγορίαν ἀναστῆναι Κορίνθιοί φασιν, ἄλλο δέ, ὅπερ
 
@@ -909,9 +876,10 @@ sed μέθᾳ in marg m 2 19 οὔτε βαρβαρικὰ καὶ in marg V 2 
 
 τις ἐγκαλεῖ, περὶ τῶνδε ἐρεῖτε, τοῦτ’ αὐτὸ καὶ ἡμῖν ἐκ
 
-τοῦ ἴσου λόγου παρέσται εἰπεῖν;</p></div>
-
-<div type="textpart" subtype="chapter" n="21"><p>οὐ τοίνυν ἀσκέ-
+τοῦ ἴσου λόγου παρέσται εἰπεῖν;</p>
+         </div>
+         <div n="21" type="chapter">
+            <p>οὐ τοίνυν ἀσκέ-
 
 πτως ἐφ’ ὁντιναοῦν, ἀλλὰ τὸν ἁμαρτάνοντα τὴν αἰτίαν <lb n="25"/>
 
@@ -926,10 +894,7 @@ sed μέθᾳ in marg m 2 19 οὔτε βαρβαρικὰ καὶ in marg V 2 
 <note type="footnote">22 ὅ τι scripsi ὅτι LV Schm 25 ἐφοντιναοῦν V
 
 29 ἐκεῖνο scripsi e LV ἐκεῖνοι Schm</note>
-
-
-
-<pb n="64"/>
+               <pb n="64"/>
 
 ἀλόγιστον εἶναι καὶ συμφέρει οὐδέποτε οὐδενί. ὥστε
 
@@ -951,9 +916,10 @@ sed μέθᾳ in marg m 2 19 οὔτε βαρβαρικὰ καὶ in marg V 2 
 
 <lb n="10"/> τεσθαι προσήκει, ἵνα μὴ θᾶττον ἄνω κάτω τἀνθρώπεια
 
-γένηται.</p></div>
-
-<div type="textpart" subtype="chapter" n="22"><p>ἥ, πρὸς θεῶν, ἀρεστὸν ὑμῖνι εἴ τις ἱερό-
+γένηται.</p>
+         </div>
+         <div n="22" type="chapter">
+            <p>ἥ, πρὸς θεῶν, ἀρεστὸν ὑμῖνι εἴ τις ἱερό-
 
 συλος ἢ λωποδύτης ἐν Κορίνθῳ ἐγένετο, ἐκεῖνον μὲν
 
@@ -985,9 +951,10 @@ sed μέθᾳ in marg m 2 19 οὔτε βαρβαρικὰ καὶ in marg V 2 
 
 καὶ ἐπὶ τοὺς Κορινθίους ὑμᾶς, καὶ ἀντεγκαλέσομεν
 
-τότ’, εὖ ἴστε, σφοδρότερον οὐδὲν ἀνιέντες.</p></div>
-
-<div type="textpart" subtype="chapter" n="23"><p>ἀλλ’
+τότ’, εὖ ἴστε, σφοδρότερον οὐδὲν ἀνιέντες.</p>
+         </div>
+         <div n="23" type="chapter">
+            <p>ἀλλ’
 
 οὐχ οὕτω δεῖ παίζειν. ἄνθρωποι γὰρ πάντες οἷς μέλει
 
@@ -998,10 +965,7 @@ sed μέθᾳ in marg m 2 19 οὔτε βαρβαρικὰ καὶ in marg V 2 
 scripsi e LV αἰτίαν, ἀεὶ Schm | ἂν inserui e LV om Schm
 
 | οἱ inser L om V</note>
-
-
-
-<pb n="65"/>
+               <pb n="65"/>
 
 τοῦ δικαίου οὐχ ἕτερον ἀνθ’ ἑτέρου εἰσάγουσιν εἰς
 
@@ -1018,8 +982,7 @@ scripsi e LV αἰτίαν, ἀεὶ Schm | ἂν inserui e LV om Schm
 τοῖς ἐν Ἐκβατάνοις καὶ Σούσοις καὶ πλεῖστον διῳκι-
 
 σμένοις αὐτῶν.</p>
-
-<p>24. Ἀλλ’ ἐπολιορκεῖτε, φασίν, αὐτοὺς κἀν τῇ
+            <p>24. Ἀλλ’ ἐπολιορκεῖτε, φασίν, αὐτοὺς κἀν τῇ
 
 πολιορκίᾳ τοῦτο συνέπεσεν. ἐπολιορκοῦμεν μὲν <lb n="10"/>
 
@@ -1050,10 +1013,8 @@ scripsi e LV αἰτίαν, ἀεὶ Schm | ἂν inserui e LV om Schm
 εἰς ἀποστασίαν εἶδον πᾶσαν τὴν περὶ αὐτοὺς Ἀθη-
 
 <note type="footnote">5 Dem. p. 332,22; 395,7 7 cf. p. 24, 9 13 cf. p. 74,23</note>
-
-<note type="footnote">15 ἀδικήσασι] ἀντὶ γενικῆς ἡ δοτικὴ ἐνταῦθα VL2</note>
-
-<note type="footnote">2 ὅστις — 3 αὐτοῖς inter Libanii locos laudat Plan fol 38
+               <note type="footnote">15 ἀδικήσασι] ἀντὶ γενικῆς ἡ δοτικὴ ἐνταῦθα VL2</note>
+               <note type="footnote">2 ὅστις — 3 αὐτοῖς inter Libanii locos laudat Plan fol 38
 
 παρὰ τοῖς κριταῖς Plan | ὅδ’ V 7 πλεῖστον scripsi e LV
 
@@ -1066,18 +1027,16 @@ V | μὴ δέ V 21 μὴ δὲ V 22 ἠβούλοντο scripsi e LV
 ἐβούλοντο Schm 23 ἀποστασίαν scripsi e LV coll p. 70,17;
 
 73, 17 ἀπόστασιν Schm</note>
-
-
-
-<pb n="66"/>
+               <pb n="66"/>
 
 ναίων σπουδὴν παρὰ φαῦλον θέμενοι, ποῦ δίκαιον μὴ
 
 πόλεμον κινεῖν ἐπ’ αὐτοὺς καὶ δίκην ἀξίαν τῆς ὑπερ-
 
-οψίας λαμβάνειν;</p></div>
-
-<div type="textpart" subtype="chapter" n="25"><p>οὐκοῦν, ἄνδρες Ἕλληνες, καὶ
+οψίας λαμβάνειν;</p>
+         </div>
+         <div n="25" type="chapter">
+            <p>οὐκοῦν, ἄνδρες Ἕλληνες, καὶ
 
 ἐκινοῦμεν τὸν πόλεμον καὶ δίκην ἐλαμβάνομεν ἀξίαν
 
@@ -1113,9 +1072,10 @@ V | μὴ δέ V 21 μὴ δὲ V 22 ἠβούλοντο scripsi e LV
 
 <lb n="20"/> τετραμμένον ἐστὶν ἀμύνεσθαι τοὺς ἐχθρούς, καὶ κεκώ-
 
-λυται οὐδαμῶς.</p></div>
-
-<div type="textpart" subtype="chapter" n="26"><p>ὃ δὴ καὶ ἡμεῖς ἐποιοῦμεν, θάτερον
+λυται οὐδαμῶς.</p>
+         </div>
+         <div n="26" type="chapter">
+            <p>ὃ δὴ καὶ ἡμεῖς ἐποιοῦμεν, θάτερον
 
 δὲ οὐδαμῶς, λέγω τὸ οὕτω τραφῆναι παρασκευάσαι. καὶ
 
@@ -1136,10 +1096,7 @@ V | μὴ δέ V 21 μὴ δὲ V 22 ἠβούλοντο scripsi e LV
 e V εἴπῃς L Schm 25 μυρίοι inserui e LV om Schm
 
 26 ἀλλ’ — 27 παρεκτείνειν citat Plan 1. 1.</note>
-
-
-
-<pb n="67"/>
+               <pb n="67"/>
 
 πᾶσαν ἐφάνη τις πρὸς αὐτοὺς ἐνδειξάμενος βλάβην. ὃ
 
@@ -1159,9 +1116,10 @@ e V εἴπῃς L Schm 25 μυρίοι inserui e LV om Schm
 
 καὶ πείσωμεν ἀντὶ πολεμίων, τί λέγω πολεμίων; ἀντὶ
 
-θηρίων ἀλλήλοις γενέσθαι.</p></div>
-
-<div type="textpart" subtype="chapter" n="27"><p>εἴχομεν ἂν ἀσεβείας <lb n="10"/>
+θηρίων ἀλλήλοις γενέσθαι.</p>
+         </div>
+         <div n="27" type="chapter">
+            <p>εἴχομεν ἂν ἀσεβείας <lb n="10"/>
 
 αἰτίαν ἡμεῖς, εἰ τοῦτο διενοούμεθα καὶ σκοπὸς ἦν
 
@@ -1198,10 +1156,8 @@ e V εἴπῃς L Schm 25 μυρίοι inserui e LV om Schm
 δέοντα ὅμως ἐσκληρύνοντο, ἕως ἑαυτοὺς ἀπώλεσαν,
 
 <note type="footnote">10 cf. p. 17, 6 17 Pind. 01. Χ (XI) 37</note>
-
-<note type="footnote">2 πατρώιον V 10 μὲν post εἴχομεν inser Schm delevi</note>
-
-<note type="footnote">14 τροφούς V 20 συνῆτε V 25 ὑμῶν V</note>
+               <note type="footnote">2 πατρώιον V 10 μὲν post εἴχομεν inser Schm delevi</note>
+               <note type="footnote">14 τροφούς V 20 συνῆτε V 25 ὑμῶν V</note>
 
 5 *
 
@@ -1214,8 +1170,7 @@ e V εἴπῃς L Schm 25 μυρίοι inserui e LV om Schm
 οὕτως οὐ τῆς ἡμῶν διανοίας, τῆς δ’ ἐκείνων ἀπονοίας
 
 τουτ’ ἔργον ὑπῆρχε.</p>
-
-<p>28. Καὶ εἰ βούλεσθε, κύκλῳ τὴν Ἑλλάδα περιελ-
+            <p>28. Καὶ εἰ βούλεσθε, κύκλῳ τὴν Ἑλλάδα περιελ-
 
 <lb n="5"/> θόντες ἐς ζητεῖτε, εἴ τι τοιοῦτον εἰς ἀνθρώπους Ἀθη-
 
@@ -1233,9 +1188,10 @@ e V εἴπῃς L Schm 25 μυρίοι inserui e LV om Schm
 
 ἔτι πολλοὶ παρ’ ἡμῖν ἐν δεσμοῖς. ἀλλ’ οὐδεὶς οἵους
 
-οὗτοί φασιν ἡμῶν ἐπειράθη.</p></div>
-
-<div type="textpart" subtype="chapter" n="29"><p>καὶ τί τοὺς Ἕλληνας
+οὗτοί φασιν ἡμῶν ἐπειράθη.</p>
+         </div>
+         <div n="29" type="chapter">
+            <p>καὶ τί τοὺς Ἕλληνας
 
 λέγομεν; οὐ τοὺς Ἴωνας ἡμῶν οἱ Πέρσαι κατεδου-
 
@@ -1264,20 +1220,15 @@ e V εἴπῃς L Schm 25 μυρίοι inserui e LV om Schm
 <note type="footnote">15 Xen. comm. IV 2, 33 17 cf. ad t. V p. 521, 10. t. IV
 
 454, 18 R</note>
-
-<note type="footnote">2 τῆς δ’ ἐκείνων ἀπονοίας inserui e LV om Schm
+               <note type="footnote">2 τῆς δ’ ἐκείνων ἀπονοίας inserui e LV om Schm
 
 3 ὑπῆρχεν Schm 5 άθηναῖοι L sed οἱ in ras m 2. áuhnaqivn
 
 V 7 ἐξ ἔθους Schm ἐξέθους LV | λέγετε L sed λ in ras m2</note>
-
-<note type="footnote">17 Ἐρέτριαν scripsi e V ἐρέτρειαν L Schm 20 μετα-
+               <note type="footnote">17 Ἐρέτριαν scripsi e V ἐρέτρειαν L Schm 20 μετα-
 
 ταῦτ᾿ V</note>
-
-
-
-<pb n="69"/>
+               <pb n="69"/>
 
 καὶ τῆς ἀρετῆς τῶν πάλαι Ἀθηναίων ἀπολελείμμεθα,
 
@@ -1287,9 +1238,10 @@ V 7 ἐξ ἔθους Schm ἐξέθους LV | λέγετε L sed λ in ras m
 
 ἐν τῷ διηνεκεῖ χρόνῳ καὶ πᾶσιν ὡμιλοῦμεν ἀνθρώποις.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="30"><p>μὴ τοίνυν ἡμᾶς τις τῆς ἐκείνων ἀσεβείας αἰτίους, <lb n="5"/>
+</p>
+         </div>
+         <div n="30" type="chapter">
+            <p>μὴ τοίνυν ἡμᾶς τις τῆς ἐκείνων ἀσεβείας αἰτίους, <lb n="5"/>
 
 ἀλλ’ αὐτοὺς ἐκείνους λεγέτω, οἱ καὶ τὴν ἀθέμιτον
 
@@ -1324,8 +1276,7 @@ V 7 ἐξ ἔθους Schm ἐξέθους LV | λέγετε L sed λ in ras m
 ἡμῶν ἀσεβεῖς ἐκεῖνοι γεγόνασιν εἰς ἀλλήλους παρανο-
 
 μήσαντες.</p>
-
-<p>31. Εἰ δέ τις φιλονείκως ἔχων οὐκ ἀφίσταται τὴν
+            <p>31. Εἰ δέ τις φιλονείκως ἔχων οὐκ ἀφίσταται τὴν
 
 πολιορκίαν λέγων εἰς ταῦτα παραβιάσασθαι, αὐτοὶ καὶ
 
@@ -1342,10 +1293,7 @@ scripsi ὁμιλοῦμεν LV Schm 9 μὴ δὲ V 10 οἷς LV Schm
 cancellavi 18 οὐδὲν scripi e LV οὐδὲ Schm 19 οὔκουν
 
 scripsi e LV οὐκοῦν Schm 27 διαταῦτα V</note>
-
-
-
-<pb n="70"/>
+               <pb n="70"/>
 
 βανον πεῖραν. εὖθ’, ὡς ὑπ’ ἀνέμου σκάφος, εἰς τοὐ-
 
@@ -1363,9 +1311,10 @@ scripsi e LV οὐκοῦν Schm 27 διαταῦτα V</note>
 
 τας δὲ δεηθῆναι καὶ δεηθέντασ εὐμενεστέρων τυχεῖν,
 
-ὅμως ἀπονοηθέντες ἀπώλοντο.</p></div>
-
-<div type="textpart" subtype="chapter" n="32"><p>οὕτως οὐχ ἡμῶν
+ὅμως ἀπονοηθέντες ἀπώλοντο.</p>
+         </div>
+         <div n="32" type="chapter">
+            <p>οὕτως οὐχ ἡμῶν
 
 <lb n="10"/> ἔργον, ἀλλ’ ἐκείνων ἡ πολιορκία, καὶ ὁ κατασχὼν
 
@@ -1403,21 +1352,17 @@ scripsi e LV οὐκοῦν Schm 27 διαταῦτα V</note>
 
 αὐτοὺς δὲ καὶ ὧν ἔπαθον χείρω πολλῷ παθόντας
 
-τυχεῖν;</p></div>
-
-<div type="textpart" subtype="chapter" n="33"><p>χρηστοί γε ὑμεῖς, ὦ Κορίνθιοι, τὸν μὲν
+τυχεῖν;</p>
+         </div>
+         <div n="33" type="chapter">
+            <p>χρηστοί γε ὑμεῖς, ὦ Κορίνθιοι, τὸν μὲν
 
 <note type="footnote">16 cf. p. 61, 1</note>
-
-<note type="footnote">2 αὐτοὺς in marg ὒ 24 ἐπανασώσασθαι scripsi e V
+               <note type="footnote">2 αὐτοὺς in marg ὒ 24 ἐπανασώσασθαι scripsi e V
 
 ἀνασώσασραι L Schm 27 πολλῷ scripsi e LV πολλῶν Schm</note>
-
-<note type="footnote">28 ὑμεῖς scripsi e LV ἡμεῖς Schm</note>
-
-
-
-<pb n="71"/>
+               <note type="footnote">28 ὑμεῖς scripsi e LV ἡμεῖς Schm</note>
+               <pb n="71"/>
 
 ἐπιτειχισμὸν καὶ τὴν πολιορκίαν ἄνω καὶ κάτω στρέ-
 
@@ -1443,9 +1388,10 @@ scripsi e LV οὐκοῦν Schm 27 διαταῦτα V</note>
 
 εἰ ὑμεῖς ἧτε, ὠ Κορίνθιοι, τοσαύτης ἀνδρῶν ἀπολαύ-
 
-σαντες ἀγνωμοσύνης, τέ ἂν αὐτοῖς ἐχρήσασθε;</p></div>
-
-<div type="textpart" subtype="chapter" n="34"><p>ἀλλὰ
+σαντες ἀγνωμοσύνης, τέ ἂν αὐτοῖς ἐχρήσασθε;</p>
+         </div>
+         <div n="34" type="chapter">
+            <p>ἀλλὰ
 
 τι ταῦτ’ ἐρωτῶ; ὅπως ἂν ἠνέγκατε, δῆλον ἡμῖν ἐτέ-
 
@@ -1470,28 +1416,23 @@ scripsi e LV οὐκοῦν Schm 27 διαταῦτα V</note>
 γρύξει, πολλὴν εἶναι τὴν παραίτησιν ὅτι πολέμιος
 
 ἦν, ὅτι παρασπονδῶν, ὅτι βλάπτων· Ἀθηναῖοι <lb n="25"/>
-
-<note type="footnote">17 Thuc. I 50 1 25 Dem. p. 85,22; 248,20</note>
-
-<note type="footnote">1 καὶ scripsi e LV ἢ Schm 4 ἡμᾶς L sed ἡ in ras m2</note>
-
-<note type="footnote">7 ἐκπεπώκαμεν V 10 ὧς inserui e LV om Schm | ἵν᾿
+               <note type="footnote">17 Thuc. I 50 1 25 Dem. p. 85,22; 248,20</note>
+               <note type="footnote">1 καὶ scripsi e LV ἢ Schm 4 ἡμᾶς L sed ἡ in ras m2</note>
+               <note type="footnote">7 ἐκπεπώκαμεν V 10 ὧς inserui e LV om Schm | ἵν᾿
 
 scripsi e V ἴνα L Schm τας(1) V 19 κατεδύετε scripsi
 
 e V κατεδύσατε L Schm 20 ἀπέστη τε V 22 Κορινθίους
 
 scripsi e LV Κορινθίοις Schm</note>
-
-
-
-<pb n="72"/>
+               <pb n="72"/>
 
 δὲ ἂν ἐπὶ τοὺς πολεμίους ἴωσιν, ἀσεβείας αὐτοὺς Κο-
 
-ρίνθιοι γράφονται.</p></div>
-
-<div type="textpart" subtype="chapter" n="35"><p>καὶ πῶς οὐκ ἀλόγιστον τοῦτο;
+ρίνθιοι γράφονται.</p>
+         </div>
+         <div n="35" type="chapter">
+            <p>καὶ πῶς οὐκ ἀλόγιστον τοῦτο;
 
 ἐγκαλεῖν ἴδει καὶ μέμφεσθαι προσηκόντως, ὢ Κορίνθιοι,
 
@@ -1522,8 +1463,7 @@ scripsi e LV Κορινθίοις Schm</note>
 μισεῖν τὸν μισοῦντα καὶ τὸν ξύοντα ἀντιξύειν οὐχ
 
 ὑπάρχειν ἑτέρου ἢ τούτου τοῦ δόγματος.</p>
-
-<p>36. Ἁλλ’ ἴσως μηδὲ τοὐλάχιστον ἡμῖν παρεξελθοῦσι
+            <p>36. Ἁλλ’ ἴσως μηδὲ τοὐλάχιστον ἡμῖν παρεξελθοῦσι
 
 τοῦ δικαίου δοτέον εἶναι δίκην παρακελεύεσθε καὶ
 
@@ -1542,20 +1482,15 @@ scripsi e LV Κορινθίοις Schm</note>
 <note type="footnote">16 Suid. s. v. ξυήλην Eustath. ad II. λ 564 p. 863, 4. Mich.
 
 Apostol. prov. XVII 20 cum nota Leutschii 24 Thuc. III 40, 6</note>
-
-<note type="footnote">4 εἰργασμένους] πρὸς τὸ ἐβλάπτομεν ῥῆμα τὴν προηγησα-
+               <note type="footnote">4 εἰργασμένους] πρὸς τὸ ἐβλάπτομεν ῥῆμα τὴν προηγησα-
 
 μένην αἰτιατικὴν συντακτέον LV2</note>
-
-<note type="footnote">2 γράφονται Schm γράψονται; L γράψονται· V 18 μὴ
+               <note type="footnote">2 γράφονται Schm γράψονται; L γράψονται· V 18 μὴ
 
 δὲ V 19 παρακελεύεσθαι et 20 βούλεσθαι V 21 ταμέγιστα
 
 V | μὴ δ’ V 25 ἀεὶ scripsi e V αὐτοὶ L Schm</note>
-
-
-
-<pb n="73"/>
+               <pb n="73"/>
 
 ἐθάρσησαν καὶ αὐτοὶ καθ’ ἡμῶν ἐπιέναι, οὐ παρείδο-
 
@@ -1585,9 +1520,10 @@ V | μὴ δ’ V 25 ἀεὶ scripsi e V αὐτοὶ L Schm</note>
 
 αἱρετώτερος ἅπασιν ἡμῖν ἢ τοσοῦτον κληρωσαμένοις
 
-ὄνειδος ζῆν.</p></div>
-
-<div type="textpart" subtype="chapter" n="37"><p>ἀλλ’ ἐκείνους μὲν οὐκ ἔστι λέγειν ὧς <lb n="15"/>
+ὄνειδος ζῆν.</p>
+         </div>
+         <div n="37" type="chapter">
+            <p>ἀλλ’ ἐκείνους μὲν οὐκ ἔστι λέγειν ὧς <lb n="15"/>
 
 οὐ δίκαια πεπόνθασιν ἀγνώμονας γεγενημένους καὶ
 
@@ -1622,18 +1558,16 @@ inserui e LV om Schm 12 καταβαλομένοις scripsi e V
 γορίας Schm 24 τῶν κρειττόνων scripsi coll p. 82, 19 et 60,1
 
 τοῦ κρείττονος LV Schm 25 rco inserui e LV om Schm</note>
-
-
-
-<pb n="74"/>
+               <pb n="74"/>
 
 ἀνθρώπους ἀλλήλοις, ὡς ἡ φύσις διετάξατο, κοινωνεῖν,
 
 καὶ δεῖ γε θηρίων τρόπον ἀλλαξαμένους πρὸς ἀγριό-
 
-τητᾷ μετακλῖναι.</p></div>
-
-<div type="textpart" subtype="chapter" n="38"><p>οὕτω μὴ εἶναί φημι χείρους ἀγνω-
+τητᾷ μετακλῖναι.</p>
+         </div>
+         <div n="38" type="chapter">
+            <p>οὕτω μὴ εἶναί φημι χείρους ἀγνω-
 
 μόνων ἀνθρώπων ἐν τοῖς οὖσιν ὀφθῆναι πᾶσαν διὰ
 
@@ -1665,9 +1599,10 @@ inserui e LV om Schm 12 καταβαλομένοις scripsi e V
 
 δεήσεται τοῦ μὴ τῆς λύμης ἀναπλῆσαι τοὺς πάντας.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="39"><p>καὶ τὸ μετὰ ταῦτα πῶς ἄν τις ἐθελήσει τινὶ συν-
+</p>
+         </div>
+         <div n="39" type="chapter">
+            <p>καὶ τὸ μετὰ ταῦτα πῶς ἄν τις ἐθελήσει τινὶ συν-
 
 <lb n="20"/> θέσθαι ἢ μεταδοῦναι τῶν ἑαυτοῦ; πῶς τίς τινος ἀντι-
 
@@ -1682,8 +1617,7 @@ inserui e LV om Schm 12 καταβαλομένοις scripsi e V
 <lb n="25"/> μεν ἀεὶ σώζειν, εἵ τις δεόμενος ἵκετο, πῶς ἔτι τῆς ἐκ
 
 <note type="footnote">23 cf. p. 65, 13. Thuc. II 49, 1. Ι 3, 4</note>
-
-<note type="footnote">2 ἀλλαξαμένους scripsi e LV ἀλλαξαμένοις Schm
+               <note type="footnote">2 ἀλλαξαμένους scripsi e LV ἀλλαξαμένοις Schm
 
 7 ὑποψία scripsi e V ὑπεροψία L Schra 10 μὴ δὲ V | δια-
 
@@ -1692,10 +1626,7 @@ inserui e LV om Schm 12 καταβαλομένοις scripsi e V
 ἐθελήσει scripsi coil. p. 78,25 ἐθελήσῃ LV Schm 21 χεῖρα
 
 scripsi e LV χεῖρας Schm 23 ἀποκριθήσεται ἔται V</note>
-
-
-
-<pb n="75"/>
+               <pb n="75"/>
 
 φύσεως φιλανθρωπίας ἑξόμεθα; τίνας ἐλεήσομεν καὶ
 
@@ -1709,9 +1640,10 @@ scripsi e LV χεῖρας Schm 23 ἀποκριθήσεται ἔται V</not
 
 ἑνὸς καὶ δυεῖν ἀγνωμόνων ἀνθρώπων αἱρεῖσθαι καὶ
 
-τρίτον ἄλλον εὐεργετεῖν.</p></div>
-
-<div type="textpart" subtype="chapter" n="40"><p>ταύτῃ τοι καὶ τοῖς δικαίοις
+τρίτον ἄλλον εὐεργετεῖν.</p>
+         </div>
+         <div n="40" type="chapter">
+            <p>ταύτῃ τοι καὶ τοῖς δικαίοις
 
 εὖ παθεῖν διὰ τοὺς ἀμνήμονας εὐεργεσίας περιέσται
 
@@ -1740,8 +1672,7 @@ scripsi e LV χεῖρας Schm 23 ἀποκριθήσεται ἔται V</not
 ἀφέξονται, ἀλλ’ ᾧ γε τὴν ἀξίαν τοῦ τολμήματος ἀπο- <lb n="20"/>
 
 τίσουσι δίκην ὧς τάχιστα παραστήσεται.</p>
-
-<p>41. Πλὴν οὕτως τῆς εἰς ἐκείνους τιμωρίας ἐλλιπῶς
+            <p>41. Πλὴν οὕτως τῆς εἰς ἐκείνους τιμωρίας ἐλλιπῶς
 
 ἐχούσης οὐκ ἀγαπῶσι Κορίνθιοι, ἀλλὰ μετεληλύθατε,
 
@@ -1760,10 +1691,7 @@ scripsi e LV χεῖρας Schm 23 ἀποκριθήσεται ἔται V</not
 δυοῖν L Schm 12 τοιούτῳ scripsi e LV τούτῳ Schm
 
 20 τοῦ τολμήματος inserui e V om L Schm</note>
-
-
-
-<pb n="76"/>
+               <pb n="76"/>
 
 στάντας; οὐκ ἴδει δὲ καὶ ἀντὶ τούτων σφάττειν αὐτοὺς
 
@@ -1779,9 +1707,10 @@ scripsi e LV χεῖρας Schm 23 ἀποκριθήσεται ἔται V</not
 
 περινοστεῖν ἐλευθέρους οὐκ ὄντας ἀξίους τοιούτου
 
-τυχεῖν οὐδενός.</p></div>
-
-<div type="textpart" subtype="chapter" n="42"><p>ἄνευ δὲ ὧν εἰρήκαμεν, τίς ποτε
+τυχεῖν οὐδενός.</p>
+         </div>
+         <div n="42" type="chapter">
+            <p>ἄνευ δὲ ὧν εἰρήκαμεν, τίς ποτε
 
 περὶ πολέμου νενομοθέτηκε καὶ μέτρα καὶ τρόπους εἰση-
 
@@ -1805,9 +1734,10 @@ scripsi e LV χεῖρας Schm 23 ἀποκριθήσεται ἔται V</not
 
 ἅπασι νόμος, ὡς ἑκάστῳ ἐκ τῶν συμπιπτόντων παρί-
 
-<lb n="20"/> σταται τὸν πόλεμον διαφέρειν.</p></div>
-
-<div type="textpart" subtype="chapter" n="43"><p>τί λοιπὸν ἄγνοιαν
+<lb n="20"/> σταται τὸν πόλεμον διαφέρειν.</p>
+         </div>
+         <div n="43" type="chapter">
+            <p>τί λοιπὸν ἄγνοιαν
 
 τῶν κοινῇ γνωρίμων πλαττόμενοι ἅπερ ἀκώλυτα
 
@@ -1834,10 +1764,7 @@ scripsi δεῖ LV Schm 15 οὐδὲ scripsi e LV ἢ Schm
 e LV om Schm | γοῦν scripsi e LV γε Schm 26 νόμος ἢ
 
 λόγος scripsi e V λόγος ἢ νόμος L Schm</note>
-
-
-
-<pb n="77"/>
+               <pb n="77"/>
 
 λόγος μὴ τοῖς ἐνοῦσι χρῆσθαι παρεστώσῃ ςτῆς μάχης;
 
@@ -1857,9 +1784,10 @@ e LV om Schm | γοῦν scripsi e LV γε Schm 26 νόμος ἢ
 
 ἀντὶ τούτου προσηνέχθη οὐδείς, ἡμῖν ὧς μὴ φυλάξασιν
 
-ἐγκαλεῖτε;</p></div>
-
-<div type="textpart" subtype="chapter" n="44"><p>εἶεν. ἀλλ’ ὁ Ποτιδαιάτας ἀσεβῆ καὶ <lb n="10"/>
+ἐγκαλεῖτε;</p>
+         </div>
+         <div n="44" type="chapter">
+            <p>εἶεν. ἀλλ’ ὁ Ποτιδαιάτας ἀσεβῆ καὶ <lb n="10"/>
 
 ἀνόσια εἰργασμένος τίς, ὦ πρὸς θεῶν; Ἀθηναίων
 
@@ -1882,8 +1810,7 @@ e LV om Schm | γοῦν scripsi e LV γε Schm 26 νόμος ἢ
 εστάναι καὶ ἀδικίας ἀνθρώπων μεθ’ ὁμοίας ἐξαίρειν <lb n="20"/>
 
 τῆς ταχυτῆτος.</p>
-
-<p>45. Πλὴν Ποτιδαιᾶται μέν, ὦ Λακεδαιμόνιοι, οὕτω
+            <p>45. Πλὴν Ποτιδαιᾶται μέν, ὦ Λακεδαιμόνιοι, οὕτω
 
 μὲν ἡμῖν, οὕτω δὲ καὶ τοῖς πρὸ ἡμῶν ἀδικηθεῖ-
 
@@ -1892,8 +1819,7 @@ e LV om Schm | γοῦν scripsi e LV γε Schm 26 νόμος ἢ
 γοροῦσιν ἡμῶν ἀντὶ τούτων οὐ μᾶλλον ἐκείνων
 
 <note type="footnote">18 Nicol. progynin. ed. Walz rhet. I 420, 29</note>
-
-<note type="footnote">1 ἐνοῦσι scripsi e V ἐνοχλοῦσι L Schm 8 μὴ δ’ V
+               <note type="footnote">1 ἐνοῦσι scripsi e V ἐνοχλοῦσι L Schm 8 μὴ δ’ V
 
 φυλάττοντες V cf. p. 80, 13 11 εἰργασμένος scripsi e LV
 
@@ -1904,10 +1830,7 @@ ad p. 60, 1 12 θεούς scripsi lac. 5 litt L sed γρ νόμους in
 marg m 2 Schm λόγους V 20 ἀδικίας scripsi e LV ἀδικίαν
 
 Schm 21 τῆς inserui e LV om Schm</note>
-
-
-
-<pb n="78"/>
+               <pb n="78"/>
 
 ὑπεραλγοῦντες ἢ τῷ πρὸς ἡμᾶς φθόνῳ κεκινημένοι.
 
@@ -1934,8 +1857,7 @@ Schm 21 τῆς inserui e LV om Schm</note>
 βαλεῖτι; οὐ ταπεινώσετε πρὶν ἢ φθάσουσιν
 
 ἄμαχοι γεγονότες;</p>
-
-<p>46. Καὶ τὸ μὲν δὴ προβεβλημένον αὐτοῖς ἄλλον
+            <p>46. Καὶ τὸ μὲν δὴ προβεβλημένον αὐτοῖς ἄλλον
 
 <lb n="15"/> ἔχον ἀγῶνα εἰς τὴν καθ’ ἡμῶν, ὧς ὁρᾶτε, συμβολὴν
 
@@ -1962,24 +1884,20 @@ Schm 21 τῆς inserui e LV om Schm</note>
 τοῦτό γε ἄπο τρόπου, εἰ κατὰ τὸ πεφυκὸς πᾶσιν ἀν-
 
 <note type="footnote">8 Thuc. IV 86,3 26 Plat. rep. V p. 470B. Theaet. p. 143 C</note>
-
-<note type="footnote">8 πατρωίων V 11 καταβαλεῖτε scripsi καταβάλετε LV
+               <note type="footnote">8 πατρωίων V 11 καταβαλεῖτε scripsi καταβάλετε LV
 
 Schm 15 συμβολὴν scripsi συμβουλὴν LV ἐπιβολὴν Schm</note>
-
-<note type="footnote">17 καταβησόμεθα scripsi e LV ἀποβησόμεθα Schm
+               <note type="footnote">17 καταβησόμεθα scripsi e LV ἀποβησόμεθα Schm
 
 23 ἐπιθυμίας V</note>
-
-
-
-<pb n="79"/>
+               <pb n="79"/>
 
 θρώποις καὶ ἡμεῖς κρείττους ἑαυτῶν καὶ μείζους ἐφιέ-
 
-μεθα γίνεσθαι.</p></div>
-
-<div type="textpart" subtype="chapter" n="47"><p>ὅ δὲ ὅμως κἀν τῷ τοιούτῳ παρηλ-
+μεθα γίνεσθαι.</p>
+         </div>
+         <div n="47" type="chapter">
+            <p>ὅ δὲ ὅμως κἀν τῷ τοιούτῳ παρηλ-
 
 λαγμένον ἡμῖν καὶ οὐ ῥᾴδιον παρά τισιν ἄλλοις κατα-
 
@@ -2005,9 +1923,10 @@ Schm 15 συμβολὴν scripsi συμβουλὴν LV ἐπιβολὴν Schm
 
 ἐκ τῶν ἰδίων ἐκείνοις πραγμάτων ὀνομαστότεροι ἑαυτῶν
 
-φανῆναι καὶ περιφανέστεροι.</p></div>
-
-<div type="textpart" subtype="chapter" n="48"><p>κἂν ὅθεν ἡμᾶς τις ἐκ <lb n="15"/>
+φανῆναι καὶ περιφανέστεροι.</p>
+         </div>
+         <div n="48" type="chapter">
+            <p>κἂν ὅθεν ἡμᾶς τις ἐκ <lb n="15"/>
 
 μικρῶν τὸ καταρχὰς μεγάλοι γεγόναμεν ἐξετάζῃ, οὐκ
 
@@ -2034,16 +1953,12 @@ Schm 15 συμβολὴν scripsi συμβουλὴν LV ἐπιβολὴν Schm
 τὸ ἐν Σαλαμῖνι καὶ Πλαταιᾶσι ναυμαχοῦντες καὶ πε-
 
 <note type="footnote">2 ὅδε V 6 ἐπίσης V 7 οὕτως V 9 βουλοίμεθα V</note>
-
-<note type="footnote">13 καὶ φιλονεικοῦμεν in marg L 2 15 ἡμᾶς τις ὅθεν coni
+               <note type="footnote">13 καὶ φιλονεικοῦμεν in marg L 2 15 ἡμᾶς τις ὅθεν coni
 
 Sckm 16 τὲ ante τὸ V ras 2 litt L | τοκαταρχὰς V
 
 20 ἂν scripsi οὖν LV Schm 26 καλοῖς?</note>
-
-
-
-<pb n="80"/>
+               <pb n="80"/>
 
 ζομαχοῦντες ἐπεδειξάμεθα καὶ μείζους ἑαυτῶν προση-
 
@@ -2055,9 +1970,10 @@ Sckm 16 τὲ ante τὸ V ras 2 litt L | τοκαταρχὰς V
 
 <lb n="5"/> καὶ γῆς, καὶ μέγιστον Ἀθηναῖοι παρὰ πᾶσιν ἔσχομεν
 
-ὄνομα.</p></div>
-
-<div type="textpart" subtype="chapter" n="49"><p>ταῦθ’ ἡμᾶς ὕψωσεν, ὦ Λακεδαιμόνιοι, καὶ
+ὄνομα.</p>
+         </div>
+         <div n="49" type="chapter">
+            <p>ταῦθ’ ἡμᾶς ὕψωσεν, ὦ Λακεδαιμόνιοι, καὶ
 
 μεγάλους πεποίηκεν, οὐχ ἅπερ οὗτοί φασι, κατὰ τῆς
 
@@ -2088,8 +2004,7 @@ Sckm 16 τὲ ante τὸ V ras 2 litt L | τοκαταρχὰς V
 <lb n="20"/> μείζους ἐγενόμεθα, οὐχ ὅν τρόπον οὗτοί φασιν οὐδ’
 
 ὅθεν φασίν, ἀλλ’ ὅθεν καὶ ὑμεῖς μάρτυρές ἐστε.</p>
-
-<p>50. Μὴ τοίνυν, ὦ ἄνδρες Λακεδαιμόνιοι, ἐθελήσητε
+            <p>50. Μὴ τοίνυν, ὦ ἄνδρες Λακεδαιμόνιοι, ἐθελήσητε
 
 τοῖς τούτων πεισθέντες λόγοις ἐξαφθῆναι αὐτίκα καὶ
 
@@ -2108,10 +2023,7 @@ Sckm 16 τὲ ante τὸ V ras 2 litt L | τοκαταρχὰς V
 scripsi e LV αὐτοῖς Schm 20 ἐγενόμεθα scripsi γινόμεθα
 
 LV Schm 21 οὐδ’ ὅθεν φασίν inserui e L om V Schm</note>
-
-
-
-<pb n="81"/>
+               <pb n="81"/>
 
 τῆς ἡμῶν ἀρετῆς, ὀλεῖται δὲ κακῶς ἡ Ἑλλὰς καὶ βάρ-
 
@@ -2125,9 +2037,10 @@ LV Schm 21 οὐδ’ ὅθεν φασίν inserui e L om V Schm</note>
 
 χρήμασι συνάραςθαι καὶ στρατῷ, καὶ τελέσουσι, νῦν
 
-δὲ ἡμῖν ἐφ’ ὑμᾶς.</p></div>
-
-<div type="textpart" subtype="chapter" n="51"><p>ἀλλ’ ὑμεῖς γε, ἢν σωφρονῆτε,
+δὲ ἡμῖν ἐφ’ ὑμᾶς.</p>
+         </div>
+         <div n="51" type="chapter">
+            <p>ἀλλ’ ὑμεῖς γε, ἢν σωφρονῆτε,
 
 ἀναμνησθήσεσθε ὧς νῦν πρώτως τῶν κινδύνων ἀνα-
 
@@ -2163,23 +2076,19 @@ LV Schm 21 οὐδ’ ὅθεν φασίν inserui e L om V Schm</note>
 
 πρᾶξαι καὶ Ἀθηναίοις καὶ Πελοποννησίοις καὶ πᾶσι
 
-τοῖς Ἕλλησι. <lb n="25"/></p>
-
-<p>52. Καὶ ἡμεῖς μὲν οὖν, ὦ Λακεδαιμόνιοι, δοῦ-
+τοῖς Ἕλλησι. <lb n="25"/>
+            </p>
+            <p>52. Καὶ ἡμεῖς μὲν οὖν, ὦ Λακεδαιμόνιοι, δοῦ-
 
 <note type="footnote">12 Thuc. V 27, 1 18 Plat. leg. ΧΙ p. 937D 19 Luc.
 
 Char. § 4</note>
-
-<note type="footnote">2 πάντων scripsi e V πάντες L Schm 12 ἐφῶ LV
+               <note type="footnote">2 πάντων scripsi e V πάντες L Schm 12 ἐφῶ LV
 
 16 ταράττουσι V 17 βασκαίνων V 19 κατ’ V sed τ᾿ in
 
 ras m2 23 θεόν V 24 πελοποννησίοις V sed οις corr m2</note>
-
-
-
-<pb n="82"/>
+               <pb n="82"/>
 
 ναι πρόφασιν ἐπὶ τὸν πόλεμον οὐδεμίαν βουλόμε-
 
@@ -2216,29 +2125,22 @@ ras m2 23 θεόν V 24 πελοποννησίοις V sed οις corr m2</not
 αὐτοὶ ἀντεμβαλοῦμεν εἰς τὴν αὐτοῦ μεθ’ ὁμοίου τοῦ
 
 τάχους καὶ τῆς παρασκευῆς.</p>
-
-<p>53. Εἴρηται καὶ ἡμῖν, ὦ Λακεδαιμόνιοι, καὶ τὰ
+            <p>53. Εἴρηται καὶ ἡμῖν, ὦ Λακεδαιμόνιοι, καὶ τὰ
 
 <lb n="20"/> πρὸς Κορινθίους καὶ τὰ πρὸς ὑμᾶς. δοῖεν δὲ οἱ κρείτ-
 
 τους, ἃ κοινὴ τοῖς Ἕλλησι συμφέρει, ταῦθ’ ὑμῖν παρα-
 
 στῆναι ποιῆσαι.</p>
-
-<note type="footnote">16 Xen. Hell. III 5,4</note>
-
-<note type="footnote">6 ἔχει V 9 ἐπιτρέπῃ scripsi ἐπιτρέποι L V Schm 11 ἦ
+            <note type="footnote">16 Xen. Hell. III 5,4</note>
+            <note type="footnote">6 ἔχει V 9 ἐπιτρέπῃ scripsi ἐπιτρέποι L V Schm 11 ἦ
 
 V 13 πολλὰ — 14 παραιτησάμενοι om V 14 σπονδαῖς
 
 scripsi e L σπουδαῖς Schm 18 καὶ om V 20 δοίη δὲ τὸ
 
 κρεῖττον V cf. p. 73, 24 21 συμφέροι V</note>
-
-</div></div>
-
-
-
-</body>
-  </text>
+         </div>
+      </body>
+   </text>
 </TEI>

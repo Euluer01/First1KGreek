@@ -1,99 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-    
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">De plenitudine</title>
-                <author>Galen</author>
-                <editor>Karl Gottlob Kühn</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De plenitudine</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0057.tlg050.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg050.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-                        <author>Galen</author>
-                        <editor>Karl Gottlob Kühn</editor>
-                        <imprint>
-                            <publisher>Knobloch</publisher>
-                            <pubPlace>Leipzig</pubPlace>
-                            <biblScope unit="vol">7</biblScope>
-                            <biblScope unit="pp" from="513" to="583">513-583</biblScope>
-                            <date>1824</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/hvd.hxpp8n?urlappend=%3Bseq=525">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg050.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Leipzig</pubPlace>
+                     <biblScope unit="vol">7</biblScope>
+                     <biblScope unit="pp" from="513" to="583">513-583</biblScope>
+                     <date>1824</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/hvd.hxpp8n?urlappend=%3Bseq=525">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg050.1st1K-grc1">
-                <pb n="513"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΠΛΗΘΟΥΣ ΒΙΒΛΙΟΝ.</head>
-                    <p>Οὔτε πολλάκις ὀνομάζοντας ἕτερον ὄνομα <lb/>τοῦ πλήθους μᾶλλον ἔστιν εὑρεῖν
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg050.1st1K-grc1">
+         <pb n="513"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΠΛΗΘΟΥΣ ΒΙΒΛΙΟΝ.</head>
+            <p>Οὔτε πολλάκις ὀνομάζοντας ἕτερον ὄνομα <lb/>τοῦ πλήθους μᾶλλον ἔστιν εὑρεῖν
                         ἅπαντας τοὺς νῦν σχεδὸν <lb/>ἰατροὺς, οὔτ’ ἀγνοοῦντας ἕτερόν τι τούτου
                         μᾶλλον. ὅσοι <lb/>γοῦν αὐτῶν οἷοί τέ εἰσι καὶ δοῦναι καὶ λαβεῖν λόγον, οἱ
                         <lb/>πλεῖστοι μὲν ἀποκρίνονται τοῖς <milestone unit="ed2page" n="323"/>ἐρομένοις ὅ τι ποτ’ οὖν <lb/>ὀνομάζουσι πλῆθος, ὡς ἐν τῷ πρὸς τὶ λέγεται
@@ -150,9 +157,9 @@
                         εἶναι κατὰ τὸ σῶμα τοῦ κάμνοντος, <lb/>ἀποκεχωρηκέναι μὲν ἤδη τοῦτον ἀπό τε
                         τῶν ἐμπειρικῶν ὀνομαζομένων <lb/>ἰατρῶν ἀπό τε τῶν μεθοδικῶν· ἤτοι δ’ ὡς
                         πρὸς <lb/>τὴν δύναμιν, ἢ ὡς τὰ ἀγγεῖα λέγειν τὸ πολύ. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>Καὶ τοίνυν καὶ ἡμῖν ὁ μὲν πρὸς τοὺς ἐμπειρικούς <lb/>τε καὶ μεθοδικοὺς
+         </div>
+         <div n="2" type="chapter">
+            <p>Καὶ τοίνυν καὶ ἡμῖν ὁ μὲν πρὸς τοὺς ἐμπειρικούς <lb/>τε καὶ μεθοδικοὺς
                         ἀναβεβλήσθω λόγος, ἐπὶ δὲ τοὺς <lb/>ἑτέρους ἴωμεν, ὅσοι σὺν λογισμῷ φασι τὴν
                         τέχνην μεταχειρίζεσθαι. <lb/>καίτοι γε ἔνιοι τῶν νῦν εἰς τοσοῦτον ἥκουσι
                         τόλμης, <lb/>ὡς ἐπιγράφεσθαι μὲν ἑαυτοῖς αἱρέσεως ὀνόματα, γινώσκειν <lb/>δὲ
@@ -183,7 +190,7 @@
                         τῆς κύστεως ἄλλη μὲν διάθεσίς ἐστι πλεῖστον <lb/>ὑγρὸν περιεχούσης, ἄλλη δὲ
                         ὀλίγον, ἢ βαρυνομένης. καὶ τοίνυν <lb/>καὶ τὴν ἔκκρισιν ἐπὶ μὲν τῆς διὰ τὸ
                         πεπληρῶσθαι τεινομένης <lb/>
-                        <milestone unit="ed2page" n="325"/>παμπόλλην ἔστιν ἰδεῖν, ἐπὶ δὲ τῆς
+               <milestone unit="ed2page" n="325"/>παμπόλλην ἔστιν ἰδεῖν, ἐπὶ δὲ τῆς
                         βαρυνομένης <lb/>ὀλιγίστην μὲν, ἀλλὰ πυκνοτάτην· οὐ γὰρ ἀναμένει <lb/>τὸν
                         τῆς πληρώσεως χρόνον, ἀλλὰ εὐθὺς ἀποῤῥῖψαι <lb/>ποθεῖ τὸ λυποῦν, ὥσπερ
                         κᾀπειδὰν ὑπὸ τῆς ποιότητος <lb/>αὐτοῦ δάκνηται. καὶ γὰρ τότε συνεχῆ ποιεῖται
@@ -225,10 +232,10 @@
                         δουλείῳ δόγματι <lb/>οὐδὲν ἱκανόν. ἐάσαντες οὖν ἤδη τούτους, μᾶλλον δ’, εἰ
                         χρὴ <pb n="522"/> τἀληθὲς εἰπεῖν, ἀπαλλάττεσθαι παρακελεύσαντες, ὅστις ἂν
                         <lb/>ἐλεύθερος ᾖ καὶ ἀληθείας ἑταῖρος, ἐκείνῳ διαλεξώμεθα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>
-                        <milestone unit="ed2page" n="326"/>Δύο γὰρ ἐννοίας τε καὶ σχέσεις ὑπεθέμεθα
+         </div>
+         <div n="3" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="326"/>Δύο γὰρ ἐννοίας τε καὶ σχέσεις ὑπεθέμεθα
                         <lb/>τοῦ πλήθους, τὴν μὲν ὡς πρὸς ἰσχὺν καὶ δύναμιν <lb/>τοῦ βαστάζοντος
                         αὐτὸ, τὴν δὲ ὡς πρὸς τὴν ὑποδεχομένην <lb/>χώραν. καὶ ὑποθέμενοι δὲ ταῦτα,
                         ὁπόσαι τέ εἰσιν ἅπασαι <lb/>τοῦ ζώου δυνάμεις, ὅπως τε τὸ καθ’ ἑκάστην αὐτῶν
@@ -316,7 +323,7 @@
                         <lb/>οὐδὲ γὰρ οὐδ’ οἱ πολλοὶ τῶν Ἡροφιλείων, οὐδ’ οἱ νεώτεροι <lb/>Στωϊκοὶ
                         λέγουσί τινα ἀπόδειξιν τοῦ τὸ μὲν πνεῦμα καὶ τὸ <lb/>πῦρ συνέχειν ἑαυτό τε
                         καὶ τὰ ἄλλα, τὸ δὲ ὕδωρ καὶ τὴν <lb/>
-                        <milestone unit="ed2page" n="328"/>γῆν ἑτέρου δεῖσθαι τοῦ συνέξοντος. ὅσον
+               <milestone unit="ed2page" n="328"/>γῆν ἑτέρου δεῖσθαι τοῦ συνέξοντος. ὅσον
                         μὲν γὰρ <lb/>ἐπὶ τῇ προχείρῳ φαντασίᾳ, τὸ μὲν σκληρὸν καὶ ἀντίτυπον <lb/>καὶ
                         πυκνὸν ἑαυτὸ συνέχειν λέγοιτο, τὸ δ’ ἀραιόν τε ﻿<pb n="528"/> καὶ μαλακὸν
                         καὶ ὑπεῖκον ἑτέρου δεῖσθαι τοῦ συνέξοντος. <lb/>οὐ μόνον δὲ οὐδεμίαν
@@ -333,11 +340,10 @@
                         ἀπορῶν μὲν ἐν <lb/>παμπόλλοις ἀποδείξεις προχείρους ἔχουσιν, ἀποφαινόμενος
                         <lb/>δὲ ἐν ἄλλοις, ὧν αἵ τ’ ἀποδείξεις ἀδύνατοι ἥ θ’ ὑπόθεσις <lb/>ψευδής.
                     </p>
-                </div>
-                <pb n="529"/>
-
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>Ἀπολιπόντες οὖν καὶ τούτους αὖθις λέγωμεν, <lb/>ὡς τὸ μὲν διατείνεσθαι καὶ
+         </div>
+         <pb n="529"/>
+         <div n="4" type="chapter">
+            <p>Ἀπολιπόντες οὖν καὶ τούτους αὖθις λέγωμεν, <lb/>ὡς τὸ μὲν διατείνεσθαι καὶ
                         ῥήγνυσθαι διὰ πλῆθος <lb/>αὐτῶν τῶν περιεχόντων ἀγγείων ἐστὶ πάθος, οὐ
                         δυνάμεώς <lb/>τινος· τὸ δὲ βαρύνεσθαι δυνάμεως αἰσθητικῆς· οὐ γὰρ δὴ
                         <lb/>ἁπλῶς γε ταύτης πάσης οὐδὲ τοῦτο, τῆς γέ τοι φυσικῆς δυνάμεως <lb/>οὐκ
@@ -393,9 +399,9 @@
                         ἔν <lb/>ὁτιοῦν μόριον ἢ καὶ πλείω, προπετῶς ἀποφαίνονται περὶ <lb/>πλήθους.
                         ἀλλ’ εἰ βούλει κατὰ τὸ παρὸν ἐάσαντες ἁπάσας <lb/>ταύτας τὰς ἀπορίας, ἐν
                         τοῖς εὐπορωτέροις γυμνασθῶμεν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>Εὐπορώτερον δ’ εἶναί μοι δοκεῖ, πάλιν ἀπὸ <lb/>βάρους ἄρξασθαι· φαίνεται γὰρ
+         </div>
+         <div n="5" type="chapter">
+            <p>Εὐπορώτερον δ’ εἶναί μοι δοκεῖ, πάλιν ἀπὸ <lb/>βάρους ἄρξασθαι· φαίνεται γὰρ
                         τοῦτο τοῦ πρὸς τὴν αἰσθητικὴν <lb/>δύναμιν πλήθους ἐναργέστατον εἶναι
                         γνώρισμα. πότερον ﻿<pb n="533"/> οὖν ἀληθές ἐστιν ἀποφαίνεσθαι τῷ πλήθει
                         βάρος ἀκολουθεῖν <lb/>ἔξ ἀνάγκης, ἢ τὸ βάρος ἀνάγκῃ προηγεῖσθαι πλήθους;
@@ -404,7 +410,7 @@
                         τούτῳ βάρους αἴσθησιν <lb/>ὑπάρχειν, ἐν ἐκείνοις τοῖς μέρεσι δηλονότι, ἐν
                         οἷσπερ ἂν ᾖ <lb/>τὸ πλῆθος, αἰσθητικοῖς ὑπάρχουσιν· οὐκ ἀληθὲς δὲ τὸ, βάρους
                         <lb/>ὄντος ἔν τινι μέρει, πλῆθος ὑπάρχειν ἐν ἐκείνῳ χυμῶν. <lb/>
-                        <milestone unit="ed2page" n="330"/>ἐγχωρεῖ γὰρ, ὑπὸ τῶν στερεῶν μορίων
+               <milestone unit="ed2page" n="330"/>ἐγχωρεῖ γὰρ, ὑπὸ τῶν στερεῶν μορίων
                         βαρύνεσθαι τὴν <lb/>δύναμιν ἀῤῥωστοῦσαν, ὡς ἐν ταῖς παραλύσεσιν. ὑπὸ γὰρ
                         <lb/>(τῆς) τῶν μυῶν (ἐν) ὅλου κώλου κινουμένου, τῶν μυῶν ἀῤῥώστων
                         <lb/>γινομένων κινεῖν καὶ μεταφέρειν αὐτὸ, βάρους αἴσθησις <lb/>γίγνεται
@@ -464,9 +470,9 @@
                         ἡμᾶς δυνάμεων ἐπιστήμην ἔχειν ἀναγκαῖόν <lb/>ἐστιν, ἀνατομῆς τε καὶ φύσεως
                         ἁπάντων ἀκριβῶς τῶν <lb/>τοῦ ζώου μορίων· ἐκ τούτου γὰρ ὁρμώμενος ἴσως ἄν
                         ποτε <lb/>ἐξεύροιτο σημεῖα μορίου πληθωρικοῦ. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>Εἰ δέ τις ἀληθείας μὲν οὐ πεφρόντικεν, <lb/>ἐξαπατᾷν δὲ βούλεται τοὺς πέλας,
+         </div>
+         <div n="6" type="chapter">
+            <p>Εἰ δέ τις ἀληθείας μὲν οὐ πεφρόντικεν, <lb/>ἐξαπατᾷν δὲ βούλεται τοὺς πέλας,
                         ὅτι εἴη γνούς τι σοφὸν, <lb/>ἕτοιμεν τούτῳ, κᾂν εἰ μηδὲν ἄλλο, τὰ γοῦν
                         Ἐρασιστράτου <lb/>κατὰ τὸ πρῶτον ὑγιεινῶν αὐτὸν μαθεῖν· ἐν ἄλλῳ μὲν γὰρ
                         <lb/>οὐδὲ ἐπεχείρησε πλήθους εἰπεῖν σημεῖα. προσχῶμεν οὖν αὐτοῦ <lb/>τοῖς
@@ -546,14 +552,14 @@
                         <lb/>μεταχεῖσθαι τὸ αἷμα διὰ τὸ μὴ χωρεῖσθαι πρὸς τῶν φλεβῶν;
                         <lb/>ἐπιλελησμένου παντάπασίν ἐστιν, ὡς γίγνεταί ποτε ῥῆξις ἀγγείου <lb/>διὰ
                         πλῆθος, ἵνα παραλίπω τὴν ἄνευ μεταχύσεως ἀναστόμωσιν <lb/>
-                        <milestone unit="ed2page" n="333"/>ἐναργῶς πολλάκις εἰς αἰσθητὰς εὐρυχωρίας
+               <milestone unit="ed2page" n="333"/>ἐναργῶς πολλάκις εἰς αἰσθητὰς εὐρυχωρίας
                         <lb/>γιγνομένην ἐντέρων καὶ γαστρὸς καὶ στομάχου καὶ φάρυγγος <lb/>καὶ
                         στόματος. ἀλλὰ τὸ μὲν ἐν τῇ διαιρέσει τῶν λόγων ﻿<pb n="543"/> ἐλλιπὲς οὐκ
                         ἐν τούτῳ μόνον Ἐρασιστράτῳ σύνηθες, ἀλλὰ <lb/>καὶ κατ’ ἄλλα συντάγματα
                         σχεδὸν ἅπαντα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>Τὸ δ’ οὖν εἰρημένον, ὁποῖόν ποτ’ ἂν ᾖ, <lb/>πάλιν ἐπισκεψώμεθα. πληρουμένων
+         </div>
+         <div n="7" type="chapter">
+            <p>Τὸ δ’ οὖν εἰρημένον, ὁποῖόν ποτ’ ἂν ᾖ, <lb/>πάλιν ἐπισκεψώμεθα. πληρουμένων
                         τῶν ἀγγείων μετρίως, <lb/>ἑαυτῶν εὐτονώτεροι φαίνονται. πότερον ὦ
                         Ἐρασίστρατε κᾄν <lb/>μηδὲ συναύξηται τῷ πλήθει τοῦ αἵματος ἡ ῥώμη τοῦ
                         σώματος, <lb/>ἢ καὶ αὐτῆς συναυξανομένης; ἐγὼ μὲν γὰρ ἀναγκαιότατον
@@ -629,10 +635,10 @@
                         οὕτως ἡ ἑλκώδης αἴσθησις ἕπεται δακνώδει <lb/>ποιότητι· καὶ διὰ τοῦτο
                         συνίσταται πολλοῖς ἐνίοτε καὶ <lb/>καθ’ ὅλον τὸ σῶμα, μὴ ὅτι πληθώραν
                         ἔχουσιν, ἀλλὰ μηδὲ <lb/>τὸ σύμμετρον αἷμα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="8">
-                    <p>
-                        <milestone unit="ed2page" n="335"/>Καὶ εἴπερ ταῦθ’ οὕτως ἔχει, καθάπερ οὖν
+         </div>
+         <div n="8" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="335"/>Καὶ εἴπερ ταῦθ’ οὕτως ἔχει, καθάπερ οὖν
                         <lb/>ἔχει, καιρὸς ἤδη διορίσασθαι περί τινος ὧν ἔμπροσθεν ἀνεβαλλόμεθα,
                         <lb/>ἐπειδὴ ἐσκοπούμεθα μέχρι τοῦ δεῦρο τὰ ὑπ’ <lb/>Ἐρασιστράτου γεγραμμένα
                         σημεῖα. τὸ γάρτοι πλῆθος, εἴτ’ <lb/>οὖν πρὸς τὴν δύναμιν, εἴτε πρὸς τὴν τῶν
@@ -676,7 +682,7 @@
                             <pb n="551"/> κοινόν τι σύμπτωμα τοῖς ἀνθρώποις ἐστὶν, ἡ δὲ <lb/>τῆς
                         ἀνίας ἰδέα πάμπολυ διαλλάττουσα· τῷ μὲν γὰρ βαρύνεσθαι <lb/>χωρὶς τοῦ
                         νύττεσθαι, τῷ δὲ νύττεσθαι χωρὶς τοῦ <lb/>
-                        <milestone unit="ed2page" n="336"/>βαρύνεσθαι συμβέβηκεν. ὅλως δ’ ἄν τις τὸ
+               <milestone unit="ed2page" n="336"/>βαρύνεσθαι συμβέβηκεν. ὅλως δ’ ἄν τις τὸ
                         νύττεσθαι, <lb/>ἢ δάκνεσθαι, ἢ ὁπωσοῦν ἀνιῶν φορτίον καλῇ καὶ πλῆθος,
                         <lb/>ἀναγκασθήσεταί ποτε καὶ μίαν ἄκανθαν ἢ βελόνην λεπτοτάτην <lb/>καλεῖν
                         φορτίον, οὗ τί ἂν εἴη γελοιότερον; ἔστιν οὖν ἄτοπα <lb/>ταῦτα καὶ παρὰ τὰς
@@ -722,7 +728,7 @@
                         περιέχουσαν ἑαυτοὺς χώραν, οὐ τὴν δύναμιν τῶν <lb/>(περιεχομένων) σωμάτων.
                         Ἐρασίστρατος δὲ ἐν τῷ προτέρῳ <lb/>τῶν ὑγιεινῶν, αὐτὴν μὲν τὴν γένεσιν τῆς
                         πληθώρας διερχόμενος, <lb/>ἐναργέστατα διδάσκει τὴν τρίτην τῶν εἰρημένων <lb/>
-                        <milestone unit="ed2page" n="337"/>διάθεσιν, ἑξῆς δὲ ἐπὶ τὰ γνωρίσματα
+               <milestone unit="ed2page" n="337"/>διάθεσιν, ἑξῆς δὲ ἐπὶ τὰ γνωρίσματα
                         τρεπόμενος, οὐ <lb/>μᾶλλόν τι ταύτης ἢ τὰ τῶν ἄλλων ἔγραψεν. ἡ μὲν γὰρ
                         <lb/>τάσις ταύτης μόνης, ὅπερ ἐκεῖνος ὠνόμασε παρεμπίμπλασθαι· <lb/>τὸ δὲ
                         ἑλκώδη γενέσθαι τὴν αἴσθησιν οὔτε τοῦ προειρημένου <lb/>πλήθους οὔτε τοῦ
@@ -764,11 +770,10 @@
                         ἄπορον παντοίως <lb/>ἐστὶ, σχολῇ γ’ ἂν ἐπὶ τῶν ἔργων ἀπὸ ταὐτομάτου
                         κατορθωθείη <lb/>μήτε προδιασκεψαμένοις τι περὶ αὐτοῦ μήτ’ <lb/>ἐξευροῦσιν.
                     </p>
-                </div>
-                <pb n="557"/>
-
-                <div type="textpart" subtype="chapter" n="9">
-                    <p>Ἀπὸ γοῦν τῶν ἐμπειρικῶν αὖθις ἀρξώμεθα <lb/>τοῦ περὶ πλήθους λόγου, ἐπειδὴ
+         </div>
+         <pb n="557"/>
+         <div n="9" type="chapter">
+            <p>Ἀπὸ γοῦν τῶν ἐμπειρικῶν αὖθις ἀρξώμεθα <lb/>τοῦ περὶ πλήθους λόγου, ἐπειδὴ
                         δοκοῦσιν ἀσφαλῶς πάνυ τὰς <lb/>εἰρημένας ἀπορίας ἀποδιδράσκειν,
                         ὁμολογήσαντες αὐτοὶ μὲν <lb/>μηδ’ ὅλως <milestone unit="ed2page" n="338"/>ἐπίστασθαι περὶ τῆς τοῦ πλήθους οὐσίας, <lb/>ἐπὶ δὲ τοιᾷδέ τινι συνδρομῇ
                         τετηρῆσθαι φάσκοντες ὠφελοῦσαν <lb/>ἀφαίρεσιν αἵματος, ἣν συνδρομὴν
@@ -816,7 +821,7 @@
                         ἅμα τὰ πρὸς ἡμῶν λεγόμενα. νυνὶ γὰρ, ἔφην, <lb/>ἀναμιμνήσκων ἐμαυτὸν, οὓς
                         εἶδον ὑφ’ ὑμῶν φλεβοτομηθέντας, <lb/>οὐδενὸς ἐξ αὐτῶν εὐπορῶ τοῦ τὴν ἐν
                         τοιούτοις συμπτώμασιν <lb/>ἅπασαν ἔχοντος συνδρομήν· ἀλλ’ ὁ μέν τις, <lb/>
-                        <milestone unit="ed2page" n="339"/>ὅτι κοπώδης ἦν, ἐφλεβοτομήθη, μηδὲν ἄλλο
+               <milestone unit="ed2page" n="339"/>ὅτι κοπώδης ἦν, ἐφλεβοτομήθη, μηδὲν ἄλλο
                         ἔχων· <lb/>ὁ δὲ, ὅτι πυρέττων σφοδρῶς, ἢ ἀλγῶν ὀφθαλμοὺς, ἢ κεφαλὴν, <lb/>ἢ
                         αἱμοῤῥοΐδας ἐπεσχημένος, ἢ καταμήνια γυνὴ, οὐ <lb/>πάντα δὲ, ὅσαπερ ἡ
                         πληθωρικὴ συνδρομὴ βούλεται συνελθεῖν. <lb/>εἰ μὲν οὖν ἁπάσας τὰς διαθέσεις,
@@ -830,9 +835,9 @@
                         <lb/>οὐ σχολὴν ἀδολεσχεῖν ἄγω νῦν, ἔγνων μὴ νῦν, ἐν δὲ τῷ <lb/>περὶ
                         φλεβοτομίας λόγῳ τοὺς σκοποὺς ἅπαντας ἐπιδεῖξαι προῄρημαι <lb/>τοῦ
                         βοηθήματος, οὓς οὐδ’ αὐτούς τις ἀκριβῶς τε καὶ <lb/>διωρισμένως ἔγραψε. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="10">
-                    <p>Ἐάσας οὖν ἐν τῷ παρόντι τὸ πρὸς τοὺς <lb/>ἐμπειρικοὺς, αὖθις ἐπάνειμι πρὸς
+         </div>
+         <div n="10" type="chapter">
+            <p>Ἐάσας οὖν ἐν τῷ παρόντι τὸ πρὸς τοὺς <lb/>ἐμπειρικοὺς, αὖθις ἐπάνειμι πρὸς
                         τοὺς λογικοὺς, ἕκαστον <lb/>τῶν συμπτωμάτων ὧν ἔγραψαν ἐπισκοπούμενος. ἔνια
                         μὲν <lb/>γὰρ αὐτῶν τοῦ πρὸς τὴν δύναμίν εἰσι πλήθους, ἔνια δὲ τοῦ <lb/>κατὰ
                         τὸ ἔγχυμα, τινὰ δὲ οὐχ ἁπλῶς ἐστι σημεῖα πλήθους, <lb/>ἀλλὰ τοιοῦδε πλήθους,
@@ -857,7 +862,7 @@
                         τε παρεγχύματα καλούμενα καὶ τὰ ὑγρὰ, μὴ <lb/>συναυξηθείη δὲ ἡ δύναμις, εἴτε
                         τούτων ὡσαύτως ἐχόντων, <lb/>ἡ δύναμις ἀσθενεστέρα γένοιτο. δύναιτο δ’ ἄν
                         ποτε καὶ <lb/>ἄμφω συνελθεῖν, ὥστε τὴν δύναμιν ἀῤῥωστοτέραν γενέσθαι, ﻿<pb n="563"/>
-                        <milestone unit="ed2page" n="340"/>καὶ τοὺς χυμοὺς ἅμα τοῖς παρεγχύμασιν ἢ
+               <milestone unit="ed2page" n="340"/>καὶ τοὺς χυμοὺς ἅμα τοῖς παρεγχύμασιν ἢ
                         πλέονας ἢ <lb/>ἐλάττους εἶναι, θάτερον αὐτῶν ὁποτερονοῦν, ἀτονώτεραι αἱ
                         <lb/>ἐνέργειαι καὶ διὰ ταῦτα <milestone unit="ed1page" n="350"/>γίγνονται,
                         καθ’ ἕν τε συμβαῖνον <lb/>ἕκαστον αὐτῶν, καὶ κατὰ δύο, καὶ πλείω, καὶ πάνθ’
@@ -949,7 +954,7 @@
                         <lb/>πληρούμενον, ἄνευ τοῦ προγενέσθαι τάσιν αὐτῷ βιαίαν· <pb n="569"/> εἰ
                         δ’ εἰς ὄγκον μὲν αἴροιτο, μηδέπω δέ γε βιαίως, οὐδέπω <lb/>τείνεται· διὸ τῶν
                         ὄγκων ὁ μὲν σὺν τῇ τάσει πλέον ἐνδείξεται <lb/>
-                        <milestone unit="ed2page" n="342"/>πλῆθος· ὁ δ’ ἄνευ ταύτης, ἧττον. πῶς οὖν
+               <milestone unit="ed2page" n="342"/>πλῆθος· ὁ δ’ ἄνευ ταύτης, ἧττον. πῶς οὖν
                         ἐνίοτε <lb/>τὴν ἀρχὴν μὲν οὐδεὶς ὄγκος φαίνεται κατὰ τὰς φλέβας, ἡ τονώδης
                         <lb/>δέ ἐστιν ἰσχυρὰ αἴσθησις; χρὴ γὰρ δήπου τοῖς μεγίστοις <lb/>ὄγκοις
                         ἐζεῦχθαι τὴν τοῦ τείνεσθαι διάθεσιν. ἢ διότι ἔστιν <lb/>ὅτε ὁ ὄγκος ἐν ταῖς
@@ -975,9 +980,9 @@
                         κατὰ φύσιν ἑκάστω, τὸν δὲ ἕτερον, ἐν ᾧ πρὸς τούτῳ <lb/>τείνεσθαι συμβαίνει,
                         μηδ’ ἑτέρου τούτων ὁρωμένου ἐν τῷ <lb/>πρὸς τὴν δύναμιν πλήθει. περὶ μὲν δὴ
                         τούτων ἱκανὰ καὶ <lb/>ταῦτα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="11">
-                    <p>Τὸ δὲ ἔρευθος, οὗ καὶ αὐτοῦ μνημονεύουσιν, <lb/>οὐ πλήθους μὲν ἁπλῶς, ἀλλ’
+         </div>
+         <div n="11" type="chapter">
+            <p>Τὸ δὲ ἔρευθος, οὗ καὶ αὐτοῦ μνημονεύουσιν, <lb/>οὐ πλήθους μὲν ἁπλῶς, ἀλλ’
                         αἱματικοῦ πλήθους γνώρισμα. <lb/>δεήσεται δὲ καὶ αὐτὸ τῶν διορισμῶν, ὧνπερ ὁ
                         ὄγκος· <pb n="571"/> εἰ γὰρ διά τι τῶν ἔξωθεν, οἷον ἥλιον, ἢ λουτρὸν, ἢ
                         γυμνάσιον, <lb/>ἢ πορείαν, ἢ ἁπλῶς εἰπεῖν θερμασίαν, οὕτω δὲ καὶ <lb/>θυμὸν,
@@ -1086,7 +1091,7 @@
                         ὁπωσοῦν ἐξευρεῖν, ἀλλὰ περὶ πλήθους ﻿<pb n="578"/> σκέψασθαι προὔκειτο·
                         πλεονεξία δέ ἐστι τοῦτο τῶν καθ’ <lb/>ὅλον τὸ σῶμα τοῦ ζώου χυμῶν. οὔτ’ οὖν
                         τῶν κατὰ <lb/>
-                        <milestone unit="ed2page" n="345"/>μέρος ὄγκων οὔτε κακοχυμίας ἀκούειν χρὴ
+               <milestone unit="ed2page" n="345"/>μέρος ὄγκων οὔτε κακοχυμίας ἀκούειν χρὴ
                         ποθεῖν ἐν <lb/>τῷ λόγῳ τῷδε τὰς ἰδέας, ἀλλ’ ὅταν ἤτοι κατὰ τὴν ἀρχαίαν
                         <lb/>ἀναλογίαν αὐξηθῶσιν ἅπαντες, ἤ τινα βραχεῖαν ὑπεροχὴν ἐξ <lb/>αὐτῶν εἷς
                         λάβῃ. τὸ μὲν οὖν αἷμα παμπόλλην ὑπεροχὴν δύναται <lb/>λαβεῖν ἐν ταῖς
@@ -1168,8 +1173,7 @@
                         ἀθροίζουσι τὸ πλῆθος· ἐν δὲ ταῖς θερμαῖς καὶ ξηραῖς <lb/>ὥραις καὶ χώραις
                         ἧττον· οὕτως δὲ καὶ οἱ μὲν πυκνοὶ τὴν <lb/>ἐπιφάνειαν μᾶλλον, οἱ δ’ ἀραιοὶ
                         σπανιώτερον. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

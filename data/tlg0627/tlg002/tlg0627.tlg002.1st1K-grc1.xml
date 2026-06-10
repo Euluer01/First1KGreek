@@ -1,100 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">De aere, aquis, locis</title>
-                <author>Hippocrates</author>
-                <editor>Émile Littré</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De aere, aquis, locis</title>
+            <author>Hippocrates</author>
+            <editor>Émile Littré</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0627.tlg002.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0627.tlg002.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="fre">Oeuvres complètes d'Hippocrate</title>
-                        <author>Hippocrates</author>
-                        <editor>Émile Littré</editor>
-                        <imprint>
-                            <publisher>Baillière</publisher>
-                            <pubPlace>Paris</pubPlace>
-                            <biblScope unit="volume">2</biblScope>
-                            <biblScope unit="pp" from="12" to="92">12-92</biblScope>
-                            <date>1840</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/ucm.5321352185?urlappend=%3Bseq=72">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0627.tlg002.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="fre">Oeuvres complètes d'Hippocrate</title>
+                  <author>Hippocrates</author>
+                  <editor>Émile Littré</editor>
+                  <imprint>
+                     <publisher>Baillière</publisher>
+                     <pubPlace>Paris</pubPlace>
+                     <biblScope unit="volume">2</biblScope>
+                     <biblScope unit="pp" from="12" to="92">12-92</biblScope>
+                     <date>1840</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/ucm.5321352185?urlappend=%3Bseq=72">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language><language ident="lat">Latin</language><language ident="fre">French</language>            
-                <language ident="lat">Latin</language>
-                <language ident="fre">French</language>
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0627.tlg002.1st1K-grc1">
-                <pb n="12"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΠΕΡΙ ΑΕΡΩΝ, ΥΔΑΤΩΝ, ΤΟΠΩΝ.</head>
-                    <p>1. Ἰητρικὴν ὅστις βούλεται ὀρθῶς ζητέειν, τάδε χρὴ ποιέειν· <lb/>πρῶτον μὲν
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+            <language ident="fre">French</language>
+            <language ident="lat">Latin</language>
+            <language ident="fre">French</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0627.tlg002.1st1K-grc1">
+         <pb n="12"/>
+         <div n="1" type="chapter">
+            <head>ΠΕΡΙ ΑΕΡΩΝ, ΥΔΑΤΩΝ, ΤΟΠΩΝ.</head>
+            <p>1. Ἰητρικὴν ὅστις βούλεται ὀρθῶς ζητέειν, τάδε χρὴ ποιέειν· <lb/>πρῶτον μὲν
                         ἐνθυμέεσθαι τὰς ὥρας τοῦ ἔτεος, ὅ τι δύναται ἀπεργάζεσθαι <lb/>ἑκάστη· οὐ
                         γὰρ ἐοίκασιν οὐθὲν, ἀλλὰ πουλὺ διαφέρουσιν αὐταί <lb/>τε ἑωυτέων καὶ ἐν τῇσι
                         μεταβολῇσιν· ἔπειτα δὲ τὰ πνεύματα <lb/>τὰ θερμά τε καὶ τὰ ψυχρά· μάλιστα
@@ -113,11 +123,10 @@
                         καὶ ψυχρή· καὶ τὴν <lb/>δίαιταν τῶν ἀνθρώπων, ὁκοίῃ ἥδονται, πότερον
                         φιλοπόται καὶ ἀριστηταὶ <lb/>καὶ ἀταλαίπωροι, ἢ φιλογυμνασταί τε καὶ
                         φιλόπονοι, καὶ <lb/>ἐδωδοὶ καὶ ἄποτοι. </p>
-                </div>
-                <pb n="14"/>
-
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>2. Καὶ ἀπὸ τουτέων χρὴ ἐνθυμέεσθαι ἕκαστα. Εἰ γὰρ ταῦτα εἰδείη <lb/>τις
+         </div>
+         <pb n="14"/>
+         <div n="2" type="chapter">
+            <p>2. Καὶ ἀπὸ τουτέων χρὴ ἐνθυμέεσθαι ἕκαστα. Εἰ γὰρ ταῦτα εἰδείη <lb/>τις
                         καλῶς, μάλιστα μὲν πάντα, εἰ δὲ μὴ, τά γε πλεῖστα, οὐκ ἂν <lb/>αὐτὸν
                         λανθάνοι ἐς πόλιν ἀφικνεόμενον, ἧς ἂν ἄπειρος ᾖ, οὔτε <lb/>νουσήματα
                         ἐπιχώρια, οὔτε τῶν κοινῶν ἡ φύσις ὁκοίη τίς ἐστιν· <lb/>ὥστε μὴ ἀπορέεσθαι
@@ -134,9 +143,9 @@
                         <lb/>εἶναι, εἰ μετασταίη τῆς γνώμης, μάθοι ἂν ὅτι οὐκ ἐλάχιστον <lb/>μέρος
                         ξυμβάλλεται ἀστρονομίη ἐς ἰητρικὴν, ἀλλὰ πάνυ <lb/>πλεῑστον. Ἅμα γὰρ τῇσιν
                         ὥρῃσι καὶ αἱ κοιλίαι μεταβάλλουσι <lb/>τοῖσιν ἀνθρώποισιν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>3. Ὅκως δὲ χρὴ ἕκαστα τῶν προειρημένων σκοπέειν καὶ βασανίζειν, <lb/>ἐγὼ
+         </div>
+         <div n="3" type="chapter">
+            <p>3. Ὅκως δὲ χρὴ ἕκαστα τῶν προειρημένων σκοπέειν καὶ βασανίζειν, <lb/>ἐγὼ
                         φράσω σαφέως. Ἥτις μὲν πόλις πρὸς τὰ πνεύματα <lb/>κέεται τὰ θερμά· ταῦτα δ᾿
                         ἔσται μεταξὺ τῆς τε χειμερινῆς ἀνατολῆς <pb n="16"/> τοῦ ἡλίου καὶ τῶν
                         δυσμέων τῶν χειμερινῶν· καὶ αὐτέῃ ταῦτα <lb/>τὰ πνεύματά ἐστι ξύννομα, τῶν
@@ -162,9 +171,9 @@
                         ὁκόταν ἐξαίφνης ἡλιωθέωσι τὴν κεφαλὴν, <lb/>ἢ ῥιγώσωσιν. Ταῦτα μὲν τὰ
                         νουσήματα αὐτέοισιν ἐπιχώριά <lb/>ἐστιν· χωρὶς δὲ, ἤν τι πάγκοινον κατάσχῃ
                         νούσημα ἐκ μεταβολῆς <lb/>τῶν ὡρέων, καὶ τουτέου μετέχουσιν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>4 Ὁκόσαι δ᾿ ἀντικέονται τουτέων πρὸς τὰ πνεύματα τὰ ψυχρὰ, μεταξὺ <lb/>τῶν
+         </div>
+         <div n="4" type="chapter">
+            <p>4 Ὁκόσαι δ᾿ ἀντικέονται τουτέων πρὸς τὰ πνεύματα τὰ ψυχρὰ, μεταξὺ <lb/>τῶν
                         δυσμέων τῶν θερινῶν τοῦ ἡλίου καὶ τῆς ἀνατολῆς τῆς θερινῆς, <lb/>καὶ αὐτέῃσι
                         ταῦτα τὰ πνεύματα ἐπιχώριά ἐστιν, τοῦ δὲ νότου καὶ <lb/>τῶν θερμῶν πνευμάτων
                         σκέπη, ὧδε ἔχει περὶ τῶν πόλιων τουτέων. <lb/>Πρῶτον μὲν τὰ ὅδατα σκληρά τε
@@ -198,12 +207,12 @@
                         ᾖ· ἔπειτα, προϊούσης τῆς ἡλικίης, ἀφανίζονται· <lb/>ἡβῶσί τε ὀψὲ ἐν ταύτῃ τῇ
                         πόλει. Περὶ μὲν οὖν τῶν θερμῶν <lb/>πνευμάτων καὶ τῶν ψυχρῶν καὶ τῶν πόλιων
                         τουτέων ὧδε ἔχει ὡς <lb/>προείρηται. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>5. Ὁκόσαι δὲ κέονται πρὸς τὰ πνεύματα τὰ μεταξὺ τῶν θερινῶν <lb/>ἀνατολέων
+         </div>
+         <div n="5" type="chapter">
+            <p>5. Ὁκόσαι δὲ κέονται πρὸς τὰ πνεύματα τὰ μεταξὺ τῶν θερινῶν <lb/>ἀνατολέων
                         τοῦ ἡλίου καὶ τῶν χειμερινῶν, καὶ ὁκόσαι τὸ ἐναντίον <lb/>τουτέων, ὧδε ἔχει
                         περὶ αὐτέων.</p>
-                    <p>Ὁκόσαι μὲν πρὸς τὰς ἀνατολὰς τοῦ ἡλίου κέονται, ταύτας εἰκὸς <lb/>εἶναι
+            <p>Ὁκόσαι μὲν πρὸς τὰς ἀνατολὰς τοῦ ἡλίου κέονται, ταύτας εἰκὸς <lb/>εἶναι
                         ὑγιεινοτέρας τῶν πρὸς τὰς ἄρκτους ἐστραμμένων, καὶ τῶν πρὸς <lb/>τὰ θερμὰ,
                         ἢν καὶ στάδιον τὸ μεταξὺ ᾖ. Πρότερον μὲν γὰρ μετριώτερον <lb/>ἔχει τὸ θερμὸν
                         καὶ τὸ ψυχρόν. Ἔπειτα τὰ ὕδατα ὁκόσα πρὸς <lb/>τὰς τοῦ ἡλίου ἀνατολάς ἐστι,
@@ -219,9 +228,9 @@
                         πρὸς τὰ θερμὰ τὰ πνεύματα ἐστραμμένῃσιν. <lb/>Αἵ τε γυναῖκες αὐτόθι
                         ἐναρικύμονές εἰσι σφόδρα, καὶ τίκτουσι <lb/>ῥηϊδίως. Περὶ μὲν τουτέων ὦδε
                         ἔχει. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>6. Ὁκόσαι δὲ πρὸς τὰς δύσιας κέονται, καὶ αὐτέῃσίν ἐστι σκέπη <lb/>τῶν
+         </div>
+         <div n="6" type="chapter">
+            <p>6. Ὁκόσαι δὲ πρὸς τὰς δύσιας κέονται, καὶ αὐτέῃσίν ἐστι σκέπη <lb/>τῶν
                         πνευμάτων τῶν ἀπὸ τῆς ἠοῦς πνεόντων, τά τε θερμὰ πνεύματα <lb/>παραῤῥέει καὶ
                         τὰ ψυχρὰ ἀπὸ τῶν ἄρκτων, ἀνάγκη ταύτας τὰς <lb/>πόλιας θέσιν κέεσθαι
                         νοσερωτάτην· πρῶτον μὲν γὰρ τὰ ὕδατα οὐ <lb/>λαμπρά· αἴτιον δὲ, ὅτι ὁ ἠὴρ τὸ
@@ -239,9 +248,9 @@
                         πόλιος κατὰ τὰς τῆς ἡμέρης μεταβολὰς, ὅτι <lb/>πουλὺ τὸ μέσον γίγνεται τοῦ
                         τε ἑωθινοῦ καὶ τοῦ πρὸς τὴν δείλην. Περὶ <lb/>μὲν πνευμάτων, ἅ τέ ἐστιν
                         ἐπιτήδεια καὶ ἀνεπιτήδεια, ὧδε ἔχει. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>7. Περὶ δὲ τῶν λοιπῶν ὑδάτων βούλομαι διηγήσασθαι, ἅ τέ ἐστι <lb/>νοσώδεα,
+         </div>
+         <div n="7" type="chapter">
+            <p>7. Περὶ δὲ τῶν λοιπῶν ὑδάτων βούλομαι διηγήσασθαι, ἅ τέ ἐστι <lb/>νοσώδεα,
                         καὶ ἃ ὑγιεινότατα, καὶ ὁκόσα ἀφ᾿ ὕδατος κακὰ εἰκὸς γίγνεσθαι, <lb/>καὶ ὅσα
                         ἀγαθά· πλεῖστον γὰρ μέρος ξυμβάλλεται ἐς τὴν ὑγιείην. <lb/>Ὁκόσα μὲν οὖν
                         ἐστιν ἑλώδεα καὶ στάσιμα καὶ λιμναῖα, ταῦτα <lb/>ἀνάγκη τοῦ μὲν θέρεος εἶναι
@@ -308,9 +317,9 @@
                         νομίζεται διαχωρητικά· τὰ δὲ ἐναντιώτατά ἐστι πρὸς τὴν <lb/>διαχώρησιν·
                         ἀτέραμνα γὰρ καὶ ἀνέψανα, ὥστε καὶ τὴν κοιλίην ὑπ᾿ <lb/>αὐτέων στύφεσθαι
                         μᾶλλον ἢ τήκεσθαι. Καὶ περὶ μὲν τῶν πηγαίων <lb/>ὁδάτων ὧδε ἔχει. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="8">
-                    <p>8. Περὶ δὲ τῶν ὀμβρίων, καὶ ὁκόσα ἀπὸ χιόνος, φράσω ὅκως ἔχει. <lb/>Τὰ μὲν
+         </div>
+         <div n="8" type="chapter">
+            <p>8. Περὶ δὲ τῶν ὀμβρίων, καὶ ὁκόσα ἀπὸ χιόνος, φράσω ὅκως ἔχει. <lb/>Τὰ μὲν
                         οὖν ὄμβρια κουφότατα καὶ γλυκύτατά ἐστι καὶ λεπτότατα <lb/>καὶ λαμπρότατα·
                         τήν τε γὰρ ἀρχὴν, ὁ ἥλιος ἀνάγει καὶ ἀναρπάζει <lb/>τοῦ ὕδατος τό τε
                         λεπτότατον καὶ κουφότατον· δῆλον δὲ οἱ ἅλες <lb/>ποιέουσιν· τὸ μὲν γὰρ
@@ -355,9 +364,9 @@
                         νομίζω πονηρότατα ταῦτα τὰ ὕδατα εἶναι τὰ ἀπὸ <lb/>χιόνος καὶ, κρυστάλλου,
                         καὶ τὰ τουτέοισιν ἑπόμενα, πρὸς ἅπαντα <lb/>χρήματα. Περὶ μὲν οὖν ὀμβρίων
                         ὑδάτων καὶ τῶν ἀπὸ χιόνος καὶ <lb/>κρυστάλλων οὕτως ἔχει. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="9">
-                    <p>9. Λιθιῶσι δὲ μάλιστα ἄνθρωποι, καὶ ὑπὸ νεφριτίδων καὶ στραγγουρίης
+         </div>
+         <div n="9" type="chapter">
+            <p>9. Λιθιῶσι δὲ μάλιστα ἄνθρωποι, καὶ ὑπὸ νεφριτίδων καὶ στραγγουρίης
                         <lb/>ἁλίσκονται καὶ ἰσχιάδων, καὶ κῆλαι γίγνονται, ὅκου <lb/>ὕδατα πίνουσι
                         παντοδαπώτατα καὶ ἀπὸ ποταμῶν μεγάλων, ἐς οὓς <lb/>ποταμοὶ ἕτεροι
                         ἐμβάλλουσι, καὶ ἀπὸ λίμνης, ἐς ἣν ῥεύματα <lb/>πολλὰ καὶ παντοδαπὰ
@@ -398,9 +407,9 @@
                         αἰδοῖα ξυντέτρηνται <lb/>(οἱ δὲ ἄνδρες οὐκ εὐθὺ τέτρηνται, καὶ διότι οἱ
                         οὐρητῆρες εἰσιν οὐκ <lb/>εὐρέες)· καὶ πίνουσι πλεῖον ἢ οἱ παῖδες. Περὶ μὲν
                         οὖν τουτέων ὧδε <lb/>ἔχει, ἢ ὅτι τουτέων ἐγγύτατα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="10">
-                    <p>10. Περὶ δὲ ἐτέων ὧδε ἄν τις ἐνθυμεύμενος διαγιγνώσκοι ὁκοῖόν τι <lb/>μέλλει
+         </div>
+         <div n="10" type="chapter">
+            <p>10. Περὶ δὲ ἐτέων ὧδε ἄν τις ἐνθυμεύμενος διαγιγνώσκοι ὁκοῖόν τι <lb/>μέλλει
                         ἔσεσθαι τὸ ἔτος, εἴτε νοσερὸν, εἴτε ὑγιηρόν. Ἢν μὲν γὰρ κατὰ λόγον
                         <lb/>γένηται τὰ σημεῖα· ἐπὶ τοῖσιν ἄστροισι δύνουσί τε καὶ ἐπιτέλλουσιν,
                         <lb/>ἔν τε τῷ μετοπώρῳ ὕδατα γένηται, καὶ ὁ χειμὼν μέτριος, καὶ <lb/>μήτε
@@ -466,9 +475,9 @@
                         <lb/>κατὰ τὸν αὐτὸν λόγον, ἀφ᾿ ὧν ταῦτα τὰ νοσεύματα αὐτέοισι γίγνεται.
                         <lb/>Τοῖσι δὲ φλεγματίῃσι πάντα ταῦτα ἀρωγά ἐστιν· ἀποξηραίνονται γὰρ,
                         <lb/>καὶ ἐς τὸν χειμῶνα ἀφικνεόνται, οὐ πλαδῶντες, ἀλλὰ ἀνεξηρασμένοι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="11">
-                    <p>11. Κατὰ ταῦτά τις ἐννοεύμενος καὶ σκοπεύμενος προειδείη ἂν <lb/>τὰ πλεῖστα
+         </div>
+         <div n="11" type="chapter">
+            <p>11. Κατὰ ταῦτά τις ἐννοεύμενος καὶ σκοπεύμενος προειδείη ἂν <lb/>τὰ πλεῖστα
                         τῶν μελλόντων ἔσεσθαι ἀπὸ τῶν μεταβολέων. Φυλάσσεσθαι <lb/>δὲ χρὴ μάλιστα
                         τὰς μεταβολὰς τῶν ὡρέων τὰς μεγίστας, καὶ <lb/>μήτε φάρμακον διδόναι ἑκόντα,
                         μήτε καίειν ὅ τι ἐς κοιλίην, μήτε <pb n="52"/> τάμνειν, πρὶν παρέλθωσιν
@@ -480,9 +489,9 @@
                         <lb/>ἡμέρῃσι κρίνεται· καὶ τὰ μὲν ἀποφθίνει, τὰ δὲ λήγει, τὰ δὲ <lb/>ἄλλα
                         πάντα μεθίσταται ἐς ἕτερον εἶδος καὶ ἑτέρην κατάστασιν. <lb/>Περὶ μὲν
                         τουτέων οὕτως ἔχει. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="12">
-                    <p>12. Βούλομαι δὲ περὶ τῆς Ἀσίης· καὶ τῆς Εὐρώπης δεῖξαι ὁκόσον
+         </div>
+         <div n="12" type="chapter">
+            <p>12. Βούλομαι δὲ περὶ τῆς Ἀσίης· καὶ τῆς Εὐρώπης δεῖξαι ὁκόσον
                         <lb/>διαφέρουσιν ἀλλήλων ἐς τὰ πάντα, καὶ περὶ τῶν ἐθνέων τῆς μορφῆς,
                         <lb/>ὅτι διαλλάσσει καὶ μηδὲν ἔοικεν ἀλλήλοισιν. Περὶ μὲν <lb/>οὖν ἁπάντων
                         πολὺς ἂν εἴη λόγος, περὶ δὲ τῶν μεγίστων καὶ πλεῖστον <lb/>διαφερόντων ἐρέω
@@ -512,9 +521,9 @@
                         ἀλλοφύλου, ἀλλὰ τὴν ἡδονὴν ἀνάγκη κρατέειν... Διότι <lb/>πολύμορφα γίγνεται
                         τὰ ἐν τοῖσι θηρίοισιν. Περὶ μὲν οὖν Αἰγυπτίων <lb/>καὶ Λιβύων οὕτως ἔχειν
                         μοι δοκέει. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="13">
-                    <p>13. Περὶ δε τῶν ἐν δεξιῇ τοῦ ἡλίου τῶν ἀνατολέων τῶν θερινῶν <lb/>μέχρι
+         </div>
+         <div n="13" type="chapter">
+            <p>13. Περὶ δε τῶν ἐν δεξιῇ τοῦ ἡλίου τῶν ἀνατολέων τῶν θερινῶν <lb/>μέχρι
                         Μαιώτιδος λίμνης (οὗτος γὰρ ὅρος τῆς Εὐρώπης καὶ τῆς <lb/>Ἀσίης) ὧδε ἔχει
                         περὶ αὐτέων· τὰ δὲ ἔθνεα ταῦτα ταύτῃ διάφορα αὐτὰ <lb/>ἑωυτέων μᾶλλόν ἐστι
                         τῶν προδιηγημένων, διὰ τὰς μεταβολὰς τῶν <lb/>ὡρέων καὶ τῆς χώρης τὴν φύσιν.
@@ -529,9 +538,9 @@
                         ψιλῇ καὶ ξηρῇ γῇ. Αἱ γὰρ ὧραι αἱ μεταλλάσσουσαι <lb/>τῆς μορφῆς τὴν φύσιν
                         εἰσὶ διάφοροι· ἢν δὲ διάφοροι ἔωσι <lb/>μετὰ σφέων αὐτέων, διαφοραὶ καὶ
                         πλείονες γίγνονται τοῖσιν <lb/>εἴδεσιν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="14">
-                    <p>14. Καὶ ὁκόσα μὲν ὀλίγον διαφέρει τῶν ἐθνέων παραλείψω· ὁκόσα <lb/>δὲ μεγάλα
+         </div>
+         <div n="14" type="chapter">
+            <p>14. Καὶ ὁκόσα μὲν ὀλίγον διαφέρει τῶν ἐθνέων παραλείψω· ὁκόσα <lb/>δὲ μεγάλα
                         ἢ φύσει ἢ νόμῳ, ἐρέω περὶ αὐτέων ὡς ἔχει. Καὶ πρῶτον <lb/>περὶ τῶν
                         Μακροκεφάλων. Τουτέων γὰρ οὐκ ἔστιν ἄλλο ἔθνος <lb/>ὁμοίως τὰς κεφαλὰς ἔχον
                         οὐδέν. Τὴν μὲν γὰρ ἀρχὴν ὁ νόμος αἰτιώτατος <lb/>ἐγένετο τοῦ μήκεος τῆς
@@ -550,9 +559,9 @@
                         <lb/>γενέσθαι; Νῦν δὲ ὁμοίως οὐκ ἔτι γίγνονται ὡς πρότερον· ὁ γὰρ <lb/>νόμος
                         οὐκ ἔτι ἰσχύει διὰ τὴν ὁμιλίην τῶν ἀνθρώπων. Περὶ μὲν οὖν <lb/>τουτέων οὕτω
                         μοι δοκέει. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="15">
-                    <p>15. Περὶ δὲ τῶν ἐν Φάσει, ἡ χώρη ἐκείνη ἑλώδης ἐστὶ καὶ θερμὴ <lb/>καὶ
+         </div>
+         <div n="15" type="chapter">
+            <p>15. Περὶ δὲ τῶν ἐν Φάσει, ἡ χώρη ἐκείνη ἑλώδης ἐστὶ καὶ θερμὴ <lb/>καὶ
                         ὑδατεινὴ καὶ δασεῖα· ὄμβροι τε αὐτόθι γίγνονται πᾶσαν ὥρην <lb/>πολλοί τε
                         καὶ ἰσχυροί· ἥ τε δίαιτα τοῖσιν ἀνθρώποισιν ἐν τοῖσιν <lb/>ἕλεσίν ἐστιν· τά
                         τε οἰκήματα ξύλινα καὶ καλάμινα ἐν τοῖσιν ὕδασι <lb/>μεμηχανημένα· ὀλίγῃ τε
@@ -575,9 +584,9 @@
                         πνεῦμα. Ὁ δὲ βορέης οὐ σφόδρα ἀφικνέεται· ὁκόταν <lb/>δὲ πνέῃ, ἀσθενὴς καὶ
                         βληχρὸς. Περὶ μὲν τῆς φύσιος τῆς διαφορῆς <lb/>καὶ τῆς μορφῆς τῶν ἐν τῇ Ἀσίῃ
                         καὶ τῇ Εὐρώπῃ οὕτως ἔχει. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="16">
-                    <p>16. Περὶ δὲ τῆς ἀθυμίης τῶν ἀνθρώπων καὶ τῆς ἀνανδρείης, <lb/>ὅτι
+         </div>
+         <div n="16" type="chapter">
+            <p>16. Περὶ δὲ τῆς ἀθυμίης τῶν ἀνθρώπων καὶ τῆς ἀνανδρείης, <lb/>ὅτι
                         ἀπολεμώτεροί εἰσι τῶν Εὐρωπαίων οἱ Ἀσιηνοὶ, καὶ ἡμερώτεροι <lb/>τὰ ἤθεα, αἱ
                         ὧραι αἴτιαι μάλιστα, οὐ μεγάλας τὰς μεταβολὰς ποιεύμεναι, <lb/>οὔτε ἐπὶ τὸ
                         θερμὸν, οὔτε ἐπὶ τὸ ψυχρὸν, ἀλλὰ παραπλησίως. <lb/>Οὐ γὰρ γίγνονται
@@ -606,9 +615,9 @@
                             <pb n="66"/> τοὺς δὲ φαυλοτέρους ἐόντας· τουτέων δὲ αἱ μεταβολαὶ αἴτιαι
                         <lb/>τῶν ὡρέων, ὥσπερ μοι εἴρηται ἐν τοῖσι προτέροισιν. Καὶ περὶ μὲν
                         <lb/>τῶν ἐν τῇ Ἀσίῃ οὕτως ἔχει. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="17">
-                    <p>17. Ἐν δὲ τῇ Εὐρώπῃ ἐστὶν ἔθνος Σκυθικὸν, ὃ περὶ τὴν λίμνην <lb/>οἰκέει τὴν
+         </div>
+         <div n="17" type="chapter">
+            <p>17. Ἐν δὲ τῇ Εὐρώπῃ ἐστὶν ἔθνος Σκυθικὸν, ὃ περὶ τὴν λίμνην <lb/>οἰκέει τὴν
                         Μαιῶτιν, διαφέρον τῶν ἐθνέων τῶν ἄλλων, Σαυρομάται <lb/>καλεῦνται. Τουτέων
                         αἱ γυναῖκες ἱππάζονταί τε καὶ τοξεύουσι, <lb/>καὶ ἀκοντίζουσιν ἀπὸ τῶν
                         ἵππων, καὶ μάχονται τοῖσι πολεμίοισιν, <lb/>ἕως ἂν παρθένοι ἔωσιν. Οὐκ
@@ -620,9 +629,9 @@
                         <lb/>διάπυρον ποιέουσαι, πρὸς τὸν μαζὸν τιθέασι τὸν δεξιὸν, καὶ ἐπικαίεται,
                             <pb n="68"/> ὥστε τὴν αὔξησιν φθείρεσθαι, ἐς δὲ τὸν δεξιὸν ὦμον καὶ
                         βραχίονα <lb/>πᾶσαν τὴν ἰσχὺν καὶ τὸ πλῆθος ἐκδιδόναι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="18">
-                    <p>18. Περὶ δὲ τῶν λοιπῶν Σκυθέων τῆς μορφῆς, ὅτι αὐτοὶ ἑωυτοῖσιν <lb/>ἐοίκασι,
+         </div>
+         <div n="18" type="chapter">
+            <p>18. Περὶ δὲ τῶν λοιπῶν Σκυθέων τῆς μορφῆς, ὅτι αὐτοὶ ἑωυτοῖσιν <lb/>ἐοίκασι,
                         καὶ οὐδαμῶς ἄλλοισιν, ὠυτὸς λόγος καὶ περὶ τῶν <lb/>Αἰγυπτίων, πλὴν, ὅτι οἱ
                         μὲν ὑπὸ τοῦ θερμοῦ εἰσι βεβιασμένοι, οἱ <lb/>δ᾿ ὑπὸ τοῦ ψυχροῦ. Ἡ δὲ Σκυθέων
                         ἐρημίη καλευμένη πεδιάς ἐστι καὶ <lb/>λειμακώδης καὶ ὑψηλὴ, καὶ ἔνυδρος
@@ -641,9 +650,9 @@
                         χώρην μετέρχονται. Αὐτοὶ δ᾿ ἐσθίουσι κρέα ἑφθὰ, <lb/>καὶ πίνουσι γάλα ἵππων,
                         καὶ ἱππάκην τρώγουσιν· τοῦτο δ᾿ ἐστὶ <pb n="70"/> τυρὸς ἵππων. Τὰ μὲν ἐς τὴν
                         δίαιταν αῤτέων οὕτως ἔχει καὶ τοὺς <lb/>νόμους. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="19">
-                    <p>19. Περὶ δὲ τῶν ὡρέων καὶ τῆς μορφῆς, ὅτι πολὺ ἀπήλλακται <lb/>τῶν λοιπῶν
+         </div>
+         <div n="19" type="chapter">
+            <p>19. Περὶ δὲ τῶν ὡρέων καὶ τῆς μορφῆς, ὅτι πολὺ ἀπήλλακται <lb/>τῶν λοιπῶν
                         ἀνθρώπων τὸ Σκυθικὸν γένος, καὶ ἔοικεν αὐτὸ <lb/>ἑωυτέῳ, ὥσπερ τὸ Αἰγύπτιον,
                         καὶ ἥκιστα πολύγονόν ἐστιν· καὶ ἡ <lb/>χώρη ἐλάχιστα θηρία τρέφει κατὰ
                         μέγεθος καὶ πλῆθος. Κέεται γὰρ <lb/>ὑπ᾿ αὐτῇσι τῇσιν ἄρκτοισι καὶ τοῖσιν
@@ -672,9 +681,9 @@
                         ἄρσεσι, καὶ τὰ θήλεα τοῖσι θήλεσιν. Τῶν γὰρ ὡρέων <lb/>παραπλησίων ἐουσέων,
                         φθοραὶ οὐκ ἐγγίγνονται οὐδὲ κακώσιες <lb/>ἐν τῇ τοῦ γόνου ξυμπήξει, ἢν μή
                         τινος ἀνάγκης βιαίου τύχῃ ἢ <lb/>νούσου. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="20">
-                    <p>20. Μέγα δὲ τεκμήριον ἐς τὴν ὑγρότητα παρέξομαι. Σκυθέων <pb n="74"/> γὰρ
+         </div>
+         <div n="20" type="chapter">
+            <p>20. Μέγα δὲ τεκμήριον ἐς τὴν ὑγρότητα παρέξομαι. Σκυθέων <pb n="74"/> γὰρ
                         τοὺς πολλοὺς, ἅπαντας ὅσοι Νομάδες, εὑρήσεις κεκαυμένους <lb/>τούς τε ὤμους
                         καὶ τοὸς βραχίονας καὶ τοὺς καρποὺς τῶν <lb/>χειρέων, καὶ τὰ στήθεα, καὶ τὰ
                         ἰσχία καὶ τὴν ὀσφὺν, δι᾿ ἄλλ᾿ οὐδὲν <lb/>ἢ διὰ τὴν ὑγρότητα τῆς φύσιος καὶ
@@ -690,9 +699,9 @@
                         οἷον ῥοϊκὰ καὶ βραδέα εἶναι τὰ <lb/>εἴδεα. Πυῤῥὸν δὲ τὸ γένος ἐστὶ τὸ
                         Σκυθικὸν διὰ τὸ ψύχος, οὐκ <lb/>ἐπιγιγνομένου ὀξέως τοῦ ἡλίου· ὑπὸ δὲ τοῦ
                         ψύχεος ἡ λευκότης <lb/>ἐπικαίεται καὶ γίγνεται πυῤῥή. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="21">
-                    <p>21. Πολύγονον δὲ οὐχ οἷόν τε εἶναι φύσιν τοιαύτην· οὔτε γὰρ τῷ <lb/>ἀνδρὶ ἡ
+         </div>
+         <div n="21" type="chapter">
+            <p>21. Πολύγονον δὲ οὐχ οἷόν τε εἶναι φύσιν τοιαύτην· οὔτε γὰρ τῷ <lb/>ἀνδρὶ ἡ
                         ἐπιθυμίη τῆς μίξιος γίγνεται πολλὴ διὰ τὴν ὁγρότητα τῆς <lb/>φύσιος καὶ τῆς
                         κοιλίης τὴν μαλθακότητά τε καὶ τὴν ψυχρότητα, <lb/>ἀπὸ τῶν ἥκιστα εἰκὸς
                         εἶναι ἄνδρα οἷόν τε λαγνεύειν· καὶ ἔτι ὑπὸ <pb n="76"/> τῶν ἵππων αἰεὶ
@@ -706,9 +715,9 @@
                         γένος τὸ Σκυθικόν. <lb/>Μέγα δὲ τεκμήριον αἱ οἰκέτιδες ποιέουσιν· οὐ γὰρ
                         φθάνουσι παρὰ <lb/>ἄνδρα ἀφικνεύμεναι, καὶ ἐν γαστρὶ ἴσχουσι διὰ τὴν
                         ταλαιπωρίην <lb/>καὶ ἰσχνότητα τῆς σαρκός. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="22">
-                    <p>22. Ἔτι τε πρὸς τουτέοισιν εὐνουχίαι γίγνονται οἱ πλεῖστοι <lb/>ἐν Σκύθῃσι,
+         </div>
+         <div n="22" type="chapter">
+            <p>22. Ἔτι τε πρὸς τουτέοισιν εὐνουχίαι γίγνονται οἱ πλεῖστοι <lb/>ἐν Σκύθῃσι,
                         καὶ γυναικεῖα ἐργάζονται, καὶ ὡς αἱ γυναῖκες διαλέγονται <lb/>ὁμοίως·
                         καλεῦνταί τε οἱ τοιοῦτοι ἀνανδριεῖς. Οἱ μὲν ἐπιχώριοι <lb/>τὴν αἰτίην
                         προστιθέασι θεῷ, καὶ σέβονται τουτέους τοὺς ἀνθρώπους <lb/>καὶ προσκυνέουσι,
@@ -756,9 +765,9 @@
                         ψύχεος <lb/>καὶ τοῦ κόπου ἐπιλαθέσθαι τοῦ ἱμέρου καὶ τῆς μίξιος, καὶ μηδὲν
                         <lb/>παρακινέειν πρότερον ἢ ἀνανδρωθῆναι. Περὶ μὲν οὖν τῶν Σκυθέων
                         <lb/>οὕτως ἔχει τοῦ γένεος. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="23">
-                    <p>23. Τὸ δὲ λοιπὸν γένος τὸ ἐν τῇ Εὐρώπῃ διάφορον αὐτὸ ἑωυτέῳ <lb/>ἐστι, καὶ
+         </div>
+         <div n="23" type="chapter">
+            <p>23. Τὸ δὲ λοιπὸν γένος τὸ ἐν τῇ Εὐρώπῃ διάφορον αὐτὸ ἑωυτέῳ <lb/>ἐστι, καὶ
                         κατὰ τὸ μέγεθος καὶ κατὰ τὰς μορφὰς, διὰ τὰς μεταλλαγὰς <lb/>τῶν ὡρέων, ὅτι
                         μεγάλαι γίγνονται καὶ πυκναὶ, καὶ θάλπεά τε <lb/>ἰσχυρὰ καὶ χειμῶνες
                         καρτεροὶ, καὶ ὄμβροι πολλοὶ, καὶ αὖθις αὐχμοὶ <lb/>πολυχρόνιοι, καὶ
@@ -786,9 +795,9 @@
                         <lb/>τῆς νίκης αὐτοὶ φέρονται· οὕτως οἱ νόμοι οὐχ ἥκιστα τὴν εὐψυχίην
                         <lb/>ἐργάζονται. Τὸ μὲν οὖν ὅλον καὶ τὸ ἅπαν οὕτως ἔχει περί τε τῆς
                         <lb/>Εὐρώπης καὶ τῆς Ἀσίης. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="24">
-                    <p>24. Ἔνεισι δὲ καὶ ἐν τῇ Εὐρώπῃ φῦλα διάφορα ἕτερα ἑτέροισι <lb/>καὶ τὰ
+         </div>
+         <div n="24" type="chapter">
+            <p>24. Ἔνεισι δὲ καὶ ἐν τῇ Εὐρώπῃ φῦλα διάφορα ἕτερα ἑτέροισι <lb/>καὶ τὰ
                         μεγέθεα καὶ τὰς μορφὰς καὶ τὰς ἀνδρείας· τὰ δὲ διαλλάσσοντα <lb/>ταῦτά
                         ἐστιν, ἃ καὶ ἐπὶ τῶν πρότερον εἴρηται· ἔτι δὲ σαφέστερον <lb/>φράσω. Ὁκόσοι
                         μὲν χώρην ὀρεινήν τε οἰκέουσι καὶ τρηχείην <lb/>καὶ ὑψηλὴν καὶ ἔνυδρον, καὶ
@@ -833,8 +842,7 @@
                         <lb/>πάντα ἀκόλουθα ἐόντα τῇ γῇ. Αἱ μὲν ἐναντιώταται φύσιές τε <lb/>καὶ
                         ἰδέαι ἔχουσιν οὕτως· ἀπὸ δὲ τουτέων τεκμαιρόμενος τὸ λοιπὰ <lb/>ἐνθυμέεσθαι,
                         καὶ οὐχ ἁμαρτήσῃ. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

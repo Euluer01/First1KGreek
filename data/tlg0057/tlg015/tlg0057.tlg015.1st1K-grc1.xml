@@ -1,98 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-	<teiHeader xml:lang="eng">    
-		<fileDesc>
-			<titleStmt><title xml:lang="lat">De instrumento odoratus</title>
-				<author>Galen</author>
-				<editor>Karl Gottlob Kühn</editor>
-				<funder>Andrew W. Mellon Foundation</funder>
-				<respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-				<authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De instrumento odoratus</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
 					Foundation</authority>
-				<publisher>University of Leipzig</publisher>
-				<pubPlace>Germany</pubPlace>
-				<idno type="filename">tlg0057.tlg015.1st1K-grc1.xml</idno>
-				<availability>
-					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg015.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
 						Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-				</availability>
-				<date>2016</date>
-			</publicationStmt>
-			<sourceDesc>
-				<biblStruct>
-					<monogr>
-						<title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-						<author>Galen</author>
-						<editor>Karl Gottlob Kühn</editor>
-						<imprint>
-							<publisher>Knobloch</publisher>
-							<pubPlace>Lipsiae</pubPlace>
-							<biblScope unit="vol">2</biblScope>
-							<biblScope unit="pp" from="857" to="886">857-886</biblScope>
-							<date>1821</date>
-						</imprint>
-					</monogr>
-					<ref target="https://archive.org/stream/hapantaoperaomni02galeuoft#page/856/mode/2up">Internet Archive</ref>
-				</biblStruct>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg015.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Lipsiae</pubPlace>
+                     <biblScope unit="vol">2</biblScope>
+                     <biblScope unit="pp" from="857" to="886">857-886</biblScope>
+                     <date>1821</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://archive.org/stream/hapantaoperaomni02galeuoft#page/856/mode/2up">Internet Archive</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
 				Architecture.</p>
-			  <refsDecl n="CTS">
-				<cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-			</refsDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="grc">Greek</language>
-				<language ident="eng">English</language>
-				<language ident="lat">Latin</language>
-			</langUsage>
-		</profileDesc>
-	</teiHeader>
-	<text>
-		<body>
-
-			<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg015.1st1K-grc1">
-				<pb n="857"/>
-
-				<div type="textpart" subtype="chapter" n="1">
-					<head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΟΣΦΡΗΣΕΩΣ <lb/>ΟΡΓΑΝΟΥ.</head>
-					<p>Ὄσφρησιν ὀνομάζουσιν οἱ Ἕλληνες οὐ <lb/>μόνον τὴν διάγνωσιν τῶν ὀσμῶν, ἀλλὰ καὶ τὴν
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="eng">English</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg015.1st1K-grc1">
+         <pb n="857"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΟΣΦΡΗΣΕΩΣ <lb/>ΟΡΓΑΝΟΥ.</head>
+            <p>Ὄσφρησιν ὀνομάζουσιν οἱ Ἕλληνες οὐ <lb/>μόνον τὴν διάγνωσιν τῶν ὀσμῶν, ἀλλὰ καὶ τὴν
 						δύναμιν, <lb/>ἧς τοῦτο ἔργον ἐστίν· ὥσπερ γε καὶ τὴν γεῦσιν οὐ τὴν <lb/>διάγνωσιν μόνον
 						τῶν γευστῶν, ἀλλὰ καὶ τὴν δύναμιν αὐτῶν· <lb/>καὶ κατ’ ἄμφω δὲ τὰ σημαινόμενα τὸ τῆς
 						ὀσφρήσεως <lb/>ὄργανον ἓν ἂν εἶναι λέγοιτο, δι’ οὗ ποιεῖται τῶν ἰδίων <lb/>αἰσθητῶν τὴν
@@ -109,10 +118,10 @@
 						καὶ διὰ <lb/>τοῦτο ἀναγκαῖόν ἐστιν τὰ συνεχῆ τοῖς πόροις τῆς ῥινὸς <lb/>ἐπίστασθαι
 						σώματα πρὸς τῆς ἀνατομῆς διδαχθέντας· γιγνωσκόντων <lb/>δ’ οὐ πάντων αὐτὰ, διηγήσασθαι
 						βέλτιον, ὅπως <lb/>κατεσκεύασται. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="2">
-					<p>
-						<milestone unit="ed2page" n="355"/>Καὶ τοίνυν τῆς ῥινὸς ἐχούσης μέσον διάφραγμα <lb/>καὶ
+         </div>
+         <div n="2" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="355"/>Καὶ τοίνυν τῆς ῥινὸς ἐχούσης μέσον διάφραγμα <lb/>καὶ
 						πόρους ἀξιολόγους δύο, τούτους δὴ τοὺς φαινομένους, <pb n="859"/> ἕνα καθ’ ἑκάτερον
 						μυκτῆρα, χρὴ γινώσκειν ἀνωτέρω τῶν <lb/>μέσων τῆς ῥινὸς ἑκάτερον αὐτῶν δίχα σχιζόμενον.
 						ἥκει δὲ <lb/>τῶν μερῶν τὸ μὲν ἕτερον εἰς τὸ τοῦ στόματος ἔνδον, τὸ <lb/>δ’ ἕτερον
@@ -151,7 +160,7 @@
 						ὡς ἑκάστην <lb/>τῶν εἰρημένων, ἀλλ’ εἰς ὅλον ἐκτεταμένην τὸ σῶμα. <lb/>καὶ διὰ τοῦτο καὶ
 						νεύρων αὐτῇ μικροτέρων ἔνειμεν πλῆθος, καὶ <lb/>τούτων σκληρῶν, ἐκ νωτιαίου μυελοῦ τῶν
 						πλείστων ἀρχομένων. ﻿<pb n="862"/>
-						<milestone unit="ed2page" n="356"/>εἰς δὲ τὰ προειρημένα μόρια, περιττοτέρας αἰσθήσεως
+               <milestone unit="ed2page" n="356"/>εἰς δὲ τὰ προειρημένα μόρια, περιττοτέρας αἰσθήσεως
 						<lb/>δεόμενα, καὶ μείζω καὶ μαλακώτερα νεῦρα κατέφυσεν, <lb/>ἐξ ἐγκεφάλου πάντα
 						βλαστάνοντα. φωτοειδέστατον μὲν οὖν <lb/>ἐποίησεν τὸ τῆς ὄψεως ὄργανον, ὡς ἂν καὶ μόνον
 						αὐγῆς καὶ <lb/>φωτὸς αἰσθανόμενον, ἀερῶδες τὸ τῆς ἀκοῆς, αἰσθητικὸν ἐσόμενον <lb/>καὶ
@@ -163,9 +172,9 @@
 						αὐτῶν καὶ τῶν οὕτως ἁπλῶν, ἃ διὰ <lb/>ταχέων ἑαυτῶν ἐλάττω τε ἅμα καὶ ξηρότερα γίνεται,
 						φανερῶς <lb/>ἐνδεικνύμενα, τὴν ὑγροτέραν μοῖραν ἐκ τῆς οὐσίας αὐτῶν <lb/>διαφορεῖσθαι.
 					</p>
-				</div>
-				<div type="textpart" subtype="chapter" n="3">
-					<p>Ζητήσωμεν οὖν ἤδη τὸ τῆς ὀσφρήσεως ὄργανον, <pb n="863"/> ἀρξάμενοι μὲν ἀπὸ τῆς τῶν
+         </div>
+         <div n="3" type="chapter">
+            <p>Ζητήσωμεν οὖν ἤδη τὸ τῆς ὀσφρήσεως ὄργανον, <pb n="863"/> ἀρξάμενοι μὲν ἀπὸ τῆς τῶν
 						συνεχῶν κατασκευῆς τοῖς <lb/>μυκτῆρσι μορίων, ἑξῆς δὲ τούτοις ἐπισκεψάμενοι τὰ τῆς
 						<lb/>ἐνεργείας ἴδια συμβεβηκότα. ἐπεὶ τοίνυν ἐν τοῖς κατὰ τὴν <lb/>ῥῖνα πόροις
 						ὑποτέταται τοῖς ὀστοῖς ὁ χιτὼν ἐκεῖνος, ὃν <lb/>καὶ τῇ φύσει καὶ τῇ συνεχείᾳ τὸν αὐτὸν
@@ -217,9 +226,9 @@
 						<lb/>ἀμφοτέρους τοὺς πόρους, ἀναπνέουσι δὲ ἐν τῷδε διὰ τοι <lb/>στόματος οὐδεμία τῶν
 						ὀσμῶν αἴσθησις γίνεται. διὰ δὲ <lb/>ταῦτα καὶ τὴν φάρυγγα καὶ τὴν τραχεῖαν ἀρτηρίαν οὐχ
 						<lb/>ὑποληπτέον ὑπάρχειν αὐτό. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="4">
-					<p>Λείπει τοίνυν ἐπισκέψασθαι περὶ τοῦ λοὶ <lb/>ποῦ πέρατος τῶν κατὰ τὴν ῥῖνα πόρων, ὃ διὰ
+         </div>
+         <div n="4" type="chapter">
+            <p>Λείπει τοίνυν ἐπισκέψασθαι περὶ τοῦ λοὶ <lb/>ποῦ πέρατος τῶν κατὰ τὴν ῥῖνα πόρων, ὃ διὰ
 						τῶν ἠθμοειδῶν <lb/>ὀστῶν ἐπὶ τὸν ἐγκέφαλον ἀναφέρεται. ἀλλὰ κᾀνταῦθα <lb/>τὰ μὲν τῆς
 						κατασκευῆς ὅμοια, χιτὼν ὑπαλείφων <lb/>τὸν πόρον, ὡσαύτως ἔχων τῷ κά<milestone unit="ed1page" n="208"/>τω κατὰ τὴν οἰκείαν <lb/>οὐσίαν καὶ τὴν τῶν νεύρων ἰσχνότητα,
 						τὰ δὲ ἀπὸ τῶν <lb/>συμβεβηκότων ἕτερα. κατὰ γάρ τοι τὴν εἰσπνοὴν ἐγχωρεῖ <lb/>τὸν
@@ -258,9 +267,9 @@
 						τὸ κατὰ μηδένα τρόπον ἐγχωρεῖν <lb/>ἐν τῷ ῥινὸς χιτῶνι τὴν αἴσθησιν γίνεσθαι τῶν ὀσμῶν·
 						<lb/>ὃ γὰρ εἶχε μόνον βραχὺ τὸ πιθανὸν ὑπ’ Ἀριστοτέλους εἰρημένον, <lb/>ἐξεταζόμενον
 						ηὑρίσκετο ψεῦδος. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="5">
-					<p>Ὅπως οὖν ἀκριβεστέρα γένοιτο παντὸς τοῦ <lb/>δόγματος ἡ βάσανος, ἀρξώμεθα τῶν
+         </div>
+         <div n="5" type="chapter">
+            <p>Ὅπως οὖν ἀκριβεστέρα γένοιτο παντὸς τοῦ <lb/>δόγματος ἡ βάσανος, ἀρξώμεθα τῶν
 						προειρημένων κεφαλαίων <lb/>ἀπὸ τοῦ τελευταίου. τί δή ποτε γὰρ εἰσπνεόντων ἡ <lb/>τῶν
 						ὀσμῶν αἴσθησις γίγνεται, κατ’ ἄλλον δὲ οὐδένα χρόνον, <lb/>εἴπερ ἐν τοῖς τῆς ῥινὸς
 						πόροις ἡ γένεσις αὐτῆς ἐστιν, ἐπισκεπτομένοις <lb/>ἡμῖν ἓν τοῦτο μόνον ηὑρίσκετο
@@ -307,7 +316,7 @@
 						οὖν κατὰ <lb/>τὴν ἡμετέραν προαίρεσιν, δεήσει καὶ χωρὶς τῆς εἰσπνοῆς <lb/>διασταλεῖσιν
 						αὐτοῖς αἰσθέσθαι τῆς ὀσμῆς· εἰ δὲ φυσικῶς <lb/>ᾖ, εὔδηλον, ὅτι καὶ οὕτως <milestone unit="ed1page" n="209"/>ἄνευ τῆς εἰσπνοῆς. <lb/>ἀλλὰ μὴν οὐδέποτε χωρὶς τῆς εἰσπνοῆς
 						αἰσθανόμεθα. <lb/>φανερὸν οὖν, ὅτι τοῖς αἰσθητικοῖς τῶν ὀσμῶν πόροις <lb/>
-						<milestone unit="ed2page" n="360"/>οὔτε κατὰ προαίρεσιν οὔτε ἄνευ προαιρέσεώς ἐστιν
+               <milestone unit="ed2page" n="360"/>οὔτε κατὰ προαίρεσιν οὔτε ἄνευ προαιρέσεώς ἐστιν
 						<lb/>οἰκεία κίνησις ἡ διοικοῦσα τὸ ὀζόμενον. οὐ μὴν οὐδὲ τῶν <lb/>ἀναπνευστικῶν πόρων
 						κίνησις διαστεῖλαι δυνήσεται τοὺς <lb/>ὀσφρητικοὺς πόρους. αὐτὸς μὲν γὰρ ὁ θώραξ ἐν τοῖς
 						<lb/>περὶ τούτων λόγοις ἐπιδέδεικται διαστελλόμενος ὑπὸ μυῶν· <lb/>ὁ πνεύμων δ’ αὐτὸς
@@ -351,7 +360,7 @@
 						καὶ βούλοιτό τις, βιαίως ὠθούμενον ἐμπίπτει, <lb/>ἀλλ’ οὐδὲ τοῦτο δυνατὸν εἶναι πολύ.
 							<milestone unit="ed2page" n="361"/>θλίβεται μὲν <lb/>γὰρ βιαίως, ὡς ἴσμεν, ὁ ἀὴρ, καὶ
 						πάλιν τείνεται πανταχόθεν, <pb n="878"/>
-						<lb/>παρὰ τὴν ἑαυτοῦ φύσιν ἑκάτερον τούτων ἀναγκαζόμενος <lb/>πάσχειν, ὡς μηδεμιᾶς γε
+               <lb/>παρὰ τὴν ἑαυτοῦ φύσιν ἑκάτερον τούτων ἀναγκαζόμενος <lb/>πάσχειν, ὡς μηδεμιᾶς γε
 						τοιαύτης αὐτῶν αἰτίας βιαζομένης, <lb/>ἢ τῆς ἣν κατείληφε χώρας. οὐ μὴν οὐδ’ ὅτε
 						πιλούμενος <lb/>εἰς ἐλάττω συνέρχεται τόπον, ἢ χεόμενος ἐπιπλέον ἐκτείνεται,
 						<lb/>μεγάλην ἐργάζεται τὴν ἐφ’ ἑκάτερα μεταβολὴν, <lb/>ἀλλὰ καὶ συστέλλεται καὶ χεῖται
@@ -393,7 +402,7 @@
 						<lb/>ἐν ἡμῖν ἔργων τε καὶ παθημάτων. εἴτ’ οὖν ἔργον ἐστὶ <lb/>φυσικὸν, εἴτε πάθος ὁ
 						ὕπνος, οὐδὲ γὰρ οὐδὲ τοῦτο εὐδιαίτητον, <lb/>ἀδύνατον αὐτῷ τὰς αἰσθή<milestone unit="ed2page" n="362"/>σεις ἀκριβῶς αἰσθανομένας <lb/>φυλάττειν. οὔτ’ οὖν, ὅτι κατὰ
 						τοὺς ὕπνους ἐνεργεῖν <lb/>ὁμοίως οὐ δυνάμεθα ταῖς αἰσθήσεσιν, διὰ τοῦθ’ <lb/>
-						<milestone unit="ed1page" n="210"/>ὁ λόγος ἐστὶ ψευδὴς, ἄμεινον εἶναι φάσκων διὰ παντὸς
+               <milestone unit="ed1page" n="210"/>ὁ λόγος ἐστὶ ψευδὴς, ἄμεινον εἶναι φάσκων διὰ παντὸς
 						<lb/>ἑκάστην αἴσθησιν ἐνεργεῖν τοῦ διαλείπειν· οὔθ’, ὅτι <lb/>φυλαττόμενοί τινα τῶν
 						ἐμπιπτόντων τε καὶ προσπιπτόντων <lb/>ἔξωθεν ἀναγκαζόμεθα κλείειν τὰ βλέφαρα, διὰ τοῦτ’
 						ἔστι <lb/>μὴ ὁρᾷν τηνικαῦτα. βέλτιον γὰρ, εἴπερ οἷόν τε ἦν ἀβλαβεῖς <lb/>αὐτοὺς
@@ -409,9 +418,9 @@
 						<lb/>οἰκείων αἰσθητῶν. ὅτι μὲν οὖν τὰ καλύμματα τῶν ὀσφρητικῶν <lb/>πόρων ἄδηλός ἐστι
 						καὶ ἀναπόδεικτος ὑπόθεσις, <lb/>οὐδ’ ὑφ’ ἑνὸς τῶν ἐναργῶν μαρτυρουμένη, δεδειχέναι μοι
 						<lb/>δοκῶ. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="6">
-					<p>Σκεψώμεθα δ’ ἐφεξῆς, ὅπως οἱ πταρμοὶ <lb/>τὰ τῆς κεφαλῆς ἰῶνται βάρη. γίνονται μὲν γὰρ,
+         </div>
+         <div n="6" type="chapter">
+            <p>Σκεψώμεθα δ’ ἐφεξῆς, ὅπως οἱ πταρμοὶ <lb/>τὰ τῆς κεφαλῆς ἰῶνται βάρη. γίνονται μὲν γὰρ,
 						ἐπὶ προηγησαμέναις <lb/>μεγίσταις εἰσπνοαῖς ἐκφυσήσεως ἑπομένης τάχιστα. <pb n="883"/>
 						ὀνομάζω δὲ ἐκφύσησιν τὴν ἀθρόαν ἐκπνοήν. εἰ δέ <lb/>γε μηδὲν ἐξ ἐγκεφάλου δι’ αὐτῶν
 						ἐκενοῦτο, πρὸς τῷ μὴ <lb/>παύσασθαι τὰ βάρη τῆς κεφαλῆς ὑπὸ τῶν πταρμῶν πολλάκις
@@ -449,8 +458,7 @@
 						κοιλιῶν αὐτοῦ πληρωθεισῶν. ἀνατιτραμένοις <lb/>γοῦν πολλάκις παραχρῆμα καρώσεις
 						γίνονται, <pb n="886"/> τῶν ὑπηρετουμένων τοῖς χειρουργοῦσιν ἀμετρότερον ἐνίοτε
 						<lb/>θλιψάντων τὰς κατὰ τὸν ἐγκέφαλον κοιλίας, καίτοι <lb/>τί λέγω κοιλίας; </p>
-				</div>
-			</div>
-		</body>
-	</text>
+         </div>
+      </body>
+   </text>
 </TEI>

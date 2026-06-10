@@ -1,122 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">Isagoge sive quinque voces</title>
-                <author xml:lang="lat">Porphyrius</author>
-                <editor>Adolf Busse</editor>
-                <sponsor>University of Leipzig</sponsor>
-                <funder>European Social Fund Saxony</funder>
-                <principal>Gregory Crane</principal>
-                <principal>Monica Berti</principal>
-                <meeting/>
-                <respStmt>
-                    <persName>Gregory R. Crane</persName>
-                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
-                </respStmt>
-                <respStmt>
-                    <persName xml:id="DDD">Digital Divide Data</persName>
-                    <resp>Corrected and encoded the text</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Matt Munson</persName>
-                    <resp>Project Manager (University of Leipzig)</resp>
-                </respStmt>
-                <respStmt>
-                    <persName xml:lang="deu">Annette Geßner</persName>
-                    <resp>Project Assistant (University of Leipzig)</resp>
-                </respStmt>
-                <respStmt>
-                    <persName xml:lang="fre">Thibault Clérice</persName>
-                    <resp>Lead Developer (University of Leipzig), 2015 - 2017</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Bruce Robertson</persName>
-                    <resp>Technical Advisor</resp>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <authority>University of Leipzig</authority>
-                <idno type="filename">tlg2034.tlg006.opp-lat1.xml</idno>
-                <availability>
-                        <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-                </availability>
-                <date>2014</date>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-            </publicationStmt>
-            <sourceDesc>
-                <listBibl>
-                    <biblStruct>
-                        <monogr>
-                            <title xml:lang="lat">Porphyrii isagoge et in Aristotelis categorias commentarium</title>
-                            <editor role="translator">Boethius</editor>
-                            <editor>
-                                <persName>
-                                    <name>Adolf Busse</name>
-                                </persName>
-                            </editor>
-                            <author ref="urn:cts:greekLit:tlg2034">Porphyrius</author>
-                            <imprint>
-                                <publisher>Reimer</publisher>
-                                <pubPlace>Berlin</pubPlace>
-                                <date>1887</date>
-                            </imprint>
-                        </monogr>
-                        <series>
-                            <title level="s">Commentaria in Aristotelem graeca</title>
-                            <biblScope n="volume">4, Part 1</biblScope>
-                        </series>
-                        <ref target="https://babel.hathitrust.org/cgi/pt?id=njp.32101075724227;view=1up;seq=83">Hathi Trust</ref>
-                    </biblStruct>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-            <refsDecl n="CTS">
-                <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-                <language ident="lat">Latin</language>
-                <language ident="deu">German</language>
-                <language ident="fre">French</language>
-            </langUsage>
-        </profileDesc>
-        <revisionDesc>
-            <change who= "Julia Deen, Charlotte Houghton, Daniel Whittle, Ben Yates" when="2018-06-06">
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Isagoge sive quinque voces</title>
+            <author xml:lang="lat">Porphyrius</author>
+            <editor>Adolf Busse</editor>
+            <sponsor>University of Leipzig</sponsor>
+            <funder>European Social Fund Saxony</funder>
+            <principal>Gregory Crane</principal>
+            <principal>Monica Berti</principal>
+            <meeting/>
+            <respStmt>
+               <persName>Gregory R. Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:lang="deu">Annette Geßner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:lang="fre">Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig), 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>University of Leipzig</authority>
+            <idno type="filename">tlg2034.tlg006.opp-lat1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2014</date>
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg2034.tlg006.opp-lat1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Porphyrii isagoge et in Aristotelis categorias commentarium</title>
+                     <editor role="translator">Boethius</editor>
+                     <editor>
+                        <persName>
+                           <name>Adolf Busse</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg2034">Porphyrius</author>
+                     <imprint>
+                        <publisher>Reimer</publisher>
+                        <pubPlace>Berlin</pubPlace>
+                        <date>1887</date>
+                     </imprint>
+                  </monogr>
+                  <series>
+                     <title level="s">Commentaria in Aristotelem graeca</title>
+                     <biblScope n="volume">4, Part 1</biblScope>
+                  </series>
+                  <ref target="https://babel.hathitrust.org/cgi/pt?id=njp.32101075724227;view=1up;seq=83">Hathi Trust</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+         <refsDecl n="CTS">
+            <cRefPattern n="chapter"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+            <language ident="deu">German</language>
+            <language ident="fre">French</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="Julia Deen, Charlotte Houghton, Daniel Whittle, Ben Yates"
+                 when="2018-06-06">
                 separated Latin translation of tlg2034.tlg006 from Greek</change>
-        </revisionDesc>
-    </teiHeader>
-    <text>
-        <body><div type="translation" n="urn:cts:greekLit:tlg2034.tlg006.opp-lat1" xml:lang="lat">
-            <div type="textpart" subtype="chapter" n="1">
-                <head>PORPHYRII ISAGOGE ET
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg2034.tlg006.opp-lat1">
+         <div n="1" type="chapter">
+            <head>PORPHYRII ISAGOGE ET
                     IN ARISTOTELIS CATEGORIAS
                     COMMEiNTARIUM</head>
-<pb n="23"/>
-<head>PORPHYRII
+            <pb n="23"/>
+            <head>PORPHYRII
 INTRODUCTIO
 IN ARISTOTELIS CATEGORIAS
 A BOETHIO TRANSLATA</head>
-
-<pb n="24"/>
-<p>SIGLA</p>
-<p>A = Parisinus 11129</p>
-<p>B = Monacenis 4621</p>
-<p>C = Monacensis 6403</p>
-<p>L = Laurentianus 89,80</p>
-<p>P = Laurentianus 11,5</p>
-<p>Q = Laurentianus 89,76</p>
-
-<pb n="25"/>
-<p>INCIPIT ISAGOGE PORPHYRII.</p>
-<note type="marginal">ed. gr. P. l,1</note>
-<p>Cum sit necessarium, Chrysaori, et ad eam quae est apud Aristotelem
+            <pb n="24"/>
+            <p>SIGLA</p>
+            <p>A = Parisinus 11129</p>
+            <p>B = Monacenis 4621</p>
+            <p>C = Monacensis 6403</p>
+            <p>L = Laurentianus 89,80</p>
+            <p>P = Laurentianus 11,5</p>
+            <p>Q = Laurentianus 89,76</p>
+            <pb n="25"/>
+            <p>INCIPIT ISAGOGE PORPHYRII.</p>
+            <note type="marginal">ed. gr. P. l,1</note>
+            <p>Cum sit necessarium, Chrysaori, et ad eam quae est apud Aristotelem
 praedicamentorum doctrinam nosse, quid genus sit ct quid
 difterentia quidque species et quid proprium et quid accideus. et ad
 <lb n="5"/> diffinitionum adsignationem et omnino ad ea, quae in divisione vel
@@ -131,7 +142,7 @@ posita et circa ea constantia, dicere recusabo, altissimum enim
 est huiusmodi negotium et maioris egens inquisitionis; illud vero
 <lb n="15"/> quemadmodum de his ac de propositis probabiliter antiqui tractaverunt
 et horum maxime Peripatetici, tibi nunc temptabo monstrare.</p>
-<note type="footnote">1 Titulum praemittit Incipit Hysagoga Porfirii L: Incipiunt ysagoge por ad cathegorias
+            <note type="footnote">1 Titulum praemittit Incipit Hysagoga Porfirii L: Incipiunt ysagoge por ad cathegorias
 ar P: Incipiunt ysagoge por . . . (ceter. absciss.) Q: om. ABC 2 chrisaori A:
 crisaori B: chrissaori C: Chrysaori L: gris P: grisaori Q ante et add. te B: om.
 ACLPQ 3 genus sit colloc. ACLQ: sit genus BP 4 anie differentia add.
@@ -146,10 +157,9 @@ sunt ABCL: siut PQ 2 12 sunt an incorporalia om. Q: sunt ABCL: sint P
 12: 13 an in sensilibus posita om. AB (nisi quod an in lit. B) 13 et om. B dicere]
 ducere P 13. 14 enim est huiusmodi negotium colloc. AP: est enim huiusm. neg.
 BQ: enim neg. est huiusm. LC 16 temtabo P</note>
-
-<pb n="26"/>
-<p>De genere.</p>
-<p>Videtur autem neque genus neque species simpliciter dici. genus <note type="marginal">1, 18</note>
+            <pb n="26"/>
+            <p>De genere.</p>
+            <p>Videtur autem neque genus neque species simpliciter dici. genus <note type="marginal">1, 18</note>
 enim dicitur et aliquorum quodammodo se habentium ad unum aliquid
 et ad se invicem collectio, secundum quam significationem Romanorum
 <lb n="5"/> dicitur genus ab unius scilicet habitudine, dico autem Romuli,
@@ -171,8 +181,8 @@ omnem illam collectionem esse Romanorum genus. aliter autem rursus
 dictum. etenim principium quoddam est huiusmodi genus earum
 quae sub ipso sunt specierum, videturque etiam multitudinem continere
 omnem quae sub eo est.</p>
-<p>Tripliciter igitur cum genus dicatur, de tertio apud philosophos <note type="marginal">2, 14</note>
-<lb n="25"/> sermo est. quod etiara describentes adsignaverunt genus esse dicentes,
+            <p>Tripliciter igitur cum genus dicatur, de tertio apud philosophos <note type="marginal">2, 14</note>
+               <lb n="25"/> sermo est. quod etiara describentes adsignaverunt genus esse dicentes,
 <note type="footnote">1 titulum exhibent De genere ALP: De geuere primo Q: om. BC 2 dici simpliciter
 colloc. P 3 enim ABCLQ: autem P 3. 4 aliquid BC 1LP: aliquod A: aliquem
 C 2 4. 5 Romanorum om. P: Romanum C 1 (corr. m. 2) 6 aliquo modo ABCLQ:
@@ -192,8 +202,7 @@ videtur codd. etiam ACLP: autem B: quoque Q 23 omnem quae sub eo est
 BL: omnium earum quae sunt eo sub specierum A: omnium quae sunt sub eo specierum C
 mrg. L: omnium quae sub eo sunt specierum P : omnem quae sub se sunt specierum Q
 24 igitur ABCLP : ergo Q 25 esse genus colloc. A</note>
-
-<pb n="27"/>
+               <pb n="27"/>
 
 quod de pluribus et differentibus specie in eo quod quid sit praedicatur
 ut animal. corum enim, quae praedicantur, alia quidem de
@@ -241,8 +250,7 @@ specie om. L: add. BPQ specie in comm. repudiatur, itaque inducendum est
 20 accidontibus BLP: accidentia Q etsi BP: etiamsi L- si Q et specie
 differentibus om. Q: exhib. BLP: tuetur comment. 22 sed B: tamen LPQ: an
 sed tamen?</note>
-
-<pb n="28"/>
+               <pb n="28"/>
 
 sit praedicantur sed in eo quod quale quid sit. interrogantibus enim
 nobis illud, de quo praedicantur haec, non in eo quod quid sit dicimus
@@ -258,8 +266,10 @@ quid sit praedicari dividit a dilferentiis et communiter accidentibus,
 quae non in eo quod quid sit. sed in eo quod quale sit vel quomodo
 se habens pracdicantur, de quibus praedicautur. nihil igitur superfluum
 neque minus continet generis dicta descriptio.</p>
-<lb n="15"/> <p>De specie.</p> <note type="marginal">3,21</note>
-<p>Species autem dicitur quidem et de uniuscuiusque forma, secundum
+            <lb n="15"/>
+            <p>De specie.</p>
+            <note type="marginal">3,21</note>
+            <p>Species autem dicitur quidem et de uniuscuiusque forma, secundum
 dum quam dictum est: „Priami quidem species digna est imperio";
 dicitur autem species et ea, quae est sub adsignato genere, secundum
 quam solemus dicere hominem quidem speciem animalis, cum sit
@@ -287,8 +297,7 @@ dicimus, quemlibet illum imperio esse aptum propter formae eximiam dignitatem co
 quidem om. Q est om. C 20 autem ABCL: vero Q: om. P 21 Quodsi L-PQ:
 quod C: sic BL1: quid sit A post dicentes add. illud esse genus Q: om. ABCLPQ
 22 ante differ. add. de P 21 et (post quouiam) om. PQ: exhib. ABCL</note>
-
-<pb n="29"/>
+               <pb n="29"/>
 
 spercies, idcirco necesse est et in utrorumque rationibus utrisque uti.
 adsiunant ergo et sic speciem: species est, quod ponitur sub genere
@@ -303,8 +312,8 @@ et inter generalissima et specialissima sunt alia. est autem
 genus, specialissimum autem, post quod nou erit alia inferior species,
 inter generalissimum autem et specialissimum et genera et species
 sunt eadem, ad aliud quidem et ad aliud sumpta.</p>
-<p>Sit autem in uno praedicamento manifestum quod dicitur. substantia <note type="marginal">4,21</note>
-<lb n="15"/> est quidcm et ipsa genus, sub hac autem est corpus, sub corpore
+            <p>Sit autem in uno praedicamento manifestum quod dicitur. substantia <note type="marginal">4,21</note>
+               <lb n="15"/> est quidcm et ipsa genus, sub hac autem est corpus, sub corpore
 vero animatum corpus, sub quo auimal, sub animali rationalc
 animal. sub quo homo. sub homine Socrates et Plato et qui sunt
 particulares homincs. sed hurum substantia quidcm gcneralissimum
@@ -335,8 +344,7 @@ colloc. B 22 animalis BQ: animatum L (corr. m. 2): animablis P (sed punctiws sup
 corr.) autem BLP : vero Q 23 vero animalis om. Β ratioualis animalis
 colloc. PQ 24 autem (post genus) BPQ: vero L 25 autem om. Q
 etiam om. P: post genus transp. L</note>
-
-<pb n="30"/>
+               <pb n="30"/>
 
 num, sed solum species; et omne quod aute individua proximum est,
 spccies eritsolum, non etiam genus. quemadmodum igitur sulistantia
@@ -358,7 +366,7 @@ quae est ad superiora, quorum est species, eam vero quae est ad
 posteriora non habet, sed etiam individuorum species dicitur, scd
 species quidem individuorum velut ea continens, species autem superiorum,
 <lb n="20"/> velut qiuie ab eis contineatur.</p>
-<p>Determinant ergo generalissimum ita, quod cum genus sit non <note type="marginal">5,17</note>
+            <p>Determinant ergo generalissimum ita, quod cum genus sit non <note type="marginal">5,17</note>
 est species, et rursus, supra quod non erit aliud supervenieus genus;
 specialissimum vero, quod cum sit species non est genus et quod cum
 sit species nunquam dividitur inspecies et quod de pluribus et differ-
@@ -384,8 +392,7 @@ genera om. AC 22 erit L: est BPQ genus unte aliud transp. Q superveniens
 BL: supravenies PQ 23 quod (post et) om. Q: supru scr. P 23. 24 cum sit
 species nunquam dividitur in species et quod om. BL: exhibent L 2PQ 24 et (post
 pluribus) om. Q</note>
-
-<pb n="31"/>
+               <pb n="31"/>
 
 rentibus numero in eo quod quid sit pracdicatur. ea vero quae in
 medio sunt extremorum, subalterna vocantur genera et species, et
@@ -433,8 +440,7 @@ sunt colloc. BQ 20 a generaiissimis om. Q (suppl. in mrg.) descendentem LPQ:
 descendentes B 21 ante descendere add. ad id AC: om. BLPQ supra autem
 add. oportet Q 22 enim om. Q eorum ACLQ: et horum B: horum P esse
 posse secundum (?) disciplinam Q 22. p. 31, 1 disciplina C (corr. m. 2)</note>
-
-<pb n="32"/>
+               <pb n="32"/>
 ciplinam. descendentibus igitur ad specialissima necesse est dividentem
 per multitudinem ire, ascendentibus vero ad generalissima necesse
 est colligere multitudinem. collectivum enim multorum in unam naturam
@@ -443,8 +449,8 @@ species est et magis id quod genus est, particularia vero et
 est: participatione enim specici plures liominos unus, particularibus
 autem unus et communis plures; divisivum enim est semper quod
 singulare est, collectivum antem et adunativum quod commune est.</p>
-<p>Adsignato autem genere et specie quod est utrumque et genere <note type="marginal">6, 24</note>
-<lb n="10"/> quidem uno, speciebus vero pluribus, semper enim in pluros species
+            <p>Adsignato autem genere et specie quod est utrumque et genere <note type="marginal">6, 24</note>
+               <lb n="10"/> quidem uno, speciebus vero pluribus, semper enim in pluros species
 divisio generis est, genus quidem semper de specie praedicatur et
 omnia superiora de inferioribus, species autem neque de proximo sibi
 genere neque de superioribus, nequeenim convertitur. oportot autem
@@ -481,8 +487,7 @@ BL: praedicatur PQ 23 speciebus P et (post autem) om. Q 24 sint LQ: sunt
 BP et de specie om. P exhib. BLQ 25 enim BL: autem PQ post se add. positis
 PQL 2: om BL 1 20 speciebusque BL : speciebus PQ 26. p. 33,1 genus — de individuis
 om. L (suppl. in mrg. m. 2) 26 post autem add. quidem om. BL 2Q</note>
-
-<pb n="33"/>
+               <pb n="33"/>
 
 cialissimum est, de omnibus specialissimis et de individuis, solum
 autem species de omuibus individuis, individuum autem de uno solo
@@ -498,11 +503,13 @@ quidem sub specie, species autem sub genere; totum enim
 quiddam est genus, individuum auteni pars, species vero et toturn et
 pars, sed pars quidem alterius, totum autem non alterius sed aliis;
 partibus enim totum est.</p>
-<lb n="15"/> <p>De genere quidem et specie, et quid generalissimum et quid
+            <lb n="15"/>
+            <p>De genere quidem et specie, et quid generalissimum et quid
 specialissimum et quae geuera eadem et species sunt, quae etiam individua
 et quot modis genus et species dicitur, sufficienter dictum est.</p>
-<p>De differentia.</p> <note type="marginal">8,8</note>
-<p>Differentia vero communiter et proprie et magis proprie dicitur.
+            <p>De differentia.</p>
+            <note type="marginal">8,8</note>
+            <p>Differentia vero communiter et proprie et magis proprie dicitur.
 <lb n="20"/> communiter quidem differre alterum ab altero dicitur, quod alteritate
 quadam differt quocunque modo vel a se ipso vel ab alio. dittert
 enim Socrates a Platone alteritate et ipse a se vel puero vel iam viro
@@ -527,8 +534,7 @@ tot A dicitur A: dicatur BLPQ: dicuntur C 18 tit. om. AC: exhib. BLPQ
 ab Q: om. BLP 22 post alteritate add. quadam Q: om. BLP post ipse
 add. plato L: om. BPQ post se add. ipso PQ: om. BL ante puero add. a B:
 om. LPQ</note>
-
-<pb n="34"/>
+               <pb n="34"/>
 
 et faciente aliquid vel quiescente et semper in aliquo modo habendi
 altentatibus. proprie autem differre alterum ab altero dicitur, quaudo
@@ -549,7 +555,8 @@ fiunt a generibus in species et diffinitiones adsignantur, quae
 sunt ex genere et huiusmodi differentiis; secundum autem eas, quae
 solum alteratum faciunt, alteratio sola consistit et aliquo modo se
 habendi permutationes.</p>
-<lb n="20"/> <p>A superioribus ergo rursus inchoanti dicendum est, differentiarum <note type="marginal">9,7</note>
+            <lb n="20"/>
+            <p>A superioribus ergo rursus inchoanti dicendum est, differentiarum <note type="marginal">9,7</note>
 alias quidem esse separabiles, alias vero inseparabiles. moveri enim
 <note type="footnote">1 et (ante faciente) BLP: vel Q ante habendi add. se Q: post habendi P: om. BL
 2 alteritate P (ut videtur) ab om. B: exhib. LPQ quando LPQ: quoniam B
@@ -577,8 +584,7 @@ permutationes scr. fiunt L 2 20 rursus om. L 1 (suppl. m. 2) incoantes P differe
 A (corr. m. 2) 21 alias post quidem transp. Q 21. p. 35,5 alias vero — perceptibile
 om. C 21 vero om. BLQ: exhib. AP 21. p. 35,5 moveri — perceptibile om. A
 21 enim BLQ: vero P</note>
-
-<pb n="35"/>
+               <pb n="35"/>
 
 et quiescere et sanum esse et aegrum et quaecunque his proxima sunt
 separabilia sunt, at vero aquilum esse vel simum vel ratiouale vel
@@ -597,7 +603,7 @@ uniuscuiusque rationem complent, esse autem unicuique unum et
 <lb n="15"/> idem neque intentionem neque remissionem suscipiens est, aquilum
 autem esse vel simum vel coloratum aliquo modo et inteuditur et
 remittitur.</p>
-<p>Cum igitur tres species differentiae considerentur et cum hae <note type="marginal">9,24</note>
+            <p>Cum igitur tres species differentiae considerentur et cum hae <note type="marginal">9,24</note>
 quidem sint separabiles illae vero inseparabiles et rursus inseparabilium
 <lb n="20"/> cum hae quidem sint per se illae vero per accidens, rursus
 earum quae sunt per se differentiarum aliae quidem sunt secundum
@@ -626,8 +632,7 @@ se transp. Q quidem PL2: vero Q: om. BL1 21. 22 secundum — vero om. Q
 om. L (suppl. m. 2) post vero add. sunt L 2 mrg. Q haec BL: hae Q: ea P
 23 divisa BLP: divisivae Q specificatur Q 23. P. 26, 1 differ. omnes huiusmodi
 BL: huiusmodi omnes differ. P: differ. huiusmodi omnes Q</note>
-
-<pb n="36"/>
+               <pb n="36"/>
 
 huiusmodi sint, animati et inanimati, sensibilis et insensibilis, rationalis
 et inrationalis, mortalis et immortalis, ea quidem quae est animati
@@ -648,7 +653,8 @@ fiunt coustitutivae, aliquo modo autem divisivae, specificae omnes vocantur.
 et his maxime opus est ad divisiones. generum et diffinitiones,
 sed non his quae secundum accidens inseparabiles sunt, nec magis
 his quae sunt separabiles.</p>
-<lb n="20"/> <p>Quas etiam determinantes dicunt: differentia est qua abundat <note type="marginal">10,22</note>
+            <lb n="20"/>
+            <p>Quas etiam determinantes dicunt: differentia est qua abundat <note type="marginal">10,22</note>
 species a genere. homo enim ab auimali phis habet rationale et
 mortale, animal enim neque ipsum nihil horum est, nam unde habe-
 <note type="footnote">3 insensibilis P (sed in del.) 3. 4 animalis — animal in ras. Q 4 et om.
@@ -675,15 +681,14 @@ om. PQ 20 quas — dicunt] quae — dicuntur supra scr. L2 determinationes L1
 22. p. 37,3 homo — nullam om. AC 21 ab animali post habet transp. B plus
 supra scr. Q 22 enim LP: autem P: om. Q post ipsum add. per se L: om.
 BPQ habebunt BPQ: habebit L</note>
-
-<pb n="37"/>
+               <pb n="37"/>
 
 bunt species differentias? neque enim omnes oppositas habet, nam in
 eodem simul habebunt opposita, sed, quemadmodum probant, potestate
 quidem omnes habet sub se differentias, actu vero nullam.
 ac sic neque ex his quae non sunt aliquid fit neque opposita circa
 <lb n="5"/> idem sunt.</p>
-<p>Diffiniunt autem eam et hoc modo: differentia est, quod de pluribus <note type="marginal">11,7</note>
+            <p>Diffiniunt autem eam et hoc modo: differentia est, quod de pluribus <note type="marginal">11,7</note>
 et differentibus specie in eo quod. quale sit praedicatur; rationale
 enim et mortale de homine praedicatum in eo quod quale quiddam
 est homo dicitur, sed non in eo quod quid est; quid est enim
@@ -695,7 +700,7 @@ statua ex materia est aeris, ex forma autem figura: sic et
 <lb n="15"/> homo communis et specialis ex materia quidem similiter consistit genere,
 ex forma autem differentia; totum autem hoc animal rationale
 mortale homo est, quemadmodum illic statua.</p>
-<p>Describunt autem huiusmodi difterentias et hoc modo: differentia <note type="marginal">11,18</note>
+            <p>Describunt autem huiusmodi difterentias et hoc modo: differentia <note type="marginal">11,18</note>
 est, quod aptum natum est dividere quae sub eodem sunt genere;
 <lb n="20"/> rationale enim et inrationale hominem et equum, quae sub eodem
 <note type="footnote">1 post differentias add. autem P: om. BLQ enim BPQ: om. L: an vero? habet]
@@ -725,8 +730,7 @@ differentiam CLPQ et ante huiusmodi transp. L: om. C 19 quod ABLPQ:
 qua C natum om. AC: exhib. BLPQ ante quae add. ea CQ sunt post
 genere transp. LQ 20. 38,1 rationale — genere om. Q (suppl. in mrg. m. 2)
 20 et equum ABLPQ: equumque Q</note>
-
-<pb n="38"/>
+               <pb n="38"/>
 
 sunt genere, quod est animal, dividunt. adsignant autem etiam hoc
 modo: differentia est, qua differunt a se singula, nam secundum genus
@@ -744,9 +748,10 @@ neque eius pars, sed aptitudo quaedam eius est idcirco quoniam
 non est talis, quales sunt quae specificae dicuntur differentiae. erunt
 <lb n="15"/> igitur specificae differentiae, quaecunque alteram faciunt speciem et
 quaecunque in eo quod quale est accipiuntur.</p>
-<p>Et de differentiis quidem ista sufficiunt.</p>
-<p>Be proprio.</p> <note type="marginal">12,12</note>
-<p>Proprium vero quadrifariam dividunt; nam et id quod soli alicui
+            <p>Et de differentiis quidem ista sufficiunt.</p>
+            <p>Be proprio.</p>
+            <note type="marginal">12,12</note>
+            <p>Proprium vero quadrifariam dividunt; nam et id quod soli alicui
 <lb n="20"/> speciei accidit, et si non omni, ut homini medicum esse vel geo-
 <note type="footnote">1 sunt post genere transp. Q autem om. B: exhib. ACLPQ etiam om. Q
 (superscr. m. 2) 2 est om. B: exhib. ACLPQ qua] an quo? 2. 4 nam —
@@ -774,8 +779,7 @@ ABCLQ post id add. proprium esse dicunt B: om. ACLPQ 20 speciei pot
 accidit transp. P post omni add. proprium dicitur P: om. ABCLQ ut ras. L
 homini ACLPQ: hominem (in ras.) B medicum ABCLP : musicum Q esse
 om. Q: exhib. ABCLP</note>
-
-<pb n="39"/>
+               <pb n="39"/>
 
 metram, et quod omni accidit, et si non soli. quemadmodum homini
 esse bipedem, et quod soli et omni et aliquando, ut homini in senectute
@@ -786,8 +790,10 @@ aptus natus sit; hoc autem ei semper est uaturale ut et equo
 hinnibile. haec autem proprie propria perhibent esse, quoniam
 etiam convertuntur; quicquid enim equus, hinnibile, et quicquid hinnibile,
 nibile, equus.</p>
-<lb n="10"/> <p>De accidenti.</p> <note type="marginal">12,23</note>
-<p>Accidens vero est, quod adest et abest praeter subiecti corruptionem.
+            <lb n="10"/>
+            <p>De accidenti.</p>
+            <note type="marginal">12,23</note>
+            <p>Accidens vero est, quod adest et abest praeter subiecti corruptionem.
 dividitur autem in duo, in separabile et in inseparabile.
 nam dormire separabile accidens est, nigrum vero esse inseparabiliter
 corvo et Aethiopi accidit, potest autem subintellegi et corvus albus
@@ -795,10 +801,10 @@ corvo et Aethiopi accidit, potest autem subintellegi et corvus albus
 autem sic quoque: accidens est, quod contingit eidem esse et non
 esse, vel quod neque geuus neque species neque differentia neque
 proprium, semper autem est in subiecto subsistens.</p>
-<p>Omnibus igitur determinatis quae proposita sunt, dico autem genere,
+            <p>Omnibus igitur determinatis quae proposita sunt, dico autem genere,
 <lb n="20"/> specie, differentia, proprio, accidenti, dicendum est, quae his
 communia adsint et quae propria.</p>
-<note type="footnote">1. 7 et quod — perhiberit om. AC 1 homini BLP: hominem Q 2 eses om. Q:
+            <note type="footnote">1. 7 et quod — perhiberit om. AC 1 homini BLP: hominem Q 2 eses om. Q:
 exhib. BLP et (ante aliquando) BP: sed Q: om. L an homini omni? 3 in
 quo concurrit et om. Q: exhib. BLP concurrit B: occurrit L et in ras. P P omni
 et soli colloc. Q 4 semper L: om. BQ: supra scr. M. 2 P 5 rideat BL: ridet
@@ -819,11 +825,10 @@ BLQ: diffiniunt P 16 autem om. B: exhil. LPQ esse (prius) BLP: inesse Q
 protrium add. sit L: est P: om. BQ ante sempor add. scd Q: om. BLP
 subsistens LPQ: consistens B 20 ante accidenti add. et BLPQ : om. AC accidente
 P his AC : eis BLPQ 21 adsint AC: sunt BLPQ</note>
-
-<pb n="40"/>
-
-<p>De communibus generis, speciei, differentiae, proprii et accidentis.</p> <note type="marginal">13,9</note>
-<p>Commune quidem omuibus est de pluribus praedicavi , sed genus
+            <pb n="40"/>
+            <p>De communibus generis, speciei, differentiae, proprii et accidentis.</p>
+            <note type="marginal">13,9</note>
+            <p>Commune quidem omuibus est de pluribus praedicavi , sed genus
 quidem de speciebus et de individius, et differentia similiter,
 species autem de his quae sub ipsa sunt individiis, at vero proprium
 <lb n="5"/> et de specie cuius est proprium et de his quae sub specie sunt individuis,
@@ -838,8 +843,9 @@ his qui sunt particulares , quod est accidens inseparabile, et moveri
 de homioe et de equo, quod est accideus separabile, sed principaliter
 <lb n="15"/> quidem de individuis, secundum posterionem vero rationem de his
 quae contincnt individua.</p>
-<p>De communibus generis et differentiae.</p> <note type="marginal">13,22</note>
-<p>Commune autem generi et differentiae continentia specierum.
+            <p>De communibus generis et differentiae.</p>
+            <note type="marginal">13,22</note>
+            <p>Commune autem generi et differentiae continentia specierum.
 continet enim et differentia species, etsi non omnes quot geuera. rationale
 <lb n="20"/> enim etiamsi non continet ea quae sunt inrationabilia, ut genus,
 quemadmodum animal, sed continet hominem et deum, quae
@@ -864,8 +870,7 @@ communitate P: tit. om. Q 18 post commune add. est AC: post autem LP: om. BQ
 P 20. 21 ut genus inducendum est 21 post sed add. tamen P: supra scr. Q:
 om. BL ante deum add. angelum et L: om. BPQ ut genus] ut genera oomment.
 (cf. p. 41,4)</note>
-
-<pb n="41"/>
+               <pb n="41"/>
 
 his quae sub ipso sunt speciebus praedicantur, quaecuuque de differentia
 praedicautur ut differentiae, et de ea quae ex ipsa est specie
@@ -879,8 +884,9 @@ id quod est ratione uti. comnune autem est et perempto genere
 <lb n="10"/> vel differentia simul perimi quae sub ipsis sunt; quemadmodum
 enim si non sit animal, non est equus neque homo, ita si non sit rationale,
 nullum enit animal quod utatur ratione.</p>
-<p>De proiyriis generis et diferentiae.</p> <note type="marginal">14,13</note>
-<p>Proprium autem generis est de pluribus praedicari, quam differentia
+            <p>De proiyriis generis et diferentiae.</p>
+            <note type="marginal">14,13</note>
+            <p>Proprium autem generis est de pluribus praedicari, quam differentia
 <lb n="15"/> et species et proprium et accideus; animal enim de homine et
 equo et ave et serpente, quadrupes vero de solis quattuor pedes habentibus,
 homo vero de solis individuis et hinnibile de equo et de
@@ -911,8 +917,7 @@ BLQ post vero add. videtur L: om. BPQ 17 ignibile Q de (post et) om.
 L: exhib. BPQ 18 et accidens post similiter transp. P post paucioribus add.
 praedicatur quam diffcrentia P: om. BLQ 20 differentiam BLP: differentias Q
 20. p. 42,1 potestate BLP: potante enim Q</note>
-
-<pb n="42"/>
+               <pb n="42"/>
 
 testate: animalis enim hoc quidem rationale est illud vero inrationale.
 amplius genera quidem priora sunt his quae sunt sub se positae
@@ -928,14 +933,17 @@ sunt, ut rationale, mortale, mentis et disciplinae perceptibile, quibus
 ab aliis differt. et genus quidem consimile est materiae, formae vero
 differentia. cum autem sint et alia communia et propria generis et
 differentiae, nunc ista sufficiant.</p>
-<lb n="15"/> <p>De communibus generis et speciei.</p> <note type="marginal">15,9</note>
-<p>Genus autem et species commune quldem habeut de pluribus,
+            <lb n="15"/>
+            <p>De communibus generis et speciei.</p>
+            <note type="marginal">15,9</note>
+            <p>Genus autem et species commune quldem habeut de pluribus,
 quemadmodum dictum est, praedicari, sumatur autem species ut species
 et non etiam ut genus, si fuerit idem species et genus. commune
 autem his est et priora esse eorum de quibus praedicantur, et
 <lb n="20"/> totum quiddam esse utrumque.</p>
-<p>De propriis generis et speciei.</p> <note type="marginal">15,14</note>
-<p>Differt autem eo quod genus quidem continet species sub se,
+            <p>De propriis generis et speciei.</p>
+            <note type="marginal">15,14</note>
+            <p>Differt autem eo quod genus quidem continet species sub se,
 <note type="footnote">1 animalis BLQ: animalium P enim om. BL: exhib. PQ rationale post est
 transp.P 2 genera quidem priora sunt BL: quidem genus prius est P: genera quidem
 ampliora sunt Q sunt (alterum) om. Q: exhib. BLP 2. 3 positae BPQ: positis L
@@ -958,8 +966,7 @@ BL: sed P: om. Q ut supra scr. B species et genus BPQ: et genus et species L
 transp. B 21 tit. om. PQ: exhib. ABCL De propriis ABL: De differentiis
 22 post autem add. genus a specie P: om. ABCLQ eo om. BL: exhib. ABPQ
 sub se continet species colloc P: species continet sub se Q</note>
-
-<pb n="43"/>
+               <pb n="43"/>
 
 species vero continentur et non coutinent genera, in pluribus enim
 genus quam species est. genera enim praeiacere oportet et formata
@@ -971,15 +978,17 @@ species vero de generibus minime. amplius quidem genera abundant
 earum quae sub ipsis sunt specierum contiuenfia, species vero
 a generibus abuudaut propriis differentiis. amplius neque species
 <lb n="10"/> fiet unquam generalissimum, neque genus specialissimum.</p>
-<p>De communibus generis et proprii.</p> <note type="marginal">16,1</note>
-<p>Generis autem et proprii commune quidem est sequi species;
+            <p>De communibus generis et proprii.</p>
+            <note type="marginal">16,1</note>
+            <p>Generis autem et proprii commune quidem est sequi species;
 nam si homo est, animal est, et si homo est, risibile est. et aequaliter
 praedicari genus de speciebus et proprium de his quae illo participant;
 <lb n="15"/> aequaliter enim et homo et bos animal et Cato et Cicero
 risibile. commune autem et univoce praedicari genus de propriis
 speciebus et proprium quorum est proprium.</p>
-<p>De propriis generis et proprii.</p> <note type="marginal">16,8</note>
-<p>Differt autem, quoniam genus quidem prius est, posterius vero
+            <p>De propriis generis et proprii.</p>
+            <note type="marginal">16,8</note>
+            <p>Differt autem, quoniam genus quidem prius est, posterius vero
 <lb n="20"/> proprium; oportet enim esse animal, dehinc dividi differentiis et pro-
 <note type="footnote">1 vero ABCLP: autem Q coutinentur L: continetur ABCPQ post continentur
 add. a genere P: om. ABCLQ continent ALP: continet BCQ L 9 pluribus—differentiis
@@ -1003,8 +1012,7 @@ L: de his PQ: om. ABC 18 tit. om. PQ: exhib. ABCL generis ct proprii BCL:
 eorum A 19 post autem add. genus et proprium LQ: om. ABCP postorius om. Q:
 exhib. ABCLP 20. p. 44,9 oportet—interimunt genera om. AC 20 ante esse add
 prius Q: om. BLP et om. Q</note>
-
-<pb n="44"/>
+               <pb n="44"/>
 
 priis. et genus quidem de pluribus speciebus praedicari, proprium vero
 de una sola specie, cuius est proprium. et proprium quidem conversim
@@ -1017,13 +1025,15 @@ semper, non autem soli. amplius species quidem interemptae non
 simul interimunt genera, propria vero interompta simul interimunt
 <lb n="10"/> ea, quorum sunt propria, et his quorum sunt propria interemptis et
 ipsa simul interimuntur.</p>
-<p>De communibus generis et accidentis.</p> <note type="marginal">16,18</note>
-<p>Generis vero et accidentis commune est de pluribus, quemadmodum
+            <p>De communibus generis et accidentis.</p>
+            <note type="marginal">16,18</note>
+            <p>Generis vero et accidentis commune est de pluribus, quemadmodum
 dictum est, praedicari, sive separabilium sit sive inseparabilium;
 <lb n="15"/> etenim moveri de pluribus et nigrum de corvis et de hominibus
 Aethiopibus ct aliquibus inanimatis.</p>
-<p>De propriis generis et accidentis.</p> <note type="marginal">17,3</note>
-<p>Differt autem genus ab accidenti, quoniam genus ante species
+            <p>De propriis generis et accidentis.</p>
+            <note type="marginal">17,3</note>
+            <p>Differt autem genus ab accidenti, quoniam genus ante species
 est, accidentia vcro speciebus posteriora sunt; nam si etiam inseparabile
 <lb n="20"/> sumatur accidens, sed tamen prius est illud, cui accidit, quam
 accidens. et genere quidem quae participant, aequaliter participant,
@@ -1047,8 +1057,7 @@ ACLPQ: etiam B accidente codd. 19 posteriora AC: inferiora BLPQ
 19. p. 45,7 nam—unumquodque om. AC 20 sed BP: eras. L: om. Q 21. p. 45,1 genere
 et accidenti correxi: genera et accidentia codd. 21 post aequaliter add. de his
 quae Q: om. BLP</note>
-
-<pb n="45"/>
+               <pb n="45"/>
 
 accidenti vero non aequaliter; intentionom enim et remissionem
 suscipit accidentium participatio, generum vero minime. et accidentia
@@ -1059,7 +1068,8 @@ sunt, accidentia vero in eo quod quale aliquid sit vel quomodo se
 habeat unumquodque; qualis est enim Aethiops interrogatus dicis
 niger, et quemadmodum se Socrates habeat dicis quoniam sedet vel
 ambulat.</p>
-<lb n="10"/> <p>Geuus vero quo ab aliis quattuor differat dictum est. contingit <note type="marginal">17,14</note>
+            <lb n="10"/>
+            <p>Geuus vero quo ab aliis quattuor differat dictum est. contingit <note type="marginal">17,14</note>
 autem etiam unumquodque aliorum differre ab aliis quattuor, ut cum
 quinque sint, unumquodque autem ab aliis quattuor differat, quater
 quinque, viginti flant omnes differentiae. sed semper posteriobus
@@ -1096,8 +1106,7 @@ BL: et a proprio Q: om. P accidente B 21 differentiae om. Q: post rursus
 transp. L post species add. vero (om. quo) L quidcm om. Q: exhib. BLP
 differat LPQ: differt B 22 quid BL: quo PQ differret BL: differet PQ differet
 post quando transp. Q a specie differentia BQ: species a differentia LP</note>
-
-<pb n="46"/>
+               <pb n="46"/>
 
 dicebatur; quo autem difterat species a genere dictum est, quando
 quid diflferret genus a specie dicebatur; reliquum est igitur, ut quo
@@ -1108,12 +1117,16 @@ illorum ad ipsum differentia. quattuor igitur sumptis generis ad alia
 differentiis, tribus vero differentiae, duabus autem speciei, una autem
 proprii ad accidens, decem erunt omnes, quarum quattuor, quae erant
 generis ad reliqua, superius demonstravimus.</p>
-<lb n="10"/> <p>De communibus differentiae et speciei.</p> <note type="marginal">18,10</note>
-<p>Commune ergo differentiae et speciei est aequaliter participari; homine enim aequaliter participant particulares homines et rationali
+            <lb n="10"/>
+            <p>De communibus differentiae et speciei.</p>
+            <note type="marginal">18,10</note>
+            <p>Commune ergo differentiae et speciei est aequaliter participari; homine enim aequaliter participant particulares homines et rationali
 differentia. commune vero est et semper adesse his quae participant;
 semper enim Socrates rationabilis et semper Socrates homo.</p>
-<lb n="15"/> <p>De propriis differentiae et speciei.</p> <note type="marginal">18,15</note>
-<p>Proprium autem differentiae quidem est in eo quod quale sit
+            <lb n="15"/>
+            <p>De propriis differentiae et speciei.</p>
+            <note type="marginal">18,15</note>
+            <p>Proprium autem differentiae quidem est in eo quod quale sit
 praedicari, speciei autem in eo quod quid est; nam et si homo velut
 qualitas accipiatur, non hic simpliciter erit qualitas sed secundum
 id quod generi advenientes differentiae eam constituerunt. amplius
@@ -1139,8 +1152,7 @@ supra scr.B 16 quod ex quid corr. C 17 speciei BCLP: species AQ est
 ABCLP: sit Q post est add. praedicari Q: om. ABCLP 12. p. 47, 10 nam —
 generationem om. AC 17 et B : om. LPQ 18 ante non add. hic L: post non
 BP: om Q erit post qualitas transp. L</note>
-
-<pb n="47"/>
+               <pb n="47"/>
 
 differentia quidem in pluribus saepe speciebus considratur, quemadmodum
 quadrupes in phuibus animalibus specie differentibus, species
@@ -1153,15 +1165,16 @@ est in substantia hominis; species vero speciei non componitur, ut
 gignat aliam aliquam speciem; quidam enim equus cuidam asino permiscetur
 <lb n="10"/> ad muli generationem, equus autem simpliciter asino nonquam
 conveniens perficiet mulum.</p>
-<p>De communibus differentiae et proprii.</p> <note type="marginal">19,4</note>
-<p>Differentia vero et proprium commune quidem habent aequaliter
+            <p>De communibus differentiae et proprii.</p>
+            <note type="marginal">19,4</note>
+            <p>Differentia vero et proprium commune quidem habent aequaliter
 participari ab his quae eorum participant; aequaliter enim rationabilia
 <lb n="15"/> rationabilia sunt et risibilia risibilia. et semper et omni adesse commune
 utriusque est; si enim curtetur qui est bipes, non substantiam
 perimit, sed ad quod natum est semper dicitur; nam et risibile in
 eo quod natum est habet id quod est semper, sed non in eo quod
 semper rideat.</p>
-<note type="footnote">1 saepe BLP: sese Q 1. 2 quemadmodum BLP: velut Q 2 quadrupes B:
+            <note type="footnote">1 saepe BLP: sese Q 1. 2 quemadmodum BLP: velut Q 2 quadrupes B:
 quadrupedes LPQ post animalibus add. et punct. supp. del. diflferentia Q 3 in —
 sub om. P 3 ante specie add. una BP: ipsa Q: om. L est om PQ: exhib. BL
 4 post differ. add. quidem Q: om. BLP differ. post prima transp. B ante prima
@@ -1185,30 +1198,31 @@ Q: om. BLP post est add. habet et id quod est LP: om. BQ: fortasse id quod est r
 post semper add. esse Q: om. BLP 17. 18 nam — semper om. Q in
 eo B: eo L: id A: ad CP 18 id quod est BL: supra scr. m.1 C: id quod quod est
 P: om. A post semper add. m.2 dicitur L in om. C: exhib. ABLPQ</note>
-
-<pb n="48"/>
-
-<p>De propriis differentiae et proprii.</p> <note type="marginal">19,10</note>
-<p>Proprium autem differentiae est, quoniam haec quidem de pluribus
+            <pb n="48"/>
+            <p>De propriis differentiae et proprii.</p>
+            <note type="marginal">19,10</note>
+            <p>Proprium autem differentiae est, quoniam haec quidem de pluribus
 speciebus dicitur saepe. ut rationale de homine et de deo, proprium
 vero de una sola specie, cuius est proprium. et ditferentia
 <lb n="5"/> quidem illis est consequens, quorum est differentia, sed non convertitur;
 propria vero conversim praedicantur quorum sunt propria, idcirco
 quoniam couvertuntur.</p>
-<p>De comimmibus differentiae et accidentis.</p> <note type="marginal">19,16</note>
-<p>Differentiae autem et accidenti commune quidem est de pluribus
+            <p>De comimmibus differentiae et accidentis.</p>
+            <note type="marginal">19,16</note>
+            <p>Differentiae autem et accidenti commune quidem est de pluribus
 <lb n="10"/> dici; commune vero est ad ea quae sunt inseparabilia accidentia semper
 et omnibus adesse; bipes enim semper adest omnibus corvis et
 nignim similiter.</p>
-<p>De propriis differentiae et accidentis.</p> <note type="marginal">19,20</note>
-<p>Differunt autem quoniam differentia quidem continet et non continetur,
+            <p>De propriis differentiae et accidentis.</p>
+            <note type="marginal">19,20</note>
+            <p>Differunt autem quoniam differentia quidem continet et non continetur,
 <lb n="15"/> continet enim rationabilitas hominem, accidentia vero quodam
 quidem modo continent eo quod in pluribus sunt, quodam vero modo
 continentur eo quod non unius accidentis susceptibilia sunt subiecta,
 sed plurimorum. et differentia quidem intentibilis est et inremissibilis,
 accidentia vero magis et minus recipiunt. et inpermixtae quidem
 <lb n="20"/> sunt contrariae differentiae, mixta vero contraria accidentia.</p>
-<note type="footnote">1 tit. om. PQ: exhib. ABCL 3 saepe dicitur colloc. Q 3. 5 saepe—conveititur om. AC
+            <note type="footnote">1 tit. om. PQ: exhib. ABCL 3 saepe dicitur colloc. Q 3. 5 saepe—conveititur om. AC
 3 saepe supra scr. L2 de (ante deo) om. L: exhib. BPQ post deo add. et angelo L:
 om. BPQ 4 de una LQ: in una BP post specie add. est P: om. BLQ 5 illis post
 est transp. PQ inter est et di differentia ras. L 6 conversim ABCLQ: conversum P
@@ -1228,21 +1242,22 @@ BQ: quodammodo P 16 in supra scr. L sunt LP: sint BQ
 PQ est om. P: exhib. BLQ 18. 19 post in remissibilis add. est LP: om. BQ
 19 recipiunt BLQ: suscipiunt P 19. 20 quidem om.Q: exhib. BhP 20 post vero
 add. sunt B: post accid. supra scr. L: om. PQ contraria post accid. transp. Q</note>
-
-<pb n="49"/>
-
-<p>Huiusmodi quidem communiones et proprietates difterentiae et
+            <pb n="49"/>
+            <p>Huiusmodi quidem communiones et proprietates difterentiae et
 ceterorum sunt. species vero quo quidem differat a genere et differentia,
 dictum est in eo quod dicebamus, quo genus differret a ceteris
 et quo differentia differret a ceteris.</p>
-<lb n="5"/> <p>De communibus speciei et proprii.</p> <note type="marginal">20,11</note>
-<p>Speciei autem et proprii commune est de se invicem praedicari:
+            <lb n="5"/>
+            <p>De communibus speciei et proprii.</p>
+            <note type="marginal">20,11</note>
+            <p>Speciei autem et proprii commune est de se invicem praedicari:
 nam si homo, risibile est, et si risibile, homo est; risibile vero quoniam
 et secundum id quod natum est sumi oportet, saepe iam dictum
 est; aequaliter enim sunt species his quae eorum participant
 <lb n="10"/> et propria quorum sunt propria.</p>
-<p>De propriis speciei et proprii.</p> <note type="marginal">20,16</note>
-<p>Differt autem species a proprio, quoniam species quidem potest
+            <p>De propriis speciei et proprii.</p>
+            <note type="marginal">20,16</note>
+            <p>Differt autem species a proprio, quoniam species quidem potest
 et aliis genus csse, proprium vero et aliarum specierum esse inpossibile
 est. et species quidem ante subsistit quam proprium, proprium
 <lb n="15"/> vero postea fit in specie; oportet enim hominem esse. ut sit risibile.
@@ -1273,17 +1288,18 @@ sit Q 19 termini BPQ: diffinitiones L ante differentes add. sunt Q: post diff. P
 om. BL post autem add proprium Q: om. BLP post speciei add. esse L: diffinitio
 BP: om. Q semper] an quidem? 20 et post semper) om. PQ: exhib. BL sub
 genere esse BLP: adesse subalterne Q et (ante different.) om. Q: exhib. BLP</note>
-
-<pb n="50"/>
+               <pb n="50"/>
 
 eo quod quid est praedicari et cetera huiusmodi. proprii vero quod
 est soli et semper et omni adesse.</p>
-<p>De communibus speciei et accidentis.</p> <note type="marginal">21,4</note>
-<p>Speciei vero et accidentis commune quidem est de pluribus pracdicari;
+            <p>De communibus speciei et accidentis.</p>
+            <note type="marginal">21,4</note>
+            <p>Speciei vero et accidentis commune quidem est de pluribus pracdicari;
 <lb n="5"/> rarae vero aliae sunt communitates, propterea quoniam quam
 plurimum a se distant accidens et id cui accidit.</p>
-<p>De propriis speciei et accidentis.</p> <note type="marginal">21,8</note>
-<p>Propria vero utriusque sunt, speciei quidem in eo quod quid est
+            <p>De propriis speciei et accidentis.</p>
+            <note type="marginal">21,8</note>
+            <p>Propria vero utriusque sunt, speciei quidem in eo quod quid est
 praedicari de his quorum est, accidentis autem in eo quod
 <lb n="10"/> quale quiddam est vel aliquo modo se habens. et unamquamque
 substantiam una quidem specie participare. pluribus autem accidentibus
@@ -1294,9 +1310,9 @@ enim esse subiectum, ut illi aliquid accidat), accidentia vero posterioris
 aequaliter est, accidentis vero. vel si inseparabile sit, non aequalitor:
 Aethiops enim alio Aethiope habebit colorem vcl intentum amplius
 vel remissum secundum nigredinem.</p>
-<p>Restat igitur de proprio ot accidenti dicere: quo enim proprium
+            <p>Restat igitur de proprio ot accidenti dicere: quo enim proprium
 <lb n="20"/> a specie et differentia et genere differt, dictum est.</p>
-<note type="footnote">1 quid in ras. L est BLP: sit Q proprii ABCPQ: proprium L quod
+            <note type="footnote">1 quid in ras. L est BLP: sit Q proprii ABCPQ: proprium L quod
 est om. BPQ: exhib. ACL 2 post est add. et P: om. ABCLQ 2 soli et seinper
 et omni AC: soli et omui et semper B: soli et omni (om. et semper) LP: semper et
 omni et soli Q adesse mutatum in adest L 3 tit. om. Q: exhib. ABCLP
@@ -1316,27 +1332,28 @@ bilis B arcidentis BPQ: accidens L vel si Q: vel B: si LP 17 et int.
 ampl. et rem. ’ intentum BL: iutensum PQ 18 nigredinem BP: nigritudi-
 nem LQ 11) dicere et accidente P enim om. P: exhib. BLQ 20 a om.
 ABCLP: exhib. Q et (ante differ.) om. AP: eras. C: exhib. BLQ</note>
-
-<pb n="51"/>
-
-<p>De communibus proprii et accidentis.</p> <note type="marginal">21,20</note>
-<p>Commune autem proprii et inseparabilis accidentis est, quod
+            <pb n="51"/>
+            <p>De communibus proprii et accidentis.</p>
+            <note type="marginal">21,20</note>
+            <p>Commune autem proprii et inseparabilis accidentis est, quod
 praeter ea nunquam constant illa, in quibus considerantur; quemadmodum
 enim praeter risibile non subsistit homo, ita nec praeter nigredinem
 <lb n="5"/> subsistit Aethiops, et quemadmodum semper et omni adest
 proprium, sic et inseparabile accidens.</p>
-<p>De propnis proprii et accidentis.</p> <note type="marginal">22,4</note>
-<p>Differt autem quoniam proprium uni soli speciei adest, quemadmodum
+            <p>De propnis proprii et accidentis.</p>
+            <note type="marginal">22,4</note>
+            <p>Differt autem quoniam proprium uni soli speciei adest, quemadmodum
 risibile. homini; inseparabile vero accidens, ut nigrum, non
 <lb n="10"/> solum Aethiopi sed etiam corvo adest et carboni et ebeno et quibusdam
 dam aliis. quare proprium conversim praedicatur de eo cuius est
 proprium et aequaliter, inseparabile vero accidens conversim non
 praedicatur. et propriorum quidem aequalis est participatio, accidentium
 dentium vero haec quidem magis, illa vero minus.</p>
-<lb n="15"/> <p>Sunt quidem etiam aliae communitates vel proprietates eorum
+            <lb n="15"/>
+            <p>Sunt quidem etiam aliae communitates vel proprietates eorum
 quae dicta sunt, sed sufficiunt etiam haec ad discretionem eorum
 conimunitatisque traditionem.</p>
-<note type="footnote">1 tit. om. Q: exhib. ABCLP communibus ABCL: communitate et differentia P post
+            <note type="footnote">1 tit. om. Q: exhib. ABCLP communibus ABCL: communitate et differentia P post
 accidentis add. inseparabilis P: om ABCL 2 inseparab. post accidentis transp. BQ
 est ante autem transp. L: ante accid. P 3 ea] ipsa P1 (ea supra scr. m.2)
 constant C: consistant ABL: exstant P: consistunt Q (cf. p. 25, 13) illa ABCLP:
@@ -1353,8 +1370,7 @@ propriorum LP: proprii BQ aequalis] an aequaliter? (cf. p. 50,16) 13. 14
 BLP: accidentis Q 15 etiam ABCLP: et Q aliae om. P: exhib. ABCLQ
 vel ACLQ: et BP earum quae dictae C 16 etiam haec ABCLP: haec et Q
 post eorum add. quae dicta sunt Q: om. ABCLP 17 tradiditionem B</note>
-            </div>
-    </div>
-        </body>
-</text>
+         </div>
+      </body>
+   </text>
 </TEI>

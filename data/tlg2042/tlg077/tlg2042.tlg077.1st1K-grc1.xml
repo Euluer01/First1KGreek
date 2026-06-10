@@ -1,102 +1,114 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
- <teiHeader xml:lang="eng">
-  <fileDesc>
-   <titleStmt>
-    <title xml:lang="lat">Scholia in Matthaeum</title>
-    <author>Origen</author>
-    <editor>Charles de La Rue</editor>
-    <editor>Charles Vincent de La Rue</editor>
-    <funder>Harvard Library Arcadia Fund</funder>
-    <principal>Gregory Crane</principal>
-    <respStmt>
-     <persName xml:id="DDD">Digital Divide Data</persName>
-     <resp>Corrected and encoded the text</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Gregory Crane</persName>
-     <resp>Editor-in-Chief, Perseus Digital Library</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Matt Munson</persName>
-     <resp>Project Manager (University of Leipzig)</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Annette Gessner</persName>
-     <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Thibault Clérice</persName>
-     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Bruce Robertson</persName>
-     <resp>Technical Advisor</resp>
-    </respStmt>
-   </titleStmt>
-   <publicationStmt>
-    <authority>Harvard College Library</authority>
-    <idno type="filename">tlg2042.tlg077.1st1K-grc1.xml</idno>
-    <availability>
-     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-    </availability>
-    <date>2018</date>
-    <publisher>Harvard College Library</publisher>
-    <pubPlace>United States</pubPlace>
-   </publicationStmt>
-   <sourceDesc>
-    <listBibl>
-     <biblStruct>
-      <monogr>
-       <title xml:lang="lat">Origenis Opera Omnia</title>
-       <editor>Charles de La Rue</editor>
-       <editor>Charles Vincent de La Rue</editor>
-       <author ref="urn:cts:greekLit:tlg2042">Origen</author>
-       <imprint>
-        <publisher>J. P. Migne</publisher>
-        <pubPlace>Paris</pubPlace>
-        <date>1857</date>
-       </imprint>
-       <biblScope unit="volume">7</biblScope>
-      </monogr>
-      <series>
-       <title level="s" xml:lang="lat">Patrologiae cursus completus (series
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Scholia in Matthaeum</title>
+            <author>Origen</author>
+            <editor>Charles de La Rue</editor>
+            <editor>Charles Vincent de La Rue</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg2042.tlg077.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2018</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg2042.tlg077.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Origenis Opera Omnia</title>
+                     <editor>Charles de La Rue</editor>
+                     <editor>Charles Vincent de La Rue</editor>
+                     <author ref="urn:cts:greekLit:tlg2042">Origen</author>
+                     <imprint>
+                        <publisher>J. P. Migne</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date>1857</date>
+                     </imprint>
+                     <biblScope unit="volume">7</biblScope>
+                  </monogr>
+                  <series>
+                     <title level="s" xml:lang="lat">Patrologiae cursus completus (series
         Graeca)</title>
-       <biblScope unit="volume">17</biblScope>
-      </series>
-      <ref target="https://archive.org/stream/patrologiae_cursus_completus_gr_vol_017#page/n155/mode/2up">The Internet Archive</ref>
-     </biblStruct>
-    </listBibl>
-   </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-   <p>Text encoded in accordance with the latest EpiDoc standards</p>
-   <refsDecl n="CTS">
-    <cRefPattern n="verse" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-    <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-   </refsDecl> 
-  </encodingDesc>
-  <profileDesc>
-   <langUsage>
-    <language ident="grc">Greek</language>
-    <language ident="lat">Latin</language>
-   </langUsage>
-  </profileDesc>
-  <revisionDesc>
-   <change/>
-  </revisionDesc>
- </teiHeader>
-<text>
-<body>
- <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2042.tlg077.1st1K-grc1">
-<pb n="289"/>
-<head>ΩΡΙΓΕΝΟΥΕ
+                     <biblScope unit="volume">17</biblScope>
+                  </series>
+                  <ref target="https://archive.org/stream/patrologiae_cursus_completus_gr_vol_017#page/n155/mode/2up">The Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards</p>
+         <refsDecl n="CTS">
+            <cRefPattern n="verse"
+                         matchPattern="(.+).(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern n="chapter"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg2042.tlg077.1st1K-grc1">
+         <pb n="289"/>
+         <head>ΩΡΙΓΕΝΟΥΕ
 ΕΙΣ ΚΑΤΑ ΜΑΤΘΑΙΟΝ ΕΥΑΓΓΕΛΙΟΝ.</head>
-<div type="textpart" subtype="chapter" n="1">
- <head>ΚΕΦ. Α΄.</head>
- <div type="textpart" subtype="verse" n="18" corresp="urn:cts:greekLit:tlg0031.tlg001:1.18">
-<p>Στιχ. ιη΄. Τοῦ δὲ Ἰησοῦ ἡ γέννησις οὕτως ἦν.
+         <div n="1" type="chapter">
+            <head>ΚΕΦ. Α΄.</head>
+            <div n="18" corresp="urn:cts:greekLit:tlg0031.tlg001:1.18" type="verse">
+               <p>Στιχ. ιη΄. Τοῦ δὲ Ἰησοῦ ἡ γέννησις οὕτως ἦν.
 . . . . . . . (1–2) Ὧδε μὲν γεννήσεως μέμνηται ὁ
 εὐαγγελιστὴς, κατʼ ἀρχὰς δὲ τοῦ Εὐαγγελίου, τῆς
 γενέσεως. Ἐνταῦθα μὲν γὰρ λέγει· Τοῦ δὲ Ἰησοῦ
@@ -132,27 +144,27 @@
 σαρκὸς, ἢ ἀνδρὸς, ἀλλʼ ἐκ Πνεύματος ἁγίου,
 ὑπὲρ ἡμᾶς. Ὅπερ καὶ τὴν μέλλουσαν προανεφώνει
 <note type="footnote">Math. I, 1.</note>
-<note type="footnote">(12) Ex cod. Cat. mss. in Mauhæum apud clariss.
+                  <note type="footnote">(12) Ex cod. Cat. mss. in Mauhæum apud clariss.
 Muarellum,initium ita supple : Σὺ δὲ πρὸς τούτοις
 ζήτει, ὅτι πῶς ποτε ἄρα ὧδε, ec.</note>
-<note type="footnote">(3) In cod. liι.:I λόγος· τοῦτο γὰρ εἴρηται· ἀλλὰ
+                  <note type="footnote">(3) In cod. liι.:I λόγος· τοῦτο γὰρ εἴρηται· ἀλλὰ
 τὸ, πῶς ὄπισθεν γενέσεως ἐμνημόνευσεν ὁ Ματθαῖος,
 ὦδε δὴ γεννήσλως. Καὶ τί ἐστι γέννησις, καὶ τί ἐστι</note>
-
-<pb n="292"/>
+                  <pb n="292"/>
 γέννησιν, ἣν ἡμῖν ἔμελλεν ἐκ Πνεύματος χαρίσεσθαι.</p>
-</div>
-</div>
-<div type="textpart" subtype="chapter" n="7">
- <head>ΚΕΦ. Ζ΄.</head>
- <div type="textpart" subtype="verse" n="5" corresp="urn:cts:greekLit:tlg0031.tlg001:7.5">
-<p>(5) Στιχ. ε΄. Μὴ δῶτε τὸ ἄγιον τοῖς κυσὶ, μηδὲ
+            </div>
+         </div>
+         <div n="7" type="chapter">
+            <head>ΚΕΦ. Ζ΄.</head>
+            <div n="5" corresp="urn:cts:greekLit:tlg0031.tlg001:7.5" type="verse">
+               <p>(5) Στιχ. ε΄. Μὴ δῶτε τὸ ἄγιον τοῖς κυσὶ, μηδὲ
 βάλητε τοὺς μαργαρίτας ὑμῶν ἔμπροσθεν τῶν
-χοίρων...</p></div>
-  <div type="textpart" subtype="verse" n="6" corresp="urn:cts:greekLit:tlg0031.tlg001:7.6">
-<p>Στιχ. ς΄. Αἰτεῖτε, καὶ δοθήσεται ὑμῖν· ζητεῖτε,
+χοίρων...</p>
+            </div>
+            <div n="6" corresp="urn:cts:greekLit:tlg0031.tlg001:7.6" type="verse">
+               <p>Στιχ. ς΄. Αἰτεῖτε, καὶ δοθήσεται ὑμῖν· ζητεῖτε,
 καὶ εὑρήσετε· κρούετε, καὶ ἀνοιγήσεται ὑμῖν.</p>
-<p>Ἵνα μὴ ἀγνοῶσιν οἱ μαθηταὶ, τίνες εἰσὶν κύνες, ἢ
+               <p>Ἵνα μὴ ἀγνοῶσιν οἱ μαθηταὶ, τίνες εἰσὶν κύνες, ἢ
 χοῖροι ἐν τοῖς ἀκροαταῖς, ἐπιμόνως ζητήσατε, φησὶν,
 ἐκ Θεοῦ, καὶ ἀποκαλύπτεται ὑμῖν πάντα. Ἀρχὴ μὲν
 γὰρ ἀρετῆς τὸ διʼ εὐχῆς γνῶναι τὸ ἀγαθόν· εἶτα τὸ
@@ -164,13 +176,14 @@ Muarellum,initium ita supple : Σὺ δὲ πρὸς τούτοις
 θεῖα καταστάσει, καὶ περὶ τοῦ εὑρεῖν συναισθήτως
 τῆς τῶν κεκρυμμένων Γραφῶν ἀσφαλείας τὸ βάθος,
 ἀκριβεῖ πολυπραγμοσύνῃ· οὕτω γὰρ ἀνοίγεσθαί φησι
-τὰς Γραφάς.</p></div>
- <div type="textpart" subtype="verse" n="9" corresp="urn:cts:greekLit:tlg0031.tlg001:7.9">
-<p>Στιχ. θ΄. Τᾶς ἐξ ὑμῶν ἄνθρωπος, ὂν ἐὸν αἰτήσῃ δ
+τὰς Γραφάς.</p>
+            </div>
+            <div n="9" corresp="urn:cts:greekLit:tlg0031.tlg001:7.9" type="verse">
+               <p>Στιχ. θ΄. Τᾶς ἐξ ὑμῶν ἄνθρωπος, ὂν ἐὸν αἰτήσῃ δ
 υἱὸς αὐτοῦ ἄρτον, μὴ λίθον ἐπιδώσει αὐτῷ;
 Στιχ. ι΄. Καὶ ἐὰν ἰχθὺν αἰτήσῃ, μὴ ὄφιν ἐπιδώσει
 αὐτῷ;</p>
-<p>Ὅρα δὲ εἰ <gap reason=" omitted"/> γνῶσις τροφὴ, ἧς ἄνω οὐκ ἔστι
+               <p>Ὅρα δὲ εἰ <gap reason=" omitted"/> γνῶσις τροφὴ, ἧς ἄνω οὐκ ἔστι
 σώζεσθαι· οἷον ὁ περὶ τοῦ πῶς βρωτέον ἀκριβὴς λόγος.
 Ἰχθὺς δὲ καὶ οἷον ὄψον φιλομαθεῖ τὸ εἰδέναι
 σύστασιν κόσμου, ἐνέργειαν στοιχείων, ἀρχὴν καὶ
@@ -192,12 +205,12 @@ Muarellum,initium ita supple : Σὺ δὲ πρὸς τούτοις
 γάρ τις καὶ τούτους φύσει κακοὺς εἰπεῖν, καίπερ
 μὴ φύσει κακοὺς δημιουργηθέντας, ἀλλʼ ἐξ αὐτοπροαιρέτου
 κακίας ἀπεσκληκότας.</p>
-</div>
-</div>
-<div type="textpart" subtype="chapter" n="8">
- <head>ΚΕΦ. Η΄.</head>
- <div type="textpart" subtype="verse" n="11" corresp="urn:cts:greekLit:tlg0031.tlg001:8.11">
-<p>Στιχ. ια΄. Πολλοὶ ἀπὸ ἀνατολῶν καὶ δυσμῶν
+            </div>
+         </div>
+         <div n="8" type="chapter">
+            <head>ΚΕΦ. Η΄.</head>
+            <div n="11" corresp="urn:cts:greekLit:tlg0031.tlg001:8.11" type="verse">
+               <p>Στιχ. ια΄. Πολλοὶ ἀπὸ ἀνατολῶν καὶ δυσμῶν
 ἥξουσι, ταὶ ἀνακλιθήσονται μετὰ Ἀβραὰμ καί
 Ἰσαὰκ καὶ Ἰακὼβ ἐν τῇ βασιλείᾳ τῶν οὐρανῶν.
 Εἰ στενὴ καὶ τεθλιμμένη ἐστὶν ἡ ὁδὸς, καὶ
@@ -205,9 +218,8 @@ Muarellum,initium ita supple : Σὺ δὲ πρὸς τούτοις
 εἰσελεύσονται; περὶ γὰρ πλατείας καὶ εὐρυχώρου
 λέγει, ὅτι πολλοὶ εἰσελεύσονται διʼ αὐτῆς. Καί φαμ
 <note type="footnote">2 Joan. I, 13. 3 Matth. VII, 14.</note>
-<note type="footnote">(5) Ex cod. Venet. XXVII, pag. 23.</note>
-
-<pb n="293"/>
+                  <note type="footnote">(5) Ex cod. Venet. XXVII, pag. 23.</note>
+                  <pb n="293"/>
 ὅτι ὁ μὲν τοῦ Σωτῆρος λόγος εἴρηται, ἐπειδὴ ὀλίγοι
 ἀπὸ τοῦ Ἰσραὴλ ἐσώζοντο· οὐ πολλοὶ γὰρ ἐπίστευσαν
 εἰς αὐτόν. Διὸ καὶ ἔλεγε· Μὴ φοβοῦ μικρόν
@@ -219,18 +231,19 @@ Muarellum,initium ita supple : Σὺ δὲ πρὸς τούτοις
 μετὰ Ἀβραὰμ καὶ τῶν ἐξ αὐτοῦ ἐν τῇ βασιλείᾳ τῶν
 οὐρανῶν· καὶ τῷ ἀριθμῷ δὲ πολλαπλασίους οὗτοι τῶν
 ἀπὸ Ἰσραὴλ καὶ τὸν Ἰησοῦν Χριστὸν ὁμολογουμένων.</p>
-</div>
-</div>
-<div type="textpart" subtype="chapter" n="11">
- <head>ΚΕΦ. ΙΑ΄.</head>
- <div type="textpart" subtype="verse" n="11" corresp="urn:cts:greekLit:tlg0031.tlg001:11.11">
-<p>Στιχ. ια΄. Ὁ δὲ μικρότερος ἐν τῇ βασιλείᾳ τῶν
- οὐρανῶν μείζων αὐτοῦ ἐστιν.</p></div>
- <div type="textpart" subtype="verse" n="12" corresp="urn:cts:greekLit:tlg0031.tlg001:11.12">
-<p>Στιχ. ιβ΄. Ἀπὸ δὲ τῶν ἡμερῶν Ἰωάννου τοῦ Βαπτιστοῦ
+            </div>
+         </div>
+         <div n="11" type="chapter">
+            <head>ΚΕΦ. ΙΑ΄.</head>
+            <div n="11" corresp="urn:cts:greekLit:tlg0031.tlg001:11.11" type="verse">
+               <p>Στιχ. ια΄. Ὁ δὲ μικρότερος ἐν τῇ βασιλείᾳ τῶν
+ οὐρανῶν μείζων αὐτοῦ ἐστιν.</p>
+            </div>
+            <div n="12" corresp="urn:cts:greekLit:tlg0031.tlg001:11.12" type="verse">
+               <p>Στιχ. ιβ΄. Ἀπὸ δὲ τῶν ἡμερῶν Ἰωάννου τοῦ Βαπτιστοῦ
 ἕως ἄρτι ἡ βασιλεία τῶν οὐρανῶν
 βιάζεται, καὶ βιασταὶ ἁρπάζουαιν αὐτήν.</p>
-<p>Φαμὲν τὸ μικρότερον περὶ αὐτοῦ λέγειν τοῦ Χρισποῦ·
+               <p>Φαμὲν τὸ μικρότερον περὶ αὐτοῦ λέγειν τοῦ Χρισποῦ·
 μικρότερον δὲ κατὰ τὴν δόκησιν τῶν ἀκουόντων.
 Τὸ δὲ, ἐν τῇ βασιλείᾳ τῶν οὐρανῶν, δηλοῖ ἐν
 τοῖς πνευματικοῖς, καὶ ἐν τοῖς κατʼ οὐρανὸν ἅπασι
@@ -241,12 +254,12 @@ Muarellum,initium ita supple : Σὺ δὲ πρὸς τούτοις
 α. ν οὐρανῶν αὐτός ἐστιν ὁ Χριστὸς, προτρεπόμενος
 πάντας εἰς μετάνοιαν, καὶ ἕλκων εἰς ἑαυτὸν διὰ τῆς
 χάριτος.</p>
-</div>
-</div>
-<div type="textpart" subtype="chapter" n="12">
- <head>ΚΕΦ. ΙΒ΄.</head>
- <div type="textpart" subtype="verse" n="14" corresp="urn:cts:greekLit:tlg0031.tlg001:12.14">
-<p>Στιχ. ιδ΄. Οἱ δὲ Φαρισαῖοι συμβού λιον ἕλαβον κατʼ
+            </div>
+         </div>
+         <div n="12" type="chapter">
+            <head>ΚΕΦ. ΙΒ΄.</head>
+            <div n="14" corresp="urn:cts:greekLit:tlg0031.tlg001:12.14" type="verse">
+               <p>Στιχ. ιδ΄. Οἱ δὲ Φαρισαῖοι συμβού λιον ἕλαβον κατʼ
 αὐτοῦ ἐξαλθόντες, ὅπως αὐτόν ἀπολέσωσιν.
 Ὅσῳ τις ἐγγίζει τῷ Ἰησοῦ, συμβούλιον οὐ λαμβάνει.
 Οὐ γὰρ ἐγγίζει τῷ Ἰησοῦ ἡ συμβουλὴ τῶν
@@ -254,9 +267,10 @@ Muarellum,initium ita supple : Σὺ δὲ πρὸς τούτοις
 λαμβάνει τοῦ ἀπολέσαι τὸ φῶς, τὴν ὁδὸν τὴν
 ἀγαθὴν, τὴν ζωὴν, τὸν θησαυρὸν, τὸν μαρτυρήσαντα
 τὴν ἀγάπην, τὴν εἰρήνην. Τοῦτον ἄν τις ἀπολέσῃ,
-υἱὸς ἀπωλείας καλεῖται.</p></div>
- <div type="textpart" subtype="verse" n="15" corresp="urn:cts:greekLit:tlg0031.tlg001:12.15">
-<p>Στιχ. ιε΄. Ὁ δέ Ἰησοῦς, γνοὺς ἀπεχώρησεν.
+υἱὸς ἀπωλείας καλεῖται.</p>
+            </div>
+            <div n="15" corresp="urn:cts:greekLit:tlg0031.tlg001:12.15" type="verse">
+               <p>Στιχ. ιε΄. Ὁ δέ Ἰησοῦς, γνοὺς ἀπεχώρησεν.
 Οὐκ ἔδει γὰρ αὐτὸν μένειν μετὰ τῶν υἱῶν τῆς
 ἀπωλείας. Ἐκεῖνοι ἀπώλεσαν, ἡμεῖς, μὴ ζητήσαντες,
 εὕρομεν. Εὑρέθην γὰρ, φησὶ, τοῖς ἐμέ μὴ ζητοῦσιν·
@@ -268,19 +282,18 @@ Muarellum,initium ita supple : Σὺ δὲ πρὸς τούτοις
 ἀποκεχωρηκέναι, πάντας οὖν ἐθεράπευσε, τὴν παναλκῆ
 αὐτοῦ ἐνδεικνύμενος δύναμιν. Πλὴν ὑποστέλλει
 μὴ δημοσιεύεσθαι, ὡς ἐπιεικὴς καὶ ἀκενόδοξος.</p>
-</div>
-</div>
-<div type="textpart" subtype="chapter" n="13">
- <head>ΚΕΦ. ΙΓ΄.</head>
- <div type="textpart" subtype="verse" n="44" corresp="urn:cts:greekLit:tlg0031.tlg001:13.44">
-<p>(6) Στιχ. μδ΄. Ὁμοία ἐστὶν ὁ βασιλεία τῶν οὐρανῶν
+            </div>
+         </div>
+         <div n="13" type="chapter">
+            <head>ΚΕΦ. ΙΓ΄.</head>
+            <div n="44" corresp="urn:cts:greekLit:tlg0031.tlg001:13.44" type="verse">
+               <p>(6) Στιχ. μδ΄. Ὁμοία ἐστὶν ὁ βασιλεία τῶν οὐρανῶν
 θησαυρῳ, κ. τ. λ.</p>
-<p>Καθʼ ἑτέραν δὲ ἐκδοχὴν εἴη δʼ ἂν, ἀγρὸς μὲν ἡ
+               <p>Καθʼ ἑτέραν δὲ ἐκδοχὴν εἴη δʼ ἂν, ἀγρὸς μὲν ἡ
 <note type="footnote">3 Lnc. XII, 32. ⁴ Joan. XVII, 12. ⁵ Rom. x, 20. 6 6 Matth. XV, 24.</note>
-<note type="footnote">(6) æc quæ huc pertinemnt, occurrunt in cod. aXvI, inter expositiones in Lucam, p. 33 seqq.
+                  <note type="footnote">(6) æc quæ huc pertinemnt, occurrunt in cod. aXvI, inter expositiones in Lucam, p. 33 seqq.
 Ego versus ascripsi.</note>
-
-<pb n="296"/>
+                  <pb n="296"/>
 Γραφὴ, πολλοῖς καταπεφυτευμένη ῥητοῖς νομικοῖς τε
 καὶ γραφικοῖς, καὶ ἱστορικοῖς· θησαυρὸς δὲ τὰ τούτοις
 ποικίλα ἐνόντα φανερά τε καὶ κεκρυμμένα νοήματα·
@@ -302,7 +315,7 @@ Ego versus ascripsi.</note>
 πεπρακὼς αὐτοῦ τὰ ὑπάρχοντα· κακία δὲ ταῦτʼ ἦν,
 τῷ μηκέτι ζῆν τούτοις, νεκρωθῆναι δὲ τῷ κόσμῳ
 παντὶ καὶ θελήμασι τοῦ αὐτοῦ.</p>
-<p>(7) Οἵ γε μὴν περὶ μαργαριτῶν γράψαντες, φασὶν
+               <p>(7) Οἵ γε μὴν περὶ μαργαριτῶν γράψαντες, φασὶν
 ἕξ εἶναι τὰς τούτων διαφορὰς, ὧν κρείττους οἱ κατʼ
 Ἰνδίαν ἐν κόγχαις γενόμενοι ἐκ δρόσου τῆς οὐρανίας.
 Οἱ ἥττους γοῦν μαργαρῖταί εἰσιν αἱ τοῦ νόμου καὶ
@@ -311,7 +324,7 @@ Ego versus ascripsi.</note>
 τούτων ἀπάντων μαργαρίτην Χριστὸν ζητεῖ, πάντα
 ταῦτα καὶ παρόντα καλὰ ζημίας ἡγούμενος καὶ σκύβαλα
 πρὸς τὴν γνῶσιν τοῦ Χριστοῦ.</p>
-<p>(8) Ἔτι σαγήνη ἐστὶν ἡ ἐκ τῶν παλαιῶν τῆς Γραφῆς
+               <p>(8) Ἔτι σαγήνη ἐστὶν ἡ ἐκ τῶν παλαιῶν τῆς Γραφῆς
 λόγων πλοκὴ, ἢν ἀτελῆ δοκοῦσαν ὁ Χριστὸς
 ἐλθὼν τετελείωκεν. Αὕτη. εἰς τὴν τοῦδε τοῦ βίου
 ἐμβαλλομένη θάλασσαν, οὐ φύσεων συνάγει διαφόρων,
@@ -330,17 +343,17 @@ Ego versus ascripsi.</note>
 δὲ ἔξω ἡ κάμινός ἐστι τοῦ πυρὸς, καθώς φησιν ὁ
 Σωτὴρ ἐν τοῖς ἐξῆς· οἱ μὲν γὰρ φαῦλοι τῶν ἰχθύων
 ἔξω ῥιπτοῦνται, οἱ δὲ τῶν ἀνθρώπων εἰς τὴν κάμινον
-τοῦ πυρός (9);</p></div>
- <div type="textpart" subtype="verse" n="47" corresp="urn:cts:greekLit:tlg0031.tlg001:13.47">
-<p>Στ. μζ΄. Πάλιν· Ὁμοία ἐστὶν ὁ βασιλεία τῶν οὐχανῶν
+τοῦ πυρός (9);</p>
+            </div>
+            <div n="47" corresp="urn:cts:greekLit:tlg0031.tlg001:13.47" type="verse">
+               <p>Στ. μζ΄. Πάλιν· Ὁμοία ἐστὶν ὁ βασιλεία τῶν οὐχανῶν
 σαγήνῃ βληθείσῃ εἰς τὴν θάλασσαν.</p>
-<p>(10) Σαγήνης πλοκὴ νοητὴ ἡ ἐκ ποικίλων νοημα των
+               <p>(10) Σαγήνης πλοκὴ νοητὴ ἡ ἐκ ποικίλων νοημα των
 παλαιὰ καὶ καινὴ Γραφή· Θάλασσα, ὁ κυματούμενος
 τῶν ἀνθρώπων βίος. Τὸ πᾶν γένος τὸ ποικίλον
 <note type="footnote">(9) Hactenus cod. XXVII:.</note>
-<note type="footnote">(10) Cont. Rue, tom. III, 455 E, et v superiorew.</note>
-
-<pb n="297"/>
+                  <note type="footnote">(10) Cont. Rue, tom. III, 455 E, et v superiorew.</note>
+                  <pb n="297"/>
 τῶν ἐν ἀνθρώποις προαιρέσεων, ἡ παντοίων ἐθνῶν
 κλῆσις. Ἐργάται σαγήνης, ὁ Κύριος καὶ οἱ προσελθόντες
 ἄγγελοι διακονεῖν αὐτῷ. Ἀγγεῖα αἱ διάφοροι
@@ -357,14 +370,14 @@ Ego versus ascripsi.</note>
 βάλλονται οἱ ἄπιστοι καὶ πονηροὶ, ἐσήμανεν, ὅτι εἰς
 διηνεκῆ κόλασιν παραπέμπονται· Καὶ βαλοῦσιν
 αὐτοὺς εἰς τὴν κάμινον τοῦ πυρός, καὶ τὰ ἑξῆς.</p>
-</div>
-</div>
-<div type="textpart" subtype="chapter" n="18">
- <head>ΚΕΦ. ΙΗ΄.</head>
- <div type="textpart" subtype="verse" n="5" corresp="urn:cts:greekLit:tlg0031.tlg001:18.5">
-<p>Στίχ. ε΄. Καὶ ὃς ἐὰν δέξηται παιδίον τοιοῦτον ἓν
+            </div>
+         </div>
+         <div n="18" type="chapter">
+            <head>ΚΕΦ. ΙΗ΄.</head>
+            <div n="5" corresp="urn:cts:greekLit:tlg0031.tlg001:18.5" type="verse">
+               <p>Στίχ. ε΄. Καὶ ὃς ἐὰν δέξηται παιδίον τοιοῦτον ἓν
 ἑπὶ τῷ ὀνόματί μου, ἐμὲ δέχεται.</p>
-<p>Παραινεῖ δέχεσθαι τοὺς πιστοὺς ἐπὶ τῷ ὀνόματι
+               <p>Παραινεῖ δέχεσθαι τοὺς πιστοὺς ἐπὶ τῷ ὀνόματι
 αὐτοῦ ἒν παιδίον τοιοῦτον, ἢ ἔν τοιούτων (10<gap reason=" omitted"/>) τῶν πνευματικῶν
 καὶ μεμορφωμένων τὸν Χριστὸν, κατὰ τὸ
 ταπεινῶσαι τὸ ἑαυτοῦ πνεῦμα. Κατὰ δὲ τὸν Λουκᾶν,
@@ -391,22 +404,23 @@ Ego versus ascripsi.</note>
 δὲ, Ἀνάγκη, οὐκ ἀναιρεῖ τὸ αὐτεξούσιον, ἀλλὰ τὸ προγνωστικὸν
 τοῦ πάντως ἐσομένου δηλοῖ. Διὸ καὶ τὸ
 οὐαὶ αὐτοῖς ἐπιφωνεῖ, ὡς ἑκουσίως πταίουσι. Κόλασιν
-δὲ λέγει τοὺς ἀσέμνους (11) ζῶντας ἀνθρώπους.</p></div>
- <div type="textpart" subtype="verse" n="20" corresp="urn:cts:greekLit:tlg0031.tlg001:18.20">
-<p>Στ. κʼ. Οὗ γάρ εἰσι δύο ἢ τρεῖς (11<gap reason=" omitted"/>) συνημμένοι εἰς
- τὸ ἐμὸν ὅνομα, ἐκεῖ εἰμι ἐν μέσῳ αὐτῶν.</p></div>
- <div type="textpart" subtype="verse" n="21" corresp="urn:cts:greekLit:tlg0031.tlg001:18.21">
-<p>Στ. κα΄. Τότε προσελθὼν αὐτῷ ὁ Πέτρος, εἶπε· Κύριε,
+δὲ λέγει τοὺς ἀσέμνους (11) ζῶντας ἀνθρώπους.</p>
+            </div>
+            <div n="20" corresp="urn:cts:greekLit:tlg0031.tlg001:18.20" type="verse">
+               <p>Στ. κʼ. Οὗ γάρ εἰσι δύο ἢ τρεῖς (11<gap reason=" omitted"/>) συνημμένοι εἰς
+ τὸ ἐμὸν ὅνομα, ἐκεῖ εἰμι ἐν μέσῳ αὐτῶν.</p>
+            </div>
+            <div n="21" corresp="urn:cts:greekLit:tlg0031.tlg001:18.21" type="verse">
+               <p>Στ. κα΄. Τότε προσελθὼν αὐτῷ ὁ Πέτρος, εἶπε· Κύριε,
 ποσάκαις ἁμαρτήσει εἰς ἐμὲ ὁ ἀδελφός μου,
 καὶ ἀφήσω αὐτῷ; ἕως ἑπτάκις
 Δύο συνημμένοι ἐπὶ τῷ τοῦ Χριστοῦ ὀνόματι, σῶμα
 <note type="footnote">7_12 Rom. XI, 25. 12 Matth. XIII, 50.</note>
-<note type="footnote">(10·) Τοιούτων. Forte τοιοῦτον, ut et interpres
+                  <note type="footnote">(10·) Τοιούτων. Forte τοιοῦτον, ut et interpres
 Fegisse videtur. Edit.</note>
-<note type="footnote">(11) Ἀσέμνους. Forte ἀσέμνως. Εdit.</note>
-<note type="footnote">(11*) Vulgo συνηγμένοι. Hic et in seqq. confer edita.</note>
-
-<pb n="300"/>
+                  <note type="footnote">(11) Ἀσέμνους. Forte ἀσέμνως. Εdit.</note>
+                  <note type="footnote">(11*) Vulgo συνηγμένοι. Hic et in seqq. confer edita.</note>
+                  <pb n="300"/>
 καὶ πνεῦμα, μὴ ἀντιστρατευόμενα· ὑποταγέντος
 μὲν τοῦ σώματος, τοῦ δὲ πνεύματος μεταδιδόντος αὐτῷ
 θείας ζωῆς· τρεῖς δέ τε (13) ὁλόκληρον, πνεῦμα,
@@ -420,7 +434,7 @@ Fegisse videtur. Edit.</note>
 ἐστὶ τῶν διʼ εὐσεβείας συναπτομένων. Ἡ γὰρ πανεπίσκοπος
 τοῦ Θεοῦ δύναμις ἀμέριστος μεριστὴ γίνεται
 τοῖς ἀξίοις.</p>
-<p>Ἐπειδὴ τῶν εἰς ἡμᾶς πταισμάτων ἡμεῖς κύριοί
+               <p>Ἐπειδὴ τῶν εἰς ἡμᾶς πταισμάτων ἡμεῖς κύριοί
 ἐσμεν τοῦ συγχωρεῖν, οὐ μὴ (14) τῶν εἰς Θεὸν φθατόντων
 εἰ μὴ αὐτὸς ὁ Θεός· διὰ τοῦτο εἶπεν ὁ Πέτρος τὸ,
 εἰς ἐμέ. Ἐρωτῶν γὰρ, ἕως τίνος χρεία μὴ μνησικακεῖν,
@@ -428,7 +442,7 @@ Fegisse videtur. Edit.</note>
 ἄπειρον σημαίνων τῆς ἀνεξικακίας, εἶπεν τὸ, ἑβδομηκοντάκις
 ἑπτά· τουτέστιν· Ὁσάκις ἁμάρτῃ εἰς
 σὲ, ἐὰν μετανοῇ, ἄφες αὐτῷ.</p>
-<p>Ἐπειδὴ ἐπὶ τῶν ἀφοριζομένων μέτρον ὥρισεν ὁ
+               <p>Ἐπειδὴ ἐπὶ τῶν ἀφοριζομένων μέτρον ὥρισεν ὁ
 Χριστὸς, οὐ μὴν καὶ ἐπὶ τῶν μετανοούντων, εἰκότως
 ἐρωτᾷ ὁ Πέτρος τό· Ἕως πόσου δεῖ δέχεσθαι τὸν
 μετανοοῦντα; Ὅρα δὲ εἱ δύναται· Ἐπεὶ ὁ μὲν ἓξ
@@ -441,17 +455,17 @@ Fegisse videtur. Edit.</note>
 ὑπερβάντα τὰ κοσμικὰ μηκέτι ἔχειν ἄφεσιν τῶν
 ἁμαρτημάτων· ἡ γὰρ ἄφεσις ἐπὶ τὰ τῇδε εἴτε βραδὺ
 (15), εἴτε τάχιον.</p>
-</div>
-</div>
-<div type="textpart" subtype="chapter" n="21">
- <head>ΚΕΦ. ΚΑ΄.</head>
- <div type="textpart" subtype="verse" n="33" corresp="urn:cts:greekLit:tlg0031.tlg001:21.33">
-<p>Στίχ. λγ΄. Ἄνθρωπος ἦν οἰκοδεσπότης, ὅστις ἐφύτευσεν
+            </div>
+         </div>
+         <div n="21" type="chapter">
+            <head>ΚΕΦ. ΚΑ΄.</head>
+            <div n="33" corresp="urn:cts:greekLit:tlg0031.tlg001:21.33" type="verse">
+               <p>Στίχ. λγ΄. Ἄνθρωπος ἦν οἰκοδεσπότης, ὅστις ἐφύτευσεν
 ἀμπελῶνα, καὶ φραγμόν αὐτῷ περιέθηκε,
 καὶ ὤρυξεν ἐν αὐτῷ ληνὸν, καὶ ᾠκοδόμησε
 πύργον, καὶ ἐξέδοτο αὐτόν γεωργοῖς, καὶ ἀπεδήμησε,
 κ. τ. λ.</p>
-<p>Ἡ παραβολὴ οἰκοδεσπότην λέγει τὸν Θεὸν καὶ
+               <p>Ἡ παραβολὴ οἰκοδεσπότην λέγει τὸν Θεὸν καὶ
 πατέρα, τὸν πολλὴν πρόνοιαν ἐξ ἀρχῆς εἰς τοὺς Ἰουδαίους
 ἐπιδειξάμενον. Ἀμπελὼν δὲ ἀπλῶς μὲν ὁ πρῶτος
 λαὸς, τουτέστιν ὁ Ἰσραὴλ, φυτευθεὶς ὑπὸ τοῦ Θεοῦ
@@ -464,11 +478,10 @@ Fegisse videtur. Edit.</note>
 νεφέλης καὶ νυκτὸς αὐτοῖς ἐν στύλῳ πυρὸς ἐπιφαίνεται.
 Ἢ ἡ τοῦ Θεοῦ μακροθυμία, ἡ μὴ παρὰ πόδας
 <note type="footnote">mines moriuntur.</note>
-<note type="footnote">(13) Forte δὲ τό</note>
-<note type="footnote">(14) Μή. Forte μήν, ut paulo infra. EDIT.</note>
-<note type="footnote">(15) Forte βράδιον.</note>
-
-<pb n="301"/>
+                  <note type="footnote">(13) Forte δὲ τό</note>
+                  <note type="footnote">(14) Μή. Forte μήν, ut paulo infra. EDIT.</note>
+                  <note type="footnote">(15) Forte βράδιον.</note>
+                  <pb n="301"/>
 ἀπαιτοῦσα τοὺς Ἰουδαίους τὴν τῶν πταισμάτων τιμωρίαν.
 Ἀπαίτησις δὲ καρπῶν ὁ ἔννομος βίος· Καιρὸς
 αὐτῶν ἡ προφητικὴ ἀπαίτησις· Δοῦλοι πρῶτοι
@@ -497,15 +510,15 @@ Fegisse videtur. Edit.</note>
 χαρᾶς, καὶ εἰρήνης, καὶ τῶν λοιπῶν. Δοῦλοι οἱ προφῆται
 τὰ πνευματικὰ καρπώματα ἀπαιτοῦντες προσἀγειν
 ὡς ἱερεῖς τῷ Θεῷ.</p>
-</div>
-</div>
-<div type="textpart" subtype="chapter" n="24">
- <head>ΚΕΦ. ΚΔ΄.</head>
- <div type="textpart" subtype="verse" n="45" corresp="urn:cts:greekLit:tlg0031.tlg001:24.45">
-<p>Στίχ. με΄. Τίς ἄρα ἐστὶν ὀ πιστὸς δοῦλοι καὶ φρόνιμος,
+            </div>
+         </div>
+         <div n="24" type="chapter">
+            <head>ΚΕΦ. ΚΔ΄.</head>
+            <div n="45" corresp="urn:cts:greekLit:tlg0031.tlg001:24.45" type="verse">
+               <p>Στίχ. με΄. Τίς ἄρα ἐστὶν ὀ πιστὸς δοῦλοι καὶ φρόνιμος,
 ὃν κατέστησεν ὁ κύριος αὐτοῦ ἐπὶ τῆς
 θεραπείας αὐτοῦ;</p>
-<p>(19) Τάχα παροξύνων εἰς τὸ ζητῆσαι ἕνα τινὰ σπάνιον.
+               <p>(19) Τάχα παροξύνων εἰς τὸ ζητῆσαι ἕνα τινὰ σπάνιον.
 Τῇ γὰρ τοῦ ἄρα ἀμφιβολίᾳ τὸ σπάνιον ἔδειξε
 τοῦ τοιούτου οἰκονόμου, καὶ οὐκ ἄλλον αὑτοῦ τὸν πιστὸν
 καὶ φρόνιμον οἰκονόμον εἰδὼς, κατασταθμαζό.
@@ -529,24 +542,23 @@ Fegisse videtur. Edit.</note>
 ταῖς τῶν αἱρετικῶν μωρολογίαις, ἀλλὰ διακρίνοντα
 τὸ ἀκριβὲς τοῦ λόγου, ἢ τὸν μὴ πειρόμενον
 <note type="footnote">(15) Οἶς. arie ὧν, vel ἐν οἶς. Ema.</note>
-<note type="footnote">(1o) ore ῇ.</note>
-<note type="footnote">(17) Locus mnpeditus.</note>
-
-<pb n="304"/>
+                  <note type="footnote">(1o) ore ῇ.</note>
+                  <note type="footnote">(17) Locus mnpeditus.</note>
+                  <pb n="304"/>
 ἁμαρτίαις, διὰ τὸ μὴ (20) ποικίλον καὶ πολύτροπον
 τῶν ἀνθρώπων. Τὸν εἰδότα πότε δεῖ ἐλέγξαι, ἢ ἐπιτιμῆσαι,
 ἢ παρακαλέσαι, ἢ διδάξαι· καὶ τίνας μὲν ποτίσαι
 δεῖ γάλα, τίσι δὲ μεταδοῦναι τῆς στερεᾶς τροφῆς.</p>
-</div>
-</div>
-<div type="textpart" subtype="chapter" n="25">
- <head>ΚΕΦ. ΚΕ΄.</head>
- <div type="textpart" subtype="verse" n="1" corresp="urn:cts:greekLit:tlg0031.tlg001:25.1">
-<p>Στίχ. α΄. Τότε ὁμοιωθήσεται ἡ βασιλεία τῶν οὐρανῶν·
+            </div>
+         </div>
+         <div n="25" type="chapter">
+            <head>ΚΕΦ. ΚΕ΄.</head>
+            <div n="1" corresp="urn:cts:greekLit:tlg0031.tlg001:25.1" type="verse">
+               <p>Στίχ. α΄. Τότε ὁμοιωθήσεται ἡ βασιλεία τῶν οὐρανῶν·
 δέκα παρθένοις, αἵτινες, λαβοῦσαι τὰς
 λαμπάδας αὐτῶν, ἐξῆλθον εἰς ἀπάντησιν τοῦ
 νυμφίου.</p>
-<p>Δέκα παρθένοι εἷναί φασι τὰς ἐν ἑκάστῃ ψυχῇ αἰσθήσεις
+               <p>Δέκα παρθένοι εἷναί φασι τὰς ἐν ἑκάστῃ ψυχῇ αἰσθήσεις
 τοῦ ἔνδοθεν καὶ ἔξωθεν ἀνθρώπου, ἀποστάσας
 εἰδωλολατρείας καὶ τῶν κοσμικῶν ἐπιθυμιῶν, τῷ
 παραδέξασθαι, εἴτε προφάσει, εἴτε ἀληθείᾳ, τὸν τοῦ
@@ -559,7 +571,7 @@ Fegisse videtur. Edit.</note>
 μυστήριον. Ἐξίασι γὰρ ἀπὸ τῆς τοῦ κόσμου
 πλάνης, σπεύδουσαι πρὸς τὸν ἑτοίμως ὁρμῶντα πρὸς
 αὐτάς.</p>
-<p>Ἅλλο Ὠριγένους. Ἕτερον ἡ παρθενία παρὰ τὴν
+               <p>Ἅλλο Ὠριγένους. Ἕτερον ἡ παρθενία παρὰ τὴν
 ἐλεημοσύνην, καὶ ἕτερον ὁ νοῦς παρὰ τὸ σῶμα· καὶ
 τοῦτο λήψει εἰς τὰς δέκα παρθένους. Φρόνιμοι μὲν
 οὖν αἱ τοῦ κατὰ λόγον βιοῦντος αἰσθήσεις· μωραὶ δὲ
@@ -592,10 +604,9 @@ Fegisse videtur. Edit.</note>
 λαμπάδας ἡ ἐν ἐπιγνώσει σπουδὴ, καὶ τῶν ἐντολῶν
 ἐργασία. Αὕτη γὰρ τὸ ἐν ἡμῖν· διαφυλάττει φῶς,
 <note type="footnote">(24) Locus deficiens.</note>
-<note type="footnote">(25) Forte ἐσθιούσης.</note>
-<note type="footnote">(26) Forte λαμπάδες.</note>
-
-<pb n="305"/>
+                  <note type="footnote">(25) Forte ἐσθιούσης.</note>
+                  <note type="footnote">(26) Forte λαμπάδες.</note>
+                  <pb n="305"/>
 ἁπλοῦν τὸν ὀφθαλμὸν διατηροῦσα, ὥστε φωτίζεσθαι
 ὅλον ἡμῶν τὸ σῶμα, κατὰ τὸν τοῦ Κυρίου λόγον. Αἱ
 μὲν οὗν λαβοῦσαι τὴν ἐπιμελῆ σπουδὴν πρὸς τὴν τῶν
@@ -614,12 +625,12 @@ Fegisse videtur. Edit.</note>
 προσεδρείᾳ, προσοχῆς, φιλομαθίας, φιλοπονίας.
 Ἤ πωλοῦντές εἰσι προφῆται, ἀπόστολοι, εὐαγγελισταὶ,
 διʼ ὧν τις μαθητευθεὶς τὴν ἀρετὴν ἐργάζεται.</p>
-</div>
-</div>
-<div type="textpart" subtype="chapter" n="27">
- <head>ΚΕΦ. ΚΖ΄</head>
- <div type="textpart" subtype="verse" n="11" corresp="urn:cts:greekLit:tlg0031.tlg001:27.11">
-<p>Στίχ. ια΄. Καὶ ἐπηρώτησεν αὐτὸν ὁ ἡγεμὼν, λέγων·
+            </div>
+         </div>
+         <div n="27" type="chapter">
+            <head>ΚΕΦ. ΚΖ΄</head>
+            <div n="11" corresp="urn:cts:greekLit:tlg0031.tlg001:27.11" type="verse">
+               <p>Στίχ. ια΄. Καὶ ἐπηρώτησεν αὐτὸν ὁ ἡγεμὼν, λέγων·
 Σὺ εἶ ὁ βασιλεὺς τῶν Ἰουδαίων;
 Ὡς ἐπὶ δημοσίῳ ἐγκλήματι κατακριθέντα αὐτὸν
 ἐρωτᾷ Πιλάτος λέγων· Σὺ εἶ ὁ βασιλεὺς τῶν Ἰουδαίων
@@ -634,7 +645,7 @@ Fegisse videtur. Edit.</note>
 αὐτοῦ κυροῖ. Ἦν γὰρ βασιλεὺς τοῦ Ἰσραὴλ,
 μήτε εἰπὼν ναὶ, ἵνα μὴ δῷ εὔλογον ἀφορμὴν τῷ Πιλάτῳ
 καταδικάζειν.</p>
-<p>(28) Διὰ τὸ ἀμετάτρεπτον αὐτῶν οὐδὲ αὐτοῖς ἀντιφθέγγεται.
+               <p>(28) Διὰ τὸ ἀμετάτρεπτον αὐτῶν οὐδὲ αὐτοῖς ἀντιφθέγγεται.
 Καλῶς δὲ οὐδὲ τῷ Πιλάτῳ ἀπεκρίθη,
 ὅτι ἀμφιβάλλει εἰ χρὴ αὐτὸν πρὸς τὰς ἀδίκους κατηγορίας
 ἀπολογεῖσθαι, καὶ ὅτι διχογνωμῶν ἐστι περὶ
@@ -650,25 +661,24 @@ Fegisse videtur. Edit.</note>
 καὶ ἀτάραχον αὐτοῦ πρὸς θάνατον, καὶ ἐν τούτοις γαληνὸν
 τοῦ προσώπου· ἢ καὶ τὴν ὑπὲρ ἄνθρωπον αὐτοῦ
 μακροθυμίαν ἐθαύμαζεν.</p>
-<p>Εἰκὸς ἄρτι ὑποσπόνδων γενομένων Ῥωμαίοις Ἰουδαίων,
+               <p>Εἰκὸς ἄρτι ὑποσπόνδων γενομένων Ῥωμαίοις Ἰουδαίων,
 τὸ κεχαρισμένον αὐτοῖς ᾤοντο ἐν τῇ ἑορτῇ
 συγχωρεῖσθαι. Καὶ Σαοὺλ δὲ, συγχωρήσας τῷ λαῷ
 τὸν Ἰωνάθαν, δηλοῖ πρὶν αὐτοῖς καὶ τοιοῦτον. Ὡς νομίζων
 <note type="footnote">5 Matth. XXV, 9. 1⁶ Matth. XXVI, 63,</note>
-<note type="footnote">17 ibid. 64</note>
-<note type="footnote">(7) Locas deﬁciens.</note>
-<note type="footnote">(2) Nullum ascribitur auctoris nomen. Hro
+                  <note type="footnote">17 ibid. 64</note>
+                  <note type="footnote">(7) Locas deﬁciens.</note>
+                  <note type="footnote">(2) Nullum ascribitur auctoris nomen. Hro
 rcler ad vers. 12.</note>
-<note type="footnote">(29) An οὐδενός.</note>
-<note type="footnote">(30) Hic et infra confer edita Latina, et quædam
+                  <note type="footnote">(29) An οὐδενός.</note>
+                  <note type="footnote">(30) Hic et infra confer edita Latina, et quædam
 ctiam contraria his reperies.</note>
-
-<pb n="308"/>
+                  <pb n="308"/>
 δὲ, ὅτι τὸν ἀναίτιον, ἢ τὸν μυρίοις ἐγκλήμασιν
 ὑπαίτιον αἰτήσονται, εἶπε τοῦτο ὁ Πιλάτος, ὡς
 δικαίοις οὖσιν. ᾜδει γὰρ, ὅτι οὐδὲν σαφῆ ἔλεγχον
 εἶχον κατʼ αὐτοῦ.|</p>
-<p>Παλαιοῖς δὲ πάνυ ἀντιγράφοις ἐντυχὼν, εὗρον καὶ
+               <p>Παλαιοῖς δὲ πάνυ ἀντιγράφοις ἐντυχὼν, εὗρον καὶ
 αὐτὸν τὸν Βαραββᾶν Ἰησοῦν λεγόμενον. Οὕτως γοῦν
 εἶχεν ἡ τοῦ Πιλάτου πεῦσις ἐκεῖ· χᾶνα θέλετε ἀπὸ
 τῶν δύο ἀπολύσω ὑμῖν; Ἰησοῦν τὸν Βαραββᾶν,
@@ -682,7 +692,7 @@ ctiam contraria his reperies.</note>
 δεῦρο μᾶλλον αἱροῦνται οἱ μαθόντες παῤ αὐτοῦ
 ἀνθρωποκτονεῖν, ἢ τόν ζωοποιοῦντα τοὺς ἀνθρώπους,
 τὸν Κύριον ἡμῶν Ἰησοῦν Χριστόν;</p>
-<p>Κρινόμενος ὑπὸ τοῦ Πιλάτου, ἐχρημάτιζε τῇ τούτου
+               <p>Κρινόμενος ὑπὸ τοῦ Πιλάτου, ἐχρημάτιζε τῇ τούτου
 γυναικὶ, ἵνα τῇ μὲν σιωπῇ τὴν ἀνδρείαν καταπλαγῇ,
 τῷ δὲ χρηματισμῷ γνῷ, ὅτι οὐκ ἄνθρωπεν,
 ἀλλὰ Θεὸν κρίνει. Διὰ δὲ τοῦτο αὐτὸς οὐκ εἶδεν ἢ ἵνα
@@ -697,11 +707,12 @@ ctiam contraria his reperies.</note>
 τὸ παθεῖν, ἵνα μὴ ὑπερπάθῃ. Εἰ (34) δὲ σύμβολέν
 ἐστιν αὕτη τῆς ποτε ὑπὸ Πιλάτου κυριευομένης Ἐκκλησίας,
 καὶ οὐκέτι οὕσης αὐτῷ ὑποχειρίου διὰ τὴν
-εἰς Χριστὸν πίστιν<gap reason=" omitted"/>γὰρ, ἀλλόφυλος γὰρ ἡ γυνή.</p></div>
- <div type="textpart" subtype="verse" n="45" corresp="urn:cts:greekLit:tlg0031.tlg001:27.45">
-<p>Στίχ. με΄. Ἀπὸ δέ ἕκτης ὥρας σκότος ἐγένετο ἐπὶ
+εἰς Χριστὸν πίστιν<gap reason=" omitted"/>γὰρ, ἀλλόφυλος γὰρ ἡ γυνή.</p>
+            </div>
+            <div n="45" corresp="urn:cts:greekLit:tlg0031.tlg001:27.45" type="verse">
+               <p>Στίχ. με΄. Ἀπὸ δέ ἕκτης ὥρας σκότος ἐγένετο ἐπὶ
 πᾶσαν τὴν γῆν ἕως ὥρας ἐνάτης.</p>
-<p>(33) Περὶ ταύτης τῆς ἐκλείψεως καὶ ὁ προφήτης
+               <p>(33) Περὶ ταύτης τῆς ἐκλείψεως καὶ ὁ προφήτης
 Ζαχαρίας εἰπών· Ἐν ἐκείνῃ τῇ ἡμέρᾳ, φησὶν, οὐκ
 ἔσται φῶς. Καὶ ψῦχος καὶ πάγος ἔσται μίαν ἡμέραν.
 Καὶ ἡ ἡμέρα ἐκείνη γνωστὴ τῷ Κυρίῳ. Καὶ
@@ -718,15 +729,14 @@ ctiam contraria his reperies.</note>
 σημεῖον, ὅπερ ἔμπροσθεν αἰτοῦσιν ὑπέσχετο δώσειν,
 λέγων· Γενεὰ πονηρὰ καὶ μοιχαλὶς σημεῖον ἐπιἐητεῖ,
 <note type="footnote">18 Matth. XXVII, 17. 19 Joan. VIII, 44. 20 Zach. XIV, 6, 7. 21 21Matth. XII, 39. 22Joan. VIII, 28.</note>
-<note type="footnote">(31) Hinc quædam videtur hausisse Theophyl.
+                  <note type="footnote">(31) Hinc quædam videtur hausisse Theophyl.
 pag. 156 a.</note>
-<note type="footnote">(32) Forte τό.</note>
-<note type="footnote">(33) An τοιαύτη.</note>
-<note type="footnote">(34) Forte οἱονεί.</note>
-<note type="footnote">(35) Subjungitur non asscripto auctoris nomine.
+                  <note type="footnote">(32) Forte τό.</note>
+                  <note type="footnote">(33) An τοιαύτη.</note>
+                  <note type="footnote">(34) Forte οἱονεί.</note>
+                  <note type="footnote">(35) Subjungitur non asscripto auctoris nomine.
 Confer. edita Orig.</note>
-
-<pb n="309"/>
+                  <pb n="309"/>
 καὶ ἑξῆς· καὶ, Ὅταν ὑψώσητε τὸν Υἱὸν τοῦ
 ἀνθρώπου τότε γνώσεσθε, ὅτι ἐγώ εἰμι. Καὶ γὰρ
 πολλῷ θαυμαστότερον ἐπὶ τοῦ σταυροῦ προσηλουμένου
@@ -760,14 +770,14 @@ Confer. edita Orig.</note>
 τοῦτο γὰρ μετὰ πάντων τῆς (36) παροινίας τοῦτο γίνεται,
 ὅτε κόρος ἔλαβε τῶν σκωμμάτων, καὶ πάντων
 ἐφθέγξαντο ὅσα ἠθέλησαν.</p>
-</div>
-</div>
-<div type="textpart" subtype="chapter" n="28">
- <head>ΚΕΦ ΚΗ΄.</head>
- <div type="textpart" subtype="verse" n="18" corresp="urn:cts:greekLit:tlg0031.tlg001:28.18">
-<p>Στίχ. ιη΄. Ἐδόθη μοι πᾶσα ἐξουσία ἐν οὐρανῷ
+            </div>
+         </div>
+         <div n="28" type="chapter">
+            <head>ΚΕΦ ΚΗ΄.</head>
+            <div n="18" corresp="urn:cts:greekLit:tlg0031.tlg001:28.18" type="verse">
+               <p>Στίχ. ιη΄. Ἐδόθη μοι πᾶσα ἐξουσία ἐν οὐρανῷ
 καὶ ἐπὶ γῆς.</p>
-<p>Τὸ, Ἐδόθη μοι πᾶσα ἐξουσία, καὶ ἐξῆς, εἰς τὴν
+               <p>Τὸ, Ἐδόθη μοι πᾶσα ἐξουσία, καὶ ἐξῆς, εἰς τὴν
 ἐνανθρώπησιν νόει. Εἰ δὲ καὶ εἰς τὴν θεότητα<gap reason=" omitted"/>
 θεωρεῖν (37), καὶ οὕτω λήψῃ τὸ Ἐδόθη μοι ἐξουσία,
 ἀντὶ τοῦ Ἐχωρήθη. Ἐδόθη, ἠνέχθη μοι, περὶ τοῦ
@@ -784,12 +794,11 @@ Confer. edita Orig.</note>
 ἂ ἐν τοῖς σώμασι θεωρεῖται, ὁ Θεὸς ὁ ἀσώματος
 ἐγέννησεν. Ἐνυπόστατος ἡ γέννησις· ἀπετέχθη
 ἐκ τῆς οὐσίας τοῦ Πατρὸς ὁ Υἱός.</p>
-<note type="footnote">(36) Forte τάς.</note>
-<note type="footnote">(37) Ms. χώρης.</note>
-<note type="footnote">(38) Forte ἅρα ῥεῦσιν.</note>
-</div>
-</div>
- </div>
-</body>
-</text>
+               <note type="footnote">(36) Forte τάς.</note>
+               <note type="footnote">(37) Ms. χώρης.</note>
+               <note type="footnote">(38) Forte ἅρα ῥεῦσιν.</note>
+            </div>
+         </div>
+      </body>
+   </text>
 </TEI>

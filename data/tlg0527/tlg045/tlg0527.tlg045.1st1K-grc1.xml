@@ -1,118 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">
-  <fileDesc>
-   <titleStmt>
-    <title xml:lang="grc">Ἀγγαῖος</title>
-    <author xml:lang="lat">Septuaginta</author>
-    <editor>Henry Barclay Swete D.D.</editor>
-    <funder>Harvard Library Arcadia Fund</funder>
-    <principal>Gregory Crane</principal>
-    <respStmt>
-     <persName xml:id="DDD">Digital Divide Data</persName>
-     <resp>Corrected and encoded the text</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Gregory Crane</persName>
-     <resp>Editor-in-Chief, Perseus Digital Library</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Matt Munson</persName>
-     <resp>Project Manager (University of Leipzig)</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Annette Gessner</persName>
-     <resp>Project Assistant (University of Leipzig)</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Thibault Clérice</persName>
-     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Bruce Robertson</persName>
-     <resp>Technical Advisor</resp>
-    </respStmt>
-   </titleStmt>
-   <publicationStmt>
-    <authority>Harvard College Library</authority>
-    <idno type="filename">tlg0527.tlg045.1st1K-grc1.xml</idno>
-    <availability>
-     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="grc">Ἀγγαῖος</title>
+            <author xml:lang="lat">Septuaginta</author>
+            <editor>Henry Barclay Swete D.D.</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg0527.tlg045.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
       License</licence>
-    </availability>
-    <date>2017</date>
-    <publisher>Harvard College Library</publisher>
-    <pubPlace>United States</pubPlace>
-   </publicationStmt>
-   <sourceDesc>
-    <listBibl>
-     <biblStruct>
-      <monogr>
-       <title>The Old Testament in Greek</title>
-       <editor>
-        <persName>
-         <name>Henry Barclay Swete D.D.</name>
-        </persName>
-       </editor>
-       <author ref="urn:cts:greekLit:tlg0527" xml:lang="lat">Septuaginta</author>
-       <imprint>
-        <publisher>Cambridge University Press</publisher>
-        <pubPlace>Cambridge</pubPlace>
-        <date>1905</date>
-       </imprint>
-       <biblScope unit="volume">3</biblScope>
-      </monogr>
-      <ref target="https://archive.org/details/theoldtestamenti03swetuoft/page/n93/mode/2up">The Internet Archive</ref>
-     </biblStruct>
-    </listBibl>
-   </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-   <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-   <refsDecl n="CTS">
-    <cRefPattern matchPattern="(.+).(.+)" n="verse" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-    <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-   </refsDecl>
-  </encodingDesc>
-  <profileDesc>
-   <langUsage>
-    <language ident="grc">Greek</language>
-    <language ident="lat">Latin</language>
-   </langUsage>
-  </profileDesc>
-  <revisionDesc>
-   <change/>
-  </revisionDesc>
- </teiHeader>
-
-
-<text>
-  <body>
-    <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0527.tlg045.1st1K-grc1">
-<pb n="70"/>
-<head>ΑΓΓΑΙΟΣ</head>
-<div type="textpart" subtype="chapter" n="1">
-<note type="marginal">Β</note> <div type="textpart" subtype="verse" n="1"><p>ΕΝ τῷ δευτέρῳ ἔτει ἐπὶ Δαρίου τοῦ βασιλέως ἐν τῷ μηνὶ τῷ
+            </availability>
+            <date>2017</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg0527.tlg045.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title>The Old Testament in Greek</title>
+                     <editor>
+                        <persName>
+                           <name>Henry Barclay Swete D.D.</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg0527" xml:lang="lat">Septuaginta</author>
+                     <imprint>
+                        <publisher>Cambridge University Press</publisher>
+                        <pubPlace>Cambridge</pubPlace>
+                        <date>1905</date>
+                     </imprint>
+                     <biblScope unit="volume">3</biblScope>
+                  </monogr>
+                  <ref target="https://archive.org/details/theoldtestamenti03swetuoft/page/n93/mode/2up">The Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+).(.+)"
+                         n="verse"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0527.tlg045.1st1K-grc1">
+         <pb n="70"/>
+         <head>ΑΓΓΑΙΟΣ</head>
+         <div n="1" type="chapter">
+            <note type="marginal">Β</note>
+            <div n="1" type="verse">
+               <p>ΕΝ τῷ δευτέρῳ ἔτει ἐπὶ Δαρίου τοῦ βασιλέως ἐν τῷ μηνὶ τῷ
 ἕκτῳ μιᾷ τοῦ μηνὸς ἐγένετο λόγος Κυρίου ἐν χειρὶ Ἀγγαίου τοῦ
 προφήτου λέγων Εἰπὸν πρὸς Ζοροβάβελ τὸν τοῦ Σαλαθιὴλ ἐκ φυλῆς
-Ἰούδα καὶ πρὸς Ἰησοῦν τὸν τοῦ Ἰωσεδὲκ τὸν ἱερέα τὸν μέγαν λέγων</p></div>
-<div type="textpart" subtype="verse" n="2"><p>Τάδε λέγει Κύριος Παντοκράτωρ λέγων Ὁ λαὸς οὗτος λέγουσιν
-Οὐχ ἤκει ὁ καιρὸς τοῦ οἰκοδομῆσαι τὸν οἶκον Κυρίου.</p></div> <div type="textpart" subtype="verse" n="3"><p>καὶ ἐγένετο
-λόγος Κυρίου ἐν χειρὶ Ἀγγαίου τοῦ προφήτου λέγων</p></div> <div type="textpart" subtype="verse" n="4"><p>Εἰ καιρὸς
+Ἰούδα καὶ πρὸς Ἰησοῦν τὸν τοῦ Ἰωσεδὲκ τὸν ἱερέα τὸν μέγαν λέγων</p>
+            </div>
+            <div n="2" type="verse">
+               <p>Τάδε λέγει Κύριος Παντοκράτωρ λέγων Ὁ λαὸς οὗτος λέγουσιν
+Οὐχ ἤκει ὁ καιρὸς τοῦ οἰκοδομῆσαι τὸν οἶκον Κυρίου.</p>
+            </div>
+            <div n="3" type="verse">
+               <p>καὶ ἐγένετο
+λόγος Κυρίου ἐν χειρὶ Ἀγγαίου τοῦ προφήτου λέγων</p>
+            </div>
+            <div n="4" type="verse">
+               <p>Εἰ καιρὸς
 μέν ὑμῖν ἐστιν τοῦ οἰκεῖν ἐν οἴκοις ὑμῶν κοιλοστάθμοις, ὁ δὲ οἶκος
-ὑμῶν ἐξηρήμωται;</p></div> <div type="textpart" subtype="verse" n="5"><p>καὶ νῦν τάδε λέγει Κύριος Παντοκράτωρ Τάξατε
-δὴ τὰς καρδίας ὑμῶν εἰς τὰς ὁδοὺς ὑμῶν·</p></div> <div type="textpart" subtype="verse" n="6"><p>ἐσπείρατε πολλὰ καὶ
+ὑμῶν ἐξηρήμωται;</p>
+            </div>
+            <div n="5" type="verse">
+               <p>καὶ νῦν τάδε λέγει Κύριος Παντοκράτωρ Τάξατε
+δὴ τὰς καρδίας ὑμῶν εἰς τὰς ὁδοὺς ὑμῶν·</p>
+            </div>
+            <div n="6" type="verse">
+               <p>ἐσπείρατε πολλὰ καὶ
 εἰσηνέγκατε ὀλίγα, ἐφάγετε καὶ οὐκ εἰς πλησμονήν, ἐπίετε καὶ
 οὐκ εἰς μέθην, περιεβάλεσθε καὶ οὐκ ἐθερμάνθητε ἐν αὐτοῖς, καὶ ὁ
-τοὺς μισθοὺς συνάγων συνήγαγεν εἰς δεσμὸν τετρυπημένον.</p></div> <div type="textpart" subtype="verse" n="7"><p>τάδε
+τοὺς μισθοὺς συνάγων συνήγαγεν εἰς δεσμὸν τετρυπημένον.</p>
+            </div>
+            <div n="7" type="verse">
+               <p>τάδε
 λέγει Κύριος Παντοκράτωρ Θέσθε τὰς καρδίας ὑμῶν εἰς τὰς ὁδοὺς
-ὑμῶν·</p></div> <div type="textpart" subtype="verse" n="8"><p>ἀνάβητε εἰς τὸ ὄρος καὶ κόψατε ξύλα καὶ οἰκοδομήσατε τὸν
-οἶκον, καὶ εὐδοκήσω ἐν αὐτῷ καὶ ἐνδοξασθήσομαι, εἶπεν Κύριος.</p></div>
-<div type="textpart" subtype="verse" n="9"><p>ἐπεβλέψατε εἰς πολλὰ καὶ ἐγένετο ὀλίγα, καὶ εἰσηνέχθη εἰς τὸν
+ὑμῶν·</p>
+            </div>
+            <div n="8" type="verse">
+               <p>ἀνάβητε εἰς τὸ ὄρος καὶ κόψατε ξύλα καὶ οἰκοδομήσατε τὸν
+οἶκον, καὶ εὐδοκήσω ἐν αὐτῷ καὶ ἐνδοξασθήσομαι, εἶπεν Κύριος.</p>
+            </div>
+            <div n="9" type="verse">
+               <p>ἐπεβλέψατε εἰς πολλὰ καὶ ἐγένετο ὀλίγα, καὶ εἰσηνέχθη εἰς τὸν
 οἶκον καὶ ἐξεφύσησα αὐτά. διὰ τοῦτο τάδε λέγει Κύριος Παντοκράτωρ
 Ανθʼ ὧν ὁ οἶκός μού ἐστιν ἔρημος. ὑμεῖς δὲ διώκετε ἕκαστος
-<note type="marginal">U+05D0AQ</note> <note type="footnote">Inscr Αγγαιος ι BU+05D0AQ 1 1 Δαρειου BᵃQ Αγγεου B* (-γαιου Bᵃᵇ)
+<note type="marginal">U+05D0AQ</note>
+                  <note type="footnote">Inscr Αγγαιος ι BU+05D0AQ 1 1 Δαρειου BᵃQ Αγγεου B* (-γαιου Bᵃᵇ)
 U+05D0 ειπον] + δη AQ εκ φυλης] pr τον A 2 om λεγων U+05D0? (postea
 revoc) ο καιρος] om ο Q* (hab Qᵃ) 3 Αγγεου U+05D0 4 μεν υμιν]
 υμιν μεν U+05D0AQmg om μεν Q* εστι Qᵃ om υμων 10 U+05D0c.a (postea revoc)
@@ -124,38 +159,65 @@ A (εις A¹) εθερμαρθητε U+05D0* (εθερμανθ. U+05D0c) συν
 οδους] om τας B* (hab U+05D0c.a, c.b ) οδους sup ras pl litt Aᵃ 8 εις] επι]
 U+05D0c.b AQ το ορος] om το U+05D0* (hab U+05D0¹(vid)) κοψετε U+05D0* (- ψατε U+05D0c.a, c.b)
 9 εγενετο] εγενοντο A εστιν] pr ος U+05D0c.(b?) ᵛⁱᵈ (rurs del)</note>
-
-<pb n="71"/>
-εἰς τὸν οἶκον αὐτοῦ,</p></div> <div type="textpart" subtype="verse" n="10"><p>διὰ τοῦτο ἀνέξει ὁ οὐρανὸς ἀπὸ δρόσου, καὶ <note type="marginal">B</note>
-ἡ γῆ ὑποστελεῖται τὰ ἐκφόρια αὐτῆς·</p></div> <div type="textpart" subtype="verse" n="11"><p>καὶ ἐπάξω ῥομφαίαν ἐπὶ
+                  <pb n="71"/>
+εἰς τὸν οἶκον αὐτοῦ,</p>
+            </div>
+            <div n="10" type="verse">
+               <p>διὰ τοῦτο ἀνέξει ὁ οὐρανὸς ἀπὸ δρόσου, καὶ <note type="marginal">B</note>
+ἡ γῆ ὑποστελεῖται τὰ ἐκφόρια αὐτῆς·</p>
+            </div>
+            <div n="11" type="verse">
+               <p>καὶ ἐπάξω ῥομφαίαν ἐπὶ
 τὴν γῆν καὶ ἐπὶ τὰ ὄρη, καὶ ἐπὶ τὸν σῖτον καὶ ἐπὶ τὸν οἶνον καὶ
 ἐπὶ τὸ ἔλαιον καὶ ὅσα ἐκφέρει ἡ γῆ, καὶ ἐπὶ τοὺς ἀνθρώπους καὶ ἐπὶ
-τὰ κτήνη, καὶ ἐπὶ πάντας τοὺς πόνους τῶν χειρῶν αὐτῶν.</p></div> <div type="textpart" subtype="verse" n="12"><p> Καὶ
+τὰ κτήνη, καὶ ἐπὶ πάντας τοὺς πόνους τῶν χειρῶν αὐτῶν.</p>
+            </div>
+            <div n="12" type="verse">
+               <p> Καὶ
 ἤκουσεν Ζοροβαβελ ὁ τοῦ Σαλαθιὴλ ἐκ φυλῆς Ἰούδα καὶ Ἰησοῦς ὁ
 τοῦ Ἰωσεδὲκ ὁ ἱερεὺς ὁ μέγας καὶ πάντες οἱ κατάλοιποι τοῦ
 λαοῦ τῆς φωνῆς Κυρίου τοῦ θεοῦ αὐτῶν καὶ τῶν λόγων Ἀγγαίου
 τοῦ προφήτου, καθότι ἐξαπέστειλεν αὐτὸν Κύριος ὁ θεὸς αὐτῶν πρὸς
-αὐτούς, καὶ ἐφοβήθη ὁ λαὸς ἀπὸ προσώπου Κυρίου.</p></div> <div type="textpart" subtype="verse" n="13"><p>καὶ εἶπεν
+αὐτούς, καὶ ἐφοβήθη ὁ λαὸς ἀπὸ προσώπου Κυρίου.</p>
+            </div>
+            <div n="13" type="verse">
+               <p>καὶ εἶπεν
 Ἀγγαῖος ἄγγελος Κυρίου ἐν ἀγγέλοις Κυρίου τῷ λαῷ Ἐγὼ εἰμι
-μεθʼ ὑμῶν, λέγει Κύριος.</p></div> <div type="textpart" subtype="verse" n="14"><p>καὶ ἐξήγειρεν Κύριος τὸ πνεῦμα Ζοροβαβὲλ
+μεθʼ ὑμῶν, λέγει Κύριος.</p>
+            </div>
+            <div n="14" type="verse">
+               <p>καὶ ἐξήγειρεν Κύριος τὸ πνεῦμα Ζοροβαβὲλ
 τοῦ Σαλαθιὴλ ἐκ φυλῆς Ἰούδα καὶ τὸ πνεῦμα Ἰησοῦ τοῦ
 Ἰσεδὲκ τοῦ ἱερέως τοῦ μεγάλου καὶ τὸ πνεῦμα τῶν καταλοίπωυ
 παντὸς τοῦ λαοῦ, καὶ εἰσῆλθον καὶ ἐποίουν ἔργα ἐν τῷ οἴκῳ Κυρίου
-Παντοκράτορος θεοῦ αὐτῶν.</p></div>
-</div>
-     
-     <div type="textpart" subtype="chapter" n="2">
-<div type="textpart" subtype="verse" n="1"><p>Τῇ τετράδι καὶ εἰκάδι τοῦ μηνὸς τοῦ ἕκτου τῷ δευτέρῳ ἔτει ἐπὶ
+Παντοκράτορος θεοῦ αὐτῶν.</p>
+            </div>
+         </div>
+         <div n="2" type="chapter">
+            <div n="1" type="verse">
+               <p>Τῇ τετράδι καὶ εἰκάδι τοῦ μηνὸς τοῦ ἕκτου τῷ δευτέρῳ ἔτει ἐπὶ
 Δαρίου τοῦ βασιλέως (1)τῷ μηνὶ τῷ ἑβδόμῳ μιᾷ καὶ εἰκάδι τοῦ μηνὸς
-ἐλάλησεν Κύριος ἐν χειρὶ Ἀγγαίου τοῦ προφήτου λέγων</p></div> <div type="textpart" subtype="verse" n="2"><p> Εἰπὸν δὴ
+ἐλάλησεν Κύριος ἐν χειρὶ Ἀγγαίου τοῦ προφήτου λέγων</p>
+            </div>
+            <div n="2" type="verse">
+               <p> Εἰπὸν δὴ
 πρὸς Ζοροβάβελ τὸν Σαλαθιὴλ ἐκ φυλῆς Ἰούδα καὶ πρὸς Ἰησοῦν
 τὸν τοῦ Ἰωσεδὲκ τὸν ἱερέα τὸν μέγαν καὶ πρὸς πάντας τοὺς καταλοίπους
-τοῦ λαοῦ λέγων</p></div> <div type="textpart" subtype="verse" n="3"><p>Τίς ἐξ ὑμῶν ὃς εἶδεν τὸν οἶκον τοῦτον ἐν
+τοῦ λαοῦ λέγων</p>
+            </div>
+            <div n="3" type="verse">
+               <p>Τίς ἐξ ὑμῶν ὃς εἶδεν τὸν οἶκον τοῦτον ἐν
 τῇ δόξῃ αὐτοῦ τῇ ἔμπροσθεν; καὶ πῶς ὑμεῖς βλέπετε αὐτὸν νῦν
-καθὼς οὐχ ὑπάρχοντα ἐνώπιον ὑμῶν.</p></div> <div type="textpart" subtype="verse" n="4"><p>§4καὶ νῦν κατίσχυε, Ζοροβα- <note type="marginal">§Γ</note>
+καθὼς οὐχ ὑπάρχοντα ἐνώπιον ὑμῶν.</p>
+            </div>
+            <div n="4" type="verse">
+               <p>§4καὶ νῦν κατίσχυε, Ζοροβα- <note type="marginal">§Γ</note>
 βέλ, λέγει Κύριος, καὶ κατίσχυε, Ἰησοῦ ὁ τοῦ Ἰωσεδὲκ ὁ ἱερεὺς ὁ
 μέγας, καὶ κατισχυέτω πᾶς ὁ λαὸς τῆς γῆς, λέγει Κύριος, καὶ ποιεῖτε·
-διότι μεθʼ ὑμῶν ἐγὼ εἰμι, λέγει Κύριος ὁ παντοκράτωρ,</p></div> <div type="textpart" subtype="verse" n="5"><p>καὶ
+διότι μεθʼ ὑμῶν ἐγὼ εἰμι, λέγει Κύριος ὁ παντοκράτωρ,</p>
+            </div>
+            <div n="5" type="verse">
+               <p>καὶ
 <note type="footnote">11 σιον U+05D0* (σιτον U+05D0c.a, c.b) 12 εκ φυλης] pr ο A 12— 14 om <note type="marginal">U+05D0AQΓ</note>
 και Ιησους.. Σαλαθιηλ εκ φυλης Ιουδα Q* (hab Qᵐᵍ sinistr: item hab και
 Ιησους...εξαποστειλεν αυτον κς ο θς αυτον προς Q(?)mg sup) ουτων 1⁰] αυτου
@@ -169,36 +231,67 @@ U+05D0c.a) Αγγεου 2 Σαλαθιηλ] pr του Bᵃᵇᵛiᵈ U+05D0AQ φ
 (φυλ. U+05D0c.a) 3 τις εξ υμων] + πεοιλειφθεις U+05D0c.a (postea ras) ειδεν] οιεν
 A 4 Ξοροβαβελ U+05D0* (Ζορ. U+05D0c.a) | Iησου ο] Ιησους Avid εγω μεθ υμων
 AΓ ο παντοκρατωρ] om ο U+05D0c.b AQΓ</note>
-
-<pb n="72"/>
-<note type="marginal">B</note> τὸ πνεῦμά μου ἐφέστηκεν ἐν μέσῳ ὑμῶν· θαρσεῖτε.</p></div> <div type="textpart" subtype="verse" n="6"><p>διότι λέγει
+                  <pb n="72"/>
+                  <note type="marginal">B</note> τὸ πνεῦμά μου ἐφέστηκεν ἐν μέσῳ ὑμῶν· θαρσεῖτε.</p>
+            </div>
+            <div n="6" type="verse">
+               <p>διότι λέγει
 Κύριος ΙΙαντοκράτωρ Ἔτι ἅπαξ ἐγὼ σείσω τὸν οὐρανὸν καὶ τὴν γῆν
-καὶ τὴν θάλασσαν καὶ τὴν ξηράν,</p></div> <div type="textpart" subtype="verse" n="7"><p>καὶ συνσείσω πάντα τὰ ἔθνη,
+καὶ τὴν θάλασσαν καὶ τὴν ξηράν,</p>
+            </div>
+            <div n="7" type="verse">
+               <p>καὶ συνσείσω πάντα τὰ ἔθνη,
 καὶ ἥξει τὰ ἐκλεκτὰ πάντων τῶν ἐθνῶν· καὶ πλήσω τὸν οἶκον τοῦτον
-δόξης, λέγει Κύριος Παντοκράτωρ.</p></div> <div type="textpart" subtype="verse" n="8"><p>ἐμὸν τὸ ἀργύριον καὶ ἐμὸν
-τὸ χρυσίον, λέγει Κύριος αντοκράτωρ.</p></div> <div type="textpart" subtype="verse" n="9"><p>διότι μεγάλη ἔσται ἡ δόξα
+δόξης, λέγει Κύριος Παντοκράτωρ.</p>
+            </div>
+            <div n="8" type="verse">
+               <p>ἐμὸν τὸ ἀργύριον καὶ ἐμὸν
+τὸ χρυσίον, λέγει Κύριος αντοκράτωρ.</p>
+            </div>
+            <div n="9" type="verse">
+               <p>διότι μεγάλη ἔσται ἡ δόξα
 τοῦ οἴκου τούτου ἡ ἐσχάτη ὑπέρ τὴν πρώτην, λέγει Κύριος Παντοκράτωρ·
 καὶ ἐν τῷ τόπῳ τούτῳ δώσω εἰρήνην, λέγει Κύριος Πfαντοκράτωρ,
 καὶ εἰρήνην ψυχῆς εἰς περιποίησιν παντὶ τῷ κτίζοντι τοῦ
-ἀναστῆσαι τὸυ ναὸν τοῦτον.</p></div>
-<div type="textpart" subtype="verse" n="10"><p>Τετράδι καὶ εἰκάδι τοῦ ἐνάτου μηνὸς ἔτους δευτέρου ἐπὶ Δαρίου
-ἐγένετο λόγος Κυρίου πρὸς Ἀγγαῖον τὸν προφήτην λέγων</p></div> <div type="textpart" subtype="verse" n="11"><p>Τάδε
-λέγει Κύριος Παντοκράτωρ Ἐπερώτησον τοὺς ἱερεῖς νόμον λέγων</p></div>
-<div type="textpart" subtype="verse" n="12"><p> Ἐὸν λάβῃ ἄνθρωπος κρέας ἅγιον ἐν τῷ ἄκρῳ τοῦ ἱματίου αὐτοῦ,
+ἀναστῆσαι τὸυ ναὸν τοῦτον.</p>
+            </div>
+            <div n="10" type="verse">
+               <p>Τετράδι καὶ εἰκάδι τοῦ ἐνάτου μηνὸς ἔτους δευτέρου ἐπὶ Δαρίου
+ἐγένετο λόγος Κυρίου πρὸς Ἀγγαῖον τὸν προφήτην λέγων</p>
+            </div>
+            <div n="11" type="verse">
+               <p>Τάδε
+λέγει Κύριος Παντοκράτωρ Ἐπερώτησον τοὺς ἱερεῖς νόμον λέγων</p>
+            </div>
+            <div n="12" type="verse">
+               <p> Ἐὸν λάβῃ ἄνθρωπος κρέας ἅγιον ἐν τῷ ἄκρῳ τοῦ ἱματίου αὐτοῦ,
 καὶ ἄψηται τὸ ἄκρον τοῦ ἱματίου αὐτοῦ ἄρτου ἡ ἑψέματος ἢ οἴνου
 ἢ ἐλαίου ἢ παντὸς βρώματος, εἰ ἁγιασθήσεται; καὶ ἀπεκρίθησαν οἱ
-ἱερεῖς καὶ εἶπαν Οὔ.</p></div> <div type="textpart" subtype="verse" n="13"><p>καὶ εἶπεν Ἁγγαῖος Ἐὰν ἅψηται μεμιαμμένος
+ἱερεῖς καὶ εἶπαν Οὔ.</p>
+            </div>
+            <div n="13" type="verse">
+               <p>καὶ εἶπεν Ἁγγαῖος Ἐὰν ἅψηται μεμιαμμένος
 ἀκάθαρτος ἐπὶ ψυχῇ ἐπὶ παντὸς τούτων, εἰ μιανθήσεται; καὶ ἀπεκρίθησαν
-οἱ ἱερεῖς καὶ εἶπαν Μιανθήσεται.</p></div> <div type="textpart" subtype="verse" n="14"><p>καὶ ἀπεκρίθη Ἁγγαῖος καὶ
+οἱ ἱερεῖς καὶ εἶπαν Μιανθήσεται.</p>
+            </div>
+            <div n="14" type="verse">
+               <p>καὶ ἀπεκρίθη Ἁγγαῖος καὶ
 εἶπεν Οὕτως ὁ λαὸς οὗτος, καὶ οὕτως τὸ ἔθνος τοῦτο ἐνώπιον ἐμοῦ,
 λέγει Κύριος, καὶ οὕτως πάντα τὰ ἔργα τῶν χειρῶν αὐτῶν, καὶ ὃς
 ἐὰν ἐγγίσῃ ἐκεῖ, μιανθήσεται ἕνεκεν τῶν λημμάτων αὐτῶν τῶν ὀρθρινῶν,
 ὀδυνηθήσονται ἀπὸ προσώπου πόνων αὐτῶν· καὶ ἐμισεῖτε ἐν
-πύλαις ἐλέγχοντας.</p></div> <div type="textpart" subtype="verse" n="15"><p>καὶ νῦν θέσθε δὴ εἰς τὰς καρδίας ὑμῶν ἀπὸ
+πύλαις ἐλέγχοντας.</p>
+            </div>
+            <div n="15" type="verse">
+               <p>καὶ νῦν θέσθε δὴ εἰς τὰς καρδίας ὑμῶν ἀπὸ
 τῆς ἡμέρας ταύτης καὶ ὑπεράνω, πρὸ τοῦ θεῖναι λίθον ἐπὶ λίθου ἐν
-τῷ ναῷ Κυρίου,</p></div> <div type="textpart" subtype="verse" n="16"><p>τίνες ἦτε, ὅτε ἐνεβάλλετε εἰς κυψέλην κριθῆς εἴκοσι
+τῷ ναῷ Κυρίου,</p>
+            </div>
+            <div n="16" type="verse">
+               <p>τίνες ἦτε, ὅτε ἐνεβάλλετε εἰς κυψέλην κριθῆς εἴκοσι
 σάτα, καὶ ἐγένετο κριθῆς δέκα σάτα, καὶ εἰσεπορεύεσθε εἰς
-<note type="marginal">U+05D0ΑQΓ</note> <note type="footnote">5 το πνευμα] om το Γ 6 διοτι] +ταδε AQ Παντοκρατωρ] pr ο
+<note type="marginal">U+05D0ΑQΓ</note>
+                  <note type="footnote">5 το πνευμα] om το Γ 6 διοτι] +ταδε AQ Παντοκρατωρ] pr ο
 U+05D0* (improb ο U+05D0c.a, c.b) om και 2⁰ U+05D0* (hab U+05D0c.a) 7 συσσεισω BᵃᵇQᵃ
 εκλεκτα] επιλεκτα Γ πλησω] πληρωσω AΓ 9 ειρηνην 2⁰] ειρηνης A
 κτιζοντι] κτισαντι Γ 10 του ενατου μηνος] μηνι τω ενατω AΓ τω
@@ -211,28 +304,48 @@ U+05D0 | εμου] μου Q εαν] αν Q ενγιση U+05D0 | εκει] αυ�
 Γ πονων] πονηριων U+05D0c.a 15 εις] επι U+05D0c.bAQΓ περανω προ] επανω
 A om προ A 16 κριθης 1⁰] post ι 2 fort lilt ras A? εγενετο] εγινετο
 Q κριθης δεκα σατα] δεκα σατα κρ. U+05D0c.b</note>
-
-<pb n="73"/>
-τὸ ὑπολήνιον ἐξαντλῆσαι πεντήκοντα μετρητάς, καὶ ἐγένοντο εἴκοσι.</p></div> <note type="marginal">B</note>
-<div type="textpart" subtype="verse" n="17"><p>ἐπάταξα ὑμᾶς ἐν ἀφορίᾳ καὶ ἐν ἀνεμοφθορίᾳ καὶ ἐν χαλάζῃ, πάντα
+                  <pb n="73"/>
+τὸ ὑπολήνιον ἐξαντλῆσαι πεντήκοντα μετρητάς, καὶ ἐγένοντο εἴκοσι.</p>
+            </div>
+            <note type="marginal">B</note>
+            <div n="17" type="verse">
+               <p>ἐπάταξα ὑμᾶς ἐν ἀφορίᾳ καὶ ἐν ἀνεμοφθορίᾳ καὶ ἐν χαλάζῃ, πάντα
 τὰ ἔργα τῶν χειρῶν ὑμῶν, καὶ οὐκ ἐπεστρέψατε πρὸς μέ, λέγει
-Κύριος. </p></div> <div type="textpart" subtype="verse" n="18"><p>ὑποτάξατε δὴ τὰς καρδίας¶ ὑμῶν ἀπὸ τῆς ἡμέρας ταύτης <note type="marginal">¶ Γ</note>
+Κύριος. </p>
+            </div>
+            <div n="18" type="verse">
+               <p>ὑποτάξατε δὴ τὰς καρδίας¶ ὑμῶν ἀπὸ τῆς ἡμέρας ταύτης <note type="marginal">¶ Γ</note>
 καὶ ἐπέκεινα, ἀπὸ τῆς τετράδος καὶ εἰκάδος τοῦ ἐυάτου μηνός, καὶ
 ἀπὸ τῆς ἡμέρας ἧς τεθεμελίωται ὁ ναὸς Κυρίου· θέσθε ἐν ταῖς καρδίαις
-ὑμῶν,</p></div> <div type="textpart" subtype="verse" n="19"><p>εἰ ἐπιγνωσθήσεται ἐπὶ τῆς ἃλω, καὶ εἰ ἔτι ἡ ἄμπελος
+ὑμῶν,</p>
+            </div>
+            <div n="19" type="verse">
+               <p>εἰ ἐπιγνωσθήσεται ἐπὶ τῆς ἃλω, καὶ εἰ ἔτι ἡ ἄμπελος
 καὶ ἡ συκῆ καὶ ἡ ῥοὰ καὶ τὰ ξύλα τῆς ἐλαίας τὰ οὐ φέροντα καρπόν·
-ἀπὸ τῆς ἡμέρας ταύτης εὐλογήσω.</p></div>
-<div type="textpart" subtype="verse" n="20"><p>Καὶ ἐγένετο λόγος Κυρίου ἐκ δευτέρου πρὸς Ἁγγαῖον τὸν πρὸφήτην
-τετράδι καὶ εἰκάδι τοῦ μηνὸς λέγων</p></div> <div type="textpart" subtype="verse" n="21"><p>Εἰπὸν πρὸς Ζοροβάβελ
+ἀπὸ τῆς ἡμέρας ταύτης εὐλογήσω.</p>
+            </div>
+            <div n="20" type="verse">
+               <p>Καὶ ἐγένετο λόγος Κυρίου ἐκ δευτέρου πρὸς Ἁγγαῖον τὸν πρὸφήτην
+τετράδι καὶ εἰκάδι τοῦ μηνὸς λέγων</p>
+            </div>
+            <div n="21" type="verse">
+               <p>Εἰπὸν πρὸς Ζοροβάβελ
 τὸν τοῦ Σαλαθιὴλ ἐκ φυλῆς Ἰούδα λέγων Ἐγὼ σείω τὸν οὐρανὸν
-καὶ τὴν γῆν καὶ τὴν θάλασσαν καὶ τὴν ξηράν,</p></div> <div type="textpart" subtype="verse" n="22"><p>καὶ καταστρέψω
+καὶ τὴν γῆν καὶ τὴν θάλασσαν καὶ τὴν ξηράν,</p>
+            </div>
+            <div n="22" type="verse">
+               <p>καὶ καταστρέψω
 θρόνους βασιλέων, καὶ ὀλεθρεύσω δύναμιν βασιλέων τῶν ἐθνῶν, καὶ
 καταστρέψω ἄρματα καὶ ἀναβάτας, καὶ καταβήσονται ἵπποι καὶ ἀναβάτοι
-αὐτῶν ἕκαστος ἐν ῥομφαίᾳ πρὸς τὸν ἀδελφὸν αὐτοῦ.</p></div> <div type="textpart" subtype="verse" n="23"><p>ἐν τῇ
+αὐτῶν ἕκαστος ἐν ῥομφαίᾳ πρὸς τὸν ἀδελφὸν αὐτοῦ.</p>
+            </div>
+            <div n="23" type="verse">
+               <p>ἐν τῇ
 ἡμέρᾳ ἐκείνῃ, λέγει Κύριος Παντοκράτωρ, λήμψομαί σε Ζοροβάβελ τὸν
 τοῦ Σαλαθιὴλ τὸν δοῦλόν μου, λέγει Κύριος. καὶ θήσομαί σε ὡς σφραγῖδα,
-διότι σέ ᾑρέτισα, λέγει Κύριος Παντοκράτωρ.</p></div>
-<note type="footnote">16 πεντηκοντα] ν᾿ U+05D0 εγενοντο] εγινοντο Q εικοσι 2⁰] pr εις U+05D0 17 επα- <note type="marginal">U+05D0ΑQΓ</note>
+διότι σέ ᾑρέτισα, λέγει Κύριος Παντοκράτωρ.</p>
+            </div>
+            <note type="footnote">16 πεντηκοντα] ν᾿ U+05D0 εγενοντο] εγινοντο Q εικοσι 2⁰] pr εις U+05D0 17 επα- <note type="marginal">U+05D0ΑQΓ</note>
 ταξα] pr και Q αφορια] απορια (αφ. U+05D0c.b) αφθορια A 18 υπο-
 ταξατε] ταξατε U+05D0c.a, c.b) AQΓ τεθεμελιωται] εθεμελιωθη AQ 19 ει
 1⁰] +ετι U+05D0c.a AQ επιγνωσθησεται (επεγν. B* επιγν. Bᵃᵇ)] επιγνωσησθε U+05D0*
@@ -245,12 +358,7 @@ ras) και κατα| στρεψ ω πασον την δυναμιν αυτω| �
 Qᵃ (λ᾿ καβησ. [sic] Qmg) 23 λημψομαι (ληψ. Q)] + σε U+05D0c.a, c.b ως σφρα-
 γιδα (ωσηφο. U+05D0)] εις σφρ. A διοτι] οτι A ρετισαμην U+05D0c (postea ηρετισα)
 Subscr Αγγαιος (-γεος U+05D0) ι BU+05D0AQ</note>
-</div>
-
-
-
-
-    </div>
-  </body>
-</text>
+         </div>
+      </body>
+   </text>
 </TEI>

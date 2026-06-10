@@ -1,100 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-    
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">De hirudinibus, revulsione, cucurbitula, incisione et scarificatione</title>
-                <author>Galen</author>
-                <editor>Karl Gottlob Kühn</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De hirudinibus, revulsione, cucurbitula, incisione et scarificatione</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0057.tlg071.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg071.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-                        <author>Galen</author>
-                        <editor>Karl Gottlob Kühn</editor>
-                        <imprint>
-                            <publisher>Knobloch</publisher>
-                            <pubPlace>Leipzig</pubPlace>
-                            <biblScope unit="vol">11</biblScope>
-                            <biblScope unit="pp" from="317" to="322">317-322</biblScope>
-                            <date>1826</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/hvd.hxpp8s?urlappend=%3Bseq=329%3Bownerid=27021597764275152-333">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg071.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Leipzig</pubPlace>
+                     <biblScope unit="vol">11</biblScope>
+                     <biblScope unit="pp" from="317" to="322">317-322</biblScope>
+                     <date>1826</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/hvd.hxpp8s?urlappend=%3Bseq=329%3Bownerid=27021597764275152-333">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg071.1st1K-grc1">
-                <pb n="317"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΒΔΕΛΛΩΝ, ΑΝΤΙΣΠΑΣΕΩΣ, <lb/>ΣΙΚΥΑΣ ΚΑΙ ΕΓΧΑΡΑΞΕΩΣ <lb/>ΚΑΙ
+         <refsDecl n="CTS">
+            <cRefPattern n="chapter"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg071.1st1K-grc1">
+         <pb n="317"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΒΔΕΛΛΩΝ, ΑΝΤΙΣΠΑΣΕΩΣ, <lb/>ΣΙΚΥΑΣ ΚΑΙ ΕΓΧΑΡΑΞΕΩΣ <lb/>ΚΑΙ
                         ΚΑΤΑΣΧΑΣΜΟΥ.</head>
-                    <p>Θηρῶντές τινες τὰς βδέλλας κατακλείουσι <lb/>καὶ ἐπὶ πολλοῖς αὐταῖς χρῶνται.
+            <p>Θηρῶντές τινες τὰς βδέλλας κατακλείουσι <lb/>καὶ ἐπὶ πολλοῖς αὐταῖς χρῶνται.
                         αὗται γὰρ ἐκμειλίττουσαι <lb/>ῥᾳδίως ἅπτονται τῶν σαρκῶν. τὰς δὲ νέον
                         εἰλημμένας φυλάττειν <lb/>χρὴ ἡμέραν μίαν, αἷμα ὀλίγον εἰς διατροφὴν
                         ἐμβάλλοντας. <lb/>οὕτως γὰρ διαπιεσθήσεται τὸ ἰῶδες αὐτῶν. ἐπὶ δὲ τῆς
@@ -118,10 +125,10 @@
                         τοῦ αἵματος. ἐκκωλύομεν δὲ καὶ οὐκ <lb/>ἐῶμεν ἀποῤῥεῖν ἕως ἂν αὔταρκες
                         ἀποκριθῇ, ἐπειδὴ τὸ μόριον <lb/>ψύχεται ὑπό τε τῶν βδελλῶν φύσει ψυχρῶν
                         οὐσῶν καὶ ὑπὸ <lb/>τοῦ περιέχοντος. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>Περὶ ἀντισπάσεως.</p>
-                    <p>Τὰς σφοδροτάτας ἐπιῤῥοὰς τῶν χυμῶν <lb/>ἀντισπαστικοῖς βοηθήμασι κωλύομεν
+         </div>
+         <div n="2" type="chapter">
+            <p>Περὶ ἀντισπάσεως.</p>
+            <p>Τὰς σφοδροτάτας ἐπιῤῥοὰς τῶν χυμῶν <lb/>ἀντισπαστικοῖς βοηθήμασι κωλύομεν
                         ἀθρόως κατασκήπτειν. <lb/>ἀντισπαστικὰ δέ ἐστι βοηθήματα ἐπὶ τῆς εἰς θώρακα
                         καὶ <lb/>γαστέρα ῥοπῆς εἰς χεῖρας· ἔμετοι δὲ ἐπὶ τῆς εἰς τὰ κάτω,
                         <lb/>καθάπερ καὶ ἡ διὰ τῶν δριμυτέρων κλυσμῶν τῆς ἐπὶ τοὺς <lb/>ἐμέτους.
@@ -138,10 +145,10 @@
                         ἐκτὸς εἴσω, <lb/>κᾂν πρὸς τὰ δεξιὰ ῥέπῃ, ἐπὶ τὰ ἀριστερὰ, καὶ εἰ πρὸς τὰ
                         <lb/>εὐώνυμα, πρὸς τὰ ἐναντία. οὕτω δὲ καὶ τὰς μὲν ὀπίσω ῥοπὰς <lb/>πρόσω,
                         τὰς δ’ εἰς πρόσω ὄπισθεν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>Περὶ σικύας.</p>
-                    <p>Σικύαι προκενωθέντων χρήσιμοι. πληθωρικῶν <lb/>γὰρ ὑπαρχόντων οὐ χρησόμεθα
+         </div>
+         <div n="3" type="chapter">
+            <p>Περὶ σικύας.</p>
+            <p>Σικύαι προκενωθέντων χρήσιμοι. πληθωρικῶν <lb/>γὰρ ὑπαρχόντων οὐ χρησόμεθα
                         ταύταις. τῷ δὲ αὐτῷ <lb/>λόγῳ κἀπὶ τῶν κατ’ ἐγκέφαλον καὶ μήνιγγας φλεγμονῶν
                         οὐ <lb/>χρησόμεθα σικύαις ἐν ἀρχῇ τῶν παθῶν, ὥσπερ οὐδ’ ἐπ’ <lb/>ἄλλου
                         μορίου φλεγμαίνοντος οὐδενὸς, ἀλλ’ ὅταν μὴ ἐπιῤῥῇ <lb/>μηδὲν ἔτι καὶ
@@ -154,11 +161,11 @@
                         ποιήσασθαι, λειποθυμίας ἀπαλλάξαι, τὰ ἐκ τῶν βάθεων <lb/>μεταφέρειν ῥεύματα
                         καὶ ξηρᾶναι καὶ αἱμοῤῥαγίας ἐπισχεῖν, <lb/>καὶ ἐμμήνων φθοροποιοὺς δυνάμεις
                         ἑλκύσαι, καὶ ἔμμηνα κουφίσαι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>
-                        <milestone unit="ed2page" n="455"/>Περὶ ἐγχαράξεως καὶ κατασχασμοῦ.</p>
-                    <p>Ἐγχαράξομεν μέρη τοῦ σώματος, ἤτοι φλεγμαίνοντα, <lb/>ἢ σκιῤῥούμενα, ἢ
+         </div>
+         <div n="4" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="455"/>Περὶ ἐγχαράξεως καὶ κατασχασμοῦ.</p>
+            <p>Ἐγχαράξομεν μέρη τοῦ σώματος, ἤτοι φλεγμαίνοντα, <lb/>ἢ σκιῤῥούμενα, ἢ
                         τεταμένα, ἢ ἐπωδύνως ἔχοντα, <lb/>ἢ ῥευματισθέντα, ἤδη στάσιν εἰληφότος τοῦ
                         ῥευματισμοῦ, ἢ <lb/>δριμείας ὕλης παρακειμένης, ἢ ἰώδους δυνάμεως ἔξωθεν
                         ἐμπεσούσης, <lb/>ἢ βουλόμενοι μεταγαγεῖν ἐξ ἑτέρων μερῶν εἰς ἄλλο <lb/>τὴν
@@ -172,8 +179,7 @@
                         οἷον σκελῶν, τὴν <lb/>ἀφαίρεσιν δεῖ ποιεῖσθαι. ὠφελεῖ δὲ ἡ ἐγχάραξις καὶ
                         ὀφθαλμοὺς <lb/>χρονίως ῥευματιζομένους καὶ κεφαλῆς διαθέσεις καὶ <lb/>τὰ
                         περὶ θώρακα καὶ μετάφρενα καὶ συνάγχας καὶ <lb/>σφηνώσεις. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

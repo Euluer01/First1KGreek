@@ -1,98 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">        
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">De causis morborum</title>
-                <author>Galen</author>
-                <editor>Karl Gottlob Kühn</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De causis morborum</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0057.tlg042.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg042.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-                        <author>Galen</author>
-                        <editor>Karl Gottlob Kühn</editor>
-                        <imprint>
-                            <publisher>Knobloch</publisher>
-                            <pubPlace>Leipzig</pubPlace>
-                            <biblScope unit="vol">7</biblScope>
-                            <biblScope unit="pp" from="1" to="41">1-41</biblScope>
-                            <date>1824</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/hvd.hxpp8n?urlappend=%3Bseq=13%3Bownerid=27021597764275116-17">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg042.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Leipzig</pubPlace>
+                     <biblScope unit="vol">7</biblScope>
+                     <biblScope unit="pp" from="1" to="41">1-41</biblScope>
+                     <date>1824</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/hvd.hxpp8n?urlappend=%3Bseq=13%3Bownerid=27021597764275116-17">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg042.1st1K-grc1">
-                <pb n="1"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΤΩΝ ΕΝ ΤΟΙΣ <lb/>ΝΟΣΗΜΑΣΙΝ ΑΙΤΙΩΝ ΒΙΒΛΙΟΝ.</head>
-                    <p>Πόσα μέν ἐστι καὶ τίνα τὰ σύμπαντα <lb/>νοσήματα κατ’ εἴδη τε καὶ γένη
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg042.1st1K-grc1">
+         <pb n="1"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΤΩΝ ΕΝ ΤΟΙΣ <lb/>ΝΟΣΗΜΑΣΙΝ ΑΙΤΙΩΝ ΒΙΒΛΙΟΝ.</head>
+            <p>Πόσα μέν ἐστι καὶ τίνα τὰ σύμπαντα <lb/>νοσήματα κατ’ εἴδη τε καὶ γένη
                         διαιρουμένοις, ἁπλᾶ τε <lb/>καὶ σύνθετα, δι’ ἑτέρου δεδήλωται γράμματος.
                         ἑξῆς δ’ ἂν <lb/>εἴη τὰς αἰτίας αὐτῶν ἑκάστου διελθεῖν, ἀπὸ τῶν ἁπλῶν τε
                         <lb/>καὶ ὁμοιομερῶν ὀνομαζομένων τοῦ ζώου μορίων ἀρξαμένους, <lb/>εἶτ’ αὖθις
@@ -110,9 +118,9 @@
                         ὑγρὸν, ἔστιν ὅτε δὲ καὶ <lb/>κατὰ συζυγίαν τινὰ αὐξηθέντων αὐτῶν, ὡς εἶναι
                         θερμὸν ἅμα <lb/>καὶ ξηρὸν, ἢ ψυχρὸν καὶ ξηρὸν, ἢ θερμὸν καὶ ὑγρὸν, <lb/>ἢ
                         ψυχρὸν καὶ ὑγρὸν τὸ νόσημα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>Τίνες οὖν ἑκάστου τῶν εἰρημένων νοσημάτων <lb/>αἰτίαι τῆς γενέσεως, ἤδη
+         </div>
+         <div n="2" type="chapter">
+            <p>Τίνες οὖν ἑκάστου τῶν εἰρημένων νοσημάτων <lb/>αἰτίαι τῆς γενέσεως, ἤδη
                         σκοπώμεθα, ἀρχὴν ἀπὸ τοῦ <lb/>κατὰ θερμασίαν ἄμετρον δυσκράτου νοσήματος
                         ποιησάμενοι. <pb n="3"/> φαίνεται δὴ <milestone unit="ed1page" n="206"/>κᾀπὶ
                         τῶν ἄλλων ἁπάντων σωμάτων, ὁπόσα <lb/>θερμότερα γίγνεται σφῶν αὐτῶν, ἢ ἐκ
@@ -227,9 +235,9 @@
                         κινήσεις <lb/>παρὰ φύσιν, αἰτίας ὀνομάζουσι προηγουμένας νοσημάτων, <lb/>τὰ
                         δ’ ἔξωθεν προσπίπτοντα καὶ ἀλλοιοῦντα καὶ μεταβάλλοντα <lb/>μεγάλως τὸ σῶμα
                         προκατάρχοντά τε καὶ προκαταρκτικὰ <lb/>καλοῦσιν αἴτια. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>Τοῦ μὲν δὴ θερμοῦ νοσήματος ἐν τῷ καθόλου <lb/>τὰς αἰτίας εἴπομεν, ἐπὶ δὲ τὸ
+         </div>
+         <div n="3" type="chapter">
+            <p>Τοῦ μὲν δὴ θερμοῦ νοσήματος ἐν τῷ καθόλου <lb/>τὰς αἰτίας εἴπομεν, ἐπὶ δὲ τὸ
                         ψυχρὸν ἤδη μεταβῶμεν. <lb/>εἰσὶ δὲ καὶ αἱ τοῦδε πλείους τὸν ἀριθμὸν αἰτίαι,
                         οἷον ὁμιλίαι <lb/>τῶν ψυχόντων, καὶ τῶν ἐσθιομένων καὶ πινομένων τό ﻿<pb n="11"/> τε ποσὸν καὶ τὸ ποιὸν, καὶ στέγνωσίς τε καὶ μάνωσις, κᾀπὶ
                         <lb/>τούτοις ἀργία τε καὶ κίνησις ἄμετρος. αὗται γὰρ οὖν <lb/>δὴ καὶ αὐτὸ τὸ
@@ -347,12 +355,11 @@
                         καταψύξουσιν αὐτὸ, τῆς πρὸς τὴν ἀρχὴν τοῦ <lb/>ζώου κοινωνίας στερήσαντες,
                         ἐξ ἧς αὐτῷ καὶ ἡ σύμφυτος <lb/>ἐπέῤῥει θερμασία καὶ ἡ κινοῦσα τὰς ἀρτηρίας
                         δύναμις <lb/>ἐχορηγεῖτο. </p>
-                </div>
-                <pb n="19"/>
-
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>
-                        <milestone unit="ed2page" n="22"/>Περὶ μὲν δὴ τῶν θερμῶν τε καὶ ψυχρῶν
+         </div>
+         <pb n="19"/>
+         <div n="4" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="22"/>Περὶ μὲν δὴ τῶν θερμῶν τε καὶ ψυχρῶν
                         <lb/>νοσημάτων αὐτάρκως εἴρηται· περὶ δὲ τῶν ξηρῶν <lb/>ἐφεξῆς λεγέσθω. εἰ
                         δέ τις διαπονοίη μὲν πλείω καὶ διαπνοίη, <lb/>τρέφοιτο δὲ ἐλάττω, καὶ ταῦτα
                         ξηρότερα τὴν δύναμιν, ξηρότερος <lb/>ὢν τὴν κρᾶσιν, εἰς ξηρὸν ῥᾳδίως
@@ -364,16 +371,16 @@
                         ξηρὰ τὴν δύναμίν <lb/>ἐστιν, εἴτ’ ἔσωθεν, εἴτ’ ἔξωθεν προσφέροιτο, ξηραίνει
                         καὶ <lb/>ταῦτα. εἴρηται δὲ ὑπὲρ αὐτῶν ἐπιπλέον ἐν τοῖς περὶ <lb/>φαρμάκων.
                     </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>Αὗται μὲν καὶ αἱ τῶν ξηρῶν νοσημάτων <lb/>αἰτίαι. τῶν δ’ ὑγρῶν αἱ ἐναντίαι
+         </div>
+         <div n="5" type="chapter">
+            <p>Αὗται μὲν καὶ αἱ τῶν ξηρῶν νοσημάτων <lb/>αἰτίαι. τῶν δ’ ὑγρῶν αἱ ἐναντίαι
                         σύμπασαι, ἐδεσμάτων μὲν <lb/>ὑγροτέρων τὴν δύναμιν ἀφθονία, καὶ πλείω τὰ
                         πώματα, καὶ <lb/>σύμπασα ἡ ἁβροτέρα δίαιτα, καὶ ἡ θυμηδία, καὶ λουτρὰ <pb n="20"/> γλυκέων ὑδάτων πολλὰ, καὶ μᾶλλον μετὰ τροφήν. οὕτω <lb/>δὲ καὶ
                         ἀργὸς ὁ σύμπας βίος, καὶ ἄπονος, ὄμβροι τε πολλοὶ, <lb/>καὶ ἡ πᾶσα
                         κατάστασις ὑγρὰ, καὶ φάρμακα ταὐτὸ τοῦτο <lb/>δρᾷν δυνάμενα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>Πρόδηλον δ’ ὅτι καὶ τὰ τῶν συνθέτων νοσημάτων <lb/>αἴτια σύνθετα πάντως
+         </div>
+         <div n="6" type="chapter">
+            <p>Πρόδηλον δ’ ὅτι καὶ τὰ τῶν συνθέτων νοσημάτων <lb/>αἴτια σύνθετα πάντως
                         ἐστίν. εἰ γὰρ ἅμα θερμὴ καὶ <lb/>ξηρὰ συνέλθοι ποτὲ αἰτία, θερμὸν καὶ ξηρὸν
                         ἀνάγκη γενέσθαι <lb/>τὸ νόσημα, καὶ εἰ θερμὴ καὶ ὑγρὰ, θερμὸν καὶ ὑγρόν·
                         οὕτω <lb/>δὲ κᾀπὶ τῶν λοιπῶν δυοῖν συζυγιῶν, ὑγρᾶς καὶ ψυχρᾶς καὶ ξηρᾶς
@@ -391,7 +398,7 @@
                         ἤδη τὰς αἰτίας αὐτῶν σκεψομένους. ἀναμνησθῆναι δὲ <lb/>πάλιν κᾀνταῦθα
                         προσήκει τῶν εἰρημένων ἐν τῷ περὶ τῆς τῶν <lb/>νοσημάτων διαφορᾶς, ὡς ἐνίοτε
                         μὲν αὐταῖς μόναις ταῖς τέτταρσι <lb/>
-                        <milestone unit="ed2page" n="23"/>ποιότησιν ἐξίσταται τοῦ κατὰ φύσιν ἔχειν
+               <milestone unit="ed2page" n="23"/>ποιότησιν ἐξίσταται τοῦ κατὰ φύσιν ἔχειν
                         τὰ σώματα, <lb/>μηδεμιᾶς ἔξωθεν αὐτοῖς ἐπιῤῥυείσης ἑτέρας οὐσίας,
                         <lb/>ἐνίοτε δὲ ἐμπίπλαται ῥεύματος ὑγροῦ μὲν πάντως τὴν ἰδέαν, <lb/>οὐχ
                         ὑγροῦ δὲ τὴν δύναμιν. εἴρηται μὲν οὖν καὶ τοῖς παλαιοῖς <lb/>ἰατροῖς τε καὶ
@@ -466,9 +473,9 @@
                         σφηνουμένων τε καὶ <lb/>διασηπομένων τῶν περιττωμάτων, καὶ οὕτως αὐτῶν τε
                         χειρόνων <lb/>γενομένων, καὶ τὸν ἐπιῤῥέοντα χυμὸν ἐξ ὑστέρου, κᾂν
                         <lb/>χρηστὸς ᾖ, συνδιαφθειρόντων. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>Ἀλλὰ γὰρ ἐπειδὴ καὶ τὰ τῶν ὁμοιομερῶν <lb/>σωμάτων ἴδια νοσήματα διήλθομεν,
+         </div>
+         <div n="7" type="chapter">
+            <p>Ἀλλὰ γὰρ ἐπειδὴ καὶ τὰ τῶν ὁμοιομερῶν <lb/>σωμάτων ἴδια νοσήματα διήλθομεν,
                         ἐξῆς ἂν εἴη λέγειν τὰ <lb/>τῶν ὀργανικῶν, ἀπὸ τοῦ πρώτου κατ’ αὐτὰ τοῦ παρὰ
                         τὴν <lb/>διάπλασιν ὑπαρξαμένους γένους. γίγνεται δὲ τοῦτο ποτὲ μὲν <lb/>τοῦ
                         κατὰ φύσιν σχήματος ὑπαλλαττομένου, ποτὲ δὲ λειότητός <lb/>τινος, ἢ
@@ -532,7 +539,7 @@
                         <lb/>ὑπὸ τῶν ἐνεργούντων μυῶν ἑλκόμενον. οὕτω δὲ κᾀν τοῖς <lb/>ἑτεροῤῥόποις
                         σπασμοῖς ὑπὸ τῶν σπωμένων. καὶ φλεγμοναὶ <lb/>δὲ καὶ σκίῤῥοι καὶ οὐλαὶ
                         σκληραὶ καὶ πάνθ’ ὅσα τοιαῦτα <lb/>
-                        <milestone unit="ed2page" n="26"/>παθήματα τείνοντα πρὸς ἑαυτὰ τὸ συνεχὲς,
+               <milestone unit="ed2page" n="26"/>παθήματα τείνοντα πρὸς ἑαυτὰ τὸ συνεχὲς,
                         οὕτω διαστρέφει <lb/>τὸ μόριον. ἐν δ’ αὖ τοῖς διατετμημένοις νεύροις καὶ
                         <lb/>τένουσιν, ὥσπερ ἐν τοῖς παραλελυμένοις ἡ τῶν ἀντιτεταγμένων <lb/>τε καὶ
                         κατὰ φύσιν ἐχόντων ἐνέργεια πρὸς ἑαυτὴν ἐπισπᾶται τὸ ﻿<pb n="31"/> μέρος,
@@ -581,16 +588,16 @@
                         ὑγρῶν ὁρμᾶται τῆς φύσεως. <lb/>ὀφθαλμοῖς δὲ καὶ φάρυγγι τραχύτητες οὐκ ἐκ
                         τούτων μόνον, <lb/>ἀλλὰ καὶ ἐξ ἀτμῶν δριμέων, ἢ κονιορτοῦ καὶ καπνοῦ
                         προσγίνονται, <lb/>
-                        <milestone unit="ed2page" n="27"/>καθάπερ, οἶμαι, καὶ στομάχῳ καὶ γαστρὶ
+               <milestone unit="ed2page" n="27"/>καθάπερ, οἶμαι, καὶ στομάχῳ καὶ γαστρὶ
                         <lb/>καὶ ἐντέροις ἔκ τε τῶν ἐν αὐτῷ τῷ σώματι γεννωμένων <pb n="34"/>
                         περιττωμάτων κᾀκ τῆς τῶν ἐσθιομένων τε καὶ πινομένων <lb/>ποιότητος, ἐν οἷς
                         ἐστι καὶ τὰ δηλητήρια. πρόδηλον δ’ ὡς <lb/>ἕκαστον τῶν τραχυνόντων αἰτίων
                         σφοδρότερον γενόμενον <lb/>ἕλκωσιν μέν τινα ἢ διάβρωσιν ἐν τοῖς σαρκώδεσι
                         μορίοις, ἐν <lb/>τοῖς ὀστοῖς δὲ τερηδόνας ἀπεργάζεται. αὗται μὲν οὖν αἱ τοῦ
                         <lb/>πρώτου γένους τῶν νοσημάτων τοῦ παρὰ τὴν διάπλασιν <lb/>αἰτίαι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="8">
-                    <p>Τοῦ δευτέρου δ’ αὖ τοῦ παρὰ τὸν ἀριθμὸν, <lb/>εἰ μὲν ἀπόλοιτό τι τῶν κατὰ
+         </div>
+         <div n="8" type="chapter">
+            <p>Τοῦ δευτέρου δ’ αὖ τοῦ παρὰ τὸν ἀριθμὸν, <lb/>εἰ μὲν ἀπόλοιτό τι τῶν κατὰ
                         φύσιν, ἤτοι τομή τις, ἢ καῦσις, <lb/>ἢ σῆψις, ἢ ψύξις ἰσχυ<milestone unit="ed1page" n="211"/>ρὰ προηγεῖται. τὰ μὲν οὖν <lb/>τῆς ψύξεως αἴτια
                         προείρηται. σήπεται δὲ τὰ μὲν ὑπὸ τῶν <lb/>σήπειν πεφυκότων φαρμάκων, ἢ τῶν
                         ἐν αὐτοῖς τοῖς ζώοις <lb/>γεννωμένων περιττωμάτων, τὰ δ’ ὑπὸ τοῦ μὴ
@@ -605,16 +612,16 @@
                         ἐπιτρέφῃ σάρκας ἰσχυρὰς τοῖς ἡλκωμένοις μορίοις, <lb/>ὡς πτερύγιον τοῖς
                         ὀφθαλμοῖς. ἀποτίθεται δὲ τὸ <lb/>περιττὸν ἐν γαγγλίοις τε καὶ μελικηρίσι καὶ
                         στεατώμασι <lb/>καὶ ἀθερώμασι καὶ τοῖς τοιούτοις ἅπασι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="9">
-                    <p>Καὶ μὲν δὴ καὶ τὸ μέγεθος τῶν μορίων <lb/>αὐξάνεται μὲν ὑπό τε πλήθους ὕλης
+         </div>
+         <div n="9" type="chapter">
+            <p>Καὶ μὲν δὴ καὶ τὸ μέγεθος τῶν μορίων <lb/>αὐξάνεται μὲν ὑπό τε πλήθους ὕλης
                         χρηστῆς καὶ δυνάμεως <lb/>ἐῤῥωμένης, μειοῦται δὲ ὑπὸ τῶν ἐναντίων, κᾀπειδὰν
                         ἤτοι <lb/>τομή τις, ἢ καῦσις, ἢ σῆψις, ἢ νέκρωσις ἐκ καταψύξεως ἀμέτρου
                         <lb/>διαφθείρῃ τινὸς ὀργάνου μόριον, ὡς εἶναι τὸ λειπόμενον <lb/>αὐτοῦ
                         κολοβόν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="10">
-                    <p>Τὰ δ’ ἐν τῷ τῆς θέσεως γένει νοσήματα τινὰ <lb/>μὲν ἐξαιφνιδίους τε καὶ
+         </div>
+         <div n="10" type="chapter">
+            <p>Τὰ δ’ ἐν τῷ τῆς θέσεως γένει νοσήματα τινὰ <lb/>μὲν ἐξαιφνιδίους τε καὶ
                         σφοδρὰς ἔχει προηγουμένας κινήσεις, ﻿<pb n="36"/> τινὰ δὲ δι’ ἀμετρίαν τῆς
                         ἐν τοῖς ἄρθροις ὑγρότητος γίγνεται, <lb/>τεγγούσης μὲν τοὺς συνδέσμους καὶ
                         χαλώσης, ὀλισθηρὰν δὲ τῇ <lb/>γλισχρότητι τὴν ὅλην διάρθρωσιν ἐργαζομένης.
@@ -637,9 +644,9 @@
                         δεόντως, ἤ τινος <lb/>ἀρτήματος, ἢ δεσμοῦ χαλασθέντος, ἢ συνταθέντος, ἢ
                         <lb/>ἀποῤῥαγέντος. ἐκ τίνων δ’ ἕκαστον τούτων γίγνεται προφάσεων,
                         <lb/>εὔδηλον. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="11">
-                    <p>Ἑνὸς δ’ ἔτι γένους νοσήματος κοινοῦ πάντων <lb/>τῶν μορίων, εἴτ’ οὖν
+         </div>
+         <div n="11" type="chapter">
+            <p>Ἑνὸς δ’ ἔτι γένους νοσήματος κοινοῦ πάντων <lb/>τῶν μορίων, εἴτ’ οὖν
                         ὁμοιομερῆ τε καὶ ἁπλᾶ τελέως, εἴτε <lb/>καὶ σύνθετα εἴη, τὰς αἰτίας τῆς
                         γενέσεως εἰπεῖν χρή. καλεῖν <lb/>μὲν οὖν εἴωθα τὸ γένος τοῦτο σύμπαν ἑνώσεως
                         λύσιν, ἢ <lb/>διαφθορὰν ἑνώσεως, ἢ συνεχείας λύσιν, ἢ ὅπως ἂν ἄλλως
@@ -692,8 +699,7 @@
                         ἐπειδὴ τοῦτο βουληθεὶς ἕκαστος ἑαυτῷ <pb n="41"/> δυνατός ἐστιν
                         ἐκπορίζεσθαι, καιρὸς ἂν εἴη μοι καὶ τοῦτον <lb/>τὸν λόγον ἐνταυθοῖ
                         καταπαύσαντι περὶ τῆς τῶν <lb/>συμπτωμάτων διαφορᾶς ἐφεξῆς διελθεῖν. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

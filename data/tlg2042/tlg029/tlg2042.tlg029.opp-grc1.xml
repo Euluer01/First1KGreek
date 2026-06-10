@@ -1,120 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">Commentarium In Evangelium Matthaei (Lib. 10-11)</title>
-                <editor>Erich Klostermann</editor>
-                <author xml:lang="lat">Origenes</author>
-                <sponsor>University of Leipzig</sponsor>
-                <funder>European Social Fund Saxony</funder>
-                <principal>Gregory Crane</principal>
-                <principal>Monica Berti</principal>
-                <meeting/>
-                <respStmt>
-          <persName>Gregory R. Crane</persName>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-        </respStmt>
-        <respStmt>
-          <persName xml:id="DDD">Digital Divide Data</persName>
-          <resp>Corrected and encoded the text</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Matt Munson</persName>
-          <resp>Project Manager (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Annette Geßner</persName>
-          <resp>Project Assistant (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Thibault Clérice</persName>
-          <resp>Lead Developer (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Bruce Robertson</persName>
-          <resp>Technical Advisor</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Greta Franzini</persName>
-          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Frederik Baumgardt</persName>
-          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Simona Stoyanova</persName>
-          <resp>Project Manager (University of Leipzig), 2015</resp>
-          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>University of Leipzig</authority>
-                <idno type="filename">tlg2042.tlg029.opp-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Commentarium In Evangelium Matthaei (Lib. 10-11)</title>
+            <editor>Erich Klostermann</editor>
+            <author xml:lang="lat">Origenes</author>
+            <sponsor>University of Leipzig</sponsor>
+            <funder>European Social Fund Saxony</funder>
+            <principal>Gregory Crane</principal>
+            <principal>Monica Berti</principal>
+            <meeting/>
+            <respStmt>
+               <persName>Gregory R. Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Geßner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Greta Franzini</persName>
+               <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Frederik Baumgardt</persName>
+               <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Simona Stoyanova</persName>
+               <resp>Project Manager (University of Leipzig), 2015</resp>
+               <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>University of Leipzig</authority>
+            <idno type="filename">tlg2042.tlg029.opp-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2014</date>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-            </publicationStmt>
-            <sourceDesc>
-                <listBibl>
-                    <biblStruct>
-                        <monogr>
-                            <title xml:lang="deu">Origenes Werke</title>
-                            <editor>Erich Klostermann                                
+            </availability>
+            <date>2014</date>
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg2042.tlg029.opp-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="deu">Origenes Werke</title>
+                     <editor>Erich Klostermann                                
                             </editor>
-                            <author ref="urn:cts:greekLit:tlg2042" xml:lang="lat">Origenes</author>
-                            <imprint>
-                                <publisher xml:lang="deu">J. C. Hinrichs'Sche Buchhandlung</publisher>
-                                <pubPlace>Leipzig</pubPlace>
-                                <date>1935</date>
-                            </imprint>
-                            <biblScope unit="volume">10.1</biblScope>
-                        </monogr>
-                        <ref target="https://archive.org/details/origeneswerkehrs10origuoft/page/n18/mode/1up">Internet
+                     <author ref="urn:cts:greekLit:tlg2042" xml:lang="lat">Origenes</author>
+                     <imprint>
+                        <publisher xml:lang="deu">J. C. Hinrichs'Sche Buchhandlung</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1935</date>
+                     </imprint>
+                     <biblScope unit="volume">10.1</biblScope>
+                  </monogr>
+                  <ref target="https://archive.org/details/origeneswerkehrs10origuoft/page/n18/mode/1up">Internet
                             Archive</ref>
-                    </biblStruct>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-              <refsDecl n="CTS">
-                <cRefPattern n="chapter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-                <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-                 <language ident="lat">Latin</language>
-                 <language ident="deu">German</language>
-            </langUsage>
-        </profileDesc>
-        <revisionDesc>
-            <change who="Jack Duff" when="2016-07-08">Corrected metadata, added ref, expanded pb,
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+         <refsDecl n="CTS">
+            <cRefPattern n="chapter"
+                         matchPattern="(.+).(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern n="book"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
+                  <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+               </citeStructure>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-book-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+            <language ident="deu">German</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="Jack Duff" when="2016-07-08">Corrected metadata, added ref, expanded pb,
                 removed lat tag.</change>
-        </revisionDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-            <div type="edition" n="urn:cts:greekLit:tlg2042.tlg029.opp-grc1" xml:lang="grc">
-                <div type="textpart" subtype="book" n="10">
-                    <pb n="1"/>
-                    <head>Ὠριγένους ἐκ τῶν εἰς τὸ κατὰ Ματθαῖον εὐαγγέλιον ἐξηγητικῶν τόμος
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg2042.tlg029.opp-grc1">
+         <div n="10" type="book">
+            <pb n="1"/>
+            <head>Ὠριγένους ἐκ τῶν εἰς τὸ κατὰ Ματθαῖον εὐαγγέλιον ἐξηγητικῶν τόμος
                         ι΄.</head>
-                    <div type="textpart" subtype="chapter" n="1">
-                        <p><milestone unit="altnumbering" n="442"/>
-                            <quote corresp="urn:cts:greekLit:tlg0031.tlg001:13.36">Τότε ἀφεὶς τοὺς
+            <div n="1" type="chapter">
+               <p>
+                  <milestone unit="altnumbering" n="442"/>
+                  <quote corresp="urn:cts:greekLit:tlg0031.tlg001:13.36">Τότε ἀφεὶς τοὺς
                                 ὄχλους ἦλθεν εἰς τὴν οἰκίαν αὐτοῦ. καὶ προσῆλθον <add>αὐτῷ</add> οἱ
                                 μαθηταὶ αὐτοῦ λέγοντες· φράσον τὴν παραβολὴν τῶν ζιζανίων τοῦ ἀγροῦ
                             </quote> (13, 36[ — 43]).</p>
-                        <p>Ὄτε μέν μετὰ τῶν ὅχλων ἐστὶν ὁ Ἰησοῦς, οὐκ ἔστιν αὐτοῦ ἐν τῇ οἱκίᾳ, <lb n="5"/> ἔξω γὰρ τῆς οἱκίας οἱ ὄχλοι· καὶ τῆς φιλανθρωπίας αὐτοῦ
+               <p>Ὄτε μέν μετὰ τῶν ὅχλων ἐστὶν ὁ Ἰησοῦς, οὐκ ἔστιν αὐτοῦ ἐν τῇ οἱκίᾳ, <lb n="5"/> ἔξω γὰρ τῆς οἱκίας οἱ ὄχλοι· καὶ τῆς φιλανθρωπίας αὐτοῦ
                             ἔργον ἐστὶ καταλιπεῖν τὴν οἱκίαν καὶ ἀπιέναι πρὸς τοὺς μὴ δυναμένους
                             ἥκειν πρὸς αὐτόν. αὐτάρκως δὲ τοῖς ὄχλοις διαλεχθεὶς ἐν παραβολαῖς
                             ἀφίησιν αὐτοὺς καὶ ἔρχεται εἰς τὴν ἑαυτοῦ οἱκίαν, ἔνθα προσέρχονται αὐτῷ
@@ -136,10 +151,10 @@
                                 τοῖς ἔξω ἐλάλησεν ὁ Ἰησοῦς, τηρῶν αὐτῶν τὴν σαφήνειαν τοῖς
                                 ὑΠερβεβηκόσι τὰς ἐξωτερικὰς ἀκοὰς καὶ κατ' ἰδίον αὐτῷ »ἐν τῇ οἱκίᾳ«
                                 προσερχομένοις</note>
-                            <note type="footnote">Inscr. H V | ἐκ &lt; υ | εὐαγγέλιον V &lt; H | ι'
+                  <note type="footnote">Inscr. H V | ἐκ &lt; υ | εὐαγγέλιον V &lt; H | ι'
                                 V ια' υ &lt; HV 6 ἀπιέναι Kl ἀπεῖναι HV 13 αὐτῶν &lt; αὐτοῦ Koe | τὰ
                                 &lt; V 14 διὰ] περὶ V 20 ἀφιεὶς Diehl ἀφίησι καὶ Η</note>
-                            <pb n="2"/> εἰς τὴν οἱκίαν προσέλθωμεν Καὶ προσελθόντες ἀξιώσωμεν περὶ
+                  <pb n="2"/> εἰς τὴν οἱκίαν προσέλθωμεν Καὶ προσελθόντες ἀξιώσωμεν περὶ
                             φράσεως παραβολῆς, εἴτε τῶν ζιφανίων τοῦ ἀγροῦ εἴθ' ἡστινοσοῦν. ἶνα δὲ
                             ἀκριβέστερον νοηθῇ, τίνος παραστατικόν ἐστι ἐστι πράγματος ἡ τοῦ Ἰησοῦ
                             οἱκία, συναγαγέτω τις ἀπὸ τῶν εὐαγγελίων ὅσα Περὶ τῆς οἱκίας Ἰησοῦ <lb n="5"/> εἴρηται, καὶ τίνα ἐν αύτῇ λελάληται ἢ πέπρακται αὑτῷ· ἐπὶ
@@ -148,10 +163,9 @@
                             γράμματα, τοῖς μὲν ἁΠλοῖς κατ' οἰκονομίαν ὡς ἁπλᾶ γεγένηται, τοῖς δὲ
                             ὀξύτερον ἁκούειν αὐτῶν βουλομένοις καὶ δυναμένοις ἐγκέκρυπται σοφὰ καὶ
                             ἄξια λόγου <lb n="10"/> θεοῦ πράγματα.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="2">
-                        <p>Μετὰ ταῦτα ἀποκριθεὶς εἶπεν ἁπὸ τοῦ· ὁ σπείρων τὸ καλὸν σπέρμα ἐστὶν ὁ
+            </div>
+            <div n="2" type="chapter">
+               <p>Μετὰ ταῦτα ἀποκριθεὶς εἶπεν ἁπὸ τοῦ· ὁ σπείρων τὸ καλὸν σπέρμα ἐστὶν ὁ
                             υἱὸς τοῦ ἀνθρώπου *** περὶ ὦν εἰ καὶ κατὰ τὸ δυνατὸν ἠμῖν ἐν τοῖς πρὸ
                             τούτων διειλήφαμεν, οὐδὲν ἧττον καὶ νῦν λελέξεται τὰ δυνάμενα ἐκείνοις
                             προσαρμόσαι, εἰ καὶ καθ’ ἑτέραν διήγησιν ἔχει <lb n="15"/> λόγον. καὶ
@@ -173,13 +187,13 @@
                             καὶ παραδῶσιν αὐτὰ εἰς ἀνάλωσι, τῷ λεγομένῳ <note type="footnote">1 Zu
                                 φρασις vgl. Hautsch TU. 34, α, 36f — —3, 17 Vgl. C Nr. 180 Or. vgl.
                                 II 156, ff. An. — 17 Joh. 1, 2. — 21 Matth. 26, 41</note>
-                            <note type="footnote">7 ἁπλᾶ ρ ἁπλῶς H 11 ἀπὸ τοῦ H αὐτοῖς Hu | σπείρον
+                  <note type="footnote">7 ἁπλᾶ ρ ἁπλῶς H 11 ἀπὸ τοῦ H αὐτοῖς Hu | σπείρον
                                 H 12 *** Kl, 1. etwa <add>ἔως τοῦ» ὁ ἔχων ὦτα ἀκουέτω«</add> 14 15
                                 γε &lt; V 17 f θεὸν Ηc. r. und (für θεοῦ) υἱοῦ Hc. r. (ἴσως 18
                                     <add>σπείρεται</add> Kl nach C Nr. 180 II 22 ζηζάνια H 28 ὄ (Hu)
                                 Nr. 180 II ὄς H 30 παραδῶσιν Kl mit Cl Nr. 180 II παραδώσουσιν H V |
                                 φλεγομένῳ Cl Nr. 180 (II cod. Me)</note>
-                            <pb n="3"/> καίειν πυρὶ ἀνατρέποντες αὐτά. καὶ οὕτω συλλέξουσιν οἱ τοῦ
+                  <pb n="3"/> καίειν πυρὶ ἀνατρέποντες αὐτά. καὶ οὕτω συλλέξουσιν οἱ τοῦ
                             λόγου ἄγγελοι καὶ ὑπηρέται ἐκ πάσης τῆς τοῦ Χριστοῦ βασιλείας πάντα τὰ
                             ἐνυπάχοντα ταῖς ψυχαῖς σκάνδαλα καὶ τοὺς τὴν ἀνομίαν ποιοῦντας
                             λογισμούς, οὔστινας ἀναλίσκοντες βαλοῦσιν εἰς τὴν κάμινον τοῦ <lb n="5"/> πυρὸς τὴν καιομένην · ἔνθα κοὶ οἱ συναισθηθέντες ἑαυτῶν διὰ τὸ
@@ -194,10 +208,9 @@
                             ἀκουέτω, διδάσκων τοὺς οἰομένους ἐν τῇ φράσει <lb n="15"/> τῆς παραβολῆς
                             σαφέστατα αὐτὴν ἐκτεθεῖςσθαι, ὡς καὶ ἐν τοῖς τυχοῦσι δύνασθαι νοηθῆναι
                             αὐτήν, ὅτι καὶ αὐτὰ τὰ τῆς διηγήσεως τῆς παραβοῆς δεῖται σαφηνείας.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="3">
-                        <p>Ἀλλ' ἐπεὶ ἀνωτέρω ἐφάσκομεν εἰς τὸ τότε οἱ δίκαιοι λάμψουσιν ὡς ὁ ὅτι οὐχ
+            </div>
+            <div n="3" type="chapter">
+               <p>Ἀλλ' ἐπεὶ ἀνωτέρω ἐφάσκομεν εἰς τὸ τότε οἱ δίκαιοι λάμψουσιν ὡς ὁ ὅτι οὐχ
                             ὡς τὸ πρότερον διαφόρως λάμψουσιν οἱ δίκαιοι, <lb n="20"/> ἀλλ' ἔσονται
                             οἱ πάντες ὡς εἷς ἥλιος, ἀναγκαίως ἐκθησόμεθα τὸ φανὲν ἡμῖν εἰς τὸν
                             τόπον. ἔοικεν ὁ Δανιήλ, φῶς τοῦ κόσμου« ἐπιστάμενος τοὺς συνιέντος καὶ
@@ -217,11 +230,11 @@
                                 kein Textwort gegen Hautseh TU. 34, 2a, 37f — 21 Vgl. Matth. 5, 14 -
                                 23 Dan. 12, 3 Θ' — 25 I. Kor. 15, 41 f — 29ff Vgl. Orig. hom. IX, 3
                                 in Ez. (VIII, 412, 8ff)</note>
-                            <note type="footnote">1 καίειν &lt; Cl Nr. 180 II 5 οἱ] οὐ II 6f καὶ ὡς
+                  <note type="footnote">1 καίειν &lt; Cl Nr. 180 II 5 οἱ] οὐ II 6f καὶ ὡς
                                 περὶ ἑαυτοὺς 7 θυμοθύσονται H 14 τοὺς οἰομένους &lt; V 16 παραβολῆς
                                 + οὐ 21 ἐπιστάμενος Ηa ἐπισταμένως Hc. r. 28 ζητήσει Kl ζητήσαι
                                 H</note>
-                            <pb n="4"/> γισμοὶ βληθῶσιν εἰς τὴν κάμινον τοῦ πυρός, καὶ καταναλωθῇ τὰ
+                  <pb n="4"/> γισμοὶ βληθῶσιν εἰς τὴν κάμινον τοῦ πυρός, καὶ καταναλωθῇ τὰ
                             χείρονα, καὶ τούτων γινομένων εἰς συναίσθησιν ἔλθωσιν οἱ παραδεξάμενοι
                             τοὺς υἱοὺς τοῦ πονηροῦ λόγους, τότε ἔν γενόμενοι ἡλιακὸν φῶς οἱ δίκαιοι
                             λάμψουσιν ἐν τῇ βασιλείᾳ τοῦ πατρὸς αὐτῶν. τίνι δὲ <lb n="5"/> λάμψουσιν
@@ -234,15 +247,14 @@
                             μετὰ τὴν ἀνάστασιν, ἕως ἄν καταντήσωσιν οἱ πάντες »εῖς ἄνδρα τέλειον«
                             καὶ γένωνται πάντες εἷς ἥλιος· τότε λάμψοθσιν ὡς ὁ ἥλιος ἐν τῇ βασιλείᾳ
                             τοῦ παρτὸς αὐτῶν. </p>
-                        <milestone unit="altnumbering" n="446"/>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="4">
-                        <p>
-                            <quote corresp="urn:cts:greekLit:tlg0031.tlg001:13.44">Πόλιν ὁμοία ἐστὶν
+               <milestone unit="altnumbering" n="446"/>
+            </div>
+            <div n="4" type="chapter">
+               <p>
+                  <quote corresp="urn:cts:greekLit:tlg0031.tlg001:13.44">Πόλιν ὁμοία ἐστὶν
                                 ἡ βασιλεία τῶν οὑρανῶν θησαυρῷ <lb n="15"/> κεκρυμμένῳ ἐν τῷ ἀγρῷ,
                                 ὃν εὑρὼν ἄνθρωπος ἔκρυψεν </quote> (13,44).</p>
-                        <p>Τὰς μὲν προτέρας παραβολὰς τοῖς ὄχλοις εἶπε · ταύτην δὲ καὶ τὰς ἑξῆς
+               <p>Τὰς μὲν προτέρας παραβολὰς τοῖς ὄχλοις εἶπε · ταύτην δὲ καὶ τὰς ἑξῆς
                             αὐτῆς δύο, οὐ παραβολὰς ἀλλ' ὁμοιώσεις πρὸς τὴν τῶν οὐρανῶν βασιλείαν
                             τυγχανούσας, ἔοικεν ἐν τῇ οἰκίᾳ γενόμενος πρὸς τοὺς μαθητὰς εἰρηκέναι·
                             περὶ ἧς ὁ προσέχων τῇ ἀναγνώσει ἐξεταζέτω καὶ τῶν ἑξῆς δύο, μήποτε <lb n="20"/> οὐδέ παραβολαί εἰσιν’ ἐπ' ἐκείνων μέν γὰρ οὐκ ὤκνησεν ἡ
@@ -262,10 +274,10 @@
                                 Vgl. Orig. c. Cels. III, 21. 46 (I, 217, 20ff. 242, 13ff) — 23 Vgl.
                                 Matth. 13, 3–22; 13, 34 — 24 Vgl. Matth. 13, 36 26 Vgl. Marc. 4, 11
                                 — Matth. 13, 11 — 29–5, 10 Vgl. Clue Nr. 15 Or.</note>
-                            <note type="footnote">4 hier hier beginnt cod. Μ fol. lr, ebenso Barb.
+                  <note type="footnote">4 hier hier beginnt cod. Μ fol. lr, ebenso Barb.
                                 gr. 575 fol. lr 7 ἡμῶν H 14 πάλιν] vorher: Περὶ τῆς παραβολῆς τοῦ
                                 θησαυροῦ τοῦ κεκρυμμένου ἐν τῷ ἀγρῷ H 25 δηλῶν Μ</note>
-                            <pb n="5"/> ἐν τῷ Μάρκῳ. »τίνι ὁμοιώσωμεν τὴν βασιλείαν τοῦ θεοῦ, ἢ ἔν
+                  <pb n="5"/> ἐν τῷ Μάρκῳ. »τίνι ὁμοιώσωμεν τὴν βασιλείαν τοῦ θεοῦ, ἢ ἔν
                             τίνι αὐτὴν παραβολῇ θῶμεν »ἐκ τούτου παρίσταται διαφορὰν εἶναι ὁμοιώσεως
                             καὶ παραβολῆς. ἔοικεν οὖν ἡ μέν ὁμοίωσις εἶναι γενική, ἡ δὲ παραβολὴ
                             εἰδική. τάχα δὲ καὶ ἡ ὁμοίωσις γενικωτάτη οὖσα τῆς παραβολῆς ἔχει ἐν
@@ -275,10 +287,9 @@
                             γενικωτάτην εἶναι τὴν ὁρμὴν πολλῶν εἰδῶν <add>περιεκτικήν</add>, ὤσπερ
                             καὶ ἀφορμῆς καὶ ὁρμῆς, ἐν εἴσει ὁμωνύμως τῷ γενικῷ παραλμβάνεσθαι πρὸς
                             ἀντιδιαστολὴν τῆς ἀφορμῆς <lb n="10"/> τὴν ὁρμήν.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="5">
-                        <p>Καὶ ἐν τούτῳ ζητητέον ἰδίᾳ τὸν ἀγρὸν καὶ ἰδιᾳ τὸν κεκρυμμένον ἐν αὐτῷ
+            </div>
+            <div n="5" type="chapter">
+               <p>Καὶ ἐν τούτῳ ζητητέον ἰδίᾳ τὸν ἀγρὸν καὶ ἰδιᾳ τὸν κεκρυμμένον ἐν αὐτῷ
                             θησαυρόν, καὶ τίνα τρόπον εὑρὼν τοῦτον κεκρυμμένον τὸν θησαυρὸν ὁ
                             ἄνθρωπος ἀπὸ τῆς χαρᾶς ἄπεισι καὶ πωλεῖ ὄσα ἔχει, ἴνα ἀγοράσῃ τὸν ἀγρὸν
                             ἐκεῖνον. ζητητέον δὲ καὶ τίνα ἐστὶνα ἄ πωλεῖ. <lb n="15"/> δοκεῖ δή μοι
@@ -304,18 +315,17 @@
                                 21f Vgl. Gen. 27, 27 — 22 Vgl. Luc. 9, 20 — 24ff Vgl. Hier. in
                                 Matth. 97 D: thesaurus iste, nn quo sunt omnes thesauri sapientiae
                                 et «, aut deus verbum est . . . aut sanctae scripturae</note>
-                            <note type="footnote">1 ὁμοιώσωμεν υ ὁμοιώσομεν MH 8
+                  <note type="footnote">1 ὁμοιώσωμεν υ ὁμοιώσομεν MH 8
                                     <add>περιεκτικήν</add> KI mit Cluc Nr. MH 9 ἀντιδιαστολὴν + Ψ δὲ
                                 Cluc Nr. 15 12 τοῦτον κερυμμένον τὸν] τὸν κεκρυμμένον M 14 ἀγοράσει
                                 H | πωλῆ H 18 <add>ἐν</add> Hu 20 + <add>ἐν</add> ? Kl 21 ἀπόκρυφολι
                                 + <add>φανερωθείσης</add> Koe, vgl. Rom. 22 δὲ H 24 εἰσὶ Μ | τῆς2
                                 &lt;Π</note>
-                            <pb n="6"/> ἢ αὐτός ἐστιν ὁ Χριστὸς ὁ βασιλεὺς τῶν αἰώνων ἡ βασιλεία τῶν
+                  <pb n="6"/> ἢ αὐτός ἐστιν ὁ Χριστὸς ὁ βασιλεὺς τῶν αἰώνων ἡ βασιλεία τῶν
                             οὐρανῶν, ὡμοιωμένη θησαυρῷ κεκρυμμένῳ ἐν τῷ ἀγρῷ.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="6">
-                        <p>Γενόμενος δέ κατὰ τὸν τόπον ζητήσεις, πότερον ἡ βασιλεία τῶν οὐρανῶν μόνῳ
+            </div>
+            <div n="6" type="chapter">
+               <p>Γενόμενος δέ κατὰ τὸν τόπον ζητήσεις, πότερον ἡ βασιλεία τῶν οὐρανῶν μόνῳ
                             τῷ θησαυρῷ ὡμοίωται τῷ κεκρυμμένῳ ἐν τῷ ἀγρῷ, <lb n="5"/> ὡς ἄλλον νοεῖν
                             τῆς βασιλείας τὸν ἀγρόν, ἢ ὄλῳ τούτῳ ὡμοίωται ὡμοίωται &gt; καὶ τῷ&gt;
                             κεκρυμμένῳ κεκρυμμένῳ ἐν τῷ ἀγρῷ, ὡς τὴν τῶν βασιλείαν εἶναι κατὰ τὴν
@@ -340,24 +350,24 @@
                             πεπρακέναι καὶ ἀπο ἀπο<add>δε</add>δόσθαι δόσθαι ἐκεῖνα ἀντ' ἐκείνων
                             καλὴν βοηθουμένους αὐτοὺς εἰληφέναι απὸ θεοῦ ὠνήσωνται τῆς πολλῆς τιμῆς
                             καὶ ἀξίας τοῦ ἔχοντα τὸν ἔχοντα θησαυρὸν κεκρυμμένον ἐν ἑαυτῷ ἀγρόν.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="7">
-                        <p><quote corresp="urn:cts:greekLit:tlg0031.tlg001:13.45">Πόλιν ὁμοία ἐστὶν
+            </div>
+            <div n="7" type="chapter">
+               <p>
+                  <quote corresp="urn:cts:greekLit:tlg0031.tlg001:13.45">Πόλιν ὁμοία ἐστὶν
                                 ἡ βασιλεία τῶν οὐρανῶν άνθρώπῳ ἐμπόρῳ ζητοῦντι καλοὺς μαργαρίτας
                             </quote>(13, 45 [46]).</p>
-                        <lb n="30"/>
-                        <p>Ἐπειδὴ ἡ βασιλεία τῶν οὑρανῶν ὁμοία ἐστί, πολλῶν ὄντων ἐμπόρων πολλὰ
+               <lb n="30"/>
+               <p>Ἐπειδὴ ἡ βασιλεία τῶν οὑρανῶν ὁμοία ἐστί, πολλῶν ὄντων ἐμπόρων πολλὰ
                             ἐμπορευομένων, οὐδενὶ μὲν ἐκείνων, τῷ δὲ ζητοῦντι τοὺς <note type="footnote">14 Vgl. KoL 2, 3 — 16 Vgl. Rom. 3, 2 — 18 Matth. 21,
                                 43 — 23 Vgl. Luc. 5, 11 — 26f Vgl. Orig. c. Cels. VII, 33 (II, 184,
                                 lOf)</note>
-                            <note type="footnote">5 — 6 ἄλλον — ὡς &lt; H 5 1. ἄλλο? Kl 5f &lt;τῷ 7
+                  <note type="footnote">5 — 6 ἄλλον — ὡς &lt; H 5 1. ἄλλο? Kl 5f &lt;τῷ 7
                                 εἶναι Kl ἔχειν MH 9 τὸν2] τῶν H 13 ἀκίνδυνον Kl mit Cluc Nr. 16
                                 ἀκίνδυνα MH 14 ἐκφαίνειν] μὴ ἐμφαίνων ΙΙ 16 f πρῶτοι οἱ II 18
                                 ἀπαίρεται Diehl ἀφαιρεῖται MH 22 αὐτῷ] ταῦτα Cluc Nr. 16 25 Εδόσθαι
                                 Koe 26 τῆς] 1. <add>ἕνεκεν</add> τῆς Koe ? vgl. e. Cels. VIII, 53
                                 (II, 269 31 μὲν &lt; Η</note>
-                            <pb n="7"/> καλοὺς μαργαρίτας καί εὑρόντι ἕνα ἀντάξιον τῶν πολλῶν
+                  <pb n="7"/> καλοὺς μαργαρίτας καί εὑρόντι ἕνα ἀντάξιον τῶν πολλῶν
                             πολύτιμον μαργαρίτην, ὃν ἀντί πάντων ἠγόρασεν, εὔλογον ἡγοῦμαι τυγχάνειν
                             τὰ περὶ τῆς φύσεως τοῦ μαργαρίτου ἐξετάσαι. παρατήρει δὲ ἐπιμελῶς, ὅτι
                             οὐκ εἶπεν, ὅτι πέπρακε πάντας οὓς εἶχεν· οὐ γὰρ μόνους οὓς ὁ ζητῶν
@@ -400,15 +410,15 @@
                                 κολυμβηταὶ οἱ ὕφυδροι· τούτου γὰρ ᾐρημένου καὶ τὴν ἀγέλην αἱροῦσι
                                 πᾶσαν . . . ἀτρεμεῖ γὰρ καὶ οὐκέτι πρόεισιν. Auich Arrianus a.
                                 Ο.</note>
-                            <note type="footnote">3 δὲ] τέ Μ 6 καλὸν &lt;H 11 εἰσὶ καὶ] εἰσὶν Μ |
+                  <note type="footnote">3 δὲ] τέ Μ 6 καλὸν &lt;H 11 εἰσὶ καὶ] εἰσὶν Μ |
                                 ὡς] πως? Hu 14 τὸν &lt; Η</note>
-                            <pb n="8"/> τῶν διαφερόντων, τουτέστι τῶν ἐν Ἰνδίᾳ, τοιοῦτον· ὅτι
+                  <pb n="8"/> τῶν διαφερόντων, τουτέστι τῶν ἐν Ἰνδίᾳ, τοιοῦτον· ὅτι
                             περιλαμβάνοντες οἱ ἐπιχώριοι δικτύοις κύκλον αἰγιαλοῦ μέγαν
                             κατακολυμβῶσιν, ἔνα ἐξ ἁπάντων τὸν προηγούμενον ἐπιτηδεύοντες λαβεῖν,
                             τούτου γὰρ ἁλόντος φασὶν ἄμοχθον γενέσθαι τὴν θήραν τῆς ὑπὸ τούτῳ
                             ἀγέλης, οὐδενὸς ἔτι ἀτρεμοῦντος <lb n="5"/> τῶν ἀπ' αὐτῆς, ἀλλὰ οἷον
                             δεδεμένου ἱμάντι καὶ ἑπομένου τῷ ἀγελάρχῃ.</p>
-                        <p>Λέγεται δέ καὶ ἡ γένεσις τῶν ἐν Ἰνδιᾳ μαργαριτῶν χρόνοις συνίστασθαι,
+               <p>Λέγεται δέ καὶ ἡ γένεσις τῶν ἐν Ἰνδιᾳ μαργαριτῶν χρόνοις συνίστασθαι,
                             λαμβάνοντος λαμβάνοντος τοῦ ζώου πλείονας κοὶ μεταβολάς, ἔως τελειωθῇ,
                             ἔτι δὲ καὶ τοῦτο ἱστόρηται, ὅτι διοίγεται, ὁ κόγχος χάσμῃ παραπλησίως ὁ
                             τοῦ φέροντος τὸν μαργαρίτην ζώου καὶ διοιχθεὶς τὴν ἐπουράνιον εἰς <lb n="10"/> ἑαυτὸν δέχεται δρόσον, ἧς ἐμπλησθεὶς καθαρᾶς καὶ ἀθολωτου
@@ -438,12 +448,12 @@
                                 Aelian a. O. Χ, 13 (I, 248, 4ff): δοκοῦσι δὲ ἄρα . . . οἱ ayav
                                 λευκοὶ κοὶ οἱ μεγάλοι κάλλιστοι . . . φύσει δὲ ἔχει τῆς περιφερείας
                                 τὸ λεῖον καὶ ευπεριγραφον</note>
-                            <note type="footnote">1 ἐν δία H | τοιύτων Ha 4 τοῦτον Μ 8 χάσμοι Ηa 9
+                  <note type="footnote">1 ἐν δία H | τοιύτων Ha 4 τοῦτον Μ 8 χάσμοι Ηa 9
                                 οὐράνιον H 10 ἀθολότου H 11 ἐπιχλυμένης H 12 μεταλάβοι Kl, vgl. Ζ.
                                 13 μεταλάβη Μ H 14 *** Diehl, der erganzt <add>τῇ πείνῃ ἐλαττοῦται,
                                     δὲ βροντήσαι,</add> 19 διαλάμπει Hu διαλάμπειν MH 22 ἐστιν ἐστιν
                                 Η</note>
-                            <pb n="9"/> διαυγέστατον, καὶ τῷ μεγέθει μέγιστον. ταῦτα μὲν οὖν Περὶ
+                  <pb n="9"/> διαυγέστατον, καὶ τῷ μεγέθει μέγιστον. ταῦτα μὲν οὖν Περὶ
                             τοῦ Ἰνδικοῦ. ὁ δέ κατὰ τὴν Βρεττανίαν (φασὶ) χρυσωπὸς μὲν ἐστι τὴν
                             ἐπίχροιαν, δέ τις κοὶ ταῖς μαρμαρυγαῖς ἀμβλύτερος. ὁ δὲ ἐν τῷ πορθμῷ τῷ
                             κατὰ Βόσπορον κνεφωδέτερος τοῦ Βρεττανικοῦ καὶ πελιδνὸς καὶ τέλεον
@@ -456,10 +466,9 @@
                             οὗτοι ἄγαν, ἀλλὰ καὶ ἄρρυθμοι καὶ τὸ σχῆμα καὶ τὸ χρῶμα τέλεον
                             διατεθολωμένοι καὶ ῥυπῶντες. καὶ ἄλλοι δὲ παρὰ τούτους εἰσὶ περὶ τὴν
                             αὐτὴν Ἀκαρνανίαν πόντων ἕνεκεν απόβλητοι.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="8">
-                        <p>Ταῦτα δὲ συναγαγὼν ἐκ τῆς περὶ λίθων πραγματείας, φημὶ τὸν σωτῆρα
+            </div>
+            <div n="8" type="chapter">
+               <p>Ταῦτα δὲ συναγαγὼν ἐκ τῆς περὶ λίθων πραγματείας, φημὶ τὸν σωτῆρα
                             ἐπιστάμενον διαφορὰν μαργαριτῶν, ὧν ἐν γένει εἰσὶ καὶ καλοὶ καὶ ἄλλοι
                                 <lb n="15"/> φαῦλοι, εἰρηκέναι τὸ ὁμοία ἐστὶν ἡ βασιλέια τῶν οὐρανῶν
                             ἀνθρώπῳ ἐμπόρῳ ζητοῦντι τοὺς καλοὺς μαργαρίτας· εἰ γὰρ μὴ φαῦλοι ἦσάν
@@ -485,9 +494,9 @@
                                 Χριστός — 21 Vgl. Jac. 1, 18? — 23ff Vgl. Clemens Alex. Paed. ΙΙ,
                                 12, 4 (I, 228, 1ff.): ὁ δὲ πολυτίμητος μαργαρίτης . . . τὸν διαυγῆ
                                 καὶ καθαρὸν Ἰησοῦν κτλ. — 23 Vgl. Luc. 9, 20</note>
-                            <note type="footnote">2 τὴν &lt; H 4 κνεφοδέστερος H 17 εἴρηται H 19
+                  <note type="footnote">2 τὴν &lt; H 4 κνεφοδέστερος H 17 εἴρηται H 19
                                 ζήτει Kl MH | ἴνα H 23 πολύτιμος C Nr. 182</note>
-                            <pb n="10"/> τῶν λόγος, οὖ εὑρεθέντος καὶ τἆλλα πάντα εὐμαρῶς
+                  <pb n="10"/> τῶν λόγος, οὖ εὑρεθέντος καὶ τἆλλα πάντα εὐμαρῶς
                             παραλαμβάνονται. διαλέγεται δὲ ὁ σωτὴρ τοῖς μαθηταῖς πᾶσιν ὡς ἀνθρώποις
                             ἐμπόροις, οὐ μόνον ζητοῦσι τοὺς καλοὺς μαργαρίτας ἀλλὰ καὶ εὑροῦσιν
                             εὑροῦσιν καὶ κεκτημένοις, ἐν οἶς φησι· μὴ βάλητε τοὺς μαργαρίτας
@@ -504,11 +513,10 @@
                             γινομένων τόποις. τάχα δέ οἱ τεθολωμένοι λόγοι <lb n="15"/> καὶ οἱ ἐν
                             τοῖς ἔργοις τῆς σαρκὸς κατειλιγμέναι αἱρέσεις οἶ ἀχλυώδεις εἰσὶ καὶ οἱ
                             ἐν τέλμασι γινόμενοι μαργαρῖται οὐ καλοί. </p>
-                        <milestone unit="altnumbering" n="452"/>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="9">
-                        <p>Συνάψεις δὲ τῷ ζητοῦντι καλοὺς μαργαρίτας τὸ »ζητεῖτε, καὶ εὑρήσετε« καὶ
+               <milestone unit="altnumbering" n="452"/>
+            </div>
+            <div n="9" type="chapter">
+               <p>Συνάψεις δὲ τῷ ζητοῦντι καλοὺς μαργαρίτας τὸ »ζητεῖτε, καὶ εὑρήσετε« καὶ
                             τὸ πᾶς ὁ ζητῶν εὑρίσκει«. τί γὰρ »ζητεῖτε«, ἢ τί »πᾶς ὁ ζητῶν εὐρίσκει«;
                             ἀποτολμήσας εἴπω· τοὺς μαργαρίτας καὶ τὸν μαρ- <lb n="20"/> γραίτην, ὄν
                             ὁ πάντα δοὺς καὶ ζημιωθεὶς κατᾶται, δι’ ὅν φησιν ὁ Παῦλος· »τὰ πάντα
@@ -528,11 +536,11 @@
                                 lucri faciat — 23 Vgl. Luc. 1, 79 Apoc. 22, 5 — 24 Vgl. II. Kor. 3,
                                 7 — 26 Matth. 3, 17 — 27. 29 II. Kor. 3, 10 — 29 Vgl. II. Kor. 3, 11
                                 — 30 I. Kor. 13, 10 — 31 Vgl. Hebr. 6, 1</note>
-                            <note type="footnote">10 *** KI, 1. etwa <add>ζητεῖν διδάσκοντος</add>
+                  <note type="footnote">10 *** KI, 1. etwa <add>ζητεῖν διδάσκοντος</add>
                                 13 βορᾶν MH 16 οἱ &lt; 19 ἀποτολμίσας H 20 <add>ἀπο</add> Diehl 22
                                 κοὶ] ἴνα υ 24 1. τίμιον Kl, vgl. Ζ. 23 | Μωσέως] s. zu S.
                                 23,26ff</note>
-                            <pb n="11"/> δεῖται, μέχρις ἐνστῇ αὐτῇ »τὸ πλήρωμα τοῦ χρόνου«,
+                  <pb n="11"/> δεῖται, μέχρις ἐνστῇ αὐτῇ »τὸ πλήρωμα τοῦ χρόνου«,
                             παιδαγωγοῦ καὶ οἱκονόμων καὶ ἐπιτρόπων, ἵνα μετὰ ταῦτα πάντα ὁ πρότερον
                             μηδέν »διαφέρων δούλου κύριος πόντων ὤν« ἀπολάβῃ ἐλευθερωθεὶς ἀπὸ
                             παιδαγωγοῦ καὶ οἰκονόμων καὶ ἐπιτρόπων τὰ πατρῷα, τὰ ἀνάλογον τῷ
@@ -546,10 +554,9 @@
                             τοσαύτης γνώσεως, οὐ »σκύβαλα« τ«ξ ἰδίᾳ φύσει τυχάνονται, σκύβαλα
                             ἀναγαφίνετα, ἄπερ ἄπερ τὰ παραβαλλόμενα τάχα τῇ συκῇ ὑπὸ τοῦ ἀμπελουργοῦ
                                 <lb n="15"/> κόπρια, αἴται τυγχάνοντα τοῦ αύτὴν καρπογορῆσαι.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="10">
-                        <p>»Τοῖς πᾶσι τοίνυν ὁ χρόνος, κοὶ καιρὸς τῷ παντὶ πράγματι ὑπὸ τὸν
+            </div>
+            <div n="10" type="chapter">
+               <p>»Τοῖς πᾶσι τοίνυν ὁ χρόνος, κοὶ καιρὸς τῷ παντὶ πράγματι ὑπὸ τὸν
                             οὐρανός«, καὶ ἔστι τις »καιρὸς τοῦ συναγαγεῖν τοὺς καλοὺς μαργαρίτας)
                             λίθους«, καὶ καιρὸς μετὰ τὴν συναγωγὴν συναγωγὴν τοῦ αὐτῶν τοῦ εὑλοὺς
                             μαργαρίτας) μαργαρίτην, ὄτε καθήκει καθήκει ἀπελδόντα <milestone unit="altnumbering" n="453"/> πωλῆσαι πάντα ὅσα <lb n="20"/> τις
@@ -561,14 +568,14 @@
                             χρησίμῳ γενομένη κατὰ τὰ πρότερα, οὕτως τελείως νοηθέντα τὰ νομικὰ καὶ
                             τὰ προφητικὰ στοιχείωσίς ἐστι πρὸς τελείως ἐννοούμενον τὸ εὐαγγέλιον κοὶ
                             πάντα τὸν περὶ τῶν Χριστοῦ Ἰησοῦ ἔργων καὶ λόγων νοῦν.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="11">
-                        <p><quote corresp="urn:cts:greekLit:tlg0031.tlg001:13.47">Πόλιν ὁμοία ἐστὶν
+            </div>
+            <div n="11" type="chapter">
+               <p>
+                  <quote corresp="urn:cts:greekLit:tlg0031.tlg001:13.47">Πόλιν ὁμοία ἐστὶν
                                 ἡ βασιλεία τῶν οὐρανῶν σαγήνῃ βληθείσῃ εἰς τὴν θάλασσαν </quote>
                             (13, 47[ — 50]).</p>
-                        <lb n="30"/>
-                        <p>Ὤσπερ ἐπὶ τῶν εἰκόνων καὶ τῶν ἀνδριάντων αἱ ὁμοιότητες οὐκ ἐξ ὅλων εἰσὶν
+               <lb n="30"/>
+               <p>Ὤσπερ ἐπὶ τῶν εἰκόνων καὶ τῶν ἀνδριάντων αἱ ὁμοιότητες οὐκ ἐξ ὅλων εἰσὶν
                             ὁμοιότητες ἐκείνων πρὸς ἄ ταῦτα γίνεται, ἀλλ' ἡ μέν ἐν ἑνὶ ἐπιπέδῳ ξύλῳ
                             (φέρε εἰπεῖν) κηρογραφουμένη είκὼν τῆς ἐπιφανείας μετὰ χρώματος ἔχει τὴν
                             ὁμοιότητα, οὐκέτι δὲ σώζει τὰς εἰσοχὰς καὶ τὰς ἐζοχὰς ἀλλ' ἔμφασιν μόνην
@@ -576,9 +583,9 @@
                                 I. Kor. 13, 10 — 5 11 Phil. 3, 8 — 9 Vgl. I. Kor. 13, 9 — 13 Vgl.
                                 Phil. 3, 8 — 14f Vgl. Luc. 13, 7ff — 16 Pred. 3, 1 — 17 Vgl. Precl.
                                 3, 5 — 24 Vgl. Hebr. 6, 1</note>
-                            <note type="footnote">25 χρησίμῳ υ χρησίμως Μ H 25 κατὰ τὰ | κατὰ τὰ H
+                  <note type="footnote">25 χρησίμῳ υ χρησίμως Μ H 25 κατὰ τὰ | κατὰ τὰ H
                                 26 τελείως ἐννοούμενον Κλ (nach Hu) τελείωσιν νοούμενον MH</note>
-                            <pb n="12"/> τὰς εἰσοχὰς καὶ τὰς ἐξοχὰς πειρᾶται σώζειν ὁμοίωμα οὐκέτι
+                  <pb n="12"/> τὰς εἰσοχὰς καὶ τὰς ἐξοχὰς πειρᾶται σώζειν ὁμοίωμα οὐκέτι
                             οὐκέτι καὶ τὰ κατὰ τὴν χρόαν, ἐὰν δέ καὶ κήρινον ἐκμαγεῖον γένηται
                             σώζειν μέν πειρᾶται ἀμφότερα λέγω δέ καὶ τὰ κατὰ τὴν χρόαν καὶrd τὰ κατὰ
                             τὰς εἰσοχὰς καὶ ἐξοχὰς) οὐ μὴν καὶ τῶν ἐν βάθει εἰκών ἐστιν, οὕτω μοι
@@ -608,17 +615,17 @@
                             ἰχθύσι γενῶν ἐπὶ τὰ ἀστεῖα, ἢ ἀπὸ τῶν βελτιόνων ἐπὶ τὰ χείρονα, τοὺς δὲ
                             ἐν ἀνθρώποις δικαίους ἢ πονηροὺς ἀεὶ ἔστι θεωρεῖν ἢ ἐπὶ τὴν ἀρετὴν <lb n="30"/> ἐκ κακίας φθάνοντας ἢ ἀπὸ τῆς ἐπ' ἀρετὴν προκοπῆς
                             ἀναλυομένους ἐπὶ τὴν τῆς κακίας χύσιν.</p>
-                        <p>Διὸ καὶ ἐν τῷ Ἰεζεκιὴλ περὶ μὲν τοῦ ἀπὸ ἀνομίας ἐπιστρέφοντος ἐπὶ τὴν
+               <p>Διὸ καὶ ἐν τῷ Ἰεζεκιὴλ περὶ μὲν τοῦ ἀπὸ ἀνομίας ἐπιστρέφοντος ἐπὶ τὴν
                             τήρησιν τῶν Βείων ἐντολῶν τοιαῦτα γέγραπται· καὶ »καὶ ὁἄνομος ἐὰν
                             ἀποστρέψῃ έκ ποσῶν άνομιῶν αὐτοῦ ὧν ἐποίησε« καὶ τὰ ἑξῆς ἕως τοῦ ὡς
                                 <note type="footnote">13ff Orig. de or. 29, 13 (II, 387, 26ff) frgm.
                                 in Joh. 3, 19 (IV, 518, 13) u. ö. Vgl. Harnack TU. 42, 4, 62 A. 1 —
                                 18 Gen. 1, 20 — 19 Gen. 1, 21 — 26 Vgl. Marc. 4, 20 — 32ff Ez. 18,
                                 21 — 34 Ez. 18, 23</note>
-                            <note type="footnote">1 τὰ &lt; H 3 τὰ1 &lt; H 4ff Ση περὶ ὁμοιοτήτων i.
+                  <note type="footnote">1 τὰ &lt; H 3 τὰ1 &lt; H 4ff Ση περὶ ὁμοιοτήτων i.
                                 m. H 10 καὶ &lt; H 11 συναγούση Μ 30 — 13, 2 ἀναλυομένους — προκοπῆς
                                 &lt;H</note>
-                            <pb n="13"/> τὸ ἀποστρέψαι αὐτὸν ἐκ τῆς ὁδοῦ τῆς πονηρᾶς καὶ ζῆν αὐτόν«,
+                  <pb n="13"/> τὸ ἀποστρέψαι αὐτὸν ἐκ τῆς ὁδοῦ τῆς πονηρᾶς καὶ ζῆν αὐτόν«,
                             περὶ δέ τοῦ ἀναλυομένου ἀπὸ τῆς ἐπ᾿ ἀρετὴν προκοπῆς ἐπὶ τὴν τῆς κακίας
                             χύσιν τοιαῦτα· »ἐν δὲ τῷ ἀποστρέψαι δίκαιον ἐκ τῆς δικαιοσύνης αὐτοῦ καὶ
                             ποιῆσαι ἀδικίαν« καὶ τὰ ἑξῆς ἕως τοῦ »καὶ ἐν τοῖς ἁμαρτίαις αὐτοῦ οἷς
@@ -628,7 +635,7 @@
                             τὰς ἐντολὰς« τοῦ κυρίου καὶ ποιῶν »δικαιοσύνην καὶ ἔλεον«, ποίας φύσεως
                             ἦν ἄνομος ὤν; οὐ γὰρ δὴ τῆς ἐπαινετῆς. ἀλλ᾿ εἰ ἄρα ψεκτῆς καὶ φύσεως
                             εὐλόγως ἄν λεχθ <add>εί</add>
-                            <lb n="10"/>»ἐκ πασῶν τῶν ἀνομιῶν αὐτοῦ ὧν ἐποίησεν«; εἰ μέν γὰρ τῆς
+                  <lb n="10"/>»ἐκ πασῶν τῶν ἀνομιῶν αὐτοῦ ὧν ἐποίησεν«; εἰ μέν γὰρ τῆς
                             φαύλης διὰ τὰ πρότερα, πῶς μετέβαλλεν ἐπὶ τὰ βελτίονα; εἰ δὲ τῆς ἀστείας
                             διὰ τὰ δεύτερα, πῶς ἀστείας φύσεως τυγχάνων ἄνομος ἦν; τὸ δ᾿ ὅμοιον
                             ἐπαπορήσεις καὶ περὶ τοῦ ἀποστρέφοντος δικαίου »ἐκ τῆς δικαιοσύνης
@@ -639,10 +646,9 @@
                             ἀπὸ ἀρετῆς). πόλιν τε αὖ οὐκ ἄν ἀστείας <milestone unit="altnumbering" n="455"/> καὶ ἀμεταβλήτου φύσεως ὢν ἀπὸ τοῦ καλοῦ ἀπέστρεφεν ἄν,
                             μετὰ τό χρηματίσαι δίκαιος, »ἐκ τῆς δικαιοσύνης αὐτοῦ« ἐπὶ τὸ »ποιῆσαι
                             ἀδικίαν <lb n="20"/> κατὰ πάσας τὰς ἀνομίας αὐτοῦ, ἃς ἐποίησε«.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="12">
-                        <p>Τούτων δὲ εἰρημένων, νομιστέον ὡμοιῶσθαι τὴν βασιλείαν τῶν οὐρανῶν σαγήνῃ
+            </div>
+            <div n="12" type="chapter">
+               <p>Τούτων δὲ εἰρημένων, νομιστέον ὡμοιῶσθαι τὴν βασιλείαν τῶν οὐρανῶν σαγήνῃ
                             βληθείσῃ εἰς τὴν θάλασσαν καὶ ἐκ παντὸς γένους συναγούσῃ εἰς παράστασιν
                             τοῦ ποικίλου τῶν ἐν ἀνθρώποις προαιρέσεων, διαφορὰν πρὸς ἀλλήλας
                             πλείστην ὅσην ἐχουσῶν, ὡς εἶναι τὸ <lb n="25"/> ἐκ παντὸς γένους
@@ -659,11 +665,11 @@
                                 sagenam evangelicorum dogmatum et miserunt eam in mare huius
                                 saeculi, quae usque hodie in mediis fluctibus tenditur, capiens de
                                 salsis et amaris gurgitibus etc.</note>
-                            <note type="footnote">3 ἐκ] ἀπὸ M 5 τὴν &lt; H 7 πόσος &lt; H 9 λεχθ
+                  <note type="footnote">3 ἐκ] ἀπὸ M 5 τὴν &lt; H 7 πόσος &lt; H 9 λεχθ
                                     <add>εί</add>η Kl mit V 10 ἑαυτοῦ H 11 πῶς—δεύτερα &lt; H |
                                 μετέβαλεν υ 21 ὡμοιῶσθαι υ&lt;M ὁμοιῶσθαι Η 26ff σαγήνης (Hu) C1 Nr.
                                 185 Π σαγήνη MH 26 κακῶν Μ</note>
-                            <pb n="14"/> τῶν ὑπὸ τὴν σαγήνην πιπτόντων ἰχθύων οἱ μὲν κατὰ τἀκε τὰ
+                  <pb n="14"/> τῶν ὑπὸ τὴν σαγήνην πιπτόντων ἰχθύων οἱ μὲν κατὰ τἀκε τὰ
                             μέρη τῆς σαγήνης εὑρίσκονται οἱ δὲ καθ’ἕτερα, καὶ ἕκαστος ὑφ’ ὅ
                             κεκράτηται μέρος, οὕτως εὕροις ἄν καὶ ἐπὶ τῶν ὑπὸ τὴν σαγήνην τῶν γραφῶν
                             ἐληλυθότων τινὰς με]ν κεκρατημένους ὑπὸ τὴν προξητικὴν πλοκὴν (φέρ’
@@ -684,7 +690,7 @@
                             διὰ τῶν ἀποστόλων λόγοις. διὰ τοῦτο οὖν ὁμοία ἐστὶν ἡ βασιλεία τῶν
                             οὐρανῶν σαγήνῃ βληθείςῃ εἰς τὴν θάλασσαν <lb n="20"/> καὶ ἐκ παντὸς
                             γένους συνγαγούςῃ.</p>
-                        <p>Δύναται δὲ χωρὶς τῶν ἀποδεδομένων τὸ ἐκ παντὸς <add>γένους</add> συνα-
+               <p>Δύναται δὲ χωρὶς τῶν ἀποδεδομένων τὸ ἐκ παντὸς <add>γένους</add> συνα-
                             γαγούςῃ δηλῦν τὴν ἀπὸ παντὸς γένους ἐθνῶν κλῆσιν. οἱ δὲ διακονη- σάμενοι
                             τῇ βληθείςῃ εἰς τὴν θάλασσαν σαγήνῃ ὁ κύριός ἐστι τῆς σαγήνης <milestone unit="altnumbering" n="456"/> Ἰησοῦς Χριστὸς καὶ οἰ προσελθόντες
                             ἄγγελοι καὶ διακονησά- <lb n="25"/> μενοι αὐτῷ, οἵτινες οὐκ
@@ -703,7 +709,7 @@
                                 Κl νηχόμενον ΜΗ 21 τὸ] τῆ Μ 21 <add>γένους</add> Κl mit Cluc Nr. 18
                                 24 ἄγγελοι] + καὶ ἅγιοι Π cod. Me | διακομισάμενοι Μ 26 τοῦ] τοῦδε
                                 τοῦ Cluc Nr. 18 28 ἔλθη Η 29 τὸν] τῶν Η</note>
-                            <pb n="15"/> ἔσται ἐν τῇ συντελείᾳ τοῦ αἰῶνος· ἐξελεύσονται οἱ ἔγγελοι
+                  <pb n="15"/> ἔσται ἐν τῇ συντελείᾳ τοῦ αἰῶνος· ἐξελεύσονται οἱ ἔγγελοι
                             καὶ ἀφοριοῦσιν αὐτοῦς τοὺς πονηροὺς ἐκ μέσου τῶν δικαίων, καὶ βαλοῦσιν
                             αὐτοὺς εἰς τὴν κάμινον τοῦ πυρός. πλὴν τηρητέον, ὅτι ἤδη διὰ τῆς τῶν
                             ζιζανίων παραβολῆς καὶ τῆς προκειμένης ὁμοιώσεως <lb n="5"/>
@@ -715,10 +721,9 @@
                             ὁ <lb n="10"/> βρυγμὸς τῶν ὀδόντων«, ἐνταῦθα δέ, ὅτι ἐξελεύσονται οἱ
                             ἄγγελοι καὶ ἀφοριοῦσι τοὺς πονηροὺς ἐκ μέσου τῶν δικαίων, καὶ βαλοῦσιν
                             αὐτοὺς εἰς τὴν κάμινον τοῦ πυρός.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="13">
-                        <p>Τούτοις δὲ οὐκ ἀκολουθεῖ, ὅπερ οἴονταί τενες, ὅτι καὶ τῶν ἁγίων ἀγγέλων
+            </div>
+            <div n="13" type="chapter">
+               <p>Τούτοις δὲ οὐκ ἀκολουθεῖ, ὅπερ οἴονταί τενες, ὅτι καὶ τῶν ἁγίων ἀγγέλων
                             εἰσὶ κρείττους οἱ ἄνθρωποι οἱ ἐν Χριστῷ σωζόμενοι· πῶς γὰρ <lb n="15"/>
                             δύναται οἱ ὑπὸ τῶν ἁγίων ἀγγέλων ἐις ἄγγη βαλλόμενοι τοῖς βάλλουσιν εἰς
                             τὰ ἄγγη παραβάλλεσθαι, ὑπὸ τὴν ἐκείνων τεταγμένοι ἐξουσίαν; ταῦτα δέ
@@ -731,7 +736,7 @@
                             βουλόμενος πρὸ τῆς συντελείας τοῦ αἰῶνος καὶ πρὸ τοῦ ἐξελθόντας τοὺς
                             ἀγγέλους ἀφορίσαι τοὺς πονηροὺς ἐκ μέσου τῶν δικαίων μὴ εἶναι καὶ
                             πονηροὺς <milestone unit="altnumbering" n="457"/>
-                            <lb n="25"/> ὑπὸ τὴν σαγήνην ἐκ παντὸς γένους ἔοικε μήτε τὴν γραφὴν
+                  <lb n="25"/> ὑπὸ τὴν σαγήνην ἐκ παντὸς γένους ἔοικε μήτε τὴν γραφὴν
                             ωενοηκέναι καὶ ἀδυνάτων ἐπιθυμεῖν. διὸ μὴ ξενιζώμεθα, ἐὰν πρὸ τοῦ
                             ἀφορισθῆναι τοὺς πονηροὺς ἐκ μέσου τῶν δικαίων ὑπὸ τῶν ἐπὶ τούτῳ
                             ἐξαποσταλησομένων ἐγγέλων ὁρῶμεν ἡμῶν τὰ ἀθροίσματα πεπληρωμένα καὶ
@@ -743,10 +748,10 @@
                             οὔτε ἔξω <note type="footnote">6 Matth. 13, 41f — 19 I. Pet. 1, 12 — 20
                                 I. Kor. 6. 3 — 30ff Vgl. S. 12, 4 ff — 33ff Vgl. Orig. hom. XVI, 1
                                 in Jer. (III, 132, 13ff)</note>
-                            <note type="footnote">2 [αὐτοὺς]? Kl | μέσων Μ 15 τῶν ἁγίων] vgl. Z. 13
+                  <note type="footnote">2 [αὐτοὺς]? Kl | μέσων Μ 15 τῶν ἁγίων] vgl. Z. 13
                                 ἁγίων Η 19 ἅ] τὸ Μ 21 ὅπου] ἔνθα Μ 24. 27 μέσων Μ 26 ἀδύνατον
                                 Η</note>
-                            <pb n="16"/> ῥιπτόμενοι πλεῖόν τι πάσχουσι τοῦ ἀπολέσαι τὴν ὡς ἐν ἰχθύσι
+                  <pb n="16"/> ῥιπτόμενοι πλεῖόν τι πάσχουσι τοῦ ἀπολέσαι τὴν ὡς ἐν ἰχθύσι
                             ζωήν), ἐπὶ δὲ τῶν, δι’ ἅ λαμβάνεται ἡ παραβολή, φαῦλον μέν ἐστι τὸ εἶναι
                             ἐν θαλάσςῃ καὶ μὴ ὑπὸ τὴν σαγήνην ἐλθεῖν ἐπὶ τῷ εἰς ἄγγη μετὰ τῶν καλῶν
                             βλη- θῆναι. οὕτω δὲ ἰχθῦς μὲν φαῦλοι ἔξω βάλλονται καὶ ῥιπτοῦνται, οἱ δὲ
@@ -756,10 +761,10 @@
                             ἀνθρώπου, ἰδοὺ γεγόνασί μοι ὁ οἶκος Ἰσραὴλ ἀναμεμιγμένοι πάντες χαλκῷ
                             καὶ σιδήρῳ« καὶ τὰ ἑξῆς ἕως τοῦ »καὶ ἐπιγνώσεσθε διότι ἐγὼ κύριος ἐξέχεα
                             τὸν θυμόν μου ἀφ’ <lb n="10"/> ὑμᾶς«.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="14">
-                        <p><quote corresp="urn:cts:greekLit:tlg0031.tlg001:13.51">Συνήκατε ταῦτα
+            </div>
+            <div n="14" type="chapter">
+               <p>
+                  <quote corresp="urn:cts:greekLit:tlg0031.tlg001:13.51">Συνήκατε ταῦτα
                                 πάντα; λέγουσι ναί </quote> (13, 51 [52]). Ὁ γινώσκων τὰ ἐν ταῖς
                             καρδίαις τῶν ἀνθρώπων Χριστὸς Ἰησοῦς (ὡς καὶ περὶ τούτου ἐκίδαξεν ἐν τῷ
                             εὐαγγελίῳ ὁ Ἰωάννης) οὐκ ἀγνοῦν ἐρωτᾷ, ἀλλ’ ἅπαξ ἀναλαβὼν ἄνθρωπον
@@ -788,7 +793,7 @@
                                 &lt;Μ 6 τούτοις Μ 8 οἶκος + τοῦ Μ 14 ἀλλὰ Μ 15 γε] δὲ Μ 16 ὅλων]
                                 ἀγγέλων Μ 18 τις &lt; Η 18f οὐκ —ἀποφαντικῶς z. T. zerstört in M 21
                                 ἀποφένεται Η ράξεσι &lt; Μ</note>
-                            <pb n="17"/> καὶ ἰδιῶται« ἐν ταῖς Πράξεσιν εἴρηνται, πλείονες δ’ ἦσαν οἱ
+                  <pb n="17"/> καὶ ἰδιῶται« ἐν ταῖς Πράξεσιν εἴρηνται, πλείονες δ’ ἦσαν οἱ
                             μαθηταί, ἐφ’ οἷς συνιεῖσι πάντα λέλεκται τὸ πᾶς γραμματεὺς καὶ τὰ ἑξῆς·
                             ἤ γραμμα- τεὺς πᾶς ὁ μεμαθητευμένος τῇ κατὰ τὰ γράμμα τοῦ νόμου
                             διδασκαλίᾳ ἀνομάζεται, ὡς καὶ τοῦς ἀγραμμάτους μὲν καὶ ἰδιώτας
@@ -797,7 +802,7 @@
                             τροπολογεῖν μηδὲ συνιέντων τὰ τῆς ἀναγωγῆς τῶν γραφῶν, ἀλλὰ τῷ γράμματι
                             ψιλῷ πιστευόντων καὶ ποῦτο ἐκδικύντων, τὸ χρηματίζειν αὐτοὺς
                             γραμματεῖς.</p>
-                        <p>Οὕτως δέ τις διηγήσεται καὶ τὸ »οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι <lb n="10"/> ὑοκριταί«, ὡς παντὶ εἰρημένον τῷ πλὴν τοῦ γράμματος μηδὲν
+               <p>Οὕτως δέ τις διηγήσεται καὶ τὸ »οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι <lb n="10"/> ὑοκριταί«, ὡς παντὶ εἰρημένον τῷ πλὴν τοῦ γράμματος μηδὲν
                             ἐπισταμένῳ. ἔνθα ζητήεις, εἰ ὥστερ νομιδὸς γραμματεὺς οὕτως ἔσται καὶ
                             εαγγελικός, καὶ ὥσπερ τὸν νόμον ἀναγινώσκων καὶ ἀκύων καὶ λέγων »ἅτινά
                             ἐστιν ἀλληγορούμενα«, οὕτω καὶ τὸ εὐαγγέλιον, ὡς εἰδέναι (τηρουμένης τῆς
@@ -818,7 +823,7 @@
                             Χριστός, ὁ »ἐν ἀρχῇ πρὸς τὸν θεὸν« θεὸς λόγος οὐκ ἐπιδημεῖ <lb n="30"/>
                             ψυχῇ, οὐκ ἔστιν ἐν ἐκείνῃ ἡ βασιλεία τῶν οὐρανῶν· ὅταν δὲ ἀγγύς τις
                             γένηται τοῦ χωρῆαι τὸν λόγον, τούτῳ ἐγγίζει ἡ βασιλεία τῶν οὐρανῶν.</p>
-                        <p>Εἰ δὲ ταῦτόν ἐστιν ὑποστάσει (εἰ καὶ μὴ ἐπινοίᾳ) βασιλεία οὐρανῶν καὶ
+               <p>Εἰ δὲ ταῦτόν ἐστιν ὑποστάσει (εἰ καὶ μὴ ἐπινοίᾳ) βασιλεία οὐρανῶν καὶ
                             βασιλεία θεοῦ, δῆλον ὅτι πρὸς οὕς λέγεται· »ἡ βασιλεία τοῦ θεοῦ ἐν- τὸς
                             ὑμῶν ἐστι«, πρὸς πούτους ἄν λέγοιτο καὶ τὸ »ἡ βασιλεία« τῶν οὐρανῶν
                                 <note type="footnote">4f Vgl. Gal. 5, 18; Röm. 2, 27 — 5ff Vgl.
@@ -826,7 +831,7 @@
                                 24 — 15 Vgl. Eph. 6, 12 — 24 Matth. 4, 17 — 29 Joh. 1, 2 — 33.34
                                 Luc. 17, 21 10 μραμματέως Μ 11 ἐστὶ Η 20 οὐρανῶν] τοῦ οὐνου Μ 21
                                 ἐπι- τυγχάνομεν Μc 23 περισσεύοντα] πιστεύων C1 Nr. 184</note>
-                            <pb n="18"/> »ἐντὸς ὑμῶν ἐστι«, καὶ μάλιστα διὰ τὴν ἀπὸ τοῦ γράμματος
+                  <pb n="18"/> »ἐντὸς ὑμῶν ἐστι«, καὶ μάλιστα διὰ τὴν ἀπὸ τοῦ γράμματος
                             ἐπὶ τὸ πνεῦμα μετάνοιαν, ὅτι »ἡμίκα ἄν ἐπιστρέψῃ« τις »πρὸς κύριον,
                             περιαιρῖται τὸ« ἐπὶ τῷ γράμματι »κάλυμμα· ὁ δὲ κύριος τὸ πνεῦμά ἐστιν«.
                             ὁ δὲ ἀληθῶς οἰκο- δεσπότης καὶ ἐλεύθερός ἐστι καὶ πλούσιος · πλουτῶν διὰ
@@ -849,10 +854,9 @@
                             οὐρανοῖς τεθησαυρισμένα καὶ τὴν παροῦσαν αὐτοῖς καρδίαν καὶ διὰ τοῦτο
                             λέγουσαν· »συνήγειρε καὶ συνεκάθισεν ἡμᾶς ἐν τοῖς ἐπουρανίοις ἐν Χριστῷ«
                             καὶ »ἡμῶν δὲ τὸ πολίτευμα ἐν οὐρανοῖς ὑπάρχει«.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="15">
-                        <p>Ἐπεὶ δὲ πᾶς γραμματεὺς μαθητευθεὶς τῇ βσιλείᾳ <lb n="25"/> τῶν οὐρανῶν
+            </div>
+            <div n="15" type="chapter">
+               <p>Ἐπεὶ δὲ πᾶς γραμματεὺς μαθητευθεὶς τῇ βσιλείᾳ <lb n="25"/> τῶν οὐρανῶν
                             ὅμοιός ἐστιν ἀνθρώπῳ οἰκοδεσπότῃ, <milestone unit="altnumbering" n="460"/> ὅστιε πρφέρει ἐκ τοῦ θησαυροῦ αὐτοῦ καινὰ καὶ παλαιά, δῆλον ὅτι καὶ
                             (κατὰ τὴν καλουμένην τῆς προτάσεως ἀντιστροφὴν) πᾶς ὅστις μὴ προφέρει ἐν
                             τοῦ θησαυροῦ αὐτοῦ καινὰ καὶ παλαιά, οὐκ ἔστι γραμματεὺς μαθητευεὶς τῇ
@@ -866,7 +870,7 @@
                                 ὅτι Ηu ὅτε Μ Η 5 μεμαθητεῦ<add>σ</add>θαι ρ 11 ὅτε Μ | ἅψεσθαι Μ 13
                                     <add>σὴς—καὶ</add> Lo 21 καὶ1 + <add>κλέπτειν</add> Κoe 26
                                 προσφέρει Μ 31 νόμῳ + τοῦ Μ</note>
-                            <pb n="19"/> ἀποκαλύψεως αὐτῶν λόγια, ἀλλὰ καὶ παλαιὰ τοῦ »σκιὰν«
+                  <pb n="19"/> ἀποκαλύψεως αὐτῶν λόγια, ἀλλὰ καὶ παλαιὰ τοῦ »σκιὰν«
                             ἔχοντος »τῶν μελλόντων ἀγαθῶν« νόμου καὶ τῶν ἀκολούθως αὐτοῖς
                             προφητευσάντων προφητῶν. συναχθἠσεται δὲ ταῦτα, ἐπὰν καὶ ἀναγινώσκωμεν
                             καὶ γινώσκωμεν καὶ μεμνημένοι τούτων »πνευματικὰ πνευματικοῖς« εὐκαίρως
@@ -878,7 +882,7 @@
                             διακόπτοντας <lb n="10"/> ἀπὸ τῶν παλαιῶν τὰ καινἀ, ὡς μακρὰν
                             τυγχάνοντας τῆς πρὸς τὸν οἰκοδεσπότην ὁμοιώσεως, προφέροντα ἐκ τοῦ
                             θησαυροῦ αὐτοῦ καινὰ καὶ παλαιά.</p>
-                        <p>Ἐπεὶ δὲ ὁ ὁμοιούμενός τινι ἔτερός ἐστι παρ' ἐκεῖνον ᾦ ὁμοιοῦται, ἔσται ὁ
+               <p>Ἐπεὶ δὲ ὁ ὁμοιούμενός τινι ἔτερός ἐστι παρ' ἐκεῖνον ᾦ ὁμοιοῦται, ἔσται ὁ
                             μὲν μαθητευθεὶς τῇ βασιλείᾳ τῶν οὐρανῶν γραμματεὺς ὁ <lb n="15"/>
                             ὁμοιούμενος, ἔτερος δὲ παρὰ τοῦτον ὁ οἰκοδεσπότης, ὄς προφέρει ἐκ τοῦ
                             θησαυροῦ αὐτοῦ καινὰ καὶ παλαιά· ὁ δὲ ὁμοιούμενος αὐτῷ, ὡς τοῦτον
@@ -901,25 +905,25 @@
                                 20f Vgl. II. Kor. 4, 16 — 21 II. Kor. 3, 7 — 22 Vgl. Ez. 11, 19;
                                 Orig. de princ. III, 1 (V, 219, 5) — 25 Matth. 10, 25 — 27 I. Kor.
                                 11, 1</note>
-                            <note type="footnote">13 δὲ &lt;Μ | ὁ &lt;Η 14 ὁ μὲν] ὁ δὲ καὶ Μ καὶ ὁ
+                  <note type="footnote">13 δὲ &lt;Μ | ὁ &lt;Η 14 ὁ μὲν] ὁ δὲ καὶ Μ καὶ ὁ
                                 μὲν Diehl 21 ἀνακαινουμένῳ Κοe ἀνακαινουμένων Μ Η | ἀεὶ] hinter
                                 ἀνακαινουμένων Η 22 καὶ] 1. ἤ ? ΚΙ 26 τὸν2 υ&lt;Μ Η 31ff Ση ταῦτα ὡς
                                 ἀναγκαιότατα i. m. H</note>
-                            <pb n="20"/> παλαιῶν καὶ καινῶν ἀκουστέον καὶ τοῦ πνευματικοῦ νόμου
+                  <pb n="20"/> παλαιῶν καὶ καινῶν ἀκουστέον καὶ τοῦ πνευματικοῦ νόμου
                             λέγοντος ἐν Λευϊτικῷ· »καὶ φάγεσθε παλαιὰ καὶ παλαιὰ παλαιῶν, καὶ παλαιὰ
                             ἐκ προσώπου νέων ἐξοίσετε· καὶ θήσω τὴν σκηνήν μου ἐν ὑμῖν«· ἐσθίομεν
                             γὰρ ἐν εὐλογίᾳ τὰ παλαιά, τοὺς προφητικοὺς λόγους, καὶ τούτων <lb n="5"/> τῶν παλαιῶν τὰ παλαιά, τοὺς νομικούς, καὶ ἐλθόντων τῶν νέων καὶ
                             εὐαγγελικῶν βιοῦντες κατὰ τὸ εὐαγγέλιον τὰ παλαιὰ τοῦ γράμματος ἐκ
                             προσώπου νέων ἐκφέρομεν, καὶ τίθησι τὴν ἑαυτοῦ σκηνὴν ἐν ἡμῖν πληρῶν ἤν
                             εἶπεν ἐπαγγελίαν· »ἐνοικήσω καὶ ἐμπεριπατήσω ἐν αὐτοῖς«.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="16">
-                        <p><quote corresp="urn:cts:greekLit:tlg0031.tlg001:13.53">Καὶ ἐγένετο ὄτε
+            </div>
+            <div n="16" type="chapter">
+               <p>
+                  <quote corresp="urn:cts:greekLit:tlg0031.tlg001:13.53">Καὶ ἐγένετο ὄτε
                                 ἐτέλεσεν ὁ Ἰησοῦς τὰς παραβολὰς <lb n="10"/> ταύτας, μετῆρεν
                                 ἐκεῖθεν. καὶ ἐλθὼν εἰς τὴν πατρίδα αὐτοῦ </quote> (13, 53
                             [—58]).</p>
-                        <p>Ἐπεὶ ἐν τοῖς ἀνωτέρω ἐξητάσαμεν μήποτε τὰ μὲν τοῖς ὄχλοις λελαλημένα
+               <p>Ἐπεὶ ἐν τοῖς ἀνωτέρω ἐξητάσαμεν μήποτε τὰ μὲν τοῖς ὄχλοις λελαλημένα
                             παραβολαὶ ἦσαν τὰ δὲ τοῖς μαθηταῖς ὁμοιότητες, καὶ τὰς εἰς τοῦτο
                             ὑποπεσούσας παρατηρήσεις ἐξεθέμεθα, ὡς οἶμαι, οὐκ εὐκαταφρονήτους <lb n="15"/> τυγχανούσας, χρὴ εἰδέναι, ὄτι δόξει ἐκείνοις πᾶσιν
                             ἐναντιοῦσθαι τὸ ἐπιλέγεσθαι οὐκ ταῖς παραβολαῖς μόνον, ἀλλὰ καὶ ἐπὶ ταῖς
@@ -946,7 +950,7 @@
                                 3 ἐξοίσεται Η 5 τῶν 1 &lt;Η 8 ἑαυτοῖς Μ 18 πάντα] ταῦτα Μ 20 καὶ
                                 &lt;Μ 23 ἀνενεκτέον Η 25 ἐκείναις Diehl 26 τὸ + καὶ Μ 30 ἑαυτοῦ Η 31
                                 ἐτέλεσε] ἔλεγε Μ</note>
-                            <pb n="21"/> τὴν πατρίδα αὐτοῦ ἤ Βηθλεέμ· Νάζαρα μὲν διὰ τὸ »Ναζωραῖος
+                  <pb n="21"/> τὴν πατρίδα αὐτοῦ ἤ Βηθλεέμ· Νάζαρα μὲν διὰ τὸ »Ναζωραῖος
                             κληθήσεται«, Βηθλεὲμ δὲ ἐπεὶ ἐν αὐτῇ γεγέννηται. ἔτι δὲ ἐφίστημι μήποτε
                             δυνάμενοι οἱ εὐαγγελισταὶ εἰπεῖν· ἐλθὼν εἰς Βηθλεὲμ ἤ ἐλθὼν εἰς Νάζαρα,
                             τοῦτο μὲν οὐ πεποιήκασι πατρίδα δὲ ὠνομάκασι διά τι μυστικῶς ἐν τῷ <lb n="5"/> τόπῳ περὶ τῆς πατρίδος αὐτοῦ δηλούμενον ὄλης
@@ -961,10 +965,9 @@
                             ἐκπλήττεσθαι πάντας· καὶ εἰκὸς ὄτι ὑπὲρ γραγὴν ἦν τὰ εἰρημένα. πλὴν ἐν
                             τῇ συναγωγῇ αὐτῶν ἐδίδασκεν, <lb n="15"/> οὐ σχίζων ἀπ' αὐτῆς οὐδὲ
                             ἀθετῶν αὐτήν.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="17">
-                        <p>Τὸ δὲ τούτῳ πόθεν ἡ σοφία αὔτη; πλείονα σαφῶς ἐμφαίνει καὶ ἐξαίρετον
+            </div>
+            <div n="17" type="chapter">
+               <p>Τὸ δὲ τούτῳ πόθεν ἡ σοφία αὔτη; πλείονα σαφῶς ἐμφαίνει καὶ ἐξαίρετον
                             σοφίαν τῶν λόγων τοῦ Ἰησοῦ, ἀξίαν τοῦ »καὶ πλεῖον Σολομῶντος ὦδε«. καὶ
                             δυνάμεις μείζους ἐποίει τῶν ἐν Ἠλίᾳ καὶ ἐν Ἐλισσαίῳ καὶ ἔτι πρότερον ἐν
                             Μωσῇ καὶ Ἰησοῦ τοῦ Ναυῆ. ἔλεγον δὲ οἱ θαυμάζοντες, <lb n="20"/> οὐκ
@@ -991,10 +994,10 @@
                                 | Ἰουδαίας] zerstört in M am Zeilenanfang Γαλιλαίας V 7 τις] + γε Η
                                 15 σχιζόμενος Koe 19 Μωσῇ] vgl. zu S. 23, 26ff 23 oὐχὶ μݲηݲρݲ Μ 27
                                 εἶναι s. 1. Mc</note>
-                            <pb n="22"/> οἶμαι λόγον ἔχειν, ἀνδρῶν μὲν καθαρότητος τῆς ἐν ἁγνείᾳ
+                  <pb n="22"/> οἶμαι λόγον ἔχειν, ἀνδρῶν μὲν καθαρότητος τῆς ἐν ἁγνείᾳ
                             ἀπαρχὴν γεγονέναι τὸν Ἰησοῦν, γυναικῶν δὲ τὴν Μαρίαν· οὐ γὰρ εὔφημον,
                             ἄλλῃ παρ' ἐκείνην τὴν ἀπαρχὴν τῆς παρθενίας ἐπιγράψασθαι.</p>
-                        <p>Ἰάκωβος δέ ἐστιν οὖτος, ὄν λέγει Παῦλος ἰδεῖν ἐν τῇ πρὸς Γαλάτας ἐπιστολῇ
+               <p>Ἰάκωβος δέ ἐστιν οὖτος, ὄν λέγει Παῦλος ἰδεῖν ἐν τῇ πρὸς Γαλάτας ἐπιστολῇ
                                 <lb n="5"/> εἰπών· »ἔτερον δὲ τῶν ἀποστόλων οὐκ εἶδον, εἰ μὴ Ἰάκωβον
                             τὸν ἀδελφὸν τοῦ κυρίου«. ἐπὶ τοσοῦτον δὲ διέλαμψεν οὔτος ὁ Ἰάκωβος ἐν τῷ
                             λαῷ ἐπὶ δικαιοσύ, ὡς Φλάβιον Ἰώσηπον, ἀναγράψαντα ἐν εἴκοσι βιβλίοις τὴν
@@ -1020,7 +1023,7 @@
                             ἐπίστευον <milestone unit="altnumbering" n="464"/> μὲν ἐσκανδαλίζοντο δὲ
                             ἐν αὐτῷ, ὡσεὶ τοὺς ὀφθαλμοὺσ τῆς διανοίας κρατούμενοι ὑπὸ δυνάμεων, ἄς
                             ἔμελλεν <lb n="30"/> ἐν τῷ καιρῷ τοῦ πάθους θριαμβεύειν ἐν τῷ ξύλῳ.</p>
-                        <note type="footnote">5 Gal. 1, 19 — 7ff Vgl. Orig. c. Cels. I, 47 (I, 97,
+               <note type="footnote">5 Gal. 1, 19 — 7ff Vgl. Orig. c. Cels. I, 47 (I, 97,
                             2ff) II, 13 (I, 143, 24ff) und Schürer 4 I, 581ff; Harnack TU. 42, 4, 51
                             — 12 Vgl. Joh. 9, 30 — 16 Jud. 1 — 17f Vgl. Zahn, Forschungen 6, 1900
                             passim — 23 Vgl. Epiphanius haer. 78, 7, 6 (III, 457, 16f):τέσσαρας μὲν
@@ -1030,12 +1033,10 @@
                             χάριτι? Εlt 23 τεσσάρων] τεσάρων Μ| <add>ἀρρένων</add> ΚΙ 24 mit μηδ' ἐκ
                             παι schließt in M fol. 8v, es fehlt dann ein Blatt; M beginnt wieder auf
                             S. 25, 23</note>
-
-                        <pb n="23"/>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="18">
-                        <p>Ὁ δὲ Ἰησοῦς εἶπεν αὐτοῖς· οὐκ ἔστι προφήτης ἄτιμος εἰ μὴ ἐν τῇ πατρίδι
+               <pb n="23"/>
+            </div>
+            <div n="18" type="chapter">
+               <p>Ὁ δὲ Ἰησοῦς εἶπεν αὐτοῖς· οὐκ ἔστι προφήτης ἄτιμος εἰ μὴ ἐν τῇ πατρίδι
                             αὐτοῦ. ζητητέον πότερον καθολικῶς ἴσον δύναται ἐπὶ παάντα προφήτην
                             ἀναφερόμενον τὸ λεγόμενον, ὡς ἑκάστονυ τῶν προφητῶν ἐν τῇ πατρίδι
                             ἀτιμωθέντος), ἥ διὰ τὸ ἑνικῶς εἰρῆσθαι περὶ ἑνὸς ταῦτα λέλεκται. εἰ μὲν
@@ -1076,7 +1077,7 @@
                                 die Formen ohne υ überwiegen in den Haupthandschriften, ebenso im
                                 dat. μωση über μωσει 28 <add>τὸ</add> Koe 29 τῆς s. 1. H c 32
                                 χρήσιμον Koe χρήσιμα Η</note>
-                            <pb n="24"/> κυρίου«, καὶ πάλιν ἀλλαχοῦ »διετέλεσα μυκτηριζόμενος«. ὅσα
+                  <pb n="24"/> κυρίου«, καὶ πάλιν ἀλλαχοῦ »διετέλεσα μυκτηριζόμενος«. ὅσα
                             δὲ καὶ ὑπὸ τοῦ τότε βασιλέως τοῦ Ἰσραὴλ πέπονθεν, ἐν τῇ προφητείᾳ αὐτοῦ
                             ἀναγέγραπται. καὶ Μωσέα δὲ ὅτι ἦλθον πολλάκις λιθόλευστον ποιῆσαι οἱ ἀπὸ
                             τοῦ λαοῦ, καὶ τοῦτο γέγραπται, καὶ ἦν αὐτῷ πατρὶς οὐχ οἱ λίθοι τινὸς
@@ -1116,7 +1117,7 @@
                                     δεδημ<add>οσι</add> Schürer RE3 1, 622, 53, dagegen Zahn GK 1,
                                 128 A. 1 14 περιελθόντες V ὑπελθόντες Η 24 ἀπεληλύθησαν V | δὲ &lt;
                                 V | εἰ V ἠ Η 29 προφητεύσαντες V</note>
-                            <pb n="25"/> διὸ μακάριοί εἰσι τὰ αὐτὰ τοῖς προφήταις παθόντες κατὰ τὸ
+                  <pb n="25"/> διὸ μακάριοί εἰσι τὰ αὐτὰ τοῖς προφήταις παθόντες κατὰ τὸ
                             ὑπὸ τοῦ σωτῆρος λεγόμενον· »κατὰ ταὐτὰ γὰρ ἐποίουν τοῖς προφήταις οἱ
                             πατέρες αὐτῶν«. τούτοις δέ τις ἐμμελῶς προσέχων, εἰ διὰ τὸ πάνυ εὐτόνως
                             βιοῦν καὶ ἐλέγχειν τοὺς ἁμαρτάνοντας μισοῖτο καὶ ἐπιβουλεύοιτο, ὡς
@@ -1127,10 +1128,9 @@
                             καὶ παρὰ τοῖς ἁμαρτάνουσι, βαρουμένοις τῷ βίῳ τοῦ δικαίου, χρὴ τὸν
                             ζηλοῦντα βίον προφητικὸν καὶ χωρήσαντα <lb n="10"/> τὸ ἐν ἐκείνοις
                             πνεῦμα.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="19">
-                        <p>Ἑξῆς ἔστιν ἰδεῖν τὸ οὐκ ἐποίησεν ἐκεῖ δυνάμεις πολλὰς διὰ τὴν ἀπιστίαν
+            </div>
+            <div n="19" type="chapter">
+               <p>Ἑξῆς ἔστιν ἰδεῖν τὸ οὐκ ἐποίησεν ἐκεῖ δυνάμεις πολλὰς διὰ τὴν ἀπιστίαν
                             αὐτῶν. διὰ τούτων δὲ διδασκόμεθα, ὅτι αἱ δυνάμεις ἐν τοῖς πιστεύουσιν
                             ἐγίνοντο, ἐπεὶ »παντὶ τῷ ἔχοντι δοθήσεται καὶ περισσευθήσεται«, ἐν
                             ἀπίστοις δὲ οὐ μόνον οὐκ ἐνήργουν αἱ δυνάμεις, <lb n="15"/> ἀλλ' (ὡς ὁ
@@ -1159,7 +1159,7 @@
                                 προφητῶν Koe (wegen ἐν ἐκείνος Ζ. 10) 15 ἀνέγραψε Η 21 Πέτρον
                                 καταποντίζεσθαι V 23 ἀλλὰ μόνον] hiermit setzt M wieder ein: fol.
                                 16r</note>
-                            <pb n="26"/> ἔνθεν ἐκεῖ, καὶ μεταβήσεται«. ἀκριβῶς δὲ δοκοῦσί μοι ὁ
+                  <pb n="26"/> ἔνθεν ἐκεῖ, καὶ μεταβήσεται«. ἀκριβῶς δὲ δοκοῦσί μοι ὁ
                             Ματθαῖος καὶ ὁ Μᾶρκος τὸ ὑπερέχον τῆς θείας δυνάμεως παραστῆσαι
                             βουλόμενοι ὅτι καὶ ἐν ἀπιστίᾳ δύναται, ἀλλ' οὐκ ἐπὶ πλεῖον δύναται, ὅσον
                             δύναται ἐν πίστει τῇ τῶν εὐεργετουμένων, εἰρηκέναι οὐχ ὅτι οὐκ ἐποίησε
@@ -1169,8 +1169,8 @@
                             ἔστη ἐπὶ τούτῳ, ἀλλὰ προσέθηκεν· »εἰ μὴ ὀλίγοις ἀρρώστοις ἐπιθεὶς τὰς
                             χεῖρας ἐθεράπευσε«, νικώσης τῆς ἐν αὐτῷ δυνάμεως καὶ οὕτως τὴν
                             ἀπιστίαν.</p>
-                        <lb n="10"/>
-                        <p>Δοκεῖ δέ μοι ὅτι, ὥσπερ ἐπὶ τῶν σωματικῶν οὔτε αὐτάρκης γεωργία πρὸς
+               <lb n="10"/>
+               <p>Δοκεῖ δέ μοι ὅτι, ὥσπερ ἐπὶ τῶν σωματικῶν οὔτε αὐτάρκης γεωργία πρὸς
                             συγκομιδὴν καρπῶν, ἐὰν μὴ τὸ περιεχόμενον εἰς τοῦτο συνεργῇ (μᾶλλον δὲ
                             τὸ περιέχον) ποιότητι ὁποίᾳ βούλεται ὁ κοσμῶν καὶ ποιῶν αὐτὸ ὁποῖον
                             θέλει, οὔτε τὸ περιέχον χωρὶς γεωργίας (μᾶλλον δὲ ὁ προνοῶν οὐ ποιήσαι
@@ -1184,24 +1184,24 @@
                             σωφροσύνῃ, ὡς »ἐν υἱοῖς ἀνθρ;φωπων, τῆς ἀπὸ σοῦ« σωφροσύνης »ἀπούσης,
                             εἰς οὐδὲν λογισθήσεται«, ἤ »τέλειος« ἐν δικαιοσύνῃ καὶ ταῖς λοιπαῖς
                             ἀρεταῖς, »τῆς ἀπὸ σοῦ« δικαιοσύνης <add>ἀπού σης</add>
-                            <lb n="25"/> καὶ τῶν ἀπὸ σοῦ λοιπῶν ἀρετῶν »εἰς οὐδὲν λογισθήσεται«.
+                  <lb n="25"/> καὶ τῶν ἀπὸ σοῦ λοιπῶν ἀρετῶν »εἰς οὐδὲν λογισθήσεται«.
                             ὅθεν »μὴ καυχάσθω ὁ σοφὸς ἐν τῇ σοφίᾳ αὐτοῦ, μηδὲ ὁ ἰδχυρὸς ἐν τῇ ἰσχύϊ
                             αὐτοῦ«· τὸ γὰρ καυχήσεως ἄξιον οὐχ ἡμέτερον, ἀλλὰ δῶρόν ἐστι τοῦ θεοῦ ἡ
                             ἀπ' αὐτοῦ σοφία καὶ ἡ ἀπ' αὐτοῦ αὐτοῦ ἰσχὺς καὶ οὕτω τὰ λοιπά.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="20">
-                        <p><quote corresp="urn:cts:greekLit:tlg0031.tlg001:14.1-14.2">Ἐν ἐκείνῳ τῷ
+            </div>
+            <div n="20" type="chapter">
+               <p>
+                  <quote corresp="urn:cts:greekLit:tlg0031.tlg001:14.1-14.2">Ἐν ἐκείνῳ τῷ
                                 καιρῷ ἤκουσεν Ἡρώδης ὁ τετράρχης <lb n="30"/> Ἰωάννης ὁ βαπτιστής
                             </quote> (14, 1. 2[—11]).</p>
-                        <p>Παρὰ δὲ τῷ Μάρκῳ οὕτως καὶ παρὰ τῷ Λουκᾷ οὕτως. διαφόρους δόξας εἶχον
+               <p>Παρὰ δὲ τῷ Μάρκῳ οὕτως καὶ παρὰ τῷ Λουκᾷ οὕτως. διαφόρους δόξας εἶχον
                             περὶ τῶν πραγμάτων Ἰουδαῖοι, τινὰς μὲν ψευδεῖς, ὁποίας <note type="footnote">6f Marc. 6, 5 — 10 Vgl. Orig. de princ. III, 1, 19
                                 (V, 232, 6) — 15 Gen. 1, 11 — 16f Vgl. I. Kor. 12, 10 — 20ff sap.
                                 sal. 9, 6 — 26 Jer. 9, 23 — 32 Vgl. Harnack TU. 42, 4, 84 A. 1 6
                                 οἷπεν + <add>μόμνον</add> Koe 11 1. περιέχον? Hu 16 ῆ Kl δὲ Μ Η
                                 22—23 ἤ—λογισθήσεται &lt; Μ 24/25 <add>ἀπούσης</add> Hu 27 τοῦ &lt;
                                 Η</note>
-                            <pb n="27"/> ἐφρόνουν οἱ Σαδδουκαῖοι περὶ ἀναστάσεως νεκρῶν ὡς οὐκ
+                  <pb n="27"/> ἐφρόνουν οἱ Σαδδουκαῖοι περὶ ἀναστάσεως νεκρῶν ὡς οὐκ
                             ἐγειρομένων, καὶ περὶ ἀγγέλων ὡς οὐχ ὑπαρχόντων, ἀλλὰ τροπολογουμένων
                             τῶν περὶ αὐτῶν ἀναγεγραμμένων μόνον καὶ μηδὲν ὡς πρὸς τὴν ἱστορίαν
                             ἀληθὲς ἐχόντων· ἑτέρας δὲ [ὡς] ἀληθεῖς, ὡς περὶ ἀναστάσεως νεκρῶν ὅτι
@@ -1225,8 +1225,8 @@
                             νομίσαι, ὅτι οὐ δύο τινὲς γεγόνασιν ὁ Ἰωάννης καὶ ὁ Ἰησοῦς, ἀλλ' εἷς καὶ
                             ὁ αὐτὸς ὤν Ἰωάννης, ἀναστὰς, μετὰ τὸ ἀποκεφαλισθῆναι ἐκ τῶν νεκρῶν,
                             ἐκλήθη Ἰησοῦς;</p>
-                        <lb n="25"/>
-                        <p>Λέγοι δ' ἄν τις τὴν τῆς μετενσωματώσεως ψευδοδοξίαν γεγονέναι ἐν τῷ Ἡρώδῃ
+               <lb n="25"/>
+               <p>Λέγοι δ' ἄν τις τὴν τῆς μετενσωματώσεως ψευδοδοξίαν γεγονέναι ἐν τῷ Ἡρώδῃ
                             καί τισι τῶν ἀπὶ τοῦ λαοῦ, ἀφ' ἧς ᾤοντο τόν ποτε Ἰωάννην ἐν γενέσει
                             γενέσθαι καὶ ἐκ νεκρῶν ἐληλυθέναι εἰς τὸν βίον ὡς Ἰησοῦν. ἀλλ' οὐδὲ
                             ταύτην τὴν ψευδοδοξίαν πιθανὴν ἐᾷ νομισθῆναι ὁ μεταξὺ χρόνος τῆς
@@ -1239,7 +1239,7 @@
                                 S. 26, 33 8 αὐτὸς] ὁ αὐτὸς υ 9 αὐτῶν Hu αὐτοῦ Μ Η 11 παντὶ] +
                                     <add>τῷ</add> ? Kl 20 ναῷ Μ Η c. r. λαῷ Η a V | δὴ &lt; Μ 22 ὁ
                                 30 Hc &lt; M Ηα 23 ἐκ] ἀπὸ Μ 29 πλεῖων Η</note>
-                            <pb n="28"/> δυνάμεις ἐν τῷ Ἰωάννῃ μετέστησαν ἐπὶ τὸν Ἰησοῦν, ἀφ' ὧν ὁ
+                  <pb n="28"/> δυνάμεις ἐν τῷ Ἰωάννῃ μετέστησαν ἐπὶ τὸν Ἰησοῦν, ἀφ' ὧν ὁ
                             Ἰωάννης βαπτιστὴς εἶναι πεπίστευτο ἐν τῷ λαῷ. καὶ χρήσαιτό τις
                             ἐπιχειρήματι τοιούτῳ· ὥσπερ διὰ τὸ πνεῦμα καὶ τὴν δύναμιν Ἠλίου καὶ οὐ
                             διὰ τὴν ψυχὴν αὐτοῦ περὶ Ἰωάννου λέγεται· »αὐτός ἐστιν Ἠλίας ὁ μέλλων
@@ -1265,10 +1265,9 @@
                             τρόπον τῆς ἀναιρέσεως τοῦ βαπτιστοῦ, διὰ τοῦτο νῦν καὶ τοῦτο ἀνέγραψεν ὁ
                             Ματθαῖος, καὶ ὁ Μᾶρκος δὲ αὐτῷ παραπλησίως· ὁ δὲ Λουκᾶς τὰ πολλὰ τῆς
                             παρὰ τούτοις παρεσιώπησεν <lb n="25"/> ἱστορίας.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="21">
-                        <p>Ἔχει δὲ οὕτως ἡ τοῦ Ματθαίου λέξις· ὁ γὰρ Ἡρώδης κρατήσας τὸν Ἰωάννην,
+            </div>
+            <div n="21" type="chapter">
+               <p>Ἔχει δὲ οὕτως ἡ τοῦ Ματθαίου λέξις· ὁ γὰρ Ἡρώδης κρατήσας τὸν Ἰωάννην,
                             ἔδησεν αὐτὸν ἐν τῇ φυλακῇ, εἰς ταῦτ' οὖν δοκεῖ μοι ὅτι, ὥσπερ »ὁ νόμος
                             καὶ οἱ προφῆται μέχρι Ἰωάννυ«, μεθ' ὅν ἔληξεν ἡ προφητικὴ ἀπὸ Ἰουδαίων
                             χάρις, οὕτως ἡ τῶν βασιλευσαντων ἐν τῷ <lb n="30"/> λαῷ ἐξουσία (μέχρι
@@ -1282,7 +1281,7 @@
                                 Hautsch TU. 34, 2a, 43 1 ὁ &lt; Η 2 τις <add>ἄν</add> Diehl 12
                                     <add>ὅς</add> Diehl Koe 14 τῷ Kl τὸ ΜΗ 18 <add>Ἰωάννης</add> Koe
                                 20 εἶπεν Η 27 ταῦτα Μ</note>
-                            <pb n="29"/> Πιλᾶτος τὸν Ἰησοῦν τὴν ἐπὶ θανάτῳ, ἁλλ'ἤρκεσεν ἂν εἰς τοῦτο
+                  <pb n="29"/> Πιλᾶτος τὸν Ἰησοῦν τὴν ἐπὶ θανάτῳ, ἁλλ'ἤρκεσεν ἂν εἰς τοῦτο
                             Ἡρώδης μετὰ τῆς ἀρχιερέων καὶ πρεσβυτέρων <milestone unit="altnumbering" n="470"/> τοῦ λαοῦ εἰς τοῦτο βουλῆς. καὶ τότε (οἶμαι) πεπλήρωται τὸ
                             ὑπὸ τοῦ Ἰακὼβ πρὸς Ἰούδαν τοῦτον εἰρημένον τὸν τρόπον. »οὐκ ἐκλείψει
                             ἄρχων ἐξ Ἰούδα, οὐδὲ ἠγούμενος ἐξἸσραήλ, <lb n="5"/> ἔως ἂν ἔλθῃ ᾦ
@@ -1305,10 +1304,9 @@
                             μηδαμῆ σαφῶς εὑρίσκοντες τεθνηκέναι τὸν Φίλιππον, μεῖζον ἔτι τὸ
                             παρανόμημα <lb n="20"/> τῷ Ἡρώδῃ λογιζόμεθα γεγονέναι, ὅτι καὶ ζῶντος
                             ἀπέστησε τοῦ ἀδελφοῦ τὴν γυναῖκα.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="22">
-                        <p>Διόπερ προφητικῇ παρρησίᾳ κεκοσμημένος ὁ Ἰωάννης καὶ μὴ καταπληττόμενος
+            </div>
+            <div n="22" type="chapter">
+               <p>Διόπερ προφητικῇ παρρησίᾳ κεκοσμημένος ὁ Ἰωάννης καὶ μὴ καταπληττόμενος
                             τὸ βασιλικὸν ἀξίωμα τοῦ Ἡρώδου, μηδὲ διὰ τὸ δέος τοῦ θανάτου παρασιωπῶν
                             περὶ τοῦ τηλικούτου ἁμαρτήματος, ἔλεγε τῷ <lb n="25"/> Ἡρώδῃθείου
                             πληρωθεὶς φρονήματος. οὐκ ἔξεστί σοι ἔχειν αὐτήν. οὐ γὰρ »ἔξεστί σοι
@@ -1325,7 +1323,7 @@
                                 d. h. Josephus? Vgl. Harnack TU. 42, 4, 52; dazu slav. Josephus -
                                 18ff Vgl. Deut. 25, 5 - 26 Marc. 6, 18 - Vgl. II Peter. 1, 19 5 ᾦ]ὅ
                                 Η 26 <add>καὶ</add> Κl mit V 28 kαὶ &lt;Η 30 διδασκαλεία Η</note>
-                            <pb n="30"/> Ἰουδαίων μὴ ἄλλο τι τυγχάνειν ἢ τῆς Ἡρωδιάδος θυγατρός.
+                  <pb n="30"/> Ἰουδαίων μὴ ἄλλο τι τυγχάνειν ἢ τῆς Ἡρωδιάδος θυγατρός.
                             ἀλλ'ἡ Ἡρωδιάδος ὄρχησις ἐναντία ἦν ὁρχήσει ἁρίᾳ, ἥν οἱ μὴ ὁρχησάμενοι
                             ὁνειδισθήσονται ἀκούοντες. »ηὑλήσαμεν ὑμῖν, καὶ οὐκ ὠρχήσασθε«. καὶ ἐν
                             γενεθλίοις δὲ παρανόμου βασιλεύοντος αὐτῶν λόγου ὀρχοῦνται, ὡς ἀρέσκειν
@@ -1335,14 +1333,14 @@
                             ἡμεῖς δὲ ἀπ' ἐκείνου ταύτην εὑρόντες ἀφορμὴν ἐπ'οὐδεμοιᾶς γραφῆς εὔρομεν
                             ὑπὸ δικαίου γενέθλιον ἀγομένην. ἄδικος γὰρμᾶλλον ἐκείνου τοῦ Φαραὼ ὁ
                             Ἡρώδης. <milestone unit="altnumbering" n="472"/>
-                            <lb n="10"/> καὶ γὰρ ὑπ'ἐκείνου μὲν ἐν γενεθλίῳ ἀρχισιτοποιός
+                  <lb n="10"/> καὶ γὰρ ὑπ'ἐκείνου μὲν ἐν γενεθλίῳ ἀρχισιτοποιός
                             ἀναιρεῖται, ὑπὸ δὲ τούτου Ἰωάννης, οὖ »μείζων ἐν γεννητοῖς γυναικῶν
                             οὐδεὶε ἐγήγερται«, περὶ οὗ ὁ σωτὴρ λέγει. »ἀλλὰ τί ἐξεληλύθατε;προφήτην
                             ἱδεῖν;ναὶ λέγω ὑμῖν, καὶ περισσότερον προφήτου«. ἀλλὰ εὐχαριστητέον τῷ
                             θεῷ, ὅτι, εἰ καὶ ἡ προφητικὴ ἀπὸ τοῦ λαοῦ ἦρται χάρις, ἡ πάσης ἐκείνης
                             μείζων ἐξεχύθη εἰς <lb n="15"/> τὰ ἔθνη διὰ τοῦ σωτῆρος ἡμῶν Ἰησοῦ, »ὃς
                             ἐγένετο ἐν νεκροῖς ἐλεύθερος«.</p>
-                        <p>»εἰ γὰρ καὶ ἐσταυρώθη ἐξ ἀσθενείας, ἀλλὰ ζῇ ἐκ δυνάμεως θεοῦ«. Ἔτι δὲ ὅρα
+               <p>»εἰ γὰρ καὶ ἐσταυρώθη ἐξ ἀσθενείας, ἀλλὰ ζῇ ἐκ δυνάμεως θεοῦ«. Ἔτι δὲ ὅρα
                             τὸν λαόν, παρ'ᾦ καθαρὰ μὲν καὶ ἀκάθαρτα ἐξετάζεται βρώματα,
                             καταφρονεῖται δὲ προφητεία ἐπὶ πίνακι ἀντὶ ὅφου προσαγομένη. τὴν δὲ
                             κεφαλὴν τῆς προφητείας Ἰουδαῖοι οὐκ ἔχουσι, τὸ κεφάλαιον <lb n="20"/>
@@ -1368,7 +1366,7 @@
                                 λόγον ΜΗ 18f προσαγομένη]nuch Π 22 <add>καὶ—εὐορκίας</add> Κl nach Π
                                 163, 19f (oὐ γὰρ ταὺτὸν ἔγκλημα ἐκ προπετείας ὄρκων καὶ ἀναίρεσις
                                 προφητικὴ δἰ εὐορκίας) 24 <add>διὰ</add>kl</note>
-                            <pb n="31"/> μενοι. χρήσῃ δέ ποτε χαριέντως τῷ ῥητῷ πρὸς τοὺς προπετῶς
+                  <pb n="31"/> μενοι. χρήσῃ δέ ποτε χαριέντως τῷ ῥητῷ πρὸς τοὺς προπετῶς
                             ὁμνύοντας καὶ θέλοντας ἐμεδοῦν ὄρκους ἐπὶ παρανομίᾳ παραληφθέντας, λέγων
                             ὅτι οὑ πᾶσα τήρησις ὅρκων ἐστὶ καθήκουσα, ὡς οὑδὲ ἡ τοῦ Ἡρώδου. ἔτι δὲ
                             πρόσχες ὅτι οὐ μετὰ παρρησίας, ἀλλὰ κρύφα καὶ ἐν φυλακῇ φονεύει τὸν <lb n="5"/> Ἰωάννην ὁ Ἡρώδης. καὶ γὰρ οὐ μετὰ παρρησίας ἀρνεῖται ὁ νῦν
@@ -1381,11 +1379,11 @@
                             ἐπεὶ μὴ νοοῦσιν αὐτόν. ἀλλ'ἠμεῖς ὁλόκληρον ἔχομεν τὸν Ἰησοῦν,
                             πληρωθείσης τῆς περὶ αὐτοῦ λεγούσης προφητείας. »ὁστοῦν <add>αὐτοῦ</add>
                             οὐ συντριβήσεται«. </p>
-                        <milestone unit="altnumbering"/>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="23">
-                        <p><quote corresp="urn:cts:greekLit:tlg0031.tlg001:14.12-14.13">Οἰ μαθηταὶ
+               <milestone unit="altnumbering"/>
+            </div>
+            <div n="23" type="chapter">
+               <p>
+                  <quote corresp="urn:cts:greekLit:tlg0031.tlg001:14.12-14.13">Οἰ μαθηταὶ
                                 δὲ ἐλθόντες τοῦ Ἰωάννου θάττουσιν αὐτοῦ τὸ <lb n="15"/> λείψανον,
                                 καὶἐλθόντες ἀπήγγειλαν τῷ Ἰησοῦ. ὁδὲ ἀνεχώρησεν εἰς ἔρημον τόπον, τὰ
                                 ἔθνη. καὶ μετὰ τὴν τῶν προφητῶν ἀνάρεσιν ὄχλοι αὐτῷ ἡκολούθησαν ἁπὸ
@@ -1394,7 +1392,7 @@
                                 εὐλογηθεῖσι καὶ πλεονάσαιν <lb n="20"/> ἐξ ὀλίγων ἄρτων τοὺς
                                 ἀκολουθήσαντας αὐτῷ. ἀκούσας δὲ ὁ Ἰησοῦς ἀνεχώρησεν ἐκεῖθεν ἐν πλοίῳ
                                 εἰς ἔρημον τόπον κατ'ἰδίαν </quote>(14,12.13[-14]).</p>
-                        <p>Τὸ μὲν ῥητὸν διδάσκει ἡμᾶς ὅση δύναμις ἀπὸ τῶν διωκόντων καὶ τῆς
+               <p>Τὸ μὲν ῥητὸν διδάσκει ἡμᾶς ὅση δύναμις ἀπὸ τῶν διωκόντων καὶ τῆς
                             προσδοκίας τοῦ διὰ τὸν λόγον ἐπιβουλεύεσθαι ἀναχωρεῖν. τοῦτο μὲνλ γὰρ
                                 <lb n="25"/> κατὰ τὸ εὐλόγιστον γένοιτ'ἄν, τὸ δὲ δυνάμενονλ ἔξω
                             εἶναι τῶν περιστατικῶν ὁμόσε χωρεῖν σὐυοῖς προπετές ἐστι καὶ θρασύ. τίς
@@ -1414,7 +1412,7 @@
                                 auch C luc Nr. 19 τῶν λόγων Η 25 γένοιτο Μ 27 τοῦ Ἰησοῦ οὐ μόνον ἐπὶ
                                 τοῖς κατὰ τὸν Ἰωάννην Κl mit C luc Nr. 19 οὑ μ. ἐ. τ. κ. τ. Ἰ. τοῦ
                                 Ἰησοῦ Μ Η</note>
-                            <pb n="32"/> δὲ ἐκκλίνειν, τοῦτο μὴ ποιεῖν τολμηρόν. ἐπεὶ δὲ μετὰ τὸ
+                  <pb n="32"/> δὲ ἐκκλίνειν, τοῦτο μὴ ποιεῖν τολμηρόν. ἐπεὶ δὲ μετὰ τὸ
                             ἡρτὸν καὶ κατὰ ἀναγωγὴν τὸν τόπον ἐξεταστέον, λεκτέον ὅτι
                             ἐπιβουλευθείσης παρὰ Ἰουδαίοις τῆς προφητείας καὶ ἀναιρεθείσης, διὰ τὸ
                             τιμᾶσθαι παρ'αὐτοῖς τὰ γενέσεως πράγματα καὶ κατὰ ἀποδοχὴν κενῶν
@@ -1426,9 +1424,9 @@
                             λόγος, αἰρομένης τῆς βασιλείας ἀπ'΄ ἐκείνων καὶ διδομένης <lb n="10"/>
                             »ἔθενι ποιοῦντι τοὺς καρποὺς αὐτῆς«, γἐνηται ἐν τοῖς ἔθνεσι, καὶ δἰ
                             αὐτὸν »πολλὰ«γένηται »ἢ τῆς ἐχούσης τὸν ἄνδρα«, τὸν νόμον.</p>
-                        <p>Ὅτε μὲν οὖν πάλαι ὁ λόγος παρὰ Ἰουδαίοις ἦν, οὐχ οὕτως ἦν παρ' αὐτοῖς, ὡς
+               <p>Ὅτε μὲν οὖν πάλαι ὁ λόγος παρὰ Ἰουδαίοις ἦν, οὐχ οὕτως ἦν παρ' αὐτοῖς, ὡς
                             παρὰ τοῖς ἔθνεσι. διὸ λέ/λεκται ἐν πλοίῳ, τουτέστι τῷ σώματι, <lb n="474"/>
-                            <lb n="15"/> εἰς τὸν ἔρημον τόπον κατ'ἰδίαν΄γεγονέναι, ἀκούσαντα περὶ
+                  <lb n="15"/> εἰς τὸν ἔρημον τόπον κατ'ἰδίαν΄γεγονέναι, ἀκούσαντα περὶ
                             τῆς ἀναιρέσεως τοῦ προφήτου. κατ'ἰδίαν δέ, γενόμενος εἰς τὴν ἔρημον, ἦν
                             ἐν αὐτῇ, τῷ ἰδιάζοντα εἶναι τὸν λόγον καὶ τὴν διδασκαλίαν αὐτοῦ παρὰ τὰ
                             εἰθισμένα ἐν τοῖς ἔθενσι γίνεσθαι καὶ νενομισμένα. και οἱ ἐν τοῖς
@@ -1455,16 +1453,15 @@
                                 13 λόγος]νόμος Μ 26 <add>ἔξω</add> Κl, vgl. Orig. in Prov. 1,6
                                 (Lomm. 13,221): oὐ μόνον δὲ ἐξέρχεται τῆς οἰκίας αὐτῶν ὁ Ἰησοῦς, ἵνα
                                 τοῖω γενόμενος λαλήσῃ τὰς παραβολὰς κτλ.</note>
-                            <pb n="33"/> ὁ ἔξω ὄχλος, εἰς ὃν ἐξέρχεται ὁ τοῦθεοῦ λόγος, καὶ ἐκχάς τὸ
+                  <pb n="33"/> ὁ ἔξω ὄχλος, εἰς ὃν ἐξέρχεται ὁ τοῦθεοῦ λόγος, καὶ ἐκχάς τὸ
                             φῶς τῆς ἐπισκοπῆς αὐτοῦ εἰς αὐτὸν εἶδεν αὐτόν, καὶ ἰδὼν τοῦ ἐλεεῖσθαι
                             μᾶλλον αὐτοὺς ἀξίους διὰ τὸ ἐν τοιοῖσδέ τισι εἶναι, ὡς φιλάνθρωπος
                             πέπονθεν ὁ ἀπαθὴς τῷ σπλαγχνισθναι, καὶ οὐ μόνον ἐσπλαγχνίσθη ἀλλὰ καὶ
                                 <lb n="5"/> τοὺς ἀρρώστους αὐτῶν ἐθεράπευσεν ἔχοντας πικίλα καὶ
                             παντοδαπὰ δαπὰ ἀπὸ τῆς κακίας ἀρρωστήμαμτα.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="24">
-                        <p>Εἰ δὲ θέλεις ἰδεῖν παοιά ἐστι τῆς ψυχῆς ἀρρωστήματα, κατανόει μοι τοὺς
+            </div>
+            <div n="24" type="chapter">
+               <p>Εἰ δὲ θέλεις ἰδεῖν παοιά ἐστι τῆς ψυχῆς ἀρρωστήματα, κατανόει μοι τοὺς
                             φιλαργύρους καὶ τοὺς φιλοδόξους καὶ τοὺς φιλόπαιδας καὶ εἴ τίς ἐστι
                             φιλόγυνος. καὶ τούτους γὰρ ἐν τοῖς ὄχλοις ἱδὼν καὶ σπλαγχνισθεὶς <lb n="10"/> ἐπ'αὐτοῖς ἐθεράπευσεν. οὑ πᾶν δὲ ἁμάρτημα νούτου φρουρὰν
                             εἶναι, ἀλλἀ ὅπερ ἐναπέσκλψεν ὅλ}η τῇ ψυχῇ. οὕτω γὰρ ἔστιν ἰδεῖν τοὺς μὲν
@@ -1494,22 +1491,22 @@
                                 18 δὴ] δὲ Μ 20 συνδέσμου]auch C luc Nr. 20 σύνδεσμον υ Koe 24 ὅλη Η
                                 25 καρδία] χειρὶ Μ 27 γύναια Κl mit C luc Nr. 20 γυναῖκα Μ Η 32
                                 κεναῖς] πολλαῖς Μ 33 μὲν + γὰρ Μ | ταῖς &lt;Μ</note>
-                            <pb n="34"/> »ὃν τρόπον ἐνυπνιάζεται ὁ διψῶν ὡς ὁ πίνων, καὶ ἐξαναστὰς
+                  <pb n="34"/> »ὃν τρόπον ἐνυπνιάζεται ὁ διψῶν ὡς ὁ πίνων, καὶ ἐξαναστὰς
                             ἔτι διψᾷ, ἡ δὲ ψυχὴ αὐτοῦ εἰς κενὸν ἤλπισεν, οὕτως ἔσται ὁ πλοῦτος
                             πάντων τῶν ἐθνῶν ὅσοι ἐπεστράτευσαν ἐν Ἱερουσαλήμ«. εἰ καὶ ἐδόξαμεν οὖν
                             παρεκβεβηκέναι, διηγούμενοι διαφορὰν ἀσθενῶν καὶ ἀρρώωτων καὶ
                             κοιμωμένων, διὰ τὸ τὸν <lb n="5"/> ἀπόστολον ἐν τῇ πρὸς Κορινθίους
                             εἰρηκέναι ἃ ἐξεθέμεθα, τὴν παρέκβασιν πεποιήμεθα βουληθέντες παραστῦσαι
                             τί σημαίνεται νοητὸν ἐκ τοῦ καὶ ἐθεράπευσε τοὺς ἀρρώστους αὐτῶν.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="25">
-                        <p><quote corresp="urn:cts:greekLit:tlg0031.tlg001:14.15">Μετὰ τοῦτό φησιν ὀ
+            </div>
+            <div n="25" type="chapter">
+               <p>
+                  <quote corresp="urn:cts:greekLit:tlg0031.tlg001:14.15">Μετὰ τοῦτό φησιν ὀ
                                 λόγος ὅτι ὀψίας δὲ γενομένης προςῆλθον αὐτῷ οἱ μαθηταὶ αὐτοῦ
                                 λέγοντες· ἔρημός ἐστιν ὁ τόπος <lb n="10"/> καὶ ἠ ὥρα παρῆλθεν ἤδη·
                                 ἀπόλυσον οὖν τοὺς ὄχλους, ἵνα ἀπελθόντες εἰς τὰς κώμας ἀγοράσωσιν
                                 ἑαυτοῖς βρώματα </quote> (14,15[–21]).</p>
-                        <p>Καὶ πρῶτόν γε τήρησον ὅτι μέλλων τοῦς τῆς εὐλογίας ἄρτους διδόναι τοῖς
+               <p>Καὶ πρῶτόν γε τήρησον ὅτι μέλλων τοῦς τῆς εὐλογίας ἄρτους διδόναι τοῖς
                             μαθηταῖς, ἵνα παραθῶσι τοῖς ὄχλοις, »ἐθεράπευσε τοὺς ἀρρώστους«, <lb n="15"/> ἵν’ ὐγιάναντες τῶν τῆς εὐλογίας μεταλάβωσιν ἄρτων· οὐ γὰρ
                             δύνανται οἱ ἔτι ἄρρωστοι χωρῆσαι τοὺς τῆς Ἰησοῦ εὐλογίας ἄρτους. ἀλλὰ
                             καὶ ἐάν τις, δέον ἀκούειν τοῦ »δοκιμαζέτω δὲ ἕκαστος ἑαυτόν, καὶ οὕτως
@@ -1517,14 +1514,16 @@
                             μεταλαμβάνῃ ἄρτου κυρίου καὶ ποτηρίου αὐτοῦ, ἀσθενὴς ἢ ἄρρωστος γίνεται
                             ἢ καὶ <lb n="20"/> ἐκ τοῦ (ἵν´ οὕτως εἴπω) καροῦσθαι ὑπὸ τῆς τοῦ ἄρτου
                             δυνάμεως κοιμώμενος.</p>
-                        <milestone unit="altnumbering" n="476"/>
-                    </div>
-                </div>
-                <div type="textpart" subtype="book" n="11">
-                    <div type="textpart" subtype="chapter" n="1">
-                        <head><add>Ὡριγένους τῶν εἰς τὸ κατὰ Ματθαῖον εὐαγγέλιον ἐξηγητικῶν τόμος
-                                ια΄.</add></head>
-                        <p>Ὀψίας δὲ γενομένης προςῆλθον αὐτῷ οἱ μαθηταὶ αὐτοῦ (τουτέστιν ἐπὶ
+               <milestone unit="altnumbering" n="476"/>
+            </div>
+         </div>
+         <div n="11" type="book">
+            <div n="1" type="chapter">
+               <head>
+                  <add>Ὡριγένους τῶν εἰς τὸ κατὰ Ματθαῖον εὐαγγέλιον ἐξηγητικῶν τόμος
+                                ια΄.</add>
+               </head>
+               <p>Ὀψίας δὲ γενομένης προςῆλθον αὐτῷ οἱ μαθηταὶ αὐτοῦ (τουτέστιν ἐπὶ
                             συντελείᾳ τοῦ αἰῶνος, καθ’ ὅν ἔστιν εὐκαίρως εἰπεῖν τὸ »¬’εσχάτη ὥρα
                             ἐστίν ὁ λόγος φασὶν αὐτῷ ὅτι ἔρημός ἐστιν ὁ τόπος, ὀρῶντες <lb n="25"/>
                             τὴν τοῦ θείου [καὶ]νόμου καὶ λόγου ἐρημίαν ἐν τοῖς πολλοῖς. λέγουσι δ´
@@ -1536,7 +1535,7 @@
                                 Ὡριγένους—ια΄ ρ &lt;ΜΗ 25 θείου Kl mit Cluc Nr. 20 θεοῦ καὶ ΜΗ 26
                                     <add>ἤδη</add> Kl mit Cluc Nr. 20 27 άναφέροντες τὸν λόγον]? Κl,
                                 Lücke? Koe</note>
-                            <pb n="35"/> τὸν Ἰωάννην ἀποκεκεφαλίσθαι καὶ τὸν νόμον καὶ τοὺς
+                  <pb n="35"/> τὸν Ἰωάννην ἀποκεκεφαλίσθαι καὶ τὸν νόμον καὶ τοὺς
                             προφήτας, οἵ ἧσαν μέχρι Ἰωάννου, πεπαῦσθαι. παρῆλθεν οὖν (φασὶν) ἡ ὥρα,
                             καὶ οὐ πάρεστι τροφὴ τῷ τὸν καιρὸν αὐτῆς μηκέτι ἐνεστηκέναι, ἵν’ οἱ ἐν
                             τῇ ἐρήμῳ ἀκολουθήσαντές σοι νόμῳ καὶ προφήταις δουλεύσωσι. καὶ ἔτι φασὶν
@@ -1558,10 +1557,9 @@
                             ἐπιστήσαντες, κατενοήσατε ἄν, ὅτι πολλῷ πλεῖον ἐγὼ δύναμαι αὐτοὺς
                             θρέψαι, καὶ οὐκ εἰρήκειτε ἄν· ἀπόλυσον τοὺς ὄχλους, ἵνα ἀπελθόντες
                             ἀγοράσωσιν ἑαυτοῖς βρώματα.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="2">
-                        <p>Ὁ μὲν οὖν Ἰησοῦς, δι’ ἣν ἔδωκε δύναμιν καὶ ἑτέρων θρεπτικὴν τοῖς
+            </div>
+            <div n="2" type="chapter">
+               <p>Ὁ μὲν οὖν Ἰησοῦς, δι’ ἣν ἔδωκε δύναμιν καὶ ἑτέρων θρεπτικὴν τοῖς
                             μαθηταῖς, εἶπε· δότε αὐτοῖς ὑμεῖς φαγεῖν. οἱ δὲ μὴ ἀρνούμενοι <lb n="25"/> μὲν τὸ δύνασθαι διδόναι ἄρτους, πολλῷ δὲ ὀλιγωτέρους αὑτοὺς
                             νομίζοντες εἶναι καὶ οὐχ ἰκανοὺς τρέφειν τοὺς ἀκολουθήσαντας τῷ Ἰησοῦ,
                             οὐδὲ θεωροῦντες ὅτι ἕκαστον ἄρτον ἢ λόγον ὁ Ἰησοῦς λαβὼν εἰς ὅσον
@@ -1575,7 +1573,7 @@
                                 20 6 κομῶν Η 7 ταῦτα] καὶ ταῦτα Cluc Nr. 20 12 συστήματι Μ 13 ὅτε Kl
                                 ὅτι ΜΗ 17 ὑμᾶς ἱκανοὺς] ἡμᾶς χρείαν ἔχουσι Μa ὑμᾶς Χ. ἔ. Mc 20
                                 ἐπιστάντες M 27 ἢ Κl Koe 28 βούλεται Η Cluc Nr. 20 δύναται Μ</note>
-                            <pb n="36"/> προφορικὸν καὶ τὸν ἐνδιάθετον λόγον, ὠσπερεὶ ὄψον
+                  <pb n="36"/> προφορικὸν καὶ τὸν ἐνδιάθετον λόγον, ὠσπερεὶ ὄψον
                             τυγάνοντας τῶν ἐν ταῖς γραφαῖς αἰσθητῶν κειμένων, ἢ τάχα καὶ τὸν
                             φθάσαντα ἐπ᾿ αὐτοὺς περὶ πατρὸς καὶ υἱοῦ λόγον. διὸ καὶ αὐτὸς »ἔφαγεν
                             ἰχθύος ὀπτοῦ« ἀναστὰς »μέρος λαβὼν« ἀπὸ τῶν μαθητῶν, καὶ ἀποδεξάμενος ἣν
@@ -1584,8 +1582,8 @@
                             ἐπιβαλεῖν δεδυνήμεθα λόγῳ· εἰκὸς δὲ ὅτι οἱ μᾶλλον ἡμῶν συναγαγεῖν
                             δυνάμενοι τοὺς πέντε ἄρτους καὶ τοὺς δύο ἰχθεύας παρ᾿ ἑαυτοῖς πλείονα
                             καὶ κρείττονα δύναιντ᾿ ἂν ἀποδοῦναι περὶ τούτων νοῦν.</p>
-                        <lb n="10"/>
-                        <p> Παρατηρητέον μέντοι, ὅτι τοὺς πέντε ἄρτους καὶ τοὺς δύο ἰχθύας οἱ
+               <lb n="10"/>
+               <p> Παρατηρητέον μέντοι, ὅτι τοὺς πέντε ἄρτους καὶ τοὺς δύο ἰχθύας οἱ
                             μαθηταὶ λέγουσιν ἔχειν παρὰ τῷ Ματθαίῳ καὶ τῷ Μάρκῳ καὶ τῷ Λουκᾷ, οὔθ᾿
                             ὅτι πύρινοι οὔθ᾿ ὅτι κρίθινοι ἦσαν ὑποσημειωςάμενοι· ὁ δὲ Ἰωάννης μόνος
                             κριθίνους εἶπεν εἶναι τοὺς ἄρτους, διὸ τάχα οὐδὲ οἱ μαθηταὶ ὀμολογοῦσιν
@@ -1609,12 +1607,12 @@
                             ἦραν τὸ περισσεῦον τῶν κλασμάτων οἱ δύδεκα (οἶμαι) δώδεκα <note type="footnote">1f Vgl. Harnack TU. 42, 4, 93–3 Vgl. Luc. 24, 42 –
                                 4f Vgl. Luc. 24, 18ff ? 49ff ? – 15 Joh. 6, 9 – 24 Vgl. Marc. 6, 41
                                 – 30 Psal. 80, 7</note>
-                            <note type="footnote">2 αἰσθητῶς C luc Nr. 20 3 ἰχθύος ὀπτοῦ ἔφαγεν Μ 5
+                  <note type="footnote">2 αἰσθητῶς C luc Nr. 20 3 ἰχθύος ὀπτοῦ ἔφαγεν Μ 5
                                 ἡμεῖς ΜΗ c.r. ὑμεῖς Η a 6 ἐπιβαλεῖν ρ ἐπιβάλλειν ΜΗ | εἰκῶς Η a 14
                                 &lt;ἔχειν&lt; Kl 15 ὃς] ὃ υ 17 τῷ Kl τοῦ ΜΗ 23 τρίτον ΜΗ c τρίτων Η
                                 a 27 ἃ] ὅσα ? Diehl | ἧν + &lt;ἀναλῶσαι&lt; ? Koe 30 oὖν H c s. l.
                                 &lt;MH a</note>
-                            <pb n="37"/> κοφίνους οὐχ ἡμιτελεῖς, ἀλλὰ πλήρεις. Λ·αί εἰσιν οἶμαι)
+                  <pb n="37"/> κοφίνους οὐχ ἡμιτελεῖς, ἀλλὰ πλήρεις. Λ·αί εἰσιν οἶμαι)
                             μέχρι τοῦ δεῦρο καὶ ἕως τῆς συντελείας τοῦ αἰῶνος οἱ πλήρεις κόφινοι
                             δώδεκα τῶν κλασμάτων ἄρτου ζῶντος, οὕς μὴ δύνανται οἱ ὄχλοι ἐσθίειν,
                             παρὰ τοῖς τῶν ὄχλων κρείττοσι μαθηταῖς τοῦ Ἰησοῦ. ἦσαν δέ οἱ ἐσθίοντες
@@ -1626,10 +1624,9 @@
                             καὶ <lb n="10"/> ἐν αἰσθηταῖς (οἶμαι) τροφαῖς διαφοραί, ὠς τινὰς μέ·ν
                             αὐτῶν εἶναι <add>τῶν</add> καταργησάντων »τὰ τοῦ νηπίου«, τινὰς δὲ τῶν
                             νηΠίων ἔτι καὶ σαρκίνων »ἐν Χριστῷ«.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="3">
-                        <p>Καὶ ταῦτα δέ ἡμῖν λέλεκται διὰ τὸ οἱ ἐσθίοντες ἦσαν ἄνδρες πεντακισχίλιοι
+            </div>
+            <div n="3" type="chapter">
+               <p>Καὶ ταῦτα δέ ἡμῖν λέλεκται διὰ τὸ οἱ ἐσθίοντες ἦσαν ἄνδρες πεντακισχίλιοι
                             χωρὶς παιδίων καὶ γυναικῶν· ὅπερ ἀμφίβολόν <lb n="15"/> ἐστιν· ἢ γὰρ οἱ
                             φαγόντες ἦσαν ἄνδρες πεντακισχίλιοι καὶ οὐδεὶς ἦν ἐν τοῖς ἐσθίουσι
                             παιδίον ἢ γυνή, ἢ ὅτι μόνον ἄνδρες πεντακισχίλιοι ἦσαν μὴ ἀριθμουμένων
@@ -1650,14 +1647,14 @@
                                 minor, mimero indigni sunt. unde et in Numerorum lihro . . . servi
                                 et mulieres et parvoli et vulgus ignohile ahsque mimero
                                 praetermittitur — 22 Vgl. Niim. 1, 18 — 24 I. Kor. 3, 1</note>
-                            <note type="footnote">5 τῶν1 + 〈πορόντων〉 Diehl Koe 6 αἰσθητῶν]
+                  <note type="footnote">5 τῶν1 + 〈πορόντων〉 Diehl Koe 6 αἰσθητῶν]
                                 οἰσθήσεων C luc Nr. 20 6f φθάσαντες—αἰσθητῶν] so Μ, vgl. auch C luc
                                 Nr. 20 &lt; H 9 ἀλλ᾿ Μ C luc Nr. 20 ἀλλὰ H 10 Ε; Kl mit C luc Nr. 20
                                 11 τῶν νηπίων ἔτι KI mit C luc Nr. 20 ἔτι τῶν νηπίων MH 13 οἱ &lt;H
                                 16 ἢ 〈λεκτέον〉 ὅτι ? Koe 20 εἴποι δ’ ἄν τις] εἰ δὲ πάντες ἐκ τῶν
                                 ἄρτων ἔφαγον, εἴποις ἄν C luc Nr. 20 21 1. ἀριθμοῦ? Kl, vgl. Ζ. 23
                                 23 Ἰσραηλίταις M C luc Nr. 20 ἰσραηλίτες H</note>
-                            <pb n="38"/> ἠδυνήθην ὑμῖν λαλῆσαι ὡς πνευματικοῖς ἀλλ᾿ ὡς σαρκίνοις, ὡς
+                  <pb n="38"/> ἠδυνήθην ὑμῖν λαλῆσαι ὡς πνευματικοῖς ἀλλ᾿ ὡς σαρκίνοις, ὡς
                             νηπίοις ἐν Χριστῷ«, καὶ τἀς γυναῖκας κατὰ τὸ »βούλομαι δέ τοὺς πάντας
                             ὑμᾶς παρθένον ἁγνὴν παραστῆσαι τῷ Χριστῷ«, τοὺς δὲ ἄνδρας κατὰ τὸ »ὅτε
                             γέγονα ἀνήρ, κατήργηκα τὰ τοῦ νηπίου«. μὴ παρέλθωμεν <add>δὲ</add>
@@ -1671,8 +1668,8 @@
                             σὰρξ χόρτος«), τοτέστιν ποιῆσαι τὴν σάρκα καὶ ὑποτάξαι »τὸ φρόνημα τῆς
                             σαρκός«, ἶν’ οὕτω τις δυνηθῇ ὧν εὐλογεῖ ἄρτων <add>ὁ</add> Ἰησοῦς
                             μεταλαβεῖν.</p>
-                        <lb n="15"/>
-                        <p>Εἶτα ἐπεὶ τάγματα διάφορά ἐστι τῶν δεομένων τῆς ἀπὸ Ἰησοῦ τροφῆς, μὴ
+               <lb n="15"/>
+               <p>Εἶτα ἐπεὶ τάγματα διάφορά ἐστι τῶν δεομένων τῆς ἀπὸ Ἰησοῦ τροφῆς, μὴ
                             πόντων τοῖς ἴσοις λόγοις τρεφομένων, διὰ τοῦτο οἶμαι τὸν μὲν Μᾶρκον
                             πεποιηκέναι· » καὶ ἐπέταξεν αὐτοῖς πᾶσιν ἀνακλιθῆναι συμπόσια συμπόσια
                             ἐπὶ τῷ χλωρῷ χόρτῳ. καὶ ἀνέπεσον πρασιαὶ πρασιαὶ ἀνὰ ἑκατὸν κοὶ
@@ -1695,21 +1692,20 @@
                                 παντελὴς εἰς ἐλευθερίαν ἄφεσις (Lev. 25, 10), ἧς σύμβολον ὁ
                                 πεντηκοστὸς λόγος ἱερός — 24 Vgl. Lev. 23, 15; Deut. 16, 9 — 26
                                 Matth. 19, 28</note>
-                            <note type="footnote">1 ἡμῖν Μ 4 <add>δὲ</add> Diehl 9 σημαίνει Benz
+                  <note type="footnote">1 ἡμῖν Μ 4 <add>δὲ</add> Diehl 9 σημαίνει Benz
                                 Diehl Koe σημαίνοι Μ 14 Ε; ἰς Kl mit V C luc Nr. 20 17 1. πάντας ?
                                 Kl, vgl. S. 68, 4 21 τῶν ἑκατῶν H | 〈ὅντος〉 Koe 24 πεντίκοντα ἐτίας
                                 H | πεντικοστὴν H 25 τοῖς + <add>ιβ΄</add> ? ΚΙ</note>
-                            <pb n="39"/> Ἰούδα καὶ οὕτω καθεξῆς, οὕτως εἴη ἄν καὶ κόφινος τροφῆς
+                  <pb n="39"/> Ἰούδα καὶ οὕτω καθεξῆς, οὕτως εἴη ἄν καὶ κόφινος τροφῆς
                             Ῥουβεὶμ καὶ ἄλλος Συμεὼν καὶ ἄλλος Λευΐ. οὐ κατὰ τὸν πορόντα δέ ἐστι
                             λόγον νῦν τοσοῦτον ἐκβῆναι τοῦ προκειμένου, ὡς συναγαγεῖν τὰ περὶ τῶν
                             δώδεκα φυλῶν κοὶ ἰδίᾳ τὰ περὶ ἑκάστης αὐτῶν καὶ εἰπεῖν, τίς ἑκάστη τοῦ
                             Ἰσραὴλ <lb n="5"/> φυλή.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="4">
-                        <p>Καὶ εὐθέο)ς ἠνάγκασε τοὺς μαθητὰς ἐμβῆναι εἰς πλοῖον καὶ προάγειν αὐτὸν
+            </div>
+            <div n="4" type="chapter">
+               <p>Καὶ εὐθέο)ς ἠνάγκασε τοὺς μαθητὰς ἐμβῆναι εἰς πλοῖον καὶ προάγειν αὐτὸν
                             εἰς τὸ πέραν, ἔως οὗ ἀπολύσει τοὺς ὄχλους (14, 22 —36]).</p>
-                        <p>Παρατηρητέον ποσάκις εἴρηται κατὰ τοὺς αὐτοὺς τόπους τὸ ὄνομα <lb n="10"/> οἱ ὄχλοι καὶ ἄλλο ὄνομα οἱ μαθηταί, ἵν᾿ ἐκ τῆς παρατηρήσεως καὶ τῆς
+               <p>Παρατηρητέον ποσάκις εἴρηται κατὰ τοὺς αὐτοὺς τόπους τὸ ὄνομα <lb n="10"/> οἱ ὄχλοι καὶ ἄλλο ὄνομα οἱ μαθηταί, ἵν᾿ ἐκ τῆς παρατηρήσεως καὶ τῆς
                             περὶ τούτου συναγωγῆς θεωρηθῇ, ὅτι τὸ προκείμενον τοῖς εὐαγγελισταῖς ἦν
                             διὰ τῆς εὐαγγελικῆς ἱστορίας παραστῆσαι διαφορὰς τῶν προσερχομένων τῷ
                             Ἰησοῦ· ὦν οἱ μέν εἰσιν ὄχλοι καὶ οὐ χρηματίζουσι μαθηταί, ἕτεροι δὲ οἱ
@@ -1735,17 +1731,17 @@
                             ποιήσῃ τὸ θέλημα τοῦ πατρός <add>μου</add> τοῦ ἐν τοῖς οὐρανοῖς, αὐτός
                             μου <note type="footnote">18 Matth. 5, —3 — 22 Matth. 12, 15 — 24 Vgl.
                                 Luc. 5, 31 — 26 ff Matth. 12, 46—50</note>
-                            <note type="footnote">2 Λευῒ] 1. Ἰούδα ? KI, vgl. Ζ. 1 13 εἰσιν + οἱ Μ |
+                  <note type="footnote">2 Λευῒ] 1. Ἰούδα ? KI, vgl. Ζ. 1 13 εἰσιν + οἱ Μ |
                                 1. χρηματίζοντες Koe 23 τῶν &lt;H 24 1. ὑγιαίνων ? ΚΙ 25 οὐχ’ ᾖ]
                                 οὐχὶ υ 28 ἐδηλώδη] 1. 〈ὑπό τινος〉 ἐδηλώθη ? Koe ἐδήλου τις ? KI | ὅν
                                 I. ὁ ὅ? KI 30 — 33 ἐν οὐρa- νοῖς — θέλημο τοῦ &lt;H 33 ποιήσῃ KI
                                 ποιήσει M | Ε; Benz Diehl</note>
-                            <pb n="40"/> ἀδελφὸς καὶ ἀδελφὴ καὶ μήτηρ ἐστί«. καὶ πόλιν ἐν ἄλλῳ τόπῳ
+                  <pb n="40"/> ἀδελφὸς καὶ ἀδελφὴ καὶ μήτηρ ἐστί«. καὶ πόλιν ἐν ἄλλῳ τόπῳ
                             γέγραπται ὅτι »πᾶς ὁ ὄχλος ἐπὶ τὸν αἰγιαλὸν εἱστήκει, κοὶ ἀλάλησεν
                             αὐτοῖς πολλὰ ἐν παραβολαῖς« · εἶτα μετὰ τὴν τοῦ σπόρου παραβολὴν
                             »προσελθόντες«, οὐκέτι οἱ ὄχλοι ἀλλ᾿ οἱ μαθηταί, εἶπον αὐτῷ«, οὐΙχὶ »διὰ
                             τί ἐν παραβολαῖς« <lb n="481"/>
-                            <lb n="5"/> ἡμῖν λαλεῖς «ἀλλὰ » διὰ τί ἐν παραβολαῖς λαλεῖς αὐτοῖς;« ὅτε
+                  <lb n="5"/> ἡμῖν λαλεῖς «ἀλλὰ » διὰ τί ἐν παραβολαῖς λαλεῖς αὐτοῖς;« ὅτε
                             καὶ »ἀποκριθεὶς εἶπεν«, οὐ τοῖς ὄχλοις ἀλλὰ τοῖς μαθηταῖς τὸ »ὑμῖν
                             δέδοται γνῶναι τὰ μυστήρια τῆς βασιλείας τῶν οὐρανῶν«, »τοῖς δέ λοιποῖς
                             ἐν οὐκοῦν τῶν προσερχομένων τῷ ὀνόματι τοῦ Ἰησοῦ οἱ μέν γινώσκοντες τὰ
@@ -1769,21 +1765,20 @@
                             τοὺς τῆς εὐλογίας Ἰησοῦ ἄρτους καὶ οὐδὲ τούτους πάντας ἐσθίουσι
                             χορτασθέντες γὰρ οἱ ὄχλοι καταλελοίπασι »τὸ περισσεῦον« ἐν κοφίνοις οὖσι
                             πλήρεσι δώδεκα), ***</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="5">
-                        <p>Οὗ δὲ ἕνεκεν ταῦτα παρειλήφαμεν, ἐστὶ τὸ προκίμενον ὅτι, χωρίσας <lb n="30"/> ὁ Ἰησοῦς τῶν ὄχλων τοὺς μαθητὰς ἠνάγκασεν αὐτοὺς ἐμβῆναι
+            </div>
+            <div n="5" type="chapter">
+               <p>Οὗ δὲ ἕνεκεν ταῦτα παρειλήφαμεν, ἐστὶ τὸ προκίμενον ὅτι, χωρίσας <lb n="30"/> ὁ Ἰησοῦς τῶν ὄχλων τοὺς μαθητὰς ἠνάγκασεν αὐτοὺς ἐμβῆναι
                             εἰς <note type="footnote">2 Matth. 13, 2f — 3ff Matth. 13, 10 f — 7 Luc.
                                 8, 10 — 8ff Vgl. Matth. 13, 11 — llff Matth. 13, 11 — 13 ff Matth.
                                 13, 36 — 16 ff Matth. 14, 13—15 —22 —25 Vgl. C marc Nr. 3 Or. — 23
                                 ff Matth. 14, 19—21</note>
-                            <note type="footnote">2 f αὐτοῖς πολλὰ ἐν παραβολαῖς Μ H c ἐν παραβολαῖς
+                  <note type="footnote">2 f αὐτοῖς πολλὰ ἐν παραβολαῖς Μ H c ἐν παραβολαῖς
                                 αὐτοῖς πολλά H a 4 οὐχὶ] ov H 8 τῷ M H c.r. το H a | τοῦ &lt;Μ 13 f
                                 καὶ ἔρχεται εἰς τὴν οἰκίον, οὐχὶ δὲ τοὺς μαθητάς Μ H ~ KI 26
                                 δεχομένης H a 28 *** Koe, der etwa änzt 〈διοφοραὶ τῶν ὄχλο)ν κοὶ τῶν
                                 μαθητῶν Ἰησοῦ φανεραί εἰσιν〉 vgl. S. 39, 12 29 τοῦτο Hu ταύτας Μ H
                                 ταύτας <add>τὰς λέξεις</add> Κoe</note>
-                            <pb n="41"/> τὸ πλοῖον καὶ προάγειν αὐτὸν εἰς τὸ πέραν, ἕως οὗ ἀπολύσει
+                  <pb n="41"/> τὸ πλοῖον καὶ προάγειν αὐτὸν εἰς τὸ πέραν, ἕως οὗ ἀπολύσει
                             αὐτὸς τοὺς ὄχλους. οὐ γὰρ ἠδύναντα οἱ ὄχλοι εἰς τὸ πέραν ἀπελθεῖν, ὡς οὐ
                             μυστικῶς Ἑβραῖοι οἴτινες ἑρμηνεύονται ΠΕΡΑΤΙΚΟΙ) · ἀλλὰ τοῦτο ἔργον ἦν
                             τῶν Ἰησοῦ μαθητῶν, λέγω δέ <add>τὸ</add> εἰς τὸ πέραν <lb n="5"/> καὶ
@@ -1820,12 +1815,12 @@
                                 Wutz, Onom. sacra 742 — 5 ff Vgl. II. Kor. 4, 18 — 11 f Vgl. Matth.
                                 14, 19 — 12 f Vgl. Matth. 14, 13 — 15 Vgl. Matth. 14, 15 — 24 Vgl.
                                 Marc. 6, 48 — 27 Vgl. Matth. 14, 34</note>
-                            <note type="footnote">4 <add>τὸ</add> Koe 5 πρόσκερα H a 10 τε &lt; H 11
+                  <note type="footnote">4 <add>τὸ</add> Koe 5 πρόσκερα H a 10 τε &lt; H 11
                                     <add>τινα</add> 28 οὐχ ρ μὴ Μ H</note>
-                            <pb n="42"/> τις ὑπὸ τοῦ λόγου καὶ οἱονεὶ οὐΧ ἑκὼν ἔρχεται, βουλομένου
+                  <pb n="42"/> τις ὑπὸ τοῦ λόγου καὶ οἱονεὶ οὐΧ ἑκὼν ἔρχεται, βουλομένου
                             τοῦ σωτῆρος γυμνάσασθαι τοὺς μαθητὰς ἐν τῷ βασανιζομένῳ τούτῳ πλοίῳ ὑπὸ
                             τῶν κυμάτων καὶ τοῦ ἐναντίου ἀνέμου;</p>
-                        <p>Ἐπειδὴ δέ εὐθέως ἠνάγκασε τοὺς μαθητὰς ἐμβῆναι εἰς τὸ <lb n="5"/> πλοῖον
+               <p>Ἐπειδὴ δέ εὐθέως ἠνάγκασε τοὺς μαθητὰς ἐμβῆναι εἰς τὸ <lb n="5"/> πλοῖον
                             καὶ προάγειν αὐτὸν εἰς τὸ πέραν, ὀλίγον <add>δ᾿</add> τὴν λέΞιν ἀνέγραψε
                             κοὶ ὀ Μᾶρκος ποιήσας · »καὶ εὐθέως ἠνάγκασε τοὺς μαθητὰς αὐτοῦ ἐμβῆναι
                             εἰς τὸ πλοῖον καὶ προάγειν αὐτὸν εἰς τὸ πέραν εἰς Βηθσαϊδᾶ«), ἀναγκαῖον
@@ -1856,19 +1851,18 @@
                                 34, 2a, 46 — 13 ff Vgl. Hier. in Matth. 106 C: ostenditur invitos
                                 eos a domino recessisse, dum amore praeceptoris ne punctum quidem
                                 temporis ab eo volunt separari — 20 Vgl. Marc. 6, 47</note>
-                            <note type="footnote">3 κοὶ &lt;H 4 μαθητὰς + αὐτοῦ M 5—7 ὀλίγον — πέραν
+                  <note type="footnote">3 κοὶ &lt;H 4 μαθητὰς + αὐτοῦ M 5—7 ὀλίγον — πέραν
                                 &lt; 5 Ε; Kl 9 πλεῖον] πλοῖον Μ 20 αὐτὰς Koe αὐτοὺς Μ H 22
                                 παλαίοντες] 1 παλαίοντος, ? Kl, παλαίοντες 〈κύμοσι κοὶ Ε; ? Koe 24
                                 ἑαυτοῖς Kl ἑαυτοὺς MH 28 — 29 ὁ δὲ — ὕδατα &lt; H</note>
-                            <pb n="43"/> Ἰησοῦν, ἐΠεὶ δέ ἐδίστασεν, εἶδεν ἰσχυρὸν τὸν ἄνεμον, οὐκ
+                  <pb n="43"/> Ἰησοῦν, ἐΠεὶ δέ ἐδίστασεν, εἶδεν ἰσχυρὸν τὸν ἄνεμον, οὐκ
                             ὄντα ἰσχυρὸν τῷ ἀποθεμένῳ τὴν ὀλιγοπιστίαν καὶ τὸν δισταγμόν. καὶ
                             ἀναβάντος τοῦ Ἰησοῦ μετὰ Πέτρου εἰς τὸ πλοῖον, ἐκόπασεν ὁ ἄνεμος, μηδὲν
                             ἔτι δυνάμενος ἐνεργεῖν εἰς οὐτὸ ἀναβάντος τοῦ Ἰησοῦ.</p>
-                        <lb n="5"/>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="6">
-                        <p>Καὶ τότε οἱ μαθηταὶ διαπεράσαντες ἦλθον εἰς τὴν γῆν Γενησαρέτ , ἧς τὴν
+               <lb n="5"/>
+            </div>
+            <div n="6" type="chapter">
+               <p>Καὶ τότε οἱ μαθηταὶ διαπεράσαντες ἦλθον εἰς τὴν γῆν Γενησαρέτ , ἧς τὴν
                             ἑρμηνείαν εἰ ἔγνωμεν, <milestone unit="altnumbering" n="484"/> καὶ ἀπ᾿
                             αὐτῆς ὠνάμεθα ἄν τι πρὸς τὴν τῶν προκειμένων διήγησιν. παρατήρει δέ ἐπεὶ
                             »πιστὸς ὁ θεός«, οὐκ ἐῶν πειρασθῆναι τοὺς ὄχλους ὑπέρ ὃ δύνανται), τίνα
@@ -1888,8 +1882,8 @@
                             ὅτι τὴν τοῦ Ἰησοῦ πρὸς τὸν πατέρα περὶ τῶν μαθητῶν εὐχὴν οὐδὲν
                             πεπόνθασιν οὗτοι, θαλάσσης κοὶ κυμάτων καὶ ἐναντίου ἀνέμου αὐτοῖς
                             ἀντιπρασσόντων.</p>
-                        <lb n="25"/>
-                        <p>Ὁ μέν οὖν ἁπλούστερος ἀρκείσθω τῇ ἱστορίᾳ· ἡμεῖς δέ, δέ, ποτε ἀνάγκαις
+               <lb n="25"/>
+               <p>Ὁ μέν οὖν ἁπλούστερος ἀρκείσθω τῇ ἱστορίᾳ· ἡμεῖς δέ, δέ, ποτε ἀνάγκαις
                             πειρασμῶν περιπίπτομεν, ἀναμιμνησκώμεθα ὅτι ἠνάγκασεν ἡμᾶς ὁ Ἰησοῦς
                             ἐμβῆναι εἰς τὸ πλοῖον, αὐτὸν βουλόμενος ἡμᾶς προάγειν εἰς τὸ πέραν. οὐ
                             γὰρ δυνατὸν μὴ πειρασμοὺς ὑπομείναντος κυμάτων καὶ ἀνέμου ἐναντίου εἰς
@@ -1903,10 +1897,10 @@
                                 ( !), quid in nostra lingua resonaret Gennesareth etc. — 7 Vgl. I.
                                 Kor. 10, 13 — 10 Vgl. Marc. 6, 47 — —22 Vgl. Cc Nr. 49 Or. ? — 25 f
                                 Vgl. Jac. 1, 2</note>
-                            <note type="footnote">8 ὁ Μ H c i. m. ὧν H a 12 λαλοῦτος — Ε; KI 20 f
+                  <note type="footnote">8 ὁ Μ H c i. m. ὧν H a 12 λαλοῦτος — Ε; KI 20 f
                                 μήθ’ — κυμάτων &lt;H | μήθ’ Kl Koe μηδ’ M(H) 26 ἀνάγκαι H 27 αὐτὸν M
                                 c αὐτῶν M a H</note>
-                            <pb n="44"/> αὐτὰ ἐπὶ ποσὸν διανηξώμεθα, λογιζώμεθα ὅτι τὸ πλοῖον ἡμῶν
+                  <pb n="44"/> αὐτὰ ἐπὶ ποσὸν διανηξώμεθα, λογιζώμεθα ὅτι τὸ πλοῖον ἡμῶν
                             μέσον ἐστὶ τῆς θαλάσσης τότε, βασανιζόμενον ὑπὸ τῶν κυμάτων βουλομένων
                             ἡμᾶς ναυαγῆσαι »περὶ τὴν πίστιν« <milestone unit="altnumbering" n="485"/> ἤ τινα τῶν ἀρετῶν. ἀλλ᾿ ἐπὰν τὸ πνεῦμα τοῦ πονηροῦ βλέπωμεν
                             ἀντιπρᾶττον ἡμῶν τοῖς πράγμασιν, ἐννοήσωμεν <lb n="5"/> ὅτι τότε ἡμῖν
@@ -1937,23 +1931,22 @@
                             πλὴν τήρει ὅτι οὐκ εἶπεν · ἄπιστε, ἀλλά · ὀλιγόπιστε, καὶ ὅτι λέλεκται ·
                                 <lb n="30"/> εἰς τί ἐδίστασας, ἔχων μέν τι τῆς πίστεως, κλίνων δὲ
                             καὶ πρὸς τὸ ἐναντίον οὐτῇ; </p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="7">
-                        <p>καὶ ἐπὶ τούτοις γε Λ·οὶ ὁ Ἰησοῦς καὶ ὁ Πέτρος ἀναβήσονται <note type="footnote">1 Vgl. Orig. Exh. 14 (I, 14, 8) zu διανήχεσθαι — 3.
+            </div>
+            <div n="7" type="chapter">
+               <p>καὶ ἐπὶ τούτοις γε Λ·οὶ ὁ Ἰησοῦς καὶ ὁ Πέτρος ἀναβήσονται <note type="footnote">1 Vgl. Orig. Exh. 14 (I, 14, 8) zu διανήχεσθαι — 3.
                                 8 Vgl. I. Tim. 1, 19 — 9 f Vgl. II. Thess, 2, 3 f — 12 öm. 13, 12 —
                                 19 Vgl. Hebr. 6, 1 — 25 Vgl. Jes. 58, 9</note>
-                            <note type="footnote">4 βλέπωμεν υ βλέπομεν Μ H 4/5 ἐννοήσομεν Koe 5
+                  <note type="footnote">4 βλέπωμεν υ βλέπομεν Μ H 4/5 ἐννοήσομεν Koe 5
                                 ἐναντίως H a 11 πιστεύωμεν Kl Koe, vgl. Ζ. 1. 4 πιστεύομεν MH 20 τῶν
                                 πειρασμῶν M a | ἐκείνου &lt;Μ 30 ἐδίστασας] + ἦν <add>ἦν γὰρ</add>
                                 Koe | κλίνον H 31 ἀναβήσονται Koe, vgl. Matth. 14, 32 ἀναβήσεται Μ
                                 H</note>
-                            <pb n="45"/> εἰς τὸ πλοῖον καὶ κοπόσει ὁ ἄνεμος καὶ οἱ ἐν τῷ πλοίῳ
+                  <pb n="45"/> εἰς τὸ πλοῖον καὶ κοπόσει ὁ ἄνεμος καὶ οἱ ἐν τῷ πλοίῳ
                             ἐννοήσαντες ἀφ᾿ οἵων διεσώθησαν κινδύνων, προσκυνήσουσι λέγοντες, οὐκ
                             ἁπλῶς· θεοῦ υἱὸς εἶ (ὡς καὶ οἱ δύο δαιμονιζόμενοι) ἀλλ᾿· ἀληθῶς θεοῦ
                             υἱὸς εἶ· ὅπερ λέγουσιν οἱ ἐν τῷ πλοίῳ μαθηταί, οὐ γὰρ ἄλλους τῶν μαθητῶν
                                 <lb n="5"/> νομίζω τοῦτο εὐρηκέναι.</p>
-                        <p>Ἐπὰν δὲ ἐν τούτοις ὅλοις γενώμεθα διαπεράσαντες, ἐλευσόμεθα εἰς τὴν γὴς,
+               <p>Ἐπὰν δὲ ἐν τούτοις ὅλοις γενώμεθα διαπεράσαντες, ἐλευσόμεθα εἰς τὴν γὴς,
                             ἔνθα προάγειν ἡμῖν ἐκέλευσεν ὁ Ἰησοῦς. τάχα δὲ καὶ δηλοῦταί τι ἀπόρρητον
                             καὶ κεκρυμμένον μυστήριον περί τινων σεσωσμένων ὑπὸ τοῦ Ἰησοῦ ἀπὸ τοῦ
                             καὶ ἐπιγνόντες αὐτὸν οἱ ἄνδρες τοῦ τόπου <lb n="10"/> ἐκείνου, δῆλον δ᾿
@@ -1977,25 +1970,24 @@
                             διεσώθησαν ἐπὶ τούτων εἰρημένου πρὸς τὸ σωθῆναι <add>ἐκείνην</add>
                             (εἴρηται γὰρ πρὸς τὴν αἱμορροοῦσαν· »ἡ πίστις σου σέσωκέ σε«), καὶ αὐτὸς
                             ἐπιστήσεις. </p>
-                        <milestone unit="altnumbering" n="487"/>
-                        <lb n="30"/>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="8">
-                        <p><quote corresp="urn:cts:greekLit:tlg0031.tlg001:15.1-15.2">Τότε
+               <milestone unit="altnumbering" n="487"/>
+               <lb n="30"/>
+            </div>
+            <div n="8" type="chapter">
+               <p>
+                  <quote corresp="urn:cts:greekLit:tlg0031.tlg001:15.1-15.2">Τότε
                                 προσέρχονται αὐτῷ ἀπὸ Ἱεροσολύμων Ξαρισαῖοι καὶ γραμματεῖς λέγοντες·
                                 διὰ τί οἱ μαθηταί σου παραβαίνουσι τὴν παράδοσιν τῶν πρεσβυτέρων; οὐ
                                 γὰρ νίπονται τὰς χεῖρας ὅταν ἄρτον ἐσθίωσιν </quote>(15, 1.2 [ —
                             9]).</p>
-                        <note type="footnote">3 Vgl. Matth. 8, 28 — 17ff Matth. 9, 20f — 21 Luc. 8,
+               <note type="footnote">3 Vgl. Matth. 8, 28 — 17ff Matth. 9, 20f — 21 Luc. 8,
                             44 — 29 Matth. 9, 22</note>
-                        <note type="footnote">8 σεσωσμένων H c.r. ἐσομένων MH a | ὑπὸ]ἀπὸ Μ a 11
+               <note type="footnote">8 σεσωσμένων H c.r. ἐσομένων MH a | ὑπὸ]ἀπὸ Μ a 11
                                 <add>τῷ</add> Kl 19 ὄτι Kl ὅτε M H 20 〈τὸ σύμφωνον〉 Elt 22 τῆς Diehl
                             τοῦ Μ H 25 μόνον M 27 ὅ́ση H 28 εἰρημένου Hu εἰρημένη Μ H | 〈ἐκνην〉 Elt
                             33 ἐσθίωσι Μ</note>
-
-                        <pb n="46"/>
-                        <p>Ὁ παρατηρήσας κατὰ ποῖον καιρὸν προσῆλθον τῷ Ἰησοῦ ἀπὸ Ἱεροσολύμων
+               <pb n="46"/>
+               <p>Ὁ παρατηρήσας κατὰ ποῖον καιρὸν προσῆλθον τῷ Ἰησοῦ ἀπὸ Ἱεροσολύμων
                             Φαρισαῖον καὶ γραμματεῖς λέγοντες· διὰ τί οἱ μαθηταί σου παραβαίνουσι
                             τὴν παράδοσιν τῶν καὶ τὰ ἑξῆς, εἴσεται ὅτι ἀναγκαίως ὁ Ματθαῖος οὐχ
                             ἁπλῶς ἀνέγραψε προσεληλυθέναι <lb n="5"/> τοὺς ἀπὸ Ἱεροσολύμων
@@ -2018,8 +2010,8 @@
                             μαθηταῖς Ἰησοῦ ἔγκλημα ὡς παραβαίνουσι τὴν ἐντολὴν τῶν πρεσβυτέρων ,
                             εἴπερ εἶχον ἐπιλαμβάνεσθαι τῶν ἐγκαλουμένων καὶ ἀποδεικνύναι αὐτοὺς
                             παραβαίνοντας ἐντολὴν θεοῦ.</p>
-                        <lb n="25"/>
-                        <p>Μὴ νομίσῃς δὲ ταῦτα κατασκευαστικὰ εἶναι τοῦ δεῖν τηρεῖσθαι τὸν κατὰ τὸ
+               <lb n="25"/>
+               <p>Μὴ νομίσῃς δὲ ταῦτα κατασκευαστικὰ εἶναι τοῦ δεῖν τηρεῖσθαι τὸν κατὰ τὸ
                             γράμμα Μωσέως νόμον, ἐπεὶ οἱ τοῦ Ἰησοῦ μαθηταὶ ἕως τότε αὐτὸν ἐφύλαττον
                             · οὐ γὰρ πρὸ τοῦ παθεῖν »ἐξηγόρασεν ἡμᾶς ἐκ τῆς κατάρας τοῦ νόμου« ὁ ἐν
                             τῷ παθεῖν ὑπέρ ἀνθρώπων γενόμενος ὑπέρ ἡμῶν κατάρα«. ἀλλ’ ὡσπερεὶ
@@ -2032,10 +2024,10 @@
                                 34 — 9 Vgl. Matth. 14, 32 — 10 Matth. 14, 35 f — 15 Vgl. Matth. 14,
                                 36 — 27 Gal. 3, 13 — 29 I. Kor. 9, 20 — 32 Vgl. Act. 16, 3 — Vgl.
                                 Act. 18; 21, 23 ff</note>
-                            <note type="footnote">1 Ὁ &lt; H 6 ἀπέρχονται H 14 τὴν ἐν ] μὲν τὴν M 16
+                  <note type="footnote">1 Ὁ &lt; H 6 ἀπέρχονται H 14 τὴν ἐν ] μὲν τὴν M 16
                                 ἐγκαλοῦντες + τοῖς μαθητοῖς〉 Lo (vgl. Hu) 21 τὸ περὶ s. 1. H
                                 c.</note>
-                            <pb n="47"/> πλὴν πάνυ φαίνονται φιλεγκλήμονες οἱ Περὶ μὲν ἐντολῆς θεοῦ
+                  <pb n="47"/> πλὴν πάνυ φαίνονται φιλεγκλήμονες οἱ Περὶ μὲν ἐντολῆς θεοῦ
                             μηδέν ἔχοντες ἐγκαλεῖν τοῖς Ἰησοῦ μαθηταῖς, μόνον δέ περὶ πρεσβυτέρων
                             παραδόσεως μιᾶς. καὶ μάλιστα ἐμφαίνεται οὕτως τὸ φιλέγκλημον, ὅτι παρ᾿
                             αὐτοῖς τοῖς ἰαθεῖσιν ἀπὸ τοῦ κακῶς ἔχειν Προσάγουσι τὸ ἔγκλημα, τῷ μέν
@@ -2051,10 +2043,9 @@
                             φίλου ἡμῖν θέλοντος εἶναι Ἰησοῦ »τρεῖς ἄρτους« · »κοιναῖς« γὰρ καὶ
                             »ἀνίπτοις« κοὶ οὐ καθαραῖς χερσὶν οὐ χρὴ τῶν ἄρτων <lb n="15"/>
                             μεταλαμβάνειν.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="9">
-                        <p>Ὁ δέ Ἰησοῦς οὐκ ἐγκαλεῖ περὶ παραδόσεως αὐτοῖς Ἰουδαίων, ἀλλὰ περὶ τῶν
+            </div>
+            <div n="9" type="chapter">
+               <p>Ὁ δέ Ἰησοῦς οὐκ ἐγκαλεῖ περὶ παραδόσεως αὐτοῖς Ἰουδαίων, ἀλλὰ περὶ τῶν
                             ἐντολῶν θεοῦ ἀναγκαιοτάτων δύο, ὧν ἡ μέν ἑτέρα πέμπτη ἦν τῆς δεκαλόγου
                             οὕτο)ς ἔχουσα · » τίμα τὸν πατέρα σου καὶ τὴν μητέρα σου, ἵν’ εὖ σοι
                             γένηται, καὶ γένη μακροχρόνιος ἐπὶ τῆς γῆς <lb n="20"/> ἧς κύριος ὁ θεός
@@ -2068,17 +2059,17 @@
                             τελευτάτω«. οὕτως μέν οὖν εἶχον αἱ ἀπὸ τοῦ νόμου λέξεις περὶ τῶν δύο
                                 <milestone unit="altnumbering" n="489"/> ἐντολῶν. ὁ δὲ Ματθαῖος ἐκ
                             μέρους καὶ ἐπιτετμημένως αὐτὰς ἐξέθετο καὶ οὐκ αὐταῖς λέξεσι.</p>
-                        <lb n="30"/>
-                        <p>Τί δὲ ἐγκαλεῖ τοῖς ἀπὸ Ἱεροσολύμων Φαρισαίοις καὶ γραμματεῦσιν ὁ σωτήρ,
+               <lb n="30"/>
+               <p>Τί δὲ ἐγκαλεῖ τοῖς ἀπὸ Ἱεροσολύμων Φαρισαίοις καὶ γραμματεῦσιν ὁ σωτήρ,
                             λέγων αὐτοὺς παραβαίνειν τὴν ἐντολὴν τοῦ θεοῦ διὰ τὴν ἑαυτῶν παράδοσιν ,
                             κατανοητέον. κοὶ ὁ μὲν θεὸς εἶπε· »τίμα τὸν πατέρα σου καὶ τὴν μητέρα
                             σου«, διδάσκων τὴν δέουσαν τιμὴν ἀπονέμειν γονεῦσι <note type="footnote">9 Vgl. Rom. 2, 27 ? — 10 ff Vgl. Hier. in Matth. 110 A: »manus«, id
                                 est opera, non corporis sed animae lavandae sunt, ut fiat in illis
                                 verhum dei — 13 f Vgl. Luc. 11,5 — 14 f Vgl. Marc. 7, 2 — 18 Ex. 20,
                                 12 — 21 Lev. 20, 9 — 25 Ex. 21, 15 f — 32 Ex. 20, 12</note>
-                            <note type="footnote">1 πάνυ] πόλιν H 5 ὅ〈τι〉 Koe 6 παράδωσις H a, corr.
+                  <note type="footnote">1 πάνυ] πόλιν H 5 ὅ〈τι〉 Koe 6 παράδωσις H a, corr.
                                 H c 9 Ε; Elt 10 πρεσβυτέρων παρ᾿ ἐκείνοις Μ 33 γονεῦσιν Μ</note>
-                            <pb n="48"/> τὸν ἐξ αὐτῶν γεννώμενον. ταύτης τῆς πρὸς τοὺς γονεῖς τιμῆς
+                  <pb n="48"/> τὸν ἐξ αὐτῶν γεννώμενον. ταύτης τῆς πρὸς τοὺς γονεῖς τιμῆς
                             μέρος ἦν καὶ τὸ κοινωνεῖν αὐτοῖς τῶν βιωτικῶν χρειῶν εἰς διατροφὰς καὶ
                             σκεπάσματα, καὶ εἴ τι ἄλλο οἶός τε ἦν χαρίζεσθαί <add>τις</add> τοῖς
                             ἑαυτοῦ γονεῦσιν. οἱ δὲ Φαρισαῖοι καὶ οἱ γραμματεῖς τοιαύτην
@@ -2116,11 +2107,11 @@
                                 Hebräers zu Unrecht beanstandet — 12 Vgl. Marc. 7, 11 — 16 ff Vgl.
                                 Theophylakt: ὁ οὗν χρεώστης, ὡς τῷ θεῷ ἐκ τότε ὀφείλων, καὶ ἄκων
                                 κατέβαλλε. — 19 ff Vgl. Psal. 9, 33. 35; Jac. 2, 5</note>
-                            <note type="footnote">1 τὸν M H c. r. τῶν H a 3 <add>τις</add> Kl 5
+                  <note type="footnote">1 τὸν M H c. r. τῶν H a 3 <add>τις</add> Kl 5
                                 ἐκδεδόκασιν H 5/6 ἐπιβεβλήκειμεν Kl ἐΠιβεβλήκαμεν Μ H 6 1. ἐπέδωκεν
                                 ? Koe 14 τῷ] τὸ Η 15ff δανιστῇ usw. H 24 καὶ] 1. ἢ ? Koe | οὕτως H a
                                 25 τὴν &lt; H</note>
-                            <pb n="49"/> τούτην οὖν ἐλέγχει ὡς οὐχ ὑγιῶς ἔχουσαν παράδοσιν ὁ σωτήρ,
+                  <pb n="49"/> τούτην οὖν ἐλέγχει ὡς οὐχ ὑγιῶς ἔχουσαν παράδοσιν ὁ σωτήρ,
                             ἀλλὰ ἐναντιουμένην τῇ ἐντολῇ τοῦ θεοῦ. εἰ γὰρ ὁ μέν θεὸς λέγει τὸ τίμα
                             τὸν πατέρα καὶ τὴν μητέρα, ἡ δέ παράδοσις ἔλεγεν· οὐκ ὀφείλει τιμᾶν τὸν
                             πατέρα ἢ τὴν μητέρα τῇ δόσει ὁ ἀναθεὶς τῷ θεῷ ὡς κορβᾶν τὸ <lb n="5"/>
@@ -2131,7 +2122,7 @@
                             Φαρισαῖοι, ἶνα τῇ προφάσει τῶν πενήτων λαμβάνωσι καὶ τὰ δοθησόμενα <lb n="10"/> ἄν τοῖς γονεῦσί τινος, τὰ τοιαῦτα ἐδίδασκον. καὶ μαρτυρεῖ
                             γε αὐτῶν τῇ φιλαργυρίᾳ τὸ εὐαγγέλιον λέγον · »ἤκουον δὲ ταῦτα πάντα οἱ
                             Φαρισαῖοι φιλάργυροι ὄντες, κοὶ ἐξεμυκτήριζον αὐτόν«.</p>
-                        <p>Εἴ τις οὖν καὶ τῶν λεγομένων ἐν ἡμῖν πρεσβυτέρων ἢ ὅπως ποτέ ἀρχόντων τοῦ
+               <p>Εἴ τις οὖν καὶ τῶν λεγομένων ἐν ἡμῖν πρεσβυτέρων ἢ ὅπως ποτέ ἀρχόντων τοῦ
                             λαοῦ μᾶλλον τῷ ὀνόματι τοῦ κοινοῦ βούλεται διδόναι τοῖς <lb n="15"/>
                             πένησιν ἤπερ τοῖς οἰκείοις τῶν διδόντων, εἰ τύχοιεν τῶν ἀναγκαίων
                             χρῄζοντες καὶ μὴ δύναιντο οἱ διδόντες ἀμφότερα ποιεῖν, ἀδελφὸς ἄν οὗτος
@@ -2152,18 +2143,17 @@
                                 ἀγηροκόμητοι. — 11 Luc. 16, 14 — 20 I. Tim. 6, 5 — 22 Marc. 14, — 24
                                 Joh. 12, 6 — 25 ff Vgl. Harnack TU. 42, 4, 136 — 28 Vgl. Joh. 13, 2
                                 — 29 Vgl. Eph. 6, 16 — 30 Vgl. Lue. 22. 3; Joh. 13, 27</note>
-                            <note type="footnote">1 οὐχ ὡς Μ 1 f umzustellen : παράδοσιν ὡς οὐχ
+                  <note type="footnote">1 οὐχ ὡς Μ 1 f umzustellen : παράδοσιν ὡς οὐχ
                                 ὑγιῶς ἔχουσαν? 1 Koe 8 ἄν &lt;H 11 πάντα] auch V, fehlt jetzt in Μ
                                 infolge Beschneidung des Randes 18 σωτῆρος Ε; Koe 21 Ε; Koe 22 Περὶ]
                                 Η τὰ ρ 23 τριακοσίων δηναρίων Μ 24 ἔχο)ν + καὶ H 26 ὁ &lt;H 27
                                 ἑαυτοῦ Μ τιθείη <add>ἂν</add> Diehl Koe</note>
-                            <pb n="50"/> καὶ τάχα ἐπὰν λέγη ὁ ἀπόστολος · »ῥίζα πάντων τῶν κακῶν
+                  <pb n="50"/> καὶ τάχα ἐπὰν λέγη ὁ ἀπόστολος · »ῥίζα πάντων τῶν κακῶν
                             ἐστιν ἡ φιλαργυρία«, διὰ τὴν Ἰούδα λέγει φιλαργυρίαν , ἥτις ῥίζα πόντων
                             τῶν κακῶν ἐστι τῶν κατὰ τοῦ Ἰησοῦ.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="10">
-                        <p>Ἀλλὰ γὰρ ἐπανέλθωμεν ἐπὶ τὰ προκείμενα, ἐν οἷς ὁ σωτὴρ δύο <lb n="5"/>
+            </div>
+            <div n="10" type="chapter">
+               <p>Ἀλλὰ γὰρ ἐπανέλθωμεν ἐπὶ τὰ προκείμενα, ἐν οἷς ὁ σωτὴρ δύο <lb n="5"/>
                             ἀπὸ τοῦ νόμου ἐπιτεμόμενος ἐντολὰς ἐξέθετο, τὴν μέν ἀπὸ τῆς δεκαλόγου
                             ἀπὸ τῆς Ἐξόδου, τὴν δέ ἀπὸ τοῦ Λευϊτικοῦ ἢ τῶν ἄλλων ἀπό τινος τῶν ἐν τῇ
                             Πεντατεύχῳ. εἶτα ἐπεὶ διηγησάμεθα πῶς ἠκύρωσαν τὸν λόγον τοῦ θεοῦ
@@ -2189,20 +2179,19 @@
                             τὴν λέγουσαν ὁ κακολογῶν πατέρα ἢ μητέρα θανάτῳ τελευτάτω , τὴν δὲ
                             ἐναντιουμένην ταῖς ἐντολαῖς ταύταις τῶν πρεσβυτέρων παράδοσιν οὐκ ἄν
                             ἐφυλάξατε.</p>
-                        <lb n="30"/>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="11">
-                        <p>Μετὰ δὲ ταῦτα ὅλας τὰς παρὰ Ἰουδαίοις τῶν πρεσβυτέρων παραδόσεις ἀπὸ τῶν
+               <lb n="30"/>
+            </div>
+            <div n="11" type="chapter">
+               <p>Μετὰ δὲ ταῦτα ὅλας τὰς παρὰ Ἰουδαίοις τῶν πρεσβυτέρων παραδόσεις ἀπὸ τῶν
                             προφητικῶν βουλόμενος διαβάλλειν λόγων, παρέθετο ῥητὸν ἀπὸ τοῦ Ἡσαΐου,
                             ὅπερ αὐταῖς λέξεσιν οὕτως ἔχει· »καὶ εἶπε κύριος· ἐγγίζει μοι ὁ λαὸς
                             οὗτος ἐν τῷ στόματι αὐτῶν« καὶ τὰ ἑξῆς. κοὶ προείπομέν <note type="footnote">1 I. Tim. 6, 10 — 5 Vgl. Ex. 20, 12 — 6 Vgl. Lev.
                                 20, 9 — Vgl. Ex. 21, 16; Deut. 27, 16 — 24 Vgl. Luc. 1, 6 — 32 Jes.
                                 29, 13</note>
-                            <note type="footnote">1 λέγει H o ἀπὸ τῆς str. Koe 6 τῶν ἄλλων Kl τὴν
+                  <note type="footnote">1 λέγει H o ἀπὸ τῆς str. Koe 6 τῶν ἄλλων Kl τὴν
                                 ἄλλην Μ H 16 ὄν &lt; H 19 υἱοὺς Hu (nach Erasmus) ὑμᾶς M H 27
                                 κακολωγῶν 29 ταύτες H 30 ταύτας H</note>
-                            <pb n="51"/> γε, ὅτι οὐκ αὐταῖς λέξεσιν ἀνέγραψεν ὁ Ματθαῖος τὸ
+                  <pb n="51"/> γε, ὅτι οὐκ αὐταῖς λέξεσιν ἀνέγραψεν ὁ Ματθαῖος τὸ
                             προφητικόν. εἰ δέ δεῖ διὰ τὸ εὐαγγέλιον χρησάμενον αὐτῷ) κατὰ τὸ δυνατὸν
                             αὐτὸ διηγήσασθαι, προσληψόμεθα τὴν ἀνωτέρω λέξιν, χρησίμως οἶμαι) ἡμῖν
                             τετηρημένην εἰς διήγησιν τῆς ἐν τῷ εὐαγγελίῳ ἀπὸ τοῦ προφήτου
@@ -2218,7 +2207,7 @@
                             ἀνάγνωθι τοῦτο· κοὶ ἐρεῖ· οὐκ ἐπίσταμαι γράμματα. καὶ εἶπε κύριος·
                             ἐγγίζει μοι ὁ λαὸς οὗτος« καὶ τὰ ἑξῆς ἕως τοῦ »οὐαὶ οἱ ἐν κρυφῆ βουλὴν
                             ποιοῦντες <lb n="15"/> καὶ ἔσται ἐν σκότει τὰ ἔργα αὐτῶν«.</p>
-                        <p>Προσλαβὼν τοίνυν τὴν προκειμένην ἐν τῷ εὐαγγελίῳ λέξιν ἐθέμην τινὰ τῶν
+               <p>Προσλαβὼν τοίνυν τὴν προκειμένην ἐν τῷ εὐαγγελίῳ λέξιν ἐθέμην τινὰ τῶν
                             πρὸ αὐτῆς καί τινα τῶν ἑξῆς αὐτῆς, ἵνα παραστήσωμεν τίνα τρόπον ἀπειλεῖ
                             καμμύσειν »τοὺς ὀφθαλμοὺς« τῶν ἀπὸ τοῦ λαοῦ ὁ λόγος ἐκστάντων καὶ
                             κραιπαλησάντων καὶ πεποτισμένων »πνεύματι κατανύξεως«, ἐπειλεῖ <lb n="20"/> δὲ καμμύσαι καὶ τοὺς προφήτας αὐτῶν καὶ τοὺς
@@ -2239,17 +2228,17 @@
                             λαὸς ὁ τῶν μὴ πιστευόντων εἰς τὸν Ἰησοῦν ὡς Χριστόν. ἐΠὰν δέ γέ- <note type="footnote">5 Jes. 29, —13 — 14 Jes. 29, 15 — —52, 5 Vgl. Jes.
                                 29, —13 — 24 ff Vgl. Orig. tom. V, 7 in Joh. (IV, 104, 8 ff) u.
                                 ö.</note>
-                            <note type="footnote">28 〈τού〉τοις Kl I ἀπὸ ρ ὑπὸ MH 30 ποτισθήσεται M H
+                  <note type="footnote">28 〈τού〉τοις Kl I ἀπὸ ρ ὑπὸ MH 30 ποτισθήσεται M H
                                 c ποτεσθήσεται H a 33 ἔστοι αὐτοῖς Μ 34 1. πέπονθε νῦν ? Kl</note>
-                            <pb n="52"/> νηται τὰ προφητικὰ αὐτοῖς «ὡς λόγοι βιβλίου ἐσφραγισμένου«,
+                  <pb n="52"/> νηται τὰ προφητικὰ αὐτοῖς «ὡς λόγοι βιβλίου ἐσφραγισμένου«,
                             οὐ τοῖς μὴ εἰδόσιν ἀλλὰ καὶ τοῖς ἐπαγγελλομένοις εἰδέναι γράμματα, τότε
                             εἶπεν ὁ κύριος μόνῳ »τῷ στόματι« ἐγγίζειν τὸν λαὸν τῶν Ἰουδαίων θεῷ ·
                             καὶ »τοῖς χείλεσι« τιμᾶν αὐτόν φησι, διότι »ἡ καρδία αὐτῶν« διὰ τὴν <lb n="5"/> εἰς τὸν Ἰησοῦν ἀπιστίαν πόρρω ἐστὶν ἀπὸ κυρίου.</p>
-                        <p>Καὶ νῦν μάλιστα, ἐξ οὗ τὸν σωτῆρα ἡμῶν ἠρνήσαντο, λεχθείη ἄν ὑπὸ τοῦ θεοῦ
+               <p>Καὶ νῦν μάλιστα, ἐξ οὗ τὸν σωτῆρα ἡμῶν ἠρνήσαντο, λεχθείη ἄν ὑπὸ τοῦ θεοῦ
                             περὶ αὐτῶν τὸ μάτην δέ σέβονταί με· οὐκέτι γὰρ διδάσκουσιν ἐντάλματα
                             θεοῦ. ἀλλὰ ἀνθρώπων καὶ διδασκαλίας οὐκέτι τὰς ἀπὸ τῆς τοῦ πνεύματος
                             σοφίας, ἀλλὰ τὰς ἀνθρωπίνας. ὅθεν τούτων αὐτοῖς <lb n="10"/>
-                            <milestone unit="altnumbering" n="494"/> συμβαινόντων, μετέθηκεν ὁ θεὸς
+                  <milestone unit="altnumbering" n="494"/> συμβαινόντων, μετέθηκεν ὁ θεὸς
                             τὸν τῶν Ἰουδαίων λαὸν καὶ ἀπώλεσε τὴν σοφίαν« αὐτῶν τῶν παρ’ αὐτοῖς
                             σοφῶν οὐκέτι γάρ ἐστι σοφία παρ᾿ αὐτοῖς ὡς οὐδέ προφητεία), ἀλλὰ κοὶ
                             »τὴν σύνεσιν τῶν συνετῶν« τοῦ λαοῦ κατορώρυχέ που κοὶ ἔκρυφεν ὁ θεός,
@@ -2265,13 +2254,13 @@
                             πρεσβυτέρων, καὶ ἀπ᾿ ἀγορᾶς ἐὰν μὴ βαπτίσωνται οὐκ ἐσθίουσι, κοὶ ἄλλα
                             τινά ἐστιν ἅ παρέλαβον κρατεῖν, βαΠτισμοὺς ποτηρίων <lb n="25"/> καὶ
                             ξεστῶν κοὶ χαλκείων καὶ κλινῶν«.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="12">
-                        <p><quote corresp="urn:cts:greekLit:tlg0031.tlg001:15.10">Καὶ
+            </div>
+            <div n="12" type="chapter">
+               <p>
+                  <quote corresp="urn:cts:greekLit:tlg0031.tlg001:15.10">Καὶ
                                 προσκαλεσάμενος τὸν ὄχλον, εἶπεν αὐτοῖς· ἀκούετε καὶ συνίετε καὶ τὰ
                                 ἑξῆς </quote>(15, 10 — 20).</p>
-                        <p>Σοφῶς διὰ τούτων ὑπὸ τοῦ σωτῆρος διδασκόμεθα, ἀναγινώσκοντες ἐν τῷ
+               <p>Σοφῶς διὰ τούτων ὑπὸ τοῦ σωτῆρος διδασκόμεθα, ἀναγινώσκοντες ἐν τῷ
                             Λευϊτικῷ καὶ ἐν τῷ Δευτερονομίῳ τὰ περὶ καθαρῶν καὶ ἀκαθάρτων <lb n="30"/> βρωμάτων, ἐφ’ οἷς ὡς παρανομοῦσιν ἐγκαλοῦσιν ἡμῖν οἱ σωματικοὶ
                             Ἰουδαῖοι καὶ οἱ ὀλίγῳ διαφέροντες αὐτῶν Ἐβιωναῖοι, μὴ νομίζειν τὸν
                             σκοπὸν εἶναι τῇ γραφῇ τὸν πρόχειρον περὶ τούτων νοῦν. εἰ γὰρ οὐ τὸ
@@ -2279,10 +2268,10 @@
                                 <note type="footnote">8 f Vgl. I. Kor. 2, 4 f. 13 — 9 ff Vgl. Jes.
                                 29, 14. 15 — 16 Vgl. Joh. 3, 19 ff — 21 Marc. 7, 3. 4 — 29 Vgl. Lev.
                                 11; Deut. 14 — 30 ff Vgl. Harnack TU. 42, 4, 78</note>
-                            <note type="footnote">10 τῶν τῶν H a 12 οὐδὲ Diehl Koe οὔτε MH 15
+                  <note type="footnote">10 τῶν τῶν H a 12 οὐδὲ Diehl Koe οὔτε MH 15
                                 ἐπαγγέλονται Μ ἐπαγγέλωνται H 16 &lt;καὶ ἡμέρος〉 Diehl 18 Ε; καὶ mit
                                 ρ 20 οἱ &lt; 31 ὀλίγῳ] λόγω M 32 τὸν &lt;H</note>
-                            <pb n="53"/> τοῦ στόματος , καὶ μάλιστα ἐΠεὶ καὶ ἐν τῷ κατὰ τὸν Μᾶρκον
+                  <pb n="53"/> τοῦ στόματος , καὶ μάλιστα ἐΠεὶ καὶ ἐν τῷ κατὰ τὸν Μᾶρκον
                             ταῦτα ἔλεγεν ὁ σωτὴρ »καθαρίζων πάντα τὰ βρώματα«, δῆλον ὅτι οὐ
                             κοινούμεθα μέν ἐσθίοντες ἅ Ἰουδαῖοί φασι τῷ γράμματι τοῦ νόμου δουλεύειν
                             ἐθέλοντες) εἶναι ἀκάθαρτα, τότε δέ κοινούμεθα ὅτε, δέον τὰ χείλη ἡμῶν
@@ -2307,7 +2296,7 @@
                             φιληδονίας οὐδὲ μετὰ διακρίσεως περιελκούσης εἰς ἑκάτερα οἱ δίκαιοι
                             χρῶνται τοῖς βρώμασιν ἢ πόμασι, <lb n="25"/> μεμνημένοι τοῦ »εἴτε
                             ἐσθίετε εἴτε πίνετε ἕτε τι ἄλλο ποιεῖτε, εἰς δόξαν θεοῦ ποιεῖτε«.</p>
-                        <p>Εἰ δέ χρὴ ὑπογράψαι τὰ κατὰ τὸ εὐαγγέλιον ἀκάθαρτα βρώματα, φήσομεν ὅτι
+               <p>Εἰ δέ χρὴ ὑπογράψαι τὰ κατὰ τὸ εὐαγγέλιον ἀκάθαρτα βρώματα, φήσομεν ὅτι
                             τοιαῦτά ἐστι τὰ ἀπὸ πλεονεξίας πεπορισμένα καὶ ἀπὸ αἰσχροκερδείας
                             περιγεγενημένα καὶ ἀπὸ φιληδονίας λαμβανόμενα καὶ ἁπὸ τοῦ <lb n="30"/>
                             θεοποιεῖσθαι τιμωμένην τὴν γαστέρα, ὅταν αὐτὴ καὶ αἱ κοτ’ αὐτὴν ὀρέξεις
@@ -2317,11 +2306,11 @@
                                 <note type="footnote">2 Marc. 7, 19 — 4 f Vgl. Prov. 15, 7 — 5 Vgl.
                                 Sir. 28, 25 — 14 ff Vgl. Rom. 2, 25 f — 18 Tit. 1, 15 — 25 I. Kor.
                                 10, 31 — 33 Vgl. I. Kor. 10, 31</note>
-                            <note type="footnote">1 κοὶ ἐν TcJ) &lt;H | ἐν rco κατὰ s. 1. M c | τὸν
+                  <note type="footnote">1 κοὶ ἐν TcJ) &lt;H | ἐν rco κατὰ s. 1. M c | τὸν
                                 &lt;Μ 1/2 ἔλεγεν ταῦτα H 12 f ἀγαθὰ — λεγόμενα &lt; M 12 ἐστι +
                                     <add>τὸν</add> ? Koe 13 ἀκάθαρτα] 14 <add>μὲν</add> Diehl 17
                                 εἰς] εἰς] Μ 22 ἡ &lt; Μ 23 οὐ γὰρ H 25 ἄλλο τι Μ</note>
-                            <pb n="54"/> κεχρήμεθα οὐδὲ ἐν ὀνόματι Χριστοῦ, οὐ μόνον τῆς περὶ τοῦ
+                  <pb n="54"/> κεχρήμεθα οὐδὲ ἐν ὀνόματι Χριστοῦ, οὐ μόνον τῆς περὶ τοῦ
                             εἰδωλόθυτα εἶναι ὑπολήψεως κατακρινούσης τὸν ἐσθίοντα, ἀλλὰ καὶ τῆς περὶ
                             τούτου διακρίσεως. »ὁ γὰρ διακρινόμενος κατὰ τὸν ἀπόστολον) ἐὰν φάγῃ
                             κατακέκριται, ὅτι οὐκ ἐκ πίστεως · πᾶν δὲ ὅ οὐκ ἐκ πίστεως ἁμαρτία
@@ -2346,11 +2335,10 @@
                             ψυχῆς πνευματικὰ βρώματα καὶ τίνα τὰ ἀκάθαρτα ἐν λόγοις ψευδέσι καὶ
                             ἐναντίοις βλάπτοντα τὸν τρεφόμενον ἐν αὐτοῖς· »σκιὰν γὰρ εἶχεν ὁ νόμος
                             τῶν μελλόντων ἀγαθῶν«.</p>
-                        <lb n="25"/>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="13">
-                        <p>Ὥσπερ δὲ ἐν πολλοῖς κατανοητέον τὸ θαυμαζόμενον παρὰ Ἰουδαίοις ἐπὶ τοῖς
+               <lb n="25"/>
+            </div>
+            <div n="13" type="chapter">
+               <p>Ὥσπερ δὲ ἐν πολλοῖς κατανοητέον τὸ θαυμαζόμενον παρὰ Ἰουδαίοις ἐπὶ τοῖς
                             τοῦ σωτῆρος λόγοις ὅτι ἐν ἐξουσίᾳ ἐλέγοντο, οὕτως καὶ ἐπὶ τῶν κατὰ τὸν
                             τόπον. τόν ὄχλον γοῦν προσκαλεσάμενος εἶπεν αὐτοῖς· ἀκούετε καὶ συνίετε
                             καὶ τὰ ἑξῆς, καὶ τοῦτ’ ἔλεγε Φαρισαίων σκανδαλιζομένων ἐπὶ τούτῳ τῷ
@@ -2362,11 +2350,11 @@
                                 ff I. Kor. 10, 20 — 8 f Vgl. I. Kor. 8, 7 — 12 I. Kor. 8, 8 — 18
                                 Kol. 2, 16 — 20 ff Vgl. Hebr. 10, 1 — 23 Hebr. 10, 1 — 25 ff Vgl.
                                 Matth. 7, 28 f — 32 Vgl. Joh. 15, 1</note>
-                            <note type="footnote">5 εἰδωλείοις ρ εἰδωλίοις MH 9 κοινωνισάντων H
+                  <note type="footnote">5 εἰδωλείοις ρ εἰδωλίοις MH 9 κοινωνισάντων H
                                 16/17 οἶμαι ἐν διαφόροις &lt;M 17 ἀδιαφορεῖν Hu οὐ διαφορεῖν Μ
                                 ἐνδιαφορεῖν H 19 ὑμᾶς λ ἡμᾶς MH 30 Περὶ Kl vgl. S. 56,34 παρὰ
                                 MH</note>
-                            <pb n="55"/> Χριστόν. πῶς γὰρ ἠδύναντο εἶναι φυτεία τοῦ πατρὸς οἱ ἐπὶ
+                  <pb n="55"/> Χριστόν. πῶς γὰρ ἠδύναντο εἶναι φυτεία τοῦ πατρὸς οἱ ἐπὶ
                             τοῖς Ἰησοῦ σκανδαλισθέντες λόγοις, ἀφιστᾶσι μέν τοῦ μὴ »μὴ μηδέ γεύσῃ
                             μηδέ θίγῆς, ἅ ἦν πάντα εἰς φθορὰν τῇ ἀποχρήσει, κοτὰ τὰ ἐντάλματα καὶ
                             διδασκαλίας τῶν ἀνθρώπων«, προσάγουσι δέ τὸν συνετὸν ἑαυτῶν ἀκροατὴν <lb n="5"/> τῷ »τὰ ἄνω« περὶ τούτων ζητεῖν κοὶ »μὴ <add>τὰ</add> ἐπὶ
@@ -2385,11 +2373,10 @@
                             συνιεῖσιν ὧν ἤκουον, ἑξῆς δέ ὡς ἐν παραβολαῖς ἔλεγεν αὐτοῖς· οὐ τὸ
                             εἰσερχόμενον εἰς τὸ στόμα κοινοῖ τὸν ἄνθρωπον , ἀλλὰ τὸ
                             ἐκπορευόμενον.</p>
-                        <lb n="20"/>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="14">
-                        <p>Μετὰ ταῦτα ἄξιον ἰδεῖν λέξιν συκοφαντουμένην ὑπὸ τῶν φασκόντων οὐ τὸν
+               <lb n="20"/>
+            </div>
+            <div n="14" type="chapter">
+               <p>Μετὰ ταῦτα ἄξιον ἰδεῖν λέξιν συκοφαντουμένην ὑπὸ τῶν φασκόντων οὐ τὸν
                             αὐτὸν εἶναι νόμου καὶ εὐαγγελίου Ἰησοῦ Χριστοῦ θεόν· οἵτινές φασιν ὅτι
                             οὐκ ἔστιν ὁ Ἰησοῦ Χριστοῦ οὐράνιος πατὴρ γεωργὸς τῶν κατὰ τόν Μωσέως
                             νόμον οἰομένων θεὸν εὐσεβεῖν. αὐτὸς εἶπεν ὁ Ἰησοῦς τοὺς Φαρισαίους, οἵ
@@ -2405,11 +2392,11 @@
                             πιστεύοντες τῇ ἀληθείᾳ ἀλλὰ εὐδοκοῦντες τῇ ἀδι- <note type="footnote">2
                                 Kol. 2, 21 f — 5 Vgl. Kol. 3, 1 f — 11 Psal. 7, 16 — 13 Matth. 5, 1
                                 — 27 Ex. 15, 17 — 32 f Vgl. II. Kor. 4, 4 — II. Thess. 2, 12</note>
-                            <note type="footnote">5 Ε; λ 14 οὐτῶ̣ &lt;H 22 ὁ ιݲ ςݲ χݲ ςݲ ὁ
+                  <note type="footnote">5 Ε; λ 14 οὐτῶ̣ &lt;H 22 ὁ ιݲ ςݲ χݲ ςݲ ὁ
                                 οݲυݲνݲιݲοݲςݲ Μ 23 αὐτὸς Ε; Koe 25 οὐκ1] KI Koe | οὐκ2 Μ H &lt;ρ 26
                                 εἴποιεν KI vgl. φοσιν Ζ. 22 εἴποιε Μ H 1 οὐκ ἄν] κἂν H 29 ἑπὶ] zu
                                 str, Koe | ὅτι] τὸ H</note>
-                            <pb n="56"/> κίᾳ« ὑπὸ τοῦ θεοποιηθέντος ἀπὸ τῶν υἱῶν τοῦ αἰῶνος τούτου
+                  <pb n="56"/> κίᾳ« ὑπὸ τοῦ θεοποιηθέντος ἀπὸ τῶν υἱῶν τοῦ αἰῶνος τούτου
                             καὶ διὰ τοῦτο λεγομένου παρὰ τῷ Παύλῳ θεοῦ »τοῦ αἰῶνος τούτου«. καὶ μὴ
                             νομίσῃς Παῦλον ἡμῶν ἀληθῶς εἶναι λέγειν αὐτὸν θεόν · ὡς γὰρ μὴ οὖσα θεὸς
                             »ἡ κοιλία« τῶν ὑπερτιμώντων τὴν ἡδονὴν φιληδόνων μᾶλλον ἤ φιλοθέων <lb n="5"/> λέγεται ὑπὸ Παύλου εἶναι »θεὸς« αὐτῶν, οὕτως μὴ ὢν θεὸς ὁ
@@ -2431,7 +2418,7 @@
                             τυφλοὶ καὶ αὐτοὶ διὰ τὸ μὴ βλέπειν τὸν νοῦν τῶν γραφῶν τυγχάνοντες
                             φανῶμεν, ὡς ἀμφοτέρους, τόν τε ὁδηγοῦντα καὶ <add>τὸν</add> ἐμπεσεῖν εἰς
                             τὸν βόθυνον, περὶ οὗ προειρήκαμεν.</p>
-                        <p>Ἑξῆς δέ τούτοις γέγραπται τίνα τρόπον ὁ Πέτρος ἀποκριθεὶς εἶπε <lb n="25"/> τῷ σωτῆρι ὡς μὴ νοήσας τὸ οὐ τὸ εἰσερχόμενον εἰς τὸ στόμα κοινοῖ τὸν
+               <p>Ἑξῆς δέ τούτοις γέγραπται τίνα τρόπον ὁ Πέτρος ἀποκριθεὶς εἶπε <lb n="25"/> τῷ σωτῆρι ὡς μὴ νοήσας τὸ οὐ τὸ εἰσερχόμενον εἰς τὸ στόμα κοινοῖ τὸν
                             ἄνθρωπον , ἀλλὰ τὸ ἐκΠορευόμενον ἐκ τοῦ στόματος) τὸ φράσον ἡμῖν τὴν
                             παραβολήν. πρὸς ὁ ὁ σωτήρ φησι τὸ ἀκμὴν κοὶ ὑμεῖς ἀσύνετοί ἐστε, οἱονεὶ
                             τοσούτῳ μοι συνόντες χρόνῳ ἔτι οὐ συνίετε τοῦ βουλήματος τῶν λεγομένων,
@@ -2443,10 +2430,10 @@
                             νοουμένων <note type="footnote">2 Vgl. II. Kor. 4, 4 — 4 ff Vgl. Phil.
                                 3, 19 — 5 f Joh. 16, 11 — 7 Vgl. Rom. 8, 15 — 8 f Vgl. Luc. 20, 35.
                                 (36) — 11 ff II. Kor. 4, 4. 6</note>
-                            <note type="footnote">2 τοῦ παύλου Μ 3 ἡμῶν Hu ἡμᾶς Μ H 17 αὐτοὺς Hu
+                  <note type="footnote">2 τοῦ παύλου Μ 3 ἡμῶν Hu ἡμᾶς Μ H 17 αὐτοὺς Hu
                                 αὐτῶν M Η | αὑτῶν υ οὐτῶν Μ αυτῶν H 22 <add>τὸν</add> K1 28 ἡμεῖς
                                 Η</note>
-                            <pb n="57"/> κατὰ τὸν νόμον, διακονίας τε »θανάτου« τῆς ἐντετυπωμένης
+                  <pb n="57"/> κατὰ τὸν νόμον, διακονίας τε »θανάτου« τῆς ἐντετυπωμένης
                             »γράμμασι« καὶ οὐδὲν οἰκεῖον ἐχούσης πρὸς τὸ πνεῦμα, καὶ διακονίας ζωῆς
                             τῆς νοουμένης ἐν τῷ πνευματικῷ νόμῳ, οἱ μέν δυνάμενοι ἀπὸ διαθέσεως
                             ἀληθευούσης λέγειν τὸ »οἴδαμεν γὰρ ὅτι ὁ νόμος πνευματικός ἐστι«, κοὶ
@@ -2457,7 +2444,7 @@
                             αὐτῇ, ἰσχύον ἐν ἐκείνοις ὅσον οὐκ ἐπέστρεφον πρὸς τὸν κύριον · »ἐὰν γάρ
                             τις ἐπιστρέψῃ <lb n="10"/> πρὸς τὸν κύριον, περιαιρεῖται τὸ κάλυμα · ὁ
                             δέ κύριος τὸ πνεῦμά ἐστιν«.</p>
-                        <p>Εἴποι δ’ ἄν τις κατὰ τὸν τόπον γενόμενος ὅτι, ὥσπερ οὐ τὸ εἰσερχόμενον
+               <p>Εἴποι δ’ ἄν τις κατὰ τὸν τόπον γενόμενος ὅτι, ὥσπερ οὐ τὸ εἰσερχόμενον
                             εἰς τὸ στόμα κοινοῖ τὸν ἄνθρωπον, κἄν νομίζηται εἶναι ὑπὸ Ἰουδαίων
                             κοινόν· οὕτως οὐ τὸ εἰσερχόμενον εἰς τὸ στόμα ἁγιάζει τὸν ἄνθρωπον, κἄν
                             ὑπὸ τῶν ἀκεραιοτέρων νομίζηται ἁγιάζειν <lb n="15"/> ὁ ὀνομαζόμενος
@@ -2483,9 +2470,9 @@
                                 3, 16 f — 17 Vgl. I. Kor. 8, 7 — 18 Rom. 14, 23 — 21 Vgl. I. Tim. 4,
                                 5 — 22/23 Vgl. I. Kor. 11, 27 — 24 I. Kor. 11, 30 — 28 ff Vgl. I.
                                 Kor. 8, 8 — 33 I. Kor. 8, 8</note>
-                            <note type="footnote">22 ἡγίαζεν] ἡγίαζε γὰρ H 22/23 ἀναξίως] + τὸν
+                  <note type="footnote">22 ἡγίαζεν] ἡγίαζε γὰρ H 22/23 ἀναξίως] + τὸν
                                 ἄρτον ρ (cf. in notis)</note>
-                            <pb n="58"/> εἰ δέ πᾶν τὸ εἰσπορευόμενον εἰς τὸ στόμα εἰς τὴν κοιλίαν
+                  <pb n="58"/> εἰ δέ πᾶν τὸ εἰσπορευόμενον εἰς τὸ στόμα εἰς τὴν κοιλίαν
                             χωρεῖ καὶ εἰς ἀφεδρῶνα ἐκβάλλεται, καὶ τὸ ἁγιαζόμενον βρῶμα διὰ λόγου
                             θεοῦ καὶ ἐντεύξεως« κατ’ αὐτὸ μέν τὸ ὑλικὸν εἰς τὴν κοιλίαν χωρεῖ καὶ
                             εἰς ἀφεδρῶνα ἐκβάλλεται. κατὰ δέ τὴν ἐπιγενομένην <lb n="5"/> αὐτῷ εὐχὴν
@@ -2499,10 +2486,9 @@
                             αὐτήν · εἰ γὰρ οἶόν τε ἦν ἔτι φαῦλον μένοντα ἐσθίειν τὸν γενόμενον σάρκα
                             λόγον, ὄντα καὶ ἄρτον ζῶντα, οὐκ ἂν ἐγέγραΠτο ὅτι »πᾶς ὁ φαγὸ)ν τὸν
                             ἄρτον τοῦτον ζήσεται εἰς τὸν αἰῶνα«.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="15">
-                        <p>Ἑξῆς τούτῳ ἴδωμεν πῶς τὰ ἐκπορευόμενα καὶ κοινοῦντα <lb n="15"/> τὸν
+            </div>
+            <div n="15" type="chapter">
+               <p>Ἑξῆς τούτῳ ἴδωμεν πῶς τὰ ἐκπορευόμενα καὶ κοινοῦντα <lb n="15"/> τὸν
                             ἄνθρωπον οὐ παρὰ τὸ ἐκ τοῦ στόματος ἐκπορεύεσθαι κοινοῖ τὸν ἄνθρωπον ,
                             ἀλλὰ τὴν αἰτίαν ἔχει τῆς κοινώσεως ἐν τῇ καρδίᾳ, ὅτε ἐξέρχονται ἀπ᾿
                             αὐτῆς πρὸ τῶν ἐκπορευομένων διὰ τοῦ στόματος) διαλογισμοὶ πονηροί, ὧν ἐν
@@ -2525,10 +2511,10 @@
                                 12 Vgl. Joh. 1, 14 — 10 f Vgl. Joh. 6, 55. 51. 57 — 13 Joh. 6, 51.
                                 58 — 17 —26 Vgl. C v Nr. 16 Or. = C marc Nr. 4 Or. ? — 27/28 Vgl. I.
                                 Kor. 4, 5 — 29 Rom. 2, 15 — 33 ff Vgl. Matth. 6, 1 f</note>
-                            <note type="footnote">2 ἐκβάλεται H 12 ἐσθίηβν H 18 λογισμοί Μ 22 που]
+                  <note type="footnote">2 ἐκβάλεται H 12 ἐσθίηβν H 18 λογισμοί Μ 22 που]
                                 τοῦ H 26 οὔτε ἄλλο Μ 27 ἑκάστῳ] πάντα πιστὸν V &lt; H 33 οὖν
                                 ποιοῦμεν Η</note>
-                            <pb n="59"/> διαλογισμοῖς ἡμῶν σκοποῦντες »τὸ θεαθῆναι« τοῖς ἀνθρώποις
+                  <pb n="59"/> διαλογισμοῖς ἡμῶν σκοποῦντες »τὸ θεαθῆναι« τοῖς ἀνθρώποις
                             φιλάνθρωποι κοὶ ἐπὶ φιλανθρωπίᾳ δοξασθῆναι, ἀπέχομεν »τὸν« ἀπὸ τῶν
                             ἀνθρώπων »μισθόν«· καὶ ἁπαξαπλπῶς πᾶν τὸ γινόμενον μετὰ τοῦ ἔν τῷ
                             πράττοντι συνειδότος ἐπὶ τῷ δοξασθῆναι ὑπὸ τῶν ἀνθρώπων« οὐκ ἔχει τέλος
@@ -2552,14 +2538,14 @@
                             κατὰ δύναμιν ἡμῖν ἐξήτασται. τὸ δέ ἀνίπτοις χερσὶ φαγεῖν οὐ κοινοῖ τὸν
                             ἄνθρωπον· ἄνθρωπον· ἀλλ᾿, εἰ δεῖ τολμήσαντα εἰπεῖν, κοινοῖ τὸ ἀνίπτῳ
                             καρδίᾳ ὁτιποτοῦν φαγεῖν, ὅ πέφυκε τὸ ἡγεμονικὸν ἡμῶν ἐσθίειν.</p>
-                        <lb n="25"/>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="16">
-                        <p><quote corresp="urn:cts:greekLit:tlg0031.tlg00115.21-15.22">Καὶ ἐξελθὼν
+               <lb n="25"/>
+            </div>
+            <div n="16" type="chapter">
+               <p>
+                  <quote corresp="urn:cts:greekLit:tlg0031.tlg00115.21-15.22">Καὶ ἐξελθὼν
                                 ἐκεῖθεν ὁ Ἰησοῦς ἀνεχώρησεν εἰς τὰ μέρη Τύρου κοὶ Σιδῶνος. καὶ ἰδοὺ
                                 γυνὴ Χαναναία </quote>(15, 21. 22 [ — 28]).</p>
-                        <p>Πόθεν ἐκεῖθεν ἢ ἀπὸ γῆς Γενησαρέτ, περὶ ἧς προείρητο · »καὶ διαπεράσαντες
+               <p>Πόθεν ἐκεῖθεν ἢ ἀπὸ γῆς Γενησαρέτ, περὶ ἧς προείρητο · »καὶ διαπεράσαντες
                             ἦλθον εἰς τὴν γῆν Γενησαρέτ« ; ἀνεχώρησε δὲ τάχα διὰ τὸ σκανδαλίζεσθαι
                             τοὺς Φαρισαίους ἀκούσαντας ὅτι οὐ τὸ εἰσερχόμενον, <lb n="30"/> ἀλλὰ τὸ
                             ἐκπορευόμενον κοινοῖ τὸν ἄνθρωπον«. ὅτι δέ διὰ τοὺς ὑπονοουμένους
@@ -2568,11 +2554,11 @@
                                 I. 12, 28 — 12 Vgl. I. Tim. 3, 1 — 14 ff Vgl. I. Tim. 3, 1 f — 27
                                 Matth. 14, 34 — 28 f Vgl. Matth. 15, 12 — 29 Matth. 15, 11 —31
                                 Matth. 4, 12</note>
-                            <note type="footnote">2 τὸν] τῶν H 2/3 μισθὸν ἀπὸ τῶν ἀνθρώπων Μ 4
+                  <note type="footnote">2 τὸν] τῶν H 2/3 μισθὸν ἀπὸ τῶν ἀνθρώπων Μ 4
                                 συνειδότως H a 7 ἢ] κοὶ Μ 10 ὑπὸ Kl Koe ἀπὸ Μ H 13 κολακίαν ἢ τῶν H
                                 17 δόξωμεν Μ 25 Κοὶ] vorher : Περὶ τῆς Χαναναίας H 27 f περὶ—
                                 Γενησαρέτ &lt; 30 ὅτι] ἔτι Μ 31 εἴ ποτε] εἶπε τὸ H</note>
-                            <pb n="60"/> Ἰωάννης παρεδόθη ἀνεχώρησεν εἰς τὴν Γαλιλαίαν«. τάχα διὰ
+                  <pb n="60"/> Ἰωάννης παρεδόθη ἀνεχώρησεν εἰς τὴν Γαλιλαίαν«. τάχα διὰ
                             τοῦτο καὶ ὁ Μᾶρκος ἀναγράφων τὰ κατὰ τὸν τόπον φησὶν ὅτι »ἀναστὰς ἦλθεν
                             εἰς τὰ ὅρια Τύρου. καὶ εἰσελθὼν εἰς τὴν οἰκίαν οὐδένα ἠθέλησε γνῶναι«·
                                 <add>καὶ</add> εἰκὸς ὅτι τοὺς σκανδαλισθέντας ἐπὶ τῇ διδασκαλίᾳ
@@ -2597,7 +2583,7 @@
                             μεγάλης ὡς ἐμαρτυρήθη) πίστεως. καὶ »κατὰ τὴν ἀναλογίαν γε τῆς πίστεως«
                             ἐξέρχεταί τις ἀπὸ τῶν ἐν τοῖς ἔθνεσιν ὁρίων, » ὅτε διεμέριζεν <lb n="25"/> ἔθνη ὁ ὑψιστος, ἔστησε κατὰ ἀριθμὸν υἱῶν Ἰσραὴλ« καὶ τὴν ἐπὶ πλεῖον
                             φορὰν αὐτῶν ἐκώλυσεν.</p>
-                        <p>Ἐνταῦθα μέν οὖν ὅρια εἴρηταί τινα Τύρου καὶ Σιδῶνος , ἐν δὲ τῇ Ἐξόδῳ ὅρια
+               <p>Ἐνταῦθα μέν οὖν ὅρια εἴρηταί τινα Τύρου καὶ Σιδῶνος , ἐν δὲ τῇ Ἐξόδῳ ὅρια
                             τοῦ Φαραώ, ἐν οἶς φασὶ) γίνονται αἱ κατὰ τῶν Αἰγυπτίων <note type="footnote">2 Marc. 7,24 — 4 f Vgl. Matth. 15, 12 — —61, 16 Vgl.
                                 C b Nr. 31 Or. — 8 Vgl. Wutz, Onom. sacra 713 u. ö. — 10 Vgl. Wutz,
                                 Onom. sacra 747. 146 f — 13 — 23 Vgl. C v Nr. 17 Or. : ἀλληγορικῶς
@@ -2608,10 +2594,10 @@
                                 ff Vgl. Hier. in Matth. 115 C: inde novit vocare filium David, quia
                                 egressa iam fuerat de finihus suis etc. — 23 Vgl. Rom. 12, 6 — 24
                                 Deut. 32, 8 — 28 Vgl. Ex. 8, 2</note>
-                            <note type="footnote">3 (Kaiy Kl 8 — 10 Σόρ — μεταλαμβάνεται &lt; H 20
+                  <note type="footnote">3 (Kaiy Kl 8 — 10 Σόρ — μεταλαμβάνεται &lt; H 20
                                 〈κύριε〉 21 ὅτι ου κἂν H 22 ἠδύνατο M c 25 ἀριθμῶν H a 27 οὖν
                                 &lt;Μ</note>
-                            <pb n="61"/> μάστιγες. καὶ νομιστέον γε ἔχαστον ἡμῶν ἁμαρτάνοντα μὲν ἐν
+                  <pb n="61"/> μάστιγες. καὶ νομιστέον γε ἔχαστον ἡμῶν ἁμαρτάνοντα μὲν ἐν
                             τοῖς ὁρίοις εἶναι Τύρου ἤ Σιδῶνος ἤ Φαραὼ κοὶ τῆς Αἰγύπτου ἤ τινος τῶν
                             ἔξω τῆς τοῦ θεοῦ κληροδοσίας, μεταβάλλοντα δὲ ἀπὸ τῆς κακίας εἰς ἀρετὴν
                             ἐξέρχεσθαι μὲν ἀπὸ τῶν κατὰ τὰ φαῦλα ὁρίων. φθάνειν δέ ἐπὶ τὰ ὅρια τῆς
@@ -2628,10 +2614,9 @@
                             τῆς βασιλευούσης »ἐν τῷ θνητῷ αὐτῶν σώματι ἁμαρτίας. πλὴν ἡ Χαναναία
                             ἐξελθοῦσα ἀπὸ τῶν ὁρίων ἐκείνων ἐξῄει ἀπὸ τοῦ ἡτοιμάσθαι τῇ ταπεινώσει,
                             κεκραγυῖα κοὶ λέγουσα· ἐλέησόν με, κύριε υἱέ Δαυίδ«.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="17">
-                        <p>Συνάγαγε δέ ἀπὸ τῶν εὐαγγελίων, τίνες μὲν αὐτὸν καλοῦσιν υἱὸν <lb n="20"/> Δαυίδ, ὡς αὕτη καὶ οἱ ἐν Ἰεριχοῖ τυφλοί, τίνες δέ υἱὸν θεοῦ καὶ ἤτοι
+            </div>
+            <div n="17" type="chapter">
+               <p>Συνάγαγε δέ ἀπὸ τῶν εὐαγγελίων, τίνες μὲν αὐτὸν καλοῦσιν υἱὸν <lb n="20"/> Δαυίδ, ὡς αὕτη καὶ οἱ ἐν Ἰεριχοῖ τυφλοί, τίνες δέ υἱὸν θεοῦ καὶ ἤτοι
                             χωρὶς τῆς ἀληθῶς προσθήκης, ὡς οἱ δαιμονιζόμενοι λέγοντες · »τί ἡμῖν καὶ
                             σοι. υἱὲ τοῦ θεοῦ«, τίνες δέ μετὰ τῆς ἀληθῶς προσθήκης, ὡς οἱ ἐν τῷ
                             πλοίῳ προσκυνοῦντες, » ἀληθῶς θεοῦ υἱὸς εἶ« λέγοντες αὐτῷ. καὶ
@@ -2649,12 +2634,12 @@
                                 Onom. sacra 742. 398 f — 12 Vgl. Matth. 25, 34 — 15 Vgl. Rom. 6, 12
                                 — 20 Vgl. Matth. 20, 30 — 21 Matth. 8, 29 — 23 Matth. 14, 33 — 25
                                 Vgl. Rom. 1, 3 — 26 f Vgl. Rom. 1, 4</note>
-                            <note type="footnote">3 μεταβαλλόντα H μεταβαλοντα λ Μ 12 μὲν] γὰρ C b
+                  <note type="footnote">3 μεταβαλλόντα H μεταβαλοντα λ Μ 12 μὲν] γὰρ C b
                                 Nr. 31 | τῇ λ ἐν Μ H 14/15 ἑτοιμαζόντων Μ H I. ἑτοιμάζοντες ? Kl
                                 ἑτοιμαζουσῶν Hu 15 1. αὑτοὺς? Koe 17 ἡτοιμασθῆναι H 20 αὕτη KI αὐτὴ
                                 M H 23 υἱὸς θεοῦ Μ 28/29 γεγενηκέναι Μ 29 παρακαλεῖ Kl παρεκάλει Μ
                                 H</note>
-                            <pb n="62"/> ἄλλη δὲ μήτηρ υἱὸν ἐκκομιζόμενον νεκρὸν ἀπολαμβάνει ζῶντα.
+                  <pb n="62"/> ἄλλη δὲ μήτηρ υἱὸν ἐκκομιζόμενον νεκρὸν ἀπολαμβάνει ζῶντα.
                             κοὶ πόλιν ὁ μέν ἀρχισυνάγωγος περὶ δωδεκαετοῦς θυγατρὸς ἀξιοῖ ὡς
                             ἀποτεθνηκυίας, ὁ δέ βασιλικὸς περὶ υἱοῦ ὡς ἔτι νοσοῦντος κοὶ ἀποθνῄσκειν
                             μέλλοντος. δαιμονῶσα τοίνυν θυγάτηρ καὶ υἱὸς νεκρὸς δύο ἦσαν μητέρων,
@@ -2667,7 +2652,7 @@
                             τῆς δυνάμεως Ἰησοῦ ἐπιτελουμένων. οὐκ ἔστι γὰρ ὅτε ἕκαστον τῶν
                             γεγραμμένων ὑπὸ τῆς δυνάμεως Ἰησοῦ κατὰ τὴν ἑκάστου ἀξίαν οὐ
                             γίνεται.</p>
-                        <p>Γένους μέν οὖν χάριν ἡ Χαναναία οὐδὲ ἀποκρίσεως ἀξία ἦν τῆς ἀπὸ Ἰησοῦ
+               <p>Γένους μέν οὖν χάριν ἡ Χαναναία οὐδὲ ἀποκρίσεως ἀξία ἦν τῆς ἀπὸ Ἰησοῦ
                             τυχεῖν, ὁμολογοῦντος οὐκ ἐπ᾿ ἄλλο τι ἀπεστάλθαι παρὰ τοῦ <lb n="15"/>
                             πατρὸς ἢ πρὸς τὰ πρόβατα τὰ ἀπολωλότα οἴκου Ἰσραήλ, γένος ψυχῶν
                             διορατικῶν ἀΠολωλός. προαιρέσεως δὲ ἕνεκα καὶ τοῦ προσκεκυνηκέναι Ἰησοῦ
@@ -2690,10 +2675,10 @@
                                 puto animas esse credentium, quae male daemonio vexahantur,
                                 ignorantes creatorem etc — 23 Vgl. Gal. 4, 26 — 26 VgL Orig. Exhort.
                                 14 (I, 14, 26) — 27 VgL Gen. 15, 15 — 28 VgL GaL 4, 26</note>
-                            <note type="footnote">9 οἱ s. L Hc 10 δὲ Koe (vgl. Ζ. 9 μὲν) γὰρ M H |
+                  <note type="footnote">9 οἱ s. L Hc 10 δὲ Koe (vgl. Ζ. 9 μὲν) γὰρ M H |
                                 πότε υ 12 Ἰησοῦ] + Ε; Koe 15 Ἰσραήλ] + 〈τουιέστι Πρὸς〉 Koe, vgL S.
                                 63, 7 18 παράστάσης H</note>
-                            <pb n="63"/> αὐτῷ. εἰκὸς δέ ἐξεληλυθυῖαν ταύτην, ἧς σύμβολον ἡ Χαναναία,
+                  <pb n="63"/> αὐτῷ. εἰκὸς δέ ἐξεληλυθυῖαν ταύτην, ἧς σύμβολον ἡ Χαναναία,
                             ἀπὸ <lb n="505"/> τῶν ὁρίων Τύρου καὶ Σιδῶνος, ὧν τύποι ἦσ(ιν οἱ ἐΠὶ γῆς
                             τόποι προσεληλυθυῖαν τῷ σωτῆρι ἠξιωκέναι αὐτὸν καὶ ἔτι νῦν ἀξιοῦν
                             λέγουσαν · ἐλέησόν με, κύριε υἱὲ Δαυίδ· ἡ θυγάτηρ μου δεινῶς
@@ -2713,7 +2698,7 @@
                             ἠδύναντο χωρῆσαι, »τὴν μωρίαν τοῦ κηρύγματος«, καὶ εὐδοκήσας »σῶσαι« <lb n="20"/> τοὺς εἰς τοῦτο »πιστεύοντας«, ἵνα διελέγξῃ τὰ ὄντα« ἐκ τοῦ
                             στόματος νηπίων καὶ θηλαζόντων« καταρτισάμενος αὐτῷ αὐτῷ ἐπεὶ γέγονεν
                             ἐχθρὰ τῇ ἀληθείᾳ.</p>
-                        <p>Ἐλθοῦσα δὲ ἡ Χαναναία προσεκύνει ὡς θεῷ τῷ Ἰησοῦ λέγουσα· κύριε, βοήθησόν
+               <p>Ἐλθοῦσα δὲ ἡ Χαναναία προσεκύνει ὡς θεῷ τῷ Ἰησοῦ λέγουσα· κύριε, βοήθησόν
                             μοι. ὁ δὲ ἀποκριθεὶς εἶπεν· οὐκ <lb n="25"/> ἔξεστι λαβεῖν τὸν ἄρτον τῶν
                             τέκνων καὶ βαλεῖν τοῖς κυναρίοις. ζητήσαι δ’ ἄν τις τὸ βούλημα καὶ
                             ταύτης τῆς λέξεως, ἐπεὶ μέτρου μὲν παρόντος ἄρτων, ὡς μὴ δύνασθαι καὶ τὰ
@@ -2725,12 +2710,12 @@
                                 7; Eph. 4, 25? — II. Kor. 5, 16 — 15 Vgl. Rom. 11, 5 — 16 I. Kor. 1,
                                 27 — 18. 20 Vgl. I. Kor. 1, 28 — 18 Vgl. Rom. 10, 19 (Deut. 32, 21)
                                 — 19 f Vgl. I. Kor. 1, 21 — 20 f Psal. 8, 3</note>
-                            <note type="footnote">1 ἐξεληλυθεῖαν H a 5 ὁ καὶ Μ ~ H | ὅτε δεῖ] ὅτ᾿
+                  <note type="footnote">1 ἐξεληλυθεῖαν H a 5 ὁ καὶ Μ ~ H | ὅτε δεῖ] ὅτ᾿
                                 ἔδει ? Kl ὅ ἔδει Koe 12 γινώσκομεν Kl γινώσκοντες MH 28 κάλλους Μ H
                                 a καὶ ἄλλους H c. r. | Ε; Koe, vgl. Ζ. 27 29 f τὸν κ. εἰργασμένον τ.
                                 τ. ἄρτον Μ H c τῶν κ. εἰργασμένων τ. τ. ἄρτων H a 30 δὴ Kl δὲ M
                                 H</note>
-                            <pb n="64"/> ἧς δυνατὸν ἦν καὶ τὰ τέκνα μεταλαμβάνειν καὶ τὰ λεγόμενα
+                  <pb n="64"/> ἧς δυνατὸν ἦν καὶ τὰ τέκνα μεταλαμβάνειν καὶ τὰ λεγόμενα
                             κυνίδια. ὅρa οὖν μήπως πρὸς τὸ οὐκ ἔξεστι λαβεῖν τὸν ἄρτον τῶν τέκνων
                             λεκτέον ὅτι ὁ κενώσας ἑαυτὸν τῷ »μορφὴν δούλου« ἀνειληφέναι μέτρον
                             δυνάμεως, καθ᾿ ὅ ἐχώρει τὰ ἐν κόσμῳ πράγματα, ἐκόμισεν· ἀφ᾿ ἧς δυνάμεως
@@ -2746,7 +2731,7 @@
                             ὡς κύνες. καὶ κατὰ τὸν Μωσέως δὲ νόμον περί τινων γέγραπται »τῷ κυνὶ«
                             ἀπορρίψαι αὐτό καὶ ἐμέλησε τῷ ὁγίῳ πνεύματι ἐντείλασθαι περί τινων
                             βρωμάτων, ἔνα κυσὶ παραλειφθῇ.</p>
-                        <p>Ἀλλοι μέν οὖν ὑπολαμβανέτωσαν , ξένοι τοῦ ἐκκλησιαστικοῦ λόγου,
+               <p>Ἀλλοι μέν οὖν ὑπολαμβανέτωσαν , ξένοι τοῦ ἐκκλησιαστικοῦ λόγου,
                             μεταβαίνειν τὰς ψυχὰς ἀπὸ σωμάτων ἀνθρωπίνων ἐπὶ σώματα κύνεια κατὰ <lb n="20"/> τὴν διάφορον κακίον. ἡμεῖς δέ μηδαμῶς τοῦτο εὑρίσκοντες ἐν
                             τῇ θείᾳ γραφῇ, φαμέν ὅτι κατάστασις λογικωτέρα μεταβάλλει εἰς
                             ἀλογωτέραν, ἐκ πολλῆς ῥᾳθυμίας καὶ ἀμελείας τὸ τοιοῦτον πάσχουσα ·
@@ -2765,26 +2750,26 @@
                                 c. Χ (Migne PG 17, 610) — 21 ff Vgl. Orig. c. Cels. I, 20 (I, 71, 21
                                 ff) III, 75(1,267, 12); de princ. I, 8, 4 (V, 104, 7 ff) u.
                                 6.</note>
-                            <note type="footnote">2 τῶν ἄρτων H a | τέκνον H 7 τὸ μέτρον Μ 8 f
+                  <note type="footnote">2 τῶν ἄρτων H a | τέκνον H 7 τὸ μέτρον Μ 8 f
                                 πλείονα ἐπιδιδοὺς κοὶ καλουμένοις υἱοῖς Μ H ~ Koe 17 παραλειφθῇ Kl
                                 παραληφθη MH καταλειφθῇ Koe 19 ἀνθρωπίνων KI nach humanis Pamph
                                 ἀνθρώπων Μ H 23 <add>μὴ</add> ἠμεληκέναι Hu 32 φίσαντα Ηa</note>
-                            <pb n="65"/> ἀπὸ τῶν ψιχίων τῶν πιπτόντων ἀπὸ τῆς τραπέζης τῶν κυρίων
+                  <pb n="65"/> ἀπὸ τῶν ψιχίων τῶν πιπτόντων ἀπὸ τῆς τραπέζης τῶν κυρίων
                             αὐτῶν τεύξεται τῆς προσηνεστάτης ἀποκρίσεως Ἰησοῦ λέγοντος αὐτῷ· μεγάλη
                             σου ἡ πίστις, ἐπὰν τηλικαύτην ἀναλάλβῃ πίστιν, καὶ λέγοντος· γενέσθω σοι
                             ὡς θέλεις, ἵνα καὶ αὐτὸς ἰαθῇ καί, εἴ τινα <lb n="5"/> καρπὸν ἐγέννησε
                             δεόμενον ἰάσεως, κοὶ οὗτος θεραπευθῇ. </p>
-                        <milestone unit="altnumbering" n="507"/>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="18">
-                        <p><quote corresp="urn:cts:greekLit:tlg0031.tlg001:15.29">Καὶ μεταβὰς
+               <milestone unit="altnumbering" n="507"/>
+            </div>
+            <div n="18" type="chapter">
+               <p>
+                  <quote corresp="urn:cts:greekLit:tlg0031.tlg001:15.29">Καὶ μεταβὰς
                                 ἐκεῖθεν ὁ Ἰησοῦς δῆλον δέ ἐκ τῶν προειρημένων, ὅτι ἀπὸ τῶν μερῶν
                                 Τύρου »Τύρου Σιδῶνος«) ἦλθε παρὰ τὴν θάλασσαν τῆς Γαλιλαίας ἥτις
                                 ἥτις ἡ συνήθως ὀνομαζομενη Γενησαρῖτις λίμνη), Λ·αὶ πάλιν ἀνέβη εἰς
                                 τὸ ὄρος (ἔνθα ἀναβὰς <lb n="10"/>
-                            </quote> (15, 29 [ —31]).</p>
-                        <p>Ἔστιν οὖν εἰπεῖν ὅτι εἰς τὸ ὄρος τοῦτο, ὅΠου καθέζεται ὁ Ἰησοῦς. οὐχ
+                  </quote> (15, 29 [ —31]).</p>
+               <p>Ἔστιν οὖν εἰπεῖν ὅτι εἰς τὸ ὄρος τοῦτο, ὅΠου καθέζεται ὁ Ἰησοῦς. οὐχ
                             ὑγιαίνοντες ἀναβαίνουσι μόνον, ἀλλὰ μετὰ τῶν ὑγιαινόντων καὶ οἱ διάφορα
                             πάθη πεπονθότες. καὶ τάχα τοῦτο τὸ ὄρος, ἔνθα ἀναβὰς καθέζεται ὁ Ἰησοῦς,
                             ἡ κοινοτέρως ἐστὶν ὀνομαζομένη ἐκκλησία, ἀνεστηκυῖα <lb n="15"/> διὰ τὸν
@@ -2802,18 +2787,18 @@
                             αὐτοῦ· ἐπὰν δέ, ὡς τοιαῦτα πεπονθότες, ῥιφῶσιν ὑπὸ τῶν ὄχλων παρὰ τοὺς
                             Πόδας οὐτοῦ καὶ τὰ τελευταῖα τοῦ σώματος τοῦ Χριστοῦ, οὐδὲ τούτων ἄξιοι
                             τὸ ὅσον ἐφ’ ἑαυτοῖς) τυγχάνοντες, τότε ὑπ αὐτοῦ θεραπεύονται.</p>
-                        <lb n="30"/>
-                        <p>Καὶ ἐπὰν ἴδης ἐν τῷ τῆς κοινότερον ἐκκλησίας λεγομένης ἀθροίσματι
+               <lb n="30"/>
+               <p>Καὶ ἐπὰν ἴδης ἐν τῷ τῆς κοινότερον ἐκκλησίας λεγομένης ἀθροίσματι
                             ἐρριμμένους μετὰ τοὺς τελευταίους αὐτῆς, οἱονεὶ καὶ παρὰ τοὺς πόδας τοῦ
                             Ἰησοῦ σώματος, τῆς ἐκκλησίας, τοὺς κατηχουμένους προσελθόντας μετὰ τῆς
                             ἰδίας κωφότητος κοὶ τυφλότητος χωλότητός τε λαὶ κυλλότητος, καὶ τῷ χρόνῳ
                             θεραπευομένους κατὰ τὸν λόγον, οὐκ ἄν ἁμάρτοις τοὺς <note type="footnote">7 Vgl. Matth. 15, 21 — 8 Vgl. Luc. 5, 1 — 16 Vgl.
                                 Matth. 5, 1 — 21 Vgl. Joh. 19</note>
-                            <note type="footnote">6 Κοὶ] vorher : Περὶ τῶν θεραπευθέντων ὄχλων H 8/9
+                  <note type="footnote">6 Κοὶ] vorher : Περὶ τῶν θεραπευθέντων ὄχλων H 8/9
                                 Γενησαρῖτις Kl γενησαρέτις Μ γενησαρέτ τις H 12 οὐχ Ε; Diehl 16 οὐχ
                                 &lt; Μ | ὡς &lt; 17 κατηγορῦνται Kl κατηγοροῦντο MH 18 κοφοὶ H 20
                                 ἀπαγγελλόμενα Μ 30 κοινώτερον H 33 κουφότητος H a</note>
-                            <pb n="66"/> τοιούτους λέγων ἀναβάντας μετὰ τῶν ὄχλων τῆς ἐκκλησίας εἰς
+                  <pb n="66"/> τοιούτους λέγων ἀναβάντας μετὰ τῶν ὄχλων τῆς ἐκκλησίας εἰς
                             τὸ ὄρος, ὅπου ὀ Ἰησοῦς, ἐρρίφθαι παρὰ τοὺς πόδας αὐτοῦ καὶ τεθεραπεῦ
                                 <add>σ</add>θαι αὐτούς, ὥστε τὸν ὄχλον τῆς ἐκκλησίας θαυμάζειν
                             βλέποντας ἀπὸ τηλικούτων κακῶν μεταβολὰς ἐπὶ τὸ βέλτιον γενομένας, ὥστ’
@@ -2834,7 +2819,7 @@
                             καὶ ὅτε »τὰ ἀόρατα αὐτοῦ τοῦ θεοῦ) ἀπὸ κτίσεως κόσμου τοῖς ποιήμασι
                             νοούμενα« καθορῶσι, τουτέστιν ἐπιμελῶς <lb n="20"/> καὶ σαφῶς ὁρῶσι καὶ
                             νοοῦσι.</p>
-                        <p>Ταῦτα δέ βλέποντες οἱ ὅχλοι ἐδόξαζον τὸν θεὸν Ἰσραήλ, καὶ δοξάζουσι
+               <p>Ταῦτα δέ βλέποντες οἱ ὅχλοι ἐδόξαζον τὸν θεὸν Ἰσραήλ, καὶ δοξάζουσι
                             πειθόμενοι ὅτι ὁ αὐτὸς θεὸς πατήρ ἐστι τοῦ θεραπεύσαντος τοὺς
                             προειρημένους καὶ θεὸς τοῦ Ἰσραήλ· οὐ γὰρ »Ἰουδαίων μόνον ὁ θεός« ἐστιν,
                             ἀλλὰ »καὶ ἐθνῶν«. ἀναβιβάζωμεν οὖν μεθ’ ἑαυτῶν ἐπὶ τὸ <lb n="25"/> ὄρος,
@@ -2852,9 +2837,9 @@
                                 θεὸν δὲ οὐχ ἕτερον ἀλλὰ τὸν τοῦ Ἰσραὴλ δοξάζουσιν· οὐδὲ γὰρ ἔστιν
                                 ἕτερος κατὰ τὴν Μαρκίωνος ἄνοιαν, ἀλλ᾿ αὐτὸς μόνος (?) — 23 Vgl.
                                 Rom. 3, 29</note>
-                            <note type="footnote">2 Ε;θαι ρ 7 ἁλεῖτε H a 8 — 9 κοὶ — χωλός &lt; H 8
+                  <note type="footnote">2 Ε;θαι ρ 7 ἁλεῖτε H a 8 — 9 κοὶ — χωλός &lt; H 8
                                 nach λ, vgl. Ζ. 13 f μογγιλάλου Μ 12 1. ἁλουμένους? 1 Kl</note>
-                            <pb n="67"/> τοῦ Ἰησοῦ, ἵνα θεραπεύσῃ αὐτούς, ὥστε θαυμάσαι ἐπὶ τῇ
+                  <pb n="67"/> τοῦ Ἰησοῦ, ἵνα θεραπεύσῃ αὐτούς, ὥστε θαυμάσαι ἐπὶ τῇ
                             τούτων θεραπείᾳ τοὺς ὄχλους. οἱ γὰρ μαθηταὶ οὐκ ἀναγεγραμμένοι εἰσὶ τὰ
                             τοιαῦτα θαυμάζειν, καίτοιγε παρόντες τῷ Ἰησοῦ καὶ τότε, ὡς δῆλον ἐκ τοῦ
                             »ὁ δὲ Ἰησοῦς προσκαλεσάμενος τοὺς μαθητὰς αὐτοῦ εἶπε· σπλαγχνίζομαι <lb n="5"/> επὶ τὸν ὄχλον« καὶ τὰ ἑξῆς. τάχα δὲ εἰ ἐπιμελῶς προσέχοις τῷ
@@ -2868,12 +2853,12 @@
                             καὶ τίνες ἀλλαχοῦ τυγχάνοντι. πολλὰ γὰρ ἂν εὕροις ἐκ τῆς παρατηρήσσεως
                                 <lb n="15"/>»πνευματικοῖς πνευματικὰ« συγκρίνων ἄξια τῆς ἐν τοῖς
                             εὐαγγελίοις ἀκριβοῦς σοφίας.</p>
-                    </div>
-
-                    <div type="textpart" subtype="chapter" n="19">
-                        <p><quote corresp="urn:cts:greekLit:tlg0031.tlg001:15.32">Ὁ δὲ Ἰησοῦς
+            </div>
+            <div n="19" type="chapter">
+               <p>
+                  <quote corresp="urn:cts:greekLit:tlg0031.tlg001:15.32">Ὁ δὲ Ἰησοῦς
                                 προσκαλεσάμενος τοὺς μαθητὰς αὐτοῦ εἶπεν </quote>(15, 32 [-39]).</p>
-                        <p>Ἀνωτέρω μὲν ἐπὶ τῆς ὁμοίας ταύτῃ περὶ τῶν ἄρτων ἱστορίας πρὸ <lb n="20"/>
+               <p>Ἀνωτέρω μὲν ἐπὶ τῆς ὁμοίας ταύτῃ περὶ τῶν ἄρτων ἱστορίας πρὸ <lb n="20"/>
                             τῶν ἄρτων »ἐξελθὼν (ὁ Ἰησοῦς) εἶδε πολὺν ὄχλον, καὶ ἐσπλαγχνίσθη ἐπ᾿
                             αὐτὸν καὶ ἐθεράπευσε τοὺς ἀρρώστους αὐτὼν. καὶ ὀψίας δὲ γενομένης
                             προσῆλθον αὐτῷ οἱ μαθηταὶ λέγοντες· ἔρημός ἐστιν ὁ τόπος καὶ ἡ ὥρα
@@ -2890,11 +2875,11 @@
                                 reliqua. hic discipulis convocatis ipse dominus loquitur: »misereor
                                 turbae, quia triduo iam perseverant mecum« etc. Vgl. auch Hilarius
                                 zur Stelle — 20 Matth. 14, 14 f — 30 Matth. 14, 17</note>
-                            <note type="footnote">4ιݲςݲ Μ, vgl Ζ. 17 χς H 9 〈οἴτινες〉 Diehl | μετ᾿
+                  <note type="footnote">4ιݲςݲ Μ, vgl Ζ. 17 χς H 9 〈οἴτινες〉 Diehl | μετ᾿
                                 οὐτὸν Μ 17 Ὁ] vorher: Περὶ τῶν ἐπτὰ ἄρτων H 19 τούτης H 20 τῶν] +
                                 ἄλλων C marc Nr. 5 21 οὐτὸν] οὐτῶ Ma 25 κἀκεῖ C marc Nr. 5 27 κἀκεῖ
                                 C marc Nr. 5</note>
-                            <pb n="68"/> θομένῳ, ἐνθάδε δὲ πυθομένῳ ἀποκρίνονται περὶ ἑπτὰ ἄρτων καὶ
+                  <pb n="68"/> θομένῳ, ἐνθάδε δὲ πυθομένῳ ἀποκρίνονται περὶ ἑπτὰ ἄρτων καὶ
                             ἀλίγων ἰχθυδίων. κἀκεῖ μὲν κελεύει »τοὺς ὄχλους ἀνακλιθῆναι« οὐκ
                             ἀναπεσεῖν » ἐπὶ τοῦ χόρτου« καὶ γὰρ ὁ Λουκᾶς »κατακλίνατε αὐτοὺς«
                             ἀνέγραψε · καὶ ὁ Μᾶρκος »ἐπέταξε« φησὶν »αὐτοῖς πάντας ἀνακλῖναι«)
@@ -2908,8 +2893,8 @@
                             ὅτι εἶπεν ὁ Ἰησοῦς· »ποιήσατε τοὺς ἀνθρώπους ἀναπεσεῖν« καὶ ὅτι
                             »εὐχαριστήσας ἔδωκε τοῖς ἀνακειμένοις« ἀπὸ τῶν ἄρτων, ταύτης δέ οὐδέ τὴν
                             ἀρχὴν ἐμνημόνευσε.</p>
-                        <lb n="15"/>
-                        <p>Προσέχων οὖν τῇ διαφορᾷ τῶν κατὰ τοὺς τόπους ἐπὶ τοῖς ἄρτοις γεγραμμένων,
+               <lb n="15"/>
+               <p>Προσέχων οὖν τῇ διαφορᾷ τῶν κατὰ τοὺς τόπους ἐπὶ τοῖς ἄρτοις γεγραμμένων,
                             τούτους νομίζω τάγματος εἶναι διαφέροντος παρ’ ἐκείνους· διόπερ οὗτοι
                             μὲν ἐν ὄρει τρέφονται ἐκεῖνοι δέ ἐν ἐρήμῳ τόπῳ, καὶ οὗτοι μὲν τρεῖς
                             παραμείναντες τῷ Ἰησοῦ ἡμέρας ἐκεῖνοι δὲ μίαν, ἧς ἐν τῇ ἑσπέρᾳ
@@ -2932,12 +2917,12 @@
                                 6, 9. 13 — 24 Vgl. Matth. 14, 14 — 26 ff Vgl. Matth. 15, 30 f — 28 —
                                 69, 5 Vgl. C c I, 126, 24 An. : ὅμως ἐπὶ τὸ κρεῖττον κατὰ μικρὸν
                                 προέκοπτον</note>
-                            <note type="footnote">2 οὐκ Kl mit C marc Nr. 5 ἤ M H 5 παργγέλλει υ
+                  <note type="footnote">2 οὐκ Kl mit C marc Nr. 5 ἤ M H 5 παργγέλλει υ
                                 παραγγέλει Μ H | ἀναπεσεῖν Kl mit C marc Nr. 5 ἀνακλιθῆνλαι M H 6
                                     <add>ταῖς</add> Diehl 10 κατοὺς H (sic) 16/17 ἐκείνους υ
                                 ἐκείνοις Μ ἐκείνου H 22 *** Koe 29 τῶν2 &lt; H 31 〈πορὰ τοὺς
                                 ἀνακλιθέντας ἐΠὶ τοῦ χόρτου〉 Hautsch TU, 34, 2 a, 45</note>
-                            <pb n="69"/> του«&gt;. κοὶ ἐκεῖνοι μέν ἀπὸ ὀλιγωτέρων ἄρτων »δώδεκα
+                  <pb n="69"/> του«&gt;. κοὶ ἐκεῖνοι μέν ἀπὸ ὀλιγωτέρων ἄρτων »δώδεκα
                             κοφίνους« οὗτοι δὲ ἀπὸ πλειόνων ἑπτὰ σπυρίδας , τῷ χωρητικώτεροι εἶναι
                             μειζόνων. καὶ τάχα οὗτοι μέν ἐπιβαίνουσι πάντων τῶν γηΐνων καὶ
                             ἀναπίπτουσιν ἐπ᾿ αὐτῶν, οἱ δ’ ἐπὶ τοῦ χόρτου« ἐπὶ μόνης τῆς σαρκὸς <lb n="5"/> αὐτῶν · »πᾶσα« γὰρ »σὰρξ χόρτος«. πρόσχες καὶ μετὰ τοῦτα ὅτι
@@ -2955,9 +2940,8 @@
                             ἰάσατο μέν τὴν θυγατέρα αὐτῆς »ἀπὸ τῆς ὥρας ἐκείνης«, οὐ μέντοι
                             γέγραπται ὅτι ἀπέλυσεν αὐτήν. τοσαῦτα καὶ εἰς τὸ ἐκκείμενον ῥητὸν ἐπὶ
                             τοῦ παρόντος ἐξετάσαι καὶ ἰδεῖν δεδυνήμεθα.</p>
-                    </div>
-                </div>
             </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

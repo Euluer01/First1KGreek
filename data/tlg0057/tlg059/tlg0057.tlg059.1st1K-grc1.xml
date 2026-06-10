@@ -1,103 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">
-    
-        <fileDesc>
-            <titleStmt>
-                <title xml:lang="lat">De differentiis pulsuum</title>
-                <author>Galen</author>
-                <editor>Karl Gottlob Kühn</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-                    <resp>Published original versions of the electronic texts</resp>
-                    <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-                    <persName>Mark Schiefsky, Harvard University</persName>
-                    <persName>Gregory R. Crane, Universität Leipzig</persName>
-                    <persName>Uwe Vagelpohl, University of Warwick</persName>
-                </respStmt>
-                <respStmt>
-                    <resp>Keyboarding</resp>
-                    <orgName xml:id="DDD">Digital Divide Data</orgName>
-                </respStmt>
-                <respStmt>
-                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
-                    <persName>Gregory R. Crane</persName>
-                </respStmt>
-                <respStmt>
-                    <resp>Project Manager (University of Leipzig)</resp>
-                    <persName>Matt Munson</persName>
-                </respStmt>
-                <respStmt>
-                    <resp>Project Assistant (University of Leipzig)</resp>
-                    <persName>Annette Geßner</persName>
-                </respStmt>
-                <respStmt>
-                    <resp>Lead Developer (University of Leipzig)</resp>
-                    <persName>Thibault Clérice</persName>
-                </respStmt>
-                <respStmt>
-                    <resp>Technical Advisor</resp>
-                    <persName>Bruce Robertson</persName>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De differentiis pulsuum</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0057.tlg059.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg059.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-                        <author>Galen</author>
-                        <editor>Karl Gottlob Kühn</editor>
-                        <imprint>
-                            <publisher>Knobloch</publisher>
-                            <pubPlace xml:lang="lat">Lipsiae</pubPlace>
-                            <biblScope unit="vol">8</biblScope>
-                            <biblScope unit="pp" from="493" to="765">493-765</biblScope>
-                            <date>1824</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/hvd.hxpp8p?urlappend=%3Bseq=503">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg059.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace xml:lang="lat">Lipsiae</pubPlace>
+                     <biblScope unit="vol">8</biblScope>
+                     <biblScope unit="pp" from="493" to="765">493-765</biblScope>
+                     <date>1824</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/hvd.hxpp8p?urlappend=%3Bseq=503">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-                <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-            </langUsage>
-        </profileDesc>
-        <revisionDesc><change who="Pria Jackson" when="2017-06-21">Testing Epidoc, tagging figures</change></revisionDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg059.1st1K-grc1">
-                <pb n="493"/>
-
-                <div type="textpart" subtype="book" n="1">
-                    <div type="textpart" subtype="chapter" n="1">
-                        <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΔΙΑΦΟΡΑΣ ΣΦΥΓΜΩΝ <lb/>ΛΟΓΟΣ Α.</head>
-                        <p>Εὐξαίμην μὲν ἂν καὶ μαθεῖν καὶ διδάξαι <lb/>δύνασθαι τὰ πράγματα, χωρὶς
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+).(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)"
+                         n="book"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
+                  <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+               </citeStructure>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-book-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="Pria Jackson" when="2017-06-21">Testing Epidoc, tagging figures</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg059.1st1K-grc1">
+         <pb n="493"/>
+         <div n="1" type="book">
+            <div n="1" type="chapter">
+               <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΔΙΑΦΟΡΑΣ ΣΦΥΓΜΩΝ <lb/>ΛΟΓΟΣ Α.</head>
+               <p>Εὐξαίμην μὲν ἂν καὶ μαθεῖν καὶ διδάξαι <lb/>δύνασθαι τὰ πράγματα, χωρὶς
                             τῶν ἐπ’ αὐτοῖς ὀνομάτων, ἵνα <lb/>μὴ πρὸς τῷ μακρὰν εἶναι τὴν τέχνην διὰ
                             τὴν οἰκείαν θεωρίαν, <lb/>ἐξ ἐπιμέτρου γένοιθ’ ἡμῖν ἡ περὶ τὴν λέξιν
                             ἀσχολία. ἐπεὶ δὲ <lb/>ἀνάγκη διὰ τῶν ὀνομάτων δηλοῦν ἃ βουλόμεθα, τοῖς
@@ -164,9 +176,9 @@
                             δεομένους. οὐκοῦν <lb/>οὐδὲ ὁ λόγος ὅδε πλέον τῶν εἰθισμένων ἡμῖν τε καὶ
                             τοῖς ἄλλοις <lb/>ἰατροῖς ὀνομάτων ἐπαγγέλλεται διδάξειν, ἀλλ’ ἀγαπῴη
                             <lb/>ἂν, εἰ τούτου μετρίως τυγχάνοι. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="2">
-                        <p>Πρῶτος μὲν οὖν ἁπάντων ὧν ἴσμεν Ἱπποκράτης <lb/>τό τε ὄνομα τοῦ σφυγμοῦ
+            </div>
+            <div n="2" type="chapter">
+               <p>Πρῶτος μὲν οὖν ἁπάντων ὧν ἴσμεν Ἱπποκράτης <lb/>τό τε ὄνομα τοῦ σφυγμοῦ
                             γράφει καὶ τὴν ἐν αὐτῷ <lb/>τέχνην οὐκ ἀγνοεῖν ἔοικεν, οὐ μὴν οὔτ’ ἐπὶ
                             πλέον ἐξειργάσατο <lb/>τοῦτο τὸ μέρος τῆς τέχνης οὔτ’ ἐπὶ πάσης ἀρτηριῶν
                             <lb/>κινήσεως τοὔνομα φέρει. παραπλήσιον δέ τι φαίνεται ποιεῖν <lb/>αὐτῷ
@@ -207,9 +219,9 @@
                             τῶν ὀνομάτων. <lb/>λέγωμεν οὖν ἤδη πόσα μὲν τὰ πρῶτα γένη τῶν
                             <lb/>σφυγμῶν, ἐφεξῆς δὲ τὰς διαφορὰς αὐτῶν, ἀρχὴν τῷ λόγῳ <lb/>τήνδε
                             ποιησάμενοι. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="3">
-                        <p>Τῆς ἀρτηρίας σώματος οὔσης κοίλου καὶ <lb/>μακροῦ καὶ περιφεροῦς,
+            </div>
+            <div n="3" type="chapter">
+               <p>Τῆς ἀρτηρίας σώματος οὔσης κοίλου καὶ <lb/>μακροῦ καὶ περιφεροῦς,
                             κινουμένης τε διὰ παντὸς διπλῆν <lb/>κίνησιν ἐξ ἐναντίων σύνθετον
                             μορίων, ἢ γὰρ εἰς ἑαυτὴν συνιζάνει <lb/>πανταχόθεν, ἢ διαστέλλεται
                             πανταχόσε, καὶ ταύτης <lb/>τῆς διπλῆς κινήσεως ὀνομαζομένης σφυγμοῦ,
@@ -243,10 +255,10 @@
                             προσέρχονται συστηματικαὶ καλούμεναι, <lb/>καθ’ ἃς ἐπὶ πλειόνων σφυγμῶν
                             ἀλλήλοις παραβαλλομένων, <lb/>ὁμαλότητά τε καὶ ἀνωμαλίαν, καὶ τάξιν, ἢ
                             ἀταξίαν <lb/>σκοποῦμεν. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="4">
-                        <p>
-                            <milestone unit="ed1page" n="9"/>Ἑκάστου δὲ τούτων τῶν γενῶν αἱ κατ’
+            </div>
+            <div n="4" type="chapter">
+               <p>
+                  <milestone unit="ed1page" n="9"/>Ἑκάστου δὲ τούτων τῶν γενῶν αἱ κατ’
                             <lb/>εἶδος διαφοραὶ πλείους εἰσὶν, ἃς ἤδη διέξιμεν, ἀπὸ τοῦ κατ’
                             <lb/>αὐτὴν τὴν κίνησιν ἀρξάμενοι γένους. ἀνάγκη γὰρ ταύτην <lb/>ἢ
                             σύμμετρόν τε καὶ κατὰ φύσιν ὑπάρχειν, ἢ ὠκυτέραν πως, <lb/>ἢ βραδυτέραν
@@ -279,193 +291,301 @@
                             δὲ ἑξῆς ἐννέα, τῆς μὲν κατὰ τὸ <lb/>μῆκος διαστάσεως συμμέτρου μενούσης,
                             τῶν λοιπῶν δ’ ὑπαλλαττομένων. <lb/>καὶ αὖθις ἐννέα, τῆς μὲν κατὰ μῆκος
                             διαστάσεως <lb/>βραχείας μενούσης, τῶν δ’ ἄλλων ὑπαλλαττομένων.</p>
-                        <milestone unit="ed2page" n="18"/>
-                        <figure>
-                            <graphic url="https://babel.hathitrust.org/cgi/pt?id=hvd.hxpp8p;view=2up;seq=514"></graphic>
-                            <list rend="table">
-                                <item>
-                                    <list rend="row">
-                                        <item><label><num>α΄</num></label></item>
-                                        <item>μακρὸς</item>
-                                        <item>πλατὺς</item>
-                                        <item>ὑψηλὸς</item>
-                                        <item>μέγας</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>β΄</num></label></item>
-                                        <item>μακρὸς</item>
-                                        <item>πλατὺς</item>
-                                        <item>σύμμετρος</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>γ΄</num></label></item>
-                                        <item>μακρὸς</item>
-                                        <item>πλατὺς</item>
-                                        <item>ταπεινὸς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>δ΄</num></label></item>
-                                        <item>μακρὸς</item>
-                                        <item>σύμμετρος</item>
-                                        <item>ὑψηλὸς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>ε΄</num></label></item>
-                                        <item>μακρὸς</item>
-                                        <item>σύμμετρος</item>
-                                        <item>σύμμετρος</item>
-                                        <item>ἰσχνὸς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>ς΄</num></label></item>
-                                        <item>μακρὸς</item>
-                                        <item>σύμμετρος</item>
-                                        <item>ταπεινὸς</item>
-                                        <item>ἰσχνὸς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>ζ΄</num></label></item>
-                                        <item>μακρὸς</item>
-                                        <item>στενὸς</item>
-                                        <item>ὑψηλὸς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>η΄</num></label></item>
-                                        <item>μακρὸς</item>
-                                        <item>στενὸς</item>
-                                        <item>σύμμετρος</item>
-                                        <item>ἰσχνὸς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>θ΄</num></label></item>
-                                        <item>μακρὸς</item>
-                                        <item>στενὸς</item>
-                                        <item>ταπεινὸς</item>
-                                        <item>ἰσχνὸς</item>
-                                    </list>
-                                    <pb n="505"/>
-                                    <list rend="row">
-                                        <item><label><num>ι΄</num></label></item>
-                                        <item>σύμμετρος</item>
-                                        <item>πλατὺς</item>
-                                        <item>ὑψηλὸς</item>
-                                        <item>ἁδρὸς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>ια΄</num></label></item>
-                                        <item>σύμμετρος</item>
-                                        <item>πλατὺς</item>
-                                        <item>σύμμετρος</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>ιβ΄</num></label></item>
-                                        <item>σύμμετρος</item>
-                                        <item>πλατὺς</item>
-                                        <item>ταπεινὸς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>ιγ΄</num></label></item>
-                                        <item>σύμμετρος</item>
-                                        <item>σύμμετρος</item>
-                                        <item>ὑψηλὸς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>ιδ΄</num></label></item>
-                                        <item>σύμμετρος</item>
-                                        <item>σύμμετρος</item>
-                                        <item>σύμμετρος</item>
-                                        <item>μέσος</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>ιε΄</num></label></item>
-                                        <item>σύμμετρος</item>
-                                        <item>σύμμετρος</item>
-                                        <item>ταπεινὸς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>ις΄</num></label></item>
-                                        <item>σύμμετρος</item>
-                                        <item>στενὸς</item>
-                                        <item>ὑψηλὸς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>ιζ΄</num></label></item>
-                                        <item>σύμμετρος</item>
-                                        <item>στενὸς</item>
-                                        <item>σύμμετρος</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>ιη΄</num></label></item>
-                                        <item>σύμμετρος</item>
-                                        <item>στενὸς</item>
-                                        <item>ταπεινὸς</item>
-                                        <item>ἰσχνὸς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>ιθ΄</num></label></item>
-                                        <item>βραχὺς</item>
-                                        <item>πλατὺς</item>
-                                        <item>ὑψηλὸς</item>
-                                        <item>ἁδρὸς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>κ΄</num></label></item>
-                                        <item>βραχὺς</item>
-                                        <item>πλατὺς</item>
-                                        <item>σύμμετρος</item>
-                                        <item>ἁδρὸς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>κα΄</num></label></item>
-                                        <item>βραχὺς</item>
-                                        <item>πλατὺς</item>
-                                        <item>ταπεινὸς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>κβ΄</num></label></item>
-                                        <item>βραχὺς</item>
-                                        <item>σύμμετρος</item>
-                                        <item>ὑψηλὸς</item>
-                                        <item>ἁδρὸς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>κγ΄</num></label></item>
-                                        <item>βραχὺς</item>
-                                        <item>σύμμετρος</item>
-                                        <item>σύμμετρος</item>
-                                        <item>ἁδρὸς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>κδ΄</num></label></item>
-                                        <item>βραχὺς</item>
-                                        <item>σύμμετρος</item>
-                                        <item>ταπεινὸς</item>
-                                    </list>
-                                    <pb n="506"/>
-                                    <list rend="row">
-                                        <item><label><num>κε΄</num></label></item>
-                                        <item>βραχὺς</item>
-                                        <item>στενὸς</item>
-                                        <item>ὑψηλὸς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>κς΄</num></label></item>
-                                        <item>βραχὺς</item>
-                                        <item>στενὸς</item>
-                                        <item>σύμμετρος</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>κζ΄</num></label></item>
-                                        <item>βραχὺς</item>
-                                        <item>στενὸς</item>
-                                        <item>ταπεινὸς</item>
-                                        <item>μικρὸς</item>
-                                    </list>
-                                </item>
-                            </list>
-                        </figure>
-                        <p>
-                            <milestone unit="ed1page" n="10"/>Ὄντων δὴ τούτων ἑπτὰ καὶ εἴκοσι
+               <milestone unit="ed2page" n="18"/>
+               <figure>
+                  <graphic url="https://babel.hathitrust.org/cgi/pt?id=hvd.hxpp8p;view=2up;seq=514"/>
+                  <list rend="table">
+                     <item>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>α΄</num>
+                              </label>
+                           </item>
+                           <item>μακρὸς</item>
+                           <item>πλατὺς</item>
+                           <item>ὑψηλὸς</item>
+                           <item>μέγας</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>β΄</num>
+                              </label>
+                           </item>
+                           <item>μακρὸς</item>
+                           <item>πλατὺς</item>
+                           <item>σύμμετρος</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>γ΄</num>
+                              </label>
+                           </item>
+                           <item>μακρὸς</item>
+                           <item>πλατὺς</item>
+                           <item>ταπεινὸς</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>δ΄</num>
+                              </label>
+                           </item>
+                           <item>μακρὸς</item>
+                           <item>σύμμετρος</item>
+                           <item>ὑψηλὸς</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>ε΄</num>
+                              </label>
+                           </item>
+                           <item>μακρὸς</item>
+                           <item>σύμμετρος</item>
+                           <item>σύμμετρος</item>
+                           <item>ἰσχνὸς</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>ς΄</num>
+                              </label>
+                           </item>
+                           <item>μακρὸς</item>
+                           <item>σύμμετρος</item>
+                           <item>ταπεινὸς</item>
+                           <item>ἰσχνὸς</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>ζ΄</num>
+                              </label>
+                           </item>
+                           <item>μακρὸς</item>
+                           <item>στενὸς</item>
+                           <item>ὑψηλὸς</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>η΄</num>
+                              </label>
+                           </item>
+                           <item>μακρὸς</item>
+                           <item>στενὸς</item>
+                           <item>σύμμετρος</item>
+                           <item>ἰσχνὸς</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>θ΄</num>
+                              </label>
+                           </item>
+                           <item>μακρὸς</item>
+                           <item>στενὸς</item>
+                           <item>ταπεινὸς</item>
+                           <item>ἰσχνὸς</item>
+                        </list>
+                        <pb n="505"/>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>ι΄</num>
+                              </label>
+                           </item>
+                           <item>σύμμετρος</item>
+                           <item>πλατὺς</item>
+                           <item>ὑψηλὸς</item>
+                           <item>ἁδρὸς</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>ια΄</num>
+                              </label>
+                           </item>
+                           <item>σύμμετρος</item>
+                           <item>πλατὺς</item>
+                           <item>σύμμετρος</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>ιβ΄</num>
+                              </label>
+                           </item>
+                           <item>σύμμετρος</item>
+                           <item>πλατὺς</item>
+                           <item>ταπεινὸς</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>ιγ΄</num>
+                              </label>
+                           </item>
+                           <item>σύμμετρος</item>
+                           <item>σύμμετρος</item>
+                           <item>ὑψηλὸς</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>ιδ΄</num>
+                              </label>
+                           </item>
+                           <item>σύμμετρος</item>
+                           <item>σύμμετρος</item>
+                           <item>σύμμετρος</item>
+                           <item>μέσος</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>ιε΄</num>
+                              </label>
+                           </item>
+                           <item>σύμμετρος</item>
+                           <item>σύμμετρος</item>
+                           <item>ταπεινὸς</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>ις΄</num>
+                              </label>
+                           </item>
+                           <item>σύμμετρος</item>
+                           <item>στενὸς</item>
+                           <item>ὑψηλὸς</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>ιζ΄</num>
+                              </label>
+                           </item>
+                           <item>σύμμετρος</item>
+                           <item>στενὸς</item>
+                           <item>σύμμετρος</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>ιη΄</num>
+                              </label>
+                           </item>
+                           <item>σύμμετρος</item>
+                           <item>στενὸς</item>
+                           <item>ταπεινὸς</item>
+                           <item>ἰσχνὸς</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>ιθ΄</num>
+                              </label>
+                           </item>
+                           <item>βραχὺς</item>
+                           <item>πλατὺς</item>
+                           <item>ὑψηλὸς</item>
+                           <item>ἁδρὸς</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>κ΄</num>
+                              </label>
+                           </item>
+                           <item>βραχὺς</item>
+                           <item>πλατὺς</item>
+                           <item>σύμμετρος</item>
+                           <item>ἁδρὸς</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>κα΄</num>
+                              </label>
+                           </item>
+                           <item>βραχὺς</item>
+                           <item>πλατὺς</item>
+                           <item>ταπεινὸς</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>κβ΄</num>
+                              </label>
+                           </item>
+                           <item>βραχὺς</item>
+                           <item>σύμμετρος</item>
+                           <item>ὑψηλὸς</item>
+                           <item>ἁδρὸς</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>κγ΄</num>
+                              </label>
+                           </item>
+                           <item>βραχὺς</item>
+                           <item>σύμμετρος</item>
+                           <item>σύμμετρος</item>
+                           <item>ἁδρὸς</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>κδ΄</num>
+                              </label>
+                           </item>
+                           <item>βραχὺς</item>
+                           <item>σύμμετρος</item>
+                           <item>ταπεινὸς</item>
+                        </list>
+                        <pb n="506"/>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>κε΄</num>
+                              </label>
+                           </item>
+                           <item>βραχὺς</item>
+                           <item>στενὸς</item>
+                           <item>ὑψηλὸς</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>κς΄</num>
+                              </label>
+                           </item>
+                           <item>βραχὺς</item>
+                           <item>στενὸς</item>
+                           <item>σύμμετρος</item>
+                        </list>
+                        <list rend="row">
+                           <item>
+                              <label>
+                                 <num>κζ΄</num>
+                              </label>
+                           </item>
+                           <item>βραχὺς</item>
+                           <item>στενὸς</item>
+                           <item>ταπεινὸς</item>
+                           <item>μικρὸς</item>
+                        </list>
+                     </item>
+                  </list>
+               </figure>
+               <p>
+                  <milestone unit="ed1page" n="10"/>Ὄντων δὴ τούτων ἑπτὰ καὶ εἴκοσι
                             σφυγμῶν, τῶν <lb/>κατὰ τὸ ποσὸν, ἐν ταῖς τρισὶν ἅμα διαστάσεσι
                             συνισταμένων, <lb/>δύο μὲν ἔχουσιν ἐξ αὐτῶν ὀνόματα πρὸς ἁπάντων
                             ὁμολογούμενα, <lb/>ὅ τε πρῶτος ἐν αὐτοῖς γεγραμμένος καὶ ὁ ἔσχατος.
@@ -500,9 +620,9 @@
                             μακρὸς καὶ πλατὺς καὶ ὑψηλός. καὶ <lb/>αὖθις ἑτέρου σφυγμοῦ λόγος μὲν,
                             βραχὺς, πλατὺς, ταπεινὸς, <lb/>ὄνομα δὲ οὐδέν ἐστιν ἀλλὰ περὶ μὲν τούτων
                             καὶ αὖθις <lb/>ἐροῦμεν. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="5">
-                        <p>Νυνὶ δὲ μεταβάντες ἐπὶ τὸ τρίτον γένος τῶν <lb/>σφυγμῶν τὸ κατὰ τὸν
+            </div>
+            <div n="5" type="chapter">
+               <p>Νυνὶ δὲ μεταβάντες ἐπὶ τὸ τρίτον γένος τῶν <lb/>σφυγμῶν τὸ κατὰ τὸν
                             τόνον, εἴπωμεν καὶ τὰς τούτου διαφοράς. <lb/>εἰσὶ δὲ τρεῖς, ὁ μέν τις
                             εὔρωστος τῷ τόνῳ. καλεῖται <lb/>δὲ σφοδρός. ὁ δέ τις ἄῤῥωστος, ὃν
                             ἀμυδρὸν ὀνομάζουσι. <lb/>τοῦ μέσου δ’ αὐτῶν οὐκ ἔστιν ἴδιον ὄνομα, ἀλλὰ
@@ -529,9 +649,9 @@
                             καὶ ἡ καθ’ ἕκαστον ὁμαλότης <lb/>αὐτῶν τε καὶ ἀνωμαλία, ἧς τὰς διαφορὰς
                             ἐροῦμεν, ὅταν καὶ <lb/>περὶ τῆς ἑτέρας ἀνωμαλίας τῆς ἐν πλείοσι
                             συνισταμένης σφυγμοῖς <lb/>λέγωμεν. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="6">
-                        <p>Αἱ δ’ ἄλλαι διαφοραὶ τῶν σφυγμῶν τοῖς <lb/>μὲν μηδ’ ὅλως αἰσθάνεσθαι
+            </div>
+            <div n="6" type="chapter">
+               <p>Αἱ δ’ ἄλλαι διαφοραὶ τῶν σφυγμῶν τοῖς <lb/>μὲν μηδ’ ὅλως αἰσθάνεσθαι
                             λέγουσι τῆς συστολῆς, ἔν τε τῷ <pb n="510"/> χρόνῳ συνίστανται τῶν
                             διαλειμμάτων, οὕτω γὰρ ὀνομάζουσι <lb/>τὸν μεταξὺ χρόνον τῶν αἰσθητῶν
                             κινήσεων, καὶ προσέτι τῷ <lb/>λόγῳ τοῦ τε τῆς κινήσεως αὐτῆς χρόνου καὶ
@@ -541,7 +661,7 @@
                             <lb/>καλοῦσιν, ἕτεραί τε συνίστανται καὶ πολλῷ πλείους γίνονται.
                             <lb/>δίκαιον οὖν ὑπὲρ ἑκατέρων ἰδίᾳ σαφέστερον εἰπεῖν, καὶ <lb/>περὶ
                             προτέρου γε τῶν μόνης τῆς διαστολῆς αἰσθάνεσθαι φασκόντων· <lb/>
-                            <milestone unit="ed2page" n="20"/>ἵν’ ἐν τοῖς ἑτοιμοτέροις γνωσθῆναι
+                  <milestone unit="ed2page" n="20"/>ἵν’ ἐν τοῖς ἑτοιμοτέροις γνωσθῆναι
                             γυμνασάμενοι <lb/>ῥᾷον ἑπώμεθα τοῖς χαλεπωτέροις. πληττομένης δὴ
                             <lb/>τῆς ἁφῆς κατὰ τὴν προσβολὴν τῆς ἀρτηρίας, τῶν τε ἄλλων <lb/>ὧν
                             εἶπον ἔμπροσθεν αἰσθανόμεθα καὶ χρόνου τοῦ παρεκτεινομένου <lb/>τῇ
@@ -572,9 +692,9 @@
                             ἔφασαν, ἕτεροι δὲ σχέσιν εἶναι δυοῖν χρόνοιν πρὸς ἀλλήλους, <lb/>τοῦ τῆς
                             πληγῆς πρὸς τὸν τοῦ διαλείμματος. αὕτη <lb/>μὲν ἡ κατὰ τοὺς προτέρους
                             διδασκαλία. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="7">
-                        <p>Μεταβῶμεν δ’ ἐπὶ τοὺς αἰσθάνεσθαι φάσκοντας <lb/>τῆς συστολῆς, βραδύτητα
+            </div>
+            <div n="7" type="chapter">
+               <p>Μεταβῶμεν δ’ ἐπὶ τοὺς αἰσθάνεσθαι φάσκοντας <lb/>τῆς συστολῆς, βραδύτητα
                             μὲν καὶ τάχος ὁμοίως ἐκείνοις <lb/>ἐν τῷ τῆς διαστολῆς χρόνῳ τιθεμένους,
                             ἤδη δὲ κᾀν τῷ <lb/>τῆς συστολῆς, οὐ μὴν τήν γε πυκνότητα καὶ τὴν
                             ἀραιότητα <lb/>καὶ τὸν ῥυθμὸν ἔθ’ ὡσαύτως ἐκείνοις, ἀλλὰ τὴν μὲν
@@ -612,9 +732,9 @@
                             <lb/>καὶ τί δηλοῦν ἑκάστη τροπὴ πέφυκεν, ὃ τῇ τε τῆς <lb/>αἰτίας εὑρέσει
                             καὶ τῇ μακρᾷ πείρᾳ λαμβάνεται, καὶ ἡμεῖς <lb/>περὶ αὐτῶν ἑτέρωθι
                             λέγομεν. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="8">
-                        <p>Ἐν δὲ τῷ παρόντι τὰς διαφορὰς ἔτι προσθέντες <lb/>τῶν δύο τούτων γενῶν
+            </div>
+            <div n="8" type="chapter">
+               <p>Ἐν δὲ τῷ παρόντι τὰς διαφορὰς ἔτι προσθέντες <lb/>τῶν δύο τούτων γενῶν
                             τῶν νῦν εἰρημένων, τοῦ τε κατὰ τὴν ἠρεμίαν <lb/>καὶ τοῦ κατὰ τὸν ῥυθμὸν,
                             ἐπὶ τὰ συνεχῆ τοῦ λόγου μεταβαίνωμεν. <lb/>ἐν μὲν δὴ τῷ κατὰ τὴν ἡσυχίαν
                             τῆς ἀρτηρίας γένει <pb n="515"/> τρεῖς διαφοραὶ συνίστανται σφυγμῶν,
@@ -659,9 +779,9 @@
                             ῥυθμῶν. <lb/>ὅσον γὰρ ἐκ τούτου τοῦ γένους τῶν σφυγμῶν, τὸ δυνατόν
                             <lb/>τε καὶ χρήσιμον, ἢ ἀδύνατόν τε καὶ ἄχρηστον, ἔν τε τοῖς <lb/>περὶ
                             διαγνώσεως αὐτῶν καὶ ἐν τοῖς περὶ προγνώσεως <lb/>εἰρήσεται. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="9">
-                        <p>Ἀλλ’ ἐπὶ τὰ λοιπὰ δύο γένη μεταβαίνωμεν <lb/>ἤδη· τὸ μὲν ἕτερον ἐν ᾧ τήν
+            </div>
+            <div n="9" type="chapter">
+               <p>Ἀλλ’ ἐπὶ τὰ λοιπὰ δύο γένη μεταβαίνωμεν <lb/>ἤδη· τὸ μὲν ἕτερον ἐν ᾧ τήν
                             τε ὁμαλότητα καὶ τὴν ἀνωμαλίαν <lb/>ἐπισκοπούμεθα, τὸ δ’ ἕτερον ἐν ᾧ
                             τάξιν τε καὶ ἀταξίαν. <lb/>ὁμαλότης μὲν οὖν καὶ ἀνωμαλία καθ’ ἕνα τε
                             σφυγμὸν καὶ ﻿<pb n="518"/> περὶ πλείονας γίνεται. τάξις δὲ καὶ ἀταξία
@@ -746,12 +866,11 @@
                             οὔκουν ἐπὶ πλέον ἡμᾶς δεήσει ἔτι τὰς <lb/>διαφορὰς αὐτῶν ἐπεξιέναι, ἀλλ’
                             ἐπὶ τὰς κατὰ τὴν ἀνωμαλίαν <lb/>ἐλθόντας εἰπεῖν προτέρας μὲν τὰς
                             συστηματικὰς, ἑξῆς δὲ <lb/>τὰς καθ’ ἕνα σφυγμόν. </p>
-                    </div>
-                    <pb n="523"/>
-
-                    <div type="textpart" subtype="chapter" n="10">
-                        <p>
-                            <milestone unit="ed2page" n="24"/>Αἱ μέντοι συστηματικαὶ τῶν ἀνωμαλιῶν,
+            </div>
+            <pb n="523"/>
+            <div n="10" type="chapter">
+               <p>
+                  <milestone unit="ed2page" n="24"/>Αἱ μέντοι συστηματικαὶ τῶν ἀνωμαλιῶν,
                             <lb/>ἐν ἀθροίσματι δ’ αὗται πλειόνων, ὡς ἔφαμεν, σφυγμῶν
                             <lb/>συνίστανται, πρώτην μὲν ἔχουσι διαφορὰν, καθ’ ἣν ὁτὲ <lb/>μὲν
                             ὁμαλῶς, ὁτὲ δὲ ἀνωμάλως γίγνονται, καὶ οὐ χρὴ θαυμάζειν <lb/>εἰ ὁμαλήν
@@ -780,9 +899,9 @@
                             ἔλαττον· καὶ <lb/>τινὲς μὲν ἐν αἷς ἔμ<milestone unit="ed1page" n="13"/>προσθεν ἐμειώθησαν ὑπεροχαῖς, ἐν <lb/>ταύταις αὖθις αὐξάνονται· τινὲς
                             δ’ ἐλάττοσιν ἢ μείζοσι προσθέσεσι <lb/>χρῶνται. τοιαῦται μέν τινες αἱ
                             ὁμαλαὶ τῶν ἀνωμαλιῶν <lb/>εἰσι διαφοραί. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="11">
-                        <p>Τῶν δ’ ἀνωμάλων ἀνωμαλιῶν τινὲς μὲν <lb/>οὐδεμίαν ὅλως φυλάττουσιν
+            </div>
+            <div n="11" type="chapter">
+               <p>Τῶν δ’ ἀνωμάλων ἀνωμαλιῶν τινὲς μὲν <lb/>οὐδεμίαν ὅλως φυλάττουσιν
                             ἰσότητα, τινὲς δὲ μέχρι μὲν τριῶν, <lb/>ἢ τεττάρων, ἢ πέντε σφυγμῶν
                             φυλάττουσι, διαφθείρουσι δ’ ὕστερον. <lb/>ἐν ἑκατέραις δ’ αὐτῶν ἤτοι
                             τάξις, ἢ ἀταξία συνίσταται· <pb n="525"/> τάξις μὲν, εἰ περιόδους τινὰς
@@ -809,9 +928,9 @@
                             ἢ καὶ τριῶν, ἢ καὶ πλειόνων ἔτι σφυγμῶν χρόνον <lb/>ἀκίνητος εἶναι
                             δόξασα παντάπασιν ἡ ἀρτηρία πάλιν ὑπάρξηται <lb/>κινεῖσθαι. ταυτὶ μὲν
                             καὶ τὰ τῆς συστηματικῆς ἀνωμαλίας <lb/>εἴδη. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="12">
-                        <p>Ὑπόλοιπον δ’ ἂν εἴη τῆς καθ’ ἕνα σφυγμὸν <lb/>ἀνωμαλίας εἰπεῖν τὰς
+            </div>
+            <div n="12" type="chapter">
+               <p>Ὑπόλοιπον δ’ ἂν εἴη τῆς καθ’ ἕνα σφυγμὸν <lb/>ἀνωμαλίας εἰπεῖν τὰς
                             διαφοράς. ἔστι δὲ κᾀνταῦθα παραπλήσιος <lb/>ὁ λόγος ἐφ’ ἑκάστου τε τῶν
                             γενῶν καὶ πάντων <lb/>ὁμοῦ. τὸν μὲν γὰρ ἁπλῶς ὁμαλὸν καλέσομεν, τὸν δὲ
                             <lb/>ἁπλῶς ἀνώμαλον, τὸν δὲ καθ’ ἓν ὁτιοῦν γένος, ἐν ᾧ διαφθείρεσθαι
@@ -833,9 +952,9 @@
                             διακοπτούσης τὴν κίνησιν τοῦ μορίου, ποτὲ συνεχοῦς <lb/>μὲν φαινομένης
                             αὐτῆς, οὐ μὴν ἰσοταχοῦς, ποτὲ δὲ ἐπανερχομένης. <lb/>ἐν ἑκάστῃ δ’ αὐτῶν
                             κατὰ μέρος ἕτεραι. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="13">
-                        <p>Περὶ πρώτης οὖν εἴπωμεν τῆς πρῶτον ῥηθείσης, <lb/>ἐν ᾗ διακόπτεσθαι τὴν
+            </div>
+            <div n="13" type="chapter">
+               <p>Περὶ πρώτης οὖν εἴπωμεν τῆς πρῶτον ῥηθείσης, <lb/>ἐν ᾗ διακόπτεσθαι τὴν
                             κίνησιν ὑπὸ τῆς ἠρεμίας συμβέβηκεν. <lb/>εὑρίσκονται δὲ ἐν αὐτῇ διαφοραὶ
                             σφυγμῶν ἐννέα, <lb/>τρόπῳ τῷδε συνιστάμεναι. τῆς προτέρας κινήσεως
                             ὠκείας ﻿<pb n="528"/> οὔσης, ἡ δευτέρα τὰς τρεῖς τρεπέσθω τροπὰς, ἢ
@@ -844,10 +963,10 @@
                             <lb/>ὑπαλλαττομένης δὲ τῆς δευτέρας τριχῶς, καὶ αὖθις <lb/>δ’ ἄλλαι
                             τρεῖς, τῆς προτέρας μενούσης συμμέτρου, τῆς δὲ <lb/>δευτέρας τριχῶς
                             τρεπομένης. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="14">
-                        <p>
-                            <milestone unit="ed2page" n="26"/>Τῶν δὲ μὴ διαλειπόντων κατὰ τὴν
+            </div>
+            <div n="14" type="chapter">
+               <p>
+                  <milestone unit="ed2page" n="26"/>Τῶν δὲ μὴ διαλειπόντων κατὰ τὴν
                             <lb/>διαστολὴν ἀνωμάλων σφυγμῶν ἐν τῇ κινήσει, ἀλλ’ ἑξῆς ἀεὶ <lb/>μίαν
                             τὴν ἀνωμαλίαν ἐχόντων μηδαμοῦ σχιζομένην ἀκινησίᾳ, <lb/>τινὲς μὲν ὠκέως
                             ἀρχόμενοι κινήσεως, βραδύνουσι τελευτῶντες, <lb/>ἄλλοι δ’ ἔμπαλιν
@@ -881,15 +1000,15 @@
                             <lb/>καὶ περὶ τῶν ἄλλων ἁπάντων ἢ τὰς αἰτίας ἢ ὅ τι δηλοῦν
                             <lb/>πεφύκασιν ἐπισκεπτώμεθα. νυνὶ δὲ τὰς διαφορὰς μόνον <lb/>ἐπέξιμεν.
                         </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="15">
-                        <p>Εἰρηκότες οὖν ἱκανῶς, ὅτι τῶν ἀνωμάλων <lb/>καθ’ ἓν μόριον σφυγμῶν, ὅταν
+            </div>
+            <div n="15" type="chapter">
+               <p>Εἰρηκότες οὖν ἱκανῶς, ὅτι τῶν ἀνωμάλων <lb/>καθ’ ἓν μόριον σφυγμῶν, ὅταν
                             ὁμαλὴν ποιῶνται τὴν ἀνωμαλίαν, <lb/>ἕξ εἰσιν αἱ πᾶσαι διαφοραὶ, καὶ ὡς
                             οὐχ εὑρήκαμεν <lb/>οὐδένα τῶν τοιούτων οὔτ’ ἀπὸ τῆς βραδυτάτης κινήσεως
                             <lb/>εἰς τὴν ταχίστην οὔτ’ ἀπ’ ἐκείνης εἰς τὴν βραδυτάτην
                             <lb/>τελευτήσαντα, περὶ τῶν ἀνώμαλον τὴν τροπὴν ποιουμένων <lb/>ἤδη
                             λέγωμεν, ἐν οἷς ποτὲ μὲν δύο, ποτὲ δὲ τρεῖς <lb/>
-                            <milestone unit="ed1page" n="14"/>σαφῶς φαίνονται διαφοραὶ τῆς κινήσεως.
+                  <milestone unit="ed1page" n="14"/>σαφῶς φαίνονται διαφοραὶ τῆς κινήσεως.
                             ἡμῖν δὲ καὶ <lb/>τετάρτη ποτὲ ἀμυδρῶς ἐφαντάσθη. τάχα δ’ ἄν τις ἐπὶ
                             <lb/>πλέον τριβόμενος καὶ προσεδρεύων τῷ πράγματι καὶ <lb/>ἀσκῶν τὴν
                             ἁφὴν καὶ τέτταρας γνωρίσαι σαφῶς δυνηθείη. <pb n="531"/> ἀλλὰ νῦν περὶ
@@ -912,240 +1031,384 @@
                             ταχὺν, ἢ τοῦ βραδέος <pb n="532"/> πρὸς τὸν βραδὺν, τοῦτο νῦν παρείσθω.
                             πλέονα γὰρ ἀσάφειαν <lb/>παρέξει. ἀλλ’ ὡς τῶν αὐτῶν καὶ ἴσων ἀλλήλοις
                             <lb/>ὑπαρχόντων ὁ παρὼν λόγος περαινέσθω.</p>
-                        <figure>
-                            <graphic url="https://babel.hathitrust.org/cgi/pt?id=hvd.hxpp8p;view=2up;seq=542"></graphic>
-                            <figDesc><list rend="table">
-                                <item>
-                                    <list rend="row">
-                                        <item><label><num>α΄</num></label></item>
-                                        <item>ταχὺς</item>
-                                        <item>βραδὺς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>β΄</num></label></item>
-                                        <item>ταχὺς</item>
-                                        <item>ταχὺς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>γ΄</num></label></item>
-                                        <item>ταχὺς</item>
-                                        <item>σύμμετρος</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>δ΄</num></label></item>
-                                        <item>βραδὺς</item>
-                                        <item>βραδὺς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>ε΄</num></label></item>
-                                        <item>βραδὺς</item>
-                                        <item>ταχὺς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>ς΄</num></label></item>
-                                        <item>βραδὺς</item>
-                                        <item>σύμμετρος</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>ζ΄</num></label></item>
-                                        <item>σύμμετρος</item>
-                                        <item>βραδὺς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>η΄</num></label></item>
-                                        <item>σύμμετρος</item>
-                                        <item>ταχὺς</item>
-                                    </list>
-                                    <list rend="row">
-                                        <item><label><num>θ΄</num></label></item>
-                                        <item>σύμμετρος</item>
-                                        <item>σύμμετρος</item>
-                                    </list>
-                                </item>
-                            </list></figDesc>
-                        </figure>
-                        <p>Οὕτω δὲ καὶ εἰ τρεῖς ὑποθέμενος διαφερούσας ἀλλήλων κινήσεις, <lb/>καθ’
+               <figure>
+                  <graphic url="https://babel.hathitrust.org/cgi/pt?id=hvd.hxpp8p;view=2up;seq=542"/>
+                  <figDesc>
+                     <list rend="table">
+                        <item>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>α΄</num>
+                                 </label>
+                              </item>
+                              <item>ταχὺς</item>
+                              <item>βραδὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>β΄</num>
+                                 </label>
+                              </item>
+                              <item>ταχὺς</item>
+                              <item>ταχὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>γ΄</num>
+                                 </label>
+                              </item>
+                              <item>ταχὺς</item>
+                              <item>σύμμετρος</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>δ΄</num>
+                                 </label>
+                              </item>
+                              <item>βραδὺς</item>
+                              <item>βραδὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>ε΄</num>
+                                 </label>
+                              </item>
+                              <item>βραδὺς</item>
+                              <item>ταχὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>ς΄</num>
+                                 </label>
+                              </item>
+                              <item>βραδὺς</item>
+                              <item>σύμμετρος</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>ζ΄</num>
+                                 </label>
+                              </item>
+                              <item>σύμμετρος</item>
+                              <item>βραδὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>η΄</num>
+                                 </label>
+                              </item>
+                              <item>σύμμετρος</item>
+                              <item>ταχὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>θ΄</num>
+                                 </label>
+                              </item>
+                              <item>σύμμετρος</item>
+                              <item>σύμμετρος</item>
+                           </list>
+                        </item>
+                     </list>
+                  </figDesc>
+               </figure>
+               <p>Οὕτω δὲ καὶ εἰ τρεῖς ὑποθέμενος διαφερούσας ἀλλήλων κινήσεις, <lb/>καθ’
                             ἑκάστην αὐτῶν τοὺς τρεῖς σφυγμοὺς ὑπαλλάττων ﻿<pb n="533"/> συμπλέκοις,
                             ἑπτὰ μὲν καὶ εἴκοσιν ἔσται τὰ πάντα σχήματα, <lb/>τρία δ’ ἐξ αὐτῶν εἰς
                             ὁμαλότητα μεταπεσεῖν ἀναγκαῖον. ἔστι <lb/>δὲ καὶ τοῦτο δῆλον ἐπὶ
                             διαγράμματος.</p>
-                        <figure>
-                            <graphic url="https://babel.hathitrust.org/cgi/pt?id=hvd.hxpp8p;page=root;view=image;size=100;seq=543;num=533"></graphic>
-                        <figDesc>
-                           <list rend="table">
-                            <item>
-                                <list rend="row">
-                                    <item><label><num>α΄</num></label></item>
-                                    <item>ταχὺς</item>
-                                    <item>ταχὺς</item>
-                                    <item>βραδὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>β΄</num></label></item>
-                                    <item>ταχὺς</item>
-                                    <item>ταχὺς</item>
-                                    <item>ταχὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>γ΄</num></label></item>
-                                    <item>ταχὺς</item>
-                                    <item>ταχὺς</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>δ΄</num></label></item>
-                                    <item>ταχὺς</item>
-                                    <item>βραδὺς</item>
-                                    <item>βραδὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ε΄</num></label></item>
-                                    <item>ταχὺς</item>
-                                    <item>βραδὺς</item>
-                                    <item>ταχὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ς΄</num></label></item>
-                                    <item>ταχὺς</item>
-                                    <item>βραδὺς</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ζ΄</num></label></item>
-                                    <item>ταχὺς</item>
-                                    <item>σύμμετρος</item>
-                                    <item>βραδὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>η΄</num></label></item>
-                                    <item>ταχὺς</item>
-                                    <item>σύμμετρος</item>
-                                    <item>ταχὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>θ΄</num></label></item>
-                                    <item>ταχὺς</item>
-                                    <item>σύμμετρος</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ι΄</num></label></item>
-                                    <item>βραδὺς</item>
-                                    <item>ταχὺς</item>
-                                    <item>βραδὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ια΄</num></label></item>
-                                    <item>βραδὺς</item>
-                                    <item>ταχὺς</item>
-                                    <item>ταχὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ιβ΄</num></label></item>
-                                    <item>βραδὺς</item>
-                                    <item>ταχὺς</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                                <pb n="534"/>
-                                <list rend="row">
-                                    <item><label><num>ιγ΄</num></label></item>
-                                    <item>βραδὺς</item>
-                                    <item>βραδὺς</item>
-                                    <item>βραδὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ιδ΄</num></label></item>
-                                    <item>βραδὺς</item>
-                                    <item>βραδὺς</item>
-                                    <item>ταχὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ιε΄</num></label></item>
-                                    <item>βραδὺς</item>
-                                    <item>βραδὺς</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ις΄</num></label></item>
-                                    <item>βραδὺς</item>
-                                    <item>σύμμετρος</item>
-                                    <item>βραδὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ιζ΄</num></label></item>
-                                    <item>βραδὺς</item>
-                                    <item>σύμμετρος</item>
-                                    <item>ταχὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ιη΄</num></label></item>
-                                    <item>βραδὺς</item>
-                                    <item>σύμμετρος</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ιθ΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>ταχὺς</item>
-                                    <item>βραδὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>κ΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>ταχὺς</item>
-                                    <item>ταχὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>κα΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>ταχὺς</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                                <milestone unit="ed2page" n="28"/>
-                                <list rend="row">
-                                    <item><label><num>κβ΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>βραδὺς</item>
-                                    <item>βραδὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>κγ΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>βραδὺς</item>
-                                    <item>ταχὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>κδ΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>βραδὺς</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>κε΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>σύμμετρος</item>
-                                    <item>βραδὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>κς΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>σύμμετρος</item>
-                                    <item>ταχὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>κζ΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>σύμμετρος</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                            </item>
+               <figure>
+                  <graphic url="https://babel.hathitrust.org/cgi/pt?id=hvd.hxpp8p;page=root;view=image;size=100;seq=543;num=533"/>
+                  <figDesc>
+                     <list rend="table">
+                        <item>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>α΄</num>
+                                 </label>
+                              </item>
+                              <item>ταχὺς</item>
+                              <item>ταχὺς</item>
+                              <item>βραδὺς</item>
                            </list>
-                       </figDesc>
-                       </figure>
-
-                        <pb n="535"/>
-
-                        <p>Ὁμαλῶν οὖν ἐν τούτοις τριῶν γενομένων, τοῦ δευτέρου κατὰ <lb/>τὸ
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>β΄</num>
+                                 </label>
+                              </item>
+                              <item>ταχὺς</item>
+                              <item>ταχὺς</item>
+                              <item>ταχὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>γ΄</num>
+                                 </label>
+                              </item>
+                              <item>ταχὺς</item>
+                              <item>ταχὺς</item>
+                              <item>σύμμετρος</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>δ΄</num>
+                                 </label>
+                              </item>
+                              <item>ταχὺς</item>
+                              <item>βραδὺς</item>
+                              <item>βραδὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>ε΄</num>
+                                 </label>
+                              </item>
+                              <item>ταχὺς</item>
+                              <item>βραδὺς</item>
+                              <item>ταχὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>ς΄</num>
+                                 </label>
+                              </item>
+                              <item>ταχὺς</item>
+                              <item>βραδὺς</item>
+                              <item>σύμμετρος</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>ζ΄</num>
+                                 </label>
+                              </item>
+                              <item>ταχὺς</item>
+                              <item>σύμμετρος</item>
+                              <item>βραδὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>η΄</num>
+                                 </label>
+                              </item>
+                              <item>ταχὺς</item>
+                              <item>σύμμετρος</item>
+                              <item>ταχὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>θ΄</num>
+                                 </label>
+                              </item>
+                              <item>ταχὺς</item>
+                              <item>σύμμετρος</item>
+                              <item>σύμμετρος</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>ι΄</num>
+                                 </label>
+                              </item>
+                              <item>βραδὺς</item>
+                              <item>ταχὺς</item>
+                              <item>βραδὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>ια΄</num>
+                                 </label>
+                              </item>
+                              <item>βραδὺς</item>
+                              <item>ταχὺς</item>
+                              <item>ταχὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>ιβ΄</num>
+                                 </label>
+                              </item>
+                              <item>βραδὺς</item>
+                              <item>ταχὺς</item>
+                              <item>σύμμετρος</item>
+                           </list>
+                           <pb n="534"/>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>ιγ΄</num>
+                                 </label>
+                              </item>
+                              <item>βραδὺς</item>
+                              <item>βραδὺς</item>
+                              <item>βραδὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>ιδ΄</num>
+                                 </label>
+                              </item>
+                              <item>βραδὺς</item>
+                              <item>βραδὺς</item>
+                              <item>ταχὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>ιε΄</num>
+                                 </label>
+                              </item>
+                              <item>βραδὺς</item>
+                              <item>βραδὺς</item>
+                              <item>σύμμετρος</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>ις΄</num>
+                                 </label>
+                              </item>
+                              <item>βραδὺς</item>
+                              <item>σύμμετρος</item>
+                              <item>βραδὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>ιζ΄</num>
+                                 </label>
+                              </item>
+                              <item>βραδὺς</item>
+                              <item>σύμμετρος</item>
+                              <item>ταχὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>ιη΄</num>
+                                 </label>
+                              </item>
+                              <item>βραδὺς</item>
+                              <item>σύμμετρος</item>
+                              <item>σύμμετρος</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>ιθ΄</num>
+                                 </label>
+                              </item>
+                              <item>σύμμετρος</item>
+                              <item>ταχὺς</item>
+                              <item>βραδὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>κ΄</num>
+                                 </label>
+                              </item>
+                              <item>σύμμετρος</item>
+                              <item>ταχὺς</item>
+                              <item>ταχὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>κα΄</num>
+                                 </label>
+                              </item>
+                              <item>σύμμετρος</item>
+                              <item>ταχὺς</item>
+                              <item>σύμμετρος</item>
+                           </list>
+                           <milestone unit="ed2page" n="28"/>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>κβ΄</num>
+                                 </label>
+                              </item>
+                              <item>σύμμετρος</item>
+                              <item>βραδὺς</item>
+                              <item>βραδὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>κγ΄</num>
+                                 </label>
+                              </item>
+                              <item>σύμμετρος</item>
+                              <item>βραδὺς</item>
+                              <item>ταχὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>κδ΄</num>
+                                 </label>
+                              </item>
+                              <item>σύμμετρος</item>
+                              <item>βραδὺς</item>
+                              <item>σύμμετρος</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>κε΄</num>
+                                 </label>
+                              </item>
+                              <item>σύμμετρος</item>
+                              <item>σύμμετρος</item>
+                              <item>βραδὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>κς΄</num>
+                                 </label>
+                              </item>
+                              <item>σύμμετρος</item>
+                              <item>σύμμετρος</item>
+                              <item>ταχὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>κζ΄</num>
+                                 </label>
+                              </item>
+                              <item>σύμμετρος</item>
+                              <item>σύμμετρος</item>
+                              <item>σύμμετρος</item>
+                           </list>
+                        </item>
+                     </list>
+                  </figDesc>
+               </figure>
+               <pb n="535"/>
+               <p>Ὁμαλῶν οὖν ἐν τούτοις τριῶν γενομένων, τοῦ δευτέρου κατὰ <lb/>τὸ
                             διάγραμμα, καὶ τοῦ τρισκαιδεκάτου καὶ ἑβδόμου καὶ εἰκοστοῦ, <lb/>ταχὺς
                             μὲν ὁ δεύτερος ἔσται, βραδὺς δὲ ὁ τρισκαιδέκατος, <lb/>μέσος δὲ ὁ
                             ὕστατος. ἤδη δὲ καὶ ἄλλοι δέκα δύο <lb/>σφυγμοὶ μεταπίπτουσιν εἰς τὸ
@@ -1181,9 +1444,9 @@
                             σαφῆ, τῶν ἄλλων κατὰ τὰς δύο διαφορὰς ἐχόντων, <lb/>καί εἰσιν ἀπὸ τοῦ
                             πρώτου κατὰ τὴν τάξιν ἀριθμοῦντι <pb n="537"/> πέμπτος τε καὶ στ΄ καὶ ζ΄
                             καὶ η΄ καὶ ι΄ καὶ ιστ΄ καὶ ιθ΄ <lb/>καὶ κα΄ καὶ κγ΄ καὶ κδ΄. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="16">
-                        <p>Ἀρκεῖν μοι δοκεῖ καὶ περὶ τούτων τὰ τοσαῦτα. <lb/>ἐπὶ γὰρ τὴν ἔτι λοιπὴν
+            </div>
+            <div n="16" type="chapter">
+               <p>Ἀρκεῖν μοι δοκεῖ καὶ περὶ τούτων τὰ τοσαῦτα. <lb/>ἐπὶ γὰρ τὴν ἔτι λοιπὴν
                             καὶ τρίτην διαφορὰν τῶν <lb/>καθ’ ἓν μόριον ἀνωμάλων σφυγμῶν ἐπάνιμεν
                             αὖθις, οὓς <lb/>Ἀρχιγένης μὲν ὡς ἕνα γράφει καὶ καλεῖ δίκροτον. εἰσὶ δὲ
                             <lb/>πλείους. ὅσοι δέ τινες καὶ οἷοι, μετ’ ὀλίγον ἐροῦμεν, ἂν
@@ -1248,7 +1511,7 @@
                             οὐδεμία σαφὴς ἡσυχία <lb/>διαιρεῖ, καθάπερ ἐπὶ τῆς συστολῆς φαίνεται,
                             ἀλλ’ εὐθὺς ἅμα <lb/>τῷ παύσασθαι τῆς ἄνω φορᾶς ἡ ὑποχώρησις γίνεται,
                             πρὸς <lb/>ὀλίγον κλονουμένης αὐτῆς, εἶτ’ αὖθις ἐμπιπτούσης· οἷόν τι <pb n="541"/>
-                            <milestone unit="ed2page" n="30"/>καὶ τοῖς πρὸς βίαν ἑλχθεῖσι κλάδοις,
+                  <milestone unit="ed2page" n="30"/>καὶ τοῖς πρὸς βίαν ἑλχθεῖσι κλάδοις,
                             εἶτ’ ἀφεθεῖσι γίγνεται. <lb/>καὶ γὰρ ἐκεῖνοι φέρονται μὲν ἐπὶ τὸν ἐξ
                             ἀρχῆς τόπον, <lb/>οὐ μὴν εὐθὺς ἐν αὐτῷ μένουσιν, ἀλλ’ αὖθις ἀναχωροῦσιν
                             ἐπὶ <lb/>ταὐτὸ, ὅθεν ἠνέχθησαν, καὶ οὐδὲ ἴσην γε διάστασιν ἐπιλαμβάνουσι
@@ -1258,7 +1521,7 @@
                             τέταρτον καὶ πολλάκις, ἔστ’ ἂν κατὰ βραχὺ <lb/>μειοῦντες τὴν ἐπάνοδον,
                             εἰς ἡσυχίαν παντελῆ τελευτήσωσι. <lb/>τοιοῦτόν τι καὶ τῆς ἀρτηρίας
                             κινήσει συμβέβηκεν ἐν τοῖς <lb/>
-                            <milestone unit="ed1page" n="16"/>δικρότοις σφυγμοῖς. ὥστ’ ἔγωγε οὐ
+                  <milestone unit="ed1page" n="16"/>δικρότοις σφυγμοῖς. ὥστ’ ἔγωγε οὐ
                             μόνον ἅπαξ ἐπανιοῦσαν, <lb/>ἀλλὰ καὶ δεύτερον εἶδόν ποτε. καὶ τὸ σύμπαν
                             φάναι, <lb/>κλονώδη πάντως δεῖ τὴν κίνησιν εἶναι τοῦ δικρότου
                             <lb/>σφυγμοῦ, ὥστε καὶ κατ’ αὐτὴν τὴν προτέραν πληγὴν οἷον
@@ -1279,9 +1542,9 @@
                             ἐπαλλάξεις <lb/>πολλὰ ποιεῖν εἴδη τῶν δικρότων σφυγμῶν. αὗται μὲν αἱ
                             <lb/>κατὰ διαστολὴν τῶν δικρότων σφυγμῶν τῆς ἐν ἑνὶ μορίῳ
                             <lb/>συνισταμένης ἀνωμαλίας διαφοραί. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="17">
-                        <p>Μεταβάντες δ’ ἐπὶ τὴν ἐν διαφέρουσι μορίοις, <lb/>εἴπωμεν ἤδη καὶ τὰς
+            </div>
+            <div n="17" type="chapter">
+               <p>Μεταβάντες δ’ ἐπὶ τὴν ἐν διαφέρουσι μορίοις, <lb/>εἴπωμεν ἤδη καὶ τὰς
                             ἐκείνης ἁπάσας διαφορὰς, πρώτας <lb/>μὲν δύο, καθ’ ἃς ἢ συνεχής ἐστιν ἡ
                             κίνησις, ἢ διαλείπουσα <lb/>κατά τι, τὰς δ’ ἄλλας τὰς κατὰ μέρος ἐκ τῆς
                             τούτων τομῆς <lb/>συνισταμένας. ἡ μὲν γὰρ συνεχὴς ἤτοι ὁμαλής ἐστιν, ἢ
@@ -1309,9 +1572,9 @@
                             <lb/>τῶν δὲ ὀκτὼ καὶ ἑβδομήκοντα τοῖς τέσσαρσι καὶ εἴκοσιν, <lb/>ὅτι τε
                             καθάπερ ἐπ’ ἐκείνων, οὕτω καὶ ἐπὶ τούτων αἱρέσεις <lb/>δύο γενήσονται,
                             τῶν μὲν οἰομένων κοινωνεῖν ἀλλήλοις τὰ <lb/>διαγράμματα, τῶν δὲ μή. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="18">
-                        <p>Λοιπὸν δ’ ἂν εἴη τὰς διαλειπούσης τῆς <lb/>κινήσεως γιγνομένης διαφορὰς
+            </div>
+            <div n="18" type="chapter">
+               <p>Λοιπὸν δ’ ἂν εἴη τὰς διαλειπούσης τῆς <lb/>κινήσεως γιγνομένης διαφορὰς
                             ἐξαριθμῆσαι. γενήσονται δὲ <lb/>τέτταρες μὲν αἱ πρῶται, κατὰ μέρος δ’
                             ἑκάστης αὐτῶν <lb/>πλείους, αἱ μὲν τέσσαρες ᾧδέ πως. ἢ γὰρ ὁ πρῶτος καὶ
                             <lb/>τρίτος δάκτυλος αἰσθάνονται τῆς κινήσεως, οὐ μὴν ὁ δεύτερος
@@ -1333,9 +1596,9 @@
                             χαλεπῶς δρᾶσαί τινα αὐτὸ, εἰ μὴ ἀργῶς τὰ μέχρι τοῦδε <lb/>ὑφ’ ἡμῶν
                             γεγραμμένα παρέδραμεν. οὕτως μὲν ἄν τις ἁπάσας <lb/>μάθοι τὰς κατὰ τὴν
                             κίνησιν ἐν μιᾷ διαστολῇ γινομένας <lb/>ἀνωμαλίας. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="19">
-                        <p>Ἡ δὲ κατὰ τὸ ποσὸν τῆς διαστολῆς ἀνωμαλία <lb/>περὶ μὲν τοῖς διαφέρουσι
+            </div>
+            <div n="19" type="chapter">
+               <p>Ἡ δὲ κατὰ τὸ ποσὸν τῆς διαστολῆς ἀνωμαλία <lb/>περὶ μὲν τοῖς διαφέρουσι
                             μορίοις τῆς ἀρτηρίας καὶ <lb/>φαίνεται γιγνομένη πολλάκις καὶ νοηθῆναι
                             ῥᾴστη διαλείπουσά <lb/>τε καὶ συνεχὴς, ὁμαλῶς τε καὶ οὐχ ὁμαλῶς, ἐξ οὗ
                                 <pb n="546"/> γένους εἰσὶν οἵ τε μύουροι καλούμενοι κατὰ μίαν
@@ -1352,10 +1615,10 @@
                             οὖν οἶόν τε καθ’ ἓν μόριον ἀνώμαλον <lb/>ἐν τούτῳ γένει συστῆναι
                             σφυγμόν; ὃς γὰρ, ἵν’ οἷός τίς ἐστι <lb/>γνωσθῇ, δεῖται συμπεπερασμένης
                             τῆς κινήσεως, οὗτος πῶς <lb/>ἂν γνωσθείη γιγνομένης ἔτι; </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="20">
-                        <p>
-                            <milestone unit="ed2page" n="32"/>Ἡ δὲ κατὰ τὸν ζωτικὸν τόνον ἀνωμαλία
+            </div>
+            <div n="20" type="chapter">
+               <p>
+                  <milestone unit="ed2page" n="32"/>Ἡ δὲ κατὰ τὸν ζωτικὸν τόνον ἀνωμαλία
                             <lb/>τὴν αὐτὴν ἐπιδέχεται τομὴν τῇ κατὰ τὴν κίνησιν. ἢ γὰρ <pb n="547"/>
                             περὶ τὸ αὐτὸ μόριον, ἢ ἐν διαφέρουσι συνίσταται. περὶ μὲν <lb/>τὸ αὐτὸ,
                             τριχῶς, ἢ διαλειπούσης τῆς κινήσεως, ἢ συνεχοῦς <lb/>μενούσης, ἢ
@@ -1364,9 +1627,9 @@
                             κατὰ μέρος διαφοραὶ ταῖς ἐπὶ <lb/>τῆς κινήσεως εἰρημέναις. καὶ μὲν δὴ
                             καὶ μίγνυσθαι τὰς περὶ <lb/>ἓν μόριον συνισταμένας ἀνωμαλίας ταῖς ἐν
                             διαφέρουσι γιγνομέναις <lb/>ὡσαύτως, ἀναγκαῖον. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="21">
-                        <p>Ἡ δὲ κατὰ τὸ σῶμα τῆς ἀρτηρίας ἀνωμαλία, <lb/>καθ’ ἣν μαλακὸς, ἢ σκληρὸς
+            </div>
+            <div n="21" type="chapter">
+               <p>Ἡ δὲ κατὰ τὸ σῶμα τῆς ἀρτηρίας ἀνωμαλία, <lb/>καθ’ ἣν μαλακὸς, ἢ σκληρὸς
                             ὁ σφυγμὸς γίνεται, καθ’ ἓν <lb/>μὲν οὐχ οἷον τε μόριον γενέσθαι, κατὰ δὲ
                             διαφέροντα φαίνεται <lb/>συνισταμένη δισσῶς, ὥσπερ ἥ τε κατὰ τὴν κίνησιν
                             καὶ <lb/>ἡ κατὰ τὸν τόνον, ἤτοι <milestone unit="ed1page" n="17"/>συνεχοῦς μενούσης τῆς κινήσεως, <lb/>ἢ διακοπτομένης. ὥστε καὶ τὰς
@@ -1376,9 +1639,9 @@
                             <lb/>ἀνάπαλιν ἀρχομένης μὲν σκληρὸν, τελευτώτης δὲ μαλακόν. ﻿<pb n="548"/> ὥστε κατά γε τοῦτο διαφόρως ἔχει τούτῳ τῷ γένει τῶν σφυγμῶν, <lb/>τῷ
                             κατὰ σκληρότητα καὶ μαλακότητα, τὰ πρόσθεν δύο, <lb/>τό τε κατὰ τὴν
                             κίνησιν καὶ τὸ κατὰ τὸν τόνον. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="22">
-                        <p>Τὸ δὲ κατὰ τὴν ἐγκεχυμένην οὐσίαν τῇ <lb/>κοιλότητι τῆς ἀρτηρίας
+            </div>
+            <div n="22" type="chapter">
+               <p>Τὸ δὲ κατὰ τὴν ἐγκεχυμένην οὐσίαν τῇ <lb/>κοιλότητι τῆς ἀρτηρίας
                             γιγνόμενον γένος σφυγμῶν, ἐν ᾧ καὶ <lb/>ὁ πλήρης καὶ ὁ κενὸς συνίσταται,
                             τὰς αὐτὰς ἐπιδέχεται ζητήσεις <lb/>τῷ προειρημένῳ, τῷ κατὰ τὸ ποσὸν τῆς
                             διαστολῆς. <lb/>δόξει γὰρ κᾀνταῦθα περὶ μὲν τὰ διαφέροντα μόρια δύνασθαι
@@ -1389,9 +1652,9 @@
                             τρίτον σημαινόμενον τῆς πληρότητος, <lb/>ὑπό τε ἄλλων τινῶν καὶ τῶν περὶ
                             τὸν Ἀρχιγένην λεγόμενον. <lb/>ὥστε καὶ αὐτὸ εἰς αὖθις ἀναβεβλήσθω.
                             τοσοῦτον <lb/>δ’ ἔτι τοῖς εἰρημένοις προσθέντες ἐπὶ τὰ ἑξῆς ἴωμεν. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="23">
-                        <p>Ὅτι κατὰ τὸν τῆς ἀρτηρίας τόπον, ἐναργέστερον <lb/>γνωριζομένης τῆς τοῦ
+            </div>
+            <div n="23" type="chapter">
+               <p>Ὅτι κατὰ τὸν τῆς ἀρτηρίας τόπον, ἐναργέστερον <lb/>γνωριζομένης τῆς τοῦ
                             πυρετοῦ θερμότητος οἵα τίς <pb n="549"/> ἐστιν, ἢ εἰ κατ’ ἄλλο τι μόριον
                             ἅπτοιο, πιθανὸν ἔδοξεν εἶναί <lb/>τισι καὶ τοιοῦτον γένος σφυγμῶν
                             συναριθμῆσαι τοῖς ἄλλοις, <lb/>δι’ οὗ τὴν ποιότητα τῆς θερμότητος
@@ -1400,10 +1663,10 @@
                             <lb/>μὲν ἥ τε ἐν διαφέρουσι μορίοις καὶ ἡ περὶ ἓν ὁτιοῦν συνισταμένη,
                             <lb/>τούτων δ’ αὖθις τεμνομένων κατὰ τὰς προγεγραμμένας <lb/>μεθόδους,
                             ἕτεραι πλείους κατὰ μέρος. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="24">
-                        <p>
-                            <milestone unit="ed2page" n="33"/>Ἄλλο γένος ἀνωμαλίας τῆς καθ’ ἕνα
+            </div>
+            <div n="24" type="chapter">
+               <p>
+                  <milestone unit="ed2page" n="33"/>Ἄλλο γένος ἀνωμαλίας τῆς καθ’ ἕνα
                             <lb/>σφυγμὸν, οὐδενὶ τῶν εἰρημένων ὑποπῖπτον σφυγμῶν, τὸ <lb/>παρὰ τὴν
                             θέσιν τῆς ἀρτηρίας. φαίνεται γὰρ ἔσθ’ ὅτε τὸ μέν <lb/>τι μέρος αὐτῆς εἰς
                             τὰ δεξιὰ παρῆσθαι, τὸ δὲ εἰς τὰ ἀριστερὰ, <lb/>καὶ τὸ μὲν ὑψηλότερον
@@ -1412,9 +1675,9 @@
                             φαντασίαν τῇ κατὰ <lb/>τὸ ποσὸν τῆς διαστολῆς ἀνωμαλίᾳ, καὶ ὡς χρὴ
                             διορίζειν αὐτὸ, <lb/>ἐν τοῖς περὶ τῆς τῶν σφυγμῶν διαγνώσεως λέγεται.
                         </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="25">
-                        <p>Ἄλλο γένος ἀνωμαλίας τῆς καθ’ ἕνα σφυγμὸν <lb/>τὸ κυματῶδες καλούμενον,
+            </div>
+            <div n="25" type="chapter">
+               <p>Ἄλλο γένος ἀνωμαλίας τῆς καθ’ ἕνα σφυγμὸν <lb/>τὸ κυματῶδες καλούμενον,
                             οὗ τὴν ἰδέαν δηλοῖ μὲν ἱκανῶς <pb n="550"/> καὶ αὐτὸ τὸ ὄνομα, χεῖρον δ’
                             οὐδὲν ὑπὲρ σαφηνείας εἰπεῖν τι <lb/>καὶ ἡμᾶς. οὐχ ἅμα φαίνεται κατὰ τὴν
                             τοιαύτην ἀνωμαλίαν <lb/>ἡ ἀρτηρία πᾶσα διαστελλομένη, ἀλλὰ τὸ μέν τι
@@ -1453,7 +1716,7 @@
                             αὐτῶν, οὔτε τοῖς κυματώδεσιν οὔτε <lb/>τοῖς σκωληκίζουσι, τὸ εἶναι
                             τοιούτοις δι’ ἄλλην τινὰ πλὴν τῆς <lb/>κατὰ τὸ ποσὸν τῆς διαστολῆς. αὕτη
                             γὰρ μόνη ἡ ἀνωμαλία <lb/>
-                            <milestone unit="ed2page" n="34"/>προσλαβοῦσα τὴν κατὰ τὸ πρότερον καὶ
+                  <milestone unit="ed2page" n="34"/>προσλαβοῦσα τὴν κατὰ τὸ πρότερον καὶ
                             ὕστερον τῶν <lb/>μορίων κίνησιν τοὺς τοιούτους συνίστησι σφυγμοὺς, ὥστ’
                             <lb/>εἶναι σύνθετον τὴν γένεσιν αὐτῶν ἔκ τε τῶν ἀνωμάλων, <lb/>κατὰ τὸ
                             ποσὸν τῆς διαστολῆς ἐν διαφέρουσι μορίοις, καὶ τῶν <lb/>μὴ ἅμα πάντα τὰ
@@ -1466,11 +1729,10 @@
                             φαινομένου, δόγματος δὲ ἕνεκα λέγεται, <lb/>καθάπερ καὶ ἄλλα πολλὰ
                             πολλοὶ τῶν δόγμασι συναγορευόντων <lb/>ἀναπλάσαντες ἔγραψαν ὡς φαινόμενα
                             μηδ’ ὄναρ πώποτε <lb/>πεφηνότα. </p>
-                    </div>
-                    <pb n="553"/>
-
-                    <div type="textpart" subtype="chapter" n="26">
-                        <p>Ὥσπερ δὲ τὸν κυματώδη σφυγμὸν ὁ σκωληκίζων <lb/>διαδέχεται μικρότερον
+            </div>
+            <pb n="553"/>
+            <div n="26" type="chapter">
+               <p>Ὥσπερ δὲ τὸν κυματώδη σφυγμὸν ὁ σκωληκίζων <lb/>διαδέχεται μικρότερον
                             γενόμενον, οὕτω τὸν σκωληκίζοντα <lb/>ὁ μυρμηκίζων, ὅταν ἀπολλυμένων τῶν
                             κινήσεων τῶν <lb/>πολλῶν εἰς μίαν, καὶ ταύτην παντελῶς μικρὰν τελευτήσῃ,
                             <lb/>καὶ διὰ τοῦτο οὐδ’ ἀνώμαλος παντελῶς φαίνεται, καίτοι πιθανόν
@@ -1489,9 +1751,9 @@
                             διαγνώσεως. ἀλλὰ νῦν γε τὸ λεῖπον ἔτι προσθέντες <lb/>τῆς περὶ τῶν κατὰ
                             μίαν διαστολὴν ἀνωμάλων σφυγμῶν <lb/>διαφορᾶς, ἐπὶ τοὺς ἄλλους
                             μεταβῶμεν. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="27">
-                        <p>Εἰσὶ δὲ οἵ τε κλονώδεις ἔτι καὶ οἱ σπασμώδεις, <lb/>ἐοικότες μὲν ἀλλήλοις
+            </div>
+            <div n="27" type="chapter">
+               <p>Εἰσὶ δὲ οἵ τε κλονώδεις ἔτι καὶ οἱ σπασμώδεις, <lb/>ἐοικότες μὲν ἀλλήλοις
                             τῷ μὴ φυλάττειν ἕνα τόπον <lb/>τὴν ἀρτηρίαν, ἀλλ’ ἄνω τε καὶ κάτω
                             φέρεσθαι, τῆς <lb/>κατὰ φύσιν θέσεως ἐξισταμένης, διαφέροντες δὲ καὶ
                             κατὰ <lb/>τοῦτο μὲν αὐτὸ, βραχὺ γὰρ τοῦ τοιούτου παθήματος οἱ
@@ -1521,11 +1783,10 @@
                             <lb/>καὶ τοῦ σκωληκίζονος καὶ τοῦ κλονώδους καὶ τοῦ <lb/>σπασμώδους. ὁ
                             δὲ μυρμηκίζων, ὡς ἔφαμεν, ἀνώμαλος μέν <lb/>ἐστιν, οὐ μὴν καὶ φαίνεταί
                             γε </p>
-                    </div>
-                    <pb n="556"/>
-
-                    <div type="textpart" subtype="chapter" n="28">
-                        <p>Καὶ ὁ δορκαδίζων δὲ κληθεὶς ὑπὸ Ἡροφίλου <lb/>σφυγμὸς ἔστι μὲν ἐκ τῶν
+            </div>
+            <pb n="556"/>
+            <div n="28" type="chapter">
+               <p>Καὶ ὁ δορκαδίζων δὲ κληθεὶς ὑπὸ Ἡροφίλου <lb/>σφυγμὸς ἔστι μὲν ἐκ τῶν
                             κατὰ μίαν διαστολὴν ἀνωμάλων, <lb/>σύνθετος δὲ καὶ αὐτός ἐστιν,
                             οὐδετέρας ἐφαπτόμενος <lb/>τῶν προσιουσῶν τοῖς πρώτοις πέντε γένεσιν
                             ἀνωμαλιῶν, ἀλλ’ <lb/>ὅταν καθ’ ἓν μόριον ὁτιοῦν διακόπτηται τὴν κίνησιν
@@ -1539,9 +1800,9 @@
                             <lb/>παρασχόντα, δευτέραν ἀδόκητον ὁρμὴν κινήσεως <lb/>ποιεῖται, πολὺ
                             τῆς πρόσθεν ὠκυτέραν, ὡς οἷον ἐπεμπηδῶντα <lb/>ἑαυτοῖς. αὗται αἱ πᾶσαι
                             κατὰ μίαν διαστολὴν ἀνωμαλίαι. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="29">
-                        <p>Περὶ δὲ τῆς κατὰ πυκνότητα καὶ ἀραιότητα <lb/>καὶ ῥυθμὸν νῦν ἐροῦμεν.
+            </div>
+            <div n="29" type="chapter">
+               <p>Περὶ δὲ τῆς κατὰ πυκνότητα καὶ ἀραιότητα <lb/>καὶ ῥυθμὸν νῦν ἐροῦμεν.
                             οἴονται δὲ συστηματικὰς <pb n="557"/> μόνον γίνεσθαι τὰς τοιαύτας
                             ἀνωμαλίας. οὕτω δὲ καλοῦσι <lb/>τὰς ἐν πλείοσι σφυγμοῖς συνισταμένας.
                             εἴπωμεν δὲ πρότερον <lb/>περὶ τῶν ἐν ἀθροίσματι γινομένων, εἶθ’ οὕτως
@@ -1560,9 +1821,9 @@
                             <lb/>αἱρέσεως ἐπὶ τὰς ἄλλας μετιόντα γνωρίζειν ὁμαλότητά <lb/>τε καὶ
                             ἀνωμαλίαν ἐν ἀμφοτέροις τοῖς γένεσι, τὴν ἐν πλείοσι, ﻿<pb n="558"/> ὡς
                             ἔφαμεν, σφυγμοῖς συνισταμένην, ἣν καὶ συστηματικὴν <lb/>καλοῦσιν. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="30">
-                        <p>Περὶ δὲ τῆς καθ’ ἕνα σφυγμὸν ἀνωμαλίας <lb/>αὐτῶν, ἣν ἅπαντες
+            </div>
+            <div n="30" type="chapter">
+               <p>Περὶ δὲ τῆς καθ’ ἕνα σφυγμὸν ἀνωμαλίας <lb/>αὐτῶν, ἣν ἅπαντες
                             παραλελοίπασιν, οὐκ ἔθ’ ὁμοίως σαφὲς, <lb/>ἀλλ’ ὑπὲρ τοῦ μηδὲν λείπειν
                             τῇ προκειμένῃ πραγματείᾳ καὶ <lb/>περὶ τούτων πειράσομαι καθ’ ὅσον οἷόν
                             τε σαφῶς εἰπεῖν <lb/>ἀρχὴν τοῦ λόγου τήνδε ποιησάμενος. τὰ μόρια τῆς
@@ -1688,14 +1949,13 @@
                             μεταφέρειν, ὁμοίως ἡμῶν καὶ κατ’ ἐκείνας ἁπάσας <lb/>ἀποδεῖξαι δυναμένων
                             ἐν τοῖς δύο γένεσι τούτοις, ὑπὲρ ὧν <lb/>δὴ πέπαυμαι λέγων, τὰς καθ’ ἕνα
                             σφυγμὸν ἀνωμαλίας <lb/>συνισταμένας. </p>
-                    </div>
-                </div>
-                <pb n="566"/>
-
-                <div type="textpart" subtype="book" n="2">
-                    <div type="textpart" subtype="chapter" n="1">
-                        <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΔΙΑΦΟΡΑΣ ΣΦΥΓΜΩΝ <lb/>ΛΟΓΟΣ Β.</head>
-                        <p>Οὐ τὴν αὐτὴν χρείαν ἐπαγγέλλεται τόδε τὸ <lb/>γράμμα τῷ πρόσθεν, ἀλλ’ ὃν
+            </div>
+         </div>
+         <pb n="566"/>
+         <div n="2" type="book">
+            <div n="1" type="chapter">
+               <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΔΙΑΦΟΡΑΣ ΣΦΥΓΜΩΝ <lb/>ΛΟΓΟΣ Β.</head>
+               <p>Οὐ τὴν αὐτὴν χρείαν ἐπαγγέλλεται τόδε τὸ <lb/>γράμμα τῷ πρόσθεν, ἀλλ’ ὃν
                             ἔχει λόγον ἐλλέβορος, ἢ σκαμμωνία <lb/>πρὸς ἄρτον, ἢ κρέας, τοῦτον καὶ
                             τὰ νῦν λεχθησόμενα <lb/>πρὸς τὰ εἰρημένα. τρέφειν μὲν γὰρ ἐκεῖνα τὰς
                             ὑγιαινούσας <lb/>ἐδύνατο ψυχὰς, ἐκκαθαίρειν δὲ ταῦτα τὰς μοχθηρὰς δόξας,
@@ -1703,11 +1963,10 @@
                             τῶν διημαρτημένων πίστιν βεβαίαν τῶν ὀρθῶς εἰρημένων. <lb/>ὥστ’ εἴ τις
                             τῷ παρόντι λόγῳ καὶ ταύτην προσθείη <lb/>τὴν χρείαν, εὑρήσει τινὰ καὶ
                             ὠφέλειαν ἑπομένην. </p>
-                    </div>
-                    <pb n="567"/>
-
-                    <div type="textpart" subtype="chapter" n="2">
-                        <p>Ἔστι δὴ πρῶτός μοι λόγος πρὸς τοὺς σοφιστὰς <lb/>ὁ περὶ τῆς χρήσεως τῶν
+            </div>
+            <pb n="567"/>
+            <div n="2" type="chapter">
+               <p>Ἔστι δὴ πρῶτός μοι λόγος πρὸς τοὺς σοφιστὰς <lb/>ὁ περὶ τῆς χρήσεως τῶν
                             ὀνομάτων. ἡμεῖς γὰρ ἑπόμεθα <lb/>τῇ τῶν Ἑλλήνων συνηθείᾳ· καὶ γὰρ
                             ἐτράφημεν ἐν <lb/>αὐτῇ, πειρώμεθά τε διὰ τῶν σαφεστάτων ὀνομάτων
                             ἑρμηνεύειν <lb/>ἀεὶ τὸ νοούμενον, οὐ μὴν ἐγκαλοῦμέν γε τοῖς ὀλιγωροῦσιν
@@ -1738,11 +1997,10 @@
                             παρ’ <lb/>αὐτῶν δυνάμενος, τοῦ συγχωρεῖν ἡμῖν, ἐν ᾗ τεθράμμεθα
                             <lb/>φωνῇ, ταύτῃ χρήσασθαι. τὸ μὲν δὴ περὶ τὴν τῶν ὀνομάτων <lb/>χρῆσιν
                             κακὸν τηλικοῦτον. </p>
-                    </div>
-                    <pb n="569"/>
-
-                    <div type="textpart" subtype="chapter" n="3">
-                        <p>Ἕτερον δὲ τὸ περὶ τοὺς ὁρισμοὺς μακρῷ <lb/>τούτου χαλεπώτερον. ἔνιοι γὰρ
+            </div>
+            <pb n="569"/>
+            <div n="3" type="chapter">
+               <p>Ἕτερον δὲ τὸ περὶ τοὺς ὁρισμοὺς μακρῷ <lb/>τούτου χαλεπώτερον. ἔνιοι γὰρ
                             αὐτῶν δοκοῦσί μοι μηδὲ λάχανον <lb/>ἂν πρίασθαι χωρὶς ὅρου, καὶ ταῦτα
                             μέντοι μηδ’ ὄναρ <lb/>διαλεκτικῆς ἡμμένοι, καὶ προτείνουσιν, ὡς ἂν
                             τοιοῦτοί τε κᾀν <lb/>τοιούτοις τεθραμμένοι, τῶν ὀνομάτων τι τούτων τῶν
@@ -1860,9 +2118,9 @@
                             τῷ παρόντι πάντα <lb/>μὲν οὐ προσήκει λέγειν ἐκεῖνα, μέλλοντά γε τὸ
                             πλεῖστον αὐτῶν <lb/>καὶ τὸ χρησιμώτατον ἐν τοῖς περὶ τῆς τῶν σφυγμῶν
                             διαγνώσεως <lb/>ἐρεῖν. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="4">
-                        <p>Ὅσον δ’ εἰς τὰ προκείμενα χρηστὸν, εἰρήσεται, <lb/>τὸ μήθ’ ὁρίζεσθαι
+            </div>
+            <div n="4" type="chapter">
+               <p>Ὅσον δ’ εἰς τὰ προκείμενα χρηστὸν, εἰρήσεται, <lb/>τὸ μήθ’ ὁρίζεσθαι
                             πάντα ἀξιοῦν μήτε πολλὰ σημαινόμενα <lb/>προειπόντα τὸν ὁρισμὸν ἕνα
                             ποιεῖν, ὅπερ ἐπὶ τοῦ <lb/>πλήρους σφυγμοῦ διημάρτηται τῷ Ἀρχιγένει. διὰ
                             τοῦτο οὐδ’ <lb/>αὐτὸς ὁ ὅρος αὐτοῦ σαφής ἐστι, οὐδ’ ἔχει συμβαλεῖν, εἴτε
@@ -1976,9 +2234,9 @@
                             τοῖς ναύταις, καὶ τοῖς ἐμπόροις, <lb/>καὶ τοῖς καπήλοις, καὶ τοῖς
                             βαλανεῦσιν. ἀεὶ γὰρ ἐπὶ <lb/>τούτους καταφεύγουσι μάρτυρας, ὅταν ὑπὲρ
                             ὀνόματος ἡ <lb/>ζήτησις ᾖ. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="5">
-                        <p>Τάχα τις ἐρεῖ πρὸς ἡμᾶς· σὺ δ’ ὦ τᾶν <lb/>οὕτως ἄρα τὴν τῶν Ἑλλήνων
+            </div>
+            <div n="5" type="chapter">
+               <p>Τάχα τις ἐρεῖ πρὸς ἡμᾶς· σὺ δ’ ὦ τᾶν <lb/>οὕτως ἄρα τὴν τῶν Ἑλλήνων
                             συνήθειαν ὑπερτετίμηκας, ὥστε <lb/>μηδ’ ἐπιτρέπειν μηδενὶ μηδὲ
                             τοὐλάχιστον αὐτῆς παρακόπτειν; <lb/>οὐ μὲν <milestone unit="ed2page" n="45"/>οὖν, φήσω, μὰ τὸν Ἡρακλέα καὶ πάντας θεούς· <lb/>ἀλλ’ εἰ καὶ
                             βέκος ἐθέλοις τὸν ἄρτον καλεῖν, ὥσπερ οἱ Φρύγες, <lb/>οὐδὲν ἡμῖν
@@ -2085,13 +2343,13 @@
                             λέγοντος <lb/>ἄν μου μεταξὺ κατὰ τὸν λόγον, ὀνόματός τινος ἐπελάβοντο.
                             <lb/>εἶθ’ ὅταν ἐξελεγχθῶσιν ὑπὲρ ἀμφο<milestone unit="ed2page" n="47"/>τέρων, τῶν τε πραγμάτων <lb/>ἅμα καὶ τῶν ὀνομάτων, ἀγανακτοῦσι, δέον,
                             οἶμαι, <lb/>περὶ μὲν τῶν πραγμάτων τὴν μοχθηρὰν ἀποθέσθαι δόξαν, <pb n="590"/>
-                            <milestone unit="ed1page" n="24"/>τοῖς δ’ ὀνόμασιν, ὥσπερ ἡμεῖς ἐκείνοις
+                  <milestone unit="ed1page" n="24"/>τοῖς δ’ ὀνόμασιν, ὥσπερ ἡμεῖς ἐκείνοις
                             χρῆσθαι συγχωροῦμεν, <lb/>οὕτω καὶ αὐτοὺς ἡμῖν ἐπιτρέπειν. ἀλλ’ οὐκ
                             ἐπιτρέπουσι. <lb/>διὰ τοῦτο κᾀγὼ βραχέα περὶ τῆς φωνῆς αὐτῶν
                             <lb/>ἀναγκασθεὶς εἶπον. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="6">
-                        <p>Καὶ νῦν ἔτι δεήσομαι παρέντας τὸ περὶ <lb/>τῶν ὀνομάτων ἐρίζειν, καὶ
+            </div>
+            <div n="6" type="chapter">
+               <p>Καὶ νῦν ἔτι δεήσομαι παρέντας τὸ περὶ <lb/>τῶν ὀνομάτων ἐρίζειν, καὶ
                             συγχωρήσαντας ἡμῖν κατὰ τὸ τῶν <lb/>Ἑλλήνων ἔθος διαλέγεσθαι, μαθεῖν ὅτι
                             κακῶς ὀκτὼ ποιότητας <lb/>λέγουσιν. οὐ γάρ ἐστιν ἅπαντα τὰ πρῶτα γένη
                             τῶν <lb/>σφυγμῶν ποιότητες, ὡς ἐδείξαμεν. ἀλλὰ πῶς λέγειν χρὴ, φασίν.
@@ -2282,14 +2540,14 @@
                             γένος τὸ ποσὸν ἐν τῇ διαστολῇ τῆς <lb/>ἀρτηρίας. εἰ δὲ καὶ τὴν συστολὴν
                             ἔνεστιν ἁφῇ γνωρίζειν, <lb/>γένοιτο ἂν, οἶμαι, κᾀν ταύτῃ τὸ <milestone unit="ed1page" n="26"/>ἴσον πλῆθος τῶν διαφορῶν. <lb/>ἀλλὰ περὶ μὲν
                             τούτου ζητήσομεν ἐν τοῖς περὶ <lb/>διαγνώσεως. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="7">
-                        <p>
-                            <milestone unit="ed2page" n="51"/>Ἀρχιγένης δὲ, τούτου γὰρ πρώτου
+            </div>
+            <div n="7" type="chapter">
+               <p>
+                  <milestone unit="ed2page" n="51"/>Ἀρχιγένης δὲ, τούτου γὰρ πρώτου
                             δίκαιον <lb/>μνημονεύειν, μετά γε τὸν Ἡρόφιλον ἐπιφωνήσαντας <lb/>τὸν
                             Ὅμηρον·</p>
-                        <l>Οἶος πέπνυται, τοὶ δὲ σκιαὶ ἀΐσσουσιν,</l>
-                        <p>οὐ μόνον ἐν τοῖς ὀνόμασιν ἔοικεν, ἀλλὰ καὶ πολὺ πρότερον <lb/>ἐν τοῖς
+               <l>Οἶος πέπνυται, τοὶ δὲ σκιαὶ ἀΐσσουσιν,</l>
+               <p>οὐ μόνον ἐν τοῖς ὀνόμασιν ἔοικεν, ἀλλὰ καὶ πολὺ πρότερον <lb/>ἐν τοῖς
                             πράγμασιν αὐτοῖς τεταράχθαι. καὶ διὰ τοῦτο παρὰ <lb/>πόδας ἑαυτῷ
                             τἀναντία λέγων οὐκ αἰσθάνεται· μάθοις δ’ ἂν <lb/>ἐξ αὐτῆς τῆς λέξεως,
                             ἐχούσης ᾧδε· εἰσὶ δέ τινες ἄλλοι <pb n="603"/> σφυγμοὶ οὔτε μέσοι οὔτε
@@ -2440,7 +2698,7 @@
                             νοεῖσθαι χωρὶς ἐκείνων δύναται. <lb/>τοῦτο γὰρ εἴ τις λέγοι, λέληθεν
                             ἑαυτὸν ἁπάσας μὲν ἀνατρέπων <lb/>τὰς τέχνας, ἅπασαν δὲ τὴν ἐν τῷ βίῳ
                             χρείαν τῶν ὀνομάτων. <lb/>
-                            <milestone unit="ed2page" n="54"/>τίς γὰρ ἡμῶν ποτε τὴν θεραπευτικὴν
+                  <milestone unit="ed2page" n="54"/>τίς γὰρ ἡμῶν ποτε τὴν θεραπευτικὴν
                             τέχνην <lb/>ἔμαθε πλευριτικοῦ Δίωνος; οὐδείς. οὐ μὴν οὐδ’ ἁπλῶς ἀνθρώπου
                             <lb/>πλευριτικοῦ, ἀλλ’ ἐν ταῖς ἰδικαῖς τε καὶ γενικαῖς ἐπινοίαις <lb/>αἱ
                             τέχναι συνίστανται, πρῶτον μὲν κατ’ αὐτὸ τὸ πάθος <lb/>ἰδίων διορισμῶν
@@ -2483,10 +2741,10 @@
                             τούτου τὸ σύνθετον οὐχ <lb/>οἷόν τε διηκριβωμένως ἐκμαθεῖν. τὸ δὲ μήτε
                             τὴν ὅλην <lb/>τοῦ πράγματος φύσιν εἰς ἓν συλλαμβάνειν μήτ’ ἐπὶ μιᾶς <pb n="615"/> καὶ ἁπλῆς καταμένειν διαφορᾶς, ἄτεχνόν τε καὶ ἀμέθοδον
                             <lb/>καὶ ἄχρηστον. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="8">
-                        <p>
-                            <milestone unit="ed2page" n="55"/>Διὰ τοῦθ’ ἡμεῖς πρῶτον μὲν τὴν ὅλην
+            </div>
+            <div n="8" type="chapter">
+               <p>
+                  <milestone unit="ed2page" n="55"/>Διὰ τοῦθ’ ἡμεῖς πρῶτον μὲν τὴν ὅλην
                             <lb/>φύσιν τῶν σφυγμῶν ἀνελύσαμεν εἰς τὰς συντιθείσας αὐτὴν
                             <lb/>διαφορὰς, τὴν μέν τινα κατὰ τὸ ποσὸν τῆς διαστολῆς ὀνομάσαντες,
                             <lb/>τὴν δὲ κατὰ τὸ ποιὸν τῆς πληγῆς, ἄλλην δὲ κατὰ <lb/>τὸ τοῦ χιτῶνος
@@ -2506,63 +2764,98 @@
                             <lb/>ὥστε γενέσθαι καθ’ ἑκάστην δυοῖν διαστάσεων σύζευξιν <lb/>ἐννέα
                             διαφορῶν, τὰς πάσας δ’ ἑπτὰ καὶ εἴκοσι. παραγράψω <lb/>δὲ μίαν, ἐξ ἧς
                             καὶ περὶ τῶν λοιπῶν ἐνέσται μαθεῖν.</p>
-                        <figure>
-                            <graphic url="https://babel.hathitrust.org/cgi/pt?id=hvd.hxpp8p;page=root;view=image;size=100;seq=626;num=536;orient=0"></graphic>
-                        <figDesc>
-                        <list rend="table">
-                            <item>
-                                <list rend="row">
-                                    <item><label><num>α΄</num></label></item>
-                                    <item>μακρὸς</item>
-                                    <item>πλατὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>β΄</num></label></item>
-                                    <item>μακρὸς</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>γ΄</num></label></item>
-                                    <item>μακρὸς</item>
-                                    <item>στενὸς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>δ΄</num></label></item>
-                                    <item>πλατὺς</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ε΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ς΄</num></label></item>
-                                    <item>στενὸς</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ζ΄</num></label></item>
-                                    <item>βραχὺς</item>
-                                    <item>πλατὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>η΄</num></label></item>
-                                    <item>βραχὺς</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>θ΄</num></label></item>
-                                    <item>βραχὺς</item>
-                                    <item>στενὸς</item>
-                                </list>
-                            </item>
-                        </list>
-                        </figDesc></figure>
-
-                        <pb n="617"/>
-
-                        <p>ἐν τούτῳ μὲν οὖν τῷ διαγράμματι τὰς κατὰ τὸ μῆκος τρεῖς <lb/>διαφορὰς
+               <figure>
+                  <graphic url="https://babel.hathitrust.org/cgi/pt?id=hvd.hxpp8p;page=root;view=image;size=100;seq=626;num=536;orient=0"/>
+                  <figDesc>
+                     <list rend="table">
+                        <item>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>α΄</num>
+                                 </label>
+                              </item>
+                              <item>μακρὸς</item>
+                              <item>πλατὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>β΄</num>
+                                 </label>
+                              </item>
+                              <item>μακρὸς</item>
+                              <item>σύμμετρος</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>γ΄</num>
+                                 </label>
+                              </item>
+                              <item>μακρὸς</item>
+                              <item>στενὸς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>δ΄</num>
+                                 </label>
+                              </item>
+                              <item>πλατὺς</item>
+                              <item>σύμμετρος</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>ε΄</num>
+                                 </label>
+                              </item>
+                              <item>σύμμετρος</item>
+                              <item>σύμμετρος</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>ς΄</num>
+                                 </label>
+                              </item>
+                              <item>στενὸς</item>
+                              <item>σύμμετρος</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>ζ΄</num>
+                                 </label>
+                              </item>
+                              <item>βραχὺς</item>
+                              <item>πλατὺς</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>η΄</num>
+                                 </label>
+                              </item>
+                              <item>βραχὺς</item>
+                              <item>σύμμετρος</item>
+                           </list>
+                           <list rend="row">
+                              <item>
+                                 <label>
+                                    <num>θ΄</num>
+                                 </label>
+                              </item>
+                              <item>βραχὺς</item>
+                              <item>στενὸς</item>
+                           </list>
+                        </item>
+                     </list>
+                  </figDesc>
+               </figure>
+               <pb n="617"/>
+               <p>ἐν τούτῳ μὲν οὖν τῷ διαγράμματι τὰς κατὰ τὸ μῆκος τρεῖς <lb/>διαφορὰς
                             ταῖς κατὰ τὸ πλάτος τρισὶ συμπλέξαντες ἐννέα <lb/>συζυγίας ἐποιήσαμεν.
                             ἕτερον δ’ αὖ διάγραμμα κατὰ τὸν <lb/>αὐτὸν γένοιτο τρόπον ταῖς τοῦ
                             μήκους τρισὶ διαφοραῖς, τὰς <lb/>τοῦ βάθους τρεῖς ἔχον ἐζευγμένας, καὶ
@@ -2625,11 +2918,10 @@
                             τοιαῦτα λέγομεν, <lb/>ὧν περ δὴ καὶ μόνων ἐστὶν ἀκούσματα. ὅτι μὲν οὖν
                             ἐστί τι <lb/>γένος σφυγμῶν τῶν κατὰ τὸ ποσὸν τῆς διαστολῆς συνισταμένων,
                             <lb/>αὐτάρκως δέδεικται. </p>
-                    </div>
-                    <pb n="621"/>
-
-                    <div type="textpart" subtype="chapter" n="9">
-                        <p>Ὅτι δὲ καὶ τῶν πρώτων ἐστὶ γενῶν, οἶδα <lb/>γὰρ καὶ τοῦτ’ ἐπαγγειλάμενος
+            </div>
+            <pb n="621"/>
+            <div n="9" type="chapter">
+               <p>Ὅτι δὲ καὶ τῶν πρώτων ἐστὶ γενῶν, οἶδα <lb/>γὰρ καὶ τοῦτ’ ἐπαγγειλάμενος
                             δείξειν, ᾧδ’ ἂν μάλιστα μάθοις, <lb/>εἰ πειραθείης καθ’ ἕκαστον τῶν
                             ἄλλων γενῶν τὴν αὐτὴν <lb/>ποιήσασθαι γυμνασίαν, <milestone unit="ed1page" n="29"/>ἣν ἐπὶ <milestone unit="ed2page" n="57"/>τούτου νῦν <lb/>ἐποιησάμεθα. ποιήσεις δὲ μάλιστα οὕτως, εἰ καθ’
                             ἕκαστον <lb/>αὐτῶν προχειριζόμενος, ἐπισκοποῖο τί κοινὸν γένος ἀνωτάτω
@@ -2691,11 +2983,10 @@
                             τινα, πρὶν <lb/>ἐν τοῖς πρώτοις καὶ οἷον στοιχείοις γυμνάσασθαι, ταῖς
                             <lb/>τῶν ἑξῆς ἀποδείξεσιν ἕπεσθαι. περὶ μὲν τούτων εἴς γε <lb/>τὸ παρὸν
                             ἱκανὰ καὶ ταῦτα. </p>
-                    </div>
-                    <pb n="625"/>
-
-                    <div type="textpart" subtype="chapter" n="10">
-                        <p>Λοιπὸν δ’ ἂν εἴη περὶ τοῦ τῆς διαφορᾶς <lb/>ὀνόματος εἰπεῖν. πρῶτον μὲν
+            </div>
+            <pb n="625"/>
+            <div n="10" type="chapter">
+               <p>Λοιπὸν δ’ ἂν εἴη περὶ τοῦ τῆς διαφορᾶς <lb/>ὀνόματος εἰπεῖν. πρῶτον μὲν
                             ὅτι μὴ καινοτομοῦμεν ἡμεῖς περὶ <lb/>τοὔνομα, δείξομεν· ἔπειτα δὲ καὶ
                             οἷόν τι δηλοῖ παρὰ τοῖς <lb/>Ἕλλησιν ἐξηγησόμεθα. τοῦ μὲν δὴ μὴ
                             καινοτομεῖν πρῶτος <lb/>Ἀρχιγένης μάρτυς, ὡδί πως γράφων κατὰ τὴν ἀρχὴν
@@ -2840,7 +3131,7 @@
                             τοῖς ὑπ’ ἄλληλα γένεσιν εὑρίσκεται, καὶ περὶ <pb n="634"/> πάνθ’ ἁπλῶς
                             τὰ ὁπωσοῦν ὄντα, ἀνάγκη καὶ τὴν διαφορὰν <lb/>ἐν ἅπασιν ὑπάρχειν τοῖς
                             οὖσιν, οὐ μὴν τήν γε ποιότητα. <lb/>
-                            <milestone unit="ed2page" n="61"/>διὰ τοῦτο Ἀρχιγένης μὲν κακῶς τὰ πρῶτα
+                  <milestone unit="ed2page" n="61"/>διὰ τοῦτο Ἀρχιγένης μὲν κακῶς τὰ πρῶτα
                             γένη τῶν ἐν <lb/>τοῖς σφυγμοῖς διαφορῶν ποιότητας ὠνόμασεν, ἡμεῖς δὲ
                             ὀρθῶς <lb/>καὶ ταῦτα καὶ τἄλλα πάντα διαφορὰς, ὅθεν καὶ τοὐπίγραμμα
                             <lb/>τῷ λόγῳ παντὶ περὶ σφυγμῶν διαφορᾶς ἐποιησάμεθα. <lb/>τί λοιπὸν ἔτι
@@ -2863,22 +3154,21 @@
                             ὅλως ὀνομάτων ζητεῖται, μανθάνειν. νυνὶ δὲ τὸ συνεχὲς <lb/>τοῦ λόγου
                             περαινέσθω, τοῦτο μὲν ἐνταῦθα καταπαυσάντων <lb/>ἡμῶν, ἐν δέ τοι τοῖς
                             ἑξῆς ὅσα λείπει προσθέντων. </p>
-                    </div>
-                </div>
-                <pb n="636"/>
-
-                <div type="textpart" subtype="book" n="3">
-                    <div type="textpart" subtype="chapter" n="1">
-                        <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΔΙΑΦΟΡΑΣ ΣΦΥΓΜΩΝ <lb/>ΛΟΓΟΣ Γ.</head>
-                        <p>Τὸ μὲν δὴ περὶ τῶν πραγμάτων ἡμᾶς διαφέρεσθαι, <lb/>τῷ μὲν ἴσως ἀναγκαῖον
+            </div>
+         </div>
+         <pb n="636"/>
+         <div n="3" type="book">
+            <div n="1" type="chapter">
+               <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΔΙΑΦΟΡΑΣ ΣΦΥΓΜΩΝ <lb/>ΛΟΓΟΣ Γ.</head>
+               <p>Τὸ μὲν δὴ περὶ τῶν πραγμάτων ἡμᾶς διαφέρεσθαι, <lb/>τῷ μὲν ἴσως ἀναγκαῖον
                             εἶναι δόξει, τῷ δ’ εὔλογον, <lb/>τῷ δέ τινι καὶ συγνώμης ἄξιον. κατὰ μὲν
                             γὰρ τὸν τραγικὸν <lb/>ποιητὴν,</p>
-                        <lg>
-                            <l>Εἰ πᾶσι ταὐτὸ καλὸν ἔφυ σοφόν θ’ ἅμα,</l>
-                            <l>Οὐκ ἦν ἂν ἀμφίλεκτος ἀνθρώποις ἔρις.</l>
-                        </lg>
-                        <p>
-                            <milestone unit="ed2page" n="62"/>νυνὶ δ’ ἐπεὶ οὐδὲ δοκεῖ πᾶσι ταὐτὸν
+               <lg>
+                  <l>Εἰ πᾶσι ταὐτὸ καλὸν ἔφυ σοφόν θ’ ἅμα,</l>
+                  <l>Οὐκ ἦν ἂν ἀμφίλεκτος ἀνθρώποις ἔρις.</l>
+               </lg>
+               <p>
+                  <milestone unit="ed2page" n="62"/>νυνὶ δ’ ἐπεὶ οὐδὲ δοκεῖ πᾶσι ταὐτὸν
                             οὔτε καλὸν οὔτε <lb/>σοφὸν οὔτε ἀληθὲς εἶναι, ἀναγκαῖον, οἶμαι,
                             διαφέρεσθαι. <lb/>κατὰ δὲ τὸν φιλόσοφον τὸν εἰπόντα· ἢν γὰρ καὶ τὰ
                             μέγιστα <pb n="637"/> τύχῃ τετελεσμένα, εἰπὼν αὐτὸς, ὅμως οὐκ οἶδε,
@@ -2931,7 +3221,7 @@
                             ἡμῶν τὸν ἰσχυρῶς πλήττοντα σφυγμὸν Δίωνα. <lb/>καὶ γὰρ ὅπη τῶν
                                 <milestone unit="ed1page" n="32"/>ἄλλων διαφέρει μεμαθήκαμεν, ἄν τε
                             <lb/>Θέων, ἄν τε Δίων, ἄν τ’ ἄλλό τι καλῆται, καὶ ὅπως <pb n="640"/>
-                            <milestone unit="ed2page" n="63"/>διαγνωσθήσεται, καὶ ὑπὸ τίνος αἰτίας
+                  <milestone unit="ed2page" n="63"/>διαγνωσθήσεται, καὶ ὑπὸ τίνος αἰτίας
                             γίγνεται, καὶ τί <lb/>δηλοῖ. φιλονεικείτω δὴ λοιπὸν ὑπὲρ αὐτοῦ πρὸς
                             Μάγνον <lb/>Ἀρχιγένης, τάχα μὲν παρανομοῦντα καὶ αὐτὸν εἰς τὸ τῶν
                             <lb/>Ἑλλήνων ἔθος τὸ περὶ τὰς προσηγορίας, ὅμως δὲ συνιέντα <lb/>τό γε
@@ -3017,9 +3307,9 @@
                             ἔφασαν ἀντιβατικὴν εἶναι πληγὴν <lb/>τὴν σφοδρότητα, τὸ δεικνύειν ὅτι
                             καὶ πρὸ τοῦ πέρατος <lb/>τῆς διαστολῆς ἤδη φαίνεται τοιαύτη, μάταιον.
                         </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="2">
-                        <p>Ἀλλ’ ἔστω τοῦθ’ ὅπερ ὁ Ἀρχιγένης βούλεται, <lb/>τόνος μέν τις ἡ
+            </div>
+            <div n="2" type="chapter">
+               <p>Ἀλλ’ ἔστω τοῦθ’ ὅπερ ὁ Ἀρχιγένης βούλεται, <lb/>τόνος μέν τις ἡ
                             σφοδρότης, τὸ δ’ ἰσχυρὸν τῆς πληγῆς, <lb/>οὐκ εἶναι σφοδρότης.
                             ἐρωτήσωμεν αὐτὸν, τίς αἰτία σφοδρότητος <lb/>σφυγμῶν; οὐ γὰρ δή που
                             ταυτόν ἐστι σφοδρότης <lb/>τε καὶ σφοδρότητος αἰτία. τὸ μὲν γὰρ φαίνεται
@@ -3060,8 +3350,8 @@
                             ἐστιν ὁ ῥοῖζος, οὐ <lb/>πολιτικὸν, οὔτε συνεχῶς λεγόμενον οὐδὲν, οὐδὲ τί
                             ποτε <lb/>σημαίνει, προδηλοῦν. ἀλλ’ εἰ μέν τι χρὴ τοῖς γραμματικοῖς <pb n="648"/> πιστεύειν ἐξηγουμένοις τὸ παρὰ τῷ ποιητῇ λεγόμενον ἐπὶ
                             <lb/>τοῦ Κύκλωπος,</p>
-                        <l>Πολλῷ δὲ ῥοίζῳ πρὸς ὄρος τρέπε πίονα μῆλα,</l>
-                        <p>τάχος κινήσεως ὁ ῥοῖζος δηλοῖ. οὐ μὴν ἐβούλετό γε τοῦτο <lb/>Ἀρχιγένης
+               <l>Πολλῷ δὲ ῥοίζῳ πρὸς ὄρος τρέπε πίονα μῆλα,</l>
+               <p>τάχος κινήσεως ὁ ῥοῖζος δηλοῖ. οὐ μὴν ἐβούλετό γε τοῦτο <lb/>Ἀρχιγένης
                             αὐτὸς, ὁπότ’ ἀντέλεγε τῷ Μάγνῳ, πλὴν εἰ παραπλήσιόν <lb/>τι τοῖς ῥήτορσι
                             ποιεῖ, κατηγορεῖ πολλάκις ὧν οὐκ <lb/>ἔγνωκεν. ἀλλ’ οὐκ ᾤμην ἔγωγε. τί
                             ποτ’ οὖν ἐστιν ὃ βούλεται <lb/>δηλοῦν ὁ ῥοῖζος, εἰ μὴ τὸ τάχος; ἀλλ’ ἆρά
@@ -3086,10 +3376,10 @@
                             ταὐτόν ἐστι τόνος κινήσεως καὶ σφοδρὸς σφυγμὸς, <lb/>εἴγε τὸ μὲν αὐτῶν
                             αἰσθήσει φαίνεται, τὸ δὲ οὐ μόνον ἄδηλον <lb/>ταῖς αἰσθήσεσιν, ἀλλὰ καὶ
                             διαμφισβητούμενον καὶ ἀσαφὲς <lb/>ὅλως ἐστίν. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="3">
-                        <p>
-                            <milestone unit="ed2page" n="66"/>Ἆρ’ οὖν ἡ μὲν τοῦ σφοδροῦ σφυγμοῦ
+            </div>
+            <div n="3" type="chapter">
+               <p>
+                  <milestone unit="ed2page" n="66"/>Ἆρ’ οὖν ἡ μὲν τοῦ σφοδροῦ σφυγμοῦ
                             διδασκαλία <lb/>καὶ ἀσαφὴς καὶ ψευδὴς κατὰ πάντα τὰ σημαινόμενα,
                             <lb/>σαφεστέρα δὲ καὶ ἀληθεστέρα ἡ τοῦ ἐναντίου αὐτοῦ τοῦ ἀμυδροῦ;
                             <lb/>τάχα γὰρ ἐκ τῆς ἀντιθέσεως συνιέναι τινὸς τῶν ἐν <pb n="650"/> τῷ
@@ -3144,8 +3434,8 @@
                             καινὸν, οὐκ <lb/>ἐξηγούμενος, ἀλλ’ ὑπολαμβάνων, εἰ τοὔνομα μόνον
                             γράψειας, <lb/>εἰρηκέναι τι πλέον. τοῦτο δὲ οὐ λέγειν, ἀλλὰ λαλεῖν ἐστί.
                             <lb/>εἰ μὲν οὖν βούλει κατὰ τὸν Κωμικὸν,</p>
-                        <l>Λαλεῖν ἄριστος, ἀδυνατώτατος λέγειν,</l>
-                        <p>ἕτερος ἂν εἴη λόγος· εἰ δ’ οὐ λαλεῖν, ἀλλὰ λέγειν, τί καὶ <lb/>διδάσκειν
+               <l>Λαλεῖν ἄριστος, ἀδυνατώτατος λέγειν,</l>
+               <p>ἕτερος ἂν εἴη λόγος· εἰ δ’ οὐ λαλεῖν, ἀλλὰ λέγειν, τί καὶ <lb/>διδάσκειν
                             ἐθέλεις, δήλωσον ἡμῖν, τίνι τῶν αἰσθήσεων, καὶ <lb/>πῶς διαγνωσόμεθα τόν
                             βαρὺν τοῦτον σφυγμόν; ἐγὼ μὲν γὰρ <lb/>οὐδὲ λίθου βάρος, οὐδὲ ξύλου
                             δύναμαι διαγνῶναι, μὴ ταῖς <lb/>χερσὶν ἀράμενος, ἢ ἀναθέμενος τοῖς
@@ -3201,14 +3491,12 @@
                             <lb/>θεωρίας προλέγετε καὶ πράττετε, διὰ παντὸς ἐσιωπῶμεν, <lb/>ἐκείνοις
                             μὲν οὐδὲν ἀποκρινόμενοι, πρὸς δὲ ὑμᾶς αὐτοὺς λέγοντες <lb/>τὸ τοῦ
                             Κωμικοῦ,</p>
-                        <lg>
-                            <l>Ὡς οὔτε στρεβλὸν ὀρθοῦται ξύλον,</l>
-                            <l>Οὔτε γερανδριὸν μετατεθὲν μοσχεύεται.</l>
-                        </lg>
-
-                        <pb n="657"/>
-
-                        <p>θᾶττον γὰρ ἄν τις τοὺς ἀπὸ Μωϋσοῦ καὶ Χριστοῦ μεταδιδάξειεν <lb/>ἢ τοὺς
+               <lg>
+                  <l>Ὡς οὔτε στρεβλὸν ὀρθοῦται ξύλον,</l>
+                  <l>Οὔτε γερανδριὸν μετατεθὲν μοσχεύεται.</l>
+               </lg>
+               <pb n="657"/>
+               <p>θᾶττον γὰρ ἄν τις τοὺς ἀπὸ Μωϋσοῦ καὶ Χριστοῦ μεταδιδάξειεν <lb/>ἢ τοὺς
                             ταῖς αἱρέσεσι προστετηκότας ἰατρούς τε καὶ <lb/>φιλοσόφους. ὥστ’ ἐγὼ
                             τελευτῶν ἔγνων κερδαίνειν μακρὰν <lb/>ἀδολεσχίαν περὶ μηδενὸς αὐτοῖς
                             ὅλως διαλεγόμενος· καί μοι <lb/>τοῦτο πράττεται καὶ πραχθήσεται. καὶ
@@ -3220,9 +3508,9 @@
                             φησὶν, ὑπομνήματα ἑαυτῷ παρασκευαζόμενος, <lb/>ἅμα δὲ καί τισι τῶν
                             ἑταίρων δεηθεῖσι χαριζόμενος. <lb/>ἀλλὰ περὶ μὲν τῆς ἐπιπολαζούσης
                             ἀμαθίας ἅμα καὶ <lb/>φιλονεικίας ἀρκεῖ καὶ ταῦτα. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="4">
-                        <p>Περὶ δὲ ὧν προὐθέμεθα λέγειν ἐπάνιμεν <lb/>αὖθις, ἐπιδεικνύντες τοῖς
+            </div>
+            <div n="4" type="chapter">
+               <p>Περὶ δὲ ὧν προὐθέμεθα λέγειν ἐπάνιμεν <lb/>αὖθις, ἐπιδεικνύντες τοῖς
                             ἕπεσθαι δυναμένοις, ὡς ὁ βαρὺς <lb/>σφυγμὸς ὄνομα μόνον ἐστὶ, πρᾶγμα δὲ
                             οὐδὲ ἕν. εἰ γὰρ ὡς ὁ <lb/>σοφώτατος τῶν καθ’ ἡμᾶς Ἀρχιγενείων
                             ἀναγκαζόμενος αὐτὸν <pb n="658"/> ἐξηγεῖσθαι, μετελάμβανεν, ἀμυδρὸς
@@ -3345,7 +3633,7 @@
                             νέᾳ τροφῇ τὸν <lb/>τοιοῦτον ἴσθι γινόμενον σφυγμὸν, ἀλλὰ κᾀν τοῖς
                             βαλανείοις <lb/>ποτὲ, κᾀν τοῖς γυμνασίοις, καὶ τοῖς θυμοῖς. γίνεται
                             <lb/>γὰρ κᾀν τούτοις ἔσθ’ ὅτε. καὶ πῶς καὶ τίνι τρόπω <lb/>
-                            <milestone unit="ed2page" n="71"/>γίνεται, εἰ μὲν μόνον εἰπόντες
+                  <milestone unit="ed2page" n="71"/>γίνεται, εἰ μὲν μόνον εἰπόντες
                             ἀρκεσθείημεν, οὐδὲν δήπου <lb/>πλέον ἐδιδάξαμεν, εἰ δὲ διοριζόμεθα, τῆς
                             προκειμένης <lb/>ἀποστησόμεθα πραγματείας. μὴ τοίνυν παραφλυαρῶμεν,
                             <lb/>ἀλλ’ εἴ τινα ἔχεις ἡμᾶς διδάξαι διαφορὰν σφυγμῶν ἑτέραν <lb/>ὧν
@@ -3393,10 +3681,10 @@
                             περὶ μὲν τῆς πρώτης ὁ λόγος <lb/>ἡμῖν ἐστι, ἧς τὸ χρήσιμον αὐτὸ πρὸς τὰ
                             τῆς τέχνης ἔργα <lb/>διὰ τοῦ πρώτου βιβλίου δεδήλωται, κεφαλὴν ἐπιθῶμεν
                             ἤδη <lb/>τῷ περὶ σφοδρότητος λόγῳ. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="5">
-                        <p>
-                            <milestone unit="ed2page" n="72"/>Ἔστι δέ τις σφυγμὸς ὁ ἀνατρέπων τὴν
+            </div>
+            <div n="5" type="chapter">
+               <p>
+                  <milestone unit="ed2page" n="72"/>Ἔστι δέ τις σφυγμὸς ὁ ἀνατρέπων τὴν
                             <lb/>ἁφὴν, τουτέστιν ἰσχυρῶς τε καὶ ἀντιβατικῶς πλήττων. τοῦτον
                             <lb/>εἴτε σφοδρὸν εἴτ’ εὔτονον εἴθ’ ὅ τι βούλεται καλεῖν τις, οὕτω
                             <lb/>θέμενος ἴστω διαγιγνωσκόμενον αὐτὸν, ἐρειδόντων ἐπὶ πλεῖον
@@ -3424,14 +3712,14 @@
                             ῥώμην τῆς κινούσης τὰς ἀρτηρίας δυνάμεως εἶναί <lb/>φησι, διάγνωσιν δὲ
                             τῶν δακτύλων εἰς βάθος ἐρειδομένων. <lb/>ἐν γὰρ τῷ τοιούτῳ τρόπῳ τῆς
                             ἐπαφῆς ὁ μὲν ἰσχυρὸς σφυγμὸς <lb/>
-                            <milestone unit="ed1page" n="37"/>ἰσχυρότερος φαίνεται, βιαιότερον
+                  <milestone unit="ed1page" n="37"/>ἰσχυρότερος φαίνεται, βιαιότερον
                             ἀνθιστάμενος τοῖς <lb/>θλίβουσι δακτύλοις, ὁ δ’ ἀσθενὴς οὗτος ἐνίοτε
                             καταπίπτει <lb/>τε καὶ νικᾶται πρὸς αὐτῶν, ὡς ἄσφυκτον δοκεῖν εἶναι τὸν
                             <lb/>ἄνθρωπον. ἀλλὰ περὶ μὲν τούτων ἐν ταῖς ἐχομέναις πραγματείαις
                             <lb/>ἐροῦμεν· ὁ δὲ νῦν ἐνεστηκὼς λόγος ἤδη μοι πέρας <lb/>ἐχέτω. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="6">
-                        <p>Βούλομαι γὰρ ἑξῆς ἐπὶ τὴν πολυθρύλλητον <lb/>ἀφικέσθαι πληρότητα, πολλὰ
+            </div>
+            <div n="6" type="chapter">
+               <p>Βούλομαι γὰρ ἑξῆς ἐπὶ τὴν πολυθρύλλητον <lb/>ἀφικέσθαι πληρότητα, πολλὰ
                             πράγματα παρεσχηκυῖαν <lb/>ἅπασι τοῖς ἰατροῖς τοῖς νεωτέροις, μέλλουσάν
                             γε δή που καὶ <lb/>ἡμῖν οὐκ ὀλίγα παρέξειν, οὐκ ἐν τῇδε τῇ νῦν ἐνεστώσῃ
                             πραγματείᾳ <lb/>μόνον, ἀνεκτὸν γὰρ ἂν ἦν, ἀλλὰ πολὺ δὴ μᾶλλον ἐν <lb/>τῇ
@@ -3445,11 +3733,11 @@
                             οὕτω δὲ <lb/>καὶ τὸ θέατρον, ἢ τὸ στάδιον, ἢ τὸ βουλευτήριον, ἀνθρώπων
                             <lb/>πλήρη λέγομεν ὑπάρχειν, ὥσπερ αὖ καὶ κενά. οὕτω δὲ <lb/>καὶ τὴν
                             γαστέρα καὶ τὸ στόμα ποτὲ μέν φαμεν πλήρη εἶναι, <lb/>ποτὲ δὲ κενά.</p>
-                        <lg>
-                            <l>Πλῆρές τοι μέλιτος τὸ καλὸν στόμα Θύρσι γένοιτο,</l>
-                            <l>Πλῆρές τοι σχαδόνων, καὶ ἀπ’ Αἰγίλω ἰσχάδα τρώγοις.</l>
-                        </lg>
-                        <p>καὶ ὅλως ἅπαν ἀγγεῖον ἐντὸς αὐτοῦ περιέχων εὐρυχωρίαν <lb/>ἤτοι πλῆρες, ἢ
+               <lg>
+                  <l>Πλῆρές τοι μέλιτος τὸ καλὸν στόμα Θύρσι γένοιτο,</l>
+                  <l>Πλῆρές τοι σχαδόνων, καὶ ἀπ’ Αἰγίλω ἰσχάδα τρώγοις.</l>
+               </lg>
+               <p>καὶ ὅλως ἅπαν ἀγγεῖον ἐντὸς αὐτοῦ περιέχων εὐρυχωρίαν <lb/>ἤτοι πλῆρες, ἢ
                             κενὸν εἶναί φαμεν· ἐπειδὰν μὲν ὑφ’ ἑτέρου τινὸς <lb/>σώματος, εἴθ’ ἑνὸς,
                             ἢ καὶ πλειόνων, ἡ εὐρύτης αὐτοῦ <lb/>καταλαμβάνηται, πλῆρες· ἐπειδὰν δὲ
                             μόνον ἀέρα περιέχῃ, <lb/>κενόν. οὕτω μὲν ἅπαντες ἄνθρωποι κυρίως τε καὶ
@@ -3678,9 +3966,9 @@
                             λόγον, οὐχ ὥσπερ ἔν τε τῷ δευτέρῳ τῷ πρὸ <lb/>τοῦδε. καὶ κατ’ αὐτὸ δὲ
                             τοῦτο τὸ βιβλίον ἐν τῷ περὶ τῆς <lb/>σφοδρότητος λόγῳ τὰς ῥήσεις
                             παρέγραψα τοῦ Ἀρχιγένους, <lb/>ὑπὲρ τοῦ δεῖξαι τὰ κακῶς εἰρημένα. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="7">
-                        <p>Μεταβὰς οὖν ἤδη πρὸς τὸν περὶ τῆς σκληρότητός <lb/>τε καὶ μαλακότητος
+            </div>
+            <div n="7" type="chapter">
+               <p>Μεταβὰς οὖν ἤδη πρὸς τὸν περὶ τῆς σκληρότητός <lb/>τε καὶ μαλακότητος
                             λόγον, ἐπιδεῖξαι πειράσομαι <lb/>κᾀνταῦθα τὴν περὶ τὰ ὀνόματα
                             πλημμέλειαν τῶν ἀνδρῶν, <lb/>δι’ ἣν ἀναγκαίως καὶ περὶ τὴν διάγνωσίν τε
                             καὶ ﻿<pb n="686"/> πρόγνωσιν ἐσφάλησαν. ἓν γὰρ κυρίως σημαίνοντος
@@ -3815,14 +4103,13 @@
                             <lb/>ληροῦντός τε καὶ περιλαλοῦντος, ὥσπερ οὐδ’ Ἀρχιγένης <lb/>ἔν τε τῷ
                             περὶ σφυγμῶν αὐτοῦ γράμματι κᾀν τῷ <lb/>δευτέρῳ τῆς τοῦ πυρετοῦ
                             σημειώσεως. </p>
-                    </div>
-                </div>
-                <pb n="695"/>
-
-                <div type="textpart" subtype="book" n="4">
-                    <div type="textpart" subtype="chapter" n="1">
-                        <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΔΙΑΦΟΡΑΣ ΣΦΥΓΜΩΝ <lb/>ΛΟΓΟΣ Δ.</head>
-                        <p>Εἴρηταί μοι καὶ κατὰ τὴν ἀρχὴν εὐθέως τοῦ <lb/>δευτέρου γράμματος, ὅσον
+            </div>
+         </div>
+         <pb n="695"/>
+         <div n="4" type="book">
+            <div n="1" type="chapter">
+               <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΔΙΑΦΟΡΑΣ ΣΦΥΓΜΩΝ <lb/>ΛΟΓΟΣ Δ.</head>
+               <p>Εἴρηταί μοι καὶ κατὰ τὴν ἀρχὴν εὐθέως τοῦ <lb/>δευτέρου γράμματος, ὅσον
                             εἰς τὰ τῆς τέχνης ἔργα χρήσιμον ἐν τῷ <lb/>πρώτῳ πεπλήρωται βιβλίῳ· καὶ
                             γὰρ ὁπόσον ἐστὶ τὸ πᾶν πλῆθος <lb/>τῶν σφυγμῶν, ἐδείχθη, καὶ τὰς
                             προσηγορίας, ὅσον γέ εἰσι <lb/>προσηγορίαι, διήλθομεν, ἠξίωσά τε τὸν
@@ -3846,7 +4133,7 @@
                             ἐκτείνοντες τὴν χεῖρα <lb/>παρέχωσιν αὐτοῖς τὸν καρπὸν, ἅψασθαι
                             κελεύοντες τοῦ σφυγμοῦ <lb/>τὸν ἰατρὸν, ἆρ’ οὕτως αὐτοὺς οἰηθῆναι χρὴ
                             λέγειν <lb/>
-                            <milestone unit="ed2page" n="81"/>τοῦ σφυγμοῦ τὴν προσηγορίαν, ὡς εἰ καὶ
+                  <milestone unit="ed2page" n="81"/>τοῦ σφυγμοῦ τὴν προσηγορίαν, ὡς εἰ καὶ
                             σκινδαψὸν <pb n="697"/> εἶπον, ἢ πρᾶγμά τι σημαίνοντες ἐφθέγξαντο τὴν
                             φωνὴν <lb/>τήνδε; δοκεῖ μοι βέλτιον εἶναι φάναι, νοοῦντάς τι πρᾶγμα,
                             <lb/>κατ’ ἐκείνου τίθεσθαι τοὔνομα τοῦ σφυγμοῦ. πότερον οὖν <lb/>οὕτω
@@ -3885,9 +4172,9 @@
                             ἀλλὰ νῦν γε δεινὸν ἔοικα <lb/>πείθεσθαι, προβάλλειν ἀναγκαζόμενος ἐμαυτῷ
                             τι τῶν κατὰ <lb/>τοὺς σφυγμοὺς, εἰς ἐπίδειξιν αὐτῶν τῆς ματαίας
                             φλυαρίας. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="2">
-                        <p>Ἔστω δὴ τοῦτ’ αὐτὸ τὸ πρῶτον καὶ σαφέστατον <lb/>ὁ σφυγμός. εἰ γὰρ ἐπὶ
+            </div>
+            <div n="2" type="chapter">
+               <p>Ἔστω δὴ τοῦτ’ αὐτὸ τὸ πρῶτον καὶ σαφέστατον <lb/>ὁ σφυγμός. εἰ γὰρ ἐπὶ
                             τούτου δείξαιμι, πόσην <lb/>ἐποιήσαντο ματαιολογίαν, οὐδὲ περὶ τῶν ἄλλων
                             ἔτ’ ἄδηλος <lb/>ὁ λόγος μενεῖ. τὸν γοῦν σφυγμὸν κίνησιν ἀρτηριῶν
                             ὡρίσαντό <lb/>τινες, οἷς ἀντιλέγοντες ἔνιοι πρῶτον μὲν ἡμαρτῆσθαι τὸν
@@ -3897,7 +4184,7 @@
                             μέρους προστιθέναι, ὡς γίνεσθαι <lb/>τὸν ὅρον τοιοῦτον, σφυγμός ἐστι
                             κίνησις ἀρτηριῶν καὶ τῆς <lb/>κατὰ τὴν καρδίαν ἀρτηριώδους κοιλίας, ἢ νὴ
                             Δί’ οὕτως· <lb/>
-                            <milestone unit="ed2page" n="82"/>σφυγμός ἐστι κίνησις ἀρτηριῶν καὶ τῆς
+                  <milestone unit="ed2page" n="82"/>σφυγμός ἐστι κίνησις ἀρτηριῶν καὶ τῆς
                             ἀρτηριώδους κοιλίας <lb/>τῆς καρδίας. οἷς αὖθις ἕτεροι μεμφόμενοι κακῶς
                             εἰρῆσθαί <lb/>φασι τὸν σφυγμὸν κίνησιν ἁπλῶς· εἶναι γὰρ καὶ ἄλλας
                             <lb/>κινήσεις ἀρτηριῶν καὶ καρδίας, οἶον τήν τε πεπτικὴν τοῦ ﻿<pb n="700"/> περιεχομένου κατ’ αὐτὰς αἵματος, ἑλκτικήν τε τούτου καὶ
@@ -4109,7 +4396,7 @@
                             θερμασίας, ἆρά γε τῷ <lb/>ῥιπίζεσθαι κατὰ τὴν κίνησιν, ἢ διὰ τὴν
                             πρόσπτωσιν τοῦ ψύχοντος <lb/>ἀέρος συναγομένης, ὡς μὴ διαφορεῖσθαι
                             ῥᾳδίως, ἢ <lb/>καθαιρομένης τὸ καπνῶδές τε καὶ λιγνυῶδες περίττωμα. <lb/>
-                            <milestone unit="ed2page" n="86"/>χρεία δ’ ἐδείχθη τῆς κατὰ τὰς ἀρτηρίας
+                  <milestone unit="ed2page" n="86"/>χρεία δ’ ἐδείχθη τῆς κατὰ τὰς ἀρτηρίας
                             πνευματικῆς οὐσίας <lb/>καὶ πρὸς τὴν τοῦ ψυχροῦ πνεύματος γένεσιν. τῆς
                             δ’ οὐσίας <pb n="713"/> τῶν σφυγμῶν ἐστι καὶ πότερον, ὅταν αἱ ἀρτηρίαι
                             διαστέλλωνται, <lb/>τηνικαῦθ’ ἕλκεσθαι συμβαίνει τὰς ὕλας αὐτὰς, ἢ
@@ -4159,16 +4446,14 @@
                             ἅπασί τε τοῖς ἄλλοις παλαιοῖς οἱ <lb/>γραμματικοὶ σαφηνίζουσι. τὸ γὰρ
                             τῇδε τῇ ἑρμηνείᾳ μήπω <lb/>σαφὲς ἐξ ἑτέρας εὔδηλον γίνεται, καθάπερ ἐπὶ
                             τοῦ πίσυρες. <lb/>ἐν μὲν γὰρ τῷ,</p>
-                        <l>— — Πίσυρες ἐριαύχενες ἵπποι,</l>
-
-                        <pb n="716"/>
-
-                        <p>σαφὲς οὐδέπω τὸ σημαινόμενόν ἐστιν, ἐν μέντοι τῷ,</p>
-                        <lg>
-                            <l>Ἔνθεν τέσσαρα μὲν σάκε’ εἷλον, δούρατα δ’ ὀκτὼ,</l>
-                            <l>— — καὶ πίσυρας κυνέας,</l>
-                        </lg>
-                        <p>εὔδηλον ἐγένετο. τεττάρων γὰρ ὄντων τῶν καθοπλιζομένων, <lb/>ὥσπερ σάκη
+               <l>— — Πίσυρες ἐριαύχενες ἵπποι,</l>
+               <pb n="716"/>
+               <p>σαφὲς οὐδέπω τὸ σημαινόμενόν ἐστιν, ἐν μέντοι τῷ,</p>
+               <lg>
+                  <l>Ἔνθεν τέσσαρα μὲν σάκε’ εἷλον, δούρατα δ’ ὀκτὼ,</l>
+                  <l>— — καὶ πίσυρας κυνέας,</l>
+               </lg>
+               <p>εὔδηλον ἐγένετο. τεττάρων γὰρ ὄντων τῶν καθοπλιζομένων, <lb/>ὥσπερ σάκη
                             τέσσαρα λαβεῖν αὐτούς φησιν, οὕτω καὶ περικεφαλαίας <lb/>τέσ<milestone unit="ed2page" n="87"/>σαρας. ὡσαύτως οὖν ὅταν ἀναγνῶμεν ἔν
                             <lb/>τινι τῶν παλαιῶν ἰατρῶν βιβλίῳ, σφύζειν τὸ φλεγμαῖνον μόνον
                             <lb/>μόριον, ἢ τὴν ἐπὶ φλεγμονῇ κίνησιν τῶν ἀρτηριῶν σφυγμὸν
@@ -4224,7 +4509,7 @@
                             <lb/>πρᾶγμα. λέγωμεν οὖν αὖθις ἀναλαβόντες ὑπὲρ τοῦ <lb/>κατὰ τὸν
                             σφυγμὸν ὅρου, μνημονεύοντες ὀνομαστὶ τῶν δοξάντων <lb/>αὐτὸν ὡρίσθαι
                             καλῶς. <milestone unit="ed2page" n="88"/>
-                            <milestone unit="ed1page" n="45"/>ἤρξαντο μὲν οὖν, <lb/>ὡς ἔφην, τῆς
+                  <milestone unit="ed1page" n="45"/>ἤρξαντο μὲν οὖν, <lb/>ὡς ἔφην, τῆς
                             τοιαύτης περιεργίας οἱ Ἡροφίλειοι· διεδέξαντο <lb/>δ’ αὐτοὺς ἔνιοι τῶν
                             Ἐρασιστρατείων· εἴθ’ οἵ τε πνευματικοὶ <lb/>καλούμενοι καί τινες τῶν
                             μεθοδικῶν. εἰ μὲν οὖν ἁπάντων <lb/>μνημονεύω, δυοῖν, οὐχ ἑνὸς, ἔσται
@@ -4232,9 +4517,9 @@
                             ἐν ἑνὶ <lb/>καταπαῦσαι γράμματι, τοσούτους αὔταρκές ἐστι διελθεῖν
                             <lb/>ὅρους, ἅμα τοῖς εἰποῦσιν ἀνδράσιν αὐτοὺς, ὅσους ἂν ὑποδέξασθαι ﻿<pb n="720"/> δύνηται τὸ βιβλίον. ἐκ τούτων γὰρ οὖν ἐνέσται <lb/>καὶ
                             τοὺς ἄλλους ἅπαντας κρίνειν. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="3">
-                        <p>Ὁ μὲν Ταραντῖνος Ἡρακλείδης ἐμπειρικῷ <lb/>πρέπουσαν ὑπογραφὴν ποιούμενος
+            </div>
+            <div n="3" type="chapter">
+               <p>Ὁ μὲν Ταραντῖνος Ἡρακλείδης ἐμπειρικῷ <lb/>πρέπουσαν ὑπογραφὴν ποιούμενος
                             τὸν σφυγμὸν εἶναί φησι <lb/>κίνησιν ἀρτηριῶν καὶ καρδίας. ἴσμεν δ’ ὅτι
                             τὴν ἀρχὴν οὐδ’ <lb/>ὁρίζεσθαι σπουδάζουσιν οἱ ἀπὸ τῆς ἐμπειρικῆς
                             αἱρέσεως, ἀλλ’ <lb/>ὑποτυπώσεσί τε καὶ ὑπογραφαῖς χρῶνται. καλοῦσι δ’
@@ -4326,10 +4611,10 @@
                             οὐκ <lb/>ἔστιν ἡ κίνησις αἰσθητὴ, καίτοι σωζομένης αὐτῆς πολλάκις,
                             <lb/>ὡς πρὸς τὴν οἰκείαν ὕπαρξιν. οὐ γὰρ ἂν ἔζησαν εἰ παν<milestone unit="ed1page" n="46"/>τάπασιν <lb/>ἡ κίνησις ἀπωλώλει τῆς καρδίας
                             καὶ τῶν ἀρτηριῶν. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="4">
-                        <p>
-                            <milestone unit="ed2page" n="90"/>Ὅ γε μὴν Ἡροφίλειος Ἀλέξανδρος, ὁ <pb n="726"/> Φιλαλήθης ἐπικληθεὶς, διττὸν ἐποιήσατο διὰ τὰς τοιαύτας
+            </div>
+            <div n="4" type="chapter">
+               <p>
+                  <milestone unit="ed2page" n="90"/>Ὅ γε μὴν Ἡροφίλειος Ἀλέξανδρος, ὁ <pb n="726"/> Φιλαλήθης ἐπικληθεὶς, διττὸν ἐποιήσατο διὰ τὰς τοιαύτας
                             <lb/>ἐπηρείας τὸν ὁρισμὸν τοῦ σφυγμοῦ, τὸν μὲν ἕτερον ἐξ αὐτοῦ <lb/>τοῦ
                             πράγματος ἐξ οἰκείας φύσεως, ὃν ὡς ἐν ὑποκειμένοις <lb/>ὀνομάζει, τὸν δὲ
                             ἕτερον ὡς ἐν ἐπισκέψει. τὸν μὲν οὖν ὡς <lb/>ἐν ὑποκειμένοις σφυγμὸν
@@ -4347,9 +4632,9 @@
                             ὕστερον ὅλως ἐρῶ, πρότερόν γε παραγράψας τοὺς <pb n="727"/> τοῦ
                             Δημοσθένους ὅρους, ὡσαύτως τῷ διδασκάλῳ Φιλαλήθους <lb/>ἐπικληθέντος,
                         </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="5">
-                        <p>οὗ καὶ τὰ τρία περὶ σφυγμῶν ἐστι συγγράμματα, <lb/>παρὰ πολλοῖς
+            </div>
+            <div n="5" type="chapter">
+               <p>οὗ καὶ τὰ τρία περὶ σφυγμῶν ἐστι συγγράμματα, <lb/>παρὰ πολλοῖς
                             εὐδοκιμοῦντα. διαιρεῖται δ’ οὖν <lb/>καὶ οὗτος τὸν σφυγμὸν ὁμοίως τῷ
                             Ἀλεξάνδρῳ, καί φησιν <lb/>εἶναι τὸν μὲν κατὰ τὸ ὑποκείμενον καρδίας καὶ
                             ἀρτηριῶν <lb/>διαστολὴν, ἢ συστολὴν φυσικὴν, φαίνεσθαι δυναμένην· τὸν
@@ -4434,9 +4719,9 @@
                             παραλαβεῖν <lb/>ἀπέστη τοῦ διδασκάλου, πρόσθεν εἴρηται, καὶ καθ’ <lb/>ὅν
                             τινα λογισμὸν οὕτως ἔπραξεν. ἑξῆς οὖν ἐπισκεψώμεθα <lb/>τοὺς ὑπὸ τῶν
                             ἄλλων Ἡροφιλείων εἰρημένους ὅρους. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="6">
-                        <p>Ὁ μὲν οὖν Βακχεῖος ἐν ταῖς ἄλλαις ἀκροάσεσι <lb/>τὸν σφυγμὸν εἶναί φησι
+            </div>
+            <div n="6" type="chapter">
+               <p>Ὁ μὲν οὖν Βακχεῖος ἐν ταῖς ἄλλαις ἀκροάσεσι <lb/>τὸν σφυγμὸν εἶναί φησι
                             συστολὴν καὶ διαστολὴν ἅμα <lb/>ἐν ἁπάσαις ταῖς ἀρτηρίαις γιγνομένην.
                             πρὸς ὃν ὅρον ἐπηρεαστικῶς <lb/>μὲν ἀντεῖπον οἱ Ἐρασιστράτειοι, τὸ
                             σφέτερον ἁμάρτημα <lb/>κατηγορίας ἀρχὴν ποιησάμενοι. δοκεῖ γὰρ αὐτοῖς ἡ
@@ -4462,11 +4747,10 @@
                             βέλτιον δ’ ἀντεῖπον ὅσοι φασὶ μόνων <lb/>τῶν κατὰ φύσιν σφυγμῶν ὑπ’
                             αὐτοῦ γεγονέναι τὸν ὁρισμόν· <lb/>ἐν γὰρ τῷ παρὰ φύσιν ἔχειν τὸ ζῶον
                             ἐνίοτε φαίνεσθαι μὴ <lb/>πάσας ἅμα διαστελλομένας τὰς ἀρτηρίας. </p>
-                    </div>
-                    <pb n="734"/>
-
-                    <div type="textpart" subtype="chapter" n="7">
-                        <p>Ἀριστόξενος δὲ ὁ Ἡροφίλειος οὐ τοῦτο μόνον <lb/>ἐνεκάλεσεν, ἀλλὰ καὶ τὸ
+            </div>
+            <pb n="734"/>
+            <div n="7" type="chapter">
+               <p>Ἀριστόξενος δὲ ὁ Ἡροφίλειος οὐ τοῦτο μόνον <lb/>ἐνεκάλεσεν, ἀλλὰ καὶ τὸ
                             παραλελεῖφθαι μὲν τὸ γένος τῶν <lb/>σφυγμῶν κατὰ τὸν ὅρον, ἐκ διαιρέσεως
                             δ’ αὐτοῦ λελέχθαι <lb/>τι περὶ διαστολῆς καὶ συστολῆς· αὐτὸς γὰρ ἀξιοῖ
                             τὸν σφυγμὸν <lb/>λέγειν ἐνέργειαν ἀρτηριῶν. τοῦτο γὰρ εἶναι τὸ πρῶτον
@@ -4502,9 +4786,9 @@
                             <lb/>ἦν δύο βιβλία πᾶσι γνώριμα, καθ’ ἃ διδάσκει τε καὶ <lb/>γυμνάζει τῇ
                             διαιρετικῇ μεθόδῳ χρωμένους ποιεῖσθαι τοὺς <lb/>ὁρισμούς. ἐπιγράφει δὲ
                             τῷ βιβλίῳ τούτῳ, τῷ μὲν ἑτέρῳ Σοφιστὴς, <lb/>τὸ δ’ ἑτέρῳ Πολιτικός. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="8">
-                        <p>Ἐπὶ δὲ τὸν ὑπὸ τοῦ Ζήνωνος εἰρημένον <lb/>ὅρον ἔλθωμεν, ἀνδρὸς οὐδενὸς
+            </div>
+            <div n="8" type="chapter">
+               <p>Ἐπὶ δὲ τὸν ὑπὸ τοῦ Ζήνωνος εἰρημένον <lb/>ὅρον ἔλθωμεν, ἀνδρὸς οὐδενὸς
                             δευτέρου τῶν Ἡροφιλείων. <lb/>οὗτος δὴ τὸν σφυγμόν φησιν εἶναι τῶν
                             ἀρτηριωδῶν μερῶν <lb/>μικτὴν ἐνέργειαν ἐκ συστολῆς καὶ διαστάσεως, καθ’
                             ἣν ἐν ἅπασι <lb/>τοῖς μέρεσι τὴν αὐτὴν ὑπάρχειν τάξιν ἠκολούθησεν, ἐάν
@@ -4533,7 +4817,7 @@
                             <lb/>ταύτης ὅτι μὴ ταὐτόν ἐστι τῷ τῶν ἀρτηριῶν, ὁμολογεῖται <lb/>καὶ
                             αὐτοῖς τοῖς ἀρτηριώδη <milestone unit="ed1page" n="48"/>καλοῦσιν αὐτήν.
                                 <pb n="738"/>
-                            <milestone unit="ed2page" n="94"/>ὡς γὰρ νευρῶδές τι σῶμα λέγομεν ἕτερον
+                  <milestone unit="ed2page" n="94"/>ὡς γὰρ νευρῶδές τι σῶμα λέγομεν ἕτερον
                             ὂν νεύρου, <lb/>οὕτω καὶ ἀρτηριώδη τὴν κοιλίαν ταύτην ἐκάλεσαν ἑτέραν
                             <lb/>προφανῶς ἔχουσαν οὐσίαν τῶν ἀρτηριῶν. οὐ συγχωρεῖται δ’ <lb/>αὐτοῖς
                             ὑπὸ τῶν ἀντιλεγόντων οὐδ’ ἀρτηριώδης ὀρθῶς ὀνομάζεσθαι. <lb/>τὴν αὐτὴν
@@ -4587,10 +4871,10 @@
                             καὶ τῆς κατὰ τοῦτον <lb/>τὸν ὅρον ἀντιλογίας αὐτῶν, εἰς ὅσον ἐκτείνεσθαι
                             δύναται, <lb/>μεταβῶμεν ἀπὸ τοῦ Ζήνωνος ἐπὶ τὸν Χρύσερμον, ὁριζόμενον
                             <lb/>οὑτωσὶ τὸν σφυγμόν· </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="9">
-                        <p>
-                            <milestone unit="ed2page" n="95"/>Σφυγμός ἐστι διάστασις καὶ συστολὴ
+            </div>
+            <div n="9" type="chapter">
+               <p>
+                  <milestone unit="ed2page" n="95"/>Σφυγμός ἐστι διάστασις καὶ συστολὴ
                             <lb/>ἀρτηριῶν, πάντοθεν τοῦ χιτῶνος ἐπανισταμένου καὶ πάλιν <lb/>εἰς
                             ἑαυτὸν συντρέχοντος ὑπὸ ψυχικῆς καὶ ζωτικῆς δυνάμεως, <lb/>παρεπομένη
                             διαπαντὸς ἐν τῷ ὑγιαίνειν καὶ νοσεῖν, πρὸς αἴσθησιν <lb/>ληπτή. φαίνεται
@@ -4627,9 +4911,9 @@
                             βραχύ. διόπερ οὐδὲ χρονίζειν ἔτι κατὰ τὸν λόγον <lb/>ἀναγκαῖον. ὥσπερ
                             γὰρ τοῦτο λέλεκται πρόσθεν, οὕτω καὶ <lb/>περὶ τῶν ἄλλων ὅλων, ὅσα κατὰ
                             τὸν ὅρον ὁ Χρύσερμος <lb/>εἶπεν. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="10">
-                        <p>Ὅ γε μὴν Ἐρυθραῖος Ἡρακλείδης, ἐνδοξότατος <lb/>τῶν μαθητῶν αὐτοῦ
+            </div>
+            <div n="10" type="chapter">
+               <p>Ὅ γε μὴν Ἐρυθραῖος Ἡρακλείδης, ἐνδοξότατος <lb/>τῶν μαθητῶν αὐτοῦ
                             γενόμενος, οὐ πάνυ φαίνεται <lb/>προσιέμενος τοῦ διδασκάλου τὸν ὅρον.
                             συστολὴν γὰρ ἔφη καὶ <lb/>διαστολὴν ἀρτηριῶν καὶ καρδίας εἶναι τὸν
                             σφυγμὸν ὑπὸ ζωτικῆς <lb/>καὶ ψυχικῆς δυνάμεως πλειστοδυναμούσης
@@ -4745,10 +5029,10 @@
                             τοῦτο παρακειμένοις. <lb/>οὕτω δὲ καὶ τοὺς ἄλλους ἅπαντας· καὶ νῦν, ὡς
                             <lb/>ἔφην, ὑπὲρ αὐτοῦ μόνου τοῦ σφυγμοῦ πρόκειται διελθεῖν ἐπὶ
                             <lb/>κεφαλαίων. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="11">
-                        <p>
-                            <milestone unit="ed2page" n="98"/>Ὁ τοίνυν Ἀγαθῖνος ἐπιτιμῶν τοῖς
+            </div>
+            <div n="11" type="chapter">
+               <p>
+                  <milestone unit="ed2page" n="98"/>Ὁ τοίνυν Ἀγαθῖνος ἐπιτιμῶν τοῖς
                             <lb/>πάντως ὁρίζεσθαι τὸν σφυγμὸν βουλομένοις, ὅμως καὶ αὐτὸς <lb/>εἰς
                             μακρολογίαν οὐκ ἀναγκαίαν ἐνέπεσε μετὰ τοῦ καὶ σφάλλεσθαι <lb/>φανερῶς,
                             οἰόμενος ὁμωνύμως λέγεσθαι τὸν σφυγμόν. <lb/>ἄλλως μὲν γὰρ, φησὶ, τὴν
@@ -4812,9 +5096,9 @@
                             καρδίας, ἔστι δ’ ὅτε <lb/>καὶ διαστολὴν καὶ συστολὴν ἀρτηριῶν καὶ
                             καρδίας, οὐ μαχομένων <lb/>ἀλλήλοις τῶν εἰρημένων λόγων, ἀλλὰ τοῦ μὲν,
                             ὡς <lb/>ἂν εἴποι τις, ὄντος γενικωτέρου, τῶν δ’ εἰδικωτέρων. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="12">
-                        <p>Ὁ γοῦν Ἀρχιγένης ἐξειργάσθαι δοκῶν τὸν <lb/>περὶ τῶν σφυγμῶν λόγον ἐν ἑνὶ
+            </div>
+            <div n="12" type="chapter">
+               <p>Ὁ γοῦν Ἀρχιγένης ἐξειργάσθαι δοκῶν τὸν <lb/>περὶ τῶν σφυγμῶν λόγον ἐν ἑνὶ
                             μεγάλῳ βιβλίῳ κατὰ τὴν <lb/>ἀρχὴν αὐτοῦ τόνδε τὸν ὅρον ἔγραψε· σφυγμός
                             ἐστι καρδίας <lb/>καὶ ἀρτηριῶν διαστολὴ φυσική τε καὶ συστολὴ φυσικὴ,
                             προσθεὶς <lb/>δηλονότι τὸ φυσικὴ τῷ τοῦ Ἀγαθίνου λόγῳ δι’ ἣν
@@ -4844,15 +5128,15 @@
                             προσέθεσαν αἰτίας <lb/>εὐλόγους διέρχηταί τις, εἶθ’ ἑξῆς ὅπως ἐμέμψαντό
                             τινες αὐτὰς, <lb/>εἶθ’ ὅπως ἀπελογήσαντο περὶ τῶν εἰπόν<milestone unit="ed1page" n="51"/>των, ἕτερον <lb/>μῆκος ἔτι κᾀκ τοῦδε περιττὸν
                             τῷ λόγῳ προστεθήσεται. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="13">
-                        <p>
-                            <milestone unit="ed2page" n="100"/>Μάγνος οὖν οὐ διαστολὴν καὶ συστολὴν,
+            </div>
+            <div n="13" type="chapter">
+               <p>
+                  <milestone unit="ed2page" n="100"/>Μάγνος οὖν οὐ διαστολὴν καὶ συστολὴν,
                             <lb/>ἀλλὰ καὶ διόγκωσιν καὶ συνίζησιν αἰσθητὴν καρδίας <lb/>καὶ τῶν
                             ὁμοιοπαθούντων αὐτῇ τὸν σφυγμὸν εἶναί <lb/>φησιν. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="14">
-                        <p>Αὐτὸς δὲ ὁ τῆς αἱρέσεως αὐτῶν ἡγεμὼν <lb/>Ἀθήναιος τὸν σφυγμὸν ὁρίζεται
+            </div>
+            <div n="14" type="chapter">
+               <p>Αὐτὸς δὲ ὁ τῆς αἱρέσεως αὐτῶν ἡγεμὼν <lb/>Ἀθήναιος τὸν σφυγμὸν ὁρίζεται
                             κίνησιν κατὰ διαστολὴν φυσικὴν <lb/>καὶ ἀπροαίρετον τοῦ ἐν ἀρτηρίαις καὶ
                             καρδίᾳ θερμοῦ, <lb/>ἐξ ἑαυτοῦ τε καὶ εἰς ἑαυτὸ κινουμένου, καὶ
                             συγκινοῦντος καρδίαν <lb/>καὶ ἀρτηρίας, οὐ μόνον οὐσιώδη τὸν ὁρισμὸν
@@ -4868,9 +5152,9 @@
                             βραχὺ <lb/>τῶν προειρημένων παραλλάττοντας, ὡς εἶπον, ὥστ’ οὐ χρὴ
                             <lb/>μνημονεύειν αὐτῶν ἐπειγομένους καθ’ ὅσον οἷόν τε διαδραμεῖν
                             <lb/>τὸν λόγον. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="15">
-                        <p>Ὡσαύτως δὲ καὶ τοῖς ἀπ’ Ἀσκληπιάδου <lb/>διαφωνία ἐγένετο πρὸς ἀλλήλους,
+            </div>
+            <div n="15" type="chapter">
+               <p>Ὡσαύτως δὲ καὶ τοῖς ἀπ’ Ἀσκληπιάδου <lb/>διαφωνία ἐγένετο πρὸς ἀλλήλους,
                             τοῖς μὲν προστιθεῖσί τι <lb/>τοῖς εἰρημένοις ὑπ’ Ἀσκληπιάδου, τοῖς δ’
                             ἀφαιροῦσι, τοῖς <lb/>δ’ ὑπαλλάττουσιν. αὐτὸς μὲν γὰρ ὁ Ἀσκληπιάδης τὸν
                             μὲν <lb/>σφυγμὸν εἶναι συστολὴν καὶ διαστολὴν καρδίας τε καὶ ἀρτηριῶν,
@@ -4886,9 +5170,9 @@
                             προκειμένη γέγραπται λέξις, <lb/>εἰς διορισμὸν ἀναπνοῆς τε καὶ σφυγμῶν
                             ἔχουσα προσκείμενον, <lb/>οὐχ ἅπαξ, ἀλλὰ καὶ πολλάκις γιγνομένη κατὰ
                             μίαν <lb/>εἰσπνοήν. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="16">
-                        <p>Ἔνιοι δὲ καὶ αὐτοῖς τούτοις προσέθεσαν <lb/>τινα, καθάπερ καὶ Μοσχίων ὁ
+            </div>
+            <div n="16" type="chapter">
+               <p>Ἔνιοι δὲ καὶ αὐτοῖς τούτοις προσέθεσαν <lb/>τινα, καθάπερ καὶ Μοσχίων ὁ
                             διορθωτὴς ἐπικληθεὶς, ἐπειδή <lb/>τινα τῶν ὑπ’ Ἀσκληπιάδου λελεγμένων
                             ἐπηνωρθοῦτο, μὴ <lb/>πάντῃ πειθόμενος τἀνδρὶ, καθάπερ οὐδ’ ὁ Ἀλέξανδρος
                             <lb/>Ἡροφίλῳ. τίς οὖν ὁ τοῦ Μοσχίωνος <milestone unit="ed2page" n="101"/>ὅρος εἰπόντες <lb/>ἀπαλλαγῶμεν ἤδη καὶ τῶν Ἀσκληπιάδου· σφυγμός ἐστι
@@ -4897,9 +5181,9 @@
                             ἀλλὰ πολλάκις γιγνομένη. καί σοι καὶ τῆς <pb n="759"/> ἐξηγήσεως ἑκάστου
                             τῶν κατὰ τὸν ὅρον εἰρημένων οὐκ οἶμαι <lb/>δεήσειν, εἰ μέμνησαι τῶν ἄχρι
                             δεῦρο λελεγμένων. </p>
-                    </div>
-                    <div type="textpart" subtype="chapter" n="17">
-                        <p>Ἄξιον οὖν ἴσως ἐστὶ καὶ τῶν περὶ τὸν <lb/>Ἐρασίστρατον μνημονεῦσαι,
+            </div>
+            <div n="17" type="chapter">
+               <p>Ἄξιον οὖν ἴσως ἐστὶ καὶ τῶν περὶ τὸν <lb/>Ἐρασίστρατον μνημονεῦσαι,
                             διενεχθέντων καὶ αὐτῶν πρὸς <lb/>ἀλλήλους οὐχ ἧττον ἢ οἱ ἄλλοι. τὸ γάρ
                             τοι θαυμάσιον <lb/>τοῦτ’ ἔστιν, ὅτι μὴ μόνον ἀπὸ διαφερουσῶν αἱρέσεων,
                             ἀλλὰ <lb/>καὶ αὐτῶν τῶν ἀφ’ ἑνὸς ἀνδρὸς ἀναγομένων οἱ πλεῖστοι
@@ -5001,9 +5285,8 @@
                             τέταρτον. ἐπιγράφεται <lb/>δ’ ὑπὸ τῶν πλείστων ἀναλυτικῶν δεύτερον ἡ
                             <lb/>τοιαύτη πραγματεία, καθάπερ ἡ περὶ συλλογισμοῦ προτέρων
                             <lb/>ἀναλυτικῶν. </p>
-                    </div>
-                </div>
             </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

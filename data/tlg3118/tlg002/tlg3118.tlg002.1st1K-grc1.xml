@@ -1,99 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
- <teiHeader xml:lang="eng">
-  <fileDesc>
-   <titleStmt>
-    <title xml:lang="lat">Narrationes de Syntipa</title>
-    <author xml:lang="lat">Syntipas</author>
-    <editor>Michael Andreopulus</editor>
-    <editor>Alfred Eberhard</editor>
-    <funder>Harvard Library Arcadia Fund</funder>
-    <principal>Gregory Crane</principal>
-    <respStmt>
-     <persName xml:id="DDD">Digital Divide Data</persName>
-     <resp>Corrected and encoded the text</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Gregory Crane</persName>
-     <resp>Editor-in-Chief, Perseus Digital Library</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Matt Munson</persName>
-     <resp>Project Manager (University of Leipzig)</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Annette Gessner</persName>
-     <resp>Project Assistant (University of Leipzig)</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Thibault Clérice</persName>
-     <resp>Lead Developer (University of Leipzig)</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Bruce Robertson</persName>
-     <resp>Technical Advisor</resp>
-    </respStmt>
-   </titleStmt>
-   <publicationStmt>
-    <authority>Harvard College Library</authority>
-    <idno type="filename">tlg3118.tlg002.1st1K-grc1</idno>
-    <availability>
-     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Narrationes de Syntipa</title>
+            <author xml:lang="lat">Syntipas</author>
+            <editor>Michael Andreopulus</editor>
+            <editor>Alfred Eberhard</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg3118.tlg002.1st1K-grc1</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
       License</licence>
-    </availability>
-    <date>2016</date>
-    <publisher>Harvard College Library</publisher>
-    <pubPlace>United States</pubPlace>
-   </publicationStmt>
-   <sourceDesc>
-    <listBibl>
-     <biblStruct>
-      <monogr>
-       <title xml:lang="lat">Fabulae Romanenses Graece Conscriptae</title>
-       <editor>
-        <persName>
-         <name>Alfred Eberhard</name>
-        </persName>
-       </editor>
-       <author ref="urn:cts:greekLit:tlg3118" xml:lang="lat">Syntipas</author>
-       <imprint>
-        <publisher>Teubner</publisher>
-        <pubPlace>Leipzig</pubPlace>
-        <date>1872</date>
-       </imprint>
-       <biblScope unit="volume">1</biblScope>
-      </monogr>
-      <ref target="https://archive.org/details/fabulaeromanense01eberuoft/page/136/mode/2up" xml:lang="eng">Internet Archive</ref>
-     </biblStruct>
-    </listBibl>
-   </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-   <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-     <refsDecl n="CTS">
-    <cRefPattern matchPattern="(\w+)" n="paragraph" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-   </refsDecl>
-  </encodingDesc>
-  <profileDesc>
-   <langUsage>
-    <language ident="grc">Greek</language>
-    <language ident="lat">Latin</language>
-   </langUsage>
-  </profileDesc>
-  <revisionDesc>
-   <change/>
-  </revisionDesc>
- </teiHeader>
-<text>
-	<body>
-		
-	 <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg3118.tlg002.1st1K-grc1">
-<pb n="136"/>
-<head>Narrationis de Syntipa</head>
-<div type="textpart" subtype="paragraph" n="praef"><p>altera recensio
-qualis extat in cod. Mon. 525 fol. 51—66.</p></div>
-<note type="marginal">p. 60, 3</note><div type="textpart" subtype="paragraph" n="1"><p>. . . λέγει οὖν πρὸς τὴν ὁμόζυγον· τί ἐστι τοῦτο ὅπερ
+            </availability>
+            <date>2016</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Fabulae Romanenses Graece Conscriptae</title>
+                     <editor>
+                        <persName>
+                           <name>Alfred Eberhard</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg3118" xml:lang="lat">Syntipas</author>
+                     <imprint>
+                        <publisher>Teubner</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1872</date>
+                     </imprint>
+                     <biblScope unit="volume">1</biblScope>
+                  </monogr>
+                  <ref target="https://archive.org/details/fabulaeromanense01eberuoft/page/136/mode/2up"
+                       xml:lang="eng">Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(\w+)"
+                         n="paragraph"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre"
+                    target="#prose-standard"
+                    cert="low"
+                    resp="#corpus-tools"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="edition"
+              xml:lang="grc"
+              n="urn:cts:greekLit:tlg3118.tlg002.1st1K-grc1">
+            <pb n="136"/>
+            <head>Narrationis de Syntipa</head>
+            <div type="textpart" subtype="paragraph" n="praef">
+               <p>altera recensio
+qualis extat in cod. Mon. 525 fol. 51—66.</p>
+            </div>
+            <note type="marginal">p. 60, 3</note>
+            <div type="textpart" subtype="paragraph" n="1">
+               <p>. . . λέγει οὖν πρὸς τὴν ὁμόζυγον· τί ἐστι τοῦτο ὅπερ
 νῦν τεθέαμαι; οὐ διεστειλάμην σοι μηδʼ ὅλως τού-
 τοις ἡμῶν προσψαύειν τοῖς σιτίοις;“ ἡ δʼ ὁμόζυγος
 καὶ οὐχ ἡψάμην αὐτῶν·“ ἀπεκρίνατο. ἣ δὲ οὐδαμῶς
@@ -116,8 +130,7 @@ propositas indicari scito; littera P alteram recensionem libri
 significat, quam siscrepare uel concinere hic illic ubi necessarium
 uidebatur notaui 2 μηδ᾿ ὅλως scripsi ubique 4 καίτοι?
 αὐτῷ cod.; cf. 2, 9. 60, 6 13 ὑστέρας ἑαὐτὸν</note>
-
-<pb n="137"/>
+                  <pb n="137"/>
 υἱόν σου διαχειρίσῃ ἐκ ψιλῆς διαβολῆς τοῦ καταρά-
 του τοῦδε γυναίου, καὶ ταῦτά τι τοιοῦτο μὴ εἰδὼς
 ἐκείνου, καὶ τῷ σῷ κράτει ὡσαύτως συμβήσεται ὡς
@@ -153,8 +166,7 @@ praepositio διά ad ἐλθούσης suppletur ut 87, 8 17 κατή-
 δοντο utique scriptoris est 19 ὕστερον post σπυρίδι ponen-
 dum cf. 71, 8; 24 ὄψα sic conlocatum ne te offendat 22
 ἐναπεκάλυφαν</note>
-
-<pb n="138"/>
+                  <pb n="138"/>
 τὴν σπυρίδα πρὸ τῶν τοῦ ἀνδρὸς αὐτῆς ἀποθεῖσα
 ὀμμάτων διέστη βραχύ. ὁ δʼ ἀνὴρ αὐτῆς ἐκκαλύπτει
 καὶ ὁρᾷ μηδὲν ἕτερον ἔχουσαν τὴν σπυρίδα ἢ μόνον
@@ -188,15 +200,16 @@ dum cf. 71, 8; 24 ὄψα sic conlocatum ne te offendat 22
 κει] aoristi loco est 24 ἐκ τοῦ ad 56, 22 (21) 27 τοίνυν]
 Lob. Phr. 342. ita Pollianus A. P. XI, 127, Leo Diaconus, Ioannes
 </note>
-
-<pb n="139"/>
+                  <pb n="139"/>
 βασιλεῦ, καὶ αὐτὸς ἐπίγνωθι τὸ ποικίλον τῶν γυναι-
 κείων μηχανημάτων· καὶ ὅτιπερ ἄν καὶ βουληθεῖεν, εὐ-
 φυῶς (εἰς) τὸ πονηρεύεσθαι καὶ συσκευάζειν ἔχουσι.“
 Τούτων δʼ ὀ Κῦρος καὶ πάλιν ἀκηκοὼς τῶν ῥημά-
-των, μὴ ἀποκτανθῆναι τὸν υἱὸν ἐγκελεύει. </p><lb n="5"/>
-</div>
-<div type="textpart" subtype="paragraph" n="2"><p>Κατὰ δὲ τὴν ἕκτην ἡμέραν σφόδρα ἡ γυνὴ ἐπὶ
+των, μὴ ἀποκτανθῆναι τὸν υἱὸν ἐγκελεύει. </p>
+               <lb n="5"/>
+            </div>
+            <div type="textpart" subtype="paragraph" n="2">
+               <p>Κατὰ δὲ τὴν ἕκτην ἡμέραν σφόδρα ἡ γυνὴ ἐπὶ
 τῷδε τῷ προστάγματι τοῦ βασιλέως χαλεπήνασα καὶ
 δεινοπαθήσασα, καθʼ ἑαυτὴν οὕτως ἔλεγεν, ὡς „εἰ
 μὴ τὴν σήμερον ὁ τοῦ βασιλέως υἱὸς ἀποκτανθείη,
@@ -216,7 +229,7 @@ Lob. Phr. 342. ita Pollianus A. P. XI, 127, Leo Diaconus, Ioannes
 ὑφωρᾶτο τῇ ἕωθεν οὐ μετρίαν αὑτῇ ἐπισπάσεσθαι
 τὴν αἰσχύνην καὶ τὸν κατάγελων. ἐπεὶ δὲ καὶ ἡ
 ἑβδόμη ὡς ἐν τοσούτῳ ἡμέρα ἐφέστηκε, καθʼ ἣν καὶ <lb n="25"/>
-<note type="footnote">Cinnamus, Byzantini alii. cf. Iacobs ad Ael. N. A. II 66 p. 55.
+                  <note type="footnote">Cinnamus, Byzantini alii. cf. Iacobs ad Ael. N. A. II 66 p. 55.
 infra ln narratione de astrologo iterum inuenies 3 εἰς adieci.
 ut Structura simitis euadat et quae est in P ἑτοίμως ἔχουσι
 πονηρεύεσθαι. sed nescio an εὐφυῶς tantum mutandum sit in
@@ -226,8 +239,7 @@ ut Structura simitis euadat et quae est in P ἑτοίμως ἔχουσι
 cf. not. ad p. 64, 2 in margine ιε΄: quo non uidetur indicari
 caput, sed folium XV libri e quo M descriptus est
 </note>
-
-<pb n="140"/>
+                  <pb n="140"/>
 παῖς τῷ βασιλεῖ καὶ πατρὶ προσφθέγξασθαι ἤμελ-
 λεν, ὥς γε κατʼ ἀρχὰς ὑπὸ τοῦ διδασκάλου παρήγ-
 γελτο, ἡ γυνὴ αὕτη λίαν ὡς εἰκὸς ἠγωνία καὶ ἐφρόν-
@@ -261,8 +273,7 @@ bites an error sit scriptoris 17 ἀσφαλεῖς noli delere
 20 τὸν υἱὸν αὐτοῦ P: sed cf. 141, 14 21 ἰταμοτάτης
 23 ἐνωτισάμενος] infra ἐνωτισθείς 25 γόνῳ τῆς πορφύρας
 orientalium populorum sermonem sapit</note>
-
-<pb n="141"/>
+                  <pb n="141"/>
 κακοῦργον κινδυνεύοντα. καὶ πορευθέντες ἐφίσταν-
 ται τῷ τοῦ βασιλέως σπεκουλάτωρι, ἤδη τὸ ξίφος
 πρὸς τὴν σφαγὴν τοῦ παιδὸς ἀνατείνοντι, ἐπιμόνως
@@ -284,21 +295,21 @@ orientalium populorum sermonem sapit</note>
 θεόθεν τοῦτον τὸν παῖδα σύ τε καὶ ἡ μήτηρ ἐξῃτή-
 σασθε· καὶ διὰ γυναικὸς ῥῆμα ὀλέθρῳ αὐτὸν παρα- <lb n="20"/>
 δίδως; ἀλλʼ ὅμως μου τῶν ῥημάτων ἄκουσον.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="3"><p>Ἀνὴρ γάρ τις ἦν πύθωνος πνεῦμα ἔχων, καὶ
+            </div>
+            <div type="textpart" subtype="paragraph" n="3">
+               <p>Ἀνὴρ γάρ τις ἦν πύθωνος πνεῦμα ἔχων, καὶ
 τοῖς βουλομένοις τὰ μέλλοντα δὴ μαντευόμενος καὶ
 δαψιλῆ ποριζόμενος κέρδη· οὐ μὴν ἀλλὰ καὶ ἰατρι-
 κῆς τέχνης τῇ μαντείᾳ ἔμπειρος ἦν. ὅθεν καὶ πᾶσι <lb n="25"/>
 τοῖς παῤ αὐτοῦ πυνθανομένοις περί τινων ἀδήλων
 ἑτοίμους ἐποιεῖτο τὰς ἀπολύσεις. οὕτως οὖν ὁ ἀνὴρ <note type="marginal">p. 67</note>
-<note type="footnote">6 εἰσέλθῃ — ἐξέλθῃ coniunctiuos restituas ex P 12
+                  <note type="footnote">6 εἰσέλθῃ — ἐξέλθῃ coniunctiuos restituas ex P 12
 litteran γ librarius omiserat rubro colore postea additurus; quod
 crebro factum abhinc notare supersedebo 13 πειρᾶσαι, i. e.
 πειρᾷ, iam supra notatum 14 ὅτι σου τὸν υἱὸν P. cf. 66, 2 19
 ἐξητήσασθε 20 καὶ] καὶ νῦν? καὶ δὴ? 23 κἀντεῦθεν?</note>
-<note type="footnote">27 ουτος P</note>
-
-<pb n="142"/>
+                  <note type="footnote">27 ουτος P</note>
+                  <pb n="142"/>
 ἐπιστημόνως ἔχων οὐκ ὀλίγον αὐτῷ πλοῦτον ἐθη-
 σαύρισε. μιᾷ γοῦν τῶν ἡμερῶν τὸ ἐνοικοῦν αὐτῷ
 μαντικὸν πνεῦμα πρὸς τὸν ἄνδρα εἰρήκει· „ἔγωγε
@@ -331,8 +342,7 @@ autem sunt precandi formulae. cf. 8. 25. 144, 3 9 αὐτὸ non
 uidetur mutandum esse in αὐτοῦ, quo dicit P μακρὰν τοῦ ἀν-
 δρὸς, ita ut respondeant sibi αὐτὸ μὲν — ὁ δʼ ἀνήρ 13 γέ-
 γονας P 21 τὸ συμβὰν</note>
-
-<pb n="143"/>
+                  <pb n="143"/>
 δήλωκέ μοι ὡς εἴ τι δʼ ἂν καὶ αἰτήσωμαι, (ἅμα) <note type="marginal">p. 68</note>
 θεόθεν γενήσεται μοι.“ τούτοις τοῖς λόγοις ἐπὶ τὸ
 εὐθυμότερον ἡ γυνὴ γενομένη, „αὐτάρκη σοι τὸ λοι-
@@ -367,8 +377,7 @@ uelut οὖν γοῦν δή. ζήτησον οὖν P 14 καὶ μεστὸν 
 νεφρῶν καὶ ὄρχεων supplendum esse efficeit pr. οὕς 16 tem-
 porum uerbi mutatio in P quoque inest 19 βεβουλῆσθαι?
 βουληθῆναι P 21 in margine ιϚ΄</note>
-
-<pb n="144"/>
+                  <pb n="144"/>
 ἐχαλέπηνας; μηδέν σοι ἔσται περὶ τούτου φροντίς·
 [περὶ τούτου μὴ διαταραχθήσῃ·] ἕτεροι γάρ σοι δύο
 ὑπελείφθησαν λόγοι· αἴτησοι τοίνυν τὸ θεῖον διὰ
@@ -391,8 +400,9 @@ porum uerbi mutatio in P quoque inest 19 βεβουλῆσθαι?
 <lb n="20"/> συναρπαγῇς τῇ τῆς μοχθηρᾶς γυναικὸς σκαιωρίᾳ,
 <note type="marginal">p. 70</note>καὶ μᾶλλον ὅταν ἡ διαβάλλουσα δεινὴ λίαν ᾖ καὶ
 κακότροπος. ἀλλὰ καὶ ἄλλης διηγήσεως ἄκουσον.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="4"><p>Ἀνήρ τις ἦν, ὃς ἔνορκον ἑαυτῷ ὅρον ἔθετο μὴ
+            </div>
+            <div type="textpart" subtype="paragraph" n="4">
+               <p>Ἀνήρ τις ἦν, ὃς ἔνορκον ἑαυτῷ ὅρον ἔθετο μὴ
 ὅλως ἠρεμῆσαι ἢ ἑαυτῷ δοῦναι ἄνεσιν, μήτε μὴν
 <lb n="25"/> ἀγαγέσθαι γυναῖκα, ἕως ἂν πᾶσι τοῖς τῶν γυναικῶν
 ἐπισταίη μηχανήμασι. καὶ εὐθὺς τῆς πατρίδος ἐξιών,
@@ -402,8 +412,7 @@ porum uerbi mutatio in P quoque inest 19 βεβουλῆσθαι?
 rum fuisse puto μηδὲ π. τ. δ. 11 σφαδάζης 23 μηδʼ
 ὅλως sed cf. 126, 17 et indicem 24 μηδὲ? 140, 15 26
 ἐπισταέη mire dictum</note>
-
-<pb n="145"/>
+                  <pb n="145"/>
 ἕτερος δέ τις αὐτῷ κατὰ τὴν ὁδοιπορίαν συνήντηκεν,
 ὃς καὶ μαθὼν πρὸς αὐτοῦ τὴν κατεπείγουσαν χρείαν,
 φησὶ τῷ ἀνδρί· „οὐ δυνήσῃ, ὦ ἄνθρωπε, τοὺς τῶν
@@ -436,8 +445,7 @@ rum fuisse puto μηδὲ π. τ. δ. 11 σφαδάζης 23 μηδʼ
 ἐκεῖνος P 17 μηδὲν cod. οὐδεμίαν P cf. 146, 17 19 δʼ
 om. cod καὶ ἐπανερχόμενος P 25 δαιτομόνων cod. ni
 fallor παρατεθειμένων</note>
-
-<pb n="146"/>
+                  <pb n="146"/>
 νομαι χώρας. ἐκ γὰρ τῆς ἐνεγκαμένης ἐξῆλθον τοῦ
 σοφίαν μαθεῖν καὶ τὰ τῶν πονηρῶν κατανοῆσαι
 γυναικῶν μηχανήματα.’ ταῦτα αὐτοῦ εἰρηκότος, φη-
@@ -473,8 +481,7 @@ ferri nequit: itaque aut adddendum erat πρὸς, aut quod feci,
 ἀπό 22 εἴτε] etsi uel 25 codex caret narratione quae
 in legitur p. 72, 23 — 75, 22 ὡς seclusi
 </note>
-
-<pb n="147"/>
+                  <pb n="147"/>
 λάκει γῆρας, νεᾶνις δʼ ἐγὼ καὶ (τῆς) τῶν ἀνδρῶν
 συνουσίας πάνυ ἐφίεμαι. καὶ σὺ δʼ ὡς ὁρῶ νέος εἶ,
 ἔτυχες δὲ καὶ κατακόρως φαγὼν καὶ πιών, ἔτυχε δʼ
@@ -500,7 +507,7 @@ in legitur p. 72, 23 — 75, 22 ὡς seclusi
 καὶ μικρὸν ὅσον ἐκινδύνευεν ἀπαγχονισθῆναι. ἐγὼ
 δʼ αὐτίκα ἐπὶ τῷδε τῷ συμβάντι ἀθρόον καιρίως
 ἀλγήσασα καὶ τὸν ἄνδρα τελέως ἐκλιπεῖν ὑποτοπά- <lb n="25"/>
-<note type="footnote">1 τῆς om 5 μοι] μου P 7 αὐτός εὐήθιος cod.,
+                  <note type="footnote">1 τῆς om 5 μοι] μου P 7 αὐτός εὐήθιος cod.,
 quod fortasse seruandum erat; est enim qui hoc nomine utitur
 8 φημιναλίου sed uide Suid. in h. u. et in ἀναξυρίδας et Din-
 dorfium in St. Th. 2, 394 extr. in βρακίον 9 τοῦ⌋ τῷ
@@ -509,8 +516,7 @@ gine ιζ΄ 16 ἐσταμάλιστα; quae scriptura hyphen in hoc libro
 frequentissima est 20 ὁ παῤ P ἡμῶν hoc loco P quoque
 exhibet 21 καὶ om P 24 καιρίως adeo ut paene more-
 retur 25 ἂν ἐκλιπεῖν?</note>
-
-<pb n="148"/>
+                  <pb n="148"/>
 σασα οὕτως ἐκραύγασα. νυνὶ δὲ τῆς τοῦ θεοῦ ἀρω-
 γῆς προφθασάσης, ἀπηλλάγη ταύτης τῆς συνοχῆς
 καὶ τῆς προτέρας εὐεξίας ἐν καταστάσει γέγονε.
@@ -529,8 +535,9 @@ retur 25 ἂν ἐκλιπεῖν?</note>
 καὶ μηκέτι προσθείς τὰ γυναικεῖα ζητεῖν, πρὸς τὴν
 ἰδίαν πατρίδα ἐπάνεισι καὶ ἀπεριέργῳ τῇ γνώμῃ
 νόμιμον ἑαυτῷ γυναῖκα ἠγάγετο.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="5"><p>Ἐκ τούτων τοίνυν, ὦ βασιλεῦ, τῶν τῷ κράτει
+            </div>
+            <div type="textpart" subtype="paragraph" n="5">
+               <p>Ἐκ τούτων τοίνυν, ὦ βασιλεῦ, τῶν τῷ κράτει
 <lb n="20"/> σου νῦν ἐξηγημένων πρὸς τῆς ἐμῆς εὐτελείας, ἴσθι
 ἀσφαλῶς ὡς ἀπέραντος ἡ τῶν γυναικῶν μοχθηρία.
 <note type="marginal">p. 78</note>καὶ μὴ οὕτως ἀσυλλογίστως πρὸς τὴν τοῦ παιδός
@@ -546,8 +553,7 @@ nem: διαχείρησιν cod. 24 κακοτρόπου om. cod.; poterat
 suppleri etiam κακογνώμου (58, 17) πονηρᾶς πανούργου
 ἀναισχύντου uel horum simile adiectiuum 25 uberius P
 </note>
-
-<pb n="149"/>
+                  <pb n="149"/>
 πεποιθὼς προσπαθείᾳ;’ τούτων ὁ Κῦρος πρὸς τοῦ
 ἑβδόμου συμβούλου τοῦ σοφωτάτου ἀκροασάμενος,
 εὐθέως ἕνα τῶν δορυφόρων αὐτοῦ προσεκαλέσατο,
@@ -581,8 +587,7 @@ suppleri etiam κακογνώμου (58, 17) πονηρᾶς πανούργου
 dubitans, cum Byzantini in uerborum ordine artificiose inmutando
 ualde sibi placuerint 27 μοι] νῦν P
 </note>
-
-<pb n="150"/>
+                  <pb n="150"/>
 γνώρισον αὐτῷ ὅσα σοι δεδήλωκα καὶ διωμίληκα,
 πρὶν ἡ κακότροπος γυνὴ πρὸς αὐτὸν εἰσέλθοι καὶ
 τὰς τούτου διαφθείραι ἀκοὰς ὡς τὸ πρότερον.’ ὁ δὲ
@@ -616,8 +621,7 @@ ualde sibi placuerint 27 μοι] νῦν P
 των 14 Luc. 2, 10. 11. σήμερον· ὁ γὰρ P 16 ἔστειλεν?
 ef. 145, 12. 153, 7. 152, 1 27 περιχαρείας
 </note>
-
-<pb n="151"/>
+                  <pb n="151"/>
 τατα ἠσπάσατο. ὁ δὲ παῖς ἀνοίξας τὸ στόμα, χαίρειν
 προσφθέγγεται τῷ βασιλεῖ. ὁ δὲ τῆς χειρὸς τοῦτον
 κρατήσας συνεδριάζειν αὐτῷ ἐπὶ τῆς βασιλικῆς κα-
@@ -651,8 +655,7 @@ ef. 145, 12. 153, 7. 152, 1 27 περιχαρείας
 ἀδίκου σφαγῆς P ut 153, 15 16 ἐντεταλμένον cod., παρηγ-
 γελμένος ἤμην P 19 ταύτης] τούτου P in mangine ιη΄
 </note>
-
-<pb n="152"/>
+                  <pb n="152"/>
 μοι ἐν ταῖς ἑπτὰ ἡμέραις σιγᾶν διεστείλατο. καὶ
 ἀποκριθεὶς ἔφην τῇ γυναικί· „οὐδὲν τό γε νῦν ἔχον
 περὶ ὧν μοι ἔφης, ὦ γύναι, πρὸς σὲ ἀντιφθέγξομαι,
@@ -674,8 +677,9 @@ ef. 145, 12. 153, 7. 152, 1 27 περιχαρείας
 ἐπʼ ἀκροάσει αὐτῶν ἀνακαλύψω ἐπὶ τοῦ ἀνακτορικοῦ
 <lb n="20"/> σου βήματος ἥν με διδασκαλίαν ὁ φιλόσοφος Συν-
 τίπας ἐξεδίδαξε.ʼ</p>
-</div>
-<div type="textpart" subtype="paragraph" n="6"><p>Τούτων ἀκούσας ὁ βασιλεὺς παρὰ τοῦ υἱοῦ τῶν
+            </div>
+            <div type="textpart" subtype="paragraph" n="6">
+               <p>Τούτων ἀκούσας ὁ βασιλεὺς παρὰ τοῦ υἱοῦ τῶν
 ῥημάτων, ἐπὶ πλεῖον ἔχαιρε μᾶλλον καὶ σφόδρα ἠγαλ-
 λιᾶτο. ὃς καὶ κελεύει πάντας τοὺς φιλοσόφους καὶ
 <lb n="25"/> εἰδήμονας συναθροισθῆναι, ἀλλὰ μὴν καὶ τοὺς με-
@@ -687,8 +691,7 @@ pauit 8 ἄλλό τι, ut saepe 9 σήμερον non erit delendum
 10 ἐγὼ τότε] ἔγωγε ut P? 12 ὑφωρωμένη uel ὑφωρου-
 μένη 19 ἐπ᾿ non est quod mutetu in ἐν 23 [μᾶλλον]
 </note>
-
-<pb n="153"/>
+                  <pb n="153"/>
 τοῦ παιδὸς διδάσκαλος, καὶ εἰσελθών προσεκύνησε
 τὸν βασιλέα ἐπὶ τῆς γῆς. ὁ δέ βασιλεὺς ὑπολαβὼν
 ἔφη πρὸς αὐτόν· ‘ποῦ ἦσθα μέχρι τοῦ νῦν, σοφώ-
@@ -716,14 +719,13 @@ pauit 8 ἄλλό τι, ut saepe 9 σήμερον non erit delendum
 τῷ υἱῷ μου ἢ τῇ γυναικί;’ ἐγγίζουσι δὲ τῷ βασιλεῖ <lb n="25"/>
 τέτταρες τῶν φιλοσόφων. ὧν θάτερος ἀποκριθεὶς
 ἔφη· ‘ἡ αἰτία αὕτη, ὦ βασιλεῦ, τοῦ Συντίπα ἐτύγ- <note type="marginal">p. 84</note>
-<note type="footnote">4 γε⌋ καὶ P διὰ τῆς σ, ἀποδημίας i. e. more Byzan-
+                  <note type="footnote">4 γε⌋ καὶ P διὰ τῆς σ, ἀποδημίας i. e. more Byzan-
 tinorum idem atque διὰ τὴν σὴν ἀποδημίαν διὰ τὸ σὲ μὴ
 φαίνεσθαι P 7 ἑπτὰ i. e. ζ΄ in codice excidit in pagina ex-
 trema 12 cf. 152, 4 19 τοὺς φιλοσόφους habet P quoque</note>
-<note type="footnote">20 συνεδρίου 23 ἀνῃρηκέναι εἦχον] interfecissem
+                  <note type="footnote">20 συνεδρίου 23 ἀνῃρηκέναι εἦχον] interfecissem
 24 ἐπεγέγραπτο P</note>
-
-<pb n="154"/>
+                  <pb n="154"/>
 χανεν. ἐπειδὴ γὰρ ἐκεῖνος ὡς ἡ ἐντὸς τῶν ἑπτὰ
 ἡμερῶν τοῦ σοῦ παιδὸς λαλιὰ κίνδυνον αὐτῷ ᾔδει
 ὅτι ἐπάγει, ἵνα τί μὴ παῤ ἑαυτῷ τοῦτον ἐτήρει,
@@ -757,8 +759,7 @@ non est permutandus cum genetiuo. pro t. ἐλλεῖψαι P exhibet
 simplici u. ψεύδομαι Noui Foederis scriptores et Septuaginta qui
 dicuntur 16 aliter P 18 cf. 15, 6 19 μᾶλλον i. e.
 μάλιστα 20 εἴη scriptoris est 24 ἔστιν</note>
-
-<pb n="155"/>
+                  <pb n="155"/>
 οὕτως ἔχει ὡς εἴρηται. οὐδὲ γὰρ ἡ γυνὴ αἰτία κα-
 θέστηκεν, ἐπεὶ καὶ εἴωθεν ὡς τὰ πολλὰ ὄψις εὐει-
 δοῦς νεανίσκου θέλγειν τὴν φύσιν τῆς γυναικός,
@@ -783,8 +784,9 @@ dicuntur 16 aliter P 18 cf. 15, 6 19 μᾶλλον i. e.
 τοῦ σύνεσις, καὶ οὐκ ἔστι σοφὸς ὁ τοιοῦτος οὔτε
 μοίρᾳ σοφῶν συνηρίθμηται, ἀλλὰ τῆς τῶν ψευδολ-
 λόγων καὶ ὑποκριτῶν ὁμηγύρεως καθέστηκεν.ʼ</p>
-</div>
-<div type="textpart" subtype="paragraph" n="7"><p>Ὑπολαβὼν δὲ καὶ ὁ τοῦ βασιλέως υἱὸς λέγει τῷ
+            </div>
+            <div type="textpart" subtype="paragraph" n="7">
+               <p>Ὑπολαβὼν δὲ καὶ ὁ τοῦ βασιλέως υἱὸς λέγει τῷ
 πατρὶ· ‘δέσποτα βασιλεῦ, ἐπίτρεψον κἀμοὶ ἀπόλογόν
 <note type="footnote">4 θηρᾶσθαι, (καὶ ἔτι) μᾶλλον εἰ τυγχάνει — ἀγρεύει.
 ὡς ἀσθενεστέραν· καὶ μάλιστα γίνεται τοῦτο, ὅταν τύ-
@@ -793,8 +795,7 @@ dicuntur 16 aliter P 18 cf. 15, 6 19 μᾶλλον i. e.
 τοῦ 18 οὐδὲ γάρ νι P? 20 τυγχάνειν, διαψεύδεται
 καὶ ἐσταμάλιστα ἐ. cod., εἶτα ψεύδεται πλεῖστα P 22
 οὐδὲ? cf. 144, 24 paullum differt P</note>
-
-<pb n="156"/>
+                  <pb n="156"/>
 τινα πρὸς ταῦτα εἰρηκέναι ὁ δὲ βασιλεὺς ἐκέλευσε
 καὶ τὸν υἱὸν ἀποκριθῆναι. κἀκεῖνος εὐθὺς τοῖς φι-
 λοσόφοις φησίν· ‘ἡ ἐμὴ γνῶσις πρὸς τὴν ὑμετέραν
@@ -828,8 +829,7 @@ dicuntur 16 aliter P 18 cf. 15, 6 19 μᾶλλον i. e.
 αὐτοῦ reponatur prohibet ἐκπ. ἐξ αὐτοῦ P 26 αὐτοῦ
 τοῖς δαιτυμόσι sed παραδοῦναι uidetur idem significare atque
 ἐᾶν 27 ἂν ἐπιτρέψαι cf. 152, 4 τήνδε</note>
-
-<pb n="157"/>
+                  <pb n="157"/>
 τοῦ γάλακτος ἀπογεύσασθαι, εἶθʼ οὕτω μετα- <note type="marginal">p. 88</note>
 δοῦναι τοῖς φίλοις.“ ἀποκριθεὶς δὲ θάτερος τῶν
 αὐτῶν ἔφησε φιλοσόφων· ‘οὐχ οὕτως ἔχει τὸ πρᾶγμα·
@@ -862,8 +862,7 @@ quam τότε : τόδε cod. quod si tenes interpretatus huius rei,
 offendit tempus praeteritum προσυπῆρχε. τίνι πάντων P
 22 πλὴν ἀλλὰ saepe coniunguntur 25 ἀλληνάλως 26 φά-
 σκουσι] σφάλλονται P</note>
-
-<pb n="158"/>
+                  <pb n="158"/>
 συμβεβηκὼς κίνδυνος τῇ εἱμαρμένῃ τούτων ἀπέ-
 κειτο, καὶ ἢμελλον οὗτοι τῷ τοιῷδε τρόπῳ τοῦ
 βίου ὑπεξελθεῖνʼ. ὁ δὲ βασιλεύς τὸν λόγον ὡς
@@ -897,8 +896,7 @@ offendit tempus praeteritum προσυπῆρχε. τίνι πάντων P
 138, 18 15 καταστῆσαι P 20 ἐν ἀληθείᾳ P. cf. Plut.
 de def. or. 37 p. 523, 2 Did; Pomp. 46, 3 26 τὴν σύνεσιν?
 τὴν φρόνησιν P</note>
-
-<pb n="159"/>
+                  <pb n="159"/>
 εὐεργετήσασι. τὸν μέντοι τοιοῦτον διάστροφον μᾶλ-
 λον εἶναι γινώσκομεν. οὗτος δὲ ἀκριβῶς ἐπιμελη-
 σάμενος δοκιμώτατόν με τῇ φιλοσοφίᾳ καὶ τῇ γνώσει
@@ -907,18 +905,21 @@ de def. or. 37 p. 523, 2 Did; Pomp. 46, 3 26 τὴν σύνεσιν?
 ἐπεὶ δʼ, ὦ βασιλεῦ, καὶ οὗτοί σου οἱ φιλόσοφοι ἐπι-
 μαρτυροῦσί μοι ὡς καὶ αὐτῶν δὴ τοῖς λόγοις ὑπερ-
 τερῶ, ἄκουσόν μου τῆς παρούσης διηγήσεως.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="8"><p>Δύο γάρ τινα παιδία ἐτύγχανον, τὸ μὲν χρόνων <note type="marginal">p. 92</note>
+            </div>
+            <div type="textpart" subtype="paragraph" n="8">
+               <p>Δύο γάρ τινα παιδία ἐτύγχανον, τὸ μὲν χρόνων <note type="marginal">p. 92</note>
 πέντε, τὸ δὲ τριῶν. ἦν δὲ καί τις ἀνὴρ γηραιὸς καὶ <lb n="10"/>
 ἀνάπηρος ἅμα καὶ παράλυτος, ὃς συνέσει καὶ ἀγχι-
 νοίᾳ σὺν ἐκείνοις ὑπῆρχε κατάκοσμος.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="9"><p>Ὁ δὲ βασιλεὺς τὸν εἱρμὸν ἀνακόπτων τοῦ διη-
+            </div>
+            <div type="textpart" subtype="paragraph" n="9">
+               <p>Ὁ δὲ βασιλεὺς τὸν εἱρμὸν ἀνακόπτων τοῦ διη-
 γήματος, λέγει τῷ υἱῷ ‘καὶ τίς ἦν, τέκνον, ἡ τούτων
 ὑπόθεσιςʼ; ἀναλαβὼν δὲ ὁ παῖς τὸν λόγον ἄνωθεν <lb n="15"/>
 διηγεῖτο λέγων·</p>
-</div>
-<div type="textpart" subtype="paragraph" n="10"><p>‘Ἀνήρ τις ἦν κίναιδος. ὃς ἡνίκα περὶ γυναικὸς
+            </div>
+            <div type="textpart" subtype="paragraph" n="10">
+               <p>‘Ἀνήρ τις ἦν κίναιδος. ὃς ἡνίκα περὶ γυναικὸς
 εὐειδοῦς ἠκηκόει, πρὸς ἐκείνην ἀκολασίας χάριν
 εὐθύς ἐπορεύετο. ἐδηλώθη γοῦν αὐτῷ ἐν μιᾷ περί
 τινος ὡραιοτάτης γυναικός, καὶ αὐτίκα πρὸς αὐτὴν <lb n="20"/>
@@ -934,8 +935,7 @@ P 9 in margine κ 9 χρόνον 12 ἐκείνοις κατάκο-
 eisdem hominibus dicitur πολλῇ τῇ γνώσει καὶ τῇ συνέσει κε-
 κόσμηνται 17 κύναιδος 19 ἐν μιᾷ cf. 137, 9 23 λέ-
 γειν cf. 118, 5</note>
-
-<pb n="160"/>
+                  <pb n="160"/>
 ἄνθρωπε, ἄχρις οὗ τῷ ἐμῷ παιδὶ βρώσιμόν τι παρα-
 σκευάσω.’ ὃ δὲ ὑπολαβὼν ἔφη τῇ γυναικί· ‘ἄφες
 τό γε νῦν ἔχον τὴν τοῦ παιδὸς φροντίδα καὶ τοῦτο
@@ -968,8 +968,7 @@ eisdem hominibus dicitur πολλῇ τῇ γνώσει καὶ τῇ συνέσ
 13 ἔτι] ἀκμὴν P 14 κατὰ om. P 17 ἀσελγείᾳ] ἀνάγκ
 P 25 σεαρτὸν] cf. n. ad p. 93, 11 26 μεταδιώκει cf.
 93, 12 28 ὅπερ P quoque</note>
-
-<pb n="161"/>
+                  <pb n="161"/>
 σὺ καλεῖς, τίνα ζημίαν ὅλως ὑφίσταμαι, μᾶλλον μὲν
 οὖν καὶ οἱ ὀφθαλμοί μου τοῖς δάκρυσι καθαρθέντες
 ἐπὶ πλεῖον διεφωτίσθησαν, καὶ οἱ μυκτῆρές μου τῆς <note type="marginal">p. 94</note>
@@ -984,8 +983,9 @@ P 25 σεαρτὸν] cf. n. ad p. 93, 11 26 μεταδιώκει cf.
 γὰρ ᾔδειν ὡς τοιαύτην ἐκέκτησο φρόνησιν.ʼ καὶ
 τοῦτο εἰπών, εὐθύς ἐκεῖθεν ὑπανεχώρησε μηδὲν
 ἄτοπον ἐπὶ τῇ αὐτοῦ μητρὶ ἐργασάμενος.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="11"><p>Ἄκουσον τοίνυν, ὦ δέσποτα βασιλεῦ, καὶ τῆς <lb n="15"/>
+            </div>
+            <div type="textpart" subtype="paragraph" n="11">
+               <p>Ἄκουσον τοίνυν, ὦ δέσποτα βασιλεῦ, καὶ τῆς <lb n="15"/>
 περὶ τοῦ πενταετοῦς παιδὸς διηγήσεως. Ἄνδρες
 ὑπῆρχόν τινες τρεῖς, οἳ καὶ ἀλλήλοις ἐτύγχανον
 κοινωνοί. ἐπί τινα δὲ διʼ ἐμπορίαν χώραν μακρὰν
@@ -1004,8 +1004,7 @@ P 25 σεαρτὸν] cf. n. ad p. 93, 11 26 μεταδιώκει cf.
 kam mir, concoxi 16 cf. 92, 6 et infra 165, 16 πραγματευταί
 add. P 18 ἐμπορείαν 22 εῖον charta abscissa periit
 </note>
-
-<pb n="162"/>
+                  <pb n="162"/>
 φυλάττειν αὐτὰ παῤ ἑαυτῇ· ‘καὶ μὴ δώσῃς πρός
 τινά τι τούτων ἄχρις ὅτου τοὺς τρεῖς ὁμοῦ πρὸς σὲ
 γεγονότας θεάσαιο.ʼ ταῦτα τῇ γραΐδι παραγγείλαν-
@@ -1039,8 +1038,7 @@ add. P 18 ἐμπορείαν 22 εῖον charta abscissa periit
 codice, retinui 20 ἐπιπολὺ ut saepe. in marg. κα΄ 23 ὁ κ.
 μηδʼ ὅλως? οὐδ᾿ ὅλως P cf. 144, 23 24 ὡς sic recentiores
 </note>
-
-<pb n="163"/>
+                  <pb n="163"/>
 ναικί· ‘ἡμεῖς κατʼ ἐναντίον αὐτὸν ἡμῶν ἀπεστάλ-
 καμεν πρὸς σὲ ζητῆσαι τὸ κτένιον.ʼ ἡ δὲ γραῦς ‘ἀλλʼ
 ἐκεῖνος’ φησί ‘τὸ χρυσίον ὑμῶν ἐξ ἐμοῦ ἐπεζήτησεν
@@ -1071,10 +1069,9 @@ codice, retinui 20 ἐπιπολὺ ut saepe. in marg. κα΄ 23 ὁ κ.
 <note type="footnote">1 κατεναντίον ἐξ ἡμῶν? ἀπεστάλκαμεν uel ἀπε-
 στείλκαμεν cod. 8 πικρῶς habet P quoque 9 ἅμα λα-
 βόντες scripsi: ἀναλαβόντες cod., λαβόντες P 19 χωρῶν</note>
-<note type="footnote">22 ἀπὸ i. e. παρὰ 25 ὀδυρωμένη 27 num ἔφη τῆ
+                  <note type="footnote">22 ἀπὸ i. e. παρὰ 25 ὀδυρωμένη 27 num ἔφη τῆ
 γυναικί conlocanda post οἰμωγῆς</note>
-
-<pb n="164"/>
+                  <pb n="164"/>
 αὐτῇ θρηνῳδούσῃ, ἣν καὶ κατῴκτειρε τῆς πικρᾶς
 οἰμωγῆς· ‘τί οὕτως οἰκτρῶς ὀλοφύρῃ, ὦ γύναιʼ;
 ἣ δὲ ἔφησε τῷ παιδί· ‘ἔασόν με, παῖ, τὴν τάλαιναν
@@ -1106,8 +1103,7 @@ codice, retinui 20 ἐπιπολὺ ut saepe. in marg. κα΄ 23 ὁ κ.
 <note type="footnote">10. 12 ἄρχυρον cod., ἀργύριον P 10 κάραν 18 δώ-
 σῃς 170, 16 ὅρα μὴ φωραθῇς. aliter 166, 19 ═ 100, 19 19
 ἐάν] recte εἰ 163, 20 22 ἐπιτοαυτὸ ut 152, 26</note>
-
-<pb n="165"/>
+                  <pb n="165"/>
 δὸς παρατεθέντα [πρὸς αὐτὸν] ὡς εὐσύνοπτα καὶ
 συνετὰ πρὸς αὐτὸν ἀπεφθέγξατο. ὁ δὲ ἡγεμὼν εὐ-
 λογοφανῶς λέγειν διαγνοὺς τὴν γυναῖκα, μεταστέλ-
@@ -1132,17 +1128,17 @@ codice, retinui 20 ἐπιπολὺ ut saepe. in marg. κα΄ 23 ὁ κ.
 μου.’ ὁ δὲ δικαστὴς ἐκπλαγεὶς ἐπὶ τῇ τοῦ παιδὸς
 συνέσει καὶ ἀγχινοίᾳ, εὐθέως αὐτὸν καθηγητὴν
 ῥητόρων καὶ φιλοσόφων προβάλλεται.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="12"><p>Ἄκουσον δέ, ὦ δέσποτα βασιλεῦ, καὶ τῆς περὶ <lb n="25"/>
+            </div>
+            <div type="textpart" subtype="paragraph" n="12">
+               <p>Ἄκουσον δέ, ὦ δέσποτα βασιλεῦ, καὶ τῆς περὶ <lb n="25"/>
 τοῦ γηραιοῦ ἀνδρὸς διηγήσεως. Ἀνήρ τις ἦν ὃς εἰ-
 ωθὼς ἐμπορεύεσθαι, ἀρωματικὰ ξύλα εἰς ἐμπορίαν
 ὠνήσατο. ὃς καὶ μεμαθηκὼς περί τινος πόλεως ὡς <note type="marginal">p. 100</note>
-<note type="footnote">1 πρὸς αὐτὸν secludere malui quam scribere πρὸς αὐτήν
+                  <note type="footnote">1 πρὸς αὐτὸν secludere malui quam scribere πρὸς αὐτήν
 ὑποτεθέντα 15 αὐτῇ? 16 πενταέτης recte; cf. 161, 16
 17 ὀδυρωμένην 18 ὑπεσήμανεν recentiores dixerunt 26
 ὃς] ὡς cod. 27 ἐμπορείαν</note>
-
-<pb n="166"/>
+                  <pb n="166"/>
 σπάνις αὐτῇ τῶν τοιούτων, τάχος τὰ ἐωνημένα
 παραλαβών, εἰς ταύτην ἤλαυνε τὴν πόλιν. ᾗ πλη-
 σίον γενόμενος ἔξωθεν τὴν κατάλυσιν ἐποιήσατο,
@@ -1175,8 +1171,7 @@ mutanui in πλείστης. πολλῆς εὐωδίας ξύλων μυρισ
 ἀρωματικῶν? 19 μήπω τινι cod., μήπως P 23 εἰσέρ-
 χεται habet codex, sed ita scriptum ut dubitare possis an sit
 ἐπέρχεται. εἰσῆλθεν εἰς P</note>
-
-<pb n="167"/>
+                  <pb n="167"/>
 τί ἄρα εἶεν ἃ ἐν τῷ φόρτῳ αὐτοῦ κέκτηται. ὁ δʼ ἔμπορος
 ‘ἀρωματικά’ φησί ‘κεκόμισμαι ξύλα εἰς ἐξώνησιν
 τοῖς βουλομένοις τῶν τῆς πόλεως τῆςδε κατοίκων.’
@@ -1202,16 +1197,15 @@ mutanui in πλείστης. πολλῆς εὐωδίας ξύλων μυρισ
 πορίαν μου ὅλην ἐαθῆναι ἀδιάπρατον.’ καὶ ταῦτα
 διανοησάμενος, διεπώλησεν αὐτῷ τὸν ἑαυτοῦ φόρ-
 τον ἅπαντα, συναρεσθεὶς ὑπὲρ τῆς τιμῆς ἧς ἤμελλεν <lb n="25"/>
-<note type="footnote">6 ἐ. ἂν? 8 cf. 149, 26 ὕλη τινι ὡς καύσιμα ἔχουσι P</note>
-<note type="footnote">18 διάπρασον] notes formam inusitatam antiquis 19 παράσχω
+                  <note type="footnote">6 ἐ. ἂν? 8 cf. 149, 26 ὕλη τινι ὡς καύσιμα ἔχουσι P</note>
+                  <note type="footnote">18 διάπρασον] notes formam inusitatam antiquis 19 παράσχω
 futuri loco est quamquam facile esset reponere 19 ἓν πλὴρες
 πινάκι et 168, 1 ἓν πινάκι πεπληρωμένον, nihil tomen censeo
 mutandum: ἐν enim uidetur esse i. q. bestehend in. cf. 101, 25</note>
-<note type="footnote">22 δώοι. cf. Lob. Phr. 346. ἐμπορείαν 25 συναρεσθείς]
+                  <note type="footnote">22 δώοι. cf. Lob. Phr. 346. ἐμπορείαν 25 συναρεσθείς]
 συμβιβασθείς λαβεῖν . . ἕνα πίνακα γεμισμένον P. legit igitur
 etiam illud ἤτοι ἐν π. π: nihilominus seclusi</note>
-
-<pb n="168"/>
+                  <pb n="168"/>
 εἰληφέναι [, ἤτοι ἐν πίνακι πεπληρωμένῳ]. λαβὼν
 οὖν ὁ ἀνὴρ τὰ ἐωνημένα εἰς τὴν ἰδίαν οἰκίαν ἐκο-
 μίσατο. ὁ μέντοι ἔμπορος τὴν πόλιν διερχόμενος
@@ -1246,8 +1240,7 @@ P structura recentioribus inprimis familiari 17 θατέρῳ cod.
 τερήσοι. u. 173, 5. 171, 9 22 στοιχῶν] τυχών sed uidetur
 expticari posse qua erat simplicitate obsecutus sc. illi
 καὶ] στέργω καὶ P 24 μίμος codex ubique</note>
-
-<pb n="169"/>
+                  <pb n="169"/>
 ἀνήρ, καὶ ἔφη αὐτῷ· ‘ἰδού, ὡς ὁρᾷς, τοῖς λόγοις
 περιεγενόμην σου. λοιπὸν ὃ ἐπιτρέπω σοι ποίει.
 καταπιεῖν σε βούλομαι τὰ τῆς θαλάσσης ὕδατα.’ ἐπὶ
@@ -1273,7 +1266,7 @@ expticari posse qua erat simplicitate obsecutus sc. illi
 ‘οὐδέν σοι προπαρήγγειλα προσεκτικῶς ἔχειν ἀπὸ
 τῶν ἐν ταύτῃ (τῇ πόλει) πολιτῶν, ὅτι γε μῖμοι καὶ
 πονηροὶ τὴν γνώμην καὶ ποικίλοι πάντη πεφύκασι; <lb n="25"/>
-<note type="footnote">9 αὐτὸν] utrum supplendum τὸν ἕνα ὀφθαλμὸν ex μο-
+                  <note type="footnote">9 αὐτὸν] utrum supplendum τὸν ἕνα ὀφθαλμὸν ex μο-
 νόφθαλμος an addendum ut legatur καὶ αὐτὸν τόν ἕνα uel
 καὶ αὐτὸν τὸν ὀφθαλμὸν in P est γλαυκὸν δὲ τὸν ἕνα αὐ-
 τοῦ κεκτημένον ὀφθαλμόν 11 ἀπάγωμεν? ἀπέλθωμεν P.
@@ -1282,8 +1275,7 @@ formam 13 ἀποδώσεις μοι] μου? cf. 168, 5 19 [τὸν ἔμ-
 πορον]? 23 οὐδὲν omnino non 24 ἐν ταύτῃ] ἀπὸ τῶν
 ἀνθρώπων τῆς πόλεως P: quare τῇ πόλει adieci potius quam
 ἐνταῦθα reponerem</note>
-
-<pb n="170"/>
+                  <pb n="170"/>
 καὶ μηκέτʼ οὖν εἰς τοὐμφανὲς αὐτοῖς διεξέλθῃς
 τὸ σύνολον· ἐπεὶ δὲ τὸ πρότερον οὐκ ἐπείσθης τῇ
 παραινέσει μου κἀντεῦθεν εὗρες τὰ τῆς παρακοῆς
@@ -1318,13 +1310,13 @@ formam 13 ἀποδώσεις μοι] μου? cf. 168, 5 19 [τὸν ἔμ-
 κατακρατὴς . . γένοιο? nam περιγένοιο scripsi: γένοιο cod.
 νικήσῃς P 26 προσγενήσεται τὸ scripsi: προσγενήσαιτο
 cod. προσγενήσεται P</note>
-
-<pb n="171"/>
+                  <pb n="171"/>
 ἔμπορος ἐποίησεν, ὅσα πρὸς τῆς γραὸς ἐξεδίδακτο.
 καὶ μετὰ τὸ ἀμεῖψαι τὸ αὐτοῦ σχῆμα στὰς ἔγγιστα
 τοῦ γηραιοῦ ἐκείνου, πρῶτα μὲν ἑωράκει πρὸς οὐ-
 τὸν παραγενόμενον τὸν τὰ αὐτοῦ ξύλα τοῦ ἀρώμα-
-τος ὠνησάμενον. ὃς καὶ ἀνήγγειλε τῷ καθηγητῇ <lb n="5"/><note type="marginal">p. 106</note>
+τος ὠνησάμενον. ὃς καὶ ἀνήγγειλε τῷ καθηγητῇ <lb n="5"/>
+                  <note type="marginal">p. 106</note>
 ἐκείνῳ λέγων ‘ἐγὼ συναντήσας ἐμπόρῳ τινὶ ξύλα
 ἀρωματικά τινα διακομίζοντι εἰς διάπρασιν, πάντα
 τὸν φόρτον αὐτοῦ ἐξωνησάμην, δοὺς αὐτῷ ὃ συμ-
@@ -1355,8 +1347,7 @@ possit hoc idem esse atque nostrum enthalten, bestehen, esse.
 ἀλλὰ καὶ γλαυκοειδεῖς P. cf. infra 174, 7 20 δυνάμεις
 scripsi: δυνάμεως cod. an praetermissum est οὕτως?
 </note>
-
-<pb n="172"/>
+                  <pb n="172"/>
 σθαι ἱκανὸς ἦν ὁ νοῦς αὐτοῦ. ἀλλʼ, ὡς οἶμαι, εἴτε
 χρυσὸν εἴτε ἄργυρον ἐξ ἐμοῦ μέλλει ζητήσασθαι.’
 <note type="marginal">p. 107</note>προσελθὼν δὲ καὶ ὁ τῇ διαλέξει τὸν ἔμπορον νενι-
@@ -1390,8 +1381,7 @@ diligentes sunt scriptores Byzantini. itaque ne deleueris. εἰς τὴν
 apud Cinnamum eadem sententia adhibitum legatur ἱκανοῦσα;
 quod quidem Meinekius deriuabat a u. ἱκανεῖν. hodierni Graeci
 dicunt ἱκανεύειν 19 μοι seclusi</note>
-
-<pb n="173"/>
+                  <pb n="173"/>
 μόν. λοιπὸν οὐδαμῶς σου ἀπόσχωμαι, ἕως ἂν τὸν
 ἕνα σου ἐξελὼν ὀφθαλμὸν περιάψω μου τῷ μετώπῳ,
 ἢ διὰ πάσης σου ἀναρρύσῃ τῆς περιουσίας. ὁ δὲ
@@ -1425,8 +1415,7 @@ cf. 22, 22 6 σύστασις] confirmatio 11 εἷς 16 ἀποπείσῃ.
 deterrebit 20 πάλιν cf. 108, 19 23 τοιάνδε cf. 3, 1 25
 ἀντιφθεγγομένων deriuandum σ u. ἀντιφθέγγω 28 συνετήρει
 τῆ καρδίᾳ] Luc. 2, 19. 51. Dan. 7, 28. infra 176, 4</note>
-
-<pb n="174"/>
+                  <pb n="174"/>
 παραγίνεται πρὸς τὸν ἔμπορον ὁ τὰ ἀρωματικὰ ὠνη-
 σάμενος ξύλα. καί φησιν ὁ ἔμπορος· ‘ἀπόδος μοι,
 ὦ ἑταῖρε, εἴ τί μοι συνεφώνησας παρασχεῖν ὑπὲρ
@@ -1454,15 +1443,15 @@ deterrebit 20 πάλιν cf. 108, 19 23 τοιάνδε cf. 3, 1 25
 <lb n="25"/> γηραιὸς καθηγητὴς πολλῇ τῇ γνώσει καὶ τῇ συνέσει
 κεκόσμηνται· καὶ κατʼ ἐκείνους κἀμὲ ὁ διδάσκαλος
 ὁ ἐμὸς ἀπετέλεσε διδάσκαλον.ʼ</p>
-<note type="footnote">7 στίφος 9 in margine κδ΄ 10 ἐπαναγκάζων? 11.
+               <note type="footnote">7 στίφος 9 in margine κδ΄ 10 ἐπαναγκάζων? 11.
 19 ἂν] οὗ? δὴ? ἕως οὗ P 20 πεισθῆναι adieci 21
 ἀπολαβεῖν] uidetur scribendum ἀπέλαβεν (12). ἀπολάβῃ ne
 reponatur prohibet sententia. ἕως οὗ ἔλαβεν . . ὅσα ἠθέλη-
 σεν P 23 cf. 161, 16 27 διδάσκαλος cod., om. P</note>
-
-<pb n="175"/>
-</div>
-<div type="textpart" subtype="paragraph" n="13"><p>Ὁ δὲ βασιλεὺς ὑπολαβὼν ἔφη τῷ υἱῷ· ‘γνώρι-
+               <pb n="175"/>
+            </div>
+            <div type="textpart" subtype="paragraph" n="13">
+               <p>Ὁ δὲ βασιλεὺς ὑπολαβὼν ἔφη τῷ υἱῷ· ‘γνώρι-
 σόν μοι, τέκνον, πῶς ἐν μὲν τοῖς προλαβοῦσι τρισὶν
 ἔτεσιν οὐ μεμάθηκας τὴν νῦν προσγενομένην σοι
 λογιότητα, νυνὶ δὲ ἐν μόνοις τοῖς παρελθοῦσιν ἳξ
@@ -1495,8 +1484,7 @@ reponatur prohibet sententia. ἕως οὗ ἔλαβεν . . ὅσα ἠθέλ�
 impuber. Lob. Phr. 84. St. Th. l, 2, 2642 15 διατέθει-
 ται? 16 τῷ om. P 23 καταρχὰς et 25. 27 ἐξαρχῆς
 28 ἀφηνιᾶσαι. cf. 153, 23</note>
-
-<pb n="176"/>
+                  <pb n="176"/>
 ἀποστῆναι, ἅτε βασιλέως τυγχάνων υἱός — ἀλλὰ κατὰ
 μικρὸν τοῖς λόγοις με διαρρυθμίζων οὕτω με δεξιῶς
 εἰς τὸ τέλειον τῆς φιλοσοφίας ἀνήγαγε. κἀγὼ δὲ
@@ -1527,10 +1515,9 @@ impuber. Lob. Phr. 84. St. Th. l, 2, 2642 15 διατέθει-
 <note type="footnote">2 διαριθμίζων 5. 11 μοι om. P 9 μεμαθηκὼς et 10
 τὸν adieci, ut extant in P. ef. 112, 1. 2 14 περὶ 19 ὁμο-
 λόγει 21 ἀπωλέσαι m. pr., corr. m. sec. παραστησάσης</note>
-<note type="footnote">26 σἷδας, non οἶσθα ut minus adcurate inspicienti uidea-
+                  <note type="footnote">26 σἷδας, non οἶσθα ut minus adcurate inspicienti uidea-
 tur, est in codice</note>
-
-<pb n="177"/>
+                  <pb n="177"/>
 κἂν γάρ τις πενίᾳ εἴη συζῶν ἢ καί τινι βιωτικῇ περι- <note type="marginal">p. 113</note>
 πετείᾳ πιέζοιτο, ἀλλʼ ὅμως καὶ οὗτος τῆς ἰδίας ζωῆς
 περιέχεται. ἐγὼ τοίνυν τὸν παῖδά σου τούτου χάριν
@@ -1556,7 +1543,7 @@ tur, est in codice</note>
 μολογῶ μὴ κατά τι ἀπαρνουμένη. σὺ δʼ ὦ μέγιστε
 βασιλεῦ, ἐπʼ ἐμοὶ τὰ δοκοῦντά σοι πρᾶξον, καθὼς	
 ἂν εὐδοκήσειε τὸ θεοκυβέρνητον κράτος σου.’ ὁ δὲ <lb n="25"/>
-<note type="footnote">2 ἰδέας] in margine γρ. οἰκείας 6 διαγνῶναι cod.:
+                  <note type="footnote">2 ἰδέας] in margine γρ. οἰκείας 6 διαγνῶναι cod.:
 διαγνοίην ? αἰτίας cf. 8, 9 9 non oportet scribi μει-
 λιχιωτάτοις διαλεαίνουσα] permulcens 14 τοαποτοῦδε
 16 ἐκθροηθεῖσα i. e. διαταραχθεῖσα P 17 ὑφορωμένη
@@ -1564,8 +1551,7 @@ mutata l. o in ω m. sec. παιδός σου? ὑποβληθῆναι est i. q
 anutiquts ὑποβληθήσεσθαι 18 συνεῖδον.. διαφυγεῖν ut ἔδοξέ
 μοι, ἔγνων δ. decreui; cf. Hase ad Leon. Diac. p. 468 sq.
 23 in margine κε΄</note>
-
-<pb n="178"/>
+                  <pb n="178"/>
 βασιλεὺς ἐμβλέψας τοῖς παρισταμένοις μεγιστᾶσιν
 αὐτοῦ, λέγει πρὸς αὐτούς· ‘ὁποίαν ὑμεῖς παρέχετε
 βουλὴν τῇ βασιλείᾳ μου περὶ τοῦ τοιούτου πράγμα-
@@ -1597,8 +1583,7 @@ anutiquts ὑποβληθήσεσθαι 18 συνεῖδον.. διαφυγεῖ
 λεως· ἣ δὲ πανταχόθεν τετείχιστο. καὶ παῤ ὅλην
 <note type="footnote">2. 4 cf. 188, 12 4 ἂν adieci 8 μοι om. P. μοι δοκεῖ?
 10 ἐκκοπῆναι πρέπον ἐστί P. exciditne πρέπει uel δεῖ?</note>
-
-<pb n="179"/>
+                  <pb n="179"/>
 τὴν νύκτα κοπιάσασα, οὐδʼ ὅλως ἔξοδόν τινα εὑρηκέναι
 ἴσχυσε· τῆς δέ γε ἡμέρας διαυγαζούσης, διελογίσατο
 καθʼ ἑαυτὴν καὶ εἶπεν ὡς ‘εἴπερ ἡ ἡμέρα ἐπισταίη,
@@ -1624,17 +1609,16 @@ anutiquts ὑποβληθήσεσθαι 18 συνεῖδον.. διαφυγεῖ
 λοίη κλαυθμηρίζων, οὐδὲν ἅτερον αὐτῷ εἰς θερα
 πείαν καὶ ἀπόπαυσιν τοῦ κλαυθμοῦ αὐτοῦ ὡς ὦτα
 ἀλώπεκος. ἅτινα εἰ παρὰ τοῦ παιδίου τοῦδε φέροιτο, <lb n="25"/>
-<note type="footnote">1 εὑρηκέναι ἴσχυσε i. e. εὑρεῖν ἠδύνατο 4 θεαθήσο
+                  <note type="footnote">1 εὑρηκέναι ἴσχυσε i. e. εὑρεῖν ἠδύνατο 4 θεαθήσο
 μαι | θηραθήσομαι ? κρατηθ ήσομαι Μ 5 ἀπόσχονται
 10 cf. 177, 17 11 ὡς scripsi: καὶ delendumne εὐθύς?
 186, 12—13. 12 ὑφορωμένου cod., l. o in ω mutata m. see.</note>
-<note type="footnote">15 ἑωράκει cf. 138, 23 17 ἕτοιμον] iam perfectum, cui
+                  <note type="footnote">15 ἑωράκει cf. 138, 23 17 ἕτοιμον] iam perfectum, cui
 nihil deest σπόγγον] εἰς τὸ σπογγίζειν τὸν μυλῶνα P
 23 ἅτερον] ἕτερον εἰς θεραπείαν καλὸν P 25 παρά]
 ὑπὲρ in archetypo legit qui P recensuit: κρατεῖν αὐτὰ πάντοτε
 ἐπάνω τοῦ παιδός</note>
-
-<pb n="180"/>
+                  <pb n="180"/>
 οὐκ ἐπὶ πολὺ ὁ κλαυθμὸς αὐτῷ παρατείνει.’ καὶ
 ταῦτα εἰπὼν τὰ τῆς ἀλώπεκος ἐκείνης ὦτα μαχαίρᾳ
 ἀπέτεμεν. ἤνεγκε δὲ γενναίως καὶ τοῦτο ἡ ἀλώπηξ,
@@ -1670,8 +1654,7 @@ numeris locis sic peccauit librarius 8 ὀδυνόμενος ἐκβάλ-
 m. sec. in ὼ 13 κὰκήνη γεναίως 14 ἀλγηνὰ 16 ἔφη·
 ὡς 17 χρησιμέβη 18 νόσοις οὗτος 19 ἐξωρύξαι
 20 κατεκείνην 21 διανοιγῆναι] ι m. sec. corr. in οι</note>
-
-<pb n="181"/>
+                  <pb n="181"/>
 καὶ αὐτίκα ἡ ἀλώπηξ ἐκπηδήσασα πολλῷ τῷ τάχει <note type="marginal">p. 11</note>
 διὰ τῆς πύλης ἀπέδρασε καὶ τὸν ἐπηρτημένον διέ-
 φυγεν κίνδυνον. Κἀγὼ δὲ τὰ νῦν ἡ ἀθλία, ὦ βα-
@@ -1680,8 +1663,9 @@ m. sec. in ὼ 13 κὰκήνη γεναίως 14 ἀλγηνὰ 16 ἔφη·
 μως ἔχω ὑπομένειν, τὸ δὲ τὴν καρδίαν μου ἐξορυ-
 χθῆναι ὑπενεγκεῖν οὐ δεδύνημαι. θανάτου γὰρ βιαίου
 παραίτιον πέφυκεν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="14"><p>Ἐπὶ τούτοις οὖν ἀποκριθεὶς ὁ τοῦ βασιλέως υἱὸς
+            </div>
+            <div type="textpart" subtype="paragraph" n="14">
+               <p>Ἐπὶ τούτοις οὖν ἀποκριθεὶς ὁ τοῦ βασιλέως υἱὸς
 λέγει τῷ πατρὶ καὶ τοῖς παρεστηκόσι μεγιστάνοις· <lb n="10"/>
 ‘ἀληθῶς ἡ γυνὴ καὶ πρεπόντως φησίν· οὐ χρὴ γὰρ
 τοὺς τῶν ἀνδρῶν συνετοὺς καὶ φρενήρεις τὰ παρὰ
@@ -1693,8 +1677,8 @@ m. sec. in ὼ 13 κὰκήνη γεναίως 14 ἀλγηνὰ 16 ἔφη·
 τε τοῦ αὐτῆς τραχήλου ἐξαρτήσωσιν, εἶτα καὶ ὄνῳ
 αὐτὴν ἀντιστρόφως ἐποχεῖσθαι παρασκευάσαντες
 ἀνὰ πᾶσαν θριαμβεύσωσιν τὴν πόλιν, ἔμπροσθεν δὲ <lb n="20"/>
-<note type="marginal">p. 11</note>
-<note type="footnote">1 τάχος m. pr., ει supra scripsit m. sec. 2 ἀπέδρα:
+                  <note type="marginal">p. 11</note>
+                  <note type="footnote">1 τάχος m. pr., ει supra scripsit m. sec. 2 ἀπέδρα:
 sic recenliores 3 τανῦν 4 κράτοῦ 5 ἕτοιμος 6 ὑπὸ
 μένειν m. pr., ει m. sec. mutauit in αι 7 ὑπενεκεῖν
 8 παῤ σἴτιον πέφυ, 9 ἀποκρι, 11 ἀλη, πρεπόν et sic feer
@@ -1706,10 +1690,9 @@ ptum est φρονίμους 13 σφαλόμενα ὑπομέμψιν; ἐτί�
 σιν 14 in hoc scriptore non sum ausus reponere γυναικί sed
 intactum reliqui quod est in codice γυνῇ 15 προσεί in
 margine m. al. ἀποφάναι 16 ἀποξηρισθ in margine κϚ΄</note>
-<note type="footnote">18 τοῦ] τὸ m. pr., τῆς m. sec. ἐξαρτήσουσιν 19
+                  <note type="footnote">18 τοῦ] τὸ m. pr., τῆς m. sec. ἐξαρτήσουσιν 19
 ἐποχίσθαι παρασκεβάσαν</note>
-
-<pb n="182"/>
+                  <pb n="182"/>
 αὐτῆς δύο συμπεριτρεχόντων κήρυκες, μὲν εἷς
 αὐτῆς προπορευόμενος, ὁ δὲ ἕτερος ὄπισθεν ἐπακο-
 λουθῶν· οἳ καὶ ὀφείλουσιν βοᾶν εἰς ἐπήκοον πάν-
@@ -1722,8 +1705,9 @@ margine m. al. ἀποφάναι 16 ἀποξηρισθ in margine κϚ΄</note>
 <lb n="10"/> ναικί, ὅπερ ὁ ἐμὸς υἱὸς ἡμῖν συνεβούλευσεν.’ καὶ
 διεπράχθη ἐπὶ τῇ πονηρᾷ γυναικὶ καὶ σκολιᾷ ὅπερ ὁ
 τοῦ βασιλέως υἱὸς τῷ πατρὶ περὶ αὐτῆς συνῄνεσεν.</p>
-</div>
-<div type="textpart" subtype="paragraph" n="15"><p>Εἶτά φησιν ὁ βασιλεὺς τῷ φιλοσόφῳ Συντίπᾳ·
+            </div>
+            <div type="textpart" subtype="paragraph" n="15">
+               <p>Εἶτά φησιν ὁ βασιλεὺς τῷ φιλοσόφῳ Συντίπᾳ·
 ‘ἀνακάλυψόν μοι, ὦ φιλόσοφε, καὶ ἀριδήλως πα-
 <lb n="15"/> ράστησον, πόθεν ἡ τοσαύτη σύνεσις καὶ φιλοσοφία
 τῷ υἱῷ μου προσεγένετο· μήτοι ἐξ αὐτῆς τῆς γεν-
@@ -1737,22 +1721,23 @@ margine m. al. ἀποφάναι 16 ἀποξηρισθ in margine κϚ΄</note>
 <note type="footnote">1 συμπεριτρεχόντων κήρυκες ego: σὺν περιτρέχον κύρη-
 κες cod. uolebat librarus συμπεριτρέχοντες nominatiuo abso-
 luto; melius quidem dixisset συμπεριτρέχωσ 3 σἳ] εἷ cod.</note>
-<note type="footnote">βοὰν 4 ἐξήργάσατο οὗτος 5 ἥσθη] ἴσθη cod.
+                  <note type="footnote">βοὰν 4 ἐξήργάσατο οὗτος 5 ἥσθη] ἴσθη cod.
 τῆς λαληθῆσι m. pr., corr. m. sec. 9 συν βεβούλευ γινέσθω</note>
-<note type="footnote">8. 12 τὸ 14 μοι] μ cod. 16 προσεγένετο μη cf.
+                  <note type="footnote">8. 12 τὸ 14 μοι] μ cod. 16 προσεγένετο μη cf.
 ad 119, 14. per compeendium aliguotiens scriptum est quod et
 γένεσις et γέννησις legi potest, aliquotiens diserte γέννησις
 21 πρώτ κεχρήγηται αὔτη 22 σὺ] σοὶ cod. μὲν]
 ἀκμήν i. e. ἄρτι? γε?</note>
-
-<pb n="183"/>
+                  <pb n="183"/>
 πάντως ἐπιμελείας καὶ σπουδῆς τὸ ἐν γνώσει ἀπα-
 ράμιλλον ἔσχηκε. πλὴν περὶ τούτου καί τινός μου <note type="marginal">p. 115</note>
 διηγήσεως, ὦ βασιλεῦ, ἄκουσον.’ ὁ δὲ βασιλεὺς
 ‘φράσον’, φησίν ‘ὦ βουλὴν σοφώτατε Συντίπα.’
-δὲ τοιαύτης πρὸς αὐτὸν ἐξηγήσεως ἀπήρξατο· </p><lb n="5"/>
-</div>
-<div type="textpart" subtype="paragraph" n="16"><p>‘Βασιλεύς τις ἦν ἐν τοῖς ἔκπαλαι χρόνοις· ὅς δὴ
+δὲ τοιαύτης πρὸς αὐτὸν ἐξηγήσεως ἀπήρξατο· </p>
+               <lb n="5"/>
+            </div>
+            <div type="textpart" subtype="paragraph" n="16">
+               <p>‘Βασιλεύς τις ἦν ἐν τοῖς ἔκπαλαι χρόνοις· ὅς δὴ
 καὶ πλείστους ἐφʼ ἑαυτὸν φιλοσόφους ἐπλούτει. ὧν
 ὁ εἷς ἐτύγχανεν τῶν ἄλλων μᾶλλον διαφορώτατος.
 ἦν δὲ ἐκείνῳ τῷ βασιλεῖ καί τις ἕτερος ἀνὴρ τὴν
@@ -1766,23 +1751,23 @@ ad 119, 14. per compeendium aliguotiens scriptum est quod et
 σποτα, ἐξ ὧν με οἱ τῶν ἀστέρων δρόμοι διδάσκουσι,
 τὴν τῶν λῃστῶν καὶ κακούργων πονηρίαν κέκτηται·
 καὶ ἐπὶ μακροὺς βιοτεύσει τοὺς χρόνους· ἀλλὰ καὶ
-κατʼ αὐτὴν τὴν τρισκαιδεκαετίαν τῆς αὐτοῦ ζωῆς <lb n="20"/><note type="marginal">p. 120</note>
-<note type="footnote">1 ἀπαράμ ειλον 4 βου σοφότατε 5 τιαὔτης
+κατʼ αὐτὴν τὴν τρισκαιδεκαετίαν τῆς αὐτοῦ ζωῆς <lb n="20"/>
+                  <note type="marginal">p. 120</note>
+                  <note type="footnote">1 ἀπαράμ ειλον 4 βου σοφότατε 5 τιαὔτης
 6 δὴ] δὲ cod. 7 πλήστους ἐφʼ ἑαυτὸν i. e. παῤ ἑαυτῷ
 ἐπλούτει cf. p. 182, 23 8 μόλον cod. cf. 12, 11. 186, 20
 διαφορότατος cod. διαφορώτερος μειζότερος λίαν P 10 ἄκρος</note>
-<note type="footnote">ἐξ ἰσκημένος 14 οὗτος] του cod.; nolui tamen scribere τοῦ-
+                  <note type="footnote">ἐξ ἰσκημένος 14 οὗτος] του cod.; nolui tamen scribere τοῦ-
 τον . . μεμαθηκότα (15) cum propter subiectum l. 15. 16. importune
 mutatum, tum quod uu. περὶτ. τ. τ. φ. π. πρότερον μεμαθηκότα non
 solum abundarent, sed inepte addita essent. poterat quidem post
 παιδὸς intercidisse ἠρώτησεν. ὃ δὲ 12. 16 τῷ] τὸ cod. 15 με-
 μαθη ἐξέτασεν P 18 κέκτηται iam nunc in se habet laten-
 tem, ut non oporteat scribi κεκτήσεται 19 βιωτεύ 20 κταυτὴν</note>
-<note type="footnote">τρεῖς καὶ δεκατιαίαν. debebant quidem omnia illa uocabula
+                  <note type="footnote">τρεῖς καὶ δεκατιαίαν. debebant quidem omnia illa uocabula
 composita quorum posterior pars est ἔτος extre in ἑτεια, sed
 exeunt in ετία. alia est ratio u. ἀτυχία et similtium</note>
-
-<pb n="184"/>
+                  <pb n="184"/>
 μεγίστην κακουργίαν καὶ κλοπὴν διαπράξεται.’ τού-
 των δὲ οὕτως παρὰ τοῦ ἀστρολόγου ῥηθέντων, λέγει
 πρὸς αὐτὸν ὁ τοῦ τεχθέντος πατήρ· ‘πάντα ἤδη
@@ -1814,10 +1799,9 @@ quod aliud est in deliciis. uide St. Th. 5, 1567 D. ἐπιθυμίαν
 γορευμένον 12 πρακταίων cod.; πρακτέων i. e. q. πρά-
 ξεων 13 μέντι 14 ὁ κτῶμη 15 του 16 νὸς euanuit
 ἐν κατακλίει 17 ἁπολλῶν 18 ἐκτρέφην καὶ ἀνατρέφην</note>
-<note type="footnote">20 οὗτο συνακριβία 21 οὐ κεῖα cod. οὐδ᾿ εἴα? 22
+                  <note type="footnote">20 οὗτο συνακριβία 21 οὐ κεῖα cod. οὐδ᾿ εἴα? 22
 τοῦ] τῖς cod.; an τῆς οἰκίας</note>
-
-<pb n="185"/>
+                  <pb n="185"/>
 προέρχεσθαι, ἀλλʼ οὐδὲ τῶν πονηρῶν τοῦ ἀνθρω-
 πίνου βίου πράξεων γνώριμόν τι τούτῳ καθίστατο
 συνόλως. καὶ οὕτως ὁ παῖς ἀνατρεφόμενος τῆς <note type="marginal">p. 121</note>
@@ -1833,10 +1817,10 @@ quod aliud est in deliciis. uide St. Th. 5, 1567 D. ἐπιθυμίαν
 μαντείαν. ὁ δὲ παῖς ἀκούσας ὅτι αὐτὸν ὁ) πατὴρ
 εἰς τὸν βασιλέα εἰσαγαγεῖν βούλεται, ἠγωνία μᾶλλον
 ἐπὶ τῇ ἀκούσει, καὶ λογισμῷ συνεστρέφετο λέγων <lb n="15"/>
-<note type="footnote">3 οὑτὸς τὴν πεντεκαίδεκα τοῦ ἔτους ἡλικίας cod.:
+                  <note type="footnote">3 οὑτὸς τὴν πεντεκαίδεκα τοῦ ἔτους ἡλικίας cod.:
 malui scribere τῆς πεντεκαιδεκαέτους ἡλικίας quam τῆς τοῦ
 πεντεκαιδεκάτου ἔτους ἡλικίας 4 εἷτα semper 7 αὐτὸ</note>
-<note type="footnote">8 δέον. uidetur librarius uoluisse δέοντα τοῦτο προ-
+                  <note type="footnote">8 δέον. uidetur librarius uoluisse δέοντα τοῦτο προ-
 σομηλή 9 bibliopegae culpa folii 63 uersus ultimus paueis
 apicibus exceptis totus, paemultimi pars inferior, folii 63 uer-
 sus primi pars superior interciderunt. quae e uestigiis cognosci
@@ -1850,11 +1834,10 @@ partem esse seruatam. haec igitur in codice leguntur (οὗ)τ(ο)
 λογισ συνεστρεφέ [i. e. συνεστρέφε] λέγων 10 οὖν adieci
 ex P quae inde σ uu. καὶ ἦν usque ad μαντείαν le-
 guntur non uidentur a libri auctore profecta; absunt etiam a P</note>
-<note type="footnote">11 ἄκρως, ἄκρον t. e. εἰς ἄκρον τὴν διδασκαλίαν
+                  <note type="footnote">11 ἄκρως, ἄκρον t. e. εἰς ἄκρον τὴν διδασκαλίαν
 ut 183, 10? 12 ἐνδείξασθαι . . ὁ (13) suppleui 14 cf.
 186, 20</note>
-
-<pb n="186"/>
+                  <pb n="186"/>
 ὡς ‘οὐδὲ ἄλλοτε τὸν βασιλέα τεθέαμαι, καὶ νῦν ὁ
 ἐμὸς πατὴρ εἰς αὐτὸν εἰσαγαγεῖν με βούλεται. χρὴ
 (δὴ) κἀμὲ μυρεψικὰ καὶ ἀρωματικὰ εἴδη αὐτῷ προσ-
@@ -1890,8 +1873,7 @@ adscripta sunt διορυγήν] Lob. Phr. 231 11 εἰσέδυ τὰ
 noli corrigere, 187, 25 14 θροούμενος] cf. 177, 16 18 ἀντι-
 παραστῆναι P 20 μάλλον cf. 129, 10; 12, 11 ipsum caue
 mutes 21 τῆς ἐκεῖθεν ἀπολήψεως deleni</note>
-
-<pb n="187"/>
+                  <pb n="187"/>
 καί τινα τούτων σινδόνα ἐξείλκυσε πολλοῦ γε τιμίαν.
 ἣν δὴ καὶ μόνην ἀναλαβὼν τῶν ἀνακτόρων τε ἐξελ-
 θὼν ἀπῄει πόρρωθεν. τὴν μέντοι σινδόνα εὐθὺς
@@ -1924,8 +1906,7 @@ mutes 21 τῆς ἐκεῖθεν ἀπολήψεως deleni</note>
 <note type="footnote">5. 6 de conlocatione u. 149, 26 6 οὐδὲν 9 ἐπὶ i. e. ἕως
 εἰς 18 μέλλειν cf. 140, 1 20 τοίνυν] cf. 138, 27 23
 αὐτὸς P 24 ἐν τῆ? 27 μου non est in P cf 123, 11</note>
-
-<pb n="188"/>
+                  <pb n="188"/>
 γήσεως γνῶθι, ὦ κράτιστε βασιλεῦ, ὡς ἑκάστου τῇ
 γεννήσει ἰδία τις ἀπόκειται παρὰ θεοῦ ἔκβασις εὐ-
 <note type="marginal">p. 124</note>τυχίας (ἢ ἀτυχίας). ὥσπερ ἐν μὲν τῇ τοῦ σοῦ υἱοῦ
@@ -1959,8 +1940,7 @@ recti substituit indirectum idque praesertim in altero membro
 14 εἰ σέ τι 16 ἀπὸ etiam P 22 συνετάξατο P. u. ἀνα-
 τάττεσθαι sic adhibuerunt lucas (initio euang.) aliique scri-
 ptores recentiores 24 αὐτοῦ? 26 καὶ adieci</note>
-
-<pb n="189"/>
+                  <pb n="189"/>
 παρεισάγει ἀνδρός, ὃς μεταξὺ δύο τινῶν εἴτε ὁμαιμό-
 νων εἴτε προσφιλῶν διενέξεις τε καὶ διαμάχας ἀναρ-
 ριπίζει. τὸ δεύτερον περὶ φιλοσόφου ἀνδρὸς παρίστη-
@@ -1990,20 +1970,20 @@ nihil est nisi exponit, cum proprie fuerit inducit siue homines
 docentes siue exempla docentia 2 διένεξις i. e. διαφορά
 discordia 6 οἶδε] u. 15, 6 12 in u. πράγματος desinit m.
 pr. in uersu extremo; α uu. ἢ κατηγορίας uersum incipit m. alt.</note>
-<note type="footnote">13 βιβαιωθίει 14 μη τινὰ 15 ἰδιοτι 16 ἑύδομον
+                  <note type="footnote">13 βιβαιωθίει 14 μη τινὰ 15 ἰδιοτι 16 ἑύδομον
 17 ζυλοτύπως 18 χριστοῦ τινὰ ἐπἀπ. ἠ ἀξιἐπ. 19 ὡς</note>
-<note type="footnote">21 τίκεται 22 λυμενε m. pr. 23 τινὰς παν ἀγα</note>
-<note type="footnote">24 τὸ (add. m. alt. l. ν) τὸν ποιήσαντα cod.; scripsi τῷ</note>
-
-<pb n="190"/>
+                  <note type="footnote">21 τίκεται 22 λυμενε m. pr. 23 τινὰς παν ἀγα</note>
+                  <note type="footnote">24 τὸ (add. m. alt. l. ν) τὸν ποιήσαντα cod.; scripsi τῷ</note>
+                  <pb n="190"/>
 ὅμοια. τὸ ἔννατον κεφάλαιον παρίστησιν ὅτι χρὴ
 καθώς τις θέλει ἵνα ποιῇ αὐτῷ ἕτερος, καὶ αὐτὸν
 ἐκείνῳ ποιεῖν ὁμοίως. τὸ δὲ δέκατον κεφάλαιον δη-
 <note type="marginal">p. 127</note>λοῖ περὶ τοῦ μὴ δεῖν τινα φιλιοῦσθαι καὶ ἀδελφο-
 <lb n="5"/> ποιεῖν τοῖς ἀσεβῶς τῶν πράξεων καὶ τυραννικῶς
 ἔχουσι καὶ ἀδικίαις καὶ πλεονεξίαις χρωμένοις.’</p>
-</div>
-<div type="textpart" subtype="paragraph" n="17"><p>Ταῦτα οὕτως ὁ βασιλεὺς παρὰ τοῦ υἱοῦ ἐνη-
+            </div>
+            <div type="textpart" subtype="paragraph" n="17">
+               <p>Ταῦτα οὕτως ὁ βασιλεὺς παρὰ τοῦ υἱοῦ ἐνη-
 χηθείς, εὐχαριστηρίους τῷ θεῷ λόγους ἀναπέμπει,
 καὶ τῷ Συντίπᾳ διετέλει ἐγκωμιάζων· οὐ μὴν ἀλλὰ
 <lb n="10"/> καὶ δώροις τὸν ἄνδρα φιλοτίμοις ἐδεξιοῦτο. εἶτα
@@ -2021,7 +2001,7 @@ pr. in uersu extremo; α uu. ἢ κατηγορίας uersum incipit m. alt.</no
 <note type="footnote">ποιήσαντι, ut est in P τῷ κακῶς ποιήσαντι 1 χρεῖ κα-
 θῶς 3 ποιήν δειλ’ 4 τοῦ μη τινὰ 5 τυρανι
 7 14. οὗτως 7 ἐνἠχη εὐχαριστιρίους τὸ 9 τὸ σιντίπα</note>
-<note type="footnote">ἐγκωμιάζον 10 ne corrigas φιλοτίμως: 127, 6 11
+                  <note type="footnote">ἐγκωμιάζον 10 ne corrigas φιλοτίμως: 127, 6 11
 dislinxi ut est in P. codex: παῖδα. οὑτωσὶ, τ. π., ᾄρα γε
 12 σὺν βένοντα ἡμαρμένης 13 συμβένειν εἰ ὧθασιν
 τὸ (mutatum a m. alt. in τῶ) βασιλ: hoc autem modo fere om-
@@ -2030,8 +2010,7 @@ nes u. βασιλεύς casus exprimuntur 15 οἷονται 20 τα-
 ficatur diuitias colens τιμῆς est genetiuus qui dicitur rela-
 tionis (u. Krügeri Gr. 47, 26, 9); sed nescio an mutandus sit
 in datiuum τιμαῖς διᾶπρέπων ὁτί οὗτος</note>
-
-<pb n="191"/>
+                  <pb n="191"/>
 οῦτος ὑπάρχει, περιφρονεῖν μᾶλλον αὐτὸν καὶ ὡς
 ἰδιωτικὸν παρορᾶν καὶ μὴ ἕνα τοῦτον ἡγεῖσθαι τῶν <note type="marginal">p. 128</note>
 φιλοσόφων· διὸ οὐδὲ τὸ οὖς τοῖς ἐκείνου λόγοις τὸ
@@ -2064,13 +2043,13 @@ modus aptus est a uu. ὡς ἂν μὴ 17 ἀποδίδωσι cod.; an
 ἀποδώσει? 18 ἀναλϊγοῦντα λοιπηρᾶ. τόν 19 ἔχειν
 21 ποῖα ἀσφαλέσ καθἕστηκε cod., ἀσφαλεστέρα ἐγένετο P
 </note>
-
-<pb n="192"/>
+                  <pb n="192"/>
 εὐλαβουμένη καὶ τὸ δίκαιον μεταδιώκουσα, ἥτις καὶ
 τοὺς πένητας οἰκτείρει καὶ τοὺς κακῶς ἔχοντας τῶν
 ὑπηκόων καὶ βιωτικαῖς περιπετείαις πιεζομένους
 ἀνακτᾶται καὶ εὐεργετεῖ.’ Ὁ βασιλεὺς ἔφη· ‘καὶ
-<lb n="5"/><note type="marginal">p. 130</note>ὁποίᾳ δὴ τῇ βασιλείᾳ οἱ ἄνθρωποι ἐπιτέρπονται’;
+<lb n="5"/>
+                  <note type="marginal">p. 130</note>ὁποίᾳ δὴ τῇ βασιλείᾳ οἱ ἄνθρωποι ἐπιτέρπονται’;
 ὁ δὲ παῖς ‘τῇ ἐκ θείας προνοίας γεγενημένῃ’ φησί
 ‘καὶ τῇ δικαίως πολιτευομένῃ καὶ πάσης ἀγαθοερ-
 γίας πρὸς τοὺς ὑπ’ αὐτὴν ἀντεχομένῃ.’ Αὖθις δὲ
@@ -2090,7 +2069,7 @@ modus aptus est a uu. ὡς ἂν μὴ 17 ἀποδίδωσι cod.; an
 ἔφη· ‘τούτου χάριν, βασιλεῦ, τὸ ἀναιδὲς ἔχουσιν,
 ἐφʼ ᾧ διδάσκειν πάντας ἐπιποθοῦσι καὶ μάλιστα
 τοὺς συνετωτέρους καὶ τῆς σοφίας ἐφιεμένους.’</p>
-<note type="footnote">1 εὐλαβομένη ἤ τις 2 οἱκτήρας 3 ὑποκόων
+               <note type="footnote">1 εὐλαβομένη ἤ τις 2 οἱκτήρας 3 ὑποκόων
 βιοτι περὶ πετίαις πιεζομένοις ἀνακτά τε καὶ εὐεργετί 5
 ὁποία. cf. 188, 12 τὴν βασιλ 6 θεία προνεία 7
 ἀγαθοεργίας 8 ἀντεχομένοις 13 ἐφάπασιν αὐτοῖς
@@ -2101,10 +2080,10 @@ cum indicatiuo hic scriptor coniunxit ut exprimeret i. q. pro-
 pterea quod ἐπιποθοῦσι scripsi: ἐπεῖ ποθούσι cod. διότι
 ἀγαποῦσι διδάσκειν πάντας P μάλλιστα 24 συνετοτεροὺς
 </note>
-
-<pb n="193"/>
-</div>
-<div type="textpart" subtype="paragraph" n="18"><p>‘Τίνες οὖν᾿ φησὶν ὁ βασιλεύς ‘ὑπάρχουσιν οἱ παρὰ <note type="marginal">p. 131</note>
+               <pb n="193"/>
+            </div>
+            <div type="textpart" subtype="paragraph" n="18">
+               <p>‘Τίνες οὖν᾿ φησὶν ὁ βασιλεύς ‘ὑπάρχουσιν οἱ παρὰ <note type="marginal">p. 131</note>
 τῶν φιλοσόφων μισούμενοι ὁ παῖς ἀπεκρίνατο·
 ‘πάντες ὅσοι μὴ γνώμῃ εὐθυτάτῃ τὴν τούτων δι-
 δασκαλίαν προσίενται, ἀλλὰ τοὺς οὐτῶν ἐλέγχους
@@ -2138,8 +2117,7 @@ noli mutare 16 ἄφρον ὄντος 17 συνιῶν i. e. συνιείς
 θεσιν] add. τῆς ἀγάπης P: ἔχει καλὴν καὶ φιλικὴν τὴν
 διάθεσιν τῆς ἀγάπης 21 ἀνύων cod. λυπήσας P
 μὴδὲ 24 αὐτῷ?</note>
-
-<pb n="194"/>
+                  <pb n="194"/>
 ἀλλ μὴν μεμίσηται αὐτῷ καὶ ἀφροσύνη καὶ λόγων
 ἀπρεπῶν ἀδολεσχία.’ ὁ βασιλεὺς λέγει· ‘ποία τῶν
 αἰσχρῶν πράξεων πλέα τῇ ἁμαρτίᾳ περιβάλλει τὸν
@@ -2166,14 +2144,13 @@ autem πλέᾳ cogitari non potest; sed dubito an sit scribendum
 πλείστῃ 4 χρόμενον 5 ἀπληστεία 6 ὁ πίσω 8
 πλημμελεῖται καὶ ἁμαρτάνη αὔται δὲ ἑπράξεις 9 τοῦ
 τάλανος ἀνθρώπου τοῦ ζῶντος ἐν ἁμαρτίαις P. ἐφαμαρ cod.</note>
-<note type="footnote">10 ταυ συνιεῖς 14 τὸν θεὸν adieci, ut est in P
+                  <note type="footnote">10 ταυ συνιεῖς 14 τὸν θεὸν adieci, ut est in P
 μὴδε 15 δολιόφρονα, πονηρὸν καὶ ὑποκριτὴν, ὅστις
 ἄλλα μὲν P 16 δύσνουν ὃς scripsi: δύσον cod., ὅστις P
 τὸ 17 πονηρῶς? cf. Lob. Phr. 389 συλογίζεται 18
 ἆρα ἐπιπλείον cod. ἐπὶ πλέον P ἀλλ 19 εἶπερ
 20 ἐφ’ ὧ] cf. 192, 23 πράξεις</note>
-
-<pb n="195"/>
+                  <pb n="195"/>
 εὐχερὴς τῷ πράττοντι καθίσταται, ἡ δὲ τῆς εὐποιίας
 δυσχερής ἐστιν μάλιστα.’ Αὖθις δὲ ὁ βασιλεύς·
 ‘πῶς ὁ μὴν νοσῶν ἡδέως τὰς τῶν ἰατρῶν ἐντολὰς
@@ -2207,8 +2184,7 @@ nitur συνοθεῖ 15 ἀγαπήση δίδου . . ἔσται et καὶ
 εἰς . . . αὐτά omittuntur in Prouerbiis 16 σοφότερος 17
 μησίση, l. finali η facta m. pr. ex ει ὧτα 18 μηκτι-
 ρίση αὐτά 19 ἆρα 20 κορένυται 21. 196, 4 τα</note>
-
-<pb n="196"/>
+                  <pb n="196"/>
 τὴν τούτων δαψιλῆ μετάληψιν πάντως καὶ κόρον
 αὐτῶν, κἂν μὴ βούληται, λαμβάνει· ὀφθαλμοῦ δὲ
 λύχνος καθʼ ὅσον ὁρᾷ τὰ χρήματα, κατὰ τοσοῦτον καὶ
@@ -2230,7 +2206,7 @@ nitur συνοθεῖ 15 ἀγαπήση δίδου . . ἔσται et καὶ
 ἀκήκοας, αὐτάρκη πεφύκασιν εἰς διαγωγὴν ἀρίστην
 <lb n="20"/> καὶ βίον ἀκατάγνωστον τοῖς ἐχέφροσι κατὰ σὲ καὶ
 συνετοῖς ἀνδ ράσι καὶ φιλοσοφίας ἐφιεμένοις.’</p>
-<note type="footnote">1 πάν 2 αὐτὸν ὀφθαλ 3 τὸ σο 6 καλυφθήει
+               <note type="footnote">1 πάν 2 αὐτὸν ὀφθαλ 3 τὸ σο 6 καλυφθήει
 cod. καλυφθείη, non coniunctiuum, reposui de scriptoris con-
 suetudine 7 ὁ ποιὸς cf. 188, 12 ἂν adieci ἇρα πο-
 νηροῦ M, om P cf. D 8 τιούτου 9 θάνατος adieci
@@ -2240,7 +2216,8 @@ suetudine 7 ὁ ποιὸς cf. 188, 12 ἂν adieci ἇρα πο-
 14. 15 ἰθέως et bis ἱδέως 16 ἀπήλακται ἀνόδυνος 17
 (ἡ ) adieci 19 πεφύκασι 20 ἀκατὰ γνωστὸν 21 συνε-
 τοὺς desinit M f. 66 m. cf. 180, 5</note>
-</div></div>
-</body>
-</text>
+            </div>
+         </div>
+      </body>
+   </text>
 </TEI>

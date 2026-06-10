@@ -1,104 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">    
-<fileDesc>
-<titleStmt>
-<title xml:lang="lat">Commentarium in Euclidis data</title>
-	<author xml:lang="lat">Marinus</author>
-<editor>Heinrich Menge</editor>
- <funder>Harvard Library Arcadia Fund</funder>
- <principal>Gregory Crane</principal>
- <respStmt>
-  <persName xml:id="DDD">Digital Divide Data</persName>
-  <resp>Corrected and encoded the text</resp>
- </respStmt>
- <respStmt>
-  <persName>Gregory Crane</persName>
-  <resp>Editor-in-Chief, Perseus Digital Library</resp>
- </respStmt>
- <respStmt>
-  <persName>Matt Munson</persName>
-  <resp>Project Manager (University of Leipzig)</resp>
- </respStmt>
- <respStmt>
-  <persName>Annette Gessner</persName>
-  <resp>Project Assistant (University of Leipzig)</resp>
- </respStmt>
- <respStmt>
-  <persName>Thibault Clérice</persName>
-  <resp>Lead Developer (University of Leipzig)</resp>
- </respStmt>
- <respStmt>
-  <persName>Bruce Robertson</persName>
-  <resp>Technical Advisor</resp>
- </respStmt>
-</titleStmt>
-<publicationStmt>
-<authority>Harvard College Library</authority>
-<idno type="filename">tlg4075.tlg002.1st1K-grc1.xml</idno>
-<availability>
- <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Commentarium in Euclidis data</title>
+            <author xml:lang="lat">Marinus</author>
+            <editor>Heinrich Menge</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg4075.tlg002.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
  License</licence>
-</availability>
-<date>2016</date>
-<publisher>Harvard College Library</publisher>
-<pubPlace>United States</pubPlace>
-</publicationStmt>
-<sourceDesc>
-<listBibl xml:lang="lat">
- <biblStruct>
- <monogr>
-  <title xml:lang="lat">Euclidis Data cum Commentario Marini et Scholiis Antiquis</title>
-  <editor>
-	<persName>
-	 <name xml:lang="lat">Henricus Menge</name>
-	</persName>
-  </editor>
-  <author ref="urn:cts:greekLit:tlg4075">Marinus, 5th cent.</author>
-  <imprint>
-	<publisher>Teubner</publisher>
-	<pubPlace>Leipzig</pubPlace>
-	<date>1896</date>
-  </imprint>
- </monogr>
-<series>
-<title level="s">Euclidis Opera Omnia</title>		 
- <biblScope unit="volume">6</biblScope>
-</series>
-  <ref target="https://archive.org/details/euclidisoperaomn06eucluoft/page/234/mode/2up">Internet Archive</ref>
- </biblStruct>
-</listBibl>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
-<p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-   <refsDecl n="CTS">
-  <cRefPattern matchPattern="(\w+)" n="work" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
- </refsDecl>
-</encodingDesc>
-<profileDesc>
-<langUsage>
-<language ident="grc">Greek</language>
-<language ident="lat">Latin</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change/>
-</revisionDesc>
-</teiHeader>
-<text>
-	<body>
-		
-	 <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg4075.tlg002.1st1K-grc1">
-<div type="textpart" subtype="work" n="1">
-<pb n="233"/>
-<head>MARINI PHILOSPHI COMMENTARIUS
+            </availability>
+            <date>2016</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl xml:lang="lat">
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Euclidis Data cum Commentario Marini et Scholiis Antiquis</title>
+                     <editor>
+                        <persName>
+                           <name xml:lang="lat">Henricus Menge</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg4075">Marinus, 5th cent.</author>
+                     <imprint>
+                        <publisher>Teubner</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1896</date>
+                     </imprint>
+                  </monogr>
+                  <series>
+                     <title level="s">Euclidis Opera Omnia</title>
+                     <biblScope unit="volume">6</biblScope>
+                  </series>
+                  <ref target="https://archive.org/details/euclidisoperaomn06eucluoft/page/234/mode/2up">Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(\w+)"
+                         n="work"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre"
+                    target="#prose-standard"
+                    cert="low"
+                    resp="#corpus-tools"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="edition"
+              xml:lang="grc"
+              n="urn:cts:greekLit:tlg4075.tlg002.1st1K-grc1">
+            <div type="textpart" subtype="work" n="1">
+               <pb n="233"/>
+               <head>MARINI PHILOSPHI COMMENTARIUS
 IN EUCLIDIS DATA.</head>
-<p>Πρῶτον δεῖ θέσθαι, τί τὸ δεδομένον· ἔπειτα, τί
+               <p>Πρῶτον δεῖ θέσθαι, τί τὸ δεδομένον· ἔπειτα, τί
 τὸ χρήσιμον τῆς περὶ τούτου πραγματείας, εἰπεῖν· καὶ
 τρίτον, ὑπὸ τίνα ἐπιστήμην ἀνάγεται.</p>
-<p>Ὁρίζονται δὴ τὸ δεδομένον πολλαχῶς, καὶ ἄλλως
+               <p>Ὁρίζονται δὴ τὸ δεδομένον πολλαχῶς, καὶ ἄλλως
 <lb n="5"/> μὲν οἱ παλαιότεροι, ἄλλως δὲ οἱ νεώτεροι· διὸ καὶ
 συνέβη χαλεπὴν εἶναι τὴν ἀληθῆ περὶ αὐτοῦ ἀπόδοσιν
 καὶ ἔνιοι μὲν οὐδὲ ὁρισμόν τινα αὐτοῦ ἀποδεδώκασιν,
@@ -121,8 +130,7 @@ IN EUCLIDIS DATA.</head>
 φωνῆς μαρίνου φιλοσόφου mg. m. 2 atramento rubro vat
 προλεγομενα τῶν δεδομενων ευκλειδου απο φωνης μαρίνου φιλο-
 σόφου v. 7. καὶ ἔνιοι μὲν οὐδέ] ἔνιοι μὲν γὰρ οὐδʼ Vat.</note>
-
-<pb n="236"/>
+                  <pb n="236"/>
 μον ἤτοι πρὸς ἀκρίβειαν ἢ τὸ σύνεγγυς. καὶ τὸ ἐν
 ὑποθέσει δὲ παρὰ τοῦ προβάλλοντος ἐκτιθέμενον
 δεδομένον εἶναί τινες ὑπειλήφασιν. λέγουσι δὲ καὶ
@@ -132,7 +140,8 @@ IN EUCLIDIS DATA.</head>
 βούλεται σημαίνειν. ὅθεν καὶ μάλιστα τῶν ὅρων ἐκεῖνοι
 εὐδοκιμοῦσιν, ὅσοι γε μάλιστα τὸ καταληπτὸν ἐμφανί-
 ζουσιν, ὡς προϊοῦσιν ἡμῖν ἔσται καταφανές.</p>
-<lb n="10"/> <p>νυνὶ δὲ καὶ τῶν μὴ μόνον ψιλῶς καὶ ἑνί τινι
+               <lb n="10"/>
+               <p>νυνὶ δὲ καὶ τῶν μὴ μόνον ψιλῶς καὶ ἑνί τινι
 χαρακτηριζόντων τὴν τοῦ δεδομένου φύσιν, οἷον δὲ
 ὁρισμὸν αὐτοῦ ποιούντων, τὰς διαφορὰς ἐκθώμεθα.
 συγκεφαλαιούμενοι δὲ καὶ τούτων οἱ τρόποι εὐαρίθμη-
@@ -151,11 +160,10 @@ IN EUCLIDIS DATA.</head>
 μετρικὴν ὕλην. ἐπιτείνεται γὰρ τὰ τοιαῦτα καὶ ἐπὶ τὰ
 φυσικὰ πράγματα καὶ τὰς ἄλλας δὲ μαθηματικὰς ἐπι-
 στήμας.</p>
-<note type="footnote">1. ἤτοι] om. Vat. ἤ] καί PVat.v; ἢ supra scr. m. 2
+               <note type="footnote">1. ἤτοι] om. Vat. ἤ] καί PVat.v; ἢ supra scr. m. 2
 at. 8. εὐδοκιμοῦσιν] εὐδοκημοῦσιν P (sine spir. et acc.) Vat.</note>
-
-<pb n="238"/>
-<p>ὑπογράφουσι τοίνυν τὸ τεταγμένον τὸ ἀεὶ ταὐτὸν
+               <pb n="238"/>
+               <p>ὑπογράφουσι τοίνυν τὸ τεταγμένον τὸ ἀεὶ ταὐτὸν
 σωζόμενον, καθʼ ὃ τετάχθαι λέγεται, ἤτοι κατὰ μέγεθος
 ἢ εἶδος ἢ ἄλλο τι τῶν τοιούτων· ἢ καὶ ἑτέρως· ὅπερ
 μὴ ἐνδέχεται ἄλλοτε ἄλλως γίνεσθαι, ἀλλὰ μοναχῶς
@@ -179,15 +187,15 @@ at. 8. εὐδοκιμοῦσιν] εὐδοκημοῦσιν P (sine spir. et a
 ἄλλως δὲ ἄτακτον εἶναι, οἷον τὸ ἰσόπλευρον τρίγωνον,
 μὲν ἰσόπλευρόν ἐστιν, τέτακται, μεγέθει δὲ οὐχ
 ὥρισται πᾶν.</p>
-<lb n="25"/> <p>γνώριμον δέ ἐστι τὸ γιγνωσκόμενον ὡς τὸ δῆλον
+               <lb n="25"/>
+               <p>γνώριμον δέ ἐστι τὸ γιγνωσκόμενον ὡς τὸ δῆλον
 ἡμῖν καὶ καταλαμβανόμενον, ἄγνωστον δὲ τὸ μὴ γιγνω-
 σκόμενον μηδὲ καταλαμβανόμενον ὑφʼ ἡμῶν· οἷον τὸ
 μῆκος τῆς ὁδοῦ γνώριμον εἶναι λέγεται, καθʼ ὅ, πόσων
 <note type="footnote">4. ἄλλοτε] ἄλλα τε Vat. 8. δυεῖν] δυοῖν Vat 9 καί(alt )]
 om. PVat.v add. m 2. Vat. 11 περιφέρεια] comp at.</note>
-<note type="footnote">15. καί (pr )] comp P, om Vat 25 τό (alt )] suspectum.</note>
-
-<pb n="240"/>
+                  <note type="footnote">15. καί (pr )] comp P, om Vat 25 τό (alt )] suspectum.</note>
+                  <pb n="240"/>
 ἐστὶ σταδίων, κατέλαβον, καὶ τοῦ τριγώνου ὅτι αἰ ἐν-
 τὸς δυσὶν ὀρθαῖς ἴσαι, καὶ ὅτι ἡ ἐκ δύο ὀνομάτων
 ἄλογός ἐστιν. ἔτι μὴν καὶ τὰ τοιάδε γνώριμα λέγεται,
@@ -196,7 +204,7 @@ om. PVat.v add. m 2. Vat. 11 περιφέρεια] comp at.</note>
 ἄλλη εἴη, δύο εὐθεῖαι χωρίον περιέξουσιν, ὅπερ ἀδύνα-
 τον. ἄγνωστα δὲ οὐ τὰ ἄλογά ἐστιν, ἀλλὰ τὰ μὴ
 γιγνωσκόμενα μηδὲ καταλαμβανόμενα ὑφʼ ἡμῶν.</p>
-<p>πόριμον δέ ἐστιν, ὃ δυνατοί ἐσμεν ἤδη ποιῆσαι
+               <p>πόριμον δέ ἐστιν, ὃ δυνατοί ἐσμεν ἤδη ποιῆσαι
 <lb n="10"/> καὶ κατασκευάσαι, τουτέστιν εἰς ἐπίνοιαν ἀγαγεῖν.
 ἄλλως δὲ πάλιν ὁρίζονται τὸ πόριμον ἤτοι τὸ διʼ ἀπο-
 δείξεως ποριζόμενον, ἢ ὅταν τι φαινόμενον καὶ χωρὶς
@@ -215,17 +223,17 @@ om. PVat.v add. m 2. Vat. 11 περιφέρεια] comp at.</note>
 <lb n="25"/> δεχόμενον δὲ πορισθῆναι ποριστὸν ἰδίως προσαγορεύου-
 σιν. ἄπορον δέ ἐστιν, ὡς εἴρηται, τὸ τῷ πορίμῳ ἀντι-
 κείμενον, τουτέστιν οὗ ἡ ζήτησις ἀδιάκριτός ἐστιν.</p>
-<p>ῥητὸν δέ ἐστιν, οὑπερ ἔχομεν εἰπεῖν μέγεθος ἢ εἶδος
+               <p>ῥητὸν δέ ἐστιν, οὑπερ ἔχομεν εἰπεῖν μέγεθος ἢ εἶδος
 <note type="footnote">8. γινωσκόμενα P. 10. τουτέστι Vat. v. 13 ἐστι] om
 Vat. 17 γιγνώμενα Vat. 21. ἐπιστήμη] ἐπίστημα v. 24.
 τό — 25 δέ] mg. m. 1 P (om ὄν) 27 ἡ] om. v.</note>
-
-<pb n="242"/>
+                  <pb n="242"/>
 ἢ θἐσιν· ἀλλʼ οὗτος μὲν ὁ ὅρος κοινότερός ἐστιν, ἰδίως
 δὲ καὶ καθʼ αὑτὸ ῥητόν ἐστιν, ὅ κατά τινα γιγνώσκο-
 μεν ἀριθμὸν πρὸς τὸ τῇ θέσει μέτρον, παλαιστήν, εἰ
 τύχοι, ἢ δάκτυλον.</p>
-<lb n="5"/> <p>οὕτω δὴ προδιωρισμένων ῥᾷον ἔσται λοιπὸν ἐπι-
+               <lb n="5"/>
+               <p>οὕτω δὴ προδιωρισμένων ῥᾷον ἔσται λοιπὸν ἐπι-
 σκοπεῖν τήν τε κοινωνίαν τῶν εἰρημένων καὶ τὴν δια-
 φοράν, καὶ πρῶτον, ὅπως ἔχει τὸ τεταγμένον πρὸς τὸ
 γνώριμον καὶ τὰ τούτοις ἀντικείμενα πρὸς ἄλληλα.
@@ -246,13 +254,12 @@ Vat. 17 γιγνώμενα Vat. 21. ἐπιστήμη] ἐπίστημα v. 24.
 πρὸς ἄλληλα, ὡς τὸ λογικὸν πρὸς τὸ πεζόν· οὔτε γὰρ
 ἐξισάζει τὰ τοιαῦτα οὔτε μὴν τὸ ἕτερον τοῦ ἑτέρου
 <lb n="25"/> ἐπὶ πλέον ἐστίν.</p>
-<p>ὁμοίως δὲ ἔχει καὶ τὸ τεταγμένον καὶ τὸ ἄτακτον
+               <p>ὁμοίως δὲ ἔχει καὶ τὸ τεταγμένον καὶ τὸ ἄτακτον
 πρὸς τὸ πόριμον καὶ τὸ ἄπορον· κοινωνία τε γὰρ αὐτοῖς
 ἔνεστι πλείστη καὶ διαφέρει ἀλλήλων τὸν εἰρημένον
 <note type="footnote">2. καί — ἐστιν] om. v. γιγνώσκωμεν v. 5. Ante
 ἐπισκοπεῖν add καί v. 12. κύκλων v. 18. ἄπειρον]</note>
-
-<pb n="244"/>
+                  <pb n="244"/>
 τρόπον. ἡ γὰρ ἕλιξ τέτακται μέν, ἀλλʼ οὐκ ἧν τοῖς
 πρὸ Ἀρχιμήδους πορίμη. καὶ τὰ ἀπειραχῶς δὲ γιγνό-
 μενα καὶ ἀτάκτως πόριμα μέν ἐστιν, ἐὰν τὴν κατα-
@@ -261,7 +268,7 @@ Vat. 17 γιγνώμενα Vat. 21. ἐπιστήμη] ἐπίστημα v. 24.
 εἰς τὴν κατασκευὴν αὐτοῦ ἀναγαγεῖν τὴν διάνοιαν ἀπὸ
 τοῦ ἰσοπλεύρου οὐ χαλεπὸν ἀλλʼ εὐποριστόν ἐστιν, καί-
 τοι τῶν ἀτάκτων ὄν καὶ ἀπείρων.</p>
-<p>οὕτω δὲ ἔχει καὶ πρὸς τὸ ῥητὸν καὶ ἄλογον τὸ
+               <p>οὕτω δὲ ἔχει καὶ πρὸς τὸ ῥητὸν καὶ ἄλογον τὸ
 <lb n="10"/> τεταγμένον τε καὶ τὸ ἄτακτον· κοινωνοῦντα γὰρ ἀλλή-
 λοις πολλαχῇ καὶ διενήνοχε τὸν εἰρημένον τρόπον.
 οὐδὲ γὰρ ταῦτα ἐξισάζει ἀλλήλοις οὐδὲ τὸ ἕτερον τοῦ
@@ -273,7 +280,7 @@ Vat. 17 γιγνώμενα Vat. 21. ἐπιστήμη] ἐπίστημα v. 24.
 καὶ σκαληνὸν τρίγωνον μετρεῖσθαι ὑπὸ τοῦ προτε-
 θέντος καὶ ὁρισθέντος ῥητοῦ μέτρου, καίτοι ἄτακτον
 <lb n="20"/> ὑπάρχον.</p>
-<p>τοῦ δὲ γνωρίμου πρὸς τὸ πόριμον τὴν μὲν ὁμοιό-
+               <p>τοῦ δὲ γνωρίμου πρὸς τὸ πόριμον τὴν μὲν ὁμοιό-
 τητα παντί γε διιδεῖν ῥᾴδιον, τὴν δὲ διαφορὰν χαλε-
 πὸν ἑλεῖν· σύνεγγυς γάρ ἐστι τὴν φύσιν ἀλλήλων,
 ὥστε καὶ ἐξισάζειν δοκεῖν. οὐ μὴν ἀλλὰ κὰν τούτοις
@@ -285,12 +292,11 @@ Vat. 17 γιγνώμενα Vat. 21. ἐπιστήμη] ἐπίστημα v. 24.
 ἀλλά v. 10. τό] om. Vat, 15. ὁ τῆς] ουσης P. λόγος]
 om Vat 17. γιγνώμενα Vat 22 διϊδεῖν] Vat. Gr. 202;
 δὲ ἰδεἴν Pv et m. 2 Vat. δὲ εἰδεῖν Vat. m. 1. 23. σύνεγγυς]</note>
-
-<pb n="246"/>
+                  <pb n="246"/>
 ειλημμένον. ὥστε τὸ γνώριμον πᾶν οὐκέτι πόριμον·
 τὸ μέντοι πόριμον πᾶν καὶ γνώριμον· ἐπὶ πλέον ἄρα
 τὸ γνώριμον τοῦ πορίμου.</p>
-<p>πάλιν δʼ αὖ τὸ γνώριμον καὶ τὸ ῥητὸν πῇ μὲν
+               <p>πάλιν δʼ αὖ τὸ γνώριμον καὶ τὸ ῥητὸν πῇ μὲν
 <lb n="5"/> κοινωνεῖ, πῇ δὲ καὶ διαφέρετον ἀλλήλων τὸν προειρη-
 μένον τρόπον. αί γὰρ εἰρημέναι ἄλογοι γνώριμοι μέν
 εἰσιν, οὐκέτι δὲ καὶ ῥηταί· ὁ δὲ ἀριθμὸς πᾶς ῥητὸς
@@ -302,14 +308,14 @@ om Vat 17. γιγνώμενα Vat 22 διϊδεῖν] Vat. Gr. 202;
 ὦσιν. ἴσως δὲ κἀνταῦθα χαλεπόν τί ἐστιν εὑρεῖν
 ῥητὸν μέν, ἄγνωστον δέ· δοκεῖ γὰρ καὶ τοῦ ῥητοῦ
 <lb n="15"/> ἐπὶ πλέον εἶναι τὸ γνώριμον.</p>
-<p>ὅτι δὲ καὶ τὸ πόριμον καὶ τὸ ἄπορον διαφέρει τοῦ
+               <p>ὅτι δὲ καὶ τὸ πόριμον καὶ τὸ ἄπορον διαφέρει τοῦ
 τε ῥητοῦ καὶ ἀλόγου, φανερὸν ἐκ τούτων· πόριμα γὰρ
 εἶναι δυνατὸν καὶ τῶν ἀλόγων τινά, οὐδὲν δὲ τῶν
 ῥητῶν ἄλογον. ἡ δὲ συγγένεια τούτων αὐτῶν καθάπερ
 <lb n="20"/> καὶ τῶν ἄλλων παντὶ καταφανής· οὕτω μέντοι καὶ
 ταῦτα ἔχει πρὸς ἄλληλα, ὥστε τὸ πόριμον ἐπὶ πλέον
 εἶναι δοκεῖν τοῦ ῥητοῦ.</p>
-<p>ἔξεστι δὲ τῶν προειρημένων τὴν διαφορὰν ἐπισκο-
+               <p>ἔξεστι δὲ τῶν προειρημένων τὴν διαφορὰν ἐπισκο-
 πεῖν καὶ τῇδε. ῥητὸν μὲν γὰρ καὶ ἄλογον κατὰ τὴν
 <lb n="25"/> ἐπὶ τὸ μέτρον ἀναφορὰν λέγεται, οὐ πρὸς τὴν ἡμετέ-
 ραν γνῶσιν ἀναπεμπόμενον. δύναται γάρ τι ῥητὸν ὄν
@@ -318,8 +324,7 @@ om Vat 17. γιγνώμενα Vat 22 διϊδεῖν] Vat. Gr. 202;
 <note type="footnote">4. τὸ ῥητόν] τὸ πόριμον καὶ τὸ ῥηθέν Vat 5 διαφέρε-
 τον] διαφέρειτον P; διαφέρει Vat. 9 κατὰ ταὐτόν καταυτόν
 Vat v; in Vat. τα insert m. 2. 10. τῷ (pr.)] τό Vat. τῷ</note>
-
-<pb n="248"/>
+                  <pb n="248"/>
 ἄτακτον τῶν καθʼ αὑτὸ καὶ κατʼ ἰδίαν φύσιν θεω-
 ρουμένων ἐστίν, κἂν ὑφʼ ἡμῶν μήπω καταλαμβάνηται.
 πολλὰ γοῦν τεταγμένα φύσει ὕστερον Ἀρχιμήδης ἔδειξε
@@ -328,7 +333,7 @@ Vat v; in Vat. τα insert m. 2. 10. τῷ (pr.)] τό Vat. τῷ</note>
 ὥστε διαφέροι ἂν τὰ εἰρημένα ἀλλήλων, εἴπερ τὸ μὲν
 πρὸς ἡμᾶς ἔχει τὴν ἀναφοράν, τὸ δὲ πρὸς τὴν φύσιν,
 τὸ δὲ πρὸς τὸ μέτρον.</p>
-<p>διωρισμένης δὲ καὶ τῆς κοινωνίας καὶ διαφορᾶς
+               <p>διωρισμένης δὲ καὶ τῆς κοινωνίας καὶ διαφορᾶς
 <lb n="10"/> τῶν προτεθέντων ἑπόμενον ἂν εἴη λοιπόν, τί ποτέ ἐστι
 τὸ δεδομένον ἐπισκέψασθαι. ὅσοι τοίνυν τὸ καθʼ ὑπό-
 θεσιν διδόμενον ὑπὸ τοῦ προβάλλοντος οἴονται εἶναι
@@ -351,8 +356,7 @@ Vat v; in Vat. τα insert m. 2. 10. τῷ (pr.)] τό Vat. τῷ</note>
 <note type="footnote">1. τῶν] τοῦ Vat. καί] om. P. θεωρουμένων] θεω-
 ρούμενον Vat. 3. γοῦν] οὖν Vat. 4. πρὶν οὐ] ὠρίνου Vat.;
 σωρίνου cod. Vat. Gr. 202. 10 ἐστι] ἐστιν Pv. 12. οἴονται]</note>
-
-<pb n="250"/>
+                  <pb n="250"/>
 εὑρίσκειν τὸν τέλειον τοῦ δεδομένου ὁρισμόν. δῆλον
 δέ, ὅτι καὶ ἐξισάζειν ἤτοι ἀντιστρέφειν αὐτὸν δεήσει
 πρὸς τὸ ὁριστόν· καὶ γὰρ τοῦτο ὑπάρχειν δεῖ τοῖς
@@ -382,10 +386,9 @@ Vat v; in Vat. τα insert m. 2. 10. τῷ (pr.)] τό Vat. τῷ</note>
 ἀτελής· οὐ μόνα γὰρ τὰ τοιαῦτά ἐστι δεδομένα. καὶ
 ὁ τεταγμένον καὶ ῥητὸν ὁμοίως ἐλλειπῶς περιέχει τὸ
 <note type="footnote">4. ἀποδεδομένοις Vat. 12 ἱκανός] bis v. ὁ] om. Pv.</note>
-<note type="footnote">20. πόριμον] πόρισμιον P. 25 ἔχων] ἔχον Vat. 26. τε-
+                  <note type="footnote">20. πόριμον] πόρισμιον P. 25 ἔχων] ἔχον Vat. 26. τε-
 ταγμένον] -ος v λέγων] λέγω v. 28 ὁ] om. v.</note>
-
-<pb n="252"/>
+                  <pb n="252"/>
 δεδομένον. ὁ δὲ τὸ γνώριμον ἅμα καὶ τεταγμένον διὰ
 τὸ ὑπερβάλλειν τὸ προκείμενον οὐχ ὑγιὴς ἔσται· οὐδὲ
 γὰρ πᾶν τὸ τοιοῦτο δεδομένον ἐστίν. μόνοι δὴ λοιπὸν
@@ -404,7 +407,7 @@ Vat v; in Vat. τα insert m. 2. 10. τῷ (pr.)] τό Vat. τῷ</note>
 εἰδῶν αὐτοῦ ἕκαστον, καίτοι ἐν τῇ γεωμετρικῇ στοι-
 χειώσει φαίνεται πρὸ τῶν εἰδῶν τῆς γραμμῆς τὴν
 ἁπλῶς γραμμὴν ὁρισάμενος καὶ τὰ ἄλλα ὁμοίως.</p>
-<p>διακριθέντος τοίνυν κοινότερον καὶ ὡς πρὸς τὴν
+               <p>διακριθέντος τοίνυν κοινότερον καὶ ὡς πρὸς τὴν
 <lb n="20"/> παροῦσαν χρείαν τοῦ δεδομένου ἐφεξῆς ἂν εἴη τὸ χρή-
 σιμον τῆς περὶ αὐτοῦ πραγματείας ἀποδοῦναι. ἔστι
 δὴ καὶ τοῦτο τῶν πρὸς ἄλλο ἐχόντων τὴν ἀναφοράν·
@@ -417,13 +420,13 @@ Vat v; in Vat. τα insert m. 2. 10. τῷ (pr.)] τό Vat. τῷ</note>
 Vat. 9. ἐστίν] ἐστί Vat. 10. ὑποθέσεσιν Vat. 11. καὶ ὁ]
 om. Vat. 13. παραλιμπάνει] scripsi; περιλιμπάνει Pv, περι-
 λειμπάνει Vat. 18. ὁρισάμενος] ὁρκόμενος Pv.</note>
-
-<pb n="254"/>
+                  <pb n="254"/>
 εὕρεσις ἡ ἀνάλυσις καὶ ὅπως πρὸς εὕρεσιν τῆς τῶν
 ὁμοίων ἀποδείξεως ἡμῖν συμβάλλεται καὶ ὅτι μεῖζόν
 ἐστι τὸ δύναμιν ἀναλυτικὴν κτήσασθαι τοῦ πολλὰς
 ἀποδείξεις τῶν ἐπὶ μέρους ἔχειν.</p>
-<lb n="5"/> <p>εἰς πάσας τοίνυν τὰς τοιαύτας ἐπιστήμας χρησίμη
+               <lb n="5"/>
+               <p>εἰς πάσας τοίνυν τὰς τοιαύτας ἐπιστήμας χρησίμη
 οὖσα ἡ περὶ τοῦ δεδομένου θεωρία, ἐπείπερ καὶ εἰς
 ἀνάλυσιν μέγα συμβάλλεται, εἰκότως ἂν ῥηθείη ἀνά-
 γεσθαι οὐχ ὑπὸ μίαν τινὰ ἐπιστήμην, ἀλλʼ εἰς τὴν
@@ -446,11 +449,10 @@ om. Vat. 13. παραλιμπάνει] scripsi; περιλιμπάνει Pv, π�
 <lb n="25"/> ἐφήρμοσεν, ὃν τρόπον ἐποίησε καὶ ἐπὶ τῶν καθόλου
 λόγων ὡς ἐπὶ μεγεθῶν ἰδίως αὐτοὺς πραγματευσά-
 μενος ἐν τῷ πέμπτῳ βιβλίῳ τῆς ἐπιπέδου.</p>
-<p>κοινῶς μὲν οὖν εἴρηται, τί τὸ δεδομένον καὶ ὑπὸ
+               <p>κοινῶς μὲν οὖν εἴρηται, τί τὸ δεδομένον καὶ ὑπὸ
 <note type="footnote">6. καί] comp P; om. Vat. 7. μέγα συμβάλλεται] μετα-
 συμβάλλεται Pv. εἰκότως] εἰκός Vat. 9. ἐστιν] ἐστι P.</note>
-
-<pb n="256"/>
+                  <pb n="256"/>
 ποίαν ἐπιστήμην ἀνάγεται καὶ ὅτι χρησιμωτάτη ἐστὶν
 ἡ περὶ αὐτοῦ θεωρία. προσκείσθω δὲ τοῖς εἰρημένοις
 καὶ ἡ περιγραφὴ τῆς περὶ αὐτοῦ ἐπιστήμης. ἔσται δὴ
@@ -476,15 +478,11 @@ om. Vat. 13. παραλιμπάνει] scripsi; περιλιμπάνει Pv, π�
 διδασκαλίας οὐ τῷ κατὰ σύνθεσιν ἐνταῦθα ἡκολού
 θησεν, ἀλλὰ τῷ κατὰ ἀνάλυσιν, ὡς ὁ Πάππος ἱκανῶς
 <lb n="25"/> ἀπέδειξεν ἐν τοῖς εἰς τὸ βιβλίον ὑπομνήμασιν.</p>
-<note type="footnote">14. τό] in ras. v; τωι P. 15. μερικῶς] μερικων P. 19.
+               <note type="footnote">14. τό] in ras. v; τωι P. 15. μερικῶς] μερικων P. 19.
 γεγένηται] γέγονεν Vat. 20. μεγέθη] μεγέθει Vat. v; in Vat
 corr. m. 2. καί (alt.)] om. v.</note>
-</div>
-
-
-
-
-</div>
-</body>
-</text>
+            </div>
+         </div>
+      </body>
+   </text>
 </TEI>

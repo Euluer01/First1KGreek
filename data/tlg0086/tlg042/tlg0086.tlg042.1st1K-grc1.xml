@@ -1,71 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-	<teiHeader>
-    
-		<fileDesc>
-			<titleStmt>
-				<title xml:lang="lat">De somno et vigilia</title>
-				<author>Aristotle</author>
-				<editor>Immanuel Bekker</editor>
-				<funder>Andrew W. Mellon Foundation</funder>
-				<respStmt>
-					<persName xml:id="DDD">Digital Divide Data</persName>
-					<resp>Keyboarding</resp>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De somno et vigilia</title>
+            <author>Aristotle</author>
+            <editor>Immanuel Bekker</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Keyboarding</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
 					Foundation</authority>
-				<publisher>University of Leipzig</publisher>
-				<pubPlace>Germany</pubPlace>
-				<idno type="filename">tlg0086.tlg042.1st1K-grc1.xml</idno>
-				<availability>
-					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0086.tlg042.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
 						Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-				</availability>
-				<date>2016</date>
-			</publicationStmt>
-			<sourceDesc>
-				<biblStruct>
-					<monogr>
-						<title xml:lang="lat">Aristotelis Opera</title>
-						<author>Aristotle</author>
-						<editor>Immanuel Bekker</editor>
-						<imprint>
-							<publisher>Oxford University Press</publisher>
-							<pubPlace>Oxford</pubPlace>
-							<biblScope unit="vol">3</biblScope>
-							<biblScope unit="pp" from="286" to="298">286-298</biblScope>
-							<date>1837</date>
-						</imprint>
-					</monogr>
-					<ref target="https://hdl.handle.net/2027/nyp.33433022676005?urlappend=%3Bseq=298">HathiTrust</ref>
-				</biblStruct>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0086.tlg042.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Aristotelis Opera</title>
+                  <author>Aristotle</author>
+                  <editor>Immanuel Bekker</editor>
+                  <imprint>
+                     <publisher>Oxford University Press</publisher>
+                     <pubPlace>Oxford</pubPlace>
+                     <biblScope unit="vol">3</biblScope>
+                     <biblScope unit="pp" from="286" to="298">286-298</biblScope>
+                     <date>1837</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/nyp.33433022676005?urlappend=%3Bseq=298">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
 				Architecture.</p>
-			  <refsDecl n="CTS">
-				<cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-			</refsDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="greek">Greek</language>
-			</langUsage>
-		</profileDesc>
-	</teiHeader>
-	<text>
-		<body>
-
-			<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0086.tlg042.1st1K-grc1">
-				<pb n="286"/>
-
-				<div type="textpart" subtype="chapter" n="1">
-					<head>ΠΕΡΙ ΥΠΝΟΥ ΚΑΙ ΕΓΡΗΓΟΡΣΕΩΣ.</head>
-					<p>Περὶ δὲ ὕπνου καὶ ἐγρηγόρσεως σκεπτέον, <lb/>τίνα τε τυγχάνει ὄντα, καὶ πότερον ἴδια
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="greek">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0086.tlg042.1st1K-grc1">
+         <pb n="286"/>
+         <div n="1" type="chapter">
+            <head>ΠΕΡΙ ΥΠΝΟΥ ΚΑΙ ΕΓΡΗΓΟΡΣΕΩΣ.</head>
+            <p>Περὶ δὲ ὕπνου καὶ ἐγρηγόρσεως σκεπτέον, <lb/>τίνα τε τυγχάνει ὄντα, καὶ πότερον ἴδια
 						τῆς ψυχῆς ἢ τοῦ <lb/>σώματος ἢ κοινά, κἂν ᾖ κοινά, τίνος μορίου τῆς ψυχῆς ἢ <lb/>τοῦ
 						σώματος· καὶ διὰ τίν’ αἰτίαν ὑπάρχει τοῖς ζῴοις· καὶ <lb/>πότερον ἅπαντα κεκοινώνηκεν
 						αὐτῶν ἀμφοτέρων, ἢ τὰ μὲν <lb/>ὕπνου τὰ δὲ θατέρου μόνον, ἢ τὰ μὲν οὐδετέρου τὰ δ’
@@ -129,9 +136,9 @@
 						τούτων. <lb/>Σημεῖον δ’ ὅτι καὶ τὸ ἔργον τὸ αὑτοῦ ποιεῖ τὸ θρεπτικὸν <lb/>μόριον ἐν τῷ
 						καθεύδειν μᾶλλον ἢ ἐν τῷ ἐγρηγορέναι· τρέφεται <lb/>γὰρ καὶ αὐξάνεται τότε μᾶλλον, ὡς
 						οὐδὲν προσδεόμενα <lb/>πρὸς ταῦτα τῆς αἰσθήσεως. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="2">
-					<p>Διὰ τί δὲ καθεύδει καὶ ἐγρήγορε, καὶ διὰ ποίαν τιν’ αἴσθησιν <lb/>ἢ ποίας, εἰ διὰ
+         </div>
+         <div n="2" type="chapter">
+            <p>Διὰ τί δὲ καθεύδει καὶ ἐγρήγορε, καὶ διὰ ποίαν τιν’ αἴσθησιν <lb/>ἢ ποίας, εἰ διὰ
 						πλείους, σκεπτέον. Ἐπεὶ δ’ ἔνια <lb/>μὲν τῶν ζῴων ἔχει τὰς αἰσθήσεις πάσας, ἔνια δ’ οὐκ
 						ἔχουσιν, <lb/>οἷον ὄψιν, τὴν δ’ ἁφὴν καὶ τὴν γεῦσιν ἅπαντ’ ἔχει, <lb/>πλὴν εἴ τι τῶν
 						ζῴων ἀτελές (εἴρηται δὲ περὶ αὐτῶν ἐν τοῖς <lb/>περὶ ψυχῆς), ἀδύνατον δ’ ἐστὶν ἁπλῶς
@@ -200,9 +207,9 @@
 						τρόπον τινά. Λεκτέον δὲ περὶ αὐτῶν ὕστερον. <lb/>Διότι δὲ τὰ μὲν ἐνύπνια μνημονεύουσιν
 						ἐγερθέντες, <lb/>τὰς δ’ ἐγρηγορικὰς πράξεις οὐ μνημονεύουσιν, ἐν τοῖς προβληματικοῖς
 						<lb/>εἴρηται. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="3">
-					<p>Ἐχόμενον δὲ τῶν εἰρημένων ἐστὶν ἐπελθεῖν τίνων γινομένων <lb/>καὶ πόθεν ἡ ἀρχὴ τοῦ
+         </div>
+         <div n="3" type="chapter">
+            <p>Ἐχόμενον δὲ τῶν εἰρημένων ἐστὶν ἐπελθεῖν τίνων γινομένων <lb/>καὶ πόθεν ἡ ἀρχὴ τοῦ
 						πάθους γίγνεται, τοῦ τ’ ἐγρηγορέναι <lb/>καὶ τοῦ καθεύδειν. Φανερὸν δὴ ὅτι ἐπεὶ
 						ἀναγκαῖον <lb/>τῷ ζῴῳ, ὅταν αἴσθησιν ἔχῃ, τότε πρῶτον τροφήν τε <lb/>λαμβάνειν καὶ
 						αὔξησιν, τροφὴ δ’ ἐστὶ πᾶσιν ἡ ἐσχάτη τοῖς <lb/>μὲν ἐναίμοις ἡ τοῦ αἵματος φύσις τοῖς δ’
@@ -301,8 +308,7 @@
 						πρώτου αἰσθητηρίου <lb/>κατάληψις πρὸς τὸ μὴ δύνασθαι ἐνεργεῖν, ἐξ ἀνάγκης μὲν
 						<lb/>γινόμενος (οὐ γὰρ ἐνδέχεται ζῷον εἶναι μὴ συμβαινόντων <lb/>τῶν ἀπεργαζομένων
 						αὐτό,) ἕνεκα δὲ σωτηρίας· σώζει γὰρ <lb/>ἡ ἀνάπαυσις. </p>
-				</div>
-			</div>
-		</body>
-	</text>
+         </div>
+      </body>
+   </text>
 </TEI>

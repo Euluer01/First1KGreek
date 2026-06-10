@@ -1,107 +1,120 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">
-        <fileDesc>
-            <titleStmt>
-                <title xml:lang="lat">Physiognomonica</title>
-                <author xml:lang="lat">Pseudo-Polemon</author>
-                <editor>Richard Foerster</editor>
-                <funder>Harvard Library Arcadia Fund</funder>
-                <principal>Gregory Crane</principal>
-                <respStmt>
-                    <persName xml:id="DDD">Digital Divide Data</persName>
-                    <resp>Corrected and encoded the text</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Gregory Crane</persName>
-                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Matt Munson</persName>
-                    <resp>Project Manager (University of Leipzig)</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Annette Gessner</persName>
-                    <resp>Project Assistant (University of Leipzig)</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Thibault Clérice</persName>
-                    <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Bruce Robertson</persName>
-                    <resp>Technical Advisor</resp>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <authority>Harvard College Library</authority>
-<idno type="filename">tlg2233.tlg002.1st1K-grc1.xml</idno>
-<availability>
-<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Physiognomonica</title>
+            <author xml:lang="lat">Pseudo-Polemon</author>
+            <editor>Richard Foerster</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg2233.tlg002.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2017</date>
-                <publisher>Harvard College Library</publisher>
-                <pubPlace>United States</pubPlace>
-            </publicationStmt>
-            <sourceDesc>
-                <listBibl>
-                    <biblStruct>
-                        <monogr>
-                            <title xml:lang="lat">Scriptores physiognomonici Graeci et Latini</title>
-                            <editor>
-                                <persName>
-                                    <name>Richard Foerster</name>
-                                </persName>
-                            </editor>
-                            <author ref="urn:cts:greekLit:tlg2233" xml:lang="lat">Pseudo-Polemon</author>
-                            <imprint>
-                                <publisher>Teubner</publisher>
-                                <pubPlace>Leipzig</pubPlace>
-                                <date>1893</date>
-                            </imprint>
-                            <biblScope unit="volume">1</biblScope>
-                        </monogr>
-                        <ref target="https://babel.hathitrust.org/cgi/pt?id=umn.31951p000664493">Hathi Trust</ref>
-                    </biblStruct>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>Text encoded in accordance with the latest EpiDoc standards</p>
-            <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-                <language ident="lat">Latin</language>
-            </langUsage>
-        </profileDesc>
-        <revisionDesc>
-            <change/>
-        </revisionDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2233.tlg002.1st1K-grc1">
-<pb n="427"/>
-<head>PSEUDOPOLEMONIS PHYSIOGNOMONICA.</head>
-<div type="textpart" subtype="section" n="70"><p>[p. 298 Fr.] Θυμώδους σημεῖα τάδε εἰσίν· ὀρθὸς
+            </availability>
+            <date>2017</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg2233.tlg002.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Scriptores physiognomonici Graeci et Latini</title>
+                     <editor>
+                        <persName>
+                           <name>Richard Foerster</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg2233" xml:lang="lat">Pseudo-Polemon</author>
+                     <imprint>
+                        <publisher>Teubner</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1893</date>
+                     </imprint>
+                     <biblScope unit="volume">1</biblScope>
+                  </monogr>
+                  <ref target="https://babel.hathitrust.org/cgi/pt?id=umn.31951p000664493">Hathi Trust</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="section"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-section"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg2233.tlg002.1st1K-grc1">
+         <pb n="427"/>
+         <head>PSEUDOPOLEMONIS PHYSIOGNOMONICA.</head>
+         <div n="70" type="section">
+            <p>[p. 298 Fr.] Θυμώδους σημεῖα τάδε εἰσίν· ὀρθὸς
 τῷ σχήματι, εὔπλευρος, εὔρυθμος, ἐπίπυρρος, ὠμοπλάται
 [p. 299] διεστηκότες μεγάλοι καὶ ἐγκρατεῖς, λεῖος τὰ περὶ
 στῆθος καὶ βουβῶνα, δασυπώγων, τὰ νῶτα εὐρύς, ὁ περί-
 <lb n="5"/> τροχος τῶν τριχῶν κάτω βλέπων, καὶ ὅσοις τὸ περὶ τὴν
 κεφαλὴν δέρμα περιίσταται, καὶ οἱ στρογγυλοπρόσωποι, καὶ
 ὀφρύες οἷαι τῶν στρυφνῶν, καὶ ῥινῶν κοιλότης.</p>
-</div>
-<div type="textpart" subtype="section" n="71"><p>Φιλολοιδόρου σημεῖα· τὸ ἄνω χεῖλος μετέωρον καὶ
+         </div>
+         <div n="71" type="section">
+            <p>Φιλολοιδόρου σημεῖα· τὸ ἄνω χεῖλος μετέωρον καὶ
 τὸ κάτω προπετές, ὑπέρυθροι [p.30] ἐπίπυρροι· ἀναφέρεται
 <lb n="10"/> ἐπὶ τοὺς κύνας ἴδοι δʼ ἄν τις καὶ ἐπὶ τῶν γεγηρακότων ἵππων.</p>
-</div>
-<div type="textpart" subtype="section" n="72"><p>Λάγνου σημεῖα· λευκόχρως, δασὺς τῇ ὑπήνῃ, εὐθείας
+         </div>
+         <div n="72" type="section">
+            <p>Λάγνου σημεῖα· λευκόχρως, δασὺς τῇ ὑπήνῃ, εὐθείας
 καὶ παχείας τὰς τρίχας ἔχων, λιπαρὸν τὸ ὄμμα καὶ μάργον,
 <note type="footnote">1. Θυμώδους — εἰσίν tituli loco x cf. Pseudarist. p. 34, 11 sq.
 εἰσίν] εἰσι C Ro om. P 2. ἐπίπυρρος Sylb επίπυρος x
@@ -124,8 +137,7 @@ Pseudarist. p. 38, 8 sq. in C hoc caput post Λάλου et Φιλύπνου
 σημεῖα (c. 73 et 74) extat λευκόχρως| λευκόχρωος C Rο 12.
 μάργον] ἀμαρύσσον u
 </note>
-
-<pb n="428"/>
+               <pb n="428"/>
 σκέλη λεπτὰ καὶ νευρώδη καὶ ὅλως ὀρνιθώδη, δασύτης σκε-
 λῶν, γαστρὸς καὶ ὀμμάτων λιπαρότης, καὶ τὸ ἀνεσπάσθαι
 τὸ γένειον πρὸς τὴν ῥῖνα καὶ περιφέρειαν κοίλην ἔχειν τὸν
@@ -133,23 +145,29 @@ Pseudarist. p. 38, 8 sq. in C hoc caput post Λάλου et Φιλύπνου
 Σωκράτης ὁ καλός. καὶ οἷς ὑγροὶ οἱ ὀφθαλμοί, οἱ τοιοῦτοι <lb n="5"/>
 λάγνοι καὶ οἷς ἡ φλὲψ ἐν τῷ βραχίονι, καὶ οἱ ῥικνοὶ τὰς
 κνήμας.</p>
-</div>
-<div type="textpart" subtype="section" n="73"><p>Λάλου σημεῖα· οἱ τὰ ἄνω μείζω ἔχοντες καὶ γλα-
+         </div>
+         <div n="73" type="section">
+            <p>Λάλου σημεῖα· οἱ τὰ ἄνω μείζω ἔχοντες καὶ γλα-
 φυροὶ τῷ εἴδει καὶ δασεῖς τὰ περὶ τὴν κοιλίαν.</p>
-</div>
-<div type="textpart" subtype="section" n="74"><p>Φιλύπνου [ p. 32] σημεῖα· οἱ τὰ ἄνω ἔχοντες <lb n="10"/>
+         </div>
+         <div n="74" type="section">
+            <p>Φιλύπνου [ p. 32] σημεῖα· οἱ τὰ ἄνω ἔχοντες <lb n="10"/>
 μείζω καὶ ὑπνώδεις καὶ θερμοὶ καὶ εὔεκτον σάρκα ἔχοντες.</p>
-</div>
-<div type="textpart" subtype="section" n="75"><p>Φθονεροῦ σημεῖα· οἱ τὰ ἀριστερὰ μείζω ἔχοντες
+         </div>
+         <div n="75" type="section">
+            <p>Φθονεροῦ σημεῖα· οἱ τὰ ἀριστερὰ μείζω ἔχοντες
 καὶ οἷς αἱ ὀφρύες ἐπὶ τὰ βλέφαρα καθήκουσιν.</p>
-</div>
-<div type="textpart" subtype="section" n="76"><p>Ὅσοῖς ὁ σπόνδυλος ἐξέστηκε κατὰ τὴν συναφὴν
-τοῦ τραχήλου, [ p. 303] ὑβρισταί· ἀναφέρεται ἐπὶ τοὺς ὗς.</p><lb n="15"/>
-</div>
-<div type="textpart" subtype="section" n="77"><p>Οἱ τῶν χειλῶν τὸ κάτω τοῦ ἄνω προβεβλημένον
+         </div>
+         <div n="76" type="section">
+            <p>Ὅσοῖς ὁ σπόνδυλος ἐξέστηκε κατὰ τὴν συναφὴν
+τοῦ τραχήλου, [ p. 303] ὑβρισταί· ἀναφέρεται ἐπὶ τοὺς ὗς.</p>
+            <lb n="15"/>
+         </div>
+         <div n="77" type="section">
+            <p>Οἱ τῶν χειλῶν τὸ κάτω τοῦ ἄνω προβεβλημένον
 ἔχοντες βλάκες, μετέωροι, ἀσθενεῖς, μοχθηροί· ἀναφέρεται
 ἐπὶ τοὺς ὄνους.</p>
-<note type="footnote">1. ὅλως C et Sylb. ὅλος P Ro ὀρνιθώδη Sylb. ὀρνι-
+            <note type="footnote">1. ὅλως C et Sylb. ὅλος P Ro ὀρνιθώδη Sylb. ὀρνι-
 θώδης x δασύτης | δασύτις C δασύτης σκελῶν, γαστρὸς καὶ]
 num δασύτης σκελῶν καὶ γαστρός, 3. περιφέρειαν| περιφερίαν C
 4. γενείου| μετώτου? Schneider coll. p. 66, 11 sq. at cf pbys.
@@ -172,12 +190,12 @@ parum quadrare videntur, cf. de Pol. phys. p. 10 not. 1 16.
 μωροί, ut Pseudarist. p. 64, 15? μοχθηροί ,,videtur abun-
 dare“ Vulcan.
 </note>
-
-<pb n="429"/>
-</div>
-<div type="textpart" subtype="section" n="78"><p>Οἱ τὴν ῥῖνα ἄγαν πλατεῖαν ἔχοντες δειλοί· ἀνα-
+            <pb n="429"/>
+         </div>
+         <div n="78" type="section">
+            <p>Οἱ τὴν ῥῖνα ἄγαν πλατεῖαν ἔχοντες δειλοί· ἀνα-
 φέρεται ἐπὶ τοὺς ὗς.</p>
-<p>Οἱ τὴν ῥῖνα ἄγαν βραχεῖαν ἔχοντες ῥᾴθυμοι· ἀναφέρεται
+            <p>Οἱ τὴν ῥῖνα ἄγαν βραχεῖαν ἔχοντες ῥᾴθυμοι· ἀναφέρεται
 [p. 304] ἐπὶ τοὺς βοῦς ἢ τῶν ὀρνίθων τοὺς πλατυρύγχους.
 <lb n="5"/> οἱ τὴν ῥῖνα εὐθεῖαν ἔχοντες πρόγλωσσοι· ἀναφέρεται ἐπὶ τὸ
 θῆλυ καὶ τὰς χῆνας. οἱ τὴν ῥῖνα βραχεῖαν καὶ σιμὴν
@@ -185,16 +203,18 @@ dare“ Vulcan.
 καὶ τοὺς ἀγρίους ὗς. ὅσοις μυκτῆρες πεπταμένοι καὶ σινμοί,
 θυμώδεις· ἀναφέρεται ἐπὶ τὸ πάθος τὸ ἐν τῷ θυμῷ γινό-
 <lb n="10"/> μενον· ἴδοι δʼ ἄν τις καὶ ἐπὶ τῶν γεννάδων ἵππων.</p>
-</div>
-<div type="textpart" subtype="section" n="79"><p>Οἱ τὸ πρόσωπον σαρκῶδες ἔχοντες [p. 305] ῥᾴθυμοι·
+         </div>
+         <div n="79" type="section">
+            <p>Οἱ τὸ πρόσωπον σαρκῶδες ἔχοντες [p. 305] ῥᾴθυμοι·
 ἀναφέρεται ἐπὶ τὸ θῆλυ καὶ τοὺς βοῦς. οἱ τὸ πρόσωπον ἄγαν
 ὀστῶδες ἔχοντες ἐπίπονοι καὶ δειλοὶ καὶ μικρόψυχοι· ἀνα-
 φέρεται ἐπὶ τοὺς ὄνους καὶ πιθήκους καὶ ἐλάφους. οἱ τὸ
 <lb n="15"/> πρόσωπον ἄγαν μικρὸν ἔχοντες κακοῦργοι· ἀναφέρεται ἐπὶ
 τοὺς πιθήκους. οἱ τὸ πρόσωπον μικροπρεπὲς ἔχοντες μικρό-
 ψυχοι, ἀνελεύθεροι.</p>
-</div>
-<div type="textpart" subtype="section" n="80"><p>Οἱ μεγάλα ἔχοντες χείλη ἀσελγεῖς, οἷς δὲ μεῖζον τὸ
+         </div>
+         <div n="80" type="section">
+            <p>Οἱ μεγάλα ἔχοντες χείλη ἀσελγεῖς, οἷς δὲ μεῖζον τὸ
 ἄνω τοῦ κάτω, ἄψυχοι· οἷς δὲ ἔμπαλιν τοῦ ἄνω τὸ κάτω,
 <note type="footnote">1. ante Οἱ titulus δειλοῦ (δηλοῦ PC) σημεῖα x ἄγαν]
 num ἄκροθεν, ut Pseudarist. p. 66, 2? δειλοί Ro δηλοί C
@@ -217,19 +237,20 @@ p. 68, 5, ut Petreius vertit: hoc praesertim ad simiarum na-
 turam refertur (cf. de Pol. phys. p. 26) ὄνους PRo 18. μεῖζον
 Ro μείζω PC 19. τοῦ] τῶ C
 </note>
-
-<pb n="430"/>
+               <pb n="430"/>
 ἐναντίον βλάκες. ὑώδεις δέ εἰσιν, οἷς τὰ κατὰ τοὺς κυνό-
 δοντας ἐπῆρται, οἷς δὲ τὰ κατὰ τοὺς τομεῖς, κυνώδεις.</p>
-</div>
-<div type="textpart" subtype="section" n="81"><p>[p 306] Τῶν ἐρώντων ὑπάρχει σημεῖα τοιαῦτα· ὀφθαλ-
+         </div>
+         <div n="81" type="section">
+            <p>[p 306] Τῶν ἐρώντων ὑπάρχει σημεῖα τοιαῦτα· ὀφθαλ-
 μοὶ κοῖλοι οὐ δακρύοντες, φαινόμενοι δὲ ὡς ἂν ἡδονῆς πεπλη-
 σμένοι εἰσίν, κινεῖται δὲ αὐτοῖς καὶ τὰ βλέφαρα πυκνά, τῶν <lb n="5"/>
 τοῦ σώματος μερῶν συμπιπτόντων μόνοις τοῖς ἐρῶσιν οὐ
 συμπίπτουσιν. πορνεία ἀνδρὸς καὶ γυναικὸς ἐν μετεωρι-
 σμοῖς ὀφθαλμῶν καὶ ἐν τοῖς βλεφάροις γινώσκεται.</p>
-</div>
-<div type="textpart" subtype="section" n="83"><p>[p. 307 Fr.] Γυναῖκες ἑταιρίστριαι, γυναικώδει φίλαν-
+         </div>
+         <div n="83" type="section">
+            <p>[p. 307 Fr.] Γυναῖκες ἑταιρίστριαι, γυναικώδει φίλαν-
 δροι, ἀκάθαρτοι, αἷς αἱ κνῆμαι [p. 38] περὶ τὸ σφυρὸν παχεῖαι <lb n="10"/>
 καὶ οἱ δάκτυλοι τῶν ποδῶν μικρὸν ἀπεσχισμένοι, ὥσπερ τοῖς στε-
 <note type="footnote">1. ὑώδεις scripsi coll. Pseudarist. p. 64, 12 sq. κυνόδοντες x
@@ -260,21 +281,22 @@ p. 30, 7 et Suid. s. v. μισήτη, ubi falso παρά legitur (Arist. Byz.
 p. 169 Nauck) πρὸς x 11. μικρὸν] μικρῶνὸ C στεγανόποσι
 Vulcan. et Struv. στενόποσι PRo στενόμασιπο C
 </note>
-
-<pb n="431"/>
+               <pb n="431"/>
 γανόποσι τῶν ὀρνίθων, καὶ αἷς σκαφοειδὴς ὁ περίδρομος τῆς
 κεφαλῆς.</p>
-</div>
-<div type="textpart" subtype="section" n="85"><p>[ p.309] Οἱ στενόποδες ἠλίθιοι, δειλοί οἱ δὲ μὴ ἔχοντες
+         </div>
+         <div n="85" type="section">
+            <p>[ p.309] Οἱ στενόποδες ἠλίθιοι, δειλοί οἱ δὲ μὴ ἔχοντες
 τὸ [p. 310] ἐντὸς κοῖλον τοῦ ποδός, ἀλλʼ ὅλῳ βαίνοντες παν-
 <lb n="5"/> οῦργοι, ὥσπερ καὶ τὴν ἀλώπεκα λόγος ἔχει.</p>
-</div>
-<div type="textpart" subtype="section" n="86"><p>Οἱ βραχυδάκτυλοι καὶ παχυδάκτυλοι χειρῶν τε καὶ
+         </div>
+         <div n="86" type="section">
+            <p>Οἱ βραχυδάκτυλοι καὶ παχυδάκτυλοι χειρῶν τε καὶ
 ποδῶν ἠλίθιοι· πάντως δὲ οὐ τούτους ὑπολαμβάνειν τοῦτο,
 ἀλλὰ εἰ σῶμα μήτε βραχεῖς μήτε παχεῖς ὦσιν, ἀμέλει [δὲ]
 οὕτως ὑπολαμβάνειν. οἱ συμπεφυκότας τοὺς δακτύλους ἔχον-
 <lb n="10"/> τες δειμαλέοι, ὥσπερ καὶ οἱ κύνες εἰσίν.</p>
-<note type="footnote">1. αἷς σκαφοειδὴς ὁ περίδρομος Sylb. et Vulcan, nisi quod
+            <note type="footnote">1. αἷς σκαφοειδὴς ὁ περίδρομος Sylb. et Vulcan, nisi quod
 hic σκαφιόδης praebet οἱ σκαφοειδεῖς ὥσπερ περίδρομος x 2.
 inter κεφαλῆς et οἱ στενόποδες sequitur in x cap. 84 περὶ εὐ-
 νούχων p. 351, 14 sq. 3. ante Οἱ στενόποδες titulus in x
@@ -290,10 +312,7 @@ Ro εἰ inser. Ro ἢν Schneider σῶμα] σώματι Schneider
 ὑπολαμβάνων x ὑπολαμβάνων ἔσῃ Vulcan. 10. δειμαλέοι
 scripsi coll. Pseudarist. p. 54, 9 δείλεοι PC δειλοὶ Ro καὶ
 om. Ro post εἰσίν x Τέλος</note>
-
-
-            </div>
-            </div>
-</body>
-</text>
+         </div>
+      </body>
+   </text>
 </TEI>

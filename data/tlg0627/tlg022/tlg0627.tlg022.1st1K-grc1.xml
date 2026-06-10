@@ -1,99 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">
-    
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">De liquidorum usu</title>
-                <author>Hippocrates</author>
-                <editor>Émile Littré</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De liquidorum usu</title>
+            <author>Hippocrates</author>
+            <editor>Émile Littré</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0627.tlg022.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0627.tlg022.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="fre">Oeuvres complètes d'Hippocrate</title>
-                        <author>Hippocrates</author>
-                        <editor>Émile Littré</editor>
-                        <imprint>
-                            <publisher>Baillière</publisher>
-                            <pubPlace>Paris</pubPlace>
-                            <biblScope unit="volume">6</biblScope>
-                            <biblScope unit="pp" from="118" to="136">118-136</biblScope>
-                            <date>1849</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/ucm.5321352149?urlappend=%3Bseq=126">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0627.tlg022.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="fre">Oeuvres complètes d'Hippocrate</title>
+                  <author>Hippocrates</author>
+                  <editor>Émile Littré</editor>
+                  <imprint>
+                     <publisher>Baillière</publisher>
+                     <pubPlace>Paris</pubPlace>
+                     <biblScope unit="volume">6</biblScope>
+                     <biblScope unit="pp" from="118" to="136">118-136</biblScope>
+                     <date>1849</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/ucm.5321352149?urlappend=%3Bseq=126">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language><language ident="lat">Latin</language><language ident="fre">French</language>            
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0627.tlg022.1st1K-grc1">
-                <pb n="118"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΠΕΡΙ ΥΓΡΩΝ ΧΡΗΣΙΟΣ.</head>
-                    <p>1. Ὕδωρ ποτὸν, ἁλμυρὸν, θάλασσα. Ποτὸν μὲν, κατ’ ἰητρεῖον <lb/>κράτιστον· καὶ
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+            <language ident="fre">French</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0627.tlg022.1st1K-grc1">
+         <pb n="118"/>
+         <div n="1" type="chapter">
+            <head>ΠΕΡΙ ΥΓΡΩΝ ΧΡΗΣΙΟΣ.</head>
+            <p>1. Ὕδωρ ποτὸν, ἁλμυρὸν, θάλασσα. Ποτὸν μὲν, κατ’ ἰητρεῖον <lb/>κράτιστον· καὶ
                         γὰρ σιδηρίοισι καὶ χαλκείοισι κράτιστον, καὶ φαρμάκοισι <lb/>τοῖσι
                         πλείστοισι παλαιουμένοισι κοινότατον. Ἐς δὲ χρῶτα <lb/>γνῶναι δεῖ, ὅτι τοῦτο
                         ἢ τέγξει ἢ ψύξει ἢ θέρμῃ, ἄλλῳ δὲ οὐδενὶ ὠφελέει <lb/>ἢ βλάπτει ποτόν. Ὅπου
@@ -126,11 +135,10 @@
                         μελασμοὺς, <lb/>ῥίγεα πυρετώδεα. Αἱ μὲν μετριότητες ἐκ τούτων. Τὰ δ’ ἄλλα
                         βλάπτει <lb/>καὶ ὠφελέει τὰ εἰρημένα ἡδονῇσι καὶ εὐφορίῃσι καὶ ἀχθηδόσι καὶ
                         <lb/>δυσφορίῃσιν, αἳ καθ’ ἓν ἕκαστον αὐτῶν ὁμολογοῦσαι φαίνονται. </p>
-                </div>
-                <pb n="122"/>
-
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>2. Ὑγιὲς σῶμα, τὸ μὲν ἐν σκέπῃ εἰθισμένον, ὅτι ἄηθες, ὅτι <lb/>προσωτάτω τοῦ
+         </div>
+         <pb n="122"/>
+         <div n="2" type="chapter">
+            <p>2. Ὑγιὲς σῶμα, τὸ μὲν ἐν σκέπῃ εἰθισμένον, ὅτι ἄηθες, ὅτι <lb/>προσωτάτω τοῦ
                         οἰκείου θάλπεος, ἐγγύτατα δὲ τοῦ ἀλλοτρίου ψύχεος, <lb/>διὰ ταῦτ’ ἄρα τῷ
                         θερμῷ ἥδεται καὶ φέρειν δύναται. Ἐγκέφαλος καὶ <lb/>ὅσα ἀπὸ τούτου, ψυχρῷ
                         μὲν ἄχθεται, θερμῷ δ’ ἥδεται, καὶ ἢν ἄρα <lb/>ᾖ ψυχρότερον καὶ στερεώτερον
@@ -175,9 +183,9 @@
                         τὰ ὕδατα, ψυκτέα, θερμαντέα, διὰ λεπτότητα· ὅτι μετὰ τὸ <lb/>θερμὸν
                         σκληρύνεται μᾶλλον ἐπιξηρανθὲν, οἷον ὀφθαλμοὶ μετὰ τὸ ψυχρόν· <lb/>τὸ μὲν
                         γὰρ ὅμοιον τῷ περιέχοντι, τὸ δὲ οὔ. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>3. Θάλασσα δὲ, τοῖσι κνησμώδεσι καὶ δακνώδεσι, καὶ λούειν <lb/>καὶ πυριῇν
+         </div>
+         <div n="3" type="chapter">
+            <p>3. Θάλασσα δὲ, τοῖσι κνησμώδεσι καὶ δακνώδεσι, καὶ λούειν <lb/>καὶ πυριῇν
                         θερμῇ, τοῖσι μὲν ἀήθεσιν ὑπολιπαίνονται, πρὸς ἕλκεα <lb/>δὲ πυρίκαυτα καὶ
                         ἀποσύρματα καὶ ὅσα τοιαῦτα πολέμιον, ἐπιτήδειον <lb/>δὲ τοῖσι καθαροῖσιν,
                         ἀγαθὸν καὶ ἰσχναίνειν εὖ, ὡς τὰ τῶν ἁλιέων <lb/>ἕλκεα· ταῦτα γὰρ οὐδ’
@@ -185,9 +193,9 @@
                         ἵστησιν, ὡς ἅλες καὶ ἁλμυρίδες καὶ λίτρον· <lb/>πάντα δὲ ταῦτα σμικρῷ μὲν
                         χρωμένῳ ἐρεθιστικὰ, προσνικῶντι <lb/>δὲ ἀγαθά· βέλτιον δὲ θέρμη πρὸς τὰ
                         πλεῖστα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>4. Ὄξος δὲ χρωτὶ μὲν καὶ ἄρθροισι παραπλήσιον θαλάσσῃ καὶ <lb/>δυνατώτερον
+         </div>
+         <div n="4" type="chapter">
+            <p>4. Ὄξος δὲ χρωτὶ μὲν καὶ ἄρθροισι παραπλήσιον θαλάσσῃ καὶ <lb/>δυνατώτερον
                         καταχέειν καὶ πυριῇν· καὶ ἕλκεσι τοῖσι νεοτρώτοισι, <lb/>θρόμβοισιν, οὗ
                         μέλασμα αἰδοίων, καῦσις οὐάτων ἢ καὶ ὀδόντων· <pb n="128"/> θερμῷ δὲ ταῦτα,
                         τά τε ἄλλα· καὶ τῇ ὥρῃ συντεκμαίρεσθαι· ἐκ τήξεως <lb/>ἅλες· καὶ πρὸς ἄλλα
@@ -196,9 +204,9 @@
                         καὶ τοὺς ἐν ὠσὶν ἰᾶται <lb/>ῥύπους, μαλάσσει δὲ καὶ χρῶτα, πολλαχῆ δὲ καὶ
                         ἄλλῃ; εἰ μὴ ὀδμῇ <lb/>ἔβλαπτε, καὶ μάλιστα γυναῖκας· ἐδύνατο δ’ ἂν καὶ
                         ποδαγρίῃ, εἰ μὴ <lb/>ὁ χρὼς ἐτιτρώσκετο. Ταῦτα καὶ τρὺξ ὄξους ποιέει. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>5. Οἶνος δὲ γλυκὺς, ὅσα χρόνια τρώματα, συνεχέως χρωμένῳ <lb/>αὔταρκες, ἀτὰρ
+         </div>
+         <div n="5" type="chapter">
+            <p>5. Οἶνος δὲ γλυκὺς, ὅσα χρόνια τρώματα, συνεχέως χρωμένῳ <lb/>αὔταρκες, ἀτὰρ
                         καὶ ἐς φαρμακοποσίην. Αὐστηρὸς δὲ ὁ λευκὸς καὶ μέλας <lb/>οἶνος ψυχρὸς ἐπὶ
                         τὰ ἕλκεα ἐνδέχεται, ψυχρὸς διὰ τὴν θέρμην. <lb/>Ὅρια δὲ, ὅσα μὲν ψύξιος
                         εἵνεκα ἢ καταχεῖται ἢ ἐνίεται ἢ ἐμβάπτεται, <lb/>ὡς ὕδωρ ψυχρότατον· ὅσα δὲ
@@ -207,9 +215,9 @@
                         λευκὸς, καὶ <lb/>ὅσα στρυφνότερα ἢ ψαθυρώτερα, οἷον κίστος τε καὶ βάτος,
                         ῥοῦς <pb n="130"/> σκυτοδεψικὴ, ἐλελίσφακος, καὶ ὅσα μαλθάσσειν δεῖ, οἷον
                         ἄλητον ἑφθόν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>6. Τὸ ψυχρὸν ὠφελέει τὰ ἐρυθρὰ, οἷα ἄλλῃ καὶ ἄλλῃ ἐκθύει ὑποπλάτη, <lb/>οἷα
+         </div>
+         <div n="6" type="chapter">
+            <p>6. Τὸ ψυχρὸν ὠφελέει τὰ ἐρυθρὰ, οἷα ἄλλῃ καὶ ἄλλῃ ἐκθύει ὑποπλάτη, <lb/>οἷα
                         οἱ τοὺς σπλῆνας ὀγκηροὺς [ἔχοντες] ἀνίσχουσιν, εὐσάρκοισί <lb/>τε καὶ
                         ἁπαλοσάρκοισιν, ὑπέρυθρα δὲ μέλασι, καὶ οἷαι στρογγύλαι <lb/>ἐοῦσαι,
                         αἰθόλικας λέγουσι, καὶ ἐν αὐτῇσι τῇσι θερμολουσίῃσιν <lb/>ἀνίσταται
@@ -248,12 +256,11 @@
                         ἐσθιομένοισι, μελαινομένοισιν <lb/>ἐν νούσοισιν, ἀκοῇ, ἕδρῃ, ὑστέρῃ,
                         τούτοισι πᾶσι τὸ θερμὸν φίλιον <pb n="136"/> καὶ κρῖνον, τὸ δὲ ψυχρὸν
                         πολέμιον καὶ κτεῖνον, πλὴν ὁκόσα αἱμοῤῥα· <lb/>γέειν ἐλπίς. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>7. Οὕτω κατάχυσις ὑγρῶν, ἐπίχρισις ἀλειπτῶν, ἐπίθεσις φύλλων <lb/>ἢ ὀθονίων,
+         </div>
+         <div n="7" type="chapter">
+            <p>7. Οὕτω κατάχυσις ὑγρῶν, ἐπίχρισις ἀλειπτῶν, ἐπίθεσις φύλλων <lb/>ἢ ὀθονίων,
                         κατάπλασις, ὁκόσα ἢ ψύξις ἢ θέρμη ὠφελέει ἢ βλάπτει. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

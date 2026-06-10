@@ -1,101 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-        <fileDesc>
-            <titleStmt>
-                <title xml:lang="lat">De venarum arteriarumque dissectione</title>
-                <author>Galen</author>
-                <editor>Karl Gottlob Kühn</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De venarum arteriarumque dissectione</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0057.tlg013.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg013.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-                        <author>Galen</author>
-                        <editor>Karl Gottlob Kühn</editor>
-                        <imprint>
-                            <publisher>Knobloch</publisher>
-                            <pubPlace>Leipzig</pubPlace>
-                            <biblScope unit="vol">2</biblScope>
-                            <biblScope unit="pp" from="779" to="830">779-830</biblScope>
-                            <date>1821</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://archive.org/stream/hapantaoperaomni02galeuoft#page/778/mode/2up">Internet Archive</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg013.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Leipzig</pubPlace>
+                     <biblScope unit="vol">2</biblScope>
+                     <biblScope unit="pp" from="779" to="830">779-830</biblScope>
+                     <date>1821</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://archive.org/stream/hapantaoperaomni02galeuoft#page/778/mode/2up">Internet Archive</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-                <language ident="eng">English</language>
-                <language ident="lat">Latin</language>
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg013.1st1K-grc1">
-                <pb n="779"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΦΛΕΒΩΝ ΚΑΙ <lb/>ΑΡΤΗΡΙΩΝ ΑΝΑΤΟΜΗΣ.</head>
-                    <p>Σύνοψιν φλεβῶν καὶ ἀρτηριῶν ἀνατομῆς, <lb/>Ἀντίσθενες φίλτατε, βουληθέντι σοι
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="eng">English</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg013.1st1K-grc1">
+         <pb n="779"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΦΛΕΒΩΝ ΚΑΙ <lb/>ΑΡΤΗΡΙΩΝ ΑΝΑΤΟΜΗΣ.</head>
+            <p>Σύνοψιν φλεβῶν καὶ ἀρτηριῶν ἀνατομῆς, <lb/>Ἀντίσθενες φίλτατε, βουληθέντι σοι
                         παρ’ ἐμοῦ δοθῆναι <lb/>μνήμης ἕνεκεν ὧν ἐθεάσω δεικνυμένων ἐν πιθήκου
                         σώματι, <lb/>διὰ τούτου τοῦ λόγου πεποίημαι. ἡ δὲ ἀκριβεστέρα ἐξήγησις
                         <lb/>οὐ τούτων μόνων, ἀλλὰ καὶ τῶν ἄλλων ἁπάντων <lb/>μορίων, ἐν ταῖς
@@ -120,7 +127,7 @@
                         ἔκφυσιν ἰούσαις καὶ τὸ πάγκρεας, ὅπερ ἔνιοι καλλίκρεας <lb/>ὀνομάζουσι. ἀδὴν
                         δ’ ἐστὶν οὗτος ὑποβεβλημένος <lb/>ταῖς ἐνταῦθα κατασχιζομέναις ἀρτηρίαις καὶ
                         φλεψίν. καὶ <lb/>ἄλλη δέ τις φλὲψ μικρὰ πρὸς τὸν πυλωρὸν ἀναφερομένη <lb/>
-                        <milestone unit="ed2page" n="226"/>τῷ περὶ τοῦτον καὶ πρὸ τούτου μέρει τῆς
+               <milestone unit="ed2page" n="226"/>τῷ περὶ τοῦτον καὶ πρὸ τούτου μέρει τῆς
                         γαστρὸς <lb/>διασπείρεται. τῶν δὲ ἀξιολόγων ἀποφύσεων τῆς ἐπὶ πύλας
                         <lb/>φλεβὸς πρώτη μέν ἐστιν ἡ εἰς τὸ σιμὸν τῆς γαστρὸς φερομένη,
                         <lb/>δευτέρα δὲ ἡ εἰς τὸν σπλῆνα. τισὶ μέντοι τῶν <lb/>πιθήκων ἡ μὲν
@@ -186,9 +193,9 @@
                         <lb/>ταύτας· διό μοι καὶ δοκοῦσιν οἱ ἀρχαῖοι προσαγορεῦσαι τὸ <lb/>χωρίον
                         οὕτως· ἐντεῦθεν δὲ εἰς ὅλον τὸ ἧπαρ ἀφικνεῖται <lb/>φερομένη διὰ τῶν εἰς
                         τοὺς λοβοὺς αὐτοῦ κατασχιζομένων <lb/>φλεβῶν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>Ἐντεῦθεν δὲ αὖθις εἰς ἑτέρας μεταλαμβάνεται <pb n="786"/> φλέβας, ἐν μὲν τοῖς
+         </div>
+         <div n="2" type="chapter">
+            <p>Ἐντεῦθεν δὲ αὖθις εἰς ἑτέρας μεταλαμβάνεται <pb n="786"/> φλέβας, ἐν μὲν τοῖς
                         κυρτοῖς τοῦ ἥπατος τεταγμένας, <lb/>ἀποφυομένας δὲ ἄλλης μεγίστης φλεβὸς, ἣν
                         δι’ αὐτὸ <lb/>τοῦτο κοίλην ὀνομάζουσιν. ἀπὸ ταύτης δὲ καὶ αἱ εἰς ὅλον
                         <lb/>τὸ σῶμα παράγουσαι τὸ αἷμα φλέβες διεκφύονται. ἐκπίπτουσα <lb/>γὰρ
@@ -233,9 +240,9 @@
                         ταῖσδε φλὲψ ἀποφύεται ﻿<pb n="789"/> τῆς διὰ μασχάλης ἐπὶ χεῖρα φερομένης,
                         εἴς τε τοὺς ἐν τοῖς <lb/>σιμοῖς τῆς ὠμοπλάτης μῦς διανεμομένη καὶ τὸν κατ’
                         αὐτὴν <lb/>τὴν μασχάλην τὸν μέγιστον. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>Τὸ δὲ λοιπὸν τῆς φλεβὸς ταύτης εἰς ὅλην <lb/>τὴν χεῖρα κατασχίζεται τρόπῳ
+         </div>
+         <div n="3" type="chapter">
+            <p>Τὸ δὲ λοιπὸν τῆς φλεβὸς ταύτης εἰς ὅλην <lb/>τὴν χεῖρα κατασχίζεται τρόπῳ
                         τοιῷδε. διὰ μὲν τοῦ βραχίονος <lb/>ἄνωθεν κάτω φέρεται, τοῖς ἔνδον μέρεσι
                         παρατεταμένη <lb/>τοῦ μεγάλου μυός. λαμβάνει δὲ ταύτης τῆς φλεβὸς <lb/>οὐχ
                         οὗτος μόνον ὁ μῦς, ἀλλὰ καὶ οἱ λοιποὶ σχεδὸν ἅπαντες <lb/>οἱ κατὰ τὸν
@@ -251,7 +258,7 @@
                         μέρεσι τοῖς τῶν ἐνταῦθα μυῶν ἄχρι τῆς ἔνδον <lb/>κεφαλῆς τοῦ βραχίονος
                         ἀποφύσεις ἐκτεῖνον, οὐδὲν ἧττόν <lb/>τε διὰ βάθους τοῖς ὀπίσω τε καὶ πρόσω.
                         πρὶν δὲ <lb/>ἐπιβαίνειν τῆς διαρθρώσεως, εἰς πλείους σχίζεται φλέβας, <lb/>
-                        <milestone unit="ed1page" n="199"/>ὧν ἐπιπολῆς μέν εἰσιν αἱ πολλαὶ, διὰ
+               <milestone unit="ed1page" n="199"/>ὧν ἐπιπολῆς μέν εἰσιν αἱ πολλαὶ, διὰ
                         βάθους δὲ ἡ <lb/>μεγίστη πασῶν. αὐτῶν δὲ τῶν ἐπιπολῆς οὔτε τὸ μέγεθος
                         <lb/>ἴσον, οὔθ’ ὁ ἀριθμός. ἐναργῶς γὰρ ὁρῶνται καὶ πρὸ τῆς <lb/>ἀνατομῆς ἐπὶ
                         τῶν ἰσχνῶν ἀνθρώπων, διαληφθέντος δὲ σιμοῦ <lb/>τοῦ βραχίονος, ἄλλως ἐπ’
@@ -308,16 +315,16 @@
                         μόνον ἴσας τε καὶ ἀνίσους <lb/>ἐστὶν ἰδεῖν, ἀλλὰ μηδὲ ὅλως φαινομένας ἐνίας
                         ἐξ αὐτῶν, <lb/>ἤτοι τῷ μικρὰς εἶναι παντάπασιν, ἢ τῷ διὰ βάθους
                         <lb/>φέρεσθαι, καὶ μάλιστα ὅταν ᾖ παχύτερόν πως τὸ σῶμα. <lb/>
-                        <milestone unit="ed2page" n="230"/>σχίζονται δὲ, ὥσπερ αἱ ἔνδον τοῦ πήχεως
+               <milestone unit="ed2page" n="230"/>σχίζονται δὲ, ὥσπερ αἱ ἔνδον τοῦ πήχεως
                         φλέβες, ἐν <lb/>τοῖς κατὰ καρπὸν χωρίοις εἰς πολλὰς μικρὰς ἐπιμιγνυμένας
                         <lb/>ἀλλήλαις. οὕτω καὶ πολὺ μᾶλλον ἔτι τούτων ἐναργῶς <lb/>ἀνατέμνουσί τε
                         καὶ πρὸ τῆς ἀνατομῆς φαίνονται αἱ ἐκτός. <lb/>εἰς ταὐτὸν γὰρ ἴασιν ἑνούμεναι
                         πολλαχόθι πρὸς ἀλλήλας <lb/>τε καὶ τὰς ἔνδον, ἐκτείνονταί τε κατὰ τὴν
                         τοιαύτην ἐπιμιξίαν <lb/>ὑπὸ τὸ δέρμα τὸ κατὰ τὸν καρπὸν καὶ τὸ μετακάρπιον
                         <lb/>καὶ τοὺς δακτύλους. αἱ μὲν οὖν ἐπιπολῆς φλέβες <lb/>οὕτως ἔχουσιν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>Αἱ δὲ διὰ βάθους φλέβες ἔν τε τῷ πήχει <pb n="795"/> παντὶ καὶ κατ’ ἄκραν τὴν
+         </div>
+         <div n="4" type="chapter">
+            <p>Αἱ δὲ διὰ βάθους φλέβες ἔν τε τῷ πήχει <pb n="795"/> παντὶ καὶ κατ’ ἄκραν τὴν
                         χεῖρα γεννῶνται μὲν ἀπὸ τῶν <lb/>δύο φλεβῶν τῶν μεγάλων, ἀφ’ ὧν αἱ καθ’ ὅλας
                         τὰς χεῖρας <lb/>λέγονται φύεσθαι, τρόπος δέ ἐστιν αὐταῖς τῆς γενέσεως
                         <lb/>τοιόσδε. καθ’ ὃ μέρος ἑκατέρας τῆς φλεβὸς τῆς μεγάλης ἀποφύεσθαί
@@ -338,9 +345,9 @@
                         τοῖς προτεταγμένοις δηλονότι μορίοις αὐτοῦ <lb/>τοῦ μετακαρπίου καὶ καρποῦ,
                         τὴν γένεσιν ἀπὸ τῶν ἐπιπολῆς <lb/>φλεβῶν λαμβάνουσα. τοιαύτη μέν τις ἡ κατὰ
                         χεῖράς <lb/>ἐστι νομὴ τῶν φλεβῶν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>Ἡ δὲ τῶν εἰς τὰ πρόσω τοῦ θώρακος φερομένων <lb/>τοιάδε. κατὰ μὲν τὸ μέσον
+         </div>
+         <div n="5" type="chapter">
+            <p>Ἡ δὲ τῶν εἰς τὰ πρόσω τοῦ θώρακος φερομένων <lb/>τοιάδε. κατὰ μὲν τὸ μέσον
                         ἀμφοῖν τοῖν μεροῖν τῆς <lb/>ἐσχισμένης δίχα κοίλης ἡ ἐπὶ τὸ δεξιὸν μέρος τοῦ
                         στέρνου <lb/>φερομένη φλὲψ ἀποφύεται, κατὰ δὲ τὸ τῇδε μόριον τοῦ <lb/>τῶν
                         ἀριστερῶν ἡ ἑτέρα. φέρονται δὲ δι’ ὅλου τοῦ θώρακος <lb/>ὑποτεταγμέναι τῷ
@@ -367,9 +374,9 @@
                         μείζους <lb/>μὲν τούτων, ἔτι δὲ καὶ αὗται μικραὶ, πρός τε τὸν
                         <lb/>περικάρδιον ἔρχονται χιτῶνα καὶ κατὰ τῆς ἄνω φερομένης <lb/>ἀπὸ καρδίας
                         ἀρτηρίας ἐκτείνονται. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>Καθ’ ὃ δ’ αἱ κλεῖς ἐπίκεινται τοῖς τῆς <lb/>κοίλης τμήμασιν, ὑπόκεινται ῥίζαι
+         </div>
+         <div n="6" type="chapter">
+            <p>Καθ’ ὃ δ’ αἱ κλεῖς ἐπίκεινται τοῖς τῆς <lb/>κοίλης τμήμασιν, ὑπόκεινται ῥίζαι
                         μεγίστης φλεβὸς, ἑκατέρωθεν <lb/>μία· ἥτις εὐθὺς ἀνίσχουσα δίχα σχίζεται,
                         δύο <lb/>φλέβας ἐργαζομένη μεγάλας, ὧν ἡ μὲν ἑτέρα φέρεται διὰ <lb/>τοῦ
                         τραχήλου, διὰ βάθους ἀποχωροῦσα πρὸς τοὐπίσω τε <lb/>καὶ πρόσω, ἡ δ’ ἑτέρα
@@ -397,7 +404,7 @@
                         ἀεὶ τρεῖς εἰσι φλέβες ἀπὸ τῆς περὶ τὴν <lb/>κλεῖν ἑλιττομένης ἀρχόμεναι, μία
                         μὲν ἱκανῶς ἀξιόλογος, <lb/>ἴσου πολλάκις τοῦ εὔρους αὐτῇ τῇ πρὸς τὸν
                         τράχηλον ἀναφερομένῃ· <lb/>
-                        <milestone unit="ed2page" n="232"/>καλοῦσι δ’ αὐτὴν ὠμιαίαν, ἐπειδήπερ
+               <milestone unit="ed2page" n="232"/>καλοῦσι δ’ αὐτὴν ὠμιαίαν, ἐπειδήπερ
                         <lb/>ἐπὶ τὸν ὦμον ἐκτείνεται κατὰ βραχὺ τῆς κλειδὸς ἀποχωροῦσα <lb/>λοξή·
                         δύο δὲ ἄλλαι μικροτέρας ῥίζας ἑκατέρωθεν <lb/>ἔχουσαι τῆς ὠμιαίας. ἡ μὲν οὖν
                         ὑψηλοτέραν ἔχουσα τὴν <lb/>ῥίζαν ἄχρι τῆς ἐπὶ τὸ ἀκρώμιον ἀναφέρεται χώρας,
@@ -414,9 +421,9 @@
                         <lb/>βραχίονι φλέβας ἀποφυομένας ἔχουσα· τῆς δὲ ὠμιαίας ὀλίγαι <lb/>τε καὶ
                         αὗται τριχοειδεῖς τε καὶ ἀραχνοειδεῖς ἀποφύονται, <lb/>τοῖς ἐπιπολῆς χωρίοις
                         διασπειρόμεναι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>Λοιπὸν οὖν διηγήσασθαι χρὴ τῶν ἐπιπολῆς <lb/>τε καὶ διὰ βάθους σφαγιτίδων τὴν
+         </div>
+         <div n="7" type="chapter">
+            <p>Λοιπὸν οὖν διηγήσασθαι χρὴ τῶν ἐπιπολῆς <lb/>τε καὶ διὰ βάθους σφαγιτίδων τὴν
                         νομήν. ὀνομάζονται <lb/>δὲ διὰ βάθους σφαγίτιδες ὑπ’ ἐνίων μὲν αἱ μετὰ
                         <lb/>τὴν σχίσιν τῆς κοίλης εὐθέως γιγνόμεναι· τινὲς δὲ οὐχ ὅλας <lb/>αὐτὰς,
                         ἀλλ’ ὅσον ἐν τραχήλῳ τέτακται τῶν κλειδῶν ὑψηλότερον, <lb/>οὕτως
@@ -503,9 +510,9 @@
                         καρδίαν <lb/>ἕκαστόν τε τῶν ἄλλων σπλάγχνων ἡ καθ’ ἕκαστον ἔκφυσις <lb/>ἀπὸ
                         πάντων τῶν ἀγγείων ἐν ταῖς ἰδίαις αὐτῶν ἀνατομικαῖς <lb/>ἀκριβοῦται. νυνὶ
                         δὲ, ὡς εἴρηται, σύνοψίν τινα τῆς τῶν <lb/>ἀγγείων ἀνατομῆς ποιούμεθα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="8">
-                    <p>Συμπεπληρωμένης ἤδη τῆς ἐξηγήσεως ἁπασῶν <lb/>τῶν ἄνω τοῦ διαφράγματος
+         </div>
+         <div n="8" type="chapter">
+            <p>Συμπεπληρωμένης ἤδη τῆς ἐξηγήσεως ἁπασῶν <lb/>τῶν ἄνω τοῦ διαφράγματος
                         φλεβῶν, ἐπὶ τὰς ὑπολοίπους <pb n="808"/> μετέλθωμεν, ὅσαι τὰ κάτω τῶν φρενῶν
                         τρέφουσιν ἀπὸ τῆς <lb/>ἐπ’ ὀσφύϊ κοίλης γεννώμεναι. αὕτη γὰρ ἡ φλὲψ, ἐπειδὰν
                         <lb/>πρῶτον ἔξω τοῦ ἥπατος γένηται, πρὶν μὲν ἐπιβῆναι τῆς <lb/>ὀσφύος, ἔτι
@@ -628,9 +635,9 @@
                         χερσὶν, οὕτω <lb/>καὶ κατὰ τὸν πόδα μόρια τῶν ἀγγείων. αὕτη μὲν ἡ σύνοψις
                         <lb/>ἔσται σοι τῆς τῶν φλεβῶν ἀνατομῆς· ἐφεξῆς δὲ περὶ <lb/>τῶν ἀρτηριῶν
                         ἐροῦμεν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="9">
-                    <p>Ἀρχὴ μὲν τούτων ἐστὶν ἡ ἀριστερὰ κοιλία <lb/>τῆς καρδίας. ἐντεῦθεν δὲ μία μὲν
+         </div>
+         <div n="9" type="chapter">
+            <p>Ἀρχὴ μὲν τούτων ἐστὶν ἡ ἀριστερὰ κοιλία <lb/>τῆς καρδίας. ἐντεῦθεν δὲ μία μὲν
                         εἰς τὸν πνεύμονα κατασχίζεται <lb/>λεπτὴ <milestone unit="ed2page" n="237"/>καὶ μονοχίτων, καθάπερ αἱ φλέβες· <lb/>ἑτέρα δὲ δύο χιτῶνας ἔχουσα καὶ
                         παχεῖα, πολὺ μείζων <lb/>τῆσδε, καθάπερ τι στέλεχος ἁπασῶν οὖσα τῶν
                         ἀρτηριῶν. <lb/>εἰκάσαις δ’ ἂν, εἰ βούλοιο, καὶ τὴν εἰς τὸν πνεύμονα <pb n="817"/> κατασχιζομένην ἀνάλογον ἔχειν τῇ πρώτῃ πασῶν ῥηθείσῃ
@@ -677,7 +684,7 @@
                         <lb/>λέγεται. τὸ δὲ ἕτερον μέρος τῆς ἐκ καρδίας φυομένης ἀρτηρίας <pb n="820"/> τὸ μεῖζον παρὰ τὴν ῥάχιν κατακάμπτεται, τῷ <lb/>πέμπτῳ τοῦ
                         θώρακος ἐπιβαῖνον σπονδύλῳ, φέρεταί τε τοὐντεῦθεν <lb/>δι’ ὅλης ἤδη τῆς
                         ῥάχεως ἄχρι τοῦ πλατέος ὀστοῦ, <lb/>
-                        <milestone unit="ed2page" n="238"/>πρῶτον μέν τινα πέμπον ἀπόφυσιν αὑτοῦ
+               <milestone unit="ed2page" n="238"/>πρῶτον μέν τινα πέμπον ἀπόφυσιν αὑτοῦ
                         μικρὰν ἀρτηρίαν, <lb/>κατασχιζομένην εἰς ἐκεῖνα τοῦ θώρακος τὰ μέρη,
                         <lb/>καθ’ ἃ ὁ πνεύμων ἐπίκειται· τὰ τελευταῖα δὲ αὐτῆς πέρατα <lb/>μέχρι τῆς
                         τραχείας ἀρτηρίας ἀνήκει, μετὰ δὲ ταῦτα καθ’ <lb/>ἕκαστον σπόνδυλον εἴς τε
@@ -733,9 +740,9 @@
                         ἰσχνοῖς καὶ προφανῆ ἐπὶ πλεῖστόν εἰσι <lb/>καὶ πολλῶν ἀρτηριῶν μόρια. τὰ μὲν
                         οὖν εἰρημένα ﻿<pb n="824"/> πάντα περὶ φλεβῶν καὶ ἀρτηριῶν ἐπὶ τῶν τελείων
                         φαίνεται <lb/>ζώων. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="10">
-                    <p>Ἐπὶ μέντοι τῶν ἔτι κυουμένων πρὸς τοῖς <lb/>εἰρημένοις κατ’ αὐτὸ τὸ χορίον
+         </div>
+         <div n="10" type="chapter">
+            <p>Ἐπὶ μέντοι τῶν ἔτι κυουμένων πρὸς τοῖς <lb/>εἰρημένοις κατ’ αὐτὸ τὸ χορίον
                         ἀρτηρίαι καὶ φλέβες εἰσὶ <lb/>καθηκόντων περάτων ἐκφυόμεναι τῶν ἐπὶ μήτραν.
                         συνιόντων <lb/>δ ἐκείνων πρὸς ἄλληλα, καὶ τῶν γενομένων αὖθις <lb/>πρὸς
                         ἀλλήλας, γενέσθαι συμβέβηκεν ἐξ αὐτῶν τὸ κατ’ ὀμφαλὸν <lb/>ζεῦγος ἑκατέρων
@@ -769,7 +776,7 @@
                         ὅσαι κατὰ τὰς ῥίζας αὑτῶν ἐλέχθησαν εἰς τὰ πλησίον <lb/>τῶν κλειδῶν
                         σπείρεσθαι μικραὶ, χωρὶς ἀρτηρίας εἰσὶ <lb/>σύμπασαι. καὶ τῶν ἐν προσώπῳ δὲ
                         καὶ κεφαλῆς φλεβῶν, <lb/>παμπόλλων οὐσῶν, ὀλίγαι ταῖς ἀρτηρίας παρατέτανται, <lb/>
-                        <milestone unit="ed2page" n="240"/>καθάπερ ἐλέχθη πρόσθεν, ἡνίκα ὑπὲρ τῶν
+               <milestone unit="ed2page" n="240"/>καθάπερ ἐλέχθη πρόσθεν, ἡνίκα ὑπὲρ τῶν
                         κατὰ <lb/>τοὺς κροτάφους καὶ τῶν ὤτων ὄπισθεν ὑπὸ τῷ δέρματι
                         <lb/>διηγησάμεθα. καὶ συλλήβδην εἰπεῖν, ταῖς ἐπιπολῆς ἢ ταῖς <lb/>ὑπὸ τῷ
                         δέρματι κατά τε τὸν νῶτον καὶ τὰ πλευρὰ καὶ <lb/>σύμπαντα τὸν θώρακα καὶ τὸ
@@ -816,8 +823,7 @@
                         ἔχουσι παρακειμένην φλέβα, <lb/>καθάπερ οὐδὲ αἱ πρῶται τῶν ἐκφύσεων ἐφ’ ἧπαρ
                         καὶ γαστέρα <lb/>καὶ σπλῆνα καὶ ἔντερα· οὐδὲ γὰρ ταύταις παράκειται
                         <lb/>φλὲψ, πρὶν ἄρξασθαι σχίζεσθαι. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

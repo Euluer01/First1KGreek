@@ -1,97 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-	<teiHeader xml:lang="eng">    
-    
-		<fileDesc>
-			<titleStmt><title>De totius morbi temporibus</title>
-				<author>Galen</author>
-				<editor>Karl Gottlob Kühn</editor>
-				<funder>Andrew W. Mellon Foundation</funder>
-				<respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-				<authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title>De totius morbi temporibus</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
 					Foundation</authority>
-				<publisher>University of Leipzig</publisher>
-				<pubPlace>Germany</pubPlace>
-				<idno type="filename">tlg0057.tlg047.1st1K-grc1.xml</idno>
-				<availability>
-					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg047.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
 						Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-				</availability>
-				<date>2016</date>
-			</publicationStmt>
-			<sourceDesc>
-				<biblStruct>
-					<monogr>
-						<title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-						<author>Galen</author>
-						<editor>Karl Gottlob Kühn</editor>
-						<imprint>
-							<publisher>Knobloch</publisher>
-							<pubPlace>Lipsiae</pubPlace>
-							<biblScope unit="vol">7</biblScope>
-							<biblScope unit="pp" from="440" to="462">440-462</biblScope>
-							<date>1824</date>
-						</imprint>
-					</monogr>
-					<ref target="https://hdl.handle.net/2027/hvd.hxpp8n?urlappend=%3Bseq=452">HathiTrust</ref>
-				</biblStruct>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg047.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Lipsiae</pubPlace>
+                     <biblScope unit="vol">7</biblScope>
+                     <biblScope unit="pp" from="440" to="462">440-462</biblScope>
+                     <date>1824</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/hvd.hxpp8n?urlappend=%3Bseq=452">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
 				Architecture.</p>
-			  <refsDecl n="CTS">
-				<cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-			</refsDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="grc">Greek</language>
-			</langUsage>
-		</profileDesc>
-	</teiHeader>
-	<text>
-		<body>
-
-			<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg047.1st1K-grc1">
-				<pb n="440"/>
-
-				<div type="textpart" subtype="chapter" n="1">
-					<head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΤΩΝ ΟΛΟΥ ΤΟΥ <lb/>ΝΟΣΗΜΑΤΟΣ ΚΑΙΡΩΝ ΒΙΒΛΙΟΝ.</head>
-					<p>Ὅλου τοίνυν τοῦ νοσήματος ἐπινοοῦμεν <lb/>καιροὺς ἀνάλογον ταῖς ἡλικίαις τῶν ζώων· ἕνα
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg047.1st1K-grc1">
+         <pb n="440"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΤΩΝ ΟΛΟΥ ΤΟΥ <lb/>ΝΟΣΗΜΑΤΟΣ ΚΑΙΡΩΝ ΒΙΒΛΙΟΝ.</head>
+            <p>Ὅλου τοίνυν τοῦ νοσήματος ἐπινοοῦμεν <lb/>καιροὺς ἀνάλογον ταῖς ἡλικίαις τῶν ζώων· ἕνα
 						μὲν καὶ <lb/>πρῶτον τῆς γενέσεως αὐτοῦ· δεύτερον δὲ τὸν τῆς ἀναβάσεως· <lb/>τρίτον δὲ
 						τὸν τῆς ἀκμῆς· καὶ τέταρτον τὸν τῆς παρακμῆς, <lb/>ὅταν γε μέλλωσιν οἱ κάμνοντες
 						σώζεσθαι· φθασάντων γὰρ <lb/>ἀποθανεῖν αὐτῶν, ἤτοι κατὰ τὴν ἀνάβασιν, ἢ τὴν ἀκμὴν,
@@ -105,9 +113,9 @@
 						ἀμφισβητήσεις διαλύεσθαι <lb/>ταύτας, εἶτα ἀκριβῶς διαρθρῶσαι τὰς ἐννοίας τῶν καιρῶν τῆς
 						<lb/>ὅλης νόσου, καὶ μετὰ ταῦτ’ εἰπεῖν αὐτῶν τὰ γνωρίσματα, <lb/>κᾄπειθ’ ἑξῆς εἴη δεῖξαι
 						τὸ χρήσιμον, ἀναμίξαντας τοῖς κατὰ <lb/>τὰς περιόδους. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="2">
-					<p>Ἡ τοίνυν ἀρχὴ τῆς νόσου, καθ’ ὅσον εἰσβάλλει <lb/>ποτὲ καταπιπτούσης τῆς ὑγιεινῆς
+         </div>
+         <div n="2" type="chapter">
+            <p>Ἡ τοίνυν ἀρχὴ τῆς νόσου, καθ’ ὅσον εἰσβάλλει <lb/>ποτὲ καταπιπτούσης τῆς ὑγιεινῆς
 						καταστάσεως, ἐν <lb/>ἁπάσαις αὐταῖς ἐστιν ἄνευ χρόνου παρατάσεως ἐπινοουμένη· <lb/>σὺν
 						τούτῳ μέντοι γε οὐ συγχωρεῖται παντὸς νοσήματος ὑπάρχειν <lb/>οἷον γένεσιν, ὥσπερ ἐν
 						τοῖς ζώοις ἐπινοοῦμεν. οὐ γὰρ <lb/>ἐκ μορίων δή τινων ὥσπερ τὸ ζῶον ἐκ κεφαλῆς, καὶ
@@ -138,11 +146,10 @@
 						ἀρχῆς καὶ κατὰ τὸ περὶ κρίσεων <lb/>πρῶτον, ἐπιδεικνύντι τὸν πρῶτον τοῦτον καιρὸν ὡς ἄν
 						τις <lb/>γνωρίσειεν. ἦν δ’ αὐτοῦ κεφάλαιον ἡ ἀπεψία τῆς νόσου. βέλτιον <lb/>δὲ κᾀνταῦθα
 						πρὸς ἐκείνοις εἰπεῖν, ὅσα τῇ παρούσῃ <lb/>διεξόδῳ χρήσιμα. </p>
-				</div>
-				<pb n="444"/>
-
-				<div type="textpart" subtype="chapter" n="3">
-					<p>Κείσθω τοίνυν πρῶτον ἀρχὴν φλεγμονῆς <lb/>ζητεῖσθαι. τίς οὐκ ἂν φαίη τὴν οἱονεὶ γένεσιν
+         </div>
+         <pb n="444"/>
+         <div n="3" type="chapter">
+            <p>Κείσθω τοίνυν πρῶτον ἀρχὴν φλεγμονῆς <lb/>ζητεῖσθαι. τίς οὐκ ἂν φαίη τὴν οἱονεὶ γένεσιν
 						αὐτῆς ὑπάρχειν <lb/>ἐν ἐκείνῳ παντὶ τῷ χρόνῳ, καθ’ ὃν πληροῦται τὸ μόριον
 						<lb/>αἱματώδους οὐσίας; εἴτε γὰρ ἐπὶ παρεμπτώσει συμβαίνει τὸ <lb/>τοιοῦτον, εἴτ’ ἐπὶ τῇ
 						σφηνώσει πάντων τῶν ἀγγείων, εἴτε <lb/>ἐπὶ περιστάσει τινὶ τῶν ὄγκων ἐν τοῖς πόροις,
@@ -155,7 +162,7 @@
 						καὶ δι’ ἄμφω ταῦτα διατείνεται μᾶλλον ἢ <lb/>πρόσθεν τὸ μόριον, εἰ καὶ μηδὲν ἐπιῤῥέοι·
 						δεύτερος οὗτός <lb/>ἐστι χρόνος ὁ τῆς αὐξήσεως τῆς φλεγμονῆς. ὅταν δὲ εἰς <lb/>πῦον ἤδη
 						μεταβάλλῃ, μέγιστοι μὲν δή που πόνοι τηνικαῦτα ﻿<pb n="445"/>
-						<milestone unit="ed2page" n="306"/>καταλαμβάνουσι. περὶ γὰρ τὰς γενέσιας τοῦ πύου οἱ
+               <milestone unit="ed2page" n="306"/>καταλαμβάνουσι. περὶ γὰρ τὰς γενέσιας τοῦ πύου οἱ
 						<lb/>πόνοι καὶ οἱ πυρετοὶ συμβαίνουσι μᾶλλον ἢ γενομένου· καλεῖται <lb/>δ’ ἀκμὴ τοῦ
 						πάθους ὁ τοιοῦτος καιρός. εἰ δὲ ἐκπυϊσκόμενον <lb/>ἢ διαφορούμενον τὸ ῥεῦμα τόν τ’ ὄγκον
 						ἐλάττω καὶ <lb/>τὴν τάσιν ἀποφαίνει, παρακμῆς ἀρχὴ τὸ τοιοῦτόν ἐστιν. <lb/>οὕτω μὲν ἐπὶ
@@ -195,12 +202,11 @@
 						συναπέρχοιτο, βεβαιότερον ἤδη τοῦτό ἐστι πέψεως <lb/>σημεῖον· ὥσπερ δὴ καὶ (εἰ) παχυτέρα
 						μὲν αὐτῆς καὶ ἐλάττων <lb/>γινομένη, πολὺ δὴ καὶ μᾶλλον πέψιν ἐνδείκνυται. καὶ οὗτοι
 						<lb/>μὲν οἱ καιροὶ τῶν νοσημάτων εἰσὶν, ἐξ ὧν οἱ κάμνοντες σώζονται. </p>
-				</div>
-				<pb n="448"/>
-
-				<div type="textpart" subtype="chapter" n="4">
-					<p>
-						<milestone unit="ed2page" n="307"/>Περὶ δὲ τῶν ἄλλων, ἐν οἷς ἀπόλλυνται, <lb/>μικρὸν
+         </div>
+         <pb n="448"/>
+         <div n="4" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="307"/>Περὶ δὲ τῶν ἄλλων, ἐν οἷς ἀπόλλυνται, <lb/>μικρὸν
 						ὕστερον ἐρῶ, διαρθρώσας πρότερον, ὅσα διορισμοῦ <lb/>τινος τῶν εἰρημένων δέονται. ἓν μὲν
 						οὖν ἐστιν αὐτῶν <lb/>καὶ τὸ περὶ τῆς ἀκμῆς, εἴτε ἄχρονος ὑπάρχει διαπαντὸς, ὅσον
 						<lb/>ἐφ’ ἑαυτῇ, κᾂν εἰ πρὸς τὴν αἴσθησιν φαίνοιτο παρεκτεινομένη <lb/>πολλάκις
@@ -251,7 +257,7 @@
 						ἐπιληπτικὴν <lb/>καὶ τὴν ἀποπληκτικὴν γίνεσθαι κατάπτωσιν, ἵν’ ὅ γε <lb/>ἐξ ἀρχῆς
 						προὐθέμην διέλθω. τουτὶ μὲν γὰρ αὐτὸ σύμπτωμά <lb/>ἐστιν ἡ γινομένη κατάπτωσις, ἡ νόσος
 						δὲ οὐ τοῦτό ἐστιν, <lb/>ἀλλὰ χρὴ πάντως αὐτὴν, ὡς ἀπεδείξαμεν, εἶναί τινα διάθεσιν <pb n="452"/> σώματος. εἰ δὲ οὐκ ἔχομεν εἴτε γεννωμένης αὐτῆς, <lb/>
-						<milestone unit="ed1page" n="387"/>εἴτε αὐξανομένης γνώρισμά τι, τὸν μὲν ἀκόλουθον λόγον
+               <milestone unit="ed1page" n="387"/>εἴτε αὐξανομένης γνώρισμά τι, τὸν μὲν ἀκόλουθον λόγον
 						<lb/>οὐκ ἀνατρέπει τοῦτο, καθ’ ὃν ἐλέγομεν παντὶ νοσήματι <lb/>ἀναγκαῖον εἶναι διὰ τῆς
 						ἀναβάσεως ἐπὶ τὴν ἀκμὴν ἀφικνεῖσθαι, <lb/>δύσγνωστον δὲ ἐνίοτε καὶ πολλοῖς ἄγνωστον τῶν
 						νοσημάτων <lb/>ὁμολογεῖ εἶναι τὴν αὔξησιν. ὅτι δὲ ἀληθές ἐστιν ὃ <lb/>λέγω, πείσαιμι ἄν
@@ -287,9 +293,9 @@
 						τὸν ἔμπροσθεν λόγον φαίνεται παραβλάπτον, οὐδὲ διαβάλλει <lb/>τὸ κεφάλαιον τῆς
 						ἀποφάσεως, ἀλλ’ ἔτι μένει, τὸ πάντων <lb/>τῶν νοσημάτων, ὅσα λύεται, καθάπερ ἀκμὴν, οὕτω
 						δὴ <lb/>καὶ παρακμὴν ὑπάρχειν τινά. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="5">
-					<p>Τούτων ἡμῖν αὐτάρκως ἀποδεικνυμένων, <lb/>ἐπισκεψόμεθα περὶ τῶν μὴ λυομένων νοσημάτων.
+         </div>
+         <div n="5" type="chapter">
+            <p>Τούτων ἡμῖν αὐτάρκως ἀποδεικνυμένων, <lb/>ἐπισκεψόμεθα περὶ τῶν μὴ λυομένων νοσημάτων.
 						διττὴ δέ <lb/>ἐστιν αὐτῶν ἡ φύσις· ἔνια μὲν γὰρ αὐτῶν ἔχει τὴν κατασκευὴν, ﻿<pb n="455"/> ὅταν ἀκριβῶς αὐτὴν ἔχῃ συμπληρουμένην· ἔνια δὲ ἐκ μὲν τῆς <lb/>τῶν λυομένων ἐστὶ
 						φύσεως, ἀλλ’ ὅταν ἀποκτεῖναι φθάσῃ, <lb/>κατὰ τοῦτο αὐτοῖς γίνεσθαι συμβαίνει. τριττὸς
 						δὲ καὶ τούτων <lb/>ὁ τρόπος ἐστίν· ἢ γὰρ διὰ τὴν τοῦ κάμνοντος ἀδυναμίαν, <lb/>ἢ διὰ τὴν
@@ -308,9 +314,9 @@
 						νοσήματος, ὡς βαρύνειν αὐτὴν, ἢ τοὐναντίον <lb/>ἀσθενεστέρα τῆς δυνάμεως, ὡς νικηθῆναι
 						πρὸς ἐκείνης, ἁπάντων <lb/>τῶν καλῶς γινομένων. ὅταν οὖν ὑπὲρ τὴν δύναμιν ᾖ,
 						<lb/>τεθνήξεται πάντως ὁ ἄνθρωπος. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="6">
-					<p>Οἱ καιροὶ δὲ τῆς νόσου τηνικαῦτα κατὰ <lb/>τὶ μὲν ὡσαύτως τοῖς προειρημένοις
+         </div>
+         <div n="6" type="chapter">
+            <p>Οἱ καιροὶ δὲ τῆς νόσου τηνικαῦτα κατὰ <lb/>τὶ μὲν ὡσαύτως τοῖς προειρημένοις
 						λαμβάνονται, κατὰ τὶ δὲ <lb/>οὐχ ὡσαύτως. ἡ μὲν γὰρ ἀρχὴ κατὰ τὸν αὐτὸν τρόπον ἐν
 						<lb/>τῇ γενέσει τοῦ νοσήματος ἔχουσα τὴν σύστασιν· ἡ δὲ ἀνάβασις <lb/>οὐκ ἐν τῷ
 						πέττεσθαι, καθάπερ ἐπὶ τῶν σώζεσθαι μελλόντων, <lb/>ἀλλ’ ἐν τοῖς τῆς ἀπεψίας καὶ τοῖς
@@ -347,9 +353,9 @@
 						νοείσθωσαν. εἴρηται δὲ αὐτῶν οὐ τὰ γένη μόνον, <lb/>ἀλλὰ καὶ αἱ διαφοραὶ καὶ τὰ εἴδη δι’
 						ἑνὸς ὑπομνήματος, ὃ <lb/>περὶ διαφορᾶς νοσημάτων ἐπιγράφεται. ἐκείνῳ δὲ μάλιστά <lb/>σε
 						προσέχειν ἀξιῶ τὸν νοῦν, ὃ παροφθὲν ἱκανῶς ἄν τινα <lb/>σφάλλοι. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="7">
-					<p>Ἐνδέχεται γὰρ ἑνὶ καὶ τῷ αὐτῷ χρόνῳ καὶ <lb/>δυσὶ καὶ τρισὶ νοσήμασιν ἔχεσθαι τὸν
+         </div>
+         <div n="7" type="chapter">
+            <p>Ἐνδέχεται γὰρ ἑνὶ καὶ τῷ αὐτῷ χρόνῳ καὶ <lb/>δυσὶ καὶ τρισὶ νοσήμασιν ἔχεσθαι τὸν
 						ἄνθρωπον, ὧν τὸ μὲν <lb/>ἤδη παρακμάζει, τὸ δὲ τὸν ἀρχῆς ἔτι μένει καιρὸν, ἢ τὰ
 						<lb/>πρῶτα τῆς ἀναβάσεως, τὸ δ’ ἐπὶ πλεῖστον ηὔξηται· κᾄπειτα <lb/>τὸν ἄνθρωπον
 						ἀποθανεῖν, οὔτε διὰ τὸ παρακμάζον, οὔτε <lb/>διὰ τὸ νῦν ἀρχόμενον, ἀλλὰ διὰ τὸ μεγάλως
@@ -362,9 +368,9 @@
 						εἴτε <lb/>καὶ πλείω νοσήματα κατὰ τὸν ἄνθρωπον, εὑρήσεις· εἶθ’ ἑξῆς <lb/>ἑκάστου τοὺς
 						ἰδίους ἐπίσκεψαι καιροὺς, ἀναγκαίους ὑπάρχοντας <lb/>εἰς τὴν τῶν βοηθημάτων εὕρεσιν, ἧς
 						ἕνεκα ἡμῖν ὁ λόγος <lb/>ὅδε σπουδάζεται. </p>
-				</div>
-				<div type="textpart" subtype="chapter" n="8">
-					<p>Περὶ μὲν γὰρ τὰς ἀρχὰς καὶ τὰ τέλη πάντα <lb/>ἀσθενέστερα, περὶ δὲ τὰς ἀκμὰς
+         </div>
+         <div n="8" type="chapter">
+            <p>Περὶ μὲν γὰρ τὰς ἀρχὰς καὶ τὰ τέλη πάντα <lb/>ἀσθενέστερα, περὶ δὲ τὰς ἀκμὰς
 						ἰσχυρότερα, μεταξὺ δὲ τούτων <lb/>ὅσα μεταξύ. τὰ μὲν γὰρ τῆς ἀρχῆς ἐγγυτέρω τῶν
 						<lb/>ἐγγυτέρω τῆς ἀκμῆς ἀσθενέστερα, καθάπερ γε καὶ τὰ τοῦ <lb/>τέλους ἐγγυτέρω· τὰ δὲ
 						ἶσον ἀπέχοντα τῆς ἀρχῆς τε καὶ <lb/>τῆς ἀκμῆς μέσα τῆς ἰσχύος τῶν ἄκρων ἀμφοτέρων· οὕτω
@@ -392,8 +398,7 @@
 						γὰρ μηδενὸς <lb/>ἐλλείποντος τοῖσδε, φαίνεται λέγων ἕτερα, διττῶς πλημμελεῖ, <lb/>μήτε
 						τὰ χρήσιμα διδάσκων, βαρύνων τε τῇ τῶν ἀχρήστων πολυλογίᾳ <lb/>τοὺς ἀναγινώσκοντας αὐτοῦ
 						τὰ βιβλία. </p>
-				</div>
-			</div>
-		</body>
-	</text>
+         </div>
+      </body>
+   </text>
 </TEI>

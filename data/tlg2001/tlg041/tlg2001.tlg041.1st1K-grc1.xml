@@ -1,119 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="eng">
-    <fileDesc>
-  <titleStmt><title xml:lang="lat">(Sophoniae) In Parva Naturalia Commentarium</title>
-    <author xml:lang="lat">Themistius</author>
-   <editor>Paul Wendland</editor>
-  <sponsor>University of Leipzig</sponsor>
-  <funder>European Social Fund Saxony</funder>
-  <principal>Gregory Crane</principal>
-  <principal>Monica Berti</principal>
-  <meeting/>
-  <respStmt>
-          <persName>Gregory R. Crane</persName>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-        </respStmt>
-        <respStmt>
-          <persName xml:id="DDD">Digital Divide Data</persName>
-          <resp>Corrected and encoded the text</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Matt Munson</persName>
-          <resp>Project Manager (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Annette Geßner</persName>
-          <resp>Project Assistant (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Thibault Clérice</persName>
-          <resp>Lead Developer (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Bruce Robertson</persName>
-          <resp>Technical Advisor</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Greta Franzini</persName>
-          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Frederik Baumgardt</persName>
-          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Simona Stoyanova</persName>
-          <resp>Project Manager (University of Leipzig), 2015</resp>
-          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-  <authority>University of Leipzig</authority>
-  <idno type="filename">tlg2001.tlg041.1st1K-grc1.xml</idno>
-  <availability>
-   <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">(Sophoniae) In Parva Naturalia Commentarium</title>
+            <author xml:lang="lat">Themistius</author>
+            <editor>Paul Wendland</editor>
+            <sponsor>University of Leipzig</sponsor>
+            <funder>European Social Fund Saxony</funder>
+            <principal>Gregory Crane</principal>
+            <principal>Monica Berti</principal>
+            <meeting/>
+            <respStmt>
+               <persName>Gregory R. Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Geßner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Greta Franzini</persName>
+               <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Frederik Baumgardt</persName>
+               <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Simona Stoyanova</persName>
+               <resp>Project Manager (University of Leipzig), 2015</resp>
+               <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>University of Leipzig</authority>
+            <idno type="filename">tlg2001.tlg041.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
    License</licence>
-  </availability>
-  <date>2014</date>
-  <publisher>University of Leipzig</publisher>
-  <pubPlace>Germany</pubPlace>
-  </publicationStmt>
-  <sourceDesc>
-  <listBibl>
-   <biblStruct>
-   <monogr>
-     <title xml:lang="lat">(Sophoniae) In Parva Naturalia Commentarium</title>
-    <editor>
-    <persName>
-     <name>Paul Wendland</name>
-    </persName>
-    </editor>
-    <author ref="urn:cts:greekLit:tlg2001">Themistius</author>
-    <imprint>
-    <publisher>Reimer</publisher>
-    <pubPlace>Berlin</pubPlace>
-    <date>1903</date>
-    </imprint>
-   </monogr>
-     <series>
-       <title xml:lang="lat">Commentaria in Aristotelem Graeca</title>
-       <biblScope unit="volume">5</biblScope>
-       <biblScope unit="part">6</biblScope>
-     </series>
-     <ref target="https://archive.org/stream/commentariaina05pt46akaduoft#page/80/mode/2up">Internet Archive</ref>
-   </biblStruct>
-  </listBibl>
-  </sourceDesc>
- </fileDesc>
- <encodingDesc>
-  <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-     <refsDecl n="CTS">
-        <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-      </refsDecl>
-    </encodingDesc>
- <profileDesc>
-  <langUsage>
-  <language ident="grc">Greek</language>
-  <language ident="lat">Latin</language>
-  </langUsage>
- </profileDesc>
- <revisionDesc>
-  <change/>
- </revisionDesc>
- </teiHeader>
-  <text>
-    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2001.tlg041.1st1K-grc1">
-<div type="textpart" subtype="chapter" n="1">
-<pb n="1"/>
-<head>ΠΑΡΑΦΡΑΣΙΣ ΕΙΣ TO ΠΡΤΙ ΜΝΗΜΗΣ KAI ΑΝΑΜΝΗΣΕΩΣ KAI
+            </availability>
+            <date>2014</date>
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg2001.tlg041.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">(Sophoniae) In Parva Naturalia Commentarium</title>
+                     <editor>
+                        <persName>
+                           <name>Paul Wendland</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg2001">Themistius</author>
+                     <imprint>
+                        <publisher>Reimer</publisher>
+                        <pubPlace>Berlin</pubPlace>
+                        <date>1903</date>
+                     </imprint>
+                  </monogr>
+                  <series>
+                     <title xml:lang="lat">Commentaria in Aristotelem Graeca</title>
+                     <biblScope unit="volume">5</biblScope>
+                     <biblScope unit="part">6</biblScope>
+                  </series>
+                  <ref target="https://archive.org/stream/commentariaina05pt46akaduoft#page/80/mode/2up">Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+         <refsDecl n="CTS">
+            <cRefPattern n="chapter"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg2001.tlg041.1st1K-grc1">
+         <div n="1" type="chapter">
+            <pb n="1"/>
+            <head>ΠΑΡΑΦΡΑΣΙΣ ΕΙΣ TO ΠΡΤΙ ΜΝΗΜΗΣ KAI ΑΝΑΜΝΗΣΕΩΣ KAI
 Ell TA ΤΟΥΤΟΙΕ EHOMENA ΒΙΒΛΙΑ ΑΡΙΣΤΟΤΕΛΟΥΣ,
 ΤΟΥ ΣΟΦΩΤΑΤΟΥ ΚΥΡΙΟΥ ΣΟΦΟΝΙΟΥ</head>
-<note type="marginal">Themist.
+            <note type="marginal">Themist.
 ed. Spengel</note>
-<p>Περὶ δὲ μνήμης καὶ τοῦ μημονεύειν λεκτέον τί ἐστι καὶ διὰ τίνα <note type="marginal">p. 232</note>
-<lb n="5"/> αἰτίαν υίνεται καὶ τῶν τῆς ψυχῆς μορίων συμβαίνει τοῦτο τὸ πάθος <lb n="6"/>
+            <p>Περὶ δὲ μνήμης καὶ τοῦ μημονεύειν λεκτέον τί ἐστι καὶ διὰ τίνα <note type="marginal">p. 232</note>
+               <lb n="5"/> αἰτίαν υίνεται καὶ τῶν τῆς ψυχῆς μορίων συμβαίνει τοῦτο τὸ πάθος <lb n="6"/>
 καὶ τὸ ἀναμιμνῂσκεσθαι· οὐ γὰρ οἱ αὐτοί εἰσι μνημονικοὶ καὶ ἀναμνηστικοί,
 ἀλλ’ ὡς ἐπὶ τὸ πολὺ μνημονικώτεροι μὲν οἱ βραδεῖς, ἀναμνητικώτεροι δὲ
 οἱ τακεῖς καὶ εὐμαθεῖς. ἐπεὶ δὲ σαφέστερα τῶν ἐνεργειῶν τὰ ἐφ’ ἃ αἱ <lb n="10"/>
@@ -134,15 +146,14 @@ ed. Spengel</note>
 ἄν ἀπλῶς μεμνῆσθαι λέγοιτο. οὕτω μέεμνηται τὰς τοῦ τριγώνου γωνίας
 <note type="footnote">4 — 8 Arist. p. 449b4—8 8—10 cf. Mich. p. 6,21—23 We. 11
 p. 449b9 — 18 20 — p. 2,17 Mich. p. 7,10—8,20</note>
-<note type="footnote">1 — 3 Παρἀφρασος—Σοφονίου B βιβλια scripsi: βιβλίον B): θεμιστίου παράφρασις A 2: θεμιστίου
+               <note type="footnote">1 — 3 Παρἀφρασος—Σοφονίου B βιβλια scripsi: βιβλίον B): θεμιστίου παράφρασις A 2: θεμιστίου
 παράφρασις εἰς τὸ περὶ μνήμης καὶ ἀναμήσεως ἀριστοτέλους C 5 τοῦτο συμβαίνει
 Arist. MSU 6 οἱ cum Arist. C 2: om. ceteri 10 ποιούμεθα Β πρότερον
 AB: πρῶτον Ca δὴ Ca: δεῖ AB 11 ληπτέον Ar. EMY 14 ἐνεστός a
 15 γενόμενον cum Arist. AB: γεγονὸς Ca 18 τὸ om. a ὅτε et τυγχάνει cum
 Arist. LSU om., ut vid. 19 ἐννοῶν Arist. EY 21 τοδὶ (post ἣ) om. B
 22 προσεννοῇ δὲ καὶ χρόνον] προσοπυσης ἔτι τῆς εἰκόνος Ca</note>
-
-<pb n="2"/>
+               <pb n="2"/>
 ὄτι δυσὶν ὀρθαῖς ἴσαι, καὶ τὸν Σωκράτην ὅτι λευκός, τὸ μὲν ὄτι ἔμαθέ ποτε
 παρὰ τοῦδε ἐν τῷδε ἤ ἐθεώρησεε, τὸ δὲ ὅτι ἤκουσεν ἤ ἶδεν ἤ τι τοιοῦτον. <lb n="15"/>
 ἀεὶ γὰρ ὄταν ἐνεργῇ ἡ ψυκὺ κατὰ τὸ μνημονεύειν τὸ δέ ἐστι θεωρεῖν τοῦς
@@ -152,7 +163,7 @@ Arist. LSU om., ut vid. 19 ἐννοῶν Arist. EY 21 τοδὶ (post ἣ) om. 
 νόησις, ἀλλὰ τούτων τινὸς ἕξις ἤ πάρος, ὅταν πρασλαμβάνηται χρόνος, καθ’
 ὅν τὸ ἐγκατάλειμμα γέγονε καὶ ἀφ’ οὖ· τοῦ δἐ νῦν ἐνεργούντος ἠ ἐν τῷ
 νῶν ἐνέργεια οὔκ ἐστι μνήμη, καθάπερ εἴρηται· ἔστι γὰρ τοῦ μὲν παρόντος <lb n="25"/>
-<lb n="10"/> αἴσθησις, τοῦ δὲ μέλλοντος ἐλπίς, τοῦ δὲ γενομένου μνήμη, διὸ μετὰ
+               <lb n="10"/> αἴσθησις, τοῦ δὲ μέλλοντος ἐλπίς, τοῦ δὲ γενομένου μνήμη, διὸ μετὰ
 χρόνου πᾶσα μνήμη· ὅθεν ὅσα χρόνου αἰσθάνεται, ταῦτα μόνα τῶν ζῲων
 καὶ μνημονεύει καὶ μορίῳ ψυχὴς οὐκ ἀλλῳ ἢ ᾦ αἰσθάνεται. ὁ γὰρ πεπτωκὼς
 πέρυσιν εἰς τόνδε τὸν βόθρον ὄνος, σήμερον δὲ ἰδὼν καὶ <lb n="234"/>
@@ -163,8 +174,9 @@ Arist. LSU om., ut vid. 19 ἐννοῶν Arist. EY 21 τοδὶ (post ἣ) om. 
 ιαν
 μνημονεύοντος, τὰ δὲ οὔ· ἔτι τῶν ἀλόγων τὰ μέν τὴν φαντασι
 καθαρώτερα καὶ μνημονικώτερα ὡς μέλισσα καὶ περιστερὰ καὶ τὰ ὅμοια,
-<lb n="20"/> τὸ δὲ συγκεχυμένην ἔχοντα ὡς μυῖαι καὶ σκύληκεσ ἀμνήμονα.</p> <lb n="10"/>
-<p>Ἀπορήσειε δ’ ἅν τις· εἰ δὴ τούτῳ μνημονεύομεν ᾦ καὶ αἰσθανόμεθα,
+<lb n="20"/> τὸ δὲ συγκεχυμένην ἔχοντα ὡς μυῖαι καὶ σκύληκεσ ἀμνήμονα.</p>
+            <lb n="10"/>
+            <p>Ἀπορήσειε δ’ ἅν τις· εἰ δὴ τούτῳ μνημονεύομεν ᾦ καὶ αἰσθανόμεθα,
 οὐκ ἄν εἴη μνήμη τῶν νογτῶν· εἰ δὲ ἔστι (μνημονεύομεν γὰρ τῶν
 θεωρημάτων, καὶ τούτων μάλιστα τοῖς καθολικωτέροις ὁ νοῦς ἐνδιατρίβει), <lb n="15"/>
 λείπεται μὴ μόνης τῆς αἰσθητικῆς ψυκῆς τὸ μεμνῆσθαι λέγειν, ἀλλὰ καὶ
@@ -179,20 +191,19 @@ Arist. LSU om., ut vid. 19 ἐννοῶν Arist. EY 21 τοδὶ (post ἣ) om. 
 καὶ ἡ μνήμη καθ’ αὑτὴν μὲν ἐνεργεῖ περὶ τοὺς ἐν τῇ φαντασίᾳ τύπους καὶ
 <note type="footnote">1 exemplum Socratis ipse addidit 18—20 nova, cf. Soph. De an p. 55,27 ss.
 21—p. 3,25 Mich. p. 8,28—11,12</note>
-<note type="footnote">4 ἐαυτοὺς Aa: αὑτοὺς BC 8 γέγονε καὶ ἀφ’ οὖ, B, evanidus A (Michael): ἐγκαταλέλεειπται
+               <note type="footnote">4 ἐαυτοὺς Aa: αὑτοὺς BC 8 γέγονε καὶ ἀφ’ οὖ, B, evanidus A (Michael): ἐγκαταλέλεειπται
 Ca ante ἡ add. ἢ a 12 ψυχῆς Ca, cf. Mich. p. 8,19: ψυχικῶ AB
 13 βόρβορον B βόθρον etiam Mich.) 14 ἀναχωρήσας AB Mich.: ἀναγνωρίσας Ca
 πρῶτον AB πρῶτον πέπτωκεν ἐν αὐτῶ Μich. CRP, πρότερον recte Sa): εἰς τόνδε τὸν
 βόθρον Ca 17 συναίσθεται B 18 ἔτι τῶν ἀλόγων ] καὶ τούτων C: C: καὶ a
 19 primum καὶ om. Ca 20 ἀλήμονα Spengel cf. p. 5,25. 16,4.7: ἄμνημα ABa
 21 ἀπορήσειε δ’ ἄν Ca: ἀπορήσειεν ἄν AB 23 διατρίβει B</note>
-
-<pb n="3"/>
+               <pb n="3"/>
 τὰ ἐγκαταλέίμματα, κατὰ συμβεβηκὸς δὲ περὶ τὰ καθόλου· ὥστε ἔστι καθ’ <lb n="30"/>
 αὑτὸ μἐν ἡ | μνήμη τοῦ πρώτου αἰσθητικοῦ, οὖ καὶ ἡ φαντασία, τοῦ δὲ <lb n="235"/>
 νοουμένου κατὰ συμβεβηκός. συμβαίνει γὰρ τὸ αὐτὸ πάθος ἐν τῷ νοεῖν,
 ὅπερ καὶ ἐν τῷ διαγράφειν· ἐκεῖ τε γὰρ οὐδέν προσχρώμενοι τῷ τὸ ποσὸν <lb n="5"/>
-<lb n="5"/> ὡρισμένον ἐἶναι τοῦ τριγώνου ὄμως γράφομεν ὡρισμένον κατὰ τὸ ποσόν
+               <lb n="5"/> ὡρισμένον ἐἶναι τοῦ τριγώνου ὄμως γράφομεν ὡρισμένον κατὰ τὸ ποσόν
 ἐν γὰρ τῇ ἀποδείξει, ὅτι τοῦ τριγώνου αἱ τρεῖς γωνίαι δυσὶν ὁρθαῖς ἴσαι,
 μὴ χρῂζοντες πρὸς τὴν ἀπόδειξιν ὡρισμένου ποσοῦ — κἄν γὰρ δακτυκιαία
 ἐκάστη τῶν πλευρῶν ἢ καὶ σπιθαμιαία ὐποτεθείη κἄν ἥτις οὖν, δειχθήσονται <lb n="10"/>
@@ -217,12 +228,12 @@ Ca ante ἡ add. ἢ a 12 ψυχῆς Ca, cf. Mich. p. 8,19: ψυχικῶ AB
 ἢ συνεργοῦσα ἢ ἐμποδίζουσα, συνεργοῦσα μὲν ὡς ἐπὶ τῶν μαθημάτων
 οἶον γὰρ ἀβάκιον ἐπὶ τούτων τῷ νοΐ χρηματίζει), ἐμποδίζει δὲ πρὸς τὴν
 θεωρίαν τῶν νογτῶν καὶ θείων σχήματα καὶ μεγέθη καὶ κρώματα <lb n="10"/>
-<lb n="30"/> παρεισάγουσα, καὶ αὕτη ἡ αἰτία τοῦ μὴ ἐνδέκεσθαι νοεῖν ἄνευ συνεχοῦς τὰ
+               <lb n="30"/> παρεισάγουσα, καὶ αὕτη ἡ αἰτία τοῦ μὴ ἐνδέκεσθαι νοεῖν ἄνευ συνεχοῦς τὰ
 ἀίδια μηδ’ ἄνευ χρόνου τὰ ἐν χρόνῳ ὄντα.</p>
-<p>Εἰ δὴ πάντα, ἀφ’ ὦμ ὁ νοῦς τὸ καθόλου συλᾷ, φανταστά, ἡ δἐ <lb n="15"/>
-<note type="footnote">16 cf. Soph. De an. p. 120,9 H. 25—p. 4,4 Mich. p. 12,15—25 30.
+            <p>Εἰ δὴ πάντα, ἀφ’ ὦμ ὁ νοῦς τὸ καθόλου συλᾷ, φανταστά, ἡ δἐ <lb n="15"/>
+               <note type="footnote">16 cf. Soph. De an. p. 120,9 H. 25—p. 4,4 Mich. p. 12,15—25 30.
 Mich. p. 11,21.25. 26</note>
-<note type="footnote">l τὰ ABa: τοῦ C 1. 2 καθ’ αὑτὶ μἐν post μνήμη Ca 3 τὸ om. a
+               <note type="footnote">l τὰ ABa: τοῦ C 1. 2 καθ’ αὑτὶ μἐν post μνήμη Ca 3 τὸ om. a
 6 τρεῖς om. B 8 ὑποτεθῇ coni. Spengel κἄν . . . ἐστιν Mich.) 10 ἢ (ante
 ἰσόπλευρον) om. B (habet Mich.) ἤ τι τοιοῦτον B (Mich. Sa) 12 κατηγορίαν
 τινὰ AB 13 πρὸ] πρὸς B 16 φησιν ὁ ΑΒa: φησι C 17 συνημμένη
@@ -232,13 +243,12 @@ sed cf. etiam Mich. p. 11,28 νοήσεσιν Ca cf. Soph. De an. (Micb.): κι�
 δὲ om. AB, sed v. Mich. 20 ὠς om. Ca οἶον Mich.) 21 ὄψεται Ca (evan. A)
 22 ὅλως Ca 28 τῶν οἳ A 31 μὴ ἐν χρόνω ABa; μηδὲν ὑπὸ χρόνον C
 32 δὴ AB Mich.: δὲ Ca</note>
-
-<pb n="4"/>
+               <pb n="4"/>
 φαντασία καὶ ἠ μνήμη τῷ ὑτοκειμένῳ ταὐτό παθη γὰρ ἄμφω τῆς κοινῆς
 αἰσθήσεως), ἅμα δῆλον ὡς τῶν νοητῶν μνήμη καὶ φαντασία κατὰ
 συμβεβηκός, καὶ ὅτι τῷ πρώτῳ αἰσθητικῷ τούτων ἡ γνῶσις καὶ χρόνου
 δήπουθεν καὶ κινήσεως. διὸ καὶ ἐτέροις τισὶν ὑπάρχει τῶν ζῲων καὶ <lb n="20"/>
-<lb n="5"/> οὐ μόνον ἀνθρώποις καὶ τοῖς ἔχουσι δόξαν καὶ φρόνησιν. εἰ δὲ καὶ τῶν
+               <lb n="5"/> οὐ μόνον ἀνθρώποις καὶ τοῖς ἔχουσι δόξαν καὶ φρόνησιν. εἰ δὲ καὶ τῶν
 νογτικῶν τινος μορίων ἦν καὶ τὴς λογικῆς ψυχῆς, οὐκ ἄν ὑπῆρχε πολλοῖς
 τῶν ζῲων, ἴσως ἴσως δὲ οὐδενὶ τῶν αλόγων διὰ τὸ μηδὲ πᾶσι τῷ μὴ πάντα <lb n="25"/>
 χρόνου αἴσθησιν ἔχειν. ἀεὶ γὰρ ὅταν ἐνεργῇ τῇ μνήμῃ, καθάπερ καὶ πρότερον
@@ -247,8 +257,8 @@ sed cf. etiam Mich. p. 11,28 νοήσεσιν Ca cf. Soph. De an. (Micb.): κι�
 οὖν ἐστι τῶν τῆς ψυκῆς μνήμη ψανερόν, ὅτι οὖπερ καὶ ἡ φαντασία, καὶ
 ἔστι μνημονευτὰ μὲν καθ’ αὑτὰ ὦν ἐστι φαντασία, κατὰ συμβεβηκὸς δὲ
 ὅσα μὴ ανευ φαντασιας.</p>
-<p>Ἀπορήσειε δ’ ἄν τις, πῶς ποτε τοῦ μὲν πάθους μόνου παρόντος ἐν <lb n="5"/>
-<lb n="15"/> τῇ φαντασίᾳ καὶ τοῦ ἐγκαταλείμματος, τοῦ δὲ πράγματος ἀπόντος μνημονεύει
+            <p>Ἀπορήσειε δ’ ἄν τις, πῶς ποτε τοῦ μὲν πάθους μόνου παρόντος ἐν <lb n="5"/>
+               <lb n="15"/> τῇ φαντασίᾳ καὶ τοῦ ἐγκαταλείμματος, τοῦ δὲ πράγματος ἀπόντος μνημονεύει
 τὸ μὴ παρόν· τοῦ γὰρ πράγματος ἡ μνήμη, οὐ τοῦ τύπου. ὡς ἄν δὲ καὶ
 λύσεως τύχοιμεν εὐπετέστερον καὶ σαφὴ τά τε εἰρημένα καὶ τὰ ἑξῆς <lb n="10"/>
 γένοιτο, μικρόν τι τῶν κατὰ τὴv φαντασίαν ἄνωθεν διαρθρώσωμεν πρότερον.
@@ -258,7 +268,7 @@ sed cf. etiam Mich. p. 11,28 νοήσεσιν Ca cf. Soph. De an. (Micb.): κι�
 τὸ δέ ἐστιν ἡ καρδία), καθάπερ οἱ σφραγιζόμενοι τοῖς δακτυλίοις. τὸ γοῦν
 τοιοῦτον ἐγκατάλειμμα, ὅπερ ὑπομένει καὶ μὴ μὴ τοῦ αἰσθτοῦ παρόντος,
 φαντασίαν καλοῦσι, διὸ καὶ οὕτως ταύτην ὁρίζονται τύπον ἐν ἡγεμονικῷ. <lb n="20"/>
-<lb n="25"/> μήποτε δὲ οὐχ ὁ τύπος αὐτός ἐστι φαντασία, ἀλλ’ ἡ περὶ τὸν τύπον τῆς
+               <lb n="25"/> μήποτε δὲ οὐχ ὁ τύπος αὐτός ἐστι φαντασία, ἀλλ’ ἡ περὶ τὸν τύπον τῆς
 φανταστικῆς δυνάμεως ἐνέργεια. ἦμεν γὰρ ἄν ἐν φαντασίᾳ καὶ μὴ ἐνεργοῦντες
 περὶ αὐτόν, ἔχοντες αὐτόν, καὶ ἅμα ἄν ἐν πλείοσι φαντασίαις καὶ
 τοσαύταις ὅσων καὶ τὸν τύπον σῲζομεν. ἔτι ἤτοι τὴν ἐγγινομένην νῦν καὶ <lb n="25"/>
@@ -269,7 +279,7 @@ sed cf. etiam Mich. p. 11,28 νοήσεσιν Ca cf. Soph. De an. (Micb.): κι�
 <note type="footnote">4—16 Arist. p. 15—27 6 cf. Mich. p. 13,8 15 ἐγκατάλειμμα
 p. 13,27 16—20 transitum ipse facit (cf. Mich. p. 2,20. 14,7. 8) 20 — p.
 Mich. p. 2,31—4,12 22 καθάπερ—δακτυλίοις Arist. p.</note>
-<note type="footnote">5 ἀνθρώπῳ Arist. LSU καὶ (post δόξαν)] ἢ Arist. 8 ἔχει C ἀεὶ]
+               <note type="footnote">5 ἀνθρώπῳ Arist. LSU καὶ (post δόξαν)] ἢ Arist. 8 ἔχει C ἀεὶ]
 δεῖ Arist. EI 9 προσαισθάνεται Spengel, sed προαισθάνεται etiam Arist. libri prave
 praeter LU 10 ἢ ἔπαθεν post ὕστερον a: del. Spengel 11 ἡ μνήμη Arist.
 EMY ἡ om. Arist. LS 12 ἔστι Ca: ἔστι με) AB ὦν ἐστι φαντασία]
@@ -277,8 +287,7 @@ EMY ἡ om. Arist. LS 12 ἔστι Ca: ἔστι με) AB ὦν ἐστι φαν
 16 δὲ om. a 17 τύχωμεν A εὐπετέστερον corr. ex εὐτελέστερον A
 22 δακτύλοις AB 25 αὐτός B Mich.: οὖτος ACa 27 ἄμα ἄν] ἦμεν ἄν C: ἅμα
 ἄν ἦμεν Mich. 29 εἰκόνα] ἔτι Ca 32 τι Ca Mich.: τοι AB</note>
-
-<pb n="5"/>
+               <pb n="5"/>
 τρίτον αἴσθησις, ἡ περὶ τὸ αἰσθητὸν ἐνέργεια Τ[Ης δυνάμεως· καὶ ἐπὶ τῆς
 νοήσεως δὲ τὸ μὲν νοητόν, τὸ δὲ νοῦς, τὸ δὲ νόησις), οὕτως ἔχειν καὶ <lb n="5"/>
 περὶ τὴρ φαντασίαν ὑποληπτέον· τὸ μέν τι εἶναι ρανταστικόνμ, τὸ δὲ
@@ -303,7 +312,7 @@ EMY ἡ om. Arist. LS 12 ἔστι Ca: ἔστι με) AB ὦν ἐστι φαν
 κρᾶσιν ἔχουσιν. ὥσπερ οὖν ἐν ὔδατι ῥέοντι οὐκ ἂν ἡ ἐν τῷ δακτυλίῳ
 ἐνσημανθείη σθραγίς, οὕτως οὔθ’ οἰς τὸ αἰσθητήριον δι’ ἡλικίαν ἢ νόσον
 ὂν] ἐν κινήσει, μνήμη γίνεται, οὔτ’ αὖ οἶς σκληρότερον, ὥσπερ οὐδὲ ἐν <lb n="5"/>
-<lb n="25"/> λίθῳ. διόπερ οἵ τε σφόδρα νέοι καὶ οἱ γέροντες ἀμνήμονές εἰσι· ῥέουσι
+               <lb n="25"/> λίθῳ. διόπερ οἵ τε σφόδρα νέοι καὶ οἱ γέροντες ἀμνήμονές εἰσι· ῥέουσι
 γὰρ οἱ μὲν κατὰ τὴν αὔξησιν, οἱ δὲ διὰ τὴν φθίσιν. ἔοικε γὰρ ἐν τοῖς
 γέρουσιν ἡ καρδία, τὸ πρῶτον αἰσθητικόν, τοῖς παλαιοῖς τῶν οἰκοδομημάτων· <lb n="10"/>
 ὥσπερ γὰρ θρύπτεται ψυχομένη καὶ τοὺς ἐν αὐτῇ τῶν πραγμάτων
@@ -315,15 +324,14 @@ EMY ἡ om. Arist. LS 12 ἔστι Ca: ἔστι με) AB ὦν ἐστι φαν
 <note type="footnote">6—13 cf. Mich. p. 4,30—5,6 13—25 cf. Mich. p. 14,9—14. 19.
 p. 450b5 — 7—30 — 7 27 — 30 Mich. p. 14,15—18 30—32
 —p. 6,1 cf. Mich. p. 14,25. 26</note>
-<note type="footnote">3 τι Ca Mich.: τοι AB 6 post δὲ add. νοεῖν A 8 γενόμενον B γινόμενον
+               <note type="footnote">3 τι Ca Mich.: τοι AB 6 post δὲ add. νοεῖν A 8 γενόμενον B γινόμενον
 etiam Mich.) 15 δὲ AB (coni. Speugel): δ’ ἐν Ca 17 ἐγγράρεσθαι ABa
 ἐγγεγράρθαι C 19 τε om. Ca 21 καὶ ante καθ’ add. Β 22 δαχύλω AB
 23 οὔθ’ Spengel : οὐδ’ libri 24 ὂν delevi 26 κατὰ] διὰ ex Arist. coni.
 Spengel διὰ] κατὰ B ἐν Ca: ἐπὶ AB 28 ψηχομένη Spengel, sed
 V. Mich. 29 ἀλγλιμμένην AB Mich.: ἐκλιθουμένην C: ἐκλιμμένην a αὐτοῖς
 AB Mich.: αὐτῆ Ca 30 οἱ λίαν ante βραδεῖς add. Arist. EY</note>
-
-<pb n="6"/>
+               <pb n="6"/>
 ἐκτίθεμεν· ετοιμότεροι γὰρ παὸς τὴν λύσιν νῦν μᾶλλον ἢ πρότερον. εἰ δὴ <lb n="20"/>
 τοιοῦτόν ἐστι τὸ συμβαῖνον περὶ τὴν μνήμην, πότερον τοῦτο μνημονεύει τὸ
 πάθος ἡ ψυχὴ ἢ ἐκεῖνο ἀφ’ οὖ ἐγένετο; εἰ μὲν γὰρ τοῦτο, τῶν ἀπόντων
@@ -333,7 +341,7 @@ AB Mich.: αὐτῆ Ca 30 οἱ λίαν ante βραδεῖς add. Arist. EY</
 ἀλλ’ οὐκ αὐτοῦ τούτου; ὁ γὰρ ἐνεργῶν τῇ μνήμῃ θεωρεῖ τὸ πάθος τοῦτο καὶ
 αἐσθάωεται τούτου. πῶς οὖν τὸ μὴ παρὸν μνημονεύει; εἴη γὰρ ἂν καὶ Ι
 ὀφᾶν τὸ μὴ παρὸν καὶ ἀκούειν. ἢ ἔστιν ὡς ἐνδέχεται καὶ συμβαίνει <lb n="240"/>
-<lb n="10"/> τοῦτο; οἶον γὰρ τὸ ἐν πίνακι γεγραμμένον ζῷον καὶ ζῷόν ἐστι καὶ εἰκών,
+               <lb n="10"/> τοῦτο; οἶον γὰρ τὸ ἐν πίνακι γεγραμμένον ζῷον καὶ ζῷόν ἐστι καὶ εἰκών,
 καὶ τῷ ὐποκειμένῳ ἔν, τῷ δὲ λόλῳ διάρορον, οὕτω κάνταῦθα. καὶ ὣσπερ <lb n="5"/>
 ἐκεῖ, ὃταν μὲν ὡς καθ’ αὑτὸ τὸ ζῷον ἐρᾷ τὸ τὸ ἐν πένακι τέχνην
 θαυμάζων ἢ κακίζων μόνον, μὴ προσεννοούμενος ὄτι μίμημά ἀστιν ἄλλου,
@@ -343,7 +351,7 @@ AB Mich.: αὐτῆ Ca 30 οἱ λίαν ante βραδεῖς add. Arist. EY</
 ᾖ μὲν οὖν καθ’ αὐτό, θεώρημα ἢ φάντασμά ἐστιν, ᾖ δὲ ἄλλου
 οῖον εἰκών, μνημόωευμα. ὅταν μὲν γὰρ ἐνεργῇ περὶ τὸν ἐν τῇ καρδίᾳ
 τύπον ἡ κοινὴ αἴσθησις αὐτόν, αὐτόν, θεώρημα τοῦτο, ὡς εἴρηται, ἢ φάντασμα <lb n="15"/>
-<lb n="20"/> λέγεται· ὅταν δὲ ἐνεργοῦσα προσαισθάνηται καὶ ὅτι ἂλλου ἐστίν, ἤδη τοῦτο
+               <lb n="20"/> λέγεται· ὅταν δὲ ἐνεργοῦσα προσαισθάνηται καὶ ὅτι ἂλλου ἐστίν, ἤδη τοῦτο
 εἰκὼν καὶ μνημόνευμα, καὶ ἡ τοταύτη τῆς ψυχῆς ἐνέργεια μνήμη. διὰ
 τοῦτο ἐνέοτε ὃ διἀ μνήμης ἔχομεν, οὐκ ἴσμεν εἰ κατὰ τὸ αἰσθέσθαι συνέβη· <lb n="20"/>
 πολλάκις γὰρ τῶν ψυχικῶν ἐξαπλουμένων νοημάτων φανταζόμεθά τινα, ὦν
@@ -353,12 +361,12 @@ AB Mich.: αὐτῆ Ca 30 οἱ λίαν ante βραδεῖς add. Arist. EY</
 μετὰ δὲ ἐννοοῦμαι τὸν λόγον, οὐκ ἐνπυμοῦμαι δὲ ἀφ’ οὖπερ ἤκουσα·
 ἀποπῶν οὖν λέγω, ἆρα πατὴρ τοῦ λόγου νῦν αὐτός εἰμι, ἢ πόθεν ἔχω
 τοῦτον; καὶ τολαντεύομαι. ὄταν οὖν ἐνθυμηθῶ ἄλλο|θέν με τὸν λόγον <lb n="241"/>
-<lb n="30"/> ἔχειν, μνήμη τότε γίνεται, νόημα δὶ πρότερον. γίνεται δὲ καὶ τοὐναντίον
+               <lb n="30"/> ἔχειν, μνήμη τότε γίνεται, νόημα δὶ πρότερον. γίνεται δὲ καὶ τοὐναντίον
 ἐνίοτε, οἶον συνέβη Ἀντιφέροντι τῷ ’Ωρείτῃ καὶ ἄλλοις ἐξισταμένοις· τὰ
 <note type="footnote">2 — 11 p. 450 b 11—23 12—16 Mich. p. 15,12 — 21 17.
 p. 450b25 —27 18—21 Mich. p. 15,21—24 22—30 Mich.
 30 — p. 7,1 Arist. p. 451a8 — 11</note>
-<note type="footnote">1 ἐκτίθεμεν AB (of. Mich.): διέλωμεν Ca μᾶλλον om. Ca 2. 3 2. 3 πάθος
+               <note type="footnote">1 ἐκτίθεμεν AB (of. Mich.): διέλωμεν Ca μᾶλλον om. Ca 2. 3 2. 3 πάθος
 om. C 4 τούτου a (Arist. praeter L) 5 οὖπερ] οὖ C (Arist.) μὴ Ca:
 s. s. B: om. A εἴτ’] εἰ A 6 ἡ τούτου αὐτοῦ B (Arist. MU, εἰ τούτου αὐτοῦ
 LS, τούτου αὐτοῦ ἡ EY): ἡ τούτου ACa, quod Aristoteli restituit Freudenthal, Rh. Μ.
@@ -368,8 +376,7 @@ om. ABa 11 λόγῳ δὲ a 13 θαυμάζων ἢ κακίζων ABa Mich.
 add. Arist. libri, cf. Freudenthal 1. c. p. 402 μὲν om. B 18. 19 τοῦ et τύπου a
 19 αὐτὸν] καθ’ αὐτό coni. Spengel, sed v. Mich. 20 ἐστὶν εἰκών, ἤδη τοῦτο Mich.
 29 ὅτε A 31 ἐνίοτε om. Arist. EY</note>
-
-<pb n="7"/>
+               <pb n="7"/>
 γὰρ φαντάσματα ἔλεγον ὡς ηενόμενα καὶ ὡς μνημονεύοντες· πάλιν οὖν <lb n="5"/>
 ἕτεροι τὰ αἰσθήματα ὡς φαντάσματα, καὶ ἀλλοι τὸ ἔμάλιν. τοῦτο δὲ γίνεται,
 νεται, ὅταν τις τὴv μὴ εἰκόνα ὡς εἰκόνα θεωρῇ ἤ τὴν εἰκόνα ώς μὴ
@@ -379,7 +386,8 @@ add. Arist. libri, cf. Freudenthal 1. c. p. 402 μὲν om. B 18. 19 τοῦ et 
 ὄντος τοῦ τοιούτου φαντάσματος πράηματός τινος χρονιςσθέντος μετὰ τὴν
 γένεσιν, καὶ τίνος μορίου τῶν ἐν ἠμῖν, ὅτι τοῦ πρώτου αἰσθητικοῦ καὶ ᾠ <lb n="15"/>
 κρόνου αἰσθανόμεθα.</p>
-<lb n="10"/> <p>Περὶ δὲ τοῦ ἀναμιμνῄσκεσθαι λοιπὸν εἰπεῖν. πρῶτον μὲν οὖν ὄσα
+            <lb n="10"/>
+            <p>Περὶ δὲ τοῦ ἀναμιμνῄσκεσθαι λοιπὸν εἰπεῖν. πρῶτον μὲν οὖν ὄσα
 ἐν τοῖς ἐπιχειρηματικοῖς λόγοις καὶ προβληματικοῖς ἠμῖν ἀποδέδεικται, δεῖ
 τιθέναι ὠς ἀληθῆ καὶ ὐπάρχοντα, ταῦτα δέ ἔστι τὸ μήτε μνήμης ἀνάληψιν <lb n="20"/>
 τὴν ἀνάμνησιν μήτε λήψιν εἶναι· οῦτε γὰρ ἀναμιμνῄσκεσθαι λέγομεν τὸν
@@ -389,7 +397,7 @@ add. Arist. libri, cf. Freudenthal 1. c. p. 402 μὲν om. B 18. 19 τοῦ et 
 υστερον δὲ τὸ μὲν ἀποβαλόντα τὸ δὲ σῴζοντα, ἔκ δὲ τοῦ σῳζομένου τὸ
 λοιπὸν ἀναλαμβάνοντα. ἔγει γὰρ ὦδε· ὅταν ὁ τύπος ὅλος καὶ τὸ ἀναζωγράφημα
 τὸ ἐν τῷ πρώτῳ αἰσθητηριῳ ἀπὸ τῆς κατ’ ἐωέργειαν αἰσθήσεως <lb n="30"/>
-<lb n="20"/> ἐγγινόμενον ὐπομένῃ καὶ σῴζηται τρανές Ι τι καὶ φαιδρὸν καὶ καθαρὸν <lb n="242"/>
+               <lb n="20"/> ἐγγινόμενον ὐπομένῃ καὶ σῴζηται τρανές Ι τι καὶ φαιδρὸν καὶ καθαρὸν <lb n="242"/>
 οὕτως, ὥστε ὅλον αὐτὸ δύνασθαι τὴν ψυχὴν κινεῖν καὶ ὅλον ὑπ’ αὐτῆς
 ὁράσθαι καὶ προβάλλεσθαι ὡς εἰκώ τινος, ἡ μνήμη τούτο, τερὶ ἦς εἴρηται·
 ὅταν δὲ μέρος μέν τι τοῦ ὅλου υένῃ, μέρος δέ τι ἠράνισται ἢ χρόνῳ ἢ <lb n="5"/>
@@ -404,7 +412,7 @@ add. Arist. libri, cf. Freudenthal 1. c. p. 402 μὲν om. B 18. 19 τοῦ et 
 <note type="footnote">2 cf. Mich. p. 17,28.29 2—13 Arist. p. 451b11 — 21, sed ad 7 cf. Mich. p.
 ad 11 Mich. p. 20,16 —18 cf. Mich. p. 20,30 —21,18 1830
 p. —15 30 Arist. p. 451 b 7. 8 — p. 8,8 Mich. p. 19,20 — 31</note>
-<note type="footnote">1 γινόμενα B (Arist. M) πάλιν οὖν ACa: ὥσπερ αὖ B 5 ante καθ’ add. ὡς Arist.
+               <note type="footnote">1 γινόμενα B (Arist. M) πάλιν οὖν ACa: ὥσπερ αὖ B 5 ante καθ’ add. ὡς Arist.
 6 ἐστιν ἡ μνήμη Arist, SU 7 τοῦ τοιούτου B Mich.: καθ’ αὑτὸν in ras. A, ut νιδ.:
 καθ’ αὑτὸ Ca εἰκόνος πράγματός τινος Mich. 9 αἰσθόμεθα AB 10 tit. ΙΙερὶ ἀναμνήσεως
 add. AB 12 τίθεσθαι Arist. EMY καὶ ABa: om. C ἐστι om. Β
@@ -413,8 +421,7 @@ add. AB 12 τίθεσθαι Arist. EMY καὶ ABa: om. C ἐστι om. Β
 etiam Mich. R 23 ἠράνιστο Ca 25 τρανοῦς AB (sed ς evan. in B) Mich.
 CRP: τρανοῦ Ca Mich. Sa 26 κινήσεις AB Mich.: om. Ca, ceterum Michaelis verba
 corrupit 29 fort, του</note>
-
-<pb n="8"/>
+               <pb n="8"/>
 „μῆνιν ἄειδε θεὰ Πηληϊάδεω Αχιλλῆος“. εἰ μὲν οὖν ὁ τύπος οὖτος μένει
 ἄπας ἰσχυρός τε καὶ καθαρός, ὡς ἀνεμποδίστως ὄλον ἠμᾶς αὐτὸν δύνασθαι
 ἀπαγγέλλειν καὶ ὄλον προβάλλεσθαι, τοῦτο μνήμη· εἰ εἰ δὲ τὸν „μῆνιν ἄειδε <lb n="20"/>
@@ -439,12 +446,13 @@ corrupit 29 fort, του</note>
 λύραν καὶ γέγονεν ἐν τῇ ψυκῇ τύπος καὶ τῆς λύρας καὶ τοῦ Κοπίσκου·
 εἶδον μετὰ ταῦτα Σωκράτην φέρε εἰπεῖν κρατοῦντα λύραν, καὶ εὐθῶς
 ἀνερνήσθην τῆς τοῦ Κορίσκου λύρας, εἶτα Κορίσκου. πάλιν πάλιν ἤκουσά του <lb n="20"/>
-<lb n="25"/> ᾄδοντος „δύο ψυκαὶ ἐξήρκοντο, καὶ μία πρός ἀλλην ἔλεγε, ποῖ πορευτέον“.
+               <lb n="25"/> ᾄδοντος „δύο ψυκαὶ ἐξήρκοντο, καὶ μία πρός ἀλλην ἔλεγε, ποῖ πορευτέον“.
 μετὰ δέ τινας Χρόνους ἤκουσα ἄλλου ᾄδοντος τὸ μὲν μέλος κατὰ ῤυθμὸν
 ἐκεῖνον, λόγον δὲ ἔτερον οἶον „ὁ νοῦς ὁ πρῶτος ἀγει με καὶ πάλιν κάτω <lb n="25"/>
 φέρει“, καὶ κινηθεὶς ἀπὸ μόνου τοῦ μέλους ἦλθον εἰς ἀνάμνησιν τοῦ πρώτου
 λόγοθ „δύο ψυχαὶ ἐξήρχοντο“ καὶ τοῦ ᾄδοντος.</p>
-<lb n="30"/> <p>Τούτων ὄντων εἰσὶ μὲν τύποι τινὲς ἐξ ἀνάγ|κης ἀκολουθοῦντες ἀλλήλοις· <lb n="244"/>
+            <lb n="30"/>
+            <p>Τούτων ὄντων εἰσὶ μὲν τύποι τινὲς ἐξ ἀνάγ|κης ἀκολουθοῦντες ἀλλήλοις· <lb n="244"/>
 άνάγκη γὰρ τὸν μνησθέντα πυρὸς συνεννοῦσαι καὶ θερμότητα, καὶ
 τὸν τυφθέντα ὑπὸ Σωκράτους τῇ τοῦ Σωκράτους ἀναμνήσει καὶ ἅτι ὑπ’
 αὐτοῦ ἐτύφθη ἐν τῷδε τῷ τόπῳ συναναμνησθῆναι. ὅοι δὲ μὴ μὴ ἐξ ἀνάγκης <lb n="5"/>
@@ -452,14 +460,13 @@ corrupit 29 fort, του</note>
 <note type="footnote">9. 10 Mich. p. —13 11. 12 cf. Arist. p. 451b8 —10 13 Micb. p. 247.8
 15—17 Arist. p. 451b11 — 14 17—33 Mich. p. 24,17 244
 add. Soph. 33 — p. 9,8 Mich. p. 25,11 — 23</note>
-<note type="footnote">1 Πηλιάδεω C ἀχιλλῆος A: Ἀχιλλέως Spengel 4 ἐκλέλοιπε B οὐ μένει Mich.)
+               <note type="footnote">1 Πηλιάδεω C ἀχιλλῆος A: Ἀχιλλέως Spengel 4 ἐκλέλοιπε B οὐ μένει Mich.)
 5 κινηθεῖσα Ca Mich.: κινηθῆ AB εὑρήσει Ca Mich.: καὶ εὑρήσει AB 10 ἐπανάληψιν
 AB Mich.: ἀνάληψιν Ca 16. 17 εἰ δὲ — κινηθήσεται ABa: om. C 23 εἶδον
 AB Mich.: εἶδε Ca 24 ἀνεμνήσθην AB Mich.: ἀνεμνήσθη Ca τοῦ οm. AB,
 sed. V. Mich. 26 καὶ ante ἄλλου add. B 28 post φέρει add. με ABa (om.
 etiam Mich, a et metro refeilitur) 32 καὶ om. C</note>
-
-<pb n="9"/>
+               <pb n="9"/>
 ἐπὶ πολύ. ἔσται δὲ τὸ λεγόμενον ὦδε δῆλον· πολλάκις ἐγὼ βουληθεὶς εἰπεῖν
 Λυκάβητον οὐκ ἀνεμιμνῃσκόμην, ἐξ οὖ εἴθισα ἐμαυτὸν ἐνθυμεῖσθαι λύκον
 ἄρχονται γὰρ ἀμφότεροι ἐκ τῆς λυ συλλαβῆς)· ἀφ’ οὖ δὴ λύκου ὁρμώμενος <lb n="10"/>
@@ -490,7 +497,7 @@ etiam Mich, a et metro refeilitur) 32 καὶ om. C</note>
 <note type="footnote">8 — 15 Arist. p. 451b 14 — 22 15 — 23 Mich. p. —19 20. 21 καὶ
 ψυχρότητα ipse addidit, item 22. 23 τὸ — συμφέρον 23. 24 Mich. p. 27,3 6
 24—26 Mich. p. 26,30 —27,1 26 — p. 10,6 Mich. p. 27,9—29</note>
-<note type="footnote">1 ἐπὶ τὸ τολὺ C 2 et 4 λυκάβαντα Ca, sed v. Mich., λυκαβηττὸν recte Mich. S
+               <note type="footnote">1 ἐπὶ τὸ τολὺ C 2 et 4 λυκάβαντα Ca, sed v. Mich., λυκαβηττὸν recte Mich. S
 2 ἐμαυτὸν C Mich.: αὐτὸν ABa (Mich. P, αὑτὸν R) 3 ἀμφότερα rectius Mich,
 praeter a 4 Ταυρομενείτου AB 4. 5 ἐπιλανθανόμενος AB (Mich. SRP): ἐπιλαθόμενος
 Ca (Mich. Ca) 6 et 8 πρλευρώυην AB πλεευρόνην Mich. CRP): πλευρῶνα C:
@@ -503,8 +510,7 @@ Freud, p. 409 12 toi] to ex Arist. Spengel, sed cf. p. 10,10 13 διὰ τοῦ�
 ἦρεν AB: ᾖσεν Mich. SCRP 18 τύχη B ὁ Ca Mich.: τὸ AB 19 τοῦ
 ὁμοίου καὶ ἐναντίου Ca (Mich., Arist.): τῶν ὁμοίων καὶ ἐναντίων AB 21 θερμότητος
 ABa: θερμοῦ C πολλῶν ABC Mich.: πολλῶν ἄν a (Dem.)</note>
-
-<pb n="10"/>
+               <pb n="10"/>
 ἢ τῶν ἀντικειμένων ἢ τῶν ἐγγώς· ὅταν δὲ μὴ ζητοῦσιν ἀναμνησθῆναί tqu <lb n="20"/>
 γένηται, ἐξ οὐδενὸς τούτων. ὅταν γὰρ ῲδῆς τις μνησθεὶς ἀναμνησθῇ Σωκράτους,
 οὔτ’ ἀφ’ ὁμοίου οὔτ’ ἐξ ἀντικειμένων ἢ τῶν ἐγγὺς ἐποιήσατο τὴν
@@ -519,7 +525,7 @@ ABa: θερμοῦ C πολλῶν ABC Mich.: πολλῶν ἄν a (Dem.)</note
 ἀναμιμνῂσκηται ὦν πάλαι τὴν ἐπιστήμην ἔλαβε. ζητήσει γὰρ κἀκεῖ ἀρχὴν
 λαβέσθαι κινήσεως, μεθ’ ἣν ἐκείνη ἔσται. διὸ τάχιστα καὶ κάλλιστα γινονται
 ἀπ’ ἀρχῆς αἱ ἀναμνήσεις. ὡς γὰρ ἔχει τὰ πράγματα πρὸς ἄλληλα τῷ <lb n="10"/>
-<lb n="15"/> ἐφεξῆς, οὔτω καὶ αἱ κινήσεις, καὶ ἔστιν εὐμνημόνευτα ὅσα τάξιν τινὰ ἔχει
+               <lb n="15"/> ἐφεξῆς, οὔτω καὶ αἱ κινήσεις, καὶ ἔστιν εὐμνημόνευτα ὅσα τάξιν τινὰ ἔχει
 καὶ πρῶτον καὶ δεύτερον, ὥσπερ τὰ μαθήματα καὶ μάλιστα τὰ γεωμεετρικά,
 τὰ δὲ ἄτακτα φαύλως καὶ χαλεπῶς· ὡς γὰρ ἐπὶ αἰσθητῶν, αὐσθητῶν, εἰ ἐφεξῆς
 κεῖνται καὶ μετὰ τάξεως, καλῶς ἡ ὄψις ὁρᾷ, εἰ δὲ συγκχυμένως, οὐ καλῶς, <lb n="15"/>
@@ -536,10 +542,10 @@ ABa: θερμοῦ C πολλῶν ABC Mich.: πολλῶν ἄν a (Dem.)</note
 ἔστιν οὖν τὸ ἀναμιμνῂσκεσθαι τὸ ἐνεῖναι δύναμιν τὴν κινοῦσαν, λέγω δὲ
 <lb n="30"/> δύναμιν τὴν ὑπάρκουσαν ἀρκήν· αὔτη γὰρ τὴν διάνοιαν ἐποξύνει καὶ ἀνεγείρει
 πρὸς ἀνάλυσιν τοῦ λοιποῦ, τοῦτο δὲ ὥστ’ ἐξ ἐαυτοῦ καὶ ὦν ἔνδον <lb n="5"/>
-<note type="footnote">7. 8 nova 8—12 Mich. p. 28,3 —7 12—17 Arist.
+               <note type="footnote">7. 8 nova 8—12 Mich. p. 28,3 —7 12—17 Arist.
 16 cf. Mich. p. 28,17 17—22 Mich. p. 28,18 —26 22—25 Arist.
 25—31 Mich. p. 28,29—29,3 31 — p. 11,1 Arist. p. 452 a 11.12</note>
-<note type="footnote">1 ἐγγὺς AB σύνεγγυς Mich.), cf. v. 3: ἐξῆς Ca 2 γένηται Ca: γένοιτο AB 5 τὰ om. C
+               <note type="footnote">1 ἐγγὺς AB σύνεγγυς Mich.), cf. v. 3: ἐξῆς Ca 2 γένηται Ca: γένοιτο AB 5 τὰ om. C
 6 καὶ τὰ παλαιὰ Spengel 7 ἠσθήμεθα C 9 prius ttjS B Mich. : om. ACa ἐπὶ
 ABa: ἀπὸ C 10 τὸ ἐφεξῆς Arist. Mich. 11 prius καὶ om. Mich. del. Freud,
 p. 409 cf. 8,15. 11,31 μετὰ τὴν τήνδε A 13 λαβεῖν Arist. (Spengel)
@@ -549,13 +555,12 @@ p. 409 cf. 8,15. 11,31 μετὰ τὴν τήνδε A 13 λαβεῖν Arist. (S
 ἄν] ἐὰν Arist. libri praeter L κινήσῃ κίνησιν B Arist.: κίνησιν κινήση ACa κινήση
 in ras. C 26 ἐσχάτη ABMich.: τελευταία Ca 27 οὔτως om. a
 29 δυνάμει B 31 — p. 11,1 ἔχει ἔνδον C</note>
-
-<pb n="11"/>
+               <pb n="11"/>
 ἔχει κινήσεων κινηθῆναι, ὥσπερ εἴρηται. διὸ δεὶ λαβέσθαι ἀρχῆς. ὅθεν
 τάχιστα δοκοῦσιν ἀπὸ τόπων ἐνίοτε ἀναμιμνῄσκεσθαι, τόπους δὲ ἤ ἃς ἀρχὰς
 ἐνεῖναι δεῖν τῇ ψυχῇ λέγομεν, ἤ τοὺς κατὰ τὰ σύστοιχα καὶ ὅμοια καὶ
 ἀντικείμενα, ὡς ἐν τῇ Διαλεκτικῇ εἴρηται, ἢ τοὺς σωματικοὺς καὶ τὰς ἐν <lb n="10"/>
-<lb n="5"/> τῷδε τῷ μέρει θέσεις. τὸ δὲ αἴτιον, ὅτι ταχὺ ἀπ᾿ ἄλλου ἐπ᾿ ἄλλο ἔρχεται,
+               <lb n="5"/> τῷδε τῷ μέρει θέσεις. τὸ δὲ αἴτιον, ὅτι ταχὺ ἀπ᾿ ἄλλου ἐπ᾿ ἄλλο ἔρχεται,
 οἷον ἀπὸ γάλακτος ἐπὶ τὸ λευκόν, ἀπὸ λευκοῦ ἐπ᾿ ἀέρα, ἀπὸ τούτου
 ἐφ᾿ ὑγρόν, ἀφ᾿ οὗ ἐμνήσθη μετοπώρου, ταύτην ἐπιζητῶν τὴν ὥραν. <lb n="15"/>
 Ἔοικε δὲ ὡς ἐπὶ τὸ πολὺ τὸ μέσον πάντων ἀρχῇ, καὶ ἡ τούτου
@@ -569,10 +574,10 @@ in ras. C 26 ἐσχάτη ABMich.: τελευταία Ca 27 οὔτως om. a
 νοήσεις καὶ ἀνεστραμμένως ποιεῖσθαι, καὶ μετὰ τὸ Ε τὸ Θ νοῆσαι, καὶ
 ἀπὸ τοῦ Θ τὸ Ζ, εἶτα τὸ Η. εἰ μὲν οὖν ἐν τοῖς ἔμπροσθεν τὸ ζητούμενον
 εἴη, οὕτως εὑρήσει ἐλθὼν ἐπὶ τὸ Θ, ὥσπερ εἴρηται· εἰ δ᾿ ἐν τοῖς <lb n="30"/>
-ὄπισθναι, ἐλθὼν ἐπὶ τὸ Α. εἰσὶν οὖν τὰ | κατὰ τὰ στοιχεῖα νοήματα ταῦτα, <note type="marginai">248</note> 
-<lb n="20"/> Ἀθῆναι, Λύκιον, οἶκος Πλάτωνος, νεομηνία, συμπόσιον, Συκράτης, τὸ
-τυφθῆναι ὑπὸ Σωκράτους, λύρα.</p> 
-<p>Τοῦ δὲ ἀπὸ τοῦ αὐτοῦ ἐνίοτε μὲν μνησθῆναι, ἐνίοτε δὲ μὴ αἴτιον,
+ὄπισθναι, ἐλθὼν ἐπὶ τὸ Α. εἰσὶν οὖν τὰ | κατὰ τὰ στοιχεῖα νοήματα ταῦτα, <note type="marginai">248</note>
+               <lb n="20"/> Ἀθῆναι, Λύκιον, οἶκος Πλάτωνος, νεομηνία, συμπόσιον, Συκράτης, τὸ
+τυφθῆναι ὑπὸ Σωκράτους, λύρα.</p>
+            <p>Τοῦ δὲ ἀπὸ τοῦ αὐτοῦ ἐνίοτε μὲν μνησθῆναι, ἐνίοτε δὲ μὴ αἴτιον,
 ὅτι πλείους ἐνδέχεται κινηθῆναι κινήσεις ἀπὸ τῆς αὐτῆς ἀρχῆς· οἷον ἀπὸ <lb n="5"/>
 τῆς πλευρᾶς ὁρμήσειε ἄν τις καὶ εἰς ἔννοιαν πλευρίτιδος καὶ πλευρωνίας·
 <lb n="25"/> εἰ οὖν εἴη συνηθέστερον ἡ πλευρῖτις τῆς πλευρωνίας, ἕλξει μᾶλλον πρὸς
@@ -580,11 +585,11 @@ in ras. C 26 ἐσχάτη ABMich.: τελευταία Ca 27 οὔτως om. a
 δὲ διὰ ταῦτα, ἀλλὰ καὶ εἰ ὁ μὲν παλαιὸς εἴη τῶν τύπων, ὁ δὲ νέος, κινήσει
 μᾶλλον ὁ νέος εἰς τὴν αὑτοῦ ἀνάμνησιν, εἰ μή που εἰς βάθος καθ᾿ ἕξιν
 ἐπιστημονικὴν ὁ παλαιὸς ἐνσεσημασμένος εἴη καὶ πρὸς τούτοις συνήθης· <lb n="15"/>
-<lb n="30"/> ὥσπερ γὰρ νέος ἐστὶ τῇ καθ᾿ ἑκάστην μελέτῃ. ὥσπερ δέ εἰσὶ τινα φύσει
+               <lb n="30"/> ὥσπερ γὰρ νέος ἐστὶ τῇ καθ᾿ ἑκάστην μελέτῃ. ὥσπερ δέ εἰσὶ τινα φύσει
 τόδε μετὰ τόδε (φύσει γὰρ τῇ τε τοῦ πυρὸς ἀναμνήσει ἡ θερμότης ἔπεται
 καὶ τῇ τοῦ ἡλίου ὁ φωτισμός), οὕτω καὶ ἔθει. ἔστι γὰρ ἐξ ἔθους τινά,
 ἅπερ ἀναμνησθέντες εὐθὺς ἀναμιμνῃσκόμεθα καὶ τὰ μετ᾿ αὐτὰ ὄντα. τὸ <lb n="20"/>
-<note type="footnote">1—5 Mich. p. 29,4—12 5—7 Arist. p. 452a 13—16 8—p. 12,8 Mich.
+               <note type="footnote">1—5 Mich. p. 29,4—12 5—7 Arist. p. 452a 13—16 8—p. 12,8 Mich.
 p. 29,23—32,4, sed hic paulo liberius versatur Soph., quam solet 20 cf. Soph. De
 an. p. 128,13 H.
 2 Freud. p. 410 putat, τάχιστα Themistium in Arist. textu invenisse ἃς ABa:
@@ -594,8 +599,7 @@ Mich., Spengel τοῦτο ABC: τοῦτο γὰρ a  16 ἀντεστραμμ�
 om. AB 25 εἴη ABa: om. C 27 ἀλλὰ καὶ εἰ Ca: ἀλλ᾿ εἰ καὶ AB: ἀλλὰ
 κἂν εἴη Mich. 28 καὶ ante καθ᾿ add. B 30 καθ᾿ ἑκάστην ΑΒ Mich.: καθ᾿ 
 ἕκαστον Ca 31 τε om. B</note>
-
-<pb n="12"/>
+               <pb n="12"/>
 δή πολλάκις έθισθὲν ὥσπερ φύσις, καὶ ἐπεὶ ἐν τοῖς φύσει ἐγγίνεται ἁμαρτία
 καὶ παρὰ φύσιν, ἐνδέχεται τοῦτο συμβαίνειν καὶ ἐν τοῖς δι᾿ ἔθος. εἰ δὲ
 τοῦτο, οὐδὲν κωλύει ἀναμνησθέντα τοῦ προτέρου καὶ ἡγουμένου ἁμαρτάνειν <lb n="25"/>
@@ -604,8 +608,8 @@ om. AB 25 εἴη ABa: om. C 27 ἀλλὰ καὶ εἰ Ca: ἀλλ᾿ εἰ κ
 δέῃ ὄνομα ἀναμνησθῆναι, | ἄλλου μὲν παρομοίου μνημονεύομεν, εἰς δὲ <lb n="249"/>
 ἐκεῖνο σολοικίζομεν. ὁ γὰρ βουλόμενος ἀναμνησθῆναι Λεωφάνην μνησθεὶς
 Λεωσθένην ἐσολοίκισεν ὡς πρὸς τὸν Λεωφάνην.</p>
-<p>Τὸ μὲν οὖν ἀναμιμνῄσκεσθαι τοῦτον συμβαίνει τὸν τρόπον, κοινῶς δὲ <lb n="5"/>
-<lb n="10"/> εἰπεῖν περὶ μνήμης καὶ ἀναμνήσεως, ὡς τὸ μέγιστον ἐν ἀμφοτέροις δεῖ
+            <p>Τὸ μὲν οὖν ἀναμιμνῄσκεσθαι τοῦτον συμβαίνει τὸν τρόπον, κοινῶς δὲ <lb n="5"/>
+               <lb n="10"/> εἰπεῖν περὶ μνήμης καὶ ἀναμνήσεως, ὡς τὸ μέγιστον ἐν ἀμφοτέροις δεῖ
 γνωρίζειν τὸν χρόνον ἢ μέτρῳ καὶ ὡρισμένως (ὡς ὃ μνημονεύω ἢ ἀναμιμνῄσκομαι,
 χθὲς εἶδον ἢ πρὸ μηνός) ἢ ἀορίστως, ὡς ἁπλῶς πρότερον
 ᾔσθημαι, καὶ πάλαι ποτὲ τοῦτ᾿ εἶδον καὶ ἤκουσα. εἰ γὰρ μὴ τοῦτο γένοιτο,  <lb n="10"/>
@@ -615,7 +619,7 @@ om. AB 25 εἴη ABa: om. C 27 ἀλλὰ καὶ εἰ Ca: ἀλλ᾿ εἰ κ
 ἠ ἐν τῇ καρδίᾳ καθημένη. ὡς γὰρ ἡ διάνοια κρίνει τὰ μεγέθη οὐ τῷ
 ἀποτείνεσθαι ἔξω πρὸς ἐκεῖνα, ὥσπερ λέγουσιν ἡμᾶς ὁρᾶν οἱ δι᾿ ἐκπομπὴν
 ἀκτίνων τιθέμενοι τὸ ὁρᾶν, ἀλλὰ κινοῦσα τοὺς ἀπὸ τῶν μεγεθῶν ἐναποκει- <lb n="20"/>
-<lb n="20"/> μένους ἐν τῇ φαντασίᾳ τύπους (εἰ γὰρ ἐκείνως ἔκρινεν, ὅτε οὐ παρῆσαν, οὐκ 
+               <lb n="20"/> μένους ἐν τῇ φαντασίᾳ τύπους (εἰ γὰρ ἐκείνως ἔκρινεν, ὅτε οὐ παρῆσαν, οὐκ 
 ἂν ἠδύνατο κρίνειν· νυνὶ δὲ καὶ ἀπόντων κρίνει· οὐδὲν γὰρ ἕτερόν ἐστιν ἡ
 διάνοια ἢ νοῦ μετὰ φαντασίας ἐνέργεια), οὕτως εὔλογον καὶ τὴν αἰσθητικὴν
 ψυχὴν τίθεσθαι κρίνειν τὸν πλείω καὶ ἐλάσσω χρόνον ἔνδον μένουσαν <lb n="25"/>
@@ -625,13 +629,13 @@ om. AB 25 εἴη ABa: om. C 27 ἀλλὰ καὶ εἰ Ca: ἀλλ᾿ εἰ κ
 περίοδον ἀπομνημονεύωμεν, ἐννοοῦμεν καὶ τὰ μέρη (τὸ γὰρ ὅλον ἐκ μερῶν, <lb n="250"/>
 μέρη δὲ ἐνταῦθα κῶλα καὶ κόμματα), τίνι διοίσει ἡ διὰ πάντων ὁμοῦ ἀνάμνησις
 καὶ κατὰ κοινὸν  τῆς ἐν μέρει; ἢ καθόσον συμβαίνει ὧδε μὲν τῇ <lb n="5"/>
-<lb n="30"/> τοῦ ὅλου μνήμῃ καὶ τὸ μέρος συνεννοεῖν, ἐκεῖ δὲ τῇ τοῦ καθόλου καὶ τὸ
+               <lb n="30"/> τοῦ ὅλου μνήμῃ καὶ τὸ μέρος συνεννοεῖν, ἐκεῖ δὲ τῇ τοῦ καθόλου καὶ τὸ
 καθ᾿ ἕκαστον; πρότερον μέντοι τὰ ἐντὸς καὶ ἐλάσσω νοήσει τῶν ἄκρων
 καὶ τῆς ὁλότητος, ἀνάλογα δὲ τὰ ἐντὸς πρός τε αὐτὰ καὶ τὰ ἄκρα τῷ
 ἔχεσθαι ἀλλήλω καὶ ἑξῆς εἶναι, ὡς ἐκεῖνα τὰ ἐν τῷ Τιμαίῳ· „θεοὶ θεῶν, <lb n="10"/>
-<note type="footnote">9 Arist. p. 452b6. 7 10—15 Mich. ρ. 32,11—18 15—24 Mich. p. 32,25—33,8
+               <note type="footnote">9 Arist. p. 452b6. 7 10—15 Mich. ρ. 32,11—18 15—24 Mich. p. 32,25—33,8
 24—31 ipse addidit 31— p. 13,7 Mich. p. 33,11—25. 34,9. 10 liberius adhibuit</note>
-<note type="footnote">1 δὴ AB Mich.: δὲ Ca ἐπεὶ ABa: ἐπιδὴ C ἐγγίνεται ἁμαρτία AB Mich. CRP
+               <note type="footnote">1 δὴ AB Mich.: δὲ Ca ἐπεὶ ABa: ἐπιδὴ C ἐγγίνεται ἁμαρτία AB Mich. CRP
 (γίνεται Mich. Sa) : γιγνομένοις ἁμαρτία γίνεται Ca 3 post καὶ add. τοῦ Ca
 5 ἐφέλκῃ libri Mich. CRP: ἀφέλκῃ Mich. Sa, Spengel 7 Λεωφάνην Ca (Mich. SCa):
 λεωφάνη A: λεωφάνους B (Mich. RP1)  9 τοῦτον—τρόπον ABa (Arist.): τοῦτον τὸν
@@ -639,13 +643,12 @@ om. AB 25 εἴη ABa: om. C 27 ἀλλὰ καὶ εἰ Ca: ἀλλ᾿ εἰ κ
 15 πρώτως B Mich.: πρῶτον Α (coni. Spengel): πρότερον Ca 20 ὅτε Ca Mich.:
 ὅταν ΑΒ 21 ἠδύνατο ΑΒ Mich.: ἐδύνατο Ca ἀπόντων] ἀπὸ τούτων B
 26 βυβλίου a 31 πρότερον B Mich.: πρῶτον ACa 32 τε ABa: om. C</note>
-
-<pb n="13"/>
+               <pb n="13"/>
 ὧν ἐγὼ δημιουργὸς πατήρ τε ἔργων, ἅ δι᾿ ἐμοῦ γενόμενα ἄλυτα ἐμοῦ γε
 ἐθέλοντος. τὸ μὲν οὖν δὴ δεθὲν πᾶν λυτόν, τὸ δέ γε μὴν καλῶς ἁρμοσθὲν
 καὶ ἔχον εὖ λύειν ἐθέλειν κακοῦ. δι᾿ ἅ καὶ ἐπείπερ γεγένησθε. ἀθάνατοι
 μὲν οὔκ ἐστε οὐδ᾿ ἄλυτοι τὸ πάμπαν, οὔτι γε μὴν λυθήσεσθε οὐδὲ τεύξεσθε <lb n="15"/>
-<lb n="5"/> θανάτου μοίρας“. τῷ μὲν οὖν δὴ ἅπαντι νοηθέντι συννενόηται καὶ τὸ
+               <lb n="5"/> θανάτου μοίρας“. τῷ μὲν οὖν δὴ ἅπαντι νοηθέντι συννενόηται καὶ τὸ
 μέρος, τὸ μέντοι „θεοὶ θεῶν“ πρότερον ἐπῆλθεν ἡ διάνοια τοῦ μετ᾿ αὐτό,
 κἀκεῖνο τοῦ ἐφεξῆς, καὶ πάντων ὕστερον τὸ κοινόν· τὰ γὰρ καθ᾿ ἕκαστα <lb n="20"/>
 ὁμοῦ τὸ ὅλον. ὡς δὲ ἐπὶ τῶν πραγμάτων καὶ νοημάτων ἔχει, καὶ ἐπὶ τοῦ
@@ -679,21 +682,21 @@ om. AB 25 εἴη ABa: om. C 27 ἀλλὰ καὶ εἰ Ca: ἀλλ᾿ εἰ κ
 Michaelis figuram secutus
 7 — 10.11 — 24 ipse exposuit, fort. Aristotelis vel
 25— p. 14,5 cf. Mich. p. 34,23—36,13</note>
-<note type="footnote">2 μὴν] Ca Mich.: γὰρ AB δὴ om. Ca (Mich, a) δέ om. C (Mich, a)
+               <note type="footnote">2 μὴν] Ca Mich.: γὰρ AB δὴ om. Ca (Mich, a) δέ om. C (Mich, a)
 μὴν] μὴ B γε μὴν ABa (Mich.): μὲν δὴ C (Platonis libri) 4 οὐδὲ Ca Mich.:
 οὔτε AB 5 μοίρας Ca Mich.: μοῖραν AB τῷ] τὸ Ca 6 πρότερον coni.
 Spengel (cf. ad. p. 12,31): πρῶτον libri 9 καθάπαξ B 12 ἅπαν πρός om. a
 2Ο ἡ (ante KM) om. Spengel 27 συναισθανόμενος conicio, cf. ad p. 14,13
 28 καὶ post οὕτως add. C 31 οὕτως—ΓΔ (sim. e coni. Spengel) om. a
 ἡ ACa: ὁ B 32 καὶ (post ΑΒ) om. B 33 ἔχει om. a</note>
-
-<pb n="14"/>
+               <pb n="14"/>
 καὶ ἔτι τὰς ΚΛ ΛΡ. ἦν δὲ τοῦ μὲν ΑΒ ΒΕ πράγματος ὁ ΚΜ ΜΝ <lb n="5"/>
 χρόνος (ἅμα γὰρ τῇ ἐκείνου νοήσει καὶ οὗτος συνήγετο), τοῦ δὲ ΑΓ ΓΔ
 ὁ ΚΘ ΘΞ χρόνος, τοῦ δὲ ΑΖ ΖΗ ὁ ΚΛ ΛΡ· ἅμα γὰρ πάντα καὶ ἀνάλογον.
 φανερὸν οὖν ὡς μνημονεύοντες ἢ ἀναμιμνῃσκόμενοι ἐξ ἀνάγκης καὶ
-<lb n="5"/> τὸν πληροῦντα χρόνον συνεννούμεθα.</p> <lb n="10"/>
-<p>Διττῶς δὲ συμβαίνει τὴν ἀπάτην κατὰ μνήμην γίνεσθαι, ἕνα μὲν τρόπον,
+<lb n="5"/> τὸν πληροῦντα χρόνον συνεννούμεθα.</p>
+            <lb n="10"/>
+            <p>Διττῶς δὲ συμβαίνει τὴν ἀπάτην κατὰ μνήμην γίνεσθαι, ἕνα μὲν τρόπον,
 ὅταν ἀνταλλαγὴ γένηται περὶ τὰ μνημονευόμενα καὶ τοὺς τύπους, οἷον
 εἴπερ ἡ ψυχὴ ὁρῶσα τὸ τοῦ Θεαιτήτου φάντασμα ὑπολάβοι Σωκράτους <lb n="15"/>
 εἶναι· τότε γὰρ δόξει μνημονεύειν Σωκράτους Θεαιτήτου μεμνημένη· οὐδὲν
@@ -707,9 +710,9 @@ Spengel (cf. ad. p. 12,31): πρῶτον libri 9 καθάπαξ B 12 ἅπαν 
 ὁτὲ μὲν γὰρ μέτρῳ οὐ μέμνηται αὐτοῦ, οἷον ὅτι τρίτην ἡμέραν
 ἔχω πράξας ἢ πρὸ μηνός, ἀλλ᾿ ἁπλῶς ὅτι παλαι ποτὲ τόδε ἐποίησα· ὁτὲ
 δὲ καὶ μέτρῳ. σημεῖον δὲ τοῦ μεμνῆσθαι ἄνευ μέτρου τὸ εἰωθὸς  <lb n="30"/>
-<lb n="20"/> λέγειν, ὅτι μέ|μνηνται μέν, πότε δὲ οὐκ ἴσασιν, ὅταν μὴ γνωρίσωσι τῷ <lb n="253"/>
+               <lb n="20"/> λέγειν, ὅτι μέ|μνηνται μέν, πότε δὲ οὐκ ἴσασιν, ὅταν μὴ γνωρίσωσι τῷ <lb n="253"/>
 ὡρισμένῳ μέτρῳ.</p>
-<p> Ὅτι μὲν οὖν οὐχ οἱ αὐτοὶ μνημονικοὶ καὶ ἀναμνηστικοί, ἐν τοῖς πρότερον
+            <p> Ὅτι μὲν οὖν οὐχ οἱ αὐτοὶ μνημονικοὶ καὶ ἀναμνηστικοί, ἐν τοῖς πρότερον
 εἴρηται, διαφέρει δὲ καὶ τὸ μνημονεύειν τοῦ ἀναμιμνῄσκεσθαι οὐ κατὰ <lb n="5"/>
 τὸν χρόνον μόνον (πρότερον γὰρ ἡ μνήμη τῆς ἀναμνήσεως), ἀλλ᾿ ὅτι καὶ
 <lb n="25"/> τοῦ μὲν μνηονεύειν καὶ τῶν ἄλλων ζῴων μετέχει πολλά, τῆς δὲ ἀναμνήσεως
@@ -719,10 +722,10 @@ Spengel (cf. ad. p. 12,31): πρῶτον libri 9 καθάπαξ B 12 ἅπαν 
 τοῖς μείζοσιν. ᾧ δὲ τὸ συλλογίζεσθαι, τούτῳ καὶ τὸ ζητεῖν, τὸ δέ, οἷς
 <lb n="30"/> βουλή. ᾧ ἄρα ἀνάμνησις, τούτῳ καὶ βούλησις· μόνος δἐ ὁ ἄνθρωπος βουλεύεται,
 μόνος ἄρα καὶ ἀναμιμνῄσκεται. τὸ μὲν οὖν ἀναμιμνῄσκεσθαι ὅτι <lb n="15"/>
-<note type="footnote">6—9 Mich. p. 37,6—10 10 Arisl. p. 452b25. 26 11—17 Mich. p. 37,15—
+               <note type="footnote">6—9 Mich. p. 37,6—10 10 Arisl. p. 452b25. 26 11—17 Mich. p. 37,15—
 20. 32—38,2 17—19 cf. Mich. p. 32,13—15 19—26 Arist. p. 453 a 2—9
 26—p. 15,25 Mich. p. 38,10—40,3</note>
-<note type="footnote">l τὰ; ABa: om. C 3 θݲ ζݲ a (corr. Spengel) δὲ (ante AZ) om. B 5 συνεννοούμεθα Ba,
+               <note type="footnote">l τὰ; ABa: om. C 3 θݲ ζݲ a (corr. Spengel) δὲ (ante AZ) om. B 5 συνεννοούμεθα Ba,
 e corr. A: συνεννοῦμεν C, prius A 7 ἀναλλαγή a: ἐναλλαγή C 8 ὑπολάβη AB
 11 μνημονεύωμεν Ca συναισθώμεθα Spengel: συναίσθωσαν a ἄλλην τινὰ B(A) Mich.:
 ἑτέραν Ca 12 ὥσπερ AB Mich.: ὡς Ca 13 ὡς ABa: ἀλλ᾿ C τότε
@@ -732,8 +735,7 @@ om. B 20 δὲ cum Arist. L (δὲ μέντοι S, μένοι ceteri) ὅτε B 
 om. Arist. LS 23 διαφέρειν B τοῦ μνημονεύειν τὸ Arist. EMY 26 γνωρίμων
 Arist. LSU 28 οὅτω ante καὶ add. C 3Ο ante βουλὴ, ἀνάμνησις,
 βούλησις ter add. ἡ C</note>
-
-<pb n="15"/>
+               <pb n="15"/>
 διανοίας ἐστί, δέδεικται· τὸ γὰρ βουλεύεσθαι νοῦ. ἀλλ᾿ ἐπεὶ χωρὶς φαντασίας
 τοῦτο ποιῆσαι ἀδύνατον (τὰ γὰρ ἐν τῇ καρδίᾳ εἴδωλα καὶ τὸ ἐν αὐτῇ
 πνεῦμα κινοῦσα ἀναμιμνῄσκεται), σωματικόν τι τὸ πάθος ἐστί, καὶ ἡ ἀνάμνησις <lb n="20"/>
@@ -753,7 +755,7 @@ Arist. LSU 28 οὅτω ante καὶ add. C 3Ο ante βουλὴ, ἀνάμνη�
 διὰ τὴν ἐν τῷ ὑγρῷ τῆς καρδίας εὐκινησίαν. ἐπεὶ δὲ πολλάκις ἀναμνησθῆναι
 βουλόμενοι οὐ δυνάμεθα ἢ οὐδ᾿ ὅλως ἢ οὐ τότε, ὅτε βουλόμεθα,
 αἴτιον τὸ μὴ ἐφ᾿ ἑαυτοῖς εἶναι, ἀλλὰ καθάπερ τοῖς βάλλουσι λίθον οὐκ <lb n="10"/>
-<lb n="20"/> ἔστιν ἐπ᾿ αὐτοῖς στῆσαι τῆς φορᾶς, οὕτω ὁ ἀναμιμνῃσκόμενος καὶ ὁ
+               <lb n="20"/> ἔστιν ἐπ᾿ αὐτοῖς στῆσαι τῆς φορᾶς, οὕτω ὁ ἀναμιμνῃσκόμενος καὶ ὁ
 θηρεύων, σωματικόν τι κινεῖ, ἐν ᾧ τὸ πάθος (οὐδὲν γὰρ ἀσώματον κινεῖται
 καθ᾿ αὑτό)· διὸ καὶ οὐκ ἐφ᾿ αὑτῷ στῆσαι. καὶ ὥσπερ τῷ ἀναγνῶναι
 προθεμένῳ τόδε τὸ χωρίον οὐκ ἤρεκσε μόνη ἡ τοῦ βιβλίου ἀνάπτυξις, εἰ <lb n="15"/>
@@ -767,9 +769,9 @@ Arist. LSU 28 οὅτω ante καὶ add. C 3Ο ante βουλὴ, ἀνάμνη�
 ἐν ταῖς ὀργαῖς καὶ τοῖς θυμοῖς κρίναντος τοῦ λογισμοῦ ὑπὸ τοῦ ζέσαντος
 αἵματος καὶ ὡς στερροτέρα μᾶλλον θερμανθῖσα ἀντιθερμαίνει τὸ αἶμα.
 καὶ ἐν τοῖς φόβοις δὲ γινομένων τῶν ἐναντίων, ψύξεως καὶ συστολῆς, οὐ <lb n="30"/>
-<note type="footnote">18 — 20 Arist. p. 453a21—23 26—30 Arist ib. 23—27 30—p. 16,1 cf.
+               <note type="footnote">18 — 20 Arist. p. 453a21—23 26—30 Arist ib. 23—27 30—p. 16,1 cf.
 Mich. p. 40,12—26</note>
-<note type="footnote">1 βουλεύεσθαι ABa: βούλεσθαι C 5 et 6  βυβλίον et βυβλίῳ a 6 μὲν ἀναγνώσοντι
+               <note type="footnote">1 βουλεύεσθαι ABa: βούλεσθαι C 5 et 6  βυβλίον et βυβλίῳ a 6 μὲν ἀναγνώσοντι
 ABa: μὲν οὖν ἀναγινώσκοντι C (ἀναγινώσκοντι Mich.) 7 ἔστι Ca: ἔτι AB
 9 ἐπειδὰν—ἀναμνησθῆναι B (Mich.): om. ACa coniunction desideratur 11 ὡς] καὶ B
 12 οὐκέτι ῥαδίως ἱστάμεθα B  13 ἕλκῃ Mich. 18 οὐδ᾿  B Mich.: om. ACa
@@ -777,13 +779,12 @@ ABa: μὲν οὖν ἀναγινώσκοντι C (ἀναγινώσκοντι 
 τύχῃ C (Spengel) Arist.: τύχοι ΑΒα 28 εὐθυπορήσῃ Ca Arist.: εὐθυπορήσει B
 (Arist. E): εὐθυπορήσοι A, ut vid. 29 τι κινήσωσιν] κινηθῶσιν Arist. SU 29 καὶ
 (ante φόβοι) om. A</note>
-
-<pb n="16"/>
+               <pb n="16"/>
 ῥᾳδίως ἀποκαθίστανται, καὶ ἔοικε τὸ πάθος | τοῖς ὀνόμασι καὶ μέλεσι καὶ <lb n="255"/>
 λόγοις· ὅταν γὰρ διὰ στόματος αὐτῶν γένηταί τι σφόδρα, παυσαμένοις καὶ
 οὐ βουλομένοις πάλιν ᾄδειν ἢ λέγειν ἐπέρχεται. εἰσὶ δὲ καὶ οἱ τὰ ἄνω
 μείζω ἔχοντες καὶ οἱ νανώδεις ἀμνημονέστεροι τῶν ἐναντίων διὰ τὸ πολὺ βάρος <lb n="5"/>
-<lb n="5"/> ἔχειν ἐπὶ τῷ αἰσθητικῷ καὶ μήτ᾿ ἐξ ἀρχῆς τὰς κινήσεις δύνασθαι ἀμμένειν,
+               <lb n="5"/> ἔχειν ἐπὶ τῷ αἰσθητικῷ καὶ μήτ᾿ ἐξ ἀρχῆς τὰς κινήσεις δύνασθαι ἀμμένειν,
 ἀλλὰ διαλύεσθαι, μήτε ἐν τῷ ἀναμιμνῄσκεσθαι ῥᾳδίως εὐθυπορεῖν, οἱ δὲ
 πάμπαν νέοι καὶ οἱ λίαν γέροντες ἀμνήμονες διὰ τὴν κίνησιν· οἱ μὲν γὰρ <lb n="10"/>
 ἐν αὐξήσει, οἱ δὲ ἐν φθίσει πολλῇ εἰσιν. ἔτι δὲ τά γε παιδία καὶ νανώδη
@@ -791,18 +792,17 @@ ABa: μὲν οὖν ἀναγινώσκοντι C (ἀναγινώσκοντι 
 <lb n="10"/> καὶ τίς ἡ φύσις αὐτῶν καὶ τίνι τῶν τῆς ψυχῆς μνημονεύει τὰ ζῷα, καὶ
 περὶ τοῦ ἀναμιμνῄσκεσθαι, τί ἐστι καὶ πῶς γίνεται καὶ διὰ τίνα αἰτίαν, <lb n="15"/>
 εἴρηται.</p>
-<note type="footnote">1—12 Arist. p. 453a28—453bll</note>
-<note type="footnote">2 αὐτῶν γένηταί τι cum Arist. U (γένηταί τι αὐτῶν Μ, τι αὐτῶν γένηται LS, γένηταί τις EY)
+            <note type="footnote">1—12 Arist. p. 453a28—453bll</note>
+            <note type="footnote">2 αὐτῶν γένηταί τι cum Arist. U (γένηταί τι αὐτῶν Μ, τι αὐτῶν γένηται LS, γένηταί τις EY)
 3 οἱ om. Arist. LU 7 καὶ λίαν Arist. 8 εἰσιν om. Arist. LSU post
 ἕτι add. δὲ Ca (Arist. MLSU): om. AB γε AB (Arist.): om Ca 11 τίνα αἰτίαν
 Ca (Arist. LSU): τίνας αἰτίας AB (Arist. EMY)</note>
-</div>
-
-
-<div type="textpart" subtype="chapter" n="2">
-<pb n="17"/>
-<head>ΠΕΡΙ ΥΠΝΟΥ ΚΑΙ ΕΡΡΗΡΟΡΣΩΣ.</head> <lb n="256"/>
-<p>1. Περὶ δὲ ὕπνου καὶ ἐγρηγόρσεως σκοπητέον, τίνα τε τυγχάνει καὶ <lb n="5"/>
+         </div>
+         <div n="2" type="chapter">
+            <pb n="17"/>
+            <head>ΠΕΡΙ ΥΠΝΟΥ ΚΑΙ ΕΡΡΗΡΟΡΣΩΣ.</head>
+            <lb n="256"/>
+            <p>1. Περὶ δὲ ὕπνου καὶ ἐγρηγόρσεως σκοπητέον, τίνα τε τυγχάνει καὶ <lb n="5"/>
 ἐν ποίῳ μορίῳ τῆς ψυχῆς, καὶ πότερον ἔδια τῆς ψυχῆς ἢ καὶ τοῦ σώματος,
 καὶ διὰ τίν᾿ αἰτίαν ὑπάρχει τοῖς ζῴοις, καὶ πότερον ἅπαντα κεκοινώνηκεν
 <lb n="5"/> ἀμφοῖν, ἢ τὰ μὲν ὕπνου τὰ δὲ θατέρου μόνον, πρὸς δὲ τούτοις τί ἐστι τὸ
@@ -810,7 +810,7 @@ Ca (Arist. LSU): τίνας αἰτίας AB (Arist. EMY)</note>
 οὐκ ὀνειρώσσουσι, καὶ πότερον συμβαίνει μὲν ἀεὶ τοῖς καθεύδουσιν ἐνυπνιάζειν,
 ἀλλ᾿ οὐ μνημονεύουσιν, ἢ οὔ, κἂν εἰ συμβαίνοι, διὰ τίνα αἰτίαν
 γίνεται, καὶ πότερον τὰ μέλλοντα ἐνδέχεται προορᾶν ἢ ἐνδέχεται, καὶ <lb n="15"/>
-<lb n="10"/> τίνα τρόπον, εἰ ἐνδέχεται, καὶ πότερον τὰ μέλλοντα ὐπ᾿ ἀνθρώπου πράσσεσθαι
+               <lb n="10"/> τίνα τρόπον, εἰ ἐνδέχεται, καὶ πότερον τὰ μέλλοντα ὐπ᾿ ἀνθρώπου πράσσεσθαι
 μόνον, ἢ καὶ ὧν τὸ δαιμόνιον τὴν αἰτίαν ἔχει, καὶ φύσει γίνεται ἢ
 ἀπὸ ταὐτομάτου. καὶ πρῶτον μέν γε τοῦτο φανερόν, ὅτι τῷ αὐτῷ μορίῳ
 τοῦ ζῴου ἣ τε ἐγρήγορσις ὑπάρχει καὶ ὁ ὕπνος· ἀντίκεινται γάρ, καὶ φαίνεται <lb n="20"/>
@@ -820,26 +820,25 @@ Ca (Arist. LSU): τίνας αἰτίας AB (Arist. EMY)</note>
 ἀναρμοστία περὶ τὸ αὐτό, καὶ τάξις καὶ ἀταξία, ἔτι δὲ νόσος καὶ ὑγεία
 περὶ τὸ αὐτό, ἐν σώματι γάρ· αἶσχος δὲ καὶ κάλλος ἐν τοῖς ὀργανικοῖς, ἐν
 νεύροις δὲ ἰσχὺς καὶ ἀσθένεια, καὶ περὶ ὄψιν αὖ ὄψις καὶ τυφλότης, καὶ <lb n="5"/>
-<lb n="20"/> ἐν ἀκοῇ ὁμοίως. ἔτι δὲ καὶ ἐκ τῶνδε δῆλον· ᾧ γὰρ τὸν ἐγρηγορότα γνωρίζομεν,
+               <lb n="20"/> ἐν ἀκοῇ ὁμοίως. ἔτι δὲ καὶ ἐκ τῶνδε δῆλον· ᾧ γὰρ τὸν ἐγρηγορότα γνωρίζομεν,
 τούτῳ καὶ τὸν καθ᾿ ὕπνον. γνωρίζομεν δὲ τὸν ἐγρηγορότα τῷ
 αἰσθάνεσθαι ἢ τῶν ἐκτός τινος κινήσεως, ὡς ὁρᾶν ἢ ἀκούειν, ἢ τῶν ἐντὸς
 καὶ ἐν αὐτῷ, ὡς λογίζεσθαι καὶ φαντάζεσθαι· καὶ ὑπνώττοντα δ᾿ αὖ λέγομεν <lb n="10"/>
 τὸν μήτε τῶν ἐξωτερικῶν τινα ἐνεργοῦντα κινήσεως μήτε τῶν ἔνδοθεν.
 <note type="footnote">2—14 Arist. p. 453b8—27 14—20 cf. Mich. p. 42,16—20 et Arist. v. 27—31
 20. 21 Arist. p. 453b31—454a2 21—p. 18,3 Mich. p. 43,.5—10 liberius adhibuit</note>
-<note type="footnote">1 θεμιστίου παράφρασις εἰς τὸ περὶ ὕπνου καὶ ἐγρηγόρσεώς ἀριστοτέλους Ca 2 σκεπτέον
+               <note type="footnote">1 θεμιστίου παράφρασις εἰς τὸ περὶ ὕπνου καὶ ἐγρηγόρσεώς ἀριστοτέλους Ca 2 σκεπτέον
 B (cf. Arist.) 5 ὕπνου] θατέρου Arist. EMY μόνον B Arist.: μόνου  ACa
 6 οἱ om. Arist. LSU 7 ὀνειρ. om. Arist LSU τοῖς om. LSU 8 κἂν] καὶ
 Arist. LSU 10. 11 πράσσεται a (corr. iam Spengel) 12 ἀπ᾿ αὐτ. Arist. EMSU
 13 ἀντίκεινται Ca (Arist.): ἀντίκειται AB (Arist. M) 14 τις στέρησις a ἀεὶ δὲ]
 διὸ Ca ἔσχατα] ἐναντία Arist. EMY 18 καὶ αἶσχος καὶ Ca 21 καθ᾿ 
 Comment. in Arist. V 6. Themist. (Sophon.) in Parv. Nat.</note>
-
-<pb n="18"/>
+               <pb n="18"/>
 αἴσθησις δὲ καὶ ἀναισθσία ὡς ἕξις καὶ στέρησις, αὗται δὲ περὶ τὸ αὐτὸ
 καὶ ἕν ὑπάρξουσι· καὶ ὕπνος ἄρα καὶ ἐγρήγορσις τὸ αὐτὸ ἕξουσιν ὑποκεί- <lb n="15"/>
 μενον.</p>
-<p>Ἐπεῖ δ᾿ οὔτε τῆς ψυχῆς ἴδιον τὸ αἰσθάνεσθαι οὔτε τοῦ σώματος (οὗ
+            <p>Ἐπεῖ δ᾿ οὔτε τῆς ψυχῆς ἴδιον τὸ αἰσθάνεσθαι οὔτε τοῦ σώματος (οὗ
 <lb n="5"/> γὰρ ἡ δύναμις, τούτου καὶ ἡ ἐνέργεια, ἡ δὲ λεγομένη ἐνεργείᾳ αἴσθησις κίνησίς
 τίς ἐστι διὰ τοῦ σώματος τῆς ψυχῆς), φανερὸν ὅτι οὔτε τῆς ψυχῆς τὸ πάθος
 ἐστὶν ἴσιον, οὔτ᾿ ἄψυχον σῶμα δυνατὸν αἰσθάνεσθαι, ἀλλὰ τοῦ συναμφοτέρου. <lb n="20"/>
@@ -850,7 +849,7 @@ Comment. in Arist. V 6. Themist. (Sophon.) in Parv. Nat.</note>
 ἔχουσι τὸ αἰσθητικὸν μόριον, ἐν ᾧ ταῦτα. τὸ δὲ αἰσθητικὸν τοῦ θρεπτικοῦ
 ὅτι ἕτερον τῷ εἶναι καὶ τῇ δυνάμει, φανερόν. εἰ δὲ καὶ τῷ ὑποκειμένῳ,
 οὐ παντί γε δῆλον. ἔτι τῶν θνητῶν καὶ ὑπὸ σελήνην καὶ δεκτικῶν ὕπνου <lb n="30"/>
-<lb n="15"/> καὶ ἐγρηγόρσεως | οὐδέν ἐστιν, ὅ ἀεὶ ἐγρήγορεν ἢ ἀεὶ καθεύδει· ἀλλὰ <lb n="258"/>
+               <lb n="15"/> καὶ ἐγρηγόρσεως | οὐδέν ἐστιν, ὅ ἀεὶ ἐγρήγορεν ἢ ἀεὶ καθεύδει· ἀλλὰ <lb n="258"/>
 τοῖς αὐτοῖς ὑπάρχει τῶν ζῴων ἀμφότερα τὰ πάθη ταῦτα, καὶ οὐδέν ἐστι
 ζῷον ἀμφοτέρων στερούμενον· τοῦτο γάρ ἐστι τῶν ἀψύχων. ὑπεξαιρείσθω
 μέντοι κἀν τούτοις τὰ θεῖα ἐνεργοῦντα ἀεί· ἡ γὰρ ἐν αὐτοῖς ἐγρήγορσις <lb n="5"/>
@@ -868,19 +867,18 @@ Comment. in Arist. V 6. Themist. (Sophon.) in Parv. Nat.</note>
 <lb n="30"/> δ᾿ ἀμέσων ἐναντίων ἢ τῶν καθ᾿ ἕξιν καὶ στέρησιν ἂν θάτερον τῷ
 δεκτικῷ μὴ παρῇ, ἀνάγκη παρεῖναι θάτερον, καὶ τὴς ἐγρηγόρσεως μὴ
 παρούσης παρέσται ὁ ὕπνος· καὶ εἰ ἡ ὑπερβολὴ τοῦ ἐγρηγορέναι ὁτὲ μὲν <lb n="25"/>
-<note type="footnote">4—12 Arist. p. 454a7—17 7 τοῦ συναμφοτέρου e Mich. p. 43,21 12—17
+               <note type="footnote">4—12 Arist. p. 454a7—17 7 τοῦ συναμφοτέρου e Mich. p. 43,21 12—17
 Mich. p. 43,31—44,18 17—19 ipse addidit 19. 20 cf. Mich. p. 44,18—21
 20—27 Mich. p. 44,29—45,7 27. 28 cf. Arist. p. 454a28—32 28. 29 ipse
 addidit 29—32 Mich. Ρ. 45,10—12 32—p. 19,11 Mich. p. 46,4—2</note>
-<note type="footnote">7 ἐστὶν om. B 8 δὲ περὶ τῶν λεγομένων B Arist: om. A: δ᾿ Ca πρότερον
+               <note type="footnote">7 ἐστὶν om. B 8 δὲ περὶ τῶν λεγομένων B Arist: om. A: δ᾿ Ca πρότερον
 posuit ut Arist. EMY 10 ὄντος om. Arist. libri praeter U 13 τῇ] τὸ B
 δὲ ABa: om. C 14 prius καὶ del. Spengel 19 ἀναντίλεκτος coni. Spengel, sed
 V. Soph. Comm. XXIII 2 p. 23,21 21 ὑπερβάλλῃ Ca (Mich. Sa): ὑπερβάλη AB
 (Mich. CRP) 23 βιάσηται Mich. 27 καὶ—αἰσθάνεσθαι om. cum Arist. LSU,
 supplet Spengel 30 ἐναντίον Spengel 31 καὶ del. Spengel 32 ὁ B
 (Mich.): om. ACa</note>
-
-<pb n="19"/>
+               <pb n="19"/>
 νοσώδης (διετέλεσαν γάρ τινεσ καὶ ἔως ἡμερῶν ἐννέα ἄϋπνοι δι’ ἀσθένειαν),
 ὁτὲ δὲ ἄνευ νόσου, ὥσπερ οἱ δι’ ἔσχνανσιν ἢ ξήρανσιν αὐτὸ τοῦτο παθόντες,
 καὶ ἡ ἀδυναμία ἄρα καὶ μακρὸς ὕπνος ὁτὲ μὲν | διὰ νόσον, ὁτὲ δ’ <lb n="259"/>
@@ -905,19 +903,19 @@ supplet Spengel 30 ἐναντίον Spengel 31 καὶ del. Spengel 32 ὁ B
 οἶόν τε κοινωνεῖν οὐδετέρου τῶν παθημάτων· ἄνευ μὲν γὰρ αἰσθήσεως
 οὐχ ὑπάρχει οὔτ’ ὕπνος οὔτ’ ἐγρήγορσις· οἶς δ’ αἴσθησις ὑπάρχει, τούτοις καὶ
 τὸ λυπεῖσθαι καὶ χαίρειν, οἶς δὲ ταῦτα, καὶ ἐπιθυμία. τοῖς δὲ φυτοῖς οὐδὲν <lb n="30"/>
-<lb n="25"/> ὑπάρχει τούτων. οὐδεὶς δὲ προσαναγκάσει λόγος ἅδεσθαι ἢ λυπεῖσθαι τὰ
+               <lb n="25"/> ὑπάρχει τούτων. οὐδεὶς δὲ προσαναγκάσει λόγος ἅδεσθαι ἢ λυπεῖσθαι τὰ
 φυτὰ ἤ ἔλως ἐπι| θυμεῖν ἣ αἰσθάνεσθαι, οὐδ’ ἔπεται παντὶ θρεπτικῷ τὸ <lb n="260"/>
 αἰσθητικόν, ὥσπερ τὸ ἔμπαλιν, ἀλλὰ κεκώρισται. σημεῖον ὁ ὅτι καὶ τὸ
 ἔργον τὸ αὑτοῦ ποιεῖ τὸ θρεπτικὸν μόριον ἐν τῷ καθεύδειν μᾶλλον ἣ ἐγρηγορέναι·
 τρέφεται γὰρ καὶ αὕξεεται μᾶλλον τότε ὡς οὐδὲν προσδεόμενα <lb n="5"/>
-<lb n="30"/> πρὸς ταῦτα τῆς αἰσθήσεως.</p>
-<p>Διὰ τί θὲ καθεύδει καὶ ἐγρήγορε, καὶ διὰ ποίαν τινὰ αἴσθησιν, ἢ
+               <lb n="30"/> πρὸς ταῦτα τῆς αἰσθήσεως.</p>
+            <p>Διὰ τί θὲ καθεύδει καὶ ἐγρήγορε, καὶ διὰ ποίαν τινὰ αἴσθησιν, ἢ
 καὶ ποίας, εἰ καὶ πλείους, σκετέον. ἐπεὶ δ’ ἔνια μὲν τῶν ζῲων ἔχει
 τὰς αἰσθήσεις πάσας, ἔνια δ’ οὐκ ἔχουσιν, οἶον ὄψιν, τὴν δ’ ἀφὴν καὶ τὴv <lb n="10"/>
 γεῦσιν πάντ’ ἔχει, καὶ μάλιστα κοινοτάτη πασῶν ἡ ἀφὴ, ἐν τοῖς Περὶ
 <note type="footnote">11—25 Arist. p. 454 b 14—32 25—27 cf. Mich. p. 47,2—6 27—p. 203
 Arist. p. 454 b 32 —455 a 11</note>
-<note type="footnote">1 θݲ AB 3 νόσον Β Mich.: νόσου ACa 8. 9 δυνατὸν om. B 11 τὰ
+               <note type="footnote">1 θݲ AB 3 νόσον Β Mich.: νόσου ACa 8. 9 δυνατὸν om. B 11 τὰ
 ante κοινωνοῦντα add. Ca (om. etiam Arist.) 12 πτηνὰ καὶ πεζά ABa Arist. EMY (πτηνὰ
 LSU): πεζὰ καὶ πτηνὰ C 13 πἆλλα πάνθ’ Β Arist.: πάντα τἆλλα ὄσα ACa ὅσαπερ
 Arist. LSU 15 λάθοι Arist. 17 καθεύδει Arist. LSU 20 μέν τινα τὴν AB
@@ -925,8 +923,7 @@ Arist. LSU 15 λάθοι Arist. 17 καθεύδει Arist. LSU 20 μέν τιν
 22 ante Πω add. Αrist. EY(L) 24 τὸ χαίρειν Arist. EMYL 25 δὲ ABa:
 γὰρ C 31 ποίαν οm. Arist. EMY 32 τῶν ζῲων om. Arist. EMDY
 33 orov om. Arist. LMSU</note>
-
-<pb n="20"/>
+               <pb n="20"/>
 ψυχῆς εἴρηται, ἀδύνατον δ’ ἐστὶν ἁπλῶς ὁποιανοῦν αἴσθησιν αἰσθάνεσθαι
 τὸ καθεῦδον ζῷον, φανερὸν ὅτι πᾶσιν ἀναγκαῖον ὑπάρχειν τὸ αὐτὸ πάθος <lb n="15"/>
 ἐν τῷ καλουμένῳ λέγω δὴ τὴν παντελῆ ἀκινησίαν καὶ ἀναισθησίαν. εἰ
@@ -936,7 +933,7 @@ Arist. LSU 15 λάθοι Arist. 17 καθεύδει Arist. LSU 20 μέν τιν
 ἢ τινὰς μὲν μὰλλον, τινὰς δ’ οὔ; ἢ καὶ μίαν μόνην καὶ ἔστιν αὔτη
 ἡ ἀφή) ὡς ἀναγκαιοτέραν καὶ προτέραν φύσει τῶν ἄλλων καὶ τῇ κοινῇ
 αἰσθήσει ταυτιζομένην κατὰ τὸ ὑποκείμενον; ἐπεὶ γὰρ ὑπάρχει καθ’ <lb n="25"/>
-<lb n="10"/> ἑκάστην αἴσθησιν τὸ μέν τι ἵδιον, τὸ δὲ κοινόν, ἴδιον μὲν οἶον τῇ ὄψει τὸ
+               <lb n="10"/> ἑκάστην αἴσθησιν τὸ μέν τι ἵδιον, τὸ δὲ κοινόν, ἴδιον μὲν οἶον τῇ ὄψει τὸ
 ὁρᾶν, τῇ δ’ ἀκοῇ τὸ ἀκούειν, καὶ ταῖς ἄλλαις ἑκάστῃ κατὰ τὸν αὐτὸν
 τρόπον, ἔστι δέ τις καὶ κοινὴ δύναμις ἀκολουθοῦσα ταύταις, ᾖ καὶ ὅτι
 ὁρᾷ καὶ ἀκούι καὶ αἰ|σθάνεται οὐ γὰρ δὴ τῇ γε ὄψει ὁρᾷ ὄτι ὀρᾷ), καὶ <lb n="261"/>
@@ -946,7 +943,7 @@ Arist. LSU 15 λάθοι Arist. 17 καθεύδει Arist. LSU 20 μέν τιν
 κοινότατον καὶ κυρίως ἔν, καὶ μία μέν, τῷ δέ γε γόγῳ πλείους καὶ τοσαῦται,
 ὅσα καὶ ὑποκέίμενα ταῖς καθ’ ἔκαστα· ἔτερον γὰρ ψόφου χρῶμα καὶ ἀμφοτέρων
 ὀσμή) ὑτάρκει δ’ αὕτη ἄμα καὶ πρώτως μάλιστα τῷ ἀπτικῷ <lb n="10"/>
-<lb n="20"/> τοῦτο μὲν γὰρ χωρίζεται τῶν ἄλλων αἰσθητηρίων, τὰ δ’ ἄλλα τούτου
+               <lb n="20"/> τοῦτο μὲν γὰρ χωρίζεται τῶν ἄλλων αἰσθητηρίων, τὰ δ’ ἄλλα τούτου
 ἀχώριστα. εἴρηται δὲ περὶ αὐτῶν ἐν τοῖς Περὶ ψυχῆς θεωρήμασι), φανερόν,
 ὅτι ὅτι τούτου ἐστὶ ἡ ἐγρήγορσις καὶ ὁ ὕπνος, τῆς κοινῆς δηλαδὴ
 αἰσθήσεως περὶ τὸ κοινὸν αἰσθητήριον, τὴν καρδίαν. τῇ ἁφῇ δὲ κατὰ τὸ <lb n="15"/>
@@ -963,7 +960,7 @@ Arist. LSU 15 λάθοι Arist. 17 καθεύδει Arist. LSU 20 μέν τιν
 p. 47,23 6 — 9 ipse addit —17 Arist. p. — 21 — 19 Mich,
 p. —28 —23 Arist. p. — 26 23. 24 Mich. p. 48,4. 7
 25. 26 Arist. p. 455a26. 27 — p. 21,2 Mich. p. 48,12—49,1</note>
-<note type="footnote">2 ἀναγκαῖον ΑΒ Arist.: ἀνάγκη Ca 11 ἐκάστη om. Arist. LSU ἐκάστῃ scripsi)
+               <note type="footnote">2 ἀναγκαῖον ΑΒ Arist.: ἀνάγκη Ca 11 ἐκάστη om. Arist. LSU ἐκάστῃ scripsi)
 12 ἦ a (Arist. EYLU): ἣ ABC (Arist. MS) ὅτι Β(Spengel): om. ACa (Arist. EY)
 13 καὶ (post ἀκούει del. Spengel (om. Arist. LU) ὅτι ὁρᾷ om. C 15 αἰσθητηρίων
 Arist. EMY 16 ἦς ABa: ὦ C 17 μέν ΑΒa: μὲν αἴσθησις C (e coni.
@@ -971,18 +968,18 @@ Speugel) 19 ὀσμαί C 21 τούτων Arist. SU 25 πρώτως B
 26 κοινὸς B 27 ἐνεεργεῖν C Mich, (e coni. add. Spengel): ἠρεμεῖν B: om. Aa
 ἀκινητίσουσιν A Mich.: ἀκινητίζουσιν Ca: ἀκινητήσουσιν B (Mich. C) 28 xai (ante
 ἀκούειν) om. C</note>
-
-<pb n="21"/>
+               <pb n="21"/>
 τῆς πασῶν ἀργίας ὁ ὕπνος ἐστίν, ἀλλ᾿ ἐκ μόνης τῆς πρώτης τῆς ἁπτικῆς. τοῦ <lb n="30"/>
 γὰρ κυρίου τῶν ἄλλων αἰσθητηρίων καὶ πρὸς συν|τείνει τὰ ἄλλα πεπονθότος <lb n="262"/>
 τι συμπάσχειν ἀνάγκη καὶ τὰ λοιπὰ πάντα, ἐκείνων δέ τινος ἀδυνατοῦντος
 οὐκ ἀνάγκη τοῦτο ἀδυνατεῖν.</p>
-<lb n="5"/> <p>Ἔτι δ᾿ ἐκ τῶνδε μᾶλλον φανερώτερον ὡς οὐκ ἐν τῷ τὰς αἰσθήσεις
+            <lb n="5"/>
+            <p>Ἔτι δ᾿ ἐκ τῶνδε μᾶλλον φανερώτερον ὡς οὐκ ἐν τῷ τὰς αἰσθήσεις
 ἀργεῖν καὶ μὴ χρῆσθαι αὐταῖς ὁ ὕπνος, οὐδ᾿ ἐν τῷ μὴ δύνασθαι αἰσθάνεσθαι. <lb n="5"/>
 ἐν γὰρ ταῖς λειποψυχίαις τοιοῦτόν τι συμβαίνει· ἀδυναμία γὰρ
 αἰσθήσεων πασῶν ἡ λειποψυχία, ὕπνος δ᾿ οὔ. γίνονται δὲ καὶ ἔκνοιαί  τινες
 τοιαῦται· οἱ γὰρ μαινόμενοι οὔθ᾿ ὁρῶσιν οὔτ᾿ ἀκούουσιν οὔτ᾿ ἄλλην τινὰ αἰσθάνονται <lb n="10"/>
-<lb n="10"/> νονται αἴσθησιν· πῶς γάρ, οἳ τὰς σάρκας τὰς ἑαυτῶν κατεσθίοντες οὐδεμιᾶς
+               <lb n="10"/> νονται αἴσθησιν· πῶς γάρ, οἳ τὰς σάρκας τὰς ἑαυτῶν κατεσθίοντες οὐδεμιᾶς
 ὀδύνης λαμβάνουσιν αἴσθησιν; καὶ τὰς ἐν τῷ αὐχένι δὲ δύο φλέβας εἴ τις δήσει,
 ἀναισθητεῖ τὸ ζῷον· ὕπνος δ᾿ οὐκ ἔστιν, ἀλλ᾿ ὅταν ἡ ἀδυναμία τοῦ αἰσθάνεσθαι 
 μήτε ἔν τινι τῶν αἰσθητηρίων γένηται (τύχοι γὰρ ἄν τινος πηρωθῆναι <lb n="15"/>
@@ -992,12 +989,13 @@ Speugel) 19 ὀσμαί C 21 τούτων Arist. SU 25 πρώτως B
 τοῦ ἐγρηγορέναι, τοῦτό ἐστιν ὁ ὕπνος. ὅταν μὲν γὰρ τοῦτο ἀδυνατήσῃ,
 ἀνάγκη καὶ τοῖς αἰσθητηρίοις πᾶσιν ἀδυνατεῖν αἰσθέσθαι, ὅταν δὲ ἐκείνων 
 τι, οὐκ ἀνάγκη τούτῳ.</p>
-<lb n="20"/> <p>Τούτων οὕτω διωρισμένων λεκτέον ἤδη καὶ δι᾿ ἣν αἰτίαν καθεύδειν <lb n="25"/>
+            <lb n="20"/>
+            <p>Τούτων οὕτω διωρισμένων λεκτέον ἤδη καὶ δι᾿ ἣν αἰτίαν καθεύδειν <lb n="25"/>
 συμβαίνει, καὶ ποῖόν τι τὸ πάθος ἐστίν. ἐπεὶ δὲ τρόποι πλείονες τῆς
 αἰτίας (τέσσαρας γὰρ τοὺς κυριωτέρους ἐν τοῖς φυσικοῖς ἀποδεδώκαμεν·
 καὶ γὰρ τὸ τίνος ἕνεκα τελικὸν αἴτιον ἐκεῖσε ἐλέγομεν, καὶ ποιητικὸν ὅθεν
 ἡ ἀρχὴ τῆς κινήσεως, καὶ τὸν λόγον καθ᾿ ὃν τὸ πρᾶγμα γί|νεται εἰδικόν, <lb n="263"/>
-<lb n="25"/> καὶ ἐπὶ πᾶσι τὴν ὕλην, ἐξ οὗ ἐνυπάρχοντος ἀποτελεῖταί τι), εἴη ἂν ὕπνου
+               <lb n="25"/> καὶ ἐπὶ πᾶσι τὴν ὕλην, ἐξ οὗ ἐνυπάρχοντος ἀποτελεῖταί τι), εἴη ἂν ὕπνου
 μὲν αἰτία ὡς οὗ ἕνεκα ἡ σωτηρία τῶν ζῴων καὶ ἀνάπαυσις, ποιητικὴ δὲ
 ἡ τοῦ καρδιακοῦ πνεύματος κίνησις, ὑλικὴ δὲ ἡ παλίρροια τῆς ἀναχθείσης <lb n="5"/>
 ἀναθυμιάσεως πρὸς τὰ κάτω, καὶ εἰδικὸν ἡ τοιαύτη τῶν ἐκτὸς καὶ ἐντὸς
@@ -1007,22 +1005,21 @@ Speugel) 19 ὀσμαί C 21 τούτων Arist. SU 25 πρώτως B
 δυναμένῳ δ᾿ ἀεὶ καὶ συνεχῶς κινεῖσθαι μεθ᾿ ἡδονῆς, δῆλον ὡς σωτηρίας
 τῶν ζῴων ὁ ὕπνος ἕνεκα· ὅθεν καὶ δι᾿ αὐτὴν τὴν ἀλήθειαν τῷ ὕπνῳ τὴν
 μεταφορὰν ταύτην προσάπτουσιν, ἀνάπαυσιν μόνον τῶν ἄλλων λέγοντες. <lb n="15"/>
-<note type="footnote">1-9 Arist. p. 455a33—b6 9—17 Mich. p. 49,6—15 17—21 Arist.
+               <note type="footnote">1-9 Arist. p. 455a33—b6 9—17 Mich. p. 49,6—15 17—21 Arist.
 p. 455b11—14 22 ipse addidit 23. 24 Mich. p. 49,18. 19 of. Soph. De
 an. p. 24,19 H. 24—29 ipse exposuit, cf. Arist. p. 455bl6 ss. 29—p. 22,2
 Arist. p. 455b 17—25 32 δῆλον] v. Mich. p. 49,20</note>
-<note type="footnote">2 αἰσθητηρίου Arist. praeter S 7 λιποψυχίαις Arist. E τι om. Arist.
+               <note type="footnote">2 αἰσθητηρίου Arist. praeter S 7 λιποψυχίαις Arist. E τι om. Arist.
 8 αἰσθήσεως Arist. EMY λιποψυχία Arist. 10 αἴσθησιν ABC Mich.: om. a
 τὰς (ante ἑαυτῶν) om. C 18 αἰσθάνεσθαι Arist. EM 20 καὶ om. B 22 Φυσικοῖς]
 v. Bonitz. Ind. p. 22b36 ἀπεδώκαμεν B 28 εἰδικὴ conicio τοιαύτη]
 τοιάδε B 30 οὖν om. Arist. EMY 33 καὶ om. Ca αὐτῇ τῇ ἀληθείᾳ Arist. EY</note>
-
-<pb n="22"/>
+               <pb n="22"/>
 ἡ δ᾿ ἐγρήγορσις τὸ τέλος· τὸ γὰρ αἰσθάνεσθαι καὶ τὸ φρονεῖν πᾶσι τέλος,
 οἷς ὑπάρχελ θάτερον αὐτῶν· βέλτιστα γὰρ ταῦτα, τὸ δὲ τέλος βέλτιστον,
 τέλος δὲ ἀλόγοις μὲν αἴσθησις, ἀνθρώποις δὲ φρόνησις. ἔτι δ᾿ ἀναγκαῖον
 ἑκάστῳ τῶν ζωῴν ὑπάρχειν τὸν ὕπνον διὰ τὴν τοιάνδε ὕλην, ἣν καὶ ἐξ <lb n="20"/>
-<lb n="5"/> ὑποθέσεως ἀνάγκην λέγειν εἰώθαμεν. εἰ γὰρ ζῷον ἔσται ἔχον τὴν φύσιν
+               <lb n="5"/> ὑποθέσεως ἀνάγκην λέγειν εἰώθαμεν. εἰ γὰρ ζῷον ἔσται ἔχον τὴν φύσιν
 αὑτοῦ, ἐξ ἀνάγκης τινὰ ὑπάρχειν αὐτῷ δεῖ, καὶ τούτων ὑπαρχόντων ἕτερα
 ὑπάρχειν. οἷον ὑποτεθέντος τοῦ ζῷον εἶναι ἕπεται ἐξ ἀνάγκης τὸ τρέφεσθαι, <lb n="25"/>
 τρεφομένου δὲ ἀναθυμίασιν γίνεσθαι, ταύτης δὲ τελεσθείσης ὕπνον.
@@ -1037,7 +1034,7 @@ v. Bonitz. Ind. p. 22b36 ἀπεδώκαμεν B 28 εἰδικὴ conicio το
 ἐν ἑτέροις. αὕτη δέ ἐστι τριῶν διωρισμένων τόπων ὁ μέσος κεφαλῆς καὶ
 τῆς κάτω κοιλίαις. τοῖς μὲν οὖν ἐναίμοις τοῦτ᾿ ἐστὶ τὸ περὶ τὴν καρδίαν
 μέρος· πάντα γὰρ τὰ ἔναιμα καρδίαν ἔχει, καὶ ἀρχὴ ἄρα τῆς κινήσεως καὶ <lb n="10"/>
-<lb n="20"/> τῆς αἰσθήσεως τῆς κυρίας ἐντεῦθέν ἐστι. τῆς μὲν οὖν κινήσεως φανερὸν ὅτι καὶ
+               <lb n="20"/> τῆς αἰσθήσεως τῆς κυρίας ἐντεῦθέν ἐστι. τῆς μὲν οὖν κινήσεως φανερὸν ὅτι καὶ
 ἡ τοῦ πνεύματος ἀρχὴ καὶ ὅλως ἡ τῆς ψύξεώς ἐστιν ἐνταῦθα, καὶ το ἀναπνεῖν
 καὶ τὸ τῷ ὑγρῷ ψύχεσθαι πρός γε τὴν σωτηρίαν τοῦ ἐν τούτῳ μορίῳ
 θερμοῦ ἡ φύσις πεποίηκε. ῥηθήσεται δὲ περὶ αὐτῆς ὕστερον καθ᾿ αὑτήν. <lb n="15"/>
@@ -1048,11 +1045,11 @@ v. Bonitz. Ind. p. 22b36 ἀπεδώκαμεν B 28 εἰδικὴ conicio το
 τομῇ ἐγγίζον εὐρυνόμενον καὶ συστελλόμενον. ἐπεὶ δὲ κινεῖν μέν τι ἢ
 ποιεῖν ἄνευ ἰσχύος ἀδύνατον, ἰσχὺν δὲ ποιεῖ ἡ τοῦ πνεύματος ἐποχὴ καὶ
 <lb n="30"/> κάθεξις, ἔσται τοῖς μὲν εἰσφερομένοις καὶ ἀναπνέουσιν ἡ θύραθεν, τοῖς δὲ <lb n="25"/>
-<note type="footnote">3 cf. Mich. p. 49,30—50,1 4—7 Arist. p. 455b25—28 5 cf. Mich. p. 50,8
+               <note type="footnote">3 cf. Mich. p. 49,30—50,1 4—7 Arist. p. 455b25—28 5 cf. Mich. p. 50,8
 7. 8 Mich. p. 50,9. 10 9—11 Arist. v. 28—31, Mich. p. 50,17 12—27 Arist.
 p. 455b31—456al5 27. 28 Mich. p. 51,13—15 28-p. 23,2 Arist.
 p. 456a 15—18 29 ἐποχή Mich. p. 51,19 30 ἀναπνέουσιν Mich. p. 51,21</note>
-<note type="footnote">1 τὸ τέλος ABa (Arist. MSU, τέλος EYL): τοῦ τέλους C 3 ἔτι δὲ cum Arist. LS (ὥστε
+               <note type="footnote">1 τὸ τέλος ABa (Arist. MSU, τέλος EYL): τοῦ τέλους C 3 ἔτι δὲ cum Arist. LS (ὥστε
 MEUP) 5 τὸ ἔχον Arist. LSU 8 ὕπνος a 9. 10 τό τε ἐγρηγορέναι
 Arist. EMY 11 μετὰ ταῦτα ABa: τούτων C ἐσεῖται AB 12 ἐναίμοις a
 (Arist. S) 13 ἀνάλογον ABa: ἀνάλογα C 14 ὡς ἐγγυτέρω fort. del.
@@ -1061,13 +1058,12 @@ sed v. Arist. τῷ cum Arist. EMYL (om. SP) τὴν om. Arist. SUP
 post τούτῳ ex Arist. add. τῷ Spengel 23 πεπόρικεν ex Arist. MSPL Spengel
 24 alt. τοῖς om. Arist. EMUY 27. 28 τῇ ἐντομῇ Mich. 28. 29 τι post ποιεῖν 
 Arist. SU</note>
-
-<pb n="23"/>
+               <pb n="23"/>
 μὴ ἀναπνέουσιν ἡ σύμφυτος. διὸ καὶ βομβοῦντα φαύνεται τὰ περβωτά,
 ὅταν κινῆται· τριβομένου γὰρ τοῦ συμφύτου πνεύματος ἐν τῇ πτήσει καὶ
 προσπίπτοντος ἐν τῷ ὑποζώματι τῶν ὀλοπτέρων βομβεῖ. οὐ γὰρ ὁ ἔξω <lb n="30"/>
 ἀήρ ἐστιν ὁψοφῶν, | ἀλλὰ τὸ σύμφυτον πνεῦμα. γίνεται δὲ βόμβος καὶ <lb n="265"/>
-<lb n="5"/> διὰ τοῦ ἔξω τοις ἐντόμοις τοῖς ἔχουσι σκίσμα ὑπὸ τὸ ὁπόξωμα. κινεῖται
+               <lb n="5"/> διὰ τοῦ ἔξω τοις ἐντόμοις τοῖς ἔχουσι σκίσμα ὑπὸ τὸ ὁπόξωμα. κινεῖται
 ται δὲ ἅπαν αἰσθήσεώς τινος γινομένης οἰκείας ἢ ἀλλοτρίας ἐν τῷ πρώτῳ
 αἰσθητηρίῳ, οἰκείας μὲν λέγομεν διὰ τὴν οἴκοθεν ὁρμήν (κινούμεθα γὰρ <lb n="5"/>
 καὶ ὑπό τινων ἐν ἠμῖν φαντασμάτων), άλλοτρίας δὲ διὰ τὴν ἔξωθεν, δηλαδὴ
@@ -1077,9 +1073,9 @@ Arist. SU</note>
 καὶ ποιοῦσι πολλὰ ἐγρηυορικά, οὐ μέντοι ἄνευ φαντάσματος καὶ
 αἰσθήσεώς τινος· τὸ γὰρ ἐνύπνιόν ἐστιν αἴσθημα τρόπον τινά. λεκτέον δὲ
 περὶ αὐτῶν ὕστερον. διότι δὲ μὲν ἐνύπνια μνημονεύουσιν ἐγερθέντες, <lb n="15"/>
-<lb n="15"/> τἀς δ’ ἐγρηγορικὰς πράξεις οὐ μνημονεύουσιν, ἐν τοῖς Προβληματικοῖς ἡμῖν
+               <lb n="15"/> τἀς δ’ ἐγρηγορικὰς πράξεις οὐ μνημονεύουσιν, ἐν τοῖς Προβληματικοῖς ἡμῖν
 ειρηται.</p>
-<p>Τούτων οὖν προδιωπισμέων ἐκόμενον ὦρ εἰρημένων ἐστὶν εἰπεῖν,
+            <p>Τούτων οὖν προδιωπισμέων ἐκόμενον ὦρ εἰρημένων ἐστὶν εἰπεῖν,
 τίνων γινομένων καὶ πόθεν ἡ ἀρχὴ τοῦ πάθους γίνεται, τοῦ ἔγρηγορέναι <lb n="20"/>
 καὶ τοῦ καθεύδειν· ἴσως γὰρ τὴν ποιοῦσαν αἰτίαν ἐν τούτοις ἄν μᾶλλον
 <lb n="20"/> εὑρήσοιμεν καὶ τὴν ὑλικὴν τελεῶτερον. φανερὸν οὖν ὡς ἀναγκαῖον τῷ
@@ -1092,7 +1088,7 @@ Arist. SU</note>
 λεχθὲν ἐκ τῶν ἀνατομῶν. τῆς μὲν οῦν θύραθεν τροφῆς εἰσιούσης εἰς τοὺς
 δεκτικοὺς τόπους, κοιλίαν κέγω καὶ ἔντερα, γίνεται ἡ ἀναθυμίασις εἰς τὰς
 φλέβας, ὑφ’ ὦν ἄποκομισθεῖσα ἐν τῷ ἥπατι ἐκεῖσε μεταβάλλουσα ἐξαιματουται, <lb n="5"/>
-<lb n="30"/> τοῦται, ἐκεῖθεν δὲ πορευθεῖσα ἐπὶ τὴν ἀρκήν, τὴν καρδίαν, κυρίως πέττεται
+               <lb n="30"/> τοῦται, ἐκεῖθεν δὲ πορευθεῖσα ἐπὶ τὴν ἀρκήν, τὴν καρδίαν, κυρίως πέττεται
 καὶ αἶμα τέλειον γίνεται· τῶν γὰρ ρλεβῶν αἱ μὲν ἐπὶ τὴν καρδίαν φέρονται,
 αἱ δὲ ἐκεῖθεν ἄρχονταιι. κομίζουσι γὰρ αἱ μὲν ἔσπερ τινὲς διάκονοι πρὸς <lb n="10"/>
 αὐτὴν ἀπὸ τῶν περὶ ἦπαρ τόπων τὸ ἀκατέργαστον αἶμα καὶ ἄπεπτον,
@@ -1100,14 +1096,13 @@ Arist. SU</note>
 9—19 Arist. ib. v. 21—32 19. 20 ipse addidit 20—22 Arist. v. 3234
 22—24 Mich. p. 52,7—9 24—29 Arist. ib. 34— 456 b 4 28 cf. Mich. p. 5212
 29— p. 24,3 Mich. p. 52,16—26</note>
-<note type="footnote">2 ὅταν κινῆται B Arist.: ὅτs κινεῖται ACa 5 διὰ τὸ B 6 τινος B Arist.:
+               <note type="footnote">2 ὅταν κινῆται B Arist.: ὅτs κινεῖται ACa 5 διὰ τὸ B 6 τινος B Arist.:
 om. ACa 7 ὁρμήν AB Mich.: καίνησιν Ca 8 δὲ οm. Ba 10 γίνεται
 bis habet a 11 δ’ ἔνιοι ABa: ol C 15 ἀμνημονοῦσιν Arist. EMY
 17 προσδιωρισμένων B 20 εὑρήσοιμεν a, e corr. A: εὑρήσαιμεν B, prius A: εὔροιμεν C
 26 δ’] δὲ τοῦ Arist. LSU ai om. Arist. LSU 32 ἄρχονται C: ἔρκονται ΑΒa
 (sed cf. Mich.)</note>
-
-<pb n="24"/>
+               <pb n="24"/>
 ἤτις δεχομένη τέττει καὶ κατεργάξεται· αἱ δὲ τὴν χρείαν ἀποπληροῦσιν
 ἐπὶ τὸ ἔμπαλιν μετὰ τὴν τἐψιν καὶ κατεργασίαν ἐπὶ τὸ ἄπαν σῶμα παραπομπήν.
 εἴρηται δὲ περὶ τούτων ἐπὶ πλέον ἐν τοῖς περὶ τροφῆς, νῦν νῦν <lb n="15"/>
@@ -1126,8 +1121,8 @@ bis habet a 11 δ’ ἔνιοι ABa: ol C 15 ἀμνημονοῦσιν Arist. 
 μνημονεύουσιν. οὐκ ἄρα ἐνύπνια τὰ ἐκείνων φαντάσματα, ὥστε οὐδὲ
 ὅπνος ἡ ἐπίληψις. τὰ αὐτὰ δὲ δεῖ λέγειν καὶ περὶ πνιγμοῦ καὶ ἐκνοίας καὶ
 τῶν ὁμοίων.</p>
-<p>Αλλὰ γάρ, ἕσπερ εἴπομεν, οὔκ ἐστιν ὁ ὕπνος ἀδυναμία πάσα τοῦ <lb n="5"/>
-<lb n="20"/> αἰσθητικοῦ, ἀλλ’ ἐκ περὶ τὴν τροφὴν ἀναθυμιάσεως γίνεται τὸ πάθος
+            <p>Αλλὰ γάρ, ἕσπερ εἴπομεν, οὔκ ἐστιν ὁ ὕπνος ἀδυναμία πάσα τοῦ <lb n="5"/>
+               <lb n="20"/> αἰσθητικοῦ, ἀλλ’ ἐκ περὶ τὴν τροφὴν ἀναθυμιάσεως γίνεται τὸ πάθος
 τοῦτο· ἀναγκαῖον γὰρ τὸ ἀναθυμιώμενον ὠθούμενον μέχρι που ὠθεῖσθαι,
 εἶτα ἀντιστρέφειν καὶ μεταβάλλειν καθάπερ εἴριπον· τὸ γὰρ θερμὸν ἐκάστου <lb n="10"/>
 τῶν αῲων πρὸς τὸ ἄνω πέφυκεν αἴρεσθαι, ὅταν δ’ ἐν τοῖς ἄνω τόποις
@@ -1137,7 +1132,7 @@ bis habet a 11 δ’ ἔνιοι ABa: ol C 15 ἀμνημονοῦσιν Arist. 
 ὔπνοι ἀπὸ τροφῆς· ἀθρόον γὰρ πολὺ τό τε ὑγρὸν καὶ τὸ σωματῶδες
 φέρεται. ἔως μὲν οὖν ἱστῆται ἐν τῇ κεφαλῇ, βαρεῖ αὐτήν (διὸ καὶ κινοῦμεν
 αὐτὴν τῇδε κἀκεῖσε νυστάζοντες), ἡνίκα δὲ ῥέψει ἀντιστρέψαν τὸ θερμὸν τὸ <lb n="20"/>
-<lb n="30"/> ἀγαγὸν ἄνω τὰ ὑγρὰ σωματώδη, συρρέουσιν ἄμα αὐτῷ καὶ ταῦτα, καὶ οὔτω
+               <lb n="30"/> ἀγαγὸν ἄνω τὰ ὑγρὰ σωματώδη, συρρέουσιν ἄμα αὐτῷ καὶ ταῦτα, καὶ οὔτω
 γίνεται ὁ ὕπνος, καὶ τότε τὸ ζῷον καθεύδει. σημεῖον δέ, ὡς τὰ ὐγρὰ καὶ σωματώδη
 βαρυνουσι τὴν κεφαλήν, καὶ ἀπὸ τῶν ὑπνωτικῶν· πάντα γὰρ ἐπιδήλως
 καρηβαρεῖν ποιοῦσι τῇ παχύτητι τῆς ἀναφορᾶς τῶν παρ’ αὐτοῖς σωματοειδῶν <lb n="25"/>
@@ -1146,14 +1141,13 @@ bis habet a 11 δ’ ἔνιοι ABa: ol C 15 ἀμνημονοῦσιν Arist. 
 ἄρα ipse addidit 11—18 Mich. p. 53,16—22 19—24 Arist. ib. v. 1724
 24 cf. Micli. p. 53,26 25. 26 Mich. p. 53,27. 28 26. 27 Arist. ib. v. 2426
 28—34 Mich. p. 53,31—54,6</note>
-<note type="footnote">1. 2 διακονοῦσι πρὸς τὴν τοὔμπαλιν Mich. 2 μετὰ Ba Mich.: κατὰ A: καὶ κατὰ C
+               <note type="footnote">1. 2 διακονοῦσι πρὸς τὴν τοὔμπαλιν Mich. 2 μετὰ Ba Mich.: κατὰ A: καὶ κατὰ C
 2. 3 παραπομπήν ABa Mich.: παραπέμτουσιν C 16. 17 οὐδὲ ὁ ὕπνος ἐπ. ABa, sed
 V. Mich 21 ἀνάγκη Arist. LSU που ABa (Arist. praeter L): του C
 (Arist. L) 24 ἀποτελεσθείη AB 25 ἀθρόου a 27 τότε Αrist.
 28 οὖν] ἄν Mich. βαρύνει Ca (βαρεῖ etiam Mich.) 29 ῥέψη a (Mich. RPa)
 31 τότε] τόδε B 33 ταχύτητι Spengel αὐτῆς B</note>
-
-<pb n="25"/>
+               <pb n="25"/>
 γένεται οὖν μετὰ τὰ σῖτα μάλιστα τοιοῦτος ὁ ὕπνος (πολλὴ γὰρ ἡ ἀπὸ
 τῶν σίτων ἀναθυμίασις), γίνεται δὲ καὶ ἐκ κόπων ἐνίων· ὁ μὲν γὰρ κόπος <lb n="30"/>
 συντηκτικόν, τὸ δὲ | σύντηγμα γίνεται ὤσπερ τροφὴ ἌΠΕΠΤΟς, ἄν μὴ ψυχρὸν <lb n="268"/>
@@ -1163,7 +1157,7 @@ V. Mich 21 ἀνάγκη Arist. LSU που ABa (Arist. praeter L): του C
 θερμοῦ, οἶον συμβαίνει τοῖς πυρέττουσι καὶ ἐν τοῖς ληθάργοις. ἔτι δὲ ἐν
 τῇ πρώτῃ ἠλικίᾳ μᾶλλον ὁ ὔπνος ἣ ταῖς ἄλλαις· τὰ γὰρ παιδία καθεύδει
 σφόδρα διὰ τὸ τὴν τροφὴν ἄνω φέρεσθαι πᾶσαν. σημεῖον δὲ τὸ ὑπερβάλλειν <lb n="10"/>
-<lb n="10"/> τὸ μέγεθος τῶν ἄνω πρὸς τὰ κάτω κατὰ τὴν πρώτην ἠλικίαν διὰ
+               <lb n="10"/> τὸ μέγεθος τῶν ἄνω πρὸς τὰ κάτω κατὰ τὴν πρώτην ἠλικίαν διὰ
 τὸ ἐπὶ ταῦτα γίνεσθαι τὴν αὔξησιν. ἐν οἶς γὰρ πλείων ἡ τροφή, μείζω
 ταῦτα. διὰ ταύτην δὲ τὴν αἰτίαν καὶ ἐπιληπτικὰ γίνεται· ὅμοιον γὰρ ὁ
 ὕπνος ἐπιλήψει· ἐκάτερον γὰρ ἀργία αἰσθήσεων. διὸ καὶ συμβαίνει τισὶν <lb n="15"/>
@@ -1181,8 +1175,9 @@ V. Mich 21 ἀνάγκη Arist. LSU που ABa (Arist. praeter L): του C
 <lb n="25"/> δὲ τὰ ἄνω πλήρη | τροφῆς τοῖς παιδίοις, ὥστε πέντε μηνῶν οὐδὲ στρέφουσι <lb n="269"/>
 τὸν αὐχένα. ὅμοιον δὲ τὸ πάθος τοῖς σφόδρα μεθύουσιν· ὐγρότης
 γὰρ ἐπ’ ἀμφρῖν ἐπὶ τὰ ἄνω ἀνηνέχθη πολλή. εὔλογον δὲ τοῦτο τὸ πάθος
-αἴτιον εἶναι λέγειν καὶ τοῦ ἡρεμεῖν ἐν ταῖς μήτραις τὰ ἔμβρυα τὸ πρῶτον.</p> <lb n="5"/>
-<p>Καὶ τὸ ὅλον δὲ φίλυπνοι οἱ ἀδηλόφλεροι καὶ οἱ νανώδεις καὶ οἱ μεγαλοκέφαλοι.
+αἴτιον εἶναι λέγειν καὶ τοῦ ἡρεμεῖν ἐν ταῖς μήτραις τὰ ἔμβρυα τὸ πρῶτον.</p>
+            <lb n="5"/>
+            <p>Καὶ τὸ ὅλον δὲ φίλυπνοι οἱ ἀδηλόφλεροι καὶ οἱ νανώδεις καὶ οἱ μεγαλοκέφαλοι.
 <lb n="30"/> τῶν μὲν γὰρ αἱ φλέβες στεναὶ καὶ λεπταί, ὅθεν κατελθὸν τὸ
 πνεῦμα ἀπὸ τῆς κεφαλῆς ῥᾳδίως ἐπλήρωσε· τὸ γὰρ μικρὸν τὰχιον τληροῦται. <lb n="10"/>
 ροῦται. διὰ τοῦτο δὲ ψυχρῶν τῶν φλαβῶν γενομένων (καὶ γὰρ αἱ κοιλίαι
@@ -1191,15 +1186,14 @@ p. 457 a 1—3 7. 8 Mich. p. 54,22 8—11 Arist. ib. v. 4—7 11. 12 Mich,
 ib. V. 24. 25 12. 13 Arist. ibid. v. 7—9 13 Mich. p. 542527
 12—15 Arist. ibid. 9—11 15—23 Mich. p. 55,3—15 15 22 Arist. ib. v. 17
 23—30 Arist. ib. 14—23 30— p. 25,6 Mich. p. 55,20—31</note>
-<note type="footnote">1 ὁ om. B 2 σιτίων B 3 συντηκτικός C ψυκρὸς A 4 περιπτώματα
+               <note type="footnote">1 ὁ om. B 2 σιτίων B 3 συντηκτικός C ψυκρὸς A 4 περιπτώματα
 B 9 ἄνω φέρεσθαι ABa: φέρεσθαι ἄνω C 13 τισὶν] πολλοῖς Αrist.
 LSU 18 ἀπάτμισιν B Spengel: ἀπάτμησιν ACa (Mich. R) 19 ὑφ’ ὦν συνθλίβεσθαι
 om. B 21 ταὐτὸν H δὲἰπεῖν AB Mich.: ταὐτὸδ δ’ ἐστὶ C 22 καὶ
 (post δὲ) ABa Mich.: om. C 23. 24 ἴσως οὐδὲν Arist. praeter M 24 ὐδρώδη B
 25 τῆς τροφῆς Arist. LU 26 τοῖς om. B 27 ἐπ’ ABa: καὶ C 29 alt. οἱ
 om. Arist. LSU tert. οἱ om. Arist. LSU</note>
-
-<pb n="26"/>
+               <pb n="26"/>
 γὰρ θερμότητος εἰς τὸ διαρρεῦσαι καὶ σκεδασθῆναι), χρονίζοντος δὲ τοῦ
 πνεύματος ἐξ ἀνάγκης γίνεται καὶ ὁ ὕπνος μακρότερος· ἄλλως τε ὥσπερ <lb n="15"/>
 τὸ ὕδωρ διὰ στενῶν σωλήνων βραδέως ἐξέρκεται, διὰ δὲ τῶν εὐρέων τάχιον,
@@ -1225,16 +1219,16 @@ om. Arist. LSU tert. οἱ om. Arist. LSU</note>
 κινοῦν καὶ ὀρθοῦν τὸ θερμόν ἐστι. κατέψυκται οὖν ἐν τῷ ὕπνῳ τὰ ἄνω
 <lb n="25"/> καὶ τὰ ἔξω καὶ κύκλῳ παντὸς τοῦ σώματος, τὰ δ’ ἐντὸς καὶ τὰ κάτω <lb n="15"/>
 θερμά, οἶον τὰ περὶ τοῦς πόδας καὶ τὰ εἴσω.</p>
-<p>Καίτοι τοῦτό τις ἀπορήσειεν ἄν, διὰ τί μετὰ τὰ σιτία ἰσχυρότερος ὁ
+            <p>Καίτοι τοῦτό τις ἀπορήσειεν ἄν, διὰ τί μετὰ τὰ σιτία ἰσχυρότερος ὁ
 ὕπνος καί ἐστιν ὑπνωτικὸς οὖνος καὶ ἄλλα τοιαύτην ἔχοντα θερμότητα.
 ἔστι δ’ οὐκ εὔλογον τὸν μὲν ὕπνον εἶναι κατάψυξιν, τὰ δ’ αἴτια τοῦ <lb n="20"/>
-<lb n="30"/> καθεύδειν θερμά. ἢ τοῦτο συμβαίνει πρῶτον μέν, ὅτι ὥστερ ἡ κοιλία κενὴ
+               <lb n="30"/> καθεύδειν θερμά. ἢ τοῦτο συμβαίνει πρῶτον μέν, ὅτι ὥστερ ἡ κοιλία κενὴ
 μὲν οὖσα θερμή ἐστιν, ἡ δὲ πλήρωσις αὐτῆς καταψύχει (ἐπιπνίγει γὰρ καὶ
 <note type="footnote">6. 7 Arist. p. 457a24. 25 7—10 Mich. p. 56,1—4 10—16 Arist. ib.
 V. 25—32 14. 15 Mich. p. 56,8 16—20 Mich. p. 56,10. 11. 1822
 20—23 Arist. p. 457 a 33—b 4 23. 24 Mich. p. 56,30 24 — 31 Arist. ib.
 V. 4—12 30 cf. Mich. p. 57,13 31—27, 14 Mich. p. 57,17—58,1</note>
-<note type="footnote">6 μὲν ARa: om. C 9 ἀπὸ AB Mich.: ὑπὸ Ca 10 ’arj? B: καὶ ἴσης Mich.
+               <note type="footnote">6 μὲν ARa: om. C 9 ἀπὸ AB Mich.: ὑπὸ Ca 10 ’arj? B: καὶ ἴσης Mich.
 11 πόρων] φλεβῶν Arist. EMY 13 γὰρ] γὰρ καὶ Arist. 14 οὐδὲν Arist.
 17 ἀναγινώσκοντες ABa Mich.: om. C νοοῦντες Ba Mich.: νοσοῦντες A: διανοούμενοι C
 23 συμπίπτει Arist. SU 25 τὰ ante κύκλῳ add. C 27 τοῦτο οm. Arist.
@@ -1243,8 +1237,7 @@ praeter EY διὰ τί e Mich. p. 57,3] ὅτι Arist. μετὰ σῖτον �
 uTivcoxtxov L ὁ ante οἶνος add. C θερμότητας Arist. praeter EY 29 μὲν
 om. C 30 πρῶτον μέν B (Mich.): om. ACa κενὴ] κοινὴ Spengel per errorem
 31 αὐτῆς cum Arist. M (αὐτὴν EY, om. LSU)</note>
-
-<pb n="27"/>
+               <pb n="27"/>
 σβέννυσι τὸ θερμὸν ἡ τῶν βρωμάτων πλήρωσις, ὥσπερ καὶ τὸ πῦρ τὸ τῶν
 ξύλων πλῆθος), οὕτω καὶ αἱ φλέβες καὶ οἱ ἐν τῇ κεφαλῇ πόροι καταψύχονται <lb n="25"/>
 τῷ πλήθει τῆς ἀναφερομένης ἀναθυμιάσεως, τούτου δὲ γενομένου
@@ -1259,7 +1252,7 @@ om. C 30 πρῶτον μέν B (Mich.): om. ACa κενὴ] κοινὴ Spengel 
 τούτοις ὥσπερ τὸ πῦρ ἐπιτιθεμένων τῶν ξύλων σβέννυται, οὕτω πολλῆς
 ἐμπιπτούσης τροφῆς καταψύχεται καὶ οἷον σβέννυται τὸ ἐν καρδίᾳ θερμόν,
 ἕως ἂν καταπεφθῇ ἡ τροφή. γίνεται γὰρ ὁ ὕπνος, ὥσπερ εἴρηται, ἐν τῇ <lb n="10"/>
-<lb n="15"/> ἀνθυποστροφῇ πρὸς τὴν ἀρχῆν τοῦ σωματώδους ὑγροῦ τῶν ὑπὸ τοῦ θερμοῦ
+               <lb n="15"/> ἀνθυποστροφῇ πρὸς τὴν ἀρχῆν τοῦ σωματώδους ὑγροῦ τῶν ὑπὸ τοῦ θερμοῦ
 ἀναφερομένου διὰ τῶν φλεβῶν πρὸς τὴν κεφαλήν. ὅταν γὰρ μηκέτι δύνηται
 ἄνω εἶναι τὸ ἀναχθέν, ἀλλὰ τῷ πλήθει ὑπερβάλλῃ καὶ βαρύνῃ καὶ πρὸς <lb n="15"/>
 τούτοις δὲ ψυχθῇ, πάλιν ἀνταπωθεῖ καὶ κάτω ῥεῖ. διὸ καὶ καταπίπτουσι
@@ -1269,7 +1262,7 @@ om. C 30 πρῶτον μέν B (Mich.): om. ACa κενὴ] κοινὴ Spengel 
 παντελῆ ἀναισθησίαν, ὕστερον δὲ φαντασίαν. ἢ αἱ μὲν εἰρημέναι λύσεις
 ἐνδεχόμεναί εἰσι καὶ πρὸς τὸ πιθανὸν ἐκδέδονται μᾶλλον ἢ τὸ ἀληθές,
 ἐκείνη δὲ κυρίως ἔσται, καὶ τοῦτο τοῦ ὑπνώττειν μᾶλλον ἀληθέστερον αἴτιον. <lb n="25"/>
-<lb n="25"/> ὁ γὰρ περὶ τὸν ἐγκέφαλον τόπος, ὥσπερ ἐν ἄλλοις εἴρηται, πάντων τυγχάνει
+               <lb n="25"/> ὁ γὰρ περὶ τὸν ἐγκέφαλον τόπος, ὥσπερ ἐν ἄλλοις εἴρηται, πάντων τυγχάνει
 ψυχρότατος τῶν ἐν τῷ σώματι, τοῖς δὲ μὴ ἔχουσι τὸ ἀνάλογον τούτου
 μόριον. ὥσπερ δὲ τὸ ἀπατμίζον ὑγρὸν ἐκ γῆς καὶ τῶν ὑδάτων ὑπὸ τῆς <lb n="30"/>
 τοῦ ἡλίου θερμότητος, ὅταν ἔλθῃ εἰς τὸν ἄνω | τόπον, διὰ τὴν ψυχρότητα <note type="marginal">272</note>
@@ -1281,7 +1274,7 @@ om. C 30 πρῶτον μέν B (Mich.): om. ACa κενὴ] κοινὴ Spengel 
 καὶ μὴ δέχεσθαι ῥᾳδίως τὴν ἀναθυμίασιν συμβάλλεται καὶ ἡ στενότης καὶ
 <note type="footnote">14—22 Arist. p. 457b 20—27 cf. Mich. p. 58,1—9 22—24 ipse addidit
 25—p. 28,1 Arist. p. 457b 29—458a8</note>
-<note type="footnote">6 ἀντιπεριιστάμενον ABa Mich.: περιιστάμενον C 9 τοὺς om. a (habet etiam Mich).
+               <note type="footnote">6 ἀντιπεριιστάμενον ABa Mich.: περιιστάμενον C 9 τοὺς om. a (habet etiam Mich).
 10 ἐκεῖσε ἀναχθὲν ABa (ἐκεῖσε ὄν Mich.): ἀναχθὲν ἐκεῖσε C 10.11 ὑγρὸν καὶ θερμὸν
 AB (ὑγρὸν θερμὸν Mich.): θερμὸν καὶ ὑγρὸν Ca 25 ὁ ἐγκέφαλος p. 457b30 non legit
 cum LSUY, ut vid. 26 ψυχρότατος C (Arist. MSU, ψυχρότατον EYL: Ψυρότερος ABa
@@ -1289,11 +1282,10 @@ cum LSUY, ut vid. 26 ψυχρότατος C (Arist. MSU, ψυχρότατον 
 om. C 31 συνέρχεται Arist. EMY 32 φαινόμενοι γίγνονται B 33 συνισταμένη 
 καὶ Arist. δὲ ABC (ex Arist. Spengel): om. a 34 δέχεσθαι a Arist.: 
 γίνεσθαι ABC</note>
-
-<pb n="28"/>
+               <pb n="28"/>
 λεπτόης τῶν περὶ ἐγκέξαλον φλεβῶν. διὰ γὰρ τὴν λεπτότητα ἀλιγόθερμα, <lb n="10"/>
 τὸ δὲ ὀλίγον εὐπαθέστερον.</p>
-<p>Τῆς μὲν οὖν καταψύξεως τοῦτ’ ἐστὶν αἴτιον καὶ τοῦ ὕπνου. ἐγείρεται
+            <p>Τῆς μὲν οὖν καταψύξεως τοῦτ’ ἐστὶν αἴτιον καὶ τοῦ ὕπνου. ἐγείρεται
 δ’ ὅταν πεφθῇ καὶ κρατήσῃ ἡ συνεεωσμένη θερμότης ἐν ὀλίγῳ πολλὴ ἐκ
 <lb n="5"/> τοῦ περιετῶτος καὶ διακριθῇ τό τε σωματωδέστερον αἶμα καὶ τὸ καθαρώ· <lb n="15"/>
 τατον. ἔστι δὲ λεπτότατον μὲν αἶμα καὶ καθαρώτατον τὸ ἐν τῇ κεφαλῇ,
@@ -1306,27 +1298,29 @@ om. C 31 συνέρχεται Arist. EMY 32 φαινόμενοι γίγνον
 ἐστὶν οὐκειότερον. διὰ δὲ τὸ γίνεσθαι ἀδιακριτώτερον τὸ αἶμα μετὰ τὴν
 τῆς τροφῆς προσφορὰν ὕπνος γίνεται, ἔως ἄν διακριθῇ τοῦ αἴματος τὸ μὲν
 <lb n="15"/> καθαρώτερον ἄνω, τὸ δὲ θλολώτερον εἰς τὸ κάτω· ἄταν δὲ τοῦτο συμβῇ, <lb n="30"/>
-ἐγείρονται ἀπολυθέντα τοῦ ἐκ τῆς | τροφῆς βάρους.</p> <lb n="273"/>
-<p>Τί μὲν οὖν τὸ αἴτιον καθεύδειν εἴρηται, ὅτι ἡ ὑπὸ τοῦ σωματώ
+ἐγείρονται ἀπολυθέντα τοῦ ἐκ τῆς | τροφῆς βάρους.</p>
+            <lb n="273"/>
+            <p>Τί μὲν οὖν τὸ αἴτιον καθεύδειν εἴρηται, ὅτι ἡ ὑπὸ τοῦ σωματώ
 δους τοῦ ἀναφερομένου ὑπὸ τοῦ συμφύτου θερμοῦ ἀντιπερίστασις ἀθρόως
 ἐπὶ τὸ πρῶτον αἰσθητήριον, καὶ τί ἐστιν ὁ ὕπνος, ὅτι ἡ τοῦ πρώτου <lb n="5"/>
-<lb n="20"/> αἰσθητηρίου κατάληψις πρὸς τὸ μὴ δύνασθαι ἐνεργεῖν ἐξ ἀνάγκης μὲν γινόμενον
+               <lb n="20"/> αἰσθητηρίου κατάληψις πρὸς τὸ μὴ δύνασθαι ἐνεργεῖν ἐξ ἀνάγκης μὲν γινόμενον
 (οὐ γὰρ ἐνδέχεται τὸ ζῷον εἶναι μὴ συμβαινόντων τῶν ἀπεργαξομένων
 καὶ συντηρούντων αὐτό. ὦν ἣν ἡ τροφή, ἐξ ἦς ἡ ἀναθυμίασις), ἔνεκα δὲ
-σωτηρίας· σῲζει γὰρ ἡ ἀνάπαυσις.</p> <lb n="10"/>
-<note type="footnote">1. 2 Μich. p. 58,19. 20 3—23 Arist. p. 45 a 8— 32 22 Mich. p. 59,7</note>
-<note type="footnote">2 ὀλίγον om. ABC 7 θολερώτατον ex Arist. Spengel 9 ἐκατέρας Arist.
+σωτηρίας· σῲζει γὰρ ἡ ἀνάπαυσις.</p>
+            <lb n="10"/>
+            <note type="footnote">1. 2 Μich. p. 58,19. 20 3—23 Arist. p. 45 a 8— 32 22 Mich. p. 59,7</note>
+            <note type="footnote">2 ὀλίγον om. ABC 7 θολερώτατον ex Arist. Spengel 9 ἐκατέρας Arist.
 θαλάμων libri 10 τε om. Arist. SUY καλουμένης B (Arist. MLSU): om. ACa
 (Arist. EY) 14 ὁ ὔπνος Arist. LSU 15 καθαρώτατον AGa (Arist. EM)
 θωλερώτερον ex Arist. YSL (θολερώτατον EMU) Spengel τὸ xaxw cum Arist. ΕMY(Y),
 τὰ κάτω Arist. LS 17 ἡ om. B (Arist. M) 19 ὁ om. C (Arist. Y)
 20. 21 γινόμενον ABa (Arist. LU, γινόμενος ΕΜΥ): γινομένη C</note>
-</div>
-
-<div type="textpart" subtype="chapter" n="3">
-<pb n="29"/>
-<head>ΠΕΡΙ ΕΝΥΠΝΙΩΝ.</head> <lb n="274"/>
-<p>1. Mετὰ δὲ ταῆτα περὶ ἐνυπνίων ζητητέον, καὶ πρῶτον τίνι τῶν <lb n="5"/>
+         </div>
+         <div n="3" type="chapter">
+            <pb n="29"/>
+            <head>ΠΕΡΙ ΕΝΥΠΝΙΩΝ.</head>
+            <lb n="274"/>
+            <p>1. Mετὰ δὲ ταῆτα περὶ ἐνυπνίων ζητητέον, καὶ πρῶτον τίνι τῶν <lb n="5"/>
 τῆς ψυχῆς φαίνεται, καὶ πότερον τοῦ νοητικοῦ τὸ πάθος ἐστὶ τοῦτο ἢ τοῦ
 αἰσθητικοῦ· τούτοις γὰρ μόοις τῶν ε'ν ἑμῖν γνωρίζομέν τι. ὅτι δὲ ἁπλῶς
 <lb n="5"/> οὐδετέρου δῆλον. εἰ γὰρ χρῆσις ὄψεως ὅρασις καὶ ἀκοῆς τὸ ἀκούειν καὶ
@@ -1334,7 +1328,7 @@ om. C 31 συνέρχεται Arist. EMY 32 φαινόμενοι γίγνον
 δ’ ἐν ταῖς αἰσθήσεσιν αἰσθητῶν τὰ μὲν κοινὰ τὰ δὲ ἴδια, κοινὰ μὲν οἶον
 μέγεθος κίνησις (πλείοσι γὰρ ὑποπίπτει) καὶ τὰ ἄλλα τὰ τοιαθτα,
 ἴδια δὲ οἱον χρῶμα ψόφος χυμός, τὸ μὲν ὄψει τὸ δὲ ἀκοῇ τὸ δὲ γεύσει, <lb n="15"/>
-<lb n="10"/> ἀδυνατεῖ δὲ τὰ ζῷα πάντα μύοντα καὶ καθεύδοντα ὁρὰν, ὁμοίως δὲ καὶ ἐπὶ
+               <lb n="10"/> ἀδυνατεῖ δὲ τὰ ζῷα πάντα μύοντα καὶ καθεύδοντα ὁρὰν, ὁμοίως δὲ καὶ ἐπὶ
 τῶν λοιπῶν, ὡς οὐκ αἰσθανόμεθα οὐδὲν ἐν τοῖς τοῖς ὕπνοις. οὐκ ἄρα γε
 τῇ αἰσθήσει τὸ ἐνύπνιον αἰσθανόμεθα. ἀλλὰ μὴν οὐδὲ τῆς διανοίας ἢ
 τῆς δόξης πάθη εἰσὶ τὰ ἐνύπνια. ἐπεὶ γὰρ ἐν τοῖς ὕπνοις οὐ μόνον συγκατατιξέμεθα <lb n="20"/>
@@ -1342,23 +1336,22 @@ om. C 31 συνέρχεται Arist. EMY 32 φαινόμενοι γίγνον
 <lb n="15"/> ὅτι λευκὸν &lt;ἤ&gt; καλόν, ταῦτα δὲ ἡ δόξα ἄνευ αἰσθήσεως οὐχ | ὐπολαμβάνει, <lb n="275"/>
 λαμβάνει, ἠ δὲ αἴσθησις ἐν τοῖς ὕπνοις οὐκ ἐνεργεῖ, οὐκ ἄρα οὐδὲ τῆς
 δόξης ἢ τῆς νοήσεώς εἰσι τὰ ἐνύπνια.</p>
-<p>Ἔτι παρὰ τὸ ἐνύπνιον πολλάκις ἐννοοῦμεν ἄλλο τι. καθάπερ γὰρ ἐν
+            <p>Ἔτι παρὰ τὸ ἐνύπνιον πολλάκις ἐννοοῦμεν ἄλλο τι. καθάπερ γὰρ ἐν
 τῷ ἐγρηγορέναι αἰσθανόμενοί τι διανοούμεθα πολλάκις περὶ αὐτοῦ ἔτερόν <lb n="5"/>
-<lb n="20"/> τι, οὔτω καὶ ἐν τοῖς ὔπνοις παρὰ τὰ φαντάσματα ἀνίοτε ἀλλα ἐννοοῦμεν.
+               <lb n="20"/> τι, οὔτω καὶ ἐν τοῖς ὔπνοις παρὰ τὰ φαντάσματα ἀνίοτε ἀλλα ἐννοοῦμεν.
 ἰδὼν γὰρ ἐν ὕπνῳ τις Σωκράτην ἐννοεῖ, ὅτι ἐν ὕπνῳ τοῦτον ὁρᾷ· ὥσπερ
 κὰγὼ ἰδὼν ὄτι εἶρον βιβλίον, ὅ πάλαι ἐπόθουν, ἐνενόυν ὄτι ἐν ὀνείρῳ <lb n="10"/>
 τοῦο ὁρῳ, καὶ ὁ ἐταῖρος ἰδων τὸν πάνσεπτον ἡμῶν καθηγεμόνα, ὅτι
 <note type="footnote">2—12 Arist. p. 458 a 33— b 9 13—17 Mich. p. 61,17 — 25 18— 20 Arist.
 p. 458 b 15—18 21— p. 30,3 Mich. p. 61,31—62,7</note>
-<note type="footnote">1 θεμιστίου παράφρασις εἰς τὸ ἐνυπνίων ἀριστοτέλους Ca 2 ἐνυπνίου Arist.
+               <note type="footnote">1 θεμιστίου παράφρασις εἰς τὸ ἐνυπνίων ἀριστοτέλους Ca 2 ἐνυπνίου Arist.
 praeter U 3 ἐκ ante τῆς add. B Τὸ cm. Arist. LU 5 γὰρ] ot] Arist.
 LSU, δὲ EMY 6 ἔλως δ’ Arist. praeter EY 8 καὶ κίνησις legit cum Arist.
 EMY 9 ἴδια δὲ] ἢ ἴδια Arist. LMSU 12 τῇ αἰσθήσει γε Arist. LM
 τοῦ ἐνυπνίου Arist. MS 15 ἢ ex Mich, addidi 18 τι ἄλλο Arist. LSU
 20 ἐνίοτε οm. C 21 τοῦτον AB Mich. SCa: τοῦτο Ca Mich. P 22 βυβλίον Ca
 23 ἠμῶν om. C (habet etiam Mich.)</note>
-
-<pb n="30"/>
+               <pb n="30"/>
 ἀνέστη ἐκ τῶν νεκρῶν, ἔτι κοιμώμενος ἐνενόει, ὅτι ὄναρ ὁρᾷ τὸν διδάσκαλον
 ἐγηγερμένον. ἀλλὰ καί τις ἰδὼν ἐν ὕπνῳ, ὅτι εἶρε χρυσόν, ἔτι κατεχόμενος
 τῷ ὕπνῳ ἐδόκει διηγεῖσθαι τοῖς φίλοις, ὡς ἐν ὕπνῳ εὖρε θησαυρόν οὐκ <lb n="15"/>
@@ -1379,7 +1372,7 @@ EMY 9 ἴδια δὲ] ἢ ἴδια Arist. LMSU 12 τῇ αἰσθήσει γε
 καὶ ἐπὶ τῶν ἐνυπνίων μᾶλλον μνημονεύουσιιν ἀναστάντες ἃ εἶδον οἱ ἐαυτοῦς <lb n="5"/>
 ἠσκηκότες μεμηῆσθαι τὰ ὀνείρατα. γίνεται δὲ τοῦτο, ὄταν τις ἄμα τῷ
 <lb n="20"/> ἀναστῆναι τοῦ ὕπνου εὐθὺς ἀννανεῶται ἃ ἐωράκει καθ’ ὕπνους.</p>
-<p>Δῆλον δ’ ἐκ τούτων πάντων γε τοσοῦτον, ὅτι τὸ αὐτὸ ᾦ καὶ ἐγρηγορότες
+            <p>Δῆλον δ’ ἐκ τούτων πάντων γε τοσοῦτον, ὅτι τὸ αὐτὸ ᾦ καὶ ἐγρηγορότες
 ἐν ταῖς νόσοις ἀπατώμεθα, τοῦτο αὐτὸ καὶ ἐν τῷ ὕπνῳ ποιεῖ τὴν <lb n="10"/>
 ἀπάτην. ὡς γὰρ ἐν ταῖς νόσοις τὸ ἀνιὸν πακὸ πνεῦμα συνταράττει διὰ
 τὴν παχύτητα καὶ τὴν ἀπὸ τοῦ πυρετοῦ σφοδρὰν κίνησιν τὸ ὁπτικὸν πνεῦμα
@@ -1388,7 +1381,7 @@ EMY 9 ἴδια δὲ] ἢ ἴδια Arist. LMSU 12 τῇ αἰσθήσει γε
 καὶ συνταραττόμενα ὡδί πως καὶ συντιθέμενα διὰ τὴν τοῦ ὁπτικοῦ
 πνεπύματος κίνησιν ἔμφασιν ποιεῖ ζῲου), οὔτω καὶ ἐν τοῖς ὕπνοις τὸ τοιοῦτον
 πνεῦμα αἴτιον ἠμῖν ἀπάτης γίνεται. καὶ ὐγιαίνουσι καὶ εἰδόσιν εἰσόσιν <lb n="20"/>
-<lb n="30"/> κωλύει ἀπατᾶσθαι ἢ διὰ τὸ πλῆθος τοῦ ἀποστήματος ἢ διὰ τὸ τὴν ὄψιν
+               <lb n="30"/> κωλύει ἀπατᾶσθαι ἢ διὰ τὸ πλῆθος τοῦ ἀποστήματος ἢ διὰ τὸ τὴν ὄψιν
 πάσκειν τι· ὅ τε γὰρ ἥλιος ποδιαῖος δοκεῖ καὶ ἡ γῆ κινεῖσθαι ἐν πλοίῳ
 οὖσιν. εἰ δὲ τοῦτο, πολλῷ μᾶλλον νοσοῦσι καὶ ἔτι μᾶλλον ἐν ὅπνῳ. ἀλλ’
 εἴτε δὴ τὸ αὐτὸ εἴθ’ ἔετερον τὸ φανταστικὸν τῆς ψυκῆς καἰ αἰσθητικόν, <lb n="25"/>
@@ -1396,18 +1389,17 @@ EMY 9 ἴδια δὲ] ἢ ἴδια Arist. LMSU 12 τῇ αἰσθήσει γε
 <note type="footnote">3 — 5 Mich. p. 61,28—30 5 — 20 Mich. p. 62,12—32 21. 22 Arist.
 p. 458 b 25—28. 23—29 Μich. p. 63,20—26 29—32 Mich. p. 642025
 33—p. 31,5 Arist. p. 458 b 29- 459 a 4</note>
-<note type="footnote">1 ἐνενόει] ἐνεργεῖ ἔτι κοιμώμενος ἐννενόει C 6 τι] τοι Β 7 ὅτι περ C
+               <note type="footnote">1 ἐνενόει] ἐνεργεῖ ἔτι κοιμώμενος ἐννενόει C 6 τι] τοι Β 7 ὅτι περ C
 17 τόπῳ (Mich.): C 2 a τόπω ABC 20 καὶ ante καθ’ add. B 21 γε] τό γε
 Arist. EMY, om. SU 22 αὐτὸ] αὐτῶ C 23 ταῖς οm. a 24 πυρετοῦ]
 ὀπτικοῦ C 29 post ouOEv add. γὰρ B, Hoelkius καὶ ὐγ. καὶ εἱδόσιν v. 31 post δοκεῖ
 ponit 33 καὶ τὸ αἰσθητικὸν Arist. 34 τι om. Arist. EMY</note>
-
-<pb n="31"/>
+               <pb n="31"/>
 παρορᾶν καὶ παρακούειν ὁρῶντος ἀληθές τι καὶ ἀκούοντος, οὐ τοῦτο δὲ ὃ
 οἴεται. ἐν δὲ τῷ ὅπνῳ δπόκειται μηδὲν ὁρὰν μηδ’ ἀκούειν μηδ’ ὄλως <lb n="30"/>
 αἰσθάνεσθαι. ἆρ’ οὖν τὸ μὲν ὁρᾶν μηδὲν αληθές, τὸ δὲ μηδὲ αἰσθάνεςθαι
 οἰκ ἀληθές, ἀλλ’ ἐνδέχεται καὶ τὴν ὄψιν πάσκειν τι καὶ | τὰς ἄλλας <lb n="277"/>
-<lb n="5"/> αἰσθήσεις; τὰ γὰρ ἀπὸ τῶν αἰσθητῶν ἐγκαταλείμματα καὶ ἐν ὕπνῳ φέρουσι,
+               <lb n="5"/> αἰσθήσεις; τὰ γὰρ ἀπὸ τῶν αἰσθητῶν ἐγκαταλείμματα καὶ ἐν ὕπνῳ φέρουσι,
 ὦν ἔκαστον ὥσπερ καὶ ἐγρηγορότων ἡμῶν προσβάλλει τῇ αἰσθητικῇ ἀρχῇ
 τῇ καρδίᾳ, καὶ ὀτὲ μὲν ἡ διάνοια λέγει, ὅτι ψεῦδος, καὶ συνῂσθετο ὄναρ <lb n="5"/>
 εἶναι, ὅταν μὴ πολλὴ ἡ κατιοῦσα ἀναθμίασις ᾗ καὶ ὦμεν ὥσπερ ἐγρηγορότες.
@@ -1417,7 +1409,8 @@ ponit 33 καὶ τὸ αἰσθητικὸν Arist. 34 τι om. Arist. EMY</not
 ἣ ὅλως τοῦ νοοῦντος τὸ πάθος ὂ καλοῦμεν ἐνυπνιάζειν, φανερόν, ἀλλ’ οὐδὲ
 τοῦ αἰσθανομένου ἀπλῶς· ὁρᾶν γὰρ ἀνάγκη καὶ ἀκούειν ὁπλῶς. ἀλλὰ πῶς
 δὴ καὶ τίνα τρόπον, ἐπισκπτέον.</p>
-<lb n="15"/> <p>Ὑποκείσθω δ’ ὅπερ ἐστὶ φανερόν, ὅτι τοῦ αἰσθητικοῦ τὸ πάθος, <lb n="15"/>
+            <lb n="15"/>
+            <p>Ὑποκείσθω δ’ ὅπερ ἐστὶ φανερόν, ὅτι τοῦ αἰσθητικοῦ τὸ πάθος, <lb n="15"/>
 εἴπερ καὶ ὁ ὕπνος· οὐ γὰρ ἄλλῳ μέν τινι μορίῳ τῶν ζῲων ὑπάρχει ὁ ὕπνος,
 ἀλλῳ δὲ τὸ ἐνυπιάζειν, ἀλλὰ τῷ αἰτῷ. ἐπεὶ δὲ περὶ φαντασίας ἐν τοῖς Περὶ
 ψυχῆς εἴρηται, καὶ ἔστι μὲν τὸ αὐτὸ τῷ αἰσθητικῷ τὸ φανταστικόν, τὸ δ’ <lb n="20"/>
@@ -1426,7 +1419,7 @@ ponit 33 καὶ τὸ αἰσθητικὸν Arist. 34 τι om. Arist. EMY</not
 δὲ ἐνύπνιον φάντασμά τι φαίνεται εἶναι (τὸ γὰρ ἐν ὕπνῳ φάντασμα ἐνύπνιον <lb n="25"/>
 λέγομεν εἴθ’ ἀπλῶς εἴτε τρόπον τινὰ γενόμενον) φανερὸν ὅτι τοῦ αἰσθητικοῦ
 μέν ἐστι τὸ ἐνυπνιάζειν, τούτου δ’ ᾖ φανταστικόν.</p>
-<p>Τί δέ ἐστι τὸ ἐνύπνιον καὶ πῶς γίνεται, ἐκ τῶν περὶ τὸν ὕπνον συμβαιόντων
+            <p>Τί δέ ἐστι τὸ ἐνύπνιον καὶ πῶς γίνεται, ἐκ τῶν περὶ τὸν ὕπνον συμβαιόντων
 <lb n="25"/> μάλιστ’ ἄν θεωρήσαιμεν. τὰ γὰρ αἰσθητὰ καθ’ ἔκαστον αἰσθητήριον <lb n="30"/>
 τήριον | ἡμῖν ἐμποιοῦσιν αἴσθησιν, καὶ τὰ γινόμενα ὑπ’ αὐτῶν πάθη καὶ <lb n="278"/>
 ἐγκαταλεύμματα οὐ μόνον ὐπάρχει ἐν τοῖς αἰσθητηρίοις ἐνεργουσῶν τῶν αἰσθήσεων,
@@ -1435,9 +1428,9 @@ ponit 33 καὶ τὸ αἰσθητικὸν Arist. 34 τι om. Arist. EMY</not
 <lb n="30"/> ὕπνους διὰ τὴν τότε εἰς τὸ κάτω τοῦ πνεύματος παλίρροιαν καὶ κινήσαντα
 τὴν αἴσθησιν παραπλησίως τῇ κατ’ ἐνέργειαν αἰσθήσει ποιεῖ τὰ ἐνύπνια.
 ὅταν μὲν οὖν πολλὴ ᾗ ἡ ἀναθυμίασις, ὤστε λανθνειν ἡμᾶς καὶ μὴ δύνα- <lb n="10"/>
-<note type="footnote">5—11 cf. Mich. p. 63,32 — 64,7 10 Arist. p. 459 a 7 11 — 26 Arist. ib.
+               <note type="footnote">5—11 cf. Mich. p. 63,32 — 64,7 10 Arist. p. 459 a 7 11 — 26 Arist. ib.
 V. 8—25 26— p. 32,8 Mich. p. 63,29—64,14</note>
-<note type="footnote">1 ἀληθῶς a τοῦτο δὲ cum Arist. EY (μέντοι τοῦτο ceteri) ὅ om. Arist. EY
+               <note type="footnote">1 ἀληθῶς a τοῦτο δὲ cum Arist. EY (μέντοι τοῦτο ceteri) ὅ om. Arist. EY
 3. 4 τὸ δὲ — ἀληθές Ca (cf. Arist.) : om. AB 4 καὶ τὴν] κατὰ τὴν Arist. EY
 5 αἰσθητῳν Ca (cf. Mich.): αἰσθητικῶν AB 8 ὦμεν Ca: ἐσμὲν AB 13 ἀνάγκη
 male cum EY (ἄν ἦν LS, ἄν ἢ U, ἦν M) 14 or) Ca (Arist.): δεὶ AB (Arist. Υ)
@@ -1447,17 +1440,16 @@ male cum EY (ἄν ἦν LS, ἄν ἢ U, ἦν M) 14 or) Ca (Arist.): δεὶ A
 Ba (Arist.): φανταστικοῦ AC 26 ποιοπυσιν Arist. EMY 27 post ἐγκαταλείμματα
 add. xal B 29 προσπίπτοντα ΒΜich.: prosemp;iptonta Ca: ἐμπίπτοντα A, iu mg.
 add. προσ 30 τὸ AB Mich.: xd Ca</note>
-
-<pb n="32"/>
+               <pb n="32"/>
 σθσι ἐπιλαβέσθαι ὅτι ἐγρηγόραμεν, ἀπατώμεθα, καὶ ὁρῶντες τὰ εἴδωλα
 καὶ ἐγκαταλείμματα τῶν αἰσθητῶν δοκοῦμεν αὐτὰ ἐκεῖνα τὰ
 ἀληθῆ αἰσθητὰ ῥᾶν καὶ ἀκούειν· ὄταν δὲ μὴ μὴ οὔτως ᾗ πολλὴ ἡ αἰματικὴ
 ἀναθυμίασις, ἀλλὰ σύμμετρος, ὥστε μὴ μὴ λανθάνειν, οὐκ ἀπατώμεθα, <lb n="15"/>
-<lb n="5"/> ἀλλὰ λέγομεν ὐπνώττοντες, ὄτι φαίνεται μὲν τὸ εἴδωλον τοῦτο ὄτι Σωκράτης
+               <lb n="5"/> ἀλλὰ λέγομεν ὐπνώττοντες, ὄτι φαίνεται μὲν τὸ εἴδωλον τοῦτο ὄτι Σωκράτης
 ἐστίν, οὐκ ἔστι δὲ ἀλλ’ ὁ τύπος Σωκράτους καὶ τὸ ἐγκατάλειμμα. δὴλον
 οὖν ὄτι τὸ κατιὸν πνεῦμά ἐστι τοῦ τε ἀπατᾶσθαι καὶ μὴ αἴτιον, ὅπερ καὶ <lb n="20"/>
 ἐν ταῖς νόσοις ἄνω ὄν.</p>
-<p>Ὅτι δὲ καὶ μὴ παρόντων τῶν αἰσθητῶν μέχρι τινὸς μένει ἐν τοῖς
+            <p>Ὅτι δὲ καὶ μὴ παρόντων τῶν αἰσθητῶν μέχρι τινὸς μένει ἐν τοῖς
 <lb n="10"/> αἰσθητηρίοις τὸ ἐγκατάλειμμα, καὶ ἐκ τούτων δῆλον. παραπλήσιον γὰρ τὸ
 πάθος ἐπί τε τούτων καὶ ἐπὶ τῶν φερομένων ἔοικεν εἶναι· καὶ γὰρ ἐπὶ <lb n="25"/>
 τῶν φερομέων τοῦ κινήσαντος οὐκέτι θιγγάνοντος κινείται· τὸ γὰρ κινῆσαν
@@ -1478,11 +1470,11 @@ add. προσ 30 τὸ AB Mich.: xd Ca</note>
 φαίνεται κατ’ εὐθυωρίαν, ᾗ συμβαίνει τὴν ὄψιν ὀρᾶν, πρᾶτον μὲν τοιοῦτον
 τὴν χρόαν, εἶτα μεταβάλλει εἰς φοινικοῦν κἄπειτα πορφυροῦν, ἔως ἄν εἰς
 τὴν μέλαιναν ἔλθῃ χρόαν καὶ ἀφαντισθῇ. καὶ ἀπὸ τῶν κινουμένων δὲ τὰ <lb n="20"/>
-<lb n="30"/> ὄμματα μεταβάλλει οἶον ἀπὸ τῶν ποταμῶν, μάλιστα δ’ ἀπὸ τῶν τάΧιστα
+               <lb n="30"/> ὄμματα μεταβάλλει οἶον ἀπὸ τῶν ποταμῶν, μάλιστα δ’ ἀπὸ τῶν τάΧιστα
 ῤεόντων· φαίνεται γὰρ τὰ ἠρεμοῦντα κινούμενα. γίνονται δὲ καὶ ἀπὸ τῶν
 <note type="footnote">9. 10 Mich. p. 65,27. 28 10 -p. 33,2 Arist. p. 459 a 28— b23 22 cf. Mich.
 p. 65,30 25. 26 Mich. p. 65,32. 33</note>
-<note type="footnote">1 ἀντιλαβέσθαι Mich. SCa 4 post ἀναθυμίασις add. ὥστε λανθάνειν ἠμᾶς CaA, sed
+               <note type="footnote">1 ἀντιλαβέσθαι Mich. SCa 4 post ἀναθυμίασις add. ὥστε λανθάνειν ἠμᾶς CaA, sed
 A lursus del. (om. Mich.) 7 τε ova. C ὅπερ] ὤσπερ C 11 ἔοικεν
 εἶναι om. Arist. LU(S) 14 ἕως δὴ μέχρι περ ἄν οὖ Arist. LSU ὐγροῖς AB
 (τοῖς ὐγροῖς Arist. praeter L): ὑγρῶ Ca 15 δ’ Ca (Arist.): om. AB (Arist. Υ)
@@ -1493,11 +1485,10 @@ A lursus del. (om. Mich.) 7 τε ova. C ὅπερ] ὤσπερ C 11 ἔοικε�
 Ca (Arist. ES) 28 ἔπειτα Arist. LSU εἰς post κἄπειτα add.
 Ca (om. etiam Arist.) 29 καὶ αἱ ἀπὸ Arist. EMY 31 hi om. a
 31. p. 33,1 καὶ ὑπὸ τῶν ὀσθῶν B</note>
-
-<pb n="33"/>
+               <pb n="33"/>
 ἰσχυρῶν ὀσμῶν δύσοσμοι τῶν ὀμοίων. φανερῶς δὸ ταῦτα συμβαίνει ὠς <lb n="25"/>
 λέγομεν.</p>
-<p>Ὅτι δὲ τακὺ τὰ αἰσθητήρια καὶ μικρᾶς διαφορᾶς αἰσθάνεται, σημῖον
+            <p>Ὅτι δὲ τακὺ τὰ αἰσθητήρια καὶ μικρᾶς διαφορᾶς αἰσθάνεται, σημῖον
 τὸ ἐπὶ τὼν ἐνόπτρων γινόμενον, περὶ οὖ κἄν καθ’ αὐτὸ ἐπιστήσας σκέψατιτό
 <lb n="5"/> τις ἄν καὶ ἀπορήσειεν. ἄμα δὲ ἐξ αὐτῶν δῆλον, ὄτι ὥσπερ ἡ ὄψις πάσκει, <lb n="30"/>
 οὔτως καὶ | ποιεῖ τι. ἐν γὰρ τοῖς ἐνόπτροις τοῖς σφόδρα καθαβοῖς, ὄταν <lb n="280"/>
@@ -1514,7 +1505,7 @@ Ca (om. etiam Arist.) 29 καὶ αἱ ἀπὸ Arist. EMY 31 hi om. a
 ἐν τῇ προέσει τοῦ σπέρματος τῷ κατόπτρῳ οὐκὶ συγκινοῦμεν αὐτό), ἔνεστι
 δέ (ἡ γὰρ αὐτὴ φύσις σπέρματος καὶ καταμηνίων), ἀλλὰ διὰ τὸ εἶναι
 λευκὸν καὶ ὅμοιον τῷ κατόπτρῳ οὐχὶ μεταβάλλει συγκινόμενον αὐτό· ὁ <lb n="20"/>
-<lb n="20"/> μέντοι αὴρ κινεῖται ὐπὸ τῶν καταμηνίων καὶ τὸν ἐπὶ τῶν κατόπτρων ἀέρα
+               <lb n="20"/> μέντοι αὴρ κινεῖται ὐπὸ τῶν καταμηνίων καὶ τὸν ἐπὶ τῶν κατόπτρων ἀέρα
 συνεχῆ ὄντα ποιόν τινα ποιεῖ καὶ τοιοῦτον οἶον αἰτὸς πάσχει, ὁ δὲ τοῦ
 κατόπτρου τὴν ἐπιφάνειαν. ἔσπερ δὲ τῶν ἱματίων xd τὰ μάλιστα καθαρὰ <lb n="25"/>
 τάχιστα κηλιδοῦται (τὸ γὰρ καθαρὸν ἀκριβῶς δηλοῖ ὅ τι ἄν δέξηται, καὶ
@@ -1525,9 +1516,9 @@ Ca (om. etiam Arist.) 29 καὶ αἱ ἀπὸ Arist. EMY 31 hi om. a
 γίνεται ὁ ψόφος διὰ τὸ μὴ θραύεσθαι ἐν αὐτοῖς τὸν ἀέρα μηδ’ ὅλως
 εἰς λεπτὰ κατακερματίζεσθαι, οὔτω καὶ ἐν τοῖς λείοις κατόπτροις αἱ κηλῖδες
 <lb n="30"/> διάδηλοι γίνονται διὰ τὸ μένειν οἱονεὶ μία διὰ τὴν τοῦ κατόπτρου λειότητα. <lb n="5"/>
-<note type="footnote">3—27 Arist. p. 459 b 23 —460 a 18 18.19 cf. Mich. p. 66,13 25 cf. Mich,
+               <note type="footnote">3—27 Arist. p. 459 b 23 —460 a 18 18.19 cf. Mich. p. 66,13 25 cf. Mich,
 p. 66,16. 17 27—30 Mich. p. 66,17—21</note>
-<note type="footnote">1 ante τῶν add. καὶ ἐπὶ Arist. LU ταῦτά γε δὴ φανερῶς συμβαίνει τοῦτον τὸν τρόπον
+               <note type="footnote">1 ante τῶν add. καὶ ἐπὶ Arist. LU ταῦτά γε δὴ φανερῶς συμβαίνει τοῦτον τὸν τρόπον
 Arist. LSU συμβ. ταῦθ’ Arist. EMY 3 post σημεῖον add. δὲ C
 4 οὖ] ὦν Arist. EMY κἄν καθ’ αὑτὸν Arist. LSU (κἄν αὐτοῦ U, καὶ αὐτοῦ EM)
 5 αὐτοῦ Arist. LSU πάσχει ἡ ὄψις Arist. LS 6 ἐν γὰρ τοῖς AB Arist.:
@@ -1539,8 +1530,7 @@ Arist. LSU συμβ. ταῦθ’ Arist. EMY 3 post σημεῖον add. δὲ C
 Ca (cf. A): om. B 23 τὰχιστα οm. C 23. 24 καὶ τὸ (τὰ vel τῶ M) μάλιστα
 Arist. EML 25 λεῖος] καθαρὸς Arist. EMY κηλῖδας] s. s. ἁφὰς C 25. 26 καθαρὸν]
 s. s. ἤγουν τὸ κάτοπτρον C 30 μία διὰ AB (Mich.): μίαν διὰ Ca (μίαν Midi, a)</note>
-
-<pb n="34"/>
+               <pb n="34"/>
 τοῦ δὲ μὴ ἀπιέναι τάχιον ἔκ τῶν καινῶν κατόπτρων αἴτιον τὸ καθαρὸν
 εἶναι καὶ λεῖον· διαδύεται γὰρ διὰ τῶν τοιούτων καὶ εἰς βάθος καὶ
 πάντῃ, διὰ μὲν τὸ καθαρὸν εἰς βάθος, διὰ δὲ τὸ λεῖον πάντῃ. ἐν δὲ <lb n="10"/>
@@ -1553,14 +1543,14 @@ s. s. ἤγουν τὸ κάτοπτρον C 30 μία διὰ AB (Mich.): μί
 <lb n="10"/> καὶ οἱ οἶνοι τὸ σὐτὸ τοῦτο πάσχουσιν· οὐ γὰρ μόνον τῶν ἐμβαλλομένων ἢ
 ὑποκιρναμένων, ἀλλὰ καὶ τῶν πλησίον τοῖς ἀγγείοις τιθεμένων ἢ περυκότων <lb n="20"/>
 ἀναλαμβάνουσι τὰς ὀσμάς.</p>
-<p>Πρὸς δὲ τὴν ἐξ ἀρκῆς σκέψιν ὐποκείσθω ἔν μὲν ὄπερ ἐκ τῶν εἰρημένων
+            <p>Πρὸς δὲ τὴν ἐξ ἀρκῆς σκέψιν ὐποκείσθω ἔν μὲν ὄπερ ἐκ τῶν εἰρημένων
 φανερόν, ὄτι καὶ ἀπελθόντος τοῦ θύραθεν αἰσθητοῦ ἐμμένει τὰ
 <lb n="15"/> αἰσθήματα αἰσθητὰ ὄντα, πρὸς δὲ τούτοις ὅτι ῤᾳδίως ἀπατώμεθα περὶ τὰς <lb n="25"/>
 αἰσθήσεις ἐν τοῖς πάθεσιν ὄντες, ἄλλοι δὲ ἐν ἄλλοις, οἶον ὁ δειλὸς ἐν
 φόβῳ, ὁ δὲ ἐρωτικὸς ἐν ἔρωτι, ἔστε δοκεῖν ἀπὸ μικρᾶς ὁμοιότητος τὸν μὲν
 τοὺς πολεμίους ὁρᾶν, τὸν δὲ τὸν ἐρώμενον· καὶ ταῦτα ὅσον ἄν ἐμπαθέστερος <lb n="30"/>
 ᾗ, τοσοῦτον ἀπ’ ἐλάσσονς | ὁμοιότητος. τὸν αὐτὸν δὲ τρόπον καὶ ἐν <lb n="282"/>
-<lb n="20"/> ὀργαῖς καὶ πάσαις ἐπιθυμίαις εὐαπάτητοι γίνονται πάντες, καὶ μᾶλλον ὅσῳ
+               <lb n="20"/> ὀργαῖς καὶ πάσαις ἐπιθυμίαις εὐαπάτητοι γίνονται πάντες, καὶ μᾶλλον ὅσῳ
 ἄν μᾶλλον ἐν τοῖς πάθεσιν ὦσι. διὸ καὶ τοῖς πυρέττουσιν ἐνίοτε φαίνεται
 ζῷα ἐν τοῖς τοίκοις ἀπὸ μικρᾶς ὁροιότητος τῶν γραμμῶν συντιθεμένων, <lb n="5"/>
 καὶ ταῦτ’ ἐνίοτε συνετιτείνει τοῖς πάθεσιν οὔτω, ὕστε, ἄν μὴ αφόδρα
@@ -1570,13 +1560,13 @@ s. s. ἤγουν τὸ κάτοπτρον C 30 μία διὰ AB (Mich.): μί
 γίνονται, ἃ δήπου προσαγορεύομεν αἴσθησιν. τούτου δὲ σημεῖον ὅυι φαίνεται
 μὲν ὁ ἤλιος τῇ αἰσθήσει ποδιαῖος, ὁ δὲ νοῦς ἀντιφάσκει ἔνδον μὴ τοσοῦτον
 ἔἶναι ὄσος φαίνεται. εἰ δὲ ἀπὸ τῆς αὐτῆς δυνάμεως ἔκριναν, τοσοῦτος ἄν <lb n="15"/>
-<lb n="30"/> ἐδοξάξετο ὅσος καὶ ὁρᾶται. ἔν τισι δὲ νόσοις οὐδὲν κωλύει τῆς αἰσθήσεως
+               <lb n="30"/> ἐδοξάξετο ὅσος καὶ ὁρᾶται. ἔν τισι δὲ νόσοις οὐδὲν κωλύει τῆς αἰσθήσεως
 παρατραπείσης συννοσεῖν καὶ τὸν νοῦν καὶ ταὐτοδοξεῖν τερὶ τὰ φαινόμενα,
 ὤσπερ ἔνιοι τῶν ἐκστατικῶν κινουμένας τὰς γραμμὰς καὶ ζῷα οἰόμεενοι· <lb n="20"/>
 καὶ τί δεῖ ἐπὶ νοῦ καὶ αἰσθήσεως τὴν κατὰ τὴν κρίσιν διαφορὰν ἐπιζητεῖν,
 <note type="footnote">1—27 Arist. p. 460 a 18—b 19 b 19 26 Mich. p. 67,12 27—30 Mich. p. 67,27—31
 31—p. 35,2 Mich. p. 67—24. 31—p. 68,1</note>
-<note type="footnote">I ἐξιέναι Arist. LSU 3 (jlev ydp τὸ Arist. EMYU 4 εἰσδύεται C, ex Arist.
+               <note type="footnote">I ἐξιέναι Arist. LSU 3 (jlev ydp τὸ Arist. EMYU 4 εἰσδύεται C, ex Arist.
 EMY (ἐνδύεται LSU) Spengel: εἰσδέχεται ABa 6 ἔτι δὲ καὶ cum Arist. LU (ἔτι δὲ
 MS, καὶ EY) 9 formara textus LSU praebet λαμβάνει ταχέως C
 II ὑποκριναμένων C 12 ἀναλαμβάνουσι C, ex Arist. Spengel: ἀναλαμβάνειν ABa
@@ -1584,8 +1574,7 @@ II ὑποκριναμένων C 12 ἀναλαμβάνουσι C, ex Arist. Spe
 ἔρωτι AB 18 ἐμπαθέστερος Ca (Arist. EMY): ἐμπαθέστερον AB (Arist. LSU)
 20 καὶ h πάσαις Arist. EMY 23 ἐὰν Arist. MSU ante μὴ add. μὲν Arist. EYL
 24 ἄν Arist. EL 29 ἔκρινον Mich. 31 συννοσεῖν Β: συννοεῖν AGa 33 alt. τὴν οm. C</note>
-
-<pb n="35"/>
+               <pb n="35"/>
 ὅπου γε καὶ ἐπ’ αὐτῶν τῶν ἀἰσθήσεων οὐχ εἶς ὁ λόγος, ἀλλὰ τῶν κυριωτέρων
 καὶ αἱ δυνάμεις ἀκριβέστεραι οἶον ἐπὶ ἀφῆς καὶ ὅψεως; ἐν γὰρ τῇ
 ἐπαλλάξει τῶν δακτύλων τῇ μὲν ἀφῇ τὸ ἔν δύο φαίνεται, τῇ δὲ ὄψει οὔ· <lb n="25"/>
@@ -1595,12 +1584,13 @@ II ὑποκριναμένων C 12 ἀναλαμβάνουσι C, ex Arist. Spe
 αἰσθήσεως κινουμένης αὐτῆς, ἐὰν ὑσαύτως κινῆ|ται, ὥσπερ ὑπὸ τοῦ <lb n="283"/>
 αἰσθητοῦ; λέγω δ’ οἶον ἡ γῆ δοκεῖ τοῖς πλέουσι κινουμένης τῆς
 ὄψεως ὑπ’ ἄλλου.</p>
-<lb n="10"/> <p>ἐκ δὴ τούτων φανερόν, ὅτι οὐ μόνον ἐγρηγορότων αἱ κινήσεις εἰσὶν <lb n="5"/>
+            <lb n="10"/>
+            <p>ἐκ δὴ τούτων φανερόν, ὅτι οὐ μόνον ἐγρηγορότων αἱ κινήσεις εἰσὶν <lb n="5"/>
 αἱ ἀπὸ αἰσθήσεων φινόμεναι τῶν θύραθεν καὶ τῶν ἐκ τοῦ σύματος
 ὑπαρχουσῦων, ἀλλὰ καὶ ὄταν γένηται τὸ πάθος τοῦτο ὃ καλεῖται ὅπνος, καὶ
 μᾶλλον τότε φαίνονται. μεθ’ ἠμέραν γὰρ ἐκκρούονται ἐνεργουσῶν τῶν αἰσθήσεων
 καὶ τῆς διανοίας καὶ ἀφανίζονται ὥσπερ παρὰ πολὺ πῦρ ἄλασσον <lb n="10"/>
-<lb n="15"/> καὶ λῦπαι καὶ ἡδοναὶ παρὰ μεγάλας, παυσαμένων δὲ ἐπιπολάζει καὶ
+               <lb n="15"/> καὶ λῦπαι καὶ ἡδοναὶ παρὰ μεγάλας, παυσαμένων δὲ ἐπιπολάζει καὶ
 τὰ μικρα· νύκτωρ δὲ δι’ ἀργίαν τῶν κατὰ μόριον αἰσθήσεων καὶ ἀδυναμίαν
 τοῦ ἐνεργεῖν διὰ τὸ ἐκ τῶν ἔξω εἰς τὸ ἐντὸς γίνεσθαι τὴν τοῦ θερμοῦ <lb n="15"/>
 παλίρροιαν ἐπὶ τὴν ἀρχὴν τὴς αἰσθήσεως καταφέρονται, τὴν καρδίαν, καὶ
@@ -1610,7 +1600,7 @@ II ὑποκριναμένων C 12 ἀναλαμβάνουσι C, ex Arist. Spe
 εἰς ἄλλα συμβαίνει σχήματα διὰ τὴν ἀντίκρουσιν, οἥτω κἀνταῦθα τὴν κίνησιν
 ἐκάστην γίνεσθαι, λέγω δὲ κίνησιν τὴν εἰδωλικὴν ἐν τῇ καρδίᾳ ἐπιφορὰν
 τοῦ ἐγκαταλείμματος, καθ’ ἣ ἡ ἐν ἐκείνῃ αἰσθητικὴ ψυχὴ διεγείρεται. <lb n="25"/>
-<lb n="25"/> καθάπερ ἐκεῖ ἡ ἀφ’ ἐτέρου εἰς ἔτερον σχῆμα μεταβολὴ οὐκ ἄμεσος,
+               <lb n="25"/> καθάπερ ἐκεῖ ἡ ἀφ’ ἐτέρου εἰς ἔτερον σχῆμα μεταβολὴ οὐκ ἄμεσος,
 οὕτω καὶ ἡ ἐκάστου εἰδώλου κίνησις ὄντος ἐν ὑποκειμένῳ τῷ πνεύματι ἢ
 τῷ αἴματι ἢ τῇ καρδίᾳ, ὄταν | μὴ αὐτὴ μείνῃ ἀλλ’ ἀντικρουσθῇ, διὰ <lb n="284"/>
 πολλῶν τῶν μεταξὺ φθάνει πρὸς τὸ ἔσχατον. ἀναγκαῖον οὖν τὴν πρώτην
@@ -1619,9 +1609,9 @@ II ὑποκριναμένων C 12 ἀναλαμβάνουσι C, ex Arist. Spe
 διά τινων μεταξὺ εὶς ἀνθρώπου ὖλθεν ὁμοίωμα, αὐ μόνον τὸ τοῦ λέοντος
 καὶ ἀνθρώπου εἶδεν ἡ ψυχὴ σχῆμα ἀλλὰ καὶ τὰ μεταξύ, εἴτε ἡδέα ἦσαν
 αὐτῇ καὶ κεχαρισθένα εἴτε ἄλλως λυπηρὰ καὶ οὐκ εὔθυμα, οὔτω καὶ ἡ <lb n="10"/>
-<note type="footnote">3—5 Arist. p. 460 b 20—22, Mich. p. 68,2—9 5—20 Arist. p. 460 b 22—461 a 8
+               <note type="footnote">3—5 Arist. p. 460 b 20—22, Mich. p. 68,2—9 5—20 Arist. p. 460 b 22—461 a 8
 20—p. 36,2 Mich. p. 68,24—69,11</note>
-<note type="footnote">3 ἀπαλλάξει A 4 ἁφῆς] φαντασίας Arist. EM 5 διεψεῦσθαι Arist. praeter LS
+               <note type="footnote">3 ἀπαλλάξει A 4 ἁφῆς] φαντασίας Arist. EM 5 διεψεῦσθαι Arist. praeter LS
 6 αἰσθητικοῦ a (corr. iam Spengel) 7 ὡσαύτως om. Arist. EMY post ὥσπερ add.
 xal Arist. EMY 8 τοῖς πλέουςι Soxel B, sed v. Arist. 10 δὴ C ex Arist. Spengel:
 δὲ ABa 11 αἰσθημάτων Arist. praeter L 13 γᾶρ] μὲν γὰρ Arist. praeter M
@@ -1629,13 +1619,12 @@ xal Arist. EMY 8 τοῖς πλέουςι Soxel B, sed v. Arist. 10 δὴ C ex A
 (οὔτω καὶ Μich. a, oὕτω ceteri) 24 ἐν om. a ἐκείνη Spengel ἐκείνοις AB,
 sed cf. Mich. 30 εἰ om. C μεταβαλὼν C 31 ἦλθεν] ἦκεν Ca 32 εἶδεν
 AC Mich.: οἶδεν Ba (corr. Spengel) 33 καὶ κεχαρισμένα] εἴτε κεχαρισμένα A</note>
-
-<pb n="36"/>
+               <pb n="36"/>
 πρώτη αἴσθησις οὐ μόνον τῶν ἄκρων ἐν τοῖς ὔπνοις αἰσθάνεται, ἀλλὰ καὶ
 τῶν μεταξύ. ταῦτα δὲ ἢ τερατώδη πάντως ἢ προσηνῆ καὶ κατὰ φύσιν.
 διὸ καὶ μετὰ τὴν τροφὴν καὶ πάνυ νέοις οἶσιν, οἶον τοῖς παιδίοις, οὐ
 γίνεεται ἐνύπνια· πολλὴ γὰρ ἡ κίνησις διὰ τὴν ἀπὸ τῆς τροφῆς θερμότητα. <lb n="15"/>
-<lb n="5"/> ὥστε καθάπερ ἐν ὑγρῷ, ἐὰν σφόδδρα κινῇ τις, ὁτὲ μὲν οὐθὲν φαίνεται
+               <lb n="5"/> ὥστε καθάπερ ἐν ὑγρῷ, ἐὰν σφόδδρα κινῇ τις, ὁτὲ μὲν οὐθὲν φαίνεται
 εἴδωλον, ὁτὲ δὲ φαίνεται μὲν διστραμμένον δὲ πάμπαν, ὥστε φαίνεσθαι
 αλλοῖον ἢ οῖον ἦν, [τοῦ] ἠρεεμήσαντος δὲ καθαρὰ καὶ φανερά, οὕτω καὶ ἐν <lb n="20"/>
 τῷ καθεύδειν τὰ φάσματα καὶ αἰ ὑπόλοιποι κινήσεις αἱ συμβαίνουσαι ἀπὸ
@@ -1645,7 +1634,7 @@ AC Mich.: οἶδεν Ba (corr. Spengel) 33 καὶ κεχαρισμένα] ε�
 πάντα γὰρ τὰ τοιαῦτα πνευματύδη ὄντα πολλὴν ποιεεῖται τὴν κίνησιν
 καὶ ταραχήν. καθισταμένου δὲ καὶ διακρινομένου τοῦ αἵματος ἐν τοῖς ἐναίμοις
 σῳζομένη τῶν αἰσθημάτων ἡ κίνησις ἀφ’ ἐκά|στης τῶν αἰσθήσεων <lb n="285"/>
-<lb n="15"/> ἐρρωμένα τε ποιεῖ τὰ ἐνύπνια καὶ φαίνεσθαί τε καὶ δοκεῖν. δοκεῖ μἐν γὰρ
+               <lb n="15"/> ἐρρωμένα τε ποιεῖ τὰ ἐνύπνια καὶ φαίνεσθαί τε καὶ δοκεῖν. δοκεῖ μἐν γὰρ
 τὰ ἀπὸ τῆς τῆς ὄεως καταφερόμενα ὀρᾶν καὶ ἀπὸ τῆς ἀκοῦς ἀκούειν,
 ὁμοιοτρόπως δὲ καὶ ἀπὸ τῶν ἄλλων αἰσθητηρίων· τῷ γὰρ ἀκεῖθεν ἀφικνεῖσθαι <lb n="5"/>
 σθαι τὴν κίνησιν πρὸς τὴν ἀρχὴν καὶ ἐγρηγόρως δοκεῖ ὁρᾶν καὶ ἀκούειν
@@ -1655,14 +1644,14 @@ AC Mich.: οἶδεν Ba (corr. Spengel) 33 καὶ κεχαρισμένα] ε�
 ρως ἀντέχεεται καὶ ἀντιξάσκει, ὠς τὰ δοκοῦντα δύο οὔκ εἴσι δύο, ἀλλ’ ἔν.
 εἰ δὲ ἡ ὄψις οὐκ ἀπατᾶται ἐν τούτοις ὡς τῆς ἀφῆς λογικωτέρα, πολλῷ
 μάλλον τὸ κυρίως κριτήριον, ἡ διάνοια, εἴπερ μὴ κατέχηται ὐπερβαλλούσῃ <lb n="15"/>
-<lb n="25"/> τῇ ἐπικαταφορᾷ τοῦ πνευματώδους ὐγροῦ. ὅλως γὰρ τὸ ἀφ’ ἐκάστης
+               <lb n="25"/> τῇ ἐπικαταφορᾷ τοῦ πνευματώδους ὐγροῦ. ὅλως γὰρ τὸ ἀφ’ ἐκάστης
 αἰσθήσεως ἱκνούμενον πρὸς τὴν ἀρκὴν συντίθεται ἡ ἀρχή, ἐὰν μὴ ἐτέρα
 κυριωτέρα ἀντιφῇ· ἀπλῶς γὰρ ὁποῖον ἄν διαπορθμεύσῃ ἡ ἁφὴ ἢ ὄψις ἢ
 ἀλλη τις τῶν αἰσθήσεων, τοιοῦτον αὐτὸ εἶναι λέγει ἡ πρώτη αἴσθησις· <lb n="20"/>
 ὥστε καὶ τὸ ἔν ὠς δύο παρὰ τὴς ἀφῆς εἰσαγγελθῇ ἢ ὁ ἥλιος ποδιαῖος
 <note type="footnote">3—19 19 Arist. p. 461 a 11 — b 1 19—24 Mich. p. 70,5—15 24 — 26 ipse addidit,
 cf. p. 31,8. 9. 38,31. `44,16 26. 27 Arist. p. 461 b 3. 4 27— p. 37,2 Mich. p. 70, 19—28</note>
-<note type="footnote">2 τὴν ante φύσιν add. C 3. 4 οἶον—ἐνύτνια AB Arist.: οὐ γίνεται οἶον ἐνύπνια τοῖς
+               <note type="footnote">2 τὴν ante φύσιν add. C 3. 4 οἶον—ἐνύτνια AB Arist.: οὐ γίνεται οἶον ἐνύπνια τοῖς
 παιδίος Ca 4 τῆς Ca Arist.: om. AB 5 οὐδὲν a: evan. B 7 τοῦ ex
 Arist. del. Spengel 8 φαντάσματα C ex Arist. coni. Spengel, sed cf. p. 4120
 prills αἱ Ca Arist. : om. AB ujio C 9 αἰσθημάτων Arist. praeter L 10 ὄψεις]
@@ -1674,8 +1663,7 @@ M) 12 ποιεῖ Arist. praeter LU 14 ἑκάστου Arist. praeter L αἰσ�
 21. 22 έγρηγόρως male del. Spengel, habet etiam Mich. 24 κατέκοιτο 0
 26 ἀρχὴ, ἐὰν] ψυχῆ ἄν C 27 διαπορθμεύσῃ Ca (Mich. Pa): διαπορθμεύσοι AB (Mich.
 SCR) ἣ ἡ ὄψις Mich. Sa 28 εἶναι om. C (habet etiam Mich.)</note>
-
-<pb n="37"/>
+               <pb n="37"/>
 παρὰ τῆς ὁράσεως μὴ ὅντος τοῦ ἐπικρίνοντος, ὡς δύο τε τὸ ἔν φανττατως,
 δοκεῖ δ’ οὐ πάντως ἄπαν τὸ φαινόμενον, ἄν μὴ τὸ ἐπικρῖνον κατέχηται, <lb n="25"/>
 ὡς πολλάκις εἴρηται, ἢ μὴ τὴν οἰκείαν κινῆται καὶ προσφυῆ
@@ -1684,7 +1672,7 @@ SCR) ἣ ἡ ὄψις Mich. Sa 28 εἶναι om. C (habet etiam Mich.)</note>
 συμβαίνοντα τερὶ τὴν αἴσθησιν, ὥστε μικρὰν ἔκον ὁμοιότητα φαίνεται ἐκεῖνο.
 ὅταν γὰρ καθεύδῃ, κατιόντος τοῦ πνεύματος καὶ τοῦ αὔματος ἐπὶ τὴν ἀρχὴν
 συγκατέρκονται καὶ αἱ ἐνῦσαι ὐς ἐν ὐποκειμένῳ κινήσεις καὶ τύποι τῶν <lb n="5"/>
-<lb n="10"/> αἰσθητῶν, αἱ μὲν δυνάμει αἱ ἐνεργείᾳ, εἴτουν αἰ μὲν μέλλουσι καὶ οὔπω,
+               <lb n="10"/> αἰσθητῶν, αἱ μὲν δυνάμει αἱ ἐνεργείᾳ, εἴτουν αἰ μὲν μέλλουσι καὶ οὔπω,
 αἱ δὲ πάρεισι καὶ κινοῦσι τὴν ἀἰσθητικῆν ἀρχὴν εἰς ἀντίληψιν, ὡς συμβαίνειν
 ἐν τῇ κινήσει τῇ πρώτως εἰσελθούσῃ τήνδ’ ἐπιπολάζειν τὴν μετ’ <lb n="10"/>
 αὐτὴν ἐνεργήσουσαν, ταύτης φθαρείσης τὴν ἐφεξῆς εἰσιέναι.
@@ -1694,7 +1682,7 @@ SCR) ἣ ἡ ὄψις Mich. Sa 28 εἶναι om. C (habet etiam Mich.)</note>
 συντεθειμένῳ ἄνωθεν κάτω καὶ κατὰ διαστήματα, ὡς τοῦς, ἄκρους τὸν μὲν
 πρὸς τῷ χείλει κεῖσθαι, τὸν δὲ ἐν τῷ τυθμένι, καὶ τοῦς μέσους ἀναλόγως,
 κρυπτομένους δὲ πάντας, εἶτα τὸ ἄλας ἄνωθεν ἄρξηται τήκεσθαι, πρῶτος <lb n="20"/>
-<lb n="20"/> ἐπιπολάσει τῷ ὕδατι καὶ ἐνεργείᾳ αἰσθητὸς γενήσεται ὁ πάντων ἀνώτατος
+               <lb n="20"/> ἐπιπολάσει τῷ ὕδατι καὶ ἐνεργείᾳ αἰσθητὸς γενήσεται ὁ πάντων ἀνώτατος
 βάτρακος, εἶτα προϊούσης τῆς τήξεως ὁ μετ’ αὐτὸν καὶ μετ’ ἐκεῖνον ὁ
 ἔτερος, τελευταῖος δὲ πάντων τακέντος τοῦ ἄλατος ὁ ἔσχατος ἀναβήσεται.
 οὕτω καὶ αἱ κινήσεις ἐν τῷ ὥτνῳ καὶ τὰ τῶν αἰσθητῶν εἴδωλα αἱ μὲν <lb n="25"/>
@@ -1704,11 +1692,11 @@ SCR) ἣ ἡ ὄψις Mich. Sa 28 εἶναι om. C (habet etiam Mich.)</note>
 σουσιν· ὅθεν οἱ τελευταῖοι τῶν ὕπνων εἰθυονειρότεροι, καὶ καθαρώτερα τῇ
 ἀρχῇ τὰ ἐν τοῖς αἰσθητηρίοις τῶν αἰσθητῶν τότε προσπίπτουσιν ὁμοιώματα,
 ὡς ἤδδη τοῦ ταράττοντος ἠρεμήσαντος. ἡ μὲν οὖν ἐν τοῖς ἐνυπνίοις τῶν <lb n="5"/>
-<lb n="30"/> φαντασμάτων μεταβολὴ τῇ ἐν τοῖς νέφεσιν ἔοικεν, ὡς καὶ πρότερον εἴρηται,
+               <lb n="30"/> φαντασμάτων μεταβολὴ τῇ ἐν τοῖς νέφεσιν ἔοικεν, ὡς καὶ πρότερον εἴρηται,
 ἃ παρεικάζουσιν ἀνθρώποις καὶ κενταύροις ταχέως μεταβάλλοντα. κοινῶς
 <note type="footnote">2—10 Arist. p. 461 b 5 — 13 10. 11 ipse addidit 12. 13 cf. Mich. p. 72,7. 8
 14. 15 Arist. p. 461 b 15. 16 15—p. 38,4 Mich. p. 72,10—35 liberius adhibuit</note>
-<note type="footnote">1 ἐπικρίναντος C τε om. C 3 sim. ἐὰν τὸ ἐπικρῖνον μὴ Arist. SU, ἀλλ’ ἐὰν
+               <note type="footnote">1 ἐπικρίναντος C τε om. C 3 sim. ἐὰν τὸ ἐπικρῖνον μὴ Arist. SU, ἀλλ’ ἐὰν
 (ἄν EL) TO ἐπικρῖνον ceteri 7 ὥστε] ὡς a: ὥστε τὸ Arist. 9 καὶ αἱ ἐνοῦσαι]
 αἱ ἐνοῦσαι Arist. EMY, καὶ ἐνοῦσαι L, καὶ κινοῦσαι αἱ ἐνοῦσαι SU 10 ἤγουν conicio
 13 {&lt;καὶ&gt; ταύτης (Mich.) vel ταύτης &lt;δὲ&gt; coni. Spengel 14 ἀλλήλαις C δὲ vel
@@ -1719,8 +1707,7 @@ Mich.) 17 συντεθειένῳ] ω mutavit in oυς C ἰατὰ] τὰ B τ�
 corr. A 26 ὑποληφέντος B 27. 28 τῆς ἀρχῆς conicio 28 αἰσθητῶν
 B (evan. A) cf. Mich.: ὑπνύντων Ca προσπέσωσιν B: προσπέσασιν A 29 μὲν
 B (evan. A): om. Ca</note>
-
-<pb n="38"/>
+               <pb n="38"/>
 εὲ τῶν ἐν ὕπνω φαινομένων ἔκαστον ὑπόλειμμά ἐστιν, ὡς ἐν ἀρχαῖς <lb n="10"/>
 ἐλέχθη, τοῦ ἐνεργείᾳ αἰσθήματος, καὶ ἀπελθόντος τοῦ ἀληθοῦς αἰσθητοῦ,
 ὅταν μὴ κατέχηται ὑπὸ τοῦ κατελθόντος αἵματος τὸ ἐπικρῖνον, ἀληθὲς
@@ -1735,12 +1722,13 @@ B (evan. A): om. Ca</note>
 καθεύδει καὶ πρὸς τούτῳ τοῦ ἐνυπνίου, φανεῖται μέν, λέγει δέ τι ἐν αὐτῷ <lb n="25"/>
 ὅτι φαίνεται μὲν Κορίσκος τόδε τὸ φάντασμα, οὐκ ἔστι δέ (πολλάκις γάρ τις
 καθεύδων καὶ συναισθόμενος λέγει ἐν τῇ ψυχῇ ὅτι ἐνύπνιον τὸ φαινόμενον)·
-<lb n="15"/> ἐὰν δὲ λανθάνῃ ὅτι καθεύδει, συνθήσεται καὶ οὐδὲν ἀντιφήσει τῇ φαντασίᾳ.</p> <lb n="30"/>
-<p>Ὁτι δ’ | ἀληθῆ λέγομεν καί εἰσι κινήσεις φανταστικαί καὶ τύποι <lb n="288"/>
+<lb n="15"/> ἐὰν δὲ λανθάνῃ ὅτι καθεύδει, συνθήσεται καὶ οὐδὲν ἀντιφήσει τῇ φαντασίᾳ.</p>
+            <lb n="30"/>
+            <p>Ὁτι δ’ | ἀληθῆ λέγομεν καί εἰσι κινήσεις φανταστικαί καὶ τύποι <lb n="288"/>
 καὶ εἴδωλα τῶν αἰσθητῶν ἐν τῷ πρώτῳ αἰσθητηρίῳ, τῇ καρδίᾳ, καὶ μὴ
 παρόντων τῶν πραγμάτων καὶ ἡρεμουσῶν τῶν αὶσθήσεων, περὶ ὅ καὶ ἡ
 τῶν ἐνυπνίων πᾶσα δραματουργία συνίσταται, δὴλον ἐκεῖθεν. ὅ γὰρ ἐν τοῦς <lb n="5"/>
-<lb n="20"/> δευτέροις, πολλῇ μᾶλλον ἐν τῷ πρώτῳ, καὶ εἴ εἰσιν ἐν τοῖς ἄλλοις αὶσθητηρίοις
+               <lb n="20"/> δευτέροις, πολλῇ μᾶλλον ἐν τῷ πρώτῳ, καὶ εἴ εἰσιν ἐν τοῖς ἄλλοις αὶσθητηρίοις
 εἴδωλα καὶ ἐγκαταλείμματα καὶ μὴ ἐνεργοῦσι, πολλῷ μᾶλλον ἐν τῇ
 καρδίᾳ, ἀφ’ ἦς καὶ τὸ εἷναι τούτοις καὶ ἐνεργεῖν. ὅτι εἰσι, φανεερόν, <lb n="10"/>
 ἐάν τις προσέχων πειρῷτο μνημονεύειν ὅ πάσχομεν ἐγειρόμενοι, ὅταν ἡ
@@ -1750,14 +1738,14 @@ B (evan. A): om. Ca</note>
 πρὸ ὀμμάτων· ἐνίοις γὰρ τῶν νεωτέρων καὶ πάμπαν ἀκριβῶς διαβλέπουσιν,
 ἐὰν ᾗ ακόρος, φαίνεται εἴδωλα πολλὰ κινούμενα, ὥστ’ ἐγκαλύπτεσθαι
 πολλάκις φοβουμένους. ταῦτα δὲ ἦν αἱ ἐν τοῖς ὀφθαλμοῖς ἀπὸ τῶν <lb n="20"/>
-<lb n="30"/> αἰσθητῶν κινήσεις. ἐκ δὴ τούτων ἀπάντων συλλογίσασθαι δεἶ, ὄτι ἔστι τὸ
+               <lb n="30"/> αἰσθητῶν κινήσεις. ἐκ δὴ τούτων ἀπάντων συλλογίσασθαι δεἶ, ὄτι ἔστι τὸ
 ἐνύπνιον φάντασμα ἐν ὕπνῳ κατεχομένου τοῦ κυρίου καὶ ἐπικρίνοντος. ὤστε
 <note type="footnote">5—8 Mich. p. 73,17— 19 8—15 Arist p. 461 b 29— 462 a 8 12 τοῦ ἐνυπνίου
 e Mich. p. 73,31 16—24 Mich. p. 74,13—25 liberius adhibuit 24. 25 Arist.
 p. 462 a 11. 12 26. 27 Mich. p. 74,27. 28 27—28 Arist. p. 462 a 1215
 29. 30 Mich. p. 75,3.4 30 Arist. ρ. 462 a 15. 16 31 κατεχομένου— ἐπικρίνοντος
 ipse addidit 31 — p. 39,3 Mich. p. 75,5 — 11</note>
-<note type="footnote">1 ἐστιν om. B (habet Mich.) 2 ἐν τῇ ante ἐνεργείᾳ add. B (Αrist., om. Mich.)
+               <note type="footnote">1 ἐστιν om. B (habet Mich.) 2 ἐν τῇ ante ἐνεργείᾳ add. B (Αrist., om. Mich.)
 3 ἀληθὲς ABC Mich.: ἔνεστιν ἀληθὲς a (cf. Arist.) 5 διὰ τοῦτο C ὅτε A
 7 αἰσθανόμενος C ἐγρηγορός AB Mich. Spengel: ἐγρηγορώς Ca 8 ἀναίσθητος C
 9 λανθάνει B (Arist. SUY 1) ὐπολαμβανόμενος B 10 δόξειε AB 11 ἐὰν Arist. EMS
@@ -1766,8 +1754,7 @@ ipse addidit 31 — p. 39,3 Mich. p. 75,5 — 11</note>
 15 ἀντίφησι Αrist. praeter EY 23 πειρᾶται Arist. Mich. SCa 24 ἐγρήγορσις C.
 sed V. Mich. 27 καὶ ἐν. γε Arist. MS 28 ἄν Arist. LS 29 ἦν AB (ἦσαν
 Μich.): ἐστιν Ca 31 κυρίου καὶ] μορίου τοῦ C</note>
-
-<pb n="39"/>
+               <pb n="39"/>
 oὔτε τὰ εἰρημένα εἴδωλα καὶ φαντάσματά εἰσιν ἐνύπνια οὔθ’ ὄτι ἄλλο <lb n="25"/>
 λελυμένων καὶ ἐνεργουσῶν τῶν αἰσθήσεων φαίνεται, οὔτε τὸ ἐν ἔπνῳ
 φάντασμα ἄπαν, εἰ μὴ συγκατέκοιτο ἡ διάνοια μὴ ἐπικρίνουσα τὸ ὀρώμενον.
@@ -1787,7 +1774,7 @@ oὔτε τὰ εἰρημένα εἴδωλα καὶ φαντάσματά ε�
 σαφῶς ἐγνώρισαν μὴ ταῦτα εἶναι. ἔνιοι δὲ καὶ ἀποκρίνονται ἐρωτώμενοι
 πολλάκις, οὐ μνημονεύουσι δὲ ἐγερθέντες ὡς ἀπεκρίθησαν. καὶ δῆλον ὡς
 οὔτε ἀπλῶς ἐγηγορότες ἦσαν (ἧ γὰρ ἄν ἐμνημόνευον οὔτε καθάπαξ <lb n="20"/>
-<lb n="20"/> ἐκάθευδον· οὐ γὰρ ἄν ἀπεκρίθησαν. τῶν οὖν εἰρημένων οὐδὲν ἐνύπνιον
+               <lb n="20"/> ἐκάθευδον· οὐ γὰρ ἄν ἀπεκρίθησαν. τῶν οὖν εἰρημένων οὐδὲν ἐνύπνιον
 φατέον, οὐδ’ δὴ ἐν τῇ ὕπωῳ γίνονται ἀληθεῖς ἔννοιαι παρὰ τὰ
 φαντάσματα (λέγω δὴ τὰς κρίσεις, αἶς συναισθόμεθα ὀνειρώττοντες ὅτι
 ὀνειρώττομεν), ἀλλὰ τὸ φασμα τὸ ἀπὸ τῆς κινήσεως τῶν αἰσθημάτων, <lb n="25"/>
@@ -1797,13 +1784,13 @@ oὔτε τὰ εἰρημένα εἴδωλα καὶ φαντάσματά ε�
 γίνεσθαι πρότερον παραπλήσιον φαίνεται τῷ ἐπὶ τῶν ταίδων καὶ μετὰ τὴν
 τροφήν· ὅσοις γὰρ συνέστηκεν ἡ φύσις, ὥστε πολλὴν ἀναθυμίασιν πρὸς τὸν
 ἄνω τόπον ἀναφέρεσθαι, ἥ καταφερομένη ποιεῖ πλῆθος κινήσεως, τούτοις <lb n="5"/>
-<lb n="30"/> εὐλόγως οὐδὲν φαίνεται φάντασμα, προϊούσης δὲ τῆς ἡλικίας οὐδὲν ἄτοπον
+               <lb n="30"/> εὐλόγως οὐδὲν φαίνεται φάντασμα, προϊούσης δὲ τῆς ἡλικίας οὐδὲν ἄτοπον
 τὸ φανῆναι ἐνύπνιον· μεταβολῆς γὰρ τινος γινομένης ἢ καθ’ ἡλικίαν ἢ
 πάθος ἀναγκαῖον συμβῆναι τὴν ἐναντίωσιν ταύτην.</p>
-<note type="footnote">4. 5 Arist. p. — 21 5—17 Mich. p. 75,15 — 76,2 17. 18 Arist. ib.
+            <note type="footnote">4. 5 Arist. p. — 21 5—17 Mich. p. 75,15 — 76,2 17. 18 Arist. ib.
 V. 25 18—20 Mich. p. 76,1— 3 20—22 Arist. ib. 2729
 22 Mich. p. 76,4.5 23—32 Arist. p. 462 α 29— b 11</note>
-<note type="footnote">1 οὔθ’ Spengel: οὁδ’ libri 3 alt. μὴ om. C 7 κρατοῦν male Spengel 8 ὁνείρῳ
+            <note type="footnote">1 οὔθ’ Spengel: οὁδ’ libri 3 alt. μὴ om. C 7 κρατοῦν male Spengel 8 ὁνείρῳ
 οἴκω C, ὔπνω in mg. C 2 9 αὑτοῦς Spengel 10 ταῦτα om. C τάχα] τὰ C
 12 ἀλλὰ καὶ πολλοὶ καθεύδοντες Mich. 18 ἀπελρὀκξσαμ AB Mich.: ἀπεκρίναντο Ca
 20 ἁπεκρίθησαν AB (Mich. SPa): ἀπεκίνατο Ca (ἀπεκρίνοντο Mich. CR) 24 ἰαὶ ᾖ] ᾖ, ᾖ
@@ -1813,12 +1800,12 @@ textus EMY proxime accedit παρελθούσης AGa, sed v. Arist. 27 φαίν
 τῷ] τῶν Ca (corr. Spengel) 27. 28 τὰς τροφὰς Ca 28 post γᾶρ add. τοῦτον τὸν
 τρόπον Arist. LSU 29 ἀναφέρεσθαι om., προσπίπτειν (vel προσεμπ.) ante ἀναθυμίασιν add.
 Arist. LSU 30 οὐδὲ A 31 τὸ om. Ca (Arist. praeter LS) γενομέηνς Arist. LSU</note>
-</div>
-
-<div type="textpart" subtype="chapter" n="4">
-<pb n="40"/>
-<head>HEPI THΣ ΚΑΘ ΥΠΝΟΝ ΜΑΝΤΙΚΗΣ.</head> <lb n="291"/>
-<p>Περὶ δὲ τῆς μαντικῆς τὴς ἐν τοῖς ὕπνοις γινομένης καὶ λεγομένης <lb n="5"/>
+         </div>
+         <div n="4" type="chapter">
+            <pb n="40"/>
+            <head>HEPI THΣ ΚΑΘ ΥΠΝΟΝ ΜΑΝΤΙΚΗΣ.</head>
+            <lb n="291"/>
+            <p>Περὶ δὲ τῆς μαντικῆς τὴς ἐν τοῖς ὕπνοις γινομένης καὶ λεγομένης <lb n="5"/>
 συμβαίνειν ἀπὸ τῶν ἐνυπνίων οὔτε καταφρονὴσαι ῥᾲδιον οὔτε πεισθῆναι.
 τὸ μὲν γὰρ πάντας ἢ πολλοὺς ὑπολαμβάνειν ἔχειν τι σημειῶδες καὶ τῶν
 <lb n="5"/> μελόντων προμάντεμα τὰ ἐνόπνια παρέχεται πίστιν ὡς ἐξ έμπειρίας λεγόμενον·
@@ -1826,7 +1813,7 @@ Arist. LSU 30 οὐδὲ A 31 τὸ om. Ca (Arist. praeter LS) γενομέην�
 τὸ περὶ ἐνίων εἶναι τὴν μαντικὴν ἐν τοῖς ἐνυπνίοις οὐκ ἄπιστον· ἔχει γάρ
 τινα λόγον· μικροῦ δεῖν καὶ περὶ πάντων τῶν ἐνυπνίων οἰηθείη ἄν τις ὡς
 ἔχει τι σημειῶδες. τὸ δὲ μηδεμίαν αἰτίαν εὔλογον όρᾶν, καθ’ ἥν ἄν <lb n="15"/>
-<lb n="10"/> γίνοιτο, διαπιστεῖν ποιεῖ. τό τε γὰρ θςὸν εἶναι τὸν πέμποντα, πρὸς τῇ
+               <lb n="10"/> γίνοιτο, διαπιστεῖν ποιεῖ. τό τε γὰρ θςὸν εἶναι τὸν πέμποντα, πρὸς τῇ
 ἄλλῃ ἀλογίᾳ καὶ τὸ μὴ τοῖς βελτίστοις καὶ φρονιμωτάτοις, ἀλλὰ τοῖς
 τυχοῦσι πέμπειν ἄλογον. ἀφαιρεθείσης δὲ τῆς ἀπὸ τοῦ θεοῦ αἰτίας οὐδεμία
 τῶν ἄλλων εὔλουος εἶναι φαίνεται αἰτία· τὸ γὰρ περὶ τῶν ἐφ’ Ἡρακλείαις <lb n="20"/>
@@ -1836,12 +1823,12 @@ Arist. LSU 30 οὐδὲ A 31 τὸ om. Ca (Arist. praeter LS) γενομέην�
 τούτων ἢ ἔν μόνον. λέγω δ’ αἴτιον μὲν οἶον τὴν σελήνην τοῦ ἐκλείπειν
 τὸν ἤλιον καὶ κόπον τοῦ πυρετοῦ, σημεῖον δὲ τῆς ἐκλείψεως τὸ τὸν
 ἀστέρα εἰσελθεῖν καὶ ὑποδραμεῖν, τὴν δὲ τρακύτητα τῆς γλώττης τοῦ <lb n="5"/>
-<lb n="20"/> πυρέσσειν συμπτώματα δὲ τὸ βαδίζοντος ἐκλείπειν τὸν ἤλιον· οὕτε γὰρ
+               <lb n="20"/> πυρέσσειν συμπτώματα δὲ τὸ βαδίζοντος ἐκλείπειν τὸν ἤλιον· οὕτε γὰρ
 σημεῖον οὔτ’ αἴτιόν ἐστιν ἡ ἐμὴ βάδισις τῆς ἐκλείψεως. διὸ τὰ συμπτώ-
 <note type="footnote">2—6 Arist. p. 462 b 12 — 16 4. 5 τῶν— προμάντευμα e Mich. p. 77,10 6 Mich,
 p. 77,10 7—20 Arist. ib. v. 16—32 19 ὑποδραμεῖν e Mich. p. 785
 20—47,2 cf. Arist. p. 463 a 1—4</note>
-<note type="footnote">1 θεμιστίου παράφρασις εἰς τὸ περὶ τῆς καθ’ ὕπνον μαντικῆς ἀριστοτέλους Ca 2 prius τῆς
+               <note type="footnote">1 θεμιστίου παράφρασις εἰς τὸ περὶ τῆς καθ’ ὕπνον μαντικῆς ἀριστοτέλους Ca 2 prius τῆς
 B Arist.: τῆς καθ’ ὕπνον ACa καὶ post μαντικῆς add. C 5 5 ἐνύπνια] ἐν ὔπνοις C
 παρέχεται AB Arist.: παρέχει Ca 6 καθ’ ἐκάστην AB Mich.: καθ’ ἐκάστους Ca
 7 ἐνυπνίοις] ὕπνοις Ca (Arist. S) 8 &lt;διὸ&gt; μικροῦ expectes, cf. Arist. πάντων
@@ -1849,8 +1836,7 @@ om. Arist. praeter Μ, sed cf. Mich. p. 77,17 9 ἔχη AB 10 post γίνοιτ�
 τοῦτο Arist. LSU 11 prius τοῖς om. C 13 εἶναι et αἰτία om. Arist. EMY
 περὶ γὰρ (om. τὸ) C 14 τινὰς Arist. praeter SU 15 δοκεῖ (οm. ἄν) Arist.
 EMY τούτων cm. Arist. EY 17 ofov om. Arist, EY 20 σύμπτωμα Arist.</note>
-
-<pb n="41"/>
+               <pb n="41"/>
 ματα οὔτε ἀεὶ γίνεται οὔθ’ ὡς ἐπὶ τὸ πολύ. τοιγαροῦν τῶν ἐνυπνίων τὰ <lb n="10"/>
 μέν εἰσι σημεῖα, τὰ δὲ αἴτια, τὰ δὲ συμπτώατα, καὶ σημεῖα μὲν δι’ ὦν
 παρίσταται καὶ προδηλοῦται σωματικὰ ἢ ψυχικὰ πάθη· λέγουσι γὰρ καὶ
@@ -1869,7 +1855,7 @@ EMY τούτων cm. Arist. EY 17 ofov om. Arist, EY 20 σύμπτωμα Arist.<
 τῶν ἄλλων παθημάτων | τῶν ἐν τοῖς σώμασι μελλόντων γίεσθαι. <lb n="293"/>
 φανερὸν οὖν ὄτι ταῦτα ἀναγκαῖον ἐν τοῖς ὕπνοις εἶναι καταφανῆ μᾶλλον ἢ
 εν τῳ εεγρηγορεναι.</p>
-<p>Ἀλλὰ τίνων μὲν καὶ ὄπως σημεῖα τὰ ἐνύπνια, εἴρηται, ὄπως δὲ καὶ
+            <p>Ἀλλὰ τίνων μὲν καὶ ὄπως σημεῖα τὰ ἐνύπνια, εἴρηται, ὄπως δὲ καὶ
 <lb n="20"/> αἴτια καὶ τίνα, ἤδη ῥηθήσεται. ὅτι δὲ τῶν οἰκείων ἐκάστῳ πράξεων καὶ <lb n="5"/>
 οὐ τῶν ἀλλοτρίων, μᾶλλον ἄν εὔλογον δόξειεν ὤσπερ γὰρ μέλλοντες πρᾶξαί
 τι ἢ ἐν ταῖς πράξεσιν ἄντες ἤ πεπρακότες πολλάκις εὐθυονειρίᾳ τούτοις
@@ -1886,7 +1872,7 @@ EMY τούτων cm. Arist. EY 17 ofov om. Arist, EY 20 σύμπτωμα Arist.<
 <note type="footnote">2. 3 Mich. p. 78,12 3. 4 Arist. p. 4—6 6 4. 5 ὠς— ἀρρωστήματος
 ipse addidit 5—18 Arist. ib. v. 6—21 19. 20 Mich. p. 803
 20— p. 42,10 Arist. p. 22—b 19 28. 29 τῆς— γινομέηης Mich. p. 81,3 4</note>
-<note type="footnote">4 συέδρα om. Arist. EY 5 τεκμηριώσασθαι C 6 post xot; add. μὴ Victorius
+               <note type="footnote">4 συέδρα om. Arist. EY 5 τεκμηριώσασθαι C 6 post xot; add. μὴ Victorius
 (Arist. praeter L) 7 μεθ’ ἡμέραν om. A ἐὰν Arist. EMY 14 ytvExczt]
 cpaivEToti conicio, &lt;φανερὰ&gt; γίνεται Spengel (of. Arist. et Mich. p. 79,6) 16 prius τῶν
 ΑΒC Arist.: om. a 24 ἀρχὰς Arist. EMY 25 προωδοποιῆσθαι Arist. L,
@@ -1894,13 +1880,13 @@ cpaivEToti conicio, &lt;φανερὰ&gt; γίνεται Spengel (of. Arist. et 
 xal om. Arist. EMY 27 alt. δὲ] οἶον Arist. EMY alt. alt. τὰ] τε Arist. EMY
 29 γενομένης B, e corr. A 30 post οἶον add. ὥσπερ in mg. B ’jyrf AB
 31 γινόμενον Arist. praeter LS 32 μνησθῆναι Arist. praeter L</note>
-
-<pb n="42"/>
+               <pb n="42"/>
 τοῦ παραγεγέσθαι αὐτόν, οὕτως οὐδ’ ἐκεῖ μετὰ τὸ ἀπορῆναι τὸ ἐνύπνιον <lb n="25"/>
 τῷ δ’ ὄντι οὔτε σημεῖον οὔτε αἴτιον ἄλλὰ σύμπτωμα. διὸ καὶ πολλὰ τῶν
 ἐνυπνίων οὐκ ἀποβαίνει· τὰ γὰρ δυμπυώματα οὔτ’ ἀεὶ οὔθ’ ὡς ἐπὶ τὸ
 πολὺ γίνεται.</p>
-<lb n="5"/> <p>Ὄλως δὲ δὲ καὶ τῶν ἄλλων ζῲων ὀνειρώττει | τινά, θεόπεμπτα <lb n="294"/>
+            <lb n="5"/>
+            <p>Ὄλως δὲ δὲ καὶ τῶν ἄλλων ζῲων ὀνειρώττει | τινά, θεόπεμπτα <lb n="294"/>
 μὲν οὐκ ἄν εἴη τὰ ἐνύπντια οὐδὲ γἐγονε τούτου χάριν, δαιμάνια μέντοι· ἡ
 γὰρ φύσις δαιμονία, οὐ ξεία. σημεῖον δέ· πάνυ γὰρ εὐτελεῖς ἄνθρωποι
 προορατικοί εἰσι καὶ εὐθυόνειροι, ὑς οὐ θεοῦ πέρποντος, ἀλλ’ ἅσων <lb n="5"/>
@@ -1915,7 +1901,7 @@ xal om. Arist. EMY 27 alt. δὲ] οἶον Arist. EMY alt. alt. τὰ] τε Ari
 ἐν ὕπνῳ διέρκεσθαι βόρβορον μεθ’ ἡμέρας νενόσηκεν (τῶν γὰρ ἐντὸς σεσημμένων
 χυμῶν ἀρκομόνων κινεῖσθαι ακτὰ τὴν νύκτα ἠρεμῶν ἐλάμβανεν
 αἴσθησιν), καὶ ἐπὶ πυρὸς διαβαίνεειν, καὶ μετ’ ὀλίγον ἐπύρεξεν. ἄλλοτε δ’ <lb n="20"/>
-<lb n="20"/> αὖ ταῦτα ἰσὼν οὐκ ἐνόσησε τῷ τὴν φύσιν δίεγερθεῖσαν καὶ τοὺς χυμοὺς
+               <lb n="20"/> αὖ ταῦτα ἰσὼν οὐκ ἐνόσησε τῷ τὴν φύσιν δίεγερθεῖσαν καὶ τοὺς χυμοὺς
 πέψασαν ἀπεῖρξαι τῷ πάθει τὴν εἴσοδον. καὶ τὴv περὶ σελήνην ἄλω καὶ
 βροκῆς καὶ πνευμάτων ποιούμεθα σύμβολον, πολλακις δὲ συνισταμέης <lb n="25"/>
 οὐδὲν συνέβη τούτων διὰ τὴν ἀντιπερίσταιν τοῦ περιέχοντος κρατηθέντος
@@ -1924,13 +1910,13 @@ xal om. Arist. EMY 27 alt. δὲ] οἶον Arist. EMY alt. alt. τὰ] τε Ari
 τὸ μελλῆσαν, οὐδὲ τὸ αὐτὸ ἐσόμενον καὶ μέλλον, ἀλλ’ ὅμως | ἀρχάς τε <lb n="295"/>
 λεκτέον εἶναι, ἀφ’ ὦν οὐκ ἐπετελέσθη, καὶ σημεῖα πέφυκε ταῦτά τινων οὐ
 γευομενων.</p>
-<p>Περὶ δὲ τῶν μὴ τοιαύτας ἀρχὰς ἐχόντων ἐνυπνίων μηδὲ τῶν ἐφ’ ἅ
+            <p>Περὶ δὲ τῶν μὴ τοιαύτας ἀρχὰς ἐχόντων ἐνυπνίων μηδὲ τῶν ἐφ’ ἅ
 <lb n="30"/> ἡμεῖς κύριοι, ἀλλ’ ὐπερορίας ἢ τοῖς κρόνοις ἤ τοῖς τόποις ἢ τοῖς μεγέθεσιν <lb n="5"/>
 ἢ καὶ τῶρ ἐγγὺς μὲν πραττομένων καὶ παρὰ γείτονος ἴσως, μὴ μέντοι γε
 ἐν αὑτοῖς ἐχόντων τὰς ἀρχὰς τῶν εἰδότων τὸ ἐνύπνιον, εἰ μὴ γίνεται τὸ
 <note type="footnote">11. 12 Mich. p. 81,26 — 30 12—16 Arist. p. 463 b 21— 26 16—24 cf. Mich,
 p. 82,10—22 24—p. 43,1 Arist. p. 463 b 26—464 a 5 31 Mich. p. 83,11. 12</note>
-<note type="footnote">1 μετὰ τὸ cum Arist. U μὴ to S, τοῦ L, τῶ M, τὸ EY; sed μετὰ post ἀποβῆναι add. EY,
+               <note type="footnote">1 μετὰ τὸ cum Arist. U μὴ to S, τοῦ L, τῶ M, τὸ EY; sed μετὰ post ἀποβῆναι add. EY,
 post ἰδόντι Μ) 2 δ’ ὄντι cum Arist. S (ἱδόντι ceteri) 3 τὸ γὰρ σύμπτωμα
 Arist. EMY 5 ὅμως Arist. praeter LU 7 δαιμόνιον Arist. EMY ante
 οὐ add. ἀλλ’ Arist. EMY 9 ὤσπερ εἰ Arist. SU τὰς cm. Arist.
@@ -1940,8 +1926,7 @@ EMY 15 καὶ τὰ τῶν Arist. praeter S ἄν γὰρ] ἀλλ’ ὅμω�
 (Arist. MS) τε] γε Arist. Υ, γέ τινας EM 27 ἐτελσθη Arist. EMY
 πέφυκε C Arist.; πέφυκε τῶν ABa 28 γινομένων Arist. praeter LU 29 post
 ἐνυπνίων add. οἴας εἴπομεν Arist, EMY 31 γε om. Arist. EMY 32 ἰδόντων Arist.</note>
-
-<pb n="43"/>
+               <pb n="43"/>
 προορᾶν ἀπὸ συμπτώματος, ἐτέρως ἄν ἔχοι μᾶλλον ἢ ὡς λέγει Δημόκριτος.
 εἴδωλα γὰρ ἐκεῖνος καὶ ἀπορροίας αἰτιᾶται, ὦν τὰ μέν φησιν ἀγαθοποιά, τὰ <lb n="10"/>
 δὲ κακοποιά, ὑπερμεγέθη τε εἶναι καὶ δύσφθαρτα, ἐμπελάζειν δὲ τοῖς ἀνθώποις
@@ -1951,7 +1936,7 @@ EMY 15 καὶ τὰ τῶν Arist. praeter S ἄν γὰρ] ἀλλ’ ὅμω�
 ἀπαγορεύομεν, κινήσεις δέ τινας μᾶλλον άντὶ τούτων εἰσάγομεν ἀπ’
 άρχῶν τῶν μελλόντων γίνεσθαι καὶ λόγων καὶ πράξεων, ὑφ’ ὦν σχηματιζομένου
 τοῦ ἀέρος καὶ διὰ τῶν ὤτων ἤ τῶν μυκτήρων προσπιτουσῶν ἐν <lb n="20"/>
-<lb n="10"/> τοῖς ὔπνοις τῇ καρδίᾳ προορᾶν τὸ μέλλον. ὥσπερ γὰρ ὅταν τι κινήσῃ ρὸ
+               <lb n="10"/> τοῖς ὔπνοις τῇ καρδίᾳ προορᾶν τὸ μέλλον. ὥσπερ γὰρ ὅταν τι κινήσῃ ρὸ
 ὕδωρ ἢ ἄέρα, τοῦθ’ ἔτερον ἐκίκησε, παυσαμένου δ’ ἐκείνου σομβαίνει συμβαίνει
 τὴν αὐτὴν καίνησιν προϊέναι μέχρι τινός, τοῦ κινήσαντος οὐ παρόντος, οὔτως <lb n="25"/>
 οὐδὲν κωλύει κίνησίν τινα καὶ αἴσθησιν άφικνεῖσθαι πρὸς τàς ψυχὰς τàς
@@ -1966,7 +1951,7 @@ EMY 15 καὶ τὰ τῶν Arist. praeter S ἄν γὰρ] ἀλλ’ ὅμω�
 τοῖς σοφοῖς, εἰ δεὸς ἦν ὁ πέμπων. καὶ ἔτι οὕτω γινομένου τοῦ προορᾶν
 εἰκὸς τοὺς τυχόντας μᾶλλον προορᾶν· ή γὰρ διάνοια τῶν τοιούτων οὐ
 φροντιστική, ἀλλ' ὥσπερ ἔρημος καὶ κενὴ πάντων, ὧν πλήρης ἡ τῶν φιλοσοφούντων <lb n="10"/>
-<lb n="25"/> ἐστί, καὶ κινηθεῖσα κατὰ τὸ κινοῦν ἄγεται. καὶ τοῦ ἐνίους
+               <lb n="25"/> ἐστί, καὶ κινηθεῖσα κατὰ τὸ κινοῦν ἄγεται. καὶ τοῦ ἐνίους
 τῶν ἐκστατικῶν προορᾶν αἴτιον, ὅτι αἱ οἰκεῖαι κινήσεις οὐκ ἐνοχλοῦσιν
 ἀλλ' ἀπορραπίζονται. τῶν ξενικῶν οὖν μάλιστα αἰσθάνονται καὶ τῶν προσπιπόντων
 ἔξωθεν. τὸ δέ τινας εὐθουνείρους εἶναι μάλιστα περὶ τῶν <lb n="15"/>
@@ -1976,7 +1961,7 @@ EMY 15 καὶ τὰ τῶν Arist. praeter S ἄν γὰρ] ἀλλ’ ὅμω�
 τῶν γνωρίμων γνωριμώτεραἰ κινήσεις. οἱ δὲ μελαγχολικοὶ διὰ τὸ σφοδρὸν
 <note type="footnote">2—10 Mich. p. 83,18 — 26 10-p. 44,1 Arist. p. 464 α 6—33 24. 25 of. Mich,
 p. 84,5 27. 28 καὶ—ἔξωθεν e Mich. p. 84,25</note>
-<note type="footnote">2 ἀπορράς B (Arist. praeter EM), cf. v. 14 5 εὐλόχων (εὐλόγχων rectius Mich. SR)]
+               <note type="footnote">2 ἀπορράς B (Arist. praeter EM), cf. v. 14 5 εὐλόχων (εὐλόγχων rectius Mich. SR)]
 χ corr. ex γ B 8 γενέσθαι A 10 τι κινήσῃ Aa (Arist. L): τις κινήση C (κ.
 τις Arist. ΕΥ): κινήση B (Arist. U): κινήση τι Arist. MS 11 καὶ παυσαμένου Arist.
 praeter L 12 κίνησιν om. C 14 ἀπορροάς Arist. EY ΕΥ Ca (Arist. U,
@@ -1986,8 +1971,7 @@ ACa 21 ἐγίνετ' Arist. ἂν C Arist.: om. ABa 25 ἰαὶ xoO]
 τοῦ δ' Arist. EMY τοῦ] τὸ B 27 ἀπορριπίονται Arist. MSU 29 περὶ
 Arist. LSU 30 ἄντων] ὄντα B μάλιστα Arist. EMY 31 post αἰσθ.
 add. οἱ συνήθεις Arist. EMY 32 σφόδρα Arist. praeter LU</note>
-
-<pb n="44"/>
+               <pb n="44"/>
 τοξευθέν, ὅσα καὶ χειρί, τῷ βέλει καὶ πόρρωθεν ὄντες κατέχουσι, καὶ οὗτοι
 τὸ μέλλον ὤσπερ προαρτάζουσι τῷ τάχει τῆς κινήσεως· εὐμετάβολον γὰρ <lb n="25"/>
 ὄν τὸ φανταστικὸν αὐτοῖς ταχὺ τὸ ἐχόμενον τῆς ἀρχῆς τῶν ἐσομένων φαντάζεται.
@@ -2001,7 +1985,7 @@ add. οἱ συνήθεις Arist. EMY 32 σφόδρα Arist. praeter LU</note>
 κρίνειν παντός ἐστι, λέγω δὴ τὰς ὁμοιότητας, ὅτι παραπλήσια συμβαίνει
 τὰ φαντάσματα τοῖς ἐν τοῖς ὕδασιν εἰδώλοις, καθάπερ καὶ πρότερον
 εἴρηται. ἐκεῖ γὰρ ἄν μὴ ἠρεμῇ τὸ ὕδωρ, ἀλλὰ πολλὴ γένηται χίνησις, <lb n="10"/>
-<lb n="15"/> οὐχ ὁμοία γίνεται ἡ ἔμφασις καὶ τὰ εἴδωλα τοῖς ἀληθινοῖς, κἀν τοῖς ὕπνοις
+               <lb n="15"/> οὐχ ὁμοία γίνεται ἡ ἔμφασις καὶ τὰ εἴδωλα τοῖς ἀληθινοῖς, κἀν τοῖς ὕπνοις
 δέ, ὅταν σφοδρὰ τυγχάνῃ καὶ συγκεχυμένη ή πρὸς τὴν καρδίαν καταφερομένγ
 παλίρροια, οὔθ' ὁμοίους οὔτε καθαροὐς τοὺς τύπους ἐᾷ φαντάζεσθαι <lb n="15"/>
 καὶ τὰ ἐγκαταλείμματα. ἡ γὰρ κίνησις ἐκκόπτει τàς εὐθυονειρίας. δεινὸς
@@ -2011,10 +1995,10 @@ add. οἱ συνήθεις Arist. EMY 32 σφόδρα Arist. praeter LU</note>
 καὶ μὴ τολούτου ἀφθέντος, καὶ ὁ ἐν τοῖς ὕπνοις αὐτὸ τοῦτο ποιεῖν δυνάμενος.
 τί μὲν οὖν ἐστιν ὕπνος καὶ ἐνύπνιον, καὶ διὰ τίν' αἰτίαν ἑκάτερον
 αὐτῶν γίνεται, ἔτι δὲ περὶ τῆς τῶν ἐνυπνίων μαντείας εἴρηται, περὶ δὲ <lb n="25"/>
-<lb n="25"/> κινήσεως τῆς κοινῆς τῶν ζῴων λεκτέον.</p>
-<note type="footnote">1—9 Mich. p. 85,24—86,6 9—15 Arist. p. 464 b — 12 15—18 ipse addidit
+               <lb n="25"/> κινήσεως τῆς κοινῆς τῶν ζῴων λεκτέον.</p>
+            <note type="footnote">1—9 Mich. p. 85,24—86,6 9—15 Arist. p. 464 b — 12 15—18 ipse addidit
 18—24 cf. Arist. ib. v. 12—18 25 ipse addidit</note>
-<note type="footnote">1 εὐστοχοῦντες a 5 γὰρ Ca: δὲ AB Θιλαισίδου AB 6 διηγημάτων
+            <note type="footnote">1 εὐστοχοῦντες a 5 γὰρ Ca: δὲ AB Θιλαισίδου AB 6 διηγημάτων
 Ca: νοημάτων AB λέγουσι AB: διανοοῦνται Ca, prius A 7 περὶ Ἀφροδίτης
 AB Mich, (περ Ἀφρ. RP): τις Ἀφροδίτην Ca 14 κίνησις γένηται Ca: γίνηται ἡ κ. Arist.
 (γένηται LM) 16 σφόδρα a 16. 17 μεταφεφομ.ένη C, prius A 19 δὴ
@@ -2022,9 +2006,7 @@ AB Arist.: δὲ Ca ταχὺ om. Arist. EY 20 συναισθάνεσθαι Aris
 ἐνοχλουμέγω ACa: ἐνοχλουμένας B 23 καὶ τί ἐνύπνιον Arist. EMY 24 μαντικῆς
 Arist. EU 25 in fine τέλος τοῦ τερὶ μνήμης καὶ ἀναμνήσεως καὶ ὕπνου καὶ ἐγρηγόρσεως
 καὶ τῆς καθ' ὕπνον μαντικῆς: Ἰωάννου Δίου ἡ βιβλος ἥδε B, τέλος AC</note>
-</div>
-</div>
-
-</body>
-  </text>
+         </div>
+      </body>
+   </text>
 </TEI>

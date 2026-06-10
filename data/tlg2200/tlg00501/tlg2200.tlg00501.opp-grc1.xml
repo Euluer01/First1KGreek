@@ -1,118 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="eng">    
-    <fileDesc>
-   <titleStmt>
-     <title xml:lang="lat">Declamatio I</title>
-    <author>Libanius</author>
-     <editor>Richard Foerstser</editor>
-    <sponsor>University of Leipzig</sponsor>
-    <funder>European Social Fund Saxony</funder>
-    <principal>Gregory Crane</principal>
-    <respStmt>
-          <persName>Gregory R. Crane</persName>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-        </respStmt>
-        <respStmt>
-          <persName xml:id="DDD">Digital Divide Data</persName>
-          <resp>Corrected and encoded the text</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Matt Munson</persName>
-          <resp>Project Manager (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Annette Geßner</persName>
-          <resp>Project Assistant (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Thibault Clérice</persName>
-          <resp>Lead Developer (University of Leipzig)</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Bruce Robertson</persName>
-          <resp>Technical Advisor</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Greta Franzini</persName>
-          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Frederik Baumgardt</persName>
-          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
-        </respStmt>
-        <respStmt>
-          <persName>Simona Stoyanova</persName>
-          <resp>Project Manager (University of Leipzig), 2015</resp>
-          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-    <authority>University of Leipzig</authority>
-    <idno type="filename">tlg2200.tlg00501.opp-grc1.xml</idno>
-    <availability>
-     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-    </availability>
-    <date>2016</date>
-    <publisher>University of Leipzig</publisher>
-    <pubPlace>Germany</pubPlace>
-   </publicationStmt>
-   
-   <sourceDesc>
-    <listBibl>
-     <biblStruct>
-      <monogr>
-       <editor>
-        <persName>
-         <name xml:lang="lat">Richardus Foerster</name>
-         <addName xml:lang="deu">Richard Foerster</addName>
-        </persName>
-       </editor> 
-       <author ref="urn:cts:greekLit:tlg2200">Libanius</author>  
-       <title xml:lang="lat">Declamationes I-XII</title>
-       <imprint>
-        <publisher>B.G. Teubner</publisher>
-        <pubPlace>Leipzig</pubPlace>
-        <date>1909</date>
-       </imprint>
-       <biblScope unit="volume">5</biblScope>
-      </monogr>
-      <ref target="https://archive.org/details/operarecensuitri05libauoft">Internet Archive</ref>     
-     </biblStruct>
-    </listBibl>
-   </sourceDesc>
-   
-  </fileDesc>
-  <encodingDesc>
-   <p>The following text is encoded in accordance with EpiDoc standards and with the
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Declamatio I</title>
+            <author>Libanius</author>
+            <editor>Richard Foerstser</editor>
+            <sponsor>University of Leipzig</sponsor>
+            <funder>European Social Fund Saxony</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName>Gregory R. Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Geßner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Greta Franzini</persName>
+               <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Frederik Baumgardt</persName>
+               <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Simona Stoyanova</persName>
+               <resp>Project Manager (University of Leipzig), 2015</resp>
+               <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>University of Leipzig</authority>
+            <idno type="filename">tlg2200.tlg00501.opp-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2016</date>
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg2200.tlg00501.opp-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <editor>
+                        <persName>
+                           <name xml:lang="lat">Richardus Foerster</name>
+                           <addName xml:lang="deu">Richard Foerster</addName>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg2200">Libanius</author>
+                     <title xml:lang="lat">Declamationes I-XII</title>
+                     <imprint>
+                        <publisher>B.G. Teubner</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1909</date>
+                     </imprint>
+                     <biblScope unit="volume">5</biblScope>
+                  </monogr>
+                  <ref target="https://archive.org/details/operarecensuitri05libauoft">Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
     CTS/CITE Architecture.</p>
-      <refsDecl n="CTS">
-        <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-      </refsDecl>
-    </encodingDesc>
-  
-  <profileDesc>
-   <langUsage>
-    <language ident="lat">Latin</language>
-         <language ident="grc">Greek</language>
-         <language ident="deu">German</language>
-   </langUsage>
-  </profileDesc>
-  
- </teiHeader>
-  <text>
-    <body><div type="edition" n="urn:cts:greekLit:tlg2200.tlg00501.opp-grc1" xml:lang="grc">
-
-<div type="textpart" subtype="chapter" n="1">
-
-<pb n="13"/>
-
-<head>I.</head>
-
-<head>ΣΩΚΡΑΤΟΥΣ ΑΠΟΛΟΓΙΑ.</head>
-
-<p>οὐδ’ εἰ πλείους, ὦ ἄνδρες Ἀθηναῖοι, τῶν <note type="marginal">R III 1</note>
+         <refsDecl n="CTS">
+            <cRefPattern n="chapter"
+                         matchPattern="(.+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="lat">Latin</language>
+            <language ident="grc">Greek</language>
+            <language ident="deu">German</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg2200.tlg00501.opp-grc1">
+         <div n="1" type="chapter">
+            <pb n="13"/>
+            <head>I.</head>
+            <head>ΣΩΚΡΑΤΟΥΣ ΑΠΟΛΟΓΙΑ.</head>
+            <p>οὐδ’ εἰ πλείους, ὦ ἄνδρες Ἀθηναῖοι, τῶν <note type="marginal">R III 1</note>
 
 νυνὶ τούτων αἰτιῶν ἐπάγοι τις Σωκράτει πείθων ὑμᾶς
 
@@ -125,30 +127,21 @@
 ἀρνήσασθαι. οὔτε γὰρ ἧς ἐφ’ ἑκάστου καὶ λόγου καὶ
 
 <note type="footnote">C = codex Chisianus</note>
-
-<note type="footnote">Α = Monacensis olim Augustanus</note>
-
-<note type="footnote">Ma = Matritensis 4679 (N-49)</note>
-
-<note type="footnote">Ath = Athous Laurae S. Athanasii</note>
-
-<note type="footnote">U = Vaticanus Urbinas gr. 126</note>
-
-<note type="footnote">Va = Vaticanus gr. 81</note>
-
-<note type="footnote">Β = Barberinus II 41</note>
-
-<note type="footnote">2 Dem. p. 550,22</note>
-
-<note type="footnote">1 Inscr. στοχασμὸς ἀπλοῦς ἐκ πολλῶν ὁ διάφορα πράγματα
+               <note type="footnote">Α = Monacensis olim Augustanus</note>
+               <note type="footnote">Ma = Matritensis 4679 (N-49)</note>
+               <note type="footnote">Ath = Athous Laurae S. Athanasii</note>
+               <note type="footnote">U = Vaticanus Urbinas gr. 126</note>
+               <note type="footnote">Va = Vaticanus gr. 81</note>
+               <note type="footnote">Β = Barberinus II 41</note>
+               <note type="footnote">2 Dem. p. 550,22</note>
+               <note type="footnote">1 Inscr. στοχασμὸς ἀπλοῦς ἐκ πολλῶν ὁ διάφορα πράγματα
 
 ἐφ’ ἐνὶ προσώπῳ τῷ Σωκράτους ζητῶν, τήν τε περὶ τὸ θεῖον
 
 ἀσέβειαν καὶ τὴν τῆς πόλεως ὕβριν καὶ τὴν τῶν νέων διαφθο-
 
 ράν in marg A 2</note>
-
-<note type="footnote">(??)δ΄ ante σωκράτους Α, post ἀπολογία C sed in hoc ξέ in
+               <note type="footnote">(??)δ΄ ante σωκράτους Α, post ἀπολογία C sed in hoc ξέ in
 
 ras in marg, μα in marg 1 Ἀθηναῖοι inserui e Ma cum
 
@@ -159,10 +152,7 @@ Rog coll p. 34, 13 et 55, 13 om reliqui libri Mor Re
 reliqui libri Rog 4 φίλον Mor καὶ (1)] πάλαι coni Cobet
 
 ὑμῖν U sed υ eras ἡμῖν Va Mor</note>
-
-
-
-<pb n="14"/>
+               <pb n="14"/>
 
 ἔργου δικαιοσύνης αὐτῷ σύνοιδα τὴν τῶν ἀδίκως ἐπ’
 
@@ -174,9 +164,10 @@ reliqui libri Rog 4 φίλον Mor καὶ (1)] πάλαι coni Cobet
 
 <lb n="5"/> ἐποιούμην, τοῦτον, ἐπειδὴ πάσχει κακῶς, ἐγκαταλείπειν.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="2"><p>οὕτω δὲ ἔχοντα γνώμης πρέποι μὲν ἂν καὶ συν-
+</p>
+         </div>
+         <div n="2" type="chapter">
+            <p>οὕτω δὲ ἔχοντα γνώμης πρέποι μὲν ἂν καὶ συν-
 
 εύχεσθαι Σωκράτει καὶ τοὺς θεούς, οἱ κάλλιστα τὸν
 
@@ -211,10 +202,7 @@ reliqui libri Rog 4 φίλον Mor καὶ (1)] πάλαι coni Cobet
 4 σύμ-βολον Ma 5 ἐγκαταλιπεῖν MaUVaB Rog 6 δ᾿ Re | πρέ-πει Mor I ἂν om Ma Mor Ι συνάχθεσθαι UVaB 7 Σωκράτει Mor sed γρ Σωκράτη in marg 8 τούτου Mor 10 τὰ om Mor 11 Μελήτῳ scripsi ex Α sed ἴ’ supra ἡ, MaAthUB cum Rog μελίτῳ reliqui libri Mor Re Ι ἐκείνῳ Mor 13 μικρὸν ἡ UVaB 14 μὴ δὲ μιᾶς A | ὑμῶν Ma ἡμῶν UVaB 15 ὡμο-λόγησεν UVa 16 τοῦ ante σωκράτους UVaB | λόγοις inser Ma 2 18 θ’ ὅτε scripsi coll. t. III 337, 11; t. IV 211, 1 τε libri Mor Re τε καὶ ὅπου coni Re τε εἰ lacobs Lect 193 Not 2
 
 τε εἴ τῳ Add in Athen 204) τε καὶ εἰ Gasda Rog</note>
-
-
-
-<pb n="15"/>
+               <pb n="15"/>
 
  τῇ φιλίᾳ πληροῦν καὶ &lt;τὸ&gt; τοὺς δικάζοντας ὑμᾶς ἐξε-
 
@@ -227,8 +215,7 @@ reliqui libri Rog 4 φίλον Mor καὶ (1)] πάλαι coni Cobet
 γοντι συνηγορήσων μᾶλλον ἀνέβην ἢ τῶν ὑμῖν συμ- <lb n="5"/>
 
 φερόντων ποιησόμενος πρόνοιαν.</p>
-
-<p>3. Σωκράτει μὲν οὖν, ὦ ἄνδρες, βραχὺς τοῦ θανά-
+            <p>3. Σωκράτει μὲν οὖν, ὦ ἄνδρες, βραχὺς τοῦ θανά-
 
 του λόγος, οὔτε γὰρ ἐν οἷς ἀεὶ ζητῶν διετέλει τοῦ
 
@@ -248,9 +235,10 @@ reliqui libri Rog 4 φίλον Mor καὶ (1)] πάλαι coni Cobet
 
 μὴν τραχύτερον ἐσχηκότας πρὸς αὐτὸν τῷ μηδενὶ τού-
 
-των ἀξιῶσαι χρήσασθαι.</p></div>
-
-<div type="textpart" subtype="chapter" n="4"><p>ἐγὼ δὲ οὐ διὰ τοῦτο τῆς
+των ἀξιῶσαι χρήσασθαι.</p>
+         </div>
+         <div n="4" type="chapter">
+            <p>ἐγὼ δὲ οὐ διὰ τοῦτο τῆς
 
 συνηγορίας ἀπέστην, ὅτι σμικρός τε ὁ λειπόμενος Σω-
 
@@ -259,8 +247,7 @@ reliqui libri Rog 4 φίλον Mor καὶ (1)] πάλαι coni Cobet
 apol. ’ξ 23 9 cf. p. 110, 16 sq. 13 cf p. 112, 5 sq. Plat.
 
 apol. p. 34 C sq. 38 D</note>
-
-<note type="footnote">1 πληροῦντα Ath | τὸ inserui 3 ἰσχῦσαι? at cf. ad
+               <note type="footnote">1 πληροῦντα Ath | τὸ inserui 3 ἰσχῦσαι? at cf. ad
 
 t. IV 251, 5 6 πρόνοιαν voce des C fol. 335 Α 228 quae
 
@@ -285,10 +272,7 @@ p. 118, 6; t. II 238, 15; t. IV 273, 17 εὗρον Ma Mor Re
 15 αὐτὸν Β 17 διατοῦτο Β 18 σμικρός τε scripsi ex Ath
 
 UVaB σμικρὸς reliqui libri edd</note>
-
-
-
-<pb n="16"/>
+               <pb n="16"/>
 
 κράτει χρόνος καὶ φόβος οὐδεὶς τῆς τελευτῆς, ἀλλὰ
 
@@ -302,9 +286,10 @@ UVaB σμικρὸς reliqui libri edd</note>
 
 ναίους παρεκελευσάμην ἐμαυτῷ τὴν Ἀνύτου συκοφαν-
 
-τίαν ἐλέγξαι.</p></div>
-
-<div type="textpart" subtype="chapter" n="5"><p>τοῦτο δὲ γένοιτ’ ἂν ὑμῶν ἀκούειν
+τίαν ἐλέγξαι.</p>
+         </div>
+         <div n="5" type="chapter">
+            <p>τοῦτο δὲ γένοιτ’ ἂν ὑμῶν ἀκούειν
 
 εὐμενῶς ἐθελόντων. καὶ γὰρ εἰ μὲν ἐμπείρως ἔχων
 
@@ -329,12 +314,10 @@ UVaB σμικρὸς reliqui libri edd</note>
 δὲ ὑμῖν τι συμβαλουμένων καὶ τἀληθῆ μᾶλλον ἐρούν-
 
 των ἤ οὗτοι.</p>
-
-<note type="footnote">1 cf. p. 110, 16. Plat. apol. 29 A; 38 D sq. 3 Plat. apol.
+            <note type="footnote">1 cf. p. 110, 16. Plat. apol. 29 A; 38 D sq. 3 Plat. apol.
 
 p. 17 B sq.; 27 B. Xen. comm. IV 4, 4</note>
-
-<note type="footnote">1 ᾦ ante καὶ Par. 3014 edd delevi cum Gasda Ι ὁ ante φόβος 6 Par. 3017 Gasda
+            <note type="footnote">1 ᾦ ante καὶ Par. 3014 edd delevi cum Gasda Ι ὁ ante φόβος 6 Par. 3017 Gasda
 
 2 πρέπειν ἡγούμενος scripsi e MaAthUVaB
 
@@ -345,8 +328,7 @@ p. 17 B sq.; 27 B. Xen. comm. IV 4, 4</note>
 4 μὴ δὲ MaB
 
 5 τοὺς ante Ἀθηναίους inser Rog</note>
-
-<note type="footnote">11 καὶ inserui ex AthUB om reliqui libri edd
+            <note type="footnote">11 καὶ inserui ex AthUB om reliqui libri edd
 
 13 δικαστη-
 
@@ -373,12 +355,8 @@ Rog coll Plat. apol. p. 17 B | ἄρ’ Rog
 των Ma sed ο in ου corr m 2, Par 3017
 
 19 οὗτος? at cf. p. 21, 12.</note>
-
-
-
-<pb n="17"/>
-
-<p>6. Οἶδα μὲν οὖν ὅτι διαβολή τις κατεσκέδασται
+            <pb n="17"/>
+            <p>6. Οἶδα μὲν οὖν ὅτι διαβολή τις κατεσκέδασται
 
 Σωκράτους ὑπὸ τῶν ἐν ταῖς συνουσίαις τοὺς παρ’
 
@@ -392,9 +370,10 @@ Rog coll Plat. apol. p. 17 B | ἄρ’ Rog
 
 λέγοντας· τὸν μιαρόν, τὸν ὄλεθρον, τὸν λυμεῶνα
 
-τῶν νέων.</p></div>
-
-<div type="textpart" subtype="chapter" n="7"><p>ἃ δὴ καὶ τούτοις ἔδωκε θαρρῆσαι τὴν
+τῶν νέων.</p>
+         </div>
+         <div n="7" type="chapter">
+            <p>ἃ δὴ καὶ τούτοις ἔδωκε θαρρῆσαι τὴν
 
 γραφὴν ἀπενεγκεῖν, ἐπεὶ καὶ πρῴην τινὸς προσελθόν-
 
@@ -417,10 +396,8 @@ Rog coll Plat. apol. p. 17 B | ἄρ’ Rog
 μὲν ἐν ὑμῖν οὐκ ὀλίγους ἑώρων πολλάκις ἡσθέντας,
 
 <note type="footnote">1 cf. p. 127, 5. Plat. apol. p. 18 B cf. p. 111, 16 sq.</note>
-
-<note type="footnote">7 Plat. apol. p. 23 D</note>
-
-<note type="footnote">1 κατεσκεύασται UVaB κατασκευασταὶ Ath cf. Plat. I. I.
+               <note type="footnote">7 Plat. apol. p. 23 D</note>
+               <note type="footnote">1 κατεσκεύασται UVaB κατασκευασταὶ Ath cf. Plat. I. I.
 
 οἱ ταύτην τὴν φήμην κατασκεδάσαντες
 
@@ -453,18 +430,16 @@ cancellavit auctore Re Rog οὐδ’ ὁρᾶν coni Re
 18 ὀλίγοι &lt;κάθηνται, οὓς&gt; ἑώρων Cobet Coll 255
 
 </note>
-
-
-
-<pb n="18"/>
+               <pb n="18"/>
 
 ὁπότε Σωκράτης τοὺς ἀλαζόνας ἐλέγχοι, καί, νὴ Δία
 
 <note type="marginal">R III 4</note> γε, καὶ πρὸς ἀρετὴν διὰ τοῦτον | ἐπιδεδωκότας οὐ
 
-μικρόν.</p></div>
-
-<div type="textpart" subtype="chapter" n="8"><p>ἔπειτα, εἰ καὶ τὰ μάλιστα δυσχερῶς εἴχετε
+μικρόν.</p>
+         </div>
+         <div n="8" type="chapter">
+            <p>ἔπειτα, εἰ καὶ τὰ μάλιστα δυσχερῶς εἴχετε
 
 πρὸς αὐτὸν ἅπαντες καὶ κοινὸς ἦν τοῦ δικαστηρίου
 
@@ -478,9 +453,10 @@ cancellavit auctore Re Rog οὐδ’ ὁρᾶν coni Re
 
 χάριν ἀποδώσοντες, ἀλλ’ ἀπὸ τῶν πραγμάτων, ἐφ’ οἶς
 
-<lb n="10"/> ἡ κρίσις, ἢ σώσοντες ἢ κολάσοντες.</p></div>
-
-<div type="textpart" subtype="chapter" n="9"><p>ταῦτα γὰρ δή-
+<lb n="10"/> ἡ κρίσις, ἢ σώσοντες ἢ κολάσοντες.</p>
+         </div>
+         <div n="9" type="chapter">
+            <p>ταῦτα γὰρ δή-
 
 που καὶ ὁ Σόλων εἰδὼς καὶ νομίζων τῶν ἀγωνιουμέ-
 
@@ -501,8 +477,7 @@ cancellavit auctore Re Rog οὐδ’ ὁρᾶν coni Re
 <note type="footnote">6 sq. Plat. apol. p. 35 C 14 Dem. Tim. p. 746, 19 sq;
 
 Eubul. p. 1318, 25 cf. Μ. Fraenkel Herm. XIII 452 sq.</note>
-
-<note type="footnote">2 διατοῦτον Β τοῦτον reposui e libris, ut coni Re, cum
+               <note type="footnote">2 διατοῦτον Β τοῦτον reposui e libris, ut coni Re, cum
 
 Rog τοὺς Mor Re τοῦτ’ Sintenis δι’ αὐτοῦ lacobs Not 6
 
@@ -543,16 +518,12 @@ e Β auctore Nabero cum Rog ἐμπλῆσαι reliqui libri Mor Re Ι
 αὐτοῦ scripsi ex UVaB cum lacobsio Not 6 et Rog αὐτοῦ
 
 reliqui libri Mor Re</note>
-
-
-
-<pb n="19"/>
+               <pb n="19"/>
 
 ὑποτέθεικεν ὀργῇ καὶ αὑτὸν καὶ παῖδας καὶ οἰκίαν καὶ
 
 γένος καὶ σμικρᾶς ἡδονῆς μεγάλην ὑπέσχε τὴν δίκην.</p>
-
-<p>10. Μηδὲ τοῦτό τις ὁράτω μόνον, ὅτι Σωκράτην
+            <p>10. Μηδὲ τοῦτό τις ὁράτω μόνον, ὅτι Σωκράτην
 
 ἀπεκτονὼς ἔξεισιν ἀπηλλαγμένος τῆς τούτου παρρησίας,
 
@@ -581,12 +552,10 @@ reliqui libri Mor Re</note>
 νωνοὺς τοὺς παῖδας, ὁ δὲ πᾶσιν ἐφεξῆς τοῖς αὑτοῦ
 
 τὴν συμφορὰν ἐπάγει.</p>
-
-<p>11. Καὶ μὴν οὐδ’ ἐκεῖνό γε εὔλογον ὑπὲρ εὐσε-
+            <p>11. Καὶ μὴν οὐδ’ ἐκεῖνό γε εὔλογον ὑπὲρ εὐσε-
 
 βείας δοκοῦντας ἀγανακτεῖν αὐτοὺς Ι ἀσεβοῦντας <note type="marginal">R III 5</note>
-
-<note type="footnote">1 ὑποτέθεικεν] ὑποκαταδίκην ὢν καὶ Μα | ὀργῇ scripsi ex
+               <note type="footnote">1 ὑποτέθεικεν] ὑποκαταδίκην ὢν καὶ Μα | ὀργῇ scripsi ex
 
 AthUVaB ὅρκον Ma ὅρκῳ edd | αὐτὸν scripsi ex UVaB cum
 
@@ -625,18 +594,14 @@ coni Cobet
 qui libri Mor Re 18 οὐδ’ scripsi ex UB cum Rog οὐδὲ
 
 reliqui libri Mor Re</note>
-
-
-
-<pb n="20"/>
+               <pb n="20"/>
 
 ἁλῶναι καὶ τῆς οὐδαμῶς δυναμένης ἐλεγχθῆναι πονη-
 
 ρίας οἰομένους δίκην λαμβάνειν αὐτοὺς ἐν τοῖς ὀφεί-
 
 λουσι τοῖς κρείττοσι δίκην γενέσθαι.</p>
-
-<p>12. Περὶ μὲν οὖν τοῦ μὴ δεῖν, εἴ τις ὑμῶν ἀγα-
+            <p>12. Περὶ μὲν οὖν τοῦ μὴ δεῖν, εἴ τις ὑμῶν ἀγα-
 
 <lb n="5"/> νακτῶν ἐκ τῶν ἔμπροσθεν τούτῳ πρὸς ἐνίους γεγενη-
 
@@ -651,8 +616,7 @@ reliqui libri Mor Re</note>
 <lb n="10"/> δὲ οὐδὲν δεῖσθαι τούς γε εὖ φρονοῦντας πλειόνων.
 
 </p>
-
-<p>13. Ἤδη δὲ ὑμᾶς διδάξω, πόθεν ποτὲ Ἄνυτος ἐπέ-
+            <p>13. Ἤδη δὲ ὑμᾶς διδάξω, πόθεν ποτὲ Ἄνυτος ἐπέ-
 
 θετο Σωκράτει καὶ ὡς οὐκ ἐκ τῆς πρὸς ὑμᾶς εὐνοίας
 
@@ -669,8 +633,7 @@ reliqui libri Mor Re</note>
 p. 31, 17 sq. Plat. apol p. 25 C; 26 A sq. 16 sq. Xen. comm.
 
 I 2, 62 sq.; apol. § 25</note>
-
-<note type="footnote">1 οὐδαμοῦ UVa Rog 3 δίκην τοῖς κρείττοσι Ath
+               <note type="footnote">1 οὐδαμοῦ UVa Rog 3 δίκην τοῖς κρείττοσι Ath
 
 4 Καὶ ante περὶ inserendum coni lacobs Not 7 | οὖν inserui ex Ath
 
@@ -711,10 +674,7 @@ reliqui libri Mor Re | &lt;δ᾿ &gt; Re | &lt;δ᾿ &gt; inserui
 16 ὦ Ἀθηναῖοι, ante οὐδενὶ Ath Mor Re delevi cum Rog | num ἀδίκου &lt;λήμματος οὔτε&gt; κλοπῆς coll p. 28, 1? at cf. p. 71, 14 sq. οὐδενὸς ἀδίκου,
 
 οὔτε vel ἀδίκου, οὔτε coni Sintenis</note>
-
-
-
-<pb n="21"/>
+               <pb n="21"/>
 
 κου κλοπῆς οὔτε ἀπάτης οὔτε ἱεροσυλίας οὔτε ἐπιορ-
 
@@ -724,9 +684,9 @@ reliqui libri Mor Re | &lt;δ᾿ &gt; Re | &lt;δ᾿ &gt; inserui
 
 σύνης ἡγεμόνα καὶ πάντων ὑμῖν εὐνούστατον καὶ
 
-γεγενημένον καὶ ὄντα, πείσατε Ἄνυτον ἐγκαλύψασθαι.</p> <lb n=" 5"/>
-
-<p>14. Σκοπεῖτε δέ. Σωκράτης ὦ ἄνδρες, γενόμενος
+γεγενημένον καὶ ὄντα, πείσατε Ἄνυτον ἐγκαλύψασθαι.</p>
+            <lb n=" 5"/>
+            <p>14. Σκοπεῖτε δέ. Σωκράτης ὦ ἄνδρες, γενόμενος
 
 ἐκ πατρὸς Ἀθηναίου καὶ τραφεὶς ἐν τοῖς ἡμετέροις
 
@@ -742,9 +702,10 @@ reliqui libri Mor Re | &lt;δ᾿ &gt; Re | &lt;δ᾿ &gt; inserui
 
 μνημονευομένων ἀρετῆς ὀρεχθῆναι καὶ νομίζειν ζηλω-
 
-τὸν τὸ κτῆμα.</p></div>
-
-<div type="textpart" subtype="chapter" n="15"><p>τὸ μὲν γὰρ ἐν βαναυσίᾳ δι- <note type="marginal">R III 6</note>
+τὸν τὸ κτῆμα.</p>
+         </div>
+         <div n="15" type="chapter">
+            <p>τὸ μὲν γὰρ ἐν βαναυσίᾳ δι- <note type="marginal">R III 6</note>
 
 ἄγειν ἢ γῆν ἐργάζεσθαι ἢ πελάγη περᾶν ὑπὲρ χρημά- <lb n="15"/>
 
@@ -775,10 +736,7 @@ Mor Re qui βαναύσων coni
 scripsi auctoribus Sinteni Gasda Cobeto cum Rog τοὺς libri
 
 Mor Re</note>
-
-
-
-<pb n="22"/>
+               <pb n="22"/>
 
 εὔδαιμον ἡγήσασθαι, νομίσας δὲ πάντων εἶναι κτημά-
 
@@ -796,9 +754,10 @@ Mor Re</note>
 
 ζόμενον πάντα τρόπον τὴν ψυχὴν ἀμείνω ποιεῖν, ἐπὶ
 
-ταῦτα ἧκε.</p></div>
-
-<div type="textpart" subtype="chapter" n="16"><p>τὸ μὲν οὖν τὴν τοῦ οὐρανοῦ διερευ-
+ταῦτα ἧκε.</p>
+         </div>
+         <div n="16" type="chapter">
+            <p>τὸ μὲν οὖν τὴν τοῦ οὐρανοῦ διερευ-
 
 <lb n="10"/> νᾶσθαι φύσιν καὶ τὸν ἥλιον ὅ τι ποτέ ἐστι σκοπεῖν
 
@@ -851,10 +810,7 @@ et Cobeto Mnem. III 143 cum Rog ἐνεργὸν libri Mor Re qui
 Re cum Rog ἐπεὶ Mor Re | τί δίκαιον coni Rog
 
 16 &lt;καὶ&gt; ὃ Gasda 18 καὶ τούτοις ἐνέμεινε in marg Ma</note>
-
-
-
-<pb n="23"/>
+               <pb n="23"/>
 
 μὲν αὑτὸν οὐδενὸς οὐδαμοῦ προσειπὼν οὐδὲ ἀργύριον
 
@@ -862,9 +818,10 @@ Re cum Rog ἐπεὶ Mor Re | τί δίκαιον coni Rog
 
 πλησιάζουσι συνεξετάζειν τὴν ἑκάστου πράγματος φύσιν
 
-τὸν βίον ποριζόμενος.</p></div>
-
-<div type="textpart" subtype="chapter" n="17"><p>καὶ ταῦτα ἔπραττεν οὐ
+τὸν βίον ποριζόμενος.</p>
+         </div>
+         <div n="17" type="chapter">
+            <p>καὶ ταῦτα ἔπραττεν οὐ
 
 πολλῶν κεκληρονομηκὼς ταλάντων οὐδὲ τῆς ἔνδον <lb n="5"/>
 
@@ -882,9 +839,10 @@ Re cum Rog ἐπεὶ Mor Re | τί δίκαιον coni Rog
 
 τούτου ἤ αὐτὸς ὁ δεδωκώς. λοιπὸν οὖν ἦν ζῆν ἐν ἀμυ-
 
-θήτῳ πενίᾳ.</p></div>
-
-<div type="textpart" subtype="chapter" n="18"><p>τί οὖν ἐποίησεν; οὐ μετέβαλε τὴν
+θήτῳ πενίᾳ.</p>
+         </div>
+         <div n="18" type="chapter">
+            <p>τί οὖν ἐποίησεν; οὐ μετέβαλε τὴν
 
 τάξιν, ἐπειδὴ τῶν ἀφορμῶν ἐστέρητο, οὐδ’ ᾠήθη δεῖν
 
@@ -901,8 +859,7 @@ p. 23 B; 38 B sq. 5 cf. p. 87, 5 sq. 6 Dem. Phal. apud Plut.
 Arist. 1, 9 cf. Boeckh Staatshaushalt. Ι 143 3 Zeller Gesch. der
 
 Phil. II 1, 44 3</note>
-
-<note type="footnote">1 αὑτὸν scripsi e MaU cum Rog αὐτὸν reliqui libri Mor
+               <note type="footnote">1 αὑτὸν scripsi e MaU cum Rog αὐτὸν reliqui libri Mor
 
 Re I οὐδὲν ante οὐδενὸς Β 2 ὧς inserui e MaUVaB auctore
 
@@ -927,10 +884,7 @@ Mor Re | ἐτήρησεν reposui ex AthUVaB auctore Re cum Rog
 17 γὰρ om Ma Ι ζητεῖν reposui e MaAthVaB auctore Re cum
 
 Rog ζῆν U Mor Re | οὐ om Ath</note>
-
-
-
-<pb n="24"/>
+               <pb n="24"/>
 
 καὶ σκοπεῖν ὅθεν ἂν ἀντὶ τῶν οἰχομένων αὑτῷ γένοιτο
 
@@ -946,9 +900,10 @@ Rog ζῆν U Mor Re | οὐ om Ath</note>
 
 τῆς δὲ οὕτως ἐχούσης τροφῆς ἔμελε δήπου τοῖς ἐπιτη-
 
-δείοις Σωκράτους οὐδὲν ἐνοχλοῦντος.</p></div>
-
-<div type="textpart" subtype="chapter" n="19"><p>τοιοῦτος ὢν
+δείοις Σωκράτους οὐδὲν ἐνοχλοῦντος.</p>
+         </div>
+         <div n="19" type="chapter">
+            <p>τοιοῦτος ὢν
 
 καὶ διάγων, ὡς ἔφην, ὥσπερ τις κοινὸς πατὴρ καὶ τῆς
 
@@ -966,9 +921,10 @@ Rog ζῆν U Mor Re | οὐ om Ath</note>
 
 εἰς δύναμιν ἐξελάσειεν, ἀρετὴν δὲ πείσειεν ἀγαθόν τι
 
-νομίζειν.</p></div>
-
-<div type="textpart" subtype="chapter" n="20"><p>καὶ οὐδὲν ἐπαύσατο τῶν στρατηγεῖν καὶ
+νομίζειν.</p>
+         </div>
+         <div n="20" type="chapter">
+            <p>καὶ οὐδὲν ἐπαύσατο τῶν στρατηγεῖν καὶ
 
 <note type="footnote">2 Xen. comm. Ι 2, 1 6 cf. t. II 544, 6 11 cf. p. 31, 9 sq.;
 
@@ -977,8 +933,7 @@ Rog ζῆν U Mor Re | οὐ om Ath</note>
 Lys. p. 203 A; conv. p. 223 D 12 Xen. comm. I 1, 10 Ι cf.
 
 p. 113, 3</note>
-
-<note type="footnote">1 σκοποῖ Ma Ι ἀπὸ Ma | αὑτῷ scripsi αὐτῷ libri edd
+               <note type="footnote">1 σκοποῖ Ma Ι ἀπὸ Ma | αὑτῷ scripsi αὐτῷ libri edd
 
 2 καὶ μᾶλλον scripsi auctore Cobeto Mnem III 143 cum Rog
 
@@ -1005,10 +960,7 @@ Cobeto cum Rog μέλλει Ma μέλλει Ath Mor Re ποτ’ ἔμελλε
 tandi causa coll Xen. comm. I. I., post ὅπου auctore Cobeto Rog
 
 om libri Mor Re 13 τὴν Ma τοῖς Β 16 ἐξελαύνειν Ma</note>
-
-
-
-<pb n="25"/>
+               <pb n="25"/>
 
 ἄρχειν ὑμῶν βουλομένων καὶ τὰ κοινὰ διοικεῖν ἐνίους
 
@@ -1028,9 +980,9 @@ om libri Mor Re 13 τὴν Ma τοῖς Β 16 ἐξελαύνειν Ma</note>
 
 τέρων ἢ παρέχοντες αὑτοὺς εἰς τὴν χρείαν ἐπιτηδείους
 
-συμφέρωσιν ὑμῖν ἄρχοντες.</p> <lb n="10"/>
-
-<p>21. Καὶ διὰ τοὺς τοιούτους, ὦ Ἀθηναῖοι, λόγους
+συμφέρωσιν ὑμῖν ἄρχοντες.</p>
+            <lb n="10"/>
+            <p>21. Καὶ διὰ τοὺς τοιούτους, ὦ Ἀθηναῖοι, λόγους
 
 Σωκράτης μὲν πολλοῖς ἀπήχθετο, τὰ δὲ ὑμέτερα, ἐὰν
 
@@ -1043,8 +995,7 @@ om libri Mor Re 13 τὴν Ma τοῖς Β 16 ἐξελαύνειν Ma</note>
 ἐσπουδάκασι, τῶν δὲ ψυχῶν ὅπως ἄρισται γενήσονται
 
 <note type="footnote">11 sq. Plat. apol. p. 23 A</note>
-
-<note type="footnote">2 ἐπιμελήσωνται MaAth 3 ὅπως auctore Cobeto Mnem.
+               <note type="footnote">2 ἐπιμελήσωνται MaAth 3 ὅπως auctore Cobeto Mnem.
 
 ΙΙΙ 143 Rog 4 ὅπως reposui e libris anctoribus lacobsio
 
@@ -1081,10 +1032,7 @@ Re I ἡμῖν Ma 12 ἀπήχθετο reposui e MaAthUVa cum Rog
 τούτου VaB 16 ὅπως ὡς ἄρισται auctore Cobeto Mnem. III
 
 143 Rog Ι γενήσωνται Ma γένωνται reliqui libri corr Mor</note>
-
-
-
-<pb n="26"/>
+               <pb n="26"/>
 
 καὶ αὐτῶν καὶ παίδων, οὐδὲ εἶς λόγος. ὧν καθ’ ἑκάστην
 
@@ -1094,9 +1042,10 @@ Re I ἡμῖν Ma 12 ἀπήχθετο reposui e MaAthUVa cum Rog
 
 κακῶς διακειμένους οὐδὲν ὄνασθαι, τοὺς δὲ εἰδότας
 
-<lb n="5"/> ἐρυθριᾶν καὶ πεισθῆναι καὶ γενέσθαι βελτίους.</p></div>
-
-<div type="textpart" subtype="chapter" n="22"><p>καὶ
+<lb n="5"/> ἐρυθριᾶν καὶ πεισθῆναι καὶ γενέσθαι βελτίους.</p>
+         </div>
+         <div n="22" type="chapter">
+            <p>καὶ
 
 μὴν ἐν οἷς τοῖς ἅπαντας γοητεύουσιν ἐντυγχάνων
 
@@ -1135,8 +1084,7 @@ Crat. p. 384 B 7 cf. p. 114, 15 sq. 8 Plat. apol. p. 20 A
 9 Plat. Phaedr. p. 230 D. Aen. Gaz. Theophr. p. 72, 16 ed. Boiss.
 
 15 Thuc. V 16, 3</note>
-
-<note type="footnote">1 καὶ (2) om AthVaB 2 παιδείας scripsi auctore Gasda
+               <note type="footnote">1 καὶ (2) om AthVaB 2 παιδείας scripsi auctore Gasda
 
 cum Rog πολιτείας libri Mor Re Ι „malin Σωκράτει“ Re
 
@@ -1149,22 +1097,18 @@ Rog om reliqui libri Mor Re qui ἀνιάτως inserendum coni
 9 θρέμματα reposui e libris cum Rog πρόβατα Mor Re 11 ὡσει-
 
 πεῖν Β ὧς om Ath 14 συνηθείας Ma sed υνη in ras m 2</note>
-
-<note type="footnote">17 ἀργύριον ante λαβεῖν inser auctore Nabero Rog delevi</note>
-
-<note type="footnote">18 νοῦ δὲ reposui e MaUVaB auctore Re cum Rog οὐδέ
+               <note type="footnote">17 ἀργύριον ante λαβεῖν inser auctore Nabero Rog delevi</note>
+               <note type="footnote">18 νοῦ δὲ reposui e MaUVaB auctore Re cum Rog οὐδέ
 
 Ath νοῦν δὲ Mor Re 20 τελέσοντας MaAthUVa</note>
-
-
-
-<pb n="27"/>
+               <pb n="27"/>
 
 ἐπὶ τῷ μαθεῖν ἢ λαμβάνοντας ὥς τι τῶν δεόντων
 
-δυναμένους διδάσκειν.</p></div>
-
-<div type="textpart" subtype="chapter" n="23"><p>διὰ ταῦτα πάντα αὐτοί τε
+δυναμένους διδάσκειν.</p>
+         </div>
+         <div n="23" type="chapter">
+            <p>διὰ ταῦτα πάντα αὐτοί τε
 
 συνθέοντες περιειστήκειτε τὸν Σωκράτην, ὁπότε τῶν
 
@@ -1183,8 +1127,7 @@ Ath νοῦν δὲ Mor Re 20 τελέσοντας MaAthUVa</note>
 αὐτοῖς καὶ μικρὸν τῶν ἐκείνου μετασχεῖν καλῶν ἢ τὸν <lb n="10"/>
 
 ἐπὶ γῆς ἅπαντα χρυσόν.</p>
-
-<p>24. Ὧν ἦν ποτε καὶ Ἄνυτος ὁ πικρὸς νυνὶ κατή-
+            <p>24. Ὧν ἦν ποτε καὶ Ἄνυτος ὁ πικρὸς νυνὶ κατή-
 
 γορος. καὶ γὰρ οἶ τούτου παῖδες καὶ προσῄεσαν καὶ
 
@@ -1201,10 +1144,8 @@ Ath νοῦν δὲ Mor Re 20 τελέσοντας MaAthUVa</note>
 σεως, ἐπιθυμήσαντες δὲ τῶν ἐπιτηδευμάτων Σωκράτους
 
 ἔσονται τῶν πολλῶν εὐθὺς ἀμείνους γαστριμαργίας μὲν <lb n="20"/>
-
-<note type="footnote">9 Plat. leg V p. 728 A 13 [Xen.] apol. § 30</note>
-
-<note type="footnote">2 διαταῦτα Β 3 συνθέοντες reposui e libris συνθέντες
+               <note type="footnote">9 Plat. leg V p. 728 A 13 [Xen.] apol. § 30</note>
+               <note type="footnote">2 διαταῦτα Β 3 συνθέοντες reposui e libris συνθέντες
 
 Ath) cum Rog σωθέντες Mor Re qui συνιόντες aut συσπειρα-
 
@@ -1221,16 +1162,12 @@ bus lacobsio Add 53 Lect 193 Not 9 et Cobeto Rog καίτοι
 Sintenis 11 ὑπὸ coni Naber Ι ἔχειν post χρυσὸν inserendum
 
 coni lacobs Lect 193 Not 9 12 τότε Πα 13 προσῇσαν Rog</note>
-
-<note type="footnote">14 ἔχαιρον Ma sed εχαι in ras m 2 15 οὐδ’ scripsi e
+               <note type="footnote">14 ἔχαιρον Ma sed εχαι in ras m 2 15 οὐδ’ scripsi e
 
 libris οὐδὲ edd 18 ἐγγένοιτ’ scripsi ex AthUB ἐγγένοιτο
 
 MaVa edd 20 τῶν πολλῶν] πολλῷ Naber</note>
-
-
-
-<pb n="28"/>
+               <pb n="28"/>
 
 καὶ μέθης καὶ λήμματος ἀδίκου καὶ ζεούσης ὀργῆς καὶ
 
@@ -1246,9 +1183,10 @@ MaVa edd 20 τῶν πολλῶν] πολλῷ Naber</note>
 
 μένους, ἀγαθοὺς δὲ ἐν βουλαῖς τὸ συμφέρον ἰδεῖν.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="25"><p>τί οὖν ἡμῖν τὸν χρηστὸν Ἄνυτον ἐξέμηνε; πόθεν
+</p>
+         </div>
+         <div n="25" type="chapter">
+            <p>τί οὖν ἡμῖν τὸν χρηστὸν Ἄνυτον ἐξέμηνε; πόθεν
 
 ἀποκτεῖναι βούλεται τοῦτον ᾧ πολλάκις ηὔξατο γενέ-
 
@@ -1260,9 +1198,10 @@ MaVa edd 20 τῶν πολλῶν] πολλῷ Naber</note>
 
 τες εἰώθαμεν καὶ οὐδὲ τῷ πάνυ βουλομένῳ τοῦτο
 
-φυγεῖν ἔνεστι.</p></div>
-
-<div type="textpart" subtype="chapter" n="26"><p>μεμνημένος δὴ σκυτοτόμων καὶ
+φυγεῖν ἔνεστι.</p>
+         </div>
+         <div n="26" type="chapter">
+            <p>μεμνημένος δὴ σκυτοτόμων καὶ
 
 15 βυρσοδεψῶν καὶ τῶν ἁλουργὰ ποιούντων ἔρια καὶ τῶν
 
@@ -1277,10 +1216,8 @@ MaVa edd 20 τῶν πολλῶν] πολλῷ Naber</note>
 <lb n="20"/> ᾧ τὸ μὲν ἀπὸ βυρσῶν εὐπορεῖν οὐκ ἐφαίνετο δεινόν,
 
 <note type="footnote">15 cf. [Xen.] apol. § 29. [Socr.] ep. 14</note>
-
-<note type="footnote">2 εἰκότων Ma 3 μὲν ante δὲ Mor Re delevi cum Rog</note>
-
-<note type="footnote">5 εἰδῆτε AthUVaB 8 ἡμῖν om Ma 10 τούς υἱεῖς
+               <note type="footnote">2 εἰκότων Ma 3 μὲν ante δὲ Mor Re delevi cum Rog</note>
+               <note type="footnote">5 εἰδῆτε AthUVaB 8 ἡμῖν om Ma 10 τούς υἱεῖς
 
 γενέσθαι Ma | ὦ ἄνδρες in marg Ma2ss 11 τἀληθὲς scripsi
 
@@ -1301,16 +1238,14 @@ Rog διατρίβῃ Mor Re ἂν διατρίβῃ Hirzel Mus. Rhen. XLII 24
 αὐτῷ scripsi e MaU cum Gasda et Hirzelio ἑαυτῷ AthVa
 
 Β edd</note>
-
-
-
-<pb n="29"/>
+               <pb n="29"/>
 
 τῷ δὲ λόγῳ τῆς ἐργασίας ἀγανακτεῖ, καὶ τὸ μὲν ἔργον οὐκ
 
-ἔφευγε, δυσχεραίνει δὲ τὸ ῥῆμα.</p></div>
-
-<div type="textpart" subtype="chapter" n="27"><p>ὑμῶν δὲ ἕκαστος
+ἔφευγε, δυσχεραίνει δὲ τὸ ῥῆμα.</p>
+         </div>
+         <div n="27" type="chapter">
+            <p>ὑμῶν δὲ ἕκαστος
 
 πολλάκις μέμνηται τῆς αὑτοῦ τέχνης καὶ πρός γε χάριν
 
@@ -1320,9 +1255,10 @@ Rog διατρίβῃ Mor Re ἂν διατρίβῃ Hirzel Mus. Rhen. XLII 24
 
 προσέθηκεν ἂν καὶ τὰ περὶ τοὺς λίθους καὶ τὴν τῆς
 
-μητρὸς οὐκ ἀπεκρύπτετο τέχνην.</p></div>
-
-<div type="textpart" subtype="chapter" n="28"><p>ᾧ δῆλον ὡς οὐκ
+μητρὸς οὐκ ἀπεκρύπτετο τέχνην.</p>
+         </div>
+         <div n="28" type="chapter">
+            <p>ᾧ δῆλον ὡς οὐκ
 
 ἐφ’ ὕβρει τὰς τῶν ἄλλων παρέφερεν, ἀλλ’ ὅπως οἱ
 
@@ -1337,8 +1273,7 @@ Rog διατρίβῃ Mor Re ἂν διατρίβῃ Hirzel Mus. Rhen. XLII 24
 μνησθῆναι καὶ ἃ ποιεῖν τούτῳ δέδοκται, ταῦτα οὐδενὶ
 
 συγκεχώρηται λέγειν.</p>
-
-<p>29. Ἀλλ’, ὅπερ ἔφην, μηδεὶς οἰέσθω τοῦτον ἀπὸ <lb n="15"/>
+            <p>29. Ἀλλ’, ὅπερ ἔφην, μηδεὶς οἰέσθω τοῦτον ἀπὸ <lb n="15"/>
 
 τῆς πρὸς ὑμᾶς εὐνοίας καὶ τοῦ τὴν λύμην, ἢ χείρους
 
@@ -1351,8 +1286,7 @@ Rog διατρίβῃ Mor Re ἂν διατρίβῃ Hirzel Mus. Rhen. XLII 24
 L. II 5, 18 7 Plat. Theaet. p. 149 A 10 Plat. conv. p. 173 D
 
 cf. Kirchner prosop. Att. I 102 15 cf. p. 20, 12</note>
-
-<note type="footnote">1 καὶ — 2 ῥῆμα cancellavit Rog 2 ἔφευγε scripsi auctore
+               <note type="footnote">1 καὶ — 2 ῥῆμα cancellavit Rog 2 ἔφευγε scripsi auctore
 
 Sinteni ἔφυγε libri edd Ι ὑμῶν scripsi e libris ἡμῶν edd
 
@@ -1377,10 +1311,7 @@ edd 10 διατοῦτο MaB 1 1 Ξενοκλῆς architectus (Plut. Per. 13) ?
 ^^^oratreliquilibriMorRe | δὲanteοὐδενὶΜa IBAvftrjvitfased
 
 λ in ras m’ 17 ἐξελθεῖν MaVaB 18 ἥκειν ilfa sed ’ν add m 2</note>
-
-
-
-<pb n="30"/>
+               <pb n="30"/>
 
 τἀληθὲς καὶ τοῦτον ἐσέμνυνε φάσκων ἀρχαῖον παρει-
 
@@ -1396,9 +1327,10 @@ edd 10 διατοῦτο MaB 1 1 Ξενοκλῆς architectus (Plut. Per. 13) ?
 
 ὑπέμεινε πριάμενος τὸν ἐπὶ δραχμῇ πάντα ἂν ποιήσαντα
 
-Μέλητον.</p></div>
-
-<div type="textpart" subtype="chapter" n="30"><p>μέγα δὲ ὑμῖν ἐρῶ τεκμήριον, ὡς ἑτέρωθεν
+Μέλητον.</p>
+         </div>
+         <div n="30" type="chapter">
+            <p>μέγα δὲ ὑμῖν ἐρῶ τεκμήριον, ὡς ἑτέρωθεν
 
 κινούμενος τὸ ὑμέτερον προίσταται. ἤδη γὰρ τῆς γραφῆς
 
@@ -1453,10 +1385,7 @@ Rog διαγράψασθαι MaAthUVa Mor Re 14 ἀληθινῶν Ma
 κηδόμενος vel tale quid post ἀληθῶν inserendum coni Re
 
 ἐμπνέοι UVaB Ι χρήσασθαι AthUVa</note>
-
-
-
-<pb n="31"/>
+               <pb n="31"/>
 
 κατηγορίαν, ὡς ἃ πρὸ αὐτῆς ἐνόμιζε προσήκειν λέγειν,
 
@@ -1464,9 +1393,10 @@ Rog διαγράψασθαι MaAthUVa Mor Re 14 ἀληθινῶν Ma
 
 ὑμᾶς τὸν οὐδὲν ὧν ἐνόμιζε δικαίων προδεδωκότα τῷ
 
-φόβῳ.</p></div>
-
-<div type="textpart" subtype="chapter" n="31"><p>ὥστε καὶ τοῦ νυνὶ κρίνεσθαι Σωκράτην,
+φόβῳ.</p>
+         </div>
+         <div n="31" type="chapter">
+            <p>ὥστε καὶ τοῦ νυνὶ κρίνεσθαι Σωκράτην,
 
 εἰ δεῖ καὶ τοῦτ’ εἰπεῖν, οὐκ Ἄνυτος οὐδὲ Μέλητος <lb n="5"/>
 
@@ -1478,9 +1408,10 @@ Rog διαγράψασθαι MaAthUVa Mor Re 14 ἀληθινῶν Ma
 
 ἀπὸ τῶν οὐ προσηκόντων, νῦν ἂν ἦν ἐν Λυκείῳ λέγων
 
-ἅπερ εἰώθει.</p></div>
-
-<div type="textpart" subtype="chapter" n="32"><p>ἀλλ’ οὐκ ἦν ἔμφυτον τῷ γενναίῳ <lb n="10"/>
+ἅπερ εἰώθει.</p>
+         </div>
+         <div n="32" type="chapter">
+            <p>ἀλλ’ οὐκ ἦν ἔμφυτον τῷ γενναίῳ <lb n="10"/>
 
 τούτῳ πτῆξαι καὶ ταπεινωθῆναι τῇ γραφῇ καὶ μισθὸν
 
@@ -1496,13 +1427,12 @@ Rog διαγράψασθαι MaAthUVa Mor Re 14 ἀληθινῶν Ma
 
 ἀπελθεῖν&gt; ἀθῷος, ἀλλ’ οὐ ταῖς παρὰ τῶν κατη- <lb n="15"/>
 
-γόρων ἐπονειδίστοις | διαλλαγαῖς.</p> <note type="marginal">R III 12</note>
-
-<p>33. Ὡς μὲν οὖν οὔτ’ Ἄνυτος διαφθορᾶς τὴν
+γόρων ἐπονειδίστοις | διαλλαγαῖς.</p>
+            <note type="marginal">R III 12</note>
+            <p>33. Ὡς μὲν οὖν οὔτ’ Ἄνυτος διαφθορᾶς τὴν
 
 <note type="footnote">6 Dem. p. 61, 23</note>
-
-<note type="footnote">2 ταῦτ’ Rog | ἐκείνη scripsi auctore Re „aut ἀπ’ ἐκείνης
+               <note type="footnote">2 ταῦτ’ Rog | ἐκείνη scripsi auctore Re „aut ἀπ’ ἐκείνης
 
 leg. aut ἐπ’ ἐκείνη̣“) cum Rog ἐκείνης libri Mor Re 5 Μέ-
 
@@ -1517,8 +1447,7 @@ Ath 12 αὐτοῦ scripsi cum Rog αὐτοῦ U αὐτοῦ reliqui
 libri Mor Re Ι τούτῳ reposui e libris auctore Re cum Rog
 
 τούτου Mor Re τοῦτον, τὴν περὶ Ἀνύτου σιωπήν lacobs Not 9</note>
-
-<note type="footnote">13 βεβαιουμένοις Ma et Par. 3017 (Bast comm. pal. p. 752
+               <note type="footnote">13 βεβαιουμένοις Ma et Par. 3017 (Bast comm. pal. p. 752
 
 ed. Schaefer) 15 ἀπελθεῖν inserui coll 1. 1 138, 13; 11 171, 20;
 
@@ -1533,10 +1462,7 @@ lacobs Not 9 Ι ἀθῷος MaVaB | „mallem καὶ τὰς — ἐπο-
 οἱ in ras m 2 ἐπονείδιστος U ἐπονειδιστὰς Va 17 οὔτ’]
 
 ὄντα Ma</note>
-
-
-
-<pb n="32"/>
+               <pb n="32"/>
 
 νεότητα ῥυόμενος καὶ ζημίαν αὑτοῦ νομίζων εἶναι, εἴ
 
@@ -1561,8 +1487,7 @@ lacobs Not 9 Ι ἀθῷος MaVaB | „mallem καὶ τὰς — ἐπο-
 ταῦτα ἀγανακτῶν ὤφθη καὶ τὸ τοῦ πράγματος αἴτιον
 
 ἐζήτει παρ’ ἄλλοις.</p>
-
-<p>34. Ἐντεῦθεν δὴ καὶ αὐτὸς ποιήσομαι τὴν τῶν
+            <p>34. Ἐντεῦθεν δὴ καὶ αὐτὸς ποιήσομαι τὴν τῶν
 
 ἐλέγχων ἀρχήν. ἐξ ὧν καὶ διότι κατήγορος ὀψέ ποτε
 
@@ -1571,8 +1496,7 @@ lacobs Not 9 Ι ἀθῷος MaVaB | „mallem καὶ τὰς — ἐπο-
 <note type="footnote">8 cf. Mus. Rhen. XXX 284 sq. 12 cf. p. 39, 15 15 Plat.
 
 apol. p. 24 B</note>
-
-<note type="footnote">1 αὐτοῦ scripsi cum Rog αὐτοῦ libri Mor Re 2 κακῶς
+               <note type="footnote">1 αὐτοῦ scripsi cum Rog αὐτοῦ libri Mor Re 2 κακῶς
 
 Ma Rog | Μέλητον reposui e MaUVaB cum Rog μέλισον
 
@@ -1607,10 +1531,7 @@ edd ἐζητεῖτο Sintenis τούτου πράγματος αἴτιον 
 ἄλλοις, ἐντεῦθεν δ’ ᾖ καὶ αὐτὸς lacobs Not 12 Ι ἀλλήλων coni
 
 Cobet Mnem. III 144</note>
-
-
-
-<pb n="33"/>
+               <pb n="33"/>
 
 φιλόπολιν Ἄνυτον· εἰπέ μοι, πρὸς θεῶν, ὁ γέρων οὗτος
 
@@ -1624,9 +1545,10 @@ Cobet Mnem. III 144</note>
 
 ᾧ βέλτιστος ἦν ἐπαινεῖσθαι, διὰ δ’ αὖ τὴν συμβᾶσαν
 
-μεταβολὴν μισεῖσθαι;</p></div>
-
-<div type="textpart" subtype="chapter" n="35"><p>τί φῄς, Ἄνυτε; τί σιγᾷς;
+μεταβολὴν μισεῖσθαι;</p>
+         </div>
+         <div n="35" type="chapter">
+            <p>τί φῄς, Ἄνυτε; τί σιγᾷς;
 
 ἄνωθεν ἦν μιαρὸς ἄνθρωπος ἢ πρὸς γῆρας ἥκων ἐπῄ-
 
@@ -1640,9 +1562,10 @@ Cobet Mnem. III 144</note>
 
 τῆς διαφθορᾶς τὸν Σωκράτην, ἀλλ’ ἐξ οὗπερ εἰς | <note type="marginal">R III 13</note>
 
-τὸ φιλοσοφεῖν κατέστη.</p></div>
-
-<div type="textpart" subtype="chapter" n="36"><p>διὰ τί οὖν, ὦ κηδεμὼν
+τὸ φιλοσοφεῖν κατέστη.</p>
+         </div>
+         <div n="36" type="chapter">
+            <p>διὰ τί οὖν, ὦ κηδεμὼν
 
 τῶν νέων, ἀρχαία μὲν ἡ πονηρία, βραδεῖα δὲ ἡ γραφή, <lb n="15"/>
 
@@ -1661,8 +1584,7 @@ Cobet Mnem. III 144</note>
 <note type="footnote">1 Plat. apol. p. 17 D 2 cf. t. IV 250, 15 3 cf. t. IV
 
 361, 5 10 cf. p. 90, 15 20 cf. p. 78, 1. Plat. Gorg. p. 485 D</note>
-
-<note type="footnote">2 πρώην Ma 3 πονηρῶν scripsi auctoribus Re et Gasda
+               <note type="footnote">2 πρώην Ma 3 πονηρῶν scripsi auctoribus Re et Gasda
 
 coll p. 42, 16 et 90, 15 πονηρὸς libri edd 7; scripsi Β .re-
 
@@ -1685,10 +1607,7 @@ auctore Re cum Rog ἀγωνίαν Mor Re 21 μὴν reposui e
 MaAthUVa auctore Re cum Rog μὴ Β Mor Re
 
 LIBANIUS ed. Foerster. V ed. Foerater. V. 3</note>
-
-
-
-<pb n="34"/>
+               <pb n="34"/>
 
 ψειν τὴν ἀκρόασιν καὶ θῦμα θυσάμενος δι’ ἀπορρή-
 
@@ -1698,9 +1617,10 @@ LIBANIUS ed. Foerster. V ed. Foerater. V. 3</note>
 
 ἐλθεῖν συνέβη τῶν τὴν γλῶτταν ἀκολάστων τινὸς ἐκ-
 
-<lb n="5"/> λελαληκότος.</p></div>
-
-<div type="textpart" subtype="chapter" n="37"><p>ἀλλ’ ἴστε ὅτι τῶν τόπων τοὺς ὅτι
+<lb n="5"/> λελαληκότος.</p>
+         </div>
+         <div n="37" type="chapter">
+            <p>ἀλλ’ ἴστε ὅτι τῶν τόπων τοὺς ὅτι
 
 πλείστους συνάγοντας ἀνθρώπους ἀνὴρ ἠγάπα καὶ
 
@@ -1712,9 +1632,10 @@ LIBANIUS ed. Foerster. V ed. Foerater. V. 3</note>
 
 <lb n="10"/> ἦσθα τῶν ἀκουόντων καὶ τὴν ζημίαν οὐκ ἀγνοούντων
 
-καὶ φανερῶς ἐφ’ ὅ χωρεῖ τὸ πρᾶγμα συνιέντων.</p></div>
-
-<div type="textpart" subtype="chapter" n="38"><p>τί
+καὶ φανερῶς ἐφ’ ὅ χωρεῖ τὸ πρᾶγμα συνιέντων.</p>
+         </div>
+         <div n="38" type="chapter">
+            <p>τί
 
 οὖν ἔδει τὸν εὔνουν ποιεῖν; ἀγανακτεῖν, βοᾶν, μὴ δι-
 
@@ -1751,8 +1672,7 @@ Mor Re οὖτάς τι Ath 6 συναγαγόντας libri Rog corr Mor
 455, 10; III 371, 23; I 184, 18 8 αὐτῷ scripsi αὐτοῦ libri edd
 
 1 νῦν ante ἐπ’ inseruit Rog delevi Ι ὐπ’ Ma fortasse recte</note>
-
-<note type="footnote">11 ὃ scripsi cum Rog ἃ AthU sed in hoc in ὃ corr, Va
+               <note type="footnote">11 ὃ scripsi cum Rog ἃ AthU sed in hoc in ὃ corr, Va
 
 Mor Re ἡ Ma ὣ Β | συνιέντων reposui ex UVaB auctore Re
 
@@ -1765,18 +1685,16 @@ Re 14 σωκράτους Va 15 ὑμῖν UVaB Rog at cf. l. 18
 κωλύσομεν κτλ. 16 ἶσον MaB 19 ἂν inserui secundum
 
 usum Libanii om libri edd</note>
-
-
-
-<pb n="35"/>
+               <pb n="35"/>
 
 ἐκβάλωσιν οἱ παρὰ τούτῳ τρεφόμενοι; ταῦτ’ ἔδει
 
 λέγειν καὶ πρὸς τούτῳ τί ποιεῖν Ἄνυτον; τὸν γραψό-
 
-μενον κινεῖν, εἰ μὴ αὐτός γε ἐβούλετο.</p></div>
-
-<div type="textpart" subtype="chapter" n="39"><p>ἦν βασι-
+μενον κινεῖν, εἰ μὴ αὐτός γε ἐβούλετο.</p>
+         </div>
+         <div n="39" type="chapter">
+            <p>ἦν βασι-
 
 λεὺς ἡμῖν ἀρχὴ καὶ τὸν ἄλλον ἅπαντα χρόνον, Ἄνυτε,
 
@@ -1794,9 +1712,10 @@ usum Libanii om libri edd</note>
 
 εἴ τινες εἰς ἄνδρας ἐλθόντες ἐκ πονηρῶν ἀκουσμάτων
 
-καταλύσουσιν αὐτόν.</p></div>
-
-<div type="textpart" subtype="chapter" n="40"><p>πότερον &lt;οὖν&gt; σὲ μὲν δεῖ
+καταλύσουσιν αὐτόν.</p>
+         </div>
+         <div n="40" type="chapter">
+            <p>πότερον &lt;οὖν&gt; σὲ μὲν δεῖ
 
 κατηγορεῖν, τοῦτον δὲ ἀποθνήσκειν, ἢ τὸν μὲν ὧν
 
@@ -1849,14 +1768,12 @@ duabas litteris deletis U 18 ἐπεξέρχει Rog
 3*
 
 </note>
-
-<pb n="36"/>
+               <pb n="36"/>
 
 τὴν πόλιν συνηδίκεις ἐν τῷ περιορᾶν ἃ παῦσαι πρό-
 
 χειρον ἢν.</p>
-
-<p>41. Ἀλλ’ οὐχ ἡμάρτανεν, ὦ Ἀθηναῖοι, Σωκράτης,
+            <p>41. Ἀλλ’ οὐχ ἡμάρτανεν, ὦ Ἀθηναῖοι, Σωκράτης,
 
 οὐδ’ ὀφείλει δίκην Ἄνυτος ὑμῖν τῷ συγκεχωρηκέναι
 
@@ -1881,12 +1798,9 @@ R III 15 καὶ περὶ τὰ σκεύη κακούργους, ἐφέντ
 σθαι τοσοῦτον χρόνον Ἄνυτος διορύττοντος τὴν δημο-
 
 <lb n="15"/> κρατίαν καὶ παρασκευάζοντος ὑμῖν ὀλέθρους πολίτας;</p>
-
-<note type="footnote">12 cf. p. 98, 22</note>
-
-<note type="footnote">4 ὑμῖν scripsi ex UVaB cum Rog ἡμῖν MaAth Mor Re</note>
-
-<note type="footnote">5 οὐδὲν reposui e libris cum Rog μηδὲν Mor Re 6 συ-
+            <note type="footnote">12 cf. p. 98, 22</note>
+            <note type="footnote">4 ὑμῖν scripsi ex UVaB cum Rog ἡμῖν MaAth Mor Re</note>
+            <note type="footnote">5 οὐδὲν reposui e libris cum Rog μηδὲν Mor Re 6 συ-
 
 κοφαντεῖ — 7 ἀδικοῦντα inserui e libris om edd | οὐ γὰρ — 7
 
@@ -1921,12 +1835,8 @@ cf. Plat. leg. XII p. 959 A; apol. p. 32 E 14 τοῦτον Ma
 15 ὀλέθρους scripsi e MaUVaB coll. t. I 183,10 ὀλεθρίους
 
 Ath edd</note>
-
-
-
-<pb n="37"/>
-
-<p>42. Ἀλλ’ ἐῶ τουτὶ καὶ θῶμεν Ἄνυτον ὑπὸ τοῦ
+            <pb n="37"/>
+            <p>42. Ἀλλ’ ἐῶ τουτὶ καὶ θῶμεν Ἄνυτον ὑπὸ τοῦ
 
 μᾶλλον ἑτέροις πράγμασι προσέχειν τὸν νοῦν κεκωλύ-
 
@@ -1941,8 +1851,7 @@ Ath edd</note>
 ὅμως δ’ οὖν ἀφείσθω τῆς μέμψεως, εἰ τῶν κοινῶν ὑπ’
 
 ἀσχολίας τῆς ἀπὸ τῶν ἰδίων ἠμέλησεν.</p>
-
-<p>43. Ἀλλὰ καὶ τούτου σιγῶντος πῶς οὐχ ἧκεν
+            <p>43. Ἀλλὰ καὶ τούτου σιγῶντος πῶς οὐχ ἧκεν
 
 ἄλλοθεν κατηγορία καὶ κρίσις; οὐ μεστὸν μὲν τὸ βῆμα <lb n="10"/>
 
@@ -1955,10 +1864,8 @@ Ath edd</note>
 ὧν ἐπὶ τῷ ταράξαι καὶ λαβεῖν ἀργύριον; οὐ μεστοὶ
 
 γεγόναμεν τῶν πρὸ τῶν Ἐπωνύμων ἐκκειμένων ὁ <lb n="15"/>
-
-<note type="footnote">11 Thuc. VIII 81 15 Dem. p. 705,19; 707,13</note>
-
-<note type="footnote">1 τουτὶ scripsi cum Gasda τουτοὶ MaUVaB τουτονὶ
+               <note type="footnote">11 Thuc. VIII 81 15 Dem. p. 705,19; 707,13</note>
+               <note type="footnote">1 τουτὶ scripsi cum Gasda τουτοὶ MaUVaB τουτονὶ
 
 Ath Mor Re „τοῦτο νῦν vel τουτὶ“ Sintenis τοῦτο νῦν auc-
 
@@ -1993,20 +1900,17 @@ in ras Ma 2 15 πρὸ τῶν Ἐπωνύμων scripsi auctore Re
 cum Rog πρώτων ἐπωνυμιῶν libri Mor Re | κειμένω U
 
 VaB</note>
-
-
-
-<pb n="38"/>
-
-<note type="marginal">R III 16</note> δεῖνα τοῦ δεῖνος τὸν δεῖνα | ἐγράψατο; ἀλλ’
+               <pb n="38"/>
+               <note type="marginal">R III 16</note> δεῖνα τοῦ δεῖνος τὸν δεῖνα | ἐγράψατο; ἀλλ’
 
 οὐχ ὁ δεῖνα τοῦ δεῖνος Σωκράτην Ἀλωπεκῆθεν οὔτε
 
 ἀσεβείας οὔτε λύμης τῶν νέων, οὐχ ὕβρεως, οὐκ
 
-ἄλλου τινός.</p></div>
-
-<div type="textpart" subtype="chapter" n="44"><p>ἀλλ’ οἱ φιλοτιμούμενοι καὶ τὰ
+ἄλλου τινός.</p>
+         </div>
+         <div n="44" type="chapter">
+            <p>ἀλλ’ οἱ φιλοτιμούμενοι καὶ τὰ
 
 <lb n="5"/> αὑτῶν εἰς ὑμᾶς ἀναλίσκοντες καὶ προστάται τῆς
 
@@ -2030,9 +1934,10 @@ VaB</note>
 
 <lb n="15"/> πον, συνεχώρουν, μόνον οὐ δωρεῶν ἠξίουν; καὶ τίς ἂν
 
-πιστεύσειε;</p></div>
-
-<div type="textpart" subtype="chapter" n="45"><p>καίτοι τίς ὑμῶν οὐκ οἶδε, πηλίκον
+πιστεύσειε;</p>
+         </div>
+         <div n="45" type="chapter">
+            <p>καίτοι τίς ὑμῶν οὐκ οἶδε, πηλίκον
 
 τινὲς ὑμῶν παρ’ ὑμῖν δυνηθέντες ἐν εὐδαιμονούσῃ
 
@@ -2041,8 +1946,7 @@ VaB</note>
 t. Ι 131, 7 | cf. t. II 166, 16 16 Plat. apol. p. 32 B sq.; Axioch.
 
 p. 368 D sq.</note>
-
-<note type="footnote">1 ἀλλ’ Ma sed λλ’ in ras m2 3 οὐχ ὕβρεως Ma sed οὐχ
+               <note type="footnote">1 ἀλλ’ Ma sed λλ’ in ras m2 3 οὐχ ὕβρεως Ma sed οὐχ
 
 ὕβρε in ras m2 5 αὑτῶν scripsi cum Rog ἀυτῶν ἁ αὐτῶν
 
@@ -2069,10 +1973,7 @@ III 152, 18 μονονοὺ UVa edd | signum interrogationis posui,
 punctum libri edd 16 οἶδεν πηλίκα Ma 17 ὑμῶν om
 
 VaB</note>
-
-
-
-<pb n="39"/>
+               <pb n="39"/>
 
 καὶ μέγιστον ἰσχυούσῃ τῇ πόλει στρατηγοῦντες καὶ
 
@@ -2092,9 +1993,10 @@ VaB</note>
 
 τῆς γραφῆς τὸ τῶν κριθησομένων ἀξίωμα, ἀλλ’ ἔφευ-
 
-γον, ἠγωνίζοντο, ἀπελογοῦντο.</p></div>
-
-<div type="textpart" subtype="chapter" n="46"><p>ταχύ γ’ ἂν οὖν ἔδεισαν <lb n="10"/>
+γον, ἠγωνίζοντο, ἀπελογοῦντο.</p>
+         </div>
+         <div n="46" type="chapter">
+            <p>ταχύ γ’ ἂν οὖν ἔδεισαν <lb n="10"/>
 
 τὴν πενίαν Σωκράτους καὶ τὴν τῶν δικανικῶν ἀγώνων
 
@@ -2109,8 +2011,7 @@ VaB</note>
 του πρᾶγμα ποιεῖν. καὶ μὴν εἰ τὸ πολλάκις κεκρί-
 
 <note type="footnote">12 Periclem. cf. Thuc. II 65. Dem. p. 802, 18. Plut. Per. 35</note>
-
-<note type="footnote">1 μέγιστον Πα sed μέγιστ’ in ras m2 | καὶ — 3 τηρήσαν-
+               <note type="footnote">1 μέγιστον Πα sed μέγιστ’ in ras m2 | καὶ — 3 τηρήσαν-
 
 τες inserui ex AthUVaB cum Rog om Ma Mor Re 2 τῆς
 
@@ -2131,8 +2032,7 @@ cum Rog Λακεδαιμόνων VaB Mor Re 5 αὑτῶν scripsi cum Rog
 αὐτῶν MaAth et ex αὑτὸν corr Β, Mor Re αὐτὸν UVa | ναυ-
 
 μαχίας scripsi ex UVaB cum Rog ναυμαχίαν MaAth Mor Re</note>
-
-<note type="footnote">10 ταχύ γ’ ἂν οὖν scripsi ταχὺ γοῦν libri Mor Re ταχύ γ’
+               <note type="footnote">10 ταχύ γ’ ἂν οὖν scripsi ταχὺ γοῦν libri Mor Re ταχύ γ’
 
 ἂν auctoribus Gasda et Cobeto Rog | δεισαν cum ras 1 litt U
 
@@ -2149,10 +2049,7 @@ ras 2 litt m2, UVaB om Ath edd 16 πρᾶγμα scripsi ex Ath
 auctore Cobeto cum Rog πράγματα reliqui libri Mor Re | κεκρί-
 
 σθαι reposui e libris cum Rog κεκρίσθαι Mor Re</note>
-
-
-
-<pb n="40"/>
+               <pb n="40"/>
 
 σθαι τὸν φεύγοντα πρὸς τῶν κατηγόρων ἐστίν, ᾧ γε
 
@@ -2160,9 +2057,11 @@ auctore Cobeto cum Rog πράγματα reliqui libri Mor Re | κεκρί-
 
 πῶς οὐκ ἂν οὗτος τούτῳ πρὸ τῶν ἄλλων ἀποφεύγοι;
 
-<note type="marginal">R III 17</note></p></div>
-
-<div type="textpart" subtype="chapter" n="47"><p>| Πολλῶν δὲ ἐνόντων εἰπεῖν τὸ μὲν ἀπάν-
+<note type="marginal">R III 17</note>
+            </p>
+         </div>
+         <div n="47" type="chapter">
+            <p>| Πολλῶν δὲ ἐνόντων εἰπεῖν τὸ μὲν ἀπάν-
 
 <lb n="5"/> τῶν ἀτοπώτατόν ἐστι τὸν ἐν Λυκείῳ διατρίβοντα καὶ
 
@@ -2187,10 +2086,8 @@ auctore Cobeto cum Rog πράγματα reliqui libri Mor Re | κεκρί-
 <lb n="1"/>5 φιλοσοφεῖ, πῶς ἂν οὗτος οἷός τε εἴη τὴν πολιτείαν
 
 μετακινεῖν;</p>
-
-<note type="footnote">7 Dem. p. 1137, 6</note>
-
-<note type="footnote">1 ᾦ γε reposui e MaAthUVa auctore Re cum Rog ὥς γε
+            <note type="footnote">7 Dem. p. 1137, 6</note>
+            <note type="footnote">1 ᾦ γε reposui e MaAthUVa auctore Re cum Rog ὥς γε
 
 Β Mor Re 2 μήτε Ma | μηδὲ εἰς om Ma μὴ δὲ Β 3 ἀπο-
 
@@ -2227,12 +2124,8 @@ libri πιπτόντων Mor Re qui συμπιπτόντων coni προσπι
 auctore Cobeto Mnem. III 146 et Misc. 158 Rog ἐμπιπτόντων
 
 Sintenis 15 τ’ Rog | εἴη reposui e libris cum Rog ᾖ Mor Re</note>
-
-
-
-<pb n="41"/>
-
-<p>48. Τουτὶ μὲν οὖν, ὦ ἄνδρες, τοσοῦτον ὂν ἐῶ,
+            <pb n="41"/>
+            <p>48. Τουτὶ μὲν οὖν, ὦ ἄνδρες, τοσοῦτον ὂν ἐῶ,
 
 ἐκεῖνο δ᾿ αὐτὸν ἐρήσομαι· Σωκράτης ἐμίσει τὴν δημοκρατίαν,
 
@@ -2243,8 +2136,7 @@ Sintenis 15 τ’ Rog | εἴη reposui e libris cum Rog ᾖ Mor Re</note>
 γ᾿ ἂν ὁ ἄνθρωπος ἐμισθοδότησε δορυφόρους καὶ ξενικὸν <lb n="5"/>
 
 κὸν συνεστήσατο καὶ πολλοὺς οἰκέτας ὥπλισεν.</p>
-
-<p>49. Ἀλλ᾿ αὐτὸς μὲν οὐκ ἐδεῖτο τοῦ σχήματος,
+            <p>49. Ἀλλ᾿ αὐτὸς μὲν οὐκ ἐδεῖτο τοῦ σχήματος,
 
 ἑτέρους δ᾿ ἐνῆκε. πάλιν τοίνυν ὥσπερ ἠδίκει μὴ πάλαι
 
@@ -2261,10 +2153,8 @@ Sintenis 15 τ’ Rog | εἴη reposui e libris cum Rog ᾖ Mor Re</note>
 πονηρὰ δίκης ἄξιον νομιστέον, δι᾿ ὧν δὲ τὰ ἔργα
 
 ἐπράχθη, τούτοις δὴ δεῖ πρᾴως ἔχειν. οὐδὲ γὰρ ἐν <lb n="15"/>
-
-<note type="footnote">5. Dem. p 265, 13  8 Thuc. VI 29, 3 8 cf. p. 35, 12 sq.</note>
-
-<note type="footnote">1. οὖν inserui ex Ath UVaB cum Rog om Ma Mor Re
+               <note type="footnote">5. Dem. p 265, 13  8 Thuc. VI 29, 3 8 cf. p. 35, 12 sq.</note>
+               <note type="footnote">1. οὖν inserui ex Ath UVaB cum Rog om Ma Mor Re
 
 5 γὰρ ἂν Iacobs Lect 195 | ὁ ἄνθρωπος scripsi ex Ath ἀνθρώπους
 
@@ -2299,10 +2189,7 @@ reposui e libris sed evanuit in Ma ἐπενήνοχε edd
 edd delevi auctore Gasda | δὴ inserui e libris om edd | 
 
 πράως UB</note>
-
-
-
-<pb n="42"/>
+               <pb n="42"/>
 
 τοῖς φονικοῖς νόμοις οὕτως ὁρῶμεν διῃρημένον, ἀφεἴ-
 
@@ -2312,9 +2199,10 @@ edd delevi auctore Gasda | δὴ inserui e libris om edd |
 
 αἴτιον τοῦ φόνου προσέθηκε μιαρώτερον ἡγούμενος
 
-<lb n="5"/> τὸν πράξαντα τοῦ πεπεικότος.</p></div>
-
-<div type="textpart" subtype="chapter" n="50"><p>ἀλλὰ νῦν ὁ μὲν
+<lb n="5"/> τὸν πράξαντα τοῦ πεπεικότος.</p>
+         </div>
+         <div n="50" type="chapter">
+            <p>ἀλλὰ νῦν ὁ μὲν
 
 πείθων ἀνελεῖν τοὺς νόμους Σωκράτης κρίνεται, τῶν
 
@@ -2334,19 +2222,18 @@ edd delevi auctore Gasda | δὴ inserui e libris om edd |
 
 ὀφείλοντα βοηθῆσαι τῷ σώματι, τηροῦντα δὲ ἐν τῷ
 
-<lb n="15"/> πλείονι τὸ νόσημα;</p></div>
-
-<div type="textpart" subtype="chapter" n="51"><p>εἰ μὲν οὖν Σωκράτην ᾔδει
+<lb n="15"/> πλείονι τὸ νόσημα;</p>
+         </div>
+         <div n="51" type="chapter">
+            <p>εἰ μὲν οὖν Σωκράτην ᾔδει
 
 μὲν πονηρὸν Ἄνυτος οὑτοσί, πονηρῶν δὲ αὖ οὐκ ἠπί-
 
 στατο διδάσκαλον, καλῶς ἂν ἐπὶ μόνον ᾔει· νῦν δὲ
 
 <note type="footnote">3 Dem. Aristocr. p. 631, 28; 632, 6; 630, 5; 232, 30</note>
-
-<note type="footnote">6 Aeschin. p. 87, 25 11 cf. p. 115, 9 sq. Plat. apol. p. 39 C sq</note>
-
-<note type="footnote">1 φο νικοῖς cum ras 1 litt post ο Va | διειρημένον auctore
+               <note type="footnote">6 Aeschin. p. 87, 25 11 cf. p. 115, 9 sq. Plat. apol. p. 39 C sq</note>
+               <note type="footnote">1 φο νικοῖς cum ras 1 litt post ο Va | διειρημένον auctore
 
 Cobeto Rog 3 ἀλλὰ — 4 αἴτιον om Ma | ἀλλ’ ὁ τῷ ἀνδροφόνῳ
 
@@ -2377,10 +2264,7 @@ lendum censuit aeque atque lacobsius Add 267 et Sintenis
 ᾔδει coni Re 11 δ’ ἂν lacobs Add 267 Not 19 | ἐπίμονον Ath
 
 ᾔει reposui e MaUVaB auctore lacobsio cum Rog εἴη Ath Mor Re</note>
-
-
-
-<pb n="43"/>
+               <pb n="43"/>
 
 τῆς νεότητος ὑμῖν, ὡς ὅδ’ ἑ φησί, διεφθαρμένης καὶ
 
@@ -2393,8 +2277,7 @@ lendum censuit aeque atque lacobsius Add 267 et Sintenis
 ποιοῦντος τοὺς μαθητὰς χαλεπωτέρους τῷ τοῦ διδασκά- <lb n="5"/>
 
 λοῦ θανάτω.</p>
-
-<p>52. Πόθεν οὖν Σωκράτης κρίνεται μόνος; ἐνεθυ-
+            <p>52. Πόθεν οὖν Σωκράτης κρίνεται μόνος; ἐνεθυ-
 
 μήθη πρὸς αὑτὸν ὁ κατήγορος, ὅτι τοῖς μὲν πράγμασι
 
@@ -2415,16 +2298,14 @@ lendum censuit aeque atque lacobsius Add 267 et Sintenis
 αἰτιάσασθαι, ἐπεὶ καὶ κατὰ τούτου ψευδέσι διαβολαῖς,
 
 οὐκ ἐλέγχοις πιστεύων διώκει.</p>
-
-<p>53. | Σκέψασθε δέ. μισόδημος, φησίν, ἐστὶ <note type="marginal">R III 19</note>
+            <p>53. | Σκέψασθε δέ. μισόδημος, φησίν, ἐστὶ <note type="marginal">R III 19</note>
 
 καὶ τοὺς συνόντας πείθει τῆς δημοκρατίας κατα-
 
 γελᾶν. τέ ποιῶν, Ἄνυτε, πρὸς θεῶν; λόγους συνθεὶς 20
 
 <note type="footnote">9 Dem. p. 875, 7; 1041,9; 1081,13</note>
-
-<note type="footnote">1 ὑμῖν scripsi ex AthUVaB cum Rog ἡμῖν Ma ἡμῶν
+               <note type="footnote">1 ὑμῖν scripsi ex AthUVaB cum Rog ἡμῖν Ma ἡμῶν
 
 Mor Re | ὅδε inserui e libris cum Rog om Mor Re 3 ἔδει
 
@@ -2451,10 +2332,7 @@ Mor Re | δ’ ἂν Ma 15 δ’ ante οὐκ inser Rog delevi | τού-
 τους reposui e libris cum Rog τοῦτ’ Mor Re 20 λόγους
 
 scripsi ex AthUVaB λόγον Ma edd</note>
-
-
-
-<pb n="44"/>
+               <pb n="44"/>
 
 ἀνέγνω τοῖς ἑταίροις κατὰ τῆς δημοκρατίας; ἀλλ’ οὐκ
 
@@ -2468,9 +2346,10 @@ scripsi ex AthUVaB λόγον Ma edd</note>
 
 ἤγετο; ποῖον Λύκειον τοιούτους ἐδέξατο λόγους; ποία
 
-παλαίστρα; ποῖον ἐργαστήριον;</p></div>
-
-<div type="textpart" subtype="chapter" n="54"><p>καίτοι τέ τὸ κωλῦον
+παλαίστρα; ποῖον ἐργαστήριον;</p>
+         </div>
+         <div n="54" type="chapter">
+            <p>καίτοι τέ τὸ κωλῦον
 
 ἦν ἐπὶ μοναρχίαν προτρέπειν ἀποκεκαλυμμένως καὶ
 
@@ -2488,15 +2367,15 @@ scripsi ex AthUVaB λόγον Ma edd</note>
 
 <lb n="15"/> &lt;ἂν&gt; εὐδαιμονίαν τῶν Ἀθηνῶν ἐκεῖνον τὸν χρόνον.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="55"><p>οὗτος τῶν συμβουλευόντων ὁ τρόπος διαρρήδην
+</p>
+         </div>
+         <div n="55" type="chapter">
+            <p>οὗτος τῶν συμβουλευόντων ὁ τρόπος διαρρήδην
 
 εἰπεῖν ἃ φρονεῖ τις, πάντα φθέγξασθαι λόγον, πᾶν ᾧ
 
 <note type="footnote">7 cf. t. III 74, 17 13 Plat. Theag. p. 124 D</note>
-
-<note type="footnote">1 ἀνέγνω τοῖς Ma sed ὢ τοῖς in ras m 2 | ἑταίροις reposui
+               <note type="footnote">1 ἀνέγνω τοῖς Ma sed ὢ τοῖς in ras m 2 | ἑταίροις reposui
 
 e libris auctore Re cum Rog ἑτέροις Mor Re | 1 et 3; posui e
 
@@ -2531,10 +2410,7 @@ Mor Re οὐκ ἂν ἧκεν Rog οὐκ ἂν ᾔει lacobs Add 267 οὐκ 
 15 ἂν inserui cum Rog om libri Mor Re 17 φρονεῖν Ma
 
 ᾦ scripsi auctore Re ὃ libri edd</note>
-
-
-
-<pb n="45"/>
+               <pb n="45"/>
 
 μέλλει πείσειν προσαγαγεῖν, ἡσθῆναι πείσαντα, χαλε-
 
@@ -2542,9 +2418,10 @@ Mor Re οὐκ ἂν ἧκεν Rog οὐκ ἂν ᾔει lacobs Add 267 οὐκ 
 
 ποιηκότα Σωκράτην ὁ φάσκων αὐτὸν συμβεβουλευκέναι
 
-τοῖς νέοις ζητεῖν ὅπως ἡ πόλις δουλεύσει.</p></div>
-
-<div type="textpart" subtype="chapter" n="56"><p>εἰκὸς
+τοῖς νέοις ζητεῖν ὅπως ἡ πόλις δουλεύσει.</p>
+         </div>
+         <div n="56" type="chapter">
+            <p>εἰκὸς
 
 δ’ ἦν, ὦ ἄνδρες, καὶ εἰ σφόδρα τὴν πρώτην ἐδεδοίκει <lb n="5"/>
 
@@ -2566,17 +2443,17 @@ Mor Re οὐκ ἂν ἧκεν Rog οὐκ ἂν ᾔει lacobs Add 267 οὐκ 
 
 ἀντιλέγοντος οὐδενὸς προὐδίδου τὴν ἐπιθυμίαν τὴν
 
-αὑτοῦ δίκαιον οὐκ ἔχων λόγον;</p></div>
-
-<div type="textpart" subtype="chapter" n="57"><p>τὸ δὲ πάντων <lb n="15"/>
+αὑτοῦ δίκαιον οὐκ ἔχων λόγον;</p>
+         </div>
+         <div n="57" type="chapter">
+            <p>τὸ δὲ πάντων <lb n="15"/>
 
 μέγιστον, μετέπεσε δὶς ἡμῖν ἤδη τὸ σχῆμα τῆς πολι-
 
 τείας Σωκράτους ἐπιδημοῦντος καὶ ὄντος Ἀθήνησι,
 
 <note type="footnote">1 προσαγαγεῖν scripsi cum Rog προσάγειν libri Mor Re</note>
-
-<note type="footnote">2 ἁμαρτόντα reposui e MaUVaB auctore Re cum Rog
+               <note type="footnote">2 ἁμαρτόντα reposui e MaUVaB auctore Re cum Rog
 
 ἁμαρτόντος Ath Mor Re 2 ἔχοι reposui e libris cum Rog
 
@@ -2609,10 +2486,7 @@ Mor Re | ἔχων scripsi auctoribus Sinteni et Hefermehlio
 ἔχοντα libri edd 16 μετέπεσεν ἡμῖν δὶς UVaB | ἤδη om
 
 AthUB</note>
-
-
-
-<pb n="46"/>
+               <pb n="46"/>
 
 τοῦτο μὲν μετὰ τὴν ἐν Σικελίᾳ συμφοράν, τοῦτο δὲ
 
@@ -2624,9 +2498,10 @@ AthUB</note>
 
 <lb n="5"/> μήσατο; μετὰ Θηραμένους ἐξήτασται; τῷ Φρυνίχῳ
 
-ταὐτὰ ποιῶν ὤφθη;</p></div>
-
-<div type="textpart" subtype="chapter" n="58"><p>ἀλλ’ οὐκ ἔδειξεν αὑτὸν ἐν
+ταὐτὰ ποιῶν ὤφθη;</p>
+         </div>
+         <div n="58" type="chapter">
+            <p>ἀλλ’ οὐκ ἔδειξεν αὑτὸν ἐν
 
 μέσῳ, λάθρα δὲ τὸ πρᾶγμα συνέθηκεν ὧς ἄν &lt;τις&gt; ὄχλῳ
 
@@ -2640,9 +2515,10 @@ AthUB</note>
 
 ματος οὔτε ἀκμάζοντος ἐκοινώνησεν οὔτε πεπραγμέ-
 
-νου κέκριται.</p></div>
-
-<div type="textpart" subtype="chapter" n="59"><p>οὐ μὴν οὐδὲ τερπόμενός γε ἐφάνη
+νου κέκριται.</p>
+         </div>
+         <div n="59" type="chapter">
+            <p>οὐ μὴν οὐδὲ τερπόμενός γε ἐφάνη
 
 ποτὲ τῇ μεταστάσει καὶ συνευχόμενος τοῖς ἔχουσι τὴν
 
@@ -2657,8 +2533,7 @@ AthUB</note>
 et 54 5 Thuc. VIII 54 | Dem. p. 376, 9 | Thuc. VIII 68
 
 9 Antiphontis cf. Thuc. VIII 68</note>
-
-<note type="footnote">3 μετέσχεν ὅτι Ma | ἀνὴρ Rog auctore Gasda qui ὁ ἀνὴρ
+               <note type="footnote">3 μετέσχεν ὅτι Ma | ἀνὴρ Rog auctore Gasda qui ὁ ἀνὴρ
 
 vel ἀνὴρ melius scribi dixit at cf. ad p. 34, 6 4 τῆς in-
 
@@ -2683,10 +2558,7 @@ Re | χραίνεσθαι lacobs Lect 195 Not 20 secundum Eur. Or. 919
 UVaB 12 οὐτ’ UB Rog 13 γ’ Rog 15 μὲν inserui e
 
 libris cum Rog om Mor Re 16 ἐπιχαίρων coni Rog</note>
-
-
-
-<pb n="47"/>
+               <pb n="47"/>
 
 ἐπαινέτης, ἀλλ’ οὕτως οὐκ ἤρεσκον ἀλλήλοις, ὥσθ’ ὁ
 
@@ -2700,9 +2572,10 @@ libris cum Rog om Mor Re 16 ἐπιχαίρων coni Rog</note>
 
 ἄχθοιτο, καὶ εὔχοιτο μὲν ἂν ἰδεῖν ἄκυρον τῶν πραγ-
 
-μάτων τὸν δῆμον, ὁρῶν δὲ λυποῖτο; |</p></div>
-
-<div type="textpart" subtype="chapter" n="60"><p>ποῦ <note type="marginal">R ΙΙΙ 21</note>
+μάτων τὸν δῆμον, ὁρῶν δὲ λυποῖτο; |</p>
+         </div>
+         <div n="60" type="chapter">
+            <p>ποῦ <note type="marginal">R ΙΙΙ 21</note>
 
 τοίνυν ὁ τυραννοδιδάσκαλος; ἐπίδειξον. ἄγων τοὺς
 
@@ -2716,9 +2589,10 @@ libris cum Rog om Mor Re 16 ἐπιχαίρων coni Rog</note>
 
 ἐκείνους βλέπειν καὶ σκοπεῖν ὅπως διαδέξονται τὴν
 
-τυραννίδα;</p></div>
-
-<div type="textpart" subtype="chapter" n="61"><p>καὶ τούτων ἂν ἐπιδείξῃ &lt;τι&gt; τήερον
+τυραννίδα;</p>
+         </div>
+         <div n="61" type="chapter">
+            <p>καὶ τούτων ἂν ἐπιδείξῃ &lt;τι&gt; τήερον
 
 <note type="footnote">2 Xen. comm. Ι 2, 32 sq.; IV 4, 2. Plat. apol. p. 32 D
 
@@ -2727,10 +2601,8 @@ libris cum Rog om Mor Re 16 ἐπιχαίρων coni Rog</note>
 p. 700,16; 732,10 8 Plat. Theag. p. 125 A 9 sq. Xen.
 
 Hell. II 3, 2 14 cf. p. 20, 15</note>
-
-<note type="footnote">1 ἐπαινέτης reposui e libris cum Rog ἐπαινετῆς Mor Re</note>
-
-<note type="footnote">2 κατηγόρει scripsi auctore Re cum Rog κατηγορεῖ libri
+               <note type="footnote">1 ἐπαινέτης reposui e libris cum Rog ἐπαινετῆς Mor Re</note>
+               <note type="footnote">2 κατηγόρει scripsi auctore Re cum Rog κατηγορεῖ libri
 
 Mor Re | ἐκείνοις πραγμάτων Ma 3 σιγῆς scripsi auctore
 
@@ -2759,16 +2631,12 @@ e MaAthUB cum Rog πῶς Va Mor Re 8 τύραννος δι-
 posui ex Ath, colon Β, comma reliqui libri Mor Re nullum
 
 signum Rog | ἐπιδείξων Ma 9 Περικλέα e Par 3017 Rog</note>
-
-<note type="footnote">10 καὶ ante καλλίστου Ath 13 διαδέξονται scripsi cum
+               <note type="footnote">10 καὶ ante καλλίστου Ath 13 διαδέξονται scripsi cum
 
 Rog διαδέξωνται libri Mor Re 14 καὶ τούτων reposui e MaU
 
 VaB τοῦτον Ath Mor Re qui τοιοῦτον coni τοῦτο Sintenis</note>
-
-
-
-<pb n="48"/>
+               <pb n="48"/>
 
 Ἄνυτος, δίκαιός ἐστι κατήγορος &lt;καὶ&gt; κήδεται τῆς
 
@@ -2781,8 +2649,7 @@ VaB τοῦτον Ath Mor Re qui τοιοῦτον coni τοῦτο Sintenis</no
 <lb n="5"/> ξύνει τοὺς ὀμωμοκότας, μὴ λανθανέτω μετὰ Σωκρά-
 
 τοὺς ἀδικῶν οὓς ἐπιορκεῖν ἀναγκάζει.</p>
-
-<p>62. Τί οὖν ἐστι δι’ ὃ γράψασθαι τετόλμηκε καὶ
+            <p>62. Τί οὖν ἐστι δι’ ὃ γράψασθαι τετόλμηκε καὶ
 
 οὕτω τεθαρρηκότως τηλικαύτην αἰτίαν ἐπήνεγκεν; Ἡσι-
 
@@ -2796,9 +2663,10 @@ VaB τοῦτον Ath Mor Re qui τοιοῦτον coni τοῦτο Sintenis</no
 
 ἐπιλαμβάνεται καὶ τῶν εἰρημένων οὐκ ὀλίγα
 
-δείκνυσι πονηρῶς ἔχοντα.</p></div>
-
-<div type="textpart" subtype="chapter" n="63"><p>πρᾶγμα ποιῶν,
+δείκνυσι πονηρῶς ἔχοντα.</p>
+         </div>
+         <div n="63" type="chapter">
+            <p>πρᾶγμα ποιῶν,
 
 <lb n="15"/> Ἄνυτε, πολλῆς ἐξουσίας, ἐπεὶ καὶ ἐμοὶ καὶ σοὶ καὶ
 
@@ -2841,10 +2709,7 @@ et Sintenis | πράγματα AthVa πρᾶγμα cum ras 2 litt U
 15 ἐπεὶ inserui e libris cum Rog om Mor Re qui καὶ γὰρ
 
 ἐμοὶ coni</note>
-
-
-
-<pb n="49"/>
+               <pb n="49"/>
 
 σβυτἐροις καὶ τῷ βουλομένῳ δέδοται παρὰ τῶν νόμων
 
@@ -2873,22 +2738,19 @@ et Sintenis | πράγματα AthVa πρᾶγμα cum ras 2 litt U
 τις εἰς δικαστήριον δώσοντα δίκην τὸν ἃ πρὶν ἐπῄ-
 
 νεσε ψέγοντα, γέλως ἂν εἴη.</p>
-
-<p>64. Ἀλλὰ πῶς δεῖ ποιεῖν; βοηθεῖν λόγῳ τοῖς ἐγ- <lb n="15"/>
+            <p>64. Ἀλλὰ πῶς δεῖ ποιεῖν; βοηθεῖν λόγῳ τοῖς ἐγ- <lb n="15"/>
 
 καλουμένοις ἀπ’ αὐτῆς τῆς περὶ τῶν ἐπῶν φιλονεικίας
 
 <note type="footnote">2 Luc. Char. 13 8 Isocr. p. 16 B</note>
-
-<note type="footnote">1 δέδοκται Ma | κατὰ τὸν νόμον e Par. 3017 Rog
+               <note type="footnote">1 δέδοκται Ma | κατὰ τὸν νόμον e Par. 3017 Rog
 
 2 κατὰ] καὶ Ath | κατὰ τὸ in ras Ma2 | καὶ ὁ inse-
 
 rendum coni lacobs Not 22 3 ἐβουλήθη UVaB 4 ἀποτυγ-
 
 χάνοι reposui e libris ἀποτυγχάνει edd ἀποτυγχάνῃ coni Re</note>
-
-<note type="footnote">5 τοῖς (1) reposui e MaUVaB auctore lacobsio Not 22 cum
+               <note type="footnote">5 τοῖς (1) reposui e MaUVaB auctore lacobsio Not 22 cum
 
 Rog τὸ Ath Mor Re τι coni Sintenis 7 τι UVaB | περὶ
 
@@ -2901,10 +2763,8 @@ cobsio Add 16 Lect 196 Not 22 cum Rog post αὐτὸν, post
 εὕροις Sintenis | εὕροις reposui e Ma auctoribus lacobsio et
 
 Sinteni cum Rog εὕρῃς Αἶα Mor Re om UVaB | μεταταῦτα Β</note>
-
-<note type="footnote">12 τὴν φύσιν τῷ βασανίζοντι UVaB 13 τὸν δώσοντα Ath</note>
-
-<note type="footnote">14 γέλως reposui e libris auctore Re cum Rog γέλωτος
+               <note type="footnote">12 τὴν φύσιν τῷ βασανίζοντι UVaB 13 τὸν δώσοντα Ath</note>
+               <note type="footnote">14 γέλως reposui e libris auctore Re cum Rog γέλωτος
 
 Mor Re qui etiam γέλωτος ἄξιος coni γελαστὸς lacobs Add 16
 
@@ -2919,10 +2779,7 @@ libri Mor Re | τῆς περὶ om Ma Ι τὰ ἔπη coni Re | φιλονει
 reposui e libris φιλοτιμίας edd
 
 LIBANIUS ed. Foerster. V. 4</note>
-
-
-
-<pb n="50"/>
+               <pb n="50"/>
 
 καὶ τὸν ἐπιτιμῶντα μωραίνοντα ἐλέγχειν. αὕτη γὰρ
 
@@ -2930,9 +2787,10 @@ LIBANIUS ed. Foerster. V. 4</note>
 
 θάνατον ἐπάγειν ἐπ’ ἄλλοις τέτακται. γνοίητε δ’ ἂν
 
-ἐκείνως μᾶλλον τὴν ἀτοπίαν.</p></div>
-
-<div type="textpart" subtype="chapter" n="65"><p>ἠγωνίσατό ποτε
+ἐκείνως μᾶλλον τὴν ἀτοπίαν.</p>
+         </div>
+         <div n="65" type="chapter">
+            <p>ἠγωνίσατό ποτε
 
 <lb n="5"/> Ὁμήρῳ Ἡσίοδος καὶ τοῦτο αὐτὸς Ἡσίοδος ἐν ἐπιγράμ-
 
@@ -2952,9 +2810,10 @@ LIBANIUS ed. Foerster. V. 4</note>
 
 οἱ δὲ ἐκείνῳ τοῦτον. αὐτοῖς γὰρ οὕτω γε ἐβοήθουν
 
-ἄν.</p></div>
-
-<div type="textpart" subtype="chapter" n="66"><p>εἶπεν οὖν τις τῶν τὰς ἱστορίας συντεθεικό-
+ἄν.</p>
+         </div>
+         <div n="66" type="chapter">
+            <p>εἶπεν οὖν τις τῶν τὰς ἱστορίας συντεθεικό-
 
 <lb n="15"/> τῶν, ὅτι δίκην τις ἔδωκεν ἐν Χαλκίδι διὰ τὸν Ἡσιόδου
 
@@ -2965,8 +2824,7 @@ LIBANIUS ed. Foerster. V. 4</note>
 <note type="footnote">5 Cert. Hes. et Hom. 205 p. 444 ed. Rzach 12 cf. ad
 
 t. II 272. 14</note>
-
-<note type="footnote">1 αὕτη reposui e libris auctoribus lacobsio Lect 196 Not
+               <note type="footnote">1 αὕτη reposui e libris auctoribus lacobsio Lect 196 Not
 
 22 et Sinteni αὐτὴ Mor Re αὑτὴ Rog 2 καὶ om Ma
 
@@ -2993,18 +2851,16 @@ qui libri Mor Re 16 ὅμηρον AthUVaB 17 ἀκηκοόσιν scripsi
 e Par 3017 auctoribus lacobsio Lect 196 Not 22 et Cobeta
 
 cum Rog ἀκηκοότων reliqui libri Mor Re</note>
-
-
-
-<pb n="51"/>
+               <pb n="51"/>
 
 ἐξεῖναί τι καὶ ἐπιτιμῆσαι, τῶν δ’ ὕστερον τοὺς οὐ
 
 χρηστόν &lt;τι&gt; παρ’ ἐκείνοις ὁρῶντας ἢ σιγᾶν ἢ ἀπολω-
 
-λέναι;</p></div>
-
-<div type="textpart" subtype="chapter" n="67"><p>Σοφοκλῆς | δέ, ὦ πρὸς Δῖός, καὶ Εὐρι- <note type="marginal">R ΙΙΙ 23</note>
+λέναι;</p>
+         </div>
+         <div n="67" type="chapter">
+            <p>Σοφοκλῆς | δέ, ὦ πρὸς Δῖός, καὶ Εὐρι- <note type="marginal">R ΙΙΙ 23</note>
 
 πίδης καὶ Αἰσχύλος ἆρά σοι δοκοῦσιν οὐκ ἂν εἰκότως
 
@@ -3020,9 +2876,10 @@ cum Rog ἀκηκοότων reliqui libri Mor Re</note>
 
 ἡ δέ γε κωμῳδία τὸ πλεῖστον τῆς ἡδονῆς ἐκ τοῦ κακῶς <lb n="10"/>
 
-λέγειν τἀς τραγῳδίας εἰσφέρεται.</p></div>
-
-<div type="textpart" subtype="chapter" n="68"><p>εἶτ’ ἂν μὲν
+λέγειν τἀς τραγῳδίας εἰσφέρεται.</p>
+         </div>
+         <div n="68" type="chapter">
+            <p>εἶτ’ ἂν μὲν
 
 Ἀθηναίων τοὺς δοκοῦντας παιδείᾳ διαφέρειν φῇ τις
 
@@ -3035,8 +2892,7 @@ cum Rog ἀκηκοότων reliqui libri Mor Re</note>
 μῳδεῖν καὶ πᾶς ὁ μετὰ ταῦτα χρόνος ἕξει τὰ σκώμ-
 
 <note type="footnote">3 Dem. p. 854, 7 15 Plat. apol. p. 19 B sq.</note>
-
-<note type="footnote">1 τῶν] τοὺς Ma τοῖς UVaB | οὐ χρηστόν] ἄχρηστόν lacobs
+               <note type="footnote">1 τῶν] τοὺς Ma τοῖς UVaB | οὐ χρηστόν] ἄχρηστόν lacobs
 
 Add 133 Lect 196 App Pors 321 Not 22 2 τι inserui aucto-
 
@@ -3073,10 +2929,7 @@ Re cum Rog ἀριστοφάνη Ma sed ἡ paene evanuit ἀριστοφάν�
 Ath Mor Re 16 μεταταῦτα Β
 
 4*</note>
-
-
-
-<pb n="52"/>
+               <pb n="52"/>
 
 μάτα, γέγραπται γάρ, καὶ ὁ τὰ γεγραμμένα ἐξαλείψων
 
@@ -3090,9 +2943,10 @@ Ath Mor Re 16 μεταταῦτα Β
 
 θρώπων εἴρηται, καθ’ ὅν ποιητῶν καὶ λογογράφων
 
-δοκιμαστής ἐστι τῶν ἐντυγχανόντων ἕκαστος.</p></div>
-
-<div type="textpart" subtype="chapter" n="69"><p>οὕτως
+δοκιμαστής ἐστι τῶν ἐντυγχανόντων ἕκαστος.</p>
+         </div>
+         <div n="69" type="chapter">
+            <p>οὕτως
 
 ἐπιλαμβάνεται Πινδάρου Σωκράτης, ὧς σὺ Σωκράτους,
 
@@ -3116,17 +2970,17 @@ Ath Mor Re 16 μεταταῦτα Β
 
 θίᾳ συνοικεῖν; καίτοι τοὐναντίον ἐδόκει τὸν ἔμπρο-
 
-σθεν χρόνον. σὺ δὲ οὐκ ἐᾷς.</p></div>
-
-<div type="textpart" subtype="chapter" n="70"><p>καὶ μὴν εἰ τὸ τῶν
+σθεν χρόνον. σὺ δὲ οὐκ ἐᾷς.</p>
+         </div>
+         <div n="70" type="chapter">
+            <p>καὶ μὴν εἰ τὸ τῶν
 
 ἐπῶν κατηγορεῖν ἔν τι τῶν ἀδικημάτων, &lt;ἦν&gt; ἦν ἀν’
 
 <lb n="20"/> καὶ περὶ τούτου νόμος, ὥσπερ ἀμέλει καὶ περὶ
 
 <note type="footnote">6 Thuc. Ι 21</note>
-
-<note type="footnote">1 γάρ reposui e MaUVaB auctore Re cum Rog δὲ Ath
+               <note type="footnote">1 γάρ reposui e MaUVaB auctore Re cum Rog δὲ Ath
 
 Mor Re | τὰ γεγραμμένα scripsi τὸ δρᾶμα UVa τὸ δρᾶμα AthB
 
@@ -3151,10 +3005,7 @@ inserui auctore lacobsio Not 24 cum Rog om libri Mor Re
 20 τουτονὶ ἁ sed post ὁ (2) ras, VaB | μῶμος Ath ἁ sed in hoc
 
 in νόμος corr, VaB | παρὰ Ath</note>
-
-
-
-<pb n="53"/>
+               <pb n="53"/>
 
 τῶν ἄλλων ἀδικημάτων, οἷον ὁ μέν τις λέγει μὴ δω-
 
@@ -3180,9 +3031,10 @@ in νόμος corr, VaB | παρὰ Ath</note>
 
 πανταχοῦ τὰ βέλτιστα τὸν Πίνδαρον εἰρηκέναι λέγοντι·
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="71"><p>καίτοι τὼ δύο τούτω ποιητά, τόν τε Ἡσίοδον καὶ
+</p>
+         </div>
+         <div n="71" type="chapter">
+            <p>καίτοι τὼ δύο τούτω ποιητά, τόν τε Ἡσίοδον καὶ
 
 τὸν Ὅμηρον λέγω, πρεσβυτέρους εἶναι συμβαίνει τοῦ
 
@@ -3199,8 +3051,7 @@ in νόμος corr, VaB | παρὰ Ath</note>
 <note type="footnote">19 Herod. Att. apud Gell. IX 2, 10 cf. Lambertz, Die
 
 griech. Sklavennamen Ι (Vindob. 1907) p. 23 sq.</note>
-
-<note type="footnote">4 ἑκάστων scripsi ἕκαστον libri Mor Re qui „aut ἑκάστου
+               <note type="footnote">4 ἑκάστων scripsi ἕκαστον libri Mor Re qui „aut ἑκάστου
 
 aut ἑκάστων“ coni ἑκάστου Rog 6 οὐδ’ Ma Rog 8 ἂπαν-
 
@@ -3227,16 +3078,14 @@ qui libri Mor Re 18 ὧς περὶ reposui e libris auctore Re
 cum Rog ὥστε Mor Re ὥς γε Sintenis 19 τῶν — Ἀριστο-
 
 γείτονος delenda censet Sintenis</note>
-
-
-
-<pb n="54"/>
+               <pb n="54"/>
 
 ἡμῖν μηδένα δοῦλον τοῖς τὸν τύραννον καθελοῦσι ποιεῖν
 
-ὁμώνυμον καὶ πειθόμεθα.</p></div>
-
-<div type="textpart" subtype="chapter" n="72"><p>πῶς οὖν τῆς αὐτῆς
+ὁμώνυμον καὶ πειθόμεθα.</p>
+         </div>
+         <div n="72" type="chapter">
+            <p>πῶς οὖν τῆς αὐτῆς
 
 προνοίας οὐκ ἠξίωται τὰ ἔπη; ὅτι τὸ μὲν ὕβριν ἂν
 
@@ -3262,17 +3111,17 @@ cum Rog ὥστε Mor Re ὥς γε Sintenis 19 τῶν — Ἀριστο-
 
 καὶ τὰ στόματα τοῖς δεξιωτέροις ἐμφράττεις καὶ σιγὴν
 
-<lb n="15"/> Ἀθήνησιν εἰσηγῇ.</p></div>
-
-<div type="textpart" subtype="chapter" n="73"><p>καὶ Πεισίστρατος μὲν ὁ μάλιστα
+<lb n="15"/> Ἀθήνησιν εἰσηγῇ.</p>
+         </div>
+         <div n="73" type="chapter">
+            <p>καὶ Πεισίστρατος μὲν ὁ μάλιστα
 
 σπουδάσας περὶ τὴν Ὁμήρου ποίησιν οὐδένα τῶν πολι-
 
 τῶν ἀπέκτεινε λαβὼν ἔπους ἐπιλαμβανόμενον, εἰκὸς δὲ
 
 <note type="footnote">16 Plat. Hipparch. p. 228 B. Ael. var. hist. XIII 13</note>
-
-<note type="footnote">1 ὑμῖν AthUVaB et auctore lacobsio Not 24 Rog | τὸν
+               <note type="footnote">1 ὑμῖν AthUVaB et auctore lacobsio Not 24 Rog | τὸν
 
 inserui ex Ath om reliqui libri edd 2 ἐπειθόμεθα UVaB
 
@@ -3301,10 +3150,7 @@ auctore Sinteni ἐξήταζε libri edd 13 ἐφιστὰς Ath ἐφιστ�
 MaB ἐφιστὰς UVa corr Mor 16 πολιτῶν scripsi ex UVaB
 
 cum Rog ποιητῶν Ma πώποτε Ath Mor Re</note>
-
-
-
-<pb n="55"/>
+               <pb n="55"/>
 
 πολλὰ τοιαῦτα γεγονέναι τῶν Ὁμήρου συλλεγομένων·
 
@@ -3322,9 +3168,10 @@ cum Rog ποιητῶν Ma πώποτε Ath Mor Re</note>
 
 τὰς ψυχὰς ἀσκῶμεν μαθήμασι καὶ τὰ σώματα γυμνα-
 
-σίοις.</p></div>
-
-<div type="textpart" subtype="chapter" n="74"><p>καὶ διὰ τοῦτο καλὸν καὶ ἥδιστον αἱ Ἀθῆναι
+σίοις.</p>
+         </div>
+         <div n="74" type="chapter">
+            <p>καὶ διὰ τοῦτο καλὸν καὶ ἥδιστον αἱ Ἀθῆναι
 
 θέαμα καὶ πανταχόθεν | δεῦρο φοιτῶσι καὶ ναυσὶ <note type="marginal">R III 26</note>
 
@@ -3342,9 +3189,10 @@ cum Rog ποιητῶν Ma πώποτε Ath Mor Re</note>
 
 ἐπαινοῦντά τι τῶν τοῖς ἔμπροσθεν εἰρημένων, τὸν δὲ
 
-αἰτιώμενον, τὸν δὲ δόξαν οὐ καλὴν λύοντα.</p></div>
-
-<div type="textpart" subtype="chapter" n="75"><p>ταῦτα
+αἰτιώμενον, τὸν δὲ δόξαν οὐ καλὴν λύοντα.</p>
+         </div>
+         <div n="75" type="chapter">
+            <p>ταῦτα
 
 ἄξια τῆς ἐν ἀκροπόλει θεοῦ, ταῦτα τῶν ὑπὸ θεῶν
 
@@ -3359,8 +3207,7 @@ p. 376 E; III p. 410 12 cf t. I 520, 9; II 297, 8 13 Thuc.
 12 14 cf t. I 156, 19 19 Hom. II. β 547 sq.; h. in Cer.
 
 473 sq.</note>
-
-<note type="footnote">1 πολλοὺς τοιούτους Gasda ἴ’ ἁπανταχόθεν ante συλλεγομέ-
+               <note type="footnote">1 πολλοὺς τοιούτους Gasda ἴ’ ἁπανταχόθεν ante συλλεγομέ-
 
 νων inserendum coni lie 3 ἣν reposui e libris sed Ma in
 
@@ -3375,18 +3222,16 @@ Rog μέλιτος Ma Mor Re 9 διατοῦτο Β 12 οὐδ’ reposui e
 MaAthUB cum Rog οὐδὲ Va Mor Re | ὑμῖν AthUVa
 
 13 εὔφορος ὑμῖν Ath | γάρ, ὦ om Ma 21 τάξιν Ma</note>
-
-
-
-<pb n="56"/>
+               <pb n="56"/>
 
 δαίμονος. διὰ τοῦτο τῶν φοβερῶν ἐν τοῖς ὅπλοις οἱ
 
 τὴν σοφίαν τιμῶντες σεμνότεροι. τοῦτο πολὺ τὸ μέσον
 
-ἡμῖν πρὸς τοὺς βαρβάρους πεποίηκεν.</p></div>
-
-<div type="textpart" subtype="chapter" n="76"><p>ὁ τοίνυν
+ἡμῖν πρὸς τοὺς βαρβάρους πεποίηκεν.</p>
+         </div>
+         <div n="76" type="chapter">
+            <p>ὁ τοίνυν
 
 τὴν ἐν τῷ διαλέγεσθαι παρρησίαν ἀναιρῶν οὗτός ἐστιν
 
@@ -3400,9 +3245,10 @@ MaAthUB cum Rog οὐδὲ Va Mor Re | ὑμῖν AthUVa
 
 μνησθῆναι ποιητῶν, τοῦ μὲν ὡς εὖ λεχθέντος ἀγα-
 
-<lb n="10"/> σθῆναι, τὸ δέ τι καὶ ἐπανορθῶσαι.</p></div>
-
-<div type="textpart" subtype="chapter" n="77"><p>εἰ μὲν οὖν
+<lb n="10"/> σθῆναι, τὸ δέ τι καὶ ἐπανορθῶσαι.</p>
+         </div>
+         <div n="77" type="chapter">
+            <p>εἰ μὲν οὖν
 
 κἀνταῦθα σιωπᾶν νομοθετεῖ κελεύων ἀφώνους ἐσθίειν
 
@@ -3422,13 +3268,13 @@ MaAthUB cum Rog οὐδὲ Va Mor Re | ὑμῖν AthUVa
 
 19 σάτω τοὺς δικάζοντας ὑμᾶς ὅτι τὸ ἄνισον τοῦτο τῶν
 
-<note type="marginal">R III 27</note> δικαίων ἐστί. |</p></div>
-
-<div type="textpart" subtype="chapter" n="78"><p>καὶ τί δεῖ λέγειν τοὺς ποιητάς;
+<note type="marginal">R III 27</note> δικαίων ἐστί. |</p>
+         </div>
+         <div n="78" type="chapter">
+            <p>καὶ τί δεῖ λέγειν τοὺς ποιητάς;
 
 <note type="footnote">6 cf t. III 110, 20</note>
-
-<note type="footnote">1 διατοῦτο Β 3 ὑμῖν AthUVaB Rog 4 οὗτος δι’ ὃ
+               <note type="footnote">1 διατοῦτο Β 3 ὑμῖν AthUVaB Rog 4 οὗτος δι’ ὃ
 
 τὰ Ma 5 καὶ cancellavit Rog 6 τὴν inserui e libris om
 
@@ -3441,8 +3287,7 @@ edd 9 ποιημάτων Rog at cf. l. 20 et ad t. IV 45,4 ποιητῶν το
 AthUVaB auctore Cobeto cum Rog ἡσθῆναι Ma ᾀσθῆναι
 
 (i. e. ᾀσθῆναι) Mor Re quod delendum censet lacobs Lect 196</note>
-
-<note type="footnote">10 τοῦ Sintenis at cf. Xen. Hell. VI 4, 7 et 8 14 ἔλθοι
+               <note type="footnote">10 τοῦ Sintenis at cf. Xen. Hell. VI 4, 7 et 8 14 ἔλθοι
 
 reposui e libris auctore lacobsio Not 26 cum Rog ἔλθῃ Mor
 
@@ -3451,10 +3296,7 @@ Re 15 ἐκείνων scripsi ex UVaB ἐκεῖνον Ath ἐκεῖ Ma edd
 μὲν om Ath 19 ὅτι scripsi εἰ libri edd | τοῦτο reposui e
 
 libris auctore Re cum Rog τούτῳ Mor Re</note>
-
-
-
-<pb n="57"/>
+               <pb n="57"/>
 
 ἀλλὰ τοῦ Δῖός οὐχ ὕοντος καὶ πάλιν ἔξω τοῦ μετρίου
 
@@ -3472,9 +3314,10 @@ libris auctore Re cum Rog τούτῳ Mor Re</note>
 
 σβυτέρους, τοῦτον εὐθὺς ἐπὶ κώνειον ἄγεσθαι δίκαιον,
 
-ὁ δὲ μὴ καταψηφιζόμενος ἀπολλύει τὴν πόλιν;</p></div>
-
-<div type="textpart" subtype="chapter" n="79"><p>καὶ
+ὁ δὲ μὴ καταψηφιζόμενος ἀπολλύει τὴν πόλιν;</p>
+         </div>
+         <div n="79" type="chapter">
+            <p>καὶ
 
 τίς ἂν εὖ φρονῶν φήσειε; καὶ γὰρ εἰ καὶ σφόδρα <lb n="10"/>
 
@@ -3495,8 +3338,7 @@ libris auctore Re cum Rog τούτῳ Mor Re</note>
 Isocr. antid. § 166. Aesch. ep 4, 2 15 Il. β 552 sq. cf. Her.
 
 VII 161. Thuc. II 41, 2 16 Pind. fr. 76 Schr.</note>
-
-<note type="footnote">2 ὡς om Β 3 post λέγομεν pro signo interrogationis
+               <note type="footnote">2 ὡς om Β 3 post λέγομεν pro signo interrogationis
 
 quod MaAth UVa Re Rog habent punctum posui e Β cum Mor
 
@@ -3521,18 +3363,14 @@ ex AthUB om MaVa edd 11 ὑμετέρων AthUVa 12 ἐστι
 inserui e libris cum Rog om Mor Re 13 τοῦ reposui e Ma
 
 UVaB cum Rog τῷ Ath Mor sed τοῦ scribendum coni l. l., Re</note>
-
-<note type="footnote">15 τῷ δ’ scripsi auctore Re cum Rog τῶδ’ libri τόδε
+               <note type="footnote">15 τῷ δ’ scripsi auctore Re cum Rog τῶδ’ libri τόδε
 
 Mor sed ὁ δὲ scribendum coni l. l., Re 16 προσερρέθη UB
 
 προσερέθη MaAth | ἀμειβόμενοι reposui ex UVaB auctore Re
 
 cum Rog ἀμειβόμενος Ath Mor Re ἀμείβομαι Ma</note>
-
-
-
-<pb n="58"/>
+               <pb n="58"/>
 
 νοὶ καὶ διὰ τὴν ἔμφυτον μεγαλοψυχίαν ὧν ἐν ταῖς
 
@@ -3551,8 +3389,8 @@ cum Rog ἀμειβόμενος Ath Mor Re ἀμείβομαι Ma</note>
 <note type="marginal">R III 28</note> τῆς πόλεως ὑμνηκέναι καὶ συμβούλους | οὐ πάντα
 
 ἀγαθοὺς γεγονέναι.</p>
-
-<lb n="10"/> <p>80. Ὁ αὐτὸς τοίνυν ἔστι μοι λόγος καὶ περὶ τοῦ
+            <lb n="10"/>
+            <p>80. Ὁ αὐτὸς τοίνυν ἔστι μοι λόγος καὶ περὶ τοῦ
 
 μέμφεσθαι, φησίν αὐτὸν τῶν ἐθῶν τισι τῶν παρ’
 
@@ -3569,8 +3407,7 @@ cum Rog ἀμειβόμενος Ath Mor Re ἀμείβομαι Ma</note>
 μεναι καὶ παῖδες ἀδικούμενοι καὶ φυγαὶ καὶ φόνοι καὶ
 
 <note type="footnote">10 sq. Xen. comm. Ι 2, 9 16 Dem. p. 403, 8</note>
-
-<note type="footnote">1 ἔμψυχον Ma Ι ἐν om Va 4 αὐτὸς Mor 5 τις σω-
+               <note type="footnote">1 ἔμψυχον Ma Ι ἐν om Va 4 αὐτὸς Mor 5 τις σω-
 
 κράτης Ath 6 πάντα ἐπαινὴ reposui e libris (sed ἐπαινεῖν
 
@@ -3589,8 +3426,7 @@ UVaB τῶν Ath οὖ lacobs Not 26 11 φησίν] τισιν e Par
 3017 Rog ὥς anteponendum coni Re καθά praetulerim sed
 
 particulam necessariam esse nego | τισι del Par 3017 et Rog</note>
-
-<note type="footnote">12 ἡμῖν scripsi e MaUVaB ὑμῖν Ath edd | ὅλως reposui
+               <note type="footnote">12 ἡμῖν scripsi e MaUVaB ὑμῖν Ath edd | ὅλως reposui
 
 e libris cum Rog ὅτι Mor Re qui delendum aut ὁ scribendum
 
@@ -3601,10 +3437,7 @@ sed cf. Xen. Cyr. VIII 2, 28; Hier. II 12 sq 16 ὕβρεις auctore
 Cobeto Rog | παροινούμεναι reposui e MaUVaB auctore Re
 
 cum Rog παροινούμενοι Ath Μο Re</note>
-
-
-
-<pb n="59"/>
+               <pb n="59"/>
 
 οἰμωγαὶ καὶ δακρύων συνέχεια, εἰ τούτων ἐρᾷ καὶ
 
@@ -3618,9 +3451,10 @@ cum Rog παροινούμενοι Ath Μο Re</note>
 
 τοὺς τῆς δημοκρατίας, ἄνδρες Ἀθηναῖοι, καὶ τοῦτο
 
-νόμους ποιεῖ.</p></div>
-
-<div type="textpart" subtype="chapter" n="81"><p>τίς γὰρ ὑμῶν οὐκ οἶδεν ὡς τὸ
+νόμους ποιεῖ.</p>
+         </div>
+         <div n="81" type="chapter">
+            <p>τίς γὰρ ὑμῶν οὐκ οἶδεν ὡς τὸ
 
 τοὺς βλάπτοντας νόμους λύειν ἐξ αὐτῶν ἐστὶ δεδομέ-
 
@@ -3634,15 +3468,14 @@ cum Rog παροινούμενοι Ath Μο Re</note>
 
 τοῖς ἔργοις βεβαιῶ τὴν ὑπόσχεσιν, κίνει τὰ
 
-γράμματα, κατηγόρει, μηδὲν ὑποστέλλου.</p></div>
-
-<div type="textpart" subtype="chapter" n="82"><p>καὶ
+γράμματα, κατηγόρει, μηδὲν ὑποστέλλου.</p>
+         </div>
+         <div n="82" type="chapter">
+            <p>καὶ
 
 ταύτην τὴν ἔασιν, ὦ Ἀθηναῖοι, χρόνον οὐδένα διαλε- <lb n="15"/>
-
-<note type="footnote">11 Dem. Lept. p. 484, 10 sq. Timocr. p. 706, 7 sq.</note>
-
-<note type="footnote">1 δακρύων συνέχεια scripsi ex UVaB συνέχεια δακρύων
+               <note type="footnote">11 Dem. Lept. p. 484, 10 sq. Timocr. p. 706, 7 sq.</note>
+               <note type="footnote">1 δακρύων συνέχεια scripsi ex UVaB συνέχεια δακρύων
 
 MaAth edd 2 τὸν insenii om libri edd 4 ὁ δὲ lacobs
 
@@ -3667,8 +3500,7 @@ tenis Ι ποιεῖ. scripsi μοι. εἴ MaAth μοι. ἤ UVaB μοι. edd
 μὴ λύουσιν lacobs | τὸ inserui ex AthUB cum Rog om MaVa
 
 Mor Re 8 βλάπτοντας Ma sed βλ in ras m2 2 10 αὐτὸν</note>
-
-<note type="footnote">12 τοῖς inserui auctore Re cum Rog om libri Mor Re
+               <note type="footnote">12 τοῖς inserui auctore Re cum Rog om libri Mor Re
 
 ὅπερ scripsi e MaUVaB coll p. 68,21. Plat. Gorg. p. 508 B
 
@@ -3681,10 +3513,7 @@ Mor Re 8 βλάπτοντας Ma sed βλ in ras m2 2 10 αὐτὸν</note>
 πολιτείᾳ προσάγοντες οὐδένα διαλελοίπαμεν λελοίπαμεν Ma) ὦ
 
 θεοὶ χρόνον MaAth edd | Ἀθηναῖοι scripsi auctore Cobeto</note>
-
-
-
-<pb n="60"/>
+               <pb n="60"/>
 
 λοίπαμεν τῇ πολιτείᾳ προσάγοντες νέους ἀντὶ τῶν
 
@@ -3700,9 +3529,10 @@ Mor Re 8 βλάπτοντας Ma sed βλ in ras m2 2 10 αὐτὸν</note>
 
 ἐκείνου χώραν λαβὸν ἀντ’ ἐκείνου καθίσταται κύριον.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="83"><p>εἶπον δ’ ἂν ὑμῖν καὶ ἀπηριθμησάμην τούς τε
+</p>
+         </div>
+         <div n="83" type="chapter">
+            <p>εἶπον δ’ ἂν ὑμῖν καὶ ἀπηριθμησάμην τούς τε
 
 κατεγνωσμένους καὶ τοὺς ἀντ’ ἐκείνων γραφέντας, εἰ
 
@@ -3723,20 +3553,17 @@ Mor Re 8 βλάπτοντας Ma sed βλ in ras m2 2 10 αὐτὸν</note>
 πολιτείαν εὐχόμενος, οὗτος ἄχθεται τῷ τὸν δῆμον
 
 κρατεῖν;</p>
-
-<p>84. Εἰ μὲν οὖν, ὦ ἄνδρες, τὸ μὲν ἐξὸν πεποιῆσθαι
+            <p>84. Εἰ μὲν οὖν, ὦ ἄνδρες, τὸ μὲν ἐξὸν πεποιῆσθαι
 
 20 τοὺς τοιούτους τῶν λόγων ὑπῆρχε Σωκράτει, βλάβη
 
 <note type="footnote">3 sq. Plat. Axioch. p. 365 D 11 Arist. rep. Ath. 25 et
 
 27; Dem. Aristocr. p. 641, 28 sq. 13 sq. Xen. comm. I 2, 9</note>
-
-<note type="footnote">Mnem. III 148 cum Rog θεοὶ libri edd | οὐδένα reposui e libris
+               <note type="footnote">Mnem. III 148 cum Rog θεοὶ libri edd | οὐδένα reposui e libris
 
 auctoribus Re et Cobeto cum Rog οὐδὲ Mor Re</note>
-
-<note type="footnote">7 λαβὸν reposui e Ma UVaB cum Rog λαβὼν Ath Mor Re
+               <note type="footnote">7 λαβὸν reposui e Ma UVaB cum Rog λαβὼν Ath Mor Re
 
 | ἐπίσταται Ma 8 καὶ ἀπηριθμησάμην scripsi ἀπηριθμησά-
 
@@ -3755,10 +3582,7 @@ cum Rog γ᾿ libri Mor Re 20 λόγους post τοὺς Mor Re de-
 levi cum Rog τῶν] ἀνοήτων lacobs Lect 197 Ι ὑπῆρχεν ἀρχὴ
 
 Σωκράτει lacobs | βλάβης δέ τι e Par 3017 Rog</note>
-
-
-
-<pb n="61"/>
+               <pb n="61"/>
 
 δέ τις ἐφαίνετο διὰ τῆς ἐξουσίας, πρῶτος ἂν αὐτοῦ
 
@@ -3771,8 +3595,7 @@ levi cum Rog τῶν] ἀνοήτων lacobs Lect 197 Ι ὑπῆρχεν ἀρ
 καλὸν ὑπὲρ ἀνδρός, ὥς γε ἐμαυτὸν πείθω, φιλοῦντος <lb n="5"/>
 
 τὴν πόλιν;</p>
-
-<p>85. Σωκράτης, ἐρῶ δὲ τἀληθές, νὴ τὸν Ἀπόλλω
+            <p>85. Σωκράτης, ἐρῶ δὲ τἀληθές, νὴ τὸν Ἀπόλλω
 
 τὸν Πύθιον, πολλαχοῦ μὲν μέμνηται τῶν ποιητῶν,
 
@@ -3786,9 +3609,10 @@ levi cum Rog τῶν] ἀνοήτων lacobs Lect 197 Ι ὑπῆρχεν ἀρ
 
 καὶ δείκνυσι τὸν κρημνὸν οὐκ ἐῶν νέων ψυχὰς εἰς
 
-ὄλεθρον ἐμπεσούσας φέρεσθαι.</p></div>
-
-<div type="textpart" subtype="chapter" n="86"><p>ἐν δὴ τοῖς ἐλέγ-
+ὄλεθρον ἐμπεσούσας φέρεσθαι.</p>
+         </div>
+         <div n="86" type="chapter">
+            <p>ἐν δὴ τοῖς ἐλέγ-
 
 χοις τούτοις ἔρχεταί τινα καὶ τοιαύτην ὁδόν, ἣν ἀρ- <lb n="15"/>
 
@@ -3803,8 +3627,7 @@ levi cum Rog τῶν] ἀνοήτων lacobs Lect 197 Ι ὑπῆρχεν ἀρ
 <note type="footnote">19 Hes. opp. 311. cf Plat. Charm. p. 163 B. Xen. comm.
 
 I 2,56</note>
-
-<note type="footnote">1 ἐφαίνετο reposui e libris cum Rog φαίνοιτο Mor Re
+               <note type="footnote">1 ἐφαίνετο reposui e libris cum Rog φαίνοιτο Mor Re
 
 φαίνοιτο οὐδεμία, τὸ τῆς ἐξουσίας μέρος lacobs Ι τὸ ante τῆς
 
@@ -3813,8 +3636,7 @@ inser Ma Ι πρῶτος — 2 ἐξουσίας inserui ex AthUVaB cum Rog
 om Ma Mor Re πρῶτος scripsi e VaB cum Rog πρῶτον
 
 AthU 2 κατεψηφιζόμην scripsi καταψηφιζοίμην libri Rog</note>
-
-<note type="footnote">3 τίνας Rog Ι ἀγωνιζομένους scripsi ex AthUVaB ἀγωνι-
+               <note type="footnote">3 τίνας Rog Ι ἀγωνιζομένους scripsi ex AthUVaB ἀγωνι-
 
 σαμένους Ma ἠγωνισμένους edd 4 ἀπολογιεῖσθαι VaB λο-
 
@@ -3829,10 +3651,7 @@ libri I τὸν ἀκούοντα ποιοῦσι scripsi ex AthUVaB ποιο�
 inseruit Rog 14 δὴ scripsi e MaAthUVa δὲ Β edd
 
 15 τούτοις om Va 17 ἀνάγκη Ma sed κ’ in ras m2</note>
-
-
-
-<pb n="62"/>
+               <pb n="62"/>
 
 τοῦτο δεύτερον ἐρομένου Σωκράτους οὐκ ἔστιν ἄρνη-
 
@@ -3849,8 +3668,7 @@ inseruit Rog 14 δὴ scripsi e MaAthUVa δὲ Β edd
 ἐξεληλεγμένου γὰρ τοῦ ποιητοῦ καὶ γέλωτα ὀφείλοντος
 
 ἴσασιν ὧς οὐ πᾶσιν ἐγχειρητέον ἔργοις ἐξῆς.</p>
-
-<p>87. Οὕτω καὶ περὶ Πινδάρου διαλέγεται δεδοικὼς
+            <p>87. Οὕτω καὶ περὶ Πινδάρου διαλέγεται δεδοικὼς
 
 <lb n="10"/> αὐτοῦ τὴν διδαχὴν καὶ φοβούμενος μή τις τῶν νέων
 
@@ -3871,8 +3689,7 @@ inseruit Rog 14 δὴ scripsi e MaAthUVa δὲ Β edd
 IV p. 714 D; in p. 690 B; Prot. p. 337 D; Aristid. t. II 68 D cf
 
 praef. p. 4 14 Valer. M. VI 4 ext. 2. Lys. fr. CXII ed. Thalh.</note>
-
-<note type="footnote">1 ὁμολογεῖ καὶ ante τοῦτο inserendum coni Re, καὶ lacobs
+               <note type="footnote">1 ὁμολογεῖ καὶ ante τοῦτο inserendum coni Re, καὶ lacobs
 
 Lect 197 Not 28 | τοῦτο — Σωκράτους delenda coni Sintenis
 
@@ -3903,18 +3720,14 @@ mseruit auctore lacobsio Not 28 Rog at obloquitur 1. 12
 Re 15 διαλεγόμενος auctore Gasda Rog at cf. 1. 9 16 μὲν (2)
 
 inserui ex AthUB om MaVa edd</note>
-
-
-
-<pb n="63"/>
+               <pb n="63"/>
 
 ἐποίησε κακουργῶν. ἐν γὰρ τῷ μεταθεῖναι τὸ τοῦ
 
 ποιητοῦ κατηγόρηκε τοῦ Πινδάρου καὶ τὸν Σωκράτην
 
 ἐπῄνεσεν.</p>
-
-<p>88. Ἔτι τοίνυν σκέψασθε, πότερον Θέογνις ὀρθῶς
+            <p>88. Ἔτι τοίνυν σκέψασθε, πότερον Θέογνις ὀρθῶς
 
 φρονεῖ νομίζων πάντα δεῖν ποιεῖν ὑπὲρ χρημάτων ὡς <lb n="5"/>
 
@@ -3949,8 +3762,7 @@ inserui ex AthUB om MaVa edd</note>
 p. 236 A 11 ep. 258. cf Plat. Prot. p. 311 C; Men. p. 91 D;
 
 Hipp. mai. p. 290 A. Lys. or. 19, 46 Ι Lys. or. 19, 48</note>
-
-<note type="footnote">4 Θέογνις ὀρθῶς scripsi e MaUVaB ὀρθῶς θέογνις Ath
+               <note type="footnote">4 Θέογνις ὀρθῶς scripsi e MaUVaB ὀρθῶς θέογνις Ath
 
 edd b δεῖ Β 7 γ’ ἂν scripsi e Β γᾶν Ath ἂν MaUVa
 
@@ -3975,16 +3787,14 @@ Re | τῶν om UVaB 11 ἂν Ἰσχόμαχον scripsi (Mus. Rhen. 1. 1.)
 reposui e libris auctore Re cum Rog καταδέων Mor Re
 
 16 ὑφ’ scripsi auctore Gasda cum Rog ἀφ’ libri Mor Re</note>
-
-
-
-<pb n="64"/>
+               <pb n="64"/>
 
 ὑπολαμβάνει Σωκράτης τῶν πεπαιδευμένων, ἀλλ’ οὐ
 
-τῶν εὐπορούντων τὸ δύνασθαι λέγειν ἡγούμενος.</p></div>
-
-<div type="textpart" subtype="chapter" n="89"><p>καὶ
+τῶν εὐπορούντων τὸ δύνασθαι λέγειν ἡγούμενος.</p>
+         </div>
+         <div n="89" type="chapter">
+            <p>καὶ
 
 μὴν Ἀθηναίων γε πλουτοῦσι μὲν οὐ πολλοί, συχνοὶ
 
@@ -4002,9 +3812,10 @@ reposui e libris auctore Re cum Rog καταδέων Mor Re
 
 <lb n="10"/> θανάτους ἢ ὅστις ἐπὶ τὴν φρόνησιν μᾶλλον ἢ τὸν
 
-πλοῦτον παρακαλεῖ;</p></div>
-
-<div type="textpart" subtype="chapter" n="90"><p>τοῦτο τοίνυν παρ’ ὑμῶν καὶ
+πλοῦτον παρακαλεῖ;</p>
+         </div>
+         <div n="90" type="chapter">
+            <p>τοῦτο τοίνυν παρ’ ὑμῶν καὶ
 
 τοῦ τῆς πόλεως ἤθους ἐπαιδεύετο Σωκράτης καὶ ἤ
 
@@ -4025,8 +3836,7 @@ reposui e libris auctore Re cum Rog καταδέων Mor Re
 <note type="footnote">5 Theogn. 847 7 cf t. III 421, 7 19 Her. VIII, 140 et
 
 IX 4</note>
-
-<note type="footnote">3 γε om UB I οὐ reposui e MaUB auctore Re cum Rog
+               <note type="footnote">3 γε om UB I οὐ reposui e MaUB auctore Re cum Rog
 
 οἱ Ath Va Mor Re 4 ἡμῶν Ma ὑμῖν lacobs Not 28 6 τὸ
 
@@ -4072,9 +3882,10 @@ libri Mor Re ὅπλων auctore Cobeto Rog</note>N
 
 θητείας, ἣν ἀναγκαῖον ἦν εἰσελθεῖν εἰς τὴν πόλιν ὑπὸ
 
-τῷ Μήδῳ γεγενημένην.</p></div>
-
-<div type="textpart" subtype="chapter" n="91"><p>τί οὖν; ᾔδει Σωκράτης
+τῷ Μήδῳ γεγενημένην.</p>
+         </div>
+         <div n="91" type="chapter">
+            <p>τί οὖν; ᾔδει Σωκράτης
 
 συμβαίνων τῷ τρόπῳ I τῆς πόλεως, ὡς ὁ Θέογνις <note type="marginal">R III 32</note>
 
@@ -4089,16 +3900,14 @@ libri Mor Re ὅπλων auctore Cobeto Rog</note>N
 ἀφεῖσαν, ἐνθυμεῖσθε ποῖ ποτ’ ἂν ἀφῖκτο τῇ πόλει τὰ <lb n="15"/>
 
 πράγματα.</p>
-
-<p>92. Ἵνα τοίνυν ὅτι τὰ χρησιμώτατα τῷ δήμῳ
+            <p>92. Ἵνα τοίνυν ὅτι τὰ χρησιμώτατα τῷ δήμῳ
 
 ποιοῦντος ἐν ταῖς συνουσίαις Σωκράτους οἔδε συκο-
 
 <note type="footnote">3 Her. IX 3 4 cf. p. 63, 5 6 Plat. leg. V p. 730 C
 
 7 Isocr. p. 306 A 13 t. IV 161,26; 682, 28 R. cf. Thuc. I 11</note>
-
-<note type="footnote">1 τάλαντα] πάντα AthUVaB 2 μετὰ ταῦτα om Β
+               <note type="footnote">1 τάλαντα] πάντα AthUVaB 2 μετὰ ταῦτα om Β
 
 4 καὶ ante δίκην Mor Re delevi auctore Re cum Rog 5 τῶν
 
@@ -4115,8 +3924,7 @@ Not 29 12 ὡς cum sequcnti οἱ in ὅσοι corrigendum coni Re,
 delendum vel in ὧς vel οὕτως mutandum coni lacobs Add 231
 
 Lect 198 Not 29, auctoribus lacobsio et Cobeto delevi cum Rog</note>
-
-<note type="footnote">13 μετ’ ἀχρηματίας reposui e libris auctore lacobsio cum Rog
+               <note type="footnote">13 μετ’ ἀχρηματίας reposui e libris auctore lacobsio cum Rog
 
 μετὰ χρημασίας Mor Re μετ᾿ ἀχρημασίας Cobet Mnem. III 14
 
@@ -4131,10 +3939,7 @@ UVaB auctoribus lacobsio Lect 198 Not 30 et Sinteni cum Rog
 cum Rog συκοφαντοῦντες Mor Re
 
 LIBANIUS ed. Foerster. V. 5</note>
-
-
-
-<pb n="66"/>
+               <pb n="66"/>
 
 φαντοῦσιν ἔτι σαφέστερον μάθητε, σεσιγῆσθαι μὲν
 
@@ -4145,8 +3950,7 @@ LIBANIUS ed. Foerster. V. 5</note>
 κνύτω κἂν ὑμῶν ἕνα τοῦτο ·πεῖσαι δυνηθῇ, τὴν αὐτὴν
 
 <lb n="5"/> καὶ παρ’ ἐμοῦ λαμβάνετε δίκην.</p>
-
-<p>93. Οὐκ ὀρθῶς, ὦ νέοι, πεποίηκεν Ὅμηρος
+            <p>93. Οὐκ ὀρθῶς, ὦ νέοι, πεποίηκεν Ὅμηρος
 
 ἐν Ἰλιάδι τοὺς μὲν τοῦ δήμου τυπτομένους ὑπ’
 
@@ -4173,10 +3977,8 @@ LIBANIUS ed. Foerster. V. 5</note>
 <note type="footnote">7 II. β 188. Polycr. apud schol. in Aristid. or de IV viris
 
 t. ΙΙΙ p. 480, 31 ed. Dind. Xen. comm. ] 2, 58 sq. cf p. 3</note>
-
-<note type="footnote">2 ταῦτα coni Re | δὲ] ἔτω Ma | &lt;τὰ&gt; νῦν coni</note>
-
-<note type="footnote">5 ταῦτα Ma | λαμβανέτω auctore Nabero Rog 6 ὦν
+               <note type="footnote">2 ταῦτα coni Re | δὲ] ἔτω Ma | &lt;τὰ&gt; νῦν coni</note>
+               <note type="footnote">5 ταῦτα Ma | λαμβανέτω auctore Nabero Rog 6 ὦν
 
 ἐπεποίηκεν Ath 7 &lt;τῇ&gt; Ἰλιάδι auctore Gasda Rog I μετὰ
 
@@ -4205,18 +4007,16 @@ Hirzel | τοὺς δὲ lacobs Lect 198 Not 31 | ἀξιώματι Gasda at cf
 Isocr. p. 134 d 17 προκρίνων auctoribus Re et lacobsio (et
 
 Hirzelio) Rog Ι &lt;οὐ&gt; διὰ lacobs | τρόπων Ma sed τρο in ras</note>
-
-
-
-<pb n="67"/>
+               <pb n="67"/>
 
 τὴν οὕτω διῄρει τὸ δίκαιον. ἔστι γὰρ καὶ εἰς
 
 δῆμον τελοῦντα εἶναι χρηστὸν καὶ τῶν ἄλλων
 
-ὑπερέχοντα τύχῃ γέμειν κακίας.</p></div>
-
-<div type="textpart" subtype="chapter" n="94"><p>ὅ γέ τοι
+ὑπερέχοντα τύχῃ γέμειν κακίας.</p>
+         </div>
+         <div n="94" type="chapter">
+            <p>ὅ γέ τοι
 
 τὴν Κασάνδραν ἐν ὀφθαλμοῖς αἰσχύνας τῆς
 
@@ -4232,9 +4032,10 @@ Hirzelio) Rog Ι &lt;οὐ&gt; διὰ lacobs | τρόπων Ma sed τρο in r
 
 ἔτυπτεν, ὁ δὲ ποιητὴς ἔφησεν, ἀδικεῖται μὲν <lb n="10"/>
 
-Ὀδυσσεύς, βλάπτονται δὲ οἱ λοιποί.</p></div>
-
-<div type="textpart" subtype="chapter" n="95"><p>μή μοι
+Ὀδυσσεύς, βλάπτονται δὲ οἱ λοιποί.</p>
+         </div>
+         <div n="95" type="chapter">
+            <p>μή μοι
 
 μηδὲ τὰς ἀδίκους Αὐτολύκου κλοπὰς μηδὲ τὰς
 
@@ -4245,8 +4046,7 @@ Hirzelio) Rog Ι &lt;οὐ&gt; διὰ lacobs | τρόπων Ma sed τρο in r
 εἰώθασι δίκην ἀπαιτεῖν οἱ θεοί, πῶς ἂν ταῦτα <lb n="15"/>
 
 ἐν ἀμοιβῆς μέρει τοῖς ἀνθρώποις διδοῖεν;</p>
-
-<p>96. Τί φῄς, Ἄνυτε; χείρους ἐγὼ πεποίηκα νυνὶ
+            <p>96. Τί φῄς, Ἄνυτε; χείρους ἐγὼ πεποίηκα νυνὶ
 
 τοὺς ἀκούσαντας τῶν λόγων; οὐκ ἔστιν, οὐκοῦν οὐδὲ
 
@@ -4255,10 +4055,8 @@ Hirzelio) Rog Ι &lt;οὐ&gt; διὰ lacobs | τρόπων Ma sed τρο in r
 εξῆς Ὁμήρῳ πιστεύειν. οὐκ ἂν οὖν δίκαιος εἴην δοῦναι 20
 
 <note type="footnote">4 Qu. Smyrn. XIII 421; Hyg. fab. 116 cf. 1. 11 529, 2; 180, 9</note>
-
-<note type="footnote">12 sq. Od. τ’ 394 sq, Plat. rep. ι p. 334 A sq.</note>
-
-<note type="footnote">1 οὕτω οὐκ vel οὐκ εὖ lacobs 3 ὁ γέ scripsi auctoribus
+               <note type="footnote">12 sq. Od. τ’ 394 sq, Plat. rep. ι p. 334 A sq.</note>
+               <note type="footnote">1 οὕτω οὐκ vel οὐκ εὖ lacobs 3 ὁ γέ scripsi auctoribus
 
 Gasda et Hirzelio cum Rog ὁ δέ libri Mor Re | τι Πα
 
@@ -4267,8 +4065,7 @@ Gasda et Hirzelio cum Rog ὁ δέ libri Mor Re | τι Πα
 Mor Re 6 στρατιὰ reposui e libris cum Rog στρατειᾷ Mor
 
 Re Ι τίς MaB 7 μὲν inserui auctore Sinteni om libri edd</note>
-
-<note type="footnote">12 (1 et 2) et 13 μὴ δὲ MaB 13 δῶρα reposui e libris
+               <note type="footnote">12 (1 et 2) et 13 μὴ δὲ MaB 13 δῶρα reposui e libris
 
 δῶρ’ edd | ἡγεῖσθαι Ath 15 δίκην ἀπαιτεῖν om Ma
 
@@ -4277,10 +4074,7 @@ Re Ι τίς MaB 7 μὲν inserui auctore Sinteni om libri edd</note>
 68, 1 Σωκράτης inserui e libris cum Rog om Mor Re | πάντας
 
 Μa 20 οὐκ ἂν καὶ Σωκράτην ante οὐκ Ath | οὖν om Ath 5*</note>
-
-
-
-<pb n="68"/>
+               <pb n="68"/>
 
 δίκην, οὐκοῦν οὐδὲ Σωκράτης, ὅστις οὐ ποιητὴς αὐτὸς
 
@@ -4295,8 +4089,7 @@ Re Ι τίς MaB 7 μὲν inserui auctore Sinteni om libri edd</note>
 μένων σοφούς τε νομίζειν ὁμοῦ καὶ μὴ πιστεύειν
 
 αὐτοῖς.</p>
-
-<p>97. Ἀλλ’ Ἄνυτος ὥσπερ τῆς φύσεως ἐπὶ τἀναντία
+            <p>97. Ἀλλ’ Ἄνυτος ὥσπερ τῆς φύσεως ἐπὶ τἀναντία
 
 πορευσομένης, εἴ τις Ἀθηναίων φρονιμώτερος ἀναφα-
 
@@ -4317,16 +4110,14 @@ Re Ι τίς MaB 7 μὲν inserui auctore Sinteni om libri edd</note>
 ἔλαυνε; τίνα δὴ τῶν οὐ τοῦτο πεποιηκότων ὡς ἀπει-
 
 θοῦντα τῆς πρὸς ἑαυτὸν συνουσίας ἀπέκλεισεν;</p>
-
-<p>98. Εἰ δὲ λέγεις· αὑτὸν μὲν ἀξιόπιστον οὐκ
+            <p>98. Εἰ δὲ λέγεις· αὑτὸν μὲν ἀξιόπιστον οὐκ
 
 <lb n="20"/> ἐνόμιζεν ἔσεσθαι, τῇ δὲ δόξῃ τῶν ποιητῶν ἐπὶ
 
 τὸ πείθειν ἐχρῆτο, τὸ μὲν ὧς ἐναντία σαυτῷ λέγεις
 
 <note type="footnote">21 Plat. apol. p. 27 A</note>
-
-<note type="footnote">1 οὐκοῦν om Rog 4 ἀφῄρει? 6 μὴ om Ma .9 πορευ-
+               <note type="footnote">1 οὐκοῦν om Rog 4 ἀφῄρει? 6 μὴ om Ma .9 πορευ-
 
 σομένης scripsi e MaAthB cum Rog πορευσομένοις Va πορευο-
 
@@ -4349,18 +4140,16 @@ MaB edd | οὐ om Ma 18 πρὸς ἑαυτὸν reposui e libris cum
 Rog παρ’ ἑαυτῷ Mor Re 19 αὐτὸν MaUVaB 21 τῶ Ma
 
 cf. p. 59, 12</note>
-
-
-
-<pb n="69"/>
+               <pb n="69"/>
 
 παρίημι τοτὲ μὲν ὡς κατηγοροῦντα, τοτὲ δὲ ὡς ἐπαι-
 
 νοῦντα τοὺς αὐτοὺς διαβάλλων, πολὺ δέ σοι τούτου
 
-λόγον ἰσχυρότερον ἀντιθήσω.</p></div>
-
-<div type="textpart" subtype="chapter" n="99"><p>φέρε γάρ, ἐπὶ τίνα
+λόγον ἰσχυρότερον ἀντιθήσω.</p>
+         </div>
+         <div n="99" type="chapter">
+            <p>φέρε γάρ, ἐπὶ τίνα
 
 τῶν θεῶν ἐν τοῖς ἀδήλοις καταφεύγομεν καὶ παρὰ τοῦ
 
@@ -4370,9 +4159,10 @@ cf. p. 59, 12</note>
 
 τὸν Πύθιον, οὗ τοῖς χρησμοῖς ἀκολουθοῦντες τὰ μέ-
 
-γιστα τῶν ἔργων ἐπράξαμεν;</p></div>
-
-<div type="textpart" subtype="chapter" n="100"><p>οὗτος τοίνυν ὁ τῇ
+γιστα τῶν ἔργων ἐπράξαμεν;</p>
+         </div>
+         <div n="100" type="chapter">
+            <p>οὗτος τοίνυν ὁ τῇ
 
 πόλει πατρῷος ἅπαντας τοὺς ἄλλους ὑπερβὰς τὸν νυνὶ
 
@@ -4387,14 +4177,12 @@ cf. p. 59, 12</note>
 τῆς ἡμέρας ὁ Σωκράτης] ζηλωτός, ὧς οὐχ ἕτερος,
 
 μεῖζον μὲν οὐ φρονήσας ἢ πρόσθεν οὐδὲ φυσηθεὶς <lb n="15"/>
-
-<note type="footnote">6 cf. p. 117,14 9 Plat. apol. p. 26 E sq. 10 cf. p. 117,9 sq.
+               <note type="footnote">6 cf. p. 117,14 9 Plat. apol. p. 26 E sq. 10 cf. p. 117,9 sq.
 
 141,4; t. IV 431, 13. Plat. apol. p. 20 E 11 Her. I 65
 
 15 Xen. comm. I 2, 25. Dem. p. 1377, 29</note>
-
-<note type="footnote">2 μοι Ma 3 ἰσχυρότερον scripsi auctoribus Morello
+               <note type="footnote">2 μοι Ma 3 ἰσχυρότερον scripsi auctoribus Morello
 
 lacobsio Not 31 Sinteni cum Rog ἰσχυρὸν libri Mor Re
 
@@ -4407,8 +4195,7 @@ beto cum Rog παρ’ αὐτοῦ Αἶα παρὰ τούτου Mor Re 6 ἐ
 dum coni post τὴν Mor, post θαυμαζομένην Re, at mente
 
 supplere sufficit similiter atque t. I 475,22; II 465, 5; IV 45,4</note>
-
-<note type="footnote">11 ταύτην scripsi ταύτῃ libri edd 12 προσεῖπεν scripsi
+               <note type="footnote">11 ταύτην scripsi ταύτῃ libri edd 12 προσεῖπεν scripsi
 
 auctoribus Mor Sinteni Gasda προσειπεῖν libri Mor Re γὰρ
 
@@ -4425,16 +4212,14 @@ UVaB auctoribus lacobsio Add 2 et 151 Lect 198 Not 31 Sin-
 teni, Cobeto cum Rog om MaAth Mor Re 15 φυσιωθεὶς
 
 AthUVaB</note>
-
-
-
-<pb n="70"/>
+               <pb n="70"/>
 
 ὑπὸ τῆς μαρτυρίας, τῶν δ’ αὖ φθονούντων εἰκόντων
 
-αὐτῷ τῆς ἐφ’ ἑκάστου γνώσεως.</p></div>
-
-<div type="textpart" subtype="chapter" n="101"><p>ἐν οὖν τοῖς
+αὐτῷ τῆς ἐφ’ ἑκάστου γνώσεως.</p>
+         </div>
+         <div n="101" type="chapter">
+            <p>ἐν οὖν τοῖς
 
 πρὸς τοὺς νέους λόγοις τί ἂν ἔδει Πινδάρου καὶ
 
@@ -4464,15 +4249,15 @@ AthUVaB</note>
 
 ἑστηκότι τί περιόδων ἔδει μέγιστον ἐφόδιον εἰς πειθὼ
 
-τὴν ἐπὶ σοφίᾳ φήμην ἔχοντι;</p></div>
-
-<div type="textpart" subtype="chapter" n="102"><p>νέοι δὲ πατέρων
+τὴν ἐπὶ σοφίᾳ φήμην ἔχοντι;</p>
+         </div>
+         <div n="102" type="chapter">
+            <p>νέοι δὲ πατέρων
 
 <note type="footnote">10 [Xen.] apol. ’ξ 14 17 Xen. comm. I 2, 49 et 51 sq.
 
 apol. ’ξ 20</note>
-
-<note type="footnote">1 εἰκότων Ma 2 ἑκάστω Ma 3 ἂν] δὴ coni Hefer-
+               <note type="footnote">1 εἰκότων Ma 2 ἑκάστω Ma 3 ἂν] δὴ coni Hefer-
 
 mehl 4 &lt;τῶ λοιπῶν&gt; ποιητῶν? Ι Δελφῶν reposui e libris
 
@@ -4501,10 +4286,7 @@ cobsio Add 64 Not 32 κατατολμώντων Lect 199 App Pors
 321) κατὰ τῶν λόγων libri edd καταβοῶν Cobet Mnem,
 
 III 150</note>
-
-
-
-<pb n="71"/>
+               <pb n="71"/>
 
 τε πρότερον ἄγοντες ἐκεῖνον, ὡς λέγεις, καὶ πρεσβυ-
 
@@ -4522,9 +4304,10 @@ III 150</note>
 
 αὑτῶν ἠνάγκασαν σωφρονεῖν ἴ’ τὸν δὲ ἔπαυσαν ἀπολ-
 
-λύντα τοὺς νέους.</p></div>
-
-<div type="textpart" subtype="chapter" n="103"><p>τίς οὖν πατὴρ ἀπεκήρυξε τὸν
+λύντα τοὺς νέους.</p>
+         </div>
+         <div n="103" type="chapter">
+            <p>τίς οὖν πατὴρ ἀπεκήρυξε τὸν
 
 αὑτοῦ φάσκων πονηρὸν διὰ Σωκράτην γεγονέναι; τίς <lb n="10"/>
 
@@ -4545,8 +4328,7 @@ III 150</note>
 τοῦ δεδιότος μὴ διὰ κλοπῆς νικήσῃ. κἂν ἀπάτην ὥσπερ
 
 <note type="footnote">18 Plat. rep. III p. 389 B sq.</note>
-
-<note type="footnote">1 τε inserui e libris om edd 3 ἐλαυνόμενοι Β 4 οὔτ’ οὖν
+               <note type="footnote">1 τε inserui e libris om edd 3 ἐλαυνόμενοι Β 4 οὔτ’ οὖν
 
 reposui e Ma VaB auctore Sinteni et Cobeto cum Rog οὔτ’ ἂν
 
@@ -4579,16 +4361,14 @@ scripsi e MaUB εἰς ἅπαξ AthVa edd εἰσάπαν Sintenis
 16 γίνεσθαι Ma 18 νίκης, ἧ κἂν Ath | ἀπάτην scripsi auc-
 
 toribus Sinteni et Cobeto cum Rog ἀπατῶν libri Mor Re</note>
-
-
-
-<pb n="72"/>
+               <pb n="72"/>
 
 μηχανὴν προσαγάγῃς τοῖς ἐχθροῖς, ἔννομα δέδρακας.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="104"><p>Οὕτως ὁ Θεμιστοκλῆς ἐκεῖνος δυοῖν ἀπάταιν
+</p>
+         </div>
+         <div n="104" type="chapter">
+            <p>Οὕτως ὁ Θεμιστοκλῆς ἐκεῖνος δυοῖν ἀπάταιν
 
 <note type="marginal">R III 36</note> | τῇ μὲν ἐτείχισε τὴν πόλιν, τῇ δ’ ἔσωσε τὴν
 
@@ -4600,9 +4380,10 @@ toribus Sinteni et Cobeto cum Rog ἀπατῶν libri Mor Re</note>
 
 κρεῖττον τοῦ τἀληθὲς ἀκοῦσαι τὸ παρακρουσθῆναι.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="105"><p>τί οὖν ἠδίκει Σωκράτης ἢ Μέλανθος ὧς ἐνίκησε
+</p>
+         </div>
+         <div n="105" type="chapter">
+            <p>τί οὖν ἠδίκει Σωκράτης ἢ Μέλανθος ὧς ἐνίκησε
 
 λέγων, ἔστω γάρ τοι καὶ ψεῦδος ἐν μάχαις, δέχεται
 
@@ -4612,9 +4393,10 @@ toribus Sinteni et Cobeto cum Rog ἀπατῶν libri Mor Re</note>
 
 τὰ γὰρ τῶν Τρώων ἔκλεπτε τῶν τὰ τιμιώτατα τοῦ
 
-Μενελάου κεκλοφότων προτέρων.</p></div>
-
-<div type="textpart" subtype="chapter" n="106"><p>ἀλλ’ οἴεσθε
+Μενελάου κεκλοφότων προτέρων.</p>
+         </div>
+         <div n="106" type="chapter">
+            <p>ἀλλ’ οἴεσθε
 
 Σωκράτην. εἰ κατὰ τῶν πολιτῶν καὶ φίλων παρεκάλει
 
@@ -4633,8 +4415,7 @@ schoL ad Arist. Ach. 146; ad Plat. symp. p. 61,25; ad Tim.
 p. 947, 16 sq. 11 Lys. contra Polycr. fr. CXIII Thalh. (schol.
 
 in Aristid. III 320, 4 et 25) cf. p. 4 12 cf. t. IV 23, 1 sq. R</note>
-
-<note type="footnote">2 οὕτως ex οὕτος corr Ma 2 3 δὲ ἔλαβε Ma 8 ἂν Ma
+               <note type="footnote">2 οὕτως ex οὕτος corr Ma 2 3 δὲ ἔλαβε Ma 8 ἂν Ma
 
 ὧς &lt;εὖ&gt; lacobs Lect 199 Not 34 | Μέλανθον? cf. p. 79,
 
@@ -4659,10 +4440,7 @@ Ath ὧσπερ οὐκ εἵξοντος Β ὥσπερ οὐκ εἴξοντο
 οὐκ ξοντος cum ras 1 litt ἁ ὧς οὐκ εἴξοντος Mor Re ὧς οὐχ
 
 ἥξοντος auctore Re Rog</note>
-
-
-
-<pb n="73"/>
+               <pb n="73"/>
 
 παραδείγματα; ἀλλ’, οἶμαι, δεικνὺς ἔστιν οὗ τὴν κλοπὴν
 
@@ -4676,9 +4454,10 @@ Ath ὧσπερ οὐκ εἵξοντος Β ὥσπερ οὐκ εἴξοντο
 
 χονται χρημάτων πᾶν κέρδος τὸ παρὰ τῶν δυσμενῶν
 
-ὅσιον κρίνοντες.</p></div>
-
-<div type="textpart" subtype="chapter" n="107"><p>ὁ δὲ Θυέστης καὶ τὸ τοὺς
+ὅσιον κρίνοντες.</p>
+         </div>
+         <div n="107" type="chapter">
+            <p>ὁ δὲ Θυέστης καὶ τὸ τοὺς
 
 Ἕλληνας ὑπὸ τῶν ὑμετέρων ἐξηπατῆσθαι πατέρων
 
@@ -4701,10 +4480,8 @@ Ath ὧσπερ οὐκ εἵξοντος Β ὥσπερ οὐκ εἴξοντο
 <note type="footnote">7 cf. p. 74, 8. Hyg. fab. 258. Diog. L. VI 2, 73 8 Her.
 
 VIII 75 10 Xanthum cf p. 72, 8</note>
-
-<note type="marginal">1 οὖσαν post δεικνὺς inserendum videtur Ι ἔνεστιν UVaB</note>
-
-<note type="footnote">3 καὶ inserui auctore Re cum Rog om libri Mor Re
+               <note type="marginal">1 οὖσαν post δεικνὺς inserendum videtur Ι ἔνεστιν UVaB</note>
+               <note type="footnote">3 καὶ inserui auctore Re cum Rog om libri Mor Re
 
 4 Λακεδαιμονίοις Β Ι καὶ inserui e Β auctore lacobsio Not 34
 
@@ -4733,14 +4510,12 @@ tore Re ἀναμίξειε καὶ Sintenis ἀναμίξειεν libri ἀν
 Add 143 Lect 199 | ὧς — 74, 1 ἐμνήσθη pro scholio margi-
 
 nali ad τοὺς προγόνους habuit Rog</note>
+               <pb n="74"/>
 
-
-
-<pb n="74"/>
-
-ἐξαπατησάντων τοὺς Ἕλληνας οὕτως ἐμνήσθη.</p></div>
-
-<div type="textpart" subtype="chapter" n="108"><p>ὥστ’
+ἐξαπατησάντων τοὺς Ἕλληνας οὕτως ἐμνήσθη.</p>
+         </div>
+         <div n="108" type="chapter">
+            <p>ὥστ’
 
 εἰ μὲν ὑπ’ εὐηθείας τοῦτο πέπονθεν ὁ Σωκράτης,
 
@@ -4759,8 +4534,8 @@ nali ad τοὺς προγόνους habuit Rog</note>
 τῷ δὲ ἀδίκους ἄκαιρον ἂν ἦν λέγειν ἃ πολέμιοι πολε-
 
 <lb n="10"/> μίους ἔβλαψαν.</p>
-
-<note type="marginal">RIII 38</note> <p>109. Ἀλλὰ τί ταῦτα θαυμάζω | ἀφεὶς ἐφ’ ᾳ
+            <note type="marginal">RIII 38</note>
+            <p>109. Ἀλλὰ τί ταῦτα θαυμάζω | ἀφεὶς ἐφ’ ᾳ
 
 ἄν τις σχετλιάσειε; διδάσκει γάρ, φησίν, ἐπιορ-
 
@@ -4774,13 +4549,13 @@ nali ad τοὺς προγόνους habuit Rog</note>
 
 ἰδεῖν τολμῶντα τὴν θάλατταν φάσκοι τοὺς ἄλλους
 
-ἀναπείθειν χρῆσθαι τῇ θαλάττῃ καὶ τῷ πλεῖν.</p></div>
-
-<div type="textpart" subtype="chapter" n="110"><p>δεί-
+ἀναπείθειν χρῆσθαι τῇ θαλάττῃ καὶ τῷ πλεῖν.</p>
+         </div>
+         <div n="110" type="chapter">
+            <p>δεί-
 
 <note type="footnote">8 t. ΙΙ 75, 20 14 Plat. apol. p. 21 E cum scholio</note>
-
-<note type="footnote">3 δεινότ τος cum ras 1 litt U 4 δὲ Ma Ι ἐπιπλεἱστον
+               <note type="footnote">3 δεινότ τος cum ras 1 litt U 4 δὲ Ma Ι ἐπιπλεἱστον
 
 MaB 5 τὸν λόγον reposui e libris auctore Re cum Rog
 
@@ -4809,10 +4584,7 @@ toribus lacobsio Not 35 et Sinteni cum Rog φάσκῃ Ma
 φάσκει Ath Mor Re 18 ἀναπείθειν Ma sed εἰν in ras m2
 
 θαλάσσῃ Β</note>
-
-
-
-<pb n="75"/>
+               <pb n="75"/>
 
 ξας, ὦ τάν, ἐπιωρκηκότα πολλαχοῦ τὸν ἄνθρωπον καὶ
 
@@ -4832,9 +4604,10 @@ toribus lacobsio Not 35 et Sinteni cum Rog φάσκῃ Ma
 
 δοκιμάζειν, τούτοις ἃ τοὺς λόγους αἰτιᾷ συκοφαντῶν
 
-ἐλέγχῃ.</p></div>
-
-<div type="textpart" subtype="chapter" n="111"><p>τὸν ἐπαινοῦντα λῃστείαν &lt;ἢ μοιχείαν&gt; οὐχ <lb n="10"/>
+ἐλέγχῃ.</p>
+         </div>
+         <div n="111" type="chapter">
+            <p>τὸν ἐπαινοῦντα λῃστείαν &lt;ἢ μοιχείαν&gt; οὐχ <lb n="10"/>
 
 ὁρῶμεν ἀπεχόμενον τῶν ἀλλοτρίων ἀγαθῶν, ἀλλὰ τὸν
 
@@ -4857,8 +4630,7 @@ toribus lacobsio Not 35 et Sinteni cum Rog φάσκῃ Ma
 <note type="footnote">1 Xen. comm. I 2, 28 8 Dem. p. 315, 5 18 Dem.
 
 p. 26(5,21; 285,19</note>
-
-<note type="footnote">1 ὦ τάν scripsi e MaUVaB ὦταν Ath edd cf. t. IV 7, 16 R
+               <note type="footnote">1 ὦ τάν scripsi e MaUVaB ὦταν Ath edd cf. t. IV 7, 16 R
 
 ἐπιωρκηκότα scripsi ex ἁ auctore Re cum Rog ἐπιορκηκότα
 
@@ -4867,8 +4639,7 @@ MaAth VaB Mor Re 2 συγχέαντα scripsi e Ma sed ἁ (1) ex
 ὁ corr m2 auctore Re συγχέοντα AthUVaB edd 5
 
 scripsi αὐτῷ libri edd 6 αὐτοῦ scripsi αὐτῷ libri edd</note>
-
-<note type="footnote">7 φὴς scripsi φὴς UVaB Rog φῆς MaAth Mor Re
+               <note type="footnote">7 φὴς scripsi φὴς UVaB Rog φῆς MaAth Mor Re
 
 9 δοκιμάζειν scripsi θαυμάζειν libri edd | τοῖς λόγοις Ma
 
@@ -4885,10 +4656,7 @@ cum Rog αὐτὸν MaAth Mor Re Ι φυλάττοι scripsi ex AthUVaB
 φυλάττει Ma edd 16 περὶ Ath 19 αὐτοῦ scripsi e Β
 
 cum Rog αὐτοῦ MaAthUVa Mor Re</note>
-
-
-
-<pb n="76"/>
+               <pb n="76"/>
 
 τῶν ἑαυτοῦ βεβούλευται. εἰ &lt;δέ&gt; τις ἐν μάχη
 
@@ -4900,9 +4668,10 @@ cum Rog αὐτοῦ MaAthUVa Mor Re</note>
 
 <note type="marginal">RΙΙΙ 39</note> τοιούτοις σύμβουλος Ι πιθανὸς ὁ πρῶτος τῶν
 
-<lb n="6"/> πράξεων ὧν ἔχεσθαι συνεβούλευσεν ἁπτόμενος.</p></div>
-
-<div type="textpart" subtype="chapter" n="112"><p>εἰ
+<lb n="6"/> πράξεων ὧν ἔχεσθαι συνεβούλευσεν ἁπτόμενος.</p>
+         </div>
+         <div n="112" type="chapter">
+            <p>εἰ
 
 τοίνυν Σωκράτης ἐπιορκεῖν καὶ κλέπτειν καὶ βιάζεσθαι
 
@@ -4926,9 +4695,10 @@ cum Rog αὐτοῦ MaAthUVa Mor Re</note>
 
 τὰς ἐπὶ τὸ βέλτιον ὁδούς, αὐτὸς δὲ ᾑρεῖτο τὴν πρὸς
 
-τὰ χείρω φέρουσαν.</p></div>
-
-<div type="textpart" subtype="chapter" n="113"><p>ἀλλ’ οὔτε λόγοις οὔτε ἔργοις
+τὰ χείρω φέρουσαν.</p>
+         </div>
+         <div n="113" type="chapter">
+            <p>ἀλλ’ οὔτε λόγοις οὔτε ἔργοις
 
 οὗτός ποτε πρὸς κακίαν ἡγήσατο τοῖς νέοις, ἀλλ’ οἱ
 
@@ -4965,10 +4735,7 @@ Rog ἀποστέρει U ἀποστερεῖ Va ἀποστερῇ Ath Mor Re
 τιστον MaAth edd 18 οὔτε (2) reposui e libris οὔτ’ edd
 
 19 τοῖς νέοις reposui e libris cum Rog τῶν νέων Mor Re</note>
-
-
-
-<pb n="77"/>
+               <pb n="77"/>
 
 μηδὲν ἐοικότες τούτῳ καὶ γράφονται γραφὰς ἀδίκους
 
@@ -4991,8 +4758,7 @@ Rog ἀποστέρει U ἀποστερεῖ Va ἀποστερῇ Ath Mor Re
 καὶ δικαίως ζῆν αἱρουμένοις ἐν μέσῳ καὶ πάντων <lb n="10"/>
 
 ὁρώντων ἅπαντα γίγνεται.</p>
-
-<p>114. Διὸ καὶ θαυμάσαι τις ἂν Ἀνύτου πείθοντος
+            <p>114. Διὸ καὶ θαυμάσαι τις ἂν Ἀνύτου πείθοντος
 
 ὑμᾶς δεινότερα τῶν φανερῶν τἀφανῆ νομίζειν. εἰ
 
@@ -5003,8 +4769,7 @@ Rog ἀποστέρει U ἀποστερεῖ Va ἀποστερῇ Ath Mor Re
 μόνους ἔχων τοὺς ἐραστάς; ποῦ; πότε; τί ταῦτα
 
 <note type="footnote">13 cf. p. 33, 20 sq.</note>
-
-<note type="footnote">2 ἀναρπάσαι scripsi e MaAth auctore Cobeto Mnem. III
+               <note type="footnote">2 ἀναρπάσαι scripsi e MaAth auctore Cobeto Mnem. III
 
 150 cum Rog ἁρπάσαι UVaB Mor Re 3 τοῦτον Β Ι post λαμ-
 
@@ -5041,18 +4806,16 @@ Ath Mor Re | ἂν inserui e MaUVaB cum Rog om. Ath Mor Re
 ποῦ ποτε UVa που ποτὲ Ath Mor Re τοῦ αὐτοῦ Ma ἐρα-
 
 στάς πού ποτε lacobs Not 36 et Gasda</note>
-
-
-
-<pb n="78"/>
+               <pb n="78"/>
 
 ἀναισχνυντεῖς, Ἄνυτε; τίς συνουσία Σωκράτους ἔξω
 
 τῶν γνωρίμων τόπων; τίς οἴκοι; τίς ἐπ’ ἀγροῦ; τίς
 
-<note type="marginal">R ΙΙΙ 40</note> ἑτέρωθι;</p></div>
-
-<div type="textpart" subtype="chapter" n="115"><p>ἀλλ’ ἔνα μὴ καὶ τοῦτ’ αὐτὸ | φά-
+<note type="marginal">R ΙΙΙ 40</note> ἑτέρωθι;</p>
+         </div>
+         <div n="115" type="chapter">
+            <p>ἀλλ’ ἔνα μὴ καὶ τοῦτ’ αὐτὸ | φά-
 
 σκων λανθάνειν εἰς ἀδίκημα θῇς, τοσοῦτον ἀπόκριναι·
 
@@ -5066,9 +4829,10 @@ Ath Mor Re | ἂν inserui e MaUVaB cum Rog om. Ath Mor Re
 
 οἷα κατηγορῶν εἴρηκας, πολλὴν ἀνδρίαν, μᾶλλον δὲ
 
-<lb n="10"/> ἀπόνοιαν τοῦ Σωκράτους λέγεις.</p></div>
-
-<div type="textpart" subtype="chapter" n="116"><p>τί οὖν μαθὼν
+<lb n="10"/> ἀπόνοιαν τοῦ Σωκράτους λέγεις.</p>
+         </div>
+         <div n="116" type="chapter">
+            <p>τί οὖν μαθὼν
 
 τὰ μὲν εἰς μέσον ἔφερε, τὰ δὲ ἀπεκρύπτετο; ἣ γὰρ
 
@@ -5083,10 +4847,8 @@ Ath Mor Re | ἂν inserui e MaUVaB cum Rog om. Ath Mor Re
 νέους καὶ καταφρονεῖσθαι τοὺς νόμους καὶ κινεῖσθαι
 
 τὴν πολιτείαν δεινότερον γένοιτο;</p>
-
-<note type="footnote">4 Plat. rep. IV p. 437 C</note>
-
-<note type="footnote">1 σοι ante συνουσία edd delevi 3 καὶ om Ath Ι αὐτὸ
+            <note type="footnote">4 Plat. rep. IV p. 437 C</note>
+            <note type="footnote">1 σοι ante συνουσία edd delevi 3 καὶ om Ath Ι αὐτὸ
 
 φάσκων scripsi ex AthUVaB ἀποφάσκων Ma edd 4 λαν-
 
@@ -5117,12 +4879,8 @@ Rog cf. t. IV 120, 15 17 γένοιτο reposui e libris cum Rog
 aut δεινότερον καὶ ἀσεβέστερον γένοιτο“ κακὸν γένοιτο lacobs
 
 Lect 199 Anth. Pal. III 681</note>
-
-
-
-<pb n="79"/>
-
-<p>117. Ὅταν δὲ λέγῃ τοῖς μὲν νέοις αὐτὸν διαλέγε-
+            <pb n="79"/>
+            <p>117. Ὅταν δὲ λέγῃ τοῖς μὲν νέοις αὐτὸν διαλέγε-
 
 σθαι, τοῖς πρεσβυτέροις δὲ οὐκ ἐθέλειν, ψεύδεται. καὶ
 
@@ -5138,9 +4896,10 @@ Lect 199 Anth. Pal. III 681</note>
 
 παρὰ πάντα τὸν χρόνον ἃ νῦν ἀκούετε πιστότερα θή-
 
-σεσθαι.</p></div>
-
-<div type="textpart" subtype="chapter" n="118"><p>χωρὶς δὲ τούτων, εἰ μὲν αὑτὸν μὲν δι-
+σεσθαι.</p>
+         </div>
+         <div n="118" type="chapter">
+            <p>χωρὶς δὲ τούτων, εἰ μὲν αὑτὸν μὲν δι-
 
 δάσκαλον, οἴκημα δέ τι διδασκαλεῖον προσειπὼν ἐνταῦ- <lb n="10"/>
 
@@ -5161,10 +4920,8 @@ Lect 199 Anth. Pal. III 681</note>
 τῶν βουλομένων περιέρρει, τί δεῖ τοῦτον λέγειν ὧς
 
 τοῖς μὲν συνῆν, | τοῖς δὲ οὔ; οὐ γὰρ Σωκράτης <note type="marginal">R III 41</note>
-
-<note type="footnote">3 cf. Plat. apol. p. 30 A</note>
-
-<note type="footnote">4 ὀλίγοις Ma Mor | καὶ ante χαιρόντων libri edd de-
+               <note type="footnote">3 cf. Plat. apol. p. 30 A</note>
+               <note type="footnote">4 ὀλίγοις Ma Mor | καὶ ante χαιρόντων libri edd de-
 
 levi 7 νομίζει cum ras 1 litt post ι(2) Ma | ἂν ante αὑτοῖς
 
@@ -5191,10 +4948,7 @@ Ath 11 ἱδρυθεὶς scripsi e VaB cum Rog ἱδρυνθεὶς Ma sed
 supplevit Cobetus | δὲ Ath δὴ Β | τοῦτον scripsi cum Par 3017
 
 τοῦτο reliqui libri edd | λέγειν Ma sed ν in ras m2</note>
-
-
-
-<pb n="80"/>
+               <pb n="80"/>
 
 τοὺς τῆς ἀκοῆς ἐπιθυμοῦντας ἀπήλαυνεν, ἀλλ’ οἱ μηδὲν
 
@@ -5204,9 +4958,10 @@ supplevit Cobetus | δὲ Ath δὴ Β | τοῦτον scripsi cum Par 3017
 
 ὑπὲρ τῶν πλεῖν οὐ βουλομένων, ἤ, νὴ Δία γε, ταῖς
 
-<lb n="5"/> κρήναις ὑπὲρ τῶν οὐχ ὑδρευομένων.</p></div>
-
-<div type="textpart" subtype="chapter" n="119"><p>εἰ δὲ δεῖ
+<lb n="5"/> κρήναις ὑπὲρ τῶν οὐχ ὑδρευομένων.</p>
+         </div>
+         <div n="119" type="chapter">
+            <p>εἰ δὲ δεῖ
 
 καὶ τὴν αἰτίαν εἰπεῖν, πόθεν νέοι μᾶλλον ἢ πρεσβύ-
 
@@ -5230,17 +4985,17 @@ supplevit Cobetus | δὲ Ath δὴ Β | τοῦτον scripsi cum Par 3017
 
 τοῖς σφόδρα βουλομένοις ἐν οἷσπερ οἱ νέοι διατρίβειν
 
-ἐμποδὼν ἂν εἴη.</p></div>
-
-<div type="textpart" subtype="chapter" n="120"><p>μὴ δὴ τοῦτο λεγέτω τις, ὧς
+ἐμποδὼν ἂν εἴη.</p>
+         </div>
+         <div n="120" type="chapter">
+            <p>μὴ δὴ τοῦτο λεγέτω τις, ὧς
 
 νέοι Σωκράτει συνῆσαν, ἀλλ’ εἴ τις τῶν πρεσβυτέρων
 
 εἴρχθη συνεῖναι βουλόμενος. τὸ μὲν γὰρ ἦν ἂν τοῦ
 
 <note type="footnote">11 Plat. apol. p. 28 C</note>
-
-<note type="footnote">2 προσίεσαν MaUVa 3 ἂν inserui e libris cum Rog
+               <note type="footnote">2 προσίεσαν MaUVa 3 ἂν inserui e libris cum Rog
 
 om Mor Re ὡσπερεὶ lacobs Lect 199 | εἴ &lt;τις&gt; coni
 
@@ -5269,10 +5024,7 @@ coll 1. 6 19 γὰρ Ma sed γ in ras m2 | ἦν ἂν scripsi
 toribus lacobsio Lect 199 App. Pors 321 et Sinteni εἴη ἂν
 
 lacobs Not 38 ἕνεκα libri edd</note>
-
-
-
-<pb n="81"/>
+               <pb n="81"/>
 
 φθονήσαντος ὧν εἶχεν, τὸ δ’, εἴπερ ἦγον σχολήν,
 
@@ -5295,8 +5047,7 @@ lacobs Not 38 ἕνεκα libri edd</note>
 ὕπουλα φυλάττεσθαι τῶν ἐπῶν ὥσπερ ἐκεῖνοι τὰς ὑφά- <lb n="10"/>
 
 λους.</p>
-
-<p>121. Ἀλλὰ τί βούλεσθε περὶ τῆς Ἀθηνᾶς, ὦ Ἀθη-
+            <p>121. Ἀλλὰ τί βούλεσθε περὶ τῆς Ἀθηνᾶς, ὦ Ἀθη-
 
 ναῖοι, πιστεῦσαι εὐθὺς τοὺς ὑμετέρους υἱεῖς, ὡς ἀν-
 
@@ -5313,8 +5064,7 @@ lacobs Not 38 ἕνεκα libri edd</note>
 14 II. δ’ 81 sq. Plat. rep. 11 p. 377; 379 E 15 II. ὁ 18 sq.
 
 16 Arist. Plut. 276. Dem. p. 270, 8 17 II. γ 383 sq.</note>
-
-<note type="footnote">1 εἶχεν scripsi auctoribus lacobsio et Sinteni εἶχον libri
+               <note type="footnote">1 εἶχεν scripsi auctoribus lacobsio et Sinteni εἶχον libri
 
 edd I τῶ Ma | ἦγον Ma sed γον in ras m2 εἶχον Va et
 
@@ -5345,10 +5095,7 @@ cor. p. 327,29 τὰ πολλά libri Mor Re qui τἀπατηλὰ coni τὰ
 13 τίς πιστεῦσαι Ath 15 συγχέειν Β
 
 LIBANIUS ed. Foerster. V. 6</note>
-
-
-
-<pb n="82"/>
+               <pb n="82"/>
 
 δρῷ γένοιτο, νῦν δὲ αὐτή τε καὶ Ἄρης ὑπὸ Διομήδους
 
@@ -5367,8 +5114,8 @@ LIBANIUS ed. Foerster. V. 6</note>
 σάμενος τὸν ἑαυτοῦ πατέρα, τούτων δὲ, οὐ κουφότερα
 
 παρὰ τοῦ παιδὸς παθών;</p>
-
-<lb n="10"/> <p>122. Ἄρα διαφθείρει Σωκράτης τοὺς νέους ἣ δια-
+            <lb n="10"/>
+            <p>122. Ἄρα διαφθείρει Σωκράτης τοὺς νέους ἣ δια-
 
 φθείρεσθαι κωλύει; καίτοι ποῦ καλὸν Ὅμηρον μὲν
 
@@ -5383,18 +5130,15 @@ LIBANIUS ed. Foerster. V. 6</note>
 τοὺς μὲν ἄλλους δίκην ὑπέχειν, τοῦτον δὲ μηδὲ διδόναι
 
 λόγον;   </p>
-
-<p>123. Ἵνα τοίνυν μήτ’ αὐτὸς ἀπιστῇ μήθ’ ὑμεῖς, ὧς
+            <p>123. Ἵνα τοίνυν μήτ’ αὐτὸς ἀπιστῇ μήθ’ ὑμεῖς, ὧς
 
 κακῶς εἴρηκε τὸν Ὅμηρον, ἀναμνήσω τι τῶν αὐτοῦ
 
 <note type="footnote">1 II ε 334 et 855 sq. 2 II. φ 442 sq. 4 II. ἁ 397 sq.</note>
-
-<note type="footnote">5 11. ὒ 31 sq. Plat. rep. II p. 378 B sq. 6 Hes. theog.
+               <note type="footnote">5 11. ὒ 31 sq. Plat. rep. II p. 378 B sq. 6 Hes. theog.
 
 180. Plat. rep. II p. 377 E sq. 8 II. ’ξ 204</note>
-
-<note type="footnote">2 τὴν reposui e libris cum Rog τὸν Mor Re 3 μικρὸν
+               <note type="footnote">2 τὴν reposui e libris cum Rog τὸν Mor Re 3 μικρὸν
 
 Ath 4 Δία inserui auctore Cobeto cum Rog, πατέρα lacobsius
 
@@ -5415,14 +5159,10 @@ auctore Cobeto μὴ libri edd 18 μήτ’ αὐτὸς ἀπιστῇ scripsi
 auctore Re cum Rog μήτ’ αὐτὸς ἐπιστῇ libri sed ἔπι eras ἁ
 
 μὴ ταὐτὰ ἐπιστῇ Mor Re μὴ ταῦτα ἀπιστῆτ᾿ μεὶς coni Sintenis</note>
-
-<note type="footnote">19 τι scripsi cum Rog τί libri Mor Re
+               <note type="footnote">19 τι scripsi cum Rog τί libri Mor Re
 
 LIBANIUS de. Foerster. V. 6</note>
-
-
-
-<pb n="83"/>
+               <pb n="83"/>
 
 μικρόν. ὅτε τοίνυν ἔφασκεν Ὀδυσσέα διὰ τὴν ἱεροσυ-
 
@@ -5440,9 +5180,10 @@ LIBANIUS de. Foerster. V. 6</note>
 
 ἅπασι. τὴν μὲν γὰρ Ἰλιάδα κοινὸν ἔπαινον συγκεῖσθαι,
 
-θατέρᾳ δὲ τὸν Ὀδυσσέα τετιμῆσθαι.</p></div>
-
-<div type="textpart" subtype="chapter" n="124"><p>διὰ τοῦτο
+θατέρᾳ δὲ τὸν Ὀδυσσέα τετιμῆσθαι.</p>
+         </div>
+         <div n="124" type="chapter">
+            <p>διὰ τοῦτο
 
 τὴν Ἀθηνᾶν αὐτοῦ ποιεῖ τῆς σωτηρίας ἐπιμελουμένην <lb n="10"/>
 
@@ -5463,12 +5204,10 @@ LIBANIUS de. Foerster. V. 6</note>
 <note type="footnote">1 Antisth. Ulix. 3 sq. 3 Her. VII 170; VIII 19; 108; IX
 
 73; 107 5 sq. cf. t. IV p. 925, 1 sq. R 7 Antisth. Ulix. 1</note>
-
-<note type="footnote">10 Od. ἑ 382 sq. 11 cf. t. IV 166, 25 12 Od. v 189 sq.;
+               <note type="footnote">10 Od. ἑ 382 sq. 11 cf. t. IV 166, 25 12 Od. v 189 sq.;
 
 θ’ 18 sq. 16 Od. ἴ’ 316 sq. ἁ 68 sq.</note>
-
-<note type="footnote">3 τῇ scripsi e MaUB anctore Re cum Rog τοῖς AthVa
+               <note type="footnote">3 τῇ scripsi e MaUB anctore Re cum Rog τοῖς AthVa
 
 Mor Re Ι ἀνακομιδῇ auctore Re Rog οἴκαδε ἀνακομιδῇ coni
 
@@ -5499,16 +5238,14 @@ cf. t. III praef. p. IX Ι αὑτόν scripsi e MaVaB cum Rog
 αὐτὸν AthU Mor Re Ι ἐν] εἰ UVa | οἷς]ἐν οἶς Β
 
 6*</note>
-
-
-
-<pb n="84"/>
+               <pb n="84"/>
 
 ἐπλανᾶτο ἠδικεῖτο, ἐν οἷς δὲ τοσούτων κακῶν κρείτ-
 
-των ἦν ἀρετὴν κεκτημένος ἐδείκνυτο.</p></div>
-
-<div type="textpart" subtype="chapter" n="125"><p>τῷ μὲν
+των ἦν ἀρετὴν κεκτημένος ἐδείκνυτο.</p>
+         </div>
+         <div n="125" type="chapter">
+            <p>τῷ μὲν
 
 οὖν Ὁμήρῳ ποιεῖν ἐπῆλθεν εἰς ἄνδρα θαυμαστὸν
 
@@ -5524,9 +5261,10 @@ cf. t. III praef. p. IX Ι αὑτόν scripsi e MaVaB cum Rog
 
 σάντων ἐκλεξάμενον περὶ τοῦτον οὕτω πολλὴν εἰσε-
 
-<lb n="10"/> νέγκασθαι σπουδήν;</p></div>
-
-<div type="textpart" subtype="chapter" n="126"><p>πότ’ ἔρον οὖν δίκην ὑπὲρ
+<lb n="10"/> νέγκασθαι σπουδήν;</p>
+         </div>
+         <div n="126" type="chapter">
+            <p>πότ’ ἔρον οὖν δίκην ὑπὲρ
 
 Ὁμήρου λαμβάνειν οὗτός ἐστι δίκαιος ἢ διδόναι μᾶλλον,
 
@@ -5541,24 +5279,21 @@ cf. t. III praef. p. IX Ι αὑτόν scripsi e MaVaB cum Rog
 Ἄνυτος οὔτε Σωκράτης ἀδικοῦσιν, εἴ τι τῶν τοῖς
 
 ποιηταῖς εἰρημένων καταμέμφονται.</p>
-
-<p>127. Ἀλλ’ ἀργούς, φησίν, ἐποίει Σωκράτης.
+            <p>127. Ἀλλ’ ἀργούς, φησίν, ἐποίει Σωκράτης.
 
 τίνα τρόπον; εἶπε τὸ καθῆσθαι ποιοῦντα μηδὲν τοῦ
 
 <note type="footnote">5 cf. t. IV 166, 25. Od. α 2. Antisth. Ulix. 14 12 Her. I
 
 32; VI 86 18 sq. Plat. Gorg. p. 515 E sq.</note>
-
-<note type="footnote">5 ἡγεῖτο &lt;γενέσθαι&gt; | &lt;ἱκανὸν&gt; μόνον Rog
+               <note type="footnote">5 ἡγεῖτο &lt;γενέσθαι&gt; | &lt;ἱκανὸν&gt; μόνον Rog
 
 qui ἱκανὸν vel μόνον ἱκανὸν vel in sequentibus ἐπιθεῖναι &lt;ἂν&gt;
 
 scribendum coni 6 εὐσεβῆ libri corr Mor 7 μᾶλλον Ὁμήρου
 
 scripsi e MaUVaB Ὁμήρου μᾶλλον Ath edd Ι ποιήσειεν Ma</note>
-
-<note type="footnote">8 τὸ om Ma 11 λόγον MaUVaB 14 τῳ om Ma
+               <note type="footnote">8 τὸ om Ma 11 λόγον MaUVaB 14 τῳ om Ma
 
 γε reposui e MaUB, ut coni Mor lacobs Not 40 Sintenis τε Ath
 
@@ -5575,10 +5310,7 @@ qui ποιηταῖς aut ὑπὸ τῶν ποιητῶν coni ὑπὸ ποι�
 18 ποιεῖ coni Schanz Plat. apol. comm. 37 19 εἶπε Β Mor
 
 sed vertit ceclo εἰπέ reliqui libri Re ὅτι εἶπε lacobs Add 215</note>
-
-
-
-<pb n="85"/>
+               <pb n="85"/>
 
 μετιέναι τὰς ἐργασίας ποτὲ βέλτιον καὶ συνεβούλευσε
 
@@ -5606,9 +5338,10 @@ sed vertit ceclo εἰπέ reliqui libri Re ὅτι εἶπε lacobs Add 215</n
 
 σῶμα, τρίτον δὲ τὰ χρήματα, πῶς ταῦτα πείθοντος ἦν
 
-ἀργεῖν;</p></div>
-
-<div type="textpart" subtype="chapter" n="128"><p>ὃς τὸ μὲν ἔργῳ τῳ προσέχειν οὐκ ἐκάλει
+ἀργεῖν;</p>
+         </div>
+         <div n="128" type="chapter">
+            <p>ὃς τὸ μὲν ἔργῳ τῳ προσέχειν οὐκ ἐκάλει
 
 κακίαν, ἠξίου δὲ μὴ τὰ τῇ φύσει δεύτερα πρὸ τῶν <lb n="15"/>
 
@@ -5617,8 +5350,7 @@ sed vertit ceclo εἰπέ reliqui libri Re ὅτι εἶπε lacobs Add 215</n
 <note type="footnote">10 Plat. apol. p. 36 Bsq. 12 cf. p. 22, 1 sq. Plat. leg.
 
 IV p. 724 A; V p. 726 A sq. VIII p. 870 B</note>
-
-<note type="footnote">Not 40 εἰ εἷπε Rog εἰ εἰπέ Par 3017) Ι μηδὲν τοῦ scripsi ex
+               <note type="footnote">Not 40 εἰ εἷπε Rog εἰ εἰπέ Par 3017) Ι μηδὲν τοῦ scripsi ex
 
 AthUVaB auctoribus Re et lacobsio Add 215 Lect 200 Not 40
 
@@ -5651,10 +5383,7 @@ Rog τῷ Ath Mor Re | ἔργῳ τῳ scripsi auctore Re cum Rog
 ἔργῳ τῷ Ath ἔργω τῳ U ἔργω τὼ VaB ἔργῳ τὸ Ma Mor Re
 
 προέχειν Ath</note>
-
-
-
-<pb n="86"/>
+               <pb n="86"/>
 
 υἱεῖς ἐν ἴσῳ τοῖς ἀνδραπόδοις τρέφοντας καὶ οὔτε τὴν
 
@@ -5674,9 +5403,11 @@ Rog τῷ Ath Mor Re | ἔργῳ τῳ scripsi auctore Re cum Rog
 
 εὐπορεῖν τε τοὺς αὐτοὺς βουλομένου καὶ νοῦν ἔχειν.
 
-<lb n="10"/></p></div>
-
-<div type="textpart" subtype="chapter" n="129"><p>χωρὶς δὲ τούτων, εἰ μὲν οἷς ἀπὸ τῶν χειρῶν ὁ
+<lb n="10"/>
+            </p>
+         </div>
+         <div n="129" type="chapter">
+            <p>χωρὶς δὲ τούτων, εἰ μὲν οἷς ἀπὸ τῶν χειρῶν ὁ
 
 βίος, τούτους ἀφεῖλκεν ὅθεν ἔζων, ὥστ’ ἀνάγκην εἶναι
 
@@ -5691,8 +5422,7 @@ Rog τῷ Ath Mor Re | ἔργῳ τῳ scripsi auctore Re cum Rog
 <note type="footnote">5 Luc. Anach. 17; Lexiph. 21; Pseudol. 13 14 Dem.
 
 p. 279, 4</note>
-
-<note type="footnote">1 ἐν ἴσῳ om UB 3 δὲ om Va Ι ἀγείροντας reposui e
+               <note type="footnote">1 ἐν ἴσῳ om UB 3 δὲ om Va Ι ἀγείροντας reposui e
 
 MaUVaB auctoribus lacobsio Lect 200 Not 41 et Cobeto cum
 
@@ -5729,18 +5459,14 @@ auctoribus Sinteni et Cobeto cum Rog δὲ Mor Re εἰ δὲ οἰκέ-
 posui e libris sed post ι (2) ras 1 litt Ma, auctore Re cum Rog
 
 ἐποίειν Mor Re | τῆς γῆς Ath</note>
-
-
-
-<pb n="87"/>
+               <pb n="87"/>
 
 τοῖς τοὺς ἀγροὺς κεκτημένοις καὶ τὰς περιουσίας πρὸς
 
 τῷ τῆς ψυχῆς φροντίζειν καὶ τῆς γῆς ὑπῆρχεν ἐπιμε-
 
 λεῖσθαι:</p>
-
-<p>130. Τοὺς μὲν οὖν ἄλλους οὐκ ἀπέτρεπεν ἔργων,
+            <p>130. Τοὺς μὲν οὖν ἄλλους οὐκ ἀπέτρεπεν ἔργων,
 
 αὐτῷ δὲ οὔτε χωρίον ἦν παρὰ τοῦ πατρὸς οὔτε ναῦς <lb n="5"/>
 
@@ -5758,21 +5484,20 @@ posui e libris sed post ι (2) ras 1 litt Ma, auctore Re cum Rog
 
 ἄνυδρον χωρίον οὐχ ὡς ἔν τι τῶν καταρρύτων διῆλ-
 
-θον;</p></div>
-
-<div type="textpart" subtype="chapter" n="131"><p>τῆς ἀργίας Σωκράτους εἰλήφατε πεῖραν, ὦ
+θον;</p>
+         </div>
+         <div n="131" type="chapter">
+            <p>τῆς ἀργίας Σωκράτους εἰλήφατε πεῖραν, ὦ
 
 Ἀθηναῖοι, τοῦτο μὲν ἐπὶ Δηλίῳ, τοῦτο δ’ αὖ ἐν Ἀμ-
 
 φιπόλει, ὅτε δὴ τῇ πρὸς ἅπαντα καρτερίᾳ τοὺς στρα- <lb n="15"/>
-
-<note type="footnote">1 Dem. p. 37, 20. Isocr. p. 224 c 6 cf. p. 23, 6 sq.
+               <note type="footnote">1 Dem. p. 37, 20. Isocr. p. 224 c 6 cf. p. 23, 6 sq.
 
 10 Thuc. I 143,4 14 Plat. apol. p. 28 D; conv. p. 219 sq.;
 
 Lach. p. 181 B. Diog. L. II 5, 6. 22 sq.</note>
-
-<note type="footnote">2 τῷ reposui e libris auctore Sinteni τὸ edd | ἐπιμελεῖσθαι
+               <note type="footnote">2 τῷ reposui e libris auctore Sinteni τὸ edd | ἐπιμελεῖσθαι
 
 scripsi ἐπιμέλεσθαι libri edd 4 οὖν om UVaB | ἀπέτρεπεν
 
@@ -5807,10 +5532,7 @@ MaVaB auctore lacobsio Add 123 cum Rog δὲ Ath δ’ ἂν
 U Mor Re qui adnotat „malim aut ἂν abesse aut eius loco legi
 
 αὐ“ 15 ἅπαντας Β</note>
-
-
-
-<pb n="88"/>
+               <pb n="88"/>
 
 τιώτας πρὸς αὑτὸν ἐπέστρεφεν ὁμοίως νύκτωρ καὶ μεθ’
 
@@ -5829,8 +5551,8 @@ U Mor Re qui adnotat „malim aut ἂν abesse aut eius loco legi
 φοβερός. οὕτως ὑπὸ τῆς ἀργίας τό τε σῶμα καὶ τὴν
 
 ψυχὴν διέφθαρτο.</p>
-
-<lb n="10"/> <p>132. Ἔοικε δὲ Ἄνυτος ἐνεργοὺς νομίζειν τοὺς συκο-
+            <lb n="10"/>
+            <p>132. Ἔοικε δὲ Ἄνυτος ἐνεργοὺς νομίζειν τοὺς συκο-
 
 φάντας μόνους, τοὺς δὲ παιδείᾳ προσέχοντας καὶ τὴν
 
@@ -5847,8 +5569,7 @@ U Mor Re qui adnotat „malim aut ἂν abesse aut eius loco legi
 <note type="footnote">1 cf. t. III 243,13 2 cf. t. IV 134,13 13 Isocr.
 
 or. IV § 2</note>
-
-<note type="footnote">1 αὑτὸν scripsi e Ma sed ‘ e ’ corr m2, Β cum Rog
+               <note type="footnote">1 αὑτὸν scripsi e Ma sed ‘ e ’ corr m2, Β cum Rog
 
 AthUVa Mor Re | ἀπέστρεφεν MaAthVa ὑπέστρεφεν U | μεθ-
 
@@ -5881,18 +5602,16 @@ reposui e MaUVaB auctoribus Morello lacobsio Lect 200 Not
 321 | ὧς aut delendum aut cum πάντων mutandum censuit Re
 
 delevit Rog</note>
-
-
-
-<pb n="89"/>
+               <pb n="89"/>
 
 ’στὸν ἔργον, εἰ διὰ | τὰς παρὰ Σωκράτους μέμψεις <note type="marginal">R III 46</note>
 
 οἱ τὰ κοινὰ πράττοντες φροντίζοιεν ἀρετῆς.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="133"><p>Οὐ λέγει παριών. μετὰ πολλῶν γε Ἀθη-
+</p>
+         </div>
+         <div n="133" type="chapter">
+            <p>Οὐ λέγει παριών. μετὰ πολλῶν γε Ἀθη-
 
 ναίων, δεδωκότος γε τοῦ Σόλωνος, οὐκ ἔχων φύσιν δήμῳ
 
@@ -5916,13 +5635,12 @@ delevit Rog</note>
 
 τῆς βλάβης· ὃν δ’ εὐεργέτην ἔξεστι προσειπεῖν, πῶς
 
-ἔτ’ ἂν ἀργόν τις καλοίη;</p> <lb n="15"/>
-
-<p>134. Τραπεζίτης γὰρ οὐκ ἔστι. κρείττων ἴσως
+ἔτ’ ἂν ἀργόν τις καλοίη;</p>
+            <lb n="15"/>
+            <p>134. Τραπεζίτης γὰρ οὐκ ἔστι. κρείττων ἴσως
 
 <note type="footnote">8 Plat. Phaedr. p. 228 E 16 Plat. polit. p. 268 B</note>
-
-<note type="footnote">2 φροντίζοιεν reposui e libris cum Rog φροντίσειεν Mor
+               <note type="footnote">2 φροντίζοιεν reposui e libris cum Rog φροντίσειεν Mor
 
 Re 8 παριών scripsi auctore Re cum Rog περιιὼν libri
 
@@ -5957,10 +5675,7 @@ Rog βαρβάροις libri Mor Re 16 ἔστι. κρείττων scripsi ἔ
 hunc hiulcum mon intelligo” Re et Rog at ἴσως cum ironia dictum
 
 ἴσως om Ath</note>
-
-
-
-<pb n="90"/>
+               <pb n="90"/>
 
 τῶν νέων ἡγεῖσθαι τραπεζίτης. ἀδικεῖ. σὺ δ’ ὅτι μὲν
 
@@ -5972,9 +5687,10 @@ hunc hiulcum mon intelligo” Re et Rog at ἴσως cum ironia dictum
 
 <lb n="5"/> τοῦτον δὲ μετ’ ἐκείνων πενόμενον τοῦτο καθ’ ὅ προσ-
 
-έοικεν ἐκείνοις ἀδικεῖν λέγεις;</p></div>
-
-<div type="textpart" subtype="chapter" n="135"><p>ἦν δὲ οὐ ταῦτα
+έοικεν ἐκείνοις ἀδικεῖν λέγεις;</p>
+         </div>
+         <div n="135" type="chapter">
+            <p>ἦν δὲ οὐ ταῦτα
 
 πρότερον ἐν τοῖς δικαστηρίοις ἐγκλήματα, τὸ μὴ πλου-
 
@@ -5991,8 +5707,8 @@ hunc hiulcum mon intelligo” Re et Rog at ἴσως cum ironia dictum
 Σωκράτης δὲ κινδυνεύει μόνος ἀνθρώπων διὰ τὸ τοῖς
 
 παροῦσιν ἀγαπῆσαι δοῦναι δίκην.</p>
-
-<lb n="15"/> <p>136. Πονηρῶν δέ, ὦ ἄνδρες, ἔργων διδάσκαλον
+            <lb n="15"/>
+            <p>136. Πονηρῶν δέ, ὦ ἄνδρες, ἔργων διδάσκαλον
 
 &lt;
 
@@ -6005,8 +5721,7 @@ hunc hiulcum mon intelligo” Re et Rog at ἴσως cum ironia dictum
 <note type="footnote">11 cf t. II 293, 12 17 Polycr. apud Isocr. Bus. § 5. Xen.
 
 comm. I 2, 12 sq. Aristid. rhet. t. II 110, 27 sq. Dind. cf p. 2 sq.</note>
-
-<note type="footnote">1 τῶν scripsi e Ma τῶν οὐ UVaB οὐ Ath τοῦ edd
+               <note type="footnote">1 τῶν scripsi e Ma τῶν οὐ UVaB οὐ Ath τοῦ edd
 
 ἡγεῖσθαι reposui e libris cum Rog ἡγῆσθαι Mor Re 2 πρα-
 
@@ -6035,10 +5750,7 @@ edd | ὦ reposui e MaUVaB cum Rog om Ath Mor Re | πονη-
 inserui om libri edd | ὑμῖν reposui e MaUVaB cum Rog
 
 ἡμῖν Ath Mor Re | ὑπ’ αὐτοῦ om Ma</note>
-
-
-
-<pb n="91"/>
+               <pb n="91"/>
 
 βιάδου καὶ Κριτίου μνησθῆναι. περὶ ὧν ἐστὶ μὲν
 
@@ -6057,8 +5769,7 @@ inserui om libri edd | ὑμῖν reposui e MaUVaB cum Rog
 ἀμφοῖν εἶναι τὴν ἀδικίαν, δεῖξαι δὲ οὐδὲν μετὸν τῆς
 
 ἀδικίας Σωκράτει.</p>
-
-<p>137. Τί οὖν ἄν τις Ἀλκιβιάδου κατηγοροίη; πότε- <lb n="10"/>
+            <p>137. Τί οὖν ἄν τις Ἀλκιβιάδου κατηγοροίη; πότε- <lb n="10"/>
 
 ρον ὅτι τὸν Ἀλκμαίωνα καὶ τὸν Ἱππόνικον ἀκούων
 
@@ -6073,8 +5784,7 @@ comm. I 2, 25 sq. 11 Plat. Alc. I p. 112 C. Her. VI 125. Isocr.
 big. § 25 13 Her. VIII 17. Plut. Alc. 1. Xen. comm. I I 2, 14
 
 et 24. Isocr. big. p. 351 c sq. et 352 c</note>
-
-<note type="footnote">1 καὶ Κριτίου scripsi auctore Re cum Rog καὶ τούτου
+               <note type="footnote">1 καὶ Κριτίου scripsi auctore Re cum Rog καὶ τούτου
 
 Κριτίου MaUVaB καὶ τούτου Ath Mor Re Κριτίου τε Iacobs
 
@@ -6111,10 +5821,7 @@ om Ma 12 καὶ (1) reposui e libris auctore Re cum Rog
 τὸ Mor Re ὅτι Sintenis | καὶ Κλεινίου μάχας καὶ τελευτὴν
 
 Cobet 13 ὅτι φρονήματος Ma UVaB</note>
-
-
-
-<pb n="92"/>
+               <pb n="92"/>
 
 ἔγεμε δυοῖν οἰκίαιν γνωριμωτάταιν πρέποντος; ἢ ὅτι
 
@@ -6130,9 +5837,10 @@ Cobet 13 ὅτι φρονήματος Ma UVaB</note>
 
 τῆς ὑμετέρας ἀξίας τὰ ὄντα ἐνόμισε καὶ τὰ ἀπόντα
 
-ἐζήτησεν;</p></div>
-
-<div type="textpart" subtype="chapter" n="138"><p>ἀλλ’ εἰ τοὺς ἀφαιροῦντας τῶν ὑπαρ-
+ἐζήτησεν;</p>
+         </div>
+         <div n="138" type="chapter">
+            <p>ἀλλ’ εἰ τοὺς ἀφαιροῦντας τῶν ὑπαρ-
 
 χόντων μισεῖτε, τάς γε προσθήκας πῶς οὐκ ἂν ἐπαι-
 
@@ -6159,8 +5867,7 @@ Dind.
 <note type="footnote">1 ἔγεμεν Ath | γνωριμωτάτοιν Rog | πρέποντος; ἢ scripsi
 
 πρέποντος· ἢ libri πρέποντος, ἢ Mor Re πρέποντος καὶ Rog</note>
-
-<note type="footnote">2 ἔτεκε scripsi auctore Iacobsio Lect 201 Not 44 τέκοι
+               <note type="footnote">2 ἔτεκε scripsi auctore Iacobsio Lect 201 Not 44 τέκοι
 
 libri edd 4 ὁμόρους reposui e MaUVaB auctore Re cum
 
@@ -6187,18 +5894,16 @@ Mus. I (1861) p. 187 vertens: dem Peloponnes beistehen würde
 13 Ἑσπερίαν scripsi auctore Sinteni ἐσπέραν libri edd
 
 14 κακῷ Ath | προπεσεῖν Ma</note>
-
-
-
-<pb n="93"/>
+               <pb n="93"/>
 
 αὐτοὶ καὶ περιέκοπτον τοὺς Ἑρμᾶς, τὰ δ’ αὑτῶν κακὰ
 
 φέροντες ἐκείνῳ περιῆπτον, καὶ μέτοικοι καὶ μυστήρια
 
-καὶ σκευωρία καὶ πᾶσα τέχνη καὶ μηχανή.</p></div>
-
-<div type="textpart" subtype="chapter" n="139"><p>σκο-
+καὶ σκευωρία καὶ πᾶσα τέχνη καὶ μηχανή.</p>
+         </div>
+         <div n="139" type="chapter">
+            <p>σκο-
 
 πεῖτε δέ· δοῦναι λόγον ἤθελεν, οἱ δὲ ἐκέλευον πλεῖν.
 
@@ -6218,21 +5923,20 @@ Mus. I (1861) p. 187 vertens: dem Peloponnes beistehen würde
 
 θάνατον. πίστιν ἔχουσιν αἱ διαβολαί. καὶ πάντα
 
-τοῦτον κατηγοροῦ τὸν χρόνον.</p></div>
-
-<div type="textpart" subtype="chapter" n="140"><p>τι οὖν
+τοῦτον κατηγοροῦ τὸν χρόνον.</p>
+         </div>
+         <div n="140" type="chapter">
+            <p>τι οὖν
 
 θαυμαστόν, εἴ τις ἀδίκως οὐκ ἠθέλησεν ἀποθανεῖν; τί
 
 δ’, εἴ τις ὅθεν προσεδόκησεν ἀσφάλειαν, ἐκεῖσε ἐ̓πλευ- <lb n="15"/>
-
-<note type="footnote">1 Thuc. VI 27. Andoc. myst. § 15 sq. 2 Andoc. l. l.
+               <note type="footnote">1 Thuc. VI 27. Andoc. myst. § 15 sq. 2 Andoc. l. l.
 
 3 Dem. p. 1272, 8 | Thuc. VI 53 et 61 4 Thuc. VI 29, 3
 
 9 Thuc. VI 61, 5 sq. Plut. Alc. 21. Apostol. paroem. XV 31</note>
-
-<note type="footnote">1 τοὺς Ἑρμᾶς reposui e MaUVa auctoribus lacobsio Lect
+               <note type="footnote">1 τοὺς Ἑρμᾶς reposui e MaUVa auctoribus lacobsio Lect
 
 201 App Pors 322 Not 44 Sinteni Cobeto cum Rog τὰς ἑρμᾶς
 
@@ -6265,10 +5969,7 @@ perperam | καλεῖσθαι post κρίσιν inserendum coni Re cui illud
 e sequenti καλῇ suppleri iure opposuit lacobs Lect 202 Not 45
 
 15 ὅθεν inserui e MaAthUVa cum Rog ὅθεν καὶ Β om</note>
-
-
-
-<pb n="94"/>
+               <pb n="94"/>
 
 σεν. ὁ δὲ ἦν μὲν ἐν Σπάρτῃ, τὰς Ἀθήνας δὲ ὠνειρο-
 
@@ -6292,9 +5993,10 @@ e sequenti καλῇ suppleri iure opposuit lacobs Lect 202 Not 45
 
 <note type="marginal">R III 49</note> τοῖς μυστηρίοις ὁ κάκιστος ἐκεῖνος ἀπέδωκε τὴν |
 
-ἀρχαίαν ὁδόν.</p></div>
-
-<div type="textpart" subtype="chapter" n="141"><p>καὶ ἐῶ λέγειν ἀρμάτων πλῆθος
+ἀρχαίαν ὁδόν.</p>
+         </div>
+         <div n="141" type="chapter">
+            <p>καὶ ἐῶ λέγειν ἀρμάτων πλῆθος
 
 καὶ μεγάλας ὑπὲρ ὑμῶν Ὀλυμπίασι δαπάνας ἀφ’ ὧν
 
@@ -6303,12 +6005,10 @@ e sequenti καλῇ suppleri iure opposuit lacobs Lect 202 Not 45
 <note type="footnote">1 Isocr. big. p. 348 d 3 Thuc. VIII 45 sq. 4 Thuc.
 
 VIII 46 et 80 10 Thuc. VIII 81 11 Plut. Alc. 33 et 34</note>
-
-<note type="footnote">12 Isocr. big. p. 353 b sq. 14 Thuc. VI 16 | Plat. leg.
+               <note type="footnote">12 Isocr. big. p. 353 b sq. 14 Thuc. VI 16 | Plat. leg.
 
 III p. 681 C</note>
-
-<note type="footnote">Mor Re qui οὖ inserendum coni, ᾖ Sintenis ᾖ pro τις scriben-
+               <note type="footnote">Mor Re qui οὖ inserendum coni, ᾖ Sintenis ᾖ pro τις scriben-
 
 dum coni lacobs Lect 202 App Pors 332 Not 45 | ἔπλευσε Re
 
@@ -6343,10 +6043,7 @@ reposui e libris cum Rog τόνον Mor Re εὐτόνου vel συν-
 τόνου Iacobs Not 45 λόγον coni Sintenis Herm. I 470 coll
 
 Thuc. VI 16</note>
-
-
-
-<pb n="95"/>
+               <pb n="95"/>
 
 τοίνυν κἀν τοῖς δευτέροις κυβερνήτου προπετείας, οὐχ
 
@@ -6356,9 +6053,9 @@ Thuc. VI 16</note>
 
 πολὺ δὲ τῶν ἐκβαλόντων αὐτὸν χρησιμώτερος τῇ
 
-πόλει.</p> <lb n="5"/>
-
-<p>142. Καὶ ταῦτα διῆλθον οὐκ Ἀλκιβιάδου καὶ Σω-
+πόλει.</p>
+            <lb n="5"/>
+            <p>142. Καὶ ταῦτα διῆλθον οὐκ Ἀλκιβιάδου καὶ Σω-
 
 κράτους χάριν μᾶλλον ἢ ὑμῶν καὶ τῆς ὑμετέρας, ὦ
 
@@ -6387,12 +6084,10 @@ Thuc. VI 16</note>
 γὸν μηδὲν παραλιπόντα τῶν περὶ τὴν γῆν πόνων,
 
 ἀλλὰ καὶ χερσὶ καὶ σκεύεσι καὶ βουσὶ καὶ σπέρμασι <lb n="20"/>
-
-<note type="footnote">1 Xen. Hell. I 5, 11 sq. 12 Polycr. apud Isocr. Bus. § 5
+               <note type="footnote">1 Xen. Hell. I 5, 11 sq. 12 Polycr. apud Isocr. Bus. § 5
 
 p. 222 d 16 Plat. Euthyph. p. 2 D</note>
-
-<note type="footnote">1 ἐν Ath | δευτέρας Ath ὑστέροις χρόνοις coni Naber
+               <note type="footnote">1 ἐν Ath | δευτέρας Ath ὑστέροις χρόνοις coni Naber
 
 3 ὑμῖν scripsi ex AthUVaB ἡμῖν Ma ὑμῶν edd 4 αὐτὸν
 
@@ -6413,10 +6108,7 @@ e libris auctore Re cum Rog ὁ et προσεῖχε Mor Re 18 εἴ
 inserui auctoribus Gasda et Cobeto Mnem. III 151 cum Rog
 
 om libri Mor Re 19 παραλείποντα AthUVaB</note>
-
-
-
-<pb n="96"/>
+               <pb n="96"/>
 
 καὶ τῷ περὶ ταῦτα νόμῳ χρησάμενον, ἔπειτα μηδ’
 
@@ -6426,9 +6118,10 @@ om libri Mor Re 19 παραλείποντα AthUVaB</note>
 
 καὶ περὶ τῆς αὑτοῦ διεξελθεῖν τέχνης καὶ δεῖξαι τὴν
 
-<lb n="5"/> γῆν.</p></div>
-
-<div type="textpart" subtype="chapter" n="143"><p>ὁρῶμεν δὲ κἀν ταῖς ἄλλαις τέχναις τοὺς
+<lb n="5"/> γῆν.</p>
+         </div>
+         <div n="143" type="chapter">
+            <p>ὁρῶμεν δὲ κἀν ταῖς ἄλλαις τέχναις τοὺς
 
 μὲν παριόντας τὸν διδάσκαλον, τοὺς δὲ πρὸς ἴσον
 
@@ -6455,8 +6148,7 @@ om libri Mor Re 19 παραλείποντα AthUVaB</note>
 φοιτητῶν ἀπειρίαις τοὺς διδασκάλους ἐκόλαζον, κατα-
 
 <note type="footnote">3 Plat. rep. VIII p. 567 A 11 cf. t. IV 450, 4 sq.</note>
-
-<note type="footnote">1 καὶ inserui e MaUVaB om Ath edd | μὴ δ’ Va μηδο-
+               <note type="footnote">1 καὶ inserui e MaUVaB om Ath edd | μὴ δ’ Va μηδο-
 
 τιοῦν U 4 αὑτοῦ scripsi ex UVaB cum Rog αὐτοῦ MaAth
 
@@ -6477,8 +6169,7 @@ cum Par et Rog auctoribus Gasda et Cobeto Mnem. N. S. III
 148 θεοὶ libri Mor Re 11 ἡ γὰρ φύσις ante ὅταν inser auc-
 
 tore Cobeto Rog et Gercke Plat. Gorg. p. XLIX | ὅτ᾿ ἄν Ath</note>
-
-<note type="footnote">12 ᾐ reposui ex UVaB auctoribus lacobsio Lect 202 Not 45
+               <note type="footnote">12 ᾐ reposui ex UVaB auctoribus lacobsio Lect 202 Not 45
 
 Anth Pal III 62 et Cobeto cum Rog ἦν Mor Re ἡ Ma | ἑαυτὴν
 
@@ -6489,10 +6180,7 @@ reposui e libris auctoribus Re et lacobsio Not 45 cum Rog
 Libanii 14 ἂν] οὖν Ath | ἶσον MaB 16 οὕτως Ath
 
 17 καταλέλυντ’ ἂν αἱ scripsi auctoribus Sinteni et Gasda cum</note>
-
-
-
-<pb n="97"/>
+               <pb n="97"/>
 
 λέλυντ᾿ ἂν αἱ τέχναι μηδενὸς τολμῶντος διδάσκειν
 
@@ -6500,9 +6188,10 @@ Libanii 14 ἂν] οὖν Ath | ἶσον MaB 16 οὕτως Ath
 
 σκάλοις πανταχοῦ χάρις ὀφείλεται, τῶν προσιόντων δὲ
 
-τὸ μὴ μαθεῖν ἔγκλημα.</p></div>
-
-<div type="textpart" subtype="chapter" n="144"><p>καὶ μὴν τούς γε νομο-
+τὸ μὴ μαθεῖν ἔγκλημα.</p>
+         </div>
+         <div n="144" type="chapter">
+            <p>καὶ μὴν τούς γε νομο-
 
 θέτας οὐδὲν ἕτερον ἢ διδασκάλους πάντες ἄνθρωποι <lb n="5"/>
 
@@ -6535,14 +6224,12 @@ Libanii 14 ἂν] οὖν Ath | ἶσον MaB 16 οὕτως Ath
 <note type="footnote">5 Plat. conv. p. 209 D sq.; Gorg. p. 514 E sq. 18 cf.
 
 p. 30, 7</note>
-
-<note type="footnote">Rog coll t. IV 85, 11 et III 26, 8 κατελέλυντ᾿ ἂν αἱ Β et coni
+               <note type="footnote">Rog coll t. IV 85, 11 et III 26, 8 κατελέλυντ᾿ ἂν αἱ Β et coni
 
 Cobet et Gercke Plat. Gorg. p. XLIX κατ’ λέλυνται cum ras 1
 
 litt U καταλέλυνται reliqui libri Mor Re</note>
-
-<note type="footnote">2 μὴ inserui ex UVaB om MaAth edd | τοὺς μὲν διδα-
+               <note type="footnote">2 μὴ inserui ex UVaB om MaAth edd | τοὺς μὲν διδα-
 
 σκάλους Ma (et Par) 3 πανταχοῦ — 5 διδασκάλους om Ma
 
@@ -6567,14 +6254,12 @@ Rog auctore Gasda at cogitatione e lin. 4 repetendi sunt οἱ
 μασθῆναι om Ma (et Par) | ** θεὶς Mor | φαντασθῆναι Β
 
 LIBANIUS ed. Foerster. V. 7</note>
+               <pb n="98"/>
 
-
-
-<pb n="98"/>
-
-μασθῆναι.</p></div>
-
-<div type="textpart" subtype="chapter" n="145"><p>τολμωμένων οὖν τῶν ἀδικημάτων
+μασθῆναι.</p>
+         </div>
+         <div n="145" type="chapter">
+            <p>τολμωμένων οὖν τῶν ἀδικημάτων
 
 ἁπάντων μετὰ τοὺς νόμους καὶ τὴν ἐπιζήμιον ἀπεί-
 
@@ -6586,9 +6271,10 @@ LIBANIUS ed. Foerster. V. 7</note>
 
 νομίζειν καὶ λυμεῶνας; οὐδείς. ἀλλὰ τοὺς μὲν σωτῆρας
 
-νομίζομεν, τοὺς δὲ παρανομοῦντας κολάζομεν.</p></div>
-
-<div type="textpart" subtype="chapter" n="146"><p>τί
+νομίζομεν, τοὺς δὲ παρανομοῦντας κολάζομεν.</p>
+         </div>
+         <div n="146" type="chapter">
+            <p>τί
 
 δ’ ἄν τις εἴποι περὶ τῶν πολὺ φοβερωτέρων διδασκά-
 
@@ -6608,9 +6294,10 @@ LIBANIUS ed. Foerster. V. 7</note>
 
 εἰς τιμωρίαν οὕτω πικρὸν ὅ ποιήσει πάντας δικαίους.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="147"><p>εἶτα τῶν ἐν τοῖς δικαστηρίοις κινδύνων ἐξελη-
+</p>
+         </div>
+         <div n="147" type="chapter">
+            <p>εἶτα τῶν ἐν τοῖς δικαστηρίοις κινδύνων ἐξελη-
 
 λεγμένων καὶ τῆς κακίας τολμᾶν ἐπισταμένης, εἰ μὴ
 
@@ -6623,10 +6310,8 @@ LIBANIUS ed. Foerster. V. 7</note>
 δεσπόταις μύλωνος, πεδῶν, μαστίγων, στίξαι, στρεβλῶ
 
 <note type="footnote">6 Dem. p. 807, 19 22 Arist. Vesp. 1296</note>
-
-<note type="footnote">1 μενόντων Ma 3 κατεβόησε τίς Gercke Plat. Gorg. p. L</note>
-
-<note type="footnote">4 τὸ om Mor 7 κολάζομεν — 8 πολὺ om Ma 8 φο-
+               <note type="footnote">1 μενόντων Ma 3 κατεβόησε τίς Gercke Plat. Gorg. p. L</note>
+               <note type="footnote">4 τὸ om Mor 7 κολάζομεν — 8 πολὺ om Ma 8 φο-
 
 βερωτέρων τῶν διδασκάλων Ma 9 comma post διδασκάλων
 
@@ -6645,10 +6330,7 @@ e CMaUVaB καταγιγνώσκοντας AAth edd 15 ὀδὸν Ath
 ras U ἀπλῶς Va 20 οἷς Ath Re 21 ἐξουσίας Mor
 
 22 μυλῶνος CA cf p. 36, 12 et ad t. II 543, 10 | πέδων Ma Mor</note>
-
-
-
-<pb n="99"/>
+               <pb n="99"/>
 
 σαι, τούτους μέν, ἂν ὦσι πονηροί, οὐκ ἂν μεταβά-
 
@@ -6657,8 +6339,7 @@ ras U ἀπλῶς Va 20 οἷς Ath Re 21 ἐξουσίας Mor
 παρὰ τῆς εὐγενείας ἐχόντων δεσπότης ἦν ἀκριβέστερος
 
 Σωκράτης ἢ τῶν ἀργυρωνήτων ὑμεῖς;</p>
-
-<p>148. Κριτίας ἐλύπησε τὸν δῆμον. καὶ γὰρ Σω- <lb n="5"/>
+            <p>148. Κριτίας ἐλύπησε τὸν δῆμον. καὶ γὰρ Σω- <lb n="5"/>
 
 κράτην. ὑμᾶς ἀφείλετο τὴν | παρρησίαν. καὶ <note type="marginal">R III 52</note>
 
@@ -6678,9 +6359,10 @@ ras U ἀπλῶς Va 20 οἷς Ath Re 21 ἐξουσίας Mor
 
 μὲν τὴν ὠμότητα θαυμάζειν, εἴπερ ταύτην ἐδίδασκεν,
 
-ὁ δ’ ἀντιτιμᾶν τοὺς παρασκευάσαντας;</p></div>
-
-<div type="textpart" subtype="chapter" n="149"><p>τούς γέ <lb n="15"/>
+ὁ δ’ ἀντιτιμᾶν τοὺς παρασκευάσαντας;</p>
+         </div>
+         <div n="149" type="chapter">
+            <p>τούς γέ <lb n="15"/>
 
 τοι παιδοτρίβας ἴσμεν ἐν τοῖς στεφάνοις τῶν ἀθλητῶν
 
@@ -6691,8 +6373,7 @@ ras U ἀπλῶς Va 20 οἷς Ath Re 21 ἐξουσίας Mor
 <note type="footnote">5 Xen. comm. I 2, 12 sq. 7 cf p. 47, 2; 135, 2. Xen. comm.
 
 I 2, 31 8 Plat. apol. p. 33 A</note>
-
-<note type="footnote">1 μεταβάλλοιμεν UB 3 καὶ ante παρὰ Ma | ἦν om Ma
+               <note type="footnote">1 μεταβάλλοιμεν UB 3 καὶ ante παρὰ Ma | ἦν om Ma
 
 5 σωκράτη cum ras 1 litt U σωκράτης MaVa Mor
 
@@ -6719,10 +6400,7 @@ Re 16 τοι om U sed ras 3 litt, Β τοὺς MaAthVa Mor
 17 οὔτε (1) Μα | post ὑβριζομένους ras 5 litt CA
 
 7*</note>
-
-
-
-<pb n="100"/>
+               <pb n="100"/>
 
 δὲ οὕτως ἦν ἆτ’ ὀπὸς, ὥσθ’ ὁρῶν αὑτοῦ τὴν σπουδὴν
 
@@ -6733,8 +6411,7 @@ Re 16 τοι om U sed ras 3 litt, Β τοὺς MaAthVa Mor
 ἀποῦσαν ἐζήτει, καὶ κινδυνεύειν ᾑρεῖτο μᾶλλον ἢ τοῖς
 
 <lb n="5"/> ἐκείνῳ δοκοῦσιν ὑπηρετεῖν;</p>
-
-<p>150. Σὺ δ’ Ἀλκιβιάδην μὲν καὶ Κριτίαν λέγεις,
+            <p>150. Σὺ δ’ Ἀλκιβιάδην μὲν καὶ Κριτίαν λέγεις,
 
 πολλοὺς δὲ χρηστοὺς παραλείπεις, ὧν, εἰ καὶ τῶν κοι-
 
@@ -6763,14 +6440,12 @@ Re 16 τοι om U sed ras 3 litt, Β τοὺς MaAthVa Mor
 γονεῦσιν ὀφείλομεν; τέ κάλλιον ὧν ὑπὲρ διαλλαγῶν
 
 <note type="footnote">6 Xen. comm. I 2, 48 10 cf p. 120,8. Plat. apol. p. 33 E sq.</note>
-
-<note type="footnote">11 Plat. apol. p. 20 E sq. Diog. L. II 5, 5, 20 17 Xen.
+               <note type="footnote">11 Plat. apol. p. 20 E sq. Diog. L. II 5, 5, 20 17 Xen.
 
 comm. II 1 18 Xen. comm. II 2. Diog. L. II 5, 12, 29 19 Xen.
 
 comm. II 3</note>
-
-<note type="footnote">1 αὐτοῦ ἁ αὐτοῦ AMaVaB Mor 2 ἀνόμους Mor
+               <note type="footnote">1 αὐτοῦ ἁ αὐτοῦ AMaVaB Mor 2 ἀνόμους Mor
 
 3 ἔλεγεν Ma Mor 4 ἀποῦσαν Β sed ἀπ in ras m 2 6 δὲ
 
@@ -6789,16 +6464,14 @@ reliqui libri edd 12 συνηύξαντο Ma 14 ἢ τὰ] εἰ τὰ UVa
 18 οὐ Λαμπροκλεῖ scripsi Mus. Rhen. XXXII 90 cum Rog
 
 οὐκ ἀρικλεῖ Ma οὐκ ἀριστοκλεῖ reliqui libri Mor Re | οἷα CA</note>
-
-
-
-<pb n="101"/>
+               <pb n="101"/>
 
 πρὸς Χαιρεκράτην καὶ τὸν ἀδελφὸν διεξῆλθε; τί βέλτιον
 
-ὧν περὶ φίλων πρὸς Ἀντισθένην;</p></div>
-
-<div type="textpart" subtype="chapter" n="151"><p>ἀλλὰ μὴν
+ὧν περὶ φίλων πρὸς Ἀντισθένην;</p>
+         </div>
+         <div n="151" type="chapter">
+            <p>ἀλλὰ μὴν
 
 Γλαύκωνά τε τὸν Ἀρίστωνος καὶ τὸν Γλαύκωνος Χαρ-
 
@@ -6822,9 +6495,10 @@ reliqui libri edd 12 συνηύξαντο Ma 14 ἢ τὰ] εἰ τὰ UVa
 
 ὧς οὐχὶ καὶ τούτων ἀκηκοότων, ἀλλ’, οἶμαι, ψεύσονται
 
-καὶ τοὐναντίον ἐροῦσιν.</p></div>
-
-<div type="textpart" subtype="chapter" n="152"><p>οὐ μὴν ὑμῶν γε, ὦ ἄνδρες,
+καὶ τοὐναντίον ἐροῦσιν.</p>
+         </div>
+         <div n="152" type="chapter">
+            <p>οὐ μὴν ὑμῶν γε, ὦ ἄνδρες,
 
 τἀληθὲς οὐδεὶς ἐξαρνήσεται οὐδὲ πείσει καταψηφίσασθαι <lb n="15"/>
 
@@ -6867,12 +6541,8 @@ in ras 2 litt ἢ MaAthU sed in hoc ὴ eras, Va εἰ Β edd
 18 καὶ — εἰσηγάγετο om Ma
 
 </note>
-
-
-
-<pb n="102"/>
-
-<note type="marginal">R III 54</note> πέντε ταλάντων ὀφειλομένων αὐτῷ. ταυτὶ γάρ, ὦ
+               <pb n="102"/>
+               <note type="marginal">R III 54</note> πέντε ταλάντων ὀφειλομένων αὐτῷ. ταυτὶ γάρ, ὦ
 
 Ἀθηναῖοι, τοῖς μὲν πεποιηκόσι δόξαν ἂν εἰκότως φέ-
 
@@ -6895,8 +6565,7 @@ in ras 2 litt ἢ MaAthU sed in hoc ὴ eras, Va εἰ Β edd
 σίας οὐκ οἶδ’ ἥν τινα ἂν ἔχοι τοῖς ἀνδράσιν ἐκείνοις
 
 τίμην.</p>
-
-<p>153. Λεγέτω τοίνυν τὴν πρὸς τοὺς σοφιστὰς ὑμῶν
+            <p>153. Λεγέτω τοίνυν τὴν πρὸς τοὺς σοφιστὰς ὑμῶν
 
 ὀργήν, τὸν Ἀναξαγόραν, τὸν Πρωταγόραν, τὸν Διαγό-
 
@@ -6907,8 +6576,7 @@ in ras 2 litt ἢ MaAthU sed in hoc ὴ eras, Va εἰ Β edd
 <note type="footnote">8 Plut. Thes. 36, 2 9 Dem. c. Aristog. II § 23 p. 807, 18
 
 16 cf. t. I 466, 12</note>
-
-<note type="footnote">1 πέντε scripsi Mus. Rhen. XXXII 92 cum Cobeto Mnem.
+               <note type="footnote">1 πέντε scripsi Mus. Rhen. XXXII 92 cum Cobeto Mnem.
 
 III 155 coll. Plut. Sol. 15, 7 ἐπὶ libri Mor Re ἐπὶ πέντε Rog
 
@@ -6923,8 +6591,7 @@ fol 231 συνῳκισμένον Re ἢ U sed η eras εἰ MaVaB
 Mor 6 ὅλως scripsi e Ma coll. t. II 534, 17 ὅλους libri Mor
 
 Re ὅλον e Par auctore Gasda Rog 9 θήσειον AthUVaB</note>
-
-<note type="footnote">11 οἶδα AthUVaB | ἥν τινα ἂν scripsi auctore lacobsio
+               <note type="footnote">11 οἶδα AthUVaB | ἥν τινα ἂν scripsi auctore lacobsio
 
 Lect 202 (οὐκ οἷδ’ ἥντιν’ ἂν ἔχοι) ἄν τινα libri ἂν εἴ τινα
 
@@ -6943,10 +6610,7 @@ ac. Vindob. t. CXLIII) 14, perperam, ut ipse professus est Beitr.
 VIII (l. l. t. CLII) 31 convictus a M(asquera)y Rev. crit. 1901 n.
 
 10 p. 188 16 ἀπήλαυσε C | σωτηρίας post ἀπέλαυσε AthUVaB</note>
-
-
-
-<pb n="103"/>
+               <pb n="103"/>
 
 ὠργίζετο προσόμοιος ἦν; χρῆν γὰρ αὐτὸν ταὐτὰ
 
@@ -6960,9 +6624,10 @@ VIII (l. l. t. CLII) 31 convictus a M(asquera)y Rev. crit. 1901 n.
 
 τῶν ὑμῶν πεπειραμένος δέδεικται καθαρεύων τῆς κατ’
 
-ἐκείνων αἰτίας.</p></div>
-
-<div type="textpart" subtype="chapter" n="154"><p>Ἀναξαγόρας ἐδέθη δικαίως ἀσε-
+ἐκείνων αἰτίας.</p>
+         </div>
+         <div n="154" type="chapter">
+            <p>Ἀναξαγόρας ἐδέθη δικαίως ἀσε-
 
 βῶν περὶ ἡλίου τε καὶ σελήνης. Πρωταγόραν ἐξεκηρύ-
 
@@ -6983,12 +6648,10 @@ VIII (l. l. t. CLII) 31 convictus a M(asquera)y Rev. crit. 1901 n.
 ἐλέγχεις. οὐ γὰρ ἡ τῶν ἠδικηκότων τιμωρία τῶν ἀνα-
 
 μαρτήτων πονηρία γένοιτ’ ἄν.</p>
-
-<note type="footnote">7 Diog. L. II 3, 9 § 12 sq. 8 Diog. L. IX 8, 3 § 51 sq.
+            <note type="footnote">7 Diog. L. II 3, 9 § 12 sq. 8 Diog. L. IX 8, 3 § 51 sq.
 
 10 Diod. S. ΧΙΙΙ 6</note>
-
-<note type="footnote">1 ταύτα ’ν ταῦτα AthVaB 2 ἐπιτηδεύματα Ma
+            <note type="footnote">1 ταύτα ’ν ταῦτα AthVaB 2 ἐπιτηδεύματα Ma
 
 5 πρὸς] πολλῶν Μα | ἔσχε C 6 ὑμῶν τε VaB | κατ’ om Β
 
@@ -7011,20 +6674,15 @@ AAth ἀποκτείναντι C edd 13 τίς Ma sed ς del | ἂν post
 τίς inserendum coni lacobs Lect 202 Not 46 Anth Pal III 109,
 
 post εἰπεῖν inser Sintenis Rog | ἔχοι CA Re Sintenis Rog | τί Ma</note>
-
-<note type="footnote">14 ἃ ante οὐ inserendum coni lacobs Lect 202 Not 46, ὃ
+            <note type="footnote">14 ἃ ante οὐ inserendum coni lacobs Lect 202 Not 46, ὃ
 
 Anth Pal III 109 | δ’ inser Re, om libri Mor delendum coni
 
 lacobs ll. ll. 16 ἡ om Mor | τῶν — 17 πονηρία om Ma
 
 ἁμαρτημάτων Mor 17 γένοιτο MaAthU</note>
-
-
-
-<pb n="104"/>
-
-<p>155. Καὶ διεξῄει τοὺς τοῖς σοφισταῖς οὐ συγγενο-
+            <pb n="104"/>
+            <p>155. Καὶ διεξῄει τοὺς τοῖς σοφισταῖς οὐ συγγενο-
 
 μένους ὧς ἀγαθοὺς ἄνδρας γεγενημένους, τὸν Μιλτι-
 
@@ -7044,9 +6702,10 @@ lacobs ll. ll. 16 ἡ om Mor | τῶν — 17 πονηρία om Ma
 
 <lb n="10"/> πονηρὸς δὲ ὁ δῆμος; ὑπὸ ποίου σοφιστοῦ διεφθαρ-
 
-μένος;</p></div>
-
-<div type="textpart" subtype="chapter" n="156"><p>καὶ μὴν οἱ μὲν ἄμοιροι τῆς τῶν σοφιστῶν
+μένος;</p>
+         </div>
+         <div n="156" type="chapter">
+            <p>καὶ μὴν οἱ μὲν ἄμοιροι τῆς τῶν σοφιστῶν
 
 συνουσίας εἰς τοῦτο ἦλθον κακῶν, ὁ δὲ Ἀναξαγόρου
 
@@ -7069,12 +6728,10 @@ lacobs ll. ll. 16 ἡ om Mor | τῶν — 17 πονηρία om Ma
 νόμος, ἀλλ’ οἷς ἀνάκειται τῶν κοινῶν ἡ φυλακή.
 
 <note type="footnote">2 sq. Plat. Gorg. p. 516 D sq.; p. 503 C sq.; Men. p. 93 B sq.</note>
-
-<note type="footnote">4 cf. p. 134, 1 sq. 13 Plat. Phaedr. p. 270 A 14 Plut.
+               <note type="footnote">4 cf. p. 134, 1 sq. 13 Plat. Phaedr. p. 270 A 14 Plut.
 
 Per. 3. Plin. n. h. 34, 74 18 Plut. Per. 32. Diog. L. II 3, 9, 13</note>
-
-<note type="footnote">3 τὸν Ἀριστείδην pro insiticio habet Rog 5 post ἔφευγε
+               <note type="footnote">3 τὸν Ἀριστείδην pro insiticio habet Rog 5 post ἔφευγε
 
 mentionen Aristidis (num ὁ δὲ Ἀριστείδης ἐξωστρακίζετο?) ex-
 
@@ -7089,18 +6746,14 @@ tore Nabero Rog 7 οὐ] ἐκ Ma | ἀλλὰ AthU Re 11 σοφῶν
 libri corr Mor 12 κακόν Mor 15 κἂν Ma 19 ὧν ἂν
 
 coni lacobs Not 46 | ἀδικεῖν Ath</note>
-
-
-
-<pb n="105"/>
+               <pb n="105"/>
 
 οὐκοῦν ἄνδρα σπουδαῖον ἡγοῦντο τὸν ὁμολογοῦντα
 
 συγγεγονέναι τῷ σοφιστῇ καὶ δι’ αὐτό γε τοῦτο βοη-
 
 θοῦντα, διότι συγγένοιτο.</p>
-
-<p>157. Δάμων δέ, εἰ μὲν ἠδίκει, καλῶς ἐκβέβληται·
+            <p>157. Δάμων δέ, εἰ μὲν ἠδίκει, καλῶς ἐκβέβληται·
 
 εἰ δ’ ἐσυκοφαντεῖτο, κρεῖττον ἦν μηδ’ ἐκεῖνον τοῦτο <lb n="5"/>
 
@@ -7117,8 +6770,7 @@ coni lacobs Not 46 | ἀδικεῖν Ath</note>
 κωλύει δὲ οὐδὲν ἐλάττω τε δικαίως αἰτιαθῆναι καὶ
 
 μείζω μὴ προσηκόντως.</p>
-
-<p>158. Ἀλλὰ γὰρ τίς οὐκ ἂν στενάξειε Βίαντος
+            <p>158. Ἀλλὰ γὰρ τίς οὐκ ἂν στενάξειε Βίαντος
 
 κακῶς ἀκούοντος, τοῦ Σόλωνος ἑταίρου, &lt;τοῦ&gt; φίλου
 
@@ -7135,8 +6787,7 @@ coni lacobs Not 46 | ἀδικεῖν Ath</note>
 <note type="footnote">4 Plut. Arist. 1; Per. 4. Aesch. Socr. ep. 14, 2 15 cf
 
 t. IV 486, 2</note>
-
-<note type="footnote">4 ἐμβέβληται Β 5 δὲ συκοφαντεῖ, τὸ Ma Mor qui δ’ ἐσυκο-
+               <note type="footnote">4 ἐμβέβληται Β 5 δὲ συκοφαντεῖ, τὸ Ma Mor qui δ’ ἐσυκο-
 
 φάντει coni Not ad Lib. fol VII v | κρείττων VaB 6 Σωκράτη
 
@@ -7161,12 +6812,8 @@ Anth Pal III 544 17 μέλλισον C μέλησσον Ma | θαλλῆν C
 σίασαν Ma εἱστίασαν Mor sed ἐστασίασαν coni 19 αἰ μὲν
 
 στάσεις scripsi auctore lacobsio Not 47 ἐμένετ᾿ ἂν (ἂν om Ath)</note>
-
-
-
-<pb n="106"/>
-
-<note type="marginal">R III 57</note> πείας φύσεως νόσημα, τὸ Ι δ’ ὑπακούειν ἐκ τοῦ
+               <pb n="106"/>
+               <note type="marginal">R III 57</note> πείας φύσεως νόσημα, τὸ Ι δ’ ὑπακούειν ἐκ τοῦ
 
 βασιλείαν σφίσιν ἐφορμεῖν μεγάλην συνέβη, τὴν δὲ
 
@@ -7174,9 +6821,10 @@ Anth Pal III 544 17 μέλλισον C μέλησσον Ma | θαλλῆν C
 
 Κῦρος Κροῖσον καθελὼν ἐποίησε καὶ μετ’ ἐκεῖνον
 
-<lb n="5"/> Δαρεῖος.</p></div>
-
-<div type="textpart" subtype="chapter" n="159"><p>ἐπεὶ ὅτι ταῦτά γε οὐκ ἐνιᾶσιν οἱ σοφι-
+<lb n="5"/> Δαρεῖος.</p>
+         </div>
+         <div n="159" type="chapter">
+            <p>ἐπεὶ ὅτι ταῦτά γε οὐκ ἐνιᾶσιν οἱ σοφι-
 
 σταὶ οὐδ’ ἀγαπῶσιν εἰ ἔστι, μαρτυροῦσι Λακεδαιμόνιοι
 
@@ -7188,9 +6836,10 @@ Anth Pal III 544 17 μέλλισον C μέλησσον Ma | θαλλῆν C
 
 <lb n="10"/> ἀσελγὴς ἦν καὶ βαρὺς καὶ τοῖς Ἕλλησιν οὐ φορητὸς
 
-ὁ μηδεπώποτε σοφιστὴν ἰδών.</p></div>
-
-<div type="textpart" subtype="chapter" n="160"><p>οὓς δὴ
+ὁ μηδεπώποτε σοφιστὴν ἰδών.</p>
+         </div>
+         <div n="160" type="chapter">
+            <p>οὓς δὴ
 
 καὶ περὶ Θρασυβούλου καὶ Κόνωνος, ὅτι Θρασύβουλος
 
@@ -7199,8 +6848,7 @@ Anth Pal III 544 17 μέλλισον C μέλησσον Ma | θαλλῆν C
 <note type="footnote">2 Dem. 01. III p. 30,18 9 Thuc. I 95; 96; 130,2
 
 12 Dem. Lept. p. 474, 29 sq. et 477, 12 sq.</note>
-
-<note type="footnote">εἰς libri Mor qui adnotavit: ^,Lacimae in Graec. in quibus non
+               <note type="footnote">εἰς libri Mor qui adnotavit: ^,Lacimae in Graec. in quibus non
 
 liquet," Re ἐνέπεσον εἰς auctore Cobeto Mnem. III 155 Rog
 
@@ -7211,8 +6859,7 @@ Cobeto cum Rog νοσήματος libri Mor Re | ἀκούειν Va
 2 ἐφορμὴν Mor sed γρ ἐφ’ ὁρμὴν in marg ἐφορμᾶν Rog qui
 
 ἐφορμεῖν sine sensu esse dicit iniuria cf t. I 507, 16 et Dem. 1. 1.</note>
-
-<note type="footnote">4 ἐποίησεν Α 5 ταῦτά γε reposui e libris γε ταῦτα edd
+               <note type="footnote">4 ἐποίησεν Α 5 ταῦτά γε reposui e libris γε ταῦτα edd
 
 Ι ἀνιῶσιν Ma UVaB 6 οὐδὲ Mor Re | ἀγαπῶσιν εἰ scripsi
 
@@ -7241,18 +6888,14 @@ ser coni Gomperz parum recte 13 Κόνων C sed ὁ in ras m^
 I ἤστην ἂν] ἤτην ἂν TJVaB Rog ἢ τὴν ἂν Ath κατήναν Ma
 
 om Mor cf 1. 1 162, 18; II 484, 16; III 320, 22; IV 146, 5 Ι ἀμεί-</note>
-
-
-
-<pb n="107"/>
+               <pb n="107"/>
 
 τρίψαντες, Κριτίας δὲ καὶ Ἀλκιβιάδης πολὺ φαυλο-
 
 τέρω μηδ’ ἁψαμένω. τοὺς μὲν γὰρ ἴσως τι οὐκ ἐχα-
 
 λίνωσαν , &lt;ἄν&gt; οἱ δ’ ἂν ἦσαν χαριέστεροι.</p>
-
-<p>161. Περὶ μὲν οὖν τούτων ἀποχρώντως εἴρηται,
+            <p>161. Περὶ μὲν οὖν τούτων ἀποχρώντως εἴρηται,
 
 πάνυ δὲ ἀνδρῶν ἔργον ἀγαθῶν ἐποιεῖτε, ἡνίκα ὑμῖν <lb n="5"/>
 
@@ -7263,8 +6906,7 @@ om Mor cf 1. 1 162, 18; II 484, 16; III 320, 22; IV 146, 5 Ι ἀμεί-</not
 ἴσως λόγων πρός γε τοὺς οὕτω διατεθέντας, ὅμως δὲ
 
 ἐρῶ καὶ περὶ τοῦδε.</p>
-
-<p>162. Τί σοι τὸν ἄνθρωπον ἐβούλου ποιεῖν; θεοὺς <lb n="10"/>
+            <p>162. Τί σοι τὸν ἄνθρωπον ἐβούλου ποιεῖν; θεοὺς <lb n="10"/>
 
 θεραπεύειν ὥσπερ ἡ πόλις; οὕτω τεθεράπευκεν ἐν
 
@@ -7275,14 +6917,11 @@ om Mor cf 1. 1 162, 18; II 484, 16; III 320, 22; IV 146, 5 Ι ἀμεί-</not
 πάντας γέγονε δίκαιος. ἀρχόντων ἀκούειν; πότ’ οὖν
 
 ὑπερεφρόνησε; τοῖς νόμοις πείθεσθαι; παραβέβηκεν <lb n="15"/>
-
-<note type="footnote">14 Arist. Nub. 1400</note>
-
-<note type="footnote">νους scripsi ἀμείνω libri edd | διατρίψαντε Rog et coni Hirzel
+               <note type="footnote">14 Arist. Nub. 1400</note>
+               <note type="footnote">νους scripsi ἀμείνω libri edd | διατρίψαντε Rog et coni Hirzel
 
 Mus. Rhen. XLII 245 at pluralis usui Libaniano bene convenit</note>
-
-<note type="footnote">1 δὴ Ath 2 τί VaB Mor „mallem οὐδέν τι ἐχαλίνωσεν“
+               <note type="footnote">1 δὴ Ath 2 τί VaB Mor „mallem οὐδέν τι ἐχαλίνωσεν“
 
 Re cui oblocutus est lacobsius Lect 283 Not 48 | οὐκ delen-
 
@@ -7301,8 +6940,7 @@ edd | τί Α sed in ὅτι corr m 2, Re Rog εἰ Cobet | μέλιτος
 UVaB Mor Re | οὗτός γ’ coni Re 7 Σωκράτη CA | διδάσκοι
 
 AMaAthUVa Re Rog διδάσκειν δικαιοῖ Sintenis at cf p. 108, 4</note>
-
-<note type="footnote">11 θεραπεύειν θεοὺς Μα | θεοὺς δὲ Ath | signum interrogatio-
+               <note type="footnote">11 θεραπεύειν θεοὺς Μα | θεοὺς δὲ Ath | signum interrogatio-
 
 nis post πόλις posui cum Β (comma Ma), post θεραπεύειν reli-
 
@@ -7317,16 +6955,14 @@ UVaB 14 πότ’ οὖν] πότε Mor 15 ὑπερεφρόνησεν Rog
 φρόνησε posui cum Rog, colon MaB, comma Ath, punctum
 
 Mor om reliqui libri Re</note>
-
-
-
-<pb n="108"/>
+               <pb n="108"/>
 
 οὐδένα. τῶν οἰκείων ἐπιμελεῖσθαι; καὶ τῶν ἔξω τοῦ
 
-γένους ἐφρόντισε.</p></div>
-
-<div type="textpart" subtype="chapter" n="163"><p>τί οὖν ἃ ποιῶν τε γεγήρακε
+γένους ἐφρόντισε.</p>
+         </div>
+         <div n="163" type="chapter">
+            <p>τί οὖν ἃ ποιῶν τε γεγήρακε
 
 καὶ τοὺς ἄλλους ποιεῖν ἀξιῶν, ταῦθ’ ὡς ἀγνοοῦντα
 
@@ -7360,17 +6996,17 @@ Mor om reliqui libri Re</note>
 
 οὔπω νομίζων εὐδαιμονίαν; πῶς δ’ ἂν ἐπεθύμησε πολι-
 
-τείας ᾗ τὸ μηδένα παιδείᾳ προσέχειν λυσιτελεῖ;</p></div>
-
-<div type="textpart" subtype="chapter" n="164"><p>καὶ
+τείας ᾗ τὸ μηδένα παιδείᾳ προσέχειν λυσιτελεῖ;</p>
+         </div>
+         <div n="164" type="chapter">
+            <p>καὶ
 
 <lb n="20"/> τί δεῖ μακρολογεῖν ἐξὸν ἐναργεστέροις καὶ σαφε-
 
 <note type="footnote">12 Lys. p. 132, 37 15 Plat. Gorg. p. 470 E; Lys.
 
 p. 209 D sq.</note>
-
-<note type="footnote">3 ταῦτα Ma 4 μέλιτον Mor Re | διδάσκοι μέλητον (μέλι-
+               <note type="footnote">3 ταῦτα Ma 4 μέλιτον Mor Re | διδάσκοι μέλητον (μέλι-
 
 τον VaB) UVaB 5 τις libri Re Rog cancellavi τι Mor
 
@@ -7389,10 +7025,7 @@ tore Re Rog | τί scripsi auctore Re cum Rog ὅ τί MaB
 cobsio Lect 203 Not 49 Rog ἢ Ma εἰ reliqui libri Re | ἔχειν
 
 Ma | λυσιτελεῖν Ath 20 ἐναργεστέροις Β sed ἐν in ras m 2</note>
-
-
-
-<pb n="109"/>
+               <pb n="109"/>
 
 στέροις ἐπιδεῖξαι σημείοις, ὡς οὐκ ἐπαινεῖ τὰς δυνα-
 
@@ -7402,9 +7035,10 @@ Ma | λυσιτελεῖν Ath 20 ἐναργεστέροις Β sed ἐν in r
 
 τὴν ἀρετὴν Σωκράτους νομίζοντες πρέπειν ταῖς ἐξου-
 
-σίαις αὑτῶν καὶ ταύτην τὴν | θέαν.</p></div>
-
-<div type="textpart" subtype="chapter" n="165"><p>καὶ <note type="marginal">R III 59</note>
+σίαις αὑτῶν καὶ ταύτην τὴν | θέαν.</p>
+         </div>
+         <div n="165" type="chapter">
+            <p>καὶ <note type="marginal">R III 59</note>
 
 διὰ τοῦτο ἐκάλει μὲν [ὁ] Εὐρύλοχος ὁ Λαρισαῖος, <lb n="6"/>
 
@@ -7425,14 +7059,12 @@ Ma | λυσιτελεῖν Ath 20 ἐναργεστέροις Β sed ἐν in r
 ράννων καὶ δώρων τῶν παρ’ ἐκείνων καὶ τρυφῆς καὶ
 
 ποικίλων ἡδονῶν αἰσχυνόμενος τοὔδαφος τῶν Ἀθη- <lb n="15"/>
-
-<note type="footnote">6 sq. Diog. L. ΙΙ 5, 9 § 25 7 Plat. Prot. p. 339 A
+               <note type="footnote">6 sq. Diog. L. ΙΙ 5, 9 § 25 7 Plat. Prot. p. 339 A
 
 8 Plat. Theag. p. 124 D; Gorg. p.470 D. Dio Chrys. XIII p. 432 R
 
 10 Socr. epist. 1</note>
-
-<note type="footnote">5 ἀυτῶν ἁ αὐτῶν reliqui libri Mor Re 6 δία τοῦτο
+               <note type="footnote">5 ἀυτῶν ἁ αὐτῶν reliqui libri Mor Re 6 δία τοῦτο
 
 Ma διατοῦτο Β | ὁ ante Εὐρύλοχος CAMa Mor Re cancel-
 
@@ -7465,12 +7097,8 @@ Va Re Rog 12 εἴδητε Va ἴδητε MaUB ἴδοιτε Bremi Epist.
 Socr. ed. Orelli p. 132 et lacobs l. l. | μάλιστα Mor delendum
 
 et καὶ pro δέ scribendum censuit Bremi | παραδειγμάτων Ma</note>
-
-<note type="footnote">14 ἐκείνων scripsi ἐκείνοις libri edd</note>
-
-
-
-<pb n="110"/>
+               <note type="footnote">14 ἐκείνων scripsi ἐκείνοις libri edd</note>
+               <pb n="110"/>
 
 ναίων καὶ τοὺς νόμους καθ’ οὓς αὐτός τε ἐγένετο τῷ
 
@@ -7478,9 +7106,10 @@ et καὶ pro δέ scribendum censuit Bremi | παραδειγμάτων Ma</
 
 αὑτοῦ φύσεως οὔτε θεραπεύειν τύραννον οὔτε εὐ
 
-πάσχειν ὑπὸ τυράννου.</p></div>
-
-<div type="textpart" subtype="chapter" n="166"><p>οὐ τοίνυν ὡς καλοῦντες
+πάσχειν ὑπὸ τυράννου.</p>
+         </div>
+         <div n="166" type="chapter">
+            <p>οὐ τοίνυν ὡς καλοῦντες
 
 <lb n="5"/> διήμαρτον, ἀφίσταντο τῆς πείρας, ἀλλ’ ἀκούοντες ἀνά-
 
@@ -7495,8 +7124,7 @@ et καὶ pro δέ scribendum censuit Bremi | παραδειγμάτων Ma</
 <lb n="10"/> ὀδὸς ἔμεινεν ἐπὶ τῆς πενίας ἡδέως οὐδ’ ἂν Θεττα-
 
 λίαν ὅλην, εἴ τις ἐδίδου, λαβών.</p>
-
-<p>167. Τοῦτον οὖν ἀποκτενεῖτε καὶ διὰ τοὺς Ἀνύτου
+            <p>167. Τοῦτον οὖν ἀποκτενεῖτε καὶ διὰ τοὺς Ἀνύτου
 
 λόγους ὑπερόψεσθε τοὺς ὅρκους; οὐ δείσετε τὴν ὀργὴν
 
@@ -7517,8 +7145,7 @@ et καὶ pro δέ scribendum censuit Bremi | παραδειγμάτων Ma</
 <note type="footnote">8 Diog. L. II 5, 9, 25 10 Plat. apol. p. 31 B 17 cf
 
 ep. 606. Plat.apol. p. 40 E sq.; Phaed. p. 63 C</note>
-
-<note type="footnote">3 αὐτοῦ MaVaB Mor αὐτοῦ U | θεραπεύειν Β sed ερ in
+               <note type="footnote">3 αὐτοῦ MaVaB Mor αὐτοῦ U | θεραπεύειν Β sed ερ in
 
 ras m 2 4 τοῦ τυράννου Ma 6 καθημένωι Α sed γρ καθή-
 
@@ -7541,10 +7168,7 @@ Ath 15 ἐγκαλέσετε C sed ε (3) in ras m 2 17 ἡ inserui
 auctore Re cum Rog om libri Mor Re | πεποίηκεν Ma
 
 20 σκοπῆτε Β</note>
-
-
-
-<pb n="111"/>
+               <pb n="111"/>
 
 τί τῷδε κοῦφον, ἀλλὰ τί τοῖς νόμοις συμβαῖνον. οὐ
 
@@ -7552,9 +7176,10 @@ auctore Re cum Rog om libri Mor Re | πεποίηκεν Ma
 
 εῖσθαι, κατὰ δὲ τοὺς νόμους τοὺς κειμένους, ὧν οὐδεὶς
 
-κωλύει μεμνῆσθαι ποιητῶν.</p></div>
-
-<div type="textpart" subtype="chapter" n="168"><p>μεγάλοι μὲν οὖν
+κωλύει μεμνῆσθαι ποιητῶν.</p>
+         </div>
+         <div n="168" type="chapter">
+            <p>μεγάλοι μὲν οὖν
 
 αὐτὸν ἐν Ἅιδου περιμένουσι μισθοὶ βίου σώφρονος <lb n="5"/>
 
@@ -7578,9 +7203,10 @@ auctore Re cum Rog om libri Mor Re | πεποίηκεν Ma
 
 ρας, λυπῶν λύπην τὴν λυσιτελοῦσαν. ἐώρα γὰρ καὶ <lb n="15"/>
 
-τοὺς ἰατροὺς ταύτην ἰόντας.</p></div>
-
-<div type="textpart" subtype="chapter" n="169"><p>τούτων ἦν μιμητὴς
+τοὺς ἰατροὺς ταύτην ἰόντας.</p>
+         </div>
+         <div n="169" type="chapter">
+            <p>τούτων ἦν μιμητὴς
 
 περὶ τὸ βέλτιον μέρος. οἱ μὲν γὰρ τοῖς σώμασι βοη-
 
@@ -7593,10 +7219,8 @@ auctore Re cum Rog om libri Mor Re | πεποίηκεν Ma
 καὶ τοῦτο λήψεται μισθόν, ὅτι πάντας Ἀθηναίους
 
 ἐβούλετο καλοὺς κἀγαθοὺς εἶναι; καὶ | ὁ μὲν <note type="marginal">R III 61</note>
-
-<note type="footnote">15 Plat. Prot. p. 340 E 22 Plat. apol. p. 30 A sq.</note>
-
-<note type="footnote">2 τὴν τοῦ σωκράτους Ma | ὀμωμόκατε MaB 4 οὖν om
+               <note type="footnote">15 Plat. Prot. p. 340 E 22 Plat. apol. p. 30 A sq.</note>
+               <note type="footnote">2 τὴν τοῦ σωκράτους Ma | ὀμωμόκατε MaB 4 οὖν om
 
 Mor 5 μισθοὶ περιμένουσι UVaB 6 δὴ Β | ὑμῶν Β sed ων
 
@@ -7613,10 +7237,7 @@ in ras m 2 ἡμῶν Mor | θεοί Ath 8 τῶ Ma 11 ἐπῄει Ath
 ώρθουν Ma 20 τιμιωτάτου Mor | ἀποκτενεῖτε scripsi auc-
 
 tore Cobeto Mnem. III 156 cum Rog ἀποκτείνετε libri Mor Re</note>
-
-
-
-<pb n="112"/>
+               <pb n="112"/>
 
 πολλῶν υἱέσιν ἀμείνων ἐγένετο τῶν πατέρων, ὑμεῖς
 
@@ -7626,9 +7247,10 @@ tore Cobeto Mnem. III 156 cum Rog ἀποκτείνετε libri Mor Re</note>
 
 ται; ποῦ παρρησιάσονται τῆς τοῦ πατρὸς συμφορᾶς
 
-<lb n="5"/> οὐκ ἐώσης;</p></div>
-
-<div type="textpart" subtype="chapter" n="170"><p>κλαύσατε, παιδία δυστυχῆ. κλαῦσον,
+<lb n="5"/> οὐκ ἐώσης;</p>
+         </div>
+         <div n="170" type="chapter">
+            <p>κλαύσατε, παιδία δυστυχῆ. κλαῦσον,
 
 Ξανθίππη ταλαίπωρε. Σωκράτης μὲν οὐδέποτε τοῦτο
 
@@ -7648,9 +7270,10 @@ tore Cobeto Mnem. III 156 cum Rog ἀποκτείνετε libri Mor Re</note>
 
 θάνατον. ἀλλ’ ὑμεῖς δεήθητε τῶν δικαστῶν, ἀντιβο-
 
-<lb n="15"/> λήσατε, δακρύσατε.</p></div>
-
-<div type="textpart" subtype="chapter" n="171"><p>καὶ αὐτὸς δὲ οὐκ ὀκνήσω
+<lb n="15"/> λήσατε, δακρύσατε.</p>
+         </div>
+         <div n="171" type="chapter">
+            <p>καὶ αὐτὸς δὲ οὐκ ὀκνήσω
 
 μεθ’ ὑμῶν. ἄνδρες Ἀθηναῖοι, φίλον εἰλικρινῆ, χρηστὸν
 
@@ -7669,8 +7292,7 @@ tore Cobeto Mnem. III 156 cum Rog ἀποκτείνετε libri Mor Re</note>
 ψῆφος, μικρὸν δὲ οὐδὲ Σωκράτης τηρῶν πλημμελοῦν-
 
 <note type="footnote">9 cf p. 129, 17</note>
-
-<note type="footnote">2 τοὺς om Mor 3 φεύξονται Ma 7 πείσει vel παύσει
+               <note type="footnote">2 τοὺς om Mor 3 φεύξονται Ma 7 πείσει vel παύσει
 
 coni lacobs Lect 203 | θαρρεῖ Ma sed ε in ras m 2
 
@@ -7687,16 +7309,14 @@ cf. Thuc. l 31,1 21 νέους εἰς scripsi ἐνεὶς CAAth Mor Re
 ἐνιεὶς MaUVaB εἰς auctore Re Rog 22 μὲν om C
 
 23 πλημελοῦντας MaB</note>
-
-
-
-<pb n="113"/>
+               <pb n="113"/>
 
 τὰς, μεμφόμενος ἀδικοῦσι, συνεχῆ τινα ταύτην, ὅπερ
 
-ἔφην, λειτουργῶν ἤδη λειτουργίαν τῇ πόλει.</p></div>
-
-<div type="textpart" subtype="chapter" n="172"><p>πό-
+ἔφην, λειτουργῶν ἤδη λειτουργίαν τῇ πόλει.</p>
+         </div>
+         <div n="172" type="chapter">
+            <p>πό-
 
 σους | οἴεσθε διὰ τοῦτον ἀμελήσαντας ἂν υἱέων R III 62
 
@@ -7714,9 +7334,10 @@ cf. Thuc. l 31,1 21 νέους εἰς scripsi ἐνεὶς CAAth Mor Re
 
 τοῦτ’ οὖν ἀποθανεῖται καὶ δώσει δίκην, ὅτι βελτίους <lb n="10"/>
 
-ἐν οἶς ἔδακνε καθίστη;</p></div>
-
-<div type="textpart" subtype="chapter" n="173"><p>καὶ τῶν μὲν παρ’ ἐκείνου
+ἐν οἶς ἔδακνε καθίστη;</p>
+         </div>
+         <div n="173" type="chapter">
+            <p>καὶ τῶν μὲν παρ’ ἐκείνου
 
 λόγων ἀπαλλαγῆναι ζητεῖτε, τὸν δὲ ἐπὶ τούτοις ἐσό-
 
@@ -7739,8 +7360,7 @@ cf. Thuc. l 31,1 21 νέους εἰς scripsi ἐνεὶς CAAth Mor Re
 αἰδεσθέντες; μικρὰν οἴεσθε ταῦτ’ εἶναι βλάβην; ἢ
 
 <note type="footnote">2 cf. p. 24, 12</note>
-
-<note type="footnote">2 λειτουργίαν ἤδη λειτουργῶν Re Rog 3 τούτων Mor
+               <note type="footnote">2 λειτουργίαν ἤδη λειτουργῶν Re Rog 3 τούτων Mor
 
 4 ἐπιμελεῖσθαι MaB Mor 5 τετολμηκέναι? | ἂν inserui auc-
 
@@ -7759,24 +7379,21 @@ cum Rog αὐτῶν libri Mor Re 16 αἰσχυνόμενον scripsi
 αἰσθανόμενον (αἰσθόμενον Ma) libri edd 17 καὶ inserui auc-
 
 tore Gasda cum Rog om libri Mor Re 20 λόγον UVaB Mor</note>
-
-<note type="footnote">21 αἰδεσθέντας C | signum interrogationis posui cum Mor,
+               <note type="footnote">21 αἰδεσθέντας C | signum interrogationis posui cum Mor,
 
 punctum libri Re Rog | ταύτην Cobet
 
 LIBANIUS ed. Foerster. V. 8</note>
-
-
-
-<pb n="114"/>
+               <pb n="114"/>
 
 δόξειν ποτὲ τὴν τοιαύτην &lt;πόλιν&gt; πρὸς ἑτέρους ἔσε-
 
 σθαι μετρίαν, ὅταν τοὺς παρ’ αὑτῇ βελτίστους ὠμῶς
 
-μεταχειρίζηται;</p></div>
-
-<div type="textpart" subtype="chapter" n="174"><p>νῦν μέν τις ζῶντα βλέπων ἴσως
+μεταχειρίζηται;</p>
+         </div>
+         <div n="174" type="chapter">
+            <p>νῦν μέν τις ζῶντα βλέπων ἴσως
 
 ἐπιθυμεῖ τεθνεῶτα ἰδεῖν, ἀποθανόντος δὲ καὶ λωφή-
 
@@ -7804,9 +7421,10 @@ LIBANIUS ed. Foerster. V. 8</note>
 
 ταῦθα λέγων ἐνίκα, Πρωταγόραν ἐκεῖ, τὸν
 
-Ἠλεῖον ἄλλοθι, τὸν Λεοντῖνον ἑτέρωθι.</p></div>
-
-<div type="textpart" subtype="chapter" n="175"><p>τίς
+Ἠλεῖον ἄλλοθι, τὸν Λεοντῖνον ἑτέρωθι.</p>
+         </div>
+         <div n="175" type="chapter">
+            <p>τίς
 
 οἴσει τὴν μνήμην ἀδακρυτὶ τῶν τροπαίων τούτων;
 
@@ -7815,8 +7433,7 @@ LIBANIUS ed. Foerster. V. 8</note>
 ep. 17, 3 sq. Suid. s. v. Σωκράτης Σωφρονίσκου 15 sq. cf
 
 p. 26,7; 138, 16 sq.; 139, 18 sq.</note>
-
-<note type="footnote">1 δόξαν Mor quod defendit lacobs Lect 204 Not 50 |
+               <note type="footnote">1 δόξαν Mor quod defendit lacobs Lect 204 Not 50 |
 
 πόλιν inserui, subintellegendum censuerunt Sintenis Cobet Rog
 
@@ -7841,10 +7458,7 @@ sed in hoc ἀνδρείου, AMaU sed in hoc ἀνδρείας, VaB, post
 τόπον Ath edd 15 δικαιοσύνης scripsi δικαίου libri edd
 
 16 τὸν Ἠλεῖον ἄλλοθι om Β 17 τόνδε post ἑτέρωθι Ma 18 γνώμην</note>
-
-
-
-<pb n="115"/>
+               <pb n="115"/>
 
 πῶς ἀλλήλους ὀψόμεθα μετὰ τὸ κώνειον; πολλά, ὦ
 
@@ -7887,12 +7501,10 @@ sed in hoc ἀνδρείου, AMaU sed in hoc ἀνδρείας, VaB, post
 <note type="footnote">6 cf ad t. II 21, 1 9 cf p. 141, 2. Diog. L. ΙΙ 5, 23, 44.
 
 Eur. Palam. fr. 588 N 2 19 sq. cf p. 14, 13 sq.</note>
-
-<note type="footnote">Mor sed γρ μνήμην in marg | μετὰ ante τῶν Mor sed γρ κατὰ
+               <note type="footnote">Mor sed γρ μνήμην in marg | μετὰ ante τῶν Mor sed γρ κατὰ
 
 in marg</note>
-
-<note type="footnote">2 πολλὰ delendum? | δυσχεραίνετε MaAthUVaB Mor
+               <note type="footnote">2 πολλὰ delendum? | δυσχεραίνετε MaAthUVaB Mor
 
 3 ποθεῖτε MaAthVaB Mor | μηδὲ Mor 4 συνοῦσιν scripsi
 
@@ -7913,12 +7525,8 @@ reliqui libri sed v eras Β, Re Rog 19 ταῦτα VaB | μέλιτος
 VaB Mor
 
 8*</note>
-
-
-
-<pb n="116"/>
-
-<note type="marginal">R III 64</note> τος, ἐπὶ τούτοις Ἄνυτος ἐδίωκεν. εἴδομεν |
+               <pb n="116"/>
+               <note type="marginal">R III 64</note> τος, ἐπὶ τούτοις Ἄνυτος ἐδίωκεν. εἴδομεν |
 
 Σωκράτην κρινόμενον, εἴδομεν κατεγνωσμένον,
 
@@ -7926,9 +7534,11 @@ VaB Mor
 
 τα παρῄνεσε φεύγειν, ταῦτα ζητῆσαι καταφυγήν.
 
-<lb n="5"/></p></div>
-
-<div type="textpart" subtype="chapter" n="176"><p>οὐκοῦν καὶ ἀσμένως δέξονται καὶ παραμυθήσονται
+<lb n="5"/>
+            </p>
+         </div>
+         <div n="176" type="chapter">
+            <p>οὐκοῦν καὶ ἀσμένως δέξονται καὶ παραμυθήσονται
 
 καὶ δώσουσι θαρρεῖν. οἱ δὲ ἱδρυθέντες ὧς ἑκάστῳ συμ-
 
@@ -7950,9 +7560,10 @@ VaB Mor
 
 <lb n="15"/> φέροντες εἰς γραφὴν ἐγκατάθωνται πράξεις ἢ χείρους ἢ
 
-βελτίους, ἀνάγκη ταύτας ἐστὶν ἀθανάτους μένειν.</p></div>
-
-<div type="textpart" subtype="chapter" n="177"><p>οὐχ
+βελτίους, ἀνάγκη ταύτας ἐστὶν ἀθανάτους μένειν.</p>
+         </div>
+         <div n="177" type="chapter">
+            <p>οὐχ
 
 ὁρᾶτε τὸν Μίνω δεινά πάσχοντα ἐπὶ τῆς σκηνῆς καὶ
 
@@ -7961,8 +7572,7 @@ VaB Mor
 αἰσχύνῃ γεγενημένην; ταῦτα μέντοι πολλοὺς &lt;ἂν&gt; ἀν-
 
 <note type="footnote">17 sq. cf t. IV 467, 5. Plat. Min. p. 318 E sq.</note>
-
-<note type="footnote">1 ἐδίωκε Ma | 1 et 2 ἴδωμεν AthUVaB 2 κατεγνωσμένον
+               <note type="footnote">1 ἐδίωκε Ma | 1 et 2 ἴδωμεν AthUVaB 2 κατεγνωσμένον
 
 — 3 εἴδομεν om UVaB 4 ταύτην coni Mor | ζητῆσαι Ma
 
@@ -7987,10 +7597,7 @@ AAth Mor qui ὡς δεινὰ coni μὲν δεῖνα MaUVaB corr Re
 19 τοίνυν CA sed in hoc γρ μέντοι in marg | ἂν ante ἀν-
 
 θρώπους inserui, post ἔλαθεν auctore Gasda Rog</note>
-
-
-
-<pb n="117"/>
+               <pb n="117"/>
 
 θρώπους ἔλαθεν, εἰ μὴ πανταχοῦ τὸν λόγον αἱ τρα-
 
@@ -8004,9 +7611,10 @@ AAth Mor qui ὡς δεινὰ coni μὲν δεῖνα MaUVaB corr Re
 
 πρᾶγμα ἐλαύνοντας ἐχθροὺς τῇ πόλει ποιήσητε.
 
-</p></div>
-
-<div type="textpart" subtype="chapter" n="178"><p>Καὶ τί δεῖ τοῖς ἐσομένοις συγγράμμασι πεί-
+</p>
+         </div>
+         <div n="178" type="chapter">
+            <p>Καὶ τί δεῖ τοῖς ἐσομένοις συγγράμμασι πεί-
 
 θειν μὴ βουλεύεσθαι κακῶς; τὸν Πύθιον, ὦ Ἀθη-
 
@@ -8026,17 +7634,17 @@ AAth Mor qui ὡς δεινὰ coni μὲν δεῖνα MaUVaB corr Re
 
 δρῶν Σωκράτης, ἐντεῦθεν δὲ ἀποκτανθήτω Σω-
 
-κράτης βοᾶτε.</p></div>
-
-<div type="textpart" subtype="chapter" n="179"><p>πῶς οὖν πέμψετε θεωροὺς εἰς
+κράτης βοᾶτε.</p>
+         </div>
+         <div n="179" type="chapter">
+            <p>πῶς οὖν πέμψετε θεωροὺς εἰς
 
 <note type="footnote">3 Thuc. I 4, 1 4 Plat. Min. p. 321 A 6 cf ad t. IV
 
 392, 6 9 cf. p. 69, 9 sq. 12 cf t. IV 73, 9 et 736, 6 R et
 
 ad t. IV 317, 1 14 cf p. 69, 6</note>
-
-<note type="footnote">5 ἡμᾶς UVa | κινήσετε Mor | μὴ δὲ CAMaB | τὸ πρᾶγμα
+               <note type="footnote">5 ἡμᾶς UVa | κινήσετε Mor | μὴ δὲ CAMaB | τὸ πρᾶγμα
 
 ἐροῦντας Ma τὸ πράγματι ἐμμένοντας Ath τῶ πράγματι ἐροῦν-
 
@@ -8065,10 +7673,7 @@ om CAAth Mor Re qui ὑμεῖς δὲ πονηρότατος ἀνδρῶν
 πονηρότατος ἀνδρῶν Σωκράτης Cobetus 17 βοᾶτε Α
 
 sed αι supra ε m 2 βοᾶται Ath</note>
-
-
-
-<pb n="118"/>
+               <pb n="118"/>
 
 τὰ Πύθια; πῶς θύσετε πορευθέντες; πῶς εὔξεσθε;
 
@@ -8082,9 +7687,10 @@ sed αι supra ε m 2 βοᾶται Ath</note>
 
 δι’ οὗ κακῶν ἑτέρων εὕρασθε λύσεις, δι’ οὗ τὴν προ-
 
-ηροσίαν ὑπὲρ τῶν Ἑλλήνων θύετε.</p></div>
-
-<div type="textpart" subtype="chapter" n="180"><p>φέρε, εἴ του
+ηροσίαν ὑπὲρ τῶν Ἑλλήνων θύετε.</p>
+         </div>
+         <div n="180" type="chapter">
+            <p>φέρε, εἴ του
 
 πιέζοντος, ὅ μὴ γένοιτο, &lt;ἥκοιτε&gt; ζητοῦντες παρὰ τοῦ
 
@@ -8100,13 +7706,13 @@ sed αι supra ε m 2 βοᾶται Ath</note>
 
 νόμον ἀναχώρησις, ὑμᾶς δὲ τί τῶν ἀπάντων παραι-
 
-<lb n="15"/> τήσεται;</p></div>
-
-<div type="textpart" subtype="chapter" n="181"><p>τοὺς αὑτοῦ ποθ’ ἱερεῖς οὗτος αὐτὸς ὁ
+<lb n="15"/> τήσεται;</p>
+         </div>
+         <div n="181" type="chapter">
+            <p>τοὺς αὑτοῦ ποθ’ ἱερεῖς οὗτος αὐτὸς ὁ
 
 <note type="footnote">5 Aristid. Panath. t. Ι p. 181, 14 sq. D | Her. VII 141 sq.</note>
-
-<note type="footnote">7 cf t. IV 367, 14 R. Arist. l. l. p. 318, 23. Schol. Arist. Eq.
+               <note type="footnote">7 cf t. IV 367, 14 R. Arist. l. l. p. 318, 23. Schol. Arist. Eq.
 
 729 10 cf ad t. I 119, 20; t. II 145, 9 11 Galen. adh. 9.
 
@@ -8115,10 +7721,8 @@ Archil. fr. 1. cf Hes. theog. 100. Theogn. 769. Arist. Av. 909.
 Hom. h. XXXII 20 13 Plut. de ser. num. vind. 17 cum nota
 
 Wyttenbachii. Suid. s. v. Ἀρχίλοχος</note>
-
-<note type="footnote">13 τούτῳ] τῷ τοῦ Ἀρχιλόχου φον[εῖ] δηλονότι Α</note>
-
-<note type="footnote">1 θύσετε scripsi auctore Re cum Rog οἴσετε libri Mor Re
+               <note type="footnote">13 τούτῳ] τῷ τοῦ Ἀρχιλόχου φον[εῖ] δηλονότι Α</note>
+               <note type="footnote">1 θύσετε scripsi auctore Re cum Rog οἴσετε libri Mor Re
 
 ᾄσετε lacobs Add 349 Lect 204 3 λόγων Mor | ὑμῶν
 
@@ -8139,10 +7743,7 @@ l. l. om libri edd 9 ὃ Α ὅ Β | δὲ Re 10 ἐξελαύνει Β
 UVaB | αὐτοῦ CAUVaB Mor 13 τοῦτο UVa 15 αὐτοῦ
 
 scripsi ex AMa cum Rog αὐτοῦ U αὐτοῦ reliqui libri Mor Re</note>
-
-
-
-<pb n="119"/>
+               <pb n="119"/>
 
 θεὸς ὑπὲρ Αἰσώπου χαλεπαίνων περιέβαλε κακοῖς. καί-
 
@@ -8166,9 +7767,10 @@ scripsi ex AMa cum Rog αὐτοῦ U αὐτοῦ reliqui libri Mor Re</note>
 
 ὧς ἐμποδὼν ὁ θεὸς ἵσταται τῇ τελευτῇ καὶ τὴν σώ-
 
-ζουσαν φέρει;</p></div>
-
-<div type="textpart" subtype="chapter" n="182"><p>μέλει τοῖς κρείττοσιν, d) Ἀθηναῖοι,
+ζουσαν φέρει;</p>
+         </div>
+         <div n="182" type="chapter">
+            <p>μέλει τοῖς κρείττοσιν, d) Ἀθηναῖοι,
 
 μέλει τῶν φιλομούσων. σημεῖον δέ, Λειβήθριοι μετὰ
 
@@ -8177,8 +7779,7 @@ scripsi ex AMa cum Rog αὐτοῦ U αὐτοῦ reliqui libri Mor Re</note>
 p. 263 b 8 cf ad t. IV 269, 3 9 cf. p. 143, 12 sq. et 146, 10.
 
 Plat. Phaed. p. 58 A sq. 11 cf t. II 154, 17; 43, 6</note>
-
-<note type="footnote">1 περιέβαλλε Mor 2 φιλονικῶν Rog 3 ἡμετέρῳ? \ δεῖ
+               <note type="footnote">1 περιέβαλλε Mor 2 φιλονικῶν Rog 3 ἡμετέρῳ? \ δεῖ
 
 om Ma 4 πράως MaB \ οἴσειν] ὡς οἴσει Αtὸ | w in ras Ο2
 
@@ -8217,10 +7818,7 @@ scripsi e Ma cum Mor et Gasda coU t. IV 146, 6. Dem. p. 525, 17
 δὲ reliqui libri Re Rog Ι λιβιθριοι Α λειβἐθριοι Πα λιέ-
 
 θριοι BΒλ ιβηιθ ἴον Μο \ ol post Asi§7]d-QL0i inser auctore la-</note>
-
-
-
-<pb n="120"/>
+               <pb n="120"/>
 
 τὸν Ὀρφέως φόνον δι’ ἀμουσίας ἔδοσαν δίκην καὶ
 
@@ -8235,8 +7833,7 @@ scripsi e Ma cum Mor et Gasda coU t. IV 146, 6. Dem. p. 525, 17
 <lb n="6"/> μάτων; ἀλλ’ ὑμεῖς μὴ ἁμάρτοιτε τοιοῦτον μηδὲν μηδὲ
 
 πάθοιτε.</p>
-
-<p> Κρίτων, ἡλικιῶτα Σωκράτους καὶ δημότα,
+            <p> Κρίτων, ἡλικιῶτα Σωκράτους καὶ δημότα,
 
 λέγε πρὸς τούτους ἃ σύνοισθα τῷ φίλῳ. ποῦ τοῦ Σα-
 
@@ -8249,8 +7846,8 @@ scripsi e Ma cum Mor et Gasda coU t. IV 146, 6. Dem. p. 525, 17
 Θράσυλλον καὶ Περικλέα τοὺς οἰκείους καλῶ τῶν, τὸ
 
 Σωκράτους μέρος, οὐκ ἀπολωλότων ἀκρίτων.</p>
-
-<lb n="15"/> <p>183. Παῦσαι θορυβῶν, Ἄνυτε. δεῖσον τὸ μέλλον.
+            <lb n="15"/>
+            <p>183. Παῦσαι θορυβῶν, Ἄνυτε. δεῖσον τὸ μέλλον.
 
 μὴ νίκην νίκα Καδμείαν. ὅρα μὴ τήμερον ἡσθεὶς ὕστε-
 
@@ -8267,12 +7864,10 @@ comm. IV 4, 3; Hell. II 3, 39. Dio Chr. t. II p. 191, 10. Socr. ep.
 Xen. comm. I 1, 18; Hell. I 6, 29 et 7, 15. Diog. L. l. l. 16 cf
 
 t. II 55, 2 17 Xen. Hell. I 7, 35</note>
-
-<note type="footnote">cobsio Lect 204 Not 52 Anth. Pal. III 217 Rog | μετὰ om in
+               <note type="footnote">cobsio Lect 204 Not 52 Anth. Pal. III 217 Rog | μετὰ om in
 
 ras 1—2 litt C</note>
-
-<note type="footnote">1 δι’ del lacobs τὴν coni Re cui oblocutus est Gasda
+               <note type="footnote">1 δι’ del lacobs τὴν coni Re cui oblocutus est Gasda
 
 ἔδωκεν Mor sed γρ ἔδωκαν in marg 6 ἁμάρτοιτε scripsi ex
 
@@ -8289,10 +7884,7 @@ coni Re | τῆς om Ma | signum interrogationis posui punctum
 libri edd | τὸν MaUVaB Mor | ἀμφιθράσυλλον U 14 ἀκρἰ-
 
 τως Mor</note>
-
-
-
-<pb n="121"/>
+               <pb n="121"/>
 
 ρον ὀδύρῃ σαυτόν. εἶλε καὶ Καλλίξενος τοὺς στρατη-
 
@@ -8302,11 +7894,10 @@ libri edd | τὸν MaUVaB Mor | ἀμφιθράσυλλον U 14 ἀκρἰ-
 
 δων μετὰ τὸν χείρω βίον φιλοσοφῶν. οὕτως εἴωθε
 
-Σωκράτης διαφθείρειν τοὺς νέους.</p> <lb n="5"/>
-
-<note type="footnote">3 Diog. L. II 9, 1, 105</note>
-
-<note type="footnote">2 λιμῷ vel ἐλῶν λιμῷ olim conieci Mus. Rhen. XXXII 94
+Σωκράτης διαφθείρειν τοὺς νέους.</p>
+            <lb n="5"/>
+            <note type="footnote">3 Diog. L. II 9, 1, 105</note>
+            <note type="footnote">2 λιμῷ vel ἐλῶν λιμῷ olim conieci Mus. Rhen. XXXII 94
 
 3 „malim λοιδοριῶν“ Re | λύει scripsi λύεις libri λύσον
 
@@ -8317,23 +7908,15 @@ Mor λύει σοῦ Re qui λύσεις τἀς βλασφημίας, ὡς 
 Rog om CAAth Mor Re τέλος τῆς σωκράτους ἀπολογίας subscr
 
 A, σωκράτους ἀπολογία Va</note>
-
-
-
-<pb n="122"/>
-
-<p>Apologiae Socratis succedere iussi alteram de illo decla-
+            <pb n="122"/>
+            <p>Apologiae Socratis succedere iussi alteram de illo decla-
 
 mationem, quae in uno codice — Barberinum dico — ei ante-
 
 cedit, sed paucissimis libris servata in editionibus Morelliana
 
 et Reiskiana desideratur.</p>
-
-</div></div>
-
-
-
-</body>
-  </text>
+         </div>
+      </body>
+   </text>
 </TEI>

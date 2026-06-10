@@ -1,100 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
- <teiHeader xml:lang="eng">
-  <fileDesc>
-   <titleStmt>
-    <title xml:lang="lat">Acta Joannis (recenscio)</title>
-    <author xml:lang="lat">Acta Joannis</author>
-    <editor>Maximilian Bonnet</editor>
-    <funder>Harvard Library Arcadia Fund</funder>
-    <principal>Gregory Crane</principal>
-    <respStmt>
-     <persName xml:id="DDD">Digital Divide Data</persName>
-     <resp>Corrected and encoded the text</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Gregory Crane</persName>
-     <resp>Editor-in-Chief, Perseus Digital Library</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Matt Munson</persName>
-     <resp>Project Manager (University of Leipzig)</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Annette Gessner</persName>
-     <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Thibault Clérice</persName>
-     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Bruce Robertson</persName>
-     <resp>Technical Advisor</resp>
-    </respStmt>
-   </titleStmt>
-   <publicationStmt>
-    <authority>Harvard College Library</authority>
-    <idno type="filename">tlg0317.tlg002.1st1K-grc1.xml</idno>
-    <availability>
-     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-    </availability>
-    <date>2018</date>
-    <publisher>Harvard College Library</publisher>
-    <pubPlace>United States</pubPlace>
-   </publicationStmt>
-   <sourceDesc>
-    <listBibl>
-     <biblStruct>
-      <monogr>
-       <title xml:lang="lat">Acta apostolorum apocrypha</title>
-       <editor>
-        <persName>
-         <name xml:lang="lat">Maximilianus Bonnet</name>
-        </persName>
-       </editor>
-       <author ref="urn:cts:greekLit:tlg0317" xml:lang="lat">Acta Joannis</author>
-       <imprint>
-        <publisher>Mendelssohn</publisher>
-        <pubPlace>Leipzig</pubPlace>
-        <date>1898</date>
-       </imprint>
-       <biblScope unit="volume">2.1</biblScope>
-      </monogr>
-  <ref target="https://archive.org/stream/actaapostolorvm00tiscgoog#page/n201/mode/2up">The Internet Archive</ref>
-     </biblStruct>
-    </listBibl>
-   </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-   <p>Text encoded in accordance with the latest EpiDoc standards</p>
-   <refsDecl n="CTS">
-    <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-   </refsDecl>
-  </encodingDesc>
-  <profileDesc>
-   <langUsage>
-    <language ident="grc">Greek</language>
-    <language ident="lat">Latin</language>
-   </langUsage>
-  </profileDesc>
-  <revisionDesc>
-   <change/>
-  </revisionDesc>
- </teiHeader>
-<text>
-<body>
-<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0317.tlg002.1st1K-grc1">
-<pb n="152"/>
-<head>Πράξεις τοῦ ἁγίου ἀσποστόλου καὶ εὐαγγελιστοῖ Ἰωάννου
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Acta Joannis (recenscio)</title>
+            <author xml:lang="lat">Acta Joannis</author>
+            <editor>Maximilian Bonnet</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg0317.tlg002.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2018</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg0317.tlg002.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Acta apostolorum apocrypha</title>
+                     <editor>
+                        <persName>
+                           <name xml:lang="lat">Maximilianus Bonnet</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg0317" xml:lang="lat">Acta Joannis</author>
+                     <imprint>
+                        <publisher>Mendelssohn</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1898</date>
+                     </imprint>
+                     <biblScope unit="volume">2.1</biblScope>
+                  </monogr>
+                  <ref target="https://archive.org/stream/actaapostolorvm00tiscgoog#page/n201/mode/2up">The Internet Archive</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0317.tlg002.1st1K-grc1">
+         <pb n="152"/>
+         <head>Πράξεις τοῦ ἁγίου ἀσποστόλου καὶ εὐαγγελιστοῖ Ἰωάννου
 τοῦ θεολόγου.</head>
-<div type="textpart" subtype="chapter" n="2">
-<p>2 <gap reason="omitted"/> ἀνήνεγκαν πρὸς βασιλέα οὕτως·</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="3">
-<p>3 Αὐτοκράτορι Καίσαρι Σεβαστῷ νικητῆ τροπαούχῳ·
+         <div n="2" type="chapter">
+            <p>2 <gap reason="omitted"/> ἀνήνεγκαν πρὸς βασιλέα οὕτως·</p>
+         </div>
+         <div n="3" type="chapter">
+            <p>3 Αὐτοκράτορι Καίσαρι Σεβαστῷ νικητῆ τροπαούχῳ·
 γνωστὸν ἔστω σοι ὅτι Ἰωάννης τις ὀνόματι, τῷ γένει Ἰουδαῖος,
 <lb n="25"/> τῆς θρησκείας τῶν Γαλιλαίων, καταλαβὼν τὴν Ἀσίαν,
 ἔτι μὴν καὶ τὴν δουλικήν σου πόλιν Ἐφεσίων, ἐξέστησε
@@ -102,11 +111,10 @@
 ἕλκων πάντας ὀπίσω αὐτοῦ, ὥστε γενέσθαι ξένον ὄνομα καὶ
 ἔθνος ἕτερον· καὶ εἰ μὴ σπεύσας τοῦτον ταχέως σβέσῃς, ἀπώλεσε
 <lb n="30"/> καὶ τὸ ἔθνος καὶ τὴν χώραν.</p>
-</div>
-
-<pb n="153"/>
-<div type="textpart" subtype="chapter" n="5">
-<p>5 Ὁ δὲ βασιλεὺς Ἀδριανὸς ταῦτα ἀκούσας ἀπέστειλε ταχυδρόμους
+         </div>
+         <pb n="153"/>
+         <div n="5" type="chapter">
+            <p>5 Ὁ δὲ βασιλεὺς Ἀδριανὸς ταῦτα ἀκούσας ἀπέστειλε ταχυδρόμους
 στρατιώτας μεταστείλασθαι τὸν ἀπόστολον πρὸς
 αὐτόν. οἱ δὲ στρατιῶται σπεύσαντες κατέλαβον τὴν Ἔφεσον. <lb n="25"/>
 καὶ δὴ ἐρωτήσαντες Ποῦ φησίν ἐστιν Ἰωάννης ὁ Γλιλαῖος;
@@ -122,10 +130,9 @@
 μενος ταχέως ἀναστὰς καὶ λαβὼν τὸ πάλλιον αὐτοῦ ἔθηκεν
 ἐν αὐτῷ φοίνικας ὡσεὶ χεῖρας δύο· καὶ ἐξελθὼν λέγει αὐτοῖς·
 Δεῦτε καὶ πορευθῶμεν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="6">
-<p>6 Αὐτίκα γοῦν λαβόντες οἱ στρατιῶται τὸν Ἰωάννην,
+         </div>
+         <div n="6" type="chapter">
+            <p>6 Αὐτίκα γοῦν λαβόντες οἱ στρατιῶται τὸν Ἰωάννην,
 <lb n="25"/> κἀμὲ ἐπιτρέψαντες ἀκολουθεῖν, ἐπορεύθημεν μετὰ σπουδῆς.
 καὶ ἀνύσαντες ὁδὸν ἡμερῶν ἑπτὰ οὐθενὸς βρώματος μετέλαβεν
 ὁ Ἰωάννης. ὁρῶντες δὲ αὐτὸν οἱ στρατιῶται ἄσιτον διαμένοντα,
@@ -139,10 +146,9 @@
 <pb n="155"/>
 ἰδόντες αὐτὸν βρώσεαως μεταλαβόντα εὐθυμήσαντες σπουδαῖοι <lb n="20"/>
 τὴν πορείαν πρὸς τὴν Ῥώμην ἐποιοῦντο.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="7">
-<p>7 Καὶ δὴ φθάσαντες τὴν Ῥώμην παρέστησαν τὸν ἀπόστολον
+         </div>
+         <div n="7" type="chapter">
+            <p>7 Καὶ δὴ φθάσαντες τὴν Ῥώμην παρέστησαν τὸν ἀπόστολον
 τῷ βασιλεῖ. ὁ δὲ ἀπόστολος εἰσελθὼν ἐνώπιον τοῦ
 βασιλέως καὶ ἐγγίσας αὐτὸν ἐφίλησεν αὐτὸν κατὰ τοῦ στέρνους
 καὶ τῆς κεφαλῆς. ὁ δὲ βασιλεὺς πρὸς αὐτὸν ἔφη· Πῶς <lb n="25"/>
@@ -152,10 +158,9 @@
 γέγραπται Καρθία βασιλέως ἐν χειρὶ κυρίου· καὶ πάλιν Χεὶρ
 κυρίου ἐπὶ κορυφὴν βασιλέως, τούτου χάριν πεφίληκά σου τὸ <lb n="30"/>
 στῆθος καὶ τὴν κορυφήν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="8">
-<p>8 Ὁ δὲ βασιλεὺς ἀσμένως δεξάμενος τὴν ἀπόκρισιο τοῦ
+         </div>
+         <div n="8" type="chapter">
+            <p>8 Ὁ δὲ βασιλεὺς ἀσμένως δεξάμενος τὴν ἀπόκρισιο τοῦ
 θεολόγου ἔφη πρὸς αὐτόν· Ἀγγελία μοι ἦλθε περὶ σοῦ ὅτιπερ
 ἐξέστησας ὅλον τὸ ἔθνος καὶ μάλιστα τῶν Ἐφεσίων ἐν
 
@@ -164,10 +169,9 @@
 καὶ ἕτερον θεὸν κηρύττεις καὶ προσκυνεῖς παρὰ τοὺς ὄντας
 θεοὺς τοὺς παῤ ὑμῶν σεβομένους· πλὴν πειράσομαι καὶ γνώσομαι
 <lb n="25"/> εἰ βοηθήσει ὁ θεὸς ὃν κηρύττεις.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="9">
-<p>9 Εἶτα προσκαλεσάμενος ὁ βασιλεὺς μάγον τινὰ ἐπίσημον
+         </div>
+         <div n="9" type="chapter">
+            <p>9 Εἶτα προσκαλεσάμενος ὁ βασιλεὺς μάγον τινὰ ἐπίσημον
 ἐργάτην τοῦ διαβόλου λέγει αὐτῷ· Σκεύασόν μοι
 δηλητήριον τοιοῦτον ὥστε μόνωρον γενέσθαι τὸν ἁψάμενον
 αὐτό. Ταῦτα ἀκούσας ὁ μάγος παρὰ τοῦ βασιλέως ἀπελθὼν
@@ -179,10 +183,9 @@
 <pb n="157"/>
 ἐπικαλεσάμενος τὸν κύριον ὑμῶν Ἰησοῦν Χριστὸν ἔπιεν αὐτὸ
 ὥσπερ μεθʼ ἡδονῆς πολλῆς.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="10">
-<p>10 Αὐτοῦ δὲ μηδὲν πάσχοντος τὸ σύνολον ἔμεινεν ὁ βασιλεὺς
+         </div>
+         <div n="10" type="chapter">
+            <p>10 Αὐτοῦ δὲ μηδὲν πάσχοντος τὸ σύνολον ἔμεινεν ὁ βασιλεὺς
 καὶ ὁ μάγος καὶ πάντες οἱ σὺν αὐτοῖς ἐννεοί, ἐξιστάμενοι <lb n="20"/>
 καὶ θαυμάζοντες πῶς ἔμεινεν ἀβλαβὴς ἀπὸ τοῦ φαρμάκου ὁ
 θεολόγος. ἤρξατο οὖν μέμφεσθαι ὁ βασιλεὺς τὸν μάγον ὡς
@@ -202,20 +205,18 @@
 μεθ᾿ ὕθατος δοθήτω αὐτῷ· καὶ ἔδωμεν τί τὸ ἀποβησόμενον.
 Καὶ κλύσας τὸ ποτήριον μεθ᾿ ὕδατος ὁ μάγος καὶ τῷ ἀνθρώπῳ
 ἐπιδώσας, παραχρῆμα πιὼν ἀπέψυξεν.</p>
-</div>
-
-<pb n="158"/>
-<div type="textpart" subtype="chapter" n="11">
-<p>11 Ἰδόντες δὲ ὅ τε βασλεὺς καὶ οἱ σὺν αὐτῷ πάντες
+         </div>
+         <pb n="158"/>
+         <div n="11" type="chapter">
+            <p>11 Ἰδόντες δὲ ὅ τε βασλεὺς καὶ οἱ σὺν αὐτῷ πάντες
 ἐφοβήθησαν σφόδρα. τότε λέγει ὁ θεολόγος· Επειδὴ αἴτιος
 θανάτου γέγονα τοῦ ἀνθρώπου τούτου, χρή με λοιπὸν καὶ
 <lb n="25"/> εὐξαμένου μου ἐγεῖραι αὐτόν. Καὶ στὰς ἐπὶ ὥραν μίαν καὶ
 εὐξάμενος ἤγειρε τὸν τεθνηκότα ἔμπροσθεν τοῦ βασιλέως καὶ
 τῶν συνόντων αὐτῷ πάντων.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="12">
-<p>12 Τότε ἰδὼν ὁ βασιλεὺς καὶ οἱ σὺν αὐτῷ ἐφοβήθησαν
+         </div>
+         <div n="12" type="chapter">
+            <p>12 Τότε ἰδὼν ὁ βασιλεὺς καὶ οἱ σὺν αὐτῷ ἐφοβήθησαν
 τὸν θεὸν τοῦ οὐρανοῦ καὶ ἐπίστευσαν πολλοὶ τῷ θεῷ καὶ τῷ
 <lb n="30"/> ἀποστόλῳ. ὁ δὲ βασιλεὺς ἰδὼν ὅτι εὔλογον αἰτίας εὑρίσκει
 καθʼ ὑμῶν λέγει τῷ ἀποστόλῳ· Ἐπειδὴ κατηγορίας ἐδεξάμην
@@ -225,39 +226,34 @@
 <pb n="159"/>
 λεγομένη Πάτμῳ ἄχρι καιροῦ. Ὁ δὲ θεολόγος λέγει αὐτῷ·
 Ποίει ὃ βούλῃ.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="13">
-<p>13 Ὁ δὲ βασιλεὺς ἀπέστειλεν ὑμᾶς ἐν τῇ νήσῳ,</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="14">
-<p>14 τριετῆ χρόνον ποιήσαντες ἐν Πάτμῳ<gap reason="omitted"/> τοῦ δὲ βασιλέως
+         </div>
+         <div n="13" type="chapter">
+            <p>13 Ὁ δὲ βασιλεὺς ἀπέστειλεν ὑμᾶς ἐν τῇ νήσῳ,</p>
+         </div>
+         <div n="14" type="chapter">
+            <p>14 τριετῆ χρόνον ποιήσαντες ἐν Πάτμῳ<gap reason="omitted"/> τοῦ δὲ βασιλέως
 Ῥωμαίων τοῦ βίου τούτου ἐξελθόντος κατὰ τοὺς καιροὺς <lb n="25"/>
 τῆς ἐξορίας Ἰωάννου, αὐτίκα καὶ ὁ ἀπόστολος διὰ τὸ μὴ εἶναι
 πλοῖον ἐν τῇ νήσῳ ὅπερ ἐξορμήσει πρὸς τὴν στερεὰν γῆν ξύλου
 εὐτελοῦς ἐπιλαβόμενος φελλοῦ τοὔνομα καὶ τοῦτο ἐπιθήσας
 ἐπὶ τὰ νῶτα τῆς θαλάσσης καὶ ἐπιβιβάσας ἑαυτὸν ἐπὶ τὸ
 ξύλον κἀμὲ ἐπιτρέψας ἀνελθεῖν, εὐθυδρομεῖν ἠπείγετο ἄντκρυς <lb n="30"/>
-
-<pb n="160"/>
+               <pb n="160"/>
 τῆς τῶν Μιλησίων πόλεως. ἰδοῦσα δὲ ἡ θάλασσα τὸν τοῖ
 κυρίου ἀπόστολον καὶ ἠγαπημένον μαθητὴν καθάπερ εὔσημος
 <lb n="10"/> δούλη τὰ νῶτα ὑφαπλώσασα τοῦτον μετὰ πάσης εὐλαβείας
 πρὸς τὴν γῆν παραστῆσαι ἐσπούδασεν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="15">
-<p>15<gap reason="omitted"/> Ἀποβάντος δὲ αὐτοῦ ἀπὸ τῆς θαλάσσης ἐν ἀκτῇ
+         </div>
+         <div n="15" type="chapter">
+            <p>15<gap reason="omitted"/> Ἀποβάντος δὲ αὐτοῦ ἀπὸ τῆς θαλάσσης ἐν ἀκτῇ
 τινι ὡς ἀπὸ ὀκτὼ σημείων τ(??)ς πόλεως Μιλήτου εὗρεν ἐκεῖσε
 κώμην μικράν. καὶ εἰσελθὼν ἐν αὐτῇ, καὶ καθίσαντος ἐπάνω
 <lb n="15"/> πέτρας, ὡς ἔθος ἦν τῷ ἀποστόλῳ ποεῖν εἰς πάντα τὰ ἔθνη
 ἃ ἐδίδαξε, πεποίηκε καὶ ἐν τῇ κώμῃ ταύτῃ, καὶ κατεφώτισε
 πάντας τοὺς κατοικοῦντας ἐν αὐτῇ διὰ τῆς αὐτοῦ διδασκαλίας.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="16">
-<p>16<gap reason="omitted"/> Eἶτα ἐκεῖθεν ἀναστὰς ἐπορεύετο πρὸς τὴν τῶν
+         </div>
+         <div n="16" type="chapter">
+            <p>16<gap reason="omitted"/> Eἶτα ἐκεῖθεν ἀναστὰς ἐπορεύετο πρὸς τὴν τῶν
 Ἐφεσίων πόλιν. πορευομένου δὲ αὐτοῦ εἰσῆλθε καὶ ἐν τῇ τῶν
 <lb n="20"/> Μιλησίων πόλει· καὶ πολλὰς θαυματουργίας κἀκεῖσε ἐπιτελέσας
 τῇ τοῦ ἁγίου πνεύματος χάριτι πολλοὺς καὶ τῶν ἐκεῖσε μαθητὰς
@@ -267,10 +263,9 @@
 <lb n="25"/> ποτίσαντες αὐτόν, οὐδὲν ἴσχυσαν κατʼ αὐτοῦ· αὐτὸς γὰρ
 παραυτὰ ἐξεμέσας τὸ φάρμακον ἔμεινεν ἀβλαβής, καὶ λοπὸν
 ὥδευε τὴν ὀδὸν αὐτοῦ χαίρων.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="17">
-<p>17<gap reason="omitted"/> Οἱ δὲ ἄνθρες τῆς κώμης ἐκείνης ἔνθα κατήντησεν
+         </div>
+         <div n="17" type="chapter">
+            <p>17<gap reason="omitted"/> Οἱ δὲ ἄνθρες τῆς κώμης ἐκείνης ἔνθα κατήντησεν
 ὁ ἀπόστολος ἐξελθὼν ἀπὸ τῆς θαλάσσης ἀναστάντες ἤγειραν
 <lb n="30"/> εὐκτήριον μικρὸν τοῦ θεολόγου εἰς μέσον περιλαβόντες τὴν
 πέτραν ἔνθα καθεσθεὶς ὁ ἀπόστολος ὑπέδειξεν αὐτοῖς προσκυνεῖν
@@ -279,18 +274,16 @@
 εὐωδίας εἰς ἐπίδειξιν καὶ πίστιν πάντων τῶν πιστῶν. ἐλθόντων
 <lb n="35"/> δὲ ἡμῶν ἐν Ἐφέσῳ ἐξῆλθε πᾶς ὁ λαὸς εἰς ἀπάντησιν τοῦ
 ἀποστόλου.</p>
-</div>
-
-<pb n="169"/>
-<div type="textpart" subtype="chapter" n="30">
-<p> 30-37 Μετὰ δὲ τρεῖς ἡμέρας ἐνεφάνισεν ἑαυτὸν ὁ Ἰωάννης <note type="marginal">187 Z</note>
+         </div>
+         <pb n="169"/>
+         <div n="30" type="chapter">
+            <p> 30-37 Μετὰ δὲ τρεῖς ἡμέρας ἐνεφάνισεν ἑαυτὸν ὁ Ἰωάννης <note type="marginal">187 Z</note>
 τοῖς Ἐφεσίοις καὶ ἤρζατο διδάσκειν αὐτούς. καὶ οἳ μὲν ἐπείθοντο
 τοῖς λεγομένοις ὑπʼ αὐτοῦ, οἳ δὲ μυκτηρίζοντες ἀνεχώρουν.</p>
-</div>
-
-<pb n="171"/>
-<div type="textpart" subtype="chapter" n="38">
-<p>38-41 Συνηγμένων οὖν πάντων ἐν τῇ ἑορτῇ τῆς μιαρᾶς
+         </div>
+         <pb n="171"/>
+         <div n="38" type="chapter">
+            <p>38-41 Συνηγμένων οὖν πάντων ἐν τῇ ἑορτῇ τῆς μιαρᾶς
 Ἀρτέμιδος καὶ τὰς θυσίας ἐπιτελούντων — τὸν γὰρ ναὸν αὐτῆς
 καταστραφέντα ὑπὸ Ἰωάννου ὄντων ἡμῶν ἐν τῇ ἐξορίᾳ οὗτοι <lb n="15"/>
 πάλιν ἀνοικοδόμησαν — ὁ δὲ Ἰωάννης ἐν τῇ ἑορτῇ αὐτῶν ἔστη
@@ -309,10 +302,9 @@
 καρδίας τοῦ λαοῦ τούτου, ἐπιγνῶναι σὲ τὸν ἀληθινὸν θεὸν
 καὶ ὃν ἀπέστειλας υἱόν σου μονογενῆ Ἰησοῦν Χριστὸν σωτῆρα <lb n="30"/>
 τοῦ κόσμου.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="42">
-<p>42 Καὶ εὐθέως σεισμὸς ἐγένετο καὶ βροντὴ φοβερὰ καὶ
+         </div>
+         <div n="42" type="chapter">
+            <p>42 Καὶ εὐθέως σεισμὸς ἐγένετο καὶ βροντὴ φοβερὰ καὶ
 κατεστράφη ὁ ναὸς τῆς Ἀρτέμιδος ἄνω κάτω, καὶ τὰ εἴδωλα
 πάντα συνετρίβησαν, καὶ πλῆθος τοῦ λαοῦ ἐκ τοῦ φόβου
 ἀπέθανον. ἰδόντες δὲ οἱ λοιποὶ τὸ γεγονὸς εἶπον· Οὐαὶ ἡμῖν· <lb n="35"/>
@@ -325,16 +317,15 @@
 θεοῦ, ἀλλʼ εὖξαι ὑπὲρ ἡμῶν. νῦν ἔγνωμεν ὅτι παρὰ θεοῦ
 ἀπεστάλης ἐπὶ σωτηρίᾳ ἡμῶν καὶ μέγας ἐστὶν ὁ θεὸς ὃν
 κηρύττεις καὶ οὐκ ἔστιν θεὸς πλὴν αὐτοῦ.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="43">
-<lb n="30"/> <p>43 Τότε ἀναστὰς ὁ ἀπόστολος εὐλογήσας αὐτοὺς καὶ
+         </div>
+         <div n="43" type="chapter">
+            <lb n="30"/>
+            <p>43 Τότε ἀναστὰς ὁ ἀπόστολος εὐλογήσας αὐτοὺς καὶ
 ἱκανῶς διδάξας καθʼ ἑκάστην ἡμέραν ἐβάπτιζεν χιλιάδας καὶ
 ἑκατοντάδας.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="44">
-<p>44 Καὶ πάντες ἔφερον τὰ εἴδωλα αὐτῶν καὶ συνέτριβον
+         </div>
+         <div n="44" type="chapter">
+            <p>44 Καὶ πάντες ἔφερον τὰ εἴδωλα αὐτῶν καὶ συνέτριβον
 <note type="marginal">188 Ζ</note> αὐτὰ πρὸ προσώπου Ἰωάννου. προσελθὼν δὲ Ἰωάννης καὶ
 <lb n="35"/> ἐπὶ τοῖς τεθνήξασιν ἀνθρώποις προσευξάμενος ἀνέστησεν αὐτούς.
 καὶ οὐκέτι λοιπὸν ἦν ἐν αὐτοῖς σκάνδαλον, ἀλλὰ πᾶσα
@@ -344,19 +335,17 @@
 <pb n="173"/>
 ναοὺς καὶ καταρτίζων ἱερεῖς καὶ ἐπισκόπους καὶ πρεσβυτέρους <lb n="25"/>
 καὶ θεραπεύων πᾶσαν νόσον καὶ πᾶσαν μαλακίαν ἐν τῷ λαῷ.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="45">
-<p>45 Εἶθ᾿  οὕτως ἐν τῇ Σμυρναίων πόλει ἀπελθόντων ὑμῶν
+         </div>
+         <div n="45" type="chapter">
+            <p>45 Εἶθ᾿  οὕτως ἐν τῇ Σμυρναίων πόλει ἀπελθόντων ὑμῶν
 πάντα τὰ εἴδωλα συνετρίβησαν τῇ δυνάμει τοῦ Χριστοῦ. καὶ
 καθιερώσας ναοὺς ὁ ἀπόστολος τοῦ Χλριστοῦ καὶ κατηχήσας
 αὐτοὺς ἐβάπτισεν ἅπαντας καὶ πᾶσαν τὴν παράλιον ἐκείνην, <lb n="30"/>
 καταλιπὼν ἐκεῖσε πρόεδρον Βούκολον καὶ Πολύκαρπον τοὺς
 αὐτοῦ μαθητὰς καὶ Ἀνδρόνικον.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="46">
-<p>46 Καὶ ἦσαν ἐκεῖ δύο ἱερεῖς τῆς Ἀρτέμιθος ἀδελφοὶ τυγχάνοντες
+         </div>
+         <div n="46" type="chapter">
+            <p>46 Καὶ ἦσαν ἐκεῖ δύο ἱερεῖς τῆς Ἀρτέμιθος ἀδελφοὶ τυγχάνοντες
 σαρκικοί. συνέβη οὖν τὸν ἕνα τελευτῆσαι· καὶ
 
 <pb n="174"/>
@@ -367,10 +356,10 @@
 ἐνεθυμήθης τέκνον; ὄντως, καὶ καλὴν βουλὴν ἐποιήσῳ. Τρόμος
 δὲ καὶ φρίκη κατέσχεν τὸν ἱερέα ὅτι οὕτως εἶπεν αὐτὸν ῥᾳδίως
 ὁ ἀπόστολος τοῦ Χριστοῦ τὰ ἐνθυμήματα αὐτοῦ.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="47">
-<lb n="30"/> <p>47 Τότε λαβόμενος αὐτοῦ τῆς χερὸς ἀνῆλθεν ἐν ᾧ τὸ
+         </div>
+         <div n="47" type="chapter">
+            <lb n="30"/>
+            <p>47 Τότε λαβόμενος αὐτοῦ τῆς χερὸς ἀνῆλθεν ἐν ᾧ τὸ
 πτῶμα ἦν τοῦ τεθνηκότος, ὄχλου πολλοῦ περιόντος, καὶ κρατήσας
 τῇς χειρὸς αὐτοῦ εἶπεν· Ἀνάστα ὁ καθεύδων ἐν τῷ
 ὀνόματι Ἰησοῦ Χριστοῦ τοῦ Ναζωραίου· Καὶ εὐθέως ἀνέστη
@@ -384,21 +373,20 @@
 ἱερεῖς καὶ θεραπεύοντες πᾶσαν νόσον καὶ πᾶσαν μαλακίαν,
 πάντων πιστευσάντων ἀπὸ θάλασσαν ἕως θάλασσαν· καὶ μετὰ
 ταῦτα ὑπεστρέψαμεν ἐν Ἐφέσῳ δοξάζοντες τὸν θεόν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="48">
-<p>48 Μετὰ οὖν ἡμέρας τινὰς κατὰ θείαν ἀποκάλυψιν ἐξῆλθεν
+         </div>
+         <div n="48" type="chapter">
+            <p>48 Μετὰ οὖν ἡμέρας τινὰς κατὰ θείαν ἀποκάλυψιν ἐξῆλθεν
 ὁ Ἰωάννης ἔν τινι κώμῃ εἰς ἐπίσκεψιν τῶν ἀδελφῶν. καὶ <lb n="25"/>
 ἦν ἐκεῖ τις νεανίας χωρικός, νουθετούμενος πολλάκις παρὰ
 τοῦ ἰδίου πατρὸς ἵνα μὴ λάβῃ τοῦ συνεργοῦ τὴν γυναῖκα·
 φθόνῳ δὲ διαβόλῳ κινηθείς, μὴ φέρων ὁ παῖς τὴν τοῦ πατρὸς
 νουθεσίαν, λακτίσας αὐτὸν ἄφνω ἔθηκεν ἐπὶ τὴν γῆν
-νεκρόν. τοῦτον οὖν ὁ Ἰωάννης ἰδὼν εἶπεν· Ὦ κύριε, σήμερον <lb n="30"/> <note type="marginal">189 Z</note>
+νεκρόν. τοῦτον οὖν ὁ Ἰωάννης ἰδὼν εἶπεν· Ὦ κύριε, σήμερον <lb n="30"/>
+               <note type="marginal">189 Z</note>
 ἕνεκεν τούτου με ἐκάλεσας ἐνθάδε;</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="49">
-<p>49 Ὁ δὲ νεανίας ὁρῶν τὸν ἄωρον θάνατον τοῦ πατρὸς
+         </div>
+         <div n="49" type="chapter">
+            <p>49 Ὁ δὲ νεανίας ὁρῶν τὸν ἄωρον θάνατον τοῦ πατρὸς
 αὐτοῦ, προσδοκῶν συλληφθῆναι καὶ ἀντιφονευθῆναι, τὴν λύπην
 μὴ φέρων, ὃ ἐπεφέρετο δρέπανον τρέχων ἐν τῇ οἰκίᾳ
 ἠβουλήθη σφάξαι τὴν γυναῖκα, εἶθ᾿ οὕτως ἑαυτόν. τοῦτον <lb n="35"/>
@@ -410,42 +398,38 @@
 Πατρὸς φονεὺς γέγονα ὁ ταλαίπωρος· καὶ ἰδοὺ διὰ τὴν
 <lb n="30"/> πολλὴν θλῖψιν μέλλω καὶ ἣν ἐμοίχευσα γυναῖκα ἀνελεῖν καὶ
 ἐμαυτόν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="50">
-<p>50 ἀλλ᾿ εἴ τι δύνασαι, βοήθησον ἡμῖν μαθητὰ τοῦ Χριστοῦ,
+         </div>
+         <div n="50" type="chapter">
+            <p>50 ἀλλ᾿ εἴ τι δύνασαι, βοήθησον ἡμῖν μαθητὰ τοῦ Χριστοῦ,
 ἐὰν οὖν τοῦτον ἀναστήσῃς, ἀπὸ τοῦ λοιποῦ ἀποστήσομαι
 τὸ κακὸν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="51">
-<lb n="35"/> <p>51 Τοῦ δὲ Ἰωάννου εἰπόντος πρὸς αὐτὸν Οὐδὲ τὰς πολιὰς
+         </div>
+         <div n="51" type="chapter">
+            <lb n="35"/>
+            <p>51 Τοῦ δὲ Ἰωάννου εἰπόντος πρὸς αὐτὸν Οὐδὲ τὰς πολιὰς
 τοῦ πατρός σου ᾤκτιρας ταλαίπωρε; εἰς τὸν οὐρανὸν
 
 <pb n="177"/>
 ἀναβλέψας καὶ στενάξας εἶπεν· Κύριε σοῦ μόνου ἐστὶν τὸ
 ἔργον τοῦτο.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="52">
-<p>52 Καὶ κρατήσας τῆς χειρὸς τοῦ τεθνηκότος εἶπεν· Ἐν
+         </div>
+         <div n="52" type="chapter">
+            <p>52 Καὶ κρατήσας τῆς χειρὸς τοῦ τεθνηκότος εἶπεν· Ἐν
 τῷ ὀνόματι Ἰησοῦ Χριστοῦ τοῦ υἱοῦ τοῦ θεοῦ ἀνάστα. Καὶ <lb n="30"/>
 εὐθέως ἀνέστη.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="53">
-<p>53 Ἰδὼν δὲ ὁ παῖς τὴν παρʼ ἐλπίδα ἀναβίωσιν τοῦ πατρὸς
+         </div>
+         <div n="53" type="chapter">
+            <p>53 Ἰδὼν δὲ ὁ παῖς τὴν παρʼ ἐλπίδα ἀναβίωσιν τοῦ πατρὸς
 αὐτοῦ καὶ τὴν ἑαυτοῦ σωτηρίαν, λαβὼν τὸ δρέπανον τὰ ἑαυτοῦ
 μόρια ἀφείλετο· καὶ δραμὼν εἰς τὴν οἰκίαν εἰς ὄψιν τῆς
 μοιχαλίδος αὐτοῦ ἔρριψεν αὐτὰ λέγων· Διὰ σὲ πατρὸς φονεὺς <lb n="35"/>
 καὶ ἡμῶν τῶν δύο γέγονα· καὶ ἰδοὺ ἔχεις τὰ τούτων αἴτια.
 ἐμὲ γὰρ ὁ θεὸς ἠλέησεν ἐπιγνῶναι αὐτὸν διὰ τοῦ δούλου αὐτοῦ
 Ἰωάννου.</p>
-</div>
-
-<pb n="178"/>
-<div type="textpart" subtype="chapter" n="54">
-<p>54 Ταῦτα ἀκούσας ὁ Ἰωάννης καὶ λυπηθεὶς εἶπεν πρὸς
+         </div>
+         <pb n="178"/>
+         <div n="54" type="chapter">
+            <p>54 Ταῦτα ἀκούσας ὁ Ἰωάννης καὶ λυπηθεὶς εἶπεν πρὸς
 αὐτόν· Ταλαίπωρε, ὁ ὑποβάλας σε τὸν πατέρα σου φονεῦσαι
 <lb n="20"/> δαίμων, αὐτός σε ὑπέβαλεν καὶ τοῦτο ποιῆσαι. ἔδει γάρ σε
 οὐχὶ τοὺς τόπους αὐτῶν ἀφανίσαι, ἀλλὰ τὴν ἔννοιαν ἐκ τῆς
@@ -458,10 +442,9 @@
 <note type="marginal">190 Z</note> αὐτοῦ προσήγαγεν τῇ ἐκκλησίᾳ· καὶ ἦν ὁ παῖς μεθ᾿ ἡμῶν
 πάντοτε ὑπηρετῶν, ὥστε πάντας θαυμάζει καὶ δοξάζειν τὸν
 <lb n="30"/> θεόν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="56">
-<p>56<gap reason="omitted"/> Ἐν μιᾷ οὖν τῶν ἡμερῶν ὡς ἦν Ἰωάννης καθεζόμενος
+         </div>
+         <div n="56" type="chapter">
+            <p>56<gap reason="omitted"/> Ἐν μιᾷ οὖν τῶν ἡμερῶν ὡς ἦν Ἰωάννης καθεζόμενος
 πέρδιξ διαπτᾶσα καὶ ἐλθοῦσα ἐκονίζετο ἔμπροσθεν αὐτοῦ.
 ὁ οὖν Ἰωάννης βλέπων αὐτὸ ἐθαύμαζεν. ἱερεὺς δέ τις ἐλθών,
 εἷς τῶν ἀκροατῶν ὤν, εἰσελθὼν πρὸς Ἰωάννην, εἶδεν τὴν πέρδικα
@@ -476,22 +459,22 @@
 μετάνοιαν ἀναμένων διὰ τοῦτο ἐνταῦθά σε ἤγαγεν· ἐπεὶ <lb n="20"/>
 ἐγὼ πέρδικος κονιζομένης οὐ χρῄζω· ἡ γὰρ πέρδιξ ἡ σή ἐστιν
 ψυχή.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="57">
-<p>57<gap reason="omitted"/> Ταῦτα ἀκούσας ὁ πρεσβύτης καὶ ἰδὼν ὅτι οὐκ ἔλαθεν
+         </div>
+         <div n="57" type="chapter">
+            <p>57<gap reason="omitted"/> Ταῦτα ἀκούσας ὁ πρεσβύτης καὶ ἰδὼν ὅτι οὐκ ἔλαθεν
 ἀλλὰ πάντα τὰ ἐν τῇ καρδίᾳ αὐτοῦ εἶπεν αὐτῷ ὁ ἀπόστολος
 τοῦ Χριστοῦ, πεσὼν ἐπὶ πρόσωπον ἐπὶ τὴν γῆν ἐβόα λέγων· <lb n="25"/>
 Νῦν οἶδα ὅτι ὁ θεὸς οἰκεῖ ἐν σοὶ μακάριε Ἰωάννη· καὶ μακόριος
 ὅστις οὐκ ἐπείρασεν ἐν σοὶ τὸν θεόν· ὁ γὰρ σὲ πειράζων
 τὸν ἀπείραστον πειράζει. Παρεκάλει δὲ αὐτὸν εὔχεσθαι
 ὑπὲρ αὐτοῦ· καὶ κατηχήσας αὐτὸν καὶ δοὺς κανόνας ἀπέλυσεν
-εἰς τὸν οἶκον αὐτοῦ δοξάζων τὸν ἐπὶ πάντων θεόν.|</p> <lb n="30"/>
-</div>
-
-<pb n="203"/>
-<div type="textpart" subtype="chapter" n="106">
-<p>106 Ὡς δὲ ἔγνω τὴν μετάστασιν αὐτοῦ δι᾿ ἀποκαλύψεως <lb n="15"/> <note type="marginal">191 Z</note>
+εἰς τὸν οἶκον αὐτοῦ δοξάζων τὸν ἐπὶ πάντων θεόν.|</p>
+            <lb n="30"/>
+         </div>
+         <pb n="203"/>
+         <div n="106" type="chapter">
+            <p>106 Ὡς δὲ ἔγνω τὴν μετάστασιν αὐτοῦ δι᾿ ἀποκαλύψεως <lb n="15"/>
+               <note type="marginal">191 Z</note>
 κυρίου, κυριακῆς ἡμέρας οὔσης συνὼν τοῖς ἀδελφοῖς μετὰ τὴν
 θείαν καὶ φρικτὴν μυσταγωγίαν καὶ τὴν κλάσιν τοῦ ἄρτου
 πάντων συνηγμένων ἑἶπεν· Ἐπειδὴ ὦ τεκνία μου ὁ χρόνος τῆς
@@ -505,10 +488,10 @@
 ὅσας δι᾿ ἐμοῦ ὑμῖν παρέσχεν ὁ θεὸς ἀντιλήψεις, χαρίσματα
 ἰαμάτων, κυβερνήσεις, γνώσεις, κοινωνίας, πίστεις, διδασκαλίας,
 δωρεὰς ἰαμάτων·</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="107">
-<lb n="20"/> <p>107 καὶ γίνεσθε χρηστοὶ καὶ οἴκτίρμονες, ἀλλήλους
+         </div>
+         <div n="107" type="chapter">
+            <lb n="20"/>
+            <p>107 καὶ γίνεσθε χρηστοὶ καὶ οἴκτίρμονες, ἀλλήλους
 
 <pb n="205"/>
 οἰκοδομοῦντες, ἀναστρεφόμενοι ἐν πάσῃ ἐγκρατείᾳ καὶ σεμνότητι.
@@ -520,20 +503,18 @@
 <pb n="206"/>
 αὐτοῦ· ἔχετε αὐτὸν ἐν μέσῳ ὑμῶν πάντοτε καλῶς
 <lb n="15"/> πολιτευομένων ὑμῶν.</p>
-</div>
-
-<pb n="209"/>
-<div type="textpart" subtype="chapter" n="111">
-<p>111 Καὶ ταῦτα πλείονα εἰπόντος αὐτοῦ καὶ τοῦ λαοῦ
+         </div>
+         <pb n="209"/>
+         <div n="111" type="chapter">
+            <p>111 Καὶ ταῦτα πλείονα εἰπόντος αὐτοῦ καὶ τοῦ λαοῦ
 τοῖς δάκρυσιν τῷ ἐδάφει βρεχόντων εἶπεν πρὸς Εὐτυχῆ καὶ τὸν
 
 <pb n="210"/>
 Οὐῆρον· Τέκνον Εὐτυχῆ, σὲ καθίστημι μετὰ θεὸν πρωτόθρονον
 καὶ ποιμένα τοῦ λαοῦ τούτου· βλέπε τέκνον Οὐῆρε
-<lb n="15"/> πῶς μέλλεις ποιμᾶναι τὸ ποίμνι <gap reason="omitted"/></p>
-</div>
-
-</div>
-</body>
-</text>
+<lb n="15"/> πῶς μέλλεις ποιμᾶναι τὸ ποίμνι <gap reason="omitted"/>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

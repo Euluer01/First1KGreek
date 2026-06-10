@@ -1,100 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-        <fileDesc>
-            <titleStmt><title xml:lang="lat">De salubri diaeta</title>
-                <author>Hippocrates</author>
-                <editor>Émile Littré</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De salubri diaeta</title>
+            <author>Hippocrates</author>
+            <editor>Émile Littré</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0627.tlg020.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0627.tlg020.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="fre">Oeuvres complètes d'Hippocrate</title>
-                        <author>Hippocrates</author>
-                        <editor>Émile Littré</editor>
-                        <imprint>
-                            <publisher>Baillière</publisher>
-                            <pubPlace>Paris</pubPlace>
-                            <biblScope unit="volume">6</biblScope>
-                            <biblScope unit="pp" from="72" to="86">72-86</biblScope>
-                            <date>1849</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/ucm.5321352149?urlappend=%3Bseq=80">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0627.tlg020.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="fre">Oeuvres complètes d'Hippocrate</title>
+                  <author>Hippocrates</author>
+                  <editor>Émile Littré</editor>
+                  <imprint>
+                     <publisher>Baillière</publisher>
+                     <pubPlace>Paris</pubPlace>
+                     <biblScope unit="volume">6</biblScope>
+                     <biblScope unit="pp" from="72" to="86">72-86</biblScope>
+                     <date>1849</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/ucm.5321352149?urlappend=%3Bseq=80">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-                <language ident="lat">Latin</language>
-                <language ident="fre">French</language>            
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0627.tlg020.1st1K-grc1">
-                <pb n="72"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΠΕΡΙ ΔΙΑΙΤΗΣ ΥΓΙΕΙΝΗΣ.</head>
-                    <p>1. Τοὺς ἰδιώτας ὧδε χρὴ διαιτᾶσθαι· τοῦ μὲν χειμῶνος ἐσθίειν <lb/>ὡς πλεῖστα,
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+            <language ident="fre">French</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0627.tlg020.1st1K-grc1">
+         <pb n="72"/>
+         <div n="1" type="chapter">
+            <head>ΠΕΡΙ ΔΙΑΙΤΗΣ ΥΓΙΕΙΝΗΣ.</head>
+            <p>1. Τοὺς ἰδιώτας ὧδε χρὴ διαιτᾶσθαι· τοῦ μὲν χειμῶνος ἐσθίειν <lb/>ὡς πλεῖστα,
                         πίνειν δ’ ὡς ἐλάχιστα, εἶναι δὲ τὸ πόμα οἶνον ὡς ἀκρητέστατον, <lb/>τὰ δὲ
                         σιτία ἄρτον καὶ τὰ ὄψα ὀπτὰ πάντα, λαχάνοισι <lb/>δὲ ὡς ἐλαχίστοισι χρέεσθαι
                         κατὰ ταύτην τὴν ὥρην· οὕτω γὰρ ἂν <lb/>μάλιστα τὸ σῶμα ξηρόν τε εἴη καὶ
@@ -121,9 +129,9 @@
                         καὶ ὀλίγοισι καὶ τοῖσι σιτίοισιν ὡς πλείστοισί τε <lb/>καὶ ξηροτάτοισιν·
                         οὕτω γὰρ ἂν καὶ ὑγιαίνοι μάλιστα καὶ ῥιγῴη <lb/>ἤκιστα· ἡ γὰρ ὥρη λίαν ψυχρή
                         τε καὶ ὑγρή. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>2. Τοῖσι δὲ εἴδεσι τοῖσι σαρκώδεσι καὶ μαλθακοῖσι καὶ ἐρυθροῖσι <lb/>ξυμφέρει
+         </div>
+         <div n="2" type="chapter">
+            <p>2. Τοῖσι δὲ εἴδεσι τοῖσι σαρκώδεσι καὶ μαλθακοῖσι καὶ ἐρυθροῖσι <lb/>ξυμφέρει
                         δὴ τὸν πλείονα χρόνον τοῦ ἐνιαυτοῦ ξηροτέροισι <lb/>διαιτήμασι χρέεσθαι·
                         ὑγρὴ γὰρ ἡ φύσις τῶν εἰδέων τουτέων. Τοὺς <lb/>δὲ στρυφνοὺς καὶ
                         προσεσταλμένους καὶ πυῤῥοὺς καὶ μέλανας τῇ <lb/>ὑγροτέρῃ διαίτῃ χρὴ τὸ
@@ -136,17 +144,17 @@
                         καὶ τὴν χώρην <lb/>καὶ τὰ εἴδεα τὰ διαιτήματα ποιέεσθαι ἐναντιούμενον τοῖσι
                         καθισταμένοισι <lb/>καὶ θάλπεσι καὶ χειμῶσιν· οὕτω γὰρ ἂν μάλιστα
                         ὑγιαίνοιεν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>3. Καὶ ὁδοιπορέειν τοῦ μὲν χειμῶνος ταχέως χρὴ, τοῦ δὲ θέρεος <lb/>ἡσυχῆ, ἢν
+         </div>
+         <div n="3" type="chapter">
+            <p>3. Καὶ ὁδοιπορέειν τοῦ μὲν χειμῶνος ταχέως χρὴ, τοῦ δὲ θέρεος <lb/>ἡσυχῆ, ἢν
                         μὴ διὰ καύματος ὁδοιπορέῃ· δεῖ δὲ καὶ τοὺς μὲν σαρκώδεας <lb/>θᾶσσον
                         ὁδοιπορέειν, τοὺς δὲ ἰσχνοὺς ἡσυχέστερον. Λουτροῖσι δὲ <lb/>χρὴ πολλοῖσι
                         χρέεσθαι τοῦ θέρεος, τοῦ δὲ χειμῶνος ἐλάσσοσι, χρὴ <lb/>δὲ τοὺς στρυφνοὺς
                         μᾶλλον λούεσθαι τῶν σαρκωδέων. Ἠμφιέσθαι δὲ <lb/>χρὴ τοῦ μὲν χειμῶνος καθαρὰ
                         ἱμάτια, τοῦ δὲ θέρεος ἐλαιοπινέα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>4. Τοὺς δὲ παχέας χρὴ καὶ ὅσοι βούλονται λεπτοὶ γενέσθαι, τὰς
+         </div>
+         <div n="4" type="chapter">
+            <p>4. Τοὺς δὲ παχέας χρὴ καὶ ὅσοι βούλονται λεπτοὶ γενέσθαι, τὰς
                         <lb/>ταλαιπωρίας ἁπάσας νήστιας ἐόντας ποιέεσθαι, καὶ τοῖσι σιτίοισιν
                         <lb/>ἐπιχειρέειν ἔτι ἀσθμαίνοντας ἐκ τοῦ κόπου καὶ μὴ ἀνεψυγμένους καὶ
                         <lb/>προπεπωκότας οἶνον κεκρημένον καὶ μὴ σφόδρα ψυχρὸν, καὶ τὰ ὄψα
@@ -156,9 +164,9 @@
                         <lb/>σκληροκοιτέειν καὶ γυμνὸν περιπατέειν ὅσον οἷόν τε μάλιστ’ ἂν ᾖ.
                         <lb/>Ὁκόσοι δὲ βούλονται λεπτοὶ ἐόντες παχέες γενέσθαι, τά τε ἄλλα <pb n="78"/> ποιέειν τἀναντία κείνοισιν οἷσιν ἔφην, καὶ νήστιας μηδεμίην
                         ταλαιπωρίην ποιέεσθαι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>5. Τοῖσι δὲ ἐμέτοισι χρὴ καὶ τοῖσι κατακλύσμασι τοῖσι τῆς κοιλίης <lb/>ὧδε
+         </div>
+         <div n="5" type="chapter">
+            <p>5. Τοῖσι δὲ ἐμέτοισι χρὴ καὶ τοῖσι κατακλύσμασι τοῖσι τῆς κοιλίης <lb/>ὧδε
                         χρέεσθαι· ἓξ μῆνας τοὺς χειμερινοὺς ἐμέειν, οὗτος γὰρ <lb/>ὁ χρόνος
                         φλεγματωδέστερος τοῦ θερινοῦ, καὶ τὰ νουσήματα γίνεται <lb/>περὶ τὴν κεφαλὴν
                         καὶ περὶ τὸ χωρίον τὸ ὑπὲρ τῶν φρενῶν· <lb/>ὅταν δὲ ᾖ θάλπος, τοῖσι
@@ -191,9 +199,9 @@
                         ἐσκευασμένοισι, καὶ οἴνους πίνειν δισσοὺς <lb/>καὶ τρισσούς· ὁκόσοι δὲ μὴ
                         ἀνεμέουσι τὰ σιτία, ἢ καὶ κοιλίας ἔχουσιν <lb/>ὑγρὰς, τουτέοισι πᾶσι
                         τοὐναντίον τουτέου τοῦ τρόπου ξυμφέρει ποιέειν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>6. Τὰ δὲ παιδία χρὴ τὰ νήπια βρέχειν ἐν τῷ θερμῷ ὕδατι ἐπὶ <lb/>πουλὺν
+         </div>
+         <div n="6" type="chapter">
+            <p>6. Τὰ δὲ παιδία χρὴ τὰ νήπια βρέχειν ἐν τῷ θερμῷ ὕδατι ἐπὶ <lb/>πουλὺν
                         χρόνον, καὶ πίνειν διδόναι ὑδαρέα τὸν οἶνον καὶ μὴ ψυχρὸν <lb/>παντάπασι,
                         τοῦτον δὲ διδόναι, ὃς ἥκιστα τὴν γαστέρα μετεωριεῖ <pb n="82"/> καὶ φῦσαν
                         παρέξει· ταῦτα δὲ ποιέειν, ὅκως οἵ τε σπασμοὶ ἧσσον <lb/>ἐπιλάβωσι, καὶ
@@ -201,9 +209,9 @@
                         ξηροτέρῳ τῶν τρόπων· καὶ γὰρ τὰ σιτία τὰ <lb/>ξηρὰ ἐπιτηδειότερα πρὸς τὴν
                         μαλθακότητα τῶν γυναικείων σαρκῶν, <lb/>καὶ τὰ ἀκρητέστερα πόματα ἀμείνω
                         πρὸς τὰς ὑστέρας καὶ τὰς κυοτροφίας. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>7. Τοὺς γυμναζομένους χρὴ τοῦ χειμῶνος καὶ τρέχειν καὶ παλαίειν, <lb/>τοῦ δὲ
+         </div>
+         <div n="7" type="chapter">
+            <p>7. Τοὺς γυμναζομένους χρὴ τοῦ χειμῶνος καὶ τρέχειν καὶ παλαίειν, <lb/>τοῦ δὲ
                         θέρεος παλαίειν μὲν ὀλίγα, τρέχειν δὲ μὴ, περιπατέειν <lb/>δὲ πολλὰ κατὰ
                         ψῦχος. Ὁκόσοι κοπιῶσιν ἐκ τῶν δρόμων, <lb/>τούτους παλαίειν χρή· ὁκόσοι δὲ
                         παλαίοντες κοπιῶσι, τούτους χρὴ <lb/>τρέχειν· οὕτω γὰρ ἂν ταλαιπωρέων τῷ
@@ -238,22 +246,21 @@
                         οὖρον διάξει, ὅπως αἱ φλέβες αἱ διὰ τῶν <lb/>σπλάγχνων πεφυκυῖαι μὴ
                         κατατείνωνται πληρεύμεναι· ἐκ γὰρ τῶν <lb/>τοιουτέων τά τε φύματα γίνονται
                         καὶ οἱ πυρετοί. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="8">
-                    <p>8. Ὁκόσοισι δὲ νοῦσοι ἀπὸ τοῦ ἐγκεφάλου γίνονται, νάρκη πρῶτον <pb n="86"/>
+         </div>
+         <div n="8" type="chapter">
+            <p>8. Ὁκόσοισι δὲ νοῦσοι ἀπὸ τοῦ ἐγκεφάλου γίνονται, νάρκη πρῶτον <pb n="86"/>
                         ἴσχει τὴν κεφαλὴν, καὶ οὐρέει θαμινὰ, καὶ τἄλλα πάσχει ὁκόσα <lb/>ἐπὶ
                         στραγγουρίῃ· οὗτος ἐφ’ ἡμέρας ἐννέα τοῦτο πάσχει· καὶ ἢν μὲν <lb/>ῥαγῇ κατὰ
                         τὰς ῥῖνας ἢ κατὰ τὰ ὦτα ὕδωρ ἢ βλέννα, ἀπαλλάσσεται <lb/>τῆς νούσου, καὶ τῆς
                         στραγγουρίης παύεται· οὐρέει δὲ ἀπόνως πουλὺ <lb/>καὶ λευκὸν, ἔστ’ ἂν
                         εἴκοσιν ἡμέρας παρέλθῃ· καὶ ἐκ τῆς κεφαλῆς ἡ <lb/>ὀδύνη ἐκλείπει τῷ ἀνθρώπῳ,
                         ἐσορέοντι δὲ βλάπτεταί οἱ ἡ αὐγή. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="9">
-                    <p>9. Ἄνδρα δὲ χρὴ, ὅς ἐστι συνετὸς, λογισάμενον ὅτι τοῖσιν ἀνθρώποισι
+         </div>
+         <div n="9" type="chapter">
+            <p>9. Ἄνδρα δὲ χρὴ, ὅς ἐστι συνετὸς, λογισάμενον ὅτι τοῖσιν ἀνθρώποισι
                         <lb/>πλείστου ἄξιόν ἐστιν ἡ ὑγιείη, ἐπίστασθαι ἐκ τῆς ἑωυτοῦ <lb/>γνώμης ἐν
                         τῇσι νούσοισιν ὠφελέεσθαι. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

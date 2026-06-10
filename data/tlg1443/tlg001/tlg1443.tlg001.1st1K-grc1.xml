@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <teiHeader xml:lang="eng">    
+   <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
             <title xml:lang="lat">Epistulae vii genuinae</title>
@@ -39,7 +39,10 @@
             <pubPlace>Medford, MA</pubPlace>
             <authority>Perseus Project</authority>
             <idno type="filename">tlg1443.tlg001.1st1K-grc1.xml</idno>
-            <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence></availability>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <idno type="CTS">urn:cts:greekLit:tlg1443.tlg001.1st1K-grc1</idno>
          </publicationStmt>
          <sourceDesc>
             <listBibl>
@@ -69,22 +72,33 @@
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
          <refsDecl n="CTS">
             <cRefPattern n="section"
-               matchPattern="(\w+).(\w+).(\w+)"
-               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])">
+                         matchPattern="(\w+).(\w+).(\w+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])">
                <p>This pointer pattern extracts epistle and chapter and section</p>
             </cRefPattern>
-            <cRefPattern n="chapter" matchPattern="(\w+).(\w+)"
-               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+            <cRefPattern n="chapter"
+                         matchPattern="(\w+).(\w+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
                <p>This pointer pattern extracts epistle and chapter</p>
             </cRefPattern>
-            <cRefPattern n="epistle" matchPattern="(\w+)"
-               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+            <cRefPattern n="epistle"
+                         matchPattern="(\w+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
                <p>This pointer pattern extracts epistle</p>
             </cRefPattern>
          </refsDecl>
-         
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim=":" match="div[@type='chapter']" use="@n">
+                  <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+               </citeStructure>
+            </citeStructure>
+         </refsDecl>
       </encodingDesc>
       <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter-section"/>
+         </textClass>
          <langUsage>
             <language ident="grc">Greek</language>
             <language ident="lat">Latin</language>
@@ -94,17 +108,15 @@
          <change when="2022-07-22" who="Alison Babeu">Combined seven letters back into one file so can 
             be aligned with English translation.</change>
       </revisionDesc>
- </teiHeader>
-
+   </teiHeader>
    <text>
-      <body>         
-         <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1443.tlg001.1st1K-grc1">
-            
-            <head></head>
-            <div type="textpart" subtype="epistle" n="1"><pb n="172"/>
-            <div type="textpart" subtype="chapter" n="praef">
-               <head>ΠΡΟΣ ΕΦΕΣΙΟΥΣ ΙΓΝΑΤΙΟΣ</head>       
-               <div type="textpart" subtype="section" n="1">
+      <body xml:base="urn:cts:greekLit:tlg1443.tlg001.1st1K-grc1">
+         <head/>
+         <div n="1" type="epistle">
+            <pb n="172"/>
+            <div n="praef" type="chapter">
+               <head>ΠΡΟΣ ΕΦΕΣΙΟΥΣ ΙΓΝΑΤΙΟΣ</head>
+               <div n="1" type="section">
                   <p>
 Ἰγνάτιος, ὁ καὶ Θεοφόρος, τῇ εὐλογημένῃ ἐν
 μεγέθει θεοῦ πατρὸς πληρώματι, τῇ προωρισμένῃ
@@ -118,8 +130,8 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="1">
-               <div type="textpart" subtype="section" n="1">
+            <div n="1" type="chapter">
+               <div n="1" type="section">
                   <p> Ἀποδεξάμενος ἐν θεῷ τὸ πολυαγάπητόν σου
 ὀνομα, ὃ κέκτησθε φύσει δικαίᾳ <note n="1">
                         <q>Truly immaculate sill,</q> A(S).</note> κατὰ πίστιν καὶ
@@ -127,7 +139,7 @@
 μιμηταὶ ὄντες θεοῦ, ἀναζωπυρήσαντες ἐν αἵματι
 θεοῦ τὸ συγγενικὸν ἔργον τελείως ἀπηρτίσατε:</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> ἀκούσαντες γὰρ δεδεμένον ἀπὸ Συρίας ὑπὲρ
 <pb n="174"/>
 τοῦ κοινοῦ ὀνόματος καὶ ἐλπίδος, ἐλπίζοντα τῇ
@@ -136,7 +148,7 @@
 ἐσπουδάσατε: <note n="1">i)dei=n e)spouda/sate om. Gg, the text is restored from ALS, but Lightfoot prefers i(storh=sai to i)dei=n.</note>
                   </p>
                </div>
-               <div type="textpart" subtype="section" n="3">
+               <div n="3" type="section">
                   <p> ἐπεὶ οὖν τὴν πολυπλήθειαν
 ὑμῶν ἐν ὀνόματι θεοῦ ἀπείληφα ἐν Ὀνησίμῳ,
 τῷ ἐν ἀγάπῃ ἀδιηγήτῳ, ὑμῶν δὲ ἐπισκόπῳ, <note n="2">e)n sarki\ e\pisk. GL, <q>your bishop in the flesh.</q>
@@ -148,8 +160,8 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="2">
-               <div type="textpart" subtype="section" n="1">
+            <div n="2" type="chapter">
+               <div n="1" type="section">
                   <p> Περὶ δὲ τοῦ συνδούλου μου Βούρρου, τοῦ
 κατὰ θεὸν διακόνου ὑμῶν ἐν πᾶσιν εὐλογημένου,
 εὔχομαι παραμεῖναι αὐτὸν εἰς τιμὴν ὑμῶν καὶ τοῦ
@@ -160,7 +172,7 @@
 Βούρρῳ καὶ Εὔπλῳ καὶ Φρόντωνι, δἰ ὦν πάντας
 ὑμᾶς κατὰ ἀγάπην εἶδον.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> ὀναίμην ὑμῶν διὰ
 παντός, ἐάνπερ ἄξιος ὦ. πρέπον οὗν ἐστὶν κατὰ
 πάντα τρόπον δοξάζειν Ἰησοῦν Χριστὸν τὸν
@@ -171,8 +183,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="3">
-               <div type="textpart" subtype="section" n="1">
+            <div n="3" type="chapter">
+               <div n="1" type="section">
                   <p> Οὐ διατάσσομαι ὑμῖν ὡς ὤν τις. εἰ γὰρ καὶ
 δέδεμαι ἐν τῷ ὀνόματι, οὔπω ἀπήρτισμαι ἐν
 Ἰησοῦ Χριστῷ: νῦν γὰρ ἀρχὴν ἔχω τοῦ μαθητεύεσθαι,
@@ -180,7 +192,7 @@
 μου. ἐμὲ γὰρ ἔδει ὑφ̓ ὑμῶν ὑπαλειφθῆναι πίστει,
 νουθεσίᾳ, ὑπομονῇ, μακροθυμίᾳ.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> ἀλλ̓ ἐπεὶ ἡ
 ἀγάπη οὐκ ἐᾷ με σιωπᾶν περὶ ὑμῶν, διὰ τοῦτο
 προέλαβον παρακαλεῖν ὑμᾶς, ὅπως συντρέχητε
@@ -191,8 +203,8 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="4">
-               <div type="textpart" subtype="section" n="1">
+            <div n="4" type="chapter">
+               <div n="1" type="section">
                   <p> Ὅθεν πρέπει ὑμῖν συντρέχειν τῇ τοῦ ἐπισκόπου
 γνώμῃ, ὅπερ καὶ ποιεῖτε. τὸ γὰρ ἀξιονόμαστον
 ὑμῶν πρεσβυτέριον, τοῦ θεοῦ ἄξιον, οὕτως
@@ -200,7 +212,7 @@
 διὰ τοῦτο ἐν τῇ ὁμονοίᾳ ὑμῶν καὶ συμφώνῳ ἀγάπῃ
 Ἰησοῦς Χριστὸς ᾅδεται.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> καὶ οἱ κατ̓ ἄνδρα δὲ
 χορὸς γίνεσθε, ἵνα σύμφωνοι ὄντες ἐν ὁμονοίᾳ,
 χρῶμα θεοῦ λαβόντες ἐν ἑνότητι, ᾅδητε ἐν φωνῇ
@@ -212,8 +224,8 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="5">
-               <div type="textpart" subtype="section" n="1">
+            <div n="5" type="chapter">
+               <div n="1" type="section">
                   <p> Εἰ γὰρ ἐγὼ ἐν μικρῷ χρόνῳ τοιαύτην συνήθειαν
 ἔσχον πρὸς τὸν ἐπίσκοπον ὑμῶν, οὐκ
 ἀνθρωπίνην οὖσαν, ἀλλὰ πνευματικήν, πόσῳ
@@ -222,7 +234,7 @@
 Χριστὸς τῷ πατρί, ἵνα πάντα ἐν ἑνότητι σύμφωνα
 ᾖ;</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> μηδεὶς πλανάσθω: ἑὰν μή τις ᾖ ἐντὸς τοῦ
 <note>
                         <bibl corresp="cts:urn:greekLit:tlg0031.tlg004:6.33">Juh 6, 38</bibl>
@@ -231,7 +243,7 @@
 ἔχει, πόσῳ μᾶλλον ἥ τε τοῦ ἐπισκόπου καὶ πάσης
 τῆς ἐκκλησίας;</p>
                </div>
-               <div type="textpart" subtype="section" n="3">
+               <div n="3" type="section">
                   <p> ὁ οὖν μὴ ἐρχόμενος ἐπὶ τὸ
 αὐτὸ οὗτος ἤδη ὑπερηφανεῖ καὶ ἑαυτὸν διέκρινεν.
 <note>
@@ -242,8 +254,8 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="6">
-               <div type="textpart" subtype="section" n="1">
+            <div n="6" type="chapter">
+               <div n="1" type="section">
                   <p> Καὶ ὅσον βλέπει τις σιγῶντα ἐπίσκοπον,
 πλειόνως αὐτὸν φοβείσθω: πάντα γάρ, ὃν πέμπει
 ὁ οἰκοδεσπότης εἰς ἰδίαν οἰκονομίαν, οὕτως δεῖ
@@ -252,7 +264,7 @@
 οὖν ἐπίσκοπον δῆλον ὅτι ὡς αὐτὸν κύριον δεῖ
 προσβλέπειν.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> αὐτὸς μὲν οὖν Ὀνήσιμος ὑπερεπαινεῖ
 ὑμῶν τὴν ἐν θεῷ εὐταξίαν, ὅτι πάντες
 κατὰ ἀλήθειαν ζῆτε καὶ ὅτι ἐν ὑμῖν οὐδεμία αἵρεσις
@@ -261,15 +273,15 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="7">
-               <div type="textpart" subtype="section" n="1">
+            <div n="7" type="chapter">
+               <div n="1" type="section">
                   <p> Εἰώθασιν γάρ τινες δόλῳ πονηρῷ τὸ ὄνομα
 περιφέρειν, ἄλλα τινὰ πράσσοντες ἀνάξια θεοῦ:
 οὕς δεῖ ὑμᾶς ὡς θηρία ἐκκλίνειν: εἰσὶν γὰρ κύνες
 λυσσῶντες, λαθροδῆκται: οὓς δεῖ ὑμᾶς φυλάσσεσθαι
 ὄντας δυσθεραπεύτους.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> εἷς ἰατρός
 ἐστιν, σαρκικός τε καὶ πνευματικός, γεννητὸς καὶ
 ἀγέννητος, ἐν ἀνθρώπῳ <note n="2">This reading is justified by early patristic #3uotation, and (slightly corrupted) by A. GL read e)n sarki\ geno/menos qeo/(??) <q>God become incarnate.</q>
@@ -279,8 +291,8 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="8">
-               <div type="textpart" subtype="section" n="1">
+            <div n="8" type="chapter">
+               <div n="1" type="section">
                   <p> Μὴ οὖν τις ὑμᾶς ἐξαπατάτω, ὥσπερ οὐδὲ
 ἐξαπατᾶσθε, ὅλοι ὄντες θεοῦ. ὅταν γὰρ μηδεμία
 ἔρις <note n="3">A *s g read e)piqumi/a, <q>lust,</q> shich Lightfoot accepts</note> ἐνήρεισται ἐν ὑμῖν ἡ δυναμένη ὑμᾶς βασανίσαι
@@ -291,7 +303,7 @@
                         <bibl corresp="cts:urn:greekLit:tlg0031.tlg006:8.5 cts:urn:greekLit:tlg0031.tlg006:8.8">Rom. 8, 5. 8</bibl>
                      </note> τοῖς αἰῶσιν.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> οἱ σαρκικοὶ τὰ πνευματικὰ
 πράσσειν οὐ δύνανται, οὐδὲ οἱ πνευματικοὶ τὰ
 σαρκικά, ὥσπερ οὐδὲ ἡ πίστις τὰ τῆς ἀπιστίας
@@ -301,8 +313,8 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="9">
-               <div type="textpart" subtype="section" n="1">
+            <div n="9" type="chapter">
+               <div n="1" type="section">
                   <p> Ἔγνων δὲ παροδεύσαντάς τινας ἐκεῖθεν, ἔχοντας
 κακὴν διδαχήν: οὓς οὐκ εἰάσατε σπεῖραι εἰς
 ὑμᾶς, βύσαντες τὰ ὦτα, εἰς τὸ μὴ παραδέξασθαι
@@ -313,7 +325,7 @@
 πνεύματι τῷ ἁγίῳ: ἡ δὲ πίστις ὑμῶν ἀναγωγεὺς
 ὑμῶν, ἡ δὲ ἀγάπη ὁδὸς ἡ ἀναφέρουσα εἰς θεόν.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> ἐστὲ οὖν καὶ σύνοδοι πάντες, θεοφόροι καὶ
 ναοφόροι, χριστοφόροι, ἁγιοφόροι, κατὰ πάντα
 κεκοσμημένοι ἐντολαῖς Ἰησοῦ Χριστοῦ: οἶς
@@ -324,8 +336,8 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="10">
-               <div type="textpart" subtype="section" n="1">
+            <div n="10" type="chapter">
+               <div n="1" type="section">
                   <p>
                      <note>
                         <bibl corresp="cts:urn:greekLit:tlg0031.tlg013:5.17">Thess. 5, 17</bibl>
@@ -336,7 +348,7 @@
 μετανοίας, ἵνα θεοῦ τύχωσιν. ἐπιτρέψατε οὖν
 αὐτοῖς κἂν ἐκ τῶν ἔργων ὑμῖν μαθητευθῆναι.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> πρὸς τὰς ὀργὰς αὐτῶν ὑμεῖς πραεῖς, πρὸς τὰς
 μεγαλορημοσύνας αὐτῶν ὑμεῖς ταπεινόφρονες, πρὸς
 τὰς βλασφημίας αὐτῶν ὑμεῖς τὰς προσευχάς, πρὸς
@@ -346,7 +358,7 @@
 τὸ ἄγριον αὐτῶν ὑμεῖς ἥμεροι, μῆ σπουδάζοντες
 ἀντιμιμήσασθαι αὐτούς,</p>
                </div>
-               <div type="textpart" subtype="section" n="3">
+               <div n="3" type="section">
                   <p> ἀδελφοὶ αὐτῶν εὑρεθῶμεν
 τῇ ἐπιεικείᾳ: μιμηταὶ δὲ τοῦ κυρίου σπουδάζωμεν
 εἶναι, τίς πλέον ἀδικηθῇ, τίς ἀποστερηθῇ,
@@ -357,8 +369,8 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="11">
-               <div type="textpart" subtype="section" n="1">
+            <div n="11" type="chapter">
+               <div n="1" type="section">
                   <p> Ἔσχατοι καιροί. λοιπὸν αἰσχυνθῶμεν, φοβηθῶμεν
 τὴν μακροθυμίαν τοῦ θεοῦ, ἵνα μὴ ἡμῖν εἰς
 <pb n="186"/>
@@ -367,7 +379,7 @@
 τῶν δύο: μόνον ἐν Χριστῷ Ἰησοῦ εὑρεθῆναι εἰς τὸ
 ἀληθινὸν ζῆν.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> χωρὶς τούτου μηδὲν ὑμῖν πρεπέτω,
 ἐν ᾧ τὰ δεσμὰ περιφέρω, τοὺς πνευματικοὺς
 μαργαρίτας, ἐν οἷς γένοιτό μοι ἀναστῆναι τῆ προσευχῇ
@@ -377,13 +389,13 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="12">
-               <div type="textpart" subtype="section" n="1">
+            <div n="12" type="chapter">
+               <div n="1" type="section">
                   <p> Οἶδα, τίς εἰμι καὶ τίσιν γράφω. ἐγὼ κατάκριτος,
 ὑμεῖς ἠλεημένοι: ἐγὼ ὑπὸ κίνδυνον, ὑμεῖς
 ἐστηριγμένοι:</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> πάροδός ἐστε τῶν εἰς θεὸν ἀναιρουμένων,
 Παύλου συμμύσται τοῦ ἡγιασμένου.
 τοῦ μεμαρτυρημένου, ἀξιομακαρίστου, οὖ γένοιτό
@@ -392,23 +404,23 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="13">
-               <div type="textpart" subtype="section" n="1">
+            <div n="13" type="chapter">
+               <div n="1" type="section">
                   <p> Σπουδάζετε οὖν πυκνότερον συνέρχεσθαι εἰς
 εὐχαριστίαν θεοῦ καὶ εἰς δόξαν. ὅταν γὰρ πυκνῶς
 ἐπὶ τὸ αὐτὸ γίνεσθε, καθαιροῦνται αἱ δυνάμεις τοῦ
 Σατανᾶ, καὶ λύεται ὁ ὄλεθρος αὐτοῦ ἐν τῇ ὁμονοίᾳ
 ὑμῶν τῆς πίστεως.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> οὐδέν ἐστιν ἄμεινον εἰρήνης,
 ἐν ᾗ πᾶς πόλεμος καταργεῖται ἐπουρανίων καὶ ἐπιγείων.
 <pb n="188"/>
                   </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="14">
-               <div type="textpart" subtype="section" n="1">
+            <div n="14" type="chapter">
+               <div n="1" type="section">
                   <p> Ὦν οὐδὲν λανθάνει ὑμᾶς, ἐὰν τελείως εἰς
 Ἰησοῦν Χριστὸν ἔχητε τὴν πίστιν καὶ τὴν ἀγάπην,
 ἥτις ἐστὶν ἀρχὴ ζωῆς καὶ τέλος: ἀρχὴ μὲν πίστις,
@@ -418,7 +430,7 @@
 θεός ἐστιν, τὰ δὲ ἄλλα πάντα εἰς καλοκἀγαθίαν
 ἀκόλουθά ἐστιν.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> οὐδεὶς πίστιν ἐπαγγελλόμενος
 <note>
                         <bibl corresp="cts:urn:greekLit:tlg0031.tlg001:12.33">Mt. 12, 33</bibl>
@@ -430,8 +442,8 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="15">
-               <div type="textpart" subtype="section" n="1">
+            <div n="15" type="chapter">
+               <div n="1" type="section">
                   <p> Ἄμεινόν ἐστιν σιωπᾶν καὶ εἶναι, ἦ λαλοῦντα
 μὴ εἶναι. καλὸν τὸ διδάσκειν, ἐὰν ὁ λέγων ποιῇ. εἶς
 <note>
@@ -439,13 +451,13 @@
                      </note> οὖν διδάσκαλος, ὃς εἶπεν, καὶ ἐγένετο: καὶ ἃ σιγῶν
 δὲ πεποίηκεν ἄξια τοῦ πατρός ἐστιν.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> ὁ λόγον
 Ἰησοῦ κεκτημένος ἀληθῶς δύναται καὶ τῆς ἡσυχίας
 αὐτοῦ ἀκούειν, ἵνα τέλειος ᾖ, ἵνα δἰ ὦν λαλεῖ
 πράσσῃ καὶ δἰ ὦν σιγᾷ γινώσκηται.</p>
                </div>
-               <div type="textpart" subtype="section" n="3">
+               <div n="3" type="section">
                   <p> οὐδὲν
 λανθάνει τὸν κύριον, ἀλλὰ καὶ τὰ κρυπτὰ ἡμῶν
 <note>
@@ -458,8 +470,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="16">
-               <div type="textpart" subtype="section" n="1">
+            <div n="16" type="chapter">
+               <div n="1" type="section">
                   <p>
                      <note>
                         <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:6.9 cts:urn:greekLit:tlg0031.tlg007:6.10 Rph.:5.5">I Cor. 6, 9. 10; cf. Rph. 5, 5</bibl>
@@ -468,7 +480,7 @@
                   <p> Μὴ πλανᾶσθε, ἀδελφοί μου: οἱ οἰκοφθόροι
 βασιλείαν θεοῦ οὐ κληρονομήσουσιν.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> εἰ οὖν οἱ
 κατὰ σάρκα ταῦτα πράσσοντες ἀπέθανον, πόσῳ
 μᾶλλον, ἐὰν πίστιν θεοῦ ἐν κακῇ διδασκαλίᾳ
@@ -478,8 +490,8 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="17">
-               <div type="textpart" subtype="section" n="1">
+            <div n="17" type="chapter">
+               <div n="1" type="section">
                   <p>
                      <note>
                         <bibl corresp="cts:urn:greekLit:tlg0031.tlg001:26.7 cts:urn:greekLit:tlg0031.tlg004:12.8">Mt. 26, 7; Joh. 12, 8</bibl>
@@ -491,7 +503,7 @@
 ἄρχοντος τοῦ αἰῶνος τούτου, μὴ αἰχμαλωτίσῃ
 ὑμᾶς ἐκ τοῦ προκειμένου ζῆν.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> διὰ τί δὲ οὐ
 πάντες φρόνιμοι γινόμεθα λαβόντες θεοῦ γνῶσιν,
 ὅ ἐστιν Ἰησοῦς Χριστός; τί μωρῶς ἀπολλύμεθα,
@@ -499,8 +511,8 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="18">
-               <div type="textpart" subtype="section" n="1">
+            <div n="18" type="chapter">
+               <div n="1" type="section">
                   <p>
                      <note>
                         <bibl corresp="cts:urn:greekLit:tlg0031.tlg009:5.11 cts:urn:greekLit:tlg0031.tlg007:1.20">Gal. 5, 11 I Cor. 1, 20</bibl>
@@ -511,7 +523,7 @@
 καὶ ζωὴ αἰώνιος, ποῦ σοφός; ποῦ συζητητής;
 ποῦ καύχησις τῶν λεγομένων συνετῶν;</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> ὁ γὰρ
 θεὸς ἡμῶν Ἰησοῦς ὁ Χριστὸς ἐκυοφορήθη ὑπὸ
 <pb n="192"/>
@@ -523,14 +535,14 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="19">
-               <div type="textpart" subtype="section" n="1">
+            <div n="19" type="chapter">
+               <div n="1" type="section">
                   <p> Καὶ ἔλαθεν τὸν ἄρχοντα τοῦ αἰῶνος τούτου
 ἡ παρθενία Μαρίας καὶ ὁ τοκετὸς αὐτῆς, ὁμοίως
 καὶ ὁ θάνατος τοῦ κυρίου: τρία μυστήρια κραυγῆς,
 ἅτινα ἐν ἡσυχίᾳ θεοῦ ἐπράχθη.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> πῶς οὖν
 ἐφανερώθη τοῖς αἰῶσιν; ἀστὴρ ἐν οὐρανῷ ἔλαμψεν
 ὑπὲρ πάντας τοὺς ἀστέρας, καὶ τὸ φῶς αὐτοῦ
@@ -540,7 +552,7 @@
 ὑπερβάλλων τὸ φῶς αὐτοῦ ὑπὲρ πάντα: ταραχή
 τε ἦν, πόθεν ἡ καινότης ἡ ἀνόμοιος αὐτοῖς.</p>
                </div>
-               <div type="textpart" subtype="section" n="3">
+               <div n="3" type="section">
                   <p> ὅθεν ἐλύετο πᾶσα μαγεία καὶ πᾶς δεσμὸς
 ἠφανίζετο κακίας: ἄγνοια καθῃρεῖτο, παλαιὰ βασιλεία
 διεφθείρετο <note n="2">Lightfoot omits diefqei/reto, and readjusts the punctuation, on the authority of *a*s.</note> θεοῦ ἀνθρωπίνως φανερουμένου
@@ -553,8 +565,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="20">
-               <div type="textpart" subtype="section" n="1">
+            <div n="20" type="chapter">
+               <div n="1" type="section">
                   <p> Ἐάν με καταξιώσῃ Ἰησοῦς Χριστὸς ἐν τῇ
 προσευχῇ ὑμῶν καὶ θέλημα ᾖ, ἐν τῷ δευτέρῳ
 βιβλιδίῳ, ὃ μέλλω γράφειν ὑμῖν, προσδηλώσω
@@ -562,7 +574,7 @@
 Ἰησοῦν Χριστόν, ἐν τῇ αὐτοῦ πίστει καὶ
 ἐν τῇ αὐτοῦ ἀγάπῃ, ἐν πάθει αὐτοῦ καὶ ἀναστάσει:</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> μάλιστα ἐὰν ὁ κύριός μοι ἀποκαλύψῃ, ὅτι <note n="1">Zahn and, sith some hesitation, Lightfoot emend dti to ti, connecting it sith a)pokalu/yh|. If so the translation sould be <q>if the Lord reveal anything to me. Join in the common meeting, etc.</q>
                      </note> οἱ
 κατ̓ ἄνδρα κοινῇ πάντες ἐν χάριτι ἐξ ὀνόματος
@@ -577,15 +589,15 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="21">
-               <div type="textpart" subtype="section" n="1">
+            <div n="21" type="chapter">
+               <div n="1" type="section">
                   <p> Ἀντίψυχον ὑμῶν ἐγὼ καὶ ὧν ἐπέμψατε εἰς
 θεοῦ τιμὴν εἰς Σμύρναν, ὅθεν καὶ γράφω ὑμῖν,
 εὐχαριστῶν τῷ κυρίῳ, ἀγαπῶν Πολύκαρπον ὡς
 καὶ ὑμᾶς: μνημονεύετέ μου, ὡς καὶ ὑμῶν Ἰησοῦς
 Χριστός.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> προσεύχεσθε ὑπὲρ τῆς ἐκκλησίας
 <pb n="196"/>
 τῆς ἐν Συρίᾳ, ὅθεν δεδεμένος εἰς Ῥώμην ἀπάγομαι,
@@ -594,13 +606,13 @@
 ἐν Ἰησοῦ Χριστῷ, τῇ κοινῇ ἐλπίδι ἡμῶν.</p>
                </div>
             </div>
-         </div> 
-            <!-- End of Epistle 1 -->
-            <div type="textpart" subtype="epistle" n="2">
-               <head>ΜΑΓΝΗΣΙΕΥΣΙΝ ΙΓΝΑΤΙΟΣ</head>   
-               <div type="textpart" subtype="chapter" n="praef">
-                  <div type="textpart" subtype="section" n="1">
-                     <p>
+         </div>
+         <!-- End of Epistle 1 -->
+         <div n="2" type="epistle">
+            <head>ΜΑΓΝΗΣΙΕΥΣΙΝ ΙΓΝΑΤΙΟΣ</head>
+            <div n="praef" type="chapter">
+               <div n="1" type="section">
+                  <p>
                         Ἰγνάτιος, ὁ καὶ Θεοφόρος, τῇ εὐλογημένῃ ἐν
                         χάριτι θεοῦ πατρὸς ἐν Χριστῷ Ἰησοῦ τῷ
                         σωτῆρι ἡμῶν, ἐν ᾧ ἀσπάζομαι τὴν ἐκκλησίαν
@@ -608,16 +620,16 @@
                         καὶ εὔχομαι ἐν θεῷ πατρὶ καῖ ἐν Ἰησοῦ
                         Χριστῷ πλεῖστα χαίρειν.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="1">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Γνοὺς ὑμῶν τὸ πολυεύτακτον τῆς κατὰ θεὸν
+            </div>
+            <div n="1" type="chapter">
+               <div n="1" type="section">
+                  <p> Γνοὺς ὑμῶν τὸ πολυεύτακτον τῆς κατὰ θεὸν
                         ἀγάπης, ἀγαλλιώμενος προειλόμην ἐν πίστει
                         Ἰησοῦ Χριστοῦ προσλαλῆσαι ὑμῖν.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> καταξιωθεὶς
+               </div>
+               <div n="2" type="section">
+                  <p> καταξιωθεὶς
                         γὰρ ὀνόματος θεοπρεπεστάτου, ἐν οἷς περιφέρω
                         δεσμοῖς ᾅδω τὰς ἐκκλησίας, ἐν αἷς ἕνωσιν: εὔχομαι
                         σαρκὸς καὶ πνεύματος Ἰησοῦ Χριστοῦ, τοῦ διὰ
@@ -626,23 +638,23 @@
                         πατρός: ἐν ᾧ ὑπομένοντες τὴν πᾶσαν ἐπήρειαν
                         τοῦ ἄρχοντος τοῦ αἰῶνος τούτου καὶ διαφυγόντες θεοῦ τευξόμεθα.
                         <pb n="198"/>
-                     </p>
-                  </div>
+                  </p>
                </div>
-               <div type="textpart" subtype="chapter" n="2">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ἐπεὶ οὖν ἠξιώθην ἰδεῖν ὑμᾶς διὰ Δαμᾶ τοῦ
+            </div>
+            <div n="2" type="chapter">
+               <div n="1" type="section">
+                  <p> Ἐπεὶ οὖν ἠξιώθην ἰδεῖν ὑμᾶς διὰ Δαμᾶ τοῦ
                         ἀξιοθέου ὑμῶν ἐπισκόπου καὶ πρεσβυτέρων ἀξϊων
                         Βάσσου καὶ Ἀπολλωνίου καὶ τοῦ συνδούλου μου
                         διακόνου Ζωτίωνος, οὗ ἐγὼ ὀναίμην, ὅτι ὑποτάσσεται
                         τῷ ἐπισκόπῳ ὡς χάριτι θεοῦ καὶ τῷ πρεσβυτερίῳ
                         ὡς νόμῳ Ἰησοῦ Χριστοῦ.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="3">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Καὶ ὑμῖν δὲ πρέπει μὴ συγχρᾶσθαι τῇ
+            </div>
+            <div n="3" type="chapter">
+               <div n="1" type="section">
+                  <p> Καὶ ὑμῖν δὲ πρέπει μὴ συγχρᾶσθαι τῇ
                         ἡλικίᾳ τοῦ ἐπισκόπου, ἀλλὰ κατὰ δύναμιν θεοῦ
                         πατρὸς πᾶσαν ἐντροπὴν αὐτῷ ἀπονέμειν, καθὼς
                         ἔγνων καὶ τοὺς ἁγίους πρεσβυτέρους οὐ προσειληφότας
@@ -650,38 +662,38 @@
                         ὡς φρονίμους <note n="1">Lightfoot reads froni/mf <q>as to one prudent in God</q> sith Ag.: it certainly gives a better senso, but for that reason may be a correction.</note> ἐν θεῷ συγχωροῦντας αὐτῷ, οὐκ
                         αὐτῷ δέ, ἀλλὰ τῷ πατρὶ Ἰησοῦ Χριστοῦ, τῷ
                         πάντων ἐπισκόπῳ.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> εἰς τιμὴν οὖν ἐκείνου τοῦ
+               </div>
+               <div n="2" type="section">
+                  <p> εἰς τιμὴν οὖν ἐκείνου τοῦ
                         θελήσαντος ἡμᾶς <note n="2">h(ma=s GL, u(ma=s Ag.</note> πρέπον ἐστὶν ἐπακούειν κατὰ
                         μηδεμίαν ὑπόκρισιν: ἐπεὶ οὐχ ὅτι τὸν ἐπίσκοπον
                         τοῦτον τὸν βλεπόμενον πλανᾷ τις, ἀλλὰ τὸν
                         ἀόρατον παραλογίζεται. τὸ δὲ τοιοῦτον οὐ πρὸς
                         σάρκα ὁ λόγος, ἀλλὰ πρὸς θεὸν τὸν τὰ κρύφια εἰδότα.
                         <pb n="200"/>
-                     </p>
-                  </div>
+                  </p>
                </div>
-               <div type="textpart" subtype="chapter" n="4">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Πρέπον οὖν ἐστιν μὴ μόνον καλεῖσθαι Χρις
+            </div>
+            <div n="4" type="chapter">
+               <div n="1" type="section">
+                  <p> Πρέπον οὖν ἐστιν μὴ μόνον καλεῖσθαι Χρις
                         τιανούς, ἀλλὰ καὶ εἶναι: ὥσπερ καί τινες ἐπίσκοπον
                         μὲν καλοῦσιν, χωρὶς δὲ αὐτοῦ πάντα
                         πράσσουσιν. οἱ τοιοῦτοι δὲ οὐκ εὐσυνείδητοί μοι
                         εἶναι φαίνονται διὰ τὸ μὴ βεβαίως κατ̓ ἐντολὴν συναθροίζεσθαι.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="5">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ἐπεὶ οὖν τέλος τὰ πρώγματα ἔχει καὶ πρόκειται
+            </div>
+            <div n="5" type="chapter">
+               <div n="1" type="section">
+                  <p> Ἐπεὶ οὖν τέλος τὰ πρώγματα ἔχει καὶ πρόκειται
                         τὰ δύο ὁμοῦ, ὅ τε θάνατος καὶ ἡ ζωή, καὶ
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg005:1.25">Acts. 1, 25</bibl>
-                        </note> ἕκαστος εἰς τὸν ἴδιον τόπον μέλλει χωρεῖν:</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> ὥσπερ γάρ ἐστιν νομίσματα δύο, ὃ μὲν θεοῦ,
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg005:1.25">Acts. 1, 25</bibl>
+                     </note> ἕκαστος εἰς τὸν ἴδιον τόπον μέλλει χωρεῖν:</p>
+               </div>
+               <div n="2" type="section">
+                  <p> ὥσπερ γάρ ἐστιν νομίσματα δύο, ὃ μὲν θεοῦ,
                         ὃ δὲ κόσμου, καὶ ἕκαστον αὐτῶν ἴδιον χαρακτῆρα
                         ἐπικείμενον ἔχει, οἱ ἄπιστοι τοῦ κόσμου τούτου,
                         οἱ δὲ πιστοὶ ἐν ἀγάπῃ χαρακτῆρα θεοῦ πατρὸς διὰ
@@ -689,38 +701,38 @@
                         τὸ ἀποθανεῖν εἰς τὸ αὐτοῦ πάθος, τὸ ζῆν αὐτοῦ
                         οὐκ ἔστιν ἐν ἡμῖν.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="6">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ἐπεὶ οὖν ἐν τοῖς προγεγραμμένοις προσώποις
+            </div>
+            <div n="6" type="chapter">
+               <div n="1" type="section">
+                  <p> Ἐπεὶ οὖν ἐν τοῖς προγεγραμμένοις προσώποις
                         τὸ πᾶν πλῆθος ἐθεώρησα ἐν πίστει καὶ ἠγάπησα,
                         παραινῶ, ἐν ὁμονοίᾳ θεοῦ σπουδάζετε πάντα
                         πράσσειν, προκαθημένου τοῦ ἐπισκόπου εἰς τόπον <note n="1">to/pon GLg, tu/pon S*l, and so also in the next line. Cf. Trall. iii. Lightfoot prefers tu/pon, but it seems to be more probably a softening of the rather startling to/pon by the Syriac translater.</note>
-                        <pb n="202"/>
+                     <pb n="202"/>
                         θεοῦ καὶ τῶν πρεσβυτέρων εἰς τόπον συνεδρίου
                         τῶν ἀποστόλων, καὶ τῶν διακόνων τῶν ἐμοὶ γλυκυτάτων
                         πεπιστευμένων διακονίαν Ἰησοῦ Χριστοῦ,
                         δς πρὸ αἰώνων παρὰ πατρὶ ἦν καὶ ἐν τέλει ἐφάνη.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> πάντες οὖν ὁμοήθειαν θεοῦ λαβόντες ἐντρέπεσθε
+               </div>
+               <div n="2" type="section">
+                  <p> πάντες οὖν ὁμοήθειαν θεοῦ λαβόντες ἐντρέπεσθε
                         ἀλλήλους καὶ μηδεὶς κατὰ σάρκα βλεπέτω
                         τὸν πλησίον, ἀλλ̓ ἐν Ἰησοῦ Χριστῷ ἀλλήλους διὰ
                         παντὸς ἀγαπᾶτε. μηδὲν ἔστω ἐν ὑμῖν, ὃ δυνήσεται
                         ὑμᾶς μερίσαι ἀλλ̓ ἑνώθητε τῷ ἐπισκόπῳ
                         καὶ τοῖς προκαθημένοις εἰς τύπον καὶ διδαχὴν ἀφθαρσίας.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="7">
-                  <div type="textpart" subtype="section" n="1">
-                     <p>
-                        <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg004:5.19 cts:urn:greekLit:tlg0031.tlg004:8.28">Joh. 5, 19. so; 8, 28</bibl>
-                        </note>
-                     </p>
-                     <p> Ὥσπερ οὖν ὁ κύριος ἄνευ τοῦ πατρὸς οὐδὲν
+            </div>
+            <div n="7" type="chapter">
+               <div n="1" type="section">
+                  <p>
+                     <note>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg004:5.19 cts:urn:greekLit:tlg0031.tlg004:8.28">Joh. 5, 19. so; 8, 28</bibl>
+                     </note>
+                  </p>
+                  <p> Ὥσπερ οὖν ὁ κύριος ἄνευ τοῦ πατρὸς οὐδὲν
                         ἐποίησεν, ἡνωμένος ὤν, οὔτε δἰ ἑαυτοῦ οὔτε διὰ
                         τῶν ἀποστόλων: οὕτως μηδὲ ὑμεῖς ἄνευ τοῦ ἐπισκόπου
                         καὶ τῶν πρεσβυτέρων μηδὲν πράσσετε:
@@ -728,24 +740,24 @@
                         ἀλλ̓ ἐπὶ τὸ αὐτὸ μία προσευχή, μία δέησις, εἷς
                         νοῦς, μία ἐλπὶς ἐν ἀγάπῃ, ἐν τῇ χαρᾷ τῇ ἀμώμῳ,
                         ὅ ἐστιν Ἰησοῦς Χριστός, οὖ ἄμεινον οὐδέν ἐστιν.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> πάντες ὡς εἰς ἕνα ναὸν συντρέχετε θεοῦ, ὡς
+               </div>
+               <div n="2" type="section">
+                  <p> πάντες ὡς εἰς ἕνα ναὸν συντρέχετε θεοῦ, ὡς
                         ἐπὶ ἓν θυσιαστήριον, ἐπὶ ἕνα Ἰησοῦν Χριστόν, τὸν
                         ἀφ̓ ἑνὸς πατρὸς προελθόντα καὶ εἰς ἕνα ὄντα καὶ χωρήσαντα.
                         <pb n="204"/>
-                     </p>
-                  </div>
+                  </p>
                </div>
-               <div type="textpart" subtype="chapter" n="8">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Μὴ πλανᾶσθε ταῖς ἑτεροδοξίαις μηδὲ μυθεύμασιν
+            </div>
+            <div n="8" type="chapter">
+               <div n="1" type="section">
+                  <p> Μὴ πλανᾶσθε ταῖς ἑτεροδοξίαις μηδὲ μυθεύμασιν
                         τοῖς παλαιοῖς ἀνωφελέσιν οὖσιν. εἰ γὰρ
                         μέχρι νῦν κατὰ Ἰουδαῖσμὸν ζῶμεν, ὁμολογοῦμεν
                         χάριν μὴ εἰληφέναι.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> οἱ γὰρ θειότατοι προφῆται
+               </div>
+               <div n="2" type="section">
+                  <p> οἱ γὰρ θειότατοι προφῆται
                         κατὰ Χριστὸν Ἰησοῦν ἔζησαν. διὰ τοῦτο καὶ
                         ἐδιώχθησαν, ἐνπνεόμενοι ὑπὸ τῆς χάριτος αὐτοῦ,
                         εἰς τὸ πληροφορηθῆναι τοὺς ἀπειθοῦντας, ὅτι εἶς
@@ -753,11 +765,11 @@
                         τοῦ υἱοῦ αὐτοῦ, ὅς ἐστιν αὐτοῦ λόγος ἁπὸ σιγῆς
                         προελθών, <note n="1">So A and a #3uotation in Severus. GL read lo/gos a)i/dios ou)k a)po\ sigh=s proelqw/n, but this is rightly regarded by recent editors as a doctrinal emencdation due to fear of Gnostie theories in shich *sigh/ and *qeo/s sere the original pair from shich *lo/gos emainted, of. Clem, Alex. Ed. Theot. fi. 9.</note> ὃς κατὰ πάντα εὐηρέστησεν τῷ πέμψαντι αὐτόν.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="9">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Εἰ οὖν οἱ ἐν παλαιοῖς πράγμασιν ἀναστραφέντες
+            </div>
+            <div n="9" type="chapter">
+               <div n="1" type="section">
+                  <p> Εἰ οὖν οἱ ἐν παλαιοῖς πράγμασιν ἀναστραφέντες
                         εἰς καινότητα ἐλπίδος ἦλθον, μηκέτι σαββατίζοντες,
                         ἀλλὰ κατὰ κυριακὴν ζῶντες, ἐν ᾗ καὶ
                         ἡ ζωὴ ἡμῶν ἀνέτειλεν δἰ αὐτοῦ καὶ τοῦ θανάτου
@@ -765,51 +777,51 @@
                         τὸ πιστεύειν, καὶ διὰ τοῦτο ὑπομένομεν, ἵνα
                         εὑρεθῶμεν μαθηταὶ Ἰησοῦ Χριστοῦ τοῦ μόνου
                         διδασκάλου ἡμῶν:</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> πῶς ἡμεῖς δυνησόμεθα
+               </div>
+               <div n="2" type="section">
+                  <p> πῶς ἡμεῖς δυνησόμεθα
                         ζῆσαι χωρὶς αὐτοῦ, οὗ καὶ οἱ προφῆται μαθηταὶ
                         <pb n="206"/>
                         ὄντες τῷ πνεύματι ὡς διδάσκαλον αὐτὸν προσεδόκων; καὶ διὰ τοῦτο, ὃν δικαίως ἀνέμενον, παρὼν
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg001:27.52">Mt. 27, 52</bibl>
-                        </note> ἤγειρεν αὐτοὺς ἐκ νεκρῶν.
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg001:27.52">Mt. 27, 52</bibl>
+                     </note> ἤγειρεν αὐτοὺς ἐκ νεκρῶν.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="10">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Μὴ οὖν ἀναισθητῶμεν τῆς χρηστότητος
+            </div>
+            <div n="10" type="chapter">
+               <div n="1" type="section">
+                  <p> Μὴ οὖν ἀναισθητῶμεν τῆς χρηστότητος
                         αὐτοῦ. ἐὰν γὰρ ἡμᾶς μιμήσηται καθὰ πράσσομεν,
                         οὐκέτι ἐσμέν. διὰ τοῦτο, μαθηταὶ αὐτοῦ
                         γενόμενοι, μάθωμεν κατὰ Χριστιανισμὸν ζῆν. ὃς
                         γὰρ ἄλλῳ ὀνόματι καλεῖται πλέον τούτου, οὐκ
                         ἔστιν τοῦ θεοῦ.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> ὑπέρθεσθε οὖν τὴν κακὴν
+               </div>
+               <div n="2" type="section">
+                  <p> ὑπέρθεσθε οὖν τὴν κακὴν
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:6.7">I Cor. 6, 7</bibl>
-                        </note> ζύμην, τὴν παλαιωθεῖσαν καὶ ἐνοξίσασαν, καὶ
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:6.7">I Cor. 6, 7</bibl>
+                     </note> ζύμην, τὴν παλαιωθεῖσαν καὶ ἐνοξίσασαν, καὶ
                         μεταβάλεσθε εἰς νέαν ζύμην, ὅ ἐστιν Ἰησοῦς
                         Χριστός. ἁλίσθητε ἐν αὐτῷ, ἵνα μὴ διαφθαρῇ τις
                         ἐν ὑμῖν, ἐπεὶ ἀπὸ τῆς ὀσμῆς ἐλεγχθήσεσθε.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="3">
-                     <p> ἄτοπόν ἐστιν, Ἰησοῦν Χριστὸν λαλεῖν καὶ
+               </div>
+               <div n="3" type="section">
+                  <p> ἄτοπόν ἐστιν, Ἰησοῦν Χριστὸν λαλεῖν καὶ
                         ἰουδαΐζειν. ὁ γὰρ Χριστιανισμὸς οὐκ εἰς Ἰουδαῖσμὸν
                         ἐπίστευσεν, ἀλλ̓ Ἰουδαϊσμὸς εἰς Χριστιανισμόν,
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0527.tlg048:66.13">Is. 66, 13</bibl>
-                        </note> ᾧ <note n="1">w(=| S, w(s GL, ei)s o)/n g (A).</note> πᾶσα γλῶσσα πιστεύσασα εἰς
+                        <bibl corresp="cts:urn:greekLit:tlg0527.tlg048:66.13">Is. 66, 13</bibl>
+                     </note> ᾧ <note n="1">w(=| S, w(s GL, ei)s o)/n g (A).</note> πᾶσα γλῶσσα πιστεύσασα εἰς
                         θεὸν συνήχθη.
                         <pb n="208"/>
-                     </p>
-                  </div>
+                  </p>
                </div>
-               <div type="textpart" subtype="chapter" n="11">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ταῦτα δέ, ἀγαπητοί μου, οὐκ ἐπεὶ ἔγνων τινὰς
+            </div>
+            <div n="11" type="chapter">
+               <div n="1" type="section">
+                  <p> Ταῦτα δέ, ἀγαπητοί μου, οὐκ ἐπεὶ ἔγνων τινὰς
                         ἐξ ὑμῶν οὕτως ἔχοντας, ἀλλ̓ ὡς μικρότερος ὑμῶν
                         θέλω προφυλάσσεσθαι ὑμᾶς, μὴ ἐμπεσεῖν εἰς τὰ
                         ἄγκιστρα τῆς κενοδοξίας, ἀλλὰ πεπληροφορῆσθαι
@@ -818,46 +830,46 @@
                         πραχθέντα ἀληθῶς καὶ βεβαίως ὑπὸ Ἰησοῦ Χριστοῦ,
                         τῆς ἐλπίδος ἡμῶν, ἧς ἐκτραπῆναι μηδενὶ ὑμῶν γένοιτο.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="12">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ὀναίμην ὑμῶν κατὰ πάντα, ἐάνπερ ἄξιος ὦ.
+            </div>
+            <div n="12" type="chapter">
+               <div n="1" type="section">
+                  <p> Ὀναίμην ὑμῶν κατὰ πάντα, ἐάνπερ ἄξιος ὦ.
                         εἰ γὰρ καὶ δέδεμαι, πρὸς ἕνα τῶν λελυμένων ὑμῶν
                         οὐκ εἰμί. οἶδα ὅτι οὐ φυσιοῦσθε: Ἰησοῦν γὰρ
                         Χριστὸν ἔχετε ἐν ἑαυτοῖς: καὶ μᾶλλον, ὅταν
                         ἐπαινῶ ὑμᾶς, οἶδα, ὅτι ἐντρέπεσθε, ὡς γέγραπται,
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0527.tlg029:18.17">Prov. 18, 17</bibl>
-                        </note> ὅτι ὀ δίκαιος ἑαυτοῦ κατήγορος.
+                        <bibl corresp="cts:urn:greekLit:tlg0527.tlg029:18.17">Prov. 18, 17</bibl>
+                     </note> ὅτι ὀ δίκαιος ἑαυτοῦ κατήγορος.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="13">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Σπουδάζετε οὖν βεβαιωθῆναι ἐν τοῖς δόγμασιν
+            </div>
+            <div n="13" type="chapter">
+               <div n="1" type="section">
+                  <p> Σπουδάζετε οὖν βεβαιωθῆναι ἐν τοῖς δόγμασιν
                         τοῦ κυρίου καὶ τῶν ἀποστόλων, ἵνα πάντα, ὅσα
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg027:1.3">Ps. 1, 3</bibl>
-                        </note> ποιεῖτε, κατευοδωθῆτε σαρκὶ καὶ πνεύματι, πίστει
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg027:1.3">Ps. 1, 3</bibl>
+                     </note> ποιεῖτε, κατευοδωθῆτε σαρκὶ καὶ πνεύματι, πίστει
                         καὶ ἀγάπῃ, ἐν υἱῷ καὶ πατρὶ καὶ ἐν πνεύματι, ἐν
                         ἀρχῇ καὶ ἐν τέλει, μετὰ τοῦ ἀξιοπρεπεστάτου
                         ἐπισκόπου ὑμῶν καὶ ἀξιοπλόκου πνευματικοῦ
                         στεφάνου τοῦ πρεσβυτερίου ὑμῶν καὶ τῶν κατὰ
                         θεὸν διακόνων.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> ὑποτάγητε τῷ ἐπισκόπῳ καὶ
+               </div>
+               <div n="2" type="section">
+                  <p> ὑποτάγητε τῷ ἐπισκόπῳ καὶ
                         <pb n="210"/>
                         ἀλλήλοις, ὡς Ἰησοῦς Χριστὸς τῷ πατρὶ <note n="1">patri/ A(g), add kata\ sa/rka <q>according to the flesh</q> GL.</note> καὶ
                         οἱ ἀπόστολοι τῷ Χριστῷ καὶ τῷ πατρὶ <note n="2">patri/ A, add kai\ tw=| pne/umati, <q>and the spirit</q> GL.</note> ἵνα
                         ἕνωσις ᾖ σαρκική τε καὶ πνευματική.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="14">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Εἰδώς, ὅτι θεοῦ γέμετε, συντόμως παρεκέλευσα <note n="3">pareke/leusa G, pareka/lesa g shich Lightfoot adopts on the ground that it is a common Ignatian sord, shile parakeleu/ein is not found elseshere in the Epistles.</note>
+            </div>
+            <div n="14" type="chapter">
+               <div n="1" type="section">
+                  <p> Εἰδώς, ὅτι θεοῦ γέμετε, συντόμως παρεκέλευσα <note n="3">pareke/leusa G, pareka/lesa g shich Lightfoot adopts on the ground that it is a common Ignatian sord, shile parakeleu/ein is not found elseshere in the Epistles.</note>
                         ὑμᾶς. μνημονεύετέ μου ἐν ταῖς προσευχαῖς ὑμῶν.
                         ἵνα θεοῦ ἐπιτύχω, καὶ τῆς ἐν Συρίᾳ ἐκκλησίας,
                         ὅθεν οὐκ ἄξιός εἰμι καλεῖσθαι: ἐπιδέομαι γὰρ τῆς
@@ -865,26 +877,26 @@
                         τὸ ἀξιωθῆναι τὴν ἐν Συρίᾳ ἐκκλησίαν διὰ τῆς
                         ἐκκλησίας <note n="4">Lightfoot reads e)ktenei/as <q>of your fervent supplication</q> on the authority of A.</note> ὑμῶν δροσισθῆναι.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="15">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ἀσπάζονται ὑμᾶς Ἐφέσιοι ἀπὸ Σμύρνης, ὅθεν
+            </div>
+            <div n="15" type="chapter">
+               <div n="1" type="section">
+                  <p> Ἀσπάζονται ὑμᾶς Ἐφέσιοι ἀπὸ Σμύρνης, ὅθεν
                         καὶ γράφω ὑμῖν, παρόντες εἰς δόξαν θεοῦ, ὥσπερ
                         καὶ ὑμεῖς οἲ κατὰ πάντα με ἀνέπαυσαν ἅμα
                         Πολυκάρπῳ, ἐπισκόπῳ Σμυρναίων. καὶ αἱ λοιπαὶ
                         δὲ ἐκκλησίαι ἐν τιμῇ Ἰησοῦ Χριστοῦ ἀσπάζονται
                         ὑμᾶς. ἔρρωσθε ἐν ὁμονοίᾳ θεοῦ, κεκτημένοι ἀδιάκριτον
                         πνεῦμα, ὅς ἐστιν Ἰησοῦς Χριστός.</p>
-                  </div>
                </div>
             </div>
-                        
-            <div type="textpart" subtype="epistle" n="3"><pb n="212"/>
-               <head>ΤΡΑΛΛΙΑΝΟΙΣ ΙΓΝΑΤΙΟΣ</head>  
-               <div type="textpart" subtype="chapter" n="praef">
-                  <div type="textpart" subtype="section" n="1">
-                     <p>
+         </div>
+         <div n="3" type="epistle">
+            <pb n="212"/>
+            <head>ΤΡΑΛΛΙΑΝΟΙΣ ΙΓΝΑΤΙΟΣ</head>
+            <div n="praef" type="chapter">
+               <div n="1" type="section">
+                  <p>
                         Ἰγνάτιος, ὁ καὶ Θεοφόρος, ἠγαπημένῃ θεῷ,
                         πατρὶ Ἰησοῦ Χριστοῦ, ἐκκλησίᾳ ἁγίᾳ τῇ
                         οὔσῃ ἐν Τράλλεσιν τῆς Ἀσίας, ἐκλεκτῇ καὶ
@@ -894,205 +906,205 @@
                         ἐν τῷ πληρώματι ἐν ἀποστολικῷ χαρακτῆρι
                         καὶ εὔχομαι πλεῖστα χαίρειν.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="1">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ἄμωμον διάνοιαν καὶ ἀδιάκριτον ἐν ὑπομονῇ
+            </div>
+            <div n="1" type="chapter">
+               <div n="1" type="section">
+                  <p> Ἄμωμον διάνοιαν καὶ ἀδιάκριτον ἐν ὑπομονῇ
                         ἔγνων ὑμᾶς ἔχοντας, οὐ κατὰ χρῆσιν ἀλλὰ κατὰ
                         φύσιν, καθὼς ἐδήλωσέν μοι Πολύβιος, ὁ ἐπίσκοπος
                         ὑμῶν, ὃς παρεγένετο θελήματι θεοῦ καὶ Ἰησοῦ
                         Χριστοῦ ἐν Σμύρνῃ καὶ οὕτως μοι συνεχάρη
                         δεδεμένῳ ἐν Χριστῷ Ἰησοῦ, ὥστε με τὸ πᾶν
                         πλῆθος ὑμῶν ἐν αὐτῷ θεωρεῖσθαι. <note n="1">qewrei=sqai G, qewrh=sai g.</note>
-                     </p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> ἀποδεξάμενος
+                  </p>
+               </div>
+               <div n="2" type="section">
+                  <p> ἀποδεξάμενος
                         οὖν τὴν κατὰ θεὸν εὔνοιαν δἰ αὐτοῦ
                         ἐδόξασα, εὑρὼν ὑμᾶς, ὡς ἔγνων, μιμητὰς ὄντας θεοῦ.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="2">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ὅταν γὰρ τῷ ἐπισκόπῳ ὑποτάσσησθε ὡς
+            </div>
+            <div n="2" type="chapter">
+               <div n="1" type="section">
+                  <p> Ὅταν γὰρ τῷ ἐπισκόπῳ ὑποτάσσησθε ὡς
                         Ἱησοῦ Χριστῷ, φαίνεσθέ μοι οὐ κατὰ ἄνθρωπον
                         ζῶντες, ἀλλὰ κατὰ Ἰησοῦν Χριστὸν τὸν δἰ ἡμᾶς
                         <pb n="214"/>
                         ἀποθανόντα, ἵνα πιστεύσαντες εἰς τὸν θάνατον
                         αὐτοῦ τὸ ἀποθανεῖν ἐκφύγητε.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> ἀναγκαῖον οὖν
+               </div>
+               <div n="2" type="section">
+                  <p> ἀναγκαῖον οὖν
                         ἐστίν, ὥσπερ ποιεῖτε, ἄνευ τοῦ ἐπισκόπου μηδὲν
                         πράσσειν ὑμᾶς, ἀλλ̓ ὑποτάσσεσθαι καὶ τῷ
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:4.1">I Cor, 4, 1</bibl>
-                        </note> πρεσβυτερίῳ ὡς τοῖς ἀποστόλοις Ἰησοῦ Χριστοῦ
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:4.1">I Cor, 4, 1</bibl>
+                     </note> πρεσβυτερίῳ ὡς τοῖς ἀποστόλοις Ἰησοῦ Χριστοῦ
                         τῆς ἐλπίδος ἡμῶν, ἐν ᾦ διάγοντες εὑρεθησόμεθα. <note n="1">eu(reqhso/meqa GL, e)n eu)t(??) eu(req. S g.</note>
-                     </p>
-                  </div>
-                  <div type="textpart" subtype="section" n="3">
-                     <p> δεῖ δὲ καὶ τοὺς διακόνους ὄντας μυστηρίων
+                  </p>
+               </div>
+               <div n="3" type="section">
+                  <p> δεῖ δὲ καὶ τοὺς διακόνους ὄντας μυστηρίων
                         Ἰησοῦ Χριστοῦ κατὰ πάντα τρόπον πᾶσιν
                         ἀρέσκειν. οὐ γὰρ βρωμάτων καὶ ποτῶν εἰσιν
                         διάκονοι, ἀλλ̓ ἐκκλησίας θεοῦ ὑπηρέται: δέον οὖν
                         αὐτοὺς φυλάσσεσθαι τὰ ἐγκλήματα ὡς πῦρ.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="3">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ὁμοίως πάντες ἐντρεπέσθωσαν τοὺς διακόνους
+            </div>
+            <div n="3" type="chapter">
+               <div n="1" type="section">
+                  <p> Ὁμοίως πάντες ἐντρεπέσθωσαν τοὺς διακόνους
                         ὡς Ἰησοῦν Χριστόν, ὡς καὶ τὸν ἐπίσκοπον
                         ὄντα τύπον τοῦ πατρός. τοὺς δὲ πρεσβυτέρους
                         ὡς συνέδριον θεοῦ καὶ ὡς σύνδεσμον
                         ἀποστόλων. χωρὶς τούτων ἐκκλησία οὐ καλεῖται.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> περὶ ὧν πέπεισμαι ὑμᾶς οὕτως ἔχειν. τὸ γὰρ
+               </div>
+               <div n="2" type="section">
+                  <p> περὶ ὧν πέπεισμαι ὑμᾶς οὕτως ἔχειν. τὸ γὰρ
                         ἐξεμπλάριον τῆς ἀγάπης ὑμῶν ἔλαβον καὶ ἔχω
                         μεθ̓ ἑαυτοῦ ἐν τῷ ἐπισκόπῳ ὑμῶν, οὖ αὐτὸ τὸ
                         κατάστημα μεγάλη μαθητεία, ἡ δὲ πραότης αὐτοῦ
                         δύναμις: ὃν λογίζομαι καὶ τοὺς ἀθέους ἐντρέπεσθαι.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="3">
-                     <p> ἀγαπῶν ὑμᾶς φείδομαι, συντονώτερον δυνάμενος
+               </div>
+               <div n="3" type="section">
+                  <p> ἀγαπῶν ὑμᾶς φείδομαι, συντονώτερον δυνάμενος
                         γράφειν ὑπὲρ τούτου. <note n="2">The text is here confused and corrupt in all the authori. ties. Lightfoot prefers to read ou(/tws fei/domai, and adds <del>a)ll) ou)x i(kano\n (??)</del> ei)s tou=to k. t. l.</note> οὐκ εἰς τοῦτο ᾠήθην,
                         ἵνα ὤν κατάκριτος ὡς ἀπόστολος ὑμῖν διατάσσωμαι.
                         <pb n="216"/>
-                     </p>
-                  </div>
+                  </p>
                </div>
-               <div type="textpart" subtype="chapter" n="4">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Πολλὰ φρονῶ ἐν θεῷ, ἀλλ̓ ἐμαυτὸν μετρῶ,
+            </div>
+            <div n="4" type="chapter">
+               <div n="1" type="section">
+                  <p> Πολλὰ φρονῶ ἐν θεῷ, ἀλλ̓ ἐμαυτὸν μετρῶ,
                         ἵνα μὴ ἐν καυχήσει ἀπόλωμαι. νῦν γάρ με δεῖ
                         πλέον φοβεῖσθαι καὶ μὴ προσέχειν τοῖς φυσιοῦσίν
                         με. οἱ γὰρ λέγοντές μοι μαστιγοῦσίν με.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p>
+               </div>
+               <div n="2" type="section">
+                  <p>
                         ἀγαπῶ μὲν γὰρ τὸ παθεῖν, ἀλλ̓ οὐκ οἶδα, εἰ ἄξιός
                         εἰμι. τὸ γὰρ ζῆλος πολλοῖς μὲν οὐ φαίνεται, ἐμὲ
                         δὲ πλέον πολεμεῖ. χρῄζω οὖν πραότητος, ἐν ᾗ
                         καταλύεται ὁ ἄρχων τοῦ αἰῶνος τούτου.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="5">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Μὴ οὐ δύναμαι ὑμῖν τὰ ἐπουράνια γράψαι;
+            </div>
+            <div n="5" type="chapter">
+               <div n="1" type="section">
+                  <p> Μὴ οὐ δύναμαι ὑμῖν τὰ ἐπουράνια γράψαι;
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:8.1. 2">Cor, 8, 1. 2</bibl>
-                        </note> ἀλλὰ φοβοῦμαι, μὴ νηπίοις οὖσιν ὑμῖν βλάβην
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:8.1. 2">Cor, 8, 1. 2</bibl>
+                     </note> ἀλλὰ φοβοῦμαι, μὴ νηπίοις οὖσιν ὑμῖν βλάβην
                         παραθῶ: καὶ συγγνωμονεῖτέ μοι, μήποτε οὐ
                         δυνηθέντες χωρῆσαι στραγγαλωθῆτε.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> καὶ γὰρ
+               </div>
+               <div n="2" type="section">
+                  <p> καὶ γὰρ
                         ἐγώ, οὐ καθότι δέδεμαι καὶ δύναμαι νοεῖν τὰ ἐπουράνια
                         καὶ τὰς τοποθεσίας τὰς ἀγγελικὰς καὶ τὰς
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg012:1.16">Col. 1, 16</bibl>
-                        </note> συστάσεις τὰς ἀρχοντικάς, ὁρατά τε καὶ ἀόρατα,
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg012:1.16">Col. 1, 16</bibl>
+                     </note> συστάσεις τὰς ἀρχοντικάς, ὁρατά τε καὶ ἀόρατα,
                         παρὰ τοῦτο ἤδη καὶ μαθητής εἰμι. πολλὰ γὰρ
                         ἡμῖν λείπει, ἵνα θεοῦ μὴ λειπώμεθα.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="6">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Παρακαλῶ οὖν ὑμᾶς, οὐκ ἐγώ, ἀλλ̓ ἡ ἀγάπη
+            </div>
+            <div n="6" type="chapter">
+               <div n="1" type="section">
+                  <p> Παρακαλῶ οὖν ὑμᾶς, οὐκ ἐγώ, ἀλλ̓ ἡ ἀγάπη
                         Ἰησοῦ Χριστοῦ: μόνῃ τῇ χριστιανῇ τροφῇ χρῆσθε,
                         ἀλλοτρίας δὲ βοτάνης ἀπέχεσθε, ἥτις ἐστὶν
                         <pb n="218"/>
                         αἵρεσις:</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> οἳ ἑαυτοῖς <note n="1">oi(\ e(autoi=s paremple/kousin seems to be the text implied by the translations of SA, but G(L) read oi( kairoi\ paremple/kousin and g has kai\ to\n i)o\n prosple/kontes, The text is clearly corrupt, and Lightfoot suggests kai\ i)w=| paremple/kousin k.t.l. <q>for they even mingle poison sith Jesus Christ.</q>
+               </div>
+               <div n="2" type="section">
+                  <p> οἳ ἑαυτοῖς <note n="1">oi(\ e(autoi=s paremple/kousin seems to be the text implied by the translations of SA, but G(L) read oi( kairoi\ paremple/kousin and g has kai\ to\n i)o\n prosple/kontes, The text is clearly corrupt, and Lightfoot suggests kai\ i)w=| paremple/kousin k.t.l. <q>for they even mingle poison sith Jesus Christ.</q>
                      </note> παρεμπλέκουσιν Ἰησοῦν
                         Χριστὸν καταξιοπιστευόμενοι, ὥσπερ θανάσιμον
                         φάρμακον διδόντες μετὰ οἰνομέλιτος, ὅπερ ὁ
                         ἀγνοῶν ἡδέως λαμβάνει ἐν ἡδονῇ κακῇ <note n="2">kakh=| L, om, SA, ka)kei= to\ a)poqanei=n <q>and therein is death</q> G.</note> τὸ ἀποθανεῖν.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="7">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Φυλάττεσθε οὖν τοὺς τοιούτους. τοῦτο δὲ
+            </div>
+            <div n="7" type="chapter">
+               <div n="1" type="section">
+                  <p> Φυλάττεσθε οὖν τοὺς τοιούτους. τοῦτο δὲ
                         ἔσται ὑμῖν μὴ φυσιουμένοις καὶ οὖσιν ἀχωρίστοις
                         θεοῦ <note n="3">The text is doublful. A omits qeou=: probably there is some corruption though it is impossible to be sure shat it is.</note> Ἰησοῦ Χριστοῦ καὶ τοῦ ἐπισκόπου καὶ τῶν
                         διαταγμάτων τῶν ἀποστόλων.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> ὁ ἐντὸς θυσιαστηρίου
+               </div>
+               <div n="2" type="section">
+                  <p> ὁ ἐντὸς θυσιαστηρίου
                         ὢν καθαρός ἐστιν: ὁ δὲ ἐκτὸς θυσιαστηρίου
                         ὤν οὐ καθαρός ἐστιν. τοῦτ̓ ἔστιν, ὁ χωρὶς ἐπισκόπου
                         καὶ πρεσβυτερίου καὶ διακόνων πράσσων
                         τι, οὗτος οὐ καθαρός ἐστιν τῇ συνειδήσει.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="8">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Οὐκ ἐπεὶ ἔγνων τοιοῦτόν τι ἐν ὑμῖν, ἀλλὰ
+            </div>
+            <div n="8" type="chapter">
+               <div n="1" type="section">
+                  <p> Οὐκ ἐπεὶ ἔγνων τοιοῦτόν τι ἐν ὑμῖν, ἀλλὰ
                         προφυλάσσω ὑμᾶς ὄντας μου ἀγαπητούς. προορῶν
                         τὰς ἐνέδρας τοῦ διαβόλου. ὑμεῖς οὖν τὴν πραϋπάθειαν
                         ἀναλαβόντες ἀνακτήσασθε ἑαυτοὺς ἐν πίστει
                         ὅ ἐστιν σὰρξ τοῦ κυρίου, καὶ ἐν ἀγάπῃ, ὅ ἐστιν
                         αἷμα Ἰησοῦ Χριστοῦ.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> μηδεὶς ὑμῶν κατὰ τοῦ
+               </div>
+               <div n="2" type="section">
+                  <p> μηδεὶς ὑμῶν κατὰ τοῦ
                         <pb n="220"/>
                         πλησίον ἐχέτω. μὴ ἀφορμὰς δίδοτε τοῖς ἔθνεσιν,
                         ἵνα μὴ δἰ ὀλίγους ἄφρονας τὸ ἐν θεῷ πλῆθος
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0527.tlg048:52.5">Is 52, 5</bibl>
-                        </note> βλασφημῆται. Οὐαὶ γάρ, δἰ οὗ ἐπὶ ματαιότητι
+                        <bibl corresp="cts:urn:greekLit:tlg0527.tlg048:52.5">Is 52, 5</bibl>
+                     </note> βλασφημῆται. Οὐαὶ γάρ, δἰ οὗ ἐπὶ ματαιότητι
                         τὸ ὄνομά μου ἐπί τινων βλασφημεῖται.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="9">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Κωφώθητε οὖν, ὅταν ὑμῖν χωρὶς Ἰησοῦ
+            </div>
+            <div n="9" type="chapter">
+               <div n="1" type="section">
+                  <p> Κωφώθητε οὖν, ὅταν ὑμῖν χωρὶς Ἰησοῦ
                         Χριστοῦ λαλῇ τις, τοῦ ἐκ γένους Δαυείδ, τοῦ
                         ἐκ Μαρίας, ὃς ἀληθῶς ἐγεννήθη, ἔφαγέν τε καὶ
                         ἔπιεν, ἀληθῶς ἐδιώχθη ἐπὶ Ποντίου Πιλάτον,
                         ἀληθῶς ἐσταυρώθη καὶ ἀπέθανεν, βλεπόντων
                         τῶν ἐπουρανίων καὶ ἐπιγείων καὶ ὑποχθονίων.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> ὃς καὶ ἀληθῶς ἠγέρθη ἀπὸ νεκρῶν. ἐγείραντος
+               </div>
+               <div n="2" type="section">
+                  <p> ὃς καὶ ἀληθῶς ἠγέρθη ἀπὸ νεκρῶν. ἐγείραντος
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:15.12">I Cor. 15, 12 ff.</bibl>
-                        </note> αὐτὸν τοῦ πατρὸς αὐτοῦ, κατὰ τὸ ὁμοίωμα ὃς καὶ <note n="1">kata\ to\ o(moi/wma o(\s kai/ G, #3ui et secundum simililiudinem L. SA perhaps imply w(s ka(??) kata\ to\ o(moi/wma</note>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:15.12">I Cor. 15, 12 ff.</bibl>
+                     </note> αὐτὸν τοῦ πατρὸς αὐτοῦ, κατὰ τὸ ὁμοίωμα ὃς καὶ <note n="1">kata\ to\ o(moi/wma o(\s kai/ G, #3ui et secundum simililiudinem L. SA perhaps imply w(s ka(??) kata\ to\ o(moi/wma</note>
                         ἡμᾶς τοὺς πιστεύοντας αὐτῷ οὕτως ἐγερεῖ ὁ πατὴρ
                         αὐτοῦ ἐν Χριστῷ Ἰησοῦ, οὗ χωρὶς τὸ ἀληθινὸν ζῆν οὐκ ἔχομεν.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="10">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Εἰ δέ, ὥσπερ τινὲς ἄθεοι ὄντες, τουτέστιν
+            </div>
+            <div n="10" type="chapter">
+               <div n="1" type="section">
+                  <p> Εἰ δέ, ὥσπερ τινὲς ἄθεοι ὄντες, τουτέστιν
                         ἄπιστοι, λέγουσιν, τὸ δοκεῖν πεπονθέναι αὐτόν,
                         αὐτοὶ ὄντες τὸ δοκεῖν, ἐγὼ τί δέδεμαι, τί δὲ καὶ
                         εὔχομαι θηριομαχῆσαι; δωρεὰν οὖν ἀποθνήσκω.
                         ἄρα οὖν καταψεύδομαι τοῦ κυρίου.
                         <pb n="222"/>
-                     </p>
-                  </div>
+                  </p>
                </div>
-               <div type="textpart" subtype="chapter" n="11">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Φεύγετε οὖν τὰς κακὰς παραφυάδας τὰς
+            </div>
+            <div n="11" type="chapter">
+               <div n="1" type="section">
+                  <p> Φεύγετε οὖν τὰς κακὰς παραφυάδας τὰς
                         γεννώσας καρπὸν θανατηφόρον, οὗ ἐὰν γεύσηταί
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg001:15.16">Mt 15, 16</bibl>
-                        </note> τις, παῤ αὐτὰ ἀποθνήσκει. οὗτοι γὰρ οὔκ εἰσιν
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg001:15.16">Mt 15, 16</bibl>
+                     </note> τις, παῤ αὐτὰ ἀποθνήσκει. οὗτοι γὰρ οὔκ εἰσιν
                         φυτεία πατρός, 2, εἰ γὰρ ἦσαν, ἐφαίνοντο ἂν
                         κλάδοι τοῦ σταυροῦ, καὶ ἦν ἂν ὁ καρπὸς αὐτῶν
                         ἄφθαρτος: δἰ οὗ ἐν τῷ πάθει αὐτοῦ προσκαλεῖταν
@@ -1100,65 +1112,63 @@
                         χωρὶς γεννηθῆναι ἄνευ μελῶν, τοῦ θεοῦ ἕνωσιν
                         ἐπαγγελλομένου, ὅ ἐστιν αὐτός.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="12">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ἀσπάζομαι ὑμᾶς ἀπὸ Σμύρνης ἅμα ταῖς
+            </div>
+            <div n="12" type="chapter">
+               <div n="1" type="section">
+                  <p> Ἀσπάζομαι ὑμᾶς ἀπὸ Σμύρνης ἅμα ταῖς
                         συμπαρούσαις μοι ἐκκλησίαις τοῦ θεοῦ, οἲ κατὰ
                         πάντα με ἀνέπαυσαν σαρκί τε καὶ πνεύματι.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> παρακαλεῖ ὑμᾶς τὰ δεσμά μου, ἃ ἕνεκεν Ἰησοῦ
+               </div>
+               <div n="2" type="section">
+                  <p> παρακαλεῖ ὑμᾶς τὰ δεσμά μου, ἃ ἕνεκεν Ἰησοῦ
                         Χριστοῦ περιφέρω, αἰτούμενος θεοῦ ἐπιτυχεῖν:
                         διαμένετε ἐν τῇ ὁμονοίᾳ ὑμῶν καὶ τῇ μετ̓ ἀλλήλων
                         προσευχῇ. πρέπει γὰρ ὑμῖν τοῖς καθ̓ ἕνα, ἐξαιρέτως
                         καὶ τοῖς πρεσβυτέροις, ἀναψύχειν τὸν
                         ἐπίσκοπον εἰς τιμὴν πατρός, Ἰησοῦ Χριστοῦ καὶ
                         τῶν ἀποστόλων.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="3">
-                     <p> εὔχομαι ὑμᾶς ἐν ἀγάπῃ
+               </div>
+               <div n="3" type="section">
+                  <p> εὔχομαι ὑμᾶς ἐν ἀγάπῃ
                         ἀκοῦσαί μου, ἵνα μὴ εἶς μαρτύριον ὦ ἐν ὑμῖν
                         γράψας. καὶ περὶ ἐμοῦ δὲ προσεύχεσθε, τῆς ἀφ̓
                         ὑμῶν ἀγάπης χρῄζοντος ἐν τῷ ἐλέει τοῦ θεοῦ, εἰς
                         τὸ καταξιωθῆναί με τοῦ κλήρου, οὖ περίκειμαι <note n="1">Lightfoot thinks peri/keimai impossible and accepts Buosen's emendation ou(=per e)/gkeimai.</note>
-                        <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:9.27">I Cor. 9, 27</bibl>
-                        </note> ἐπιτυχεῖν, ἵνα μὴ ἀδόκιμος εὑρεθῶ,
+                     <note>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:9.27">I Cor. 9, 27</bibl>
+                     </note> ἐπιτυχεῖν, ἵνα μὴ ἀδόκιμος εὑρεθῶ,
                         <pb n="224"/>
-                     </p>
-                  </div>
+                  </p>
                </div>
-               <div type="textpart" subtype="chapter" n="13">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ἀσπάζεται ὑμᾶς ἡ ἀγάπη Σμυρναίων καὶ
+            </div>
+            <div n="13" type="chapter">
+               <div n="1" type="section">
+                  <p> Ἀσπάζεται ὑμᾶς ἡ ἀγάπη Σμυρναίων καὶ
                         Ἐφεσίων. μνημονεύετε ἐν ταῖς προσευχαῖς ὑμῶν
                         τῆς ἐν Συρίᾳ ἐκκλησίας, ὅθεν καὶ οὐκ ἄξιός εἰμι
                         λέγεσθαι, ὢν ἔσχατος ἐκείνων.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> ἔρρωσθε ἐν
+               </div>
+               <div n="2" type="section">
+                  <p> ἔρρωσθε ἐν
                         Ἰησοῦ Χριστῷ, ὑποτασσόμενοι τῷ ἐπισκόπῳ ὡς
                         τῇ ἐντολῇ, ὁμοίως καὶ τῷ πρεσβυτερίῳ. καὶ οἱ
                         κατ̓ ἄνδρα ἀλλήλους ἀγαπᾶτε ἐν ἀμερίστῳ καρδίᾳ.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="3">
-                     <p> ἁγνίζεται ὑμῶν τὸ ἐμὸν πνεῦμα οὐ μόνον νῦν,
+               </div>
+               <div n="3" type="section">
+                  <p> ἁγνίζεται ὑμῶν τὸ ἐμὸν πνεῦμα οὐ μόνον νῦν,
                         ἀλλὰ καὶ ὅταν θεοῦ ἐπιτύχω. ἔτι γὰρ ὑπὸ κίνδυνόν
                         εἰμι: ἀλλὰ πιστὸς ὁ πατὴρ ἐν Ἰησοῦ Χριστῷ
                         πληρῶσαί μου τὴν αἴτησιν καὶ ὑμῶν, ἐν ᾧ εὑρεθείητε <note n="1">The Arinenian and g read eu(reqei/hte <q>may se be found.</q>
-                        </note>ἄμωμοι.</p>
-                  </div>
+                     </note>ἄμωμοι.</p>
                </div>
             </div>
-            
-            
-            <div type="textpart" subtype="epistle" n="4">
-               <head>ΡΩΜΑΙΟΙΣ ΙΓΝΑΤΙΟΣ</head>
-               <div type="textpart" subtype="chapter" n="praef">
-                  <div type="textpart" subtype="section" n="1">
-                     <p>
+         </div>
+         <div n="4" type="epistle">
+            <head>ΡΩΜΑΙΟΙΣ ΙΓΝΑΤΙΟΣ</head>
+            <div n="praef" type="chapter">
+               <div n="1" type="section">
+                  <p>
                         Ἰγνατιος, ὁ καὶ Θεοφόρος, τῇ ἠλεημένῃ ἐν
                         μεγαλειότητι πατρὸς ὑψίστου καὶ Ἰησοῦ
                         Χριστοῦ τοῦ μόνου υἱοῦ αὐτοῦ ἐκκλησίᾳ
@@ -1169,7 +1179,7 @@
                         Ῥωμαίων, ἀξιόθεος, ἀξιοπρεπής, ἀξιομακάριστος,
                         ἀξιέπαινος, ἀξιεπίτευκτος, ἀξίαγνος
                         καὶ προκαθημένη τῆς ἀγάπης, χριστώνυμος, <note n="2">ALS read xriste/nomoi <q>having the las of Christ.</q>
-                        </note>
+                     </note>
                         πατρώνυμος, ἣν καὶ ἀσπάζομαι ἐν
                         <pb n="226"/>
                         ὀνόματι Ἰησοῦ Χριστοῦ, υἱοῦ πατρός: κατὰ
@@ -1179,35 +1189,35 @@
                         χρώματος πλεῖστα ἐν Ἰησοῦ Χριστῷ,
                         τῷ θεῷ ἡμῶν, ἀμώμως χαίρειν.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="1">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ἐπεὶ εὐξάμενος θεῷ ἐπέτυχον ἰδεῖν ὑμῶν τὰ
+            </div>
+            <div n="1" type="chapter">
+               <div n="1" type="section">
+                  <p> Ἐπεὶ εὐξάμενος θεῷ ἐπέτυχον ἰδεῖν ὑμῶν τὰ
                         ἀξιόθεα πρόσωπα, ὡς καὶ πλέον ᾐτούμην λαβεῖν:
                         δεδεμένος γὰρ ἐν Χριστῷ Ἰησοῦ ἐλπίζω ὑμᾶς
                         ἀσπάσασθαι, ἐάνπερ θέλημα ᾖ τοῦ ἀξιωθῆναί με
                         εἰς τέλος εἶναι.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> ἡ μὲν γὰρ ἀρχὴ εὐοικονόμητός
+               </div>
+               <div n="2" type="section">
+                  <p> ἡ μὲν γὰρ ἀρχὴ εὐοικονόμητός
                         ἐστιν, ἐάνπερ χάριτος <note n="1">A, sith partial support in other suthorities, reads (??) <q>may reach the goal.</q>
-                        </note> ἐπιτύχω εἰς τὸ τὸν κλῆρόν
+                     </note> ἐπιτύχω εἰς τὸ τὸν κλῆρόν
                         μου ἀνεμποδίστως ἀπολαβεῖν. φοβοῦμαι γὰρ
                         τὴν ὑμῶν ἀγάπην, μὴ αὐτή με ἀδικήσῃ. ὑμῖν γὰρ
                         εὐχερές ἐστιν, ὃ θέλετε, ποιῆσαι: ἐμοὶ δὲ δύσκολόν
                         ἐστιν τοῦ θεοῦ ἐπιτυχεῖν, ἐάνπερ ὑμεῖς μὴ φείσησθέ μου.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="2">
-                  <div type="textpart" subtype="section" n="1">
-                     <p>
-                        <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg013:2.4">1 Thess. 2, 4</bibl>
-                        </note>
-                     </p>
-                     <p> Οὐ γὰρ θέλω ὑμᾶς ἀνθρωπαρεσκῆσαι, ἀλλὰ
+            </div>
+            <div n="2" type="chapter">
+               <div n="1" type="section">
+                  <p>
+                     <note>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg013:2.4">1 Thess. 2, 4</bibl>
+                     </note>
+                  </p>
+                  <p> Οὐ γὰρ θέλω ὑμᾶς ἀνθρωπαρεσκῆσαι, ἀλλὰ
                         θεῷ ἀρέσαι, ὥσπερ καὶ ἀρέσκετε. οὔτε γὰρ ἐγώ
                         ποτε ἕξω καιρὸν τοιοῦτον θεοῦ ἐπιτυχεῖν, οὔτε
                         ὑμεῖς, ἐὰν σιωπήσητε, κρείττονι ἔργῳ ἔχετε
@@ -1215,9 +1225,9 @@
                         λόγος θεοῦ: ἐὰν δὲ ἐρασθῆτε τῆς σαρκός μου.
                         <pb n="228"/>
                         πάλιν ἕσομαι φωνή.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> πλέον μοι μὴ παράσχησθε
+               </div>
+               <div n="2" type="section">
+                  <p> πλέον μοι μὴ παράσχησθε
                         τοῦ σπονδισθῆναι θεῷ, ὡς ἔτι θυσιαστήριον
                         ἕτοιμόν ἐστιν, ἵνα ἐν ἀγάπῃ χορὸς γενόμενοι
                         ᾅσητε τῷ πατρὶ ἐν Χριστῷ Ἰησοῦ, ὅτι τὸν ἐπίσκοπον
@@ -1225,46 +1235,46 @@
                         δύσιν ἀπὸ ἀνατολῆς μεταπεμψάμενος. καλὸν τὸ
                         δῦναι ἀπὸ κόσμου πρὸς θεόν, ἵνα εἰς αὐτὸν ἀνατείλω.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="3">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Οὐδέποτε ἐβασκάνατε οὐδενί, ἄλλους ἐδιδάξατε.
+            </div>
+            <div n="3" type="chapter">
+               <div n="1" type="section">
+                  <p> Οὐδέποτε ἐβασκάνατε οὐδενί, ἄλλους ἐδιδάξατε.
                         ἐγὼ δὲ θέλω, ἵνα κἀκεῖνα βέβαια ᾖ ἃ
                         μαθητεύοντες ἐντέλλεσθε.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> μόνον μοι δύναμιν
+               </div>
+               <div n="2" type="section">
+                  <p> μόνον μοι δύναμιν
                         αἰτεῖσθε ἔσωθέν τε καὶ ἔξωθεν, ἵνα μὴ μόνον
                         λέγω ἀλλὰ καὶ θέλω, ἵνα μὴ μόνον λέγωμαι
                         Χριστιανὸς ἀλλὰ καὶ εὑρεθῶ. ἐὰν γὰρ εὑρεθῶ,
                         καὶ λέγεσθαι δύναμαι, καὶ τότε πιστὸς εἶναι, ὅταν
                         κόσμῳ μὴ φαίνωμαι.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="3">
-                     <p> οὐδὲν φαινόμενον καλόν:
+               </div>
+               <div n="3" type="section">
+                  <p> οὐδὲν φαινόμενον καλόν:
                         ὁ γὰρ θεὸς ἡμῶν Ἰησοῦς Χριστὸς ἐν πατρὶ ὢν
                         μᾶλλον φαίνεται. οὐ πεισμονῆς τὸ ἔργον, ἀλλὰ
                         μεγέθους ἐστὶν ὁ Χριστιανισμός, ὅταν μισῆται ὑπὸ κόσμου.
                         <pb n="230"/>
-                     </p>
-                  </div>
+                  </p>
                </div>
-               <div type="textpart" subtype="chapter" n="4">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ἐγὼ γράφω πάσαις ταῖς ἐκκλησίαις, καὶ
+            </div>
+            <div n="4" type="chapter">
+               <div n="1" type="section">
+                  <p> Ἐγὼ γράφω πάσαις ταῖς ἐκκλησίαις, καὶ
                         ἐντέλλομαι πᾶσιν, ὅτι ἐγὼ ἑκὼν ὑπὲρ θεοῦ
                         ἀποθνήσκω, ἐάνπερ ὑμεῖς μὴ κωλύσητε. παρακαλῶ
                         <note>
-                           <bibl corresp="urn:cts:greekLit:tlg0098.tlg001:1.50">Cf. Zenobius Puroem. I. 50</bibl>
-                        </note> ὑμᾶς, μὴ εὔνοια ἄκαιρος γένησθέ μοι. ἄφετέ με
+                        <bibl corresp="urn:cts:greekLit:tlg0098.tlg001:1.50">Cf. Zenobius Puroem. I. 50</bibl>
+                     </note> ὑμᾶς, μὴ εὔνοια ἄκαιρος γένησθέ μοι. ἄφετέ με
                         θηρίων εἶναι βοράν, δἰ ὦν ἔνεστιν θεοῦ ἐπιτυχεῖν.
                         σῖτός εἰμι θεοῦ καὶ δἰ ὀδόντων θηρίων ἀλήθομαι,
                         ἵνα καθαρὸς ἄρτος εὑρεθῶ τοῦ Χριστοῦ. <note n="1">tou= *xristou= GL, qeou= Sg Iren. (??), om. Iren.(??) *hieron.</note>
-                     </p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> μᾶλλον
+                  </p>
+               </div>
+               <div n="2" type="section">
+                  <p> μᾶλλον
                         κολακεύσατε τὰ θηρία, ἵνα μοι τάφος γένωνται
                         καὶ μηθὲν καταλίπωσι τῶν τοῦ σώματός μου, ἵνα
                         μὴ κοιμηθεὶς βαρύς τινι γένωμαι. τότε ἔσομαι
@@ -1272,40 +1282,40 @@
                         σῶμά μου ὁ κόσμος ὄψεται. λιτανεύσατε τὸν
                         Χριστὸν <note n="2">to\n *xristo/n GL, to\n *ku/rion SA.</note> ὑπὲρ ἐμοῦ, ἵνα διὰ τῶν ὀργάνων τούτων
                         θυσία <note n="3">qeu= LSA.</note> εὑρεθῶ.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="3">
-                     <p> οὐχ ὡς Πέτρος καὶ
+               </div>
+               <div n="3" type="section">
+                  <p> οὐχ ὡς Πέτρος καὶ
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:7.29">I Cor. 7, 29</bibl>
-                        </note> Παῦλος διατάσσομαι ὑμῖν. ἐκεῖνοι ἀπόστολοι,
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:7.29">I Cor. 7, 29</bibl>
+                     </note> Παῦλος διατάσσομαι ὑμῖν. ἐκεῖνοι ἀπόστολοι,
                         ἐγὼ κατάκριτος: ἐκεῖνοι ἐλεύθεροι, ἐγὼ δὲ μέχρι
                         νῦν δοῦλος. ἀλλ̓ ἐὰν πάθω, ἀπελεύθερος γενήσομαι
                         Ἰησοῦ Χριστοῦ καὶ ἀναστήσομαι ἐν αὐτῷ
                         ἐλεύθερος. νῦν μανθάνω δεδεμένος μηδὲν ἐπιθυμεῖν.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="5">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ἀπὸ Συρίας μέχρι Ῥώμης θηριομαχῶ, διὰ
+            </div>
+            <div n="5" type="chapter">
+               <div n="1" type="section">
+                  <p> Ἀπὸ Συρίας μέχρι Ῥώμης θηριομαχῶ, διὰ
                         γῆς καὶ θαλάσσης, νυκτὸς καὶ ἧμερας, δεδεμένος
                         <pb n="232"/>
                         δέκα λεοπάρδοις, ὅ ἐστιν στρατιωτικὸν τάγμα: οἲ
                         καὶ εὐεργετούμενοι χείρους γίνονται. ἐν δὲ τοῖς
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:4.4">Cor. 4, 4</bibl>
-                        </note> ἀδικήμασιν αὐτῶν μᾶλλον μαθητεύομαι, ἀλλ̓ οὐ
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:4.4">Cor. 4, 4</bibl>
+                     </note> ἀδικήμασιν αὐτῶν μᾶλλον μαθητεύομαι, ἀλλ̓ οὐ
                         παρὰ τοῦτο δεδικαίωμαι.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> ὀναίμην τῶν θηρίων
+               </div>
+               <div n="2" type="section">
+                  <p> ὀναίμην τῶν θηρίων
                         τῶν ἐμοὶ ἡτοιμασμένων καὶ εὔχομαι σύντομά μοι
                         εὑρεθῆναι: ἃ καὶ κολακεύσω, συντόμως με καταφαγεῖν,
                         οὐχ ὥσπερ τινῶν δειλαινόμενα οὐχ ἥψαντο.
                         κἂν αὐτὰ δὲ ἄκοντα <note n="1">a)/konta G Euacb, e(ko/nta Lg, (om. SA?). Lightfoot prefers e)ko/nta <q>silling,</q> shich must be an accusative referring to Ignatius.</note> μὴ θελήσῃ, ἐγὼ προσβιάσομαι.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="3">
-                     <p> συγγνώμην μοι ἔχετε: τί μοι συμφέρει,
+               </div>
+               <div n="3" type="section">
+                  <p> συγγνώμην μοι ἔχετε: τί μοι συμφέρει,
                         ἐγὼ γινώσκω, νῦν ἄρχομαι μαθητὴς εἶναι. μηθέν
                         με ζηλώσαι τῶν ὁρατῶν καὶ ἀοράτων, ἵνα Ἰησοῦ
                         Χριστοῦ ἐπιτύχω. πῦρ καὶ σταυρὸς θηρίων τε
@@ -1314,147 +1324,145 @@
                         κακαὶ κολάσεις τοῦ διαβόλου ἐπ̓ ἐμὲ ἐρχέσθωσαν,
                         μόνον ἵνα Ἰησοῦ Χριστοῦ ἐπιτύχω.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="6">
-                  <div type="textpart" subtype="section" n="1">
-                     <p>
-                        <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:9.15">Cor. 9, 15</bibl>
-                        </note>
-                     </p>
-                     <p> Οὐδέν μοι ὠφελήσει τὰ πέρατα τοῦ κόσμου
+            </div>
+            <div n="6" type="chapter">
+               <div n="1" type="section">
+                  <p>
+                     <note>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:9.15">Cor. 9, 15</bibl>
+                     </note>
+                  </p>
+                  <p> Οὐδέν μοι ὠφελήσει τὰ πέρατα τοῦ κόσμου
                         οὐδὲ αἱ βασιλεῖαι τοῦ αἰῶνος τούτου. καλόν μοι
                         ἀποθανεῖν εἰς Χριστὸν Ἰησοῦν, ἢ βασιλεύειν τῶν
                         περάτων τῆς γῆς. ἐκεῖνον ζητῶ, τὸν ὑπὲρ ἡμῶν
                         ἀποθανόντα: ἐκεῖνον θέλω, τὸν δἰ ἡμᾶς ἀναστάντα.
                         ὁ δὲ τοκετός μοι ἐπίκειται.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> σύγγνωτέ μοι,
+               </div>
+               <div n="2" type="section">
+                  <p> σύγγνωτέ μοι,
                         <pb n="234"/>
                         ἀδελφοί: μὴ ἐμποδίσητέ μοι ζῆσαι, μὴ θελήσητε
                         με ἀποθανεῖν: τὸν τοῦ θεοῦ θέλοντα εἶναι κόσμῳ
                         μὴ χαρίσησθε, μηδὲ ὕλῃ ἐξαπατήσητε: <note n="1">mhde\ u(/lh| e)capath/shte is omitted in Gg; Lightfoot thinks that LSA imply kolakeu/shte rather than e)capath/shte.</note> ἄφετέ με
                         καθαρὸν φῶς λαβεῖν: ἐκεῖ παραγενόμενος ἄνθρωπος
                         ἔσομαι.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="3">
-                     <p> ἐπιτρέψατέ μοι μιμητὴν εἶναι
+               </div>
+               <div n="3" type="section">
+                  <p> ἐπιτρέψατέ μοι μιμητὴν εἶναι
                         τοῦ πάθους τοῦ θεοῦ μου. εἴ τις αὐτὸν ἐν ἑαυτῷ
                         ἔχει, νοησάτω ὃ θέλω, καὶ συμπαθείτω μοι
                         εἰδὼς τὰ συνέχοντά με.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="7">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ὁ ἄρχων τοῦ αἰῶνος τούτου διαρπάσαι με
+            </div>
+            <div n="7" type="chapter">
+               <div n="1" type="section">
+                  <p> Ὁ ἄρχων τοῦ αἰῶνος τούτου διαρπάσαι με
                         βούλεται καὶ τὴν εἰς θεόν μου γνώμην διαφθεῖραι.
                         μηδεὶς οὖν τῶν παρόντων ὑμῶν βοηθείτω αὐτῷ:
                         μᾶλλον ἐμοῦ γίνεσθε, τουτέστιν τοῦ θεοῦ. μὴ
                         λαλεῖτε Ἰησοῦν Χριστόν, κόσμον δὲ ἐπιθυμεῖτε.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> βασκανία ἐν ὑμῖν μὴ κατοικείτω. μηδ̓ ἂν ἐγὼ
+               </div>
+               <div n="2" type="section">
+                  <p> βασκανία ἐν ὑμῖν μὴ κατοικείτω. μηδ̓ ἂν ἐγὼ
                         παρὼν παρακαλῶ ὑμᾶς, πείσθητέ μοι: τούτοις δὲ
                         μᾶλλον πείσθητε, οἷς γράφω ὑμῖν. ζῶν γὰρ
                         γράφω ὑμῖν, ἐρῶν τοῦ ἀποθανεῖν. ὁ ἐμὸς ἔρως
                         ἐσταύρωται, καὶ οὐκ ἔστιν ἐν ἐμοὶ πῦρ φιλόυλον:
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg004:4.10 cts:urn:greekLit:tlg0031.tlg004:7.38">Joh. 4, 10; 7, 38</bibl>
-                        </note> ὕδωρ δὲ ζῶν καὶ λαλοῦν <note n="2">The text is much exranded in the later authorities: Lightfoot is inclined to emend kai\ lalou=n to a(llo/menon, shich is found in g, as a referenes to Joh. 4, 14.</note> ἐν ἐμοί, ἔσωθέν μοι λέγον:
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg004:4.10 cts:urn:greekLit:tlg0031.tlg004:7.38">Joh. 4, 10; 7, 38</bibl>
+                     </note> ὕδωρ δὲ ζῶν καὶ λαλοῦν <note n="2">The text is much exranded in the later authorities: Lightfoot is inclined to emend kai\ lalou=n to a(llo/menon, shich is found in g, as a referenes to Joh. 4, 14.</note> ἐν ἐμοί, ἔσωθέν μοι λέγον:
                         Δεῦρο πρὸς τὸν πατέρα.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="3">
-                     <p> οὐχ ἥδομαι τροφῇ
+               </div>
+               <div n="3" type="section">
+                  <p> οὐχ ἥδομαι τροφῇ
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg004:6.33">Joh. 6, 33</bibl>
-                        </note> φθορᾶς οὐδὲ ἡδοναῖς τοῦ βίου τούτου. ἄρτον θεοῦ
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg004:6.33">Joh. 6, 33</bibl>
+                     </note> φθορᾶς οὐδὲ ἡδοναῖς τοῦ βίου τούτου. ἄρτον θεοῦ
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg004:7.42 cts:urn:greekLit:tlg0031.tlg006:1.3 cts:urn:greekLit:tlg0031.tlg016:2.8">Joh. 7, 42; Rom. 1, 3; II Tim, 2, 8</bibl>
-                        </note> θέλω, ὅ ἐστιν σὰρξ Ἰησοῦ <note n="3">*)ihsou= GLA, om. *sg.</note> Χριστοῦ, τοῦ ἐκ
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg004:7.42 cts:urn:greekLit:tlg0031.tlg006:1.3 cts:urn:greekLit:tlg0031.tlg016:2.8">Joh. 7, 42; Rom. 1, 3; II Tim, 2, 8</bibl>
+                     </note> θέλω, ὅ ἐστιν σὰρξ Ἰησοῦ <note n="3">*)ihsou= GLA, om. *sg.</note> Χριστοῦ, τοῦ ἐκ
                         σπέρματος Δαυείδ, καὶ πόμα θέλω τὸ αἷμα αὐτοῦ,
                         ὅ ἐστιν ἀγάπη ἄφθαρτος.
                         <pb n="236"/>
-                     </p>
-                  </div>
+                  </p>
                </div>
-               <div type="textpart" subtype="chapter" n="8">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Οὐκέτι θέλω κατὰ ἀνθρώπους ζῆν. τοῦτο
+            </div>
+            <div n="8" type="chapter">
+               <div n="1" type="section">
+                  <p> Οὐκέτι θέλω κατὰ ἀνθρώπους ζῆν. τοῦτο
                         δὲ ἔσται, ἐὰν ὑμεῖς θελήσητε. θελήσατε, ἵνα καὶ
                         ὑμεῖς θεληθῆτε.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> δἰ ὀλίγων γραμμάτων αἰτοῦμαι
+               </div>
+               <div n="2" type="section">
+                  <p> δἰ ὀλίγων γραμμάτων αἰτοῦμαι
                         ὑμᾶς: πιστεύσατέ μοι. Ἰησοῦς δὲ Χριστὸς
                         ὑμῖν ταῦτα φανερώσει, ὅτι ἀληθῶς λέγω: τὸ
                         ἀψευδὲς στόμα, ἐν ᾧ ὁ πατὴρ ἐλάλησεν ἀληθῶς.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="3">
-                     <p> αἰτήσασθε περὶ ἐμοῦ, ἵνα ἐπιτύχω. οὐ κατὰ
+               </div>
+               <div n="3" type="section">
+                  <p> αἰτήσασθε περὶ ἐμοῦ, ἵνα ἐπιτύχω. οὐ κατὰ
                         σάρκα ὑμῖν ἔγραψα, ἀλλὰ κατὰ γνώμην θεοῦ. ἐὰν
                         πάθω, ἠθελήσατε: ἐὰν ἀποδοκιμασθῶ, ἐμισήσατε.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="9">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Μνημονεύετε ἐν τῇ προσευχῇ ὑμῶν τῆς ἐν
+            </div>
+            <div n="9" type="chapter">
+               <div n="1" type="section">
+                  <p> Μνημονεύετε ἐν τῇ προσευχῇ ὑμῶν τῆς ἐν
                         Συρίᾳ ἐκκλησίας, ἥτις ἀντὶ ἐμοῦ ποιμένι τῷ θεῷ
                         χρῆται. μόνος αὐτὴν Ἰησοῦς Χριστὸς ἐπισκοπήσει
                         καὶ ἡ ὑμῶν ἀγάπη.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> ἐγὼ δὲ αἰσχύνομαι
+               </div>
+               <div n="2" type="section">
+                  <p> ἐγὼ δὲ αἰσχύνομαι
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:15.8-15.9">I Cor. 15, 8, 0</bibl>
-                        </note> ἐξ αὐτῶν λέγεσθαι: οὐδὲ γὰρ ἄξιός εἰμι, ὣν ἔσχατος
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:15.8-15.9">I Cor. 15, 8, 0</bibl>
+                     </note> ἐξ αὐτῶν λέγεσθαι: οὐδὲ γὰρ ἄξιός εἰμι, ὣν ἔσχατος
                         αὐτῶν καὶ ἔκτρωμα: ἀλλ̓ ἠλέημαί τις
                         εἶναι, ἐὰν θεοῦ ἐπιτύχω.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="3">
-                     <p> ἀσπάζεται ὑμᾶς τὸ
+               </div>
+               <div n="3" type="section">
+                  <p> ἀσπάζεται ὑμᾶς τὸ
                         ἐμὸν πνεῦμα καὶ ἡ ἀγάπη τῶν ἐκκλησιῶν τῶν
                         δεξαμένων με εἰς ὄνομα Ἰησοῦ Χριστοῦ, οὐχ ὡς
                         παροδεύοντα. καὶ γὰρ αἱ μὴ προσήκουσαί μοι τῇ
                         ὁδῷ τῇ κατὰ σάρκα, κατὰ πόλιν με προῆγον.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="10">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Γράφω δὲ ὑμῖν ταῦτα ἀπὸ Σμύρνης δἰ
+            </div>
+            <div n="10" type="chapter">
+               <div n="1" type="section">
+                  <p> Γράφω δὲ ὑμῖν ταῦτα ἀπὸ Σμύρνης δἰ
                         Ἐφεσίων τῶν ἀξιομακαρίστων. ἔστιν δὲ καὶ ἅμα
                         ἐμοὶ σὺν ἄλλοις πολλοῖς καὶ Κρόκος, τὸ ποθητόν
                         <pb n="238"/>
                         μοι ὄνομα.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> περὶ τῶν προελθόντων με ἀπὸ
+               </div>
+               <div n="2" type="section">
+                  <p> περὶ τῶν προελθόντων με ἀπὸ
                         Συρίας εἰς Ῥώμην εἰς δόξαν τοῦ θεοῦ πιστεύω
                         ὑμᾶς ἐπεγνωκέναι, οἷς καὶ δηλώσατε ἐγγύς με ὄντα.
                         πάντες γάρ εἰσιν ἄξιοι τοῦ θεοῦ καὶ ὑμῶν: οὕς
                         πρέπον ὑμῖν ἐστὶν κατὰ πάντα ἀναπαῦσαι.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="3">
-                     <p>
+               </div>
+               <div n="3" type="section">
+                  <p>
                         ἔγραψα δὲ ὑμῖν ταῦτα τῇ πρὸ ἐννέα καλανδῶν
                         Σεπτεμβρίων. ἔρρωσθε εἰς τέλος ἐν ὑπομονῇ
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg014:3.5">II Thses 3, 5</bibl>
-                        </note> Ἰησοῦ Χριστοῦ.</p>
-                  </div>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg014:3.5">II Thses 3, 5</bibl>
+                     </note> Ἰησοῦ Χριστοῦ.</p>
                </div>
             </div>
-            
-            
-            <div type="textpart" subtype="epistle" n="5">
-               <head>ΦΙΛΑΔΕΛΦΕΥΣΙΝ ΙΓΝΑΤΙΟΣ</head>
-               <div type="textpart" subtype="chapter" n="praef">
-                  <div type="textpart" subtype="section" n="1">
-                     <p>
+         </div>
+         <div n="5" type="epistle">
+            <head>ΦΙΛΑΔΕΛΦΕΥΣΙΝ ΙΓΝΑΤΙΟΣ</head>
+            <div n="praef" type="chapter">
+               <div n="1" type="section">
+                  <p>
                         Ἰγνάτιος, ὁ καὶ Θεοφόρος, ἐκκλησίᾳ θεοῦ
                         πατρὸς καὶ κυρίου Ἰησοῦ Χριστοῦ τῇ οὔσῃ
                         ἐν Φιλαδελφίᾳ τῆς Ἀσίας, ἠλεημένῃ καὶ
@@ -1469,86 +1477,86 @@
                         Ἰησοῦ Χριστοῦ, οὓς κατὰ τὸ ἴδιον θέλημα
                         ἐστήριξεν ἐν βεβαιωσύνῃ τῷ ἁγίῳ αὐτοῦ πνεύματι.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="1">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ὃν ἐπίσκοπον ἔγνων οὐκ ἀφ̓ ἑαυτοῦ οὐδὲ δἰ
+            </div>
+            <div n="1" type="chapter">
+               <div n="1" type="section">
+                  <p> Ὃν ἐπίσκοπον ἔγνων οὐκ ἀφ̓ ἑαυτοῦ οὐδὲ δἰ
                         ἀνθρώπων κεκτῆσθαι τὴν διακονίαν τὴν εἰς τὸ
                         <pb n="240"/>
                         κοινὸν ἀνήκουσαν οὐδὲ κατὰ κενοδοξίαν, ἀλλ̓ ἐν
                         ἀγάπῃ θεοῦ πατρὸς καὶ κυρίου Ἰησοῦ Χριστοῦ:
                         οὗ καταπέπληγμαι τὴν ἐπιείκειαν, ὃς σιγῶν πλείονα
                         δύναται τῶν μάταια <note n="1">ma/taia GL, om. A, ple/on g. Lightfoot favours the reading of A.</note> λαλούντων.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> συνευρύθμισται
+               </div>
+               <div n="2" type="section">
+                  <p> συνευρύθμισται
                         γαρ ταῖς ἐντολαῖς ὡς χορδαῖς κιθάρα.
                         διὸ μακαρίζει μου ἡ ψυχὴ τὴν εἰς θεὸν αὐτοῦ
                         γνώμην, ἐπιγνοὺς ἐνάρετον καὶ τέλειον οὖσαν, τὸ
                         ἀκίνητον αὐτοῦ καὶ τὸ ἀόργητον αὐτοῦ ἐν πάσῃ
                         ἐπιεικείᾳ θεοῦ ζῶντος.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="2">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Τέκνα οὖν φωτὸς ἀληθείας, <note n="2">fwto\s kai\ a)lhqei/as A <q>light and truth </q>; Lightfoot thinks that fwto/s is an oarly gloss.</note> φεύγετε τὸν
+            </div>
+            <div n="2" type="chapter">
+               <div n="1" type="section">
+                  <p> Τέκνα οὖν φωτὸς ἀληθείας, <note n="2">fwto\s kai\ a)lhqei/as A <q>light and truth </q>; Lightfoot thinks that fwto/s is an oarly gloss.</note> φεύγετε τὸν
                         μερισμὸν καὶ τὰς κακοδιδασκαλίας: ὅπου δὲ ὁ
                         ποιμήν ἐστιν, ἐκεῖ ὡς πρόβατα ἀκολουθεῖτε.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p>
+               </div>
+               <div n="2" type="section">
+                  <p>
                         πολλοὶ γὰρ λύκοι ἀξιόπιστοι ἡδονῇ κακῇ αἰχμαλωτίζουσιν
                         τοὺς θεοδρόμους: ἀλλ̓ ἐν τῇ ἑνότητι
                         ὑμῶν οὐχ ἕξουσιν τόπον.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="3">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ἀπέχεσθε τῶν κακῶν βοτανῶν, ἅστινας οὐ
+            </div>
+            <div n="3" type="chapter">
+               <div n="1" type="section">
+                  <p> Ἀπέχεσθε τῶν κακῶν βοτανῶν, ἅστινας οὐ
                         γεωργεῖ Ἰησοῦς Χριστός, διὰ τὸ μὴ εἶναι αὐτοὺς
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg001:15.13">Mt. 15, 13</bibl>
-                        </note> φυτείαν πατρός: οὐχ ὅτι παῤ ὑμῖν μερισμὸν
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg001:15.13">Mt. 15, 13</bibl>
+                     </note> φυτείαν πατρός: οὐχ ὅτι παῤ ὑμῖν μερισμὸν
                         εὗρον, ἀλλ̓ ὰποδιῡλισμόν.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> ὅσοι γὰρ θεοῦ εἰσιν
+               </div>
+               <div n="2" type="section">
+                  <p> ὅσοι γὰρ θεοῦ εἰσιν
                         καὶ Ἰησοῦ Χριστοῦ, οὗτοι μετὰ τοῦ ἐπισκόπου
                         εἰσίν. καὶ ὅσοι ἂν μετανοήσαντες ἔλθωσιν ἐπὶ τὴν
                         ἑνότητα τῆς ἐκκλησίας, καὶ οὗτοι θεοῦ ἔσονται,
                         <pb n="242"/>
-                        <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:6.9 cts:urn:greekLit:tlg0031.tlg007:6.10">I Cor. 6, 9, 10</bibl>
-                        </note> ἵνα ὦσιν κατὰ Ἰησοῦν Χριστὸν ζῶντες.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="3">
-                     <p> μὴ
+                     <note>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:6.9 cts:urn:greekLit:tlg0031.tlg007:6.10">I Cor. 6, 9, 10</bibl>
+                     </note> ἵνα ὦσιν κατὰ Ἰησοῦν Χριστὸν ζῶντες.</p>
+               </div>
+               <div n="3" type="section">
+                  <p> μὴ
                         πλανᾶσθε, ἀδελφοί μου: εἴ τις σχίζοντι ἀκολουθεῖ.
                         βασιλείαν θεοῦ οὐ κληρονομεῖ: εἴ τις ἐν
                         ἀλλοτρίᾳ γνώμῃ περιπατεῖ, οὗτος τῷ πάθει οὐ συγκατατίθεται.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="4">
-                  <div type="textpart" subtype="section" n="1">
-                     <p>
-                        <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:10.16 cts:urn:greekLit:tlg0031.tlg007:10.17">I Cor. 10, 16, 17</bibl>
-                        </note> Σπουδάσατε οὖν μιᾷ εὐχαριστίᾳ χρῆσθαι: μία
+            </div>
+            <div n="4" type="chapter">
+               <div n="1" type="section">
+                  <p>
+                     <note>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:10.16 cts:urn:greekLit:tlg0031.tlg007:10.17">I Cor. 10, 16, 17</bibl>
+                     </note> Σπουδάσατε οὖν μιᾷ εὐχαριστίᾳ χρῆσθαι: μία
                         γὰρ σὰρξ τοῦ κυρίου ἡμῶν Ἰησοῦ Χριστοῦ καὶ ἓν
                         ποτήριον εἰς ἕνωσιν τοῦ αἵματος αὐτοῦ, ἓν θυσιαστήριον,
                         ὡς εἷς ἐπίσκοπος ἅμα τῷ πρεσβυτερίῳ
                         καὶ διακόνοις τοῖς συνδούλοις μου: ἵνα, ὃ ἐὰν
                         πράσσητε, κατὰ θεὸν πράσσητε.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="5">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ἀδελφοί μου, λίαν ἐκκέχυμαι ἀγαπῶν ὑμᾶς
+            </div>
+            <div n="5" type="chapter">
+               <div n="1" type="section">
+                  <p> Ἀδελφοί μου, λίαν ἐκκέχυμαι ἀγαπῶν ὑμᾶς
                         καὶ ὑπεραγαλλόμενος ἀσφαλίζομαι ὑμᾶς: οὐκ ἐγὼ
                         δέ, ἀλλ̓ Ἰησοῦς Χριστός, ἐν ᾧ δεδεμένος φοβοῦμαι
                         μᾶλλον, ὡς ἔτι ὢν ἀναπάρτιστος: ἀλλ̓ ἡ προσευχὴ
@@ -1556,9 +1564,9 @@
                         ἠλεήθην ἐπιτύχω, προσφυγὼν τῷ εὐαγγελίῳ ὡς
                         σαρκὶ Ἰησοῦ, καὶ τοῖς ἀποστόλοις ὡς πρεσβυτερίῳ
                         ἐκκλησίας.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> καὶ τοὺς προφήτας δὲ ἀγαπῶμεν,
+               </div>
+               <div n="2" type="section">
+                  <p> καὶ τοὺς προφήτας δὲ ἀγαπῶμεν,
                         διὰ τὸ καὶ αὐτοὺς εἰς τὸ εὐαγγέλιον κατηγγελκέναι
                         καὶ εἰς αὐτὸν ἐλπίζειν καὶ αὐτὸν ἀναμένειν, ἐν
                         ᾦ καὶ πιστεύσαντες ἐσώθησαν, ἐν ἑνότητι Ἰησοῦ
@@ -1567,52 +1575,52 @@
                         ἅγιοι, ὑπὸ Ἰησοῦ Χριστοῦ μεμαρτυρημένοι καὶ
                         συνηριθμημένοι ἐν τῷ εὐαγγελίῳ τῆς κοινῆς ἐλπίδος.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="6">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ἐὰν δέ τις ἰουδαϊσμὸν ἑρμηνεύῃ ὑμῖν, μὴ
+            </div>
+            <div n="6" type="chapter">
+               <div n="1" type="section">
+                  <p> Ἐὰν δέ τις ἰουδαϊσμὸν ἑρμηνεύῃ ὑμῖν, μὴ
                         ἀκούετε αὐτοῦ. ἄμεινον γάρ ἐστιν παρὰ ἀνδρὸς
                         περιτομὴν ἔχοντος χριστιανισμὸν ἀκούειν, ἢ παρὰ
                         ἀκροβύστου ἰουδαῖσμόν. ἐὰν δὲ ἀμφότεροι περὶ
                         Ἰησοῦ Χριστοῦ μὴ λαλῶσιν, οὗτοι ἐμοὶ στῆλαί
                         εἰσιν καὶ τάφοι νεκρῶν, ἐφ̓ οἷς γέγραπται μόνον
                         ὀνόματα ἀνθρώπων.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> φεύγετε οὖν τὰς κακοτεχνίας
+               </div>
+               <div n="2" type="section">
+                  <p> φεύγετε οὖν τὰς κακοτεχνίας
                         καὶ ἐνέδρας τοῦ ἄρχοντος τοῦ αἰῶνος
                         τούτου, μήποτε θλιβέντες τῇ γνώμῃ αὐτοῦ ἐξασθενήσετε
                         ἐν τῇ ἀγάπῃ: ἀλλὰ πάντες ἐπὶ τὸ αὐτὸ
                         γίνεσθε ἐν ἀμερίστῳ καρδίᾳ.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="3">
-                     <p> εὐχαριστῶ δὲ
+               </div>
+               <div n="3" type="section">
+                  <p> εὐχαριστῶ δὲ
                         τῷ θεῷ μου, ὅτι εὐσυνείδητός εἰμι ἐν ὑμῖν καὶ οὐκ
                         ἔχει τις καυχήσασθαι οὔτε λάθρα οὔτε φανερῶς,
                         ὅτι ἐβάρησά τινα ἐν μικρῷ ἢ ἐν μεγάλῳ. καὶ
                         πᾶσι δέ, ἐν οἷς ἐλάλησα, εὔχομαι, ἵνα μὴ εἰς
                         μαρτύριον αὐτὸ κτήσωνται.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="7">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Εἰ γὰρ καὶ κατὰ σάρκα μέ τινες ἠθέλησαν
+            </div>
+            <div n="7" type="chapter">
+               <div n="1" type="section">
+                  <p> Εἰ γὰρ καὶ κατὰ σάρκα μέ τινες ἠθέλησαν
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0527.tlg032:3.8">Job. 3, 8</bibl>
-                        </note> πλανῆσαι, ἀλλὰ τὸ πνεῦμα οὐ πλανᾶται ἀπὸ
+                        <bibl corresp="cts:urn:greekLit:tlg0527.tlg032:3.8">Job. 3, 8</bibl>
+                     </note> πλανῆσαι, ἀλλὰ τὸ πνεῦμα οὐ πλανᾶται ἀπὸ
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:2.10">I Cor. 2, 10</bibl>
-                        </note> θεοῦ ὄν. οἶδεν γάρ, πόθεν ἔρχεται καὶ ποῦ ὑπάγει,
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:2.10">I Cor. 2, 10</bibl>
+                     </note> θεοῦ ὄν. οἶδεν γάρ, πόθεν ἔρχεται καὶ ποῦ ὑπάγει,
                         καὶ τὰ κρυπτὰ ἐλέγχει. ἐκραύγασα μεταξὺ ὤν,
                         ἐλάλουν μεγάλῃ φωνῇ, θεοῦ φωνῇ: Τῷ ἐπισκοπῳ
                         προσέχετε καὶ τῷ πρεσβυτερίῳ καὶ διακόνοις.
                         <pb n="246"/>
-                     </p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> οἱ δὲ ὑποπτεύσαντές με ὡς προειδότα τὸν
+                  </p>
+               </div>
+               <div n="2" type="section">
+                  <p> οἱ δὲ ὑποπτεύσαντές με ὡς προειδότα τὸν
                         μερισμόν τινων λέγειν ταῦτα: μάρτυς δέ μοι,
                         ἐν ᾧ δέδεμαι, ὅτι ἀπὸ σαρκὸς ἀνθρωπίνης οὐκ
                         ἔγνων. τὸ δὲ πνεῦμα ἐκήρυσσεν λέγον τάδε:
@@ -1621,20 +1629,20 @@
                         τοὺς μερισμοὺς φεύγετε, μιμηταὶ γίνεσθε Ἰησοῦ
                         Χριστοῦ, ὡς καὶ αὐτὸς τοῦ πατρὸς αὐτοῦ.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="8">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ἐγὼ μὲν οὖν τὸ ἴδιον ἐποίουν ὡς ἄνθρωπος
+            </div>
+            <div n="8" type="chapter">
+               <div n="1" type="section">
+                  <p> Ἐγὼ μὲν οὖν τὸ ἴδιον ἐποίουν ὡς ἄνθρωπος
                         εἰς ἕνωσιν κατηρτισμένος. οὗ δὲ μερισμός ἐστιν
                         καὶ ὀργή. θεὸς οὐ κατοικεῖ. πᾶσιν οὖν μετανοοῦσιν
                         ἀφίει ὁ κύριος, ἐὰν μετανοήσωσιν εἰς
                         ἑνότητα θεοῦ καὶ συνέδριον τοῦ ἐπισκόπου. πιστεύω
                         τῇ χάριτι Ἰησοῦ Χριστοῦ, ὃς λύσει ἀφ̓
                         ὑμῶν πάντα δεσμόν.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> παρακαλῶ δὲ ὑμᾶς μηδὲν
+               </div>
+               <div n="2" type="section">
+                  <p> παρακαλῶ δὲ ὑμᾶς μηδὲν
                         κατ̓ ἐριθείαν πράσσειν, <note n="1">*pra/ssein GL, pra/ssete GA.</note> ἀλλὰ κατὰ χριστομαθίαν.
                         ἐπεὶ ἤκουσά τινων λεγόντων, ὅτι ἐὰν μὴ ἐν τοῖς
                         ἀρχείοις εὕρω ἐν τῷ εὐαγγελίῳ οὐ πιστεύω: καὶ
@@ -1644,52 +1652,52 @@
                         ὁ θάνατος καὶ ἡ ἀνάστασις αὐτοῦ καὶ ἡ πίστις
                         ἡ δἰ αὐτοῦ, ἐν οἶς θέλω ἐν τῇ προσευχῇ ὑμῶν δικαιωθῆναι.
                         <pb n="248"/>
-                     </p>
-                  </div>
+                  </p>
                </div>
-               <div type="textpart" subtype="chapter" n="9">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Καλοὶ καὶ οἱ ἱερεῖς, κρεῖσσον δὲ ὁ ἀρχιερεὺς
+            </div>
+            <div n="9" type="chapter">
+               <div n="1" type="section">
+                  <p> Καλοὶ καὶ οἱ ἱερεῖς, κρεῖσσον δὲ ὁ ἀρχιερεὺς
                         ὁ πεπιστευμένος τὰ ἅγια τῶν ἁγίων, ὃς μόνος
                         πεπίστευται τὰ κρυπτὰ τοῦ θεοῦ: αὐτὸς ὢν θύρα
                         τοῦ πατρός, δἰ ἧς εἰσέρχονται Ἀβραὰμ καὶ
                         Ἰσαὰκ καὶ Ἰακὼβ καὶ οἱ προφῆται καὶ ἀπόστολοι
                         καὶ ἡ ἐκκλησία. πάντα ταῦτα εἰς ἑνότητα θεοῦ.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> ἐξαίρετον δέ τι ἔχει τὸ εὐαγγέλιον, τὴν παρουσίαν
+               </div>
+               <div n="2" type="section">
+                  <p> ἐξαίρετον δέ τι ἔχει τὸ εὐαγγέλιον, τὴν παρουσίαν
                         τοῦ σωτῆρος, κυρίου ἡμῶν Ἰησοῦ Χριστοῦ,
                         τὸ πάθος αὐτοῦ, καὶ τὴν ἀνάστασιν. οἱ γὰρ ἀγαπητοὶ
                         προφῆται κατήγγειλαν εἰς αὐτόν: τὸ δὲ
                         εὐαγγέλιον ἀπάρτισμά ἐστιν ἀφθαρσίας. πάντα
                         ὁμοῦ καλά ἐστιν, ἐὰν ἐν ἀγάπῃ πιστεύητε.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="10">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ἐπειδὴ κατὰ τὴν προσευχὴν ὑμῶν καὶ κατὰ
+            </div>
+            <div n="10" type="chapter">
+               <div n="1" type="section">
+                  <p> Ἐπειδὴ κατὰ τὴν προσευχὴν ὑμῶν καὶ κατὰ
                         τὰ σπλάγχνα, ἃ ἔχετε ἐν Χριστῷ Ἰησοῦ, ἀπηγγέλη
                         μοι εἰρηνεύειν τὴν ἐκκλησίαν τὴν ἐν Ἀντιοχείᾳ
                         τῆς Συρίας, πρέπον ἐστὶν ὑμῖν ὡς ἐκκλησίᾳ θεοῦ,
                         χειροτονῆσαι διάκονον εἰς τὸ πρεσβεῦσαι ἐκεῖ
                         θεοῦ πρεσβείαν, εἰς τὸ συγχαρῆναι αὐτοῖς ἐπὶ τὸ
                         αὐτὸ γενομένοις καὶ δοξάσαι τὸ ὄνομα.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> μακάριος
+               </div>
+               <div n="2" type="section">
+                  <p> μακάριος
                         ἐν Ἰησοῦ Χριστῷ, ὃς καταξιωθήσεται τῆς
                         τοιαύτης διακονίας, καὶ ὑμεῖς δοξασθήσεσθε. θέλουσιν
                         δὲ ὑμῖν οὐκ ἔστιν ἀδύνατον ὑπὲρ ὀνόματος
                         θεοῦ, ὡς καὶ αἱ ἔγγιστα ἐκκλησίαι ἔπεμψαν
                         ἐπισκόπους, αἱ δὲ πρεσβυτέρους καὶ διακόνους.
                         <pb n="250"/>
-                     </p>
-                  </div>
+                  </p>
                </div>
-               <div type="textpart" subtype="chapter" n="11">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Περὶ δὲ Φίλωνος τοῦ διακόνου ἀπὸ Κιλικίας,
+            </div>
+            <div n="11" type="chapter">
+               <div n="1" type="section">
+                  <p> Περὶ δὲ Φίλωνος τοῦ διακόνου ἀπὸ Κιλικίας,
                         ἀνδρὸς μεμαρτυρημένου, ὃς καὶ νῦν ἐν λόγῳ θεοῦ
                         ὑπηρετεῖ μοι ἅμα Ῥέῳ <note n="1">Lighfoot emends to *(re/w| on the grounds that this form is justified by inscriptions, shile *(re/w| is unknosn, and g shich has *gai/w| implies this reading.</note> Ἀγαθόποδι, ἀνδρὶ ἐκλεκτῷ,
                         ὃς ἀπὸ Συρίας μοι ἀκολουθεῖ ἀποταξάμενος τῷ
@@ -1697,24 +1705,22 @@
                         εὐχαριστῶ ὑπὲρ ὑμῶν, ὅτι ἐδέξασθε αὐτούς, ὡς
                         καὶ ὑμᾶς ὁ κύριος: οἱ δὲ ἀτιμάσαντες αὐτοὺς
                         λυτρωθείησαν ἐν τῇ χάριτι τοῦ Ἰησοῦ Χριστοῦ.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> ἀσπάζεται ὑμᾶς ἡ ἀγάπη τῶν ἀδελφῶν τῶν ἐν
+               </div>
+               <div n="2" type="section">
+                  <p> ἀσπάζεται ὑμᾶς ἡ ἀγάπη τῶν ἀδελφῶν τῶν ἐν
                         Τρωάδι: ὅθεν καὶ γράφω ὑμῖν διὰ Βούρρου πεμφθέντος
                         ἄμα ἐμοὶ ἀπὸ Ἐφεσίων καὶ Σμυρναίων εἰς
                         λόγον τιμῆς. τιμήσει αὐτοὺς ὁ κύριος Ἰησοῦς
                         Χριστός, εἰς ὃν ἐλπίζουσιν σαρκί, ψυχῇ, πνεύματι,
                         πίστει, ἀγάπῃ, ὁμονοίᾳ, ἔρρωσθε ἐν Χριστῷ
                         Ἰησοῦ, τῇ κοινῇ ἐλπίδι ἡμῶν.</p>
-                  </div>
                </div>
             </div>
-            
-            
-            <div type="textpart" subtype="epistle" n="6">
-               <head>ΣΜΥΡΝΑΙΟΙΣ ΙΓΝΑΤΙΟΣ</head>
-                  <div type="textpart" subtype="chapter" n="praef">
-               <div type="textpart" subtype="section" n="1">
+         </div>
+         <div n="6" type="epistle">
+            <head>ΣΜΥΡΝΑΙΟΙΣ ΙΓΝΑΤΙΟΣ</head>
+            <div n="praef" type="chapter">
+               <div n="1" type="section">
                   <p>Ἰγνάτιος, ὁ καὶ Θεοφόρος, ἐκκλησίᾳ θεοῦ
 πατρὸς καὶ τοῦ ἠγαπημένου Ἰησοῦ Χριστοῦ,
 <note>
@@ -1728,8 +1734,8 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="1">
-               <div type="textpart" subtype="section" n="1">
+            <div n="1" type="chapter">
+               <div n="1" type="section">
                   <p> Δοξάζω Ἰησοῦν Χριστὸν τὸν θεὸν τὸν οὕτως
 ὑμᾶς σοφίσαντα: ἐνόησα γὰρ ὑμᾶς κατηρτισμένους
 ἐν ἀκινήτῳ πίστει, ὥσπερ καθηλωμένους
@@ -1746,23 +1752,23 @@
                      </note> ὑπὸ Ἰωάννου, ἵνα πληρωθῇ πᾶσα δικαιοσύνη ὑπ̓
 αὐτοῦ:</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> ἀληθῶς ἐπὶ Ποντίου Πιλάτου καὶ
 Ἡρώδου τετράρχου καθηλωμένον ὑπὲρ ἡμῶν ἐν
 σαρκί, ἀφ̓ οὖ καρποῦ ἡμεῖς ἀπὸ τοῦ θεομακαρίστου
 <note>
-   <bibl corresp="cts:urn:greekLit:tlg0527.tlg048:6.26 cts:urn:greekLit:tlg0527.tlg048:11.12 cts:urn:greekLit:tlg0527.tlg048:49.22 cts:urn:greekLit:tlg0527.tlg048:62.10">Is. 6, 26 (11, 12; 49, 22; 62, 10)</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0527.tlg048:6.26 cts:urn:greekLit:tlg0527.tlg048:11.12 cts:urn:greekLit:tlg0527.tlg048:49.22 cts:urn:greekLit:tlg0527.tlg048:62.10">Is. 6, 26 (11, 12; 49, 22; 62, 10)</bibl>
                      </note> αὐτοῦ πάθους, ἵνα ἄρῃ σύσσημον εἰς τοὺς
 αἰῶνας διὰ τῆς ἀναστάσεως εἰς τοὺς ἁγίους καὶ
 πιστοὺς αὐτοῦ, εἴτε ἐν Ἰουδαίοις εἴτε ἐν ἔθνεσιν,
 <note>
-   <bibl corresp="cts:urn:greekLit:tlg0031.tlg010:2.16">Epb. 2, 16</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg010:2.16">Epb. 2, 16</bibl>
                      </note> ἐν ἑνὶ σώματι τῆς ἐκκλησίας αὐτοῦ.
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="2">
-               <div type="textpart" subtype="section" n="1">
+            <div n="2" type="chapter">
+               <div n="1" type="section">
                   <p> Ταῦτα γὰρ πάντα ἔπαθεν δἰ ἡμᾶς, ἵνα
 σωθῶμεν: <note n="2">i(/na swqw=men om. O.</note> καὶ ἀληθῶς ἔπαθεν, ὡς καὶ ἀληθῶς
 ἀνέστησεν ἑαυτόν, οὐχ ὥσπερ ἄπιστοί τινες
@@ -1773,12 +1779,12 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="3">
-               <div type="textpart" subtype="section" n="1">
+            <div n="3" type="chapter">
+               <div n="1" type="section">
                   <p> Ἐγὼ γὰρ καὶ μετὰ τὴν ἀνάστασιν ἐν σαρκὶ
 αὐτὸν οἶδα καὶ πιστεύω ὄντα.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> καὶ ὅτε πρὸς
 <note>
                         <bibl corresp="cts:urn:greekLit:tlg0031.tlg003:24.89">Cf. Luke 24, 89</bibl>
@@ -1791,15 +1797,15 @@
                         <bibl corresp="cts:urn:greekLit:tlg0031.tlg005:10.41">Acts 10, 41</bibl>
                      </note> ηὑρέθησαν δὲ ὑπὲρ θάνατον.</p>
                </div>
-               <div type="textpart" subtype="section" n="3">
+               <div n="3" type="section">
                   <p> μετὰ δὲ τὴν
 ἀνάστασιν συνέφαγεν αὐτοῖς καὶ συνέπιεν ὡς
 σαρκικός, καίπερ πνευματικῶς ἡνωμένος τῷ πατρί.
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="4">
-               <div type="textpart" subtype="section" n="1">
+            <div n="4" type="chapter">
+               <div n="1" type="section">
                   <p> Ταῦτα δὲ παραινῶ ὑμῖν, ἀγαπητοί, εἰδὼς
 ὅτι καὶ ὑμεῖς οὕτως ἔχετε. προφυλάσσω δὲ ὑμᾶς
 ἀπὸ τῶν θηρίων τῶν ἀνθρωπομόρφων, οὓς οὐ
@@ -1821,8 +1827,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="5">
-               <div type="textpart" subtype="section" n="1">
+            <div n="5" type="chapter">
+               <div n="1" type="section">
                   <p> Ὅν τινες ἀγνοοῦντες ἀρνοῦνται, μᾶλλον δὲ
 ἠρνήθησαν ὑπ̓ αὐτοῦ, ὄντες συνήγοροι τοῦ θανάτου
 μᾶλλον ἢ τῆς ἀληθείας: οὓς οὐκ ἔπεισαν αἱ
@@ -1830,14 +1836,14 @@
 μέχρι νῦν τὸ εὐαγγέλιον, οὐδὲ τὰ ἡμέτερα τῶν κατ̓
 ἄνδρα παθήματα.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> καὶ γὰρ περὶ ἡμῶν τὸ αὐτὸ
 φρονοῦσιν. τί γάρ με ὠφελεῖ τις, εἰ ἐμὲ ἐπαινεῖ,
 τὸν δὲ κύριόν μου βλασφημεῖ, μὴ ὁμολογῶν αὐτὸν
 σαρκοφόρον; ὁ δὲ τοῦτο λέγων <note n="3">le/gon BC, mh\ le/gwn CLA.</note> τελείως αὐτὸν
 ἀπήρνηται, ὢν νεκροφόρος.</p>
                </div>
-               <div type="textpart" subtype="section" n="3">
+               <div n="3" type="section">
                   <p> τὰ δὲ ὀνόματα
 αὐτῶν, ὄντα ἄπιστα, οὐκ ἔδοξέν μοι ἐγγράψαι.
 ἀλλὰ μηδὲ γένοιτό μοι αὐτῶν μνημονεύειν, μέχρις
@@ -1846,8 +1852,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="6">
-               <div type="textpart" subtype="section" n="1">
+            <div n="6" type="chapter">
+               <div n="1" type="section">
                   <p> Μηδεὶς πλανάσθω: καὶ τὰ ἐπουράνια καὶ ἡ
 δόξα τῶν ἀγγέλων καὶ οἱ ἄρχοντες ὁρατοί τε καὶ
 ἀόρατοι, ἐὰν μὴ πιστεύσωσιν εἰς τὸ αἷμα Χριστοῦ,
@@ -1857,7 +1863,7 @@
 μηδένα φυσιούτω: τὸ γὰρ ὅλον ἐστὶν πίστις καὶ
 ἀγάπη, ὧν οὐδὲν προκέκριται.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> καταμάθετε δὲ
 τοὺς ἑτεροδοξοῦντας εἰς τὴν χάριν Ἰησοῦ Χριστοῦ
 τὴν εἰς ἡμᾶς ἐλθοῦσαν, πῶς ἐναντίοι εἰσὶν τῇ
@@ -1868,8 +1874,8 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="7">
-               <div type="textpart" subtype="section" n="1">
+            <div n="7" type="chapter">
+               <div n="1" type="section">
                   <p> Εὐχαριστίας καὶ πρυσευχῆς ἀπέχονται, διὰ
 τὸ μὴ ὁμολογεῖν τὴν εὐχαριστίαν σάρκα εἶναι τοῦ
 σωτῆρος ἡμῶν Ἰησοῦ Χριστοῦ τὴν ὑπὲρ τῶν
@@ -1878,7 +1884,7 @@
 θεοῦ συζητοῦντες ἀποθνήσκουσιν: συνέφερεν δε
 αὐτοῖς ἀγαπᾶν, ἵνα καὶ ἀναστῶσιν.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> πρέπον <note n="2">pre/pon BA(L), pre/pon ou)=n Gg.</note>
 ἐστὶν ἀπέχεσθαι τῶν τοιούτων καὶ μήτε κατ̓
 ἰδίαν περὶ αὐτῶν λαλεῖν μήτε κοινῇ, προσέχειν δὲ
@@ -1889,8 +1895,8 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="8">
-               <div type="textpart" subtype="section" n="1">
+            <div n="8" type="chapter">
+               <div n="1" type="section">
                   <p> Πάντες τῷ ἐπισκόπῳ ἀκολουθεῖτε, ὡς Ἰησοῦς
 Χριστὸς τῷ πατρί, καὶ τῷ πρεσβυτερίῳ ὡς τοῖς
 ἀποστόλοις. τοὺς δὲ διακόνους ἐντρέπεσθε ὡς
@@ -1899,7 +1905,7 @@
 ἐκείνη βεβαία εὐχαριστία ἡγείσθω, ἡ ὑπὸ ἐπίσκοπον
 οὖσα ἢ ᾧ ἄν αὐτὸς ἐπιτρέψῃ.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> ὅπου ἂν
 φανῇ ὁ ἐπίσκοπος, ἐκεῖ τὸ πλῆθος ἤτω, <note n="1">h)/tw B, e)/stw Gg.</note> ὥσπερ
 ὅπου ἂν ᾖ Ἰησοῦς Χριστός, <note n="2">*)ihs. *xr. BA, *xr. *)ihs. GL.</note> ἐκεῖ ἡ καθολικὴ
@@ -1910,8 +1916,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="9">
-               <div type="textpart" subtype="section" n="1">
+            <div n="9" type="chapter">
+               <div n="1" type="section">
                   <p> Εὔλογόν ἐστιν λοιπὸν ἀνανῆψαι ἡμᾶς, <note n="4">h(ma=s Bg(SA) kai\ GL, <q>it is reasonable to return to suberness, and ... to repent.</q>
                      </note> ὡς ἔτι
 καιρὸν ἔχομεν εἰς θεὸν μετανοεῖν. καλῶς ἔχει,
@@ -1920,7 +1926,7 @@
 <pb n="262"/>
 τῷ διαβόλῳ λατρεύει.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> πάντα οὖν ὑμῖν ἐν
 χάριτι περισσευέτω: ἄξιοι γάρ ἐστε. κατὰ πάντα
 με ἀνεπαύσατε, καὶ ὑμᾶς Ἰησοῦς Χριστός. ἀπόντα
@@ -1929,8 +1935,8 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="10">
-               <div type="textpart" subtype="section" n="1">
+            <div n="10" type="chapter">
+               <div n="1" type="section">
                   <p> Φίλωνα καὶ Ῥέον <note n="2">B has *ga/i=on and it is possible that this, also found in g, is right, but *(re/on is transcriptionally more probable.</note> Ἀγαθόπουν, οἳ ἐπηκολούθησάν
 μοι εἰς λόγον θεοῦ, καλῶς ἐποιήσατε
 ὑποδεξάμενοι ὡς διακόνους θεοῦ: <note n="3">qeou= BA, xristou= qeou= G(L).</note> οἳ καὶ εὐχαριστοῦσιν
@@ -1941,7 +1947,7 @@
                      </note>
                   </p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> ἀντίψυχον ὑμῶν τὸ πνεῦμά μου καὶ τὰ δεσμά
 μου, ἃ οὐχ ὑπερηφανήσατε οὐδὲ ἐπῃσχύνθητε.
 οὐδὲ ὑμᾶς ἐπαισχυνθήσεται ἡ τελεία ἐλπίς, <note n="4">e)lpi/i BAg, pi/ntin GL.</note>
@@ -1949,8 +1955,8 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="11">
-               <div type="textpart" subtype="section" n="1">
+            <div n="11" type="chapter">
+               <div n="1" type="section">
                   <p> Ἡ προσευχὴ ὑμῶν ἀπῆλθεν ἐπὶ τὴν ἐκκλησίαν
 τὴν ἐν Ἀντιοχείᾳ τῆς Συρίας, ὅθεν δεδεμένος
 θεοπρεπεστάτοις δεσμοῖς πάντας ἀσπάζομαι,
@@ -1960,7 +1966,7 @@
 <pb n="264"/>
 δοθῆναι, ἵνα ἐν τῇ προσευχῇ ὑμῶν θεοῦ ἐπιτύχω.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> ἵνα οὖν ὑμῶν τέλειον γένηται τὸ ἔργον καὶ ἐπὶ
 γῆς καὶ ἐν οὐρανῷ, πρέπει εἰς τιμὴν θεοῦ χειροτονῆσαι
 τὴν ἐκκλησίαν ὑμῶν θεοπρεσβεύτην, εἰς τὸ
@@ -1968,7 +1974,7 @@
 εἰρηνεύουσιν καὶ ἀπέλαβον τὸ ἴδιον μέγεθος καὶ
 ἀπεκατεστάθη αὐτοῖς τὸ ἴδιον σωματεῖον.</p>
                </div>
-               <div type="textpart" subtype="section" n="3">
+               <div n="3" type="section">
                   <p>
 ἐφάνη μοι οὖν θεοῦ <note n="2">qeou= BLA, om. Gg.</note> ἄξιον πρᾶγμα, πέμψαι τινὰ
 τῶν ὑμετέρων μετ̓ ἐπιστολῆς, ἵνα συνδοξάσῃ τὴν
@@ -1981,8 +1987,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="12">
-               <div type="textpart" subtype="section" n="1">
+            <div n="12" type="chapter">
+               <div n="1" type="section">
                   <p> Ἀσπάζεται ὑμᾶς ἡ ἀγάπη τῶν ἀδελφῶν τῶν
 ἐν Τρωάδι, ὅθεν καὶ γράφω ὑμῖν διὰ Βούρρου, <note n="5">*bo/rrou *b; the spelling of this varies considerably both here and in Eph. ii, 1, and Philad. xi, 2. It is possiblo that *bo/rros, shich has some support in L is really right.</note> ὅν
 ἀπεστείλατε μετ̓ ἐμοῦ ἅμα Ἐφεσίοις, τοῖς ἀδελφοῖς
@@ -1991,7 +1997,7 @@
 θεοῦ διακονίας. ἀμείψεται αὐτὸν ἡ χάρις κατὰ
 πάντα.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> ἀσπάζομαι τὸν ἀξιόθεον ἐπίσκοπον
 καὶ θεοπρεπὲς πρεσβυτέριον καὶ τοὺς συνδούλους
 μου διακόνους καὶ τοὺς κατ̓ ἄνδρα καὶ κοινῇ
@@ -2003,14 +2009,14 @@
 </p>
                </div>
             </div>
-            <div type="textpart" subtype="chapter" n="13">
-               <div type="textpart" subtype="section" n="1">
+            <div n="13" type="chapter">
+               <div n="1" type="section">
                   <p> Ἀσπάζομαι τοὺς οἴκους τῶν ἀδελφῶν μου σὺν
 γυναιξὶ καὶ τέκνοις καὶ τὰς παρθένους τὰς λεγομένας
 χήρας. ἔρρωσθέ μοι ἐν δυνάμει πατρός. <note n="1">patro/s LA, pneu/matos G(g) <q>spirit.</q> The difference in MSS sould be betsoen prs and xvi.</note>
 ἀσπάζεται ὑμᾶς Φίλων σὺν ἐμοὶ ὤν.</p>
                </div>
-               <div type="textpart" subtype="section" n="2">
+               <div n="2" type="section">
                   <p> ἀσπάζομαι
 τὸν οἶκον Ταουΐας, <note n="2">*taoui+/ai GL. *gaoui+/as Ag.</note> ἣν εὔχομαι ἑδρᾶσθαι
 πίστει καὶ ἀγάπῃ σαρκικῇ τε καὶ πνευματικῇ.
@@ -2019,63 +2025,62 @@
 κατ̓ ὄνομα. ἔρρωσθε ἐν χάριτι θεοῦ.</p>
                </div>
             </div>
-            </div>
-            
-            
-            <div type="textpart" subtype="epistle" n="7"><pb n="268"/>
-               <head>ΠΡΟΣ ΠΟΛΥΚΑΡΠΟΝ ΙΓΝΑΤΙΟΣ</head>
-               <div type="textpart" subtype="chapter" n="praef">
-                  <div type="textpart" subtype="section" n="1">
-                     <p>Ἰγνάτιος, ὁ καὶ Θεοφόρος, Πολυκάρπῳ ἐπισκόπῳ
+         </div>
+         <div n="7" type="epistle">
+            <pb n="268"/>
+            <head>ΠΡΟΣ ΠΟΛΥΚΑΡΠΟΝ ΙΓΝΑΤΙΟΣ</head>
+            <div n="praef" type="chapter">
+               <div n="1" type="section">
+                  <p>Ἰγνάτιος, ὁ καὶ Θεοφόρος, Πολυκάρπῳ ἐπισκόπῳ
                         ἐκκλησίας Σμυρναίων, μᾶλλον ἐπισκοπημένῳ
                         ὑπὸ θεοῦ πατρὸς καὶ κυρίου Ἰησοῦ
                         Χριστοῦ, πλεῖστα χαίρειν.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="1">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ἀποδεχόμενός σου τὴν ἐν θεῷ γνώμην ἡδρασμένην
+            </div>
+            <div n="1" type="chapter">
+               <div n="1" type="section">
+                  <p> Ἀποδεχόμενός σου τὴν ἐν θεῷ γνώμην ἡδρασμένην
                         ὡς ἐπὶ πέτραν ἀκίνητον, ὑπερδοξάζω, καταξιωθεὶς
                         τοῦ προσώπου σου τοῦ ἀμώμου, οὗ
                         ὀναίμην ἐν θεῷ.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> παρακαλῶ σε ἐν χάριτι ᾗ
+               </div>
+               <div n="2" type="section">
+                  <p> παρακαλῶ σε ἐν χάριτι ᾗ
                         ἐνδέδυσαι, προσθεῖναι τῷ δρόμῳ σου καὶ πάντας
                         παρακαλεῖν, ἵνα σώζωνται. ἐκδίκει σου τὸν
                         τόπον ἐν πάσῃ ἐπιμελείᾳ σαρκικῇ τε καὶ πνευματικῇ.
                         τῆς ἑνώσεως φρόντιζε, ἧς οὐδὲν ἄμεινον,
                         πάντας βάσταζε, ὡς καὶ σὲ ὁ κύριος: πάντων
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg010:4.2">Eph. 4, 2</bibl>
-                        </note> ἀνέχου ἐν ἀγάπῃ, ὥσπερ καὶ ποιεῖς.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="3">
-                     <p> προσευχαῖς
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg010:4.2">Eph. 4, 2</bibl>
+                     </note> ἀνέχου ἐν ἀγάπῃ, ὥσπερ καὶ ποιεῖς.</p>
+               </div>
+               <div n="3" type="section">
+                  <p> προσευχαῖς
                         σχόλαζε ἀδιαλείπτοις: αἰτοῦ σύνεσιν
                         πλείονα ἧς ἔχεις: γρηγόρει ἀκοίμητον πνεῦμα
                         κεκτημένος. τοῖς κατ̓ ἄνδρα κατὰ ὁμοήθειαν
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg001:3.17">Mt. 3, 17</bibl>
-                        </note> θεοῦ λάλει: πάντων τὰς νόσους βάσταζε ὡς
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg001:3.17">Mt. 3, 17</bibl>
+                     </note> θεοῦ λάλει: πάντων τὰς νόσους βάσταζε ὡς
                         τέλειος ἀθλητής. ὅπου πλείων κόπος, πολὺ κέρδος.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="2">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Καλοὺς μαθητὰς ἐὰν φιλῇς, χάρις σοι οὐκ
+            </div>
+            <div n="2" type="chapter">
+               <div n="1" type="section">
+                  <p> Καλοὺς μαθητὰς ἐὰν φιλῇς, χάρις σοι οὐκ
                         ἔστιν: μᾶλλον τοὺς λοιμοτέρους ἐν πραότητι
                         ὑπότασσε. οὐ πᾶν τραῦμα τῇ αὐτῇ ἐμπλάστρῳ
                         θεραπεύεται. τοὺς παροξυσμοὺς ἐμβροχαῖς παῦε.
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg001:10.16">Mt. 10, 16</bibl>
-                        </note>
-                     </p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> φρόνιμος γίνου ὡς ὁ <note n="1">o( om. G, but the paralleliam sith h( peristera/ shoss that this is only an accident.</note> ὄφις ἐν ἅπασιν καὶ ἀκέραιος
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg001:10.16">Mt. 10, 16</bibl>
+                     </note>
+                  </p>
+               </div>
+               <div n="2" type="section">
+                  <p> φρόνιμος γίνου ὡς ὁ <note n="1">o( om. G, but the paralleliam sith h( peristera/ shoss that this is only an accident.</note> ὄφις ἐν ἅπασιν καὶ ἀκέραιος
                         εἰς ἀεὶ ὡς ἡ περιστερά. διὰ τοῦτο σαρκικὸς εἶ
                         καὶ πνευματικός, ἵνα τὰ φαινόμενά σου εἰς πρόσωπον
                         <pb n="270"/>
@@ -2088,65 +2093,65 @@
                         σὺ πέπεισαι. κατὰ πάντα σου ἀντίψυχον ἐγὼ
                         καὶ τὰ δεσμά μου, ἃ ἠγάπησας.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="3">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Οἱ δοκοῦντες ἀξιόπιστοι εἶναι καὶ ἑτεροδιδασκαλοῦντες
+            </div>
+            <div n="3" type="chapter">
+               <div n="1" type="section">
+                  <p> Οἱ δοκοῦντες ἀξιόπιστοι εἶναι καὶ ἑτεροδιδασκαλοῦντες
                         μή σε καταπλησσέτωσαν. στῆθι
                         ἑδραῖος ὡς ἄκμων τυπτόμενος. μεγάλου ἐστιν
                         ἀθλητοῦ τὸ δέρεσθαι καὶ νικᾶν. μάλιστα δὲ
                         ἕνεκεν θεοῦ πάντα ὑπομένειν ἡμᾶς δεῖ, ἵνα καὶ
                         αὐτὸς ἡμᾶς ὑπομείνῃ.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> πλέον σπουδαῖος γίνου
+               </div>
+               <div n="2" type="section">
+                  <p> πλέον σπουδαῖος γίνου
                         οὗ εἶ. τοὺς καιροὺς καταμάνθανε. τὸν ὑπὲρ
                         καιρὸν προσδόκα, τὸν ἄχρονον, τὸν ἀόρατον, τὸν
                         δἰ ἡμᾶς ὁρατόν, τὸν ἀψηλάφητον, τὸν ἀπαθῆ, τὸν
                         δἰ ἡμᾶς παθητόν, τὸν κατὰ πάντα τρόπον δἰ ἡμᾶς ὑπομείναντα.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="4">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Χῆραι μὴ ἀμελείσθωσαν: μετὰ τὸν κύριον
+            </div>
+            <div n="4" type="chapter">
+               <div n="1" type="section">
+                  <p> Χῆραι μὴ ἀμελείσθωσαν: μετὰ τὸν κύριον
                         σὺ αὐτῶν φροντιστὴς ἔσο. μηδὲν ἄνευ γνώμης
                         <pb n="272"/>
                         σου γινέσθω μηδὲ σὺ ἄνευ θεοῦ τι πρᾶσσε, ὅπερ
                         οὐδὲ πράσσεις: εὐστάθει.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> πυκνότερον συναγωγαὶ
+               </div>
+               <div n="2" type="section">
+                  <p> πυκνότερον συναγωγαὶ
                         γινέσθωσαν: ἐξ ὀνόματος πάντας ζήτει.
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg015:6.2">1 Tim. 6, 2</bibl>
-                        </note>
-                     </p>
-                  </div>
-                  <div type="textpart" subtype="section" n="3">
-                     <p> δούλους καὶ δούλας μὴ ὑπερηφάνει: ἀλλὰ μηδὲ
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg015:6.2">1 Tim. 6, 2</bibl>
+                     </note>
+                  </p>
+               </div>
+               <div n="3" type="section">
+                  <p> δούλους καὶ δούλας μὴ ὑπερηφάνει: ἀλλὰ μηδὲ
                         αὐτοὶ φυσιούσθωσαν, ἀλλ̓ εἰς δόξαν θεοῦ πλέον
                         δουλευέτωσαν, ἵνα κρείττονος ἐλευθερίας ἀπὸ θεοῦ
                         τύχωσιν. μὴ ἐράτωσαν ἀπὸ τοῦ κοινοῦ ἐλευθεροῦσθαι,
                         ἵνα μὴ δοῦλοι εὑρεθῶσιν ἐπιθυμίας.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="5">
-                  <div type="textpart" subtype="section" n="1">
-                     <p>1, Τὰς κακοτεχνίας φεῦγε, μᾶλλον δὲ περὶ
+            </div>
+            <div n="5" type="chapter">
+               <div n="1" type="section">
+                  <p>1, Τὰς κακοτεχνίας φεῦγε, μᾶλλον δὲ περὶ
                         τούτων ὁμιλίαν ποιοῦ. ταῖς ἀδελφαῖς μου προσλάλει,
                         ἀγαπᾶν τὸν κύριον καὶ τοῖς συμβίοις
                         ἀρκεῖσθαι σαρκὶ καὶ πνεύματι. ὁμοίως καὶ τοῖς
                         ἀδελφοῖς μου παράγγελλε ἐν ὀνόματι Ἰησοῦ
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg010:3.15 cts:urn:greekLit:tlg0031.tlg010:3.20">Eph.3 15. 20</bibl>
-                        </note> Χριστοῦ, ἀγαπᾶν τὰς συμβίους ὡς ὁ κύριος τὴν
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg010:3.15 cts:urn:greekLit:tlg0031.tlg010:3.20">Eph.3 15. 20</bibl>
+                     </note> Χριστοῦ, ἀγαπᾶν τὰς συμβίους ὡς ὁ κύριος τὴν
                         ἐκκλησίαν.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> εἵ τις δύναται ἐν ἁγνείᾳ μένειν εἰς
+               </div>
+               <div n="2" type="section">
+                  <p> εἵ τις δύναται ἐν ἁγνείᾳ μένειν εἰς
                         τιμὴν τῆς σαρκὸς τοῦ κυρίου, ἐν ἀκαυχησίᾳ
                         μενέτω. ἐὰν καυχήσηται, ἀπώλετο, καὶ ἐὰν
                         γνωσθῇ πλέον τοῦ ἐπισκόπου, ἔφθαρται. πρέπει
@@ -2155,11 +2160,11 @@
                         ᾖ κατὰ κύριον καὶ μὴ κατ̓ ἐπιθυμίαν. πάντα εἰς
                         τιμὴν θεοῦ γινέσθω.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="6">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Τῷ ἐπισκόπῳ προσέχετε, ἵνα καὶ ὁ θεὸς
+            </div>
+            <div n="6" type="chapter">
+               <div n="1" type="section">
+                  <p> Τῷ ἐπισκόπῳ προσέχετε, ἵνα καὶ ὁ θεὸς
                         ὑμῖν. ἀντίψυχον ἐγὼ τῶν ὑποτασσομένων τῷ
                         ἐπισκόπῳ, πρεσβυτέροις, διακόνοις: καὶ μετ̓
                         <pb n="274"/>
@@ -2167,11 +2172,11 @@
                         ἀλλήλοις, συναθλεῖτε, συντρέχετε, συμπάσχετε,
                         συγκοιμᾶσθε. συνεγείρεσθε ὡς θεοῦ
                         <note>
-                           <bibl corresp="cts:urn:greekLit:tlg0031.tlg016:2.1">II Tim. 2, 1</bibl>
-                        </note> οἰκονόμοι καὶ πάρεδροι καὶ ὑπηρέται.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> ἀρέσκετε
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg016:2.1">II Tim. 2, 1</bibl>
+                     </note> οἰκονόμοι καὶ πάρεδροι καὶ ὑπηρέται.</p>
+               </div>
+               <div n="2" type="section">
+                  <p> ἀρέσκετε
                         ᾧ στρατεύεσθε, ἀφ̓ οὖ καὶ τὰ ὀψώνια
                         κομίζεσθε: μή τις ὑμῶν δεσέρτωρ εὑρεθῇ. τὸ
                         βάπτισμα ὑμῶν μενέτω ὡς ὅπλα, ἡ πίστις ὡς
@@ -2181,27 +2186,27 @@
                         οὖν μετ̓ ἀλλήλων ἐν πραότητι, ὡς ὁ θεὸς
                         μεθ̓ ὑμῶν, ὀναίμην ὑμῶν διὰ παντός.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="7">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ἐπειδὴ ἡ ἐκκλησία ἡ ἐν Ἀντιοχείᾳ τῆς
+            </div>
+            <div n="7" type="chapter">
+               <div n="1" type="section">
+                  <p> Ἐπειδὴ ἡ ἐκκλησία ἡ ἐν Ἀντιοχείᾳ τῆς
                         Συρίας εἰρηνεύει, ὡς ἐδηλώθη μοι, διὰ τὴν προσευχὴν
                         ὑμῶν, <note n="2">dia\ th\n proseuxh/n G. dia\ th=s proseuxh=s Lg.</note> κἀγὼ εὐθυμότερος ἐγενόμην ἐν
                         ἀμεριμνίᾳ θεοῦ, ἐάνπερ διὰ τοῦ παθεῖν θεοῦ
                         ἐπιτύχω, εἰς τὸ εὑρεθῆναί με ἐν τῇ ἀναστάσει <note n="3">a)nasta/sei GL, ai)th/sei <q>through your intercession</q> gA.</note>
                         ὑμῶν μαθητήν.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> πρέπει, Πολύκαρπε θεομακαριστότατε,
+               </div>
+               <div n="2" type="section">
+                  <p> πρέπει, Πολύκαρπε θεομακαριστότατε,
                         συμβούλιον ἀγαγεῖν θεοπρεπέστατον καὶ
                         χειροτονῆσαί τινα, ὃν ἀγαπητὸν λίαν ἔχετε καὶ
                         ἄοκνον, ὃς δυνήσεται θεοδρόμος καλεῖσθαι: τοῦτον
                         καταξιῶσαι, ἵνα πορευθεὶς εἰς Συρίαν δοξάσῃ ὑμῶν
                         τὴν ἄοκνον ἀγάπην εἰς δόξαν θεοῦ:</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="3">
-                     <p> Χριστιανὸς
+               </div>
+               <div n="3" type="section">
+                  <p> Χριστιανὸς
                         <pb n="276"/>
                         ἑαυτοῦ ἐξουσίαν οὐκ ἔχει, ἀλλὰ θεῷ σχολάζει.
                         τοῦτο τὸ ἔργον θεοῦ ἐστιν καὶ ὑμῶν, ὅταν αὐτὸ
@@ -2209,11 +2214,11 @@
                         ἐστε εἰς εὐποιΐαν θεῷ ἀνήκουσαν. εἰδὼς ὑμῶν τὸ
                         σύντονον τῆς ἀληθείας, δἰ ὀλίγων ὑμᾶς γραμμάτων παρεκάλεσα.
                      </p>
-                  </div>
                </div>
-               <div type="textpart" subtype="chapter" n="8">
-                  <div type="textpart" subtype="section" n="1">
-                     <p> Ἐπεὶ <note n="1">e)pei/ GA, e)pei\ ou)=n Lg.</note> πάσαις ταῖς ἐκκλησίαις οὐκ ἠδυνήθην
+            </div>
+            <div n="8" type="chapter">
+               <div n="1" type="section">
+                  <p> Ἐπεὶ <note n="1">e)pei/ GA, e)pei\ ou)=n Lg.</note> πάσαις ταῖς ἐκκλησίαις οὐκ ἠδυνήθην
                         γράψαι διὰ τὸ ἐξαίφνης πλεῖν με ἀπὸ Τρωάδος
                         εἰς Νεάπολιν, ὡς τὸ θέλημα προστάσσει, γράψεις
                         ταῖς ἔμπροσθεν ἐκκλησίαις, ὡς θεοῦ γνώμην
@@ -2221,28 +2226,26 @@
                         ʽοἱ μὲν δυνάμενοι πεζοὺς πέμψαι, οἱ δὲ ἐπιστολὰς
                         διὰ τῶν ὑπό σου πεμπομένων. ἵνα δοξασθῆτε
                         αἰωνίῳ ἔργῳ.ʼ <note n="2">The combination of singular and plural is very strange. L makes all singular, A all plural. The punctuation given is in the main Lightfoot's, but even so the sentence is unsatisfactory.</note> ὡς ἄξιος ὤν.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="2">
-                     <p> ἀσπάζομαι
+               </div>
+               <div n="2" type="section">
+                  <p> ἀσπάζομαι
                         πάντας ἐξ ὀνόματος καὶ τὴν τοῦ Ἐπιτρόπου
                         σὺν ὅλῳ τῷ οἴκῳ αὐτῆς καὶ τῶν τέκνων. ἀσπάζομαι
                         Ἄτταλον τὸν ἀγαπητόν μου. ἀσπάζομαι
                         τὸν μέλλοντα καταξιοῦσθαι τοῦ εἰς Συρίαν
                         πορεύεσθαι. ἔσται ἡ χάρις μετ̓ αὐτοῦ διὰ
                         παντὸς καὶ τοῦ πέμποντος αὐτὸν Πολυκάρπου.</p>
-                  </div>
-                  <div type="textpart" subtype="section" n="3">
-                     <p> ἐρρῶσθαι ὑμᾶς διὰ παντὸς ἐν θεῷ ἡμῶν Ἰησοῦ
+               </div>
+               <div n="3" type="section">
+                  <p> ἐρρῶσθαι ὑμᾶς διὰ παντὸς ἐν θεῷ ἡμῶν Ἰησοῦ
                         Χριστῷ εὔχομαι, ἐν ᾧ διαμείνητε ἐν ἑνότητι θεοῦ
                         καὶ ἐπισκοπῇ. ἀσπάζομαι Ἄλκην, τὸ ποθητόν
                         μοι ὄνομα. ἔρρωσθε ἐν κυρίῳ.
                      </p>
-                  </div>
                </div>
             </div>
-            
-            <!-- ENd of whole edition -->
          </div>
+         <!-- ENd of whole edition -->
       </body>
    </text>
 </TEI>

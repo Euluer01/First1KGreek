@@ -1,109 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">
-<fileDesc>
-<titleStmt>
-    <title xml:lang="lat">De Demosthenis dictione</title>
- <author>Dionysius of Halicarnassus</author>
- <editor>Hermann Usener</editor>
- <editor>Ludwig Radermacher</editor>
- <funder>Harvard Library Arcadia Fund</funder>
- <principal>Gregory Crane</principal>
- <respStmt>
-  <persName xml:id="DDD">Digital Divide Data</persName>
-  <resp>Corrected and encoded the text</resp>
- </respStmt>
- <respStmt>
-  <persName>Gregory Crane</persName>
-  <resp>Editor-in-Chief, Perseus Digital Library</resp>
- </respStmt>
- <respStmt>
-  <persName>Matt Munson</persName>
-  <resp>Project Manager (University of Leipzig)</resp>
- </respStmt>
- <respStmt>
-  <persName>Annette Gessner</persName>
-  <resp>Project Assistant (University of Leipzig)</resp>
- </respStmt>
- <respStmt>
-  <persName>Thibault Clérice</persName>
-  <resp>Lead Developer (University of Leipzig)</resp>
- </respStmt>
- <respStmt>
-  <persName>Bruce Robertson</persName>
-  <resp>Technical Advisor</resp>
- </respStmt>
-</titleStmt>
-<publicationStmt>
-<authority>Harvard College Library</authority>
-<idno type="filename">tlg0081.tlg006.1st1K-grc1.xml</idno>
-<availability>
- <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De Demosthenis dictione</title>
+            <author>Dionysius of Halicarnassus</author>
+            <editor>Hermann Usener</editor>
+            <editor>Ludwig Radermacher</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg0081.tlg006.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
  License</licence>
-</availability>
-<date>2017</date>
-<publisher>Harvard College Library</publisher>
-<pubPlace>United States</pubPlace>
-</publicationStmt>
-<sourceDesc>
-<listBibl>
- <biblStruct>
- <monogr>
-  <title xml:lang="lat">Dionysii Halicarnasei Opscula</title>
-  <editor>
-	<persName>
-	 <name>Hermann Usener</name>
-	</persName>
-  </editor>
-  <editor>
-   <persName>
-    <name>Ludwig Radermacher</name>
-   </persName>
-  </editor>
-  <author ref="urn:cts:greekLit:tlg0081">Dionysius of Halicarnassus</author>
-  <imprint>
-	<publisher>Teubner</publisher>
-	<pubPlace>Leipzig</pubPlace>
-	<date>1899</date>
-  </imprint>
-  <biblScope unit="volume">1</biblScope>
- </monogr>
-  <series>
-   <title xml:lang="lat">Dionysii Halicarnasei Quae Exstant</title>
-   <title xml:lang="lat" type="sub">Opusculorum</title>
-   <biblScope unit="volume">5.1</biblScope>
-  </series>
-  <ref target="https://archive.org/details/quaeexstant05dionuoft/page/124/mode/2up">Hathi Trust</ref>
- </biblStruct>
-</listBibl>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
- <p>Text encoded in accordance with the latest EpiDoc standards</p>
- <refsDecl n="CTS">
-  <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
- </refsDecl>
-</encodingDesc>
-<profileDesc>
-<langUsage>
-<language ident="grc">Greek</language>
-<language ident="lat">Latin</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change/>
-</revisionDesc>
-</teiHeader>
-<text>
-	<body>
-	 <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0081.tlg006.1st1K-grc1">
-<pb n="127"/>
-<head>ΔΙΟΝΥΣΙΟΥ ΑΛΙΚΑΡΝΑΣΕΩΣ
+            </availability>
+            <date>2017</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg0081.tlg006.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Dionysii Halicarnasei Opscula</title>
+                     <editor>
+                        <persName>
+                           <name>Hermann Usener</name>
+                        </persName>
+                     </editor>
+                     <editor>
+                        <persName>
+                           <name>Ludwig Radermacher</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg0081">Dionysius of Halicarnassus</author>
+                     <imprint>
+                        <publisher>Teubner</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1899</date>
+                     </imprint>
+                     <biblScope unit="volume">1</biblScope>
+                  </monogr>
+                  <series>
+                     <title xml:lang="lat">Dionysii Halicarnasei Quae Exstant</title>
+                     <title xml:lang="lat" type="sub">Opusculorum</title>
+                     <biblScope unit="volume">5.1</biblScope>
+                  </series>
+                  <ref target="https://archive.org/details/quaeexstant05dionuoft/page/124/mode/2up">Hathi Trust</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0081.tlg006.1st1K-grc1">
+         <pb n="127"/>
+         <head>ΔΙΟΝΥΣΙΟΥ ΑΛΙΚΑΡΝΑΣΕΩΣ
 ΠΕΡΙ ΤΗΣ ΔΗΜΟΣΘΕΝΟΥΣ ΛΕΞΕΩΣ</head>
-
-<div type="textpart" subtype="chapter" n="1">
-<p><gap reason="omitted"/>
+         <div n="1" type="chapter">
+            <p>
+               <gap reason="omitted"/>
 δικανικοῖς μὲν οὖν οὐ περιέτυχον αὐτοῦ λόγοις, δημηγορικοῖς
 δὲ ὀλίγοις καί τισι καὶ τέχναις, τοῖς δὲ <lb n="5"/>
 πλείοσιν ἐπιδεικτικοῖς. τῆς δὲ ἰδέας αὐτοῦ τῶν λόγων
@@ -120,18 +130,17 @@
 δέον ἐν τῷ δέοντι καὶ λέγειν καὶ σιγᾶν καὶ ποιεῖν,
 <del status="error">καὶ</del> δισσὰ ἀσκήσαντες μάλιστα ὧν δεῖ, γνώμην <add cause="omitted">καὶ
 ῥώμην</add>, τὴν μὲν βουλεύοντες τὴν δʼ <del status="error">ἀποτελοῦντες,</del>
-<note type="footnote">1 totius libelli argumentum breuissime comprehendit ano-
+               <note type="footnote">1 totius libelli argumentum breuissime comprehendit ano-
 nymus W VII 1049 cf VII 93, 6 et 880, 9</note>
-<note type="footnote">1 τοῦ Ἁλικαρνασσέως v 2 λεκτικῆς &#8736;. δεινότητος v
+               <note type="footnote">1 τοῦ Ἁλικαρνασσέως v 2 λεκτικῆς ∠. δεινότητος v
 4 Syrianus εἰς τὸ περὶ ἰδεῶν Ἑρμογένους β΄ ὑπόμνημα p 90, 12 R:
 Διονύσιος ὁ πρεσβύτερος ἐν τῷ δευτέρῳ περὶ χαρακτήρων περὶ
 Γοργίου λέγων τάδε φησί· ‘δικανικοῖς μὲν οὖν’ κτλ cf W V 548
 8—551, 4 7 τοιούτου Syriani S 9 δὲ S] δαὶ Syriani V
 προσῆν διαπεῖναι S 11 λαθεῖν omisso μὲν S 12 ἀνθρω-
 πίνων S 13 uncinis saepta hic et infra om Sy, exhibet W</note>
-<note type="footnote">16 νόμων ex νόμον V 18 καὶ ῥώμην add Fossius</note>
-
-<pb n="128"/>
+               <note type="footnote">16 νόμων ex νόμον V 18 καὶ ῥώμην add Fossius</note>
+               <pb n="128"/>
 θεράποντες μὲν τῶν ἀδίκως δυστυχούντων, κολασταὶ
 δὲ τῶν ἀδίκως εὐτυχούντων, <add cause="omitted">αὐθάδεις πρὸς τὸ
 συμφέρον</add>, εὐόργητοι πρὸς τὸ πρέπον, τῷ φρονίμῳ
@@ -147,28 +156,27 @@ nymus W VII 1049 cf VII 93, 6 et 880, 9</note>
 δὲ πρὸς τοὺς φίλους τῇ πίστει. τοιγαροῦν αὐτῶν
 ἀποθανόντων ὁ πόθος οὐ συναπέθανεν, ἀλλʼ ἀθάνατος
 <lb n="15"/> ἐν οὐκ ἀθανάτοις σώμασι ζῇ οὐ ζώντων.ʼ <gap reason="omitted"/>
-<gap reason="omitted"/>
-<add cause="omitted">‘ἐστασίαζέ τε οὖν τὰ τῶν πόλε</add> ων, καὶ τὰ ἀφυστερίζοντά
+               <gap reason="omitted"/>
+               <add cause="omitted">‘ἐστασίαζέ τε οὖν τὰ τῶν πόλε</add> ων, καὶ τὰ ἀφυστερίζοντά
 που πύστει τῶν προγενομένων πολὺ ἐπέφερε
 τὴν ὑπερβολὴν ἐς τὸ καινοῦσθαι τὰς διανοίας τῶν τʼ
 <lb n="20"/> ἐπιχειρήσεων περιτεχνήσει καὶ <del>τῇ</del> τῶν τιμωριῶν ἀτοπίᾳ.
 καὶ τὴν εἰωθυῖαν ἀξίωσιν τῶν ὀνομάτων ἐς τὰ ἔργα
 <note type="footnote"> Thucydides III 82, 3 sqq</note>
-<note type="footnote">4 τὸν ἀφρόν S 5 κόσμηοι V 7 δὲ post τρόπαια add V</note>
-<note type="footnote">9 νομίμων S: νόμων V 10 φιλοκάλου ex φιλοκαλίου S
+               <note type="footnote">4 τὸν ἀφρόν S 5 κόσμηοι V 7 δὲ post τρόπαια add V</note>
+               <note type="footnote">9 νομίμων S: νόμων V 10 φιλοκάλου ex φιλοκαλίου S
 12 δὲ om S | ἀστοὺς S: αὐτοὺς V 14 οὐ om V | ἀλλὰ θάνα-
 τος V ἀλλὰ ἀθ. S 15 οὐκ ἐν V 17 hinc incipiunt MBP |
 Θουκυδίδου ἔκφρασις τῆς στάσεος τῶν Κερκυραίων superscribit
 P | supplementa Sylburgius dedit καὶ τὰ ἀφυστερίζοντα in-
 cipit P | 18 πύστα B πείστει P πύστει Θ (i e Thucydides) sed
-ἐπὶ πύστει &#8736; (Dionysius) p 886 (i e ἐπιπύστει) τῶν προγεγρ τῶν
-προγενομένων P τῶν προγεγενημένων &#8736; ibidem 19 τοῦ και-
-νοῦσθαι Θ&#8736; p 886 20 ἐπιτεχνήσει &#8736; p 887 | τῇ om B? &#8736; p 886,
-887 seclusit Sylburgius 21 τῶν ὀνομάτων ἀξίωσιν &#8736; p 887
+ἐπὶ πύστει ∠ (Dionysius) p 886 (i e ἐπιπύστει) τῶν προγεγρ τῶν
+προγενομένων P τῶν προγεγενημένων ∠ ibidem 19 τοῦ και-
+νοῦσθαι Θ∠ p 886 20 ἐπιτεχνήσει ∠ p 887 | τῇ om B? ∠ p 886,
+887 seclusit Sylburgius 21 τῶν ὀνομάτων ἀξίωσιν ∠ p 887
 </note>
-
-<pb n="129"/>
-<milestone unit="954"/> ἀν τήλλαξαν τῇ δικαιώσει. τόλμα μὲν γὰρ ἀλόγιστος
+               <pb n="129"/>
+               <milestone unit="954"/> ἀν τήλλαξαν τῇ δικαιώσει. τόλμα μὲν γὰρ ἀλόγιστος
 ἀνδρία φιλέταιρος ἐνομίσθη, μέλλησις δὲ προμηθὴς
 δειλία εὐπρεπής, τὸ δὲ σῶφρον τοῦ ἀνάνδρου πρόσχημα.
 καὶ τὸ πρὸς ἅπαν ξυνετὸν ἐπίπαν ἀργόν, τὸ δʼ ἐμπλήκτως
@@ -193,25 +201,24 @@ cipit P | 18 πύστα B πείστει P πύστει Θ (i e Thucydides) sed
 ἄρα γένοιντο ξυναλλαγῆς, ἐν τῷ αὐτίκα πρὸς τὸ ἄπορον
 ἑκατέρῳ διδόμενοι ἴσχυον οὐκ ἐχόντων ἄλλοθεν δύναμιν.ʼ
 <note type="footnote">1 ἀντίλλαξαν P 2 φιλαίταιρος corr in φιλέταιρος P | ἐννο-
-μίσθη P 3 πρόσχημα τοῦ ἀνάνδρου &#8736; p 808 4 τὸ εἰς ἅπαν ξυνε-
-τὸν ibidem &#8736; 5 ἀσφαλείας Θ libri partim 9 δεικονότερος P
-10 αὐτῶν Θ | τε om &#8736; p 889 | διαλύτης P 11 ἐκπεπληγμένους B</note>
-<note type="footnote">13 ξυνεγγενὲς P corr in ξυγγενὲς 15 ἀπροφασείστως P
+μίσθη P 3 πρόσχημα τοῦ ἀνάνδρου ∠ p 808 4 τὸ εἰς ἅπαν ξυνε-
+τὸν ibidem ∠ 5 ἀσφαλείας Θ libri partim 9 δεικονότερος P
+10 αὐτῶν Θ | τε om ∠ p 889 | διαλύτης P 11 ἐκπεπληγμένους B</note>
+               <note type="footnote">13 ξυνεγγενὲς P corr in ξυγγενὲς 15 ἀπροφασείστως P
 16 ὠφελίας Θ 17 εἰς MP 18 τῷ θείω νόμῳ Θ | ἐκρατίνοντο P</note>
-<note type="footnote">20 εἰ προὔχοιεν M: εἰπα οὕχοιεν B εἰ πως οὕχοιεν P
+               <note type="footnote">20 εἰ προὔχοιεν M: εἰπα οὕχοιεν B εἰ πως οὕχοιεν P
 21 ἀντιμωρήσασθαί P 22 ἧν] ἧ P ἢ om PB 24 uerba
 ἑκατέρῳ—ἄλλοθεν om P | ἀλλοθεν B</note>
-
-<pb n="130"/>
+               <pb n="130"/>
 ἡ μὲν οὖν ἐξηλλαγμένη καὶ περιττὴ καὶ
 ἐγκατάσκευος καὶ τοῖς ἐπιθέτοις κόσμοις ἅπασι συμπεπληρωμένη
 λέξις, ἧς ὅρος καὶ κανὼν ὁ Θουκυδίδης,
 ὃν οὐθεὶς οὔθʼ ὑπερεβάλετο τῶν ἐπιγινομένων οὔτε
-<lb n="5"/> <add cause="omitted">εἰς ἄκρον</add> ἐμιμήσατο, τοιαύτη τις ἦν. |</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="2">
-<p>2 ἡ δὲ ἑτέρα λέξις ἡ λιτὴ καὶ ἀφελὴς καὶ δοκοῦσα <milestone unit="956"/>
+<lb n="5"/>
+               <add cause="omitted">εἰς ἄκρον</add> ἐμιμήσατο, τοιαύτη τις ἦν. |</p>
+         </div>
+         <div n="2" type="chapter">
+            <p>2 ἡ δὲ ἑτέρα λέξις ἡ λιτὴ καὶ ἀφελὴς καὶ δοκοῦσα <milestone unit="956"/>
 κατασκευήν τε καὶ ἰσχὺν τὴν πρὸς ἰδιώτην ἔχειν
 λόγον καὶ ὁμοιότητα πολλοὺς μὲν ἔσχε καὶ ἀγαθοὺς
 ἄνδρας προστάτας συγγραφεῖς τε καὶ φιλοσόφους καὶ
@@ -236,11 +243,10 @@ B (?) 5 εἰς ἄκρον Kiessling add | ἐτιμήσατο BP 6 ἡ δʼ
 ἕτερα P ἡ δʼ ἑτέρα B ἡ δευτέρα Sylburgius 7 iunge ἰδιώτην
 λόγον 9 προστάτας in ras M πρὸς τὰς B | συγγραφεῖς
 τε in ras M 12 οἱ] ἣ in mg rubro οἱ B 13 διδασλεῖον P</note>
-<note type="footnote">14 ἢ δικανοὺς ἢ δικανικοὺς P 16 fort προαιρέσεως
+               <note type="footnote">14 ἢ δικανοὺς ἢ δικανικοὺς P 16 fort προαιρέσεως
 ζηλωταί 17 Λυσίας] λύρας P λήρας in mg rubro λυρ B</note>
-<note type="footnote">23 οἱ ἡρμόσαντο P</note>
-
-<pb n="131"/>
+               <note type="footnote">23 οἱ ἡρμόσαντο P</note>
+               <pb n="131"/>
 ὅνπερ ἡ νήτη πρὸς ὑπάτην ἐν μουσικῇ λόγον ἔχει,
 τοῦτον ἡ Λυσίου λέξις ἐν πολιτικῇ διαλέκτῳ πρὸς τὴν
 Θουκυδίδου. ἣ μὲν γὰρ καταπλήξασθαι δύναται τὴν
@@ -261,12 +267,12 @@ B (?) 5 εἰς ἄκρον Kiessling add | ἐτιμήσατο BP 6 ἡ δʼ
 λέξεως οὐθὲν ἐν τῷ παρόντι οἶμαι δεῖν. δύο μὲν δὴ
 χαρακτῆρες οὗτοι λέξεως, τοσοῦτον ἀλλήλων διάφοροι
 κατὰ τὰς ἀγωγάς, καὶ ἄνδρες οἱ πρωτεύσαντες ἐν αὐτοῖς, <lb n="20"/>
-<note type="footnote"> πρὸς τὴν ὑπάτην exspectat Sylburgius λόγος in λόγον
+               <note type="footnote"> πρὸς τὴν ὑπάτην exspectat Sylburgius λόγος in λόγον
 corr M 2 τοῦτον ex τοσοῦτον M1 τοσοῦτον B | εἰ λυσίου
 λέξιν B | ἐν τ πολιτικῇ sic B 5 ἡ δὲ ἡδῦναι ante ἡ δὲ ἀνεῖναι
 repetit B 6 δὲ om B 7 πλὴν ἀλλὰ] ἤδη τᾶλλα M ἤδη
 τἄλλα BP del Sylburgius τί δεῖ τἄλλα Reiskius | βιάσθαι B</note>
-<note type="footnote">8 δὲ BP 10 τὸ om P 11 ἡ δὲ B | ἀφέλεια Sylburgius |
+               <note type="footnote">8 δὲ BP 10 τὸ om P 11 ἡ δὲ B | ἀφέλεια Sylburgius |
 uerba ἰδέας ἡ δʼ ἀσφάλεια in M postea addita sunt | post
 ῥήτορος lacuna XVI litt in M, uersus paene totius in B. XVII
 litt et uersus totius in P 12 post φαίνεται lacuna XIX fere
@@ -277,14 +283,12 @@ sed dictionem ἀνεπιτήδευτον εἶναι uoluit.ʼ 14 κατεσκ�
 M, Bmg: κατεσκευάσθαι P,B in textu 15 ἑκάτερα B 16 εἶναι]
 δεινὴ ci Usener 20 προτεύσαντες MBP: corr v | ἐν] ἀν B
 </note>
-
-<pb n="132"/>
+               <pb n="132"/>
 οὓς διεξῆλθον, δεινοὶ μὲν ἐν τοῖς αὑτῶν ἔργοις ἀμφότεροι,
 καθʼ ὃ δὲ ἴσοι ἀλλήλων ἦσαν, ἀτελεῖς.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="3">
-<p>3 τρίτη λέξεως <gap reason="omitted"/> ἦν ἡ μικτή τε καὶ σύνθετος ἐκ
+         </div>
+         <div n="3" type="chapter">
+            <p>3 τρίτη λέξεως <gap reason="omitted"/> ἦν ἡ μικτή τε καὶ σύνθετος ἐκ
 τούτων τῶν δυεῖν, ἣν ὁ μὲν πρῶτος ἁρμοσάμενος
 <lb n="5"/> καὶ καταστήσας εἰς τὸν νῦν ὑπάρχοντα κόσμον εἴτε
 Θρασύ|μαχος ὁ Καλχηδόνιος ἦν, ὡς οἴεται Θεόφραστος, <milestone unit="959"/>
@@ -304,10 +308,10 @@ M, Bmg: κατεσκευάσθαι P,B in textu 15 ἑκάτερα B 16 εἶν�
 <lb n="20"/> ἐκείνου τοῦ χρόνου τοῦ παλαιοῦ καὶ τῶν πραγμάτων,
 <note type="footnote">6 Theophrasti περὶ λέξεως fr IV Schmidt 19 Thrasy-
 machi fr I S</note>
-<note type="footnote">1 δεινὸς B | αὐτῶν MBP | ἀμφοτέροις B 3 ἰδέα inter-
+               <note type="footnote">1 δεινὸς B | αὐτῶν MBP | ἀμφοτέροις B 3 ἰδέα inter-
 cidisse putat Sylburgius ἰδέα seu ἁρμονία Krüger | ἧν ο ἡ
 sic P 5 καταστάσας B 6 Καλχηδόνιος Vliet: χαλκηδόνιος</note>
-<note type="footnote">10 ἀμήχανος B 12 ἀσκήσαντες MB 13 ἀποδειξαμένους
+               <note type="footnote">10 ἀμήχανος B 12 ἀσκήσαντες MB 13 ἀποδειξαμένους
 Sylburgius: ἀποδεξαμένους 14 εἰ δὴ H. Schenkl: ἣ | πηγή
 Sadaeus: λοιπή | τῆς om BPv 17 δυνάμει δὲ ὡς Sauppius:
 δυναμέως· ὡς δὲ | τῇ Reiskius add 18 θήσω post ἐξ ἑνὸς v
@@ -316,13 +320,13 @@ inserit inde a Sylburgio 19 ὦ Ἀθηναῖοι v ὦ ⦵ M ω B
 Sauppius suspectat. frustra meo quidem iudicio hiatus ex hoc
 fragmento remouere Blassius studuit
 </note>
-
-<pb n="133"/>
-<milestone unit="960"/> ἡνίκα | σιωπᾶν ἀπέχρη τοῖς νεωτέροις, τῶν τε πραγμάτων
+               <pb n="133"/>
+               <milestone unit="960"/> ἡνίκα | σιωπᾶν ἀπέχρη τοῖς νεωτέροις, τῶν τε πραγμάτων
 οὐκ ἀναγκαζόντων ἀγορεύειν καὶ τῶν πρεσβυτέρων
 ὀρθῶς τὴν πόλιν ἐπιτροπευόντων. ἐπειδὴ δʼ
 εἰς τοιοῦτον ἡμᾶς ἀνέθετο χρόνον ὁ δαίμων, ὥστε .
-<gap reason="omitted"/> τῆς πόλεως ἀκούειν, τὰς δὲ συμφορὰς <gap reason="omitted"/> <lb n="5"/>
+<gap reason="omitted"/> τῆς πόλεως ἀκούειν, τὰς δὲ συμφορὰς <gap reason="omitted"/>
+               <lb n="5"/>
 αὐτούς καὶ τούτων τὰ μέγιστα μὴ θεῶν ἔργα εἶναι
 μηδὲ τῆς τύχης ἀλλὰ τῶν ἐπιμεληθέντων, ἀνάγκη <del>δὲ</del>
 λέγειν. ἢ γὰρ ἀναίσθητος ἢ καρτερικώτατός ἐστιν, ὅστις
@@ -333,18 +337,18 @@ fragmento remouere Blassius studuit
 εἰς τόνδε τὸν χρόνον τὴν μὲν παρελθοῦσαν ἡμέραν
 ἀγαπῶσι, τὴν δʼ ἐπιοῦσαν δεδιόσιν, ἀντὶ δʼ ὁμονοίας
 εἰς ἔχθραν καὶ ταραχὰς πρὸς ἀλλήλους ἀφικέσθαι. καὶ <lb n="15"/>
-<milestone unit="961"/> τούς μὲν ἄλλους τὸ πλῆθος τῶν ἀγαθῶν ὑβρίζειν τε
+               <milestone unit="961"/> τούς μὲν ἄλλους τὸ πλῆθος τῶν ἀγαθῶν ὑβρίζειν τε
 ποιεῖ καὶ στασιάζειν, ἡμεῖς δὲ μετὰ μὲν τῶν ἀγαθῶν
 ἐσωφρονοῦμεν, ἐν δὲ τοῖς κακοῖς ἐμάνημεν, ἃ τοὺς
 ἄλλους σωφρονίζειν εἴωθεν. τί δῆτα μέλλοι τις ἂν
 γεγωνίσκειν <del>εἰπεῖν</del>, ὅτῳ γε <gap reason="omitted"/> λυπεῖσθαι ἐπὶ τοῖς <lb n="20"/>
-<note type="footnote">3 ἐπειδὴ δʼ postea add M, ἡ in ras: καὶ ἐπειδὴ BP
+               <note type="footnote">3 ἐπειδὴ δʼ postea add M, ἡ in ras: καὶ ἐπειδὴ BP
 4 τοσοῦτον BP | ἡμοῖς P 4 et 5 lac XX litt M, XV litt B.
 XVI litt et uersus totius P 5 lac XIX litt M, qui non habet
 nisi συμφο, συμφορᾶς deinde lac XIII fere litt B, συμφορὰς
 cum lac VII litt P 7 τύχης] τέχνης μὴ δὲ τῆς τύχης B | δὲ
 deleui δὴ Sylburgius 8 καρτερώτατος MBP: corr Usener</note>
-<note type="footnote">9 ἐνεξαμαρτάνειν Reiskius: ἐξαμαρτάνειν 10 ὑποσχεί-
+               <note type="footnote">9 ἐνεξαμαρτάνειν Reiskius: ἐξαμαρτάνειν 10 ὑποσχεί-
 σει P 11 καὶ del Sauppius fort uerbum latet 12 γέ-
 ναισθαι P | κινδύνῳ] διὰ κινδύνων MB διὰ κίνδυνον P
 13 τῆς μὲν P 14 ὁμονίας P 16 ὑβρίζειν—17 ἀγαθῶν sine
@@ -353,8 +357,7 @@ lacunae indicio om Pv 18 ἐμάνημεν, ἃ M: ἐμάνυ μὲν ἃ B
 γιγνώσκειν ἢ εἰπεῖν Reiskius γιγνώσκων εἰπεῖν Blass | post
 ὅτῳ γε lacunae signum (excidit uelut προσήκει μᾶλλον) addidi,
 post νομίζειν Blass</note>
-
-<pb n="134"/>
+               <pb n="134"/>
 παροῦσι καὶ νομίζειν ἔχειν τι τοιοῦτον, ὡς μηδὲν ἔτι
 τοιοῦτον ἔσται; πρῶτον μὲν οὖν τοὺς διαφερομένους
 πρὸς ἀλλήλους καὶ τῶν ῥητόρων καὶ τῶν ἄλλων ἀποδείξω
@@ -372,15 +375,14 @@ post νομίζειν Blass</note>
 <lb n="15"/> τοιαύτη μὲν οὖν τις ἡ Θρασυμάχειος ἑρμηνεία, μέση
 τοῖν δυεῖν καὶ εὔκρατος καὶ εἰς <add cause="omitted">ἀμφο</add>τέρους τοὺς
 χαρακτῆρας ἐπίκαιρον ἀφετήριον.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="4">
-<p>4 <add cause="omitted">ἡ δὲ Ἰσο</add> κράτους λέξις, ὃς μέγιστον ὄνομα ἐν
+         </div>
+         <div n="4" type="chapter">
+            <p>4 <add cause="omitted">ἡ δὲ Ἰσο</add> κράτους λέξις, ὃς μέγιστον ὄνομα ἐν
 τοῖς Ἕλλησιν <add cause="omitted">ἐκτήσατο ἐπὶ σοφίᾳ</add>, ἀγῶνα μὲν οὔτʼ
 <lb n="20"/> ἴδιον οὔτε δημόσιον οὐδένα <add cause="omitted">πώποτε τἀνδρὸς ἀγωνισομένου </add>
-<note type="footnote">1 post νομίζειν in P εἴωθεν τί δῆτα uerba repetuntur</note>
-<note type="footnote">2 τοιοῦτον del Usener 4 παρά λόγον Usener: προλέγων</note>
-<note type="footnote">5 φιλονεικοῦντας MB 7 πράττειν πράττοντες Pv
+               <note type="footnote">1 post νομίζειν in P εἴωθεν τί δῆτα uerba repetuntur</note>
+               <note type="footnote">2 τοιοῦτον del Usener 4 παρά λόγον Usener: προλέγων</note>
+               <note type="footnote">5 φιλονεικοῦντας MB 7 πράττειν πράττοντες Pv
 8 σφετέρῳ Cobet: ἑτέρῳ MBP ἐν τῷ τῶν ἑτέρων deleto λόγῳ
 Blass | σκέψασθαι BP 10 ῥᾴστη Sylburgius: ῥᾴστην | κοινω-
 τάτη M 11 ἐπέκεινα Reiskius: ἐκείνων 12 γνώμης] μνήμης
@@ -389,12 +391,11 @@ Sauppius conieci ἀκοῇ μὲν (cf Thucyd I 23, 3 τὰ τε πρότε-
 (uelut ἀκοὴν τεθνεῶτος οὐ ζῶντος μαρτυρεῖν Demosthenes).
 ἀκούειν ἀνάγκη λεγόντων τῶν παλαιοτέρων Reiskius ἀκούον-
 τας (?) ἀνάγκη λέγειν τῶν παλαιοτέρων Blass 15 μέση τοῖς B</note>
-<note type="footnote">16 δυ[εῖ]ν cum ras M | lac IV litt M, XII B. XV fare P:
+               <note type="footnote">16 δυ[εῖ]ν cum ras M | lac IV litt M, XII B. XV fare P:
 suppleuit Sylburgius 18 lac X litt M, XII fere B, XXXVII
 fere P: suppleuit Sylburgius 19 Ἕλλη cum lac XXI litt M,
 Ἕλλησιν cum lac VII litt B. XXXVI fare litt P: suppleui</note>
-
-<pb n="135"/>
+               <pb n="135"/>
 γραφὰς δὲ συνταξαμένου πολλὰς καὶ καλὰς
 εἰς ἅπασαν ἰδέαν λόγων, ὅντινα χαρακτῆρα ἔχειν ἐφαίνετό μοι,
 διὰ πλειόνων μὲν ἐδήλωσα πρότερον. οὐθὲν
@@ -424,11 +425,10 @@ B. XXXVIII fere litt νισομένου P: suppleui γραφὰς δὲ συν-
 πλειόνων MB 5 λσιακῆς B λυρακῆς P 8 συν[η]θεστάτοις
 cum ras M 10 τὴν ἁπλῆν seclusi 12 εἴληφε] ἀνείληφε
 MBPv 13 BP in mg rubro σημείωσαι 14 λύρου P λύροῦ B</note>
-<note type="footnote">15 κατ[απ]λήξασθαι cum ras M 18 ἐκμέμακται siue ἐκ-
+               <note type="footnote">15 κατ[απ]λήξασθαι cum ras M 18 ἐκμέμακται siue ἐκ-
 μέμαχεν Krüger: ἐκμέμακεν 19 ζελοῦσα corr in ζηλοῦσα P
 21 οὔτ᾿ ἐν Sadaeus: οὔτε 22 εὐεπίαν MBP</note>
-
-<pb n="136"/>
+               <pb n="136"/>
 λαμβάνει τὸ συγκροῦσαι τὰ φωνήεντα τῶν γραμμάτων
 διʼ εὐλαβείας δὲ ποιεῖται τὸ χρήσασθαί τινι τῶν
 τραχυνόντων. διώκει δʼ ἐκ παντὸς τρόπου τὴν περίοδον
@@ -439,10 +439,10 @@ MBPv 13 BP in mg rubro σημείωσαι 14 λύρου P λύροῦ B</note>
 κἀναληθεστέραν ἀπαθῆ τε καὶ <add cause="omitted">ἄψυχον</add> καὶ πανηγυρικὴν
 μᾶλλον ἢ ἐναγώνιον. τοῖς δὲ παραδείγμασιν
 <lb n="10"/> ὀλίγον ὕστερον, ὅταν ὁ καιρὸς ἀπαιτῇ, χρήσομαι.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="5">
-<lb n="5"/><p> ἡ δὲ δὴ Πλατωνικὴ διάλεκτος βούλεται μὲν εἶναι
+         </div>
+         <div n="5" type="chapter">
+            <lb n="5"/>
+            <p> ἡ δὲ δὴ Πλατωνικὴ διάλεκτος βούλεται μὲν εἶναι
 καὶ αὐτὴ μῖγμα ἑκατέρων τῶν χαρακτήρων, τοῦ | τε <milestone unit="965"/>
 ὑψηλοῦ καὶ ἰσχνοῦ, καθάπερ εἴρηταί μοι πρότερον,
 πέφυκε δʼ οὐχ ὁμοίως πρὸς ἀμφοτέρους τοὺς χαρακτῆρας
@@ -462,13 +462,12 @@ lac X litt M τε lac VIII litt B, lac XXXIII fere litt P: suppleuit
 Sadaeus | καὶ ante πανηγυρικὴν om M 9 ἐναγώνιον M, B mg:
 ἐγκώνιον BP 10 ἀπαιτεῖ P 11 quae secuntur usque ad
 p 139, 21, eadem exstant paullulum uariata in ep ad Pomp
-p 758 R sqq (&#8736;) 12 μῖγμα] δεῖγμα &#8736; 13 ὑψιλοῦ P 14 δὲ
-BP&#8736; | ἀμφοτέρων B 15 οὖ P | ἰσχὴν ΒP 17 τε γὰρ &#8736;v</note>
-<note type="footnote">18 ναγμάτων P σωμάτων &#8736; 19 ἥντινα οὖν in ἡντιν’ οὖν
-corr rubro M | τὴν &#8736;: εἰς τὴν MBP 21 ὑπεριδοῦσαν M1
+p 758 R sqq (∠) 12 μῖγμα] δεῖγμα ∠ 13 ὑψιλοῦ P 14 δὲ
+BP∠ | ἀμφοτέρων B 15 οὖ P | ἰσχὴν ΒP 17 τε γὰρ ∠v</note>
+               <note type="footnote">18 ναγμάτων P σωμάτων ∠ 19 ἥντινα οὖν in ἡντιν’ οὖν
+corr rubro M | τὴν ∠: εἰς τὴν MBP 21 ὑπεριδοῦσαν M1
 </note>
-
-<pb n="137"/>
+               <pb n="137"/>
 κατασκευῆς ἐπιθέτου. ὅ τε πίνος αὐτῇ <del>καὶ ὁ χνοῦς</del>
 ὁ τῆς ἀρχαιότητος ἠρέμα καὶ λεληθότως ἐπιτρέχει
 χλοερόν τέ τι καὶ τεθηλὸς καὶ μεστὸν ὥρας ἄνθος
@@ -491,31 +490,29 @@ corr rubro M | τὴν &#8736;: εἰς τὴν MBP 21 ὑπεριδοῦσαν 
 <note type="footnote">1 scholion ὁ ῥύπος ἤτοι ὁ ἐπικείμενος χνοῦς ὡς (καὶ P)
 ἐπὶ μήλων (μύλων B μέλων P) καὶ ἀπίων (ἀπιʼ BP) καὶ δα-
 μασκηνῶν (δαμασκινῶν BP) in mg rubro MBP</note>
-<note type="footnote">1 πῖνος libri | καὶ ὁ χνοῦς (σχνοῦς BP) om &#8736; 3 ἱλαρὸν &#8736; |
-τεθηλὰ B 4 ηρεὐωδεστάτων B λειμύων B 5 εἰσφέρεται &#8736;</note>
-<note type="footnote">7 καλλιεπεῖν M ci Sylburgius: κάλλιον εἰπεῖν BP, M mg
-κάλλιστον εἰπεῖν &#8736; 9 τῆς ἑτέρας om &#8736; del Sadaeus
-10 παχυτέρα τῆς B | μελαίνει] μέλει B 11 τε γάρ τὸ &#8736;v
-12 συστρέψαι δὲ &#8736; 13 ἐκχεῖται εἰς &#8736; χεῖται δʼ εἰς MBP
-14 κενὸν om &#8736; 15 δὲ &#8736; | κυρίων ὀνομάτων &#8736; 17 χειμάζ ται
-περ[ὶ] cum ras M | μὲν γὰρ &#8736;v 18 δὲ M&#8736; (codd PB) om P |
-μεσωνυμίας μἐ σῶν νυμίαις B ἐπωνυμίαις &#8736; deinde ἄκαι-
+               <note type="footnote">1 πῖνος libri | καὶ ὁ χνοῦς (σχνοῦς BP) om ∠ 3 ἱλαρὸν ∠ |
+τεθηλὰ B 4 ηρεὐωδεστάτων B λειμύων B 5 εἰσφέρεται ∠</note>
+               <note type="footnote">7 καλλιεπεῖν M ci Sylburgius: κάλλιον εἰπεῖν BP, M mg
+κάλλιστον εἰπεῖν ∠ 9 τῆς ἑτέρας om ∠ del Sadaeus
+10 παχυτέρα τῆς B | μελαίνει] μέλει B 11 τε γάρ τὸ ∠v
+12 συστρέψαι δὲ ∠ 13 ἐκχεῖται εἰς ∠ χεῖται δʼ εἰς MBP
+14 κενὸν om ∠ 15 δὲ ∠ | κυρίων ὀνομάτων ∠ 17 χειμάζ ται
+περ[ὶ] cum ras M | μὲν γὰρ ∠v 18 δὲ M∠ (codd PB) om P |
+μεσωνυμίας μἐ σῶν νυμίαις B ἐπωνυμίαις ∠ deinde ἄκαι-
 ρος δʼ — μεσωνυμίαις repetit P 19 ante σκληρὰ lac V litt B,
 XXII litt P | σκληρᾶς B σκληρὰς P | post σκληρὰ lac VI litt M,
 III litt B, XXVII litt P</note>
-
-<pb n="138"/>
-<add cause="omitted">μεταφοραῖς</add>. ἀλληγορίας τε περιβάλλεται πολλὰς <add cause="omitted">καὶ
+               <pb n="138"/>
+               <add cause="omitted">μεταφοραῖς</add>. ἀλληγορίας τε περιβάλλεται πολλὰς <add cause="omitted">καὶ
 μακράς</add>, οὔτε μέτρον ἐχούσας οὔτε καιρόν. σχήμασί
 τε ποιητικοῖς ἐσχάτην προσβάλλουσιν ἀηδίαν καὶ μάλιστα
 τοῖς Γοργιείοις ἀκαίρως καὶ μειρακιωδῶς
 <lb n="5"/> ἐναβρύνεται. καὶ πολὺς ὁ τελέτης ἐν τοῖς τοιούτοις <milestone unit="967"/>
 παῤ αὐτῷ, ὡς καὶ Δημήτριος ὁ Φαληρεὺς εἴρηκέ που
 καὶ ἄλλοι συχνοὶ πρότερον. οὐ γὰρ ἐμὸς ὁ μῦθος.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="6">
-<p>6 μηδεὶς δέ με τὰ τοιαῦτα ὑπολάβῃ λέγειν ἁπάσης
+         </div>
+         <div n="6" type="chapter">
+            <p>6 μηδεὶς δέ με τὰ τοιαῦτα ὑπολάβῃ λέγειν ἁπάσης
 καταγινώσκοντα τῆς ἐξηλλαγμένης καὶ ἐγκατασκεύου
 <lb n="10"/> λέξεως, <add cause="omitted">ᾗ</add> κέχρηται Πλάτων· μὴ γὰρ δὴ οὕτω σκαιὸς
 μηδʼ ἀναίσθητος ἐγὼ γενοίμην, ὥστε ταύτην τὴν δόξαν
@@ -530,22 +527,21 @@ III litt B, XXVII litt P</note>
 <lb n="20"/> δʼ ἀμωμήτῳ καὶ ἀφελεῖ κατασκευῇ διάλεκτον <milestone unit="968"/>
 εἰσφέρῃ. ἢ γὰρ οὐδὲν ἁμαρτάνει καθάπαξ ἢ
 <note type="footnote">1 lac XV litt M, VI litt B. VII litt P, μεταφοραῖς suppleui:
-μεταφοραῖς γίγνεται &#8736;v | ἀλληγορί[ας] cum ras M | post πολλὰς
+μεταφοραῖς γίγνεται ∠v | ἀλληγορί[ας] cum ras M | post πολλὰς
 lac XIX fere litt M, XIII litt B, item lac in P 2 οὕτε με-
 τρον M, sed ita ut οὔτε με postea additum sit: τρον BP | σχή-
 μαυρ sic B 3 ἐσχάτης P 4 Γοργιείοις Reiskius: γοργίοις
-MBP γοργείοις &#8736; 5 πολὺς ὁ τελέτης Usener: πολυτέλειά
-τις MBP πολὺς ὁ τελετὴς &#8736; | ἐστιν ἐν τοῖς &#8736;v 7 πρότερον
-om &#8736; 9 ἐξηλλασμένης P ἐξηλασμένης B 10 ᾗ add &#8736; | κέχρι-
-ται P | Πλάτων τῆς τοιαύτης φράσεως &#8736; | δὴ Cobet: ἂν MBP
-om &#8736; 12 καὶ περὶ &#8736;v 14 ἐξενηνεγμένος P ἐξενηνεσμένος B</note>
-<note type="footnote">15 βουλόμενον &#8736;(M), Reiskius: βουλόμενος τά suppeditat &#8736;</note>
-<note type="footnote">16 μὲν om &#8736; 17 αὐτοῦ P | διώκει P 18 ἰσχὴν B
-19 καὶ ante δοκ- om &#8736; 20 δὲ P&#8736; | ἀμωμήτως MBP 21 εἰσφέ-
-ρει P | καθάπαξ ἢ βραχύ τι κομιδῆ MBP: ἢ κομιδῆ βραχύ τι &#8736;
+MBP γοργείοις ∠ 5 πολὺς ὁ τελέτης Usener: πολυτέλειά
+τις MBP πολὺς ὁ τελετὴς ∠ | ἐστιν ἐν τοῖς ∠v 7 πρότερον
+om ∠ 9 ἐξηλλασμένης P ἐξηλασμένης B 10 ᾗ add ∠ | κέχρι-
+ται P | Πλάτων τῆς τοιαύτης φράσεως ∠ | δὴ Cobet: ἂν MBP
+om ∠ 12 καὶ περὶ ∠v 14 ἐξενηνεγμένος P ἐξενηνεσμένος B</note>
+               <note type="footnote">15 βουλόμενον ∠(M), Reiskius: βουλόμενος τά suppeditat ∠</note>
+               <note type="footnote">16 μὲν om ∠ 17 αὐτοῦ P | διώκει P 18 ἰσχὴν B
+19 καὶ ante δοκ- om ∠ 20 δὲ P∠ | ἀμωμήτως MBP 21 εἰσφέ-
+ρει P | καθάπαξ ἢ βραχύ τι κομιδῆ MBP: ἢ κομιδῆ βραχύ τι ∠
 </note>
-
-<pb n="139"/>
+               <pb n="139"/>
 βραχύ τι κομιδῇ καὶ οὐκ ἄξιον κατηγορίας. ἐγὼ δὲ
 ἠξίουν τηλικοῦτον ἄνδρα πεφυλάχθαι πᾶσαν ἐπιτίμησιν.
 ταὐτὰ μέντοι καὶ οἱ κατʼ αὐτὸν ἐκεῖνον γενόμενοι ὡς
@@ -560,30 +556,29 @@ om &#8736; 12 καὶ περὶ &#8736;v 14 ἐξενηνεγμένος P ἐξ�
 καὶ Θουκυδίδου κατασκευῆς ἐρασθείς. ὥστʼ οὐθὲν ἔξω
 τοῦ εἰκότος ἔμελλε πείσεσθαι σπάσας τινὰ καὶ τῶν
 ἁμαρτημάτων ἅμα τοῖς ἀγαθοῖς, ὧν ἔχουσιν οἱ τῶν
-ἀνδρῶν ἐκείνων χαρακτῆρες.|</p><lb n="15"/>
-</div>
-
-<div type="textpart" subtype="chapter" n="7">
-<p>7 παράδειγμα δὲ ποιοῦμαι τῆς γε ὑψηλῆς λέξεως <lb n="7"/>
+ἀνδρῶν ἐκείνων χαρακτῆρες.|</p>
+            <lb n="15"/>
+         </div>
+         <div n="7" type="chapter">
+            <p>7 παράδειγμα δὲ ποιοῦμαι τῆς γε ὑψηλῆς λέξεως <lb n="7"/>
 ἐξ ἑνὸς βυβλίου τῶν πάνυ περιβοήτων, ἐν ᾧ τοὺς
 ἐρωτικούς διατίθεται λόγους ὁ Σωκράτης πρὸς ἕνα τῶν
 γνωρίμων Φαῖδρον, ἀφʼ οὗ τὴν ἐπιγραφὴν εἴληφε τὸ
 βυβλίον. ἐν γὰρ δὴ τῷ συγγράμματι τούτῳ πολλὴν <lb n="20"/>
 μὲν ὥραν ἔχει καὶ χαρίτων ἐστὶ μεστὰ τὰ πρῶτα ταυτί·
 <note type="footnote">2 ἐπιτίμεσιν B 3 ταὐτὰ Usener: ταῦτα | μέντοι καὶ οἱ
-κατʼ αὐτὸν ἐκεῖνον MBP: γὰρ οἵ τε κατʼ αὐτὸν &#8736; | γενόμενος P |
-ὡς ἁμαρτάνοντι τῷ ἀνδρὶ MBP: πάντες &#8736; 5 οὐδὲν &#8736; ἀ οὐθὲν
-P | δεῖ με &#8736; | καὶ αὐτῷ P, B sed is in mg rubro αὐτὸς ἑαυτῶ |
-δὴ om &#8736; 6 γὰρ ὡς ἔοικεν — ἔθετο om B | ὡς ἔοικεν om &#8736;</note>
-<note type="footnote">7 ἔθετʼ &#8736; | τὸ &#8736;: τὸν MBPv 9 μὲν om &#8736; 10 ἰσχνο-
+κατʼ αὐτὸν ἐκεῖνον MBP: γὰρ οἵ τε κατʼ αὐτὸν ∠ | γενόμενος P |
+ὡς ἁμαρτάνοντι τῷ ἀνδρὶ MBP: πάντες ∠ 5 οὐδὲν ∠ ἀ οὐθὲν
+P | δεῖ με ∠ | καὶ αὐτῷ P, B sed is in mg rubro αὐτὸς ἑαυτῶ |
+δὴ om ∠ 6 γὰρ ὡς ἔοικεν — ἔθετο om B | ὡς ἔοικεν om ∠</note>
+               <note type="footnote">7 ἔθετʼ ∠ | τὸ ∠: τὸν MBPv 9 μὲν om ∠ 10 ἰσχνο-
 τούτους B lac IV litt M, nulla in BP 11 μείνους B δ om
 BP | Γοργίου] γίου postea add M 14 -τημάτων ἅμα in M
 postea additum est | ἁμαρ P | ἕχουσι BP 15 ἐκείνων χα-
-ρακτῆρες in M postea additum 16 παραδείγματα &#8736; | ποιήσο-
-μαι &#8736; | τῆς ἰσχνῆς καὶ τῆς ὑψ- &#8736; | ὑψιλῆς P 17 βιβλίον M</note>
-<note type="footnote">18 διατέθειται &#8736; 21 μεστὰ] μετὰ BP</note>
-
-<pb n="140"/>
+ρακτῆρες in M postea additum 16 παραδείγματα ∠ | ποιήσο-
+μαι ∠ | τῆς ἰσχνῆς καὶ τῆς ὑψ- ∠ | ὑψιλῆς P 17 βιβλίον M</note>
+               <note type="footnote">18 διατέθειται ∠ 21 μεστὰ] μετὰ BP</note>
+               <pb n="140"/>
 ‘Ὦ φίλε Φαῖδρε, ποῖ δὴ καὶ πόθεν; Παρὰ Λυσίου, ὦ
 Σώκρατες, τοῦ Κεφάλου. πορεύομαι δὴ πρὸς περίπατον
 ἔξω τείχους. συχνὸν γὰρ ἐκεῖ διέτριψα χρόνον καθήμενος
@@ -606,20 +601,19 @@ postea additum est | ἁμαρ P | ἕχουσι BP 15 ἐκείνων χα-
 <lb n="20"/> περίφρασιν ὀλίγοις τοῖς ὀνόμασι δυναμένου περιληφθῆναι
 <note type="footnote">1 Plato Phaedri 227a 8 Plato Phaedri 237a 14 Plato
 Phaedri 238b</note>
-<note type="footnote">1 ὦ φίλε — Λυσίου rubro in mg add P | λυίου B 2 δὴ
+               <note type="footnote">1 ὦ φίλε — Λυσίου rubro in mg add P | λυίου B 2 δὴ
 MBP: δὲ vΠ (Plato) 4 λυιακοῦ B tota haec μέχρι — ἕως
 τινὸς Sylburgius secluserat 5 λόγους B 6 πολὺς — καθαρὸν
 om B 7 ποιητικὸν ποιητικὴν P 9 λίγειε BP 10 μουσικὸν
 τὸ Λιγύων Π μουσικὸν — ξύμμοι om B | ἔσχε P | τὴν om Π</note>
-<note type="footnote">11 λαβέσθαι P 15 τἀγαθὸν] τὸ ὀρθὸν Π, quare Dionysius
+               <note type="footnote">11 λαβέσθαι P 15 τἀγαθὸν] τὸ ὀρθὸν Π, quare Dionysius
 fort τοὐρθὸν legit | ὁρμώσ[η]ς cum ras M | κρατήσασθα B
 16 ἀχθεῖσα Π | τῶν ἑαυτῆς MP: τῆς B ὑπὸ αὖ τῶν ἑαυτῆς vΠ</note>
-<note type="footnote">17 ἐπιθυμίαν Pv | ἐπὶ σωμάτων κάλλος om Pv | λαβοῦσα
+               <note type="footnote">17 ἐπιθυμίαν Pv | ἐπὶ σωμάτων κάλλος om Pv | λαβοῦσα
 ἐρρωμένως P?v | ἐρρωμένως] ἐρωμένων M 18 ῥωσθεῖσαν BP
 ἀγωγῆ Π | γνώμης P | ἐπωνυμίαν Πv: ἐπιθυμίαν MBP
 19 ἐλεκλήθη P</note>
-
-<pb n="141"/>
+               <pb n="141"/>
 πράγματος ἐπιλαμβάνεται τῆς ἀκαιρίας τῆς
 αὐτὸς αὐτοῦ καί φησι· ‘Σιγῇ τοίνυν μου ἄκουε. τῷ
 ὄντι γὰρ θεῖος εἶναι ἔοικεν ὁ τόπος. ὥστʼ ἐὰν ἄρα
@@ -640,9 +634,9 @@ fort τοὐρθὸν legit | ὁρμώσ[η]ς cum ras M | κρατήσασθα
 μακάριαι θέαι τε καὶ ἔξοδοι ἐντὸς οὐρανοῦ, ἃς θεῶν
 γένος εὐδαιμόνων ἐπιστρέφεται, πράττων ἕκαστος διʼ
 <lb n="972"/> αὑτοῦ τὰ αὐτῶν. ἕπεται δʼ | αἰεὶ ὁ θέλων τε καὶ <lb n="20"/>
-<note type="footnote">2 Plato Phaedri 238d 6 Aeschyli fr 135 N 11 Plato
+               <note type="footnote">2 Plato Phaedri 238d 6 Aeschyli fr 135 N 11 Plato
 Phaedri 246e—247a</note>
-<note type="footnote">1 τῆς αὐτὸς αὐτοῦ sanum est 2 αὑτοῦ M | φησι γῇ τοῖν
+               <note type="footnote">1 τῆς αὐτὸς αὐτοῦ sanum est 2 αὑτοῦ M | φησι γῇ τοῖν
 νῦν B 3 θεῖος MΠ: θεῖοά B θειοα P | εἶναι add in mg
 rubro B | ἔοικεν om P ἔοικεν ὁ τόπος εἶναι Π | ὥστʼ ἐὰν] ὥστε
 ἄν MBPv 4 προιόντος τοῦ λόγου γένωμαι Π 5 lac VIII
@@ -655,8 +649,7 @@ XII litt B. VIII litt P: suppleuit Porson 9 ἠγαποικότες P
 ras M | τῶν ἄλλων P 18 θεαί MBP | διέξοδοι Π | ἐνδὸς
 BP 19 διʼ αὐτοῦ MBP ἕκαστος αὐτῶν τὰ αὑτοῦ Π
 </note>
-
-<pb n="142"/>
+               <pb n="142"/>
 δυνάμενος· φθόνος γὰρ ἔξω θείου χοροῦ ἵσταται.ʼ
 ταῦτα καὶ τὰ ὅμοια τούτοις, ἃ πολλά ἐστιν, εἰ λάβοι
 μέλη καὶ ῥυθμοὺς ὥσπερ οἱ διθύραμβοι καὶ τὰ ὑπορχήματα,
@@ -676,8 +669,8 @@ BP 19 διʼ αὐτοῦ MBP ἕκαστος αὐτῶν τὰ αὑτοῦ Π
 γένος, ὀλοφὺ| <add cause="omitted">ρομαι οὐ</add> δὲν ὅ,τι πάντων μέτα πείσομαι᾿. <milestone unit="974"/>
 κἀνταῦθα οὐ <add cause="omitted">κ ἄκαιρος ἡ ἀλ</add> ληγορία, ὡς παρὰ
 Πλάτωνι.</p>
-<note type="footnote">6 Pindari fr 107 Bergkii</note>
-<note type="footnote">6 ἐμήσω Bamberger et Emper: ἐμῆς | θοῶν Bergkius:
+            <note type="footnote">6 Pindari fr 107 Bergkii</note>
+            <note type="footnote">6 ἐμήσω Bamberger et Emper: ἐμῆς | θοῶν Bergkius:
 θεῶ | μᾶτερ Boissonadius: μʼ ἅτερ M μ ἁτερ B μʼ ἄτερ P
 8 ἀγμάχανον B | ἰσχὲν B ἀνδράσιν M 9 ἐπίσκοπον corr in
 ἐπίσκοτον M ἐπίσκοπτον B ἐπισκόπτεν P ἀτραπὸν ἐσσυμένα
@@ -693,11 +686,10 @@ lac IX litt M, XVII litt B. XXV litt P: suppleuit Hermannus
 δὲν ὅτι M, om BP μεταπείσομαι MBP: corr Hermannus
 18 lac VIII litt M, XI litt B ca XXVIP: suppleui | ληγορία om BP
 </note>
-</div>
-
-<div type="textpart" subtype="chapter" n="8">
-<pb n="143"/>
-<p>8 ἀλλὰ γάρ, ἵνα μὴ <add cause="omitted">πέρα τοῦ δέοντος</add> ὁ λόγος μοι <lb n="8"/>
+         </div>
+         <div n="8" type="chapter">
+            <pb n="143"/>
+            <p>8 ἀλλὰ γάρ, ἵνα μὴ <add cause="omitted">πέρα τοῦ δέοντος</add> ὁ λόγος μοι <lb n="8"/>
 προβῇ, Πλάτωνα μὲν ἐάσω, πορεύσομαι δʼ ἐπὶ τὸν
 Δημοσθένην, οὗ δὴ χάριν τούς τε χαρακτῆρας τῆς
 λέξεως, οὓς ἡγούμην εἶναι κρατίστους, καὶ τοὺς δυναστεύσαντας
@@ -721,16 +713,15 @@ lac IX litt M, XVII litt B. XXV litt P: suppleuit Hermannus
 <note type="footnote">16—18 cf anonymus W VII 1049, 8 21 sq memorat
 schol Demosth 604, 21 Dind καὶ Διονύσιος αὐτὸν Πρωτέα
 ἐκάλεσεν, ὅτι εἰς πολλὰ καὶ τὰ ἐναντία μορφοῖ τὸν λόγον, νῦν</note>
-<note type="footnote">1 μὴ] μὲ B | lac XIV litt M, XII B, XX P: suppleuit
+               <note type="footnote">1 μὴ] μὲ B | lac XIV litt M, XII B, XX P: suppleuit
 Sadaeus post Krügerum 2 δὲ M 3 περὶ δημοσθένους mg B</note>
-<note type="footnote">4 δυναστεύσαν P 5 κατηριθμησάμ M 6 καὶ πολυκρι καὶ
+               <note type="footnote">4 δυναστεύσαν P 5 κατηριθμησάμ M 6 καὶ πολυκρι καὶ
 πολυκράτους addito η super ους P 10 τούτους τοὺς] τοὺς B
 corr B1 | ἑαυτὸν MBP ἑαυτῶν mg B 11 καλαβὼν P 12 οὕτω
 κ π corrupta aut spuria 13 μὲν om Pv 14 οὔτʼ P
 15 ἡμιούργους BP 19 συνήθη—ἱλαράν om B 20 ἱ[λ]ταράν
 cum ras M 21 διαλάττουσαν B</note>
-
-<pb n="144"/>
+               <pb n="144"/>
 παρὰ τοῖς ἀρχαίοις ποιηταῖς Πρωτέως, ὃς ἅπασαν
 ἰδέαν μορφῆς ἀμογητὶ μετελάμβανεν, εἴτε θεὸς ἢ δαίμων
 τις ἐκεῖνος ἄρα ἦν παρακρουόμενος ὄψεις τὰς
@@ -741,10 +732,9 @@ cum ras M 21 διαλάττουσαν B</note>
 τινὰ δόξαν ὑπὲρ τῆς Δημοσθένους λέξεως ἔχω
 καὶ τὸν χαρακτῆρα τοῦτον ἀποδίδωμι αὐτῷ τὸν ἐξ
 <lb n="10"/> ἁπάσης μικτὸν ἰδέας.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="9">
-<p>9 εἰ δὲ τὰ προσήκοντα ἔγνωκα, πάρεστι τῷ βουλομένῳ <lb n="976"/>
+         </div>
+         <div n="9" type="chapter">
+            <p>9 εἰ δὲ τὰ προσήκοντα ἔγνωκα, πάρεστι τῷ βουλομένῳ <lb n="976"/>
 σκοπεῖν ἐπʼ αὐτῶν ποιουμένῳ τῶν <add cause="omitted">παραδειγ</add> μάτων
 τὴν ἐξέτασιν. ἃ μὲν οὖν παρὰ τὸν Θουκυδίδου χαρακτῆρα
 κατεσκεύασται τῷ ῥήτορι, <add cause="omitted">τοιάδε τινά ἐστιν</add>· ‘Πολλῶν,
@@ -758,7 +748,7 @@ cum ras M 21 διαλάττουσαν B</note>
 προειμένα ὁρῶ, ὥστε δέδοικα, μὴ βλάσφημον μὲν εἰπεῖν
 <note type="footnote">μὲν ἱκετεύων, νῦν δὲ οἰκτιζόμενος, μετʼ ὀλίγον προτρέπων, αὖθις
 φοβῶν 14 Demosthenes Philippicae III 110</note>
-<note type="footnote">3 ὅψις BP 4 ποικίλου P | τι M: δὴ BPv 5 ἀπατητὸν B |
+               <note type="footnote">3 ὅψις BP 4 ποικίλου P | τι M: δὴ BPv 5 ἀπατητὸν B |
 εἰκάσειαν B 7 δὴ add Sadaeus 9 χαρτῆρα P 12 ποιουμένῳ
 Sylburgius: ποιουμένων | lac X fere litt M, in BP λόγων deinde
 lac fere XIV litt B, XXXVI P: corr Krüger 14 ταιαῦτά τινά
@@ -767,8 +757,7 @@ litt, nulla in P 18 Ἕλληνας om libri, add ex Demosthene
 Sylburgius 19 δεῖν om libri, add Sylburgius 20 πράττειν
 ἅπασι προσήκειν v ἅπασι προσήκειν m recentissima in mg M |
 παύσηται MBP 22 προιέμενα BP</note>
-
-<pb n="145"/>
+               <pb n="145"/>
 ἀληθὲς δὲ ᾖ· εἰ καὶ λέγειν ἅπαντες ἐβούλοντο οἱ
 <lb n="977"/> παριόντες καὶ χειροτονεῖν ὑμεῖς, ἐξ ὧν ὡς φαυλότατα
 τὰ πράγματα ἤμελλεν ἕξειν, οὐκ ἂν ἡγοῦμαι
@@ -794,7 +783,7 @@ Sylburgius 19 δεῖν om libri, add Sylburgius 20 πράττειν
 συνήθους ἐξηλλαγμένην καὶ περίεργον πεποίηκε τὴν
 λέξιν. ὁμοίως δὲ καὶ <add cause="omitted">τὸ</add> ἐπιλεγόμενον τούτῳ, εἰ μὲν
 ἁπλῶς καὶ ἀπεριέργως ἔδει ῥηθῆναι, τοῦτον ἂν δή που <lb n="25"/>
-<note type="footnote">2 παρά ὄντες P | ἐξ ὧν om P 8 post σύνηθες inter-
+               <note type="footnote">2 παρά ὄντες P | ἐξ ὧν om P 8 post σύνηθες inter-
 pungunt MBPv, post λέγειν Kiessling 12 ἐστιν addito ν super
 ιν et mg rubro ἦν B quod ad sequentia pertinet | ἦν Syl-
 burgius: ἐστὶ 13 ἑρμηνείαν om B 15 γινομένων P
@@ -802,8 +791,7 @@ burgius: ἐστὶ 13 ἑρμηνείαν om B 15 γινομένων P
 μένου Reiskius: δυνάμενον 22 μόνης om Pv 24 λ[έξιν] postea
 add M | τὸ add Sylburgius 25 ἀπεριέργως postea add M
 περιέργως P</note>
-
-<pb n="146"/>
+               <pb n="146"/>
 τὸν τρόπον ἀπήγ <add cause="omitted">γελτο· ‘κ</add> αὶ πάντων λεγόντων, καὶ
 εἴ τινες τοῦτο μὴ ποιοῦσιν, ὅτι δεῖ καὶ λέγειν καὶ
 πράττειν ταῦτα, ἐξ ὧν ἐκεῖνος παύσεται τῆς ὕβρεως
@@ -828,18 +816,17 @@ add M | τὸ add Sylburgius 25 ἀπεριέργως postea add M
 κἀκεῖνα τῆς αὐτῆς ἐστιν ἰδέας· ‘νῦν δὲ τοῦτο μὲν οὐκ
 <note type="footnote">10 Demosthenes Philippicae γ 13 22 Demosthenes Mi-
 dianae 69</note>
-<note type="footnote">1 ἀπήγγελτο καὶ πάντων] ἀπήγγελτο καὶ ἀπάντων Sylburgius
+               <note type="footnote">1 ἀπήγγελτο καὶ πάντων] ἀπήγγελτο καὶ ἀπάντων Sylburgius
 ἀπηγ lac IX litt M, XXI litt B. XXIV litt P deinde ἁπάντων MBP</note>
-<note type="footnote">2 ποιοῦσι BPv | ὅτι om cum spatio XV litt B, IX litt P | καὶ
+               <note type="footnote">2 ποιοῦσι BPv | ὅτι om cum spatio XV litt B, IX litt P | καὶ
 post λέγειν om BP 4 πάντων] πάνωντ BP 6 an εὖ οἶδʼ?
-7 ἔχει Sylburgius 10 εἴ τοι ἔσθε P | oἳ D (Demosthenes) &#8736; p 610:
+7 ἔχει Sylburgius 10 εἴ τοι ἔσθε P | oἳ D (Demosthenes) ∠ p 610:
 οὓς MBP | οὐδὲν om P 11 ἠδυνήθημεν MBP ἐδυνήθησαν v
-ἠδυνήθησαν &#8736; p 610 12 τούτοις BP 14 εἶχεν BP | σκο-
+ἠδυνήθησαν ∠ p 610 12 τούτοις BP 14 εἶχεν BP | σκο-
 λιὰν M 15 fort ἐξενήνεκτο | εἴτʼ M εἴτ’ P 16 αὐτῶν αὐτὸν
 Pv κάκιον] κακὸν MBPv κακῶς Krüger 22 αὐτοῖς P
 </note>
-
-<pb n="147"/>
+               <pb n="147"/>
 ἐποίησεν, ἐν ᾧ τὸν δῆμον ἐτίμησεν ἄν, οὐδʼ ἐνεανιεύσατο
 τοιοῦτον οὐδέν. ἐμοὶ δέ, ὅς, εἴτε τις, ὦ <add cause="omitted">ἄνδρε</add>
 Ἀθηναῖοι, βούλεται νομίσαι μανίαν (μανία γὰρ ἴσως
@@ -860,23 +847,22 @@ Pv κάκιον] κακὸν MBPv κακῶς Krüger 22 αὐτοῖς P
 νομίσαι μανίαν — ἕτερον τοῦτο κεχωρισμένον τοῦ
 προτέρου ἀτελὲς καὶ αὐτό — μανία γὰρ ἴσως ἐστὶν
 ὑπὲρ δύναμίν τι ποιεῖν — οὐδετέρου τοῦτο πάλιν τῶν <lb n="20"/>
-<milestone unit="981"/> προειρημέ|νων μέρος ἀλλʼ αὐτὸ καθʼ αὑτό· κεφαλαιώδης
+               <milestone unit="981"/> προειρημέ|νων μέρος ἀλλʼ αὐτὸ καθʼ αὑτό· κεφαλαιώδης
 γάρ τίς ἐστιν ἀπόφασις — ἢ φιλοτιμίαν — τοῦτο
 <note type="footnote">2 εἴ τέ P | ἄνδρες add ex D 4 τι] ει τὶ P | φιλοτιμίᾳ
-libri D plerique in quibus S φιλοτιμία &#8736; infra 5 καὶ μιαρῶς
+libri D plerique in quibus S φιλοτιμία ∠ infra 5 καὶ μιαρῶς
 om MBP add v ex D καὶ μιαρῶς—ἱερῶν om P 11 κὤλον P |
 τοῦ δένδρου τοῦ δευτέρου B 14 καὶ πειτα B | ἐποὶ P 15 οὐκε
 c lac II litt M οὐκ sine lac BP: corr Sylburgius | αὐτῷ προσεχο-
 μένης B αὐτὸ προσεῦχομένης P 16 προσδεχομένης lac V—VI)
 litt M, sed in mg ἀποδοῦναι lac IV siue V litt γὰρ ὃς in BP
 ἐμοὶ deest cum lac XII litt B. IV litt P: suppl Sylburgius | δὲ
-ὃς &#8736; p 979] γὰρ ὃς MBP | post ὃς lacuna minor in P 18 τούτω,
+ὃς ∠ p 979] γὰρ ὃς MBP | post ὃς lacuna minor in P 18 τούτω,
 mg rupro τοῦτο B 20 ναμιν τι ποιεῖν bis P οὐδʼ ἑτέρου
 MBP | τοῦ πάλιν P 21 προῃρημένων M 22 ἢ φιλοτιμίαν
 Usener: ἡ φιλοτιμία
 </note>
-
-<pb n="148"/>
+               <pb n="148"/>
 δὲ τοῦ δευτέρου μέρος ἦν τοῦ εἴτε τις βούλεται νομίσαι
 μανίαν. τὸ δʼ ἐπὶ τούτοις λεγόμενον ἅπασι τὸ χορηγὺς
 ὑπέστην τοῦ πρώτου μέρος ἦν τοῦ ἐμοὶ δέ, ὅς. μυρία
@@ -890,10 +876,9 @@ Usener: ἡ φιλοτιμία
 κεχρῆσθαι τὸν ἄνδρα πρὸς τὰς φύσεις ἀποβλέποντα
 τῶν ὑσποθέσεων καὶ τὰς ἀξιώσεις τῶν προσώπων πλανηθήσεταί
 τις· ὅπερ ἴσως οὐκ ἄλογον.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="10">
-<p>10 φέρε δὴ καὶ τίνι διαλλάττει τῆς Θουκυδίδου λέξεως
+         </div>
+         <div n="10" type="chapter">
+            <p>10 φέρε δὴ καὶ τίνι διαλλάττει τῆς Θουκυδίδου λέξεως
 <lb n="15"/> ἡ Δημοσθένους ἡ παρὰ τὸν αὐτὸν κατεσκευασμένη
 χαρακτῆρα, εἴπωμεν· ἀπαιτεῖ γὰρ ὁ λόγος. οὐχὶ τῷ <milestone unit="982"/>
 ποιῷ μὰ Δία· τοῦτο μὲν γὰρ ὁμοίως ἐπιτηδεύουσιν
@@ -904,16 +889,15 @@ Usener: ἡ φιλοτιμία
 αὐτῆς ἢ <add cause="omitted">αὐτὸ</add> ἄγει καὶ οὐδὲ τὸν καιρὸν αὐτῆς ἐπίσταται
 λαβεῖν δεξιῶς, ἀλλὰ καὶ παρὰ τοῦτον πολλάκις
 <note type="footnote">22 cf Thucydides II 65, 8</note>
-<note type="footnote">2 ἄπἀσι Vliet: ἅπαν χοριγὸς P 3 μέρους Μ 5 lacu-
+               <note type="footnote">2 ἄπἀσι Vliet: ἅπαν χοριγὸς P 3 μέρους Μ 5 lacu-
 nam sensit Sylburgius, qui ὀλίγα τὰ addidit (σπάνια τὰ Reiskius)
 plura desunt uelut ἐν ἄπασι τοῖς συμβουλευτικοῖς σπάνια τὰ
 6 ἀλονήσου MBPv 7 ἀγῶσι] ἀνῶσι P 8 τοι τούτοις P, horum
 et sequentium interpunctio in v librisque admodum laborat.</note>
-<note type="footnote">9 διανοίης P 11 τῶν ἀποβλέποντα Β 13 ἄλογον SP</note>
-<note type="footnote">16 γάρ — τοῦτο μὲν bis scripsit Β 18 λέγων δὲ Β
+               <note type="footnote">9 διανοίης P 11 τῶν ἀποβλέποντα Β 13 ἄλογον SP</note>
+               <note type="footnote">16 γάρ — τοῦτο μὲν bis scripsit Β 18 λέγων δὲ Β
 22 ἢ om P αὐτὸς add Sγlburgius</note>
-
-<pb n="149"/>
+               <pb n="149"/>
 ἀμταρτάνει. καθʼ ὅ ἡ μὲν ἀμετρία τῆς ἐξαλλαγῆς ἀσαφῆς
 ποιεῖ τὴν λέξιν αὐτοῦ, τὸ δὲ μὴ κρατεῖν τῶν καιρῶνς
 ἀηδῆ. ὁ δὲ ῥήτωρ τοῦ τε ἀρκοῦντος στοχάζεται καὶ,
@@ -927,23 +911,23 @@ et sequentium interpunctio in v librisque admodum laborat.</note>
 θους χαρακτῆρα, οὗ τὸ κράτος ἅπαν ἦν ἐν τῇ δεινότητι,
 καὶ ἔθουκυδίδην τὸν ἐν αὐτῷ πρωτεύσαντα
 μιμούμενος ὁ Δημοσθένης κατεσκεύακεν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="11">
-<p>11 ἃ δὲ παρὰ τὸν ἰσχνόν τε καὶ ἀκριβῆ καὶ καθαρον <lb n="11"/>
-καὶ ζηλωτὸν <gap reason="omitted"/> <add cause="omitted">ὅς</add> ἀπὸ τοῦ διαλάμψαντος ἐν αὐτῷ <lb n="15"/>
+         </div>
+         <div n="11" type="chapter">
+            <p>11 ἃ δὲ παρὰ τὸν ἰσχνόν τε καὶ ἀκριβῆ καὶ καθαρον <lb n="11"/>
+καὶ ζηλωτὸν <gap reason="omitted"/>
+               <add cause="omitted">ὅς</add> ἀπὸ τοῦ διαλάμψαντος ἐν αὐτῷ <lb n="15"/>
 Λυσιακὸς δἂν εἰκότως λέγοιτο, τοιαῦτα. κωλύσε
 δʼ οὐθέν, ἴσως δὲ καὶ χαριεστέραν ποιήσει τὴν θεω
 ρίαν τεθεῖσα πρῶτον ἡ Λυσίου λέξις, ᾗ τὴν Δημοσθέ
 νους ἐοικέναι πείθομαι, διήγησίν τινα περιέχχουσα
 ὑβριστικήν· ‘Ἄρχιππος γὰρ οὑτοσί, ὦ <add cause="omitted">ἄνδρεςο</add> Αθηναῖοι, <lb n="20"/>
-<note type="footnote">4 cf Thucydides I 22, 4 20 Lysiae fr CCXXXII S</note>
-<note type="footnote">1 ἡ om B τῆ ἀμετρία BP ἐξαλαγῆς P 2 τ[ὴν] cum
+               <note type="footnote">4 cf Thucydides I 22, 4 20 Lysiae fr CCXXXII S</note>
+               <note type="footnote">1 ἡ om B τῆ ἀμετρία BP ἐξαλαγῆς P 2 τ[ὴν] cum
 ras M 3 ἀηδῆ Sylburgius: μήδῆ addito α super μ Μ ἀμηδῆ
 ΒP τε Sylburgius: δὲ 4 καιροὺς συμ posthac add M συμ
 quidem ex ὀεμ 5 lac XI litt M, XXV B, XXXVIII P: suppl
 Sylburgius 7 ἐναγ[ω]νίοις cum ras M 10 ἐξηλαγμένον P</note>
-<note type="footnote">11 χαρακτῆρα Sylburgius: χαρακτῆρος 12 πρωτεύσανταω
+               <note type="footnote">11 χαρακτῆρα Sylburgius: χαρακτῆρος 12 πρωτεύσανταω
 Reiskius: πείσαντα 14 ἰσχνόν Kiessling: ἰσχυρόν M ἰο c lac v
 litt B, II litt P 15 ὃς intercidisse ante Krügerum sensit
 Martinius uersionis latinae auctor, uerum hoc quoque dicen
@@ -952,8 +936,7 @@ om Martinius in uersione 17 οὐδέν ΒP καὶ om ΒPv V
 18 ἢ τὴν P 20 eadem exstant apud Ioannem Siceliotam εἐς
 τὸ περὶ εὑρέσεως Ερμογένους βιβλίον (cf. Βekkeri anecd. p 1454)
 </note>
-
-<pb n="150"/>
+               <pb n="150"/>
 ἀπεδύσατο μὲν εἰς τὴν αὐτὴν παλαίστραν, οὗπερ
 καὶ Τῖσις ὁ φεύγων τὴν δίκην. ὀργῆς δὲ γενομένης
 ἐς σκώμματά τε αὑτοῖς καὶ ἀντιλογίαν καὶ ἔχθραν <lb n="984"/>
@@ -972,14 +955,15 @@ om Martinius in uersione 17 οὐδέν ΒP καὶ om ΒPv V
 <gap reason="omitted"/> δʼ αὐτὸν μετʼ ἐμοῦ παρὰ τὴν θύραν
 παριόντα· <add cause="omitted">γείτονες γὰρ</add> ἀλλήλων τυγχάνουσιν ὄντες·
 τὸ μὲν πρῶτον <add cause="omitted">συνδειπνεῖν</add> ἐκέλευεν, ἐπειδὴ δὲ οὐκ
-ἠθέλησεν <gap reason="omitted"/> <del status="error">ἐ</del>πὶ
+ἠθέλησεν <gap reason="omitted"/>
+               <del status="error">ἐ</del>πὶ
 <note type="footnote">in codice Barocciano 175 fol 83 οὐτοὺς B οὐ τουρ P | ἄνδρες
 addidi</note>
-<note type="footnote">2 τίσις MBP 3 κόμματα BP αὐτοῖς MBP καὶ ἔχθραν
+               <note type="footnote">2 τίσις MBP 3 κόμματα BP αὐτοῖς MBP καὶ ἔχθραν
 om B ἔχραν P 5 πρὸς ἡμᾶς B 7 τίσις MP τίσιν B 11 καὶ
 ἐν μὲν B 13 καταλλαγεὶς seu διαλλαγεὶς Scheibius: ἀπαλλα-
 γεὶς ἐπιτήδηος P 14 ἀφιστῶν ἀφίστατο Β καθίστατο Scheibius</note>
-<note type="footnote">15 lac IX litt M, XVII litt B, XII litt P: deestne ὥσθʼ
+               <note type="footnote">15 lac IX litt M, XVII litt B, XII litt P: deestne ὥσθʼ
 ὁπότʼ? ὥστʼ Ioannes ἐτύγχανεν BP ἀνʼ ἀκείων P
 16 lac X litt M, XX B. XXIV P: ἰδῶν Ioannes. equidem κατέ-
 λαβε intercidisse puto 17 παριόντα Scheibius: παριόντων
@@ -990,10 +974,9 @@ ca VIII litt Β. XXXIV P ἀλλήλοις Ioannes fort ἀλλήλοιν
 XV litt B, totius fere uersus P deinde πὶ κῶμον λέγων ὅτι
 μεθʼ αὐτοῦ καὶ τὸ om P, καὶ τὸ om B: ἐδεήθη ἥκειν αὐτὸν ἐπὶ
 κῶμον loaunes</note>
-
-<pb n="151"/>
+               <pb n="151"/>
 κῶμον, λέγων ὅτι μεθʼ αὐτοῦ καὶ τὸ <gap reason="omitted"/>
-<gap reason="omitted"/> δειπνήσαντες οὖν ἥδη συσκοτάζοντος ἐλθόντες
+               <gap reason="omitted"/> δειπνήσαντες οὖν ἥδη συσκοτάζοντος ἐλθόντες
 κόπτομεν τὴν θύραν. οἳ δʼ ἡμᾶς ἐκέλευον
 <milestone unit="985"/> εἰσιέναι. ἐπειδὴ δὲ ἔνδον ἐγενόμεθα, ἐμὲ μὲν ἐκβάλλουσιν
 ἐκ τῆς οἰκίας, τουτονὶ δὲ συναρπάσαντες ἔδησαν <lb n="5"/>
@@ -1019,25 +1002,23 @@ XV litt B, totius fere uersus P deinde πὶ κῶμον λέγων ὅτι
 <note type="footnote">2 ante δειπνήσαντες in M lac XXV litt, in Β XIX litt:
 καὶ τῶν οἰκετῶν (οίκείων Cobet) πιέτω Ιoannes 4 ἐπεὶ δὲ
 δὴ Β 5 ἐκ τῆς om P 6 μάστιγα Τῖσις] μάστιγά τις MBPv</note>
-<note type="footnote">8 ταῦτα bis P 9 νεωτέρων Ioannes 11 ἐκέλευεν BP v</note>
-<note type="footnote">12 δήσαντες Bv μαστιγοῦν δήσαντας Ioannes 13 πονή-
+               <note type="footnote">8 ταῦτα bis P 9 νεωτέρων Ioannes 11 ἐκέλευεν BP v</note>
+               <note type="footnote">12 δήσαντες Bv μαστιγοῦν δήσαντας Ioannes 13 πονή-
 ρως ἤδη Ioannes 14 Ἀντίμαχον — γεγενημένων mg M | γε-
 γενημένων — αὐτὸς μὲν om Pv 15 ἔλεγεν B δειπνῶν M:
 δειπνοῦν BP δειπνῦν v 19 ὁ μὲν ὅμως B 20 ἐρωτα Β
 21 οἰκετῶν MBP: corr Usener ἔφασκεν B 23 ἀπέδωκαν M
 </note>
-
-<pb n="152"/>
+               <pb n="152"/>
 αὐτὸν εἰς τὸ Δεῖγμα ἐν κλίνη καὶ ἐπέδειξαν πολλοῖς
 μὲν Ἀθηναίων πολλοῖς δὲ καὶ τῶν ἄλλων ξένων οὕτως
 διακείμενον, ὥστε τούς ἰδόντας μὴ μόνον τοῖς ποιήσασιν
 ὀργίζεσθαι ἀλλὰ καὶ τῆς πόλεως κατηγορεῖν, ὅτι
 <lb n="5"/> οὐ δημοσίᾳ οὐδὲ παραχρῆμα τοὺς τὰ τοιαῦτα ἐξαμαρτάνοντας
 τιμωρεῖται.ʼ</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="12">
-<p>12 αὕτη μὲν ἡ Ἀυσίου διήγησις ἐκ τοῦ κατὰ Τίσιδος
+         </div>
+         <div n="12" type="chapter">
+            <p>12 αὕτη μὲν ἡ Ἀυσίου διήγησις ἐκ τοῦ κατὰ Τίσιδος
 λόγου. ἣν δὲ νῦν μέλλω λέγειν, Δημοσθένους ἐκ τοῦ
 κατὰ Κόνωνος, ἧς τὴν πραγματικὴν ὁμοιότητα
 <lb n="10"/> ἐάσαντες <gap reason="omitted"/> τὴν
@@ -1053,20 +1034,19 @@ XV litt B, totius fere uersus P deinde πὶ κῶμον λέγων ὅτι
 <note type="footnote">1 scholion ὁ τόπος ἐν τῷ ειραιεῖ (πειρακεῖ Β), ἔνθα (ἔνθʼ P)
 ἐδείκνυτο (έδεικαίνυτο Β ἐδήκνυτο P) σῖτος καὶ ἄλλα ὅσπρια(ὅσπερ
 ΒP) ὑποδείγματα 11 Demosthenes κατὰ Κόνωνος or LIV 3—9</note>
-<note type="footnote">2 οὕτω Ioannes 7 Λυσίου M Sylburgius: λώρου BP v
+               <note type="footnote">2 οὕτω Ioannes 7 Λυσίου M Sylburgius: λώρου BP v
 an ἡ ἐκ? τίσιδος posthac add M 9 κόνωνος posthac add M</note>
-<note type="footnote">10 lac XII litt M, XXXII litt B, totius fere uersus P
+               <note type="footnote">10 lac XII litt M, XXXII litt B, totius fere uersus P
 11 ἐξῆλθον D τουτὶ τρίτον M m recens: lac X litt B. XVII
 litt P 12 φρουρῶς ὅλι (sic) B ἐσκήνωσαν οὖν οἱ υἱεῖς m
 rec Μ: lac XIII litt B, XXXIII litt P 13 τουτουὶ κονωνος
 BPM sed signis supra additis corr M | ὡς add m rec M om P</note>
-<note type="footnote">15 ζυνήβη B ἑξῆς] ἐξ ὧν D ἀκούσεσθαι MΒP fort ἐξ ἡς
+               <note type="footnote">15 ζυνήβη B ἑξῆς] ἐξ ὧν D ἀκούσεσθαι MΒP fort ἐξ ἡς
 δʼ ἀκούσεσθ αἰτίας Dionysius 16 ἔπινος Β τὴν ἡμέραν,
 ἐπειδὴ— ἀριστήσαιεν, ὅλην D 17 ὥσπερ MΒP ἐν] ἐπὶ D
 18 εἰώθημεν MSP εἰώθαμεν D 19 καὶ ἥν] καὶ κνο Β ἦν
 οὖν D</note>
-
-<pb n="153"/>
+               <pb n="153"/>
 τοῖς ἄλλοις ὥραν συμβαίνοι, ταύτην ἂν οὐτοι ἐπαρμνουν
 ἥδη, τὰ μὲν πολλὰ εἰς τούς παῖδας τοὺς ἀκολούθους
 ἡμῶν, τελευτῶντες δὲ καὶ εἰς ἡμᾶς αὐτούς.
@@ -1101,8 +1081,7 @@ BP προσ??ούρουν una littera erasa M προσεούρουν B
 λυσαν D μηθὲν M 24 ἀνήλθομεν addito ἐπ super ἀν Μ
 ἦν ἡμῖν m rec M: lac XVIII litt B, V litt P
 </note>
-
-<pb n="154"/>
+               <pb n="154"/>
 ἔχθρα πρὸς ἀλλήλους. οὐ μὴν ἔγωγε ῥμην δεῖν οὕτε
 δίκην λαχεῖν αὐτοῖς οὔτε λόγον ποιεῖσθαι τῶν συμβάντων.
 ἀλλʼ ἐκεῖνʼ ἀπλῶς ἐγνώκειν τὸ λοιπὸν εὐλαβεῖσθαι
@@ -1139,8 +1118,7 @@ B: γραφεῖ BP v οὐτούς BP sed οὑτοσί Β mg Θεόδωρός 
 Εοβούλου bis B Θεότιμός τις Ἀρχεβιάδης D 20 πίνθαρος M
 ὁ prius om ΒP 21 Ἀνδρομέδους M ΒP: corr v ex D
 </note>
-
-<pb n="155"/>
+               <pb n="155"/>
 ἐπορεύετο εἰς τὴν ἀγοράν. καὶ ἡμῖν συμβαίνει ἀναστρέφουσιν
 ἐκ τοῦ Φερρεφαττίου καὶ περιπατοῦσι πάλιν
 <milestone unit="991"/> κατʼ αὐτό πως τὸ Λεω|κόριον εἶναι, καὶ τούτοις περιτυγχάνομεν.
@@ -1160,10 +1138,9 @@ B: γραφεῖ BP v οὐτούς BP sed οὑτοσί Β mg Θεόδωρός 
 <milestone unit="992"/> γὰρ τοὺς ἀλεκτρυόνας μιμούμενος τοὺς νενικηκότας,
 οἳ δὲ κροτεῖν αὐτὸν ἠξίουν τοῖς ἀγκῶσιν ἀντὶ πτερύγων
 τὰς πλευράς.ʼ</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="13">
-<p>ταῦτʼ οὐ καθαρὰ καὶ ἀκριβῆ καὶ σαφῆ καὶ διὰ 13
+         </div>
+         <div n="13" type="chapter">
+            <p>ταῦτʼ οὐ καθαρὰ καὶ ἀκριβῆ καὶ σαφῆ καὶ διὰ 13
 <note type="footnote">2 ἀπὸ τοῦ D Φερεφαττίου MBPv 3 τούτοις D M, B mg:
 τοῦτο P, B in textu, τούτῳ v 4 ἀγνώς τις] ἀγνώστως M ἐγώστως
 B ἐγνόστως corr B mg ἐγνώστως P 6 Κόνων] μόνων P 7 περι-
@@ -1174,13 +1151,12 @@ B, XIII litt P 11 κατέλειπον BP v καταλιπεῖν D μήτε ex
 μὴ m rec M: μὴ BP μέτε φθ. P 12 δύνασθαι in mg M
 ἤ(κουον πολ)λὰ M litteris inclusis posthac additis 13 καὶ βλασ-
 φημίαν ἔχει τινὰ καὶ ὀνομάζειν ὀκνήσαιμʼ ἂν ἐν ὑμῖν ἔνια D</note>
-<note type="footnote">14 καν] καὶ M BPv 15 τεκμίριον P ὠς M BP: τοῦ D
+               <note type="footnote">14 καν] καὶ M BPv 15 τεκμίριον P ὠς M BP: τοῦ D
 16 γενόμενον] γέγονεν Blass γεγενῆσθαι D τοῦτο — μιμού-
 μενος add in mg B2 17 γάρ τοὺς] γὰρ BP ἀλεκτρίονας P
 νεοκηκότας P 18 ἀγῶσιν B, sed ἀγκωσι mg B² 20 ταῦτα
 BPv</note>
-
-<pb n="156"/>
+               <pb n="156"/>
 τῶν κυρίων τε καὶ κοινῶν ὀνομάτων κατεσκευασμένα
 ὥσπερ τὰ Λυσίου; ἐμοὶ μὲν γὰρ ὑπάρχειν δοκεῖ. τί
 δέ; οὐχὶ σύντομα καὶ στρογγύλα καὶ ἀληθείας μεστὰ
@@ -1195,7 +1171,7 @@ BPv</note>
 τῶν λόγων γνώριμος ἦν, ἀλλʼ ἀνεπιγράφοις περιετύχομεν
 αὐτοῖς, οὐ πολλούς ἂν ἡμῶν οἴομαι διαγνῶναι
 ῥᾳδίως, πό | τερος Δημοσθένους ἐστὶν ἢ Λυσίου· τοσαύτην <milestone unit="993"/>
-<lb n="15"/> οἱ χαρακτῆρες ὁμοιότητα πρὸς ἀλλήλους ἔχουσι.
+               <lb n="15"/> οἱ χαρακτῆρες ὁμοιότητα πρὸς ἀλλήλους ἔχουσι.
 τοιοῦτός ἐστι καὶ ὁ πρὸς Ἀπολλόδωρον ὑπὲρ Φορμίωνος
 καὶ ὁ κατʼ Ὀλυμπιοδώρου <del>τῆς</del> βλάβης καὶ ὁ πρὸς
 Βοιωτὸν ὑπὲρ τοῦ ὀνόματος ἥ τε πρὸς Εὐβουλίδην
@@ -1214,8 +1190,7 @@ littera erasa M τῆς del Krüger 18 εὐουλίδην BP 20 εἴ-
 κοσι MBPv 22 ὁποῖα λέγω] οἷς οἶδα ἐγὼ M ΒPv Ammaeum
 adloquitur cf p157,16 διμοσίων P 23 ἔφερον ex ἔφερων M
 ἔφερεν in mg ἔφερον B</note>
-
-<pb n="157"/>
+               <pb n="157"/>
 ἔμελλε τοῦ μετρίου γενήσεσθαι ὁ λόγος. ἐν οἷς δῆλός
 ἐστι περὶ καλλιλογίαν καὶ σεμνότητα καὶ πάσας τὰς
 ἐπιθέτους κατασκευὰς <add cause="omitted">οὐ</add> μᾶλλον ἐσπουδακὼς ἢ περὶ
@@ -1240,15 +1215,14 @@ adloquitur cf p157,16 διμοσίων P 23 ἔφερον ex ἔφερων M
 ἀσθενής, ἐν δὲ δὴ τοῖς παθητικοῖς εἰς τέλος ἀποσβέννυται·
 τόνος γὰρ οὐ πολύς αὐτῇ πρόσεστιν οὐδʼ ἰσχύς.
 <note type="footnote">7 [Demosthenes] περὶ Ἁλοννήσου or VII 1</note>
-<note type="footnote">1 γενήσεσθαι B mg, M sed γενή postea additum: γενῆσθαι
+               <note type="footnote">1 γενήσεσθαι B mg, M sed γενή postea additum: γενῆσθαι
 P, B in textu, γενέσθαι v 2 καλλολογίαν M B 3 οὐ add Vliet</note>
-<note type="footnote">4 πρὸς] περὶ MBPv 5 λόγον mg B 6 immo περὶ | ἀλο-
+               <note type="footnote">4 πρὸς] περὶ MBPv 5 λόγον mg B 6 immo περὶ | ἀλο-
 νήσου MBPv 7 ἔχων om V 10 ἐξαλαγῆς BP 13 ἡ διμοσθέ-
 νους δυνάμει παρα ἡ διαφορὰ B1 διαγνοίην P 14 ἀναγκαῖον]
 Λυσιακὸν malit Usener 15 πὴ M, B mg: τῆ BP 20 δʼ M, B mg:
 om BP 21 ἔλθει P</note>
-
-<pb n="158"/>
+               <pb n="158"/>
 παρὰ δὲ τῷ Δημοσθένει πολὺς μὲν ὁ τόνος, αὐτάρκης
 δʼ ἡ χάρις, ὥστε κἀν ταύτῃ τῷ διαρκεῖ καὶ μετρίῳ
 νικᾶν κἀν ἐκείνῳ τῷ παντὶ προέχειν. τοῦτο παρατήρημα
@@ -1261,10 +1235,9 @@ om BP 21 ἔλθει P</note>
 <lb n="10"/> ἐπιτάσεις μέντοι καὶ ἀνέσεις λαμβάνει τινὰς ἀναλόγους.
 καὶ ταῦτʼ ἤδη γνώριμα οἷς λέγω, καὶ οὐθὲν δεόμεθα
 παραδειγμάτων.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="14">
-<p>14 ὥστε περὶ μὲν τοῦ χαρακτῆρος . τοῦ δὲ
+         </div>
+         <div n="14" type="chapter">
+            <p>14 ὥστε περὶ μὲν τοῦ χαρακτῆρος . τοῦ δὲ
 ῥητορικοῦ γένους τοῦ μεταξύ τῶν ἄκρων ἑκατέρων, ὃ
 <lb n="15"/> ἀτελὲς παραλαβὼν ὁ Δημοσθένης παρʼ Ἰσοκράτους τε
 καὶ ἔτι προτέρου Θρασυμάχου καὶ τελευταίου Πλάτωνος <milestone unit="996"/>
@@ -1276,8 +1249,8 @@ om BP 21 ἔλθει P</note>
 καὶ μετριωτάτη κατασκευῇ λέξεως κεχρῆσθαι ὁ
 <note type="footnote">1 δημοσθένήου P post πολὺς M repetit αὐτῆ πρόσεστιν sed
 et rasura et punctis deletum est αὐτάρκις in αὐτάρκης corr P</note>
-<note type="footnote">2 μετρίω ex μέτρια B2 5 αὐτὰ Reiskius τὰ ἀναγκαῖα B1</note>
-<note type="footnote">7 ἐκδύνεται B 9 ῥῆσιν postea add M εἰς χρῆσιν Reiskius
+               <note type="footnote">2 μετρίω ex μέτρια B2 5 αὐτὰ Reiskius τὰ ἀναγκαῖα B1</note>
+               <note type="footnote">7 ἐκδύνεται B 9 ῥῆσιν postea add M εἰς χρῆσιν Reiskius
 εἰρήσεται Usener 10 ἐπιτά cum lac IV litt M ἐπιτάσις B1
 ἀναέσεις B ἀναλόγους: να postea add M 11 ταῦ]τʼ ἢ]δη
 cum ras B, in M δ postea additum est δεόμεθα M sed ἔθα
@@ -1287,8 +1260,7 @@ intercidit 14 ἑκατέρων] ἑκατέρου M BP v v ὃ ἀτελὲς S
 ὃν ἀτελῆ 16 προτέρου] πρότερον MSP v σελευτέου P
 19 ἄλλων addidi 20 ὑπὲρ] περὶ MBPv 21 καλλήστη P
 </note>
-
-<pb n="159"/>
+               <pb n="159"/>
 λόγος. εἰ μὲν οὖν χρόνον ἀρκοῦντα εἶχον, καὶ τὰς
 λέξεις αὐτὰς ἂν παρετίθην. πολλῶν δέ μοι καὶ ἀναγκαίων
 ἔτι καταλειπομένων, τοῦτο μὲν ἐάσω, δείγμασι
@@ -1315,16 +1287,15 @@ intercidit 14 ἑκατέρων] ἑκατέρου M BP v v ὃ ἀτελὲς S
 <note type="footnote">7 Demosthenes de falsa legatione or XIX 258 14 De-
 mosthenes κατʼ Ἀριστοκράτους or XXIII 65 20 Demosthenes
 πρὸς Λεπτίνην or XX 68</note>
-<note type="footnote">3 τοῦτο postea add M 4 βραχυτούτοις P ἐνειδόσι P 5 ἔστω
+               <note type="footnote">3 τοῦτο postea add M 4 βραχυτούτοις P ἐνειδόσι P 5 ἔστω
 Krüger 6 αἰσχ[ί]νου cum ras M 7 [ἄν]δρες cum ras M 9 ἐπὶ
 καιροῦ τοῦτο D 12 ὃ καὶ D | εὐτυχίας D: συντυχίας MBPv
 13 τὰ add Sylburgius 15 οἷα οἷα P οἵα οἵα B 17 ὑπὲρ D |
 ἐστιν εἰπεῖν καλὰ v ex D | μυθώδε P 20 κόνωνʼ ἀσκοπεῖτε P</note>
-<note type="footnote">21 μέμψασθαι μεμψαμένους μεμψαμένους B | αὐτῷ post
+               <note type="footnote">21 μέμψασθαι μεμψαμένους μεμψαμένους B | αὐτῷ post
 πεπραγμένα v 22 ἐκείνων P 23 ἀνὴρ post γὰρ v | ἔστι BP
 </note>
-
-<pb n="160"/>
+               <pb n="160"/>
 αὐτὴν ἡλικίαν ὄντων, μετὰ τὴν τοῦ δήμου κάθοδον
 τὴν ἐκ Πειραιέως ἀσθενοῦς ἡμῶν τῆς πόλεως οὔσης’
 καὶ τὰ ἀκόλουθα. ἐκ δὲ τῆς ὑπὲρ Κτησιφῶντος ἀπολογίας·
@@ -1339,10 +1310,9 @@ Krüger 6 αἰσχ[ί]νου cum ras M 7 [ἄν]δρες cum ras M 9 ἐπὶ
 καὶ θεοῖς ἐχθρῶν ἀνθρώπων συνέβη, ὅσην οὐδεὶς τὸ
 πρότερον μέμνηται γεγονυῖανʼ καὶ τὰ συναπτόμενα
 τούτοις.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="15">
-<p>15 τοῦτον ἔγωγε τὸν χαρακτῆρα <gap reason="omitted"/> εἴ
+         </div>
+         <div n="15" type="chapter">
+            <p>15 τοῦτον ἔγωγε τὸν χαρακτῆρα <gap reason="omitted"/> εἴ
 <lb n="16"/> τις μὴ μάλιστα ἀποδέχοιτο τὴν αἰτίαν, διʼ ἣν οὔτε τὰ
 Θουκυδίδεια ἐκεῖνα περιττὰ καὶ ἐξηλλαγμένα τοῦ συνήθους
 κράτιστα ἡγοῦμαι οὔτʼ ἐν τοῖς Λυσιακοῖς τοῖς
@@ -1352,17 +1322,16 @@ Krüger 6 αἰσχ[ί]νου cum ras M 7 [ἄν]δρες cum ras M 9 ἐπὶ
 ἄλλους συλλόγους, ἔνθα πολιτικῶν δεῖ λόγων, οὔτε
 δεινοὶ καὶ περιττοὶ πάντες εἰσὶ καὶ τὸν Θουκυδίδου
 <note type="footnote">3 Demosthenes περὶ τοῦ στεφάνου or XVIII 60</note>
-<note type="footnote">1 αὐτ[ὴν] cum ras M αὐτῶν BP μετὰ postea add M</note>
-<note type="footnote">2 Πειραιέως ex Πειραι posthac M item ἀσθε(νοῦς) | ἡμὲν
+               <note type="footnote">1 αὐτ[ὴν] cum ras M αὐτῶν BP μετὰ postea add M</note>
+               <note type="footnote">2 Πειραιέως ex Πειραι posthac M item ἀσθε(νοῦς) | ἡμὲν
 BP | οὔσας B 3 ἐκ δὲ postea inseruit M | ὑπὲρ] περὶ MBPv</note>
-<note type="footnote">4 πρὸ τοῦ postea add M | καὶ ex D add v 7 διεκώλιον P
+               <note type="footnote">4 πρὸ τοῦ postea add M | καὶ ex D add v 7 διεκώλιον P
 διεκωλύθη D 8 περὶ om D uncis seclusit v 11 προδότων
 B1 | φορὰν — συνέβη γενέσθαι D 12 οὐδείς πω πρότερον D</note>
-<note type="footnote">15 ἔγεγε B1 | lacunae signa addidi 17 τὰ περιττὰ Reiskius</note>
-<note type="footnote">18 ἐν Sadaeus: ἐπὶ 19 συνεσκευασμένοις in mg MB
+               <note type="footnote">15 ἔγεγε B1 | lacunae signa addidi 17 τὰ περιττὰ Reiskius</note>
+               <note type="footnote">18 ἐν Sadaeus: ἐπὶ 19 συνεσκευασμένοις in mg MB
 21 δηκαστήρια P</note>
-
-<pb n="161"/>
+               <pb n="161"/>
 νοῦν ἔχοντες οὔθ᾿ ἅπαντες ἰδιῶται καὶ κατασκευῆς
 λόγων γενναίων ἄπειροι, ἀλλʼ οἳ μὲν ἀπὸ γεωργίας οἳ
 δʼ ἀπὸ θαλαττουργίας οἳ δʼ ἀπὸ τῶν βαναύσων τεχνῶν
@@ -1388,22 +1357,20 @@ B1 | φορὰν — συνέβη γενέσθαι D 12 οὐδείς πω πρ
 οὗτος ὁ μεμιγμένος ἐξ ἀμφοτέρων τῶν χαρακτήρων.
 διὰ ταῦτα ἐγὼ τὴν οὕτως κατεσκευασμένην λέξιν μετριωτάτην
 εἶναι τῶν ἄλλων νενόμικα καὶ τῶν λόγων <lb n="25"/>
-<note type="footnote">4 οἷς] οἳ P | ἁπλούστυρον corr in ἁπλούστερον B | κοινώ-
+               <note type="footnote">4 οἷς] οἳ P | ἁπλούστυρον corr in ἁπλούστερον B | κοινώ-
 τερον M 5 μᾶλον P 7 διατίθηκεν B corr in mg B2
 9 διατίθεσι B1P 11 ἐγκλίου παιδίας P 14 ἴσως ex ἴσω M</note>
-<note type="footnote">15 μἄλλον P 16 κείνων P κείνων in ἐκείνων corr BM |
+               <note type="footnote">15 μἄλλον P 16 κείνων P κείνων in ἐκείνων corr BM |
 μέρως P 17 ἄξιοι Sylburgius: ἀξιοῖ 21 τἀκροατήρια
 Reiskius: τὰ κριτήρια 22 πείθεῖν P | τέλος B corr B1
 24 κατασκευασμένην corr in κατεσκευασμένην M
 </note>
-
-<pb n="162"/>
+               <pb n="162"/>
 τούτους μάλιστα ἀποδέχομαι τοὺς πεφευγότας ἑκατέρου
 τῶν χαρακτήρων τὰς ὑπερβολάς.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="16">
-<p>16 εἰρηκὼς δὲ κατʼ ἀρχάς, ὅτι μοι δοκοῦσιν Ἰσοκράτης
+         </div>
+         <div n="16" type="chapter">
+            <p>16 εἰρηκὼς δὲ κατʼ ἀρχάς, ὅτι μοι δοκοῦσιν Ἰσοκράτης
 τε καὶ Πλάτων κράτιστα τῶν ἄλλων ἐπιτετηδευκέναι
 <lb n="5"/> τοῦτο τὸ γένος τοῦ χαρακτῆρος καὶ προαγαγεῖν μὲν
 αὐτὸ ἐπὶ μήκιστον, οὐ μὴν καὶ τελειῶσαι, ὅσα δʼ ἐνέλιπεν
@@ -1415,10 +1382,9 @@ Reiskius: τὰ κριτήρια 22 πείθεῖν P | τέλος B corr B1
 ὑπο|θέσεις, ἵνα μᾶλλον αἱ τῶν ἀνδρῶν προαιρέσεις <milestone unit="1001"/>
 τε καὶ δυνάμεις γένωνται καταφανεῖς τὴν ἀκριβεστάτην
 βάσανον ἐπὶ τῶν ὁμοίων ἔργων λαβοῦσαι.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="17">
-<p>17 εἰσαγέσθω
+         </div>
+         <div n="17" type="chapter">
+            <p>17 εἰσαγέσθω
 <lb n="15"/> δὲ πρῶτος Ἰσοκράτης, καὶ τούτου λαμβανέσθω
 λέξις ἐκ τοῦ περὶ τῆς εἰρήνης λόγου χαριέστατα δοκοῦσα
 ἔχειν, ἣν αὐτὸς ἐν τῷ περὶ τῆς ἀντιδόσεως
@@ -1439,8 +1405,7 @@ Krüger: παρὰ 16 δὲ λέξις B sed δὲ lineola subducta deletur |
 νον χρόνῳ P | μεταβοολῆς B 25 πλήθη B | δημηγοροῦντας]
 δημαγωγοῦντας MBv δημαγογοῦντας P | δὲ B
 </note>
-
-<pb n="163"/>
+               <pb n="163"/>
 συγκρίσενς αὐτὰ τὰ κυριώτατα ὑπʼ ἐμοῦ παρείληπται.
 ἔστι δὲ ταυτί· ‘Τίς γὰρ ἂν ἄλλοθεν ἐπελθὼν καὶ μὴ |
 <milestone unit="1002"/> συνδιεφθαρμένος ἡμῖν ἀλλʼ ἐξαίφνης ἐπιστὰς τοῖς
@@ -1466,16 +1431,15 @@ Krüger: παρὰ 16 δὲ λέξις B sed δὲ lineola subducta deletur |
 στρατεύειν δʼ οὐκ ἐθέλομεν, καὶ πόλεμον μὲν μικροῦ
 δεῖν πρὸς πάντας ἀνθρώπους ἀναιρούμεθα, πρὸς δὲ
 <note type="footnote">2 Isocrates or VIII 41—50</note>
-<note type="footnote">2 ἔστι δ postea add M | τίς γὰρ ἂν postea add M |
+               <note type="footnote">2 ἔστι δ postea add M | τίς γὰρ ἂν postea add M |
 μήπω Is v 3 ἡμῖν ἀλλʼ ἐξ- postea add M 4 γινομένοις MP</note>
-<note type="footnote">8 τὸ ἐναντίον B 10 ἀσίης BP, M corr in ἀσίας 12 τὰς—
+               <note type="footnote">8 τὸ ἐναντίον B 10 ἀσίης BP, M corr in ἀσίας 12 τὰς—
 βοηθοῦντες add mg B2 13 βοητοῦντες P | αὐτὰς BP
 15 τὴν αὐτὴν ἐκείνοις τιμὴν ἕξομεν v ἕξομεν τιμὴν P 18 τῶν
 ἄλλων Is 19 αὑτῶν Is 21 ἡμετέρας αὐτῶν Is v 22 πάν-
 των B1 23 στρατεύεσθαι Is
 </note>
-
-<pb n="164"/>
+               <pb n="164"/>
 τοῦτον οὐχ ἡμᾶς αὐτοὺς ἀσκοῦμεν ἀλλʼ ἀνθρώπους
 τοὺς μὲν ἀπόλιδας τούς δʼ αὐτομόλους τοὺς δʼ ἐκ τῶν
 ἄλλων κακουργιῶν συνερρυηκότας, οἷς ὁπόταν τινὲς
@@ -1505,13 +1469,12 @@ Krüger: παρὰ 16 δὲ λέξις B sed δὲ lineola subducta deletur |
 ἐξαμάρτοιεν Is 9 ἐκλημάτων P | ἥξειν Is 12 τῶν καθʼ ἡμέραν
 ἐσμὲν Is 14 ἰδίᾳ] διʼ οἳς Is (ἰδίους Sauppius) 15 ἀνθρώπων
 κοινοῖς Is 16 τοσοῦτον p 1011, τοσούτων corr in τοσοῦτον B
-sed in mg τοσούτω 17 καὶ om Is &#8736; p 1011 secl v 18 κεῖνοι
-corr in ἐκεῖνοι B 19 τινα &#8736; p 1011 21 ἑαυτῶν &#8736; p 1011
+sed in mg τοσούτω 17 καὶ om Is ∠ p 1011 secl v 18 κεῖνοι
+corr in ἐκεῖνοι B 19 τινα ∠ p 1011 21 ἑαυτῶν ∠ p 1011
 αὐτῶν BP 22 τοσαύτην ἀπορίαν ἐληλυθότες καὶ om P
 24 στρατοπαίδοις B 25 τριείρεις corr in τριήρεις P | πληροῖεν Is
 </note>
-
-<pb n="165"/>
+               <pb n="165"/>
 δούλους ναύτας ἐνεβιβάζομεν τοὺς δὲ πολίτας μεθʼ
 ὅπλων ἐξεπέμπομεν, νῦν δὲ τοῖς μὲν ξένοις ὁπλίταις
 <milestone unit="1005"/> χρώμεθα τοὺς δὲ πολίτας ἐλαύ|νειν ἀναγκάζομεν,
@@ -1531,10 +1494,10 @@ corr in ἐκεῖνοι B 19 τινα &#8736; p 1011 21 ἑαυτῶν &#8736; 
 ἐπὶ τῷ βέλτιον τῶν ἄλλων γεγονέναι, ῥᾷον δὲ μεταδίδομεν
 τοῖς βουλομένοις ταύτης τῆς εὐγενείας ἢ Τριβαλλοί
 τε καὶ Λευκανοὶ τῆς δυσγενείας.ʼ |</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="18">
-<milestone unit="1006"/><p> ἡ μὲν οὖν Ἰσοκράτους λέξις ἡ κάλλιστα τῶν ἄλλων 18
+         </div>
+         <div n="18" type="chapter">
+            <milestone unit="1006"/>
+            <p> ἡ μὲν οὖν Ἰσοκράτους λέξις ἡ κάλλιστα τῶν ἄλλων 18
 δοκοῦσα ἔχειν τοιαύτη τίς ἐστι, πολλῶν μὲν ἕνεκα <lb n="21"/>
 θαυμάζειν ἀξία· καθαρεύει τε γὰρ εἴ τις ἄλλη τοῖς
 ὀνόμασι καὶ τὴν διάλεκτόν ἐστιν ἀκριβής, φανερά τʼ
@@ -1544,14 +1507,13 @@ corr in ἐκεῖνοι B 19 τινα &#8736; p 1011 21 ἑαυτῶν &#8736; 
 et ὑπηρετέσιον exhibet 6 οἱ δὲ — κινδυνεύουσιν om P
 7 διῆλθον] εἶπον Δ p 1013 8 καὶ om Is secl v | ἰδ[ὼ]ν
 cum ras M ἄν τις ἰδὼν Is 9 καὶ om Is 10 μάλιστα M MBP</note>
-<note type="footnote">12 οἰκισθῆσαν corr in οἰκισθῆναι B 13 τῶν ἄλλων dam-
+               <note type="footnote">12 οἰκισθῆσαν corr in οἰκισθῆναι B 13 τῶν ἄλλων dam-
 nauit Fuhr ἡμᾶς ἅπασιν εἶναι παράδειγμα Is τε om Is
 16 μέγα φρονοῦμεν Is 17 γεγονέναι τῶν ἄλλων Is 19 τε
 om Is τῆς αὑτῶν Δv cum Is v 21 ἐστιν B 22 καὶ ἄλλη
 Vliet 23 ὀνόμασι Krüger: νοήμασι
 </note>
-
-<pb n="166"/>
+               <pb n="166"/>
 ἐστὶ καὶ κοινὴ καὶ τὰς ἄλλας ἀρετὰς ἁπάσας περιείληφεν,
 ἐξ ὧν ἂν μάλιστα γένοιτο διάλεκτος σαφής.
 πολλοὺς δὲ καὶ τῶν ἐπιθέτων κόσμων ἔχει· καὶ γὰρ
@@ -1580,11 +1542,10 @@ Vliet 23 ὀνόμασι Krüger: νοήμασι
 ἀκροατὰς ἀγαγεῖν. οὐδὲ δὴ τοῦ πρέποντος ἐν ἅπασιν
 ἐπιτυγχάνει, ἀνθηρὰν δὲ καὶ θεατρικὴν ἐκ παντὸς
 <note type="footnote">4 καλλιρήμων MBP: corr v 5 μὲν B 7 ἐλλιπόντων MBP v</note>
-<note type="footnote">10 συτροφῆς B 11 ὑπαγωγικὴ Ernestius: ἐπαγωγικὴ MP
+               <note type="footnote">10 συτροφῆς B 11 ὑπαγωγικὴ Ernestius: ἐπαγωγικὴ MP
 ἐπαγωσικὴ corr in ἐπαγωγικὴ B 13 τʼ Bv | συγκεκρομένη P</note>
-<note type="footnote">15 τῶν ἀνδρί P 16 ψοφοδέης M</note>
-
-<pb n="167"/>
+               <note type="footnote">15 τῶν ἀνδρί P 16 ψοφοδέης M</note>
+               <pb n="167"/>
 ἀξιῶν εἶναι τὴν διάλεκτον, ὡς τῆς ἡδονῆς ἅπαν ἐχούσης
 ἐν λόγοις τὸ κράτος, ἀπολείπεταί ποτε τοῦ πρέποντος.
 οὐχ ἅπαντα δέ γε τὰ πράγματα τὴν αὐτὴν
@@ -1598,10 +1559,9 @@ Vliet 23 ὀνόμασι Krüger: νοήμασι
 ἡμᾶς καὶ οἱ τὰ ἔπη καὶ οἱ τὰς τραγῳδίας
 καὶ οἱ τὰ μέλη τὰ σπουδαῖα γράψαντες, οὐ τοσαύτην
 ποιούμενοι τῆς ἡδονῆς δόσιν, ὅσην τῆς ἀληθείας.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="19">
-<p>19 εἰ δὲ ὀρθῶς ἐπιλογίζομαι ταῦτʼ ἐγὼ καὶ ἔστιν ἐν
+         </div>
+         <div n="19" type="chapter">
+            <p>19 εἰ δὲ ὀρθῶς ἐπιλογίζομαι ταῦτʼ ἐγὼ καὶ ἔστιν ἐν
 ταύταις ταῖς ἀρεταῖς ἐνδεέστερος ὁ ἀνήρ, πάρεστι τῷ <lb n="15"/>
 βουλομένῳ σκοπεῖν ἐπὶ τῆς ἀρτίως παρατεθείσης λέξεως
 ποιουμένῳ τὴν ἐξέτασιν. εὐθέως γοῦν τὴν πρώτην
@@ -1613,14 +1573,13 @@ Vliet 23 ὀνόμασι Krüger: νοήμασι
 ἄμφω ταὐτά. καὶ ἐν τῷ ‘οἳ φιλοτιμούμεθα μὲν ἐπὶ
 τοῖς τῶν προγόνων ἔργοις’ τὸ ‘καὶ τὴν πόλιν ἐκ τῶν
 τότε πραχθέντων ἐγκωμιάζειν ἀξιοῦμεν’· τὸ γὰρ αὐτὸ <lb n="25"/>
-<note type="footnote">2 κρούτος P 5 ἑσθὴς MB | τις ὀνομασία Sylburgius: τοῖς
+               <note type="footnote">2 κρούτος P 5 ἑσθὴς MB | τις ὀνομασία Sylburgius: τοῖς
 ὀνόμασι 7 μαλακῶν Sadaeus: ἐκλεκτῶν | ἐκλογὴ Pv 13 δόσιν
 multos offendit cf p 1103. 1112 15 ἐνδεέτερος P 16 τοῖς
 BP | ἀρτ[ί]ως comm ras M 17 οὖν Sylburgius 18 ὀλίγοις
 τοῖς Sadaeus 20 τῷ alterum suppleuit B² 23 καὶ] ἐστιν
 P | οἱ P</note>
-
-<pb n="168"/>
+               <pb n="168"/>
 φιλοτιμεῖσθαί τε καὶ ἐπαινεῖν. καὶ ἐν τῷ ‘οὐδὲν δὲ
 τῶν αὐτῶν ἐκείνοις πράττομεν’ τὸ ‘ἀλλὰ πᾶν τοὐναντίον’·
 ἤρκει γὰρ αὐτῶν εἰρῆσθαι θάτερον. ἐξῆν δέ γε
@@ -1645,17 +1604,16 @@ P | οἱ P</note>
 <note type="footnote">10 scholion μακροτέρα ἡ λέξις γίνεται ταῖς ἀναδιπλώσεσι
 τῶν κώλων, πλατεῖα δὲ ταῖς περιττολογίαις τῶν λέξεων καὶ τῇ
 ἐπισωρεύσει τῶν ὀνομάτων mg M</note>
-<note type="footnote">3 δέ γε Sadaeus: τε γὰρ 4 τοῖν] τῶν MBPv | δυεῖν v</note>
-<note type="footnote">6 οἱ P 9 οὐκ ἀναγκαίαν—περίοδον in mg suppleuit M2</note>
-<note type="footnote">11 κομψοτέραν ex τέραν postea effecit M 12 ante πλατεῖα
+               <note type="footnote">3 δέ γε Sadaeus: τε γὰρ 4 τοῖν] τῶν MBPv | δυεῖν v</note>
+               <note type="footnote">6 οἱ P 9 οὐκ ἀναγκαίαν—περίοδον in mg suppleuit M2</note>
+               <note type="footnote">11 κομψοτέραν ex τέραν postea effecit M 12 ante πλατεῖα
 fenestra III litt in B τεῖα cum lacuna XII fere litt M | καὶ
 om P 13 κἀκεῖνο BP | μὲν ἐλευ postea add M 14 βοη-
 θοῦντας M ita ut θοῦντας postea insertum sit | αὐτὰς BP
 15 καὶ deest p 1002 17 ἐκείνοις τιμὴν v 18 στρογγυλώτερα
 Sylburgius: στρογγυλότερα 19 μὴν B 21 διολύντες BP
 </note>
-
-<pb n="169"/>
+               <pb n="169"/>
 τευξόμεθα’. καὶ ἡ μετὰ ταῦτα διάνοια πλατέως τε
 εἴρηται καὶ ἀσυγκρότητός ἐστιν· ‘οἳ τοσοῦτον ἀπολελείμμεθα
 καὶ ταῖς διανοίαις καὶ τοῖς ἔργοις τῶν κατ᾿
@@ -1670,11 +1628,11 @@ Sylburgius: στρογγυλότερα 19 μὴν B 21 διολύντες BP
 μυρία καὶ ταύτης ἐστὶ λαβεῖν τῆς ἀσθενείας δείγματα.
 ἔξω γὰρ ὀλίγων τινῶν, οἷς οὐκ ἐκ προνοίας μᾶλλον ἢ
 κατ᾿ αὐτοματισμὸν συμβέβηκε τὸ συνεστράφθαι, τἆλλα
-ἐν πλάτει λέγεται. </p><lb n="15"/>
-</div>
-
-<div type="textpart" subtype="chapter" n="20">
-<p>ἄτονος δὲ δὴ καὶ λαβὰς οὐ κραταιὰς ἔχουσα πῶς
+ἐν πλάτει λέγεται. </p>
+            <lb n="15"/>
+         </div>
+         <div n="20" type="chapter">
+            <p>ἄτονος δὲ δὴ καὶ λαβὰς οὐ κραταιὰς ἔχουσα πῶς
 ἐστιν ἡ λέξις; τῷ ἐπιφέρειν τινὰ τοῖς εἰρημένοις διάνοιαν
 τοιαύτην· ‘τοσοῦτον δὲ χείρους ἐσμὲν τῶν προγόνων
 οὐ μόνον τῶν εὐδοκιμησάντων ἀλλὰ καὶ τῶν
@@ -1684,15 +1642,14 @@ Sylburgius: στρογγυλότερα 19 μὴν B 21 διολύντες BP
 σώμασιν ᾤοντο δεῖν κινδυνεύειν, ἡμεῖς δʼ εἰς τοσαύτην
 <milestone unit="1012"/> ἀπορίαν ἐληλυθότες καὶ τοσοῦτοι τὸ πλῆ|θος
 ὄντες, ὥσπερ βασιλεὺς ὁ μέγας μισθωτοῖς χρώμεθα <lb n="25"/>
-<note type="footnote">2 οἱ P 6 -χοῦντες — δέ γε desunt in P sine lacunae
+               <note type="footnote">2 οἱ P 6 -χοῦντες — δέ γε desunt in P sine lacunae
 indicio ἐμμαχοῦντες B ut uidetur, deinde inserit ἐκλʼ ἐξέλι-
 πον: deleuit B2 7 ἐξῆν δέ γε om v cum lacuna | συστρέψαι
 Sylburgius 8 ἐξενεγκᾶνα P ἐξενέγκᾶνα B ἐξενέγκασθαι B2
 in mg 16 ἔχουσά πως ἐστὶν ἡ λέξις τῷ MBP: corr Sylburgius</note>
-<note type="footnote">18 τοιαύτην Krüger: ταύτην τοσούτω B² mg cf p 1004</note>
-<note type="footnote">23 δὲ v</note>
-
-<pb n="170"/>
+               <note type="footnote">18 τοιαύτην Krüger: ταύτην τοσούτω B² mg cf p 1004</note>
+               <note type="footnote">23 δὲ v</note>
+               <pb n="170"/>
 τοῖς στρατοπέδοις’. φέρε δὲ πῶς ἐνῆν αὐτὴν εἰπεῖν
 στρογγυλωτέραν; ‘ἀλλὰ ταῦτα μὲν ἴσως χείρους ἐσμὲν
 τῶν προγόνων, τὰ δʼ ἄλλα βελτίους, οὐ λέγω τῶν
@@ -1723,9 +1680,8 @@ in mg 16 ἔχουσά πως ἐστὶν ἡ λέξις τῷ MBP: corr Sylbur
 7 πολέμους Sylburgius | ἀλλʼ v 10 τοσοῦτο MB | μισθοφό-
 ροι P 11 καὶ fort tollendum est 14 μοίρα οἰόμαι P
 17 ἔχ[οι] cum ras M 19 ἀντίθεσις delet Vliet 20 τοῦ μὲν P</note>
-<note type="footnote">22 ὁπλήταις P</note>
-
-<pb n="171"/>
+               <note type="footnote">22 ὁπλήταις P</note>
+               <pb n="171"/>
 ὀλίγῳ πρότερον εἶπον, μεθʼ ὅπλων κινδυνεύουσιν’. ἐν
 τούτοις οὐ μέμφομαι τὸν ἄνδρα τοῦ λήματος (γενναία
 γὰρ ἡ διάνοια καὶ δυναμένη κινῆσαι πάθος), τὸ δὲ τῆς
@@ -1760,17 +1716,15 @@ Vliet (νοήματος B sec Capperonerium) 17 ἀντιθέντων P |
 νῦν δὲ καὶ· ὅσον ὁ μὲν, ἡμεῖς δὲ M, om BP v: corr Sadaeus
 23 ἐκεῖνος ταῦτʼ B sed ἐκεῖνος lineola subducta deletur
 </note>
-
-<pb n="172"/>
+               <pb n="172"/>
 κεκύκλωκε. τροπαὶ δὲ καὶ μεταβολαὶ καὶ ποικιλίαι
 σχημά|των, ἃ πέφυκε λύειν τὸν τῆς διανοίας κόπον, <lb n="1015"/>
 οὐδαμοῦ. πολλὰ ἄν τις ἔχοι τοιαῦτα ἐπιτιμᾶν Ἰσοκράτει
 τῶν περὶ τὴν διάλεκτον ἐλλειμμάτων, ἀλλὰ καὶ
 <lb n="5"/> ταῦθʼ ἱκανά.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="21">
-<p>21 εἰσαγέσθω δὴ μετὰ τοῦτον ὁ Δημοσθένης, καὶ λαμβανέσθω
+         </div>
+         <div n="21" type="chapter">
+            <p>21 εἰσαγέσθω δὴ μετὰ τοῦτον ὁ Δημοσθένης, καὶ λαμβανέσθω
 κἀκείνου λέξις ἐκ μιᾶς τῶν κατὰ Φιλίππου
 δημηγορίας, δι᾿ ἧς καὶ αὐτὸς συγκρίνει τὰ καθʼ ἑαυτὸν
 ἔργα τοῖς ἐπὶ τῶν προγόνων καὶ τοὺς νέους δημαγωγοὺς
@@ -1788,7 +1742,7 @@ Vliet (νοήματος B sec Capperonerium) 17 ἀντιθέντων P |
 τετταράκοντα ἔτη τῶν Ἑλληνων ἦρξαν ἑκόντων· πλείω
 δʼ ἢ μύρια τάλαντα εἰς τὴν ἀκρόπολιν συνήγαγον·
 <note type="footnote">13 Demosthenes Olynth. III 23—32</note>
-<note type="footnote">1 κεκύκλωκε·] κύκλω· καὶ MBPv 2 πέφυκεν P | κόπον
+               <note type="footnote">1 κεκύκλωκε·] κύκλω· καὶ MBPv 2 πέφυκεν P | κόπον
 Reiskius: σκοπὸν 3 ἔχ[ει] cum ras M | τοιαῦτα M, 3 mg:
 πολλὰ B in textu, P 4 ἐλλειμμάτων MB Reiskius: μμάτων P
 ἐμμάτων v 6 δὴ— λαμβανέσθω perperam iterata in B punctis
@@ -1798,8 +1752,7 @@ om P | ἡμῶν v 16 καὶ om BP 17 χρομένοις BP ὑμῖν χρω-
 μένοις D | ἀλλʼ — εὐδαίμοσιν add B2 18 ὦ Ἀθηναῖοι in litura
 B | γίγναισθαι P γενέσθαι D 19 οἱ] σι P 22 ἢ] εἰ P
 </note>
-
-<pb n="173"/>
+               <pb n="173"/>
 ὑπήκουε δὲ ὁ ταύτην τὴν χώραν ἔχων αὐτοῖς βασιλεύς,
 ὥσπερ ἐστὶ προσῆκον βάρβαρον Ἕλλησι· πολλὰ
 δὲ καὶ καλὰ καὶ πεζῇ καὶ ναυμαχοῦντες ἔστησαν τρόπαια
@@ -1826,7 +1779,7 @@ B | γίγναισθαι P γενέσθαι D 19 οἱ] σι P 22 ἢ] εἰ P
 ὁμοίως καὶ παραπλησίως; καὶ τὰ μὲν ἄλλα σιωπῶ
 <note type="footnote">1 ὁ] οὐ BP 2 προσῆκοι BP 3 πεζοῖ P πεζοὶ v
 4 μόνον B 5 ἐπὶ τοῖς ἔργοις δόξαν post κατέλιπον iterat P</note>
-<note type="footnote">7 θεάσατε BP | τε om MBP add v ex D 8 δημο-
+               <note type="footnote">7 θεάσατε BP | τε om MBP add v ex D 8 δημο-
 σίᾳ D 9 τοιαῦτα καὶ τοσαῦτα D 11 λελεῖφθαι D 12 δὲ
 om P 13 τὴν Μιλτιάδου D 16 σεμνότερον M1BP | ἐπράτ-
 τετο αὐτοῖς D 17 αὔξειν ἕκαστος vD αὔξιν P 19 δὲ om
@@ -1834,8 +1787,7 @@ M v | αὐτοῖς MBPv 21 ἐκείνοις — 23 πράγματα om P
 22 ὑμῖν v 23 τῶν νῦν M: τούτων B | εἴχει P 24 καὶ τὰ
 μὲν M²: τὰ μὲν M1BPv οἷς τὰ μὲν D
 </note>
-
-<pb n="174"/>
+               <pb n="174"/>
 πολλὰ ἔχων εἰπεῖν· ἀλλʼ ὅσης πάντες ὁρᾶτε ἐρημίας
 ἐπειλημμένοι καὶ Λακεδαιμονίων μὲν ἀπολωλότων,
 Θη|βαίων δʼ ἀσχόλων ὄντων, τῶν δʼ ἄλλων οὐδενὸς <milestone unit="1018"/>
@@ -1865,11 +1817,10 @@ M v | αὐτοῖς MBPv 21 ἐκείνοις — 23 πράγματα om P
 κἀσήσαμεν B σηκαμεν addito κ super σ P 12 γέγονεν]
 γέννεν P | ὁ om D 13 ὦ τʼ ἂν M | γά γε BP τά γʼ vD
 14 ἂν DM²: δὴ M1 BPv 15 prius ἃς] ὣς B 16 κλήρους Pv</note>
-<note type="footnote">17 ὧν] ὡς Pv 19 οἰκομημάτων P 20 κατευασμένοι P |
+               <note type="footnote">17 ὧν] ὡς Pv 19 οἰκομημάτων P 20 κατευασμένοι P |
 ἐλάσσω MBPv 21 εὔξηται P 22 ἃ πάντων ἅπαντα B ἅπαντα
 εἶχε D</note>
-
-<pb n="175"/>
+               <pb n="175"/>
 ἦν καὶ κύριος αὐτὸς ἁπάντων τῶν ἀγαθῶν, καὶ ἀγαπητὸν
 ἦν παρὰ τοῦ δήμου τῶν ἄλλων ἑκάστῳ καὶ τιμῆς
 καὶ ἀρχῆς καὶ ἀγαθοῦ τινος μεταλαβεῖν. νῦν δὲ τοὐναντίον
@@ -1880,7 +1831,7 @@ M v | αὐτοῖς MBPv 21 ἐκείνοις — 23 πράγματα om P
 ἂν μεταδῶσι θεωρικὸν ὑμῖν ἢ βοΐδια πέμψωσιν οὗτοι.
 καὶ τὸ πάντων ἀνανδρότατον· τῶν ὑμετέρων αὐτῶν
 χάριν προσοφείλετε. οἳ δʼ ἐν αὐτῇ τῇ πόλει καθείρξαντες <lb n="10"/>
-<milestone unit="1020"/> ὑμᾶς ἐπάγουσιν ἐπὶ ταῦτα καὶ τιθασεύουσι, χειροήθεις
+               <milestone unit="1020"/> ὑμᾶς ἐπάγουσιν ἐπὶ ταῦτα καὶ τιθασεύουσι, χειροήθεις
 αὑτοῖς ποιοῦντες. ἔστι δʼ οὐδέποτ᾿, οἶμαι,
 μέγα καὶ νεανικὸν φρόνημα λαβεῖν μικρὰ καὶ φαῦλα
 πράττοντας. ὁποῖʼ ἄττα γὰρ ἂν τὰ ἐπιτηδεύματα τῶν
@@ -1903,8 +1854,7 @@ BP 14 πράττοντες BP ἄττα BP ἂν add M² om BP
 Reiskius: κατʼ ἄλλα MBP τἄλλα Sylburgius 22 μεγαλοπρέ-
 στερον P 23 ἑρμήνευκε P | lacunam indicaui, deesse uidetur
 περιεργοτέροις</note>
-
-<pb n="176"/>
+               <pb n="176"/>
 ὀνόμασι συγκεκρότηταί τε καὶ συνέσπασται καὶ περιτετόρνευται
 τοῖς νοήμασιν ἄμεινον ἰσχύϊ τε πλείονι
 κέχρηται καὶ τόνοις ἐμ|βριθεστέροις καὶ πέφευγε τὰ <milestone unit="1021"/>
@@ -1914,10 +1864,9 @@ Reiskius: κατʼ ἄλλα MBP τἄλλα Sylburgius 22 μεγαλοπρέ-
 κρεῖττον ἔχει ἐκείνης. ἐγὼ γοῦν, ὃ πρὸς ἀμφοτέρας
 πάσχω τὰς λέξεις, ἐρῶ· οἴομαι δὲ κοινόν τι πάθος
 ἀπάντων ἐρεῖν καὶ οὐκ ἐμὸν ἴδιον μόνου.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="22">
-<p>22 ὅταν μέν τινα τῶν Ἰσοκράτους ἀναγινώσκω λόγων,
+         </div>
+         <div n="22" type="chapter">
+            <p>22 ὅταν μέν τινα τῶν Ἰσοκράτους ἀναγινώσκω λόγων,
 <lb n="11"/> εἴτε τῶν πρὸς τὰ δικαστήρια καὶ τὰς ἐκκλησίας γεγραμμένων
 ἢ τῶν <gap reason="omitted"/> ἐν ἤθει σπουδαῖος γίνομαι καὶ πολὺ
 τὸ εὐσταθὲς ἔχω τῆς γνώμης, ὥσπερ οἱ τῶν σπονδείων
@@ -1934,15 +1883,14 @@ Reiskius: κατʼ ἄλλα MBP τἄλλα Sylburgius 22 μεγαλοπρέ-
 νων πνεύματι αὐτῶν κινούμενοι τὰς πολλὰς καὶ ποικίλας
 <note type="footnote">1 περιτετόρευται P v 2 ὀνόμασιν Pv 3 κέχρηται M, B mg:
 χρῆται P, B in textu | τόνος B 5 πέρα M: πέρα καὶ B παρὰ P</note>
-<note type="footnote">8 λέξις BP 9 μόνον Pv 12 hiatum notauit Sylburgius
+               <note type="footnote">8 λέξις BP 9 μόνον Pv 12 hiatum notauit Sylburgius
 ἔθει v | σημείωσαι P mg 14 κἀναρμονίων] καὶ ἐναρμονίων M
 καὶ ἁρμονίων BPv μερῶν BPv 15 τῶν add Krüger
 16 λόγον Sylburgius κἀκεῖσαι P 18 ἐλέων P 20 πέφυκεν
 om Pv 23 hiatum indicaui, desideratur εἴτʼ ὄψεσιν | εἴτε
 τῶν δαιμόνων bis B | τῶν] τῷ Sadaeus 24 αὐτῶν] αὐτῷ
 MBPv</note>
-
-<pb n="177"/>
+               <pb n="177"/>
 ἐκεῖνοι λαμβάνουσι φαντασίας. καὶ δή ποτε καὶ
 ἐνεθυμήθην, τί ποτε τοὺς τότε ἀνθρώπους ἀκούοντας
 αὐτοῦ λέγοντος ταῦτα πάσχειν εἰκὸς ἦν. ὅπου γὰρ
@@ -1978,14 +1926,12 @@ litt om M 8 ἤγοντο] ἔχοντο B 11 τῆς ψυχροῦ τῆς ψυ
 νον v | βιβλίοις M 23 ἀγωγόν ἐστι τῶν ἀνθρώπων] ἄγον ἐπὶ
 τῶν αὐτῶν MBP ἄγων ἐπὶ τῶν αὐτῶν v
 </note>
-
-<pb n="178"/>
+               <pb n="178"/>
 ἦ που τότε ὑπερφυές τι καὶ δεινὸν χρῆμα ἦν ἐπὶ τῶν
 ἐκείνου λόγων.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="23">
-<p>23 ἀλλὰ γάρ, ἴνα μὴ περὶ ταῦτα διατρίβων ἀναγκασθῶ <lb n="1024"/>
+         </div>
+         <div n="23" type="chapter">
+            <p>23 ἀλλὰ γάρ, ἴνα μὴ περὶ ταῦτα διατρίβων ἀναγκασθῶ <lb n="1024"/>
 παραλιπεῖν τι τῶν περιλειπομένων, Ἰσοκράτην
 <lb n="5"/> μὲν καὶ τὸν χαρακτῆρα τῆς ἀγωγῆς ἐκείνης ἐάσω, περὶ
 δὲ Πλάτωνος ἤδη διαλέξομαι τά γʼ ἐμοὶ δοκοῦντα μετὰ
@@ -2002,21 +1948,20 @@ litt om M 8 ἤγοντο] ἔχοντο B 11 τῆς ψυχροῦ τῆς ψυ
 ἀνθρώπων ἡμιτελῶν περὶ λόγους, οἱ τὴν εὐγενῆ κατασκευὴν
 οὐκ ἴσασιν ἢ τίς ποτʼ ἐστὶν οὐδὲ δύνανται,
 πᾶσαν εἰρωνείαν ἀφείς, ὡς πέφυκα, διαλέξομαι. ὃν δὲ <milestone unit="1025"/>
-<lb n="20"/> ἀξιῶ τρόπον ποιήσασθαι τὴν ἐξέτασιν αὐτοῦ, βούλομαι
+               <lb n="20"/> ἀξιῶ τρόπον ποιήσασθαι τὴν ἐξέτασιν αὐτοῦ, βούλομαι
 προειπεῖν. ἐγὼ τὴν μὲν ἐν τοῖς διαλόγοις δεινότητα
 τοῦ ἀνδρὸς καὶ μάλιστα ἐν οἷς ἂν φυλάττῃ τὸν Σωκρατικὸν
 χαρακτῆρα, ὥσπερ ἐν τῷ Φιλήβῳ, πάνυ ἄγαμαί
 <note type="footnote">13 scnolion τάχα τοῦ Κικἑρωνος B cf Bruti 121</note>
-<note type="footnote">1 ἦ πον B τό τε Pv ἐπὶ τῶν] τῶν Krüdger 7 δόξει P</note>
-<note type="footnote">11 κανόνι ὡ| τατον καὶ κανόνι B καθαρὸν M 12 καὶ
+               <note type="footnote">1 ἦ πον B τό τε Pv ἐπὶ τῶν] τῶν Krüdger 7 δόξει P</note>
+               <note type="footnote">11 κανόνι ὡ| τατον καὶ κανόνι B καθαρὸν M 12 καὶ
 om P λόγων Sylburgius: ὁ λόγος 15 βασιλεὺς ὢν] βασι-
 λεύων? | διαλέται P 16 καί τε τερατείας MBP sed in M τε
 postea deletum est 18 ἔστιν B οὐδʼ 〈ἰδεῖν〉 ci Usener | δύ-
 ναται B 19 ante πᾶσαν spatium est in editionibus. συνιδεῖν
 excidisse Reiskius putauit εἰρωνίαν P ὥσπέρ φυκα B
 22 φυλάττει P</note>
-
-<pb n="179"/>
+               <pb n="179"/>
 τε καὶ τεθαύμακα, τῆς δʼ ἀπειροκαλίας αὐτὸν
 οὐδεπώποτʼ ἐζήλωσα τῆς ἐν ταῖς ἐπιθέτοις κατασκευαῖς,
 ὥσπερ ἔφην καὶ πρότερον, καὶ πάντων ἥκιστα ἐν οἷς
@@ -2027,10 +1972,11 @@ excidisse Reiskius putauit εἰρωνίαν P ὥσπέρ φυκα B
 ἐπὶ τῶν τοιούτων αὐτοῦ λόγων, ὃ πεποίηται παρʼ
 Ὁμήρῳ πρὸς τὴν Ἀφροδίτην ὁ Ζεὺς λέγων·
 <lg>
-<l>Οὕ τοι, τέκνον ἐμόν, δέδοται πολεμήια ἔργα, </l><lb n="10"/>
-<l>ἀλλὰ σύ γʼ ἱμερόεντα μετέρχεο ἔργα γάμοιο</l>
-</lg>
-<milestone unit="1026"/> Σωκρατικῶν διαλόγων, ταῦτα δὲ πολιτικοῖς καὶ ῥήορσιν
+                  <l>Οὕ τοι, τέκνον ἐμόν, δέδοται πολεμήια ἔργα, </l>
+                  <lb n="10"/>
+                  <l>ἀλλὰ σύ γʼ ἱμερόεντα μετέρχεο ἔργα γάμοιο</l>
+               </lg>
+               <milestone unit="1026"/> Σωκρατικῶν διαλόγων, ταῦτα δὲ πολιτικοῖς καὶ ῥήορσιν
 ἀνδράσι μελήσει. ποιοῦμαι δὲ τῆς ἐμαυτοῦ
 δόξης κοινούς κριτὰς τοὺς φιλολόγους ἅπαντας, ὑπεξαιρούμενος,
 εἴ τινές εἰσι φιλότιμοι καὶ πρὸς τὰς δόξας <lb n="15"/>
@@ -2043,20 +1989,19 @@ excidisse Reiskius putauit εἰρωνίαν P ὥσπέρ φυκα B
 ἐξετάζειν τὰ κρείττω τοῦτʼ ἔδοξʼ εἶναι δίκαιον, καὶ
 ἐπʼ αὐτὸ τοδὶ τρέψομαι τὸ μέρος. δικανικὸς μὲν οὖν
 <note type="footnote">10 Hom Ε 428 sq</note>
-<note type="footnote">1 δὲ B 2 ʼζηλωσα P 4 συγκαθεὶς Reiskius: συγκρα-
+               <note type="footnote">1 δὲ B 2 ʼζηλωσα P 4 συγκαθεὶς Reiskius: συγκρα-
 θεὶς 5 ψόφους B 6 αὐτοῦ MBP: corr v κατασχύνει P
 7 κἀμοί] καί μοί M BPv 10 τέκνων B 11 γάμοιο certatim
 delent, sed cf Plut de superstitione 169e 15 φιλοτότιμοι B</note>
-<note type="footnote">20 οὐ δοκιμάζον P παρʼ ἀμφοτέροις Sylburgius παρʼ ἀμ-
+               <note type="footnote">20 οὐ δοκιμάζον P παρʼ ἀμφοτέροις Sylburgius παρʼ ἀμ-
 φοτέρῳ Sadaeus 21 παράλληλα MBP 22 ἔδοξα Krüger:
 ἔδοξεν 23 τοδὶ] δὴ MBPv</note>
-
-<pb n="180"/>
+               <pb n="180"/>
 λόγος εἷς ἐστι Πλάτωνι, Σωκράτους ἀπολογία, δικαστηρίου
 μὲν ἢ ἀγορᾶς οὐδὲ θύρας ἰδών, κατʼ ἄλλην
 δέ τινα βούλησιν γεγραμμένος, οὔτʼ ἐν λόγοις τόπον
 ἔχων οὔτʼ ἐν διαλόγοις. τοῦτον μὲν οὖν ἐῶ. δημηγορία <milestone unit="1027"/>
-<lb n="5"/> δὲ οὐδεμία, πλὴν εἴ τις ἄρα τὰς ἐπιστολὰς βούλεται
+               <lb n="5"/> δὲ οὐδεμία, πλὴν εἴ τις ἄρα τὰς ἐπιστολὰς βούλεται
 δημηγορίας καλεῖν. ἀφείσθωσαν δὴ καὶ αὗται.
 ἐγκώμια δʼ ἐν τῷ συμποσίῳ πολλὰ μὲν ἔρωτος, ὧν ἔνια
 οὐκ ἄξια σπουδῆς, ἔν δὲ Σωκράτους ὁποῖον δή ποτε·
@@ -2073,8 +2018,8 @@ delent, sed cf Plut de superstitione 169e 15 φιλοτότιμοι B</note>
 γὰρ ἔχω καιρὸν ὅσοις βούλομαι παραδείγμασι χρήσασθαι,
 <lb n="20"/> πάντων μάλιστα βουληθεὶς ἄν. τοιοῦτος μὲν δή
 τις ὁ τρόπος ἔσται μοι τῆς συγκρίσεως.</p>
-<note type="footnote">13 cf Plato Menexeni 234 b</note>
-<note type="footnote">3 βάλησιν P τύπον mg M 4 τοῦτον Reiskius: τοῦτο
+            <note type="footnote">13 cf Plato Menexeni 234 b</note>
+            <note type="footnote">3 βάλησιν P τύπον mg M 4 τοῦτον Reiskius: τοῦτο
 6 ἀφίσθωσαν P ἀφίστωσαν v αὗται Krüger; αὐταὶ 7 τῷ
 συμφέροντι τὸ συμποσίῳ P 8 ἓν δὲ] οὐδὲ MBPv ὁποῖόν τι
 δή P 9 γε Sadaeus: δὲ νῦν δʼ οὐθὲν δέομαι P v κράτιστον
@@ -2085,11 +2030,10 @@ Kiessling 15 τοῦ ἐπιταφίου· τοῦτον Cobet: τούτου· �
 17 λόγον P 18 δὲ B 20 τοιούτοις B δὴ Sadaeus οὖν Syl-
 burgius: ἂν 21 συκρίσεως B
 </note>
-</div>
-
-<div type="textpart" subtype="chapter" n="24">
-<pb n="181"/>
-<p>λαμβανέσθω δὲ πρότερος Πλάτων, καὶ ἐπειδὴ μέγα 24
+         </div>
+         <div n="24" type="chapter">
+            <pb n="181"/>
+            <p>λαμβανέσθω δὲ πρότερος Πλάτων, καὶ ἐπειδὴ μέγα 24
 φρονεῖν ἔοικεν ἐπί τε ἀκριβείᾳ καὶ σεμνότητι ὀνομάτων,
 ταῦτα ἐπὶ τῶν αὐτοῦ βασανίσω, ἀρξάμενος, ὅθεν
 περ κἀκεῖνος, τοῦ λόγου· ‘Ἔργῳ μὲν ἡμῖν οἵδε ἔχουσι
@@ -2112,18 +2056,17 @@ burgius: ἂν 21 συκρίσεως B
 εἶναι τῶν κόσμων, οἷς ἡ πόλις αὐτοὺς ἐκόσμει. ἵνα
 γὰρ ἀφῶ πάντα τὰ ἄλλα, τὸ δημοσίᾳ γηροτροφεῖσθαι
 <note type="footnote">4 Menexeni 236 d</note>
-<note type="footnote">1 δὴ Pv 6 εἱμαρμένην MBPv 7 κάλους M 8 ἁρμο-
+               <note type="footnote">1 δὴ Pv 6 εἱμαρμένην MBPv 7 κάλους M 8 ἁρμο-
 νίας B 9 τό add Usener 11 τὰ om B 12 τοὺς in spatio
 VIII litt suppl M2 om cum lac IV litt BP προπεμφῆναι M</note>
-<note type="footnote">13 σώματʼ αὐτῶν M: σώματα τῶν PB 14 lac IV litt B
+               <note type="footnote">13 σώματʼ αὐτῶν M: σώματα τῶν PB 14 lac IV litt B
 nulla in M P: suppl Sylburgius ἀναγκαῖον— κράτιστον] α cum
 spatio VI litt M cetera omittens 15 ἀπάντων Vliet: lac VI
 litt B, X fere P 17 δὲ Krüger 18 συμπεριλαβον M 1</note>
-<note type="footnote">19 ἠλίθιος— τελευ desunt in B, qui deinde τὸ σαισι habet
+               <note type="footnote">19 ἠλίθιος— τελευ desunt in B, qui deinde τὸ σαισι habet
 pro τήσασι 20 τοῖς om Pn 21 τῶν κόσμων Sylburgius:
 τὸν κόσμον</note>
-
-<pb n="182"/>
+               <pb n="182"/>
 τοὺς πατέρας αὐτῶν ἄχρι θανάτου καὶ παιδεύεσθαι
 τοὺς υἱεῖς ἕως ἥβης πόσῳ κρεῖττον ἦν τοῦ προπέμπεσθαι
 τὰ σώματα δημοσίᾳ; ἐμοὶ μὲν δοκεῖ μακρῷ.
@@ -2147,19 +2090,18 @@ pro τήσασι 20 τοῖς om Pn 21 τῶν κόσμων Sylburgius:
 χάριν ἡ προσθήκη παρείληπται μήτε τοῦ περιττοῦ
 (περὶ ταῦτα δὲ καὶ ἐν τούτοις ἡ τῆς λέξεως κατασκευή),
 τίς ἂν τοῦτο ἔτι ἕτερον ὀνομάσειεν εἰ μὴ τοῦθʼ <milestone unit="1031"/>
-<note type="footnote">1 πατέρας — παιδεύεσθαι τοὺς om Pv ἀχρὶ M 2 προ-
+               <note type="footnote">1 πατέρας — παιδεύεσθαι τοὺς om Pv ἀχρὶ M 2 προ-
 πέμεθαι P 4 Πάτων uocatiuum interpunctione saepsi: Πλά-
 τωνι BP v ἥδε ἡ] ἢ P 5 κάλους BP 7 πρὸς γὰρ— 9 σύν-
 θεσιν om Pv 8 lacunam detexit et suppleuit Sadaeus
 10 αὐτοῦ Sylburgius: αὐτῆς MP αὐτὴν B 11 εὐφρώνιαν B</note>
-<note type="footnote">13 καὶ bis P 14 τὸ om Pv 15 ἱστοριστικὸν B
+               <note type="footnote">13 καὶ bis P 14 τὸ om Pv 15 ἱστοριστικὸν B
 16 τοῦτο τί B] τουτὶ τὸ ? 18 οὔτε Sadaeus: οὐ καθʼ ἑαυτὸ
 γενόμενον seclusit idem 19 οὔτ᾿ Pv οὔτʼ Pv 22 περὶ
 ταῦτα] περιαιρεῖται frustra Kiessling καὶ ἀν B] κἀν? 23 τίς
 ἂν] τί ἄν τις Kiessling
 </note>
-
-<pb n="183"/>
+               <pb n="183"/>
 ὅπερ ἐστὶν ἀληθῶς, ἀκαιρίαν. τούτοις ἐκεῖνα ἐπιτίθησιν
 ὁ ἀνήρ· ῾Λόγῳ δὲ δὴ τὸν λειπόμενον κόσμον ὅ
 τε νόμος προστάττει τούτοις ἀποδοῦναι. τοῖς ἀνδράσι
@@ -2176,28 +2118,27 @@ pro τήσασι 20 τοῖς om Pn 21 τῶν κόσμων Sylburgius:
 ταῖς γὰρ ἀλόγοις αἰσθήσεσιν ἅπαντα τὰ ὀχληρὰ καὶ
 ἡδέα κρίνεται, καὶ οὐθὲν δεῖ ταύταις οὕτε διδαχῆς <lb n="15"/>
 οὔτε παραμυθίας.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="25">
-<milestone unit="1032"/><p> συκοφαντεῖς τὸ πρᾶγμα, τάχʼ ἂν εἴποι τις, εὐέπειαν <lb n="25"/>
+         </div>
+         <div n="25" type="chapter">
+            <milestone unit="1032"/>
+            <p> συκοφαντεῖς τὸ πρᾶγμα, τάχʼ ἂν εἴποι τις, εὐέπειαν <lb n="25"/>
 ἀπαιτῶν καὶ καλλιλογίαν παρὰ ἀνδρὸς οὐ ταῦτα σοφοῦ.
 τὰς νοήσεις ἐξέταζε, εἰ καλαὶ καὶ μεγαλοπρεπεῖς εἰσι
 καὶ παρʼ οὐθενὶ τῶν ἄλλων κείμεναι. περὶ ταύτας <lb n="20"/>
 ἐκεῖνος ἐσπούδαζεν, ἐν ταύταις δεινὸς ἦν. τούτων
 εὐθύνας παρʼ αὐτοῦ λάμβανε, τὸν δὲ τρόπον τῆς λέξεως
 <note type="footnote">2 Menexeni 236 d</note>
-<note type="footnote">1 ἀληθῶς Sylburgius: ἀληθὲς ὡς 3 νόμοις νόμος P | τάτ-
+               <note type="footnote">1 ἀληθῶς Sylburgius: ἀληθὲς ὡς 3 νόμοις νόμος P | τάτ-
 τει postea add M τούτοις P, B in mg: om cum lac VI litt M, B
 in textu Π (Plato) 4 lac X litt MP, VI litt B: suppl Syl-
 burgius κείμενον κόσμον ὅτε κείμενον B: corr rubricator
 6 ποιήσει ci Usener 7 προθέσεως B εἴγ’ v 9 ἐπέμψατο B</note>
-<note type="footnote">13 ἀλʼ B 14 αἰσθήσασιν BP ἅπαντας P1 τὰ om B</note>
-<note type="footnote">15 δεῖ] δῆ B οὔτε διδαχῆς om Pv, ci Reiskius 17 τύχʼ
+               <note type="footnote">13 ἀλʼ B 14 αἰσθήσασιν BP ἅπαντας P1 τὰ om B</note>
+               <note type="footnote">15 δεῖ] δῆ B οὔτε διδαχῆς om Pv, ci Reiskius 17 τύχʼ
 ἂν εἴποιος B εὐέπειραν εὐεπειαν P 20 οὐδενὶ Sylburgius:
 οὐθὲν M, B mg οὐδὲν P, B text v
 </note>
-
-<pb n="184"/>
+               <pb n="184"/>
 ἔα. καὶ πῶς ἔνι ταῦτʼ εἰπεῖν; τοὐναντίον γὰρ ἅπαντες
 ἴσασιν, ὅτι πλείονι κέχρηται φιλοτιμίᾳ περὶ τὴν ἑρμηνείαν
 ὁ φιλόσοφος ἢ περὶ τὰ πράγματα. μυρία τούτου
@@ -2217,24 +2158,22 @@ burgius κείμενον κόσμον ὅτε κείμενον B: corr rubricato
 τὰ Γοργίεια ταυτὶ παραγίνεται, τὰς ἀντιθέσεις καὶ τὰς
 παρισώσεις λέγω, καὶ διὰ τῶν λήρων τούτων κοσμεῖ
 τὴν φράσιν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="26">
-<p> ἀκούσωμεν δὲ αὐτοῦ, πῶς λέγει· ‘Ἔργων γὰρ εὖ
+         </div>
+         <div n="26" type="chapter">
+            <p> ἀκούσωμεν δὲ αὐτοῦ, πῶς λέγει· ‘Ἔργων γὰρ εὖ
 <lb n="21"/> πραχθέντων λόγῳ καλῶς ῥηθέντι μνήμη καὶ κόσμος
 τοῖς πράξασι γίνεται παρὰ τῶν ἀκουσάντων.’ ἐνταῦθα
 τοῖς μὲν ἔργοις ὁ λόγος ἀντίκειται, τῷ δὲ
 πραχθῆναι τὸ ῥηθῆναι, μετωνόμασται δὲ ἀντὶ τοῦ εὖ
 <note type="footnote">20 Menexeni 236e cf Dionys. de comp p 49 R</note>
-<note type="footnote">1 ταυ . . . επεῖν in mg ταυτον εἴ B 2 πλείωνι P | ἐρμε-
+               <note type="footnote">1 ταυ . . . επεῖν in mg ταυτον εἴ B 2 πλείωνι P | ἐρμε-
 νείαν P1 4 εἷς] εἴς το B 6 περιττὸν M: περὶ τὸν P περὶ
 τὸν περιττὸν B τῆς bis P 13 lac IV litt M, V— VI B, VI P:
 suppleuit Sadaeus 17 Γοργίεια Reiskius: γόργεια 18 παρα-
 σώσεις P | λόγω BP 20 ἔργων Π: τῶν MP τῶν τῶν B
 21 λόγῳ om P 22 πράξασι] πρασι B 24 μετονόμασθαι M1 |
 δ᾿ Pv</note>
-
-<pb n="185"/>
+               <pb n="185"/>
 τὸ καλῶς, παρισοῦται δὲ τὰ τρία μόρια τοῦ λόγου
 τοῖς τρισί. τοῦ δὲ ἀσφαλῶς βῆναι τὴν περίοδον ἕνεκα
 <milestone unit="1034"/> καὶ οὐθενὸς ἀναγκαίου, τέλος ἤδη τῆς διανοίας
@@ -2257,20 +2196,19 @@ suppleuit Sadaeus 17 Γοργίεια Reiskius: γόργεια 18 παρα-
 μὲν ἱκανῶς τῷ εὐμενῶς, τῷ δʼ ἐπαινέσει τὸ παραινέσει, <lb n="20"/>
 καὶ ταῦτα πάρισα· οὐ Λικύμνιοι ταῦτ᾿ εἰσὶν οὐδʼ Ἀγάθωνες
 <note type="footnote">7 Pindari fr 121 Bergkii 16 Menexeni 236e</note>
-<note type="footnote">1 παρισοῦται Kiessling in mg, Sadaeus: παρισοῦνται MB
+               <note type="footnote">1 παρισοῦται Kiessling in mg, Sadaeus: παρισοῦνται MB
 παροισοῦνται P μήρια P 4 ἐχούσας P 5 οὑτοσὶ] οὐ τισὶ B</note>
-<note type="footnote">8 δʼ ἐσλοῖσιν Sylburgius: δὲ ὅλοισιν lacunam post ὑμνεῖ-
+               <note type="footnote">8 δʼ ἐσλοῖσιν Sylburgius: δὲ ὅλοισιν lacunam post ὑμνεῖ-
 σθαι metrum insimulat, alii alia supplent 9 τιμαῖς Boeckh
 μόνον ῥηθέν· MBP ῥηθέν delent Bothe et Boeckh. fort ποτι-
 ψαύει μόνον· ῥηθὲν 〈μένει,〉 θνᾴσκει δὲ κτλ θνάσκει MBPv</note>
-<note type="footnote">10 δὲ σιγαθὲν Barnes: δʼ ἐπιταθὲν 13 ὃς] ὣς B ὡς P
+               <note type="footnote">10 δὲ σιγαθὲν Barnes: δʼ ἐπιταθὲν 13 ὃς] ὣς B ὡς P
 ἐπαγγέ[λλ]εται cum ras M καλλωπίζειν BP 15 ἱκανόν] ἰμα-
 νιὸν B μεταυτὴν M μετὰ ταύτην Sadaeus 17 τετελευκότας B
 τελευτηκότας ἐπαινέσεται Π 18 παραινέσεται Π 19 ἀντιν-
 παράκειται] παράκειται MBPv 21 ο . . . κύμνιοι M
 </note>
-
-<pb n="186"/>
+               <pb n="186"/>
 οἱ λέγοντες ‘ὕβριν ἤ <add cause="omitted">κύ</add>πριν μισθῷ ποθὲν ἢ
 μόχθον πατρίδων,ʼ ἀλλʼ ὁ δαιμόνιος ἑρμηνεῦσοι Πλάτων.
 καὶ οὐ τοῖς σχήμασιν ἐπιτιμῶ· φέρει γάρ ποτε
@@ -2289,24 +2227,23 @@ suppleuit Sadaeus 17 Γοργίεια Reiskius: γόργεια 18 παρα-
 κοσμίως, τοὺς δὲ γηροτροφοῦντες ἀξίως,ʼ καὶ πάλιν
 που· ‘Καὶ αὐτὸς δέομαι ὑυπὲρ ἐκείνων, τῶν μὲν μιμεῖσθαι
 <note type="footnote">1 cf tragg fr p 769, 31 N 8 Menexeni 239c 10 ibid 245b</note>
-<note type="footnote">11 ibid 247d 13 ibid 247d 15 ibid 248d 17 ibid 248e</note>
-<note type="footnote">1 ἢ κύπριν M. Schmidt: ἢ . . . πριν M ἦν . . . . . . . πρὶν B
+               <note type="footnote">11 ibid 247d 13 ibid 247d 15 ibid 248d 17 ibid 248e</note>
+               <note type="footnote">1 ἢ κύπριν M. Schmidt: ἢ . . . πριν M ἦν . . . . . . . πρὶν B
 ἢ πριν Pv μισθὸν πόθων (πόθεν B) ἢ μόχθον Ἀτρειδῶν?
 (πραπίδων M. Schmidt) alia Schmidt Jos. Klein Gompertz Weil</note>
-<note type="footnote">2 δ . . . νιος M 3 ἐπιτιμῶ] ἐπι cum lac V litt M
+               <note type="footnote">2 δ . . . νιος M 3 ἐπιτιμῶ] ἐπι cum lac V litt M
 4 ὥραν οὐ χαρ lac X—XII litt τὴν τὴν ἐπιτήδευσιν αὐτῶν καὶ
 τὴν ἀκαι lac XIV—XVI litt μαι· καὶ μάλιστα M ὥραν οὐ χαρι
 lac VI litt οὐδʼ αὐτὴν τὴν ἐπιτήδευσιν αὐτῶν καὶ τὴν ἀκαιρίαν
 αὐτῶν καί μαι μάλιστα B ὥραν οὐ χαρ lac XI litt οὐδʼ αὐτὴν
 τὴν ἐπιτήδευσιν αὐτῶν καὶ τὴν ἀκαιρίαν αὐτῶν μαι καὶ μάλιστα
 P ex quo pendet v solum μαι omittens: restitui et suppleui</note>
-<note type="footnote">6 γένηται Pv 10 τειχισάμενος corr in τειχισαμένη P
+               <note type="footnote">6 γένηται Pv 10 τειχισάμενος corr in τειχισαμένη P
 δὲ post τειχισαμένη Πv 14 δόξουσι ΠΔ p 1047: δοξάζουσι
 MBP 15 καὶ κεῖνα corr in κἀκεῖνα B ἔτι Sylburgius: ὅτι
 παιδεύοντες —17 τῶν μὲν om B 16 κοσμίους P 17 μιμεῖσθαι
 Π: μισεῖσθαι MBP</note>
-
-<pb n="187"/>
+               <pb n="187"/>
 τοὺς ἑαυτῶν, τῶν δὲ καρτερεῖν ὑπὲρ ἑαυτῶν,ʼ
 καὶ ταυτί· ʼΠολιτεία γὰρ ἀνθρώπων τροφή ʼστι καὶ
 ἡ μὲν ἀγαθὴ ἀγαθῶν, μὴ καλὴ δὲ κακῶν.ʼ κἀκεῖνα
@@ -2316,11 +2253,11 @@ MBP 15 καὶ κεῖνα corr in κἀκεῖνα B ἔτι Sylburgius: ὅτ�
 ἀλλʼ ἐάσας τὸ περὶ τούτων ἀκριβολογεῖν ἐπʼ ἐκεῖνά
 τʼ ἐλεύσομαι καί μοι πάνυ μὲν αἰδουμένῳ καὶ ὀκνοῦντι
 εἰπεῖν, ὅμως δʼ εἰρήσεται, ὅτι παχύτητος καὶ ἀδυνασίας
-ἔδοξεν εἶναι μηνύματʼ αὐτά.</p><lb n="10"/>
-</div>
-
-<div type="textpart" subtype="chapter" n="27">
-<p>προειπὼν γὰρ ὁ ἀνήρ, ποῖόν τι σχῆμα λαβεῖν ἁρμόττει 27
+ἔδοξεν εἶναι μηνύματʼ αὐτά.</p>
+            <lb n="10"/>
+         </div>
+         <div n="27" type="chapter">
+            <p>προειπὼν γὰρ ὁ ἀνήρ, ποῖόν τι σχῆμα λαβεῖν ἁρμόττει 27
 τὸν λόγον, ἐπιτίθησι ταυτί· ‘Ἐπὶ τούτοις τὴν
 τῶν ἔργων πρᾶξιν ἐπιδείξωμεν, ὡς καλὴν καὶ ἀξίαν
 τούτων ἀπεφήναντο.ʼ ἔργων πρᾶξιν ἀξίαν ἀποφηναμένους
@@ -2329,7 +2266,7 @@ MBP 15 καὶ κεῖνα corr in κἀκεῖνα B ἔτι Sylburgius: ὅτ�
 πράττεται μὲν γὰρ τὰ πράγματα, ἐργάζεται
 δὲ τὰ ἔργα, ἀποφάνσεως <add cause="omitted">δὲ</add> ἀξιοῦται τὰ λεκτά. τουτὶ
 <note type="footnote">2 Menexeni 238e 4 ibid 243c 12 ibid 237b</note>
-<note type="footnote">1 αὑτῶν Π δʼ ἐκκαρτερεῖν BP δʼ ἐγκαρτερεῖν v θαρρεῖν Π
+               <note type="footnote">1 αὑτῶν Π δʼ ἐκκαρτερεῖν BP δʼ ἐγκαρτερεῖν v θαρρεῖν Π
 αὑτῶν Π 2 τροφῆς ἐστι MBP: corr Usener τροφὴ ἀνθρώπων
 ἐστι Π 3 καλὴ μὲν ἀγαθῶν, ἡ δʼ ἐναντία κακῶν Π ac fort apud
 Dionysium in καὶ ἡ latet καλὴ, ut ἀγαθὴ tamquam dittogra-
@@ -2338,19 +2275,18 @@ phia natum delendum sit 5 φιλίους Π: φίλους MBPv
 τητος P ἀδυναστίας Pv 10 μηνύματʼ αὐτά] μήνυμα ταῦτα M
 μήνυτα ταῦτα B μήνυτα τοι ταῦτα P μηνύματα τὰ τοιαῦτα
 Reiskius 12 ἐτίθησι P | ἐπὶ MBP: ἐπὶ δὲ Πν 13 καὶ om BP</note>
-<note type="footnote">14 τούτων — ἀξίαν om Pv ἀπεφήναντο M Π: ἀποφήναν
+               <note type="footnote">14 τούτων — ἀξίαν om Pv ἀπεφήναντο M Π: ἀποφήναν
 ὧνB ἀποφηναμένους] ἀποφηναμένην MPv ἀποφηναγκένην B</note>
-<note type="footnote">17 πράτεται P 18 ἀποφάνσεως Kruger: ἀποφάσεως | δὲ
+               <note type="footnote">17 πράτεται P 18 ἀποφάνσεως Kruger: ἀποφάσεως | δὲ
 add Reiskius om BPM sed in M spatium est II litt | ἀξιοῦν-
 ται v | λεκτὰ Sylburgius: ἄληπτα | ταυτὶ B
 </note>
-
-<pb n="188"/>
+               <pb n="188"/>
 μὲν δὴ παχὺ εἴρηται, τὸ <add cause="omitted">δ᾿ ἐπὶ</add> τούτῳ λεγόμενον
 ἐνθύμημα ἀσθενέστερον· διὰ μακροῦ τε γὰρ καὶ <milestone unit="1038"/>
 ἀκατάλληλον καὶ οὔτε δεινότητα ἔχον οὔτε σύνταξιν·
 ‘Τῆς δʼ εὐγενείας πρῶτον ὑπῆρξε τοῖσδε ἡ <add cause="omitted">τῶν προγόνων</add>
-<lb n="5"/> γένεσις, οὐκ ἔπηλυς οὖσα οὐδὲ τοὺς ἐκγόνους
+               <lb n="5"/> γένεσις, οὐκ ἔπηλυς οὖσα οὐδὲ τοὺς ἐκγόνους
 τούτους ἀποφηναμένη μετοικοῦντας ἐν τῇ χώρᾳ, ἄλλοθεν
 σφῶν ἡκόντων, ἀλλʼ αὐτόχθονας καὶ τῷ ὄντι
 πατρίδα οἰκοῦντας καὶ ζῶντας καὶ τρεφομένους οὐχ
@@ -2366,9 +2302,9 @@ add Reiskius om BPM sed in M spatium est II litt | ἀξιοῦν-
 ἀξιώσειε τῶν εὖ διαλέγεσθαι σπουδαζόντων εἰπεῖν, ὅτι
 ἡ γένεσις ἡ τῶν προγόνων τοὺς ὕστερον γενησομένους
 <lb n="20"/> ἀπεφήνατο αὐτόχθονας καὶ μὴ μετοίκους εἶναι τῆς <milestone unit="1039"/>
-<note type="footnote">4 Menexeni 237b 6 scholion ἀντὶ τοῦ (ἀντι B) ἐπιδείξας
+               <note type="footnote">4 Menexeni 237b 6 scholion ἀντὶ τοῦ (ἀντι B) ἐπιδείξας
 φανερόν (φανερῶν B)</note>
-<note type="footnote">1 τὸ δʼ ἐπὶ τούτῳ Sylburgius: τὸ lac V litt τοῦ τούτῳ MB
+               <note type="footnote">1 τὸ δʼ ἐπὶ τούτῳ Sylburgius: τὸ lac V litt τοῦ τούτῳ MB
 τὸ τὸν τούτῳ Pv λεγό postea add M 2 ἀσθενότερον Pv
 post διὰ lac III litt M 3 σύνταξιν om M in lac IX litt | post
 σύνταξιν lac V uel VI litt B 4 τῶν προγόνων Π: lac XII litt
@@ -2379,8 +2315,7 @@ M, XVII litt B, XXXX fere litt P 6 scholion in mg om P
 Vliet 17 ἡδʼ P γένεσις — τίς δʼ om Pv 18 εὖ διαλέγε-
 σθαι] ἔν διαλεγεσθαι, mg διαλέγεσθαι B 20 αὐτὸ χθόνας B
 </note>
-
-<pb n="189"/>
+               <pb n="189"/>
 χώρας, ἐν ᾗ ἐγένοντο; οὔτε γὰρ ἡ γένεσις αὐτή τι
 ἀποφαίνεσθαι φύσιν ἔχει, οὔτε μετοικεῖν τις, ἐν ᾗ ἂν
 γένηται· ἀλλʼ ἀποφαινόμεθα μὲν ἡμεῖς τὰ λεκτά, μετοικοῦσι
@@ -2397,10 +2332,9 @@ Vliet 17 ἡδʼ P γένεσις — τίς δʼ om Pv 18 εὖ διαλέγε-
 οἱ πρόγονοι, οὐχὶ ἐπήλυδες ὄντες οὐδὲ τοὺς ἐκγόνους
 τούτους ἀποφήναντες μετοικοῦντας ἐν τῇ χώρᾳ, ἄλλοθεν <lb n="15"/>
 σφῶν ἡκόντων, ἀλλʼ αὐτόχθονας.ʼ</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="28">
-<p>ἄξιον δέ, ὃ καὶ περὶ τῆς εὐγενείας τῶν ἀνδρῶν 28
+         </div>
+         <div n="28" type="chapter">
+            <p>ἄξιον δέ, ὃ καὶ περὶ τῆς εὐγενείας τῶν ἀνδρῶν 28
 εἴρηκε, τὴν χώραν πρῶτον ἐπαινῶν, ἐξ ἧς ἐγένοντο,
 μὴ παρέργως ἰδεῖν. φησὶ δὴ θεοφιλῆ αὐτὴν εἶναι καὶ
 <milestone unit="1040"/> παρέχεται τούτου μάρτυρας τοὺς ἀμφισβητήσαντας <lb n="20"/>
@@ -2409,16 +2343,15 @@ Vliet 17 ἡδʼ P γένεσις — τίς δʼ om Pv 18 εὖ διαλέγε-
 οὐ τοῦτο συκοφαντεῖν ἄξιον, ἀλλά, πῶς ἡρμήνευκεν
 αὐτά, καταμαθεῖν· ‘Μαρτυρεῖ δʼ ἡμῖν τῷ λόγῳ ἡ τῶν
 <note type="footnote">24 Menexeni 237c</note>
-<note type="footnote">3 τὰ λεκτά fort delendum est 6 εἰπὼν] εἶπεν MBP εἶπε
+               <note type="footnote">3 τὰ λεκτά fort delendum est 6 εἰπὼν] εἶπεν MBP εἶπε
 v cf de comp. p 139 R 7 ἡκόν.των una littera erasa M
 8 τῷ ἑνικῷ τὸ πληθυντικόν Reiskius: τὸ ἑνικὸν τῷ πληθυντικῷ</note>
-<note type="footnote">12 ἂν κατεστήσατο accipe: in ordinem redegisset 16 σφᾶς
+               <note type="footnote">12 ἂν κατεστήσατο accipe: in ordinem redegisset 16 σφᾶς
 v ἡκόντων M2: ἥκοντας M1 BPv ἀλʼ P 17 δὲ καὶ ὃ frustra
 Kruger περὶ τῆς εὐγενείας—χώραν iterat P 18 ἐπαινή[ῶ]ν
 cum ras M 19 δὴ M: δὲ BPv 24 αὐτά Krudger: αὐτήν | ἡμῶν Π
 </note>
-
-<pb n="190"/>
+               <pb n="190"/>
 ἀμφισβητησάντων περὶ αὐτῆς θεῶν ἔρις <add cause="omitted">τε καὶ κρίσις</add>.
 ἣν δὲ θεοὶ ἐπῄνεσαν, πῶς οὐχ ὑπʼ ἀνθρώπων γε συμπάντων
 δικαία ἐπαινεῖσθαι;’ ταπεινή μοι δοκεῖ καὶ
@@ -2443,17 +2376,16 @@ cum ras M 19 δὴ M: δὲ BPv 24 αὐτά Krudger: αὐτήν | ἡμῶν �
 γενναίᾳ χρήσεται φράσει· ‘Μόνη γὰρ ἐν τῷ τότε καὶ
 πρώτη τροφὴν ἀνθρωπείαν ἤνεγκεν τὸν τῶν πυρῶν
 <note type="footnote">15 Menexeni 237d 22 ibid 238a</note>
-<note type="footnote">1 ἀμφητησάντων B | τε καὶ κρίσις addidi ex Π 2 ἣν δὴ
+               <note type="footnote">1 ἀμφητησάντων B | τε καὶ κρίσις addidi ex Π 2 ἣν δὴ
 Π | συνπάντων B ξυμπάντων Π 3 καὶ ἄζηλος bis B
 8 τὴν Hrüdger: τῆς 9 στάσις P | ἔριν τε καὶ κρίσιν del Usener</note>
-<note type="footnote">10 κρίσιν] κρίνην B | ὃν om B | τῶν] τὸν M 12 εἰπόντα;
+               <note type="footnote">10 κρίσιν] κρίνην B | ὃν om B | τῶν] τὸν M 12 εἰπόντα;
 ἀλλὰ Reiskius: εἰπὼν τὰ ἄλλα | ἃ μετὰ] ἅμα τὰ P 13 τε τὸ]
 τό τε P τό τʼ v 14 πράτη B 15 αὐτῷ Capperonnier: αὐτῶν
 MBP αὐτοῖς Sylburgius 16 ζῶον B 18 εἴ τι Sadaeus: τἰ
 ἐπὶ | λαμπρότερον Usener 20 αὐτῶν B 21 περί] πυρί P</note>
-<note type="footnote">22 χρήσεται Krüdger: χρήσει καὶ MBP | καὶ πρώτη bis B</note>
-
-<pb n="191"/>
+               <note type="footnote">22 χρήσεται Krüdger: χρήσει καὶ MBP | καὶ πρώτη bis B</note>
+               <pb n="191"/>
 καὶ κριθῶν καρπόν.᾿ ὦ θεοὶ καὶ δαίμονες, ποῦ τὸ
 Πλατωνικὸν νᾶμα τὸ πλούσιον καὶ τὰς μεγάλας κατασκευὰς
 καχλάζον; οὕτως μικρολογεῖ καὶ κατὰ στράγγα
@@ -2462,17 +2394,17 @@ MBP αὐτοῖς Sylburgius 16 ζῶον B 18 εἴ τι Sadaeus: τἰ
 τις ἐρεῖ. καὶ πῶς; ὃς οὐκ οἴεται τὸ γάλα σεμνὸν
 εἶναι ὄνομα, ἀλλὰ πηγὴν τροφῆς αὐτὸ μετονομάζει διὰ
 τῶν ἐξῆς.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="29">
-<milestone unit="1042"/><p> ἐῶμεν καὶ τοῦτο, πῶς δὲ τῆς δωρεᾶς αὐτῆς εἶπε 29
+         </div>
+         <div n="29" type="chapter">
+            <milestone unit="1042"/>
+            <p> ἐῶμεν καὶ τοῦτο, πῶς δὲ τῆς δωρεᾶς αὐτῆς εἶπε 29
 τὸ μέγεθος, ἐξετάσωμεν· Ὧι κάλλιστα καὶ ἄριστα <lb n="10"/>
 τρέφεται τὸ ἀνθρώπειον γένος.ʼ εἰ τῶν ἐπιγείων τις
 ἡμῶν καὶ χαμαὶ ἐρχομένων ‘κάλλιστα καὶ ἄρισταʼ εἶπεν,
 ὅσον ἂν ἐκίνησε γέλωτα; πλὴν ἀφείσθω καὶ τοῦτο.
 Τούτου δὲ τοῦ καρποῦ οὐκ ἐφθόνησεν, ἀλλʼ ἔνειμε
 καὶ τοῖς ἄλλοις.ʼ εἴ τις βουλήσεται παράδειγμα λαβεῖν <lb n="15"/>
-<gap reason="omitted"/> μένῃς λέξεως, ἡ τοῦ καρποῦ μὴ φθονήσασα
+               <gap reason="omitted"/> μένῃς λέξεως, ἡ τοῦ καρποῦ μὴ φθονήσασα
 γῆ οὐχὶ πρώτη παρακείσεται; ἐμοὶ μὲν γὰρ
 δοκεῖ. ἡ δὲ μεταδοῦσα τῶν ἑαυτῆς ἀγαθῶν ἅπασιν
 ἀνθρώποις καὶ τηλικούτῳ κατασπείρασα πλούτῳ βάρβαρόν
@@ -2480,9 +2412,9 @@ MBP αὐτοῖς Sylburgius 16 ζῶον B 18 εἴ τι Sadaeus: τἰ
 τοῖς ῥήμασιν, ὅτι οὐκ ἐφθόνησε τῶν σπερμάτων καὶ
 ὅτι ἔνειμεν αὐτὰ τοῖς ἄλλοις; οὐ τοῦ μὲν ‘μὴ
 <milestone unit="1043"/> φθονῆσαι τοῖς πέλαςʼ οὐδὲ μεμνῆσθαι <del>τοῖς πέλας</del>
-<note type="footnote">4 cf Cratini fr VII M. 7 Menexeni 237e 10 ibid 238a</note>
-<note type="footnote">14 ibid 238a</note>
-<note type="footnote">3 καχλάζων BP 5 κατασκεβῆς ἐλὼν B 8 ἐξἧς B
+               <note type="footnote">4 cf Cratini fr VII M. 7 Menexeni 237e 10 ibid 238a</note>
+               <note type="footnote">14 ibid 238a</note>
+               <note type="footnote">3 καχλάζων BP 5 κατασκεβῆς ἐλὼν B 8 ἐξἧς B
 11 ἀνθρώπεινον P 12 μαι, mg χαμαί P 13 ἂν om Pv
 ἐκείνησε B 14 τοῦ om P 15 βούλεται βουλήσεται B
 16 ante μένης lac XV fere litt M, VII litt B, II—III litt P: suppleas
@@ -2490,8 +2422,7 @@ MBP αὐτοῖς Sylburgius 16 ζῶον B 18 εἴ τι Sadaeus: τἰ
 MBPv 20 γῆν MB: γῆ Pv 22 τοῖς ἄλλοις: immo τοῖς
 πέλας 23 φθονῆναι B1 τοῖς πέλας: immo τοῖς ἄλλοις | τοῖς
 πέλας seclusit Reiskius</note>
-
-<pb n="192"/>
+               <pb n="192"/>
 παντάπασιν ἐχρῆν, τὸ δὲ ‘νεῖμαι τοῦ καρποῦʼ σεμνοτέρῳ
 ὀνόματι δωρεᾶς ἢ χάριτος ἢ ἄλλου τινὸς τῶν τοιούτων
 περιλαβεῖν; ἐῶ ταῦτα. τὴν δὲ τῆς Ἀθηνᾶς δωρεὰν
@@ -2507,10 +2438,9 @@ MBPv 20 γῆν MB: γῆ Pv 22 τοῖς ἄλλοις: immo τοῖς
 γράφων, ὃς εἰ μὴ καὶ τὰ πρωτεῖα οἴσεται τῆς λέξεως,
 περί γε τῶν δευτερείων πολὺν ἀγῶνα παρέξει τοῖς
 <lb n="15"/> διαμιλλησομένοις. ἀλλὰ περὶ μὲν τούτων ἅλις.|</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="30">
-<p>30 ἃ δὲ δὴ κράτιστα εἰρῆσθαι τῷ ἀνδρὶ δοκοῦσί <milestone unit="1044"/>
+         </div>
+         <div n="30" type="chapter">
+            <p>30 ἃ δὲ δὴ κράτιστα εἰρῆσθαι τῷ ἀνδρὶ δοκοῦσί <milestone unit="1044"/>
 τινες ἐπὶ τῇ τελευτῇ τοῦ λόγου, κἀγὼ σύμφημι, ταῦτα
 παραθεὶς ἐπὶ τὸν Δημοσθένην τρέψομαι. ὁ δὴ τὸν
 ἔπαινον αὐτῶν διεξιὼν φησὶν ἐπισκῆψαι τοῖς παροῦσιν
@@ -2519,23 +2449,23 @@ MBPv 20 γῆν MB: γῆ Pv 22 τοῖς ἄλλοις: immo τοῖς
 παθεῖν αὐτοὺς συμβαίη κατὰ τὴν μάχην. ἔστι δὲ τάδε·
 ‘Φάσω δὲ ὑμῖν, τε ἤκουσα αὐτῶν ἐκείνων καὶ οἷα
 <note type="footnote">23 Menexeni 246c—248e</note>
-<note type="footnote">1 παντάπασιν ἐχρῆν, τὸ δὲ dedi Reiskium secutus: παν-
+               <note type="footnote">1 παντάπασιν ἐχρῆν, τὸ δὲ dedi Reiskium secutus: παν-
 τάπασι κέχρηνται (κέχρηται P) οὐδὲ τοῦ καρποῦ] τοὺς καρποὺς
 MBPv 4 εἴρηκε v τοῦτο Π τὴν ἐλαίου Pv 5 ἀνῆκεν MB
 ἐγγώνοις P ἐγγωνὸν in mg ἐκγόνοις B ἐγγόνοις v 6 διθύραμβοι
 περιφ P 8 μειρακιώδης μοιρακιωδῶς P 9 ἰσχὺν—χαρίτων,
 τὰ om Pv 11 γεναῖα P 14 δευτερίων P 15 διαμελησο-
 μένοις P διαμεληγομένοις B 16 δοκοῦσίν P 17 τῇ λευτῇ P</note>
-<note type="footnote">18 δὴ] δὲ Pv 19 δ[ιε]ξιὼν cum ras M 21 ἑαυτοὺς ἑαυ-
+               <note type="footnote">18 δὴ] δὲ Pv 19 δ[ιε]ξιὼν cum ras M 21 ἑαυτοὺς ἑαυ-
 τῶν B | παγγελλεῖν B 23 ἡμῖν P | αὐτῶν ἥκουσα vΠ | πλά-
 των in mg B</note>
-
-<pb n="193"/>
+               <pb n="193"/>
 νῦν ἡδέως <add cause="omitted">ἂν</add> εἴποιεν ὑμῖν ἀναλαβόντες δύναμιν,
 τεκμαιρόμενος ἐξ ὧν τότʼ ἔλεγον. ἀλλὰ χρὴ νομίζειν
 ἀκούειν αὐτῶν ἐκείνων, ἃ ἂν ἀπαγγέλλω. ἔστι δὲ τάδε·
 ὦ παῖδες, ὅτι μέν ἐστε πατέρων ἀγαθῶν, αὐτὸ μηνύει
-τὸ νῦν παρόν. ἡμῖν γὰρ ἐξὸν ζῆν μὴ καλῶς, <add cause="omitted">καλῶς</add> <lb n="5"/>
+τὸ νῦν παρόν. ἡμῖν γὰρ ἐξὸν ζῆν μὴ καλῶς, <add cause="omitted">καλῶς</add>
+               <lb n="5"/>
 αἱρούμεθα μᾶλλον τελευτᾶν, πρὶν ὑμᾶς τε καὶ τοὺς
 ἔπειτα εἰς ὀνείδη καταστῆσαι καὶ πρὶν τοὺς ἡμετέρους
 <lb n="1045"/> πατέρας καὶ πᾶν τὸ πρόσθεν γένος αἰσχῦναι, ἡγούμενοι
@@ -2563,11 +2493,10 @@ BP 16 ἀνδρίαν MBPv μετʼ ἀνανδρίας Π | ἄλλῳ Π | ο�
 οὐχʼ BP οὐχ Πν 17 κάλος BP σώματος κάλλος Π 18 συν-
 οικοῦντας B ξυνοικοῦντα vΠ | φαίνεται—ἔχοντα om B
 19 ἐπιφανέστερον ποιεῖ τὸν ἔχοντα καὶ ἐκφαίνει τὴν δειλίαν Π</note>
-<note type="footnote">21 ἀλλʼ om Π σοφίας P φαίνεται ΜΒΠ: γίνεται Pv | καὶ
+               <note type="footnote">21 ἀλλʼ om Π σοφίας P φαίνεται ΜΒΠ: γίνεται Pv | καὶ
 πρῶτον καὶ ὕστατον ΠΔ p 1936: πρῶτα καὶ ὕστατα MBPv
 </note>
-
-<pb n="194"/>
+               <pb n="194"/>
 μίαν πειρᾶσθε ἔχειν, ὅπως μάλιστα μὲν ὑπερβαλεῖσθε
 καὶ ἡμᾶς καὶ τοὺς πρόσθεν εὐκλείᾳ, εἰ δὲ μή, ἴστε,
 ὡς ἡμῖν, ἂν μὲν νικῶμεν ὑμᾶς ἀρετῇ, ἡ νίκη αἰσχύνην
@@ -2596,15 +2525,14 @@ BP 16 ἀνδρίαν MBPv μετʼ ἀνανδρίας Π | ἄλλῳ Π | ο�
 σκευάσαισθε Π: παρασκευάσεσθε Pv παρασκευάσασθε M2 παρα-
 σκευάσασθαι M1B 6 B mg rubro ὑμεῖς καταχρησόμενοι Π:
 καταχρησάμενοι MBPv | ἀναλώσοντες Π: ἀναλώσαντες MBPv</note>
-<note type="footnote">7 αὐτὴν Π 8 οὐκ ἔτιν B 9 δἰ αὐτόν MBP 10 γάρ τινας
+               <note type="footnote">7 αὐτὴν Π 8 οὐκ ἔτιν B 9 δἰ αὐτόν MBP 10 γάρ τινας
 MBP 11 καταχρήσασθαι δὲ] χρῆσθαι δὲ καὶ Π | θησαυρῷ Πv:
 θησαυρὸν MBP 14 ἢν] ἐὰν Π 15 ὑμᾶς] ἡμᾶς P 18 δʼ B | δὲ
 ἡμῶν—μητέρας om P | παραμυθεῖσθε P 19 ῥᾷσται B ἢν—οὐ
 γὰρ om P | ἢν B: ἣν M ἐὰν vΠ 20 ξυμβῇ vΠ συνοδύνεσθαι B
 ξυνοδύρεσθαι vΠ 21 λυπήσαντος BPv 22 ἰωμένου B
 </note>
-
-<pb n="195"/>
+               <pb n="195"/>
 πραΰνοντας ἀναμιμνήσκειν αὐτούς, ὅτι, ὧν εὔχοντο, τὰ
 μέγιστα αὐτοῖς οἱ θεοὶ ἐπήκοοι γεγόνασιν. οὐ γὰρ
 ἀθανάτους σφίσι τοὺς παῖδας εὔχοντο γενέσθαι, ἀλλʼ
@@ -2634,13 +2562,12 @@ MBP 11 καταχρήσασθαι δὲ] χρῆσθαι δὲ καὶ Π | θη
 τὰς συμφορὰς Π 9 ἐπαιλιοῦντας B 11 ἐκείνου BP | ἡμῶν
 ἐπαινέτας Π πάντων ἐπαινέτας ἡμῶν v 12 αὐτοὺς MBP
 αὐτοὺ—ὄντας in mg M 13 γὰρ δὴ Πv 14 τῷ γὰρ ὄντι Π</note>
-<note type="footnote">15 ἀνήρτηται] ἀνήρητται BP 18 ἠνάγκασται Π τούτου B
+               <note type="footnote">15 ἀνήρτηται] ἀνήρητται BP 18 ἠνάγκασται Π τούτου B
 ἄριστος P 19 παρεσκευάσθαι B in textu (corr in mg) παρα-
 σκεύασθαι P 20 ὁ ἀνδρεῖος Π 21 καὶ μάλιστα πείθεται]
 μάλιστα πείσεται Π 23 αὐτῷ MBP | δὲ Π |  ἡμεῖς γε Πv
 </note>
-
-<pb n="196"/>
+               <pb n="196"/>
 φαμέν. καὶ ἡμᾶς αὐτοὺς νῦν παρέχομεν τοιούτους,
 οὐκ ἀγανακτοῦντας οὐδὲ φοβουμένους ἄγαν, εἰ δεῖ <milestone unit="1049"/>
 τελευτᾶν ἐν τῷ παρόντι. δεόμεθα δὲ καὶ πατέρων καὶ
@@ -2660,7 +2587,7 @@ MBP 11 καταχρήσασθαι δὲ] χρῆσθαι δὲ καὶ Π | θη
 τοῖς ἡμετέροις παρʼ ἡμῶν ἀπαγγέλλειν. τῇ δὲ πόλει
 παρακελευόμεθα, ὅπως ἡμῖν καὶ πατέρων καὶ υἱῶν
 ἐπιμελήσονται, τοὺς μὲν παιδεύοντες κοσμίως, τοὺς <lb n="1050"/>
-<lb n="20"/> δὲ γηροτροφοῦντες ἀξίως. νῦν δʼ ἴσμεν, ὅτι, κἂν μὴ
+               <lb n="20"/> δὲ γηροτροφοῦντες ἀξίως. νῦν δʼ ἴσμεν, ὅτι, κἂν μὴ
 ἡμεῖς παρακελευώμεθα, ἱκανῶς ἐπιμελήσεται. ταῦτʼ οὖν,
 ὦ γονεῖς καὶ παῖδες τῶν τελευτησάντων, ἐκεῖνοί τʼ
 ἐπέσκηπτον ὑμῖν ἀπαγγέλλειν κἀγὼ ὡς δύναμαι προθυμότατα
@@ -2674,16 +2601,14 @@ om MSP 14 τρέποντας B 16 ὑμῖν P 17 ἀπαγχέλλειν B
 20 γηουτροφοῦντες P | καὶ ἐὰν Π 21 παρακελουώμεθα B |
 τοῦτʼ P 22 ὦ παῖδες καὶ γονῆς Π 23 ἡμῖν Π | ἀπαγγέλ-
 λειν—προθυμότατα om P</note>
-
-<pb n="197"/>
+               <pb n="197"/>
 ἀπαγγέλλω.᾿ αὕτη δοκεῖ κάλλιστα ἔχειν Πλάτωνι
 ἡ λέξις ἐν τούτῳ τῷ λόγῳ. ἔχει μέντοι τὰ πλείω
 καλῶς (οὐ γὰρ δοκεῖ ψεύδεσθαι), πλὴν ὅτι πολιτικόν
 γε τὸ σχῆμα αὐτῆς ἐστιν, οὐκ ἐναγώνιον.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="31">
-<p>ἀντιπαρεξετάσωμεν οὖν ταύτῃ Δημοσθένους λαβόντες
+         </div>
+         <div n="31" type="chapter">
+            <p>ἀντιπαρεξετάσωμεν οὖν ταύτῃ Δημοσθένους λαβόντες
 λέξιν ἐκ τοῦ ὑπὲρ Κτησιφῶντος λόγου. ἔστι δʼ οὐ <lb n="6"/>
 παράκλησις Ἀθηναίων ἐπὶ τὸ καλὸν καὶ τὴν ἀρετήν,
 ὥσπερ παρὰ τῷ Πλάτωνι, ἀλλʼ ἐγκώμιον τῆς πόλεως,
@@ -2703,17 +2628,16 @@ om MSP 14 τρέποντας B 16 ὑμῖν P 17 ἀπαγχέλλειν B
 τότε δʼ ἀξιοῦσα προεστάναι τῶν Ἑλλήνων, εἶτα ἀποστᾶσα
 τούτου, Φιλίππῳ προδεδωκέναι πάντως ἂν ἔσχεν
 <note type="footnote">11 Demosthenes περὶ στεφάνου 199—209</note>
-<note type="footnote">1 μάλιστα PB, sed mg κάλιστα B | Πλάτων MP | post
+               <note type="footnote">1 μάλιστα PB, sed mg κάλιστα B | Πλάτων MP | post
 Πλάτων P inserit κάλλιστα μάλιστα ἔχειν Πλάτων ἡ λέξις
 2 πλείο P 6 ὑπὲρ corr M: κατὰ BPM1 8 ὥσπερ] ὡς B</note>
-<note type="footnote">9 τιμῆς δόξης Pv 10 μέλλοι] μέλλῃ MBPv an μέλλει?
+               <note type="footnote">9 τιμῆς δόξης Pv 10 μέλλοι] μέλλῃ MBPv an μέλλει?
 cf p 1060 11 πολὺς m rec M: πολοῖς B πολλοῖς M1P
 15 γενέσθαι B 16 προύλεγε BP | post προὔλεγες addit
 Αἰσχίνη v 18 εἴπερ ἢ Dv 19 τοῦ] ποῦ P | λόγων B
 20 γ᾿ Pv 21 ἀνθρώπους M | δοκεῖ B 22 εἶτʼ v 23 πάν-
 τας D</note>
-
-<pb n="198"/>
+               <pb n="198"/>
 αἰτίαν. εἰ γὰρ ταῦτα προεῖτο ἀκονιτί, περὶ ὧν οὐθένα
 κίνδυνον ὁντινοῦν οὐχ ὑπέμειναν οἱ πρόγονοι, τίς <milestone unit="1052"/>
 οὐχὶ κατέπτυσεν ἄν σου; μὴ γὰρ τῆς πόλεώς γε μηδʼ
@@ -2733,7 +2657,7 @@ cf p 1060 11 πολὺς m rec M: πολοῖς B πολλοῖς M1P
 ποιεῖν καὶ ἐᾶν ἕτερον τῶν Ἑλλήνων προεστάναι;
 ἀλλʼ οὐκ ἦν, ὡς ἔοικε, ταῦτα τοῖς τότε Ἀθηναίοις
 πάτρια οὐδʼ ἀνεκτὰ οὐδ᾿ ἔμφυτα, οὐδʼ ἐδυνήθη πώποτε <milestone unit="1053"/>
-<lb n="20"/> τὴν πόλιν οὐδεὶς ἐκ παντὸς τοῦ χρόνου πεῖσαι
+               <lb n="20"/> τὴν πόλιν οὐδεὶς ἐκ παντὸς τοῦ χρόνου πεῖσαι
 τοῖς ἰσχύουσι μὲν μὴ δίκαια δὲ πράττουσι προστιθεμένην
 ἀσφαλῶς δουλεύειν. ἀλλʼ ἀγωνιζομένη περὶ πρωτείων
 καὶ τιμῆς καὶ δόξης κινδυνεύουσα πάντα τὸν
@@ -2742,13 +2666,12 @@ cf p 1060 11 πολὺς m rec M: πολοῖς B πολλοῖς M1P
 3 κατέπτισεν B 7 ὁρέθη B 8 τινες om D seelusit v
 10 ἔμπροσθεν D 13 ἔτι τούτων v D 14 τοῦ] τῶν P 15 πο-
 λῆς B 16 καὶ τὰ] καὶ μετὰ B 17 ἐὰν MBP | προστάναι B</note>
-<note type="footnote">18 ταῦθʼ ὡς ἔοικε D | τότε om D seclusit v 21 ἰσχύθυσιν
+               <note type="footnote">18 ταῦθʼ ὡς ἔοικε D | τότε om D seclusit v 21 ἰσχύθυσιν
 BP | προσθεμένην D 22 ἀγωιζομένη P ἀγανωιζομένη B
 23 ὑπὲρ τιμῆς v 24 ἀῶνα, mg αἰῶνα B διατετέλεκε D | καὶ
 ταῖς καὶ ταῦθʼ B | οὕτω D | καὶ καλὰ om D seclusit v
 </note>
-
-<pb n="199"/>
+               <pb n="199"/>
 προσήκοντα τοῖς ὑμετέροις ἤθεσιν ὑμεῖς ὑπολαμβάνετε
 εἶναι, ὥστε καὶ τῶν προγόνων τοὺς ταῦτα πράξαντας
 μάλιστα ἐπαινεῖτε, εἰκότως. τίς γὰρ οὐκ ἂν ἀγάσαιτο
@@ -2781,8 +2704,7 @@ BP | προσθεμένην D 22 ἀγωιζομένη P ἀγανωιζομέν
 τῆς MBP 17 τὸν] τῆν B περιμένη B 19 ἐθελήσῃ M
 20 τοῦ θανάτου om P 22 ἐπεχείρησα νῦν] ἐπεχείρουν D
 23 τίς] οὐκ ἴσθ’ ὅστις D 25 δείγνυμι BP</note>
-
-<pb n="200"/>
+               <pb n="200"/>
 τῆς ἐφʼ ἑκάστοις τῶν πεπραγμένων καὶ ἐμαυτῷ μετ|εῖνα <milestone unit="1055"/>
 φημι. οὗτος δὲ ὁ τῶν ὅλων κατηγορῶν καὶ κελεύων
 ὑμᾶς ἐμοὶ πικρῶς ἔχειν ὡς φόβων καὶ κινδύνων
@@ -2803,14 +2725,13 @@ BP | προσθεμένην D 22 ἀγωιζομένη P ἀγανωιζομέν
 κατορθώσαντας μόνους, δικαίως. ὃ μὲν γὰρ ἦν ἀγαθῶν
 ἀνδρῶν ἔργον, ἅπασι πέπρακται, τῇ τύχῃ δέ, ἣν
 <lb n="20"/> ὁ δαίμων ἔνειμεν ἑκάστοις, ταύτῃ κέχρηνται.ʼ</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="32">
-<p>32 οὐθείς ἐστιν, ὃς οὐχ ὁμολογήσειεν, εἰ μόνον ἔχοι
+         </div>
+         <div n="32" type="chapter">
+            <p>32 οὐθείς ἐστιν, ὃς οὐχ ὁμολογήσειεν, εἰ μόνον ἔχοι
 μετρίαν αἴσθησιν περὶ λόγους καὶ μήτε βάσκανος εἴη
 μήτε δύσερίς τις, τοσούτῳ διαφέρειν τὴν ἀρτίως παρατεθεῖσαν
 <note type="footnote">2 ὁ om D seclusit v 4 γεγενημένῳ post πόλει addit v</note>
-<note type="footnote">5 τὰ δὲ B | τὸν λοιπὸν χρόνον Dv | ἐςκώμια B 7 τουδὶ
+               <note type="footnote">5 τὰ δὲ B | τὸν λοιπὸν χρόνον Dv | ἐςκώμια B 7 τουδὶ
 post πολιτευσαμένου add Dv | κατειψηφιεισθοῦ B | ἡμαρτη-
 κέναι D 9 οὐκ ἔστʼ οὐκ ἔστιν D | οἱ τὸν Pv 12 καὶ τοὺς ἐν
 Πλαταιαῖς παραταξαμένους om B 14 πολοὺς B 17 τοὺς
@@ -2820,8 +2741,7 @@ P | ὃ M: οὐ BP 19 ἀνδρῶν ἀγαθῶν D | πέπακται B | �
 23 δύσυρίς BP | τις fort delendum est (τισούτω?) τοσούτω?) |
 τοσούτω M²: οὔτω M1BP
 </note>
-
-<pb n="201"/>
+               <pb n="201"/>
 λέξιν τῆς προτέρας, ὅσῳ διαλλάττει πολεμιστήρια
 μὲν ὅπλα πομπευτηρίων, ἀληθιναὶ δὲ ὄψεις
 εἰδώλων, ἐν ἡλίῳ δὲ καὶ πόνοις τεθραμμένα σώματα
@@ -2832,7 +2752,7 @@ P | ὃ M: οὐ BP 19 ἀνδρῶν ἀγαθῶν D | πέπακται B | �
 οὐκ ἂν ἁμαρτεῖν τὴν μὲν Πλάτωνος λέξιν εἰκάσας
 ἀνθηρῷ χωρίῳ καταγωγὰς ἡδείας ἔχοντι καὶ τέρψεις
 ἐφημέρους, τὴν δὲ Δημοσθένους διάλεκτον εὐκάρπῳ <lb n="10"/>
-<milestone unit="1057"/> καὶ παμφόρῳ γῇ καὶ οὔτε τῶν ἀναγκαίων εἰς βίον
+               <milestone unit="1057"/> καὶ παμφόρῳ γῇ καὶ οὔτε τῶν ἀναγκαίων εἰς βίον
 οὔτε τῶν περιττῶν εἰς τέρψιν σπανιζούσῃ. δυνάμενος
 δʼ ἄν, εἰ βουλοίμην, καὶ τὰ κατὰ μέρος ἑκατέρας κατορθώματα
 ἐξετάζειν καὶ δεικνύειν, ὅσῳ κρείττων ἐστὶν
@@ -2856,20 +2776,18 @@ BPv 17 πρὸς εἰδότας Sylburgius: προειδότας | ἅπαντ�
 BPv comma post δοκεῖ posui, καὶ secluserim 21 περιέσται]
 προσέσται MBPv
 </note>
-
-<pb n="202"/>
+               <pb n="202"/>
 δέ, ὅσα ἐν τῷ παρόντι ἥρμοττεν, εἴρηται. ἐπειδὴ δὲ
 παρελθεῖν ἡμῖν οὐκ ἐνῆν Πλάτωνα, ᾧ τὰ πρωτεῖά
 τινες ἀπονέμουσι, κατατρῖψαι δὲ τὸν λόγον περὶ μίαν
 ταύτην <add cause="omitted">τὴν</add> θεωρίαν ἐπιλελησμένου τῆς ὑποθέ| σεως <milestone unit="1058"/>
-<lb n="5"/> ἦν, τῇδέ. μοι περιγεγράφθω. βούλομαι δὲ δὴ καὶ συλλογίσασθαι
+               <lb n="5"/> ἦν, τῇδέ. μοι περιγεγράφθω. βούλομαι δὲ δὴ καὶ συλλογίσασθαι
 τὰ εἰρημένα ἐξ ἀρχῆς καὶ δεῖξαι πάνθʼ,
 ὅσα ὑυπεσχόμην ἀρχόμενος τῆς θεωρίας τοῦ λεκτικοῦ
 τόπου, πεποιηκότα ἐμαυτόν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="33">
-<p>33 ἡ πρόθεσις ἦν μοι καὶ τὸ ἐπάγγελμα τοῦ λόγου,
+         </div>
+         <div n="33" type="chapter">
+            <p>33 ἡ πρόθεσις ἦν μοι καὶ τὸ ἐπάγγελμα τοῦ λόγου,
 <lb n="10"/> κρατίστη λέξει καὶ πρὸς ἅπασαν ἀνθρώπου φύσιν
 ἡρμοσμένη μετριώτατα Δημοσθένη κεχρημένον ἐπιδεῖξαι,
 καὶ τοῦτό γε συνάγειν ἐπειρώμην οὐκ ἐξ αὐτῆς
@@ -2882,8 +2800,8 @@ BPv comma post δοκεῖ posui, καὶ secluserim 21 περιέσται]
 λόγος μοι λάβη, τοὺς χαρακτῆρας τῶν διαλέκτων τοὺς
 <lb n="20"/> ἀξιολογωτάτους κατηριθμησάμην καὶ τοὺς πρωτεύσαντρας
 ἐν αὐτοῖς ἄνδρας ἐπῆλθον, ἔπειτα δείξας ἀτελεῖς <milestone unit="1059"/>
-<note type="footnote">10—11 cf anonymus W VII 880, 9</note>
-<note type="footnote">1 εἴρειται P 2 πρωτεία M 3 λόγον Krüger: χρόνον
+               <note type="footnote">10—11 cf anonymus W VII 880, 9</note>
+               <note type="footnote">1 εἴρειται P 2 πρωτεία M 3 λόγον Krüger: χρόνον
 4 τὴν add Sadaeus ἐπιλελησμένου M: ἐπιλελησμένον BPv
 5 ἀνακεφαῶν mg B 7 τοῦ λεκτρινοῦ τοῦ λεκτικοῦ P 9 καὶ
 Mv: κατὰ BP ἐπάγγελημα BP τοῦ λόγου] τοῦτο τοῦ MBP
@@ -2894,8 +2812,7 @@ Sylburgius putat 15 ἀντιπαραθεὶς M 16 καὶ τῆ φιλοσοφ
 ρακτῆρας—ἀξιολογωτάτους om B 20 πρωτεύσαντας Kiessling:
 πρώτους ὄντας 21 ἐπεῖλθον P
 </note>
-
-<pb n="203"/>
+               <pb n="203"/>
 ἅπαντας ἐκείνους καὶ καθʼ ὃ μάλιστα ἀστοχεῖν
 ἕκαστον ὑπελάμβανον τοῦ τέλους ἐκλογισάμενος διὰ
 βραχέων, ἦλθον ἐπὶ τὸν Δημοσθένη. τοῦτον δὲ ἑνὸς
@@ -2917,13 +2834,12 @@ Sylburgius putat 15 ἀντιπαραθεὶς M 16 καὶ τῆ φιλοσοφ
 γενόμενοι μεγίστης δόξης ἔτυχον, ἵνα δείξαιμι,
 κἂν εἰ τῶν ἄλλων ἀμείνους εἰσί, Δημοσθένει γε οὐκ <lb n="20"/>
 ἀξίους ὄντας ἁμιλλᾶσθαι περὶ τῶν ἀριστείων.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="34">
-<p>ὀλίγα τούτοις ἔτι προσθεὶς περὶ τῆς λέξεως, ἐπὶ τὸ
+         </div>
+         <div n="34" type="chapter">
+            <p>ὀλίγα τούτοις ἔτι προσθεὶς περὶ τῆς λέξεως, ἐπὶ τὸ
 καταλειπόμενον τῆς <gap reason="omitted"/> θεωρίας μέρος μεταβήσομαι,
 ταῦτα δὲ ἕστιν, ἃ τοῖς τρισὶ πλάσμασιν <lb n="34"/>
-<note type="footnote">1 ἀστοχεῖν ἕκαστον Vliet: ἀδέκαστον 3 τοῦτο B 5 γε-
+               <note type="footnote">1 ἀστοχεῖν ἕκαστον Vliet: ἀδέκαστον 3 τοῦτο B 5 γε-
 ναίσθαι P 6 ἑρμηνίαν B | κατασκευακέναι B 7 καὶ κατὰ]
 κατὰ BP 8 πίστοις P | τοῦτοδε P 12 λέξις P 14 πάσας
 τάς] πάσας M 16 καίτοι Kiessling: καὶ τῶν 17 εἰκότως B |
@@ -2932,18 +2848,17 @@ Sylburgius putat 15 ἀντιπαραθεὶς M 16 καὶ τῆ φιλοσοφ
 grauius, ante ταῦτα v 24 lenius interpunxi 23 lac X fere
 litt M προκειμένης suppl Usener 24 δὲ M: δ᾿ BPv |
 πλάγμασιν B</note>
-
-<pb n="204"/>
+               <pb n="204"/>
 ὁμοίως παρέπεται καὶ ἔστι παντὸς λόγου Δημοσθενικοῦ
 μηνύματα χαρακτηριστικὰ καὶ ἀνυφαίρετα. ὑπομνήσω
 δὲ πρῶτον μέν, ἃ τοῖς ἄλλοις πλάσμασιν ἔφην <gap reason="omitted"/>
-<gap reason="omitted"/> ἰδίας ἀρετὰς συμβεβηκέναι τοῖς Δημοσθένους <del>ἢ
+               <gap reason="omitted"/> ἰδίας ἀρετὰς συμβεβηκέναι τοῖς Δημοσθένους <del>ἢ
 <lb n="5"/> Λυσίου</del>, ἵνʼ εὐσύνοπτος μᾶλλον γένηταί μοι ὁ λόγος.
 δοκεῖ δή μοι τῶν μὲν ὑψηλῇ καὶ περιττῇ καὶ ἐξηλλαγμένη
 λέξει κεχρημένων κατὰ τὸ σαφέστερον καὶ
 κοινότερον τῇ ἑρμηνείᾳ κεχρῆσθαι προὔχειν ὁ Δημοσθένης.
 τού|των γὰρ ἐν πάση κατασκευῇ στοχάζεται <milestone unit="1061"/>
-<lb n="10"/> μέγεθος ἐχούσῃ καὶ ταύταις κέχρηται χαρακτηρικωτάταις
+               <lb n="10"/> μέγεθος ἐχούσῃ καὶ ταύταις κέχρηται χαρακτηρικωτάταις
 ἀρεταῖς ἐπὶ τῆς ὑψηλῆς καὶ ξενοπρεποῦς ὀνομασίας
 ὥς γε μάλιστα. τῶν δὲ τὴν λιτὴν καὶ ἰσχνὴν
 καὶ ἀπέριττον ἐπιτηδευόντων φράσιν τῷ τόνῳ τῆς
@@ -2960,7 +2875,7 @@ litt M προκειμένης suppl Usener 24 δὲ M: δ᾿ BPv |
 κοῦ M 2 lege χαρακτηρικὰ ἀναφαίρετα M1 ἀνυφέρετα BP sed
 ἀνυφαίρετα mg B 3 lacunam indicaui 4 ἤρειν P |τ[οοῖς]
 cum ras M Δημοσθένους om B ἢ Λυσίου seclusit Reiskius</note>
-<note type="footnote">5 ἵν εῦνεὐ σύνοπτοἱ B | ἐν τῶ ἀνδρῶ (l ἁδρῷ) mg B
+               <note type="footnote">5 ἵν εῦνεὐ σύνοπτοἱ B | ἐν τῶ ἀνδρῶ (l ἁδρῷ) mg B
 6 ἐξηλαγμένῃ B 10 χαρακτηρικωτάτους B χαρακτηριστικωτά-
 ταις V 11 ἀρετὰς B | ὑψιλῆς P 12 ἰσχὴν B 13 ἀπέριπ-
 τον B | in mg rubro ἐν τῶ ἰσχνῶ B 14 διαλάττειν B | βάρει]
@@ -2969,8 +2884,7 @@ cum ras M Δημοσθένους om B ἢ Λυσίου seclusit Reiskius</note>
 corr in ἠσκηκότων P ἐν τῶ μέσω B in mg rubro 19 ταυτὶ]
 ταύτην MBP ταῦτα Sylburgius 21 τε] τι B
 </note>
-
-<pb n="205"/>
+               <pb n="205"/>
 καὶ δραστήριον καὶ τελευταῖον τὸ πρέπον, ὅ τῶν ἄστρων
 ψαύει παρὰ Δημοσθένει. ταῦτα μὲν οὖν χωρὶς ἑκάστῳ
 τῶν τριῶν πλασμάτων παρακολουθεῖν ἔφην καὶ ἐκ
@@ -2988,10 +2902,9 @@ corr in ἠσκηκότων P ἐν τῶ μέσω B in mg rubro 19 ταυτὶ]
 τεχνογράφοι τὴν διήγησιν <add cause="omitted">οὐχ</add> ὡς οὐκ ἀλλαχοῦ οὐδαμοῦ <lb n="15"/>
  δέον ἐξετάζεσθαι τὰς ἀρετὰς ταύτας (πάνυ γὰρ
 ἄτοπον), ἀλλʼ ὡς ἐν τῇ διηγήσει δέον μάλιστα.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="35">
-<p>φέρε δὴ τούτων εἰρημένων ἡμῖν λέγωμεν ἤδη καὶ 35
+         </div>
+         <div n="35" type="chapter">
+            <p>φέρε δὴ τούτων εἰρημένων ἡμῖν λέγωμεν ἤδη καὶ 35
 <add cause="omitted">περὶ τῆς συνθέσεως</add> τῶν ὀνομάτων ᾗ κέχρηται ὁ
 ἀνήρ. ὅτι μὲν οὖν περιττή τίς ἐστιν ἡ τῆς λέξεως τῆς <lb n="20"/>
 Δημοσθένους ἁρμονία καὶ μακρῷ δή τινι διαλλάττουσα
@@ -3008,8 +2921,7 @@ add Reiskius 17 ἀλλʼ ὡς Reiskius: ἄλλως | δέον Reiskius:
 addit Reiskiana ἧ] ἢ B 21 ἀρμονία B | μακρῶν B 23 ἀρε-
 τὴν] λέξιν sed in mg m rec ἀρετὴν BP | ἂν om BPv
 </note>
-
-<pb n="206"/>
+               <pb n="206"/>
 μαρτυρήσειαν, ὅσοι μὴ παντάπασι πολιτικῶν εἰσιν
 ἄπειροι λόγων, ὅπου γε καὶ οἱ κατὰ τὴν αὐτὴν ἡλικίαν
 ἀκμάσαντες ἐκείνῳ θαυμάζοντές τε δῆλοί εἰσιν
@@ -3039,7 +2951,7 @@ lectione οἰκείως ἰδίως?) P sed διως lineola deletur 6 ἄλλ�
 λάκτους P 8 in imo mg codicis B, cum ὧν uocabulo pagina
 finiatur, corrector rubro haec uerba quasi uersum suppleturus
 scripsit: ὥσπερ ξένοι χαίρουσιν ᾔδειν πατρίδα καὶ οἱ βασϊ)</note>
-<note type="footnote">9 οὐ πολὺ ἂν ἀπέχειν uerba frustra temptantur | δοκῆ
+               <note type="footnote">9 οὐ πολὺ ἂν ἀπέχειν uerba frustra temptantur | δοκῆ
 MBP δοκοίη Kiessling 10 ῥήματα ῥητόρων B 11 οὗτος δὴ
 τῆς μὲν Reiskius 12 comma, quod post ἐγένετο erat, post
 λεκτικόν promoui 13 ἔστιν ἃ Reiskius: ἔτι 14 ἐχροῦ P
@@ -3047,8 +2959,7 @@ MBP δοκοίη Kiessling 10 ῥήματα ῥητόρων B 11 οὗτος δ�
 δὴ] δεῖ B 19 post οὕτε μεῖζον deesse οὔτʼ ἔλαττον Sylburgius
 uidit praeterea uerbum uelut ἁλίσκεται desideratur
 </note>
-
-<pb n="207"/>
+               <pb n="207"/>
 μεῖζον <gap reason="omitted"/> ἢ καταγέλωτα φέρων. καὶ οὐχὶ τοῦτό πω
 θαυμάζειν <add cause="omitted">ἄξιονγ</add>, ἀλλʼ ὅτι καὶ μαρτυρῶν πολλαχῇ
 τὴν ἀρετὴν τῷ ῥήτορι κατάδηλός ἐστι καὶ ζηλῶν.
@@ -3069,7 +2980,7 @@ uidit praeterea uerbum uelut ἁλίσκεται desideratur
 αὐτῷ, ὅσην οὐχ ἑτέρῳ, μαρτυρῶν καὶ ταῖς σειρῆσιν
 ἀπεικάζων αὐτοῦ τὴν μουσικήν, ἀγάμενος δὲ οὐ τῆς
 <note type="footnote">5 Aeschines III 229 10 ibid 142</note>
-<note type="footnote">1 καταγέλωτα B: κατὰ γέλωτα M καγέλωτα P | φέρων
+               <note type="footnote">1 καταγέλωτα B: κατὰ γέλωτα M καγέλωτα P | φέρων
 Sylburgius: φέρον καὶ Reiskius: ἢ 2 ἄξιον addit mg Bodl
 sed malim ἱκανόν 3 ταύτην addit Krüger κατάδηλας B et
 P initio 4 αὐτοῖς P εἴρηκεν BP 6 πικρῶς P 7 οὐ τὴν]
@@ -3077,20 +2988,18 @@ P initio 4 αὐτοῖς P εἴρηκεν BP 6 πικρῶς P 7 οὐ τὴν
 ἀηδία (═ μὰ δία vitio repetitum) seclusi τόπῳ] λόγῳ πως
 MBP λόγῳ οὑτωσί πως Sylburgius v. locum ex memoria lau-
 dare uidetur Dionysius, idem errans infra u 18 cf Aesch III 228</note>
-<note type="footnote">14 μὴ] μὸ P λάθωσι SP ὁπὸ Sylburgius: ἀπὸ 15 γονη-
+               <note type="footnote">14 μὴ] μὸ P λάθωσι SP ὁπὸ Sylburgius: ἀπὸ 15 γονη-
 τευθεν γοητευθέντες P sed illud linea subducta deletur γουτευ-
 θέντος B 16 ἀρῆναι B σειρήνας M 17 δὲ] δὴ Krüger
 ἰδεῖν] δεῖν B 18 uerbis οὐχ ἑτερῳ fol 64 codicia P terminatur,
 cuius in imo mg δοκείμειων τοῦ κον|διλίου καὶ τοῦ | σειρή-
 σιν M</note>
-
-<pb n="208"/>
+               <pb n="208"/>
 ἐκλογῆς τῶν ὀνομάτων αὐτόν, ἀλλὰ τῆς συνθέσεως,
 ἀναμφιλόγως αὐτῷ ταύτην παρακεχώρηκε τὴν ἀρετήν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="36">
-<p> τουτὶ μὲν οὖν τὸ μέρος, ὡς οὐ πολλοῦ λόγου δεόμενον,
+         </div>
+         <div n="36" type="chapter">
+            <p> τουτὶ μὲν οὖν τὸ μέρος, ὡς οὐ πολλοῦ λόγου δεόμενον,
 λέγω δὴ τὸ περιττὸν εἶναι συνθέτην ὀνομάτων
 <lb n="5"/> τὸν Δημοσθένην, μαρτυρίαις τε ἀξιοχρέοις καὶ τῷ μηδένα
 τἀναντία ἔχειν εἰπεῖν βεβαιούμενον ἐάσω. τίς δὲ
@@ -3102,7 +3011,8 @@ cuius in imo mg δοκείμειων τοῦ κον|διλίου καὶ τοῦ
 ἔν τε μέτροις καὶ δίχα μέτρων, καὶ πάντες, ὅσοι
 σπουδαίας ἐβουλήθησαν ἐξενεγκεῖν γραφάς, οὐ μόνον
 ἐζήτησαν ὀνομάσαι τὰ νοήματα καλῶς, ἀλλὰ καὶ αὐτὰ
-<lb n="15"/> <add cause="omitted">τὰ ὀνόματα</add> εὐκόσμῳ συνθέσει περιλαβεῖν· πλὴν οὐ
+<lb n="15"/>
+               <add cause="omitted">τὰ ὀνόματα</add> εὐκόσμῳ συνθέσει περιλαβεῖν· πλὴν οὐ
 τὴν αὐτήν γε πάντες ἐπετήδευσαν ἁρμονίαν, ὥστʼ οὐδὲ
 κατὰ τὰς αὐτὰς ἦλθον ἅπαντες ὁδούς. τούτου δʼ αἰτίας
 οἴομαι γενέσθαι πολλάς. πρώτην μὲν τὴν ἑκάστου
@@ -3112,18 +3022,17 @@ cuius in imo mg δοκείμειων τοῦ κον|διλίου καὶ τοῦ
 τὴν ἐκ συνηθείας χρονίου κατασκευαζομένην ὑπόληψιν
 ὡς σπουδῆς ἀξίων, ὧν ἂν τοὺς ἐθισμοὺς λάβωμεν,
 τετάρτην ἔτι τὴν πρὸς οὓς ἂν φι| λοτιμούμενοι τυγχάνωμεν, <milestone unit="1067"/>
-<note type="footnote">2 ταύτην] τά| την B sed ταύτην in mg, ταύτην παρὰ ταύ-
+               <note type="footnote">2 ταύτην] τά| την B sed ταύτην in mg, ταύτην παρὰ ταύ-
 την P κεχώρικε P 4 δὴ] δὲ Krüger 5 ἀξιονχρέοις P
 6 ἔχει εἰπει P 7 ἁρμονίας B 9 ταυτὶ Sadaeus: ταύτη
 12 ὅσοι Krüger: οι supra addito ὅσ M οἱ BP οἳ v 15 τὰ ὀνό-
 ματα addidi ἐν κόσμῳ B 16 ὡς Usener ὥστε BP 17 ελθον B</note>
-<note type="footnote">18 οἶομαι B γεναίσθαι P πρώτην Krüger: πρῶτον 19 εὖ]
+               <note type="footnote">18 οἶομαι B γεναίσθαι P πρώτην Krüger: πρῶτον 19 εὖ]
 οὖ P 21 ἐπαχθόμεθα Vliet: ἀπεχθόμεθα 23 σπουδῆς] που-
 δᾶς B ἐθισμορ B 24 ἔτι Sylburgius: ἐπὶ πρὸς οὓς ἂν
 mg Bodl: προσοῦσαν τυγχάνωμεν Krüger: τυγχάνομεν
 </note>
-
-<pb n="209"/>
+               <pb n="209"/>
 ὁποῖʼ ἄττα ἂν ἐκεῖνοι ζηλῶσιν, ἀναφοράν τε
 καὶ μίμησιν· ἔχοι δʼ ἂν τις καὶ ἄλλα λέγειν, ἀλλὰ
 ἐγὼ τὰ φανερώτατα εἰπὼν ἐῶ τὰ λοιπά. ὅθεν οἳ μὲν
@@ -3133,11 +3042,11 @@ mg Bodl: προσοῦσαν τυγχάνωμεν Krüger: τυγχάνομεν
 καὶ θεατρικὴν καὶ πολὺ τὸ κομψὸν καὶ μαλακὸν ἐπιφαίνουσαν,
 ἧ πανηγύρεις τε κηλοῦνται καὶ ὁ συμφορητὸς
 ὄχλος, οἳ δὲ συνθέντες ἀφʼ ἑκατέρας τὰ χρησιμώτατα
- τὴν μικτὴν καὶ μέσην ἐζήλωσαν ἀγωγήν. </p><lb n="10"/>
- </div>
-
-<div type="textpart" subtype="chapter" n="37">
-<p>τρεῖς γὰρ δὴ συνθέσεως σπουδαίας χαρακτῆρες 37
+ τὴν μικτὴν καὶ μέσην ἐζήλωσαν ἀγωγήν. </p>
+            <lb n="10"/>
+         </div>
+         <div n="37" type="chapter">
+            <p>τρεῖς γὰρ δὴ συνθέσεως σπουδαίας χαρακτῆρες 37
 οὗτοι οἱ γενικώτατοι, οἱ δʼ ἄλλοι παρὰ τούτους τε καὶ
 ἀπὸ τούτων εἰσὶ κατεσκευασμένοι, πολλοὶ σφόδρα ὄντες,
 ἐπιτάσει τε καὶ ἀνέσει διαφέροντες ἀλλήλων. εἰλικρινὴς
@@ -3152,15 +3061,14 @@ mg Bodl: προσοῦσαν τυγχάνωμεν Krüger: τυγχάνομεν
 τῆς λέξεως ἁρμονίαι τρεῖς οὖσαι τὸν ἀριθμὸν οὐκ
 ἔχουσιν εἰλικρινῆ τὴν φύσιν οὐδʼ ἀνεπίμικτον, ἀλλʼ ἐκ
 τῶν ὡς ἐπὶ τὸ πολὺ συμβεβηκότων αὐτοῖς ὀνόματός <lb n="25"/>
-<note type="footnote">1 ἄττα Sylburgius: αὐτὰ 4 (καὶ φίλαν) καὶ φιλάρχαιον P</note>
-<note type="footnote">5 σεμνὸν B | ἐπετήδευσαν malim 6 ἀρμονίαν B | λισυ-
+               <note type="footnote">1 ἄττα Sylburgius: αὐτὰ 4 (καὶ φίλαν) καὶ φιλάρχαιον P</note>
+               <note type="footnote">5 σεμνὸν B | ἐπετήδευσαν malim 6 ἀρμονίαν B | λισυ-
 ρᾶν B 7 μαλακὸν Sylburgius: μάλα 8 συμφοτὸς B 9 τὰ
 χρησιμώτατα, τὴν Krüger: χρησιμωτάτην 12 δὲ BP 15 ἀρ-
 μονία B | ἀκραιφνὴν B 19 πρώτου B 21 ἕκαστων B
 24 φύσην B | ἂν ἐπίμικτον BP 25 συνβεβηκότων B
 </note>
-
-<pb n="210"/>
+               <pb n="210"/>
 τε ἠξίωνται καὶ χαρακτῆρος ἰδίου; ὥσθʼ, ὅταν παρέχωμαι
 δείγματα ἑκάστης καὶ μαρτύρια φέρω, λέξεις
 τινὰς παρατιθεὶς τῶν χρησαμένων αὐταῖς ποιητῶν τε
@@ -3169,16 +3077,16 @@ mg Bodl: προσοῦσαν τυγχάνωμεν Krüger: τυγχάνομεν
 πλεονάζον ἕκαστον τῶν παραλαμβανομένων σκοπείτω,
 τεκμαιρόμενος, εἰ πολλαχῇ τοιοῦτόν ἐστι τὸ δεικνύμενον,
 οὐκ εἰ ἀπανταχῇ. |</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="38">
-<p>38 τῆς μὲν οὖν αὐστηρᾶς καὶ φιλαρχαίου καὶ μὴ τὸ <milestone unit="1069"/>
-<lb n="10"/> κομψὸν ἀλλὰ τὸ σεμνὸν ἐπιτηδευούσης ἁρμονίας τοιόσδε
+         </div>
+         <div n="38" type="chapter">
+            <p>38 τῆς μὲν οὖν αὐστηρᾶς καὶ φιλαρχαίου καὶ μὴ τὸ <milestone unit="1069"/>
+               <lb n="10"/> κομψὸν ἀλλὰ τὸ σεμνὸν ἐπιτηδευούσης ἁρμονίας τοιόσδε
 ὁ χαρακτήρ· ὀνόμασι χρῆσθαι φιλεῖ μεγάλοις καὶ
 μακροσυλλάβοις<gap reason="omitted"/> καὶ ταῖς ἕδραις αὐτῶν εἶναι πλουσίως
 πάνυ βεβηκυίαις, χρόνων τε ἀξιολόγων ἐμπεριλήψει
 διορίζεσθαι θάτερα ἀπὸ τῶν ἑτέρων. τοῦτο τὸ σχῆμα
-<lb n="15"/> <del>ἀπὸ</del> τῆς ἁρμονίας ποιοῦσιν αἱ τῶν φωνηέντων γραμμάτων
+<lb n="15"/>
+               <del>ἀπὸ</del> τῆς ἁρμονίας ποιοῦσιν αἱ τῶν φωνηέντων γραμμάτων
 παραθέσεις, ὅταν ἥ τε προηγουμένη λέξις εἰς
 ἓν τούτων λήγῃ καὶ ἡ συνάπτουσα ταύτῃ τὴν ἀρχὴν
 ἀπὸ τούτων τινὸς λαμβάνῃ. ἀναγκαῖον γὰρ ἧν χρόνον
@@ -3198,8 +3106,7 @@ BP | καὶ bis P 18 ἦν Usener: εἶναι | χρόνων P1
 21 fort χρόνος οἷός τε συναφῆ ὀν. ἀπʼ ἀ. διιστάναι Usener an
 ὃς αἴτιος εἴη κτλ? 23 μουσικῶ BP
 </note>
-
-<pb n="211"/>
+               <pb n="211"/>
 φωνηέντων χρόνος ἑτέρων παρεμβολῇ γραμμάτων ἡμιφώνων
 <milestone unit="1070"/> ἀναπληροῦσθαι δυνάμενος. | τοῦτο δʼ οὐκ ἂν
 ἐγίγνετο μὴ σιωπῆς τινος ἀξιολόγου διειργούσης τὰ
@@ -3223,20 +3130,18 @@ BP | καὶ bis P 18 ἦν Usener: εἶναι | χρόνων P1
 γάρ, ὡς ἐν εἰδόσι λέγοντας, ὅτι φύσιν ἔχει μηδὲν τῶν
 σπουδαίων ῥημάτων ἄμοιρον ὥρας εἶναι καὶ χάριτος
 ἰδίας, τοσοῦτον μόνον εἰπεῖν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="39">
-<p>ἐν μὲν δὴ τοῖς ἐλαχίστοις τε καὶ στοιχειώδεσι μορίοις 39
+         </div>
+         <div n="39" type="chapter">
+            <p>ἐν μὲν δὴ τοῖς ἐλαχίστοις τε καὶ στοιχειώδεσι μορίοις 39
 τῆς λέξεως ταῦτα χαρακτηρικὰ τῆς πρώτης ἐστὶν <lb n="25"/>
-<note type="footnote">6 ἀντιστηρισμοὺς P 7 τραχύτητα BP 9 ἡμιφώνων
+               <note type="footnote">6 ἀντιστηρισμοὺς P 7 τραχύτητα BP 9 ἡμιφώνων
 Sylburgius: ἐμφώνων MB ἐμφύνων P 11 μηρίων B | la-
 cunam indicauit, ὡς seclusit Usener 12 συνχεῖσθαι B
 συγχρεῖσθαι P 14 (λαμβανομένων) συμβολαῖς P | τοῖς om v</note>
-<note type="footnote">17 κακόφωνον μηδʼ ἀηδὲς Sylburgius v 18 ἐνεγχάμεναι
+               <note type="footnote">17 κακόφωνον μηδʼ ἀηδὲς Sylburgius v 18 ἐνεγχάμεναι
 B in textu, Pv 19 an φανῶσιν? 20 χνοῦς] γνοῦς BP
 21 εἰδόσιν BP</note>
-
-<pb n="212"/>
+               <pb n="212"/>
 ἁρμονίας, ἐν δὲ τοῖς καλουμένοις κώλοις, ἃ συντίθεται
 μὲν ἐκ τῶν ὀνομάτων, συμπληροῖ δὲ τὰς περιόδους, οὐ
 μόνον ταῦτα, ἀλλὰ καὶ ⟨τὸ⟩ τοὺς ῥυθμοὺς τοὺς καταμετροῦντας
@@ -3246,7 +3151,7 @@ B in textu, Pv 19 an φανῶσιν? 20 χνοῦς] γνοῦς BP
 οὐδὲ προσθήκης τινὸς μοῖραν ἔχον οὐκ ἀναγκαίας,
 ἀλλʼ εἰ δεῖ τἀληθές, ὡς ἐμὴ δόξα, εἰπεῖν, ἀπάντων
 κυριώτατον τῶν γοητεύειν δυναμένων καὶ κηλεῖν <milestone unit="1072"/>
-<lb n="10"/> τὰς ἀκοάς. πρὸς δὲ τοῖς ῥυθμοῖς καὶ τὸ τοὺς σχηματισμοὺς
+               <lb n="10"/> τὰς ἀκοάς. πρὸς δὲ τοῖς ῥυθμοῖς καὶ τὸ τοὺς σχηματισμοὺς
 <del>τῶν ἐννοιῶν</del> γενναίους εἶναι καὶ ἀξιωματικοὺς
 οὐ μόνον τοὺς κατὰ τὰς νοήσεις ἀλλὰ καὶ κατʼ
 αὐτὴν τὴν λέξιν συνισταμένους. ἐξαριθμεῖσθαι δὲ νῦν,
@@ -3263,7 +3168,7 @@ B in textu, Pv 19 an φανῶσιν? 20 χνοῦς] γνοῦς BP
 οὐδὲ ἀσπάζεται τὸ ἐμπερίοδον ἥδε ἡ σύνθεσις ὡς τὰ
 <lb n="25"/> πολλά, ἀποιήτως δέ πως καὶ ἀφελῶς καὶ τὰ πλείω
 <note type="footnote">1 συντίθεται Sylburgius: συντίθενται 3 τὸ add Reiskius</note>
-<note type="footnote">4 μετὰ πεινοὺς B 5 εἰγεννεῖς BP ἀγενεῖς v 7 προσθή-
+               <note type="footnote">4 μετὰ πεινοὺς B 5 εἰγεννεῖς BP ἀγενεῖς v 7 προσθή-
 κας BP | μοίραν M ἔχων BP 9 καὶ om P | καλεῖν BP
 10 χηματισμοὺς BP 11 τῶν ἐννοιῶν deleuit Krüger | ἀξιω-
 ματισμοὺς ἀξιωματικοὺς P 12 καὶ κατʼ] καὶ τ᾿ P 15 ἀκα-
@@ -3271,8 +3176,7 @@ B in textu, Pv 19 an φανῶσιν? 20 χνοῦς] γνοῦς BP
 MBPv | ἁρμονία B 19 συναπαρτιζούσας L. Dindorf: συναρ-
 παζούσας τοινοῦν P | συμμετρομένας P συμμετρουμένας v
 </note>
-
-<pb n="213"/>
+               <pb n="213"/>
 κομματικῶς κατεσκευάσθαι βούλεται, παράδειγμα ποιουμένη
 τὴν ἀκατάσκευον φύσιν. εἰ δέ ποτε ἀκολουθήσειεν
 τοῖς ἀνεπιτηδεύτως συντιθεμένοις κώλοις ἢ |
@@ -3299,7 +3203,7 @@ MBPv | ἁρμονία B 19 συναπαρτιζούσας L. Dindorf: συνα�
 μένοις M: ἀνευπιτηδεύτως συντιθεμένοις β ἀνευ πιτοθεμένοις
 Pv 4 περίοδος ἢ βάσις Usener | εὔρυθμον Reiskius: εὐρύθμοις
 συμβᾶν B 8 ἐλάττοσι Pv | τὸ Sylburgius: τοῦ 9 πτόσεων P</note>
-<note type="footnote">10 μεταπίπτειν Sylburgius: μεταπέμπειν | τὸ Sylburgius:
+               <note type="footnote">10 μεταπίπτειν Sylburgius: μεταπέμπειν | τὸ Sylburgius:
 τῶ | ἀκολουθείας B 11 ὑπεροπτικῶς ἔχειν τὴν φράσιν, μηδὲ
 κατάλληλον, τὸ περιττῶς] ὑπεριττῶς B | κατʼ ἄλληλα] κατάλλη-
 λον Mv ἀκατάλληλον P 12 τὸ Sylburgius: τῶ | post κατὰ in
@@ -3308,8 +3212,7 @@ in mg μὲν B 15 τε BP | λέξις ὀλίξις P 16 μὴ τὰ M: με�
 BPv | τινα Sylburgius: τινας | ὁμοίας — δέ τις omisit Pv
 17 ὁμοία] ὅμοια P 19 πῖνον MBPv 21 μαρτύρων B
 </note>
-
-<pb n="214"/>
+               <pb n="214"/>
 τῷ λόγῳ, παρελθὼν τοὺς ποιητὰς ἐκ τῆς Θουκυδίδου
 λέξεως ταυτί <gap reason="omitted"/> Τούτου δὲ τοῦ πολέμου μῆκός τε
 μέγα προὔβη, παθήματά τε ξυνέβη γενέσθαι τῇ Ἑλλάδι
@@ -3329,27 +3232,25 @@ BPv | τινα Sylburgius: τινας | ὁμοίας — δέ τις omisit Pv
 νόσος.ʼ ἡ μὲν δὴ πρώτη τῶν ἁρμονιῶν ἡ γεννικὴ καὶ
 αὐστηρὰ καὶ μεγαλόφρων καὶ τὸ ἀρχαιοπρεπὲς διώκουσα
 τοιάδε τίς ἐστι κατὰ τὸν χαρακτῆρα.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="40">
-<p>40 ἡ δὲ μετὰ ταύτην <add cause="omitted">ἡ</add> γλαφυρὰ καὶ θεατρικὴ καὶ
+         </div>
+         <div n="40" type="chapter">
+            <p>40 ἡ δὲ μετὰ ταύτην <add cause="omitted">ἡ</add> γλαφυρὰ καὶ θεατρικὴ καὶ
 <lb n="21"/> τὸ κομψὸν αἱρουμένη πρὸ τοῦ σεμνοῦ τοιαύτη· ὀνομάτων
 αἰεὶ βούλεται λαμβάνειν τὰ λειότατα καὶ μαλακώτατα,
 τὴν εὐφωνίαν θηρωμένη καὶ τὴν εὐμέλειαν, ἐξ
 αὐτῶν δὲ τὸ ἡδύ. ἔπειτα οὐχ ὡς ἔτυχεν ἀξιοῖ ταῦτα
 <note type="footnote">2 Thucydides I 23, 14</note>
-<note type="footnote">2 λέξεων B | hiatum Reiskius sensit 3 ξυνηνέχθη Θ
-et &#8736; de Thuc p 860 | ἐν αὐτῷ post γενέσθαι inserit v ex Θ
-et &#8736; p 860 4 πολλά om Θ et &#8736; p 860 5 λειφθεῖσαι P |
+               <note type="footnote">2 λέξεων B | hiatum Reiskius sensit 3 ξυνηνέχθη Θ
+et ∠ de Thuc p 860 | ἐν αὐτῷ post γενέσθαι inserit v ex Θ
+et ∠ p 860 4 πολλά om Θ et ∠ p 860 5 λειφθεῖσαι P |
 ὑπὸ om v ὑπὸ B 14 συνέβησαν v M p 861 15 καὶ οὐχ
 ἥκιστα καὶ ἡ v ἡ in Θ om ABEF 16 βλέψασα B 17 γε-
 νικὴ MBPv 20 ἡ inseruit Krüger 23 εὐμέλειαν Syl-
 burgius: ἐκμέλειαν P ἐμμέλειαν MB</note>
-
-<pb n="215"/>
+               <pb n="215"/>
 τιθέναι οὐδὲ ἀπερισκέπτως συναρμόττειν θάτερα τοῖς
 ἑτέροις, ἀλλὰ διακρίνουσα τὰ ποῖα τοῖς ποίοις <del>καὶ</del>
-<milestone unit="1076"/> παρα|τιθέμενα μουσικωτέρους ποιεῖν δυνήσεται τοὺς
+               <milestone unit="1076"/> παρα|τιθέμενα μουσικωτέρους ποιεῖν δυνήσεται τοὺς
 ὔχους, καὶ σκοποῦσα κατὰ ποῖον σχῆμα ληφθέντα
 χαριεστέρας ἀποτελέσει τὰς συζυγίας, οὕτως συναρμόττειν <lb n="5"/>
 ἕκαστα πειρᾶται, πολλὴν σφόδρα ποιουμένη
@@ -3381,8 +3282,7 @@ litt nulla lac in BP: suppleui 19 καὶ δῆτα—ἑτέρας om Pv |
 παρεμβάλλειν M: παραλαμβάνειν B 20 αὖ ταῖς] αὐταῖς MB |
 ἀναγκαίαις suppleui, lac VII litt M, nulla lac B cf ep ad
 Pomp. 785 | λέξις B</note>
-
-<pb n="216"/>
+               <pb n="216"/>
 πρὸ αὐτῶν καὶ μετʼ αὐτὰς κειμέναις ὀνομασίαις παρεξομένας, <milestone unit="1077"/>
 ἵνα μὴ συναπτόμεναι πρὸς ἀλλήλας αἱ
 καταλήγουσαί τε εἰς τραχὺ γράμμα καὶ αἱ τὴν ἀρχὴν
@@ -3402,7 +3302,7 @@ Pomp. 785 | λέξις B</note>
 καὶ καταφερὴς ἡ ῥύσις τῆς λέξεως, ὥσπερ κατὰ
 πρανοῦς φερόμενα χωρίου νάματα μηδενὸς αὐτοῖς
 ἀντικρούοντος, καὶ διαρρεῖ διὰ τῆς ἀκοῆς ἡδέως <milestone unit="1078"/>
-<lb n="20"/> πως καὶ ἀσπαστῶς οὐδὲν ἧττον ἢ τὰ διʼ ᾠδῆς καὶ
+               <lb n="20"/> πως καὶ ἀσπαστῶς οὐδὲν ἧττον ἢ τὰ διʼ ᾠδῆς καὶ
 ὀργάνου μουσωθέντα κρούματα καὶ μέλη. ἔτι τῆς συνθέσεως
 ταύτης ἐστὶ καὶ τὰ κῶλα δεινῶς ποιήμασιν
 ἐμφερῆ, μαλακόφωνα καὶ λεῖα, πολὺ τὸ κωτίλον ἔχοντα,
@@ -3418,8 +3318,7 @@ BPv 19 ἀντικρούοντος Sylburgius: ἀνακρούοντος 22 ἐ�
 ἐστὶν BP | δειν ὡς ἀποιήμασιν B δεἵν ἀποιήμασιν P δεινὰ
 ποιήμασιν M δεῖνα ποιήμασιν v
 </note>
-
-<pb n="217"/>
+               <pb n="217"/>
 κατά τινα φιλότητα φυσικὴν συζευγνύμενα ἀλλήλοις.
 ἐξ ὧν ἡ περίοδος συνέστηκεν· οὐδὲν γὰρ ἔξω περιόδου
 συντίθησιν. ἔτι τῶν ῥυθμῶν, εἰς ἃς διαστέλλεται περιόδους,
@@ -3445,7 +3344,7 @@ BPv 19 ἀντικρούοντος Sylburgius: ἀνακρούοντος 22 ἐ�
 ἐπὶ τὰ ἐν ἀρχαῖς ῥηθέντα παραδείγματα κελεύοντες
 ἀναστρέφειν, λαμβανέσθω κἀνταῦθα ἐκ τῶν Πανηγυρικῶν
 αὐτοῦ λόγων λέξις οὐ πολλὴν διατριβὴν παρέξουσα <lb n="25"/>
-<note type="footnote">3 συντίθησιν ἐπὶ τῶν ῥυθμῶν. εἰς ἃς δὲ ἀποστέλλεται MBPv:
+               <note type="footnote">3 συντίθησιν ἐπὶ τῶν ῥυθμῶν. εἰς ἃς δὲ ἀποστέλλεται MBPv:
 διαστέλλεται medium est, sed εἰς ἃς δὴ ἀποτελεῖται π. mauolt
 Usener 5 ἀλλὰ τοὺς χαρακ ἀλλὰ τοὺς P, sed uitium lineola
 tollitur | δὴ] δὲ B 6 fort εὐθύγραμμοι Usener 7 διώκει Syl-
@@ -3454,8 +3353,7 @@ burgius: δεῖ διώκειν M δειδιώκειν BP 8 ἃν] ἐ ἃν B 
 12 τοιαῦτα—ὄργανα om Pv 14 immo χαρακτηρικὰ 17 τὲ τὸν
 bis B 18 καὶ om Pv 20 εἴ τοι αὐτὰ B 25 λέξιν P
 </note>
-
-<pb n="218"/>
+               <pb n="218"/>
 τοῖς ἀναγνωσομένοις, ἐν ᾗ διεξέρχεται τὰ πραχθέντα
 Ἀθηναίοις περὶ τὴν ἐν Σαλαμῖνι ναυμαχίαν. ἔστι δὲ
 ἥδε· ‘Ἐπειδὴ γὰρ οὐχ οἷοί τε ἦσαν πρὸς ἀμφοτέρας
@@ -3480,16 +3378,15 @@ bis B 18 καὶ om Pv 20 εἴ τοι αὐτὰ B 25 λέξιν P
 κραυγὰς καὶ τὰς παρακελεύσεις, ἃ κοινὰ πάντων ἐστὶ
 τῶν ναυμαχούντων, οὐκ οἶδʼ ὅ τι δεῖ λέγοντας διατρίβειν.
 <note type="footnote">3 Isocrates IV 96—99</note>
-<note type="footnote">2 ναυχίαν P 4 παραλαμβόντες B 5 τὸν ἐκ τῆς πόλεως
+               <note type="footnote">2 ναυχίαν P 4 παραλαμβόντες B 5 τὸν ἐκ τῆς πόλεως
 Is 6 ἵνʼ ἐν μέρει πρὸς ἑκατέραν κινδυνεύσωσιν Is Γ 8 ἐπι-
 δειχθέντες ἐπιδειχθεῖεν B 10 τὴν πόλιν] πόλην P 13 αὐτῶν
 BP | γενομένην B | καὶ μὴν οὐδὲ Ritschelius: καὶ μηδὲ MBP
 καὶ οὐδὲ Is | ἀποχρῆσαι MP ἀποιγρῆσαι B: corr v 15 οὐκ
 om Is | εἰώθησαν M 16 τε om Is seclusit v 18 αὐτοὶ M</note>
-<note type="footnote">19 αὐτῶν MBPv 21 θορυβασ θορύβους B | γινομένους M</note>
-<note type="footnote">23 λέγοντα Is</note>
-
-<pb n="219"/>
+               <note type="footnote">19 αὐτῶν MBPv 21 θορυβασ θορύβους B | γινομένους M</note>
+               <note type="footnote">23 λέγοντα Is</note>
+               <pb n="219"/>
 ἃ δʼ ἔστιν ἴδια καὶ τῆς ἡγεμονίας ἄξια καὶ τοῖς
 προειρημένοις ὁμολογούμενα, ταῦτα δʼ ἐμὸν ἔργον ἐστὶν
 εἰπεῖν. τοσοῦτον γὰρ ἡ πόλις ἡμῶν διέφερεν, ὅτε ἦν
@@ -3512,10 +3409,9 @@ om Is | εἰώθησαν M 16 τε om Is seclusit v 18 αὐτοὶ M</note>
 ἔλαττον ταῖς τιμαῖς ἔχειν ἀξιωθείημεν καὶ <lb n="20"/>
 τότε προταχθέντες πρὸ τῶν ἄλλων νῦν ἑτέροις ἀκολουθεῖν
 ἀναγκασθείημεν;᾿</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="41">
-<p>τῆς δὲ τρίτης ἁρμονίας, ἣν ἔφην μικτὴν ἐξ ἀμφοῖν 41
+         </div>
+         <div n="41" type="chapter">
+            <p>τῆς δὲ τρίτης ἁρμονίας, ἣν ἔφην μικτὴν ἐξ ἀμφοῖν 41
 <note type="footnote">1 ἄξιον M 3 τοσούτου MSP 6 ναυμαχήσαντες -- 8 διὰ
 μὲν τὴν om P | δυναμένας] δυνάμεις δυναμένας—κινδυνεύειεν
 om Is 7 οὐδεὶς δὲ Is οὐδεὶς γʼ οὖν πρὸς δὶς τοσαύτας οὐδεὶς
@@ -3528,13 +3424,12 @@ om Is 7 οὐδεὶς δὲ Is οὐδεὶς γʼ οὖν πρὸς δὶς τ
 τιμαῖς ἔλαττον Is 21 πρὸ Sylburgius: πρὸς MBP ὑπὲρ Is|
 τῶν ἄλλων] ἀπάντων Is 23 μικτὸν SP3
 </note>
-
-<pb n="220"/>
+               <pb n="220"/>
 εἶναι τὰ χρησιμώτατα ἐκλέγουσαν ἀφʼ ἑκατέρας, οὐδείς
 ἐστι χαρακτὴρ ἴδιος, ἀλλʼ ὡς ἂν οἱ μετιόντες αὐτὴν
 προαιρέσεως ἔχωσιν ἢ δυνάμεως τὰ μὲν φυγεῖν, τὰ δὲ
 λαβεῖν, οὕτως κίρνανται καθάπερ ἐν | τῇ ζωγραφίᾳ <milestone unit="1083"/>
-<lb n="5"/> τὰ μίγματα. ταύτης τῆς ἁρμονίας κράτιστος μὲν ἐγένετο
+               <lb n="5"/> τὰ μίγματα. ταύτης τῆς ἁρμονίας κράτιστος μὲν ἐγένετο
 κανὼν ὁ ποιητὴς Ὅμῃρος, καὶ οὐκ ἄν τις εἴποι
 λέξιν ἄμεινον ἡρμοσμένην τῆς ἐκείνου πρὸς ἄμφω
 ταῦτα, λέγω δὲ τήν τε ἡδονὴν καὶ τὸ σεμνόν. ἐζήλωσαν
@@ -3555,15 +3450,14 @@ om Is 7 οὐδεὶς δὲ Is οὐδεὶς γʼ οὖν πρὸς δὶς τ
 μετακεκόμισται δʼ εἰς τὴν Ἀτθίδα διάλεκτον ἡ λέξις·
 ‘Ἄνδρες Πέρσαι, οὔτ᾿ αὐτὸς καθηγήσομαι νόμον τόνδ’
 <note type="footnote">24 Herodotus VII 8 sqq</note>
-<note type="footnote">2 αὐτὴν Sylburgius: αὐτῶ 4 λαβεῖν] λαβοῖο P 6 Ὅμη-
+               <note type="footnote">2 αὐτὴν Sylburgius: αὐτῶ 4 λαβεῖν] λαβοῖο P 6 Ὅμη-
 ρος delet Kiessling in mg 8 εἰδονὴν B 9 ἐπών M 13 δύω
 BPv 15 δὲ Πλάτωνα post αὐτῶν repetit P | καὶ γὰρ καὶ]
 καὶ γάρ P 17 ἐξετάσας BPv 18 ὁμολογήσειε v 19 τῆς
 ἡδείας] ἡδείας B ἡδίας P | μέσειν P 21 περιτιθεὶς Syl-
 burgius v | ἐβουλεύετο B in mg v: ἐβούλετο MBP 22 Ἕλλη-
 νας—δὲ (sic) in mg supplet B</note>
-
-<pb n="221"/>
+               <pb n="221"/>
 ἐν ὑμῖν τιθεὶς παραδεξάμενός τε αὐτῷ χρήσομαι.
 ὡς ἐγὼ πυνθάνομαι τῶν πρεσβυτέρων, οὐδένα χρόνον
 ἠτρεμήσαμεν, ἐξ οὗ παρελάβομεν τὴν ἡγεμονίαν
@@ -3589,15 +3483,14 @@ burgius v | ἐβουλεύετο B in mg v: ἐβούλετο MBP 22 Ἕλλη-
 ἐγὼ δʼ ὑπέρ τʼ ἐκείνου καὶ τῶν ἄλλων Περσῶν οὐ
 πρότερον παύσομαι, πρὶν ἕλω τε καὶ πυρώσω τὰς
 <note type="footnote">2 ὡς γὰρ H (Herodotus) 4 τῶν Μήδων v 5 πολλὰ θεός τε B</note>
-<note type="footnote">7 καμβισης corr in καμβυσης P | πατὴρ] πρηρ B 9 τούτου v</note>
-<note type="footnote">10 λείψομαι HP: λείψωμαι MBv | πρότερων M corr M1 |
+               <note type="footnote">7 καμβισης corr in καμβυσης P | πατὴρ] πρηρ B 9 τούτου v</note>
+               <note type="footnote">10 λείψομαι HP: λείψωμαι MBv | πρότερων M corr M1 |
 γινομένων BP: 11 τῇ om H | προσκτήσομαι H: προσκτήσωμαι
 MBPv 13 προσγενόμενον MBP | ἧς] ἣς B ἣν P 14 φαυλο-
 τέραν BPv 18 Ἀθηναίοις B 19 πεποιήκασιν B | Πέρσαις M |
 πατέρα τὸν ἐμὸν Δαρεῖον v ex H 21 ὃ] οὐ B 22 τελεύ-
 τηκε P | τιμωρήσεσθαι MBP 24 πρὶν] τρὶν BP | περώσω BP</note>
-
-<pb n="222"/>
+               <pb n="222"/>
 Ἀθήνας. οἱ γε ἐμέ τε καὶ πατέρα τὸν ἐμὸν ὑπῆρξαν
 ἄδικα ποιοῦντες· πρῶτα μὲν εἰς Σάρδεις ἐλθόντες
 ἅμα Ἀρισταγόρᾳ τῷ Μιλησίῳ, δούλῳ δὲ ἡμετέρῳ, ἐνέπρησαν
@@ -3621,26 +3514,24 @@ MBPv 13 προσγενόμενον MBP | ἧς] ἣς B ἣν P 14 φαυλο-
 ἐπειδὰν ὑμῖν σημήνω τὸν χρόνον, εἰς ὃν ἡμῖν ἥκειν
 δοκεῖ, προθύμως ὑμᾶς ἅπαντας δεῖ παρεῖναι. ὅς δʼ |
 ἂν ἔλθῃ ἔχων κατεσκευασμένον στρατὸν κάλλιστα, <lb n="1087"/>
-<note type="footnote">1 Ἀθηναίας B | οἵ σε B | πράττὸν πατέρα P sed uitium
+               <note type="footnote">1 Ἀθηναίας B | οἵ σε B | πράττὸν πατέρα P sed uitium
 lineola deletur 2 γάρδεις BP 3 ἅμα v ex H: παρὰ MBP</note>
-<note type="footnote">6 δἄτίς P | ἀταφέρνης BP 9 εἰ] εἰς P 12 χώραν corr in
+               <note type="footnote">6 δἄτίς P | ἀταφέρνης BP 9 εἰ] εἰς P 12 χώραν corr in
 χαράν P | γε vH: τε MBP 15 εὐρύπης corr in εὐρώπης B</note>
-<note type="footnote">16 αὐτῶν] malim ἀνδρῶν cum H 17 ἡμῖν v M1:
+               <note type="footnote">16 αὐτῶν] malim ἀνδρῶν cum H 17 ἡμῖν v M1:
 ὑμῖν M²BP om H | ὃ οἴονται B τὸ ἡμῖν οἷόν τε H
 19 αἴτιοι H: ἀντίοι MBPv | ἕξουσι M 20 ἀναίτιοι H: ἀθη-
 ναῖοι MBPv | χαρίζοισθε H: χαρίζεσθε MP² χαρίζεσθαι BP1</note>
-<note type="footnote">21 σημένω BP ἡμῖν Sylburgius: ὑμῖν MBP om H
+               <note type="footnote">21 σημένω BP ἡμῖν Sylburgius: ὑμῖν MBP om H
 23 ἔλθοι MBPv</note>
-
-<pb n="223"/>
+               <pb n="223"/>
 δώσω αὐτῷ δωρεάν, ἣ δὴ τιμιωτάτη νομίζεται ἐν ἡμετέρου.
 ποιητέα μὲν δὴ ταῦτʼ ἐστὶν οὕτω. ἵνα δὲ μὴ
 ἰδιοβουλεύειν ὑμῖν δοκῶ, τίθημι τὸ πρᾶγμα ἐς μέσον,
 γνώμην κελεύων ὑμῶν τὸν βουλόμενον ἀποφαίνεσθαι.᾿</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="42">
-<p>ἐβουλόμην ἔτι πλείω παρασχέσθαι παραδείγματα 42
+         </div>
+         <div n="42" type="chapter">
+            <p>ἐβουλόμην ἔτι πλείω παρασχέσθαι παραδείγματα 42
 τῆς τοῦ συγγραφέως ἀγωγῆς· ἰσχυροτέρα γὰρ ἡ πίστις <lb n="6"/>
 οὕτως ἂν ἐγένετο. νῦν δʼ ἐξείργομαι, σπεύδων ἐπὶ τὰ
 προκείμενα καὶ ἅμα δόξαν ὑφορώμενος ἀκαιρίας. συγγνώσεται
@@ -3651,7 +3542,7 @@ lineola deletur 2 γάρδεις BP 3 ἅμα v ex H: παρὰ MBP</note>
 τοὺς πρωτεύσαντας ἐν αὐτοῖς διῆλθον, ἵν᾿, ἐπειδὰν
 ἀποφαίνωμαι γνώμην ὅτι τὴν μέσην τε καὶ μικτὴν
 ἁρμονίαν ἐπετήδευσεν ὁ Δημοσθένης, μηδεὶς ὑποτυγχάνῃ <lb n="15"/>
-<milestone unit="1088"/> μοι ταῦτα | λέγων· ‘ἱ γὰρ ἄκραι τίνες εἰσὶν
+               <milestone unit="1088"/> μοι ταῦτα | λέγων· ‘ἱ γὰρ ἄκραι τίνες εἰσὶν
 ἁρμονίαι; καὶ τίς αὐτῶν ἑκατέρας ⟨ἡ⟩ φύσις καὶ τίς
 ἡ μῖξις ἢ ἡ κρᾶσις αὕτη; οὐδὲν γὰρ δὴ τῶν <gap reason="omitted"/>
 ἄκρων.’ τούτου μὲν δὴ πρώτου χάριν, ὥσπερ ἔφην,
@@ -3670,14 +3561,12 @@ lacuna BPv 20 ἐκεῖνα om Pv | ἐναγκάσθην P | μὴ μονό-
 κωλος] μηνόκωλος B 21 μηδὲ] μὲν δὴ B | ἀλλʼ ??χῃ P
 22 πιστοῦν Sylburgius: πιστεύειν
 </note>
-
-<pb n="224"/>
+               <pb n="224"/>
 προσθήκας οὔτε ἀπαιτοῦντος τοῦ λόγου παραλιπεῖν
 καλῶς ἂν ἔχοι.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="43">
-<p>43 δεδειγμένης δή μοι τῆς αἱρέσεως τοῦ ῥήτορος ταύτης
+         </div>
+         <div n="43" type="chapter">
+            <p>43 δεδειγμένης δή μοι τῆς αἱρέσεως τοῦ ῥήτορος ταύτης
 ἤδη τις παρʼ ἑαυτῷ σκοπείτω τὰ λεχθέντα, ὅτι
 <lb n="5"/> τοιαῦτʼ ἐστίν, ἐνθυμούμενος μὲν ὅσα σεμνῶς κατεσκεύασται
 τῷ ἀνδρὶ καὶ αὐστηρῶς καὶ ἀξιωματικῶς,
@@ -3699,16 +3588,15 @@ lacuna BPv 20 ἐκεῖνα om Pv | ἐναγκάσθην P | μὴ μονό-
 προσπολεμῆσαι νομίζει, σώφρονος μὲν ἀνθρώπου προνοίᾳ
 χρῆται· μεγάλη γὰρ ῥοπή, μᾶλλον δὲ ὅλον ἡ
 <note type="footnote">20 Demosthenes Olynth. β 22</note>
-<note type="footnote">1 τοῦ om Pv 3 αἱρέσεως] διαιρέσεως MBv διεραίσεως P |
+               <note type="footnote">1 τοῦ om Pv 3 αἱρέσεως] διαιρέσεως MBv διεραίσεως P |
 ταύτης] τοιαύτης Krüger 4 ὅτι] εἰ Reiskius 5 κατεσκεύ-
 αστε P κατεσκεύαστο v 6 ταὐστηρῶς B 8 ἡ πίστις seclusi</note>
-<note type="footnote">10 καταβαινέτω—λεγομένων om B λεγόμενον P 13 συμπε-
+               <note type="footnote">10 καταβαινέτω—λεγομένων om B λεγόμενον P 13 συμπε-
 πυκνωμένας — τε καὶ om B συμπεπικνωμένας P 16 post
 ἀκούοντας totum illud καὶ συμπεπυκνωμένας usque ad ἐκτρέπει
 τοὺς ἀκούοντας repetit B 20 ω B ὡ?? P 22 προνοίᾳ]
 λογισμῷ D 23 ῥοπὴ M</note>
-
-<pb n="225"/>
+               <pb n="225"/>
 τύχη παρὰ πάντʼ ἐστὶ τὰ τῶν ἀνθρώπων πράγματα.
 οὐ μὴν ἀλλʼ ἔγωγε, εἴ τις αἵρεσίν μοι δοίη, τὴν τῆς
 <milestone unit="1090"/> ἡμε|τέρας πόλεως τύχην ἂν ἑλοίμην ἐθελόντων, ἃ
@@ -3729,7 +3617,7 @@ lacuna BPv 20 ἐκεῖνα om Pv | ἐναγκάσθην P | μὴ μονό-
 ἡ σύνθεσις ἐν τῷ ‘μεγάλη γὰρ ῥοπή’, διὰ τὸ μὴ συναλείφεσθαι
 τὰ δύο ρ ρ καὶ ἐν τῷ ‘ἀνθρώπων πράγματα’
 διὰ τὸ μὴ συλλεαίνεσθαι ⟨τὸ ν⟩ τῷ ἑξῆς. διασπᾶται <lb n="20"/>
-<lb n="1091"/> δʼ ἐν τῷ | ‘μᾶλλον δὲ ὅλον ἡ τύχη’, βραχέων φωνηέντων
+               <lb n="1091"/> δʼ ἐν τῷ | ‘μᾶλλον δὲ ὅλον ἡ τύχη’, βραχέων φωνηέντων
 πολύν τὸν μεταξὺ χρόνον περιλαμβανόντων. ἐν
 δὲ τῇ τρίτῃ περιόδῳ τὰ φωνήεντα μέν, εἴ τις αὐτὰ
 βούλοιτο συναλείψας ἐκθλίβειν ὥσπερ τὸ οἴομαι καὶ
@@ -3742,8 +3630,7 @@ om P 12 διίστησι B: καὶ διίστησι MPv | τόπους Kiesslin
 18 συναλείφαισθε P 20 συνλλαίνεσθαι P | τὸ ν addidi, alia
 fingi possunt 22 πολὺν Sylburgius: πολὺ 23 τὰ] τῶ M
 </note>
-
-<pb n="226"/>
+               <pb n="226"/>
 δέον, οὐκ ἂν εὕροι συμπλεκόμενα ἀλλήλοις. τῶν δὲ
 συμφωνουμένων δυσὶν ἢ τρισὶν χωρίοις τὴν λειότητα
 μὴ φυλάττουσαι σὺν τοῖς παρακειμένοις εὑρεθήσονται
@@ -3767,25 +3654,24 @@ fingi possunt 22 πολὺν Sylburgius: πολὺ 23 τὰ] τῶ M
 πλείω λέγοντα μηκύνειν; οὐ μόνον δὲ αἱ τῶν ὀνομάτων
 συζυγίαι τὴν μικτὴν ἁρμονίαν λαμβάνουσι παρʼ
 <note type="footnote">7 Demosthenes Olynth. β 22/23</note>
-<note type="footnote">1 τὸ δέον Usener | εὕροι Reiskius: εὕροις 3 συντϋ . π . . . . .
+               <note type="footnote">1 τὸ δέον Usener | εὕροι Reiskius: εὕροις 3 συντϋ . π . . . . .
 μόνοις M συντυπαιμό μόνοις B συντυπαιμένοισ Pv: corr Sadaeus |
 εὑρεθηθήονται B 4 διδοίη M | τὴν add Usener 5 τῶνδε
 M: τῶν BPv 6 προτέρας P post προτέρα interpunxit γάρ in-
 seruit Reiskius 7 ὁφορμὰς P 8 ὁρῶν B 9 ἐνούσαις M
 10 ἐπιτάττειν ὑπὲρ αὑτοῦ τι ποιεῖν μή τι γε δὴ τοῖς θεοῖς D</note>
-<note type="footnote">11 τε om Pv 12 πολλαχῦ P 14 ἁρμονίαι — αἱ om B
+               <note type="footnote">11 τε om Pv 12 πολλαχῦ P 14 ἁρμονίαι — αἱ om B
 15 [ταύ]ταις cum ras M | ἐπιβάλουσι corr in ἐπιβάλνουσι P
 ἐπιβάλλουσι v | περίοδοι — λαμβάνουσι om Pv περιόδοις B
 19 τʼ ἄλλα M 22 in mg ἁρμονία B
 </note>
-
-<pb n="227"/>
+               <pb n="227"/>
 αὐτῷ καὶ μέσην, ἀλλὰ καὶ αἱ τῶν κώλων κατασκευαί
 τε καὶ συνθέσεις καὶ τὰ τῶν περιόδων μήκη τε καὶ
 σχήματα καὶ οἱ περιλαμβάνοντες αὐτάς τε καὶ τὰ κῶλα
 ῥυθμοί. καὶ γὰρ καὶ κατὰ κόμματα πολλὰ εἴρηται τῷ
 ἀνδρὶ, καὶ τὰ <gap reason="omitted"/> πλεῖστά γε οὕτως κατεσκεύασται, <lb n="5"/>
-<milestone unit="1093"/> καὶ ἐν περιόδοις | οὐκ ὀλίγα. τῶν δὲ περιόδων
+               <milestone unit="1093"/> καὶ ἐν περιόδοις | οὐκ ὀλίγα. τῶν δὲ περιόδων
 αἳ μέν εἰσιν εὐκόρυφοι καὶ στρογγύλαι ὥσπερ
 ἀπὸ τόρνου, αἳ δὲ ὕπτιαί τε καὶ κεχυμέναι καὶ οὐκ
 ἔχουσαι τὰς βάσεις περιττάς. μήκει τε αἳ μὲν ἐλάττους,
@@ -3800,13 +3686,12 @@ seruit Reiskius 7 ὁφορμὰς P 8 ὁρῶν B 9 ἐνούσαις M
 <del>καὶ</del> διακλωμένους. ὑπὲρ ὧν ὀλίγον ὕστερον ἐροῦμεν·
 ἕτερος γὰρ ἐπιτηδειότερος αὐτοῖς ἔσται τόπος.
 νυνὶ δέ, ὃ προσαπαιτεῖν ἔοικεν ὁ λόγος, ἔτι προσθείς, <lb n="20"/>
- <milestone unit="1094"/> ἐπὶ τὰ λοιπὰ τῶν προκειμένων μεταβήσομαι.|</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="44">
-<p>τί δὲ τοῦτʼ ἔστιν; ἐπειδὴ κρατίστην μὲν ἔφην 44
+               <milestone unit="1094"/> ἐπὶ τὰ λοιπὰ τῶν προκειμένων μεταβήσομαι.|</p>
+         </div>
+         <div n="44" type="chapter">
+            <p>τί δὲ τοῦτʼ ἔστιν; ἐπειδὴ κρατίστην μὲν ἔφην 44
 <note type="footnote">1 αὐτῶν BP | περὶ κώλων in mg B 5 lacunam sensit Reiskius</note>
-<note type="footnote">6 περὶ περιόδων in mg B 7 αἳ μὲν] αἱ μὲν καὶ ἐν B |
+               <note type="footnote">6 περὶ περιόδων in mg B 7 αἳ μὲν] αἱ μὲν καὶ ἐν B |
 εὐκόριφοι P οὐ κόραιφοι B 8 ὑπτίαι B 9 ἐλάττους Sa-
 daeus: θάττους 10 συμμετριθῆναι B 13 περὶ σχιμάτων
 B in mg | ἔνθα μὲν] νῦν θαμὲν P | σεμνὰ καὶ αὐστηρὰ in lac
@@ -3817,8 +3702,7 @@ add M 14 λιγυρὰ M, B in mg: λυγιρὰ B in textu, λυρᾶ P
 v. 163: ἰωνικοὺς καὶ 18 post διακλωμένους B inserit καὶ εὐ-
 γενεῖς καὶ σπανίους (corr in σπανίως) δέ που τοὺς 19 γὰρ om M
 </note>
-
-<pb n="228"/>
+               <pb n="228"/>
 εἶναι τὴν μικτὴν σύνθεσιν, ταύτῃ δὲ κεχρῆσθαί φημι
 τὸν Δημοσθένην ἀπάντων μετριώτατα τῶν ἄλλων,
 ἐπιτάσεις δὲ καὶ ἀνέσεις ἀξιολόγους ἐν αὐτῇ ποιεῖσθαι,
@@ -3844,19 +3728,18 @@ v. 163: ἰωνικοὺς καὶ 18 post διακλωμένους B inserit κ
 ιώδης ἐπιτάφιος καὶ τὸ τοῦ σοφιστικοῦ λήρου
 μεστὸν ἐγκώμιον εἰς Παυσανίαν. τὰς δὲ περὶ τούτων
 ἀποδείξεις οὐχ οὗτος ὁ καιρὸς λέγειν.</p>
-<note type="footnote">22—24 cf Bekkeri or att IV p 7, 29 (Demosth. ed. Blass
+            <note type="footnote">22—24 cf Bekkeri or att IV p 7, 29 (Demosth. ed. Blass
 I p 53) Phot. bibl. p. 492a 25</note>
-<note type="footnote">1 ταύτῃ] τήντη P 4 τοτὲ] τοςτὲ B 6 αὐτὴν om P 7 ἢ τῶν δὲ B</note>
-<note type="footnote">11 σκολὰς BP | συραέοντες P 12 παντῶσιν B 13 alterum
+            <note type="footnote">1 ταύτῃ] τήντη P 4 τοτὲ] τοςτὲ B 6 αὐτὴν om P 7 ἢ τῶν δὲ B</note>
+            <note type="footnote">11 σκολὰς BP | συραέοντες P 12 παντῶσιν B 13 alterum
 καὶ bis P 14 οὔτε] οὐδὲ v | ᾤετο] ὤς|τε B 17 παραδε παρα-
 σχέσθαι B 18 αὐτοῦ εἰς αὐτὸν B sed αὐτοῦ postea deletum
 est 20 νοήμασι libri | οὔτʼ ἐν τοῖς ὀνόμασι add Reiskius
 22 σημείωσαι corr B in mg 23 καὶ τὸς οῦτο τὸ τοῦ P</note>
-</div>
-
-<div type="textpart" subtype="chapter" n="45">
-<pb n="229"/>
-<p>ἐκ δὲ τῶν ἐναγωνίων
+         </div>
+         <div n="45" type="chapter">
+            <pb n="229"/>
+            <p>ἐκ δὲ τῶν ἐναγωνίων
 αὐτοῦ λόγων, ὁπόσοι πρὸς δικαστήρια γεγόνασιν
 ἢ πρὸς ἐκκλησίας, τεκμαίρομαι, ὅτι ταύτην τὴν
 γνώμην ὁ ἀνὴρ εἶχεν. ὁρῶ γὰρ αὐτόν, εἴ ποτε λάβοι
@@ -3890,8 +3773,7 @@ sema deleui 18 ἰδέας corr in mg B 20 συνθεθέσεως B |
 22 ποιεῖ Sylburgius v | τὸ deleuit Sadaeus 23 περὶ τῶν πο-
 λιτικῶν in mg corr B
 </note>
-
-<pb n="230"/>
+               <pb n="230"/>
 μοῖραν ἐχούσας, τῆς δὲ | αὐστηρᾶς καὶ πεπινωμένης <milestone unit="1097"/>
 πλείω. ἐν αἷς μὲν γὰρ δεῖ κολακευθῆναι τὸν ἀκροατὴν
 καὶ παρακολουθῆσαι τοῖς πράγμασι κακῶν ἀλλοτρίων
@@ -3918,22 +3800,20 @@ sema deleui 18 ἰδέας corr in mg B 20 συνθεθέσεως B |
 δὲ τῶν δικανικῶν πάλιν ἐν μὲν τοῖς δημοσίοις, ἔνθα
 <note type="footnote">1 πεπιωμένης B 2 ἐν αἷς scil διηγήσεσιν 3 παρα-
 κολουθῆσαι (add ν super σ) τὸν ἀκροατὴν καὶ παρακολουθῆναι P</note>
-<note type="footnote">4 διηγήσεις et ἀκούοντα mg Bold: διηγήσεσιν et ἀκούοντας
+               <note type="footnote">4 διηγήσεις et ἀκούοντα mg Bold: διηγήσεσιν et ἀκούοντας
 libri 6 διανίας B | κόπον Reiskius: σκοπὸν 7 πίσεις B
 11 ὥραν] χάραν Kiessling | ἔχει in mg B 12 ἐπεὶ B | οὐ τὴν]
 αὐτὴν B 13 δεῖν uacat, δὴ ci Usener 14 κόσμους in mg B</note>
-<note type="footnote">16 ἀλοτρίων B 17 γίνεται — δικαστής om B 18 τιμιω-
+               <note type="footnote">16 ἀλοτρίων B 17 γίνεται — δικαστής om B 18 τιμιω-
 τάτην corr in τιμιώτατα P | ἀγῶν Reiskius: ἀχρειῶν 21 κατα-
 κορεστέραι M1 22 αὐστηραῖς Reiskius: τοιαύταις
 </note>
-
-<pb n="231"/>
+               <pb n="231"/>
 τὸ ἀξίωμα ἔδει τῆς πόλεως φυλάξαι, ταῖς μεγαλοπρεπεστέραις
 πλείοσιν, ἐν δὲ τοῖς ἰδιωτικοῖς ἐλάττοσι.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="46">
-<p>συνελόντι δʼ εἰπεῖν, οὐ μόνον παρὰ τὰς ἰδιότητας 46
+         </div>
+         <div n="46" type="chapter">
+            <p>συνελόντι δʼ εἰπεῖν, οὐ μόνον παρὰ τὰς ἰδιότητας 46
 τῶν λόγων καὶ τὰς παραλλαγὰς τῶν ὑποθέσεων διαφόρους
 ᾤετο δεῖν ποιεῖσθαι τὰς κράσεις τῶν ἐν τῇ <lb n="5"/>
 συνθέσει χαρακτήρων, ἀλλὰ καὶ παρʼ αὐτὰ τὰ γένη
@@ -3955,21 +3835,21 @@ libri 6 διανίας B | κόπον Reiskius: σκοπὸν 7 πίσεις B
 ἱκανὰ τεκμήρια, καὶ ἅμα πρὸς ἐπισταμένους (οὐ
 γὰρ δή γε τοῖς ἀπείροις τοῦ ἀνδρὸς τάδε γράφω) τὸ
 δεῖξαι τὰ πράγματα συμβολικῶς ἀπόχρη. ἐπάνειμι
-<milestone unit="1100"/> δʼ οὖν ἐπὶ τὰ λοιπά, ὧν ἐν ἀρχῇ προὐθέμην ἐρεῖν. | </p><lb n="25"/>
-<note type="footnote">1 μεγαλοπεστέραις M1 3 δʼ ειπνει B παρά mg Bold:
+<milestone unit="1100"/> δʼ οὖν ἐπὶ τὰ λοιπά, ὧν ἐν ἀρχῇ προὐθέμην ἐρεῖν. | </p>
+            <lb n="25"/>
+            <note type="footnote">1 μεγαλοπεστέραις M1 3 δʼ ειπνει B παρά mg Bold:
 περὶ | ἰδιώτητας BP 44 παραλαγὰς B παραλὰς P 6 καὶ τὰ
 παρʼ B 8 κατασκεαῖς B 9 τῆς Usener: τὰς 11 εἴἡ P 13 αἰεἰ
 σχηματίζων B αἱ εἰσχηματίζων P 14 λόγων B | ἐπιτάσσει ταμιουό-
 μενος P 16 ἂν ἔπλασεν P 18 ἐξεταζομένων add α super μέ B</note>
-<note type="footnote">19 ἂν add Krüger 21 ὑπομνηματισμῶν MBPv: corr Syl-
+            <note type="footnote">19 ἂν add Krüger 21 ὑπομνηματισμῶν MBPv: corr Syl-
 burgius e libro(?) 23 τά γε γράφω P | τὸ δεῖξαι] ὑποδεῖξαι
 Krüger probante Usenero 25 προὐθέ . . . . . | μην P
 </note>
-</div>
-
-<div type="textpart" subtype="chapter" n="47">
-<pb n="232"/>
-<p>47 δεύτερον δὴ κεφάλαιον ἦν ἐπιδεῖξαι, τίσι θεωρήμασι
+         </div>
+         <div n="47" type="chapter">
+            <pb n="232"/>
+            <p>47 δεύτερον δὴ κεφάλαιον ἦν ἐπιδεῖξαι, τίσι θεωρήμασι
 χρώμενος καὶ διὰ ποίας ἀσκήσεως προελθὼν τὸ
 κράτιστον μέρος ἔλαβε τῆς <gap reason="omitted"/> ἁρμονίας. ἐρῶ δὴ
 καὶ περὶ τούτων, ὡς ἔχω δόξης. δυεῖν ὄντων τελῶν
@@ -3988,10 +3868,9 @@ Krüger probante Usenero 25 προὐθέ . . . . . | μην P
 παρακολουθοῦν ἅπα|σιν αὐτοῖς πρέπον, οὐ μὴν κατὰ <milestone unit="1101"/>
 τὸν αὐτὸν τρόπον ἑκάτερα σχηματιζόμενα. ὃν δὲ λόγον
 ἔχει τούτων ἕκαστον, ἐγὼ πειράσομαι διδάσκειν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="48">
-<p>48 τοῖς πρώτοις μορίοις τῆς λέξεως, ἃ δὴ στοιχεῖα
+         </div>
+         <div n="48" type="chapter">
+            <p>48 τοῖς πρώτοις μορίοις τῆς λέξεως, ἃ δὴ στοιχεῖα
 <lb n="21"/> ὑπό τινων καλεῖται, εἴτε τρία ταῦτʼ ἐστίν, ὡς Θεοδέκτῃ
 τε καὶ Ἀριστοτέλει δοκεῖ, ὀνόματα καὶ ῥήματα καὶ
 σύνδεσμοι, εἴτε τέτταρα, ὡς τοῖς περὶ Ζήνωνα τὸν
@@ -4005,8 +3884,7 @@ M nulla in BPv μικτῆς καὶ μέσης suppleuit Sadaeus 5 ὧν]
 τι τὸ παρακολουθοῦν repetit P | πρέπον scripsi Martinii uer-
 sionem secutus] παραίτιον MBPv 23 εἴτε τέτταρα — στωι-
 κόν om Pv</note>
-
-<pb n="233"/>
+               <pb n="233"/>
 Στωικόν, εῖτε πλείω, δύο ταῦτα ἀκολουθεῖ μέλος καὶ
 χρόνος ἴσα. κατὰ μὲν δὴ τὰς ὀξύτητάς τε καὶ βαρύτητας
 αὐτῶν τάττεται τὸ μέλος, κατὰ δὲ τὰ μήκη καὶ
@@ -4041,8 +3919,7 @@ deleto P | ἔδοξαν BP 10 κατεσκεύασθαι BP | πρώτων] π�
 ποιήσαιτο Sadaeus: ποιῆται | ὁπῶς B | ἀνσχοιτο P ο et accentu
 super νσ addito 22 τί δ(ὲ — μένοι δʼ) inclusa bis scripsit P
 </note>
-
-<pb n="234"/>
+               <pb n="234"/>
 καὶ τῶν αὐτῶν ῥυθμῶν, οὐδὲν ἐξαλλάττων οὐδὲ ποικίλλων,
 ἆρʼ οὐχ ὅλον ἂν διαφθείροι τὸ ἀγαθόν; εἰ δὲ
 καὶ τούτου στοχάσαιτο, μηδεμίαν δὲ πρόνοιαν ἔχων
@@ -4066,7 +3943,7 @@ super νσ addito 22 τί δ(ὲ — μένοι δʼ) inclusa bis scripsit P
 αὐτῶν φαίνεσθαι καὶ μεγαλοπρεπεῖς, τοὺς δὲ
 τρυφεροὺς καὶ μαλακούς. ἔν τε ταῖς μεταβολαῖς τοτὲ
 μὲν τὸ ἀρχαιοπρεπὲς | καὶ αὐστηρόν, τοτὲ δὲ τὸ μελιχρὸν <milestone unit="1104"/>
-<note type="footnote">1 post ῥυθμῶν in P folio 73⁰ incipiente ἀνάσχοιτο (sic) —
+               <note type="footnote">1 post ῥυθμῶν in P folio 73⁰ incipiente ἀνάσχοιτο (sic) —
 ῥυθμῶν uerba repetuntur | πικίλλων B 2 ἂν, quod in li-
 bris post οὐδὲν est, post ὅλον posuit Sadaeus | διαφθείροι Syl-
 burgius: διαφθείρη 3 στοχούσαιτο BP 7 αὐτῶ 3 qui ἐπι-
@@ -4077,8 +3954,7 @@ Krüger 11 σχήμασιν BP | τρόπονις B | τρέποντος P 14 �
 σικῆς B 20 παραπλήσιοον P 22 τροφεροὺς P 23 τὸ om v
 | τοτὲ δὲ τὸ μελιχρὸν Usener: τό τε λεγόμενον ἐχθρὸν
 </note>
-
-<pb n="235"/>
+               <pb n="235"/>
 καὶ φιλόκαινον ἐμφαινόμενον. τό τε δὴ πρέπον
 ἀπάντων μάλιστα μεγάλην παρέχον εἰς ἑκάτερον αὐτῶν
 ῥοπήν. συνιδὼν δὴ ταῦτα, ὑπότε μὲν τοῦ καλοῦ πλείονος
@@ -4098,26 +3974,25 @@ Krüger 11 σχήμασιν BP | τρόπονις B | τρέποντος P 14 �
 αἴσθησιν διαλανθάνει· τὰ μὲν γὰρ συγκέχυται, τὰ δὲ
 συνέφθαρται, τὰ δʼ ἄλλῳ τινὶ τρόπῳ τὴν ἀκρίβειαν
 ἐκβέβηκεν τῆς κατασκευῆς, ὥστε αὐτὴν ἐξηλλάχθαι δοκεῖν
-τῷ παντὶ καὶ κατὰ μηδὲν ἐοικέναι τοῖς ποιήμασιν. </p><lb n="20"/>
-</div>
-
-<div type="textpart" subtype="chapter" n="49">
-<p>ἆρά γε ἀπαιτήσει μέ τις ἐνταυθοῖ λόγον μελῶν τε 49
+τῷ παντὶ καὶ κατὰ μηδὲν ἐοικέναι τοῖς ποιήμασιν. </p>
+            <lb n="20"/>
+         </div>
+         <div n="49" type="chapter">
+            <p>ἆρά γε ἀπαιτήσει μέ τις ἐνταυθοῖ λόγον μελῶν τε 49
 καὶ ῥυθμῶν καὶ τῶν ἐν ταῖς μεταβολαῖς σχημάτων καὶ
 τοῦ ἐν ἑκάστῳ πρέποντος, ἀξιῶν ἀκοῦσαι, τίνα τε
 <note type="footnote">2 παρέχων BP 3 ῥοπὴν Sylburgius: τρόπον | πλείονα BPv</note>
-<note type="footnote">4 αὐτῷ MBPv | τῇ κατασκευῇ] τὴν κατασκευὴν MBPv |
+               <note type="footnote">4 αὐτῷ MBPv | τῇ κατασκευῇ] τὴν κατασκευὴν MBPv |
 τάς τε ἐμμελεῖ P τά τε μέλη Sylburgius v 5 μεγαλωπρεπεῖς B |
 ῥηθμοὺς in ῥυθμοὺς corr B ῥηθμοὺς P 7 λέξις postea add M</note>
-<note type="footnote">8 μετεβίβαζεν Usener 9 ὑπολάβηθη B | τῇ πεζῇ λέξει Syl-
+               <note type="footnote">8 μετεβίβαζεν Usener 9 ὑπολάβηθη B | τῇ πεζῇ λέξει Syl-
 burgius: τὴν πεζὴν λέξιν 10 ἐμμελείων B 12 λέξεων B
 13 καινουργεῖν Kiessling | με om v | τὰ μὴ προσόντα Sylburgius</note>
-<note type="footnote">15 κατεσκευσμένη B 18 συνέφθαρται cum signo P | in mg
+               <note type="footnote">15 κατεσκευσμένη B 18 συνέφθαρται cum signo P | in mg
 ἀντὶ τοῦ συγκέκραται (συγκίκραται P) MBP | δὲ ἄλλῳ BP
 19 αὐτὸν BPv 23 τοῦ πρέποντος Reiskius: τοὺς πρέποντας
 </note>
-
-<pb n="236"/>
+               <pb n="236"/>
 αὐτῶν ἐστιν, οἷς ἡ φιλάρχαιος ἁρμονία κοσμεῖται, καὶ
 τίνα τῆς κωτίλης γένοιτʼ ἂν ἁρμονίας; ἢ οἰκειοτέραν
 τὴν ἐκ παιδὸς ἐπιφερόμενος εὐμουσίαν, ἣν ἔκ τε μουσικῆς
@@ -4133,10 +4008,9 @@ burgius: τὴν πεζὴν λέξιν 10 ἐμμελείων B 12 λέξεω�
 πάντα ὅσα ποθεῖ τῶν ἐνθάδε παραλειπομένων
 εἴσεται. ἐγὼ δὲ τῇδέ πῃ περιγράψας τὸν ὑπὲρ τούτων
 <lb n="15"/> λόγον ἐπὶ τὸ περιλειπόμενον ἐλεύσομαι μέρος.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="50">
-<p>50 ὑπεσχόμην γὰρ καὶ τοῦτο δείξειν ἔτι, πῶς ἄν τις
+         </div>
+         <div n="50" type="chapter">
+            <p>50 ὑπεσχόμην γὰρ καὶ τοῦτο δείξειν ἔτι, πῶς ἄν τις
 διαγνοίη τὸν χαρακτῆρα τῆς Δημοσθένους συνθέσεως
 καὶ ποίοις χρώμενος σημείοις ἀπὸ τῶν ἄλλων διορίσειεν.
 ἓν μὲν οὖν οὐδέν ἐστι παράσημον αὐτῆς ἐκφανὲς
@@ -4156,9 +4030,8 @@ postea add M 17 διανοίη BP 18 χρώμενος σημείοις] χρω-
 συνθέσει 21 ὁ πλεονασμός Reiskius 22 ἐλέγχεσθαι uix sanum
 est, ἐνέχεσθαι ci Usener
 </note>
-
-<pb n="237"/>
-<milestone unit="1107"/> γνῶσις, ἴδιος | αὐτῆς γίνεται χαρακτήρ. χρήσομαι δʼ
+               <pb n="237"/>
+               <milestone unit="1107"/> γνῶσις, ἴδιος | αὐτῆς γίνεται χαρακτήρ. χρήσομαι δʼ
 εἰκόνι φανερῷ τῆς σαφηνείας ἕνεκα τοῖς σώμασι τῶν
 ἀνθρώπων. ἅπασι δή που συμβέβηκε μέγεθός τε καὶ
 χρῶμα καὶ σχῆμα καὶ μέλη καὶ ῥυθμός τις τῶν
@@ -4185,15 +4058,14 @@ est, ἐνέχεσθαι ci Usener
 <note type="footnote">2 σαφεινίας P σαφικίας in mg σαφηνείας B | ἕνεκα τοῖς M
 ci Reiskius: ἐν ἑκάστοις BP | σημείωσαι in mg B 5 an ἐφʼ
 ἑνὸς? 7 τι M: δὴ BPv 9 συνθῇ τὰ Reiskius] τὰ συνήθη</note>
-<note type="footnote">10 κυριώτερα B 11 οὐκ ἐπϊ . . . σεται (III l) M οὐκ ἐτι . . .
+               <note type="footnote">10 κυριώτερα B 11 οὐκ ἐπϊ . . . σεται (III l) M οὐκ ἐτι . . .
 σεται (III l) et in mg οὐκ επϊ B οὐκ ἐπισεται P fort οὐκ ἐπι-
 σπάσεται uelut παρακρούσεται de Isaeo p 559 13 Δημοσθένους
 postea add M 14 δὲ Küger 15 πρῶτον μὲν? 16 αἰσθή-
 σησις B 17 οὐδὲ γάρ ci Usener 21 διανοῖεν BP 22 τῇ φήμῃ
 παραλαβόντες seclusi φήμι P
 </note>
-
-<pb n="238"/>
+               <pb n="238"/>
 ἐκείνη, αὕτη δὲ Παρρασίου. λόγων δὲ ἆρα τινὲς ἀκριβῶς
 ἐξ ὀλίγων παραγγελμάτων καὶ προσκαίρου | κατηχήσεως <milestone unit="1109"/>
 ἐμμελοῦς ἁρμονίας εἴσονται φύσιν; πολλοῦ γε
@@ -4217,7 +4089,7 @@ postea add M 14 δὲ Küger 15 πρῶτον μὲν? 16 αἰσθή-
 καλοῦσιν <add cause="omitted">οἱ</add> μουσικοὶ στροφήν, κἄπειτα πάλιν τοῖς
 αὐτοῖς ῥυθμοῖς καὶ μέτροις ἐπὶ τῶν αὐτῶν στίχων ἢ
 <note type="footnote">1 δὲ post αὕτη om P | παρασίου MPv | λόγον B | ἄρα B</note>
-<note type="footnote">2 παραγελμάτων B | προσκαίρους P 3 φύσιν postea add
+               <note type="footnote">2 παραγελμάτων B | προσκαίρους P 3 φύσιν postea add
 M item 4 πρῶτον et σκοπεῖν | πολοῦ B 4 εἴομαι B 5 εὐ-
 ρηθμίαν B 7 μέτρα τὰ M: μέτρα BP 9 μὴ δῆλον εἶναι]
 μηδʼ ἡμῖν νοεῖν M (postea additum) BPv 10 καὶ οὐ γάρ B
@@ -4228,8 +4100,7 @@ igitur τίνα δʼ ἂν ἔχοι. hinc cf de comp 196, 15 sq 21 κα-
 λοῦσι MP καλλοῦσι B | οἱ add Sylburgius ceterum cf de Lys
 474 | στροφὴ in mg B
 </note>
-
-<pb n="239"/>
+               <pb n="239"/>
 περιόδων, ἃς ἀντιστρόφους ὀνομάζουσι, χρωμένη καὶ
 τῷ σχήματι τούτῳ τῆς κατασκευῆς ἀπὸ τῆς ἀρχῆς
 μέχρι τοῦ τέλους προβαίνουσα ἔμμετρός τʼ ἐστὶ καὶ
@@ -4253,9 +4124,9 @@ igitur τίνα δʼ ἂν ἔχοι. hinc cf de comp 196, 15 sq 21 κα-
 καὶ τοῖς σχηματισμοῖς, ὡς ἅπαντες ἴσασι, καί μοι
 δοκεῖ ταῦτα μὴ λόγων δεῖσθαι γνώριμα καὶ τοῖς
 φαυλοτάτοις ὄντα.</p>
-<note type="footnote">1 ἀντιστροφὴ in mg Β ἀντιστροφὰς Sylburgius 2 τῳ Ρ</note>
-<note type="footnote">4 ἐρρυθμὸς β sequentia usque ad ῥυθμοὺς u 5 omittens</note>
-<note type="footnote">6 ἐμπεριλαμβάνουσα] ἐμπεριπεπλανημενα μέτρα καὶ ῥυθμοὺς
+            <note type="footnote">1 ἀντιστροφὴ in mg Β ἀντιστροφὰς Sylburgius 2 τῳ Ρ</note>
+            <note type="footnote">4 ἐρρυθμὸς β sequentia usque ad ῥυθμοὺς u 5 omittens</note>
+            <note type="footnote">6 ἐμπεριλαμβάνουσα] ἐμπεριπεπλανημενα μέτρα καὶ ῥυθμοὺς
 ἀτάκτους ἐμπεριλαμβάνουσα Β ἀκολουθείαν Β 7 μήτε ἄλλην Ρ
 μήτε — μηδεμίαν om Β 9 μέτροις τε καὶ] μέτροις τε καὶ εὔ-
 μετρος ἐ μέτροις τε καὶ Β 10 οὐχὴ οὐχὶ Ρ 11 δὴ de comp
@@ -4263,10 +4134,9 @@ p 197: δὲ 13 κάλος ΒΡ 14 δρῶν Β τούτους Β 15 τῆς
 συνθέσεως] συντάξεως Β ἀποδεδοκὼς Β 17 τότε Μ 18 ποι-
 κίλλως Ρ 20 ὃς Sylburgius: σιὃς Ρ οἵος Β οἷος Μ τἐ Ρ
 </note>
-</div>
-
-<div type="textpart" subtype="chapter" n="51">
-<p> ταυτί μοι δοκεῖ μηνύματα τῆς συνθέσεως εἶναι τῆς
+         </div>
+         <div n="51" type="chapter">
+            <p> ταυτί μοι δοκεῖ μηνύματα τῆς συνθέσεως εἶναι τῆς
 Δημοσθένους ⟨ἀνυφαίρετα⟩ καὶ χαρακτηρικά, ἐξ ὧν
 ἄν τις αὐτὴν διαγνοίη πᾶσαν, ἐξετάζειν βουληθείς. εἰ
 δέ τις ὑποτεύξεται πρὸς ταῦτα θαυμάζειν λέγων, εἰ
@@ -4292,7 +4162,7 @@ p 197: δὲ 13 κάλος ΒΡ 14 δρῶν Β τούτους Β 15 τῆς
 <note type="footnote">1 μηνύματι ΒΡ 2 ἀνυφαίρετα ex c 34 addidi 3 διανοίη ΒΡ
 πᾶσαν suspectat Usener 5 οὕτος ΒΡ 6 γράφει ΒΡ v ἄνο Β τρέ-
 φην τρέφειν Ρ 7 συνθεμένᾶ (sic) Ρ signo super συν addito</note>
-<note type="footnote">8 οἰκεῖα — ποιητικῆς om Β 10 ἐναρμόττειν ΜΒ²Ρv
+               <note type="footnote">8 οἰκεῖα — ποιητικῆς om Β 10 ἐναρμόττειν ΜΒ²Ρv
 ἐναρμόνιον ἐναρμόττειν Β1 13 αἰ αἰώνια αἰώνια add αι
 super ιω Β 16 τῆς ἁρμονίας Sylburgius: τὴν ἁρμονίαν
 17 τούτους τοὺς] τούτους Ρ τοὺς v 18 νομειζομένους Ρ |
@@ -4301,8 +4171,7 @@ hibet Β 19 γλοιπτοῖς corr in γλυπτοῖς Ρ 21 πραγματι
 κῶν Β τόπον Reiskius: τρόπον πραγματικός in mg Β 22 λεκτι-
 κός in mg Β τὸν — 23 εἰς add Μ2 23 παρασκ πραγματικοῦ Β
 </note>
-
-<pb n="241"/>
+               <pb n="241"/>
 εἴς τε τὴν παρασκευήν, ἣν οἱ παλαιοὶ καλοῦσιν εὕρεσιν,
 καὶ εἰς τὴν χρῆσιν τῶν παρεσκευασμένων, ἣν προσαγορεύουσιν
 οἰκονομίαν, τοῦ λεκτικοῦ δὲ εἴς τε τὴν
@@ -4313,12 +4182,12 @@ hibet Β 19 γλοιπτοῖς corr in γλυπτοῖς Ρ 21 πραγματι
 ὧν οὐ καιρὸς ἐν τῷ παρόντι μηκύνειν. ταῦτα γὰρ
 ἐννοηθείη ἄν, εἴ τις μὴ κομιδῇ σκαιὸς ἢ δύσερις, καὶ
 οὐκ ἂν θαυμάσειεν, εἰ φροντὶς ἐγένετο Δημοσθένει <lb n="10"/>
-<del>ἔτι</del> μελῶν καὶ ῥυθμῶν καὶ σχημάτων, καὶ τῶν ἄλλων
+               <del>ἔτι</del> μελῶν καὶ ῥυθμῶν καὶ σχημάτων, καὶ τῶν ἄλλων
 πάντων, οἷς ἡδεῖα καὶ καλὴ γίνεται σύνθεσις. τοὐναντίον
 γὰρ μᾶλλον ὑπολάβοι τις<add cause="omitted">ἂν</add> ἀνὴρ μήτε ὀλιγόπονος μήτε
 ἁψίκορος μήτε ἀκρόσοφος ἄπορον εἶναι καὶ ἀμήχανον,
 ἢ μηδεμίαν ἐπιμέλειαν πεποιῆσθαι τὸν ῥήτορα τῆς <lb n="15"/>
-<milestone unit="1114"/> ἁρμονίας τῶν λόγων ἢ φαύλην τινά, βουλόμενον μνημεῖα
+               <milestone unit="1114"/> ἁρμονίας τῶν λόγων ἢ φαύλην τινά, βουλόμενον μνημεῖα
 τῆς ἑαυτοῦ διανοίας ἀθάνατα καταλιπεῖν. οὐ γὰρ
 δή τοι πλάσται μὲν καὶ γραφεῖς ἐν ὕλῃ φθαρτῇ χειρῶν
 εὐστοχίας ἐνδεικνύμενοι τοσούτους εἰσφέρονται
@@ -4332,21 +4201,19 @@ hibet Β 19 γλοιπτοῖς corr in γλυπτοῖς Ρ 21 πραγματι
 ήθει Β μὴ] εἴη ΜΒΡv 10 ἐγένετο de comp 209: ἐγίνετο ex
 ἐγένετο Μ ἔγετο corr in ἐγίνετο Ρ γίνετο Β ἐγίνετο v 11 ἔτι
 seclusit Reiskius 12 καὶ καλὴ] καλὴ Β 13 ἂν add Reiskius</note>
-<note type="footnote">14 ἁψίκορος Casaubonus: τερψίχορος ΜΡ τερψίχροος τερψί-
+               <note type="footnote">14 ἁψίκορος Casaubonus: τερψίχορος ΜΡ τερψίχροος τερψί-
 χορος Β 15 πεποιεῖσθαι Β 18 χειρῶν εὐστοχίας ἐνδεικνύμενοι
 (ἐνδεικνούμενα Β) τοσούτους εἰσφέρονται (είσφέροντες Β in textu
 et mg) πόνους Μ Β: χείροντες πόνους Ρ v 20 χνοῦν de comp 209
 Dion Halicarn v</note>
-
-<pb n="242"/>
+               <pb n="242"/>
 πάντας ὑπεράρας τοὺς καθʼ αὐτὸν φύσει τε καὶ πόνῳ,
 τῶν ἐλαχίστων τινὸς εἰς τὸ εὖ λέγειν, εἰ δὴ καὶ ταῦτα
 ἐλάχιστα, ὠλιγώρησε.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="52">
-<p>52 βουλοίμην δʼ ἂν καὶ ταῦτα ἐνθυμηθῆναι <del>διότι</del>
-<lb n="5"/> τοὺς ἔτι δυσπείστως ἔχοντας πρὸς τὰ εἰρημένα, ὅτι
+         </div>
+         <div n="52" type="chapter">
+            <p>52 βουλοίμην δʼ ἂν καὶ ταῦτα ἐνθυμηθῆναι <del>διότι</del>
+               <lb n="5"/> τοὺς ἔτι δυσπείστως ἔχοντας πρὸς τὰ εἰρημένα, ὅτι
 μειράκιον μὲν ἔτι ὄντα καὶ νεωστὶ τοῦ μαθήματος
 ἁπτόμενον αὐτὸν οὐκ ἄλογον ἦν καὶ ταῦτα καὶ τἆλλα
 πάντα διὰ πολλῆς ἐπιμελείας τε καὶ φροντίδος ἔχειν,
@@ -4376,8 +4243,7 @@ Dion Halicarn v</note>
 burgius: ταῦτα Μ ΒΡ τὰ ἐν ταύταις πάθη de comp 211 22 συ-
 στολὰς Ρ 24 τὰ π. Krüger ὄντα Krüger: ὀνόματα τὴν τὴν Β
 </note>
-
-<pb n="243"/>
+               <pb n="243"/>
 ἀπάντων ἐπιστήμην περιλάβωμεν, τότε ἀρχόμεθα γράφειν
 τε καὶ ἀναγινώσκειν, κατὰ συλλαβὴν μὲν καὶ
 βραδέως τὸ πρῶτον, ἅτε νεαρᾶς οὔσης ἔτι τῆς ἕξεως,
@@ -4397,13 +4263,13 @@ burgius: ταῦτα Μ ΒΡ τὰ ἐν ταύταις πάθη de comp 211 22 
 ἐπιλογίσηται τοὺς ἀκολουθοῦντας αὐτοῖς καρπούς, μᾶλλον
 δʼ ἐὰν ἕνα μόνον τὸν ἔπαινον, ὃν ἀποδίδωσιν ὁ
 χρόνος καὶ ζῶσι καὶ μετὰ τὴν τελευτήν, πᾶσαν ἡγήσεται
-<milestone unit="1117"/> τήν <del>τε</del> πραγματείαν ἐλάττω τῆς προσηκούσης. | </p><lb n="20"/>
-</div>
-
-<div type="textpart" subtype="chapter" n="53">
-<p>εἷς ἔτι μοι καταλείπεται λόγος ὁ περὶ τῆς ὑποκρίσεως, 53
+<milestone unit="1117"/> τήν <del>τε</del> πραγματείαν ἐλάττω τῆς προσηκούσης. | </p>
+            <lb n="20"/>
+         </div>
+         <div n="53" type="chapter">
+            <p>εἷς ἔτι μοι καταλείπεται λόγος ὁ περὶ τῆς ὑποκρίσεως, 53
 <note type="footnote">15 Demosthenes περὶ τῶν ἐν Χερρονήσῳ 48</note>
-<note type="footnote">1 περιλεύβωμεν Ρ περιλούβωμεν B παραλάβωμεν Reiskius
+               <note type="footnote">1 περιλεύβωμεν Ρ περιλούβωμεν B παραλάβωμεν Reiskius
 ὅταν δὲ τὴν τούτων ἐπιστήμην λάβωμεν de comp 211 2 ἀνα-
 γνώσκειν P 3 ἕξεως Μ, B in mg: λέξεως B in textu, Ρ 4 τὸν
 νοῦν] τόνον Reiskius τὸν νόμον Usener, an τὸ ἔννουν? τύπους
@@ -4411,12 +4277,11 @@ burgius: ταῦτα Μ ΒΡ τὰ ἐν ταύταις πάθη de comp 211 22 
 non quadrat ad περιτιθέντος 5 περιτιθέντος ΜΡ, Β in mg:
 προτιθέντα in textu τότε BP 7 βυβλίον B1 Sylburgius:
 βιβλίον 8 νοήσει Sylburgius: νοήσεις 11 ἔξιν Μ: λέξιν BP</note>
-<note type="footnote">12 αὐτῶν] ἀπάντων? νοήσειν BP 14 πόνους B 16 με-
+               <note type="footnote">12 αὐτῶν] ἀπάντων? νοήσειν BP 14 πόνους B 16 με-
 γάλων καὶ καλῶν B πόνωον B 17 ἐπιλογήσηται MBP
 18 δʼ ἐὰν] δὲ ἂν MBP δʼ ἂν v ἕπαινον] παιον add ν super ι B</note>
-<note type="footnote">20 τε seclusit Sylburgius</note>
-
-<pb n="244"/>
+               <note type="footnote">20 τε seclusit Sylburgius</note>
+               <pb n="244"/>
 ὡς κεκόσμηκε τὴν λέξιν ἀνήρ, ἀναγκαίας ἀρετῆς
 οὕσης περὶ λόγους καὶ μάλιστα τοὺς πολιτικούς. ἧς
 παρούσης μὲν καὶ ταῖς ἄλλαις ἀρεταῖς γίνεται χώρα
@@ -4446,12 +4311,11 @@ non quadrat ad περιτιθέντος 5 περιτιθέντος ΜΡ, Β in m
 doti 864e 5[οὐ]δεμιᾶς cum ras Μ τις om Β ἰσχὴν ΒΡ 7 τρα-
 γῳδίας] τραυδίας? Β 8 οὐχ om Ρ ὡς αὕτως Μ ὣς αὐτῶς Β ὡς
 οὕτως Ρ 9 καλοῦσιν Ρ ἐπαχθόμεθα] τε ἀχθόμεθα ΜΒΡ v (τ’)</note>
-<note type="footnote">10 καθυποκριναμένοις ΒΡ 12 τοῖς Μ, Β in mg: τῆς Ρ, Β in
+               <note type="footnote">10 καθυποκριναμένοις ΒΡ 12 τοῖς Μ, Β in mg: τῆς Ρ, Β in
 textu 13 λόγοις om Β ἔμψιχον Β 17 σχήματα 〈τὰ〉?
 18 ὡς mg Bodl: οἷς 20 Δσημέτριος Ρ τε om Ρv 22 φαίει Μ</note>
-<note type="footnote">24 μεστῆ Μ</note>
-
-<pb n="245"/>
+               <note type="footnote">24 μεστῆ Μ</note>
+               <pb n="245"/>
 διδάσκουσα, οἵας ὑποκρίσεως αὐτῇ δεῖ. ὥστε τοὺς
 ἀναγινώσκοντας τὸν ῥήτορα τοῦτον ἐπιμελῶς χρὴ
 παρατηρεῖν, ἵνα τοῦτον ἕκαστα λέγηται τὸν τρόπον, ᾗ
@@ -4459,10 +4323,9 @@ textu 13 λόγοις om Β ἔμψιχον Β 17 σχήματα 〈τὰ〉?
 ἔχοντας ψυχὴν εὐκίνητον, μεθʼ οἵας αὐτὴν ὑποκρίσεως <lb n="5"/>
 ἐκφέρεσθαι δεήσει. ὃ δὴ ἐγὼ σαφὲς ἐπὶ τῶν παραδειγμάτων
 <milestone unit="1119"/> ποιήσω.|</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="54">
-<p>φέρε γὰρ ἐπιχειρείτω τις προφέρεσθαι τούσδε τοὺς 54
+         </div>
+         <div n="54" type="chapter">
+            <p>φέρε γὰρ ἐπιχειρείτω τις προφέρεσθαι τούσδε τοὺς 54
 ἀριθμούς· Ὄλυνθον μὲν δὴ καὶ Μεθώνην καὶ Ἀπολλωνίαν
 καὶ δύο καὶ τριάκοντα πόλεις ἐπὶ Θρᾴκης ἐῶ, <lb n="10"/>
 ἃς ἁπάσας οὕτως ὠμῶς ἀνήρηκεν, ὥστε μηδ᾿ , εἰ πώποτε
@@ -4475,11 +4338,11 @@ textu 13 λόγοις om Β ἔμψιχον Β 17 σχήματα 〈τὰ〉?
 καὶ παρεντείνοντα τὸν ἦχον; εἶτʼ εἰ καὶ
 φησὶν οὐκ ἔχειν ἐρεῖν ταῦθʼ ὥσπερ δεινὰ καὶ πέρα
 δεινῶν, ὅμως ὀδύρεται πόλεων κατάλογον καὶ τελείαν <lb n="20"/>
-<milestone unit="1120"/> ἀναίρεσιν διέξεισιν, ὡς οὐδʼ ἴχνος ἔτι λοιπὸν | ἐχουσῶν
+               <milestone unit="1120"/> ἀναίρεσιν διέξεισιν, ὡς οὐδʼ ἴχνος ἔτι λοιπὸν | ἐχουσῶν
 τῆς παλαιᾶς οἰκήσεως. οὐ διʼ ὀργῆς τʼ οὖν ταῦτα
 <note type="footnote">9 Demosthenes Phil γ 26</note>
-<note type="footnote">1 δεῖ] δῆ Ρ 3 ᾗ Μ: ἢ, Β ἣ Ρ ᾧ v 5 αὐτὴν] τῆς ΜΒΡv</note>
-<note type="footnote">6 δὴ ΜΒΡ: δʼ v σαφὲς Sylburgius: σαφῶς |παραδειγμά-
+               <note type="footnote">1 δεῖ] δῆ Ρ 3 ᾗ Μ: ἢ, Β ἣ Ρ ᾧ v 5 αὐτὴν] τῆς ΜΒΡv</note>
+               <note type="footnote">6 δὴ ΜΒΡ: δʼ v σαφὲς Sylburgius: σαφῶς |παραδειγμά-
 των Κirüger: πραγμάτων 8 τοὺς om Ρv 9 ἀπωλλωνίαν
 in ἀπολλωνίαν corr Β 10 Θρᾴκις Ρ 11 ἀμήρηκεν Β | ὥστε
 μηδʼ εἰ v D: ὥστʼ εἰ μὴ δὲ ΜΒΡ πώποτε] πώτε Β 12 ἦν]
@@ -4490,8 +4353,7 @@ an ἐρεῖν pro εἰπεῖν illa aetate dicerent 20 τελείαν Usener
 ταχεῖαν 21 ἀναίρεσιν Sylburgius: αἵρεσιν ΜΒ αἵρεσιν Ρ
 22 οἰκήσεως — 246, 1 καὶ geminat Β τʼ οὖν] γοῦν ΜΒΡ v
 </note>
-
-<pb n="246"/>
+               <pb n="246"/>
 ὑπερβαλλούσης καὶ οἴκτου λέγεσθαι προσήκει; τίνες
 οὖν εἰσιν ὀργῆς καὶ ὀλοφυρμοῦ τόνοι καὶ ἐγκλίσεις
 καὶ σχηματισμοὶ προσώπου καὶ φοραὶ χειρῶν; ἃς οἱ
@@ -4516,7 +4378,7 @@ an ἐρεῖν pro εἰπεῖν illa aetate dicerent 20 τελείαν Usener
 ταῦτα ἔνεστι προφέρεσθαι ἡδονῇ ἐν παροδικοῖς μέλεσιν
 ὥσπερ ἱστορίαν; οὐκ αὐτὰ βοᾷ καὶ διδάσκει,
 <note type="footnote">6 ibid 26 17 ibid 27</note>
-<note type="footnote">5 διδασκαλεῖον Reiskius: διδασκάλιον ἀφέντος Μ1 7 Θε-
+               <note type="footnote">5 διδασκαλεῖον Reiskius: διδασκάλιον ἀφέντος Μ1 7 Θε-
 ταλία Ρ τὰς πόλεις καὶ ante τὰς πολιτείας inserit v cum uol-
 gata Demosth παρήρηται D 8 κατέστησεν D 10 Εόβοίᾳ]
 εὐοία ΒΡ τυραννοῦντα Ρ 11 πλησίον ex D add v
@@ -4526,14 +4388,13 @@ v cum D 21 χωρεῖ ante τοῦ D 22 ταῦτʼ ἄρʼ? παρῳδικο�
 libri: corr Usener μέλουσιν Β 23 οὐκ αὐτὰ βοᾷ Dobraeus:
 οὐ καταβοᾷ ΜΡ οὐ καταβη ἐν οὐ καταβοᾷ Β
 </note>
-
-<pb n="247"/>
+               <pb n="247"/>
 πῶς αὐτὰ δεῖ λέγεσθαι, μόνον οὐ φωνὴν ἀφιέντα·
 ᾿ἐνταῦθα ἀστεῖον ἦχον, ταῦτα ἐσπευσμένως εἰπέ, ταῦτʼ
 ἀναβεβλημένως, δευρὶ δʼ ἀπόλιπε τὸ συνεχές, ἐνταυθοῖ
 σύναψον τὰ ἑξῆς, τούτοις συνάλγησον, τούτων
 καταφρόνησον, ταῦτα ἐκδειματώθητι, ταῦτα διάσυρον, <lb n="5"/>
-<milestone unit="1122"/> ταῦτα αὔξησονʼ; ἐμοὶ μὲν δοκεῖ. οὐκοῦν ἔστιν |ἀλόγου
+               <milestone unit="1122"/> ταῦτα αὔξησονʼ; ἐμοὶ μὲν δοκεῖ. οὐκοῦν ἔστιν |ἀλόγου
 ζῴου ψυχὴν ἔχοντα, μᾶλλον δὲ λίθου φύσιν νωθράν,
 ἀναίσθητον, ἀκίνητον, ἀπαθῆ, τὴν Δημοσθένους προφέρεσθαι
 λέξιν; πολλοῦ γε καὶ δεῖν, ἐπεὶ τὸ κάλλιστον
@@ -4544,30 +4405,29 @@ libri: corr Usener μέλουσιν Β 23 οὐκ αὐτὰ βοᾷ Dobraeus:
 χρὴ τὸν λόγον, ἐκεῖνο ἔτι νὴ Δία τοῖς εἰρημένοις
 προσαποδόντας, ὅτι πάσας ἔχουσα τὰς ἀρετὰς ἡ Δημοσθένους <lb n="15"/>
 λέξις λείπεται εὐτραπελίας, ἣν οἱ πολλοὶ καλοῦσι
-χάριν. πλεῖστον γὰρ αὐτῆς μετέχει μέρος <gap reason="omitted"/></p>
-<p>Οὐ γάρ πως ἅμα πάντα θεοὶ δόσαν 
+χάριν. πλεῖστον γὰρ αὐτῆς μετέχει μέρος <gap reason="omitted"/>
+            </p>
+            <p>Οὐ γάρ πως ἅμα πάντα θεοὶ δόσαν 
 <lg>
-<l rend=" indent">ἀνθρώποιδιν,</l>
-</lg>
+                  <l rend=" indent">ἀνθρώποιδιν,</l>
+               </lg>
 ὡς καὶ τοὺς ἀστεισμοὺς ἅμα ἐν τοῖς Δημοσθένους <lb n="20"/>
 λόγοις. οὐδὲν γάρ, ὧν ἑτέροις τισὶν ἔδωκεν ἀγαθῶν
 ὁ δαίμων, ἐκείνῳ ἐφθόνησεν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="55">
-<p>ἃ δέ γε Αἰσχίνης περὶ αὐτοῦ γράφει 55
+         </div>
+         <div n="55" type="chapter">
+            <p>ἃ δέ γε Αἰσχίνης περὶ αὐτοῦ γράφει 55
 <note type="footnote">18 Homerus Γ 320</note>
-<note type="footnote">2 ἀστεῖον ἦχον] ἀστεῖον εἶχον Μ παρεντεῖνον τὸν ἦχον
+               <note type="footnote">2 ἀστεῖον ἦχον] ἀστεῖον εἶχον Μ παρεντεῖνον τὸν ἦχον
 Hammer, alii alia ἐσπεσμένως P τὸ συνεχὲς ἐν post εἰπὲ
 inserit Β 6 οὐκοῦν ἔστιν] οὐκ ἔνεστιν M ΒPv 9 δεῖν B:
 δεῖ MPv 10 διοίσει M, B in mg: διήσει P δειήσει B in textu</note>
-<note type="footnote">11 ἀκίνητον B πόλλʼ ἄν] πολλὰ MBPv 12 [τ]ις cum ras M
+               <note type="footnote">11 ἀκίνητον B πόλλʼ ἄν] πολλὰ MBPv 12 [τ]ις cum ras M
 ἔχοι Reiskius: ἔχει μέρος in mg corr B 16 εὐτραπελίας Syl-
 burgius: εὐτραπελείας σημείωσαι in mg B πολοὶ P 17 αὐ-
 τῆς] αὐτοῖς Β in libris nulla lacuna ἀνθρὡποισι Pv 20 ἅμα
 ἔν] ἀναίνονται Usener</note>
-
-<pb n="248"/>
+               <pb n="248"/>
 ὥσπερ ἔφην, τοτὲ μὲν ὡς πικροῖς καὶ περιέργοις ὀνόμασι
 χρωμένου, τοτὲ δʼ ὡς ἀηδέσι καὶ φορτικοῖς, <milestone unit="1123"/>
 ῥᾳδίας ἔχει τὰς ἀπολογίας. εἴ γέ τοι βουληθείη τις
@@ -4593,20 +4453,18 @@ burgius: εὐτραπελείας σημείωσαι in mg B πολοὶ P 17 �
 ἔχει δεικνύναι, κοινῶς δὲ διαβάλλει τὴν παθητικὴν
 διάλεκτον, οὖσαν ἐπιτηδειοτάτην εἰς πολιτικοὺς παραλαμβάνεσθαι
 <note type="footnote">1 cf Aeschines III 229 III 166</note>
-<note type="footnote">1 τότὲ Β περιέρχοις Β 2 τότε Β 9 εἴ γε Sylburgius:
+               <note type="footnote">1 τότὲ Β περιέρχοις Β 2 τότε Β 9 εἴ γε Sylburgius:
 εἴτε 13 μόνον P: μόνος MΒ|  ἀπαιτοῦμεν Reiskius: ἐπαινοῦμεν</note>
-<note type="footnote">17 ῞σται P 18 ἁκοὴ? ἡ add Κrüger πικραίνεσθαι — και-
+               <note type="footnote">17 ῞σται P 18 ἁκοὴ? ἡ add Κrüger πικραίνεσθαι — και-
 ρὸν τῇ om B 20 post χρώμενον B habet ἀ πέ· deinde
 uerba οἷς πέφυκεν — διαλέκτῳ χρώμενον repetuntur |ἀπεδείκνυ-
 μεν Β 23 δείκνυται δεικνύναι Β</note>
-
-<pb n="249"/>
+               <pb n="249"/>
 λόγους, λεληθότα ἐγκώμια μεταφέρων εἰς
 τὰς κατηγορίας, ὥσπερ ἔφην.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="56">
-<p>τὰ δʼ αὐτὰ καὶ περὶ τῆς περιέργου λέξεως ἔχοι 56
+         </div>
+         <div n="56" type="chapter">
+            <p>τὰ δʼ αὐτὰ καὶ περὶ τῆς περιέργου λέξεως ἔχοι 56
 τις ἂν εἰπεῖν πρὸς τὸν Αἰσχίνην, ἐπειδὴ καὶ ταύτην
 αὐτοῦ χλευάζει τὴν ἀρετήν. δεχέσθω δέ τις τὴν περιεργίαν <lb n="5"/>
 τῶν ὀνομάτων ὑπʼ αὐτοῦ??<add cause="omitted">λεγομένην</add> λέγεσθαι
@@ -4637,8 +4495,7 @@ uerba οἷς πέφυκεν — διαλέκτῳ χρώμενον repetuntur |
 ἔγραψε Sylburgius v 20 ἐπιτηδεύειν B 21 αὐτοφόρῳ M, P ut
 uidetur, αὐτοφέρω et in mg αὐτοφώρῳ B 25 τὸ γὰρ] τῶ γὰρ ΒP
 </note>
-
-<pb n="250"/>
+               <pb n="250"/>
 σεμνότερον καὶ ποιητικώτερον ἐκβιβάζειν τὴν ὀνομασίαν
 παρὰ τῆς πολιτικῆς δυνάμεως μάλιστα ἀπαιτοῦμεν.
 ταῦτα μὲν οὖν ἐγκώμια τῆς Δημοσθένους
@@ -4646,10 +4503,9 @@ uidetur, αὐτοφέρω et in mg αὐτοφώρῳ B 25 τὸ γὰρ] τῶ
 <lb n="5"/> ἀληθῶς μέν, εὐλόγως δʼ ἴσως, ἐχθρὸς ὤν καὶ οὐδὲν
 ἄλλο διαβάλλειν δυνάμενος, ἀπερισκέπτως, ὡς ἐγὼ
 κρίνω, συκοφαντεῖ.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="57">
-<p>57 τὸ δὲ φάσκειν φορτικοῖς καὶ ἀηδέσι τοῖς ὀνόμασιν
+         </div>
+         <div n="57" type="chapter">
+            <p>57 τὸ δὲ φάσκειν φορτικοῖς καὶ ἀηδέσι τοῖς ὀνόμασιν
 αὐτὸν κεχρῆσθαι πόθεν ἐπῆλθεν αὐτῷ <del>λέγειν</del>, ὑπὲρ
 <lb n="10"/> πάντα ἔγωγε τεθαύμακα. οὐδὲν γὰρ εὑρίσκω τούτων <milestone unit="1126"/>
 παρὰ Δημοσθένει κείμενον, ὧν εἰρηκέναι φησὶν αὐτὸν
@@ -4665,31 +4521,30 @@ uidetur, αὐτοφέρω et in mg αὐτοφώρῳ B 25 τὸ γὰρ] τῶ
 εἰ μέντοι τινὲς ἐν τοῖς ψευδεπιγράφοις εἰσὶ
 λόγοις ἀηδεῖς καὶ φορτικαὶ καὶ ἄγροικοι κατασκευαί,
 <note type="footnote">12 Aeschines III 72 13—16 Aeschines III 166</note>
-<note type="footnote">1 σεμνὸντερον P ἐκβάζειν Β 2 ἀπαιτοῦμεν Reiskius:
+               <note type="footnote">1 σεμνὸντερον P ἐκβάζειν Β 2 ἀπαιτοῦμεν Reiskius:
 ἀπαιτοῦντες MP ἀπαιτοῦντας Β ἀπαιτεῖται Sylburgius v
 5 ἐχρὸς P 6 ἄλλο Reiskius: μᾶλλον 9 λἐγειν seclusi
 12 οὐ δεῖ Aesch: οὐδὲ MΒP φιλίας ἀπορρῆξαι τὴν συμμαχίαν
 καὶ] φισὶν αὐτὸν αἰσχίνης· οἵον ex praecedentibus Β εἰρήνης
 pro φιλίας Aesch 14 τοῦ δήμου] τῶν πραγμάτων Aesch |φορ-
 μοραφούμεθα MΒP 15 βελόντας ΒP 16 οἷς αὐτὸς] οἳ αὐτοῖς Β</note>
-<note type="footnote">17 οὐ κίναδός τίς (τις P) MΒP: corr Reiskius ex Aescb θαύ-
+               <note type="footnote">17 οὐ κίναδός τίς (τις P) MΒP: corr Reiskius ex Aescb θαύ-
 μαστα P 18 [ἀη]δῆ cum ras M 21 μέντοι τινὲς ἐν τοῖς ψευδεπι-
 γράφοις] μέν τοί τινες ἔνιοι ψευδεπίγραφοι MΒP hinc τινὲς om v</note>
-<note type="footnote">22 λόγοις Β: λόγοι MPv ἀωδεῖς B| ἄγρικοι P ἀγρίοικοι] B
+               <note type="footnote">22 λόγοις Β: λόγοι MPv ἀωδεῖς B| ἄγρικοι P ἀγρίοικοι] B
 </note>
-
-<pb n="251"/>
-<milestone unit="1127"/> ὡς ἐν τοῖς κατʼ Ἀριστογείτονος θ΄ καὶ ἐν τῇ ἀπολογίᾳ
+               <pb n="251"/>
+               <milestone unit="1127"/> ὡς ἐν τοῖς κατʼ Ἀριστογείτονος θ΄ καὶ ἐν τῇ ἀπολογίᾳ
 τῶν δώρων καὶ ἐν τῷ <add cause="omitted">περὶ τοῦ</add> μὴ ἐκδοῦναι
 Ἅρπαλον καὶ ἐν τῷ κατὰ Νεαίρας καὶ ἐν τῷ περὶ τῶν
 πρὸς Ἀλέξανδρον συνθηκῶν ἐν ἄλλοις τε ὀυχνοῖς, οὓς
 ὁ Δημοσθένης οὐκ ἔγραψεν, ἐν ἑτέρᾳ δηλοῦταί μοι <lb n="5"/>
 πραγματείᾳ τὰ περὶ Δημοσθένη. καὶ περὶ μὲν ὧν
-Αἰσχίνης ἐπιτετίμηκεν αὐτῷ, ταῦτα ἱκανά.</p> <lb n="58"/>
-</div>
-
-<div type="textpart" subtype="chapter" n="58">
-<p>ἤδη δέ που κἀκεῖνό τινες οἳ μὲν ὡς χαρακτηρικὸν
+Αἰσχίνης ἐπιτετίμηκεν αὐτῷ, ταῦτα ἱκανά.</p>
+            <lb n="58"/>
+         </div>
+         <div n="58" type="chapter">
+            <p>ἤδη δέ που κἀκεῖνό τινες οἳ μὲν ὡς χαρακτηρικὸν
 οἳ δʼ ὡς ἁμάρτημα τοῦ ῥήτορος ἐσημειώσαντο, λέγω
 δὲ τὸ πολλοῖς ὀνόμασι τὸ αὐτὸ πρᾶγμα δηλοῦν ἐνίοτε <lb n="10"/>
 δή, οἷά ἐστι ταυτί· ῾Φιλίππῳ δʼ ἐξεσίαι καὶ πράττειν
@@ -4706,7 +4561,7 @@ pro φιλίας Aesch 14 τοῦ δήμου] τῶν πραγμάτων Aesch |
 αὐτοῦ κατηγοροῦσιν, ἀλλʼ ἐοίκασιν οἱ τοῦτο συκοφαντοῦντες
 <note type="footnote">1 respici uidetur in argumento orationibus praemisso § 7
 11 Demosthenes Philippicae γ 3 12 cf Midiana 78 13 Midiana 79</note>
-<note type="footnote">1 τοῖς Βlassius: τῇ β΄ ═ δυάδι explicauerat Seidler
+               <note type="footnote">1 τοῖς Βlassius: τῇ β΄ ═ δυάδι explicauerat Seidler
 2 δόρων P περὶ τοῦ addidi 5 δηλοῦνταί Pv 6 τῇ περὶ mg
 Βodl prave 8 τινες] τηνες M χαρακτηριστικὸν Pv 9 ἐση-
 μειρσαντο B 11 δή] δὲ MΒP om Sylburgius v οιἅ P
@@ -4716,8 +4571,7 @@ liberrime reddidit Dionysius 14 παιδὸς] πεδὸς B 18 καὶ
 om Pv τῇ add M2 καὶ τῇ ex praecedentibus repetitum se-
 clusi 21 ἐνίοτε] ἐν τοῖς MBPv ἐν τοῖς] αὐτοῖς MBPv
 </note>
-
-<pb n="252"/>
+               <pb n="252"/>
 τὴν βραχυλογίαν ἐκ παντὸς ἀπαιτεῖν, ἥν,
 ὅπερ εἶπον, παντὸς μᾶλλον καὶ εὐκαιρότερον παρέχεται,
 τῶν δὲ ἄλλων ἀρετῶν οὐδεμίαν, οὐκέτι συνορῶντες
@@ -4732,19 +4586,16 @@ clusi 21 ἐνίοτε] ἐν τοῖς MBPv ἐν τοῖς] αὐτοῖς MBP
 κέχρηται. ἔφερον δʼ ἄν σοι παραδείγματα τῶν εἰρημένων,
 εἰ μὴ κοπώδης ἔμελλον φανήσεσθαι πρὸς σὲ
 δῆτα λέγων. ταῦτα, ὦ κράτιστε Ἀμ|μαῖε, γράφει <milestone unit="1129"/>
-<lb n="15"/> εἴχομέν σοι περὶ τῆς Δημοσθένους λέξεως. ἐὰν δὲ
+               <lb n="15"/> εἴχομέν σοι περὶ τῆς Δημοσθένους λέξεως. ἐὰν δὲ
 σῴζῃ τὸ δαιμόνιον ἡμᾶς, καὶ περὶ τῆς πραγματικῆς
 αὐτοῦ δεινότητος, ἔτι μείζονος ἢ τοῦδε καὶ θαυμαστοτέρου
 θεωρήματος, ἐν τοῖς ἑξῆς γραφησομένοις ἀποδώσομέν
 σοι τὸν λόγον.</p>
-<note type="footnote">3 ἀριτῶν Β 5 ἐνεργείας V 11 ἐνίων] ἐνίοτε τῶν Usener</note>
-<note type="footnote">14 γράφην P post γράφειν B ὣς ε inserit, sed punctis
+            <note type="footnote">3 ἀριτῶν Β 5 ἐνεργείας V 11 ἐνίων] ἐνίοτε τῶν Usener</note>
+            <note type="footnote">14 γράφην P post γράφειν B ὣς ε inserit, sed punctis
 deleuit 16 πραγματικαῖς B 17 τοῦδε] τοῦ δὲ B | θαυμασθοτέ-
 ρου M1 corr eadem manus</note>
-</div>
-
-
-</div>
-</body>
-</text>
+         </div>
+      </body>
+   </text>
 </TEI>

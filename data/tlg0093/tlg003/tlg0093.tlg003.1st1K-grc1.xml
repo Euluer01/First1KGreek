@@ -1,99 +1,111 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">
-<fileDesc>
-<titleStmt>
- <title xml:lang="lat">De sensu et sensibilibus</title>
- <author>Theophrastus</author>
-<editor>Friedrich Wimmer</editor>
- <funder>Harvard Library Arcadia Fund</funder>
- <principal>Gregory Crane</principal>
- <respStmt>
-  <persName xml:id="DDD">Digital Divide Data</persName>
-  <resp>Corrected and encoded the text</resp>
- </respStmt>
- <respStmt>
-  <persName>Gregory Crane</persName>
-  <resp>Editor-in-Chief, Perseus Digital Library</resp>
- </respStmt>
- <respStmt>
-  <persName>Matt Munson</persName>
-  <resp>Project Manager (University of Leipzig)</resp>
- </respStmt>
- <respStmt>
-  <persName>Annette Gessner</persName>
-  <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
- </respStmt>
- <respStmt>
-  <persName>Thibault Clérice</persName>
-  <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
- </respStmt>
- <respStmt>
-  <persName>Bruce Robertson</persName>
-  <resp>Technical Advisor</resp>
- </respStmt>
-</titleStmt>
-<publicationStmt>
-<authority>Harvard College Library</authority>
-<idno type="filename">tlg0093.tlg003.1st1K-grc1.xml</idno>
-<availability>
- <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De sensu et sensibilibus</title>
+            <author>Theophrastus</author>
+            <editor>Friedrich Wimmer</editor>
+            <funder>Harvard Library Arcadia Fund</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg0093.tlg003.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
  License</licence>
-</availability>
-<date>2018</date>
-<publisher>Harvard College Library</publisher>
-<pubPlace>United States</pubPlace>
-</publicationStmt>
-<sourceDesc>
-<listBibl>
- <biblStruct>
- <monogr>
-  <title xml:lang="lat">Theophrasti Eresii opera, quae supersunt, omnia</title>
-  <editor>
-	<persName>
-	 <name>Friedrich Wimmer</name>
-	</persName>
-  </editor>
-  <author ref="urn:cts:greekLit:tlg0093">Theophrastus</author>
-  <imprint>
-	<publisher>Teubner</publisher>
-	<pubPlace>Lipsiae</pubPlace>
-	<date>1862</date>
-  </imprint>
-	  <biblScope unit="volume">3</biblScope>
- </monogr>
-  <ref target="https://archive.org/details/theophrastieresi03theouoft">Open Content Alliance</ref>
- </biblStruct>
-</listBibl>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
- <p>Text encoded in accordance with the latest EpiDoc standards</p>
- <refsDecl n="CTS">
-  <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-  <cRefPattern matchPattern="(.+)" n="fragment" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
- </refsDecl>
-</encodingDesc>
-<profileDesc>
-<langUsage>
-<language ident="grc">Greek</language>
-<language ident="lat">Latin</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change/>
-</revisionDesc>
-</teiHeader>
-<text>
-	<body>
-		<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0093.tlg003.1st1K-grc1">
-<div type="textpart" subtype="fragment" n="1">
-<pb n="1"/>
-<head>FRAGMENTUM I.</head>
-<div type="textpart" subtype="chapter" n="1">
-<head>ΠΕΡΙ ΑΙΣΘΗΣΕΩΣ ΚΑΙ ΑΙΣΘΗΤΩΝ</head>
-<p>CAP. I. Περὶ δʼ αἰσθήσεως αἱ μὲν πολλαὶ καὶθόλου <milestone unit="1"/>
+            </availability>
+            <date>2018</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg0093.tlg003.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="lat">Theophrasti Eresii opera, quae supersunt, omnia</title>
+                     <editor>
+                        <persName>
+                           <name>Friedrich Wimmer</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg0093">Theophrastus</author>
+                     <imprint>
+                        <publisher>Teubner</publisher>
+                        <pubPlace>Lipsiae</pubPlace>
+                        <date>1862</date>
+                     </imprint>
+                     <biblScope unit="volume">3</biblScope>
+                  </monogr>
+                  <ref target="https://archive.org/details/theophrastieresi03theouoft">Open Content Alliance</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+).(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)"
+                         n="fragment"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0093.tlg003.1st1K-grc1">
+         <div n="1" type="fragment">
+            <pb n="1"/>
+            <head>FRAGMENTUM I.</head>
+            <div n="1" type="chapter">
+               <head>ΠΕΡΙ ΑΙΣΘΗΣΕΩΣ ΚΑΙ ΑΙΣΘΗΤΩΝ</head>
+               <p>CAP. I. Περὶ δʼ αἰσθήσεως αἱ μὲν πολλαὶ καὶθόλου <milestone unit="1"/>
 δόξαι δύο εἰσίν· οἱ μὲν γὰρ τῷ ὁμοίῳ ποιοῦν
 ται οἱ δὲ τῷ ἐναντίῳ. Παρμενίδης μὲν καὶ Ἐμπεδοκλὴς
 καὶ Πλάτων τῷ ὁμοίῳ, οἱ δὲ περὶ Ἀναξαγόραν
@@ -134,10 +146,10 @@
 πᾶν τὸ ὄν ἔχειν τινὰ γνῶσιν. οὕτω μὲν οὖν αὐτὸς ἔοικεν 
 ἀποτέμνεσθαι τῇ φάσει τὰ συμβαίνοντα δυσχερῆ
 διὰ τὴν ὑπόληψιν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="2">
-<milestone unit="5"/> <p>CAP. II. Πλάτων δʼ ἐπὶ πλέον μὲν ἦπταιτῶν κατὰ
+            </div>
+            <div n="2" type="chapter">
+               <milestone unit="5"/>
+               <p>CAP. II. Πλάτων δʼ ἐπὶ πλέον μὲν ἦπταιτῶν κατὰ
 μέρος, οὐ μὴν εἴρηκέ γε περὶ ἀπασῶν ἀλλὰ μόνον περὶ
 ἀκοῆς καὶ ὄψεως. καὶ τὴν μὲν ὄψιν ποιεῖ πυρός· διὸ καὶ
 τὸ χρῶμα φλόγα τὴν ἀπὸ τῶν σωμάτων σύμμετρα μόρια
@@ -185,8 +197,7 @@
 ἄριστα δὲ κεκράσθαι καὶ βελτίστην εἶναι τὴν ἐξ ἀμφοῖν 
 ἴσων συγκπτμένην. καὶ περὶ μὲν ὄψεως σχεδὸν
 ταῦτα λέγει. τὴν δʼ ἀκοὴν ἀπὸ τῶν ἔξωθεν γίνεσθαι <milestone unit="9"/>
-
-<pb n="4"/>
+                  <pb n="4"/>
 ψόφων· ὅταν γὰρ ὑπὸ τῆς φωνῆς κινηθῇ ἠχεῖν ἐντός·
 ὥσπερ γὰρ εἶναι κώδωνα τῶν ἔσω ἤχων τὴν ἀκοὴν ἣν
 προσαγορεύει σάρκινον ὄζον· κινουμένην δὲ παίειν τὸν
@@ -223,10 +234,9 @@
 <pb n="5"/>
 χερσὶ τοῖς δʼ ἐν τῇ γλώττῃ τὴν κρᾶσιν οὖσαν· ὁμοίως
 δʼ ἔχειν καὶ κατὰ τὰς ἄλλας δυνάμεις.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="3">
-<p>CAP. III. Ἐμπεδοκλῆς μὲν οὖν οὕτως οἴεται καὶ <milestone unit="12"/>
+            </div>
+            <div n="3" type="chapter">
+               <p>CAP. III. Ἐμπεδοκλῆς μὲν οὖν οὕτως οἴεται καὶ <milestone unit="12"/>
 τὴν αἴσθησιν γίνεσθαι καὶ τὸ φρονεῖν. ἀπορήσειε δʼ
 ἄν τις ἐξ ὧν λέγει πρῶτον μὲν τί διοίσει τὰ ἔμψυχα
 αρὸς τὸ αἰσθάνεσθαι τῶν ἄλλων. ἐναρμόττει γὰρ καὶ
@@ -380,10 +390,9 @@
 τοῦ αἵματος, χωρὶς διανοίας ἐστίν· οὕτως γὰρ
 ἔχει καὶ ἐπὶ τῶν ἄλλων ζώων. Ἐμπεδοκλῆς μὲν οὖν
 ἔοικεν ἐν πολλοῖς διαμαρτάνειν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="4">
-<p>CAP. IV. Τῶν δὲ μὴ τῷ ὁμοίῳ ποιούντων τὴν <milestone unit="25"/>
+            </div>
+            <div n="4" type="chapter">
+               <p>CAP. IV. Τῶν δὲ μὴ τῷ ὁμοίῳ ποιούντων τὴν <milestone unit="25"/>
 αἴσθησιν Ἀλκμαίων μὲν πρῶτον ἀφορίζει τὴν πρὸς τὰ
 ζῶα διαφοράν. ἄνθρωπον γάρ φησι τῶν ἄλλων διαφέρειν 
 ὅτι μόνον ξυνίησι· τὰ δʼ ἄλλα αἰσθάνεται μὲν
@@ -408,10 +417,10 @@
 διʼ ὧν αἱ αἰσθήσεις. περὶ δὲ ἀρῆς οὐκ εἴρηκε
 οὔτε πῶς οὔτε τίνι γίνεται. Ἀλκμαίων μὲν οὖν ἐπὶ
 τοσοῦτον ἀφώρικεν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="5">
-<milestone unit="27"/> <p>CAP. V. Ἀναξαγόρας δὲ γίνεσθαι τοῖς ἐναντίοις·
+            </div>
+            <div n="5" type="chapter">
+               <milestone unit="27"/>
+               <p>CAP. V. Ἀναξαγόρας δὲ γίνεσθαι τοῖς ἐναντίοις·
 τὸ γὰρ ὅμοιον ἀπαθὲς ὑπὸ τοῦ ὁμοίου. καθʼ ἑκάστην
 δʼ ἰδία πειρᾶται διαριθμεῖν. ὁρᾷν μὲν γὰρ τῇ ἐμφάσει 
 τῆς κόρης, οὐκ ἐμφαίνεσθαι δὲ εἰς τὸ ὁμόχρων
@@ -456,10 +465,9 @@ Sch.) πλήθει καὶ τῇ τῶν αἰσθητῶν ὑπερβολῇ. 
 σκεδαννυμένην δὲ ἀσθενῆ. σχεδὸν δὲ ὡς εἰπεῖν οὐκ
 αἰσθάνεσθαι τὰ μὲν μεγάλα τῆς λεπτῆς ἀέρος τὰ δὲ
 μικρὰ τῆς πυκνῆς.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="6">
-<p>CAP. VI. Τὸ μὲν οὖν τοῖς ἐναντίοις ποιεῖν τὴν <milestone unit="31"/>
+            </div>
+            <div n="6" type="chapter">
+               <p>CAP. VI. Τὸ μὲν οὖν τοῖς ἐναντίοις ποιεῖν τὴν <milestone unit="31"/>
 σἴσθησιν ἔχει τινὰ λόγον ὥσπερ ἐλέχθη· δοκεῖ γὰρ ἡ
 ἀλλοίωσις οὐχ ὑπὸ τῶν ὁμοίων ἀλλʼ ὑπὸ τῶν ἐναντίων
 εἶναι. καίτοι καὶ τοῦτο δεῖται πίστεως εἰ ἀλλοίωσις
@@ -548,10 +556,10 @@ Sch.) πλήθει καὶ τῇ τῶν αἰσθητῶν ὑπερβολῇ. 
 ταῖς αἰσθήσεσι καὶ μάλιστα ἐπὶ τῇ ὄψει διότι τὸ μὲν
 αἰσθανόμενόν ἐστιν, οὐ δηλοῖ δὲ τὰς σωματικωτάτας
 αἰσθήσεις.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="7">
-<milestone unit="38"/> <p>CAP. VII. Κλείδημος δὲ μόνος ἰδίως εἴρηκε περὶ
+            </div>
+            <div n="7" type="chapter">
+               <milestone unit="38"/>
+               <p>CAP. VII. Κλείδημος δὲ μόνος ἰδίως εἴρηκε περὶ
 τῆς ὄψεως. αἰσθάνεσθαι γάρ φησι τοῖς ὀφθαλμοῖς μὲν
 ὅτι διαφανεῖς· ταῖς δʼ ἀκοαῖς ὅτι ἐμπίπτων ὁ ἀὴρ κινεῖ. 
 ταῖς δὲ ῥισὶν ἐφελκομένους τὸν ἀέρα, τοῦτον γὰρ
@@ -562,10 +570,10 @@ Sch.) πλήθει καὶ τῇ τῶν αἰσθητῶν ὑπερβολῇ. 
 ἀκοὰς αὐτὰς μὲν οὐδὲν κρίνειν εἰς δὲ τὸν νοῦν διαπέμπειν, 
 οὐχ ὥσπερ Ἀναξαγόρας ἀρχὴν ποιῶν πάντων
 τὸν νοῦν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="8">
-<milestone unit="39"/> <p>CAP. VIII. Διογένης δὲ, ὥσπερ τὸ ζῆν καὶ τὸ
+            </div>
+            <div n="8" type="chapter">
+               <milestone unit="39"/>
+               <p>CAP. VIII. Διογένης δὲ, ὥσπερ τὸ ζῆν καὶ τὸ
 φρονεῖν, τῷ ἀέρι καὶ τὰς αἰσθήσεις ἀνάπτει, διὸ καὶ
 δόξειεν ἂν τῷ ὁμοίῳ ποιεῖν· οὐδὲ γὰρ τὸ ποιεῖν εἶναι
 καὶ πάσχειν εἰ μὴ πάντα ἦν ἐξ ἑνός. τὴν μὲν ὄσφρησιν 
@@ -648,10 +656,9 @@ Sch.) πλήθει καὶ τῇ τῶν αἰσθητῶν ὑπερβολῇ. 
 <pb n="17"/>
 περὶ τὸ στῇθος, ὅταν δὲ εὕρωσι διασκίδνασθαι καὶ
 ἀνακουφίζεσθαι τῆς λύπης.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="9">
-<p>CAP. IX. Διογένης μὲν οὖν πάντα βουλόμενος <milestone unit="46"/>
+            </div>
+            <div n="9" type="chapter">
+               <p>CAP. IX. Διογένης μὲν οὖν πάντα βουλόμενος <milestone unit="46"/>
 ἀνάπτειν τῷ ἀέρι πολλῶν ἀπολείπεται πρὸς πίστιν.
 οὔτε γὰρ τὴν αἴσθησιν οὔτε τὴν φρόνησιν ἴδιον ποιεῖ
 τῶν ἐμψύχων. ἴσως γὰρ καὶ ἀέρα τοιοῦτον καὶ κρᾶσιν 
@@ -690,10 +697,10 @@ THEOPHR III.
 πάντα φρονεῖν. Διογένης μὲν οὖν ὥσπερ εἴπομεν
 ἅπαντα προθυμούμενος ἀνάγειν εἰς τὴν ἀρχὴν πολλὰ
 διαμαρτάνει τῶν εὐλόγων.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="10">
-<milestone unit="49"/> <p>CAP. Χ. Δημόκριτος δὲ περὶ μὲν αἰσθήσεως οὐ
+            </div>
+            <div n="10" type="chapter">
+               <milestone unit="49"/>
+               <p>CAP. Χ. Δημόκριτος δὲ περὶ μὲν αἰσθήσεως οὐ
 διορίζει πότερα τοῖς ἐναντίοις ἢ τοῖς ὁμοίοις ἐστίν. εἰ
 μὲν γὰρ ἀλλοιοῦσθαι ποιεῖ τὸ αἰσθάνεσθαι δόξειεν ἂν
 τοῖς διαφόροις· οὐ γὰρ ἀλλοιοῦται τὸ ὅμοιον ὑπὸ τοῦ
@@ -717,10 +724,10 @@ THEOPHR III.
 τε καὶ λιπαρᾶς, καὶ αἱ φλέβες κατὰ τούς ὀφθαλμιοὺς 
 εὐθεῖαι καὶ ἄνικμοι καὶ ὁμοσχημονοῖεν τοῖς ἀποτυπουμένοις. 
 τὰ γὰρ ὁμόφυλα μάλιστα ἕκαστον γνωρίζειν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="11">
-<milestone unit="51"/> <p>CAP. XI. Πρῶτον μὲν οὖν ἄτοπος ἡ ἀποτύπωσις
+            </div>
+            <div n="11" type="chapter">
+               <milestone unit="51"/>
+               <p>CAP. XI. Πρῶτον μὲν οὖν ἄτοπος ἡ ἀποτύπωσις
 
 <pb n="19"/>
 ἡ ἐν τῷ ἀέρι. δεῖ γὰρ ἔχειν πυκνότητα καὶ μὴ θρύπτεσθαι 
@@ -811,10 +818,9 @@ THEOPHR III.
 τὴν ψυχήν. αἱ μὲν οὖν περὶ αἰσθήσεως καὶ τοῦ, φρονεῖν 
 δόξαι σχεδὸν αὗται καὶ τοσαῦται τυγχάνουσιν
 οὖσαι παρὰ τοῖς πρότερον.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="12">
-<p>CAP. XII. Περὶ δὲ τῶν αἰσθητῶν, τίς ἡ φύσις <milestone unit="59"/>
+            </div>
+            <div n="12" type="chapter">
+               <p>CAP. XII. Περὶ δὲ τῶν αἰσθητῶν, τίς ἡ φύσις <milestone unit="59"/>
 καὶ ποῖον ἕκαστόν ἐστιν, οἱ μὲν ἄλλοι παραλείπουσιν.
 τῶν μὲν γὰρ ὑπὸ τὴν ἀφὴν περὶ βαρέος καὶ κούφου
 καὶ θερμοῦ καὶ ψυχροῦ λέγουσιν, οἷον ὅτι τὸ μὲν μανὸν 
@@ -845,10 +851,9 @@ THEOPHR III.
 <milestone unit="61"/> ὁ μὲν γὰρ πάθη ποιῶν τῆς αἰσθήσεως καθʼαὑτὰ
 διορίζει τὴν φύσιν· ὁ δὲ καθʼ αὑτὰ ποιῶν ταῖς οὐσίαις
 πρὸς τὰ πάθη τῆς αἰσθήσεως ἀποδίδωσι.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="13">
-<p>CAP. XIII. Βαρὺ μὲν οὖν καὶ κοῦφον τῷ μεγέθε
+            </div>
+            <div n="13" type="chapter">
+               <p>CAP. XIII. Βαρὺ μὲν οὖν καὶ κοῦφον τῷ μεγέθε
 διαιρεῖ Δημόκριτος. εἰ γὰρ διακριθῇ ἔνθεν ἕκαστον
 εἰ καὶ κατὰ σχῆμα διαφέροι, σταθμὸν ἂν ἐπὶ μεγέθεν
 τὴν φύσιν ἔχειν. οὐ μὴν ἀλλʼ ἔν γε τοῖς μικτοῖς κουφότερον 
@@ -1081,10 +1086,9 @@ THEOPHR III.
 μὲν ἀφαιρῇ τὰ δὲ προστιθῇ καὶ τῶν μὲν ἔλαττον μίσγῃ
 τῶν δὲ πλέον. οὐθὲν γὰρ ὅμοιον ἔσεσθαι θάτερον
 θατέρου.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="14">
-<p>CAP. XIV. Πρῶτον μὲν οὖν τὸ πλείους ἀποδοῦναι <milestone unit="79"/>
+            </div>
+            <div n="14" type="chapter">
+               <p>CAP. XIV. Πρῶτον μὲν οὖν τὸ πλείους ἀποδοῦναι <milestone unit="79"/>
 τὰς ἀρχὰς ἔχει τινὰ ἀπορίαν, οἱ γὰρ ἄλλοι τὸ λευκὸν
 καὶ τὸ μέλαν ὡς τούτων ἁπλῶν ὄντων μόνων. ἔπειτα
 τὸ μὴ πᾶσι τοῖς λευκοῖς μίαν ποιῆσαι τὴν μορφὴν ἀλλʼ
@@ -1146,10 +1150,9 @@ THEOPHR III.
 σύσιν ὂν ὑπὸ τίνος πάσχει οὐκέτι προσέθηκεν, ὅπερ
 ἴσως ἦν κυριώτατον. Δημόκριτος μὲν οὖν οὕτως ἔνια <milestone unit="83"/>
 παρσλείπει.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="15">
-<p>CAP. XV. Πλάτων δὲ θερμὸν μὲν εἶναί φησι τὸ διακρῖνον 
+            </div>
+            <div n="15" type="chapter">
+               <p>CAP. XV. Πλάτων δὲ θερμὸν μὲν εἶναί φησι τὸ διακρῖνον 
 διʼ ὀξύτητα τῶν γωνιῶν· ψυχρὸν δὲ ὅταν τῆς
 ὑγρότητος ἐκκρίνηται τὰ ἐλάττω καὶ μὴ δυνάμενα εἰσιέναι 
 τὰ μείζω κύκλῳ περιωθῇ· τῇ γὰρ μάχῃ τρόμον καὶ
@@ -1197,10 +1200,10 @@ THEOPHR III.
 οὐδʼ εἰ πειρωμένων μὴ γίγνοιτο οὐθὲν ἄτοπον, ἀλλὰ
 τὸν θεὸν δύνασθαι τοῦτο δρᾷν. ἃ μὲν οὖν εἴρηκε κοὶ
 πῶς ἀφώρικε σχεδὸν ταῦτά ἐστιν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="16">
-<milestone unit="87"/> <p>CAP. XVI. Ἄτοπον δὲ καὶ τούτου πρῶτον μὲν τὸ
+            </div>
+            <div n="16" type="chapter">
+               <milestone unit="87"/>
+               <p>CAP. XVI. Ἄτοπον δὲ καὶ τούτου πρῶτον μὲν τὸ
 μὴ πάντα ὁμοίως ἀποδοῦναι μηδὲ ὅσα τοῦ αὐτοὐ γένους.
 ὁρίσας γὰρ τὸ θερμὸν σχήματι τὸ ψυχρὸν οὐχ
 ὡσαύτως ἀπέδωκεν. ἐπεὶ δὲ μαλακὸν τὸ ὑπεῖκον, φα
@@ -1259,9 +1262,8 @@ THEOPHR III.
 ἐναντίον ἂν φανείη. τὴν δὲ τῶν ἄλλων μίξιν τὸ ἀφαιρεῖν
 ὅλως οὐκ ἐνδέχεται ἀποδοῦναι ταῖς αἰτίαις δεῖταί
 τινος λόγου καὶ πίστεως.</p>
-</div>
-</div>
-		</div>
-</body>
-</text>
+            </div>
+         </div>
+      </body>
+   </text>
 </TEI>

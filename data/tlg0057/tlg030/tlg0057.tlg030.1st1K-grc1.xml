@@ -1,100 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-        <fileDesc>
-            <titleStmt>
-                <title xml:lang="lat">De atra bile</title>
-                <author>Galen</author>
-                <editor>Karl Gottlob Kühn</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De atra bile</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0057.tlg030.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg030.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-                        <author>Galen</author>
-                        <editor>Karl Gottlob Kühn</editor>
-                        <imprint>
-                            <publisher>Knobloch</publisher>
-                            <pubPlace>Leipzig</pubPlace>
-                            <biblScope unit="vol">5</biblScope>
-                            <biblScope unit="pp" from="104" to="148">104-148</biblScope>
-                            <date>1823</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/chi.15862725?urlappend=%3Bseq=114%3Bownerid=13510798903412083-120">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg030.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Leipzig</pubPlace>
+                     <biblScope unit="vol">5</biblScope>
+                     <biblScope unit="pp" from="104" to="148">104-148</biblScope>
+                     <date>1823</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/chi.15862725?urlappend=%3Bseq=114%3Bownerid=13510798903412083-120">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-                <language ident="lat">Latin</language>
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg030.1st1K-grc1">
-                <pb n="104"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΜΕΛΑΙΝΗΣ ΧΟΛΗΣ.</head>
-                    <p>Περὶ μελαίνης χολῆς ἔνιοι μὲν ἐπὶ πλέον, <lb/>ἢ ὡς τοῖς ἔργοις τῆς ἰατρικῆς
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg030.1st1K-grc1">
+         <pb n="104"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΜΕΛΑΙΝΗΣ ΧΟΛΗΣ.</head>
+            <p>Περὶ μελαίνης χολῆς ἔνιοι μὲν ἐπὶ πλέον, <lb/>ἢ ὡς τοῖς ἔργοις τῆς ἰατρικῆς
                         τέχνης ἐστὶ χρήσιμον, ἐξέτειναν <lb/>τὸν λόγον, ἔνιοι δὲ καὶ τοῦ δικαίου
                         μέτρου καθεῖλόν <lb/>τι, καθάπερ ἔνιοι παντάπασιν οὐδὲν εἶπον, οἷς ἄν τις
                         <lb/>μᾶλλον μέμψαιτο τῶν προσθέντων ἄχρηστόν τι. ῥᾷον γὰρ <lb/>ἀφελεῖν τὸ
@@ -119,9 +126,9 @@
                         πειρασόμεθα διὰ παντὸς ἑρμηνεύειν <lb/>αὐτόν. οὐκ ἐνδέχεται δὲ πρᾶξαι καλῶς
                         τοῦτο χωρὶς τοῦ <lb/>διελθεῖν αὐτῶν τὰς ἰδέας. τοῦτ’ οὖν ἤδη πράξωμεν, ἀπὸ
                         <lb/>τοῦ γνωριμωτάτου πᾶσιν ἀνθρώποις ἀρξάμενοι χυμοῦ. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>Φαίνεται δ’ οὗτος, ἐάν τε ἀρτηρία τις <lb/>ἢ φλὲψ τρωθῇ, παραχρῆμα τῶν
+         </div>
+         <div n="2" type="chapter">
+            <p>Φαίνεται δ’ οὗτος, ἐάν τε ἀρτηρία τις <lb/>ἢ φλὲψ τρωθῇ, παραχρῆμα τῶν
                         περιεχόντων αὐτὸν ἀγγείων <lb/>ἐκχεόμενος, ἐρυθρότερος μὲν ἐκ τῶν φλεβῶν,
                         ξανθότερος <lb/>δὲ τοὐπίπαν ἐκ τῶν ἀρτηριῶν. ἀλλὰ πήγνυταί γε ἑκάτερος
                         <lb/>εὐθέως, οὐ μόνον ἐκπίπτων τοῦ σώματος, ἀλλὰ καὶ κατ’ <lb/>αὐτὸ
@@ -159,7 +166,7 @@
                         καὶ γλυκείας ποιότητος. <lb/>ἀλλὰ καὶ τοῦτον τὸν χυμὸν, ὁποῖος ἂν ᾖ, φλέγμα
                         καλοῦσιν, <lb/>εἰ μόνον εἴη λευκός. ἔχει δὲ τὸ κοινὸν ἁπάντων χυμῶν ﻿<pb n="109"/> γνώρισμα, τὸ μὴ πήγνυσθαι. πρόδηλον δ’ ὅτι διαφέρει <lb/>μηδὲν
                         ἁλμυρὸν ἢ ἁλυκὸν ὀνομάζειν ὅντινα χυμὸν, <lb/>
-                        <milestone unit="ed2page" n="167"/>ἄμφω γὰρ τὰ ὀνόματα ταὐτὸ σημαίνει
+               <milestone unit="ed2page" n="167"/>ἄμφω γὰρ τὰ ὀνόματα ταὐτὸ σημαίνει
                         πρᾶγμα. ἔστι <lb/>δὲ καὶ ἕτερός τις χυμὸς, ἀεὶ μὲν πικρὸς τοῖς ἐμοῦσιν αὐτὸν
                         <lb/>φαινόμενος, οὐκ ἀεὶ δὲ ξανθὸς, ἀλλ’ ὠχρὸς ἔστιν ὅτε· καὶ <lb/>παχύτερος
                         διαπαντὸς ὁ ξανθὸς τοῦ ὠχροῦ φαίνεται. ὥστ’ <lb/>ἐκ τούτων τεκμαίρονται
@@ -183,9 +190,9 @@
                         γνώσεως, <lb/>ἔτι τε τῷ συντόμῳ τῆς διδασκαλίας προτρεψαμένης <lb/>με
                         διελθεῖν ὑπὲρ αὐτῶν. ἐπὶ δὲ τὸν περὶ τῆς μελαίνης <lb/>χολῆς λόγον
                         ἐπανέλθωμεν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>Ὅτι μὲν οὖν οὐ πήγνυται, διώρισται μὲν <lb/>ἀπὸ τοῦ μέλανος αἵματος, οὐ μὴν
+         </div>
+         <div n="3" type="chapter">
+            <p>Ὅτι μὲν οὖν οὐ πήγνυται, διώρισται μὲν <lb/>ἀπὸ τοῦ μέλανος αἵματος, οὐ μὴν
                         ἤδη γε καὶ ἀπὸ τῶν μελάνων <lb/>ἰδίως ὀνομαζομένων. ἐμεῖταί τε γὰρ καὶ
                         διαχωρεῖται <lb/>πολλάκις τοιαῦτα, πάμπολυ διαφέροντα τῆς μελαίνης, <pb n="111"/> οὐ τῇ δυνάμει μόνον, ἀλλὰ καὶ ταῖς αἰσθηταῖς ποιότησιν.
                         <lb/>οὔτε γὰρ στρυφνότητος, οὔτε ὀξύτητος μετέχει σαφῶς ταῦτα, <lb/>τῆς
@@ -235,9 +242,9 @@
                         <lb/>τροφῆς τε καὶ τοῦ ποτοῦ, θαυμαστὸν οὐδὲν εἶναι δοκεῖ, <lb/>καὶ τῆς
                         ὑποστάθμης τοῦ αἵματος ἐπιτεχνήσασθαί τινα κένωσιν <lb/>αὐτὴν, ἥτις ὁποία
                         μέν ἐστι καὶ διὰ τίνων γίνεται <lb/>μορίων, αὖθις ἐπισκεψόμεθα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>Νυνὶ δὲ πρότερον, ἃ διὰ τῆς πείρας ἔγνωμεν, <lb/>ἀρχὴν ποιησάμενοι τῆς διὰ
+         </div>
+         <div n="4" type="chapter">
+            <p>Νυνὶ δὲ πρότερον, ἃ διὰ τῆς πείρας ἔγνωμεν, <lb/>ἀρχὴν ποιησάμενοι τῆς διὰ
                         τοῦ λόγου γενησομένης <lb/>σκέψεως, ὅσα πεπείσμεθα χρόνῳ πολλῷ βασανίσαντες,
                         ευρηκέναι <lb/>ταῦτα ἐροῦμεν. ὁρᾶται δὴ τὸ κατὰ τὰς φλεβοτομίας <lb/>αἷμα
                         παχύτερον καὶ μελάντερον ἐν ταῖς τῶν ξηρῶν <lb/>καὶ θερμῶν σωμάτων φύσεσι,
@@ -248,7 +255,7 @@
                         μέλας οἶνος παχύς τε καὶ αὐστηρός. οὕτω δὲ καὶ τῶν <lb/>νοσημάτων ὅσα κατὰ
                         θερμὴν καὶ ξηρὰν δυσκρασίαν γίνεται, <lb/>καθάπερ οἱ καῦσοι, παχὺ καὶ μέλαν
                         ἀποφαίνουσι τὸ <lb/>αἷμα. τοιοῦτον δ’ αὐτοῖς καὶ ὁ μακρὸς οὗτος λοιμὸς, <lb/>
-                        <milestone unit="ed2page" n="169"/>ὁ ἐπὶ τοῦ μακροῦ θέρους γενόμενος,
+               <milestone unit="ed2page" n="169"/>ὁ ἐπὶ τοῦ μακροῦ θέρους γενόμενος,
                         εἰργάζετο, καὶ <lb/>τῶν γε διασωθέντων οὐκ ὀλίγοις ἔκκρισις διὰ τῆς κάτω
                         <lb/>γαστρὸς ἐγίγνετο τῶν καλουμένων μελάνων ἐπὶ τῆς ἐννάτης <lb/>ἡμέρας
                         τοὐπίπαν, ἢ ἑβδόμης, ἢ ἑνδεκάτης. ὧν καὶ αὐτῶν <lb/>ἐφαίνοντο διαφοραὶ
@@ -309,10 +316,10 @@
                         τετάρτην ὁμοίως ὀλίγον, καθήρας τε μετὰ <lb/>ταύτας τὰς τρεῖς φαρμάκῳ μέλανα
                         χυμὸν ἐκκενοῦντι, καὶ <lb/>τὴν δίαιταν αὐτῷ εὔχυμον παρασκευάσας, ἐπὶ τὴν
                         θεραπείαν <lb/>τοῦ ἕλκους ἐτράπετο. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>
-                        <milestone unit="ed1page" n="360"/>Ὅτι μὲν οὖν ἐν ταῖς φλεψὶ καὶ ταῖς
+         </div>
+         <div n="5" type="chapter">
+            <p>
+               <milestone unit="ed1page" n="360"/>Ὅτι μὲν οὖν ἐν ταῖς φλεψὶ καὶ ταῖς
                         ἀρτηρίαις <lb/>οἱ χυμοὶ περιέχονται πάντες, ἐνδείκνυται ἡ μὲν <lb/>ποικιλία
                         τῆς χρόας τε καὶ συστάσεως αὐτοῦ, δηλοῖ δὲ καὶ <lb/>τὰ νῦν εἰρημένα, καὶ
                         πρὸς τούτοις ὅσα κατὰ τὸ περὶ φύσιος <pb n="120"/> ἀνθρώπου γέγραπται τῷ
@@ -339,7 +346,7 @@
                         μέρει νοσήματα διὰ τὸν μελαγχολικὸν χυμὸν <lb/>γινόμενα ὀλίγον ἔμπροσθεν
                         διελθὼν ἐδήλωσα, ὅτι καὶ διὰ <lb/>καιρῶν ἄρσιν ἢ αἱμοῤῥοΐδος ἐμελαγχόλησαν
                         ἕτεροι. <milestone unit="ed2page" n="171"/>
-                        <lb/>καὶ κατὰ τὰ μὴ φαινόμενα δὲ μόρια κατὰ τὸ βάθος τοῦ <lb/>σώματος
+               <lb/>καὶ κατὰ τὰ μὴ φαινόμενα δὲ μόρια κατὰ τὸ βάθος τοῦ <lb/>σώματος
                         εὔλογον ὅμοια πάθη γίνεσθαι τοῖς κατὰ τὸ δέρμα <lb/>συνισταμένοις. οὐ γὰρ
                         δήπου χολῆς μὲν ξανθῆς εἰς ἕν τι <lb/>μόριον κατασκηψάσης ἐρυσίπελας
                         γενήσεται, μελαίνης δὲ, <lb/>ἄνθραξ τε καὶ καρκῖνος, οὐ δήπου δὲ τὰ κατὰ
@@ -399,11 +406,10 @@
                         τρέφεται· αὕτη <lb/>δὲ γλίσχρος καὶ ὅλκιμος καὶ δυσέκκριτος. ὅτι δὲ καὶ
                         <lb/>ἀποπληξίας καὶ ληθάργου καὶ ἐπιληψίας ἑτέρων τε πολλῶν <lb/>ὁ τοιοῦτος
                         χυμὸς ἀθροιζόμενος αἴτιός ἐστιν, οὐκ ἔτ’ εἶπεν. </p>
-                </div>
-                <pb n="126"/>
-
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>Ἀλλ’ οὐ πρόκειταί μοι νῦν τὴν τῶν ἄλλων <lb/>χυμῶν δύναμιν ἐξηγήσασθαι, περὶ
+         </div>
+         <pb n="126"/>
+         <div n="6" type="chapter">
+            <p>Ἀλλ’ οὐ πρόκειταί μοι νῦν τὴν τῶν ἄλλων <lb/>χυμῶν δύναμιν ἐξηγήσασθαι, περὶ
                         μελαίνης χολῆς προθεμένῳ <lb/>γράφειν, ἣν Ἱπποκράτης φησὶν ἀναγκαίαν μὲν
                         <lb/>ἔχειν τὴν γένεσιν, ὅπως δὲ μὴ γένηται πλείων, ἐδίδαξεν, <lb/>ἐξ αὐτῶν
                         τῶν ἐναργῶς φαινομένων ἀρξάμενος. ἔν τε γὰρ <lb/>τοῖς ζώοις, ὅσα θερμότερα
@@ -471,10 +477,10 @@
                         τὸν βίον, ἀναγινωσκόντων <lb/>μὲν πρῶτον, ἃ γεγράφασιν οἱ τῆς αἱρέσεως
                         <lb/>αὐτῶν ἡγεμόνες, εἶτ’ ἀκουόντων, ἃ συναγορεύοντες αὐτοῖς <lb/>λέγουσιν,
                         εἶτα ἀναγκαζομένων λύειν αὐτῶν τὰ <lb/>σοφίσματα. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>
-                        <milestone unit="ed2page" n="174"/>Ἱπποκράτης μὲν οὖν φαίνεται καλός <lb/>τε
+         </div>
+         <div n="7" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="174"/>Ἱπποκράτης μὲν οὖν φαίνεται καλός <lb/>τε
                         καὶ ἀγαθός τις ἀνὴρ γεγονέναι, μὴ φιλοτιμίας ἢ φιλοδοξίας, <pb n="131"/>
                         ἀλλ’ ἀληθείας ἐραστής. εἰ δὲ καὶ δόξης ἢ τιμῆς <lb/>αὐτὸν ἐπιθυμῆσαι φαίη
                         τις, ἀλλὰ καὶ κτήσασθαί γε αὐτὴν <lb/>ῥᾷστον ἦν ἐκείνῳ τῷ ἀνδρὶ, οὐ
@@ -506,7 +512,7 @@
                         ὥστε οὐ πρὸ διακοσίων <pb n="133"/> ἐτῶν ἢ τριακοσίων, ἀλλὰ πολὺ πλεόνων,
                         ἐνδόξου τῆς καθάρσεως <lb/>ταύτης οὔσης, καὶ πάντων τῶν ἐν τῷ μεταξὺ
                         <lb/>χρόνῳ κεχρημένων τῷ φαρμάκῳ. βέλτιον οὖν ἦν παρὰ ὁμόσε <lb/>
-                        <milestone unit="ed1page" n="362"/>χωρήσαντας τὸν Ἐρασίστρατον ἐπιδεῖξαι
+               <milestone unit="ed1page" n="362"/>χωρήσαντας τὸν Ἐρασίστρατον ἐπιδεῖξαι
                         σφαλερῶς <lb/>φιλονεικοῦντα, μήτε μελαγχολίαν, μήτ’ ἄλλως μηδεμίαν μανίαν
                         <lb/>ἐπὶ μελαίνῃ χολῇ γίνεσθαι, καθάπερ γε μηδὲ καρκῖνον, <lb/>μηδὲ
                         ἐλέφαντα, μηδὲ τὰς θηριώδεις ἐν φρενίτισι <lb/>παρακοπὰς, μηδὲ κιρσοὺς, μηδ’
@@ -563,9 +569,9 @@
                         ἐκείνοις τοῖς γράμμασιν ἐξηλέγξαμεν, ἀλλὰ <lb/>τὰς ἡμετέρας ἀποδείξεις
                         ἀποδεικνύναι ψευδεῖς, <milestone unit="ed2page" n="176"/>ἢ, εἰ <lb/>μηδὲν
                         τούτων πράξειε, σιωπᾷν αἰδούμενον, ὥσπερ Ἐρασίστρατος <lb/>ἐποίησεν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="8">
-                    <p>Οὐδὲν μὲν οὐδαμόθι περὶ τῆς τῶν χυμῶν <lb/>γενέσεως καὶ δυνάμεως εἰπὼν, ἔνθα
+         </div>
+         <div n="8" type="chapter">
+            <p>Οὐδὲν μὲν οὐδαμόθι περὶ τῆς τῶν χυμῶν <lb/>γενέσεως καὶ δυνάμεως εἰπὼν, ἔνθα
                         δὲ ἐπεχείρησε θεραπείαν <lb/>γράψαι παραλύσεως, ἀναγκασθεὶς ἐμνημόνευσε τοῦ
                         <lb/>τρέφοντος τὰ νεῦρα χυμοῦ, καθάπερ γε κᾀν τῷ δευτέρῳ <lb/>περὶ πυρετῶν
                         ἐμαρτύρησε τοῖς παλαιοῖς, οὐ κένωσιν ἁπλῶς <lb/>ὀνομάσας τὴν διὰ τῶν
@@ -607,7 +613,7 @@
                         γὰρ ἐν τῇ γαστρὶ γεννώμενον, ὃ <lb/>συναναφέρεται τοῖς εἰς ἧπαρ
                         ἀναδιδομένοις ἐκ τῶν ἐσθιομένων <lb/>τε καὶ πινομένων χυμοῖς, ἅμα τούτοις
                         πεπτόμενον <lb/>
-                        <milestone unit="ed2page" n="177"/>αἷμα γίνεται· τὸ δ’ ὑπολειπόμενον ἐν τοῖς
+               <milestone unit="ed2page" n="177"/>αἷμα γίνεται· τὸ δ’ ὑπολειπόμενον ἐν τοῖς
                         κατὰ τὴν <lb/>γαστέρα χωρίοις ὑπὸ τῆς καταῤῥεούσης ἐξ ἥπατος εἰς αὐτὰ
                         <lb/>χολῆς ἀποῤῥυπτόμενον ἐκκρίνεται διὰ τῆς κάτω γαστρός. <lb/>Ἐρασίστρατος
                         δ’, ὅτι μὲν ἐγίνωσκε ταῦτα, δῆλός ἐστιν ἐξ <lb/>ὧν ἐν τοῖς τῆς θεραπευτικῆς
@@ -664,9 +670,9 @@
                         οὐ περὶ πάντων ἐνταῦθα <lb/>προειλόμην εἰπεῖν, ἀλλὰ περὶ τῆς μελαίνης χολῆς
                         μόνης. <lb/>ὅσα μὲν τῇ κοινωνίᾳ τοῦ λόγου καὶ περὶ τῶν ἄλλων ἔγραψα,
                         <lb/>δι’ ἑτέρων ἐξείργασμαι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="9">
-                    <p>Περὶ δὲ μελαίνης χολῆς τὰ διὰ μακρᾶς <lb/>πείρας βεβαίως ἐγνωσμένα μοι
+         </div>
+         <div n="9" type="chapter">
+            <p>Περὶ δὲ μελαίνης χολῆς τὰ διὰ μακρᾶς <lb/>πείρας βεβαίως ἐγνωσμένα μοι
                         προσθήσω νῦν, χρήσιμα <lb/>ἐσόμενα ἐκείνοις, ὅσοι τῆς ἰατρικῆς τέχνης οὐ
                         τοὺς σοφιστικοὺς <lb/>λόγους, ἀλλὰ τὰ ἔργα σπουδάζουσι. πάντα γὰρ <lb/>ὅσα
                         διὰ μελαγχολικὸν χυμὸν γίνεται πάθη, κατ’ ἀρχὰς εὐθέως <lb/>γενναίως
@@ -700,7 +706,7 @@
                         σώματι χυμοὺς, <milestone unit="ed1page" n="364"/>ὡς ἂν ἕκαστον <lb/>τῶν
                         ἑλκόντων τὴν φύσιν ἔχῃ, τῷ· καθῇραι τὸ φλεβοτομῆσαι <lb/>τὴν ἴσην ἕξει
                         δύναμιν. ὥσπερ οὖν ἡμεῖς, ὑδρα<milestone unit="ed2page" n="179"/>
-                        <lb/>γωγὸν δόντες φάρμακον οἷς ἐστιν ὕδερος ἀσκίτης, ἐκκενοῦμέν <pb n="147"/> τε τὸ πλεονάζον ὑγρὸν, ὠφελοῦμέν τε τὸν κάμνοντα, <lb/>οὕτω καὶ αὐτοὶ
+               <lb/>γωγὸν δόντες φάρμακον οἷς ἐστιν ὕδερος ἀσκίτης, ἐκκενοῦμέν <pb n="147"/> τε τὸ πλεονάζον ὑγρὸν, ὠφελοῦμέν τε τὸν κάμνοντα, <lb/>οὕτω καὶ αὐτοὶ
                         φλεβοτομίαν παραλαμβάνοντες ὁρῶσιν, εἰς <lb/>ὅ τι τελευτᾷ τὸ βοήθημα.
                         γελοῖοι δ’ εἰσὶ κᾀκ τοῦ μηδὲν <lb/>εἶναι κατὰ τὸ σῶμα περιεκτικὸν μελαίνης
                         χολῆς ὄργανον, <lb/>οἷον ἡ ἐπὶ τῷ ἥπατι κύστις ἐστὶ τῆς ξανθῆς χολῆς,
@@ -718,8 +724,7 @@
                         μεμνῆσθαι περὶ αὐτῶν ἐν βραχέσι κεφαλαίοις <lb/>ἕνεκα τῶν λόγοις ψευδέσιν
                         ἑαυτούς τε καὶ τοὺς <lb/>μεμαθηκότας ἀκριβῶς τὴν Ἱπποκράτους γνώμην
                         <lb/>σοφιζομένων. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

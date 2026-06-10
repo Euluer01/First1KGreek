@@ -1,102 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-        <fileDesc>
-            <titleStmt>
-                <title xml:lang="lat">Quod animi mores corporis temperamenta sequantur</title>
-                <author>Galen</author>
-                <editor>Karl Gottlob Kühn</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">Quod animi mores corporis temperamenta sequantur</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0057.tlg027.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg027.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="lat">>Claudii Galeni Opera Omnia</title>
-                        <author>Galen</author>
-                        <editor>Karl Gottlob Kühn</editor>
-                        <imprint>
-                            <publisher>Knobloch</publisher>
-                            <pubPlace>Leipzig</pubPlace>
-                            <biblScope unit="vol">4</biblScope>
-                            <biblScope unit="pp" from="767" to="822">767-822</biblScope>
-                            <date>1822</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/chi.11102513?urlappend=%3Bseq=776">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg027.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">&gt;Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Leipzig</pubPlace>
+                     <biblScope unit="vol">4</biblScope>
+                     <biblScope unit="pp" from="767" to="822">767-822</biblScope>
+                     <date>1822</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/chi.11102513?urlappend=%3Bseq=776">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-                <language ident="eng">English</language>
-                <language ident="lat">Latin</language>
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg027.1st1K-grc1">
-                <pb n="767"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΓΑΛΗΝΟΥ ΒΙΒΛΙΟΝ, ΟΤΙ ΤΑ ΤΗΣ <lb/>ΨΥΧΗΣ ΗΘΗ ΤΑΙΣ ΤΟΥ ΣΩΜΑΤΟΣ <lb/>ΚΡΑΣΕΣΙΝ
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="eng">English</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg027.1st1K-grc1">
+         <pb n="767"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΒΙΒΛΙΟΝ, ΟΤΙ ΤΑ ΤΗΣ <lb/>ΨΥΧΗΣ ΗΘΗ ΤΑΙΣ ΤΟΥ ΣΩΜΑΤΟΣ <lb/>ΚΡΑΣΕΣΙΝ
                         ΕΠΕΤΑΙ.</head>
-                    <p>Ταῖς τοῦ σώματος κράσεσιν ἕπεσθαι τὰς <lb/>δυνάμεις τῆς ψυχῆς, οὐχ ἅπαξ ἢ
+            <p>Ταῖς τοῦ σώματος κράσεσιν ἕπεσθαι τὰς <lb/>δυνάμεις τῆς ψυχῆς, οὐχ ἅπαξ ἢ
                         δὶς, ἀλλὰ πάνυ πολλάκις, <lb/>οὐδ’ ἐπ’ ἐμαυτοῦ μόνου βασανίσας τε καὶ
                         πολυειδῶς <lb/>ἐρευνήσας, ἀλλ’ ἀπ’ ἀρχῆς μὲν ἅμα τοῖς διδασκάλοις,
                         <lb/>ὕστερον δὲ σὺν τοῖς ἀρίστοις φιλοσόφοις, ἀληθῆ τε διὰ <lb/>παντὸς εὗρον
@@ -106,9 +113,9 @@
                         ἐργαζόμενοι <lb/>τῷ σώματι, κᾀκ ταύτης εἰς ἀρετήν τι τῆς ψυχῆς
                         <lb/>συντελέσομεν, ὡς οἱ περὶ Πυθαγόραν καὶ Πλάτωνα καί <lb/>τινες ἄλλοι τῶν
                         παλαιῶν ἱστοροῦνται πράξαντες. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>Ἀρχὴ δὲ παντὸς τοῦ μέλλοντος εἰρῆσθαι <lb/>λόγου γνῶσις τῆς διαφορᾶς τῶν ἐν
+         </div>
+         <div n="2" type="chapter">
+            <p>Ἀρχὴ δὲ παντὸς τοῦ μέλλοντος εἰρῆσθαι <lb/>λόγου γνῶσις τῆς διαφορᾶς τῶν ἐν
                         τοῖς μικροῖς παιδίοις <lb/>φαινομένων ἔργων τε καὶ παθῶν τῆς ψυχῆς, ἐξ ὧν αἱ
                         <lb/>δυνάμεις αὐτῆς κατάδηλοι γίνονται. τινὰ μὲν γὰρ αὐτῶν <lb/>φαίνονται
                         δειλότατα, τινὰ δὲ καταπληκτικώτατα· καί τινα <lb/>μὲν ἄπληστα καὶ λίχνα,
@@ -170,9 +177,9 @@
                         ἀφροδισίων, <lb/>ἢ πομάτων, ἢ βρωμάτων, ὥσπερ οὐδὲ εἰκὸς, ἢ <lb/>ἀρχῆς, ἢ
                         δόξης, ἢ τιμῆς. κατὰ δὲ τὸν αὐτὸν λόγον οὐδὲ <lb/>τῆς θυμοειδοῦς ὀρέξεις
                         εἶχεν ἥ τε λογιστικὴ καὶ ἡ <lb/>ἐπιθυμητική. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>Ὅτι μὲν οὖν τρία τῆς ψυχῆς ἐστιν εἴδη, καὶ <lb/>ὁ Πλάτων βούλεται ταῦτα, δι’
+         </div>
+         <div n="3" type="chapter">
+            <p>Ὅτι μὲν οὖν τρία τῆς ψυχῆς ἐστιν εἴδη, καὶ <lb/>ὁ Πλάτων βούλεται ταῦτα, δι’
                         ἑτέρων ἐπιδέδεικται, καθάπερ <lb/>γε καὶ ὅτι τὸ μὲν ἐν ἥπατι, τὸ δὲ ἐν
                         καρδίᾳ, τὸ δὲ <lb/>ἐν ἐγκεφάλῳ καθίδρυται. ὅτι δὲ ἐκ τούτων τῶν εἰδῶν τε <pb n="773"/> καὶ μερῶν τῆς ὅλης ψυχῆς τὸ λογιστικὸν ἀθάνατόν ἐστι,
                         <lb/>Πλάτων μὲν φαίνεται πεπεισμένος· ἐγὼ δὲ, οὔθ’ ὡς ἔστιν, <lb/>οὔθ’ ὡς
@@ -240,28 +247,28 @@
                         ὕδατι γίνονται γλυκεῖς, <lb/>οὕτω καὶ αὐτὸν ὑπ’ οἴνου διατίθεσθαι. φασὶ δὲ
                         καὶ <lb/>τὴν οἰνοπίαν ῥίζαν ἔτι καὶ μᾶλλον ἐργάζεσθαι τοῦτο, καὶ <lb/>ταύτην
                         εἶναι τὸ τῆς Αἰγυπτίας ξένης φάρμακον, ὅ φησιν ὁ ποιητής·</p>
-                    <lg>
-                        <l>Αὐτίκ’ ἄρ’ εἰς οἶνον βάλε φάρμακον, ἔνθεν ἔπινον,</l>
-                        <l>Νηπενθές τ’ ἄχολόν τε κακῶν ἐπίληθον ἁπάντων.</l>
-                    </lg>
-                    <p>ἡ μὲν οὖν οἰνοπία ῥίζα χαιρέτω· δεόμεθα γὰρ αὐτῆς οὐδὲν <pb n="778"/> εἰς τὸν
+            <lg>
+               <l>Αὐτίκ’ ἄρ’ εἰς οἶνον βάλε φάρμακον, ἔνθεν ἔπινον,</l>
+               <l>Νηπενθές τ’ ἄχολόν τε κακῶν ἐπίληθον ἁπάντων.</l>
+            </lg>
+            <p>ἡ μὲν οὖν οἰνοπία ῥίζα χαιρέτω· δεόμεθα γὰρ αὐτῆς οὐδὲν <pb n="778"/> εἰς τὸν
                         λόγον, ὁρῶντες ὁσημέραι τὸν οἶνον ἐργαζόμενον, <lb/>ὅσα περ οἱ ποιηταὶ
                         λέγουσιν·</p>
-                    <lg>
-                        <l>Οἶνός σε τρώει μελιηδὴς, ὅστε καὶ ἄλλους</l>
-                        <l>Βλάπτει, ὃς ἄν μιν χανδὸν ἕλοι μηδ’ αἴσιμα πίνοι.</l>
-                        <l>Οἶνος καὶ Κένταυρον ἀγακλυτὸν Εὐρυτίωνα</l>
-                        <l>Ἄασ’ ἐνὶ μεγάρῳ μεγαθύμου Πειριθόοιο</l>
-                        <l>Ἐς Λαπίθας ἐλθόνθ’· ὁ δ’ ἐπεὶ φρένας ἄασεν οἴνῳ,</l>
-                        <l>Μαινόμενος κάκ’ ἔρεξε δόμον κατὰ Πειριθόοιο.</l>
-                    </lg>
-                    <p>καὶ ἀλλαχόθι περὶ αὐτοῦ φησι Νηλέως·</p>
-                    <l>Ὅστ’ ἐφέηκε πολύφρονά περ μάλ’ ἀεῖσαι</l>
-                    <p>
-                        <milestone unit="ed2page" n="448"/>Καί θ’ ἁπαλὸν γελάσαι, καί τ’ ὀρχήσασθαι
+            <lg>
+               <l>Οἶνός σε τρώει μελιηδὴς, ὅστε καὶ ἄλλους</l>
+               <l>Βλάπτει, ὃς ἄν μιν χανδὸν ἕλοι μηδ’ αἴσιμα πίνοι.</l>
+               <l>Οἶνος καὶ Κένταυρον ἀγακλυτὸν Εὐρυτίωνα</l>
+               <l>Ἄασ’ ἐνὶ μεγάρῳ μεγαθύμου Πειριθόοιο</l>
+               <l>Ἐς Λαπίθας ἐλθόνθ’· ὁ δ’ ἐπεὶ φρένας ἄασεν οἴνῳ,</l>
+               <l>Μαινόμενος κάκ’ ἔρεξε δόμον κατὰ Πειριθόοιο.</l>
+            </lg>
+            <p>καὶ ἀλλαχόθι περὶ αὐτοῦ φησι Νηλέως·</p>
+            <l>Ὅστ’ ἐφέηκε πολύφρονά περ μάλ’ ἀεῖσαι</l>
+            <p>
+               <milestone unit="ed2page" n="448"/>Καί θ’ ἁπαλὸν γελάσαι, καί τ’ ὀρχήσασθαι
                         ἀνῆκε,</p>
-                    <l>Καί τι ἔπος προέηκεν, ὅπερ τ’ ἄῤῥητον ἄμεινον.</l>
-                    <p>οὕτω δὲ καὶ Θεόγνις ἔλεγεν· Οἶνος πινόμενος πουλὺς κακόν· <lb/>ἢν δέ τις
+            <l>Καί τι ἔπος προέηκεν, ὅπερ τ’ ἄῤῥητον ἄμεινον.</l>
+            <p>οὕτω δὲ καὶ Θεόγνις ἔλεγεν· Οἶνος πινόμενος πουλὺς κακόν· <lb/>ἢν δέ τις
                         αὐτὸν Πίνῃ ἐπισταμένως, οὐ κακὸν, ἀλλ’ <lb/>ἀγαθόν. ὄντως γὰρ, εἰ συμμέτρως
                         ποθείη, καὶ πέψει, καὶ <lb/>ἀναδώσει, καὶ αἱματώσει, καὶ θρέψει. μεγάλα δὲ
                         συντελεῖ <lb/>μετ’ αὐτοῦ καὶ τὴν ψυχὴν ἡμῶν ἡμερωτέραν <pb n="779"/> τε ἅμα
@@ -279,11 +286,10 @@
                         μνήμην καὶ σύνεσιν ἀφαιρεῖσθαι, καὶ λυπηρότερα, καὶ <lb/>ἀτολμότερα, καὶ
                         ἀθυμότερα ἐργάζεσθαι, καθάπερ ἐν ταῖς <lb/>μελαγχολίαις φαίνεται. καὶ τούτων
                         ἔχει τἀναντία ὁ πίνων <lb/>τὸν οἶνον συμμέτρως. </p>
-                </div>
-                <pb n="780"/>
-
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>Ἆρ’ οὖν ὑπὸ μὲν τῆς κατὰ τὸ θερμόν τε <lb/>καὶ ψυχρὸν κράσεως ὑπαλλάττεσθαι
+         </div>
+         <pb n="780"/>
+         <div n="4" type="chapter">
+            <p>Ἆρ’ οὖν ὑπὸ μὲν τῆς κατὰ τὸ θερμόν τε <lb/>καὶ ψυχρὸν κράσεως ὑπαλλάττεσθαι
                         πεφύκασιν αἱ δυνάμεις <lb/>τῆς ψυχῆς, ὑπὸ δὲ τῆς κατὰ τὸ ξηρόν τε καὶ ὑγρὸν
                         <lb/>οὐδὲν πάσχειν; καὶ μὴν τούτου πολλὰ τεκμήρια κατά τε <lb/>φάρμακα καὶ
                         τὴν ὁσημέραι δίαιταν ἔχομεν, ἃ τάχ’ ἂν <lb/>ἐφεξῆς εἴποιμι σύμπαντα πρότερον
@@ -354,11 +360,10 @@
                         μωρίᾳ <lb/>ψέγεσθαι. παραπλησίως δὲ καὶ εἰς τὰ τοῦ θυμοειδοῦς <lb/>ἔργα καὶ
                         πάθη μήτε τοὺς εὐτόλμους ἐπαινεῖσθαι χρῆν, <lb/>μήτε τοὺς ἀτόλμους ψέγεσθαι.
                         περὶ μὲν οὖν τούτων ὀλίγον <lb/>πρόσθεν ἐπισκεψόμεθα. </p>
-                </div>
-                <pb n="785"/>
-
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>Νῦν δ’ οἷς ἐξ ἀρχῆς προὐθέμην, προσθήσω <lb/>τὰ λείποντα, τοσοῦτον ἔτι πάλιν
+         </div>
+         <pb n="785"/>
+         <div n="5" type="chapter">
+            <p>Νῦν δ’ οἷς ἐξ ἀρχῆς προὐθέμην, προσθήσω <lb/>τὰ λείποντα, τοσοῦτον ἔτι πάλιν
                         ἐπειπὼν, ὡς οὐχ οἷόν <lb/>τ’ ἐστὶ πάντα δεικνύειν ἐν ἅπασι, καὶ ὡς δυοῖν
                         οὐσῶν αἱρέσεων <lb/>ἐν φιλοσοφίᾳ κατὰ τὴν πρώτην τομὴν, (ἔνιοι μὲν <lb/>γὰρ
                         ἡνῶσθαι τὴν κατὰ τὸν κόσμον οὐσίαν ἅπασαν, ἔνιοι <lb/>δὲ διῃρῆσθαί φασι
@@ -417,9 +422,9 @@
                         ὀπτικῆς δυνάμεως πεπονθυίας. <pb n="789"/> τὸ δ’ ἀνθ’ ἑνὸς τρία βλέπειν
                         αὐτῆς τῆς ὀπτικῆς δυνάμεώς <lb/>ἐστι μέγιστον πάθος, ὃ τῷ φρενιτίζειν
                         ἔοικεν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>Ὅτι δὲ καὶ Πλάτων αὐτὸς οἶδε βλαπτομένην <lb/>τὴν ψυχὴν ἐπὶ τῇ κακοχυμίᾳ τοῦ
+         </div>
+         <div n="6" type="chapter">
+            <p>Ὅτι δὲ καὶ Πλάτων αὐτὸς οἶδε βλαπτομένην <lb/>τὴν ψυχὴν ἐπὶ τῇ κακοχυμίᾳ τοῦ
                         σώματος, ἡ ἑξῆς <lb/>ῥῆσις ἤδη δηλώσει. ὅπου γὰρ ἂν ἡ τῶν ὀξέων, καὶ τῶν
                         <lb/>ἁλυκῶν φλεγμάτων, ἢ καὶ ὅσοι πικροὶ καὶ χολώδεις χυμοὶ <lb/>κατὰ τὸ
                         σῶμα πλανηθέντες, ἔξω μὲν μὴ λάβωσιν ἀναπνοὴν, <lb/>ἐντὸς δὲ ἑλκόμενοι τὴν
@@ -450,10 +455,10 @@
                         προαποδεδειγμένα ὑπ’ ἐμοῦ, ἔκ τε τούτων αὐτοῦ <lb/>τῶν ῥήσεών ἐστι δῆλον, ἐξ
                         ἄλλων τε πολλῶν, ὧν τινὰς μὲν <lb/>ἐν τῷ Τιμαίῳ, καθάπερ καὶ τάσδε τὰς νῦν
                         εἰρημένας, τινὰς <lb/>δὲ ἐν ἄλλοις βιβλίοις αὐτοῦ ἔστιν εὑρεῖν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>
-                        <milestone unit="ed2page" n="452"/> Ὅτι δὲ καὶ Ἀριστοτέλης τῇ κράσει τοῦ τῆς
+         </div>
+         <div n="7" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="452"/> Ὅτι δὲ καὶ Ἀριστοτέλης τῇ κράσει τοῦ τῆς
                         <lb/>μητρὸς αἵματος, ἐξ οὗ τὴν γένεσιν ἔχειν ἡμῶν φησι τὸ αἷμα, <lb/>τὰς τῆς
                         ψυχῆς δυνάμεις ἀκολουθεῖν οἴεται, δῆλόν ἐστι ἐκ <lb/>τῶνδε τῶν ῥήσεων. οὗτος
                         κατὰ μέν γε τὸ δεύτερον τὸ περὶ <lb/>ζώων μορίων οὕτως ἔγραψεν. ἔστι δὲ
@@ -498,7 +503,7 @@
                         ἐξαιρουμένων οὐ πήγνυται, <lb/>μενουσῶν δὲ πήγνυται, οἷον καὶ ὑγρὰ γῆ καὶ
                         ὑπὸ ψύχους <lb/>ἂν πάθοι. τοῦ γὰρ θερμοῦ ὑπὸ τοῦ ψυχροῦ ἐκθλιβομένου
                         <lb/>συνεξατμίζεται τὸ ὑγρὸν, καθάπερ εἴρηται πρότερον, <milestone unit="ed2page" n="453"/>
-                        <lb/>καὶ πήγνυται, οὐχ ὑπὸ θερμοῦ, ἀλλ’ ὑπὸ ψυχροῦ ξηραινόμενον. <lb/>ἐν δὲ
+               <lb/>καὶ πήγνυται, οὐχ ὑπὸ θερμοῦ, ἀλλ’ ὑπὸ ψυχροῦ ξηραινόμενον. <lb/>ἐν δὲ
                         τοῖς σώμασιν ὑγρόν ἐστι <milestone unit="ed1page" n="348"/> διὰ τὴν
                         θερμότητα <lb/>τὴν ἐν τοῖς ζώοις. ταῦτα προειπὼν ὁ Ἀριστοτέλης <lb/>ἐφεξῆς
                         αὐτοῖς συνάπτει ταῦτα. πολλῶν δέ ἐστιν αἰτία ἡ τοῦ <lb/>αἵματος φύσις, καὶ
@@ -545,7 +550,7 @@
                         <lb/>ἀναιδεῖς, οἱ δὲ ἀβέβαιοι. καὶ πάλιν οὐ μετὰ πολλὰ καὶ <lb/>τὸν περὶ τῶν
                         ὤτων λόγον ὡδί πως ἔγραψεν. εἰ μὲν πάνυ <lb/>μικρὰ, ἢ μέσα, ἢ ἐπανεστηκότα
                         σφόδρα ᾖ, τούτων τὰ μὲν <lb/>
-                        <milestone unit="ed2page" n="454"/> μικρὰ κακοήθους σημεῖον, τὰ δὲ μέσα
+               <milestone unit="ed2page" n="454"/> μικρὰ κακοήθους σημεῖον, τὰ δὲ μέσα
                         βελτίστου <lb/>ἤθους, τὰ δὲ μεγάλα καὶ ἐπανεστηκότα μωρολογίας καὶ
                         <lb/>ἀδολεσχίας. ταῦτα μὲν ἐν τῷ πρώτῳ περὶ ζώων ἱστορίας <lb/>Ἀριστοτέλης
                         ἔγραψεν. ὀλίγα δὲ μέμνηται καὶ ἐν ἄλλῳ <lb/>συγγράμματι περὶ φυσιογνωμονικῶν
@@ -553,9 +558,9 @@
                         μακρολογίας ἔμελλον <lb/>ἀποίσεσθαι δόξαν, ἀναλίσκειν τε τὸν χρόνον μάτην,
                         ἐξὸν <lb/>ἐπὶ τὸν πάντων ἰατρῶν τε καὶ φιλοσόφων πρῶτον εὑρόντα <lb/>τὴν
                         θεωρίαν ταύτην ἀφικέσθαι μάρτυρα, τὸν θεῖον <lb/>Ἱπποκράτη. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="8">
-                    <p>Γράφει τοίνυν οὕτως ἐν τῷ βιβλίῳ, ἐν ᾧ περὶ <lb/>ὑδάτων καὶ ἀέρων καὶ τόπων
+         </div>
+         <div n="8" type="chapter">
+            <p>Γράφει τοίνυν οὕτως ἐν τῷ βιβλίῳ, ἐν ᾧ περὶ <lb/>ὑδάτων καὶ ἀέρων καὶ τόπων
                         διδάσκει. πρῶτον μὲν ἐπ’ <lb/>ἐκείνων τῶν πόλεων, ἃς ἐστράφθαι φησὶ πρὸς
                         ἄρκτους, ὡδί <lb/>πως αὐτοῖς ὀνόμασι· τά τε ἤθεα ἀγριώτερα, ἢ ἡμερώτερα.
                         <lb/>καὶ μετὰ ταῦτα πάλιν ἐπὶ τῶν πρὸς ἀνατολὴν ἐστραμμένων <lb/>ὡδί·
@@ -598,7 +603,7 @@
                         σαρκώδεες, καὶ μελανότριχες, καὶ αὐτοὶ μέλανες <lb/>μᾶλλον, ἢ λευκότεροι,
                         φλεγματίαι τε ἧσσον, ἢ χολώδεες, τὸ <lb/>δὲ ἀνδρεῖον καὶ τὸ ταλαίπωρον ἐν τῇ
                         ψυχῇ φύσει μὲν οὐκ <lb/>ἂν ὁμοίως ἔχοιεν νόμος δὲ προσγενόμενος ὑπεργάσεται. <lb/>
-                        <milestone unit="ed1page" n="349"/> νόμον εἴρηκε δηλονότι τὴν νόμιμον ἐν
+               <milestone unit="ed1page" n="349"/> νόμον εἴρηκε δηλονότι τὴν νόμιμον ἐν
                         ἑκάστῃ χώρᾳ <lb/>τοῦ βίου διαγωγὴν, ἣν δὴ καὶ τροφὴν, καὶ παιδείαν, καὶ
                         <lb/>συνήθειαν ἐπιχώριον ὀνομάζομεν, οὗ καὶ αὐτοῦ μεμνήσομαι <lb/>πρὸς τὸν
                         ὀλίγον ὕστερον εἰρησόμενον λόγον. ἐν γὰρ τῷ <lb/>παρόντι προσθεῖναι ταύτας
@@ -651,9 +656,9 @@
                         αἱ ἀρτηρίαι. καὶ μανικοὺς μὲν γὰρ καὶ <lb/>ὀξυθύμους τὸ πλῆθος τῆς θερμασίας
                         ἐργάζεται, νωθροὺς <lb/>δὲ καὶ βαρεῖς καὶ δυσκινήτους ἡ τῆς κράσεως
                         ψυχρότης. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="9">
-                    <p>Ἱπποκράτης μὲν οὖν ἐπιδείξας ἐν ὅλῳ τῷ <lb/>περὶ ὑδάτων καὶ ὡρῶν κράσεως
+         </div>
+         <div n="9" type="chapter">
+            <p>Ἱπποκράτης μὲν οὖν ἐπιδείξας ἐν ὅλῳ τῷ <lb/>περὶ ὑδάτων καὶ ὡρῶν κράσεως
                         συγγράμματι, σώματος κράσει <lb/>ἕπεσθαι τὰς τῆς ψυχῆς δυνάμεις, οὐ μόνον
                         ὅσαι κατὰ <lb/>τὸ θυμοειδὲς ἢ ἐπιθυμητικὸν αὐτῆς εἰσιν, ἀλλὰ καὶ τὰς <pb n="805"/> κατὰ τὸ λογιστικὸν ἁπάσας, ἀξιοπιστότατός ἐστι μάρτυς, <lb/>εἴ
                         γέ τις ἐπὶ μάρτυρι ποιοῖτο, καθάπερ ἐνίοις ἔθος ἐστὶ, <lb/>τὴν τῶν δογμάτων
@@ -689,7 +694,7 @@
                         φησι καὶ <lb/>τὰς ἡλιάσεις, τουτέστι τὰς ἐξ ἡλίου θερμότητας εἰς τὰς
                         <lb/>τῆς ψυχῆς δυνάμεις προσθησομένας. εἰ μή τι ἄρα νομίζουσι <lb/>διὰ μὲν
                         τὰ πνεύματα, καὶ τὴν τοῦ περιέχοντος ἀέρος θερμότητα <lb/>
-                        <milestone unit="ed2page" n="457"/> καὶ ψυχρότητα, καὶ τὴν τῶν ὑδάτων τε καὶ
+               <milestone unit="ed2page" n="457"/> καὶ ψυχρότητα, καὶ τὴν τῶν ὑδάτων τε καὶ
                         <lb/>τῆς τροφῆς φύσιν ἀμείνους τε καὶ χείρους τὴν ψυχὴν ἀνθρώπους
                         <lb/>δύνασθαι γενέσθαι, ταῦτα δὲ αὐτὰ μὴ διὰ μέσων <lb/>τῶν κράσεων
                         ἐργάζεσθαι τὰ κατὰ ψυχὴν ἀγαθά τε καὶ <lb/>φαῦλα· καὶ γὰρ ταῦτα ἂν εἴη τῇ
@@ -711,9 +716,9 @@
                         τροφαῖς καὶ τοῖς πόμασι καὶ τοὺς ἀνέμους αὐτοὺς διδάξω, <lb/>καὶ τὰς τοῦ
                         περιέχοντος κράσεις, ἔτι τε τὰς χώρας, <lb/>ὁποίας μὲν αἱρεῖσθαι προσήκει,
                         ὁποίας δὲ φεύγειν. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="10">
-                    <p>Ἀναμνήσω δὲ πάλιν αὐτοὺς, κᾂν μὴ θέλωσιν, <lb/>ὡς ὁ Πλάτων αὐτὸς, ἀφ’ οὗ
+         </div>
+         <div n="10" type="chapter">
+            <p>Ἀναμνήσω δὲ πάλιν αὐτοὺς, κᾂν μὴ θέλωσιν, <lb/>ὡς ὁ Πλάτων αὐτὸς, ἀφ’ οὗ
                         παρονομάζουσιν ἑαυτοὺς, <lb/>οὐχ ἅπαξ ἢ δὶς, ἀλλὰ πολλάκις ἔγραψε περὶ
                         τούτων. <lb/>ὡσαύτως δ’ οὖν μοι ἀρκέσει προσθεῖναι κατὰ τὸν ἐνεστῶτα
                         <lb/>λόγον πρὸς τῷ περὶ τροφῆς ἐκ Τιμαίου καὶ ἐκ τοῦ δευτέρου <lb/>τῶν
@@ -798,9 +803,9 @@
                             <milestone unit="ed1page" n="351"/> τὸ <lb/>παρόν. πολλὰ μὲν οὖν ἡ
                         κακοχυμία ταῖς τῆς ψυχῆς ἐνεργείαις <lb/>λυμαίνεται, σώζει δὲ ἀβλαβεῖς αὐτὰς
                         ἡ εὐχυμία. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="11">
-                    <p>Οὔκουν ἀναιρετικὸς ὅδ’ ὁ λόγος ἐστὶ τῶν <lb/>ἐκ φιλοσοφίας καλῶν, ἀλλ’
+         </div>
+         <div n="11" type="chapter">
+            <p>Οὔκουν ἀναιρετικὸς ὅδ’ ὁ λόγος ἐστὶ τῶν <lb/>ἐκ φιλοσοφίας καλῶν, ἀλλ’
                         ὑφηγητικός τε καὶ διδασκαλικὸς <lb/>ἀγνοουμένου τινὸς ἐν αὐτοῖς τῶν
                         φιλοσόφων. οἵ τε γὰρ <lb/>ἡγούμενοι πάντας ἀνθρώπους ἐπιδεκτικοὺς ἀρετῆς
                         ὑπάρχειν, <lb/>οἵ τε μηδένα τὴν δικαιοσύνην αἱρεῖσθαι, ὅπερ ἴσον ἐστὶ τῷ
@@ -914,8 +919,7 @@
                         Σκύθαις μὲν γὰρ εἷς <lb/>ἀνὴρ ἐγένετο φιλόσοφος, Ἀθήνῃσι δὲ πολλοὶ τοιοῦτοι.
                         <lb/>πάλιν δ’ ἐν Ἀβδήροις ἀσύνετοι πολλοὶ, τοιοῦτοι δ’ Ἀθήνῃσιν <lb/>ὀλίγοι.
                     </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

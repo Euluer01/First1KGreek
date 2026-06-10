@@ -1,100 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xml:lang="eng">    
-        <fileDesc>
-            <titleStmt>
-                <title xml:lang="lat">De usu pulsuum</title>
-                <author>Galen</author>
-                <editor>Karl Gottlob Kühn</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-          <persName>Mark Schiefsky, Harvard University</persName>
-          <persName>Gregory R. Crane, Universität Leipzig</persName>
-          <persName>Uwe Vagelpohl, University of Warwick</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Keyboarding</resp>
-          <orgName xml:id="DDD">Digital Divide Data</orgName>
-        </respStmt>
-        <respStmt>
-          <resp>Editor-in-Chief, Perseus Digital Library</resp>
-          <persName>Gregory R. Crane</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Manager (University of Leipzig)</resp>
-          <persName>Matt Munson</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Project Assistant (University of Leipzig)</resp>
-          <persName>Annette Geßner</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Lead Developer (University of Leipzig)</resp>
-          <persName>Thibault Clérice</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Technical Advisor</resp>
-          <persName>Bruce Robertson</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De usu pulsuum</title>
+            <author>Galen</author>
+            <editor>Karl Gottlob Kühn</editor>
+            <funder>Andrew W. Mellon Foundation</funder>
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+               <persName>Mark Schiefsky, Harvard University</persName>
+               <persName>Gregory R. Crane, Universität Leipzig</persName>
+               <persName>Uwe Vagelpohl, University of Warwick</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Keyboarding</resp>
+               <orgName xml:id="DDD">Digital Divide Data</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+               <persName>Gregory R. Crane</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Manager (University of Leipzig)</resp>
+               <persName>Matt Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Project Assistant (University of Leipzig)</resp>
+               <persName>Annette Geßner</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Lead Developer (University of Leipzig)</resp>
+               <persName>Thibault Clérice</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technical Advisor</resp>
+               <persName>Bruce Robertson</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0057.tlg031.1st1K-grc1.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+            <publisher>University of Leipzig</publisher>
+            <pubPlace>Germany</pubPlace>
+            <idno type="filename">tlg0057.tlg031.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                         under a Creative Commons Attribution-ShareAlike 4.0 International
                         License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
-                        <author>Galen</author>
-                        <editor>Karl Gottlob Kühn</editor>
-                        <imprint>
-                            <publisher>Knobloch</publisher>
-                            <pubPlace>Leipzig</pubPlace>
-                            <biblScope unit="vol">5</biblScope>
-                            <biblScope unit="pp" from="149" to="180">149-180</biblScope>
-                            <date>1823</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="https://hdl.handle.net/2027/chi.15862725?urlappend=%3Bseq=159%3Bownerid=13510798903412083-165">HathiTrust</ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
+            </availability>
+            <date>2016</date>
+            <idno type="CTS">urn:cts:greekLit:tlg0057.tlg031.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+                  <author>Galen</author>
+                  <editor>Karl Gottlob Kühn</editor>
+                  <imprint>
+                     <publisher>Knobloch</publisher>
+                     <pubPlace>Leipzig</pubPlace>
+                     <biblScope unit="vol">5</biblScope>
+                     <biblScope unit="pp" from="149" to="180">149-180</biblScope>
+                     <date>1823</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://hdl.handle.net/2027/chi.15862725?urlappend=%3Bseq=159%3Bownerid=13510798903412083-165">HathiTrust</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-              <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-                <language ident="lat">Latin</language>
-            </langUsage>
-        </profileDesc>
-  </teiHeader>
-
-    <text>
-        <body>
-
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg031.1st1K-grc1">
-                <pb n="149"/>
-
-                <div type="textpart" subtype="chapter" n="1">
-                    <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΧΡΕΙΑΣ ΣΦΥΓΜΩΝ <lb/>ΒΙΒΛΙΟΝ.</head>
-                    <p>Τίς ἡ χρεία τῶν σφυγμῶν; ἆρά γε ἥπερ <lb/>καὶ τῆς ἀναπνοῆς, ὡς σχεδὸν ἅπασιν
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0057.tlg031.1st1K-grc1">
+         <pb n="149"/>
+         <div n="1" type="chapter">
+            <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΧΡΕΙΑΣ ΣΦΥΓΜΩΝ <lb/>ΒΙΒΛΙΟΝ.</head>
+            <p>Τίς ἡ χρεία τῶν σφυγμῶν; ἆρά γε ἥπερ <lb/>καὶ τῆς ἀναπνοῆς, ὡς σχεδὸν ἅπασιν
                         ἰατροῖς τε καὶ φιλοσόφοις <lb/>ἔδοξεν, ἤ τις ἑτέρα παρὰ ταύτην; οὐ γὰρ δὴ
                         ἀβασανίστως <lb/>πειστέον αὐτοῖς, ἐναντιοῦσθαι δοκούντων ἄλλων <lb/>τέ τινων
                         οὐκ ὀλίγων φαινομένων, καὶ τοῦ νῦν εἰρῆσθαι <lb/>μέλλοντος οὐχ ἥκιστα.
@@ -154,10 +161,10 @@
                         ἀντικείμενα, <lb/>τό τε τῆς αὐτῆς ἕνεκα χρείας ἄμφω γεγονέναι καὶ τὸ μὴ
                         <lb/>τῆς αὐτῆς. ἀλλ’ οὐκ ἐνδέχεται· χρὴ γὰρ θάτερον αὐτῶν <lb/>ἀληθὲς
                         ὑπάρχειν, οὐκ ἄμφω. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="2">
-                    <p>
-                        <milestone unit="ed2page" n="435"/> Ζητητέον οὖν, ὅπῃ τῶν λόγων ὁ ἕτερος
+         </div>
+         <div n="2" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="435"/> Ζητητέον οὖν, ὅπῃ τῶν λόγων ὁ ἕτερος
                         <lb/>παραλογίζεται, κάνονα τῆς κρίσεως ποιησαμένοις ἡμῖν <lb/>τὴν χρείαν τῆς
                         ἀναπνοῆς, ἣν ἐδείξαμεν ἐν τοῖς περὶ <lb/>αὐτῆς λόγοις διττὴν οὖσαν, ὡς
                         ἐδόκει καὶ Ἱπποκράτει· ﻿<pb n="154"/> τὴν μὲν γὰρ ἑτέραν, τὴν μείζω, φυλακὴν
@@ -240,10 +247,10 @@
                         <lb/>χρῄζει, τὰ δ’ ἄλλα βραχείας, καὶ ὅτι τῇ μὲν οὐδαμόθεν <lb/>ἐπιῤῥεῖ,
                         τοῖς δ’ ἀπ’ ἐκείνης, ἡ μὲν ἑτοίμως ἐξίσταται τοῦ <lb/>κατὰ φύσιν, τὰ δὲ οὔ.
                     </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="3">
-                    <p>
-                        <milestone unit="ed2page" n="437"/> Περὶ δὲ τοῦ μὴ δι’ ἀρτηριῶν μόνον,
+         </div>
+         <div n="3" type="chapter">
+            <p>
+               <milestone unit="ed2page" n="437"/> Περὶ δὲ τοῦ μὴ δι’ ἀρτηριῶν μόνον,
                         <lb/>ἀλλὰ καὶ διὰ τῶν φλεβῶν καὶ τῶν ἄλλων ἁπάντων ἐπιῤῥεῖν <lb/>ἐκ τῆς
                         καρδίας τοῖς μορίοις τὴν θερμασίαν, ἐπεὶ διὰ <pb n="160"/> βραχέος εἴρηται
                         πρόσθεν, αὖθις ἡμῖν ἀναληπτέον τε καὶ <lb/>ἀποδεικτέον, εἰποῦσι πρότερον τὰ
@@ -273,11 +280,10 @@
                         τινα οὐσίαν ἀερώδη, κατὰ δὲ τὰς <lb/>συστολὰς ἐκκρίνεσθαι τὸ ἐκ τῆς τῶν
                         χυμῶν συγκαύσεως <lb/>καθ’ ὅλον τὸ ζῶον γινόμενον οἷον καπνῶδες
                         <lb/>περίττωμα. </p>
-                </div>
-                <pb n="162"/>
-
-                <div type="textpart" subtype="chapter" n="4">
-                    <p>Καίτοι γινώσκω τοὺς περὶ τὸν Ἀρχιγένην <lb/>καί τινας ἔτι πρότερον ἐν μὲν
+         </div>
+         <pb n="162"/>
+         <div n="4" type="chapter">
+            <p>Καίτοι γινώσκω τοὺς περὶ τὸν Ἀρχιγένην <lb/>καί τινας ἔτι πρότερον ἐν μὲν
                         ταῖς συστολαῖς πληροῦσθαι <lb/>τὰς ἀρτηρίας οἰομένους, ἐν δὲ ταῖς διαστολαῖς
                         κενοῦσθαι. <lb/>πρὸς γὰρ τὴν ἕλξιν ἐπιτηδειοτάτην εἶναι νομίζουσι τὴν
                         συστολὴν, <lb/>τεκμαιρόμενοι μάλιστα τῷ τε στόματι καὶ ταῖς <lb/>ῥισὶν κατὰ
@@ -315,11 +321,11 @@
                         διαστέλλει καὶ συστέλλει, <lb/>καθάπερ καὶ αὐτὴν τὴν καρδίαν. ὡς οὖν ἐκείνη
                         διαστελλομένη <lb/>μὲν εἰς ἑαυτὴν ἕλκει τὰ πλησιάζοντα τοῖς στόμασιν αὐτῆς,
                         <lb/>συστελλομένη δὲ ἐκθλίβει, οὕτω καὶ αἱ ἀρτηρίαι διαστελλόμεναι <lb/>
-                        <milestone unit="ed1page" n="157"/> μὲν ἕλκουσι πανταχόθεν, συστελλόμεναι δ’
+               <milestone unit="ed1page" n="157"/> μὲν ἕλκουσι πανταχόθεν, συστελλόμεναι δ’
                         <lb/>ἐκθλίβουσι πανταχόσε. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="5">
-                    <p>Τί δὴ τοῦτ’ ἔστι πανταχόθεν καὶ πανταχόσε, <lb/>σαφέστερον ἔτι διαιρήσω σοι.
+         </div>
+         <div n="5" type="chapter">
+            <p>Τί δὴ τοῦτ’ ἔστι πανταχόθεν καὶ πανταχόσε, <lb/>σαφέστερον ἔτι διαιρήσω σοι.
                         πάμπολλοι πόροι ταῖς ἀρτηρίαις, <lb/>οἱ μὲν ἐν αὐτοῖς τοῖς χιτῶσιν οἷον ὀπαί
                         τινες, ἄλλοι δὲ δίκην <lb/>στομάτων εἰς ἔντερα καὶ γαστέρα καὶ τοῦτο δὴ τὸ
                         ἐκτὸς <lb/>δέρμα περαίνονται. ἀλλὰ καὶ συνεχεῖς ἀλλήλαις τε καὶ τῇ <pb n="165"/> καρδίᾳ κατὰ μεγίστους εἰσὶ πόρους, κατὰ τὰς αὐτὰς ἀρτηρίας,
@@ -333,7 +339,7 @@
                         ἄλλων <lb/>τῶν παραπλησίων, κατὰ μεγάλας καὶ πολλὰς ἀρτηρίας <lb/>τρώσειεν,
                         ἐκκενώσει δι’ αὐτὰς ἅπαν τοῦ ζώου τὸ αἷμα. <lb/>τούτου πολλάκις τοῦ
                         φαινομένου ἡμεῖς πεῖραν ἐποιησάμεθα, <lb/>
-                        <milestone unit="ed2page" n="439"/> καὶ διαπαντὸς εὑρίσκοντες ἐκκενουμένας
+               <milestone unit="ed2page" n="439"/> καὶ διαπαντὸς εὑρίσκοντες ἐκκενουμένας
                         τὰς φλέβας <lb/>ἅμα ταῖς ἀρτηρίαις ἀληθὲς τὸ τῶν συναναστομωσεών ἐκ
                         <lb/>τούτων ἐπείσθημεν δόγμα. διὰ γοῦν τούτων τῶν ἀναστομώσεων <lb/>ἐκ τῶν
                         φλεβῶν ἕλκουσι μὲν ἐν ταῖς διαστολαῖς <lb/>ἀρτηρίαι, ἐκθλίβουσι δὲ εἰς αὐτὰς
@@ -384,9 +390,9 @@
                         διαστελλομένας ἐν μέρει κατὰ τὴν αὐτὴν ἐκείνῃ ﻿<pb n="169"/> δύναμιν, ἣν
                             <milestone unit="ed2page" n="440"/> ἐκ τῆς καρδίας ὁρμωμένην διὰ τῶν
                         χιτώνων <lb/>αὐτῶν ἐλέγομεν πέμπεσθαι. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="6">
-                    <p>Κάλλιον δ’ εἶναί μοι δοκοῦσι ποιεῖν οἱ ζητοῦντες, <lb/>ἆρά γε τὴν διαστολὴν,
+         </div>
+         <div n="6" type="chapter">
+            <p>Κάλλιον δ’ εἶναί μοι δοκοῦσι ποιεῖν οἱ ζητοῦντες, <lb/>ἆρά γε τὴν διαστολὴν,
                         ἢ τὴν συστολὴν, ἢ ἀμφοτέρας <lb/>ἐνεργείας χρὴ νομίζειν τῶν ἀρτηριῶν, ὥσπερ,
                         <lb/>οἶμαι, καὶ περὶ τῶν τῆς ἀναπνοῆς μερῶν εὐλόγως ἐζητήθη, <lb/>πότερον
                         τὴν ἐκπνοὴν, ἢ τὴν εἰσπνοὴν, ἢ ἀμφοτέρας <lb/>ἐνεργείας ὑποληπτέον ὑπάρχειν.
@@ -431,9 +437,9 @@
                         διαστολὴ διὰ ταῦτά τε καὶ ἄλλα παραπλήσια τούτοις <lb/>ἐκ τοῦ τῶν ἐνεργειῶν
                         εἶναί μοι φαίνεται γένους, καὶ σώζοιτ’ <lb/>ἂν ἔτι καὶ κατὰ τοῦτο ἡ πρὸς τὴν
                         ἀναπνοὴν τῶν <lb/>σφυγμῶν ὁμοιότης. </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="7">
-                    <p>Ἐφεξῆς ἂν εἴη σκεπτέον, εἰ, ὥσπερ ἡ ἐκπνοὴ <lb/>ἄνεσίς ἐστι καὶ οἷον
+         </div>
+         <div n="7" type="chapter">
+            <p>Ἐφεξῆς ἂν εἴη σκεπτέον, εἰ, ὥσπερ ἡ ἐκπνοὴ <lb/>ἄνεσίς ἐστι καὶ οἷον
                         ἀνάπαυσις τῆς ἐνεργείας τοῦ <lb/>θώρακος, ἡ ἐκφύσησις δὲ ἐνέργεια, καὶ διὰ
                         τοῦτο τὸ μᾶλλόν <lb/>τε καὶ ἧττον ἔχει, τῆς ἐκπνοῆς οὐκ ἐχούσης, οὕτως καὶ ἡ
                         <lb/>συστολὴ μὲν ἐν τοῖς σφυγμοῖς ἔκλυσις τῆς ἐνεργείας ἐστὶ <lb/>τῶν
@@ -527,9 +533,9 @@
                         <lb/>τὴν οἰκείαν ἐπειγομένου φύσιν. συνελόντι δὲ φάναι, καὶ <lb/>ταῖς
                         μαλακαῖς ἀρτηρίαις ἄμφω συμβέβηκε πάσχειν ἐν μέρει <lb/>καὶ ταῖς σκληραῖς.
                     </p>
-                </div>
-                <div type="textpart" subtype="chapter" n="8">
-                    <p>Εἴρηταί μοι τὸ πᾶν ἤδη περὶ χρείας <lb/>σφυγμῶν. καὶ γὰρ ὅτι φυσικῆς ἕνεκα
+         </div>
+         <div n="8" type="chapter">
+            <p>Εἴρηταί μοι τὸ πᾶν ἤδη περὶ χρείας <lb/>σφυγμῶν. καὶ γὰρ ὅτι φυσικῆς ἕνεκα
                         τῆς καθ’ ὅλον τὸ <lb/>ζῶον θερμασίας, καὶ ὅτι κατὰ μὲν τὰς διαστολὰς
                         διαψύχεται <lb/>τοῦτο, κατὰ δὲ τὰς συστολὰς καθαίρεται, καὶ <lb/>ὡς αἱ
                         κινήσεις αἵδε ταῖς ἀναπνευστικαῖς ἐοίκασι πάντη, <lb/>καὶ ὡς καὶ τῷ ψυχικῷ
@@ -540,8 +546,7 @@
                         διακρίνειν <lb/>δύνασθαι τά τε καλῶς ὑπὸ τῶν ἔμπροσθεν <pb n="180"/>
                         εἰρημένα καὶ τὰ μή. ῥᾴδιον δὲ τῷ τοιούτῳ, καὶ ὅσα <lb/>κατὰ μέρος ὑπὲρ
                         ἀμφοτέρων ζητεῖται τῶν ἐνεργειῶν, <lb/>ἐξευρίσκειν. </p>
-                </div>
-            </div>
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

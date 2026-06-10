@@ -1,114 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
- <teiHeader xml:lang="eng">
-  <fileDesc>
-   <titleStmt>
-    <title xml:lang="lat">De corporibus fluitantibus</title>
-    <author xml:lang="fre">Archimède</author>
-    <editor>Charles Mugler</editor>
-    <funder>Harvard Library</funder>
-    <principal>Gregory Crane</principal>
-    <respStmt>
-     <persName xml:id="DDD">Digital Divide Data</persName>
-     <resp>Corrected and encoded the text</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Gregory Crane</persName>
-     <resp>Editor-in-Chief, Perseus Digital Library</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Matt Munson</persName>
-     <resp>Project Manager (University of Leipzig)</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Annette Gessner</persName>
-     <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Thibault Clérice</persName>
-     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Bruce Robertson</persName>
-     <resp>Technical Advisor (Mount Allison University)</resp>
-    </respStmt>
-   </titleStmt>
-   <publicationStmt>
-    <authority>Harvard College Library</authority>
-    <idno type="filename">tlg0552.tlg008.1st1K-grc1.xml</idno>
-    <availability>
-     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-    </availability>
-    <date>2018</date>
-    <publisher>Harvard College Library</publisher>
-    <pubPlace>United States</pubPlace>
-   </publicationStmt>
-   <sourceDesc>
-    <listBibl>
-     <biblStruct>
-      <monogr>
-       <title xml:lang="fre">Archimède</title>
-       <editor>
-        <persName>
-         <name>Charles Mugler</name>
-        </persName>
-       </editor>
-       <author ref="urn:cts:greekLit:tlg0552">Archimedes</author>
-       <imprint>
-        <publisher xml:lang="fre">Belles Lettres</publisher>
-        <pubPlace>Paris</pubPlace>
-        <date>1971</date>
-       </imprint>
-       <biblScope unit="volume">3</biblScope>
-      </monogr>
-      <ref target="http://digital.slub-dresden.de/werkansicht/dlf/106436/1/0/">SLUB Dresden</ref>
-     </biblStruct>
-    </listBibl>
-   </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-   <p>Text encoded in accordance with the latest EpiDoc standards</p>
-   <refsDecl n="CTS">
-    <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-    <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-   </refsDecl>
-  </encodingDesc>
-  <profileDesc>
-   <langUsage>
-    <language ident="grc">Greek</language>
-    <language ident="lat">Latin</language>
-    <language ident="fre">French</language>
-   </langUsage>
-  </profileDesc>
-  <revisionDesc>
-   <change/>
-  </revisionDesc>
- </teiHeader>
-<text>
-<body>
- <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0552.tlg008.1st1K-grc1">
-<div type="textpart" subtype="book" n="1">
-<pb n="6"/>
-<head>ΟΧΟΥΜΕΝΩΝ Α΄</head>
-<div type="textpart" subtype="chapter" n="pr">
-<head>Ἀρχιμήδους Ὀχουμένων α΄</head>
-<p>Ὑποκείσθω τὸ ὑγρὸν φύσιν ἔχον τοιαύταν, ὥστε τῶν
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="lat">De corporibus fluitantibus</title>
+            <author xml:lang="fre">Archimède</author>
+            <editor>Charles Mugler</editor>
+            <funder>Harvard Library</funder>
+            <principal>Gregory Crane</principal>
+            <respStmt>
+               <persName xml:id="DDD">Digital Divide Data</persName>
+               <resp>Corrected and encoded the text</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gregory Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor (Mount Allison University)</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Harvard College Library</authority>
+            <idno type="filename">tlg0552.tlg008.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2018</date>
+            <publisher>Harvard College Library</publisher>
+            <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg0552.tlg008.1st1K-grc1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <monogr>
+                     <title xml:lang="fre">Archimède</title>
+                     <editor>
+                        <persName>
+                           <name>Charles Mugler</name>
+                        </persName>
+                     </editor>
+                     <author ref="urn:cts:greekLit:tlg0552">Archimedes</author>
+                     <imprint>
+                        <publisher xml:lang="fre">Belles Lettres</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date>1971</date>
+                     </imprint>
+                     <biblScope unit="volume">3</biblScope>
+                  </monogr>
+                  <ref target="http://digital.slub-dresden.de/werkansicht/dlf/106436/1/0/">SLUB Dresden</ref>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Text encoded in accordance with the latest EpiDoc standards</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+).(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)"
+                         n="book"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+         <refsDecl n="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
+                  <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+               </citeStructure>
+            </citeStructure>
+         </refsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#perseus-genre" target="#prose-book-chapter"/>
+         </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+            <language ident="fre">French</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body xml:base="urn:cts:greekLit:tlg0552.tlg008.1st1K-grc1">
+         <div n="1" type="book">
+            <pb n="6"/>
+            <head>ΟΧΟΥΜΕΝΩΝ Α΄</head>
+            <div n="pr" type="chapter">
+               <head>Ἀρχιμήδους Ὀχουμένων α΄</head>
+               <p>Ὑποκείσθω τὸ ὑγρὸν φύσιν ἔχον τοιαύταν, ὥστε τῶν
 μερέων αὐτοῦ τῶν ἐξ ἴσου κειμένων καὶ συνεχέων ἐόντων
 ἐξωθεῖσθαι τὸ ἧσσον θλιζόμενον ὑπὸ τοῦ μᾶλλον θλιβομένου,
 <lb n="5"/> καὶ ἕκαστον δὲ τῶν μερέων αὐτοῦ θλίζεσθαι τῷ
 ὑπεράνω αὐτοῦ ὑγρῷ κατὰ κάθετον ἐόντι, εἴ κα μὴ τὸ
 ὑγρὸν ᾖ καθειργμένον ἔν τινι καὶ ὑπʼ ἄλλου τινὸς θλιβόμενον.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="1">
-<head>α΄.</head>
-<lb n="10"/><p> Εἴ κα ᾖ ἐπιφάνειά τις ἐπιπέδῳ τεμνομένα διά τινος
+            </div>
+            <div n="1" type="chapter">
+               <head>α΄.</head>
+               <lb n="10"/>
+               <p> Εἴ κα ᾖ ἐπιφάνειά τις ἐπιπέδῳ τεμνομένα διά τινος
 ἀεὶ τοῦ σαμείου τὰν τομὰν ποιέοντι
 circuli periferiam centrum habentem signum, per
 quod plano secatur, sperae erit superficies.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<p>Sit enim superficies aliqua secta per signum Κ
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <p>Sit enim superficies aliqua secta per signum Κ
 <lb n="15"/> plano semper sectionem faciente circuli periferiam,
 
 <pb n="7"/>
@@ -122,20 +138,20 @@ ineam DABG; circuli ergo est ipsa, centrum autem
 ipsius K, quoniam supponebatur superficies talis.
 Non sunt ergo inaequale es lineae KA, KB; necessarium
 <lb n="10"/> igitur est superficiem esse sperae superficiem.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="2">
-<head>β΄.</head>
-<p>Omnis humidi consistentis ita, ut maneat inmotum,
+            </div>
+            <div n="2" type="chapter">
+               <head>β΄.</head>
+               <p>Omnis humidi consistentis ita, ut maneat inmotum,
 superficies habebit figuram sperae habentis centrum
 idem cum terra.</p>
-<lb n="15"/><p> intelligatur enim humidum consistens ita, ut
+               <lb n="15"/>
+               <p> intelligatur enim humidum consistens ita, ut
 maneat non motum, et secetur ipsius superficies
 plano per centrum terrae, sit autem terrae centrum K,
 superficiei autem sectio linea ABGD. Dico itaque
 lineam ABGD circuli esse periferiam, centrum
 <lb n="20"/> autem ipsius K.</p>
-<p>Si enim non est, rectae a K ad lineam ABGD
+               <p>Si enim non est, rectae a K ad lineam ABGD
 occurrentes non erunt aequales. Sumatur itaque
 aliqua recta, quae est quarundam quidem a K
 occurrentium ad lineam ABGD maior, quarundam
@@ -157,11 +173,14 @@ inuicem. Et premuntur quae quidem secundum XO
 periferiam humido quod secundum ZB locum;
 inaequaliter igitur premuntur partes humidi quae
 secundum periferiam XO et quae
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<lb n="10"/> <del>ἢ</del> κατὰ τὰν ΟΠ· ὥστε ἐξωθήσονται τὰ ἧσσον θλιβόμενα
+<figure>
+                     <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+                  </figure>
+                  <lb n="10"/>
+                  <del>ἢ</del> κατὰ τὰν ΟΠ· ὥστε ἐξωθήσονται τὰ ἧσσον θλιβόμενα
 ὑπὸ τῶν μᾶλλον θλιβομένων· οὐ μένει ἄρα τὸ ὑγρόν.
 Ὑπέκειτο δὲ καθεστακὸς εἶμεν ὥστε μένειν ἀκίνητον·
-ἀναγκαῖον ἄρα τὰν ΑΒΓ&#9651; γραμμὰν κύκλου περιφέρειαν
+ἀναγκαῖον ἄρα τὰν ΑΒΓ△ γραμμὰν κύκλου περιφέρειαν
 εἶμεν καὶ κέντρον αὐτᾶς τὸ Κ. Ὁμοίως δὴ δειχθήσεται
 <lb n="15"/> καί, ὅπως κα ἄλλως ἁ ἐπιφάνεια τοῦ ὑγροῦ ἐπιπέδῳ
 τμαθῇ διὰ τοῦ κέντρου τᾶς γᾶς, ὅτι ἁ τομὰ ἐσσεῖται
@@ -171,25 +190,27 @@ secundum periferiam XO et quae
 <lb n="20"/> κέντρον ἐχούσας τᾷ γᾷ, ἐπειδὴ τοιαύτα ἐστίν, ὥστε
 
 <pb n="9"/>
-<add cause="omitted">ιὰ τοῦ αὐτοῦ σαμείου τμαθεῖσ</add>αν τὰν τομὰν ποιεῖν
+                  <add cause="omitted">ιὰ τοῦ αὐτοῦ σαμείου τμαθεῖσ</add>αν τὰν τομὰν ποιεῖν
 περιφέρειαν κύκλου κέντρον ἔχοντος τὸ σαμεῖον, διʼ οὗ
 τέμνεται τῷ ἐπιπέδῳ.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="3">
-<head>γ΄.</head>
-<lb n="5"/><p> Τῶν στερεῶν μεγεθέων τὰ ἰσοβαρέοντα τῷ ὑγρῷ ἀφεθέντα
+            </div>
+            <div n="3" type="chapter">
+               <head>γ΄.</head>
+               <lb n="5"/>
+               <p> Τῶν στερεῶν μεγεθέων τὰ ἰσοβαρέοντα τῷ ὑγρῷ ἀφεθέντα
 εἰς τὸ ὑγρὸν καταβασοῦνται, ὥστε τᾶς ἐπιφανείας τᾶς
 τοῦ ὑγροῦ μὴ ὑπερέχειν μηδέν, καὶ οὐκέτι οἰσθήσονται
 ἐπὶ τὸ κάτω.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<p>Ἀφείσθω γάρ τι στερεὸν μέγεθος εἰς τὸ ὑγρὸν τῶν
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <p>Ἀφείσθω γάρ τι στερεὸν μέγεθος εἰς τὸ ὑγρὸν τῶν
 <lb n="10"/> ἰσοβαρέων τῷ ὑγρῷ καί, εἰ δυνατόν, ὑπερεχέτω τι αὐτοῦ
 τᾶς τοῦ ὑγροῦ ἐπιφανείας, καθεστάτω δὲ τὸ ὑγρόν, ὥστε
 μένειν ἀκίνητον. Νοείσθω δή τι ἐπίπεδον ἐκβεβλημένον
 διά τε τοῦ κέντρου τᾶς γᾶς καὶ τοῦ ὑγροῦ καὶ διὰ τοῦ
 στερεοῦ μεγέθεος, τομὰ δὲ ἔστω τᾶς μὲν ἐπιφανείας
-<lb n="15"/> τοῦ ὑγροῦ ἁ ΑΒΓ&#9651; περιφέρεια, τοῦ δὲ στερεοῦ μεγέθεος
+<lb n="15"/> τοῦ ὑγροῦ ἁ ΑΒΓ△ περιφέρεια, τοῦ δὲ στερεοῦ μεγέθεος
 τὸ ΕΖΗΘ σχῆμα, κέντρον δὲ τᾶς γᾶς τὸ Κ. Ἔστω δὴ τοῦ
 μὲν στερεοῦ τὸ μὲν ΒΓΗΘ ἐν τῷ ὑγρῷ, τὸ δὲ ΒΕΖΓ ἐκτός.
 
@@ -197,7 +218,7 @@ secundum periferiam XO et quae
 Νοείσθω δὴ τὸ στερεὸν σχῆμα περιλαμβανόμενον πυραμοειδεῖ
 βάσιν μὲν ἔχοντι τὸ παραλληλόγραμμον τὸ ἐν
 τᾷ ἐπιφανείᾳ τοῦ ὑγροῦ, κορυφὰν δὲ τὸ κέντρον τᾶς
-γᾶς, <add cause="omitted">τομὰ δὲ ἔστω τοῦ τε ἐπιπ</add>έδου, ἐν ᾧ ἐστιν ἁ ΑΒΓ&#9651;
+γᾶς, <add cause="omitted">τομὰ δὲ ἔστω τοῦ τε ἐπιπ</add>έδου, ἐν ᾧ ἐστιν ἁ ΑΒΓ△
 <lb n="5"/> περιφέρεια, καὶ τῶν τᾶς πυραμίδος ἐπιπέδων αἱ ΚΛ, ΚΜ.
 Γεγράφθω τις ἄλλας σφαίρας ἐπιφάνεια περὶ κέντρον τὸ
 Κ ἐν τῷ ὑγρῷ τῷ ὑπὸ τοῦ ΕΖΗΘ καὶ τεμνέσθω ἐπιπέδῳ,
@@ -230,15 +251,17 @@ secundum periferiam XO et quae
 ὁμοίως γὰρ πάντα θλιβησοῦντι τὰ μέρεα τοῦ ὑγροῦ τὰ
 ἐξ ἴσου κείμενα διὰ τὸ ἰσοβαρέα εἶμεν τὸ στερεὸν καὶ τὸ
 <lb n="10"/> ὑγρόν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="4">
-<head>δ΄ .</head>
-<p>Τῶν στερῶν μεγεθέων ὅ κα κουφότερον ᾗ τοῦ ὑγροῦ,
+            </div>
+            <div n="4" type="chapter">
+               <head>δ΄ .</head>
+               <p>Τῶν στερῶν μεγεθέων ὅ κα κουφότερον ᾗ τοῦ ὑγροῦ,
 ἀφεθὲν ἐς τὸ ὑγρὸν οὐ καταδύσεται ὅλον, ἀλλὰ ἐσσεῖταί
 τι αὐτοῦ ἐκτὸς τᾶς τοῦ ὑγροῦ ἐπιφανείας.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<lb n="15"/><p> Ἔστω γὰρ στερεὸν μέγεθος κουφότερον τοῦ ὑγροῦ
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <lb n="15"/>
+               <p> Ἔστω γὰρ στερεὸν μέγεθος κουφότερον τοῦ ὑγροῦ
 καὶ ἀφεθὲν ἐς τὸ ὑγρὸν δεδυκέτω ὅλον, εἰ δυνατόν, καὶ
 μηδὲν αὐτοῦ ἔστω ἐκτὸς τᾶς τοῦ ὑγροῦ ἐπιφανείας,
 καθεστακέτω δὲ τὸ ὑγρόν, ὥστε μένειν ἀκίνητον, Νοείσθω
@@ -281,16 +304,17 @@ secundum periferiam XO et quae
 τὸ ἧσσον θλιβόμενον, καὶ οὐ μενεῖ τὸ ὑγρὸν ἀκίνητον.
 Ὑπέκειτο δέ· οὐκ ἄρα καταδύσεται ὅλον, ἀλλʼ ἐσσεῖταί
 <lb n="10"/> τι αὐτοῦ ἐκτὸς τᾶς τοῦ ὑγροῦ ἐπιφανείας.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="5">
-<head>ε΄.</head>
-<p>Τῶν στερεῶν μεγεθέων ὅ κα ᾖ κουφότερον τοῦ ὑγροῦ,
+            </div>
+            <div n="5" type="chapter">
+               <head>ε΄.</head>
+               <p>Τῶν στερεῶν μεγεθέων ὅ κα ᾖ κουφότερον τοῦ ὑγροῦ,
 ἀφεθὲν εἰς τὸ ὑγρὸν ἐς τοσοῦτο καταδύσεται, ὥστε ταλικοῦτον
 ὄγκον τοῦ ὑγροῦ, ἁλίκος ἐστὶν ὁ τοῦ καταδεδυκότος
 <lb n="15"/> ὄγκος, ἴσον βάρος ἔχειν ὅλῳ τῷ μεγέθει.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<p>Κατεσκευάσθω ταὐτὰ τοῖς πρότερον, καὶ ἔστω τὸ
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <p>Κατεσκευάσθω ταὐτὰ τοῖς πρότερον, καὶ ἔστω τὸ
 ὑγρὸν ἀκίνητον, ἔστω δὲ κουφότερον τοῦ ὑγροῦ τὸ
 
 <pb n="14"/>
@@ -305,73 +329,74 @@ secundum periferiam XO et quae
 τοῦ ΡΣΤΥ ὑγροῦ βάρει. Φανερὸν οὖν ὅτι ταλικοῦτος
 <lb n="10"/> ὄγκος τοῦ ὑγροῦ, ἁλίκον ἐστὶ τὸ δεδυκὸς τοῦ στερεοῦ
 μεγέθεος, ἴσον βάρος ἔχει ὅλῳ τῷ μεγέθει.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="6">
-<head>ς᾿.</head>
-<p>Τὰ κουφότερα στερεὰ τοῦ ὑγροῦ βιασθέντα εἰς τὸ
+            </div>
+            <div n="6" type="chapter">
+               <head>ς᾿.</head>
+               <p>Τὰ κουφότερα στερεὰ τοῦ ὑγροῦ βιασθέντα εἰς τὸ
 ὑγρὸν ἀναφέρεται τοσαύτᾳ βίᾳ ἐς τὸ ἄνω, ὅσον ἐστὶ
 <lb n="15"/> τὸ βάρος, ᾧ βαρύτερόν ἐστι τοῦ μεγέθεος τὸ ὑγρὸν τὸ
 ἴσον ὄγκον ἔχον τῷ μεγέθει.</p>
-<p>Ἔστω τι μέγεθος τὸ Α κουφότερον τοῦ ὑγροῦ, ἔστω
+               <p>Ἔστω τι μέγεθος τὸ Α κουφότερον τοῦ ὑγροῦ, ἔστω
 δὲ τοῦ μὲν μεγέθεος τοῦ ἐν ᾧ Α βάρος τὸ Β, τοῦ δὲ ὑγροῦ
 τοῦ ἴσον ὄγκον ἔχοντος τῷ Α τὸ ΒΓ. Δεικτέον ὅτι τὸ
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-
-<pb n="15"/>
+<figure>
+                     <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+                  </figure>
+                  <pb n="15"/>
 Α μέγεθος βιασθὲν ἐς τὸ ὑγρὸν ἀνοισεῖται ἐς τὸ ἐπάνω
 τοσαύτᾳ βίᾳ, ὅσον ἐστὶ τὸ βάρος τὸ Γ.</p>
-<p>Λελάφθω γάρ τι μέγεθος τὸ ἐν ᾧ τὸ &#9651; βάρος ἴσον
+               <p>Λελάφθω γάρ τι μέγεθος τὸ ἐν ᾧ τὸ △ βάρος ἴσον
 ἔχον τῷ Γ· τὸ δὴ μέγεθος τὸ ἐξ ἀμφοτέρων τῶν ἐν οἷς
-<lb n="5"/> Α, &#9651; μεγεθέων ἐς τὰ αὐτὰ συντεθέντων κουφότερόν ἐστι
+<lb n="5"/> Α, △ μεγεθέων ἐς τὰ αὐτὰ συντεθέντων κουφότερόν ἐστι
 τοῦ ὑγροῦ· ἔστι γὰρ τοῦ μὲν μεγέθεος τοῦ ἐξ ἀμφοτέρων
 βάρος τὸ ΒΓ, τοῦ δὲ ὑγροῦ τοῦ ἴσον ὄγκον ἔχοντος αὐτῷ
 μεῖβον τοῦ ΒΓ διὰ τὸ τοῦ ἴσον ἔχοντος ὄγκον τῷ τοῦ Α
 τὸ βάρος εἶμεν τὸ ΒΓ. Ἀφεθὲν οὖν ἐς τὸ ὑγρὸν τὸ μέγεθος
-<lb n="10"/> τὸ ἐξ ἀμφοτέρων τῶν Α, &#9651; συγκείμενον ἐς τοσοῦτον
+<lb n="10"/> τὸ ἐξ ἀμφοτέρων τῶν Α, △ συγκείμενον ἐς τοσοῦτον
 δύσεται, <add cause="omitted">ἔστε κα ταλικοῦτος ὄγκος τοῦ</add> ὑγροῦ, ἁλίκον
 καὶ τὸ δεδυκὸς τοῦ μεγέθεος, ἴσον βάρος ἔχῃ τῷ ὅλῳ
 μεγέθει· δέδεικται γὰρ τοῦτο. Ἔστω δὴ ἐπιφάνειά τινος
-ὑγροῦ ἁ ΑΒΓ&#9651; περιφέρεια. Ἐπεὶ οὖν ὁ ταλικοῦτος
+ὑγροῦ ἁ ΑΒΓ△ περιφέρεια. Ἐπεὶ οὖν ὁ ταλικοῦτος
 <lb n="15"/> ὄγκος τοῦ ὑγροῦ, ἁλίκον ἐστὶ τὸ Α μέγεθος, ἴσον βάρος
-ἔχει τοῖς Α, &#9651; μεγέθεσιν, δῆλον ὅτι τὸ δεδυκὸς αὐτοῦ
-ἐσσεῖται τὸ Α μέγεθος, τὸ δὲ λοιπὸν αὐτοῦ, ἐν ᾧ &#9651;,
+ἔχει τοῖς Α, △ μεγέθεσιν, δῆλον ὅτι τὸ δεδυκὸς αὐτοῦ
+ἐσσεῖται τὸ Α μέγεθος, τὸ δὲ λοιπὸν αὐτοῦ, ἐν ᾧ △,
 ἐσσεῖται ὅλον ὑπὲρ τᾶς τοῦ ὑγροῦ ἐπιφανείας· εἰ γὰρ
 α<gap reason="omitted"/>δέδυκεν τὸ στερεόν, ἕπεται <gap reason="omitted"/> τούτου δεδειγμένου.
 <lb n="20"/> Δῆλον οὖν ὅτι <gap reason="omitted"/> ἐς τὸ ἄνω φέρεται τὸ Α μέγεθος
-<gap reason="omitted"/> ὑπὸ τοῦ ἄνω τοῦ &#9651; ἐς τὸ κάτω, ἐπεὶ οὐδέτερον
-ὑπʼ οὐδετέρου ἐξωθεῖτο. Ἀλλὰ τὸ &#9651; ἐς τὸ κάτω θλίβει
+<gap reason="omitted"/> ὑπὸ τοῦ ἄνω τοῦ △ ἐς τὸ κάτω, ἐπεὶ οὐδέτερον
+ὑπʼ οὐδετέρου ἐξωθεῖτο. Ἀλλὰ τὸ △ ἐς τὸ κάτω θλίβει
 τοσούτῳ βάρει, ἁλίκον ἐστὶ τὸ Γ· ὑπέκειτο γὰρ τὸ βάρος
-τοῦ ἐν ᾧ τὸ &#9651; εἶμεν ἴσον τῷ Γ· δῆλον οὖν ὃ ἔδει δεῖξαι.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="7">
-<pb n="16"/>
-<head>ζ΄.</head>
-<p>Τὰ βαρύτερα τοῦ ὑγροῦ ἀφεθέντα εἰς τὸ ὑγρὸν οἰκεῖται
+τοῦ ἐν ᾧ τὸ △ εἶμεν ἴσον τῷ Γ· δῆλον οὖν ὃ ἔδει δεῖξαι.</p>
+            </div>
+            <div n="7" type="chapter">
+               <pb n="16"/>
+               <head>ζ΄.</head>
+               <p>Τὰ βαρύτερα τοῦ ὑγροῦ ἀφεθέντα εἰς τὸ ὑγρὸν οἰκεῖται
 κάτω, ἔστʼ ἂν καταβᾶντι, καὶ ἐσσοῦνται κουφότερα ἐν
 τῷ ὑγρῷ τοσοῦτον, ὅσον ἔχει τὸ βάρος τοῦ ὑγροῦ τοῦ
 <lb n="5"/> ταλικοῦτον ὄγκον ἔχοντος, ἁλίκος ἐστὶν ὁ τοῦ στερεοῦ
 μεγέθεος ὄγκος.</p>
-<p>Ὅτι μὲν οὖν οἰκεῖται ἐς τὸ κάτω, ἔστʼ ἂν καταβᾶντι,
+               <p>Ὅτι μὲν οὖν οἰκεῖται ἐς τὸ κάτω, ἔστʼ ἂν καταβᾶντι,
 δῆλον· τὰ γὰρ ὑποκάτω αὐτοῦ μέρεα τοῦ ὑγροῦ θλιβησοῦνται
 μᾶλλον τῶν ἐξ ἴσου αὐτοῖς κειμένων μερέων,
 <lb n="10"/> ἐπειδὴ βαρύτερον ὑπόκειται τὸ στερεὸν μέγεθος τοῦ
 ὑγροῦ· ὅτι δὲ κουφότερα ἐσσοῦνται, ὡς εἴρηται,
 δειχθήσεται.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<p>Ἔστω τι μέγεθος τὸ Α, ὅ ἐστι βαρύτερον τοῦ ὑγροῦ,
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <p>Ἔστω τι μέγεθος τὸ Α, ὅ ἐστι βαρύτερον τοῦ ὑγροῦ,
 βάρος δὲ ἔστω τοῦ μὲν ἐν ᾧ Α μεγέθεος τὸ ΒΓ, τοῦ δὲ
 <lb n="15"/> ὑγροῦ τοῦ ἴσον ὄγκον ἔχοντος τῷ Α τὸ Β. Δεικτέον ὅτι
 τὸ Α μέγεθος ἐν τῷ ὑγρῷ ἐὸν βάρος ἕξει ἴσον τῷ Γ.</p>
-<p>Λελάφθω γάρ τι μέγεθος τὸ ἐν ᾧ τὸ &#9651; <add cause="omitted">κουφότερον
+               <p>Λελάφθω γάρ τι μέγεθος τὸ ἐν ᾧ τὸ △ <add cause="omitted">κουφότερον
 τοῦ ὑγροῦ τοῦ ἴσον ὄγκον ἔχοντος αὐτῷ, ἔστω</add> δὲ τοῦ
-μὲν ἐν ᾧ τὸ &#9651; μεγέθεος βάρος ἴσον τῷ Β βάρει, τοῦ δὲ
+μὲν ἐν ᾧ τὸ △ μεγέθεος βάρος ἴσον τῷ Β βάρει, τοῦ δὲ
 
 <pb n="17"/>
-ὑγροῦ τοῦ ἴσον ὄγκον ἔχοντος τῷ &#9651; μεγέθει τὸ βάρος
+ὑγροῦ τοῦ ἴσον ὄγκον ἔχοντος τῷ △ μεγέθει τὸ βάρος
 ἔστω ἴσον τῷ ΒΓ βάρει. Συντεθέντων δὴ ἐς τὸ αὐτὸ τῶν
-μεγεθέων, ἐν οἷς τὰ Α, &#9651;, τὸ τῶν συναμφοτέρων μέγεθος
+μεγεθέων, ἐν οἷς τὰ Α, △, τὸ τῶν συναμφοτέρων μέγεθος
 ἰσοβαρὲς ἐσσεῖται τῷ ὑγρῷ ἔστι γὰρ τῶν μεγεθέων
 <lb n="5"/> συναμφοτέρων τὸ βάρος ἴσον συναμφοτέροις τοῖς βάρεσιν
 τῷ τς ΒΓ καὶ τῷ Β, τοῦ δὲ ὑγροῦ τοῦ ἴσον ὄγκον ἔχοντος
@@ -379,26 +404,25 @@ secundum periferiam XO et quae
 βάρεσιν. Ἀφεθέντων οὖν τῶν μεγεθέων ἐς τὸ ὑγρὸν
 ἰσορροπησοῦνται τῷ ὑγρῷ καὶ οὔτε εἰς τὸ ἄνω οἰσοῦνται
 <lb n="10"/> οὔτε εἰς τὸ κάτω· διὸ τὸ μὲν ἐν ᾧ Α μέγεθος οἰσεῖ <add cause="omitted">ται
-ἐς τὸ κάτω καὶ τοσαύτᾳ βίᾳ ὑ</add>πὸ τοῦ ἐν ᾧ &#9651; μεγέθεος
-ἀνέλκεται ἐς τὸ ἄνω, τὸ δὲ ἐν ᾧ &#9651; μέγεθος, ἐπεὶ κουφότερόν
+ἐς τὸ κάτω καὶ τοσαύτᾳ βίᾳ ὑ</add>πὸ τοῦ ἐν ᾧ △ μεγέθεος
+ἀνέλκεται ἐς τὸ ἄνω, τὸ δὲ ἐν ᾧ △ μέγεθος, ἐπεὶ κουφότερόν
 ἐστι τοῦ ὑγροῦ, ἀνοισεῖται εἰς τὸ ἄνω τοσαύτᾳ βίᾳ, ὅσον
 ἐστὶ τὸ Γ βάρος· δέδεικται γὰρ ὅτι τὰ κουφότερα τοῦ
 <lb n="15"/> ὑγροῦ μεγέθεα στερεὰ βιασθέντα ἐς τὸ ὑγρὸν ἀναφέρονται
 τοσαύτᾳ βίᾳ ἐς τὸ ἄνω, ὅσον ἐστὶ τὸ βάρος, ᾧ βαρύτερόν
 ἐστι τοῦ μεγέθεος τὸ ὑγρὸν τὸ ἴσογκον τῷ μεγέθει. Ἔστι
-δὲ τῷ Γ βάρει βαρύτερον τοῦ &#9651; μεγέθεος τὸ ὑγρὸν τὸ
-ἴσον ὄγκον ἔχον τῷ &#9651; δῆλον οὖν ὅτι καὶ τὸ ἐν ᾧ Α
+δὲ τῷ Γ βάρει βαρύτερον τοῦ △ μεγέθεος τὸ ὑγρὸν τὸ
+ἴσον ὄγκον ἔχον τῷ △ δῆλον οὖν ὅτι καὶ τὸ ἐν ᾧ Α
 <lb n="20"/> μέγεθος ἐς τὸ κάτω οἰσει <add cause="omitted">ται τοσούτῳ βάρει, ὅσον ἐστὶ
 τὸ Γ</add>.</p>
-<p>Ὑποκεί<add cause="omitted">σθω τῶν ἐν τῷ ὑγρῷ ἄνω</add> φερομένων ἕκαστον
+               <p>Ὑποκεί<add cause="omitted">σθω τῶν ἐν τῷ ὑγρῷ ἄνω</add> φερομένων ἕκαστον
 ἀναφέρεσθαι κατὰ τὰν κάθετον τὰν διὰ τοῦ κέντρου τοῦ
 βάρεος αὐτοῦ ἀγμέναν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="8">
-<pb n="18"/>
-<head>η΄.</head>
-<p>Εἴ κα στερεόν τι μέγεθος κουφότερον τοῦ ὑγροῦ σφαίρας
+            </div>
+            <div n="8" type="chapter">
+               <pb n="18"/>
+               <head>η΄.</head>
+               <p>Εἴ κα στερεόν τι μέγεθος κουφότερον τοῦ ὑγροῦ σφαίρας
 τμάματος ἔχον σχῆμα εἰς τὸ ὑγρὸν ἀφεθῇ οὕτως, ὥστε
 τὰν βάσιν τοῦ τμάματος μὴ ἅπτεσθαι τοῦ ὑγροῦ, ὀρθὸν
 <lb n="5"/> καταστασεῖται τὸ σχῆμα οὕτως, ὥστε τὸν ἄξονα τοῦ
@@ -406,22 +430,25 @@ secundum periferiam XO et quae
 ἕλκηται τὸ σχῆμα οὕτως, ὥστε τὰν βάσιν τοῦ τμάματος
 ἅπτεσθαι τοῦ ὑγροῦ, οὐ μενεῖ κεκλιμένον, εἴ κα ἀφεθῇ,
 ἀλλʼ ὀρθὸν ἀποκαταστασεῖται.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<lb n="10"/><p> Νοείσθω γάρ τι μέγεθος, οἷον εἴρηται, ἐς τὸ ὑγρὸν
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <lb n="10"/>
+               <p> Νοείσθω γάρ τι μέγεθος, οἷον εἴρηται, ἐς τὸ ὑγρὸν
 ἀφε<add cause="omitted">θέν, καὶ διά τε τοῦ ἄξονος τοῦ</add> τμάματος καὶ τοῦ
 κέντρου τᾶς γᾶς νοείσθω ἐπίπεδον ἐκβεβλημένον, τομὰ
-δʼ ἔστω τᾶς μὲν ἐπιφανείας τοῦ ὑγροῦ ἁ ΑΒΓ&#9651;, τοῦ δὲ
+δʼ ἔστω τᾶς μὲν ἐπιφανείας τοῦ ὑγροῦ ἁ ΑΒΓ△, τοῦ δὲ
 σχήματος τοῦ ἐς τὸ ὑγρὸν ἀφεθέντος ἁ ΕΖΗΘ περιφέρεια,
 <lb n="15"/> ἄξων δὲ τοῦ τμάματος ἔστω ἁ ΘΖ· τὸ δὴ κέντρον τᾶς
 σφαίρας ἔστιν ἐπὶ τᾶς ΘΖ.</p>
-<p>Πρῶτον μὲν, εἰ μεῖβόν ἐστιν ἡμισφαιρίου τὸ τμᾶμα,
+               <p>Πρῶτον μὲν, εἰ μεῖβόν ἐστιν ἡμισφαιρίου τὸ τμᾶμα,
 ἔστω τὸ Κ, καὶ ἔστω, εἰ δυνατόν, κεκλιμένον τὸ σχῆμα
 
 <pb n="19"/>
 ἤτοι ὑπό τινος κλιθὲν ἢ καθ᾿ αὑτό, Δεικτέον οὖν ὅτι οὐ
 μενεῖ, ἀλλʼ εἰς ὀρθὸν ἀποκαταστασεῖται, ὥστε τὰ Ζ, Θ
 κατὰ κάθετον εἶμεν.</p>
-<p>Ἐπεὶ γὰρ ὑπόκειται κεκλίσθαι τὸ σχῆμα, οὐκ ἔστι
+               <p>Ἐπεὶ γὰρ ὑπόκειται κεκλίσθαι τὸ σχῆμα, οὐκ ἔστι
 <lb n="5"/> τὰ Ζ, Θ κατὰ κάθετον. Ἄχθω δὴ διὰ τοῦ Κ καὶ τοῦ Λ ἁ
 ΚΛ, τὸ δὲ Λ κέντρον ὑποκείσθω τᾶς γᾶς· τὸ δὴ σχῆμα
 τὸ ἐν τῷ ὑγρῷ ἀπολελαμμένον ὑπὸ τᾶς τοῦ ὑγροῦ ἐπιφανείας
@@ -454,28 +481,29 @@ secundum periferiam XO et quae
 κάθετον, τὸ μὲν ἐς τὸ κάτω φερόμενον, τὸ δὲ ἐς τὸ ἄνω.
 Ὥστε μένει τὸ σχῆμα οὐδέτερον γὰρ ὑπʼ οὐδετέρου
 ἐξωθήσεται.</p>
-<lb n="10"/><p> Τὰ δʼ αὐτὰ ἐσσεῖται καὶ εἴ κα τὸ σχῆμα ἡμισφαίριον
+               <lb n="10"/>
+               <p> Τὰ δʼ αὐτὰ ἐσσεῖται καὶ εἴ κα τὸ σχῆμα ἡμισφαίριον
 ᾗ ἢ ἔλασσον ἡμισφαιρίου.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="9">
-<head>θ΄.</head>
-<p>Καὶ τοίνυν, εἴ κα τὸ σχῆμα κουφότερον ἐὸν τοῦ ὑγροῦ
+            </div>
+            <div n="9" type="chapter">
+               <head>θ΄.</head>
+               <p>Καὶ τοίνυν, εἴ κα τὸ σχῆμα κουφότερον ἐὸν τοῦ ὑγροῦ
 ἀφεθῇ ἐς τὸ ὑγρὸν οὕτως, ὥστε τὰν βάσιν αὐτοῦ ὅλαν
 <lb n="15"/> εἶμεν ἐν τῷ ὑγρῷ, ὀρθὸν καταστασεῖται τὸ σχῆμα οὕτως,
 ὥστε τὸν ἄξονα αὐτοῦ κατὰ κάθετον εἶμεν.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-
-<pb n="21"/>
-<p>Νοείσθω γάρ τι μέγεθος, οἷον εἴρηται, εἰς τὸ ὑγρὸν
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <pb n="21"/>
+               <p>Νοείσθω γάρ τι μέγεθος, οἷον εἴρηται, εἰς τὸ ὑγρὸν
 ἀφετώμενον, νοείσθω δὲ καὶ ἐπίπεδον ἀγόμενον διὰ τοῦ
 ἄξονος τοῦ τμάματος καὶ διὰ τοῦ κέντρου τᾶς γᾶς, τομὰ
-δὲ ἔστω τᾶς μὲν ἐπιφανείας τοῦ ὑγροῦ ἁ ΑΒΓ&#9651; περιφέρεια,
+δὲ ἔστω τᾶς μὲν ἐπιφανείας τοῦ ὑγροῦ ἁ ΑΒΓ△ περιφέρεια,
 <lb n="5"/> τοῦ δὲ σχήματος ἁ ΕΖΗ περιφέρεια καὶ ἁ ΕΗ εὐθεῖα, ἄξων
 δὲ ἔστω τοῦ τμάματος ἁ ΖΘ. Εἰ οὖν δυνατόν, μὴ κατὰ
 κάθετον ἔστω ἁ ΖΘ δεικτέον οὖν ὅτι οὐ μενεῖ τὸ σχῆμα,
 ἀλλὰ ἐπʼ ὀρθὸν καταστασεῖται.</p>
-<p>Ἔστι δὴ τὸ κέντρον τᾶς σφαίρας ἐπὶ τᾶς ΖΘ πάλιν
+               <p>Ἔστι δὴ τὸ κέντρον τᾶς σφαίρας ἐπὶ τᾶς ΖΘ πάλιν
 <lb n="10"/> γὰρ μεῖβον ἡμισφαιρίου ἔστω πρῶτον τὸ σχῆμα καὶ
 ἔστω τὸ Κ διὰ δὲ τοῦ Κ καὶ τοῦ κέντρου τᾶς γᾶς τοῦ
 Λ ἄχθω ἁ ΚΛ τὸ δὴ σχῆμα τὸ ἐκτὸς τοῦ ὑγροῦ ἀπολαμβανόμενον
@@ -499,24 +527,25 @@ secundum periferiam XO et quae
 τὰ μὲν ποτὶ τῷ Η μέρεα οἰσοῦνται ἐς τὸ κάτω, τὰ δὲ ποτὶ
 <lb n="5"/> τῷ Ε ἐς τὸ ἄνω, καὶ ἀεὶ τοῦτο ἐσσεῖται, ἔστε κα ΘΖ κατὰ
 κάθετον γένηται.</p>
-</div>
-</div>
-
-<div type="textpart" subtype="book" n="2">
-<pb n="23"/>
-<head>Β΄.</head>
-<div type="textpart" subtype="chapter" n="1">
-<head>ά.</head>
-<p>Εἴ κά τι μέγεθος κουφότερον ἐὸν τοῦ ὑγροῦ ἀφεθῇ
+            </div>
+         </div>
+         <div n="2" type="book">
+            <pb n="23"/>
+            <head>Β΄.</head>
+            <div n="1" type="chapter">
+               <head>ά.</head>
+               <p>Εἴ κά τι μέγεθος κουφότερον ἐὸν τοῦ ὑγροῦ ἀφεθῇ
 ἐς τὸ ὑγρόν, τοῦτον ἕξει τὸν λόγον τῷ βάρει ποτὶ τὸ
 <lb n="5"/> ὑγρόν, ὃν ἔχει τὸ δεδυκὸς μέγεθος ποτὶ τὸ ὅλον μέγεθος.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<p>Ἀφείσθω γάρ τι εἰς τὸ ὑγρὸν μέγεθος στερεὸν τὸ ΦΑ
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <p>Ἀφείσθω γάρ τι εἰς τὸ ὑγρὸν μέγεθος στερεὸν τὸ ΦΑ
 κουφότερον τοῦ ὑγροῦ ἐόν, ἔστω δὲ τὸ μὲν δεδυκὸς
 αὐτοῦ τὸ Α, τὸ δὲ ἐκτὸς τοῦ ὑγροῦ τὸ Φ, Δεικτέον ὅτι
 τὸ ΦΑ τῷ βάρει ποτὶ τὸ ὑγρὸν τὸ ἴσογκον τοῦτον ἔχει
 <lb n="10"/> τὸν λόγον, ὃν ἔχει τὸ Α ποτὶ τὸ ΦΑ.</p>
-<p>Λελάφθω γάρ τι τοῦ ὑγροῦ μέγεθος τὸ ΝΙ ἴσον ὄγκον
+               <p>Λελάφθω γάρ τι τοῦ ὑγροῦ μέγεθος τὸ ΝΙ ἴσον ὄγκον
 ἔχον τῷ ΦΑ, καὶ τῷ μὲν Φ ἴσον ἔστω τὸ Ν, τῷ δὲ Α τὸ Ι,
 καὶ ἔτι τὸ μὲν τοῦ ΦΑ μεγέθεος βάρος ἔστω τὸ Β, τοῦ
 δὲ ΝΙ τὸ ΡΟ, τοῦ δὲ Ι τὸ Ρ τὸ ΦΑ ἄρα ποτὶ τὸ ΝΙ τοῦτον
@@ -533,11 +562,10 @@ secundum periferiam XO et quae
 τὸ Ρ ποτὶ τὸ ΡΟ. Ὃν δὲ λόγον ἔχει τὸ Ρ ποτὶ τὸ ΡΟ, τοῦτον
 ἔχει τὸν λόγον τὸ Ι ποτὶ τὸ ΙΝ καὶ τὸ Α ποτὶ τὸ ΦΑ
 <lb n="10"/> δέδεικται ἄρα τὸ προτεθέν.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="2">
-<head>β΄.</head>
-<p>Τὸ ὀρθὸν τμᾶμα τοῦ ὀρθογωνίου κωνοειδέος, ὅταν
+            </div>
+            <div n="2" type="chapter">
+               <head>β΄.</head>
+               <p>Τὸ ὀρθὸν τμᾶμα τοῦ ὀρθογωνίου κωνοειδέος, ὅταν
 τὸν ἄξονα ἔχῃ μὴ μείζονα ἢ ἡμιόλιον τᾶς μέχρι τοῦ
 ἄξονος, πάντα λόγον ἔχον ποτὶ τὸ ὑγρὸν τῷ βάρει,
 <lb n="15"/> ἀφεθὲν εἰς τὸ ὑγρὸν οὕτως, ὥστε τὰν βάσιν αὐτοῦ μὴ
@@ -545,13 +573,14 @@ secundum periferiam XO et quae
 ἀλλὰ ἀποκαταστασεῖται ὀρθόν. Ὀρθὸν δὲ λέγω καθεστακέναι
 τὸ τοιοῦτο τμᾶμα, ὁπόταν τὸ ἀποτετμακὸς αὐτὸ
 ἐπίπεδον παρὰ τὰν ἐπιφάνειαν τοῦ ὑγροῦ.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-
-<pb n="25"/>
-<p>Ἔστω τμᾶμα ὀρθογωνίου κωνοειδέος, οἷον εἴρηται,
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <pb n="25"/>
+               <p>Ἔστω τμᾶμα ὀρθογωνίου κωνοειδέος, οἷον εἴρηται,
 καὶ κείσθω κεκλιμένον. Δεικτέον ὅτι οὐ μενεῖ, ἀλλʼ ἀποκαταστασεῖται
 ὀρθόν.</p>
-<p>Τμαθέντος δὴ αὐτοῦ ἐπιπέδῳ διὰ τοῦ ἄξονος ὀρθῷ
+               <p>Τμαθέντος δὴ αὐτοῦ ἐπιπέδῳ διὰ τοῦ ἄξονος ὀρθῷ
 <lb n="5"/> ποτὶ τὸ <add cause="omitted">ἐπίπεδον τὸ ἐπὶ τᾶς ἐπιφανείας</add> τοῦ ὑγροῦ
 τμάματος ἔστω τομὰ ἁ ΑΠΟΛ ὀρθογωνίου κώνου τομά,
 ἄξων δὲ τοῦ τμάματος καὶ διάμετρος τᾶς τομᾶς ἁ ΝΟ,
@@ -600,11 +629,11 @@ secundum periferiam XO et quae
 <add cause="omitted">οὐ μενεῖ τὸ σχῆμα, ἀλλὰ τὰ μὲν κατὰ</add> τὸ Α εἰς τὸ ἄνω
 ἐνεχθήσεται, τὰ δὲ κατὰ τὸ Λ εἰς τὸ κάτω, καὶ τοῦτο ἀεὶ
 ἐσσεῖται, ἕως ἂν ὀρθὸν ἀποκατασταθῇ.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="3">
-<head>γ΄.</head>
-<lb n="25"/><p> Ὀρθὸν τμᾶμα ὀρθογωνίου κωνοειδέος, ὅταν τὸν ἄξονα
+            </div>
+            <div n="3" type="chapter">
+               <head>γ΄.</head>
+               <lb n="25"/>
+               <p> Ὀρθὸν τμᾶμα ὀρθογωνίου κωνοειδέος, ὅταν τὸν ἄξονα
 ἔχῃ μὴ μείζονα ἢ ἡμιόλιον τᾶς μέχρι τοῦ ἄξονος, πάντα
 
 <pb n="27"/>
@@ -613,8 +642,10 @@ secundum periferiam XO et quae
 τεθὲν κεκλιμένον οὐ μενεῖ κεκλιμένον, ἀλλʼ ἀποκαταστασεῖται
 οὕτως, ὥστε τὸν ἄξονα αὐτοῦ κατὰ κάθετον
 <lb n="5"/> εἶμεν.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<p>Ἀφείσθω γάρ τι τμᾶμα εἰς τὸ ὑγρόν, οἷον εἴρηται,
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <p>Ἀφείσθω γάρ τι τμᾶμα εἰς τὸ ὑγρόν, οἷον εἴρηται,
 καὶ ἔστω αὐτοῦ ἁ βάσις ἐν τῷ ὑγρῷ, τμαθέντος δὲ αὐτοῦ
 ἐπιπέδῳ διὰ τοῦ ἄξονος ὀρθῷ ποτὶ τὰν ἐπιφάνειαν τοῦ
 ὑγροῦ τομὰ ἔστω ἁ ΑΠΟΛ ὀρθογωνίου κώνου τομά,
@@ -623,7 +654,7 @@ secundum periferiam XO et quae
 κεκλιμένον κεῖται τὸ τμᾶμα, οὐκ ἐσσεῖται κατὰ κάθετον
 ὁ ἄξων οὐκ ἄρα ποιήσει ἁ ΠΦ ἴσας γωνίας ποτὶ τὰν
 ΙΣ. Ἄχθω δή τις <add cause="omitted">ἁ ΚΩ παρὰ τὰν ΙΣ ἐφαπτομένα κατὰ</add>
-<lb n="15"/> τὸ Ο τᾶς ΑΠΟΛ τομᾶς, καὶ τοῦ μὲν ΑΠΟΛ στερεοῦ κέντρον
+                  <lb n="15"/> τὸ Ο τᾶς ΑΠΟΛ τομᾶς, καὶ τοῦ μὲν ΑΠΟΛ στερεοῦ κέντρον
 ἔστω τοῦ βάρεος τὸ Ρ, τοῦ δὲ ΙΠΟΣ στερεοῦ τὸ Β, καὶ
 ἐπιζευχθεῖσα ἁ ΒΡ ἐκβεβλήσθω, καὶ ἔστω κέντρον τοῦ
 βάρεος τὸ Γ τοῦ ΙΣΛΑ. Ὁμοίως δὴ δειχθήσεται ἁ μὲν
@@ -638,11 +669,11 @@ secundum periferiam XO et quae
 οὕτως ἔχον ἐν τῷ ὑγρῷ, ἀλλὰ τὸ μὲν κατὰ τὸ Α ἄνω
 τὰν φορὰν ἕξει, τὸ δὲ κατὰ τὸ Λ κάτω, ἕως ἂν γένηται
 ἁ ΠΦ κατὰ κάθετον.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="4">
-<head>δ΄.</head>
-<lb n="10"/><p> Τὸ ὀρθὸν τμᾶμα τοῦ ὀρθογωνίου κωνοειδέος, ὁπόταν
+            </div>
+            <div n="4" type="chapter">
+               <head>δ΄.</head>
+               <lb n="10"/>
+               <p> Τὸ ὀρθὸν τμᾶμα τοῦ ὀρθογωνίου κωνοειδέος, ὁπόταν
 κουφότερον ᾗ τοῦ ὑγροῦ καὶ τὸν ἄξονα ἔχῃ μείζονα ἢ
 ἡμιόλιον τᾶς μέχρι τοῦ ἄξονος, ὅταν τῷ βάρει ποτὶ τὸ
 ἴσογκον ὑγρὸν μὴ ἐλάσ<add cause="omitted">σονα λόγον ἔχῃ τοῦ ὃν ἔχει</add>
@@ -651,22 +682,23 @@ secundum periferiam XO et quae
 τὸ ἀπὸ τοῦ ἄξονος, ἀφεθὲν εἰς τὸ ὑγρὸν οὕτως, ὥστε
 τὰν βάσιν αὐτοῦ μὴ ἅπτεσθαι τοῦ ὑγροῦ, τεθὲν κεκλιμένον
 οὐ μενεῖ κεκλιμένον, ἀλλὰ ἀποκαταστασεῖται εἰς ὀρθόν.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-
-<pb n="29"/>
-<p>Ἔστω τμᾶμα ὀρθογωνίου κωνοειδέος, οἷον εἴρηται,
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <pb n="29"/>
+               <p>Ἔστω τμᾶμα ὀρθογωνίου κωνοειδέος, οἷον εἴρηται,
 καὶ ἀφεθὲν εἰς τὸ ὑγρόν, εἰ δυνατόν, ἔστω μὴ ὀρθόν, ἀλλὰ
 κεκλιμένον, τμαθέντος δὲ αὐτοῦ ἐπιπέδῳ διὰ τοῦ ἄξονος
 ὀρθῷ ποτὶ τὰν ἐπιφάνειαν τοῦ ὑγροῦ τοῦ μὲν τμάματος
 <lb n="5"/> τομὰ
 <lg>
-<l>sit rectanguli coni sectio quae APOL,</l>
-</lg>
+                     <l>sit rectanguli coni sectio quae APOL,</l>
+                  </lg>
 axis autem portionis et diameter
 quae NO, superficiei autem humidi sectio sit IS.
 Si igitur portio non est recta, non faciet quae NO
 <lb n="10"/> ad IS angulos aequa es.</p>
-<p>Ducatur autem quae ΚΩ contingens sectionem
+               <p>Ducatur autem quae ΚΩ contingens sectionem
 rectanguli coni penes P, aequedistans autem ipsi IS,
 a P autem aequedistanter ipsi ON ducatur quae PF,
 et accipiantur centra grauitatum, et erit solidi
@@ -726,11 +758,11 @@ extra humidum absumptum deorsum feretur in
 humidum secundum productam per G aequedistantem
 ipsi RT, et per totum idem erit, donec utique
 conoidale rectum restituatur.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="5">
-<lb n="10"/><head> V.</head>
-<p>Recta portio rectanguli conoidalis, quando leuior
+            </div>
+            <div n="5" type="chapter">
+               <lb n="10"/>
+               <head> V.</head>
+               <p>Recta portio rectanguli conoidalis, quando leuior
 existens humido habuerit axem maiorem quam
 emiolium eius quae usque ad axem, si ad humidum
 in grauitate non maiorem proportionem habeat illa,
@@ -741,10 +773,11 @@ ad tetragonum quod ab axe, dimissa in humidum
 ita, ut basis ipsius tota sit in humido, posita inclinata
 <lb n="20"/> non manet inclinata, sed restituetur ita, ut axis
 ipsius secundum perpendicularem sit.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-
-<pb n="32"/>
-<p>Dimittatur enim in humidum aliqua portio, qualis
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <pb n="32"/>
+               <p>Dimittatur enim in humidum aliqua portio, qualis
 dicta est, et sit basis ipsius tota in humido, secta
 autem ipsa plano per axem recto ad superficiem
 humidi erit sectio rectanguli coni sectio, et sit quae
@@ -800,11 +833,11 @@ secundum perpendicularem quae per G, et non
 manet solida portio APOL, sed intra humidum erit
 motum, donec utique quae NO fiat secundum
 perpendicularem.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="6">
-<lb n="25"/><head> VI.</head>
-<p>Recta portio rectanguli conoidalis, quando humido
+            </div>
+            <div n="6" type="chapter">
+               <lb n="25"/>
+               <head> VI.</head>
+               <p>Recta portio rectanguli conoidalis, quando humido
 leuior existens axem habuerit maiorem quidem
 quam hemiolium, minorem autem quam ut hanc
 
@@ -814,8 +847,10 @@ quam habent quindecim ad quattuor, dimissa in
 humidum ita, ut basis ipsius contingat humidum,
 numquam stabit inclinata ita, ut basis ipsius secundum
 <lb n="5"/> unum signum contingat humidum.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<p>Sit portio, qualis dicta est, et dimissa in humidum
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <p>Sit portio, qualis dicta est, et dimissa in humidum
 consistat, sicut ostensum est, ita ut basis ipsius
 secundum unum signum contingat humidum, secta
 autem ipsa per axem plano recto ad superficiem
@@ -867,17 +902,18 @@ feretur in humidum secundum eam quae per G
 <pb n="36"/>
 et basis ipsius non tanget superficiem humidi secundum
 unum signum.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<p>Si autem quae PI non secuerit lineam ΚΩ, sicut
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <p>Si autem quae PI non secuerit lineam ΚΩ, sicut
 in secunda figura descriptum est, manifestum quod
 <lb n="5"/> signum T, quod est centrum grauitatis demersae
 portionis, cadet inter P et l, et reliqua similiter
 demonstrabuntur.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="7">
-<head>ζ΄.</head>
-<p>Τὸ ὀρθὸν τμᾶμα τοῦ ὀρθογωνίου κωνοειδέος, ὅταν
+            </div>
+            <div n="7" type="chapter">
+               <head>ζ΄.</head>
+               <p>Τὸ ὀρθὸν τμᾶμα τοῦ ὀρθογωνίου κωνοειδέος, ὅταν
 <lb n="10"/> τοῦ ὑγροῦ κουφότερον ᾖ καὶ τὸν ἄξονα ἔχῃ μείζονα
 μὲν ἢ ἡμιόλιον τᾶς μέχρι τοῦ ἄξονος, ἐλάσσονα δὲ ἢ
 ὥστε λόγον ἔχειν ποτὶ τὰν μέχρι τοῦ ἄξονος, ὃν τὰ ιε
@@ -888,13 +924,15 @@ demonstrabuntur.</p>
 βάσιν αὐτοῦ ἅπτεσθαι τᾶς τοῦ ὑγροῦ ἐπιφανείας, ἀλλʼ ὥστε
 ὅλαν εἶμεν ἐν τῷ ὑγρῷ μηδὲ καθʼ ἓν σαμεῖον ἁπτομέναν
 τᾶς ἐπιφανείας.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<p>Ἔστω τμᾶμα οἷον εἴρηται, καὶ ἀφεθὲν ἐς τὸ ὑγρὸν
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <p>Ἔστω τμᾶμα οἷον εἴρηται, καὶ ἀφεθὲν ἐς τὸ ὑγρὸν
 <lb n="5"/> καθάπερ ἐρρέθη καθεστακέτω οὕτως, ὥστε τὰν βάσιν
 αὐτοῦ ἅπτεσθαι τᾶς τοῦ ὑγροῦ ἐπιφανείας. Δεικτέον
 ὅτι οὐ μενεῖ, ἀλλὰ ἀνακλιθήσεται οὕτως, ὥστε τὰν βάσιν
 αὐτοῦ μηδὲ καθʼ ἓν ἅπτεσθαι τᾶς τοῦ ὑγροῦ ἐπιφανείας.</p>
-<p>Τμαθέντος γὰρ αὐτοῦ ἐπιπέδῳ ὀρθῷ ποτὶ τὰν τοῦ
+               <p>Τμαθέντος γὰρ αὐτοῦ ἐπιπέδῳ ὀρθῷ ποτὶ τὰν τοῦ
 <lb n="10"/> ὑγροῦ ἐπιφάνειαν τομὰ ἔστω ἁ ΑΠΟΛ ὀρθογωνίου κώνου
 τομά, ἔστω δὲ καὶ τᾶς τοῦ ὑγροῦ ἐπιφανείας τομὰ ἁ ΣΛ,
 ἄξων δὲ ἔστω τοῦ τμάματος καὶ διάμετρος ἁ ΠΦ, πάλιν
@@ -911,8 +949,10 @@ demonstrabuntur.</p>
 δειχθήσεται ὅτι ἁ ΝΟ ἤτοι ἡμιολία τᾶς ΟΙ ἢ μείζων ἢ
 ἡμιολία γίνεται δὴ ἁ ΟΙ τᾶς ΙΝ ἐλάσσων ἢ διπλασία.
 Ἔστω δὴ ἁ ΟΒ διπλασία τᾶς ΒΝ, καὶ κατεσκευάσθω τὰ
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<lb n="5"/> αὐτά ὁμοίως δὴ δειχθήσεται ἁ ΡΘ ὀρθὰς γωνίας ποιοῦσα
+<figure>
+                     <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+                  </figure>
+                  <lb n="5"/> αὐτά ὁμοίως δὴ δειχθήσεται ἁ ΡΘ ὀρθὰς γωνίας ποιοῦσα
 ποτὶ τὰν TΟ καὶ ποτὶ τὰν τοῦ ὑγροῦ ἐπιφάνειαν, καὶ ἀπὸ
 τῶν Β, Γ ἀχθεῖσαι παρὰ τὰν ΡΘ κάθετοι ἐσσοῦνται ἐπὶ
 τὰν τοῦ ὑγροῦ ἐπιφάνειαν. Κατενεχθήσεται οὖν τὸ μὲν
@@ -922,14 +962,14 @@ demonstrabuntur.</p>
 τὰν βάσιν αὐτοῦ μηδὲ καθʼ ἓν ἅπτεσθαι τᾶς τοῦ ὑγροῦ
 ἐπιφανείας, ἐπειδὴ νῦν καθʼ ἓν σαμεῖον <add cause="omitted">ἁπτόμενον ἐπὶ
 τὸ κάτω φέρε</add>ται ἐπὶ τὰ αὐτὰ τῷ Λ.</p>
-<lb n="15"/><p> Φανερὸν δὲ ὅτι, κἂν ἁ ΟΝ μὴ τέμνῃ τὰν ΩΚ, ταὐτὰ
+               <lb n="15"/>
+               <p> Φανερὸν δὲ ὅτι, κἂν ἁ ΟΝ μὴ τέμνῃ τὰν ΩΚ, ταὐτὰ
 δειχθήσεται.</p>
-</div>
-
-<pb n="39"/>
-<div type="textpart" subtype="chapter" n="8">
-<head>η΄.</head>
-<p>Τὸ ὀρθὸν τμᾶμα τοῦ ὀρθογωνίου κωνοειδέος, ὅταν
+            </div>
+            <pb n="39"/>
+            <div n="8" type="chapter">
+               <head>η΄.</head>
+               <p>Τὸ ὀρθὸν τμᾶμα τοῦ ὀρθογωνίου κωνοειδέος, ὅταν
 τὸν ἄξονα ἔχῃ μείζονα ἢ ἡμιόλιον τᾶς μέχρι τοῦ ἄξονος,
 ἐλάσσονα δὲ ἢ ὥστε ποτὶ τὰν μέχρι τοῦ ἄξονος τοῦτον
 <lb n="5"/> ἔχειν τὸν λόγον ὃν ἔχει τὰ ιε ποτὶ τὰ δ, ὅταν τὸ βάρος
@@ -941,29 +981,31 @@ demonstrabuntur.</p>
 οὔτε μενεῖ κεκλιμένον, πλὴν ὁπόταν ὁ ἄξων αὐτοῦ ποτὶ
 τὰν τοῦ ὑγροῦ ἐπιφάνειαν ποιῇ γωνίαν ἴσαν τᾷ μελλούσᾳ
 λέγεσθαι.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<p>Ἔστω τμᾶμα οἷον εἴρηται, καὶ ἁ Β&#9651; ἴσα τῷ ἄξονι,
-<lb n="15"/> καὶ ἁ μὲν ΒΚ τᾶς Κ&#9651; διπλασία, ἁ δὲ ΚΡ ἴσα τᾷ μέχρι
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <p>Ἔστω τμᾶμα οἷον εἴρηται, καὶ ἁ Β△ ἴσα τῷ ἄξονι,
+<lb n="15"/> καὶ ἁ μὲν ΒΚ τᾶς Κ△ διπλασία, ἁ δὲ ΚΡ ἴσα τᾷ μέχρι
 τοῦ ἄξονος, ἔστω δὲ καὶ ἁ μὲν ΤΒ ἡμιολία τᾶς ΒΡ, ἁ δὲ
-Τ&#9651; τᾶς ΚΡ, ὃν δὲ λόγον ἔχει τὸ τμᾶμα τῷ βάρει ποτὶ τὸ
+Τ△ τᾶς ΚΡ, ὃν δὲ λόγον ἔχει τὸ τμᾶμα τῷ βάρει ποτὶ τὸ
 
 <pb n="40"/>
 ὑγρόν, τοῦτον ἐχέτω τὸ ἀπὸ τᾶς ΦΧ τετράγωνον ποτὶ τὸ
-ἀπὸ τᾶς &#9651;Β, ἔστω δὲ καὶ ἁ Φ <add cause="omitted">διπλασία τᾶς Χ. Δῆλον
-οὖν ὅτι</add> ἁ ΦΧ ποτὶ τὰν &#9651;Β ἐλάσσονα λόγον ἔχει τοῦ ὃν
-ἔχει ἁ ΤΒ ποτὶ τὰν Β&#9651; ἔστι γὰρ ἁ ΤΒ ἁ ὑπεροχά, ᾇ
+ἀπὸ τᾶς △Β, ἔστω δὲ καὶ ἁ Φ <add cause="omitted">διπλασία τᾶς Χ. Δῆλον
+οὖν ὅτι</add> ἁ ΦΧ ποτὶ τὰν △Β ἐλάσσονα λόγον ἔχει τοῦ ὃν
+ἔχει ἁ ΤΒ ποτὶ τὰν Β△ ἔστι γὰρ ἁ ΤΒ ἁ ὑπεροχά, ᾇ
 <lb n="5"/> μείζων ἢ ἡμιόλιος ὁ ἄξων τᾶς μέχρι τοῦ ἄξονος ἐλάσσων
 ἄρα ἁ ΦΧ τᾶς ΒΤ ὥστε καὶ ἁ Φ τᾶς ΒΡ. Ἔστω δὴ τᾷ
-Φ ἴσα ἁ ΡΨ, καὶ τᾷ Β&#9651; ὀρθὰ ἄχθω ἁ ΨΕ δυναμένα τὸ
+Φ ἴσα ἁ ΡΨ, καὶ τᾷ Β△ ὀρθὰ ἄχθω ἁ ΨΕ δυναμένα τὸ
 ἥμισυ τοῦ ὑπὸ τῶν ΚΡ, ΒΨ, καὶ ἐπεζεύχθω ἁ ΒΕ. Δεικτέον
 ὅτι τὸ τμᾶμα ἀφεθὲν εἰς τὸ ὑγρὸν ὡς εἴρηται καταστασεῖται
 <lb n="10"/> κεκλιμένον, ὥστε τὸν ἄξονα ποτὶ τὰν ἐπιφάνειαν τοῦ
 ὑγροῦ ποιεῖν γωνίαν ἴσαν τᾷ ΕΒΨ.</p>
-<p>Ἀφείσθω γάρ τι ἐς τὸ ὑγρὸν τμᾶμα, καὶ ἁ βάσις αὐτοῦ
+               <p>Ἀφείσθω γάρ τι ἐς τὸ ὑγρὸν τμᾶμα, καὶ ἁ βάσις αὐτοῦ
 μὴ ἁπτέσθω τᾶς τοῦ ὑγροῦ ἐπιφανείας, καί, εἰ δυνατόν,
 μὴ ποιείσθω ὁ ἄξων αὐτοῦ ποτὶ τὰν ἐπιφάνειαν τοῦ
 <lb n="15"/> ὑγροῦ ἴσαν τᾷ Β, ἀλλὰ μείζω πρῶτον.</p>
-<p>Τμαθέντος δὴ τοῦ τμάματος ἐπιπέδῳ διὰ τοῦ ἄξονος
+               <p>Τμαθέντος δὴ τοῦ τμάματος ἐπιπέδῳ διὰ τοῦ ἄξονος
 ὀρθῷ ποτὶ τὰν ἐπιφάνειαν τοῦ ὑγροῦ τομὰ ἔστω ἁ ΑΠΟΛ
 ὀρθογωνίου κώνου τομά, ἐν δὲ τᾷ τοῦ ὑγροῦ ἐπιφανείᾳ
 ἁ ΞΣ, ἄξων δὲ καὶ διάμετρος <del>τοῦ τμήματος</del> ἁ ΝΟ, Ἄχθω
@@ -989,12 +1031,12 @@ demonstrabuntur.</p>
 ἴσα ἐστὶ τᾷ Φ μείζων ἄρα ἐστὶν ἁ ΙΩ τᾶς Φ. Καὶ ἐπεὶ
 ὑπόκειται τὸ τμᾶμα τῷ βάρει ποτὶ τὸ ὑγρὸν ἔχειν λόγον,
 ὃν τὸ τετράγωνον τὸ ἀπὸ τᾶς ΦΧ ποτὶ τὸ τετράγωνον
-<lb n="15"/> τὸ ἀπὸ τᾶς Β&#9651;, ὃν δὲ λόγον ἔχει τὸ τμᾶμα τῷ βάρει
+<lb n="15"/> τὸ ἀπὸ τᾶς Β△, ὃν δὲ λόγον ἔχει τὸ τμᾶμα τῷ βάρει
 ποτὶ τὸ ὑγρὸν, τοῦτον ἔχει τὸν λόγον τὸ δεδυκὸς αὐτοῦ
 ποτὶ τὸ ὅλον τμᾶμα, ὃν δὲ τὸ δεδυκὸς ποτὶ τὸ ὅλον,
 τοῦτον ἔχει τὸ τετράγωνον τὸ ἀπὸ τᾶς ΠΜ ποτὶ τὸ
 τετράγωνον τὸ ἀπὸ τᾶς ΟΝ, ὃν ἄρα λόγον ἔχει τὸ τετράγωνον
-<lb n="20"/> τὸ ἀπὸ τᾶς ΦΧ ποτὶ τὸ τετράγωνον τὸ ἀπὸ τᾶς Β&#9651;,
+<lb n="20"/> τὸ ἀπὸ τᾶς ΦΧ ποτὶ τὸ τετράγωνον τὸ ἀπὸ τᾶς Β△,
 τοῦτον ἔχει τὸν λόγον τὸ τετράγωνον τὸ ἀπὸ τᾶς ΜΠ
 ποτὶ τὸ τετράγωνον τὸ ἀπὸ τᾶς ΟΝ ἴσα ἄρα ἐστὶν ἁ
 ΦΧ τᾷ ΠΜ. Ἁ δὲ ΠΗ ἐδείχθη μείζων ἐοῦσα τᾶς Φ δῆλον
@@ -1013,15 +1055,15 @@ demonstrabuntur.</p>
 δὲ ἐκτὸς τοῦ ὑγροῦ ἐνεχθήσεται εἰς τὸ ἐντὸς κατὰ τὰν
 διὰ τοῦ Γ · οὐ μενεῖ δὴ τὸ τμᾶμα κατὰ τὰν ὑποκειμέναν
 κλίσιν.</p>
-<p>Οὐδὲ μὴν εἰς τὸ ὀρθὸν ἀποκαταστασεῖται. Δῆλον
+               <p>Οὐδὲ μὴν εἰς τὸ ὀρθὸν ἀποκαταστασεῖται. Δῆλον
 <lb n="10"/> δὲ διὰ τούτων · ἐπειδὴ τῶν ἀγμένων διὰ τῶν Ζ, Γ καθέτων
 ἁ μὲν διὰ τοῦ Ζ ἀγμένα τᾶς ΓΖ ἐπὶ τὰ αὐτὰ μέρεα πίπτει,
 ἐφʼ ἅ ἐστι τὸ Λ, ἁ δὲ διὰ τοῦ Γ ἐπὶ τὰ αὐτὰ τῷ Α, δῆλον
 ὅτι διὰ τὰ προειρημένα τὸ μὲν Ζ κέντρον ἄνω οἰσθήσεται,
 τὸ δὲ Γ κάτω · ὥστε τοῦ ὅλου μεγέθεος τὰ μέρεα τὰ ἀπὸ
 <lb n="15"/> τοῦ Α κάτω οἰσθήσεται.</p>
-<p>Τοῦτο δʼ ἦν εὔχρηστον ποτὶ τὸ δεῖξαι.</p>
-<p>Ὑποκείσθω πάλιν τὰ μὲν ἄλλα τὰ αὐτά, ὁ δὲ ἄξων τοῦ
+               <p>Τοῦτο δʼ ἦν εὔχρηστον ποτὶ τὸ δεῖξαι.</p>
+               <p>Ὑποκείσθω πάλιν τὰ μὲν ἄλλα τὰ αὐτά, ὁ δὲ ἄξων τοῦ
 τμάματος ποτὶ τὰν ἐπιφάνειαν τοῦ ὑγροῦ ποιεί<add cause="omitted">τω γωνίαν
 ἐλάσσονα τᾶς ποτὶ τῷ Β · ἐλάσσονα δὴ λόγον</add> ἔχει τὸ
 <lb n="20"/> τετράγωνον τὸ ἀπὸ τᾶς ΠΙ ποτὶ τὸ ἀπὸ τᾶς ΙΥ ἢ τὸ ἀπὸ
@@ -1042,8 +1084,11 @@ demonstrabuntur.</p>
 τὰν ΗΘ δῆλον οὖν ὅτι οὐ μενεῖ τὸ ὅλον τμᾶμα, ἀλλὰ
 κλιθήσεται, ὥστε τὸν ἄξονα ποτὶ τὰν ἐπιφάνειαν τοῦ
 ὑγροῦ ποιεῖν γωνίαν μείζονα ἇς νῦν ποιεῖ.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<lb n="10"/><p> Ἐπεὶ οὖν οὔτε γωνίαν μείζονα τᾶς Β ποιοῦντος τοῦ
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <lb n="10"/>
+               <p> Ἐπεὶ οὖν οὔτε γωνίαν μείζονα τᾶς Β ποιοῦντος τοῦ
 ἄξονος ποτὶ τὸ ὑγρὸν σταθήσεται τὸ τμᾶμα οὔτʼ ἐλάσσονα,
 φανερὸν ὅτι ταλικαύταν ποιοῦντος γωνίαν σταθήσεται
 οὕτως γὰρ ἁ ΙΟ ἐσσεῖται ἴσα τᾷ ΨΒ καὶ ἁ Ωl τᾷ ΨΡ καὶ
@@ -1054,11 +1099,11 @@ demonstrabuntur.</p>
 κέντρον ἐστίν ὥστε κατὰ τὰν αὐτὰν κάθετον ἀνενεχθήσεται,
 καὶ τὸ ἐκτὸς ἐς τὸ κάτω ἐνεχθήσεται. Μενεῖ
 ἄρα ἀντωθοῦνται γὰρ ὑπʼ ἀλλάλων.</p>
-</div>
-
-<div type="textpart" subtype="chapter" n="9">
-<head>θ΄.</head>
-<lb n="5"/><p> Τὸ ὀρθὸν τμᾶμα τοῦ ὀρθογωνίου κωνοειδέος, ὅταν
+            </div>
+            <div n="9" type="chapter">
+               <head>θ΄.</head>
+               <lb n="5"/>
+               <p> Τὸ ὀρθὸν τμᾶμα τοῦ ὀρθογωνίου κωνοειδέος, ὅταν
 τὸν ἄξονα ἔχη μείζονα μὲν ἢ ἡμιόλιον τᾶς μέχρι τοῦ
 ἄξονος, ἐλάσσονα δὲ ἢ ὥστε τοῦτον ἔχειν τὸν λόγον,
 ὃν ἔχει τὰ ιε ποτὶ δ, καὶ τῷ βάρει ποτὶ τὸ ὑγρὸν μείζονα
@@ -1072,37 +1117,39 @@ demonstrabuntur.</p>
 κεκλιμένον, πλὴν ὅταν ὁ ἄξων αὐτοῦ ποτὶ τὰν ἐπιφάνειαν
 τοῦ ὑγροῦ ποιῇ γωνίαν ἴσαν τᾷ λαφθείσᾳ ὁμοίως ᾇ
 πρότερον.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-
-<pb n="45"/>
-<p>Ἔστω τμᾶμα οἷον εἴρηται, καὶ κείσθω ἁ &#9651;Β ἴσα τῷ
-ἄξονι τοῦ τμάματος, καὶ ἁ μὲν ΒΚ τᾶς Κ&#9651; διπλασία ἔστω,
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <pb n="45"/>
+               <p>Ἔστω τμᾶμα οἷον εἴρηται, καὶ κείσθω ἁ △Β ἴσα τῷ
+ἄξονι τοῦ τμάματος, καὶ ἁ μὲν ΒΚ τᾶς Κ△ διπλασία ἔστω,
 ἁ δὲ ΚΡ ἴσα τᾷ μέχρι τοῦ ἄξονος, ἁ δὲ ΤΒ ἡμιολία τᾶς
 ΒΡ, ὃν δὲ λόγον ἔχει τὸ τμᾶμα τῷ βάρει ποτὶ τὸ ὑγρόν,
 <lb n="5"/> τοῦτον ἐχέτω ἁ ὑπεροχά, ᾇ ὑπερέχει τὸ τετράγωνον τὸ
-ἀπὸ τᾶς Β&#9651; τοῦ τετραγώνου τοῦ ἀπὸ τᾶς ΦΧ, ποτὶ τὸ
-τετράγωνον τὸ ἀπὸ τᾶς Β&#9651;, ἔστω δὲ ἁ Φ διπλασία τᾶς Χ.
+ἀπὸ τᾶς Β△ τοῦ τετραγώνου τοῦ ἀπὸ τᾶς ΦΧ, ποτὶ τὸ
+τετράγωνον τὸ ἀπὸ τᾶς Β△, ἔστω δὲ ἁ Φ διπλασία τᾶς Χ.
 Δῆλον οὖν ὅτι ἁ ὑπεροχά, ᾇ ὑπερέχει τὸ τετράγωνον τὸ
-ἀπὸ τᾶς Β&#9651; τοῦ ἀπὸ τᾶς ΒΤ, ποτὶ τὸ τετράγωνον τὸ ἀπὸ
-<lb n="10"/> τᾶς Β&#9651; ἐλάσσονα λόγον ἔχει ἢ ἁ ὑπεροχά, ᾇ ὑπερέχει
-τὸ τετράγωνον τὸ ἀπὸ τᾶς Β&#9651; τοῦ τετραγώνου τοῦ ἀπὸ
-τᾶς ΦΧ, ποτὶ τὸ τετράγωνον τὸ ἀπὸ τᾶς Β&#9651; ἔστι γὰρ ἁ
+ἀπὸ τᾶς Β△ τοῦ ἀπὸ τᾶς ΒΤ, ποτὶ τὸ τετράγωνον τὸ ἀπὸ
+<lb n="10"/> τᾶς Β△ ἐλάσσονα λόγον ἔχει ἢ ἁ ὑπεροχά, ᾇ ὑπερέχει
+τὸ τετράγωνον τὸ ἀπὸ τᾶς Β△ τοῦ τετραγώνου τοῦ ἀπὸ
+τᾶς ΦΧ, ποτὶ τὸ τετράγωνον τὸ ἀπὸ τᾶς Β△ ἔστι γὰρ ἁ
 ΒΤ ἁ ὑπεροχά, ᾇ μείζων ἐστὶν ἢ ἡμιόλιος ὁ ἄξων τοῦ
 τμάματος τᾶς μέχρι τοῦ ἄξονος. Μείζονι ἄρα ὑπερέχει
-<lb n="15"/> τὸ τετράγωνον τὸ ἀπὸ τᾶς Β&#9651; τοῦ ἀπὸ τᾶς ΦΧ ἢ τὸ
-τετράγωνον τὸ ἀπὸ τᾶς Β&#9651; τοῦ τετραγώνου τοῦ ἀπὸ τᾶς
+<lb n="15"/> τὸ τετράγωνον τὸ ἀπὸ τᾶς Β△ τοῦ ἀπὸ τᾶς ΦΧ ἢ τὸ
+τετράγωνον τὸ ἀπὸ τᾶς Β△ τοῦ τετραγώνου τοῦ ἀπὸ τᾶς
 ΒΤ ὥστε ἁ ΦΧ ἐλάσσων ἐστὶ τᾶς ΒΤ · καὶ ἁ Φ ἄρα τᾶς
 ΒΡ.</p>
-<p>Ἔστω οὖν τᾷ Φ ἴσα ἁ ΡΨ, καὶ ἁ ΨΕ ὀρθὰ ἄχθω τᾷ Β&#9651;
+               <p>Ἔστω οὖν τᾷ Φ ἴσα ἁ ΡΨ, καὶ ἁ ΨΕ ὀρθὰ ἄχθω τᾷ Β△
 <lb n="20"/> δυναμένα τὸ ἥμισυ τοῦ περιεχομένου ὑπὸ τᾶν ΚΡ, ΨΒ.
 Φαμὶ ὅτι τὸ τμᾶμα ἀφεθὲν ἐς τὸ ὑγρόν, ὥστε τὰν βάσιν
 αὐτοῦ ὅλαν εἶμεν ἐν τῷ ὑγρῷ, καταστασεῖται οὕτως,
 ὥστε τὸν ἄξονα αὐτοῦ ποτὶ τὰν ἐπιφάνειαν τοῦ ὑγροῦ
 γωνίαν ποιεῖν ἴσαν τᾷ Β.</p>
-<lb n="25"/><p> Ἀφείσθω <del>μὲν</del> γὰρ τὸ τμᾶμα, ὡς εἴρηται, ἐς τὸ ὑγρόν,
+               <lb n="25"/>
+               <p> Ἀφείσθω <del>μὲν</del> γὰρ τὸ τμᾶμα, ὡς εἴρηται, ἐς τὸ ὑγρόν,
 καὶ μὴ ποιείτω ὁ ἄξων ποτὶ τὰν ἐπιφάνειαν τοῦ ὑγροῦ
 γωνίαν ἴσαν τᾷ Β, ἀλλὰ μείζονα πρότερον.</p>
-<p>Τμαθέντος δὴ αὐτοῦ ἐπιπέδῳ ὀρθῷ ποτὶ τὰν ἐπιφάνειαν
+               <p>Τμαθέντος δὴ αὐτοῦ ἐπιπέδῳ ὀρθῷ ποτὶ τὰν ἐπιφάνειαν
 τοῦ ὑγροῦ ἔστω τοῦ τμάματος τομὰ ἁ ΑΠΟΛ ὀρθογωνίου
 
 <pb n="46"/>
@@ -1123,16 +1170,16 @@ SΥ quam dupla ipsius ΨB. Et quae SΟ quam ΨΒ
 <lb n="15"/> minor;
 μείζων ἄρα ἁ ΣΩ τᾶς ΡΨ καὶ ἁ ΠΗ τᾶς Φ. Καὶ ἐπεὶ τὸ
 τμᾶμα βάρει λόγον ἔχει ποτὶ τὸ ὑγρόν, ὃν ἁ ὑπεροχά,
-ᾇ μεῖζόν ἐστιν τὸ τετράγωνον τὸ ἀπὸ τᾶς Β&#9651; τοῦ τετραγώνου
+ᾇ μεῖζόν ἐστιν τὸ τετράγωνον τὸ ἀπὸ τᾶς Β△ τοῦ τετραγώνου
 τοῦ ἀπὸ τᾶς ΦΧ, ποτὶ τὸ τετράγωνον τὸ ἀπὸ τᾶς
-<lb n="20"/> Β&#9651;, ὃν δὲ λόγον ἔχει τὸ τμᾶμα τῷ βάρει ποτὶ τὸ ὑγρόν,
+<lb n="20"/> Β△, ὃν δὲ λόγον ἔχει τὸ τμᾶμα τῷ βάρει ποτὶ τὸ ὑγρόν,
 τοῦτον ἔχει τὸν λόγον τὸ δεδυκὸς αὐτοῦ τμᾶμα ποτὶ τὸ
 ὅλον, δῆλον ὅτι τὸν αὐτὸν ἕξει λόγον τὸ δεδυκὸς αὐτοῦ
 μέρος ποτὶ τὸ ὅλον τμᾶμα, ὃν ἁ ὑπεροχά, ᾇ ὑπερέχει
-τὸ τετράγωνον τὸ ἀπὸ τᾶς Β&#9651; τοῦ τετραγώνου τοῦ ἀπὸ
-<lb n="25"/> τᾶς ΦΧ, ποτὶ τὸ τετράγωνον τὸ ἀπὸ Β&#9651; ἕξει οὖν καὶ τὸ
+τὸ τετράγωνον τὸ ἀπὸ τᾶς Β△ τοῦ τετραγώνου τοῦ ἀπὸ
+<lb n="25"/> τᾶς ΦΧ, ποτὶ τὸ τετράγωνον τὸ ἀπὸ Β△ ἕξει οὖν καὶ τὸ
 ὅλον τμᾶμα ποτὶ τὸ ἐκτὸς τοῦ ὑγροῦ λόγον, ὃν τὸ τετράγωνον
-τὸ ἀπὸ τᾶς Β&#9651; ποτὶ τὸ ἀπὸ τᾶς ΦΧ. Ὃν δὲ λόγον
+τὸ ἀπὸ τᾶς Β△ ποτὶ τὸ ἀπὸ τᾶς ΦΧ. Ὃν δὲ λόγον
 ἔχει τὸ ὅλον τμᾶμα ποτὶ τὸ ἐκτὸς τοῦ ὑγροῦ, τοῦτον
 ἔχει τὸ ἀπὸ τᾶς ΝΟ ποτὶ τὸ ἀπὸ ΠΜ· ἴσα ἄρα ἁ ΜΠ τᾷ
 
@@ -1154,16 +1201,15 @@ SΥ quam dupla ipsius ΨB. Et quae SΟ quam ΨΒ
 <lb n="15"/> τὰ ἐπὶ <add cause="omitted">τὰ αὐτὰ τῷ Λ κάτω, τὰ δὲ ἐπὶ τὰ αὐτὰ τῷ Α ἐς
 τὰ ἄνω οἰσθήσεται,</add> διὰ τὰ ἀνάλογον τοῖς λεγομένοις
 ἐπὶ τοῦ πρὸ αὐτοῦ.</p>
-<p>Ἐὰν δὲ ὁ ἄξων ποτὶ τὸ ὑγρὸν ποιῇ γωνίαν ἐλάσσονα
+               <p>Ἐὰν δὲ ὁ ἄξων ποτὶ τὸ ὑγρὸν ποιῇ γωνίαν ἐλάσσονα
 τᾶς Β, ὁμοίως τοῖς πρότερον δειχθήσεται ὅτι οὐ μενεῖ
 <lb n="20"/> τὸ τμᾶμα, ἀλλὰ κλιθήσεται, ἕως ἂν ὁ ἄξων ποιῇ γωνίαν
 ποτὶ τὰν ἐπιφάνειαν τοῦ ὑγροῦ ἴσαν τᾷ Β.</p>
-</div>
-
-<pb n="48"/>
-<div type="textpart" subtype="chapter" n="10">
-<head>ι΄.</head>
-<p>Τὸ ὀρθὸν τμᾶμα τοῦ ὀρθογωνίου κωνοειδέος, ὅταν
+            </div>
+            <pb n="48"/>
+            <div n="10" type="chapter">
+               <head>ι΄.</head>
+               <p>Τὸ ὀρθὸν τμᾶμα τοῦ ὀρθογωνίου κωνοειδέος, ὅταν
 κουφότερον ὄν τοῦ ὑγροῦ τὸν ἄξονα ἔχῃ μείζονα ἢ ὥστε
 λόγον ἔχειν ποτὶ τὰν μέχρι τοῦ ἄξονος <del>τοῦ</del> ὃν ἔχει τὰ
 <lb n="5"/> ιε ποτὶ τὰ δ, ἀφεθὲν εἰς τὸ ὑγρὸν ὥστε τὰν βάσιν αὐτοῦ
@@ -1176,48 +1222,49 @@ SΥ quam dupla ipsius ΨB. Et quae SΟ quam ΨΒ
 οὕτως, ὥστε τὰν βάσιν αὐτοῦ μηδὲ καθʼ ἓν ἅπτεσθαι τᾶς
 τοῦ ὑγροῦ ἐπιφα<add cause="omitted">νείας ὃν δὲ λόγον ἔχοντος τῷ</add> βάρει
 ποτὶ τὸ ὑγρὸν ἕκαστα αὐτῶν ἐσσεῖται, νῦν δηλωθήσεται.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-
-<pb n="49"/>
-<p>Ἔστω τμᾶμα οἷον εἴρηται, καὶ τμαθέντος αὐτοῦ ἐπιπέδῳ
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <pb n="49"/>
+               <p>Ἔστω τμᾶμα οἷον εἴρηται, καὶ τμαθέντος αὐτοῦ ἐπιπέδῳ
 ὀρθῷ ποτὶ τὰν ἐπιφάνειαν τοῦ ὑγροῦ τομὰ ἔστω ἐν τᾷ
 ἐπιφανείᾳ ἁ ΑΠΟΛ ὀρθογωνίου κώνου τομά, ἄξων δὲ
-ἔστω καὶ διάμετρος τᾶς τομᾶς ἁ Β&#9651;, τετμάσθω δὲ ἁ Β&#9651;
-<lb n="5"/> κατὰ τὸ Κ, ὥστε διπλασίαν εἶμεν τὰν ΒΚ τᾶς Κ&#9651;, κατὰ
-δὲ τὸ Τ, ὥστε τὰν &#9651;Β ποτὶ τὰν ΚΤ λόγον ἔχειν ὡς τὰ ιε
+ἔστω καὶ διάμετρος τᾶς τομᾶς ἁ Β△, τετμάσθω δὲ ἁ Β△
+<lb n="5"/> κατὰ τὸ Κ, ὥστε διπλασίαν εἶμεν τὰν ΒΚ τᾶς Κ△, κατὰ
+δὲ τὸ Τ, ὥστε τὰν △Β ποτὶ τὰν ΚΤ λόγον ἔχειν ὡς τὰ ιε
 ποτὶ δ δῆλον οὖν ὅτι ἁ ΚΤ μείζων ἐστὶ τᾶς μέχρι τοῦ
 ἄξονος. Ἔστω οὖν ἁ ΚΡ ἴσα τᾷ μέχρι τοῦ ἄξονος, τᾶς
 δὲ ΒΡ ἡμίσεια ἔστω ἁ ΡΣ ἔστι δὴ καὶ ἁ ΣΒ ἡμιολία τᾶς
 <lb n="10"/> ΒΡ. Ἐπιζευχθείσας δὲ τᾶς ΑΒ καὶ τᾶς ΤΕ ὀρθᾶς ἀχθείσας
-ἀχθῶ ἁ ΕΖ παρὰ τὰν Β&#9651;, καὶ πάλιν τᾶς ΑΒ δίχα τμαθείσας
-κατὰ τὸ Θ ἄχθω παρὰ τὰν Β&#9651; ἁ ΘΗ, καὶ λελάφθω ὀρθογωνίου
-κώνου τομὰ ἁ ΑΕΙ περὶ διάμετρον τὰν ΕΖ καὶ ἁ ΑΘ&#9651;
-περὶ διάμετρον τὰν ΘΗ, ὥστε ὅμοια εἶμεν τὰ ΑΕΙ, ΑΘ&#9651;
+ἀχθῶ ἁ ΕΖ παρὰ τὰν Β△, καὶ πάλιν τᾶς ΑΒ δίχα τμαθείσας
+κατὰ τὸ Θ ἄχθω παρὰ τὰν Β△ ἁ ΘΗ, καὶ λελάφθω ὀρθογωνίου
+κώνου τομὰ ἁ ΑΕΙ περὶ διάμετρον τὰν ΕΖ καὶ ἁ ΑΘ△
+περὶ διάμετρον τὰν ΘΗ, ὥστε ὅμοια εἶμεν τὰ ΑΕΙ, ΑΘ△
 <lb n="15"/> τμάματα τῷ ΑΒΛ τμάματι· γραφήσεται δὴ ἁ ΑΕΙ κώνου
-τομὰ διὰ τοῦ Κ, ἁ δὲ ἀπὸ τοῦ Ρ ὀρθὰ ἀχθεῖσα τᾷ Β&#9651;
+τομὰ διὰ τοῦ Κ, ἁ δὲ ἀπὸ τοῦ Ρ ὀρθὰ ἀχθεῖσα τᾷ Β△
 τεμεῖ τὰν ΑΕΙ. Τεμνέτω κατὰ τὰ Υ, Γ, καὶ διὰ τῶν Υ, Γ
-ἄχθωσαν παρὰ τὰν Β&#9651; αἱ ΥΧ, ΓΝ, τεμνέτωσαν δὲ αὗται
-τὰν ΑΘ&#9651; τομὰν κατὰ τὰ Ξ, Φ, ἄχθωσαν δὲ καὶ αἱ ΠΨ,
+ἄχθωσαν παρὰ τὰν Β△ αἱ ΥΧ, ΓΝ, τεμνέτωσαν δὲ αὗται
+τὰν ΑΘ△ τομὰν κατὰ τὰ Ξ, Φ, ἄχθωσαν δὲ καὶ αἱ ΠΨ,
 <lb n="20"/> Ο(??) ἐφαπτόμεναι τᾶς ΑΠΟΛ τομᾶς κατὰ τὰ Ο, Π, Δεδομένα
-δὴ τρία τινὰ τμάματα τὰ ΑΠΟΛ, ΑΕΙ, ΑΘ&#9651; περιεχόμενα
+δὴ τρία τινὰ τμάματα τὰ ΑΠΟΛ, ΑΕΙ, ΑΘ△ περιεχόμενα
 ὑπὸ τᾶν εὐθειᾶν καὶ τᾶν ὀρθογωνίων κώνων τομᾶν ὀρθὰ
 καὶ ὅμοια, ἄνισα δέ, καὶ ἀπολέλαπται ἀφʼ ἑκάστας βάσιος,
 ἀπὸ δὲ τοῦ Ν ἀναγμέναι αἱ ΝΞ, ΝΓ, ΝΟ ἁ ΟΓ ἄρα ποτὶ
 <lb n="25"/> τὰν ΓΞ τὸν συγκείμενον λόγον ἕξει ἔκ τε τοῦ, ὃν ἔχει ἁ
 
 <pb n="50"/>
-ΙΛ ποτὶ ΛΑ, καὶ ὃν ἔχει ἁ Α&#9651; ποτὶ &#9651;Ι. Ἔχει δὲ καὶ ἁ ΛΙ
-ποτὶ ΛΑ ὃν δύο ποτὶ ε ἅ τε γὰρ ΤΒ ποτὶ Β&#9651; ἐστὶν ὡς
-δύο ποτὶ ε, καὶ ἁ ΕΒ ποτὶ ΒΑ καὶ ἁ &#9651;Ζ ποτὶ &#9651;Α, τούτων
-δὲ διπλάσιαι αἱ Λl, ΛΑ · ἁ δὲ Α&#9651; ποτὶ &#9651;Ι ἔχει ὅσον πέντε
+ΙΛ ποτὶ ΛΑ, καὶ ὃν ἔχει ἁ Α△ ποτὶ △Ι. Ἔχει δὲ καὶ ἁ ΛΙ
+ποτὶ ΛΑ ὃν δύο ποτὶ ε ἅ τε γὰρ ΤΒ ποτὶ Β△ ἐστὶν ὡς
+δύο ποτὶ ε, καὶ ἁ ΕΒ ποτὶ ΒΑ καὶ ἁ △Ζ ποτὶ △Α, τούτων
+δὲ διπλάσιαι αἱ Λl, ΛΑ · ἁ δὲ Α△ ποτὶ △Ι ἔχει ὅσον πέντε
 <lb n="5"/> πρὸς ᾱ, ὁ δὲ συγκείμενος λόγος ἐξ οὗ ὃν ἔχει τὰ δύο ποτὶ
 τὰ ε καὶ ἐξ οὗ ὃν ἔχει τὰ πέντε ποτὶ τὸ ἓν ὁ αὐτός ἐστι
 τῷ ὃν ἔχει τὰ δύο ποτὶ τὸ ᾱ διπλασία ἄρα ἐστὶν ἁ ΟΓ
 τᾶς ΓΞ. Διὰ τὰ αὐτὰ δὴ καὶ ἁ ΠΥ τᾶς ΥΦ. Ἐπεὶ δέ ἐστιν
-ἁ &#9651;Σ ἡμιολία τᾶς ΚΡ, δῆλον ὅτι ἁ ΒΣ ἁ ὑπεροχά ἐστιν,
+ἁ △Σ ἡμιολία τᾶς ΚΡ, δῆλον ὅτι ἁ ΒΣ ἁ ὑπεροχά ἐστιν,
 <lb n="10"/> ᾇ μείζων ἐστὶν ὁ ἄξων ἢ ἡμιόλιος τᾶς μέχρι τοῦ ἄξονος.</p>
-<p>Εἰ μὲν οὖν τὸ τμᾶμα τῷ βάρει ποτὶ τὸ ὑγρὸν τοῦτον
-ἔχει τὸν λόγον, ὃν τὸ ἀπὸ τᾶς ΒΣ ποτὶ τὸ ἀπὸ τᾶς Β&#9651;,
+               <p>Εἰ μὲν οὖν τὸ τμᾶμα τῷ βάρει ποτὶ τὸ ὑγρὸν τοῦτον
+ἔχει τὸν λόγον, ὃν τὸ ἀπὸ τᾶς ΒΣ ποτὶ τὸ ἀπὸ τᾶς Β△,
 ἢ μείζονα τούτου τοῦ λόγου, ἀφεθὲν τὸ τμᾶμα εἰς τὸ
 ὑγρὸν οὕτως, ὥστε τὰν βάσιν αὐτοῦ μὴ ἅπτεσθαι τοῦ
 <lb n="15"/> ὑγροῦ, ὀρθὸν καταστασεῖται· δέδεικται γὰρ πρότερον
@@ -1227,10 +1274,10 @@ SΥ quam dupla ipsius ΨB. Et quae SΟ quam ΨΒ
 ᾇ μείζων ἐστὶν ὁ ἄξων ἢ ἡμιόλιος τᾶς μέχρι τοῦ ἄξονος,
 <lb n="20"/> ποτὶ τὸ τετράγωνον τὸ ἀπὸ τοῦ ἄξονος, ἀφεθὲν ἐς τὸ
 ὑγρὸν οὕτως ὡς εἴρηται, ὀρθὸν καταστασεῖται.</p>
-<p>Ἐπὴν δὲ τὸ τμᾶμα τῷ βάρει ποτὶ τὸ ὑγρὸν ἐλάσσονα
+               <p>Ἐπὴν δὲ τὸ τμᾶμα τῷ βάρει ποτὶ τὸ ὑγρὸν ἐλάσσονα
 μὲν λόγον ἔχῃ τοῦ ὃν ἔχει τὸ ἀπὸ τᾶς ΣΒ ποτὶ τὸ τετράγωνον
-τὸ ἀπὸ τᾶς Β&#9651;, μείζονα δὲ τοῦ ὃν ἔχει τὸ ἀπὸ τᾶς
-<lb n="25"/> ΟΞ τετράγωνον ποτὶ τὸ ἀπὸ τᾶς Β&#9651;, ἀφεθὲν ἐς τὸ ὑγρὸν
+τὸ ἀπὸ τᾶς Β△, μείζονα δὲ τοῦ ὃν ἔχει τὸ ἀπὸ τᾶς
+<lb n="25"/> ΟΞ τετράγωνον ποτὶ τὸ ἀπὸ τᾶς Β△, ἀφεθὲν ἐς τὸ ὑγρὸν
 
 <pb n="51"/>
 κεκλιμένον οὕτως, ὥστε τὰν βάσιν αὐτοῦ μὴ ἅπτεσθαι
@@ -1238,54 +1285,55 @@ SΥ quam dupla ipsius ΨB. Et quae SΟ quam ΨΒ
 βάσιν αὐτοῦ μηδὲ καθʼ ἓν ἅπτεσθαι τᾶς τοῦ ὑγροῦ
 ἐπιφανείας, καὶ τὸν ἄξονα αὐτοῦ γωνίαν ποιεῖν ποτὶ τὰν
 <lb n="5"/> ἐπιφάνειαν τοῦ ὑγροῦ μείζονα τᾶς (??).</p>
-<p>Ἐὰν δὲ τὸ τμᾶμα τῷ βάρει ποτὶ τὸ ὑγρὸν τοῦτον
+               <p>Ἐὰν δὲ τὸ τμᾶμα τῷ βάρει ποτὶ τὸ ὑγρὸν τοῦτον
 ἔχῃ τὸν λόγον, ὃν τὸ τετράγωνον τὸ ἀπὸ τᾶς ΞΟ ποτὶ τὸ
-τετράγωνον τὸ ἀπὸ τᾶς Β&#9651;, ἀφεθὲν ἐς τὸ ὑγρὸν κεκλιμένον
+τετράγωνον τὸ ἀπὸ τᾶς Β△, ἀφεθὲν ἐς τὸ ὑγρὸν κεκλιμένον
 οὕτως, ὥστε τὰν βάσιν αὐτοῦ μὴ ἅπτεσθαι τοῦ ὑγροῦ,
 <lb n="10"/> καταστασεῖται κεκλιμένον οὕτως, ὥστε τὰν βάσιν αὐτοῦ
 ἅπτεσθαι καθʼ ἓν τᾶς τοῦ ὑγροῦ ἐπιφανείας, καὶ τὸν
 ἄξονα αὐτοῦ ποτὶ τὰν ἐπιφάνειαν τοῦ ὑγροῦ γωνίαν
 ποιεῖν ἴσαν τᾷ (??).</p>
-<p>Ἔὰν δὲ τὸ τμᾶμα τῷ βάρει ποτὶ τὸ ὑγρὸν ἐλάσσονα
+               <p>Ἔὰν δὲ τὸ τμᾶμα τῷ βάρει ποτὶ τὸ ὑγρὸν ἐλάσσονα
 <lb n="15"/> μὲν λόγον ἔχῃ τοῦ ὃν ἔχει τὸ τετράγωνον τὸ ἀπὸ τᾶς
-ΞΟ ποτὶ τὸ τετράγωνον τὸ ἀπὸ τᾶς Β&#9651;, μείζονα δὲ τοῦ
-ὃν ἔχει τὸ ἀπὸ τᾶς ΠΦ ποτὶ τὸ ἀπὸ τᾶς Β&#9651;, ἀφεθὲν ἐς
+ΞΟ ποτὶ τὸ τετράγωνον τὸ ἀπὸ τᾶς Β△, μείζονα δὲ τοῦ
+ὃν ἔχει τὸ ἀπὸ τᾶς ΠΦ ποτὶ τὸ ἀπὸ τᾶς Β△, ἀφεθὲν ἐς
 τὸ ὑγρὸν καὶ τεθὲν κεκλιμένον οὕτως, ὥστε τὰν βάσιν
 αὐτοῦ μὴ ἅπτεσθαι τοῦ ὑγροῦ, καταστασεῖται κεκλιμένον
 <lb n="20"/> οὕτως, ὥστε τὰν βάσιν αὐτοῦ κατὰ πλείονα τόπον τέμνεσθαι
 ὑπὸ τοῦ ὑγροῦ.</p>
-<p>Εἰ δὲ τὸ τμᾶμα τῷ βάρει ποτὶ τὸ ὑγρὸν τοῦτον ἔχει
+               <p>Εἰ δὲ τὸ τμᾶμα τῷ βάρει ποτὶ τὸ ὑγρὸν τοῦτον ἔχει
 τὸν λόγον, ὃν ἔχει τὸ τετράγωνον τὸ ἀπὸ τᾶς ΠΦ ποτὶ
-τὸ τετράγωνον τὸ ἀπὸ τᾶς Β&#9651;, ἀφεθὲν ἐς τὸ ὑγρὸν καὶ
+τὸ τετράγωνον τὸ ἀπὸ τᾶς Β△, ἀφεθὲν ἐς τὸ ὑγρὸν καὶ
 <lb n="25"/> τεθὲν κεκλιμένον οὕτως, ὥστε τὰν βάσιν αὐτοῦ μὴ ἅπτεσθαι
 τοῦ ὑγροῦ, καταστασεῖται κεκλιμένον οὕτως, ὥστε τὰν
 βάσιν αὐτοῦ καθʼ ἓν σαμεῖον ἅπτεσθαι τᾶς τοῦ ὑγροῦ
 ἐπιφανείας, καὶ τὸν ἄξονα αὐτοῦ ποιεῖν γωνίαν ἴσαν τᾷ Ψ.</p>
-
-<pb n="52"/>
-<p>Ἐὰν δὲ τὸ τμᾶμα τῷ βάρει πρὸς τὸ ὑγρὸν ἐλάσσονα
+               <pb n="52"/>
+               <p>Ἐὰν δὲ τὸ τμᾶμα τῷ βάρει πρὸς τὸ ὑγρὸν ἐλάσσονα
 λόγον ἔχῃ τοῦ ὃν ἔχει τὸ τετράγωνον τὸ ἀπὸ τᾶς ΠΦ
-ποτὶ τὸ τετράγωνον τὸ ἀπὸ τᾶς Β&#9651;, ἀφεθὲν ἐς τὸ ὑγρὸν
+ποτὶ τὸ τετράγωνον τὸ ἀπὸ τᾶς Β△, ἀφεθὲν ἐς τὸ ὑγρὸν
 καὶ τεθὲν κεκλιμένον οὕτως, ὥστε τὰν βάσιν αὐτοῦ μὴ
 <lb n="5"/> ἅπτεσθαι τοῦ ὑγροῦ, καταστασεῖται κεκλιμένον οὕτως,
 ὥστε τὸν μὲν ἄξονα αὐτοῦ ποτὶ τὰν ἐπιφάνειαν τοῦ ὑγροῦ
 γωνίαν ποιεῖν ἐλάσσονα τᾶς Ψ, τὰν δὲ βάσιν αὐτοῦ μηδὲ
 καθʼ ἓν ἅπτεσθαι τᾶς τοῦ ὑγροῦ ἐπιφανείας.</p>
-<p>Δειχθήσεται δὲ ταῦτα ἑξῆς.</p>
-<lb n="10"/><p> Ἐχέτω δὴ πρῶτον τὸ τμᾶμα τῷ βάρει ποτὶ τὸ ὑγρὸν
+               <p>Δειχθήσεται δὲ ταῦτα ἑξῆς.</p>
+               <lb n="10"/>
+               <p> Ἐχέτω δὴ πρῶτον τὸ τμᾶμα τῷ βάρει ποτὶ τὸ ὑγρὸν
 μείζονα μὲν λόγον τοῦ ὃν ἔχει τὸ ἀπὸ τᾶς ΞΟ τετράγωνον
-ποτὶ τὸ ἀπὸ τᾶς Β&#9651;, ἐλάσσονα δὲ τοῦ ὃν ἔχει τὸ ἀπὸ τᾶς
+ποτὶ τὸ ἀπὸ τᾶς Β△, ἐλάσσονα δὲ τοῦ ὃν ἔχει τὸ ἀπὸ τᾶς
 ὑπεροχᾶς τετράγωνον, μείζων ἐστὶν ὁ ἄξων ἢ ἡμιόλιος
-τᾶς μέχρι τοῦ ἄξονος, ποτὶ τὸ ἀπὸ τᾶς Β&#9651; τετράγωνον,
+τᾶς μέχρι τοῦ ἄξονος, ποτὶ τὸ ἀπὸ τᾶς Β△ τετράγωνον,
 <lb n="15"/> καὶ ὑποκείσθω τὸ πρότερον κατεσκευασμένον σχῆμα,
 ὃν δὲ λόγον ἔχει τὸ τμᾶμα τῷ βάρει ποτὶ τὸ ὑγρόν, τοῦτον
-ἐχέτω τὸ ἀπὸ τᾶς Ψ τετράγωνον ποτὶ τὸ ἀπὸ τᾶς Β&#9651;
+ἐχέτω τὸ ἀπὸ τᾶς Ψ τετράγωνον ποτὶ τὸ ἀπὸ τᾶς Β△
 ἔστι δὴ ἁ Ψ τᾶς μὲν ΞΟ μείζων, ἐλάσσων δὲ τᾶς ὑπεροχᾶς,
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-
-<pb n="53"/>
+<figure>
+                     <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+                  </figure>
+                  <pb n="53"/>
 ἇ μείζων ἐστὶν ὁ ἄξων ἢ ἡμιόλιος τᾶς μέχρι τοῦ ἄξονος.
-Ἐναρμόσθω δέ τις μεταξὺ τῶν ΑΠΟΛ, ΑΞ&#9651; κώνων <add cause="omitted">τομᾶν</add>,
+Ἐναρμόσθω δέ τις μεταξὺ τῶν ΑΠΟΛ, ΑΞ△ κώνων <add cause="omitted">τομᾶν</add>,
 quae NO aequalis ipsi Ψ, et secet ipsa reliquam
 coni sectionem penes Ϡ, ipsam autem R(??) rectam
 <lb n="5"/> penes B΄; demonstrabitur autem quae OϠ dupla
@@ -1305,7 +1353,7 @@ secundum unum tangat <add cause="omitted">humidum, ita inclinata
 consistet, ut basis eius in nullo puncto superficiem
 <lb n="20"/> humidi tangat, et</add> axis ad superficiem humidi
 angulum acutum faciat maiorem angulo (??).</p>
-<p>Dimittatur enim et consistat ita, ut basis ipsius
+               <p>Dimittatur enim et consistat ita, ut basis ipsius
 tangat secundum unum signum superficiem humidi,
 secta autem portione per axem plano recto ad superficiem
 <lb n="25"/> humidi superficiei quidem portionis sectio sit
@@ -1313,7 +1361,9 @@ quae APOL rectanguli coni sectio, superficiei autem
 humidi quae OA, axis autem <del>sectionis</del> et diameter
 
 <pb n="54"/>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
+                  <figure>
+                     <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+                  </figure>
 quae BD, et secetur quae BD penes K, R, ut dictum
 est. Ducatur autem et quae quidem PG aequedistanter
 ipsi AO recta contingens sectionem APOL. secundum
@@ -1351,8 +1401,10 @@ quoniam nunc secundum unum tacta ipsa reclinatur ;
 manifestum igtur quod portio consistet ita, ut axis
 <lb n="15"/> ad superficiem humidi faciat angulum maiorem
 angulo (??).</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<p>Ηabeat autem portio ad humidum in grauitate
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <p>Ηabeat autem portio ad humidum in grauitate
 hanc proportionem, quam habet tetragonum quod
 
 <pb n="56"/>
@@ -1368,8 +1420,10 @@ aequedistanter ipsi BD, quae autem PS perpendicularis
 <lb n="10"/> super BD. Demonstrandum quod portio non
 manet inclinata sic, sed inclinatur, donec utique basis
 secundum unum signum tangat superficiem humidi.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<p>Praeiaceant autem et quae insuperiori figura prius
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <p>Praeiaceant autem et quae insuperiori figura prius
 disposita sunt, et quae CO perpendicularis ducatur
 <lb n="15"/> super BD, et quae AX copulata educatur ad Q ;
 erit autem quae AX ipsi XQ aequalis ; et ducatur
@@ -1395,7 +1449,7 @@ quare et quae O(??) minor quam ΡϠ, <add cause="omitted">et (??)Χ</add>
 maior est quam ϠΤ. Et quoniam quae O(??) dupla
 <lb n="15"/> est ipsius (??)X, palam quod quae PϠ maior est quam
 dupla psius ϠT. Sit igitur quae PH dupla ipsius HT.</p>
-<p>Καὶ ἐπεζεύχθω ἁ ΗΚ καὶ ἐκβεβλήσθω ἐπὶ τὸ Ω. Ἐσσεῖται
+               <p>Καὶ ἐπεζεύχθω ἁ ΗΚ καὶ ἐκβεβλήσθω ἐπὶ τὸ Ω. Ἐσσεῖται
 δὴ τοῦ μὲν ὅλου τμάματος κέντρον τοῦ βάρεος τὸ Κ,
 τοῦ δὲ ἐν τῷ ὑγρῷ τὸ Η, τοῦ δʼ ἐκτὸς ἐπὶ τᾶς ΚΩ· ἔστω
 <lb n="20"/> τὸ Ω. Δειχθήσεται δὴ ὁμοίως ἅ τε ΚϠ κάθετος ἐπὶ τὰν
@@ -1405,10 +1459,11 @@ dupla psius ϠT. Sit igitur quae PH dupla ipsius HT.</p>
 σαμεῖον τᾶς τοῦ ὑγροῦ ἐπιφανείας, καθάπερ demonstrabitur
 <lb n="25"/> in tertia figura, quomodo se habet in tertio
 theoremate, et manebit portio ita consistens.</p>
-
-<pb n="58"/>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<p>In portionibus enim aequalibus AΡOL, AOQL
+               <pb n="58"/>
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <p>In portionibus enim aequalibus AΡOL, AOQL
 productae erunt ab extremitatibus basium quae AQ,
 AO aequales <add cause="omitted">portiones</add> auferentes demonstrabitur
 enim APQ aequalis ipsi AΡO similiter prioribus ;
@@ -1427,7 +1482,7 @@ extra in linea ΚΩ ; et sit Ω. Et quae ΚϠ
 <pb n="59"/>
 ἐπιφανείας, καὶ ὁ ἄξων <add cause="omitted">τοῦ τμάματος</add> ποτὶ τὰν ἐπιφάνειαν
 τοῦ ὑγροῦ ποιήσει γωνίαν ἴσαν τᾷ προγεγραμμένᾳ.</p>
-<p>Ηabeat etiam rursum portio ad humidum in
+               <p>Ηabeat etiam rursum portio ad humidum in
 grauitate proportionem minorem ea, quam habet
 <lb n="5"/> tetragonum quod ab NT ad id quod a BD, quam
 autem proportionem habet portio ad humidum in
@@ -1440,7 +1495,7 @@ intermediam coni sectionem penes Y, ipsam autemΧR
 εὐθεῖαν κατὰ τὸ Η. Δειχθήσεται δὴ ἁ ΠΥ διπλασία τᾶς
 ΥΙ, καθάπερ ἐδείχθη καὶ ἁ ΓΟ τᾶς ΓΧ. Ἀχθω δὲ καὶ ἁ
 <lb n="15"/> μὲν ΠΩ ἐφαπτομένα τᾶς ΑΠΟΛ κατὰ τὸ Π, ἁ δὲ ΠΕ
-κάθετος ἐπὶ τὰν Β&#9651;, καὶ ἁ ΙΑ ἐπιζευχθεῖσα <add cause="omitted">ἐκβεβλήσθω</add>
+κάθετος ἐπὶ τὰν Β△, καὶ ἁ ΙΑ ἐπιζευχθεῖσα <add cause="omitted">ἐκβεβλήσθω</add>
 ἐπὶ τὸ Χ ἐσσεῖται δὲ ἁ ΑΙ τᾷ ΙΧ ἴσα καὶ ἁ ΑΧ τᾷ ΠΩ
 παράλληλος. Δεικτέον δὴ ὅτι τὸ τμᾶμα ἀφεθὲν εἰς τὸ
 ὑγρὸν καὶ κεκλιμένον οὕτως, ὥστε τὰν βάσιν αὐτοῦ μὴ
@@ -1448,20 +1503,22 @@ intermediam coni sectionem penes Y, ipsam autemΧR
 ὥστε τὸν ἄξονα ποτὶ τὰν ἐπιφάνειαν τοῦ ὑγροῦ γωνίαν
 ποιεῖν <add cause="omitted">ἐλάσσονα</add> τᾶς Φ, τὰν δὲ βάσιν αὐτοῦ μηδὲ καθʼ ἓν
 ἅπτεσθαι τᾶς τοῦ ὑγροῦ ἐπιφανείας.</p>
-
-<pb n="60"/>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<p>Ἀφείσθω γὰρ εἰς τὸ ὑγρὸν καὶ καθεστακέτω οὕτως,
+               <pb n="60"/>
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <p>Ἀφείσθω γὰρ εἰς τὸ ὑγρὸν καὶ καθεστακέτω οὕτως,
 ὥστε τὰν <add cause="omitted">βάσιν</add> αὐτοῦ καθʼ ἓν σαμεῖον ἅπτεσθαι τᾶς τοῦ
 ὑγροῦ ἐπιφανείας, τμαθέντος δὲ τοῦ τμάματος ἐπιπέδῳ
 ὀρθῷ ποτὶ τὰν τοῦ ὑγροῦ ἐπιφάνειαν διὰ τοῦ ἄξονος
 <lb n="5"/> τομὰ ἔστω τᾶς μὲν τοῦ τμάματος ἐπιφανείας ἁ ΑΗΒΛ
 ὀρθογωνίου κώνου τομά, τᾶς δὲ τοῦ ὑγροῦ ἐπιφανείας
-ἁ ΑΖ, ἄξων δὲ καὶ διάμετρος τᾶς τομᾶς ἁ &#9651;Β, καὶ τετμάσθω
-ἁ Β&#9651; κατὰ τὰ Κ, Ρ ὁμοίως
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-
-<pb n="61"/>
+ἁ ΑΖ, ἄξων δὲ καὶ διάμετρος τᾶς τομᾶς ἁ △Β, καὶ τετμάσθω
+ἁ Β△ κατὰ τὰ Κ, Ρ ὁμοίως
+<figure>
+                     <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+                  </figure>
+                  <pb n="61"/>
 superioribus, ducatur autem et quae ΗI aequedistanter
 ipsi AZ contingens sectionem coni penes H,
 quae autem HT aequedistanter ipsi BD, quae autem
@@ -1490,16 +1547,20 @@ autem quod intra humidum Y, eius autem quod
 praecedens theorema hoc manifestum quod non
 manet portio, sed inclinabitur ita, ut basis ipsius
 nec secundum unum tangat superficiem humidi.</p>
-<p>Quod autem consistet ita, ut axis ipsius ad superficiem
+               <p>Quod autem consistet ita, ut axis ipsius ad superficiem
 <lb n="30"/> humidi faciat angulum minorem angulo Φ
 
 <pb n="62"/>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
+                  <figure>
+                     <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+                  </figure>
 demonstrabitur. Consistat enim, si possibile est, ita,
 ut faciat angulum non minorem angulo Φ, et alia
 <lg>
-<l rend="indent"><add cause="omitted">κατε-</add></l>
-</lg>
+                     <l rend="indent">
+                        <add cause="omitted">κατε-</add>
+                     </l>
+                  </lg>
 σκευάσθω τὰ αὐτὰ τοῖς ἐν τῷ τρίτῳ σχήματι. Ὁμοίως δὴ
 <lb n="5"/> δειχθήσεται ἁ ΘΗ ἴσα τᾷ Ψ· ὥστε καὶ τᾷ ΙΠ ἴσα. Ἐπεὶ
 οὖν ἁ Λ γωνία οὐκ ἐλάσσων ἐστὶ τᾶς Φ, οὐκ ἄρα μείζων
@@ -1512,9 +1573,8 @@ ut faciat angulum non minorem angulo Φ, et alia
 ὁμοίως τοῖς πρότερον ὅτι οὐ μενεῖ τὸ τμᾶμα, ἀλλὰ κλιθήσεται,
 ὥστε τὸν ἄξονα αὐτοῦ ποτὶ τὰν ἐπιφάνειαν <add cause="omitted">τοῦ
 <lb n="15"/> ὑγροῦ γωνίαν ποιεῖν ἐλάσσονα τᾶς Φ</add>.</p>
-
-<pb n="63"/>
-<p>Similiter autem demonstrabitur <add cause="omitted">quod</add> et, si
+               <pb n="63"/>
+               <p>Similiter autem demonstrabitur <add cause="omitted">quod</add> et, si
 portio ad humidum in grauitate habeat proportionem
 eandem, quam tetragonum quod ab NT ad id quod
 a BD, dimissa in humidum ita, ut basis ipsius non
@@ -1522,15 +1582,15 @@ a BD, dimissa in humidum ita, ut basis ipsius non
 ut basis ipsius secundum unum signum tangat
 superficiem humidi, et axis ipsius ad superficiem
 humidi faciat angulum aequa em angulo qui apud Φ.</p>
-<p>Ἔστω δὴ πάλιν τὸ τμᾶμα ποτὶ τὸ ὑγρὸν τῷ βάρει
+               <p>Ἔστω δὴ πάλιν τὸ τμᾶμα ποτὶ τὸ ὑγρὸν τῷ βάρει
 <lb n="10"/> μείζονα μὲν λόγον ἔχον τοῦ ὃν ἔχει τὸ ἀπὸ τᾶς ΖΠ
-τετράγωνον ποτὶ τὸ ἀπὸ τᾶς Β&#9651;, ἐλάσσονα δὲ τοῦ ὃν
-ἔχει τὸ ἀπὸ τᾶς ΞΟ τετράγωνον ποτὶ τὸ ἀπὸ τᾶς Β&#9651;,
+τετράγωνον ποτὶ τὸ ἀπὸ τᾶς Β△, ἐλάσσονα δὲ τοῦ ὃν
+ἔχει τὸ ἀπὸ τᾶς ΞΟ τετράγωνον ποτὶ τὸ ἀπὸ τᾶς Β△,
 ὃν δὲ λόγον ἔχει τὸ τμᾶμα τῷ βάρει ποτὶ τὸ ὑγρόν, τοῦτον
-ἐχέτω τὸ ἀπὸ τᾶς Ψ τετράγωνον ποτὶ τὸ ἀπὸ τᾶς Β&#9651;
+ἐχέτω τὸ ἀπὸ τᾶς Ψ τετράγωνον ποτὶ τὸ ἀπὸ τᾶς Β△
 <lb n="15"/> δῆλον οὖν ὅτι ἁ Ψ, τᾶς μὲν ΖΠ μείζων ἐστίν, τᾶς δὲ ΞΟ
-ἐλάσσων. Ἐναρμόσθω δὴ εἰς τὸ μεταξὺ τᾶν ΑΞ&#9651;, ΑΠΟΛ
-<del>τμημάτων</del> ἴσα τᾷ Ψ, παράλληλος δὲ τᾷ Β&#9651; ἁ ΦΙ τέμνουσα
+ἐλάσσων. Ἐναρμόσθω δὴ εἰς τὸ μεταξὺ τᾶν ΑΞ△, ΑΠΟΛ
+<del>τμημάτων</del> ἴσα τᾷ Ψ, παράλληλος δὲ τᾷ Β△ ἁ ΦΙ τέμνουσα
 τὰν μεταξὺ <del>τοῦ</del> κώνου τομὰν κατὰ τὸ Υ · πάλιν δὴ ἁ
 ΦΥ διπλασία τᾶς ΥΙ δειχθήσεται, καθάπερ ἁ ΟΓ τᾶς
 <lb n="20"/> ΞΓ. Ἄχθω δὲ ἀπὸ τοῦ Φ τοῦ ΑΠΟΛ ἐφαπτομένα κατὰ τὸ
@@ -1540,22 +1600,24 @@ humidi faciat angulum aequa em angulo qui apud Φ.</p>
 ἅπτεσθαι τᾶς ἐπιφανείας τοῦ ὑγροῦ, καὶ τεθὲν κεκλιμένον
 <lb n="25"/> οὕτως κλιθήσεται, ὥστε τὰν βάσιν αὐτοῦ κατὰ πλείονα
 τόπον τέμνεσθαι ὑπὸ τοῦ ὑγροῦ.</p>
-
-<pb n="64"/>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<p>Ἀφείσθω γὰρ εἰς τὸ ὑγρόν ὡς εἴρηται, καὶ κείσθω τὸ
+               <pb n="64"/>
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <p>Ἀφείσθω γὰρ εἰς τὸ ὑγρόν ὡς εἴρηται, καὶ κείσθω τὸ
 πρῶτον <del>καὶ</del> οὕτως κεκλιμένον, <add cause="omitted">ὥστε τὰν βάσιν αὐτοῦ
 μηδὲ καθʼ ἓν</add> ἅπτεσθαι τᾶς τοῦ ὑγροῦ ἐπιφανείας, τμαθέντος
 δὲ αὐτοῦ ἐπιπέδῳ διὰ τοῦ ἄξονος ὀρθῷ ποτὶ τὰν τοῦ
 <lb n="5"/> ὑγροῦ ἐπιφάνειαν ἐν μὲν τᾷ τοῦ τμάματος ἐπιφανείᾳ
 γίνεται τομὰ ἁ ΑΒΓ, ἐν δὲ τᾷ τοῦ ὑγροῦ ἁ ΕΖ, ἄξων δὲ
-ἔστω <del>τῆς τομῆς</del> καὶ διάμετρος <del>τοῦ τμήματος</del> ἁ Β&#9651;,
-καὶ τετμάσθω ἁ Β&#9651; κατὰ τὰ Κ, Ρ ὁμοίως τοῖς πρότερον,
+ἔστω <del>τῆς τομῆς</del> καὶ διάμετρος <del>τοῦ τμήματος</del> ἁ Β△,
+καὶ τετμάσθω ἁ Β△ κατὰ τὰ Κ, Ρ ὁμοίως τοῖς πρότερον,
 ἀχθῶ δὲ καὶ ἁ μὲν ΗΛ παρὰ τὰν ΕΖ ἐφαπτομένα τᾶς
-<lb n="10"/> <del>ἀπὸ τῆς</del> ΑΒΓ τομᾶς κατὰ τὸ Η, ἁ δὲ ΗΘ παρὰ τὰν
-Β&#9651;, ἁ δὲ ΗΣ κάθετος ἐπὶ τὰν Β&#9651;. Ἐπεὶ δὲ τὸ τμᾶμα τῷ
+<lb n="10"/>
+                  <del>ἀπὸ τῆς</del> ΑΒΓ τομᾶς κατὰ τὸ Η, ἁ δὲ ΗΘ παρὰ τὰν
+Β△, ἁ δὲ ΗΣ κάθετος ἐπὶ τὰν Β△. Ἐπεὶ δὲ τὸ τμᾶμα τῷ
 βάρει λόγον ἔχει ποτὶ τὸ ὑγρόν, ὃν τὸ ἀπὸ τᾶς Ψ τετράγωνον
-ποτὶ τὸ ἀπὸ τᾶς Β&#9651;, δῆλον ὅτι ἁ Ψ ἴσα ἐστὶν τᾷ
+ποτὶ τὸ ἀπὸ τᾶς Β△, δῆλον ὅτι ἁ Ψ ἴσα ἐστὶν τᾷ
 ΗΘ δειχθήσεται γὰρ ὁμοίως τοῖς πρότερον ὥστε καὶ
 <lb n="15"/> ἁ ΗΘ ἴσα ἐστὶν τᾷ ΦΙ καὶ τὰ τμάματα ἄρα τὰ ΑΦΧ,
 ΕΒΖ ἴσα ἐστὶν ἀλλάλοις. Ἐπεὶ δʼ ἐν ἴσοις καὶ ὁμοίοις
@@ -1574,8 +1636,10 @@ humidi faciat angulum aequa em angulo qui apud Φ.</p>
 <lb n="10"/> δὴ ἐκ τούτων ὅτι οὐ μενεῖ τὸ τμᾶμα, ἀλλὰ ἐπικλιθήσεται,
 ἕως ἂν ἁ βάσις αὐτοῦ θίγῃ καθʼ ἓν σαμεῖον τᾶς τοῦ ὑγροῦ
 ἐπιφανείας.</p>
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
-<p>Ἁπτέσθω δὴ καθʼ ἓν σαμεῖον, ὡς ἐν τῷ τρίτῳ σχήματι
+               <figure>
+                  <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+               </figure>
+               <p>Ἁπτέσθω δὴ καθʼ ἓν σαμεῖον, ὡς ἐν τῷ τρίτῳ σχήματι
 ἐγράφθη, καὶ τὰ ἄλλα τὰ αὐτὰ κατεσκευάσθω δειχθήσεται
 <lb n="15"/> δὴ πάλιν ἅ τε ΘΗ ἴσα ἐοῦσα τᾷ ΦΙ καὶ τὰ ΑΦΧ, ΑΒΖ
 τμάματα ἴσα ἀλλάλοις. Καὶ ἐπεὶ ἐν ἴσοις καὶ ὁμοίοις
@@ -1585,7 +1649,9 @@ humidi faciat angulum aequa em angulo qui apud Φ.</p>
 <pb n="66"/>
 ταῖς διαμέτροις τῶν τμαμάτων τῶν ἄρα ΛΗΣ, ΦΤΩ αἱ
 ποτὶ τοῖς Λ, Ω γωνίαι ἴσαι ἐντί, καὶ ἁ ΒΣ εὐθεῖα τᾷ ΒΤ
-<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
+<figure>
+                     <graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/>
+                  </figure>
 ἴσα καὶ ἁ ΣΡ τᾷ ΡΤ καὶ ἁ ΗϠ τᾷ ΦΗ καὶ ἁ ϠΘ τᾷ ΗΙ.
 Ἐπεὶ δὲ διπλασία ἐστὶν ἁ ΦΥ τᾶς ΥΙ, φανερὸν ὅτι ἁ ΗϠ
 <lb n="5"/> μείζων ἐστὶν ἢ διπλασία τᾶς ϠΘ. Ἔστω οὖν ἁ Η(??) τᾶς
@@ -1594,9 +1660,8 @@ humidi faciat angulum aequa em angulo qui apud Φ.</p>
 δὴ καθʼ ἓν σαμεῖον ὑπετέθη τὸ τμᾶμα ἅπτεσθαι τοῦ
 ὑγροῦ, δῆλον ὅτι κατὰ πλείονα τόπον ἁ βάσις ὑπὸ τοῦ
 <lb n="10"/> ὑγροῦ καταλαφθήσεται.</p>
-</div>
-</div>
-</div>
-</body>
-</text>
+            </div>
+         </div>
+      </body>
+   </text>
 </TEI>
