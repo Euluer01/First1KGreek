@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -71,11 +70,9 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="chapter"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
             </citeStructure>
@@ -1358,7 +1355,7 @@ om R ‖ 5 προσλαβόμενος (τὸν Ἀνδρόνικον) suspic V s
 5—6 τὸν ἀνδρόνικον M: cf 174, 35 ‖ 6 τῶ ἀνδρονίκω R ‖ 7 ἀφ. εἰς] διαπορῶν
 R ‖ 8 ἐπ᾿] καὶ ἐπὶ R ‖ εἶτα] δὲ καὶ add ἀδ.] ἁπάντων add R: cf 203, 10? ‖
 ἐπισ.] πρὸς αὐτὸν add R ‖ 9—10 ὑπὲρ καὶ om  R ‖ 10 del καὶ?  ‖ ἤρξ.] ὁ ἰωάννης
-add R ‖ 11&#x8d;—13 ὁ κ. σεσ. καὶ om R ‖ 14 τῇ γῇ om R ‖ 14&#x8d;—16 καὶ π. - σπέρμ.
+add R ‖ 11—13 ὁ κ. σεσ. καὶ om R ‖ 14 τῇ γῇ om R ‖ 14—16 καὶ π. - σπέρμ.
 om R ‖ 14—15 scr τῇ τ. ἐπιμελείᾳ κ. φρουρᾷ? ‖ 15 ἐχέτω V sener et Zahn
 recte ut uid: cf 161, 9 ‖ 16 πολυπλασίονα et add τότε χαιρέτω  R ‖ 17 δρ.
 ὑπ.] τρέχων R ‖ 18—21 ὁ πυκτ. - ἐπηγγ. om R ‖ 18 ⟨ἐπὶ⟩ uel ⟨πρὸς⟩ πυκτικὴν? ‖

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -72,14 +71,10 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+).(.+)"
-                         n="verse"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern matchPattern="(.+)"
-                         n="chapter"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+).(.+)" n="verse" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
             </citeStructure>
@@ -5294,7 +5289,7 @@ AQ εκλεκτα] + (sub ?? ) και τα καλλιστα Q
 τοὺς ποταμούς σου.</p>
             </div>
             <div n="3" type="verse">
-               <p> τά&#x9a;δε λέγει Κύριος Καὶ περιβαλῶ ἐπὶ σὲ δίκτυα
+               <p> τάδε λέγει Κύριος Καὶ περιβαλῶ ἐπὶ σὲ δίκτυα
 λαῶν πολλῶν, καὶ ἀνάξω σε ἐν τῷ ἀγκίστρῳ μου,</p>
             </div>
             <div n="4" type="verse">

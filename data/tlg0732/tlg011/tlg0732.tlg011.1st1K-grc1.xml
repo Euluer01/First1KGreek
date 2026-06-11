@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -77,14 +76,10 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+).(.+)"
-                         n="sentence"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern matchPattern="(.+)"
-                         n="section"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+).(.+)" n="sentence" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
             </citeStructure>
@@ -7164,7 +7159,7 @@
                                 corr. ex. γίνεται V: γίνεται Ca δὴ V: δὲ Ca 9 τύχῃ v. c. et m2, εὐχῇ
                                 m1 V: τύχῃ Ca 9 ἀριστοτέλει VC: ἀριστοτέλῃ a 10 ἐν τῷ πέμπτῳ τῶν
                                 Μετὰ τὰ φυσικά] i. e. ἐν τῷ Ε (cf. p. 151,9. 11) τῶν Μετὰ τὰ φυσικά.
-                                respicit enim, ut videtur, Ar. Met. Ε 2, 1026 a 33&#x8d;—1027b 16. 11 τοῦ
+                                respicit enim, ut videtur, Ar. Met. Ε 2, 1026 a 33—1027b 16. 11 τοῦ
                                 Va: τῶν C τὸ μὴ m2, μὴ m1 V: τὸ μὴ Ca 13 συμβεβηκος ὂν v. c.
                                 συμβεβηκοσιν m1 V: συμβεβηκός τι ὄν C: συμβεβηκὸς ὂν a τὸ γὰρ μὴ ὄν
                                 v. c. τὸ γὰρ δι᾿ ὂν ὄν m1 V: τὸ γὰρ μὴ ὂν ὂν C: τὸ γὰρ μὴ ὂν ὅν a ??

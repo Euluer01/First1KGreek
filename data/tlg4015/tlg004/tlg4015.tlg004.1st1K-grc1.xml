@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -91,11 +90,9 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
          <refsDecl n="CTS">
-            <cRefPattern n="chapter"
-                         matchPattern="(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
             </citeStructure>
@@ -7985,7 +7982,7 @@ scripsi: ἐὰν ἐνδέχηται RUa 2 13 τοῦ β—κατηγορεῖ�
 <note type="footnote">1 ἐκεῖνο, om. ἐν R: κατ᾿ ἐκείνου a1 αὐτοῦ RUa2: τοῦ ἐλάττονος a1 2 κατηγοροπιτο
 R post τοιοῦτον add. γενικώτατον γένος, ὥστε κατὰ πάντων τῶν ὄντων κατηγορεῖθαι a1 3 οὕτως οὔτε ὁ μείζων αὐτοῦ κατηγορηθήσεται οὗτος τοῦ ἐλάττονος a1
 post. μείζων add. οἷμαι ὅτι λέγει Ua2 6 ὅταν R: ὅτι δὲ a ἐγχωρῆ R
-7 βݲ—γݲ Ra 8 ὐπάρχειν a: ὐπάρχει RU καὶ prius a: om. RU 8.9 βݲ&#x8d;γݲ R
+7 βݲ—γݲ Ra 8 ὐπάρχειν a: ὐπάρχει RU καὶ prius a: om. RU 8.9 βݲγݲ R
 9 post μετὰ add. τὰ a 14 οὐσίας scripsi cf. p. 198,1: οὐσία RUa 15 post τούτου
 add. ταύτη Ua 16 ἀποφαθήσεται scripsi cf. p. 189,5: ἀποφανθήσεται libri
 118 δὲ U 19 πρώτως RU (C c n f, corr. u): πρῶτον a Arist. cf. p. 197,23 κατηγορῆται post πλειόνων colloc. a ταυτὸ R 29 post οὐδέτρον add. ἐν R (n p f)
@@ -9035,7 +9032,7 @@ om. a Arist. 27 ποιοῦσι μὲν a 28 εἴπωμεν α</note>
                <lb n="20"/> περαίνει.</p>
             <p>Τὸν σκοπὸν τῶν προκειμένων διὰ τούτων ἠμῖν ἐσήλωσεν· εἰ ἐπ᾿ ἄπειρον
 ἡμῖν αἱ κατηγορίαι προΐασιν, ἀνάγκη καὶ τὰς ἀποδείξεις ἐπ᾿ ἄπειρον προϊέναι,
-ἀεὶ τῷ συμπεράσματι προστιθέντων ἠμῶν ὅρον καὶ &#x9a;† τοιούτων συλλογισμόν,
+ἀεὶ τῷ συμπεράσματι προστιθέντων ἠμῶν ὅρον καὶ † τοιούτων συλλογισμόν,
 εἴ τε ἐπ᾿ ἄπειρον προέρχονται αἱ ἀποδείξεις, ἀνάγκη καὶ τὰς κατηγορίας
 <lb n="25"/> ἐπ᾿ ἄπειρον προϊέναι, καὶ ἔστι τῆς αὐτῆς σκέψεως ἑκάτερον τούτων ζητεῖν.
 τὸ δὲ ἢ πρὸς ἄλληλα περαίνει, τοῦτ᾿ ἔστι τὰ ἄκρα ἅπερ ἀποδεῖξαι βουλόμεθα <lb n="30"/>

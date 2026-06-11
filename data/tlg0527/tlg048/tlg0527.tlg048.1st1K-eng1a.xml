@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_verse.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_verse.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -87,11 +86,9 @@ License</licence>
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
          <refsDecl n="CTS">
-            <cRefPattern n="entry"
-                         matchPattern="(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern n="entry" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="line" delim="." match="l" use="@n"/>
             </citeStructure>
@@ -112,10 +109,7 @@ License</licence>
    </teiHeader>
    <text>
       <body xml:base="urn:cts:greekLit:tlg0527.tlg048.1st1K-eng1a">
-         <div type="commentary"
-              subtype="notes"
-              n="urn:cts:greekLit:tlg0527.tlg048.1st1K-eng1a"
-              xml:lang="eng">
+         <div type="commentary" subtype="notes" n="urn:cts:greekLit:tlg0527.tlg048.1st1K-eng1a" xml:lang="eng">
             <pb n="105"/>
             <head>NOTES</head>
             <div n="1" type="paragraph">

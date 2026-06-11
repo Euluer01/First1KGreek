@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_verse.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_verse.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -72,14 +71,10 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+).(.+)"
-                         n="verse"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern matchPattern="(.+)"
-                         n="chapter"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+).(.+)" n="verse" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="line" delim="." match="l" use="@n"/>
             </citeStructure>
@@ -6199,7 +6194,7 @@ AQᵃ Γ) om ενεκεν εμου και τας αμ. σου U+05D0AQΓ θ΄ ??
 ?? αμα Qmg | πρωτος] πρωτον U+05D0Γ pr ?? Q? 27 υμων 1°] ημων A | πρωτοι]
 πρωτον Q* + ?? ημαρτο| οι γ΄ ημαρτεν Qmg | υμων 2°] αυτων U+05D0AQΓ 28 αρ-
 χοντες] + σου Q | Ισραηλ] Ιλημ A XLIV 1 Ιακωβ ο παις μου] παις μου
-I. U+05D0AQΓ 2 om σε 2° U+05D0* (hab U+05D0c.ᵃ) βοηθηθησει U+05D0* (-ση U+05D0¹) 2&#x7f;—3 ον
+I. U+05D0AQΓ 2 om σε 2° U+05D0* (hab U+05D0c.ᵃ) βοηθηθησει U+05D0* (-ση U+05D0¹) 2—3 ον
 εξελεξαμην οτι ε sup ras ut vid B? 3 οτι] ετι (α΄θ΄ οτι) U+05D0mg | εν διψει
 υδωρ Q | επι 1°] incep επι σ U+05D0* | το 2°] inceb τος και τας ευλογιας μου]
 θ΄σ΄ ӄ την ευλογιαν μου α΄ [και] ευλσγιαν μου Qmg | om σου 2° Qvid 4 ως

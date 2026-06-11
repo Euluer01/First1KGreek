@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -72,14 +71,10 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+).(.+)"
-                         n="verse"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern matchPattern="(.+)"
-                         n="chapter"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+).(.+)" n="verse" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
             </citeStructure>
@@ -4430,7 +4425,7 @@ A 18 λαον Ιερ.] Ιλημ και τον λαον A 19 θεον] pr τον 
                   <pb n="117"/>
 τῇ παρεμβολῇ βασιλέως Ἀσσούρ· καὶ ἀπέστρεψεν μετὰ αἰσχύνης <note type="marginal">B</note>
 προσώπου εἰς τὴν γῆν αὐτοῦ. καὶ ἦλθεν εἰς οἶκον θεοῦ αὐτοῦ, καὶ
-τῶν ἐξελθόντων ἐκ κοιλίας αὐτοῦ κατέβαλον αὐτὸν ἐν ῥομφαία.&#x8d;</p>
+τῶν ἐξελθόντων ἐκ κοιλίας αὐτοῦ κατέβαλον αὐτὸν ἐν ῥομφαία.</p>
             </div>
             <div n="22" type="verse">
                <p>καὶ ἔσωσεν Κύριος Ἐζεκίαν καὶ τοὺς κατοικοῦντας ἐν Ἰερουσαλὴμ

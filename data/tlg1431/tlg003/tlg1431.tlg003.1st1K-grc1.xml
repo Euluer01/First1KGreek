@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_verse.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_verse.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -71,17 +70,11 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+).(.+).(.+)"
-                         n="section"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
-            <cRefPattern matchPattern="(.+).(.+)"
-                         n="chapter"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern matchPattern="(.+)"
-                         n="book"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+).(.+).(.+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
+            <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
                   <citeStructure unit="line" delim="." match="l" use="@n"/>
@@ -2450,7 +2443,7 @@ fere litterarum vulg. | τοῦτό ἐστιν B edd. || 10. ὃν*] ὃ vulg. 
 φησι τὸν αὐχένα καὶ τὴν ἀριστερὰν πτέρυγα κεῖσθαι
 ἐπὶ τοῦ τροπικοῦ, τῆς δὲ Ἀνδρομέδας τὴν δεξιὰν χεῖρα.
 <note type="footnote">2. 3. ὁ δὲ τρίτος — τροπικοῦ om. B. || 7. νοτιώτερος αὐτῶν
-addi. voluit Scal. || &#x90;|| 8&#x8d;—10. ὁ δὲ βορειότερος — μοίρᾳ αʹ om. B.
+addi. voluit Scal. || || 8—10. ὁ δὲ βορειότερος — μοίρᾳ αʹ om. B.
 9. θερινοῦ τροπ. transposui, τροπ. θερ. A edd. || 10. μοίρᾳ αʹ]</note>
                      <pb n="106"/>
                   </p>

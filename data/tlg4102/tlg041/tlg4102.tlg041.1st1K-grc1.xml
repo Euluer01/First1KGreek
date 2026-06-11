@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -88,11 +87,9 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
          <refsDecl n="CTS">
-            <cRefPattern n="chapter"
-                         matchPattern="(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
             </citeStructure>
@@ -1124,7 +1121,7 @@ duobus υ.</note>
                <pb n="68"/>
 “ αὐτοῦ, οὗ καὶ προφῆται, μαθηταὶ ὄντες τῷ Πνεύματι, ὡς διδάσκα“
 λον αὐτὸν προσεδόκων· καὶ διὰ τοῦτο ὃν δικαίως ἀνέμενον, παρὼν
-“ ἤγειρεν αὐτοὺς ἐκ νεκρῶν.&#x9e;” Καὶ μετ’ ὀλίγα—l Καθάπερ οὖν
+“ ἤγειρεν αὐτοὺς ἐκ νεκρῶν.” Καὶ μετ’ ὀλίγα—l Καθάπερ οὖν
 ὁμοτίμως πᾶσι τοῖς ἐπὶ γῆς διὰ τῆς ἐνσάρκου παρουσίας ἐφάνη
 Χριστὸς, καὶ οἱ πιστεύσαντες ὠφελήθησαν· οὕτω καὶ διὰ τῆς εἰς <lb n="5"/>
 ᾅδου καταβάσεως, τοὺς πιστεύσαντας καὶ ἐπεγνωκότας αὐτὸν
@@ -1156,7 +1153,7 @@ duobus υ.</note>
 ἴδια πλημμελήματα χώραν ἔχει, ὅπερ τότε οὐ γέγονε· ψιλὴ γὰρ
 πίστις ἔσωσε τοὺς ἐν ᾅδῃ πιστεύσαντας. καὶ ἔστι μὲν σαφὲς
 ἀνάγνωσμα ἐν ταῖς Καθολικαῖς, ὅτι ἐκήρυξεν ἐν ᾅδου τοῖς ἀπειθήσασιν
-<note type="footnote">1 Qu&#x9c;æ seq. usq. ad v. διαβιώσαντες jam allata fuere anonvnio auct.p.67,5.</note>
+<note type="footnote">1 Quæ seq. usq. ad v. διαβιώσαντες jam allata fuere anonvnio auct.p.67,5.</note>
                <pb n="69"/>
 ἀνθρώποις, ἐκήρυξε δὲ οὐχὶ μάτην, ἀλλ’ ἵνα τοὺς πιστεύσαντας
 τῷ κηρύγματι λυτρώσηται· ὥσπερ καὶ ἐπὶ τῆς γῆς ὣν,

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -74,14 +73,10 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards</p>
          <refsDecl n="CTS">
-            <cRefPattern n="verse"
-                         matchPattern="(.+).(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern n="chapter"
-                         matchPattern="(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern n="verse" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
             </citeStructure>
@@ -125,9 +120,7 @@
 (28) Ταῦτα λέγει τῇ φυλῇ Ῥουβεὶμ, καὶ τῇ φυλῇ
 Γὰδ, καὶ τῷ ἡμίσει (29) φυλῆς Μανασσῆ.</p>
             </div>
-            <div n="27"
-                 corresp="urn:cts:greekLit:tlg0527.tlg005:3.27-3.28"
-                 type="verse">
+            <div n="27" corresp="urn:cts:greekLit:tlg0527.tlg005:3.27-3.28" type="verse">
                <p>Στίχ. κζ΄, κη΄. Πλέον τῷ Μωϋσεῖ παρὰ τῷ Ἀαρὼν
 δίδωσι, τὸ θεάσασθαι τὴν γῆν ἐξ αὐτόπτου. Τὴν
 δὲ εἴσοδον οὐ δίδωσι, τῇ τῆς πίστεως ἐνδείᾳ ταύτην
@@ -319,9 +312,7 @@ xii, 10.</note>
 οἱ πατέρες αὐτῶν διετράφησαν. Διδάσκει τοίνυν ὁ
 νόμος ἡμᾶς, μηδὲ παλαιᾶς εὐεργεσίας ἀμνημονεῖν.</p>
             </div>
-            <div n="14a"
-                 corresp="urn:cts:greekLit:tlg0527.tlg005:23.14"
-                 type="verse">
+            <div n="14a" corresp="urn:cts:greekLit:tlg0527.tlg005:23.14" type="verse">
                <p>
 Στίχ. ιδ΄. Τί ἐστιν, Ὅτι Κύριος ὁ Θεός σου ἐμπεριπατεῖ
 ἐν τῇ παρεμβολῇ σου;</p>
@@ -347,9 +338,7 @@ xii, 10.</note>
 (57) ἐν αὐτῷ, καὶ ἐπαναγαγὼν καλύψεις
 τὴν ἀσχημοσύνην σου ἑαυτοῦ (58).</p>
             </div>
-            <div n="14b"
-                 corresp="urn:cts:greekLit:tlg0527.tlg005:23.14"
-                 type="verse">
+            <div n="14b" corresp="urn:cts:greekLit:tlg0527.tlg005:23.14" type="verse">
                <p>Στίν. ιδ΄. Ὅτι Κόριος ὁ Θεός σου ἐμπεριπατῖ ἐν
 τῇ παρεμβολῇ ἐξελέσθαι σε, καὶ παραβοῦναί
 σοι τὸν ἐχθρύν σου εἰς τὰς χεῖράς σου. Καὶ

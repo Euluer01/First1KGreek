@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_verse.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_verse.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt xml:lang="lat">
@@ -91,11 +90,9 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
          <refsDecl n="CTS">
-            <cRefPattern n="book"
-                         matchPattern="(\w+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern n="book" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
                   <citeStructure unit="line" delim="." match="l" use="@n"/>
@@ -467,7 +464,7 @@ Alex. | 59 ὑπαίτιον Ψ.</note>
 γεσάμενος θανάτου, γαίη δέ μιν ἀμφεκάλυψεν. 
 τοὔνεκα δὴ πάντες οἱ ἐπιχθόνιοι γεγαῶτες 
 ἀνέρες εἰν Ἀίδαο δόμοις ἰέναι καλέονται.
-<note type="footnote">65 &#x9a;&#x98;—124 vgl. Hesiod: Ἔργα κ. ἡ. 109ff., dazu Vergil: Bucol. IV 4 (Probus 
+<note type="footnote">65 —124 vgl. Hesiod: Ἔργα κ. ἡ. 109ff., dazu Vergil: Bucol. IV 4 (Probus 
 p. 9, 14 Keil: Cumaei carminis, Hesiodi a patre Dio, qui Cumaeus fuit. Hesiodus 
 autem in libris suis quattuor saeculorum facit mentionem). — Verwandt ist sonet 
 mit der Schilderung der griechische Henoch (Flemming und Radermacher) 
@@ -820,7 +817,7 @@ VHI 466. — πάλλε Ψ | 239 τότε δείελον οἷά τε χλ. Turn
                <note type="footnote">242 πελιὴν Φ | 243 ὄφρα: ἵνα Ψ | 244 ἔτι στερεή Alex, ἐπὶ στερεῇ ΦΨ |
 242 πελιὴν Φ | 243 ὄφρα: ἵνα Ψ | 244 ἔτι στερεή Alex, ἐπὶ στερεῇ ΦΨ |
 245 οὒτι Mdls. Bur. | 246 τε &lt; Ψ | 247 πάλιν ἥματι Ψ ἕπτ’ ἤματα Mrin. |
-248 εἴπερ: εἰ Ψ. &#x8d;— ὕδατα πολλά vgl. V. 319 ΧΙ 7 |250 Anf. vgl. XII 297. III 3 |
+248 εἴπερ: εἰ Ψ. — ὕδατα πολλά vgl. V. 319 ΧΙ 7 |250 Anf. vgl. XII 297. III 3 |
 251	πάλιν . . . ἤλυθε: πάλιν ἤλυθε(ν) Ψ | 252 μέγ’: μετ’ Wilam., doch vgl.
 V. 377 I 253 χάρμα Ψ. — ἐφελπίζεσκον Φ Bur. ἐπελπίζεσκον Ψ | 254 μελανοπτέρυγον
 Α | 255 τάχος ὑπεξέπεμπεν (τ. έξέπεμπε Ρ) Φ τ. ὑπεξέπεμιρεν Ψ ᾗ τάχος ἐξυπέπεμιρεν Mein.? | 256 πέτατο: πωτᾶτοLudw. —ἐπέμεινεν Auraf.Ludw. ἀπέμεινε ΦΨ]
@@ -1543,7 +1540,7 @@ Quaest. et resp. ad Orthod. 74 εἰ τῆς παρούσης καταστάσ
 θείῳ Mdls. | 205 τέφρη Rz. — δε: δὴ Ψ | 206 vgl. VIII 337. IΙΙ 80 f. — στοιχεῖα 
 πρόπαντα τὰ κόσμου: κόσμου στοιχεῖα πρόπαντα Castal. τά &lt; PL | 207 vgl.
 VIII 338. — ἀὴρ: ὅ τ’ ἀὴρ Ψ | 208 vgl. V III 342. — ποτήσονται FL ποτήσονται R. — 
-ἐν ἠέρι: δι&#x9c;&#x9c;’ ἠέρος Ψ | 209 vgl. VIII 347. — ζῷα: ζῷα τε Ψ | 210 vgl. VIII 
+ἐν ἠέρι: δι’ ἠέρος Ψ | 209 vgl. VIII 347. — ζῷα: ζῷα τε Ψ | 210 vgl. VIII 
 (236 f.) 348. — ἔμφορτος: τ’ Ψ | 211 Anf. vgl. VII 147 | 212 vgl. VIII
 345. — δένδρων Castal. ἀμφορτός τ’ Φ ἀνδρῶν Ψ. — πάντα  Φ | 213 = III 87. 
 vgl. VIII 412. — χωνενσειε RL.</note>

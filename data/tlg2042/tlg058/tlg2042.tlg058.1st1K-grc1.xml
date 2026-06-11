@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -74,14 +73,10 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards</p>
          <refsDecl n="CTS">
-            <cRefPattern n="paragraph"
-                         matchPattern="(.+).(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern n="chapter"
-                         matchPattern="(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern n="paragraph" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
             </citeStructure>
@@ -4095,9 +4090,7 @@ Corderius et Barbarus.</note>
 αὐτοῦ λογισμῶν καὶ κινημάτων ἀναιρεθέντων.</p>
             </div>
          </div>
-         <div n="10a"
-              corresp="urn:cts:ancJewLit:hebBible.psalms.leningrad-cons:10"
-              type="chapter">
+         <div n="10a" corresp="urn:cts:ancJewLit:hebBible.psalms.leningrad-cons:10" type="chapter">
             <head>ΨΑΛΜΟΣ Ι´.</head>
             <div n="1" type="paragraph">
                <p>(Κατὰ Ἑβρ.)</p>
@@ -13705,9 +13698,7 @@ exE, omnia scholia Græca vel e codice Coisli-</note>
 βασιλείαν τῶν οὐρανῶν.</p>
             </div>
          </div>
-         <div n="100"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:100"
-              type="chapter">
+         <div n="100" corresp="urn:cts:greekLit:tlg0527.tlg027:100" type="chapter">
             <head>ΨΑΛΜΟΣ Ρ΄.</head>
             <div n="1" type="paragraph">
                <p>Ἔλεον καὶ κρίσιν ᾄσομαί σοι, Κύριε, κ. τ. ἑ.
@@ -13729,9 +13720,7 @@ exE, omnia scholia Græca vel e codice Coisli-</note>
 ἀπέκτεινε λογισμοὺς παρανόμους.</p>
             </div>
          </div>
-         <div n="101"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:101"
-              type="chapter">
+         <div n="101" corresp="urn:cts:greekLit:tlg0527.tlg027:101" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΑ΄.</head>
             <div n="1" type="paragraph">
                <p>Ἠγρύπνσηα καὶ ἐγενόμην ὡς στρουθίον μονάζον
@@ -13764,9 +13753,7 @@ exE, omnia scholia Græca vel e codice Coisli-</note>
 τὸ σχῆμα τοῦ κόσμου τούτου. »</p>
             </div>
          </div>
-         <div n="102"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:102"
-              type="chapter">
+         <div n="102" corresp="urn:cts:greekLit:tlg0527.tlg027:102" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΒ΄.</head>
             <div n="1" type="paragraph">
                <p>Εὐλόγει ἡ ψυχή μου τὸν Κύριον, καὶ πάντα
@@ -13822,9 +13809,7 @@ exE, omnia scholia Græca vel e codice Coisli-</note>
 ἐπὶ γῆς, πάντων δὲ τῶν ἐν οὐρανοῖς δεσπόζει.</p>
             </div>
          </div>
-         <div n="103"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:103"
-              type="chapter">
+         <div n="103" corresp="urn:cts:greekLit:tlg0527.tlg027:103" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΓ΄.</head>
             <div n="1" type="paragraph">
                <p>Ἀναβαλλόμενος φῶς ὡς ίμάτιον, κ. τ. ἑ. Ἱμάτιον
@@ -13950,9 +13935,7 @@ exE, omnia scholia Græca vel e codice Coisli-</note>
 ἁμαρτωλούς.</p>
             </div>
          </div>
-         <div n="104"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:104"
-              type="chapter">
+         <div n="104" corresp="urn:cts:greekLit:tlg0527.tlg027:104" type="chapter">
             <head>ΨΑΛΜΟΣ PΔ'.</head>
             <div n="1" type="paragraph">
                <p>Διηγήσασθε πάντα τὰ θαυμάαιια αὐτοῦ, κ. τ. ἑ.
@@ -14017,9 +14000,7 @@ exE, omnia scholia Græca vel e codice Coisli-</note>
 κατεσθίει τὸ σπέρμα τὸ πονηρόν.</p>
             </div>
          </div>
-         <div n="105"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:105"
-              type="chapter">
+         <div n="105" corresp="urn:cts:greekLit:tlg0527.tlg027:105" type="chapter">
             <head>ΨΑΛΜΟΣ ΠΕ'.</head>
             <div n="1" type="paragraph">
                <p>Καὶ ἔσωσεν αὐτοὺς ἕνεκεν τοῦ ὀνόματος αὐτοῦ,
@@ -14106,9 +14087,7 @@ exE, omnia scholia Græca vel e codice Coisli-</note>
 ὁ Κύριος ἀξίους ποιεῖ.</p>
             </div>
          </div>
-         <div n="106"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:106"
-              type="chapter">
+         <div n="106" corresp="urn:cts:greekLit:tlg0527.tlg027:106" type="chapter">
             <head>ΨΑΛΜΟΣΡϚ΄.</head>
             <div n="1" type="paragraph">
                <p>Ὅτι ἐχόρτασε ψυχὴν κενὸν, κ. τ. ἑ. Ψυχὴ κενή
@@ -14149,9 +14128,7 @@ exE, omnia scholia Græca vel e codice Coisli-</note>
 ἀντελάβετο αὐτῶν διὰ τὴν κακίαν αὐτῶν.</p>
             </div>
          </div>
-         <div n="107"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:107"
-              type="chapter">
+         <div n="107" corresp="urn:cts:greekLit:tlg0527.tlg027:107" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΖ΄.</head>
             <div n="1" type="paragraph">
                <p>Ἑτοίμη ἡ καρδία μου, κ. τ. ἐ. Ὁ ἀποθέμενος τὰ
@@ -14168,9 +14145,7 @@ exE, omnia scholia Græca vel e codice Coisli-</note>
 χρησάμενος ὁ Κύριος ἐπεδήμησε τῷ βίῳ τῶν ἀνθρώσπων.</p>
             </div>
          </div>
-         <div n="108"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:108"
-              type="chapter">
+         <div n="108" corresp="urn:cts:greekLit:tlg0527.tlg027:108" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΗ΄.</head>
             <div n="1" type="paragraph">
                <p>Καὶ διάβολος στήτω ἐκ δεξιῶν αὐτοῦ, κ. τ. ἑ.
@@ -14212,9 +14187,7 @@ exE, omnia scholia Græca vel e codice Coisli-</note>
 Τοῦτον εὐλογεῖ Κύριος, ὅν ἀντικείμενοι καταρῶνται.</p>
             </div>
          </div>
-         <div n="109"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:109"
-              type="chapter">
+         <div n="109" corresp="urn:cts:greekLit:tlg0527.tlg027:109" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΘ΄.</head>
             <div n="1" type="paragraph">
                <p>Μετὰ σοῦ ἡ ἀρχὴ ἐν ἡμέρᾳ τῆς δυνάμεώς σου
@@ -14239,9 +14212,7 @@ exE, omnia scholia Græca vel e codice Coisli-</note>
 τοῦ φθειρομένου κατὰ τὰς ἐπιθυμίας τῆς ἀπάτης.</p>
             </div>
          </div>
-         <div n="110"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:110"
-              type="chapter">
+         <div n="110" corresp="urn:cts:greekLit:tlg0527.tlg027:110" type="chapter">
             <head>ΑΛΜΟΣ ΡΙ΄.</head>
             <div n="1" type="paragraph">
                <p>Ἐν βουλῇ εὐθέων καὶ συναγωγῇ μεγάλα τὰ
@@ -14272,9 +14243,7 @@ exE, omnia scholia Græca vel e codice Coisli-</note>
 αὐτάς.</p>
             </div>
          </div>
-         <div n="111"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:111"
-              type="chapter">
+         <div n="111" corresp="urn:cts:greekLit:tlg0527.tlg027:111" type="chapter">
             <head>ΨΑΛMOΣ ΡΙΑ΄.</head>
             <div n="1" type="paragraph">
                <p>Ἐν ταῖς ἐντολαῖς αὐτοῦ θελήσει σφόδρα,
@@ -14322,9 +14291,7 @@ exE, omnia scholia Græca vel e codice Coisli-</note>
 ἐστὶ κακία, ἡ κακία ἄρα ἀπολεῖται τῶν ἁμαρτωλῶν.</p>
             </div>
          </div>
-         <div n="112"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:112"
-              type="chapter">
+         <div n="112" corresp="urn:cts:greekLit:tlg0527.tlg027:112" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΙΒ΄.</head>
             <div n="1" type="paragraph">
                <p>Ἀπὸ ἀνατολῶν ἡλίου μέχρι δυσμῶν αἰνετὸν
@@ -14355,9 +14322,7 @@ exE, omnia scholia Græca vel e codice Coisli-</note>
 γίνεται ψυχὴ, μήτηρ δὲ ἐνεργοῦντος.</p>
             </div>
          </div>
-         <div n="113"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:113"
-              type="chapter">
+         <div n="113" corresp="urn:cts:greekLit:tlg0527.tlg027:113" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΙΓ΄.</head>
             <div n="1" type="paragraph">
                <p>Ἐν ἑξόδῳ Ἰσραήλ ἐξ Αἰγύπτου, οἴκου Ἰακὼβ
@@ -14404,9 +14369,7 @@ exE, omnia scholia Græca vel e codice Coisli-</note>
 καὶ Παῦλος· « Ἔπειτα ἡμεῖς οἱ ζῶντες, οἱ περιλειπτόμενοι. »</p>
             </div>
          </div>
-         <div n="114"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:114"
-              type="chapter">
+         <div n="114" corresp="urn:cts:greekLit:tlg0527.tlg027:114" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΙΔ΄.</head>
             <div n="1" type="paragraph">
                <p>Ὅτι ἔκλινε τὸ οὖς αὐτοῦ ἐμοὶ, καὶ ἐν ταῖς ἡμέραις
@@ -14485,9 +14448,7 @@ exE, omnia scholia Græca vel e codice Coisli-</note>
 ἀπὸ ὀλισθήματος.</p>
             </div>
          </div>
-         <div n="115"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:115"
-              type="chapter">
+         <div n="115" corresp="urn:cts:greekLit:tlg0527.tlg027:115" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΙΕ΄.</head>
             <div n="1" type="paragraph">
                <p>Ἐπίστευσα, διὸ ἐλάλησα, κ. τ. ἑ. Εἰ μὴ βεβαίως
@@ -14591,9 +14552,7 @@ exE, omnia scholia Græca vel e codice Coisli-</note>
                <note type="footnote">0se. XI, 4.</note>
             </div>
          </div>
-         <div n="117"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:117"
-              type="chapter">
+         <div n="117" corresp="urn:cts:greekLit:tlg0527.tlg027:117" type="chapter">
             <pb n="1580"/>
             <head>ΨΑΛΜΟΣ ΡΙΖ΄.</head>
             <div n="1" type="paragraph">
@@ -14843,9 +14802,7 @@ exE, omnia scholia Græca vel e codice Coisli-</note>
 γέγονεν.</p>
             </div>
          </div>
-         <div n="118"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:118"
-              type="chapter">
+         <div n="118" corresp="urn:cts:greekLit:tlg0527.tlg027:118" type="chapter">
             <head>ΨΑΛΜΟΣ ΠΙΗ'.</head>
             <div n="1" type="paragraph">
                <p>Μακάριοι οἱ ἄμωμοι ἐν ὀδῷ, κ. τ. ἑ. Τὰ στοιχεἴα
@@ -16251,9 +16208,7 @@ Matth. VII, 14.</note>
 καὶ ἀγνωσία.</p>
             </div>
          </div>
-         <div n="119"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:119"
-              type="chapter">
+         <div n="119" corresp="urn:cts:greekLit:tlg0527.tlg027:119" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΙΘ΄.</head>
             <div n="1" type="paragraph">
                <p>Ὠδὴ τῶν ἀναβαθμῶν, κ. τ. ἑ. Μόνοι οἱ τῷ βίῳ
@@ -16358,9 +16313,7 @@ Matth. VII, 14.</note>
 παρῴκησεν.</p>
             </div>
          </div>
-         <div n="120"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:120"
-              type="chapter">
+         <div n="120" corresp="urn:cts:greekLit:tlg0527.tlg027:120" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΚ΄.</head>
             <div n="1" type="paragraph">
                <p>Ἦρα τοὺς ὀφθαλμούς μου εἰς τὰ ὄρη, ὅθεν ἤξει
@@ -16394,9 +16347,7 @@ Matth. VII, 14.</note>
 τὴν ἀπὸ τῆς ἀρετῆς εἰς τὴν γνῶσιν τοῦ Θεοῦ.</p>
             </div>
          </div>
-         <div n="121"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:121"
-              type="chapter">
+         <div n="121" corresp="urn:cts:greekLit:tlg0527.tlg027:121" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΚΑ΄.</head>
             <div n="1" type="paragraph">
                <p>Εὐφράνθην ἐπὶ τοῖς εἰρηκόσι μοι· Εἰς οἶκον
@@ -16456,9 +16407,7 @@ Matth. VII, 14.</note>
 αὐτῶν. »</p>
             </div>
          </div>
-         <div n="122"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:122"
-              type="chapter">
+         <div n="122" corresp="urn:cts:greekLit:tlg0527.tlg027:122" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΚΒ.</head>
             <div n="1" type="paragraph">
                <p>Πρὸς σὲ ᾖρα τοὺς ὀφθαλμούς μου, τὸν κατοικοῦντα
@@ -16518,9 +16467,7 @@ Matth. VII, 14.</note>
 ὀνειδιζόντων, τοῦ ἐξουθενισμοῦ τῶν ὑπερηφάνων. »</p>
             </div>
          </div>
-         <div n="123"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:123"
-              type="chapter">
+         <div n="123" corresp="urn:cts:greekLit:tlg0527.tlg027:123" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΚΓ΄.</head>
             <div n="1" type="paragraph">
                <p>Εἰ μὴ ὅτι Κύριος ἧν ἐν ἡμῖν, εἰπάτω δὴ Ἰσραὴλ.
@@ -16615,9 +16562,7 @@ Matth. VII, 14.</note>
 ῥέθη δόλος ἐν τῷ στόματι αὐτοῦ.</p>
             </div>
          </div>
-         <div n="124"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:124"
-              type="chapter">
+         <div n="124" corresp="urn:cts:greekLit:tlg0527.tlg027:124" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΚΔ΄.</head>
             <div n="1" type="paragraph">
                <p>Οἱ πεποιθότες ἐπὶ Κύριον ὡς ὄρος Σιὼν, κ. τ.
@@ -16682,9 +16627,7 @@ utem qudpiam anonymo tribuit Catena Corderii.</note>
 « Ἀπὸ γὰρ τοῦ μὴ ἕχοντος καὶ ὃ ἔχει ἀρθήσεται. »</p>
             </div>
          </div>
-         <div n="125"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:125"
-              type="chapter">
+         <div n="125" corresp="urn:cts:greekLit:tlg0527.tlg027:125" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΚΕ΄.</head>
             <div n="1" type="paragraph">
                <p>Ἐν τῷ ἐπιστρέψαι Κύριον τὴν αἰχμαλωσωίαν
@@ -16753,9 +16696,7 @@ utem qudpiam anonymo tribuit Catena Corderii.</note>
 ἐν ἀγαλλιάσει θεριοῦσι.</p>
             </div>
          </div>
-         <div n="126"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:126"
-              type="chapter">
+         <div n="126" corresp="urn:cts:greekLit:tlg0527.tlg027:126" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΚ??΄.</head>
             <div n="1" type="paragraph">
                <p>Ἐὰν μὴ Κύρος οἰκοδομήσῃ οἶκον, εἰς μάτην
@@ -16852,9 +16793,7 @@ utem qudpiam anonymo tribuit Catena Corderii.</note>
 Θεοῦ. Οὐδεὶς δὲ ἄδικος υἱὸς μισθός ἐστιν ἢ κληρονομία Κυρίου.</p>
             </div>
          </div>
-         <div n="127"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:127"
-              type="chapter">
+         <div n="127" corresp="urn:cts:greekLit:tlg0527.tlg027:127" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΚΖ΄.</head>
             <div n="1" type="paragraph">
                <p>Μακάριοι πάντες οἰ φοβούμενοι τόν Κύριον, οἱ
@@ -16930,9 +16869,7 @@ utem qudpiam anonymo tribuit Catena Corderii.</note>
 ἱῶν. »</p>
             </div>
          </div>
-         <div n="128"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:128"
-              type="chapter">
+         <div n="128" corresp="urn:cts:greekLit:tlg0527.tlg027:128" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΚΗ΄.</head>
             <div n="1" type="paragraph">
                <p>ονάκις ἐπολέμησάν με ἐκ νεότητός μου.</p>
@@ -16960,9 +16897,7 @@ utem qudpiam anonymo tribuit Catena Corderii.</note>
 τοῦτο. »</p>
             </div>
          </div>
-         <div n="129"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:129"
-              type="chapter">
+         <div n="129" corresp="urn:cts:greekLit:tlg0527.tlg027:129" type="chapter">
             <head>ΨΑΛΜΟΣ ΠΡΘ΄.</head>
             <div n="1" type="paragraph">
                <p>Ἐκ βαθέων ἐκέκραξά σοι, Κύριε, κ. τ. ἑ. Οὐκ
@@ -17029,9 +16964,7 @@ utem qudpiam anonymo tribuit Catena Corderii.</note>
 παθῆ νοήματα.</p>
             </div>
          </div>
-         <div n="130"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:130"
-              type="chapter">
+         <div n="130" corresp="urn:cts:greekLit:tlg0527.tlg027:130" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΛ΄.</head>
             <div n="1" type="paragraph">
                <p>οιε, οὐχ ὑψώθη ἡ καρδία μου, οὐδὲ ἐμετεωσαν
@@ -17064,9 +16997,7 @@ utem qudpiam anonymo tribuit Catena Corderii.</note>
 νος. » Μετʼ ἐκεῖνον γάρ τις ἀπολαύει τὰ ἐλπιζό</p>
             </div>
          </div>
-         <div n="131"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:131"
-              type="chapter">
+         <div n="131" corresp="urn:cts:greekLit:tlg0527.tlg027:131" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΛΑ΄.</head>
             <div n="1" type="paragraph">
                <p>Μνήσθητι, Κύριε, τοῦ Δαυῒδ, καὶ πάσης τῆς
@@ -17138,9 +17069,7 @@ utem qudpiam anonymo tribuit Catena Corderii.</note>
 ἀποστροφὴ τῶν νοητῶν θηρίων.</p>
             </div>
          </div>
-         <div n="132"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:132"
-              type="chapter">
+         <div n="132" corresp="urn:cts:greekLit:tlg0527.tlg027:132" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΑΓ΄.</head>
             <div n="1" type="paragraph">
                <p>Ἰδοὺ δὴ εὐλογεῖτε τὸν Κύριον, πάντες οἱ δοῦλοι
@@ -17164,9 +17093,7 @@ utem qudpiam anonymo tribuit Catena Corderii.</note>
 ποιεῖν.</p>
             </div>
          </div>
-         <div n="133"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:133"
-              type="chapter">
+         <div n="133" corresp="urn:cts:greekLit:tlg0527.tlg027:133" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΑΔ΄.</head>
             <div n="1" type="paragraph">
                <p>Αὶνεῖτε τὸ ὄνομα Κυρίου, αὶνεῖτε, δοῦλοι, Κύοἱ
@@ -17235,9 +17162,7 @@ utem qudpiam anonymo tribuit Catena Corderii.</note>
 τῷ ναῷ τῆς Ἱερουσαλήμ.</p>
             </div>
          </div>
-         <div n="134"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:134"
-              type="chapter">
+         <div n="134" corresp="urn:cts:greekLit:tlg0527.tlg027:134" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΑΕ΄.</head>
             <div n="1" type="paragraph">
                <p>Ἐξομσλογεῖσθε τῷ Κυρίῳ, ὅτι ἀγαθός, ὅτι εἰς
@@ -17349,9 +17274,7 @@ utem qudpiam anonymo tribuit Catena Corderii.</note>
 ριον τοῦ Θεοῦ.</p>
             </div>
          </div>
-         <div n="136"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:136"
-              type="chapter">
+         <div n="136" corresp="urn:cts:greekLit:tlg0527.tlg027:136" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΛ??΄.</head>
             <div n="1" type="paragraph">
                <p>πὶ τῶν ποταμῶν Βαβυλῶνος ἐκεῖ ἐκαθίσακαὶ
@@ -17405,9 +17328,7 @@ utem qudpiam anonymo tribuit Catena Corderii.</note>
 πρὸς τὴν πέτραν.</p>
             </div>
          </div>
-         <div n="138"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:138"
-              type="chapter">
+         <div n="138" corresp="urn:cts:greekLit:tlg0527.tlg027:138" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΑΗ΄.</head>
             <div n="1" type="paragraph">
                <p>Κύριε, ἐδοκίμασάς με, καὶ ἔγνως με, κ. τ. ἑ. Καὶ
@@ -17565,9 +17486,7 @@ utem qudpiam anonymo tribuit Catena Corderii.</note>
 ψυχὰς τῶν ἀνθρώπων.</p>
             </div>
          </div>
-         <div n="139"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:139"
-              type="chapter">
+         <div n="139" corresp="urn:cts:greekLit:tlg0527.tlg027:139" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΛΘ΄.</head>
             <div n="1" type="paragraph">
                <p>Οἵτινες ἐλογίσαντο ἀδικίαν ἐν καρδίᾳ, ὅλην
@@ -17627,9 +17546,7 @@ utem qudpiam anonymo tribuit Catena Corderii.</note>
 ς πρόσωπον ὁρᾷν τοῦ Θεοῦ.</p>
             </div>
          </div>
-         <div n="140"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:140"
-              type="chapter">
+         <div n="140" corresp="urn:cts:greekLit:tlg0527.tlg027:140" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΜ΄.</head>
             <div n="1" type="paragraph">
                <p>ατευθυνθήτω ἡ προσευχή μου ὡς θυμίεμα
@@ -17661,9 +17578,7 @@ utem qudpiam anonymo tribuit Catena Corderii.</note>
 γουσκ.</p>
             </div>
          </div>
-         <div n="141"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:141"
-              type="chapter">
+         <div n="141" corresp="urn:cts:greekLit:tlg0527.tlg027:141" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΜΑ΄.</head>
             <div n="1" type="paragraph">
                <p>ωνῇ μου πρὸς Κύριον ἐκέκραξα, φωνῇ μου
@@ -17733,9 +17648,7 @@ utia in hunc psalmum fragmenta exhibent ScheGrabii.</note>
 θεωρίᾳ τῶν γεγονότων.</p>
             </div>
          </div>
-         <div n="142"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:142"
-              type="chapter">
+         <div n="142" corresp="urn:cts:greekLit:tlg0527.tlg027:142" type="chapter">
             <head>ΨΑΛMOΣ ΡΜΒ΄.</head>
             <div n="1" type="paragraph">
                <p>Κύριε, εἰσάκουσον τῆς προσευχῆς μου· ἐνώτισπι
@@ -17806,9 +17719,7 @@ utia in hunc psalmum fragmenta exhibent ScheGrabii.</note>
 τὴν ὁδὸν ὁδεύειν καὶ λείαν καὶ πλάνης ἀπηλλανην.</p>
             </div>
          </div>
-         <div n="143"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:143"
-              type="chapter">
+         <div n="143" corresp="urn:cts:greekLit:tlg0527.tlg027:143" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΜΓ΄.</head>
             <div n="1" type="paragraph">
                <p>ὐλογητὸς Κόριος ὁ Θεός μου, ὁ διδάσκων τὰς
@@ -17911,9 +17822,7 @@ utia in hunc psalmum fragmenta exhibent ScheGrabii.</note>
 μετὰ γνώσεως Θεοῦ.</p>
             </div>
          </div>
-         <div n="144"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:144"
-              type="chapter">
+         <div n="144" corresp="urn:cts:greekLit:tlg0527.tlg027:144" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΜΔ΄.</head>
             <div n="1" type="paragraph">
                <p>Ὑψώσω σε, ὁ Θεός μου, κ. τ. ἑ. Ὕψωσις (94)
@@ -18008,9 +17917,7 @@ utia in hunc psalmum fragmenta exhibent ScheGrabii.</note>
 Ἐνταῦθα γὰρ σὰρξ τὴν κακίαν σημαίνει.</p>
             </div>
          </div>
-         <div n="145"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:145"
-              type="chapter">
+         <div n="145" corresp="urn:cts:greekLit:tlg0527.tlg027:145" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΜΕ΄.</head>
             <div n="1" type="paragraph">
                <p>Τὸν φυλάσσοντα ἀλήθειαν εἰς τὸν αἰῶνα,
@@ -18059,9 +17966,7 @@ utia in hunc psalmum fragmenta exhibent ScheGrabii.</note>
 Πνεῦμα τὸ ἅγιον εὐαγγελίζεται τῇ Ἐκκλησίᾳ.</p>
             </div>
          </div>
-         <div n="146"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:146"
-              type="chapter">
+         <div n="146" corresp="urn:cts:greekLit:tlg0527.tlg027:146" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΜ??΄.</head>
             <div n="1" type="paragraph">
                <p>Οἰκοδομῶν Ἱερουσαλὴμ ὁ Κύριος καὶ τὰς διασπορὰς
@@ -18108,9 +18013,7 @@ utia in hunc psalmum fragmenta exhibent ScheGrabii.</note>
                <note type="footnote">(12) Περιάλλετα, etc. Eadem.</note>
             </div>
          </div>
-         <div n="147"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:147"
-              type="chapter">
+         <div n="147" corresp="urn:cts:greekLit:tlg0527.tlg027:147" type="chapter">
             <pb n="1677"/>
             <head>ΨΑΛΜΟΣ ΡΜΖ΄.</head>
             <div n="1" type="paragraph">
@@ -18170,9 +18073,7 @@ utia in hunc psalmum fragmenta exhibent ScheGrabii.</note>
 φησὶν, ἦλθον βαλεῖν ἐπὶ τὴν γῆν. »</p>
             </div>
          </div>
-         <div n="148"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:148"
-              type="chapter">
+         <div n="148" corresp="urn:cts:greekLit:tlg0527.tlg027:148" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΜΗ΄.</head>
             <div n="1" type="paragraph">
                <p>Αἰνεῖτε τὸν Κύριον ἐκ τῶν οὐρανῶν, κ. τ. ἑ.
@@ -18217,9 +18118,7 @@ scholia e schedis Grabii desumpta sunt.</note>
 γεγονότων καὶ γενομένων ὑπὸ Θεοῦ.</p>
             </div>
          </div>
-         <div n="149"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:149"
-              type="chapter">
+         <div n="149" corresp="urn:cts:greekLit:tlg0527.tlg027:149" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΜΘ΄.</head>
             <div n="1" type="paragraph">
                <p>Ἄσατε τῷ Κορίῳ ᾆσμα καινὸν, κ. τ. ἑ. Οὗτος
@@ -18338,9 +18237,7 @@ scholia e schedis Grabii desumpta sunt.</note>
 ταῦτα μὴ εἶναι ὅσιον Θεοῦ.</p>
             </div>
          </div>
-         <div n="150"
-              corresp="urn:cts:greekLit:tlg0527.tlg027:150"
-              type="chapter">
+         <div n="150" corresp="urn:cts:greekLit:tlg0527.tlg027:150" type="chapter">
             <head>ΨΑΛΜΟΣ ΡΝ΄.</head>
             <div n="1" type="paragraph">
                <p>Αἰνεῖτε τὸν Θεὸν ἐν τοῖς ἀγίοις αὐτοῦ, κ. τ. ἑ.

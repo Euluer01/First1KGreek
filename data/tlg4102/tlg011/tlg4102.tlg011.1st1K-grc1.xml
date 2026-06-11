@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -85,17 +84,11 @@
       <encodingDesc>
          <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
          <refsDecl n="CTS">
-            <cRefPattern n="comment"
-                         matchPattern="(\w+).(\w+).(\w+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
-            <cRefPattern n="verse"
-                         matchPattern="(\w+).(\w+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern n="chapter"
-                         matchPattern="(\w+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern n="comment" matchPattern="(\w+).(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
+            <cRefPattern n="verse" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern n="chapter" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
             </citeStructure>
@@ -149,9 +142,7 @@
          <head>SUPPLEMENTUM Ε CODICE MONACENSI.</head>
          <div n="7" type="chapter">
             <div n="7" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:7.7"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:7.7" type="comment">
                   <p>Τί οὖν ἐροῦμεν· ὁ νόμος ἁμαρτία; μὴ γένοιτο· ἀλλὰ τὴν ἁμαρτίαν οὐκ ἔγνων, εἰ μὴ διὰ νόμου.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -175,9 +166,7 @@
                </div>
             </div>
             <div n="8" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:7.7-7.8"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:7.7-7.8" type="comment">
                   <p>Τήν τε γὰρ ἐπιθυμίαν οὐκ ᾔδειν, εἰ μὴ ὁ νόμος οὐκ ἐπιθυμήσεις ἔλεγεν· ἀφορμὴν δὲ λαβοῦσα ἡ ἁμαρτία διὰ τῆς ἐντολῆς, κατειργάσατο ἐν ἐμοὶ πᾶσαν ἐπιθυ- μίαν.</p>
                </div>
                <lb n="10"/>
@@ -229,9 +218,7 @@
                </div>
             </div>
             <div n="9" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:7.9-7.12"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:7.9-7.12" type="comment">
                   <p>Ἐγὼ δὲ ἔζων χωρὶς νόμου ποτέ· ἐλθούσης δὲ τῆς ἐντολῆς, ἡ μὲν ἁμαρτία ἀνέζησεν, ἐγὼ δὲ ἀπέθανον· καὶ <lb n="25"/> εὑρέθη μοὶ ἡ ἐντολὴ ἡ εἰς ζωὴν, αὕτη εἰς θάνατον. ἡ γὰρ ἁμαρτία ἀφορμὴν λαβοῦσα διὰ τῆς ἐντολῆς, ἐξηπάτησέ με καὶ δι’ αὐτῆς ἀπέκτεινεν. ὥστε ὁ μὲν νόμος ἅγιος, καὶ ἡ ἐντολὴ ἅγια καὶ δικαία καὶ ἀγαθή.</p>
                </div>
                <div n="1" corresp="#Cyril" type="comment">
@@ -302,9 +289,7 @@
                </div>
             </div>
             <div n="13" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:7.13"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:7.13" type="comment">
                   <p>Τὸ οὖν ἀγαθὸν ἐν ἐμοὶ γέγονε θάνατος; μὴ γένοιτο· ἀλλ’ ἡ ἁμαρτία, ἵνα φανῇ ἁμαρτία, διὰ τοῦ ἀγαθοῦ μοι <lb n="5"/> κατεργαζομένη θάνατον. ἵνα γένηται καθ’ ὑπερβολὴν ἁμαρτωλὸς ἡ ἁμαρτία διὰ τῆς ἐντολῆς.</p>
                </div>
                <div n="1" corresp="#Cyril" type="comment">
@@ -332,9 +317,7 @@
                </div>
             </div>
             <div n="14" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:7.14"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:7.14" type="comment">
                   <p>Οἴδαμεν γὰρ ὅτι ὁ νόμος πνευματικός ἐστιν· ἐγὼ δὲ σαρκικὸς εἰμὶ, πεπραμένος ὑπὸ τὴν ἁμαρτίαν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -368,9 +351,7 @@
                </div>
             </div>
             <div n="15" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:7.15-7.16"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:7.15-7.16" type="comment">
                   <p>Ὃ γὰρ κατεργάζομαι, οὐ γινώσκω· οὐ γὰρ ὁ θέλω, <lb n="5"/> τοῦτο πράσσω· ἀλλ’ ὃ μισῶ, τοῦτο ποιῶ. εἰ δὲ ὃ οὐ θέλω, τοῦτο ποιῶ, σύμφημι τῷ νόμῳ, ὅτι καλός.</p>
                </div>
                <div n="1" corresp="#Gennadius" type="comment">
@@ -412,9 +393,7 @@
                </div>
             </div>
             <div n="17" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:7.17-7.20"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:7.17-7.20" type="comment">
                   <p>Νυνὶ δὲ οὐκέτι ἐγὼ κατεργάζομαι αὐτό· ἀλλ’ ἡ <lb n="5"/> οἰκοῦσα ἐν ἐμοὶ ἁμαρτία. οἶδα γὰρ ὅτι οὐκ οἰκεῖ ἐν ἐμοί· τουτέστιν ἐν τῇ σαρκί μου, ἀγαθόν. τὸ μὲν γὰρ θέλειν παράκειταί μοι· τὸ δὲ κατεργάζεσθαι τὸ καλὸν, οὐχ εὑρίσκω· οὐ γὰρ ὃ θέλω ποιῶ ἀγαθόν· ἀλλ’ ὃ οὐ θέλω κακὸν, τοῦτο πράσσω· εἰ δὲ ὃ οὐ θέλω ἐγὼ, τοῦτο <lb n="10"/> ποιῶ, οὐκέτι ἐγὼ κατεργάζομαι αὐτό· ἀλλ’ ἡ οἰκοῦσα ἐν ἐμοὶ ἁμαρτία.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -449,9 +428,7 @@
                </div>
             </div>
             <div n="21" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:7.21"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:7.21" type="comment">
                   <p>Εὑρίσκω ἄρα τὸν νόμον τῷ θέλοντι ἐμοὶ ποιεῖν τὸ καλὸν, ὅτι ἐμοὶ τὸ κακὸν παράκειται.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -474,9 +451,7 @@
                </div>
             </div>
             <div n="22" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:7.22-7.23"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:7.22-7.23" type="comment">
                   <p>Συνήδομαι γὰρ τῷ νόμῳ τοῦ Θεοῦ κατὰ τὸν ἔσω ἄνθρωπον. βλέπω δὲ ἕτερον νόμον ἐν τοῖς μέλεσί μου, ἀντιστρατευόμενον τῳ νόμῳ του νόος μου. καὶ αιχμαλωτίζοντά με τῷ νόμῳ τῆς ἁμαρτίας τῷ ὄντι ἐν τοῖς μέλεσί μου.</p>
                   <lb n="20"/>
                </div>
@@ -513,9 +488,7 @@
                </div>
             </div>
             <div n="24" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:7.24-7.25"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:7.24-7.25" type="comment">
                   <p>Ταλαίπωρος ἐγὼ ἄνθρωπος· τίς με ῥύσεται ἐκ τοῦ <lb n="5"/> σώματος τοῦ θανάτου τούτου; εὐχαριστῶ τῷ Θεῷ διὰ Ἰησοῦ Χριστοῦ τοῦ Κυρίου ἡμῶν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -540,9 +513,7 @@
          </div>
          <div n="8" type="chapter">
             <div n="1" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.1"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.1" type="comment">
                   <p>Ἄρα οὖν αὐτὸς ἐγὼ τῷ μὲν νοὶ· δουλεύω νόμῳ Θεοῦ, τῇ δὴ σαρκὶ, νόμῳ ἁμαρτίας. οὐδὲν ἄρα νῦν κατάκριμα τοῖς ἐν Χριστοῦ Ἰησοῦ, μὴ κατὰ σάρκα περιπατοῦσιν, <lb n="15"/> ἀλλὰ κατὰ πνεῦμα.</p>
                </div>
                <div n="1" corresp="#Cyril" type="comment">
@@ -559,9 +530,7 @@
                </div>
             </div>
             <div n="2" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.2"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.2" type="comment">
                   <p>Ὁ γὰρ νόμος τοῦ Πνεύματος τῆς ζωῆς ἐν Χριστῷ Ἰησοῦ, ἠλευθέρωσε με ἀπὸ τοῦ νόμου τῆς ἁμαρτίας καὶ <lb n="25"/> τοῦ θανάτου.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -583,9 +552,7 @@
                </div>
             </div>
             <div n="3" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.3-8.4"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.3-8.4" type="comment">
                   <p>Τὸ γὰρ ἀδύνατον τοῦ νόμου, ἐν ᾧ ἠσθένει διὰ τῆς σαρκὸς, ὁ Θεὸς τὸν ἑαυτοῦ υἱὸν πέμψας ἐν ὁμοιώματι <lb n="10"/> σαρκὸς ἁμαρτίας, καὶ περὶ ἁμαρτίας, κατέκρινε τὴν ἁμαρτίαν ἐν τῇ σαρκί· ἵνα τὸ δικαίωμα τοῦ Θεοῦ πληρωθῇ ἐν ἡμῖν, τοῖς μὴ κατὰ σάρκα περιπατοῦσιν, ἀλλὰ κατὰ πνεῦμα.</p>
                </div>
                <div n="1" corresp="#Cyril" type="comment">
@@ -636,9 +603,7 @@
                </div>
             </div>
             <div n="5" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.5-8.7"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.5-8.7" type="comment">
                   <p>Οἱ γὰρ κατὰ σάρκα ὄντες, τὰ τῆς σαρκὸς φρονοῦσιν· οἱ δὲ κατὰ πνεῦμα, τὰ τοῦ πνεύματος. τὸ γὰρ φρόνημα τῆς σαρκὸς, θάνατος· τὸ δὲ φρόνημα τοῦ <lb n="20"/> πνεύματος, ζωὴ καὶ εἰρήνη. διότι τὸ φρόνημα τῆς σαρκὸς ἔχθρα εἰς Θεόν· τῷ γὰρ νόμῳ τοῦ ἑοῦ, οὐχ ὑποτάσσεται· οὐδὲ γὰρ δύναται.</p>
                </div>
                <div n="1" corresp="#Cyril" type="comment">
@@ -666,9 +631,7 @@
                </div>
             </div>
             <div n="8" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.8-8.9"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.8-8.9" type="comment">
                   <p>Οἱ δὲ ἐν σαρκὶ ὄντες, Θεῷ ἀρέσαι οὐ δύνανται. ὑμεῖς δὲ οὐκ ἐστὲ ἐν σαρκὶ ἀλλ’ ἐν πνεύματι. εἴπερ <lb n="5"/> Πνεῦμα Θεοῦ οἰκεῖ ἐν ἡμῖν.</p>
                </div>
                <div n="1" corresp="#Cyril" type="comment">
@@ -696,9 +659,7 @@
                </div>
             </div>
             <div n="10" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.10"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.10" type="comment">
                   <p rend="merge"> αὐτοῦ. εἰ δὲ Χριστὸς ἐν ὑμῖν, τὸ μὲν σῶμα νεκρὸν διὰ ἁμαρτίαν, τὸ δὲ πνεῦμα ζωὴν διὰ δικαιοσύνην.</p>
                </div>
                <div n="1" corresp="#Theodoret" type="comment">
@@ -743,9 +704,7 @@
                </div>
             </div>
             <div n="11" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.11"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.11" type="comment">
                   <p>Εἰ δὲ τὸ Πνεῦμα τοῦ ἐγείραντος Ἰησοῦν ἐκ νεκρῶν οἰκεῖ ἐν ὑμῖν, ὁ ἐγείρας τὸν Κύριον ἡμῶν Ἰησοῦν, ζωοποιήσει καὶ τὰ θνητὰ σώματα ὑμῶν, διὰ τὸ ἐνοικοῦν αὐτοῦ Πνεῦμα ἐν ὑμῖν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -770,9 +729,7 @@
                </div>
             </div>
             <div n="12" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.12-8.13"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.12-8.13" type="comment">
                   <p>Ἄρα οὖν, ἀδελφοὶ, ὀφειλέται ἐσμὲν οὐ τῆ σαρκὶ, τοῦ κατὰ σάρκα ζῆν. εἰ γὰρ κατὰ σάρκα ζῆτε, μέλλετε ἀποθνήσκειν· εἰ δὲ πνεύματι τὰς πράξεις τοῦ σώματος θανατοῦσθε, ζήσεσθε.</p>
                   <pb n="235"/>
                </div>
@@ -785,9 +742,7 @@
                </div>
             </div>
             <div n="14" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.14"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.14" type="comment">
                   <p>Ὅσοι γὰρ Πνεύματι Θεοῦ ἄγονται, οὗτοι εἰσὶν υἱοὶ <lb n="30"/> Θεοῦ.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -802,9 +757,7 @@
                </div>
             </div>
             <div n="15" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.15"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.15" type="comment">
                   <p>Οὐ δὲ γὰρ ἐλάβετε πνεῦμα δουλείας, ἀλλ’ ἐλάβετε <lb n="25"/> πνεῦμα υἱοθεσίας, ἐν ᾧ κράζομεν ἀββᾶ ὁ πατήρ,</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -834,9 +787,7 @@
                </div>
             </div>
             <div n="16" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.16-8.17"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.16-8.17" type="comment">
                   <p>Αὐτὸ τὸ πνεῦμα συμμαρτυρεῖ τῷ πνεύματι ἡμῶν, ὅτι ἐσμὲν τέκνα Θεοῦ. εἰ δὲ τέκνα, καὶ κληρονόμοι. κληρονόμοι μὲν Θεοῦ, συγκληρονόμοι δὲ Χριστοῦ· εἴπερ συμπάσχομεν, <lb n="10"/> ἵνα καὶ συνδοξασθῶμεν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -874,9 +825,7 @@
                </div>
             </div>
             <div n="19" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.19-8.20"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.19-8.20" type="comment">
                   <p>Ἡ γὰρ ἀποκαραδοκία τῆς κτίσεως, τὴν ἀποκάλυψιν τῶν υἱῶν τοῦ Θεοῦ ἀπεκδέχεται. τῆ γὰρ ματαιότητι ἡ κτίσις ὑπετάγη, οὐχ ἑκοῦσα, ἀλλὰ διὰ τὸν ὑποτάξαντα ἐπ’ ἐλπίδι.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -926,9 +875,7 @@
                </div>
             </div>
             <div n="21" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.21"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.21" type="comment">
                   <p>Ὅτι καὶ αὐτὴ ἡ κτίσις ἐλευθερωθήσεται ἀπὸ τῆς δουλείας τῆς φθορᾶς, εἰς τὴν ἐλευθερίαν τῆς δόξης τῶν τέκνων τοῦ Θεοῦ.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -943,9 +890,7 @@
                </div>
             </div>
             <div n="22" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.22-8.23"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.22-8.23" type="comment">
                   <p>Οἴδαμεν γὰρ ὅτι πᾶσα ἡ κτίσις συστενάζει καὶ συνωδίνει ἄχρι τοῦ νῦν. οὐ μόνον δὲ, ἀλλὰ καὶ αὐτοὶ τὴν ἀπαρχὴν τοῦ πνεύματος ἔχοντες, καὶ ἡμεῖς αὐτοὶ ἐν ἑαυτοῖς τοῖς στενάζομεν, υἱοθεσίαν ἀπεκδεχόμενοι, τὴν ἀπολύτρωσιν <lb n="10"/> του σώματος ἤμων.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -969,9 +914,7 @@
                </div>
             </div>
             <div n="24" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.24-8.25"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.24-8.25" type="comment">
                   <p rend="merge"> τῇ γὰρ ἐλπίδι ἐσώθη μὲν. ἐλπὶς δὲ βλεπομένη, οὐκ <lb n="20"/> ἔστιν ἐλπίς· ὃ γὰρ βλέπει τίς, τί καὶ ἐλπίζει ; εἰ δὲ ὃ οὐ βλέπομεν ἐλπίζομεν, δι’ ὑπομονῆς ἀπεκδεχόμεθα.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -984,9 +927,7 @@
                </div>
             </div>
             <div n="26" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.26"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.26" type="comment">
                   <p>Ὡσαύτως δὲ καὶ τὸ πνεῦμα συναντιλαμβάνεται ταῖς ἀσθενείαις ἡμῶν. τὸ γὰρ τί προσευξόμεθα, καθὸ δεῖ, οὐκ οἴδαμεν. ἀλλ’ αὐτὸ τὸ πνεῦμα ἐντυγχάνει ὑπὲρ ἡμῶν στεναγμοῖς ἀλαλήτοις.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1012,9 +953,7 @@
                </div>
             </div>
             <div n="27" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.27"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.27" type="comment">
                   <p>Ὁ δὲ ἐρευνῶν τὰς καρδίας, οἶδε τὸ φρόνημα τοῦ πνεύματος, ὅτι κατὰ Θεὸν ἐντυγχάνει ὑπὲρ ἁγίων.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1027,9 +966,7 @@
                </div>
             </div>
             <div n="28" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.28"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.28" type="comment">
                   <p>Οἴδαμεν δὲ ὅτι τοῖς ἀγαπῶσι τὸν Θεὸν, πάντα συνεργεῖ εἰς τὸ ἀγαθὸν, τοῖς κατὰ πρόθεσιν κλητοῖς οὖσιν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1059,9 +996,7 @@
                </div>
             </div>
             <div n="29" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.29-8.30"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.29-8.30" type="comment">
                   <p>Ὅτι οὓς προέγνω, καὶ προώρισε συμμόρφους τῆς εἰκόνος τοῦ υἱοῦ αὐτοῦ. εἰς τὸ εἶναι αὐτὸν πρωτότοκον ἐν <lb n="25"/> πολλοῖς ἀδελφοῖς. οὓς δὲ προώρισε, τούτους καὶ ἐκάλεσε. λεσε. καὶ οὓς ἐκάλεσε, τούτους καὶ ἐδικαίωσεν. οὓς δὲ ἐδικαίωσε, τούτους καὶ ἐδόξασεν.</p>
                </div>
                <div n="1" corresp="#Cyril" type="comment">
@@ -1132,9 +1067,7 @@
                </div>
             </div>
             <div n="31" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.31"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.31" type="comment">
                   <p>Τί οὖν ἐροῦμεν πρὸς ταῦτα; εἰ ὁ Θεὸς ὑπὲρ ἡμῶν, τίς καθ’ ἡμῶν;</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1150,9 +1083,7 @@
                </div>
             </div>
             <div n="32" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.32"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.32" type="comment">
                   <p>Ὅς γε τοῦ ἰδίου Υἱοῦ οὐκ ἐφείσατο, ἀλλ’ ὑπὲρ πάντων παρέδωκεν αὐτὸν, πῶς οὐχὶ καὶ σὺν αὐτῷ τὰ πάντα ἡμῖν χαρίσεται;</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1171,9 +1102,7 @@
                </div>
             </div>
             <div n="33" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.33-8.34"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.33-8.34" type="comment">
                   <p>Τίς ἐγκαλέσειε κατὰ ἐκλεκτῶν Θεοῦ ; Θεὸς ὁ δικαίων. τίς ὁ κατακρίνων ;</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1194,9 +1123,7 @@
                </div>
             </div>
             <div n="34" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.34"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.34" type="comment">
                   <p rend="merge">Χριστὸς ὁ ἀποθανὼν, μᾶλλον δὲ καὶ ἐγερθεὶς, ὃς καὶ ἔστιν ἐν δεξιᾷ τοῦ Θεοῦ, ὃς καὶ ἐντυγχάνει ὑπὲρ ημων.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1217,9 +1144,7 @@
                </div>
             </div>
             <div n="35" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.35-8.37"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.35-8.37" type="comment">
                   <p>Τίς ἡμᾶς χωρίσει ἀπὸ τῆς ἀγάπης τοῦ Χριστοῦ ; θλί- <lb n="10"/> ψις, ἣ στενοχωρία, ἢ διωγμὸς, ἢ λιμὸς, ἢ γυμνότης, ἣ κίνδυνος, ἢ μάχαιρα ; καθὼς γέγραπται, ὅτι ἕνεκα σοῦ θανατούμεθα ὅλην τὴν ἡμέραν· ἐλογίσθημεν ὡς πρόβάτα σφαγῆς. ἀλλ’ ἐν τούτοις πᾶσιν ὑπερνικῶμεν διὰ τοῦ ἀγαπήσαντος ἡμᾶς.</p>
                   <lb n="15"/>
                </div>
@@ -1239,9 +1164,7 @@
                </div>
             </div>
             <div n="38" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:8.38-8.39"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:8.38-8.39" type="comment">
                   <p>Πέπεισμαι γὰρ ὅτι οὔτε θάνατος, οὔτε ζωὴ, οὔτε ἄγγελοι, οὔτε ἀρχαὶ, οὔτε δυνάμεις, οὔτε ἐνεστῶτα, οὔτε μέλλοντα, οὔτε ὕψωμα, οὔτε βάθος, οὔτε τις κτίσις ἑτέρα δυνήσεται ἡμᾶς χωρίσαι ἀπὸ τῆς ἀγάπης τοῦ Θεοῦ, τῆς ἐν Χριστῷ Ἰησοῦ τῷ Κυρίῳ ἡμῶν.</p>
                   <lb n="10"/>
                </div>
@@ -1304,9 +1227,7 @@
          </div>
          <div n="9" type="chapter">
             <div n="1" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:9.1-9.5"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:9.1-9.5" type="comment">
                   <p>Ἀλήθειαν λέγω ἐν Χριστῷ, οὐ ψεύδομαι, συμμαρτυρούσης μοι τῆς συνειδήσεως ἐν Πνεύματι Ἁγίῳ, ὅτι λύπη μοι ἐστὶ μεγάλη, καὶ ἀδιάλειπτος ὀδύνη ἐν τῇ καρδίᾳ μου· ηὐχόμην γὰρ αὐτὸς ἐγὼ ἀνάθεμα εἶναι ἀπὸ Χριστοῦ ὑπὲρ τῶν ἀδελφῶν μου, τῶν συγγενῶν μου <lb n="5"/> τῶν κατὰ σάρκα· οἵ τινές εἰσιν Ἰσραηλῖται, ὧν ἡ υἱοθεσία, καὶ ἡ δόξα, καὶ αἱ διαθῆκαι, καὶ ἡ νομοθεσία, καὶ αἱ λατρεῖαι, καὶ αἱ ἐπαγγελίαι, ὧν οἱ πατέρες, καὶ ἐξ ὧν ὁ Χριστὸς τὸ κατὰ σάρκα, ὁ ὣν ἐπὶ πάντων Θεὸς εὐογητὸς εἰς τοὺς αἰῶνας, ἀμήν.</p>
                   <lb n="10"/>
                   <p>Γρηγορίου τοῦ θεολόγου ἐκ τῶν περὶ φιλοπτωκίας. Ἐξ ἀγάπης ὁ θεῖος Ἀπόστολος ἐτόλμησέ τι καὶ καθ’ ἑαυτοῦ διὰ τὸν Ἰσραὴλ φθέγξασθαι.</p>
@@ -1374,9 +1295,7 @@
                </div>
             </div>
             <div n="6" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:9.6-9.9"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:9.6-9.9" type="comment">
                   <p rend="merge">ὁ πατὴρ γενητὸς ἔσται κατ’ αὐτοὺς, ὅπερ ἀσεβὲς ἐννοεῖν.</p>
                   <p>Οὐχ οἷον δὲ ὅτι ἐκπέπτωκεν ὁ λόγος τοῦ Θεοῦ. οὐ γὰρ πάντες οἱ ἐξ Ἰσραὴλ, οὗτοι Ἰσραήλ. οὐδ’ ὅτι εἰσὶ <lb n="10"/> σπέρμα Ἁβραὰμ, πάντες τέκνα, ἀλλ’, ἐν Ἰσαὰκ κληθήσεταί σοι σπέρμα. τουτέστιν, οὐ τὰ τέκνα τῆς σαρκὸς, ταῦτα τέκνα τοῦ Θεοῦ· ἀλλὰ τὰ τέκνα τῆς ἀπαγγελίας λογίζεται εἰς σπέρμα. ἐπαγγελίας γὰρ ὁ λόγος οὗτος, κατὰ τὸν καιρὸν τοῦτον ἐλεύσομαι, καὶ ἔσται τῇ <lb n="15"/> Σάρρᾳ υἱός.</p>
                </div>
@@ -1394,9 +1313,7 @@
                </div>
             </div>
             <div n="10" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:9.10-9.13"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:9.10-9.13" type="comment">
                   <p>Οὐ μόνον δὲ, ἀλλὰ καὶ Ῥεβέκκα ἐξ ἑνὸς κοίτην ἔχουσα Ἰσαὰκ τοῦ πατρὸς ἡμῶν. μήπω γὰρ γεννηθέντων, μὴ δὲ πραξάντων τί ἀγαθὸν ἢ κακὸν, ἵνα ἡ κατ’ <lb n="5"/> ἐκλογὴν πρόθεσις τοῦ Θεοῦ μένη, οὐκ ἐξ ἔργων, ἀλλ’ ἐκ τοῦ καλοῦντος, ἐρρήθη αὐτῇ, ὁ μείζων δουλεύσει τῷ ἐλάσσονι, καθὼς γέγραπται, τὸν Ἰακὼβ ἠγάπησα, τὸν δὲ Ἡσαῦ ἐμίσησα.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1443,9 +1360,7 @@
                </div>
             </div>
             <div n="14" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:9.14-9.21"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:9.14-9.21" type="comment">
                   <p>Τί οὖν ἐροῦμεν; μὴ ἀδικία παρὰ τῷ Θεῷ; μὴ γένοιτο. <lb n="20"/> τῷ γὰρ Μωϋσῇ λέγει, Ἐλεήσω ὃν ἃν ἐλεῶ, καὶ οἰκτειρήσω ὃν ἃν οἰκτείρω. ἄρα οὖν αὐτοῦ θέλοντος, οὐδὲ τοῦ τρέχοντος, ἀλλὰ τοῦ ἐλεοῦντος Θεοῦ. λέγει γὰρ ἡ γραφὴ τῷ Φαραὼ, ὅτι εἰς τοῦτο ἐξήγειρά σε, ἵνα ἐνδείξωμαι ἐν σοὶ τὴν δύναμίν μου, καὶ ὅπως διαγγελῇ <lb n="25"/> τὸ ὄνομά μου ἐν πάσῃ τῇ γῇ. ἄρα οὖν ὃν ἃν θέλῃ ἐλεεῖ· ὃν δὲ θέλει, σκληρύνει. ἐρεῖς οὖν μοι, τί ἔτι μέμφεται; τῷ γὰρ θελήματι αὐτοῦ τίς ἀνθέστηκε; μενοῦν γε, ὦ ἄνθρωπε, σὺ τίς εἶ ὁ ἀνταποκρινόμενος τῷ Θεῷ; μὴ ἐρεῖ τὸ πλάσμα τῷ πλάσαντι, τί με ἐποίησας οὕτως; <lb n="30"/> ἢ οὐκ ἔχει ἐξουσίαν ὁ κεραμεὺς τοῦ πηλοῦ, ἐκ τοῦ αὐτοῦ φυράματος ποιῆσαι, ὃ μὲν εἰς τιμὴν σκεῦος, ὃ δὲ εἰς ἀτιμίαν;</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1501,9 +1416,7 @@
                </div>
             </div>
             <div n="22" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:9.22-9.24"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:9.22-9.24" type="comment">
                   <p>Θέλων ὁ Θεὸς ἐνδείξασθαι τὴν ὀργὴν, καὶ γνώρισαι τὸ δυνατὸν αὐτοῦ, ἤνεγκεν ἐν πολλῇ μακροθυμίᾳ σκεύη ὀργῆς κατηρτισμένα εἰς ἀπώλειαν· καὶ ἵνα γνωρίση τὸν πλοῦτον τῆς δόξης αὐτοῦ ἐπὶ σκεύη ἐλέους, ἃ προητοίμασεν εἰς δόξαν αὐτοῦ, οὓς καὶ ἐκάλεσεν ἡμᾶς οὐ μόνον <lb n="10"/> ἐξ Ἰουδαίων, ἀλλὰ καὶ ἐξ ἐθνῶν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1539,9 +1452,7 @@
                </div>
             </div>
             <div n="25" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:9.25"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:9.25" type="comment">
                   <p>Ὡς καὶ ἐν τῷ Ὠσηὲ λέγει, καλέσω τὸν οὐ λαόν μου, <lb n="15"/> 26λαόν μου· καὶ τὴν οὐκ ἠγαπημένην, ἠγαπημένην. καὶ ἔσται ἐν τῷ τόπῳ οὗ ἐρρέθη αὐτοῖς, οὐ λαός μου ὑμεῖς, ἐκεῖ κληθήσονται υἱοὶ Θεοῦ ζῶντος.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1562,9 +1473,7 @@
                </div>
             </div>
             <div n="27" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:9.27-9.28"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:9.27-9.28" type="comment">
                   <p>Ἠσαίας δὲ κράζει ὑπὲρ τοῦ Ἰσραὴλ, ἐὰν ᾖ ὁ ἀριθμὸς τῶν υἱῶν Ἰσραὴλ ὡς ἡ ἄμμος τῆς θαλάσσης, τὸ κατάλειμμα σωθήσεται· λόγον γὰρ συντελῶν καὶ συντέμνων ἐν δικαιοσύνῃ· ὅτι λόγον συντετμημένον ποιήσει Κύριος <lb n="30"/> ἐπὶ τῆς γῆς.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1610,9 +1519,7 @@
                </div>
             </div>
             <div n="30" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:9.30-9.31"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:9.30-9.31" type="comment">
                   <p>Τί οὖν ἐροῦμεν ; ὅτι τὰ ἔθνη τὰ μὴ διώκοντα δικαιοσύνην, κατέλαβε δικαιοσύνην, δικαιοσύνην δὲ, τὴν ἐκ πίστεως· Ἰσραὴλ δὲ διώκων νόμον δικαιοσύνης, εἰς <lb n="5"/> νόμον δικαιοσύνης οὐκ ἔφθασε· διατί; ὅτι οὐκ ἐκ πίστεως, ἀλλ’ ὡς ἐξ ἔργων νόμου.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1630,9 +1537,7 @@
                </div>
             </div>
             <div n="33" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:9.33"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:9.33" type="comment">
                   <p>Προσέκοψαν γὰρ τῷ λιθῷ τοῦ προσκόμματος, καθὼς <lb n="30"/> γέγραπται, ἰδοὺ, τίθημι ἐν Σιῶν λίθον προσκόμματος, καὶ πέτραν σκανδάλου· καὶ πᾶς ὁ πιστεύων ἐπ’ αὐτῷ, οὐ καταισχυνθήσεται.</p>
                </div>
                <div n="1" corresp="#Theodoret" type="comment">
@@ -1656,9 +1561,7 @@
          </div>
          <div n="10" type="chapter">
             <div n="1" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:10.1-10.3"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:10.1-10.3" type="comment">
                   <p>Ἀδελφοὶ, ἡ μὲν εὐδοκία τῆς ἐμῆς καρδίας, καὶ ἡ δέησις ἡ πρὸς τὸν Θεὸν ὑπὲρ τοῦ Ἰσραὴλ ἔστιν εἰς σωτηρίαν. μαρτυρῶ γὰρ αὐτοῖς ὅτι ζῆλον Θεοῦ ἔχουσιν, ἀλλ’ οὐ κατ’ ἐπίγνωσιν. ἀγνοοῦντες γὰρ τὴν τοῦ Θεοῦ <lb n="25"/> δικαιοσύνην, καὶ τὴν ἰδίαν δικαιοσύνην στῆσαι ζητοῦντες, τῇ δικαιοσύνη τοῦ Θεοῦ οὐχ ὑπετάγησαν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1681,9 +1584,7 @@
                </div>
             </div>
             <div n="4" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:10.4"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:10.4" type="comment">
                   <p>Τέλος γὰρ νόμου Χριστὸς εἰς δικαιοσύνην παντὶ τῷ πιστεύοντι.</p>
                </div>
                <div n="1" corresp="#Theodoret" type="comment">
@@ -1709,9 +1610,7 @@
                </div>
             </div>
             <div n="5" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:10.5"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:10.5" type="comment">
                   <p rend="merge">Μωϋσῆς γὰρ γράφει τὴν ἐκ τοῦ νόμου δικαιοσύνην, ὅτι ὁ ποιήσας αὐτὰ ἄνθρωπος, ζήσεται ἐν αὐτοῖς.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1734,9 +1633,7 @@
                </div>
             </div>
             <div n="6" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:10.6-10.9"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:10.6-10.9" type="comment">
                   <p>Ἡ δὲ ἐκ πίστεως δικαιοσύνη οὕτω λέγει, μὴ εἴπης ἐν τῇ καρδίᾳ σου, τίς ἀναβήσεται εἰς τὸν οὐρανόν; τουτέστι Χριστὸν καταγαγεῖν· ἢ τίς καταβήσεται εἰς <lb n="15"/> τὴν ἄβυσσον; τουτέστι, Χριστὸν ἐκ νεκρῶν ἀναγαγεῖν· ἀλλὰ τί λέγει; ἐγγύς σου τὸ ῥῆμα ἐστὶν, ἐν τῷ στόματί σου, καὶ ἐν τῇ καρδίᾳ σου· τουτέστι, τὸ ῥῆμα τῆς πίστεως ὃ κηρύσσομεν· ὅτι ἐὰν ὀμολογήσῃς ἐν τῷ στόματί σου Κύριον Ἰησοῦν, καὶ πιστεύσῃς ἐν τῇ καρδίᾳ <lb n="20"/> σου, ὅτι ὁ Θεὸς αὐτὸν ἤγειρεν ἐκ νεκρῶν, σωθήσῃ.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1759,7 +1656,7 @@
                <div n="5" corresp="#Cyril" type="comment">
                   <p>Κυρίλλου. Ὅθεν ἐπειδὴ κατὰ τὸν Ἀπόστολον “ καρδίᾳ πιστεύ- “ εἰς δικαιοσύνην. στόματι δὲ ὁμολογεῖται εἰς σωτηρίαν.” καὶ ἡ ἀμφοτέρων ἐν τούτοις ἐνέργεια ὑποβάλλει τὴν τελειότητα. διὰ τοῦτο καὶ ὁ ψαλμῳδὸς ἀμφότερα ἐν τῷ αὐτῷ συνείληφε, τήν τε <lb n="15"/> τοῦ στόματος ἐνέργειαν, καὶ τὴν τῆς ψυχῆς μελέτην. εἰπὼν, “ τὸ “ στόμα μου λαλήσει σοφίαν. καὶ ἡ μελέτη τῆς καρδίας μου “ σύνεσις.” ἐάν τε γὰρ μὴ ᾖ τὸ ἀγαθὸν ἐν τῇ καρδίᾳ προαποκείμενον, πῶς ἐνέγκῃ τὸν θησαυρὸν διὰ στόματος, ὁ μὴ κεκτημένος ἐν τῷ κρυπτῷ ; ἐάντε ἔχων τὰ τῆς καρδίας ἀγαθὰ μὴ δημοσιεύσῃ <lb n="20"/> τῷ λόγῳ, αὐτῷ λεχθήσεται σοφία κεκρυμμένη καὶ θησαυρὸς ἀφανὴς, τίς ὠφέλεια ἐν ἀμφοτέροις ; διόπερ εἰς μὲν τὸ ἑτέρων ὠφέλιμον, λαλείτω τὸ στόμα σοφίαν. εἰς δὲ τὴν ἡμετέραν προκοπὴν, ἡ καρδία μελετάτω σύνεσιν.</p>
                   <p>Γρηγορίου Τοῦ Θεολόγου. Οὐδὲν οὖν δεῖ σοι, φησὶ, εἰς τὸν <lb n="25"/> οὐρανὸν ἀνελθεῖν, ἱν ἐκεῖθεν ἑλκύσῃς Χριστόν. οὐδὲ εἰς τὴν ἄβυσσον κατελθεῖν, ἵν ἐντεῦθεν αὐτὸν ἐκ νεκρῶν ἀναστήσῃς· ἣ τὴν πρώτην πολυπραγμονῶν φύσιν· ἣ τὴν τελειοτάτην οἰκονομίαν. ἐγγύς σου, φησὶν, τὸ ῥῆμα ἐστίν· ἡ διάνοια τοῦτον ἔχει τὸν θησαυρόν. οὐ μὴν ἀλλὰ καὶ ἡ γλῶττα. ἡ μὲν, πιστεύουσα, ἡ δὲ, <lb n="30"/> ὁμολογοῦσα. τι τούτου συντομώτερον τοῦ πλούτου ; τι τῆς δωρεᾶς εὐκολώτερον ; ὁμολόγησον Χριστὸν Ἰησοῦν, καὶ πίστευσον ὅτι ἐκ νεκρῶν ἐγήγερται, καὶ σωθήσῃ. δικαιοσύνη μὲν γὰρ καὶ τὸ πιστεῦσαι μόνον. σωτηρία δὲ παντελὴς, τὸ καὶ ὁμολογεῖν, καὶ προσθεῖναι <pb n="376"/> τῆ γνώσει τὴν παρρησίαν. σὺ μεῖζον τι σωτηρίας ζητεῖ; τὴν ἐκεῖθεν δόξαν τὲ καὶ λαμπρότητα, ἐμοὶ καὶ τὸ σωθῆναι μέγιστον. καὶ τὰς ἐκεῖσε φυγεῖν βασάνους.</p>
-                  <p>Κυρίλλου. Σὺ δέ μοι σκόπει. ὅτι ἀλλαχοῦ εἰπὼν ὁ Ἀπόστολος, “ὅτι ἦτε ποτὲ ἀπεξενωμένοι τῶν διαθηκῶν τῆς ἐπαγγελίας τοῦ <lb n="5"/> “ Ἰσραήλ· ἐλπίδα μὴ ἔχοντες, καὶ ἄθεοι ἐν τῷ κόσμῳ. νυνὶ δὲ “ ἐπιγνόντες Θεόν.” ἐνταῦθα τὸν τρόπον τῆς ἐπιγνώσεως αὐτοῖς ἐξηγούμενος λέγει, “ἐγγύς σου τὸ ῥῆμα ἐστὶ τῆς πίστεως, ὃ “ κηρύσσομεν. ὅτι, ἐὰν ὁμολογήσῃς ἐν τῷ στόματι σου, ὅτι “ Κύριος Ἰησοῦς. καὶ πιστεύσῃς ἐν τῇ καρδίᾳ σου, ὅτι ὁ Θεὸς <lb n="10"/> “ αὐτὸν ἤγειρεν ἐκ νεκρῶν, σωθήσῃ.” ὅτε τοίνυν ὁ πιστεύων εἰς Χριστὸν Ἰησοῦν, καὶ ὁμολογῶν ὅτι Κύριός ἐστιν, ὡς Θεὸν ἐπι- γνοὺς τὸν ἀληθινὸν δικαιοῦται, πῶς οὐκ ἔστι Θεὸς κατὰ φύσιν ὁ Υἱός ; ὁ δὲ τοῦτο ὢν, πῶς ἃν εἴη καὶ ποίημα ; λέγει γὰρ ἡ γραφή; “πᾶς ὁ πιστεύων ἐπ’ αὐτῷ, οὐ καταισχυνθήσεται. <lb n="15"/> “ οὐ γάρ ἐστι διαστολὴ Ἰουδαίου τὲ καὶ Ἕλληνος. ὁ γὰρ αὐ- “ τὸς Κύριος πάντων, πλουτῶν εἰς πάντας τοὺς ἐπικαλουμένους “ αὐτόν. πᾶς γὰρ ὃς ἃν ἐπικαλέσηται τὸ ὄνομα Κυρίου, σωθή- “ σεται &#x9e;”.</p>
+                  <p>Κυρίλλου. Σὺ δέ μοι σκόπει. ὅτι ἀλλαχοῦ εἰπὼν ὁ Ἀπόστολος, “ὅτι ἦτε ποτὲ ἀπεξενωμένοι τῶν διαθηκῶν τῆς ἐπαγγελίας τοῦ <lb n="5"/> “ Ἰσραήλ· ἐλπίδα μὴ ἔχοντες, καὶ ἄθεοι ἐν τῷ κόσμῳ. νυνὶ δὲ “ ἐπιγνόντες Θεόν.” ἐνταῦθα τὸν τρόπον τῆς ἐπιγνώσεως αὐτοῖς ἐξηγούμενος λέγει, “ἐγγύς σου τὸ ῥῆμα ἐστὶ τῆς πίστεως, ὃ “ κηρύσσομεν. ὅτι, ἐὰν ὁμολογήσῃς ἐν τῷ στόματι σου, ὅτι “ Κύριος Ἰησοῦς. καὶ πιστεύσῃς ἐν τῇ καρδίᾳ σου, ὅτι ὁ Θεὸς <lb n="10"/> “ αὐτὸν ἤγειρεν ἐκ νεκρῶν, σωθήσῃ.” ὅτε τοίνυν ὁ πιστεύων εἰς Χριστὸν Ἰησοῦν, καὶ ὁμολογῶν ὅτι Κύριός ἐστιν, ὡς Θεὸν ἐπι- γνοὺς τὸν ἀληθινὸν δικαιοῦται, πῶς οὐκ ἔστι Θεὸς κατὰ φύσιν ὁ Υἱός ; ὁ δὲ τοῦτο ὢν, πῶς ἃν εἴη καὶ ποίημα ; λέγει γὰρ ἡ γραφή; “πᾶς ὁ πιστεύων ἐπ’ αὐτῷ, οὐ καταισχυνθήσεται. <lb n="15"/> “ οὐ γάρ ἐστι διαστολὴ Ἰουδαίου τὲ καὶ Ἕλληνος. ὁ γὰρ αὐ- “ τὸς Κύριος πάντων, πλουτῶν εἰς πάντας τοὺς ἐπικαλουμένους “ αὐτόν. πᾶς γὰρ ὃς ἃν ἐπικαλέσηται τὸ ὄνομα Κυρίου, σωθή- “ σεται ”.</p>
                </div>
                <div n="6" corresp="#Chrysostom" type="comment">
                   <p>Χρυσοστόμου. Ἐπειδὴ μέγα εἴρηκε, πάλιν ἀπὸ τῆς γραφῆς <lb n="20"/> αὐτὸ πιστοῦται καὶ τῆς πίστεως καὶ τῆς ὁμολογίας παρέχων μάρτυρας. τῷ μὲν γὰρ εἰπεῖν “ὅτι πᾶς ὁ πιστεύων,” τὴν πίστιν ἐδήλωσε· τῷ δὲ εἰπεῖν “ὅτι πᾶς ὃς ἂν ἐπικαλέσηται,” τὴν ὁμολο- γίαν ἐνέφηνεν. εἶτα πάλιν τὸ κοινὸν ἀνακηρύττων τῆς χάριτος. “ὁ γὰρ αὐτός,” φησι, “Κύριος πάντων, πλουτῶν εἰς πάντας.” ὁρᾷς <lb n="25"/> πῶς δείκνυσιν αὐτὸν σφοδρῶς ἐφιέμενον ἡμῶν τῆς σωτηρίας, εἴγε καὶ πλοῦτον οἰκεῖον ἡγεῖται ταύτην ; ὥστε μὴ δὲ νῦν αὐτοὺς ἀπο- γνῶναι, μὴ δὲ νομίσαι, εἴγε βουληθεῖεν μετανοῆσαι, ἀσυγγνώστους εἶναι. ὁ γὰρ πλοῦτον οἰκεῖον ἡγούμενος τὸ σώζειν ἡμᾶς, οὐ παύ- σεται πλουτῶν. ἐπεὶ καὶ τοῦτο πλοῦτος, τὸ εἰς πάντας ἐκχεῖσθαι <lb n="30"/> τὴν δωρεάν. ἐπειδὴ γὰρ καὶ τοῦτο μάλιστα αὐτοὺς ἐθορύβει τὸ προεδρίας ἀπολαύοντας ὑπὲρ τὴν οἰκουμένην ἅπασαν, νῦν ἐκ τῆς πίστεως ἀπὸ τῶν θρόνων καταβιβάζεσθαι ἐκείνων, καὶ μηδὲν πλέον τῶν λοιπῶν ἔχειν, συνεχῶς τοὺς προφήτας εἰσάγει ταύτην ἐπά- <pb n="377"/> δόντας αὐτοῖς τὴν ἰσοτομίαν. “ πᾶς γάρ,” φησι, “ ὁ πιστεύων ἐπ’ “ αὐτῷ οὐ καταισχυνθήσεται.” καὶ, “ πᾶς ὃς ἃν ἐπικαλέσηται “ τὸ ὄνομα Κυρίου σωθήσεται.” καὶ πανταχοῦ τὸ πᾶς τέθειται, ἵνα μὴ ἀντιλέγωσι· καὶ τὸ ἐκείνων φύσημα καταστέλλων. ἃ διὰ πολλῶν ἔμπροσθεν ἀπέδειξε, ταῦτα ἐν βραχέσι πάλιν ἀναμιμνήσκει· <lb n="5"/> δεικνὺς, ὅτι οὐδέν τι μέσον Ἰουδαίου καὶ ἀκροβύστου. “ οὐ “ γάρ ἐστι διαστολή,” φησι, “ Ἰουδαίου καὶ Ἕλληνος.” καὶ ὃ περὶ τοῦ Πατρὸς εἴρηκεν ἐν τῇ περὶ τούτων ἀποδείξει, τοῦτο καὶ περὶ τοῦ Υἱοῦ λέγει ἐνταῦθα. ὥσπερ γὰρ ἔμπροσθεν αὐτὸ κατασκευάζων ἔλεγεν, “ἢ Ἰουδαίων μόνων ὁ Θεὸς, οὐχὶ καὶ ἐθνῶν ;” ναὶ καὶ ἐθνῶν. ἐπείπερ εἷς ὁ Θεὸς, οὕτω καὶ ἐνταῦθα φησί. ἀλλ’ οὐδὲν κενοδοξίας χεῖρον, αὕτη γὰρ, αὕτη μάλιστα πάντων αὐτοὺς ἀπώλεσε. διὸ καὶ ὁ Χριστὸς αὐτοῖς ἔλεγε, “ πῶς δύνασθε πιστεύειν, δόξαν παρὰ ἀλλήλων λαμβάνοντες, καὶ τὴν δόξαν τὴν παρὰ τοῦ μόνου Θεοῦ οὐ ζητοῦντες ;</p>
@@ -1771,9 +1668,7 @@
                </div>
             </div>
             <div n="14" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:10.14"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:10.14" type="comment">
                   <p>Πῶς οὖν ἐπικαλέσονται εἰς ὃν οὐκ ἐπίστευσαν ; πῶς δὲ πιστεύσουσιν οὗ οὐκ ἤκουσαν ; πῶς δὲ ἀκούσουσι χωρὶς κηρύσσοντος ; πῶς δὲ κηρύξουσιν, ἐὰν μὴ ἀποσταλῶσι; καθὼς γέγραπται, ὡς ὡραῖοι οἱ πόδες τῶν εὐαγγελιζομένων εἰρήνην, τῶν εὐαγγελιζομένων τὰ <lb n="25"/> ἀγαθά.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1795,9 +1690,7 @@
                </div>
             </div>
             <div n="16" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:10.16-10.17"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:10.16-10.17" type="comment">
                   <p>Ἀλλ’ οὐ πάντες ὑπήκουσαν τῷ εὐαγγελίῳ· Ἡσαΐας <lb n="25"/> γὰρ λέγει, Κύριε, τίς ἐπίστευσε τῆ ἀκοῇ ἡμῶν ; ἄρα ἡ πίστις ἐξ ἀκοῆς, ἡ δὲ ἀκοὴ διὰ ῥήματος Θεοῦ.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1814,9 +1707,7 @@
                </div>
             </div>
             <div n="18" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:10.18"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:10.18" type="comment">
                   <p>Ἀλλὰ λέγω, μὴ οὐκ ἤκουσαν ; μενοῦνγε εἰς πᾶσαν τὴν γῆν ἐξῆλθεν ὁ φθόγγος αὐτῶν, καὶ εἰς τὰ πέρατα τῆς οἰκουμένης τὰ ῥήματα αὐτῶν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1827,9 +1718,7 @@
                </div>
             </div>
             <div n="19" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:10.19"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:10.19" type="comment">
                   <p>Ἀλλὰ λέγω, μὴ οὐκ ἔγνω Ἰσραήλ ; μὴ πρῶτος Μώσης λέγει, Ἐγὼ παραζηλώσω ὑμᾶς ἐπ’ οὐκ ἔθνει, ἐπὶ ἔθνει ἀσυνέτῳ παροργιῶ ὑμᾶς.</p>
                   <lb n="5"/>
                </div>
@@ -1841,9 +1730,7 @@
                </div>
             </div>
             <div n="20" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:10.20-10.21"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:10.20-10.21" type="comment">
                   <p>Ἠσαίας δὲ ἀποτολμᾷ καὶ λέγει, εὑρέθην τοῖς ἐμὲ μὴ ζητοῦσιν, ἐμφανὴς ἐγενόμην τοῖς ἐμὲ μὴ ἐπερωτῶσι. πρὸς δὲ τὸν Ἰσραὴλ λέγει, ὅλην τὴν ἡμέραν ἐξεπέτασα τὰς χεῖράς μου πρὸς λαὸν ἀπειθοῦντα καὶ ἀντιλέγοντα.</p>
                   <lb n="15"/>
                </div>
@@ -1862,9 +1749,7 @@
          </div>
          <div n="11" type="chapter">
             <div n="1" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:11.1-11.2"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:11.1-11.2" type="comment">
                   <p>Λέγω οὖν, μὴ ἀπώσατο ὁ Θεὸς τὸν λαὸν αὐτοῦ ; μὴ γένοιτο· καὶ γὰρ ἐγὼ Ἰσραηλίτης εἰμὶ, ἐκ σπέρματος Ἁβραὰμ, φυλῆς Βενϊαμίν. οὐκ ἀπώσατο ὁ Θεὸς τὸν λαὸν αὐτοῦ, ὃν προέγνω.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1885,9 +1770,7 @@
                </div>
             </div>
             <div n="3" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:11.3-11.4"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:11.3-11.4" type="comment">
                   <p>Ἢ οὐκ οἴδατε ἐν Ἠλίᾳ τί λέγει ἡ γραφή ; ὡς ἐντυγχάνει κατὰ τοῦ Ἰσραὴλ, λέγων, Κύριε, τοὺς προφήτας σου ἀπέκτειναν, καὶ τὰ θυσιαστήριά σου κατέ- <pb n="388"/> σκαψαν· κἀγὼ ὑπελείφθην μόνος, καὶ ζητοῦσι τὴν ψυχήν μου. ἀλλὰ τί λέγει αὐτῷ ὁ χρηματισμός ; κατέλιπον ἐμαυτῷ ἑπτακισχιλίους ἄνδρας, οἵτινες οὐκ ἔκαμψαν γόνυ τῆ Βάαλ.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1909,9 +1792,7 @@
                </div>
             </div>
             <div n="5" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:11.5"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:11.5" type="comment">
                   <p>Οὕτω καὶ ἐν τῷ νῦν καιρῷ λεῖμμα κατ’ ἐκλογὴν χάριτος γέγονεν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1922,9 +1803,7 @@
                </div>
             </div>
             <div n="6" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:11.6"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:11.6" type="comment">
                   <p>Εἰ δὲ χάριτι, οὐκέτι ἐξ ἔργων· ἐπεὶ ἡ χάρις οὐκέτι <lb n="10"/> ἐστὶ χάρις. ἐπεὶ τὸ ἔργον οὐκέτι ἐστὶν ἔργον. εἰ δὲ ἐξ ἔργων, οὐκέτι ἐστὶ χάρις.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -1942,9 +1821,7 @@
                </div>
             </div>
             <div n="7" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:11.7"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:11.7" type="comment">
                   <p>Τί οὖν; ὃ ἐπιζητεῖ Ἰσραὴλ, τοῦτο οὐκ ἐπέτυχεν, ἡ δὲ ἐκλογὴ ἐπέτυχεν· οἱ δὲ λοιποὶ ἐπωρώθησαν.</p>
                   <lb n="15"/>
                </div>
@@ -1963,9 +1840,7 @@
                </div>
             </div>
             <div n="8" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:11.8"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:11.8" type="comment">
                   <p>Καθὼς γέγραπται, Ἔδωκεν αὐτοῖς ὁ Θεὸς πνεῦμα κατανύξεως, ὀφθαλμοὺς τοῦ μὴ βλέπειν, καὶ ὦτα τοῦ μὴ ἀκούειν, ἕως τῆς σήμερον ἡμέρας.</p>
                   <lb n="5"/>
                </div>
@@ -1986,9 +1861,7 @@
                </div>
             </div>
             <div n="9" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:11.9-11.10"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:11.9-11.10" type="comment">
                   <p>Καὶ ὁ Δαβὶδ λέγει, γενηθήτω ἡ τράπεζα αὐτῶν εἰς παγίδα καὶ εἰς θήραν, εἰς σκάνδαλον καὶ εἰς ἀνταπόδομα <lb n="15"/> αὐτῶν· σκοτισθήτωσαν οἱ ὀφθαλμοὶ αὐτῶν τοῦ μὴ βλέπειν, καὶ τὸν νῶτον αὐτῶν διαπαντὸς σύγκαμψον.</p>
                </div>
                <div n="1" corresp="#Cyril" type="comment">
@@ -2006,9 +1879,7 @@
                </div>
             </div>
             <div n="11" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:11.11"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:11.11" type="comment">
                   <p>Λέγω οὖν, μὴ ἔπταισαν, ἵνα πέσωσι; μὴ γένοιτο· ἀλλὰ τῷ αὐτῶν παραπτώματι ἡ σωτήρια τοῖς ἔθνεσιν, <lb n="15"/> εἰς τὸ παραζηλῶσαι αὐτούς.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2036,9 +1907,7 @@
                </div>
             </div>
             <div n="12" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:11.12"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:11.12" type="comment">
                   <p>Εἰ δὲ τὸ παράπτωμα αὐτῶν πλοῦτος κόσμου, καὶ τὸ ἥττημα αὐτῶν πλοῦτος ἐθνῶν, πόσῳ μᾶλλον τὸ πλήρωμα ἀυτῶν;</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2059,9 +1928,7 @@
                </div>
             </div>
             <div n="13" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:11.13-11.14"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:11.13-11.14" type="comment">
                   <p>Ὑμῖν γὰρ λέγω τοῖς ἔθνεσιν· ἐφ’ ὅσον εἰμὶ ἐγὼ <lb n="35"/>
                      <pb n="405"/> ἐθνῶν Ἀπόστολος, τὴν διακονίαν μου δοξάζω. εἴ πὼς παραζηλώσω μου τὴν σάρκα, καὶ σώσω τινὰς ἐξ ἀυτῶν.</p>
                </div>
@@ -2076,9 +1943,7 @@
                </div>
             </div>
             <div n="15" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:11.15"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:11.15" type="comment">
                   <p>Εἰ γὰρ ἡ ἀποβολὴ αὐτῶν, καταλλαγὴ κόσμου, τίς ἡ πρόσληψις, εἰ μὴ ζωὴ ἐκ νεκρῶν;</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2101,9 +1966,7 @@
                </div>
             </div>
             <div n="16" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:11.16-11.18"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:11.16-11.18" type="comment">
                   <p>Εἰ δὲ ἡ ἀπαρχὴ ἁγία, καὶ τὸ φύραμα· καὶ εἰ ἡ ῥίζα ἁγία, καὶ οἱ κλάδοι. εἰ δέ τινες τῶν κλάδων ἐξεκλάσθησαν, σὺ δὲ ἀγριέλαιος ὣν, ἐνεκεντρίσθης ἐν αὐτοῖς, <lb n="25"/> καὶ συγκοινωνὸς τῆς ῥίζης καὶ τῆς πιότητος τῆς ἐλαίας ἐγένου, μὴ κατακαυχῶ τῶν κλάδων· εἰ δὲ κατακαυχᾶσαι, οὐ σὺ τὴν ῥίζαν βαστάζεις, ἀλλ’ ἡ ῥίζα σέ.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2133,9 +1996,7 @@
                </div>
             </div>
             <div n="19" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:11.19-11.21"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:11.19-11.21" type="comment">
                   <p>Ἐρεῖς οὖν μοι, ἐξεκλάσθησαν κλάδοι, ἵνα ἐγὼ ἐγκεντρισθῶ. καλῶς· τῇ ἀπιστίᾳ ἐξεκλάσθησαν, σὺ δὲ τῆ πίστει ἕστηκας. μὴ ὑψηλοφρόνει, ἀλλὰ φοβοῦ· εἰ γὰρ ὁ Θεὸς τῶν κατὰ φύσιν κλάδων οὐκ ἐφείσατο, μήπως οὐδὲ σοῦ φείσεται.</p>
                   <lb n="30"/>
                </div>
@@ -2156,9 +2017,7 @@
                </div>
             </div>
             <div n="22" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:11.22-11.23"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:11.22-11.23" type="comment">
                   <p>Ἴδε οὖν χρηστότητα καὶ ἀποτομίαν Θεοῦ· ἐπὶ μὲν τοὺς πεσόντας, ἀποτομίαν· ἐπὶ δέ σε, χρηστότητα, ἐὰν μὴ e ἐπιμείνῃς τῆ χρηστότητι· ἐπεὶ καὶ σὺ ἐκκοπήσῃ. καὶ ἐκεῖνοι δὲ ἐὰν μὴ ἐπιμείνωσι τῆ ἀπιστίᾳ, <lb n="15"/> ἐγκεντρισθήσονται.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2176,9 +2035,7 @@
                </div>
             </div>
             <div n="24" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:11.24"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:11.24" type="comment">
                   <p>Δυνατὸς γάρ ἐστιν ὁ Θεὸς πάλιν ἐγκεντρίσαι αὐτούς. εἰ γὰρ σὺ ἐκ τῆς κατὰ φύσιν ἐξεκόπης ἀγριελαίου, καὶ παρὰ φύσιν ἐνεκεντρίσθης εἰς καλλιέλαιον, πόσῳ μᾶλλον <lb n="5"/> οὗτοι οἱ κατὰ φύσιν, ἐγκεντρισθήσονται τῇ ἰδίᾳ ἐλαία :</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2189,9 +2046,7 @@
                </div>
             </div>
             <div n="25" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:11.25-11.26"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:11.25-11.26" type="comment">
                   <p>Οὐ γὰρ θέλω ὑμᾶς ἀγνοεῖν, ἀδελφοὶ, τὸ μυστήριον <lb n="15"/> τοῦτο, ἵνα μὴ ἦτε παρ’ ἑαυτοῖς φρόνιμοι, ὅτι πώρωσις ἀπὸ μέρους τῷ Ἰσραὴλ γέγονεν, ἄχρις οὗ τὸ πλήρωμα τῶν ἐθνῶν εἰσέλθῃ· καὶ οὕτω πᾶς Ἰσραὴλ σωθήσεται.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2216,9 +2071,7 @@
                </div>
             </div>
             <div n="27" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:11.27-11.29"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:11.27-11.29" type="comment">
                   <p rend="merge"> ἀσεβείας ἀπὸ Ἰακώβ· καὶ αὕτη αὐτῶν ἡ παρ’ <lb n="25"/> ἐμοῦ διαθήκη, ὅταν ἀφέλωμαι τὰς ἁμαρτίας αὐτῶν. κατὰ μὲν τὸ εὐαγγέλιον, ἐχθροὶ δι’ ὑμᾶς· κατὰ δὲ τὴν ἐκλογὴν, ἀγαπητοὶ διὰ τοὺς πατέρας. ἀμεταμέλητα γὰρ τὰ χαρίσματα καὶ ἡ κλῆσις τοῦ Θεοῦ.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2253,9 +2106,7 @@
                </div>
             </div>
             <div n="30" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:11.30-11.32"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:11.30-11.32" type="comment">
                   <p>Ὥσπερ γὰρ καὶ ὑμεῖς ποτὲ ἠπειθήσατε τῷ Θεῷ, νυνὶ <lb n="5"/> δὲ ἠλεήθητε τῇ τούτων ἀπειθείᾳ, οὕτω καὶ οὗτοι νῦν ἠπείθησαν τῷ ὑμετέρῳ ἐλεέι, ἵνα καὶ αὐτοὶ δῆτα ἐλεηθῶσι. συνέκλεισε γὰρ ὁ Θεὸς τοὺς πάντας εἰς ἀπείθειαν, ἵνα τοὺς πάντας ἐλεήσῃ.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2280,9 +2131,7 @@
                </div>
             </div>
             <div n="33" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:11.33-11.35"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:11.33-11.35" type="comment">
                   <p>Ὦ βάθος πλούτου καὶ σοφίας καὶ γνώσεως Θεοῦ· ὡς ἀνεξερεύνητα τὰ κρίματα αὐτοῦ, καὶ ἀνεξιχνίαστοι <lb n="20"/> αἱ ὁδοὶ αὐτοῦ. τίς γὰρ ἔγνω νοῦν Κυρίου; ἢ τίς σύμβουλος αὐτοῦ ἐγένετο; ἢ τίς προέδωκεν αὐτῷ, καὶ 2,6 ἀνταποδοθήσεται αὐτῷ; ὅτι ἐξ αὐτοῦ καὶ δι’ αὐτοῦ καὶ εἰς αὐτὸν τὰ πάντα. αὐτῷ ἡ δόξα εἰς τοὺς αἰῶνας. ἀμήν.</p>
                   <lb n="25"/>
                </div>
@@ -2323,9 +2172,7 @@
          </div>
          <div n="12" type="chapter">
             <div n="2" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:12.2"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:12.2" type="comment">
                   <p>Καὶ μὴ συσχηματίζεσθε τῷ αἰῶνι τούτῳ, ἀλλὰ μεταμορφοῦσθε τῇ ἀνακαινώσει τοῦ νοὸς ὑμῶν, εἰς τὸ δοκιμάζειν ὑμᾶς, τί τὸ θελημὰ τοῦ Θεοῦ, τὸ ἀγαθὸν καὶ <lb n="5"/> εὐάρεστον καὶ τέλειον.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2346,9 +2193,7 @@
                </div>
             </div>
             <div n="3" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:12.3"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:12.3" type="comment">
                   <p>Λέγω γὰρ διὰ τῆς χάριτος τῆς δοθείσης μοι, παντὶ τῷ ὄντι ἐν ὑμῖν, μὴ ὑπερφρονεῖν παρ’ ὃ δεῖ φρονεῖν, <lb n="25"/> ἀλλὰ φρονεῖν εἰς τὸ σωφρονεῖν, ἑκάστῳ ὡς ὁ Θεὸς ἐμέρισε μέτρον πίστεως.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2369,9 +2214,7 @@
                </div>
             </div>
             <div n="4" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:12.4-12.5"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:12.4-12.5" type="comment">
                   <p>Καθάπερ γὰρ ἐν ἑνὶ σώματι μέλη πολλὰ ἔχομεν, τὰ δὲ μέλη πάντα οὐ τὴν αὐτὴν ἔχει πρᾶξιν, οὕτως οἱ πολλοὶ ἓν σῶμα ἐσμὲν ἐν Χριστῷ, ὁ δὲ καθεὶς ἀλλήλων μέλη.</p>
                   <lb n="30"/>
                </div>
@@ -2385,9 +2228,7 @@
                </div>
             </div>
             <div n="6" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:12.6-12.9"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:12.6-12.9" type="comment">
                   <p>Ἔχοντες δὲ χαρίσματα διάφορα, κατὰ τὴν χάριν τὴν <lb n="10"/> δοθεῖσαν ἡμῖν· εἴτε προφητείαν, κατὰ τὴν ἀναλογίαν τῆς πίστεως· εἴτε διακονίαν, ἐν τῆ διακονίᾳ· εἴτε ὁ διδάσκων, ἐν τῇ διδασκαλίᾳ· εἴτε ὁ παρακαλῶν, ἐν τῆ παρακλησίᾳ· ὁ μεταδιδοὺς, ἐν ἁπλότητι· ὁ προιστάμενος, ἐν σπουδῇ· ὁ ἐλεῶν, ἐν ἰλαρότητι· ἡ ἀγάπη <lb n="15"/> ἀνυπόκριτος.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2439,9 +2280,7 @@
                </div>
             </div>
             <div n="10" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:12.10-12.14"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:12.10-12.14" type="comment">
                   <p>Ἀποστυγοῦντες τὸ πονηρὸν, κολλώμενοι τῷ ἀγαθῷ· τῆ φιλαδελφίᾳ, εἰς ἀλλήλους φιλόστοργοι· τῇ τιμῇ, ἀλλήλων προηγούμενοι· τῆ σπουδῇ μὴ ὀκνηροί· τῷ Πνεύματι ζέοντες, τῷ Κυρίῳ δουλεύοντες· τῆ ἐλπίδι <pb n="445"/> χαίροντες, τῇ θλίψει ὑπομένοντες, τῆ προσευχῇ προσκαρτερουντες· ταις χρείαις τῶν ἀγίων κοινωνοῦντες, τὴν φιλοξενίαν διώκοντες· εὐλογεῖτε τοὺς διώκοντας ὑμᾶς· εὐλογεῖτε, καὶ μὴ καταρᾶσθε.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2492,9 +2331,7 @@
                </div>
             </div>
             <div n="16" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:12.16"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:12.16" type="comment">
                   <p>Τὸ αὐτὸ εἰς ἀλλήλους φρονοῦντες· μὴ τὰ ὑψηλὰ φρονοῦντες, ἀλλὰ τοῖς ταπεινοῖς συναπαγόμενοι.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2505,9 +2342,7 @@
                </div>
             </div>
             <div n="17" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:12.17"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:12.17" type="comment">
                   <p>Μηδενὶ κακὸν ἀντὶ κακοῦ ἀποδιδόντες.</p>
                   <lb n="20"/>
                </div>
@@ -2521,9 +2356,7 @@
                </div>
             </div>
             <div n="18" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:12.18"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:12.18" type="comment">
                   <p>Εἰ δυνατὸν, τὸ ἐξ ὑμῶν, μετὰ πάντων ἀνθρώπων εἰρηνεύοντες.</p>
                   <p>Εστι γὰρ ὅπου οὐ δυνατόν. οἷον, ὅταν περὶ εὐσεβείας ὁ λόγος ᾖ· ὅταν περὶ ἀδικουμένων ὁ ἀγών. καὶ τι θαυμάζεις, εἰ ἐπὶ <lb n="15"/> ἀνθρώπων τῶν ἄλλων τοῦτο οὐ πανταχοῦ δυνατόν; ὅπου καὶ ἐπὶ ἀνδρὸς καὶ ἐπὶ· γυναικὸς ταύτην ἔλυσε τὴν ἀνάγκην, εἰπὼν, “ εἰ “ δὲ ὁ ἄπιστος χωρίζεται, χωριζέσθω.” ὃ δὲ λέγει, τοιοῦτόν ἐστι τὰ παρὰ σαυτοῦ πάρεχε, καὶ μηδενὶ δίδου πολέμου καὶ μάχης ἀφορμήν· μὴ Ἰουδαίῳ μὴ Ἕλληνι. εἰ δέ που τὴν εὐσέβειαν <lb n="20"/> παραβλαπτομένην ἴδῃς, μὴ προτίμα τὴν ὁμόνοιαν τῆς ἀληθείας ἀλλ’ ἵστασο γενναίως ἕως θανάτου. καὶ μὴ δὲ οὕτω ψυχῇ πολέμει, μὴ δὲ ἀποστρέφου γνώμῃ, ἀλλὰ τοῖς πράγμασι μάχου μόνον. τοῦτο γάρ ἐστι τὸ “ ἐξ ὑμῶν μετὰ πάντων ἀνθρώπων εἰρηνεύοντες.” κἂν ἐκεῖνος μὴ εἰρηνεύῃ, σὺ μὴ πληρώσῃς χειμῶνος τὴν ψυχήν. <lb n="25"/> ἀλλ’ ἕσο φιλόσοφος κατὰ γνώμην. ὅπερ ἔφθην εἰπὼν, τὴν ἀληθείαν μηδαμῶς προδιδούς.</p>
                </div>
@@ -2532,9 +2365,7 @@
                </div>
             </div>
             <div n="19" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:12.19-12.20"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:12.19-12.20" type="comment">
                   <p>Μὴ ἑαυτοὺς ἐκδικοῦντες, ἀγαπητοὶ, ἀλλὰ δότε τόπον τῇ ὀργῇ· γέγραπται γὰρ, ἐμοὶ ἐκδίκησις, ἐγὼ ἀνταποδώσω, λέγει Κύριος. ἐὰν οὖν πεινᾶ ὁ ἐχθρός σου, ψώμιζε αὐτόν· ἐὰν δίψᾳ, πότιζε αὐτόν. τοῦτο γὰρ <lb n="15"/> ποιῶν, ἄνθρακας πυρὸς σωρεύσεις ἐπὶ τὴν κεφαλὴν αὐτοῦ.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2562,9 +2393,7 @@
                </div>
             </div>
             <div n="21" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:12.21"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:12.21" type="comment">
                   <p>Μῆ νικῶ ὑπὸ τοῦ κακοῦ, ἀλλὰ νίκα ἐν τῷ ἀγαθῷ τὸ κακὸν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2574,9 +2403,7 @@
          </div>
          <div n="13" type="chapter">
             <div n="1" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:13.1-13.2"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:13.1-13.2" type="comment">
                   <p>Πᾶσα ψυχὴ ἐξουσίαις ὑπερεχούσαις ὑποτασσέσθω. οὐ γάρ ἐστιν ἐξουσία εἰ μὴ ἀπὸ Θεοῦ· αἱ δὲ οὖσαι ἐξουσίαι, ὑπὸ Θεοῦ τεταγμέναι εἰσίν. ὥστε ὁ ἀντιτασσό- <pb n="458"/> μενος τῇ ἐξουσίᾳ, τῇ τοῦ Θεοῦ διαταγῇ ἀνθέστηκεν· οἱ δὲ ἀνθεστηκότες, κρίμα ἑαυτοῖς λήψονται.</p>
                </div>
                <div n="1" corresp="#Gennadius" type="comment">
@@ -2600,9 +2427,7 @@
                </div>
             </div>
             <div n="3" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:13.3-13.4"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:13.3-13.4" type="comment">
                   <p>Οἱ γὰρ ἄρχοντες οὐκ εἰσὶ φόβος τῶν ἀγαθῶν ἔργων, ἀλλὰ τῶν κακῶν. θέλεις δὲ μὴ φοβεῖσθαι τὴν ἐξουσίαν; τὸ ἀγαθὸν ποίει, καὶ ἕξεις ἔπαινον ἐξ αὐτῆς· Θεοῦ γὰρ διάκονος ἐστί σοι εἰς τὸ ἀγαθόν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2618,9 +2443,7 @@
                </div>
             </div>
             <div n="5" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:13.5"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:13.5" type="comment">
                   <p>Διὸ ἀνάγκη ὑποτάσσεσθαι, οὐ μόνον διὰ τὴν ὀργὴν, <lb n="15"/> ἀλλὰ καὶ διὰ τὴν συνείδησιν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2636,9 +2459,7 @@
                </div>
             </div>
             <div n="6" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:13.6"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:13.6" type="comment">
                   <p>Διὰ τοῦτο γὰρ καὶ φόρους τελεῖτε· λειτουργοὶ γὰρ Θεοῦ εἰσὶν εἰς τοῦτο αὐτὸ προσκαρτεροῦντες.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2646,9 +2467,7 @@
                </div>
             </div>
             <div n="7" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:13.7"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:13.7" type="comment">
                   <p>Ἀπόδοτε οὖν πᾶσι τὰς ὀφειλάς· τῷ τὸν φόρον, τὸν <lb n="25"/> φόρον· τῷ τὸ τέλος, τὸ τέλος· τῷ τὸν φόβον, τὸν φό- βον· τῷ τὴν τιμὴν, τὴν τιμήν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2665,9 +2484,7 @@
                </div>
             </div>
             <div n="8" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:13.8"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:13.8" type="comment">
                   <p rend="merge">Μηδενὶ μηδὲν ὀφείλετε, εἰ μὴ τὸ ἀγαπᾶν ἀλλήλους.</p>
                </div>
                <div n="1" corresp="#Chrysologus" type="comment">
@@ -2679,9 +2496,7 @@
                </div>
             </div>
             <div n="9" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:13.9"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:13.9" type="comment">
                   <p>Ὁ γὰρ ἀγαπῶν τὸν ἕτερον νόμον πεπλήρωκε. τὸ γὰρ, οὐ φονεύσεις, οὐ μοιχεύσεις, οὐ κλέψεις, οὐ ψευδομαρτυτήσεις, καὶ εἴ τις ἑτέρα ἐντολὴ, ἐν τούτῳ τῷ λόγῳ <lb n="5"/> ἀνακεφαλαιοῦται, ἐν τῷ, ἀγαπήσεις τὸν πλησίον σου ὡς σεαυτὸν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2689,9 +2504,7 @@
                </div>
             </div>
             <div n="10" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:13.10"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:13.10" type="comment">
                   <p>Ἡ ἀγάπη τῷ πλησίον κακὸν οὐκ ἐργάζεται· πλήρωμα οὖν νόμου η ἀγάπη.</p>
                   <lb n="20"/>
                </div>
@@ -2700,9 +2513,7 @@
                </div>
             </div>
             <div n="11" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:13.11"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:13.11" type="comment">
                   <p>Καὶ τοῦτο, εἰδότες τὸν καιρὸν, ὅτι ὥρα ἡμᾶς ἤδη ἐξ ὕπνου ἐγερθῆναι· νῦν γὰρ ἐγγύτερον ἡμῶν ἡ σωτηρία, <lb n="30"/> η οτε ἐπιστεύσαμεν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2713,9 +2524,7 @@
                </div>
             </div>
             <div n="12" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:13.12"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:13.12" type="comment">
                   <p>Ἡ νὺξ προέκοψεν, ἡ δὲ ἡμέρα ἤγγικεν. ἀποθώμεθα οὖν τὰ ἔργα τοῦ σκότους, καὶ ἐνδυσώμεθα τὰ ὅπλα τοῦ <lb n="30"/> φωτός.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2727,9 +2536,7 @@
                </div>
             </div>
             <div n="13" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:13.13"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:13.13" type="comment">
                   <p>Ὡς ἐν ἡμέρᾳ εὐσχημόνως νπεριπατήσωμεν μὴ κώμοις καὶ μέθαις, μὴ κοίταις καὶ ἀσελγείαις, μὴ ἔριδι καὶ ζήλῳ· ἀλλ’ ἐνδύσασθε τὸν Κύριον ἡμῶν Ἰησοῦν Χριστὸν, καὶ τῆς σαρκὸς πρόνοιαν μὴ ποιεῖτε εἰς ἐπιθυμιαν.</p>
                   <lb n="5"/>
                </div>
@@ -2770,9 +2577,7 @@
          </div>
          <div n="14" type="chapter">
             <div n="1" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:14.1-14.2"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:14.1-14.2" type="comment">
                   <p>Τὸν δὲ ἀσθενοῦντα τῇ πίστει προσλαμβάνεσθε, μὴ εἰς διακρίσεις διαλογισμῶν. ὃς μὲν πιστεύει φαγεῖν πάντα, ὁ δὲ ἀσθενῶν λάχανα ἐσθίει.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2780,9 +2585,7 @@
                </div>
             </div>
             <div n="3" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:14.3"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:14.3" type="comment">
                   <p>Ὁ ἐσθίων, τὸν μὴ ἐσθίοντα μὴ ἐξουθενείτω· καὶ ὁ μὴ ἐσθίων, τὸν ἐσθίοντα μὴ κρινέτω· ὁ Θεὸς γὰρ αὐτὸν προσελάβετο.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2793,9 +2596,7 @@
                </div>
             </div>
             <div n="4" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:14.4"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:14.4" type="comment">
                   <p>Σὺ τίς εἰ ὁ κρίνων ἀλλότριον οἰκέτην ; τῷ ἰδίῳ κυρίῳ <lb n="15"/> στήκει, ἣ πίπτει· σταθήσεται δέ· δυνατὸς γάρ ἐστιν ὁ Θεὸς στῆσαι αὐτόν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2812,9 +2613,7 @@
                </div>
             </div>
             <div n="5" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:14.5"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:14.5" type="comment">
                   <p>Ὃς μὲν κρίνει ἡμέραν παρ’ ἡμέραν, ὃς δὲ κρίνει πᾶσαν ἡμέραν. ἕκαστος τῷ ἰδίῳ νοῒ πληροφορείσθω.</p>
                </div>
                <div n="1" corresp="#Theodoret" type="comment">
@@ -2832,9 +2631,7 @@
                </div>
             </div>
             <div n="6" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:14.6"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:14.6" type="comment">
                   <p>Ὁ φρονῶν τὴν ἡμέραν, Κυρίῳ φρονεῖ· καὶ ὁ μὴ φρονῶν τὴν ἡμέραν, Κυρίῳ οὐ φρονεῖ. καὶ ὁ ἐσθίων, Κυρίῳ ἐσθίει, εὐχαριστεῖ γὰρ τῷ Θεῷ’ καὶ ὁ μὴ ἐσθίων, Κυρίῳ οὐκ ἐσθίει, καὶ εὐχαριστεῖ τῷ Θεῷ.</p>
                   <pb n="475"/>
                </div>
@@ -2864,9 +2661,7 @@
                </div>
             </div>
             <div n="10" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:14.10-14.12"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:14.10-14.12" type="comment">
                   <p>Σὺ δὲ τί κρίνεις τὸν ἀδελφόν σου; ἣ καὶ σὺ τί ἐξου- θενεῖς τὸν ἀδελφόν σου; πάντες γὰρ παραστησόμεθα τῷ βήματι τοῦ Χριστοῦ. γέγραπται γὰρ, ζῶ ἐγὼ, λέγει Κύριος· ὅτι ἐμοὶ κάμψει πᾶν γόνυ, ἐπουρανίων καὶ ἐπῖγείων καὶ καταχθονίων, καὶ πᾶσα γλῶσσα ἐξομολογήσεται <lb n="5"/> τῷ Θεῷ. ἄρα οὖν ἕκαστος ἡμῶν περὶ ἑαυτοῦ λόγον δώσει.</p>
                </div>
                <div n="1" corresp="#Theodoret" type="comment">
@@ -2880,9 +2675,7 @@
                </div>
             </div>
             <div n="13" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:14.13"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:14.13" type="comment">
                   <p>Μηκέτι οὖν ἀλλήλους κρίνωμεν· ἀλλὰ τοῦτο κρίνατε μᾶλλον, τὸ μὴ τιθέναι πρόσκομμα τῷ ἀδελφῷ ἣ σκάνδαλον.</p>
                   <lb n="5"/>
                </div>
@@ -2894,9 +2687,7 @@
                </div>
             </div>
             <div n="14" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:14.14"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:14.14" type="comment">
                   <p>Οἶδα καὶ πέπεισμαι ἐν Κυρίῳ Ἰησοῦ, ὅτι οὐδὲν κοι- νὸν δι’ ἑαυτοῦ, εἰ μὴ τῷ λογιζομένῳ τί κοινὸν εἶναι, <lb n="20"/> ἐκείνω κοινόν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2914,9 +2705,7 @@
                </div>
             </div>
             <div n="15" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:14.15"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:14.15" type="comment">
                   <p>Εἰ δὲ διὰ βρῶμα ὁ ἀδελφός σου λυπεῖται, οὐκέτι <lb n="20"/> κατὰ ἀγάπην περιπατεῖς. μὴ τῷ βρώματί σου ἐκεῖνον ἀπόλλυε, ὑπὲρ οὗ Χριστὸς ἀπέθανεν.</p>
                </div>
                <div n="1" corresp="#Theodoret" type="comment">
@@ -2931,9 +2720,7 @@
                </div>
             </div>
             <div n="16" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:14.16-14.18"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:14.16-14.18" type="comment">
                   <p>Μῆ βλασφημείσθω οὖν ὑμῶν τὸ ἀγαθόν. οὐ γάρ ἐστιν ἡ βασιλεία τοῦ Θεοῦ βρῶσις καὶ πόσις, ἀλλὰ δικαιοσύνη καὶ χαρὰ καὶ εἰρήνη ἐν Πνεύματι Ἁγίῳ. ὁ γὰρ ἐν τούτοις δουλεύων τῷ Χριστῷ, εὐάρεστος τῷ Θεῷ, καὶ δόκιμος τοῖς ἀνθρώποις.</p>
                   <lb n="30"/>
                </div>
@@ -2948,9 +2735,7 @@
                </div>
             </div>
             <div n="19" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:14.19"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:14.19" type="comment">
                   <p>Ἄρα οὖν τὰ τῆς εἰρήνης διώκωμεν, καὶ τὰ τῆς οἰκοδομῆς τῆς εἰς ἀλλήλους.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2961,9 +2746,7 @@
                </div>
             </div>
             <div n="20" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:14.20"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:14.20" type="comment">
                   <p>Μῆ ἕνεκεν βρώματος κατάλυε τὸ ἔργον τοῦ Θεοῦ.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -2986,9 +2769,7 @@
                </div>
             </div>
             <div n="21" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:14.21"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:14.21" type="comment">
                   <p>Καλὸν τὸ μὴ φαγεῖν κρέα, μὴ δὲ πιεῖν οἶνον, μὴ δὲ ἐν ᾧ ὁ ἀδελφός σου προσκόπτει ἢ σκανδαλίζεται ἣ ἀσθενεῖ.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3002,9 +2783,7 @@
                </div>
             </div>
             <div n="22" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:14.22"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:14.22" type="comment">
                   <p>Σὺ πίστιν ἔχεις; κατὰ σεαυτὸν ἔχε * * *</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3019,9 +2798,7 @@
                </div>
             </div>
             <div n="23" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:14.23"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:14.23" type="comment">
                   <p>Μακάριος ὁ μὴ κρίνων ἑαυτὸν ἐν ᾧ δοκιμάζει. ὁ δὲ διακρινόμενος, ἐὰν φάγῃ, κατακέκριται, ὅτι οὐκ ἐκ πίστεως. <lb n="5"/> πᾶν δὲ ὃ οὐκ ἐκ πίστεως, ἁμαρτία ἐστίν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3035,9 +2812,7 @@
                </div>
             </div>
             <div n="24" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:14.24-14.26"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:14.24-14.26" type="comment">
                   <p>Τῷ δὲ δυναμένῳ ὑμᾶς στηρίξαι κατὰ τὸ εὐαγγέλιόν <lb n="15"/> μου καὶ τὸ κήρυγμα Ἰησοῦ Χριστοῦ, κατὰ ἀποκάλυψιν μυστηρίου χρόνοις αἰωνίοις σεσιγημένου, φανερωθέντος δὲ νῦν, διὰ γραφῶν προφητικῶν, κατ’ ἐπιταγὴν τοῦ αἰωνίου Θεοῦ, εἰς ὑπακοὴν πίστεως, εἰς πάντα τὰ ἔθνη γνωρισθέντος, μόνῳ σοφῷ Θεῷ διὰ Ἰησοῦ Χριστοῦ, <lb n="20"/> αὐτῷ ἡ δόξα εἰς τοὺς αἰῶνας. ἀμήν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3060,9 +2835,7 @@
          </div>
          <div n="15" type="chapter">
             <div n="1" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:15.1"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:15.1" type="comment">
                   <p>Ὀφείλομεν δὲ ἡμεῖς οἱ δυνατοὶ τὰ ἀσθενήματα τῶν ἀδυνάτων βαστάζειν, καὶ μὴ ἑαυτοῖς ἀρέσκειν, ἕκαστος ἤμων τῷ πλησίον ἀρεσκέτω εἰς τὸ ἀγαθὸν, πρὸς οἰκοδομήν. <lb n="5"/> καὶ γὰρ ὁ Χριστὸς οὐχ ἑαυτῷ ἤρεσεν, ἀλλὰ καθὼς γέγραπται, οἱ ὀνειδισμοὶ τῶν ὀνειδιζόντων σε ἐπέπεσον ἐπ’ ἐμὲ.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3082,9 +2855,7 @@
                </div>
             </div>
             <div n="4" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:15.4"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:15.4" type="comment">
                   <p>Ὁσα γὰρ προεγράφη, εἰς διδασκαλίαν ἡμῶν προεγράφη, ἵνα διὰ τῆς ὑπομονῆς καὶ τῆς παρακλήσεως τῶν γραφῶν τὴν ἐλπίδα ἔχωμεν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3093,9 +2864,7 @@
                </div>
             </div>
             <div n="5" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:15.5-15.6"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:15.5-15.6" type="comment">
                   <p>Ὁ δὲ Θεὸς τῆς ὑπομονῆς καὶ τῆς παρακλήσεως, δώῃ ὑμῖν τὸ αὐτὸ φρονεῖν ἐν ἀλλήλοις, κατὰ Χριστὸν Ἰησοῦν, ἵνα ὁμοθυμαδὸν ἐν ἑνὶ στόματι δοξάζητε τὸν Θεὸν καὶ Πατέρα τοῦ Κυρίου ἡμῶν Ἰησοῦ Χριστοῦ.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3110,9 +2879,7 @@
                </div>
             </div>
             <div n="7" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:15.7"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:15.7" type="comment">
                   <p>Διὸ προσλαμβάνεσθε ἀλλήλους, καθὼς καὶ ὁ Χριστὸς ἡμᾶς προσελάβετο, εἰς δόξαν Θεοῦ.</p>
                   <lb n="30"/>
                </div>
@@ -3121,9 +2888,7 @@
                </div>
             </div>
             <div n="8" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:15.8-15.11"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:15.8-15.11" type="comment">
                   <p>Λέγω δὲ, Χριστὸν Ἰησοῦν διάκονον γεγενῆσθαι περιτομῆς ὑπὲρ ἀληθείας Θεοῦ, εἰς τὸ βεβαιῶσαι τὰς ἐπαγγελίας <lb n="5"/>τῶν πατέρων· τὰ δὲ ἔθνη ὑπὲρ ἐλέους δοξάσαι τὸν Θεὸν, καθὼς γέγραπται, διὰ τοῦτο ἐξομολογήσομαί σοι ἐν ἔθνεσι, καὶ τῷ ὀνόματί σου ψαλῶ. καὶ πάλιν λέγει, εὐφράνθητε ἔθνη, μετὰ τοῦ λαοῦ αὐτοῦ. καὶ πάλιν, αἰνεῖτε τὸν Κύριον, πάντα τὰ ἔθνη, ἐπαινέσατε <lb n="10"/> αὐτὸν, πάντες οἱ λαοί. καὶ πάλιν Ἡσαΐας λέγει, καὶ ὁ ἀνιστάμενος ἄρχειν ἐθνῶν, ἐπ’ αὐτὸν ἔθνη ἐλπιοῦσιν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3140,9 +2905,7 @@
                </div>
             </div>
             <div n="13" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:15.13"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:15.13" type="comment">
                   <p>Ὁ δὲ Θεὸς τῆς εἰρήνης πληρῶσαι ὑμᾶς πάσης χαρᾶς καὶ εἰρήνης ἐν τῷ πιστεύειν, εἰς τὸ περισσεύειν ἐν τῇ ἐλπίδι, ἐν δυνάμει Πνεύματος Ἁγίου.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3154,9 +2917,7 @@
                </div>
             </div>
             <div n="14" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:15.14"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:15.14" type="comment">
                   <p>Πέπεισμαι δὲ, ἀδελφοί μου, καὶ αὐτὸς ἐγὼ περὶ ὑμῶν, <lb n="20"/> ὅτι καὶ αὐτοὶ ἐστὲ μεστοὶ ἀγαθωσύνης, πεπληρωμένοι πάσης γνώσεως, δυνάμενοι καὶ ἄλλους νουθετεῖν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3164,9 +2925,7 @@
                </div>
             </div>
             <div n="15" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:15.15-15.16"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:15.15-15.16" type="comment">
                   <p>Τολμηρότερον δὲ ἔγραψα ὑμῖν, ἀπὸ μέρους, ὡς ἐπαναμιμνήσκων ὑμᾶς, διὰ τὴν χάριν τὴν δοθεῖσάν μοι ὑπὸ τοῦ Θεοῦ, εἰς τὸ εἶναι με λειτουργὸν Ἰησοῦ Χριστοῦ εἰς τὰ ἔθνη, ἱερουργοῦντα τὸ εὐαγγέλιον τοῦ Θεοῦ, ἵνα γένηται <lb n="15"/> ἡ προσφορὰ τῶν ἐθνῶν εὐπρόσδεκτος, ἡγιασμένη ἐν Πνεύματι Ἁγίῳ.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3179,9 +2938,7 @@
                </div>
             </div>
             <div n="17" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:15.17-15.18"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:15.17-15.18" type="comment">
                   <p>Ἔχω οὖν καύχησιν ἐν Χριστῷ Ἰησοῦ τὰ πρὸς τὸν I8Θεόν· οὐ γὰρ τολμήσω λαλεῖν τι ὧν οὐ κατειργάσατο ὁ Χριστὸς δι’ ἐμοῦ, εἰς ὑπακοὴν ἐθνῶν, καὶ λόγῳ καὶ ἔργῳ, ἐν δυνάμει σημείων καὶ τεράτων, ἐν δυνάμει Πνεύ- <lb n="25"/> μάτος Θεοῦ· ὥστε με ἀπὸ Ἰερουσαλὴμ καὶ κύκλῳ μέ- χρι τοῦ Ἰλλυρικοῦ πεπληρωκέναι τὸ εὐαγγέλιον.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3191,9 +2948,7 @@
                </div>
             </div>
             <div n="20" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:15.20-15.21"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:15.20-15.21" type="comment">
                   <p>Οὕτω δὲ φιλοτιμούμενον εὐαγγελίζεσθαι ὅπου οὐκ ὠνομάσθη Χριστὸς, ἵνα μὴ ἐπ’ ἀλλότριον θεμέλιον οἰκοδομῶ·ἀλλὰ καθὼς γέγραπται, οἷς οὐκ ἀνηγγέλη περὶ αὐτοῦ, ὄψονται· καὶ οἳ οὐκ ἀκηκόασι, συνήσουσιν.</p>
                   <lb n="10"/>
                </div>
@@ -3205,9 +2960,7 @@
                </div>
             </div>
             <div n="22" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:15.22"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:15.22" type="comment">
                   <p>Διὸ καὶ ἐνεκοπτόμην τὰ πολλὰ ἐλθεῖν πρὸς ὑμᾶς. Χρυσοστόμου. Ὁμοίως τῷ προοιμίῳ τὸ τέλος ὑφαίνει. καὶ <pb n="509"/> γὰρ καὶ τῆς Ἐπιστολῆς ἀρχόμενος ἔλεγε, “ πολλάκις προεθέμην “ ἐλθεῖν πρὸς ὑμᾶς, καὶ ἐκωλύθη ἄχρι τοῦ δεῦρο.” ἐνταῦθα δὲ καὶ τὴν αἰτίαν τίθησι δι’ ἣν ἐκωλύθη. καὶ οὐχ ἅπαξ, ἀλλὰ καὶ δὶς καὶ πολλάκις. ὥσπερ γὰρ ἐκεῖ φησὶν, “ πολλάκις προεθέμην “ ἐλθεῖν πρὸς ὑμᾶς,” οὕτω καὶ ἐνταῦθα, “ ἐνεκοπτόμην τὰ πολλὰ <lb n="5"/> “ τοῦ ἐλθεῖν πρὸς ὑμᾶς.” ὅπερ μάλιστα τὴν ἐπιθυμίαν αὐτοῦ δείκνυσι, τὸ πολλάκις ἐπιχειρεῖν.</p>
                </div>
                <div n="1" corresp="#Theodore" type="comment">
@@ -3215,9 +2968,7 @@
                </div>
             </div>
             <div n="23" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:15.23-15.24"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:15.23-15.24" type="comment">
                   <p>Νυνὶ δὲ μηκέτι τόπον ἔχων ἐν τοῖς κλίμασι τούτοις, ἐπιποθίαν δὲ ἔχων τοῦ ἐλθεῖν πρὸς ὑμᾶς, ἀπὸ πολλῶν <lb n="15"/> ἐτῶν, ὡς ἐὰν πορεύωμαι εἰς τὴν Σπανίαν, ἐλεύσομαι πρὸς ὑμᾶς. ἐλπίζω γὰρ διαπορευόμενος θεάσασθαι ὑμᾶς, καὶ ἀφ’ ὑμῶν προπεμφθῆναι ἐκεῖ, ἐὰν ὑμῶν πρῶτον ἀπὸ μέρους ἐμπλησθῶ.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3230,9 +2981,7 @@
                </div>
             </div>
             <div n="25" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:15.25-15.27"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:15.25-15.27" type="comment">
                   <p>Νυνὶ δὲ πορεύομαι εἰς Ἰερουσαλὴμ, διακονῶν τοῖς ἁγίοις. εὐδόκησε γὰρ Μακεδονία καὶ Ἀχαιὰ κοινωνίαν τινὰ ποιήσασθαι εἰς τοὺς πτωχοὺς τῶν ἁγίων τῶν Ἱερουσαλήμ· εὐδόκησαν γὰρ, καὶ ὀφειλέται αὐτῶν εἰσίν.</p>
                </div>
                <div n="1" corresp="#Chysoreithrologus" type="comment">
@@ -3251,9 +3000,7 @@
                </div>
             </div>
             <div n="28" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:15.28-29"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:15.28-29" type="comment">
                   <p>Τοῦτο οὖν ἐπιτελέσας, καὶ σφραγισάμενος αὐτοῖς τὸν καρπὸν τοῦτον, ἀπελεύσομαι δι’ ὑμῶν εἰς τὴν Σπανίαν <lb n="30"/> οἶδα δὲ ὅτι ἐρχόμενος πρὸς ὑμᾶς, ἐν πληρώματι εὐλογίας τοῦ εὐαγγελίου τοῦ Χριστοῦ ἐλεύσομαι.</p>
                </div>
                <div n="1" corresp="#Chrysologus" type="comment">
@@ -3264,9 +3011,7 @@
                </div>
             </div>
             <div n="29" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:15.29"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:15.29" type="comment">
                   <p>Οἶδα δὲ ὅτι ἐρχόμενος πρὸς ὑμᾶς, ἐν πληρώματι εὐλογίας τοῦ εὐαγγελίου τοῦ Χριστοῦ ἐλεύσομαι.</p>
                </div>
                <div n="1" corresp="#Gennadius" type="comment">
@@ -3285,9 +3030,7 @@
                </div>
             </div>
             <div n="30" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:15.30-15.33"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:15.30-15.33" type="comment">
                   <p>Παρακαλῶ δὲ ὑμᾶς, ἀδελφοὶ, διὰ τοῦ Κυρίου Ἰησοῦ Χριστοῦ, καὶ διὰ τῆς ἀγάπης τοῦ Πνεύματος, συναγωνίσασθαί μοι ἐν ταῖς προσευχαῖς ὑπὲρ ἐμοῦ πρὸς τὸνΘεὸν, ἵνα ῥυσθῶ ἀπὸ τῶν ἀπειθούντων ἐν τῇ Ἰουδαίᾳ, καὶ ἵνα ἡ διακονία μου ἡ εἰς Ἰερουσαλὴμ, εὐπρόσδεκτος <lb n="5"/> γένηται τοῖς ἁγίοις· ἵνα ἐν χαρᾷ ἔλθω πρὸς ὑμᾶς, ἐν θελήματι Θεοῦ, καὶ συναναπαύσωμαι ὑμῖν. ὁ δὲ Θεὸς τῆς εἰρήνης μετὰ πάντων ὑμῶν. ἀμήν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3308,9 +3051,7 @@
          </div>
          <div n="16" type="chapter">
             <div n="1" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:16.1-16.2"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:16.1-16.2" type="comment">
                   <p>Συνίστημι δὲ ὑμῖν Φοίβην τὴν ἀδελφὴν ἡμῶν, διάκονον οὖσαν τῆς ἐκκλησίας τῆς ἐν Κεγχρεαῖς. ἵνα αὐτὴν προσδέξησθε ἐν Κυρίῳ, ἀξίως τῶν ἁγίων, καὶ παραστῆτε <lb n="10"/> αὐτῇ ἐν ᾧ ἃν ὑμῶν χρήζῃ πράγματι· καὶ γὰρ αὕτη προστάτις πολλῶν ἐγενήθη, καὶ αὐτοῦ ἐμοῦ.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3321,9 +3062,7 @@
                </div>
             </div>
             <div n="3" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:16.3-16.5"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:16.3-16.5" type="comment">
                   <p>Ἀσπάσασθε Πρίσκιλλαν καὶ Ἀκύλαν τοὺς συνεργούς μου ἐν Χριστῷ Ἰησοῦ· οἵτινες ὑπὲρ τῆς ψυχῆς <lb n="15"/> μου τὸν ἑαυτῶν τράχηλον ὑπέθηκαν· οἷς οὐκ ἐγὼ μόνος εὐχαριστῶ, ἀλλὰ καὶ πᾶσαι αἱ ἐκκλησίαι τῶν ἐθνῶν. καὶ τὴν κατ’ οἶκον αὐτῶν ἐκκλησίαν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3342,9 +3081,7 @@
                </div>
             </div>
             <div n="6" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:16.6"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:16.6" type="comment">
                   <p rend="merge"> Ἀσπάσασθε Μαρίαν, ἥτις πολλὰ ἐκοπίασεν εἰς <lb n="5"/> ὑμὰς.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3352,9 +3089,7 @@
                </div>
             </div>
             <div n="7" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:16.7"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:16.7" type="comment">
                   <p>Ἀσπάσασθε Ἀνδρόνικον καὶ Ἰουνίαν τοὺς συγγενεῖς καὶ συναιχμαλώτους μου· οἵτινες εἰσὶν ἐπίσημοι ἐν τοῖς Ἀποστόλοις, οἳ καὶ πρὸ ἐμοῦ γεγόνασιν ἐν Χριστῷ.</p>
                   <lb n="35"/>
                   <pb n="520"/>
@@ -3364,9 +3099,7 @@
                </div>
             </div>
             <div n="8" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:16.8"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:16.8" type="comment">
                   <p>Ἀσπάσασθε Ἀμπλίαν τὸν ἀγαπητόν μου ἐν Κυρίῳ.</p>
                   <lb n="20"/>
                </div>
@@ -3375,9 +3108,7 @@
                </div>
             </div>
             <div n="9" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:16.9"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:16.9" type="comment">
                   <p>Ἀσπάσασθε Οὐρβανὸν τὸν συνεργὸν ἡμῶν ἐν Χριστῷ, καὶ Στάχυν τὸν ἀγαπητόν μου.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3385,9 +3116,7 @@
                </div>
             </div>
             <div n="10" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:16.10"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:16.10" type="comment">
                   <p>Ἀσπάσασθε Ἀπελλῆν τὸν δόκιμον ἐν Χριστῷ.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3396,9 +3125,7 @@
                </div>
             </div>
             <div n="11" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:16.11"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:16.11" type="comment">
                   <p>Ἀσπάσασθε τοὺς ἐκ τῶν Ἀριστοβούλων. καὶ Ἡρωδίωνα τὸν συγγενῆ μου. καὶ τοὺς ἐκ τῶν Ναρκίσσου, τοὺς ὄντας ἐν Κυρίῳ.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3409,9 +3136,7 @@
                </div>
             </div>
             <div n="12" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:16.12"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:16.12" type="comment">
                   <p>Ἀσπάσασθε Τρύφαιναν καὶ τρυφῶσαν, τὰς κοπιώσας ἐν Κυρίῳ.</p>
                </div>
                <div n="1" corresp="#Theodoret" type="comment">
@@ -3424,9 +3149,7 @@
                </div>
             </div>
             <div n="13" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:16.13"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:16.13" type="comment">
                   <p>Ἀσπάσασθε Ῥοῦφον τὸν ἐκλεκτὸν ἐν Κυρίῳ, καὶ <lb n="5"/> τὴν μητέρα αὐτοῦ καὶ ἐμοῦ.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3437,9 +3160,7 @@
                </div>
             </div>
             <div n="14" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:16.14"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:16.14" type="comment">
                   <p>Ἀσπάσασθε Ἀσύγκριτον, Φλέγοντα, Ἑρμᾶν, Πατροβᾶν, Ἑρμῆν, καὶ τοὺς σὺν αὐτοῖς ἀδελφούς.</p>
                </div>
                <div n="1" corresp="#Theodoret" type="comment">
@@ -3451,9 +3172,7 @@
                </div>
             </div>
             <div n="16" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:16.16"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:16.16" type="comment">
                   <p>Ἀσπάσασθε ἀλλήλους ἐν φιλήματι ἁγίῳ.</p>
                   <pb n="523"/>
                   <p>Ινα μηδεμία φιλονεικία γένηται. τῷ τοὺς μὲν, οὕτως προειρῆσθαι, τοὺς δὲ, οὕτως. καὶ τοὺς μὲν, ὀνομαστὶ, τοὺς δὲ, ἀδιορίστως. καὶ τοὺς μὲν, μετὰ πλειόνων ἐγκωμίων, τοὺς δὲ, μετὰ ἐλαττόνων. ἀνακιρνᾷ πάλιν αὐτοὺς τῇ τῆς ἀγάπης ἰσοτιμίᾳ, καὶ τῷ ἁγίῳ φιλήματι. διὰ τῆς εἰρήνης ταύτης, πάντα ἐκβάλλων <lb n="5"/> θορυβοῦντα αὐτοὺς λογισμὸν, καὶ μικροψυχίας ἀφορμήν. ἵνα μήτε ὁ μέγας καταφρονῇ τοῦ ἐλάττονος· μήτε ὁ μικρὸς βασκαίνῃ τῷ μείζονι. ἀλλὰ καὶ ὑπεροψία καὶ φθόνος ἀπελαύνηται, τοῦ φιλήματος τούτου πάντα καταπραύνοντός τε καὶ ἐξισοῦντος. Θεοδωρήτου. Καὶ ἐπειδὴ ἀπὼν αὐτὸς αὐτοὺς οὐκ ἠδύνατο <lb n="10"/> περιπτύξασθαι, δι’ αὐτῶν τοῦτο ποιεῖ. παρακελευσάμενος αὐτοῖς ἀλλήλους ἀσπάσασθαι, καὶ ἀσπάσασθαι “ ἐν φιλήματι ἁγίῳ,” σεμνῷ, καὶ σώφρονι, καὶ εἰλικρινεῖ, καὶ παντὸς ἀπηλλαγμένῳ δόλου.</p>
@@ -3465,9 +3184,7 @@
                </div>
             </div>
             <div n="17" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:16.17-16.19"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:16.17-16.19" type="comment">
                   <p>Παρακαλῶ δὲ ὑμᾶς ἀδελφοὶ σκοπεῖν τοὺς τὰ σκάν- δαλα καὶ τὰς διχοστασίας, παρὰ τὴν διδαχὴν ἢν ὑμεῖς ἐμάθετε, ποιοῦντας. καὶ ἐκκλίνατε ἀπ’ αὐτῶν. οἱ <lb n="5"/> τοιοῦτοι τῷ Κυρίῳ Ἰησοῦ Χριστῷ οὐ δουλεύουσιν, ἀλλὰ τῆ ἑαυτῶν κοιλίᾳ, καὶ διὰ τῆς χρηστολογίας καὶ εὐλογίας ἐξαπατῶσι τὰς καρδίας τῶν ἀκάκων. ἡ γὰρ ὑμῶν ὑπακοὴ εἰς πάντας ἀφίκετο· χαίρω οὖν τὸ ἐφ’ ὕμιν.</p>
                   <lb n="lO"/>
                </div>
@@ -3496,9 +3213,7 @@
                </div>
             </div>
             <div n="20" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:16.20"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:16.20" type="comment">
                   <p>Ὁ δὲ Θεὸς τῆς εἰρήνης συντρίψει τὸν Σατανᾶν ὑπὸ <lb n="20"/> τοὺς πόδας ὑμῶν ἐν τάχει. ἡ χάρις τοῦ Κυρίου ἡμῶν Ἰησοῦ Χριστοῦ μεθ’ ὑμῶν.</p>
                </div>
                <div n="1" corresp="#Chrysologus" type="comment">
@@ -3506,9 +3221,7 @@
                </div>
             </div>
             <div n="21" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:16.21"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:16.21" type="comment">
                   <p>Ἀσπάζεται ὑμᾶς Τιμόθεος ὁ συνεργός μου, καὶ Λολ κιὸς, καὶ Ἰάσων, καὶ Σωσίπατρος, οἱ συγγενεῖς μου.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3521,9 +3234,7 @@
                </div>
             </div>
             <div n="22" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:16.22"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:16.22" type="comment">
                   <p>Ἀσπάζομαι ὑμᾶς ἐγὼ Τέρτιος, ὁ γράψας τὴν Ἐπι- <lb n="20"/> στολὴν, ἐν Κυρίῳ.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3535,9 +3246,7 @@
                </div>
             </div>
             <div n="23" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:16.23"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:16.23" type="comment">
                   <p>Ἀσπάζεται ὑμᾶς Γάϊος ὁ ξένος μου καὶ τῆς <lb n="30"/> σίας ὅλης.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">
@@ -3556,9 +3265,7 @@
                </div>
             </div>
             <div n="24" type="verse">
-               <div n="verse"
-                    corresp="urn:cts:greekLit:tlg0031.tlg006:16.24"
-                    type="comment">
+               <div n="verse" corresp="urn:cts:greekLit:tlg0031.tlg006:16.24" type="comment">
                   <p>Ἡ χάρις τοῦ Κυρίου ἡμῶν Ἰησοῦ Χριστοῦ μετὰ πάντων ὑμῶν. ἀμήν.</p>
                </div>
                <div n="1" corresp="#Chrysostom" type="comment">

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -76,17 +75,11 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
          <refsDecl n="CTS">
-            <cRefPattern n="section"
-                         matchPattern="(\w+).(\w+).(\w+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']//tei:div[@n='$3'])"/>
-            <cRefPattern n="epigraph|book"
-                         matchPattern="(\w+).(\w+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern n="volume"
-                         matchPattern="(\w+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern n="section" matchPattern="(\w+).(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']//tei:div[@n='$3'])"/>
+            <cRefPattern n="epigraph|book" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern n="volume" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
                   <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
@@ -3487,7 +3480,7 @@ foret), inaudita nuntii significa- 20. προκρίνων Μ. πρὸ ἐκεί�
 τούτων δὲ ἐκ τῆς Ἰθάκης “δυοκαίδεκα πάντες ἄριστοι” (π, 251.)
 ῥηθέντων, ζητεῖ Ἡροκλείδης πῶς ὁ Τηλέμαχος κατασμικρύνει ἐν
 τῇ δημηγορίᾳ συστέλλων τὸ πλῆθος εἰς μόνους τοὺς Πθακησίους. τί <lb n="20"/>
-γὰρ ἔφη ῾&#x9c;“μητέρι μνηστῆρες ἐπέχραον οὐκ ἐθελούσῃ, τῶν ἀνδρῶν φί-
+γὰρ ἔφη ῾“μητέρι μνηστῆρες ἐπέχραον οὐκ ἐθελούσῃ, τῶν ἀνδρῶν φί-
 λοι υἷες, οἳ ἐνθάδε γʼ εἰσὶν ἄριστοι;” τὸ γὰρ πολὺ φορτίον τῆς μνη-
 στείας περιῄρηκε συστείλας τὸ πλῆθος εἰς τοὺς ἐνθάδε, τοὺς ὄντας
 ἐλάχιστον μέρος τοῦ παντὸς πλήθους. φαίη δʼ ἄν τις ἐν Ἰθάκῃ δη-
@@ -4638,7 +4631,7 @@ Aristoph. p. 23.
                   <p>ὁ μὲν θυμὸς ἀπὸ τοῦ θύειν, ὁ δὲ χόλος ἀπὸ τῆς χολῆς. θυμὸς δὲ <lb n="20."/>
 καὶ χόλος, λαβὼν τὴν ἐπὶ τὸ δρᾶσαι κακὸν ἀγανάκτησιν, χώεσθαι
 λέγεται, ὡς τὸ “σὺ δʼ ἔνδοθι θυμὸν ἀμύξεις χωόμενος” (Il. α, 243.),
-ἤγουν ἀμυχὰς ποιήσεις σπαράσσων τὴν ψυχήν· καὶ &#x90;“ χωόμενος δʼ
+ἤγουν ἀμυχὰς ποιήσεις σπαράσσων τὴν ψυχήν· καὶ “ χωόμενος δʼ
 <note type="footnote">3. τοῦ om. S.
 Ἀριστοφάνης] Dubium non est
 5. ἐξῄτησας Buttm. pro ἐζῄτησας. quin pro Ἀριστοφάνης hic et fortasse
@@ -6646,7 +6639,7 @@ leguntur in T. γλώσσας δʼ ἐν πυρὶ βάλ- Λέανδρος H. R
 dum Πλούταρχος. quem v. Moral. p. 467. Nomen in Ἁρπάδης vel Ἁρ-
 612 D.) ὅτι χρὴ ἐκ τοῦ συμποσίου πτάδης corruptum ap. Alciphr. 3.
 ἐχεμυθεῖν, ὅθεν καὶ παροιμίαν λέγεσθαι, 56. correxit Meinekius. Verba pro-
-μισῶ μνάμονα συμπόταν. ἡμεῖς δὲ ὅτι xima κατὰ πατρῷον&#x7f;—πάτριον ἔθος Ἰώ-
+μισῶ μνάμονα συμπόταν. ἡμεῖς δὲ ὅτι xima κατὰ πατρῷον—πάτριον ἔθος Ἰώ-
 τὰ ῥηθέντα τοῖς θεοῖς ἀνετίθεσαν· ὡς νων aut dittographia aut lacuna la-
 γὰρ ἐπὶ μαρτύρων τῶν θεῶν διελέγοντο, borant.
 ὥσπερ καὶ κατὰ τὸ οὖν τῶν ἐκπωμάτων 6. γὰρ] δὲ M.
@@ -11879,7 +11872,7 @@ ciant fortasse varietates codicis E. quidem epitheton hoc spectet vo-</note>
 εσσα, ἐξ οὗ δηλοῦσθαί φησιν ὅτι μονώδεις ἦσαν· ἐπὶ δὲ τῆς Ἰνοῦς
 οὐδήεσσα. τοῦτο γὰρ πάσαις ὑπῆρχεν αὐταῖς καὶ μόναις. πᾶσαι
 γὰρ αὗται ἐπὶ γῆς ἄκουν. μήποτε δὲ τὸ αὐδήεσσα οὐ τὸ φωνῇ μόνῃ <lb n="5"/>
-χρῆσθαι δηλοῖ, ὡς το “αὐδήεντα δʼ ἔθηκε&#x98;&#x8f;” (Il. τ, 407.), σημαίνει δὲ
+χρῆσθαι δηλοῖ, ὡς το “αὐδήεντα δʼ ἔθηκε” (Il. τ, 407.), σημαίνει δὲ
 καὶ τὸν ἔνδοξον καὶ ἐπίφημον. καὶ ἑκάστη δὲ τούτων ἔνδοξος, ὥσπερ
 ἡ Ἰνώ. ὅτε γὰρ ἐν ἀνθρώποις ἦν, ἔνδοξος καὶ ἐπίφημος ἐν πᾶσιν
 ἐτύγχανεν. E.P.Q.T.</p>
@@ -14511,7 +14504,7 @@ B.H.P.Q.T. αἱ κατακλώθουσαι. Gl. P.</p>
 Ἰλιάδι τὸ “ἄγε δή τινα μάντιν ἐρείομεν ἢ ἱερῆα, ἢ καὶ όνειροπόλον,”
 <note type="footnote">4. ἀπὸ Struvius pro ὑπό. 28. ὡς Σαπφώ—Σαπφοί om. T.
 7. ἤτοι τὴν ἀνδρ??ιν addidi ex H. Κλωθοί] κλωθοί H. αἱ Κλωθοί ap.
-27. τὸ δὲ κατά&#x8d;—τὸ δὲ Κλῶθες Eustath. p. 1575, 42.
+27. τὸ δὲ κατά—τὸ δὲ Κλῶθες Eustath. p. 1575, 42.
 om. P.</note>
                      <pb n="342"/>
 ὡς ἰδιωτικόν. ἡ μέντοι τοῦ κατακλῶθες πρόθεσις ἀποδίδοται πρὸς τὸ
@@ -15085,7 +15078,7 @@ E. δᾷδα φέγγουσαν, ταχύτητα. Gl. H. P.</p>
                   <note type="footnote">6. φέγγουσαν om. P. 22. γίνεται τῶν Φ.] τῶν φ. γίνεται
 12. κινουμένου] ἔναυλον κινουμένου H. qui tria hæc Argumenta hoc
 H. εὔηχον κινουμένου Q. ordine exhibet, 3. 2. 1.
-19. ταῖς Ἀριστάρχου] τοῖς ἀριστα 22&#x8d;—28. Habet hoc argumen-
+19. ταῖς Ἀριστάρχου] τοῖς ἀριστα 22—28. Habet hoc argumen-
 P. reliquis literis abscissis. γρ. πόρ- tum Eustathius p. 1583.
 σαινε est etiam in M.</note>
                </div>
@@ -15206,7 +15199,7 @@ E.Q.</p>
 τα· προτρέπει γὰρ τοὺς πολίτας ἐκπεμφθῆναι πρὸς τὴν ἔκπεμψιν <lb n="30"/>
 τοῦ ξένου. T.</p>
                   <note type="footnote">7. ἀθετεῖ] ὡς ἐλεγοῖο (?) ἐπειράθην 14. τῆς] τοῦ B.
-αὐτοῦ τὴν ἐξήγησιν. καὶ ἄλλως. ἀθετεῖ 18.&#x8d;—22. Excerpsit Eustath. p.
+αὐτοῦ τὴν ἐξήγησιν. καὶ ἄλλως. ἀθετεῖ 18.—22. Excerpsit Eustath. p.
 9. οἰκονομίας] Hoc vocabulum 26. ἤγουν H. ἕως Q. Hoc est
 nescio quomodo huc venerit, ad ἤως.
 sequens τοῦ Ὁμήρου pertinens. 27. δεξιὸν δὲ τὸ ὰ. H. δεξιῶς δὲ ἀ.
@@ -22256,7 +22249,7 @@ clea: ζώνην δὲ ἐβέβλητο τοῖς στέρνοις, ἣν 12. �
 γὰρ μεῖναι τοιούτων τινῶν προφαινομένων ἀσύνετον, τὸ δὲ μηδενὸς
 ἐπικειμένου κινδύνου κατολιγωρῆσαι τῆς θέας ἀπίθανον. H. Q.</p>
                   <p>634. μή μοι Γοργείην κεφαλὴν] καὶ πῶς ἐν τῷ ὅπλῳ τῆς Ἀθηνᾶς <lb n="15"/>
-ἐγκεῖσθαί φησιν αὐτήν; λέγει γὰρ &#x8d;“λάβε δ᾿ αἰγίδα θυσσανόεσ-
+ἐγκεῖσθαί φησιν αὐτήν; λέγει γὰρ “λάβε δ᾿ αἰγίδα θυσσανόεσ-
 σαν,” εἶτα ἐπάγει “ἐν δ᾿ ἔρις, ἐν δ᾿ ἀλκὴ, ἐν δὲ κρυόεσσα ἰωκὴ, ἐν
 δέ τε Γοργείη κεφαλὴ δεινοῖο πελώρου” (Il. ε, 738. sqq.) φησὶ δ᾿
 Ἀριστοτέλης ὅτι μήποτε ἐν τῇ ἀσπίδι οὐκ αὐτὴν εἶχε τὴν κεφαλὴν
@@ -22273,7 +22266,7 @@ et 623. hi duo versus leguntur in 1704, 17. δὴ νὰ H.
 N. Εὐρυσθεύς· τ . . . αρ . . . ἐκέλευσε 7. Θησέα—] Hunc versum a Pi-
 Κρονίων πλείστους δεδμ . . αι τηλεκλει- sistrato illatum esse narrat He-
 τῶν τ᾿ ἀνθρώπων. Lacunas recte ex- reas Megarensis apud Plutarch. V.
-plevit Cobetus, τὸν γάρ ῥα πατὴρ&#x8d;— Thesei c. 2. Conf. annot. ad v.
+plevit Cobetus, τὸν γάρ ῥα πατὴρ— Thesei c. 2. Conf. annot. ad v.
 δεδμῆσθαι. Partichulam τε post τη- 603.
 λεκλειτῶν inepte illatam explicat 9. ἂν λόγων Buttm. pro ἀναλόγων.
 scholion in margine positum, καλῶς 11. θεαμάτων] θαυμάτον B. Q.

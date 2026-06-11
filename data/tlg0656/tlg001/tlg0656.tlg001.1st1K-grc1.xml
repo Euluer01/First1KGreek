@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -80,17 +79,11 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+).(.+).(.+)"
-                         n="section"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
-            <cRefPattern matchPattern="(.+).(.+)"
-                         n="chapter"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern matchPattern="(.+)"
-                         n="book"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+).(.+).(.+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
+            <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
                   <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n">
@@ -15442,7 +15435,7 @@
                <div n="5" type="section">
                   <p>αἴρει καὶ πελιώματα καὶ ὑπώπια σὺν μέλιτι ψωροφθαλμίας 5 <note type="footnote">6 SIM.: Zop. (Orib. II 586) — Pl. XXVII 16 — Pl.
                                     l. s. — Pl. l. s. eup. II 14 (232) — Cels. V 1 Pl. XXVII 18 eup.
-                                    I 208 (202) — Pl. XXVII 20 eup. II 56 (266) &#x8d;— Pl. l. s. Ruf.
+                                    I 208 (202) — Pl. XXVII 20 eup. II 56 (266) — Pl. l. s. Ruf.
                                     (Orib. II 115) — eup. I 162 (177) — Pl. l. s. 19 — Pl. l. s.
                                     eup. I 194 (195) — Pl. l. s. eup. I 217 (207) — Pl. l. s. eup. I
                                     221 (209) — Pl. l. s. eup. I 212 (205) — Pl l. s. 20 eup. I 190
@@ -17974,7 +17967,7 @@
                      <note type="footnote">65 RV: ὀρεοσέλινον· οἱ δὲ πετροσέλινον ἄγριον,
                                     Ῥωμαῖοι ἄπιουμ, Αἰγύπτιοι ἀνωνίμ, Ὀσθάνης συνωβέα.</note>
                      <note type="footnote">8 SIM.: Pl. XX 118 — D. eup. II 112 (311) Ruf.
-                                    8 (ed. Ruelle) — eup. II 75 (287) —&#x8d; Scrib. Larg. c. 106 —eup.
+                                    8 (ed. Ruelle) — eup. II 75 (287) — Scrib. Larg. c. 106 —eup.
                                     II 35 (248) — eup. II 106 (305) — Scrib. Larg. c. 144 — Cels. V
                                     23, 3. Scrib. Larg. c. 176.</note>
                      <note type="footnote">8 EXC.: cf. Gal. XII 99. XIV 76. Isid. XVII
@@ -18491,7 +18484,7 @@
                                 (Orib. II 567) eup. II 111. 112 (310. 312) — Zop. (Orib. II 591)
                                 eup. I 147 (168) — [Theophr.] l. s. Pl. 99 eup. I 41 (111) — Pl. 100
                                 — Pl. 99 eup. II 56 (268) — Pl. 100 eup. II 24 (236) — Pl. 100 eup.
-                                II 34 (247) — Pl. l. s. eup. I 235 (215) &#x8d;—&#x8d; Pl. 100 eup. I 119
+                                II 34 (247) — Pl. l. s. eup. I 235 (215) — Pl. 100 eup. I 119
                                 (153) — schol. Nic. Th. 40.</note>
                   <note type="footnote">9 EXC.: Orib. l. s. (τῷ δὲ — ἀρτηρίας).</note>
                   <note type="footnote">1 οὖρα om. R δὲ καὶ om. R 2 καταπλασσόμενα libri:

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_verse.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_verse.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -68,18 +67,14 @@
          </editorialDecl>
          <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
          <refsDecl n="CTS">
-            <cRefPattern n="line"
-                         matchPattern="(\w+).(\w+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']//tei:l[@n='$2'])">
+            <cRefPattern n="line" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']//tei:l[@n='$2'])">
                <p>This pointer pattern extracts fragment and line</p>
             </cRefPattern>
-            <cRefPattern n="fragment"
-                         matchPattern="(\w+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])">
+            <cRefPattern n="fragment" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])">
                <p>This pointer pattern extracts fragment</p>
             </cRefPattern>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="line" delim="." match="l" use="@n"/>
             </citeStructure>
@@ -281,11 +276,7 @@
                <ab n="9.15">
                   <foreign xml:lang="grc">ἀσκητῆρες</foreign> ante Hauptium</ab>
             </note>
-            <note resp="ogl"
-                  place="end"
-                  type="testimonia"
-                  n="2"
-                  xml:lang="lat">
+            <note resp="ogl" place="end" type="testimonia" n="2" xml:lang="lat">
                <pb facs="corpusculumpoesi01lipsuoft_0110"/>
                <ab rend="center">Testimonia</ab>
                <ab n="1">
@@ -339,11 +330,7 @@
                   <lb/>p. 37 E <foreign xml:lang="grc">(24) Πάνυ χαριέντως οὗτος ὁ μῦθος ἐπιδείκνυσι τὴν ἀθλητικὴν (25) ἰσχὺν οὐ τῶν ἀνθρωπίνων οὖσαν ἀσκημάτωον.</foreign>
                </ab>
             </note>
-            <note resp="ogl"
-                  place="end"
-                  type="homeric_verses"
-                  n="3"
-                  xml:lang="lat">
+            <note resp="ogl" place="end" type="homeric_verses" n="3" xml:lang="lat">
                <pb facs="corpusculumpoesi01lipsuoft_0111"/>
                <ab n="1.1">Homeri Detortus Versus <lb/>
                   <foreign xml:lang="grc">τοῖς δʼ ὁ γέρων πάμπρωτος ὑφαίνειν ἤρχετο μῆτιν</foreign> (<bibl>
@@ -667,11 +654,7 @@
                   <foreign xml:lang="grc">πόδεσσι δὲ πάντας ἐνίκα</foreign> | <bibl>
                      <foreign xml:lang="grc">Υ</foreign> 410</bibl> al. </ab>
             </note>
-            <note resp="ogl"
-                  place="end"
-                  type="commentary"
-                  n="4"
-                  xml:lang="lat">
+            <note resp="ogl" place="end" type="commentary" n="4" xml:lang="lat">
                <pb facs="corpusculumpoesi01lipsuoft_0110"/>
                <ab n="1">
                   <ref cRef="urn:cts:greekLit:tlg1801.tlg001.1st1K-grc1:1.1" rend="center">I</ref> Versus parodicus ab Herodico Crateteo servatus, cuius disputationem de convivio Homerico cum Platonico, Xenophonteo, Epicureo in comparationem vocato Athenaeus libro V cap. 3 — 18 transcripsit (cf. Carolum Schmidt, de Herodico Crateteo, progr. Elbing. 1886 p. X sqq.), a Meinekio Matronis Convivio Attico tribuitur iniuria, si recta sunt quae supra p. 55 sq. disputavimus; sed fortasse ex alia convivii descriptione ab eodem parodo composita de- sumptus est, cui coniecturae praeter ipsa verba Herodici (<foreign xml:lang="grc">παρὰ — συνάγουσι</foreign>) optime conveniunt et indoles versus parodici et Matronis fragmenti IV comparatio. </ab>

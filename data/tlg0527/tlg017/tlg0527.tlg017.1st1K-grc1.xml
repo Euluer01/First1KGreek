@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -72,14 +71,10 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+).(.+)"
-                         n="verse"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern matchPattern="(.+)"
-                         n="chapter"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+).(.+)" n="verse" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
             </citeStructure>
@@ -380,7 +375,7 @@ ras Aᵃ?) A 27 Μεταεδδαους A | βασιλεα] pr τον A 28 αυτ
             <div n="48" type="verse">
                <p>καὶ ἀπέστειλεν ὁ βασιλεὺς τῶν πατέρων
 <note type="marginal">A</note>
-                  <note type="footnote">33 βασιλεύειν] pr του μη BcA 64 αργυριω Bᵃ ᵇ | χρυσίω Bᵃ?&#x8d;
+                  <note type="footnote">33 βασιλεύειν] pr του μη BcA 64 αργυριω Bᵃ ᵇ | χρυσίω Bᵃ?
 35 ο βασιλευς] om ο A | Ιαωακειμ (ακειμ sup ras) Aᵃ ᵛiᵈ 56 Ιωκειμ
 A Ιαωκ. Aᵃ | Ζαριον] Ζαρακην A 27 Ιωακειμ| ακειμ sup ras A |
 ενωπιον] εναντι A 38 μετ] επ A | εδησεν] δησας A | om και 2⁰ A

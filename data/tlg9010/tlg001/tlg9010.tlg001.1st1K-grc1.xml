@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -125,17 +124,11 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+).(.+).(.+)"
-                         n="section"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
-            <cRefPattern matchPattern="(.+).(.+)"
-                         n="chapter"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern matchPattern="(.+)"
-                         n="book"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+).(.+).(.+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
+            <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
                   <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n">
@@ -2171,7 +2164,7 @@
                                     P, Ba 11, 17, Σ cf. H 244 sch. ad Call. fr. 73 K. an. 331 S. 245
                                     — τόποιϲ cf. sch. Σ 321 θηροβολεῖ sq. Anth 6, 186, 4 247 ═ P, Ba
                                     12, 15 cf H 248 Call. fr. 111 K. an. 1 S. (═Babr. Myth. fr. 14)
-                                    c. sch. 249 ἀπέλυϲε Proc. bell. 3, 20, 4&#x8d;—7</note>
+                                    c. sch. 249 ἀπέλυϲε Proc. bell. 3, 20, 4—7</note>
                      <note type="footnote">239 hinc v πλίνθοϲ 2 240 Z 36 246 ex v.
                                     ῥαιϲτήρ 249 Proc. Z 17</note>
                      <note type="footnote">2 ἀπόδοϲ] ἀπόδωϲ AI 6 ἅγιοϲ A Zon. ἅγιοϲ ἅγιοϲ
@@ -10714,7 +10707,7 @@
                                 164</note>
                   <note type="marginal">A(GISMB)</note>
                   <note type="footnote"> 2 τό] εἰϲ τό M 6 Ολυμπιακόϲ SM Ὀλυμπικόϲ AGI 7
-                                περί—8 γλυκύϲ ex mg. M (lacerat.) et B 10 ἄλφιτον &#x8d;—11 εὑρεῖν bis,
+                                περί—8 γλυκύϲ ex mg. M (lacerat.) et B 10 ἄλφιτον —11 εὑρεῖν bis,
                                 om. 12 Ἄλφιτα— 12 ἄλφιτα A 13 πεφυρμένα] πεφυραμένα Cobet Coll. 163
                                 18 Ἀλφιτόπωλιϲ ἡ] Ἀμφιτόπολιϲ οἱ A</note>
                </div>
@@ -23646,7 +23639,7 @@
                   <note type="footnote"> 3 Ἀριϲτοφάνηϲ—5 ἐξέραϲεν om. FV mg. A Ἀριϲτοφάνηϲ
                                 om. add. ζήτει ἔξω τὴν χρῆϲιν A λωποδύτηϲ— 5 ἐξέραϲεν om. G
                                 λωποδύτηϲ —4 μου om. Τ 4 τό A M τόν I κἀγ — 5 ἐξέραϲεν om. I 7
-                                ἁλώϲανταϲ] ἁλώϲονταϲ M. 11 τῆϲ&#x9a;—12 ἀλετρίϲ iterat mg. A 17 ἄμφω —18
+                                ἁλώϲανταϲ] ἁλώϲονταϲ M. 11 τῆϲ—12 ἀλετρίϲ iterat mg. A 17 ἄμφω —18
                                 Θουκυδίδηϲ AV M ἄμ φόπρα Θ. F ἄμφω G l om. T; ἄμφω τὰ ϲημαινόμενα Θ.
                                 sive ἄμφω παρὰ Θ. Gsf. 3268 om. TFV mg. A 24 τὸ παραδίδωμι om. M
                                 Φαίδων] Φαμέαϲ Bk. 26 καί] παροιμία A (pert ad 3271) τῆϲ] τήν Gec
@@ -46514,7 +46507,7 @@
                                 ἀνανεωϲάμενοϲ ἑλληνοκοπεῖν ἐπεβάλετο. <lb n="35"/> λέγεται δὲ καὶ
                                 δημοκοπία καὶ δοξοκοπία. ὑπάτουϲ αἰροῦνται ἐκ δόξηϲ πολεμικῆϲ Suid.
                                 Λεύκιον, ἐκ δὲ δημοκοπίαϲ Τερέντιον.</p>
-                  <note type="footnote">442 vs. 3 ὅτι—24 ἔϲεϲθαι Hdt. 3, 129&#x8f;—130 ═ EV 2,
+                  <note type="footnote">442 vs. 3 ὅτι—24 ἔϲεϲθαι Hdt. 3, 129—130 ═ EV 2,
                                 11, 1—22 vs. 24 ὅτι sq. Hdt. 3,133 ═ EV 2,12, 20—13, 2 443 cf. H; l.
                                 fr. com. ad. 71 444 ὁ— ἐπεβάλετο Polyb. 25, 3, 1 ═ EV 2, 175,
                                 1—2</note>
@@ -48950,7 +48943,7 @@
                                 539 786 cf. 796 790 Z 506 791 extr. cf. vv. ΑΙ 106 et Κ 2036 792 cf.
                                 v. Al 100</note>
                   <note type="marginal">A(GITFVM)</note>
-                  <note type="footnote"> 7 ἀντὶ&#x7f;—8 ἐπταιϲμένων om. F; λήθην —ἐπταιϲμένων
+                  <note type="footnote"> 7 ἀντὶ—8 ἐπταιϲμένων om. F; λήθην —ἐπταιϲμένων
                                 om. in lac. V 13 Διαταφρεύει —p. 79, 29 Νεφέλαιϲ om. F 780 ex mg. lM
                                 15 τεθρόνιϲται mg. V ante l. A 15 διατεορυλλιμένοϲ TVM 28 δύο] Bhd.
                                 30 πρυπηθῆναι V</note>
@@ -50833,7 +50826,7 @@
                                 1083 Z 556 1084—5 Z 519 1086 Z 526 1089 Z 519</note>
                   <note type="marginal">A(GITFVM)</note>
                   <note type="footnote"> 1081 om. M 7 κρίματα] κρῖμα FV 10 οἵαιϲ τιμωρίαιϲ
-                                ὑποβληθήϲονται Zon. οἵαιϲ ὑπ. τιμωρίαιϲ Thdr. 13 ’&#x8e;ϲτίν] ἐϲτίν AIF
+                                ὑποβληθήϲονται Zon. οἵαιϲ ὑπ. τιμωρίαιϲ Thdr. 13 ’ϲτίν] ἐϲτίν AIF
                                 14 καὶ alt. om. AGI 1084 post 1035 GIT, ordo poscit 24 θέτο] θέτω A
                                 θῆκε Anth. 27 δίκην] δίκη FVM 28 πρότερον Bhd.</note>
                </div>
@@ -85858,7 +85851,7 @@
                                 ῥύποϲ—οὐλή (praeter χρῶμα) ═ P, Ba 277, 21 cf. H, gl. Dionys. PG 4,
                                 26; δύποϲ ═ L, Et. M. 510, 55 cf. Ambr. 808 sch. Eur Hipp. 820 ὥϲπερ
                                 sq. Aelian. fr. 89 1512 ═ Et. M. 510, 45 βέλοϲ ═ L, Ps. Herodian. 65
-                                1513 ═ Ambr. 834 cf. Et. M. 510, 50 1514— &#x8d;ἡδυφωνίαιϲ ═ P, Ba 277,
+                                1513 ═ Ambr. 834 cf. Et. M. 510, 50 1514— ἡδυφωνίαιϲ ═ P, Ba 277,
                                 22; τερπόμενοϲ ═ Et. M. 510, 36 cf. H 1515 ═ Ambr. 840 1516 ═ Et. M.
                                 510, 51 cf. L v. κῆλοϲ 1517 ═ Ambr. 836 cf. Ps. Herodian. 65, Et. M.
                                 510, 51 1518 Ar. Eq 1147— 9 c. sch. 1150 1519 — φιμόϲ ═ P, Ba 277,
@@ -85934,7 +85927,7 @@
                                 ψυχή. εἰμὶ δὲ κῆρ τυμβοῦλοϲ· ὁ δὲ κτείναϲ με Κόροιβοϲ.</p>
                   <note type="footnote">1521 cf. L, Ambr. 805, Stud. An. 265 1522 —
                                 νόμιϲμα ═ Ambr. 767 Ps. Herodian. 66 1525 — τεθυμιαμένοϲ καὶ Κηώειϲ
-                                ═ Ambr. 776 cf. Et. M. 512, 34 Κηώεντι&#x8d;—τεθυμιαμένῳ 382 c. sch. cf.
+                                ═ Ambr. 776 cf. Et. M. 512, 34 Κηώεντι—τεθυμιαμένῳ 382 c. sch. cf.
                                 Et. M. 512, 33, H αἰεἰ— κόμαι Anth. 7, 218, 9—10 1526 Ambr. 811 1527
                                 Κηπεία ═ Ambr. 817. Κηπίον sq. cf. Ambr. 837 1528 Ar. Av. 804—6 c.
                                 sch. 806 cf. sch. Luc. 196, 9 sch. Eur. Tr. 1175, H, P 1529 Harp. ═
@@ -87698,7 +87691,7 @@
                                 1771 δένδρου ═ Ambr. 1078 cf. H, Ap. S. 100, 13, sch. ε 64. Κλῆθρον
                                 sq. ═ L 1772 ═ P cf. An. Ox 1, 224, 23; 226, 6 1773 cf. Zon. 1221
                                 aliter Ambr. 1130 (cf. Zon.), L; Et. M. 519, 31 1775 ═ P 1777 —
-                                &#x8d;ἄμπελοϲ ═ Ambr. 1080 κλῆμα sq. Astramps. 1779 Thdr. in Ps. 5, 1 PG
+                                ἄμπελοϲ ═ Ambr. 1080 κλῆμα sq. Astramps. 1779 Thdr. in Ps. 5, 1 PG
                                 80, 896a</note>
                   <note type="footnote">1767 cf. v M 1462 1768 extr. cf. 1765 1772 cf.
                                 1775 1775 cf. 1772 1776 cf v. E 113</note>
@@ -87773,7 +87766,7 @@
                      <note type="footnote">1 τοϲοῦτον V 2 οἱ Ῥωμαῖοι om. V 1781 om. F 3
                                     γενικῇ om. V <note type="marginal">ArF(GVM)</note> 8 λαγχμόϲ V,
                                     Phot. κλῆροϲ ss. V 9 κλῆροϲ] nov. gl. G 10 Κλῆρον FG, non nov.
-                                    gl. F, Phot. Ba 11 φωϲφόροϲ&#x8d;—21 κλῆροϲ om. F 12 ἵϲταθι A 16
+                                    gl. F, Phot. Ba 11 φωϲφόροϲ—21 κλῆροϲ om. F 12 ἵϲταθι A 16
                                     ἀποδεκάτὢ V 17 τὸν om. A Bεθήλ] τόποϲ ss. V 22 Κλήρουϲ]
                                     τούτεϲτιν τύχαϲ ss. V 25 Ἑρμοῦ Bas., Phot sch. Ar. Pac. 364,
                                     Hes. s. v.: ἐμοῦ omnes 26 καὶ—28 τούτου om. F 26 ἐξῄρουν Kust.,
@@ -99614,7 +99607,7 @@
                                     ἀεὶ — 21 κομίϲαντεϲ om. V 20 ἐξηπάτων ed. pr. 21 κοϲμήϲαντεϲ A
                                     οὕτω G δὲ om. V 22 ἐπὶ δείπνῳ Bhd.: ἐπιδειπνῶϲ A ἐπιϲύχνωϲ G V M
                                     ἐνδιαιτωμέναιϲ A 23 προϲαγωγευόντων A ἐκπρεπεῖϲ A 24 ἔπεμψαν V
-                                    25 ἄλλα &#x8d;— 26 φόβων om. V 25 ἀποϲτροφῆϲ Port. 27 ἄκραν A</note>
+                                    25 ἄλλα — 26 φόβων om. V 25 ἀποϲτροφῆϲ Port. 27 ἄκραν A</note>
                      <pb n="280"/> κατήγαγεν. οὕτω γὰρ ἦν λάγνοϲ, ὡϲ καὶ ἐλευθέραιϲ καὶ
                                 ἀρχόντων γυναιξὶ καὶ παρθένοιϲ ἀωρίᾳ ἐπιπίπτειν καὶ πάντα δρᾶν
                                 ἀνέδην. ἐν προόδῳ δὲ ϲφαίραϲ ἀργυρᾶϲ καὶ περικάρπια ἐρρίπτει. καὶ
@@ -99684,7 +99677,7 @@
                   <p>657 Λογοποιῶν: πλάττων λόγουϲ ψευδεῖϲ.</p>
                   <note type="footnote">647 ═ Ambr. 628 648 vs. 7 ἐξέταϲιϲ — λογιϲμόϲ cf.
                                 Ba 291, 29; fonti rhetorico attr. Wentzel vs. 10 τὸ γὰρ sq. Soph El.
-                                466&#x9d;—7 c. sch. 649 —Βουϲίριδι Harp. ═ P; lsocr 11, 23 650 —
+                                466—7 c. sch. 649 —Βουϲίριδι Harp. ═ P; lsocr 11, 23 650 —
                                 περίψηφοι P, Ba 291, 30 651 Harp. ═ P cf. Aristot. Ath. Pol. 48, 3,
                                 Lex. Cant.; Bk. 276, 17, unde Et. M. 569, 32; Dinarch. fr VlI 1,
                                 Andoc. 1, 78 652 οὐ pr. sq. Thdr. in Ps. 35, 3, P G 80, 1121 a 653 ═
@@ -120129,7 +120122,7 @@
                                     Dinarch. fr. LXXXIV 269 ═ P, Ba 317, 21 cf. H 270 ═ Σ ᵃ, Ba 317,
                                     22 cf. P, H, Zon. 1446 271 ═ Ambr. 269 cf. H, sch. Ε 439, Apion,
                                     Et M. 625,18 272 Alex. Aphr. 150, 24—151, 8 273 οἱ sq. Aelian
-                                    fr. 144 274 p 533, 2 ϲοι Ar. Pl. 93&#x9f;—4 c. sch.</note>
+                                    fr. 144 274 p 533, 2 ϲοι Ar. Pl. 93—4 c. sch.</note>
                      <note type="footnote">261 ex v. Γ 147 273 cf. v. Ε 974</note>
                      <note type="marginal">A(GFSM)</note>
                      <note type="footnote"> 2 εὔχεται
@@ -126402,7 +126395,7 @@
                                 Et. M. 821, 20 Ps. Herodian 98 cf. sch. A 58, Ambr. 49 62 ═ Paroem.
                                 ed. Gsf. 120 n. 958 (cf. n. 777) 63 ═ Ba 421, 9, H, Ps. Herodian.
                                 99, Zon. 1885 cf. Ambr. 78 35 — Λευκώλενοι cf. sch. A 55, Ap. S.
-                                170, 30. οἱ &#x8d;—χειρῶν ═ Ba 421, 10 cf. Zon. 1885, H, Herodian. schem.
+                                170, 30. οἱ —χειρῶν ═ Ba 421, 10 cf. Zon. 1885, H, Herodian. schem.
                                 Jb. 149, 344, gl. Dionys.; Orion 169, 24, unde Et. M. 821, 37
                                 ἐποχούμενοϲ—ὠλέναιϲ fort. Metaphr. 63 cf. Ambr. 77, H, Zon. 1885 67
                                 l. ═ L 68 ═ Ambr. 71 cf. Zon. 1885 69 — ἰτέαι cf. H, L, Σc.
@@ -126617,7 +126610,7 @@
                                 v. Ε 3652</note>
                   <note type="marginal">A P(GSM)</note>
                   <note type="footnote"> 1 δρῶντι τοῦτον om. F, δρῶντι om. S 91 post 89 S
-                                4 Νικόλαοϲ&#x8d;—φηϲιν om. F 5 Ὤμελλα G 5 ἐν—8 βύρϲαϲ om. F 6 εἰϲ om. S 7
+                                4 Νικόλαοϲ—φηϲιν om. F 5 Ὤμελλα G 5 ἐν—8 βύρϲαϲ om. F 6 εἰϲ om. S 7
                                 ὅμιλλο SM: ὥμιλλα G ἅμιλλα Jungermaun καὶ om. ed. pr. ὥμιλλα M:
                                 ὥμιλλοϲ S ὤμελλα G 94 om. S 95—168 om. F 15 Σοφοκλῆϲ om. G 16 ἀπὸ
                                 GM: κἀκ S ὡϲ κατὰ sch. 97 inc. rursus A 99 om. AS mg. M, extra ord.
@@ -127142,7 +127135,7 @@
                                     nov. gl. S 169 inc. rursus F 7 νέων] ὀρνέων S 171 om. FG; ζήτει
                                     ss. M 11 τόποϲ GM, Ambr. Ps. Herodian. Zon.: ποταμόϲ SF πόλιϲ A,
                                     Nicet. p. 659, Et. Sym. ap. Gsf. 823, 42 (hinc Zon.) 13 ὄνομα —
-                                    Ὠρείθυια om. F 14 Ἀμάθεια] Ἀμάρου F 15 τοῦ om. G 16 ὅτι&#x8d;—19
+                                    Ὠρείθυια om. F 14 Ἀμάθεια] Ἀμάρου F 15 τοῦ om. G 16 ὅτι—19
                                     Μαναΐμ om. F 18 μυρελαίου S: μυρελέου GM μυρεψοῦ A 18 καὶ — 19
                                     Μαναΐμ om. S 22 Ὠρήϲονται AGCM (S legi nequit) 24 καὶ om.
                                     F</note>
@@ -130772,7 +130765,7 @@
                                 τὸ A 7 τῶν] μὴ <note type="marginal">ArF(GVM)</note> add. GM 8
                                 κατευοδομένῳ] ἐν τῇ ὀδῷ αὐτοῦ add, G 341 om. A 11 ὢν— 14 ϲφαλῆναι]
                                 προαλήϲ F 14 ἐπιβαλλομένου ϲφαγῆναι V 15 Παράθεϲιϲ] λἐγεται καὶ ἡ
-                                add. A βουλόμενοϲ&#x7f;—18 Παράθεϲιϲ om. A; βουλόμενοϲ— 18 βελτίονοϲ om.
+                                add. A βουλόμενοϲ—18 Παράθεϲιϲ om. A; βουλόμενοϲ— 18 βελτίονοϲ om.
                                 F 16 ποιεῖϲθαι Vales. 18 ἐπαγγελία V 344 om. A 22 ἑταιρείαν V M 345
                                 om. mg A post 355 V 346—50 post 352 G 24 Παπαθρήϲαϲ GM cf. Ba 347
                                 extra ord. 25 ἐπελθῶν] Toup; locus corrupt. sec. Kust. ἡμῖν V ὑμῶν
@@ -136443,7 +136436,7 @@
                   <note type="marginal">AF(GVM)</note>
                   <note type="footnote">1 ἐπὶ τούτου] ἐπεὶ F ὁ om. GV 2 ἐπὶ—14 ἐξόν om. F
                                 2 ᾧ] ὡϲ A 5 καταφυγόντα δὲ] καὶ καταφυγόντα G 6 οἱ alt.— 8 ὁμιλητήϲ
-                                om. V 10 ὡϲ om. AV 12 τούτων A 1180&#x7f;—1 om. A; 15 Περικλῆϲ — 16
+                                om. V 10 ὡϲ om. AV 12 τούτων A 1180—1 om. A; 15 Περικλῆϲ — 16
                                 δημαγωγόϲ post p. 99, 31 mg. Ar 15 καὶ pr. 35 μιϲθόν om. F 16 ὅϲτιϲ
                                 GM: ὃϲ V 18 ἐρρύϲατο GM 22 μὲν] μὲν τῶν G 27 περιπλεύϲωϲι V 29 ἂν om
                                 V 30 θεωρητικὰ V cf. v. τὴν γῆν 32 πρὸϲ— 33 ἀκόλουθον om. V 33 γε
@@ -148198,7 +148191,7 @@
                   <note type="footnote">2887 ═ sch. A (Aristonic.) in X 356 cf. Ambr. 1350
                                 2888 cf. sch. A in Λ 424, Ap. S. 135, 34, Et. M. 691,15 (partim ex
                                 Orione 126, 16); — ὀμφαλόϲ ═ Ambr. 1244 cf. Ba 352, 27; P Σa; H 2890
-                                ἅλλων Σ, P, Ba 352, 28 cf. H κυρίωϲ&#x8d;—ζώων cf. Et. M. 691,17 et ad
+                                ἅλλων Σ, P, Ba 352, 28 cf. H κυρίωϲ—ζώων cf. Et. M. 691,17 et ad
                                 2891 2891 πρόϲωπον cf. Poll, 2, 47, Aristot. h. a. 4, 491b δόκοϲ—vs.
                                 19 ἐπιμονῆϲ los. Bell. 3, 214 7 2892 ═ P. cf. Poll. 10, 191 2898 cf.
                                 sch. Ap. R. 1, 564, sch. A 434, H; aliter. Amber. 1200 2894 καὶ sq.
@@ -148780,7 +148773,7 @@
                   <note type="marginal">Δ</note>
                   <note type="footnote">2958 διεῖλε—προϲαγόρευϲιν Laert. 9, 53—4 2959
                                 (praeter. ὁ ἀλφάβητοϲ) Ar. Eq. 189 c. sch. 2960 — δείκνυται Alex.
-                                Aphr. 541, 21&#x7f;—8 (textu pleniore p. XV, 1), 542, 6—7 2961 praeter
+                                Aphr. 541, 21—8 (textu pleniore p. XV, 1), 542, 6—7 2961 praeter
                                 ὄν. κ. ═ Ambr. 1172 cf. Ps. Herodian. 114 29?? cf. Ambr. 1287 et
                                 1319</note>
                   <note type="footnote">2958 Laert. cf. 3132</note>
@@ -162200,7 +162193,7 @@
                                 ruptum sec. Bhd. 5 βαϲίλεων scripsi; βοῶν V βῶν rell. 6 ἔμπαλιν —7
                                 Ἐπιγράμμαϲιν om. A 6 ἰθυγόντων δύναμιϲ G 1003 om. A 8 Σταθμήνεϲϲι V
                                 4 ἀναλώματα F καὶ— 10 προθελύμνουϲ om A 11 γίνεται— 12 ϲαλεύειν om A
-                                1006 non nov. gl. M 13 ὁ pr.] ἡ ss. M om G δὲ om. V ϲταϲιώτου&#x8d;— 21
+                                1006 non nov. gl. M 13 ὁ pr.] ἡ ss. M om G δὲ om. V ϲταϲιώτου— 21
                                 κύριον om. A; ϲταϲιώτου— 14 προαιροῦνται om. V 13 ϲταϲιώτου] ζήτει
                                 ss. GM 5 καὶ FV; om. GM, nov. gl. Σταϲιῶται FG Ἀντιφῶν—19 ἠδυνάτηϲαν
                                 V 15 ϲτάϲεωϲ F περὶ alt.—19 ἠδυνάτηϲαν om. F 16 ὁ pr.] ὡϲ Harp.

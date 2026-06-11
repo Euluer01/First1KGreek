@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -89,11 +88,9 @@
          <p>The following text is encoded in accordance with EpiDoc standards and with the
     CTS/CITE Architecture.</p>
          <refsDecl n="CTS">
-            <cRefPattern n="chapter"
-                         matchPattern="(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
             </citeStructure>
@@ -3950,7 +3947,7 @@ era. CRP alt. θάτερον a: τὸ ἕτερον ceteri 27. 28 μετέχο
 ὁρᾶται παντελῶς ἄψυχον. ἐπεὶ οὖν, φησίν, οὐ φαίνεται τοιαύτη οὖσα ἡ
 <note type="footnote">1 καὶ om. P, e corr. R ἕτερος ἐστὶ λόγος CRP (ἕτερος ἔστω λόγος Arist. P, ἕτερος
 λόγος ceteri) ἄλλα—λόγος (3) CRP: om. Sa 4 ἰδία P, o corr. R
-5 καθ’ ἥν&#x7f;—φθορά (7) Sa: om. CRP 7 ἰδία P, e corr. R ἣν a (ἢν scripsi):
+5 καθ’ ἥν—φθορά (7) Sa: om. CRP 7 ἰδία P, e corr. R ἣν a (ἢν scripsi):
 εἰ ceteri 10 μένει a 11 φθαρῇ CRP, prius S τὸ ζῶον CRP
 13 καὶ om. P συλλογίσαιτ’ Arist. LS ἄν τις Arist. MPZ IG Περὶ
 ψυχῆς] Β 1 p. 412a19 post τινες add. καὶ CRP cf. De an gen. Β 3 p. 736a28
@@ -4666,7 +4663,7 @@ om. P 16 ἐν πᾶσιν] πάντων Arist. 19 ἐντεῦθεν RP (Arist
 <lb n="30"/> τῶν ἄλλων μορίων ἐργασία), δεῖ τὸ κύριον πρὸς αὐτὴν διατελεῖν, ἤτοι ἐν
 αὐτῇ εἶναι, ἀλλ’ οὐκ ἐπ’ ἄλλῳ τινὶ μορίῳ τῶν τοῦ σώματος τῶν ἕνεκα <lb n="50"/>
 τῆς καρδίας ὄντων. τὸ δὲ οἷον ὁ ἰατρὸς πρὸς τὴν ὑγίειαν ἴσον ἐστὶ
-<note type="footnote">2 ἀπλατές S 3 ἔστι γὰρ&#x7f;—καυλοῦ om. P 5 ὥστε Sa: τουτέστιν ὥστε CR:
+<note type="footnote">2 ἀπλατές S 3 ἔστι γὰρ—καυλοῦ om. P 5 ὥστε Sa: τουτέστιν ὥστε CR:
 τουτέτιν Ρ 6 καὶ τὸ μὲν ὀξὺ a αὐτῶ ’RP ἔχον a 8 prius ἐν om. C
 9 βάλλουσι C 12 ἡ om. Pa 14 v. ad p. 100,22 15 τῶν φλεβῶν RP
 18 ἄν ἐν αὐτῶ RP. ἂν εἴη ἐν αὐτῆ C αὐτῶ Pa (anceps R) 19 prius καὶ om. P

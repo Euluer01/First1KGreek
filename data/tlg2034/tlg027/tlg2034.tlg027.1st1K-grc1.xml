@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -71,14 +70,10 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+).(.+)"
-                         n="chapter"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern matchPattern="(.+)"
-                         n="book"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
                   <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
@@ -270,7 +265,7 @@ retus therap. XIl p. 174, 23.</p>
             <div n="10" type="chapter">
                <p>Cyrillus c. lulian. Vl p. 208 A: γράφει δὲ οὕτω
 περὶ αὐτοῦ (de Socrate) Πορφύριος ἐν τῷ τρίτῳ φιλο-
-σόφων ἱστορίας· “&#x9d;τούτων δὲ οὕτω σαφηνισθέντων
+σόφων ἱστορίας· “τούτων δὲ οὕτω σαφηνισθέντων
 <lb n="25"/> λέγωμεν περὶ τοῦ Σωκράτους τὰ καὶ παρὰ τοῖς ἄλλοις
 μνήμης κατηξιωμένα, τὰ μὲν πρὸς ἔπαινον αὐτοῦ
 καὶ ψόγον πολλαχῶς ὑπὸ τῶν λογίων ἀνδρῶν μεμυ-

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -87,11 +86,9 @@
          <p>The following text is encoded in accordance with EpiDoc standards and with the
     CTS/CITE Architecture.</p>
          <refsDecl n="CTS">
-            <cRefPattern n="chapter"
-                         matchPattern="(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
             </citeStructure>
@@ -219,7 +216,7 @@ p. o 565 Β praemissis verbis εἰ γὰρ τὸν Περσῶν βασιλέ�
 
 διαφυγεῖν. om libri edd 9 Ὁ μἐν—p. s 313,5 ἀνάλωσεν
 
-Chrys &#x9d;§ 18 ρ. 566 Β praemissis verbis εἶτα εἰπὼν τινα περὶ τοὐ
+Chrys § 18 ρ. 566 Β praemissis verbis εἶτα εἰπὼν τινα περὶ τοὐ
 
 μύθου τῆς Δάφνης καὶ διαλεχθείς, οὐ γὰρ ἅπαντα ἐνθεῖναι τὸν
 

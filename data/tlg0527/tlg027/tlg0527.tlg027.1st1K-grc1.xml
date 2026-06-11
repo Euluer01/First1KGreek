@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_verse.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_verse.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -72,14 +71,10 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+).(.+)"
-                         n="verse"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern matchPattern="(.+)"
-                         n="chapter"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+).(.+)" n="verse" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="line" delim="." match="l" use="@n"/>
             </citeStructure>
@@ -2775,7 +2770,7 @@ BU+05D0c.a) 10 θησεις] pr οτι U+05D0* (om U+05D0c.a) ) R* | Κυριε]
             <div n="1" type="verse">
                <p>
                   <lg>
-                     <l>Εἰς τὸ τέλος, ὑπὲρ τῆς ἀντιλήμψεως τῆς ἑωθινῆς·&#x8d;</l>
+                     <l>Εἰς τὸ τέλος, ὑπὲρ τῆς ἀντιλήμψεως τῆς ἑωθινῆς·</l>
                      <l>ψαλμὸς τῷ Δαυείδ.</l>
                   </lg>
                </p>
@@ -3205,7 +3200,7 @@ U+05D0 2 κατεστη R* | επι] εφ U εξεθρεψε | B* εξεθρεψ
 της ημ. | και 2⁰] δια U — Stich 14 BAR 13 U+05D0 XXIII 1 om της μιας
 σαββατων U+05D0 μια σαββατου A τη μια των σαββατων U | η οικουμενη] οικου-
 μενης U | om εν αυτη U 2 θαλασων U* (σ superscr U¹) | ητοιμασεν]
-ητοιμασαςl εν A 3 αναβησεται] βη sup ras 3 ut vid litt Aa (αναστησ. A*ᵛⁱᵈ)|&#x8d;
+ητοιμασαςl εν A 3 αναβησεται] βη sup ras 3 ut vid litt Aa (αναστησ. A*ᵛⁱᵈ)|
 και] η U+05D0c.a RU | αγιω] αγιασματος U 4 χερσι U | επι ματαιως A | αυτου
 1⁰] μου A | και ουκ] ουδε U | om αυτου 2⁰ U+05D0* (hab U+05D0c.a) A 5 ελεη-
 μοσυνην] ελεος U 6 η γενεα] η sup ras: item post γεν. ras 1 lit Aa |
@@ -3313,7 +3308,7 @@ U+05D0 2 κατεστη R* | επι] εφ U εξεθρεψε | B* εξεθρεψ
             <note type="footnote">8 om τις εστιν....δοξης A* (hab Aᵃ(ᵐᵍ) | δυνατος και κραταιος U | εν] εξ
 Rᵛⁱᵈ | πολεμω] + διαψαλμα 9 υμων] ημων R | επαρθη U 10 om
 τις εστιν...δοξης A* (hab Aᵃ(ᵐᵍ)) | των δυναμεων] om των U | om ουτος 2°
-U+05D0c.a AR &#x8d;— Stich 24 BU+05D0 22 A 23 R XXIV 1 ψαλμος] pr εις το τελος BU
+U+05D0c.a AR — Stich 24 BU+05D0 22 A 23 R XXIV 1 ψαλμος] pr εις το τελος BU
 2 ο θεος μου cum seqq coniung R | καταισχυνθειην] + εις τον αιωνα U+05D0c.a (ras
 U+05D0c.b?) | καταγελατωσαν | μου 2⁰] με R 3 και γαρ] και γ sup ras A¹
 (om γαρ A*) | αισχυνθητωσαν] αισχυνθειησαν U | οι ανομουντες] pr παντες Bᵃᵇ
@@ -7820,7 +7815,7 @@ T | ανοισωσιν T Stich 39 BU+05D0R 4ο Tᵛiᵈ</note>
          </div>
          <div n="51" type="chapter">
             <note type="marginal">Β</note>
-            <head>ΝΑ᾿&#x8d;</head>
+            <head>ΝΑ᾿</head>
             <pb n="280"/>
             <div n="1" type="verse">
                <p>
@@ -14103,7 +14098,7 @@ T (ιμ fort rescr T?) | om σου R* (hab Rᵃ) 14 δυναστιας U+05D0T
                <p>
                   <lg>
                      <l>ἡ γὰρ χείρ μου συναντιλήμψεται αὐτῷ,</l>
-                     <l>καὶ ὁ βραχίων μου κατισχύσει αὐτόν·&#x8d;</l>
+                     <l>καὶ ὁ βραχίων μου κατισχύσει αὐτόν·</l>
                   </lg>
                </p>
             </div>
@@ -17142,7 +17137,7 @@ CV 1 χρηστος] ος sup ras Aᵃ 2 δυναστιας U+05D0Τ | ακου�
             </div>
             <note type="footnote">5 μετα της κληρονομιας] εν τη κληρονομια U+05D0* (μετα της κληρονομια [sic] U+05D0c.a) <note type="marginal">U+05D0ART</note>
 7 om και 1⁰ U+05D0AR1T | παραπικραναν U+05D0* (παρεπ. U+05D0¹) | αναβαινοντας R | ερυθα
-A* (superscr ρ A¹) | θαασση T* (superscr λ T¹) U+05D0 δυναστιαν U+05D0T 9 επε-&#x8d;
+A* (superscr ρ A¹) | θαασση T* (superscr λ T¹) U+05D0 δυναστιαν U+05D0T 9 επε-
 τμησεν] ε 2⁰ sup ras Ab | ερημω] pr τη R* 10 χειρων] κειρος ART T |
 μισουντων (μισουντ rescr U+05D0¹)] μισουντος U+05D0c.a ART | εχθρου] εχθρων U+05D0c.a
 11 om και AT 12 επιστευσαν] ηπιστησαν R | εν τοις λογοις] τω λογω
@@ -19550,7 +19545,7 @@ U+05D0c.a T 8 εγκαταλειπης A ενκαταλειπης Τ 9 pr βηθ
                <p>
                   <lg>
                      <l>Καὶ ἔλθοι ἐπʼ ἐμὲ τὸ ἔλεος σου, Κύριε,</l>
-                     <l>τὸ σωτήριόν σου κατὰ τὸ ἔλεός σου·&#x8d;</l>
+                     <l>τὸ σωτήριόν σου κατὰ τὸ ἔλεός σου·</l>
                   </lg>
                </p>
             </div>

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -88,14 +87,10 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
          <refsDecl n="CTS">
-            <cRefPattern n="verse"
-                         matchPattern="(\.+).(\.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern n="chapter"
-                         matchPattern="(\.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern n="verse" matchPattern="(\.+).(\.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern n="chapter" matchPattern="(\.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
             </citeStructure>
@@ -141,9 +136,7 @@
             <head>ΚΕΦ. Α.</head>
             <p>Περὶ προσοχῆς τῆς εἰς Χριστὸν πίστεως διὰ τὴν ἐπανάστασιν τὢν ἀσεβῶν <lb n="20"/>
   καὶ ἀσελγῶν ἀνδρῶν.</p>
-            <div n="1"
-                 corresp="urn:cts:greekLit:tlg0031.tlg026:1.1-1.3"
-                 type="verse">
+            <div n="1" corresp="urn:cts:greekLit:tlg0031.tlg026:1.1-1.3" type="verse">
                <lb n="1"/>
                <p>Ἰούδας Ἰησοῦ Χριστοῦ δοῦλος, ἀδελφὸς δὲ Ἰακώβου,
 τοῖς ἐν Θεῷ Πατρὶ ἡγιασμένοις, καὶ Ἰησοῦ Χριστῷ
@@ -200,9 +193,7 @@ i αὐτῶν B. k σεσορευμένα Ν. C.</note>
                <p>* Περὶ μελλούσης αὐτῶν κολάσεως καθ’ ὁμοίωσιν τῶν πάλαι ἁμαρτωλῶν <lb n="10"/>
   καὶ πονηρῶν.</p>
             </div>
-            <div n="5"
-                 corresp="urn:cts:greekLit:tlg0031.tlg026:1.5-1.6"
-                 type="verse">
+            <div n="5" corresp="urn:cts:greekLit:tlg0031.tlg026:1.5-1.6" type="verse">
                <lb n="5"/>
                <p>Ὑπομνῆσαι δὲ ὑμᾶς βούλομαι, εἰδότας ἅπαξ τοῦτο,
 ὅτι ὁ Κύριος λαὸν ἐκ γῆς Αἰγύπτου σώσας, τὸ δεύτερον
@@ -662,9 +653,7 @@ y διαβεβαιότητα Codd. z καὶ ὡς ἀσελγεῖ B. a ἐτ�
                <lb n="10"/>
                <p>Tοῦτο καὶ ἀρχόμενος εἶπεν, οἱ καὶ πάλαι προγεγραμμένοι.</p>
             </div>
-            <div n="14"
-                 corresp="urn:cts:greekLit:tlg0031.tlg026:1.14-1.15"
-                 type="verse">
+            <div n="14" corresp="urn:cts:greekLit:tlg0031.tlg026:1.14-1.15" type="verse">
                <lb n="14"/>
                <p>Προεφήτευσε δὲ καὶ τούτοις ἕβδομος ἀπὸ Ἀδὰμ
 Ἐνὼχ λέγων, Ἴδου, ἦλθε Κύριος ἐν ἁγίαις μυριάσιν
@@ -696,9 +685,7 @@ e βιοῦν ἀποφαίνεσθαι B. f φαίνεσθαι N. g ὁπ. �
 τῆς ἀληθείας διαβάλλουσιν, ἵνα τὰ οἰκεῖα κακὰ καὶ ἀσελγήματα
 στήσωσιν ὡς οἷόν τε k.</p>
             </div>
-            <div n="17"
-                 corresp="urn:cts:greekLit:tlg0031.tlg026:1.17-1.19"
-                 type="verse">
+            <div n="17" corresp="urn:cts:greekLit:tlg0031.tlg026:1.17-1.19" type="verse">
                <lb n="17"/>
                <p>Ὑμεῖς δὲ, ἀγαπητοὶ, μνήσθητε τῶν ῥημάτων τῶν
 προειρημένων ὑπὸ τῶν Ἀποστόλων τοῦ Κυρίου ἡμῶν <lb n="5"/>
@@ -726,9 +713,7 @@ e βιοῦν ἀποφαίνεσθαι B. f φαίνεσθαι N. g ὁπ. �
             <head>ΚΕΦ. Γ.</head>
             <p>Περὶ ἀσφαλείας αὐτῶν ἐπὶ τῇ πίστει συμπαθείας καὶ φειδοῦς τοῦ πλησίον
   ἐπὶ σωτηρίᾳ ἐν ἁγιασμῷ.</p>
-            <div n="20"
-                 corresp="urn:cts:greekLit:tlg0031.tlg026:1.20-1.23"
-                 type="verse">
+            <div n="20" corresp="urn:cts:greekLit:tlg0031.tlg026:1.20-1.23" type="verse">
                <lb n="20"/>
                <p>Ὑμεῖς δὲ, ἀγαπητοὶ, τῇ ἁγιωτάτη ἡμῶν πίστει ἐποικοδομοῦντες <lb n="25"/>
 ἑαυτοὺς, ἐν Πνεύματι Ἁγίῳ προσευχόμενοι,
@@ -783,9 +768,7 @@ q Hoc Sch. non habet B.</note>
             <head>ΚΕΦ. Δ.</head>
             <p>Εὐχὴ ὑπὲρ αὐτῶν εἰς ἁγιασμὸν καὶ παρρησίαν καθαρὰν σὺν δοξολογίᾳ Θεοῦ.</p>
             <lb n="5"/>
-            <div n="24"
-                 corresp="urn:cts:greekLit:tlg0031.tlg026:1.24-1.25"
-                 type="verse">
+            <div n="24" corresp="urn:cts:greekLit:tlg0031.tlg026:1.24-1.25" type="verse">
                <lb n="24"/>
                <p>Τῷ δὲ δυναμένῳ φυλάξαι ὑμᾶς ἀπταίστους καὶ
 στῆσαι κατενώπιον τῆς δόξης αὐτοῦ ἀμώμους ἐν ἀγαλλιάσει,

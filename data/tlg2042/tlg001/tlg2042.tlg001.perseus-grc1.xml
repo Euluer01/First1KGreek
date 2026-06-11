@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -39,14 +38,10 @@
       </fileDesc>
       <encodingDesc>
          <refsDecl n="CTS">
-            <cRefPattern n="chapter"
-                         matchPattern="(.+).(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern n="book"
-                         matchPattern="(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern n="chapter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
                   <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
@@ -13525,7 +13520,7 @@
  ἔτι καὶ <pb ed="r" n="145"/> τοῖς προφητικοῖς ἐντυχόντα λόγοις ἐκτεθεῖσθαι, ἐν οἷς ἔλεγεν·
 „τὸν ὑπερουράνιον τόπον οὔτε τις ὕμνησε τῶν τῇδε
 ποιητὴς οὔτε ὑμνήσει κατ᾿ ἀξίαν“ καὶ τὰ ἑξῆς, ἐν οἷς ἐστι καὶ
-τὸ&#x8f;„ἡ γὰρ ἀχρώματός τε καὶ ἀσχημάτιστος καὶ ἀναφὴς
+τὸ„ἡ γὰρ ἀχρώματός τε καὶ ἀσχημάτιστος καὶ ἀναφὴς
  οὐσία ὄντως οὖσα ψυχῆς κυβερνήτῃ νῷ μόνῳ θεατὴ, περὶ
 ὅν τὸ τῆς ἀληθοῦς ἐπιστήμης γένος τοῦτον ἔχει τὸν τόπον.“
 καὶ ἀπ᾿ ἐκείνων γε τῶν λόγων παιδευθεὶς ὁ Παῦλος ἡμῶν

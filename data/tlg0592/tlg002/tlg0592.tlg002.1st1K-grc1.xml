@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -75,14 +74,10 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+).(.+)"
-                         n="paragraph"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern matchPattern="(.+)"
-                         n="section"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+).(.+)" n="paragraph" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
             </citeStructure>
@@ -2490,7 +2485,7 @@ om. VcBa 17 ἐξὸν Ac 17.18 ἀποκτεῖναι, ϊννύ m.2 supr., Vc;
                <lb n="15"/>
                <note type="footnote">VPh, v.l.Pa | ἀλλὰ — προειρημένων suppl. m.po.Pc | τινα (pro
 μετὰ) Ph</note>
-               <note type="footnote">2 οἷον ὅτι Py | ἐξ[ην m.2] [lI&#x7f;—III]στίζειν Vc | μαστίζειν τοὺς
+               <note type="footnote">2 οἷον ὅτι Py | ἐξ[ην m.2] [lI—III]στίζειν Vc | μαστίζειν τοὺς
 *μοιχούς· μαστίζων, mg. m.1 *αὐτομόλους, Ph 3 μοιχοὺς etiam
 post τις Py, cf. Syr. 2 p. 198, 18 | φεύγει φόνου VPhy 6 μὲν
 ante διαιρεῖται Ba, (er.) Vc, post διαιρεῖται AcPh γ 8 καὶ τῶι

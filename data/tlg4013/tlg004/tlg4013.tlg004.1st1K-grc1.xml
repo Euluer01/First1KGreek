@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -92,11 +91,9 @@ License</licence>
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
          <refsDecl n="CTS">
-            <cRefPattern n="chapter"
-                         matchPattern="(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
             </citeStructure>
@@ -12151,7 +12148,7 @@ F: τὰ δὲ τεχνητὰ a post μὲν add. τὰ E</note>
 καθ’ αὑτὰ καὶ μὴ κατὰ συμβεβηκός, ἡ φύσις ἄν εἴη ἀρχὴ κινήσεως, ἐν
 <lb n="30"/> οἷς ἐστι καθ’ αὑτὸ καὶ οὐ κατὰ συμβεβηκός, τὸ δὲ πρῶτον, τὸ ἄρα δεύ-
 τερον. ὅτι δὲ τούτῳ διαφέρει τὰ φύσιν ἔχοντα τῶν μὴ ἐχόντων, ἐπιστώ- <lb n="40"/>
-σατο διὰ τῆς ἐπαγωγῆς τὰ τεχνητὰ παραθέμενος.&#x90;”</p>
+σατο διὰ τῆς ἐπαγωγῆς τὰ τεχνητὰ παραθέμενος.”</p>
             <p>Πάνυ δὲ ἀναγκαίως πρόσκειται τὸ ἐν ᾧ ὑπάρχει πρώτως καθ’
 <note type="marginal">2 ἀρχὴν τῆς κινήσεως E 4 πρώτω DE: πρῴ F: πρώτως recte a. sed promiscue ut
 Themistius utraque forma utitur 6 διαφέρει τὰ φύσει τῶν μὴ φύσει alterum om. E1F1
@@ -16718,7 +16715,7 @@ scripsi: ἔρχεται libri 6 ζητῶσι aF: ζητοῦσι Ε 7 παθ�
 τῷ τοιούτῳ λόγῳ, ὡς ἐπὶ τοῦ ἀνθρώπου τὸ ὄρθιον.
 p. 198b 4 ᾖστε ἐπεὶ ἡ φύσις ἕνεκά του ἕως τοῦ ἀλλὰ τὸ πρὸς
 τὴν ἑκάστου οὐσίαν.
-<lb n="10"/> Ἐπειδὴ&#x98; τὸ φυσικὸν εἶδος τέλος ἐστὶ καὶ οὗ ἕνεκα, δῆλον ὅτι ἡ φύσις
+<lb n="10"/> Ἐπειδὴ τὸ φυσικὸν εἶδος τέλος ἐστὶ καὶ οὗ ἕνεκα, δῆλον ὅτι ἡ φύσις
 ἡ ποιητικὴ του ενεκα ἕνεκα του ἕδους πάντα ποίει. εἰ οὑν ενεκα
 καὶ μὴ μάτην ποιεῖ ἡ φύσις, δεῖ τὸν φυσικὸν καὶ τὴν φύσιν εἰδέναι φυσι-
 κὸν ὄντα καὶ τὰς αἰτίας τῶν γινομένων ἀποδιδόναι πάντως. οὕτως μὲν οὖν
@@ -24802,7 +24799,7 @@ aF: ἄλλο Ε 6 τὴν (post καὶ) om. Ε τοῦτο om. aF 8 φησὶ 
 <lb n="25"/> καὶ τὸν τόπον ἐν τόπῳ εἶναι· καὶ γὰρ αὐτὸς λέγων εἶναι τόπον τὸ τοῦ
 περιέχοντος πέρας, ἐν τῷ αὐτῷ εἶναι τόπῳ φησὶ τό τε τοῦ περιέχοντος
 πέρας καὶ τὸ τοῦ περιεχομένου· αἱ γὰρ ἐπιφάνειαι ἁπτόμεναι ἀλλήλων <lb n="20"/>
-ἐν τῷ αὐτῷ εἰσι&#x9e;”. λύων δὲ τὴν ἀπορίαν “εἰ ἔστι, φησί, τὸ εἶδος ἢ ἡ
+ἐν τῷ αὐτῷ εἰσι”. λύων δὲ τὴν ἀπορίαν “εἰ ἔστι, φησί, τὸ εἶδος ἢ ἡ
 ὕλη τόπος τοὐ συνθέτου, ἴσα αὐτῷ ἐστιν· ὁ γὰρ τόπος ἴσος τῶ ἐν τόπῳ.
 <lb n="30"/> ἐπεὶ οὖν τὸ σύνθετον ἴσον ἐστὶ καὶ τῷ τόπῳ, ἐν ᾧ κινηθὲν ἐγένετο, τὰ
 δὲ τῷ αὐτῷ ἴσα καὶ ἀλλήλοις ἐστὶν ἴσα, ἴσος ἄν εἴη καὶ τῷ εἴδει καὶ τῇ

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -93,17 +92,11 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
          <refsDecl n="CTS">
-            <cRefPattern n="section"
-                         matchPattern="(.+).(.+).(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
-            <cRefPattern n="chapter"
-                         matchPattern="(.+).(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern n="haeresis"
-                         matchPattern="(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern n="section" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
+            <cRefPattern n="chapter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern n="haeresis" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="chapter" delim=":" match="div[@type='chapter']" use="@n">
                   <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
@@ -31160,7 +31153,7 @@ Gesch. d. heidn. Ritus Abh. Berl. Akad. 1896 Heckenbach de nuditate sacra
 Μ U; viell. besser &lt;I 441, 19ff</note>
                      <note type="footnote">M  U</note>
                      <note type="footnote">2 ἔστιν + τὸ U 3 &lt;εἶς θεός&gt; *  καὶ &lt;U 5 ὥσπερ Μ 8 πάλιν 
-&lt;U 9 &lt;ὅπως&gt; * 10 ἑκάστης Μ | * &lt;َҏ&#x8f;ϏŎҏŎࠏ &lt; Μ | &lt;μετὰ&gt; * 18 ἀπενώτητι Μ
+&lt;U 9 &lt;ὅπως&gt; * 10 ἑκάστης Μ | * &lt;َҏϏŎҏŎࠏ &lt; Μ | &lt;μετὰ&gt; * 18 ἀπενώτητι Μ
 19 ἀμβρωσία Μ U | &lt;εὖ&gt; * 20 θυμηδείας Μ 20 f ἐμπεπλησμένος Corn.] 
 πεποιημένος Μ U 22 δήλη *] μάλα Μ U  23 εἶτα δὲ] εἰ τὸ δὴ Μ | πᾶσα]
 ἅπασα Μ 26 ἕνεκα U 27 ἀπῆρται Μ | ἀπ᾿] ἐξ Μ 28 αἰδὼ U</note>
@@ -39118,7 +39111,7 @@ MU 8 τὸ1 &gt; Μ | ἀγγέλων] ἀρχῶν U 8 f ἀρχῶν καὶ 
 ich — eine Klasse noch Geschlecht, sondern verschiedene S 10 ἀλλὰ + καὶ Pa 
 11 εἰδέαν MU &gt; S 12 αὖ — ἑτέραν] εἰς ἑτέρων πάλιν MU 12 f εἶναι — γεγόνασιν 
 &gt; S 13 ἀτὰρ] εἰ γὰρ U | οἰκεῖν + bestellt S 14 κατασταθεὶς] ταχθεὶς 
-Pa | &lt;ἀπὸ&gt; * nach S | ἐξ &lt; Pa 16 f εἰς &#x9f;— μετακοσμούμενοι] in der 
+Pa | &lt;ἀπὸ&gt; * nach S | ἐξ &lt; Pa 16 f εἰς — μετακοσμούμενοι] in der 
 anderen Klasse S 17 τῶν &lt; U 18 μεταπλασθῆναι] μορφὴν πλασθῆναι M | ἢ 
 μετασκευασθῆναι &lt; S 19 τὸν ἄνθρωπον] τὴν ἀνθρωπείαν U | ἀλλ᾿ Pa | εἰς 
 &lt; S | ἐξ ἀρχῆς &lt; S 20 ὤν &lt; S | χρῆναι M Pa | τάξεως] ἕξεως MPa | 
@@ -40754,7 +40747,7 @@ Phot. 16f βραχυπορησάντων — κύκλον &lt;Phot. 18 ὑπὲ
 ἐπινοίας MU Phot. | ἐγενήθη] συνέστη Phot. 3 καὶ φυσικὸν νόμον &lt; S 
 4 καὶ ἐπανορθούμενον &lt; S 6 τῇ δὲ] τῆ γὰρ M | ἐπιθυμίαν] ἁμαρτίαν U 
 8 οἷον τῇ] ὁ ἐν τῆ U | πρὸς τὸ ἀγαθὸν &lt; U | ὁρμῇ, τῇ &lt; U | vor τῇ ἐπιθυμίᾳ 
-+ und S | οὗτος] αὐτὸς Phot. 9 ἀεὶ καὶ &#x9f;— ἀνομίαν &lt; S 10 παντάπασι 
++ und S | οὗτος] αὐτὸς Phot. 9 ἀεὶ καὶ — ἀνομίαν &lt; S 10 παντάπασι 
 — ἑλκτικὸς &lt; S | ἡδονὰς ὢν] ἡδονῶν M 11 f ὑποτιθέμενος . . . μοι 
 καταφαίνεται] zeigt an S 11 ἀναφανδὸν] &lt; S hinter ὁ Παῦλος Phot. | ὁ Παῦλος]
 der Apostel S 12 κατὰ τὸν Μ | ὃ MU 13 σαφῶς &lt; S | ἐκάλεσε 

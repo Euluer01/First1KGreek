@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_verse.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_verse.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -73,18 +72,14 @@
 </cRefPattern>
 </refsDecl>-->
          <refsDecl n="CTS">
-            <cRefPattern n="line"
-                         matchPattern="(\w+).(\w+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']//tei:l[@n='$2'])">
+            <cRefPattern n="line" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']//tei:l[@n='$2'])">
                <p>This pointer pattern extracts fragment and line</p>
             </cRefPattern>
-            <cRefPattern n="poem"
-                         matchPattern="(\w+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])">
+            <cRefPattern n="poem" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])">
                <p>This pointer pattern extracts fragment</p>
             </cRefPattern>
          </refsDecl>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="line" delim="." match="l" use="@n"/>
             </citeStructure>
@@ -169,11 +164,7 @@
                <pb facs="corpusculumpoesi01lipsuoft_0113"/>
             </note>
             <!--<div type="commentary">-->
-            <note resp="ogl"
-                  place="end"
-                  type="testimonia"
-                  n="2"
-                  xml:lang="lat">
+            <note resp="ogl" place="end" type="testimonia" n="2" xml:lang="lat">
                <pb facs="corpusculumpoesi01lipsuoft_0105"/>
                <ab rend="center">Testimonia</ab>
                <ab n="1">
@@ -197,11 +188,7 @@
                   <foreign xml:lang="grc">καὶ κατὰ τὸν παρῳδὸν Μάτρωνα</foreign>
                   <q xml:lang="grc">οἱ μὲν — Φερσεφόνεια</q>. Affert versus <bibl>Eustathius 1665, 34</bibl>. </ab>
             </note>
-            <note resp="ogl"
-                  place="end"
-                  type="commentary"
-                  n="3"
-                  xml:lang="lat">
+            <note resp="ogl" place="end" type="commentary" n="3" xml:lang="lat">
                <pb facs="corpusculumpoesi01lipsuoft_0107"/>
                <ab rend="center">Commentarius</ab>
                <ab n="1">
