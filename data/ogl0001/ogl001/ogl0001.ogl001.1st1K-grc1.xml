@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
@@ -44,6 +44,7 @@ License</licence>
             <date>2018</date>
             <publisher>Harvard College Library</publisher>
             <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:ogl0001.ogl001.1st1K-grc1</idno>
          </publicationStmt>
          <sourceDesc>
             <listBibl>
@@ -71,17 +72,17 @@ License</licence>
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="fragment"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="fragment"
+                              delim="."
+                              match=".//div[@type='textpart'][@subtype='fragment']"
+                              use="@n"/>
+            </citeStructure>
          </refsDecl>
       </encodingDesc>
       <profileDesc>
          <textClass>
-            <catRef scheme="#perseus-genre"
-                    target="#prose-standard"
-                    cert="low"
-                    resp="#corpus-tools"/>
+            <catRef scheme="#perseus-genre" target="#prose-fragment"/>
          </textClass>
          <langUsage>
             <language ident="grc">Greek</language>
@@ -93,21 +94,18 @@ License</licence>
       </revisionDesc>
    </teiHeader>
    <text>
-      <body>
-         <div type="edition"
-              xml:lang="grc"
-              n="urn:cts:greekLit:ogl0001.ogl001.1st1K-grc1">
-            <pb n="184"/>
-            <head>FRAGMENTUM
+      <body xml:base="urn:cts:greekLit:ogl0001.ogl001.1st1K-grc1">
+         <pb n="184"/>
+         <head>FRAGMENTUM
 BEATI PINYTI,
 CNOSSI IN CRETA EPISCOPI,
 QUI EO TEMPORE QUO DIONYSIUS CORINTHIUS
 FLORUIT.</head>
-            <lb n="5"/>
-            <div type="textpart" subtype="fragment" n="1">
-               <head>DE EPISTOLA PINYTI AD DIONYSIUM</head>
-               <head>Hoc scribit Eusebius lib. iv. Hist. c. 23.</head>
-               <p>—πρὸς ἣν (Dionysii epistolam, de quæ supra) ὁ Πινυτὸς ἀντιγράφων,
+         <lb n="5"/>
+         <div n="1" type="fragment">
+            <head>DE EPISTOLA PINYTI AD DIONYSIUM</head>
+            <head>Hoc scribit Eusebius lib. iv. Hist. c. 23.</head>
+            <p>—πρὸς ἣν (Dionysii epistolam, de quæ supra) ὁ Πινυτὸς ἀντιγράφων,
 θαυμάζει μὲν καὶ ἀποδέχεται τὸν Διονύσιον· ἀντιπαρακαλεῖ
 δὲ a στεῤῥοτέρας ἤδη ποτὲ μεταδιδόναι τροφῆς, <lb n="10"/>
 τελειοτέροις γράμμασιν εἰσαῦθις τὸν παῤ αὐτῷ λαὸν
@@ -116,7 +114,7 @@ FLORUIT.</head>
 δι᾿ ἧς ἐπιστολῆς καὶ ἡ τοῦ Πινυτοῦ περὶ τὴν πίστιν
 ὀρθοδοξία τε καὶ φροντὶς τῆς τῶν ὑπηκόων ὡφελείας, τό, τε λόγιον <lb n="15"/>
 καὶ ἡ περὶ τὰ θεῖα σύνεσις, ὡς δι᾿ ἀκριβεστάτης ἀναδείκνυται εἰκόνος.</p>
-               <note type="translation">Cum epistolæ respondens postea
+            <note type="translation">Cum epistolæ respondens postea
 Pinytus, admiratione quidem
 ac laudibus effert imprimis Dionysium:
 sed tamen hortatur
@@ -134,9 +132,8 @@ profectu plebis ipsi commissæ, eloquentiam
 quoque et peritiam rerum
 divinarum, velut tabella quadam
 picta egregie commonstrat.</note>
-               <lb n="25"/>
-               <note type="footnote">Heb. v. 12, 13, 14.</note>
-            </div>
+            <lb n="25"/>
+            <note type="footnote">Heb. v. 12, 13, 14.</note>
          </div>
       </body>
    </text>
