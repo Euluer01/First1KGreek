@@ -79,8 +79,8 @@
          </refsDecl>
          <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
-               <citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
-            </citeStructure>
+               <citeStructure match="div[@type='part']" use="@n" unit="part" delim=":"><citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n"/>
+            </citeStructure></citeStructure>
          </refsDecl>
       </encodingDesc>
       <profileDesc>

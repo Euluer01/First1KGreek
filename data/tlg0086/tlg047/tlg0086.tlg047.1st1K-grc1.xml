@@ -153,10 +153,10 @@
          </refsDecl>
          <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
-               <citeStructure unit="chapter" delim=":" match="div[@type='chapter']" use="@n">
+               <citeStructure match="div[@type='part']" use="@n" unit="part" delim=":"><citeStructure unit="chapter" delim="." match="div[@type='chapter']" use="@n">
                   <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
                </citeStructure>
-            </citeStructure>
+            </citeStructure></citeStructure>
          </refsDecl>
       </encodingDesc>
       <profileDesc>

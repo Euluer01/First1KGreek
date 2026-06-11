@@ -86,8 +86,8 @@
          </refsDecl>
          <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
-               <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
-            </citeStructure>
+               <citeStructure match="div[@type='part']" use="@n" unit="part" delim=":"><citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+            </citeStructure></citeStructure>
          </refsDecl>
       </encodingDesc>
       <profileDesc>
@@ -801,7 +801,7 @@
 μενόν με τῆς πόλεως ἠγανάκτησας; καὶ τὰ ἑξῆς.</p>
             </div>
          </div>
-         <div n="2" type="part ">
+         <div n="2" type="part">
             <head>II. <lb n="5"/> ΤΟΥ ΑΥΤΟΥ ΠΕΡΙ ΤΩΝ ΤΗΣ ΛΕΞΕΩΣ ΣΧΗΜΑΤΩΝ.</head>
             <div n="1" type="section">
                <head>α΄.</head>

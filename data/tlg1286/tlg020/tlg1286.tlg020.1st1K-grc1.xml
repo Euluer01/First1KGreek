@@ -70,8 +70,8 @@
          </refsDecl>
          <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
-               <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
-            </citeStructure>
+               <citeStructure match="div[@type='excerpt']" use="@n" unit="excerpt" delim=":"><citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
+            </citeStructure></citeStructure>
          </refsDecl>
       </encodingDesc>
       <profileDesc>

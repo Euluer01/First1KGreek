@@ -88,10 +88,10 @@
          </refsDecl>
          <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
-               <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
+               <citeStructure match="div[@type='volume']" use="@n" unit="volume" delim=":"><citeStructure unit="book" delim="." match="div[@type='book']" use="@n">
                   <citeStructure unit="section" delim="." match="div[@type='section']" use="@n"/>
                </citeStructure>
-            </citeStructure>
+            </citeStructure></citeStructure>
          </refsDecl>
       </encodingDesc>
       <profileDesc>
