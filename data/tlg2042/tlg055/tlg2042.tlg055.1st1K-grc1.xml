@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
@@ -46,6 +46,7 @@
             <date>2017</date>
             <publisher>Harvard College Library</publisher>
             <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg2042.tlg055.1st1K-grc1</idno>
          </publicationStmt>
          <sourceDesc>
             <listBibl>
@@ -74,18 +75,18 @@
       </fileDesc>
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards</p>
-         <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="paragraph"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         <refsDecl n="CTS" xml:id="CTS">
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="paragraph"
+                              delim=":"
+                              match=".//div[@type='textpart'][@subtype='paragraph']"
+                              use="@n"/>
+            </citeStructure>
          </refsDecl>
       </encodingDesc>
       <profileDesc>
          <textClass>
-            <catRef scheme="#perseus-genre"
-                    target="#prose-standard"
-                    cert="low"
-                    resp="#corpus-tools"/>
+            <catRef scheme="#perseus-genre" target="#prose-paragraph"/>
          </textClass>
          <langUsage>
             <language ident="grc">Greek</language>
@@ -97,57 +98,53 @@
       </revisionDesc>
    </teiHeader>
    <text>
-      <body>
-         <div type="edition"
-              xml:lang="grc"
-              n="urn:cts:greekLit:tlg2042.tlg055.1st1K-grc1">
-            <pb n="949"/>
-            <head>ΩΡΙΓΕΝΟΥΣ ΕΚΛΟΓΑΙ ΕΙΣ ΤΟΥΣ ΚΡΙΤΛΣ.</head>
-            <div type="textpart" subtype="paragraph" n="1">
-               <p>Καὶ εῦξατο Ἱεμθάε τῷ Κυφίῳ. Εἰ Πνεῦμα Κυρίου ἐπ᾿ αὐτὸν, πῶς εὔχεται ἃ μὴ
+      <body xml:base="urn:cts:greekLit:tlg2042.tlg055.1st1K-grc1">
+         <pb n="949"/>
+         <head>ΩΡΙΓΕΝΟΥΣ ΕΚΛΟΓΑΙ ΕΙΣ ΤΟΥΣ ΚΡΙΤΛΣ.</head>
+         <div n="1" type="paragraph">
+            <p>Καὶ εῦξατο Ἱεμθάε τῷ Κυφίῳ. Εἰ Πνεῦμα Κυρίου ἐπ᾿ αὐτὸν, πῶς εὔχεται ἃ μὴ
                         προσήκει; Ἐνῆν γὰρ καὶ κύνα ἀπαντῆσαι ἐπανιόντι τῷ Ἰεφθάε. Ἆῤ οὖν ἐσφάλη
                         τὸ Πνεῦμα; οὐδαμῶς· ἀλλὰ τὸ μὲν Πνεῦμα βοηθεῖν παραγέγονεν, οὐχ
                         ὑποβάλλειν τὴν ἄτοπον εὐχήν· αὐτὸς δὲ σφάλλεται ἀπερισκέπτως
                         ὑποσχόμενος.</p>
-            </div>
-            <div type="textpart" subtype="paragraph" n="2">
-               <p>Καὶ εἶπαν αὐτῷ· Εἰπὸν δὴ στάχυς. Οἱ δὲ ἔλεγον στάχυς· σημαίνει σέβηλα,
+         </div>
+         <div n="2" type="paragraph">
+            <p>Καὶ εἶπαν αὐτῷ· Εἰπὸν δὴ στάχυς. Οἱ δὲ ἔλεγον στάχυς· σημαίνει σέβηλα,
                         ὅπερ ἐστὶν ἄσταχυς. Οἱ δὲ ἔλεγον σεβήλω καὶ οὐκ ἐδύναντο τρανῶς εἰπεῖν
                         σέδηλα. Εἰ γὰρ καὶ Ἑβραῖοι ἐτύγχανον, ἀλλὰ κατὰ συμμετρίαν βραχύτητι
                         παρήλλασσον ἐν τῇ τῆς διαλέξεως προφορᾷ. Τὸ οὖν σύνθεμα ἦν σέβηλα, ὅπερ
                         οἱ ἐπερωτώμενοι λέγοντες σεδήλω, ἠλέγχοντο οὐκ ὄντες τῶν οἰκείων τοῦ
                         Ἰεφθάε, ἀλλὰ τῶν ἐπαναστάντων.</p>
-            </div>
-            <div type="textpart" subtype="paragraph" n="3">
-               <p>Καὶ γυνὴ αὐτοῦ στεῖρα καὶ οὐκ ἔτεκεν. Οὐκ ἀπὸ τῆς φύσεως, ἀλλ᾿ ἀπὸ τῆς
+         </div>
+         <div n="3" type="paragraph">
+            <p>Καὶ γυνὴ αὐτοῦ στεῖρα καὶ οὐκ ἔτεκεν. Οὐκ ἀπὸ τῆς φύσεως, ἀλλ᾿ ἀπὸ τῆς
                         διακονίας ἐπὶ τοῦ παρόντος στείραν καλεῖ.</p>
-            </div>
-            <div type="textpart" subtype="paragraph" n="4">
-               <p>Σίδηρος οὐκ ἀνέβη ἐπὶ τὴν κεφαλήν μου ὅτι Ναζιραῖος τοῦ Θεοῦ ἐγώ εἰμι.
+         </div>
+         <div n="4" type="paragraph">
+            <p>Σίδηρος οὐκ ἀνέβη ἐπὶ τὴν κεφαλήν μου ὅτι Ναζιραῖος τοῦ Θεοῦ ἐγώ εἰμι.
                         Δι᾿ ὅλης τῆς περὶ τὸν Σαμψὼν ἱστορίας αἱ τρίχες φαίνονται τὴν πᾶσαν αὐτῷ
                         περιποιεῖν ἰσχύν.</p>
-            </div>
-            <div type="textpart" subtype="paragraph" n="5">
-               <p>Τοῦ αὐτοῦ. Ναζιραῖον τὸ πεφυλαγμένον κατὰ τὴν Σύρων φωνὴν ὀνομάζει. Μὴ
+         </div>
+         <div n="5" type="paragraph">
+            <p>Τοῦ αὐτοῦ. Ναζιραῖον τὸ πεφυλαγμένον κατὰ τὴν Σύρων φωνὴν ὀνομάζει. Μὴ
                         ἐξακολουθεῖν δὲ τῇ τάξει τῶν Ἰσραηλιτῶν τὸν Σαμψὼν ὁ Θεὸς προστάσσει,
                         κατ᾿ ἐκεῖνο καιροῦ τὴν κεφαλὴν ξυρωμένων διὰ τὸ εὐσήμους εἶναι πρὸς
                         πάντας.</p>
-            </div>
-            <div type="textpart" subtype="paragraph" n="6">
-               <p>Καὶ ἐποίησεν Ἐφὼδ καὶ Θεραφείν. Ἐφὼδ ὕφασμα ἦν ἱερατικὸν, ὅπερ
+         </div>
+         <div n="6" type="paragraph">
+            <p>Καὶ ἐποίησεν Ἐφὼδ καὶ Θεραφείν. Ἐφὼδ ὕφασμα ἦν ἱερατικὸν, ὅπερ
                         περικειμένῳ τῷ ἱερεῖ ἐφοίτα τοῦ ἁγίου Πνεύματος ἡ χάρις. Τὸ δὲ Θεραφεὶν
                         τοιοῦτο μέντοι, οὐ θεῖκὸν δὲ, ἀλλʼ εἰδωλικὸν, ὡς ἐν ταῖς βασιλείαις
                         δείκνυται.</p>
-            </div>
-            <div type="textpart" subtype="paragraph" n="7">
-               <p>Καὶ ἐξῆλθον οἱ υἱοὶ Βενιαμίν. Τίνος ἕνεκεν ἡττῶνται δικαίως ἐπελθόντες; Ἥ
+         </div>
+         <div n="7" type="paragraph">
+            <p>Καὶ ἐξῆλθον οἱ υἱοὶ Βενιαμίν. Τίνος ἕνεκεν ἡττῶνται δικαίως ἐπελθόντες; Ἥ
                         δῆλον ὅτι διὰ προλαβούσης αἰτίας. Καὶ ὁ ψαλμός φησιν· « Ὅταν λάβω
                         καιρὸν, ἐγὼ εὐθύτητας κρινῶ. » Εἶτα καὶ μετὰ τὸ ἡττηθῆναι, καὶ μίαν καὶ
                         δευτέραν, μετῆλθεν ὀργὴ ἐπὶ τοὺς ἠδικηκότας, καὶ νικῶσι δίκαιαν
                         νίκην.</p>
-               <note type="footnote">54 Jud. xi, 30. 55 Jud. xii, 6. 56 Jud. xiii, 2. 57
+            <note type="footnote">54 Jud. xi, 30. 55 Jud. xii, 6. 56 Jud. xiii, 2. 57
                         Jud. xvi, 17. 58 Jud. xvii, 5. 59 Jud. xx, 34. 60 Psal. lxxiv, 3.</note>
-            </div>
          </div>
       </body>
    </text>
