@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
@@ -44,6 +44,7 @@ License</licence>
             <date>2017</date>
             <publisher>Harvard College Library</publisher>
             <pubPlace>United States</pubPlace>
+            <idno type="CTS">urn:cts:greekLit:tlg0358.tlg004.1st1K-grc1</idno>
          </publicationStmt>
          <sourceDesc>
             <listBibl>
@@ -70,17 +71,17 @@ License</licence>
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="fragment"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <citeStructure match="/TEI/text/body" use="@xml:base">
+               <citeStructure unit="fragment"
+                              delim="."
+                              match=".//div[@type='textpart'][@subtype='fragment']"
+                              use="@n"/>
+            </citeStructure>
          </refsDecl>
       </encodingDesc>
       <profileDesc>
          <textClass>
-            <catRef scheme="#perseus-genre"
-                    target="#prose-standard"
-                    cert="low"
-                    resp="#corpus-tools"/>
+            <catRef scheme="#perseus-genre" target="#prose-fragment"/>
          </textClass>
          <langUsage>
             <language ident="grc">Greek</language>
@@ -92,14 +93,11 @@ License</licence>
       </revisionDesc>
    </teiHeader>
    <text>
-      <body>
-         <div type="edition"
-              xml:lang="grc"
-              n="urn:cts:greekLit:tlg0358.tlg004.1st1K-grc1">
-            <pb n="266"/>
-            <head>Τοῦ αὐτοῦ Νικομάχου.</head>
-            <div type="textpart" subtype="fragment" n="1">
-               <p>1. Τὴν λύραν τὴν ἐκ τῆς χελώνης φασὶ τὸν Ἑρμῆν
+      <body xml:base="urn:cts:greekLit:tlg0358.tlg004.1st1K-grc1">
+         <pb n="266"/>
+         <head>Τοῦ αὐτοῦ Νικομάχου.</head>
+         <div n="1" type="fragment">
+            <p>1. Τὴν λύραν τὴν ἐκ τῆς χελώνης φασὶ τὸν Ἑρμῆν
 εὑρηκέναι καὶ κατασκευάσαντα ἑπτάχορδον παραδεδωκέναι
 τὴν μάθησιν τῷ Ὀρφεῖ. Ὀρφεὺς δὲ ἐδίδαξε
 Θάμυριν καὶ Λῖνον· Λῖνος Ἡρακλέα, ὑφʼ οὗ καὶ <lb n="5"/>
@@ -114,17 +112,17 @@ License</licence>
 Τέρπανδρος μὲν οὕτω λέγεται τὴν λύραν εὑρηκέναι, <lb n="15"/>
 Ἀχαιοὺς δὲ ὑπὸ Κάδμον τοῦ Ἀγήνορος παραλαβεῖν.
 τηνικαῦτά φασιν.</p>
-               <note type="footnote">1 τοῦ αὐτοῦ Νικ. Β. Νικομάχου Γερασηνοῦ Πυθαγορικοῦ
+            <note type="footnote">1 τοῦ αὐτοῦ Νικ. Β. Νικομάχου Γερασηνοῦ Πυθαγορικοῦ
 ἁρμονικὸν ἐγχειρίδιον M (quae erat conclusio libri praece-
 dentis). δεύτερον add. Uen. βιβλίον δεύτερον rel. Et Bern. add.
 ἁρμ. ἐγχ βιβλίον δεύτερον. — redeunt haec in exc. Neap.
 § 24; quae signo N 5 Λῖνος δὲ B. 7 ἑπταχόρδων MB
 9 βληθῆναι] ἐκριφῆναι Ν 17 τηνικαῦτα φασίν N τὴν καταρ-
 χήν M B. ln sequuntur ὅροι συστήματος κοσμικοῦ (exc. 25).</note>
-            </div>
-            <pb n="267"/>
-            <div type="textpart" subtype="fragment" n="2">
-               <p>2. Εἰσὶν οἱ ἀριθμοὶ, ἐξ ὧν ποιοῦσιν οἱ κατὰ τὴν
+         </div>
+         <pb n="267"/>
+         <div n="2" type="fragment">
+            <p>2. Εἰσὶν οἱ ἀριθμοὶ, ἐξ ὧν ποιοῦσιν οἱ κατὰ τὴν
 μουσικὴν τὰ τονιαῖα διαστήματα. ἐπὶ μὲν τοῦ
 διὰ τεσσάρων, ὅ φασιν ἐν ἐπιτρίτῳ λόγῳ θεωρεῖσθαι,
 τοῦ συνεστῶτος ἐκ δύο τόνων καί τινος, οἷον τοῦ
@@ -149,16 +147,16 @@ dentis). δεύτερον add. Uen. βιβλίον δεύτερον rel. Et Bern
 9 καὶ τοῦ καταλειπομένου λείμματος N, om. M B. 10 τὸν
 cνϛ N. cνϚ — cιϚ om. N. 12 τὸν ὀγδ. αὐ. τὸν N.
 item l. 15. 17 ἡμίση] ἥμισυ libb.</note>
-                  <note type="footnote">Διὰ τεσσάρων.
+               <note type="footnote">Διὰ τεσσάρων.
 f fa2, παρυπάτη μέσων 256 13
 c mi2, ὑπάτη μέσων 243 27
 d re2, λιχανὸς ὑπάτων 216 24
 c do2, παρυπάτη ὑπάτων 192.
 v. prolegomena p. 226.</note>
-                  <pb n="268"/>
+               <pb n="268"/>
 ἐν τῷ κδ ἀριθμῷ θεωρουμένου, οὔτε τοῦ δευτέρου,
 τοῦ ἐν τῷ κζ.</p>
-               <p>Ἐπὶ δὲ τοῦ διὰ πέντε, ὃ ἐν ἡμιολίῳ λόγῳ κεῖται
+            <p>Ἐπὶ δὲ τοῦ διὰ πέντε, ὃ ἐν ἡμιολίῳ λόγῳ κεῖται
 καὶ συνέστηκεν ἐκ τριῶν τόνων καί τινος, οἶον τοῦ
 ἀρχομένου ἀπὸ παρυπάτης μέσων καὶ καταλήγοντος εἰς<lb n="5"/>
 τρίτην διεζευγμένων, (p. 31) κατασκευάζουσι τὸ προκείμενον
@@ -183,12 +181,12 @@ om. MB. 10 λείμματα B. 11 ἐπιτείνουσι τόνον (corr.
 τὸν φιβ π. MB. τὸν ὄγδοον N. τὸν νξδ N. 16 καὶ τὸν
 ὄγδ. . 17 τὸν οβ N. ἀπό τε χμη N. 18 τὸ ἐπ.] τὸν
 ἐπόγδοον libb. τὸν om. libo.</note>
-                  <note type="footnote">Διὰ πέντε. c΄ do3 τρίτη διεζευγμένων 768
+               <note type="footnote">Διὰ πέντε. c΄ do3 τρίτη διεζευγμένων 768
 h si2 παραμέση 729 39
 a la, Mέση 648
 g sol2, λιχανὸς μέσων 576 72
 fa2 παρυπάτη μέσων 512. 64</note>
-                  <pb n="269"/>
+               <pb n="269"/>
 τοῦ χμη, ἐπειδὴ περιέχει αὐτὸν καὶ τὸν πα ἀριθμὸν,
 ὅς ἐστιν ὄγδοον τοῦ χμη. εἰς δὲ συμπλήρωσιν τοῦ
 ἡμιολίου ἀριθμοῦ τοῦ ψξη τὰ λειπόμενά εἰσι λθ. ἀλλʼ
@@ -196,7 +194,7 @@ fa2 παρυπάτη μέσων 512. 64</note>
 τόνος, οὔτε τοῦ οβ ἐν ᾧ ὁ δεύτερος τόνος, οὔτε τοῦ
 πα, ἐν ᾧ ὁ τρίτος· οὐδὲ γὰρ τόνος εἰς δύο ἡμιτόνια
 πρὸς ἀκρίβειαν διαιρεῖται.</p>
-               <p>Οὐ μὴν ἀλλὰ καὶ ἐπὶ τοῦ διὰ τεσσάρων τοῦ συνεστῶτος
+            <p>Οὐ μὴν ἀλλὰ καὶ ἐπὶ τοῦ διὰ τεσσάρων τοῦ συνεστῶτος
 ἐκ τόνου καὶ λείμματος καὶ τόνου, οἷον τοῦ
 ἀρχομένου ἀπὸ προσλαμβανομένου καὶ καταλήγοντος
 εἰς ὑπατῶν διάτονον, κατασκευάζουσιν οὕτως. λαμβάνουσι
@@ -216,11 +214,11 @@ Cμγ ἐπιτεῖναι τόνον, ἐπόγδοον γὰρ αὐτοῦ �
 οὐκέτι Ν. 16 αὐτοῦ Ν, αὐτόν M. αὐτήν B. ἀπαρτίζειν Ν.
 17 οὐκ B. τοῦ cπη Ν, τοὺς cπη MB. 18 δὲ τοῦ cπη ὑπε-
 πόγδοος Ν. cνϚ, καὶ περιέχεται γὰρ ἀπὸ Ν.</note>
-                  <note type="footnote">Διὰ τεσσάρων. d re2, λιχανὸς ὑπάτων 288
+               <note type="footnote">Διὰ τεσσάρων. d re2, λιχανὸς ὑπάτων 288
 c do2, παρυπάτη ὑπάτων 256
 Η si1, ὑπάτη ὑπάτων 243
 A la1, προσλαμβανόμενος 216.</note>
-                  <pb n="270"/>
+               <pb n="270"/>
 τὰ λβ. ἐκ μὲν οὗν τῆς ἀπὸ τοῦ cιϚ γενομένης κατὰ
 τὸ ἐπόγδοον τοῦ τόνου διάστημα ἐπιτάσεως εὑρίσκετο
 ὁ cμγ , ἐκ δὲ τῆς ἀπὸ τοῦ cπη τοῦ τόνου γενομένης
@@ -233,7 +231,7 @@ A la1, προσλαμβανόμενος 216.</note>
 εἰ δὲ ἀπὸ τοῦ oβ ἀφελοῦμεν τὸν κ καὶ τὸν λβ, καταλειπόμενα
 ἔσται ΙΥ, μήτε τῶν κζ μήτε τῶν λβ ὄντα
 ἡμίση.</p>
-               <p>Πάλιν ἐπὶ τοῦ διἀ πέντε τοῦ συνεστῶτος ἐκ τόνου
+            <p>Πάλιν ἐπὶ τοῦ διἀ πέντε τοῦ συνεστῶτος ἐκ τόνου
 καὶ λείμματος καὶ δύο τόνων οἷον τοῦ ἀρχομένου ἀπὸ
 ὑπατῶν διατόνου καὶ καταλγοντος εἰς μέσην κατασκευάζουσιν
 οὕτως. λαμβάνουσιν ἡμιόλιόν τινα ἀριθμὸν
@@ -247,12 +245,12 @@ A la1, προσλαμβανόμενος 216.</note>
 15 καὶ κατασκ. M. 16 post λαμβάνουσιν rep. τῶν δια-
 τόνου καὶ κ. — λαμβάνουσιν. 17 τὸν om. Ν. πρὸς τὰ MB.
 πρὸς τὸν Ν.</note>
-                  <note type="footnote">Διὰ πέντε. a la2, μέση 1296
+               <note type="footnote">Διὰ πέντε. a la2, μέση 1296
 g sol2, διάτονος μέσων 1152 144
 f fa2, παρυπάτη μέσων 1024
 e mi2, ὑπάτη μέσων 972 52
 d re2, διάτονος ὑπάτων 864. 108</note>
-                  <pb n="271"/>
+               <pb n="271"/>
 τόνον καὶ ποιοῦσι τὸν ϡοβ τῷ ρ ὑπερέχοντα
 τοῦ ωξδ. ἐπεὶ δὲ οὐκέτι ἀπὸ τοῦ ϡοβ δυνάμεθα ἐπιτεῖναι
 τόνον, κατʼ ἄνεσιν (p. 33) αὐτὸν εὑρίσκομεν.
@@ -268,9 +266,9 @@ d re2, διάτονος ὑπάτων 864. 108</note>
 των ἀριθμῶν οὗτός ἐστιν ἥμισυς, οὔτε τοῦ ρη οὔτε
 τοῦ pκ οὔτε τοῦ ρμδ· ἐν τούτοις γὰρ ἦν εὑρισκόμενα
 <lb n="15"/> τὰ τονιαῖα διαστήματα.</p>
-            </div>
-            <div type="textpart" subtype="fragment" n="3">
-               <p>3. ὅτι Νιικόμαχος τὴν ἀνωτάτην καὶ πρώτην χορδὴν
+         </div>
+         <div n="3" type="fragment">
+            <p>3. ὅτι Νιικόμαχος τὴν ἀνωτάτην καὶ πρώτην χορδὴν
 ὑπάτην κεκλῆσθαι φησιν ὡς ἐν ἑπταφθόγγῳ διαιρέων.
 διότι καὶ ὁ ὕπατος καὶ πρῶτος ἀπὸ τῆς
 ἀπλανοῦς· νεάτην δὲ τὴν Σελήνην ὡς ἄν ἐσχάτην τῶν
@@ -290,7 +288,7 @@ cap. 3.) ὅτι μὲν ὁ Μικ. B. ἀνωτάτω B. 17 ἐν om. B.
 διαιρέων ego, διαιρέσεων libri. 19 ὡς ἂν (cf. infra p. 272, 11
 17. 279,2), libb., ὡς οὔσαν Bryennius, qui Herm. ll, 5 pag. 412
 haec ipsa tradit.</note>
-                  <pb n="272"/>
+               <pb n="272"/>
 ἄλλων σφαιρῶν, μέσην δὲ τὸν Ἥλιον. τὰς δὲ παρʼ
 ἑκάτερα τῆς νήτης καὶ ὑπάτης, τὴν μὲν παρυπάτην
 κατὰ τὸν Δία, τὴν δὲ παρανήτην οὐ κατὰ τὸν Ἑρμῆν,
@@ -299,7 +297,7 @@ haec ipsa tradit.</note>
 δὲ τρίτην κατὰ τὴν Ἀφροδίτην· καὶ τὴν μὲν ὀξεῖαν
 τὴν Σελήνην, εἴ γε νήτης ἔχει λόγον, τὸν δὲ βαρὺν
 τὸν Κρόνον, εἴπερ ὑπάτης.</p>
-               <p>Οί δὲ δὴ πρῶτοι ἀπὸ τῶν πρὸς ἡμᾶς ἀρξάμενοι
+            <p>Οί δὲ δὴ πρῶτοι ἀπὸ τῶν πρὸς ἡμᾶς ἀρξάμενοι
 (p. 34) ὑπάτην μέν φασι τὸν πρῶτον τὸν τῆς Σελήνης <lb n="10"/>
 ὡς ἅν ἀρχὴν φθόγγων, νεάτην δὲ ὡς ἐσχάτην ἀφʼ
 ἡμῶν τὴν τοῦ Κρόνου. ἡ μὲν γὰρ ὑπάτη τοῖς γεννητοῖς
@@ -324,10 +322,10 @@ Bry. 10 φασι ry, φησι B, sc. κεκληκέναι τὴν πρώτην
 M4 BBry. 15 ἕκαστον et τῶν ὄντων BBry., om. M. 16 τόδε
 ego, τό τε libb. et Bry. 17 ἂν καὶ αὐτ- M, οὔσῃ καὶ
 αὐτῇ BBry.</note>
-                  <note type="footnote">9 De systemate, quo inde ab Alexandrinorum tempori-
+               <note type="footnote">9 De systemate, quo inde ab Alexandrinorum tempori-
 bus Graeci stellarum sonos constitutos putabant, v. Philo-
 logum Lll 21, et supra p. 145, ann. 2.</note>
-                  <pb n="273"/>
+               <pb n="273"/>
 τινὶ καὶ πολυτρέπτῳ καὶ μὴ τοσαύτην ἐχούσῃ δύναμιν
 διὰ τὴν πορρωτέρω τῶν πρώτων ἀπόστασιν, καὶ καθότι
 <del>δέ</del> στάσις τις ὥσπερ ἐστὶν ἄχρι τοῦδε τῶν οὐρανίων,
@@ -352,7 +350,7 @@ logum Lll 21, et supra p. 145, ann. 2.</note>
 εὑρίσκειν ἐστὶν ἀπολειπομένην μοίρας μὲν ΙΥ,
 λεπτὰ δὲ πρῶτα ιζ. ὥστε εὐλόγως τὸν μὲν εἶναι πάντων
 ὀξύτατον, τὴν δὲ εἶναι πάντων βραδυτέραν.</p>
-               <note type="footnote">3 δὲ στάσις libb. et Bry. an σύστασις τοῦδε M (cf. 278,11),
+            <note type="footnote">3 δὲ στάσις libb. et Bry. an σύστασις τοῦδε M (cf. 278,11),
 τῆσδε H, τῆς δὲ Bry. 5 ὁμοούσιον BBry., ὁλοούσιον M, for-
 tasse ἀλλοίαν 7 πρώτῃ M2B2Bry., πρῶτα M1, πρῶτον B1.
 9 κατωτάτων Bry. fort. et M. μορίων om. M. 10 τῶν
@@ -362,10 +360,10 @@ BBry. 12 προσθήκη M. 13 ἑαυτῇ M. 15 ὑπόληψιν B.
 περιφορᾶς τοῦ παντός om. M. 20 μέρος] μέν M. τῆς om. M.
 21 ἡμερησίῳ] καὶ μέσῳ libb. 22 μὲν et λεπτὰ δὲ πρῶτα BBry.,
 om. M. 24 βραδυτ. libb. et Bry., an βαρυτ.?</note>
-            </div>
-            <div type="textpart" subtype="fragment" n="4">
-               <pb n="274"/>
-               <p>4. Ὅτι ὅσοι τῇ ὀγδόῃ χορδῇ προσκαθῆψαν ἑτέρας,
+         </div>
+         <div n="4" type="fragment">
+            <pb n="274"/>
+            <p>4. Ὅτι ὅσοι τῇ ὀγδόῃ χορδῇ προσκαθῆψαν ἑτέρας,
 οὐ λόγῳ τινὶ, τῇ δὲ πρὸς τοὺς ἀκροατὰς ψυχαγωγίᾳ
 προήχθησαν. ὥσπερ δὴ καὶ Πρόφραστός τε ὁ Πιερίτης
 τὴν ἐννάτην χορδὴν προσκαθῆψε, καὶ στιαῖος τὴν
@@ -375,8 +373,8 @@ om. M. 24 βραδυτ. libb. et Bry., an βαρυτ.?</note>
 ἴερεκράτης ὁ κωμικὸς ἐν τῷ ἐπιγραφομένῳ Χείρωνι
 καταμεμφόμενος αὐτὸν τῆς περὶ τὰ μέλη ῥᾳδιουργίας
 φαίνεται.</p>
-               <lb n="10"/>
-               <p>Αί μὲν οὗν πᾶσαι χορδαὶ κατὰ τὰ τρία γένη <del>εἴτε
+            <lb n="10"/>
+            <p>Αί μὲν οὗν πᾶσαι χορδαὶ κατὰ τὰ τρία γένη <del>εἴτε
 καὶ πλείω </del> εἴκοσι καὶ ὁκτ ὼ τὸ πλῆθος· ὧν οὔτε
 πλείους οὔτε ἐλάττους διὰ τὸ μὴ ἐπιδέχεσθαι τὴν ἀνθρώπων
 φωνὴν μήτε ἐπὶ τὸ βαρὑ παρὰ ταύτας βαρύτερον,
@@ -386,7 +384,7 @@ om. M. 24 βραδυτ. libb. et Bry., an βαρυτ.?</note>
 τῶν λύκων ὠρυγμοῖς φθόγγους παραπλησίους, ἀξυνέτους
 τε καὶ ἀναρμόστους καὶ οὐκ ἐπιδεχομένους συμφωνίας
 κοινωνίαν. αἱ δὲ καθʼ ἕκαστον κατὰ μὲν τοὺς <lb n="20"/>
-                  <note type="footnote">3 Πρόφραστος in Μ1, corr. in Θεόφραστος, ut hebet B.
+               <note type="footnote">3 Πρόφραστος in Μ1, corr. in Θεόφραστος, ut hebet B.
 sed Boetius quoque mus. 1, 20 (Fridl.) hyperhypaten a Prο-
 phrasto ait esse additam. 9 καταμεμφόμενοι B. αὐτῶν B.
 13 τὴν τῶν M4B 14 π. ταύτας U B, παρʼ αὐτὰς vid. M1,
@@ -394,14 +392,14 @@ phrasto ait esse additam. 9 καταμεμφόμενοι B. αὐτῶν B.
 αὐτὰς] αὐτῶν libb. 17 κοκκισμούς M. τοῖς corr. M. 18 post
 ώρυγκοῖς add. καὶ M4. 20 ἕκαστον scil. γένος (lin. 11.
 τοὺς] τὰς B.</note>
-                  <note type="footnote">Cap. 4. Πτολεμαῖος barm. II 4 systema perfectum dicit
+               <note type="footnote">Cap. 4. Πτολεμαῖος barm. II 4 systema perfectum dicit
 sonorum esse XV, quo systemate omnes (v II) diapason formae
 continantur. et τόνους i. e. scalae sive systemata trans-
 posita ait esse ἰσαρίθμους VII barm. lI 9. et cum diates-
 saron lII habeat formas, diapente IV. summa illorum est VII.
 ὁμόφωνον diapason dicit Ptolemaeus harm. I 7. de mesa vide
 eius barm. II 5.</note>
-                  <pb n="275"/>
+               <pb n="275"/>
 δύο μέσας ποιοῦντας ἐν τοῖς διεζευγμένοις (p. 36), ἵνα
 ἦ τετράχορδον πενταχόρδῳ κατὰ διάζευξιν σύμφωνον,
 — ιη. ὅσοι δὲ κατὰ τὸ ἀμετάβολον οὐ πλείους μιᾶς
@@ -417,9 +415,9 @@ eius barm. II 5.</note>
 φθόγγων· τὴν δὲ μέσην ἀκριβῶς εἶναι μέσην, περατοῦσθαι
 δὲ ἄμφω τὰ ἄκρα ἐπὶ μὲν τὸ βαρὺ προσλαμβανομένῳ,
 <lb n="15"/>ἐπὶ δὲ τὸ δξὐ νήτῃ ὑπερβολαίων.</p>
-            </div>
-            <div type="textpart" subtype="fragment" n="5">
-               <p>5. Ὅτι οὐκ ἐπειδὴ προῆλθόν τινες εἰς τὸ τῶν κη
+         </div>
+         <div n="5" type="fragment">
+            <p>5. Ὅτι οὐκ ἐπειδὴ προῆλθόν τινες εἰς τὸ τῶν κη
 φθόγγων πλῆθος, ἔξω τῆς τοῦ παντὸς πεπτωκότες
 φανοῦνται συμφωνίας, ἀλλʼ ἀκολούθως τῇ φυσικῇ τοῦ
 Πυθαγόρου καὶ Πλάτωνος δόξῃ. ἢ τε γὰρ τῶν θείων
@@ -428,7 +426,7 @@ eius barm. II 5.</note>
 δὲ ταῦτα τὰ εἴδη· τὸ δὲ ὅλον καὶ τέλειον σύστημα ἐν τῷ δὶς
 διὰ πασῶν τιθέμενος· ὥστε καὶ τὰ τῶν συμφιονιῶν εἰδη.
 11 πάντα τούτῳ MB. 18 ἀλλʼ om. B.</note>
-                  <note type="footnote">Cap. 5. λάτωνος Timaeus c. 8. ἔπτὰ ὅροι 1 2 4 8 3 9 27.
+               <note type="footnote">Cap. 5. λάτωνος Timaeus c. 8. ἔπτὰ ὅροι 1 2 4 8 3 9 27.
 τε γὰρ τῶν θείων. natura anmarum divinarum secta vicies
 et septies atque assumuens unitatem, quod est omnium rerum
 principium (sicuti primum inter sonos symbolice dicunt as-
@@ -436,7 +434,7 @@ sumptum) ascendit ad hanc summam (28). et initium capit
 haec natura a septem illis terminis, quibus suppositis Plato
 triplicem et (ter multiplicando) cubicun auctionem invenit;
 finitur auten in hunc numerum (28).</note>
-                  <pb n="276"/>
+               <pb n="276"/>
 ψυχῶν φύσις τῇ ἑπτακαιεικοσιπλασίᾳ κατατετμημένη,
 προσλαμβάνουσά τε τὴν πάντων ἀρχὴν μονάδα (ὥσπερ
 δὴ κἀν τοῖς φθόγγοις συμβολικῶς καλοῦσι προσλαμβανόμενον)
@@ -444,9 +442,9 @@ finitur auten in hunc numerum (28).</note>
 ἀπὸ τῶν ἑπτὰ ὅρων, οὕς δὴ ὑποθεὶς ὁ Πλάτων τήν τε <lb n="5"/>
 τριπλῆν καὶ κυβικὴν αὔξησιν εὕρατο, περατουμένη δὲ
 (p. 37) εἰς τοῦτο.</p>
-            </div>
-            <div type="textpart" subtype="fragment" n="6">
-               <p>6. <gap reason="omitted"/> Καὶ γὰρ δὴ καὶ οἱ φθόγγοι σφαίρας ἑκάστης
+         </div>
+         <div n="6" type="fragment">
+            <p>6. <gap reason="omitted"/> Καὶ γὰρ δὴ καὶ οἱ φθόγγοι σφαίρας ἑκάστης
 τῶν ἑπτὰ ἕνα τινὰ ψόφον ποιὸν <del>πρώτους</del> ἀποτελεῖν
 πεφυκυίας, οἷς δὴ τὰ στοιχεῖα τὰ φωνήεντα <lb n="10"/>
 ἐπωνόμασται, ἄρρητα μὲν αὐτὰ καθ’ αὐτὰ καὶ πᾶν
@@ -457,7 +455,7 @@ erat fortasse διπλῆν. 7 τοῦτο καὶ partim periit cum chartae
 mg. M, exstat in U. 9 ad πρώτους add. ἀπρώτους U.
 10 πεφ(υκυίας) ultimae litt. perierunt M, an πεφυκυιῶν
 12 συντιθέμεν(ον) extr. perierunt M. 13 ἀποκαλ. M. καλ. B.</note>
-                  <note type="footnote">Cap. 6. Agitur de septem vocalibus litteris (φωνήεντα
+               <note type="footnote">Cap. 6. Agitur de septem vocalibus litteris (φωνήεντα
 lin 10 et p. 277,13), quae singulae ad singulos planetas refe-
 antur. erat auem ordo hic:
 Α Ε Η Ι Ο Υ Ω
@@ -473,7 +471,7 @@ non solum vocabula, sed etiam mystarum formulae eficaces.
 ac verba initii si recte tradita sint, coninogas: οἱ φθόγγοι ἀπο-
 καλοῦνται ἄρρητα. Οmnia autem bene explicari non possunt
 nec facile redditur ratio coniunctionum διότι et διό.</note>
-                  <pb n="277"/>
+               <pb n="277"/>
 ὃ δὴ ἐν ἀριθμῷ μὲν μονὰς, ἐν δὲ γεωμετρίᾳ
 σημεῖον, ἐν δὲ γράμμασι στοιχεῖον· συντιθέμενα δὲ
 μετὰ τῶν ὑλικῶν (οἷα δὴ τὰ σύμφωνα) ὥσπερ ἡ ψυχὴ
@@ -500,14 +498,14 @@ Rhetores selecti. Oxon. 1676 et Lips. 1773), θερινοί libri,
 τοιοῦτον] θεῖον Gesner. 8 ποππισμοῖς del. et inscr. υ M.
 ποπτυσμοῖς B. ἀνάρθροις Meib. annot., ἐνάρθροις libri.
 20 πολλαπλασιασθέντα M B, πολλαπλασιασθεῖσα prop. Meib.</note>
-                  <note type="footnote">9 Ὅτι ὅσοι· qui lyram septem chordarum statuerint, hoc
+               <note type="footnote">9 Ὅτι ὅσοι· qui lyram septem chordarum statuerint, hoc
 fecisse dicuntur commoti numero litterarum vocalium, quorum
 ordo (ἐξέτασις) cum simplex sit, multiplicare oporteat. 19 εἴρη-
 ται theol. p. 44, 4 et 34. 20 πολλαπλασιασθεῖσα (sic) Μeib. re-
 fert ad ἑβδομάδα, forsitan recte. quumuquam quae dicatur
 ἀνακύκλησις et quid velit ὑφαίρεσις, nuescimus. hoc dici patet
 4 . 7 ═ 28 et 1 + 2 + 3 + 4 + 5 + 6 + 7 ═ 28. simili</note>
-                  <pb n="278"/>
+               <pb n="278"/>
 τοῦ πρώτου ἐπὶ τὸ ἔσχατον πῆ μὲν κατὰ παραύξησιν,
 πῆ δὲ καθʼ ὑφαίρεσιν τὸν τοσοῦτον ἀριθμὸν ποιεῖ.
 καὶ γὰρ δὴ κἀπὶ τῶν σφαιρῶν, δῆλον δʼ ὡς ἀναλόγως
@@ -517,9 +515,9 @@ fert ad ἑβδομάδα, forsitan recte. quumuquam quae dicatur
 ἄλλων ῥυθμῷ καὶ τάξει ἐλλείποντος ἑκάστου κατὰ τὸν
 ἀριθμὸν, ὀκτωκαιεικοσόφθογγος λεγομένη κατὰ τὴν
 Αἰγυπτίων προσηγορίαν ὑπάρχει.</p>
-            </div>
-            <div type="textpart" subtype="fragment" n="7">
-               <p>7 ʼἈφʼ ὧν δὴ καὶ Πυθαγόραν ὁρμώμενον τήν τε <lb n="10"/>
+         </div>
+         <div n="7" type="fragment">
+            <p>7 ʼἈφʼ ὧν δὴ καὶ Πυθαγόραν ὁρμώμενον τήν τε <lb n="10"/>
 πρώτην διαίρεσιν καὶ τῆς ψυχῆς ἐπέκτασιν ἄχρι τοῦδε
 ὁριζομένην εὑρεῖν. καὶ γὰρ καὶ αὕτη τριπλῆ, ἔκ τε
 ταὐτοῦ καὶ θατέρου καὶ οὐσίας τὴν ὑπόστασιν, παραπλησίως
@@ -534,17 +532,17 @@ fert ad ἑβδομάδα, forsitan recte. quumuquam quae dicatur
 συμφωνία, ego malim ἁρμονία. 11 τῆς om. B. 14 τρίτον B.
 17 ἐντεῦθεν vid. ex ἐνταῦθα factum B. 18 πλανωμένοις 6g,
 πλανωμένης MMB. 19 ἀποδιδοῦσα cor. ex ἀποδιδοῦσαι B.</note>
-                  <note type="footnote">ratione etiam vocales litterae augendae videntur, ut litteris
+               <note type="footnote">ratione etiam vocales litterae augendae videntur, ut litteris
 ad litteras adhibitis et consertis horum quoque numerus ad
 VIII crescat.</note>
-                  <note type="footnote">3 καὶ γὰρ δὴ κἀπὶ τ. σφ. et in sphaeris inest propria.
+               <note type="footnote">3 καὶ γὰρ δὴ κἀπὶ τ. σφ. et in sphaeris inest propria.
 quaedam harmonia (hoc supplendum) XXVIII sonorum, Aegp
 riorum more (?) ita nominata.</note>
-                  <note type="footnote">Cap. 7. καὶ γὰρ καὶ αὕτη — ὑπόστασιν ἐπιδεχομένη.
+               <note type="footnote">Cap. 7. καὶ γὰρ καὶ αὕτη — ὑπόστασιν ἐπιδεχομένη.
 anima quoque in Platonis psychogonia (im. 8) substantiam
 ripartitam accipit, componitur enim ἔκ τε ταὐτοῦ 1, καὶ
 θατέρου ═ 2, καὶ οὐσίας (e natura ex his mixta) ═ 3.</note>
-                  <pb n="279"/>
+               <pb n="279"/>
 τε καὶ ψυχικῶν φθόγγων ἐναρμόνιον κατʼ οὐσίαν
 σύστασιν· — τῇ δὲ τῆς ἀπλανοῦς, ὡς ἂν τῆς ταὐτοῦ
 μὲν φύσεως οὔσης, ἐμπεριλαμβανούσης δὲ ὥσπερ ἐν
@@ -562,9 +560,9 @@ ripartitam accipit, componitur enim ἔκ τε ταὐτοῦ 1, καὶ
 Θ πρῶτος ἐμφαίνεται. ὁ δὴ καταπυκνούμενον ταῖς
 διεσιαίαις ἀποστάσεσιν εἰς τοσοῦτον προῦβη, ῴ δὴ
 δεκανῶν τε ἀριθμὸς ὥρισται καὶ ὡρονόμων.</p>
-               <note type="footnote">6 τριγώνου om. B. 11 παραμέσης Μeib., παρανήτης M,
+            <note type="footnote">6 τριγώνου om. B. 11 παραμέσης Μeib., παρανήτης M,
 om. (et καὶ) B. 14 παρανήτη MB.</note>
-               <note type="footnote">3 ἐμπεριλ. κυβικὴν αὔξ. 2 = 8. 28 + 8 = 36. 5 ἀριθμός
+            <note type="footnote">3 ἐμπεριλ. κυβικὴν αὔξ. 2 = 8. 28 + 8 = 36. 5 ἀριθμός
 scil. ἀποδίδοται. 6 ὀρθογωνίου cum trigoni rectanguli
 cathetae sint 3 et 4, hypotenusa linea 5, ponit: 3 5 ═ 15
 + 4 5 ═ 20
@@ -578,10 +576,10 @@ invenit diapente respondere trigono in orbem inscripto (120°),
 diatessaron respondere quadrangulo (9Ο°), tonum duodecimae
 orbis parti (30°). his autem duodecimmis in ternas pares
 (10°) divisis (καταπυκνούμ. διεο. ἀποστ.) invenis 36 partes orbis.</note>
-            </div>
-            <div type="textpart" subtype="fragment" n="8">
-               <pb n="280"/>
-               <p>8. Ἀλλὰ πῶς φησιν ὀκτὼ σφαιρῶν οὐσῶν ἑπτἀ
+         </div>
+         <div n="8" type="fragment">
+            <pb n="280"/>
+            <p>8. Ἀλλὰ πῶς φησιν ὀκτὼ σφαιρῶν οὐσῶν ἑπτἀ
 λέγοται εἶναι οἱ φθόγγοι; ἢ ὅτι ἡ μὲν ἀεὶ κατὰ τὰ
 αὐτὰ κινουμένη ἀδιάφορον καὶ μίαν ποιεῖται τοῦ φθόγγου
 τὴν ἐκφώνησιν· οὐκ ἔχουσα δὲ ἰσοταχῆ οὐδὲ
@@ -592,52 +590,52 @@ orbis parti (30°). his autem duodecimmis in ternas pares
 ἔχοντες <gap reason="omitted"/> ἐδείκνυτο κίνησιν τοσαύτην, ὅσην ἡ τοῦ αὐτοῦ
 πρὸς τὴν θατέρου. διὸ δὴ τὸν ἀπʼ αὐτῆς φθόγγον
 ἄρρητον εἴασαν.</p>
-            </div>
-            <div type="textpart" subtype="fragment" n="9">
-               <p>9. Ὅτι οἱ φθόγγοι οἱ ὑπὸ τῶν τὴν χειρουργίαν
+         </div>
+         <div n="9" type="fragment">
+            <p>9. Ὅτι οἱ φθόγγοι οἱ ὑπὸ τῶν τὴν χειρουργίαν
 μετιόντων εἰκοσιοκτώ εἰσιν οἵδῇ·</p>
-               <p>α Προσλαμβανόμενος</p>
-               <p>β ὑπάτη ὑπατῶν (p. 40)</p>
-               <p>Υ παρυπάτη ὑπατῶν</p>
-               <p>δ ὑπατῶν ἐναρμόνιος</p>
-               <p>ε ὑπατῶν χριοματική</p>
-               <p>ς ὑπατῶν διάτονος</p>
-               <p>ζ ὑπάτη μέσων</p>
-               <p>παρυπάτη μέσων</p>
-               <p>θ μέσων ἐναρμόνιος</p>
-               <p>ι μέσων χρωοματική</p>
-               <p>ια μέσων διάτονος</p>
-               <note type="footnote">2 οἱ om. B. 5 ἐναρμόνια B. 6 διότι κτλ. seclusi
+            <p>α Προσλαμβανόμενος</p>
+            <p>β ὑπάτη ὑπατῶν (p. 40)</p>
+            <p>Υ παρυπάτη ὑπατῶν</p>
+            <p>δ ὑπατῶν ἐναρμόνιος</p>
+            <p>ε ὑπατῶν χριοματική</p>
+            <p>ς ὑπατῶν διάτονος</p>
+            <p>ζ ὑπάτη μέσων</p>
+            <p>παρυπάτη μέσων</p>
+            <p>θ μέσων ἐναρμόνιος</p>
+            <p>ι μέσων χρωοματική</p>
+            <p>ια μέσων διάτονος</p>
+            <note type="footnote">2 οἱ om. B. 5 ἐναρμόνια B. 6 διότι κτλ. seclusi
 cf. prolegg. ἴσοις οὔτε πάντη om. B. 9 ἐδείκνυντο prop.
 Meib., ἐδείκνυτο libb. post κίνησιν est macula in M, erat
 fortasse vocabulum. 10 τὴν τοῦ θ. B. 12 χειρουργίαν M.
 21 παρηπάτη B.</note>
-               <note type="footnote">Cap 8, 2 ἡ ἀεὶ κτ. τὰ αὐτά caelum fixum. 8 πρὸς αὐτὴν
+            <note type="footnote">Cap 8, 2 ἡ ἀεὶ κτ. τὰ αὐτά caelum fixum. 8 πρὸς αὐτὴν
 i. e. τὴν ἀπλανῆ σφαῖραν. cf. prol. p. 230.</note>
-               <pb n="281"/>
-               <p>ιβ μέση</p>
-               <p>ιγ τρίτη συνημμένων</p>
-               <p>ιδ παρανήτη συνημμένων ἐναρμόνιος</p>
-               <p>ιε συνημμένων χρωοματική</p>
-               <p>ιϚ συνημμένων διάτονος</p>
-               <p>ιζ νήτη συνημμένων</p>
-               <p>ιη παράμεσος</p>
-               <p>ιθ τρίτη διεζευγμένων</p>
-               <p>κ διεζευγμένων ἐναρμόνιος</p>
-               <p>κα διεζευγμένων χριοματική</p>
-               <p>κβ διεζευγμένων διάτονος</p>
-               <p>κγ νήτη διεζευγμένων</p>
-               <p>κδ τρίτη ὑπερβολαίων</p>
-               <p>κε ὑπερβολαίων ἐναρμόνιος</p>
-               <p>κϛ ὑπερβολαίων χρωματική</p>
-               <p>κζ ὑπερβολαίων διάτονος</p>
-               <p>κη νήτη ὑπερβολαίων.</p>
-            </div>
-            <div type="textpart" subtype="fragment" n="10">
-               <p>10. Ὥσπερ οὗν ἐνταῦθα τὰ μὲν τοῦ ὑπατῶν τετραχόρδου
+            <pb n="281"/>
+            <p>ιβ μέση</p>
+            <p>ιγ τρίτη συνημμένων</p>
+            <p>ιδ παρανήτη συνημμένων ἐναρμόνιος</p>
+            <p>ιε συνημμένων χρωοματική</p>
+            <p>ιϚ συνημμένων διάτονος</p>
+            <p>ιζ νήτη συνημμένων</p>
+            <p>ιη παράμεσος</p>
+            <p>ιθ τρίτη διεζευγμένων</p>
+            <p>κ διεζευγμένων ἐναρμόνιος</p>
+            <p>κα διεζευγμένων χριοματική</p>
+            <p>κβ διεζευγμένων διάτονος</p>
+            <p>κγ νήτη διεζευγμένων</p>
+            <p>κδ τρίτη ὑπερβολαίων</p>
+            <p>κε ὑπερβολαίων ἐναρμόνιος</p>
+            <p>κϛ ὑπερβολαίων χρωματική</p>
+            <p>κζ ὑπερβολαίων διάτονος</p>
+            <p>κη νήτη ὑπερβολαίων.</p>
+         </div>
+         <div n="10" type="fragment">
+            <p>10. Ὥσπερ οὗν ἐνταῦθα τὰ μὲν τοῦ ὑπατῶν τετραχόρδου
 κατὰ τρία γένη, τὰ δὲ μέσων, τὰ δὲ συνημμένων,
 <note type="footnote">3 παρανήτη corr. ex τρίτη M. 18 τῶν ὑ. τετράχορδα libb.</note>
-                  <note type="footnote">Cap. 10. ἀποτελοῦσα τὸν λϚ ἀριθμόν. 6 + 8 + 9 + 12 ═ 35.
+               <note type="footnote">Cap. 10. ἀποτελοῦσα τὸν λϚ ἀριθμόν. 6 + 8 + 9 + 12 ═ 35.
 caelum stelliferum 1. loco satis difficili Epinomidis c. 12
 fin. Plato exponit: ἡ δὲ διπλασίου μὲν εἰς μέσον, ἴσως [δὲ]
 τοῦ ἐλάττονος πλέον, ἔλαττον τε τοῦ μείζονος suppleo ἡ φύσις
@@ -650,7 +648,7 @@ a maiore superatur (in 6 9 12 est 9 ═ 6 + 3 ═ 12 — 3). τὸ
 aequa extremorum pare (1/3) et superat et superatur (nam in
 6 8 12 tertia illius parte 8 superat 6 et tertia illius parte
 superatur a 12. ἐν μέσῳ δὲ τοῦ ἕξ πρὸς τὰ δώδεκα ξυνέβη τό</note>
-                  <pb n="282"/>
+               <pb n="282"/>
 τὰ δὲ διεζευγμένων, τὰ δὲ ὑπερβολαίων, οὕτω
 χρὴ νομίζειν ἑκάστην σφαιρικὴν καὶ θείαν οὐσίαν τὸ
 μὲν ἐν τῷ παντὶ ὡς ἀρχῆς ἔχον λόγον παρελέσθαι
@@ -669,9 +667,9 @@ superatur a 12. ἐν μέσῳ δὲ τοῦ ἕξ πρὸς τὰ δώδεκα
 δεικνύναι ὑστάτην πασῶν τῶν διεξοδευθεισῶν
 ἐπιστημῶν ἀπαριθμησάμενος ἔτι καὶ ἀνθρώποις φησὶ
 ξύμφωνον χρείαν καὶ ξύμμετρον ἀπενείματο.</p>
-               <note type="footnote">10 συνδέουσαν (aut συνδέοντα) Meib., συνδέον libb.
+            <note type="footnote">10 συνδέουσαν (aut συνδέοντα) Meib., συνδέον libb.
 13 Β. 15 ὁ Πλάτων B.</note>
-               <note type="footnote">τε ἡμιόλιον καὶ ἐπίτριτον. media inter sex et duodecim inter-
+            <note type="footnote">τε ἡμιόλιον καὶ ἐπίτριτον. media inter sex et duodecim inter-
 cedunt et 9 ═ 6 3/2 et ═ 6 4/3. τούτων αὐτῶν ἐν τῷ μέσῳ ἐπ’
 ἀμφότερα στρεφομένη τοῖς ἀνθ ρ ώποις σύμφωονο ν χρείαν
 κ αὶ σύμμετρον ἀ πενείματο, παιδιᾶς ῥυθμοῦ τε καὶ ἁρ-
@@ -681,7 +679,6 @@ sonorum et rhythmmorum usum, cum Masrum beato Choro
 data esset ad rhythmorum modorumque lusum. data autem
 est duplicis 12/6 natura ita divisa, quod et soni et metra
 rationibus 3/2 et 4/3 continentur.</note>
-            </div>
          </div>
       </body>
    </text>
